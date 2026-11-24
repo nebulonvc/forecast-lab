@@ -122,9 +122,29 @@
 
 ---
 
-## 建立个人定期预测账本
+## 接入预测系统、自动事实核查与市场回测
 
-历史回顾的最终检验，是将同样的方法用于前瞻预测，并在事后核对。仓库中的 [`my-forecasts/`](my-forecasts/) 为此提供了完整模板。Fork 后可以：
+历史复盘的最终检验，是将经过验证的方法用于新的前瞻判断，并在事后持续核对。本项目提供**两种可信接入模式**，你可以按信任偏好与使用深度任选：
+
+### 模式一：零代码纯文本接入（无需下载或运行任何程序，支持 Polymarket 对标与盲测回测）
+
+如果你不希望在本地下载或运行任何外部脚本（零木马与供应链风险），也无需克隆 132 部原书仓库，可以直接让你的 AI Agent（Claude Code、Antigravity、Cursor、Codex、Claude Projects、ChatGPT、Dify 等）**仅通过只读公开 Markdown/JSON 文档**完成接入，在本地或你自己的 GitHub 仓库里只生成肉眼可审的 `.md` 笔记：
+
+```text
+请只读阅读 https://raw.githubusercontent.com/nebulonvc/forecast-lab/main/AGENT_SETUP.md 与方法表 https://raw.githubusercontent.com/nebulonvc/forecast-lab/main/method-pack/manifest.json ，帮我以“零代码、纯 Markdown”方式接入《信号与噪音》预测系统（全程不要下载或运行任何外部脚本程序）：
+1. 先通过对话向我问 4 个简短问题，确定我的预测目标、关注领域、存放位置（本地目录、我的 GitHub 仓库或自有 Agent 系统）与复盘频率；
+2. 根据我的回答，从 manifest.json 提取对应领域的历史基准胜率、主推理透镜、反校验透镜与一手数据源，在当前目录创建纯文本规则 `AGENTS.md` 与预测总账本 `forecasts/README.md`；
+3. 后续每次做预测或复盘前重新只读读取一次最新 `manifest.json` 以保持方法同步，并协助我完成：七步法去噪立卡、联网正反双向事实核查、只读访问 Polymarket 公开接口拉题与结算认证，或开展历史时间截点盲测回测。
+```
+
+- **预测方法自动热同步**：预测透镜与基准率表托管于公开纯数据文件 [`method-pack/manifest.json`](method-pack/manifest.json)，方法迭代后 Agent 重新只读拉取即可生效，不影响本地账本。
+- **Agent 自动事实核查与 Polymarket 结算认证**：Agent 用自带搜索成对核查支持与反面一手数据；并直接只读访问 Polymarket 官方公开接口（`gamma-api.polymarket.com`，免密钥、免钱包）拉取题目、认证 UMA 终局结果并计算 Brier Score 与超额优势（Market Edge）；亦可读取 [`curated_backtest_questions.json`](method-pack/curated_backtest_questions.json) 立即进行时间截点隔离的历史盲测练习。
+
+详见 [给 Agent 的零代码接入协议 (`AGENT_SETUP.md`)](AGENT_SETUP.md) 与 [零代码接入、事实核查与 Polymarket 回测指南](docs/05-quickstart-onboarding-and-polymarket.md)。
+
+### 模式二：开源仓库本地 / Fork 模式（挂载 Super-Learner 方法优化器 MCP 与云端定时巡检）
+
+如果你希望运行仓库内置的纯 Python 3.11+ 标准库源码（零第三方 `pip` 依赖，代码完全公开可审），克隆或 Fork 本仓库后可以：
 
 1. **与 AI Agent 协作建立并优化预测卡（MCP & Skill，显式写出预测方法）**：仓库内置了基于全库 8,130 条预测与发布时点历史状态训练的**数据驱动预测方法优化引擎**（[`.mcp.json`](.mcp.json) + [`toolkit/forecast_mcp.py`](toolkit/forecast_mcp.py) + [`.agents/skills/forecast-optimizer/SKILL.md`](.agents/skills/forecast-optimizer/SKILL.md)）。在任意 Agent 终端接入后，不仅执行样本外概率校准与失误陷阱拦截，还会强制在终局预测中**把选用的预测方法、四步推导链、反校验透镜与证伪条件完整写出来**。
 2. **定期自动检索新证据**：配置 DeepSeek 与 Exa 的 API Key 后，GitHub Actions 每月自动检索支持与反驳证据，并以 Issue 形式推送复盘简报。
@@ -156,6 +176,8 @@
 | 目的 | 文档 |
 | :--- | :--- |
 | **了解核心研究发现** | [docs/00-key-insights.md](docs/00-key-insights.md) |
+| **复制给 AI Agent 的零代码接入协议** | [AGENT_SETUP.md](AGENT_SETUP.md) |
+| **零代码接入、事实核查与 Polymarket 回测** | [docs/05-quickstart-onboarding-and-polymarket.md](docs/05-quickstart-onboarding-and-polymarket.md) |
 | **数据驱动的预测方法优化（MCP & Skill）** | [docs/06-forecast-method-optimization.md](docs/06-forecast-method-optimization.md) |
 | 理解研究方法与判定标准 | [docs/01-methodology-signal-and-noise.md](docs/01-methodology-signal-and-noise.md) |
 | 了解核验管线的工程设计 | [docs/02-engineering-architecture.md](docs/02-engineering-architecture.md) |

@@ -25,7 +25,7 @@ description: 创建可证伪预测卡、执行正反双向证据巡检，并按�
 2. 运行 `python3 toolkit/periodic_tracker.py --case my-forecasts bump-cutoff` 将截止日更新至今日。
 3. 对每条在册预测同时检索 **支持证据（Support）** 与 **反面证据（Counter）**：
    - 若调用 `verify_prediction.py`，输出至 `my-forecasts/output/search_verify/<YYYY-MM-DD>` 后执行 `periodic_tracker.py digest`。
-   - 若由 Agent 自身检索，存档原始统计摘要至 `my-forecasts/data/sources/`，核对 `sha256` 后登记进 `my-forecasts/data/evidence.jsonl`。
+   - 若由 Agent 自身检索，请**强制成对检索支持证据与反面证据**（优先官方统计局、央行、IEA、财报），存档原始统计摘要至 `my-forecasts/data/sources/`，核对 `sha256` 后登记进 `my-forecasts/data/evidence.jsonl`（若用户采用轻量纯 Markdown 账本，直接将核实链接与日期追加至预测卡第 5 节表格即可，详见 [`AGENT_SETUP.md`](../../../AGENT_SETUP.md)）。
 4. 在预测卡第 5 节“三轴复盘记录”追加一行巡检日志，区分：
    - **事件轴**：指标数值向目标移动还是背离？
    - **机制轴**：当初假设的驱动瓶颈（如电网排队、成本曲线）是否真的是主因？
