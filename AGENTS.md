@@ -20,8 +20,8 @@
 ## 2. 四类常见用户任务的标准执行协议
 
 ### 任务 A：帮用户把一个想法转化为规范的“可核验预测”并执行数据驱动方法优化
-1. **先跑数据驱动基线体检与方法寻优**：优先调用 MCP 工具 `optimize_forecast`（或运行 `python3 toolkit/forecast_optimizer.py optimize --statement "..."`），基于全库 132 部著作、8,130 条预测与 $t_0$ 历史状态训练的 `SuperLearner` 识别伪预测噪音、高赔率翻车陷阱，并获取最优「主透镜 + 反校验透镜 + 承诺硬度」与样本外校准概率。
-2. **去噪拆题并完整写出预测方法（严禁只给结论不写方法）**：协助用户补齐 **主体 + 对象 + 量词 + 可测指标（含分母与权威数据源） + 期限 + 前提条件**（严查 `出现 ≠ 普及 ≠ 主导 ≠ 取代`），并在终局预测中**显式写出选用的预测方法、四步推导链、反校验透镜、领先观测指标与证伪条件**，再次调用 `optimize_forecast` 核验可操作化达 `6/6`、`explicit_method_disclosed=true` 且陷阱清零。
+1. **先跑数据驱动基线体检、方法寻优与历史同构校准**：优先调用 MCP 工具 `optimize_forecast`（技术/产业类命题同步参考 `evaluate_tech_differentiation`，或运行 `python3 toolkit/forecast_optimizer.py optimize --statement "..."`），用全库 8,130 条预测 `SuperLearner` 与 150 年 12 次技术浪潮 Bass 扩散曲线给出“历史同构骨架斜率”，并根据返回的 `realtime_parameters_to_fetch_now` 联网核查当下的真实行业瓶颈数据（如并网排队、BOM回本周期、付费留存率）。
+2. **去噪拆题并完整写出预测方法（严禁只给结论不写方法）**：协助用户补齐 **主体 + 对象 + 量词 + 可测指标（含分母，严分增量流量 vs 存量保有量 + 权威数据源） + 期限 + 前提条件**（严查 `出现 ≠ 普及 ≠ 主导 ≠ 取代`），并在终局预测中**显式写出选用的预测方法、代入实时参数的四步推导链、历史同构校准说明、反校验透镜、领先观测指标与证伪条件**，再次调用 `optimize_forecast` 核验可操作化达 `6/6`、`explicit_method_disclosed=true` 且陷阱清零。
 3. **调用标准工具登记**：调用 MCP `register_optimized_forecast` 或使用 `toolkit/periodic_tracker.py` 写入 `my-forecasts/`，不要手拼残缺 JSON：
    ```bash
    python3 toolkit/periodic_tracker.py --case my-forecasts add \
