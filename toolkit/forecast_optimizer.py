@@ -36,6 +36,7 @@ from typing import Any
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_MODEL_PATH = REPO_ROOT / "datasets" / "forecast_optimizer_model.json"
 DEFAULT_BENCHMARK_PATH = REPO_ROOT / "datasets" / "optimization_benchmark.json"
+DEFAULT_ATLAS_PATH = REPO_ROOT / "datasets" / "historical_tech_diffusion_atlas.json"
 
 VERDICTS_5 = ["正确", "趋势符合", "部分符合", "错误", "暂无法判断"]
 VERDICTS_4 = ["正确", "趋势符合", "部分符合", "错误"]
@@ -314,7 +315,59 @@ STRUCTURAL_PATTERNS: dict[str, re.Pattern[str]] = {
         r"\bunless\b|\bhowever\b|\bprovided that\b|\bexcept\b|\bcaveat\b|\bsubject to\b|\bexclud",
         re.I,
     ),
+    "heavy_atom_or_regulated": re.compile(
+        r"机器人|自动驾驶|无人驾驶|汽车|电网|电力|变压器|核电|储能|矿产|晶圆|工厂|量产线|航空|飞机|火箭|临床|新药|基因|纳米|脑机|"
+        r"\brobot|\bautonomous|\bvehicle|\bgrid\b|\belectricity|\bnuclear|\bfactory|\bmanufactur|\baircraft|\baviation|\bclinical|\bdrug|\bnanotech|\bbiotech",
+        re.I,
+    ),
+    "stock_replacement_scope": re.compile(
+        r"彻底取代|完全取代|取代.*工作|取代.*岗位|淘汰|保有量|存量|总发电量|全部.*替换为|不再有|"
+        r"\breplace\b.*\bjobs?\b|\bfleet\b|\binstalled base\b|\bobsolete\b|\beliminate\b",
+        re.I,
+    ),
 }
+
+
+def bass_time_between_shares(p: float, q: float, s0: float, s1: float, stock_inertia: float = 1.0) -> float:
+    """Analytical inverse of Bass (1969) S-curve F(t) = (1 - exp(-(p+q)t)) / (1 + (q/p)exp(-(p+q)t))
+    giving exact years required to diffuse from baseline share s0 to target share s1.
+    """
+    s0_c = min(max(float(s0), 0.005), 0.95)
+    s1_c = min(max(float(s1), s0_c + 0.01), 0.98)
+    qp = q / max(p, 1e-6)
+    t0 = math.log((1.0 + qp * s0_c) / (1.0 - s0_c)) / (p + q)
+    t1 = math.log((1.0 + qp * s1_c) / (1.0 - s1_c)) / (p + q)
+    return max(0.2, (t1 - t0) * max(stock_inertia, 1.0))
+
+
+def bass_share_after_years(p: float, q: float, s0: float, delta_years: float, speedup: float = 1.0, stock_inertia: float = 1.0) -> float:
+    """Analytical Bass (1969) forward projection from current share s0 over delta_years under speedup factor."""
+    s0_c = min(max(float(s0), 0.005), 0.95)
+    qp = q / max(p, 1e-6)
+    t0 = math.log((1.0 + qp * s0_c) / (1.0 - s0_c)) / (p + q)
+    t_eff = t0 + max(0.0, float(delta_years)) * max(speedup, 0.1) / max(stock_inertia, 1.0)
+    eb_term = math.exp(-(p + q) * t_eff)
+    return min(max((1.0 - eb_term) / (1.0 + qp * eb_term), s0_c), 0.99)
+
+
+def parse_target_share(text: str, s0: float = 0.04) -> float | None:
+    """Extract target penetration/replacement fraction in (0, 1) if stated in text."""
+    # Check percentage-point delta first (e.g. '提高至少2.0个百分点' -> s0 + 0.02, NOT 35%!)
+    m_pp = re.search(r"(\d+(?:\.\d+)?)\s*个?百分点", text)
+    if m_pp:
+        delta_pp = float(m_pp.group(1)) / 100.0
+        if 0.005 <= delta_pp <= 0.80:
+            return min(s0 + delta_pp, 0.95)
+    m_pct = re.findall(r"(\d+(?:\.\d+)?)\s*%", text)
+    for raw in m_pct:
+        val = float(raw)
+        if 5.0 <= val <= 100.0 and not re.search(r"每年.*%|增长\s*" + re.escape(raw), text):
+            return min(val / 100.0, 0.95)
+    if re.search(r"一半|半数|过半|\bhalf\b|\bmajority\b", text, re.I):
+        return 0.50
+    if re.search(r"彻底取代|完全取代|全面普及|普遍采用|主导|\bcompletely replace|\bdominate\b|\bubiquitous\b", text, re.I):
+        return 0.60
+    return None
 
 
 def normalize_domain(domain: str) -> str:
@@ -596,6 +649,10 @@ def extract_features(
         "ix_long_explicit": ultra_long_window * is_exp,
         "ix_measurable_x_infra": s_scores["measurable_metric"] * hist["data_infra"],
         "ix_abstract_x_long": s_scores["abstract_normative_or_utopian"] * ultra_long_window,
+        "ix_heavy_short_explicit_no_ledger": (
+            s_scores["heavy_atom_or_regulated"] * (short_window + med_short_window) * is_exp * (1.0 - m_scores["constraint_ledger"])
+        ),
+        "ix_stock_replace_short": s_scores["stock_replacement_scope"] * short_window,
     }
     if pit_prior is not None:
         feats["pit_strict_rate"] = pit_prior["strict"]
@@ -1200,6 +1257,7 @@ def compute_cmh_stratified_effects(forecasts: list[dict[str, Any]]) -> dict[str,
         "ix_anchored_explicit",
         "ix_unanchored_explicit",
         "ix_surpass_explicit_no_ledger",
+        "ix_heavy_short_explicit_no_ledger",
     ]
     effects: dict[str, dict[str, float]] = {}
     for key in keys:
@@ -1253,6 +1311,7 @@ class ForecastOptimizerEngine:
         self.cmh_effects: dict[str, dict[str, float]] = model_bundle["cmh_effects"]
         self._curated_cache: list[dict[str, str]] | None = None
         self._summary_cache: list[dict[str, str]] | None = None
+        self._atlas_cache: dict[str, Any] | None = None
 
     @classmethod
     def load(cls, model_path: Path = DEFAULT_MODEL_PATH, repo_root: Path = REPO_ROOT) -> "ForecastOptimizerEngine":
@@ -1275,6 +1334,149 @@ class ForecastOptimizerEngine:
             with open(p, encoding="utf-8-sig") as f:
                 self._summary_cache = list(csv.DictReader(f))
         return self._summary_cache
+
+    def _atlas_data(self) -> dict[str, Any]:
+        if self._atlas_cache is None:
+            p = self.repo_root / "datasets" / "historical_tech_diffusion_atlas.json"
+            self._atlas_cache = json.loads(p.read_text(encoding="utf-8"))
+        return self._atlas_cache
+
+    def evaluate_tech_differentiation(
+        self,
+        *,
+        statement: str,
+        domain: str = "",
+        scope: str = "",
+        horizon_years: float | None = None,
+        current_penetration: float | None = None,
+        target_penetration: float | None = None,
+        is_stock_scope: bool | None = None,
+    ) -> dict[str, Any]:
+        """Test 'Is This New Technology Really Different This Time?' against 150 years of
+        historical technology diffusion S-curves (Comin-Hobijn CHAT, Bass 1969, Paul David 1990)
+        and output both the historical structural skeleton and the real-time bottleneck parameters to check.
+        """
+        atlas = self._atlas_data()
+        layers = atlas["four_layer_speed_laws"]
+        waves = atlas["waves"]
+        combined_low = f"{statement} {domain} {scope}".lower()
+        year_now = date.today().year
+        eff_years = horizon_years or parse_explicit_span(statement, year_now) or 5.0
+
+        # 1. Match structural historical analogs from the 12-wave Atlas
+        scored_waves: list[tuple[float, dict[str, Any]]] = []
+        for w in waves:
+            sc = 0.0
+            for kw in w["keywords"]:
+                if kw.lower() in combined_low:
+                    sc += 3.0 if len(kw) >= 3 else 1.5
+            # Domain fallback affinity
+            canon_dom = normalize_domain(domain or statement)
+            if canon_dom == "人口、能源、资源与生态" and w["wave_id"] == "utility_grid_power_and_storage":
+                sc += 2.0
+            elif canon_dom == "AI与奇点前沿" and w["wave_id"] == "enterprise_public_cloud":
+                sc += 1.5
+            elif canon_dom == "科技、商业与产业颠覆" and w["wave_id"] in ("smartphone_mobile_terminal", "enterprise_public_cloud"):
+                sc += 1.0
+            scored_waves.append((sc, w))
+
+        scored_waves.sort(key=lambda x: x[0], reverse=True)
+        primary_wave = scored_waves[0][1]
+        top_analogs = [w for _, w in scored_waves[:3]]
+        layer_info = layers[primary_wave["layer_id"]]
+
+        # 2. Disambiguate Incremental Flow Share vs Installed Stock Replacement
+        detected_stock = (
+            is_stock_scope
+            if is_stock_scope is not None
+            else bool(STRUCTURAL_PATTERNS["stock_replacement_scope"].search(f"{statement} {scope}"))
+        )
+        s0 = current_penetration if current_penetration is not None else 0.04
+        s1_parsed = target_penetration if target_penetration is not None else parse_target_share(statement, s0=s0)
+        s1 = s1_parsed if s1_parsed is not None else 0.35
+        if s1 <= s0 + 0.004:
+            s1 = min(0.90, s0 + 0.15)
+
+        stock_inertia = (
+            primary_wave["stock_5_to_50_years"] / max(primary_wave["flow_5_to_50_years"], 0.5)
+            if detected_stock
+            else 1.0
+        )
+        hist_req_years = bass_time_between_shares(
+            primary_wave["bass_p"],
+            primary_wave["bass_q"],
+            s0,
+            s1,
+            stock_inertia=stock_inertia,
+        )
+        turnover_floor = primary_wave["asset_turnover_cycle_years"] * (s1 - s0) * (1.25 if detected_stock else 0.45)
+        effective_hist_years = max(hist_req_years, turnover_floor)
+        speedup_multiple = round(effective_hist_years / max(eff_years, 0.25), 2)
+
+        # Calibrated realistic penetration range at user's horizon (1.0x historical baseline vs 1.5x catalyzed wave)
+        proj_1x = bass_share_after_years(primary_wave["bass_p"], primary_wave["bass_q"], s0, eff_years, speedup=1.0, stock_inertia=stock_inertia)
+        proj_1_5x = bass_share_after_years(primary_wave["bass_p"], primary_wave["bass_q"], s0, eff_years, speedup=1.5, stock_inertia=stock_inertia)
+
+        if speedup_multiple > 2.2 or (detected_stock and eff_years < turnover_floor * 0.85):
+            verdict_code = "extreme_overreach"
+            verdict_label = f"高危‘这次不一样’跨层透支（要求速度为历史同构前辈的 {speedup_multiple:.1f} 倍）"
+            diagnosis = (
+                f"当前命题落在【{layer_info['name']}】，按{'存量替代/保有量' if detected_stock else '增量渗透'}口径从 {s0:.0%} 到 {s1:.0%}，"
+                f"同构前辈「{primary_wave['name']}」需约 {effective_hist_years:.1f} 年（受制于资产/组织周转底线 {primary_wave['asset_turnover_cycle_years']:.1f} 年），"
+                f"而当前仅给 {eff_years:.1f} 年窗口！即便给予 1.5 倍技术催化加速，{eff_years:.1f} 年内合理校准区间约为 {proj_1x:.1%}–{proj_1_5x:.1%}。"
+            )
+        elif speedup_multiple > 1.35:
+            verdict_code = "catalyst_dependent"
+            verdict_label = f"温和超速（为历史同构基准的 {speedup_multiple:.1f} 倍，需实时瓶颈指标验证催化强度）"
+            diagnosis = (
+                f"当前命题落在【{layer_info['name']}】，要求扩散速度快于「{primary_wave['name']}」历史均值（{effective_hist_years:.1f} 年 vs 给定 {eff_years:.1f} 年）。"
+                f"必须核验下方实时参数，确认单位成本已跨过平价点且未卡在物理/审批队列。"
+            )
+        else:
+            verdict_code = "historically_grounded"
+            verdict_label = f"符合历史扩散斜率（要求速度为历史同构基准的 {speedup_multiple:.2f} 倍）"
+            diagnosis = (
+                f"当前时间窗口（{eff_years:.1f} 年）与【{layer_info['name']}】历史同构前辈「{primary_wave['name']}」的 S 曲线斜率（约 {effective_hist_years:.1f} 年）匹配稳健。"
+            )
+
+        jevons_notes = {
+            "high_expansion": "强杰文斯反弹：历史表明该层技术降本 90% 后，前 5–10 年主效应是引爆长尾新需求总量（如煤耗/算力/金融分析量暴增），而非净归零存量。",
+            "task_shift_and_expansion": "任务重塑而非岗位净消失：如 Excel 与云计算历史所示，先替代单一重复任务(Task)并扩大总产出，净编制缩减远慢于任务渗透。",
+            "substitution_dominant": "存量折旧替代主导：终局替代明确，但斜率严格受存量设备/车队物理报废周期封顶，严禁混同‘新车/新增占比’与‘全社会保有量占比’。",
+            "regulated_gradual": "零容错立法配速：实验室指标突破不等于商业普及，实际斜率由事故归责立法、三期临床/适航牌照与保险准入速度决定。",
+        }
+
+        return {
+            "assigned_friction_layer": layer_info,
+            "scope_mode": "installed_stock_replacement（存量保有量/存量岗位替代口径）" if detected_stock else "incremental_flow_adoption（新增流量/增量渗透口径）",
+            "assumed_baseline_share": round(s0, 4),
+            "target_share_evaluated": round(s1, 4),
+            "target_horizon_years": round(eff_years, 2),
+            "historical_analog_required_years": round(effective_hist_years, 2),
+            "physical_turnover_floor_years": round(turnover_floor, 2),
+            "required_speedup_multiple": speedup_multiple,
+            "differentiation_verdict_code": verdict_code,
+            "differentiation_verdict": verdict_label,
+            "diagnosis": diagnosis,
+            "calibrated_share_range_in_horizon": {
+                "historical_1x_baseline": round(proj_1x, 4),
+                "accelerated_1_5x_catalyst": round(proj_1_5x, 4),
+            },
+            "jevons_elasticity_effect": jevons_notes[primary_wave["jevons_elasticity"]],
+            "primary_structural_analog": {
+                "wave_id": primary_wave["wave_id"],
+                "name": primary_wave["name"],
+                "flow_5_to_50_years": primary_wave["flow_5_to_50_years"],
+                "stock_5_to_50_years": primary_wave["stock_5_to_50_years"],
+                "primary_bottlenecks": primary_wave["primary_bottlenecks"],
+                "archive_anchor": primary_wave["archive_anchor"],
+            },
+            "secondary_analogs": [
+                {"name": w["name"], "flow_5_to_50_years": w["flow_5_to_50_years"], "stock_5_to_50_years": w["stock_5_to_50_years"]}
+                for w in top_analogs[1:]
+            ],
+            "realtime_parameters_to_fetch_now": primary_wave["realtime_parameters_to_check"],
+        }
 
     def predict_record(
         self,
@@ -1581,6 +1783,36 @@ class ForecastOptimizerEngine:
 
         precedents = self.retrieve_precedents(canon_dom, statement, top_k=3)
 
+        # 3. Historical Tech-Diffusion & "Is This Time Different?" 4-Layer Stress Test
+        is_tech_relevant = canon_dom in (
+            "AI与奇点前沿",
+            "科技、商业与产业颠覆",
+            "人口、能源、资源与生态",
+            "科幻推演与乌托邦/反乌托邦",
+        ) or bool(re.search(r"技术|AI|智能|自动|电动|芯片|算力|互联网|机器人|基因|核电|光伏|储能|数字化|tech|ai|digital|automat", f"{statement} {domain}", re.I))
+
+        tech_diff_audit = (
+            self.evaluate_tech_differentiation(
+                statement=statement,
+                domain=canon_dom,
+                scope=scope,
+                horizon_years=eff_years,
+            )
+            if is_tech_relevant
+            else None
+        )
+        if tech_diff_audit and tech_diff_audit["differentiation_verdict_code"] == "extreme_overreach":
+            audit["traps_detected"].append({
+                "trap_id": "this_time_is_different_speed_overreach",
+                "name": "‘这次不一样’跨层速度透支（无视物理周转墙与组织重构周期）",
+                "cmh_effect_note": tech_diff_audit["differentiation_verdict"],
+                "remediation": (
+                    f"{tech_diff_audit['diagnosis']} 请将分母明确限定为增量/任务级口径，或将目标阈值下调至历史校准区间 "
+                    f"{tech_diff_audit['calibrated_share_range_in_horizon']['historical_1x_baseline']:.0%}–"
+                    f"{tech_diff_audit['calibrated_share_range_in_horizon']['accelerated_1_5x_catalyst']:.0%}，并核查实时瓶颈参数。"
+                ),
+            })
+
         uplift = {
             "delta_strict_win_prob_pp": round(
                 (best["strict_win_prob_given_decided"] - baseline["strict_win_prob_given_decided"]) * 100.0, 2
@@ -1620,8 +1852,19 @@ class ForecastOptimizerEngine:
 
         horizon_label = horizon.strip() or f"{year_now}–{int(year_now + eff_years)}"
         b_o4 = best["calibrated_probs_decided_4class"]
+        tech_card_lines = []
+        if tech_diff_audit:
+            pa = tech_diff_audit["primary_structural_analog"]
+            rng = tech_diff_audit["calibrated_share_range_in_horizon"]
+            tech_card_lines = [
+                f"- **历史同构扩散校准（‘这次是否不一样’四层检验）**：",
+                f"  - **所属摩擦层级**：{tech_diff_audit['assigned_friction_layer']['name']}（`{tech_diff_audit['scope_mode']}`）",
+                f"  - **历史同构前辈**：{pa['name']}（增量 5%→50% 耗时 `{pa['flow_5_to_50_years']}年` / 存量耗时 `{pa['stock_5_to_50_years']}年`）",
+                f"  - **速度压力测试**：{tech_diff_audit['differentiation_verdict']}；本窗口内历史校准区间 `{rng['historical_1x_baseline']:.1%}–{rng['accelerated_1_5x_catalyst']:.1%}`",
+                f"  - **必查当下实时瓶颈参数**：{' ； '.join(tech_diff_audit['realtime_parameters_to_fetch_now'])}",
+            ]
         final_card_md = "\n".join([
-            f"### 终局预测卡（含显式预测方法披露）",
+            f"### 终局预测卡（含显式预测方法与历史同构校准披露）",
             f"- **可核验预测承诺**：{statement.strip() if audit['score_out_of_6'] == 6 and not audit['traps_detected'] else '<请基于上方处方收敛后的六要素定量承诺>'}",
             f"- **统计口径与权威结算源**：{scope.strip() or '<唯一官方统计/财报口径与分母定义>'}（窗口：`{horizon_label}`）",
             f"- **显式预测方法（为什么这么判）**：",
@@ -1629,6 +1872,7 @@ class ForecastOptimizerEngine:
             f"  - **方法四步推导链**：{' ； '.join(best['derivation_steps'])}",
             f"  - **反校验透镜（防盲区对冲）**：{counter_lens.strip() or best['recommended_counter_lens']}",
             f"  - **承诺硬度选择依据**：{best['commitment_label']}",
+            *tech_card_lines,
             f"- **全库 8,130 条预测校准先验**：严格胜率 `{b_o4['正确']:.1%}` ｜ 方向命中率 `{(b_o4['正确'] + b_o4['趋势符合']):.1%}` ｜ 部分符合 `{b_o4['部分符合']:.1%}` ｜ 错误风险 `{b_o4['错误']:.1%}`",
             f"- **定期追踪领先指标**：{leading_indicators.strip() or best['leading_indicator_template']}",
             f"- **明确证伪条件（三轴结算红线）**：{falsification.strip() or '<明确推翻本预测的定量反证阈值>'}",
@@ -1644,6 +1888,7 @@ class ForecastOptimizerEngine:
                 "historical_regime_at_t0": historical_regime_features(year_now),
             },
             "operationalizability_audit": audit,
+            "tech_differentiation_audit": tech_diff_audit,
             "baseline_evaluation": baseline,
             "recommended_optimization": best,
             "explicit_method_specification": {
@@ -2133,6 +2378,24 @@ def format_optimization_markdown(res: dict[str, Any]) -> str:
         f"- **承诺硬度策略**：{opt['commitment_label']}",
         f"- **推荐领先观测指标**：{opt['leading_indicator_template']}",
         "",
+    ]
+    td = res.get("tech_differentiation_audit")
+    if td:
+        pa = td["primary_structural_analog"]
+        rng = td["calibrated_share_range_in_horizon"]
+        lines += [
+            "## 2.5 新技术“这次是否不一样？”历史同构扩散曲线 × 实时瓶颈校准",
+            "",
+            f"- **摩擦层级定位**：**{td['assigned_friction_layer']['name']}** —— *{td['assigned_friction_layer']['is_different_verdict']}*",
+            f"- **统计分母性质**：`{td['scope_mode']}`（基线 `{td['assumed_baseline_share']:.1%}` → 目标 `{td['target_share_evaluated']:.1%}`，窗口 `{td['target_horizon_years']:.1f} 年`）",
+            f"- **最接近的历史同构前辈**：**{pa['name']}**（增量 5%→50% 历时 `{pa['flow_5_to_50_years']} 年`，存量更替历时 `{pa['stock_5_to_50_years']} 年`；书库锚点：{pa['archive_anchor']}）",
+            f"- **Bass 扩散斜率压力测试**：**{td['differentiation_verdict']}**（历史同构需 `{td['historical_analog_required_years']} 年`；`{td['target_horizon_years']:.1f} 年`内 1.0x–1.5x 校准合理渗透区间为 **`{rng['historical_1x_baseline']:.1%} – {rng['accelerated_1_5x_catalyst']:.1%}`**）",
+            f"- **杰文斯需求弹性提示**：{td['jevons_elasticity_effect']}",
+            f"- **必须联网核查的当下实时瓶颈参数（用今天的新事实修正历史斜率）**：",
+            *[f"  - 🔍 {param}" for param in td["realtime_parameters_to_fetch_now"]],
+            "",
+        ]
+    lines += [
         "## 3. 逐条可执行优化处方",
         "",
     ]
@@ -2201,6 +2464,15 @@ def main(argv: list[str] | None = None) -> int:
     p_led = sub.add_parser("audit-ledger", help="Batch-audit and optimize all forecasts in a ledger directory")
     p_led.add_argument("--case", type=Path, default=REPO_ROOT / "my-forecasts")
 
+    p_tech = sub.add_parser("tech-analog", help="Test 'Is This New Technology Different?' against 150-year historical S-curve analogs")
+    p_tech.add_argument("--statement", required=True, help="Technology adoption/disruption claim")
+    p_tech.add_argument("--domain", default="", help="Forecast domain")
+    p_tech.add_argument("--scope", default="", help="Denominator scope")
+    p_tech.add_argument("--horizon-years", type=float, default=None, help="Target horizon in years")
+    p_tech.add_argument("--current-share", type=float, default=None, help="Current baseline penetration in (0, 1)")
+    p_tech.add_argument("--target-share", type=float, default=None, help="Target penetration in (0, 1)")
+    p_tech.add_argument("--stock", action="store_true", help="Force installed-stock / headcount replacement mode")
+
     args = parser.parse_args(argv)
 
     if args.cmd == "train":
@@ -2263,6 +2535,19 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.cmd == "audit-ledger":
         res = engine.audit_ledger(args.case)
+        print(json.dumps(res, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.cmd == "tech-analog":
+        res = engine.evaluate_tech_differentiation(
+            statement=args.statement,
+            domain=args.domain,
+            scope=args.scope,
+            horizon_years=args.horizon_years,
+            current_penetration=args.current_share,
+            target_penetration=args.target_share,
+            is_stock_scope=True if args.stock else None,
+        )
         print(json.dumps(res, ensure_ascii=False, indent=2))
         return 0
 

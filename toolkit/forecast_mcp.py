@@ -207,6 +207,28 @@ TOOLS_SPEC: list[dict[str, Any]] = [
         },
     },
     {
+        "name": "evaluate_tech_differentiation",
+        "description": (
+            "Test 'Is This New Technology Really Different This Time?' against 150 years of historical "
+            "technology diffusion S-curves (Comin-Hobijn NBER CHAT, Bass 1969, Paul David Dynamo Paradox), "
+            "identifying the physical/institutional friction layer (1 to 4), stock-vs-flow inertia, "
+            "calibrated penetration range, and exact real-time bottleneck parameters to fetch."
+        ),
+        "inputSchema": {
+            "type": "object",
+            "properties": {
+                "statement": {"type": "string", "description": "Technology adoption or disruption forecast statement."},
+                "domain": {"type": "string", "description": "Optional domain hint."},
+                "scope": {"type": "string", "description": "Denominator scope (new sales flow vs installed fleet/headcount stock)."},
+                "horizon_years": {"type": "number", "description": "Target horizon in years."},
+                "current_penetration": {"type": "number", "description": "Current baseline penetration fraction in (0, 1), e.g. 0.04."},
+                "target_penetration": {"type": "number", "description": "Target penetration fraction in (0, 1), e.g. 0.50."},
+                "is_stock_scope": {"type": "boolean", "description": "True if claiming installed-stock or total headcount replacement."},
+            },
+            "required": ["statement"],
+        },
+    },
+    {
         "name": "get_optimizer_benchmark",
         "description": (
             "Return the 5-fold Out-of-Book Grouped Cross-Validation benchmark across 7 academic models, "
@@ -227,6 +249,12 @@ RESOURCES_SPEC: list[dict[str, Any]] = [
         "uri": "forecast-lab://methodology/signal-lenses-and-traps",
         "name": "6 Signal Method Archetypes & 5 Noise Failure Traps Catalog",
         "description": "Structured taxonomy with empirical CMH controlled percentage-point effects and exemplars.",
+        "mimeType": "application/json",
+    },
+    {
+        "uri": "forecast-lab://atlas/historical-tech-diffusion",
+        "name": "Historical Technology Diffusion & 4-Layer Bottleneck Atlas (1882-2025)",
+        "description": "Bass (p, q) diffusion S-curves, 5%->50% flow/stock durations, and bottleneck checklists across 12 tech waves.",
         "mimeType": "application/json",
     },
     {
@@ -370,6 +398,18 @@ class ForecastMCPServer:
             }
             return {"content": [{"type": "text", "text": json.dumps(payload, ensure_ascii=False, indent=2)}], "isError": False}
 
+        if name == "evaluate_tech_differentiation":
+            res = self.engine.evaluate_tech_differentiation(
+                statement=arguments["statement"],
+                domain=arguments.get("domain", ""),
+                scope=arguments.get("scope", ""),
+                horizon_years=arguments.get("horizon_years"),
+                current_penetration=arguments.get("current_penetration"),
+                target_penetration=arguments.get("target_penetration"),
+                is_stock_scope=arguments.get("is_stock_scope"),
+            )
+            return {"content": [{"type": "text", "text": json.dumps(res, ensure_ascii=False, indent=2)}], "isError": False}
+
         if name == "get_optimizer_benchmark":
             bpath = self.repo_root / "datasets" / "optimization_benchmark.json"
             if bpath.is_file():
@@ -397,6 +437,10 @@ class ForecastMCPServer:
                     {"uri": uri, "mimeType": "application/json", "text": json.dumps(payload, ensure_ascii=False, indent=2)}
                 ]
             }
+
+        if uri == "forecast-lab://atlas/historical-tech-diffusion":
+            apath = self.repo_root / "datasets" / "historical_tech_diffusion_atlas.json"
+            return {"contents": [{"uri": uri, "mimeType": "application/json", "text": apath.read_text(encoding="utf-8")}]}
 
         if uri == "forecast-lab://ledger/my-forecasts":
             res = self.engine.audit_ledger(self.repo_root / "my-forecasts")
@@ -570,7 +614,7 @@ def run_self_test() -> int:
     })
     assert init_resp and init_resp["result"]["serverInfo"]["name"] == SERVER_NAME
     tools_resp = srv.handle_request({"jsonrpc": "2.0", "id": 2, "method": "tools/list", "params": {}})
-    assert tools_resp and len(tools_resp["result"]["tools"]) == 6
+    assert tools_resp and len(tools_resp["result"]["tools"]) == 7
     call_resp = srv.handle_request({
         "jsonrpc": "2.0",
         "id": 3,
@@ -587,6 +631,7 @@ def run_self_test() -> int:
     assert call_resp and not call_resp["result"]["isError"]
     parsed = json.loads(call_resp["result"]["content"][0]["text"])
     assert "recommended_optimization" in parsed
+    assert parsed["tech_differentiation_audit"]["differentiation_verdict_code"] == "extreme_overreach"
     print(json.dumps({"self_test": "passed", "tools_registered": len(tools_resp["result"]["tools"])}, ensure_ascii=False))
     return 0
 

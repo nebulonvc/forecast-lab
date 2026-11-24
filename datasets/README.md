@@ -56,6 +56,7 @@
 
 - [`forecast_optimizer_model.json`](forecast_optimizer_model.json)：基于全库 132 部著作（8,130 条预测 + 2,553 条非预测 + $t_0$ 宏观历史状态）训练固化的对数线性池化超学习器（`SuperLearner`）参数包（含 SHA-256 完整性校验），供 [`toolkit/forecast_optimizer.py`](../toolkit/forecast_optimizer.py) 与 [`toolkit/forecast_mcp.py`](../toolkit/forecast_mcp.py) 零依赖毫秒级加载。
 - [`optimization_benchmark.json`](optimization_benchmark.json)：按著作分组五折交叉验证（Out-of-Book 5-Fold Grouped CV）的 8 组学术模型对比指标（Brier、LogLoss、序数 RPS、ECE）及 Cochran-Mantel-Haenszel 分层因果效应表。详见 [`docs/06-forecast-method-optimization.md`](../docs/06-forecast-method-optimization.md)。
+- [`historical_tech_diffusion_atlas.json`](historical_tech_diffusion_atlas.json)：跨越 1882–2025 年的 **12 次代表性技术浪潮扩散基线与四层摩擦参数表**（基于 Comin-Hobijn NBER CHAT、Bass 1969 S 曲线系数 $(p, q)$、Paul David 发电机悖论及本库 132 部著作实证锚点），记录增量 `5%→50%` 耗时、存量更替耗时、资产周转底线与当下实时瓶颈核查清单，用于定量检验新技术“这次是否不一样”。
 
 ---
 

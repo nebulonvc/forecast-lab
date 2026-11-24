@@ -19,6 +19,7 @@
 | **3. 基于特征的预测方法元学习（FFORMA）** | Montero-Manso, Athanasopoulos, Hyndman & Talagala (2020, *IJF* M4 亚军框架) | 没有“万能方法”，最优透镜高度依赖问题特征与时间窗口的非线互作用 | 二阶牛顿直方图梯度提升树（`HistXGBoost`），自动捕获“显式年份 × 有无约束账本”等高阶交互 |
 | **4. 分层因果效应剥离（CMH 混杂控制）** | Cochran (1954); Mantel & Haenszel (1959); Imbens & Rubin (2015) | 观察性书库中“时代/时间窗”与“方法”高度混杂（如智库集中在近 10 年，乌托邦集中在百年前） | 在相同 `(时间跨度档 × 显隐期限)` 层内计算 Cochran-Mantel-Haenszel 加权净效应，剥离时间红利 |
 | **5. 对数线性意见池、温度校准与严格恰当评分规则** | Bates & Granger (1969); Genest & Zidek (1986); Gneiting & Raftery (2007, *JASA*); Satopää, Tetlock et al. (2014); Halawi et al. (2024, *NeurIPS*) | 单一模型或原始 LLM 口头概率常出现过度自信与分布失真 | 对数线性池化（Log-Linear Opinion Pool）+ 样本外温度缩放 $T$，以多分类 Brier、LogLoss、序数 RPS 与校准误差 ECE 联合寻优 |
+| **6. 跨国历史技术采用曲线与四层摩擦定律** | Comin & Hobijn (2004, 2009 *NBER CHAT*); Bass (1969 *S-Curve*); Paul David (1990 *Dynamo Paradox*); Perez (2002) | 评估颠覆性新技术时易陷入“这次不一样”的纯算法速率外推，忽视物理换机与组织重构周转墙 | 12 次历史技术浪潮 Bass $(p,q)$ 扩散反演（`evaluate_tech_differentiation`），分离纯比特层与原子/监管层斜率，联动当下实时瓶颈参数核查 |
 
 ---
 
@@ -101,7 +102,21 @@ flowchart LR
 
 ---
 
-## 四、如何在任何 AI Agent 终端一键接入？（复制文字即插即用）
+## 四、评估新技术“这次是否不一样”：历史同构扩散曲线 × 当下实时瓶颈校准
+
+针对新技术预测的核心痛点——**“纯语言结构规则不懂当下新事实，如何判断一项颠覆性技术到底是不是‘这次不一样’？”**——我们在 [`datasets/historical_tech_diffusion_atlas.json`](../datasets/historical_tech_diffusion_atlas.json) 中结构化收录了 1882–2025 年 **12 次代表性技术扩散浪潮**，通过 `evaluate_tech_differentiation` 实现定量双校准：
+
+1. **四层摩擦定位与存量/增量分离**：
+   - 自动将命题归入 **第 1 层纯比特消费协议**（`5%→50%` 耗时 `2.8–5.5 年`）、**第 2 层消费级硬件替换**（新车/新机 `4.8–6.5 年` vs 保有量 `14.5 年`）、**第 3 层企业核心工作流重塑**（公有云 `7.5–9.5 年`、ERP `9.0–11.5 年`，受制于保罗·大卫“发电机悖论”）或 **第 4 层重资产/电网/具身硬件/零容错强监管**（工业机器人 `14–22 年`、电网发电存量 `22 年`、L4 自动驾驶/临床新药 `14–20 年`）。
+2. **Bass (1969) S 曲线解析反演测算透支倍数**：
+   $$t(s) = \frac{1}{p+q}\ln\left(\frac{1 + \frac{q}{p}s}{1-s}\right), \qquad \Delta t_{\text{hist}}(s_0 \to s_1) = \gamma_{\text{stock}} \cdot \big[t(s_1) - t(s_0)\big]$$
+   当用户设定的期限 $\Delta t$ 要求比历史同构前辈快 **2.2 倍以上**或击穿物理折旧周转底线时，自动触发 `this_time_is_different_speed_overreach` 警报，并输出 `1.0x–1.5x` 校准合理渗透率区间。
+3. **实时瓶颈参数核查清单（`realtime_parameters_to_fetch_now`）**：
+   历史库负责给出**结构骨架斜率**，同时输出当前必须联网核查的 **3 项当下实时行业指标**（如区域电网并网排队月数、POC 转正式年框留存率、人形整机 BOM 静态回收期），用今天的一手数据修正历史斜率。
+
+---
+
+## 五、如何在任何 AI Agent 终端一键接入？（复制文字即插即用）
 
 整个优化系统**仅依赖 Python 3.11+ 标准库**，无需安装任何 `pip` 依赖包、无需外部 API Key，预训练参数包 [`datasets/forecast_optimizer_model.json`](../datasets/forecast_optimizer_model.json) 毫秒级加载。
 
@@ -112,13 +127,13 @@ flowchart LR
 ```text
 请帮我接入开源的 Forecast Lab 数据驱动预测方法优化器（仓库：https://github.com/nebulonvc/forecast-lab.git ，纯 Python 3.11+ 标准库零依赖）：
 1. 若当前目录不在 forecast-lab 仓库内，请先执行 `test -d ~/.forecast-lab || git clone --depth 1 https://github.com/nebulonvc/forecast-lab.git ~/.forecast-lab`（若已在仓库内则直接使用当前目录），并阅读 `.agents/skills/forecast-optimizer/SKILL.md`；若当前终端支持配置本地 MCP Server，可将 `python3 <仓库路径>/toolkit/forecast_mcp.py` 挂载为 `forecast-lab-optimizer`。
-2. 接下来每当我提出一个预测想法或请你做趋势判断时，你必须先调用 MCP 工具 `optimize_forecast`（或运行 `python3 <仓库路径>/toolkit/forecast_optimizer.py optimize --statement "<预测草案>" --domain "<领域>"`），用全库 132 部著作、8,130 条历史预测训练的 Super-Learner 诊断高赔率翻车陷阱、匹配同领域历史正反先例并完成反事实方法寻优。
+2. 每当我提出预测想法（尤其是评估 AI、机器人、能源、新产业“这次是否不一样”）时，你必须先调用 MCP 工具 `optimize_forecast` 与 `evaluate_tech_differentiation`（或运行 `python3 <仓库路径>/toolkit/forecast_optimizer.py optimize --statement "<预测草案>" --domain "<领域>"`）：先用 8,130 条历史预测 Super-Learner 与 150 年 12 次技术浪潮 Bass 扩散曲线给“历史同构骨架斜率”，再根据工具列出的 `realtime_parameters_to_fetch_now` 联网查询当下的真实行业瓶颈数据（如并网排期、BOM回本周期、付费留存率）修正斜率。
 3. 【强制交付规范——必须把预测方法写出来】：你最终输出给我的每一条预测，绝不允许只给一句结论或拍脑袋概率，必须完整写出：
-   (a) 可核验预测承诺（主体 + 对象 + 量词 + 含分母可测指标 + 唯一权威结算数据源 + 明确期限 + 排除边界）；
-   (b) 显式预测方法与四步推导链（写明选用哪套主方法原型、如何从基期存量/在建流量/否决权激励/成本门槛一步步推导出该结论、搭配什么反校验透镜对冲盲区、为何匹配当前承诺硬度）；
+   (a) 可核验预测承诺（主体 + 对象 + 量词 + 含分母可测指标【严分增量流量 vs 存量保有量】+ 唯一权威结算数据源 + 明确期限 + 排除边界）；
+   (b) 显式预测方法与四步推导链（写明选用哪套主方法原型、代入当下实时瓶颈数据的四步推导计算过程、历史同构技术校准结论、反校验透镜对冲逻辑与承诺硬度依据）；
    (c) 8,130 库样本外校准先验概率（优化前 vs 优化后的严格胜率、方向命中率、部分符合率、错误风险对比）；
    (d) 2–3 个季度/半年度可查的领先观测指标，以及事件×机制×时间三轴明确证伪红线。
-准备好后请回复我：“Forecast Lab 预测方法优化引擎已就绪，请告诉我你的预测想法。”
+准备好后请回复我：“Forecast Lab 预测方法优化与历史同构校准引擎已就绪，请告诉我你的预测想法。”
 ```
 
 ---
@@ -151,13 +166,14 @@ flowchart LR
   }
   ```
 
-挂载后，Agent 即可直接调用 **6 个标准化工具（Tools）**、**3 个只读资源（Resources）** 与 **2 个引导模板（Prompts）**：
-1. `optimize_forecast`：输入任意粗糙预测想法，返回可操作化评分、噪音陷阱诊断、优化前后五类校准概率对比、最优「主透镜 + 反校验透镜 + 承诺硬度」与同领域历史正反先例（`H/M/F` 编号）；
-2. `query_reference_class`：按领域与时间跨度查询三层经验贝叶斯基准率与同领域标杆著作；
-3. `bayesian_update_forecast`：基于新增支持/反面证据，按事件轴、机制轴、时间轴执行阻尼对数赔率更新并检测确认偏误；
-4. `audit_forecast_ledger`：一键体检 `my-forecasts/` 全部在册预测的方法质量；
-5. `register_optimized_forecast`：将优化后的预测卡连同校准先验概率原子写入账本并通过 `pipeline.py check` 校验；
-6. `get_optimizer_benchmark`：读取全库交叉验证指标与特征增益。
+挂载后，Agent 即可直接调用 **7 个标准化工具（Tools）**、**4 个只读资源（Resources）** 与 **2 个引导模板（Prompts）**：
+1. `optimize_forecast`：输入任意粗糙预测想法，返回可操作化评分、噪音陷阱诊断、新技术历史同构校准、优化前后五类校准概率对比、最优「主透镜 + 四步推导链 + 反校验透镜 + 承诺硬度」与同领域历史正反先例；
+2. `evaluate_tech_differentiation`：针对新技术评估执行 150 年 Bass 扩散曲线与四层物理/制度摩擦同构测试，输出合理渗透区间与必查当下实时参数清单；
+3. `query_reference_class`：按领域与时间跨度查询三层经验贝叶斯基准率与同领域标杆著作；
+4. `bayesian_update_forecast`：基于新增支持/反面证据，按事件轴、机制轴、时间轴执行阻尼对数赔率更新并检测确认偏误；
+5. `audit_forecast_ledger`：一键体检 `my-forecasts/` 全部在册预测的方法质量；
+6. `register_optimized_forecast`：将优化后的预测卡连同显式推导链与校准先验概率原子写入账本并通过 `pipeline.py check` 校验；
+7. `get_optimizer_benchmark`：读取全库交叉验证指标与特征增益。
 
 ### 方式二：通过通用 Agent Skill 接入（零 MCP 配置也能即插即用）
 

@@ -205,6 +205,29 @@ class ForecastOptimizerTests(unittest.TestCase):
             self.assertEqual(audit_data["forecast_count"], 1)
             self.assertEqual(audit_data["items"][0]["operationalizability_score"], 6)
 
+            # Test dedicated evaluate_tech_differentiation MCP tool
+            tech_resp = srv.handle_request({
+                "jsonrpc": "2.0",
+                "id": 12,
+                "method": "tools/call",
+                "params": {
+                    "name": "evaluate_tech_differentiation",
+                    "arguments": {
+                        "statement": "到2029年人形机器人在汽车量产线彻底取代50%装配工",
+                        "horizon_years": 3,
+                        "current_penetration": 0.01,
+                        "target_penetration": 0.50,
+                        "is_stock_scope": True,
+                    },
+                },
+            })
+            self.assertFalse(tech_resp["result"]["isError"])
+            tech_data = json.loads(tech_resp["result"]["content"][0]["text"])
+            self.assertEqual(tech_data["assigned_friction_layer"]["layer_id"], "layer_4_heavy_capex_regulated")
+            self.assertEqual(tech_data["differentiation_verdict_code"], "extreme_overreach")
+            self.assertGreater(tech_data["required_speedup_multiple"], 3.0)
+            self.assertGreaterEqual(len(tech_data["realtime_parameters_to_fetch_now"]), 3)
+
         # End-to-end stdio subprocess test (newline-delimited JSON-RPC 2.0)
         mcp_script = Path(__file__).resolve().parents[1] / "forecast_mcp.py"
         requests = "\n".join([
@@ -223,8 +246,38 @@ class ForecastOptimizerTests(unittest.TestCase):
         lines = [json.loads(line) for line in proc.stdout.decode("utf-8").splitlines() if line.strip()]
         self.assertEqual(len(lines), 3)  # notification produced no response
         self.assertEqual(lines[0]["id"], 1)
-        self.assertEqual(len(lines[1]["result"]["resources"]), 3)
+        self.assertEqual(len(lines[1]["result"]["resources"]), 4)
         self.assertIn("optimize_forecast", lines[2]["result"]["messages"][0]["content"]["text"])
+
+    def test_bass_diffusion_math_and_four_layer_differentiation(self):
+        # Analytical roundtrip: bass_share_after_years(bass_time_between_shares(s0, s1)) == s1
+        dt = fo.bass_time_between_shares(0.02, 0.45, 0.05, 0.50, stock_inertia=1.3)
+        s_end = fo.bass_share_after_years(0.02, 0.45, 0.05, dt, speedup=1.0, stock_inertia=1.3)
+        self.assertAlmostEqual(s_end, 0.50, places=4)
+
+        # Layer 1 pure bit consumer app over 4 years is historically grounded
+        bit_res = self.engine.evaluate_tech_differentiation(
+            statement="消费端生成式AI搜索App月活渗透率在4年内从10%升至45%",
+            domain="AI与奇点前沿",
+            horizon_years=4.0,
+            current_penetration=0.10,
+            target_penetration=0.45,
+            is_stock_scope=False,
+        )
+        self.assertEqual(bit_res["assigned_friction_layer"]["layer_id"], "layer_1_pure_bit")
+        self.assertEqual(bit_res["differentiation_verdict_code"], "historically_grounded")
+
+        # Layer 3 enterprise workflow stock headcount replacement in 2 years is extreme overreach
+        ent_res = self.engine.evaluate_tech_differentiation(
+            statement="到2028年底AI智能体彻底取代50%世界500强软件工程师岗位",
+            domain="AI与奇点前沿",
+            horizon_years=2.0,
+            current_penetration=0.03,
+            target_penetration=0.50,
+            is_stock_scope=True,
+        )
+        self.assertEqual(ent_res["assigned_friction_layer"]["layer_id"], "layer_3_enterprise_workflow")
+        self.assertEqual(ent_res["differentiation_verdict_code"], "extreme_overreach")
 
 
 if __name__ == "__main__":
