@@ -133,12 +133,12 @@
 
 ## 演示视频
 
-| 《手把手学预测》（6 分钟） | 《百大精彩 · 五十翻车 · 未来方向全景》（8 分钟） |
+| 《预测，能否被量化？》精华短版（3 分 49 秒） | 《预测，能否被量化？》完整大课版（1 小时 12 分） |
 | :---: | :---: |
-| [![](media/previews/video1-tutorial-preview.gif)](https://github.com/nebulonvc/forecast-lab/releases/download/v1.0.0/01-hands-on-forecasting-tutorial.mp4) | [![](media/previews/video2-panoramic-preview.gif)](https://github.com/nebulonvc/forecast-lab/releases/download/v1.0.0/02-panoramic-330-forecasts.mp4) |
-| 全库结论、七步预测法与美国数据中心用电推演 · [观看](https://github.com/nebulonvc/forecast-lab/releases/download/v1.0.0/01-hands-on-forecasting-tutorial.mp4) | 100 条精彩命中、50 条失误归因与六大领域 180 条未来方向 · [观看](https://github.com/nebulonvc/forecast-lab/releases/download/v1.0.0/02-panoramic-330-forecasts.mp4) |
+| [![](media/previews/video1-short-preview.gif)](https://github.com/nebulonvc/forecast-lab/releases/download/v1.1.0/01-short-quantifying-forecasts.mp4) | [![](media/previews/video2-masterclass-preview.gif)](https://github.com/nebulonvc/forecast-lab/releases/download/v1.1.0/02-masterclass-quantifying-forecasts.mp4) |
+| 3 分钟读懂 132 部著作、8,130 条预测的量化实验与核心反常识结论 · [观看 / 下载 1080p](https://github.com/nebulonvc/forecast-lab/releases/download/v1.1.0/01-short-quantifying-forecasts.mp4) | 13 章全景大课：从时代背景与名家故事切入，逐领域复盘命中、翻车与七步实战法 · [观看 / 下载 1080p](https://github.com/nebulonvc/forecast-lab/releases/download/v1.1.0/02-masterclass-quantifying-forecasts.mp4) |
 
-章节时间轴见 [media/README.md](media/README.md)。
+完整 13 章时间轴与双行 SRT 字幕见 [media/README.md](media/README.md)。
 
 ---
 
