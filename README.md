@@ -1,206 +1,198 @@
-# Forecast Lab · 信号与噪音：可复盘的预测实验室
+# Forecast Lab · 信号与噪音
 
-> **跨越近五百年 132 部著作、8,130 条预测的实证复盘，以及一套可与 AI Agent 协同运作的“去噪与定期预测”开源工具链。**
+**我们把过去 500 年里 132 本书、8,130 条预测，一条一条拿去和后来真实发生的事对账。**
 
-[![Check Forecasts CI](https://github.com/nebulonvc/forecast-lab/actions/workflows/check.yml/badge.svg)](https://github.com/nebulonvc/forecast-lab/actions/workflows/check.yml)
-[![Python 3.11+ Stdlib Only](https://img.shields.io/badge/Python-3.11%2B%20(Zero%20Deps)-2B5B84)](toolkit/)
-[![Code License: MIT](https://img.shields.io/badge/Code-MIT-3D6B52)](LICENSE)
-[![Data & Reports: CC BY 4.0](https://img.shields.io/badge/Reports%20%26%20Data-CC%20BY%204.0-C85A3A)](LICENSE)
+想知道的很简单：谁的预测真的靠谱？他们用了什么方法？再厉害的人又会在哪里栽跟头？
 
----
-
-## 🌟 这个项目做了什么？
-
-人们热爱谈论预言，却极少给预言记账。
-
-受纳特·西尔弗（Nate Silver）经典著作 **《信号与噪音》（*The Signal and the Noise*）** 启发，我们构建了一套**零外部依赖、全链路哈希可核验**的预测审计引擎，对横跨 16 世纪至今的 **132 部代表性著作与智库报告**（涵盖地缘政治、宏观金融、科技产业、人工智能、能源生态、社会制度与科幻推演七大领域）进行了逐句抽取与公开事实核验：
-
-- 📚 **132 部独立作品** · **10,683 条原始候选**（按规则筛除格言、倡议、历史复述等非预测噪音 2,553 条）
-- 🎯 **8,130 条可评分预测** · 其中 **5,060 条已形成明确事实判定**（正确 1,686 · 趋势符合 971 · 部分符合 1,714 · 错误 689 · 暂无法判断 3,070）
-- 🧭 人工精选 **330 条高含金量样本**：**100 条跨时代封神命中** + **50 条顶尖大师翻车解剖** + **六大领域 180 条 2026–2035 未来跟踪罗盘**
-- 🤖 **一键 Fork 即用的个人定期预测实验室**：内置 `my-forecasts/` 账本、`AGENTS.md` 智能体协议与 GitHub Actions 定时搜证工作流，帮你和 AI Agent 一起做自己的定期贝叶斯预测复盘！
+[![CI](https://github.com/nebulonvc/forecast-lab/actions/workflows/check.yml/badge.svg)](https://github.com/nebulonvc/forecast-lab/actions/workflows/check.yml)
+[![Code: MIT](https://img.shields.io/badge/Code-MIT-3D6B52)](LICENSE)
+[![Data: CC BY 4.0](https://img.shields.io/badge/Data-CC%20BY%204.0-C85A3A)](LICENSE)
 
 ---
 
-## 🎬 视频 Demo：14 分钟看懂全库发现与七步预测法
+## 为什么做这件事
 
-我们制作了两部科研档案风双人配音演示视频（仓库内展示高清动图预览与字幕，1080p 完整有声原片托管于 **[GitHub Releases `v1.0.0`](https://github.com/nebulonvc/forecast-lab/releases/tag/v1.0.0)**）：
+每年都有大量"未来十年将会……"的书和报告，但几乎没人回头查：当年那些话后来到底说对了多少？
 
-| Demo 1：《手把手学预测》（`06:08`） | Demo 2：《百大精彩 · 五十翻车 · 未来方向全景》（`07:56`） |
+不回头查，我们就容易**把运气当本事**（某人碰巧押中一次就被奉为先知），也容易**把一次失误当全盘否定**。
+
+这个项目受纳特·西尔弗《信号与噪音》启发：信息越多噪音越多，真正的规律需要用笨办法一条一条筛出来。所以我们读了从伯克、马尔萨斯、威尔斯，到基辛格、克里斯坦森、库兹韦尔，再到 IEA、OECD、世界银行的 132 部作品，把里面的预测摘出来，用公开数据逐条核对。
+
+> 👉 **最推荐先读：[一篇看懂我们发现了什么](docs/00-key-insights.md)**（数据分布、各领域谁跑赢基准、可借鉴的方法、要避开的坑、12 个历史故事）
+
+---
+
+## 五个最重要的发现
+
+### 1. 最准的不是预言家，是会算账的机构
+
+| 谁 | 完全说对 | 说错 |
+| :--- | ---: | ---: |
+| **国际机构与政府智库**（IEA、OECD、世界银行等） | **47.0%** | **6.3%** |
+| 政治家与战略实务者（李光耀、布热津斯基等） | 33.1% | 8.5% |
+| 学者（扎卡利亚、亨廷顿等） | 34.3% | 11.7% |
+| 经济学家与投资人（凯恩斯、达利欧等） | 30.3% | 13.9% |
+| 科技商业思想家（克里斯坦森、凯文·凯利等） | 28.8% | 10.8% |
+| 古典思想家与科幻作家（威尔斯、贝拉米等） | 29.6% | 31.3% |
+
+而且这不是因为智库报告更新：**把时间跨度锁在同一档比较，智库依然第一。** 它们赢在习惯先算账、少下绝对结论、把不确定的写成"如果……那么……"。
+
+### 2. 没有人在所有领域都准
+
+同一个人换个题目，成绩能差好几倍：
+
+- **威尔斯** 1901 年推演技术能干什么，说对 52%；1928 年设计世界政府，错了 41%。
+- **达利欧**《债务危机》零错误；《变化中的世界秩序》只说对 12%。
+- **凯文·凯利**《失控》32 年只错 5.7%；《必然》落到具体公司和年份就频频失手。
+
+**评价一句预测，别看名气，要看这句话在不在他的能力圈里。**
+
+### 3. 方向对不难，难的是别把方向写成精确数字
+
+全库写死年份的预测错误率 17.9%，不写年份的方向判断只有 12.3%。最典型的是英国政府科学办公室 2013 年的报告：趋势判断错误率 3.7%，写死年份的判断错误率 56%。
+
+但这不是说不能给数字。IEA、米尔斯海默、杰文斯写明期限的预测照样有 50%–60% 的准确率——**区别在于数字背后有没有一本账撑着。**
+
+### 4. 时间越远，考卷越难
+
+出版 3 年内的书错误率只有 2.9%，40 年以上的升到 25%–40%。所以比较任何两本书，**都要拿同样时间跨度的书比**。短期的高分很多只是因为难题还没到期。
+
+### 5. 错误高度集中在五个坑
+
+把 689 条说错的预测翻了一遍，大部分都掉进了这五个坑之一：
+
+1. **以为今天缺的会一直缺**——马尔萨斯、埃利希没算到化肥和绿色革命
+2. **把方向偷换成精确数字**——"边际成本每年减半""2015 年金砖超美国"
+3. **从技术能做到直接跳到世界会变成**——"飞机会消灭战争"
+4. **以为被预测的对象不会反应**——"美洲鹤必然灭绝"，没算到保护立法
+5. **把一段顺风当成一条直线**——把战后两年通胀当成长期趋势
+
+**一个简单警报：看到"无论如何都必将""永远不会""几乎全部"，自动打折扣。**
+
+---
+
+## 几个精彩的历史故事
+
+| 谁 | 说了什么 | 后来 |
+| :--- | :--- | :--- |
+| **伯克**（1790） | 法国大革命缺财政、缺军纪、缺秩序，最终会由军事强人收场 | 拿破仑上台。31 条预测零错误 |
+| **杰文斯**（1866） | 英国煤耗增长不可能一直维持 ✅ / 煤用完前不会有更好的替代能源 ❌ | 1913 年煤产量见顶；然后石油来了 |
+| **威尔斯**（1901） | 很可能在 1950 年前会有飞机成功飞行并返回 | 两年后莱特兄弟首飞 |
+| **克里斯坦森**（1997） | 传统车企会长期忽视电动车 ✅ / 电动车会从低端便宜市场切入 ❌ | 打开市场的是昂贵的特斯拉跑车 |
+| **卡普兰**（2012） | 21 世纪欧洲仍将被它与俄罗斯的关系所左右 | 2022 年俄乌战争 |
+| **马汉**（1897） | 运河一定修在尼加拉瓜 ❌ / 不管修在哪都会成为全球贸易枢纽 ✅ | 修在巴拿马，确实成了咽喉 |
+| **埃利希**（1968） | 无论采取什么措施，70 年代都会有几亿人饿死 | 绿色革命。全书错误率 51% |
+| **库兹韦尔**（2005） | 把芯片的指数速度套到纳米制造和生物医学 | 20 年后只说对 5.4% |
+
+每个故事的来龙去脉和可以学到的东西，见 [一篇看懂](docs/00-key-insights.md#六十二个值得细讲的历史故事)。完整的 100 条精彩预测和 50 条大师翻车，见 [330 条精选](docs/reports/curated-330-compendium.md)。
+
+---
+
+## 我们能借鉴什么方法
+
+说对的预测，集中在六种思考方式：
+
+| 方法 | 一句话 | 用得最好的 |
+| :--- | :--- | :--- |
+| **先算账** | 存量多少、每年增多少、新产能几年建好、谁买单 | IEA、杰文斯 |
+| **看谁说了算** | 不听口号，看考核指标、利润来源、谁有否决权 | 伯克、克里斯坦森、塔勒布 |
+| **看地图和邻居** | 地理和邻国的安全焦虑几十年不变，用它们做锚 | 扎卡利亚、卡普兰、麦金德 |
+| **押功能不押样子** | 只说"人们将能做到什么"，不说"哪家公司做到" | 威尔斯、戴维、弗里德曼 |
+| **看风险结构** | 不猜点位，问出事了谁受伤、谁被救 | 塔勒布、鲁比尼 |
+| **写成如果……那么……** | 几种可能并列，说清看到什么信号就知道走哪条 | OECD、世界银行 |
+
+**选方法看时间**：3 年内看已经在建和排期的；3–15 年看激励和制度、写成情景；15 年以上只押地理、人口、技术功能这些慢东西，不押年份和公司。
+
+手把手的七步做法：[怎么自己做预测](docs/03-data-and-forecasting-guide.md)
+
+---
+
+## 视频：14 分钟看完核心内容
+
+| 手把手学预测（6 分钟） | 百大精彩 · 五十翻车 · 未来方向（8 分钟） |
 | :---: | :---: |
-| [![手把手学预测](media/previews/video1-tutorial-preview.gif)](https://github.com/nebulonvc/forecast-lab/releases/download/v1.0.0/01-hands-on-forecasting-tutorial.mp4) | [![330条预测全景](media/previews/video2-panoramic-preview.gif)](https://github.com/nebulonvc/forecast-lab/releases/download/v1.0.0/02-panoramic-330-forecasts.mp4) |
-| **[▶️ 下载/播放 1080p MP4 (29MB)](https://github.com/nebulonvc/forecast-lab/releases/download/v1.0.0/01-hands-on-forecasting-tutorial.mp4)** · [字幕 SRT](media/subtitles/01-hands-on-forecasting-tutorial.srt) | **[▶️ 下载/播放 1080p MP4 (53MB)](https://github.com/nebulonvc/forecast-lab/releases/download/v1.0.0/02-panoramic-330-forecasts.mp4)** · [字幕 SRT](media/subtitles/02-panoramic-330-forecasts.srt) |
-| 拆解全库成绩单底线，用 **7 个步骤 + 美国数据中心用电完整推演** 教你像顶尖智库一样做预测 | 逐页呈现 **100 条精彩命中、50 条大师翻车五大死因**，以及 **六大领域 180 条未来跟踪指标** |
+| [![](media/previews/video1-tutorial-preview.gif)](https://github.com/nebulonvc/forecast-lab/releases/download/v1.0.0/01-hands-on-forecasting-tutorial.mp4) | [![](media/previews/video2-panoramic-preview.gif)](https://github.com/nebulonvc/forecast-lab/releases/download/v1.0.0/02-panoramic-330-forecasts.mp4) |
+| [▶️ 观看 / 下载](https://github.com/nebulonvc/forecast-lab/releases/download/v1.0.0/01-hands-on-forecasting-tutorial.mp4) | [▶️ 观看 / 下载](https://github.com/nebulonvc/forecast-lab/releases/download/v1.0.0/02-panoramic-330-forecasts.mp4) |
 
-> 章节时间轴与纯 Python 动画生成脚本说明见 👉 [`media/README.md`](media/README.md)
-
----
-
-## 1️⃣ 方法论：致敬《信号与噪音》，我们如何识别“真信号”？
-
-> 📖 深度方法论长文 👉 [`docs/01-methodology-signal-and-noise.md`](docs/01-methodology-signal-and-noise.md) ｜ 底层评估契约 👉 [`toolkit/METHOD.md`](toolkit/METHOD.md)
-
-我们在此特别感谢纳特·西尔弗的 **《信号与噪音》**。他指出：在信息过载时代，预测失败的根源往往不是缺乏数据，而是把短期随机波动当成永久趋势（过拟合噪音），用刺猬式的绝对口号代替狐狸式的条件边界，并在事后悄悄搬移记分球门。
-
-为此，我们在研究中确立了四项硬核方法准则：
-
-1. **先剥离“伪预测”噪音（抽取 v5 八分类筛网）**：代码强制区分真正的未来变化承诺（`forecast`）与比喻格言、政策倡议、出版前历史、静态机制说明、过去反事实，剔除 2,553 条不可证伪修辞。
-2. **五类互斥结论，绝不注水折分**：
-   | 类别 | 全库条数 | 判定标准与防噪音设计 |
-   | :--- | ---: | :--- |
-   | **正确** | 1,686 | 在声明口径与观察窗口内，主要可检验结果已符合（计算**严格胜率**唯一分子） |
-   | **趋势符合** | 971 | 已有持续客观数据沿预测方向发展，但终局未到（**单列！绝不提前吹成终局命中**） |
-   | **部分符合** | 1,714 | 分项有对有错或不同合理口径结果不同（**绝不折算 0.5 分掩盖分项失误**） |
-   | **错误** | 689 | 主要可检验结果与预测方向相反，或写明期限明确跳票 |
-   | **暂无法判断** | 3,070 | 远期未到、前提未触发或公开证据不足（**诚实保留未知，不算错也不强判**） |
-3. **事件 × 机制 × 时间 三轴独立记账**：结果猜对了不代表作者的因果理由成立；方向对了但拖延十年才发生，时间轴照样记账。
-4. **实证提炼“6 大真信号原型”与“5 大高赔率噪音”**：
-   - **谁最准？全库没有全能先知，最高胜率属于“带约束账本的专业机构与战略实务者”**（锁定同一时间跨度档后依然成立）：
-     | 作者群体 | 独立作品 | 可判定数 | 严格胜率 | 方向命中率 | 错误率 | 核心特征 |
-     | :--- | ---: | ---: | ---: | ---: | ---: | :--- |
-     | **国际机构与政府智库** (IEA/OECD/世行/UK GO-Science等) | 21 | 661 | **47.0%** | **65.2%** | **6.3%** | 存量产能底盘扎实、情景边界克制 |
-     | **政治家与战略实务者** (李光耀/布热津斯基/基辛格/伯克等) | 15 | 727 | 33.1% | **61.9%** | **8.5%** | 深谙决策者约束与利益买单结构，长周期极稳 |
-     | **地缘与社科政治学者** (扎卡利亚/卡普兰/米尔斯海默等) | 27 | 1,123 | 34.3% | 52.6% | 11.7% | 框架清晰，但易把单一理论外推过头 |
-     | **经济学家与金融投资人** (凯恩斯/塔勒布/达利欧/索罗斯等) | 17 | 518 | 30.3% | 42.7% | 13.9% | 危机传导机制敏锐，但宏观定时点位极易失手 |
-     | **科技商业思想家与实践者** (克里斯坦森/弗里德曼/KK/博斯特罗姆等) | 19 | 1,238 | 28.8% | 55.2% | 10.8% | 技术功能方向准，常错在时间表过激与忽略监管摩擦 |
-     | **古典思想家与科幻/乌托邦作家** (威尔斯/凡尔纳/贝拉米等) | 33 | 793 | 29.6% | 35.4% | 31.3% | 工程功能推演偶有神作，乌托邦政治终局大面积翻车 |
-   - **6 大高胜率推理方法原型**：① 约束账本法 · ② 制度与激励结构法 · ③ 地缘底盘与权力均衡法 · ④ 技术功能扩散链法 · ⑤ 风险边界与反脆弱法 · ⑥ 多情景条件分支法。
-   - **5 大高频翻车噪音模式**：① 忽略替代供给与技术跃迁 · ② 把方向对偷换成固定速率/硬年份/极端量词 · ③ 从技术可行直接跳到社会政治终局（跨层跳跃） · ④ 忽略行动者绕行与政策反制 · ⑤ 把短期顺风外推成永久单调直线。
+章节时间轴：[media/README.md](media/README.md)
 
 ---
 
-## 2️⃣ 工程实践：用确定性代码管线防幻觉、防事后偏见
+## 想自己试试？Fork 一份做你的定期预测
 
-> 📖 完整工程图解（含状态机与并发预算时序图） 👉 [`docs/02-engineering-architecture.md`](docs/02-engineering-architecture.md)
+光看历史不够，最好的检验是**你自己写下对未来的判断，过几年回来对账**。
 
-如果直接把一本书扔给大模型问“他预测准不准”，模型极易顺着事后记忆篡改引文、挑有利新闻自圆其说。我们的工程方案是：**仅用 Python 3.11+ 标准库（零第三方依赖），把 LLM 严格限制在确定性校验闸门之内**：
+仓库里的 [`my-forecasts/`](my-forecasts/) 就是给你准备的。Fork 之后：
 
-```mermaid
-flowchart LR
-    A["原书 TXT / 个人预测卡\n(原文保留仓库外)"] --> B["滑窗切块与抽取 v5\n精确字符偏移 + 源 SHA-256\n指代 support_quote 逐字核验"]
-    B --> C["正反双向检索 (Exa + LLM)\n强制同时搜 Support 与 Counter\n初判未定时最多 3 轮换策略补搜"]
-    C --> D["独立角色语义复核\n六维逻辑审查 · 最多 1 次修订\n仍不过则自动收口为诚实未定"]
-    D --> E["原子验收门禁 (pipeline.py check)\n存档字节 SHA-256 · 截止日防穿越\nCI 全量重跑报告 diff 零偏差"]
-```
+1. **和 AI 一起写预测**：用 Claude Code、Cursor 或 Antigravity 打开仓库，对它说"帮我把'XX 会怎样'做成一张预测卡"。它会读取 [`AGENTS.md`](AGENTS.md)，按七步法帮你把模糊想法变成可核对的承诺，并写入账本。
+2. **自动定期复查**：在仓库设置里填上 DeepSeek 和 Exa 的 API Key，GitHub Actions 每月会自动搜索支持和反对的新证据，然后开一个 Issue 告诉你哪些预测出现了变化。
+3. **不想用 API 也行**：随时让本地 AI 帮你搜一遍最新数据，按"事件发生了没有、原因对不对、时间准不准"三个角度给你汇报。
 
-- **引文零篡改**：`prepare_book.py` 要求每段 `quote` 与消歧依据精确对齐源文本偏移，拒绝模糊编造。
-- **正反双向搜证 + 自适应补检索**：`verify_prediction.py` 强制成对生成支持与反证查询，仅允许引用搜索真实返回的 URL 正文，单条硬上限 18 次请求，杜绝死循环。
-- **双币种线程安全账本与防重复扣费**：分别锁定 LLM（人民币）与 Exa（美元）预算上限；超时未知状态保留冻结额度且绝不盲目重发；导出时自动全盘扫描密钥指纹。
+详细步骤：[Fork 指南](docs/04-fork-and-agent-workflow.md)
 
 ---
 
-## 3️⃣ 怎么看数据，以及怎么用这套方法做预测？
+## 仓库里有什么
 
-> 📖 数据防误读铁律与七步实战手册 👉 [`docs/03-data-and-forecasting-guide.md`](docs/03-data-and-forecasting-guide.md)
+| 你想… | 去哪里 |
+| :--- | :--- |
+| **快速了解研究发现** | [docs/00-key-insights.md](docs/00-key-insights.md) |
+| 学会自己做预测 | [docs/03-data-and-forecasting-guide.md](docs/03-data-and-forecasting-guide.md) |
+| 看 100 条精彩预测 + 50 条翻车 + 180 条未来方向 | [docs/reports/curated-330-compendium.md](docs/reports/curated-330-compendium.md) |
+| 看完整统计报告和人物画像 | [docs/reports/panoramic-report.md](docs/reports/panoramic-report.md) |
+| 用 Excel 查任意一本书的数据 | [datasets/](datasets/README.md) |
+| 逐句核对某本书的原话和证据 | [cases/](cases/README.md) |
+| Fork 一份做自己的预测 | [docs/04-fork-and-agent-workflow.md](docs/04-fork-and-agent-workflow.md) |
+| 了解我们怎么判定对错 | [docs/01-methodology-signal-and-noise.md](docs/01-methodology-signal-and-noise.md) |
+| 了解我们怎么防止 AI 造假 | [docs/02-engineering-architecture.md](docs/02-engineering-architecture.md) |
 
-### 看懂数据的三条铁律
-1. **只跟同一时间跨度的同行比（看 `同档超额 Δ`）**：`0–3年` 超短窗平均方向命中本就高达 **81.0%**（60.7% 尚未到期），而 `20–39年` 长周期方向命中降至 **52.6%**。打开 [`datasets/all_cases_summary.csv`](datasets/all_cases_summary.csv) 时，请重点看 **`同档超额严格胜率_pp`** 与 **`同档低错优势_pp`**。
-2. **区分“有账本的时间”与“拍脑袋的时间”**：全库写死年份（`explicit`）错误率 **17.9%**，高于未写日期方向判断（`12.3%`）；但 IEA（53.3% 严格）、米尔斯海默（62.5%）、杰文斯（62.5%）证明——有存量与产能建设周期账本支撑时，硬期限依然极稳。
-3. **善用三份核心研究成果**：
-   - 📊 **[全景方法论报告](docs/reports/panoramic-report.md)** + **[132 部全案例统计总表 CSV](datasets/all_cases_summary.csv)**：查各领域基准率、多书作者稳定性与八大决策场景选透镜矩阵；
-   - 🏆 **[330 条精选预测全集](docs/reports/curated-330-compendium.md)** + **[精选 330 条总表 CSV](datasets/curated_330_forecasts.csv)**：看 100 条高光命中、50 条大师翻车教训，以及 **六大领域 180 条附 2026–2035 领先指标的未来方向**；
-   - 🔬 **[案例启发的预测流程（17 组经典同书正反对照）](docs/reports/case-inspired-process.md)** + **[134 个独立案例目录](cases/README.md)**：逐句核查原话与公开证据。
+<details>
+<summary><b>我们怎么判定"对"和"错"？（点击展开）</b></summary>
 
-### 普通人可直接上手的“七步预测法”
-1. **拆题防偷换**：写成 `主体 + 对象 + 量词 + 指标(含分母) + 期限 + 条件`，严分 `出现 ≠ 普及 ≠ 主导 ≠ 取代`；
-2. **配双透镜**：按场景选定一个主方法透镜 + 一个必配反校验透镜（如算力预测用 `IEA 电力账本 + 杰文斯反弹悖论`）；
-3. **算硬账本**：列清存量、流量、在建周期、成本与谁买单；
-4. **画条件分支**：问清谁想做、谁有权、谁能绕行，把 $P(A)$ 与 $P(B \mid A)$ 分开记账；
-5. **定承诺硬度**：3 年内看排期给区间，5–15 年用情景分支，15 年以上只押慢结构不押精确年份；
-6. **反例表扫雷**：用五大高频失败模式做发布前体检，删掉无根据的绝对化量词；
-7. **事前冻结 + 三轴复盘**：生成不可事后涂改的预测卡，定期按**事件轴、机制轴、时间轴**独立复盘。
+每条预测落入五类之一，互不重叠：
 
----
+| 类别 | 意思 | 全库条数 |
+| :--- | :--- | ---: |
+| 正确 | 在说好的范围和时间内，主要结果确实发生了 | 1,686 |
+| 趋势符合 | 方向已经在发生，但终点还没到 | 971 |
+| 部分符合 | 一句话里有的对有的错 | 1,714 |
+| 错误 | 结果和预测相反，或说好的时间到了没发生 | 689 |
+| 暂无法判断 | 时间没到、前提没发生，或找不到可靠数据 | 3,070 |
 
-## 4️⃣ Fork + AI Agent：3 分钟搭建你自己的“定期预测分析实验室”
+几条原则：
+- 先剔掉不是预测的话（比喻、口号、政策建议、讲历史），共剔除 2,553 条。
+- "部分符合"不折成半分，"趋势符合"不提前算成说中。
+- 判断不了就老实说判断不了，不硬判。
+- 每条判定都绑定一份公开证据，并保存文件指纹，任何人都能复核。
 
-> 📖 完整配置教程与 Agent 指令集 👉 [`docs/04-fork-and-agent-workflow.md`](docs/04-fork-and-agent-workflow.md) ｜ 智能体协议 👉 [`AGENTS.md`](AGENTS.md)
+</details>
 
-我们把整套引擎做成了一个**可 Fork 的个人预测追踪模版**，让你和你的 AI Agent（Claude Code / Antigravity / Cursor / Codex）共同维护一份持续进化的前瞻预测账本：
+<details>
+<summary><b>技术上怎么跑起来？（点击展开）</b></summary>
 
-```mermaid
-flowchart LR
-    F["1. Fork 本仓库"] --> P["2. 对本地 Agent 说出你的判断\n(自动读取 AGENTS.md 七步立卡)"]
-    P --> L["3. 写入 my-forecasts/\n冻结 Markdown 预测卡 + JSONL"]
-    L --> W["4. GitHub Actions 每月定时巡检\n(periodic-forecast.yml)"]
-    W --> N["5. 自动双向搜证并创建 Issue\n推送《定期预测复盘简报》"]
-```
-
-### 快速体验命令
-```bash
-# 1. 查看预置的 3 条 2026–2030 个人预测样板并执行完整性校验（零依赖、无需密钥）
-python3 toolkit/pipeline.py --case my-forecasts check
-python3 toolkit/periodic_tracker.py --case my-forecasts digest
-
-# 2. 登记一条你自己的新预测（自动生成 my-forecasts/cards/<id>.md 并纳入追踪）
-python3 toolkit/periodic_tracker.py --case my-forecasts add \
-  --id "2026-my-forecast-01" \
-  --domain "AI与产业商业化" \
-  --statement "到2028年底，中国新能源乘用车新车年度销量渗透率将超过65%。" \
-  --horizon "2026–2028" \
-  --scope "以中汽协或乘联会年度国内乘用车公布口径为准" \
-  --method "约束账本法 + 技术功能扩散链法" \
-  --counter-lens "检查充电电网负荷瓶颈与购置税政策调整影响" \
-  --indicators "月度零售渗透率、动力电池成本、县域快充桩增速" \
-  --falsification "2028年全年渗透率低于65%"
-```
-
-- **与 AI Agent 无缝对话**：仓库自带 [`AGENTS.md`](AGENTS.md) 与 [`.agents/skills/forecast-tracker/SKILL.md`](.agents/skills/forecast-tracker/SKILL.md)。直接在 Agent 中打开项目说：*“帮我把关于 XX 的判断按七步法做成预测卡入库”* 或 *“帮我对 `my-forecasts` 做一次本季度的正反证据巡检”*，Agent 即会自动按规范执行。
-- **云端每月自动盯盘**：Fork 后在仓库 `Settings → Secrets → Actions` 配置 `BOOKPRED_DEEPSEEK_API_KEY` 与 `EXA_API_KEY`，工作流 [`periodic-forecast.yml`](.github/workflows/periodic-forecast.yml) 将每月自动检索正反新证据，并在检测到信号变化时通过 **GitHub Issue** 向你发送复盘简报！
-
----
-
-## 📂 仓库目录全景导航
-
-```text
-forecast-lab/
-├── README.md                          # 项目总览与快速导航
-├── AGENTS.md                          # AI Agent (Claude Code / Antigravity / Cursor) 协作指令规范
-├── LICENSE                            # 代码 MIT + 报告与数据集 CC BY 4.0 双协议说明
-├── .agents/skills/forecast-tracker/   # Agent 定期预测立卡与贝叶斯复盘专用 Skill
-├── .github/workflows/
-│   ├── check.yml                      # CI：215 项单元测试 + 全量案例 SHA-256 与报告幂等校验
-│   ├── periodic-forecast.yml          # 个人预测账本每月定时搜证与 Issue 简报推送工作流
-│   └── verify-book.yml                # 任意书籍案例云端并发 API 搜证与核查工作流
-│
-├── docs/                              # 核心方法论、工程架构与实战教程
-│   ├── 01-methodology-signal-and-noise.md   # 致敬《信号与噪音》：研究方法、五类结论与六大原型
-│   ├── 02-engineering-architecture.md       # 工程实践：防幻觉管线、状态机与并发预算架构图解
-│   ├── 03-data-and-forecasting-guide.md     # 怎么看数据（三条铁律）& 七步实战预测手把手指南
-│   ├── 04-fork-and-agent-workflow.md        # Fork 指南：结合 Agent 与 GitHub Actions 做定期预测分析
-│   ├── reports/                             # 三份核心深度研究长文（全景报告 / 330精选全集 / 流程定稿）
-│   └── reference/                           # 引擎底层规则参考（METHOD / CLOUD_RUN / SEARCH_VERIFIER / 人工复刻）
-│
-├── datasets/                          # 清洗对齐后的核心 CSV 汇总表（UTF-8-BOM，Excel 直开）
-│   ├── README.md                      # 详细字段字典与 Python 快速查询示例
-│   ├── all_cases_summary.csv          # 132 部独立著作统计总表（37 列，含同跨度档超额胜率）
-│   └── curated_330_forecasts.csv      # 330 条精选预测总表（100 命中 + 50 翻车 + 180 未来方向）
-│
-├── media/                             # 演示视频预览动图、完整 SRT 字幕与纯 Python 渲染源码
-├── my-forecasts/                      # Fork 用户专属“个人定期预测工作区”（含 3 条预置样板卡片）
-├── toolkit/                           # 零外部依赖 Python 3.11+ 核心引擎与 215 项模拟 API 单元测试
-└── cases/                             # 134 个已核验独立案例包（原文短引文 + 公开证据存档 + 评估报告）
-```
-
----
-
-## ⚡ 本地 30 秒验证与复现
-
-无需安装任何第三方库、无需配置任何 API Key，在仓库根目录直接运行：
+只需要 Python 3.11+，不需要安装任何第三方库：
 
 ```bash
-# 运行全部 215 项引擎单元测试
+# 运行全部测试
 python3 -m unittest discover -s toolkit/tests -v
 
-# 校验经典案例与个人预测样板的字节级证据哈希并重生成报告
+# 核对某本书的全部证据
 python3 toolkit/pipeline.py --case cases/lky-guantianxia check
-python3 toolkit/pipeline.py --case my-forecasts check
+
+# 查看你的预测账本
+python3 toolkit/periodic_tracker.py --case my-forecasts digest
 ```
+
+架构说明：[docs/02-engineering-architecture.md](docs/02-engineering-architecture.md)
+
+</details>
 
 ---
 
-## ⚖️ 学术诚实边界与开源许可
+## 需要说明的几点
 
-- **回顾性研究声明**：全库 132 部作品属于历史回顾性核查而非事前盲测竞赛，同书预测之间存在共享宏观事件簇的非独立性；跨书比较请务必遵循“同时间跨度分档、同期限类型”原则。
-- **版权与材料边界**：本仓库仅保存程序代码、原创研究报告、必要的原文短引文及公开统计/机构证据快照，**不包含任何受版权保护的原书全文**。原书引文及第三方公开材料的著作权归原作者与原机构所有。
-- **开源协议**：仓库内软件源码采用 **[MIT License](LICENSE)**，原创研究报告、方法文档与整理数据集采用 **[CC BY 4.0](LICENSE)** 协议开放共享。
+- **这是回头看，不是事前比赛**。所有结果都是先发生、再回去核对的，选书也有偏好，不能当作公平排名。
+- **仓库里没有任何原书全文**，只有必要的短引文和公开证据快照。原文版权归原作者。
+- **代码**采用 [MIT](LICENSE)，**研究报告和数据**采用 [CC BY 4.0](LICENSE)，欢迎引用和二次研究。
+
+**特别感谢纳特·西尔弗的《信号与噪音》**，它是这个项目的起点。
