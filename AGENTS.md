@@ -11,6 +11,7 @@
 - **预测方法论与五类结论定义**：[`docs/01-methodology-signal-and-noise.md`](docs/01-methodology-signal-and-noise.md) 与 [`toolkit/METHOD.md`](toolkit/METHOD.md)
 - **七步预测法与八大场景透镜速查表**：[`docs/03-data-and-forecasting-guide.md`](docs/03-data-and-forecasting-guide.md)
 - **个人定期预测工作流**：[`docs/04-fork-and-agent-workflow.md`](docs/04-fork-and-agent-workflow.md) 及专用技能 [`.agents/skills/forecast-tracker/SKILL.md`](.agents/skills/forecast-tracker/SKILL.md)
+- **零代码智能体接入、动态方法包与 Polymarket 回测**：远程接入协议 [`AGENT_SETUP.md`](AGENT_SETUP.md)、实战指南 [`docs/05-quickstart-onboarding-and-polymarket.md`](docs/05-quickstart-onboarding-and-polymarket.md)、动态方法源 [`method-pack/manifest.json`](method-pack/manifest.json) 及接入技能 [`.agents/skills/forecast-onboarding/SKILL.md`](.agents/skills/forecast-onboarding/SKILL.md)
 - **数据驱动的预测方法优化（MCP & Skill）**：[`docs/06-forecast-method-optimization.md`](docs/06-forecast-method-optimization.md)、MCP 服务 [`toolkit/forecast_mcp.py`](toolkit/forecast_mcp.py) 及优化技能 [`.agents/skills/forecast-optimizer/SKILL.md`](.agents/skills/forecast-optimizer/SKILL.md)
 
 ---
@@ -51,3 +52,8 @@
    python3 toolkit/pipeline.py --case cases/<slug> check
    python3 -m unittest discover -s toolkit/tests -v
    ```
+
+### 任务 D：零代码外部轻量接入、动态方法同步、Polymarket 练习认证与盲测回测
+1. **零代码先访谈再建账本**：外部用户无需下载任何脚本程序。请按 [`AGENT_SETUP.md`](AGENT_SETUP.md) 只读读取 [`method-pack/manifest.json`](method-pack/manifest.json)，先向用户确认目标模式、关注领域、存放环境与复盘频率，生成纯文本 `AGENTS.md` 与 `forecasts/README.md` 账本。
+2. **随时从 GitHub 只读同步最新方法**：每次预测设计或复盘前重新读取一次上游 `method-pack/manifest.json`，自动应用最新迭代的双透镜、分档基准率与噪音体检规则。
+3. **Polymarket 只读对标与盲测回测**：通过只读访问 Polymarket 公开接口（`gamma-api.polymarket.com`）拉取题目、认证官方结算并计算 Brier Score 与 Market Edge；或读取 [`method-pack/curated_backtest_questions.json`](method-pack/curated_backtest_questions.json) 按 `as_of` 时间截点隐藏答案开展盲测训练。

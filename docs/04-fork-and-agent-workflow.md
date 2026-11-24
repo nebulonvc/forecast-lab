@@ -4,6 +4,8 @@
 
 本仓库已经为你内置了一套开箱即用的 **个人定期预测系统**（[`my-forecasts/`](../my-forecasts/) + [`toolkit/periodic_tracker.py`](../toolkit/periodic_tracker.py) + [`.github/workflows/periodic-forecast.yml`](../.github/workflows/periodic-forecast.yml) + [`AGENTS.md`](../AGENTS.md)）。你只需 **Fork** 一次，即可跑通 **“人类立题 → Agent 拆解立卡 → GitHub Actions 定时联网巡检 → 三轴贝叶斯复盘”** 的完整闭环！
 
+> 💡 **如果你不想整仓 Fork 132 本书，或不想运行任何脚本程序**：请查阅 👉 **[《零代码 Agent 接入、自动事实核查与 Polymarket 练习/回测指南》](05-quickstart-onboarding-and-polymarket.md)**，只需给你的 Agent 发送一段纯文本说明即可在任意文件夹或自有仓库中建立 `.md` 预测账本并接入 Polymarket 对标回测。
+
 ---
 
 ## 一、人机协同定期预测闭环全景图
