@@ -122,13 +122,88 @@
 
 ---
 
-## 接入预测系统、自动事实核查与市场回测
+## 数据驱动的预测方法优化与 Agent 接入（MCP & Skill）
 
-历史复盘的最终检验，是将经过验证的方法用于新的前瞻判断，并在事后持续核对。本项目提供**两种可信接入模式**，你可以按信任偏好与使用深度任选：
+定性归纳出六类有效方法之后，更关键的一步是**用全库实证数据训练一套可计算的预测方法优化模型**，让用户在任何 AI Agent 终端提出判断时，都能根据数据自动完成概率校准、失误扫雷与推理方法寻优。
 
-### 模式一：零代码纯文本接入（无需下载或运行任何程序，支持 Polymarket 对标与盲测回测）
+### 一、基于 132 部著作与 $t_0$ 历史状态的超学习器（Super-Learner）
 
-如果你不希望在本地下载或运行任何外部脚本（零木马与供应链风险），也无需克隆 132 部原书仓库，可以直接让你的 AI Agent（Claude Code、Antigravity、Cursor、Codex、Claude Projects、ChatGPT、Dify 等）**仅通过只读公开 Markdown/JSON 文档**完成接入，在本地或你自己的 GitHub 仓库里只生成肉眼可审的 `.md` 笔记：
+我们将仓库内 **132 部独立作品的 10,683 条样本**（**8,130 条可评分预测、5,060 条明确判定、2,553 条剔除非预测对照**）构建为严格防信息穿越的训练集——仅提取预测发布时点 $t_0 \in [1531, 2026]$ 当时可知的事前特征（含 $t \le t_0 - 10$ 时点因果滚动基准率、宏观通胀/技术狂热/地缘压力历史状态面板、承诺硬度与推理透镜，绝不读取事后核验文本）。
+
+融合**三层经验贝叶斯收缩**（Kahneman & Tversky 1979; Efron & Morris 1975）、**右删失两阶段风险分解**（Kalbfleisch & Prentice 2002）、**FFORMA 特征驱动方法元学习**（Montero-Manso et al. 2020 二阶牛顿直方图提升树 `HistXGBoost`）与**对数线性意见池温度校准**（Genest & Zidek 1986; Satopää et al. 2014），在严格的**按著作整书隔离五折交叉验证（Out-of-Book 5-Fold Grouped CV）**中取得全面最优拟合：
+
+| 模型架构（整书隔离样本外评测） | 5 类 Brier ↓ | 5 类 LogLoss ↓ | 已判定 4 类 Brier ↓ | 已判定 4 类 LogLoss ↓ | 序数 RPS ↓ | 方向校准误差 ECE ↓ |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: |
+| 静态时间跨度档 × 显隐期限查表基线 | 0.7537 | 1.4756 | 0.7128 | 1.2827 | 0.1913 | 7.04% |
+| 正则化广义线性模型（含 $t_0$ 历史状态 + 透镜） | 0.6855 | 1.3580 | 0.7178 | 1.2962 | 0.1924 | 3.70% |
+| 二阶牛顿直方图提升树（`HistXGBoost`） | **0.6684** | **1.3198** | 0.7033 | 1.2684 | 0.1891 | 1.84% |
+| **温度校准对数线性超学习器（生产采用）** | **0.6701** | **1.3215** | **0.7002** | **1.2637** | **0.1884** | **1.79%** |
+
+同时，通过 **Cochran-Mantel-Haenszel (CMH) 分层检验**锁死同一 `(时间跨度分档 × 显隐期限)` 剥离短窗红利后，数据直接给出了方法寻优的定量依据：**有硬账本支撑的显式期限相比无账本拍脑袋日期，同层严格胜率高出 `+14.84pp`、错误率降低 `-5.88pp`**；而无账本硬数字外推（严格胜率 `-8.73pp`）、阶段顺风单调速率外推（错误率 `+8.80pp`）、无账本“超越/取代”定时断言（错误率 `+7.00pp`）及多目标捆绑命题（严格胜率 `-6.64pp`）均显著拉低表现。
+
+### 二、优化器对每条预测执行的四步干预（强制把预测方法写出来）
+
+当任何 Agent 调用本优化器处理用户的原始预测想法时，会自动完成四步闭环：
+
+1. **伪预测过滤与规范要素体检**：运行 Stage 0 去噪器剔除“应当如何”的倡议或不可证伪格言，检查主体、对象、含分母指标、权威结算源、期限、证伪阈值及方法披露完整度。
+2. **高赔率失误陷阱定量拆雷**：自动识别无账本硬数字、单调指数外推、无基数超越断言与跨层乌托邦跳跃，并检索同领域大师翻车反例（`M01–M50`）提示具体死因。
+3. **反事实方法与承诺硬度寻优**：遍历 **6 大主推理方法 × 反校验透镜 × 承诺硬度**（短中期显式账本区间 / 中长期条件分支 $P(A) \times P(B\mid A)$ / 超长周期结构方向），输出改写前后的严格胜率提升与错误率下降幅度，并匹配同领域精彩先例（`H001–H100`）。
+4. **终局预测强制显式写出预测方法**：严禁只输出一句孤立结论或拍脑袋概率——最终交付的《终局预测卡》必须把 **【可核验预测承诺 + 选用的主预测方法与四步推导链 + 反校验对冲逻辑 + 8,130 库校准概率 + 领先指标与证伪红线】** 完整写出来。
+
+### 三、三种接入方式（支持任何 AI Agent 终端，纯 Python 3.11+ 标准库零依赖）
+
+#### 方式 1：复制下面这段话发给任何 Agent 终端即可接入（最简推荐）
+
+适用于 **Claude Code、Antigravity、Cursor、Codex CLI、Windsurf、Cline、OpenCode** 等任意终端（即便当前在空白目录或其他项目目录，Agent 也会自动零依赖拉取并挂载预固化模型 [`datasets/forecast_optimizer_model.json`](datasets/forecast_optimizer_model.json)）：
+
+```text
+请帮我接入开源的 Forecast Lab 数据驱动预测方法优化器（仓库：https://github.com/nebulonvc/forecast-lab.git ，纯 Python 3.11+ 标准库零依赖）：
+1. 若当前目录不在 forecast-lab 仓库内，请先执行 `test -d ~/.forecast-lab || git clone --depth 1 https://github.com/nebulonvc/forecast-lab.git ~/.forecast-lab`（若已在仓库内则直接使用当前目录），并阅读 `.agents/skills/forecast-optimizer/SKILL.md`；若当前终端支持配置本地 MCP Server，可将 `python3 <仓库路径>/toolkit/forecast_mcp.py` 挂载为 `forecast-lab-optimizer`。
+2. 接下来每当我提出一个预测想法或请你做趋势判断时，你必须先调用 MCP 工具 `optimize_forecast`（或运行 `python3 <仓库路径>/toolkit/forecast_optimizer.py optimize --statement "<预测草案>" --domain "<领域>"`），用全库 132 部著作、8,130 条历史预测训练的 Super-Learner 诊断高赔率翻车陷阱、匹配同领域历史正反先例并完成反事实方法寻优。
+3. 【强制交付规范——必须把预测方法写出来】：你最终输出给我的每一条预测，绝不允许只给一句裸结论或拍脑袋概率，必须将“预测结论”与“预测方法”作为整体完整写出：
+   (a) 可核验预测承诺（主体 + 对象 + 量词 + 含分母可测指标 + 唯一权威结算数据源 + 明确期限 + 排除边界）；
+   (b) 显式预测方法与四步推导链（明确写出选用哪套主方法原型、如何从基期存量/在建流量/否决权激励/成本门槛一步步推导出该结论、搭配什么反校验透镜对冲盲区、为何匹配当前承诺硬度）；
+   (c) 8,130 库样本外校准先验概率（展示优化前基线 vs 优化后的严格胜率、方向命中率、部分符合率、错误风险对比）；
+   (d) 2–3 个季度/半年度可查的领先观测指标，以及事件×机制×时间三轴明确证伪红线。
+准备好后请回复我：“Forecast Lab 预测方法优化引擎已就绪，请告诉我你的预测想法。”
+```
+
+#### 方式 2：挂载标准 MCP Server（[`.mcp.json`](.mcp.json) / [`toolkit/forecast_mcp.py`](toolkit/forecast_mcp.py)）
+
+在仓库根目录启动 Claude Code、Cursor 或 Antigravity 时会自动识别 [`.mcp.json`](.mcp.json)；在其他全局客户端中添加以下配置即可调用 6 个标准工具（`optimize_forecast`、`query_reference_class`、`bayesian_update_forecast`、`audit_forecast_ledger`、`register_optimized_forecast`、`get_optimizer_benchmark`）：
+
+```json
+{
+  "mcpServers": {
+    "forecast-lab-optimizer": {
+      "command": "python3",
+      "args": ["/path/to/forecast-lab/toolkit/forecast_mcp.py"]
+    }
+  }
+}
+```
+
+#### 方式 3：通过通用 Agent Skill 或命令行直接调用
+
+仓库内置技能定义 [`.agents/skills/forecast-optimizer/SKILL.md`](.agents/skills/forecast-optimizer/SKILL.md)，或直接在终端运行 CLI 输出包含四步推导链与终局预测卡的完整优化报告：
+
+```bash
+python3 toolkit/forecast_optimizer.py optimize \
+  --statement "到2028年底，AI将彻底取代50%以上的软件工程师工作，代码编写成本每年减半。" \
+  --domain "AI"
+```
+
+完整的数学推导、八组模型交叉验证表与工具契约见 **[《数据驱动的预测方法优化与 MCP/Skill 接入指南》](docs/06-forecast-method-optimization.md)**。
+
+---
+
+## 接入预测账本系统、自动事实核查与市场回测
+
+完成预测方法的校准与寻优后，下一步是将预测纳入长期账本持续追踪核对。本项目提供**两种账本运行模式**，可按使用场景任选：
+
+### 模式一：零代码纯文本账本（无需下载或运行任何程序，支持 Polymarket 对标与盲测回测）
+
+如果你不希望在本地下载或运行任何外部脚本，也无需克隆 132 部原书仓库，可以直接让 AI Agent **仅通过只读公开 Markdown/JSON 文档**建立纯 `.md` 预测账本：
 
 ```text
 请只读阅读 https://raw.githubusercontent.com/nebulonvc/forecast-lab/main/AGENT_SETUP.md 与方法表 https://raw.githubusercontent.com/nebulonvc/forecast-lab/main/method-pack/manifest.json ，帮我以“零代码、纯 Markdown”方式接入《信号与噪音》预测系统（全程不要下载或运行任何外部脚本程序）：
@@ -142,32 +217,15 @@
 
 详见 [给 Agent 的零代码接入协议 (`AGENT_SETUP.md`)](AGENT_SETUP.md) 与 [零代码接入、事实核查与 Polymarket 回测指南](docs/05-quickstart-onboarding-and-polymarket.md)。
 
-### 模式二：开源仓库本地 / Fork 模式（挂载 Super-Learner 方法优化器 MCP 与云端定时巡检）
+### 模式二：整仓 Fork 审计账本（SHA-256 证据校验与 GitHub Actions 定时巡检）
 
-如果你希望运行仓库内置的纯 Python 3.11+ 标准库源码（零第三方 `pip` 依赖，代码完全公开可审），克隆或 Fork 本仓库后可以：
+克隆或 Fork 本仓库后，可使用内置的 [`my-forecasts/`](my-forecasts/) 账本与自动化工作流：
 
-1. **与 AI Agent 协作建立并优化预测卡（MCP & Skill，显式写出预测方法）**：仓库内置了基于全库 8,130 条预测与发布时点历史状态训练的**数据驱动预测方法优化引擎**（[`.mcp.json`](.mcp.json) + [`toolkit/forecast_mcp.py`](toolkit/forecast_mcp.py) + [`.agents/skills/forecast-optimizer/SKILL.md`](.agents/skills/forecast-optimizer/SKILL.md)）。在任意 Agent 终端接入后，不仅执行样本外概率校准与失误陷阱拦截，还会强制在终局预测中**把选用的预测方法、四步推导链、反校验透镜与证伪条件完整写出来**。
-2. **定期自动检索新证据**：配置 DeepSeek 与 Exa 的 API Key 后，GitHub Actions 每月自动检索支持与反驳证据，并以 Issue 形式推送复盘简报。
-3. **无 API 时由本地 Agent 执行三轴贝叶斯复盘**：调用 `bayesian_update_forecast` 按事件、机制、时间三个维度计算阻尼对数赔率后验分布并汇报最新进展。
+1. **优化定稿并冻结入账**：通过 MCP 工具 `register_optimized_forecast` 或 [`toolkit/periodic_tracker.py`](toolkit/periodic_tracker.py) 将带显式方法推导链的预测卡写入 `my-forecasts/`，并由 `pipeline.py check` 执行字节级哈希校验。
+2. **云端每月自动检索正反证据**：配置 DeepSeek 与 Exa 的 API Key 后，GitHub Actions（[`periodic-forecast.yml`](.github/workflows/periodic-forecast.yml)）每月自动并发检索支持与反驳证据，并以 Issue 推送复盘简报。
+3. **三轴阻尼贝叶斯后验复盘**：无外部 API 时，由本地 Agent 检索一手统计数据并调用 `bayesian_update_forecast` 按事件、机制、时间三轴更新概率分布。
 
-<details>
-<summary><b>📋 一键复制这段文字，让任何 AI Agent 终端（Claude Code / Cursor / Antigravity / Codex 等）立即接入预测方法优化器</b></summary>
-
-```text
-请帮我接入开源的 Forecast Lab 数据驱动预测方法优化器（仓库：https://github.com/nebulonvc/forecast-lab.git ，纯 Python 3.11+ 标准库零依赖）：
-1. 若当前目录不在 forecast-lab 仓库内，请先执行 `test -d ~/.forecast-lab || git clone --depth 1 https://github.com/nebulonvc/forecast-lab.git ~/.forecast-lab`（若已在仓库内则直接使用当前目录），并阅读 `.agents/skills/forecast-optimizer/SKILL.md`；若当前终端支持本地 MCP Server，可将 `python3 <仓库路径>/toolkit/forecast_mcp.py` 挂载为 `forecast-lab-optimizer`。
-2. 接下来每当我提出一个预测想法或请你做趋势判断时，你必须先调用 MCP 工具 `optimize_forecast`（或运行 `python3 <仓库路径>/toolkit/forecast_optimizer.py optimize --statement "<预测草案>" --domain "<领域>"`），用全库 132 部著作、8,130 条历史预测训练的 Super-Learner 诊断高赔率翻车陷阱、匹配同领域历史正反先例并完成反事实方法寻优。
-3. 【强制交付规范——必须把预测方法写出来】：你最终输出给我的每一条预测，绝不允许只给一句结论或拍脑袋概率，必须完整写出：
-   (a) 可核验预测承诺（主体 + 对象 + 量词 + 含分母可测指标 + 唯一权威结算数据源 + 明确期限 + 排除边界）；
-   (b) 显式预测方法与四步推导链（写明选用哪套主方法原型、如何从基期存量/在建流量/否决权激励/成本门槛一步步推导出该结论、搭配什么反校验透镜对冲盲区、为何匹配当前承诺硬度）；
-   (c) 8,130 库样本外校准先验概率（优化前 vs 优化后的严格胜率、方向命中率、部分符合率、错误风险对比）；
-   (d) 2–3 个季度/半年度可查的领先观测指标，以及事件×机制×时间三轴明确证伪红线。
-准备好后请回复我：“Forecast Lab 预测方法优化引擎已就绪，请告诉我你的预测想法。”
-```
-
-</details>
-
-详见 [数据驱动的预测方法优化与 MCP/Skill 接入指南](docs/06-forecast-method-optimization.md) 及 [Fork 与 Agent 协作指南](docs/04-fork-and-agent-workflow.md)。
+详见 [Fork 与定期预测工作流指南](docs/04-fork-and-agent-workflow.md)。
 
 ---
 
@@ -176,9 +234,9 @@
 | 目的 | 文档 |
 | :--- | :--- |
 | **了解核心研究发现** | [docs/00-key-insights.md](docs/00-key-insights.md) |
+| **数据驱动的预测方法优化（MCP & Skill）** | [docs/06-forecast-method-optimization.md](docs/06-forecast-method-optimization.md) |
 | **复制给 AI Agent 的零代码接入协议** | [AGENT_SETUP.md](AGENT_SETUP.md) |
 | **零代码接入、事实核查与 Polymarket 回测** | [docs/05-quickstart-onboarding-and-polymarket.md](docs/05-quickstart-onboarding-and-polymarket.md) |
-| **数据驱动的预测方法优化（MCP & Skill）** | [docs/06-forecast-method-optimization.md](docs/06-forecast-method-optimization.md) |
 | 理解研究方法与判定标准 | [docs/01-methodology-signal-and-noise.md](docs/01-methodology-signal-and-noise.md) |
 | 了解核验管线的工程设计 | [docs/02-engineering-architecture.md](docs/02-engineering-architecture.md) |
 | 学习阅读数据与实践预测 | [docs/03-data-and-forecasting-guide.md](docs/03-data-and-forecasting-guide.md) |
