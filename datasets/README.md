@@ -52,7 +52,14 @@
 
 ---
 
-## 3. 快速 Python 查询示例（仅需标准库 `csv`）
+## 3. 预测方法优化模型与样本外交叉验证基准
+
+- [`forecast_optimizer_model.json`](forecast_optimizer_model.json)：基于全库 132 部著作（8,130 条预测 + 2,553 条非预测 + $t_0$ 宏观历史状态）训练固化的对数线性池化超学习器（`SuperLearner`）参数包（含 SHA-256 完整性校验），供 [`toolkit/forecast_optimizer.py`](../toolkit/forecast_optimizer.py) 与 [`toolkit/forecast_mcp.py`](../toolkit/forecast_mcp.py) 零依赖毫秒级加载。
+- [`optimization_benchmark.json`](optimization_benchmark.json)：按著作分组五折交叉验证（Out-of-Book 5-Fold Grouped CV）的 8 组学术模型对比指标（Brier、LogLoss、序数 RPS、ECE）及 Cochran-Mantel-Haenszel 分层因果效应表。详见 [`docs/06-forecast-method-optimization.md`](../docs/06-forecast-method-optimization.md)。
+
+---
+
+## 4. 快速 Python 查询示例（仅需标准库 `csv`）
 
 在仓库根目录直接运行以下命令，即可筛选“检验跨度 10–39 年、可判定 ≥ 30 条且同档超额严格胜率最高的前 10 部作品”：
 
