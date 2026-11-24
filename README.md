@@ -126,11 +126,11 @@
 
 历史回顾的最终检验，是将同样的方法用于前瞻预测，并在事后核对。仓库中的 [`my-forecasts/`](my-forecasts/) 为此提供了完整模板。Fork 后可以：
 
-1. **与 AI Agent 协作建立预测卡**：在 Claude Code、Cursor 或 Antigravity 中打开仓库，Agent 将依据 [`AGENTS.md`](AGENTS.md) 按七步法将初步判断转化为包含指标、期限、领先信号与证伪条件的规范预测，并写入账本。
+1. **与 AI Agent 协作建立并优化预测卡（MCP & Skill）**：仓库内置了基于全库 8,130 条预测与发布时点历史状态训练的**数据驱动预测方法优化引擎**（[`.mcp.json`](.mcp.json) + [`toolkit/forecast_mcp.py`](toolkit/forecast_mcp.py) + [`.agents/skills/forecast-optimizer/SKILL.md`](.agents/skills/forecast-optimizer/SKILL.md)）。在 Claude Code、Antigravity、Cursor、Codex 等任意 Agent 终端接入后，可自动对原始判断执行样本外概率校准、高赔率失误陷阱拦截与最优「主透镜 + 反校验透镜 + 承诺硬度」反事实寻优，并将收敛后的预测卡冻结写入账本。
 2. **定期自动检索新证据**：配置 DeepSeek 与 Exa 的 API Key 后，GitHub Actions 每月自动检索支持与反驳证据，并以 Issue 形式推送复盘简报。
-3. **无 API 时由本地 Agent 执行复盘**：按事件、机制、时间三个维度汇报每条预测的最新进展。
+3. **无 API 时由本地 Agent 执行三轴贝叶斯复盘**：调用 `bayesian_update_forecast` 按事件、机制、时间三个维度计算阻尼对数赔率后验分布并汇报最新进展。
 
-详见 [Fork 与 Agent 协作指南](docs/04-fork-and-agent-workflow.md)。
+详见 [数据驱动的预测方法优化与 MCP/Skill 接入指南](docs/06-forecast-method-optimization.md) 及 [Fork 与 Agent 协作指南](docs/04-fork-and-agent-workflow.md)。
 
 ---
 
@@ -139,6 +139,7 @@
 | 目的 | 文档 |
 | :--- | :--- |
 | **了解核心研究发现** | [docs/00-key-insights.md](docs/00-key-insights.md) |
+| **数据驱动的预测方法优化（MCP & Skill）** | [docs/06-forecast-method-optimization.md](docs/06-forecast-method-optimization.md) |
 | 理解研究方法与判定标准 | [docs/01-methodology-signal-and-noise.md](docs/01-methodology-signal-and-noise.md) |
 | 了解核验管线的工程设计 | [docs/02-engineering-architecture.md](docs/02-engineering-architecture.md) |
 | 学习阅读数据与实践预测 | [docs/03-data-and-forecasting-guide.md](docs/03-data-and-forecasting-guide.md) |
