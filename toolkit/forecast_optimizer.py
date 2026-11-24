@@ -103,6 +103,12 @@ SIGNAL_METHODS: dict[str, dict[str, Any]] = {
         "default_counter_lens": "高价倒逼的替代技术路线跃迁（如钠电替代锂钴、页岩油替代传统油气）与杰文斯效率反弹效应",
         "exemplars": ["IEA《全球关键矿产展望2024》(66.7%严格/3.2%错)", "杰文斯《煤炭问题》(52.8%严格)", "UK GO-Science《智能基础设施2055》(74.1%严格)"],
         "leading_indicator_hint": "在建项目CapEx与投产排期、关键设备交付周期（如变压器/光刻机）、瓶颈环节库存与价差",
+        "derivation_steps": [
+            "① 盘点当前基期存量与统计分母基线",
+            "② 核算已锁定在建产能/CapEx排期与物理交付时滞",
+            "③ 标定热力学/电网/财政偿付硬瓶颈上限及买单方",
+            "④ 扣除高价诱发的替代供给或效率反弹后锁定区间",
+        ],
     },
     "institutional_incentive": {
         "name": "制度与激励结构法",
@@ -112,6 +118,12 @@ SIGNAL_METHODS: dict[str, dict[str, Any]] = {
         "default_counter_lens": "新进入者绕开现行价值网的双轨破局（高端性能奇袭 vs 低端低成本渗透）及代际领导层更替",
         "exemplars": ["伯克《法国革命论》(48.4%严格/0%错)", "克里斯坦森《创新者的窘境》(41.2%严格)", "亨廷顿《第三波》文官控军"],
         "leading_indicator_hint": "在位者高毛利业务占比、预算与人事否决权归属、受损利益集团游说或合规壁垒强度",
+        "derivation_steps": [
+            "① 识别拥有实质预算/监管/人事否决权的关键行动者",
+            "② 拆解在位者受捆绑的现行毛利结构、选票或KPI考核约束",
+            "③ 推演受损利益方的合规阻挠或第三路径绕行反应",
+            "④ 给出现行激励兼容条件下可落地的真实变化边界",
+        ],
     },
     "geopolitical_chassis": {
         "name": "地缘底盘与权力均衡法",
@@ -121,6 +133,12 @@ SIGNAL_METHODS: dict[str, dict[str, Any]] = {
         "default_counter_lens": "内部财政透支承压 + 第三国转口贸易/供应链绕行对冲正面封锁",
         "exemplars": ["扎卡利亚《后美国世界》(59.0%严格/6.0%错)", "麦金德《民主的理想与现实》(57.9%严格)", "卡普兰《地理的复仇》(69.5%方向)"],
         "leading_indicator_hint": "军费与付息占财政收入比、关键海道航运保费、第三国转口贸易与FDI流向份额",
+        "derivation_steps": [
+            "① 锚定地理海道、陆海缓冲带与人口队列等慢变量底盘",
+            "② 分层对比各方军事投送、产业制造与货币金融实力份额",
+            "③ 评估同盟安全困境触发条件及第三国转口绕行弹性",
+            "④ 区分长期实力均势演进方向与短期外交战术波动",
+        ],
     },
     "functional_diffusion": {
         "name": "技术功能扩散链法",
@@ -130,6 +148,12 @@ SIGNAL_METHODS: dict[str, dict[str, Any]] = {
         "default_counter_lens": "能力参差（Jaggedness）、企业组织采用摩擦、监管合规时滞，严禁跳向‘消灭战争/政治大同’",
         "exemplars": ["戴维《航空器》(52.4%严格)", "威尔斯《预言》(52.2%严格)", "博斯特罗姆《超级智能》(47.7%严格/0%错)"],
         "leading_indicator_hint": "单位功能综合成本跨过盈亏平衡线比例、真实企业付费留存率（非试点POC）、配套基建就绪度",
+        "derivation_steps": [
+            "① 确认底层工程功能雏形在真实环境中已获验证（非纯概念）",
+            "② 测算单位功能综合BOM/推理成本跨过商业替代门槛的时点",
+            "③ 核查电力、通信、标准与合规责任等配套基础设施就绪周期",
+            "④ 计入企业组织流程改造摩擦（押任务功能渗透，不押彻底消灭岗位或政治终局）",
+        ],
     },
     "risk_fragility": {
         "name": "风险边界与反脆弱法",
@@ -139,6 +163,12 @@ SIGNAL_METHODS: dict[str, dict[str, Any]] = {
         "default_counter_lens": "央行流动性兜底/债务展期拉长脆弱结构存续期（防止把结构脆弱误判为下季度必崩盘）",
         "exemplars": ["塔勒布《黑天鹅》(40.9%严格/0%错)", "达利欧《债务危机》(42.9%严格/0%错)", "基辛格三书(错1.2%)"],
         "leading_indicator_hint": "部门杠杆率与短债滚续覆盖比、隐性担保利差、集中度与单一节点断供敞口",
+        "derivation_steps": [
+            "① 定位杠杆堆积、期限错配或单一供应链节点集中度敞口",
+            "② 拆解‘顺周期收益私有化、尾部损失外部化’的道德风险机制",
+            "③ 评估央行扩表、财政展期或监管宽容能够延缓出清的时间缓冲",
+            "④ 以脆弱性阈值与重定价方向替代拍脑袋崩盘精确日期",
+        ],
     },
     "conditional_scenario": {
         "name": "多情景条件分支法",
@@ -148,6 +178,12 @@ SIGNAL_METHODS: dict[str, dict[str, Any]] = {
         "default_counter_lens": "严防循环论证（禁止把结果B未发生解释为前提A不够大），必须绑定事前可测的触发指标",
         "exemplars": ["OECD四份展望报告(51.8%严格/0%错)", "世界银行WDR系列(83.9%方向/2.3%错)", "荷兰WRR智库报告(52.4%严格)"],
         "leading_indicator_hint": "分支切换的显式政策/价格/技术里程碑触发器及各情景实时先验权重",
+        "derivation_steps": [
+            "① 分离独立于结果B之外的关键外生分岔前提 A 并评估先验权重 P(A)",
+            "② 分别推演基准分支 P(B|A) 与受阻替代分支 P(B|¬A) 的定量区间",
+            "③ 为每条情景分支绑定公开可查的领先切换触发器（Trigger）",
+            "④ 事前冻结各分支证伪标准，杜绝事后挑有利分支自证正确",
+        ],
     },
 }
 
@@ -1293,6 +1329,8 @@ class ForecastOptimizerEngine:
         condition_text: str,
         falsification: str,
         leading_indicators: str,
+        method: str = "",
+        counter_lens: str = "",
     ) -> dict[str, Any]:
         combined = f"{statement} {scope} {horizon}"
         slots = {
@@ -1306,8 +1344,11 @@ class ForecastOptimizerEngine:
             "falsification_threshold": bool(falsification.strip()) or bool(re.search(r"至少|不超过|高于|低于|超过|下降|突破|\d+", statement)),
             "leading_indicators": bool(leading_indicators.strip()),
         }
+        explicit_method_disclosed = bool(method.strip()) and bool(counter_lens.strip())
         passed = sum(1 for v in slots.values() if v)
         missing = [k for k, v in slots.items() if not v]
+        if not explicit_method_disclosed:
+            missing.append("explicit_method_and_counter_lens")
 
         # Detect active noise traps
         traps_found = []
@@ -1335,7 +1376,8 @@ class ForecastOptimizerEngine:
 
         return {
             "score_out_of_6": passed,
-            "slots": slots,
+            "explicit_method_disclosed": explicit_method_disclosed,
+            "slots": {**slots, "explicit_method_and_counter_lens": explicit_method_disclosed},
             "missing_slots": missing,
             "traps_detected": traps_found,
         }
@@ -1422,6 +1464,8 @@ class ForecastOptimizerEngine:
             condition_text=condition_text,
             falsification=falsification,
             leading_indicators=leading_indicators,
+            method=method,
+            counter_lens=counter_lens,
         )
 
         # 2. Counterfactual Method & Commitment Policy Search (FFORMA + CMH + Empirical Domain-Method Prior)
@@ -1501,6 +1545,8 @@ class ForecastOptimizerEngine:
                 candidates.append({
                     "method_key": m_key,
                     "method_name": m_info["name"],
+                    "method_summary": m_info["summary"],
+                    "derivation_steps": m_info["derivation_steps"],
                     "commitment_regime": reg_id,
                     "commitment_label": reg_desc,
                     "recommended_counter_lens": m_info["default_counter_lens"],
@@ -1558,13 +1604,30 @@ class ForecastOptimizerEngine:
                 "explicit_horizon": "明确观察窗口起止时间（如‘截至2029年12月31日’）",
                 "falsification_threshold": "写出可证伪的定量阈值或反向推翻条件",
                 "leading_indicators": "配置2–3个每季度/半年可观测的先行指标",
+                "explicit_method_and_counter_lens": "在终局预测中显式写出【预测方法及四步推导链】与【反校验透镜】（严禁只给结论不写方法）",
             }
-            prescriptions.append("【补齐六要素缺口】需补充：" + "；".join(slot_zh[s] for s in audit["missing_slots"]) + "。")
+            prescriptions.append("【补齐规范要素缺口】需补充：" + "；".join(slot_zh[s] for s in audit["missing_slots"]) + "。")
         for tr in audit["traps_detected"]:
             prescriptions.append(f"【拆除翻车陷阱：{tr['name']}】{tr['remediation']}")
         prescriptions.append(
-            f"【切换最优方法组合】主透镜采用「{best['method_name']}」，搭配反校验透镜「{best['recommended_counter_lens']}」，承诺硬度采用「{best['commitment_label']}」。"
+            f"【切换并显式写出最优预测方法】主透镜采用「{best['method_name']}」，按四步链写出推导过程（{' → '.join(best['derivation_steps'])}），搭配反校验透镜「{best['recommended_counter_lens']}」，承诺硬度采用「{best['commitment_label']}」。"
         )
+
+        horizon_label = horizon.strip() or f"{year_now}–{int(year_now + eff_years)}"
+        b_o4 = best["calibrated_probs_decided_4class"]
+        final_card_md = "\n".join([
+            f"### 终局预测卡（含显式预测方法披露）",
+            f"- **可核验预测承诺**：{statement.strip() if audit['score_out_of_6'] == 6 and not audit['traps_detected'] else '<请基于上方处方收敛后的六要素定量承诺>'}",
+            f"- **统计口径与权威结算源**：{scope.strip() or '<唯一官方统计/财报口径与分母定义>'}（窗口：`{horizon_label}`）",
+            f"- **显式预测方法（为什么这么判）**：",
+            f"  - **主推理方法**：**{best['method_name']}** —— {best['method_summary']}",
+            f"  - **方法四步推导链**：{' ； '.join(best['derivation_steps'])}",
+            f"  - **反校验透镜（防盲区对冲）**：{counter_lens.strip() or best['recommended_counter_lens']}",
+            f"  - **承诺硬度选择依据**：{best['commitment_label']}",
+            f"- **全库 8,130 条预测校准先验**：严格胜率 `{b_o4['正确']:.1%}` ｜ 方向命中率 `{(b_o4['正确'] + b_o4['趋势符合']):.1%}` ｜ 部分符合 `{b_o4['部分符合']:.1%}` ｜ 错误风险 `{b_o4['错误']:.1%}`",
+            f"- **定期追踪领先指标**：{leading_indicators.strip() or best['leading_indicator_template']}",
+            f"- **明确证伪条件（三轴结算红线）**：{falsification.strip() or '<明确推翻本预测的定量反证阈值>'}",
+        ])
 
         return {
             "input_summary": {
@@ -1578,6 +1641,15 @@ class ForecastOptimizerEngine:
             "operationalizability_audit": audit,
             "baseline_evaluation": baseline,
             "recommended_optimization": best,
+            "explicit_method_specification": {
+                "primary_method": best["method_name"],
+                "method_principle": best["method_summary"],
+                "four_step_derivation_chain": best["derivation_steps"],
+                "paired_counter_lens": counter_lens.strip() or best["recommended_counter_lens"],
+                "commitment_hardness": best["commitment_label"],
+                "mandatory_rule": "最终输出的预测必须完整写出上述主方法四步推导链与反校验对冲逻辑，不得仅输出裸结论或单一概率数字。",
+            },
+            "final_forecast_card_markdown": final_card_md,
             "alternative_method_rankings": top_diverse,
             "expected_uplift": uplift,
             "actionable_prescriptions": prescriptions,
@@ -1585,8 +1657,9 @@ class ForecastOptimizerEngine:
             "periodic_tracker_cli_template": (
                 f'python3 toolkit/periodic_tracker.py --case my-forecasts add '
                 f'--id "opt-{year_now}-001" --domain "{canon_dom}" '
-                f'--statement "<按处方收敛后的冻结承诺>" --horizon "{horizon or f"{year_now}–{int(year_now + eff_years)}"}" '
-                f'--scope "<权威数据源与分母口径>" --method "{best["method_name"]}" '
+                f'--statement "<按处方收敛后的冻结承诺>" --horizon "{horizon_label}" '
+                f'--scope "<权威数据源与分母口径>" '
+                f'--method "{best["method_name"]}（推导链：{" -> ".join(best["derivation_steps"])}）" '
                 f'--counter-lens "{best["recommended_counter_lens"]}" '
                 f'--indicators "{leading_indicators or best["leading_indicator_template"]}" '
                 f'--falsification "<明确证伪阈值>"'
@@ -2046,9 +2119,11 @@ def format_optimization_markdown(res: dict[str, Any]) -> str:
         f"| **明确翻车率 P(错误)** | {base['error_prob_given_decided']:.1%} | **{opt['error_prob_given_decided']:.1%}** | `{up['delta_error_prob_pp']:+.2f}pp` |",
         f"| **不可判定风险 P(暂无法判断)** | {base['unresolved_prob']:.1%} | **{opt['unresolved_prob']:.1%}** | `{up['delta_unresolved_prob_pp']:+.2f}pp` |",
         "",
-        "## 2. 最优方法配置（FFORMA + CMH 分层因果优选）",
+        "## 2. 最优预测方法与四步推导链（最终预测必写项）",
         "",
-        f"- **首选主透镜**：**{opt['method_name']}**（标杆参照：{'、'.join(opt['exemplars'])}）",
+        f"- **首选主方法**：**{opt['method_name']}**（标杆参照：{'、'.join(opt['exemplars'])}）",
+        f"- **方法四步推导链**：",
+        *[f"  - {step}" for step in opt["derivation_steps"]],
         f"- **必配反校验透镜**：{opt['recommended_counter_lens']}",
         f"- **承诺硬度策略**：{opt['commitment_label']}",
         f"- **推荐领先观测指标**：{opt['leading_indicator_template']}",
@@ -2067,7 +2142,11 @@ def format_optimization_markdown(res: dict[str, Any]) -> str:
 
     lines += [
         "",
-        "## 5. 一键登记入库命令模板",
+        "## 5. 标准终局输出模板（预测结论 + 显式预测方法一体交付）",
+        "",
+        res["final_forecast_card_markdown"],
+        "",
+        "## 6. 一键登记入库命令模板",
         "",
         "```bash",
         res["periodic_tracker_cli_template"],

@@ -83,6 +83,10 @@ class ForecastOptimizerTests(unittest.TestCase):
         self.assertIn("unanchored_hard_number", trap_ids)
         self.assertIn("surpass_explicit_no_ledger", trap_ids)
         self.assertIn("linear_rate_extrapolation", trap_ids)
+        self.assertFalse(noisy["operationalizability_audit"]["explicit_method_disclosed"])
+        self.assertIn("explicit_method_and_counter_lens", noisy["operationalizability_audit"]["missing_slots"])
+        self.assertEqual(len(noisy["explicit_method_specification"]["four_step_derivation_chain"]), 4)
+        self.assertIn("显式预测方法", noisy["final_forecast_card_markdown"])
         self.assertGreater(noisy["expected_uplift"]["delta_strict_win_prob_pp"], 5.0)
         self.assertLess(noisy["expected_uplift"]["delta_error_prob_pp"], -2.0)
 
@@ -98,6 +102,8 @@ class ForecastOptimizerTests(unittest.TestCase):
             forecaster_stance="国际机构与政府智库",
         )
         self.assertEqual(refined["operationalizability_audit"]["score_out_of_6"], 6)
+        self.assertTrue(refined["operationalizability_audit"]["explicit_method_disclosed"])
+        self.assertEqual(refined["operationalizability_audit"]["missing_slots"], [])
         self.assertEqual(len(refined["operationalizability_audit"]["traps_detected"]), 0)
         p5 = refined["baseline_evaluation"]["probs_5class"]
         self.assertAlmostEqual(sum(p5.values()), 1.0, places=3)
@@ -164,6 +170,7 @@ class ForecastOptimizerTests(unittest.TestCase):
                         "horizon": "2026-2030",
                         "scope": "以IEA年度储能统计公报新增并网GWh为分母",
                         "method": "约束账本法",
+                        "method_derivation": "基于LFP存量产线排期与无钴正极BOM成本差，扣除电网并网审批时滞后测算新增占比下限",
                         "counter_lens": "碳酸锂价格长期低位抑制钠电替代经济性",
                         "leading_indicators": "磷酸铁锂与钠离子电芯价差、电网侧招标中标份额",
                         "falsification": "2030年新增装机占比低于35%",
@@ -172,6 +179,8 @@ class ForecastOptimizerTests(unittest.TestCase):
                 },
             })
             self.assertFalse(reg_resp["result"]["isError"])
+            card_md = (ledger / "cards" / "mcp-opt-001.md").read_text(encoding="utf-8")
+            self.assertIn("推导链：基于LFP存量产线排期", card_md)
             pl.main(["--case", str(ledger), "check"])
 
             audit_resp = srv.handle_request({

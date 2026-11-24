@@ -182,8 +182,12 @@ TOOLS_SPEC: list[dict[str, Any]] = [
                 "statement": {"type": "string", "description": "Frozen operationalized forecast statement."},
                 "horizon": {"type": "string", "description": "Explicit target window, e.g. '2026-2030'."},
                 "scope": {"type": "string", "description": "Denominator, exclusions, and authoritative data source."},
-                "method": {"type": "string", "description": "Primary Signal Method lens."},
-                "counter_lens": {"type": "string", "description": "Paired Counter-Lens check."},
+                "method": {"type": "string", "description": "Primary Signal Method lens name (e.g., 约束账本法)."},
+                "method_derivation": {
+                    "type": "string",
+                    "description": "Explicit step-by-step derivation explaining HOW the chosen prediction method derives this forecast (stock/flow ledger, veto incentives, cost threshold, etc.).",
+                },
+                "counter_lens": {"type": "string", "description": "Paired Counter-Lens check and neutralized blind spots."},
                 "leading_indicators": {"type": "string", "description": "2-3 observable leading indicators."},
                 "falsification": {"type": "string", "description": "Explicit falsification threshold."},
                 "condition_text": {"type": "string", "description": "Optional triggering premise."},
@@ -339,6 +343,8 @@ class ForecastMCPServer:
                 f"SuperLearner校准先验: 严格胜率 {b4['正确']:.1%}, "
                 f"方向命中 {(b4['正确'] + b4['趋势符合']):.1%}, 错误风险 {b4['错误']:.1%}"
             )
+            deriv = (arguments.get("method_derivation") or "").strip()
+            full_method_text = f"{arguments['method'].strip()}｜推导链：{deriv}" if deriv else arguments["method"].strip()
             rec = pt.add_forecast(
                 ledger_dir,
                 claim_id=arguments["claim_id"],
@@ -346,7 +352,7 @@ class ForecastMCPServer:
                 statement=arguments["statement"],
                 horizon=arguments["horizon"],
                 scope=arguments["scope"],
-                method=arguments["method"],
+                method=full_method_text,
                 counter_lens=arguments["counter_lens"],
                 leading_indicators=arguments["leading_indicators"],
                 falsification=arguments["falsification"],
@@ -404,10 +410,13 @@ class ForecastMCPServer:
             dom = arguments.get("domain", "")
             prompt_text = (
                 f"用户提出了以下预测想法：\n「{idea}」（领域提示：{dom or '自动识别'}）。\n\n"
-                "请严格执行 Forecast Lab 数据驱动优化闭环：\n"
-                "1. 先调用 `optimize_forecast` 工具，获取该草案的样本外校准概率分布、可操作化缺口、命中的高赔率噪音陷阱，以及基于 8,130 条历史预测优选出的最佳「主透镜 + 反校验透镜 + 承诺硬度」与边际改善幅度。\n"
-                "2. 结合返回的成功先例（H编号）与大师翻车反例（M编号），帮用户把原想法改写为具备六要素（主体、对象、量词、含分母可测指标与权威数据源、明确期限、证伪条件）的规范预测。\n"
-                "3. 再次调用 `optimize_forecast` 验证改写后版本的校准严格胜率提升与错误率下降，向用户展示前后量化对比表；用户确认后调用 `register_optimized_forecast` 冻结入库。"
+                "请严格执行 Forecast Lab 数据驱动优化闭环（铁律：最终交付的预测必须把【预测方法与推导链】完整写出来，绝不只给裸结论或单一概率）：\n"
+                "1. 先调用 `optimize_forecast` 工具，获取该草案的样本外校准概率分布、可操作化缺口、命中的高赔率噪音陷阱，以及基于 8,130 条历史预测优选出的最佳「主方法 + 四步推导链 + 反校验透镜 + 承诺硬度」与边际改善幅度。\n"
+                "2. 结合返回的成功先例（H编号）与大师翻车反例（M编号），帮用户把原想法收敛为完整的《终局预测卡》，必须显式包含：\n"
+                "   - **可核验预测承诺**（主体、对象、量词、含分母可测指标、唯一权威数据源、明确期限）；\n"
+                "   - **显式预测方法与四步推导链**（写明采用哪套主方法、基期存量/流量/激励约束怎么算出该结论、配了什么反校验透镜对冲盲区、为何匹配当前承诺硬度）；\n"
+                "   - **8,130 库校准先验概率**与**定期领先指标 + 明确证伪阈值**。\n"
+                "3. 再次调用 `optimize_forecast` 验证改写后版本的校准严格胜率提升与错误率下降，展示前后对比表；确认后调用 `register_optimized_forecast`（传入 `method_derivation`）冻结入库。"
             )
             return {
                 "description": "Data-driven forecast optimization workflow",

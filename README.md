@@ -126,9 +126,26 @@
 
 历史回顾的最终检验，是将同样的方法用于前瞻预测，并在事后核对。仓库中的 [`my-forecasts/`](my-forecasts/) 为此提供了完整模板。Fork 后可以：
 
-1. **与 AI Agent 协作建立并优化预测卡（MCP & Skill）**：仓库内置了基于全库 8,130 条预测与发布时点历史状态训练的**数据驱动预测方法优化引擎**（[`.mcp.json`](.mcp.json) + [`toolkit/forecast_mcp.py`](toolkit/forecast_mcp.py) + [`.agents/skills/forecast-optimizer/SKILL.md`](.agents/skills/forecast-optimizer/SKILL.md)）。在 Claude Code、Antigravity、Cursor、Codex 等任意 Agent 终端接入后，可自动对原始判断执行样本外概率校准、高赔率失误陷阱拦截与最优「主透镜 + 反校验透镜 + 承诺硬度」反事实寻优，并将收敛后的预测卡冻结写入账本。
+1. **与 AI Agent 协作建立并优化预测卡（MCP & Skill，显式写出预测方法）**：仓库内置了基于全库 8,130 条预测与发布时点历史状态训练的**数据驱动预测方法优化引擎**（[`.mcp.json`](.mcp.json) + [`toolkit/forecast_mcp.py`](toolkit/forecast_mcp.py) + [`.agents/skills/forecast-optimizer/SKILL.md`](.agents/skills/forecast-optimizer/SKILL.md)）。在任意 Agent 终端接入后，不仅执行样本外概率校准与失误陷阱拦截，还会强制在终局预测中**把选用的预测方法、四步推导链、反校验透镜与证伪条件完整写出来**。
 2. **定期自动检索新证据**：配置 DeepSeek 与 Exa 的 API Key 后，GitHub Actions 每月自动检索支持与反驳证据，并以 Issue 形式推送复盘简报。
 3. **无 API 时由本地 Agent 执行三轴贝叶斯复盘**：调用 `bayesian_update_forecast` 按事件、机制、时间三个维度计算阻尼对数赔率后验分布并汇报最新进展。
+
+<details>
+<summary><b>📋 一键复制这段文字，让任何 AI Agent 终端（Claude Code / Cursor / Antigravity / Codex 等）立即接入预测方法优化器</b></summary>
+
+```text
+请帮我接入开源的 Forecast Lab 数据驱动预测方法优化器（仓库：https://github.com/nebulonvc/forecast-lab.git ，纯 Python 3.11+ 标准库零依赖）：
+1. 若当前目录不在 forecast-lab 仓库内，请先执行 `test -d ~/.forecast-lab || git clone --depth 1 https://github.com/nebulonvc/forecast-lab.git ~/.forecast-lab`（若已在仓库内则直接使用当前目录），并阅读 `.agents/skills/forecast-optimizer/SKILL.md`；若当前终端支持本地 MCP Server，可将 `python3 <仓库路径>/toolkit/forecast_mcp.py` 挂载为 `forecast-lab-optimizer`。
+2. 接下来每当我提出一个预测想法或请你做趋势判断时，你必须先调用 MCP 工具 `optimize_forecast`（或运行 `python3 <仓库路径>/toolkit/forecast_optimizer.py optimize --statement "<预测草案>" --domain "<领域>"`），用全库 132 部著作、8,130 条历史预测训练的 Super-Learner 诊断高赔率翻车陷阱、匹配同领域历史正反先例并完成反事实方法寻优。
+3. 【强制交付规范——必须把预测方法写出来】：你最终输出给我的每一条预测，绝不允许只给一句结论或拍脑袋概率，必须完整写出：
+   (a) 可核验预测承诺（主体 + 对象 + 量词 + 含分母可测指标 + 唯一权威结算数据源 + 明确期限 + 排除边界）；
+   (b) 显式预测方法与四步推导链（写明选用哪套主方法原型、如何从基期存量/在建流量/否决权激励/成本门槛一步步推导出该结论、搭配什么反校验透镜对冲盲区、为何匹配当前承诺硬度）；
+   (c) 8,130 库样本外校准先验概率（优化前 vs 优化后的严格胜率、方向命中率、部分符合率、错误风险对比）；
+   (d) 2–3 个季度/半年度可查的领先观测指标，以及事件×机制×时间三轴明确证伪红线。
+准备好后请回复我：“Forecast Lab 预测方法优化引擎已就绪，请告诉我你的预测想法。”
+```
+
+</details>
 
 详见 [数据驱动的预测方法优化与 MCP/Skill 接入指南](docs/06-forecast-method-optimization.md) 及 [Fork 与 Agent 协作指南](docs/04-fork-and-agent-workflow.md)。
 

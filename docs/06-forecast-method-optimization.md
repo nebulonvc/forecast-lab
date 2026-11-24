@@ -101,9 +101,27 @@ flowchart LR
 
 ---
 
-## 四、如何在任何 AI Agent 终端接入使用？（MCP + Skill + CLI 全兼容）
+## 四、如何在任何 AI Agent 终端一键接入？（复制文字即插即用）
 
-整个优化系统**仅依赖 Python 3.11+ 标准库**，无需安装任何 `pip` 依赖包、无需配置外部 API Key，克隆仓库即可毫秒级响应（已预训练固化参数包 [`datasets/forecast_optimizer_model.json`](../datasets/forecast_optimizer_model.json)）。
+整个优化系统**仅依赖 Python 3.11+ 标准库**，无需安装任何 `pip` 依赖包、无需外部 API Key，预训练参数包 [`datasets/forecast_optimizer_model.json`](../datasets/forecast_optimizer_model.json) 毫秒级加载。
+
+### 最简方式：复制下面这段话发给任何 AI Agent 终端（自动拉取并接入 MCP / Skill）
+
+无论你使用的是 **Claude Code、Antigravity、Cursor、Codex CLI、Windsurf、Cline 还是 OpenCode**，哪怕当前在空白目录或其他项目目录，直接复制以下整段文字发给你的 Agent 即可完成接入与预测优化：
+
+```text
+请帮我接入开源的 Forecast Lab 数据驱动预测方法优化器（仓库：https://github.com/nebulonvc/forecast-lab.git ，纯 Python 3.11+ 标准库零依赖）：
+1. 若当前目录不在 forecast-lab 仓库内，请先执行 `test -d ~/.forecast-lab || git clone --depth 1 https://github.com/nebulonvc/forecast-lab.git ~/.forecast-lab`（若已在仓库内则直接使用当前目录），并阅读 `.agents/skills/forecast-optimizer/SKILL.md`；若当前终端支持配置本地 MCP Server，可将 `python3 <仓库路径>/toolkit/forecast_mcp.py` 挂载为 `forecast-lab-optimizer`。
+2. 接下来每当我提出一个预测想法或请你做趋势判断时，你必须先调用 MCP 工具 `optimize_forecast`（或运行 `python3 <仓库路径>/toolkit/forecast_optimizer.py optimize --statement "<预测草案>" --domain "<领域>"`），用全库 132 部著作、8,130 条历史预测训练的 Super-Learner 诊断高赔率翻车陷阱、匹配同领域历史正反先例并完成反事实方法寻优。
+3. 【强制交付规范——必须把预测方法写出来】：你最终输出给我的每一条预测，绝不允许只给一句结论或拍脑袋概率，必须完整写出：
+   (a) 可核验预测承诺（主体 + 对象 + 量词 + 含分母可测指标 + 唯一权威结算数据源 + 明确期限 + 排除边界）；
+   (b) 显式预测方法与四步推导链（写明选用哪套主方法原型、如何从基期存量/在建流量/否决权激励/成本门槛一步步推导出该结论、搭配什么反校验透镜对冲盲区、为何匹配当前承诺硬度）；
+   (c) 8,130 库样本外校准先验概率（优化前 vs 优化后的严格胜率、方向命中率、部分符合率、错误风险对比）；
+   (d) 2–3 个季度/半年度可查的领先观测指标，以及事件×机制×时间三轴明确证伪红线。
+准备好后请回复我：“Forecast Lab 预测方法优化引擎已就绪，请告诉我你的预测想法。”
+```
+
+---
 
 ### 方式一：通过标准 MCP Server 接入（适用于任何支持 MCP 的 Agent 终端）
 
