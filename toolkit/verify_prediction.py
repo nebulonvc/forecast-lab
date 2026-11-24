@@ -589,11 +589,13 @@ def run_job(packet, run_dir, llm, exa, max_rounds=2):
             context['context_budget'] = None if stage == 'select_sources' else budget
             context['source_texts'] = {source['id']: source['text'] for source in shown}
             data['evidence_candidates'] = shown
-            request = {'model': packet.get('model', 'deepseek-flash'), 'thinking': {'type': 'disabled'},
+            request = {'model': packet.get('model', 'deepseek-flash'),
                        'temperature': 0, 'max_tokens': 4500 if stage in {'assess', 'revise_assessment'} else (2600 if stage == 'semantic_review' else 1600),
                        'response_format': {'type': 'json_object'},
                        'messages': [{'role': 'system', 'content': system_prompt},
                                     {'role': 'user', 'content': json.dumps(data, ensure_ascii=False)}]}
+            if rp.is_deepseek_endpoint(getattr(llm, 'endpoint', rp.ENDPOINT)):
+                request['thinking'] = {'type': 'disabled'}
             if len(rp.canonical(request)) <= REQUEST_BYTES or budget <= 8000 or stage == 'select_sources':
                 break
             budget = max(8000, budget * 2 // 3)
@@ -957,7 +959,8 @@ def main(argv=None):
     parser.add_argument('--max-rounds', type=int, choices=(1, 2), default=2)
     parser.add_argument('--budget-cny', type=float, default=1.0)
     parser.add_argument('--exa-budget-usd', type=float, default=0.10)
-    parser.add_argument('--model', choices=['deepseek-flash', 'deepseek-v4-pro'], default='deepseek-flash')
+    parser.add_argument('--model', default='deepseek-flash')
+    parser.add_argument('--api-base', default=None, help='Optional OpenAI-compatible base URL or /chat/completions endpoint')
     parser.add_argument('--key-file', type=Path)
     parser.add_argument('--exa-key-file', type=Path, action='append', help='Repeatable; later keys are used after earlier ones are refused (401/402/403)')
     parser.add_argument('--timeout', type=int, default=60)
@@ -997,14 +1000,14 @@ def main(argv=None):
         if args.prepare_only:
             print(json.dumps({'prepared': len(packets), 'network_calls': 0, 'output_dir': str(root)}))
             return 0
-        key = args.key_file.read_text().strip() if args.key_file else (os.getenv('BOOKPRED_DEEPSEEK_API_KEY') or os.getenv('DEEPSEEK_API_KEY', '')).strip()
+        key = rp.resolve_api_key(args.key_file)
         exa_key = ([line.strip() for path in args.exa_key_file for line in path.read_text().splitlines() if line.strip()]
                    if args.exa_key_file else os.getenv('EXA_API_KEY', '').strip())
         if not key or not exa_key:
             raise ValueError('missing_deepseek_or_exa_credentials')
         rp.set_model_prices(args.model)
         llm = rp.Runner(root / 'llm', key, budget=args.budget_cny, timeout=args.timeout,
-                        validator=validate_llm_items, max_request_bytes=REQUEST_BYTES)
+                        validator=validate_llm_items, max_request_bytes=REQUEST_BYTES, endpoint=args.api_base)
         exa = ExaClient(root / 'exa', exa_key, budget_usd=args.exa_budget_usd, timeout=args.timeout)
         def completed(result):
             print(json.dumps({'event': 'task_finished', 'claim_id': result['claim_id'],

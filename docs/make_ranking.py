@@ -114,7 +114,7 @@ for r in main:
 beat = sum(r["score"] > 0 for r in main)
 
 md = [
-    "# 同档基准排行榜：全部 132 部作品",
+    f"# 同档基准排行榜：全部 {len(rows)} 部作品",
     "",
     "> 本表将全部作品与**同一时间跨度档**的平均水平比较，按综合超额从高到低排列。由 [`make_ranking.py`](make_ranking.py) 依据 "
     "[`datasets/all_cases_summary.csv`](../datasets/all_cases_summary.csv) 自动生成，机器可读版本见 "

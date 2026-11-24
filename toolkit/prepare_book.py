@@ -571,18 +571,21 @@ def validate_chunk_predictions(predictions, chunk):
     return kept,rejected
 
 
-def make_request(stage, cases, config, max_tokens, model):
-    return dict(model=model,thinking={'type':'disabled'},temperature=0,max_tokens=max_tokens,
-        response_format={'type':'json_object'},messages=[
-            {'role':'system','content':EXPAND_PROMPT if stage=='expand' else DISCOVER_PROMPT},
-            {'role':'user','content':json.dumps(dict(book=config['book'],author=config.get('author'),
-                publication_year_proxy=config.get('publication_year_proxy'),cases=cases),ensure_ascii=False)}])
+def make_request(stage, cases, config, max_tokens, model, endpoint=None):
+    req = dict(model=model, temperature=0, max_tokens=max_tokens,
+               response_format={'type': 'json_object'}, messages=[
+                   {'role': 'system', 'content': EXPAND_PROMPT if stage == 'expand' else DISCOVER_PROMPT},
+                   {'role': 'user', 'content': json.dumps(dict(book=config['book'], author=config.get('author'),
+                       publication_year_proxy=config.get('publication_year_proxy'), cases=cases), ensure_ascii=False)}])
+    if rp.is_deepseek_endpoint(endpoint):
+        req['thinking'] = {'type': 'disabled'}
+    return req
 
 
-def prepare_batches(stage,cases,config,batch_size=8,max_tokens=8000,model='deepseek-flash'):
+def prepare_batches(stage,cases,config,batch_size=8,max_tokens=8000,model='deepseek-flash',endpoint=None):
     batches=[]
     def append(group):
-        request=make_request(stage,group,config,max_tokens,model)
+        request=make_request(stage,group,config,max_tokens,model,endpoint=endpoint)
         if len(rp.canonical(request))>rp.MAX_REQUEST_BYTES:
             if len(group)==1:raise ValueError('single_input_too_large_reduce_chunk_chars')
             middle=len(group)//2;append(group[:middle]);append(group[middle:])
@@ -689,6 +692,7 @@ def main(argv=None):
         cmd.add_argument('--key-file',type=Path);cmd.add_argument('--workers',type=int,default=12)
         cmd.add_argument('--budget-cny',type=float,default=5);cmd.add_argument('--max-tokens',type=int,default=8000)
         cmd.add_argument('--batch-size',type=int,default=8);cmd.add_argument('--model',default='deepseek-flash')
+        cmd.add_argument('--api-base',default=None,help='Optional OpenAI-compatible base URL or /chat/completions endpoint')
         cmd.add_argument('--output-dir',type=Path)
     args=parser.parse_args(argv);root=args.case.resolve();cfg=rp.read_json(root/'config.json')
     if not 1<=args.workers<=20 or not 1<=args.max_tokens<=8192 or args.batch_size<1 or args.budget_cny<=0:
@@ -719,7 +723,8 @@ def main(argv=None):
                    for c in current if c.get('quote','').strip()]
             manifest=dict(input_claims_sha256=before_sha,requested=len(cases),
                 skipped_empty_quote_ids=[c['id'] for c in current if not c.get('quote','').strip()])
-        batches=prepare_batches(stage,cases,cfg,args.batch_size,args.max_tokens,args.model)
+        resolved_endpoint=rp.resolve_endpoint(args.api_base)
+        batches=prepare_batches(stage,cases,cfg,args.batch_size,args.max_tokens,args.model,endpoint=resolved_endpoint)
         if stage=='discover':
             checkpoint_key=hashlib.sha256(rp.canonical(dict(source_sha256=raw_sha,config=cfg,
                 prompt=DISCOVER_PROMPT,model=args.model,max_tokens=args.max_tokens,
@@ -732,11 +737,10 @@ def main(argv=None):
         if args.prepare_only:
             for n,request,_ in batches:rp.save_json(out/f'batch_{n:03d}.plan.json',request)
             print(json.dumps({'prepared':True,**manifest},ensure_ascii=False));return 0
-        secret=(args.key_file.read_text().strip() if args.key_file else
-                os.getenv('BOOKPRED_DEEPSEEK_API_KEY') or os.getenv('DEEPSEEK_API_KEY',''))
+        secret=rp.resolve_api_key(args.key_file)
         if not secret:raise ValueError('missing_DeepSeek_key_use_environment_or_key_file')
         rp.set_model_prices(args.model)
-        runner=rp.Runner(out,secret,budget=args.budget_cny,validator=validate_result)
+        runner=rp.Runner(out,secret,budget=args.budget_cny,validator=validate_result,endpoint=resolved_endpoint)
         items=[];failures=[]
         with ThreadPoolExecutor(max_workers=args.workers) as pool:
             futures={pool.submit(runner.call,stage,request,group,n):n for n,request,group in batches}

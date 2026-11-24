@@ -23,7 +23,31 @@ import urllib.error
 import urllib.request
 
 ROOT = Path.cwd()
-ENDPOINT = 'https://api.deepseek.com/chat/completions'
+DEFAULT_ENDPOINT = 'https://api.deepseek.com/chat/completions'
+ENDPOINT = DEFAULT_ENDPOINT
+
+
+def resolve_endpoint(api_base=None):
+    base = (api_base if api_base is not None else os.getenv('BOOKPRED_LLM_BASE_URL', '')).strip()
+    if not base:
+        return ENDPOINT
+    if base.rstrip('/').endswith('/chat/completions'):
+        return base.rstrip('/')
+    return base.rstrip('/') + '/chat/completions'
+
+
+def is_deepseek_endpoint(endpoint=None):
+    return 'api.deepseek.com' in (endpoint or ENDPOINT).lower()
+
+
+def resolve_api_key(key_file=None):
+    if key_file:
+        return Path(key_file).read_text(encoding='utf-8').strip()
+    for name in ('BOOKPRED_LLM_API_KEY', 'BOOKPRED_DEEPSEEK_API_KEY', 'DEEPSEEK_API_KEY', 'OPENAI_API_KEY'):
+        val = os.getenv(name, '').strip()
+        if val:
+            return val
+    return ''
 # CNY / 1M tokens. Peak rates; off-peak = half. FX ~6.6667 from official USD peak docs.
 MODEL_PRICES = {
     'deepseek-flash': {
@@ -176,11 +200,14 @@ def reserve_cost(payload):
     return (upper_input * PRICES['cache_miss'] + expected_out * PRICES['output']) / 1_000_000
 
 
-def payload(stage, data, max_tokens, model='deepseek-flash'):
-    return {'model': model, 'thinking': {'type': 'disabled'}, 'temperature': 0, 'max_tokens': max_tokens,
-            'response_format': {'type': 'json_object'},
-            'messages': [{'role': 'system', 'content': EXTRACT_PROMPT if stage == 'extract' else ASSESS_PROMPT},
-                         {'role': 'user', 'content': json.dumps(data, ensure_ascii=False)}]}
+def payload(stage, data, max_tokens, model='deepseek-flash', endpoint=None):
+    req = {'model': model, 'temperature': 0, 'max_tokens': max_tokens,
+           'response_format': {'type': 'json_object'},
+           'messages': [{'role': 'system', 'content': EXTRACT_PROMPT if stage == 'extract' else ASSESS_PROMPT},
+                        {'role': 'user', 'content': json.dumps(data, ensure_ascii=False)}]}
+    if is_deepseek_endpoint(endpoint):
+        req['thinking'] = {'type': 'disabled'}
+    return req
 
 
 def validate_items(stage, raw, cases):
@@ -256,7 +283,7 @@ def validate_items(stage, raw, cases):
 
 class Runner:
     def __init__(self, directory, api_key, budget=5.0, timeout=180, opener=None, validator=None,
-                 max_request_bytes=MAX_REQUEST_BYTES):
+                 max_request_bytes=MAX_REQUEST_BYTES, endpoint=None):
         if (not isinstance(api_key, str) or not api_key or isinstance(budget, bool) or isinstance(timeout, bool)
                 or not isinstance(budget, (int, float)) or not isinstance(timeout, (int, float))
                 or not 0 < budget < math.inf or not 0 < timeout < math.inf):
@@ -266,6 +293,7 @@ class Runner:
         self.directory = Path(directory)
         self.directory.mkdir(parents=True, exist_ok=True)
         self.api_key = api_key
+        self.endpoint = resolve_endpoint(endpoint)
         self.budget = budget
         self.timeout = timeout
         self.max_request_bytes = max_request_bytes
@@ -277,7 +305,7 @@ class Runner:
         self.active = self.peak = self.completed = self.cached = 0
         self.ledger_file = self.directory / 'ledger.json'
         self.ledger = read_json(self.ledger_file) if self.ledger_file.exists() else {
-            'created_at': now(), 'endpoint': ENDPOINT,
+            'created_at': now(), 'endpoint': self.endpoint,
             'estimated_peak_prices_CNY_per_million': PRICES,
             'estimated_off_peak_prices_CNY_per_million': OFF_PEAK_PRICES, 'calls': {}}
         self.fatal_error = self.ledger.get('fatal_error')
@@ -394,7 +422,7 @@ class Runner:
                     estimated_cost_CNY=0, accounting_basis='local_failure_before_network')
                 self.budget_changed.notify_all()
                 raise
-        http_request = urllib.request.Request(ENDPOINT, data=canonical(request), method='POST',
+        http_request = urllib.request.Request(self.endpoint, data=canonical(request), method='POST',
                                               headers={'Content-Type': 'application/json', 'Authorization': 'Bearer ' + self.api_key})
         raw = None
         error = None
@@ -481,7 +509,7 @@ class Runner:
             raise error from None
 
 
-def prepare_batches(root, batch_size=8, limit=None, max_tokens=8000, model='deepseek-flash', assess_only=False, share_contexts=False):
+def prepare_batches(root, batch_size=8, limit=None, max_tokens=8000, model='deepseek-flash', assess_only=False, share_contexts=False, endpoint=None):
     config = read_json(root / 'config.json')
     rows = sorted(read_jsonl(root / 'data/claims.jsonl'), key=lambda x: ((x.get('source_location') or {}).get('line_start') or x.get('page') or 0, x['id']))
     evidence = {e['id']: e for e in read_jsonl(root / 'data/evidence.jsonl')}
@@ -532,9 +560,9 @@ def prepare_batches(root, batch_size=8, limit=None, max_tokens=8000, model='deep
                     case['context_ref'] = ref
             if contexts:
                 assessment_data['contexts'] = contexts
-        request_size = len(canonical(payload('assess', assessment_data, max_tokens, model)))
+        request_size = len(canonical(payload('assess', assessment_data, max_tokens, model, endpoint)))
         if not assess_only:
-            request_size = max(request_size, len(canonical(payload('extract', extraction_data, max_tokens, model))))
+            request_size = max(request_size, len(canonical(payload('extract', extraction_data, max_tokens, model, endpoint))))
         if request_size > PREPARED_REQUEST_BYTES:
             if len(batch) == 1:
                 raise ValueError('single_case_exceeds_35000_byte_preflight_limit: ' + batch[0]['id'])
@@ -550,14 +578,15 @@ def prepare_batches(root, batch_size=8, limit=None, max_tokens=8000, model='deep
 
 def run_batch(runner, batch, max_tokens, model='deepseek-flash', assess_only=False):
     number, extraction_data, assessment_data = batch
+    endpoint = getattr(runner, 'endpoint', None)
     if assess_only:
         extracted = [c['extraction'] for c in assessment_data['cases']]
     else:
-        extracted = runner.call('extract', payload('extract', extraction_data, max_tokens, model), extraction_data['cases'], number)
+        extracted = runner.call('extract', payload('extract', extraction_data, max_tokens, model, endpoint), extraction_data['cases'], number)
     extra_by_id = {x['id']: x for x in extracted}
     for case in assessment_data['cases']:
         case['extraction'] = extra_by_id[case['id']]
-    assessed = runner.call('assess', payload('assess', assessment_data, max_tokens, model), assessment_data['cases'], number)
+    assessed = runner.call('assess', payload('assess', assessment_data, max_tokens, model, endpoint), assessment_data['cases'], number)
     return extracted, assessed
 
 
@@ -571,6 +600,7 @@ def main(argv=None):
     parser.add_argument('--budget-cny', type=float, default=5.0)
     parser.add_argument('--max-tokens', type=int, default=8000)
     parser.add_argument('--model', default='deepseek-flash')
+    parser.add_argument('--api-base', default=None, help='Optional OpenAI-compatible base URL or /chat/completions endpoint')
     parser.add_argument('--timeout', type=int, default=180)
     parser.add_argument('--limit', type=int)
     parser.add_argument('--prepare-only', action='store_true')
@@ -591,13 +621,14 @@ def main(argv=None):
             fcntl.flock(process_lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
         except BlockingIOError:
             raise ValueError('another_runner_owns_output_directory') from None
-        rows, batches = prepare_batches(ROOT, args.batch_size, args.limit, args.max_tokens, args.model, args.assess_only, args.share_contexts)
+        resolved_endpoint = resolve_endpoint(args.api_base)
+        rows, batches = prepare_batches(ROOT, args.batch_size, args.limit, args.max_tokens, args.model, args.assess_only, args.share_contexts, resolved_endpoint)
         complete_scope = 'full_existing_candidate_set' if len(rows) == len(read_jsonl(ROOT / 'data/claims.jsonl')) else 'limited_subset'
         manifest = {'book': read_json(ROOT / 'config.json')['book'], 'prepared_at': now(),
                     'claim_count': len(rows), 'ids': [x['id'] for x in rows], 'batch_count': len(batches), 'complete_scope': complete_scope,
                     'workers': args.workers, 'batch_size': args.batch_size, 'actual_batch_sizes': [len(b[1]['cases']) for b in batches],
                     'max_tokens': args.max_tokens,
-                    'estimated_budget_CNY': args.budget_cny, 'endpoint': ENDPOINT, 'model': args.model,
+                    'estimated_budget_CNY': args.budget_cny, 'endpoint': resolved_endpoint, 'model': args.model,
                     'scope': 'review existing book candidates; not a new full-text scan',
                     'mode': 'assess_only' if args.assess_only else 'extract_then_assess',
                     'shared_assessment_contexts': args.share_contexts,
@@ -606,8 +637,8 @@ def main(argv=None):
                     'extract_prompt_sha256': hashlib.sha256(EXTRACT_PROMPT.encode()).hexdigest(),
                     'assess_prompt_sha256': hashlib.sha256(ASSESS_PROMPT.encode()).hexdigest()}
         manifest['request_sizes'] = [dict(batch=n,
-            extract_bytes=0 if args.assess_only else len(canonical(payload('extract', source, args.max_tokens, args.model))),
-            assess_template_bytes=len(canonical(payload('assess', assessment, args.max_tokens, args.model))))
+            extract_bytes=0 if args.assess_only else len(canonical(payload('extract', source, args.max_tokens, args.model, resolved_endpoint))),
+            assess_template_bytes=len(canonical(payload('assess', assessment, args.max_tokens, args.model, resolved_endpoint))))
             for n, source, assessment in batches]
         manifest['maximum_request_bytes'] = MAX_REQUEST_BYTES
         manifest['preflight_request_bytes_limit'] = PREPARED_REQUEST_BYTES
@@ -618,18 +649,17 @@ def main(argv=None):
         if args.prepare_only:
             for number, source, assessment in batches:
                 if not args.assess_only:
-                    save_json(args.output_dir / f'batch_{number:03d}.extract.plan.json', payload('extract', source, args.max_tokens, args.model))
+                    save_json(args.output_dir / f'batch_{number:03d}.extract.plan.json', payload('extract', source, args.max_tokens, args.model, resolved_endpoint))
                 save_json(args.output_dir / f'batch_{number:03d}.assess.template.json', assessment)
             oversized = [s['batch'] for s in manifest['request_sizes']
                          if max(s['extract_bytes'], s['assess_template_bytes']) > MAX_REQUEST_BYTES]
             print(json.dumps(dict(event='prepared', claims=len(rows), batches=len(batches), workers=args.workers,
                                   oversized_batches=oversized), ensure_ascii=False))
             return 2 if oversized else 0
-        api_key = (args.key_file.read_text(encoding='utf-8').strip() if args.key_file else
-                   (os.getenv('BOOKPRED_DEEPSEEK_API_KEY') or os.getenv('DEEPSEEK_API_KEY', '')).strip())
+        api_key = resolve_api_key(args.key_file)
         if not api_key:
             raise ValueError('missing_DeepSeek_key_use_environment_or_key_file')
-        runner = Runner(args.output_dir, api_key, args.budget_cny, args.timeout)
+        runner = Runner(args.output_dir, api_key, args.budget_cny, args.timeout, endpoint=resolved_endpoint)
         extracted, assessed, failures = [], [], []
         with ThreadPoolExecutor(max_workers=args.workers) as pool:
             futures = {pool.submit(run_batch, runner, batch, args.max_tokens, args.model, args.assess_only): batch[0] for batch in batches}

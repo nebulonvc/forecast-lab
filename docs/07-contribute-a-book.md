@@ -1,0 +1,180 @@
+# 社区共建指南：用你自己的 Agent 或 API 拆解一本书并合入数据库
+
+本指南面向希望将新书、机构报告或人物访谈拆解为可审计预测案例，并通过 Pull Request 合入 **Forecast Lab** 实证数据库的研究者与开发者。
+
+无论你选择 **路径 A（用你自己的 AI Agent 原生跑书，零额外 API 费用）**，还是 **路径 B（用你自己的 DeepSeek / OpenAI 兼容 API + Exa API 并发跑书）**，最终产物都经过同一套 `v5` 抽取标准与六道确定性门禁检验，合入 [`datasets/all_cases_summary.csv`](../datasets/all_cases_summary.csv) 与 [同档基准排行榜](05-same-tier-ranking.md)。
+
+```mermaid
+flowchart TB
+    Start["0. contribute_book.py init\n创建 cases/<slug>/ 与被忽略的 input/"] --> PutTxt["把原书 TXT 放入 cases/<slug>/input/\n(绝对禁止提交原书全文进 Git)"]
+    PutTxt --> Choice{"选择执行方式"}
+
+    Choice -->|"路径 A: 自有 Agent 原生模式\n(Claude Code / Antigravity / Cursor 等)"| A1["contribute_book.py chunk-txt\n切分 3,500 字块 + prompt_v5.txt"]
+    A1 --> A2["Agent / 并行子智能体逐块抽取\n输出 chunk_proposals/"]
+    A2 --> A3["contribute_book.py import-extractions\n逐字对齐 + 7 类去噪 + 裁剪上下文"]
+    A3 --> A4["export-verify-tasks -> Agent 联网双向搜证\n-> apply-assessments 存档 SHA-256 落盘"]
+
+    Choice -->|"路径 B: 自有 API 并发模式\n(DeepSeek / OpenAI 兼容 + Exa)"| B1["prepare_book.py txt --apply\n并发抽取 v5 候选"]
+    B1 --> B2["contribute_book.py trim-contexts\n版权安全裁剪上下文"]
+    B2 --> B3["verify_prediction.py --all-forecasts\n并发双向搜证 + 自适应补搜 + 六维复核"]
+    B3 --> B4["contribute_book.py import-verify\n校验哈希并写入 data/"]
+
+    A4 --> Sync["contribute_book.py sync-database\n更新 37 列总表 CSV 与同档排行榜"]
+    B4 --> Sync
+    Sync --> Check["contribute_book.py pr-check\n+ unittest 全量测试 -> 提交 PR"]
+```
+
+---
+
+## 一、给 Agent 的一段话（复制即用）
+
+如果你使用 **Claude Code、Antigravity、Cursor、Codex CLI、Windsurf、OpenCode** 等编码智能体，Fork 并克隆仓库后，直接复制下面这段话发给它即可：
+
+```text
+请帮我按《信号与噪音》Forecast Lab 的 v5 标准协议拆解一本新书，并生成可直接提交 PR 合入主数据库的完整案例（先阅读 `.agents/skills/book-contributor/SKILL.md` 与 `docs/07-contribute-a-book.md`）：
+1. 先向我确认 5 项元数据与运行方式：书名、作者、初版代理年份、所属七大标准领域之一、所属六类标准作者类型之一，以及原书 TXT 文件路径（我来把原书 TXT 放入被 `.gitignore` 忽略的 `cases/<slug>/input/` 目录，绝不提交进 Git）。同时问我是使用【路径一：由你（Agent 原生阅读与自带联网搜索）零 API 费用完成】，还是【路径二：调用我配置的 DeepSeek / OpenAI 兼容 API 与 Exa API 并发跑完】。
+2. 初始化案例并切分原文：运行 `python3 toolkit/contribute_book.py init ...`，切块执行 v5 抽取（严守逐字 quote 对齐、7 类非预测剔除与指代消歧），并通过 `contribute_book.py trim-contexts` 裁剪 `context`，确保不泄露原书全文。
+3. 严格执行正反双向一手事实核查：对每条可评分预测，必须成对检索支持证据与反面/瓶颈证据（优先统计局、央行、IEA/OECD/世行、学术与财报一手出处），将正文存档至 `cases/<slug>/data/sources/` 并登记真实 SHA-256 与截至日（<= cutoff），执行六维语义复核后按五类互斥结论落盘。
+4. 合入总数据库并运行全部 PR 门禁：依次运行 `python3 toolkit/contribute_book.py sync-database --case cases/<slug>`、`python3 toolkit/contribute_book.py pr-check --case cases/<slug>` 与 `python3 -m unittest discover -s toolkit/tests -v`。
+5. 全部门禁通过后，为我汇总本书的五类统计与同档超额表现，检查 `git status` 确认无原书全文或 API 密钥残留，并协助我创建分支、提交 Commit 与 Pull Request。
+```
+
+---
+
+## 二、准备元数据与原书 TXT
+
+1. **合法标准领域（7 选 1）**：
+   `地缘政治与国际秩序`、`宏观经济、金融与市场`、`科技、商业与产业颠覆`、`AI与奇点前沿`、`人口、能源、资源与生态`、`社会结构、制度、文化与教育`、`科幻推演与乌托邦/反乌托邦`
+2. **合法标准作者类型（6 选 1）**：
+   `国际机构与政府智库`、`政治家与战略实务者`、`地缘与社科政治学者`、`经济学家与金融投资人`、`科技商业思想家与产业实践者`、`古典思想家与科幻/乌托邦作家`
+3. **初始化案例目录**：
+   ```bash
+   python3 toolkit/contribute_book.py init \
+     --case cases/author-book-v5 \
+     --book "书名" \
+     --author "作者" \
+     --publication-year 2010 \
+     --domain "科技、商业与产业颠覆" \
+     --author-type "科技商业思想家与产业实践者"
+   ```
+   将准备好的 UTF-8 TXT 原书放入 `cases/author-book-v5/input/book.txt`（如果是 PDF，可先用 `pdftotext -enc UTF-8 book.pdf cases/author-book-v5/input/book.txt` 转换）。`cases/*/input/` 已被 `.gitignore` 忽略。
+
+---
+
+## 三、路径 A：自有 Agent 原生模式（零额外 API 费用）
+
+### Step A1：确定性滑窗切块
+```bash
+python3 toolkit/contribute_book.py chunk-txt \
+  --case cases/author-book-v5 \
+  --txt cases/author-book-v5/input/book.txt
+```
+程序会在 `cases/author-book-v5/output/txt_import/` 生成：
+- `chunks.jsonl`：已跳过序言/致谢/后记的 3,500 字正文切片（含前后 600 字消歧上下文）；
+- `prompt_v5.txt`：`DISCOVER_PROMPT_V5` 完整抽取规范；
+- `chunk_proposals/`：供 Agent 或并行子智能体按 `<chunk_id>.json` 写入抽取结果。
+
+### Step A2：Agent 逐块抽取并导入对齐
+Agent 通读每个 chunk（可派发多个子智能体并行处理），为**每个** `chunk_id` 在 `chunk_proposals/<chunk_id>.json` 写出如下格式（无预测的 chunk 也必须显式保留 `"predictions": []` 以防漏读）：
+```json
+{
+  "id": "txt-00001",
+  "predictions": [
+    {
+      "quote": "从 body 中逐字照抄的连续原文",
+      "kind": "prediction",
+      "claim_type": "forecast",
+      "speaker": "作者名",
+      "attribution": "author",
+      "future_oriented": true,
+      "claim": "一句中文概括",
+      "changes": "会变化的对象与方向",
+      "horizon": "原文显式写出的时间（无则空字符串）",
+      "resolvable": true,
+      "confidence": "medium",
+      "expanded_claim": "补全代指与条件的独立陈述",
+      "reference_resolutions": [],
+      "unresolved_references": [],
+      "time_text": "",
+      "condition_text": "",
+      "method": "原文体现的推理办法（无则 unknown）",
+      "method_basis": "explicit",
+      "reason": "为何属于出版后可核验预测的简短理由"
+    }
+  ]
+}
+```
+随后运行确定性导入（自动完成逐字引文对齐、v5 7 类非预测筛除、去重与版权上下文裁剪）：
+```bash
+python3 toolkit/contribute_book.py import-extractions \
+  --case cases/author-book-v5 \
+  --txt cases/author-book-v5/input/book.txt \
+  --proposals cases/author-book-v5/output/txt_import/chunk_proposals
+```
+
+### Step A3：导出核验任务、联网双向搜证并落盘
+```bash
+python3 toolkit/contribute_book.py export-verify-tasks --case cases/author-book-v5
+```
+Agent 逐条读取 `output/verify_tasks.jsonl`，利用自带联网工具对每条预测**强制成对搜索支持证据与反面/瓶颈证据**，分别准备：
+- `evidence_raw.jsonl`：每条含 `{"id": "ev-001", "url": "https://...", "date": "2024-05-01", "coverage": "2010-2024", "excerpt": "关键原句", "limitation": "口径限制", "text": "抓取的公开页面正文"}`；
+- `assessments.jsonl`：按 `METHOD.md` 五类互斥结论与六维语义复核标准写出 `{"id": "...", "inclusion": "forecast", "verdict": "正确|部分符合|错误|暂无法判断", "basis": "endpoint|observed_window|conditional|future|definition|evidence|attribution", "scope": "...", "reason": "...", "limitation": "...", "evidence_ids": ["ev-001"], "method": "...", "method_basis": "explicit|inferred|unknown", "observation_end": "YYYY-MM-DD", "future_time_text": "", "condition_state": "unconditional|satisfied|not_met|unknown", "trend_aligned": false}`（其中 `verdict="部分符合"` 且 `trend_aligned=true` 自动展示为“趋势符合”）。
+
+执行一键证据 SHA-256 归档与原子落盘：
+```bash
+python3 toolkit/contribute_book.py apply-assessments \
+  --case cases/author-book-v5 \
+  --assessments cases/author-book-v5/output/assessments.jsonl \
+  --evidence-raw cases/author-book-v5/output/evidence_raw.jsonl
+```
+
+---
+
+## 四、路径 B：自有 API 并发模式（DeepSeek / OpenAI 兼容 + Exa）
+
+如果你配置了自己的 API Key（支持 DeepSeek 官方及任何 OpenAI 兼容接口，如 OpenAI、OpenRouter、通义千问、SiliconFlow 等）：
+
+```bash
+# 方式 1：使用 DeepSeek 官方 API
+export BOOKPRED_DEEPSEEK_API_KEY="你的 DeepSeek Key"
+export EXA_API_KEY="你的 Exa Key"
+
+# 方式 2：使用任意 OpenAI 兼容 API（如 OpenAI / OpenRouter / Qwen）
+export BOOKPRED_LLM_BASE_URL="https://api.openai.com/v1"
+export BOOKPRED_LLM_API_KEY="你的 API Key"
+export EXA_API_KEY="你的 Exa Key"
+```
+
+依次运行四条命令即可全自动完成整书拆解、版权裁剪、联网双向核查与结果固化：
+```bash
+# 1. 并发抽取全书 v5 候选（若用第三方模型可传 --model gpt-4.1-mini 等）
+python3 toolkit/prepare_book.py --case cases/author-book-v5 txt cases/author-book-v5/input/book.txt --apply --workers 12 --budget-cny 15
+
+# 2. 版权安全裁剪上下文（严防 claims.jsonl 拼接原书全文）
+python3 toolkit/contribute_book.py trim-contexts --case cases/author-book-v5
+
+# 3. 并发联网双向搜证、自适应补搜与六维独立语义复核
+python3 toolkit/verify_prediction.py --case cases/author-book-v5 --all-forecasts --workers 8 --budget-cny 20 --exa-budget-usd 10
+
+# 4. 校验存档哈希并正式写入 data/claims.jsonl 与 data/evidence.jsonl
+python3 toolkit/contribute_book.py import-verify --case cases/author-book-v5
+```
+
+---
+
+## 五、合入总数据库、PR 自检与提交流程
+
+完成路径 A 或路径 B 后，执行最终合入与验收：
+
+```bash
+# 1. 更新 datasets/all_cases_summary.csv、datasets/same_tier_ranking.csv 与 docs/05-same-tier-ranking.md
+python3 toolkit/contribute_book.py sync-database --case cases/author-book-v5
+
+# 2. 运行 PR 准入五重门禁（元数据、哈希校验、版权长度拦截、密钥扫描、数据库一致）
+python3 toolkit/contribute_book.py pr-check --case cases/author-book-v5
+
+# 3. 运行仓库全部单元测试
+python3 -m unittest discover -s toolkit/tests -v
+```
+
+确认 `git status` 中不包含 `input/`、原书 `.txt`/`.pdf` 或密钥文件后，提交分支并发起 Pull Request！GitHub Actions 会自动运行 `check.yml` 复核全部测试、证据哈希、数据库同步与社区贡献审计。
