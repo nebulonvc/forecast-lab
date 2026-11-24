@@ -1,0 +1,28 @@
+{
+  "id": "4ec0eb38-7fb0-483e-8a94-1eacc70f2856",
+  "object": "chat.completion",
+  "created": 1794201439,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000015881-000015903\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为对2000年后投资者转向房地产并造成泡沫的历史回顾性叙述，非前瞻预测；观察时段为2000年后至成书前。\",\"reason\":\"原文用“结果造成了”描述已发生的房地产泡沫，属于历史回顾而非未来预测。抽取将其误作条件性预测。\",\"limitation\":\"该句为作者对历史因果的叙述，不能作为可评分预测；且房地产泡沫成因复杂，原文因果表述本身不可直接验证。\",\"evidence_ids\":[],\"method\":\"基于投资流向的因果推理\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4538,
+    "completion_tokens": 183,
+    "total_tokens": 4721,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 4538
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

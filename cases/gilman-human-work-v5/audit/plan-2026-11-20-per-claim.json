@@ -1,0 +1,41 @@
+{
+  "executed_at": "2026-11-20T01:21:03Z",
+  "note": "新检索时间是这次执行。没有回填到较早的 plan。",
+  "queries": [
+    {
+      "id_needle": "slave labour",
+      "role": "counter",
+      "query": "ILO wage and salaried workers percent employment date accessed",
+      "saved": "data/sources/ev-wb-wage-20260117.html",
+      "result": "页面印 date accessed: January 17, 2026，工资工人仍是就业分类。"
+    },
+    {
+      "id_needle": "threatening birth rate",
+      "role": "support",
+      "query": "World Population Prospects 2024 press date fertility",
+      "saved": "data/sources/ev-un-press-2024-07.html",
+      "result": "新闻稿写比 1990 年左右少生一个孩子。完整日在关键信息页 Thursday, 11 July 2024。"
+    },
+    {
+      "id_needle": "permanent balance",
+      "role": "counter",
+      "query": "same press release population peak",
+      "saved": "data/sources/ev-un-press-2024-07.html",
+      "result": "人口仍将增长到峰值。永久平衡未当作已经发生。"
+    },
+    {
+      "id_needle": "educating the children",
+      "role": "counter",
+      "query": "UN-Habitat slum population 13 July 2023",
+      "saved": "data/sources/ev-sdg11-20230713.pdf",
+      "result": "13 July 2023 的说明写 2020 年绝对贫民人口超过 10 亿。"
+    },
+    {
+      "id_needle": "railroad is stronger",
+      "role": "counter",
+      "query": "PNAS interstate war decline December 14 2015",
+      "saved": null,
+      "result": "https://www.pnas.org/doi/10.1073/pnas.1520970112 返回 403，正文未存。"
+    }
+  ]
+}

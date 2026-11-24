@@ -1,0 +1,761 @@
+{
+  "claim_id": "txt-1c4066fc0c-000201386-000201417",
+  "version": "search-verifier-v2",
+  "input_sha256": "1c23566d53405ba956ce9f0f67ee57175ee8c1f1b5dd6335e88c614fa782b19b",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000201386-000201417",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "原文比较“美国教育输出在长远政治发展中的好处”与“经济领域中的一切既得利益”，未给指标、阈值或终点。回顾性口径拟用：受援国精英网络/领导人校友数、国际好感度等政治影响指标，对比教育服务出口收入等经济收益量级；观察期取1991年前后至2026-11-09可得材料。",
+    "reason": "现有材料只分别显示教育交流确有政治性精英网络迹象（如Fulbright校友任国家领导人）和经济收益规模巨大（数百亿美元出口），但没有任何来源把两类收益放在同一尺度上比较，无法判断政治好处是否“远超”经济既得利益。",
+    "limitation": "“长远政治发展”与“一切既得利益”均无操作化定义，政治收益难以货币化或排序；所引材料多为单方面描述，不能完成原文的比较性判断。",
+    "evidence_ids": [
+      "prior-d07f0849e1187b655032",
+      "ev-9aa6f6d9b9dbe6cbe57f5c65",
+      "ev-f1b8b19831406bbb44376dfe",
+      "ev-7184ddc3664323ef8b74b5f2",
+      "ev-39566503f49e28a0b65bb087"
+    ],
+    "method": "从教育所产生的感情与价值认同推演长期政治收益",
+    "method_basis": "explicit",
+    "observation_end": "2026-11-09",
+    "future_time_text": "长远政治发展",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-d07f0849e1187b655032",
+        "relation": "support",
+        "quote": "HEPI原始研究查195国，2024年70名在任高级领导人曾在美国接受高等教育、对应58国；英国58名/52国。",
+        "publication_date": "2024-10-10",
+        "observation_end": "2024-10-10",
+        "limitation": "仅证明美国高等教育与部分在任领导人的关联，属政治影响的一个侧面，未与经济收益比较，也不证明因果。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-9aa6f6d9b9dbe6cbe57f5c65",
+        "relation": "support",
+        "quote": "When traveling, especially in the developing world, one is likely to encounter many government ministers and private sector leaders who studied or spent time in the United States and maintain an affinity for its ideals.",
+        "publication_date": "2021-01-13",
+        "observation_end": "2021-01-13",
+        "limitation": "评论性文章，以轶事说明精英网络与好感，同时指出交流项目在衰退；未量化政治收益，也未与经济收益比较。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-f1b8b19831406bbb44376dfe",
+        "relation": "support",
+        "quote": "Thirty-seven Fulbright alumni have served as heads of \nstate or government, and 59 Fulbright alumni from 14 countries have been awarded the Nobel \nPrize.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "报告前言列举校友成就，未证明项目因果贡献，也未涉及经济收益对比；发表日期仅知为2018年7月。",
+        "quote_verification": {
+          "method": "unique_whitespace_alignment",
+          "model_quote": "Thirty-seven Fulbright alumni have served as heads of state or government, and 59 Fulbright alumni from 14 countries have been awarded the Nobel Prize."
+        },
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-7184ddc3664323ef8b74b5f2",
+        "relation": "counter",
+        "quote": "In the 24 years from 2000 to 2024, revenue from foreign students more than quintupled from $9.7 billion to $56.3 billion. (These numbers are not adjusted for inflation.)",
+        "publication_date": "2025-05-29",
+        "observation_end": "2024-12-31",
+        "limitation": "显示教育服务出口经济收益规模巨大且快速增长，构成对“政治好处远超经济既得利益”的反向压力，但未评估政治收益，不能单独证伪。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-39566503f49e28a0b65bb087",
+        "relation": "counter",
+        "quote": "International students studying at U.S. colleges and universities contribute$42.9 billionto the U.S. economy and support 355,736 jobs*.",
+        "publication_date": null,
+        "observation_end": "2025-06-30",
+        "limitation": "NAFSA经济贡献估算，仅量化经济侧，未涉及政治收益；来源无发表日期元数据，观察期为2024-2025学年。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      }
+    ],
+    "remaining_gap": "缺少把教育输出的长期政治收益与经济既得利益置于同一可比尺度（货币化或排序）的实证研究；现有材料只能分别证明政治精英网络存在与经济收益巨大，无法判定“远超”这一比较命题。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000201386-000201417",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "原文比较“美国教育输出在长远政治发展中的好处”与“经济领域中的一切既得利益”，未给指标、阈值或终点。回顾性口径拟用：受援国精英网络/领导人校友数、国际好感度等政治影响指标，对比教育服务出口收入等经济收益量级；观察期取1991年前后至2026-11-09可得材料。",
+    "reason": "现有材料只分别显示教育交流确有政治性精英网络迹象（如Fulbright校友任国家领导人）和经济收益规模巨大（数百亿美元出口），但没有任何来源把两类收益放在同一尺度上比较，无法判断政治好处是否“远超”经济既得利益。",
+    "limitation": "“长远政治发展”与“一切既得利益”均无操作化定义，政治收益难以货币化或排序；所引材料多为单方面描述，不能完成原文的比较性判断。",
+    "evidence_ids": [
+      "prior-d07f0849e1187b655032",
+      "ev-9aa6f6d9b9dbe6cbe57f5c65",
+      "ev-f1b8b19831406bbb44376dfe",
+      "ev-7184ddc3664323ef8b74b5f2",
+      "ev-39566503f49e28a0b65bb087"
+    ],
+    "method": "从教育所产生的感情与价值认同推演长期政治收益",
+    "method_basis": "explicit",
+    "observation_end": "2026-11-09",
+    "future_time_text": "长远政治发展",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-d07f0849e1187b655032",
+        "relation": "support",
+        "quote": "HEPI原始研究查195国，2024年70名在任高级领导人曾在美国接受高等教育、对应58国；英国58名/52国。",
+        "publication_date": "2024-10-10",
+        "observation_end": "2024-10-10",
+        "limitation": "仅证明美国高等教育与部分在任领导人的关联，属政治影响的一个侧面，未与经济收益比较，也不证明因果。"
+      },
+      {
+        "evidence_id": "ev-9aa6f6d9b9dbe6cbe57f5c65",
+        "relation": "support",
+        "quote": "When traveling, especially in the developing world, one is likely to encounter many government ministers and private sector leaders who studied or spent time in the United States and maintain an affinity for its ideals.",
+        "publication_date": "2021-01-13",
+        "observation_end": "2021-01-13",
+        "limitation": "评论性文章，以轶事说明精英网络与好感，同时指出交流项目在衰退；未量化政治收益，也未与经济收益比较。"
+      },
+      {
+        "evidence_id": "ev-f1b8b19831406bbb44376dfe",
+        "relation": "support",
+        "quote": "Thirty-seven Fulbright alumni have served as heads of state or government, and 59 Fulbright alumni from 14 countries have been awarded the Nobel Prize.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "报告前言列举校友成就，未证明项目因果贡献，也未涉及经济收益对比；发表日期仅知为2018年7月。"
+      },
+      {
+        "evidence_id": "ev-7184ddc3664323ef8b74b5f2",
+        "relation": "counter",
+        "quote": "In the 24 years from 2000 to 2024, revenue from foreign students more than quintupled from $9.7 billion to $56.3 billion. (These numbers are not adjusted for inflation.)",
+        "publication_date": "2025-05-29",
+        "observation_end": "2024-12-31",
+        "limitation": "显示教育服务出口经济收益规模巨大且快速增长，构成对“政治好处远超经济既得利益”的反向压力，但未评估政治收益，不能单独证伪。"
+      },
+      {
+        "evidence_id": "ev-39566503f49e28a0b65bb087",
+        "relation": "counter",
+        "quote": "International students studying at U.S. colleges and universities contribute$42.9 billionto the U.S. economy and support 355,736 jobs*.",
+        "publication_date": null,
+        "observation_end": "2025-06-30",
+        "limitation": "NAFSA经济贡献估算，仅量化经济侧，未涉及政治收益；来源无发表日期元数据，观察期为2024-2025学年。"
+      }
+    ],
+    "remaining_gap": "缺少把教育输出的长期政治收益与经济既得利益置于同一可比尺度（货币化或排序）的实证研究；现有材料只能分别证明政治精英网络存在与经济收益巨大，无法判定“远超”这一比较命题。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-d07f0849e1187b655032",
+      "url": "https://www.hepi.ac.uk/reports/the-us-pulls-further-away-in-the-latest-soft-power-index-while-the-uk-stands-still-and-france-slips-back/",
+      "title": "ev-r2-l2-hepi",
+      "published_date": "2024-10-10",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-10-10",
+        "latest": "2024-10-10"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-hepi",
+      "archive_sha256": "da13f0512573b0deade8c677968d601eeae0130872ff653a9c82d9ee3d1ad6b3",
+      "archive_path": "data/sources/r2-l2-hepi-web-notes.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-deca0b150f6b3f2998aa",
+      "url": "https://www.ncses.nsf.gov/pubs/nsbsep20261/figure/11",
+      "title": "ev-r2-l2-nsf-education",
+      "published_date": "2026",
+      "publication_date_precision": "year",
+      "publication_date_range": {
+        "earliest": "2026-01-01",
+        "latest": "2026-12-31"
+      },
+      "date_status": "overlaps_cutoff",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-nsf-education",
+      "archive_sha256": "769bdb1e6d59a7fccc697cc173fa0963ae15f10519328421e4af09a58ee55328",
+      "archive_path": "data/sources/r2-l2-nsf-education.html",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-4858d9aa38bdde84e54ac3db",
+      "url": "https://etheses.whiterose.ac.uk/id/eprint/6889/1/Bettie_ML_Communications_PhD_2014.pdf",
+      "resolved_url": "https://etheses.whiterose.ac.uk/id/eprint/6889/1/Bettie_ML_Communications_PhD_2014.pdf",
+      "title": "The Fulbright Program and American Public Diplomacy",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:20.898903+00:00",
+      "archive_sha256": "8a50ab14eed897b43e62a2f90bbd565a01bbeb593f7dc892b416a4c3f9f1290a",
+      "archive_path": "jobs/d6dc19c7eb7b6a07207e6f65/8a50ab14eed897b43e62a2f90bbd565a01bbeb593f7dc892b416a4c3f9f1290a.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a60268fab39d49294f3cb22b",
+      "url": "https://digitalcommons.carleton.edu/comps/2029",
+      "resolved_url": "https://digitalcommons.carleton.edu/comps/2029",
+      "title": "Educational Exchange Programs as a Soft Power Strategy: Testing the Relationship between the US and Countries of Foreign Fulbright Alumni Turned Heads of State",
+      "published_date": "2018-01-01",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2018-01-01",
+        "latest": "2018-01-01"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:20.899021+00:00",
+      "archive_sha256": "de0091b56953b5fc5f8556444617a6121f4ba7f3f3e6f058cbcbc849c8dc6cd5",
+      "archive_path": "jobs/d6dc19c7eb7b6a07207e6f65/de0091b56953b5fc5f8556444617a6121f4ba7f3f3e6f058cbcbc849c8dc6cd5.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c2714c7b3384f05d48f33032",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10544708/",
+      "resolved_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10544708/",
+      "title": "The globalization of postsecondary education: The role of international students in the US higher education system",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:20.899119+00:00",
+      "archive_sha256": "4622f0f76507ce2667afa4b5af93068fdc65b6fb3d9f528bcdb44ade73b393a0",
+      "archive_path": "jobs/d6dc19c7eb7b6a07207e6f65/4622f0f76507ce2667afa4b5af93068fdc65b6fb3d9f528bcdb44ade73b393a0.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-9aa6f6d9b9dbe6cbe57f5c65",
+      "url": "https://www.csis.org/analysis/winning-great-power-education-revamping-us-approach-education-exchange",
+      "resolved_url": "https://www.csis.org/analysis/winning-great-power-education-revamping-us-approach-education-exchange",
+      "title": "Winning the Great Power Education: Revamping the U.S. Approach to Education Exchange",
+      "published_date": "2021-01-13",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2021-01-13",
+        "latest": "2021-01-13"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:20.899206+00:00",
+      "archive_sha256": "0a0763e197d2c8898aeb68580e0c3d1325486e801dd063929557459bc93ea972",
+      "archive_path": "jobs/d6dc19c7eb7b6a07207e6f65/0a0763e197d2c8898aeb68580e0c3d1325486e801dd063929557459bc93ea972.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-f1b8b19831406bbb44376dfe",
+      "url": "https://centaur.reading.ac.uk/87442/1/henley-centre-for-leadership-impact-of-the-fulbright-programme-on-part.pdf",
+      "resolved_url": "https://centaur.reading.ac.uk/87442/1/henley-centre-for-leadership-impact-of-the-fulbright-programme-on-part.pdf",
+      "title": "The Impact of the Fulbright Programme on Participants' Leadershiop Capacity, July 2018",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:30.138098+00:00",
+      "archive_sha256": "b1696dc40a5ec9f1c2baf4b10dc40084ae07b2c9a61a76ba6eef0f4a1ac618bf",
+      "archive_path": "jobs/d6dc19c7eb7b6a07207e6f65/b1696dc40a5ec9f1c2baf4b10dc40084ae07b2c9a61a76ba6eef0f4a1ac618bf.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-39566503f49e28a0b65bb087",
+      "url": "https://www.nafsa.org/sites/default/files/media/document/EconValue2025_v01_11-12-2025.pdf",
+      "resolved_url": "https://www.nafsa.org/sites/default/files/media/document/EconValue2025_v01_11-12-2025.pdf",
+      "title": "Benefits from International StudentsTHE UNITED STATES OF AMERICA",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:30.138223+00:00",
+      "archive_sha256": "8eec6825f859be7e21a7b4e24f3b59145087d7ae844f1d7cdcd09cedd0107562",
+      "archive_path": "jobs/d6dc19c7eb7b6a07207e6f65/8eec6825f859be7e21a7b4e24f3b59145087d7ae844f1d7cdcd09cedd0107562.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-7184ddc3664323ef8b74b5f2",
+      "url": "https://cepr.net/publications/foreign-students-a-large-source-of-export-revenue/",
+      "resolved_url": "https://cepr.net/publications/foreign-students-a-large-source-of-export-revenue/",
+      "title": "Foreign Students Aren’t Just a Large Source of Export Revenue, They Were a Rapidly Growing One – CEPR",
+      "published_date": "2025-05-29",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-05-29",
+        "latest": "2025-05-29"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:30.138308+00:00",
+      "archive_sha256": "a32a2ad285fcdebd6f42de8b7ee6e0bccdd9158ebe02526965114ec4938e9e00",
+      "archive_path": "jobs/d6dc19c7eb7b6a07207e6f65/a32a2ad285fcdebd6f42de8b7ee6e0bccdd9158ebe02526965114ec4938e9e00.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "Fulbright program long-term political impact foreign leaders alumni study soft power evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "international education exchange political benefits limited economic value education services exports United States",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Fulbright alumni foreign heads of state government ministers long-term political influence United States study evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "international student economic contribution United States billions export revenue versus soft power political returns evidence",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-39566503f49e28a0b65bb087",
+        "ev-f1b8b19831406bbb44376dfe"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "remaining_gap": "缺少把教育输出的长期政治收益与经济既得利益置于同一可比尺度（货币化或排序）的实证研究；现有材料只能分别证明政治精英网络存在与经济收益巨大，无法判定“远超”这一比较命题。",
+  "source_statuses": [
+    {
+      "url": "https://etheses.whiterose.ac.uk/id/eprint/6889/1/Bettie_ML_Communications_PhD_2014.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://digitalcommons.carleton.edu/comps/2029",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10544708/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.csis.org/analysis/winning-great-power-education-revamping-us-approach-education-exchange",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://centaur.reading.ac.uk/87442/1/henley-centre-for-leadership-impact-of-the-fulbright-programme-on-part.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.nafsa.org/sites/default/files/media/document/EconValue2025_v01_11-12-2025.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://cepr.net/publications/foreign-students-a-large-source-of-export-revenue/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "a0befbd801213dc12747e7d0a173aa763d7be0d05949ff69012c934fb553fbd4"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "7d52d0d6c5345f7be594d4bb8a7aefbb",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b5b9e269dabf97509f1b33e001043089",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "25871e6e7ffd1a81d923d432cae22514e097cebb3d062f3fc4cb4d749e9c07d6"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "0085c058a6ec106c001b114c2af91d18",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "19461267fafe9ce8a185ed630347c01146d1d9159e4a973a6348ebadb2daf617"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "93152e902c896bd6d0a8f6de3d0f6d82",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "7ceb50d001b8ec099dad67c15d29cf82",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "6ba6a71abf7d2f5ec7092ea291e1b3fd8b6bbe41e73f3f4c980111efdbdf8020"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "3294e9760a59d8fc58bd48c018d2f894",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "4cc52d1dd968e3252b1692825d96bbfb0e7732c77d225c68e5f356f70a18361e"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "20570fb7a38d118dac3f86d5f164ad2cf551e08e4d4e9a6714fc2c10bedf7313"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-39566503f49e28a0b65bb087",
+            "ev-f1b8b19831406bbb44376dfe"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-d07f0849e1187b655032",
+        "source_bytes": 128,
+        "shown_bytes": 128,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-deca0b150f6b3f2998aa",
+        "source_bytes": 193,
+        "shown_bytes": 193,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-4858d9aa38bdde84e54ac3db",
+        "source_bytes": 12027,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a60268fab39d49294f3cb22b",
+        "source_bytes": 385,
+        "shown_bytes": 385,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-c2714c7b3384f05d48f33032",
+        "source_bytes": 12028,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-9aa6f6d9b9dbe6cbe57f5c65",
+        "source_bytes": 12058,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-f1b8b19831406bbb44376dfe",
+        "source_bytes": 12091,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-39566503f49e28a0b65bb087",
+        "source_bytes": 3299,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-7184ddc3664323ef8b74b5f2",
+        "source_bytes": 2119,
+        "shown_bytes": 2119,
+        "context_truncated": false
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-d07f0849e1187b655032",
+        "source_bytes": 128,
+        "shown_bytes": 128,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-deca0b150f6b3f2998aa",
+        "source_bytes": 193,
+        "shown_bytes": 193,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-4858d9aa38bdde84e54ac3db",
+        "source_bytes": 12027,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a60268fab39d49294f3cb22b",
+        "source_bytes": 385,
+        "shown_bytes": 385,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-c2714c7b3384f05d48f33032",
+        "source_bytes": 12028,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-9aa6f6d9b9dbe6cbe57f5c65",
+        "source_bytes": 12058,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-f1b8b19831406bbb44376dfe",
+        "source_bytes": 12091,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-39566503f49e28a0b65bb087",
+        "source_bytes": 3299,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-7184ddc3664323ef8b74b5f2",
+        "source_bytes": 2119,
+        "shown_bytes": 2119,
+        "context_truncated": false
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000201386-000201417",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000201386-000201417",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "原文比较“美国教育输出在长远政治发展中的好处”与“经济领域中的一切既得利益”，未给指标、阈值或终点。回顾性口径拟用：受援国精英网络/领导人校友数、国际好感度等政治影响指标，对比教育服务出口收入等经济收益量级；观察期取1991年前后至2026-11-09可得材料。",
+      "reason": "现有材料只分别显示教育交流确有政治性精英网络迹象（如Fulbright校友任国家领导人）和经济收益规模巨大（数百亿美元出口），但没有任何来源把两类收益放在同一尺度上比较，无法判断政治好处是否“远超”经济既得利益。",
+      "limitation": "“长远政治发展”与“一切既得利益”均无操作化定义，政治收益难以货币化或排序；所引材料多为单方面描述，不能完成原文的比较性判断。",
+      "evidence_ids": [
+        "prior-d07f0849e1187b655032",
+        "ev-9aa6f6d9b9dbe6cbe57f5c65",
+        "ev-f1b8b19831406bbb44376dfe",
+        "ev-7184ddc3664323ef8b74b5f2",
+        "ev-39566503f49e28a0b65bb087"
+      ],
+      "method": "从教育所产生的感情与价值认同推演长期政治收益",
+      "method_basis": "explicit",
+      "observation_end": "2026-11-09",
+      "future_time_text": "长远政治发展",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-d07f0849e1187b655032",
+          "relation": "support",
+          "quote": "HEPI原始研究查195国，2024年70名在任高级领导人曾在美国接受高等教育、对应58国；英国58名/52国。",
+          "publication_date": "2024-10-10",
+          "observation_end": "2024-10-10",
+          "limitation": "仅证明美国高等教育与部分在任领导人的关联，属政治影响的一个侧面，未与经济收益比较，也不证明因果。"
+        },
+        {
+          "evidence_id": "ev-9aa6f6d9b9dbe6cbe57f5c65",
+          "relation": "support",
+          "quote": "When traveling, especially in the developing world, one is likely to encounter many government ministers and private sector leaders who studied or spent time in the United States and maintain an affinity for its ideals.",
+          "publication_date": "2021-01-13",
+          "observation_end": "2021-01-13",
+          "limitation": "评论性文章，以轶事说明精英网络与好感，同时指出交流项目在衰退；未量化政治收益，也未与经济收益比较。"
+        },
+        {
+          "evidence_id": "ev-f1b8b19831406bbb44376dfe",
+          "relation": "support",
+          "quote": "Thirty-seven Fulbright alumni have served as heads of state or government, and 59 Fulbright alumni from 14 countries have been awarded the Nobel Prize.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "报告前言列举校友成就，未证明项目因果贡献，也未涉及经济收益对比；发表日期仅知为2018年7月。"
+        },
+        {
+          "evidence_id": "ev-7184ddc3664323ef8b74b5f2",
+          "relation": "counter",
+          "quote": "In the 24 years from 2000 to 2024, revenue from foreign students more than quintupled from $9.7 billion to $56.3 billion. (These numbers are not adjusted for inflation.)",
+          "publication_date": "2025-05-29",
+          "observation_end": "2024-12-31",
+          "limitation": "显示教育服务出口经济收益规模巨大且快速增长，构成对“政治好处远超经济既得利益”的反向压力，但未评估政治收益，不能单独证伪。"
+        },
+        {
+          "evidence_id": "ev-39566503f49e28a0b65bb087",
+          "relation": "counter",
+          "quote": "International students studying at U.S. colleges and universities contribute$42.9 billionto the U.S. economy and support 355,736 jobs*.",
+          "publication_date": null,
+          "observation_end": "2025-06-30",
+          "limitation": "NAFSA经济贡献估算，仅量化经济侧，未涉及政治收益；来源无发表日期元数据，观察期为2024-2025学年。"
+        }
+      ],
+      "remaining_gap": "缺少把教育输出的长期政治收益与经济既得利益置于同一可比尺度（货币化或排序）的实证研究；现有材料只能分别证明政治精英网络存在与经济收益巨大，无法判定“远超”这一比较命题。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "评估王沪宁关于美国教育输出在长远政治发展中的好处将远超经济领域一切既得利益的比较性预测。可观察口径：美国国际教育交流/教育援助在受援国形成的长期政治影响（如精英网络、政策倾向、国际好感度）与教育服务出口经济收益的相对量级；反证包括教育输出政治收益有限、经济收益巨大或政治收益无法与“一切既得利益”比较的证据。",
+  "elapsed_seconds": 27.73,
+  "completed_at": "2026-11-09T10:34:40.435857+00:00"
+}

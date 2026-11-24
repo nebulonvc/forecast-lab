@@ -1,0 +1,867 @@
+{
+  "claim_id": "txt-1c4066fc0c-000252988-000253018",
+  "version": "search-verifier-v2",
+  "input_sha256": "5319407b7714622d8f9399640b25c66af4add7da062de38732c06af410740dae",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000252988-000253018",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "原文判断美国体制能否保证美国保持“最发达地位”，语境为美日竞争。操作化为：观察期约1991年至2024年，美国GDP总量是否仍居世界第一、美国相对日本的经济领先是否维持、美国HDI是否仍处极高发展梯队且排名是否居首。原文“似乎”“难以保证”保留为概率性判断。",
+    "reason": "自动复核未确认主要判断：建议把“美国HDI排名17/193而非居首”当作“最发达地位并非全面稳固”的边界证据，但原文对象是美国能否保持“最发达地位”，语境是美日竞争；HDI排名第17并不直接说明美国相对日本或世界的“最发达地位”被削弱，且该指标并非原文提出的对象。用“排名是否居首”作为操作口径，是把“最发达”偷换为“各项发展指标均居首”，超出原文可检验范围。; 建议以“GDP总量仍居第一、相对日本领先未丧失”与“全球份额下降、HDI排名非居首”分项分化判为部分符合，但“全球份额下降”和“HDI排名非居首”都不是原文“难以保证最发达地位”的直接相反或分化证据：份额下降不等于被超越，HDI排名非居首也不等于美国不再是最发达。原文主要可检验结果是美国是否失去最发达地位（尤其相对日本），现有证据显示美国GDP总量仍居第一且相对日本领先未丧失，主要结果并未出现原文所担心的“难以保证”后果；把次要代理指标的升降当作主要分项分化，属于口径错误。",
+    "limitation": "“最发达地位”含制度、创新、文化等多维含义，本评估仅以GDP总量、相对日本领先和HDI排名代理，不能覆盖全部维度；名义美元口径受汇率影响。原文为概率性表述，本评估不据此做概率校准。",
+    "evidence_ids": [
+      "prior-a25cf22cecf32d1ba769",
+      "ev-c7f2fb4c59e8f056f364b4a8",
+      "ev-8b83008509e73b29826333bb",
+      "ev-6184e5b76fd64c641402c7db"
+    ],
+    "method": "从当时日本经济相对优势外推美国制度竞争力",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "未来延续",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-a25cf22cecf32d1ba769",
+        "relation": "boundary",
+        "quote": "美国HDI1990为0.878、2000为0.895、2010为0.919、2015为0.928、2020为0.925、2021为0.921、2022为0.930、2023为0.938；2023排17/193，属于极高人类发展。",
+        "publication_date": "2025-05-06",
+        "observation_end": "2023-12-31",
+        "limitation": "HDI为综合发展指标，非“最发达地位”的直接度量；排名17说明美国并非居首，构成对绝对领先的边界。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-c7f2fb4c59e8f056f364b4a8",
+        "relation": "support",
+        "quote": "The United States has been the world's largest economy in every single year of this chart, but its lead is not what it was",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "二手汇编页面，数据源自世界银行WDI；仅覆盖图表所列23个经济体，非全球所有国家；名义美元口径；无发表日期元数据。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-8b83008509e73b29826333bb",
+        "relation": "support",
+        "quote": "| United States | 29,298.0 |",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "DataBank页面仅显示2024年截面，未含完整年度序列；无发表日期元数据，verified=false。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-6184e5b76fd64c641402c7db",
+        "relation": "boundary",
+        "quote": "17 United States 0.938 79.3 15.9 13.9 73,650 –7 18 20",
+        "publication_date": null,
+        "observation_end": "2023-12-31",
+        "limitation": "HDI排名17说明美国并非各项发展指标均居首，构成对“最发达”绝对化的边界；无发表日期元数据。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      }
+    ],
+    "remaining_gap": "需修正：要么把“最发达地位”的操作口径限定为美国GDP总量是否仍居世界第一及相对日本领先是否维持（现有证据支持主要结果未出现原文担心的后果），要么补充能直接对应“最发达地位”被超越或显著削弱的同对象证据；不能以HDI排名非居首或全球份额下降单独支撑“部分符合”。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000252988-000253018",
+    "inclusion": "forecast",
+    "verdict": "错误",
+    "basis": "observed_window",
+    "scope": "以美国是否仍保持世界最大经济体地位及是否仍处最高发展梯队为核心口径，观察期约1991年至2024年（GDP）及2023年（HDI）；原文“最发达地位”操作化为GDP总量世界第一与HDI极高发展梯队。",
+    "reason": "原文判断美国体制似乎难以保证其保持最发达地位，隐含美国可能被日本等超越。观察期内美国GDP总量在1960–2024每一年均为世界第一，2024年约29.3万亿美元远超日本约4.19万亿；HDI 2023为0.938仍属极高发展且排17/193。主要可观测结果与预测方向相反。",
+    "limitation": "原文用“似乎”“难以保证”属概率性表述，且“最发达”可含制度、文化等多维含义，本评估仅以GDP总量与HDI代理，不能覆盖全部维度；名义美元口径受汇率影响。",
+    "evidence_ids": [
+      "prior-a25cf22cecf32d1ba769",
+      "ev-c7f2fb4c59e8f056f364b4a8",
+      "ev-8b83008509e73b29826333bb",
+      "ev-6184e5b76fd64c641402c7db"
+    ],
+    "method": "从当时日本经济相对优势外推美国制度竞争力",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-31",
+    "future_time_text": "未来延续",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-a25cf22cecf32d1ba769",
+        "relation": "counter",
+        "quote": "美国HDI1990为0.878、2000为0.895、2010为0.919、2015为0.928、2020为0.925、2021为0.921、2022为0.930、2023为0.938；2023排17/193，属于极高人类发展。",
+        "publication_date": "2025-05-06",
+        "observation_end": "2023-12-31",
+        "limitation": "HDI为综合发展指标，非“最发达地位”的唯一或直接度量，且排名17并非第一。"
+      },
+      {
+        "evidence_id": "ev-c7f2fb4c59e8f056f364b4a8",
+        "relation": "counter",
+        "quote": "The United States has been the world's largest economy in every single year of this chart, but its lead is not what it was",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "二手汇编页面，数据源自世界银行WDI；名义美元口径，单年波动受汇率影响；无发表日期元数据。"
+      },
+      {
+        "evidence_id": "ev-8b83008509e73b29826333bb",
+        "relation": "counter",
+        "quote": "| United States | 29,298.0 |",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "DataBank页面仅显示2024年截面，未含完整年度序列；无发表日期元数据，verified=false。"
+      },
+      {
+        "evidence_id": "ev-6184e5b76fd64c641402c7db",
+        "relation": "boundary",
+        "quote": "17 United States 0.938 79.3 15.9 13.9 73,650 –7 18 20",
+        "publication_date": null,
+        "observation_end": "2023-12-31",
+        "limitation": "HDI排名17说明美国并非各项发展指标均居首，构成对“最发达”绝对化的边界；无发表日期元数据。"
+      }
+    ],
+    "remaining_gap": "缺少覆盖1991–2024全序列的已核验GDP年度数据正文，以及“最发达地位”多维（创新、制度）的直接度量；现有证据足以支持GDP与HDI口径下的方向判断。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-a25cf22cecf32d1ba769",
+      "url": "https://hdr.undp.org/system/files/documents/global-report-document/hdr2025reporten.pdf",
+      "title": "ev-r2-l3-hdi",
+      "published_date": "2025-05-06",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-05-06",
+        "latest": "2025-05-06"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-hdi",
+      "archive_sha256": "8c836ddac50ab3694fd3c13f113d7e15acf46e04d42dcddb2c12d7372f7a6c37",
+      "archive_path": "data/sources/r2-l3-hdi.pdf",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-e56c07f52622975a3751",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.CD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-cd",
+      "published_date": "2026-10-08",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-10-08",
+        "latest": "2026-10-08"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-cd",
+      "archive_sha256": "7ad5c1c4f44e15850a861521955b29727497d2cb232432f3dbc2e56ba20d4e42",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.CD.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-95a5d86b3acdea51bb21",
+      "url": "https://www.ncses.nsf.gov/pubs/nsb20243/discovery-u-s-and-global-r-d",
+      "title": "ev-nsf",
+      "published_date": "2024-03-13",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-03-13",
+        "latest": "2024-03-13"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-nsf",
+      "archive_sha256": "48d44bfdae4f5f92a3f44364f67e6ca7670f659eb1c77f1e11453f89e6023f33",
+      "archive_path": "data/sources/48d44bfdae4f5f92a3f44364f67e6ca7670f659eb1c77f1e11453f89e6023f33.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-8b83008509e73b29826333bb",
+      "url": "https://databank.worldbank.org/id/a1616d84?Report_Name=Global-Current-uss-GDP",
+      "resolved_url": "https://databank.worldbank.org/id/a1616d84?Report_Name=Global-Current-uss-GDP",
+      "title": "World Development Indicators | DataBank",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:29.048817+00:00",
+      "archive_sha256": "eb73f8857a5e24a5a7352ed1081aac7e4da2fd8125663f98c4912895acc375a4",
+      "archive_path": "jobs/b5555a28aa413169e8926e10/eb73f8857a5e24a5a7352ed1081aac7e4da2fd8125663f98c4912895acc375a4.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c7f2fb4c59e8f056f364b4a8",
+      "url": "https://anystat.ai/race/largest-economies-by-gdp-1960-2024",
+      "resolved_url": "https://anystat.ai/race/largest-economies-by-gdp-1960-2024",
+      "title": "Largest Economies by GDP, 1960–2024 · ANYSTAT",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:29.048944+00:00",
+      "archive_sha256": "4be1a0d7cff1c29729eefdd90e382ee10e749ea23996b34e977e9c3b6271fb6b",
+      "archive_path": "jobs/b5555a28aa413169e8926e10/4be1a0d7cff1c29729eefdd90e382ee10e749ea23996b34e977e9c3b6271fb6b.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e32bb5af8b37bc9a7e294dcd",
+      "url": "https://hdr.undp.org/data-center/specific-country-data",
+      "resolved_url": "https://hdr.undp.org/data-center/specific-country-data",
+      "title": "Specific country data | Human Development Reports",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:29.049030+00:00",
+      "archive_sha256": "06c21c02e6a74b5bb14f1760f68d44aa95cdea204c97a2799e5e60c5ffe951c7",
+      "archive_path": "jobs/b5555a28aa413169e8926e10/06c21c02e6a74b5bb14f1760f68d44aa95cdea204c97a2799e5e60c5ffe951c7.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-6184e5b76fd64c641402c7db",
+      "url": "https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Statistical_Annex_HDI_Table.pdf",
+      "resolved_url": "https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Statistical_Annex_HDI_Table.pdf",
+      "title": "Human Development Index and its components",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:29.049118+00:00",
+      "archive_sha256": "6c56f6fe085b0d301497cd60deec5bf41ee9a3cfe9cccf3180e8bbd6afaa0ddb",
+      "archive_path": "jobs/b5555a28aa413169e8926e10/6c56f6fe085b0d301497cd60deec5bf41ee9a3cfe9cccf3180e8bbd6afaa0ddb.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "World Bank WDI GDP current US$ United States Japan China 1991 2024 United States largest economy",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "UNDP Human Development Report 2025 HDI United States rank 2023 compared Japan Germany",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "World Bank WDI GDP current US$ United States Japan 1991 2024 United States largest economy every year",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "UNDP Human Development Report 2025 HDI United States rank 2023 compared Japan Germany",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-6184e5b76fd64c641402c7db",
+        "ev-8b83008509e73b29826333bb",
+        "ev-c7f2fb4c59e8f056f364b4a8"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "remaining_gap": "需修正：要么把“最发达地位”的操作口径限定为美国GDP总量是否仍居世界第一及相对日本领先是否维持（现有证据支持主要结果未出现原文担心的后果），要么补充能直接对应“最发达地位”被超越或显著削弱的同对象证据；不能以HDI排名非居首或全球份额下降单独支撑“部分符合”。",
+  "source_statuses": [
+    {
+      "url": "https://databank.worldbank.org/id/a1616d84?Report_Name=Global-Current-uss-GDP",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://anystat.ai/race/largest-economies-by-gdp-1960-2024",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://hdr.undp.org/data-center/specific-country-data",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://hdr.undp.org/sites/default/files/2025_HDR/HDR25_Statistical_Annex_HDI_Table.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 9,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "b362536f3f9c8566e217b452c62c0fa67a6e874e2fada9b962af21c1ee6c1f35"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "72f2c163784da9125f1010ab6bdba5b5",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b8ac7a5d0ce649d32d7701325baf9af4",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "d8167336f2377f27724acda6d77db3a772c6f2c3be4ea02fc1afbf3f657df026"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "ec5ecd24fc285ed42a334874244737e4",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "c58ad1c2af7f8effe6e1c3d8f58977f5f2ef50ca3ad7f10e8d0fac811dccde5a"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "cd74bf495738a56fc70fdaba4f10a3be",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b8ac7a5d0ce649d32d7701325baf9af4",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "6ceae8ed9c8da61ec1746b2d2bf421ab15e0395b4284b37b5c7161c705ff8933"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "f87f5ff04eebfc0d7ac893a17a3a8c38cfc686cbcf8f5e277b5995e7a9664307"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "065eadd19533a8d38cab2b158f564bcdaddf10d93e025295bb5f23e48a3e827e"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "3c18d37e1d656ac0ef4ee591cf92b2fd701386f5fc2e0056c3379976144ab896",
+      "validation_error": "evidence_quote_not_in_shown_source"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "42d26e557ade3bf344ce855f0aba1441e36e3ede2845807000a5ebc076d33c4f"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "89713163aa39c64cb2e1a3b1948f4e80b2a6a7865d25c9a40222225207af8d5f"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "3c18d37e1d656ac0ef4ee591cf92b2fd701386f5fc2e0056c3379976144ab896",
+      "validation_error": "evidence_quote_not_in_shown_source"
+    }
+  ],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "错误",
+      "mechanical_verdict": "错误",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-6184e5b76fd64c641402c7db",
+            "ev-8b83008509e73b29826333bb",
+            "ev-c7f2fb4c59e8f056f364b4a8"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-6184e5b76fd64c641402c7db",
+            "ev-8b83008509e73b29826333bb",
+            "ev-c7f2fb4c59e8f056f364b4a8"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-a25cf22cecf32d1ba769",
+        "source_bytes": 187,
+        "shown_bytes": 187,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-e56c07f52622975a3751",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-95a5d86b3acdea51bb21",
+        "source_bytes": 154,
+        "shown_bytes": 154,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-8b83008509e73b29826333bb",
+        "source_bytes": 1572,
+        "shown_bytes": 1572,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-c7f2fb4c59e8f056f364b4a8",
+        "source_bytes": 2680,
+        "shown_bytes": 2680,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-e32bb5af8b37bc9a7e294dcd",
+        "source_bytes": 5026,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-6184e5b76fd64c641402c7db",
+        "source_bytes": 12166,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-a25cf22cecf32d1ba769",
+        "source_bytes": 187,
+        "shown_bytes": 187,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-e56c07f52622975a3751",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-95a5d86b3acdea51bb21",
+        "source_bytes": 154,
+        "shown_bytes": 154,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-8b83008509e73b29826333bb",
+        "source_bytes": 1572,
+        "shown_bytes": 1572,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-c7f2fb4c59e8f056f364b4a8",
+        "source_bytes": 2680,
+        "shown_bytes": 2680,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-e32bb5af8b37bc9a7e294dcd",
+        "source_bytes": 5026,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-6184e5b76fd64c641402c7db",
+        "source_bytes": 12166,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-a25cf22cecf32d1ba769",
+        "source_bytes": 187,
+        "shown_bytes": 187,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-e56c07f52622975a3751",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-95a5d86b3acdea51bb21",
+        "source_bytes": 154,
+        "shown_bytes": 154,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-8b83008509e73b29826333bb",
+        "source_bytes": 1572,
+        "shown_bytes": 1572,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-c7f2fb4c59e8f056f364b4a8",
+        "source_bytes": 2680,
+        "shown_bytes": 2680,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-e32bb5af8b37bc9a7e294dcd",
+        "source_bytes": 5026,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-6184e5b76fd64c641402c7db",
+        "source_bytes": 12166,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-a25cf22cecf32d1ba769",
+        "source_bytes": 187,
+        "shown_bytes": 187,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-e56c07f52622975a3751",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-95a5d86b3acdea51bb21",
+        "source_bytes": 154,
+        "shown_bytes": 154,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-8b83008509e73b29826333bb",
+        "source_bytes": 1572,
+        "shown_bytes": 1572,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-c7f2fb4c59e8f056f364b4a8",
+        "source_bytes": 2680,
+        "shown_bytes": 2680,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-e32bb5af8b37bc9a7e294dcd",
+        "source_bytes": 5026,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-6184e5b76fd64c641402c7db",
+        "source_bytes": 12166,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000252988-000253018",
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "原文对象是“这套体制”（个人主义、享乐主义、民主主义体制）能否保证美国“最发达地位”，且语境是美日竞争、美国发展不快于日本。建议把“最发达地位”操作化为“GDP总量世界第一+HDI极高发展梯队”，其中“HDI极高发展梯队”门槛极低（≥0.800），美国排17/193仍属该梯队，无法对应“最发达”这一最高级表述；GDP总量第一也只是“最大经济体”，不等于“最发达”。该代理改变了原文对象，需改用能对应“最发达/领先地位”的指标（如人均GDP或综合发展排名是否居首/前列），或明确承认代理偏离并保留未定。",
+          "source_quote": "今天的世界格局，似乎表明这套体制难以保证美国的最发达地",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议以“美国GDP总量1960–2024每年世界第一”作为主要反证，但所引ev-c7f2fb4c59e8f056f364b4a8是二手汇编页面（verified=false、无发表日期），其“every single year of this chart”只覆盖该图表所列23个经济体，并非全球所有国家；且该来源自述“less a story about America being overtaken than about everyone else catching up”，与美国保持领先的强结论存在张力。ev-8b83008509e73b29826333bb仅2024年截面且verified=false。用这些材料支撑“每一年均为世界第一”的完整序列证据不足。",
+          "source_quote": "The United States has been the world's largest economy in every single year of this chart, but its lead is not what it was",
+          "evidence_id": "ev-c7f2fb4c59e8f056f364b4a8",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议判“错误”，理由是“主要可观测结果与预测方向相反”。但原文是概率性表述（“似乎”“难以保证”），且其核心比较对象是日本及“美国发展不快于日本”。现有证据显示美国GDP总量仍第一、HDI仍极高，但HDI排名17并非第一，美国GDP全球份额从1960年约42%降至2024年约26%，日本确曾长期第二后下滑——这些是混合方向，不能简单判为“主要结果相反”。按口径，主要分项存在实质分化时应为部分符合或保留未定，而非直接“错误”。",
+          "source_quote": "原文判断美国体制似乎难以保证其保持最发达地位，隐含美国可能被日本等超越。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正“最发达地位”的操作化口径（不能以HDI极高梯队≥0.800或GDP总量第一直接等同“最发达”），并补充能覆盖1991–2024全序列、经核验的GDP/人均GDP或综合发展排名数据，以及美国相对日本发展速度的直接比较证据；据此重新判定是错误、部分符合还是暂无法判断。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000252988-000253018",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "evidence_support",
+          "reason": "建议把“美国HDI排名17/193而非居首”当作“最发达地位并非全面稳固”的边界证据，但原文对象是美国能否保持“最发达地位”，语境是美日竞争；HDI排名第17并不直接说明美国相对日本或世界的“最发达地位”被削弱，且该指标并非原文提出的对象。用“排名是否居首”作为操作口径，是把“最发达”偷换为“各项发展指标均居首”，超出原文可检验范围。",
+          "source_quote": "今天的世界格局，似乎表明这套体制难以保证美国的最发达地",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议以“GDP总量仍居第一、相对日本领先未丧失”与“全球份额下降、HDI排名非居首”分项分化判为部分符合，但“全球份额下降”和“HDI排名非居首”都不是原文“难以保证最发达地位”的直接相反或分化证据：份额下降不等于被超越，HDI排名非居首也不等于美国不再是最发达。原文主要可检验结果是美国是否失去最发达地位（尤其相对日本），现有证据显示美国GDP总量仍居第一且相对日本领先未丧失，主要结果并未出现原文所担心的“难以保证”后果；把次要代理指标的升降当作主要分项分化，属于口径错误。",
+          "source_quote": "操作化为：观察期约1991年至2024年，美国GDP总量是否仍居世界第一、美国相对日本的经济领先是否维持、美国HDI是否仍处极高发展梯队且排名是否居首。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正：要么把“最发达地位”的操作口径限定为美国GDP总量是否仍居世界第一及相对日本领先是否维持（现有证据支持主要结果未出现原文担心的后果），要么补充能直接对应“最发达地位”被超越或显著削弱的同对象证据；不能以HDI排名非居首或全球份额下降单独支撑“部分符合”。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000252988-000253018",
+      "inclusion": "forecast",
+      "verdict": "错误",
+      "basis": "observed_window",
+      "scope": "以美国是否仍保持世界最大经济体地位及是否仍处最高发展梯队为核心口径，观察期约1991年至2024年（GDP）及2023年（HDI）；原文“最发达地位”操作化为GDP总量世界第一与HDI极高发展梯队。",
+      "reason": "原文判断美国体制似乎难以保证其保持最发达地位，隐含美国可能被日本等超越。观察期内美国GDP总量在1960–2024每一年均为世界第一，2024年约29.3万亿美元远超日本约4.19万亿；HDI 2023为0.938仍属极高发展且排17/193。主要可观测结果与预测方向相反。",
+      "limitation": "原文用“似乎”“难以保证”属概率性表述，且“最发达”可含制度、文化等多维含义，本评估仅以GDP总量与HDI代理，不能覆盖全部维度；名义美元口径受汇率影响。",
+      "evidence_ids": [
+        "prior-a25cf22cecf32d1ba769",
+        "ev-c7f2fb4c59e8f056f364b4a8",
+        "ev-8b83008509e73b29826333bb",
+        "ev-6184e5b76fd64c641402c7db"
+      ],
+      "method": "从当时日本经济相对优势外推美国制度竞争力",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "未来延续",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-a25cf22cecf32d1ba769",
+          "relation": "counter",
+          "quote": "美国HDI1990为0.878、2000为0.895、2010为0.919、2015为0.928、2020为0.925、2021为0.921、2022为0.930、2023为0.938；2023排17/193，属于极高人类发展。",
+          "publication_date": "2025-05-06",
+          "observation_end": "2023-12-31",
+          "limitation": "HDI为综合发展指标，非“最发达地位”的唯一或直接度量，且排名17并非第一。"
+        },
+        {
+          "evidence_id": "ev-c7f2fb4c59e8f056f364b4a8",
+          "relation": "counter",
+          "quote": "The United States has been the world's largest economy in every single year of this chart, but its lead is not what it was",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "二手汇编页面，数据源自世界银行WDI；名义美元口径，单年波动受汇率影响；无发表日期元数据。"
+        },
+        {
+          "evidence_id": "ev-8b83008509e73b29826333bb",
+          "relation": "counter",
+          "quote": "| United States | 29,298.0 |",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "DataBank页面仅显示2024年截面，未含完整年度序列；无发表日期元数据，verified=false。"
+        },
+        {
+          "evidence_id": "ev-6184e5b76fd64c641402c7db",
+          "relation": "boundary",
+          "quote": "17 United States 0.938 79.3 15.9 13.9 73,650 –7 18 20",
+          "publication_date": null,
+          "observation_end": "2023-12-31",
+          "limitation": "HDI排名17说明美国并非各项发展指标均居首，构成对“最发达”绝对化的边界；无发表日期元数据。"
+        }
+      ],
+      "remaining_gap": "缺少覆盖1991–2024全序列的已核验GDP年度数据正文，以及“最发达地位”多维（创新、制度）的直接度量；现有证据足以支持GDP与HDI口径下的方向判断。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000252988-000253018",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "原文判断美国体制能否保证美国保持“最发达地位”，语境为美日竞争。操作化为：观察期约1991年至2024年，美国GDP总量是否仍居世界第一、美国相对日本的经济领先是否维持、美国HDI是否仍处极高发展梯队且排名是否居首。原文“似乎”“难以保证”保留为概率性判断。",
+      "reason": "观察期内美国GDP总量仍居世界第一，2024年约29.3万亿美元，日本约4.19万亿，美国相对日本的经济领先未丧失；但美国GDP全球份额从1960年约42%降至2024年约26%，HDI 2023排17/193而非居首，说明“最发达地位”并非全面稳固。主要分项出现分化，故判部分符合而非错误。",
+      "limitation": "“最发达地位”含制度、创新、文化等多维含义，本评估仅以GDP总量、相对日本领先和HDI排名代理，不能覆盖全部维度；名义美元口径受汇率影响。原文为概率性表述，本评估不据此做概率校准。",
+      "evidence_ids": [
+        "prior-a25cf22cecf32d1ba769",
+        "ev-c7f2fb4c59e8f056f364b4a8",
+        "ev-8b83008509e73b29826333bb",
+        "ev-6184e5b76fd64c641402c7db"
+      ],
+      "method": "从当时日本经济相对优势外推美国制度竞争力",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "未来延续",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-a25cf22cecf32d1ba769",
+          "relation": "boundary",
+          "quote": "美国HDI1990为0.878、2000为0.895、2010为0.919、2015为0.928、2020为0.925、2021为0.921、2022为0.930、2023为0.938；2023排17/193，属于极高人类发展。",
+          "publication_date": "2025-05-06",
+          "observation_end": "2023-12-31",
+          "limitation": "HDI为综合发展指标，非“最发达地位”的直接度量；排名17说明美国并非居首，构成对绝对领先的边界。"
+        },
+        {
+          "evidence_id": "ev-c7f2fb4c59e8f056f364b4a8",
+          "relation": "support",
+          "quote": "The United States has been the world's largest economy in every single year of this chart, but its lead is not what it was",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "二手汇编页面，数据源自世界银行WDI；仅覆盖图表所列23个经济体，非全球所有国家；名义美元口径；无发表日期元数据。"
+        },
+        {
+          "evidence_id": "ev-8b83008509e73b29826333bb",
+          "relation": "support",
+          "quote": "| United States | 29,298.0 |",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "DataBank页面仅显示2024年截面，未含完整年度序列；无发表日期元数据，verified=false。"
+        },
+        {
+          "evidence_id": "ev-6184e5b76fd64c641402c7db",
+          "relation": "boundary",
+          "quote": "17 United States 0.938 79.3 15.9 13.9 73,650 –7 18 20",
+          "publication_date": null,
+          "observation_end": "2023-12-31",
+          "limitation": "HDI排名17说明美国并非各项发展指标均居首，构成对“最发达”绝对化的边界；无发表日期元数据。"
+        }
+      ],
+      "remaining_gap": "缺少覆盖1991–2024全序列的已核验GDP年度数据正文，以及“最发达地位”多维（创新、制度）的直接度量；现有证据足以支持GDP总量与HDI口径下的分化判断。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "评估王沪宁原文关于美国体制能否保证美国保持“最发达地位”的判断。对象为美国相对日本及世界的经济与创新发展地位，观察期从原文写作前后（约1991年）至截止日2026-11-09前实际可得数据。可观察口径包括：美国GDP总量是否仍居世界第一、人均GDP/HDI等发展指标是否仍处最高梯队、研发与创新体系是否仍领先。反证包括：美国GDP被日本或其他国家超越、美国人均发展指标跌出极高梯队或显著落后、研发创新体系被超越。原文“似乎”“难以保证”保留为概率性判断，不加强为“美国必定衰落”或“日本必定超过美国”。",
+  "elapsed_seconds": 47.726,
+  "completed_at": "2026-11-09T10:36:06.001344+00:00"
+}

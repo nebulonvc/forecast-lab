@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000726373-000726453",
+  "plan": {
+    "object": "统治共和国，以及它底下分裂的臣属城市。同段说各派会到宗主城里找朋友。",
+    "condition": "the factious spirit of the subject city。臣属城市的派性。宗主国自己原有的党争，不是从臣属城市传来的。",
+    "quantifier": "certain to infect。一定会传染到自己的共和国。一次传染不能证明一定；一次统治了分裂的臣属城市而自己没有染上，可以反驳。",
+    "result": "登记变化是 certain to infect。传染的是派性，不是臣属城市不满。",
+    "window": "1531至2026-11-15。佛罗伦萨与皮斯托亚是作者自己引用的出版前事例。",
+    "counterevidence_needed": "共和国因治理分裂的臣属城市而自己分裂；或者治理了这样的城市而自己没有染上那些派。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "ruling republic became divided because it tried to govern a faction-ridden subject city",
+      "counter_query": "republic governed a divided dependency and its own citizens did not split into those factions"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [],
+    "dropped": "支持检索回到的是《李维史论》里的皮斯托亚。瑞士材料写的是属地升为平等州，不是派性传染。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "一定传染要求臣属城市的派性进入宗主共和国。作者自己的皮斯托亚例子不计。",
+    "reason": "支持检索打开的是本书第二十七章，佛罗伦萨人想统一皮斯托亚时自己吵了起来。那是作者用来提出这句的例子，时间在出版前，不能用来核验这句。反对检索里，瑞士属地在1798年前后被提升为平等州，材料没有写宗主共和国染上了属地的派，或没有染上。决定性缺口是：1531年之后没有正文写出一个共和国治理分裂的臣属城市，以及自己因此分裂或没有分裂。",
+    "limitation": "没有新增可引用正文。本书不能核验本书。",
+    "method": "先确认派性来自臣属城市，再看宗主共和国是否一定染上。作者自举的例子不计。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "打开的正例是本书自己的皮斯托亚。瑞士材料是属地升格，不是派性传染。"
+  }
+}

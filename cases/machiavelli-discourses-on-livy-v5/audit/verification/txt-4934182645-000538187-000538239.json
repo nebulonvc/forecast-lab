@@ -1,0 +1,47 @@
+{
+  "id": "txt-4934182645-000538187-000538239",
+  "plan": {
+    "object": "听信流亡者的信念和说法、并据以行事的君主。流亡者本人回国立国，不是这句的听信者。",
+    "condition": "if you build on the false impressions with which exiles fill you。计划必须建立在流亡者自己的说法上，不是主办国用自己的军队和外交完成的行动。",
+    "quantifier": "nothing but ruin can result。一次因此失败，不能单独支撑除了毁灭没有别的结果；一次因此成功，可以反驳。",
+    "result": "登记变化是 ruin。毁灭是这次事业的结果，不是主办国本身灭亡。",
+    "window": "1531至2026-11-15。亚历山大和地米斯托克利是作者的例子。克里斯蒂安二世1531年的远征，出版代理只有年份，不能把当年的航行编到出版日之后。",
+    "counterevidence_needed": "一个君主明确按流亡者的说法行事，而这次事业没有毁灭。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "prince trusted exiles promises invaded and the expedition ended in ruin after 1531",
+      "counter_query": "government acted on information from exiles and the campaign succeeded"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [
+      "https://www.cia.gov/stories/story/the-bay-of-pigs-invasion",
+      "https://history.state.gov/historicaldocuments/frus1950-55Intel/d154"
+    ],
+    "dropped": "克里斯蒂安二世自己就是流亡者，不是听信流亡者的君主。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-cia-bay-of-pigs", "ev-frus-guatemala-1954"],
+    "scope": "事业必须建立在流亡者的说法上。主办国用自己的空军和军官谈判取得的成功，不等于听信了流亡者的虚假印象。",
+    "reason": "中央情报局页写，1961年4月一千多名古巴流亡者在猪湾登陆，打算点燃起义推翻卡斯特罗；结果卡斯特罗继续掌权，旅的大部分人被囚。这是一次失败。国务院文件写，卡斯蒂略·阿马斯于1954年6月18日从洪都拉斯入侵，战斗没有决定胜负；随后美国外交、宣传、合同飞行员的空袭，以及中央情报局说服正规军军官，使阿本斯在6月27日辞职，阿马斯就任总统。成功写的是主办国自己的武力和对军官的说服，不是流亡者的说法被证明为真。两页都没有写主办者是被流亡者的信念和说法充满虚假印象之后才建起这次事业。一次失败和一次由主办国武力完成的政权更迭，因此都不能判定 nothing but ruin。决定性缺口是：没有正文写明事业建立在流亡者的说法上，并给出除毁灭以外或只有毁灭的结果。",
+    "limitation": "两页都没有单独的出版日。猪湾是1961年4月。危地马拉入侵和辞职是1954年6月18日和27日。",
+    "method": "先看计划是否建在流亡者的说法上，再看事业是毁灭还是成功。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "猪湾失败，危地马拉的成功写在主办国的空军和军官工作上。都没有写出听信流亡者说法这个条件。"
+  }
+}

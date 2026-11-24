@@ -1,0 +1,1001 @@
+{
+  "claim_id": "txt-1c4066fc0c-000070873-000070905",
+  "version": "search-verifier-v2",
+  "input_sha256": "28733f24f22a42f772f81a9f041cd60c1b86691eef07211e9c26b33871db5e10",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000070873-000070905",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "对象为美国“性解放”内容边界是否在1991年后继续扩展；原文以色情媒介展示的充分程度（“一切暴露无遗”“再发掘就成解剖学”）作为边界代理。观察期截至2026-11-09。可用材料仅覆盖：高中生曾有性行为比例（YRBS 1991—2023）、性态度（盖洛普同性婚姻支持1996—2024）、深度伪造色情研究（2024—2025，多为多国或澳大利亚样本）。",
+    "reason": "原文主要判断是色情媒介展示内容已无剩余可发掘空间，属内容边界命题；现有材料中高中生性行为率下降与性态度趋平并不直接检验该内容边界，深度伪造研究亦非美国专属且未证明美国性解放内容边界继续扩展。主要对象缺直接证据，故暂无法判断。",
+    "limitation": "“性解放内容边界”缺乏覆盖全美、跨1991—2026年的直接操作指标；性行为率与性态度是相关但不同对象，深度伪造研究代表性有限。修订说明：原判“错误”把性行为率下降与多国深度伪造研究当作主要反证，方向与对象均不对应，现改为暂无法判断并保留缺口。",
+    "evidence_ids": [
+      "prior-686c418fe2b679fb4083",
+      "ev-c526b588afe94fc78ab54196",
+      "prior-38c4cd23c553467704c1",
+      "ev-a9a153387729ca533ab60594",
+      "ev-333faa530a601b4d0c26c865",
+      "ev-2a881428de8b0124781d71e1"
+    ],
+    "method": "根据色情媒介展示的充分程度外推性解放边界",
+    "method_basis": "inferred",
+    "observation_end": "2025-09-09",
+    "future_time_text": "后人",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-686c418fe2b679fb4083",
+        "relation": "boundary",
+        "quote": "高中生曾有性行为占比1991为54%、2001为46%、2013为47%、2019为38%、2023为32%。",
+        "publication_date": "2025",
+        "observation_end": "2023-12-31",
+        "limitation": "仅高中生性行为率，非性解放内容边界；下降方向可被读作性解放退潮，不能直接反驳“无剩余内容可发掘”。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-c526b588afe94fc78ab54196",
+        "relation": "boundary",
+        "quote": "Total | 54.1 | 53.0 | 53.1 | 48.4 | 49.9 | 45.6 | 46.7 | 46.8 | 47.8 | 46.0 | 47.4 | 46.8 | 41.2 | 39.5 | 38.4 | 30.0 | 31.6",
+        "publication_date": null,
+        "observation_end": "2023-12-31",
+        "limitation": "表格仅高中生性行为率；来源元数据无发表日期，不能据此推断发表日。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "prior-38c4cd23c553467704c1",
+        "relation": "boundary",
+        "quote": "同性婚姻合法化支持从1996年的27%升至2024年的69%，2022—2023为71%；同性关系道德接受度自早2010年代持续过半，但近期停止上升。",
+        "publication_date": "2024-06-24",
+        "observation_end": "2024-06-24",
+        "limitation": "态度指标与色情媒介内容边界不同，且近期趋平，不能单独证明性解放内容持续扩展或已达边界。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-a9a153387729ca533ab60594",
+        "relation": "boundary",
+        "quote": "deepfake pornography behaviors were considered harmful by respondents, despite nascent societal awareness.",
+        "publication_date": "2024-05-11",
+        "observation_end": "2024-05-11",
+        "limitation": "10国调查非美国专属；摘要只说明受访者认为有害、社会认知尚浅，未证明美国性解放内容边界继续扩展。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-333faa530a601b4d0c26c865",
+        "relation": "boundary",
+        "quote": "Since 2017, there has been a proliferation of shared open-source technologies to facilitate deepfake creation and dissemination, and a corresponding increase in cases of sexualized deepfake abuse.",
+        "publication_date": "2025-09-09",
+        "observation_end": "2025-09-09",
+        "limitation": "澳大利亚25人访谈，样本小，不能直接代表美国性解放内容边界。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-2a881428de8b0124781d71e1",
+        "relation": "boundary",
+        "quote": "32 percent of high schoolers said they’ve ever had sexual intercourse. That’s a noticeable drop from 54 percent in 1991 and 47 percent in 2013",
+        "publication_date": "2025-06-12",
+        "observation_end": "2023-12-31",
+        "limitation": "仅高中生自我报告性行为率，非内容边界指标。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺乏覆盖全美、跨1991—2026年的“性解放内容边界”直接操作指标（如色情媒介展示内容/形式的扩展记录）；现有性行为率、性态度与多国深度伪造研究均不能直接检验原文主要判断。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000070873-000070905",
+    "inclusion": "forecast",
+    "verdict": "错误",
+    "basis": "observed_window",
+    "scope": "以美国性文化/性解放边界是否在1991年后继续扩展为对象；操作化为性行为发生率（CDC YRBS高中生曾有性行为比例，1991—2023）、性态度（盖洛普同性婚姻支持与同性关系道德接受度，1996—2024）以及色情媒介新形式（数字伪造亲密影像/深度伪造色情，2024—2025研究）。观察期截至2026-11-09。",
+    "reason": "原文判断性解放已达高峰、无剩余内容可供后人发掘。观察证据显示：高中生曾有性行为比例从1991年54%持续降至2023年32%，性态度在同性婚姻等维度继续扩展但近期趋平，同时深度伪造色情等新媒介形式出现并扩散，说明“无剩余内容可发掘”的边界判断与后续发展相反。",
+    "limitation": "“性解放”为宽泛概念，单一指标不能完全代表；性行为率下降与性态度扩展方向不一，且深度伪造研究多为其他国家或小样本，美国代表性有限。",
+    "evidence_ids": [
+      "prior-686c418fe2b679fb4083",
+      "ev-c526b588afe94fc78ab54196",
+      "prior-38c4cd23c553467704c1",
+      "ev-a9a153387729ca533ab60594",
+      "ev-333faa530a601b4d0c26c865",
+      "ev-2a881428de8b0124781d71e1"
+    ],
+    "method": "根据色情媒介展示的充分程度外推性解放边界",
+    "method_basis": "inferred",
+    "observation_end": "2025-09-09",
+    "future_time_text": "后人",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-686c418fe2b679fb4083",
+        "relation": "counter",
+        "quote": "高中生曾有性行为占比1991为54%、2001为46%、2013为47%、2019为38%、2023为32%。",
+        "publication_date": "2025",
+        "observation_end": "2023-12-31",
+        "limitation": "仅覆盖高中生群体，不能代表全部美国人；2023年数据为当年调查。"
+      },
+      {
+        "evidence_id": "ev-c526b588afe94fc78ab54196",
+        "relation": "counter",
+        "quote": "Total | 54.1 | 53.0 | 53.1 | 48.4 | 49.9 | 45.6 | 46.7 | 46.8 | 47.8 | 46.0 | 47.4 | 46.8 | 41.2 | 39.5 | 38.4 | 30.0 | 31.6",
+        "publication_date": null,
+        "observation_end": "2023-12-31",
+        "limitation": "表格数据，仅高中生；来源元数据无发表日期。"
+      },
+      {
+        "evidence_id": "prior-38c4cd23c553467704c1",
+        "relation": "boundary",
+        "quote": "同性婚姻合法化支持从1996年的27%升至2024年的69%，2022—2023为71%；同性关系道德接受度自早2010年代持续过半，但近期停止上升。",
+        "publication_date": "2024-06-24",
+        "observation_end": "2024-06-24",
+        "limitation": "态度指标与性行为率方向不同，且近期趋平，不能单独证明性解放持续扩展。"
+      },
+      {
+        "evidence_id": "ev-a9a153387729ca533ab60594",
+        "relation": "counter",
+        "quote": "deepfake pornography behaviors were considered harmful by respondents, despite nascent societal awareness.",
+        "publication_date": "2024-05-11",
+        "observation_end": "2024-05-11",
+        "limitation": "10国调查，非美国专属；深度伪造色情不等于传统性解放内容。"
+      },
+      {
+        "evidence_id": "ev-333faa530a601b4d0c26c865",
+        "relation": "counter",
+        "quote": "Since 2017, there has been a proliferation of shared open-source technologies to facilitate deepfake creation and dissemination, and a corresponding increase in cases of sexualized deepfake abuse.",
+        "publication_date": "2025-09-09",
+        "observation_end": "2025-09-09",
+        "limitation": "澳大利亚25人访谈，样本小，不能直接代表美国。"
+      },
+      {
+        "evidence_id": "ev-2a881428de8b0124781d71e1",
+        "relation": "counter",
+        "quote": "32 percent of high schoolers said they’ve ever had sexual intercourse. That’s a noticeable drop from 54 percent in 1991 and 47 percent in 2013",
+        "publication_date": "2025-06-12",
+        "observation_end": "2023-12-31",
+        "limitation": "仅高中生群体，且为自我报告。"
+      }
+    ],
+    "remaining_gap": "缺乏覆盖全美成年人、跨1991—2026年的性解放综合指标；深度伪造色情美国代表性数据不足。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-686c418fe2b679fb4083",
+      "url": "https://www.childstats.gov/americaschildren/beh4.asp",
+      "title": "ev-r2-l1-sexual-behaviour",
+      "published_date": "2025",
+      "publication_date_precision": "year",
+      "publication_date_range": {
+        "earliest": "2025-01-01",
+        "latest": "2025-12-31"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-sexual-behaviour",
+      "archive_sha256": "febf3c9846d947af05ca52901e0742f7d0d37c301b6a317f18be536b5f814dff",
+      "archive_path": "data/sources/r2-l1-yrbs.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-3ea8939e6daa1050fa9c",
+      "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ12/pdf/PLAW-119publ12.pdf",
+      "title": "ev-r2-l1-tida-law",
+      "published_date": "2025-05-19",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-05-19",
+        "latest": "2025-05-19"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-tida-law",
+      "archive_sha256": "53a58ea5b5cfbca4a0ee0c10d642dd30fdd38a56fe64cf17a4a0baf7230f8fda",
+      "archive_path": "data/sources/r2-l1-tida-law.pdf",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-38c4cd23c553467704c1",
+      "url": "https://news.gallup.com/poll/646202/sex-relations-marriage-supported.aspx",
+      "title": "ev-sexual-attitudes",
+      "published_date": "2024-06-24",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-06-24",
+        "latest": "2024-06-24"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-sexual-attitudes",
+      "archive_sha256": "75d74f9b54bf9e0e3c6bbaa251ceaa959d6e72de9d66079be7c09375f98a9a8b",
+      "archive_path": "data/sources/75d74f9b54bf9e0e3c6bbaa251ceaa959d6e72de9d66079be7c09375f98a9a8b.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c526b588afe94fc78ab54196",
+      "url": "https://www.childstats.gov/americaschildren/tables/beh4a.asp",
+      "resolved_url": "https://www.childstats.gov/americaschildren/tables/beh4a.asp",
+      "title": "BEH4.A Sexual activity: Percentage of high school students who reported ever having had sexual intercourse by sex, race and Hispanic origin, and grade, selected years 1991–2023",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:55.216548+00:00",
+      "archive_sha256": "9ff6c7060c0ef094fc5d8567adba568c623cf3cc3e2acdae2698dfb1790060df",
+      "archive_path": "jobs/01656a7a7a777724351fd05e/9ff6c7060c0ef094fc5d8567adba568c623cf3cc3e2acdae2698dfb1790060df.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e6cdc8e76103b5c19779dab2",
+      "url": "https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf",
+      "resolved_url": "https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf",
+      "title": "Youth Risk Behavior Survey Data Summary & Trends Report: 2013-2023",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:55.216787+00:00",
+      "archive_sha256": "86c1f6febca5c3e72bb6c935f12654ebe65f7dc0b3a7d77266f685a422f647c5",
+      "archive_path": "jobs/01656a7a7a777724351fd05e/86c1f6febca5c3e72bb6c935f12654ebe65f7dc0b3a7d77266f685a422f647c5.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a9a153387729ca533ab60594",
+      "url": "https://dl.acm.org/doi/full/10.1145/3613904.3642382",
+      "resolved_url": "https://dl.acm.org/doi/full/10.1145/3613904.3642382",
+      "title": "Non-Consensual Synthetic Intimate Imagery: Prevalence, Attitudes, and Knowledge in 10 Countries | Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems",
+      "published_date": "2024-05-11",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-05-11",
+        "latest": "2024-05-11"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:55.216994+00:00",
+      "archive_sha256": "6b14435764acd445cb47c8efb610fcef903b69b28a361ae863295f833c76c75c",
+      "archive_path": "jobs/01656a7a7a777724351fd05e/6b14435764acd445cb47c8efb610fcef903b69b28a361ae863295f833c76c75c.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-333faa530a601b4d0c26c865",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13669463/",
+      "resolved_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13669463/",
+      "title": "Sexualized Deepfake Abuse: Perpetrator and Victim Perspectives on the Motivations and Forms of Non-Consensually Created and Shared Sexualized Deepfake Imagery",
+      "published_date": "2025-09-09",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-09-09",
+        "latest": "2025-09-09"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:55.217229+00:00",
+      "archive_sha256": "f28025f284fa7e1c3a27368e2b21f06a77e64faf402785a0ae5e05128a1e9ebe",
+      "archive_path": "jobs/01656a7a7a777724351fd05e/f28025f284fa7e1c3a27368e2b21f06a77e64faf402785a0ae5e05128a1e9ebe.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-2a881428de8b0124781d71e1",
+      "url": "https://www.childtrends.org/publications/fewer-high-schoolers-say",
+      "resolved_url": "https://www.childtrends.org/publications/fewer-high-schoolers-say",
+      "title": "Fewer High Schoolers Say They’ve Had Sex | Child Trends",
+      "published_date": "2025-06-12",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-06-12",
+        "latest": "2025-06-12"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:42:03.453278+00:00",
+      "archive_sha256": "2dfb487d48331be52edd96571c3fff6c27e70774d1c993110284747ba067d5f4",
+      "archive_path": "jobs/01656a7a7a777724351fd05e/2dfb487d48331be52edd96571c3fff6c27e70774d1c993110284747ba067d5f4.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "CDC Youth Risk Behavior Survey sexual intercourse high school students 1991 2023 trend decline",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "deepfake pornography nonconsensual intimate imagery prevalence United States after 1991 new forms sexual content",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "CDC Youth Risk Behavior Survey 1991-2023 percentage high school students ever had sexual intercourse decline trend",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "deepfake pornography nonconsensual synthetic intimate imagery prevalence United States new forms sexual content after 1991",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-c526b588afe94fc78ab54196"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "remaining_gap": "缺乏覆盖全美、跨1991—2026年的“性解放内容边界”直接操作指标（如色情媒介展示内容/形式的扩展记录）；现有性行为率、性态度与多国深度伪造研究均不能直接检验原文主要判断。",
+  "source_statuses": [
+    {
+      "url": "https://www.childstats.gov/americaschildren/tables/beh4a.asp",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://dl.acm.org/doi/full/10.1145/3613904.3642382",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13669463/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.childtrends.org/publications/fewer-high-schoolers-say",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "评估王沪宁1991年著作中“美国人的性解放恐怕已达高峰，没有剩余内容供后人发掘”的推测。对象为美国性解放/性文化边界在1991年后是否继续扩展；可观察口径包括色情媒介展示内容的边界、性行为发生率、性态度/权利变化及新媒介形式。保留“恐怕”的不确定性。反证包括：性行为率持续下降、性态度趋于保守、色情内容出现新的可发掘形式（如数字伪造亲密影像）等。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "f12cf3d8af0af554901e518040add31a6a4013eaffcbf24038063d7e18e89849"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "56866d4b9ebc3d46bb3dc0e6e238058f",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e88b6516edeef96f3671766699bc0084",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "cb020b6842725017e604f5e891ede69c3e3afdde737f88751c3c0e5a116738c4"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "4ee101ea5da343f03f590858db8ee372",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "f502b11df51549eee8c25a202e55827c57918185e7471891206987bdbb3ed5fb"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "6a864eb6660939f4855b1313208ca787",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "a811c47480765160d5fe3ffbe66c3967",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "4d00a3e41cc608f7ddfa53f5f95c8c2fc66b100c4ac8de20ebb7ad6deff99322"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "5dd9a27acbc3aff9aa1f44783c6b0780",
+      "cost_estimate_USD": 0.001,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "7fa8b0b3d72c2f56ddbb50fc938b81cfa55323f74dd09070aaf46385f808da43"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "c91f64e6d990af82910d8303df6b265063af7d97a115dfe43231d5ef3246c177"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "c26df1a4dec3cb8f94071e9f67738e85412b5ce484718b9d9929a8e89ec259ef"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "d67a867f6354680a32fca66a18233d4d2b9745518017160a369213d422e70cd7"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "错误",
+      "mechanical_verdict": "错误",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-c526b588afe94fc78ab54196"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-c526b588afe94fc78ab54196"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-686c418fe2b679fb4083",
+        "source_bytes": 146,
+        "shown_bytes": 146,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3ea8939e6daa1050fa9c",
+        "source_bytes": 149,
+        "shown_bytes": 149,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-38c4cd23c553467704c1",
+        "source_bytes": 185,
+        "shown_bytes": 185,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-c526b588afe94fc78ab54196",
+        "source_bytes": 4270,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e6cdc8e76103b5c19779dab2",
+        "source_bytes": 12012,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a9a153387729ca533ab60594",
+        "source_bytes": 12076,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-333faa530a601b4d0c26c865",
+        "source_bytes": 12040,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-2a881428de8b0124781d71e1",
+        "source_bytes": 3162,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-686c418fe2b679fb4083",
+        "source_bytes": 146,
+        "shown_bytes": 146,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3ea8939e6daa1050fa9c",
+        "source_bytes": 149,
+        "shown_bytes": 149,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-38c4cd23c553467704c1",
+        "source_bytes": 185,
+        "shown_bytes": 185,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-c526b588afe94fc78ab54196",
+        "source_bytes": 4270,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e6cdc8e76103b5c19779dab2",
+        "source_bytes": 12012,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a9a153387729ca533ab60594",
+        "source_bytes": 12076,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-333faa530a601b4d0c26c865",
+        "source_bytes": 12040,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-2a881428de8b0124781d71e1",
+        "source_bytes": 3162,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-686c418fe2b679fb4083",
+        "source_bytes": 146,
+        "shown_bytes": 146,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3ea8939e6daa1050fa9c",
+        "source_bytes": 149,
+        "shown_bytes": 149,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-38c4cd23c553467704c1",
+        "source_bytes": 185,
+        "shown_bytes": 185,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-c526b588afe94fc78ab54196",
+        "source_bytes": 4270,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e6cdc8e76103b5c19779dab2",
+        "source_bytes": 12012,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a9a153387729ca533ab60594",
+        "source_bytes": 12076,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-333faa530a601b4d0c26c865",
+        "source_bytes": 12040,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-2a881428de8b0124781d71e1",
+        "source_bytes": 3162,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-686c418fe2b679fb4083",
+        "source_bytes": 146,
+        "shown_bytes": 146,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3ea8939e6daa1050fa9c",
+        "source_bytes": 149,
+        "shown_bytes": 149,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-38c4cd23c553467704c1",
+        "source_bytes": 185,
+        "shown_bytes": 185,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-c526b588afe94fc78ab54196",
+        "source_bytes": 4270,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e6cdc8e76103b5c19779dab2",
+        "source_bytes": 12012,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a9a153387729ca533ab60594",
+        "source_bytes": 12076,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-333faa530a601b4d0c26c865",
+        "source_bytes": 12040,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-2a881428de8b0124781d71e1",
+        "source_bytes": 3162,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000070873-000070905",
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "fail",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "原文对象是“性解放”的边界——色情媒介展示内容的可发掘空间（“色情杂志已将男男女女的一切暴露无遗”“再发掘就成解剖学了”）。建议把高中生性行为发生率当作主要操作指标，这是性行为频率，不是性解放内容边界的扩展；该指标下降不能直接说明“无剩余内容可发掘”为假。",
+          "quote_ref": "q1",
+          "source_quote": "没有任何东西剩下供后人发掘。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议把深度伪造色情研究当作“新媒介形式出现”的反证，但所引摘要只说明受访者认为该行为有害、社会认知尚浅，并未证明美国性解放内容边界在1991年后继续扩展；且该研究为10国调查，非美国专属。",
+          "quote_ref": "q7",
+          "source_quote": "deepfake pornography behaviors were considered harmful by respondents, despite nascent societal awareness.",
+          "evidence_id": "ev-a9a153387729ca533ab60594",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "counterevidence",
+          "reason": "建议将性行为率下降列为counter（反证），但性行为率下降与“性解放已达高峰、无剩余内容可发掘”并不直接矛盾，反而可被读作性解放退潮的佐证；将其作为反驳原文的主要证据属于方向误判。",
+          "quote_ref": "q4",
+          "source_quote": "高中生曾有性行为占比1991为54%、2001为46%、2013为47%、2019为38%、2023为32%。",
+          "evidence_id": "prior-686c418fe2b679fb4083",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "结论“错误”依赖混合方向材料：性行为率下降（可支持原文“已达高峰”）、性态度扩展但趋平、深度伪造新形式（美国代表性不足）。这些分项方向不一且主要指标对象偏离，不能支撑“主要可检验结果相反”的错误判定；应保留为暂无法判断或限定为部分符合并说明具体分项。",
+          "quote_ref": "q2",
+          "source_quote": "以美国性文化/性解放边界是否在1991年后继续扩展为对象；操作化为性行为发生率（CDC YRBS高中生曾有性行为比例，1991—2023）、性态度（盖洛普同性婚姻支持与同性关系道德接受度，1996—2024）以及色情媒介新形式（数字伪造亲密影像/深度伪造色情，2024—2025研究）。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需明确“性解放内容边界”的可观察代理（如色情媒介展示内容/形式的扩展），并提供美国范围内1991年后该边界继续扩展的直接证据；现有高中生性行为率与多国深度伪造研究不足以判定原文错误。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000070873-000070905",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000070873-000070905",
+      "inclusion": "forecast",
+      "verdict": "错误",
+      "basis": "observed_window",
+      "scope": "以美国性文化/性解放边界是否在1991年后继续扩展为对象；操作化为性行为发生率（CDC YRBS高中生曾有性行为比例，1991—2023）、性态度（盖洛普同性婚姻支持与同性关系道德接受度，1996—2024）以及色情媒介新形式（数字伪造亲密影像/深度伪造色情，2024—2025研究）。观察期截至2026-11-09。",
+      "reason": "原文判断性解放已达高峰、无剩余内容可供后人发掘。观察证据显示：高中生曾有性行为比例从1991年54%持续降至2023年32%，性态度在同性婚姻等维度继续扩展但近期趋平，同时深度伪造色情等新媒介形式出现并扩散，说明“无剩余内容可发掘”的边界判断与后续发展相反。",
+      "limitation": "“性解放”为宽泛概念，单一指标不能完全代表；性行为率下降与性态度扩展方向不一，且深度伪造研究多为其他国家或小样本，美国代表性有限。",
+      "evidence_ids": [
+        "prior-686c418fe2b679fb4083",
+        "ev-c526b588afe94fc78ab54196",
+        "prior-38c4cd23c553467704c1",
+        "ev-a9a153387729ca533ab60594",
+        "ev-333faa530a601b4d0c26c865",
+        "ev-2a881428de8b0124781d71e1"
+      ],
+      "method": "根据色情媒介展示的充分程度外推性解放边界",
+      "method_basis": "inferred",
+      "observation_end": "2025-09-09",
+      "future_time_text": "后人",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-686c418fe2b679fb4083",
+          "relation": "counter",
+          "quote": "高中生曾有性行为占比1991为54%、2001为46%、2013为47%、2019为38%、2023为32%。",
+          "publication_date": "2025",
+          "observation_end": "2023-12-31",
+          "limitation": "仅覆盖高中生群体，不能代表全部美国人；2023年数据为当年调查。"
+        },
+        {
+          "evidence_id": "ev-c526b588afe94fc78ab54196",
+          "relation": "counter",
+          "quote": "Total | 54.1 | 53.0 | 53.1 | 48.4 | 49.9 | 45.6 | 46.7 | 46.8 | 47.8 | 46.0 | 47.4 | 46.8 | 41.2 | 39.5 | 38.4 | 30.0 | 31.6",
+          "publication_date": null,
+          "observation_end": "2023-12-31",
+          "limitation": "表格数据，仅高中生；来源元数据无发表日期。"
+        },
+        {
+          "evidence_id": "prior-38c4cd23c553467704c1",
+          "relation": "boundary",
+          "quote": "同性婚姻合法化支持从1996年的27%升至2024年的69%，2022—2023为71%；同性关系道德接受度自早2010年代持续过半，但近期停止上升。",
+          "publication_date": "2024-06-24",
+          "observation_end": "2024-06-24",
+          "limitation": "态度指标与性行为率方向不同，且近期趋平，不能单独证明性解放持续扩展。"
+        },
+        {
+          "evidence_id": "ev-a9a153387729ca533ab60594",
+          "relation": "counter",
+          "quote": "deepfake pornography behaviors were considered harmful by respondents, despite nascent societal awareness.",
+          "publication_date": "2024-05-11",
+          "observation_end": "2024-05-11",
+          "limitation": "10国调查，非美国专属；深度伪造色情不等于传统性解放内容。"
+        },
+        {
+          "evidence_id": "ev-333faa530a601b4d0c26c865",
+          "relation": "counter",
+          "quote": "Since 2017, there has been a proliferation of shared open-source technologies to facilitate deepfake creation and dissemination, and a corresponding increase in cases of sexualized deepfake abuse.",
+          "publication_date": "2025-09-09",
+          "observation_end": "2025-09-09",
+          "limitation": "澳大利亚25人访谈，样本小，不能直接代表美国。"
+        },
+        {
+          "evidence_id": "ev-2a881428de8b0124781d71e1",
+          "relation": "counter",
+          "quote": "32 percent of high schoolers said they’ve ever had sexual intercourse. That’s a noticeable drop from 54 percent in 1991 and 47 percent in 2013",
+          "publication_date": "2025-06-12",
+          "observation_end": "2023-12-31",
+          "limitation": "仅高中生群体，且为自我报告。"
+        }
+      ],
+      "remaining_gap": "缺乏覆盖全美成年人、跨1991—2026年的性解放综合指标；深度伪造色情美国代表性数据不足。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000070873-000070905",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "对象为美国“性解放”内容边界是否在1991年后继续扩展；原文以色情媒介展示的充分程度（“一切暴露无遗”“再发掘就成解剖学”）作为边界代理。观察期截至2026-11-09。可用材料仅覆盖：高中生曾有性行为比例（YRBS 1991—2023）、性态度（盖洛普同性婚姻支持1996—2024）、深度伪造色情研究（2024—2025，多为多国或澳大利亚样本）。",
+      "reason": "原文主要判断是色情媒介展示内容已无剩余可发掘空间，属内容边界命题；现有材料中高中生性行为率下降与性态度趋平并不直接检验该内容边界，深度伪造研究亦非美国专属且未证明美国性解放内容边界继续扩展。主要对象缺直接证据，故暂无法判断。",
+      "limitation": "“性解放内容边界”缺乏覆盖全美、跨1991—2026年的直接操作指标；性行为率与性态度是相关但不同对象，深度伪造研究代表性有限。修订说明：原判“错误”把性行为率下降与多国深度伪造研究当作主要反证，方向与对象均不对应，现改为暂无法判断并保留缺口。",
+      "evidence_ids": [
+        "prior-686c418fe2b679fb4083",
+        "ev-c526b588afe94fc78ab54196",
+        "prior-38c4cd23c553467704c1",
+        "ev-a9a153387729ca533ab60594",
+        "ev-333faa530a601b4d0c26c865",
+        "ev-2a881428de8b0124781d71e1"
+      ],
+      "method": "根据色情媒介展示的充分程度外推性解放边界",
+      "method_basis": "inferred",
+      "observation_end": "2025-09-09",
+      "future_time_text": "后人",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-686c418fe2b679fb4083",
+          "relation": "boundary",
+          "quote": "高中生曾有性行为占比1991为54%、2001为46%、2013为47%、2019为38%、2023为32%。",
+          "publication_date": "2025",
+          "observation_end": "2023-12-31",
+          "limitation": "仅高中生性行为率，非性解放内容边界；下降方向可被读作性解放退潮，不能直接反驳“无剩余内容可发掘”。"
+        },
+        {
+          "evidence_id": "ev-c526b588afe94fc78ab54196",
+          "relation": "boundary",
+          "quote": "Total | 54.1 | 53.0 | 53.1 | 48.4 | 49.9 | 45.6 | 46.7 | 46.8 | 47.8 | 46.0 | 47.4 | 46.8 | 41.2 | 39.5 | 38.4 | 30.0 | 31.6",
+          "publication_date": null,
+          "observation_end": "2023-12-31",
+          "limitation": "表格仅高中生性行为率；来源元数据无发表日期，不能据此推断发表日。"
+        },
+        {
+          "evidence_id": "prior-38c4cd23c553467704c1",
+          "relation": "boundary",
+          "quote": "同性婚姻合法化支持从1996年的27%升至2024年的69%，2022—2023为71%；同性关系道德接受度自早2010年代持续过半，但近期停止上升。",
+          "publication_date": "2024-06-24",
+          "observation_end": "2024-06-24",
+          "limitation": "态度指标与色情媒介内容边界不同，且近期趋平，不能单独证明性解放内容持续扩展或已达边界。"
+        },
+        {
+          "evidence_id": "ev-a9a153387729ca533ab60594",
+          "relation": "boundary",
+          "quote": "deepfake pornography behaviors were considered harmful by respondents, despite nascent societal awareness.",
+          "publication_date": "2024-05-11",
+          "observation_end": "2024-05-11",
+          "limitation": "10国调查非美国专属；摘要只说明受访者认为有害、社会认知尚浅，未证明美国性解放内容边界继续扩展。"
+        },
+        {
+          "evidence_id": "ev-333faa530a601b4d0c26c865",
+          "relation": "boundary",
+          "quote": "Since 2017, there has been a proliferation of shared open-source technologies to facilitate deepfake creation and dissemination, and a corresponding increase in cases of sexualized deepfake abuse.",
+          "publication_date": "2025-09-09",
+          "observation_end": "2025-09-09",
+          "limitation": "澳大利亚25人访谈，样本小，不能直接代表美国性解放内容边界。"
+        },
+        {
+          "evidence_id": "ev-2a881428de8b0124781d71e1",
+          "relation": "boundary",
+          "quote": "32 percent of high schoolers said they’ve ever had sexual intercourse. That’s a noticeable drop from 54 percent in 1991 and 47 percent in 2013",
+          "publication_date": "2025-06-12",
+          "observation_end": "2023-12-31",
+          "limitation": "仅高中生自我报告性行为率，非内容边界指标。"
+        }
+      ],
+      "remaining_gap": "缺乏覆盖全美、跨1991—2026年的“性解放内容边界”直接操作指标（如色情媒介展示内容/形式的扩展记录）；现有性行为率、性态度与多国深度伪造研究均不能直接检验原文主要判断。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "评估王沪宁1991年著作中“美国人的性解放恐怕已达高峰，没有剩余内容供后人发掘”这一推测。对象为美国性解放/性文化边界是否在1991年后继续扩展；可观察口径包括色情媒介展示内容的边界、性行为发生率、性态度/权利变化及新媒介形式。反证包括：性行为率持续下降、性态度趋于保守、色情内容出现新的可发掘形式（如数字伪造亲密影像）等。保留“恐怕”的不确定性。",
+  "elapsed_seconds": 43.585,
+  "completed_at": "2026-11-09T10:42:27.960214+00:00"
+}

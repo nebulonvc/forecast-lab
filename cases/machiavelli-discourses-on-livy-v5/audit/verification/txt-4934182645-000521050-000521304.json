@@ -1,0 +1,48 @@
+{
+  "id": "txt-4934182645-000521050-000521304",
+  "plan": {
+    "object": "受了深冤、又没有得到令他满意的报复的人。共和国里的人，和君主之下性格坚决高傲的人，是两支。",
+    "condition": "not avenged to his satisfaction。共和国一支没有“坚决高傲”这个额外条件。君主一支才有。",
+    "quantifier": "will seek。though in doing so he bring ruin 是让步：他会去报复，即使这样做会毁灭祖国。它不是保证祖国一定被毁灭。登记的 bring ruin 若被当成必然后果，就加严了这句。",
+    "result": "在共和国里，他会寻求报复，即使因此毁灭祖国。要核验的是他去报复，不是祖国最终一定灭亡。君主一支是永不安息直到向君主泄愤。",
+    "window": "1531至2026-11-15。腓力和科利奥兰纳斯都早于1531。",
+    "counterevidence_needed": "一个在共和国里受了深冤且没有得到满意报复的人，并没有去寻求可能毁灭祖国的报复。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "private man denied justice in a republic later betrayed or ruined his own country in revenge",
+      "counter_query": "man grievously wronged by his republic accepted no revenge and the country was not ruined"
+    },
+    "adaptive_rounds": 1,
+    "adaptive": {
+      "strategy": "改查1531年之后被共和国得罪的流亡者是否带外国军队打自己的城市",
+      "queries": ["exile wronged by his republic returned with a foreign army against his own country after 1531"]
+    },
+    "kept_urls": [],
+    "dropped": "科利奥兰纳斯和瓦勒里乌斯都早于1531。1537年斯特罗齐流亡者从法国攻打佛罗伦萨，在蒙泰穆尔洛被击败，城市没有被他们毁灭。这只说明报复没有成功，而原文的 though 并不保证毁灭一定发生。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "共和国一支核验的是受冤者是否去报复。毁灭祖国是他接受的代价，不是必须观察到的结局。",
+    "reason": "两轮检索没有一条1531年之后的正文同时写出：这个人在共和国里受了深冤，没有得到令他满意的报复，然后他去寻求可能毁灭祖国的报复，或者明确没有去。1537年的流亡者攻打失败，不能当成“他不会去报复”，也不能把城市没有毁灭当成这句失败，因为 though 是让步。决定性缺口是缺少这样一个1531年之后的人。不能用古代罗马补上。",
+    "limitation": "没有新增可引用正文。",
+    "method": "先按 though 把毁灭定为代价而不是必然后果，再找出版年之后的受冤者是否去报复。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "让步句不要求祖国一定毁灭。1531年之后没有同时写出深冤、未获满意报复和是否去报复的人。"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "6411cb52-9c88-48a8-be3d-5e795fe49fec",
+  "object": "chat.completion",
+  "created": 1794201587,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000049344-000049393\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为用当时谷歌市值说明幂次法则的算术示例，非对未来的回报预测。\",\"reason\":\"该句以当时谷歌市值计算0.01%股权的静态示例，用于说明幂次法则，不构成对未来股价或回报的预测。\",\"limitation\":\"未检索当时谷歌市值与持股稀释情况，但原文语境已表明是示例而非预测。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000049616-000049661\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"“承担不起”为劝诫性修辞，缺可观测结果指标与失败阈值。\",\"reason\":\"该句是劝诫读者重视幂次法则的修辞表达，没有可操作化的结果指标或时间期限，不构成可检验预测。\",\"limitation\":\"“承担不起”含义模糊，无法界定失败标准，故归为非预测。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000050294-000050326\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为“世界上还有很多秘密”，结果为“可能出现很多有望改变世界的企业”；“秘密”与“改变世界”均无操作化定义。\",\"reason\":\"该判断以“还有很多秘密”为条件，但“秘密”和“有望改变世界”缺乏可操作化标准，无法确定条件是否满足及结果是否实现。\",\"limitation\":\"条件与结果定义均模糊，且为可能性判断，无法用客观数据检验。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000051944-000051969\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"“若目标是一生不犯错，就不应探索秘密”为规范性建议，非可检验预测。\",\"reason\":\"该句是作者关于风险规避与探索秘密关系的规范性劝告，不含可观测的未来结果判断。\",\"limitation\":\"“一生不犯错”与“探索秘密”均难操作化，且属价值建议而非事实预测。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6527,
+    "completion_tokens": 625,
+    "total_tokens": 7152,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 5759
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

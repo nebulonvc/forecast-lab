@@ -1,0 +1,804 @@
+{
+  "claim_id": "txt-1c4066fc0c-000064239-000064255",
+  "version": "search-verifier-v2",
+  "input_sha256": "69f847c719a146b860a1f60235fbb3acb4ad4e4d1b67cbadfb76e7c5310bc38c",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000064239-000064255",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "对象：1991年后美国是否再次遇到类似日本崛起的外部技术经济挑战，以及美国社会是否表现出不愿承认对手成功/优越感受挑战的反应。可观察口径：截止2026-11-09前，他国（主要是中国）在部分技术经济领域相对美国取得可测进展，且美国公众或精英对对手成功的承认程度有调查或制度记录。观察时段：2023—2025年Pew调查。",
+    "reason": "原文判断美国人还会遇到类似日本崛起的外部技术经济挑战且不愿承认对手成功。现有证据显示中国在部分技术经济领域相对美国取得进展，美国公众多数认为中国世界影响力增强，但所引调查只测量对中国影响力增长的感知与总体好感度，并未测量美国公众或精英是否承认中国在具体技术经济领域的成功，也未测量优越感受挑战后的不承认反应。后果B（不愿承认对手成功）缺少直接对应证据，不能仅凭影响力感知与负面观感并存判为部分符合或趋势符合。",
+    "limitation": "调查仅覆盖2023—2025年，不能代表1991年以来全程；态度调查不能直接证明“不愿承认”的内心机制；2025年对华负面观感从81%降至77%，与“不愿承认”方向存在张力。修订说明：复核指出原判将“感知中国影响力增长”当作“不愿承认对手成功”的支持证据，对象不匹配，故改为暂无法判断。",
+    "evidence_ids": [
+      "prior-057b9ba2642cf34a4c68",
+      "ev-925e3dcc4c9e410dd1fb05a1",
+      "ev-87e44c165da7685dc676760a",
+      "ev-88a2b59bc02d1c8d059bcc89",
+      "prior-d689c559f1fd289bc13f"
+    ],
+    "method": "从美国对日本技术经济成功的反应外推未来大国竞争心理",
+    "method_basis": "inferred",
+    "observation_end": "2025-05-01",
+    "future_time_text": "还会",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-057b9ba2642cf34a4c68",
+        "relation": "background",
+        "quote": "Pew2025美国调查：73%认为中国世界影响力增强，2024为71%；48%认为美国是第一经济强国，38%选中国。",
+        "publication_date": "2025-04-17",
+        "observation_end": "2025-04-17",
+        "limitation": "摘要性记录，未展示完整问卷与方法细节；测量的是影响力感知与经济地位判断，不是对具体技术经济领域成功的承认。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-925e3dcc4c9e410dd1fb05a1",
+        "relation": "background",
+        "quote": "52% of Americans say their country’s influence in the world is getting weaker, roughly the same share as in 2024.",
+        "publication_date": "2025-05-01",
+        "observation_end": "2025-05-01",
+        "limitation": "该文同时显示22%认为美国影响力增强、24%认为持平，态度并非一致；且为2025年单点调查，不直接测量对对手成功的承认。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-87e44c165da7685dc676760a",
+        "relation": "boundary",
+        "quote": "For the first time in five years, the share of Americans with an unfavorable opinion of China has fallen from the year before – albeit slightly, from 81% in 2024 to 77% in 2025.",
+        "publication_date": "2025-04-17",
+        "observation_end": "2025-04-17",
+        "limitation": "对华负面观感下降，与“不愿承认对手成功”方向存在张力；但总体好感度不等于对具体技术经济成功的承认，不能据此推翻或支持主要判断。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-88a2b59bc02d1c8d059bcc89",
+        "relation": "background",
+        "quote": "Roughly seven-in-ten Americans (71%) think China’s influence in the world has been growing in recent years.",
+        "publication_date": "2024-05-01",
+        "observation_end": "2024-05-01",
+        "limitation": "仅反映2024年对中国影响力增长的感知；同一调查显示81%对华持负面看法，但感知影响力增长与“不愿承认对手成功”不是同一指标。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-d689c559f1fd289bc13f",
+        "relation": "background",
+        "quote": "Pew对3576名美国成年人的调查：四成认为中国科技实力增长是美国面临的非常严重问题。",
+        "publication_date": "2023-04-12",
+        "observation_end": "2023-04-12",
+        "limitation": "摘要性记录，未展示完整问卷；仅覆盖科技威胁感知一个侧面，不测量是否承认中国在具体技术经济领域的成功。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺少直接测量美国公众或精英是否承认中国在具体技术经济领域成功（或是否表现出贬抑/不承认）的调查或制度记录；也缺少1991—2022年间的连续调查或制度记录，无法验证“还会遇到”在更长时段内的持续性。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000064239-000064255",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象：1991年后美国是否再次遇到类似日本崛起的外部技术经济挑战，以及美国社会是否表现出不愿承认对手成功/优越感受挑战的反应。可观察口径：截止2026-11-09前，他国（主要是中国）在部分技术经济领域相对美国取得可测进展，且美国公众对对手成功的承认程度有调查记录。观察时段：2023—2025年Pew调查。",
+    "reason": "原文判断美国人还会遇到类似日本崛起的外部技术经济挑战且不愿承认对手成功。观察证据显示中国在部分技术经济领域相对美国取得进展，美国公众多数认为中国世界影响力增强（2024年71%、2025年73%），同时仍有相当比例负面看待中国、视中国为最大威胁，方向与原文判断一致。但“不愿承认”这一心理成分只能由态度调查间接反映，且2025年负面观感略有缓和，故判部分符合、趋势符合。",
+    "limitation": "调查仅覆盖2023—2025年，不能代表1991年以来全程；态度调查不能直接证明“不愿承认”的内心机制；2025年对华负面观感从81%降至77%，存在与“不愿承认”方向相反的分项。",
+    "evidence_ids": [
+      "prior-057b9ba2642cf34a4c68",
+      "ev-925e3dcc4c9e410dd1fb05a1",
+      "ev-87e44c165da7685dc676760a",
+      "ev-88a2b59bc02d1c8d059bcc89",
+      "prior-d689c559f1fd289bc13f"
+    ],
+    "method": "从美国对日本技术经济成功的反应外推未来大国竞争心理",
+    "method_basis": "inferred",
+    "observation_end": "2025-05-01",
+    "future_time_text": "还会",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-057b9ba2642cf34a4c68",
+        "relation": "support",
+        "quote": "Pew2025美国调查：73%认为中国世界影响力增强，2024为71%；48%认为美国是第一经济强国，38%选中国。",
+        "publication_date": "2025-04-17",
+        "observation_end": "2025-04-17",
+        "limitation": "摘要性记录，未展示完整问卷与方法细节；仅反映2024—2025年态度。"
+      },
+      {
+        "evidence_id": "ev-925e3dcc4c9e410dd1fb05a1",
+        "relation": "support",
+        "quote": "52% of Americans say their country’s influence in the world is getting weaker, roughly the same share as in 2024.",
+        "publication_date": "2025-05-01",
+        "observation_end": "2025-05-01",
+        "limitation": "该文同时显示22%认为美国影响力增强、24%认为持平，态度并非一致；且为2025年单点调查。"
+      },
+      {
+        "evidence_id": "ev-87e44c165da7685dc676760a",
+        "relation": "boundary",
+        "quote": "For the first time in five years, the share of Americans with an unfavorable opinion of China has fallen from the year before – albeit slightly, from 81% in 2024 to 77% in 2025.",
+        "publication_date": "2025-04-17",
+        "observation_end": "2025-04-17",
+        "limitation": "对华负面观感下降，与“不愿承认对手成功”方向存在张力；但多数仍持负面看法，不能据此推翻主要判断。"
+      },
+      {
+        "evidence_id": "ev-88a2b59bc02d1c8d059bcc89",
+        "relation": "support",
+        "quote": "Roughly seven-in-ten Americans (71%) think China’s influence in the world has been growing in recent years.",
+        "publication_date": "2024-05-01",
+        "observation_end": "2024-05-01",
+        "limitation": "仅反映2024年态度；同一调查显示81%对华持负面看法，承认影响力增长与负面评价并存。"
+      },
+      {
+        "evidence_id": "prior-d689c559f1fd289bc13f",
+        "relation": "support",
+        "quote": "Pew对3576名美国成年人的调查：四成认为中国科技实力增长是美国面临的非常严重问题。",
+        "publication_date": "2023-04-12",
+        "observation_end": "2023-04-12",
+        "limitation": "摘要性记录，未展示完整问卷；仅覆盖科技威胁感知一个侧面。"
+      }
+    ],
+    "remaining_gap": "缺少1991—2022年间的连续调查或制度记录，无法验证“还会遇到”在更长时段内的持续性；也缺少直接测量“不愿承认对手成功”心理的指标，现有态度调查只能间接反映。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-26acf6acaca501c368fc",
+      "url": "https://www.ncses.nsf.gov/pubs/nsb20243/discovery-u-s-and-global-r-d",
+      "title": "ev-nsf",
+      "published_date": "2024-03-13",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-03-13",
+        "latest": "2024-03-13"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-nsf",
+      "archive_sha256": "48d44bfdae4f5f92a3f44364f67e6ca7670f659eb1c77f1e11453f89e6023f33",
+      "archive_path": "data/sources/48d44bfdae4f5f92a3f44364f67e6ca7670f659eb1c77f1e11453f89e6023f33.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-d689c559f1fd289bc13f",
+      "url": "https://www.pewresearch.org/global/2023/04/12/americans-are-critical-of-chinas-global-role-as-well-as-its-relationship-with-russia/",
+      "title": "ev-lane1-china-tech-survey",
+      "published_date": "2023-04-12",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2023-04-12",
+        "latest": "2023-04-12"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane1-china-tech-survey",
+      "archive_sha256": "a107865af77f6f9512aa6390e526fcd94fdcbcf4f7c13c4c2e4327e345a5decd",
+      "archive_path": "data/sources/lane1-china-tech-survey.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-057b9ba2642cf34a4c68",
+      "url": "https://www.pewresearch.org/global/2025/04/17/views-of-chinas-role-in-the-world/",
+      "title": "ev-r2-l1-china-recognition",
+      "published_date": "2025-04-17",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-04-17",
+        "latest": "2025-04-17"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-china-recognition",
+      "archive_sha256": "3017710211db7f15fa8271167a70ad290a55ef5fe1b013ff835fbbe271b5315c",
+      "archive_path": "data/sources/r2-l1-china-attitudes.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-925e3dcc4c9e410dd1fb05a1",
+      "url": "https://www.pewresearch.org/global/2025/05/01/the-united-states-standing-in-the-world/",
+      "resolved_url": "https://www.pewresearch.org/global/2025/05/01/the-united-states-standing-in-the-world/",
+      "title": "The United States’ standing in the world | Pew Research Center",
+      "published_date": "2025-05-01",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-05-01",
+        "latest": "2025-05-01"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:59.702615+00:00",
+      "archive_sha256": "0f451be36ad0e4cfcc16fbefbbb2b3a687d041aa5240ad8c59ec10f687964c60",
+      "archive_path": "jobs/61b28988bbfea242d383e5ab/0f451be36ad0e4cfcc16fbefbbb2b3a687d041aa5240ad8c59ec10f687964c60.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-87e44c165da7685dc676760a",
+      "url": "https://www.pewresearch.org/global/2025/04/17/negative-views-of-china-have-softened-slightly-among-americans/",
+      "resolved_url": "https://www.pewresearch.org/global/2025/04/17/negative-views-of-china-have-softened-slightly-among-americans/",
+      "title": "Negative Views of China Down Slightly in US in 2025 | Pew Research Center",
+      "published_date": "2025-04-17",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-04-17",
+        "latest": "2025-04-17"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:59.702763+00:00",
+      "archive_sha256": "a5df698a8e92f14a1f743863a30dc7bcbbe85dde7a97102e898985af1fadb13c",
+      "archive_path": "jobs/61b28988bbfea242d383e5ab/a5df698a8e92f14a1f743863a30dc7bcbbe85dde7a97102e898985af1fadb13c.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-88a2b59bc02d1c8d059bcc89",
+      "url": "https://www.pewresearch.org/global/2024/05/01/assessments-of-china-and-its-role-in-the-world/",
+      "resolved_url": "https://www.pewresearch.org/global/2024/05/01/assessments-of-china-and-its-role-in-the-world/",
+      "title": "US views of China's role in the world | Pew Research Center",
+      "published_date": "2024-05-01",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-05-01",
+        "latest": "2024-05-01"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:59.702853+00:00",
+      "archive_sha256": "2e487d0ce16c7f8127b3a13848fdae02a8e4c7cff28bc48fd55ccc755c8b5940",
+      "archive_path": "jobs/61b28988bbfea242d383e5ab/2e487d0ce16c7f8127b3a13848fdae02a8e4c7cff28bc48fd55ccc755c8b5940.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "Pew Research 2025 Americans China world influence economic power survey 73% 38% first economy",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Pew Research Americans views China technological economic success recognition 2024 2025 survey",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Pew Research 2025 Americans China world influence growing 73% first economic power 38% survey",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Pew Research 2025 Americans unfavorable views China softened 77% recognize China global influence survey",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少直接测量美国公众或精英是否承认中国在具体技术经济领域成功（或是否表现出贬抑/不承认）的调查或制度记录；也缺少1991—2022年间的连续调查或制度记录，无法验证“还会遇到”在更长时段内的持续性。",
+  "source_statuses": [
+    {
+      "url": "https://www.pewresearch.org/global/2025/05/01/the-united-states-standing-in-the-world/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.pewresearch.org/global/2025/04/17/negative-views-of-china-have-softened-slightly-among-americans/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.pewresearch.org/global/2024/05/01/assessments-of-china-and-its-role-in-the-world/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "dad425c4574ae307f380f1474258836a2c6274708f921592ec0643f94a46b6ae"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "3d45a4f8e1a983a773b7bf5ea9febe77",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "98563d61acf0261f73e33a8e78b73f4f",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "a18b5df0a677b56b29e0c5fb59a351bbccb2c03bf3a8ea25250715e2891e9b14"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "d839ca6ccb6d40fe729a32c3107ff753",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "83d1b0f8a55f50535fd10579597e2f4af3dce7c93de4bd6f4c52556d0e5022e3"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e515ac3cdbb7f7f996c33f50176c0eb4",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "516eef2ed777c625462eb380b8af6a53",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "8d15492bddb7bac3f2ebccc8d0cf7dea2d30b8b524580298de2b0a4022c655ed"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "2beb8bc8c62645104972dbd2eb7f1f276b6908b7e03b6229593b971fedf5b358"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "8d2833ef639ec602d6fd37def3b234160bfb2e5acf38da9692be698e7f7d1af0"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "ae1ce2a13585b64af8134129e993e4a84da37d49d27063cdc33809e7fd59c6ea"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "7230d9a4e7b88931f8daf25c74b30cc101b6ee263f506112ee44ca368a5e8df5"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-26acf6acaca501c368fc",
+        "source_bytes": 154,
+        "shown_bytes": 154,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-d689c559f1fd289bc13f",
+        "source_bytes": 115,
+        "shown_bytes": 115,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-057b9ba2642cf34a4c68",
+        "source_bytes": 169,
+        "shown_bytes": 169,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-925e3dcc4c9e410dd1fb05a1",
+        "source_bytes": 4854,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-87e44c165da7685dc676760a",
+        "source_bytes": 5801,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-88a2b59bc02d1c8d059bcc89",
+        "source_bytes": 7666,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-26acf6acaca501c368fc",
+        "source_bytes": 154,
+        "shown_bytes": 154,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-d689c559f1fd289bc13f",
+        "source_bytes": 115,
+        "shown_bytes": 115,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-057b9ba2642cf34a4c68",
+        "source_bytes": 169,
+        "shown_bytes": 169,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-925e3dcc4c9e410dd1fb05a1",
+        "source_bytes": 4854,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-87e44c165da7685dc676760a",
+        "source_bytes": 5801,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-88a2b59bc02d1c8d059bcc89",
+        "source_bytes": 7666,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-26acf6acaca501c368fc",
+        "source_bytes": 154,
+        "shown_bytes": 154,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-d689c559f1fd289bc13f",
+        "source_bytes": 115,
+        "shown_bytes": 115,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-057b9ba2642cf34a4c68",
+        "source_bytes": 169,
+        "shown_bytes": 169,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-925e3dcc4c9e410dd1fb05a1",
+        "source_bytes": 4854,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-87e44c165da7685dc676760a",
+        "source_bytes": 5801,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-88a2b59bc02d1c8d059bcc89",
+        "source_bytes": 7666,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-26acf6acaca501c368fc",
+        "source_bytes": 154,
+        "shown_bytes": 154,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-d689c559f1fd289bc13f",
+        "source_bytes": 115,
+        "shown_bytes": 115,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-057b9ba2642cf34a4c68",
+        "source_bytes": 169,
+        "shown_bytes": 169,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-925e3dcc4c9e410dd1fb05a1",
+        "source_bytes": 4854,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-87e44c165da7685dc676760a",
+        "source_bytes": 5801,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-88a2b59bc02d1c8d059bcc89",
+        "source_bytes": 7666,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000064239-000064255",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "evidence_support",
+          "reason": "建议把“美国公众多数认为中国世界影响力增强”当作“美国社会不愿承认对手成功”的支持证据，但所引调查只测量对中国影响力增长的感知，并未测量是否承认中国在技术经济领域成功或优越感受挑战；感知影响力增长与“不愿承认”不是同一指标，不能直接支撑该分项。",
+          "quote_ref": "q7",
+          "source_quote": "Roughly seven-in-ten Americans (71%) think China’s influence in the world has been growing in recent years.",
+          "evidence_id": "ev-88a2b59bc02d1c8d059bcc89",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议判“部分符合、趋势符合”，但reason只说明中国影响力感知上升与对华负面观感并存，没有指出后果B（美国不愿承认对手成功/优越感受挑战）哪些具体部分已实现、哪些未实现；同时把2025年负面观感缓和列为反向分项，却未说明该分项如何构成实质分化。按口径，主要结果未获直接证据时应保留具体未定，不能仅凭背景态度相关性设置trend_aligned=true。",
+          "quote_ref": "q3",
+          "source_quote": "可观察口径：截止2026-11-09前，他国（主要是中国）在部分技术经济领域相对美国取得可测进展，且美国公众对对手成功的承认程度有调查记录。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充直接测量美国公众或精英是否承认中国在具体技术经济领域成功（或是否表现出贬抑/不承认）的调查或制度记录，并据此明确后果B的实现与未实现部分；若只有影响力感知与总体好感度数据，应改为具体未定而非部分符合/趋势符合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000064239-000064255",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000064239-000064255",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象：1991年后美国是否再次遇到类似日本崛起的外部技术经济挑战，以及美国社会是否表现出不愿承认对手成功/优越感受挑战的反应。可观察口径：截止2026-11-09前，他国（主要是中国）在部分技术经济领域相对美国取得可测进展，且美国公众对对手成功的承认程度有调查记录。观察时段：2023—2025年Pew调查。",
+      "reason": "原文判断美国人还会遇到类似日本崛起的外部技术经济挑战且不愿承认对手成功。观察证据显示中国在部分技术经济领域相对美国取得进展，美国公众多数认为中国世界影响力增强（2024年71%、2025年73%），同时仍有相当比例负面看待中国、视中国为最大威胁，方向与原文判断一致。但“不愿承认”这一心理成分只能由态度调查间接反映，且2025年负面观感略有缓和，故判部分符合、趋势符合。",
+      "limitation": "调查仅覆盖2023—2025年，不能代表1991年以来全程；态度调查不能直接证明“不愿承认”的内心机制；2025年对华负面观感从81%降至77%，存在与“不愿承认”方向相反的分项。",
+      "evidence_ids": [
+        "prior-057b9ba2642cf34a4c68",
+        "ev-925e3dcc4c9e410dd1fb05a1",
+        "ev-87e44c165da7685dc676760a",
+        "ev-88a2b59bc02d1c8d059bcc89",
+        "prior-d689c559f1fd289bc13f"
+      ],
+      "method": "从美国对日本技术经济成功的反应外推未来大国竞争心理",
+      "method_basis": "inferred",
+      "observation_end": "2025-05-01",
+      "future_time_text": "还会",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-057b9ba2642cf34a4c68",
+          "relation": "support",
+          "quote": "Pew2025美国调查：73%认为中国世界影响力增强，2024为71%；48%认为美国是第一经济强国，38%选中国。",
+          "publication_date": "2025-04-17",
+          "observation_end": "2025-04-17",
+          "limitation": "摘要性记录，未展示完整问卷与方法细节；仅反映2024—2025年态度。"
+        },
+        {
+          "evidence_id": "ev-925e3dcc4c9e410dd1fb05a1",
+          "relation": "support",
+          "quote": "52% of Americans say their country’s influence in the world is getting weaker, roughly the same share as in 2024.",
+          "publication_date": "2025-05-01",
+          "observation_end": "2025-05-01",
+          "limitation": "该文同时显示22%认为美国影响力增强、24%认为持平，态度并非一致；且为2025年单点调查。"
+        },
+        {
+          "evidence_id": "ev-87e44c165da7685dc676760a",
+          "relation": "boundary",
+          "quote": "For the first time in five years, the share of Americans with an unfavorable opinion of China has fallen from the year before – albeit slightly, from 81% in 2024 to 77% in 2025.",
+          "publication_date": "2025-04-17",
+          "observation_end": "2025-04-17",
+          "limitation": "对华负面观感下降，与“不愿承认对手成功”方向存在张力；但多数仍持负面看法，不能据此推翻主要判断。"
+        },
+        {
+          "evidence_id": "ev-88a2b59bc02d1c8d059bcc89",
+          "relation": "support",
+          "quote": "Roughly seven-in-ten Americans (71%) think China’s influence in the world has been growing in recent years.",
+          "publication_date": "2024-05-01",
+          "observation_end": "2024-05-01",
+          "limitation": "仅反映2024年态度；同一调查显示81%对华持负面看法，承认影响力增长与负面评价并存。"
+        },
+        {
+          "evidence_id": "prior-d689c559f1fd289bc13f",
+          "relation": "support",
+          "quote": "Pew对3576名美国成年人的调查：四成认为中国科技实力增长是美国面临的非常严重问题。",
+          "publication_date": "2023-04-12",
+          "observation_end": "2023-04-12",
+          "limitation": "摘要性记录，未展示完整问卷；仅覆盖科技威胁感知一个侧面。"
+        }
+      ],
+      "remaining_gap": "缺少1991—2022年间的连续调查或制度记录，无法验证“还会遇到”在更长时段内的持续性；也缺少直接测量“不愿承认对手成功”心理的指标，现有态度调查只能间接反映。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000064239-000064255",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "对象：1991年后美国是否再次遇到类似日本崛起的外部技术经济挑战，以及美国社会是否表现出不愿承认对手成功/优越感受挑战的反应。可观察口径：截止2026-11-09前，他国（主要是中国）在部分技术经济领域相对美国取得可测进展，且美国公众或精英对对手成功的承认程度有调查或制度记录。观察时段：2023—2025年Pew调查。",
+      "reason": "原文判断美国人还会遇到类似日本崛起的外部技术经济挑战且不愿承认对手成功。现有证据显示中国在部分技术经济领域相对美国取得进展，美国公众多数认为中国世界影响力增强，但所引调查只测量对中国影响力增长的感知与总体好感度，并未测量美国公众或精英是否承认中国在具体技术经济领域的成功，也未测量优越感受挑战后的不承认反应。后果B（不愿承认对手成功）缺少直接对应证据，不能仅凭影响力感知与负面观感并存判为部分符合或趋势符合。",
+      "limitation": "调查仅覆盖2023—2025年，不能代表1991年以来全程；态度调查不能直接证明“不愿承认”的内心机制；2025年对华负面观感从81%降至77%，与“不愿承认”方向存在张力。修订说明：复核指出原判将“感知中国影响力增长”当作“不愿承认对手成功”的支持证据，对象不匹配，故改为暂无法判断。",
+      "evidence_ids": [
+        "prior-057b9ba2642cf34a4c68",
+        "ev-925e3dcc4c9e410dd1fb05a1",
+        "ev-87e44c165da7685dc676760a",
+        "ev-88a2b59bc02d1c8d059bcc89",
+        "prior-d689c559f1fd289bc13f"
+      ],
+      "method": "从美国对日本技术经济成功的反应外推未来大国竞争心理",
+      "method_basis": "inferred",
+      "observation_end": "2025-05-01",
+      "future_time_text": "还会",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-057b9ba2642cf34a4c68",
+          "relation": "background",
+          "quote": "Pew2025美国调查：73%认为中国世界影响力增强，2024为71%；48%认为美国是第一经济强国，38%选中国。",
+          "publication_date": "2025-04-17",
+          "observation_end": "2025-04-17",
+          "limitation": "摘要性记录，未展示完整问卷与方法细节；测量的是影响力感知与经济地位判断，不是对具体技术经济领域成功的承认。"
+        },
+        {
+          "evidence_id": "ev-925e3dcc4c9e410dd1fb05a1",
+          "relation": "background",
+          "quote": "52% of Americans say their country’s influence in the world is getting weaker, roughly the same share as in 2024.",
+          "publication_date": "2025-05-01",
+          "observation_end": "2025-05-01",
+          "limitation": "该文同时显示22%认为美国影响力增强、24%认为持平，态度并非一致；且为2025年单点调查，不直接测量对对手成功的承认。"
+        },
+        {
+          "evidence_id": "ev-87e44c165da7685dc676760a",
+          "relation": "boundary",
+          "quote": "For the first time in five years, the share of Americans with an unfavorable opinion of China has fallen from the year before – albeit slightly, from 81% in 2024 to 77% in 2025.",
+          "publication_date": "2025-04-17",
+          "observation_end": "2025-04-17",
+          "limitation": "对华负面观感下降，与“不愿承认对手成功”方向存在张力；但总体好感度不等于对具体技术经济成功的承认，不能据此推翻或支持主要判断。"
+        },
+        {
+          "evidence_id": "ev-88a2b59bc02d1c8d059bcc89",
+          "relation": "background",
+          "quote": "Roughly seven-in-ten Americans (71%) think China’s influence in the world has been growing in recent years.",
+          "publication_date": "2024-05-01",
+          "observation_end": "2024-05-01",
+          "limitation": "仅反映2024年对中国影响力增长的感知；同一调查显示81%对华持负面看法，但感知影响力增长与“不愿承认对手成功”不是同一指标。"
+        },
+        {
+          "evidence_id": "prior-d689c559f1fd289bc13f",
+          "relation": "background",
+          "quote": "Pew对3576名美国成年人的调查：四成认为中国科技实力增长是美国面临的非常严重问题。",
+          "publication_date": "2023-04-12",
+          "observation_end": "2023-04-12",
+          "limitation": "摘要性记录，未展示完整问卷；仅覆盖科技威胁感知一个侧面，不测量是否承认中国在具体技术经济领域的成功。"
+        }
+      ],
+      "remaining_gap": "缺少直接测量美国公众或精英是否承认中国在具体技术经济领域成功（或是否表现出贬抑/不承认）的调查或制度记录；也缺少1991—2022年间的连续调查或制度记录，无法验证“还会遇到”在更长时段内的持续性。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象：1991年后美国是否再次遇到“类似日本崛起”的外部技术经济挑战，以及美国社会是否表现出不愿承认对手成功/优越感受挑战的反应。可观察口径：截止2026-11-09前，他国在部分技术经济领域相对美国取得可测进展，且美国公众或精英对对手成功的承认程度有调查或制度记录。反证：若美国公众/精英明确承认对手成功且无显著贬抑，或外部挑战未出现，则削弱原判断。心理机制不单独作为结果成立门槛，但“类似”的轻蔑/不承认成分需与实测态度区分。",
+  "elapsed_seconds": 35.924,
+  "completed_at": "2026-11-09T10:33:26.737783+00:00"
+}

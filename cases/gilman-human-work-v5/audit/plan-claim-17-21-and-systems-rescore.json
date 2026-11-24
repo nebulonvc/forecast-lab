@@ -1,0 +1,71 @@
+{
+  "written_at": "2026-11-20T01:55:30Z",
+  "order": "本文件先于评估。劳动制度是评分修订，不新增检索，也不倒写。",
+  "systems_rescore": {
+    "id": "txt-37a5a0ec54-000401361-000401615",
+    "rule": "both soon outgrown 是两个命名制度的合取。工资制度有直接反证就可以使合取不成立。奴隶制度没有直接的终止观测：公约是承诺，强迫劳动不是 chattel。没有直接分化证据时，不能保留部分符合。",
+    "scoring_evidence": "ev-wb-wage-api-2018-2024 only",
+    "not_scoring": [
+      "ev-slavery-unts-19550707",
+      "ev-ilo-slavery-20220912"
+    ]
+  },
+  "claims": [
+    {
+      "id": "txt-37a5a0ec54-000202098-000202200",
+      "scope": "条件是人类认出共同意识并实际去满足共同需要。后果是灵魂得平安、健康、长得对。灵魂平安不是精神病患病率。条件未知时，只有后果被直接观察到才能给有边界的判断。",
+      "queries": [
+        {
+          "role": "support",
+          "query": "common provision of basic needs and a direct measure of peace of mind dated official"
+        },
+        {
+          "role": "counter",
+          "query": "WHO common mental disorders prevalence increase dated"
+        }
+      ]
+    },
+    {
+      "id": "txt-37a5a0ec54-000202201-000202282",
+      "scope": "灵魂向上的延伸将永远带着未实现的渴望。always 是持续，不是全称人群。一个时点的未完成目标不能单独证明永远，也不能因为短而不能评价。",
+      "queries": [
+        {
+          "role": "support",
+          "query": "survey share of people with unfulfilled life goals year"
+        },
+        {
+          "role": "counter",
+          "query": "survey majority report life goals fulfilled dated"
+        }
+      ]
+    },
+    {
+      "id": "txt-37a5a0ec54-000238963-000239035",
+      "scope": "it 是上文的机器。条件是我们认识机器的真正用途。后果是纯粹的福，没有掺入的害。条件未知时，伤害不能把整句条件预测判成错误，也没有正面后果就不能判部分符合。",
+      "queries": [
+        {
+          "role": "support",
+          "query": "official productivity gain attributed to machinery social benefit dated"
+        },
+        {
+          "role": "counter",
+          "query": "ILO occupational fatalities machinery or industrial accidents dated"
+        }
+      ]
+    },
+    {
+      "id": "txt-37a5a0ec54-000243750-000243819",
+      "scope": "these facilities 是上文的钢轨和车辆，也就是铁路。条件是把移动看成首要的社会必需。后果是鼓励尽可能广泛的使用。widest possible 不是运量上升本身。",
+      "queries": [
+        {
+          "role": "support",
+          "query": "world rail passenger kilometers increase official UIC or ITF statistics year"
+        },
+        {
+          "role": "counter",
+          "query": "passenger rail decline or fares restrict use official statistics dated"
+        }
+      ]
+    }
+  ]
+}

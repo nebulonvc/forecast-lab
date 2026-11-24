@@ -1,0 +1,28 @@
+{
+  "id": "ec016fa2-b001-4b0b-97a1-9a4af90a1d95",
+  "object": "chat.completion",
+  "created": 1794201449,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000044454-000044484\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"原文判断“目标明确的企业总是被低估”，未给出估值指标、比较基准、时间窗口或可识别企业集合；观察时段为出版后至cutoff（2014—2026-11-09），但无可操作化对象。\",\"reason\":\"该句是带条件语境的概括性估值判断，缺少可核验的指标与对象，无法用现有证据检验其方向。\",\"limitation\":\"“目标明确”“被低估”均未操作化，且无任何verified证据；不能凭个别企业案例或事后股价反推整体命题。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000045859-000045894\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文描述风险投资家判断无误时可获得约20%收益，属于对基金收益分配惯例/合约安排的说明，非可检验的未来预测。\",\"reason\":\"该句以“如果……就会……”表述行业惯例，不是对特定未来事件的结果预测，按非预测排除。\",\"limitation\":\"条件句形式易被误判为预测，但内容为一般性收益分成说明，无时间终点与可观测对象。\",\"evidence_ids\":[],\"method\":\"条件性判断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7538,
+    "completion_tokens": 368,
+    "total_tokens": 7906,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 6770
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

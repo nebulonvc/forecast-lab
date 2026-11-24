@@ -1,0 +1,28 @@
+{
+  "id": "50a70be3-21f1-4217-9cb7-381885a48165",
+  "object": "chat.completion",
+  "created": 1794201439,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000015114-000015153\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为2014年出版的回忆性叙述，作者回顾1999—2000年PayPal的获利预期；无出版时点之后的未来预测窗口。\",\"reason\":\"该句是作者对1999—2000年PayPal商业模式的回顾性判断，叙述时结果已知，不构成面向出版后未来的预测。\",\"limitation\":\"回忆性文本无法作为同期原始预测来源；且原文未给出获利的具体指标与期限。\",\"evidence_ids\":[],\"method\":\"基于用户基数和手续费收入的商业推理\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000015178-000015187\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为2014年出版的回忆性叙述，作者回顾2000年前后互联网泡沫即将破灭的判断；无出版时点之后的未来预测窗口。\",\"reason\":\"该句是作者对2000年互联网繁荣终结的事后回顾，叙述时泡沫破灭已发生，不构成面向出版后未来的预测。\",\"limitation\":\"回忆性文本无法作为同期原始预测来源；原文未给出“即将”的具体时间口径。\",\"evidence_ids\":[],\"method\":\"基于对市场形势的判断\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7798,
+    "completion_tokens": 352,
+    "total_tokens": 8150,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 7798
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

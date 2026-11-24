@@ -1,0 +1,28 @@
+{
+  "id": "785d052d-beab-43dc-b3fd-2133381d8d35",
+  "object": "chat.completion",
+  "created": 1794201305,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-00011\",\"predictions\":[{\"quote\":\"如果你认为自己的未来是明确的，那么提前了解未来，并且努力打造未来就是有意义的。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"若认为未来明确，则提前了解并努力打造未来有意义。\",\"expanded_claim\":\"如果一个人认为自己的未来是明确的，那么他提前了解未来并努力打造未来就是有意义的。\",\"reference_resolutions\":[{\"expression\":\"你\",\"referent\":\"读者\",\"support_quote\":\"你可能期望未来清晰可见\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"如果你认为自己的未来是明确的\",\"method\":\"条件性判断\",\"method_basis\":\"explicit\",\"reason\":\"以“如果……那么……”形式给出对未来行动意义的条件性判断。\"},{\"quote\":\"但如果你脑海里的未来只是一团迷雾，无法预测，那你就会萌生放弃掌控它的念头。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"若认为未来不可预测，人会产生放弃掌控未来的念头。\",\"expanded_claim\":\"如果一个人认为自己的未来只是一团迷雾、无法预测，那么他就会萌生放弃掌控未来的念头。\",\"reference_resolutions\":[{\"expression\":\"你\",\"referent\":\"读者\",\"support_quote\":\"你可能期望未来清晰可见\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"如果你脑海里的未来只是一团迷雾，无法预测\",\"method\":\"条件性判断\",\"method_basis\":\"explicit\",\"reason\":\"以“如果……那么……”形式预测未来不确定态度导致的心理后果。\"},{\"quote\":\"当人们缺少具体的实施计划，他们就会依照惯例，尽量把多种选择组合起来。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"缺少具体计划时，人们会依惯例组合多种选择。\",\"expanded_claim\":\"当人们缺少具体的实施计划时，他们就会依照惯例，尽量把多种选择组合起来。\",\"reference_resolutions\":[{\"expression\":\"人们\",\"referent\":\"缺少具体实施计划的人\",\"support_quote\":\"当人们缺少具体的实施计划\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"当人们缺少具体的实施计划\",\"method\":\"条件性判断\",\"method_basis\":\"explicit\",\"reason\":\"以“当……就……”形式预测缺少计划时的行为倾向。\"},{\"quote\":\"一个目标明确的人往往会选择一件最该做的事，并专心去做好这一件事。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"目标明确的人往往会选择并专心做好一件最该做的事。\",\"expanded_claim\":\"一个目标明确的人往往会选择一件最该做的事，并专心去做好这一件事。\",\"reference_resolutions\":[{\"expression\":\"一个目标明确的人\",\"referent\":\"有明确愿景的人\",\"support_quote\":\"而一个明确的愿景可以坚定人的信念\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"倾向性判断\",\"method_basis\":\"explicit\",\"reason\":\"用“往往会”表达对目标明确者行为的一般性预测。\"},{\"quote\":\"对未来不明确的悲观主义者不知道不可避免的衰退会加快还是放慢，是毁灭性的还是平缓的。\",\"kind\":\"unclear\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"对未来不明确的悲观主义者无法判断衰退的快慢与破坏程度。\",\"expanded_claim\":\"对未来不明确的悲观主义者不知道不可避免的衰退会加快还是放慢，也不知道衰退是毁灭性的还是平缓的。\",\"reference_resolutions\":[{\"expression\":\"不可避免的衰退\",\"referent\":\"欧洲面临的衰退\",\"support_quote\":\"现在整个欧元区都处在一场慢性危机中\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"描述认知状态而非对结果的预测，是否算预测不明确。\"},{\"quote\":\"中国公众也知道“冬天”即将来临。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"中国公众预期困难时期即将到来。\",\"expanded_claim\":\"中国公众也知道困难时期（“冬天”）即将来临。\",\"reference_resolutions\":[{\"expression\":\"“冬天”\",\"referent\":\"困难时期或经济衰退\",\"support_quote\":\"中国公众也知道“冬天”即将来临\"}],\"unresolved_references\":[],\"time_text\":\"即将\",\"condition_text\":\"\",\"method\":\"转述公众预期\",\"method_basis\":\"inferred\",\"reason\":\"转述中国公众对未来困难将至的判断，属于预测性预期。\"},{\"quote\":\"老一辈的中国孩童时都经历过饥荒，因此展望未来时，总会考虑到天灾。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"老一辈中国人因经历饥荒，展望未来时总会考虑天灾。\",\"expanded_claim\":\"老一辈的中国人在孩童时都经历过饥荒，因此他们展望未来时，总会考虑到天灾。\",\"reference_resolutions\":[{\"expression\":\"老一辈的中国\",\"referent\":\"老一辈的中国人\",\"support_quote\":\"老一辈的中国孩童时都经历过饥荒\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"因果推断\",\"method_basis\":\"explicit\",\"reason\":\"以“因此”推出老一辈中国人展望未来时的倾向性预测。\"},{\"quote\":\"如果计划缜密，工作努力，未来会比现在更好。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"计划缜密且工作努力，未来会更好。\",\"expanded_claim\":\"在对未来明确的乐观主义者眼中，如果计划缜密、工作努力，未来会比现在更好。\",\"reference_resolutions\":[{\"expression\":\"未来\",\"referent\":\"未来社会或生活\",\"support_quote\":\"在对未来明确的乐观主义者眼中\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"如果计划缜密，工作努力\",\"method\":\"条件性判断\",\"method_basis\":\"explicit\",\"reason\":\"以“如果……会……”形式给出对未来改善的条件性预测。\"},{\"quote\":\"但是如果放在今天，会有人一开始就把这样的想象当回事儿吗？\",\"kind\":\"unclear\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"今天人们可能不会一开始就认真对待宏大想象。\",\"expanded_claim\":\"如果把约翰·雷伯那样的宏大计划放在今天，可能不会有人一开始就把这样的想象当回事儿。\",\"reference_resolutions\":[{\"expression\":\"这样的想象\",\"referent\":\"约翰·雷伯改造旧金山湾区的宏大计划\",\"support_quote\":\"一个名叫约翰·雷伯的加利福尼亚人设想对整个旧金山湾区的自然地理进行改造\"}],\"unresolved_references\":[],\"time_text\":\"今天\",\"condition_text\":\"如果放在今天\",\"method\":\"反问\",\"method_basis\":\"inferred\",\"reason\":\"以反问表达对今天人们态度的推测，是否构成预测不明确。\"},{\"quote\":\"一个在校教师提出的富有雄心的计划肯定会被当成怪诞想法，弃之不用；稍有权势的人提出的长远愿景都会被嘲笑为狂妄自大。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"今天在校教师的雄心计划会被弃用，有权势者的长远愿景会被嘲笑。\",\"expanded_claim\":\"在今天，一个在校教师提出的富有雄心的计划肯定会被当成怪诞想法而弃之不用；稍有权势的人提出的长远愿景都会被嘲笑为狂妄自大。\",\"reference_resolutions\":[{\"expression\":\"今天\",\"referent\":\"当代（作者写作时）\",\"support_quote\":\"而今天，一个在校教师提出的富有雄心的计划肯定会被当成怪诞想法\"}],\"unresolved_references\":[],\"time_text\":\"今天\",\"condition_text\":\"\",\"method\":\"对比推断\",\"method_basis\":\"explicit\",\"reason\":\"用“肯定会被”“都会被”预测当代社会对宏大计划的态度。\"}]}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3297,
+    "completion_tokens": 1726,
+    "total_tokens": 5023,
+    "prompt_tokens_details": {
+      "cached_tokens": 3072
+    },
+    "prompt_cache_hit_tokens": 3072,
+    "prompt_cache_miss_tokens": 225
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

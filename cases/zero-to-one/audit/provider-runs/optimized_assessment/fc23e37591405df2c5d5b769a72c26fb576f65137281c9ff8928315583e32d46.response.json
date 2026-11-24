@@ -1,0 +1,28 @@
+{
+  "id": "eb56549c-9236-4919-864d-48b3e7b6f8c8",
+  "object": "chat.completion",
+  "created": 1794201591,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000069114-000069159\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为ZocDoc扩大规模并让大多数美国执业医师参与；结果为成为美国医保行业基础性公用事业。观察窗口截至2026-09-29，仅见平台说明，未见加入医师比例或公共事业地位的独立验证。\",\"reason\":\"原文是明确的条件性预测，触发条件为“大多数执业医师参与其中”。现有证据只说明医生可自行选择使用平台，未披露加入比例，条件是否成立无法确认，结果也无独立证据。\",\"limitation\":\"缺少同口径的加入医师数与全美执业医师分母，平台自称基础设施不能替代条件成立或公共事业结果的验证。\",\"evidence_ids\":[\"extra-zocdoc-2026\"],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":\"2026-09-29\",\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4647,
+    "completion_tokens": 222,
+    "total_tokens": 4869,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3879
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

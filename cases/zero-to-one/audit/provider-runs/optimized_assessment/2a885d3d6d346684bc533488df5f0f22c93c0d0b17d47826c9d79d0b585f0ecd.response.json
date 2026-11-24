@@ -1,0 +1,28 @@
+{
+  "id": "420b4626-0956-42d6-9dc8-6dd68f74b96e",
+  "object": "chat.completion",
+  "created": 1794201580,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000005022-000005054\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为“中国诞生像Facebook、谷歌、苹果、特斯拉这样征服全球的公司和产品”；结果为彼得·蒂尔常来中国参加网络峰会活动。观察窗口为2014年圣诞夜至cutoff 2026-11-09。\",\"reason\":\"该判断以“中国诞生征服全球的公司和产品”为触发条件，并带“也许”的不确定语气；现有证据未显示该条件已明确发生，也未提供蒂尔来华参会频率的可核验数据。\",\"limitation\":\"条件是否满足缺乏可操作化标准（“征服全球”难以量化），且无蒂尔来华活动的系统记录；不能以相似事件替代触发条件。\",\"evidence_ids\":[\"main-trade\"],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"那个时候（中国诞生征服全球的公司和产品时）\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4446,
+    "completion_tokens": 237,
+    "total_tokens": 4683,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 4446
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

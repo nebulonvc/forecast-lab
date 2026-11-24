@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000531458-000531571",
+  "plan": {
+    "object": "解除臣民武装，并向臣民榨取金钱、用钱买眼前安全的君主或共和国。同段的例子是佛罗伦萨、威尼斯和法国国王向瑞士与英国纳贡。",
+    "condition": "in seasons of danger。祸乱要出现在真实危险之中。平时的安静不进入结果。",
+    "quantifier": "must in the end。一次危险中的可补救占领，不能单独反驳；一次资源耗尽且祸乱无法补救，也不能单独把 must 判成成立。",
+    "result": "登记变化是 incurable mischief。同句还有耗尽资源。无法补救是祸乱不能被这个国家自己挽回，不是任何一次被占领。",
+    "window": "1531至2026-11-15。作者举的佛罗伦萨和威尼斯纳贡是当时的做法，不把1531年之前的雇佣兵时代拿来核验这句的最终结果。",
+    "counterevidence_needed": "一个解除臣民武装并用钱买安全的国家，在危险中没有出现无法补救的祸乱。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "government disarmed citizens paid mercenaries or tribute and collapsed when invaded",
+      "counter_query": "state that disarmed its people and hired foreign troops survived a major invasion"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://bnl.public.lu/en/a-la-une/agenda/2026/paix-inachevee/2.html"],
+    "dropped": "佛罗伦萨改用雇佣兵的材料停在十五世纪以前。罗马雇佣兵早于1531。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "in the end",
+    "observation_end": null,
+    "evidence_ids": ["ev-bnl-luxembourg-1867"],
+    "scope": "必须同时有解除臣民武装、用钱买安全，以及危险中无法补救的祸乱。",
+    "reason": "卢森堡国家图书馆页写，1867年5月11日《伦敦条约》使卢森堡非军事化并永久中立，大国保证其安全；1914年8月2日德国入侵并占领到1918年；1940年5月10日再次入侵，流亡政府站到同盟国一边，1944年对男性实行义务兵役。这是解除武装之后发生了危险，但页面没有写它向臣民榨取金钱去买安全。占领后来结束，国家继续存在，并重新武装，所以页面也没有把祸乱写成无法补救。决定性缺口是：没有一条正文同时写出榨取金钱买安全，以及危险中的祸乱无法补救或可以补救。",
+    "limitation": "页面没有单独的出版日。条约日是1867年5月11日。两次入侵日写在正文里。",
+    "method": "先核对解除武装和用钱买安全是否同时成立，再看危险中的祸乱是否无法补救。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "卢森堡被解除武装并两度被占，但没有写出用钱买安全，占领后来也结束了。"
+  }
+}

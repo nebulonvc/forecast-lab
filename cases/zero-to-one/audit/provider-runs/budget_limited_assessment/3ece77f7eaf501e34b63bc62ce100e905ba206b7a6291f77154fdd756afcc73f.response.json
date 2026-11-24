@@ -1,0 +1,28 @@
+{
+  "id": "9b37714f-0e24-43c2-8462-832a25168ca5",
+  "object": "chat.completion",
+  "created": 1794201442,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000028279-000028305\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为对2014年初领英245亿美元市值的解释性陈述，称该估值只有纳入预测未来现金流才有意义；无可独立检验的未来现金流数值、期限或结果指标。\",\"reason\":\"该句是对当时估值的解释性评论，不是可独立检验的未来预测。\",\"limitation\":\"原文未给出未来现金流的具体数值或期限，无法作为预测评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"未来\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000028756-000028800\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为“把短期增长看成重中之重”；结果为“错过10年后公司能否存在这一问题”。原文未指定具体公司、指标或可观察触发事件，无法在截止日前操作化检验。\",\"reason\":\"这是条件性警示，触发条件未明确落到具体主体或事件，无法判断是否发生。\",\"limitation\":\"原文未给出可检验的公司样本、指标或期限起点，条件状态未知。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"10年之后\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7634,
+    "completion_tokens": 323,
+    "total_tokens": 7957,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 6866
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "de741205-27c1-42c6-b563-99eabacb69dd",
+  "object": "chat.completion",
+  "created": 1794201593,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000080986-000081019\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"对过去投资决策的反事实假设，非未来预测\",\"reason\":\"原文是对创始人基金公司过去投资清洁技术公司的反事实反思（若当时评估技术或可避免不良投资），并非面向未来的预测。\",\"limitation\":\"反事实条件句不构成可检验的未来预测。\",\"evidence_ids\":[],\"method\":\"基于团队经验的假设性推断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000082434-000082449\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"对既有失败清洁技术公司的回顾性反问，非新预测\",\"reason\":\"原文在列举常青太阳能、盛产太阳能等已破产案例后反问结局，属回顾性解释，未提出可检验的未来预测。\",\"limitation\":\"反问句为修辞性总结，缺乏明确预测对象与时间。\",\"evidence_ids\":[],\"method\":\"基于竞争分析的推断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4984,
+    "completion_tokens": 289,
+    "total_tokens": 5273,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 4216
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

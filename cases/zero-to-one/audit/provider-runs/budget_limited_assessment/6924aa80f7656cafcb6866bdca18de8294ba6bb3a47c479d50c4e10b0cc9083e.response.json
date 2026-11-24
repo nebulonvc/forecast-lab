@@ -1,0 +1,28 @@
+{
+  "id": "290fffa3-6673-4081-8bb0-2ca0ce0d7a52",
+  "object": "chat.completion",
+  "created": 1794201439,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000015188-000015212\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为作者回忆2000年前后PayPal融资时对投资者态度的判断，属于过去叙述，不是出版时点（2014年）之后的未来预测。\",\"reason\":\"该句是作者回顾当时“不指望投资者相信我们能渡过难关”的心态，描述的是已发生情境中的态度判断，而非面向未来的可验证预测。\",\"limitation\":\"原文未给出可独立核验的投资者信心指标，且属回忆性叙述，不宜作为预测评分。\",\"evidence_ids\":[],\"method\":\"基于对当时投资者态度的判断\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"即将到来\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000015436-000015454\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文“我们刚一完成交易，网络泡沫就破灭了”是对2000年3月融资后泡沫破灭的事后叙述，不是预测。\",\"reason\":\"该句用完成时叙述已发生的网络泡沫破灭，属于过去事实陈述，抽取将其误作预测。\",\"limitation\":\"原文只说明时间先后，未提供可核验的独立指标，且非未来预测。\",\"evidence_ids\":[],\"method\":\"事后叙述\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7775,
+    "completion_tokens": 348,
+    "total_tokens": 8123,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 7775
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

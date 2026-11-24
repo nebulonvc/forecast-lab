@@ -1,0 +1,28 @@
+{
+  "id": "94a5e4f6-0248-42b3-8daa-0354c17c3793",
+  "object": "chat.completion",
+  "created": 1794201441,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000020461-000020477\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为2003年前法国大厨贝尔纳·卢瓦索的条件性表态（“如果失掉一颗星，我就会去自杀”），同段已叙述其2003年自杀及餐厅等级被调低；属出版前已发生事件的引述，非面向未来的可检验预测。\",\"reason\":\"该句是作者引述大厨的条件性自我表态，且同段已交代其死亡结局，属于回顾性叙述而非新增预测。\",\"limitation\":\"条件性表态是否等同于真实预测存疑；且原文未明确自杀与降级之间的因果，仅并列叙述。\",\"evidence_ids\":[],\"method\":\"条件性表态\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4292,
+    "completion_tokens": 213,
+    "total_tokens": 4505,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3524
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

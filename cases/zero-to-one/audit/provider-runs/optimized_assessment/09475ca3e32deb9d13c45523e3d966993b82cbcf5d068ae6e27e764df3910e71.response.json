@@ -1,0 +1,28 @@
+{
+  "id": "fecbb7d2-4f85-4d45-902b-139dc2bfc979",
+  "object": "chat.completion",
+  "created": 1794201580,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000019634-000019650\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性判断：若餐饮创业者忽视激烈竞争、只强调菜馆细微特色，则该生意无法持续；原文未给出具体餐厅、期限或可核验指标，无法在观察窗口内操作化。\",\"reason\":\"该句是带明确条件的经验性断言，条件是否发生及对应具体生意均未确定，无法用外部证据评分。\",\"limitation\":\"原文为类比性论述，未提供可追踪的餐厅样本或时间范围；不能把一般餐饮倒闭率直接套用于未指明的“你的生意”。\",\"evidence_ids\":[],\"method\":\"类比推理\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4376,
+    "completion_tokens": 194,
+    "total_tokens": 4570,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 4376
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

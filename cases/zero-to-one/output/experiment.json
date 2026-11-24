@@ -1,0 +1,879 @@
+{
+  "execution_started_at": "2026-11-09T05:10:36.817696+00:00",
+  "book": "从0到1",
+  "source": "reading-library/03-投资人和经济长周期/04-从0到1-彼得·蒂尔.txt",
+  "deepseek_requests": 246,
+  "native_cost": null,
+  "wall_time_scope": "first audit timestamp through final report; earlier repository inspection excluded",
+  "finished_at": "2026-11-09T05:22:34.424843+00:00",
+  "wall_seconds_from_first_audit": 717.607147,
+  "initial_execution_note": "Codex native; DeepSeek key absent",
+  "execution": "DeepSeek API extraction/assessment + Codex-native full-text comparison, web research and final review",
+  "runs": [
+    {
+      "name": "production_extract",
+      "directory": "cases/zero-to-one/output/txt_import",
+      "requests": 27,
+      "responses": 27,
+      "parse_errors": 26,
+      "summary": {
+        "complete": false,
+        "requested": 27,
+        "validated": 1,
+        "failures": [
+          {
+            "batch": 8,
+            "error": "cached_response_invalid_b4b1e8dd03d0"
+          },
+          {
+            "batch": 2,
+            "error": "cached_response_invalid_f16d3d915966"
+          },
+          {
+            "batch": 7,
+            "error": "cached_response_invalid_56dbf08386d2"
+          },
+          {
+            "batch": 4,
+            "error": "cached_response_invalid_b48d024eda33"
+          },
+          {
+            "batch": 6,
+            "error": "cached_response_invalid_1f399bb07eab"
+          },
+          {
+            "batch": 3,
+            "error": "cached_response_invalid_71959c717d72"
+          },
+          {
+            "batch": 13,
+            "error": "cached_response_invalid_71b9492cb507"
+          },
+          {
+            "batch": 5,
+            "error": "cached_response_invalid_d32b302a8d81"
+          },
+          {
+            "batch": 12,
+            "error": "cached_response_invalid_a17df65041b5"
+          },
+          {
+            "batch": 15,
+            "error": "cached_response_invalid_d063d9bc19ff"
+          },
+          {
+            "batch": 11,
+            "error": "cached_response_invalid_d6bb1093952e"
+          },
+          {
+            "batch": 10,
+            "error": "cached_response_invalid_cdc97a9c9dc9"
+          },
+          {
+            "batch": 16,
+            "error": "cached_response_invalid_bf15d87930bd"
+          },
+          {
+            "batch": 20,
+            "error": "cached_response_invalid_3b5dcdc89c43"
+          },
+          {
+            "batch": 9,
+            "error": "cached_response_invalid_fb4315006879"
+          },
+          {
+            "batch": 26,
+            "error": "cached_response_invalid_ddfedf0af5c5"
+          },
+          {
+            "batch": 24,
+            "error": "cached_response_invalid_3e29ee882b95"
+          },
+          {
+            "batch": 17,
+            "error": "cached_response_invalid_da4061c9125c"
+          },
+          {
+            "batch": 22,
+            "error": "cached_response_invalid_1371ea7023d6"
+          },
+          {
+            "batch": 19,
+            "error": "cached_response_invalid_ea709ac1fad2"
+          },
+          {
+            "batch": 14,
+            "error": "cached_response_invalid_c23d25c71004"
+          },
+          {
+            "batch": 23,
+            "error": "cached_response_invalid_ffc49d61a779"
+          },
+          {
+            "batch": 25,
+            "error": "cached_response_invalid_51d478cead7f"
+          },
+          {
+            "batch": 21,
+            "error": "cached_response_invalid_bdf027fd5b7d"
+          },
+          {
+            "batch": 18,
+            "error": "cached_response_invalid_3802d120859b"
+          },
+          {
+            "batch": 27,
+            "error": "cached_response_invalid_a5a94f7f9333"
+          }
+        ],
+        "imported": false,
+        "estimated_cost_CNY": 0.4292296,
+        "estimated_off_peak_cost_CNY": 0.2146148,
+        "price_basis": "conservative peak estimate; provider billing not checked",
+        "unknown_or_inflight_reserved_CNY": 0,
+        "total_tokens": 120050,
+        "completed_stages": 27,
+        "cache_hits_this_run": 0,
+        "active_requests": 0,
+        "peak_concurrency_this_run": 12,
+        "elapsed_seconds": 19.6
+      }
+    },
+    {
+      "name": "budget_limited_comparison",
+      "directory": ".context/speedup/benchmark20/output/txt_import",
+      "requests": 10,
+      "responses": 10,
+      "parse_errors": 9,
+      "summary": {
+        "complete": false,
+        "requested": 27,
+        "validated": 1,
+        "failures": [
+          {
+            "batch": 11,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 12,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 13,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 14,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 15,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 16,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 17,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 18,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 19,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 20,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 21,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 22,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 23,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 24,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 25,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 26,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 27,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 4,
+            "error": "cached_response_invalid_b48d024eda33"
+          },
+          {
+            "batch": 2,
+            "error": "cached_response_invalid_f16d3d915966"
+          },
+          {
+            "batch": 6,
+            "error": "cached_response_invalid_1f399bb07eab"
+          },
+          {
+            "batch": 8,
+            "error": "cached_response_invalid_b4b1e8dd03d0"
+          },
+          {
+            "batch": 5,
+            "error": "cached_response_invalid_d32b302a8d81"
+          },
+          {
+            "batch": 3,
+            "error": "cached_response_invalid_71959c717d72"
+          },
+          {
+            "batch": 10,
+            "error": "cached_response_invalid_cdc97a9c9dc9"
+          },
+          {
+            "batch": 9,
+            "error": "cached_response_invalid_fb4315006879"
+          },
+          {
+            "batch": 7,
+            "error": "cached_response_invalid_56dbf08386d2"
+          }
+        ],
+        "imported": false,
+        "estimated_cost_CNY": 0.12039008,
+        "estimated_off_peak_cost_CNY": 0.06019504,
+        "price_basis": "conservative peak estimate; provider billing not checked",
+        "unknown_or_inflight_reserved_CNY": 0,
+        "total_tokens": 46426,
+        "completed_stages": 10,
+        "cache_hits_this_run": 0,
+        "active_requests": 0,
+        "peak_concurrency_this_run": 10,
+        "elapsed_seconds": 13.85
+      }
+    },
+    {
+      "name": "comparison_20",
+      "directory": ".context/speedup/benchmark20cold",
+      "requests": 27,
+      "responses": 27,
+      "parse_errors": 25,
+      "summary": {
+        "complete": false,
+        "requested": 27,
+        "validated": 2,
+        "failures": [
+          {
+            "batch": 2,
+            "error": "cached_response_invalid_f16d3d915966"
+          },
+          {
+            "batch": 7,
+            "error": "cached_response_invalid_56dbf08386d2"
+          },
+          {
+            "batch": 15,
+            "error": "cached_response_invalid_d063d9bc19ff"
+          },
+          {
+            "batch": 6,
+            "error": "cached_response_invalid_1f399bb07eab"
+          },
+          {
+            "batch": 8,
+            "error": "cached_response_invalid_b4b1e8dd03d0"
+          },
+          {
+            "batch": 3,
+            "error": "cached_response_invalid_71959c717d72"
+          },
+          {
+            "batch": 20,
+            "error": "cached_response_invalid_3b5dcdc89c43"
+          },
+          {
+            "batch": 19,
+            "error": "cached_response_invalid_ea709ac1fad2"
+          },
+          {
+            "batch": 12,
+            "error": "cached_response_invalid_a17df65041b5"
+          },
+          {
+            "batch": 16,
+            "error": "cached_response_invalid_bf15d87930bd"
+          },
+          {
+            "batch": 17,
+            "error": "cached_response_invalid_da4061c9125c"
+          },
+          {
+            "batch": 9,
+            "error": "cached_response_invalid_fb4315006879"
+          },
+          {
+            "batch": 26,
+            "error": "cached_response_invalid_ddfedf0af5c5"
+          },
+          {
+            "batch": 22,
+            "error": "cached_response_invalid_1371ea7023d6"
+          },
+          {
+            "batch": 11,
+            "error": "cached_response_invalid_d6bb1093952e"
+          },
+          {
+            "batch": 24,
+            "error": "cached_response_invalid_3e29ee882b95"
+          },
+          {
+            "batch": 13,
+            "error": "cached_response_invalid_71b9492cb507"
+          },
+          {
+            "batch": 21,
+            "error": "cached_response_invalid_bdf027fd5b7d"
+          },
+          {
+            "batch": 23,
+            "error": "cached_response_invalid_ffc49d61a779"
+          },
+          {
+            "batch": 14,
+            "error": "cached_response_invalid_c23d25c71004"
+          },
+          {
+            "batch": 5,
+            "error": "cached_response_invalid_d32b302a8d81"
+          },
+          {
+            "batch": 25,
+            "error": "cached_response_invalid_51d478cead7f"
+          },
+          {
+            "batch": 27,
+            "error": "cached_response_invalid_a5a94f7f9333"
+          },
+          {
+            "batch": 10,
+            "error": "cached_response_invalid_cdc97a9c9dc9"
+          },
+          {
+            "batch": 18,
+            "error": "cached_response_invalid_3802d120859b"
+          }
+        ],
+        "imported": false,
+        "estimated_cost_CNY": 0.28714072,
+        "estimated_off_peak_cost_CNY": 0.14357036,
+        "price_basis": "conservative peak estimate; provider billing not checked",
+        "unknown_or_inflight_reserved_CNY": 0,
+        "total_tokens": 121418,
+        "completed_stages": 27,
+        "cache_hits_this_run": 0,
+        "active_requests": 0,
+        "peak_concurrency_this_run": 20,
+        "elapsed_seconds": 13.66
+      }
+    },
+    {
+      "name": "budget_limited_assessment",
+      "directory": "cases/zero-to-one/output/parallel_run",
+      "requests": 88,
+      "responses": 88,
+      "parse_errors": 1,
+      "summary": {
+        "complete": false,
+        "requested": 213,
+        "extracted": 0,
+        "reused_extractions": 109,
+        "assessed": 109,
+        "mode": "assess_only",
+        "complete_scope": "full_existing_candidate_set",
+        "full_book_complete": false,
+        "failures": [
+          {
+            "batch": 7,
+            "error": "cached_response_invalid_25e43cb55e2c"
+          },
+          {
+            "batch": 86,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 89,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 90,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 91,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 92,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 93,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 94,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 95,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 96,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 97,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 98,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 99,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 100,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 102,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 103,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 104,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 105,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 106,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 107,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 108,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 109,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 110,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 111,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 112,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 113,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 114,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 115,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 116,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 117,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 118,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 119,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 120,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 121,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 122,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 123,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 124,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 125,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 126,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 127,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 128,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 129,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 130,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 131,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 132,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 133,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 134,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 135,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 136,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 137,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 138,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 139,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 140,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 141,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 142,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 143,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 144,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 145,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 146,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 147,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 148,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 149,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 150,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 151,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 152,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 153,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 154,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 155,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 156,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 157,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 158,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 159,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 160,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 161,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 162,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 163,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 164,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 165,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 166,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 167,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 168,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 169,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 170,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 171,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 172,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 173,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 174,
+            "error": "estimated_budget_reservation_exceeded"
+          },
+          {
+            "batch": 175,
+            "error": "estimated_budget_reservation_exceeded"
+          }
+        ],
+        "estimated_cost_CNY": 0.98988296,
+        "estimated_off_peak_cost_CNY": 0.49494148,
+        "price_basis": "conservative peak estimate; provider billing not checked",
+        "unknown_or_inflight_reserved_CNY": 0,
+        "total_tokens": 480979,
+        "completed_stages": 88,
+        "cache_hits_this_run": 0,
+        "active_requests": 0,
+        "peak_concurrency_this_run": 20,
+        "elapsed_seconds": 14.78
+      }
+    },
+    {
+      "name": "optimized_assessment",
+      "directory": "cases/zero-to-one/output/parallel_optimized",
+      "requests": 94,
+      "responses": 94,
+      "parse_errors": 9,
+      "summary": {
+        "complete": false,
+        "requested": 213,
+        "extracted": 0,
+        "reused_extractions": 179,
+        "assessed": 179,
+        "mode": "assess_only",
+        "complete_scope": "full_existing_candidate_set",
+        "full_book_complete": false,
+        "failures": [
+          {
+            "batch": 4,
+            "error": "cached_response_invalid_4b30c165a863"
+          },
+          {
+            "batch": 43,
+            "error": "cached_response_invalid_f93a183d031f"
+          },
+          {
+            "batch": 48,
+            "error": "cached_response_invalid_00c2e61f6c06"
+          },
+          {
+            "batch": 50,
+            "error": "cached_response_invalid_0846ddaf2110"
+          },
+          {
+            "batch": 31,
+            "error": "cached_response_invalid_045992136b80"
+          },
+          {
+            "batch": 86,
+            "error": "cached_response_invalid_12de15af3358"
+          },
+          {
+            "batch": 76,
+            "error": "cached_response_invalid_a99c00698f8d"
+          },
+          {
+            "batch": 92,
+            "error": "cached_response_invalid_1db9dfdfc386"
+          },
+          {
+            "batch": 90,
+            "error": "cached_response_invalid_3b66d5ee701c"
+          }
+        ],
+        "estimated_cost_CNY": 1.193912,
+        "estimated_off_peak_cost_CNY": 0.596956,
+        "price_basis": "conservative peak estimate; provider billing not checked",
+        "unknown_or_inflight_reserved_CNY": 0,
+        "total_tokens": 541159,
+        "completed_stages": 94,
+        "cache_hits_this_run": 0,
+        "active_requests": 0,
+        "peak_concurrency_this_run": 20,
+        "elapsed_seconds": 20.74
+      }
+    }
+  ],
+  "deepseek_tokens": 1310032,
+  "estimated_deepseek_CNY_range": [
+    1.51027768,
+    3.02055536
+  ],
+  "bill_verified": false,
+  "web_search_cost": null,
+  "production_API_seconds": 40.34,
+  "full_book_speedup_30_percent_proven": false,
+  "benchmark_scope": "Single 12/20 cold-client request comparison; provider prompt-cache differences; neither includes source repairs/research/review. No matched full end-to-end baseline.",
+  "mechanical_tests": "47 passed; old case check 326 claims/216 evidence; git diff --check passed",
+  "matched_offline_packaging": [
+    {
+      "share_contexts": false,
+      "candidates": 213,
+      "batches": 193,
+      "bytes": 4167596
+    },
+    {
+      "share_contexts": true,
+      "candidates": 213,
+      "batches": 94,
+      "bytes": 2175715
+    }
+  ],
+  "reassessment": {
+    "date": "2026-11-09",
+    "report": "output/reassessment/复核报告.md",
+    "initial_all_unknown_accepted_as_research": false,
+    "added_deepseek_calls": 0,
+    "forecasts": 107,
+    "decided": 5,
+    "unresolved": 102,
+    "without_bound_evidence": 74,
+    "research_complete": false
+  }
+}

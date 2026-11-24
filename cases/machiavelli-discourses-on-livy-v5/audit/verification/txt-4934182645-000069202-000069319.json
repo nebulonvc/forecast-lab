@@ -1,0 +1,51 @@
+{
+  "id": "txt-4934182645-000069202-000069319",
+  "plan": {
+    "object": "被给予制度、立足点是维持自身而不扩大的国家。不是任何后来扩张的共和国，也不是威尼斯或斯巴达这两个专名。",
+    "condition": "should necessity require its enlargement：必要要求它扩大。野心或主动征服不算这个条件。",
+    "quantifier": "will：根基会被从下面挖掉，覆灭很快发生。不是“有时”。quickly没有日历长度。",
+    "result": "foundations will be cut from below it, and its downfall quickly ensue。",
+    "window": "1531至2026-11-15。原文没有另写期限。",
+    "counterevidence_needed": "出版后确有这种制度，并且必要迫使它扩大，但覆灭没有很快发生。出版前的斯巴达或1509年阿尼亚代洛不能充当这个窗口的证据。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "republic instituted not to expand forced enlargement downfall Venice Sparta after 1531",
+      "counter_query": "Venetian Republic survived mainland expansion until 1797 without immediate collapse"
+    },
+    "round_2_strategy": "改对象和时间：1531年之后法律禁止扩大、后来又被必要迫使扩大的共和国；以及1531年之后威尼斯是被迫扩大还是丧失领土。",
+    "round_2_queries": [
+      "Swiss Confederation constitution forbade territorial expansion survived independence 1648 1798",
+      "Venice after 1531 territorial acquisitions Cyprus Crete republic ended 12 May 1797"
+    ],
+    "kept_urls": [
+      "https://www.treccani.it/enciclopedia/colonie-d-oltremare_(Storia-di-Venezia)/",
+      "https://en.wikipedia.org/wiki/Fall_of_the_Republic_of_Venice"
+    ],
+    "dropped": "标准电子书和论文复述的是马基雅维利自己的句子，不用来核验。瑞士页面没有写宪法禁止扩大。维基百科页面没有出版日，只采用正文里的事件日。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-treccani-colonie-1537", "ev-wiki-venice-1797"],
+    "scope": "对象是立足点为不扩大的国家；条件是必要要求它扩大；结果是根基被挖掉并且很快覆灭。",
+    "reason": "1996年特雷卡尼条目写1537至1541年的战争只带来损失，海上帝国收缩，没有写一部禁止扩大的制度后来被必要迫使扩大。维基百科正文写共和国在1797年5月12日解散，但没有把这次解散写成该条件之后的很快覆灭。出版前的斯巴达和1509年战败不拿来核验。决定性缺口是：已存档正文里没有同时出现“制度立足点是不扩大”和“出版后必要迫使扩大”。",
+    "limitation": "1797年的解散是邻近事实，条件未对齐，不能当成反证或正证。维基百科页没有出版日。特雷卡尼只有1996年。",
+    "method": "先找出版后被迫扩大并很快覆灭的不扩张共和国，再找被迫扩大却没有很快覆灭的例子；两者都要先对齐条件。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "pass",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "未把威尼斯或瑞士的名称当成必要条件已经满足。条件没有对齐，所以不给正确、错误或部分符合。"
+  }
+}

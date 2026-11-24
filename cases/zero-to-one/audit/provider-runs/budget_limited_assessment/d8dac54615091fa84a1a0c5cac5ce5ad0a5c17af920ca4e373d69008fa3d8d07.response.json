@@ -1,0 +1,28 @@
+{
+  "id": "00c5277d-7b12-414d-a263-c560b3bccc92",
+  "object": "chat.completion",
+  "created": 1794201447,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000039673-000039681\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"原文以“在这样一个金融化的世界中”为条件，描述企业家卖公司后资金可能经银行、机构投资人、股票、股息/回购循环流动；未给出可核验的量化指标或时间窗口，观察截止2026-11-09。\",\"reason\":\"该判断是条件性、以“大概”表述的资金循环机制，不是可独立核验的单一可观测结果；缺少证据判断该循环是否按原文顺序发生。\",\"limitation\":\"原文未定义金融化程度、循环完成标准或观察期限，无法用事后数据透明操作化；且资金流向机制不能由个别交易证明。\",\"evidence_ids\":[],\"method\":\"以假想资金循环描述金融化世界中企业家卖公司后的可能去向\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4291,
+    "completion_tokens": 231,
+    "total_tokens": 4522,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3523
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,74 @@
+{
+  "plan_written_at": "2026-11-20T10:23:18Z",
+  "plan_file": "audit/search-plans.jsonl",
+  "note": "Interface returned no tool_call_id. Search snippets are not evidence. Only saved files are bodies.",
+  "sent": [
+    {
+      "tool": "WebSearch",
+      "query": "National Archives Bill of Rights transcript ratified December 15 1791"
+    },
+    {
+      "tool": "WebSearch",
+      "query": "Tariff Act July 4 1789 federal customs duties states prohibited imposts"
+    },
+    {
+      "tool": "WebSearch",
+      "query": "National Archives Constitution ratified June 21 1788 New Hampshire ninth state"
+    },
+    {
+      "tool": "curl",
+      "url": "https://www.archives.gov/founding-docs/bill-of-rights-transcript",
+      "http": 200,
+      "file": "data/sources/bill-of-rights.html"
+    },
+    {
+      "tool": "curl",
+      "url": "https://www.archives.gov/founding-docs/constitution/how-did-it-happen",
+      "http": 200,
+      "file": "data/sources/constitution-timeline.html",
+      "use": "Does not print June 21, 1788. Not used as ratification evidence."
+    },
+    {
+      "tool": "curl",
+      "url": "https://www.archives.gov/milestone-documents/hamilton-tariff",
+      "http": 404
+    },
+    {
+      "tool": "curl",
+      "url": "https://www.cbp.gov/about/history/timeline/timeline-date/july-4-1789",
+      "http": 403
+    },
+    {
+      "tool": "curl",
+      "url": "https://constitution.congress.gov/constitution/article-1/",
+      "http": 403
+    },
+    {
+      "tool": "curl",
+      "url": "https://www.loc.gov/collections/continental-congress-and-constitutional-convention-from-1774-to-1789/articles-and-essays/timeline/1787-to-1788/",
+      "http": 403
+    },
+    {
+      "tool": "WebFetch",
+      "url": "https://www.loc.gov/collections/continental-congress-and-constitutional-convention-from-1774-to-1789/articles-and-essays/timeline/1787-to-1788/",
+      "result": "timeout, no body saved"
+    },
+    {
+      "tool": "WebFetch",
+      "url": "https://prologue.blogs.archives.gov/2013/06/21/the-real-constitution-day/",
+      "result": "text returned; curl then saved the page"
+    },
+    {
+      "tool": "curl",
+      "url": "https://prologue.blogs.archives.gov/2013/06/21/the-real-constitution-day/",
+      "http": 200,
+      "file": "data/sources/prologue-1788.html"
+    },
+    {
+      "tool": "WebFetch",
+      "url": "https://www.cbp.gov/about/history/timeline/timeline-date/july-4-1789",
+      "result": "text saved after curl 403",
+      "file": "data/sources/cbp-july-4-1789-webfetch.txt"
+    }
+  ]
+}

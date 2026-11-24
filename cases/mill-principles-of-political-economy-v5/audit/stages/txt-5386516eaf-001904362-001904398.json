@@ -1,0 +1,124 @@
+{
+  "id": "txt-5386516eaf-001904362-001904398",
+  "assess": {
+    "id": "txt-5386516eaf-001904362-001904398",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "机械发明将来会实现它们本性中的人类命运上的大改变。前文对照的是一日劳苦还没有减轻。",
+    "reason": "工作周从70小时降到41小时只是工时。它不是这句的人类命运变化，也不是一日劳苦的全部。",
+    "limitation": "旧的部分符合已撤回。对象不一致时不保留分数。",
+    "evidence_ids": [
+      "ev-greenwood-hours-2006",
+      "ev-ilo-hours"
+    ],
+    "method": "复核后撤回计分。原支持与反证仍留在修订轨迹，不当作同对象分数。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "futurity",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-greenwood-hours-2006",
+        "quote": "In 1830 the average workweek in the market place was 70 hours. This had plunged to just 41 hours by 2002",
+        "relation": "boundary",
+        "limitation": "工时下降。",
+        "observation_end": "2002-12-31",
+        "publication_date": "2006-02",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-ilo-hours",
+        "quote": "Workers in developing countries are less productive and receive a lower wage per hour, and so need to work longer hours in order to earn enough income to be able to survive",
+        "relation": "boundary",
+        "limitation": "发展中国家仍需长工时。",
+        "observation_end": "2010-12-31",
+        "publication_date": null,
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      }
+    ],
+    "remaining_gap": "缺机械发明是否改变了作者所说的人类命运，或是否减轻了一日劳苦本身的同对象证据。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001904362-001904398",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-ilo-hours"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-ilo-hours"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "revision_trail": {
+    "withdrawn_verdict": "部分符合",
+    "withdrawn_reason": "市场工作周从1830年70小时降到2002年41小时。发展中国家工人仍因小时产出和工资较低而需要更长工时。劳苦在工业化国家减轻了，没有成为普遍状态。",
+    "failed_review": {
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "工时换成了命运变化和劳苦的全部对象。",
+          "source_quote": "and in their futurity to accomplish.",
+          "evidence_id": null
+        }
+      ],
+      "remaining_gap": "缺机械发明是否改变了作者所说的人类命运，或是否减轻了一日劳苦本身的同对象证据。"
+    },
+    "why": "工时换成了命运变化和劳苦的全部对象。"
+  },
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "workweek fell from 70 to 41 hours"
+      },
+      {
+        "role": "counter",
+        "query": "developing-country workers still need long hours"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://www.nber.org/system/files/working_papers/w11629/w11629.pdf",
+      "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/@ed_protect/@protrav/@travail/documents/publication/wcms_247974.pdf"
+    ],
+    "reason": "工时下降但不普遍。"
+  }
+}

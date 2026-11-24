@@ -1,0 +1,28 @@
+{
+  "id": "793dfbaa-c031-4e45-a720-1e1b3e4e02e5",
+  "object": "chat.completion",
+  "created": 1794201444,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000033527-000033577\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性判断：若公司可被归结为已有公司的敌对者，则不会成为垄断企业；原文未给出可操作化的“敌对者”定义、垄断判定标准或观察期限，且无外部证据。\",\"reason\":\"该句是带明确if条件的因果性断言，触发条件“被归结为已有公司的敌对者”在原文中未定义且无具体案例可核验。缺少可操作化标准与证据，无法判断条件是否满足及结果是否成立。\",\"limitation\":\"“敌对者”与“垄断企业”均无量化口径，且无任何verified证据可用于检验；不能以文中纳普斯特等轶事替代系统验证。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4304,
+    "completion_tokens": 221,
+    "total_tokens": 4525,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3536
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

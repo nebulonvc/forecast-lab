@@ -1,0 +1,28 @@
+{
+  "id": "164ec28b-c6e9-4dfb-88ab-3ab492a6cf20",
+  "object": "chat.completion",
+  "created": 1794201441,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000017894-000017928\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为规范性建议/告诫，无具体可观测对象、指标或时间窗口；不操作化为可检验预测。\",\"reason\":\"该句是作者对创业者的建议，隐含判断但未提出可验证的未来事件或趋势。\",\"limitation\":\"规范性建议不构成可评分预测；即使现实中存在反例也不能直接判定其错误。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4286,
+    "completion_tokens": 158,
+    "total_tokens": 4444,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3518
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

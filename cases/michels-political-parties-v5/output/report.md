@@ -1,0 +1,1260 @@
+# 政党：现代民主中寡头化倾向的社会学研究：五类评估
+
+证据截止日：2026-11-15。已处理 51/51 条全书候选；尚未处理 0 条。
+
+累计已完成全量抽取复核 51 条；保留旧抽样抽取 0 条，两者不重复相加。
+
+已补充扩展观点 51 条；其中 0 条仍有待确认的代指、对象或范围，已逐条标记。扩展观点不自动改变原有评估。
+
+本轮沿用候选清单逐条核查，不保证没有漏抽。PDF记录使用PDF页码，TXT记录使用原始文本行号。扩展观点是依据所给语境的解释，原文短引文另行保留。
+
+|类别|父记录数|
+|---|---:|
+|正确|3|
+|趋势符合|0|
+|部分符合|18|
+|错误|7|
+|暂无法判断|19|
+|排除：非预测|4|
+|排除：重复|0|
+|尚未处理|0|
+
+可判定覆盖率：28/47 = 59.6%。
+绑定外部证据的预测：47/47；未绑定：0。绑定不代表证据充分或研究已完成。
+“正确”占已判定记录：3/28 = 10.7%。
+
+趋势符合 0 条单独列出，与部分符合互不重复；它表示已有持续证据支持方向，最终结果仍待验证。
+
+以上是回顾性的记录统计，不是独立预测准确率或事前预测能力检验。部分符合不折算成 0.5 分；暂无法判断不算错误。跨章相关判断尚未完全去重，同一父记录也不因多个观察而增加命中次数。没有作者明确给出的概率，不计算 Brier 分数。
+
+## 评估口径
+
+正确：在列明口径和观察窗口内，主要可检验内容符合。趋势符合：已有持续客观证据支持预测方向，最终结果尚待验证。部分符合：具体分项部分成立、部分不符，或合理口径产生不同结果。错误：所评内容与已发生结果相反。暂无法判断：无法确认趋势或结果、条件不明、对象难测或证据仍不足；缺证据不能自动换成趋势符合或部分符合。
+
+明确未来终点尚未到达时，可以评价已有趋势，并保留原期限；这类进展单列为趋势符合，不作终局正确。单次波动、未来预测数据或仅有因果解释不算趋势证据。真正的前提条件仍须确认成立，作者的因果解释不自动增加为额外触发门槛。无期限持续判断可评价已观察阶段，不能证明永久成立。出版年只是未找到发言日期时的研究起点代理，出版前已知事实不是新的预见力证据。
+
+“不太可能”没有被转换为数值概率；低概率事件发生可记录为方向反例，不能据单次结果证明概率失准。官方声明证明立场或制度安排，不自动证明实际成效；同时出现的政策与结果不自动证明因果。
+
+## 暂无法判断的原因
+
+|原因类型|记录数|
+|---|---:|
+|条件未确认或未触发|11|
+|定义或可测量性不足|1|
+|证据不足|7|
+时间窗口来源：原文写出 9 条，隐含的出版年至截止日 42 条。
+
+
+## 逐条结果
+
+### 1. TXT 第 869—874 行 · 部分符合
+
+记录：`txt-4ef752b19c-000027920-000028303`
+
+原文：Such occurrences serve to confirm the experience that the conservatives also endeavour to regulate their actions in conformity
+with the fundamental principle of modern politics, a principle
+destined to replace the religious dictum that many are called
+
+but few are chosen, and to replace also the psychological theory
+that ideals are accessible solely to a minority of choice spirits
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：现代政治中以控制群众取得权力的原则，将取代少数精英被拣选或独占理想的旧原则。
+
+
+口径与范围：现代政党群众动员；1911后全球；观察群众政党与旧精英统治的相对角色；反证为群众控制原则未扩展；观察窗1911-01-01至2026-11-15。
+判定：竞争政党通过候选人、纲领和选举争取代表权，群众选举渠道确实成为政治竞争的重要方式；但卡特尔党研究同时指出群众党模式衰退及公众联系减弱，不能认定精英逻辑已被完全取代。
+限制：资料主要讨论民主政党的制度形态，不是全球统治原则的统一时间序列；群众党组织与争取群众选票并非同一概念。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-d8f66a509f95](https://www.dbnl.org/tekst/daal024stat01_01/daal024stat01_01_0010.php)；[ev-a91bb8b0acae](https://czasopisma.uksw.edu.pl/p/article/download/2378/2225/3772)
+
+### 2. TXT 第 959—962 行 · 排除：非预测
+
+记录：`txt-4ef752b19c-000031728-000031961`
+
+原文：Since the inauguration of universal suf-i
+frage and the consequent prospect that there will in the near,
+future be a majority of socialist tendencies among the electorate
+or in the Lower House, many liberals, so Roscher affirms, have
+
+时间窗口：原文写出（future）。
+
+扩展观点（解释，非原文）：在普选引入之后，选民或下院不久将出现社会主义倾向的多数。
+
+
+口径与范围：保留reported候选，不纳入作者可核验预测
+判定：仓库确定性归属规则将未获作者明确背书的reported预测降为unclear；保留原候选，不作作者预测判分。
+限制：并非因重复、含糊或不利结果而人工降级。战争增补章节按1915年识别，不以1911年误算已发生史实。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：claims_from_results原归属规则（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 3. TXT 第 1672—1675 行 · 暂无法判断
+
+记录：`txt-4ef752b19c-000064662-000064896`
+
+原文：The system here sketched is clear and concise, and it might
+seem at the first glance that its practical application would
+involve no serious difficulties. But if put to the test it would
+fail to fulfil the expectations of its creator.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：若实行 Rittinghausen 所提的分区全民直接立法制度，它将无法实现创制者对人民自治的期待。
+
+
+口径与范围：Rittinghausen分区直接立法制度；真正实施为条件；观察人民自治；反证为制度成功；观察窗1911-01-01至2026-11-15。
+判定：研究说明了Rittinghausen直接立法方案的地方议会设计，德国后来也引入直接民主程序；尚未找到按其整套制度实施后自治失败的直接记录。
+限制：现代公投并不等于Rittinghausen的分区起草及表决制度，不能用别的直接民主制度代判。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-a2b4801f81bf](https://www.cambridge.org/core/journals/modern-intellectual-history/article/democracy-and-direct-legislation-during-the-french-second-republic/51F134C550FBE51004FB34D93AE0B017)
+
+### 4. TXT 第 1783—1791 行 · 暂无法判断
+
+记录：`txt-4ef752b19c-000070493-000070741`
+
+原文：Even
+if
+
+we imagined the means of communication to become much
+
+better than those which now exist, how would it be possible to
+assemble such a multitude in a given place, at a stated time,
+
+and with the frequency demanded by the exigencies of party
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：即使交通通信手段大为改善，大型政党仍无法按日常党务所需频率在同一地点召集上万人。
+
+
+口径与范围：万级政党成员同地高频党务会议；通信显著改善；观察常态万人实体会议；反证为已可常态化；观察窗1911-01-01至2026-11-15。
+判定：Your Party允许全体党员网上投票，Podemos也以网上程序处理多次党务选举；这些材料不能证明或推翻上万人按日常党务频率在同一地点开会的可行性。
+限制：线上参与、年度大会与同地高频实体会议须严格区分；不能因没搜到实例就判“不可能”正确。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-837227b88c2b](https://www.yourparty.uk/briefing/)；[ev-a9ea0db8e2e9](https://sequentech.io/case-study/bringing-online-voting-to-spanish-political-party-podemos/)
+
+### 5. TXT 第 1962—1965 行 · 排除：非预测
+
+记录：`txt-4ef752b19c-000078398-000078682`
+
+原文：He foresees that in the near future all the labour organizations will be forced to abandon proletarian exclusiveness,
+
+and in the choice of their officials to give the preference to persons of an education that is superior alike in economic, legal,
+technical, and commercial respects.
+
+时间窗口：原文写出（in the near future）。
+
+扩展观点（解释，非原文）：Herkner 预测不久所有劳工组织都会放弃只选工人的排他性，优先选择受过更高经济、法律、技术和商业教育的干部。
+
+
+口径与范围：保留reported候选，不纳入作者可核验预测
+判定：仓库确定性归属规则将未获作者明确背书的reported预测降为unclear；保留原候选，不作作者预测判分。
+限制：并非因重复、含糊或不利结果而人工降级。战争增补章节按1915年识别，不以1911年误算已发生史实。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：claims_from_results原归属规则（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 6. TXT 第 2164—2169 行 · 暂无法判断
+
+记录：`txt-4ef752b19c-000087001-000087351`
+
+原文：Unless the rank and file of the party keep
+taries to the local branches.
+very much on the alert, unless they are careful that these secretaries shall
+be restricted to purely executive functions, the secretaries will come to be
+regarded as the natural and sole depositaries of all power of initiative, and
+as the exclusive leaders of local party life.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：若德国社会民主党党员不严加警惕、把新设的支薪地方书记限于执行职能，书记将垄断地方党组织的主动权和领导。
+
+
+口径与范围：德国社民党地方支薪书记；基层不警惕；观察书记垄断倡议；反证为成员持续控制；观察窗1911-01-01至2026-11-15。
+判定：马尔堡研究指出Michels的地方经验不代表整个德国劳工运动；现有资料未同时记录党员警惕程度和支薪书记是否垄断地方倡议。
+限制：全国党主席人事冲突不是地方书记权力的直接指标，不能借全国案例补足条件。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-48d080eed74e](https://academic.oup.com/gh/article-abstract/29/1/23/897025)
+
+### 7. TXT 第 2670—2672 行 · 错误
+
+记录：`txt-4ef752b19c-000108347-000108636`
+
+原文：In certain isolated cases, where the questions involved are extremely simple, and where the delegated authority is of brief
+duration, representation is possible. But permanent representation will always be tantamount to the exercise of dominion by
+the representatives over the represented.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：短期简单事务可以委托代表，但永久代表制将始终演化为代表对被代表者的统治。
+
+
+口径与范围：永久代表制；1911后；观察代表精英与选民控制；反证为长期有效基层控制；观察窗1911-01-01至2026-11-15。
+判定：国际印刷工会被研究者明确列为成熟组织中真实民主的例外；西欧政党代表研究也发现，在基层与全国领导冲突时，一些代表更重视基层立场。这与永久代表制“始终”等于代表支配被代表者的绝对断言不符。
+限制：工会例外不等于所有政党均民主；政党代表的态度也不等于每次实际决策，但足以反对无例外的表述。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-5c444a232ba0](https://dissentmagazine.org/article/the-printers-and-the-iron-law/)；[ev-45400448025c](https://ejpr.onlinelibrary.wiley.com/doi/10.1111/j.1475-6765.1994.tb00418.x)
+
+### 8. TXT 第 3267—3270 行 · 部分符合
+
+记录：`txt-4ef752b19c-000137510-000137826`
+
+原文：An electoral right exists, but no electoral duty. Until this duty
+is superimposed upon the right, it appears probable that a small
+minority only will continue to avail itself of the right which the
+majority voluntarily renounces, and that the minority will always dictate laws for the indifferent and apathetic mass.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：在参加投票或党内事务仍为权利而非义务的情况下，只有少数人会继续行使被多数人自愿放弃的权利，少数将继续为冷漠的群众制定规则。
+
+
+口径与范围：非强制参与党务；1911后；少数活跃成员是否支配；反证为自愿广泛持续参与；观察窗1911-01-01至2026-11-15。
+判定：SNP研究确实记载多数新增党员不活跃、领导层集中权力，但同一材料又记载约五万党员参加领导选举，不能将所有党务都概括为少数人参与。
+限制：单次领导选举与持续日常党务不同，不能把参与人数直接等同于决策权。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-d4826277bd34](https://blogs.lse.ac.uk/politicsandpolicy/scotland-has-a-new-first-minister-but-is-it-the-same-old-scottish-politics/)
+
+### 9. TXT 第 4712—4716 行 · 暂无法判断
+
+记录：`txt-4ef752b19c-000205216-000205545`
+
+原文：It is obvious that the dynamic influence of these newcomers
+over the mass of workers will diminish in proportion as their
+own number increases, that a small nucleus of doctors and barristers in a great popular party will be more influential than a
+considerable quantity of intellectuals who are fiercely contending
+for supremacy.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：加入工人政党的资产阶级知识分子人数越多，他们对群众的个人影响力将越弱；少数医生律师的核心比争权的大批知识分子更有影响。
+
+
+口径与范围：工人党中资产阶级知识分子增多；人数增加为条件；观察每人群众影响下降；反证为上升；观察窗1911-01-01至2026-11-15。
+判定：比较研究发现上海与圣彼得堡工人对知识分子的从属程度不同，并将差异追溯到历史文化情境；它没有检验知识分子人数增加是否使每人的影响按比例下降。
+限制：知识分子整体地位、个人影响力及人数占比是不同变量，不能互相替代。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-cfea30b3f428](https://doi.org/10.1017/s0020859000113689)
+
+### 10. TXT 第 4764—4768 行 · 部分符合
+
+记录：`txt-4ef752b19c-000208108-000208414`
+
+原文：Thus
+the gulf between the leaders and the rest of the party becomes
+ever wider, until the moment arrives in which the leaders lose
+all true sense of solidarity with the class from which they have
+sprung, and there ensues a new class-division between ex-proletarian captains and proletarian common soldiers.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：政治职业愈趋复杂，工人出身领导人与基层党员的距离会扩大，最终失去阶级团结感并形成新的领导者与工人阶级分化。
+
+
+口径与范围：工人出身职业政治领导；1911后；观察与基层阶级距离；反证为继续同阶层；观察窗1911-01-01至2026-11-15。
+判定：前议员访谈显示，党鞭约束有时使工人出身者无法按阶级立场投票，向上流动顾虑也影响行为；但这些人仍保有工人阶级认同，并非一律丧失团结感。
+限制：访谈不能证明政治复杂化必然造成统一的新阶级，也不是领导人与基层距离的纵向测量。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-816458d1c09a](https://theconversation.com/beyond-my-dad-was-a-toolmaker-interviews-with-former-politicians-reveal-what-its-really-like-to-be-working-class-in-parliament-232240)
+
+### 11. TXT 第 4816—4818 行 · 暂无法判断
+
+记录：`txt-4ef752b19c-000211187-000211312`
+
+原文：and which will perhaps render them important even should this
+This is perfectly natural, for the leaders
+tactic be abandoned.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：议会经验所形成的专门能力，可能使社会主义领导人在政党放弃议会策略后仍保持重要地位。
+
+
+口径与范围：党放弃议会策略；条件发生；观察有议会专长旧领导仍重要；反证为被淘汰；观察窗1911-01-01至2026-11-15。
+判定：CPGB材料记载1920年对议会参与的争论，联邦档案馆也记载KAPD拒绝议会道路；但未证明某个已放弃议会策略的党因旧领导的议会技能而继续依赖他们。
+限制：新成立的反议会政党与同一政党放弃既有议会策略并不相同。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-ad089d2383d7](https://weimar.bundesarchiv.de/WEIMAR/DE/Content/Virtuelle-Ausstellungen/Raete-Revolution-Republik/KAPD.html)
+
+### 12. TXT 第 4959—4964 行 · 部分符合
+
+记录：`txt-4ef752b19c-000218216-000218537`
+
+原文：The dismissal by the organised
+masses of a universally esteemed leader would discredit the party
+throughout the country. Not only would the party suffer from
+being deprived of its leaders, if matters were thus pushed to an
+extreme, but the political reaction upon the status of the party
+would be immeasurably disastrous.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：如果有组织的群众罢免一位普遍受尊重的领导，政党将在全国信誉受损并遭遇严重的地位损失。
+
+
+口径与范围：普遍受尊重领袖被基层罢免；观察全国声望下降；反证为罢免后声望上升；观察窗1911-01-01至2026-11-15。
+判定：澳大利亚选举研究报告说，转离工党的选民普遍不满Rudd被撤换；罢免带来政治代价这一部分得到支持。但BBC同时记载其支持率已在被撤换前下滑，不能确认“普遍受尊重”前提及灾难程度。
+限制：事后不满与撤换造成的净因果损失不同，也不能从一次案例推出任何受尊重领袖被免都会遭全国性灾难。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-a32edc130407](https://www.smh.com.au/national/rudd-dumping-cost-votes-survey-20110407-1d6cu.html)；[ev-a39ee779f4f8](https://www.bbc.co.uk/news/10399230)
+
+### 13. TXT 第 5349—5352 行 · 部分符合
+
+记录：`txt-4ef752b19c-000236774-000237084`
+
+原文：Every vigorous political party
+which is subversive in its aims is predestined to become for a
+time an exercise ground for all sorts of innovators and quacksalvers, for persons who wish to cure the ills of travailing humanity by the use of their chosen specifics, employed exclusively
+in smaller or larger doses
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：每一个强盛而以颠覆现存秩序为目标的政党，都将暂时成为各类革新者和万能药倡导者的试验场。
+
+
+口径与范围：强大颠覆性政党；观察多类革新运动进入试验；反证为未吸纳；观察窗1911-01-01至2026-11-15。
+判定：战间期英国独立工党确实同时容纳激进知识分子、工人派别及素食生活改革，并以全面社会主义改造为目标，符合激进党成为多种革新试验场的一部分。
+限制：这只支持特定党及特定改革，不能证明每个颠覆性政党都容纳所有类型革新者；NPA开除派别的声明也显示容纳有边界。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-c083401d1f22](https://ivu.org/home/2780-history-thesis-political.html)；[ev-c313b405d65a](https://www.leftvoice.org/excluded-from-the-npa-we-begin-the-process-of-building-a-new-revolutionary-organization-statement-of-296-npa-activists/)
+
+### 14. TXT 第 5879—5883 行 · 暂无法判断
+
+记录：`txt-4ef752b19c-000264639-000264968`
+
+原文：If the party officials are allowed
+to decide for themselves who is to enter their charmed circle, the danger
+arises that fresh blood and new ideas will more and more be refused admittance, and that the party will tend to undergo that ossification which is
+Further consequences
+characteristic of all oligarchies and bureaucracies.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：若党务官员自行决定谁可进入其圈子，新人新思想将日益被排斥，政党将走向寡头官僚式僵化。
+
+
+口径与范围：官员自行吸纳圈内继任者；观察新人思想受排斥；反证为自我更新开放；观察窗1911-01-01至2026-11-15。
+判定：客户主义研究发现党内选拔竞争较弱且领导更占优势，但它检验的是客户主义，不是官员自行决定继任圈子后新思想逐年被拒绝。
+限制：不能把所有领导支配或客户主义直接当成自我吸纳规则及思想僵化。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-540530419c1d](https://ora.ox.ac.uk/objects/uuid:2695a39f-fd0b-4c09-b5dc-bfa69b477d2d/files/rx633f2853)
+
+### 15. TXT 第 6225—6232 行 · 部分符合
+
+记录：`txt-4ef752b19c-000281470-000281892`
+
+原文：Arturo Labriola,
+isting economic order.
+who has followed the German movement with keen interest and
+lively sympathy, is undoubtedly right in his caustic prediction
+that as soon as the day comes when the German Government is
+willing to afford itself the luxury of a lukewarm liberal ministry,
+since the socialists are really not difficult to satisfy, the ''reformHe adds that
+ist infection" will spread far even in Germany.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：一旦德国出现温和自由主义内阁，社会主义运动中的改良主义将在德国广泛传播。
+
+
+口径与范围：德国温和自由主义内阁出现；观察社民改良主义扩散；反证为革命派扩张；观察窗1911-01-01至2026-11-15。
+判定：1918年10月SPD参与包含自由派的议会政府，并继续寻求宪法改革；但同一材料也记载此前的运动分裂以及随后超越改革的十一月革命，不能判定改良主义全面无阻力地扩散。
+限制：Max von Baden内阁仅作为温和议会化内阁的近似案例；不能把在此前已存在的改良主义算作该内阁造成的新变化。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-b3606bd90f64](https://www.weimarer-republik.net/en/weimar-gateway/timeline-of-the-weimar-republic/1918/october-1918/)；[ev-823428a4ecd5](https://www.weimarer-republik.net/en/weimar-gateway/people-whos-who-of-the-weimar-republic/parties/spd/)
+
+### 16. TXT 第 6520—6523 行 · 错误
+
+记录：`txt-4ef752b19c-000296742-000297005`
+
+原文：It is certain that in the German socialist party tendencies exist towards laying greater stress upon such material
+advantages, tendencies which might lead to the transformation
+of the party organization into a socialistically tinged proletarian
+assurance society.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：德国社会民主党日益重视向党员提供物质福利的倾向，可能将党组织变成带社会主义色彩的工人保险社。
+
+
+口径与范围：德国社民党互助福利路线；观察党变工人保险社；反证为仍政治纲领组织；观察窗1911-01-01至2026-11-15。
+判定：1912年确有工会合作保险公司成立，但SPD在1921年仍有政治纲领，2025年仍是拥有联邦议员的政治党，并未在观察窗内变成工人保险社。
+限制：判断的是所预警的组织转化结果，而不是否认SPD福利取向；保险企业与政党本体必须区分。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-4a5ac1896a60](https://library.fes.de/fulltext/bibliothek/chronik/band1/e235e824.html)；[ev-3956ab90ad58](https://germanhistorydocs.org/en/weimar-germany-1918-1933/platform-of-the-social-democratic-party-1921)；[ev-d43e17421be3](https://www.deutschland.de/en/topic/politics/the-spd-parties-in-the-german-bundestag)
+
+### 17. TXT 第 6523—6525 行 · 暂无法判断
+
+记录：`txt-4ef752b19c-000297006-000297181`
+
+原文：It is evident that an evolution in this direction would attract to the party hundreds of thousands of new
+members, so that there would be a considerable accession of
+strength.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：若德国社会民主党向党员互助保险方向发展，将吸引数十万名新党员、显著扩大组织力量。
+
+
+口径与范围：德国社民互助保险路线；观察新增数十万党员与方向条件；反证为未增长；观察窗1911-01-01至2026-11-15。
+判定：FES记录1914年党员总数为1,085,905，其他资料也记载组织及服务扩展；但总存量不能直接证明出版后因互助保险路线新增数十万人。
+限制：不把1904—1914整个区间的增长全部算作1911年后的预测命中，也不把保险投保人数当作党员新增数。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-c5bc5192ad02](https://library.fes.de/fulltext/bibliothek/chronik/band1/e235e856.html)
+
+### 18. TXT 第 6525 行 · 部分符合
+
+记录：`txt-4ef752b19c-000297182-000297269`
+
+原文：At the same time the apparatus of the socialist bureaucracy would be greatly developed.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：若德国社会民主党发展党员物质互助福利，其社会主义官僚机构也将大为扩张。
+
+
+口径与范围：德国社民互助福利发展；观察官僚机构扩张；反证为缩减；观察窗1911-01-01至2026-11-15。
+判定：资料记载SPD以支薪职员替代早期志愿者，并在1913年雇用约4,000名全职官员；官僚扩张结果与预测相符，但尚不能将其全部归于特定互助福利路线。
+限制：较长历史区间含出版前发展，不能把已在1911年前形成的机构全部列作新增；福利条件与结果因果联系有限。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-6403152f5279](https://theanarchistlibrary.org/library/wild-socialism-workers-councils-in-revolutionary-berlin-1918-21)
+
+### 19. TXT 第 6581—6586 行 · 暂无法判断
+
+记录：`txt-4ef752b19c-000299995-000300291`
+
+原文：In such conditions
+it is likely that the party representation in the legislature will be
+restricted to persons with private means, to those, that is to say,
+who have time and money which they are able to devote to an
+unremunerative occupation, and one which demands frequent
+changes of residence.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：若意大利议员仍不由国家领薪且社会主义政党贫穷，党的议会代表将主要限于有私人财力、能承担无薪议会职业的人。
+
+
+口径与范围：意大利议员无薪且社民党贫穷；观察代表私人财力；反证为穷工人仍可任职；观察窗1911-01-01至2026-11-15。
+判定：资料明确记载意大利1912年开始议员津贴，并有工人代表靠同伴筹款任职的先例；不能用其后有薪制度下的议员构成来判无薪且党贫穷的条件预测。
+限制：先例起于1900年，作为边界而非出版后预测反例；1911至津贴改革前的实际人员构成仍缺乏资料。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-01680d71a0b7](https://www.9colonne.it/72685/storia-e-stipendi-br-dei-parlamentari)
+
+### 20. TXT 第 8894—8896 行 · 暂无法判断
+
+记录：`txt-4ef752b19c-000414311-000414453`
+
+原文：There is no indication whatever that the power possessed by
+the oligarchy in party life is likely to be overthrown within an
+appreciable time.
+
+时间窗口：原文写出（appreciable time）。
+
+扩展观点（解释，非原文）：政党内寡头拥有的权力，在可预见的一段时期内不大可能被推翻。
+
+
+口径与范围：政党寡头权力；可预见时期；观察组织领导可罢免性；反证为成功推翻；观察窗1911-01-01至2026-11-15。
+判定：1919年SPD大会既批评政府内的党员又向其表示信任；当代评论也承认专业干部支配倾向。但这些材料不能确定寡头权力在“可预见时期”内是否作为制度被推翻。
+限制：领导人更替不等于寡头制被推翻；原文没有可直接采用的“相当时期”终点或制度阈值。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-e01760939934](https://library.fes.de/fulltext/bibliothek/chronik/band2/e235f110.html)
+
+### 21. TXT 第 8985—8986 行 · 部分符合
+
+记录：`txt-4ef752b19c-000419415-000419553`
+
+原文：natural and normal development of the organization will impress upon the most revolutionary of parties an indelible stamp
+of conservatism.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：除短暂群众起义等中断外，组织的自然正常发展将使最革命的政党也永久带上保守性。
+
+
+口径与范围：革命党组织正常发展；观察长期保守化；反证为成熟后仍革命；观察窗1911-01-01至2026-11-15。
+判定：德国社会运动实证研究发现组织趋于官僚化且行动更温和，支持组织发展伴随保守化的方向；同一研究明确发现正式组织也可能激进，否定不褪色、无例外的保守印记。
+限制：社会运动组织不是所有革命党，研究也不支持把相关关系全当成组织自然发展导致的永久结果。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-228402b92200](https://doi.org/10.17813/maiq.4.2.l2680365q32h6616)
+
+### 22. TXT 第 9082—9085 行 · 暂无法判断
+
+记录：`txt-4ef752b19c-000423920-000424140`
+
+原文：But their submission is feigned they are well aware that if they
+simply remain glued to their posts, their quality as executants
+of the will of the masses will before long lead to a restoration of
+their former dominance.
+
+时间窗口：原文写出（before long）。
+
+扩展观点（解释，非原文）：即使弱势领导人在群众反抗时表面服从，只要留任并充当群众意志的执行者，不久就会恢复原有支配地位。
+
+
+口径与范围：受反抗的旧领袖留任；观察不久恢复统治；反证为继续受基层控制；观察窗1911-01-01至2026-11-15。
+判定：Corbyn在2016年挑战后保住领导并于2017年改善地位，但该挑战主要来自议会同僚，基层反而支持他；矿工民主运动案例又是旧领导被替换，均不满足原文“基层反抗但旧领袖留任”的完整条件。
+限制：恢复支持与恢复支配不同，更无法从这些材料证明服从是伪装。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-91bad33c37f9](https://theconversation.com/just-how-far-has-jeremy-corbyn-come-and-how-far-could-he-still-go-79206)；[ev-7286deec3526](https://labornotes.org/2023/01/what-todays-union-reformers-can-learn-miners-democracy?language=en)
+
+### 23. TXT 第 9829—9834 行 · 部分符合
+
+记录：`txt-4ef752b19c-000459196-000459352`
+
+原文：The party will then break up into two distinct organisms, and
+in each of these there will be renewed the oligarchical phenomena
+
+—
+
+we have been describing.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：若党内两派领导人的思想不可调和或尊严受损而不能共处，政党将分为两个组织，两个组织都会重现寡头化。
+
+
+口径与范围：党内不可调和两派分裂；观察两党均寡头化；反证为任一持续基层统治；观察窗1911-01-01至2026-11-15。
+判定：USPD分裂后领导层初期几乎由传统中间派构成，显示领导精英延续；但学术研究发现地方组织能违背全国领导意愿决定党政策，两个新组织都重现寡头支配的结论不完整。
+限制：地方分权并不自动等于所有层面民主，领导派别构成也不是独占全部权力的充分证明。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-26fd03d7706c](https://en.wikipedia.org/wiki/Independent_Social_Democratic_Party_of_Germany)；[ev-a2e39d74ec27](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/109518D106574FD97ECAF95BEDFAA194/S0020859000005599a.pdf/revolutionary_socialist_internationalism_rankandfile_reaction_in_the_uspd.pdf)
+
+### 24. TXT 第 9895—9899 行 · 错误
+
+记录：`txt-4ef752b19c-000462941-000463309`
+
+原文：Naturally
+no immediate punishment is possible of those who rebel against
+the authority of the caucus; but at the next election the independent congressman is sure to lose his seat, for the party-managers at "Washington will not fail to report to their colleagues,
+the bosses of the local constituency, the act of insubordination
+committed by the congressman concerned.
+
+时间窗口：原文写出（at the next election）。
+
+扩展观点（解释，非原文）：美国国会议员若违反本党议会党团决定，虽不会马上受罚，但下一次选举必将失去席位，党魁会向选区组织通报其违纪。
+
+
+口径与范围：美国议员违本党党团；下次选举；观察连任失败必然性；反证为异议后连任；观察窗1911-01-01至2026-11-15。
+判定：Manchin在2018年违背民主党同僚立场支持Kavanaugh，却在随后的参议院选举连任，直接否定异议议员下次选举“必丢席”的绝对结果。
+限制：材料证明违背党团共同立场及连任，不声称当代美国党团有与欧洲政党相同的法律性投票命令，也不否认违纪可能有其他代价。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-6ef8b2893a97](https://api.politifact.com/factchecks/2018/nov/15/patrick-morrisey/how-late-did-joe-manchin-decide-kavanaugh-vote/)；[ev-080fd5d5791f](https://www.politico.com/story/2018/11/06/patrick-morrisey-vs-joe-manchin-west-virginia-senate-race-results-2018-963524)
+
+### 25. TXT 第 10557—10560 行 · 部分符合
+
+记录：`txt-4ef752b19c-000494179-000494489`
+
+原文：been notably attenuated by theoretical and practical democracy,
+and by the varying necessities of the case above all, by the appearance of a typically southern socialism, less rigid than that of
+Prussia and of Saxony, and jealous of its own autonomy. But
+the tendency has not disappeared, nor can it disappear.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：德国劳工运动的权威主义倾向虽因民主和较宽松的南德社会主义而减弱，但不可能消失。
+
+
+口径与范围：德国劳工权威倾向；1911后；观察持续存在或完全消失；反证为持续完全消除；观察窗1911-01-01至2026-11-15。
+判定：1977年的研究记载德国工会候选名单常由地方领导机构组成，重要地区职位受上级影响，说明权力集中未随民主化完全消失；IG Metall同时公开强调自下而上的民主结构。
+限制：以组织程序中的领导控制作有限指标，不把任何代表制或工会集中谈判一概称为权威主义，也不能证明未来永不消失。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-43261e32f795](https://www.bpb.de/shop/zeitschriften/apuz/archiv/530403/innerverbandliche-demokratie-privatsadie-oder-politikum/)；[ev-ee963f9ad34d](https://www.igmetall.de/en/ueber-uns/organisation-und-aufbau)
+
+### 26. TXT 第 11631—11635 行 · 排除：非预测
+
+记录：`txt-4ef752b19c-000544536-000544782`
+
+原文：that in his view the carrying
+of socialism into effect after the victory would be greatly facilitated by
+the inevitable adhesion to the various branches of the new administration,
+(Cf.
+of numerous competent elements from the official bureaucracy.
+
+时间窗口：原文写出（after the victory）。
+
+扩展观点（解释，非原文）：倍倍尔认为社会主义胜利后，原有官僚机构中大量有能力人员必将加入新行政系统，使社会主义落实容易得多。
+
+
+口径与范围：保留reported候选，不纳入作者可核验预测
+判定：仓库确定性归属规则将未获作者明确背书的reported预测降为unclear；保留原候选，不作作者预测判分。
+限制：并非因重复、含糊或不利结果而人工降级。战争增补章节按1915年识别，不以1911年误算已发生史实。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：claims_from_results原归属规则（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 27. TXT 第 12633—12635 行 · 错误
+
+记录：`txt-4ef752b19c-000585348-000585660`
+
+原文：The [Prussian] state tends to become a republic of official employees,
+in which the employees are the only fully qualified citizens, whilst all others, notwithstanding the apparent possession of constitutional rights, exist
+simply in order to be ruled and to provide the cost of working the governmental machine.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：普鲁士国家趋向成为官员共和国：只有官员是完全公民，其他人虽名义上有宪法权利却只供支配并支付国家机器开支。
+
+
+口径与范围：普鲁士国家；1911至1932；观察官员独享完全公民权趋势；反证为民主公民权；观察窗1911-01-01至2026-11-15。
+判定：魏玛时期普鲁士转为有民主议会法律基础的国家，宪制包括男女普选，方向与只有官员享有完整公民权的官员共和国相反。
+限制：并不以纸面宪法单独证明所有实际权利平等；史学研究也明确将魏玛普鲁士描述为民主议会国家，纳粹时期破坏另当别论。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-90ac36d01150](https://en.wikipedia.org/wiki/Constitution_of_Prussia_(1920))；[ev-e5e69423646f](https://doi.org/10.4324/9781315841816-11)
+
+### 28. TXT 第 13197—13202 行 · 正确
+
+记录：`txt-4ef752b19c-000611169-000611520`
+
+原文：The Poles, widely dispersed, and dis-
+
+membered among three separate powers, have preserved their
+nationality and their faith in themselves and in their rights. No
+power in the world, not to mention the Prusso-Eussian microcosm, can annihilate the Polish people whilst their brains still
+cherish the consciousness of their right to national existence.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：只要波兰人仍保持民族生存权的意识，任何强权都无法消灭波兰民族。
+
+
+口径与范围：波兰民族意识持续；1911后；观察民族能否存续；反证为保持意识仍被消灭；观察窗1911-01-01至2026-11-15。
+判定：波兰的民族意识和抵抗在斯大林时代仍保存了民族自治与真实生活空间；二战资料也记载民众反对去民族化并保护文化，民族未被强权消灭的结果在观察窗内成立。
+限制：不等于主权从未中断、民众未遭大规模杀害，也不把此后所有可能强权的结果一并判定。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-d63bfdbab9e5](https://www.hoover.org/research/how-solidarity-arose)；[ev-6c3f35a5af7d](https://eng.ipn.gov.pl/download/2/32615/GmitrukJWiesichlopiENCorkor-skonwertowany1.pdf)
+
+### 29. TXT 第 15505—15514 行 · 暂无法判断
+
+记录：`txt-4ef752b19c-000709899-000710388`
+
+原文：In the severe struggle it has undertaken for the expropriation
+of the expropriators, it elevates from the depths of its own class
+those who have the finest intelligences and the keenest vision, by
+serious collective sacrifices gives them the pen to use in place
+of ruder tools, and in doing so it throws into the arms of the
+
+enemy those who have been selected with the express purpose of
+If the chosen combatants do not
+themselves go over to the enemy, their children at least will do
+so.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：工人运动选拔并提升社会地位的领导者即使本人不转到资产阶级一边，其子女至少将这样做。
+
+
+口径与范围：工人运动提拔领导人及其子女；观察家庭转向资产阶级；反证为后代仍社会主义；观察窗1911-01-01至2026-11-15。
+判定：Nan Hardie在1933年仍以工党候选人当选，说明后代并不必然政治倒向敌方；但政治立场延续本身不能证明家庭经济阶级没有改变，尚不能完整判定原文的阶级转化断言。
+限制：Liebknecht家族材料也不是工人出身并受工人运动提升的家庭样本；不以政治标签直接替代经济阶级。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-42f44f8f1023](https://strathprints.strath.ac.uk/1525/5/Corr_OUP2004_Agnes_Hardie_daughter_Keir_Hardie_1885_1947_socialist_political_activist.pdf)
+
+### 30. TXT 第 16272—16278 行 · 暂无法判断
+
+记录：`txt-4ef752b19c-000746632-000747276`
+
+原文：there may come into existence a number of different strata of workers, as the outcome
+of the influence of a general increase of social wealth, in conjunction with the efforts made by the workers themselves to elevate their standard of life; this may in many cases enable them
+to secure a position in which, though they may not completely
+lose the common human feeling of never being able to get
+enough, from which even millionaires are not altogether exempt, they will become so far personally satisfied as to be gradually estranged from the ardent revolutionary aspirations of the
+
+masses towards a social system utterly different from our own
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：随着社会财富增长与工人提高生活水平的努力，工人阶级可能分化成不同阶层，其中个人境况改善者将逐渐疏离彻底变革社会制度的革命愿望。
+
+
+口径与范围：工人生活改善；观察阶层分化与革命愿望减弱；反证为富裕工人更革命；观察窗1911-01-01至2026-11-15。
+判定：富裕工人研究没有发现物质改善必然带来转投保守党，并拒绝将工人一律理解为日益去激进或必然反体制；这些结果不足以直接测量原文所说革命愿望的逐渐减弱。
+限制：政党投票、家庭生活取向和彻底制度变革愿望不可等同；不把拒绝资产阶级化理论直接当成相反的革命化。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-ef2ed7b0ca9f](https://www.cambridge.org/core/journals/british-journal-of-political-science/article/abs/politics-of-affluent-and-traditional-workers-in-britain-an-aggregate-data-analysis/0C9C55E529D2A6CABD25BD02981EC9E8)
+
+### 31. TXT 第 17421—17427 行 · 部分符合
+
+记录：`txt-4ef752b19c-000795358-000795853`
+
+原文：Corruption for honourable motives is likely to be succeeded by corruption for dishonourable. If the method were to be accepted as a regular
+and legitimate element of party politics, it would be easy for
+able but unscrupulous leaders to put a portion of the price of
+corruption into their own pockets, and yet to remain more
+''useful" to the party than their disinterested and conscienThis would be the beginning of the end,
+tious colleagues.*^
+and would open the door to plutocracy in the party.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：以党的利益为名收受外部资金的做法可能演变为领导人个人侵吞；若将其常态化和合法化，将给党内金钱统治打开大门。
+
+
+口径与范围：以党利益接受外资常态化；观察个人侵吞与金钱统治；反证为无私持续；观察窗1911-01-01至2026-11-15。
+判定：Fimi Media案报道记载同一非法资金同时使HDZ和Sanader本人获益，并称党内将腐败视为常态，支持党用资金与个人侵吞并存的风险。
+限制：报道明确是当时非终审判决，并有部分指控证据不足；“高尚动机”起点和将腐败正式视为合法方式未证实，不能全判正确。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-f44b56da9a5c](https://n1info.hr/english/news/a575501-Judge-Insatiable-Sanader-used-his-power-to-detriment-of-all-citizens/)
+
+### 32. TXT 第 18317—18318 行 · 暂无法判断
+
+记录：`txt-4ef752b19c-000829029-000829120`
+
+原文：German socialism would lose much of its prestige
+if it were to eliminate the intellectuals.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：如果德国社会主义运动排斥知识分子，其声望将大为下降。
+
+
+口径与范围：德国社会主义排除知识分子；观察声望损失；反证为排除后声望未损；观察窗1911-01-01至2026-11-15。
+判定：1912年Hildebrand被开除引发自由讨论和科学权利争论；这不等于德国社会主义整体排除知识分子，资料也未给出整体排除后的声望变化。
+限制：个别党员开除与排除整个社会类别不是同一条件；争论存在不能自动等同声望大幅下降。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-fb3004dcb007](https://moving-the-social.ub.rub.de/index.php/MTS/article/view/7629)
+
+### 33. TXT 第 18477—18478 行 · 暂无法判断
+
+记录：`txt-4ef752b19c-000834480-000834749`
+
+原文：The increasing democratization of state institutions and the progreslife, together with the securing of better conditions of labour for the workers, may perhaps gradually render the help of the intellectuals less essential.
+But this is a question for the remote future.
+
+时间窗口：原文写出（the remote future）。
+
+扩展观点（解释，非原文）：国家制度民主化、集体生活社会化及工人劳动条件改善，可能在遥远未来逐渐降低工人运动对知识分子帮助的必要性。
+
+
+口径与范围：民主化劳动条件改善；遥远未来；观察知识分子帮助必要性减弱；反证为仍必要；观察窗1911-01-01至2026-11-15。
+判定：南约克郡工人教育研究说明工人可成长为有机知识分子，但同时仍有公共知识分子任教师和组织者；英国议会资料又显示工党议员毕业生比例上升。两者都不直接测量运动对外来知识分子帮助的必要性。
+限制：“遥远未来”没有明确年限，不能以毕业生增加机械否定帮助必要性减弱，也不能把有机知识分子与资产阶级知识分子等同。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-9940ac2ab764](https://www.cambridge.org/core/journals/international-labor-and-working-class-history/article/developing-the-politics-of-the-trade-union-movement-popular-workers-education-in-south-yorkshire-uk-1955-to-1985/0839487E420E5C76070D3BD792FB6F7B)；[ev-3b7e8dc43421](https://www.parliament.uk/business/publications/research/olympic-britain/parliament-and-elections/representatives-of-society/)
+
+### 34. TXT 第 18694—18699 行 · 部分符合
+
+记录：`txt-4ef752b19c-000844023-000844339`
+
+原文：Bernstein has said
+with good reason that even if none but the most important
+political and administrative questions are to be submitted to
+the popular vote, the happy citizen of the future will find every
+Sunday upon his desk such a number of interrogatories that
+he will soon lose all enthusiasm for the referendum.
+
+时间窗口：原文写出（soon）。
+
+扩展观点（解释，非原文）：如果把重要政治行政问题都交公民直接投票，未来公民也会因每周收到过量问题而很快失去公投热情。
+
+
+口径与范围：大量重要问题交公投；观察过载与热情很快下降；反证为大量投票仍持续参与；观察窗1911-01-01至2026-11-15。
+判定：瑞士公投在20世纪后半叶出现参与率下降，且较多直接民主程序与较低选举参与有关，支持参与负荷问题的一部分；研究却把关系解释为长期适应而非即时投票疲劳。
+限制：瑞士平均每年四次联邦公投，不是每周堆满重要问题；选举投票率也不同于公投热情，条件频率与原因均不完全匹配。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-f0a6f4478cca](https://aceproject.org/ace-en/focus/direct-democracy/cs-swiss)；[ev-90c8c1cdb48a](https://kops.uni-konstanz.de/server/api/core/bitstreams/34b0ad89-9ad4-4f8e-b992-dc363aad83ee/content)
+
+### 35. TXT 第 19537—19540 行 · 错误
+
+记录：`txt-4ef752b19c-000875113-000875315`
+
+原文：No form of strike, however much it may seem to be
+inspired by the autonomy of the masses, will be able to kill the
+dragon of demagogy, or even to prevent the formation of a class
+of independent leaders.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：任何形式的罢工，即使以群众自主为号召，也无法阻止独立领导阶层形成。
+
+
+口径与范围：自主罢工；1911后；观察独立领导层形成；反证为长期无领导罢工；观察窗1911-01-01至2026-11-15。
+判定：瓦文萨领导罢工并成为团结工会领袖的案例支持常见领导形成；但1977年西班牙鞋业罢工记述明确称代表是可撤回的临时传达人、受大会控制，构成“任何罢工都无法避免独立领袖阶层”的反例。
+限制：西班牙材料是带政治立场的运动记述，短期罢工不等于所有组织长期无领导；这里反驳的是无例外、任何形式的绝对说法。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-52b823dea7c3](https://libcom.org/history/reflections-shoe-industry-strike-assembly-movement-alicante-1977)；[ev-da751cd66ae6](https://www.nobelprize.org/prizes/peace/1983/walesa/speedread/)
+
+### 36. TXT 第 20398—20404 行 · 暂无法判断
+
+记录：`txt-4ef752b19c-000907023-000907398`
+
+原文：new order of things signifies an incalculable progress in
+
+respect of public rights, which thus come to conform better with
+the principles of social justice. This evolution will, however,
+be arrested from the moment when the governing classes succeed in attracting within the governmental orbit their enemies
+
+of the extreme left, in order to convert them into collaborators.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：一旦统治阶级成功把极左反对派吸纳为政府合作者，原先由党派压力推动的公共权利民主化进程将停止。
+
+
+口径与范围：极左被政府吸纳；观察公共权利民主化停止；反证为执政继续扩权；观察窗1911-01-01至2026-11-15。
+判定：德国1918—1919年扩大投票权，葡萄牙激进左翼支持政府后也兑现不少政策承诺；但资料不能确认这些案例就是旧统治阶级成功吸纳全部极左反对派的条件，更未直接检验公共权利民主化停止。
+限制：革命更换统治结构、议会支持协议和被旧统治阶级收编不宜混用；社会经济政策兑现也不是公民权利扩张本身。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-cacd90909d14](https://www.dhm.de/mediathek/en/weimar-the-essence-and-value-of-democracy/government-programme/elections/)；[ev-782b0f267d82](https://www.cambridge.org/core/journals/government-and-opposition/article/portuguese-radical-left-parties-supporting-government-from-policytakers-to-policymakers/66DD31FA8DAF7F66F2CCD67236C59DAF/share/fe72cfa567a87ad75596263473d4c29ce8fa953c)
+
+### 37. TXT 第 20587—20590 行 · 暂无法判断
+
+记录：`txt-4ef752b19c-000916266-000916474`
+
+原文：For this reason, in all ordinary circumstances, and as far
+as prevision is humanly possible, every attempt of the party
+to measure its forces with those of its antagonists is foredoomed
+to disastrous failure.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：在通常情况下，社会主义政党若正面与国家对手较量力量，其尝试将遭到灾难性失败。
+
+
+口径与范围：通常情形社会主义党正面对抗国家；观察失败；反证为成功夺权；观察窗1911-01-01至2026-11-15。
+判定：1919年德国起义流血失败，而1917年布尔什维克成功夺权；关于俄国的研究明确指出国家机构瓦解使成功成为可能，不能把这个非常态反例直接套进“通常情况下”的条件。
+限制：原文未给“通常”可操作边界，现有成功与失败案例又都位于战争和革命危机，不能任意挑一个判对错。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-9286847b8829](https://encyclopedia.ushmm.org/content/en/article/the-russian-revolution-1917)；[ev-28df92716f61](https://www.cambridge.org/core/journals/slavic-review/article/1917-revolution-as-demobilization-and-state-collapse/E9C85596FBF6C8E74ED87ABDAEC7563E)
+
+### 38. TXT 第 20899—20900 行 · 错误
+
+记录：`txt-4ef752b19c-000929261-000929387`
+
+原文：Should the party be attacked, it will abandon valuable positions
+previously conquered, and will renounce ancient rights rather
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：若社会主义党遭到攻击，它将放弃先前赢得的重要阵地并舍弃原有权利。
+
+
+口径与范围：成熟社会主义党受攻击；观察放弃阵地权利；反证为组织抵抗；观察窗1911-01-01至2026-11-15。
+判定：1920年右翼政变攻击共和国时，SPD领导人Wels参与组织总罢工并促使政变崩溃，说明受攻击不必然导致放弃既得阵地；他在1933年也公开反对授权法。
+限制：罢工并非武装内战，不能据此声称SPD总会诉诸武力；反例针对一遭攻击就放弃权利的结果，而非否认1933年遭镇压。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-7b79e23d4eb0](https://encyclopedia.ushmm.org/content/en/article/otto-wels)
+
+### 39. TXT 第 21500—21515 行 · 部分符合
+
+记录：`txt-4ef752b19c-000952104-000952815`
+
+原文：But the new collectivist society,
+the society without classes, which is to be established upon the
+ruins of the ancient state, will also need elective elements. It
+may be said that by the adoption of the preventive rules formulated by Eousseau in the Contrat Sociale, and subsequently
+reproduced by the French revolutionists in the Declaration des
+Droits de l' Homme, above all by the strict application of
+the principle that all offices are to be held on a revocable
+'
+
+'
+
+tenure, the activity of these representatives may be confined
+within rigid limits.^^ It is none the less true that social wealth
+
+cannot be satisfactorily administered in any other manner than
+by the creation of an extensive bureaucracy.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：未来取代旧国家的集体主义社会即使实行可撤回的选举职务，也仍将需要广泛的官僚机构管理社会财富。
+
+
+口径与范围：集体主义社会取代资本主义；观察财富管理官僚规模；反证为无官僚治理；观察窗1911-01-01至2026-11-15。
+判定：苏联的社会财富管理确实依赖庞大行政层级及中央计划，支持集体管理仍需广泛官僚机构的观察结果；但不能把实际苏联直接等同原文的无阶级、严格可撤回任职社会。
+限制：南斯拉夫自我管理提供不同制度边界，证明某个历史体制依赖官僚并不证明所有可撤回自治制度都技术上必须如此。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-c6d12807ff56](https://www.encyclopedia.com/history/modern-europe/russian-soviet-and-cis-history/command-economy)
+
+### 40. TXT 第 21592—21602 行 · 正确
+
+记录：`txt-4ef752b19c-000954815-000955682`
+
+原文：The constitution of a new dominant minority would, in addition, be especially facilitated by the manner in which, according
+to the Marxist conception of the revolution, the social transformation is to be effected. Marx held that the period between
+the destruction of capitalist society and the establishment of
+
+communist society would be bridged by a period of revolutionary transition in the economic field, to which would correspond a period of political transition, "when the state could
+not be anything other than the revolutionary dictatorship of
+To put the matter less euphemistically,
+the proletariat. " ^'^
+there will then exist a dictatorship in the hands of those
+leaders who have been sufficiently astute and sufficiently powerful to grasp the sceptre of dominion in the name of socialism, and to wrest it from the hands of the expiring bourgeois
+society.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：若按马克思的革命过渡路径推翻资本主义，过渡期的所谓无产阶级专政将实际成为以社会主义名义夺权的领导人的专政。
+
+
+口径与范围：马克思主义革命过渡；观察领导人专政；反证为群众民主统治；观察窗1911-01-01至2026-11-15。
+判定：美国国会图书馆据档案记载，布尔什维克夺权后由小型精英集团以法令和恐怖统治，重大决策集中于党内高层，符合革命过渡成为领导人专政的主结果。
+限制：早期工人曾尝试工厂自治，不能将群众参与全部抹去；判定仅指已发生的苏联过渡，不证明所有可能的社会主义过渡都相同。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-6b5d71c70a62](https://www.loc.gov/exhibits/archives/intn.html)；[ev-0c50e5dae8b8](https://www.cambridge.org/core/books/red-petrograd/076475776FD63ADF1F4AFE2BA346ABDC)
+
+### 41. TXT 第 21694—21698 行 · 部分符合
+
+记录：`txt-4ef752b19c-000958878-000959102`
+
+原文：The danger is imminent lest the social revolution should replace the visible and
+tangible dominant classes which now exist and act openly, by
+a clandestine demagogic oligarchy, pursuing its ends under the
+
+cloak of equality.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：社会革命可能用在平等外衣下行事的隐蔽煽动性寡头，取代现有公开的统治阶级。
+
+
+口径与范围：革命替代统治阶级；观察新寡头平等话语；反证为群众持续自治；观察窗1911-01-01至2026-11-15。
+判定：共产主义社会研究记载苏联和东欧形成明显分层、精英子女通过关系及教育延续地位，支持革命后新特权的问题；但中国研究又显示旧精英后代优势回归，不能将一切都说成全新隐蔽寡头的替换。
+限制：社会经济分层不是对“秘密煽动寡头”全部政治机制的证明，平等外衣、秘密操作及旧阶级完全替换并未全部得到核实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-76a7bde0111f](https://doi.org/10.1093/oxfordhb/9780199602056.013.029)；[ev-08efd8b394c7](https://www.nber.org/papers/w27053)
+
+### 42. TXT 第 21753—21762 行 · 暂无法判断
+
+记录：`txt-4ef752b19c-000961670-000962347`
+
+原文：Eudolf
+Goldscheid, who aims at a renascence of the socialist movement by the strengthening of the more energetic elements in
+that movement, rightly draws attention to a danger which
+socialism incurs, however brilliantly it may handle the problems of economic organization. If socialism, he says, fails to
+study the problem of individual rights, individual knowledge,
+and individual will, it will suffer shipwreck from a defective
+understanding of the significance of the problem of freedom
+for the higher evolution of our species ^will suffer shipwreck
+no less disastrous than that of earlier conceptions of world
+reform which, blinded by the general splendour of their vision,
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：社会主义若忽略个人权利、知识与意志问题，即便经济组织出色，也会因错误理解自由的重要性而失败。
+
+
+口径与范围：社会主义忽略个人权利；观察因自由问题失败；反证为持续成功；观察窗1911-01-01至2026-11-15。
+判定：人权观察确认苏联长期系统性侵犯人权并于1991年瓦解，但这不能单独证明忽略自由就是社会主义失败的决定机制；其他存档同时强调经济停滞、民族诉求及思想异议。
+限制：制度侵犯自由与其后崩溃并存不等于充分的因果检验，也没有“经济组织即使出色”条件下的可比证据。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-639b94af03ba](https://www.hrw.org/reports/1993/WR93/Hsw-07.htm)；[ev-5363d5031f66](https://www.hoover.org/research/last-empire)
+
+### 43. TXT 第 21906—21910 行 · 部分符合
+
+记录：`txt-4ef752b19c-000967237-000967520`
+
+原文：The leadership of the
+socialist party may fall into the hands of persons whose practical tendencies are in opposition with the programme of the
+working class, so that the labour movement will be utilized for
+the service of interests diametrically opposed to those of the
+proletariat.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：社会主义党领导权可能落入实际倾向反对工人纲领的人手中，劳工运动因而将被用于服务与无产阶级截然相反的利益。
+
+
+口径与范围：社会主义党领导违背工人纲领；观察政策服务相反利益；反证为符合工人；观察窗1911-01-01至2026-11-15。
+判定：New Labour在集体劳工权利方面拒绝逆转若干限制，符合工人党领导可能偏离工会利益的担忧；但同一材料记载最低工资和个体劳动权利改善，并非所有政策都服务于完全相反的利益。
+限制：工会利益不是全部无产阶级利益，不能把劳工党内部复杂的政策组合一概判为背叛工人。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-e859e1d0b4b8](https://historyandpolicy.org/policy-papers/papers/trade-unions-and-the-law-history-and-a-way-forward/)
+
+### 44. TXT 第 22022—22027 行 · 正确
+
+记录：`txt-4ef752b19c-000972539-000972783`
+
+原文：the truth of this
+axiom. One of these is the professor of philosophy, and socialist deputy
+of the Swedish Upper House, Gustaf F. Steffen, who declares:
+"Even
+after the victory, there will always remain in political life the leaders and
+the led"
+
+时间窗口：原文写出（after the victory）。
+
+扩展观点（解释，非原文）：社会主义胜利以后，政治生活中仍将始终存在领导者与被领导者。
+
+
+口径与范围：社会主义取得政权；观察领导与被领导继续存在；反证为消除；观察窗1911-01-01至2026-11-15。
+判定：苏联在1922—1991年间仍有明确的最高领导序列，领导人多通过掌握共产党领导权取得权力，社会主义者胜利后并未消除领导与被领导的政治区分。
+限制：只判已经观察到的社会主义政权，不将“始终”理解为已经验证了无限未来；委员会民主的制度理想也仍涉及代表。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-86555fbc9a4b](https://www.history.com/articles/soviet-union-leaders-order)
+
+### 45. TXT 第 22055—22060 行 · 部分符合
+
+记录：`txt-4ef752b19c-000973969-000974185`
+
+原文：Thus the social revolution would not effect any real modifiThe socialists
+cation of the internal structure of the mass.
+might conquer, but not socialism, which would perish in the
+'
+
+moment of its adherents' triumph.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：社会革命即使让社会主义者夺权，也不会改变群众的内部统治结构，社会主义理想将在支持者胜利时落空。
+
+
+口径与范围：社会主义者革命夺权；观察群众统治结构是否改变及理想；反证为群众实质赋权；观察窗1911-01-01至2026-11-15。
+判定：莫斯科1922—1923年研究发现新的统治集团与工人之间已形成剥削和对抗关系，支持革命胜利仍可能延续统治区分；但早期妇女和教育改革说明不能说社会主义的一切实际理想都同时落空。
+限制：局部统治阶级形成与群众内部结构完全不变、理想全部消亡不是同一强度命题。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-05529f2c4f1f](https://doi.org/10.1080/09546540600970856)；[ev-2250a3f4c463](https://alphahistory.com/russianrevolution/soviet-social-reforms/)
+
+### 46. TXT 第 22328—22331 行 · 排除：非预测
+
+记录：`txt-4ef752b19c-000984708-000984913`
+
+原文：the proletarians would necessarily suffer greatly from
+unemployment and poverty; consequently it was their supreme
+interest, and must be the supreme aim of their representatives,
+to avoid this eventuality;
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：德国社会民主党认为，德国在世界大战中战败将使德国无产者遭受严重失业与贫困。
+
+
+口径与范围：保留reported候选，不纳入作者可核验预测
+判定：仓库确定性归属规则将未获作者明确背书的reported预测降为unclear；保留原候选，不作作者预测判分。
+限制：并非因重复、含糊或不利结果而人工降级。战争增补章节按1915年识别，不以1911年误算已发生史实。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：claims_from_results原归属规则（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 47. TXT 第 22669 行 · 错误
+
+记录：`txt-4ef752b19c-000998911-000998956`
+
+原文：The mass will never rule except in abstracto.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：群众本身永远不会实际行使统治，只会在抽象意义上被称为统治者。
+
+
+口径与范围：群众实际统治；1911后；观察真实直接自决；反证为持续大规模群众治理；观察窗1911-01-01至2026-11-15。
+判定：Porto Alegre参与式预算把投资和支出的真实决定交给开放地方大会，让数千公民作实际决定并监督结果，不只是抽象称其为统治者，与群众永不实际治理的绝对断言冲突。
+限制：地方部分预算治理不是全国全部国家权力；反例只否定“永不、只有抽象”的无限断言，不能推出所有群众统治都成功。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-52fbc9434bf0](https://www.bostonreview.net/articles/gianpaolo-baiocchi-the-citizens-of-porto-alegre/)
+
+### 48. TXT 第 22818—22820 行 · 暂无法判断
+
+记录：`txt-4ef752b19c-001004762-001004990`
+
+原文：The objective immaturity of the mass is not a mere transitory
+phenomenon which will disappear with the progress of democratization au lendemain du socialisme. On the contrary, it
+derives from the very nature of the mass as mass,
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：群众在自我治理方面的不成熟不会随着民主化及社会主义的实现而消失。
+
+
+口径与范围：民主化社会主义后群众治理能力；观察不成熟是否消失；反证为成熟自治；观察窗1911-01-01至2026-11-15。
+判定：100项研究的元分析发现参与小型公共议事可提高知识和推理技能，这反对将群众能力视为完全不可改善；但能力改善仍不能证明原文所谓整体治理“不成熟”已经消失。
+限制：小规模议事者、全体群众以及社会主义实现是不同范围，不能将可学习性或知识分数直接当成完全治理成熟。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-6e122ce968fa](https://ejpr.onlinelibrary.wiley.com/doi/10.1111/1475-6765.12722)
+
+### 49. TXT 第 22951—22955 行 · 部分符合
+
+记录：`txt-4ef752b19c-001011102-001011446`
+
+原文：Now this predisposition towards
+free inquiry, in which we cannot fail to recognize one of the
+most precious factors of civilization, wiU gradually increase in
+proportion as the economic status of the masses undergoes improvement and becomes more stable, and in proportion as they
+are admitted more effectively to the advantages of civilization.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：随着群众经济地位改善并趋于稳定，以及更有效地享有文明成果，自由探究的倾向将逐渐增强。
+
+
+口径与范围：经济地位教育改善；观察自由探究批判能力增强；反证为不相关或降低；观察窗1911-01-01至2026-11-15。
+判定：跨社会WVS研究发现生活机会扩大伴随更强的解放价值倾向，支持经济和文明条件改善的一部分；但东亚比较发现高教育不必然带来相同自我表达变化，灌输教育也可增强威权动员。
+限制：解放价值、自我表达和自由探究并非同一测量；不以民主支持或一般教育程度冒充直接的批判探究能力。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-468152760008](https://pmc.ncbi.nlm.nih.gov/articles/PMC2848347/)；[ev-9c0b303a5901](https://doi.org/10.1186/s40856-018-0034-9)
+
+### 50. TXT 第 23028—23030 行 · 暂无法判断
+
+记录：`txt-4ef752b19c-001014152-001014382`
+
+原文：humanity comes to recognize the advantages which democracy,
+however imperfect, presents over aristocracy, even at its best,
+the less likely is it that a recognition of the defects of democracy will provoke a return to aristocracy.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：人类越认识到即使不完善的民主也优于最好的贵族制，就越不可能因看见民主缺陷而重返贵族制。
+
+
+口径与范围：认识民主优于贵族制；观察世袭贵族制回归减少；反证为重新拥护；观察窗1911-01-01至2026-11-15。
+判定：全球民意研究显示对民主有较强偏好，也同时出现对不受约束领导更为宽容；这些资料没有把“认识民主优于贵族制”与“因看见民主缺陷而回归贵族制”的概率变化直接联系起来。
+限制：世袭君主作为礼仪国家元首不等于贵族统治，故不把欧洲君主制存续机械当作反例。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-a180e0b23950](https://academic.oup.com/poq/article/85/4/957/6444257)；[ev-3f5ec9c8e8c2](https://onlinelibrary.wiley.com/doi/10.1111/1467-923X.12866)
+
+### 51. TXT 第 23051—23061 行 · 部分符合
+
+记录：`txt-4ef752b19c-001015234-001015795`
+
+原文：When democracies have gained a certain stage of
+development, they undergo a gradual transformation, adopting
+the artistocratic spirit, and in many cases also the aristocratic
+forms, against which at the outset they struggled so fi.ercely.
+
+Now new accusers arise to denounce the traitors; after an era
+glorious combats and of inglorious power, they end by
+fusing with the old dominant class whereupon once more they
+are in their turn attacked by fresh opponents who appeal to
+the name of democracy. It is probable that this cruel game
+will continue without end.
+
+时间窗口：隐含，从出版年 1911 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：民主运动发展后贵族化、反对派夺权后又与旧统治阶级融合并被新反对派攻击的循环，很可能无休止地继续。
+
+
+口径与范围：民主反对派胜利再寡头化并被新反对派取代；观察循环；反证为长期稳定基层民主；观察窗1911-01-01至2026-11-15。
+判定：Podemos和五星运动研究发现线上协商仍由领导层控制议题和时机，符合民主运动重新集中权力的一阶段；德国绿党及工会民主研究又表明领导支配并非不可避免。
+限制：存档并未验证不断与旧统治阶级融合、再由新反对派取代的完整无限循环；这是实质环节缺证，不是单纯因尚未到终点而降为趋势。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块完整人工抽取后，预先固定scope；Exa正反各1查询，证据不足主题第二轮改策略自适应（每条2查询，总计≤4查询），仅从真实返回URL选≤8源；阅读存档相关段落，手写引文、中文判定及六项语义审查。未使用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-934fdb6e6cce](https://ijoc.org/index.php/ijoc/article/download/10804/2874)；[ev-3d1de8fec2a5](https://journals.sagepub.com/doi/10.1177/0010414089022002004)
+
+## 证据登记
+
+哈希校验只证明本地保存内容未改变。检索摘录与完整原始文件会按证据记录注明；两者均不能代替对来源与命题对应关系的判断。
+
+- [ev-d8f66a509f95](https://www.dbnl.org/tekst/daal024stat01_01/daal024stat01_01_0010.php)；资料日期：未确定；覆盖：chapter seven | parties and political mobilization: an initial mapping, State formation, parties and democracy. Studies in comparative European politics, Hans Daalder - DBNL。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-a91bb8b0acae](https://czasopisma.uksw.edu.pl/p/article/download/2378/2225/3772)；资料日期：未确定；覆盖：The cartel party, consensus democracy and democracy without politics。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-a2b4801f81bf](https://www.cambridge.org/core/journals/modern-intellectual-history/article/democracy-and-direct-legislation-during-the-french-second-republic/51F134C550FBE51004FB34D93AE0B017)；资料日期：2024-11-27；覆盖：Democracy and Direct Legislation during the French Second Republic | Modern Intellectual History | Cambridge Core。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-837227b88c2b](https://www.yourparty.uk/briefing/)；资料日期：2025-11-29；覆盖：Delegate Briefing | Your Party。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-a9ea0db8e2e9](https://sequentech.io/case-study/bringing-online-voting-to-spanish-political-party-podemos/)；资料日期：2022-11-16；覆盖：Bringing Online Voting to Spanish Political Party, Podemos - Sequent。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-48d080eed74e](https://academic.oup.com/gh/article-abstract/29/1/23/897025)；资料日期：2011-03-01；覆盖：Oligarchy in Miniature? Robert Michels and the Marburg Branch of the German Social Democratic Party* | German History | Oxford Academic。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-5c444a232ba0](https://dissentmagazine.org/article/the-printers-and-the-iron-law/)；资料日期：未确定；覆盖：The Printers and the "Iron Law" - Dissent Magazine。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-45400448025c](https://ejpr.onlinelibrary.wiley.com/doi/10.1111/j.1475-6765.1994.tb00418.x)；资料日期：未确定；覆盖：How iron is the iron law of oligarchy?。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-d4826277bd34](https://blogs.lse.ac.uk/politicsandpolicy/scotland-has-a-new-first-minister-but-is-it-the-same-old-scottish-politics/)；资料日期：2023-03-29；覆盖：Scotland has a new First Minister, but is it the same old Scottish politics? | LSE British Politics。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-cfea30b3f428](https://doi.org/10.1017/s0020859000113689)；资料日期：1996-04-01；覆盖：Workers, the Intelligentsia and Marxist Parties: St Petersburg, 1895–1917 and Shanghai, 1921–1927。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-816458d1c09a](https://theconversation.com/beyond-my-dad-was-a-toolmaker-interviews-with-former-politicians-reveal-what-its-really-like-to-be-working-class-in-parliament-232240)；资料日期：2024-06-27；覆盖：Beyond ‘my dad was a toolmaker’: interviews with former politicians reveal what it’s really like to be working class in parliament。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-ad089d2383d7](https://weimar.bundesarchiv.de/WEIMAR/DE/Content/Virtuelle-Ausstellungen/Raete-Revolution-Republik/KAPD.html)；资料日期：未确定；覆盖：Bundesarchiv Internet  -  Kommunistische Arbeiterpartei Deutschlands。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-a32edc130407](https://www.smh.com.au/national/rudd-dumping-cost-votes-survey-20110407-1d6cu.html)；资料日期：2011-04-07；覆盖：Rudd dumping cost votes: survey。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-a39ee779f4f8](https://www.bbc.co.uk/news/10399230)；资料日期：2010-06-24；覆盖：Kevin Rudd's rapid fall from grace - BBC News。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-c083401d1f22](https://ivu.org/home/2780-history-thesis-political.html)；资料日期：2026-10-15；覆盖：The Vegetarian Movement in England, 1847-1981: Political Links - IVU - International Vegetarian Union。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-c313b405d65a](https://www.leftvoice.org/excluded-from-the-npa-we-begin-the-process-of-building-a-new-revolutionary-organization-statement-of-296-npa-activists/)；资料日期：2021-06-10；覆盖：Excluded from the NPA, We Begin the Process of Building a New Revolutionary Organization: Statement of 296 NPA Activists - Left Voice。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-540530419c1d](https://ora.ox.ac.uk/objects/uuid:2695a39f-fd0b-4c09-b5dc-bfa69b477d2d/files/rx633f2853)；资料日期：未确定；覆盖：Clientelism, Party Organization and Intra-party Democracy。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-b3606bd90f64](https://www.weimarer-republik.net/en/weimar-gateway/timeline-of-the-weimar-republic/1918/october-1918/)；资料日期：未确定；覆盖：October 1918 / Weimarer Republik。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-823428a4ecd5](https://www.weimarer-republik.net/en/weimar-gateway/people-whos-who-of-the-weimar-republic/parties/spd/)；资料日期：未确定；覆盖：SPD / Weimarer Republik。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-4a5ac1896a60](https://library.fes.de/fulltext/bibliothek/chronik/band1/e235e824.html)；资料日期：未确定；覆盖：Chronik der deutschen Sozialdemokratie. - Band 1. - Stichtag: 12. Dez. 1912。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-3956ab90ad58](https://germanhistorydocs.org/en/weimar-germany-1918-1933/platform-of-the-social-democratic-party-1921)；资料日期：未确定；覆盖：Platform of the Social Democratic Party (1921) |             German History in Documents and Images。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-d43e17421be3](https://www.deutschland.de/en/topic/politics/the-spd-parties-in-the-german-bundestag)；资料日期：2025-05-05；覆盖：The SPD | Parties in the German Bundestag。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-c5bc5192ad02](https://library.fes.de/fulltext/bibliothek/chronik/band1/e235e856.html)；资料日期：未确定；覆盖：Chronik der deutschen Sozialdemokratie. - Band 1. - Stichtag: 31. März 1914。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-6403152f5279](https://theanarchistlibrary.org/library/wild-socialism-workers-councils-in-revolutionary-berlin-1918-21)；资料日期：未确定；覆盖：Wild Socialism: Workers’ Councils in Revolutionary Berlin, 1918–21 | The Anarchist Library。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-01680d71a0b7](https://www.9colonne.it/72685/storia-e-stipendi-br-dei-parlamentari)；资料日期：未确定；覆盖：9Colonne | STORIA E STIPENDI  DEI PARLAMENTARI。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-e01760939934](https://library.fes.de/fulltext/bibliothek/chronik/band2/e235f110.html)；资料日期：未确定；覆盖：Chronik der deutschen Sozialdemokratie. - Band 2. - Stichtag: 10./15. Juni 1919。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-228402b92200](https://doi.org/10.17813/maiq.4.2.l2680365q32h6616)；资料日期：1999-09-01；覆盖：Linking Organization and Mobilization: Michels'S Iron Law of Oligarchy Reconsidered。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-91bad33c37f9](https://theconversation.com/just-how-far-has-jeremy-corbyn-come-and-how-far-could-he-still-go-79206)；资料日期：2017-06-11；覆盖：Just how far has Jeremy Corbyn come – and how far could he still go?。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-7286deec3526](https://labornotes.org/2023/01/what-todays-union-reformers-can-learn-miners-democracy?language=en)；资料日期：2023-01-06；覆盖：What Today's Union Reformers Can Learn from Miners for Democracy | Labor Notes。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-26fd03d7706c](https://en.wikipedia.org/wiki/Independent_Social_Democratic_Party_of_Germany)；资料日期：2026-11-03；覆盖：Independent Social Democratic Party of Germany。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-a2e39d74ec27](https://www.cambridge.org/core/services/aop-cambridge-core/content/view/109518D106574FD97ECAF95BEDFAA194/S0020859000005599a.pdf/revolutionary_socialist_internationalism_rankandfile_reaction_in_the_uspd.pdf)；资料日期：未确定；覆盖：Revolutionary Socialist Internationalism: Rank-and-File Reaction in the USPD。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-6ef8b2893a97](https://api.politifact.com/factchecks/2018/nov/15/patrick-morrisey/how-late-did-joe-manchin-decide-kavanaugh-vote/)；资料日期：2018-11-15；覆盖：PolitiFact | How late did Joe Manchin decide on Kavanaugh vote?。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-080fd5d5791f](https://www.politico.com/story/2018/11/06/patrick-morrisey-vs-joe-manchin-west-virginia-senate-race-results-2018-963524)；资料日期：2018-11-07；覆盖：Joe Manchin retains West Virginia Senate seat for Democrats - POLITICO。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-43261e32f795](https://www.bpb.de/shop/zeitschriften/apuz/archiv/530403/innerverbandliche-demokratie-privatsadie-oder-politikum/)；资料日期：2023-11-15；覆盖：Innerverbandliche Demokratie — Privatsadie oder Politikum? | APuZ 8/1977 | bpb.de。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-ee963f9ad34d](https://www.igmetall.de/en/ueber-uns/organisation-und-aufbau)；资料日期：未确定；覆盖：Organization and Structure of IG Metall。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-90ac36d01150](https://en.wikipedia.org/wiki/Constitution_of_Prussia_(1920))；资料日期：2026-04-11；覆盖：Constitution of Prussia (1920)。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-e5e69423646f](https://doi.org/10.4324/9781315841816-11)；资料日期：2014-06-11；覆盖：Democratic Prussia in Weimar Germany, 1919–33。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-d63bfdbab9e5](https://www.hoover.org/research/how-solidarity-arose)；资料日期：2000-01-30；覆盖：How Solidarity Arose | Hoover Institution How Solidarity Arose。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-6c3f35a5af7d](https://eng.ipn.gov.pl/download/2/32615/GmitrukJWiesichlopiENCorkor-skonwertowany1.pdf)；资料日期：未确定；覆盖：Janusz Gmitruk Head of the Museum of the Polish Peasant Movement in Warsaw。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-42f44f8f1023](https://strathprints.strath.ac.uk/1525/5/Corr_OUP2004_Agnes_Hardie_daughter_Keir_Hardie_1885_1947_socialist_political_activist.pdf)；资料日期：未确定；覆盖：Helen Corr, ‘Hardie , Agnes Paterson [Nan] (1885–1947)’, Oxford Dictionary of National Biography, Oxford University Press, 2004 [http://www。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-ef2ed7b0ca9f](https://www.cambridge.org/core/journals/british-journal-of-political-science/article/abs/politics-of-affluent-and-traditional-workers-in-britain-an-aggregate-data-analysis/0C9C55E529D2A6CABD25BD02981EC9E8)；资料日期：未确定；覆盖：The Politics of ‘Affluent’ and ‘Traditional’ Workers in Britain: an Aggregate Data Analysis。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-f44b56da9a5c](https://n1info.hr/english/news/a575501-Judge-Insatiable-Sanader-used-his-power-to-detriment-of-all-citizens/)；资料日期：2020-11-13；覆盖：Judge: Insatiable Sanader used his power to detriment of all citizens
+                - Vijesti iz Hrvatske, regije i svijeta - N1 info。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-fb3004dcb007](https://moving-the-social.ub.rub.de/index.php/MTS/article/view/7629)；资料日期：2015-01-24；覆盖：Die Sozialistischen Monatshefte und die Akademikerdebatte in der deutschen Sozialdemokratie vor 1914: Die „Fälle“ Göhre, Schippel, Calwer und Hildebrand
+							| Moving the Social。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-9940ac2ab764](https://www.cambridge.org/core/journals/international-labor-and-working-class-history/article/developing-the-politics-of-the-trade-union-movement-popular-workers-education-in-south-yorkshire-uk-1955-to-1985/0839487E420E5C76070D3BD792FB6F7B)；资料日期：2016-10-12；覆盖：Developing the Politics of the Trade Union Movement: Popular Workers’ Education in South Yorkshire, UK, 1955 to 1985 | International Labor and Working-Class History | Cambridge Core。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-3b7e8dc43421](https://www.parliament.uk/business/publications/research/olympic-britain/parliament-and-elections/representatives-of-society/)；资料日期：未确定；覆盖：Representatives of society。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-f0a6f4478cca](https://aceproject.org/ace-en/focus/direct-democracy/cs-swiss)；资料日期：未确定；覆盖：Swiss Direct Democracy —。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-90c8c1cdb48a](https://kops.uni-konstanz.de/server/api/core/bitstreams/34b0ad89-9ad4-4f8e-b992-dc363aad83ee/content)；资料日期：未确定；覆盖：Stumbling block or stepping stone? The influence of direct democracy on individual participation in parliamentary elections。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-52b823dea7c3](https://libcom.org/history/reflections-shoe-industry-strike-assembly-movement-alicante-1977)；资料日期：2009-01-12；覆盖：Reflections on the shoe industry strike and assembly movement in Alicante, 1977 | libcom.org。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-da751cd66ae6](https://www.nobelprize.org/prizes/peace/1983/walesa/speedread/)；资料日期：未确定；覆盖：Lech Wałęsa – Speed read - NobelPrize.org。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-cacd90909d14](https://www.dhm.de/mediathek/en/weimar-the-essence-and-value-of-democracy/government-programme/elections/)；资料日期：未确定；覆盖：Elections。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-782b0f267d82](https://www.cambridge.org/core/journals/government-and-opposition/article/portuguese-radical-left-parties-supporting-government-from-policytakers-to-policymakers/66DD31FA8DAF7F66F2CCD67236C59DAF/share/fe72cfa567a87ad75596263473d4c29ce8fa953c)；资料日期：未确定；覆盖：The Portuguese Radical Left Parties Supporting Government: From Policy-Takers to Policymakers?。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-9286847b8829](https://encyclopedia.ushmm.org/content/en/article/the-russian-revolution-1917)；资料日期：未确定；覆盖：Russian Revolution, 1917 | Holocaust Encyclopedia。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-28df92716f61](https://www.cambridge.org/core/journals/slavic-review/article/1917-revolution-as-demobilization-and-state-collapse/E9C85596FBF6C8E74ED87ABDAEC7563E)；资料日期：2017-10-23；覆盖：1917: Revolution as Demobilization and State Collapse | Slavic Review | Cambridge Core。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-7b79e23d4eb0](https://encyclopedia.ushmm.org/content/en/article/otto-wels)；资料日期：未确定；覆盖：Otto Wels | Holocaust Encyclopedia。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-c6d12807ff56](https://www.encyclopedia.com/history/modern-europe/russian-soviet-and-cis-history/command-economy)；资料日期：未确定；覆盖：Command Economy | Encyclopedia.com。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-6b5d71c70a62](https://www.loc.gov/exhibits/archives/intn.html)；资料日期：未确定；覆盖：Internal Workings of the Soviet Union - Revelations from the Russian Archives | Exhibitions - Library of Congress。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-0c50e5dae8b8](https://www.cambridge.org/core/books/red-petrograd/076475776FD63ADF1F4AFE2BA346ABDC)；资料日期：未确定；覆盖：Red Petrograd。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-76a7bde0111f](https://doi.org/10.1093/oxfordhb/9780199602056.013.029)；资料日期：2013-12-16；覆盖：Privilege and Inequality in Communist Society。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-08efd8b394c7](https://www.nber.org/papers/w27053)；资料日期：2020-04-27；覆盖：Persistence Despite Revolutions | NBER。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-639b94af03ba](https://www.hrw.org/reports/1993/WR93/Hsw-07.htm)；资料日期：未确定；覆盖：THE FORMER SOVIET UNION。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-5363d5031f66](https://www.hoover.org/research/last-empire)；资料日期：未确定；覆盖：The Last Empire | Hoover Institution The Last Empire。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-e859e1d0b4b8](https://historyandpolicy.org/policy-papers/papers/trade-unions-and-the-law-history-and-a-way-forward/)；资料日期：2007-09-16；覆盖：Trade unions and the law - history and a way forward? - History & Policy。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-86555fbc9a4b](https://www.history.com/articles/soviet-union-leaders-order)；资料日期：2022-03-10；覆盖：Soviet Union Leaders: A Timeline | HISTORY。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-05529f2c4f1f](https://doi.org/10.1080/09546540600970856)；资料日期：2006-10-30；覆盖：THE PARTY ELITE, THE INDUSTRIAL MANAGERS AND THE CELLS: EARLY STAGES IN THE FORMATION OF THE SOVIET RULING CLASS IN MOSCOW, 1922–23。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-2250a3f4c463](https://alphahistory.com/russianrevolution/soviet-social-reforms/)；资料日期：2025-02-04；覆盖：Soviet social reforms。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-52fbc9434bf0](https://www.bostonreview.net/articles/gianpaolo-baiocchi-the-citizens-of-porto-alegre/)；资料日期：2006-03-01；覆盖：The Citizens of Porto Alegre - Boston Review。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-6e122ce968fa](https://ejpr.onlinelibrary.wiley.com/doi/10.1111/1475-6765.12722)；资料日期：未确定；覆盖：A meta-analysis of the effects of democratic innovations on participants’ attitudes, behaviour and capabilities。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-468152760008](https://pmc.ncbi.nlm.nih.gov/articles/PMC2848347/)；资料日期：2010-02-18；覆盖：Agency, Values, and Well-Being: A Human Development Model。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-9c0b303a5901](https://doi.org/10.1186/s40856-018-0034-9)；资料日期：2018-08-22；覆盖：Values and democracy in East Asia and Europe: a comparison。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-a180e0b23950](https://academic.oup.com/poq/article/85/4/957/6444257)；资料日期：2021-11-26；覆盖：Humanity’s Attitudes about Democracy and Political Leaders | Public Opinion Quarterly | Oxford Academic。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-3f5ec9c8e8c2](https://onlinelibrary.wiley.com/doi/10.1111/1467-923X.12866)；资料日期：未确定；覆盖：European Monarchies: Guardians of Democracy?。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-934fdb6e6cce](https://ijoc.org/index.php/ijoc/article/download/10804/2874)；资料日期：未确定；覆盖：The Impact of Online Participation Platforms on the Internal Democracy of Two Southern European Parties: Podemos and the Five Star Movement。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。
+- [ev-3d1de8fec2a5](https://journals.sagepub.com/doi/10.1177/0010414089022002004)；资料日期：未确定；覆盖：Party Structures and Democracy - THOMAS A. KOELBLE, 1989。限制：实际Exa正文存档；仅支持所引事实，未注明发布日期则null。长文可能受maxCharacters截断；不声称通读整份证据文献。

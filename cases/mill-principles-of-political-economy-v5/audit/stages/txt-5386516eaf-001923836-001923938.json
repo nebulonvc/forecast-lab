@@ -1,0 +1,82 @@
+{
+  "id": "txt-5386516eaf-001923836-001923938",
+  "assess": {
+    "id": "txt-5386516eaf-001923836-001923938",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "妇女取得工业和社会独立之后，可能出现的后果之一是人口过多这一祸害大幅减轻。",
+    "reason": "英格兰和威尔士粗出生率从1877年开始陡降，同时已婚妇女前所未有地离开劳动力。下降发生在离开有酬工作的时期，不能当成工业独立的后果。",
+    "limitation": "后来已婚妇女参与率上升是另一时期，这一页没有把它写成这句后果已经实现。",
+    "evidence_ids": [
+      "ev-fertility-1877"
+    ],
+    "method": "支持检索生育下降是否跟着妇女独立，反证检索下降是否发生在离开劳动之时。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "not_met",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-fertility-1877",
+        "quote": "began its steep decline in 1877 (Wrigley & Schofield, 1981)",
+        "relation": "boundary",
+        "limitation": "1877年开始陡降。",
+        "observation_end": "1877-12-31",
+        "publication_date": "2025-12",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-fertility-1877",
+        "quote": "unprecedented shift of married women out of the labour force, in contrast to the situation after the post-Second World War baby boom (Hewitt, 1958; Tilly & Scott, 1978)",
+        "relation": "counter",
+        "limitation": "下降伴随离开劳动力。",
+        "observation_end": "1911-12-31",
+        "publication_date": "2025-12",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺妇女工业与社会独立已经发生、并且人口过多因此大幅减轻的同对象证据。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001923836-001923938",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "female employment rise and fertility decline after 1909"
+      },
+      {
+        "role": "counter",
+        "query": "fertility decline while married women left paid work"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://api.repository.cam.ac.uk/server/api/core/bitstreams/bcae5cf9-716c-49cc-8e6a-41b099326388/content"
+    ],
+    "reason": "下降与离开劳动同时，不是独立的后果。"
+  }
+}

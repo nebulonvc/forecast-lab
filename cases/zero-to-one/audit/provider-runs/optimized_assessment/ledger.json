@@ -1,0 +1,2106 @@
+{
+  "created_at": "2026-11-09T05:19:40.310080+00:00",
+  "endpoint": "https://api.deepseek.com/chat/completions",
+  "estimated_peak_prices_CNY_per_million": {
+    "cache_hit": 0.04,
+    "cache_miss": 2.0,
+    "output": 8.0
+  },
+  "estimated_off_peak_prices_CNY_per_million": {
+    "cache_hit": 0.02,
+    "cache_miss": 1.0,
+    "output": 4.0
+  },
+  "calls": {
+    "819d47afe98c1df0dae9460fe1cec6170aa4e72db4418575ea431a4f0605c37a": {
+      "stage": "assess",
+      "batch": 1,
+      "started_at": "2026-11-09T05:19:40.311347+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.112046,
+      "request_sha256": "819d47afe98c1df0dae9460fe1cec6170aa4e72db4418575ea431a4f0605c37a",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:44.746004+00:00",
+      "usage": {
+        "prompt_tokens": 5635,
+        "completion_tokens": 479,
+        "total_tokens": 6114,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 5635
+      },
+      "estimated_cost_CNY": 0.015102,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "2a885d3d6d346684bc533488df5f0f22c93c0d0b17d47826c9d79d0b585f0ecd": {
+      "stage": "assess",
+      "batch": 2,
+      "started_at": "2026-11-09T05:19:40.313461+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.103832,
+      "request_sha256": "2a885d3d6d346684bc533488df5f0f22c93c0d0b17d47826c9d79d0b585f0ecd",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:42.987079+00:00",
+      "usage": {
+        "prompt_tokens": 4446,
+        "completion_tokens": 237,
+        "total_tokens": 4683,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 4446
+      },
+      "estimated_cost_CNY": 0.010788,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "30f387bdc68463090fa11aeb90e72c7c1fed33a87be3cad9c220b50b7e4b8878": {
+      "stage": "assess",
+      "batch": 3,
+      "started_at": "2026-11-09T05:19:40.313927+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.104504,
+      "request_sha256": "30f387bdc68463090fa11aeb90e72c7c1fed33a87be3cad9c220b50b7e4b8878",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:43.164963+00:00",
+      "usage": {
+        "prompt_tokens": 4442,
+        "completion_tokens": 216,
+        "total_tokens": 4658,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 4442
+      },
+      "estimated_cost_CNY": 0.010612,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "308f9ce8aa631f1bb6c9b04ad91b3a4c35254ff910e0c68a3ca4391dd8d1f1c1": {
+      "stage": "assess",
+      "batch": 5,
+      "started_at": "2026-11-09T05:19:40.314344+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.104668,
+      "request_sha256": "308f9ce8aa631f1bb6c9b04ad91b3a4c35254ff910e0c68a3ca4391dd8d1f1c1",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:43.549499+00:00",
+      "usage": {
+        "prompt_tokens": 4497,
+        "completion_tokens": 265,
+        "total_tokens": 4762,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 4497
+      },
+      "estimated_cost_CNY": 0.011114,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "4b30c165a863a84a7852c0fa4cd4063fdc5d35c1f534a33849c17713966380e4": {
+      "stage": "assess",
+      "batch": 4,
+      "started_at": "2026-11-09T05:19:40.314779+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.118776,
+      "request_sha256": "4b30c165a863a84a7852c0fa4cd4063fdc5d35c1f534a33849c17713966380e4",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:46.549256+00:00",
+      "usage": {
+        "prompt_tokens": 6711,
+        "completion_tokens": 765,
+        "total_tokens": 7476,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 6711
+      },
+      "estimated_cost_CNY": 0.019542,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price",
+      "parse_error": "ValueError"
+    },
+    "8c7700f37b3492a834a0ad94c4482664023dfa72be07aa74b235acbc38f0161b": {
+      "stage": "assess",
+      "batch": 6,
+      "started_at": "2026-11-09T05:19:40.315662+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.104618,
+      "request_sha256": "8c7700f37b3492a834a0ad94c4482664023dfa72be07aa74b235acbc38f0161b",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:41.878889+00:00",
+      "usage": {
+        "prompt_tokens": 4571,
+        "completion_tokens": 150,
+        "total_tokens": 4721,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 4571
+      },
+      "estimated_cost_CNY": 0.010342,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "14ad4fd00291c1108385449e0e6d3ee5e082d396539b788184180ccf01b7ad87": {
+      "stage": "assess",
+      "batch": 7,
+      "started_at": "2026-11-09T05:19:40.316229+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.105992,
+      "request_sha256": "14ad4fd00291c1108385449e0e6d3ee5e082d396539b788184180ccf01b7ad87",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:42.042957+00:00",
+      "usage": {
+        "prompt_tokens": 4732,
+        "completion_tokens": 155,
+        "total_tokens": 4887,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 4732
+      },
+      "estimated_cost_CNY": 0.010704,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "5cab4314b9507174b4183021241857ee778057c4964449ec028bcdbb7a4adede": {
+      "stage": "assess",
+      "batch": 8,
+      "started_at": "2026-11-09T05:19:40.317091+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.106006,
+      "request_sha256": "5cab4314b9507174b4183021241857ee778057c4964449ec028bcdbb7a4adede",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:43.038191+00:00",
+      "usage": {
+        "prompt_tokens": 4649,
+        "completion_tokens": 242,
+        "total_tokens": 4891,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 4649
+      },
+      "estimated_cost_CNY": 0.011234,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "816615bc8271ba7a47a24f9b0e299d2090839328489bea5117350964f1f50a38": {
+      "stage": "assess",
+      "batch": 9,
+      "started_at": "2026-11-09T05:19:40.317782+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.10373,
+      "request_sha256": "816615bc8271ba7a47a24f9b0e299d2090839328489bea5117350964f1f50a38",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:42.298488+00:00",
+      "usage": {
+        "prompt_tokens": 4417,
+        "completion_tokens": 151,
+        "total_tokens": 4568,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 4417
+      },
+      "estimated_cost_CNY": 0.010042,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "3ff6a61037995a4937b193c6f30e9418e34245526e646b6aaeca68665e8e2d6b": {
+      "stage": "assess",
+      "batch": 10,
+      "started_at": "2026-11-09T05:19:40.318898+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.103744,
+      "request_sha256": "3ff6a61037995a4937b193c6f30e9418e34245526e646b6aaeca68665e8e2d6b",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:42.954986+00:00",
+      "usage": {
+        "prompt_tokens": 4337,
+        "completion_tokens": 224,
+        "total_tokens": 4561,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 4337
+      },
+      "estimated_cost_CNY": 0.010466,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "450cef5d47c1dbce96b47aa564be0ae2b3a14b45c95975d8da5390ef4b6b9440": {
+      "stage": "assess",
+      "batch": 11,
+      "started_at": "2026-11-09T05:19:40.320985+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.109034,
+      "request_sha256": "450cef5d47c1dbce96b47aa564be0ae2b3a14b45c95975d8da5390ef4b6b9440",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:44.320118+00:00",
+      "usage": {
+        "prompt_tokens": 5206,
+        "completion_tokens": 422,
+        "total_tokens": 5628,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 5206
+      },
+      "estimated_cost_CNY": 0.013788,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "56b6e57d031b53185587416bfddc2cfd7c75db91aa5c4da4fef02f786aff8d1d": {
+      "stage": "assess",
+      "batch": 12,
+      "started_at": "2026-11-09T05:19:40.322226+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.11638,
+      "request_sha256": "56b6e57d031b53185587416bfddc2cfd7c75db91aa5c4da4fef02f786aff8d1d",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:45.334018+00:00",
+      "usage": {
+        "prompt_tokens": 6455,
+        "completion_tokens": 558,
+        "total_tokens": 7013,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 5687
+      },
+      "estimated_cost_CNY": 0.01586872,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "b9b7f4f60656d14495acc9129a71ebe46f2fe928714c9afed0c90504e724c57d": {
+      "stage": "assess",
+      "batch": 13,
+      "started_at": "2026-11-09T05:19:40.324028+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.11631,
+      "request_sha256": "b9b7f4f60656d14495acc9129a71ebe46f2fe928714c9afed0c90504e724c57d",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:45.151910+00:00",
+      "usage": {
+        "prompt_tokens": 6430,
+        "completion_tokens": 631,
+        "total_tokens": 7061,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 6430
+      },
+      "estimated_cost_CNY": 0.017908,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "3649b23be11da18eeaff8d8fe91450c8b2f8160f0c6ed9afe288017cab7da4da": {
+      "stage": "assess",
+      "batch": 14,
+      "started_at": "2026-11-09T05:19:40.325618+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.117774,
+      "request_sha256": "3649b23be11da18eeaff8d8fe91450c8b2f8160f0c6ed9afe288017cab7da4da",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:44.881465+00:00",
+      "usage": {
+        "prompt_tokens": 6614,
+        "completion_tokens": 639,
+        "total_tokens": 7253,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 6614
+      },
+      "estimated_cost_CNY": 0.01834,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "9d74b310c874d006e11bf4a585b8350b1b58728b2b6bf74f7fcdf06f0d473977": {
+      "stage": "assess",
+      "batch": 15,
+      "started_at": "2026-11-09T05:19:40.329375+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.103268,
+      "request_sha256": "9d74b310c874d006e11bf4a585b8350b1b58728b2b6bf74f7fcdf06f0d473977",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:42.300306+00:00",
+      "usage": {
+        "prompt_tokens": 4362,
+        "completion_tokens": 155,
+        "total_tokens": 4517,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 4362
+      },
+      "estimated_cost_CNY": 0.009964,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "f461c2ec231ed8a5382b53ae5f29ee2c4009f052437c76e8f18cfb697efd0648": {
+      "stage": "assess",
+      "batch": 17,
+      "started_at": "2026-11-09T05:19:40.330463+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.107864,
+      "request_sha256": "f461c2ec231ed8a5382b53ae5f29ee2c4009f052437c76e8f18cfb697efd0648",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:43.786353+00:00",
+      "usage": {
+        "prompt_tokens": 5054,
+        "completion_tokens": 345,
+        "total_tokens": 5399,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 5054
+      },
+      "estimated_cost_CNY": 0.012868,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "1f7b5d5ef92d958ec26e012fb9d2566ef4610fd0e57551c85d1d4709c5c2e08f": {
+      "stage": "assess",
+      "batch": 16,
+      "started_at": "2026-11-09T05:19:40.331319+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.10431,
+      "request_sha256": "1f7b5d5ef92d958ec26e012fb9d2566ef4610fd0e57551c85d1d4709c5c2e08f",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:42.962813+00:00",
+      "usage": {
+        "prompt_tokens": 4372,
+        "completion_tokens": 210,
+        "total_tokens": 4582,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 4372
+      },
+      "estimated_cost_CNY": 0.010424,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "1cfadc3c742adcb9894671ac7d650e3d892e4841aa2fbaf851a703c230ddea69": {
+      "stage": "assess",
+      "batch": 18,
+      "started_at": "2026-11-09T05:19:40.331753+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.10871,
+      "request_sha256": "1cfadc3c742adcb9894671ac7d650e3d892e4841aa2fbaf851a703c230ddea69",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:43.166864+00:00",
+      "usage": {
+        "prompt_tokens": 5104,
+        "completion_tokens": 298,
+        "total_tokens": 5402,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 5104
+      },
+      "estimated_cost_CNY": 0.012592,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "09475ca3e32deb9d13c45523e3d966993b82cbcf5d068ae6e27e764df3910e71": {
+      "stage": "assess",
+      "batch": 19,
+      "started_at": "2026-11-09T05:19:40.332185+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.104358,
+      "request_sha256": "09475ca3e32deb9d13c45523e3d966993b82cbcf5d068ae6e27e764df3910e71",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:42.852962+00:00",
+      "usage": {
+        "prompt_tokens": 4376,
+        "completion_tokens": 194,
+        "total_tokens": 4570,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 4376
+      },
+      "estimated_cost_CNY": 0.010304,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "e70beed3f32fa8af7f86a61859304b251f5c6a5d43854fbff5a21aa572431192": {
+      "stage": "assess",
+      "batch": 20,
+      "started_at": "2026-11-09T05:19:40.332665+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.103916,
+      "request_sha256": "e70beed3f32fa8af7f86a61859304b251f5c6a5d43854fbff5a21aa572431192",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:42.305182+00:00",
+      "usage": {
+        "prompt_tokens": 4333,
+        "completion_tokens": 192,
+        "total_tokens": 4525,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 4333
+      },
+      "estimated_cost_CNY": 0.010202,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "e4f16bf2657d5956c8bcb3cbfb4de9c0f4f8c3f54a13b00222fd6eca613b053c": {
+      "stage": "assess",
+      "batch": 21,
+      "started_at": "2026-11-09T05:19:41.883013+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.108212,
+      "request_sha256": "e4f16bf2657d5956c8bcb3cbfb4de9c0f4f8c3f54a13b00222fd6eca613b053c",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:45.796258+00:00",
+      "usage": {
+        "prompt_tokens": 5063,
+        "completion_tokens": 367,
+        "total_tokens": 5430,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4295
+      },
+      "estimated_cost_CNY": 0.01155672,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "9a8694c8fdf44642c6a9fd8eb58e32ce3649f207fade6467ebf1b5b92e1064b4": {
+      "stage": "assess",
+      "batch": 22,
+      "started_at": "2026-11-09T05:19:42.046526+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.10864,
+      "request_sha256": "9a8694c8fdf44642c6a9fd8eb58e32ce3649f207fade6467ebf1b5b92e1064b4",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:44.882434+00:00",
+      "usage": {
+        "prompt_tokens": 5059,
+        "completion_tokens": 290,
+        "total_tokens": 5349,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4291
+      },
+      "estimated_cost_CNY": 0.01093272,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "6957c3dd9fbcb5000c0ed8fcd0726a2fb01f50d51ee6fc9ed532f184472c78f1": {
+      "stage": "assess",
+      "batch": 23,
+      "started_at": "2026-11-09T05:19:42.302733+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.108734,
+      "request_sha256": "6957c3dd9fbcb5000c0ed8fcd0726a2fb01f50d51ee6fc9ed532f184472c78f1",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:44.779049+00:00",
+      "usage": {
+        "prompt_tokens": 5075,
+        "completion_tokens": 277,
+        "total_tokens": 5352,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4307
+      },
+      "estimated_cost_CNY": 0.010860719999999999,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "9429cf2ebdb8ce54fd55843fd6f9d95d32b4be3986dd5cf9933eca6e19bad21e": {
+      "stage": "assess",
+      "batch": 24,
+      "started_at": "2026-11-09T05:19:42.304378+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.133822,
+      "request_sha256": "9429cf2ebdb8ce54fd55843fd6f9d95d32b4be3986dd5cf9933eca6e19bad21e",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:46.149339+00:00",
+      "usage": {
+        "prompt_tokens": 7747,
+        "completion_tokens": 366,
+        "total_tokens": 8113,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 6979
+      },
+      "estimated_cost_CNY": 0.01691672,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "b926cee9a7fb33d7b2cf9f569e6f51a452ef34d28edb199f1770bce6c50be8b6": {
+      "stage": "assess",
+      "batch": 25,
+      "started_at": "2026-11-09T05:19:42.307539+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.124358,
+      "request_sha256": "b926cee9a7fb33d7b2cf9f569e6f51a452ef34d28edb199f1770bce6c50be8b6",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:48.430989+00:00",
+      "usage": {
+        "prompt_tokens": 7467,
+        "completion_tokens": 795,
+        "total_tokens": 8262,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 6699
+      },
+      "estimated_cost_CNY": 0.019788720000000003,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "0cb3c74bf44a100ac9c624aaa346acfac3c669d5e94b50f3c062d3597371cb4f": {
+      "stage": "assess",
+      "batch": 26,
+      "started_at": "2026-11-09T05:19:42.855111+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.13147,
+      "request_sha256": "0cb3c74bf44a100ac9c624aaa346acfac3c669d5e94b50f3c062d3597371cb4f",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:50.349875+00:00",
+      "usage": {
+        "prompt_tokens": 8767,
+        "completion_tokens": 1174,
+        "total_tokens": 9941,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 7999
+      },
+      "estimated_cost_CNY": 0.02542072,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "261419418ec7725e97989fce9ac89c768fad215fb87ca58a76415794cd75f306": {
+      "stage": "assess",
+      "batch": 27,
+      "started_at": "2026-11-09T05:19:42.956453+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.111824,
+      "request_sha256": "261419418ec7725e97989fce9ac89c768fad215fb87ca58a76415794cd75f306",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:46.507734+00:00",
+      "usage": {
+        "prompt_tokens": 5560,
+        "completion_tokens": 405,
+        "total_tokens": 5965,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4792
+      },
+      "estimated_cost_CNY": 0.01285472,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "8094613a29e2077f4cce4a09e03c23b76de948c5219e525679864fba45949c26": {
+      "stage": "assess",
+      "batch": 28,
+      "started_at": "2026-11-09T05:19:42.964029+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.103184,
+      "request_sha256": "8094613a29e2077f4cce4a09e03c23b76de948c5219e525679864fba45949c26",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:45.075894+00:00",
+      "usage": {
+        "prompt_tokens": 4261,
+        "completion_tokens": 188,
+        "total_tokens": 4449,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3493
+      },
+      "estimated_cost_CNY": 0.00852072,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "b8249c58ae8cd62dd30baadacecb2c98a7683f299e44bb71e740b1b209505fcc": {
+      "stage": "assess",
+      "batch": 29,
+      "started_at": "2026-11-09T05:19:42.988431+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.106184,
+      "request_sha256": "b8249c58ae8cd62dd30baadacecb2c98a7683f299e44bb71e740b1b209505fcc",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:45.344985+00:00",
+      "usage": {
+        "prompt_tokens": 4618,
+        "completion_tokens": 226,
+        "total_tokens": 4844,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3850
+      },
+      "estimated_cost_CNY": 0.00953872,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "35f5845b9d545eb7db0e8256828bc6de00f9de04ec56af4b4e3be4ad7c059156": {
+      "stage": "assess",
+      "batch": 30,
+      "started_at": "2026-11-09T05:19:43.040173+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.115436,
+      "request_sha256": "35f5845b9d545eb7db0e8256828bc6de00f9de04ec56af4b4e3be4ad7c059156",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:47.949144+00:00",
+      "usage": {
+        "prompt_tokens": 6235,
+        "completion_tokens": 602,
+        "total_tokens": 6837,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 5467
+      },
+      "estimated_cost_CNY": 0.015780719999999998,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "045992136b807947f4de5a910f757414284280038d30c0fcaf5344c97f70c5cf": {
+      "stage": "assess",
+      "batch": 31,
+      "started_at": "2026-11-09T05:19:43.165997+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.131118,
+      "request_sha256": "045992136b807947f4de5a910f757414284280038d30c0fcaf5344c97f70c5cf",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:52.976541+00:00",
+      "usage": {
+        "prompt_tokens": 8750,
+        "completion_tokens": 1295,
+        "total_tokens": 10045,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 7982
+      },
+      "estimated_cost_CNY": 0.02635472,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price",
+      "parse_error": "ValueError"
+    },
+    "e3bb8ec7f91e95c11a0842b1e207746e8a04d1ebf90bfb7daf8795915fd4bc8a": {
+      "stage": "assess",
+      "batch": 32,
+      "started_at": "2026-11-09T05:19:43.167668+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.10886,
+      "request_sha256": "e3bb8ec7f91e95c11a0842b1e207746e8a04d1ebf90bfb7daf8795915fd4bc8a",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:46.464487+00:00",
+      "usage": {
+        "prompt_tokens": 5096,
+        "completion_tokens": 312,
+        "total_tokens": 5408,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4328
+      },
+      "estimated_cost_CNY": 0.01118272,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "d2d38f84f7181d8e7971c169bb524db12461f2d51a1df006778437c62e98bd23": {
+      "stage": "assess",
+      "batch": 33,
+      "started_at": "2026-11-09T05:19:43.552218+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.103732,
+      "request_sha256": "d2d38f84f7181d8e7971c169bb524db12461f2d51a1df006778437c62e98bd23",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:45.335144+00:00",
+      "usage": {
+        "prompt_tokens": 4307,
+        "completion_tokens": 145,
+        "total_tokens": 4452,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3539
+      },
+      "estimated_cost_CNY": 0.008268720000000002,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "fb166b1cdd12fb84e1d5bc3c20362be77bb4125b9ebf6839ffbf215f469543c7": {
+      "stage": "assess",
+      "batch": 34,
+      "started_at": "2026-11-09T05:19:43.788189+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.104256,
+      "request_sha256": "fb166b1cdd12fb84e1d5bc3c20362be77bb4125b9ebf6839ffbf215f469543c7",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:46.051139+00:00",
+      "usage": {
+        "prompt_tokens": 4373,
+        "completion_tokens": 153,
+        "total_tokens": 4526,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3605
+      },
+      "estimated_cost_CNY": 0.008464720000000002,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "2abb25366c197dde07b8d5cf4638cc2f22a705db9a5535c256ea8f76a6c967cb": {
+      "stage": "assess",
+      "batch": 35,
+      "started_at": "2026-11-09T05:19:44.321361+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.116958,
+      "request_sha256": "2abb25366c197dde07b8d5cf4638cc2f22a705db9a5535c256ea8f76a6c967cb",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:49.095548+00:00",
+      "usage": {
+        "prompt_tokens": 6387,
+        "completion_tokens": 673,
+        "total_tokens": 7060,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 5619
+      },
+      "estimated_cost_CNY": 0.016652720000000003,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "4d501932f9b7027d69d563f8133453025fd3b7bcc38cefba69f2b889473d8793": {
+      "stage": "assess",
+      "batch": 36,
+      "started_at": "2026-11-09T05:19:44.749288+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.116042,
+      "request_sha256": "4d501932f9b7027d69d563f8133453025fd3b7bcc38cefba69f2b889473d8793",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:49.953190+00:00",
+      "usage": {
+        "prompt_tokens": 6313,
+        "completion_tokens": 626,
+        "total_tokens": 6939,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 5545
+      },
+      "estimated_cost_CNY": 0.01612872,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "fd9368b0943dadc78990688ba5a7f78d5d169f2e6531ff720a3828cb201a718a": {
+      "stage": "assess",
+      "batch": 37,
+      "started_at": "2026-11-09T05:19:44.782512+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.108098,
+      "request_sha256": "fd9368b0943dadc78990688ba5a7f78d5d169f2e6531ff720a3828cb201a718a",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:47.469538+00:00",
+      "usage": {
+        "prompt_tokens": 5044,
+        "completion_tokens": 275,
+        "total_tokens": 5319,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4276
+      },
+      "estimated_cost_CNY": 0.010782719999999999,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "3a5ea9792a695d9a3681cb802937eab96cab345439d96f689e48bc928b116138": {
+      "stage": "assess",
+      "batch": 38,
+      "started_at": "2026-11-09T05:19:44.884211+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.104312,
+      "request_sha256": "3a5ea9792a695d9a3681cb802937eab96cab345439d96f689e48bc928b116138",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:47.950249+00:00",
+      "usage": {
+        "prompt_tokens": 4392,
+        "completion_tokens": 222,
+        "total_tokens": 4614,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3624
+      },
+      "estimated_cost_CNY": 0.00905472,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "05e7742ba4906bba38d6b487da243c4ccac763ec8803834ad8d80c69f5d654bd": {
+      "stage": "assess",
+      "batch": 39,
+      "started_at": "2026-11-09T05:19:44.885665+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.104464,
+      "request_sha256": "05e7742ba4906bba38d6b487da243c4ccac763ec8803834ad8d80c69f5d654bd",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:47.079809+00:00",
+      "usage": {
+        "prompt_tokens": 4309,
+        "completion_tokens": 164,
+        "total_tokens": 4473,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3541
+      },
+      "estimated_cost_CNY": 0.008424720000000002,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "2941ce6f1b283d7166f8e8d8c2fc47ce513ca1c162f7ae95c13c8cd6f61d3b8d": {
+      "stage": "assess",
+      "batch": 40,
+      "started_at": "2026-11-09T05:19:45.080119+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.132714,
+      "request_sha256": "2941ce6f1b283d7166f8e8d8c2fc47ce513ca1c162f7ae95c13c8cd6f61d3b8d",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:51.682421+00:00",
+      "usage": {
+        "prompt_tokens": 8785,
+        "completion_tokens": 1014,
+        "total_tokens": 9799,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 8017
+      },
+      "estimated_cost_CNY": 0.024176720000000002,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "fcfe2174a00167dd2ea6ecffbd172fbce5f47155faabd7ede3eb590da633dd3a": {
+      "stage": "assess",
+      "batch": 41,
+      "started_at": "2026-11-09T05:19:45.153822+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.103892,
+      "request_sha256": "fcfe2174a00167dd2ea6ecffbd172fbce5f47155faabd7ede3eb590da633dd3a",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:47.245266+00:00",
+      "usage": {
+        "prompt_tokens": 4250,
+        "completion_tokens": 154,
+        "total_tokens": 4404,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3482
+      },
+      "estimated_cost_CNY": 0.008226720000000002,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "7556f8cdc6f68c4b59696eb85baab8311313736cdc7c2599002c77ebd3c56543": {
+      "stage": "assess",
+      "batch": 42,
+      "started_at": "2026-11-09T05:19:45.336901+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.10376,
+      "request_sha256": "7556f8cdc6f68c4b59696eb85baab8311313736cdc7c2599002c77ebd3c56543",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:48.124221+00:00",
+      "usage": {
+        "prompt_tokens": 4270,
+        "completion_tokens": 243,
+        "total_tokens": 4513,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3502
+      },
+      "estimated_cost_CNY": 0.00897872,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "f93a183d031f1938e4f7f0116a6a0fd3dcdddd03b9b1497acb67e5c1228629b8": {
+      "stage": "assess",
+      "batch": 43,
+      "started_at": "2026-11-09T05:19:45.338721+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.108438,
+      "request_sha256": "f93a183d031f1938e4f7f0116a6a0fd3dcdddd03b9b1497acb67e5c1228629b8",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:48.435464+00:00",
+      "usage": {
+        "prompt_tokens": 5036,
+        "completion_tokens": 311,
+        "total_tokens": 5347,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4268
+      },
+      "estimated_cost_CNY": 0.011054719999999999,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price",
+      "parse_error": "ValueError"
+    },
+    "20173c274769585b62029e40c8a14437aab580e32e5a2c7caf053126c8159bb4": {
+      "stage": "assess",
+      "batch": 44,
+      "started_at": "2026-11-09T05:19:45.347714+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.117196,
+      "request_sha256": "20173c274769585b62029e40c8a14437aab580e32e5a2c7caf053126c8159bb4",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:51.205299+00:00",
+      "usage": {
+        "prompt_tokens": 6437,
+        "completion_tokens": 680,
+        "total_tokens": 7117,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 5669
+      },
+      "estimated_cost_CNY": 0.016808720000000003,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "0af44fe2f48da8739f22af9f06edaec69941bc5ec101cd5f91f73294748ae20e": {
+      "stage": "assess",
+      "batch": 45,
+      "started_at": "2026-11-09T05:19:45.798895+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.107862,
+      "request_sha256": "0af44fe2f48da8739f22af9f06edaec69941bc5ec101cd5f91f73294748ae20e",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:48.934642+00:00",
+      "usage": {
+        "prompt_tokens": 4962,
+        "completion_tokens": 336,
+        "total_tokens": 5298,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4194
+      },
+      "estimated_cost_CNY": 0.011106719999999999,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "c50e202866cf6009b4aae2b1a2d4ab519a86b3aeec738bf80eb9e80ea6df5522": {
+      "stage": "assess",
+      "batch": 46,
+      "started_at": "2026-11-09T05:19:46.052073+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.103844,
+      "request_sha256": "c50e202866cf6009b4aae2b1a2d4ab519a86b3aeec738bf80eb9e80ea6df5522",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:48.361155+00:00",
+      "usage": {
+        "prompt_tokens": 4260,
+        "completion_tokens": 217,
+        "total_tokens": 4477,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3492
+      },
+      "estimated_cost_CNY": 0.008750720000000002,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "edfdc590f877544947efc1f4ebf9c58dd73919561b2621d4d1ff6e6262ebaaf9": {
+      "stage": "assess",
+      "batch": 47,
+      "started_at": "2026-11-09T05:19:46.150325+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.104414,
+      "request_sha256": "edfdc590f877544947efc1f4ebf9c58dd73919561b2621d4d1ff6e6262ebaaf9",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:48.033977+00:00",
+      "usage": {
+        "prompt_tokens": 4361,
+        "completion_tokens": 168,
+        "total_tokens": 4529,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3593
+      },
+      "estimated_cost_CNY": 0.00856072,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "00c2e61f6c06cbd63389ff59cb85fc28d12ad8d51e4f9a37144aaab73d1bdd02": {
+      "stage": "assess",
+      "batch": 48,
+      "started_at": "2026-11-09T05:19:46.465606+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.122558,
+      "request_sha256": "00c2e61f6c06cbd63389ff59cb85fc28d12ad8d51e4f9a37144aaab73d1bdd02",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:52.091589+00:00",
+      "usage": {
+        "prompt_tokens": 7070,
+        "completion_tokens": 745,
+        "total_tokens": 7815,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 6302
+      },
+      "estimated_cost_CNY": 0.018594720000000002,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price",
+      "parse_error": "ValueError"
+    },
+    "fb8bcb3693ee55951043e89314af77b33f364806c45a17b620affb1ff80b9ef0": {
+      "stage": "assess",
+      "batch": 49,
+      "started_at": "2026-11-09T05:19:46.508921+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.121522,
+      "request_sha256": "fb8bcb3693ee55951043e89314af77b33f364806c45a17b620affb1ff80b9ef0",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:52.083713+00:00",
+      "usage": {
+        "prompt_tokens": 6975,
+        "completion_tokens": 756,
+        "total_tokens": 7731,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 6207
+      },
+      "estimated_cost_CNY": 0.01849272,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "0846ddaf21101a56caae531ac57c8a54e3c1a9241389c4590cf60fbf4bf64a96": {
+      "stage": "assess",
+      "batch": 50,
+      "started_at": "2026-11-09T05:19:46.550460+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.121758,
+      "request_sha256": "0846ddaf21101a56caae531ac57c8a54e3c1a9241389c4590cf60fbf4bf64a96",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:52.502927+00:00",
+      "usage": {
+        "prompt_tokens": 6987,
+        "completion_tokens": 719,
+        "total_tokens": 7706,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 6219
+      },
+      "estimated_cost_CNY": 0.018220720000000003,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price",
+      "parse_error": "ValueError"
+    },
+    "7fc8553e8c631dfc232503bead14f71604a2f29a9a8f341fb7a079e45120951b": {
+      "stage": "assess",
+      "batch": 51,
+      "started_at": "2026-11-09T05:19:47.082600+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.118128,
+      "request_sha256": "7fc8553e8c631dfc232503bead14f71604a2f29a9a8f341fb7a079e45120951b",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:51.965053+00:00",
+      "usage": {
+        "prompt_tokens": 6527,
+        "completion_tokens": 625,
+        "total_tokens": 7152,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 5759
+      },
+      "estimated_cost_CNY": 0.016548720000000003,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "4deb13a1276c597f6141ae6df099efcd75a789f7583c8ce2304f1835dc6896b2": {
+      "stage": "assess",
+      "batch": 52,
+      "started_at": "2026-11-09T05:19:47.246738+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.104568,
+      "request_sha256": "4deb13a1276c597f6141ae6df099efcd75a789f7583c8ce2304f1835dc6896b2",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:49.444420+00:00",
+      "usage": {
+        "prompt_tokens": 4373,
+        "completion_tokens": 145,
+        "total_tokens": 4518,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3605
+      },
+      "estimated_cost_CNY": 0.00840072,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "2571ab7d971b27e649029fa126f7bb0afe2bf7b4ceaca5b4d7327eca2da87681": {
+      "stage": "assess",
+      "batch": 53,
+      "started_at": "2026-11-09T05:19:47.470773+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.103568,
+      "request_sha256": "2571ab7d971b27e649029fa126f7bb0afe2bf7b4ceaca5b4d7327eca2da87681",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:49.271328+00:00",
+      "usage": {
+        "prompt_tokens": 4318,
+        "completion_tokens": 153,
+        "total_tokens": 4471,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3550
+      },
+      "estimated_cost_CNY": 0.008354720000000001,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "959fde1d69745c4ba9951e2510b770b8047489e55913a9174c284f9c01b0126c": {
+      "stage": "assess",
+      "batch": 54,
+      "started_at": "2026-11-09T05:19:47.952116+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.110736,
+      "request_sha256": "959fde1d69745c4ba9951e2510b770b8047489e55913a9174c284f9c01b0126c",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:51.873056+00:00",
+      "usage": {
+        "prompt_tokens": 5316,
+        "completion_tokens": 395,
+        "total_tokens": 5711,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4548
+      },
+      "estimated_cost_CNY": 0.01228672,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "7ea2cf89f6c1378e679684b716da6ee36cc76a898741d442c1b790e6d2320663": {
+      "stage": "assess",
+      "batch": 55,
+      "started_at": "2026-11-09T05:19:47.953612+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.109078,
+      "request_sha256": "7ea2cf89f6c1378e679684b716da6ee36cc76a898741d442c1b790e6d2320663",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:51.399585+00:00",
+      "usage": {
+        "prompt_tokens": 5135,
+        "completion_tokens": 357,
+        "total_tokens": 5492,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4367
+      },
+      "estimated_cost_CNY": 0.01162072,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "f96ba69bcffaa60660c42b2497e8f1436bbf8ebef6caa6f9aede184bdad6e698": {
+      "stage": "assess",
+      "batch": 56,
+      "started_at": "2026-11-09T05:19:48.036243+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.10826,
+      "request_sha256": "f96ba69bcffaa60660c42b2497e8f1436bbf8ebef6caa6f9aede184bdad6e698",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:52.458015+00:00",
+      "usage": {
+        "prompt_tokens": 5035,
+        "completion_tokens": 436,
+        "total_tokens": 5471,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4267
+      },
+      "estimated_cost_CNY": 0.01205272,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "ee8cc7d33bbcbeac079fdbb139e694d5799bb7c11ce71b6c828f7a7bb1735900": {
+      "stage": "assess",
+      "batch": 57,
+      "started_at": "2026-11-09T05:19:48.127605+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.117442,
+      "request_sha256": "ee8cc7d33bbcbeac079fdbb139e694d5799bb7c11ce71b6c828f7a7bb1735900",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:53.689466+00:00",
+      "usage": {
+        "prompt_tokens": 6364,
+        "completion_tokens": 686,
+        "total_tokens": 7050,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 5596
+      },
+      "estimated_cost_CNY": 0.016710720000000002,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "167759589126dc63b0ae60d6eab50e06ffedeba271c62eb5db706d4bdfed5b52": {
+      "stage": "assess",
+      "batch": 58,
+      "started_at": "2026-11-09T05:19:48.362525+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.104772,
+      "request_sha256": "167759589126dc63b0ae60d6eab50e06ffedeba271c62eb5db706d4bdfed5b52",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:50.360385+00:00",
+      "usage": {
+        "prompt_tokens": 4348,
+        "completion_tokens": 198,
+        "total_tokens": 4546,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3580
+      },
+      "estimated_cost_CNY": 0.008774720000000001,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "93a71479dbbbf0c01ea638c137fda4ba35f004d7e1421acfd826687dadc7104c": {
+      "stage": "assess",
+      "batch": 59,
+      "started_at": "2026-11-09T05:19:48.432416+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.104484,
+      "request_sha256": "93a71479dbbbf0c01ea638c137fda4ba35f004d7e1421acfd826687dadc7104c",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:50.922293+00:00",
+      "usage": {
+        "prompt_tokens": 4316,
+        "completion_tokens": 203,
+        "total_tokens": 4519,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3548
+      },
+      "estimated_cost_CNY": 0.008750720000000002,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "e7d190e87f387d6ab12b927ace3e4ae591eedb4fc69b46c4f50444b8bffb0e4c": {
+      "stage": "assess",
+      "batch": 60,
+      "started_at": "2026-11-09T05:19:48.436755+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.104196,
+      "request_sha256": "e7d190e87f387d6ab12b927ace3e4ae591eedb4fc69b46c4f50444b8bffb0e4c",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:50.134087+00:00",
+      "usage": {
+        "prompt_tokens": 4320,
+        "completion_tokens": 146,
+        "total_tokens": 4466,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3552
+      },
+      "estimated_cost_CNY": 0.008302720000000001,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "ae8966b76ae15bf13ce703d68767fd72d61b05b9027b2f700f0a83156ffdf418": {
+      "stage": "assess",
+      "batch": 61,
+      "started_at": "2026-11-09T05:19:48.936733+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.104394,
+      "request_sha256": "ae8966b76ae15bf13ce703d68767fd72d61b05b9027b2f700f0a83156ffdf418",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:50.445078+00:00",
+      "usage": {
+        "prompt_tokens": 4327,
+        "completion_tokens": 141,
+        "total_tokens": 4468,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3559
+      },
+      "estimated_cost_CNY": 0.008276720000000001,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "aed7213cdc1f2fa1f7f68afd4e15b09e40f9a3ce3adc78c370ba76190fc65128": {
+      "stage": "assess",
+      "batch": 62,
+      "started_at": "2026-11-09T05:19:49.097968+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.104494,
+      "request_sha256": "aed7213cdc1f2fa1f7f68afd4e15b09e40f9a3ce3adc78c370ba76190fc65128",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:50.923663+00:00",
+      "usage": {
+        "prompt_tokens": 4325,
+        "completion_tokens": 156,
+        "total_tokens": 4481,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3557
+      },
+      "estimated_cost_CNY": 0.008392720000000001,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "9bf01952b1e4f422509360304aa0fe90c5643b3693468d1849c83ac01bfded57": {
+      "stage": "assess",
+      "batch": 63,
+      "started_at": "2026-11-09T05:19:49.272369+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.104262,
+      "request_sha256": "9bf01952b1e4f422509360304aa0fe90c5643b3693468d1849c83ac01bfded57",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:50.514455+00:00",
+      "usage": {
+        "prompt_tokens": 4327,
+        "completion_tokens": 157,
+        "total_tokens": 4484,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3559
+      },
+      "estimated_cost_CNY": 0.008404720000000001,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "f11d515253dbf2609a1f05a7fabfbf4c54556d60e2f392903fc8d4cbe86ee640": {
+      "stage": "assess",
+      "batch": 64,
+      "started_at": "2026-11-09T05:19:49.446111+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.112354,
+      "request_sha256": "f11d515253dbf2609a1f05a7fabfbf4c54556d60e2f392903fc8d4cbe86ee640",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:52.702591+00:00",
+      "usage": {
+        "prompt_tokens": 5463,
+        "completion_tokens": 396,
+        "total_tokens": 5859,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4695
+      },
+      "estimated_cost_CNY": 0.01258872,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "74d5dd0950735c889be88ef42b56efbf36d7510b1511eae609a5a7d5640fe815": {
+      "stage": "assess",
+      "batch": 65,
+      "started_at": "2026-11-09T05:19:49.955958+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.13327,
+      "request_sha256": "74d5dd0950735c889be88ef42b56efbf36d7510b1511eae609a5a7d5640fe815",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:59.673246+00:00",
+      "usage": {
+        "prompt_tokens": 8826,
+        "completion_tokens": 1339,
+        "total_tokens": 10165,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 8058
+      },
+      "estimated_cost_CNY": 0.026858720000000003,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "c287e58b26d00e305e79bb1dbd185b98e177d73ab2d8a19c808e73a44c78d111": {
+      "stage": "assess",
+      "batch": 66,
+      "started_at": "2026-11-09T05:19:50.136116+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.103952,
+      "request_sha256": "c287e58b26d00e305e79bb1dbd185b98e177d73ab2d8a19c808e73a44c78d111",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:52.213324+00:00",
+      "usage": {
+        "prompt_tokens": 4268,
+        "completion_tokens": 174,
+        "total_tokens": 4442,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3500
+      },
+      "estimated_cost_CNY": 0.008422720000000002,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "d4f6867bcd6053004d0bbcfbee7aa284c5ae959e3c7d5deb5271de6c8a6f0381": {
+      "stage": "assess",
+      "batch": 67,
+      "started_at": "2026-11-09T05:19:50.351113+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.104708,
+      "request_sha256": "d4f6867bcd6053004d0bbcfbee7aa284c5ae959e3c7d5deb5271de6c8a6f0381",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:52.841176+00:00",
+      "usage": {
+        "prompt_tokens": 4403,
+        "completion_tokens": 184,
+        "total_tokens": 4587,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3635
+      },
+      "estimated_cost_CNY": 0.008772720000000001,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "d58c204ab722df9cbeb64955d5838042daca7c8bf0b0c6e697ee46eceb718e2c": {
+      "stage": "assess",
+      "batch": 68,
+      "started_at": "2026-11-09T05:19:50.361450+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.108928,
+      "request_sha256": "d58c204ab722df9cbeb64955d5838042daca7c8bf0b0c6e697ee46eceb718e2c",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:53.135141+00:00",
+      "usage": {
+        "prompt_tokens": 5114,
+        "completion_tokens": 306,
+        "total_tokens": 5420,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4346
+      },
+      "estimated_cost_CNY": 0.011170719999999999,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "4ea52ce1562e423a7a16d6ce5c5b74db1ef4ceb9c3be8ccf808b27633a3f495f": {
+      "stage": "assess",
+      "batch": 69,
+      "started_at": "2026-11-09T05:19:50.446422+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.116096,
+      "request_sha256": "4ea52ce1562e423a7a16d6ce5c5b74db1ef4ceb9c3be8ccf808b27633a3f495f",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:56.001727+00:00",
+      "usage": {
+        "prompt_tokens": 6309,
+        "completion_tokens": 635,
+        "total_tokens": 6944,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 5541
+      },
+      "estimated_cost_CNY": 0.01619272,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "a032a44b8d9b420a3167ed0a480530f47a00b0f2d8dfdbb8b3bd4f1621570318": {
+      "stage": "assess",
+      "batch": 70,
+      "started_at": "2026-11-09T05:19:50.516045+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.104156,
+      "request_sha256": "a032a44b8d9b420a3167ed0a480530f47a00b0f2d8dfdbb8b3bd4f1621570318",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:52.429043+00:00",
+      "usage": {
+        "prompt_tokens": 4347,
+        "completion_tokens": 214,
+        "total_tokens": 4561,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3579
+      },
+      "estimated_cost_CNY": 0.00890072,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "884bd6cdb6eb25f00b850525fa6aa1f02a888b57248e168e3bf232466aba1d4c": {
+      "stage": "assess",
+      "batch": 71,
+      "started_at": "2026-11-09T05:19:50.927040+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.104204,
+      "request_sha256": "884bd6cdb6eb25f00b850525fa6aa1f02a888b57248e168e3bf232466aba1d4c",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:53.213092+00:00",
+      "usage": {
+        "prompt_tokens": 4333,
+        "completion_tokens": 188,
+        "total_tokens": 4521,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3565
+      },
+      "estimated_cost_CNY": 0.00866472,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "60cf38aaedfb98aeae4d062050eb0a62b0cd1ece15ab56f0aa0fc119f801d149": {
+      "stage": "assess",
+      "batch": 72,
+      "started_at": "2026-11-09T05:19:50.929976+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.108622,
+      "request_sha256": "60cf38aaedfb98aeae4d062050eb0a62b0cd1ece15ab56f0aa0fc119f801d149",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:53.971029+00:00",
+      "usage": {
+        "prompt_tokens": 5079,
+        "completion_tokens": 325,
+        "total_tokens": 5404,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4311
+      },
+      "estimated_cost_CNY": 0.011252719999999999,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "fc23e37591405df2c5d5b769a72c26fb576f65137281c9ff8928315583e32d46": {
+      "stage": "assess",
+      "batch": 73,
+      "started_at": "2026-11-09T05:19:51.207007+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.106676,
+      "request_sha256": "fc23e37591405df2c5d5b769a72c26fb576f65137281c9ff8928315583e32d46",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:53.488741+00:00",
+      "usage": {
+        "prompt_tokens": 4647,
+        "completion_tokens": 222,
+        "total_tokens": 4869,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3879
+      },
+      "estimated_cost_CNY": 0.00956472,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "49103ea523e81cf163dba599dae5da3790a91da10dee7c0ab90ab0c70ccbfc13": {
+      "stage": "assess",
+      "batch": 74,
+      "started_at": "2026-11-09T05:19:51.401650+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.10415,
+      "request_sha256": "49103ea523e81cf163dba599dae5da3790a91da10dee7c0ab90ab0c70ccbfc13",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:54.000440+00:00",
+      "usage": {
+        "prompt_tokens": 4359,
+        "completion_tokens": 183,
+        "total_tokens": 4542,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3591
+      },
+      "estimated_cost_CNY": 0.00867672,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "2dbdc8dfbf59ba1eac43672cee3736dc045cf7d1a6ebaa8aeb3d1ccbb368dbd2": {
+      "stage": "assess",
+      "batch": 75,
+      "started_at": "2026-11-09T05:19:51.685602+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.108536,
+      "request_sha256": "2dbdc8dfbf59ba1eac43672cee3736dc045cf7d1a6ebaa8aeb3d1ccbb368dbd2",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:54.947231+00:00",
+      "usage": {
+        "prompt_tokens": 5109,
+        "completion_tokens": 352,
+        "total_tokens": 5461,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4341
+      },
+      "estimated_cost_CNY": 0.01152872,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "a99c00698f8d4cdae4668b57d711eee9c6fde98fe95e3599bd0e22e6d303cf3d": {
+      "stage": "assess",
+      "batch": 76,
+      "started_at": "2026-11-09T05:19:51.875333+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.116796,
+      "request_sha256": "a99c00698f8d4cdae4668b57d711eee9c6fde98fe95e3599bd0e22e6d303cf3d",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:57.155404+00:00",
+      "usage": {
+        "prompt_tokens": 6386,
+        "completion_tokens": 711,
+        "total_tokens": 7097,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 5618
+      },
+      "estimated_cost_CNY": 0.01695472,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price",
+      "parse_error": "ValueError"
+    },
+    "aea92483a047496601c5ef026a9419eca647b8d5a567e7a75b819b49fef56b1f": {
+      "stage": "assess",
+      "batch": 77,
+      "started_at": "2026-11-09T05:19:51.969288+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.110262,
+      "request_sha256": "aea92483a047496601c5ef026a9419eca647b8d5a567e7a75b819b49fef56b1f",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:55.187075+00:00",
+      "usage": {
+        "prompt_tokens": 5064,
+        "completion_tokens": 331,
+        "total_tokens": 5395,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4296
+      },
+      "estimated_cost_CNY": 0.01127072,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "3b3c73b3817c7694ce914746e151a61bc7d4fba069a9dc9d1955c42e3a82e559": {
+      "stage": "assess",
+      "batch": 78,
+      "started_at": "2026-11-09T05:19:52.086740+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.105466,
+      "request_sha256": "3b3c73b3817c7694ce914746e151a61bc7d4fba069a9dc9d1955c42e3a82e559",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:53.958639+00:00",
+      "usage": {
+        "prompt_tokens": 4546,
+        "completion_tokens": 175,
+        "total_tokens": 4721,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3778
+      },
+      "estimated_cost_CNY": 0.008986720000000002,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "5718c7dff9cea490012d89a4c26ae9f9aa8d1e64d72ee17183794435e3f08df2": {
+      "stage": "assess",
+      "batch": 79,
+      "started_at": "2026-11-09T05:19:52.095756+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.10495,
+      "request_sha256": "5718c7dff9cea490012d89a4c26ae9f9aa8d1e64d72ee17183794435e3f08df2",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:54.509169+00:00",
+      "usage": {
+        "prompt_tokens": 4502,
+        "completion_tokens": 223,
+        "total_tokens": 4725,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3734
+      },
+      "estimated_cost_CNY": 0.009282720000000001,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "47152ebf47a005f8b7f23510f31c4012b9a6ae6dacfbaf6c37a8c3eb4d949149": {
+      "stage": "assess",
+      "batch": 80,
+      "started_at": "2026-11-09T05:19:52.214592+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.109436,
+      "request_sha256": "47152ebf47a005f8b7f23510f31c4012b9a6ae6dacfbaf6c37a8c3eb4d949149",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:55.392283+00:00",
+      "usage": {
+        "prompt_tokens": 4977,
+        "completion_tokens": 294,
+        "total_tokens": 5271,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4209
+      },
+      "estimated_cost_CNY": 0.01080072,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "0f3ce6023d17e8d7a94adf0ad7b5866494c752fa20558782a8b1f2a735405bd0": {
+      "stage": "assess",
+      "batch": 81,
+      "started_at": "2026-11-09T05:19:52.459034+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.124366,
+      "request_sha256": "0f3ce6023d17e8d7a94adf0ad7b5866494c752fa20558782a8b1f2a735405bd0",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:58.762166+00:00",
+      "usage": {
+        "prompt_tokens": 7351,
+        "completion_tokens": 796,
+        "total_tokens": 8147,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 6583
+      },
+      "estimated_cost_CNY": 0.01956472,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "e85d91be7b3f68ad5b10d67930df2a736ac5bc5005a62de744b0ed76b09dd6d1": {
+      "stage": "assess",
+      "batch": 82,
+      "started_at": "2026-11-09T05:19:52.504225+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.109964,
+      "request_sha256": "e85d91be7b3f68ad5b10d67930df2a736ac5bc5005a62de744b0ed76b09dd6d1",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:55.473869+00:00",
+      "usage": {
+        "prompt_tokens": 5016,
+        "completion_tokens": 288,
+        "total_tokens": 5304,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4248
+      },
+      "estimated_cost_CNY": 0.010830719999999999,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "c4e19bf9d57abb0a152ebaebf1fff8214f89a354fb3ffa77feb2ae45b8598190": {
+      "stage": "assess",
+      "batch": 83,
+      "started_at": "2026-11-09T05:19:52.704808+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.103166,
+      "request_sha256": "c4e19bf9d57abb0a152ebaebf1fff8214f89a354fb3ffa77feb2ae45b8598190",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:54.974033+00:00",
+      "usage": {
+        "prompt_tokens": 4286,
+        "completion_tokens": 209,
+        "total_tokens": 4495,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3518
+      },
+      "estimated_cost_CNY": 0.008738720000000002,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "caac74ea5626bab5d3b02ec1889eb8d63808f06bac3e9b2da785409e2e629799": {
+      "stage": "assess",
+      "batch": 84,
+      "started_at": "2026-11-09T05:19:52.843813+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.112068,
+      "request_sha256": "caac74ea5626bab5d3b02ec1889eb8d63808f06bac3e9b2da785409e2e629799",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:56.127885+00:00",
+      "usage": {
+        "prompt_tokens": 5627,
+        "completion_tokens": 383,
+        "total_tokens": 6010,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4859
+      },
+      "estimated_cost_CNY": 0.01281272,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "efa00146cfcf6c8399ccc9c1576a3125e23524fbc0957f67fcb573670e5a9b11": {
+      "stage": "assess",
+      "batch": 85,
+      "started_at": "2026-11-09T05:19:52.981057+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.120052,
+      "request_sha256": "efa00146cfcf6c8399ccc9c1576a3125e23524fbc0957f67fcb573670e5a9b11",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:59.672461+00:00",
+      "usage": {
+        "prompt_tokens": 6868,
+        "completion_tokens": 741,
+        "total_tokens": 7609,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 6100
+      },
+      "estimated_cost_CNY": 0.01815872,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "12de15af3358b9e682377589de619d67bc35ea79ac0491b48df6208b50641ce7": {
+      "stage": "assess",
+      "batch": 86,
+      "started_at": "2026-11-09T05:19:53.136448+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.108402,
+      "request_sha256": "12de15af3358b9e682377589de619d67bc35ea79ac0491b48df6208b50641ce7",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:56.692928+00:00",
+      "usage": {
+        "prompt_tokens": 5185,
+        "completion_tokens": 373,
+        "total_tokens": 5558,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4417
+      },
+      "estimated_cost_CNY": 0.01184872,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price",
+      "parse_error": "ValueError"
+    },
+    "4a7aa6737866c82e198c6dbea5bf08ace4ffc11b4a790f0ac9abfb684c19f8d5": {
+      "stage": "assess",
+      "batch": 87,
+      "started_at": "2026-11-09T05:19:53.213979+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.107694,
+      "request_sha256": "4a7aa6737866c82e198c6dbea5bf08ace4ffc11b4a790f0ac9abfb684c19f8d5",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:56.718021+00:00",
+      "usage": {
+        "prompt_tokens": 4984,
+        "completion_tokens": 289,
+        "total_tokens": 5273,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4216
+      },
+      "estimated_cost_CNY": 0.01077472,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "39b3755eef6a0e4e158a7b383011a7ce7f99f87fe3f9b8129796d8ae2510c356": {
+      "stage": "assess",
+      "batch": 88,
+      "started_at": "2026-11-09T05:19:53.489918+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.107176,
+      "request_sha256": "39b3755eef6a0e4e158a7b383011a7ce7f99f87fe3f9b8129796d8ae2510c356",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:56.212897+00:00",
+      "usage": {
+        "prompt_tokens": 4914,
+        "completion_tokens": 329,
+        "total_tokens": 5243,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4146
+      },
+      "estimated_cost_CNY": 0.01095472,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "51bd5f2984221945d48f3a9503994e0b0c0472649a3e0bdb916d566a092a9722": {
+      "stage": "assess",
+      "batch": 89,
+      "started_at": "2026-11-09T05:19:53.690447+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.113254,
+      "request_sha256": "51bd5f2984221945d48f3a9503994e0b0c0472649a3e0bdb916d566a092a9722",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:58.038090+00:00",
+      "usage": {
+        "prompt_tokens": 5728,
+        "completion_tokens": 510,
+        "total_tokens": 6238,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4960
+      },
+      "estimated_cost_CNY": 0.01403072,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "2fef7a377ea863c9843c31ff266762043daf79f8abfdc1e12aa655e6c2f8433f": {
+      "stage": "assess",
+      "batch": 91,
+      "started_at": "2026-11-09T05:19:53.973715+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.107668,
+      "request_sha256": "2fef7a377ea863c9843c31ff266762043daf79f8abfdc1e12aa655e6c2f8433f",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:57.688851+00:00",
+      "usage": {
+        "prompt_tokens": 5214,
+        "completion_tokens": 356,
+        "total_tokens": 5570,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 4446
+      },
+      "estimated_cost_CNY": 0.01177072,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "3b66d5ee701ce08c191b6bacee58f0bb990a612fdd2f670485b4fb44cf73b85c": {
+      "stage": "assess",
+      "batch": 90,
+      "started_at": "2026-11-09T05:19:54.004208+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.125446,
+      "request_sha256": "3b66d5ee701ce08c191b6bacee58f0bb990a612fdd2f670485b4fb44cf73b85c",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:20:00.218584+00:00",
+      "usage": {
+        "prompt_tokens": 7591,
+        "completion_tokens": 760,
+        "total_tokens": 8351,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 6823
+      },
+      "estimated_cost_CNY": 0.019756720000000002,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price",
+      "parse_error": "ValueError"
+    },
+    "1db9dfdfc386122e33a9e543671bec130f7f7dac6cfdd0ee0016e663d12a298c": {
+      "stage": "assess",
+      "batch": 92,
+      "started_at": "2026-11-09T05:19:54.510629+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.103284,
+      "request_sha256": "1db9dfdfc386122e33a9e543671bec130f7f7dac6cfdd0ee0016e663d12a298c",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:19:58.433326+00:00",
+      "usage": {
+        "prompt_tokens": 4619,
+        "completion_tokens": 416,
+        "total_tokens": 5035,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 3851
+      },
+      "estimated_cost_CNY": 0.011060720000000001,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price",
+      "parse_error": "ValueError"
+    },
+    "78cc215236163fcfbf748bbe1b9a87229d71539f3fe86a9eb71d96ec04e3927a": {
+      "stage": "assess",
+      "batch": 94,
+      "started_at": "2026-11-09T05:19:54.952545+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.115284,
+      "request_sha256": "78cc215236163fcfbf748bbe1b9a87229d71539f3fe86a9eb71d96ec04e3927a",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:20:01.049276+00:00",
+      "usage": {
+        "prompt_tokens": 6583,
+        "completion_tokens": 812,
+        "total_tokens": 7395,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 5815
+      },
+      "estimated_cost_CNY": 0.01815672,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    },
+    "68f04627a6149ee1419e88c4525bd189135801774d72953550ea1180a0e71ea2": {
+      "stage": "assess",
+      "batch": 93,
+      "started_at": "2026-11-09T05:19:54.975369+00:00",
+      "state": "response_received",
+      "reserved_CNY": 0.112216,
+      "request_sha256": "68f04627a6149ee1419e88c4525bd189135801774d72953550ea1180a0e71ea2",
+      "automatic_retries": 0,
+      "finished_at": "2026-11-09T05:20:00.220518+00:00",
+      "usage": {
+        "prompt_tokens": 6056,
+        "completion_tokens": 677,
+        "total_tokens": 6733,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 5288
+      },
+      "estimated_cost_CNY": 0.01602272,
+      "accounting_basis": "provider_tokens_at_estimated_peak_price"
+    }
+  },
+  "updated_at": "2026-11-09T05:20:01.049290+00:00",
+  "totals": {
+    "estimated_cost_CNY": 1.193912,
+    "estimated_off_peak_cost_CNY": 0.596956,
+    "price_basis": "conservative peak estimate; provider billing not checked",
+    "unknown_or_inflight_reserved_CNY": 0,
+    "total_tokens": 541159,
+    "completed_stages": 94,
+    "cache_hits_this_run": 0,
+    "active_requests": 0,
+    "peak_concurrency_this_run": 20,
+    "elapsed_seconds": 20.74
+  }
+}

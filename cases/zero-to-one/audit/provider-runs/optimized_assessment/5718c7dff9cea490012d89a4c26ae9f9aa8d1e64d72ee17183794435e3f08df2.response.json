@@ -1,0 +1,28 @@
+{
+  "id": "b02a0f58-1037-4c86-9898-d5232e0895cd",
+  "object": "chat.completion",
+  "created": 1794201592,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000073213-000073233\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"预测为“随着全球化推进，人们的需求会不断增加”，属长期趋势判断；可观察时段为2014—2025年，但“需求”未界定指标（消费量、进口量、能源/食品需求等），无法直接操作化。\",\"reason\":\"原文以“随着……会……”给出全球化推动需求增长的长期趋势，但未明确需求指标、地区范围或期限。现有证据仅涉及全球贸易与GDP增长，不能直接代表“人们的需求不断增加”。\",\"limitation\":\"“需求”定义过宽，贸易增长只是间接相关指标；不能据此确认或否定需求持续增加。\",\"evidence_ids\":[\"main-trade\"],\"method\":\"趋势判断\",\"method_basis\":\"explicit\",\"observation_end\":\"2025-03-01\",\"future_time_text\":\"随着全球化的推进\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4502,
+    "completion_tokens": 223,
+    "total_tokens": 4725,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3734
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

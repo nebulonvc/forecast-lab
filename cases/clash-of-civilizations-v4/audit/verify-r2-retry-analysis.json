@@ -1,0 +1,73 @@
+{
+  "retry_requested": 177,
+  "retry_states": {
+    "completed": 110,
+    "partial": 67
+  },
+  "partial_to_completed": 72,
+  "not_started_to_completed": 38,
+  "not_started_to_partial": 14,
+  "budget_partial_to_completed": 28,
+  "validation_partial_to_completed": 44,
+  "final_states": {
+    "completed": 360,
+    "partial": 67
+  },
+  "final_verdicts": {
+    "趋势符合": 71,
+    "错误": 17,
+    "暂无法判断": 146,
+    "部分符合": 85,
+    "正确": 41
+  },
+  "remaining_partial_reasons": [
+    [
+      "scored_claim_missing_evidence_or_scope",
+      26
+    ],
+    [
+      "evidence_quote_not_in_shown_source",
+      13
+    ],
+    [
+      "adaptive_strategy_change_required",
+      8
+    ],
+    [
+      "source_publication_date_mismatch",
+      5
+    ],
+    [
+      "JSONDecodeError",
+      3
+    ],
+    [
+      "adaptive_strategy_not_changed",
+      3
+    ],
+    [
+      "adaptive_query_repeats_previous",
+      3
+    ],
+    [
+      "evidence_date_after_cutoff_or_invalid",
+      2
+    ],
+    [
+      "semantic_review_quote_not_in_supplied_text",
+      1
+    ],
+    [
+      "request_failed_http_400",
+      1
+    ],
+    [
+      "evidence_note_outside_task",
+      1
+    ],
+    [
+      "page_text_unavailable",
+      1
+    ]
+  ]
+}

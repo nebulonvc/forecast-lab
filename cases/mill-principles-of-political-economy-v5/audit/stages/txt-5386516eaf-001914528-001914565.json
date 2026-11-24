@@ -1,0 +1,84 @@
+{
+  "id": "txt-5386516eaf-001914528-001914565",
+  "assess": {
+    "id": "txt-5386516eaf-001914528-001914565",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "先进欧洲国家的工人不会再臣属于父权或家长式政府。",
+    "reason": "1875年废除主仆法之后，法院仍长期沿用不受中介的控制假定，这是雇佣合同里的服从，不是家长式政府。1944年的德国劳动阵线材料写对工人工作和闲暇的控制，这是政党组织，也不是作者说的家长式政府。",
+    "limitation": "不把这两则相邻制度写成父权政府已经回来或没有回来。",
+    "evidence_ids": [
+      "ev-deakin-2005",
+      "ev-labor-front-1944"
+    ],
+    "method": "支持检索主仆法是否恢复，反证检索后来对工人的家长式统治。得到的是合同服从和纳粹劳动阵线，对象都不符。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "again",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-deakin-2005",
+        "quote": "long after the repeal of the last of the Master and Servant Acts in 1875, not just the \nterminology of master and servant but also many of the old assumptions of \nunmediated control were still being applied by the courts",
+        "relation": "boundary",
+        "limitation": "合同上的控制假定。",
+        "observation_end": "2005-12-31",
+        "publication_date": "2005-12",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-labor-front-1944",
+        "quote": "control of workers on the job and during their leisure time.",
+        "relation": "boundary",
+        "limitation": "政党对工作与闲暇的控制。",
+        "observation_end": "1939-12-31",
+        "publication_date": "1944-11",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺先进欧洲工人是否再次被置于父权或家长式政府之下的同对象证据。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001914528-001914565",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "master and servant law not restored Britain"
+      },
+      {
+        "role": "counter",
+        "query": "German Labor Front control of workers work and leisure"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://www.jbs.cam.ac.uk/wp-content/uploads/2023/05/cbrwp317.pdf",
+      "https://psi428.cankaya.edu.tr/uploads/files/Hamburger-GermanLaborFront-1944.pdf"
+    ],
+    "reason": "相邻制度不代替父权政府。"
+  }
+}

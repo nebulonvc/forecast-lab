@@ -1,0 +1,66 @@
+{
+  "id": "txt-5386516eaf-002308669-002308958",
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "United States fertilizer imports historical USDA became net importer"
+      },
+      {
+        "role": "counter",
+        "query": "United States still exports fertilizer not a regular importer"
+      }
+    ],
+    "note": "支持页已存档。反向没有另存一份说美国从未成为肥料进口国的正文。没有 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://www.ers.usda.gov/amber-waves/2004/february/u-s-increasingly-imports-nitrogen-and-potash-fertilizer"
+    ],
+    "reason": "只入选能核对条件或后果的存档。条件句不在该页，故不判实现。"
+  },
+  "assess": {
+    "id": "txt-5386516eaf-002308669-002308958",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "一旦开垦新土不再比给旧土施肥更合算，美国要么经常进口肥料，要么不靠保护关税而只为自己种谷物并在国内制造。",
+    "reason": "USDA 页写美国长期是钾肥净进口国，氮肥自1983年起净进口。这只是析取的一支。页面没有写开垦新土是否已经不再比施肥更合算，条件未证实，不把进口本身判成这句已经实现。",
+    "limitation": "钾肥净进口可以早于边疆土地耗尽，不能倒推条件已经出现。",
+    "evidence_ids": [
+      "ev-usda-fertilizer-2004"
+    ],
+    "method": "检索美国肥料贸易。看见净进口后仍因条件缺口不判对错。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "As soon as",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-usda-fertilizer-2004",
+        "quote": "The U.S. has long been a net importer of potash fertilizer.",
+        "relation": "boundary",
+        "limitation": "没有条件是否成立的句子。",
+        "observation_end": null,
+        "publication_date": "2004-02"
+      }
+    ],
+    "remaining_gap": "缺“开垦新土不再比给旧土施肥更合算”是否已经发生的截止日前正文。肥料净进口不能代替这个条件。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-002308669-002308958",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": []
+}

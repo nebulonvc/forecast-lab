@@ -1,0 +1,105 @@
+{
+  "id": "txt-099aaa16de-000115634-000115768",
+  "plan": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "not_a_pre_search_plan": "这是2026-11-20的r3补写。r2里这栏若只有“当前审查”一句，那个时间保留在previous_r2_plan，不把本段倒签成检索之前。",
+    "object": "人口增加时，这些必需品的价格不断上升，因为生产它们需要更多劳动。",
+    "condition": "人口增加，并且价格上升是因为更多劳动，不是因为货币。",
+    "observable": "人口与这些必需品的价格写在一起，劳动投入是原因而不是别的指数。",
+    "potential_counterevidence": "若人口增加时这些必需品的价格下降。",
+    "queries": [
+      {
+        "role": "support",
+        "query": "British food prices rose while population increased in the nineteenth century",
+        "precall_file": "audit/r-batch3/precall/07-support.json"
+      },
+      {
+        "role": "counter",
+        "query": "British food prices fell in the late nineteenth century as population grew",
+        "precall_file": "audit/r-batch3/precall/08-counter.json"
+      }
+    ]
+  },
+  "select": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "max_urls": 8,
+    "urls": [],
+    "selected_for_score": [],
+    "url_gap": "这条的已存返回是precall和页文本或空的saved_pages。那些文件没有URL行。不编URL。不利材料若只有查询名、没有地址，不能装成名单。"
+  },
+  "assess": {
+    "id": "txt-099aaa16de-000115634-000115768",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "人口增加时，这些必需品的价格会不断上升，因为生产它们需要更多劳动。",
+    "reason": "条件是人口增加，可以在出版后观察，不能因“随着”丢掉。batch3 的食品价格和人口不在同一保存句里，晚近价格还有下降。",
+    "limitation": "已有检索能复用的不再重搜。新检索只补法证未定位的方向或整条缺失。保存页的对象或日期不足，不计分。",
+    "evidence_ids": [],
+    "method": "按这句自己的对象、条件和窗口审查，不把倾向或条件句整类排除。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [],
+    "remaining_gap": "缺人口增加与必需品价格上升写在一起、并有源日期的记录。",
+    "r2_reviewed_at": "2026-11-20T12:00:41Z",
+    "previous_verdict": "排除：非预测",
+    "change_reason": "按独立 QA 恢复进预测分母，先保持未知，不打分。"
+  },
+  "semantic_review": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "decision": "unresolved",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "unknown",
+      "time_alignment": "unknown",
+      "evidence_support": "unknown",
+      "counterevidence": "unknown",
+      "verdict_logic": "pass"
+    },
+    "check_reasons": {
+      "object_match": "评估点名的是这些必需品的价格，不是全部物价。",
+      "condition_logic": "人口增加和更多劳动没有在同一份带日材料里一起成立。",
+      "time_alignment": "没有源日期。十九世纪末食物变贱的检索没有被收成观察日。",
+      "evidence_support": "没有人口增加与必需品价格上升写在一起的记录。",
+      "counterevidence": "反证查询是十九世纪末人口仍增而食物价格下降。没有URL。即便方向不利，也还不是这句的劳动口径。",
+      "verdict_logic": "缺的是同对象、带日的合取。结论保持暂无法判断。"
+    },
+    "revision": "本轮六项没有fail，所以没有做那一次修订。判决保持暂无法判断。",
+    "remaining_gap": "还缺人口增加与这些必需品价格上升写在一起、并有源日期的记录。"
+  },
+  "revision_trail": {
+    "previous_verdict": "排除：非预测",
+    "action": "r2",
+    "why": "按独立 QA 恢复进预测分母，先保持未知，不打分。",
+    "reviewed_at": "2026-11-20T12:00:41Z"
+  },
+  "previous_r2_plan": {
+    "reviewed_at": "2026-11-20T12:00:41Z",
+    "note": "当前审查。历史 precall 不是工具回显。"
+  },
+  "previous_r2_select": {
+    "note": "已有检索能复用的不再重搜。新检索只补法证未定位的方向或整条缺失。保存页的对象或日期不足，不计分。"
+  },
+  "previous_r2_semantic_review": {
+    "reviewed_at": "2026-11-20T12:00:41Z",
+    "object": "人口增加时，这些必需品的价格会不断上升，因为生产它们需要更多劳动。",
+    "condition": "unknown",
+    "window": "句子没有写出截止日。文件出版年代理是 1817，只到年。不能把别的年份收成 12 月 31 日。",
+    "counterevidence_limit": "缺人口增加与必需品价格上升写在一起、并有源日期的记录。",
+    "checks": {
+      "object_match": "保存材料的对象与这句不完全相同，不能据此打分。",
+      "condition_logic": "条件若未在同一材料里成立，不用另一种情境代替。",
+      "time_alignment": "没有源日期，或只有年份。观察终点留空。",
+      "evidence_support": "支持材料不足以单独证明这句。",
+      "counterevidence": "反面材料也不足以单独证伪这句。",
+      "verdict_logic": "六项没有同时通过，判暂无法判断，不制造分数。"
+    },
+    "issues": [
+      "缺人口增加与必需品价格上升写在一起、并有源日期的记录。"
+    ],
+    "decision": "暂无法判断"
+  }
+}

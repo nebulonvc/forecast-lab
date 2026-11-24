@@ -1,0 +1,28 @@
+{
+  "id": "9286cea6-1f0a-46be-ac64-60665ae1265b",
+  "object": "chat.completion",
+  "created": 1794201439,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000011517-000011558\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为“舍弃团体/孤独天才”，结果分项为“可能创造经典文艺作品”与“不能创造整个产业”；无具体期限，观察窗口为出版至cutoff（2014—2026-11-09），但原文未给出可核验的产业定义与对照案例。\",\"reason\":\"该句是带“可能”的条件性概括，主要结果“不能创造整个产业”缺乏可操作化指标和可核验证据。现有材料未提供孤独天才与产业创建之间关系的观察数据，无法判定符合或相反。\",\"limitation\":\"“整个产业”与“经典文艺作品”均未定义，且条件“舍弃团体”难以在回顾中识别；不能以个别企业家故事反推该概括。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000013918-000013949\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"该句为条件性规范性劝告（“如果想要未来更好，就一定要……”），不是对可观察未来结果的事实预测；不设观察指标。\",\"reason\":\"原文以“如果想要未来更好”为条件提出方法要求，属于建议/规范判断，而非可检验的结果预测。按排除项处理，不进行命中评估。\",\"limitation\":\"若将其强行操作化为“找到行得通的方法则未来更好”，会引入原文未给出的因果与指标，故不评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7705,
+    "completion_tokens": 415,
+    "total_tokens": 8120,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 7705
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000339460-000339526",
+  "plan": {
+    "object": "曾经自由生活的城市里生出的僭政。不是任何后来集权的新国家。",
+    "condition": "a tyranny springs up in a city which has lived free。有能力的僭主若扩张领土，好处只归他自己、不归国家；这是同段的说明，不把国家变富写成另一条结果。",
+    "quantifier": "in most cases, if not in all。最少的恶是不再前进、权力和财富不再增长；多数情形是后退。一次后退不能代表多数，也不能单独给部分符合。",
+    "result": "登记变化是 go back。后退的是这座城市的权力或财富，不是僭主个人的得失。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "一座曾经自由的城市生出僭政之后，城市本身的权力或财富仍在增长，而且这样的情形不是少数。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "republic became dictatorship and the state's power or wealth afterwards declined",
+      "counter_query": "free republic turned into autocracy and the country grew richer and more powerful"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://www.nber.org/system/files/chapters/c9022/c9022.pdf"],
+    "dropped": "奥古斯都早于1531。出口比率下降不能把一个独立不到十年的议会政府改写成曾经自由生活的城市。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-nber-indonesia-1959"],
+    "scope": "对象必须是曾经自由生活的城市。出口占产值下降是贸易比重，不是已经通过对象检验之后的城市后退。",
+    "reason": "国民经济研究局章节写，1950至1959年被称为自由民主，苏加诺与民选代表分享权力；1959年6月他在军队支持下解散民选代表，把权力集中到自己手里，引导式民主持续到1965年10月。同一章写出口占国内生产总值的比率从1951至1957年的百分之八点七，降到1962至1965年的百分之一点一。比率下降是贸易比重变小。1950至1959年的议会政府是新国家里的一段制度，不是原文所说曾经自由生活的城市。1951至1957年的比率也跨在集权之前。一次贸易比重下降既没有通过对象，也不能代表 most cases。决定性缺口是：没有一组曾经自由生活的城市，在生出僭政之后城市本身的权力或财富后退或没有后退，而且数量足以判断多数。",
+    "limitation": "章节没有单独的出版日。1959年6月和1965年10月写在正文里。出口比率是年段，不是日。",
+    "method": "先核对是不是曾经自由的城市，再看城市的权力或财富是否后退。对象不过就不把贸易比重当成分数。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "印尼的议会十年不是曾经自由生活的城市。出口比率下降也不代表多数城市后退。"
+  }
+}

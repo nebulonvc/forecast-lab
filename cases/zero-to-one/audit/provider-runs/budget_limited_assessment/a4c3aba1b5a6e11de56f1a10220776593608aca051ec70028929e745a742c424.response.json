@@ -1,0 +1,28 @@
+{
+  "id": "2800bdb6-aab1-41dd-8d10-478979770e8f",
+  "object": "chat.completion",
+  "created": 1794201439,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000004377-000004429\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"预测对象为彼得·蒂尔未来对世界的贡献，包含“一批伟大的公司和科技”与“站在人类发展高度考虑问题的思想”两个分项；观察时段为2014年序言写作至cutoff 2026-11-09，但“伟大”“人类发展高度”缺乏可透明操作化的判定标准。\",\"reason\":\"该句是对彼得·蒂尔未来贡献的总体性、评价性断言，两个分项均无明确可观测指标或期限，难以用客观证据判定符合或相反。现有材料仅为作者赞誉，不构成结果证据。\",\"limitation\":\"“伟大公司”“伟大科技”“站在人类发展高度”属主观评价，无法合理操作化；且无verified证据可引用，故不能评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4173,
+    "completion_tokens": 239,
+    "total_tokens": 4412,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 4173
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

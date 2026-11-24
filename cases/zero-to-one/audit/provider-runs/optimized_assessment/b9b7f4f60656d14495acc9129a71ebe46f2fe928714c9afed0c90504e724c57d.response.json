@@ -1,0 +1,28 @@
+{
+  "id": "534c9bd9-fa0c-432a-9fb0-0e7f7b34ce85",
+  "object": "chat.completion",
+  "created": 1794201580,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000015114-000015153\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为叙述者回忆1999—2000年PayPal经营时的获利预期，非出版时点（2014年）之后的未来预测。\",\"reason\":\"该句是作者回忆PayPal早期经营时对获利的判断，叙述时结果已知，属于历史叙述而非面向未来的预测。\",\"limitation\":\"无同期原始预测来源，且原文未给出可核验的获利时间与指标。\",\"evidence_ids\":[],\"method\":\"基于用户基数和手续费收入的商业推理\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000015178-000015187\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为回忆2000年前后互联网繁荣终结的预期，非出版时点之后的未来预测。\",\"reason\":\"“繁荣景象即将逝去”是作者对当时（2000年前后）形势的回忆性判断，叙述时结果已知，不构成2014年后的新预测。\",\"limitation\":\"原文未给出明确时间点，且属事后叙述。\",\"evidence_ids\":[],\"method\":\"基于对市场形势的判断\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"即将\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000015188-000015212\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为回忆2000年PayPal筹资时对投资者信心的判断，非出版时点之后的未来预测。\",\"reason\":\"该句是作者回忆当时对投资者态度的预期，叙述时结果已知，属于历史叙述而非面向未来的预测。\",\"limitation\":\"原文未给出可核验的投资者态度指标，且属事后叙述。\",\"evidence_ids\":[],\"method\":\"基于对投资者态度的判断\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"即将到来\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000015436-000015454\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文“我们刚一完成交易，网络泡沫就破灭了”是过去事实陈述，非预测。\",\"reason\":\"该句描述的是2000年3月融资完成后网络泡沫破灭的既成事实，抽取将其误作预测。\",\"limitation\":\"原文为过去事实，无未来预测成分。\",\"evidence_ids\":[],\"method\":\"事后叙述\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6430,
+    "completion_tokens": 631,
+    "total_tokens": 7061,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 6430
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

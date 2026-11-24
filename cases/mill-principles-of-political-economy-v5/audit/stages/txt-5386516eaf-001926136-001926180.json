@@ -1,0 +1,70 @@
+{
+  "id": "txt-5386516eaf-001926136-001926180",
+  "assess": {
+    "id": "txt-5386516eaf-001926136-001926180",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "future",
+    "scope": "人类分成雇主与雇工这两个世袭阶级，不能永久维持。原ID只覆盖这句里的“and employed, can be permanently maintained.”，判断仍对整句的雇主与雇工。",
+    "reason": "相对流动率长期稳定，说的是职业阶级出身和去向，不是雇主与雇工这两个世袭阶级是否还能永久维持。永久到截止日也没有封闭。",
+    "limitation": "体力劳动者之子进入白领职业，仍可以是雇工，不是雇主阶级的消失。",
+    "evidence_ids": [
+      "ev-goldthorpe-2016"
+    ],
+    "method": "支持检索世袭的雇主/雇工划分是否结束，反证检索阶级再生产是否仍在。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "permanently",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-goldthorpe-2016",
+        "quote": "Relative mobility rates, comparing the chances of individuals of different class origins arriving at different class destinations, also show long-term stability",
+        "relation": "boundary",
+        "limitation": "职业阶级的相对流动，不是雇主与雇工。",
+        "observation_end": "2016-03-15",
+        "publication_date": "2016-03-15",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺雇主与雇工作为两个世袭阶级是否已不能维持的同对象证据。永久尚未到期，不能把继续存在写成已经证伪。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001926136-001926180",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "sons of manual workers left the employed class"
+      },
+      {
+        "role": "counter",
+        "query": "relative class mobility remained stable Britain"
+      }
+    ],
+    "note": "无 executed=true。ID保持原字符跨度，不另造子ID。"
+  },
+  "select": {
+    "urls": [
+      "https://www.thebritishacademy.ac.uk/documents/1060/05_Goldthorpe_1825.pdf"
+    ],
+    "reason": "职业流动不是世袭的雇主与雇工。"
+  }
+}

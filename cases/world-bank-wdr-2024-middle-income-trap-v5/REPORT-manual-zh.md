@@ -1,0 +1,146 @@
+# 世界银行《2024年世界发展报告：中等收入陷阱》（World Development Report 2024: The Middle-Income Trap）：出版后预测人工核查
+
+- 案例目录：`cases/world-bank-wdr-2024-middle-income-trap-v5/`
+- 出版日期：世界银行 2024 年 8 月 1 日正式出版（CC BY 3.0 IGO）。正文取自世界银行开放知识库（OKR）PDF（sha256 `dc69d858…`，与队列记录一致），用 pdftotext 转为 TXT（sha256 `b47f186b…`，848,341 字符）。观察窗口为 2024-08 至 2026-11-15。
+- 截止日：2026-11-15（Asia/Shanghai）
+
+## 方法说明
+
+按 METHOD.md 执行。抽取：用仓库 prepare_book v5 流水线把全文（848,341 字符）切成 245 块（每块 3500 字符，带 600 字符上下文）。助手逐块通读，没有用关键词筛选，按 DISCOVER_PROMPT_V5 写出模型本应返回的 JSON，再由仓库代码完成引文对齐、归属降级、去重和导入：共 32 条候选，其中 27 条为可核验预测，5 条被降为 unclear（一般规律、修辞判断、转述 IEA 预测等）。参考文献、图表注释和致谢不产生预测。核验：每条先写 scope，各做一次 support 与 counter 的 Exa 检索，其中 4 条追加一轮自适应检索；只从检索返回的 URL 中选源。原文存档于 data/sources（63 份，sha256），写入 data/evidence.jsonl（63 条）。助手阅读后按“正确／趋势符合／部分符合／错误／暂无法判断”规则逐条评断，再经 pipeline.py apply assess → check → report。本稿由助手逐条对照书中原文与存档证据人工复核：先剔除非预测（出版前已发生的史实、一般规律、规范建议、反事实推演等），再对每条预测用 Exa 检索公开来源并抓取存档（`data/sources/`，sha256 记于 `data/evidence.jsonl`）核对至截止日。没有写明终点的预测按“出版日→2026-11-15”的隐含窗口判断；写明的终点未到、或条件句的前提从未出现，一律记“暂无法判断”，不强行判对错。所有来源均为实际抓取并存档的公开页面或文件；本稿未使用 DeepSeek 自动核验结论作为最终判断。
+
+五级判断：正确／趋势符合（方向对、程度或时点未完全到位）／部分符合（一部分成立）／错误／暂无法判断。严格胜率＝正确÷可判定；加权胜率＝（正确＋0.75×趋势符合＋0.5×部分符合）÷可判定；错误率＝错误÷可判定；可判定＝前四级之和。
+
+## 统计
+
+候选 27 条，剔除非预测 0 条，计入 **27 条预测**，其中 **18 条可判定**。
+
+| 判断 | 条数 |
+|---|---:|
+| 正确 | 5 |
+| 趋势符合 | 6 |
+| 部分符合 | 6 |
+| 错误 | 1 |
+| 暂无法判断 | 9 |
+
+| 指标 | 数值 |
+|---|---:|
+| 严格胜率 | **27.8%**（5/18） |
+| 加权胜率 | **69.4%** |
+| 错误率 | **5.6%**（1/18） |
+| 未定占比（暂无法判断/预测） | 33.3%（9/27） |
+
+## 总体评价
+
+WDR 2024 的预测多是对出版后两三年宏观环境的判断，大体方向被证实：中等收入国家增长放缓未扭转（2026 年新兴市场和发展中经济体增长预计降至 3.6%），本十年增长弱于此前二十年，各国补贴普遍带本国优先色彩，关键矿产需求猛增（2024 年锂需求增长近 30%），中国提前完成 2030 年风光装机目标，伊兹密尔成为对欧出口风电部件的基地。部分应验的集中在“程度”上：IRA 和回流补贴一度带来投资热潮，但 2025 年起回落；贸易并未被地缘紧张压缩，2025 年反而创新高，受压的主要是投资；按阵营重组贸易有迹象但不普遍；电解槽成本先升后降。唯一判错的是“能源转型减少化石燃料工人需求”：截止日前全球煤炭和油气就业反而上升。另有 9 条终点在 2045、2100 年或“未来几十年”“中期”，暂无法判断；其中“中期出现无序违约潮”迄今证据偏向反面（2025 年惠誉评级主权零违约）。
+
+## 逐条判断
+
+编号为 `data/claims.jsonl` 中可判定候选的顺序号。
+
+### 正确（5 条）
+
+- **#7** 「A turnaround is not likely soon because middle-income countries are facing ever-stronger headwinds.」  
+  判断：**正确**。放缓未扭转：世行2026年6月预计新兴市场和发展中经济体2026年增长放缓至3.6%，所有地区都弱于2025年，人均收入增长为疫情以来最弱；同期全球增长预计降至2.5%  
+  来源：<https://thedocs.worldbank.org/en/doc/2b672b3b0415d6b66c45b66579db4ef5-0050012026/related/GEP-Jun-2026-Executive-Summary.pdf>；<https://thedocs.worldbank.org/en/doc/7ce50b5aa95bef66048680bba9926ec8-0050012026/related/GEP-Jan-2026-gdp-growth.pdf>
+- **#10** 「They are unlikely to enact subsidies consistent with a globally integrated economy because such subsidies woul…」  
+  判断：**正确**。Global Trade Alert记录2025年产业政策以“安全优先”、歧视性公共采购回潮，中国拟对国产货物给予采购优惠，欧盟讨论“欧洲优先”，非歧视性补贴并未成为主流  
+  来源：<https://globaltradealert.org/reports/how-industrial-policy-changed-in-2025>；<https://globaltradealert.org/reports/New-Converts-The-Return-of-Discriminatory-Public-Procurement>；<https://globaltradealert.org/state-act/89636-china-proposed-preference-margin-in-public-procurement-for-goods-produced-in-china/>
+- **#20** 「meet its 2030 renewable energy generation target five years ahead of time, by 2025.」  
+  判断：**正确**。国家能源局：2024年7月底中国风电、光伏总装机超12亿千瓦，提前6年完成2030年目标，比预测的2025年还早  
+  来源：<https://www.nea.gov.cn/2024-11/08/c_1310787160.htm>；<https://www.bloomberg.com/news/articles/2024-08-23/china-hits-xi-jinping-s-renewable-power-target-six-years-early>
+- **#23** 「The transition is also expected to significantly increase the demand for minerals that are critical inputs in …」  
+  判断：**正确**。IEA《2025全球关键矿产展望》：2024年锂需求增长近30%，远高于2010年代每年10%，镍、钴、石墨、稀土需求也增长6%—8%  
+  来源：<https://www.iea.org/reports/global-critical-minerals-outlook-2025/executive-summary>；<https://www.iea.org/news/diversification-is-the-cornerstone-of-energy-security-yet-critical-minerals-are-moving-in-the-opposite-direction>
+- **#25** 「Now it is poised to become a significant producer and exporter of intermediate products in Europe’s wind energ…」  
+  判断：**正确**。Nordex 2023年在土耳其生产的7.63亿美元风电设备多数出口欧洲，2024年目标年底前出口8亿欧元；2025年伊兹密尔成为叶片生产基地并出口全球（除中国），欧洲视土耳其为风电供应链不可或缺的一环  
+  来源：<https://mobile.aa.com.tr/en/economy/spanish-german-multinational-nordex-group-to-invest-19b-in-turkiyes-wind-energy-sector/3170469>；<https://www.aa.com.tr/en/energy/wind/turkish-aegean-city-becomes-production-base-of-wind-turbine-blades/38464>；<https://www.turkiyetoday.com/business/europe-views-turkiye-as-integral-part-of-wind-energy-supply-chain-3204853>；<https://www.aa.com.tr/tr/ekonomi/nordex-group-yil-sonunda-turkiyeden-avrupaya-800-milyon-avroluk-ruzgar-ekipmani-ihracati-hedefliyor/3342008>
+
+### 趋势符合（6 条）
+
+- **#4** 「Growing geopolitical, demographic, and environmental complications will make economic growth harder in the yea…」  
+  判断：**趋势符合**。世行2025年6月称全球经济处于2008年以来最弱区间（不计衰退）；2026年6月又因中东冲突推高能源价格，预计全球增长由2025年的2.9%降至2.5%，地缘因素确实拖累增长；但IMF也多次强调2025年经济“有韧性”，幅度上不算显著恶化  
+  来源：<https://www.worldbank.org/en/news/press-release/2025/06/10/global-economic-prospects-june-2025-press-release>；<https://thedocs.worldbank.org/en/doc/2b672b3b0415d6b66c45b66579db4ef5-0050012026/related/GEP-Jun-2026-Executive-Summary.pdf>；<https://www.imf.org/en/news/articles/2025/10/17/sp101725-resilience-in-a-world-of-uncertainty>
+- **#11** 「their demand for energy will rise dramatically.」  
+  判断：**趋势符合**。IEA：2024年全球电力需求增长4.4%，2025年约3%，仍高于过去十年均值；至2027年新增需求约85%来自新兴经济体，数据中心约占增长的十分之一。方向符合，但“大幅”上升主要靠工业、空调和电气化，AI贡献在中等收入国家尚有限  
+  来源：<https://www.iea.org/files/0f028d5f-26b1-47ca-ad2a-5ca3103d070a/Electricity2025.pdf>；<https://www.iea.org/reports/global-energy-review-2026/electricity-demand>；<https://www.iea.org/reports/energy-and-ai/executive-summary>
+- **#13** 「As a result, economic growth in the remainder of this decade will likely be weaker than it was in the last two…」  
+  判断：**趋势符合**。本十年尚未结束，但走势相符：世行称2020年代前半段为30年来最弱的五年，2024年预计增长比2010年代均值低近0.75个百分点；2025年全球增长2.9%、2026年预计2.5%，仍低于此前二十年水平  
+  来源：<https://www.worldbank.org/en/news/press-release/2024/01/09/global-economic-prospects-january-2024-press-release>；<https://thedocs.worldbank.org/en/doc/2b672b3b0415d6b66c45b66579db4ef5-0050012026/related/GEP-Jun-2026-Executive-Summary.pdf>
+- **#18** 「high-income countries are likely to sustain high interest rates for the foreseeable future」  
+  判断：**趋势符合**。高收入国家利率自高点回落但仍明显高于2010年代：美联储2024年起降息，2026年10月仍维持3.75%—4%；欧央行2026年10月存款利率2.5%（此前曾加息）。“维持高利率”方向成立，但程度低于出版时水平  
+  来源：<https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm>；<https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html>；<https://www.reuters.com/markets/rates-bonds/december-central-bank-rate-cuts-take-2024-easing-push-historic-level-2025-01-07/>
+- **#19** 「the green transition, education, the capacity to innovate, and infrastructure—are likely to be put on hold.」  
+  判断：**趋势符合**。联合国2025年报告：34亿人生活在债务利息支出超过卫生或教育支出的国家，发展中国家2024年净利息支出9210亿美元，挤占发展投资；但2025年全球FDI回升6%，挤出程度因国而异  
+  来源：<https://www.un.org/sustainabledevelopment/blog/2025/06/ffd4-press-release-sg-report-2025/>；<https://unctad.org/publication/world-debt-2025-it-time-reform>；<https://unctad.org/news/global-investment-rises-6-16-trillion-development-gains-remain-uneven>
+- **#21** 「the clean energy transformation will alter the economic geography of manufacturing and global trade and the la…」  
+  判断：**趋势符合**。贸易政策格局确已改变：2024年美国对中国电动车加征100%关税，欧盟、加拿大跟进，清洁能源成为贸易摩擦焦点；IEA 2026年称能源技术制造在重新平衡，但中国仍主导多数供应链环节，制造地理变化有限  
+  来源：<https://www.csis.org/analysis/not-all-tariffs-are-same-core-differences-between-us-and-eu-tariffs-against-chinese-evs>；<https://www.iea.org/commentaries/energy-technology-manufacturing-is-rebalancing-in-a-dynamic-era-for-trade-and-industrial-policy>；<https://www.iea.org/reports/energy-technology-perspectives-2026/supply-chain-risks-and-industrial-competitiveness>
+
+### 部分符合（6 条）
+
+- **#3** 「Foreign trade and investment are in danger of becoming constricted by geopolitical tensions」  
+  判断：**部分符合**。投资一侧应验：全球FDI自2021年起下滑，UNCTAD 2025年6月警告关税将加剧投资下降，2025年“解放日”关税带来明显碎片化；但贸易一侧未被压缩，2025年全球贸易创约35万亿美元新高，商品贸易量增长4.6%  
+  来源：<https://www.reuters.com/business/global-investment-decline-may-worsen-due-tariffs-un-trade-agency-warns-2025-06-19/>；<https://www.bis.org/publications/aer-2025/sustaining-stability-amid-uncertainty-fragmentation>；<https://unctad.org/news/global-trade-hit-record-35-trillion-despite-slowing-momentum>；<https://www.wto.org/english/res_e/booksp_e/gtos0326_e.pdf>
+- **#8** 「And “make local” subsidies will likely do a lot to relocate production—to the United States, to the European U…」  
+  判断：**部分符合**。2023—2024年在CHIPS与IRA带动下美国制造业厂房投资创纪录（2024年2月年化近2250亿美元）；但2025年起工厂建设回落、回流未转化为持续建设，“大量转移”只在前期部分实现  
+  来源：<https://www.jec.senate.gov/public/_cache/files/d2ffa7d7-5c3e-4c19-b83f-31a36e803076/jec-fact-sheet-on-us-manufacturing-renaissance.pdf>；<https://www.bostonfed.org/publications/current-policy-perspectives/2024/manufacturing-gains-from-green-energy-and-semiconductor-spending.aspx>；<https://www.sageecon.com/p/factory-construction-falters>；<https://interactanalysis.com/insight/us-reshoring-not-translated-into-meaningful-factory-construction/>
+- **#9** 「initial modeling suggests that the US Inflation Reduction Act will substantially attract industry toward the U…」  
+  判断：**部分符合**。IRA生效两年内带来超过1150亿美元清洁能源制造投资公告，确有吸引产业之效；但2025年政策逆转后取消项目累计约280亿美元，且证据只覆盖美国，墨、加部分无从证实  
+  来源：<https://www.canarymedia.com/articles/clean-energy/two-years-in-us-clean-energy-manufacturing-boom-is-still-going-strong>；<https://e2.org/reports/clean-economy-works-two-year-review-2024/>；<https://e2.org/releases/companies-cancel-4-4-billion-in-clean-energy-projects-28-billion-30k-jobs-lost-in-2025/>
+- **#16** 「Although there is limited evidence of widespread “friend-shoring” or realignment of trade along geopolitical l…」  
+  判断：**部分符合**。条件（贸易紧张加剧）已成立。麦肯锡测得2017—2024年贸易的平均地缘政治距离下降约7%，法国财政部2025年11月称贸易按地缘阵营重组；但美联储2025年12月指出碎片化既不对称也不普遍，中国出口并未按阵营收缩，尚非“广泛”重组  
+  来源：<https://www.tresor.economie.gouv.fr/Articles/4f58a89a-ed23-437f-bcc7-5f0cade17a17/files/af9705db-2dc0-44ef-baba-a260d119c637>；<https://www.mckinsey.com/mgi/our-research/geopolitics-and-the-geometry-of-global-trade-2025-update>；<http://www.federalreserve.gov/econres/notes/feds-notes/understanding-trade-fragmentation-20251212.html>
+- **#26** 「There is reason to be optimistic that ongoing energy price increases will encourage firms and other users to r…」  
+  判断：**部分符合**。能源强度确在下降，但2023、2024年只改善约1%，仅为此前均值一半，同期能源价格自2022年高位回落；2025年改善回升至1.8%。降强度部分成立，“持续涨价促使降强度”的机制未得到证实  
+  来源：<https://www.iea.org/reports/energy-efficiency-2024/executive-summary>；<https://www.iea.org/reports/energy-efficiency-2025/executive-summary>
+- **#27** 「Electrolyzer costs are expected to fall rapidly in the」  
+  判断：**部分符合**。BNEF 2024年调查显示电解槽成本不降反升；2026年调查才显示中国和西方成本都在下降，中国设备效率也已追平。“迅速下降”在前两年未兑现，后期部分出现  
+  来源：<https://www.hydrogeninsight.com/electrolysers/cost-of-electrolysers-for-green-hydrogen-production-is-rising-instead-of-falling-bnef/2-1-1607220>；<https://www.hydrogeninsight.com/electrolysers/electrolyser-costs-are-falling-in-china-and-the-west-but-chinese-equipment-has-caught-up-on-efficiency-bnef/2-1-2008389>
+
+### 错误（1 条）
+
+- **#24** 「The energy transition will lower the demand for workers who extract and refine coal, natural gas, and oil.」  
+  判断：**错误**。截止日前未见：IEA《世界能源就业2025》称化石燃料就业保持韧性，因印度、中国、印尼扩张，全球煤炭就业比2019年高8%，油气就业继续上升；只有发达经济体煤炭供应就业自2019年下降20%  
+  来源：<https://www.iea.org/reports/world-energy-employment-2025/executive-summary>；<https://balkangreenenergynews.com/iea-employment-in-energy-sector-grows-two-times-faster-than-in-global-economy/>；<https://oilreviewmiddleeast.com/industry/oil-and-gas-employment-continues-to-rise>
+
+### 暂无法判断（9 条）
+
+- **#1** 「If they stick with the old playbook, most developing countries will lose the race to create reasonably prosper…」  
+  判断：**暂无法判断**。终点为本世纪中叶（约2050年），且以“继续沿用旧打法”为条件，截止日远未到；世行2025年各报告仍警告多数中等收入国家增长放缓，但无法据此判定结局  
+  来源：<https://blogs.worldbank.org/en/governance/overcoming-the-middle-income-trap--why-institutions-matter>；<https://thedocs.worldbank.org/en/doc/8bf0b62ec6bcb886d97295ad930059e9-0050012025/original/GEP-June-2025.pdf>
+- **#2** 「At current trends, it will take China more than 10 years just to reach one-quarter of US income per capita, In…」  
+  判断：**暂无法判断**。预测的是“10年以上/近70年/75年”的长期时距，截止日无法检验终点；目前进展与之相符：2025年中国人均GDP约13,862美元，美国约90,026美元，约为15.4%，离四分之一仍远  
+  来源：<https://fred.stlouisfed.org/series/PCAGDPCNA646NWDB>；<https://www.kylc.com/stats/global/yearly_per_country/g_gdp_per_capita/chn-usa.html>
+- **#5** 「most middle-income countries are likely to experience signifi­cant slowdowns between 2024 and 2100.」  
+  判断：**暂无法判断**。预测区间为2024—2100年，且以“驱动因素延续既有趋势”为条件，截止日无法检验  
+  来源：<https://www.oecd.org/en/topics/sub-issues/economic-outlook/long-run-economic-scenarios-2025-update.html>
+- **#6** 「Countries such as Brazil and Mexico are likely to be even further behind the United States in 2100 than they a…」  
+  判断：**暂无法判断**。终点为2100年，截止日无法检验  
+  来源：<https://data.worldbank.org/indicator/NY.GDP.PCAP.CD>
+- **#12** 「middle-income countries whose growth has already significantly slowed, such as Argentina, Bulgaria, and Mexico…」  
+  判断：**暂无法判断**。时距为今后70年，截止日无法检验  
+  来源：<https://www.macrotrends.net/global-metrics/countries/arg/argentina/gdp-per-capita>
+- **#14** 「which will especially affect middle-income countries projected to face labor crunches in the coming decades.」  
+  判断：**暂无法判断**。时距为未来几十年；中国人口已连续四年下降、劳动年龄人口收缩，但多数中等收入国家当前仍是青年失业而非劳动力紧缺，终点未到  
+  来源：<https://asiatimes.com/2026/01/chinas-population-falls-for-fourth-year-amid-economic-woes/>；<https://www.ilo.org/sites/default/files/2025-01/WESO25%5FTrends%5FEN%5FWEB5.pdf>
+- **#15** 「Latin America will retain a large workforce until the early 2040s, while the Middle East and North Africa and …」  
+  判断：**暂无法判断**。终点为2040年代/2045年，截止日无法检验  
+  来源：<https://population.un.org/wpp/assets/Files/WPP2024%5FSummary-of-Results.pdf>
+- **#17** 「The resulting loss of market access for some of these countries and the lack of access to these avenues of rel…」  
+  判断：**暂无法判断**。“中期”尚未走完；迄今证据偏向反面：主权违约债务额2024年下降10%，惠誉评级主权2025年违约为零，未见违约潮  
+  来源：<https://www.bankofcanada.ca/2025/10/staff-analytical-note-2025-24/>；<https://assets.fitchratings.com/downloadFile?reportType=report&sfReport=false&slug=sovereigns%2Fsovereigns-2025-transition-default-study-07-04-2026>
+- **#22** 「In middle-income countries, coal-fired power plants are the most exposed to the risk of becoming stranded and …」  
+  判断：**暂无法判断**。提前10—30年退役属长期结果，截止日无法检验；迄今印尼JETP提前关停项目受阻，2025年新增煤电创十年新高  
+  来源：<https://www.reuters.com/business/energy/indonesia-coal-power-phase-out-plan-risk-due-stalled-international-funding-2025-11-17/>；<https://www.carbonbrief.org/new-coal-plants-hit-10-year-global-high-in-2025-but-power-output-still-fell>
+
+## 剔除的非预测
+
+| 编号 | 原文 | 类型 | 说明 |
+|---:|---|---|---|
+| — | （无） | — | 候选为人工挑选，未收入非预测 |
+
+## 文件
+
+- 本文：`cases/world-bank-wdr-2024-middle-income-trap-v5/REPORT-manual-zh.md`
+- 逐条结构化结果：`cases/world-bank-wdr-2024-middle-income-trap-v5/output/manual-final/results.manual.jsonl`（review_source = `manual-assistant-2026-11-15`），汇总 `output/manual-final/summary.json`
+- 人工决定源文件：`cases/world-bank-wdr-2024-middle-income-trap-v5/audit/manual_review_2026-11-15.py`

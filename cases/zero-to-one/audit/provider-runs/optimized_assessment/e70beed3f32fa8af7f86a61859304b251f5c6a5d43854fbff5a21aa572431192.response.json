@@ -1,0 +1,28 @@
+{
+  "id": "ceabe336-6299-42a4-8d92-ede7f1d26f32",
+  "object": "chat.completion",
+  "created": 1794201580,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000020461-000020477\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"引述贝尔纳·卢瓦索关于失星自杀的条件性表态；原文同段已叙述其2003年自杀，属出版前已发生事件的转述，非面向未来的预测。\",\"reason\":\"该句是转述大厨的条件性自我表态，且原文随即交代其2003年已自杀，属于对过去事件的引述而非新增预测。\",\"limitation\":\"条件性表态与自杀原因之间的因果无法由原文确证，且事件发生在出版前，不构成可评估的未来预测。\",\"evidence_ids\":[],\"method\":\"条件性表态\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4333,
+    "completion_tokens": 192,
+    "total_tokens": 4525,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 4333
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

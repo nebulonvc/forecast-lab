@@ -1,0 +1,531 @@
+# Luddites and the Demographic Transition
+
+National Bureau of Economic Research. Published: 2008-11-01. Report. 29 citations.
+
+## Authors
+
+- Kevin O’Rourke (National Bureau of Economic Research): h-index 52; 12,143 citations
+- Ahmed S. Rahman (National Bureau of Economic Research): h-index 15; 822 citations
+- Alan M. Taylor (National Bureau of Economic Research): h-index 72; 25,490 citations
+
+## Topics
+
+- Economic Growth and Productivity
+- Historical Economic and Social Studies
+- Economic Development and Digital Transformation
+
+---
+
+# LUDDITES AND THE DEMOGRAPHIC TRANSITION
+
+## Abstract
+
+Technological change was unskilled-labor-biased during the early Industrial Revolution, but is skill-biased today. This is not embedded in extant unified growth models. We develop a model which can endogenously account for these facts, where factor bias reflects profit-maximizing decisions by innovators. Endowments dictate that the early Industrial Revolution be unskilled-labor-biased. Increasing basic knowledge causes a growth takeoff, an income-led demand for fewer educated children, and the transition to skill-biased technological change. The simulated model tracks British industrialization in the 18th and 19th centuries and generates a demographic transition without relying on either rising skill premia or exogenous educational supply shocks.
+
+On March 11, 1811, several hundred framework knitters gathered in the Nottingham marketplace, not far from Sherwood Forest, to protest their working conditions. Having been dispersed by the constabulary and a troop of Dragoons, they reassembled that evening in nearby Arnold, and broke some 60 stocking frames. On November 10 of the same year, another Arnold mob gathered in Bulwell Forest, under the command of someone styling himself "Ned Lud," and the rapidly growing Luddite movement would suffer its first fatality that night when John Westley was shot dead during an attack on the premises of Edward Hollingsworth, a local hosier.
+
+Today, the term Luddite often refers to opponents of technological progress for its own sake. At the time, however, Captain Ludd's followers were engaged in what Hobsbawm (1952, p. 59) has termed "collective bargaining by riot." "In none of these cases . . . was there any question of hostility to machines as such. Wrecking was simply a technique of trade unionism" (ibid.) on the part of skilled textile workers whose living standards were being eroded by new machinery. This new machinery was making it possible for employers not just to produce cloth more efficiently, but to use cheaper unskilled workers, women, and even children, in the place of highly paid artisans. Technological change during the early Industrial Revolution hurt skilled workers, and as we can see from Figure 1 , skill premia fell (Clark 2007; Katz and Autor 1999) . Not surprisingly, skilled workers objected to this.
+
+The emergence of Luddism occurred during what Galor and Weil (2000) have termed the "post-Malthusian regime." During this phase of British economic history, technological change was enabling the economy to slowly escape the Malthusian trap. However, living standards only rose slowly during this period, as population grew at an accelerating rate. But by the late 19th century, technological change was accelerating and living standards were growing more rapidly (Figure 2 ). Much of this acceleration was due to a dramatic and well-documented demographic transition, whereby fertility rates fell and educational standards rose (Figure 3 ). Many new technologies were now beginning to emerge which were skill-using rather than skill-saving, for example in modern chemical and metallurgical industries. But as Figure 1 shows, such a shift did not coincide with rising skill premia, since if anything they continued to fall.
+
+All these pieces of historical evidence beg a unified explanation (Voth 2003) . To theorists used to considering household fertility choices within a quantity-quality trade-off framework (Becker and Lewis 1973; Becker and Tomes 1976) , the fact that the demographic transition, and the switch to what Galor and Weil call "modern economic growth," occurred during a period within which skill premia were falling poses a problem. If the skill premium is the crucial relative price which households take into account when deciding how many children to have, and how well to educate them, then ceteris paribus falling skill premia should have led Figure 1 : English Skill Premium, The figure shows the ratio of the skilled to the unskilled wage in England in the 18th and 19th centuries. During the Industrial Revolution period, the skill premium fell. Source: Clark (2007) .
+
+to rising fertility rates and falling educational levels. A logical response to this dilemma is to argue that other things were not in fact equal. For example, one could argue, as does Galor (2005, pp. 255-56) , that technological change was driving up the skill premium during the transition to modern economic growth, thus bringing about the demographic transition, but that "the sizable increase in schooling that took place in the 19th century and in particular the introduction of public education that lowered the cost of education (e.g., The Education Act of 1870), generated (a) significant increase in the supply of educated workers that may have prevented a rise in the return to education."
+
+In this paper, we adopt a different approach, generating a demographic transition in the context of a model in which technological change is indeed initially unskilled-labor-biased, as was in fact the case; in which skill premia fall without subsequently rising, again as was the The figure shows the permanent acceleration in growth rates and the temporary boom in population which accompanied the Industrial Revolution. Growth of output per person (% per year) 1.30 1.40 1.50 1.60 1.70 1700 1750 1800 1850 1900
+
+Growth of population (% per year)
+
+Source: Galor (2005) , based on Maddison (2001) .
+
+case; and in which household fertility choices do indeed reflect quantity-quality trade-offs.
+
+We do this without having to appeal to exogenous educational supply shocks, or indeed to exogenous shocks of any kind. However, in order to accomplish these objectives we need to go beyond the current so-called "unified growth theory" literature (e.g., Galor and Weil 2000; Jones 2001; Hansen and Prescott 2002; Lucas 2002; Weisdorf 2004 ) in several respects.
+
+Most obviously, we need to incorporate two types of workers, skilled and unskilled, so that we can track their relative earnings over time. Second, we need to allow for factorbiased technological change. Third, and most importantly, we need to allow the direction of factor bias to differ at different points in time, since we want to explain why the Industrial Revolution was initially so bad for skilled workers, rather than simply assume this was the Source: Tan and Haines (1984) . Trend lines are 2-period moving averages.
+
+case. Similarly, we want to explain why, by the end of the 19th century, new technologies that were skill-using were being invented, rather than just assume this was happening. We are thus going to have to explicitly model the choices facing would-be innovators. If the direction of technological change differed over time, this presumably reflected the different incentives facing these inventors.
+
+In this paper, we thus delve into the microeconomics of technological change to a greater extent than previous unified growth theory papers, which have tended to model technological change in a reduced form manner as a function of scale affects (cf. Romer 1990 , Kremer 1993 ) and/or human capital endowments. We propose a fully-specified research and development model driving technological change, which is appropriate for this period since Allen (2006) has recently pointed out that British firms were investing significant resources in the search for technological breakthroughs during the Industrial Revolution. Building on the foundations of the benchmark Galor-Weil (2000) and Galor-Mountford (2008) models, we thus make several key changes to previous specifications.
+
+The first key feature of our model, and the paper's main contribution, is that it endogenizes the direction of technological change. There are two ways to produce output, using either a low-skill technique (based on raw labor L) or a high-skill technique (based on educated labor or human capital H). For simplicity, these techniques are each linear in their sole input, and are characterized by their own, endogenous, productivity coefficients or technology levels.
+
+Research by firms, which is patentable or otherwise excludable in the short run, can raise these technology levels and generate short-run monopoly profits. In the spirit of Acemoglu (1998) , we allow potential innovators to look at the supply of skilled and unskilled labor in the workforce, and tailor their research efforts accordingly. The direction as well as the pace of technological change thus depends on demography. At the same time, demography is explicitly modeled as depending on technology, as is common in the literature (e.g., Galor and Weil 2000) . Households decide the quality and quantity of their children (that is, the future supply of L and H) based directly on anticipated future wages, and thus (indirectly) on recent technological developments. As such the model allows for the co-evolution of both factors and technologies.
+
+The second key feature of our approach is that we distinguish between two different types of technological progress: basic knowledge (B) and applied knowledge (A). In our model, the former grows according to the level of human capital in the economy and is a public good; the latter describes firms' techniques, which are subject (for a time) to private property rights, generate private profits, and hence create incentives for research. In our model, A is driven by research which generates benefits (increases in A) but also has costs (that are decreasing in B); thus basic knowledge drives the development of applied knowledge.
+
+This distinction between basic and applied knowledge is inspired by Mokyr (2002 Mokyr ( , 2005a)) , who distinguishes between two knowledge types: the "propositional" episteme ("what") and the "prescriptive" techne ("how"). An addition to the former is for Mokyr a discovery, and an addition to the latter an invention. These categories can be thought of as close parallels to our B-knowledge (which we call "Baconian" knowledge) and A-knowledge (our sectorspecific productivity levels, or TFP). We propose the term Baconian knowledge to honor Francis Bacon, since if Mokyr (2002, p. 41 ) is correct, then "the amazing fact remains that by and large the economic history of the Western world was dominated by materializing his ideals." Our model can provide a rationale for one of Mokyr's key claims, namely that "the true key to the timing of the Industrial Revolution has to be sought in the scientific revolution of the seventeenth century and the enlightenment movement of the eighteenth century" (p. 29). As will be seen, basic knowledge has to advance in our model for some time before applied knowledge starts to improve. This helps the model match reality: we find that Baconian knowledge B can increase continuously, but applied knowledge or productivity A only starts to rise in a discontinuous manner once B passes some threshold.
+
+The third key feature of our model is that it embodies a fairly standard demographic mechanism, in which parents have to trade off between maximizing current household consumption and the future skilled income generated by their children. We get the standard result that, ceteris paribus, a rising skill premium implies rising educational levels and falling fertility levels, while a falling skill premium implies the reverse. However, we further assume that rising wages makes education more affordable for households. Thus our model suggests that robust technological growth during the late 19th century fostered the dramatic rise in education and fall in fertility even with the low skill premia of the time. A truly unified theory of industrialization should be able to capture all these trends; extant unified theories fall short in some important respects.
+
+The next section of the paper presents the key aspects of the model, which endogenizes both technologies and demography. We then simulate this model to show how the theory can track the key features of the industrialization of Western Europe during the 18th and 19th centuries.
+
+## The Model
+
+In this section we build a theoretical version of an industrializing economy in successive steps, keeping the points enumerated in the introduction firmly in mind. Section 1.1 goes over the production function and technologies. Here we develop a method for endogenizing the scope and direction of technical change, keeping endowments fixed. Section 1.2 then merges the model with an overlapping generations framework in order to endogenize demographic variables. These two parts form an integrated dynamic model which we use to analyze the industrialization of England during the 18th and 19th centuries.
+
+## Technology and Production
+
+We begin by illustrating the static general equilibrium of a hypothetical economy. The economy produces a final good Y out of two "intermediate inputs" using a CES production function
+
+Y = (A l L) σ-1 σ + (A h H) σ-1 σ σ σ-1 , (1)
+
+where A l and A h are technology terms, L is unskilled labor, H is skilled labor, and σ is the elasticity of substitution between the two intermediate inputs. Heuristically, one might think of the final good Y as being "GDP" which is simply aggregated up from the two intermediates. By construction, A l is L-augmenting and A h is H-augmenting. We will assume throughout the paper that these intermediates are grossly substitutable, and thus assume that σ > 1. 1 With this assumption of substitutability, a technology that augments a particular factor is also biased towards that factor. Thus we will call A l unskilled-labor-biased technology, and A h skill-biased technology.
+
+Economic outcomes heavily depend on which sectors enjoy superior productivity performance. Some authors use loaded terms such as "modern" and "traditional" to label the fast and slow growing sectors, at least in models where sectors are associated with types of goods (e.g., manufacturing and agriculture). We employ neutral language, since we contend that growth can emanate from different sectors at different times, where 'sectors' in our model are set up to reflect factor biases in technology. We argue that the unskilled-intensive sector was the leading sector during the early stages of the Industrial Revolution, while the skilled-intensive sector significantly modernized only from the mid-1800s onwards.
+
+We assume that markets for both the final good and the factors of production are perfectly competitive. Thus, prices are equal to unit costs, and factors are paid their marginal products. Thus we can describe wages as
+
+w l,t = (A l,t L t ) σ-1 σ + (A h,t H t ) σ-1 σ 1 σ-1 L -1 σ t A σ-1 σ l,t , (2)
+
+w h,t = (A l,t L t ) σ-1 σ + (A h,t H t ) σ-1 σ 1 σ-1 H -1 σ t A σ-1 σ h,t . (3)
+
+which in turn implies that the skill premium, w h,t /w l,t , can be expressed as
+
+w h,t w l,t = L t H t 1 σ A h,t A l,t σ-1 σ (4)
+
+From the above we can see that, so long as σ > 1, and holding fixed the supply of factors H and L, a rise (fall) in A h relative to A l implies a rise (fall) in the demand for skilled labor relative to unskilled labor, and in our model this will generate a rise (fall) in the skill premium, all else equal. Similarly, holding A h and A l constant, a rise (fall) in H/L will lead to a fall (rise) in the skill premium, all else equal. Later, however, we will see how supplies of factors change endogenously in the long run in response to the skill premium, and how changes in the technology parameters A h and A l depend, among other things, on factor supplies and wage rates.
+
+In order to endogenize the evolution of factor-specific technology levels A l and A h , we model technological development as improvements in the quality of machines, as in Acemoglu (1998) . Specifically, we assume that researchers expend resources to improve the quality of a machine, and receive some positive profits (due to patents or first-mover advantage) from the sale of these new machines for only one time period. 2 We then define the productivity levels A l and A h to be amalgamations of quality-adjusted machines that augment either unskilled labor, or skilled labor, but not both.
+
+In our model, costly innovation will be undertaken to improve some machine j (designed to be employed either by skilled or unskilled labor), get the blueprints for this newly improved machine, use these blueprints to produce the machine, and sell these machines to the producers of the intermediate good. After one period, however, new researchers can enter the market, and we find that newer, better machines will drive out the older designs. In this fashion we simplify the process of "creative destruction" (Schumpeter 1934, Aghion and Howitt 1992) , where successful researchers along the quality dimension tend to eliminate the monopoly rentals of their predecessors.
+
+## Intermediate Goods Production
+
+Let us now make technology levels explicit functions of these quality-adjusted machines. A l and A h at time t are defined as the following:
+
+A l ≡ 1 1 -β 1 0 q l (j) M l (j) L 1-β dj, (5)
+
+A h ≡ 1 1 -β 1 0 q h (j) M h (j) H 1-β dj, (6)
+
+where 0 < β < 1. M l are machines that are strictly employed by unskilled workers, while M h are machines that are strictly employed by skilled workers. q z (j) is the highest quality of machine j of type z. Note that these technological coefficients may thus be interpreted simply as functions of different types of capital per different types of workers; the capital however in this case is specialized and quality-adjusted. The specifications here imply constant returns to scale in the production of the skilled-and unskilled-intensive intermediate goods.
+
+In the end, we care less about micro differences in machine qualities than about macro effects on total factor productivity. To draw conclusions about the latter we note that our problem is symmetric at the sector level, implying that aggregation is straightforward. In particular, machines along the (0,1) continuum will on average be of symmetric quality, as inventors will be indifferent as to which particular machines along the continuum they will improve. As such we can alternatively write equations ( 5 ) and ( 6 ) as
+
+A l ≡ 1 1 -β Q l 1 0 M l (j) L 1-β dj, (7)
+
+A h ≡ 1 1 -β Q h 1 0 M h (j) H 1-β dj, (8)
+
+where Q k simply denotes the uniform and symmetric quality of all machines used in sector k ∈ {l, h}.
+
+Increases in this index directly increase the total factor productivity of the sector. We also assume that machines last one period, and then depreciate completely.
+
+Our modeling approach reflects the idea that different production techniques can be implemented only by particular factors. For example, by way of initial conditions, preindustrial textile production needed highly skilled labor such as spinners and weavers. Similarly, other preindustrial manufactures relied on their own skilled artisans of various sorts. But changes followed: implementing the technologies of the Industrial Revolution (in textile production, iron smelting and refining, mining and agriculture) required large labor forces with little to no specialized training, and happy, highly-valued skilled craftsmen became angry, machinebreaking Luddites. These changes are proxied here as increases in A l .
+
+Much later, fortunes changed: the techniques developed in the latter half of the 19th century (for example in chemicals, electrical industries and services) raised the demand for a new labor force with highly specialized skills (Mokyr 1999) . According to Goldin and Katz (2008) , in the early 20th century (or from as early as the 1890s onwards, in certain sectors) American manufacturers began to adopt continuous-process or batch production methods, associated with new electricity-and capital-intensive technologies. These new technologies increased the relative demand for skilled workers, who were required to operate the new machinery, and ceteris paribus raised the return to skills. These changes are proxied here as increases in A h .
+
+Returning to the model, let us consider a representative firm that competitively produces the unskilled intermediate. (For brevity, much of what follows will deal with only this Lusing unskilled sector. Analogous results hold for the H-using skilled sector.) The firm's maximization problem is stated as
+
+max {L,M l (j)} p l • A l L - 1 0 p(j)M l (j)dj -w l L, (9)
+
+where p l is the price of the unskilled-intensive intermediate good, and p(j) is the price of machine M l (j) faced by all producers of the intermediate. Hence the firm chooses an amount of unskilled labor to hire and amounts of complementary machines to employ, taking the price of its output, the price of machines, and the price of raw labor as given.
+
+From the first order condition on L we have
+
+p l βA l = w l . ( 10
+
+)
+
+Solving for the price of the intermediate we have p l = w l βA l . From the first order condition on machine j we can get the total demand for machine M l (j)
+
+M l (j) = Q l w l βA l p(j) 1 β L. (11)
+
+The Gains from Innovation
+
+Innovation in a sector takes the form of an improvement in the quality of a machine by a certain multiple. Innovators expend resources up front to develop machine-blueprints, which they use to produce and sell a better-quality machine (all in the same time period). Assume that innovation is deterministic; that is, individuals who decide to research will improve the quality of a machine with a probability of one. We assume that there is a 'quality ladder' with discretely-spaced rungs. If innovation in sector j occurs, the quality of machine j will deterministically rise to εQ l , where ε > 1 denotes the factor by which machine quality can rise. If on the other hand innovation does not occur, the quality of machine j remains at Q l . If someone innovates, they have sole access to the blueprint for one period; after that the blueprint is public.
+
+Once the researcher spends the resources necessary to improve the quality of machine j, she becomes the sole producer of this machine, and charges whatever price (call it p(j)) she sees fit. Thus she receives total revenue of p(j)M l (j). Here we must make the distinction between the cost of producing a machine, and the cost of inventing a machine. We discuss the costs of innovation in the next sub-section. Here, we assume that the marginal cost of producing a machine is proportional to its quality, so that better machines are more expensive to make-a form of diminishing returns. Indeed, we can normalize this cost, so that total costs are simply Q l M l (j).
+
+Thus the producer of a new unskilled-using machine will wish to set the price p(j) in order to maximize V l (j) = p(j)M l (j) -Q l M l (j), where V l (j) is the value of owning the rights to the new blueprints of machine j at that moment in time. The question for us is what this price will be. Note that it will not be possible for the owner to charge the full monopoly markup over marginal cost unless the quality increase ε is very large. This is because all machines in sector j are perfect substitutes (they are simply weighted by their respective qualities); by charging a lower price, producers of older lower-quality machines could compete with producers of newer higher-quality machines.
+
+We thus assume that producers of new machines engage in Bertrand price competition, in the spirit of Grossman and Helpman (1991) and Barro and Sala-i-Martin (2003) . In this case the innovator and quality leader uses a limit-pricing strategy, setting a price that is sufficiently below the monopoly price so as to make it just barely unprofitable for the next best quality to be produced.
+
+This limit pricing strategy maximizes V l and ensures that all older machine designs are eliminated from current production. The Appendix describes how we solve for this price; our solution yields p(j
+
+) = p limit = ε 1 1-β Q l . ( 12
+
+)
+
+Note that this price is higher than the marginal cost of producing new machines, and so there is always a positive value of owning the blueprint to a new machine. Plugging this price into machine demands and these machine demands into our expression of V l gives us
+
+V l = 1 - 1 ε 1 1-β w l βA l 1 β L, (13)
+
+V h = 1 - 1 ε 1 1-β w h βA h 1 β H. ( 14
+
+)
+
+The Costs of Innovation Before an innovator can build a new machine, she must spend resources on R&D to first get the blueprints. Let us denote these costs as c l (for a new unskilled-labor using machine).
+
+The resource costs of research will evolve due to changing economic circumstances. Specifically, the "price" of a successful invention should depend on things like how complicated the invention is and how "deep" general knowledge is. To capture some of these ideas, let us assume that the resource costs of research to improve machine j in the unskilled-intensive sector are given by
+
+c l = Q α l B -φ , (15)
+
+and that the resource costs of research to improve machine j in the skilled-intensive sector are given by
+
+c h = Q α h B -φ . ( 16
+
+)
+
+We include α > 1 as a "fishing-out" parameter-the greater is the complexity of existing machines, the greater is the difficulty of improving upon them (see Jones 1998 on fishing out). The variable B is our measure of current general knowledge that we label Baconian knowledge. The general assumptions in each sector are that research is more costly the higher is the quality of machine one aspires to invent (another sort of diminishing returns), and the lower is the stock of general knowledge.
+
+## Growth of Baconian Knowledge
+
+Baconian knowledge B can thus influence the level of technology A. But what are the plausible dynamics of B?
+
+We allow general knowledge to grow throughout human history, irrespective of living standards and independent of the applied knowledge embedded in actual technology levels. According to Mokyr (2005b, pp. 291-2) , Bacon regarded "knowledge as subject to constant growth, as an entity that continuously expands and adds to itself." Accordingly, we assume that the growth in basic knowledge depends on the existing stock. Furthermore, we assume that Baconian knowledge grows according to how much skilled labor exists in the economy; 3 specifically, we assume the simple form:
+
+B t+1 = H t • B t . ( 17
+
+)
+
+Thus we assume that increases in general knowledge (unlike increases in applied knowledge) do not arise from any profit motive, but are rather the fortuitous by-product of the existence of a stock of skilled workers, as well as of accumulated stocks of Baconian knowledge. But in our model, as we shall see, a skilled worker is just an educated worker, so it is here that the link between productivity growth and human capital is made explicit.
+
+Thus we have a mechanism by which the growth in general knowledge (B) can influence the subsequent development of applied knowledge (A l and A h ). Our functional forms ( 15 ) and ( 16 ) assume that low Baconian knowledge produces relatively large costs to machine improvement, while high Baconian knowledge generates low costs to machine improvement. In our model, B will never fall since (17) ensures that changes in B are nonnegative. Hence, the general knowledge set always expands. This is not a historically trivial assumption, although it is accurate for the episode under scrutiny: Mokyr (2005b, 338-9) comments on the fact that knowledge had been lost after previous "efflorescences" (Goldstone 2002) in China and Classical Antiquity, and states that "The central fact of modern economic growth is the ultimate irreversibility of the accumulation of useful knowledge paired with ever-falling access costs."
+
+## Modeling the Beginnings of Industrialization
+
+Turning to the decision to innovate in the first place, we assume that any individual can spend resources on research to develop and build machines with one quality-step improvement. Of course they will innovate only if it is profitable to do so. Specifically, if π i = V i -c i ≥ 0, research activity for i-type machines occurs, otherwise it does not. That is,
+
+Q l,t =      εQ l,t-1 if 1 -1 ε 1 1-β w l βA l 1 β L ≥ Q α l B -φ , Q l,t-1 otherwise, (18)
+
+Q h,t =      εQ h,t-1 if 1 -1 ε 1 1-β w h βA h 1 β H ≥ Q α h B -φ , Q h,t-1 otherwise. ( 19
+
+)
+
+As these expressions make clear, applied innovations will not be profitable until Baconian knowledge reaches a certain critical threshold where benefits exceed costs. The natural world needs to be sufficiently intelligible before society can begin to master it (Mokyr 2002 ). Thus our model embodies the idea that growth in general Baconian knowledge is a necessary but not sufficient condition for output growth.
+
+Finally, which type of applied innovations happen first? It turns out that due to a "market size" effect, the sector that innovates first will be the one using the abundant factor, since it is there that there is the greatest potential demand for new machines. We can state the following proposition: Proposition 1. If Q l = Q h and L > H, initial technological growth will be unskilled-labor biased if and only if σ > 1.
+
+Proof. Given Q l = Q h , the costs of innovation are the same for skilled and unskilled-laborusing machines, and are falling at the same rate. Thus in order to illustrate that initial growth will be unskill-intensive, we must demonstrate that initial conditions are such that
+
+V l > V h .
+
+First, note that we can plug the limit price from (12) into our machine demand equation ( 11 ), and plug this expression into our technology coefficient expressions ( 7 ) and ( 8 ) to get
+
+A l = 1 1 -β β 1 β 1-β Q β l w 1-β l , (20)
+
+A h = 1 1 -β β 1 β 1-β Q β h w 1-β h . (21)
+
+We then can plug these expressions into our value expressions ( 13 ) and ( 14 ). After simplifying a bit, we get
+
+V l = 1 - 1 ε 1 1-β 1 Q l 1 -β β w l L, (22)
+
+V h = 1 - 1 ε 1 1-β 1 Q h 1 -β β w h H. ( 23
+
+)
+
+Computing the ratio of these last two expressions, we see that our condition for innovation to occur first in the L sector is
+
+V h < V l ⇐⇒ V h V l < 1 ⇐⇒ V h V l = w h H w l L < 1,
+
+given the maintained assumption that
+
+Q l = Q h .
+
+From this we can see that the relative gains for the innovator are larger when the factor capable of using the innovation is large (the so-called "market-size" effect) and when the price of the factor is large (the so-called "price" effect). To get everything in terms of relative factor supplies, we can use (4) and our productivity expressions (20) and ( 21 ), to get a new expression for relative wages:
+
+w h w l = L H 1 σ A h A l σ-1 σ = L H 1 (1-β)(1-σ)+σ Q h Q l β(σ-1) (1-β)(1-σ)+σ . ( 24
+
+)
+
+Finally, by plugging this relative wage into the above inequality, and again using the fact that Q l = Q h , and then simplifying, we have
+
+V h V l = w h H w l L = L H (1-β)(σ-1)-σ+1 (1-β)(1-σ)+σ < 1.
+
+Given that L/H > 1, this can only hold if the exponent is negative, which (since 0 < β < 1) is true only when σ > 1.
+
+In other words, provided that labor-types are grossly substitutable, the initial stages of industrialization had to be unskilled-labor-intensive simply because there were so many more unskilled laborers in the workforce than skilled laborers. So, to grossly simplify the history of innovation, we maintain that for most of human existence the inequalities π l < 0 and π h < 0 held strictly. Once π l ≥ 0, industrialization could occur. Once both π l ≥ 0 and π h ≥ 0, robust modern economic growth could occur. As we will suggest below, this sequence was precisely how we believe history played out.
+
+## Endogenous Demography
+
+We adopt a variant of a fairly standard overlapping generations model of demography suited to unified growth theory (cf. Galor and Weil 2000) .
+
+In a very simplified specification, we assume that 'adult' agents maximize their utility, which depends both on their current household consumption and on their children's expected future income. In an abstraction of family life, we assume that individuals begin life naturally as unskilled workers, accumulate human capital, and then become skilled workers as adults. Consequently the skilled and unskilled are divided into two distinct age groups. That is, an agent evolves naturally from a 'young' unskilled worker into an 'adult' skilled worker; thus his welfare will be affected by both types of wages.
+
+Only 'adults' are allowed to make any decisions regarding demography. Specifically, the representative household is run by an adult who decides two things: how many children to have (denoted n t ) and the level of education each child is to receive (denoted e t ). The number of children must be nonnegative and to keep things simple all households are single-parent, with n = 1 being the replacement level of fertility. The education level is constrained to the unit interval and is the fraction of time the adult devotes to educating the young.
+
+Our modeling of demography is as follows. An individual born at time t spends fraction e t of her time in school (something chosen by her parent), while spending the rest of her time as an unskilled laborer. At t + 1, the individual (who is by this time a mature adult) works strictly as a skilled laborer, using whatever human capital she had accumulated as a child.
+
+## The Adult Household Planner
+
+Allowing for the costs of child-rearing, we assume that the household consumes all the income that the family members have generated. At time t there are L t-1 adults, each of whom is an individual household planner. These planners wish to maximize the sum of current household consumption and the future skilled income generated by their children. That is, the representative agent born at time t -1, who is now an adult at time t, faces the problem
+
+max log (c t ) + log w h,t n t H t+1 L t , (25)
+
+where c t denotes current consumption per household, n t denotes the fertility rate, and H t+1 /L t is the average future level of human capital "bequested" by parents to each of their children. Each household thus wishes to maximize both its own level of consumption and the future skilled income to be earned by the children of that household. Note that we here assume that agents base their expectations of future wages w h,t+1 on current wages w h,t in myopic fashion. 4 e now must specify more precisely how household consumption, population, and human capital are functions of rates of fertility (n t ) and education (e t ). We assume the following functional forms:
+
+c t = w h,t H t L t-1 + w l,t (1 -e t ) n t -w h,t Γn µ t -xn t e t , (26)
+
+L t = n t L t-1 , (27)
+
+H t+1 = (e t L t ) k = (e t n t L t-1 ) k , (28)
+
+where Γ > 0, x > 0, µ > 1 and 0 < k < 1. The first term in ( 26 ) is the income generated by the parent (this is total skilled income generated at time t, w h,t H t , divided by the total number of adults L t-1 ). The second term in ( 26 ) is the unskilled income generated by the children (each child spends 1 -e of their childhood as an unskilled worker). Thus we see that when children are not being educated for a fraction of time 1 -e, they increase the family's unskilled income, but this will reduce their own future skilled income because they will receive a lower endowment of H.
+
+The final two terms in (26) are the overall costs of child-rearing. Note that while having more children involves an opportunity cost of time (since these costs depend on the skilled wages of the parent), each unit of education per child involves a resource cost (of some amount x).
+
+The first of these effects is now totally standard, and incorporates the costs of producing raw unskilled offspring as a function of their number. Having more children typically requires parents to spend more time on child rearing. This explains the opportunity cost term w h Γn µ t , which is increasing in n, although 0 < µ < 1 allows for some economies of scale.
+
+The second of these effects reflects the costs of educating the offspring to make them more skilled. It is also increasing in the number of children. That property appears, for example, in Galor and Mountford (2008) , where, under a discrete choice, unskilled or skilled offspring may be created at exogenously fixed time costs τ u and τ s , where the latter exceeds the former (generating an exogenous, fixed skill premium on the supply side when both types of offspring are present).
+
+Our set up is slightly different in that we allow for a continuum of educational investments e which affect the ultimate human capital level of the n children. We think of this as a resource cost rather than a time cost (e.g., books and other educational overhead), and this cost is allowed to rise in proportion to the amount of educational services supplied. This explains the resource cost term xn t e t . We treat x as an exogenous unit cost. In principle x might shift in response to changes in school productivity, input costs, or public policies that subsidize the cost of education.
+
+The last of these forces played an increasing role in Britain toward the end of the nineteenth century, mostly after our period of interest, and that story and its political economy origins are discussed in Galor and Moav (2006) . Although we do not examine the effects of shifts in x in this paper, the presence of this term generates sharp income effects which are central to our account of the growth process, as for a given level of x, growth implies increased affordability of education. The income-elasticity of education is a potentially important effect in this period, despite its omission from some theories. As noted by Mitch (1992, 82) , influential historians such as Roger Schofield (1973) and E. G. West (1975) , who might not agree on broader questions, thought rising incomes were important causally, allowing poorer families (with no access to credit) to be able to afford human capital investments. In his own empirical analysis, Mitch (1992, 84-86) finds mixed support for the hypothesis. 5 Allowing x to fall would only enhance our story further by encourage an even stronger switch towards skill-biased growth. For the purposes of being conservative, and since this effect has been explored elsewhere, we keep x constant.
+
+Notice that we assume a particular functional form for human capital, where the term e t L t represents the total educational input of the economy. Also notice that increases in fertility rates will immediately translate into increased levels of unskilled labor, while increases in education will eventually translate into increased levels of skilled labor next period. Thus given our discussion above, wage changes will immediately change the overall population level, and will eventually change the level of human capital in the economy. Given ( 26 ) -( 28 ), we can rewrite the household objective function as
+
+max nt,et log w h,t (e t-1 n t-1 L t-2 ) k L t-1 + w l,t (1 -e t )n t -w h,t Γn µ t -xn t e t + log w h,t (e t n t L t-1 ) k L t-1 (29)
+
+subject to: n t ≥ 0, and 0 < e t ≤ 1 .
+
+The individual born at t -1 will choose a pair of {n t , e t } that maximizes (25), taking perceived wages as given.
+
+From ( 29 ), the first-order condition for the number of children is:
+
+w l,t (1 -e t ) + c t k n t = µw h,t Γn µ-1 + xe t . ( 30
+
+)
+
+The left-hand side illustrates the marginal benefit of an additional child, while the righthand side denotes the marginal cost. At the optimum, the gains from an extra unskilled worker in the family and more skilled income for children in the future precisely offsets the opportunity and resource costs resulting from additional child-rearing.
+
+The first order condition for education is:
+
+c t k e t = (w l,t + x) n t . ( 31
+
+)
+
+Again the left-hand side is the marginal benefit and the right-hand side is the marginal cost, be undermined by the inclusion of parental literacy, but the latter is of course highly collinear with income. Mitch also found that income elasticities were falling as incomes rose, suggesting the possibility of threshold effects. In accounts by contemporaries, poor parents themselves were found to cite poverty as the main reason they did not send their kids to school, although their upper-class neighbors were apt to disagree. Go (2008) finds a strong correlation between father's wealth and school attendance by the child in 1850; this correlation disappears in later years after the introduction of free public schools.
+
+this time of an extra unit of education per child. At the optimum, the gains received from more skilled income by children offset the foregone unskilled-labor income and the extra resource cost associated with an extra educational unit for all children at t.
+
+## A Tale of Two Revolutions
+
+Sections 1.1 and 1.2 summarize the long-run co-evolution of factors and technologies in the model. Once innovation occurs and levels of Q l and Q h are determined, the complete general equilibrium can be characterized by simultaneously solving (2), ( 3 ), ( 20 ), ( 21 ), ( 27 ), ( 28 ), ( 30 ) and ( 31 ) for wages, productivity-levels, fertility, education, and factors.
+
+We are now ready to see how well our model can account for what happened in England (and other northwestern European economies) during the eighteenth and nineteenth centuries.
+
+## The Industrial Revolution
+
+An economy before its launch into the Industrial Revolution may be described by the one in section 1.1, with technological coefficients A l and A h constant. Here wages are fixed, and thus the levels of raw labor and human capital remain fixed as well. Both output and output per capita remain stagnant.
+
+If we assume that the evolution of technological coefficients A l and A h are described by the relationships in section 1.1, then the economy must wait until Baconian knowledge grows to a sufficient level before applied innovation becomes possible. Further, technological growth will initially be unskilled-labor biased (that is, there is growth in A l ) so long as it becomes profitable to improve machines used in the unskilled sector before it becomes profitable to improve machines used in the skilled sector Thus if the economy begins such that A l = A h (as we maintain in the simulations), initial technological growth will be unskilled labor biased so long as there is relatively more unskilled labor than skilled labor in the economy, which was surely the case in the eighteenth century (by Proposition 1).
+
+Furthermore, these technological developments change the wage structure, and by implication the evolution of factor endowments. The growth of A l lowers the skill premium, as can be seen in our expression (4), increasing the future ratio of unskilled wages to skilled wages. As w l rises faster than w h , the marginal gains of having more children (the left hand side of equation 30) rise faster than the marginal costs (the right hand side of 30); households respond by raising fertility. This is a major emphasis of our model and this paper. Unlike all extant "unified" models of the Industrial Revolution and Modern Economic Growth, we try to take the Luddites seriously: population boomed, and skilled labor's relative earnings were initially hurt by the Industrial Revolution, a historical fact that many current theories fail to explain.
+
+This story of unbalanced growth in early industrialization seems consistent with history. Well-known studies such as Atack (1987) and Sokoloff (1984) describe the transition of the American economy from reliance on highly-skilled artisans to the widespread mechanization of factories. This paper further argues that the boom in fertility that the industrializing areas experienced was both the cause and consequence of these technological revolutions arising, in the British case, in the late 1700s and early 1800s. According to Folbre (1994) , the development of industry in the late eighteenth and early nineteenth centuries led to changes in family and household strategies. The early pattern of rural and urban industrialization in this period meant that children could be employed in factories at quite a young age. The implication is that children became an asset, whose labor could be used by parents to contribute income to the household. In English textile factories in 1835, for example, 63% of the work force consisted of children aged 8-12 and women (Nardinelli 1990 ). This is not to say that attitudes toward children were vastly different in England then compared with now; rather economic incentives were vastly different then compared with now (Horrell and Humphries 1995) . As a result of these conditions, fertility rates increased during the period of early industrialization.
+
+While our approach may help explain the population growth that coincided with the initial stages of the Industrial Revolution, 6 we are still faced with the challenge of explaining the demographic transition that followed it.
+
+## The Demographic Transition
+
+Figure 3 documented rising education and falling fertility rates in four advanced countries, a shift which was replicated in many rich countries at the time. Part of our argument is that biases inherent in technological innovation fostered this reversal. As Baconian knowledge rose further and skill-biased production grew in importance, the labor of children became less important as a source of family income, and this was reflected in economic behavior. It is true that legislation limited the employment possibilities for children (Folbre 1994) , and introduced compulsory education. However,the underlying economic incentives were leading in the same direction.
+
+The incentives for households to reverse fertility trends and dramatically expand education come about through changes in wages. As evident from ( 30 ) and ( 31 ), households will want to invest in greater education and limit fertility not only when skilled wages rise relative to unskilled wages (since educated children provide a greater relative return than unskilled children), but also when overall wages rise (since the resource costs of education grow less onerous with wage growth). From (31) we see that while the benefits of education rise with both types of wages (since c t rises with both), the costs of education rise only with w l (which captures the foregone unskilled income necessary for educational investments).
+
+Modest wage growth and falling relative returns to skilled labor, characteristic of early industrialization, allows fertility to rise while keeping education growth modest. But once the fall in skill premia slows down and overall wages start to rapidly rise, the benefits of education begin to dramatically outweigh the costs, and the transition in household demand from child quantity to child quality is truly launched. 7 intensive intermediates have enough substitutability to satisfy Proposition 1), 8 0 < k < 1 (diminishing marginal returns to education), and µ > 1 (child-rearing costs convexly rise with the number of children). 9 We start with Ql = Qh = 0.1. For other initial conditions, we set n = 1 (replacement fertility) and solve the 4 by 4 system of (2), (3), and the two first-order conditions from (25) for initial values of wl, wh, L and H. Given Ql = Qh and ensuring that wh/wl > 1, it must be that L > H. By Proposition 1, this implies that the first stage of the Industrial Revolution must be unskilled in nature. To see this we turn to modeling the economy as it evolves in time.
+
+## Simulations
+
+How well does the model track these general historical trends? To answer this we numerically simulate the model.
+
+For each time period, we solve the model as follows: 1) Baconian knowledge grows according to (17).
+
+2) Based on this new level of Baconian knowledge, if π l > 0, Q l rises by a factor of ε; if not Q l remains the same. Similarly, if π h > 0, Q h rises by a factor of ε; if not Q h remains the same.
+
+3) Given levels of Q l and Q h , solve the equilibrium. This entails solving the system of equations ( 2 ), (3), ( 20 ), ( 21 ), ( 27 ), ( 28 ), ( 30 ) and (31) for w l , w h , A l , A h , n, e, L, and H.
+
+## Parameters and Initial Conditions
+
+Parameters are set equal to the following: σ = 2, β = 0.7, α = 2, ε = 1.1, φ = 2, k = 0.5, µ = 5, Γ = 0.1, x = 2. Many other parameterizations will produce qualitatively similar results; the critical assumptions here are that σ > 1 (the skilled-and unskilled-labor-7 Recent studies make a variety of related points which can also explain the demographic transition. Hazan and Berdugo (2002) suggest that technological change at this stage of development increased the wage differential between parental labor and child labor, inducing parents to reduce the number of their children and to further invest in their quality, stimulating human capital formation, a demographic transition, and a shift to a state of sustained economic growth. In contrast, Doepke (2004) stresses the regulation of child labor. Alternatively, the rise in the importance of human capital in the production process may have induced industrialists to support laws that abolished child labor, inducing a reduction in child labor and stimulating human capital formation and a demographic transition (Doepke and Zilibotti 2003; Galor and Moav 2006) .
+
+intensive intermediates have enough substitutability to satisfy Proposition 1), 8 0 < k < 1 (diminishing marginal returns to education), and µ > 1 (child-rearing costs convexly rise with the number of children). 9 We start with Q l = Q h = 0.1. For other initial conditions, we set n = 1 (replacement fertility) and solve the 4 by 4 system of (2), (3), and the two first-order conditions from (25) for initial values of w l , w h , L and H. Given Q l = Q h and ensuring that w h /w l > 1, it must be that L > H. By Proposition 1, this implies that the first stage of the Industrial Revolution must be unskilled in nature. To see this we turn to modeling the economy as it evolves in time.
+
+## Dynamic Simulation
+
+We simulate our hypothetical northwestern European economy through 30 time periods, roughly accounting for the time period 1750-1910. The results are given in Figures 4 5 6 7 8 9 , using the parameterizations summarized above. 10 Figure 4 illustrates the market for innovation. Initial Baconian knowledge B is set low enough that the costs of innovation are larger than the benefits in the beginning. As a result technology levels remain stagnant at first. But through Baconian knowledge growth costs fall, first catching up with the benefits of research for technologies designed for unskilled labor; hence, at t = 5 Q l begins to grow (that is, π l becomes positive). By contrast, π h < 0 early on, so Q h remains fixed. Note that this results solely because L is larger than H through Proposition 1. In other words, endowments dictate that the Industrial Revolution will initially be unskilled-biased. As Q l rises the costs of subsequent unskilled innovation rise because it gets increasingly more expensive to develop new technologies the further up the quality ladder we go (due to the "fishing-out" effect from the α term); however, the benefits of research rise even faster due to both rising unskilled wages and unskilled labor supplies (see equation 22). And further growth in Baconian knowledge keeps research costs from rising too fast (see equation 15). As a result unskilled-intensive growth persists.
+
+Skill-biased technologies, on the other hand, remain stagnant during this time. Their eventual growth is however inevitable; Baconian knowledge growth drives down the costs to 8 The degree of substitutability between skilled and unskilled labor has been much explored by labor economists. Studies of contemporary labor markets in the U.S. (Katz and Murphy 1992, Peri 2004) , Canada (Murphy et al. 1998) , Britain (Schmitt 1995) , Sweden (Edin and Holmlund 1995) , and the Netherlands (Teulings 1992) suggest aggregate elasticities of substitution in the range of one to three. See Katz and Autor (1999) for a detailed review of this literature.
+
+9 Other parameters simply scale variables (such as Γ and x) or affect the speed of growth (such as α, ε and φ). Changing the values of these parameters however would not shift the direction of technology, nor would it affect the responsiveness of households. Thus these specific values are not crucial for the qualitative results and our underlying story.
+
+10 The initial level of B is chosen such that growth starts after a few periods. develop them, and rising skilled wages (due to the growth of unskilled technologies) drives up the value of developing them, as seen in equation (3). By t = 12, π h becomes positive as well, allowing Q h to climb. At this point growth occurs in both sectors, with advance in all periods given by the constant step size on the innovation ladders. Note that this induces something of an endogenous demographic transition; fertility rates stabilize and eventually begin to fall, while education rates rise, as we can see in Figures 5 and 6 .
+
+Figures 5 through 9 depict historical and simulated time series for fertility rates, education rates, wages, skill premia and income per capita. As can be seen, our model reproduces the early rise in fertility, followed by falling fertility and rising education. Education rates rise very modestly during the early stages of the Industrial Revolution, and accelerate only after growth occurs in both sectors. To understand the fertility and education patterns depicted in Figures 5 and 6 , one must observe the absolute and relative wage patterns depicted in Figures 7 and 8 . The early stages of industrialization are associated with very limited wage growth and a declining skill premium. This makes sense: what growth in applied knowledge does occur is confined to the unskilled sector.
+
+The evolution of wages that this produces then has implications for education and fertility-while the falling skill premium puts downward pressure on education (education limits the children's ability to earn unskilled income), rising wages overall put upward pressure on education (since education becomes more affordable).
+
+These forces roughly cancel each other out, keeping any growth in education during this period modest. Fertility however is free to rise: since slow-rising education keeps the resource costs of each child low, parents can take advantage of rising unskilled wages by having more children. Of course this produces more L and keeps H fairly low. Thus the model can replicate the rapid fertility growth, low education growth, and falling skill premia observed during the early stages of the Industrial Revolution. 11 (b) Fertility: data (births per 1000 women)
+
+Once skill-biased technologies grow as well, the patterns of development change entirely. Growth in both A l and A h allows wages to rise more rapidly and keeps relative wages fairly constant (from equation 24 we know that relative wages are a function of relative quality indices and relative factor supplies-with balanced growth the former remain stable, leaving only the latter to change the skill premium). In this case, the relatively stable skill premium and rising overall wages changes behavior, as households lower their rates of fertility in order The data are 10-year moving averages from Wrigley and Schofield (1981) and Andorka (1978) . Source: The data are 10-year moving averages from Wrigley and Schofield (1981) . The figure shows wage levels in the English data and in the simulated model. The data are from Broadberry and van Leeuwen (2008) and Maddison (2003) .
+
+to invest in education. The reason is that with overall wages rising, families can better afford the costs of greater education. And because the skill premium no longer falls with technological growth, families no longer have the incentive to increase fertility. There is thus an endogenous switch from child quantity to child quality. The demographic transition of the mid to late 19th century is launched. Figures 4 through 8 thus depict an integrated story of western European development fairly consistent with the historical record. The theory of endogenous technical change can indeed motivate a unified growth theory. Increases in income induce increases in education, which then through the quality-quantity tradeoff eventually induce a fall in fertility. And increases in H/L put downward pressure on the premium through supply-side forces. Thus, as implied by ( 24 ), continued supply increases can keep pace with demand-side forces (Goldin and Katz 2008 ): a modern economy can have both high relative skilled labor supplies and a low skill premium even in the context of directed endogenous technological change.
+
+Finally, Figure 9 shows the evolution of output per person in the data and the model. In both theory and reality, the population growth spurred by initial technological growth kept per capita income growth very modest (making the Industrial Revolution appear to be a fairly un-revolutionary event). With technological advance occurring in more sectors, incomes rose faster; this in turn provoked fertility decreases and made per capita growth faster still.
+
+## Conclusion
+
+We believe that by explicitly modeling research and development, thus endogenizing the direction of technical change, we have been able to shed some valuable light on the transition to modern economic growth. Like most unified growth models, our model is subject to the criticism that it makes a take-off "inevitable," a proposition to which many historians, more comfortable with notions of chance and contingency, might object. Our model makes another claim, however, which seems much more robust: if a take-off took place, it should, inevitably, have first involved unskilled-labor-using technologies, for the simple reason that unskilled labor was the abundant factor of production at this time.
+
+From this simple prediction, as we have seen, flow a whole series of consequences. The Industrial Revolution should have seen skill premia fall, which they did. It should therefore have seen an initial increase in fertility rates, which again it did. Our model predicts that these two phenomena would have continued to reinforce each other indefinitely, barring some countervailing force. One such force was the continuing growth in Baconian knowledge, which would eventually lead to the growth of the science-based and skill-intensive sectors of the Second Industrial Revolution. While this should have caused skill premia to stop falling and start rising, massive endogenous increases in education kept the relative wages of skilled labor low.
+
+Our simulations indicate that our model does a pretty good job of explaining the transition to modern growth during the eighteen and nineteenth centuries. Other theories often rely on exogenous forces to reconcile falling skill premia with their accounts of the demographic transition. For example Galor and Moav (2006) highlight the fact that at precisely this time European and North American governments embarked on a massive programme of public education, thus exogenously raising skill endowments and lowering skill premia. Furthermore, public primary education programmes were later followed by two world wars, rising union strength, and public secondary and tertiary education programmes, all of which served to further reduce skill premia, in the U.S. case at least through the "Great Compression" of the 1940s (Goldin and Margo 1992; Goldin and Katz 2008) .
+
+In the context of this paper, it seems possible that these so-called exogenous factors leading to greater equality were actually endogenously influenced by growth, even though powerful endogenous technological factors were pushing economies towards greater inequality. This is striking, since as Acemoglu (1998) points out, in the context of a model like this one, long run exogenous increases in skill endowments lead to more rapid skill-biased technical change, thus increasing the upward pressure on skill premia in the long run. What is remarkable, therefore, is that western labor markets remained on an egalitarian path until well into the twentieth century. In this context, current inegalitarian trends in the U.S. and elsewhere can be seen as late nineteenth century chickens finally coming home to roost.
+
+that low; they could charge a price p limit low enough such that uc old ≥ uc limit (see Barro and Sala-i-Martin 2003 and Grossman and Helpman 1991 for similar limit-pricing treatments). That is, producers of new machines could undercut their competition so that goods-producers would prefer the higher-quality machines to the older lower-quality machines. And to maximize prices, new machines producers would charge a price such that this held with equality:
+
+β -β (1 -β) β 1 Q l w β l Q 1-β l = β -β (1 -β) β 1
+
+εQ l w β l p 1-β limit .
+
+Solving for this limit price gives us
+
+p limit = ε 1 1-β Q l > εQ l .
+
+Thus, producers will always opt for newer machines, no matter the size of quality steps. So our approach would be valid for any values of ε > 1 and 0 < β < 1. Given our paramerization described in section 2.3, we assume this limit pricing strategy is used.
+
+Figure 2: Annual Growth Rates of GDP per Capita and Population in Western Europe: 1500-2000
+
+Figure 3: Fertility and Schooling in Four Advanced CountriesThe figures show two important correlates of the Industrial Revolution: fertility decreased (the Demographic Transition) and education increased. However, the transtions did not occur until later in the 19th century.
+
+Figure 4: Incentives for Innovation in Each SectorThe figure shows the value of innovating and the cost of innovating in each period for each sector in our simulated model. The economy is initially endowed with much more unskilled labor L than skilled labor H. Hence, unskilled-intensive technologies are the first to experience directed technological change.
+
+Figure 5: Fertility Rates: Data versus ModelThe figure shows the fertility levels in the English data and in the simulated model.
+
+Figure 6: Education: Data versus ModelThe figure shows the education levels in the English data and in the simulated model.
+
+The data are 10-year moving averages fromFlora et al. (1983).
+
+Figure 7: Wages: Data versus ModelThe figure shows wage levels in the English data and in the simulated model.
+
+Figure 8: Skill Premium: Data versus Model
+
+The data are from Clark (2007) .
+
+Figure 9: GDP per Person: Data versus ModelThe figure shows GDP per person in the U.K. data and in the simulated model.
+
+## References
+
+Why Do New Technologies Complement Skills? Directed Technical Change and Wage Inequality Daron Acemoglu Quarterly Journal of Economics 113 1998. November Acemoglu, Daron. 1998. Why Do New Technologies Complement Skills? Directed Technical Change and Wage Inequality. Quarterly Journal of Economics 113 (November): 1055-89.
+
+Equilibrium Bias of Technology Daron Acemoglu Econometrica 175 2007. September Acemoglu, Daron. 2007. Equilibrium Bias of Technology. Econometrica 175 (September): 1371- 1410.
+
+A Model of Growth through Creative Destruction Philippe Aghion Peter Howitt Econometrica 60 1992. March Aghion, Philippe, and Peter Howitt. 1992. A Model of Growth through Creative Destruction. Econometrica 60 (March): 323-51.
+
+The British Industrial Revolution in Global Perspective: How Commerce Created the Industrial Revolution and Modern Economic growth Robert C Allen 2006 Nuffield College Oxford Unpublished Allen, Robert C. 2006. The British Industrial Revolution in Global Perspective: How Commerce Created the Industrial Revolution and Modern Economic growth. Unpublished, Nuffield Col- lege, Oxford.
+
+Rudolph Andorka Determinants of Fertility in Advanced Societies New York The Free Press 1978 Andorka, Rudolph. 1978. Determinants of Fertility in Advanced Societies. New York: The Free Press.
+
+Economies of Scale and Efficiency Gains in the Rise of the Factory in America, 1820-1900 Jeremy Atack Quantity and Quiddity: Essays in U.S. Economic History P Kilby Middletown, Conn. Wesleyan University Press 1987 Atack, Jeremy. 1987. Economies of Scale and Efficiency Gains in the Rise of the Factory in America, 1820-1900. In Quantity and Quiddity: Essays in U.S. Economic History edited by P. Kilby. Middletown, Conn.: Wesleyan University Press, pp. 286-335.
+
+Robert J Barro Xavier Sala-I-Martin Economic Growth Cambridge, Mass MIT Press 2003 2nd Edition Barro, Robert J., and Xavier Sala-i-Martin. 2003. Economic Growth, 2nd Edition. Cambridge, Mass.: MIT Press.
+
+On the Interaction between the Quantity and Quality of Children Gary S Becker H Gregg Lewis The Journal of Political Economy 81 1973 Becker, Gary S., and H. Gregg Lewis. 1973. On the Interaction between the Quantity and Quality of Children. The Journal of Political Economy 81: S279-S288.
+
+Child Endowments and the Quantity and Quality of Children Gary S Becker Nigel Tomes Journal of Political Economy 84 1976. August Becker, Gary S., and Nigel Tomes. 1976. Child Endowments and the Quantity and Quality of Children. Journal of Political Economy 84 (August): S143-S162.
+
+Stephen N Broadberry Bas Van Leeuwen British Economic Growth and the Business Cycle, 1700-1850 2008. March University of Warwick Annual Estimates. Photocopy Broadberry, Stephen N., and Bas van Leeuwen. 2008. British Economic Growth and the Business Cycle, 1700-1850: Annual Estimates. University of Warwick (March). Photocopy.
+
+Long-Run Substitutability Between More and Less Educated Workers: Evidence from U.S. States, 1950-1990 Antonio Ciccone Giovanni Peri The Review of Economics and Statistics 87 4 2005 Ciccone, Antonio, and Giovanni Peri. 2005. Long-Run Substitutability Between More and Less Educated Workers: Evidence from U.S. States, 1950-1990. The Review of Economics and Statistics, 87(4): 652-663.
+
+Why Isn't the Whole World Developed? Lessons from the Cotton Mills Gregory Clark Journal of Economic History 47 1987. March Clark, Gregory. 1987. Why Isn't the Whole World Developed? Lessons from the Cotton Mills. Journal of Economic History 47 (March): 141-173.
+
+A Farewell to Alms: A Brief Economic History of the World Gregory Clark 2007 Princeton University Press Princeton, N.J. Clark, Gregory. 2007. A Farewell to Alms: A Brief Economic History of the World. Princeton, N.J.: Princeton University Press.
+
+Accounting for Fertility Decline during the Transition to Growth Matthias Doepke Journal of Economic Growth 9 2004. September Doepke, Matthias. 2004. Accounting for Fertility Decline during the Transition to Growth. Journal of Economic Growth 9 (September): 347-83.
+
+Voting with your Children: A Positive Analysis of Child Labour Laws Matthias Doepke Fabrizio Zilibotti no. 3733 2003 CEPR Discussion Papers Doepke, Matthias, and Fabrizio Zilibotti. 2003. Voting with your Children: A Positive Analysis of Child Labour Laws. CEPR Discussion Papers no. 3733.
+
+The Swedish Wage Structure: The Rise and Fall of Solidarity Wage Policy Per Edin Bertil Anders Holmlund Differences and Changes in Wage Structures R Freeman L Katz Chicago University of Chicago Press and NBER 1995 Edin, Per Anders, and Bertil Holmlund. 1995. The Swedish Wage Structure: The Rise and Fall of Solidarity Wage Policy?, in R. Freeman and L. Katz, eds., Differences and Changes in Wage Structures. Chicago: University of Chicago Press and NBER.
+
+Nancy Folbre Who Pays for the Kids: Gender and the Structure of Constraint New York Routledge 1994 Folbre, Nancy. 1994. Who Pays for the Kids: Gender and the Structure of Constraint. New York: Routledge.
+
+From Stagnation to Growth: Unified Growth Theory Oded Galor Handbook of Economic Growth P Aghion S N Durlauf Amsterdam North Holland 2005 1 Galor, Oded. 2005. From Stagnation to Growth: Unified Growth Theory. In Handbook of Economic Growth, volume 1, part 1, edited by P. Aghion and S. N. Durlauf, pp. 171-293. Amsterdam: North Holland.
+
+Natural Selection and the Origin of Economic Growth Oded Galor Omer Moav Quarterly Journal of Economics 117 2002. November Galor, Oded, and Omer Moav. 2002. Natural Selection and the Origin of Economic Growth. Quarterly Journal of Economics 117 (November): 1133-92.
+
+Das Human-Kapital: A Theory of the Demise of the Class Structure Oded Galor Omer Moav Review of Economic Studies 73 2006. January Galor, Oded, and Omer Moav. 2006. Das Human-Kapital: A Theory of the Demise of the Class Structure. Review of Economic Studies 73 (January): 85-117.
+
+Trading Population for Productivity Oded Galor Andrew Mountford Review of Economic Studies 75 2008 Galor, Oded, and Andrew Mountford. 2008. Trading Population for Productivity. Review of Economic Studies 75: 1143-1179.
+
+Population, Technology and Growth: From Malthusian Stagnation to the Demographic Transition and Beyond Oded Galor David Weil American Economic Review 90 2000. September Galor, Oded, and David Weil. 2000. Population, Technology and Growth: From Malthusian Stag- nation to the Demographic Transition and Beyond. American Economic Review 90 (Septem- ber): 806-28.
+
+Go Schools in America, 1850-1870: Who Voted for Them, Who Got Them, and Who Paid Sun. 2008 UC Davis photocopy Go, Sun. 2008. Schools in America, 1850-1870: Who Voted for Them, Who Got Them, and Who Paid. UC Davis, photocopy.
+
+Claudia D Goldin Lawrence F Katz The Race Between Education and Technology Cambridge, Mass Belknap Press 2008 Goldin, Claudia D., and Lawrence F. Katz. 2008. The Race Between Education and Technology. Cambridge, Mass.: Belknap Press.
+
+The Great Compression: The Wage Structure in the United States at Mid-century Claudia D Goldin Robert A Margo Quarterly Journal of Economics 107 1992. February Goldin, Claudia D., and Robert A. Margo 1992. The Great Compression: The Wage Structure in the United States at Mid-century. Quarterly Journal of Economics 107 (February): 1-34.
+
+Efflorescence and Economic Growth in World History: Rethinking the "Rise of the West" and the Industrial Revolution Jack Goldstone Journal of World History 13 Fall 2002 Goldstone, Jack. 2002. Efflorescence and Economic Growth in World History: Rethinking the "Rise of the West" and the Industrial Revolution. Journal of World History 13 (Fall): 323-89.
+
+Gene M Grossman Elhanan Helpman Innovation and Growth in the Global Economy Cambridge, Mass MIT Press 1991 Grossman, Gene M., and Elhanan Helpman. 1991. Innovation and Growth in the Global Economy, Cambridge, Mass.: MIT Press.
+
+Malthus to Solow Gary D Hansen Edward C Prescott American Economic Review 92 2002. September Hansen, Gary D., and Edward C. Prescott. 2002. Malthus to Solow. American Economic Review 92 (September): 1205-17.
+
+Child Labour, Fertility, and Economic Growth Moshe Hazan Binyamin Berdugo Economic Journal 112 2002 Hazan, Moshe, and Berdugo, Binyamin. 2002. Child Labour, Fertility, and Economic Growth. Economic Journal 112: 810-828.
+
+The Machine Breakers E J Hobsbawm Past and Present 1 1952. February Hobsbawm, E. J. 1952. The Machine Breakers. Past and Present 1 (February): 57-70.
+
+The Exploitation of Little Children": Child Labor and the Family Economy in the Industrial Revolution Sara Horrell Jane Humphries Explorations in Economic History 32 1995. October Horrell, Sara, and Jane Humphries. 1995. "The Exploitation of Little Children": Child Labor and the Family Economy in the Industrial Revolution. Explorations in Economic History 32 (October): 485-516.
+
+Was the Industrial Revolution Inevitable? Economic Growth over the Very Long Run Charles I Jones Advances in Macroeconomics 1 2 1998. 2001 W.W. Norton & Company New York Introduction to Economic Growth Jones, Charles I. 1998. Introduction to Economic Growth. New York: W.W. Norton & Company. Jones, Charles I. 2001. Was the Industrial Revolution Inevitable? Economic Growth over the Very Long Run. Advances in Macroeconomics 1(2): 1028-28.
+
+Changes in the Wage Structure and Earnings Inequality Lawrence F Katz David H Autor Handbook of Labor Economics O Ashenfelter D Card Amsterdam North Holland 1999 3 Katz, Lawrence F., and David H. Autor. 1999. Changes in the Wage Structure and Earnings Inequality. In Handbook of Labor Economics, volume 3A, edited by O. Ashenfelter and D. Card. Amsterdam: North Holland.
+
+Changes in Relative Wages, 1963-87: Supply and Demand Factors Lawrence F Katz Kevin M Murphy Quarterly Journal of Economics 107 1992 Katz, Lawrence F., and Kevin M. Murphy. 1992. Changes in Relative Wages, 1963-87: Supply and Demand Factors. Quarterly Journal of Economics 107:35-78.
+
+Population Growth and Technological Change: One Million B.C. to Michael Kremer Quarterly Journal of Economics 108 1993. 1990. August Kremer, Michael. 1993. Population Growth and Technological Change: One Million B.C. to 1990. Quarterly Journal of Economics 108 (August): 681-716.
+
+The Measurement of Population Growth Robert R Kuczynski 1969 Gordon and Breach Science Publishers, Inc New York Revised edition Kuczynski, Robert R. 1969. The Measurement of Population Growth. Revised edition. New York: Gordon and Breach Science Publishers, Inc.
+
+The Industrial Revolution: Past and Future Robert E Lucas Lectures on Economic Growth 2002 Harvard University Press Cambridge, Mass Lucas, Robert E. 2002. The Industrial Revolution: Past and Future. In Lectures on Economic Growth. Cambridge, Mass.: Harvard University Press.
+
+Angus Maddison Monitoring the World Economy 1820-1992 Paris OECD 1995 Maddison, Angus. 1995. Monitoring the World Economy 1820-1992. Paris: OECD.
+
+The World Economy: A Millennial Perspective Angus Maddison 2001 OECD Paris Maddison, Angus. 2001. The World Economy: A Millennial Perspective. Paris: OECD.
+
+David Mitch The Spread of Literacy in Nineteenth-Century England 1982 University of Chicago Ph.D. dissertation Mitch, David. 1982. The Spread of Literacy in Nineteenth-Century England. Ph.D. dissertation, University of Chicago.
+
+David Mitch The Rise of Popular Literacy in Victorian England: The Influence of Private Choice and Public Policy Philadelphia, Penn University of Pennsylvania Press 1992 Mitch, David. 1992. The Rise of Popular Literacy in Victorian England: The Influence of Private Choice and Public Policy. Philadelphia, Penn.: University of Pennsylvania Press.
+
+Joel Mokyr The British Industrial Revolution: An Economic Perspective Boulder, Colo. Westview Press 1999 2nd edition Mokyr, Joel. 1999. The British Industrial Revolution: An Economic Perspective. 2nd edition. Boulder, Colo.: Westview Press.
+
+The Gifts of Athena Joel Mokyr 2002 Princeton University Press Princeton, N.J. Mokyr, Joel. 2002. The Gifts of Athena. Princeton, N.J.: Princeton University Press.
+
+Long-Term Economic Growth and the History of Technology Joel Mokyr Handbook of Economic Growth Philippe Aghion Steven Durlauf Amsterdam Elsevier 2005 1 Mokyr, Joel. 2005a. Long-Term Economic Growth and the History of Technology. In Philippe Aghion and Steven Durlauf (eds.), Handbook of Economic Growth, volume 1, pp. 1113-80. Amsterdam: Elsevier.
+
+The Intellectual Origins of Modern Economic Growth Joel Mokyr Journal of Economic History 65 2005. June Mokyr, Joel. 2005b., The Intellectual Origins of Modern Economic Growth. Journal of Economic History 65 (June): 285-351.
+
+Wages, Skills and Technology in the United States and Canada Kevin M Murphy W Craig Riddell Paul M Romer General Purpose Technologies and Economic Growth E Helpman Cambridge, Mass MIT Press 1998 Murphy, Kevin M., W. Craig Riddell, and Paul M. Romer. 1998. Wages, Skills and Technology in the United States and Canada. In General Purpose Technologies and Economic Growth edited by E. Helpman. Cambridge, Mass.: MIT Press.
+
+Child Labor and the Industrial Revolution Clark Nardinelli 1990 Indiana University Press Bloomington, Ind. Nardinelli, Clark. 1990. Child Labor and the Industrial Revolution, Bloomington, Ind.: Indiana University Press.
+
+Constitutions and Commitment: Evolution of Institutions Governing Public Choice in Seventeenth Century England Douglass North Barry Weingast Journal of Economic History 49 1989. December North, Douglass, and Barry Weingast. 1989. Constitutions and Commitment: Evolution of Institu- tions Governing Public Choice in Seventeenth Century England. Journal of Economic History 49 (December): 803-32.
+
+Endogenous Technological Change Paul Romer Journal of Political Economy 98 1990. October Romer, Paul. 1990. Endogenous Technological Change. Journal of Political Economy 98 (October): S71-S102.
+
+The Changing Structure of Male Earnings in Britain, 1974-1988 John Schmitt Differences and Changes in Wage Structures R Freeman L Katz Chicago University of Chicago Press and NBER 1995 Schmitt, John. 1995. The Changing Structure of Male Earnings in Britain, 1974-1988. In Differ- ences and Changes in Wage Structures edited by R. Freeman and L. Katz. Chicago: University of Chicago Press and NBER.
+
+The Measurement of Literacy in Pre-Industrial England Roger S Schofield Literacy in Traditional Societies J Goody Cambridge Cambridge University Press 1968 Schofield, Roger S. 1968. The Measurement of Literacy in Pre-Industrial England. In Literacy in Traditional Societies edited by J. Goody. Cambridge: Cambridge University Press.
+
+Dimensions of Illiteracy, 1750-1850 Roger S Schofield Explorations in Economic History 10 1973 Schofield, Roger S. 1973. Dimensions of Illiteracy, 1750-1850. Explorations in Economic History 10: 437-54.
+
+Joseph A Schumpeter The Theory of Economic Development Cambridge, Mass Harvard University Press 1934 Schumpeter, Joseph A. 1934. The Theory of Economic Development. Cambridge, Mass.: Harvard University Press.
+
+Was the Transition from the Artisan Shop to the Non-Mechanized Factory Associated with Gains in Efficiency? Evidence from U.S. Manufacturing Censuses of 1820 and 1850 Kenneth L Sokoloff Explorations in Economic History 21 1984. October Sokoloff, Kenneth L. 1984. Was the Transition from the Artisan Shop to the Non-Mechanized Factory Associated with Gains in Efficiency? Evidence from U.S. Manufacturing Censuses of 1820 and 1850. Explorations in Economic History 21 (October): 351-82.
+
+Schooling and Demand for Children: Historical Perspectives Jee-Peng Tan Michael Haines World Bank Staff Working Paper 695 1984 Tan, Jee-Peng, and Michael Haines. 1984. Schooling and Demand for Children: Historical Per- spectives. World Bank Staff Working Paper no. 695.
+
+The Wage Distribution in a Model of Matching between Skills and Jobs Coen Teulings 1992 University of Amsterdam unpublished paper Teulings, Coen. 1992. The Wage Distribution in a Model of Matching between Skills and Jobs. unpublished paper, University of Amsterdam.
+
+The Skill Premium and the "Great Divergence Jan Van Zanden Luiten 2004 IIGS/University of Utrecht Unpublished working paper van Zanden, Jan Luiten. 2004. The Skill Premium and the "Great Divergence." Unpublished working paper, IIGS/University of Utrecht.
+
+Living Standards During the Industrial Revolution: An Economist's Guide Hans-Joachim Voth American Economic Review 93 2003. May Voth, Hans-Joachim. 2003. Living Standards During the Industrial Revolution: An Economist's Guide. American Economic Review 93 (May): 221-26.
+
+From Stagnation to Growth: Revisiting Three Historical Regimes Jacob Weisdorf Journal of Population Economics 17 2004. August Weisdorf, Jacob. 2004. From Stagnation to Growth: Revisiting Three Historical Regimes. Journal of Population Economics 17 (August): 445-74.
+
+E G West Education and the Industrial Revolution London Batsford 1975 West, E. G. 1975. Education and the Industrial Revolution. London: Batsford.
+
+An Index of the Wage of Unskilled Labor from 1774 to the Present Samuel H Williamson Economic History Services 2004. December Williamson, Samuel H. 2004. An Index of the Wage of Unskilled Labor from 1774 to the Present. Economic History Services, December. http://eh.net.
+
+E A Wrigley R S Schofield The Population History of England 1541-1871 Cambridge University Press 1981 Cambridge Wrigley, E. A., and R. S. Schofield. 1981. The Population History of England 1541-1871. Cam- bridge: Cambridge University Press.

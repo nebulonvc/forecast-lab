@@ -1,0 +1,28 @@
+{
+  "id": "c7dea23d-5b16-4b88-9a0a-2dea4c958d77",
+  "object": "chat.completion",
+  "created": 1794201443,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000031528-000031543\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"作者以苹果、雅虎为例提出“科技公司不能仅靠品牌发展”的一般性条件判断；无明确期限，观察窗口取出版后至2021年雅虎相关业务出售安排。\",\"reason\":\"该句是普遍性因果/条件断言，不是可单点验证的具体事件；雅虎案例只能说明品牌未使其独立持续成功，但无法分离品牌与技术、规模、网络效应各自作用。\",\"limitation\":\"单一公司存亡或出售不能验证“仅靠品牌”这一反事实条件；证据为Verizon Media集团口径，不能全归因于Yahoo品牌。\",\"evidence_ids\":[\"biz-yahoo-2021\"],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":\"2021-05-03\",\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4577,
+    "completion_tokens": 221,
+    "total_tokens": 4798,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3809
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "txt-4934182645-000615260-000615302",
+  "plan": {
+    "object": "没有腐化污点的共和国里的公民。such designs 是前一句里公民谋取君权、对祖国的密谋。",
+    "condition": "wherein there is no taint of corruption。法律仍被遵守、恶的种子没有土壤。已经有人把法律当成可退出的合同，不是没有污点。",
+    "quantifier": "never suggest themselves to any citizen。任何公民心中都不会出现。一次出现可以反驳；没有记录不能证明从未出现。",
+    "result": "登记变化是 never suggest themselves。不会出现谋取君权的打算。",
+    "window": "1531至2026-11-15。喀提林和汉诺是出版前的例子。作者自己在本书别处的论证不能用来核验这句。",
+    "counterevidence_needed": "一个页面认定共和国仍无腐化污点，同时又有公民产生谋取君权的打算；或者明确写出在这种共和国里没有人产生过这种打算。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "uncorrupted republic citizens never attempted to seize one-man power",
+      "counter_query": "citizen plotted to become prince while the republic's customs were still sound"
+    },
+    "adaptive_rounds": 1,
+    "adaptive": {
+      "strategy": "离开作者自己的书，改查后来仍遵守法律的共和国里有没有人谋取主权",
+      "queries": ["Dutch republic citizen attempted to make himself sovereign while the laws were still observed"]
+    },
+    "kept_urls": [],
+    "dropped": "首轮回到的是《李维史论》自身。荷兰自称主权的公民是要退出法律，不是在无腐化的共和国里谋取君权，而且页面没有说该共和国没有腐化污点。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "必须先是没有腐化污点，再看谋取君权的打算是否出现。退出法律的自称主权不是这个打算。",
+    "reason": "支持检索和反对检索打开的都是马基雅维利自己的章节，不能用来核验他自己的事后判断。补轮里的荷兰公民自称不受法律约束，页面没有把尼德兰写成没有腐化污点的共和国，也没有写他们要取得君权。决定性缺口是：1531年之后没有正文同时给出无腐化污点，以及公民是否产生过谋取君权的打算。",
+    "limitation": "没有可引用的出版后正文。未保存的检索摘要不拿来当正证或反证。",
+    "method": "先按同段认定没有腐化污点，再看任何公民是否产生谋取君权的打算。作者自己的书不计。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "打开的要么是本书自身，要么是要退出法律的自称主权者。都不是无腐化共和国里谋取君权的打算。"
+  }
+}

@@ -1,0 +1,1086 @@
+{
+  "claim_id": "txt-1c4066fc0c-000014154-000014218",
+  "version": "search-verifier-v2",
+  "input_sha256": "ef6bca816fd099f65313cc4fd9c38091fd203c07e3d026d7e4056c895d2add8d",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000014154-000014218",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "以美国1991—2024年劳动力市场为观察窗口，分项(a)科技发展排挤越来越多劳动者，用自动化/机器人暴露对就业的替代效应及技术净替代岗位研究衡量；分项(b)需谋生求职者越来越多，用劳动力规模（求职谋生人群）扩大衡量，不以就业总量或失业下降替代该分项。",
+    "reason": "自动复核未确认主要判断：分项(b)以劳动力规模扩大作为“需谋生求职者越来越多”的证据，但劳动力规模是就业与失业之和，其扩大本身不能证明求职谋生需求增加；且该分项所依赖的1991/2024劳动力数值来自先前登记摘录，2024年数值未在可见正文中直接核实，建议自己也承认这一点。; 建议将分项(a)判为方向符合、分项(b)判为方向符合，却因就业总量扩大、失业下降而整体降为“部分符合”。但就业总量与失业是净效应边界，不是原文两个分项之一；两个分项均被判方向符合时，不能仅凭净效应边界把结论降为部分符合，应说明哪个分项或后果具体未实现。",
+    "limitation": "关键修订：不再把就业总量扩大、失业下降当作分项(b)'需谋生求职者越来越多'的符合证据，该分项改以劳动力规模扩大衡量；就业与失业数据仅作净效应边界。BLS CPS总量数据来自先前登记摘录，其2024年数值未在可见正文中直接核实，且含衰退与疫情波动；部分来源发表日期未知。",
+    "evidence_ids": [
+      "prior-0ea8cff8fdd1d0c300e1",
+      "prior-3f922d8da91aa794ad4a",
+      "prior-6889b6aa1268c2492327",
+      "ev-e3379d8060a7e43369d55585",
+      "ev-5722ed7656690715d0e6e79e",
+      "ev-be3a23e84233bbe6ca7d2d6b"
+    ],
+    "method": "从技术替代劳动与求职需求增加推断就业矛盾",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "随着科学技术发展",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-0ea8cff8fdd1d0c300e1",
+        "relation": "support",
+        "quote": "BLS CPS年度表：1991/2024劳动力分别126346/168106千人，就业117718/161346千人，失业8628/6761千人。",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "先前登记摘录，2024年数值未在可见正文中直接核实；仅总量数据，未区分技术替代与新增岗位，含衰退和疫情波动。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "prior-3f922d8da91aa794ad4a",
+        "relation": "counter",
+        "quote": "所列高风险职业整体在1999—2018就业增长17%，并强调部分劳动者仍遭替代。",
+        "publication_date": "2022",
+        "observation_end": "2018-12-31",
+        "limitation": "高风险职业整体就业增长，对'排挤越来越多'的净效应构成反证，但作者强调部分劳动者仍遭替代。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-6889b6aa1268c2492327",
+        "relation": "support",
+        "quote": "估计机器人暴露增加降低相对就业人口比和工资，同时模型考虑贸易及资本收益在其他地区的补偿效应。",
+        "publication_date": "2020-04-22",
+        "observation_end": null,
+        "limitation": "地方劳动力市场估计，含补偿效应，不能直接外推全国净就业。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-e3379d8060a7e43369d55585",
+        "relation": "support",
+        "quote": "On net, and particularly since 1980, technology has replaced more U.S. jobs than it has generated.",
+        "publication_date": "2024-04-01",
+        "observation_end": null,
+        "limitation": "新闻稿转述研究结论，非原始论文；覆盖1940年以来美国历史。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-5722ed7656690715d0e6e79e",
+        "relation": "support",
+        "quote": "The demand-eroding effects of automation innovations have intensified in the past four decades while the demand-increasing effects of augmentation innovations have not.",
+        "publication_date": "2024-03-15",
+        "observation_end": "2018-12-31",
+        "limitation": "研究止于2018年，且为学术估计，非官方统计。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-be3a23e84233bbe6ca7d2d6b",
+        "relation": "counter",
+        "quote": "Levels of occupational churn in the United States are now at historic lows.",
+        "publication_date": "2017-05",
+        "observation_end": "2015-12-31",
+        "limitation": "ITIF报告主张技术扰动被夸大，与'排挤越来越多'方向相反；止于2015年，发表日期仅精确到月。",
+        "publication_date_status": "unconfirmed_by_source_metadata",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      }
+    ],
+    "remaining_gap": "需修正分项(b)的代理指标：劳动力规模扩大不等于“需谋生求职者越来越多”，应改用能直接反映求职谋生需求（如失业人数、求职人数或劳动参与）且覆盖1991—2024年的可核实序列；同时需明确整体结论究竟依据哪个分项未实现而降为部分符合，或改为与分项判断一致的结论。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000014154-000014218",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以美国1991—2024年劳动力市场为观察窗口：劳动力规模与就业总量是否扩大、失业是否下降，以及自动化/机器人暴露对就业的替代效应。原文判断含两个分项：(a)科技发展排挤越来越多劳动者；(b)需谋生求职者越来越多，形成就业矛盾。",
+    "reason": "劳动力与就业总量在1991—2024年间显著扩大（劳动力126346→168106千人，就业117718→161346千人），失业人数下降（8628→6761千人），说明'求职谋生者越来越多'与就业总量扩张方向一致；同时Autor等研究显示1980年以来技术净替代美国岗位多于创造，机器人暴露降低相对就业，支持'科技排挤劳动者'分项。但'排挤越来越多'的净效应与就业总量扩张并存，故为部分符合而非完全正确。",
+    "limitation": "原文未给精确指标与终点，本评估采用劳动力/就业/失业总量及自动化研究作代理；技术替代与新增岗位并存，净就业扩大不能否定总置换，反之亦然。BLS CPS表含衰退与疫情波动，且部分来源发表日期未知。",
+    "evidence_ids": [
+      "prior-0ea8cff8fdd1d0c300e1",
+      "prior-3f922d8da91aa794ad4a",
+      "prior-6889b6aa1268c2492327",
+      "ev-e3379d8060a7e43369d55585",
+      "ev-5722ed7656690715d0e6e79e",
+      "ev-be3a23e84233bbe6ca7d2d6b"
+    ],
+    "method": "从技术替代劳动与求职需求增加推断就业矛盾",
+    "method_basis": "inferred",
+    "observation_end": "2024-12-31",
+    "future_time_text": "随着科学技术发展",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-0ea8cff8fdd1d0c300e1",
+        "relation": "support",
+        "quote": "BLS CPS年度表：1991/2024劳动力分别126346/168106千人，就业117718/161346千人，失业8628/6761千人。",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "仅总量数据，未区分技术替代与新增岗位；含衰退和疫情波动。"
+      },
+      {
+        "evidence_id": "prior-3f922d8da91aa794ad4a",
+        "relation": "counter",
+        "quote": "所列高风险职业整体在1999—2018就业增长17%，并强调部分劳动者仍遭替代。",
+        "publication_date": "2022",
+        "observation_end": "2018-12-31",
+        "limitation": "高风险职业整体就业增长，对'排挤越来越多'的净效应构成反证，但作者强调部分劳动者仍遭替代。"
+      },
+      {
+        "evidence_id": "prior-6889b6aa1268c2492327",
+        "relation": "support",
+        "quote": "估计机器人暴露增加降低相对就业人口比和工资，同时模型考虑贸易及资本收益在其他地区的补偿效应。",
+        "publication_date": "2020-04-22",
+        "observation_end": null,
+        "limitation": "地方劳动力市场估计，含补偿效应，不能直接外推全国净就业。"
+      },
+      {
+        "evidence_id": "ev-e3379d8060a7e43369d55585",
+        "relation": "support",
+        "quote": "On net, and particularly since 1980, technology has replaced more U.S. jobs than it has generated.",
+        "publication_date": "2024-04-01",
+        "observation_end": null,
+        "limitation": "新闻稿转述研究结论，非原始论文；覆盖1940年以来美国历史。"
+      },
+      {
+        "evidence_id": "ev-5722ed7656690715d0e6e79e",
+        "relation": "support",
+        "quote": "The demand-eroding effects of automation innovations have intensified in the past four decades while the demand-increasing effects of augmentation innovations have not.",
+        "publication_date": "2024-03-15",
+        "observation_end": "2018-12-31",
+        "limitation": "研究止于2018年，且为学术估计，非官方统计。"
+      },
+      {
+        "evidence_id": "ev-be3a23e84233bbe6ca7d2d6b",
+        "relation": "counter",
+        "quote": "Levels of occupational churn in the United States are now at historic lows.",
+        "publication_date": "2017-05",
+        "observation_end": "2015-12-31",
+        "limitation": "ITIF报告主张技术扰动被夸大，与'排挤越来越多'方向相反；止于2015年。"
+      }
+    ],
+    "remaining_gap": "缺少1991—2024年逐年技术替代岗位数与新增岗位数的直接官方序列，无法精确量化'排挤越来越多'的净趋势；现有证据为总量统计与学术估计的组合。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-0ea8cff8fdd1d0c300e1",
+      "url": "https://www.bls.gov/cps/cpsaat01.pdf",
+      "title": "ev-r2-l1-labour",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-labour",
+      "archive_sha256": "51d6d9e8ad7ad426b3b3dd9ef9410c32216b1d6830db352913cd3ca1cc8ec1ed",
+      "archive_path": "data/sources/r2-l1-open-3.json",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-3f922d8da91aa794ad4a",
+      "url": "https://www.bls.gov/opub/mlr/2022/article/growth-trends-for-selected-occupations-considered-at-risk-from-automation.htm",
+      "title": "ev-r2-l1-automation",
+      "published_date": "2022",
+      "publication_date_precision": "year",
+      "publication_date_range": {
+        "earliest": "2022-01-01",
+        "latest": "2022-12-31"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-automation",
+      "archive_sha256": "80f675b82460822b27c1c495716459e33b36df0e6b60fb9a16f7fa6a6cb250aa",
+      "archive_path": "data/sources/r2-l1-search-1.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-6889b6aa1268c2492327",
+      "url": "https://economics.mit.edu/sites/default/files/publications/Robots%20and%20Jobs%20-%20Evidence%20from%20US%20Labor%20Markets.p.pdf",
+      "title": "ev-lane1-robots",
+      "published_date": "2020-04-22",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2020-04-22",
+        "latest": "2020-04-22"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane1-robots",
+      "archive_sha256": "760f34d3d93ba960e0ccf2511dab20d01099c53713dac45e6f7a0d61d24370e4",
+      "archive_path": "data/sources/lane1-robots.pdf",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e3379d8060a7e43369d55585",
+      "url": "https://news.mit.edu/2024/does-technology-help-or-hurt-employment-0401",
+      "resolved_url": "https://news.mit.edu/2024/does-technology-help-or-hurt-employment-0401",
+      "title": "Does technology help or hurt employment? | MIT News | Massachusetts Institute of Technology",
+      "published_date": "2024-04-01",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-04-01",
+        "latest": "2024-04-01"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:20.941811+00:00",
+      "archive_sha256": "485f50dd095e48adf0a71c707e7e191238793a8d7aefbaa6022cd12021334904",
+      "archive_path": "jobs/ac41ad7c7a392003ec9356fb/485f50dd095e48adf0a71c707e7e191238793a8d7aefbaa6022cd12021334904.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-be3a23e84233bbe6ca7d2d6b",
+      "url": "https://www2.itif.org/2017-false-alarmism-technological-disruption.pdf",
+      "resolved_url": "https://www2.itif.org/2017-false-alarmism-technological-disruption.pdf",
+      "title": "False Alarmism: Technological Disruption and the U.S. Labor Market, 1850-2015",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:20.941942+00:00",
+      "archive_sha256": "53a76e5593ae5b9da54abffc89da4282862b890e956897be432710373c3316cb",
+      "archive_path": "jobs/ac41ad7c7a392003ec9356fb/53a76e5593ae5b9da54abffc89da4282862b890e956897be432710373c3316cb.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-82e442f6d7878e517ce8f997",
+      "url": "https://www.brookings.edu/wp-content/uploads/2019/01/2019.01_BrookingsMetro_Automation-AI_Report_Muro-Maxim-Whiton-FINAL-version.pdf",
+      "resolved_url": "https://www.brookings.edu/wp-content/uploads/2019/01/2019.01_BrookingsMetro_Automation-AI_Report_Muro-Maxim-Whiton-FINAL-version.pdf",
+      "title": "How machines are affecting people and places",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:20.942037+00:00",
+      "archive_sha256": "bf007642958db187db862ed3e50eacd87eb5007f3b402f39dda128f988b9fabc",
+      "archive_path": "jobs/ac41ad7c7a392003ec9356fb/bf007642958db187db862ed3e50eacd87eb5007f3b402f39dda128f988b9fabc.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-5722ed7656690715d0e6e79e",
+      "url": "https://academic.oup.com/qje/article/139/3/1399/7639980",
+      "resolved_url": "https://academic.oup.com/qje/article/139/3/1399/7639980",
+      "title": "New Frontiers: The Origins and Content of New Work, 1940–2018* | The Quarterly Journal of Economics | Oxford Academic",
+      "published_date": "2024-03-15",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-03-15",
+        "latest": "2024-03-15"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:36.192821+00:00",
+      "archive_sha256": "d7366e8362574891f5ac9291074ace3cfc8a1a002c23ceee7274ac9c4518ed56",
+      "archive_path": "jobs/ac41ad7c7a392003ec9356fb/d7366e8362574891f5ac9291074ace3cfc8a1a002c23ceee7274ac9c4518ed56.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a9c761800eff292406fedddb",
+      "url": "https://blsmon1.bls.gov/cps/data/aa2024/cpsaat01.htm",
+      "resolved_url": "https://blsmon1.bls.gov/cps/data/aa2024/cpsaat01.htm",
+      "title": "Employment status of the civilian noninstitutional population, last 70 years : U.S. Bureau of Labor Statistics",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:36.192941+00:00",
+      "archive_sha256": "1bf930167472b75bf8abfe9798caf3f9739e828823ce8125a4fcf9b29b87afa8",
+      "archive_path": "jobs/ac41ad7c7a392003ec9356fb/1bf930167472b75bf8abfe9798caf3f9739e828823ce8125a4fcf9b29b87afa8.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-0d82090858236d845991f5e0",
+      "url": "https://fred.stlouisfed.org/data/payems",
+      "resolved_url": "https://fred.stlouisfed.org/data/payems",
+      "title": "Table Data - All Employees, Total Nonfarm | FRED | St. Louis Fed",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:36.193033+00:00",
+      "archive_sha256": "f4fe7a30a517458268464700615354f78c97485e119715b3f40ac0c4786a3fca",
+      "archive_path": "jobs/ac41ad7c7a392003ec9356fb/f4fe7a30a517458268464700615354f78c97485e119715b3f40ac0c4786a3fca.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "BLS employment projections automation job displacement total workers displaced technology United States 1991 2024",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "BLS automation risk occupations employment growth 1999 2018 high risk occupations increased employment",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Autor Chin Salomons Seegmiller New Frontiers origins content new work 1940-2018 technology replaced more jobs than created United States",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "BLS labor force employment unemployment 1991 2024 total nonfarm employment growth technology net job creation United States",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-be3a23e84233bbe6ca7d2d6b",
+        "prior-0ea8cff8fdd1d0c300e1"
+      ],
+      "blocks_verdict": true
+    },
+    {
+      "code": "model_publication_date_not_verified",
+      "evidence_ids": [
+        "ev-be3a23e84233bbe6ca7d2d6b"
+      ]
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "prior-0ea8cff8fdd1d0c300e1"
+      ],
+      "blocks_verdict": true
+    }
+  ],
+  "remaining_gap": "需修正分项(b)的代理指标：劳动力规模扩大不等于“需谋生求职者越来越多”，应改用能直接反映求职谋生需求（如失业人数、求职人数或劳动参与）且覆盖1991—2024年的可核实序列；同时需明确整体结论究竟依据哪个分项未实现而降为部分符合，或改为与分项判断一致的结论。",
+  "source_statuses": [
+    {
+      "url": "https://news.mit.edu/2024/does-technology-help-or-hurt-employment-0401",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www2.itif.org/2017-false-alarmism-technological-disruption.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.brookings.edu/wp-content/uploads/2019/01/2019.01_BrookingsMetro_Automation-AI_Report_Muro-Maxim-Whiton-FINAL-version.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://academic.oup.com/qje/article/139/3/1399/7639980",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://blsmon1.bls.gov/cps/data/aa2024/cpsaat01.htm",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://fred.stlouisfed.org/data/payems",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "评估王沪宁关于美国就业矛盾的两分项判断：(1)科技发展排挤越来越多劳动者；(2)需要求职谋生的人越来越多。可观察口径：1991—2024年美国劳动力规模、就业与失业人数；1999—2018年高自动化风险职业就业变化；机器人暴露对地方就业的相对影响。反证：若劳动力与就业同步扩大、失业下降，或高风险职业就业整体增长，则‘排挤越来越多’的净效应不成立；但技术替代可与新增岗位并存，故不以净就业否定总置换。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "d0e6cd3403f03c2fe3c2308175fed662144208df3d19708025ef092da7b78b0d"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "c6d443ef06e0ee1385ed768becb3c4df",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "1bb59c5e439cb5ed5ead780ded5ad1e0",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "5893eda3fd7070387e2e3f91266ebd97e6d5bbab8bbc42576529092931e89d36"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "ce9c3ba59acdb1b7923e398c49b64482",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "2b5fb91b18dc32826cf54861354f420c333a88c868dee280b246ac21f0f9297d"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "1deac6f9f9844b9bb4db12a100c9f89b",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "432f176c990e46699408829cc4c73f93",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "c138c4c900ff45e6a8b916dd3b3aa13e4dc542d491303b7983248bd33867769b"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "a965e1e1a0266a4ad12321b04dcb2879",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "c5a756d4b631a7b7c332640d94f3e67eb36cf5989ef9b387616ddc984abe8999"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "6c0ab588d28345b894679fe276ca67e4090b905ac859d5a139ed158335e74c3a"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "d0fc7a2a2b0e37ca6139dc8fe66920dc06f218e55f6ea8241f7b7b6e1ec22486"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "7ce16c7965c70797373c358565ed5479efd309d431ec44cfd9f368a148fd2a86"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-be3a23e84233bbe6ca7d2d6b",
+            "prior-0ea8cff8fdd1d0c300e1"
+          ],
+          "blocks_verdict": true
+        },
+        {
+          "code": "model_publication_date_not_verified",
+          "evidence_ids": [
+            "ev-be3a23e84233bbe6ca7d2d6b"
+          ]
+        },
+        {
+          "code": "source_availability_unconfirmed",
+          "evidence_ids": [
+            "prior-0ea8cff8fdd1d0c300e1"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-be3a23e84233bbe6ca7d2d6b",
+            "prior-0ea8cff8fdd1d0c300e1"
+          ],
+          "blocks_verdict": true
+        },
+        {
+          "code": "model_publication_date_not_verified",
+          "evidence_ids": [
+            "ev-be3a23e84233bbe6ca7d2d6b"
+          ]
+        },
+        {
+          "code": "source_availability_unconfirmed",
+          "evidence_ids": [
+            "prior-0ea8cff8fdd1d0c300e1"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-0ea8cff8fdd1d0c300e1",
+        "source_bytes": 150,
+        "shown_bytes": 150,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3f922d8da91aa794ad4a",
+        "source_bytes": 155,
+        "shown_bytes": 155,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-6889b6aa1268c2492327",
+        "source_bytes": 214,
+        "shown_bytes": 214,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-e3379d8060a7e43369d55585",
+        "source_bytes": 8991,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-be3a23e84233bbe6ca7d2d6b",
+        "source_bytes": 12114,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-82e442f6d7878e517ce8f997",
+        "source_bytes": 12084,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-5722ed7656690715d0e6e79e",
+        "source_bytes": 2944,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a9c761800eff292406fedddb",
+        "source_bytes": 8101,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-0d82090858236d845991f5e0",
+        "source_bytes": 12000,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-0ea8cff8fdd1d0c300e1",
+        "source_bytes": 150,
+        "shown_bytes": 150,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3f922d8da91aa794ad4a",
+        "source_bytes": 155,
+        "shown_bytes": 155,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-6889b6aa1268c2492327",
+        "source_bytes": 214,
+        "shown_bytes": 214,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-e3379d8060a7e43369d55585",
+        "source_bytes": 8991,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-be3a23e84233bbe6ca7d2d6b",
+        "source_bytes": 12114,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-82e442f6d7878e517ce8f997",
+        "source_bytes": 12084,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-5722ed7656690715d0e6e79e",
+        "source_bytes": 2944,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a9c761800eff292406fedddb",
+        "source_bytes": 8101,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-0d82090858236d845991f5e0",
+        "source_bytes": 12000,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-0ea8cff8fdd1d0c300e1",
+        "source_bytes": 150,
+        "shown_bytes": 150,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3f922d8da91aa794ad4a",
+        "source_bytes": 155,
+        "shown_bytes": 155,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-6889b6aa1268c2492327",
+        "source_bytes": 214,
+        "shown_bytes": 214,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-e3379d8060a7e43369d55585",
+        "source_bytes": 8991,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-be3a23e84233bbe6ca7d2d6b",
+        "source_bytes": 12114,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-82e442f6d7878e517ce8f997",
+        "source_bytes": 12084,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-5722ed7656690715d0e6e79e",
+        "source_bytes": 2944,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a9c761800eff292406fedddb",
+        "source_bytes": 8101,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-0d82090858236d845991f5e0",
+        "source_bytes": 12000,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-0ea8cff8fdd1d0c300e1",
+        "source_bytes": 150,
+        "shown_bytes": 150,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3f922d8da91aa794ad4a",
+        "source_bytes": 155,
+        "shown_bytes": 155,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-6889b6aa1268c2492327",
+        "source_bytes": 214,
+        "shown_bytes": 214,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-e3379d8060a7e43369d55585",
+        "source_bytes": 8991,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-be3a23e84233bbe6ca7d2d6b",
+        "source_bytes": 12114,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-82e442f6d7878e517ce8f997",
+        "source_bytes": 12084,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-5722ed7656690715d0e6e79e",
+        "source_bytes": 2944,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a9c761800eff292406fedddb",
+        "source_bytes": 8101,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-0d82090858236d845991f5e0",
+        "source_bytes": 12000,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000014154-000014218",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "evidence_support",
+          "reason": "该来源正文只显示到1972年，所引“1991/2024劳动力分别126346/168106千人，就业117718/161346千人，失业8628/6761千人”的2024年数值不在可见正文中，无法由该来源文本直接核实；而评估把这一组总量数据作为分项(b)及部分符合结论的主要支撑。",
+          "source_quote": "| 1972 | 144,126 | 87,034 | 60.4 | 82,153 | 57.0 | 3,484 | 78,669 | 4,882 | 5.6 | ",
+          "evidence_id": "ev-a9c761800eff292406fedddb",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "评估把“劳动力与就业总量扩大、失业下降”当作分项(b)“需谋生求职者越来越多”的符合证据，但劳动力规模扩大不等于需要求职谋生的人越来越多；就业总量扩大和失业下降反而更接近该分项的反向结果。分项(b)的判定方向与所用指标不一致，导致“部分符合”的分类缺乏对应证据。",
+          "source_quote": "劳动力与就业总量在1991—2024年间显著扩大（劳动力126346→168106千人，就业117718→161346千人），失业人数下降（8628→6761千人），说明'求职谋生者越来越多'与就业总量扩张方向一致",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正分项(b)的指标与判定方向：劳动力规模扩大、就业扩大、失业下降不能证明“需谋生求职者越来越多”；并需用可见正文能覆盖1991—2024年的来源核实总量数据，或将该组数据降为未核实并相应调整结论。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000014154-000014218",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "evidence_support",
+          "reason": "分项(b)以劳动力规模扩大作为“需谋生求职者越来越多”的证据，但劳动力规模是就业与失业之和，其扩大本身不能证明求职谋生需求增加；且该分项所依赖的1991/2024劳动力数值来自先前登记摘录，2024年数值未在可见正文中直接核实，建议自己也承认这一点。",
+          "quote_ref": "q4",
+          "source_quote": "BLS CPS年度表：1991/2024劳动力分别126346/168106千人，就业117718/161346千人，失业8628/6761千人。",
+          "evidence_id": "prior-0ea8cff8fdd1d0c300e1",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议将分项(a)判为方向符合、分项(b)判为方向符合，却因就业总量扩大、失业下降而整体降为“部分符合”。但就业总量与失业是净效应边界，不是原文两个分项之一；两个分项均被判方向符合时，不能仅凭净效应边界把结论降为部分符合，应说明哪个分项或后果具体未实现。",
+          "quote_ref": "q3",
+          "source_quote": "分项(a)有Autor等研究支持1980年以来技术净替代美国岗位多于创造、机器人暴露降低相对就业，方向符合；分项(b)劳动力规模由1991年126346千人增至2024年168106千人，需谋生求职人群扩大方向符合。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正分项(b)的代理指标：劳动力规模扩大不等于“需谋生求职者越来越多”，应改用能直接反映求职谋生需求（如失业人数、求职人数或劳动参与）且覆盖1991—2024年的可核实序列；同时需明确整体结论究竟依据哪个分项未实现而降为部分符合，或改为与分项判断一致的结论。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000014154-000014218",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以美国1991—2024年劳动力市场为观察窗口：劳动力规模与就业总量是否扩大、失业是否下降，以及自动化/机器人暴露对就业的替代效应。原文判断含两个分项：(a)科技发展排挤越来越多劳动者；(b)需谋生求职者越来越多，形成就业矛盾。",
+      "reason": "劳动力与就业总量在1991—2024年间显著扩大（劳动力126346→168106千人，就业117718→161346千人），失业人数下降（8628→6761千人），说明'求职谋生者越来越多'与就业总量扩张方向一致；同时Autor等研究显示1980年以来技术净替代美国岗位多于创造，机器人暴露降低相对就业，支持'科技排挤劳动者'分项。但'排挤越来越多'的净效应与就业总量扩张并存，故为部分符合而非完全正确。",
+      "limitation": "原文未给精确指标与终点，本评估采用劳动力/就业/失业总量及自动化研究作代理；技术替代与新增岗位并存，净就业扩大不能否定总置换，反之亦然。BLS CPS表含衰退与疫情波动，且部分来源发表日期未知。",
+      "evidence_ids": [
+        "prior-0ea8cff8fdd1d0c300e1",
+        "prior-3f922d8da91aa794ad4a",
+        "prior-6889b6aa1268c2492327",
+        "ev-e3379d8060a7e43369d55585",
+        "ev-5722ed7656690715d0e6e79e",
+        "ev-be3a23e84233bbe6ca7d2d6b"
+      ],
+      "method": "从技术替代劳动与求职需求增加推断就业矛盾",
+      "method_basis": "inferred",
+      "observation_end": "2024-12-31",
+      "future_time_text": "随着科学技术发展",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-0ea8cff8fdd1d0c300e1",
+          "relation": "support",
+          "quote": "BLS CPS年度表：1991/2024劳动力分别126346/168106千人，就业117718/161346千人，失业8628/6761千人。",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "仅总量数据，未区分技术替代与新增岗位；含衰退和疫情波动。"
+        },
+        {
+          "evidence_id": "prior-3f922d8da91aa794ad4a",
+          "relation": "counter",
+          "quote": "所列高风险职业整体在1999—2018就业增长17%，并强调部分劳动者仍遭替代。",
+          "publication_date": "2022",
+          "observation_end": "2018-12-31",
+          "limitation": "高风险职业整体就业增长，对'排挤越来越多'的净效应构成反证，但作者强调部分劳动者仍遭替代。"
+        },
+        {
+          "evidence_id": "prior-6889b6aa1268c2492327",
+          "relation": "support",
+          "quote": "估计机器人暴露增加降低相对就业人口比和工资，同时模型考虑贸易及资本收益在其他地区的补偿效应。",
+          "publication_date": "2020-04-22",
+          "observation_end": null,
+          "limitation": "地方劳动力市场估计，含补偿效应，不能直接外推全国净就业。"
+        },
+        {
+          "evidence_id": "ev-e3379d8060a7e43369d55585",
+          "relation": "support",
+          "quote": "On net, and particularly since 1980, technology has replaced more U.S. jobs than it has generated.",
+          "publication_date": "2024-04-01",
+          "observation_end": null,
+          "limitation": "新闻稿转述研究结论，非原始论文；覆盖1940年以来美国历史。"
+        },
+        {
+          "evidence_id": "ev-5722ed7656690715d0e6e79e",
+          "relation": "support",
+          "quote": "The demand-eroding effects of automation innovations have intensified in the past four decades while the demand-increasing effects of augmentation innovations have not.",
+          "publication_date": "2024-03-15",
+          "observation_end": "2018-12-31",
+          "limitation": "研究止于2018年，且为学术估计，非官方统计。"
+        },
+        {
+          "evidence_id": "ev-be3a23e84233bbe6ca7d2d6b",
+          "relation": "counter",
+          "quote": "Levels of occupational churn in the United States are now at historic lows.",
+          "publication_date": "2017-05",
+          "observation_end": "2015-12-31",
+          "limitation": "ITIF报告主张技术扰动被夸大，与'排挤越来越多'方向相反；止于2015年。"
+        }
+      ],
+      "remaining_gap": "缺少1991—2024年逐年技术替代岗位数与新增岗位数的直接官方序列，无法精确量化'排挤越来越多'的净趋势；现有证据为总量统计与学术估计的组合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000014154-000014218",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以美国1991—2024年劳动力市场为观察窗口，分项(a)科技发展排挤越来越多劳动者，用自动化/机器人暴露对就业的替代效应及技术净替代岗位研究衡量；分项(b)需谋生求职者越来越多，用劳动力规模（求职谋生人群）扩大衡量，不以就业总量或失业下降替代该分项。",
+      "reason": "分项(a)有Autor等研究支持1980年以来技术净替代美国岗位多于创造、机器人暴露降低相对就业，方向符合；分项(b)劳动力规模由1991年126346千人增至2024年168106千人，需谋生求职人群扩大方向符合。但就业总量同期扩大、失业人数下降，说明'排挤'的净效应与就业扩张并存，故为部分符合而非完全正确。",
+      "limitation": "关键修订：不再把就业总量扩大、失业下降当作分项(b)'需谋生求职者越来越多'的符合证据，该分项改以劳动力规模扩大衡量；就业与失业数据仅作净效应边界。BLS CPS总量数据来自先前登记摘录，其2024年数值未在可见正文中直接核实，且含衰退与疫情波动；部分来源发表日期未知。",
+      "evidence_ids": [
+        "prior-0ea8cff8fdd1d0c300e1",
+        "prior-3f922d8da91aa794ad4a",
+        "prior-6889b6aa1268c2492327",
+        "ev-e3379d8060a7e43369d55585",
+        "ev-5722ed7656690715d0e6e79e",
+        "ev-be3a23e84233bbe6ca7d2d6b"
+      ],
+      "method": "从技术替代劳动与求职需求增加推断就业矛盾",
+      "method_basis": "inferred",
+      "observation_end": "2024-12-31",
+      "future_time_text": "随着科学技术发展",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-0ea8cff8fdd1d0c300e1",
+          "relation": "support",
+          "quote": "BLS CPS年度表：1991/2024劳动力分别126346/168106千人，就业117718/161346千人，失业8628/6761千人。",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "先前登记摘录，2024年数值未在可见正文中直接核实；仅总量数据，未区分技术替代与新增岗位，含衰退和疫情波动。"
+        },
+        {
+          "evidence_id": "prior-3f922d8da91aa794ad4a",
+          "relation": "counter",
+          "quote": "所列高风险职业整体在1999—2018就业增长17%，并强调部分劳动者仍遭替代。",
+          "publication_date": "2022",
+          "observation_end": "2018-12-31",
+          "limitation": "高风险职业整体就业增长，对'排挤越来越多'的净效应构成反证，但作者强调部分劳动者仍遭替代。"
+        },
+        {
+          "evidence_id": "prior-6889b6aa1268c2492327",
+          "relation": "support",
+          "quote": "估计机器人暴露增加降低相对就业人口比和工资，同时模型考虑贸易及资本收益在其他地区的补偿效应。",
+          "publication_date": "2020-04-22",
+          "observation_end": null,
+          "limitation": "地方劳动力市场估计，含补偿效应，不能直接外推全国净就业。"
+        },
+        {
+          "evidence_id": "ev-e3379d8060a7e43369d55585",
+          "relation": "support",
+          "quote": "On net, and particularly since 1980, technology has replaced more U.S. jobs than it has generated.",
+          "publication_date": "2024-04-01",
+          "observation_end": null,
+          "limitation": "新闻稿转述研究结论，非原始论文；覆盖1940年以来美国历史。"
+        },
+        {
+          "evidence_id": "ev-5722ed7656690715d0e6e79e",
+          "relation": "support",
+          "quote": "The demand-eroding effects of automation innovations have intensified in the past four decades while the demand-increasing effects of augmentation innovations have not.",
+          "publication_date": "2024-03-15",
+          "observation_end": "2018-12-31",
+          "limitation": "研究止于2018年，且为学术估计，非官方统计。"
+        },
+        {
+          "evidence_id": "ev-be3a23e84233bbe6ca7d2d6b",
+          "relation": "counter",
+          "quote": "Levels of occupational churn in the United States are now at historic lows.",
+          "publication_date": "2017-05",
+          "observation_end": "2015-12-31",
+          "limitation": "ITIF报告主张技术扰动被夸大，与'排挤越来越多'方向相反；止于2015年，发表日期仅精确到月。"
+        }
+      ],
+      "remaining_gap": "缺少1991—2024年逐年技术替代岗位数与新增岗位数的直接官方序列，无法精确量化'排挤越来越多'的净趋势；BLS CPS总量数据的2024年数值未在可见正文中直接核实，需以可覆盖该年的来源复核。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "评估王沪宁关于‘科技发展排挤越来越多劳动者，同时需谋生求职者越来越多，形成就业矛盾’的判断。对象为美国（原文语境）1991—2024年劳动力市场：可观察口径包括劳动力规模、就业/失业人数、自动化风险职业就业变化及机器人暴露对就业的影响。反证包括：若劳动力与就业同步扩大、失业下降，或高风险职业就业整体增长，则‘排挤越来越多’的净效应不成立；但技术替代可与新增岗位并存，故不以净就业否定总置换。",
+  "elapsed_seconds": 49.801,
+  "completed_at": "2026-11-09T10:32:57.939136+00:00"
+}

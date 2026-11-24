@@ -1,0 +1,28 @@
+{
+  "id": "c0e92070-28c6-4370-bd47-6d47e5103d1f",
+  "object": "chat.completion",
+  "created": 1794201448,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000043933-000043954\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为对乔布斯/苹果历史理念的回顾性陈述，非对未来的可检验预测；无观察时段。\",\"reason\":\"该句是作者借乔布斯事例表达的管理理念，不是关于未来结果的可验证预测。\",\"limitation\":\"属规范性/回顾性论断，无法作为预测评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000044276-000044311\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"命题为“对未来计划明确的创立者不会卖掉公司，故买家出价不够高”，属对创立者行为与出价关系的普遍性断言；无明确期限与可操作指标。\",\"reason\":\"“计划明确”与“出价不够高”均无客观操作化标准，且原文仅举扎克伯格一例，无法据此检验普遍命题。\",\"limitation\":\"缺乏可量化定义与系统证据，单例不足以验证或反驳。\",\"evidence_ids\":[],\"method\":\"inferred\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7499,
+    "completion_tokens": 319,
+    "total_tokens": 7818,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 6731
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

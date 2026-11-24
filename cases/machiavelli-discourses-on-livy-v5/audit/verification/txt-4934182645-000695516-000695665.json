@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000695516-000695665",
+  "plan": {
+    "object": "想被人大大爱戴的将领。同句后半是想被人大大畏惧的人若稍稍过分就招恨。登记变化只取前半 becomes contemptible。",
+    "condition": "if he swerve ever so little from the right road。偏离必须是很小的一步。反复的大失误不是“ever so little”。",
+    "quantifier": "becomes contemptible。会变得可鄙。一次变得可鄙不能证明凡小偏离都如此；一次很小的偏离之后仍被爱戴，可以反驳。",
+    "result": "登记变化是 becomes contemptible。可鄙是在爱他的人眼里，不是只被上级撤职。",
+    "window": "1531至2026-11-15。曼利乌斯和瓦勒里乌斯是出版前的例子。",
+    "counterevidence_needed": "一个被人爱戴的将领只稍稍偏离，然后变得可鄙；或者只稍稍偏离，士兵仍不鄙视他。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "beloved general lost his soldiers' respect after one lapse and was despised",
+      "counter_query": "popular commander made a mistake and his men still loved him"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://www.encyclopedia.com/history/energy-government-and-defense-magazines/george-b-mcclellan"],
+    "dropped": "麦克里斯特尔因一次言论去职，页面没有写士兵从此鄙视他。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-encyclopedia-mcclellan"],
+    "scope": "偏离必须很小。士兵几乎崇拜他，后来又因忠诚而被召回，说明大失误之后爱还在，但那不是很小的偏离。",
+    "reason": "百科写，麦克莱伦因亲身带兵，士兵几乎崇拜他，他比任何其他内战将领更受士兵欢迎。他又一再高估敌军、拖延进攻，林肯曾撤他的全军总司令衔，后来仍因部队对他的强烈忠诚而让他回到波托马克军团。爱在大失误之后还在，所以这不是“变得可鄙”。可是那些失误是一再的大偏离，不是原文的 ever so little。决定性缺口是：没有一个只稍稍偏离正路的受爱戴将领，以及他随后可鄙或仍不可鄙。",
+    "limitation": "百科页没有出版日。撤职和召回都在1861至1862年，页面写了月份，没有把“很小的偏离”写进去。",
+    "method": "先把偏离限制在很小，再看爱他的人是否把他看成可鄙。大失误后仍被爱，不能改成很小的偏离。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "士兵几乎崇拜麦克莱伦，林肯后来仍因这种忠诚召回他。失误是一再的大延误，不是很小的偏离。"
+  }
+}

@@ -1,0 +1,14 @@
+{
+ "files_scanned": 108,
+ "source_sha256_checked": 63,
+ "evidence_nonempty": true,
+ "claims_context_empty": 35,
+ "exact_authorized_key_hits": 0,
+ "generic_credential_hits": 0,
+ "unauthorized_book_overlap_files": [],
+ "ngram_words": 40,
+ "max_observed_book_overlap_words": 59,
+ "max_registered_quote_words": 59,
+ "method": "对每个JSON字符串/CSV单元/文本检查连续40词重合；只允许已登记quote/support_quote里的同一连续片段，不允许完整chunk/全文。密钥仅在内部按用户指定路径读取比较，不输出内容。",
+ "passed": true
+}

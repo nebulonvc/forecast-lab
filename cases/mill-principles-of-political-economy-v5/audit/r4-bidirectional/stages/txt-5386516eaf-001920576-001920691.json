@@ -1,0 +1,41 @@
+{
+  "id": "txt-5386516eaf-001920576-001920691",
+  "assessment": {
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "id": "txt-5386516eaf-001920576-001920691",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "observation_end": "2024-12-31",
+    "scope": "学校教育的数量会增加。",
+    "reason": "全球小学毛入学率平均值在1970–2024年上升约34%。撒哈拉以南的毛入学率从2000年约83%升到2010年98%，然后停到2020年。数量在全球平均上增加，在该区域先增后停。",
+    "limitation": "毛入学率不是课时或学业内容。区域停顿不是全球下降。",
+    "evidence_ids": [
+      "ev-r4b-enroll",
+      "ev-r4b-ssa"
+    ],
+    "method": "两句分别在支持和反证检索保存的文件里。",
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-r4b-enroll",
+        "quote": "Over 54 years (1970–2024), the global average rose by about 34%.",
+        "relation": "support",
+        "limitation": "全球平均上升。",
+        "observation_end": "2024-12-31",
+        "publication_date": "2026-02"
+      },
+      {
+        "evidence_id": "ev-r4b-ssa",
+        "quote": "The GER grew from about 83% in 2000, to 98% in 2010, and remained at that level in 2020.",
+        "relation": "counter",
+        "limitation": "一个区域停住。",
+        "observation_end": "2020-12-31",
+        "publication_date": null
+      }
+    ],
+    "remaining_gap": ""
+  }
+}

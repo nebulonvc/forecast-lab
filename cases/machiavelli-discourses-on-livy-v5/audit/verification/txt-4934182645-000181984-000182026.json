@@ -1,0 +1,51 @@
+{
+  "id": "txt-4934182645-000181984-000182026",
+  "plan": {
+    "object": "替不亲征的君主出征、打了胜仗的将领。",
+    "condition": "登记主张要求他既不完全好也不完全坏，并且仍在犹豫和怀疑。连续原文把两条路写死：胜利后立刻交卸军职并避免争荣，或者把战果据为己有、笼络军队、对付君主。作者接着说人做不到全好或全坏，所以这两条都不会发生，于是 remaining undecided，在犹豫中被压垮。犹豫是结果句的条件，不能用善终倒推。",
+    "quantifier": "it will never happen that after a victory a captain will quit ... nor yet that he will venture to use those hardy methods；and so ... he will be crushed。登记主张核的是后半的条件结果，不是单独的传记结局。",
+    "result": "在犹豫和怀疑中被压垮。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "若要反驳“两条都不会被选择”，需要这位将领实际立刻交权，或实际把战果用来对付君主。若要反驳“犹豫者被压垮”，需要先有犹豫的行为记载，再看他是否被压垮。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "victorious general executed by his prince after hesitating to resign or seize power",
+      "counter_query": "victorious general resigned command after victory and was not punished Wellington Grant"
+    },
+    "adaptive_rounds": 1,
+    "adaptive": {
+      "strategy": "改查胜利之后对军权的实际处置，不再用去世和封赏代替选择",
+      "queries": ["Wellington after Waterloo retained command commander-in-chief or resigned army 1815"]
+    },
+    "kept_urls": [
+      "https://en.wikipedia.org/wiki/Arthur_Wellesley,_1st_Duke_of_Wellington",
+      "https://www.gov.uk/government/history/past-prime-ministers/arthur-wellesley-1st-duke-of-wellington"
+    ],
+    "dropped": "先前用惠灵顿1852年善终反驳普遍被压垮。该结局没有写交权、据功或犹豫。尔朱荣在1531年之前。华盛顿向的是会议，不是君主。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-wiki-wellington-occupation-1818", "ev-govuk-wellington-1818"],
+    "scope": "先前的错误判决撤回。登记主张不是“所有胜将必被压垮”。善终只证明没有被压垮，不证明犹豫、不交权或不据功。",
+    "reason": "维基写《巴黎条约》任命惠灵顿指挥驻法占领军，该军1818年解散后他回英国，这是他最后一次实际军职；1818年12月26日他接受军械总监。英国政府页面写滑铁卢后他任占领军总司令直到1818年11月，回国后被当作英雄，获赠庄园和40万英镑。这是实际行为：他没有在胜利后立刻交卸，也没有把占领军用来对付英国君主，而是继续为条约和本国政府服务并接受奖赏。两页都没有写他在交权和强夺之间犹豫。因此“犹豫者被压垮”的条件没有出现。他既没有立刻交权，也没有强夺，所以也不能用来反驳“两条都不会被选择”。不能把作者所说的 remaining undecided 当成已经观察到的犹豫。",
+    "limitation": "两页都没有单独的出版日。占领军解散只写1818年，英国政府页写到1818年11月。40万英镑和庄园是奖赏，不是选择本身。",
+    "method": "先把登记主张的犹豫条件和原文的两个原子选择分开，再用行为记载而不是结局核对。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "错误分撤回。占领军指挥和随后的官职是已决定的继续服务，不是犹豫，也不是两条极端中的任何一条。"
+  }
+}

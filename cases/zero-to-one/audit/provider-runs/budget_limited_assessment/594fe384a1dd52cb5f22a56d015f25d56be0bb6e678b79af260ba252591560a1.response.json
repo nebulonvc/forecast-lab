@@ -1,0 +1,28 @@
+{
+  "id": "3bb25fbe-114c-43a0-99d5-4fe0b7693c22",
+  "object": "chat.completion",
+  "created": 1794201445,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000033979-000034011\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为对初创企业扩张相邻市场时的规范性建议（“不要破坏，要躲开竞争”），无时间期限、无可观测结果指标，不构成对未来事件或状态的预测。\",\"reason\":\"该句是作者给企业家的行动建议，而非对某公司或市场未来结果的预测。\",\"limitation\":\"建议性语句无法按预测正确性评分；仅作非预测审计记录。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4259,
+    "completion_tokens": 164,
+    "total_tokens": 4423,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3491
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

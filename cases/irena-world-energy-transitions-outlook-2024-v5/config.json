@@ -1,0 +1,18 @@
+{
+  "book": "世界能源转型展望2024：1.5°C路径（World Energy Transitions Outlook 2024: 1.5°C Pathway）",
+  "author": "国际可再生能源署（IRENA）",
+  "cutoff": "2026-11-15",
+  "publication_year_proxy": 2024,
+  "rules_version": "simple-v3-trend-four-class",
+  "publication_date": "2024-11-11",
+  "publication_year_note": "IRENA《World Energy Transitions Outlook 2024: 1.5°C Pathway》，ISBN 978-92-9260-634-3，© IRENA 2024；前言称“As leaders meet for COP29 in Baku”（COP29 于2024年11月召开），PDF 元数据 CreationDate 为 2024-11-11，发布页路径为 Publications/2024/Nov。publication_date 取 2024-11-11（PDF 生成日，约即 COP29 期间发布）。窗口 2024-11-11 → 2026-11-15，仅约两年，2030/2050 终点预测大多暂无法判断。PDF 为 reading-library/2026-11-15-未来判断扩展100本/04-经济与资源/055-world-energy-transitions-outlook-2024-1-5c-pathway.pdf（本地取自 IRENA 官方下载，sha256 与队列记录一致）。抽取用 pdftotext -enc UTF-8 全文（默认版式、保留分页符）生成的 TXT；引文为该 TXT 的连续片段，位置记为 TXT 字符偏移。未把全文文本加入仓库。",
+  "source_text": "reading-library/2026-11-15-未来判断扩展100本/04-经济与资源/055-world-energy-transitions-outlook-2024-1-5c-pathway.pdf",
+  "source_sha256": "90f34b24922ceb195778c62543a04e177b85ce2b523b37a63dd0979ee610fa62",
+  "source_url": "https://www.irena.org/Publications/2024/Nov/World-Energy-Transitions-Outlook-2024",
+  "license": "IRENA 2024：注明来源和版权方可自由使用、转载",
+  "execution_mode": "prepare_book-txt v5 (manual model replacement) + manual verify",
+  "source_txt_local": "/workspace/forecast-bot2-w5/books/irena.txt",
+  "source_txt_sha256": "55a093380d8bb8628b145e60f6b227340dba42405ce20f242c2e574830123b89",
+  "queue_id": "irena-world-energy-transitions-outlook-2024",
+  "worker": "预测审读2 bot2-w5"
+}

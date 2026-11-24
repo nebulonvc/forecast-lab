@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000676501-000676641",
+  "plan": {
+    "object": "共和国里被轻视的伟大公民。同段前一句写，别的共和国不能不犯这种不公。",
+    "condition": "if the great citizen who finds himself slighted be vindictive, and have some credit and following in the city。三项都要有：被轻视，心怀报复，在城里有信誉和追随者。被授予指挥而自己拒绝，不是被轻视。",
+    "quantifier": "disorder will always ensue。混乱总会发生。一次混乱不能证明总会；一次三项都齐却没有混乱，可以反驳。",
+    "result": "登记变化是 disorder will always ensue。发生的是城里的混乱，不是他个人后来失意。",
+    "window": "1531至2026-11-15。罗马暂时躲过和佛罗伦萨的贾科米尼是作者自己的时代。",
+    "counterevidence_needed": "一个被轻视、有追随者而又想报复的伟大公民，随后城里发生混乱；或者三项都齐，城里却保持安静。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "general passed over for command raised his followers and caused a revolt",
+      "counter_query": "popular general denied the command stayed loyal and the city remained quiet"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [],
+    "dropped": "李敬业被贬后起兵是684年，早于1531年。虚构的特雷林政变不用。李拒绝的是已经给他的联邦指挥，不是被轻视后带着追随者制造混乱。约翰斯顿被撤换后，页面写的是舍曼趁机前进，不是约翰斯顿报复。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "被轻视、想报复、有追随者，三项都要写在同一件事上，然后才看混乱是否总会发生。",
+    "reason": "支持检索没有给出1531年之后、一个共和国里被轻视而又有追随者的伟大公民因报复造成混乱。反对检索里，李是被请来指挥联邦军队而自己拒绝，不是被轻视。被撤换的约翰斯顿没有被写成带着追随者制造混乱。决定性缺口是：没有正文同时写出这三项，以及随后城里发生混乱或保持安静。一次相似的兵变不能代替这三项。",
+    "limitation": "没有可引用的出版后正文。未保存的检索摘要不拿来当正证或反证。",
+    "method": "先把被轻视、报复和追随者对齐到同一个人，再看混乱是否总会发生。缺一项就不计分。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "打开的事例要么早于1531年，要么是拒绝已给的指挥，要么没有写报复和追随者。三项没有齐。"
+  }
+}

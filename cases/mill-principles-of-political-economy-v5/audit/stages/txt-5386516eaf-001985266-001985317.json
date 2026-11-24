@@ -1,0 +1,90 @@
+{
+  "id": "txt-5386516eaf-001985266-001985317",
+  "assess": {
+    "id": "txt-5386516eaf-001985266-001985317",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "还不能预见竞争不再为进步所不可或缺的时候。",
+    "reason": "OECD文本说的是竞争政策的目标和框架对增长和创新仍是必需。这是政策声明，不是竞争本身对进步不可或缺。",
+    "limitation": "政策声明留作边界，不作为部分符合的依据。",
+    "evidence_ids": [
+      "ev-oecd-comp-2021"
+    ],
+    "method": "独立QA要求撤回部分符合。不另打对错。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "no one can foresee the time",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-oecd-comp-2021",
+        "quote": "Competition policy continues to play a paramount role in promoting growth and \nproductivity",
+        "relation": "boundary",
+        "limitation": "竞争政策声明不是竞争对进步不可或缺。",
+        "observation_end": "2020-12-07",
+        "publication_date": "2021-05",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺竞争本身是否仍为进步所不可或缺，而不是官方是否称竞争政策必需。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001985266-001985317",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "competition still treated as essential for growth"
+      },
+      {
+        "role": "counter",
+        "query": "economic progress without competition"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/05/competition-policy-time-for-a-reset_09736905/ded6196b-en.pdf"
+    ],
+    "reason": "仍被写成必需，但只是政策口径。"
+  },
+  "revision_trail": {
+    "withdrawn_verdict": "部分符合",
+    "withdrawn_reason": "2020年12月的OECD记录写，竞争政策在促进增长和生产力上仍起首要作用，并称其核心目标对增长和创新仍是必需的。这支持“到观察时仍被当作必需”。材料没有证明一切进步部门都离不开竞争，也没有给出它永远不可或缺的终点。",
+    "failed_review": {
+      "id": "txt-5386516eaf-001985266-001985317",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    },
+    "why": "竞争政策声明不是竞争对进步不可或缺。",
+    "qa": "2026-11-20-mill-principles-of-political-economy"
+  }
+}

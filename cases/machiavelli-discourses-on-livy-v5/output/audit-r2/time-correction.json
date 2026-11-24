@@ -1,0 +1,22 @@
+{
+  "written_at_utc": "2026-11-20T10:51:41Z",
+  "clock_source": "datetime.now(timezone.utc) at write",
+  "original_stamp": "2026-11-20T10:50:00Z",
+  "original_locations_left_unchanged": [
+    "audit/search-log.json entries for claims 71-74",
+    "audit/verification/txt-4934182645-000794920-000795066.json logged_at",
+    "audit/verification/txt-4934182645-000795357-000795469.json logged_at",
+    "audit/verification/txt-4934182645-000798398-000798539.json logged_at",
+    "audit/verification/txt-4934182645-000813313-000813437.json logged_at",
+    "验收说明.md sentence that repeats 2026-11-20T10:50:00Z"
+  ],
+  "error": "10:50:00Z was typed into the script as now= before the clock reached it. It is not an observed date -u reading. The user notification at Beijing 18:48, which is UTC 10:48, already displayed that future stamp. The stamp does not mean a search finished at 10:50.",
+  "observed_command_times_in_v1_audit_run": {
+    "apply": "2026-11-20T10:46:56Z",
+    "check": "2026-11-20T10:47:00Z",
+    "report": "2026-11-20T10:47:00Z",
+    "inspect": "2026-11-20T10:47:18Z",
+    "unittest": "2026-11-20T10:47:22Z"
+  },
+  "searches": "The claim 71-74 searches in that session occurred before apply at 10:46:56Z. No separate search-tool clock was stored. This correction does not assign them a new precise minute."
+}

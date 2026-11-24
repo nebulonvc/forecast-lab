@@ -1,0 +1,28 @@
+{
+  "id": "87333de3-2978-49b9-9213-a4808857eddd",
+  "object": "chat.completion",
+  "created": 1794201449,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000046165-000046185\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"原文判断对象为“大多数风险投资基金”，判断内容为其所投成功公司能否出现指数级增长；期限为“永远都不会”。回顾性评估需有覆盖多数基金的长期组合层面数据，但允许证据为空，且“大多数基金”与“指数级增长”均未给出可操作阈值。\",\"reason\":\"该句是对风险投资行业整体分布的概括性判断，不是对某一具体基金或具体公司的可核验预测。原文未定义“大多数基金”的统计口径，也未给出“指数级增长”的量化标准，无法在截止日前做透明操作化。\",\"limitation\":\"缺少可核验的基金层面长期回报数据；且“永远”为无限期表述，不能以短期观察否定或确认。\",\"evidence_ids\":[],\"method\":\"一般性判断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"永远都不会\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4219,
+    "completion_tokens": 241,
+    "total_tokens": 4460,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3451
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "7075e749-3388-4395-a972-daf396014aea",
+  "object": "chat.completion",
+  "created": 1794201582,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000023485-000023510\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"对未发生的过去选择做反事实推测，非未来预测。\",\"reason\":\"该句是对假设赢得书记员竞争这一未发生路径的反事实判断，不是对未来的预测。\",\"limitation\":\"反事实无法用真实结果验证，故按非预测排除。\",\"evidence_ids\":[],\"method\":\"反事实推测\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000023511-000023565\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"对未发生的过去选择做反事实推测，非未来预测。\",\"reason\":\"该句假设当年留在最高法院的可能后果，属于对过去未发生路径的反事实推测。\",\"limitation\":\"反事实路径未发生，无法用实际结果验证，故按非预测排除。\",\"evidence_ids\":[],\"method\":\"反事实推测\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5075,
+    "completion_tokens": 277,
+    "total_tokens": 5352,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 4307
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

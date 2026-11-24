@@ -1,0 +1,85 @@
+{
+  "id": "txt-5386516eaf-001988711-001988773",
+  "assess": {
+    "id": "txt-5386516eaf-001988711-001988773",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "把立法当作改善人类状况的手段，这种讨论的兴趣更可能增加而不是减少。",
+    "reason": "公共支出占GDP从1960年约28%升到1980年约43%。这是支出规模，不是讨论的兴趣。",
+    "limitation": "支出不是兴趣。",
+    "evidence_ids": [
+      "ev-public-spend"
+    ],
+    "method": "支持检索立法讨论的兴趣是否增加，反证检索该兴趣下降。得到的是支出。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-public-spend",
+        "quote": "28 percent in 1960 to around 43 percent in 1980.",
+        "relation": "boundary",
+        "limitation": "支出不是讨论兴趣。",
+        "observation_end": "1990-12-31",
+        "publication_date": null,
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      }
+    ],
+    "remaining_gap": "缺把政府与立法当作改善手段的讨论兴趣是否增加。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001988711-001988773",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-public-spend"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-public-spend"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "interest in legislation as improvement increased"
+      },
+      {
+        "role": "counter",
+        "query": "interest in such discussion diminished"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "http://assets.cambridge.org/052166/2915/sample/0521662915wsn01.pdf"
+    ],
+    "reason": "支出不是兴趣。"
+  }
+}

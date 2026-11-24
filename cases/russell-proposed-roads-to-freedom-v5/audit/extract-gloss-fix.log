@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/forecast-bot1-w18/tools/manual_extract.py", line 88, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/workspace/forecast-bot1-w18/tools/manual_extract.py", line 85, in main
+    return pb.main(argv)
+           ~~~~~~~^^^^^^
+  File "/workspace/forecast-bot1-w18/repo/toolkit/prepare_book.py", line 694, in main
+    if current:raise ValueError('TXT import requires an empty case; do not overwrite reviewed claims')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: TXT import requires an empty case; do not overwrite reviewed claims

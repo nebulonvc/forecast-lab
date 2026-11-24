@@ -1,0 +1,28 @@
+{
+  "id": "72e2f12b-8b94-47c0-8a81-fc27bd6a7210",
+  "object": "chat.completion",
+  "created": 1794201447,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\": \"json_object\", \"items\": [{\"id\": \"txt-4001dbbdf2-000041901-000041930\", \"inclusion\": \"nonforecast\", \"verdict\": null, \"basis\": \"excluded\", \"scope\": \"原文描述制药公司以随意组合分子化合物的方式开展研究并希望取得突破，属于对研发方式与期望的陈述，未给出可检验的未来结果、期限或指标。\", \"reason\": \"该句是对制药公司研究方式和期望的描述，不是对可观测未来结果的预测。\", \"limitation\": \"原文未给出具体药物、时间或成功标准，无法作为预测评分。\", \"evidence_ids\": [], \"method\": \"随意组合分子化合物进行研究\", \"method_basis\": \"explicit\", \"observation_end\": null, \"future_time_text\": \"\", \"condition_state\": \"unconditional\", \"trend_aligned\": false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4223,
+    "completion_tokens": 194,
+    "total_tokens": 4417,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3455
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

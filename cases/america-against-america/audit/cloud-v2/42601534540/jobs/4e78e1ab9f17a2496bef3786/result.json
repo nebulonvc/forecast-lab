@@ -1,0 +1,1139 @@
+{
+  "claim_id": "txt-1c4066fc0c-000017953-000017982",
+  "version": "search-verifier-v2",
+  "input_sha256": "ebc7894b6e7306739397cb3dd99a97555dfe6cf517ef21232023567998b5774d",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000017953-000017982",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "attribution",
+    "scope": "对象：原文所称“亚美尼亚人”（上下文指向爱荷华Kalona一带Amish/Mennonite社区，但原文未明说，属未证实的代理）。口径：1991年后是否出现政府强制现代化措施，以及该措施是否给政府带来额外压力（诉讼、行政成本、政治争议）。观察时段：1991年至cutoff 2026-11-09，可用证据集中在2018—2021年。",
+    "reason": "原文对象“亚美尼亚人”与Amish/Mennonite社区的对应缺乏原文或可靠材料证明，所引证据均为印第安纳、明尼苏达、宾夕法尼亚等地Amish个案，未覆盖Kalona本地，无法确认属于原命题所指集合。对象归属不清，按规则保留暂无法判断。",
+    "limitation": "关键修订：原判部分符合依赖未证实的对象代理，且trend_aligned=true缺乏持续方向证据；现改为归属不明暂无法判断。已引案例仅证明其他地区Amish因强制污水接入产生诉讼，不能直接算作原文集合的后果。",
+    "evidence_ids": [
+      "ev-14d5fe61c98dc054aaab6493",
+      "ev-e44ae3a005b68cb856d482b1",
+      "ev-c633dc8ed628e42879f70915",
+      "ev-d8727b6cd61f167cb712d012",
+      "ev-7e9ff03f1e2a4967a505bee6"
+    ],
+    "method": "从文化认同冲突推断强制政策成本",
+    "method_basis": "inferred",
+    "observation_end": "2021-05-25",
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-14d5fe61c98dc054aaab6493",
+        "relation": "boundary",
+        "quote": "[Adams County] was forcing the Amish to hook up to a sewer system and, as you know, they don’t believe in using electricity due to religious beliefs.",
+        "publication_date": "2021-04-24",
+        "observation_end": "2021-04-24",
+        "limitation": "Adams County个案，非Kalona本地，不能证明属于原文“亚美尼亚人”集合；仅证明诉讼发生，未量化政府压力。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-e44ae3a005b68cb856d482b1",
+        "relation": "boundary",
+        "quote": "Plaintiffs, adherents to the Amish faith, seek a declaratory judgment and injunction from the Court preventing Defendant from forcing them to connect to a sanitary sewer system.",
+        "publication_date": "2021-05-25",
+        "observation_end": "2021-05-25",
+        "limitation": "法院文书证明诉讼存在，但为程序性裁定，未反映最终结果或政府净成本；对象为印第安纳Amish，非原文集合。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-c633dc8ed628e42879f70915",
+        "relation": "boundary",
+        "quote": "Four Swartzentruber Amish families are in court against the Minnesota Pollution Control Agency and Fillmore County.",
+        "publication_date": "2019-02-10",
+        "observation_end": "2019-02-10",
+        "limitation": "明尼苏达个案，非Kalona；仅证明冲突进入诉讼，未量化压力，不能证明属于原文集合。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-d8727b6cd61f167cb712d012",
+        "relation": "boundary",
+        "quote": "A split three-judge panel representing a Pennsylvania appellate court has ordered an Old Order Amish family, whose religious beliefs frown upon the use of electricity, to connect to a municipal sewer through an electric grinder pump.",
+        "publication_date": "2018-01-16",
+        "observation_end": "2018-01-16",
+        "limitation": "宾州个案，法院判政府胜诉，说明强制可推进但伴随诉讼成本；非Kalona本地，不能证明属于原文集合。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-7e9ff03f1e2a4967a505bee6",
+        "relation": "boundary",
+        "quote": "This mandatory sewer connection matter returns to us after remand.",
+        "publication_date": null,
+        "observation_end": "2018-01-05",
+        "limitation": "宾州法院文书，日期元数据缺失，仅据正文FILED January 5, 2018；个案非Kalona，不能证明属于原文集合。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      }
+    ],
+    "remaining_gap": "缺少能证明原文“亚美尼亚人”与Kalona一带Amish/Mennonite社区为同一集合的原文或可靠材料，也缺少直接针对该集合在1991年后遭遇政府强制现代化及政府压力（诉讼成本、行政负担）的本地证据。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000017953-000017982",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象：原文所称“亚美尼亚人”（按上下文及既有材料高可信对应爱荷华Kalona一带Amish/Mennonite社区，但原文未明说，属合理代理）。口径：1991年后是否出现政府强制现代化措施（如强制接入现代污水/卫生系统），以及该措施是否给政府带来额外压力（诉讼、行政成本、政治争议）。观察时段：1991年至cutoff 2026-11-09，实际可用证据集中在2018—2021年。",
+    "reason": "证据显示政府强制Amish接入现代污水系统后，确实引发诉讼与持续争议（Adams County、Fillmore County、Pennsylvania Yoder案），与“强制现代化会增加政府压力”的方向一致。但原文对象是“亚美尼亚人”，材料对应的是Amish/Mennonite社区，属代理对象，且未覆盖Kalona本地，故只能判部分符合。",
+    "limitation": "原文“亚美尼亚人”与Amish/Mennonite的对应是既有材料的高可信推断，非原文明确；证据多为其他州案例，未直接观察Kalona本地。强制措施也带来公共卫生收益，原文未量化“压力”与“收益”的净比较。",
+    "evidence_ids": [
+      "ev-14d5fe61c98dc054aaab6493",
+      "ev-e44ae3a005b68cb856d482b1",
+      "ev-c633dc8ed628e42879f70915",
+      "ev-d8727b6cd61f167cb712d012",
+      "ev-7e9ff03f1e2a4967a505bee6"
+    ],
+    "method": "从文化认同冲突推断强制政策成本",
+    "method_basis": "inferred",
+    "observation_end": "2021-05-25",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-14d5fe61c98dc054aaab6493",
+        "relation": "support",
+        "quote": "[Adams County] was forcing the Amish to hook up to a sewer system and, as you know, they don’t believe in using electricity due to religious beliefs.",
+        "publication_date": "2021-04-24",
+        "observation_end": "2021-04-24",
+        "limitation": "报道为2021年，属Adams County个案，非Kalona本地；仅证明诉讼发生，未量化政府压力。"
+      },
+      {
+        "evidence_id": "ev-e44ae3a005b68cb856d482b1",
+        "relation": "support",
+        "quote": "Plaintiffs, adherents to the Amish faith, seek a declaratory judgment and injunction from the Court preventing Defendant from forcing them to connect to a sanitary sewer system.",
+        "publication_date": "2021-05-25",
+        "observation_end": "2021-05-25",
+        "limitation": "法院文书证明诉讼存在，但为程序性裁定，未反映最终结果或政府净成本。"
+      },
+      {
+        "evidence_id": "ev-c633dc8ed628e42879f70915",
+        "relation": "support",
+        "quote": "Four Swartzentruber Amish families are in court against the Minnesota Pollution Control Agency and Fillmore County.",
+        "publication_date": "2019-02-10",
+        "observation_end": "2019-02-10",
+        "limitation": "明尼苏达个案，非Kalona；仅证明冲突进入诉讼，未量化压力。"
+      },
+      {
+        "evidence_id": "ev-d8727b6cd61f167cb712d012",
+        "relation": "support",
+        "quote": "A split three-judge panel representing a Pennsylvania appellate court has ordered an Old Order Amish family, whose religious beliefs frown upon the use of electricity, to connect to a municipal sewer through an electric grinder pump.",
+        "publication_date": "2018-01-16",
+        "observation_end": "2018-01-16",
+        "limitation": "宾州个案，且法院判政府胜诉，说明强制可推进但伴随诉讼成本；非Kalona本地。"
+      },
+      {
+        "evidence_id": "ev-7e9ff03f1e2a4967a505bee6",
+        "relation": "support",
+        "quote": "This mandatory sewer connection matter returns to us after remand.",
+        "publication_date": null,
+        "observation_end": "2018-01-05",
+        "limitation": "宾州法院文书，日期元数据缺失，仅据正文FILED January 5, 2018；个案非Kalona。"
+      }
+    ],
+    "remaining_gap": "缺少直接针对爱荷华Kalona一带Amish/Mennonite社区在1991年后遭遇政府强制现代化的本地证据，以及政府压力（诉讼成本、行政负担）的量化比较。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-cb759426a6df77ee5d43",
+      "url": "https://www.cityofkalona.org/index.asp?SEC=D5DB9FC7-80F0-474D-909C-D23D56F09F4B",
+      "title": "ev-r2-l1-kalona",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-kalona",
+      "archive_sha256": "a29e24575d040cb06603fecddc75367fe1cb7cd8c1b6497b0625b9590e1247ea",
+      "archive_path": "data/sources/r2-l1-kalona.html",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-d4de8fd7cec52da95ff8",
+      "url": "https://ci.nii.ac.jp/ncid/BD19923744",
+      "title": "ev-r2-l1-amish-book",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-amish-book",
+      "archive_sha256": "733716be86bfc46e558825442b27616efc834b9ea8ef716b785a743168e4bc6e",
+      "archive_path": "data/sources/r2-l1-nie-book.html",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-5a3fc63c72a7a2f3ca2b",
+      "url": "https://www.nps.gov/subjects/travelamanacolonies/index.htm",
+      "title": "ev-r2-l1-amana",
+      "published_date": "2018-01-04",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2018-01-04",
+        "latest": "2018-01-04"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-amana",
+      "archive_sha256": "9d836424c03e589bbbdc28d08b0da7fb50bcf07e6816f5c6888bab05668cbaa2",
+      "archive_path": "data/sources/r2-l1-amana.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-0ccc287eb7b998562076",
+      "url": "https://www.supremecourt.gov/opinions/20pdf/20-7028_o758.pdf",
+      "title": "ev-r2-l1-mast",
+      "published_date": "2021-07-02",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2021-07-02",
+        "latest": "2021-07-02"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-mast",
+      "archive_sha256": "96d64c51cd8e15fc22d2662008fe6c3ad7fd2db79457cf825c09eae1700d2402",
+      "archive_path": "data/sources/r2-l1-mast.pdf",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a8617b8f3ab17a74de670dac",
+      "url": "https://amishamerica.com/adams-county-amish-must-connect-to-sewer-system-amish-respond-with-lawsuit/",
+      "resolved_url": "https://amishamerica.com/adams-county-amish-must-connect-to-sewer-system-amish-respond-with-lawsuit/",
+      "title": "Adams County: Amish Must Connect To Sewer System. Amish Respond With Lawsuit - Amish America",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:20.291765+00:00",
+      "archive_sha256": "54a11145b573e42098df8597b3023c676ad027a05ad484e9bf08fe9c7691522b",
+      "archive_path": "jobs/4e78e1ab9f17a2496bef3786/54a11145b573e42098df8597b3023c676ad027a05ad484e9bf08fe9c7691522b.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c633dc8ed628e42879f70915",
+      "url": "https://apnews.com/article/religion-minnesota-amish-661e28f32f374fa8b443259494bd49ab",
+      "resolved_url": "https://apnews.com/article/religion-minnesota-amish-661e28f32f374fa8b443259494bd49ab",
+      "title": "Minnesota needs a better understanding of greywater | AP News",
+      "published_date": "2019-02-10",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2019-02-10",
+        "latest": "2019-02-10"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:20.291887+00:00",
+      "archive_sha256": "4b015b11dc03bad5409437b0bc9f254542f9d845cbac4f99ee3f021d90fa5a7c",
+      "archive_path": "jobs/4e78e1ab9f17a2496bef3786/4b015b11dc03bad5409437b0bc9f254542f9d845cbac4f99ee3f021d90fa5a7c.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-f26336fde4a8d89fdb8e8a70",
+      "url": "https://www.pbs.org/wgbh/americanexperience/features/amish-in-america/",
+      "resolved_url": "https://www.pbs.org/wgbh/americanexperience/features/amish-in-america/",
+      "title": "Amish in America | American Experience | Official Site | PBS",
+      "published_date": "2017-07-24",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2017-07-24",
+        "latest": "2017-07-24"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:20.291982+00:00",
+      "archive_sha256": "36ba3df99539f7c377251cc30832b9fc9cdfbe036eab0a52863657c4cc937571",
+      "archive_path": "jobs/4e78e1ab9f17a2496bef3786/36ba3df99539f7c377251cc30832b9fc9cdfbe036eab0a52863657c4cc937571.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-6d1d9f13ba13337bbd641c93",
+      "url": "https://iowacapitaldispatch.com/2021/08/21/iowas-amish-have-some-lessons-for-us-about-todays-covid-controversies/",
+      "resolved_url": "https://iowacapitaldispatch.com/2021/08/21/iowas-amish-have-some-lessons-for-us-about-todays-covid-controversies/",
+      "title": "Iowa’s Amish have some lessons for us about today’s COVID controversies • Iowa Capital Dispatch",
+      "published_date": "2021-08-21",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2021-08-21",
+        "latest": "2021-08-21"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:20.292073+00:00",
+      "archive_sha256": "fecd342eeb8abe2066328d5fb16859ec62389e8d45b2ce6a364b0bc823f4e769",
+      "archive_path": "jobs/4e78e1ab9f17a2496bef3786/fecd342eeb8abe2066328d5fb16859ec62389e8d45b2ce6a364b0bc823f4e769.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-14d5fe61c98dc054aaab6493",
+      "url": "https://www.wane.com/news/amish-families-suing-adams-co-over-first-amendment-rights-after-being-forced-to-hook-up-to-sewer/",
+      "resolved_url": "https://www.wane.com/news/amish-families-suing-adams-co-over-first-amendment-rights-after-being-forced-to-hook-up-to-sewer/",
+      "title": "Amish families suing Adams Co. over First Amendment rights after being ‘forced’ to hook up to sewer | WANE 15",
+      "published_date": "2021-04-24",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2021-04-24",
+        "latest": "2021-04-24"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:30.474937+00:00",
+      "archive_sha256": "0a6905af5ec9dee14fada4c882ab3dc1a21357705d3d9050a0cdbf3cc9cd8273",
+      "archive_path": "jobs/4e78e1ab9f17a2496bef3786/0a6905af5ec9dee14fada4c882ab3dc1a21357705d3d9050a0cdbf3cc9cd8273.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e44ae3a005b68cb856d482b1",
+      "url": "https://exa.ai/library/legal/opinion/fc2m2d28gxl",
+      "resolved_url": "https://exa.ai/library/legal/opinion/fc2m2d28gxl",
+      "title": "Schwartz v. Adams County Regional Sewer District (trial court document), District Court, N.D. Indiana, 2021",
+      "published_date": "2021-05-25",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2021-05-25",
+        "latest": "2021-05-25"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:30.475104+00:00",
+      "archive_sha256": "765f5ab80e424d271a3adf356398c4d847874c5eb93dfee6aebc7305132400d1",
+      "archive_path": "jobs/4e78e1ab9f17a2496bef3786/765f5ab80e424d271a3adf356398c4d847874c5eb93dfee6aebc7305132400d1.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-7e9ff03f1e2a4967a505bee6",
+      "url": "https://www.pacourts.us/assets/opinions/Commonwealth/out/1927cd16_1-5-18.pdf",
+      "resolved_url": "https://www.pacourts.us/assets/opinions/Commonwealth/out/1927cd16_1-5-18.pdf",
+      "title": "BEFORE: HONORABLE ROBERT SIMPSON, Judge HONORABLE PATRICIA A. McCULLOUGH, Judge HONORABLE DAN PELLEGRINI, Senior Judge",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:30.475234+00:00",
+      "archive_sha256": "250ce9e211c6089517b55ccac6e916299fb08c75924bb7cae1ec15272af26406",
+      "archive_path": "jobs/4e78e1ab9f17a2496bef3786/250ce9e211c6089517b55ccac6e916299fb08c75924bb7cae1ec15272af26406.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d8727b6cd61f167cb712d012",
+      "url": "https://www.abajournal.com/news/article/pennsylvania_court_orders_amish_family_to_use_electric_sewer_pump",
+      "resolved_url": "https://www.abajournal.com/news/article/pennsylvania_court_orders_amish_family_to_use_electric_sewer_pump",
+      "title": "Amish family ordered by state appellate court to use electric sewer pump",
+      "published_date": "2018-01-16",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2018-01-16",
+        "latest": "2018-01-16"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:30.475335+00:00",
+      "archive_sha256": "a1858f6fc8de9cda0eeefa6c62db5930fa67bca74e8e8159c2f50a20c77eeb16",
+      "archive_path": "jobs/4e78e1ab9f17a2496bef3786/a1858f6fc8de9cda0eeefa6c62db5930fa67bca74e8e8159c2f50a20c77eeb16.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "Amish Mennonite Kalona Iowa government forced modernization sewage lawsuit conflict",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Amish community government regulation modernization successful cooperation no litigation Iowa",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Amish Adams County Indiana sewer district lawsuit religious freedom 2021 forced connection",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Amish Pennsylvania sewer requirement lawsuit 2018 lost court ruling government prevailed",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-7e9ff03f1e2a4967a505bee6"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "remaining_gap": "缺少能证明原文“亚美尼亚人”与Kalona一带Amish/Mennonite社区为同一集合的原文或可靠材料，也缺少直接针对该集合在1991年后遭遇政府强制现代化及政府压力（诉讼成本、行政负担）的本地证据。",
+  "source_statuses": [
+    {
+      "url": "https://amishamerica.com/adams-county-amish-must-connect-to-sewer-system-amish-respond-with-lawsuit/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://apnews.com/article/religion-minnesota-amish-661e28f32f374fa8b443259494bd49ab",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.pbs.org/wgbh/americanexperience/features/amish-in-america/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://iowacapitaldispatch.com/2021/08/21/iowas-amish-have-some-lessons-for-us-about-todays-covid-controversies/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.wane.com/news/amish-families-suing-adams-co-over-first-amendment-rights-after-being-forced-to-hook-up-to-sewer/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://exa.ai/library/legal/opinion/fc2m2d28gxl",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.pacourts.us/assets/opinions/Commonwealth/out/1927cd16_1-5-18.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.abajournal.com/news/article/pennsylvania_court_orders_amish_family_to_use_electric_sewer_pump",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "8da079d277b7d55c5629acfcedf5434c1725d3553ddff6831fdb88e36b2afd90"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "2bc209699bb825ebdcb71cd98c6b9196",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "c8132e65656fe28c4a0c93ce3c27fe26",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "d73194df84b59cde823b20e6b9ba22eee4abfdc293bae4a29c7edcd9e383b719"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "b4673c3ae72d8da859c4f815622d63b9",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "38e7c71f418ff2f067c53e71e89aacf9704de4fd87d82c3d65a0ec7f518c596e"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "59843dd1d2fcf774404e8996db96e492",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "2eb1fdd4a9b67044edd8e6d501377e8a",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "5ed2dedb2405bb6037810eb8d85844e98a97ef7ff09a0d917470b761312ee984"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "832e3c7d03a796dca884b2504e9733cb",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "d56ce7b5c25e3a65e72115a3d1b953df34d5be1cab7164022d566cc1c84fec44"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "617fd8889060561bc624b96bc725cdfa3f7b18726747940f9d684d67646ef0c2"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "643c7ba6fb79f297f311c77d61f779bc7eedab193b7eedba998e48a9da02fbdc"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "164be6b0bcefe71352f97b12ef59e2f43455016fda35965776963ed247a906bb"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-7e9ff03f1e2a4967a505bee6"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-7e9ff03f1e2a4967a505bee6"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-cb759426a6df77ee5d43",
+        "source_bytes": 112,
+        "shown_bytes": 112,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-d4de8fd7cec52da95ff8",
+        "source_bytes": 160,
+        "shown_bytes": 160,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-5a3fc63c72a7a2f3ca2b",
+        "source_bytes": 172,
+        "shown_bytes": 172,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-0ccc287eb7b998562076",
+        "source_bytes": 218,
+        "shown_bytes": 218,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-a8617b8f3ab17a74de670dac",
+        "source_bytes": 12133,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c633dc8ed628e42879f70915",
+        "source_bytes": 621,
+        "shown_bytes": 621,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-f26336fde4a8d89fdb8e8a70",
+        "source_bytes": 12000,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-6d1d9f13ba13337bbd641c93",
+        "source_bytes": 6806,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-14d5fe61c98dc054aaab6493",
+        "source_bytes": 4765,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e44ae3a005b68cb856d482b1",
+        "source_bytes": 12115,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-7e9ff03f1e2a4967a505bee6",
+        "source_bytes": 12074,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d8727b6cd61f167cb712d012",
+        "source_bytes": 2238,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-cb759426a6df77ee5d43",
+        "source_bytes": 112,
+        "shown_bytes": 112,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-d4de8fd7cec52da95ff8",
+        "source_bytes": 160,
+        "shown_bytes": 160,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-5a3fc63c72a7a2f3ca2b",
+        "source_bytes": 172,
+        "shown_bytes": 172,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-0ccc287eb7b998562076",
+        "source_bytes": 218,
+        "shown_bytes": 218,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-a8617b8f3ab17a74de670dac",
+        "source_bytes": 12133,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c633dc8ed628e42879f70915",
+        "source_bytes": 621,
+        "shown_bytes": 621,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-f26336fde4a8d89fdb8e8a70",
+        "source_bytes": 12000,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-6d1d9f13ba13337bbd641c93",
+        "source_bytes": 6806,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-14d5fe61c98dc054aaab6493",
+        "source_bytes": 4765,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e44ae3a005b68cb856d482b1",
+        "source_bytes": 12115,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-7e9ff03f1e2a4967a505bee6",
+        "source_bytes": 12074,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d8727b6cd61f167cb712d012",
+        "source_bytes": 2238,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-cb759426a6df77ee5d43",
+        "source_bytes": 112,
+        "shown_bytes": 112,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-d4de8fd7cec52da95ff8",
+        "source_bytes": 160,
+        "shown_bytes": 160,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-5a3fc63c72a7a2f3ca2b",
+        "source_bytes": 172,
+        "shown_bytes": 172,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-0ccc287eb7b998562076",
+        "source_bytes": 218,
+        "shown_bytes": 218,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-a8617b8f3ab17a74de670dac",
+        "source_bytes": 12133,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c633dc8ed628e42879f70915",
+        "source_bytes": 621,
+        "shown_bytes": 621,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-f26336fde4a8d89fdb8e8a70",
+        "source_bytes": 12000,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-6d1d9f13ba13337bbd641c93",
+        "source_bytes": 6806,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-14d5fe61c98dc054aaab6493",
+        "source_bytes": 4765,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e44ae3a005b68cb856d482b1",
+        "source_bytes": 12115,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-7e9ff03f1e2a4967a505bee6",
+        "source_bytes": 12074,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d8727b6cd61f167cb712d012",
+        "source_bytes": 2238,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-cb759426a6df77ee5d43",
+        "source_bytes": 112,
+        "shown_bytes": 112,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-d4de8fd7cec52da95ff8",
+        "source_bytes": 160,
+        "shown_bytes": 160,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-5a3fc63c72a7a2f3ca2b",
+        "source_bytes": 172,
+        "shown_bytes": 172,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-0ccc287eb7b998562076",
+        "source_bytes": 218,
+        "shown_bytes": 218,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-a8617b8f3ab17a74de670dac",
+        "source_bytes": 12133,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c633dc8ed628e42879f70915",
+        "source_bytes": 621,
+        "shown_bytes": 621,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-f26336fde4a8d89fdb8e8a70",
+        "source_bytes": 12000,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-6d1d9f13ba13337bbd641c93",
+        "source_bytes": 6806,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-14d5fe61c98dc054aaab6493",
+        "source_bytes": 4765,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e44ae3a005b68cb856d482b1",
+        "source_bytes": 12115,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-7e9ff03f1e2a4967a505bee6",
+        "source_bytes": 12074,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d8727b6cd61f167cb712d012",
+        "source_bytes": 2238,
+        "shown_bytes": 1916,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000017953-000017982",
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "原文对象是“亚美尼亚人”，建议将其代理为爱荷华Kalona一带Amish/Mennonite社区，但所引证据全部是印第安纳、明尼苏达、宾夕法尼亚等地的Amish个案，没有任何证据证明这些案例属于原文所指的“亚美尼亚人”集合或Kalona本地社区。代理对象与取证对象之间缺少成员对应证据，不能把其他地区Amish的诉讼直接算作原集合的后果。",
+          "quote_ref": "q0",
+          "source_quote": "如果政府强迫亚美尼亚人接受现代化，那它只会给自己增加压力。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "book"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议以“对象属代理、未覆盖Kalona本地”为由判“部分符合”，但部分符合应指后果B的具体分项有实质分化（哪些实现、哪些未实现）。这里后果B（政府压力）在已引案例中方向一致，对象偏离属于对象对应问题，应保留为未定或明确限定，而不是用对象代理缺口制造“部分符合”。同时trend_aligned=true与“部分符合”并列，缺乏持续方向证据支撑终点判断。",
+          "quote_ref": "q2",
+          "source_quote": "对象：原文所称“亚美尼亚人”（按上下文及既有材料高可信对应爱荷华Kalona一带Amish/Mennonite社区，但原文未明说，属合理代理）。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充能证明原文“亚美尼亚人”与Kalona一带Amish/Mennonite社区为同一集合的原文或可靠材料，或直接针对该集合的政府强制现代化及政府压力证据；若无法建立成员对应，应改为暂无法判断并说明对象缺口，而非部分符合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000017953-000017982",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000017953-000017982",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象：原文所称“亚美尼亚人”（按上下文及既有材料高可信对应爱荷华Kalona一带Amish/Mennonite社区，但原文未明说，属合理代理）。口径：1991年后是否出现政府强制现代化措施（如强制接入现代污水/卫生系统），以及该措施是否给政府带来额外压力（诉讼、行政成本、政治争议）。观察时段：1991年至cutoff 2026-11-09，实际可用证据集中在2018—2021年。",
+      "reason": "证据显示政府强制Amish接入现代污水系统后，确实引发诉讼与持续争议（Adams County、Fillmore County、Pennsylvania Yoder案），与“强制现代化会增加政府压力”的方向一致。但原文对象是“亚美尼亚人”，材料对应的是Amish/Mennonite社区，属代理对象，且未覆盖Kalona本地，故只能判部分符合。",
+      "limitation": "原文“亚美尼亚人”与Amish/Mennonite的对应是既有材料的高可信推断，非原文明确；证据多为其他州案例，未直接观察Kalona本地。强制措施也带来公共卫生收益，原文未量化“压力”与“收益”的净比较。",
+      "evidence_ids": [
+        "ev-14d5fe61c98dc054aaab6493",
+        "ev-e44ae3a005b68cb856d482b1",
+        "ev-c633dc8ed628e42879f70915",
+        "ev-d8727b6cd61f167cb712d012",
+        "ev-7e9ff03f1e2a4967a505bee6"
+      ],
+      "method": "从文化认同冲突推断强制政策成本",
+      "method_basis": "inferred",
+      "observation_end": "2021-05-25",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-14d5fe61c98dc054aaab6493",
+          "relation": "support",
+          "quote": "[Adams County] was forcing the Amish to hook up to a sewer system and, as you know, they don’t believe in using electricity due to religious beliefs.",
+          "publication_date": "2021-04-24",
+          "observation_end": "2021-04-24",
+          "limitation": "报道为2021年，属Adams County个案，非Kalona本地；仅证明诉讼发生，未量化政府压力。"
+        },
+        {
+          "evidence_id": "ev-e44ae3a005b68cb856d482b1",
+          "relation": "support",
+          "quote": "Plaintiffs, adherents to the Amish faith, seek a declaratory judgment and injunction from the Court preventing Defendant from forcing them to connect to a sanitary sewer system.",
+          "publication_date": "2021-05-25",
+          "observation_end": "2021-05-25",
+          "limitation": "法院文书证明诉讼存在，但为程序性裁定，未反映最终结果或政府净成本。"
+        },
+        {
+          "evidence_id": "ev-c633dc8ed628e42879f70915",
+          "relation": "support",
+          "quote": "Four Swartzentruber Amish families are in court against the Minnesota Pollution Control Agency and Fillmore County.",
+          "publication_date": "2019-02-10",
+          "observation_end": "2019-02-10",
+          "limitation": "明尼苏达个案，非Kalona；仅证明冲突进入诉讼，未量化压力。"
+        },
+        {
+          "evidence_id": "ev-d8727b6cd61f167cb712d012",
+          "relation": "support",
+          "quote": "A split three-judge panel representing a Pennsylvania appellate court has ordered an Old Order Amish family, whose religious beliefs frown upon the use of electricity, to connect to a municipal sewer through an electric grinder pump.",
+          "publication_date": "2018-01-16",
+          "observation_end": "2018-01-16",
+          "limitation": "宾州个案，且法院判政府胜诉，说明强制可推进但伴随诉讼成本；非Kalona本地。"
+        },
+        {
+          "evidence_id": "ev-7e9ff03f1e2a4967a505bee6",
+          "relation": "support",
+          "quote": "This mandatory sewer connection matter returns to us after remand.",
+          "publication_date": null,
+          "observation_end": "2018-01-05",
+          "limitation": "宾州法院文书，日期元数据缺失，仅据正文FILED January 5, 2018；个案非Kalona。"
+        }
+      ],
+      "remaining_gap": "缺少直接针对爱荷华Kalona一带Amish/Mennonite社区在1991年后遭遇政府强制现代化的本地证据，以及政府压力（诉讼成本、行政负担）的量化比较。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000017953-000017982",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "attribution",
+      "scope": "对象：原文所称“亚美尼亚人”（上下文指向爱荷华Kalona一带Amish/Mennonite社区，但原文未明说，属未证实的代理）。口径：1991年后是否出现政府强制现代化措施，以及该措施是否给政府带来额外压力（诉讼、行政成本、政治争议）。观察时段：1991年至cutoff 2026-11-09，可用证据集中在2018—2021年。",
+      "reason": "原文对象“亚美尼亚人”与Amish/Mennonite社区的对应缺乏原文或可靠材料证明，所引证据均为印第安纳、明尼苏达、宾夕法尼亚等地Amish个案，未覆盖Kalona本地，无法确认属于原命题所指集合。对象归属不清，按规则保留暂无法判断。",
+      "limitation": "关键修订：原判部分符合依赖未证实的对象代理，且trend_aligned=true缺乏持续方向证据；现改为归属不明暂无法判断。已引案例仅证明其他地区Amish因强制污水接入产生诉讼，不能直接算作原文集合的后果。",
+      "evidence_ids": [
+        "ev-14d5fe61c98dc054aaab6493",
+        "ev-e44ae3a005b68cb856d482b1",
+        "ev-c633dc8ed628e42879f70915",
+        "ev-d8727b6cd61f167cb712d012",
+        "ev-7e9ff03f1e2a4967a505bee6"
+      ],
+      "method": "从文化认同冲突推断强制政策成本",
+      "method_basis": "inferred",
+      "observation_end": "2021-05-25",
+      "future_time_text": "",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-14d5fe61c98dc054aaab6493",
+          "relation": "boundary",
+          "quote": "[Adams County] was forcing the Amish to hook up to a sewer system and, as you know, they don’t believe in using electricity due to religious beliefs.",
+          "publication_date": "2021-04-24",
+          "observation_end": "2021-04-24",
+          "limitation": "Adams County个案，非Kalona本地，不能证明属于原文“亚美尼亚人”集合；仅证明诉讼发生，未量化政府压力。"
+        },
+        {
+          "evidence_id": "ev-e44ae3a005b68cb856d482b1",
+          "relation": "boundary",
+          "quote": "Plaintiffs, adherents to the Amish faith, seek a declaratory judgment and injunction from the Court preventing Defendant from forcing them to connect to a sanitary sewer system.",
+          "publication_date": "2021-05-25",
+          "observation_end": "2021-05-25",
+          "limitation": "法院文书证明诉讼存在，但为程序性裁定，未反映最终结果或政府净成本；对象为印第安纳Amish，非原文集合。"
+        },
+        {
+          "evidence_id": "ev-c633dc8ed628e42879f70915",
+          "relation": "boundary",
+          "quote": "Four Swartzentruber Amish families are in court against the Minnesota Pollution Control Agency and Fillmore County.",
+          "publication_date": "2019-02-10",
+          "observation_end": "2019-02-10",
+          "limitation": "明尼苏达个案，非Kalona；仅证明冲突进入诉讼，未量化压力，不能证明属于原文集合。"
+        },
+        {
+          "evidence_id": "ev-d8727b6cd61f167cb712d012",
+          "relation": "boundary",
+          "quote": "A split three-judge panel representing a Pennsylvania appellate court has ordered an Old Order Amish family, whose religious beliefs frown upon the use of electricity, to connect to a municipal sewer through an electric grinder pump.",
+          "publication_date": "2018-01-16",
+          "observation_end": "2018-01-16",
+          "limitation": "宾州个案，法院判政府胜诉，说明强制可推进但伴随诉讼成本；非Kalona本地，不能证明属于原文集合。"
+        },
+        {
+          "evidence_id": "ev-7e9ff03f1e2a4967a505bee6",
+          "relation": "boundary",
+          "quote": "This mandatory sewer connection matter returns to us after remand.",
+          "publication_date": null,
+          "observation_end": "2018-01-05",
+          "limitation": "宾州法院文书，日期元数据缺失，仅据正文FILED January 5, 2018；个案非Kalona，不能证明属于原文集合。"
+        }
+      ],
+      "remaining_gap": "缺少能证明原文“亚美尼亚人”与Kalona一带Amish/Mennonite社区为同一集合的原文或可靠材料，也缺少直接针对该集合在1991年后遭遇政府强制现代化及政府压力（诉讼成本、行政负担）的本地证据。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象：王沪宁《美国反对美国》中所述“亚美尼亚人”（据上下文及既有材料高可信指爱荷华Kalona一带Amish/Mennonite社区）在1991年后遭遇政府强制现代化（如强制接入现代污水/卫生系统）时的后果。可观察口径：是否出现政府强制现代化措施，以及该措施是否给政府带来额外压力（诉讼、行政成本、政治争议等）。反证：若存在政府强制现代化且未产生额外压力、或强制带来明显净收益而无持续冲突，则削弱原判断。",
+  "elapsed_seconds": 42.669,
+  "completed_at": "2026-11-09T10:32:50.810686+00:00"
+}

@@ -1,0 +1,647 @@
+{
+  "claim_id": "txt-1c4066fc0c-000174915-000175001",
+  "version": "search-verifier-v1",
+  "input_sha256": "0e786f84329120331e89912fd34026e1662ea57b1a7464e11146f9e5fc30698a",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000174915-000175001",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "以美国为主的工作场所数字监控/算法管理是否持续扩展，以及其与员工压力、焦虑、自主性等心理指标的关系；观察时段为1991年出版至2026-11-09截止日前的可得证据。",
+    "reason": "现有证据可支持前提A：算法管理与电子监控在职场广泛采用并扩展，且与紧张/压力呈小幅正相关、与工作态度呈小幅负相关。但后果B“技术化合理化对人的心灵压抑会强化、协调内心世界将长期是西方社会难题”缺少直接、纵向的心理压抑测量；效应量小、受调节因素影响，并存在提升安全感、决策质量等混合证据，无法确认单调强化趋势。",
+    "limitation": "原文“内心世界难以协调”“长期难题”属宏观心理哲学判断，难以精确操作化；现有证据多为横断面关联，不能证明因果或长期单调强化。关键修订：移除仅提供标题、未呈现效应方向的元分析作为支持证据，并将trend_aligned改为false、verdict改为暂无法判断。",
+    "evidence_ids": [
+      "prior-b2a69c09f2b505448569",
+      "prior-ea0ab67e707e8d9e64cf",
+      "ev-61f4ed6dcff49e33764c8702",
+      "ev-2c60eb6499b5aaf24c294dcf",
+      "ev-e09ab5e56ad4197fdb3703fa"
+    ],
+    "method": "从技术化、自动化管理推演心理压抑的累积",
+    "method_basis": "explicit",
+    "observation_end": "2026-11-09",
+    "future_time_text": "很长时期内",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-b2a69c09f2b505448569",
+        "relation": "support",
+        "quote": "数字监控随远程工作与技术选择扩展而更普遍；可增加压力焦虑，也可提升安全感，效果依雇主实践。",
+        "publication_date": "2025-12-10",
+        "observation_end": null,
+        "limitation": "同时指出可提升安全感，效果依雇主实践，非单调强化。"
+      },
+      {
+        "evidence_id": "prior-ea0ab67e707e8d9e64cf",
+        "relation": "support",
+        "quote": "ILO定义算法管理为以追踪数据组织、分派、监督与评价工作；指出功能委托跨客服、运输、物流、金融和医疗行业扩展，人与管理者/同事接触可能减少。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "仅证明算法管理扩展与接触减少，未直接测量心理压抑；发表日期未知。"
+      },
+      {
+        "evidence_id": "ev-61f4ed6dcff49e33764c8702",
+        "relation": "support",
+        "quote": "Workers’ reports of automated surveillance and monitoring are widespread across the U.S. workforce, cutting across earnings, educational, industry, and occupational lines and affecting more than two-thirds of workers",
+        "publication_date": "2024-10-01",
+        "observation_end": null,
+        "limitation": "为美国横断面调查，关联不等于因果，且未覆盖长期趋势。"
+      },
+      {
+        "evidence_id": "ev-2c60eb6499b5aaf24c294dcf",
+        "relation": "support",
+        "quote": "While the overall impact of monitoring on performance appears neutral, a small positive correlation can be observed with strain, and a small negative correlation can be observed with job attitudes.",
+        "publication_date": "2025-01-21",
+        "observation_end": null,
+        "limitation": "效应量小且受调节因素影响，不能证明单调强化。"
+      },
+      {
+        "evidence_id": "ev-e09ab5e56ad4197fdb3703fa",
+        "relation": "boundary",
+        "quote": "Algorithmic management, software that automates or supports managerial tasks, is widely adopted across countries covered by a recent OECD employer survey. It is particularly prevalent in the United States, where 90% of managers say their firms have adopted at least one tool to instruct, monitor or evaluate workers.",
+        "publication_date": "2025-12-19",
+        "observation_end": null,
+        "limitation": "同时指出工具可提升决策质量，且近三分之二管理者担忧对工人的影响，正负并存，不能单独证明心理压抑强化。"
+      }
+    ],
+    "remaining_gap": "缺少直接测量“技术化合理化导致内心压抑长期强化”的纵向心理指标；现有证据多为横断面关联与小幅效应，且存在反向证据，无法确认单调强化趋势。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000174915-000175001",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以美国为主的工作场所数字监控/算法管理扩展及其与员工压力、焦虑、自主性等心理指标的关系；观察时段为1991年出版至2026-11-09截止日前的可得证据。",
+    "reason": "证据显示算法管理与电子监控在职场持续扩展（美国约九成管理者报告采用至少一种工具，监控覆盖超三分之二工人），且元分析与综述普遍发现监控与压力/紧张呈小幅正相关、与工作态度呈小幅负相关，方向与“技术化合理化强化心理压抑”一致。但效应量普遍偏小、受调节因素影响，且存在提升安全感、决策质量等反向或混合证据，故只能判部分符合。",
+    "limitation": "原文“内心世界难以协调”“长期难题”属宏观心理哲学判断，难以精确操作化；现有证据多为横断面关联，不能证明因果或单调强化，且部分指标（如青少年心理）近期改善，不能直接对应职场技术管理。",
+    "evidence_ids": [
+      "prior-b2a69c09f2b505448569",
+      "prior-ea0ab67e707e8d9e64cf",
+      "ev-61f4ed6dcff49e33764c8702",
+      "ev-2c60eb6499b5aaf24c294dcf",
+      "ev-e09ab5e56ad4197fdb3703fa",
+      "ev-9fb3d22eae0f5beeaa416c2e"
+    ],
+    "method": "从技术化、自动化管理推演心理压抑的累积",
+    "method_basis": "explicit",
+    "observation_end": "2026-11-09",
+    "future_time_text": "很长时期内",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-b2a69c09f2b505448569",
+        "relation": "support",
+        "quote": "数字监控随远程工作与技术选择扩展而更普遍；可增加压力焦虑，也可提升安全感，效果依雇主实践。",
+        "publication_date": "2025-12-10",
+        "observation_end": null,
+        "limitation": "同时指出可提升安全感，效果依雇主实践，非单调强化。"
+      },
+      {
+        "evidence_id": "prior-ea0ab67e707e8d9e64cf",
+        "relation": "support",
+        "quote": "ILO定义算法管理为以追踪数据组织、分派、监督与评价工作；指出功能委托跨客服、运输、物流、金融和医疗行业扩展，人与管理者/同事接触可能减少。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "仅证明算法管理扩展与接触减少，未直接测量心理压抑。"
+      },
+      {
+        "evidence_id": "ev-61f4ed6dcff49e33764c8702",
+        "relation": "support",
+        "quote": "Workers’ reports of automated surveillance and monitoring are widespread across the U.S. workforce, cutting across earnings, educational, industry, and occupational lines and affecting more than two-thirds of workers",
+        "publication_date": "2024-10-01",
+        "observation_end": null,
+        "limitation": "为美国横断面调查，关联不等于因果，且未覆盖长期趋势。"
+      },
+      {
+        "evidence_id": "ev-2c60eb6499b5aaf24c294dcf",
+        "relation": "support",
+        "quote": "While the overall impact of monitoring on performance appears neutral, a small positive correlation can be observed with strain, and a small negative correlation can be observed with job attitudes.",
+        "publication_date": "2025-01-21",
+        "observation_end": null,
+        "limitation": "效应量小且受调节因素影响，不能证明单调强化。"
+      },
+      {
+        "evidence_id": "ev-e09ab5e56ad4197fdb3703fa",
+        "relation": "support",
+        "quote": "Algorithmic management, software that automates or supports managerial tasks, is widely adopted across countries covered by a recent OECD employer survey. It is particularly prevalent in the United States, where 90% of managers say their firms have adopted at least one tool to instruct, monitor or evaluate workers.",
+        "publication_date": "2025-12-19",
+        "observation_end": null,
+        "limitation": "同时指出工具可提升决策质量，且近三分之二管理者担忧对工人的影响，正负并存。"
+      },
+      {
+        "evidence_id": "ev-9fb3d22eae0f5beeaa416c2e",
+        "relation": "support",
+        "quote": "A meta-analysis of the effects of electronic performance monitoring on work outcomes",
+        "publication_date": "2022-04-14",
+        "observation_end": null,
+        "limitation": "仅标题与摘要片段，具体效应方向与大小未在正文中完整呈现，需语义复核。"
+      }
+    ],
+    "remaining_gap": "缺少直接测量“技术化合理化导致内心压抑长期强化”的纵向心理指标；现有证据多为横断面关联与小幅效应，且存在反向证据，无法确认单调强化趋势。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-b2a69c09f2b505448569",
+      "url": "https://www.gao.gov/products/gao-25-107126",
+      "title": "ev-r2-l2-gao-digital",
+      "published_date": "2025-12-10",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-gao-digital",
+      "archive_sha256": "f236a9539376fc80505565b8601abd746d515b549dc6726be0e6c6e3131e87df",
+      "archive_path": "data/sources/r2-l2-gao-digital-web-notes.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-ea0ab67e707e8d9e64cf",
+      "url": "https://www.ilo.org/algorithmic-management-workplace",
+      "title": "ev-r2-l2-ilo-algorithm",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-ilo-algorithm",
+      "archive_sha256": "4ab52fc749657e674e44b6d27b8c9c32f04ce7c0340b2a6954f537479afd5569",
+      "archive_path": "data/sources/r2-l2-ilo-algorithm.html",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-3aca87050e61b5c63548",
+      "url": "https://www.cdc.gov/yrbs/youth-health-in-focus/mental-health.html",
+      "title": "ev-r2-l2-cdc-mental",
+      "published_date": "2026-09-18",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-cdc-mental",
+      "archive_sha256": "445cbf9b9ff4f056e2787f8eeb71c9f65d98a2618607cd6782b87fa20189f2ab",
+      "archive_path": "data/sources/r2-l2-cdc-mental-web-notes.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-70adc775056ef257c9c5",
+      "url": "https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html",
+      "title": "ev-r2-l2-hhs-social",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-hhs-social",
+      "archive_sha256": "507805bdd078d817ddcff730bb2cefc2dc98ce0e3a570fc6c104c6b372645b44",
+      "archive_path": "data/sources/r2-l2-hhs-social-web-notes.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-61f4ed6dcff49e33764c8702",
+      "url": "https://equitablegrowth.org/research-paper/estimating-the-prevalence-of-automated-management-and-surveillance-technologies-at-work-and-their-impact-on-workers-well-being/",
+      "resolved_url": "https://equitablegrowth.org/research-paper/estimating-the-prevalence-of-automated-management-and-surveillance-technologies-at-work-and-their-impact-on-workers-well-being/",
+      "title": "Estimating the prevalence of automated management and surveillance technologies at work and their impact on workers’ well-being - Equitable Growth",
+      "published_date": "2024-10-01",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:21.408698+00:00",
+      "archive_sha256": "bde51ba9c57d4fc18382befec29fba589436331e902979aa3c70f989d0f796c2",
+      "archive_path": "jobs/758c7015175de18c8ab68e00/bde51ba9c57d4fc18382befec29fba589436331e902979aa3c70f989d0f796c2.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-2c60eb6499b5aaf24c294dcf",
+      "url": "https://www.annualreviews.org/content/journals/10.1146/annurev-orgpsych-110622-060758",
+      "resolved_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-orgpsych-110622-060758",
+      "title": "Electronic Monitoring at Work | Annual Reviews",
+      "published_date": "2025-01-21",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:21.408917+00:00",
+      "archive_sha256": "3fc3ee6040e73668d2b39dbedc21544542a781524d20fc8e178f34a9e9472e19",
+      "archive_path": "jobs/758c7015175de18c8ab68e00/3fc3ee6040e73668d2b39dbedc21544542a781524d20fc8e178f34a9e9472e19.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-3afee86c40cebfb789288856",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/02/algorithmic-management-in-the-workplace_3c84ed6d/287c13c4-en.pdf",
+      "resolved_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/02/algorithmic-management-in-the-workplace_3c84ed6d/287c13c4-en.pdf",
+      "title": "Algorithmic management in the workplace (EN)",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:21.409114+00:00",
+      "archive_sha256": "4cf733c22687bf8853c936846a9798a2cfa417a14b7d8e614fb7f0ce821ef430",
+      "archive_path": "jobs/758c7015175de18c8ab68e00/4cf733c22687bf8853c936846a9798a2cfa417a14b7d8e614fb7f0ce821ef430.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e09ab5e56ad4197fdb3703fa",
+      "url": "https://www.oecd.org/en/publications/how-widespread-is-algorithmic-management-in-workplaces_cda7a114-en/full-report.html",
+      "resolved_url": "https://www.oecd.org/en/publications/how-widespread-is-algorithmic-management-in-workplaces_cda7a114-en/full-report.html",
+      "title": "Full Report: How widespread is algorithmic management in workplaces? | OECD",
+      "published_date": "2025-12-19",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:30.427422+00:00",
+      "archive_sha256": "8658ac06f6c2be07cca1b77b0efdc51a41968dacc1b862e0d9ead1ec48ead897",
+      "archive_path": "jobs/758c7015175de18c8ab68e00/8658ac06f6c2be07cca1b77b0efdc51a41968dacc1b862e0d9ead1ec48ead897.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-965c578b3a4bff9376b7aba0",
+      "url": "https://www.europarl.europa.eu/RegData/etudes/STUD/2025/774670/EPRS_STU%282025%29774670_EN.pdf",
+      "resolved_url": "https://www.europarl.europa.eu/RegData/etudes/STUD/2025/774670/EPRS_STU%282025%29774670_EN.pdf",
+      "title": "Digitalisation, artificial intelligence and algorithmic management in the workplace: Shaping the future of work",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:30.427637+00:00",
+      "archive_sha256": "b0292aebc5d85c70af7a964052c72a86388698f89fce747da90fd488e89bbdc2",
+      "archive_path": "jobs/758c7015175de18c8ab68e00/b0292aebc5d85c70af7a964052c72a86388698f89fce747da90fd488e89bbdc2.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-9fb3d22eae0f5beeaa416c2e",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/peps.12514",
+      "resolved_url": "https://onlinelibrary.wiley.com/doi/10.1111/peps.12514",
+      "title": "A meta‐analysis of the effects of electronic performance monitoring on work outcomes - Ravid - 2023 - Personnel Psychology - Wiley Online Library",
+      "published_date": "2022-04-14",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:30.427834+00:00",
+      "archive_sha256": "bcca3116e87cfbf953476c1e730d9da942e209520b5a9929b038f2163f8393b3",
+      "archive_path": "jobs/758c7015175de18c8ab68e00/bcca3116e87cfbf953476c1e730d9da942e209520b5a9929b038f2163f8393b3.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "GAO digital monitoring workplace stress anxiety 2025 algorithmic management employee wellbeing study",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "algorithmic management digital surveillance employee autonomy wellbeing positive effects mixed evidence review",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "OECD 2025 employer survey algorithmic management prevalence workplace monitoring worker wellbeing stress anxiety evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "electronic monitoring workplace meta-analysis job attitudes strain moderators positive effects safety perceptions review 2024 2025",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少直接测量“技术化合理化导致内心压抑长期强化”的纵向心理指标；现有证据多为横断面关联与小幅效应，且存在反向证据，无法确认单调强化趋势。",
+  "source_statuses": [
+    {
+      "url": "https://equitablegrowth.org/research-paper/estimating-the-prevalence-of-automated-management-and-surveillance-technologies-at-work-and-their-impact-on-workers-well-being/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.annualreviews.org/content/journals/10.1146/annurev-orgpsych-110622-060758",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2025/02/algorithmic-management-in-the-workplace_3c84ed6d/287c13c4-en.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.oecd.org/en/publications/how-widespread-is-algorithmic-management-in-workplaces_cda7a114-en/full-report.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.europarl.europa.eu/RegData/etudes/STUD/2025/774670/EPRS_STU%282025%29774670_EN.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/peps.12514",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "评估王沪宁关于西方社会（以美国为主）的预测：随现代科技发展，技术化/合理化对人心灵的压抑会强化，协调内心世界将长期是难题。可观察口径为：工作场所数字监控与算法管理是否持续扩展，以及其与员工压力、焦虑、自主性等心理指标的关系；同时检查反向证据（如监控提升安全感、心理指标改善、效果因群体而异）。反证包括：技术管理未扩展、心理负担未增加或下降、正负效应混合且无单调强化。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "b9f08c1a36a740fedd9d813a31ab0172345da712dbb9add02e9a9d7d86bf98a1"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "7f81d629bb3e775d4c7931d67539cc47",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f0b816a72bf0c6065f7f0d08f5392f03",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "f96ec74502377562d8e36e42cba2fdbf6f38f7a93e2b7c0af8cfec4c768eea97"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "f974f9e814f319c111b48bf80a70081e",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "49201c6127ea8bde24664eadc6bbba8bc371c1c6fafe34a91755774bb0533a96"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "977709b47b4086b5fcd79c21cfaae090",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "50686b9854fa41d928baf258798bc20b",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "0c9e78ad52bfd946395c153e9ebc08db44719daae0c3b1936dddd071c4f3e64c"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "5d97c241e71f28de06dceb7849dc5350",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "e1ffc1db6adb7246cfb3d3a38b358ebdb37c76c6f814f63f37cae506b1346097"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "d0218f514a3c0d8b01824a3abbde4bb61ec3cf52de8aaf476f96391cc2d5ab56"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "64c834309af7c3d516c187d6645b952fc866652887085ad6ceafb0ff6c3cd51b"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "aea71f1cea3599dc890ceb3ba253a8a8c080baca40b22446b920ab7b6e87d42b"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000174915-000175001",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "evidence_support",
+          "reason": "该证据仅提供论文标题，未呈现任何效应方向、大小或与压力/焦虑/工作态度的具体结果；建议却将其列为支持“监控与压力正相关、与工作态度负相关”的证据，超出所引材料实际支持范围。",
+          "source_quote": "A meta-analysis of the effects of electronic performance monitoring on work outcomes",
+          "evidence_id": "ev-9fb3d22eae0f5beeaa416c2e",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议一方面承认效应量普遍偏小、受调节因素影响、存在提升安全感与决策质量等反向或混合证据，另一方面仍设trend_aligned=true并判“部分符合”。按口径，趋势符合须有持续方向证据；混合方向不能直接设置trend_aligned=true。且“部分符合”未具体指出后果B（内心压抑长期强化、协调内心世界成为长期难题）哪些部分实现、哪些未实现，仅罗列前提A的指标有升有降。",
+          "source_quote": "但效应量普遍偏小、受调节因素影响，且存在提升安全感、决策质量等反向或混合证据，故只能判部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正：将ev-9fb3d22eae0f5beeaa416c2e从支持证据中移除或补充其正文中可核实的效应方向与大小；在混合方向证据下不得设trend_aligned=true，应改为“暂无法判断”或明确列出后果B中已实现与未实现的具体部分及直接证据。若维持“部分符合”，须给出“内心压抑长期强化”这一后果在声明口径内哪些具体部分已实现、哪些未实现的直接证据，而非仅罗列前提A指标升降。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000174915-000175001",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000174915-000175001",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以美国为主的工作场所数字监控/算法管理扩展及其与员工压力、焦虑、自主性等心理指标的关系；观察时段为1991年出版至2026-11-09截止日前的可得证据。",
+      "reason": "证据显示算法管理与电子监控在职场持续扩展（美国约九成管理者报告采用至少一种工具，监控覆盖超三分之二工人），且元分析与综述普遍发现监控与压力/紧张呈小幅正相关、与工作态度呈小幅负相关，方向与“技术化合理化强化心理压抑”一致。但效应量普遍偏小、受调节因素影响，且存在提升安全感、决策质量等反向或混合证据，故只能判部分符合。",
+      "limitation": "原文“内心世界难以协调”“长期难题”属宏观心理哲学判断，难以精确操作化；现有证据多为横断面关联，不能证明因果或单调强化，且部分指标（如青少年心理）近期改善，不能直接对应职场技术管理。",
+      "evidence_ids": [
+        "prior-b2a69c09f2b505448569",
+        "prior-ea0ab67e707e8d9e64cf",
+        "ev-61f4ed6dcff49e33764c8702",
+        "ev-2c60eb6499b5aaf24c294dcf",
+        "ev-e09ab5e56ad4197fdb3703fa",
+        "ev-9fb3d22eae0f5beeaa416c2e"
+      ],
+      "method": "从技术化、自动化管理推演心理压抑的累积",
+      "method_basis": "explicit",
+      "observation_end": "2026-11-09",
+      "future_time_text": "很长时期内",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-b2a69c09f2b505448569",
+          "relation": "support",
+          "quote": "数字监控随远程工作与技术选择扩展而更普遍；可增加压力焦虑，也可提升安全感，效果依雇主实践。",
+          "publication_date": "2025-12-10",
+          "observation_end": null,
+          "limitation": "同时指出可提升安全感，效果依雇主实践，非单调强化。"
+        },
+        {
+          "evidence_id": "prior-ea0ab67e707e8d9e64cf",
+          "relation": "support",
+          "quote": "ILO定义算法管理为以追踪数据组织、分派、监督与评价工作；指出功能委托跨客服、运输、物流、金融和医疗行业扩展，人与管理者/同事接触可能减少。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "仅证明算法管理扩展与接触减少，未直接测量心理压抑。"
+        },
+        {
+          "evidence_id": "ev-61f4ed6dcff49e33764c8702",
+          "relation": "support",
+          "quote": "Workers’ reports of automated surveillance and monitoring are widespread across the U.S. workforce, cutting across earnings, educational, industry, and occupational lines and affecting more than two-thirds of workers",
+          "publication_date": "2024-10-01",
+          "observation_end": null,
+          "limitation": "为美国横断面调查，关联不等于因果，且未覆盖长期趋势。"
+        },
+        {
+          "evidence_id": "ev-2c60eb6499b5aaf24c294dcf",
+          "relation": "support",
+          "quote": "While the overall impact of monitoring on performance appears neutral, a small positive correlation can be observed with strain, and a small negative correlation can be observed with job attitudes.",
+          "publication_date": "2025-01-21",
+          "observation_end": null,
+          "limitation": "效应量小且受调节因素影响，不能证明单调强化。"
+        },
+        {
+          "evidence_id": "ev-e09ab5e56ad4197fdb3703fa",
+          "relation": "support",
+          "quote": "Algorithmic management, software that automates or supports managerial tasks, is widely adopted across countries covered by a recent OECD employer survey. It is particularly prevalent in the United States, where 90% of managers say their firms have adopted at least one tool to instruct, monitor or evaluate workers.",
+          "publication_date": "2025-12-19",
+          "observation_end": null,
+          "limitation": "同时指出工具可提升决策质量，且近三分之二管理者担忧对工人的影响，正负并存。"
+        },
+        {
+          "evidence_id": "ev-9fb3d22eae0f5beeaa416c2e",
+          "relation": "support",
+          "quote": "A meta-analysis of the effects of electronic performance monitoring on work outcomes",
+          "publication_date": "2022-04-14",
+          "observation_end": null,
+          "limitation": "仅标题与摘要片段，具体效应方向与大小未在正文中完整呈现，需语义复核。"
+        }
+      ],
+      "remaining_gap": "缺少直接测量“技术化合理化导致内心压抑长期强化”的纵向心理指标；现有证据多为横断面关联与小幅效应，且存在反向证据，无法确认单调强化趋势。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000174915-000175001",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "以美国为主的工作场所数字监控/算法管理是否持续扩展，以及其与员工压力、焦虑、自主性等心理指标的关系；观察时段为1991年出版至2026-11-09截止日前的可得证据。",
+      "reason": "现有证据可支持前提A：算法管理与电子监控在职场广泛采用并扩展，且与紧张/压力呈小幅正相关、与工作态度呈小幅负相关。但后果B“技术化合理化对人的心灵压抑会强化、协调内心世界将长期是西方社会难题”缺少直接、纵向的心理压抑测量；效应量小、受调节因素影响，并存在提升安全感、决策质量等混合证据，无法确认单调强化趋势。",
+      "limitation": "原文“内心世界难以协调”“长期难题”属宏观心理哲学判断，难以精确操作化；现有证据多为横断面关联，不能证明因果或长期单调强化。关键修订：移除仅提供标题、未呈现效应方向的元分析作为支持证据，并将trend_aligned改为false、verdict改为暂无法判断。",
+      "evidence_ids": [
+        "prior-b2a69c09f2b505448569",
+        "prior-ea0ab67e707e8d9e64cf",
+        "ev-61f4ed6dcff49e33764c8702",
+        "ev-2c60eb6499b5aaf24c294dcf",
+        "ev-e09ab5e56ad4197fdb3703fa"
+      ],
+      "method": "从技术化、自动化管理推演心理压抑的累积",
+      "method_basis": "explicit",
+      "observation_end": "2026-11-09",
+      "future_time_text": "很长时期内",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-b2a69c09f2b505448569",
+          "relation": "support",
+          "quote": "数字监控随远程工作与技术选择扩展而更普遍；可增加压力焦虑，也可提升安全感，效果依雇主实践。",
+          "publication_date": "2025-12-10",
+          "observation_end": null,
+          "limitation": "同时指出可提升安全感，效果依雇主实践，非单调强化。"
+        },
+        {
+          "evidence_id": "prior-ea0ab67e707e8d9e64cf",
+          "relation": "support",
+          "quote": "ILO定义算法管理为以追踪数据组织、分派、监督与评价工作；指出功能委托跨客服、运输、物流、金融和医疗行业扩展，人与管理者/同事接触可能减少。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "仅证明算法管理扩展与接触减少，未直接测量心理压抑；发表日期未知。"
+        },
+        {
+          "evidence_id": "ev-61f4ed6dcff49e33764c8702",
+          "relation": "support",
+          "quote": "Workers’ reports of automated surveillance and monitoring are widespread across the U.S. workforce, cutting across earnings, educational, industry, and occupational lines and affecting more than two-thirds of workers",
+          "publication_date": "2024-10-01",
+          "observation_end": null,
+          "limitation": "为美国横断面调查，关联不等于因果，且未覆盖长期趋势。"
+        },
+        {
+          "evidence_id": "ev-2c60eb6499b5aaf24c294dcf",
+          "relation": "support",
+          "quote": "While the overall impact of monitoring on performance appears neutral, a small positive correlation can be observed with strain, and a small negative correlation can be observed with job attitudes.",
+          "publication_date": "2025-01-21",
+          "observation_end": null,
+          "limitation": "效应量小且受调节因素影响，不能证明单调强化。"
+        },
+        {
+          "evidence_id": "ev-e09ab5e56ad4197fdb3703fa",
+          "relation": "boundary",
+          "quote": "Algorithmic management, software that automates or supports managerial tasks, is widely adopted across countries covered by a recent OECD employer survey. It is particularly prevalent in the United States, where 90% of managers say their firms have adopted at least one tool to instruct, monitor or evaluate workers.",
+          "publication_date": "2025-12-19",
+          "observation_end": null,
+          "limitation": "同时指出工具可提升决策质量，且近三分之二管理者担忧对工人的影响，正负并存，不能单独证明心理压抑强化。"
+        }
+      ],
+      "remaining_gap": "缺少直接测量“技术化合理化导致内心压抑长期强化”的纵向心理指标；现有证据多为横断面关联与小幅效应，且存在反向证据，无法确认单调强化趋势。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "评估王沪宁关于西方社会（以美国为主）的预测：随现代科技发展，技术化/合理化对人心灵的压抑会强化，协调内心世界将长期是难题。可观察口径为：工作场所数字监控与算法管理是否持续扩展，以及其与员工压力、焦虑、自主性等心理指标的关系；同时检查是否存在反向证据（如监控提升安全感、心理指标改善、效果因群体而异）。反证包括：技术管理未扩展、心理负担未增加或下降、正负效应混合且无单调强化。",
+  "elapsed_seconds": 45.587,
+  "completed_at": "2026-11-09T08:00:52.738050+00:00"
+}

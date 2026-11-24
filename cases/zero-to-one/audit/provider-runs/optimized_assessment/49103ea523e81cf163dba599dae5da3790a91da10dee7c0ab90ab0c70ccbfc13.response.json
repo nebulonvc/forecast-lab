@@ -1,0 +1,28 @@
+{
+  "id": "44f326d2-efe0-4670-9e8d-b46aa000a073",
+  "object": "chat.completion",
+  "created": 1794201591,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000070565-000070600\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为条件性数学/机制陈述：若每个新用户邀请一个以上用户，则用户数呈指数级链式增长；未指定具体产品、公司或时间窗口。\",\"reason\":\"该句是病毒式营销的繁殖系数大于1的机制性说明，属于一般性条件推理，并非对特定对象在特定时段的可检验预测。\",\"limitation\":\"原文未给出可观测主体与期限，无法作为可验证预测评分；仅作排除审计记录。\",\"evidence_ids\":[],\"method\":\"条件推理\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4359,
+    "completion_tokens": 183,
+    "total_tokens": 4542,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3591
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

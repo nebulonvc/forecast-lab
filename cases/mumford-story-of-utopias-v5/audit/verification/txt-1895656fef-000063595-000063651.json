@@ -1,0 +1,91 @@
+{
+  "claim_id": "txt-1895656fef-000063595-000063651",
+  "history": [
+    {
+      "saved_at_utc": "2026-11-20T11:03:21Z",
+      "assess": {
+        "inclusion": "forecast",
+        "verdict": "部分符合",
+        "basis": "observed_window",
+        "trend_aligned": false,
+        "condition_state": "unconditional",
+        "future_time_text": "",
+        "observation_end": "2018-03-16",
+        "evidence_ids": [
+          "ev-saudino-temperament",
+          "ev-temperament-personality-2018"
+        ],
+        "scope": "只核心理学研究是否看来证实儿童出生时已有明显身心倾向。seem likely 不是必定，也不是气质决定后来的整个人格。",
+        "reason": "Saudino 页写双生子和领养研究说明婴儿和儿童气质的个体差异受遗传影响，出生后不久就有很大变异，遗传大约解释20%到60%。2018年3月16日的综述写婴儿气质与后来人格只有中等联系，而且不能决定性地预测人格。倾向被研究部分证实，完整的明显先天倾向没有被写成全部原因。",
+        "limitation": "Saudino 页没有印出自己的出版日。20%到60%不是全部变异。1922与1923的版本差不涉及这句的日历事件。",
+        "method": "先看研究是否证实出生时的倾向，再看证实到哪一截。中等遗传影响是一截，决定性预测被同一文献否定。",
+        "method_basis": "explicit"
+      },
+      "semantic_review": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass",
+        "note": "对象是心理学对先天倾向的研究。中等遗传影响是部分证实。非决定性的联系写在2018年页上，所以不是正确，也不是错误。"
+      }
+    }
+  ],
+  "context_review": {
+    "saved_at_utc": "2026-11-20T11:11:02Z",
+    "continuous_text": "latonic utopia.\n\nWe must not misunderstand Plato’s division of classes. Aristotle\ncriticizes Plato in terms of a more simple system of democracy; but\nPlato did not mean to institute a fixed order; within his Republic\nthe Napoleonic motto--_la carrière est ouverte aux talents_--was the\nguiding principle. What lay beneath Plato’s argument was a belief which\npresent-day studies in psychology seem likely to confirm; a belief that\nchildren come into the world with a bent already well marked in their\nphysical and mental constitutions. Plato advocated, it is true, an\naristocracy or government by the best people; but he did not believe in\nfake aristocracies that are perpetuated through hereditary we",
+    "argument": "信念的对象是儿童来到世上时，身心体质里已经有明显倾向。页面只写婴儿和儿童气质差异受遗传影响，大约解释20%到60%，并且不能决定性地预测后来的人格。气质是心理分项。身体体质不在这两页里。遗传机制不能覆盖身心全部，也不能把中等遗传率写成明显而完整的天赋。"
+  },
+  "plan": {
+    "object": "当时的心理学研究，以及儿童出生时已有明显身心倾向这一信念",
+    "conditions": [],
+    "quantifier": "seem likely，不是必定",
+    "result": "研究看来很可能证实这一信念",
+    "time_window": "1923年到2026-11-15",
+    "counterevidence_needed": "心理学研究没有证实出生时已有明显倾向，或只否定了决定性预测"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "purpose": "首轮一正一反",
+        "support_query": "behavioral genetics confirmed infants are born with stable temperamental differences",
+        "counter_query": "newborn temperament does not predict later personality psychology review",
+        "support_result_archive": "audit/raw-search/claim01-support-page-pmc1188235.txt",
+        "counter_result_archive": "audit/raw-search/claim01-counter-page-pmc6411068.txt",
+        "tool_call_id": null,
+        "saved_at_utc": "2026-11-20T11:03:21Z"
+      }
+    ],
+    "adaptive_rounds": 0,
+    "stop_reason": "两页已经同时写出遗传影响和中等、非决定性的联系。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "trend_aligned": false,
+    "condition_state": "unconditional",
+    "future_time_text": "",
+    "observation_end": "2018-03-16",
+    "evidence_ids": [
+      "ev-saudino-temperament",
+      "ev-temperament-personality-2018"
+    ],
+    "scope": "只把已经写出的中等遗传气质差异当作心理分项。身体体质、明显而完整的身心倾向，以及单一遗传机制，都不算已被证实。",
+    "reason": "Saudino 页写婴儿和儿童气质的个体差异受遗传影响，遗传大约解释20%到60%。2018年3月16日的综述写这种联系是中等的，而且不能决定性地预测人格。这是心理倾向的一截。它不是身体体质上的明显倾向，也不是柏拉图那句身心并举的全部。",
+    "limitation": "Saudino 页没有印出自己的出版日。20%到60%不是全部变异。身体体质没有对应页面。",
+    "method": "先把身心并列拆开。只把页面实际写出的心理气质当作部分结果。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "pass",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "心理气质的中等遗传影响是部分结果。身体体质没有被这两页覆盖，所以不是全部符合。"
+  }
+}

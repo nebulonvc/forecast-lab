@@ -1,0 +1,85 @@
+{
+  "id": "txt-5386516eaf-002222776-002222969",
+  "assess": {
+    "id": "txt-5386516eaf-002222776-002222969",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "继承法大概还要经过几个改进阶段，远于当时想法的主张才会被认真考虑。",
+    "reason": "1949年财政法废除了遗赠税和继承税。这是死亡税的合并，不是按能力与抚养方式决定继承的那种远离当时想法的方案已被认真考虑，也不足以叫作原句所说的几个改进阶段已经走完。",
+    "limitation": "税法合并不是那个方案。",
+    "evidence_ids": [
+      "ev-inheritance-1949"
+    ],
+    "method": "支持检索继承法的后续阶段，反证检索远处想法是否已被采纳。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-inheritance-1949",
+        "quote": "legacy duty and succession duty were abolished by the Finance Act 1949, [e] followed by the repeal of corporation duty by the Finance Act 1959.",
+        "relation": "boundary",
+        "limitation": "不是按能力继承。",
+        "observation_end": "1949-12-31",
+        "publication_date": null,
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      }
+    ],
+    "remaining_gap": "缺继承法是否经过原句所说的改进阶段，以及按能力与境况继承是否被认真考虑。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-002222776-002222969",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-inheritance-1949"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-inheritance-1949"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "inheritance law passed through later reform phases"
+      },
+      {
+        "role": "counter",
+        "query": "succession by capacity and upbringing was not adopted"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://en.wikipedia.org/wiki/History_of_inheritance_taxes_in_the_United_Kingdom"
+    ],
+    "reason": "税种合并不是那个想法。"
+  }
+}

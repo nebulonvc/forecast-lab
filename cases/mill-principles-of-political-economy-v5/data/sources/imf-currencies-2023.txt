@@ -1,0 +1,1080 @@
+Jump to Content
+
+This site uses cookies, tags, and tracking settings to store information that help give you the very best browsing experience. Dismiss this warning
+
+- Previous Article
+
+Currency Usage for Cross-Border Payments
+
+Author:
+
+Hector Perez-Saiz
+
+Hector Perez-Saiz https://isni.org/isni/0000000404811396 International Monetary Fund Search for other papers by Hector Perez-Saiz in Current site Google Scholar
+
+https://orcid.org/0000-0001-6376-636X
+
+,
+
+Ms. Longmei Zhang
+
+Ms. Longmei Zhang Search for other papers by Ms. Longmei Zhang in Current site Google Scholar
+
+, and
+
+Roshan Iyer
+
+Roshan Iyer Search for other papers by Roshan Iyer in Current site Google Scholar
+
+Publication Date: 24 Mar 2023 eISBN: 9798400235375 Language: English Keywords: market share; unit of account; interaction terms; British pound; increase currency competition
+
+Download PDF (2.2 MB)
+
+While the global usage of currencies other than the U.S. dollar and the euro for cross-border payments remains limited, rapid technological (e.g. digital money) or geopolitical changes could accelerate a regime shift into a multipolar or more fragmented international monetary system. Using the rich Swift database of cross-border payments, we empirically estimate the importance of legal tender status, geopolitical distance, and other variables vis-à-vis the large inertia effects for currency usage, and perform several forecasting simulations to better understand the role of these variables in shaping the future payments landscape. While our results suggest a substantially more fragmented international monetary system would be unlikely in the short and medium term, the impact of new technologies remains highly uncertain, and much more rapid geopolitical developments than expected could accelerate the transformation of the international monetary system towards multipolarity.
+
+## Abstract
+
+While the global usage of currencies other than the U.S. dollar and the euro for cross-border payments remains limited, rapid technological (e.g. digital money) or geopolitical changes could accelerate a regime shift into a multipolar or more fragmented international monetary system. Using the rich Swift database of cross-border payments, we empirically estimate the importance of legal tender status, geopolitical distance, and other variables vis-à-vis the large inertia effects for currency usage, and perform several forecasting simulations to better understand the role of these variables in shaping the future payments landscape. While our results suggest a substantially more fragmented international monetary system would be unlikely in the short and medium term, the impact of new technologies remains highly uncertain, and much more rapid geopolitical developments than expected could accelerate the transformation of the international monetary system towards multipolarity.
+
+## Introduction
+
+Cross-border payments are at the heart of the international monetary system (IMS). They enable the exchange of goods and services between nations, the settlement of financial contracts between corporations across borders and the channeling of international aid. By facilitating cross-border transactions, the IMS is the backbone of globalization in trade and finance.
+
+The currency configuration for cross-border payments is dominated by the U.S. dollar and the euro. While there are more than 150 currencies in the world that are deemed legal tender, cross-border payments mainly concentrate in a small number of currencies. As of end 2021, the U.S. dollar accounted for about 40 percent of cross-border Swift flows, followed closely by the euro. A few other currencies, the British pound, the Japanese yen, the Australian dollar, the Hong Kong dollar, and the Canadian dollar, also have a share of more than 1 percent. The Chinese renminbi (RMB), the only reserve currency issued by an emerging market,1 has also gained traction in recent years with its share rising to about 2.5 percent.
+
+The payment landscape is closely interrelated with other facets of the IMS. Money performs three distinct functions, as a medium of exchange, a unit of account, and a store of value. The U.S. dollar usually plays a vehicle currency role in trade invoicing, pricing of financial assets, and central bank reserves. This is because a currency’s role as a unit of account for invoicing decisions is complementary to its use as a safe store of value, and this complementarity can lead to the emergence of a single dominant currency in trade invoicing and global banking (Gopinath and Stein, 2021). The dominant currency paradigm has recently come to the forefront of policy debate, raising questions on the benefits of exchange rate flexibility for external adjustment (Gopinath et al, 2020; Adler et al, 2020).
+
+Historically the IMS has undergone profound but slow transformations. In the past two hundred years, the IMS has transitioned from the sterling dominance under the gold standard in the pre-war period, to the coequal status of the sterling and the U.S. dollar in the inter-war years, to the full dominance of the U.S. dollar, which was institutionalized under the Bretton Woods system and remained deeply entrenched after the Bretton Woods system broke down in 1973 (Eichengreen, 2008). More recently, the advent of the euro and the rise of China has spurred discussions on a potential multipolar system, where the U.S. dollar, euro, and the RMB would share the role of international currencies (Eichengreen, 2011, 2017; Subramanian, 2011; Prasad and Ye, 2012).
+
+Recent technological and geopolitical changes may bring faster changes to the IMS. Historically the high degree of inertia of the IMS largely reflects the strong network effects and switching costs (Eichengreen, 2008). These two factors could be significantly altered by the digital revolution and recent geo-political tensions. Digitalization could substantially reduce switching costs, increase currency competition, and promote the internationalization of new currencies (Brunnermeier et al, 2019). Similarly, geo-political tensions may break down existing payment networks into separate blocs, weaken the incumbent advantage, and facilitate system changes.
+
+Digital money and payment systems will be at the forefront of the potential radical change of the IMS (IMF, 2020 and 2022; BIS, 2022). Digital payments have already started to play a dominant role in parts of the world, such as Wechat and Alipay in China, or mobile money in Africa (M-Pesa and others). The introduction of crypto assets (including the so-called stablecoins) has attracted increased attention from policy makers (IMF, 2023). Also, central bank digital currencies (CBDCs) could affect both the cross-border payment infrastructure and currency configuration (IMF, 2020).
+
+Currently, international payments are mainly conducted via financial intermediaries, such as banks, and cross-border financial infrastructures. The Society for Worldwide Interbank Financial Telecommunication (Swift) is the leading global messaging platform for cross-border banking transactions and has a membership of more than 11,000 institutions in over 200 countries and territories. In addition to Swift, China, India, and Russia have also developed their own financial infrastructures for cross-border payments, such as CIPS, UPI and SPFS. As of January 2023, the number of participating banks in these alternative platforms remains limited, and their market share is very small. With the increasing use of crypto assets in cross-border transactions, particularly for remittances, alternative payment providers built on blockchain technology have emerged, although the recent decline in crypto asset valuations or the failure of various relevant actors have intensified the need for effective policies toward these assets (IMF, 2023).
+
+This paper contributes to the literature by studying the factors that determine a country’s currency usage for cross-border payments. By aggregating transaction level data provided by Swift, we examine currency usage for cross-border transactions for each country pair and investigate the drivers of currency usage across countries and over time. Given the wide coverage of Swift, the transaction data used in our analysis covers most of the universe of cross-border payments.
+
+Our findings show that inertia, legal tender status, and political proximity play a major role in determining currency usage. In line with the literature, we find a significant degree of inertia in currency usage for cross-border payments, reflecting the strong network effects and switching costs. Notably, our results show that political proximity can also affect the currency usage, along with geographic proximity, and other cultural factors. Finally, we find a relatively large positive effect of the legal tender status, which could boost the currency usage significantly. Trade ties or financial linkages do not appear to have a major impact on currency choices.
+
+Additionally, we perform several forecasting simulations to better understand the role of these variables in shaping the future IMS. Using a twenty-year horizon forecast, we find that relatively minor but sustained changes in political distance or legal tender status over the years could elevate the share of alternative currencies in selected countries. However, the aggregate effect on the global currency landscape does not appear to be substantial as the majority of payment volumes are channeled through large economies, mostly advanced, which are not likely to be affected by changes in legal tender status and other variables.
+
+Our paper provides preliminary insights on possible future evolution of the IMS. These results suggest that despite recent technological and geo-political trends, a substantially more fragmented international monetary system would be unlikely in the near term. The substantial inertia of the system driven by large network effects or high switching costs, or the relatively slow-moving geo-political and regulatory changes would not contribute to a drastic change in the global payments landscape.
+
+Nevertheless, the impact of new technologies remains highly uncertain, and a much more rapid geopolitical evolution than expected could accelerate the transformation of the IMS. A broader introduction of crypto-assets as legal tender could weaken the role of fiat money and significantly impact the IMS. At the same time, a decisive effort by central banks to digitalize public money, or introduce CBDCs, could also facilitate rapid currency configuration changes by reducing switching costs and the degree of inertia in the system, though the impact remains highly uncertain. More abrupt geo-political changes could also accelerate the fragmentation of the payment system and give rise to new currency blocs.
+
+## Data Sources
+
+### Swift Data
+
+Swift was founded in 1973 to provide secure financial messaging services for cross-border payments. Today, Swift is used by over 11,000 institutions in more than 200 countries and territories around the world. Swift represents the primary communication channel for corporates, financial institutions, and market infrastructures to settle international financial payments, securities, foreign exchange transactions, treasury operations, and trade flows.
+
+Swift messages are categorized by standardized codes to dispel any ambiguity about the nature of financial transactions between institutions. There are nine categories such as customer payments and checks, financial institution transfers, treasury markets, and documentary credits and guarantees. Each of these categories contains several types of messages. A Swift message starts with an identifier (MT) and is followed by a 3- digit number that represents category, group, and type.2
+
+The Swift Watch solution provides access to monthly data going back to 2010. The data is aggregated at country level with complete anonymity of individual service users. Each observation contains the Swift message code, ordering/sending and beneficiary/receiving countries, the currency of the transaction, and its correspondent U.S. dollar value.
+
+This paper constructs two sets of Swift datasets, the transfer dataset and the trade dataset. The transfer dataset includes Swift messages with the codes MT 1033 and MT 202 which are defined respectively as “single customer credit transfers” and “general financial institutions transfer”.4 In general, these Swift transactions for transfers may involve up to four financial institutions: a) the bank of the original ordering entity, which is ordering the transfer payment; b) the intermediary bank, which may handle the actual cross-border transfer of the funds; c) the receiving intermediary bank, which may receive the funds on behalf of the beneficiary bank; and d) the beneficiary bank, which holds the account of the ultimate recipient of the transfer payment. Figure 1 shows the four financial institutions that could be involved in a Swift transaction with code MT 103, although most transactions are either direct or include just one intermediary.
+
+View Full Size
+
+Figure 1.
+
+Swift Messages MT 103
+
+Citation: IMF Working Papers 2023, 072; 10.5089/9798400235375.001.A001
+
+Download figure as PowerPoint slide
+
+- Download Figure
+
+The trade dataset also includes Swift messages with codes MT 400 and MT 700. These are trade-related messages defined as “documentary collections” and “standby letters of credit”, respectively. According to the Uniform Customs and Practice for Documentary Credits rules established by the International Chamber of Commerce (ICC), importers usually obtain a letter of credit from a bank to import merchandise goods against a fixed transaction fee and interest. After the letter of credit is obtained, the issuing bank sends an MT 700 message to the bank of the exporter to indicate the terms of the letter of credit. Against this guarantee, the exporter then ships the merchandise goods to the importer and produces the necessary shipping documentation representing the title to the goods. The issuing bank then checks the shipping documentation against the requirements under the letter of credit before making the payment to the exporter’s bank. The MT 400 message represents a less common form of trade financing where the shipping/ownership documents are transferred to the importer’s bank, which releases them to the importer only once the importer has paid the exporter for the imported goods. According to Niepmann and Schmidt-Eisenlohr (2017), documentary collections (MT 400 messages) financed 1.8 percent of world trade in 2013, compared with 13 percent of letters of credit (MT 700 messages). Figure 2 shows the typical flows and institutions typically involved in a Swift transaction with code MT 700.
+
+View Full Size
+
+Figure 2.
+
+Swift Messages MT 700
+
+Citation: IMF Working Papers 2023, 072; 10.5089/9798400235375.001.A001
+
+Source: Carton et al, 2020
+
+Download figure as PowerPoint slide
+
+- Download Figure
+
+### Country-Level Data
+
+We use several country-level databases in our empirical analysis (see Table 1). Gross domestic product, inflation and monetary aggregates are obtained from the IMF’s World Economic Outlook (WEO) database. The Basel AML index is produced by the Basel Institute of Governance.5 It aims to assess the risk of money laundering or terrorist financing and aims to act as a proxy indicator of the quality of financial sector legislation in countries, with the assumption that countries with better regulation have higher levels of trade and transactions.6 The Financial Development Index is produced by the IMF7 to assess the depth, efficiency, and access of financial systems of countries, with the expectation that higher levels of financial development increase the level of trade and transactions. The Annual Report on Exchange Arrangements and Exchange Restrictions (AREAER) database by the IMF8 provides a control for the types of currency, legal tender status, and exchange rate regimes of countries.9
+
+Table 1.
+
+Main Variables and Data Bases Used in Empirical Model
+
+Table 1.
+
+Main Variables and Data Bases Used in Empirical Model
+
+| Variable | Source | Start date | Frequency | Notes | Direction of values |
+| --- | --- | --- | --- | --- | --- |
+| Cross border payments through Swift | Swift | 2010 | Annual | Inflows and outflows, by pairs of countries |
+| Bilateral shares of Foreign Direct Investment stock | Coordinated Direct Investment Survey | 2001 | Annual | Bilateral levels of assets and liabilities/Total level of assets and liabilities | Pairwise variable |
+| Bilateral shares of Portfolio Investment stock | Coordinated Portfolio Investment Survey | 2001 | Annual | Bilateral levels of assets and liabilities/Total level of assets and liabilities | Pairwise variable |
+| Basel AML Index | Basel Institute on Governance | 2012 | Annual | Assesses the risk of money laundering and terrorist financing (ML/TF) around the world | Higher value indicates a lower risk of money laundering and terrorist financing |
+| Financial Development Index | IMF | 1980 | Annual (2 year lag) | Rates countries based on depth, access, and efficiency of their financial institutions and financial markets | Higher value indicates a better developed financial system |
+| Legal Tender Status and exchange rate regimes | AREAER (IMF) | 1950 | Annual | Tracks the exchange rate and trade regimes of all countries | Indicator variables |
+| Political Proximity | Voeten, Erik; Strezhnev, Anton; Bailey, Michael, 2009, “United Nations General Assembly Voting Data” | 1946 | Annual | Voting similarity index: no. of votes where both countries agree/Total no. of votes | Higher values indicates closer political proximity |
+| Prob of Default | NUS-CRI | 1993 | Daily | Higher value is worse as there is a higher prob. of default |
+| Sovereign Rating | S&P Global Ratings | 1981 | Annual | Higher value indicates a worse sovereign rating |
+| Distance between Capitals | Centre d’Études Prospectives et d’Informations Internationales (CEPII) | Fixed | Fixed | Expressed in kilometers | Indicator variable |
+| Border Contiguity | CEPII | Fixed | Fixed | Indicator variable |
+| Common Official Language | CEPII | Fixed | Fixed | Indicator variable |
+| Former Colonial Relationship | CEPII | Fixed | Fixed | Indicator variable |
+| Former Common Country | CEPII | Fixed | Fixed | Indicator variable |
+
+View Table
+
+Table 1.
+
+Main Variables and Data Bases Used in Empirical Model
+
+| Variable | Source | Start date | Frequency | Notes | Direction of values |
+| --- | --- | --- | --- | --- | --- |
+| Cross border payments through Swift | Swift | 2010 | Annual | Inflows and outflows, by pairs of countries |
+| Bilateral shares of Foreign Direct Investment stock | Coordinated Direct Investment Survey | 2001 | Annual | Bilateral levels of assets and liabilities/Total level of assets and liabilities | Pairwise variable |
+| Bilateral shares of Portfolio Investment stock | Coordinated Portfolio Investment Survey | 2001 | Annual | Bilateral levels of assets and liabilities/Total level of assets and liabilities | Pairwise variable |
+| Basel AML Index | Basel Institute on Governance | 2012 | Annual | Assesses the risk of money laundering and terrorist financing (ML/TF) around the world | Higher value indicates a lower risk of money laundering and terrorist financing |
+| Financial Development Index | IMF | 1980 | Annual (2 year lag) | Rates countries based on depth, access, and efficiency of their financial institutions and financial markets | Higher value indicates a better developed financial system |
+| Legal Tender Status and exchange rate regimes | AREAER (IMF) | 1950 | Annual | Tracks the exchange rate and trade regimes of all countries | Indicator variables |
+| Political Proximity | Voeten, Erik; Strezhnev, Anton; Bailey, Michael, 2009, “United Nations General Assembly Voting Data” | 1946 | Annual | Voting similarity index: no. of votes where both countries agree/Total no. of votes | Higher values indicates closer political proximity |
+| Prob of Default | NUS-CRI | 1993 | Daily | Higher value is worse as there is a higher prob. of default |
+| Sovereign Rating | S&P Global Ratings | 1981 | Annual | Higher value indicates a worse sovereign rating |
+| Distance between Capitals | Centre d’Études Prospectives et d’Informations Internationales (CEPII) | Fixed | Fixed | Expressed in kilometers | Indicator variable |
+| Border Contiguity | CEPII | Fixed | Fixed | Indicator variable |
+| Common Official Language | CEPII | Fixed | Fixed | Indicator variable |
+| Former Colonial Relationship | CEPII | Fixed | Fixed | Indicator variable |
+| Former Common Country | CEPII | Fixed | Fixed | Indicator variable |
+
+We also include default probabilities at the country level. The probability of default from the National University of Singapore Credit Research Initiative10 provides an indicator of credit worthiness of a country’s firms with the expectation that countries with lower probabilities of default have higher levels of trade and transactions. This is similar to the sovereign ratings variable from S&P Global Ratings with a focus on government credit worthiness.
+
+### Data by Pairs of Countries
+
+Variables specified by pairs of countries are detailed in Table 1. They essentially account for various factors that impact the level of transactions and trade between pairs of countries and have been often used in standard gravity models in the trade literature. The bilateral share of the stock of foreign direct investment and portfolio investment is obtained from the IMF’s Coordinated Direct Investment Survey11 (CDIS), and the Coordinated Portfolio Investment Survey12 (CPIS), respectively. These provide the annual level of assets and liabilities between all country pairs and are used to control for the level of financial transactions between country pairs, with the expectation that countries with higher levels of direct investment and portfolio investment shares also have higher levels of trade and transactions.
+
+The political proximity indicator is based on the United Nations voting patterns data from the Harvard Dataverse.13 It provides the degree of correlation between countries’ voting patterns in the United Nations, and it is used to provide a proxy indicator of political proximity, with the expectation that politically closer countries have higher levels of trade and transactions. This is an indicator that has been used for decades by political scientists and economists to measure foreign policy preferences (Ball, 1951; Lijphart, 1963; Dreher and Jensen, 2007; Alesina and Dollar, 2000; Bailey et al, 2017). Trade data are from the IMF Direction of Trade Statistics,14 which measure bilateral goods trade between countries at both quarterly and annual frequency. Exports are measured as the value of goods free on board. Imports include the cost of insurance. The value of exports and imports is denominated in U.S. dollars using prevailing market exchange rates.
+
+Lastly, we use geographic and cultural indicators by pairs of countries. Geographic and historic indicators are obtained from the GeoDist database of the Centre d’Études Prospectives et d’Informations Internationales (CEPII)15 and provide further controls with the expectation that countries which have closer cultural or geographic relationships experience higher trade and transaction levels. These variables have also been often used in standard gravity models in the trade literature. In the annex, we have included some key statistical information on these databases.
+
+## Patterns of Currency Usage
+
+There are more than 150 different currencies in the world, but their usage greatly varies across countries. Figure 3 shows the evolution global activity shares for cross-border payments (Swift messages MT 103 and MT 202) of several major currencies over the years. The U.S. dollar and the euro have been consistently the two dominant currencies over the years, with activity shares close to or above 40 percent. The RMB has significantly increased its activity share in cross-border payments over the last decade, but its usage is still very low, and similar in order of magnitude to the British pound, Japanese yen and other major currencies.
+
+View Full Size
+
+Figure 3.
+
+Share of World Currencies Over the Years (Swift Messages MT 103 and MT 202)
+
+Citation: IMF Working Papers 2023, 072; 10.5089/9798400235375.001.A001
+
+Download figure as PowerPoint slide
+
+- Download Figure
+
+Economically larger countries or countries that are more active in cross-border payments tend to use more currencies. Figure 4 shows are positive correlation between GDP or cross-border payments and the number of currencies used by countries. However, since the usage of the great majority of currencies is very limited, most countries’ usage is concentrated on few currencies. Figure 5 shows the distribution of concentration ratios of currency usage across countries using the Herfindahl–Hirschman (HHI) index. The mode of the distribution is approximately equal to 5,000, which would be equivalent to a country that uses only two currencies, each having half of the activity share. The figure also shows that the distribution has slightly shifted to the right over the last decade, suggesting a higher concentration in currency usage over the years, perhaps driven by the emergence of the RMB and other currencies.
+
+View Full Size
+
+Figure 4.
+
+Number of Currencies Used for Cross-Border Payments
+
+Citation: IMF Working Papers 2023, 072; 10.5089/9798400235375.001.A001
+
+Download figure as PowerPoint slide
+
+- Download Figure
+
+View Full Size
+
+Figure 5.
+
+Distribution of the Concentration of Currency Usage Across Countries (HHI Index)
+
+Citation: IMF Working Papers 2023, 072; 10.5089/9798400235375.001.A001
+
+Download figure as PowerPoint slide
+
+- Download Figure
+
+Figure 6 shows examples of geographic distribution of currency usage for cross-border payments for some major currencies. While the U.S. dollar has a broad dominance, the euro is mainly concentrated in Europe, and some parts of Africa. The RMB has gained tractions in parts of Asia, but interestingly, the U.S. dollar has a larger presence in China for cross-border payments than the RMB. The Japanese yen is mainly present in Japan and Argentina. This large geographic variation in the usage of currencies across countries is a major source of data variation used in our empirical model to identify relevant factors of usage.
+
+View Full Size
+
+View Full Size
+
+Figure 6.
+
+Cross Country Distribution of Swift Payments (2021)
+
+(Currency share in total Swifts payments)
+
+Citation: IMF Working Papers 2023, 072; 10.5089/9798400235375.001.A001
+
+Download figure as PowerPoint slide
+
+- Download Figure
+- Download Figure
+
+## Empirical Analysis
+
+This section conducts empirical analysis to analyze the drivers of currency usage for cross-border payments. The main regression specification in our empirical model includes data of shares of each currency in cross-border payment flows (sending or receiving), for each pair of countries and currency, and for a given year. It is specified as follows:
+
+Shares,r,c,t=β1Shares,r,c,t−1+β2political−proximitys,r,t+β3geo−proximitys,r+β4AMLs,t+β5AMLr,t+β6FindDevs,t+β7FindDevr,t+β8legal−tenders,c,t+β9legal−tenderr,c,t+β10others,r,t+β11Xs,t(1)+β12Xr,t+β13currency−fixedc+β14year−t+εs,r,c,t
+
+The dependent variable is the share of Swift sent (received) flows in currency c over total flows sent (received) from sender (receiving) country s to receiving (sender) country r in year t. The lagged value is included to reflect the high degree of inertia in currency usage and is consistent with the literature. We include several regressors that vary across pairs of senders and receivers, such as political proximity, geographic proximity, the importance of trade relations and financial flows, and others. We also include separate regressors for the sender and receiving country, such as an indicator variable with a value of one if the currency c is legal tender in the sender or receiving countries, the degree of compliance of each country with AML regulations, and an index of financial development. The regression specification (1) may also include interaction effects for each currency and relevant variables, which have been omitted for the sake of brevity. Finally, we include additional country-level variables, currency fixed effects, and year fixed effects.
+
+Consistent with traditional gravity models in the trade literature, our main hypothesis is that geopolitical proximity affects positively cross-border payment flows. This would imply β2 > 0 and β3 > 0 in Equation (1). We also hypothesize that legal tender status has a positive effect on usage as the currency is acceptable by law as a valid form of payment for debts, charges, and taxes, reducing transaction costs and facilitating monetary exchanges within the country and across borders.
+
+We first present in Table 2 the results of separate OLS regressions for each major currency. We consider the U.S. dollar (USD), the euro (EUR), the British pound (GBP), the Japanese yen (JPY), the Swiss franc (CHF), the Chinese renminbi (RMB) and an aggregation of all other currencies (OTH). Since we estimate individual regressions by currency, we do not use currency fixed effects or currency interaction terms. We only use sent transfers (messages MT 103 and MT 202) as the explained variable and we omit the results of similar regressions for received transfers, which are found to be qualitatively similar.
+
+Table 2.
+
+Regression Results, Currency by Currency, Transfer-related Messages (MT 103 and MT 202)
+
+Robust standard errors in parentheses *** p<0.01, ** p<0.05, * p<0.1 Note: OLS regression. One observation is the market share (in percent) of a given currency over total amount sent between any two countries through Swift for a given year.
+
+Table 2.
+
+Regression Results, Currency by Currency, Transfer-related Messages (MT 103 and MT 202)
+
+| VARIABLES | (1) USD | (2) EUR | (3) GBP | (4) JPY | (5) CHF | (6) RMB | (7) OTHER |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Lag Share sent (log) | 0.813***(0.00489) | 0.791***(0.00633) | 0.714***(0.0317) | 0.771***(0.0347) | 0.796***(0.0278) | 0.849***(0.0249) | 0.924***(0.00340) |
+| Share of imports (log) | 0.0329(0.250) | -0.101(0.180) | -0.0324(0.0404) | -0.00758(0.0455) | -0.0381(0.0379) | 0.0778(0.0699) | 0.404**(0.187) |
+| Legal tender sender | 16.13***(1.841) | 3.626***(0.441) | 2.834***(0.416) | -4.088(10.32) | 3.200***(0.547) | 5.845***(0.897) |
+| Legal tender receiver | 14.33***(1.683) | 10.26***(0.577) | 13.87***(1.653) | 28.76***(7.054) | 11.71***(1.827) | 5.809***(0.824) |
+| Contiguous | 2.060***(0.570) | -0.875**(0.383) | -0.0405(0.0723) | -0.0679(0.174) | 0.0474(0.0658) | -0.0905(0.234) | -0.575(0.452) |
+| Common official lang | -1.311*(0.689) | 0.366(0.468) | -0.274*(0.151) | 0.0723(0.133) | 0.251***(0.0787) | 0.0105(0.0815) | -0.306(0.606) |
+| Recent colony | 0.412(0.815) | -1.788***(0.694) | 2.346***(0.499) | 0.0847(0.0649) | 0.0280(0.0484) | -0.0507(0.0569) | -0.107(0.703) |
+| Common former country | 1.291*(0.664) | -0.321(0.632) | 0.220**(0.0930) | -0.0599(0.0773) | -0.169*(0.101) | 0.301(0.228) | -0.871(0.554) |
+| Distance (log) | 1.563***(0.208) | -0.984***(0.178) | 0.0780*(0.0430) | -0.0891**(0.0354) | -0.0578(0.0529) | 0.0460(0.0476) | -0.105(0.152) |
+| Political Proximity (log) | -2.935*(1.631) | -4.897***(1.309) | -0.0929(0.323) | 0.460**(0.225) | 0.0113(0.313) | 1.750***(0.421) | 2.976***(1.087) |
+| Basel AML Score sender | 0.227(0.184) | -0.359**(0.162) | -0.0523(0.0396) | -0.0117(0.0281) | -0.00105(0.0306) | 0.0484(0.0395) | 0.0925(0.133) |
+| Basel AML Score receiver | 0.403**(0.182) | -0.368**(0.165) | -0.00712(0.0421) | 0.00106(0.0338) | -0.0112(0.0298) | 0.0539(0.0409) | -0.261**(0.131) |
+| Financial development index sender | 2.624**(1.029) | -4.860***(0.895) | 0.0509(0.208) | 0.309**(0.125) | 0.288*(0.169) | -0.258(0.185) | 0.469(0.676) |
+| Financial development index receiver | -4.847***(1.070) | -1.175(0.954) | -0.282(0.262) | 0.416**(0.169) | -0.101(0.157) | -0.393**(0.189) | -0.737(0.788) |
+| Observations | 23,280 | 23,280 | 23,280 | 23,280 | 23,280 | 23,280 | 23,280 |
+| R-squared | 0.788 | 0.805 | 0.698 | 0.883 | 0.849 | 0.670 | 0.798 |
+| ER arrangement variables | YES | YES | YES | YES | YES | YES | YES |
+| Other economic variables | YES | YES | YES | YES | YES | YES | YES |
+| Year FE | YES | YES | YES | YES | YES | YES | YES |
+| Currency FE | NO | NO | NO | NO | NO | NO | NO |
+
+Robust standard errors in parentheses *** p<0.01, ** p<0.05, * p<0.1 Note: OLS regression. One observation is the market share (in percent) of a given currency over total amount sent between any two countries through Swift for a given year.
+
+View Table
+
+Table 2.
+
+Regression Results, Currency by Currency, Transfer-related Messages (MT 103 and MT 202)
+
+| VARIABLES | (1) USD | (2) EUR | (3) GBP | (4) JPY | (5) CHF | (6) RMB | (7) OTHER |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Lag Share sent (log) | 0.813***(0.00489) | 0.791***(0.00633) | 0.714***(0.0317) | 0.771***(0.0347) | 0.796***(0.0278) | 0.849***(0.0249) | 0.924***(0.00340) |
+| Share of imports (log) | 0.0329(0.250) | -0.101(0.180) | -0.0324(0.0404) | -0.00758(0.0455) | -0.0381(0.0379) | 0.0778(0.0699) | 0.404**(0.187) |
+| Legal tender sender | 16.13***(1.841) | 3.626***(0.441) | 2.834***(0.416) | -4.088(10.32) | 3.200***(0.547) | 5.845***(0.897) |
+| Legal tender receiver | 14.33***(1.683) | 10.26***(0.577) | 13.87***(1.653) | 28.76***(7.054) | 11.71***(1.827) | 5.809***(0.824) |
+| Contiguous | 2.060***(0.570) | -0.875**(0.383) | -0.0405(0.0723) | -0.0679(0.174) | 0.0474(0.0658) | -0.0905(0.234) | -0.575(0.452) |
+| Common official lang | -1.311*(0.689) | 0.366(0.468) | -0.274*(0.151) | 0.0723(0.133) | 0.251***(0.0787) | 0.0105(0.0815) | -0.306(0.606) |
+| Recent colony | 0.412(0.815) | -1.788***(0.694) | 2.346***(0.499) | 0.0847(0.0649) | 0.0280(0.0484) | -0.0507(0.0569) | -0.107(0.703) |
+| Common former country | 1.291*(0.664) | -0.321(0.632) | 0.220**(0.0930) | -0.0599(0.0773) | -0.169*(0.101) | 0.301(0.228) | -0.871(0.554) |
+| Distance (log) | 1.563***(0.208) | -0.984***(0.178) | 0.0780*(0.0430) | -0.0891**(0.0354) | -0.0578(0.0529) | 0.0460(0.0476) | -0.105(0.152) |
+| Political Proximity (log) | -2.935*(1.631) | -4.897***(1.309) | -0.0929(0.323) | 0.460**(0.225) | 0.0113(0.313) | 1.750***(0.421) | 2.976***(1.087) |
+| Basel AML Score sender | 0.227(0.184) | -0.359**(0.162) | -0.0523(0.0396) | -0.0117(0.0281) | -0.00105(0.0306) | 0.0484(0.0395) | 0.0925(0.133) |
+| Basel AML Score receiver | 0.403**(0.182) | -0.368**(0.165) | -0.00712(0.0421) | 0.00106(0.0338) | -0.0112(0.0298) | 0.0539(0.0409) | -0.261**(0.131) |
+| Financial development index sender | 2.624**(1.029) | -4.860***(0.895) | 0.0509(0.208) | 0.309**(0.125) | 0.288*(0.169) | -0.258(0.185) | 0.469(0.676) |
+| Financial development index receiver | -4.847***(1.070) | -1.175(0.954) | -0.282(0.262) | 0.416**(0.169) | -0.101(0.157) | -0.393**(0.189) | -0.737(0.788) |
+| Observations | 23,280 | 23,280 | 23,280 | 23,280 | 23,280 | 23,280 | 23,280 |
+| R-squared | 0.788 | 0.805 | 0.698 | 0.883 | 0.849 | 0.670 | 0.798 |
+| ER arrangement variables | YES | YES | YES | YES | YES | YES | YES |
+| Other economic variables | YES | YES | YES | YES | YES | YES | YES |
+| Year FE | YES | YES | YES | YES | YES | YES | YES |
+| Currency FE | NO | NO | NO | NO | NO | NO | NO |
+
+Robust standard errors in parentheses *** p<0.01, ** p<0.05, * p<0.1 Note: OLS regression. One observation is the market share (in percent) of a given currency over total amount sent between any two countries through Swift for a given year.
+
+Regression results show that currency usage tends to display significant inertia although there is some variation across currencies. The rich set of variables and fixed effects included in the model performs quite well in explaining the observed variation in cross-border flows, as shown in the relatively high R2 values. The inertia effect is the lowest for the GBP and the highest for other currencies and the RMB, with an estimated range between 0.71 and 0.92. For all currencies, inertia has a very high level of statistical significance, and thus is a major factor that explains cross-border flows between countries.
+
+The legal tender status is a relevant factor that explains currency usage. The use of a currency that is legal tender in the sender or receiving country could increase its market share by up to 29 percentage points. The combined legal tender effect in both sender and receiver countries could increase the currency market share by up to 30 percentage points. However, there is considerable variation across currencies and the legal tender effect is relatively more important for the USD than for the rest of the currencies.
+
+We now turn to geo-political proximity between sender and receiving countries. We find that geographical contiguity, having a common official language and having a former colonial relationship generally have a positive effect on currency usage, but the effect is relatively small. In some cases, we find unintuitive negative relationships, particularly for geographically contiguous country pairs. Higher geographic distance between countries also tends to generate a negative effect on currency usage. In the case of political proximity, we find a positive and statistically significant effect for the JPY, RMB and other currencies. A one percent increase in political proximity could increase the market share of the RMB and other currencies by about 1.8 and 3 percentage points, respectively. Interestingly, political proximity has a negative effect for USD and EUR, perhaps suggesting the substantial use of these currencies in some low-income or emerging countries that may not be highly politically aligned with advanced economies.
+
+The effect of anti-money laundering compliance and financial development varies across currencies. We find a negative effect on usage for the U.S. dollar and euro and a positive effect for the other currencies. This is perhaps explained by the fact that countries with weaker financial development and integrity frameworks tend to use dominant reserve currencies that enable easier connection with international markets.
+
+Table 3 shows regression results for all currencies combined, where we include currency interactions with the main variables and also currency fixed effects. For the sake of brevity, we only show interaction effects for each currency for the main variables of interest. The results are qualitatively similar to the results shown in Table 2 and confirm the main findings previously discussed. Legal tender status for both sender and receiving countries increases the market share of the currency between 0.8 and 12.3 percentage points, depending on the currency. Greater political proximity tends to be a relevant factor for RMB, and the effect is the largest for other currencies.16
+
+Table 3.
+
+Regression Results, Pooled Panel of Currencies, Transfers (Messages MT 103 and MT 202)
+
+Robust standard errors in parentheses *** p<0.01, ** p<0.05, * p<0.1 Note: OLS regression for all currencies. One observation is the market share of a given currency over total amount sent between any two countries through Swift for a given year. Only interaction effects are shown.
+
+Table 3.
+
+Regression Results, Pooled Panel of Currencies, Transfers (Messages MT 103 and MT 202)
+
+| VARIABLES | USD Share sent | EUR Share sent | GBP Share sent | JPY Share sent | CHF Share sent | RMB Share sent | OTH Share sent |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Interaction effects currency | Lengal tender sender | 4.906***(0.493) | 3.438***(0.300) | 1.779***(0.309) | 3.347***(0.555) | 1.894***(0.415) | 5.995***(0.884) |
+| Lengal tender receiver | 8.590***(0.501) | 6.857***(0.383) | 6.508***(0.566) | 12.32***(0.412) | 7.044***(0.789) | 5.632***(0.791) |
+| Political Proximity (log) | -5.379***(1.303) | -0.589(0.980) | -0.629**(0.291) | -0.335(0.235) | -0.367(0.255) | 0.587*(0.306) | 5.558***(0.821) |
+| Basel AML Score sender | 0.462***(0.129) | -0.522***(0.121) | -0.0492(0.0368) | -0.0194(0.0304) | -0.00562(0.0333) | 0.0534(0.0367) | 0.172**(0.0871) |
+| Basel AML Score receiver | 0.823***(0.130) | -0.360***(0.125) | -0.0458(0.0381) | -0.0545*(0.0324) | -0.0517*(0.0283) | 0.0103(0.0340) | -0.548***(0.0962) |
+| Financial development index sender | -0.376(0.591) | -4.108***(0.531) | 0.185(0.179) | 0.321**(0.155) | 0.273*(0.159) | 0.261(0.155) | 2.200***(0.399) |
+| Financial development index receiver | -4.393***(0.583) | -4.274***(0.527) | 0.381*(0.199) | 0.543***(0.175) | 0.412**(0.173) | 0.509***(0.187) | -0.229(0.408) |
+| Observations | 209,520 | 209,520 | 209,520 | 209,520 | 209,520 | 209,520 | 209,520 |
+| R-squared | 0.872 | 0.872 | 0.872 | 0.872 | 0.872 | 0.872 | 0.872 |
+| ER arrangement variables | YES | YES | YES | YES | YES | YES | YES |
+| Other economic variables | YES | YES | YES | YES | YES | YES | YES |
+| Year FE | YES | YES | YES | YES | YES | YES | YES |
+| Currency FE | YES | YES | YES | YES | YES | YES | YES |
+
+Robust standard errors in parentheses *** p<0.01, ** p<0.05, * p<0.1 Note: OLS regression for all currencies. One observation is the market share of a given currency over total amount sent between any two countries through Swift for a given year. Only interaction effects are shown.
+
+View Table
+
+Table 3.
+
+Regression Results, Pooled Panel of Currencies, Transfers (Messages MT 103 and MT 202)
+
+| VARIABLES | USD Share sent | EUR Share sent | GBP Share sent | JPY Share sent | CHF Share sent | RMB Share sent | OTH Share sent |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Interaction effects currency | Lengal tender sender | 4.906***(0.493) | 3.438***(0.300) | 1.779***(0.309) | 3.347***(0.555) | 1.894***(0.415) | 5.995***(0.884) |
+| Lengal tender receiver | 8.590***(0.501) | 6.857***(0.383) | 6.508***(0.566) | 12.32***(0.412) | 7.044***(0.789) | 5.632***(0.791) |
+| Political Proximity (log) | -5.379***(1.303) | -0.589(0.980) | -0.629**(0.291) | -0.335(0.235) | -0.367(0.255) | 0.587*(0.306) | 5.558***(0.821) |
+| Basel AML Score sender | 0.462***(0.129) | -0.522***(0.121) | -0.0492(0.0368) | -0.0194(0.0304) | -0.00562(0.0333) | 0.0534(0.0367) | 0.172**(0.0871) |
+| Basel AML Score receiver | 0.823***(0.130) | -0.360***(0.125) | -0.0458(0.0381) | -0.0545*(0.0324) | -0.0517*(0.0283) | 0.0103(0.0340) | -0.548***(0.0962) |
+| Financial development index sender | -0.376(0.591) | -4.108***(0.531) | 0.185(0.179) | 0.321**(0.155) | 0.273*(0.159) | 0.261(0.155) | 2.200***(0.399) |
+| Financial development index receiver | -4.393***(0.583) | -4.274***(0.527) | 0.381*(0.199) | 0.543***(0.175) | 0.412**(0.173) | 0.509***(0.187) | -0.229(0.408) |
+| Observations | 209,520 | 209,520 | 209,520 | 209,520 | 209,520 | 209,520 | 209,520 |
+| R-squared | 0.872 | 0.872 | 0.872 | 0.872 | 0.872 | 0.872 | 0.872 |
+| ER arrangement variables | YES | YES | YES | YES | YES | YES | YES |
+| Other economic variables | YES | YES | YES | YES | YES | YES | YES |
+| Year FE | YES | YES | YES | YES | YES | YES | YES |
+| Currency FE | YES | YES | YES | YES | YES | YES | YES |
+
+Robust standard errors in parentheses *** p<0.01, ** p<0.05, * p<0.1 Note: OLS regression for all currencies. One observation is the market share of a given currency over total amount sent between any two countries through Swift for a given year. Only interaction effects are shown.
+
+We now turn our focus to trade-related payments (messages MT 400 and MT 700) and apply an identical empirical methodology. Table 4 shows the regression estimates for each currency. Overall, results are qualitatively similar to those previously discussed, with some differences. Inertia effects are large and have a high explanatory power, but they are generally lower in magnitude than in previous regressions. The effect of legal tender status is also positive and economically significant, but lower in magnitude compared to previous regressions. The effect of political proximity is particularly high for other currencies. Table 5 shows the results for the full regression specification (1) that considers all currencies, including currency interactions to main variables, and currency fixed effects. The results are qualitatively similar to the results shown in Table 4 and confirm the main findings previously discussed.
+
+Table 4.
+
+Regression Results, Currency by Currency, Trade-related Messages (MT 400 and MT 700)
+
+Robust standard errors in parentheses *** p<0.01, ** p<0.05, * p<0.1 Note: OLS regression. One observation is the market share (in percentage) of a given currency over trade-related amounts sent between any two countries through Swift for a given year.
+
+Table 4.
+
+Regression Results, Currency by Currency, Trade-related Messages (MT 400 and MT 700)
+
+| VARIABLES | USD Share sent | (2) EUR Share sent | (3) GBP Share sent | JPY Share sent | (5) CHF Share sent | (6) RMB Share sent | (7) OTHER Share sent |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Lag Share sent (log) | 0.715***(0.00666) | 0.696***(0.00735) | 0.624***(0.0414) | 0.757***(0.0351) | 0.561***(0.131) | 0.676***(0.125) | 0.587***(0.0291) |
+| imports USD sharelog | 0.726**(0.287) | -0.718***(0.265) | -0.0904**(0.0449) | 0.0378(0.0535) | -0.0151(0.03^0) | 0.0417**(0.0206) | 0.147(0.144) |
+| Legal tender sender | 3.884**(1.543) | 3.215***(0.665) | 5.333***(0.734) | 4.253(7.951) | 0.223(0.144) | 0.430*(0.249) |
+| Legal tender receiver | 7.224***(1.377) | 8.526***(0.684) | 2.122***(0.634) | 5.589(12.21) | 1.569***(0.477) | 0.850***(0.216) |
+| Contiguous | 1.656**(0.760) | -1.984***(0.730) | -0.0196(0.0954) | -0.115**(0.0549) | 0.0287(0.0342) | 0.102(0.0794) | 1.437***(0.448) |
+| Common official lang | -1.446**(0.564) | 0.0559(0.522) | 0.441***(0.115) | 0.0299(0.0866) | -0.0251(0.0228) | 0.0429(0.0271) | 1.103***(0.196) |
+| Recent colony | 0.0196(1.372) | -0.773(1.182) | 0.738(0.640) | 0.166**(0.0795) | -0.00947(0.0575) | 0.0136(0.00950) | 0.558(0.830) |
+| Common former country | -0.199(1.134) | 0.646(1.088) | -0.0612(0.0712) | -0.101(0.0860) | 0.0884**(0.0443) | -0.0203(0.0447) | -0.765(0.583) |
+| Distance (log) | 2.991***(0.258) | -2.781***(0.246) | 0.0411(0.0348) | -0.0663**(0.0272) | 0.0479*(0.0271) | 0.0107(0.00940) | -0.0116(0.0825) |
+| Political Proximity (log) | -1.711(1.641) | -1.131(1.539) | 0.481**(0.221) | 0.425(0.278) | -0.276***(0.0895) | 0.0932(0.0880) | 1.728***(0.519) |
+| Basel AML Score sender | 0.827***(0.204) | -0.799***(0.194) | -0.0105(0.0321) | -0.0462(0.0340) | 0.00887(0.0109) | 0.0350***(0.00927) | -0.00478(0.0647) |
+| Basel AML Score receiver | 2.285***(0.216) | -1.942***(0.212) | -0.0176(0.0422) | 0.0128(0.0289) | 0.00958(0.00963) | -0.00142(0.00826) | 0.0281(0.0701) |
+| Financial development index sender | 1.746(1.218) | -1.918(1.205) | -0.0187(0.176) | -0.278*(0.155) | -0.0554(0.0732) | 0.0671(0.0543) | -0.580(0.367) |
+| Financial development index receiver | -0.804(1.193) | 0.304(1.163) | 0.0941(0.218) | -0.0756(0.135) | 0.0360(0.0515) | 0.0730(0.0474) | -1.764***(0.424) |
+| Observations | 22,964 | 22,964 | 22,964 | 22,964 | 22,964 | 22,964 | 22,964 |
+| R-squared | 0.696 | 0.701 | 0.588 | 0.775 | 0.385 | 0.454 | 0.395 |
+| ER arrangement variables | YES | YES | YES | YES | YES | YES | YES |
+| Other economic variables | YES | YES | YES | YES | YES | YES | YES |
+| Year FE | YES | YES | YES | YES | YES | YES | YES |
+| Currency FE | NO | NO | NO | NO | NO | NO | NO |
+
+Robust standard errors in parentheses *** p<0.01, ** p<0.05, * p<0.1 Note: OLS regression. One observation is the market share (in percentage) of a given currency over trade-related amounts sent between any two countries through Swift for a given year.
+
+View Table
+
+Table 4.
+
+Regression Results, Currency by Currency, Trade-related Messages (MT 400 and MT 700)
+
+| VARIABLES | USD Share sent | (2) EUR Share sent | (3) GBP Share sent | JPY Share sent | (5) CHF Share sent | (6) RMB Share sent | (7) OTHER Share sent |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Lag Share sent (log) | 0.715***(0.00666) | 0.696***(0.00735) | 0.624***(0.0414) | 0.757***(0.0351) | 0.561***(0.131) | 0.676***(0.125) | 0.587***(0.0291) |
+| imports USD sharelog | 0.726**(0.287) | -0.718***(0.265) | -0.0904**(0.0449) | 0.0378(0.0535) | -0.0151(0.03^0) | 0.0417**(0.0206) | 0.147(0.144) |
+| Legal tender sender | 3.884**(1.543) | 3.215***(0.665) | 5.333***(0.734) | 4.253(7.951) | 0.223(0.144) | 0.430*(0.249) |
+| Legal tender receiver | 7.224***(1.377) | 8.526***(0.684) | 2.122***(0.634) | 5.589(12.21) | 1.569***(0.477) | 0.850***(0.216) |
+| Contiguous | 1.656**(0.760) | -1.984***(0.730) | -0.0196(0.0954) | -0.115**(0.0549) | 0.0287(0.0342) | 0.102(0.0794) | 1.437***(0.448) |
+| Common official lang | -1.446**(0.564) | 0.0559(0.522) | 0.441***(0.115) | 0.0299(0.0866) | -0.0251(0.0228) | 0.0429(0.0271) | 1.103***(0.196) |
+| Recent colony | 0.0196(1.372) | -0.773(1.182) | 0.738(0.640) | 0.166**(0.0795) | -0.00947(0.0575) | 0.0136(0.00950) | 0.558(0.830) |
+| Common former country | -0.199(1.134) | 0.646(1.088) | -0.0612(0.0712) | -0.101(0.0860) | 0.0884**(0.0443) | -0.0203(0.0447) | -0.765(0.583) |
+| Distance (log) | 2.991***(0.258) | -2.781***(0.246) | 0.0411(0.0348) | -0.0663**(0.0272) | 0.0479*(0.0271) | 0.0107(0.00940) | -0.0116(0.0825) |
+| Political Proximity (log) | -1.711(1.641) | -1.131(1.539) | 0.481**(0.221) | 0.425(0.278) | -0.276***(0.0895) | 0.0932(0.0880) | 1.728***(0.519) |
+| Basel AML Score sender | 0.827***(0.204) | -0.799***(0.194) | -0.0105(0.0321) | -0.0462(0.0340) | 0.00887(0.0109) | 0.0350***(0.00927) | -0.00478(0.0647) |
+| Basel AML Score receiver | 2.285***(0.216) | -1.942***(0.212) | -0.0176(0.0422) | 0.0128(0.0289) | 0.00958(0.00963) | -0.00142(0.00826) | 0.0281(0.0701) |
+| Financial development index sender | 1.746(1.218) | -1.918(1.205) | -0.0187(0.176) | -0.278*(0.155) | -0.0554(0.0732) | 0.0671(0.0543) | -0.580(0.367) |
+| Financial development index receiver | -0.804(1.193) | 0.304(1.163) | 0.0941(0.218) | -0.0756(0.135) | 0.0360(0.0515) | 0.0730(0.0474) | -1.764***(0.424) |
+| Observations | 22,964 | 22,964 | 22,964 | 22,964 | 22,964 | 22,964 | 22,964 |
+| R-squared | 0.696 | 0.701 | 0.588 | 0.775 | 0.385 | 0.454 | 0.395 |
+| ER arrangement variables | YES | YES | YES | YES | YES | YES | YES |
+| Other economic variables | YES | YES | YES | YES | YES | YES | YES |
+| Year FE | YES | YES | YES | YES | YES | YES | YES |
+| Currency FE | NO | NO | NO | NO | NO | NO | NO |
+
+Robust standard errors in parentheses *** p<0.01, ** p<0.05, * p<0.1 Note: OLS regression. One observation is the market share (in percentage) of a given currency over trade-related amounts sent between any two countries through Swift for a given year.
+
+Table 5.
+
+Regression Results, Pooled Panel of Currencies, Trade-related Messages (Messages MT 400 and MT 700)
+
+Robust standard errors in parentheses *** p<0.01, ** p<0.05, * p<0.1 OLS regression for all currencies. One observation is the market share of a given currency over trade-related amounts sent between any two countries through Swift for a given year. Only interaction effects are shown.
+
+Table 5.
+
+Regression Results, Pooled Panel of Currencies, Trade-related Messages (Messages MT 400 and MT 700)
+
+| VARIABLES | USD Share sent | EUR Share sent | GBP Share sent | JPY Share sent | CHF Share sent | RMB Share sent | OTH Share sent |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Interaction effects currency | Lengal tender sender | 1.776**(0.739) | 4.734***(0.442) | 3.479***(0.615) | 1.100**(0.469) | -0.109(0.164) | 0.220(0.168) |
+| Lengal tender receiver | 3.987***(0.601) | 8.487***(0.499) | 1.538**(0.663) | 9.484***(0.771) | 0.368(0.417) | 0.492**(0.225) |
+| Political Proximity (log) | -9.711***(1.426) | 5.715***(1.203) | 0.359(0.286) | 0.311(0.262) | 0.110(0.203) | 0.152(0.195) | 1.440***(0.502) |
+| Basel AML Score sender | 1.479***(0.152) | -0.984***(0.150) | -0.0670**(0.0321) | -0.0889***(0.0340) | -0.0293(0.0261) | -0.0222(0.0255) | -0.0746(0.0505) |
+| Basel AML Score receiver | 2.324***(0.161) | -2.015***(0.161) | -0.0392(0.0375) | -0.0436(0.0315) | -0.0116(0.0265) | -0.0143(0.0268) | -0.0883(0.0540) |
+| Financial development index receiver | 2.038***(0.709) | -4.753***(0.690) | 0.129(0.180) | 0.0332(0.178) | 0.117(0.164) | 0.127(0.162) | 0.500**(0.236) |
+| Financial development index receiver | 1.698**(0.739) | -5.429***(0.697) | 0.363*(0.191) | 0.246(0.169) | 0.365**(0.157) | 0.333**(0.160) | 0.0295(0.231) |
+| Observations | 206,676 | 206,676 | 206,676 | 206,676 | 206,676 | 206,676 | 206,676 |
+| R-squared | 0.871 | 0.871 | 0.871 | 0.871 | 0.871 | 0.871 | 0.871 |
+| ER arrangement variables | YES | YES | YES | YES | YES | YES | YES |
+| Other economic variables | YES | YES | YES | YES | YES | YES | YES |
+| Year FE | YES | YES | YES | YES | YES | YES | YES |
+| Currency FE | YES | YES | YES | YES | YES | YES | YES |
+
+Robust standard errors in parentheses *** p<0.01, ** p<0.05, * p<0.1 OLS regression for all currencies. One observation is the market share of a given currency over trade-related amounts sent between any two countries through Swift for a given year. Only interaction effects are shown.
+
+View Table
+
+Table 5.
+
+Regression Results, Pooled Panel of Currencies, Trade-related Messages (Messages MT 400 and MT 700)
+
+| VARIABLES | USD Share sent | EUR Share sent | GBP Share sent | JPY Share sent | CHF Share sent | RMB Share sent | OTH Share sent |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Interaction effects currency | Lengal tender sender | 1.776**(0.739) | 4.734***(0.442) | 3.479***(0.615) | 1.100**(0.469) | -0.109(0.164) | 0.220(0.168) |
+| Lengal tender receiver | 3.987***(0.601) | 8.487***(0.499) | 1.538**(0.663) | 9.484***(0.771) | 0.368(0.417) | 0.492**(0.225) |
+| Political Proximity (log) | -9.711***(1.426) | 5.715***(1.203) | 0.359(0.286) | 0.311(0.262) | 0.110(0.203) | 0.152(0.195) | 1.440***(0.502) |
+| Basel AML Score sender | 1.479***(0.152) | -0.984***(0.150) | -0.0670**(0.0321) | -0.0889***(0.0340) | -0.0293(0.0261) | -0.0222(0.0255) | -0.0746(0.0505) |
+| Basel AML Score receiver | 2.324***(0.161) | -2.015***(0.161) | -0.0392(0.0375) | -0.0436(0.0315) | -0.0116(0.0265) | -0.0143(0.0268) | -0.0883(0.0540) |
+| Financial development index receiver | 2.038***(0.709) | -4.753***(0.690) | 0.129(0.180) | 0.0332(0.178) | 0.117(0.164) | 0.127(0.162) | 0.500**(0.236) |
+| Financial development index receiver | 1.698**(0.739) | -5.429***(0.697) | 0.363*(0.191) | 0.246(0.169) | 0.365**(0.157) | 0.333**(0.160) | 0.0295(0.231) |
+| Observations | 206,676 | 206,676 | 206,676 | 206,676 | 206,676 | 206,676 | 206,676 |
+| R-squared | 0.871 | 0.871 | 0.871 | 0.871 | 0.871 | 0.871 | 0.871 |
+| ER arrangement variables | YES | YES | YES | YES | YES | YES | YES |
+| Other economic variables | YES | YES | YES | YES | YES | YES | YES |
+| Year FE | YES | YES | YES | YES | YES | YES | YES |
+| Currency FE | YES | YES | YES | YES | YES | YES | YES |
+
+Robust standard errors in parentheses *** p<0.01, ** p<0.05, * p<0.1 OLS regression for all currencies. One observation is the market share of a given currency over trade-related amounts sent between any two countries through Swift for a given year. Only interaction effects are shown.
+
+To summarize our results, we find that inertia, legal tender status, and geo-political proximity play a major role in determining currency usage. In line with the literature, we find a significant level of inertia in currency usage for cross-border payments, reflecting the strong network effects and switching costs. Consistent with the well-known gravity models in the trade literature, political proximity can greatly affect cross-border payment flows between countries, along with geographic proximity, and other cultural factors. Finally, we find a relatively large positive effect of the legal tender status, which could boost currency usage significantly. Trade ties or financial linkages do not appear to have a major impact on currency choices.
+
+## Hypothetical Simulations
+
+Using the previous estimates, we perform various counterfactual simulations to get some insights on the future market share of some currencies under several hypothetical scenarios. These hypothetical simulations are performed by recursively estimating the one-year ahead OLS best prediction over a 20-year horizon (2020 to 2040). In the simulation scenarios presented we do not change any of the estimated values of the regressions previously discussed, with the exception explained in each simulation.17
+
+In Figure 7, we consider a hypothetical scenario where the RMB becomes legal tender in some Asian and African countries over the years. We assume a 3 percent probability that the RMB becomes legal tender in Asian and African countries every year.18 Note that this is a highly stylized scenario as in practice some countries might adopt a foreign currency de facto (i.e., being widely used as means of exchange and store of value), rather than granting legal tender status de jure. We show the effect on the share of payments in RMB for China, and the rest of the countries. In order to separate the inertia effect from the legal tender effect, we also consider a scenario where only inertia effects apply so we can better identify the incremental effect of the legal tender status versus the pure inertia effect. In Figure 7 we also include the average effect for countries different from China. Results show that a relatively small but sustained increase in legal tender status in Africa and Asia could lead the RMB to reach market share levels above 20 percent in some of these countries. This large effect is not observed in China because a very large fraction of China’s cross-border payments is with advanced economies such as the U.S., Germany, and Japan, but only a very small fraction of these payments is in RMB. Therefore, this scenario affects mainly African and Asian countries, but it does not have a substantial impact on the market share of the RMB in China. Although this scenario would imply a relevant presence of the RMB in small countries in Africa or Asia, it would not substantially change the relatively small presence of the RMB in the global cross-border payments market.
+
+View Full Size
+
+Figure 7.
+
+Dynamic Projection of Market Share Growth for RMB, Changes in Legal Tender Status
+
+Citation: IMF Working Papers 2023, 072; 10.5089/9798400235375.001.A001
+
+Note: One observation in this figure represents the simulated market share of the RMB for cross-border payments in a given country and year. We assume that there is a 3 percent probability that the RMB becomes legal tender in Asian and African countries every year (except for India and Japan).
+
+Download figure as PowerPoint slide
+
+- Download Figure
+
+In Figure 8, we estimate the effect of a hypothetical change in the political proximity variable over the years. In Figure 8a and Figure 8c we present a political proximity scenario where each year political proximity increases randomly across countries by 5 percent, compared to the previous year. In Figure 8b and Figure 8d we present a hypothetical political fragmentation scenario where political proximity across countries decreases randomly by 5 percent. In these two scenarios, the larger effect on other currencies compared to the RMB is driven by the greater value of the parameter estimate shown in previous regressions. As previously discussed, the effect on flows in China is limited as a majority of China’s cross-border payments are with advanced economies such as the U.S., Germany, and Japan, but only a small fraction of these payments is in RMB.
+
+View Full Size
+
+Figure 8.
+
+Dynamic Projection of Market Share Growth for OTH and RMB, Changes in Political Proximity
+
+Citation: IMF Working Papers 2023, 072; 10.5089/9798400235375.001.A001
+
+Note: One observation in this figure represents the market share of the RMB and other currencies for cross-border payments in a given country and year. We assume that there is a random increase in political proximity of 5 percent for all countries in every year.
+
+Download figure as PowerPoint slide
+
+- Download Figure
+
+Overall, these results reinforce the importance of inertia effects in the IMS and the relatively slow impact of some of the key variables considered. Changes in the legal tender status in countries are usually controversial political decisions that are not easy to implement, particularly when they imply the usage of a foreign currency. Even if small countries in certain continents decide to adopt a foreign currency, our results show that this would not likely change the global currency landscape for cross-border payments. Similar conclusions apply to the scenario where changes in political fragmentation or political proximity are considered, which tend move relatively slowly over the years.
+
+The large inertia also reaffirms the potential limitations of exchange rate movements to buffer domestic economies from macroeconomic shocks. Consistent with the dominant pricing paradigm (Gopinath et al, 2020; Adler et al, 2020), large exchange rate movements may be required for rebalancing external positions when trade flows are mainly dominated by a third-country currency. The use of supportive macroeconomic policies may be justified when large exchange rate fluctuations carry adverse effects (Adler et al, 2020).
+
+These results also have implications for the emergence of digital money. The large inertia effects suggests that in the short and medium term a drastic change in the distribution of world currencies or their digital successors—the e-Dollar or the e-Euro—would be unlikely. A possible future scenario could imply a smooth transition from the U.S. dollar or the euro to a digital version of these currencies, without changing drastically their market shares, accompanied by a slow increase of usage of other competing digital currencies, which could also experience a higher degree of usage with closer regional and trading partners, or with political allies. Also, many of the key variables in our model are usually slowly moving, or completely stationary over the sample period. Therefore, we would not expect rapid changes in legal tender status, political distance, or financial development in the near future as these variables are also subject to significant inertia, or political and regulatory barriers.
+
+Nonetheless, the impact of new technologies remains highly uncertain, and a much more abrupt geopolitical shift could accelerate the transformation of the IMS. A broader introduction of crypto assets as legal tender could weaken the role of fiat money and significantly impact the IMS. At the same time, a decisive effort of central banks to digitalize public money, or introduce CBDCs, could also facilitate rapid currency configuration changes by reducing the cost of switching, though the impact remains highly uncertain. Further geo-political tensions could also accelerate the fragmentation of the payment system and give rise to new digital currency blocs in a multipolar IMS.
+
+## Conclusion
+
+Using the highly granular Swift cross-border payments database, we investigate regional patterns in currency usage for cross-border payments. We empirically estimate the drivers of cross-region variations, particularly focusing on legal tender status, geo-political distance, and draw future implications for the IMS.
+
+In line with other aspects of the IMS, such as the configuration of reserve currencies, we find that currencies in global payments exhibits a high degree of inertia. While inertia is large for all currencies, we still observe some differences across major currencies. At the same time, legal tender status, geographic distance, and political distance play an important role in determining variation in currency usage across countries. There are, nevertheless, major differences between the U.S. dollar and other currencies. Geographic and geopolitical distance would preclude the acceptance of a currency other than the U.S. dollar, but this does not apply to the U.S. dollar. Additionally, geographic contiguity, having a common official language, or having a prior colonial relationship may have a positive effect on currency usage, but the effect is typically small. Finally, trade linkages appear to matter for emerging currencies, while less so for established currencies.
+
+The empirical findings provide useful preliminary insights into the possible scenarios of future evolution of the IMS. Our results could help better quantifying the implications of the adoption of a given CBDC in multiple countries. The large inertia effects suggests that in the near-term a drastic change in the distribution of global currencies or their digital successors—the e-Dollar or the e-Euro—would be unlikely. History has taught us that profound transformations of the IMS have typically been slow. Nevertheless, the outlook is highly uncertain and future major geo-political events or a rapid and decisive transition towards digitalization could drastically accelerate the transformation of the IMS towards multipolarity.
+
+## Annex I. Statistics for Main Variables
+
+| Variable | Count | Mean | St. Dev | Min | P25 | P50 | P75 | Max | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Basel AML Score | 1,280 | 5.6 | 1.2 | 1.8 | 4.8 | 5.6 | 6.5 | 8.6 | Higher value indicates a higher risk of money laundering and terrorist financing |
+| Distance between Capitals (km) | 50,176 | 8,472 | 4,705 | 0.9 | 4,768 | 8,081 | 12,005 | 19,951 |
+| Financial Development Index | 1,920 | 0.3 | 0.2 | 0 | 0.1 | 0.2 | 0.4 | 1 | Higher value indicates a better developed financial system |
+| Political Proximity | 407,616 | 0.8 | 0.2 | 0 | 0.7 | 0.9 | 0.9 | 1 | Higher value indicates greater political alignment |
+| Prob of Default | 1,186 | 1.0% | 1.1% | 0% | 0.4% | 0.7% | 1.1% | 13.7% | Higher value is worse as there is a higher prob. of default |
+| Sov. Rating | 1,496 | 13.8 | 8.4 | 1 | 8 | 14 | 19 | 33 | Higher value is a worse sovereign rating |
+| Border Contiguity | 50,176 | 0 | 0.1 | 0 | 0 | 0 | 0 | 1 | Most countries do not share a border |
+| Common Official Language | 50,176 | 0.2 | 0.4 | 0 | 0 | 0 | 0 | 1 | Most countries do not share common official language |
+| Former Colonial Relationship | 50,176 | 0 | 0.1 | 0 | 0 | 0 | 0 | 1 | Most country relationships are not one of colonizer-colony |
+| Former Single Country | 50,176 | 0 | 0.1 | 0 | 0 | 0 | 0 | 1 | Most countries were not previously part of the same country |
+
+View Table
+
+| Variable | Count | Mean | St. Dev | Min | P25 | P50 | P75 | Max | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Basel AML Score | 1,280 | 5.6 | 1.2 | 1.8 | 4.8 | 5.6 | 6.5 | 8.6 | Higher value indicates a higher risk of money laundering and terrorist financing |
+| Distance between Capitals (km) | 50,176 | 8,472 | 4,705 | 0.9 | 4,768 | 8,081 | 12,005 | 19,951 |
+| Financial Development Index | 1,920 | 0.3 | 0.2 | 0 | 0.1 | 0.2 | 0.4 | 1 | Higher value indicates a better developed financial system |
+| Political Proximity | 407,616 | 0.8 | 0.2 | 0 | 0.7 | 0.9 | 0.9 | 1 | Higher value indicates greater political alignment |
+| Prob of Default | 1,186 | 1.0% | 1.1% | 0% | 0.4% | 0.7% | 1.1% | 13.7% | Higher value is worse as there is a higher prob. of default |
+| Sov. Rating | 1,496 | 13.8 | 8.4 | 1 | 8 | 14 | 19 | 33 | Higher value is a worse sovereign rating |
+| Border Contiguity | 50,176 | 0 | 0.1 | 0 | 0 | 0 | 0 | 1 | Most countries do not share a border |
+| Common Official Language | 50,176 | 0.2 | 0.4 | 0 | 0 | 0 | 0 | 1 | Most countries do not share common official language |
+| Former Colonial Relationship | 50,176 | 0 | 0.1 | 0 | 0 | 0 | 0 | 1 | Most country relationships are not one of colonizer-colony |
+| Former Single Country | 50,176 | 0 | 0.1 | 0 | 0 | 0 | 0 | 1 | Most countries were not previously part of the same country |
+
+## References
+
+Adler, G., Casas, C., Cubeddu, L., Gopinath, G., Li, N., Meleshchuk, S., Buitron, C., Puy, D. and Timmer, Y., 2020. Dominant currencies and external adjustment. Staff Discussion Note 20/05, International Monetary Fund.
+
+Adler, G., Casas, C., Cubeddu, L., Gopinath, G., Li, N., Meleshchuk, S., Buitron, C., Puy, D. and Timmer, Y., 2020. Dominant currencies and external adjustment. Staff Discussion Note 20/05, International Monetary Fund.)| false
+
+- Export Citation
+- Search Google Scholar
+
+Alesina A., and Dollar D., 2000. “Who Gives Foreign Aid to Whom and Why?” Journal of Economic Growth 5 (1): 33–63.
+
+Alesina A., and Dollar D., 2000. “Who Gives Foreign Aid to Whom and Why?” Journal of Economic Growth 5 (1): 33–63.)| false
+
+- Export Citation
+- Search Google Scholar
+
+Bailey, M. A., Strezhnev, A. and Voeten, E., 2017. Estimating dynamic state preferences from United Nations voting data. Journal of Conflict Resolution, 61(2), pp.430–456.
+
+Bailey, M. A., Strezhnev, A. and Voeten, E., 2017. Estimating dynamic state preferences from United Nations voting data. Journal of Conflict Resolution, 61(2), pp.430–456.)| false
+
+- Export Citation
+- Search Google Scholar
+
+Ball M., 1951. “Bloc Voting in the General Assembly.” International Organization 5 (1): 3–31.
+
+Ball M., 1951. “Bloc Voting in the General Assembly.” International Organization 5 (1): 3–31.)| false
+
+- Export Citation
+- Search Google Scholar
+
+BIS, 2022. The Future Monetary System. In Annual Report, Bank of International Settlements.
+
+BIS, 2022. The Future Monetary System. In Annual Report, Bank of International Settlements.)| false
+
+- Export Citation
+- Search Google Scholar
+
+Brunnermeier, M. K., James, H. and Landau, J. P., 2019. The digitalization of money (No. w26300). National Bureau of Economic Research.
+
+Brunnermeier, M. K., James, H. and Landau, J. P., 2019. The digitalization of money (No. w26300). National Bureau of Economic Research.)| false
+
+- Export Citation
+- Search Google Scholar
+
+Carton, B., Hu, N., Mongardini, J., Moriya, K. and Radzikowski, A., 2020. Improving the Short-term Forecast of World Trade During the Covid-19 Pandemic Using Swift Data on Letters of Credit. IMF Working Paper No. 20/247.
+
+Carton, B., Hu, N., Mongardini, J., Moriya, K. and Radzikowski, A., 2020. Improving the Short-term Forecast of World Trade During the Covid-19 Pandemic Using Swift Data on Letters of Credit. IMF Working Paper No. 20/247.)| false
+
+- Export Citation
+- Search Google Scholar
+
+Dreher A., and Jensen N., 2007. “Independent Actor or Agent? An Empirical Analysis of the Impact of U.S. Interests on International Monetary Fund Conditions.” The Journal of Law and Economics 50:105–24.
+
+Dreher A., and Jensen N., 2007. “Independent Actor or Agent? An Empirical Analysis of the Impact of U.S. Interests on International Monetary Fund Conditions.” The Journal of Law and Economics 50:105–24.)| false
+
+- Export Citation
+- Search Google Scholar
+
+Eichengreen, B., 2008. Globalizing capital. In Globalizing Capital. Princeton University Press.
+
+Eichengreen, B., 2008. Globalizing capital. In Globalizing Capital. Princeton University Press.)| false
+
+- Export Citation
+- Search Google Scholar
+
+Eichengreen, B., 2011. Exorbitant Privilege: The rise and fall of the Dollar and the Future of the International Monetary System. Oxford University Press.
+
+Eichengreen, B., 2011. Exorbitant Privilege: The rise and fall of the Dollar and the Future of the International Monetary System. Oxford University Press.)| false
+
+- Export Citation
+- Search Google Scholar
+
+Eichengreen, B., Mehl, A. and Chitu, L., 2017. How global currencies work. In How Global Currencies Work. Princeton University Press.
+
+Eichengreen, B., Mehl, A. and Chitu, L., 2017. How global currencies work. In How Global Currencies Work. Princeton University Press.)| false
+
+- Export Citation
+- Search Google Scholar
+
+Gopinath, G., Boz, E., Casas, C., Díez, F. J., Gourinchas, P. O. and Plagborg-Møller, M., 2020. Dominant currency paradigm. American Economic Review, 110(3), pp.677–719.
+
+Gopinath, G., Boz, E., Casas, C., Díez, F. J., Gourinchas, P. O. and Plagborg-Møller, M., 2020. Dominant currency paradigm. American Economic Review, 110(3), pp.677–719.)| false
+
+- Export Citation
+- Search Google Scholar
+
+Gopinath, G., and Stein, J. C., 2021. Banking, Trade, and the Making of a Dominant Currency*. The Quarterly Journal of Economics, 136(2), 783–830. https://doi.org/10.1093/qje/qjaa036
+
+Gopinath, G., and Stein, J. C., 2021. Banking, Trade, and the Making of a Dominant Currency*. The Quarterly Journal of Economics, 136(2), 783–830. https://doi.org/10.1093/qje/qjaa036)| false
+
+- Export Citation
+- Search Google Scholar
+
+IMF, 2020. Digital Money Across Borders: Macro-Financial Implications. Staff Report, International Monetary Fund.
+
+IMF, 2020. Digital Money Across Borders: Macro-Financial Implications. Staff Report, International Monetary Fund.)| false
+
+- Export Citation
+- Search Google Scholar
+
+IMF, 2022. Initial Considerations of the Implications of Digital Money for the International Monetary System. Departmental Paper, International Monetary Fund.
+
+IMF, 2022. Initial Considerations of the Implications of Digital Money for the International Monetary System. Departmental Paper, International Monetary Fund.)| false
+
+- Export Citation
+- Search Google Scholar
+
+IMF, 2023. Elements of Effective Policies for Crypto Assets. IMF Policy Paper, International Monetary Fund.
+
+IMF, 2023. Elements of Effective Policies for Crypto Assets. IMF Policy Paper, International Monetary Fund.)| false
+
+- Export Citation
+- Search Google Scholar
+
+Lijphart A. 1963. “The Analysis of Bloc Voting in the General Assembly: A Critique and a Proposal.” The American Political Science Review 57 (4): 902.
+
+Lijphart A. 1963. “The Analysis of Bloc Voting in the General Assembly: A Critique and a Proposal.” The American Political Science Review 57 (4): 902.)| false
+
+- Export Citation
+- Search Google Scholar
+
+Mayer, T. and Zignago, S. (2011), Notes on CEPII’s distances measures: the GeoDist Database, CEPII Working Paper 2011–25
+
+Mayer, T. and Zignago, S. (2011), Notes on CEPII’s distances measures: the GeoDist Database, CEPII Working Paper 2011–25)| false
+
+- Export Citation
+- Search Google Scholar
+
+Nakanishi, M. and Cooper, G., 1982. Simplified estimation procedures for MCI models. Marketing Science, 1(3), pp.314–322.
+
+Nakanishi, M. and Cooper, G., 1982. Simplified estimation procedures for MCI models. Marketing Science, 1(3), pp.314–322.)| false
+
+- Export Citation
+- Search Google Scholar
+
+Niepmann, F. and Schmidt-Eisenlohr, T., 2017. International trade, risk and the role of banks. Journal of International Economics, 107, pp.111–126.
+
+Niepmann, F. and Schmidt-Eisenlohr, T., 2017. International trade, risk and the role of banks. Journal of International Economics, 107, pp.111–126.)| false
+
+- Export Citation
+- Search Google Scholar
+
+Prasad, E. S., & Ye, L. S., 2012. The Renminbi’s Role in the Global Monetary System. SSRN Electronic Journal. https://doi.org/10.2139/ssrn.2003668
+
+Prasad, E. S., & Ye, L. S., 2012. The Renminbi’s Role in the Global Monetary System. SSRN Electronic Journal. https://doi.org/10.2139/ssrn.2003668)| false
+
+- Export Citation
+- Search Google Scholar
+
+Subramanian, A. (2011). Renminbi Rules: The Conditional Imminence of the Reserve Currency Transition. SSRN Electronic Journal. https://doi.org/10.2139/ssrn.1928138
+
+Subramanian, A. (2011). Renminbi Rules: The Conditional Imminence of the Reserve Currency Transition. SSRN Electronic Journal. https://doi.org/10.2139/ssrn.1928138)| false
+
+- Export Citation
+- Search Google Scholar
+
+1
+
+The renminbi has been included in the Special Drawing Rights basket since 2015, along with the U.S. dollar, the euro, the Japanese yen, and the British pound.
+
+2
+
+The MT messaging format will be progressively replaced by the MX format that is compliant with the ISO 20022 standard, which is also being adopted in other Payment Market Infrastructures (PMIs). There is also a planned transition in Swift to the Cross-border Payments and Reporting Plus (CBPR+) specification.
+
+3
+
+These include MT 103, MT 103+, and MT 103R
+
+4
+
+Swift Standards MT Guide 2023
+
+5
+
+https://baselgovernance.org/basel-aml-index
+
+6
+
+The Basel AML Index is not endorsed by the IMF Executive Board, and it does not assess countries for technical compliance and effectiveness against a globally endorsed standard and assessment methodology. The current round of assessments of countries’ AML/CFT framework is still ongoing, and complete data covering all countries is not yet available.
+
+7
+
+https://data.imf.org/fdindex
+
+8
+
+https://www.elibrary-areaer.imf.org/Pages/Home.aspx
+
+9
+
+About 5% of the country-year observations have two or more currencies that are legal tender. Some countries also have adopted a currency from a third country as legal tender, without being part of a currency union (e.g. Ecuador or El Salvador with the U.S. dollar).
+
+10
+
+https://nuscri.org/en/
+
+11
+
+https://data.imf.org/cdis
+
+12
+
+https://data.imf.org/cpis
+
+13
+
+Voeten, Erik; Strezhnev, Anton; Bailey, Michael, 2009, “United Nations General Assembly Voting Data”, Harvard Dataverse, V29, https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/LEJUQZ
+
+14
+
+https://data.imf.org/?sk=9D6028D4-F14A-464C-A2F2–59B2CD424B85
+
+15
+
+Mayer and Zignago, 2011.
+
+16
+
+For robustness, we have also considered alternative empirical specifications. Following the empirical literature to analyze market shares, we have considered the MNL specification from Nakanishi and Cooper (1982). We have also extended our specification with direct and portfolio flows from the CDIS and CPIS databases. In all these cases, we do not generally find results that change qualitatively the results previously described.
+
+17
+
+Note that these simple forecasting simulations provide only a first-order empirical approximation as they do not consider which currencies are losing market share when the currency of interest increases its market share.
+
+18
+
+Because of their large size, we assume that India and Japan do not adopt the RMB as legal tender.
+
+## Other IMF Content
+
+- Towards Central Bank Digital Currencies in Asia and the Pacific: Results of a Regional Survey
+- Trust Bridges and Money Flows: A Digital Marketplace to Improve Cross-Border Payments
+- Cross-Border Central Bank Digital Currencies, Bank Runs and Capital Flows Volatility
+- Cross-Border Currency Exposures
+- Geopolitical Alignment and the Use of Global Currencies
+- IMF and World Bank Approach to Cross-Border Payments Technical Assistance
+- Exploring Multilateral Platforms for Cross-Border Payments
+- Cross-Border Payments Integration in Latin America and the Caribbean
+- Cross-Border Payments with Retail Central Bank Digital Currencies
+- Renminbi Usage in Cross-Border Payments: Regional Patterns and the Role of Swaps Lines and Offshore Clearing Banks
+
+## Other Publishers
+
+###### Asian Development Bank
+
+- The Role of Central Bank Digital Currencies in Financial Inclusion: Asia-Pacific Financial Inclusion Forum 2022
+- Impact of Nontariff Measures and Border Crossing Time and Costs: The Case of Perishable Goods Trade in the Central Asia Regional Economic Cooperation Region
+- Gauging the Cross-Border Spillover Impact of An Inner Mongolia Autonomous Region Investment Program on Mongolia
+- Recent Technological Advances in Financial Market Infrastructure in ASEAN+3: Cross-Border Settlement Infrastructure Forum
+- Recent Central Bank Digital Currency Developments in Asia and Their Implications
+- Strengthening Cross-Border Community Collaboration in the CAREC Region
+- The Impact of Nonperforming Loans on Cross-Border Bank Lending: Implications for Emerging Market Economies
+- Next Steps for ASEAN+3 Central Securities Depository and Real-Time Gross Settlement Linkages: A Progress Report of the Cross-Border Settlement Infrastructure Forum
+- Concentration in Asia's Cross-Border Banking: Determinants and Impacts
+- Local Currency Collateral for Cross-Border Financial Transactions: Policy Recommendations from the Cross-Border Settlement Infrastructure Forum
+
+###### Food and Agriculture Organization
+
+- Crossing boundaries: Legal and policy arrangements for cross-border pastoralism
+
+###### Inter-American Development Bank
+
+- Corporate Currency Risk and Hedging in Chile: Real and Financial Effects
+- Currency Mismatches, Balance-Sheet Effects and Hedging in Chilean Non-Financial Corporations
+- The Currency Union Effect on Trade: Early Evidence from EMU
+- On the Determinants of International Currency Choice: Will the Euro Dominate the World?
+- Wholesale Payments Systems and Financial Discipline, Efficiency, and Liquidity
+- Endogenous Border Times
+- Risk across Borders: A Study of the Potential of Microinsurance Products to Help Migrants Cope with Cross Border Risks
+- Structured Finance In Latin America: A Look at Cross-Border Remittance Securitizations
+- Cross-Border Mortgages
+- Impact of Cross-border Road Infrastructure on Trade and Investment in the Greater Mekong Subregion
+
+###### International Labour Organization
+
+- Cross-border social dialogue and agreements: An emerging global industrial relations framework?
+
+###### The World Bank
+
+- Cross-border purchases of health services: a case study on Austria and Hungary
+- Regulatory Arbitrage and Cross-Border Syndicated Loans
+- Cross-Border Electricity Cooperation in South Asia
+- Cross-Border Spillover Effects of the G20 Financial Regulatory Reforms: Results from a Pilot Survey
+- Eight Emerging Effects of the COVID-19 Pandemic on Small-Scale Cross-Border Trade in the Great Lakes Region
+- Globalization and technology absorption in Europe and Central Asia: the role of trade, FDI, and cross-border knowledge flows
+- Competitive implications of cross-border banking
+- Cross-Border Mergers and Acquisitions in Services: The Role of Policy and Industrial Structure
+- Cross-Border Banking in Emdes: Trends, Scale, and Policy Implications
+- Is the Financial Safety Net a Barrier to Cross-Border Banking?
+
+## Share Link
+
+---
+
+Copy this link, or click below to email it to a friend
+
+Email this content
+
+or copy the link directly:
+
+https://www.elibrary.imf.org/view/journals/001/2023/072/article-A001-en.xml
+
+The link was not copied. Your current browser may not support copying via this button.
+
+Link copied successfully
+
+Copy link
+
+---
+
+Share on facebook Share on linkedin Share on twitter
+
+- Expand
+- Collapse
+
+- Top
+
+Currency Usage for Cross Border Payments
+
+Author:
+
+Hector Perez-Saiz
+
+,
+
+Ms. Longmei Zhang
+
+, and
+
+Roshan Iyer
+
+Volume/Issue: Volume 2023: Issue 072 Publisher: International Monetary Fund ISBN: 9798400235375 ISSN: 1018-5941 Pages: 28 DOI: https://doi.org/10.5089/9798400235375.001
+
+Search
+
+Issue Journal
+
+###### Table of Contents
+
+Front Matter
+
+Currency Usage for Cross-Border Payments
+
+###### Headings
+
+Data Sources
+
+- Data by Pairs of Countries
+- Country-Level Data
+- Swift Data
+
+###### Figures
+
+Export Figures
+
+View in gallery
+
+Figure 1.
+
+Swift Messages MT 103
+
+View in gallery
+
+Figure 2.
+
+Swift Messages MT 700
+
+View in gallery
+
+Figure 3.
+
+Share of World Currencies Over the Years (Swift Messages MT 103 and MT 202)
+
+View in gallery
+
+Figure 4.
+
+Number of Currencies Used for Cross-Border Payments
+
+View in gallery
+
+Figure 5.
+
+Distribution of the Concentration of Currency Usage Across Countries (HHI Index)
+
+View in gallery
+
+Figure 6.
+
+Cross Country Distribution of Swift Payments (2021)
+
+(Currency share in total Swifts payments)
+
+View in gallery
+
+Figure 7.
+
+Dynamic Projection of Market Share Growth for RMB, Changes in Legal Tender Status
+
+View in gallery
+
+Figure 8.
+
+Dynamic Projection of Market Share Growth for OTH and RMB, Changes in Political Proximity
+
+- References
+
+- Close
+
+- Download Powerpoint Slide --
+- View raw image
+
+-- Figure 1.
+
+Swift Messages MT 103
+
+- Download Powerpoint Slide --
+- View raw image
+
+-- Figure 2.
+
+Swift Messages MT 700
+
+- Download Powerpoint Slide --
+- View raw image
+
+-- Figure 3.
+
+Share of World Currencies Over the Years (Swift Messages MT 103 and MT 202)
+
+- Download Powerpoint Slide --
+- View raw image
+
+-- Figure 4.
+
+Number of Currencies Used for Cross-Border Payments
+
+- Download Powerpoint Slide --
+- View raw image
+
+-- Figure 5.
+
+Distribution of the Concentration of Currency Usage Across Countries (HHI Index)
+
+- Download Powerpoint Slide --
+- View raw image
+
+-- Figure 6.
+
+Cross Country Distribution of Swift Payments (2021)
+
+(Currency share in total Swifts payments)
+
+- Download Powerpoint Slide --
+- View raw image
+
+-- Figure 6.
+
+Cross Country Distribution of Swift Payments (2021)
+
+(Currency share in total Swifts payments)
+
+- Download Powerpoint Slide --
+- View raw image
+
+-- Figure 7.
+
+Dynamic Projection of Market Share Growth for RMB, Changes in Legal Tender Status
+
+- Download Powerpoint Slide --
+- View raw image
+
+-- Figure 8.
+
+Dynamic Projection of Market Share Growth for OTH and RMB, Changes in Political Proximity
+
+###### Metrics
+
+International Monetary Fund Copyright © 2010-2021. All Rights Reserved.
+
+Privacy Policy Copyright and Usage
+
+Contact Us IMF.org Publications
+
+Powered by PubFactory
+
+- 38.170.189.157
+- [38.170.189.157]
+
+View Expanded
+
+View Table
+
+| Variable | Count | Mean | St. Dev | Min | P25 | P50 | P75 | Max | Notes |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Basel AML Score | 1,280 | 5.6 | 1.2 | 1.8 | 4.8 | 5.6 | 6.5 | 8.6 | Higher value indicates a higher risk of money laundering and terrorist financing |
+| Distance between Capitals (km) | 50,176 | 8,472 | 4,705 | 0.9 | 4,768 | 8,081 | 12,005 | 19,951 |
+| Financial Development Index | 1,920 | 0.3 | 0.2 | 0 | 0.1 | 0.2 | 0.4 | 1 | Higher value indicates a better developed financial system |
+| Political Proximity | 407,616 | 0.8 | 0.2 | 0 | 0.7 | 0.9 | 0.9 | 1 | Higher value indicates greater political alignment |
+| Prob of Default | 1,186 | 1.0% | 1.1% | 0% | 0.4% | 0.7% | 1.1% | 13.7% | Higher value is worse as there is a higher prob. of default |
+| Sov. Rating | 1,496 | 13.8 | 8.4 | 1 | 8 | 14 | 19 | 33 | Higher value is a worse sovereign rating |
+| Border Contiguity | 50,176 | 0 | 0.1 | 0 | 0 | 0 | 0 | 1 | Most countries do not share a border |
+| Common Official Language | 50,176 | 0.2 | 0.4 | 0 | 0 | 0 | 0 | 1 | Most countries do not share common official language |
+| Former Colonial Relationship | 50,176 | 0 | 0.1 | 0 | 0 | 0 | 0 | 1 | Most country relationships are not one of colonizer-colony |
+| Former Single Country | 50,176 | 0 | 0.1 | 0 | 0 | 0 | 0 | 1 | Most countries were not previously part of the same country |
+
+View Full Size
+
+--

@@ -1,0 +1,66 @@
+{
+  "id": "txt-5386516eaf-001979658-001979737",
+  "assess": {
+    "id": "txt-5386516eaf-001979658-001979737",
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "observation_end": null,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-nber-profit-share",
+        "quote": "in 2002 (34 percent)",
+        "relation": "boundary",
+        "limitation": "少数覆盖，不是全体。",
+        "observation_end": "2006-12-31",
+        "publication_date": "2010"
+      }
+    ],
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "私人资本家和协会都会逐渐发现，必须让全体劳动者分享利润。",
+    "reason": "NBER章节写2002年约34%、2006年约38%的雇员说被利润分享覆盖。这不是全体劳动者，也还没有证明已经变得必须。开放的“逐渐”没有在截止日前结束，所以不判错误。",
+    "limitation": "34%不是全体。",
+    "evidence_ids": [
+      "ev-nber-profit-share"
+    ],
+    "remaining_gap": "缺全体劳动者已经被纳入利润分享、并且这被当事人视为必要的同对象证据。",
+    "method": "检索利润分享覆盖率。量词是全体，不把三分之一判成实现。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001979658-001979737",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "this round"
+      },
+      {
+        "role": "counter",
+        "query": "this round"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://www.nber.org/system/files/chapters/c8086/c8086.pdf"
+    ],
+    "reason": "对象或量词不符的材料只作边界，不计分。"
+  }
+}

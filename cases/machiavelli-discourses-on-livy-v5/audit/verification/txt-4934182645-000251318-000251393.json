@@ -1,0 +1,48 @@
+{
+  "id": "txt-4934182645-000251318-000251393",
+  "plan": {
+    "object": "已经强大到私人害怕他、官员尊敬他、连官员也不敢得罪他和他的朋友的公民。",
+    "condition": "letting him alone：不去粉碎他。unless death or some like accident interpose 是除外：死亡或同类意外介入时，这句的奴役结果不发生。两项都要在同一人、同一段时期上连得上。",
+    "quantifier": "inevitable。一次放任之后出现奴役，不能单独给部分符合，也不能把必然判成成立。",
+    "result": "登记变化是 inevitable slavery。紧接着的一句把这个奴役说明为：几乎不需要再费力，他就可以放逐并毁掉他想毁掉的人。不能用他仍然有权、发生政变或清洗同僚这些邻接事实代替。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "这样一个人被放任、死亡或同类意外没有介入，而共同体没有落到他可以任意放逐和毁掉别人的奴役。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "elites feared to remove a powerful politician left him in office he later imprisoned opponents",
+      "counter_query": "powerful politician magistrates feared him he was not removed and did not become a dictator"
+    },
+    "adaptive_rounds": 1,
+    "adaptive": {
+      "strategy": "改查被同僚害怕、仍留在职位、却没有获得任意惩罚权的具体个人",
+      "queries": ["senators feared a colleague left him in the senate he never gained power to punish them"]
+    },
+    "kept_urls": [],
+    "dropped": "格拉古、苏拉和凯撒都早于1531。关于个人独裁者清洗精英的综述没有写出某一个公民先被放任、没有死亡、然后共同体落入他可任意放逐别人的奴役。麦卡锡式的弹劾是去对付他，不是放任。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "必须是已经被私人和官员害怕的公民，被放任，死亡或同类意外没有介入，然后出现引文所说的奴役。",
+    "reason": "两轮检索没有一条1531年之后的正文同时写出：私人已经害怕他、官员不敢得罪他，人们放任他，死亡或同类意外没有介入，然后他可以放逐并毁掉他想毁掉的人。已有页面或者早于1531，或者只概括独裁者清洗精英，没有这条时序。决定性缺口是这四项没有落在同一个人身上。不能用清洗或继续在位代替 inevitable slavery，也不能用一次相似给部分符合。",
+    "limitation": "没有新增可引用正文。检索页里的罗马事例都在1531年之前。",
+    "method": "先固定奴役是他可以任意放逐和毁掉别人，再要求放任和没有死亡介入同时成立。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "没有一个人同时满足害怕、放任、未死和随后的奴役。不把继续掌权或清洗写成部分符合。"
+  }
+}

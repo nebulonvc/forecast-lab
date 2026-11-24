@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000728836-000728958",
+  "plan": {
+    "object": "共和国。同段把好名声分成公开的功绩和私下的笼络。这里要的是有好名声的公民。",
+    "condition": "without citizens of good reputation。没有那些以公开劝告或公开行动为公共好处取得信誉的人。没有正式首领，不等于没有这种公民。",
+    "quantifier": "never maintain itself long。不能长久维持，或不能把事情办得有利。长久是相对的维持，不是另定年数，也不是永远。几乎四个世纪如果确实没有好名声的公民，就不是不能长久。",
+    "result": "登记变化是 never maintain itself long。不能长久维持。",
+    "window": "1531至2026-11-15。罗马的凯旋和斯普里乌斯是出版前的制度。",
+    "counterevidence_needed": "一个没有好名声公民的共和国仍长久维持；或者没有这种公民就很快不能办事。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "republic collapsed for lack of citizens with public reputation and good counsel",
+      "counter_query": "republic lasted for generations without famous statesmen or distinguished citizens"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://www.wespeakfreely.org/2025/03/25/the-free-state-of-cospaia-chapter-1/"],
+    "dropped": "圣马力诺的长存被写成有共和国传统，不是没有好名声的公民。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "long",
+    "observation_end": null,
+    "evidence_ids": ["ev-cospaia-1826"],
+    "scope": "长久按能否维持自己来看。没有首领不是没有好名声的公民。",
+    "reason": "支持检索已经补做。它回到奥古斯丁转述的西塞罗：罗马因缺少伟人而道德灭亡，只留下共和国的名字。那是1531年之前的罗马，不能核验1531年之后的判断，也不存成这条的计分正文。反对检索的科斯帕亚从1440年到1826年保持自治，虽然没有成文法、没有首领、没有民兵、没有税，并且几乎自主了四个世纪。四个世纪是长久的维持。页面没有写那里没有以公开功绩取得好名声的公民；它还写人们像一家人一样和睦。没有首领不能改成没有好名声。决定性缺口是：1531年之后没有正文把一个共和国写成没有这种公民，并且因此不能长久，或虽没有却长久维持。",
+    "limitation": "科斯帕亚文章日期是2025年3月25日。1826年是结束年。西塞罗的话不进入出版后窗口，故不存为摘录。",
+    "method": "先确认没有的是好名声的公民，再看维持是不是长久。没有首领不代替这个条件。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "支持检索已做，回到的是1531年前的西塞罗，不用来计分。科斯帕亚近四个世纪没有首领，页面仍未写缺少好名声的公民。"
+  }
+}

@@ -1,0 +1,702 @@
+{
+  "claim_id": "txt-1c4066fc0c-000100886-000101089",
+  "version": "search-verifier-v2",
+  "input_sha256": "eca88c8646ff84d1641127431068b3b5fdef8b59c9ca9477f6259c9a79cbe5f2",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000100886-000101089",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "评估加尔布雷斯（王沪宁转述）六项复合判断：工作起止分离、生产资本增加、时间财力投入更固定、专业人力需求、高度组织化、社会需要计划。观察口径为1991年后至2026-11-09前科技广泛使用背景下六项分项是否出现同向可观察变化。",
+    "reason": "自动复核未确认主要判断：建议把ILO算法管理材料当作“组织化”分项的间接支持，但该材料讲的是算法对工作的分派、监督与评价，以及跨行业功能委托，并未显示加尔布雷斯所说的“科技要求高度的组织化”（大型组织承担科技逻辑、职业经理决策）。这是不同机制，不能作为该分项的支持证据；建议据此声称两项分项有间接支持，依据不足。; 建议把美国上市公司资本支出占总资产比例下降列为“生产资本将增加”的反向证据，但该研究明确将下降解释为无形资产替代固定资产，且建议自己在limitation中承认固定资产口径不能等同于“生产资本”总量。既然该材料不能直接反驳“生产资本增加”，就不应作为counter证据计入，否则会把口径不匹配的材料误当反证。",
+    "limitation": "证据多为间接代理：GAO与ILO材料并非针对加尔布雷斯命题设计，资本支出下降研究以固定资产口径衡量，未涵盖无形资产资本，不能直接等同于“生产资本”总量下降。六项分项中仅两项有间接支持、一项有反向证据，其余缺证据，故整体保留未定。",
+    "evidence_ids": [
+      "prior-beae754a1aaf3b2a204b",
+      "prior-3c1f064721490441b74b",
+      "ev-4c1965394350860902dd90e2",
+      "ev-7f2224501bc8d8a994f6dd58"
+    ],
+    "method": "技术复杂化对资本、分工和组织的要求",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-beae754a1aaf3b2a204b",
+        "relation": "support",
+        "quote": "制造涉及专业设备、跨国分工与专门人力。",
+        "publication_date": "2025-12-11",
+        "observation_end": null,
+        "limitation": "仅涉及半导体一个行业，且为项目拨款与里程碑统计，不能代表全社会“专业人力需求”或“高度组织化”的普遍趋势。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-3c1f064721490441b74b",
+        "relation": "support",
+        "quote": "ILO定义算法管理为以追踪数据组织、分派、监督与评价工作；指出功能委托跨客服、运输、物流、金融和医疗行业扩展，人与管理者/同事接触可能减少。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "描述算法管理对工作组织的影响，属间接支持“组织化”分项，未涉及资本、计划或工作起止分离；来源无发表日期。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "ev-4c1965394350860902dd90e2",
+        "relation": "counter",
+        "quote": "Capital expenditures of U.S. public firms, relative to total assets, decrease by more than half from 1980 to 2020.",
+        "publication_date": null,
+        "observation_end": "2020-12-31",
+        "limitation": "以固定资产资本支出占总资产比例衡量，作者解释为无形资产替代固定资产；若“生产资本”含无形资产则方向可能不同，不能直接推翻资本总量增加。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-7f2224501bc8d8a994f6dd58",
+        "relation": "counter",
+        "quote": "Physical investment is low because of the rising importance of intangible capital",
+        "publication_date": null,
+        "observation_end": "2018-10-26",
+        "limitation": "为2018年会议演示材料，聚焦实物投资低迷与无形资产上升，属间接反向证据，未直接检验加尔布雷斯六项命题。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      }
+    ],
+    "remaining_gap": "需要能直接对应“高度组织化”（大型组织/职业经理承担科技逻辑）与“生产资本增加”（含无形资产的总量口径）的证据，或明确说明这两项在现有材料下仍无法判定；同时应把ILO材料从“组织化”支持中移除、把资本支出下降从counter中移除或降为口径限制，再据此重新确定复合命题的整体判定。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000100886-000101089",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "评估加尔布雷斯（王沪宁转述）六项复合判断：工作起止分离、生产资本增加、时间财力投入更固定、专业人力需求、高度组织化、社会需要计划。观察口径为1991年后至2026-11-09前科技广泛使用背景下六项分项是否出现同向可观察变化。",
+    "reason": "现有证据仅覆盖部分分项：GAO半导体激励材料显示专业设备、跨国分工与专门人力，ILO算法管理材料显示工作组织与监督方式变化，二者对“专业人力需求”和“组织化”有间接支持；但“生产资本增加”一项，美国企业资本支出占总资产比例1980—2020年下降逾半，且被解释为无形资产替代固定资产，方向与“用于生产的资本将增加”相反。其余分项（工作起止分离、时间财力更固定、社会需要计划）缺乏直接对应证据。复合命题各主要分项方向不一致且多数未获直接证据，无法整体判定符合或相反。",
+    "limitation": "证据多为间接代理：GAO与ILO材料并非针对加尔布雷斯命题设计，资本支出下降研究以固定资产口径衡量，未涵盖无形资产资本，不能直接等同于“生产资本”总量下降。六项分项中仅两项有间接支持、一项有反向证据，其余缺证据，故整体保留未定。",
+    "evidence_ids": [
+      "prior-beae754a1aaf3b2a204b",
+      "prior-3c1f064721490441b74b",
+      "ev-4c1965394350860902dd90e2",
+      "ev-7f2224501bc8d8a994f6dd58"
+    ],
+    "method": "技术复杂化对资本、分工和组织的要求",
+    "method_basis": "inferred",
+    "observation_end": "2026-11-09",
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-beae754a1aaf3b2a204b",
+        "relation": "support",
+        "quote": "制造涉及专业设备、跨国分工与专门人力。",
+        "publication_date": "2025-12-11",
+        "observation_end": null,
+        "limitation": "仅涉及半导体一个行业，且为项目拨款与里程碑统计，不能代表全社会“专业人力需求”或“高度组织化”的普遍趋势。"
+      },
+      {
+        "evidence_id": "prior-3c1f064721490441b74b",
+        "relation": "support",
+        "quote": "ILO定义算法管理为以追踪数据组织、分派、监督与评价工作；指出功能委托跨客服、运输、物流、金融和医疗行业扩展，人与管理者/同事接触可能减少。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "描述算法管理对工作组织的影响，属间接支持“组织化”分项，未涉及资本、计划或工作起止分离；来源无发表日期。"
+      },
+      {
+        "evidence_id": "ev-4c1965394350860902dd90e2",
+        "relation": "counter",
+        "quote": "Capital expenditures of U.S. public firms, relative to total assets, decrease by more than half from 1980 to 2020.",
+        "publication_date": null,
+        "observation_end": "2020-12-31",
+        "limitation": "以固定资产资本支出占总资产比例衡量，作者解释为无形资产替代固定资产；若“生产资本”含无形资产则方向可能不同，不能直接推翻资本总量增加。"
+      },
+      {
+        "evidence_id": "ev-7f2224501bc8d8a994f6dd58",
+        "relation": "counter",
+        "quote": "Physical investment is low because of the rising importance of intangible capital",
+        "publication_date": null,
+        "observation_end": "2018-10-26",
+        "limitation": "为2018年会议演示材料，聚焦实物投资低迷与无形资产上升，属间接反向证据，未直接检验加尔布雷斯六项命题。"
+      }
+    ],
+    "remaining_gap": "缺少对“工作开始与完成分离”“时间财力投入更固定”“社会需要计划”三项分项的直接可观察证据；也缺少涵盖无形资产在内的“生产资本”总量口径数据，无法判定复合命题整体方向。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-beae754a1aaf3b2a204b",
+      "url": "https://files.gao.gov/reports/GAO-26-107882/index.html",
+      "title": "ev-r2-l2-gao-chips",
+      "published_date": "2025-12-11",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-12-11",
+        "latest": "2025-12-11"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-gao-chips",
+      "archive_sha256": "905787ee5d4a79acf26924bb7af6753fecbd7d104e18f83cac5e4d51a7988ec4",
+      "archive_path": "data/sources/r2-l2-gao-chips.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-3c1f064721490441b74b",
+      "url": "https://www.ilo.org/algorithmic-management-workplace",
+      "title": "ev-r2-l2-ilo-algorithm",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-ilo-algorithm",
+      "archive_sha256": "4ab52fc749657e674e44b6d27b8c9c32f04ce7c0340b2a6954f537479afd5569",
+      "archive_path": "data/sources/r2-l2-ilo-algorithm.html",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-6760a7723fd6bf1de4868e7e",
+      "url": "https://www.theatlantic.com/magazine/archive/1967/04/the-new-industrial-state-planning-and-the-modern-corporation/660112/",
+      "resolved_url": "https://www.theatlantic.com/magazine/archive/1967/04/the-new-industrial-state-planning-and-the-modern-corporation/660112/",
+      "title": "The New Industrial State: Planning and the Modern Corporation - The Atlantic",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:31.542024+00:00",
+      "archive_sha256": "40fa6265af8287e73d8fc6051f41614207d55bf2456cee119708d0048d6ab21b",
+      "archive_path": "jobs/eece83e4247111778e7d8070/40fa6265af8287e73d8fc6051f41614207d55bf2456cee119708d0048d6ab21b.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-faa905237546c795aaa09d50",
+      "url": "https://downloads.bbc.co.uk/rmhttp/radio4/transcripts/1966_reith1.pdf",
+      "resolved_url": "https://downloads.bbc.co.uk/rmhttp/radio4/transcripts/1966_reith1.pdf",
+      "title": "Lecture 1: Planning and Technological Imperatives",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:31.542159+00:00",
+      "archive_sha256": "e39d7105911d6d2ba3fdeee9654b3879ad65ccf488e9bcb08bdcb94545f6740b",
+      "archive_path": "jobs/eece83e4247111778e7d8070/e39d7105911d6d2ba3fdeee9654b3879ad65ccf488e9bcb08bdcb94545f6740b.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-62a1d9182d662eb2ef5c95db",
+      "url": "https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=3564&context=uclrev",
+      "resolved_url": "https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=3564&context=uclrev",
+      "title": "Review of The New Industrial State by John Kenneth Galbraith",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:31.542244+00:00",
+      "archive_sha256": "913c8fe6070ac74b0f9cc0075ff0fb503b74ffad9d86b0485250b89324b576cc",
+      "archive_path": "jobs/eece83e4247111778e7d8070/913c8fe6070ac74b0f9cc0075ff0fb503b74ffad9d86b0485250b89324b576cc.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-4c1965394350860902dd90e2",
+      "url": "https://ideas.repec.org/a/eee/empfin/v69y2022icp15-42.html",
+      "resolved_url": "https://ideas.repec.org/a/eee/empfin/v69y2022icp15-42.html",
+      "title": "Why Do U.S. Firms Invest Less over Time?",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:31.542326+00:00",
+      "archive_sha256": "4ba4ce0db2085a3c252efa4f7789bcabe21f13120decb3ede85d39d53af6e731",
+      "archive_path": "jobs/eece83e4247111778e7d8070/4ba4ce0db2085a3c252efa4f7789bcabe21f13120decb3ede85d39d53af6e731.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e335c8cefca3335a6a2c4b77",
+      "url": "https://www.bea.gov/sites/default/files/papers/BEA-WP2022-7.pdf",
+      "resolved_url": "https://www.bea.gov/sites/default/files/papers/BEA-WP2022-7.pdf",
+      "title": "Understanding the Uneven Growth of Intellectual Property Products Investment in the U.S.",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:43.648909+00:00",
+      "archive_sha256": "fe6f6df38608d45fd00cfd7f4412c4ed568477c0c821e0ecc42de5537891662e",
+      "archive_path": "jobs/eece83e4247111778e7d8070/fe6f6df38608d45fd00cfd7f4412c4ed568477c0c821e0ecc42de5537891662e.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-7f2224501bc8d8a994f6dd58",
+      "url": "https://www.newyorkfed.org/medialibrary/media/research/advisory_panel/eap/eap_2018_eberly_presentation.pdf",
+      "resolved_url": "https://www.newyorkfed.org/medialibrary/media/research/advisory_panel/eap/eap_2018_eberly_presentation.pdf",
+      "title": "Intangible Capital:  - Implications for Investment and Market Structure",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:43.649042+00:00",
+      "archive_sha256": "9bdccb67bb9b222ca1d6329e39e826664f2c367ec7621ca16443c70eaaee0d09",
+      "archive_path": "jobs/eece83e4247111778e7d8070/9bdccb67bb9b222ca1d6329e39e826664f2c367ec7621ca16443c70eaaee0d09.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "Galbraith New Industrial State technostructure technology capital requirements planning organization empirical evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "declining capital intensity digital economy evidence technology reduces fixed capital investment organizational decentralization",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Galbraith New Industrial State technology specialized manpower capital planning organization empirical evidence long lead times",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "declining capital intensity US firms capital expenditure share intangible capital 1980 2020 evidence technology reduces fixed capital investment",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-4c1965394350860902dd90e2",
+        "ev-7f2224501bc8d8a994f6dd58",
+        "prior-3c1f064721490441b74b"
+      ],
+      "blocks_verdict": true
+    }
+  ],
+  "remaining_gap": "需要能直接对应“高度组织化”（大型组织/职业经理承担科技逻辑）与“生产资本增加”（含无形资产的总量口径）的证据，或明确说明这两项在现有材料下仍无法判定；同时应把ILO材料从“组织化”支持中移除、把资本支出下降从counter中移除或降为口径限制，再据此重新确定复合命题的整体判定。",
+  "source_statuses": [
+    {
+      "url": "https://www.theatlantic.com/magazine/archive/1967/04/the-new-industrial-state-planning-and-the-modern-corporation/660112/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://downloads.bbc.co.uk/rmhttp/radio4/transcripts/1966_reith1.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=3564&context=uclrev",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://ideas.repec.org/a/eee/empfin/v69y2022icp15-42.html",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.bea.gov/sites/default/files/papers/BEA-WP2022-7.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.newyorkfed.org/medialibrary/media/research/advisory_panel/eap/eap_2018_eberly_presentation.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "评估加尔布雷斯（经王沪宁转述）的六项复合判断：科技广泛应用导致(1)工作开始与完成分离、(2)生产资本增加、(3)时间财力投入更固定、(4)专业人力需求、(5)高度组织化、(6)社会需要计划。观察口径为1991年后至截止日前，在共同经济范围内六项分项是否出现同向可观察变化；反证包括资本强度/资本支出占比下降、工作起止更整合、去组织化或去计划化。原文为1967年著作的转述，非王沪宁独立判断；因果机制不额外作为结果成立门槛，但单列限制。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "dc292c59f03c51b10b978b6f0f903ae4fcb57b16c77c5b9b1bf7c2717fc82fa6"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "a9f23be620d1ba59c2bee697b45c4aac",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "6fd7ecd85cd44a3722adfa23af06eba2",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "f33dbdd0452ac83f5ded8fcb60bce1e7a7f6f70d74512795d872ef491f0c43db"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "67fe5f1049ab060c51e150ff4b0a66a6",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "26f2a7258c8d0fef2ac2074b6413bb536932d79f03a7f04a0733071cd5c1ee74"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "d7ef2a4ba13065c090e1d9ccf1323b81",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "394dbc5350568fcb5aab3c67348f6a7c",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "fbf8efe2f4949571756b6099cc999a99cfa0fb42ae0d58ae552a082aca0597e7"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "5b45ff72ec6eacda5fa9dbd191480e45",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "240d3c210fd92c756ef1033ae754243188f95ecb2762e40874d1e359d7779a87"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "ffa335076dc0f610afad5b57fcccb665a3a2da6cf920896019484437bedf383a"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-4c1965394350860902dd90e2",
+            "ev-7f2224501bc8d8a994f6dd58",
+            "prior-3c1f064721490441b74b"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "unresolved",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-beae754a1aaf3b2a204b",
+        "source_bytes": 240,
+        "shown_bytes": 240,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3c1f064721490441b74b",
+        "source_bytes": 202,
+        "shown_bytes": 202,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-6760a7723fd6bf1de4868e7e",
+        "source_bytes": 1004,
+        "shown_bytes": 1004,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-faa905237546c795aaa09d50",
+        "source_bytes": 12055,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-62a1d9182d662eb2ef5c95db",
+        "source_bytes": 12000,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-4c1965394350860902dd90e2",
+        "source_bytes": 12012,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e335c8cefca3335a6a2c4b77",
+        "source_bytes": 12018,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-7f2224501bc8d8a994f6dd58",
+        "source_bytes": 7724,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-beae754a1aaf3b2a204b",
+        "source_bytes": 240,
+        "shown_bytes": 240,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3c1f064721490441b74b",
+        "source_bytes": 202,
+        "shown_bytes": 202,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-6760a7723fd6bf1de4868e7e",
+        "source_bytes": 1004,
+        "shown_bytes": 1004,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-faa905237546c795aaa09d50",
+        "source_bytes": 12055,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-62a1d9182d662eb2ef5c95db",
+        "source_bytes": 12000,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-4c1965394350860902dd90e2",
+        "source_bytes": 12012,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e335c8cefca3335a6a2c4b77",
+        "source_bytes": 12018,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-7f2224501bc8d8a994f6dd58",
+        "source_bytes": 7724,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000100886-000101089",
+      "decision": "unresolved",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "fail",
+        "verdict_logic": "pass"
+      },
+      "issues": [
+        {
+          "check": "evidence_support",
+          "reason": "建议把ILO算法管理材料当作“组织化”分项的间接支持，但该材料讲的是算法对工作的分派、监督与评价，以及跨行业功能委托，并未显示加尔布雷斯所说的“科技要求高度的组织化”（大型组织承担科技逻辑、职业经理决策）。这是不同机制，不能作为该分项的支持证据；建议据此声称两项分项有间接支持，依据不足。",
+          "quote_ref": "q5",
+          "source_quote": "ILO定义算法管理为以追踪数据组织、分派、监督与评价工作；指出功能委托跨客服、运输、物流、金融和医疗行业扩展，人与管理者/同事接触可能减少。",
+          "evidence_id": "prior-3c1f064721490441b74b",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "counterevidence",
+          "reason": "建议把美国上市公司资本支出占总资产比例下降列为“生产资本将增加”的反向证据，但该研究明确将下降解释为无形资产替代固定资产，且建议自己在limitation中承认固定资产口径不能等同于“生产资本”总量。既然该材料不能直接反驳“生产资本增加”，就不应作为counter证据计入，否则会把口径不匹配的材料误当反证。",
+          "quote_ref": "q6",
+          "source_quote": "Capital expenditures of U.S. public firms, relative to total assets, decrease by more than half from 1980 to 2020.",
+          "evidence_id": "ev-4c1965394350860902dd90e2",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        }
+      ],
+      "remaining_gap": "需要能直接对应“高度组织化”（大型组织/职业经理承担科技逻辑）与“生产资本增加”（含无形资产的总量口径）的证据，或明确说明这两项在现有材料下仍无法判定；同时应把ILO材料从“组织化”支持中移除、把资本支出下降从counter中移除或降为口径限制，再据此重新确定复合命题的整体判定。"
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000100886-000101089",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "评估加尔布雷斯（王沪宁转述）六项复合判断：工作起止分离、生产资本增加、时间财力投入更固定、专业人力需求、高度组织化、社会需要计划。观察口径为1991年后至2026-11-09前科技广泛使用背景下六项分项是否出现同向可观察变化。",
+      "reason": "现有证据仅覆盖部分分项：GAO半导体激励材料显示专业设备、跨国分工与专门人力，ILO算法管理材料显示工作组织与监督方式变化，二者对“专业人力需求”和“组织化”有间接支持；但“生产资本增加”一项，美国企业资本支出占总资产比例1980—2020年下降逾半，且被解释为无形资产替代固定资产，方向与“用于生产的资本将增加”相反。其余分项（工作起止分离、时间财力更固定、社会需要计划）缺乏直接对应证据。复合命题各主要分项方向不一致且多数未获直接证据，无法整体判定符合或相反。",
+      "limitation": "证据多为间接代理：GAO与ILO材料并非针对加尔布雷斯命题设计，资本支出下降研究以固定资产口径衡量，未涵盖无形资产资本，不能直接等同于“生产资本”总量下降。六项分项中仅两项有间接支持、一项有反向证据，其余缺证据，故整体保留未定。",
+      "evidence_ids": [
+        "prior-beae754a1aaf3b2a204b",
+        "prior-3c1f064721490441b74b",
+        "ev-4c1965394350860902dd90e2",
+        "ev-7f2224501bc8d8a994f6dd58"
+      ],
+      "method": "技术复杂化对资本、分工和组织的要求",
+      "method_basis": "inferred",
+      "observation_end": "2026-11-09",
+      "future_time_text": "",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-beae754a1aaf3b2a204b",
+          "relation": "support",
+          "quote": "制造涉及专业设备、跨国分工与专门人力。",
+          "publication_date": "2025-12-11",
+          "observation_end": null,
+          "limitation": "仅涉及半导体一个行业，且为项目拨款与里程碑统计，不能代表全社会“专业人力需求”或“高度组织化”的普遍趋势。"
+        },
+        {
+          "evidence_id": "prior-3c1f064721490441b74b",
+          "relation": "support",
+          "quote": "ILO定义算法管理为以追踪数据组织、分派、监督与评价工作；指出功能委托跨客服、运输、物流、金融和医疗行业扩展，人与管理者/同事接触可能减少。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "描述算法管理对工作组织的影响，属间接支持“组织化”分项，未涉及资本、计划或工作起止分离；来源无发表日期。"
+        },
+        {
+          "evidence_id": "ev-4c1965394350860902dd90e2",
+          "relation": "counter",
+          "quote": "Capital expenditures of U.S. public firms, relative to total assets, decrease by more than half from 1980 to 2020.",
+          "publication_date": null,
+          "observation_end": "2020-12-31",
+          "limitation": "以固定资产资本支出占总资产比例衡量，作者解释为无形资产替代固定资产；若“生产资本”含无形资产则方向可能不同，不能直接推翻资本总量增加。"
+        },
+        {
+          "evidence_id": "ev-7f2224501bc8d8a994f6dd58",
+          "relation": "counter",
+          "quote": "Physical investment is low because of the rising importance of intangible capital",
+          "publication_date": null,
+          "observation_end": "2018-10-26",
+          "limitation": "为2018年会议演示材料，聚焦实物投资低迷与无形资产上升，属间接反向证据，未直接检验加尔布雷斯六项命题。"
+        }
+      ],
+      "remaining_gap": "缺少对“工作开始与完成分离”“时间财力投入更固定”“社会需要计划”三项分项的直接可观察证据；也缺少涵盖无形资产在内的“生产资本”总量口径数据，无法判定复合命题整体方向。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "评估加尔布雷斯（经王沪宁转述）关于科技广泛应用导致六项后果的复合判断：工作开始与完成分离、生产资本增加、时间财力投入更固定、专业人力需求、高度组织化、社会需要计划。观察口径为1991年后至截止日前科技广泛使用背景下六项分项是否在共同经济范围内出现可观察的同向变化；反证包括资本强度下降、工作起止更整合、去组织化或去计划化趋势。",
+  "elapsed_seconds": 33.884,
+  "completed_at": "2026-11-09T10:33:53.758787+00:00"
+}

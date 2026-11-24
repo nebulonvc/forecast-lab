@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000731070-000731167",
+  "plan": {
+    "object": "像斯普里乌斯那样的行为：用私人恩惠结成追随者，再去败坏制度、违反法律。",
+    "condition": "if conduct like his be ever suffered to pass unchastised。这种行为必须没有受到惩戒。已经被定罪或被处死，不算放过去。",
+    "quantifier": "may well be。很可能会成为共和国的毁灭。这不是必定。一次没有惩戒而共和国仍在，不能反驳很可能；一次因此毁灭，也不能把很可能改成必定。",
+    "result": "登记变化是 ruin of a republic。毁灭的是共和国，不是这个人被惩罚。",
+    "window": "1531至2026-11-15。斯普里乌斯是出版前的例子。",
+    "counterevidence_needed": "1531年之后，同样的私人笼络没有受惩戒，而共和国毁灭或没有毁灭。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "rich citizen bought a following with private gifts was not punished and the republic was ruined",
+      "counter_query": "wealthy patron gathered clients with private favors was never punished and the state continued"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [],
+    "dropped": "支持检索回到本书和李维笔下的斯普里乌斯，都在1531年之前。加比尼乌斯后来被定罪，不是放过去。罗马庇护制写到城邦覆灭，不是1531年之后一个未被惩戒的同类行为。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "may well 不是必定。对象必须是未被惩戒的私人笼络。本书和出版前的斯普里乌斯不能独立核验。",
+    "reason": "支持检索打开的是这一章自己，以及李维所写、早于1531年的斯普里乌斯。反对检索里，加比尼乌斯先被开释、后来仍被定罪，所以不是放过去；罗马的庇护关系被写成从起源延续到城邦覆灭，也不是1531年之后一个未被惩戒的同类人。很可能毁国既不能由一次出版前的处死来证明，也不能因为没找到反例就当成已经成立。决定性缺口是：1531年之后没有已存档正文写出这种未被惩戒的私人笼络，以及共和国随后毁灭或没有毁灭。",
+    "limitation": "没有可引用的出版后正文。未保存的检索摘要不计分。",
+    "method": "先确认是未被惩戒的私人笼络，再看很可能毁国。may well 不因一次延续或一次毁灭而改成必定或必否。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "支持检索命中本书和出版前的斯普里乌斯。加比尼乌斯后来被定罪。may well 仍没有出版后的对应事例。"
+  }
+}

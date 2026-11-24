@@ -1,0 +1,75 @@
+命令时间以本轮实际执行为准，不回填。
+unittest 是同一条命令跑一次，结果复制到每本。
+python3 -m unittest discover -s toolkit/tests
+----------------------------------------------------------------------
+Ran 209 tests in 0.975s
+
+OK
+{"exported_results": 1, "files": 3, "output": "/tmp/tmp9bz6ehr4/export"}
+accepted extract-full 1
+{"retry_count": 1, "parent_run_id": "123", "budget_CNY": 4, "exa_budget_USD": 1}
+UNIT_EXIT:0
+
+apply: 未跑。56 条没有逐条评估，不能整本 apply 后称完成。
+check
+OK: 56 claims; 5 verified evidence records
+report: reviewed 0 / unreviewed 56。不是完成件。
+下一未核验 ID: txt-37a5a0ec54-000012943-000013021
+重导入新 ID（程序生成，未手改）:
+  两种制度 txt-37a5a0ec54-000401361-000401615
+  出生率条件 txt-37a5a0ec54-000535883-000536277
+  残句 txt-37a5a0ec54-000244051-000244149
+这三条尚未评估。
+300字: claims=56 nonempty_context=0 max_quote=394 over_300=1
+  超过 300 的是出生率连续引文 txt-37a5a0ec54-000535883-000536277，不是全书。
+密钥: JSON/审计文本没有密钥。保存的联合国 HTML 样式表被宽模式 sk- 扫到一行，不是密钥。
+manual_report.py 未跑。inspect_assessment 未跑。
+
+---- 2026-11-20T01:21Z 本轮 ----
+python3 toolkit/pipeline.py --case <case> apply assess
+python3 toolkit/pipeline.py --case <case> check
+python3 toolkit/pipeline.py --case <case> report
+python3 -m unittest discover -s toolkit/tests
+Ran 209 tests in 0.903s
+OK
+UNIT_EXIT:0
+manual_report.py 未跑
+inspect_assessment 未跑
+
+apply: accepted assess 56
+check: OK: 56 claims; 6 verified evidence records
+report: 正确0 趋势符合0 部分符合1 错误1 暂无法判断54；可判定 2。
+计分日都是页面印出的完整日：工资 2026-01-17，出生率 2024-07-11。
+贫民区 2023-07-13 和出生死亡平衡有存档，但条件或开放终点导致不计分。
+没有把 2019-09-01 或 2024-07-01 写回日期字段。
+
+---- 2026-11-20 date-role correction ----
+apply/check 已重跑。observation_end 用截止日 2026-11-15 作为评估窗口上界时，limitation 写明事实时期。
+Addams 部分符合 1。香港部分符合 1，不用 2025-09-07 作整束观测日。
+Human Work 工资条改为部分符合，事实年是 2019 年年值，访问日不是结果日。出生率仍是部分符合。
+第一条人性主张已做 support/counter 并存档，仍未计分。下一未核验 ID: txt-37a5a0ec54-000015740-000015822
+候选版 SHA 仍是 ff7729a554075aeed2bed203051f517cd8876c123d8514fef46a4e5fc57665e3
+unittest 本轮未重跑。
+
+---- 2026-11-20T01:28:37Z ----
+check 重跑 OK: 56 claims; 13 verified evidence records
+apply accepted assess 56
+本轮新完成 support/counter 的是 txt-37a5a0ec54-000015740-000015822，部分符合，证书日 1920-08-26，反证页 1965-08-06。窗口上界 2026-11-15。
+下一未核验 txt-37a5a0ec54-000032466-000032545。铁路反证 PDF 只在 /tmp，支持页未存，未算完成。
+候选版 SHA 仍是 ff7729a554075aeed2bed203051f517cd8876c123d8514fef46a4e5fc57665e3
+没有新的完成 ZIP。manual_report.py 未跑。inspect_assessment 未跑。unittest 本轮未重跑。
+
+---- 2026-11-20T01:33:42Z birth/slum ----
+apply accepted 56
+check OK 56 claims
+birth rate no longer scored
+slum has two archives and is not scored
+next txt-37a5a0ec54-000074234-000074293
+balance still one page
+four other books not edited
+
+---- 2026-11-20T01:36:03Z search stop ----
+closed balance, grandchildren, education
+next txt-37a5a0ec54-000160089-000160156
+check after apply OK
+four books untouched

@@ -1,0 +1,107 @@
+{
+  "id": "txt-5386516eaf-001851818-001851944",
+  "assess": {
+    "id": "txt-5386516eaf-001851818-001851944",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "社会进步倾向于降低人们为储蓄所绝对要求的利润，并削弱积累的障碍。",
+    "reason": "已归档的是安全资产的长期实际利率。它不是人们为储蓄所绝对要求的利润。利率下降不能代替这句的利润。",
+    "limitation": "旧的部分符合已撤回。对象不一致时不保留分数。",
+    "evidence_ids": [
+      "ev-schmelzing-real-rates-2020"
+    ],
+    "method": "复核后撤回计分。原支持与反证仍留在修订轨迹，不当作同对象分数。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-schmelzing-real-rates-2020",
+        "quote": "real interest rates have not been ‘stable’, and that since the major monetary upheavals of the late middle ages, a trend decline between 0.6–1.6 basis points per annum has prevailed",
+        "relation": "support",
+        "limitation": "长期下降。",
+        "observation_end": "2018-12-31",
+        "publication_date": "2020-01",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-schmelzing-real-rates-2020",
+        "quote": "despite important temporary reversals such as the 17th Century Crisis",
+        "relation": "counter",
+        "limitation": "有暂时回升。",
+        "observation_end": "2018-12-31",
+        "publication_date": "2020-01",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺1909年之后人们为了储蓄而绝对要求的利润是否降低的同对象序列。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001851818-001851944",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "revision_trail": {
+    "withdrawn_verdict": "部分符合",
+    "withdrawn_reason": "长期实际利率有每年0.6到1.6个基点的下降趋势，符合所要求的利息变低；同一材料写明有暂时回升。这是安全利率，不是企业利润的全部。",
+    "failed_review": {
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "安全实际利率换成了利润要求。",
+          "source_quote": "decidedly tends, though not perhaps to\nincrease the desire of accumulation, yet to weaken the obstacles to it, and to diminish",
+          "evidence_id": null
+        }
+      ],
+      "remaining_gap": "缺1909年之后人们为了储蓄而绝对要求的利润是否降低的同对象序列。"
+    },
+    "why": "安全实际利率换成了利润要求。"
+  },
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "real interest rate long-run decline"
+      },
+      {
+        "role": "counter",
+        "query": "temporary reversals in real interest rates"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://www.bankofengland.co.uk/-/media/boe/files/working-paper/2020/eight-centuries-of-global-real-interest-rates-r-g-and-the-suprasecular-decline-1311-2018.pdf"
+    ],
+    "reason": "下降与回升同文。"
+  }
+}

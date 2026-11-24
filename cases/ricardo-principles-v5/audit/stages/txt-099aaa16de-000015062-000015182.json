@@ -1,0 +1,127 @@
+{
+  "id": "txt-099aaa16de-000015062-000015182",
+  "assess": {
+    "id": "txt-099aaa16de-000015062-000015182",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "新的更丰富的金银矿发现很少，其影响虽大，但只限于比较短的时期。",
+    "reason": "页内写1850年后产量超过1.5亿美元，并写1859年银币对金币到105美分，影响被写成严重而持久。这些是年份，不是日。",
+    "limitation": "页面没有出版日期。1859只是年份。",
+    "evidence_ids": [
+      "ev-r-gold-laughlin"
+    ],
+    "method": "新矿发现少，影响虽大但只维持比较短的时期。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-r-gold-laughlin",
+        "quote": "their effect upon the relative values of gold and silver has been serious and prolonged.",
+        "relation": "counter",
+        "limitation": "影响被写成持久。",
+        "observation_end": null,
+        "publication_date": null,
+        "coverage_end": "1859",
+        "coverage_end_precision": "year"
+      },
+      {
+        "evidence_id": "ev-r-gold-laughlin",
+        "quote": "From an average annual production in 1840-1850 of about $38,000,000, the gold supply increased to a figure beyond $150,000,000 after 1850.",
+        "relation": "counter",
+        "limitation": "产量跳到新的水平，不是短暂扰动后回到原状。",
+        "observation_end": null,
+        "publication_date": null,
+        "coverage_end": "1859",
+        "coverage_end_precision": "year"
+      },
+      {
+        "evidence_id": "ev-r-gold-laughlin",
+        "quote": "even rose to 105 cents in 1859.",
+        "relation": "counter",
+        "limitation": "金银比价的后果至少延续到1859年。",
+        "observation_end": null,
+        "publication_date": null,
+        "coverage_end": "1859",
+        "coverage_end_precision": "year"
+      }
+    ],
+    "remaining_gap": "历史观察可以明确到1859年，但原文没有日，页面也没有发布日期。按年份不足以硬计分。",
+    "coverage_end": "1859",
+    "coverage_end_precision": "year",
+    "calculation_upper_bound_not_source_date": "若程序要给1859年一个区间上界，上界是该年12月31日，这不是源日期，不写入 observation_end 或 date。"
+  },
+  "revision_trail": {
+    "previous_verdict": "错误",
+    "action": "withdrawn_year_not_a_day",
+    "why": "1859-12-31不是原文提供的日。页无发布日期。年份观察明确但不足，不计分。"
+  },
+  "previous_r2_plan": null,
+  "previous_r2_select": null,
+  "previous_r2_semantic_review": null,
+  "plan": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "not_a_pre_search_plan": "这是2026-11-20的r3补写。r2里这栏若只有“当前审查”一句，那个时间保留在previous_r2_plan，不把本段倒签成检索之前。",
+    "object": "新的更丰富的金银矿发现很少，影响虽大，但只维持比较短的时期。",
+    "condition": "句子没有如果。发现少和时期短是要看的结果，不是另加的触发条件。",
+    "observable": "1817年之后，新的富矿是否很少；金银相对价值的偏离是否在短时期内结束。",
+    "potential_counterevidence": "若后来富矿很多，或同一材料把影响写成持久而不是短时期，就是反证。",
+    "queries": [
+      {
+        "role": "counter",
+        "query": "gold rushes of California Australia Klondike and Witwatersrand lasted and recurred",
+        "precall_file": "audit/r-next/precall/02-counter.json"
+      },
+      {
+        "role": "support",
+        "query": "new gold and silver mine discoveries after 1817 were rare and short lived",
+        "precall_file": "audit/r-next/precall/01-support.json"
+      }
+    ]
+  },
+  "select": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "max_urls": 8,
+    "urls": [
+      {
+        "url": "https://www.econlib.org/book-chapters/chapter-part-i-chapter-v-the-gold-discoveries-and-the-act-of-1853/",
+        "kept": true,
+        "used_for_score": false,
+        "reason": "这是金矿条证据表里的Laughlin页。页内写1850年后产量超过1.5亿美元，并写影响严重而持久。这是不利方向，保留。页面没有出版日，1859只是年份，所以不拿来打分。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Gold_rush",
+        "kept": true,
+        "used_for_score": false,
+        "reason": "同案证据表里的淘金名单，从1848列到1890年代，说明后来还有发现。保存页没有发布日期，不能单独当成观察日，也不选进计分。"
+      }
+    ],
+    "selected_for_score": [],
+    "url_gap": "上列是证据表里实有的地址，不超过8个。不利地址保留，且都未用于计分。"
+  },
+  "semantic_review": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "decision": "unresolved",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "unknown",
+      "evidence_support": "unknown",
+      "counterevidence": "unknown",
+      "verdict_logic": "pass"
+    },
+    "check_reasons": {
+      "object_match": "评估口径就是这句的新富矿及其影响长短，没有换成黄金产量或银金比本身。",
+      "condition_logic": "句子没有如果。评估没有另造一个未出现的条件来代替“时期短”。",
+      "time_alignment": "Laughlin页没有出版日。产量和105美分写到1859年，只有年份。观察终点因此留空，不能把1859收成12月31日。",
+      "evidence_support": "页内没有一份带日的记录证明新富矿很少。已有句子是产量跳升。",
+      "counterevidence": "“serious and prolonged”对“短时期”不利，已保留。它没有出版日，也没有写明短时期已经结束或没有结束，不能单独判错。",
+      "verdict_logic": "缺口是年份和页面无出版日，不足以硬计分。暂无法判断没有改成错误或正确。"
+    },
+    "revision": "本轮六项没有fail，所以没有做那一次修订。判决保持暂无法判断。",
+    "remaining_gap": "还缺一份有出版日、并且直接写新富矿次数和影响持续时间的材料。"
+  }
+}

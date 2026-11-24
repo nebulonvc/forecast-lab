@@ -1,0 +1,28 @@
+{
+  "id": "bfd35b98-d6fd-4d76-847c-073f16511988",
+  "object": "chat.completion",
+  "created": 1794201311,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-00026\",\"predictions\":[{\"quote\":\"循环开始于不同寻常之人，最终这些人会表现得更加非比寻常\",\"kind\":\"prediction\",\"speaker\":\"作者\",\"claim\":\"不同寻常之人会因循环强化而表现得更加非比寻常\",\"expanded_claim\":\"创始人特质循环开始于不同寻常之人，最终这些人会表现得更加非比寻常。\",\"reference_resolutions\":[{\"expression\":\"这些人\",\"referent\":\"不同寻常之人\",\"support_quote\":\"循环开始于不同寻常之人\"}],\"unresolved_references\":[],\"time_text\":\"最终\",\"condition_text\":\"循环开始于不同寻常之人\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"原文以“最终……会”表述未来结果，属于对特质强化结果的预测。\"},{\"quote\":\"或许戒毒不够有魅力，因为它阻碍了通往永恒的道路。也许想要成为永远的摇滚之神，唯一的方法就是英年早逝。\",\"kind\":\"unclear\",\"speaker\":\"作者\",\"claim\":\"英年早逝可能是成为永远摇滚之神的唯一方法\",\"expanded_claim\":\"也许想要成为永远的摇滚之神，唯一的方法就是英年早逝；戒毒可能因阻碍通往永恒的道路而缺乏魅力。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"永远\",\"condition_text\":\"想要成为永远的摇滚之神\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"以“也许”表达推测性判断，不确定是否属于严格预测，标为unclear。\"}]}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3472,
+    "completion_tokens": 315,
+    "total_tokens": 3787,
+    "prompt_tokens_details": {
+      "cached_tokens": 3328
+    },
+    "prompt_cache_hit_tokens": 3328,
+    "prompt_cache_miss_tokens": 144
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

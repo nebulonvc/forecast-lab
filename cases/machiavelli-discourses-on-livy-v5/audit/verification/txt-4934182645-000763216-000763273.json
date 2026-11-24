@@ -1,0 +1,53 @@
+{
+  "claim_id": "txt-4934182645-000763216-000763273",
+  "plan": {
+    "object": "人民和君主对新人第一次荣誉的判断",
+    "conditions": [
+      "比较的是第一次授予荣誉，还没有继续的证明"
+    ],
+    "quantifier": "always",
+    "result": "就错误判断或腐败动机而言，人民犯的错比君主少",
+    "time_window": "1531年之后",
+    "counterevidence_needed": "人民把第一次荣誉给了不合适的新人，而君主或他的判断者当时判断得更准"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "purpose": "首轮一正一反",
+        "support_query": "assembly judged a new man's first honors more accurately than the prince did",
+        "counter_query": "voters chose an unfit new man while the ruler's advisers judged him correctly",
+        "support_result": "支持检索打开的是本书这一章，不能独立核验。",
+        "counter_result": "返回的是宫廷派系选择穆斯特法一世，不是人民和君主对第一次荣誉的比较。该页没有存成可引用正文。",
+        "adopted": false
+      }
+    ],
+    "adaptive_rounds": 0,
+    "stop_reason": "两边都没有1531年之后、人民与君主对第一次荣誉的可引用比较。",
+    "sources": []
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "insufficient_evidence",
+    "trend_aligned": null,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "较少错误只比较第一次荣誉，并且只就错误判断或腐败动机而言。不是一切政治决定。",
+    "reason": "连续原文把范围放在第一次授予荣誉、还没有继续证明的时候，就错误判断或腐败动机而言，人民犯的错总是少于君主。支持检索打开本书，不能核验自己。反例检索看到的是宫廷派系选择一位不胜任的苏丹，不是选民与君主对新人第一次荣誉的比较，而且该页没有存档。没有可引用的比较，所以不判。",
+    "limitation": "穆斯特法页面没有下载成可引用正文。",
+    "method": "只比较第一次荣誉上的判断。本书句子不算证据。宫廷继承不是这个比较。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "打开的是本书，或是宫廷派系选择苏丹。两者都不是第一次荣誉上人民与君主的比较。"
+  }
+}

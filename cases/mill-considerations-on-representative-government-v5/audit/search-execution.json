@@ -1,0 +1,172 @@
+{
+  "written_at": "2026-11-20T09:52:00Z",
+  "plans_written_at": "2026-11-20T09:44:53Z",
+  "external_model_api_used": false,
+  "deepseek_used": false,
+  "tool_call_id": null,
+  "tool_call_id_note": "接口没有返回 tool_call_id，不编造。计划里的 query 是发出前写下的检索词；下面的 query 是实际发出的字符串。",
+  "searches": [
+    {
+      "claim": "laws",
+      "role": "counter",
+      "query": "England has no single connected code of statute law Law Commission",
+      "urls": [
+        "https://law.duke.edu/lib/research-guides/english-law",
+        "https://lawcom.gov.uk/consolidation/"
+      ],
+      "result_file": "/home/ubuntu/.cursor/projects/agent-repos-froecast-lab/agent-tools/56934969-7844-45c0-837d-a91d4faea768.txt",
+      "object_note": "Law Commission 366 写没有做大陆式法典化。页面是截止日后抓取的，不绑定、不评分。soon 没有纸本起点。",
+      "result_sha256": "55948575dc99aa619090d89f251d1ae1e5be4d1a502f01ef14b5d4171786aacf",
+      "failure": null,
+      "tool_call_id": null
+    },
+    {
+      "claim": "judges",
+      "role": "counter",
+      "query": "United States states still elect judges by popular vote 2024",
+      "urls": [
+        "https://ballotpedia.org/State_supreme_court_elections,_2024",
+        "https://ballotpedia.org/Judicial_election_methods_by_state"
+      ],
+      "result_file": "/home/ubuntu/.cursor/projects/agent-repos-froecast-lab/agent-tools/9638a86a-8b7b-45de-a29c-ded5cf5a0ad0.txt",
+      "object_note": "2024 年仍有多州举行州最高法院选举。页面是截止日后抓取的，不绑定。",
+      "result_sha256": "89a35bb8eac0d426f884a4de52d4b645a5b5c719c8543e05723eab6b74fb102c",
+      "failure": null,
+      "tool_call_id": null
+    },
+    {
+      "claim": "peers",
+      "role": "counter",
+      "query": "House of Lords Act 1999 hereditary peers representatives or removed",
+      "urls": [
+        "https://www.legislation.gov.uk/ukpga/1999/34/notes/division/4/2",
+        "https://www.parliament.uk/about/living-heritage/evolutionofparliament/houseoflords/house-of-lords-reform/overview/hereditarypeersremoved/"
+      ],
+      "result_file": null,
+      "object_note": "1999 年法排除大多数世袭贵族，92 人例外，不是全等级由代表出席。对象不符，不评分。",
+      "result_sha256": null,
+      "failure": null,
+      "tool_call_id": null
+    },
+    {
+      "claim": "ionian",
+      "role": "counter",
+      "query": "Ionian Islands ceded to Greece 1864 British offices desire for union",
+      "urls": [
+        "https://en.wikipedia.org/wiki/Treaty_of_London_(1864)",
+        "https://api.parliament.uk/historic-hansard/commons/1863/jul/24/greece-cession-of-the-ionian-islands"
+      ],
+      "result_file": "/home/ubuntu/.cursor/projects/agent-repos-froecast-lab/agent-tools/83c15b76-c0d3-45ae-bcec-4e8db04c972d.txt",
+      "object_note": "割让不是公职开放。1864 落在未印出的纸本窗口里，不能单独核验这一文本。",
+      "result_sha256": "a32667c3bba214d7ca88a0007f921940da6cff336a9d23f8395f4fb943d01e7e",
+      "failure": null,
+      "tool_call_id": null
+    },
+    {
+      "claim": "ascendancy",
+      "role": "counter",
+      "query": "former colonies sovereign United Nations membership not complete political ascendancy",
+      "urls": [
+        "https://www.un.org/en/global-issues/decolonization"
+      ],
+      "result_file": "/home/ubuntu/.cursor/projects/agent-repos-froecast-lab/agent-tools/4f86d1e2-aac2-44ff-9899-68eb76accdbc.txt",
+      "object_note": "独立否定直接统治，但不证明没有完全政治支配。不把独立当成两个分句都已否定。",
+      "result_sha256": "ca21135f431bf6b74bfba21200404607f4435f3dfc9ef00ee533f791c8d319cb",
+      "failure": null,
+      "tool_call_id": null
+    },
+    {
+      "claim": "plural",
+      "role": "counter",
+      "query": "British Reform Act 1918 1928 equal suffrage without plural voting binary",
+      "urls": [
+        "https://www.parliament.uk/about/living-heritage/transformingsociety/electionsvoting/womenvote/overview/thevote/",
+        "https://api.parliament.uk/historic-hansard/commons/1931/may/20/new-clause-abolition-of-plural-voting"
+      ],
+      "result_file": "/home/ubuntu/.cursor/projects/agent-repos-froecast-lab/agent-tools/9551f183-6625-4523-80d2-ad8caed80140.txt",
+      "object_note": "1918 和 1928 扩大选举权，1931 年草案谈废除复数投票。这不是“唯一选择只剩教育复数票和平等普选”。",
+      "result_sha256": "468965a8bd08a551913625998b3c825bbb6316c6489862b6af543ad145c54bad",
+      "failure": null,
+      "tool_call_id": null
+    },
+    {
+      "claim": "communism",
+      "role": "counter",
+      "query": "humans still prefer themselves and close kin communism not universal social form",
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5921922/"
+      ],
+      "result_file": "/home/ubuntu/.cursor/projects/agent-repos-froecast-lab/agent-tools/477e7fb7-5c8f-4494-84b9-98d8a84a196b.txt",
+      "object_note": "独裁者博弈不是“人类作为一个通例不再优先自己和最亲近的人”。条件没有被这页证明已经消失，也不拿来给共产主义评分。",
+      "result_sha256": "9cae0e059c7402db747202b99eb7e0f5c8fcc0adbb3a77c2579b18d0c9158297",
+      "failure": null,
+      "tool_call_id": null
+    },
+    {
+      "claim": "penalty",
+      "role": "support",
+      "query": "East India Company abolition 1858 penalty to India and England measured",
+      "urls": [
+        "https://www.legislation.gov.uk/ukpga/Vict/21-22/106/pdfs/ukpga_18580106_en.pdf"
+      ],
+      "result_file": "/home/ubuntu/.cursor/projects/agent-repos-froecast-lab/agent-tools/2f4ae306-908f-4509-9f21-8e84947790be.txt",
+      "object_note": "1858 年法转移权力和收入负担，不是他所说的严重代价。而且落在未印出的纸本窗口。",
+      "result_sha256": "8da67cc21acf4768f0158931f3ea15c391dab743551056cf4a246153d4c950ec",
+      "failure": null,
+      "tool_call_id": null
+    },
+    {
+      "claim": "hare",
+      "role": "counter",
+      "query": "scholars study of Hare proportional representation impression of feasibility",
+      "urls": [
+        "https://doi.org/10.1093/acprof:oso/9780198201366.003.0005"
+      ],
+      "result_file": "/home/ubuntu/.cursor/projects/agent-repos-froecast-lab/agent-tools/d151fedf-f5d7-4393-9523-09517351ed41.txt",
+      "object_note": "采用单记可让渡票和批评难懂，都不是读者印象随阅读加强。返回还引用了这本书自身。",
+      "result_sha256": "040b02e6cbe678083a1d1019a8dc68042ffdc9c44289ad643fa961dc9763a47c",
+      "failure": null,
+      "tool_call_id": null
+    },
+    {
+      "claim": "bargain",
+      "role": "support",
+      "query": "members of Parliament paying for seats elections selfish bargain after Corrupt Practices Act",
+      "urls": [
+        "https://www.historyofparliamentonline.org/volume/1820-1832/survey/sale-seats"
+      ],
+      "result_file": "/home/ubuntu/.cursor/projects/agent-repos-froecast-lab/agent-tools/c6842d24-a65f-4d28-a48f-502b9fe5cdda.txt",
+      "object_note": "1820 年代卖议席是更早的买卖，不是这句所说的选举成为各方自私交易。",
+      "result_sha256": "ba7f0e2e15aa81c0b685c0516d391e09b8529bb6e48ab09b7f4eadaf1cb92c4a",
+      "failure": null,
+      "tool_call_id": null
+    },
+    {
+      "claim": "perish",
+      "role": "counter",
+      "query": "India governor general council recorded opinions abolished after 1858",
+      "urls": [
+        "https://en.wikipedia.org/wiki/Council_of_India",
+        "https://www.parliament.uk/about/living-heritage/evolutionofparliament/legislativescrutiny/parliament-and-empire/parliament-and-the-american-colonies-before-1765/government-of-the-raj-1858-1914/"
+      ],
+      "result_file": "/home/ubuntu/.cursor/projects/agent-repos-froecast-lab/agent-tools/b6685495-2830-4ee5-b5a1-18cd32b27278.txt",
+      "object_note": "1858 年后的印度事务会议和总督行政会议不是他描述的那套记录理由、首长可推翻多数的办法是否消亡。",
+      "result_sha256": "810ac14d4b80de6ef99d096096a375bf38c7ad39b217ef2cc3dfe43fa629bf4d",
+      "failure": null,
+      "tool_call_id": null
+    },
+    {
+      "claim": "spain",
+      "role": "counter",
+      "query": "Spain catch up European development after 19th century freedom not GDP",
+      "urls": [
+        "https://doi.org/10.1093/acrefore/9780190625979.013.523"
+      ],
+      "result_file": "/home/ubuntu/.cursor/projects/agent-repos-froecast-lab/agent-tools/6ea9bd43-db15-4c57-b529-e552094f278c.txt",
+      "object_note": "人均收入和人类发展不是脚注里没有命名的“失去的地面”。",
+      "result_sha256": "ab24fc4963acd0a13358b4a4e5ccc1ed812889abeffda4f4493c15b4292db929",
+      "failure": null,
+      "tool_call_id": null
+    }
+  ]
+}

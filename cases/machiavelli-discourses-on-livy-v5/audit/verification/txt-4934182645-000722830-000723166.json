@@ -1,0 +1,48 @@
+{
+  "id": "txt-4934182645-000722830-000723166",
+  "plan": {
+    "object": "流过很多血、或受过同样伤害的人。同段的例子是皮斯托亚两派天天见面。",
+    "condition": "a peace imposed on compulsion，并且 every day brought face to face。和平必须是强迫加上的，而且双方每天面对面。劝和、法庭判决、搬到分开的街区，都不是这句。",
+    "quantifier": "cannot be that ... should endure，以及 impossible for them to refrain from mutual injury。强迫的和平不能维持，他们不可能不互相伤害。一次维持多年的自愿和解不能反驳强迫。一次破裂不能证明一切强迫和平都不能维持。",
+    "result": "登记变化是 endure。不能维持的是这种强迫的和平。",
+    "window": "1531至2026-11-15。皮斯托亚是作者自己十五年前的例子。",
+    "counterevidence_needed": "很多血之后，强迫双方每天见面的和平维持了下来；或者这种强迫和平破裂了。自愿和解不算。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "truce imposed after a massacre collapsed when the two sides met again",
+      "counter_query": "after the massacre the imposed peace between the two communities lasted for decades"
+    },
+    "adaptive_rounds": 1,
+    "adaptive": {
+      "strategy": "改查当局强迫杀过对方的两群人住在一起，看和平是否维持",
+      "queries": ["authorities forced two communities who had killed each other to live together and the settlement lasted"]
+    },
+    "kept_urls": ["https://rurallandscapesjournal.com/articles/10.16993/rl.ad"],
+    "dropped": "1707年马德拉斯是把两派分到不同街区。布隆迪的回返者从一开始愿意住在一起。南苏丹的和解是双方同意归还牛群。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-kenya-enoosupukia"],
+    "scope": "必须是强迫的和平，而且双方每天见面。宣讲和法庭不是强迫。",
+    "reason": "1993年10月埃诺苏普基亚有二十多名基库尤农民被杀，约一万人被赶走。1995年到2000年初，教会、非政府组织和地方行政用和平论坛宣讲和解。后来法院把一部分土地判给马赛人，租用和通婚增加。这是劝和与判决之后的相处，不是把流过血的人强迫按住、让他们每天面对面。首轮里维持下来的和解也是签署或原谅，不是强迫。决定性缺口是：没有正文同时写出很多血、强迫的和平、每天见面，以及这和平维持或破裂。",
+    "limitation": "论文写田野在2013至2014年初。1993年10月是屠杀时间。宣讲不是强迫。",
+    "method": "先把强迫和每天见面对齐，再看和平能否维持。自愿和解不进入这句。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "1993年10月有屠杀。随后是宣讲和法院判决，不是强迫双方每天见面的和平。"
+  }
+}

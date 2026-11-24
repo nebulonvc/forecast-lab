@@ -1,0 +1,28 @@
+{
+  "id": "d7fdae42-e228-4bdf-80dc-8a1817050e3d",
+  "object": "chat.completion",
+  "created": 1794201447,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000037115-000037131\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为对中国各阶层人士当下心态与准备状态的描述性判断，无明确未来时点或可检验结果指标。\",\"reason\":\"该句描述作者观察到的当下社会心态，并非对未来可观测结果的预测。\",\"limitation\":\"属态度性概括，缺乏可操作化指标，且无对应证据可核。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4255,
+    "completion_tokens": 150,
+    "total_tokens": 4405,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3487
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

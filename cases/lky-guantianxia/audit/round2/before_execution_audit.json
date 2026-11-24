@@ -1,0 +1,293 @@
+{
+  "transport_complete": true,
+  "request_count": 86,
+  "response_count": 86,
+  "model_responses": {
+    "deepseek-flash": 86
+  },
+  "model_output_records": {
+    "extract": 326,
+    "assess": 326
+  },
+  "initial_runner_all_batches_valid": false,
+  "initial_rejected_batches": [
+    {
+      "batch": 10,
+      "error": "cached_response_invalid_aa3f3b4fa7fc"
+    },
+    {
+      "batch": 9,
+      "error": "cached_response_invalid_7cd63efa373e"
+    },
+    {
+      "batch": 16,
+      "error": "cached_response_invalid_0ecbd1cb9bfa"
+    },
+    {
+      "batch": 17,
+      "error": "cached_response_invalid_a25fee92051b"
+    },
+    {
+      "batch": 21,
+      "error": "cached_response_invalid_dfbb924fce07"
+    },
+    {
+      "batch": 22,
+      "error": "cached_response_invalid_c8c7f72f6992"
+    },
+    {
+      "batch": 26,
+      "error": "cached_response_invalid_fb609f7463b3"
+    },
+    {
+      "batch": 28,
+      "error": "cached_response_invalid_46e600e59077"
+    },
+    {
+      "batch": 33,
+      "error": "cached_response_invalid_4a89b81c78a9"
+    },
+    {
+      "batch": 32,
+      "error": "cached_response_invalid_8d1d402e77d8"
+    },
+    {
+      "batch": 30,
+      "error": "cached_response_invalid_535f28009bb9"
+    },
+    {
+      "batch": 36,
+      "error": "cached_response_invalid_99753dbcf966"
+    },
+    {
+      "batch": 38,
+      "error": "cached_response_invalid_36c3dcdd8001"
+    }
+  ],
+  "initial_record_validation_findings": [
+    {
+      "id": "e2e_s02_p122_02",
+      "n": 57,
+      "errors": [
+        "Unestablished condition cannot be scored"
+      ],
+      "batch": 10
+    },
+    {
+      "id": "e2e_s02_p126_01",
+      "n": 62,
+      "errors": [
+        "Unestablished condition cannot be scored"
+      ],
+      "batch": 10
+    },
+    {
+      "id": "lky_4e9de6529c57d299b03e",
+      "n": 49,
+      "errors": [
+        "references outside original packet: s05_G02,s05_G01"
+      ],
+      "batch": 9
+    },
+    {
+      "id": "lky_f2a3a64c463dec49410b",
+      "n": 50,
+      "errors": [
+        "Unestablished condition cannot be scored"
+      ],
+      "batch": 9
+    },
+    {
+      "id": "e2e_s02_p121_02",
+      "n": 55,
+      "errors": [
+        "Unestablished condition cannot be scored"
+      ],
+      "batch": 9
+    },
+    {
+      "id": "e2e_s02_p097_01",
+      "n": 23,
+      "errors": [
+        "Assessment text missing: method"
+      ],
+      "batch": 5
+    },
+    {
+      "id": "e2e_s02_p098_01",
+      "n": 24,
+      "errors": [
+        "Assessment text missing: method"
+      ],
+      "batch": 5
+    },
+    {
+      "id": "e2e_s02_p174_01",
+      "n": 105,
+      "errors": [
+        "Unestablished condition cannot be scored"
+      ],
+      "batch": 16
+    },
+    {
+      "id": "e2e_s02_p181_01",
+      "n": 113,
+      "errors": [
+        "Scored assessment needs evidence"
+      ],
+      "batch": 17
+    },
+    {
+      "id": "b02_01",
+      "n": 151,
+      "errors": [
+        "Scored assessment needs an observation endpoint"
+      ],
+      "batch": 21
+    },
+    {
+      "id": "b02_07",
+      "n": 157,
+      "errors": [
+        "references outside original packet: v2_MY_PR"
+      ],
+      "batch": 22
+    },
+    {
+      "id": "e2e_p256_01",
+      "n": 192,
+      "errors": [
+        "references outside original packet: v2_THAKSIN,s05_TH01"
+      ],
+      "batch": 26
+    },
+    {
+      "id": "e2e_p273_02",
+      "n": 208,
+      "errors": [
+        "Unestablished condition cannot be scored"
+      ],
+      "batch": 28
+    },
+    {
+      "id": "e2e_p278_01",
+      "n": 217,
+      "errors": [
+        "Unestablished condition cannot be scored"
+      ],
+      "batch": 30
+    },
+    {
+      "id": "e2e_p295_01",
+      "n": 241,
+      "errors": [
+        "Unestablished condition cannot be scored"
+      ],
+      "batch": 33
+    },
+    {
+      "id": "e2e_p290_01",
+      "n": 233,
+      "errors": [
+        "Unestablished condition cannot be scored"
+      ],
+      "batch": 32
+    },
+    {
+      "id": "e2e_s02_p317_02",
+      "n": 268,
+      "errors": [
+        "Unestablished condition cannot be scored"
+      ],
+      "batch": 36
+    },
+    {
+      "id": "e2e_s02_p331_02",
+      "n": 283,
+      "errors": [
+        "Unresolved basis cannot be scored"
+      ],
+      "batch": 38
+    }
+  ],
+  "api_peak_concurrency": 12,
+  "api_wall_seconds": 66.8,
+  "usage": {
+    "prompt_tokens": 254398,
+    "completion_tokens": 94799,
+    "total_tokens": 349197,
+    "prompt_cache_hit_tokens": 23936,
+    "prompt_cache_miss_tokens": 230462
+  },
+  "estimated_cost_CNY_range": [
+    0.61013672,
+    1.22027344
+  ],
+  "fee_note": "按归档费率和供应商返回token估计；不是供应商账单",
+  "unknown_reserved_CNY": 0,
+  "automatic_retries": 0,
+  "session_adjudication_complete": true,
+  "final_accepted_records": 326,
+  "source_tables_before_final_import": {
+    "claims.jsonl": "212dbfbd48ca85beb0cc3452692f48e5e06272ed680c665c30e6056dd70f7a45",
+    "evidence.jsonl": "3a6d2c4124f32191232eb2a5b1928e7b63ecd6b8cf8cb90f1b5a0811b1e44a9f"
+  },
+  "accepted_assessment_sha256": "379806d4739e9744cd4b118efa9acceb3747436ae1f34b4afd60b90f02d6c43f",
+  "accepted_extraction_sha256": "eac73775c4f7a77b1951789db78a7cf516434b30a9ee7c4c59eeb1222165a5d7",
+  "evidence_entries_at_acceptance": 138,
+  "source_corrections": [
+    {
+      "id": "e2e_p285_01",
+      "n": 224,
+      "old_quote": "也許一年引進一萬五千到兩萬五千名外來移民，會是任何國家都可接受的水準。",
+      "corrected_quote": "也許一年引進一萬五千到兩萬五千名外來移民，會是個大家都可接受的水準。",
+      "source_file": "/workspace/lky_archive/extracted/books/lky_guantianxia_pilot/vertical_v3/provisional_413_run01/pages/pdf_285/original_240dpi.png",
+      "source_sha256": "0ead1b7ebb411736d5350c67851e4a41cd9d387323aacca709f6b4b8b2cd11fd",
+      "location": "PDF第285页、印刷页232，第8直栏（右起）",
+      "verification": "以view_image打开原始240dpi整页图，逐字目视核对。非依据OCR自动改写；没有改动book_index或data。"
+    },
+    {
+      "id": "e2e_p286_03",
+      "n": 228,
+      "old_quote": "新移民已替代我們缺失的年輕人口，他們所生育的下一代，也一樣不足以替代他們現在的人數。",
+      "corrected_quote": "新移民是替代我們所缺的年輕人口，但他們所生育的下一代，也一樣不足以替代他們上一代的人數。",
+      "source_file": "/workspace/lky_archive/extracted/books/lky_guantianxia_pilot/vertical_v3/provisional_413_run01/pages/pdf_286/original_240dpi.png",
+      "source_sha256": "07158b6dc7235452b68e7c05c147466e3a502dac2da071470fe4669a66117c8f",
+      "location": "PDF第286页、印刷页233，末段第13—14直栏（右起）",
+      "verification": "以view_image打开原始240dpi整页图，逐字目视核对。非依据OCR自动改写；没有改动book_index或data。"
+    }
+  ],
+  "review_changes": {
+    "records_changed": 288,
+    "verdict_or_inclusion_changed": 61,
+    "method_changed": 201,
+    "source_quotes_corrected": 2,
+    "transitions": {
+      "部分符合 → 正确": 8,
+      "部分符合 → 暂无法判断": 25,
+      "暂无法判断 → 正确": 9,
+      "None → 暂无法判断": 3,
+      "部分符合 → 错误": 3,
+      "正确 → 暂无法判断": 8,
+      "暂无法判断 → None": 2,
+      "None → 正确": 1,
+      "错误 → 部分符合": 1,
+      "错误 → 暂无法判断": 1
+    }
+  },
+  "example_ids": [
+    "e2e_s02_p207_02",
+    "e2e_s02_p216_02",
+    "lky_56dc76b726bca35a77af",
+    "e2e_p264_01",
+    "lky_03798f0cbac7559b7009",
+    "e2e_p265_01",
+    "e2e_s02_p189_01"
+  ],
+  "method_findings": [
+    "制度延续与路径依赖：从现有政治结构推测变化速度，例如强中央、欧盟财政整合和日美同盟。这些记录可以核验制度是否延续，不能仅凭延续证明作者的所有制度解释。",
+    "人口与资源约束：从年龄结构、劳动力和消费需求推到经济走势。日本2022年抚养比可作数值核验；收入与消费还受生产率、价格和政策影响，需要分别检查。",
+    "利益与力量平衡：从政府、军队与大国的利益推测其选择。条件情景适合保留为可更新的问题；对尚未发生的情景不记成已经命中。",
+    "趋势外推与转折风险：俄罗斯军事竞争、缅甸军方逆转等反例表明，既有趋势可能被政策与制度转折打断。需要明确哪些新事实会让原判断失效。"
+  ]
+}

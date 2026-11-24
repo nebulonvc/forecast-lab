@@ -1,0 +1,55 @@
+{
+  "status": "incomplete_not_accepted",
+  "counted_toward_20": false,
+  "written_at": "2026-11-20T01:14:13Z",
+  "apply": "未跑。apply 要求一次覆盖全部现 ID。其余句子还没有逐条检索和评估，不能为了通过 apply 把它们写成同一句暂无法判断。",
+  "next_unverified_id": "txt-37a5a0ec54-000012943-000013021",
+  "claim_count": 56,
+  "unique_claim_texts": 56,
+  "assessed": 0,
+  "quote_repairs": {
+    "systems": "旧 ID txt-37a5a0ec54-000401534-000401615 的引文没有两种制度。现引文从 That under the system of slave labour 连续到 soon outgrown by any live society。新 ID 由 claims_from_results 生成，没有手改。尚未评估。",
+    "birth": "旧 ID txt-37a5a0ec54-000536226-000536277 的条件不在引文里。现引文含 so fully to educate and develop every child，condition_text 是这句里的连续原文。尚未评估。2019-09-01 与 2024-07-01 已从证据日期撤回。",
+    "fragment": "旧 ID txt-37a5a0ec54-000244051-000244126 停在 apt to call。现引文延续到 too good to be true。尚未评估。"
+  },
+  "searched_this_revision_not_assessed": [
+    "txt-37a5a0ec54-000032466-000032545",
+    "txt-37a5a0ec54-000401361-000401615",
+    "txt-37a5a0ec54-000501071-000501159",
+    "txt-37a5a0ec54-000535883-000536277",
+    "txt-37a5a0ec54-000536366-000536404",
+    "txt-37a5a0ec54-000540424-000540485"
+  ],
+  "searches": [
+    {
+      "topic": "slum",
+      "executed_at": "2026-11-20T01:08:00Z",
+      "query": "UN-Habitat world cities report slum population 2022 publication date",
+      "saved": "data/sources/ev-unhabitat-press-2022-06-29.pdf",
+      "result": "新闻稿有 29 June 2022。pdftotext 没有 slum。贫民区句子没有被这页证实或否定。"
+    },
+    {
+      "topic": "railroad and peace",
+      "executed_at": "2026-11-20T01:10:00Z",
+      "query": "interstate war frequency after railroads 20th century peace research dated report",
+      "saved": null,
+      "result": "PNAS 页面 curl 返回 403，没有存档。检索列表里有 2015-12-14 的 PNAS 和 Science Advances，正文未保存，不能当证据。铁路句子未评估。"
+    },
+    {
+      "topic": "birth-death balance",
+      "executed_at": "2026-11-20T01:11:34Z",
+      "query": "United Nations world population prospects 2024 births deaths not in balance press release date",
+      "saved": "data/sources/ev-un-press-2024-07.html",
+      "result": "保存的新闻稿写 New York, 11 July，并写 World Population Prospects 2024。正文没有 2.25，也没有写永久平衡已经实现。"
+    },
+    {
+      "topic": "class division",
+      "executed_at": "2026-11-20T01:11:00Z",
+      "query": "World Inequality Database top 10 percent income share 2024 leisure class working class",
+      "saved": "data/sources/ev-saez-june-2026.pdf",
+      "result": "PDF 封面是 June 2026，没有日。pdftotext 有 2024 年美国最高 10% 收入份额 48.3%。这不是有闲阶级消失的证据，未计分。"
+    }
+  ],
+  "not_searched_count": 50,
+  "old_template_claim": "Gilman asserts a change after 1904. 已从现行 claims.jsonl 移除。旧文件留在 output/claims_before_quote_repair.jsonl。"
+}

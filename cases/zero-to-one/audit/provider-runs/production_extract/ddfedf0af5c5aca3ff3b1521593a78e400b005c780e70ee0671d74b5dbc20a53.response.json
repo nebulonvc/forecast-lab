@@ -1,0 +1,28 @@
+{
+  "id": "b6c47779-39ad-4773-9563-0507fd05ea21",
+  "object": "chat.completion",
+  "created": 1794201134,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-00026\",\"predictions\":[{\"quote\":\"循环开始于不同寻常之人，最终这些人会表现得更加非比寻常\",\"kind\":\"prediction\",\"speaker\":\"作者\",\"claim\":\"创始人从不同寻常之人开始，最终会表现得更加非比寻常。\",\"expanded_claim\":\"创始人特质循环开始于不同寻常之人，最终这些人会表现得更加非比寻常。\",\"reference_resolutions\":[{\"expression\":\"这些人\",\"referent\":\"不同寻常之人（创始人）\",\"support_quote\":\"循环开始于不同寻常之人\"}],\"unresolved_references\":[],\"time_text\":\"最终\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"原文用“最终……会”表述创始人特质随时间强化的未来结果。\"},{\"quote\":\"或许想要成为永远的摇滚之神，唯一的方法就是英年早逝\",\"kind\":\"unclear\",\"speaker\":\"作者\",\"claim\":\"想要成为永远的摇滚之神，唯一的方法可能就是英年早逝。\",\"expanded_claim\":\"或许想要成为永远的摇滚之神，唯一的方法就是英年早逝。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"永远\",\"condition_text\":\"想要成为永远的摇滚之神\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"以“或许”提出条件性判断，不确定是否属于作者主张的预测。\"}]}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3472,
+    "completion_tokens": 286,
+    "total_tokens": 3758,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 3216
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

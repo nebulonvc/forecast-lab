@@ -1,0 +1,28 @@
+{
+  "id": "d6d0ad8c-4910-4e05-a297-f6b937da62bc",
+  "object": "chat.completion",
+  "created": 1794201439,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000010498-000010520\",\"inclusion\":\"duplicate\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"与父命题 txt-4001dbbdf2-000010493-000010521 重复的拆分记录，仅保留审计，不纳入预测分母。\",\"reason\":\"该条与同一原文父命题重复，属于拆分出的重复记录。\",\"limitation\":\"重复记录不单独评分，其判断应回到父命题评估。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"未来数十年中\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4530,
+    "completion_tokens": 154,
+    "total_tokens": 4684,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 4530
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

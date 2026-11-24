@@ -1,0 +1,86 @@
+{
+  "id": "txt-5386516eaf-000137643-000137741",
+  "plan": {
+    "queries": [
+      {
+        "role": "support"
+      },
+      {
+        "role": "counter"
+      }
+    ],
+    "note": "r4 新执行。见 audit/search-returns-r4/manifest.json。不回填。"
+  },
+  "select": {
+    "urls": [
+      "https://vaclavsmil.com/wp-content/uploads/2024/10/smil-articles-science-energy-ethics-civilization.pdf"
+    ],
+    "reason": "只保留摘录在存档中的来源。对象不符的不拿来计分。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "method": "2026-11-20 新的支持与反证检索。",
+    "id": "txt-5386516eaf-000137643-000137741",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "observation_end": null,
+    "scope": "人对自然力的支配会无可怀疑地变得无限地更大。",
+    "reason": "一次能源消费一个多世纪大约每年增长2%。六个行星边界已被越过。能源增长不是“无限地更大”的全部支配，边界被越过也不是支配已经停止。",
+    "limitation": "两个材料都不是原句的全部对象。",
+    "evidence_ids": [
+      "ev-r4-energy",
+      "ev-r4-bounds"
+    ],
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-r4-energy",
+        "quote": "has gro w n at an average annual rate of approximately 2% per year",
+        "relation": "boundary",
+        "limitation": "能源不是无限支配。",
+        "observation_end": "1995-12-31",
+        "publication_date": "1998",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-r4-bounds",
+        "quote": "Six planetary boundaries are found currently to be transgressed",
+        "relation": "boundary",
+        "limitation": "不是支配的度量。",
+        "observation_end": "2023-12-31",
+        "publication_date": "2023",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺人对自然力的支配是否已经变得无限地更大。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-000137643-000137741",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "r4_execution": {
+    "new": true,
+    "executed_at": "2026-11-20T11:20:00Z",
+    "previous_verdict": "暂无法判断"
+  }
+}

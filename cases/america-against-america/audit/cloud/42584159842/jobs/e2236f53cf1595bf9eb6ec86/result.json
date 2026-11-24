@@ -1,0 +1,527 @@
+{
+  "claim_id": "txt-1c4066fc0c-000253442-000253504",
+  "version": "search-verifier-v1",
+  "input_sha256": "20883c3b06ae68ac764da11ed744d221c3a19464af6dd07a5eb2582d7005f63e",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000253442-000253504",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "原文条件为美国社会相互冲突的因素和力量继续按1991年前后方式运动；结果分项为(a)美国优势发挥受阻、(b)形成不可阻挡的危机潜流。观察窗口取1991年至cutoff 2026-11-09前可得数据，分别核查政治极化/社会冲突、美国相对经济与研发优势、危机累积。",
+    "reason": "政治议题极化研究显示1988—2024年美国极化上升，与“相斥力量持续”方向部分相符；但原文核心结果是优势受阻与不可阻挡危机累积，现有材料未提供对这两项终局判断的直接证据。条件是否按原文方式持续、危机是否“不可阻挡”均无法操作化确认。",
+    "limitation": "极化上升只对应条件侧和部分社会冲突，不能替代优势与危机结果；研发支出仍高也不足以证明优势未受阻。原文条件性极强，回顾性证据无法确定反事实路径。",
+    "evidence_ids": [
+      "ev-fe7d2598d0e242987a5d3480",
+      "ev-942f334633e26743608e65de",
+      "prior-81427a19f3894f8e09f0",
+      "ev-a763e8f3d6f360c5488ca15f"
+    ],
+    "method": "汇总制度文化内部矛盾并外推危机累积",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-31",
+    "future_time_text": "继续这样运动下去",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-fe7d2598d0e242987a5d3480",
+        "relation": "support",
+        "quote": "Divisions within the US population on social and political issues have increased by 64% since 1988, with almost all this coming after 2008, according to a study tracking polarisation from the end of the Reagan era to the dawn of Trump’s second term.",
+        "publication_date": "2026-02-04",
+        "observation_end": "2024-12-31",
+        "limitation": "仅支持政治议题极化上升，未证明美国优势受阻或危机不可阻挡；来源为新闻稿且verified=false。"
+      },
+      {
+        "evidence_id": "ev-942f334633e26743608e65de",
+        "relation": "support",
+        "quote": "We analyse the between-cluster separation, within-cluster cohesion and size parity of the clusters to quantify a society",
+        "publication_date": "2026-02-04",
+        "observation_end": "2024-12-31",
+        "limitation": "摘要片段截断，仅显示测量方法，未显示完整结论；不能单独证明危机累积。"
+      },
+      {
+        "evidence_id": "prior-81427a19f3894f8e09f0",
+        "relation": "boundary",
+        "quote": "跨20年价值观调查显示党派意识形态重叠减少，党派反感扩大；也保留公共立场并非全面极化的区别。",
+        "publication_date": "2014-06-12",
+        "observation_end": null,
+        "limitation": "该摘要同时提示极化并非全面，且观察期较早，不能覆盖至cutoff。"
+      },
+      {
+        "evidence_id": "ev-a763e8f3d6f360c5488ca15f",
+        "relation": "counter",
+        "quote": "The top 8 individual R&D-performing regions, countries, or economies accounted for 82% of global R&D expenditures in 2022, with the United States (30%) and China (27%) accounting for over half",
+        "publication_date": null,
+        "observation_end": "2022-12-31",
+        "limitation": "显示美国研发优势仍大，但研发份额不等于原文“优势发挥”全部口径，且日期未知、verified=false。"
+      }
+    ],
+    "remaining_gap": "缺少能直接衡量“美国优势发挥受阻”和“不可阻挡危机潜流”的连续指标及条件持续性的证据；现有材料只覆盖政治极化和研发份额，无法判定终局。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000253442-000253504",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "原文条件为美国社会相互冲突的因素和力量继续按1991年前后方式运动；结果分项为(a)美国优势发挥受阻、(b)形成不可阻挡的危机潜流。观察窗口取1991年至cutoff 2026-11-09前可得数据，分别核查政治极化/社会冲突、美国相对经济与研发优势、危机累积。",
+    "reason": "政治议题极化研究显示1988—2024年美国极化上升，与“相斥力量持续”方向部分相符；但原文核心结果是优势受阻与不可阻挡危机累积，现有材料未提供对这两项终局判断的直接证据。条件是否按原文方式持续、危机是否“不可阻挡”均无法操作化确认。",
+    "limitation": "极化上升只对应条件侧和部分社会冲突，不能替代优势与危机结果；研发支出仍高也不足以证明优势未受阻。原文条件性极强，回顾性证据无法确定反事实路径。",
+    "evidence_ids": [
+      "ev-fe7d2598d0e242987a5d3480",
+      "ev-942f334633e26743608e65de",
+      "prior-81427a19f3894f8e09f0",
+      "ev-a763e8f3d6f360c5488ca15f"
+    ],
+    "method": "汇总制度文化内部矛盾并外推危机累积",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-31",
+    "future_time_text": "继续这样运动下去",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-fe7d2598d0e242987a5d3480",
+        "relation": "support",
+        "quote": "Divisions within the US population on social and political issues have increased by 64% since 1988, with almost all this coming after 2008, according to a study tracking polarisation from the end of the Reagan era to the dawn of Trump’s second term.",
+        "publication_date": "2026-02-04",
+        "observation_end": "2024-12-31",
+        "limitation": "仅支持政治议题极化上升，未证明美国优势受阻或危机不可阻挡；来源为新闻稿且verified=false。"
+      },
+      {
+        "evidence_id": "ev-942f334633e26743608e65de",
+        "relation": "support",
+        "quote": "We analyse the between-cluster separation, within-cluster cohesion and size parity of the clusters to quantify a society",
+        "publication_date": "2026-02-04",
+        "observation_end": "2024-12-31",
+        "limitation": "摘要片段截断，仅显示测量方法，未显示完整结论；不能单独证明危机累积。"
+      },
+      {
+        "evidence_id": "prior-81427a19f3894f8e09f0",
+        "relation": "boundary",
+        "quote": "跨20年价值观调查显示党派意识形态重叠减少，党派反感扩大；也保留公共立场并非全面极化的区别。",
+        "publication_date": "2014-06-12",
+        "observation_end": null,
+        "limitation": "该摘要同时提示极化并非全面，且观察期较早，不能覆盖至cutoff。"
+      },
+      {
+        "evidence_id": "ev-a763e8f3d6f360c5488ca15f",
+        "relation": "counter",
+        "quote": "The top 8 individual R&D-performing regions, countries, or economies accounted for 82% of global R&D expenditures in 2022, with the United States (30%) and China (27%) accounting for over half",
+        "publication_date": null,
+        "observation_end": "2022-12-31",
+        "limitation": "显示美国研发优势仍大，但研发份额不等于原文“优势发挥”全部口径，且日期未知、verified=false。"
+      }
+    ],
+    "remaining_gap": "缺少能直接衡量“美国优势发挥受阻”和“不可阻挡危机潜流”的连续指标及条件持续性的证据；现有材料只覆盖政治极化和研发份额，无法判定终局。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-ec20d662d539ed82aeb7",
+      "url": "https://www.federalreserve.gov/econres/notes/feds-notes/costs-of-rising-uncertainty-20250424.html",
+      "title": "ev-r2-l3-uncertainty",
+      "published_date": "2025-04-24",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-uncertainty",
+      "archive_sha256": "48a6374e08c0376b56f79e00aa97a3b9f6d4f21acdd80c7e742895d1a46b1e29",
+      "archive_path": "data/sources/r2-l3-uncertainty.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-81427a19f3894f8e09f0",
+      "url": "https://www.pewresearch.org/politics/2014/06/12/political-polarization-in-the-american-public/",
+      "title": "ev-polarization",
+      "published_date": "2014-06-12",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-polarization",
+      "archive_sha256": "e0abc539884f05b92dc6fc7731fba6ed3bc0f145317bb77d45bf60032c7aabb3",
+      "archive_path": "data/sources/e0abc539884f05b92dc6fc7731fba6ed3bc0f145317bb77d45bf60032c7aabb3.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-038019c735d4360d56c8",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.KD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-kd",
+      "published_date": "2026-10-08",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-kd",
+      "archive_sha256": "0eabb480af54e08e1fa6c8a30424b5f98a316e14d676054b7b88acb293744bb4",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.KD.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-f54eb082d2586bb854e7",
+      "url": "https://www.ncses.nsf.gov/pubs/nsb20243/discovery-u-s-and-global-r-d",
+      "title": "ev-nsf",
+      "published_date": "2024-03-13",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-nsf",
+      "archive_sha256": "48d44bfdae4f5f92a3f44364f67e6ca7670f659eb1c77f1e11453f89e6023f33",
+      "archive_path": "data/sources/48d44bfdae4f5f92a3f44364f67e6ca7670f659eb1c77f1e11453f89e6023f33.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-fe7d2598d0e242987a5d3480",
+      "url": "https://www.cam.ac.uk/stories/political-division-united-states",
+      "resolved_url": "https://www.cam.ac.uk/stories/political-division-united-states",
+      "title": "Political division in the US surged from 2008 onwards | University of Cambridge",
+      "published_date": "2026-02-04",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:50.718030+00:00",
+      "archive_sha256": "8a2bfb3d61c4357c605b009a80488422882df4814572f10d07d5cb884fec9fc6",
+      "archive_path": "jobs/e2236f53cf1595bf9eb6ec86/8a2bfb3d61c4357c605b009a80488422882df4814572f10d07d5cb884fec9fc6.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-80513ea30980fbf0a02e79a4",
+      "url": "https://researchonline.lse.ac.uk/id/eprint/129930/3/rsos.251428.pdf",
+      "resolved_url": "https://researchonline.lse.ac.uk/id/eprint/129930/3/rsos.251428.pdf",
+      "title": "Version: Published Version Licence: Creative Commons: Attribution 4.0",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:50.718231+00:00",
+      "archive_sha256": "80734f55f2f5ccfa1436bd51a9ded16ac15e3a80e3cdbd8adfa40bb00519f240",
+      "archive_path": "jobs/e2236f53cf1595bf9eb6ec86/80734f55f2f5ccfa1436bd51a9ded16ac15e3a80e3cdbd8adfa40bb00519f240.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a763e8f3d6f360c5488ca15f",
+      "url": "https://ncses.nsf.gov/pubs/nsb20257/global-r-d-and-international-comparisons-2",
+      "resolved_url": "https://ncses.nsf.gov/pubs/nsb20257/global-r-d-and-international-comparisons-2",
+      "title": "Discovery: R&D Activity and Research Publications | NCSES | NSF",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:50.718369+00:00",
+      "archive_sha256": "e6a05b3acbb188b7f190b244d33db41330e981e34ad124eee6696e0322422868",
+      "archive_path": "jobs/e2236f53cf1595bf9eb6ec86/e6a05b3acbb188b7f190b244d33db41330e981e34ad124eee6696e0322422868.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e09fa3756f4e5c5e12adfe89",
+      "url": "https://www.pewresearch.org/politics/feature/political-polarization-1994-2017/",
+      "resolved_url": "https://www.pewresearch.org/politics/feature/political-polarization-1994-2017/",
+      "title": "The shift in the American public’s political values | Pew Research Center",
+      "published_date": "2017-10-20",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:50.718476+00:00",
+      "archive_sha256": "d259d49af6d5bd6c73fd9ee1c439dcfb67e17daf20d6bcf3e30d1ac302d3a5df",
+      "archive_path": "jobs/e2236f53cf1595bf9eb6ec86/d259d49af6d5bd6c73fd9ee1c439dcfb67e17daf20d6bcf3e30d1ac302d3a5df.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-942f334633e26743608e65de",
+      "url": "https://royalsocietypublishing.org/rsos/article/13/2/251428/479919/A-new-measure-of-issue-polarization-using-k-means",
+      "resolved_url": "https://royalsocietypublishing.org/rsos/article/13/2/251428/479919/A-new-measure-of-issue-polarization-using-k-means",
+      "title": "A new measure of issue polarization using k-means clustering: US trends 1988–2024 and predictors of polarization across the world | Royal Society Open Science | The Royal Society",
+      "published_date": "2026-02-04",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:13:02.959242+00:00",
+      "archive_sha256": "5e6c390430c9366046567f1cefd9845339ec11753eda5fc325b4784c6e165523",
+      "archive_path": "jobs/e2236f53cf1595bf9eb6ec86/5e6c390430c9366046567f1cefd9845339ec11753eda5fc325b4784c6e165523.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-6165b6578e85bfdbc00e521d",
+      "url": "https://ncses.nsf.gov/pubs/nsb20243/discovery-u-s-and-global-r-d",
+      "resolved_url": "https://ncses.nsf.gov/pubs/nsb20243/discovery-u-s-and-global-r-d",
+      "title": "The State of U.S. Science and Engineering 2024 | NCSES | NSF",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:13:02.959409+00:00",
+      "archive_sha256": "1f7e0b5c692d8dc9349b21d03de4047d37e88430616853a2322c57b1c1eb638b",
+      "archive_path": "jobs/e2236f53cf1595bf9eb6ec86/1f7e0b5c692d8dc9349b21d03de4047d37e88430616853a2322c57b1c1eb638b.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-447d8ce9513dc3c7a498f126",
+      "url": "https://ncses.nsf.gov/pubs/nsb20246/assets/cross-national-comparisons-of-r-d-performance/tables/nsb20246-tabrd-005.pdf",
+      "resolved_url": "https://ncses.nsf.gov/pubs/nsb20246/assets/cross-national-comparisons-of-r-d-performance/tables/nsb20246-tabrd-005.pdf",
+      "title": "National Center for Science and Engineering Statistics | NSB-2024-6",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:13:02.959538+00:00",
+      "archive_sha256": "e49be1bed63e62922793e79b6ea2415ae44c9bfa7db35b9d2562466dccff2555",
+      "archive_path": "jobs/e2236f53cf1595bf9eb6ec86/e49be1bed63e62922793e79b6ea2415ae44c9bfa7db35b9d2562466dccff2555.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "美国 政治极化 社会分裂 长期趋势 1990 2024 原始调查 数据",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "United States GDP share of world R&D investment 1991 2024 NSF OECD original data",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "United States political polarization trend 1988 2024 American National Election Studies k-means clustering original data",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "United States share of global GDP and R&D expenditures 1991 2024 World Bank NSF OECD original statistics",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少能直接衡量“美国优势发挥受阻”和“不可阻挡危机潜流”的连续指标及条件持续性的证据；现有材料只覆盖政治极化和研发份额，无法判定终局。",
+  "source_statuses": [
+    {
+      "url": "https://www.cam.ac.uk/stories/political-division-united-states",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://researchonline.lse.ac.uk/id/eprint/129930/3/rsos.251428.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://ncses.nsf.gov/pubs/nsb20257/global-r-d-and-international-comparisons-2",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.pewresearch.org/politics/feature/political-polarization-1994-2017/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://royalsocietypublishing.org/rsos/article/13/2/251428/479919/A-new-measure-of-issue-polarization-using-k-means",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://ncses.nsf.gov/pubs/nsb20243/discovery-u-s-and-global-r-d",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://ncses.nsf.gov/pubs/nsb20246/assets/cross-national-comparisons-of-r-d-performance/tables/nsb20246-tabrd-005.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 7,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "dbf6ea07e55fd9228f654186b7f4d9677f5511afab3a5e30cd3330b2e2284f31"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "a60f365db572a03c5a31029267d09911",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "8d76e60019e0430004c4912014da810a",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "921d4fb00380d59c7ef5c46e2fbfd16a69b919f55603927eefe11e1b131d2656"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "8b75f28f47cb655f0aae558ccb500f0c",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "0228b8361332b9cea82c5aadc48676b435f4f2d1ff5d419d26359d10e8a3da59"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "9f138bf82cc5a5ba48a661f6dde35773",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "858e200edf0298c7d84dc1056e92d0d3",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "0471ffed2215d98cf30e5e84420b9ae72c32f2cb8e81311fbd4afca2983c1755"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "bc7b27757d6841400e2cbd9eb5dc8b8d",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "660064651570c47706d7e3ea3e20dfdd710ba102a5addb83f70d54c48e6617e2",
+      "validation_error": "evidence_quote_not_in_shown_source"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "96b01b18273338000a856abfd998a9d46249e4de9f719f0aec00d881498b9538"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "86bd262741f0bedde231db9100734fd369687db9f8e04d43de6ee3157288b7ef"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "660064651570c47706d7e3ea3e20dfdd710ba102a5addb83f70d54c48e6617e2",
+      "validation_error": "evidence_quote_not_in_shown_source"
+    }
+  ],
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000253442-000253504",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000253442-000253504",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "原文条件为美国社会相互冲突的因素和力量继续按1991年前后方式运动；结果分项为(a)美国优势发挥受阻、(b)形成不可阻挡的危机潜流。观察窗口取1991年至cutoff 2026-11-09前可得数据，分别核查政治极化/社会冲突、美国相对经济与研发优势、危机累积。",
+      "reason": "政治议题极化研究显示1988—2024年美国极化上升，与“相斥力量持续”方向部分相符；但原文核心结果是优势受阻与不可阻挡危机累积，现有材料未提供对这两项终局判断的直接证据。条件是否按原文方式持续、危机是否“不可阻挡”均无法操作化确认。",
+      "limitation": "极化上升只对应条件侧和部分社会冲突，不能替代优势与危机结果；研发支出仍高也不足以证明优势未受阻。原文条件性极强，回顾性证据无法确定反事实路径。",
+      "evidence_ids": [
+        "ev-fe7d2598d0e242987a5d3480",
+        "ev-942f334633e26743608e65de",
+        "prior-81427a19f3894f8e09f0",
+        "ev-a763e8f3d6f360c5488ca15f"
+      ],
+      "method": "汇总制度文化内部矛盾并外推危机累积",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "继续这样运动下去",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-fe7d2598d0e242987a5d3480",
+          "relation": "support",
+          "quote": "Divisions within the US population on social and political issues have increased by 64% since 1988, with almost all this coming after 2008, according to a study tracking polarisation from the end of the Reagan era to the dawn of Trump’s second term.",
+          "publication_date": "2026-02-04",
+          "observation_end": "2024-12-31",
+          "limitation": "仅支持政治议题极化上升，未证明美国优势受阻或危机不可阻挡；来源为新闻稿且verified=false。"
+        },
+        {
+          "evidence_id": "ev-942f334633e26743608e65de",
+          "relation": "support",
+          "quote": "We analyse the between-cluster separation, within-cluster cohesion and size parity of the clusters to quantify a society",
+          "publication_date": "2026-02-04",
+          "observation_end": "2024-12-31",
+          "limitation": "摘要片段截断，仅显示测量方法，未显示完整结论；不能单独证明危机累积。"
+        },
+        {
+          "evidence_id": "prior-81427a19f3894f8e09f0",
+          "relation": "boundary",
+          "quote": "跨20年价值观调查显示党派意识形态重叠减少，党派反感扩大；也保留公共立场并非全面极化的区别。",
+          "publication_date": "2014-06-12",
+          "observation_end": null,
+          "limitation": "该摘要同时提示极化并非全面，且观察期较早，不能覆盖至cutoff。"
+        },
+        {
+          "evidence_id": "ev-a763e8f3d6f360c5488ca15f",
+          "relation": "counter",
+          "quote": "The top 8 individual R&D-performing regions, countries, or economies accounted for 82% of global R&D expenditures in 2022, with the United States (30%) and China (27%) accounting for over half",
+          "publication_date": null,
+          "observation_end": "2022-12-31",
+          "limitation": "显示美国研发优势仍大，但研发份额不等于原文“优势发挥”全部口径，且日期未知、verified=false。"
+        }
+      ],
+      "remaining_gap": "缺少能直接衡量“美国优势发挥受阻”和“不可阻挡危机潜流”的连续指标及条件持续性的证据；现有材料只覆盖政治极化和研发份额，无法判定终局。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "保留原文真实条件：若美国社会相互冲突的因素和力量继续按1991年前后方式运动，则（a）美国优势发挥受阻，且（b）形成不可阻挡的危机潜流。可观察口径分别核查：内部政治极化/社会冲突是否持续或加剧；美国相对经济、研发等优势是否仍能发挥；是否出现可称为不可阻挡的危机累积。反证包括：相斥力量未持续原样运动、优势持续发挥、危机未呈不可阻挡累积。",
+  "elapsed_seconds": 38.093,
+  "completed_at": "2026-11-09T08:13:19.617344+00:00"
+}

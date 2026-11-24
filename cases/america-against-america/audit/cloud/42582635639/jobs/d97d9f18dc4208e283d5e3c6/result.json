@@ -1,0 +1,627 @@
+{
+  "claim_id": "txt-1c4066fc0c-000101650-000101708",
+  "version": "search-verifier-v1",
+  "input_sha256": "c55bd668a6cfc60e09afe627cfa7067aded15b9438db369227c899d2d9d3dbdf",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000101650-000101708",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "按研究范围口径：1991年后美国出现以个人数据、心理画像、算法推荐或定向影响为手段的隐私侵入与心理干预证据；观察时段为2024年FTC报告、2024年情绪AI评论及2024—2025年初监管执法材料（截至cutoff 2026-11-09前）。",
+    "reason": "自动复核未确认主要判断：建议将ev-880d0fe5bf7b774cecd1d5db列为support证据，但该来源正文仅见目录与章节标题，且verified=false、日期未知；目录标题不能支撑“大规模收集数据并用于算法/AI”的主要结果。建议自己在limitation中已承认应降为background，却仍在evidence_ids中保留为支撑，属内部矛盾。; 原预测是“科技发展可能使治人手段突破一般技术管理，走向每个人内心世界，侵入私域”的方向性可能判断，并非“A未解决→B重大后果”的条件预测。建议以“普遍化程度未被直接测量”和“存在监管限制”为由判“部分符合”，但未指出后果B中哪些具体部分实现、哪些未实现；监管执法属于边界/缓解，不等于原预测的某个分项未实现。按口径，方向性证据符合主要结果应判符合或趋势符合，而非部分符合。",
+    "limitation": "证据集中于少数大型平台与情绪AI细分领域，不能代表“每个人”的普遍侵入；监管执法材料同时显示法律对部分侵入有约束，方向并非单向。关键修订：将ev-880d0fe5bf7b774cecd1d5db从support降为background，因其正文仅见目录标题且日期未知，不能充当结论证据。",
+    "evidence_ids": [
+      "prior-fcea77e7f71c07575f47",
+      "ev-880d0fe5bf7b774cecd1d5db",
+      "ev-e0708388f4dedd726ae2e171",
+      "ev-f972ca015fbf0c7d862934b2",
+      "ev-d0a9d1b86f565933b9b57894",
+      "ev-599a47601ff60b3e5035bb04"
+    ],
+    "method": "从技术管理能力增长推演隐私与心理控制边界",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-fcea77e7f71c07575f47",
+        "relation": "support",
+        "quote": "FTC对大型社交媒体和视频平台的调查发现大范围收集个人信息并商业化，对儿童保护不足。",
+        "publication_date": "2024-09-19",
+        "observation_end": "2024-09-19",
+        "limitation": "为已登记摘要，非完整报告正文；仅覆盖大型平台。"
+      },
+      {
+        "evidence_id": "ev-880d0fe5bf7b774cecd1d5db",
+        "relation": "background",
+        "quote": "1. The Companies Generally Collected Vast Amounts of Data About Users and Non-Users... 17",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "verified=false且日期未知；可见正文仅为目录与章节标题，不能作为结论证据，仅作背景。"
+      },
+      {
+        "evidence_id": "ev-e0708388f4dedd726ae2e171",
+        "relation": "support",
+        "quote": "Social media companies collect, share and process vast troves of information about their users while offering little transparency or control, including over how it is used by systems incorporating artificial intelligence, the U.S. Federal Trade Commission said in a report released on Thursday.",
+        "publication_date": "2024-09-19",
+        "observation_end": "2024-09-19",
+        "limitation": "新闻报道转述FTC报告，非原始数据；聚焦数据控制而非心理侵入。"
+      },
+      {
+        "evidence_id": "ev-f972ca015fbf0c7d862934b2",
+        "relation": "support",
+        "quote": "Emotional AI, a subset of AI that measures and reacts to human emotions, is rapidly expanding in use, with significant data privacy, manipulation, and bias risks.",
+        "publication_date": "2024-09-09",
+        "observation_end": "2024-09-09",
+        "limitation": "评论文章，含预测性市场数据；未提供美国普遍侵入的量化证据。"
+      },
+      {
+        "evidence_id": "ev-d0a9d1b86f565933b9b57894",
+        "relation": "boundary",
+        "quote": "This year saw significant enforcement activity from the Federal Trade Commission (FTC) on privacy, data security, and related technology topics, particularly with respect to location information...",
+        "publication_date": "2025-01-02",
+        "observation_end": "2025-01-02",
+        "limitation": "显示监管对侵入有约束，构成反证边界；但执法不等于消除侵入。"
+      },
+      {
+        "evidence_id": "ev-599a47601ff60b3e5035bb04",
+        "relation": "boundary",
+        "quote": "In December, the Federal Trade Commission announced a settlement with Rite Aid over the pharmacy’s discriminatory use of facial recognition technology in its stores.",
+        "publication_date": "2024-02-15",
+        "observation_end": "2024-02-15",
+        "limitation": "个案执法，说明生物识别侵入存在且受限制；不能代表整体趋势。"
+      }
+    ],
+    "remaining_gap": "需将ev-880d0fe5bf7b774cecd1d5db从支撑证据中移除或降为background，并重新判定verdict：若认为方向性证据已支持“侵入私域、触及内心”的主要结果，应改为符合/趋势符合；若坚持部分符合，须具体指出后果B哪些分项实现、哪些未实现及其直接证据。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000101650-000101708",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "按研究范围口径：1991年后美国出现以个人数据、心理画像、算法推荐或定向影响为手段的隐私侵入与心理干预证据；观察时段为2024年FTC报告及2024年监管执法材料（截至cutoff 2026-11-09前）。",
+    "reason": "FTC 2024年报告与Reuters报道显示大型社交/视频平台大规模收集用户与非用户数据、缺乏透明与控制，并用于算法与AI系统；情绪AI材料显示技术可测量并影响情绪，符合“科技手段侵入私域、触及内心”的方向。但“突破一般技术管理、走向每个人内心世界”的普遍化程度未被直接测量，且同期存在监管限制，故仅部分符合。",
+    "limitation": "证据集中于少数大型平台与情绪AI细分领域，不能代表“每个人”的普遍侵入；监管执法材料同时显示法律对部分侵入有约束，方向并非单向。",
+    "evidence_ids": [
+      "prior-fcea77e7f71c07575f47",
+      "ev-880d0fe5bf7b774cecd1d5db",
+      "ev-e0708388f4dedd726ae2e171",
+      "ev-f972ca015fbf0c7d862934b2",
+      "ev-d0a9d1b86f565933b9b57894",
+      "ev-599a47601ff60b3e5035bb04"
+    ],
+    "method": "从技术管理能力增长推演隐私与心理控制边界",
+    "method_basis": "inferred",
+    "observation_end": "2025-01-02",
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-fcea77e7f71c07575f47",
+        "relation": "support",
+        "quote": "FTC对大型社交媒体和视频平台的调查发现大范围收集个人信息并商业化，对儿童保护不足。",
+        "publication_date": "2024-09-19",
+        "observation_end": "2024-09-19",
+        "limitation": "为已登记摘要，非完整报告正文；仅覆盖大型平台。"
+      },
+      {
+        "evidence_id": "ev-880d0fe5bf7b774cecd1d5db",
+        "relation": "support",
+        "quote": "The Companies Generally Collected Vast Amounts of Data About Users and Non-Users",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "报告正文截断，日期状态未知；仅目录与摘要可见，未覆盖全部结论。"
+      },
+      {
+        "evidence_id": "ev-e0708388f4dedd726ae2e171",
+        "relation": "support",
+        "quote": "Social media companies collect, share and process vast troves of information about their users while offering little transparency or control, including over how it is used by systems incorporating artificial intelligence, the U.S. Federal Trade Commission said in a report released on Thursday.",
+        "publication_date": "2024-09-19",
+        "observation_end": "2024-09-19",
+        "limitation": "新闻报道转述FTC报告，非原始数据；聚焦数据控制而非心理侵入。"
+      },
+      {
+        "evidence_id": "ev-f972ca015fbf0c7d862934b2",
+        "relation": "support",
+        "quote": "Emotional AI, a subset of AI that measures and reacts to human emotions, is rapidly expanding in use, with significant data privacy, manipulation, and bias risks.",
+        "publication_date": "2024-09-09",
+        "observation_end": "2024-09-09",
+        "limitation": "评论文章，含预测性市场数据；未提供美国普遍侵入的量化证据。"
+      },
+      {
+        "evidence_id": "ev-d0a9d1b86f565933b9b57894",
+        "relation": "boundary",
+        "quote": "This year saw significant enforcement activity from the Federal Trade Commission (FTC) on privacy, data security, and related technology topics, particularly with respect to location information...",
+        "publication_date": "2025-01-02",
+        "observation_end": "2025-01-02",
+        "limitation": "显示监管对侵入有约束，构成反证边界；但执法不等于消除侵入。"
+      },
+      {
+        "evidence_id": "ev-599a47601ff60b3e5035bb04",
+        "relation": "boundary",
+        "quote": "In December, the Federal Trade Commission announced a settlement with Rite Aid over the pharmacy’s discriminatory use of facial recognition technology in its stores.",
+        "publication_date": "2024-02-15",
+        "observation_end": "2024-02-15",
+        "limitation": "个案执法，说明生物识别侵入存在且受限制；不能代表整体趋势。"
+      }
+    ],
+    "remaining_gap": "缺乏对“进入每个人内心世界”普遍程度的直接、可量化测量；缺少1991年至2024年间连续时间序列证据，无法判断趋势是否持续单向。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-fcea77e7f71c07575f47",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-staff-report-finds-large-social-media-video-streaming-companies-have-engaged-vast-surveillance",
+      "title": "ev-privacy",
+      "published_date": "2024-09-19",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-privacy",
+      "archive_sha256": "3bef4ed3b27a80cc09bbef06221649cf1c5ba6e7ffad1e3561c94c3b5ae9fa9b",
+      "archive_path": "data/sources/web-access-fallback.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-880d0fe5bf7b774cecd1d5db",
+      "url": "https://search.ftc.gov/system/files/ftc_gov/pdf/Social-Media-6b-Report-9-11-2024.pdf",
+      "resolved_url": "https://search.ftc.gov/system/files/ftc_gov/pdf/Social-Media-6b-Report-9-11-2024.pdf",
+      "title": "A Look Behind the Screens: Examining the Data Practices of Social Media and Video Streaming Services",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:40.503388+00:00",
+      "archive_sha256": "6c5e7001c6b85b33f3b92e86a4d2176f40c0fd2220efc3ce5cb734e2b6b8e16e",
+      "archive_path": "jobs/d97d9f18dc4208e283d5e3c6/6c5e7001c6b85b33f3b92e86a4d2176f40c0fd2220efc3ce5cb734e2b6b8e16e.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e0708388f4dedd726ae2e171",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/social-media-users-lack-control-over-data-used-by-ai-us-ftc-says-2024-09-19/",
+      "resolved_url": "https://www.reuters.com/technology/artificial-intelligence/social-media-users-lack-control-over-data-used-by-ai-us-ftc-says-2024-09-19/",
+      "title": "Social media users lack control over data used by AI, US FTC says | Reuters",
+      "published_date": "2024-09-19",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:40.503823+00:00",
+      "archive_sha256": "10cef77fd28c162cbd54449a164edf25dce8f58eef1283e4d416814c2cea810d",
+      "archive_path": "jobs/d97d9f18dc4208e283d5e3c6/10cef77fd28c162cbd54449a164edf25dce8f58eef1283e4d416814c2cea810d.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-f972ca015fbf0c7d862934b2",
+      "url": "https://www.americanbar.org/groups/business_law/resources/business-law-today/2024-september/price-emotion-privacy-manipulation-bias-emotional-ai/",
+      "resolved_url": "https://www.americanbar.org/groups/business_law/resources/business-law-today/2024-september/price-emotion-privacy-manipulation-bias-emotional-ai/",
+      "title": "The Price of Emotion: Privacy, Manipulation, and Bias in Emotional AI",
+      "published_date": "2024-09-09",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:40.504335+00:00",
+      "archive_sha256": "411c7cd0f68f84de514898eac4e62ac9be9f542c4a3ae47f4e6fe3b254ec84ba",
+      "archive_path": "jobs/d97d9f18dc4208e283d5e3c6/411c7cd0f68f84de514898eac4e62ac9be9f542c4a3ae47f4e6fe3b254ec84ba.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d0a9d1b86f565933b9b57894",
+      "url": "https://www.legal500.com/intelligence/united-states/privacy/privacy-law-recap-2024-regulatory-enforcement",
+      "resolved_url": "https://www.legal500.com/intelligence/united-states/privacy/privacy-law-recap-2024-regulatory-enforcement",
+      "title": "Privacy Law Recap 2024: Regulatory Enforcement | Legal 500",
+      "published_date": "2025-01-02",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:40.504749+00:00",
+      "archive_sha256": "bf1ec61cc8eaf9237350d26cfa229feb59885e22ce4cd5064c910be31a37e8e7",
+      "archive_path": "jobs/d97d9f18dc4208e283d5e3c6/bf1ec61cc8eaf9237350d26cfa229feb59885e22ce4cd5064c910be31a37e8e7.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-599a47601ff60b3e5035bb04",
+      "url": "https://epic.org/ftcs-strong-rite-aid-enforcement-order-is-a-warning-to-companies-using-biometric-ai-systems/",
+      "resolved_url": "https://epic.org/ftcs-strong-rite-aid-enforcement-order-is-a-warning-to-companies-using-biometric-ai-systems/",
+      "title": "FTC’s Strong Rite Aid Enforcement Order Is a Warning to Companies Using Biometric AI Systems – EPIC – Electronic Privacy Information Center",
+      "published_date": "2024-02-15",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:50.756364+00:00",
+      "archive_sha256": "6bc238928a73ec2414668337946bac56ab20adab4b2b5693df64f4a0e7f66d0b",
+      "archive_path": "jobs/d97d9f18dc4208e283d5e3c6/6bc238928a73ec2414668337946bac56ab20adab4b2b5693df64f4a0e7f66d0b.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "FTC 2024 report large social media video streaming companies vast surveillance personal data algorithmic profiling",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "United States privacy law limits algorithmic psychological manipulation personal data 2024 court FTC enforcement evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "FTC 2024 report social media video streaming companies vast data collection targeted advertising sensitive categories algorithms AI privacy risks",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "United States privacy law enforcement limits emotional AI facial recognition psychological manipulation 2024 2025 court ruling FTC consent order",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-880d0fe5bf7b774cecd1d5db"
+      ]
+    }
+  ],
+  "remaining_gap": "需将ev-880d0fe5bf7b774cecd1d5db从支撑证据中移除或降为background，并重新判定verdict：若认为方向性证据已支持“侵入私域、触及内心”的主要结果，应改为符合/趋势符合；若坚持部分符合，须具体指出后果B哪些分项实现、哪些未实现及其直接证据。",
+  "source_statuses": [
+    {
+      "url": "https://search.ftc.gov/system/files/ftc_gov/pdf/Social-Media-6b-Report-9-11-2024.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.reuters.com/technology/artificial-intelligence/social-media-users-lack-control-over-data-used-by-ai-us-ftc-says-2024-09-19/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.americanbar.org/groups/business_law/resources/business-law-today/2024-september/price-emotion-privacy-manipulation-bias-emotional-ai/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.legal500.com/intelligence/united-states/privacy/privacy-law-recap-2024-regulatory-enforcement",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://epic.org/ftcs-strong-rite-aid-enforcement-order-is-a-warning-to-companies-using-biometric-ai-systems/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "王沪宁1991年前后提出的前瞻判断：科技快速发展可能使治理/管理手段突破一般技术管理，进入个人内心世界并侵入私域。可观察口径为1991年后美国出现以个人数据收集、心理/情绪画像、算法推荐或定向影响侵入私人领域的可核验证据；反证包括法律或制度有效限制此类侵入、技术仅停留于一般技术管理，或缺乏原始记录。仅判隐私与心理干预边界，不证明全面精神控制或所有科技必然如此。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "b2c9fe4a6c26d30b6adaf0adfea88a96cded3c1eba5dae94ba3f20aca903e6de"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "1545a6510acab8e610b42a1efdf909cf",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "30a39a17c06a27870d133ffbf0bbb47b",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "19ea99a135d83bf87dd01373a17590e3d653a6a10e219f3f399a2d58affa689d"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "94ef2ddb18b34e6e307b7b78a7268d1f",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "bf7ef27e75799b70eccc6b8b87353560faf07230d7a57e59f7fdcec3cc85a138"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "90a0a1f4219df57a9f32f65c9b62804b",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "5f916b650825a8c3ee105f7385f602c7",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "6469d4a42eed8a41540807b54bd1569d10dbeeb973142041a55e72b15e5f8c4c"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "06a93516f5ad9cbb4fa9877968f12da5",
+      "cost_estimate_USD": 0.001,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "0970bc98ca602a58393f921e28f62ef915efda87fb48f5fea867c65eb68d5d76"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "438975bc06b2786b751d2ef9f408a523f0f588213b719c48ebc30817c07ae3c2"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "b06b6716bbec205832f518cc7e1404bbe08698d6ae0cd3ee77ccfee608cee4fd"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "5a044cfd9aa5af3648297aa9c440c1beb61c34a669c3e7f74361fd6e6ef672be"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000101650-000101708",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "evidence_support",
+          "reason": "ev-880d0fe5bf7b774cecd1d5db的verified=false且date_status=unknown，其正文仅显示目录与章节标题，所引“The Companies Generally Collected Vast Amounts of Data About Users and Non-Users”只是报告目录中的章节标题，并非已核实的结论正文；建议却将其列为support并据此支撑“大规模收集数据”的主要结果，超出该材料可支持范围。",
+          "source_quote": "1. The Companies Generally Collected Vast Amounts of Data About Users and Non-Users... 17",
+          "evidence_id": "ev-880d0fe5bf7b774cecd1d5db",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议一方面认定“科技手段侵入私域、触及内心”的方向符合，另一方面以“普遍化程度未被直接测量”和“存在监管限制”为由降为部分符合。但原文预测的核心可检验结果是“有可能突破一般技术管理，走向每个人内心世界，侵入私域”，并非“每个人均已普遍被侵入”；监管限制属于对侵入的缓解或边界，不能直接证明该前瞻结果只实现了一部分。建议未指出后果中哪些具体部分实现、哪些未实现，仅以普遍化程度和监管存在作降级理由，分类口径不成立。",
+          "source_quote": "但“突破一般技术管理、走向每个人内心世界”的普遍化程度未被直接测量，且同期存在监管限制，故仅部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正verdict_logic：明确该预测的可检验结果是“技术手段可能突破一般技术管理并侵入私域”，而非“每个人均已被普遍侵入”；监管限制只能作为缓解或边界，不能单独支撑部分符合。若保留部分符合，须指出后果中哪些具体部分实现、哪些未实现及其直接证据；否则应改为符合或具体未定。同时需将ev-880d0fe5bf7b774cecd1d5db从support中移除或降为未核实候选，不得以目录标题充当结论证据。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000101650-000101708",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "evidence_support",
+          "reason": "建议将ev-880d0fe5bf7b774cecd1d5db列为support证据，但该来源正文仅见目录与章节标题，且verified=false、日期未知；目录标题不能支撑“大规模收集数据并用于算法/AI”的主要结果。建议自己在limitation中已承认应降为background，却仍在evidence_ids中保留为支撑，属内部矛盾。",
+          "source_quote": "1. The Companies Generally Collected Vast Amounts of Data About Users and Non-Users... 17",
+          "evidence_id": "ev-880d0fe5bf7b774cecd1d5db",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "原预测是“科技发展可能使治人手段突破一般技术管理，走向每个人内心世界，侵入私域”的方向性可能判断，并非“A未解决→B重大后果”的条件预测。建议以“普遍化程度未被直接测量”和“存在监管限制”为由判“部分符合”，但未指出后果B中哪些具体部分实现、哪些未实现；监管执法属于边界/缓解，不等于原预测的某个分项未实现。按口径，方向性证据符合主要结果应判符合或趋势符合，而非部分符合。",
+          "source_quote": "但“突破一般技术管理、走向每个人内心世界”的普遍化程度未被直接测量，且同期存在监管限制，故仅部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需将ev-880d0fe5bf7b774cecd1d5db从支撑证据中移除或降为background，并重新判定verdict：若认为方向性证据已支持“侵入私域、触及内心”的主要结果，应改为符合/趋势符合；若坚持部分符合，须具体指出后果B哪些分项实现、哪些未实现及其直接证据。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000101650-000101708",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "按研究范围口径：1991年后美国出现以个人数据、心理画像、算法推荐或定向影响为手段的隐私侵入与心理干预证据；观察时段为2024年FTC报告及2024年监管执法材料（截至cutoff 2026-11-09前）。",
+      "reason": "FTC 2024年报告与Reuters报道显示大型社交/视频平台大规模收集用户与非用户数据、缺乏透明与控制，并用于算法与AI系统；情绪AI材料显示技术可测量并影响情绪，符合“科技手段侵入私域、触及内心”的方向。但“突破一般技术管理、走向每个人内心世界”的普遍化程度未被直接测量，且同期存在监管限制，故仅部分符合。",
+      "limitation": "证据集中于少数大型平台与情绪AI细分领域，不能代表“每个人”的普遍侵入；监管执法材料同时显示法律对部分侵入有约束，方向并非单向。",
+      "evidence_ids": [
+        "prior-fcea77e7f71c07575f47",
+        "ev-880d0fe5bf7b774cecd1d5db",
+        "ev-e0708388f4dedd726ae2e171",
+        "ev-f972ca015fbf0c7d862934b2",
+        "ev-d0a9d1b86f565933b9b57894",
+        "ev-599a47601ff60b3e5035bb04"
+      ],
+      "method": "从技术管理能力增长推演隐私与心理控制边界",
+      "method_basis": "inferred",
+      "observation_end": "2025-01-02",
+      "future_time_text": "",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-fcea77e7f71c07575f47",
+          "relation": "support",
+          "quote": "FTC对大型社交媒体和视频平台的调查发现大范围收集个人信息并商业化，对儿童保护不足。",
+          "publication_date": "2024-09-19",
+          "observation_end": "2024-09-19",
+          "limitation": "为已登记摘要，非完整报告正文；仅覆盖大型平台。"
+        },
+        {
+          "evidence_id": "ev-880d0fe5bf7b774cecd1d5db",
+          "relation": "support",
+          "quote": "The Companies Generally Collected Vast Amounts of Data About Users and Non-Users",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "报告正文截断，日期状态未知；仅目录与摘要可见，未覆盖全部结论。"
+        },
+        {
+          "evidence_id": "ev-e0708388f4dedd726ae2e171",
+          "relation": "support",
+          "quote": "Social media companies collect, share and process vast troves of information about their users while offering little transparency or control, including over how it is used by systems incorporating artificial intelligence, the U.S. Federal Trade Commission said in a report released on Thursday.",
+          "publication_date": "2024-09-19",
+          "observation_end": "2024-09-19",
+          "limitation": "新闻报道转述FTC报告，非原始数据；聚焦数据控制而非心理侵入。"
+        },
+        {
+          "evidence_id": "ev-f972ca015fbf0c7d862934b2",
+          "relation": "support",
+          "quote": "Emotional AI, a subset of AI that measures and reacts to human emotions, is rapidly expanding in use, with significant data privacy, manipulation, and bias risks.",
+          "publication_date": "2024-09-09",
+          "observation_end": "2024-09-09",
+          "limitation": "评论文章，含预测性市场数据；未提供美国普遍侵入的量化证据。"
+        },
+        {
+          "evidence_id": "ev-d0a9d1b86f565933b9b57894",
+          "relation": "boundary",
+          "quote": "This year saw significant enforcement activity from the Federal Trade Commission (FTC) on privacy, data security, and related technology topics, particularly with respect to location information...",
+          "publication_date": "2025-01-02",
+          "observation_end": "2025-01-02",
+          "limitation": "显示监管对侵入有约束，构成反证边界；但执法不等于消除侵入。"
+        },
+        {
+          "evidence_id": "ev-599a47601ff60b3e5035bb04",
+          "relation": "boundary",
+          "quote": "In December, the Federal Trade Commission announced a settlement with Rite Aid over the pharmacy’s discriminatory use of facial recognition technology in its stores.",
+          "publication_date": "2024-02-15",
+          "observation_end": "2024-02-15",
+          "limitation": "个案执法，说明生物识别侵入存在且受限制；不能代表整体趋势。"
+        }
+      ],
+      "remaining_gap": "缺乏对“进入每个人内心世界”普遍程度的直接、可量化测量；缺少1991年至2024年间连续时间序列证据，无法判断趋势是否持续单向。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000101650-000101708",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "按研究范围口径：1991年后美国出现以个人数据、心理画像、算法推荐或定向影响为手段的隐私侵入与心理干预证据；观察时段为2024年FTC报告、2024年情绪AI评论及2024—2025年初监管执法材料（截至cutoff 2026-11-09前）。",
+      "reason": "FTC 2024年报告与Reuters报道显示大型社交/视频平台大规模收集用户与非用户数据、缺乏透明与控制，并用于算法与AI系统；情绪AI材料显示技术可测量并影响情绪，符合“科技手段侵入私域、触及内心”的方向。但“突破一般技术管理、走向每个人内心世界”的普遍化程度未被直接测量，且同期存在监管限制，故仅部分符合。",
+      "limitation": "证据集中于少数大型平台与情绪AI细分领域，不能代表“每个人”的普遍侵入；监管执法材料同时显示法律对部分侵入有约束，方向并非单向。关键修订：将ev-880d0fe5bf7b774cecd1d5db从support降为background，因其正文仅见目录标题且日期未知，不能充当结论证据。",
+      "evidence_ids": [
+        "prior-fcea77e7f71c07575f47",
+        "ev-880d0fe5bf7b774cecd1d5db",
+        "ev-e0708388f4dedd726ae2e171",
+        "ev-f972ca015fbf0c7d862934b2",
+        "ev-d0a9d1b86f565933b9b57894",
+        "ev-599a47601ff60b3e5035bb04"
+      ],
+      "method": "从技术管理能力增长推演隐私与心理控制边界",
+      "method_basis": "inferred",
+      "observation_end": "2025-01-02",
+      "future_time_text": "",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-fcea77e7f71c07575f47",
+          "relation": "support",
+          "quote": "FTC对大型社交媒体和视频平台的调查发现大范围收集个人信息并商业化，对儿童保护不足。",
+          "publication_date": "2024-09-19",
+          "observation_end": "2024-09-19",
+          "limitation": "为已登记摘要，非完整报告正文；仅覆盖大型平台。"
+        },
+        {
+          "evidence_id": "ev-880d0fe5bf7b774cecd1d5db",
+          "relation": "background",
+          "quote": "1. The Companies Generally Collected Vast Amounts of Data About Users and Non-Users... 17",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "verified=false且日期未知；可见正文仅为目录与章节标题，不能作为结论证据，仅作背景。"
+        },
+        {
+          "evidence_id": "ev-e0708388f4dedd726ae2e171",
+          "relation": "support",
+          "quote": "Social media companies collect, share and process vast troves of information about their users while offering little transparency or control, including over how it is used by systems incorporating artificial intelligence, the U.S. Federal Trade Commission said in a report released on Thursday.",
+          "publication_date": "2024-09-19",
+          "observation_end": "2024-09-19",
+          "limitation": "新闻报道转述FTC报告，非原始数据；聚焦数据控制而非心理侵入。"
+        },
+        {
+          "evidence_id": "ev-f972ca015fbf0c7d862934b2",
+          "relation": "support",
+          "quote": "Emotional AI, a subset of AI that measures and reacts to human emotions, is rapidly expanding in use, with significant data privacy, manipulation, and bias risks.",
+          "publication_date": "2024-09-09",
+          "observation_end": "2024-09-09",
+          "limitation": "评论文章，含预测性市场数据；未提供美国普遍侵入的量化证据。"
+        },
+        {
+          "evidence_id": "ev-d0a9d1b86f565933b9b57894",
+          "relation": "boundary",
+          "quote": "This year saw significant enforcement activity from the Federal Trade Commission (FTC) on privacy, data security, and related technology topics, particularly with respect to location information...",
+          "publication_date": "2025-01-02",
+          "observation_end": "2025-01-02",
+          "limitation": "显示监管对侵入有约束，构成反证边界；但执法不等于消除侵入。"
+        },
+        {
+          "evidence_id": "ev-599a47601ff60b3e5035bb04",
+          "relation": "boundary",
+          "quote": "In December, the Federal Trade Commission announced a settlement with Rite Aid over the pharmacy’s discriminatory use of facial recognition technology in its stores.",
+          "publication_date": "2024-02-15",
+          "observation_end": "2024-02-15",
+          "limitation": "个案执法，说明生物识别侵入存在且受限制；不能代表整体趋势。"
+        }
+      ],
+      "remaining_gap": "缺乏对“进入每个人内心世界”普遍程度的直接、可量化测量；缺少1991年至2024年间连续时间序列证据，无法判断趋势是否持续单向。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "王沪宁在《美国反对美国》中的前瞻判断：科技发展可能使治理手段突破一般技术管理，进入个人内心世界并侵入私域。可观察口径为1991年后美国出现以个人数据、心理画像、算法推荐或定向影响为手段的隐私侵入与心理干预证据；反证包括法律或制度有效限制此类侵入、技术仅停留于一般技术管理，或缺乏可核验的原始记录。",
+  "elapsed_seconds": 45.676,
+  "completed_at": "2026-11-09T08:00:16.258091+00:00"
+}

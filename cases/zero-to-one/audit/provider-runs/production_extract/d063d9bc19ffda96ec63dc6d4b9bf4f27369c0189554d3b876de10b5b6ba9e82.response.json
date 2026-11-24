@@ -1,0 +1,28 @@
+{
+  "id": "f56d48b4-88ca-4098-b2ac-7817cb54aff2",
+  "object": "chat.completion",
+  "created": 1794201127,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-00015\",\"predictions\":[{\"quote\":\"如果你只拥有谷歌公司0.01%的股权，最后获得的回报将令你难以置信（要超过3 500万美元。）\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"若只持有谷歌0.01%股权，最终回报将超过3500万美元。\",\"expanded_claim\":\"如果你只拥有谷歌公司0.01%的股权，最后获得的回报将令你难以置信，要超过3500万美元。\",\"reference_resolutions\":[{\"expression\":\"谷歌公司\",\"referent\":\"谷歌公司\",\"support_quote\":\"如果你只拥有谷歌公司0.01%的股权\"}],\"unresolved_references\":[],\"time_text\":\"最后\",\"condition_text\":\"如果你只拥有谷歌公司0.01%的股权\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"条件性判断，预测未来股权回报结果。\"},{\"quote\":\"如果你不认真想一想你的行动会使公司落在80–20曲线的什么位置上，后果你真的承担不起。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"若不思考行动使公司落在80–20曲线的位置，后果将承担不起。\",\"expanded_claim\":\"在幂次法则的世界中，如果你不认真想一想你的行动会使公司落在80–20曲线的什么位置上，后果你真的承担不起。\",\"reference_resolutions\":[{\"expression\":\"你\",\"referent\":\"读者/创业者\",\"support_quote\":\"如果你不认真想一想你的行动会使公司落在80–20曲线的什么位置上\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"如果你不认真想一想你的行动会使公司落在80–20曲线的什么位置上\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"条件性判断，预测不按幂次法则思考的负面后果。\"},{\"quote\":\"如果世界上还有很多秘密，那就还可能出现很多有望改变世界的企业。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"若世界上还有很多秘密，就可能出现很多有望改变世界的企业。\",\"expanded_claim\":\"如果世界上还有很多秘密，那就还可能出现很多有望改变世界的企业。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"如果世界上还有很多秘密\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"条件性可能判断，预测未来企业出现的可能性。\"},{\"quote\":\"如果你的目标是一生不犯错，你就不应该去探索秘密。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"若目标是一生不犯错，就不应探索秘密。\",\"expanded_claim\":\"如果你的目标是一生不犯错，你就不应该去探索秘密。\",\"reference_resolutions\":[{\"expression\":\"你\",\"referent\":\"读者/个人\",\"support_quote\":\"如果你的目标是一生不犯错，你就不应该去探索秘密\"}],\"unresolved_references\":[],\"time_text\":\"一生\",\"condition_text\":\"如果你的目标是一生不犯错\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"条件性判断，预测探索秘密与不犯错目标的不相容。\"},{\"quote\":\"但这件事也许只有你不相信它，它才是真的。\",\"kind\":\"unclear\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"精英学校人生高枕无忧的说法也许只有你不相信它才是真的。\",\"expanded_claim\":\"进入了精英学校，你的人生就高枕无忧了——但这件事也许只有你不相信它，它才是真的。\",\"reference_resolutions\":[{\"expression\":\"这件事\",\"referent\":\"进入了精英学校，你的人生就高枕无忧了\",\"support_quote\":\"进入了精英学校，你的人生就高枕无忧了。”但这件事也许只有你不相信它，它才是真的。\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"只有你不相信它\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"带“也许”的不确定判断，是否构成对未来结果的预测不明确。\"}]}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3290,
+    "completion_tokens": 875,
+    "total_tokens": 4165,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 3034
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

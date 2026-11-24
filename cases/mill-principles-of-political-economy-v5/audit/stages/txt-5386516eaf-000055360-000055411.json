@@ -1,0 +1,106 @@
+{
+  "id": "txt-5386516eaf-000055360-000055411",
+  "plan": {
+    "queries": [
+      {
+        "role": "support"
+      },
+      {
+        "role": "counter"
+      }
+    ],
+    "note": "r4 新执行。见 audit/search-returns-r4/manifest.json。不回填。"
+  },
+  "select": {
+    "urls": [
+      "https://archive.org/details/principlesofpoli00mill_2"
+    ],
+    "reason": "只保留摘录在存档中的来源。对象不符的不拿来计分。"
+  },
+  "assess": {
+    "id": "txt-5386516eaf-000055360-000055411",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "编者 Ashley 说密尔的《原理》会长久继续被人阅读。说话者不是密尔。",
+    "reason": "后来编者称它是一本有当下价值的活书。这是编者判断，不是读者继续阅读的记录。1911年说他作为经济学家已被取代，也不是阅读人数。不能因此给部分符合。",
+    "limitation": "再版和编者评语都不是阅读。",
+    "evidence_ids": [
+      "ev-r4-living",
+      "ev-r4-superseded"
+    ],
+    "method": "重读原文说话者和对象后撤回部分符合。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "long continue",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-r4-living",
+        "quote": "I believe that it is a living book which has present value and significance.",
+        "relation": "boundary",
+        "limitation": "编者评语不是阅读。",
+        "observation_end": null,
+        "publication_date": null,
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "ev-r4-superseded",
+        "quote": "If he is now in his turn superseded, there is small wonder after sixty years.",
+        "relation": "boundary",
+        "limitation": "被取代不是无人阅读。",
+        "observation_end": "1911-11-30",
+        "publication_date": "1911-11",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺《原理》在1909年之后是否继续被人阅读的读者记录。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-000055360-000055411",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-r4-living"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-r4-living"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "r4_execution": {
+    "new": true,
+    "executed_at": "2026-11-20T11:20:00Z",
+    "previous_verdict": "暂无法判断"
+  },
+  "revision_trail": {
+    "withdrawn_verdict": "部分符合",
+    "withdrawn_reason": "后来的编者称它仍是一本有当下价值的活书。1911年 Bonar 写，他作为经济学家已经被取代并不奇怪。再版和“活书”不是读者人数，被取代也不是无人阅读。",
+    "why": "编者称活书不是阅读证据。"
+  }
+}

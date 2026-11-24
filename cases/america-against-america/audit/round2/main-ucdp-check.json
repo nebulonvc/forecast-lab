@@ -1,0 +1,19 @@
+{
+  "source": "data/sources/r2-l2-ucdp-acd261.csv",
+  "window": "1991—2025",
+  "all_us_only_location_rows": 18,
+  "us_only_intrastate_or_internationalized_territorial_dispute_rows": 0,
+  "counterevidence": "US-only location includes government incompatibility al-Qaida conflict, including war intensity in 2001; zero secession rows does not mean zero conflict or zero war.",
+  "filters": {
+    "location": "United States of America",
+    "type_of_conflict": [
+      "3",
+      "4"
+    ],
+    "incompatibility": [
+      "1",
+      "3"
+    ]
+  },
+  "limitation": "UCDP locations refer to incompatibility rather than all physical battle sites; event definition limited to internal territorial/secession conflict, no probability calibration or economic causality established."
+}

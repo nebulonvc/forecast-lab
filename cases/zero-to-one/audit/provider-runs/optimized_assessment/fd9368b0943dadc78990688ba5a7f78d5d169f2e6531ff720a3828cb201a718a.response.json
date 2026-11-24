@@ -1,0 +1,28 @@
+{
+  "id": "61564af2-2821-4ccc-97c5-3c3190fb14b6",
+  "object": "chat.completion",
+  "created": 1794201585,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000037115-000037131\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"对当前中国各阶层为未来做准备状态的描述，非未来结果预测。\",\"reason\":\"原文是对当下态度与准备状态的描述，没有给出可检验的未来结果或时间终点。\",\"limitation\":\"属于状态描述，不构成可评分预测。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000038125-000038153\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"以反问形式表达对当今人们态度的判断，非指定未来事件预测。\",\"reason\":\"该句是修辞性反问，讨论今天人们是否会认真对待大胆计划，未给出可检验的未来结果。\",\"limitation\":\"反问句的断言强度与时间范围不明确，不宜作为预测评分。\",\"evidence_ids\":[],\"method\":\"反问\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5044,
+    "completion_tokens": 275,
+    "total_tokens": 5319,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 4276
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

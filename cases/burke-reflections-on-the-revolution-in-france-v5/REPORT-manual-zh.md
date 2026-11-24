@@ -1,0 +1,179 @@
+# Edmund Burke《法国革命论》（Reflections on the Revolution in France）：出版后预测人工核查
+
+- 案例目录：`cases/burke-reflections-on-the-revolution-in-france-v5/`
+- 出版日期：**1790** 年伦敦初版。工作正文取自队列记录 `reading-library/2026-11-15-未来判断扩展100本/02-政治与治理/032-reflections-on-the-revolution-in-france.txt`，经 GitHub `nebulonvc/froecast-lab` @ `b49753e` 取得，594,248 字节，sha256 `ad1e8e3d25c98eeb39efd02e023c7063bb254c4b846c6a7ccfbb64986d8056c0`，与队列完全一致。解码为 UTF-8-SIG，593,604 字符，仅 LF（无 CRLF）。Gutenberg #15679 的整卷 1887 Nimmo《伯克全集》第三卷原文（约 997,958 字节）未用作工作文本。TXT 不入库。预测窗口按 1790→2026-11-15 计。
+- 截止日：2026-11-15（Asia/Shanghai）
+
+## 方法说明
+
+本稿按 METHOD.md 复刻 DeepSeek 流水线，只把模型调用换成助手人工阅读。抽取：用仓库 prepare_book v5（toolkit 来自 main `85e6da1dc0f185830a6ea9037d731fd39a27411e`，prepare_book.py md5 `01fc49ad64795a345ca1cb32bb2e4366`）把全文切成 172 块（3500 字符、600 字符上下文），助手逐块通读（含前后附文块），按 DISCOVER_PROMPT_V5 写出模型本应返回的 JSON（可为空），再由仓库代码完成引文对齐、非预测筛除、归属降级和去重，得到 32 条候选、全部为可核验预测（resolvable）。英文 `changes` 均为 quote 的逐字单行子串；horizon/time_text 仅在引文中原文出现时填写。核验：每条可核验候选先定 scope，用 Exa 各做一次 support/counter 检索（密钥仅按文件路径读取 `~/.config/forecast-lab/exa-new-2.key`，未打印、未入库），只从检索返回的 URL 中选源，存档到 `data/sources/`（sha256），写入 `data/evidence.jsonl`（83 条），再经 `pipeline.py apply assess → check`。报告由 canonical `/workspace/forecast-line-b/tools/manual_report.py`（md5 `682248fa9f6c63e3492a559ccac12761`）生成，未手改。claims 的 context 已清空。本稿由助手逐条对照书中原文与存档证据人工复核：先剔除非预测（出版前已发生的史实、一般规律、规范建议、反事实推演等），再对每条预测用 Exa 检索公开来源并抓取存档（`data/sources/`，sha256 记于 `data/evidence.jsonl`）核对至截止日。没有写明终点的预测按“出版日→2026-11-15”的隐含窗口判断；写明的终点未到、或条件句的前提从未出现，一律记“暂无法判断”，不强行判对错。所有来源均为实际抓取并存档的公开页面或文件；本稿未使用 DeepSeek 自动核验结论作为最终判断。
+
+五级判断：正确／趋势符合（方向对、程度或时点未完全到位）／部分符合（一部分成立）／错误／暂无法判断。严格胜率＝正确÷可判定；加权胜率＝（正确＋0.75×趋势符合＋0.5×部分符合）÷可判定；错误率＝错误÷可判定；可判定＝前四级之和。
+
+## 统计
+
+候选 32 条，剔除非预测 0 条，计入 **32 条预测**，其中 **31 条可判定**。
+
+| 判断 | 条数 |
+|---|---:|
+| 正确 | 15 |
+| 趋势符合 | 4 |
+| 部分符合 | 12 |
+| 错误 | 0 |
+| 暂无法判断 | 1 |
+
+| 指标 | 数值 |
+|---|---:|
+| 严格胜率 | **48.4%**（15/31） |
+| 加权胜率 | **77.4%** |
+| 错误率 | **0.0%**（0/31） |
+| 未定占比（暂无法判断/预测） | 3.1%（1/32） |
+
+## 总体评价
+
+这是伯克 1790 年对法国革命的政论。全书大量篇幅是对 1688 年宪制的历史论证、规范立场、以及 1789–1790 年已可见局势的记述，可核验的向前预测相对集中：英国继承规则与拒仿法国政制、法国 1791 年体制难以持久、国民议会自我毁灭、立法议会更糟、指券与教产担保失败、流血与政体重迭、得众望的将军成为主人（拿破仑）等，多已应验；对巴黎集权既暴烈又终将软弱、83 省独立、学问永久被践踏、执政者永远浅薄、工业永久枯萎等判断则只部分成立。32 条可核验预测中，正确 15、趋势符合 4、部分符合 12、错误 0、暂无法判断 1（英国激进派若认真仿效法国将自我毁灭，全面仿效的前提未清楚触发）。可判定 31。严格胜率 48.4%，加权胜率 77.4%，错误率 0.0%。对趋势符合从严：仅方向持续且程度或终点不足时才记趋势符合；已发生的方向记正确，不降为趋势符合。
+
+## 逐条判断
+
+编号为 `data/claims.jsonl` 中可判定候选的顺序号。
+
+### 正确（15 条）
+
+- **#1** 「without them, liberty is not a benefit whilst it lasts, and is not likely to continue long.」  
+  判断：**正确**。1791年宪法确立的君主立宪新自由并未长久持续：制宪议会于1791年9月解散后，1792年8月10日起义推翻君主制，随后进入共和、恐怖与督政府。华盛顿大学讲义与通史均记载1793–1794年恐怖期间大规模处决，说明当时那套自由秩序未能维持。公民平等等部分立法遗产后来延续，但不改变“新自由难以长久”这一主结果已经出现。  
+  来源：<https://en.wikipedia.org/wiki/French_Revolution>；<http://courses.washington.edu/hsteu302/French%20Revolution%20Pt%202.pdf>；<https://erenow.org/modern/the-french-revolution-a-very-short-introduction/4.php>
+- **#2** 「His Majesty's heirs and successors, each in his time and order, will come to the crown with the same contempt …」  
+  判断：**正确**。自1790年至截止日，英国王位仍按法定世袭规则由继承人依次即位，从未改由类似革命协会的团体推选。王室官网与路透社在2022年说明继承仍受1701年《王位继承法》等制定法约束，新君依血统与成文法自动即位。议会后来修订继承细节（如2013年），并非把王冠交给选举团体。  
+  来源：<https://www.royal.uk/encyclopedia/succession>；<https://www.reuters.com/world/uk/britains-rules-succession-new-sovereign-2022-09-08/>；<https://www.legislation.gov.uk/aep/Will3/12-13/2/section/I>
+- **#3** 「The people of England will not ape the fashions they have never tried, nor go back to those which they have fo…」  
+  判断：**正确**。英国并未仿效未经试行的法国革命政制，也未退回已被证明有害的绝对主义旧制。1790年代末英国自我界定为与邻国激进主义相对的保守秩序，皮特政府抵制法国式改造；通信协会等激进组织未能把法国宪法移植到英国。后来的议会改革仍在原有宪制框架内进行。  
+  来源：<https://www.bbc.co.uk/history/british/empire_seapower/british_french_rev_01.shtml>；<https://sites.asit.columbia.edu/historydept/wp-content/uploads/sites/29/2022/05/Daly-Isaac_Final-Thesis.pdf>
+- **#4** 「All the reformations we have hitherto made have proceeded upon the principle of reference to antiquity; and I …」  
+  判断：**正确**。英格兰此后的重大改革总体沿类比先例、权威与既有制度推进：19世纪选举权经1832、1867、1884年等改革法案分阶段扩大，地方政府与议会制度亦作增量调整。即便1911年议会法强化下院，仍是在既有议会主权与制定法路径上完成，而非法国式推倒重来。  
+  来源：<https://www.parliament.uk/about/living-heritage/evolutionofparliament/houseofcommons/reformacts/>；<https://researchonline.lse.ac.uk/id/eprint/59616/1/Murkens%20-%20Unintended%20Democracy_Final.pdf>；<https://ecppec.ncl.ac.uk/features/towards-democracy/>
+- **#5** 「Sovereigns will consider those who advise them to place an unlimited confidence in their people as subverters …」  
+  判断：**正确**。1790年代起欧洲君主普遍把鼓吹无限信赖民众、效法法国的人视为对王座的威胁：奥地利与普鲁士发表皮尔尼茨宣言，随后对法开战，欧洲旧王朝加入反法同盟并镇压国内雅各宾派。该方向在出版后的观测窗内清楚出现，不以日后个别立宪君主采纳有限民意为否证。  
+  来源：<https://www.thoughtco.com/the-declaration-of-pillnitz-1221700>；<https://erenow.org/ww/the-origins-of-the-french-revolutionary-wars/4.php>；<https://www.worldhistory.org/Declaration_of_Pillnitz/>
+- **#7** 「When the National Assembly has completed its work, it will have accomplished its ruin.」  
+  判断：**正确**。国民制宪议会在完成1791年宪法后即自我否定：1791年通过自我禁令，禁止本届议员进入下届立法议会，并于9月30日解散。其所建立的君主立宪旋即在一年内崩解。议会完成工作与自身作为权力主体的终结同时发生，主结果成立。  
+  来源：<https://en.wikipedia.org/wiki/Self-denying_Ordinance_(French_Revolution)>；<https://en.wikipedia.org/wiki/Legislative_Assembly_(France)>；<https://alphahistory.com/frenchrevolution/legislative-assembly/>
+- **#11** 「What hardy pencil of a great master, from the school of the rights of men, will finish it, is to be seen herea…」  
+  判断：**正确**。作者所说尚未画完的弑君与屠杀史画随后被完成：1792年九月屠杀发生，路易十六于1793年1月21日在革命广场被公开处死，其后恐怖时期继续大规模处决。法国国民议会官网与通史记载与预测方向一致。  
+  来源：<https://en.wikipedia.org/wiki/Execution_of_Louis_XVI>；<https://www.assemblee-nationale.fr/dyn/histoire-et-patrimoine/revolution-francaise/proces-et-execution-de-louis-xvi>；<https://parcoursrevolution.paris.fr/en/chronology>
+- **#13** 「by preventive murder and preventive confiscation, and that long roll of grim and bloody maxims which form the …」  
+  判断：**正确**。在旧效忠瓦解后的法国，预防性镇压与没收确实出现：1793年《嫌疑犯法令》授权按言论、交往与身份立即逮捕，恐怖时期大规模处决，教会与流亡者财产被没收。革命政府及此后强权以权术维持统治，与“预防性谋杀与没收 / 君主因权术而暴虐”的方向相符。  
+  来源：<https://en.wikipedia.org/wiki/Law_of_Suspects>；<https://alphahistory.com/frenchrevolution/reign-of-terror/>；<https://www.worldhistory.org/Reign_of_Terror/>
+- **#17** 「They certainly never have suffered, and never will suffer, the fixed estate of the Church to be converted into…」  
+  判断：**正确**。英格兰国教会的固定产业并未被改成仰赖国库、可因财政困难拖延或取消的俸禄。教会委员会至今管理长期捐赠基金（近年公开披露规模约116亿英镑），收入来自投资与地产而非财政部拨款。爱尔兰1869年、威尔士1914年的废立教与部分剥夺属另一范围，不能否定英格兰本土教产体制的延续。  
+  来源：<https://www.churchofengland.org/national-bodies/church-commissioners-england/our-investments>；<https://www.churchofengland.org/about/national/money-and-finances>；<https://lawandreligionuk.com/2014/04/30/state-churches-disendowment-and-peaceful-enjoyment-of-property/>
+- **#18** 「the Commons of Great Britain, in the national emergencies, will never seek their resource from the confiscatio…」  
+  判断：**正确**。大不列颠下议院从未在国家紧急财政中像法国那样以没收教会与贫民产业作为筹款手段。19世纪有关教产的立法讨论中，议员强调措施并非把教会财产收归国用。爱尔兰废立教另当别论，也不属于英国本土“紧急供应委员会”式的教产没收。  
+  来源：<https://api.parliament.uk/historic-hansard/commons/1840/jul/20/ecclesiastical-duties-and-revenues>；<https://www.churchofengland.org/about/national/money-and-finances>
+- **#20** 「It affects to be a pure democracy, though I think it in a direct train of becoming shortly a mischievous and i…」  
+  判断：**正确**。所谓纯粹民主很快转为狭隘寡头：1795年督政府由五名督政官执政，辞书与研究普遍将其概括为表达大资产阶级利益的寡头体制，至1799年雾月政变结束。距离作者写作仅数年，与“正在迅速变成有害而卑下的寡头政治”相符。  
+  来源：<https://en.wikipedia.org/wiki/French_Directory>；<https://encyclopedia2.thefreedictionary.com/the+French+Directory>；<https://www.napoleon.org/en/history-of-the-two-empires/close-up/the-coup-detat-of-18-and-19-brumaire-an-viii-9-and-10-november1799/>
+- **#28** 「If possible, the next Assembly must be worse than the present.」  
+  判断：**正确**。下一届立法议会（1791年10月至1792年9月）普遍被史家视为比制宪议会更差：有效性低、与国王对峙陷入僵局，并在宣战与1792年8月10日后迅速终结。专门研究称它是革命中“被遗忘、被断定为无效”的一届，政治水准明显下降。主结果成立。  
+  来源：<https://en.wikipedia.org/wiki/Legislative_Assembly_(France)>；<https://alphahistory.com/frenchrevolution/legislative-assembly/>；<https://www.revolution.chnm.org/d/1096>
+- **#30** 「There must be blood. The want of common judgment manifested in the construction of all their descriptions of f…」  
+  判断：**正确**。军政与市政武装错乱之后确实流血：1792年起革命战争、九月屠杀、恐怖处决，以及1793–1796年旺代内战造成大规模死亡。旺代战争与恐怖的死亡数字记载充分，“必有流血”的结果出现。  
+  来源：<https://en.wikipedia.org/wiki/War_in_the_Vend%C3%A9e>；<https://theconversation.com/the-french-revolution-executed-royals-and-nobles-yes-but-most-people-killed-were-commoners-200455>；<https://www.worldhistory.org/War_in_the_Vendee/>
+- **#31** 「Armies will obey him on his personal account. There is no other way of securing military obedience in this sta…」  
+  判断：**正确**。预测被拿破仑应验：经历军队哗变与派系之后，一位得众望、能笼络士兵的将军在1799年雾月十八日政变中掌握权柄，成为共和国以至后来帝国的主人，议会与名义行政都服从其军政权威。这是本书最著名且可核验的判断之一。  
+  来源：<https://en.wikipedia.org/wiki/Coup_of_18_Brumaire>；<https://www.napoleon.org/en/history-of-the-two-empires/close-up/the-coup-detat-of-18-and-19-brumaire-an-viii-9-and-10-november1799/>；<https://www.historytoday.com/archive/months-past/napoleon-takes-power-france>
+- **#32** 「In the present it can hardly remain; but before its final settlement, it may be obliged to pass, as one of our…」  
+  判断：**正确**。1790年那个共同体没有维持原状。法国在十余年间历经1791、1793、1795、1799、1804等多部宪法与政体现状，中间经过恐怖、内战与拿破仑战争，确如作者所说在多种未经试验的形态中以火与血变迁。宪法委员会与宪法史列表可证。  
+  来源：<https://www.conseil-constitutionnel.fr/rubrique-principale/les-constitutions-dans-l-histoire>；<https://en.wikipedia.org/wiki/List_of_constitutions_of_France>；<https://en.wikipedia.org/wiki/French_Constitution_of_1791>
+
+### 趋势符合（4 条）
+
+- **#6** 「But this generation will quickly pass away. The next generation of the nobility will resemble the artificers a…」  
+  判断：**趋势符合**。旧宫廷贵族作为封闭等级很快被打碎，拿破仑另建以军功与效劳为基础的帝国贵族，19世纪长期由地产与货币资本混合的“名流”主导；金钱阶层确实成为旧贵族的同伴，有时还凌驾其上。但“下一代贵族将类似工匠、村夫”过于绝对，1814年旧贵族部分复归且头衔仍被承认，故主方向成立而程度不足，判趋势符合。  
+  来源：<https://www.napoleon.org/en/history-of-the-two-empires/articles/the-nobility-of-the-empire-and-the-elite-groups-of-the-19th-century-a-successful-fusion/>；<https://www.universalis.fr/encyclopedie/notables/>；<https://en.wikipedia.org/wiki/Bourbon_Restoration_in_France>
+- **#12** 「the glory of Europe is extinguished forever. Never, never more, shall we behold that generous loyalty to rank …」  
+  判断：**趋势符合**。作为政治与社会黏合剂的骑士式效忠、对等级与性别的慷慨忠诚，在革命后的欧洲确实大幅消退，宫廷礼仪简化，资产阶级礼仪取而代之。但“永远熄灭、再不可见”过绝对：19世纪仍有中世纪骑士风的文艺与礼仪复兴。主方向（那种治理性荣光不再主导）成立，绝对化表述不成立，判趋势符合。  
+  来源：<https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/manners-and-formality>；<https://academic.oup.com/edited-volume/34281>；<https://www.victorianweb.org/genre/myth/arthurian.html>
+- **#23** 「likely in their excess to become the means of their subversion. If governments provide for these debts by heav…」  
+  判断：**趋势符合**。公债过度确实多次成为政治颠覆或政权危机的手段，19世纪以来多次出现违约、财政崩溃与革命或政权更迭。但高负债本身并非必然颠覆：英国在拿破仑战争后债务率极高仍保持政制稳定，日本等国也能在高债务下维持秩序。方向在若干历史案例中成立，但不是普遍定律，判趋势符合。  
+  来源：<https://www.piie.com/sites/default/files/publications/papers/ferguson201005.pdf>；<https://www.economicsobservatory.com/national-debt-and-democracy-what-has-been-the-uks-experience>；<http://www.aeconf.com/Articles/Nov2014/aef150201.pdf>
+- **#24** 「if monarchy should ever again obtain an entire ascendency in France, under this or any other dynasty, it will …」  
+  判断：**趋势符合**。条件已触发：君主制在法国再次取得完全优势。拿破仑执政并称帝，权力高度个人化、威权特征显著，较路易十六晚期更集中，接近作者所惧的专断回潮。但“世上出现过的最彻底专断”过甚，拿破仑政权仍受部分制度与法典约束；1814年复辟则在即位之初即以1814年宪章自我节制，成为立宪君主制。未节制的回潮走向强权，但超级表述不能成立，判趋势符合。  
+  来源：<https://www.napoleon.org/en/history-of-the-two-empires/articles/was-the-napoleonic-regime-a-military-dictatorship/>；<https://en.wikipedia.org/wiki/Charter_of_1814>；<https://www.senat.fr/connaitre-le-senat/lhistoire-du-senat/dossiers-dhistoire/le-proces-du-marechal-ney/la-charte-constitutionnelle-du-4-juin-1814.html>
+
+### 部分符合（12 条）
+
+- **#8** 「will not long bear a state of subjection to the republic of Paris. They will not bear that this one body shoul…」  
+  判断：**部分符合**。两项结果不一致。各省并未持久拒绝臣服巴黎或分裂为独立共和国：1793年联邦派起事被镇压，法国反而更走向以巴黎为中心的单一中央集权。另一方面，教产作为国有财产出售后，复辟政权在政治上无法收回，买受人大体保有产业。分裂预测错误、教产保有大体正确，故部分符合。  
+  来源：<https://en.wikipedia.org/wiki/Federalist_revolts>；<https://en.wikipedia.org/wiki/Bourbon_Restoration_in_France>；<https://oyc.yale.edu/history/hist-276/lecture-3>
+- **#9** 「The republic of Paris will endeavor, indeed, to complete the debauchery of the army, and illegally to perpetua…」  
+  判断：**部分符合**。巴黎方面确实力图以街区、国民自卫军和政治化军队影响全国，并用指券把资源集中；国民公会时期权力高度集中于巴黎。但制宪议会本身并未非法自我延长，而是解散并禁止议员连任。三项“将力图”中军队与纸币部分出现，非法延续本届议会并不成立，故部分符合。  
+  来源：<https://en.wikipedia.org/wiki/Assignat>；<https://www.worldhistory.org/Assignat/>；<https://h-france.net/rude/wp-content/uploads/2023/10/7-SHUSTERMAN.pdf>
+- **#10** 「All this policy in the end will appear as feeble as it is now violent.」  
+  判断：**部分符合**。巴黎以纸币和强制集权吸纳全国资源的政策在财政上很快显出无力：指券大幅贬值，1793年联邦派与旺代起事暴露外省抵制。但就政治格局而言，巴黎并未变得软弱，革命与此后各政权反而巩固了首都对全国的支配。政策“既暴烈又终将软弱”只在财政上成立，在政治集中上不成立，故部分符合。  
+  来源：<https://erenow.org/modern/the-oxford-history-of-the-french-revolution/10.php>；<https://en.wikipedia.org/wiki/Federalist_revolts>；<https://oyc.yale.edu/history/hist-276/lecture-3>
+- **#14** 「Along with its natural protectors and guardians, learning will be cast into the mire and trodden down under th…」  
+  判断：**部分符合**。短期应验、长期被逆转。1793年8月8日国民公会解散旧制度各科学院与特许学术团体，旧保护结构中断。但1794–1795年即创立综合理工学院与法兰西研究院，19世纪初法国科学界一度居世界前列。学问并未一直被“践踏至截止日”，故部分符合。  
+  来源：<https://www.institutdefrance.fr/en/histoire/1793/>；<https://www.polytechnique.edu/ecole/histoire/1794-1804-revolution-et-periode-napoleonienne>；<https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/french-revolution-and-crisis-science>
+- **#15** 「when your fountain is choked up and polluted, the stream will not run long or not run clear with us, or perhap…」  
+  判断：**部分符合**。英国对法国革命礼仪与风尚确有保守反弹，伯克式批评塑造了反雅各宾的礼貌观。但法英文化影响并未因此枯竭或长久浑浊：1790年代巴黎时装仍经移民传入伦敦，此后法英文化转移持续。源头污染导致支流不再流淌的判断只部分成立。  
+  来源：<https://www.cambridge.org/core/journals/historical-journal/article/abs/conservative-political-thought-in-britain-in-response-to-the-french-revolution/077FA1806CF63ABBE716FF2975E64DEC>；<https://www.earlydancecircle.co.uk/wp-content/uploads/2023/09/2004-Frances-Tucker-French-and-English-Fashions.pdf>
+- **#19** 「The consequence will be, that these purchasers, or rather grantees, will pay, not only from the rents as they …」  
+  判断：**部分符合**。国有化教产出售确实伴随投机、拆改旧建筑与林地易手，部分买受人以经营与转售获利；“黑帮”式兼并也见记载。但研究同时显示相当比例土地转入耕种者，部分地区农业效率上升，农民处境并非普遍被敲诈至破产。掠夺性经营有之，并非单一后果，故部分符合。  
+  来源：<https://www.persee.fr/doc/ahrf_0003-4436_1999_num_315_1_2219?pageId=T1_10>；<https://h-france.net/rude/wp-content/uploads/2017/08/vol2_McPhee_Final_Version.pdf>；<https://arnauddeseau.github.io/files/JMP_Arnaud_Deseau.pdf>
+- **#21** 「If Dr. Price should think fit, a few years hence, to favor us with an estimate of the population of France, he…」  
+  判断：**部分符合**。“数年后凑不足三千万”这一侧可以成立：1790年法国人口约2800万，1815年仍约2900万，较可靠的1821年普查才略超三千万，短期内并未达到普赖斯的三千万。但人口并未因革命出现需“许多年才能恢复”的崩溃，督政府时期旧疆域人口平衡甚至为正；财富与产出在1790–1796年显著下滑，此后逐步恢复。人口崩溃说过度，经济扰乱说成立，故部分符合。  
+  来源：<https://shs.cairn.info/la-france-et-l-europe-de-napoleon--9782200265335-page-77?lang=fr>；<https://www.universalis.fr/encyclopedie/restauration/3-l-economie-et-la-societe/>；<https://en.wikipedia.org/wiki/Economic_history_of_France>；<https://shs.cairn.info/atlas-de-la-france-au-xixe-siecle--9782746753426-page-12?lang=fr>
+- **#22** 「in future nothing of science or erudition can exist in the Gallican Church. To complete the project, without t…」  
+  判断：**部分符合**。1790年《教士公民组织法》造成教会分裂，选任神职冲击原有教阶与学术生态，高卢教会的旧博学体制严重受损。但该体制并非永久：1801年教务专约恢复由政府提名、教皇授职的主教制，19世纪天主教术与神职教育重新展开。‘将来不会再有科学与博学’的绝对判断不能贯通至截止日，故部分符合。  
+  来源：<https://en.wikipedia.org/wiki/Civil_Constitution_of_the_Clergy>；<https://www.newadvent.org/cathen/04204a.htm>；<https://www.persee.fr/doc/rscir_0035-2217_1989_num_63_1_3115>
+- **#25** 「Superficial, new, petulant acquisition, and interrupted, dronish, broken, ill recollection, is to be the desti…」  
+  判断：**部分符合**。对紧随其后的立法议会，史家普遍认为水准低于制宪议会，缺乏经验、党争加剧、很快陷入战争与失效，与“下一批执政者浅薄、记取破碎”相符。但两年一任并强制隔届的规则很快废止，执政府与帝国重建了职业官僚与长期任职的大臣，“你们未来所有执政者”的全称判断不能延伸到截止日，故部分符合。  
+  来源：<https://erenow.org/modern/the-oxford-history-of-the-french-revolution/8.php>；<https://alphahistory.com/frenchrevolution/legislative-assembly/>；<https://fr.wikipedia.org/wiki/Histoire_de_la_haute_fonction_publique_fran%C3%A7aise>
+- **#26** 「as I am morally certain it will not,) then, instead of cementing, it will add infinitely to the dissociation, …」  
+  判断：**部分符合**。核心判断成立：教产抵押不足以支撑指券，1795–1796年指券恶性通货膨胀并崩溃，法兰西银行等综述确认没收地产无法维持纸币信用。但“将无限加剧各共和国相互及内部的瓦解”并未导致法国分裂为持久独立的共和国，国家在混乱后重新集中。纸币失败正确，分裂后果过度，故部分符合。  
+  来源：<https://libertystreeteconomics.newyorkfed.org/2014/07/crisis-chronicles-the-collapse-of-the-french-assignat-and-its-link-to-virtual-currencies-today/>；<https://www.banque-france.fr/en/publications-and-statistics/publications/fiscal-roots-hyperinflation-historical-perspective>；<https://en.wikipedia.org/wiki/Assignat>
+- **#27** 「Industry must wither away. Economy must be driven from your country. Careful provision will have no existence.」  
+  判断：**部分符合**。1790年代强制纸币与战争确使工业与贸易严重紊乱：研究指出1789–1815年工业产量停滞，1790年代初破坏尤烈，外贸与价格剧烈波动，与“工业枯萎、储备难存”的短期图景相符。但自1796年与执政府起货币整顿后出现复苏，19世纪法国仍走向工业化。“必将枯萎、将不复存在”不能作为到2026年的最终结果，故部分符合。  
+  来源：<https://www.ofce.fr/pdf/dtravail/OFCEWP2022-06.pdf>；<https://en.wikipedia.org/wiki/Economic_history_of_France>；<https://www.minneapolisfed.org/article/1991/the-macroeconomic-causes-and-consequences-of-the-french-revolution>
+- **#29** 「In that Constitution, elective, temporary, local judges, such as you have contrived, exercising their dependen…」  
+  判断：**部分符合**。革命初期选举产生、任期短的司法以及后来的革命法庭，确曾对政治嫌疑人和部分富人极不公正，巴黎革命法庭成为恐怖的核心机构。但该选举地方法官体制并未成为法国司法的永久形态：拿破仑时期重建职业法官，后世司法以专业法官为主。短期应验、长期制度被替换，故部分符合。  
+  来源：<https://en.wikipedia.org/wiki/Revolutionary_Tribunal>；<https://www.napoleon-series.org/research/government/france/c_tribunal.html>；<https://droit.cairn.info/histoire-de-la-justice-en-france--9782707182890-page-7?lang=fr>
+
+### 暂无法判断（1 条）
+
+- **#16** 「the event, I dare venture to prophesy, will be, that, with some trouble to their country, they will soon accom…」  
+  判断：**暂无法判断**。该条是真实条件句：若英国人认真仿效法国已做之事，将很快自我毁灭。现有研究多认为1790年代通信协会等激进派主要争取议会改革与扩大选举权，大体仍在宪制议论之内，并未认真复制法国那种没收教产、改组政权的做法；政府虽以叛国审判等手段打压，但不能据此把未充分触发的前提判为已实现或已证伪。按规则，未触发的真实if条件不判正确或错误。  
+  来源：<https://www.st-hughs.ox.ac.uk/wp-content/uploads/2017/09/Ashcroft-What-was-the-Significance-of-the-British-Radical-Movement-of-the-1790s.pdf>；<https://www.bbc.co.uk/history/british/empire_seapower/british_french_rev_01.shtml>；<https://www.grandjurymuseum.uk/history/display/treasontrials/display.html>
+
+## 剔除的非预测
+
+| 编号 | 原文 | 类型 | 说明 |
+|---:|---|---|---|
+| — | （无） | — | 候选为人工挑选，未收入非预测 |
+
+## 文件
+
+- 本文：`cases/burke-reflections-on-the-revolution-in-france-v5/REPORT-manual-zh.md`
+- 逐条结构化结果：`cases/burke-reflections-on-the-revolution-in-france-v5/output/manual-final/results.manual.jsonl`（review_source = `manual-assistant-2026-11-15`），汇总 `output/manual-final/summary.json`
+- 人工决定源文件：`cases/burke-reflections-on-the-revolution-in-france-v5/audit/manual_review_2026-11-15.py`
+
+
+## 说明
+
+- 抽取密度：32 条可核验 / 172 总块 ≈ 0.186；按正文倾向块（txt-00001–00160，约 160 块）计 = 0.20，落在 METHOD §5 英文书参考区间（约 0.2–0.35）的下沿。未为凑密度放宽标准。未把 1688 年历史论证、规范“will”、对 1790 年已可见局势的现在时描写、或已完成事件收为预测；巴黎政策、寡头、国土分裂等主题避免在多块中重复计数。
+- 前后附文人工排除记录：仓库英文 `matter_spans` 正则无法匹配本卷 PREFACE、标题页与 FOOTNOTES，故 `excluded_matter_spans=[]`、`skipped_matter_chunks=[]`，须人工排除并记录。
+
+| 区段 | 字符偏移 | 内容 | 块 | 抽取 |
+| --- | --- | --- | --- | --- |
+| 前附文 FRONT | 0–2020 | 目录头、START 标记、标题页、作者出版前言（It may not be unnecessary…）、第二标题 | 主要在 txt-00001 前部 | 不抽 |
+| 正文 BODY | 2020–552462 | 书信正文，自 Dear Sir,-- 起 | txt-00001 正文段；txt-00002–00159；txt-00160 在 552462 之前的部分 | 32 条引文均在此区间 |
+| 后附文 BACK-NOTES | 552462–575171 | FOOTNOTES: 作者/编者注，自 [77] 起（此前注号在正文以标记出现） | txt-00160 后部；txt-00161–00166 | 按注释/参考文献排除，已通读确认未另抽 |
+| 后附文 BACK-LICENSE | 575171–593604 | END OF THE PROJECT GUTENBERG SOURCE TEXT 及许可证 | txt-00167–00172 | 不抽 |
+
+  txt-00001 为 FRONT/BODY 交界（正文自 2020 起才抽取）；txt-00160 为 BODY/BACK 交界（只对 552462 之前抽取）。伯克 FOOTNOTES 以引证与编者注为主，不同于托克维尔附录，故作注释排除。
+- 条件句：第 16 条“若英国人认真仿效法国已做之事”为真实 if，证据显示 1790 年代激进派大体仍在宪制改革议论之内，全面仿效前提未清楚触发，记暂无法判断，不判正确或错误。第 24 条“若君主制再次完全占优且即位不加节制”已触发（拿破仑称帝），方向成立但“最彻底专断”过甚，且 1814 年复辟以宪章自我节制，记趋势符合。
+- 第 8 条含两项：83 省不臣服巴黎（错误，法国更趋中央集权）与各自保有教产（大体正确，复辟未能收回国有化教产），记部分符合。第 26 条指券崩溃成立，但未导致各共和国持久分裂，记部分符合。
+- 趋势符合 4 条：下一代贵族向名流/金钱阶层转化但并非“类似工匠”；骑士式荣光作为治理基础消退但并非“永远不可再见”；公债过度有时可颠覆政府但非定律；拿破仑式专断回潮成立但超级表述过度。
+- 检索摘录均取自第三方存档页面，候选引文之间无连续 300 字符重合。证据优先官方与通史（王室官网、英国立法、英格兰国教会、法国国民议会与宪法委员会、INSEE/研究综述、法兰西银行、拿破仑基金会、百科与学术综述）。
+- 案例 `data/claims.jsonl` 的 `context` 已全部清空。toolkit 保持 main `85e6da1`，未改。
+

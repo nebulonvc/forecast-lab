@@ -1,0 +1,28 @@
+{
+  "id": "b426912b-81c7-442b-a402-cbfaadbad693",
+  "object": "chat.completion",
+  "created": 1794201582,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000021546-000021576\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"规范性条件建议，非可检验预测；无观察时段。\",\"reason\":\"原文以“如果……那我们应该抵制”给出规范性应对建议，不是对未来事实的预测。\",\"limitation\":\"条件句形式不等于预测；该句属于价值判断。\",\"evidence_ids\":[],\"method\":\"条件性判断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000022016-000022045\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为“公司处在竞争平衡中”，结果为“其消失对世界丝毫没有影响”；无具体公司、期限与可操作指标。\",\"reason\":\"这是条件性论断，触发条件未指定具体对象，且“对世界丝毫没有影响”难以客观操作化。\",\"limitation\":\"缺少可核验的公司案例与影响指标，无法用事后证据评分。\",\"evidence_ids\":[],\"method\":\"条件性推断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5059,
+    "completion_tokens": 290,
+    "total_tokens": 5349,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 4291
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

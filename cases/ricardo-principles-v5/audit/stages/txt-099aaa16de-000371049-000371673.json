@@ -1,0 +1,73 @@
+{
+  "id": "txt-099aaa16de-000371049-000371673",
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "若未来任何战争爆发时债务还没有大幅减少，这场战争的全部费用就必须逐年用税收支付，否则至迟在战争结束时必须接受国家破产。",
+    "reason": "同一次检索窗口里的页讨论偿债基金、1815年6月14日宣布的战时借款，以及后来的战争借款转换。没有一页同时写出债务尚未大幅减少、并且战争或者逐年征税或者以国家破产结束。",
+    "limitation": "1815-06-14是另一笔战时借款的宣布日，不是这句里未来战争的观察日。工具没有回显查询，页按窗口归档。",
+    "evidence_ids": [],
+    "method": "未来战争爆发时债务若未大幅减少，只剩逐年征税或国家破产。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [],
+    "remaining_gap": "缺某次战争爆发时债务尚未大幅减少、以及该战争逐年征税或国家破产这一合取的源日期记录。",
+    "id": "txt-099aaa16de-000371049-000371673"
+  },
+  "previous_r2_plan": null,
+  "previous_r2_select": null,
+  "previous_r2_semantic_review": null,
+  "plan": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "not_a_pre_search_plan": "这是2026-11-20的r3补写。r2里这栏若只有“当前审查”一句，那个时间保留在previous_r2_plan，不把本段倒签成检索之前。",
+    "object": "若未来战争爆发时债务还没有大幅减少，这场战争的全部费用必须逐年用税收支付，否则至迟在战争结束时接受国家破产。",
+    "condition": "未来某次战争爆发，并且当时债务还没有大幅减少。",
+    "observable": "该次战争的费用是逐年税收，或战争结束时国家破产。两个选言一起看。",
+    "potential_counterevidence": "若债务未减的战争既没有逐年征税支付全部费用，也没有在结束时破产。",
+    "queries": [
+      {
+        "role": "counter",
+        "query": "British national debt rose sharply during the First World War",
+        "precall_file": "audit/r-batch4/precall/10.json"
+      },
+      {
+        "role": "support",
+        "query": "Britain financed the First World War without a national bankruptcy",
+        "precall_file": "audit/r-batch4/precall/09.json"
+      }
+    ]
+  },
+  "select": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "max_urls": 8,
+    "urls": [],
+    "selected_for_score": [],
+    "url_gap": "这条的已存返回是precall和页文本或空的saved_pages。那些文件没有URL行。不编URL。不利材料若只有查询名、没有地址，不能装成名单。"
+  },
+  "semantic_review": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "decision": "unresolved",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "unknown",
+      "time_alignment": "unknown",
+      "evidence_support": "unknown",
+      "counterevidence": "unknown",
+      "verdict_logic": "pass"
+    },
+    "check_reasons": {
+      "object_match": "评估要的是债务未减时的那场战争，不是1815年6月14日那笔已经宣布的借款。",
+      "condition_logic": "没有一页同时写出某次后来的战争开始时债务尚未大幅减少。评估没有用拿破仑战争填这个未来条件。",
+      "time_alignment": "1815-06-14是另一笔借款的宣布日，不是这句的观察日。观察终点留空。",
+      "evidence_support": "没有逐年征税或国家破产这个合取的记录。",
+      "counterevidence": "反证查询是一战期间国债大增。没有URL。国债增加也不等于没有逐年征税，更不是国家破产。",
+      "verdict_logic": "条件和合取都缺。暂无法判断没有把一战借款判成破产或成功。"
+    },
+    "revision": "本轮六项没有fail，所以没有做那一次修订。判决保持暂无法判断。",
+    "remaining_gap": "还缺战争爆发时债务尚未大幅减少、并且逐年征税或国家破产的源日期记录。"
+  }
+}

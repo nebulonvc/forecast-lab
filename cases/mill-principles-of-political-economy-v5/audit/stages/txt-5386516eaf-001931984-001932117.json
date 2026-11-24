@@ -1,0 +1,82 @@
+{
+  "id": "txt-5386516eaf-001931984-001932117",
+  "assess": {
+    "id": "txt-5386516eaf-001931984-001932117",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "若那种改进继续，雇佣劳动者的身份会逐渐收缩到道德品质低、不能做更独立工作的人。",
+    "reason": "2020年雇员占85.1%只说明雇佣仍是多数身份。它不是“收缩到不能做更独立工作的人”这一后果。改进是否继续也没有同口径证据。用就业比重代替这个条件句，和条件未定时拿相关结果计分是同一类问题。",
+    "limitation": "就业比重保留为边界，不计分。",
+    "evidence_ids": [
+      "ev-ons-employees-2020"
+    ],
+    "method": "重读手册后撤回部分符合。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "gradually",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-ons-employees-2020",
+        "quote": "28.02 million employees (85.1% of all people in employment)",
+        "relation": "boundary",
+        "limitation": "不是不能独立工作的人。",
+        "observation_end": "2020-06-30",
+        "publication_date": "2020-08-11",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺雇佣身份是否收缩到不能做更独立工作的人，以及那种改进是否继续。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001931984-001932117",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "revision_trail": {
+    "previous_verdict": "部分符合",
+    "previous_reason": "2020年4月至6月雇员仍占全部就业者的85.1%，雇佣身份没有变成残余类别。这是后果B的直接观察，方向与“收缩到不能独立的人”相反。原文的“改进”是连军事专制也只是延缓、没有停止的那一条改进，不是识字率。前提A未证实，因此不把整句判成已经失败。",
+    "why": "主要后果没有直接证据。就业比重是另一种情境。",
+    "rule_quote": "真正的条件没有触发，不能用另一种情境下的结果代替。 前提未知但后果或分项已有直接证据时，可以用部分符合（含趋势符合）并写明未证实的前提；这不能用来把缺少主要结果证据的条目评成部分符合。"
+  },
+  "rule_audit": {
+    "source": "toolkit/METHOD.md",
+    "quote": "真正的条件没有触发，不能用另一种情境下的结果代替。 前提未知但后果或分项已有直接证据时，可以用部分符合（含趋势符合）并写明未证实的前提；这不能用来把缺少主要结果证据的条目评成部分符合。",
+    "reasoning": "主要后果没有直接证据。就业比重是另一种情境。"
+  },
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "hired employment became a residual status"
+      },
+      {
+        "role": "counter",
+        "query": "85 percent of employment still employees"
+      }
+    ],
+    "note": "无 executed=true。不另造claim ID。"
+  },
+  "select": {
+    "urls": [
+      "https://ourworldindata.org/literacy",
+      "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/employmentintheuk/august2020"
+    ],
+    "reason": "方向相反。"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "written_at": "2026-11-20",
+  "not_applied": true,
+  "snapshot_zip_unchanged": "2d31165abe84ad00661cdf2e4e85e6f893f77e07ae47a7dc43786a873425144c",
+  "note": "这些是本轮实际检索和下载。正文放在 audit/staged-sources-29，尚未写入 evidence.jsonl，也未 apply。不计分。",
+  "failures": [
+    {
+      "url": "https://www.ajicjournal.org/article/S0196-6553(08)00740-2/fulltext",
+      "result": "HTTP 403"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1186/1472-6874-12-41",
+      "result": "3038-byte bot wall, no article text"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3528466/",
+      "result": "wrong paper, malaria, not used"
+    },
+    {
+      "url": "https://www.pnas.org/doi/10.1073/pnas.1717959115",
+      "result": "HTTP 403"
+    },
+    {
+      "url": "https://www.science.org/doi/10.1126/sciadv.adt1646",
+      "result": "HTTP 403"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s10508-014-0320-4",
+      "result": "3038-byte bot wall"
+    },
+    {
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7019500/pdf/nutrients-12-00198.pdf",
+      "result": "response was HTML, not a PDF"
+    }
+  ],
+  "executed": [
+    {
+      "id": "000208968-000209031",
+      "support": "women employment and femininity personality traits survey did not become less feminine",
+      "counter": "the same results included lower self-rated femininity among working women",
+      "selected": "ucl-femininity.pdf",
+      "excerpt": "working women feel increasingly less feminine than nonworking women",
+      "date": null,
+      "why": "Forthcoming 稿，没有出版日。自评女性气质不是原句里雌性仍在、功能更多。不计分。"
+    },
+    {
+      "id": "000262658-000262820",
+      "support": "girls education curriculum shifted from attracting a husband to training for motherhood historical evidence",
+      "counter": "Hayes page shows colleges returned toward wife-and-mother justification",
+      "selected": "hayes-education.html",
+      "excerpt": "Fall, 1984",
+      "date": "1984",
+      "why": "条件是社会真的像自称的那样看重母职。1984 年的历史文章没有写这个条件已经成立。不计分。"
+    },
+    {
+      "id": "000276906-000276985",
+      "support": "marital satisfaction trend after dual earner couples economic dependence of wives declined",
+      "counter": "Utah brief: divorce penalty for wives earning as much disappeared, which is stability not higher fulfilment",
+      "selected": "utah-marriage.html",
+      "excerpt": "April 25, 2022",
+      "date": "2022-04-25",
+      "why": "经济阶段被超越这一条件没有出现。离婚风险不是更高的婚姻实现。不计分。"
+    },
+    {
+      "id": "000285898-000285947",
+      "support": "housing quality and home health of employed women compared with housewives",
+      "counter": "not separately fetched; the support hits were quality-of-life, not home life made true and beautiful",
+      "selected": null,
+      "why": "Springer 页是拦截页。没有可引用正文。尚未完成。"
+    },
+    {
+      "id": "000314188-000314260",
+      "support": "demand growth for apartment buildings with professional childcare and centralized housekeeping",
+      "counter": "NYC survey is a preference, not the named establishment being supplied",
+      "selected": "propertynest.html",
+      "excerpt": "in January 2020",
+      "date": "2020-01",
+      "why": "纽约租户想要清洁服务，不是经理统一雇用清洁工、屋顶花园、日托和幼儿园这一整套供给已经必须被满足。不计分。"
+    },
+    {
+      "id": "000314530-000314592",
+      "support": "the preference pages above",
+      "counter": "cohousing or service apartment with nursery commercial failure",
+      "selected": "metro-cuckooz.html",
+      "excerpt": "early April 2021",
+      "date": "2021-04",
+      "why": "一家合作托育在 2021 年 4 月上旬关闭。文章日期 2022-11-27。一家关闭不是这种永久供给是否成为普遍的商业成功。不计分。"
+    },
+    {
+      "id": "000320510-000320556",
+      "support": "historical trend personal hygiene and domestic cleanliness since 1900",
+      "counter": "the saved book describes the start of the change, not a measured cleaner-than-ever series through the cutoff",
+      "selected": "against-disease.pdf",
+      "date": "2006",
+      "why": "版权页 © 2006。文献讲的是卫生史的开端，不是我们比以往任何时候都更清洁这一可核对序列。不计分。"
+    },
+    {
+      "id": "000321183-000321275",
+      "support": "professionalized housework quality results compared with unpaid family housework",
+      "counter": "hits were time saved and willingness to pay, not better results in the expert-cleaning industries just named",
+      "selected": null,
+      "why": "检索到的是时间或付费意愿，没有存下同对象正文。尚未完成。"
+    },
+    {
+      "id": "000324027-000324147",
+      "support": "trend in population ability to recognize and prefer nutritious food taste",
+      "counter": "Pew: taste remains the top priority, which is not elevation of taste under a general good-food standard",
+      "selected": "pew-food-20250507.html",
+      "excerpt": "May 7, 2025",
+      "date": "2025-05-07",
+      "why": "83% 把味道看得很重要。稳定而普遍的好食物标准这一条件没有出现。不计分。"
+    },
+    {
+      "id": "000325924-000325974",
+      "support": "home cooking still a source of family emotion",
+      "counter": "same search; qualitative studies say love and care remain attached",
+      "selected": null,
+      "why": "PMC PDF 地址返回的是 HTML。情感仍附在家常烹饪上这一方向有检索结果，但没有可引用原档。尚未完成。"
+    },
+    {
+      "id": "000334115-000334197",
+      "support": "household hours declined while sanitation improved",
+      "counter": "Ramey: prime-age women's home production time fell, per capita time rose slightly; sanitation and beauty are not in that sentence",
+      "selected": "ramey-home.pdf",
+      "excerpt": "fell by around six hours from 1900 to 1965 and by another 12 hours from 1965 to 2005",
+      "date": "2005",
+      "why": "期刊是 2009 年 3 月。工时下降不是卫生更好、更多美和更少工作这三件一起。人均家务时间还略升。不计分。"
+    },
+    {
+      "id": "000388896-000389000",
+      "support": "parent time with children versus housework since 1965",
+      "counter": "childcare hours are not personal acquaintance, and the condition is removal of common labors from the home",
+      "selected": "pew-parent-20130314.html",
+      "excerpt": "from 2.5 hours in 1965 to 7.3 hours",
+      "date": "2013-03-14",
+      "why": "陪伴时数不是亲自认识孩子。条件是家中的共同劳动被移走。不计分。"
+    },
+    {
+      "id": "000404918-000405057",
+      "support": "housing trend private bedrooms and common rooms or cohousing",
+      "counter": "Danish cohousing is a small alternative, not the general form of rooms",
+      "selected": "danish-cohousing.pdf",
+      "why": "私人住宅加公共设施的合作居住存在，但是少数形式。原句是将有私人房间、家庭房屋和公共房间这一安排。少数存在既不能判成已经实现，也不能判成没有。不计分。"
+    },
+    {
+      "id": "000407022-000407067",
+      "support": "men's fathering changed because mothers gained economic independence",
+      "counter": "fathers' extra solo care is not a new kind of man grown from the new motherhood",
+      "selected": "pmc-fathers.html",
+      "date": "2012-03",
+      "why": "2012 年 3 月。父亲单独照料增加不是一种新的男人长成。不计分。"
+    }
+  ]
+}

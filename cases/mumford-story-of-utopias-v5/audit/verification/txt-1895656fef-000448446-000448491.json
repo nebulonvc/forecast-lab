@@ -1,0 +1,51 @@
+{
+  "claim_id": "txt-1895656fef-000448446-000448491",
+  "plan": {
+    "object": "现实",
+    "conditions": [],
+    "quantifier": "perhaps--who can tell?",
+    "result": "我们也许会重新创造现实",
+    "time_window": "1923年到截止日",
+    "counterevidence_needed": "现实没有被重新创造"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "support_query": "twentieth century recreated social reality rather than only describing it",
+        "counter_query": "postwar society restored the existing order instead of recreating reality",
+        "saved_at_utc": "2026-11-20T11:11:02Z",
+        "tool_call_id": null
+      }
+    ],
+    "adaptive_rounds": 0,
+    "stop_reason": "返回的重建、恢复和艺术建构都不是这句的 re-create it。who can tell 保留。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "definition",
+    "trend_aligned": false,
+    "condition_state": "unconditional",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [
+      "ev-counterpunch-2022"
+    ],
+    "scope": "it 是上一句的 reality。perhaps 和 who can tell 保留为低把握，不因此删句。",
+    "reason": "检索到的是艺术上的建构、战后制度的恢复，以及芒福德区域设想没有实现。这些都没有测量现实是否被重新创造。低把握也不把没有测量写成失败。",
+    "limitation": "区域设想没有实现，不能直接换成现实没有被重新创造。",
+    "method": "先确定 it 是现实。没有对应观察就不打分。",
+    "method_basis": "explicit",
+    "remaining_gap": "缺一份材料观察这句的 reality 是否被重新创造。区域城市没有建成不是这个观察。"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "pass",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "重新创造现实没有对应的观察。"
+  }
+}

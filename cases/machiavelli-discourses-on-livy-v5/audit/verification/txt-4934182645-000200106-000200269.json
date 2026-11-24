@@ -1,0 +1,47 @@
+{
+  "id": "txt-4934182645-000200106-000200269",
+  "plan": {
+    "object": "不能在突发紧急状态中诉诸独裁官或同类权力的共和国。",
+    "condition": "when the danger is serious。同类权力按原文指可以临时处理紧急状态的单独或集中授权，不是平时的议会。",
+    "quantifier": "will ... always be undone。",
+    "result": "被毁灭。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "一个不能设立独裁官或同类紧急权力的共和国，在严重危险中没有被毁灭。支持方向则是这样一个共和国在严重危险中被毁灭。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "republic without emergency powers destroyed by invasion after 1531",
+      "counter_query": "Switzerland World War II no emergency dictator survived independence"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [
+      "https://www.eda.admin.ch/dam/PRS-Web/en/dokumente/schweiz-weltkriege_EN.pdf",
+      "https://www.historytoday.com/archive/fall-siena"
+    ],
+    "dropped": "佛罗伦萨共和国的投降写在1530年8月12日，早于1531。不用来核验1531年之后的判断。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "when the danger is serious",
+    "observation_end": null,
+    "evidence_ids": ["ev-eda-switzerland-1939", "ev-history-today-siena-1555"],
+    "scope": "只核验不能诉诸独裁官或同类紧急权力的共和国。已经设立总司令或战时紧急长官的共和国，不进入这句的条件。",
+    "reason": "瑞士联邦外交部材料写，1939年9月1日战争爆发后，联邦议会任命吉桑为瑞士军队总司令；同一材料写联邦委员会被授予紧急权力，议会、公投和选举仍在进行。瑞士因此不是 cannot resort to a dictator or similar authority。History Today写锡耶纳的八人战争委员会是 emergency ruling magistracy，城市在1555年4月投降。锡耶纳有同类紧急权力，它的灭亡不能证明没有这种权力就一定灭亡，也不能证明没有这种权力仍能保全。决定性缺口是：存档正文里没有一个1531年之后、在严重危险中确实无法诉诸这类权力的共和国，以及它随后是保全还是灭亡。",
+    "limitation": "两页都没有单独的出版日。锡耶纳投降只写到1555年4月，没有日。瑞士材料写了1939年9月1日和1943年选举。",
+    "method": "先看候选共和国在危险中有没有同类紧急授权，没有这一条件就不计分。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "瑞士有总司令和紧急权力，锡耶纳有战时八人委员会。两者都不是原文的必要条件。不计分。"
+  }
+}

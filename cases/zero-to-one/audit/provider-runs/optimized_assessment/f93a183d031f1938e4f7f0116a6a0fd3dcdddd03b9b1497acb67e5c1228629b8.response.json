@@ -1,0 +1,28 @@
+{
+  "id": "497f20ca-8981-474f-a0f9-63effcd56db3",
+  "object": "chat.completion",
+  "created": 1794201585,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000042667-000042690\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"definition\",\"scope\":\"条件性定义陈述：储蓄意味着未来有可支配资金，无可独立检验的经验预测。\",\"reason\":\"该句是储蓄留待未来消费的近似定义性表述，属于条件性同义反复，不构成可检验预测。\",\"limitation\":\"原文未给出具体指标、期限或可观测对象，无法作为经验预测评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"之后\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000042690-000042719\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为“美国公司投资”，结果为“未来收获新的财富”；原文未给指标、期限与投资口径。\",\"reason\":\"该判断以美国公司投资为触发条件，但原文未定义投资口径与观察期限，且无证据显示条件已满足或结果已实现。\",\"limitation\":\"条件未确定、指标不可操作化，且无verified证据可用，故无法评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"在未来\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5036,
+    "completion_tokens": 311,
+    "total_tokens": 5347,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 4268
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

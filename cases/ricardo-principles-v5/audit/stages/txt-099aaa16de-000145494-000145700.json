@@ -1,0 +1,105 @@
+{
+  "id": "txt-099aaa16de-000145494-000145700",
+  "plan": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "not_a_pre_search_plan": "这是2026-11-20的r3补写。r2里这栏若只有“当前审查”一句，那个时间保留在previous_r2_plan，不把本段倒签成检索之前。",
+    "object": "一般利润因工资上升、以及为增加的人口供应必需品愈难，而下降并逐渐停在更低水平。",
+    "condition": "工资上升，并且供应增加的人口愈难。两条都要在。",
+    "observable": "一般利润率的下降并停住，同时看到工资和必需品困难。",
+    "potential_counterevidence": "若工资上升且必需品更难，一般利润却上升或没有停在更低处。",
+    "queries": [
+      {
+        "role": "support",
+        "query": "British general rate of profit fell while real wages rose after 1817",
+        "precall_file": "audit/r2-new/precall/01.json"
+      },
+      {
+        "role": "counter",
+        "query": "British profit rate rose over the long run after real wages rose",
+        "precall_file": "audit/r2-new/precall/02.json"
+      }
+    ]
+  },
+  "select": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "max_urls": 8,
+    "urls": [],
+    "selected_for_score": [],
+    "url_gap": "这条的已存返回是precall和页文本或空的saved_pages。那些文件没有URL行。不编URL。不利材料若只有查询名、没有地址，不能装成名单。"
+  },
+  "assess": {
+    "id": "txt-099aaa16de-000145494-000145700",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "一般利润因工资上升、以及为增加的人口供应必需品愈难，而下降并逐渐停在更低水平。",
+    "reason": "这句在首包里被标成 unclear 后排除。它和利润下降是同一条可检验路径。法证没有专属链。本次 2026-11-20T11:58:40Z 起做了双向检索。Allen 写利润率升到十九世纪中叶后稳定，工资后来才上升。这不是“停在更低水平”的同句结果，也没有日。",
+    "limitation": "已有检索能复用的不再重搜。新检索只补法证未定位的方向或整条缺失。保存页的对象或日期不足，不计分。",
+    "evidence_ids": [],
+    "method": "按这句自己的对象、条件和窗口审查，不把倾向或条件句整类排除。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [],
+    "remaining_gap": "缺一般利润与工资、必需品困难同时成立的带日记录。",
+    "r2_reviewed_at": "2026-11-20T12:00:41Z",
+    "previous_verdict": "排除：非预测",
+    "change_reason": "按独立 QA 恢复进预测分母，先保持未知，不打分。"
+  },
+  "semantic_review": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "decision": "unresolved",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "unknown",
+      "time_alignment": "unknown",
+      "evidence_support": "unknown",
+      "counterevidence": "unknown",
+      "verdict_logic": "pass"
+    },
+    "check_reasons": {
+      "object_match": "评估要的是一般利润，不是某一个行业的利润。",
+      "condition_logic": "工资上升和必需品愈难没有与一般利润写在同一份带日材料里。",
+      "time_alignment": "没有源日期。观察终点留空。",
+      "evidence_support": "没有这三条合在一起的记录。",
+      "counterevidence": "反证查询是实际工资上升之后长期利润上升。没有URL，也没有把总利润率上升当成这句的一般利润。",
+      "verdict_logic": "合取未齐。暂无法判断没有收成趋势符合。"
+    },
+    "revision": "本轮六项没有fail，所以没有做那一次修订。判决保持暂无法判断。",
+    "remaining_gap": "还缺一般利润与工资、必需品困难同时成立的带日记录。"
+  },
+  "revision_trail": {
+    "previous_verdict": "排除：非预测",
+    "action": "r2",
+    "why": "按独立 QA 恢复进预测分母，先保持未知，不打分。",
+    "reviewed_at": "2026-11-20T12:00:41Z"
+  },
+  "previous_r2_plan": {
+    "reviewed_at": "2026-11-20T12:00:41Z",
+    "note": "当前审查。历史 precall 不是工具回显。"
+  },
+  "previous_r2_select": {
+    "note": "已有检索能复用的不再重搜。新检索只补法证未定位的方向或整条缺失。保存页的对象或日期不足，不计分。"
+  },
+  "previous_r2_semantic_review": {
+    "reviewed_at": "2026-11-20T12:00:41Z",
+    "object": "一般利润因工资上升、以及为增加的人口供应必需品愈难，而下降并逐渐停在更低水平。",
+    "condition": "unknown",
+    "window": "句子没有写出截止日。文件出版年代理是 1817，只到年。不能把别的年份收成 12 月 31 日。",
+    "counterevidence_limit": "缺一般利润与工资、必需品困难同时成立的带日记录。",
+    "checks": {
+      "object_match": "保存材料的对象与这句不完全相同，不能据此打分。",
+      "condition_logic": "条件若未在同一材料里成立，不用另一种情境代替。",
+      "time_alignment": "没有源日期，或只有年份。观察终点留空。",
+      "evidence_support": "支持材料不足以单独证明这句。",
+      "counterevidence": "反面材料也不足以单独证伪这句。",
+      "verdict_logic": "六项没有同时通过，判暂无法判断，不制造分数。"
+    },
+    "issues": [
+      "缺一般利润与工资、必需品困难同时成立的带日记录。"
+    ],
+    "decision": "暂无法判断"
+  }
+}

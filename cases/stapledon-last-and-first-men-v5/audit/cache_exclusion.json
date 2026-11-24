@@ -1,0 +1,11 @@
+{
+  "reason": "原管线请求、计划和checkpoint可能持有完整body/context，移至case外私有工作缓存，不入bundle；无删除、无文本改写。",
+  "moved_entries": 640,
+  "patterns": [
+    "*.request.json",
+    "*.response.json",
+    "*.plan.json",
+    "checkpoints/"
+  ],
+  "case_fulltext_removed": true
+}

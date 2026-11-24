@@ -1,0 +1,73 @@
+{
+  "id": "txt-099aaa16de-000398505-000398586",
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "困苦若紧跟着战争转为和平，维持劳动的基金是被引开而不是实质受损；暂时困苦之后，国家会重新走向繁荣。",
+    "reason": "同一窗口的页有偿债基金、战争借款和按年列出的增长率。没有一页在自己印出的日期上写出：困苦属于战争转和平，以及暂时困苦之后国家重新走向繁荣。",
+    "limitation": "年份和偿债基金都不是这句的繁荣结果。不把年份收成12月31日再写入 date。",
+    "evidence_ids": [],
+    "method": "把紧随战争转和平的困苦与资本真正减少分开，再看暂时困苦之后是否重新繁荣。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [],
+    "remaining_gap": "缺战争转为和平之后重新繁荣的同对象记录，以及该记录印出的日期。",
+    "id": "txt-099aaa16de-000398505-000398586"
+  },
+  "previous_r2_plan": null,
+  "previous_r2_select": null,
+  "previous_r2_semantic_review": null,
+  "plan": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "not_a_pre_search_plan": "这是2026-11-20的r3补写。r2里这栏若只有“当前审查”一句，那个时间保留在previous_r2_plan，不把本段倒签成检索之前。",
+    "object": "困苦若紧跟着战争转为和平，维持劳动的基金是被引开而不是实质受损；暂时困苦之后，国家重新走向繁荣。",
+    "condition": "困苦紧跟在战争转为和平之后。",
+    "observable": "基金是被引开还是受损，以及暂时困苦之后是否重新繁荣。",
+    "potential_counterevidence": "若战后困苦之后国家没有重新繁荣，或基金被证明实质受损。",
+    "queries": [
+      {
+        "role": "support",
+        "query": "British national income recovered after the Napoleonic wars",
+        "precall_file": "audit/r-batch4/precall/11.json"
+      },
+      {
+        "role": "counter",
+        "query": "Britain remained depressed for many years after 1815",
+        "precall_file": "audit/r-batch4/precall/12.json"
+      }
+    ]
+  },
+  "select": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "max_urls": 8,
+    "urls": [],
+    "selected_for_score": [],
+    "url_gap": "这条的已存返回是precall和页文本或空的saved_pages。那些文件没有URL行。不编URL。不利材料若只有查询名、没有地址，不能装成名单。"
+  },
+  "semantic_review": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "decision": "unresolved",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "unknown",
+      "time_alignment": "unknown",
+      "evidence_support": "unknown",
+      "counterevidence": "unknown",
+      "verdict_logic": "pass"
+    },
+    "check_reasons": {
+      "object_match": "评估要的是战后重新繁荣，不是1815年当年的萧条本身。",
+      "condition_logic": "没有材料把一段困苦明确写成紧跟战争转和平。评估没有用任何一次衰退填上。",
+      "time_alignment": "没有该记录印出的日期。观察终点留空。",
+      "evidence_support": "没有重新繁荣的同对象记录。",
+      "counterevidence": "反证查询是1815年后多年萧条。没有URL。多年萧条也不等于基金实质受损或此后没有繁荣。",
+      "verdict_logic": "条件未知且没有同对象结果。暂无法判断保持。"
+    },
+    "revision": "本轮六项没有fail，所以没有做那一次修订。判决保持暂无法判断。",
+    "remaining_gap": "还缺战争转为和平之后重新繁荣的同对象记录，以及该记录的日期。"
+  }
+}

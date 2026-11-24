@@ -1,0 +1,25 @@
+{
+  "rechecked_at": "2026-11-20T11:30:22Z",
+  "calls": "64 precalls, each with a return file. tool_call_id is null on every call.",
+  "not_researched": ["north", "colonies", "paper", "navy"],
+  "first_four_return_txt": "pc-north, pc-colonies, pc-paper, and pc-navy return txt files copy the earlier search-channel message. They are not a later summary. The byte archives for those calls are the tool-pages named in the return JSON.",
+  "later_returns": "For the other 28 pairs the return JSON records executed_at and either byte-copied tool page files or an empty page list. The search-channel message was not a downloadable file. No summary file was written in its place.",
+  "empty_page_lists": [
+    "firmness-support",
+    "firmness-counter",
+    "veto_caution-counter",
+    "nobility-support",
+    "nobility-counter",
+    "size-support",
+    "size-counter",
+    "amend_ease-counter",
+    "infallible-counter",
+    "powers-support"
+  ],
+  "verdicts": {"正确": 0, "部分符合": 0, "错误": 0, "暂无法判断": 32},
+  "powers": "The earlier 错误 is withdrawn. The count of ratifying legislatures is not the condition 'thought useful' and is not the object, organization versus the mass of powers.",
+  "bound_evidence": "north and military bind only the saved sentence that the document became official, and only as the disunion condition not being met. The consequence is not scored.",
+  "unbound": "Mismatched pages, Federalist reprints, later polls, rankings, veto counts, and state-reorganization amendments are archived as returns and are not bound as evidence.",
+  "receipt_response_sha256": "89d4dfd171dc13bda99e352df1fe6c98448da9c1ac6cdef84fe60f6a3414b703",
+  "receipt_input_claims_sha256": "4e76cf875d221bf605be8c18d370e59ab97ba007eec93f8fe4f9eca183242a3b"
+}

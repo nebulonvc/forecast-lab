@@ -1,0 +1,28 @@
+{
+  "id": "ffd255f5-7838-415f-b3de-fae84b54942d",
+  "object": "chat.completion",
+  "created": 1794201311,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-00027\",\"predictions\":[{\"quote\":\"没有新技术来消除竞争压力，停滞很可能爆发为冲突。万一爆发全球范围的冲突，停滞最终会演变为灭绝。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"没有新技术消除竞争压力时，停滞很可能爆发为冲突；若爆发全球冲突，停滞最终会演变为灭绝。\",\"expanded_claim\":\"如果没有新技术来消除竞争压力，全球稳定下的停滞很可能爆发为冲突；万一爆发全球范围的冲突，停滞最终会演变为灭绝。\",\"reference_resolutions\":[{\"expression\":\"新技术\",\"referent\":\"能消除竞争压力的新技术\",\"support_quote\":\"没有新技术来消除竞争压力\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"没有新技术来消除竞争压力；万一爆发全球范围的冲突\",\"method\":\"条件推演\",\"method_basis\":\"explicit\",\"reason\":\"原文以条件句预测停滞升级为冲突乃至灭绝。\"},{\"quote\":\"如果彻底衰落了，人类就没有未来可言。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"如果人类彻底衰落，就没有未来。\",\"expanded_claim\":\"如果人类文明彻底衰落了，人类就没有未来可言。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"如果彻底衰落了\",\"method\":\"条件推演\",\"method_basis\":\"explicit\",\"reason\":\"条件性判断，预测彻底衰落的后果。\"},{\"quote\":\"最佳状况是，经济竞争对每个人、每个公司而言都将史无前例的激烈。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"在最佳状况下，经济竞争对每个人和每个公司都将史无前例地激烈。\",\"expanded_claim\":\"即使真正的全球化稳定发展是可能的，最佳状况下，经济竞争对每个人、每个公司而言都将史无前例地激烈。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"即使真正的全球化稳定发展是可能的\",\"method\":\"条件推演\",\"method_basis\":\"explicit\",\"reason\":\"对未来经济竞争程度的预测。\"},{\"quote\":\"我们很难看到全球稳定能够无限存续。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"全球稳定很难无限存续。\",\"expanded_claim\":\"加上对稀有资源的争夺，我们很难看到全球稳定能够无限存续。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"加上对稀有资源的争夺\",\"method\":\"推断\",\"method_basis\":\"explicit\",\"reason\":\"对全球稳定持久性的否定性预测。\"},{\"quote\":\"奇点已经临近\",\"kind\":\"prediction\",\"speaker\":\"雷·库兹韦尔（转述）\",\"claim\":\"奇点已经临近，且不可避免。\",\"expanded_claim\":\"根据雷·库兹韦尔的说法，奇点已经临近，这是不可避免的，我们能做的就是做好接受的准备。\",\"reference_resolutions\":[{\"expression\":\"奇点\",\"referent\":\"人工智能超越人脑的未来\",\"support_quote\":\"坚信能够建立人工智能超越人脑的未来\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"趋势外推（摩尔定律及指数级增长）\",\"method_basis\":\"explicit\",\"reason\":\"转述库兹韦尔对未来奇点临近的预测。\"},{\"quote\":\"未来都不是自行发生的\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"未来不是自行发生的，取决于我们今天的抉择。\",\"expanded_claim\":\"无论有多少趋势可以追踪，未来都不是自行发生的；在无所作为和尽力而为两种最有可能的情景中做选择，取决于我们自己。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"对未来的判断，强调未来取决于人的选择。\"}]}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2884,
+    "completion_tokens": 880,
+    "total_tokens": 3764,
+    "prompt_tokens_details": {
+      "cached_tokens": 2688
+    },
+    "prompt_cache_hit_tokens": 2688,
+    "prompt_cache_miss_tokens": 196
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

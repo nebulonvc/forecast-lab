@@ -1,0 +1,71 @@
+{
+  "id": "txt-fb0f41f842-000042671-000042875",
+  "r3_revision": false,
+  "plan": {
+    "queries": [],
+    "note": "r3 不重研。QA 已认可的裁决保持，六项与现行裁决一致。"
+  },
+  "select": {
+    "urls": [],
+    "reason": "本轮没有新的同对象来源入选。没有把 executed 写成 true。"
+  },
+  "assess": {
+    "id": "txt-fb0f41f842-000042671-000042875",
+    "inclusion": "forecast",
+    "verdict": "正确",
+    "basis": "observed_window",
+    "scope": "随着商业增长，伦巴第街将越来越多地持有私人资金。",
+    "reason": "1926年百科补编该页写，到1914年股份银行的存款达到8.96亿英镑，分支大量增加。这是私人银行体系存款在出版后的大幅增加。",
+    "limitation": "页面没有1873年的对照基数，增加是从页内1890年代到1914年的叙述读出的方向。网页发布日未知。",
+    "evidence_ids": [
+      "ev-ws-banks-1926"
+    ],
+    "method": "用已存档公开正文核对对象和方向。",
+    "method_basis": "explicit",
+    "observation_end": "1914-12-31",
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-ws-banks-1926",
+        "quote": "deposits at £896,000,000",
+        "relation": "support",
+        "limitation": "页面没有1873年的对照基数，增加是从页内1890年代到1914年的叙述读出的方向。网页发布日未知。",
+        "observation_end": "1914-12-31",
+        "publication_date": null
+      }
+    ],
+    "remaining_gap": ""
+  },
+  "semantic_review": {
+    "id": "txt-fb0f41f842-000042671-000042875",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-ws-banks-1926"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-ws-banks-1926"
+      ],
+      "blocks_verdict": false
+    }
+  ]
+}

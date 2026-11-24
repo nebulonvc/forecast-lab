@@ -1,0 +1,28 @@
+{
+  "id": "b834c798-1ed3-4955-970e-5a961ec0a8ed",
+  "object": "chat.completion",
+  "created": 1794201593,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000082713-000082758\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为对截至2013年页岩气冲击清洁技术公司这一已发生事实的回顾性陈述，非未来预测。\",\"reason\":\"该句以2013年页岩气占美国天然气34%、天然气价格下跌70%等已发生数据为据，说明清洁技术公司已被摧毁，属回顾结论而非前瞻预测。\",\"limitation\":\"抽取将其标为预测，但原文时态与数据均指向已发生事实，故按非预测排除。\",\"evidence_ids\":[],\"method\":\"基于页岩气发展趋势的推断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000083662-000083706\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为关于如何选择项目和问题的规范性建议，未指向可检验的未来事件。\",\"reason\":\"“最好的项目可能是人们忽视的项目”是价值判断与方法论建议，不含可观测的未来结果或期限。\",\"limitation\":\"属建议性表述，无法操作化为可验证预测，故按非预测排除。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4914,
+    "completion_tokens": 329,
+    "total_tokens": 5243,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 4146
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

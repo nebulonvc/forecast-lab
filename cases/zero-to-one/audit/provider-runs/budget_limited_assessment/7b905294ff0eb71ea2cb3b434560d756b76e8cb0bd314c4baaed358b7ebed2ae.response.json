@@ -1,0 +1,28 @@
+{
+  "id": "a322a618-4999-440b-abc4-f77bc8941f48",
+  "object": "chat.completion",
+  "created": 1794201449,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000046052-000046131\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文以“希望”描述风险投资家在成功公司进入指数级增长后的目标期望，不是对具体基金结果的可检验预测；无具体基金、指标或可观察终点。\",\"reason\":\"该句是条件性期望/投资目标陈述，而非作者对实际结果的预测。\",\"limitation\":\"按原文语义归为非预测；不评估其期望是否实现。\",\"evidence_ids\":[],\"method\":\"条件性期望\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"几年的时间内\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4265,
+    "completion_tokens": 163,
+    "total_tokens": 4428,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3497
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "1a8be3c5-b0e7-4d81-8cc3-0e9aec621fb0",
+  "object": "chat.completion",
+  "created": 1794201446,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000036907-000036969\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"future\",\"scope\":\"判断对象为“中国人民生活水平完全赶上世界最富有国家”，无期限、无具体指标（未定义用PPP还是名义人均GDP/消费等）。观察窗口为出版年2014年至cutoff 2026-11-09，但无可用证据。\",\"reason\":\"原文给出的是无期限的长期判断，且“完全赶上”缺乏可操作化指标；提供的证据列表为空，无法核对任何实际观察。\",\"limitation\":\"未定义“生活水平”口径（人均GDP、PPP、消费或综合福利），也未给出期限；无证据不能凭模型记忆补结果。\",\"evidence_ids\":[],\"method\":\"资源约束与人口规模推演\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"未给出确切期限\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4333,
+    "completion_tokens": 217,
+    "total_tokens": 4550,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3565
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

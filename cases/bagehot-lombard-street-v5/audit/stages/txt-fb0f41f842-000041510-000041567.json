@@ -1,0 +1,45 @@
+{
+  "id": "txt-fb0f41f842-000041510-000041567",
+  "r3_revision": true,
+  "plan": {
+    "queries": [],
+    "note": "r3 撤回对象代理计分，本轮不新增检索。"
+  },
+  "select": {
+    "urls": [],
+    "reason": "本轮没有新的同对象来源入选。没有把 executed 写成 true。"
+  },
+  "assess": {
+    "id": "txt-fb0f41f842-000041510-000041567",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "伦敦作为欧洲唯一大型汇兑结算所的优势大概会保持。对象是汇兑结算所优势，不是世界金融之都。",
+    "reason": "原裁决“部分符合”用1914年后纽约超过伦敦、不再是世界金融之都。金融之都不是欧洲唯一大型汇兑结算所。没有同对象证据，撤回计分。",
+    "limitation": "存档写 after 1914, London was gradually overtaken by New York as financial capital of the world。这不是唯一汇兑结算所的优势是否保持。",
+    "evidence_ids": [],
+    "method": "撤回原部分符合。不把世界金融之都的更替当成汇兑结算所优势的证据。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [],
+    "remaining_gap": "缺与伦敦作为欧洲唯一大型汇兑结算所这一对象直接对应的截止日前正文。世界金融之都的更替不能填这个缺口。"
+  },
+  "semantic_review": {
+    "id": "txt-fb0f41f842-000041510-000041567",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": []
+}

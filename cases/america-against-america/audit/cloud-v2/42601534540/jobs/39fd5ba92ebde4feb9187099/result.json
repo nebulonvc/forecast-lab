@@ -1,0 +1,1010 @@
+{
+  "claim_id": "txt-1c4066fc0c-000225083-000225176",
+  "version": "search-verifier-v2",
+  "input_sha256": "21c1ddc4cc738d18c3bde25374150ccedd83725d51820204c9fe18142392ceed",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000225083-000225176",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "对象为美国父母承担养育子女责任是否因代际相传的个人主义文化难以重启而持续构成“未来的一个问题”；操作化为父母压力水平与照护投入时间趋势，观察期约1991年至2024年（HHS 2024报告覆盖过去十年及1985→2022照护时间；ATUS 2003–2023性别分工数据）。",
+    "reason": "自动复核未确认主要判断：原文的真实结构是“父母要真正承担养育责任，须战胜代际相传的个人主义文化；这种文化传承难以重启，这是未来的一个问题”。其中“战胜个人主义文化”是作者指出的困难/前提，而“未来的一个问题”是作者对家庭责任机制难以重启的后果判断。建议把“个人主义文化代际相传难以重启”当作必须直接检验的机制门槛，并因该机制缺证据而判暂无法判断；这实际上把作者的原因解释新增为结果成立的条件，违反“原因解释不自动成为额外if前提”的口径。原文并未设定“若不能证明文化路径依赖则预测不成立”的触发条件。; 建议的scope把可观察口径定为“父母压力水平与照护投入时间趋势”，但所引证据中HHS摘要只给出家长高压力比例与照护时长，ATUS/IFS材料只给出照护时间与性别差距，均未测量“养育责任是否持续构成显著困难/压力”这一结果本身，也未测量原文所指的文化路径依赖。更关键的是，建议以“未直接检验文化机制”为由判暂无法判断，却未说明在既定代理口径下压力与投入证据是否已足以支持一个有边界的判断；这属于用机制缺口替代结果证据缺口，证据与结论之间的对应关系不成立。; 建议一方面在scope中把结果操作化为“父母压力水平与照护投入时间趋势”，另一方面在reason中以“未直接检验个人主义文化代际相传难以重启这一机制”为由判暂无法判断。按统一口径，结果可观察而因果机制未获证明时，应评价结果并在limitation单列机制限制，不把因果识别额外加为结果成立的门槛。因此该暂无法判断的结论建立在被错误提升为门槛的机制缺口上，分类逻辑不成立；应改为在代理口径下评价压力/投入结果，并把文化机制作为limitation，或明确说明代理口径本身不能对应原文对象而需重新界定scope。",
+    "limitation": "压力与照护时间只是养育责任负担的代理指标，不能替代原文所指的文化路径依赖机制；部分来源日期不明或为智库简报，不能作为截止日前已实现结果的直接证据。关键修订：将原“部分符合”改为“暂无法判断”，因代理指标方向不能证明原文机制判断。",
+    "evidence_ids": [
+      "prior-d640916436429357b6d4",
+      "ev-e2cf24efaa512419cee65f54",
+      "ev-3fbc86c12575f3c462bb8587"
+    ],
+    "method": "从代际文化再生产推导家庭责任机制的路径依赖",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "未来",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-d640916436429357b6d4",
+        "relation": "boundary",
+        "quote": "HHS《Parents Under Pressure》记录过去十年家长持续更高压力：2023家长高压力33%、其他成人20%；1985→2022主要照护时间母亲8.4→11.8小时/周、父亲2.6→6.6小时/周。",
+        "publication_date": "2024",
+        "observation_end": "2024-12-31",
+        "limitation": "该摘录为已登记摘要，未展示完整报告正文；压力指标为自报高压力比例，非养育责任困难或文化机制的直接测量。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-e2cf24efaa512419cee65f54",
+        "relation": "boundary",
+        "quote": "Results for married individuals indicate that the historically large gender gap in total housework time narrowed further this century, from a women-to-men ratio of 1.8:1 in 2003–2005 to 1.6:1 in 2022–2023.",
+        "publication_date": "2025-02-06",
+        "observation_end": "2023-12-31",
+        "limitation": "该文聚焦家务与育儿时间的性别差距收敛，未直接测量父母压力或代际个人主义文化传承；且为作者手稿，部分结论统计不显著。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-3fbc86c12575f3c462bb8587",
+        "relation": "boundary",
+        "quote": "Fathers in America now spend an average of 7.8 hours per week taking care of their children at home, up by 1 hour per week in just about two decades.",
+        "publication_date": "2023-10-24",
+        "observation_end": "2022-12-31",
+        "limitation": "该报告为智库简报，数据基于ATUS 2021–2022合并样本；仅反映父亲照护时间上升，未覆盖母亲压力或文化机制。",
+        "publication_date_status": "unconfirmed_by_source_metadata",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      }
+    ],
+    "remaining_gap": "需修正condition_logic与verdict_logic：不得把“个人主义文化代际相传难以重启”这一原因解释新增为结果成立的门槛；应在既定代理口径（父母压力与照护投入）下评价结果是否支持原文“未来的一个问题”的判断，并把文化机制缺证据写入limitation而非作为暂无法判断的主要理由。若认为代理口径本身偏离原文对象，需在scope中明确说明偏离并给出重新界定，而不是以机制未检验替代结果判断。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000225083-000225176",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象为美国父母承担养育子女责任是否持续构成显著困难/压力；操作化为父母压力水平与照护投入时间趋势，观察期约1991年至2024年（HHS 2024报告覆盖过去十年及1985→2022照护时间；ATUS 2003–2023性别分工数据）。",
+    "reason": "HHS报告显示2023年家长高压力比例33%高于其他成人20%，且1985→2022母亲与父亲主要照护时间均上升，说明养育责任持续伴随较高压力与投入，方向与原文“未来问题”判断一致。但原文核心机制是代际个人主义文化难以重启，现有证据只覆盖压力与投入结果，未直接检验文化传承机制，故仅部分符合。",
+    "limitation": "证据为压力与时间投入的代理指标，未直接测量“个人主义文化代际相传”这一机制；且部分来源（ATUS 2025图表）日期不明，不能作为截止日前已实现结果。",
+    "evidence_ids": [
+      "prior-d640916436429357b6d4",
+      "ev-e2cf24efaa512419cee65f54",
+      "ev-3fbc86c12575f3c462bb8587"
+    ],
+    "method": "从代际文化再生产推导家庭责任机制的路径依赖",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-31",
+    "future_time_text": "未来",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-d640916436429357b6d4",
+        "relation": "support",
+        "quote": "HHS《Parents Under Pressure》记录过去十年家长持续更高压力：2023家长高压力33%、其他成人20%；1985→2022主要照护时间母亲8.4→11.8小时/周、父亲2.6→6.6小时/周。",
+        "publication_date": "2024",
+        "observation_end": "2024-12-31",
+        "limitation": "该摘录为已登记摘要，未展示完整报告正文；压力指标为自报高压力比例，非养育责任困难的直接测量。"
+      },
+      {
+        "evidence_id": "ev-e2cf24efaa512419cee65f54",
+        "relation": "support",
+        "quote": "Results for married individuals indicate that the historically large gender gap in total housework time narrowed further this century, from a women-to-men ratio of 1.8:1 in 2003–2005 to 1.6:1 in 2022–2023.",
+        "publication_date": "2025-02-06",
+        "observation_end": "2023-12-31",
+        "limitation": "该文聚焦家务与育儿时间的性别差距收敛，未直接测量父母压力或养育责任困难；且为作者手稿，部分结论（育儿时间差距变化）统计不显著。"
+      },
+      {
+        "evidence_id": "ev-3fbc86c12575f3c462bb8587",
+        "relation": "support",
+        "quote": "Fathers in America now spend an average of 7.8 hours per week taking care of their children at home, up by 1 hour per week in just about two decades.",
+        "publication_date": "2023-10-24",
+        "observation_end": "2022-12-31",
+        "limitation": "该报告为智库简报，数据基于ATUS 2021–2022合并样本；仅反映父亲照护时间上升，未覆盖母亲压力或文化机制。"
+      }
+    ],
+    "remaining_gap": "缺少直接检验“代际个人主义文化传承难以重启”这一机制的证据；现有材料只能支持养育责任持续伴随较高压力与投入的结果方向，无法验证文化路径依赖本身。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-d640916436429357b6d4",
+      "url": "https://www.hhs.gov/sites/default/files/parents-under-pressure.pdf",
+      "title": "ev-r2-l3-parent-stress",
+      "published_date": "2024",
+      "publication_date_precision": "year",
+      "publication_date_range": {
+        "earliest": "2024-01-01",
+        "latest": "2024-12-31"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-parent-stress",
+      "archive_sha256": "1ee74b9beecc8ee6e7933b9b957dc8b98be4c95ac657855995abce52b359c568",
+      "archive_path": "data/sources/r2-l3-open-parent-youth-skills.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e2cf24efaa512419cee65f54",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12026444/",
+      "resolved_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12026444/",
+      "title": "Who’s Doing the Housework and Childcare in America Now? Differential Convergence in Twenty-First-Century Gender Gaps in Home Tasks",
+      "published_date": "2025-02-06",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-02-06",
+        "latest": "2025-02-06"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:45.581580+00:00",
+      "archive_sha256": "95c682a16878a0ed4011d0d8022d35868603b1367a67d69b098618ab935e29a7",
+      "archive_path": "jobs/39fd5ba92ebde4feb9187099/95c682a16878a0ed4011d0d8022d35868603b1367a67d69b098618ab935e29a7.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-10afba9a353cb8734c34513a",
+      "url": "https://www.bls.gov/charts/american-time-use/activity-by-parent.htm",
+      "resolved_url": "https://www.bls.gov/charts/american-time-use/activity-by-parent.htm",
+      "title": "Average hours per day parents spent caring for and helping household children as their main activity",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:45.581704+00:00",
+      "archive_sha256": "9c81e7dc5514891f1ab474b8a4073721628b32ab3cf2084c602e1cdbcc29f27f",
+      "archive_path": "jobs/39fd5ba92ebde4feb9187099/9c81e7dc5514891f1ab474b8a4073721628b32ab3cf2084c602e1cdbcc29f27f.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-3fbc86c12575f3c462bb8587",
+      "url": "https://ifstudies.org/ifs-admin/resources/briefs/ifs-wang-fatherstimebrief-oct2023.pdf",
+      "resolved_url": "https://ifstudies.org/ifs-admin/resources/briefs/ifs-wang-fatherstimebrief-oct2023.pdf",
+      "title": "AMERICAN DADS ARE MORE INVOLVED THAN EVER",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:45.581821+00:00",
+      "archive_sha256": "bd3dfb0b2600154ad9b86ce592f2254184ff3c565f28e055946023cc2d21e629",
+      "archive_path": "jobs/39fd5ba92ebde4feb9187099/bd3dfb0b2600154ad9b86ce592f2254184ff3c565f28e055946023cc2d21e629.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-96aeab23413726f3ce56603b",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4858712/",
+      "resolved_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4858712/",
+      "title": "Family structure and trends in US fathers’ time with children, 2003–2013",
+      "published_date": "2015-10-26",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2015-10-26",
+        "latest": "2015-10-26"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:52.053711+00:00",
+      "archive_sha256": "8dafaec1b70f798e4051ef049dcc8d4d35e9e4dc9dbf8ea9d1a065cbbd0f14c0",
+      "archive_path": "jobs/39fd5ba92ebde4feb9187099/8dafaec1b70f798e4051ef049dcc8d4d35e9e4dc9dbf8ea9d1a065cbbd0f14c0.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-2b5a2d05608cce0a0ddfb14c",
+      "url": "https://www.bls.gov/tus/tables.htm",
+      "resolved_url": "https://www.bls.gov/tus/tables.htm",
+      "title": "American Time Use Survey Tables Page :  U.S. Bureau of Labor Statistics",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:52.053840+00:00",
+      "archive_sha256": "6cb6dca15404fc67400f99026002bf7dc74a052ec72798c118febbe53066117e",
+      "archive_path": "jobs/39fd5ba92ebde4feb9187099/6cb6dca15404fc67400f99026002bf7dc74a052ec72798c118febbe53066117e.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "HHS Parents Under Pressure 2024 parental stress compared with other adults United States",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "American Time Use Survey parental childcare time trend United States fathers mothers",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "HHS Parents Under Pressure 2024 parental stress compared with other adults United States",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "American Time Use Survey parental childcare time trend United States fathers mothers 2003 2023",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-3fbc86c12575f3c462bb8587"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "model_publication_date_not_verified",
+      "evidence_ids": [
+        "ev-3fbc86c12575f3c462bb8587"
+      ]
+    }
+  ],
+  "remaining_gap": "需修正condition_logic与verdict_logic：不得把“个人主义文化代际相传难以重启”这一原因解释新增为结果成立的门槛；应在既定代理口径（父母压力与照护投入）下评价结果是否支持原文“未来的一个问题”的判断，并把文化机制缺证据写入limitation而非作为暂无法判断的主要理由。若认为代理口径本身偏离原文对象，需在scope中明确说明偏离并给出重新界定，而不是以机制未检验替代结果判断。",
+  "source_statuses": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12026444/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.bls.gov/charts/american-time-use/activity-by-parent.htm",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://ifstudies.org/ifs-admin/resources/briefs/ifs-wang-fatherstimebrief-oct2023.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4858712/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.bls.gov/tus/tables.htm",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "对象：美国父母在1991年后承担养育子女责任是否持续构成显著困难/压力，以父母压力相对其他成人及照护投入为可观察口径；条件：原文未设明确触发条件，按无条件未来判断处理；反证：若父母压力不高于其他成人或照护投入下降，则削弱该判断。不将“克服代际相传的个人主义文化”作为结果成立门槛，仅作机制限制。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "22d622bbf7b71c5648cd02fefcc790ed726ef94ba63c23eae3fa34066dc053a7"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "7ba2bbd42fe4c09bb72cc1c6d8b5f680",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "bf3e52d39e6383e247c926cd030835b5",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "08682b3cd55b77de5fec9262dbfd277258a030c0fcd4f3665174fb484ae23e4b"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "772aa128b00b8b1077bfd561140aada7",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "49bac95eed2267c25b4ba88ed930c0b587123e5a2e04112dbb1ddfafbd6c3284"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "7ba2bbd42fe4c09bb72cc1c6d8b5f680",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "a596d573423a1bcd816d48cdadf36cdd",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "ae1d833b6272a8cf9cb3853f2cb8476b19ca9ca3ae7e1d54b7fa209c2d7cd4b1"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "b7198b6a21c92c69a5647267c874e699",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "249b5679c829b29957e50fc63984879f40c69310f12ff7721bdb4a7a60441e9e"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "56df236781d9938a51be85af6a30ba86dbb0e3edd19e79df54093fddadbf62a5"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "54279e7c53ffb0b1664ce08b971da8836af02cfb026ad3d3ce05cb8e4f423828"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "663303bae55ea46ab58f6859afe495745b0a42c967e6fa42a9c331734461ad44"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "legacy_nohint",
+      "request_sha256": "ce58961c9b84f196d1363c5cd7b2eac94348d68b5e005a28d890300423877c11"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "legacy_hint",
+      "request_sha256": "e6fc44ef68b5595f6e7e6a6a6bdd245225a7ba5a23292a58f84a25c3cdf9edd1"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "shared_hint",
+      "request_sha256": "d104d72019322f7b575bdbb859b85b13d44177b04ba48b9a8dbaf00326ae3059"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-3fbc86c12575f3c462bb8587"
+          ],
+          "blocks_verdict": false
+        },
+        {
+          "code": "model_publication_date_not_verified",
+          "evidence_ids": [
+            "ev-3fbc86c12575f3c462bb8587"
+          ]
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-3fbc86c12575f3c462bb8587"
+          ],
+          "blocks_verdict": false
+        },
+        {
+          "code": "model_publication_date_not_verified",
+          "evidence_ids": [
+            "ev-3fbc86c12575f3c462bb8587"
+          ]
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-d640916436429357b6d4",
+        "source_bytes": 205,
+        "shown_bytes": 205,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-e2cf24efaa512419cee65f54",
+        "source_bytes": 12086,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-10afba9a353cb8734c34513a",
+        "source_bytes": 2395,
+        "shown_bytes": 2395,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-3fbc86c12575f3c462bb8587",
+        "source_bytes": 12070,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-96aeab23413726f3ce56603b",
+        "source_bytes": 12060,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-2b5a2d05608cce0a0ddfb14c",
+        "source_bytes": 4236,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-d640916436429357b6d4",
+        "source_bytes": 205,
+        "shown_bytes": 205,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-e2cf24efaa512419cee65f54",
+        "source_bytes": 12086,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-10afba9a353cb8734c34513a",
+        "source_bytes": 2395,
+        "shown_bytes": 2395,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-3fbc86c12575f3c462bb8587",
+        "source_bytes": 12070,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-96aeab23413726f3ce56603b",
+        "source_bytes": 12060,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-2b5a2d05608cce0a0ddfb14c",
+        "source_bytes": 4236,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-d640916436429357b6d4",
+        "source_bytes": 205,
+        "shown_bytes": 205,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-e2cf24efaa512419cee65f54",
+        "source_bytes": 12086,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-10afba9a353cb8734c34513a",
+        "source_bytes": 2395,
+        "shown_bytes": 2395,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-3fbc86c12575f3c462bb8587",
+        "source_bytes": 12070,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-96aeab23413726f3ce56603b",
+        "source_bytes": 12060,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-2b5a2d05608cce0a0ddfb14c",
+        "source_bytes": 4236,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-d640916436429357b6d4",
+        "source_bytes": 205,
+        "shown_bytes": 205,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-e2cf24efaa512419cee65f54",
+        "source_bytes": 12086,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-10afba9a353cb8734c34513a",
+        "source_bytes": 2395,
+        "shown_bytes": 2395,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-3fbc86c12575f3c462bb8587",
+        "source_bytes": 12070,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-96aeab23413726f3ce56603b",
+        "source_bytes": 12060,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-2b5a2d05608cce0a0ddfb14c",
+        "source_bytes": 4236,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 3,
+  "review_audit": {
+    "selected": true,
+    "arms": {
+      "shared_nohint": {
+        "status": "completed",
+        "common_input_sha256": "e1edac0a53a2454cfe934162ec6c3ce0f747f31aa88c0cc5a78267e1571126f0",
+        "schema_repaired": false,
+        "review": {
+          "id": "txt-1c4066fc0c-000225083-000225176",
+          "decision": "revise",
+          "checks": {
+            "object_match": "pass",
+            "condition_logic": "pass",
+            "time_alignment": "pass",
+            "evidence_support": "pass",
+            "counterevidence": "pass",
+            "verdict_logic": "fail"
+          },
+          "issues": [
+            {
+              "check": "verdict_logic",
+              "reason": "原文的核心判断是：父母要真正承担养育责任，必须克服代际相传的个人主义文化，而这一文化传承难以重启，因此构成“未来的一个问题”。建议把“父母压力高、照护投入上升”当作该判断的结果方向，并据此判为“部分符合”。但压力高和投入上升恰恰说明父母在承担养育责任，并不等于“克服个人主义文化难以重启”这一机制问题已经实现或部分实现。建议自己也承认现有证据“未直接检验文化传承机制”，却仍给出“部分符合”，这属于用代理指标替代原文对象，并把机制未获证明当作部分实现。按口径，关键机制或主要结果缺证据时应保留“暂无法判断”，不能仅凭压力与投入的方向就判为部分符合。",
+              "source_quote": "父母要真正承担养育子女的责任，是一个不小的挑战，即战胜他们",
+              "evidence_id": null,
+              "quote_origin": "book"
+            },
+            {
+              "check": "verdict_logic",
+              "reason": "建议把“部分符合”的理由写成“方向与原文‘未来问题’判断一致，但未检验文化机制”。这混淆了结果符合与机制解释：原文的“未来问题”正是指文化传承难以重启这一机制性困难，而不是泛指父母压力或照护投入。若机制未被检验，就不能说结果方向已符合；应改为“暂无法判断”，并说明缺的是对代际个人主义文化传承是否难以重启的直接证据。",
+              "source_quote": "自身从小形成的个人主义（不是贬意的，而是指一种文化现象），这种文化现象代",
+              "evidence_id": null,
+              "quote_origin": "book"
+            }
+          ],
+          "remaining_gap": "需把结论从“部分符合”改为“暂无法判断”，或补充能直接检验“代际个人主义文化传承难以重启”这一机制的证据；现有压力与照护时间材料只能说明父母承担养育责任伴随压力与投入，不能证明原文所指的文化路径依赖问题已经实现或部分实现。"
+        },
+        "request_sha256": "56df236781d9938a51be85af6a30ba86dbb0e3edd19e79df54093fddadbf62a5",
+        "prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+      },
+      "legacy_nohint": {
+        "status": "completed",
+        "schema_repaired": false,
+        "common_input_sha256": "e1edac0a53a2454cfe934162ec6c3ce0f747f31aa88c0cc5a78267e1571126f0",
+        "primary_material_sha256": "e1edac0a53a2454cfe934162ec6c3ce0f747f31aa88c0cc5a78267e1571126f0",
+        "request_sha256": "ce58961c9b84f196d1363c5cd7b2eac94348d68b5e005a28d890300423877c11",
+        "prompt_sha256": "fe64d20b3d3cb81be0d11d63babe30487df93edf8a719de208973c011e3151b0",
+        "primary_schema_repaired": false,
+        "same_protocol_as_primary": true,
+        "review": {
+          "id": "txt-1c4066fc0c-000225083-000225176",
+          "decision": "revise",
+          "checks": {
+            "object_match": "fail",
+            "condition_logic": "pass",
+            "time_alignment": "pass",
+            "evidence_support": "fail",
+            "counterevidence": "pass",
+            "verdict_logic": "fail"
+          },
+          "issues": [
+            {
+              "check": "object_match",
+              "reason": "原文对象是“父母要真正承担养育子女的责任”这一挑战，核心在于战胜代际相传的个人主义文化、选择新开端极不容易；研究口径把它替换成“父母压力水平与照护投入时间趋势”，这是另一个可观察现象，不是原文特定对象或成果集合。照护时间上升甚至可能表示责任承担增强，与“承担责任的挑战”方向并不等同。",
+              "source_quote": "父母要真正承担养育子女的责任，是一个不小的挑战，即战胜他们",
+              "evidence_id": null,
+              "quote_origin": "book"
+            },
+            {
+              "check": "evidence_support",
+              "reason": "所引HHS摘要只给出家长高压力比例与照护时间上升，并未证明“代际个人主义文化难以重启”或“承担养育责任持续构成显著困难”；照护时间上升本身不能支撑责任承担困难，反而可能削弱该口径。ev-e2cf24efaa512419cee65f54聚焦家务与育儿时间的性别差距收敛，与父母责任困难无直接对应；ev-3fbc86c12575f3c462bb8587仅显示父亲照护时间上升，同样不证明困难持续。",
+              "source_quote": "HHS《Parents Under Pressure》记录过去十年家长持续更高压力：2023家长高压力33%、其他成人20%；1985→2022主要照护时间母亲8.4→11.8小时/周、父亲2.6→6.6小时/周。",
+              "evidence_id": "prior-d640916436429357b6d4",
+              "quote_origin": "evidence"
+            },
+            {
+              "check": "verdict_logic",
+              "reason": "建议以“压力与投入方向一致”判为部分符合，但原文主要可检验结果是“代际个人主义文化传承难以重启、构成未来问题”，现有证据未检验该机制；同时把照护投入上升当作支持，口径方向可疑。按现有材料应保留为具体未定（机制未检验、对象口径不匹配），而非部分符合。",
+              "source_quote": "HHS报告显示2023年家长高压力比例33%高于其他成人20%，且1985→2022母亲与父亲主要照护时间均上升，说明养育责任持续伴随较高压力与投入，方向与原文“未来问题”判断一致。",
+              "evidence_id": null,
+              "quote_origin": "proposal"
+            }
+          ],
+          "remaining_gap": "需把评估对象改回原文的“承担养育责任需克服代际个人主义文化、文化传承难以重启”这一机制，并取得直接检验该机制或父母责任困难（而非仅压力比例与照护时间上升）的证据；若无法取得，应保留为具体未定而非部分符合。"
+        }
+      },
+      "legacy_hint": {
+        "status": "completed",
+        "schema_repaired": false,
+        "common_input_sha256": "e1edac0a53a2454cfe934162ec6c3ce0f747f31aa88c0cc5a78267e1571126f0",
+        "primary_material_sha256": "e1edac0a53a2454cfe934162ec6c3ce0f747f31aa88c0cc5a78267e1571126f0",
+        "request_sha256": "e6fc44ef68b5595f6e7e6a6a6bdd245225a7ba5a23292a58f84a25c3cdf9edd1",
+        "prompt_sha256": "fe64d20b3d3cb81be0d11d63babe30487df93edf8a719de208973c011e3151b0",
+        "primary_schema_repaired": false,
+        "same_protocol_as_primary": true,
+        "review": {
+          "id": "txt-1c4066fc0c-000225083-000225176",
+          "decision": "revise",
+          "checks": {
+            "object_match": "fail",
+            "condition_logic": "pass",
+            "time_alignment": "pass",
+            "evidence_support": "fail",
+            "counterevidence": "pass",
+            "verdict_logic": "fail"
+          },
+          "issues": [
+            {
+              "check": "object_match",
+              "reason": "原文对象是“父母要真正承担养育子女的责任”这一责任承担/养育实践，并把它界定为战胜代际相传的个人主义文化这一挑战；建议把对象改成“养育责任是否持续构成显著困难/压力”，以父母压力与照护投入为口径，属于把原文的机制性挑战替换成另一个可观察现象，未证明压力与投入就是原文所说的责任承担困难。",
+              "quote_ref": "q0",
+              "source_quote": "父母要真正承担养育子女的责任，是一个不小的挑战，即战胜他们",
+              "evidence_id": null,
+              "quote_resolution": "program_supplied_verbatim_option",
+              "quote_origin": "book"
+            },
+            {
+              "check": "evidence_support",
+              "reason": "所引ATUS性别分工论文的主要结果是夫妻家务时间性别差距收窄（1.8:1→1.6:1），育儿时间差距变化统计不显著；它并不支持“养育责任持续伴随较高压力与投入”这一主要结果，建议却将其列为support，属于用不同指标的分项趋势支撑声明范围。",
+              "quote_ref": "q5",
+              "source_quote": "Results for married individuals indicate that the historically large gender gap in total housework time narrowed further this century, from a women-to-men ratio",
+              "evidence_id": "ev-e2cf24efaa512419cee65f54",
+              "quote_resolution": "program_supplied_verbatim_option",
+              "quote_origin": "evidence"
+            },
+            {
+              "check": "verdict_logic",
+              "reason": "建议以“压力与投入方向一致”判为部分符合，但原文的核心可检验判断是代际个人主义文化使父母真正承担责任困难、构成未来问题；现有材料未检验该机制，也未给出后果B哪些具体部分实现、哪些未实现。把“机制未检验”当作部分符合，混淆了证据缺口与结果部分实现，应保留为具体未定而非部分符合。",
+              "quote_ref": "q3",
+              "source_quote": "HHS报告显示2023年家长高压力比例33%高于其他成人20%，且1985→2022母亲与父亲主要照护时间均上升，说明养育责任持续伴随较高压力与投入，方向与原文“未来问题”判断一致。",
+              "evidence_id": null,
+              "quote_resolution": "program_supplied_verbatim_option",
+              "quote_origin": "proposal"
+            }
+          ],
+          "remaining_gap": "需把评估对象改回原文的“父母真正承担养育责任受代际个人主义文化阻碍”这一挑战，并取得直接检验该文化传承机制或责任承担困难的材料；若无法取得，应判为具体未定，而不是以父母压力/照护投入的混合趋势判部分符合。"
+        }
+      },
+      "shared_hint": {
+        "status": "completed",
+        "schema_repaired": false,
+        "common_input_sha256": "e1edac0a53a2454cfe934162ec6c3ce0f747f31aa88c0cc5a78267e1571126f0",
+        "primary_material_sha256": "e1edac0a53a2454cfe934162ec6c3ce0f747f31aa88c0cc5a78267e1571126f0",
+        "request_sha256": "d104d72019322f7b575bdbb859b85b13d44177b04ba48b9a8dbaf00326ae3059",
+        "prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1",
+        "primary_schema_repaired": false,
+        "same_protocol_as_primary": true,
+        "review": {
+          "id": "txt-1c4066fc0c-000225083-000225176",
+          "decision": "revise",
+          "checks": {
+            "object_match": "fail",
+            "condition_logic": "pass",
+            "time_alignment": "pass",
+            "evidence_support": "fail",
+            "counterevidence": "pass",
+            "verdict_logic": "fail"
+          },
+          "issues": [
+            {
+              "check": "object_match",
+              "reason": "原文对象是“父母要真正承担养育子女的责任”这一责任承担/养育实践，并把它描述为需要战胜代际个人主义文化的挑战；建议把对象改成“养育责任是否持续构成显著困难/压力”，以父母压力与照护投入为口径。压力与照护时间上升并不等同于“真正承担养育责任”这一对象，属于代理改变对象。",
+              "quote_ref": "q0",
+              "source_quote": "父母要真正承担养育子女的责任，是一个不小的挑战，即战胜他们",
+              "evidence_id": null,
+              "quote_resolution": "program_supplied_verbatim_option",
+              "quote_origin": "book"
+            },
+            {
+              "check": "evidence_support",
+              "reason": "HHS摘录只给出2023年家长高压力比例33%与其他成人20%，以及1985→2022照护时间上升；它没有证明“养育责任持续构成显著困难/压力”这一持续趋势，也没有证明原文所说的代际个人主义文化难以重启。把单年横截面压力差与照护时间上升当作支持“未来问题”判断，证据范围不足。",
+              "quote_ref": "q4",
+              "source_quote": "HHS《Parents Under Pressure》记录过去十年家长持续更高压力：2023家长高压力33%、其他成人20%；1985→2022主要照护时间母亲8.4→11.8小时/周、父亲2.6→6.6小时/周。",
+              "evidence_id": "prior-d640916436429357b6d4",
+              "quote_resolution": "program_supplied_verbatim_option",
+              "quote_origin": "evidence"
+            },
+            {
+              "check": "verdict_logic",
+              "reason": "建议以“未直接检验文化传承机制”为由判部分符合，但原文的主要可检验结果正是代际个人主义文化使真正承担养育责任困难这一机制；现有材料只覆盖压力与投入代理，未覆盖该主要结果。按口径，关键对象/主要结果缺证据应保留暂无法判断，而不是因机制未检验就降为部分符合；且“部分符合”未指出后果B哪些具体部分实现、哪些未实现。",
+              "quote_ref": "q3",
+              "source_quote": "HHS报告显示2023年家长高压力比例33%高于其他成人20%，且1985→2022母亲与父亲主要照护时间均上升，说明养育责任持续伴随较高压力与投入，方向与原文“未来问题”判断一致。",
+              "evidence_id": null,
+              "quote_resolution": "program_supplied_verbatim_option",
+              "quote_origin": "proposal"
+            }
+          ],
+          "remaining_gap": "需补充能直接对应“父母真正承担养育责任”且能检验代际个人主义文化传承是否使该责任承担持续困难的证据；若无法取得，应把结论改为暂无法判断，并说明压力/照护时间只是不同对象的代理，不能支撑部分符合。"
+        }
+      }
+    }
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000225083-000225176",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "verdict_logic",
+          "reason": "原文的核心判断是：父母要真正承担养育责任，必须克服代际相传的个人主义文化，而这一文化传承难以重启，因此构成“未来的一个问题”。建议把“父母压力高、照护投入上升”当作该判断的结果方向，并据此判为“部分符合”。但压力高和投入上升恰恰说明父母在承担养育责任，并不等于“克服个人主义文化难以重启”这一机制问题已经实现或部分实现。建议自己也承认现有证据“未直接检验文化传承机制”，却仍给出“部分符合”，这属于用代理指标替代原文对象，并把机制未获证明当作部分实现。按口径，关键机制或主要结果缺证据时应保留“暂无法判断”，不能仅凭压力与投入的方向就判为部分符合。",
+          "source_quote": "父母要真正承担养育子女的责任，是一个不小的挑战，即战胜他们",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议把“部分符合”的理由写成“方向与原文‘未来问题’判断一致，但未检验文化机制”。这混淆了结果符合与机制解释：原文的“未来问题”正是指文化传承难以重启这一机制性困难，而不是泛指父母压力或照护投入。若机制未被检验，就不能说结果方向已符合；应改为“暂无法判断”，并说明缺的是对代际个人主义文化传承是否难以重启的直接证据。",
+          "source_quote": "自身从小形成的个人主义（不是贬意的，而是指一种文化现象），这种文化现象代",
+          "evidence_id": null,
+          "quote_origin": "book"
+        }
+      ],
+      "remaining_gap": "需把结论从“部分符合”改为“暂无法判断”，或补充能直接检验“代际个人主义文化传承难以重启”这一机制的证据；现有压力与照护时间材料只能说明父母承担养育责任伴随压力与投入，不能证明原文所指的文化路径依赖问题已经实现或部分实现。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000225083-000225176",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原文的真实结构是“父母要真正承担养育责任，须战胜代际相传的个人主义文化；这种文化传承难以重启，这是未来的一个问题”。其中“战胜个人主义文化”是作者指出的困难/前提，而“未来的一个问题”是作者对家庭责任机制难以重启的后果判断。建议把“个人主义文化代际相传难以重启”当作必须直接检验的机制门槛，并因该机制缺证据而判暂无法判断；这实际上把作者的原因解释新增为结果成立的条件，违反“原因解释不自动成为额外if前提”的口径。原文并未设定“若不能证明文化路径依赖则预测不成立”的触发条件。",
+          "source_quote": "父母要真正承担养育子女的责任，是一个不小的挑战，即战胜他们\n自身从小形成的个人主义（不是贬意的，而是指一种文化现象），这种文化现象代\n代相传，要选择新的开端极不容易，这是未来的一个问题。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议的scope把可观察口径定为“父母压力水平与照护投入时间趋势”，但所引证据中HHS摘要只给出家长高压力比例与照护时长，ATUS/IFS材料只给出照护时间与性别差距，均未测量“养育责任是否持续构成显著困难/压力”这一结果本身，也未测量原文所指的文化路径依赖。更关键的是，建议以“未直接检验文化机制”为由判暂无法判断，却未说明在既定代理口径下压力与投入证据是否已足以支持一个有边界的判断；这属于用机制缺口替代结果证据缺口，证据与结论之间的对应关系不成立。",
+          "source_quote": "父母要真正承担养育子女的责任，是一个不小的挑战，即战胜他们\n自身从小形成的个人主义（不是贬意的，而是指一种文化现象），这种文化现象代\n代相传，要选择新的开端极不容易，这是未来的一个问题。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议一方面在scope中把结果操作化为“父母压力水平与照护投入时间趋势”，另一方面在reason中以“未直接检验个人主义文化代际相传难以重启这一机制”为由判暂无法判断。按统一口径，结果可观察而因果机制未获证明时，应评价结果并在limitation单列机制限制，不把因果识别额外加为结果成立的门槛。因此该暂无法判断的结论建立在被错误提升为门槛的机制缺口上，分类逻辑不成立；应改为在代理口径下评价压力/投入结果，并把文化机制作为limitation，或明确说明代理口径本身不能对应原文对象而需重新界定scope。",
+          "source_quote": "原文核心判断是父母要真正承担养育责任须克服代际相传的个人主义文化，而这一文化传承难以重启，故构成未来问题。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正condition_logic与verdict_logic：不得把“个人主义文化代际相传难以重启”这一原因解释新增为结果成立的门槛；应在既定代理口径（父母压力与照护投入）下评价结果是否支持原文“未来的一个问题”的判断，并把文化机制缺证据写入limitation而非作为暂无法判断的主要理由。若认为代理口径本身偏离原文对象，需在scope中明确说明偏离并给出重新界定，而不是以机制未检验替代结果判断。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000225083-000225176",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象为美国父母承担养育子女责任是否持续构成显著困难/压力；操作化为父母压力水平与照护投入时间趋势，观察期约1991年至2024年（HHS 2024报告覆盖过去十年及1985→2022照护时间；ATUS 2003–2023性别分工数据）。",
+      "reason": "HHS报告显示2023年家长高压力比例33%高于其他成人20%，且1985→2022母亲与父亲主要照护时间均上升，说明养育责任持续伴随较高压力与投入，方向与原文“未来问题”判断一致。但原文核心机制是代际个人主义文化难以重启，现有证据只覆盖压力与投入结果，未直接检验文化传承机制，故仅部分符合。",
+      "limitation": "证据为压力与时间投入的代理指标，未直接测量“个人主义文化代际相传”这一机制；且部分来源（ATUS 2025图表）日期不明，不能作为截止日前已实现结果。",
+      "evidence_ids": [
+        "prior-d640916436429357b6d4",
+        "ev-e2cf24efaa512419cee65f54",
+        "ev-3fbc86c12575f3c462bb8587"
+      ],
+      "method": "从代际文化再生产推导家庭责任机制的路径依赖",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "未来",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-d640916436429357b6d4",
+          "relation": "support",
+          "quote": "HHS《Parents Under Pressure》记录过去十年家长持续更高压力：2023家长高压力33%、其他成人20%；1985→2022主要照护时间母亲8.4→11.8小时/周、父亲2.6→6.6小时/周。",
+          "publication_date": "2024",
+          "observation_end": "2024-12-31",
+          "limitation": "该摘录为已登记摘要，未展示完整报告正文；压力指标为自报高压力比例，非养育责任困难的直接测量。"
+        },
+        {
+          "evidence_id": "ev-e2cf24efaa512419cee65f54",
+          "relation": "support",
+          "quote": "Results for married individuals indicate that the historically large gender gap in total housework time narrowed further this century, from a women-to-men ratio of 1.8:1 in 2003–2005 to 1.6:1 in 2022–2023.",
+          "publication_date": "2025-02-06",
+          "observation_end": "2023-12-31",
+          "limitation": "该文聚焦家务与育儿时间的性别差距收敛，未直接测量父母压力或养育责任困难；且为作者手稿，部分结论（育儿时间差距变化）统计不显著。"
+        },
+        {
+          "evidence_id": "ev-3fbc86c12575f3c462bb8587",
+          "relation": "support",
+          "quote": "Fathers in America now spend an average of 7.8 hours per week taking care of their children at home, up by 1 hour per week in just about two decades.",
+          "publication_date": "2023-10-24",
+          "observation_end": "2022-12-31",
+          "limitation": "该报告为智库简报，数据基于ATUS 2021–2022合并样本；仅反映父亲照护时间上升，未覆盖母亲压力或文化机制。"
+        }
+      ],
+      "remaining_gap": "缺少直接检验“代际个人主义文化传承难以重启”这一机制的证据；现有材料只能支持养育责任持续伴随较高压力与投入的结果方向，无法验证文化路径依赖本身。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000225083-000225176",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "对象为美国父母承担养育子女责任是否因代际相传的个人主义文化难以重启而持续构成“未来的一个问题”；操作化为父母压力水平与照护投入时间趋势，观察期约1991年至2024年（HHS 2024报告覆盖过去十年及1985→2022照护时间；ATUS 2003–2023性别分工数据）。",
+      "reason": "原文核心判断是父母要真正承担养育责任须克服代际相传的个人主义文化，而这一文化传承难以重启，故构成未来问题。现有证据只显示家长压力高于其他成人、照护时间上升，未直接检验“个人主义文化代际相传难以重启”这一机制，也未证明该机制问题已实现或部分实现，故按关键机制缺证据保留暂无法判断。",
+      "limitation": "压力与照护时间只是养育责任负担的代理指标，不能替代原文所指的文化路径依赖机制；部分来源日期不明或为智库简报，不能作为截止日前已实现结果的直接证据。关键修订：将原“部分符合”改为“暂无法判断”，因代理指标方向不能证明原文机制判断。",
+      "evidence_ids": [
+        "prior-d640916436429357b6d4",
+        "ev-e2cf24efaa512419cee65f54",
+        "ev-3fbc86c12575f3c462bb8587"
+      ],
+      "method": "从代际文化再生产推导家庭责任机制的路径依赖",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "未来",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-d640916436429357b6d4",
+          "relation": "boundary",
+          "quote": "HHS《Parents Under Pressure》记录过去十年家长持续更高压力：2023家长高压力33%、其他成人20%；1985→2022主要照护时间母亲8.4→11.8小时/周、父亲2.6→6.6小时/周。",
+          "publication_date": "2024",
+          "observation_end": "2024-12-31",
+          "limitation": "该摘录为已登记摘要，未展示完整报告正文；压力指标为自报高压力比例，非养育责任困难或文化机制的直接测量。"
+        },
+        {
+          "evidence_id": "ev-e2cf24efaa512419cee65f54",
+          "relation": "boundary",
+          "quote": "Results for married individuals indicate that the historically large gender gap in total housework time narrowed further this century, from a women-to-men ratio of 1.8:1 in 2003–2005 to 1.6:1 in 2022–2023.",
+          "publication_date": "2025-02-06",
+          "observation_end": "2023-12-31",
+          "limitation": "该文聚焦家务与育儿时间的性别差距收敛，未直接测量父母压力或代际个人主义文化传承；且为作者手稿，部分结论统计不显著。"
+        },
+        {
+          "evidence_id": "ev-3fbc86c12575f3c462bb8587",
+          "relation": "boundary",
+          "quote": "Fathers in America now spend an average of 7.8 hours per week taking care of their children at home, up by 1 hour per week in just about two decades.",
+          "publication_date": "2023-10-24",
+          "observation_end": "2022-12-31",
+          "limitation": "该报告为智库简报，数据基于ATUS 2021–2022合并样本；仅反映父亲照护时间上升，未覆盖母亲压力或文化机制。"
+        }
+      ],
+      "remaining_gap": "缺少直接检验“代际个人主义文化传承难以重启”这一机制的证据；现有材料只能说明养育责任伴随较高压力与投入，无法验证原文所指的文化路径依赖问题是否已实现或部分实现。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "对象：美国父母在1991年后承担养育子女责任是否持续构成显著困难/压力（以父母压力与照护投入为可观察口径）；条件：原文未设明确触发条件，按无条件未来判断处理；反证：若父母压力不高于其他成人或照护投入下降，则削弱该判断。不将“克服个人主义文化”作为结果成立门槛，仅作机制限制。",
+  "elapsed_seconds": 36.646,
+  "completed_at": "2026-11-09T10:35:13.980088+00:00"
+}

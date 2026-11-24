@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000536170-000536316",
+  "plan": {
+    "object": "国家和政府。命运强，是因为人弱；她一变，国家和政府就跟着变。",
+    "condition": "until some one arise, who, following reverently the example of the ancients, shall so control her。停止的条件是有人恭敬跟随古人并把命运控制住，使她不能每个太阳周转都重新显示力量。",
+    "quantifier": "will continue to change，并且 with every revolution of the sun。世纪尺度上此起彼伏，不等于每个太阳周转都有惊人的得失交替。",
+    "result": "登记变化是 will continue to change。变化要继续，直到那个跟随古人的人出现。",
+    "window": "1531至2026-11-15。奥古斯都早于1531。",
+    "counterevidence_needed": "一个恭敬跟随古人榜样的人已经把命运控制住，国家和政府不再随每次太阳周转而大起大落。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "European states alternated between sudden gains and losses of power after 1531",
+      "counter_query": "ruler revived ancient Roman institutions and his state no longer suffered sudden reversals"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://cupola.gettysburg.edu/contemporary_sec9/3"],
+    "dropped": "奥古斯都恢复共和国形式是公元前，不能用来说1531年之后已有人控制命运。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-gettysburg-balance-1500"],
+    "scope": "要核验的是每个太阳周转上的得失交替是否继续，以及有没有跟随古人的人把它停住。",
+    "reason": "葛底斯堡学院讲义写，1500至1789年欧洲国家争霸，西班牙和瑞典一类强国衰落，普鲁士和俄罗斯一类新强国出现。这是两个多世纪里国家力量的替换，不是同句的每一个太阳周转都重新显示命运的力量，也没有写是否已有人恭敬跟随古人并把这种交替停住。决定性缺口是年度节拍和那个停止者。不能用强国兴衰的总述代替。",
+    "limitation": "讲义没有出版日。1500和1789是年，没有日。",
+    "method": "先按每个太阳周转理解继续变化，再看材料有没有这个节拍和停止者。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "1500至1789年有强国兴衰。这不是每个太阳周转的交替，也没有写出跟随古人的停止者。"
+  }
+}

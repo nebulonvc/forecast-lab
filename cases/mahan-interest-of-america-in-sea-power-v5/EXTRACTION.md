@@ -1,0 +1,7 @@
+# 抽取审计
+
+107块全部正文已经逐块阅读，work/answers.jsonl原始留痕位于worker私有工作区；交付保留output/txt_import/proposals.jsonl中107项的抽取答案，但不带任何完整chunk正文。84原始条目、79导入候选、67 resolvable、12 unclear、5条规则排除、overlap_duplicates_dropped=0。
+
+确定性后处理只运行85e6da1原toolkit，不改代码。claims_proposals是导入前提案副本，随后依统一口径将context清空；引用与定位、指代展开及工具的其余字段未手工重写。所有有效claims的context也为空，最终pipeline check通过，没有reference_support_not_in_source。
+
+为避免重建全书，原分块plan、request与checkpoint在打包前整体移至worker的work/private-txt-import-fulltext/，交付不包含这些文件。原书仅可由来源地址加SHA复核取得，不随包分发。

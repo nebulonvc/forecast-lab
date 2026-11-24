@@ -1,0 +1,541 @@
+{
+  "claim_id": "txt-1c4066fc0c-000227360-000227461",
+  "version": "search-verifier-v1",
+  "input_sha256": "b8da1e2ffb1d75d41789308435cd73172011b830df916e10a6bd7e9a785f56f7",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000227360-000227461",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "条件口径为“美国教育系统不能培养出合格人才”，可观察代理包括成人读写/数理技能、学历与技能匹配、NAEP学业趋势、高技能人力供给；观察时段为1991年前后至2026-11-09截止前可得数据。",
+    "reason": "原文是条件后果判断：若教育系统不能培养合格人才，美国未来发展会棘手。现有证据显示美国成人读写与数理均分下降、NAEP阅读继续下降，可视为教育产出存在弱化迹象；但“未来发展棘手”这一主要结果分项缺乏可操作化的直接证据，且美国研发体系与高学历人口占比仍具竞争力，不能仅凭技能下降判定条件后果已实现。",
+    "limitation": "“合格人才”与“未来发展棘手”均无原文精确指标，回顾性操作化只能覆盖部分代理；技能下降不等于整体发展受阻，且日本是否为美国最大挑战缺乏可比证据。",
+    "evidence_ids": [
+      "prior-1e28e95651c2901f7eb6",
+      "prior-491438f23150e07e6899",
+      "prior-dc575588fe6250e3e093",
+      "ev-49d7299b64b255302a264545",
+      "ev-672c9f2147c72af3100c4aff"
+    ],
+    "method": "由教育与合格劳动力供给关联，并以日本作比较",
+    "method_basis": "explicit",
+    "observation_end": "2025-01-29",
+    "future_time_text": "未来发展",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-1e28e95651c2901f7eb6",
+        "relation": "support",
+        "quote": "OECD美国2023成人技能报告：读写和计算均分相较2012/15下降，低端增加而高端占比稳定；就业者约26%学历过度、9%学历不足，8%自报技能不足、39%自报技能过剩；美国样本3765人、回应率28%。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "为二手登记摘要，回应率偏低，且技能下降只支持教育产出弱化，不直接证明“未来发展棘手”。"
+      },
+      {
+        "evidence_id": "prior-491438f23150e07e6899",
+        "relation": "support",
+        "quote": "2024四、八年级阅读继续下降；数学全国均分高于1990年代但低于2013高点，疫情后各州表现不同。",
+        "publication_date": "2025-01-29",
+        "observation_end": "2025-01-29",
+        "limitation": "NAEP为K-12学业指标，数学仍高于1990年代，不能整体代表“不能培养合格人才”。"
+      },
+      {
+        "evidence_id": "prior-dc575588fe6250e3e093",
+        "relation": "counter",
+        "quote": "NSF《2024美国科学与工程状况》显示美国仍有庞大研发体系，同时中国研发增长改变国际格局；只使用文中实际年份。",
+        "publication_date": "2024-03-13",
+        "observation_end": "2024-03-13",
+        "limitation": "研发体系规模不等于教育培养合格人才，但构成对“美国发展受阻”的反向边界证据。"
+      },
+      {
+        "evidence_id": "ev-49d7299b64b255302a264545",
+        "relation": "counter",
+        "quote": "Although the United States is among the most highly educated countries with respect to the share of its population with at least a bachelor’s degree, it is below average within the Organisation for Economic Co-operation and Development (OECD) with respect to advanced degree attainment.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "高学历人口占比高与高级学位低于OECD均值并存，口径混合，不能单独证明教育系统合格或不合格。"
+      },
+      {
+        "evidence_id": "ev-672c9f2147c72af3100c4aff",
+        "relation": "boundary",
+        "quote": "Tertiary attainment among young adults aged 25-34 in Japan has increased slightly between 2019 and 2024 (from 62% to 66%) and Japan is among the five OECD countries with the largest proportion of young adults with a tertiary attainment in 2024 (above the OECD average of 48%).",
+        "publication_date": "2025-09-09",
+        "observation_end": "2025-09-09",
+        "limitation": "仅显示日本高等教育 attainment 高，不能证明日本教育体制是“美国面临的最大挑战”，也不能证明其严格性导致经济成功。"
+      }
+    ],
+    "remaining_gap": "缺少将教育产出弱化与“美国未来发展棘手”直接联系的可观察指标（如生产率、创新产出、经济竞争力趋势），也缺少日本教育体制作为美国最大挑战的可比证据；条件是否满足仍无法确定。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000227360-000227461",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "条件口径为“美国教育系统不能培养出合格人才”，可观察代理包括成人读写/数理技能、学历与技能匹配、NAEP学业趋势、高技能人力供给；观察时段为1991年前后至2026-11-09截止前可得数据。",
+    "reason": "原文是条件后果判断：若教育系统不能培养合格人才，美国未来发展会棘手。现有证据显示美国成人读写与数理均分下降、NAEP阅读继续下降，可视为教育产出存在弱化迹象；但“未来发展棘手”这一主要结果分项缺乏可操作化的直接证据，且美国研发体系与高学历人口占比仍具竞争力，不能仅凭技能下降判定条件后果已实现。",
+    "limitation": "“合格人才”与“未来发展棘手”均无原文精确指标，回顾性操作化只能覆盖部分代理；技能下降不等于整体发展受阻，且日本是否为美国最大挑战缺乏可比证据。",
+    "evidence_ids": [
+      "prior-1e28e95651c2901f7eb6",
+      "prior-491438f23150e07e6899",
+      "prior-dc575588fe6250e3e093",
+      "ev-49d7299b64b255302a264545",
+      "ev-672c9f2147c72af3100c4aff"
+    ],
+    "method": "由教育与合格劳动力供给关联，并以日本作比较",
+    "method_basis": "explicit",
+    "observation_end": "2025-01-29",
+    "future_time_text": "未来发展",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-1e28e95651c2901f7eb6",
+        "relation": "support",
+        "quote": "OECD美国2023成人技能报告：读写和计算均分相较2012/15下降，低端增加而高端占比稳定；就业者约26%学历过度、9%学历不足，8%自报技能不足、39%自报技能过剩；美国样本3765人、回应率28%。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "为二手登记摘要，回应率偏低，且技能下降只支持教育产出弱化，不直接证明“未来发展棘手”。"
+      },
+      {
+        "evidence_id": "prior-491438f23150e07e6899",
+        "relation": "support",
+        "quote": "2024四、八年级阅读继续下降；数学全国均分高于1990年代但低于2013高点，疫情后各州表现不同。",
+        "publication_date": "2025-01-29",
+        "observation_end": "2025-01-29",
+        "limitation": "NAEP为K-12学业指标，数学仍高于1990年代，不能整体代表“不能培养合格人才”。"
+      },
+      {
+        "evidence_id": "prior-dc575588fe6250e3e093",
+        "relation": "counter",
+        "quote": "NSF《2024美国科学与工程状况》显示美国仍有庞大研发体系，同时中国研发增长改变国际格局；只使用文中实际年份。",
+        "publication_date": "2024-03-13",
+        "observation_end": "2024-03-13",
+        "limitation": "研发体系规模不等于教育培养合格人才，但构成对“美国发展受阻”的反向边界证据。"
+      },
+      {
+        "evidence_id": "ev-49d7299b64b255302a264545",
+        "relation": "counter",
+        "quote": "Although the United States is among the most highly educated countries with respect to the share of its population with at least a bachelor’s degree, it is below average within the Organisation for Economic Co-operation and Development (OECD) with respect to advanced degree attainment.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "高学历人口占比高与高级学位低于OECD均值并存，口径混合，不能单独证明教育系统合格或不合格。"
+      },
+      {
+        "evidence_id": "ev-672c9f2147c72af3100c4aff",
+        "relation": "boundary",
+        "quote": "Tertiary attainment among young adults aged 25-34 in Japan has increased slightly between 2019 and 2024 (from 62% to 66%) and Japan is among the five OECD countries with the largest proportion of young adults with a tertiary attainment in 2024 (above the OECD average of 48%).",
+        "publication_date": "2025-09-09",
+        "observation_end": "2025-09-09",
+        "limitation": "仅显示日本高等教育 attainment 高，不能证明日本教育体制是“美国面临的最大挑战”，也不能证明其严格性导致经济成功。"
+      }
+    ],
+    "remaining_gap": "缺少将教育产出弱化与“美国未来发展棘手”直接联系的可观察指标（如生产率、创新产出、经济竞争力趋势），也缺少日本教育体制作为美国最大挑战的可比证据；条件是否满足仍无法确定。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-1e28e95651c2901f7eb6",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/12/survey-of-adults-skills-2023-country-notes_df7b4a60/united-states_efb9f176/427d6aac-en.pdf",
+      "title": "ev-r2-l3-oecd-skills",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-oecd-skills",
+      "archive_sha256": "c491650c654e782c42f6c55c61ffa245da94ada7e90da12b2c4f11c64bfdd213",
+      "archive_path": "data/sources/r2-l3-open-strategy-runaway.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-491438f23150e07e6899",
+      "url": "https://www.nagb.gov/content/dam/nagb/en/documents/newsroom/press-releases/2025/naep2024-pressrelease-final.pdf",
+      "title": "ev-naep",
+      "published_date": "2025-01-29",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-naep",
+      "archive_sha256": "c1bea2acfb8c0f7ac66f649f5fc6cc18c6a1d7d3c1589cd5c5c0ef4bb7b7d114",
+      "archive_path": "data/sources/c1bea2acfb8c0f7ac66f649f5fc6cc18c6a1d7d3c1589cd5c5c0ef4bb7b7d114.pdf",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-dc575588fe6250e3e093",
+      "url": "https://www.ncses.nsf.gov/pubs/nsb20243/discovery-u-s-and-global-r-d",
+      "title": "ev-nsf",
+      "published_date": "2024-03-13",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-nsf",
+      "archive_sha256": "48d44bfdae4f5f92a3f44364f67e6ca7670f659eb1c77f1e11453f89e6023f33",
+      "archive_path": "data/sources/48d44bfdae4f5f92a3f44364f67e6ca7670f659eb1c77f1e11453f89e6023f33.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-308a4d74a7ae40d63c3c",
+      "url": "https://www.ed.gov/sites/ed/files/2020/10/pathways_to_new_accountability_through_every_student_succeeds_act_0.pdf",
+      "title": "ev-lane3-education",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-education",
+      "archive_sha256": "7ccf2d730929185737d675a044837e872b0c1aa54bd7a51de580dd3537a54fb6",
+      "archive_path": "data/sources/lane3-education-cached.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-60de656bff4e163a91c820eb",
+      "url": "https://nces.ed.gov/surveys/piaac/2023/national%5Fresults.asp",
+      "resolved_url": "https://nces.ed.gov/surveys/piaac/2023/national%5Fresults.asp",
+      "title": "PIAAC - PIAAC Highlights of U.S. National Results",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:41.080939+00:00",
+      "archive_sha256": "556e75118be5cbbf417b55f726a756f25c87a21b0d65671987cbcf25b2c897a3",
+      "archive_path": "jobs/a268dc91b6a25efa268e90e7/556e75118be5cbbf417b55f726a756f25c87a21b0d65671987cbcf25b2c897a3.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-96f44d82bfdaac0901bc4682",
+      "url": "https://gpseducation.oecd.org/CountryProfile?primaryCountry=USA&topic=AS&treshold=5",
+      "resolved_url": "https://gpseducation.oecd.org/CountryProfile?primaryCountry=USA&topic=AS&treshold=5",
+      "title": "Education GPS - United States - Adult skills (Survey of Adult Skills, PIAAC, 2023)",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:41.081103+00:00",
+      "archive_sha256": "f274ceff76e2af9c13a526e861ceaa00c155ce45da58491b94b093cf1b9d7693",
+      "archive_path": "jobs/a268dc91b6a25efa268e90e7/f274ceff76e2af9c13a526e861ceaa00c155ce45da58491b94b093cf1b9d7693.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-9fd300e68854e39dcc0ce607",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/09/education-at-a-glance-2024-country-notes_532eb29d/united-states_267ff447/e08bedd8-en.pdf",
+      "resolved_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/09/education-at-a-glance-2024-country-notes_532eb29d/united-states_267ff447/e08bedd8-en.pdf",
+      "title": "United States (EN)",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:41.081240+00:00",
+      "archive_sha256": "e49de89cb22a6fa9e948626251dccafce94c01523c545cbcff99d2f715df4317",
+      "archive_path": "jobs/a268dc91b6a25efa268e90e7/e49de89cb22a6fa9e948626251dccafce94c01523c545cbcff99d2f715df4317.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-0113dd2053acb21971927dc8",
+      "url": "https://www.oecd.org/en/publications/education-at-a-glance-2024_c00cad36-en/full-report/how-does-educational-attainment-affect-participation-in-the-labour-market_52185632.html",
+      "resolved_url": "https://www.oecd.org/en/publications/education-at-a-glance-2024_c00cad36-en/full-report/how-does-educational-attainment-affect-participation-in-the-labour-market_52185632.html",
+      "title": "How does educational attainment affect participation in the labour market?: Education at a Glance 2024 | OECD",
+      "published_date": "2024-09-10",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:41.081378+00:00",
+      "archive_sha256": "f38521dbbd39095438d84e8f55061b395ce89b087791947f47597ee88b06a9ef",
+      "archive_path": "jobs/a268dc91b6a25efa268e90e7/f38521dbbd39095438d84e8f55061b395ce89b087791947f47597ee88b06a9ef.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-b79dc5980c2a8bb4317867f3",
+      "url": "https://www.oecd.org/en/publications/survey-of-adults-skills-2023-country-notes_ab4f6b8c-en/united-states_427d6aac-en.html",
+      "resolved_url": "https://www.oecd.org/en/publications/survey-of-adults-skills-2023-country-notes_ab4f6b8c-en/united-states_427d6aac-en.html",
+      "title": "Survey of Adults Skills 2023: United States | OECD",
+      "published_date": "2024-12-10",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:52.292173+00:00",
+      "archive_sha256": "a8bb25ec3f0e9f074e8b952fb328ca36944d66ad4da37fbbfc5a10feeddef890",
+      "archive_path": "jobs/a268dc91b6a25efa268e90e7/a8bb25ec3f0e9f074e8b952fb328ca36944d66ad4da37fbbfc5a10feeddef890.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-49d7299b64b255302a264545",
+      "url": "https://www.ncses.nsf.gov/pubs/nsb202332/international-comparisons-of-s-e-higher-education",
+      "resolved_url": "https://www.ncses.nsf.gov/pubs/nsb202332/international-comparisons-of-s-e-higher-education",
+      "title": "Higher Education in Science and Engineering | NCSES | NSF",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:52.292346+00:00",
+      "archive_sha256": "15c3df635f8465e296c932ee1e6e48c3988b6ea57993c912108b73dedd776888",
+      "archive_path": "jobs/a268dc91b6a25efa268e90e7/15c3df635f8465e296c932ee1e6e48c3988b6ea57993c912108b73dedd776888.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-672c9f2147c72af3100c4aff",
+      "url": "https://www.oecd.org/en/publications/2025/09/education-at-a-glance-2025-country-notes_9749f4ff/japan_edc5a3a9.html",
+      "resolved_url": "https://www.oecd.org/en/publications/2025/09/education-at-a-glance-2025-country-notes_9749f4ff/japan_edc5a3a9.html",
+      "title": "Education at a Glance 2025: Japan",
+      "published_date": "2025-09-09",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:52.292484+00:00",
+      "archive_sha256": "1ecd27bdb994d04f211d8f50ffc1a54a09adc20ea68838b01c796cf55910d8dc",
+      "archive_path": "jobs/a268dc91b6a25efa268e90e7/1ecd27bdb994d04f211d8f50ffc1a54a09adc20ea68838b01c796cf55910d8dc.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "OECD Survey of Adults Skills 2023 United States literacy numeracy decline low-skilled adults",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "United States educational attainment skilled workforce international comparison OECD Education at a Glance 2024",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "PIAAC 2023 United States literacy numeracy scores decline low proficiency adults NCES",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "United States high-skilled workforce STEM graduates international comparison OECD 2024 Japan education challenge",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少将教育产出弱化与“美国未来发展棘手”直接联系的可观察指标（如生产率、创新产出、经济竞争力趋势），也缺少日本教育体制作为美国最大挑战的可比证据；条件是否满足仍无法确定。",
+  "source_statuses": [
+    {
+      "url": "https://nces.ed.gov/surveys/piaac/2023/national%5Fresults.asp",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://gpseducation.oecd.org/CountryProfile?primaryCountry=USA&topic=AS&treshold=5",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/09/education-at-a-glance-2024-country-notes_532eb29d/united-states_267ff447/e08bedd8-en.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.oecd.org/en/publications/education-at-a-glance-2024_c00cad36-en/full-report/how-does-educational-attainment-affect-participation-in-the-labour-market_52185632.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.oecd.org/en/publications/survey-of-adults-skills-2023-country-notes_ab4f6b8c-en/united-states_427d6aac-en.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.ncses.nsf.gov/pubs/nsb202332/international-comparisons-of-s-e-higher-education",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.oecd.org/en/publications/2025/09/education-at-a-glance-2025-country-notes_9749f4ff/japan_edc5a3a9.html",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "2b6d69ebc106b78e7bca8a9f22c1ac9d06ca18eb176eb8cfd0155dfdf37205f1"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "bfb8a73048a2163666605d221bc1626a",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "45e339bd32df6b2b8ec361f3c784f0f7",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "01c46a9f44ac2526cc79eed07c9bc28cb2722a63594a9003927a4bc1d7b35729"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "2e6cc47e0bb919dfe894b99a07adabe0",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "871fdacc2e33fca267a1d84eaed30f12b3393c197870206dfaeede486a3da0e2"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "bd4040472d19dc1dead5b8f5546ab927",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "3ff494b0b257cbcfb3374a7dbe875f7f",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "84d7a1890756c90fd9c6182ed6d5eeddb4093a09b1cbbedfe2a4b58f9822e153"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "be2180c5e88aa8874ad2be38dc9f58fd",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "360ffe3758137ad89ddb7d18d03456aa8211168fce8f5833355a81e9fbac84be"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "6701e526116284d836a55340889dd8fe3116d4c5d6ab880f882bac015757c011"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000227360-000227461",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000227360-000227461",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "条件口径为“美国教育系统不能培养出合格人才”，可观察代理包括成人读写/数理技能、学历与技能匹配、NAEP学业趋势、高技能人力供给；观察时段为1991年前后至2026-11-09截止前可得数据。",
+      "reason": "原文是条件后果判断：若教育系统不能培养合格人才，美国未来发展会棘手。现有证据显示美国成人读写与数理均分下降、NAEP阅读继续下降，可视为教育产出存在弱化迹象；但“未来发展棘手”这一主要结果分项缺乏可操作化的直接证据，且美国研发体系与高学历人口占比仍具竞争力，不能仅凭技能下降判定条件后果已实现。",
+      "limitation": "“合格人才”与“未来发展棘手”均无原文精确指标，回顾性操作化只能覆盖部分代理；技能下降不等于整体发展受阻，且日本是否为美国最大挑战缺乏可比证据。",
+      "evidence_ids": [
+        "prior-1e28e95651c2901f7eb6",
+        "prior-491438f23150e07e6899",
+        "prior-dc575588fe6250e3e093",
+        "ev-49d7299b64b255302a264545",
+        "ev-672c9f2147c72af3100c4aff"
+      ],
+      "method": "由教育与合格劳动力供给关联，并以日本作比较",
+      "method_basis": "explicit",
+      "observation_end": "2025-01-29",
+      "future_time_text": "未来发展",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-1e28e95651c2901f7eb6",
+          "relation": "support",
+          "quote": "OECD美国2023成人技能报告：读写和计算均分相较2012/15下降，低端增加而高端占比稳定；就业者约26%学历过度、9%学历不足，8%自报技能不足、39%自报技能过剩；美国样本3765人、回应率28%。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "为二手登记摘要，回应率偏低，且技能下降只支持教育产出弱化，不直接证明“未来发展棘手”。"
+        },
+        {
+          "evidence_id": "prior-491438f23150e07e6899",
+          "relation": "support",
+          "quote": "2024四、八年级阅读继续下降；数学全国均分高于1990年代但低于2013高点，疫情后各州表现不同。",
+          "publication_date": "2025-01-29",
+          "observation_end": "2025-01-29",
+          "limitation": "NAEP为K-12学业指标，数学仍高于1990年代，不能整体代表“不能培养合格人才”。"
+        },
+        {
+          "evidence_id": "prior-dc575588fe6250e3e093",
+          "relation": "counter",
+          "quote": "NSF《2024美国科学与工程状况》显示美国仍有庞大研发体系，同时中国研发增长改变国际格局；只使用文中实际年份。",
+          "publication_date": "2024-03-13",
+          "observation_end": "2024-03-13",
+          "limitation": "研发体系规模不等于教育培养合格人才，但构成对“美国发展受阻”的反向边界证据。"
+        },
+        {
+          "evidence_id": "ev-49d7299b64b255302a264545",
+          "relation": "counter",
+          "quote": "Although the United States is among the most highly educated countries with respect to the share of its population with at least a bachelor’s degree, it is below average within the Organisation for Economic Co-operation and Development (OECD) with respect to advanced degree attainment.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "高学历人口占比高与高级学位低于OECD均值并存，口径混合，不能单独证明教育系统合格或不合格。"
+        },
+        {
+          "evidence_id": "ev-672c9f2147c72af3100c4aff",
+          "relation": "boundary",
+          "quote": "Tertiary attainment among young adults aged 25-34 in Japan has increased slightly between 2019 and 2024 (from 62% to 66%) and Japan is among the five OECD countries with the largest proportion of young adults with a tertiary attainment in 2024 (above the OECD average of 48%).",
+          "publication_date": "2025-09-09",
+          "observation_end": "2025-09-09",
+          "limitation": "仅显示日本高等教育 attainment 高，不能证明日本教育体制是“美国面临的最大挑战”，也不能证明其严格性导致经济成功。"
+        }
+      ],
+      "remaining_gap": "缺少将教育产出弱化与“美国未来发展棘手”直接联系的可观察指标（如生产率、创新产出、经济竞争力趋势），也缺少日本教育体制作为美国最大挑战的可比证据；条件是否满足仍无法确定。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象为美国教育系统能否培养出足够合格人才，以及由此对美国未来发展的影响；条件口径为“教育系统不能培养出合格人才”，不要求美国一个人才也培养不出。可观察口径包括成人读写与数理技能、学历与技能匹配、NAEP学业趋势、研发与高技能人力供给；反证包括技能水平稳定或改善、国际比较中美国仍具竞争力、日本教育并非美国最大挑战。",
+  "elapsed_seconds": 31.855,
+  "completed_at": "2026-11-09T08:13:01.830291+00:00"
+}

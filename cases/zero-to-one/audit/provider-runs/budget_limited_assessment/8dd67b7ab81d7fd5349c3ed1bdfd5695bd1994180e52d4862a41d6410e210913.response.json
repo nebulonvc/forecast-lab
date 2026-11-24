@@ -1,0 +1,28 @@
+{
+  "id": "2893b579-4c0a-4bc8-a5ab-b74b24dd9135",
+  "object": "chat.completion",
+  "created": 1794201448,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000043548-000043573\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"原文判断：若修正缺乏“大胆计划”，则不能实现从0到1的跨越（即创造全新事物、实现全球性突破）。观察时段：出版年2014至cutoff 2026-11-09。操作化需明确“大胆计划”“修正”“从0到1跨越”的判定标准，原文未给出可核验指标。\",\"reason\":\"该句是规范性/因果性论断，核心概念“大胆计划”和“从0到1的跨越”均未操作化，无法用客观数据检验。原文未提供可观察的预测对象或期限，故不能评分。\",\"limitation\":\"“你”为泛指，无具体主体；且“从0到1”是作者的价值判断而非可量化结果。无证据可引用。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4223,
+    "completion_tokens": 250,
+    "total_tokens": 4473,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3455
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

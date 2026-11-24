@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000213631-000213733",
+  "plan": {
+    "object": "一座城市里大人物的野心。",
+    "condition": "unless controlled and counteracted in a variety of ways。多方面的制约都缺失，才进入这句。单一制度没有挡住某一个派系，不等于没有任何制约。",
+    "quantifier": "always。speedy 由同段对照写明：罗马因平民持续牵制贵族，土地法争议用了三百年才到奴役；若没有这种牵制，会在远短于三百年的时间里落到奴役。不另造一个具体年数。",
+    "result": "城市很快毁灭。同段的毁灭是落到奴役，不是任何一次政变或火灾。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "大人物的野心没有多方面制约，而城市在接近或超过这段三百年对照的时间里没有毁灭。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "city ruined within decades after noble faction ambition uncontrolled post 1531",
+      "counter_query": "Polish magnates liberum veto uncontrolled ambition commonwealth lasted until partitions"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://yalebooks.yale.edu/2021/02/23/a-vanished-kingdoms-monumental-achievement/"],
+    "dropped": "佛罗伦萨1532年是改成公国，页面没有写城市因贵族野心毁灭。山口1551年是大内氏政变和随后的焚城，不是这句的城市因大人物野心缺少多方面制约而奴役。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-yale-commonwealth-veto"],
+    "scope": "必须同时有缺少多方面制约，以及远短于三百年对照的毁灭。只有自由否决和最终灭亡，而没有起算点，不能把某一年数事后说成很快。",
+    "reason": "耶鲁大学出版社页面写，危险来自贵族的放纵、大贵族的野心和王室算计；自由否决使一个议员可以中断议会并作废已通过的措施；十七世纪末被这样打断的议会多于完成的议会，十八世纪中叶立法机关瘫痪；此后联邦在几次瓜分后从地图上消失。这写出了大贵族野心和一种阻碍制约的否决，也写出了最终灭亡。页面没有写这种野心从哪一年起不再受到多方面制约。从卢布林联合、否决硬化到1795年灭亡，间隔不同，不能自行选定一个起点来满足或否定 far shorter than three hundred years。决定性缺口是起算点。",
+    "limitation": "页面没有出版日。自由否决的描述是十七世纪末和十八世纪中叶，没有日。灭亡没有写年月日。",
+    "method": "先用原文的三百年对照固定很快，再看材料有没有不受制约的起算点。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "大贵族野心和自由否决有记载，最终灭亡也有记载。缺少多方面制约从何时起算没有写明，不能套三百年对照。"
+  }
+}

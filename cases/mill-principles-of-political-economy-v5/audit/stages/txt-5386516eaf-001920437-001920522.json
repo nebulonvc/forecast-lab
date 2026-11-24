@@ -1,0 +1,95 @@
+{
+  "id": "txt-5386516eaf-001920437-001920522",
+  "assess": {
+    "id": "txt-5386516eaf-001920437-001920522",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "劳动者的智力会提高，即使只靠没有援助的自己的努力。",
+    "reason": "全球识字率上升不是智力，也不是无援助的自学。不能用识字率给这句计分。",
+    "limitation": "旧的部分符合已撤回。对象不一致时不保留分数。",
+    "evidence_ids": [
+      "ev-owid-literacy-2018"
+    ],
+    "method": "复核后撤回计分。原支持与反证仍留在修订轨迹，不当作同对象分数。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-owid-literacy-2018",
+        "quote": "More than 4 out of 5 people are now able to read.",
+        "relation": "boundary",
+        "limitation": "识字上升，不是无援助的单独证明。",
+        "observation_end": "2018-09-20",
+        "publication_date": "2018-09-20",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺劳动者智力提高、并且这一提高即使没有援助也会发生的同对象证据。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001920437-001920522",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "revision_trail": {
+    "withdrawn_verdict": "部分符合",
+    "withdrawn_reason": "现在五个人里有四个以上能够阅读。识字是这句所说智力的一个公开尺度，方向符合。材料没有把无援助的自学和学校教育分开。",
+    "failed_review": {
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "整体识字率换成了无援助的智力提高。",
+          "source_quote": "increase in intelligence, even by their own unaided efforts; while there is reason to",
+          "evidence_id": null
+        }
+      ],
+      "remaining_gap": "缺劳动者智力提高、并且这一提高即使没有援助也会发生的同对象证据。"
+    },
+    "why": "整体识字率换成了无援助的智力提高。"
+  },
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "share of people able to read rose"
+      },
+      {
+        "role": "counter",
+        "query": "England and Wales literacy already near universal by 1900"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://ourworldindata.org/literacy"
+    ],
+    "reason": "识字上升，无援助未单列。"
+  }
+}

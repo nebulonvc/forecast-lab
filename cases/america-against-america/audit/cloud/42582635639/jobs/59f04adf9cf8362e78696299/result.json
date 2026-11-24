@@ -1,0 +1,363 @@
+{
+  "claim_id": "txt-1c4066fc0c-000253175-000253215",
+  "version": "search-verifier-v1",
+  "input_sha256": "bf692fdd71a1974ade6022a86ef09aea2a700b5b3b8b9ac1b315a76b94ece240",
+  "cutoff": "2026-11-09",
+  "task_state": "partial",
+  "assessment": null,
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000253175-000253215",
+    "inclusion": "forecast",
+    "verdict": "错误",
+    "basis": "observed_window",
+    "scope": "以1991—2024年世界银行实际GDP（NY.GDP.MKTP.KD）全窗复合年增长率比较美国与日本，检验“美国发展不快于日本”这一核心分项；第二分项“美国人难以最终接受日本支配性挑战”仅作辅助观察，不以文化态度证明因果。",
+    "reason": "原文核心判断是心理屏障将保证美国发展不快于日本。按研究范围以实际GDP全窗CAGR操作化，日本在1990年代陷入“失われた10年”，年均实际增长约1.4%（1980年代约4.1%），而美国同期增长明显更高，方向与“美国不快于日本”相反。第二分项缺乏可操作的美日主导权接受度制度记录，不能据此支持原判断。",
+    "limitation": "未取得可直接计算美日1991—2024全窗CAGR的完整数值序列，只能依据日本官方回顾性材料判断方向；第二分项“接受太阳帝国”无对应制度证据，未纳入评分。文化心理导致发展速度的因果机制无法由GDP数据验证。",
+    "evidence_ids": [
+      "prior-1466ef06a675c43a64a7",
+      "ev-c287bade19481933455c38aa",
+      "ev-86f65a995bfed8a12ca09265"
+    ],
+    "method": "由文化心理壁垒外推美日相对发展速度与接受能力",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-31",
+    "future_time_text": "往后",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-1466ef06a675c43a64a7",
+        "relation": "counter",
+        "quote": "日本1990年代年均实际增长约1.3%，低于前十年4.0%，恢复曾数次中断。",
+        "publication_date": "2009-04-23",
+        "observation_end": "2009-04-23",
+        "limitation": "日本央行回顾性演讲，仅覆盖日本1990年代，未直接给出美国同期增速。"
+      },
+      {
+        "evidence_id": "ev-c287bade19481933455c38aa",
+        "relation": "counter",
+        "quote": "日本の実質経済成長率は、1980年代の4.1％から1990年代は1.4％と三分の一程度の低成長となっている。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "日文研究报告，日期未知；表格显示美国1990年代实际GDP年均增长约3.0%，高于日本1.4%，但为二手整理数据。"
+      },
+      {
+        "evidence_id": "ev-86f65a995bfed8a12ca09265",
+        "relation": "counter",
+        "quote": "バブル崩壊は平成 3 年（1991年）に始まったが、その後長く続いた日本経済の低迷は、「失われた10年」あるいは「失われた20年」とも称される時期の始まりを告げるものとなった。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "日本财务省政策史PDF，日期未知；描述日本长期低迷，未直接比较美国增速。"
+      }
+    ],
+    "remaining_gap": "缺少可直接计算美日1991—2024全窗复合年增长率的完整WDI数值序列；第二分项“美国人接受日本支配性挑战”缺少可观察的美日安全/经济主导权制度记录。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-a17e981669fe6d9634b7",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.KD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-kd",
+      "published_date": "2026-10-08",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-kd",
+      "archive_sha256": "0eabb480af54e08e1fa6c8a30424b5f98a316e14d676054b7b88acb293744bb4",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.KD.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-6eade55c940cb2f53437",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.KD.ZG?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-kd-zg",
+      "published_date": "2026-10-08",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-kd-zg",
+      "archive_sha256": "7769e352d223398f38753e8019c642f3d932fb049907d6476ce516bf45ff632c",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.KD.ZG.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-4ca3996c945c1c3f4e72",
+      "url": "https://www.boj.or.jp/en/about/press/koen_2024/ko240527b.htm",
+      "title": "ev-boj",
+      "published_date": "2024-05-27",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-boj",
+      "archive_sha256": "40fa6f0900b25d801577b8629b6f6dbecc58b7d22f18da4558b8920da02432fc",
+      "archive_path": "data/sources/40fa6f0900b25d801577b8629b6f6dbecc58b7d22f18da4558b8920da02432fc.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-1466ef06a675c43a64a7",
+      "url": "https://www2.boj.or.jp/archive/en/announcements/press/koen_2009/ko0904c.htm",
+      "title": "ev-japan-growth",
+      "published_date": "2009-04-23",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-japan-growth",
+      "archive_sha256": "71ea4ae45c718dee270c90b533919d74c3e7e2649a70e0d081c8acc0b03ad508",
+      "archive_path": "data/sources/71ea4ae45c718dee270c90b533919d74c3e7e2649a70e0d081c8acc0b03ad508.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-f6b5778f59d9dd2b0528c0c0",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD?name_desc=false",
+      "resolved_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD?name_desc=false",
+      "title": "GDP (constant 2015 US$) | Data",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:58.907000+00:00",
+      "archive_sha256": "05f9f82541dc613ea53d97d70af3a93f7a77a13baa1dc17058763c829909a935",
+      "archive_path": "jobs/59f04adf9cf8362e78696299/05f9f82541dc613ea53d97d70af3a93f7a77a13baa1dc17058763c829909a935.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-3b9974a439e249c8a87db8af",
+      "url": "https://fgeerolf.com/data/wdi/NY.GDP.MKTP.KD.html",
+      "resolved_url": "https://fgeerolf.com/data/wdi/NY.GDP.MKTP.KD.html",
+      "title": "GDP (constant 2015 USD) - NY.GDP.MKTP.KD",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:58.907249+00:00",
+      "archive_sha256": "069d609d7f97c94707e26c1d5466295fac665f21eccb1314e00e9b0ab62358cb",
+      "archive_path": "jobs/59f04adf9cf8362e78696299/069d609d7f97c94707e26c1d5466295fac665f21eccb1314e00e9b0ab62358cb.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c287bade19481933455c38aa",
+      "url": "https://dl.ndl.go.jp/view/prepareDownload?contentNo=1&itemId=info%3Andljp%2Fpid%2F8369759",
+      "resolved_url": "https://dl.ndl.go.jp/view/prepareDownload?contentNo=1&itemId=info%3Andljp%2Fpid%2F8369759",
+      "title": "",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:58.907509+00:00",
+      "archive_sha256": "047797502868e7acf7b72f277e67cb953f62c9f3e8091d5c47594293f1f63867",
+      "archive_path": "jobs/59f04adf9cf8362e78696299/047797502868e7acf7b72f277e67cb953f62c9f3e8091d5c47594293f1f63867.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-86f65a995bfed8a12ca09265",
+      "url": "https://www.mof.go.jp/pri/publication/policy_history/series/h1-12/1_2.pdf",
+      "resolved_url": "https://www.mof.go.jp/pri/publication/policy_history/series/h1-12/1_2.pdf",
+      "title": "第 2部　日本経済の長引く停滞と再生に向けて ―1990 年代後半の動向―",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:58.907751+00:00",
+      "archive_sha256": "f5a0e213254df408d7308e226aed11844b8795d73d75819bd350f2b7aeacf884",
+      "archive_path": "jobs/59f04adf9cf8362e78696299/f5a0e213254df408d7308e226aed11844b8795d73d75819bd350f2b7aeacf884.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "World Bank WDI NY.GDP.MKTP.KD United States Japan 1991 2024 constant GDP annual series",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Japan Cabinet Office GDP growth 1990s lost decade annual real growth rate official statistics",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "World Bank WDI NY.GDP.MKTP.KD United States Japan 1991 2024 constant GDP annual series",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Japan Cabinet Office GDP growth 1990s lost decade annual real growth rate official statistics",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [
+    {
+      "stage": "worker",
+      "error": "cached_response_invalid_b6dfa907a005"
+    }
+  ],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-86f65a995bfed8a12ca09265",
+        "ev-c287bade19481933455c38aa"
+      ]
+    }
+  ],
+  "remaining_gap": "任务未完成；查看错误、已取得材料和请求状态，不能据此判断原预测。",
+  "source_statuses": [
+    {
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD?name_desc=false",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://fgeerolf.com/data/wdi/NY.GDP.MKTP.KD.html",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://dl.ndl.go.jp/view/prepareDownload?contentNo=1&itemId=info%3Andljp%2Fpid%2F8369759",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.mof.go.jp/pri/publication/policy_history/series/h1-12/1_2.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "7bade390e4706905fd23d9a5ec75da4379bbe0b4514f03d7c446015c5ce0a22c"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "885bb77e2e721750e20cee88d6f95a35",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "4f477e2b16ec405e3a38c2c704400051",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "267bf7292491cddf8fc84b055ef33864c38c387ef132c2a842f558227929e5f2"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "b903722d2bba569e68f36bf4fd6bed7c",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "677e51dff69592beed890ee940b0e12a317760d9d2b8d9cc24a68cf27031334b"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "885bb77e2e721750e20cee88d6f95a35",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "4f477e2b16ec405e3a38c2c704400051",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "97a61c21fcc676915998fb2ec45332bfb8ed7f34c714b1a8a751d8b04aa800eb"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "e0439c32c927e06e3a7b13d796763dfcf9f33f26d4342dcd82cea6f5b279a7af"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000253175-000253215",
+      "inclusion": "forecast",
+      "verdict": "错误",
+      "basis": "observed_window",
+      "scope": "以1991—2024年世界银行实际GDP（NY.GDP.MKTP.KD）全窗复合年增长率比较美国与日本，检验“美国发展不快于日本”这一核心分项；第二分项“美国人难以最终接受日本支配性挑战”仅作辅助观察，不以文化态度证明因果。",
+      "reason": "原文核心判断是心理屏障将保证美国发展不快于日本。按研究范围以实际GDP全窗CAGR操作化，日本在1990年代陷入“失われた10年”，年均实际增长约1.4%（1980年代约4.1%），而美国同期增长明显更高，方向与“美国不快于日本”相反。第二分项缺乏可操作的美日主导权接受度制度记录，不能据此支持原判断。",
+      "limitation": "未取得可直接计算美日1991—2024全窗CAGR的完整数值序列，只能依据日本官方回顾性材料判断方向；第二分项“接受太阳帝国”无对应制度证据，未纳入评分。文化心理导致发展速度的因果机制无法由GDP数据验证。",
+      "evidence_ids": [
+        "prior-1466ef06a675c43a64a7",
+        "ev-c287bade19481933455c38aa",
+        "ev-86f65a995bfed8a12ca09265"
+      ],
+      "method": "由文化心理壁垒外推美日相对发展速度与接受能力",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "往后",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-1466ef06a675c43a64a7",
+          "relation": "counter",
+          "quote": "日本1990年代年均实际增长约1.3%，低于前十年4.0%，恢复曾数次中断。",
+          "publication_date": "2009-04-23",
+          "observation_end": "2009-04-23",
+          "limitation": "日本央行回顾性演讲，仅覆盖日本1990年代，未直接给出美国同期增速。"
+        },
+        {
+          "evidence_id": "ev-c287bade19481933455c38aa",
+          "relation": "counter",
+          "quote": "日本の実質経済成長率は、1980年代の4.1％から1990年代は1.4％と三分の一程度の低成長となっている。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "日文研究报告，日期未知；表格显示美国1990年代实际GDP年均增长约3.0%，高于日本1.4%，但为二手整理数据。"
+        },
+        {
+          "evidence_id": "ev-86f65a995bfed8a12ca09265",
+          "relation": "counter",
+          "quote": "バブル崩壊は平成 3 年（1991年）に始まったが、その後長く続いた日本経済の低迷は、「失われた10年」あるいは「失われた20年」とも称される時期の始まりを告げるものとなった。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "日本财务省政策史PDF，日期未知；描述日本长期低迷，未直接比较美国增速。"
+        }
+      ],
+      "remaining_gap": "缺少可直接计算美日1991—2024全窗复合年增长率的完整WDI数值序列；第二分项“美国人接受日本支配性挑战”缺少可观察的美日安全/经济主导权制度记录。"
+    }
+  ],
+  "autonomous_decision": false,
+  "semantic_validation": null,
+  "scope": "对象为美国与日本的相对“发展速度”，以1991—2024年世界银行实际GDP年度序列（NY.GDP.MKTP.KD）计算全窗复合年增长率，比较美国是否不快于日本；原句另一分项“美国人难以最终接受太阳帝国（日本支配性挑战）”以可观察的美日同盟/安全安排及美国对日本领导角色的接受度作辅助反证，但不以文化态度直接证明因果。反证条件：若美国实际GDP全窗CAGR高于日本，则核心“保证美国发展不快于日本”被反驳；若出现美国接受日本在安全/经济上主导的具体制度记录，则第二分项受挑战。",
+  "elapsed_seconds": 30.011,
+  "completed_at": "2026-11-09T08:02:16.695270+00:00"
+}

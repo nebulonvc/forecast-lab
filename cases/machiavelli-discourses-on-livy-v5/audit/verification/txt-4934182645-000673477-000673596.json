@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000673477-000673596",
+  "plan": {
+    "object": "共和国里伟大而可敬的人。同章把他们和只靠财富或关系得宠的人分开。",
+    "condition": "in peaceful times。和平、安静的时期，与困难和战争相对。战争还没结束时被换下，不是这句。",
+    "quantifier": "always will。过去总是、将来也总是在和平时期被忽视。一次被选到最高职位，若时期是和平的，可以反驳总是；一次被忽视不能证明总是。",
+    "result": "登记变化是 neglected。没有得到应得的位置，不如他的人反而更受重视。",
+    "window": "1531至2026-11-15。尼基阿斯和埃米利乌斯是出版前的例子。",
+    "counterevidence_needed": "和平时期共和国忽视了刚立大功的人；或者和平时期把最高职位给了这个人。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "after victory the republic voted out its wartime leader in the first peacetime election",
+      "counter_query": "after the war ended the republic elected its greatest general president in peacetime"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://en.wikipedia.org/wiki/Ulysses_S._Grant"],
+    "dropped": "1945年7月丘吉尔下台的页面没有把投票放在战争已经结束的和平时期。有一页写当时国家仍在打仗，不能当成和平时期的忽视。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "错误",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "satisfied",
+    "future_time_text": "",
+    "observation_end": "1868-12-31",
+    "evidence_ids": ["ev-wiki-grant-1868"],
+    "scope": "总是在和平时期被忽视。战争胜利已经写明、随后把最高职位给他，就是没有忽视。",
+    "reason": "同章把忽视写成得不到应得的位置，不如他的人更受重视；章题把安静时期和困难时期分开。维基百科写，格兰特率领联邦军队在1865年的美国内战中取胜；作为战争英雄，他在1868年被共和党一致提名并当选总统。内战胜利已经写在1865年，当选在其后，所以不是战争仍在进行时的任用。总统是共和国的最高位置。页面给出的是他得到了这个位置，不是被忽视。总是被忽视因此不成立。1945年的选举没有使用，因为打开的材料没有把投票放在战争结束之后。观察停在1868年年底，页面只给了年份。复核后维持这句，不把当选改成别的词来凑反例。",
+    "limitation": "百科页没有用 peace 这个词，也没有写1868年国内没有其他冲突。这里只用页面已经写出的1865年胜利和1868年当选。当选日不在这页上。",
+    "method": "先确认战争已经结束，再看伟大的人是被忽视还是得到最高职位。一次得到最高职位就反掉总是被忽视。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "复核后维持错误。同章把忽视说成得不到应得的位置，不如他的人更受重视。页面写他在1865年取胜后，于1868年以战争英雄当选总统，这就是得到了那个位置，直接对着登记变化 neglected。页面没有写 peace，安静期用的是它已经写出的战争结束。"
+  }
+}

@@ -1,0 +1,480 @@
+{
+  "claim_id": "txt-1c4066fc0c-000118342-000118369",
+  "version": "search-verifier-v1",
+  "input_sha256": "905f799755dec4dbb8e97d1b0debfe846e030bbd95f84d55a7edac9c840eeae6",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000118342-000118369",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "以中国/美国（或原东方集团/西方集团）名义GDP总量、实际PPP人均GDP等代理指标衡量经济差距是否显著缩小至“拉平”，并观察是否存在可识别的意识形态竞争回升（制度模式之争、政策话语对抗）。观察时段为1991年至cutoff 2026-11-09。",
+    "reason": "原文为条件性预测：若东西方经济水平拉平，意识形态之争可能重新兴起。现有证据显示中美PPP人均GDP差距仍大（2024年中国约27139.52国际元、美国86169.66），名义GDP与人均口径均未达到“拉平”，触发条件未满足；同时意识形态竞争是否回升缺乏可操作化的系统证据。",
+    "limitation": "“拉平”无精确阈值，且“东西方”对应关系因苏联解体而不确定；意识形态竞争回升难以量化，现有材料多为定性论述，不能作为终局判断。",
+    "evidence_ids": [
+      "prior-0faec4964a3999a6139f",
+      "ev-3da98ac79588c295c5af728e",
+      "ev-bea0fa7e281a383c046aa1fb",
+      "ev-d4fb9401aad11a02bbdd35ae"
+    ],
+    "method": "从经济差距缩小推断意识形态竞争恢复",
+    "method_basis": "inferred",
+    "observation_end": "2024-12-31",
+    "future_time_text": "",
+    "condition_state": "not_met",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-0faec4964a3999a6139f",
+        "relation": "boundary",
+        "quote": "世界银行API2024 PPP人均GDP：中国约27139.52国际元、美国86169.66；与总量排名采用不同口径。",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "仅为人均PPP口径，不能代表总量或名义GDP；差距仍大，未达“拉平”。"
+      },
+      {
+        "evidence_id": "ev-3da98ac79588c295c5af728e",
+        "relation": "boundary",
+        "quote": "| China | 2024 | 27104.8702677463 |",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "仅中国单国PPP人均序列，无美国对照；数值与世行API略有差异，属口径/版本差异。"
+      },
+      {
+        "evidence_id": "ev-bea0fa7e281a383c046aa1fb",
+        "relation": "background",
+        "quote": "are we on the brink of Cold War II? The historian Niall Ferguson argues that we already are.",
+        "publication_date": "2023-12-11",
+        "observation_end": "2023-12-11",
+        "limitation": "为IMF演讲中的定性设问与引用，非系统证据；且讨论地缘经济碎片化，不等同于原文“经济拉平后意识形态之争回升”的条件判断。"
+      },
+      {
+        "evidence_id": "ev-d4fb9401aad11a02bbdd35ae",
+        "relation": "background",
+        "quote": "Behind the struggle and game between China and the United States are four sets of overlapping and mutually causal logics, namely the growth and decline of the two countries’ strength, ideological differences, changes in the international environment, and domestic political influence.",
+        "publication_date": "2024-05-23",
+        "observation_end": "2024-05-23",
+        "limitation": "学术论文的因果框架，指出意识形态差异是竞争逻辑之一，但不能证明“经济拉平”是触发条件，也不能量化意识形态竞争回升。"
+      }
+    ],
+    "remaining_gap": "缺少可操作化的“经济拉平”阈值与中美（或东西方）对照的完整时间序列；缺少对意识形态竞争回升的系统量化指标（如制度模式之争、政策话语对抗的编码数据）；“东西方”在苏联解体后的对应关系需明确界定。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000118342-000118369",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "以中国/美国（或原东方集团/西方集团）名义GDP总量、实际PPP人均GDP等代理指标衡量经济差距是否显著缩小至“拉平”，并观察是否存在可识别的意识形态竞争回升（制度模式之争、政策话语对抗）。观察时段为1991年至cutoff 2026-11-09。",
+    "reason": "原文为条件性预测：若东西方经济水平拉平，意识形态之争可能重新兴起。现有证据显示中美PPP人均GDP差距仍大（2024年中国约27139.52国际元、美国86169.66），名义GDP与人均口径均未达到“拉平”，触发条件未满足；同时意识形态竞争是否回升缺乏可操作化的系统证据。",
+    "limitation": "“拉平”无精确阈值，且“东西方”对应关系因苏联解体而不确定；意识形态竞争回升难以量化，现有材料多为定性论述，不能作为终局判断。",
+    "evidence_ids": [
+      "prior-0faec4964a3999a6139f",
+      "ev-3da98ac79588c295c5af728e",
+      "ev-bea0fa7e281a383c046aa1fb",
+      "ev-d4fb9401aad11a02bbdd35ae"
+    ],
+    "method": "从经济差距缩小推断意识形态竞争恢复",
+    "method_basis": "inferred",
+    "observation_end": "2024-12-31",
+    "future_time_text": "",
+    "condition_state": "not_met",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-0faec4964a3999a6139f",
+        "relation": "boundary",
+        "quote": "世界银行API2024 PPP人均GDP：中国约27139.52国际元、美国86169.66；与总量排名采用不同口径。",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "仅为人均PPP口径，不能代表总量或名义GDP；差距仍大，未达“拉平”。"
+      },
+      {
+        "evidence_id": "ev-3da98ac79588c295c5af728e",
+        "relation": "boundary",
+        "quote": "| China | 2024 | 27104.8702677463 |",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "仅中国单国PPP人均序列，无美国对照；数值与世行API略有差异，属口径/版本差异。"
+      },
+      {
+        "evidence_id": "ev-bea0fa7e281a383c046aa1fb",
+        "relation": "background",
+        "quote": "are we on the brink of Cold War II? The historian Niall Ferguson argues that we already are.",
+        "publication_date": "2023-12-11",
+        "observation_end": "2023-12-11",
+        "limitation": "为IMF演讲中的定性设问与引用，非系统证据；且讨论地缘经济碎片化，不等同于原文“经济拉平后意识形态之争回升”的条件判断。"
+      },
+      {
+        "evidence_id": "ev-d4fb9401aad11a02bbdd35ae",
+        "relation": "background",
+        "quote": "Behind the struggle and game between China and the United States are four sets of overlapping and mutually causal logics, namely the growth and decline of the two countries’ strength, ideological differences, changes in the international environment, and domestic political influence.",
+        "publication_date": "2024-05-23",
+        "observation_end": "2024-05-23",
+        "limitation": "学术论文的因果框架，指出意识形态差异是竞争逻辑之一，但不能证明“经济拉平”是触发条件，也不能量化意识形态竞争回升。"
+      }
+    ],
+    "remaining_gap": "缺少可操作化的“经济拉平”阈值与中美（或东西方）对照的完整时间序列；缺少对意识形态竞争回升的系统量化指标（如制度模式之争、政策话语对抗的编码数据）；“东西方”在苏联解体后的对应关系需明确界定。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-0faec4964a3999a6139f",
+      "url": "https://api.worldbank.org/v2/country/US;CN/indicator/NY.GDP.PCAP.PP.CD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-r2-l2-wb-percap",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-wb-percap",
+      "archive_sha256": "fc426583cf86a8c06cfd128d329e4e9e9b9939952510dbca6eb1a0d6ada736a5",
+      "archive_path": "data/sources/r2-l2-wb-percap.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-b11c0a4895ecbd2eb37f",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.CD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-cd",
+      "published_date": "2026-10-08",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-cd",
+      "archive_sha256": "7ad5c1c4f44e15850a861521955b29727497d2cb232432f3dbc2e56ba20d4e42",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.CD.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-c46d2d3bbcefde156d1e",
+      "url": "https://history.state.gov/milestones/1989-1992/collapse-soviet-union",
+      "title": "ev-l2-soviet-collapse",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-l2-soviet-collapse",
+      "archive_sha256": "2ad477d822db290114ff9d7db517c69d10cb42510281166370f67a5cfad2e478",
+      "archive_path": "data/sources/lane2-ev-l2-soviet-collapse.html",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-eb39b841e1de0952611ba890",
+      "url": "https://ourworldindata.org/grapher/gdp-per-capita-worldbank?country=CHN%7EUSA&tab=line",
+      "resolved_url": "https://ourworldindata.org/grapher/gdp-per-capita-worldbank?country=CHN%7EUSA&tab=line",
+      "title": "GDP per capita",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:11:59.594161+00:00",
+      "archive_sha256": "f8fe521a3813a9597b1eca54ab77848b7caa017e2dacff73ffe106cfe915b26e",
+      "archive_path": "jobs/e6644a6f237e697f2e1f7aa4/f8fe521a3813a9597b1eca54ab77848b7caa017e2dacff73ffe106cfe915b26e.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d20fcd3500b88ef0c5a6ba68",
+      "url": "https://chinainfigures.com/indicators/gdp/",
+      "resolved_url": "https://chinainfigures.com/indicators/gdp/",
+      "title": "China GDP and the China–US comparison | China in Figures",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:11:59.594335+00:00",
+      "archive_sha256": "98fd43202caca7d225be4dd6b4b8e508eae0b058932f0563590f1be69a7d4d2a",
+      "archive_path": "jobs/e6644a6f237e697f2e1f7aa4/98fd43202caca7d225be4dd6b4b8e508eae0b058932f0563590f1be69a7d4d2a.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-bea0fa7e281a383c046aa1fb",
+      "url": "https://www.imf.org/en/news/articles/2023/12/11/sp121123-cold-war-ii-preserving-economic-cooperation-amid-geoeconomic-fragmentation",
+      "resolved_url": "https://www.imf.org/en/news/articles/2023/12/11/sp121123-cold-war-ii-preserving-economic-cooperation-amid-geoeconomic-fragmentation",
+      "title": "Cold War II? Preserving Economic Cooperation Amid Geoeconomic Fragmentation",
+      "published_date": "2023-12-11",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:11:59.594484+00:00",
+      "archive_sha256": "2cbd036658a1e5ced3d9cdd2d6fe52bacc6686e45de80628b455a4f9ab45d4f3",
+      "archive_path": "jobs/e6644a6f237e697f2e1f7aa4/2cbd036658a1e5ced3d9cdd2d6fe52bacc6686e45de80628b455a4f9ab45d4f3.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-52e79fb4c2e08914481e7fbb",
+      "url": "https://www.belfercenter.org/publication/great-economic-rivalry-china-vs-us",
+      "resolved_url": "https://www.belfercenter.org/publication/great-economic-rivalry-china-vs-us",
+      "title": "The Great Economic Rivalry: China vs the U.S. | The Belfer Center for Science and International Affairs",
+      "published_date": "2022-03-23",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:11:59.594625+00:00",
+      "archive_sha256": "b2a17708e8f4d84355a88d00ef64f86bcafb249d878ddb5b90b7879451f9705e",
+      "archive_path": "jobs/e6644a6f237e697f2e1f7aa4/b2a17708e8f4d84355a88d00ef64f86bcafb249d878ddb5b90b7879451f9705e.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-3da98ac79588c295c5af728e",
+      "url": "https://data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3ANY.GDP.PCAP.PP.CD%3BCountry_Code%3ACHN&q=China+GDp",
+      "resolved_url": "https://data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3ANY.GDP.PCAP.PP.CD%3BCountry_Code%3ACHN&q=China+GDp",
+      "title": "UNdata | record view | GDP per capita, PPP (current international $)",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:11.313138+00:00",
+      "archive_sha256": "43b67ad1f4908077e779b3f1c9c3dc5e728e6e877cde6ad8322521f306df2b3b",
+      "archive_path": "jobs/e6644a6f237e697f2e1f7aa4/43b67ad1f4908077e779b3f1c9c3dc5e728e6e877cde6ad8322521f306df2b3b.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d4fb9401aad11a02bbdd35ae",
+      "url": "https://link.springer.com/article/10.1007/s42533-024-00157-6",
+      "resolved_url": "https://link.springer.com/article/10.1007/s42533-024-00157-6",
+      "title": "The logic of China–US rivalry | China International Strategy Review | Springer Nature Link",
+      "published_date": "2024-05-23",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:11.313308+00:00",
+      "archive_sha256": "847e1935cb52dd74cc676dc762f50bdcde056db529a49502835846ec594ad4c9",
+      "archive_path": "jobs/e6644a6f237e697f2e1f7aa4/847e1935cb52dd74cc676dc762f50bdcde056db529a49502835846ec594ad4c9.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "World Bank GDP per capita PPP China United States 1991 2024 convergence data",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "ideological competition great power rivalry resurgence before economic convergence China US GDP gap evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "World Bank WDI China United States GDP per capita PPP constant 2021 international dollars 1991 2024 convergence gap",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "US China ideological rivalry systemic competition before economic parity GDP per capita gap 2020 2024 evidence",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少可操作化的“经济拉平”阈值与中美（或东西方）对照的完整时间序列；缺少对意识形态竞争回升的系统量化指标（如制度模式之争、政策话语对抗的编码数据）；“东西方”在苏联解体后的对应关系需明确界定。",
+  "source_statuses": [
+    {
+      "url": "https://ourworldindata.org/grapher/gdp-per-capita-worldbank?country=CHN%7EUSA&tab=line",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://chinainfigures.com/indicators/gdp/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.imf.org/en/news/articles/2023/12/11/sp121123-cold-war-ii-preserving-economic-cooperation-amid-geoeconomic-fragmentation",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.belfercenter.org/publication/great-economic-rivalry-china-vs-us",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://data.un.org/Data.aspx?d=WDI&f=Indicator_Code%3ANY.GDP.PCAP.PP.CD%3BCountry_Code%3ACHN&q=China+GDp",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1007/s42533-024-00157-6",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "1f98456a96f20d395b4a654148fa32577dca2a5cca49439255f8b2d550b2d872"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "984782146ed5748aab98a8ba37c8b3e5",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "48159b3c3a7da1ae7e36e61843a0e40f",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "95597b840b8445f18c69a9df0236fd56bce5a226363f57a0499a8c9b35660963"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "694337e1c3275e402b7d33021e2b01ec",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "6a6822595316bd6f0af127fad581ecafd4f741bb74089497079502acf2e50c25"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "a956d897242a67189c25f622bd9fda0b",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "97de7a966fe8b09a74fb37198b1cab20",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "25c78ae76000516b8e43b9a4d60f01c49c847b59759e994a0c9d642438a8ca57"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "64f687e870430f48e98a67fa491cd5a1",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "b6127eac8eb87bf31de535efc31790881960971781f8e3a84488e6cb993ba79e"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "9c672bfd7184dfc4ddc27e690a6334d11d300341e9b22228f9e33ca7c6d54b27"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000118342-000118369",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000118342-000118369",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "以中国/美国（或原东方集团/西方集团）名义GDP总量、实际PPP人均GDP等代理指标衡量经济差距是否显著缩小至“拉平”，并观察是否存在可识别的意识形态竞争回升（制度模式之争、政策话语对抗）。观察时段为1991年至cutoff 2026-11-09。",
+      "reason": "原文为条件性预测：若东西方经济水平拉平，意识形态之争可能重新兴起。现有证据显示中美PPP人均GDP差距仍大（2024年中国约27139.52国际元、美国86169.66），名义GDP与人均口径均未达到“拉平”，触发条件未满足；同时意识形态竞争是否回升缺乏可操作化的系统证据。",
+      "limitation": "“拉平”无精确阈值，且“东西方”对应关系因苏联解体而不确定；意识形态竞争回升难以量化，现有材料多为定性论述，不能作为终局判断。",
+      "evidence_ids": [
+        "prior-0faec4964a3999a6139f",
+        "ev-3da98ac79588c295c5af728e",
+        "ev-bea0fa7e281a383c046aa1fb",
+        "ev-d4fb9401aad11a02bbdd35ae"
+      ],
+      "method": "从经济差距缩小推断意识形态竞争恢复",
+      "method_basis": "inferred",
+      "observation_end": "2024-12-31",
+      "future_time_text": "",
+      "condition_state": "not_met",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-0faec4964a3999a6139f",
+          "relation": "boundary",
+          "quote": "世界银行API2024 PPP人均GDP：中国约27139.52国际元、美国86169.66；与总量排名采用不同口径。",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "仅为人均PPP口径，不能代表总量或名义GDP；差距仍大，未达“拉平”。"
+        },
+        {
+          "evidence_id": "ev-3da98ac79588c295c5af728e",
+          "relation": "boundary",
+          "quote": "| China | 2024 | 27104.8702677463 |",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "仅中国单国PPP人均序列，无美国对照；数值与世行API略有差异，属口径/版本差异。"
+        },
+        {
+          "evidence_id": "ev-bea0fa7e281a383c046aa1fb",
+          "relation": "background",
+          "quote": "are we on the brink of Cold War II? The historian Niall Ferguson argues that we already are.",
+          "publication_date": "2023-12-11",
+          "observation_end": "2023-12-11",
+          "limitation": "为IMF演讲中的定性设问与引用，非系统证据；且讨论地缘经济碎片化，不等同于原文“经济拉平后意识形态之争回升”的条件判断。"
+        },
+        {
+          "evidence_id": "ev-d4fb9401aad11a02bbdd35ae",
+          "relation": "background",
+          "quote": "Behind the struggle and game between China and the United States are four sets of overlapping and mutually causal logics, namely the growth and decline of the two countries’ strength, ideological differences, changes in the international environment, and domestic political influence.",
+          "publication_date": "2024-05-23",
+          "observation_end": "2024-05-23",
+          "limitation": "学术论文的因果框架，指出意识形态差异是竞争逻辑之一，但不能证明“经济拉平”是触发条件，也不能量化意识形态竞争回升。"
+        }
+      ],
+      "remaining_gap": "缺少可操作化的“经济拉平”阈值与中美（或东西方）对照的完整时间序列；缺少对意识形态竞争回升的系统量化指标（如制度模式之争、政策话语对抗的编码数据）；“东西方”在苏联解体后的对应关系需明确界定。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "王沪宁1991年前后文本中的条件性预测：若东西方经济水平拉平（不必倒转），意识形态之争可能重新兴起。可观察口径为：以中国/美国或原东方集团/西方集团的名义GDP总量、实际PPP人均GDP等代理指标衡量经济差距是否显著缩小至“拉平”，并观察是否存在可识别的意识形态竞争回升（如制度模式之争、政策话语对抗）。反证包括：经济差距未拉平而意识形态竞争已回升，或差距拉平后无相应回升；原东方集团国家与制度变化使“东西方”对应关系不确定。",
+  "elapsed_seconds": 31.578,
+  "completed_at": "2026-11-09T08:12:20.603543+00:00"
+}

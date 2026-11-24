@@ -1,0 +1,28 @@
+{
+  "id": "70c52ed3-2b76-4b8e-9858-190fe6a08334",
+  "object": "chat.completion",
+  "created": 1794201123,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-00007\",\"predictions\":[{\"quote\":\"如果垄断企业的趋势是阻碍进步，那我们应该抵制这种危险企业。\",\"kind\":\"unclear\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"如果垄断企业的趋势是阻碍进步，我们应抵制这种危险企业。\",\"expanded_claim\":\"如果垄断企业的趋势是阻碍进步，那么我们应该抵制这种危险企业。\",\"reference_resolutions\":[{\"expression\":\"这种危险企业\",\"referent\":\"趋势为阻碍进步的垄断企业\",\"support_quote\":\"如果垄断企业的趋势是阻碍进步\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"如果垄断企业的趋势是阻碍进步\",\"method\":\"条件性判断\",\"method_basis\":\"explicit\",\"reason\":\"以“如果……那……”形式给出条件性应对判断，属于条件性预测/判断。\"},{\"quote\":\"如果你的公司处在竞争平衡中，那它的消失对世界丝毫没有影响\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"公司若处在竞争平衡中，其消失对世界没有影响。\",\"expanded_claim\":\"如果你的公司处在竞争平衡中，那么它的消失对世界丝毫没有影响。\",\"reference_resolutions\":[{\"expression\":\"你的公司\",\"referent\":\"处于竞争平衡中的公司\",\"support_quote\":\"如果你的公司处在竞争平衡中\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"如果你的公司处在竞争平衡中\",\"method\":\"条件性推断\",\"method_basis\":\"explicit\",\"reason\":\"对处于竞争平衡中的公司给出条件性后果预测。\"},{\"quote\":\"如果当年真的留在了最高法院，我可能这辈子都只能录取证言，起草别人的商业协议，而没有机会自己去创造新事物。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔）\",\"claim\":\"若当年留在最高法院，我可能一生只做录取证言、起草商业协议，没有机会创造新事物。\",\"expanded_claim\":\"如果当年真的留在了最高法院，我可能这辈子都只能录取证言、起草别人的商业协议，而没有机会自己去创造新事物。\",\"reference_resolutions\":[{\"expression\":\"我\",\"referent\":\"彼得·蒂尔\",\"support_quote\":\"彼得，你是不是很庆幸自己当年没有竞争上书记员\"}],\"unresolved_references\":[],\"time_text\":\"当年（假设性过去）\",\"condition_text\":\"如果当年真的留在了最高法院\",\"method\":\"反事实推测\",\"method_basis\":\"explicit\",\"reason\":\"对未发生的过去选择给出可能后果的反事实预测。\"},{\"quote\":\"如果赢得当年那场竞争，我的人生就会向坏的方向转变\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔）\",\"claim\":\"若赢得当年书记员竞争，我的人生会向坏的方向转变。\",\"expanded_claim\":\"如果赢得当年那场书记员竞争，我的人生就会向坏的方向转变。\",\"reference_resolutions\":[{\"expression\":\"当年那场竞争\",\"referent\":\"最高法院书记员面试竞争\",\"support_quote\":\"我终于得到了书记员的面试资格\"}],\"unresolved_references\":[],\"time_text\":\"当年\",\"condition_text\":\"如果赢得当年那场竞争\",\"method\":\"反事实推测\",\"method_basis\":\"explicit\",\"reason\":\"对假设赢得竞争的结果给出方向性预测。\"},{\"quote\":\"如果失掉一颗星，我就会去自杀。\",\"kind\":\"unclear\",\"speaker\":\"贝尔纳·卢瓦索（转述）\",\"claim\":\"若失掉一颗米其林星，我会自杀。\",\"expanded_claim\":\"如果失掉一颗米其林星，我（贝尔纳·卢瓦索）就会去自杀。\",\"reference_resolutions\":[{\"expression\":\"我\",\"referent\":\"贝尔纳·卢瓦索\",\"support_quote\":\"法国大厨贝尔纳·卢瓦索是米其林三星得主\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"如果失掉一颗星\",\"method\":\"条件性表态\",\"method_basis\":\"explicit\",\"reason\":\"转述大厨的条件性自我预测，是否真实预测存疑，标为unclear。\"}]}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3245,
+    "completion_tokens": 872,
+    "total_tokens": 4117,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3245
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

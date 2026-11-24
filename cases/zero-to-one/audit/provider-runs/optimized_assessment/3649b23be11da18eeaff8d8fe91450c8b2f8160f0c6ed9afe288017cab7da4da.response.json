@@ -1,0 +1,28 @@
+{
+  "id": "8344cfcd-c2f8-475a-be28-fed5bf8d8215",
+  "object": "chat.completion",
+  "created": 1794201580,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000015701-000015719\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"历史叙述：纳斯达克2000年3月峰值5048点、4月跌至3321点、2002年10月触底1114点，作者回顾性称崩溃宣告90年代终结。\",\"reason\":\"原文为对已发生市场崩溃的历史阐释，非对未来结果的预测；抽取把历史判断误标为预测。\",\"limitation\":\"属回顾性因果阐释，不构成可检验的未来预测。\",\"evidence_ids\":[],\"method\":\"基于市场崩溃的因果判断\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000015881-000015903\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"历史叙述：作者称90年代后投资者转向房地产与金砖国家，结果造成房地产市场泡沫。\",\"reason\":\"原文用“结果造成了”描述已发生的房地产泡沫，属历史回顾而非未来预测；抽取将完成态误改为预测。\",\"limitation\":\"属回顾性因果归因，不构成可检验的未来预测。\",\"evidence_ids\":[],\"method\":\"基于投资流向的因果推理\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000016352-000016386\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"attribution\",\"scope\":\"转述创业信条：忽视4点经验教训者被认为会遭2000年式崩盘厄运；主体归属未确定。\",\"reason\":\"原文以被动语态转述一种信条预期，且“被认为”的主体未确定，无法确定是否为作者采纳的判断。\",\"limitation\":\"归属不明，且该表述更像对信条内容的转述而非可操作预测。\",\"evidence_ids\":[],\"method\":\"基于信条的因果判断\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000016668-000016703\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"作者主张社会仍需要新科技，甚至可能需要1999年式狂热去寻求新科技。\",\"reason\":\"这是对科技需求的规范性主张与呼吁，缺乏明确可观察的未来结果与期限，不构成可检验预测。\",\"limitation\":\"“需要”属价值判断，难以操作化为客观观察指标。\",\"evidence_ids\":[],\"method\":\"基于对科技需求的判断\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6614,
+    "completion_tokens": 639,
+    "total_tokens": 7253,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 6614
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

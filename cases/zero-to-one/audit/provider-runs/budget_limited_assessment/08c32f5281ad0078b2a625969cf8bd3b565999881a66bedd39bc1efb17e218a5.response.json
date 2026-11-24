@@ -1,0 +1,28 @@
+{
+  "id": "f99440ec-53ea-40fb-ae27-6dd1c89a613e",
+  "object": "chat.completion",
+  "created": 1794201441,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000019211-000019255\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为对创业者心理偏误的例示性描述，不涉及对特定餐厅或特定时间窗口的可观测结果预测。\",\"reason\":\"该句描述的是创业者听到餐厅高倒闭率后的本能反应，属于心理偏误的说明，而非对某餐厅生存或倒闭的预测。\",\"limitation\":\"原文未给出可核验的预测对象、指标或期限，无法作为预测性判断评估。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4337,
+    "completion_tokens": 167,
+    "total_tokens": 4504,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3569
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

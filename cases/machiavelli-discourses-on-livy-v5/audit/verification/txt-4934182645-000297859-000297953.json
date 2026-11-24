@@ -1,0 +1,51 @@
+{
+  "id": "txt-4934182645-000297859-000297953",
+  "plan": {
+    "object": "各国。警告是同段列举的那一类：修士的预言、空中交战的人马、雷击大教堂尖顶、闪电击中宫室、超过凡人的声音。不是普通的政治劝告，也不是每一次雷雨。",
+    "condition": "after them。灾难要发生在这类警告之后。主教若把雷击说成“若不悔改才会有更大瘟疫”，这是带条件的警告，不能改写成作者那句无条件的 always。",
+    "quantifier": "always。一次警告之后确实发生灾难，不能单独做成部分符合，也不能把 always 判成成立。",
+    "result": "登记变化是 disasters befall，而且是 new and strange disasters。雷击造成的建筑损毁本身是征兆，不是这句要核的随后那场新灾难。",
+    "window": "1531至2026-11-15。查理八世、洛伦佐和索代里尼都在出版代理年之前，不用来核验。",
+    "counterevidence_needed": "一次同段那一类的公开警告之后，没有新的奇怪灾难落到该国。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "lightning struck cathedral or palace taken as omen before a national disaster after 1531",
+      "counter_query": "reported apparition in the sky or thunderbolt omen no disaster followed historical account"
+    },
+    "adaptive_rounds": 1,
+    "adaptive": {
+      "strategy": "把同一座城市里被说成瘟疫警告的雷击，和随后的瘟疫分开查，再按同一对象连结",
+      "queries": ["London plague 1563 deaths after St Paul's steeple burned 1561"]
+    },
+    "kept_urls": [
+      "https://www.tudorsociety.com/4-june-lightning-strikes-st-pauls/",
+      "https://en.wikipedia.org/wiki/1563_London_plague"
+    ],
+    "dropped": "1492年佛罗伦萨的雷击早于1531。李维和奥布塞昆斯的征兆也早于1531。苏黎世1572年的雷击在材料里被写成仁慈和火被扑灭，没有写成对全国的警告。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-tudor-stpauls-1561", "ev-wiki-london-plague-1563"],
+    "scope": "一次大教堂被雷击、并被公开说成对伦敦的更大瘟疫警告，其后伦敦确实发生大瘟疫。这可以连结。它不通过 always，也不单独构成部分符合。",
+    "reason": "都铎学会页写，1561年6月4日闪电烧着圣保罗大教堂尖顶。达勒姆主教皮尔金顿在保罗十字架讲道，称这是对全国、尤其是伦敦的总警告：若各阶层不改正生活，就会有更大的瘟疫。维基页写，1563年6月至1564年1月伦敦及附近至少有20136人死于瘟疫，约占伦敦人口百分之二十四。两页是同一座城市；警告点名的是更大的瘟疫，瘟疫页写的是其后两年内的这场瘟疫，可以连结，不是猜测。但讲道把瘟疫放在“若不悔改”之下，作者的 always 没有这个条件。一次连得上的序列不能把 always 判成成立，按既定口径也不能单靠一次相似给部分符合。反例检索没有给出1531年之后、同属这类警告、而其后没有新灾难的正文。决定性缺口是 always 没有被一对正反事例判定。",
+    "limitation": "两页都没有出版日。雷击日是1561年6月4日。瘟疫写成1563年6月开始。讲道里的“若不悔改”保留在限制里，不删掉。",
+    "method": "先按同段例子确定警告是公开的非常征兆，再把同一城市的警告和随后的灾难连起来，最后才看 always。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "伦敦1561年的雷击被说成更大瘟疫的警告，1563年瘟疫杀死约四分之一人口。讲道带有悔改条件，一次序列也不支撑 always。"
+  }
+}

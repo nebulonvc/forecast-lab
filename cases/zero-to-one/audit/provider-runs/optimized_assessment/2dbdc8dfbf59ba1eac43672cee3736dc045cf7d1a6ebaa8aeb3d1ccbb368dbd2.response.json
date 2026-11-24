@@ -1,0 +1,28 @@
+{
+  "id": "04c6de36-02bd-403f-ad72-00f3846d6267",
+  "object": "chat.completion",
+  "created": 1794201591,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000070915-000070949\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性判断：若某公司最先占领有病毒式营销前景的细分市场，则成为整个市场定局者；无具体市场、期限与指标，无法在观察窗口内操作化验证。\",\"reason\":\"原文以“谁最先……谁就能……”给出条件性未来判断，但未指定具体市场、时间或可观测指标，无法确定条件是否发生及结果是否实现。\",\"limitation\":\"条件未确定且无具体可检验对象，不能以PayPal个案代替一般命题；无证据可引用。\",\"evidence_ids\":[],\"method\":\"条件推理\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000071223-000071270\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"对PayPal已占领eBay超级卖家细分市场后扩张态势的历史修辞，非可检验的未来预测。\",\"reason\":\"原文“一旦……就……”在此语境中是对PayPal已发生平台扩张的回顾性修辞，不是对未来全球无敌的承诺。\",\"limitation\":\"“打遍天下无敌手”为夸张修辞，缺乏可操作化指标；按非预测排除。\",\"evidence_ids\":[],\"method\":\"条件推理\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5109,
+    "completion_tokens": 352,
+    "total_tokens": 5461,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 4341
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

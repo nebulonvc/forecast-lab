@@ -1,0 +1,441 @@
+{
+  "claim_id": "txt-1c4066fc0c-000230939-000230970",
+  "version": "search-verifier-v1",
+  "input_sha256": "e01186e1bf379b8de71dcc48c2bdfe41f75106f8524c8e6ac042d0a6ab9fff38",
+  "cutoff": "2026-11-09",
+  "task_state": "partial",
+  "assessment": null,
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000230939-000230970",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象为美国大量离家出走/游离青少年队列；观察口径为成年早期教育完成、住房稳定、心理健康与物质依赖等群体风险，与一般青少年比较；观察时段为1994-1995学年至2008-2009年（Add Health队列）及9年级至21岁队列。",
+    "reason": "纵向研究显示，离家出走青少年在成年早期有更高的药物依赖评分和抑郁症状，且离家出走-无家可归经历对高中学业完成有不利影响，沿原文“教育机会缺失、心理结构受损”的方向发展。但原文的宏观“社会预后不良”未被直接检验，且多数新近无家可归青少年较快返回家庭或稳定住房，构成反向证据。",
+    "limitation": "证据只覆盖个体成年早期结果，不能直接外推到美国社会整体预后；部分研究样本以白人为主或非全国代表，且“社会预后”缺乏可操作终局指标。",
+    "evidence_ids": [
+      "ev-95170ad3ee3d259b8d394c0d",
+      "ev-496c1031055c5a739f09ef70",
+      "ev-a587fff01a0f2d533e92abe0",
+      "ev-4889ba0ac92181cca4dd7206",
+      "ev-0af5d9208fdd626dc879d770"
+    ],
+    "method": "由青少年成长环境推演社会未来人力与心理基础",
+    "method_basis": "explicit",
+    "observation_end": "2009-12-31",
+    "future_time_text": "社会预后",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-95170ad3ee3d259b8d394c0d",
+        "relation": "support",
+        "quote": "In turn, runaways had higher drug dependence scores and more depressive symptoms at age 21 than non-runaways, even after taking these antecedent risk factors into account.",
+        "publication_date": "2010-01-01",
+        "observation_end": null,
+        "limitation": "样本为4,329名青年、85%白人，非全国代表；仅证明个体健康结果关联，不证明宏观社会预后。"
+      },
+      {
+        "evidence_id": "ev-496c1031055c5a739f09ef70",
+        "relation": "support",
+        "quote": "In turn, runaways had higher drug dependence scores and more depressive symptoms at age 21 than non-runaways, even after taking these antecedent risk factors into account.",
+        "publication_date": "2010-07-18",
+        "observation_end": null,
+        "limitation": "同一队列的期刊版本；观察至21岁，不能覆盖更长成年期或社会整体。"
+      },
+      {
+        "evidence_id": "ev-a587fff01a0f2d533e92abe0",
+        "relation": "support",
+        "quote": "The findings suggest that having runaway-homeless episodes have a detrimental effect on academic achievement.",
+        "publication_date": "2012-08-14",
+        "observation_end": null,
+        "limitation": "使用倾向分数匹配控制混杂，但仍为观察性关联；聚焦高中辍学，不覆盖就业与犯罪。"
+      },
+      {
+        "evidence_id": "ev-4889ba0ac92181cca4dd7206",
+        "relation": "counter",
+        "quote": "Most newly homeless adolescents returned home (70% U.S., 47% Australia) for significant amounts of time (39% U.S., 17% Australia more than 12 months) within two years of becoming homeless.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "样本为新近无家可归青少年，含美国与澳大利亚两地，不能代表全部游离青少年；返回家庭不等于教育或心理结果良好。"
+      },
+      {
+        "evidence_id": "ev-0af5d9208fdd626dc879d770",
+        "relation": "counter",
+        "quote": "The vast majority of youth returned to stable housing quickly; however, early experiences of homelessness, even at this young age, were observed to have a substantial negative impact on future housing.",
+        "publication_date": "2016-03-09",
+        "observation_end": null,
+        "limitation": "样本243人、七年随访；多数较快稳定住房，但早期无家可归仍对后续住房有负面影响，方向不完全一致。"
+      }
+    ],
+    "remaining_gap": "缺少直接检验“大量游离青少年是否导致美国社会整体预后不良”的宏观指标（如全国人力资本、犯罪率、社会信任等）及与一般青少年可比的全国代表性长期队列。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-d1dbadfb9604e4624cb0",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5074054/",
+      "title": "ev-r2-l3-runaway-longitudinal",
+      "published_date": "2015-03-24",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-runaway-longitudinal",
+      "archive_sha256": "0e37b0737dd45a1e62b372d4b261d1be6cfb23b588ae205e638b6e8f5620bc84",
+      "archive_path": "data/sources/r2-l3-nlsy.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-7be41b42ed00f422c88c",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4110912/",
+      "title": "ev-r2-l3-runaway-recovery",
+      "published_date": "2009-11-19",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-runaway-recovery",
+      "archive_sha256": "e6b66d9b71b7598d3a0b0258516f0b48354fdcbee1c44ebdbc1f63041ed3627b",
+      "archive_path": "data/sources/r2-l3-runaway-recovery.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-52a747890236f5a83b951cf7",
+      "url": "https://www.nationalrunawaysafeline.org/wp-content/uploads/2015/05/NRS-Longitudinal-study-full-report.pdf",
+      "resolved_url": "https://www.nationalrunawaysafeline.org/wp-content/uploads/2015/05/NRS-Longitudinal-study-full-report.pdf",
+      "title": "THE RUNAWAY YOUTH LONGITUDINAL STUDY",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:43.859106+00:00",
+      "archive_sha256": "27b1d292525ee5f2e86d67745c69ffb50892ab5574363bda8095931409a34c64",
+      "archive_path": "jobs/0326ef23d16705b4fe904841/27b1d292525ee5f2e86d67745c69ffb50892ab5574363bda8095931409a34c64.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-95170ad3ee3d259b8d394c0d",
+      "url": "https://www.rand.org/pubs/external_publications/EP20100140.html",
+      "resolved_url": "https://www.rand.org/pubs/external_publications/EP20100140.html",
+      "title": "Running Away from Home: A Longitudinal Study of Adolescent Risk Factors and Young Adult Outcomes | RAND",
+      "published_date": "2010-01-01",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:43.859252+00:00",
+      "archive_sha256": "b9ff22ba708e81512816c4e1f06447ce34693c68f82481074f5625c47f725372",
+      "archive_path": "jobs/0326ef23d16705b4fe904841/b9ff22ba708e81512816c4e1f06447ce34693c68f82481074f5625c47f725372.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a587fff01a0f2d533e92abe0",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4308975/",
+      "resolved_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4308975/",
+      "title": "The Effects of Runaway-Homeless Episodes on High School Dropout",
+      "published_date": "2012-08-14",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:43.859389+00:00",
+      "archive_sha256": "cd4e89cba66b8e48b33cf9053eb7ec08930d319c32b3fa1ed39d8329efe6c7a9",
+      "archive_path": "jobs/0326ef23d16705b4fe904841/cd4e89cba66b8e48b33cf9053eb7ec08930d319c32b3fa1ed39d8329efe6c7a9.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-4889ba0ac92181cca4dd7206",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1975682/",
+      "resolved_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1975682/",
+      "title": "Newly Homeless Youth Typically Return Home",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:43.859515+00:00",
+      "archive_sha256": "637722ba93c56ff156796a8f3b35af99936164e64543597f07f7f622debf1cf9",
+      "archive_path": "jobs/0326ef23d16705b4fe904841/637722ba93c56ff156796a8f3b35af99936164e64543597f07f7f622debf1cf9.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-496c1031055c5a739f09ef70",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3021590/",
+      "resolved_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3021590/",
+      "title": "Running Away From Home: A Longitudinal Study of Adolescent Risk Factors and Young Adult Outcomes",
+      "published_date": "2010-07-18",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:51.956843+00:00",
+      "archive_sha256": "5d0902cd5d0afb2365882b7ecb73d032d399631217b951ea62fccadf0b787fa5",
+      "archive_path": "jobs/0326ef23d16705b4fe904841/5d0902cd5d0afb2365882b7ecb73d032d399631217b951ea62fccadf0b787fa5.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-0af5d9208fdd626dc879d770",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4795908/",
+      "resolved_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4795908/",
+      "title": "Understanding the Attainment of Stable Housing: A Seven-Year Longitudinal Analysis of Homeless Adolescents",
+      "published_date": "2016-03-09",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:51.957022+00:00",
+      "archive_sha256": "060cf20f2ad13211f1de0eae0788c13cbedf756d7e5399df30eff570c3e31172",
+      "archive_path": "jobs/0326ef23d16705b4fe904841/060cf20f2ad13211f1de0eae0788c13cbedf756d7e5399df30eff570c3e31172.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "runaway youth longitudinal study adult outcomes homelessness education employment criminal victimization United States cohort",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "runaway homeless youth longitudinal recovery reunification school employment majority stable exit study",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "National Longitudinal Study of Adolescent Health runaway youth adult outcomes education employment criminal justice health longitudinal nationally representative",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "newly homeless runaway youth longitudinal return home stable exit majority reunification school reengagement study",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [
+    {
+      "stage": "worker",
+      "error": "cached_response_invalid_17e129d30612:semantic_review_quote_not_in_supplied_text"
+    }
+  ],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-4889ba0ac92181cca4dd7206"
+      ]
+    }
+  ],
+  "remaining_gap": "任务未完成；查看错误、已取得材料和请求状态，不能据此判断原预测。",
+  "source_statuses": [
+    {
+      "url": "https://www.nationalrunawaysafeline.org/wp-content/uploads/2015/05/NRS-Longitudinal-study-full-report.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.rand.org/pubs/external_publications/EP20100140.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4308975/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1975682/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3021590/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4795908/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 7,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "695da3152e295c9cede24dc58c6cb4aa4038ee8eb7041fb6b49a8126b8b5fde7"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "d00cc107e988ecc48cd8276a0f0a5ad4",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "2d212bbcbed334847f5259d927c93dcc",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "0abd907b8fac00d78ac57e98a1cff2f12544135ee9adb03c0ff68861ad360420"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "69e4a224cf56fa3ed7f6bce2f17c91d3",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "74d021ddc537967268d7f08b7ae8fa00f5aae8fb6e11bc5bcc1d3d0878517260"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "5bcfa600de3fb068fd20faf1d84443f6",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "5c7026b64e0ddc860332ee224f786a04",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "550feec013ad9ed69e2c1b54d6483c53bd97cbad33cbeb6c358470ceace5a30f"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "1890312de292d5a2f01ff014601e74e5",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "bc75d2cf8dfec6f0e6b9cbf360eb677d72b40321787ecaab4face4547e97f9b2",
+      "validation_error": "evidence_quote_not_in_shown_source"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "cf66906e0db869fb8d8f9912affb58b52ec495750d3962245b24b83266b2d567"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "17e129d30612e71bc349e3bca2c99c6e95aa54ca2a5e4ff8a5ff82c4507e2157",
+      "validation_error": "semantic_review_quote_not_in_supplied_text"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "bc75d2cf8dfec6f0e6b9cbf360eb677d72b40321787ecaab4face4547e97f9b2",
+      "validation_error": "evidence_quote_not_in_shown_source"
+    }
+  ],
+  "semantic_reviews": [],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000230939-000230970",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象为美国大量离家出走/游离青少年队列；观察口径为成年早期教育完成、住房稳定、心理健康与物质依赖等群体风险，与一般青少年比较；观察时段为1994-1995学年至2008-2009年（Add Health队列）及9年级至21岁队列。",
+      "reason": "纵向研究显示，离家出走青少年在成年早期有更高的药物依赖评分和抑郁症状，且离家出走-无家可归经历对高中学业完成有不利影响，沿原文“教育机会缺失、心理结构受损”的方向发展。但原文的宏观“社会预后不良”未被直接检验，且多数新近无家可归青少年较快返回家庭或稳定住房，构成反向证据。",
+      "limitation": "证据只覆盖个体成年早期结果，不能直接外推到美国社会整体预后；部分研究样本以白人为主或非全国代表，且“社会预后”缺乏可操作终局指标。",
+      "evidence_ids": [
+        "ev-95170ad3ee3d259b8d394c0d",
+        "ev-496c1031055c5a739f09ef70",
+        "ev-a587fff01a0f2d533e92abe0",
+        "ev-4889ba0ac92181cca4dd7206",
+        "ev-0af5d9208fdd626dc879d770"
+      ],
+      "method": "由青少年成长环境推演社会未来人力与心理基础",
+      "method_basis": "explicit",
+      "observation_end": "2009-12-31",
+      "future_time_text": "社会预后",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-95170ad3ee3d259b8d394c0d",
+          "relation": "support",
+          "quote": "In turn, runaways had higher drug dependence scores and more depressive symptoms at age 21 than non-runaways, even after taking these antecedent risk factors into account.",
+          "publication_date": "2010-01-01",
+          "observation_end": null,
+          "limitation": "样本为4,329名青年、85%白人，非全国代表；仅证明个体健康结果关联，不证明宏观社会预后。"
+        },
+        {
+          "evidence_id": "ev-496c1031055c5a739f09ef70",
+          "relation": "support",
+          "quote": "In turn, runaways had higher drug dependence scores and more depressive symptoms at age 21 than non-runaways, even after taking these antecedent risk factors into account.",
+          "publication_date": "2010-07-18",
+          "observation_end": null,
+          "limitation": "同一队列的期刊版本；观察至21岁，不能覆盖更长成年期或社会整体。"
+        },
+        {
+          "evidence_id": "ev-a587fff01a0f2d533e92abe0",
+          "relation": "support",
+          "quote": "The findings suggest that having runaway-homeless episodes have a detrimental effect on academic achievement.",
+          "publication_date": "2012-08-14",
+          "observation_end": null,
+          "limitation": "使用倾向分数匹配控制混杂，但仍为观察性关联；聚焦高中辍学，不覆盖就业与犯罪。"
+        },
+        {
+          "evidence_id": "ev-4889ba0ac92181cca4dd7206",
+          "relation": "counter",
+          "quote": "Most newly homeless adolescents returned home (70% U.S., 47% Australia) for significant amounts of time (39% U.S., 17% Australia more than 12 months) within two years of becoming homeless.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "样本为新近无家可归青少年，含美国与澳大利亚两地，不能代表全部游离青少年；返回家庭不等于教育或心理结果良好。"
+        },
+        {
+          "evidence_id": "ev-0af5d9208fdd626dc879d770",
+          "relation": "counter",
+          "quote": "The vast majority of youth returned to stable housing quickly; however, early experiences of homelessness, even at this young age, were observed to have a substantial negative impact on future housing.",
+          "publication_date": "2016-03-09",
+          "observation_end": null,
+          "limitation": "样本243人、七年随访；多数较快稳定住房，但早期无家可归仍对后续住房有负面影响，方向不完全一致。"
+        }
+      ],
+      "remaining_gap": "缺少直接检验“大量游离青少年是否导致美国社会整体预后不良”的宏观指标（如全国人力资本、犯罪率、社会信任等）及与一般青少年可比的全国代表性长期队列。"
+    }
+  ],
+  "autonomous_decision": false,
+  "semantic_validation": null,
+  "scope": "对象为美国大量离家出走/游离青少年队列；条件为其在家庭紧张、教育机会缺失和犯罪风险环境中成长；可观察口径为后续成年期教育完成、就业、住房稳定、犯罪受害/参与及心理健康等群体风险，并与一般青少年比较；反证包括多数游离青少年较快稳定脱离、复学就业或恢复支持网络，以及群体风险未转化为宏观社会预后。",
+  "elapsed_seconds": 42.114,
+  "completed_at": "2026-11-09T08:13:17.149604+00:00"
+}

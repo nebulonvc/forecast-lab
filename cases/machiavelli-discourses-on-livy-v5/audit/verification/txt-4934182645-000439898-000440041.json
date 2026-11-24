@@ -1,0 +1,51 @@
+{
+  "id": "txt-4934182645-000439898-000440041",
+  "plan": {
+    "object": "“战争不久将完全用火炮进行”这个说法。完全用火炮，是不再由步兵抵近、白刃和肉搏来完成战斗。一次要塞被炮击迫降，不是战争整体。",
+    "condition": "will always be so held by those who are willing to follow the usages of ancient valour。古代勇武在同段是训练军队抵近敌人、进到剑及之处并扭打，而且更多依靠步兵。",
+    "quantifier": "utterly，以及 will always be so held。观察窗到截止日为止。截止日之前这个说法仍被按古代勇武用兵的人否定，就是这句的结果。",
+    "result": "登记变化是 utterly untrue。要核验的是这个说法不真，不是火炮是否有力。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "战争已经完全用火炮进行，抵近和步兵不再是战斗的基础。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "infantry still decisive close combat not artillery alone modern war military historian",
+      "counter_query": "war fought entirely by artillery bombardment without infantry assault"
+    },
+    "adaptive_rounds": 1,
+    "adaptive": {
+      "strategy": "改查截止日前仍在进行的战争里，步兵是否仍必须夺取并守住土地",
+      "queries": ["infantry must still seize and hold ground artillery cannot occupy Ukraine war analysis"]
+    },
+    "kept_urls": [
+      "https://www.clausewitzstudies.org/readings/OnWar1873/BK5ch04.html",
+      "https://www.csis.org/analysis/seven-contemporary-insights-state-ukraine-war"
+    ],
+    "dropped": "1862年普拉斯基堡在炮击后投降，没有步兵突击。那是一座要塞，不是战争完全改由火炮进行。凡尔登的炮击之后仍是步兵的消耗战。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "正确",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unconditional",
+    "future_time_text": "",
+    "observation_end": "2025-11-17",
+    "evidence_ids": ["ev-clausewitz-artillery", "ev-csis-ukraine-infantry-2025"],
+    "scope": "说法是战争不久将完全用火炮进行。两页都写火力很强，但近战和步兵仍是夺取并守住土地的基础。",
+    "reason": "克劳塞维茨写，当时战争里火力的摧毁作用最有效，但人对人的近战仍是战斗的真正基础，因此一支只有火炮的军队在战争中是荒谬的，三种兵种里步兵的独立价值最高。战略与国际研究中心2025年11月17日的文章写，尽管大量使用无人机，步兵比以往更重要，因为要守住土地；俄军夺取地形仍必须靠步兵，乌克兰旅保留三到五个步兵营。从十九世纪到2025年10月的实地观察，战争没有变成完全用火炮进行。愿意按抵近和步兵来用兵的人仍然这样看。一座要塞被炮击迫降，没有把战争整体变成纯火炮。",
+    "limitation": "克劳塞维茨网页没有单独的出版日，句子属于《战争论》。战略与国际研究中心文章发表于2025年11月17日，早于截止日，作者的实地观察写到2025年10月。观察停在这篇已发表的报告，不延伸到截止日之后。",
+    "method": "用“完全用火炮”对照同段的抵近和步兵，再看截止日前的战争是否仍要步兵夺取并守住土地。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "pass",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "近战仍被写成战斗基础，2025年的战争仍要步兵守地和夺地。纯炮兵军队被写成荒谬。要塞炮击不是战争整体。"
+  }
+}

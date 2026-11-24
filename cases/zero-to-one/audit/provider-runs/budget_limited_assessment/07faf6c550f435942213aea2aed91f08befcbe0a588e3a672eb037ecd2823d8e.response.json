@@ -1,0 +1,28 @@
+{
+  "id": "b0892ea3-a632-4d6b-8b74-dbc040be60be",
+  "object": "chat.completion",
+  "created": 1794201448,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000042909-000042931\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"作者对“对未来不明确的乐观主义”能否持续的态度判断，无期限、无量化指标；观察时段为出版（2014）至cutoff（2026-11-09）。\",\"reason\":\"该判断是对一种社会态度可持续性的规范性/概念性论断，缺乏可操作化的观察指标与期限，无法用客观数据直接验证。\",\"limitation\":\"“不明确的乐观主义”未定义，且无对应统计口径；不能以宏观增长或个别事件替代。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000042932-000042954\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性判断：若无规划未来则未来不可能变好；条件“无规划”未明确界定，观察时段为出版至cutoff。\",\"reason\":\"条件“没有规划未来”未给出可操作定义，且“未来越变越好”无统一指标，无法判定条件是否满足及结果方向。\",\"limitation\":\"条件与结果均模糊，不能以相似事件或宏观趋势替代；保留为条件未确定。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7482,
+    "completion_tokens": 349,
+    "total_tokens": 7831,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 6714
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

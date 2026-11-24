@@ -1,0 +1,956 @@
+{
+  "claim_id": "txt-1c4066fc0c-000179063-000179098",
+  "version": "search-verifier-v2",
+  "input_sha256": "114183a82eaf63b19a08ecd5855aec78f0889acc92f66843aa5e772eb917ca15",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000179063-000179098",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象为美国社会服务/福利开支及纳税人负担引发的全国性政治争论；观察口径为1991年出版后至截止日前联邦福利立法与预算协商中围绕福利开支、资格与税负的争议频率与强度，含1993-1996年福利改革辩论、两次总统否决、1996年立法，以及2023年SNAP工作要求与债务上限协商中的福利资格争议。",
+    "reason": "原文预测围绕福利开支及纳税人负担的争论将愈演愈烈。1993-1996年出现约三年福利改革辩论、H.R.4两次被否决并于1996年8月签署，2023年SNAP工作要求又进入债务上限协商和农业法案讨论，显示该议题在多个时段反复成为全国性争议，方向与预测一致。",
+    "limitation": "原文未给期限和量化指标，本评估以立法与预算争议事件作代理，不能量化争论强度是否单调上升；prior-9b657e0516dd91780ae7同时提到否决后两党合作增多，说明争论存在阶段性缓和，故只判趋势符合而非终局正确。",
+    "evidence_ids": [
+      "ev-d5e39e01a9b0b916c8b29679",
+      "ev-0ce975742652e8df96beffc0",
+      "prior-9b657e0516dd91780ae7",
+      "prior-de993ffec3fad643c5b7",
+      "prior-e1c8b624bf7b57aa91c3"
+    ],
+    "method": "由财政负担与政治利益冲突外推争论升级",
+    "method_basis": "explicit",
+    "observation_end": "2023-10-05",
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-d5e39e01a9b0b916c8b29679",
+        "relation": "support",
+        "quote": "Some 3 years' debate followed President Clinton's call \"to end welfare as we know it.\"",
+        "publication_date": "2001-02-07",
+        "observation_end": "1996-08-22",
+        "limitation": "2001年回顾性报告，非实时记录；证明辩论持续与立法过程，不直接量化争论强度。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-0ce975742652e8df96beffc0",
+        "relation": "support",
+        "quote": "I am returning herewith without my approval H.R. 4, the \"Personal Responsibility and Work Opportunity Act of 1995.\"",
+        "publication_date": "1996-01-09",
+        "observation_end": "1996-01-09",
+        "limitation": "否决文本证明争议激烈，但属单一事件，不能单独代表整个观察期趋势。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-9b657e0516dd91780ae7",
+        "relation": "boundary",
+        "quote": "1996年8月1日国会记录中，参议院民主党领袖Daschle回顾18个月福利辩论及两次总统否决，同时指出经过否决后两党合作增多。",
+        "publication_date": "1996-08-01",
+        "observation_end": "1996-08-01",
+        "limitation": "已登记摘要而非完整原文，且同时提到两党合作增多，说明争论并非单向升级，构成方向性边界。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-de993ffec3fad643c5b7",
+        "relation": "support",
+        "quote": "Brookings研究者指出SNAP工作要求是否修改的辩论近年加强；2023债务上限协商改变资格要求，并进入后续农业法案讨论。",
+        "publication_date": "2023-10-05",
+        "observation_end": "2023-10-05",
+        "limitation": "聚焦SNAP工作要求，属福利开支相关争论的一个分项，不能代表全部社会服务开支争议。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-e1c8b624bf7b57aa91c3",
+        "relation": "support",
+        "quote": "CRS记录拜登与众院议长债务上限协商中的SNAP修改提案，既扩工作年龄要求又豁免部分群体。",
+        "publication_date": "2023-05-31",
+        "observation_end": "2023-05-31",
+        "limitation": "记录的是协商中的提案，证明争议存在，不证明争论强度持续上升。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺少1991年至截止日前围绕福利开支与纳税人负担争论强度的连续可比指标（如听证、法案提出、否决、预算协商频率），无法量化是否单调升级；现有材料只能支持该议题反复成为全国性争议的趋势判断。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000179063-000179098",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象为美国社会服务/福利开支及纳税人负担引发的全国性政治争论；观察口径为1991年至截止日前联邦福利立法、预算协商中围绕福利开支、资格与税负的争议频率与强度，含1995-1996年福利改革辩论、两次否决及1996年立法。",
+    "reason": "原文预测围绕福利开支及纳税人负担的争论将愈演愈烈。1995-1996年福利改革经历约三年辩论、H.R.4两次被否决并于1996年8月签署，显示争论在观察窗口内确实升级，方向与预测一致。",
+    "limitation": "原文未给期限和量化指标，本评估以立法争议强度作代理；1996年后争论是否持续升温未在材料中充分覆盖，且争论强度不等于纳税人负担本身加重。",
+    "evidence_ids": [
+      "ev-d5e39e01a9b0b916c8b29679",
+      "ev-0ce975742652e8df96beffc0",
+      "prior-9b657e0516dd91780ae7"
+    ],
+    "method": "由财政负担与政治利益冲突外推争论升级",
+    "method_basis": "explicit",
+    "observation_end": "1996-08-22",
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-d5e39e01a9b0b916c8b29679",
+        "relation": "support",
+        "quote": "Some 3 years' debate followed President Clinton's call \"to end welfare as we know it.\"",
+        "publication_date": "2001-02-07",
+        "observation_end": "1996-08-22",
+        "limitation": "该来源为2001年回顾性报告，非当时实时记录；仅证明辩论持续与立法过程，不直接量化争论强度。"
+      },
+      {
+        "evidence_id": "ev-0ce975742652e8df96beffc0",
+        "relation": "support",
+        "quote": "I am returning herewith without my approval H.R. 4, the \"Personal Responsibility and Work Opportunity Act of 1995.\"",
+        "publication_date": "1996-01-09",
+        "observation_end": "1996-01-09",
+        "limitation": "否决文本证明争议激烈，但属单一事件，不能单独代表整个观察期争论趋势。"
+      },
+      {
+        "evidence_id": "prior-9b657e0516dd91780ae7",
+        "relation": "support",
+        "quote": "1996年8月1日国会记录中，参议院民主党领袖Daschle回顾18个月福利辩论及两次总统否决，同时指出经过否决后两党合作增多。",
+        "publication_date": "1996-08-01",
+        "observation_end": "1996-08-01",
+        "limitation": "该条为已登记摘要而非完整原文，且同时提到两党合作增多，说明争论并非单向升级。"
+      }
+    ],
+    "remaining_gap": "缺少1996年以后至截止日前围绕福利开支与纳税人负担争论强度的连续可比指标，无法判断长期趋势是否持续。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-9b657e0516dd91780ae7",
+      "url": "https://www.govinfo.gov/link/crec/142/S/9412",
+      "title": "ev-lane3-welfare1996",
+      "published_date": "1996-08-01",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "1996-08-01",
+        "latest": "1996-08-01"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-welfare1996",
+      "archive_sha256": "a2277a70b86de2633a68a351f937c625f9e0adf421ec019db1ba0755b2d61c06",
+      "archive_path": "data/sources/lane3-welfare1996.pdf",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-de993ffec3fad643c5b7",
+      "url": "https://www.brookings.edu/articles/a-primer-on-snap-work-requirements-october-2023/",
+      "title": "ev-lane3-snap2023",
+      "published_date": "2023-10-05",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2023-10-05",
+        "latest": "2023-10-05"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-snap2023",
+      "archive_sha256": "6421dd3859464a0f28ad8a710940827ded742300569e93dd569e4a57395f249a",
+      "archive_path": "data/sources/lane3-web-extracts.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-e1c8b624bf7b57aa91c3",
+      "url": "https://www.congress.gov/crs_external_products/IN/PDF/IN12165/IN12165.1.pdf",
+      "title": "ev-lane3-snapcrs",
+      "published_date": "2023-05-31",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2023-05-31",
+        "latest": "2023-05-31"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-snapcrs",
+      "archive_sha256": "d1ab410527ffab8d70473dc1db7eec9b599b282b58c26738db5be59ed345db92",
+      "archive_path": "data/sources/lane3-snapcrs.pdf",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-cfc37a4669d0a8f3e22b6c72",
+      "url": "https://www.everycrsreport.com/files/20010207_RS20807_c9b18070b6269eac37d3074ab721fa53dcdeb4cc.pdf",
+      "resolved_url": "https://www.everycrsreport.com/files/20010207_RS20807_c9b18070b6269eac37d3074ab721fa53dcdeb4cc.pdf",
+      "title": "Short History of the 1996 Welfare Reform Law",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:09.468488+00:00",
+      "archive_sha256": "9e402d281c1538d888d1b75ce5290dc0277b7b35c28c9835b42d12b8e381ec44",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/9e402d281c1538d888d1b75ce5290dc0277b7b35c28c9835b42d12b8e381ec44.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-0ce975742652e8df96beffc0",
+      "url": "https://clintonwhitehouse6.archives.gov/1996/01/1996-01-09-president-veto-of-welfare-reform-bill-hr.html",
+      "resolved_url": "https://clintonwhitehouse6.archives.gov/1996/01/1996-01-09-president-veto-of-welfare-reform-bill-hr.html",
+      "title": "",
+      "published_date": "1996-01-09",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "1996-01-09",
+        "latest": "1996-01-09"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:09.468627+00:00",
+      "archive_sha256": "4b4600889503fce3c1cb7f55099b6311bf464c21ddc9a49960c0e82105a7cab8",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/4b4600889503fce3c1cb7f55099b6311bf464c21ddc9a49960c0e82105a7cab8.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-adda1940f002bc65363eec7b",
+      "url": "https://www.congress.gov/crs-product/R44668",
+      "resolved_url": "https://www.congress.gov/crs-product/R44668",
+      "title": "The Temporary Assistance for Needy Families (TANF) Block Grant: A Legislative History | Congress.gov | Library of Congress",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:09.468723+00:00",
+      "archive_sha256": "521583136338bb4a917f1c00985a0a0c7b71739f065c5bba255e4e8194a05dc8",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/521583136338bb4a917f1c00985a0a0c7b71739f065c5bba255e4e8194a05dc8.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-fcb849cd84ab9f3ccc849a8c",
+      "url": "https://www.everycrsreport.com/reports/R41823.html",
+      "resolved_url": "https://www.everycrsreport.com/reports/R41823.html",
+      "title": "Low-Income Assistance Programs: Trends in Federal Spending - EveryCRSReport.com",
+      "published_date": "2012-06-13",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2012-06-13",
+        "latest": "2012-06-13"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:09.468809+00:00",
+      "archive_sha256": "97fb3a292a246b4c3dc6260627201fe08b83c6edd75ee01c02ced8a5a07dd867",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/97fb3a292a246b4c3dc6260627201fe08b83c6edd75ee01c02ced8a5a07dd867.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d5e39e01a9b0b916c8b29679",
+      "url": "https://www.everycrsreport.com/reports/RS20807.html",
+      "resolved_url": "https://www.everycrsreport.com/reports/RS20807.html",
+      "title": "Short History of the 1996 Welfare Reform Law - EveryCRSReport.com",
+      "published_date": "2001-02-07",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2001-02-07",
+        "latest": "2001-02-07"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:16.927516+00:00",
+      "archive_sha256": "08ea28e2c85e49369b0a13a1e2ed2959c04d9468452ad9e5e5fd9f90dc6a0766",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/08ea28e2c85e49369b0a13a1e2ed2959c04d9468452ad9e5e5fd9f90dc6a0766.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e0064399519afeb9604ff538",
+      "url": "https://www.usgovernmentspending.com/welfare_spending_history",
+      "resolved_url": "https://www.usgovernmentspending.com/welfare_spending_history",
+      "title": "US Government Welfare Spending History with Charts - a www.usgovernmentspending.com briefing",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:16.927642+00:00",
+      "archive_sha256": "7c0b9a55ff795c3c2da73821086552a0662341b9ea19c03520e357b6ef646e96",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/7c0b9a55ff795c3c2da73821086552a0662341b9ea19c03520e357b6ef646e96.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "美国 福利开支 纳税人负担 争论 1996 福利改革 总统否决 国会记录",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "US welfare spending taxpayer burden debate bipartisan consensus decline 1996 2023 Congressional Research Service",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Congressional Research Service welfare reform legislative history 1995 1996 vetoes TANF debate timeline",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "US welfare spending taxpayer burden debate bipartisan consensus decline 1996 2023 Congressional Research Service",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少1991年至截止日前围绕福利开支与纳税人负担争论强度的连续可比指标（如听证、法案提出、否决、预算协商频率），无法量化是否单调升级；现有材料只能支持该议题反复成为全国性争议的趋势判断。",
+  "source_statuses": [
+    {
+      "url": "https://www.everycrsreport.com/files/20010207_RS20807_c9b18070b6269eac37d3074ab721fa53dcdeb4cc.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://clintonwhitehouse6.archives.gov/1996/01/1996-01-09-president-veto-of-welfare-reform-bill-hr.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.congress.gov/crs-product/R44668",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.everycrsreport.com/reports/R41823.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.everycrsreport.com/reports/RS20807.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.usgovernmentspending.com/welfare_spending_history",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "对象为美国社会服务/福利开支及纳税人负担引发的全国性政治争论；可观察口径为1991年至2026-11-09前联邦立法与预算协商中围绕福利开支、SNAP/福利资格及税负的争议频率与强度，包括否决、债务上限谈判和农业法案争论；反证包括争议减弱、长期两党共识或福利开支不再成为全国议题。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 9,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "cf726daaf64daf116d8e8747faf359f2a6e961ac4b34f3f0e472311a68f9824a"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "37989220ff6091477f55d76fc0b80681",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b95839b4e8c2645d7ef5cc5e3439d744",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "07a8318027a052be77140ea75655ca29eb63639a231ca4f94dc1f29f1dda947a"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "e2f61fa4e6353c5495cc7b226b807830",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "1269d2419a396c53d1c7636e6c2d20e6f27778dd06e6a208fd1c9a2830b5fb2e"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "ab71cfbff491ca9731ffa6dc36e901e7",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b95839b4e8c2645d7ef5cc5e3439d744",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "1ad8f1c8cc7f29708bb0b161337f443a787a88e63b8ec5185022ecd1621897d8"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "2a62dde0b26f5ac1ab41d46657b8cc9d",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "05c2872d58cd64f36bfbde2ee7c3106fe07dad221b23f010977f9ab69b10326f",
+      "validation_error": "JSONDecodeError"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "a8e703143f6a07b4c12da66b445992da0360adfa989e4f111dcc62d19849955e"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "005724dc6af3c0777251831ecb74f74425270ab15b5a97e26fa317ffd5564480"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "d8466d0021d1698415058484907b1355b436b0cd2e5ddd88573789fd9c18c9e2"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "8a0f4d3c92a1376c16531893934117472c739fd2eb532cbf8bfe6e5e18262b80"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "05c2872d58cd64f36bfbde2ee7c3106fe07dad221b23f010977f9ab69b10326f",
+      "validation_error": "JSONDecodeError"
+    }
+  ],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-9b657e0516dd91780ae7",
+        "source_bytes": 162,
+        "shown_bytes": 162,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-de993ffec3fad643c5b7",
+        "source_bytes": 155,
+        "shown_bytes": 155,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-e1c8b624bf7b57aa91c3",
+        "source_bytes": 121,
+        "shown_bytes": 121,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-cfc37a4669d0a8f3e22b6c72",
+        "source_bytes": 12085,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-0ce975742652e8df96beffc0",
+        "source_bytes": 4825,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-adda1940f002bc65363eec7b",
+        "source_bytes": 12012,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-fcb849cd84ab9f3ccc849a8c",
+        "source_bytes": 12030,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d5e39e01a9b0b916c8b29679",
+        "source_bytes": 12083,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e0064399519afeb9604ff538",
+        "source_bytes": 12019,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-9b657e0516dd91780ae7",
+        "source_bytes": 162,
+        "shown_bytes": 162,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-de993ffec3fad643c5b7",
+        "source_bytes": 155,
+        "shown_bytes": 155,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-e1c8b624bf7b57aa91c3",
+        "source_bytes": 121,
+        "shown_bytes": 121,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-cfc37a4669d0a8f3e22b6c72",
+        "source_bytes": 12085,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-0ce975742652e8df96beffc0",
+        "source_bytes": 4825,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-adda1940f002bc65363eec7b",
+        "source_bytes": 12012,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-fcb849cd84ab9f3ccc849a8c",
+        "source_bytes": 12030,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d5e39e01a9b0b916c8b29679",
+        "source_bytes": 12083,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e0064399519afeb9604ff538",
+        "source_bytes": 12019,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-9b657e0516dd91780ae7",
+        "source_bytes": 162,
+        "shown_bytes": 162,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-de993ffec3fad643c5b7",
+        "source_bytes": 155,
+        "shown_bytes": 155,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-e1c8b624bf7b57aa91c3",
+        "source_bytes": 121,
+        "shown_bytes": 121,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-cfc37a4669d0a8f3e22b6c72",
+        "source_bytes": 12085,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-0ce975742652e8df96beffc0",
+        "source_bytes": 4825,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-adda1940f002bc65363eec7b",
+        "source_bytes": 12012,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-fcb849cd84ab9f3ccc849a8c",
+        "source_bytes": 12030,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d5e39e01a9b0b916c8b29679",
+        "source_bytes": 12083,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e0064399519afeb9604ff538",
+        "source_bytes": 12019,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-9b657e0516dd91780ae7",
+        "source_bytes": 162,
+        "shown_bytes": 162,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-de993ffec3fad643c5b7",
+        "source_bytes": 155,
+        "shown_bytes": 155,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-e1c8b624bf7b57aa91c3",
+        "source_bytes": 121,
+        "shown_bytes": 121,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-cfc37a4669d0a8f3e22b6c72",
+        "source_bytes": 12085,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-0ce975742652e8df96beffc0",
+        "source_bytes": 4825,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-adda1940f002bc65363eec7b",
+        "source_bytes": 12012,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-fcb849cd84ab9f3ccc849a8c",
+        "source_bytes": 12030,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d5e39e01a9b0b916c8b29679",
+        "source_bytes": 12083,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e0064399519afeb9604ff538",
+        "source_bytes": 12019,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000179063-000179098",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "fail",
+        "evidence_support": "pass",
+        "counterevidence": "fail",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "time_alignment",
+          "reason": "原书出版于1991年，预测的是此后围绕福利开支与纳税人负担的争论将愈演愈烈；但建议把observation_end定为1996-08-22，并以1995-1996年立法过程作为主要观察窗口，未覆盖1991年至1996年之间的连续趋势，也未覆盖1996年至截止日前的长期走向。1996年立法只是窗口内一个阶段性事件，不能代表“愈演愈烈”的持续方向。",
+          "quote_ref": "q2",
+          "source_quote": "对象为美国社会服务/福利开支及纳税人负担引发的全国性政治争论；观察口径为1991年至截止日前联邦福利立法、预算协商中围绕福利开支、资格与税负的争议频率与强度，含1995-1996年福利改革辩论、两次否决及1996年立法。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        },
+        {
+          "check": "counterevidence",
+          "reason": "已取得的prior-9b657e0516dd91780ae7明确提到“经过否决后两党合作增多”，这是与“争论愈演愈烈”方向相反的同对象、同时期材料，建议仅在limitation中轻描淡写，未在verdict_logic中作为反向证据权衡，属于弱化反向材料。",
+          "quote_ref": "q6",
+          "source_quote": "1996年8月1日国会记录中，参议院民主党领袖Daschle回顾18个月福利辩论及两次总统否决，同时指出经过否决后两党合作增多。",
+          "evidence_id": "prior-9b657e0516dd91780ae7",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议判定“部分符合”且trend_aligned=true，但reason只证明1995-1996年存在激烈立法争议（两次否决、三年辩论），未给出争论强度在1991年至截止日前持续上升的方向性证据；同时prior-9b657e0516dd91780ae7显示否决后两党合作增多，属混合方向。按口径，混合方向不能直接设trend_aligned=true，也不能仅凭阶段性立法事件判为部分符合。",
+          "quote_ref": "q3",
+          "source_quote": "原文预测围绕福利开支及纳税人负担的争论将愈演愈烈。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充1991年至截止日前围绕福利开支与纳税人负担争论强度的连续可比观察（如国会听证、法案提出、否决、预算协商频率等），并纳入“否决后两党合作增多”等反向材料，重新判断是持续升级、阶段波动还是方向不明；若无法取得连续指标，应保留为具体未定而非部分符合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000179063-000179098",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000179063-000179098",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象为美国社会服务/福利开支及纳税人负担引发的全国性政治争论；观察口径为1991年至截止日前联邦福利立法、预算协商中围绕福利开支、资格与税负的争议频率与强度，含1995-1996年福利改革辩论、两次否决及1996年立法。",
+      "reason": "原文预测围绕福利开支及纳税人负担的争论将愈演愈烈。1995-1996年福利改革经历约三年辩论、H.R.4两次被否决并于1996年8月签署，显示争论在观察窗口内确实升级，方向与预测一致。",
+      "limitation": "原文未给期限和量化指标，本评估以立法争议强度作代理；1996年后争论是否持续升温未在材料中充分覆盖，且争论强度不等于纳税人负担本身加重。",
+      "evidence_ids": [
+        "ev-d5e39e01a9b0b916c8b29679",
+        "ev-0ce975742652e8df96beffc0",
+        "prior-9b657e0516dd91780ae7"
+      ],
+      "method": "由财政负担与政治利益冲突外推争论升级",
+      "method_basis": "explicit",
+      "observation_end": "1996-08-22",
+      "future_time_text": "",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-d5e39e01a9b0b916c8b29679",
+          "relation": "support",
+          "quote": "Some 3 years' debate followed President Clinton's call \"to end welfare as we know it.\"",
+          "publication_date": "2001-02-07",
+          "observation_end": "1996-08-22",
+          "limitation": "该来源为2001年回顾性报告，非当时实时记录；仅证明辩论持续与立法过程，不直接量化争论强度。"
+        },
+        {
+          "evidence_id": "ev-0ce975742652e8df96beffc0",
+          "relation": "support",
+          "quote": "I am returning herewith without my approval H.R. 4, the \"Personal Responsibility and Work Opportunity Act of 1995.\"",
+          "publication_date": "1996-01-09",
+          "observation_end": "1996-01-09",
+          "limitation": "否决文本证明争议激烈，但属单一事件，不能单独代表整个观察期争论趋势。"
+        },
+        {
+          "evidence_id": "prior-9b657e0516dd91780ae7",
+          "relation": "support",
+          "quote": "1996年8月1日国会记录中，参议院民主党领袖Daschle回顾18个月福利辩论及两次总统否决，同时指出经过否决后两党合作增多。",
+          "publication_date": "1996-08-01",
+          "observation_end": "1996-08-01",
+          "limitation": "该条为已登记摘要而非完整原文，且同时提到两党合作增多，说明争论并非单向升级。"
+        }
+      ],
+      "remaining_gap": "缺少1996年以后至截止日前围绕福利开支与纳税人负担争论强度的连续可比指标，无法判断长期趋势是否持续。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000179063-000179098",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象为美国社会服务/福利开支及纳税人负担引发的全国性政治争论；观察口径为1991年出版后至截止日前联邦福利立法与预算协商中围绕福利开支、资格与税负的争议频率与强度，含1993-1996年福利改革辩论、两次总统否决、1996年立法，以及2023年SNAP工作要求与债务上限协商中的福利资格争议。",
+      "reason": "原文预测围绕福利开支及纳税人负担的争论将愈演愈烈。1993-1996年出现约三年福利改革辩论、H.R.4两次被否决并于1996年8月签署，2023年SNAP工作要求又进入债务上限协商和农业法案讨论，显示该议题在多个时段反复成为全国性争议，方向与预测一致。",
+      "limitation": "原文未给期限和量化指标，本评估以立法与预算争议事件作代理，不能量化争论强度是否单调上升；prior-9b657e0516dd91780ae7同时提到否决后两党合作增多，说明争论存在阶段性缓和，故只判趋势符合而非终局正确。",
+      "evidence_ids": [
+        "ev-d5e39e01a9b0b916c8b29679",
+        "ev-0ce975742652e8df96beffc0",
+        "prior-9b657e0516dd91780ae7",
+        "prior-de993ffec3fad643c5b7",
+        "prior-e1c8b624bf7b57aa91c3"
+      ],
+      "method": "由财政负担与政治利益冲突外推争论升级",
+      "method_basis": "explicit",
+      "observation_end": "2023-10-05",
+      "future_time_text": "",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-d5e39e01a9b0b916c8b29679",
+          "relation": "support",
+          "quote": "Some 3 years' debate followed President Clinton's call \"to end welfare as we know it.\"",
+          "publication_date": "2001-02-07",
+          "observation_end": "1996-08-22",
+          "limitation": "2001年回顾性报告，非实时记录；证明辩论持续与立法过程，不直接量化争论强度。"
+        },
+        {
+          "evidence_id": "ev-0ce975742652e8df96beffc0",
+          "relation": "support",
+          "quote": "I am returning herewith without my approval H.R. 4, the \"Personal Responsibility and Work Opportunity Act of 1995.\"",
+          "publication_date": "1996-01-09",
+          "observation_end": "1996-01-09",
+          "limitation": "否决文本证明争议激烈，但属单一事件，不能单独代表整个观察期趋势。"
+        },
+        {
+          "evidence_id": "prior-9b657e0516dd91780ae7",
+          "relation": "boundary",
+          "quote": "1996年8月1日国会记录中，参议院民主党领袖Daschle回顾18个月福利辩论及两次总统否决，同时指出经过否决后两党合作增多。",
+          "publication_date": "1996-08-01",
+          "observation_end": "1996-08-01",
+          "limitation": "已登记摘要而非完整原文，且同时提到两党合作增多，说明争论并非单向升级，构成方向性边界。"
+        },
+        {
+          "evidence_id": "prior-de993ffec3fad643c5b7",
+          "relation": "support",
+          "quote": "Brookings研究者指出SNAP工作要求是否修改的辩论近年加强；2023债务上限协商改变资格要求，并进入后续农业法案讨论。",
+          "publication_date": "2023-10-05",
+          "observation_end": "2023-10-05",
+          "limitation": "聚焦SNAP工作要求，属福利开支相关争论的一个分项，不能代表全部社会服务开支争议。"
+        },
+        {
+          "evidence_id": "prior-e1c8b624bf7b57aa91c3",
+          "relation": "support",
+          "quote": "CRS记录拜登与众院议长债务上限协商中的SNAP修改提案，既扩工作年龄要求又豁免部分群体。",
+          "publication_date": "2023-05-31",
+          "observation_end": "2023-05-31",
+          "limitation": "记录的是协商中的提案，证明争议存在，不证明争论强度持续上升。"
+        }
+      ],
+      "remaining_gap": "缺少1991年至截止日前围绕福利开支与纳税人负担争论强度的连续可比指标（如听证、法案提出、否决、预算协商频率），无法量化是否单调升级；现有材料只能支持该议题反复成为全国性争议的趋势判断。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象为美国社会服务/福利开支及纳税人负担引发的全国性政治争论；可观察口径为1991年至截止日前联邦立法与预算协商中围绕福利开支、SNAP/福利资格及税负的争议频率与强度，包括否决、债务上限谈判和农业法案争论；反证包括争议减弱、长期两党共识或福利开支不再成为全国议题。",
+  "elapsed_seconds": 41.161,
+  "completed_at": "2026-11-09T10:34:39.987953+00:00"
+}

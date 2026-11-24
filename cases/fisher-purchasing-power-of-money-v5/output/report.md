@@ -1,0 +1,837 @@
+# 货币的购买力：五类评估
+
+证据截止日：2026-11-15。已处理 32/32 条全书候选；尚未处理 0 条。
+
+累计已完成全量抽取复核 32 条；保留旧抽样抽取 0 条，两者不重复相加。
+
+已补充扩展观点 32 条；其中 0 条仍有待确认的代指、对象或范围，已逐条标记。扩展观点不自动改变原有评估。
+
+本轮沿用候选清单逐条核查，不保证没有漏抽。PDF记录使用PDF页码，TXT记录使用原始文本行号。扩展观点是依据所给语境的解释，原文短引文另行保留。
+
+|类别|父记录数|
+|---|---:|
+|正确|7|
+|趋势符合|0|
+|部分符合|9|
+|错误|1|
+|暂无法判断|13|
+|排除：非预测|2|
+|排除：重复|0|
+|尚未处理|0|
+
+可判定覆盖率：17/30 = 56.7%。
+绑定外部证据的预测：30/30；未绑定：0。绑定不代表证据充分或研究已完成。
+“正确”占已判定记录：7/17 = 41.2%。
+
+趋势符合 0 条单独列出，与部分符合互不重复；它表示已有持续证据支持方向，最终结果仍待验证。
+
+以上是回顾性的记录统计，不是独立预测准确率或事前预测能力检验。部分符合不折算成 0.5 分；暂无法判断不算错误。跨章相关判断尚未完全去重，同一父记录也不因多个观察而增加命中次数。没有作者明确给出的概率，不计算 Brier 分数。
+
+## 评估口径
+
+正确：在列明口径和观察窗口内，主要可检验内容符合。趋势符合：已有持续客观证据支持预测方向，最终结果尚待验证。部分符合：具体分项部分成立、部分不符，或合理口径产生不同结果。错误：所评内容与已发生结果相反。暂无法判断：无法确认趋势或结果、条件不明、对象难测或证据仍不足；缺证据不能自动换成趋势符合或部分符合。
+
+明确未来终点尚未到达时，可以评价已有趋势，并保留原期限；这类进展单列为趋势符合，不作终局正确。单次波动、未来预测数据或仅有因果解释不算趋势证据。真正的前提条件仍须确认成立，作者的因果解释不自动增加为额外触发门槛。无期限持续判断可评价已观察阶段，不能证明永久成立。出版年只是未找到发言日期时的研究起点代理，出版前已知事实不是新的预见力证据。
+
+“不太可能”没有被转换为数值概率；低概率事件发生可记录为方向反例，不能据单次结果证明概率失准。官方声明证明立场或制度安排，不自动证明实际成效；同时出现的政策与结果不自动证明因果。
+
+## 暂无法判断的原因
+
+|原因类型|记录数|
+|---|---:|
+|条件未确认或未触发|9|
+|证据不足|3|
+|明确未来期限未到|1|
+时间窗口来源：原文写出 10 条，隐含的出版年至截止日 22 条。
+
+
+## 逐条结果
+
+### 1. TXT 第 4830—4831 行 · 部分符合
+
+记录：`txt-137dadcc61-000168871-000168950`
+
+原文：Egypt awaits the advent of scientific agriculture, to
+usher in trade expansion.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：若科学农业在埃及引入，将带来贸易扩张
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：若科学农业在埃及引入，将带来贸易扩张；条件：advent of scientific agriculture；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：灌溉现代化与农业生产率改善确已发生，FAO记录2015年农业出口收入为十年前四倍，贸易扩张方向成立；但这不足以把增长全归因于原文未界定的“科学农业”。
+限制：科学农业的触发阈值未知，出口金额不是全部贸易实物量；净进口和出口增长可以同时存在。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-886aac703b9e](https://www.oecd.org/en/publications/policies-for-the-future-of-farming-and-food-in-egypt_cab0cefd-en/full-report/the-agricultural-policy-context-in-egypt_d3486256.html)；[ev-3bc047b21c8c](https://openknowledge.fao.org/server/api/core/bitstreams/5da9e6a6-5f9e-43c4-a42f-af5235dd97bd/content)
+
+### 2. TXT 第 6979—6993 行 · 暂无法判断
+
+记录：`txt-137dadcc61-000256852-000257166`
+
+原文：we may be tolerably confident that, if
+initially successful with the film near the middle 'position,
+international bimetallism would continue successful
+
+Digitized for FRASER
+http://fraser.stlouisfed.org/
+Federal Reserve Bank of St. Louis
+
+126
+
+THE PURCHASING POWER OP MONEY
+
+[C h a p . VII
+
+for many generations.
+
+时间窗口：原文写出（many generations）。
+
+扩展观点（解释，非原文）：若国际复本位最初成功且金银货币占比适中，将持续成功多代
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：若国际复本位最初成功且金银货币占比适中，将持续成功多代；条件：if initially successful with the film near the middle position；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：所检制度史记录的是1920年代恢复金本位，不是预测要求的、起初成功且金银比例居中的国际复本位实验；不能拿后来金本位崩溃判这个条件句错误。
+限制：金汇兑本位与国际复本位不同；未触发的真实条件不判正误。
+观察终点：未形成可判定观察终点；条件状态：not_met。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-1eb0117013da](https://academic.oup.com/book/36016/chapter/313262062)；[ev-7a868b300ede](https://www.brookings.edu/wp-content/uploads/1982/01/1982a_bpea_cooper_dornbusch_hall.pdf)
+
+### 3. TXT 第 7512—7517 行 · 部分符合
+
+记录：`txt-137dadcc61-000279500-000279822`
+
+原文：Herein lies one of the weaknesses of
+bimetallism as a practical political proposition, — each
+country prefers that some other country or countries
+should be the ones to adopt it. There is little prospect,
+therefore, in the future, of any single country taking the
+initiative, and still less of any international agreement.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：未来几乎不会有一国率先恢复复本位，国际复本位协议的前景更小
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：未来几乎不会有一国率先恢复复本位，国际复本位协议的前景更小；条件：按原quote核对，未给日期不补造期限；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：正式金银自由铸币复本位并未重建，但1933年美国提出的白银决议获66国采纳，八国随后签署白银协议；对率先行动和国际协议前景的判断过于悲观，不能仅凭未恢复完整本位给正确。
+限制：1933协议旨在白银供应与币用安排，并非完整恢复固定金银比率的复本位；因此是部分反证，不判整句全错。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-1eb0117013da](https://academic.oup.com/book/36016/chapter/313262062)；[ev-dd29eb64afeb](https://en.wikipedia.org/wiki/Bimetallism)；[ev-c531982ca60e](https://www.presidency.ucsb.edu/documents/proclamation-and-statement-ratifying-the-london-agreement-silver)；[ev-605119613d72](https://history.state.gov/historicaldocuments/frus1933v01/d571)
+
+### 4. TXT 第 7709—7714 行 · 暂无法判断
+
+记录：`txt-137dadcc61-000287927-000288205`
+
+原文：The silver dollars (and there­
+fore the silver certificates) maintain their value on
+a parity with gold primarily because they are limited
+in amount. If any question were raised as to their
+parity with gold, the treasury would probably offer to
+specifically redeem them in gold.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：若美国银元及银券的黄金平价遭到质疑，财政部很可能提出专门以黄金兑付
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：若美国银元及银券的黄金平价遭到质疑，财政部很可能提出专门以黄金兑付；条件：If any question were raised as to their parity with gold；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：1933年黄金兑付暂停、1963年银券停止发行均有存档，但未找到银元/银券自身黄金平价遭疑后财政部是否提出“专门以黄金赎回”的直接记录。
+限制：一般美元信心危机和联储券兑金，不足以证明这个银元银券专属前提；不强判错误。
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-a6defc78a301](https://www.federalreservehistory.org/essays/roosevelts-gold-program)；[ev-ff7b0b6889f4](https://www.bep.gov/system/files/2022-02/factsheet-silvercertificate-20130425.pdf)
+
+### 5. TXT 第 12811—12813 行 · 部分符合
+
+记录：`txt-137dadcc61-000483303-000483425`
+
+原文：The outlook for the future is apparently toward a
+continued rise of prices due to a continued increase in
+the gold supply.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：黄金供应继续增加将推动未来物价继续上涨
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：黄金供应继续增加将推动未来物价继续上涨；条件：按原quote核对，未给日期不补造期限；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：长期物价上涨的方向出现：BLS记录1920年CPI年均20.0，2024年月值超过300；但金本位时期的严重通缩反驳了以黄金供给持续推动上涨的完整路径。
+限制：按无日期窗口观察，不因早期下跌把长期方向全判错；CPI是美国价格代理，黄金供给与物价的因果部分并未获完整证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-5b13f16df2f6](https://www.bls.gov/cpi/tables/supplemental-files/historical-cpi-u-202412.pdf)；[ev-40c3332177d9](https://www.nber.org/system/files/chapters/c11482/c11482.pdf/)
+
+### 6. TXT 第 12816—12818 行 · 正确
+
+记录：`txt-137dadcc61-000483528-000483670`
+
+原文：The most careful review of present gold-mining con­
+ditions shows that we may expect a continuance of gold
+inflation for a generation or more.
+
+时间窗口：原文写出（a generation or more）。
+
+扩展观点（解释，非原文）：黄金膨胀将持续一代或更久
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：黄金膨胀将持续一代或更久；条件：按原quote核对，未给日期不补造期限；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：此处gold inflation按供金扩张而非物价必涨理解：统计显示世界黄金产量从1920年约1615万盎司增至1940年约4056万盎司，IMF的1950年供金统计也高于1920年；一代以上黄金供给扩张成立。
+限制：供金量扩张不等于每年年产量单调上升，更不等于金属本位下物价不会通缩；两个来源的苏联覆盖范围不同，不混算比率。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-cb0bb7800026](https://www66.statcan.gc.ca/eng/1942/194203650299_p.%20299.pdf)；[ev-142837236d5c](https://www.elibrary.imf.org/view/journals/024/1958/001/article-A004-en.xml)
+
+### 7. TXT 第 12818—12821 行 · 部分符合
+
+记录：`txt-137dadcc61-000483671-000483801`
+
+原文：“ For at least
+thirty years we may count on an output of gold higher
+than, or at least comparable to, that of the last few
+years.”
+
+时间窗口：原文写出（at least
+thirty years）。
+
+扩展观点（解释，非原文）：至少三十年黄金产出将高于或至少相当于过去几年水平，作者明确赞同de Launay观点
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：至少三十年黄金产出将高于或至少相当于过去几年水平，作者明确赞同de Launay观点；条件：按原quote核对，未给日期不补造期限；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：后续黄金产量总体扩张且1930年代显著高于1910年代，但1921–1922年产量低于1920年，亦明显低于1910年代后期若干年份；“至少三十年”始终维持相当或更高产出的说法并不完整成立。
+限制：last few years没有精确基期，“comparable”无误差阈值；因此不把若干年下降直接夸大成三十年全错。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-2bec2b9c2e0c](https://goldpercapita.com/research/gold-mine-production-history)
+
+### 8. TXT 第 12821—12824 行 · 部分符合
+
+记录：`txt-137dadcc61-000483804-000483999`
+
+原文：This gold will come from the United States,
+Alaska, Mexico, the Transvaal, and other parts of
+Africa and Australia, and later from Colombia, Bolivia,
+Chili, the Ural Province, Siberia, and Korea.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：预期增加的黄金将来自美国、阿拉斯加、墨西哥、德兰士瓦及非洲澳洲，后来自哥伦比亚、玻利维亚、智利、乌拉尔、西伯利亚和朝鲜
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：预期增加的黄金将来自美国、阿拉斯加、墨西哥、德兰士瓦及非洲澳洲，后来自哥伦比亚、玻利维亚、智利、乌拉尔、西伯利亚和朝鲜；条件：按原quote核对，未给日期不补造期限；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：加拿大统计证实1939年南非、美国、苏联（包括西伯利亚）是主要供金地；美国矿务局也记载1927年朝鲜有黄金产出，但玻利维亚、智利当时产量很小，不能确认整份地区名单及“稍后”顺序都实现。
+限制：部分所列地区早已采金，不把版前开采当成功预测；只判版后供金及地域结构部分，OCR表格不强抄模糊数字。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-6e6a557e16c6](https://www66.statcan.gc.ca/eng/1941/194103150253_p.%20253.pdf)；[ev-a4a0294574b8](https://digital.library.unt.edu/ark:/67531/metadc40311/m2/1/high_res_d/bomeconpapers_6_w.pdf)
+
+### 9. TXT 第 12824—12830 行 · 正确
+
+记录：`txt-137dadcc61-000484000-000484285`
+
+原文：It must
+be remembered that it is the stock of gold and not the
+annual production which influences the price level;
+and that the stock will probably continue to increase
+for many years after the production has begun to
+decline, — as long, in fact, as production keeps above
+consumption.
+
+时间窗口：原文写出（many years）。
+
+扩展观点（解释，非原文）：黄金年产量开始减少后，只要生产仍高于消费，黄金存量很可能继续增长多年
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：黄金年产量开始减少后，只要生产仍高于消费，黄金存量很可能继续增长多年；条件：as long, in fact, as production keeps above consumption；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：黄金年产量确有下降阶段，但仍有正产出；黄金协会说明黄金几乎不可毁灭，绝大部分历史产出仍存在且约三分之二在1950年后开采，符合年产减速后总存量仍累积的方向。
+限制：判断的是地上黄金总存量，不是中央银行货币黄金储备；耗散量非零，结论是长期净累积而非严格无损。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-2bec2b9c2e0c](https://goldpercapita.com/research/gold-mine-production-history)；[ev-af497592fa75](https://www.gold.org/goldhub/data/how-much-gold)
+
+### 10. TXT 第 12832—12834 行 · 正确
+
+记录：`txt-137dadcc61-000484374-000484485`
+
+原文：So the stock of
+gold will continue to increase long after the annual
+production of gold has stopped increasing.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：黄金年产量停止增长很久后黄金存量仍会增长（独立不重叠原句，不因语义重复排除）
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：黄金年产量停止增长很久后黄金存量仍会增长（独立不重叠原句，不因语义重复排除）；条件：after the annual production of gold has stopped increasing；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：存档记录黄金产出在1940年后下降、战后多个地区产量停滞，而历史产出大部分仍作为地上库存存在；这支持年产停止增长并不立即阻止总存量继续增加。
+限制：不将官方货币黄金库存下降误认作全球总黄金存量减少；与另一原句意思相近但不作语义duplicate排除。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-65bbbffc668f](https://www.allangray.co.za/latest-insights/markets-and-economy/gold-a-history-of-its-price/)；[ev-af497592fa75](https://www.gold.org/goldhub/data/how-much-gold)；[ev-a591a026eb1a](https://www.gold.org/goldhub/research/market-primer/gold-market-primer-market-size-and-structure)
+
+### 11. TXT 第 12862—12866 行 · 暂无法判断
+
+记录：`txt-137dadcc61-000485491-000485723`
+
+原文：That for many
+years, however, gold will outrun trade seems probable,
+for the reason that there is no immediate prospect of
+a reduction in the percentage growth of the gold stock,
+nor of an increase in the percentage growth of trade.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：未来许多年黄金存量增长将超过贸易增长，黄金增长率不会很快下降且贸易增长率不会提高
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：未来许多年黄金存量增长将超过贸易增长，黄金增长率不会很快下降且贸易增长率不会提高；条件：按原quote核对，未给日期不补造期限；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：WTO资料显示1950后国际贸易扩张远快于黄金总量，但书中trade还包含国内交易量，且“未来许多年”从1920年起；现有跨期与口径不同的序列不能直接证明该句正确或错误。
+限制：不以美国贸易代替全球，也不以货币黄金储备代替总黄金存量；第二轮及自适应仍未得到同口径1920起的交易量比较。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-84acba1f231f](https://www.wto.org/english/res_e/statis_e/trade_evolution_e/evolution_trade_wto_e.htm)；[ev-af497592fa75](https://www.gold.org/goldhub/data/how-much-gold)
+
+### 12. TXT 第 12872—12876 行 · 部分符合
+
+记录：`txt-137dadcc61-000486022-000486217`
+
+原文：If we let imagination
+run a little ahead of our times, we may expect similar
+improvements in the future whereby still lower grades
+may be worked or possibly the sea compelled to give
+up its gold.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：未来黄金提炼技术将让更低品位矿可开采，甚至可能从海水取金（同句重叠不分拆）
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：未来黄金提炼技术将让更低品位矿可开采，甚至可能从海水取金（同句重叠不分拆）；条件：按原quote核对，未给日期不补造期限；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：1960年代末出现低品位金矿堆浸并广泛应用，低品位开采部分兑现；MBARI明确指出海水含金浓度低到无法实现所述取金方案，海水分支未兑现。
+限制：海水分支原文是possibly，不能把未兑现当整句全错；限指可行提金，不把实验检出金等同商业采金。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-780a1928fb96](https://www.mininghistoryassociation.org/Journal/MHJ-v28-2021-McQueen%20Heap%20Leaching%20in%20NV.pdf)；[ev-38a22228cdf0](https://www.mbari.org/wp-content/static/chemsensor/au/gold.html)
+
+### 13. TXT 第 14406—14408 行 · 错误
+
+记录：`txt-137dadcc61-000533548-000533693`
+
+原文：the gold production of the future would
+continue excessive and probably cause the present rise
+of prices to continue for some time in the future.
+
+时间窗口：原文写出（some time in the future）。
+
+扩展观点（解释，非原文）：未来黄金生产将继续过多，很可能使当前物价上涨在未来继续一段时间（总结处独立连续原句，正常保留）
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：未来黄金生产将继续过多，很可能使当前物价上涨在未来继续一段时间（总结处独立连续原句，正常保留）；条件：按原quote核对，未给日期不补造期限；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：该句强调让“当前上涨”在未来继续一段时间，但1920之后出现价格下跌，1930年代金本位相关的国际通缩尤其严重，方向与这一延续上涨路径相反。
+限制：不把百年后法币物价水平更高反套到“present rise继续”的近期表述；黄金相对价格与一般物价不同。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-40c3332177d9](https://www.nber.org/system/files/chapters/c11482/c11482.pdf/)；[ev-52877936fcf7](https://www.federalreserve.gov/boarddocs/speeches/2004/200403022/)；[ev-65bbbffc668f](https://www.allangray.co.za/latest-insights/markets-and-economy/gold-a-history-of-its-price/)
+
+### 14. TXT 第 17802—17808 行 · 暂无法判断
+
+记录：`txt-137dadcc61-000621579-000621908`
+
+原文：I cannot but believe
+that the diffusion among business men of the fuller
+knowledge of the equation of exchange, of the relation
+of money to deposits, of credit cycles and of interest,
+which the future is sure to bring, will pay rich returns
+in mitigating the evils of crises and depressions which
+now take them so often unawares.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：未来商界关于交换方程、货币存款、信用周期与利息知识的普及，将显著减轻危机与萧条祸害
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：未来商界关于交换方程、货币存款、信用周期与利息知识的普及，将显著减轻危机与萧条祸害；条件：按原quote核对，未给日期不补造期限；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：央行政策学习与企业财务教育改善表现均有证据，也有2008年企业预测普遍失准的反证；但没有识别商界普及交换方程、存款与信用周期知识对危机总体损失的独立影响。
+限制：不把央行知识替代商界知识，不把单个企业财务课程的营运资本改善外推为整个经济萧条减轻。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-a838ae2e53ec](https://www.stlouisfed.org/the-great-depression/online-resources/-/media/project/frbstl/stlouisfed/files/pdfs/great-depression/wheelock_march_april_2010_review.pdf)；[ev-4957fb4fd31a](https://www.cfo.com/news/future-tense/670930/)；[ev-367c30da99f1](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3696377)
+
+### 15. TXT 第 17820—17822 行 · 暂无法判断
+
+记录：`txt-137dadcc61-000622431-000622534`
+
+原文：There has been for centuries, and
+promises to be for centuries to come, a race between
+money and trade.
+
+时间窗口：原文写出（centuries to come）。
+
+扩展观点（解释，非原文）：未来几个世纪货币供给与贸易仍将竞逐增长，持续影响价格
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：未来几个世纪货币供给与贸易仍将竞逐增长，持续影响价格；条件：按原quote核对，未给日期不补造期限；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：原文明确把竞逐持续时间写为未来几个世纪，1920到截止日只覆盖其中一部分；现有货币及贸易研究不足以确认整个承诺时段。
+限制：centuries是原文，不擅自缩成截至目前百年或凭近期共涨给趋势分；部分观测不是完整终点。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-477bf984e4c8](https://link.springer.com/article/10.1007/s11079-023-09739-0?code=23fcc2ac-2754-41e7-a943-9b13d0b8c5fd&error=cookies_not_supported)；[ev-bb91326233c3](https://www.imf.org/-/media/files/publications/esr/2025/english/ch2.pdf)
+
+### 16. TXT 第 17854—17858 行 · 排除：非预测
+
+记录：`txt-137dadcc61-000623807-000624011`
+
+原文：“ It seems likely that we shall, within
+a few decades, contrive some other means of measur­
+ing values than by the ancient device of balancing
+them against a substance of which the supply is ex­
+cessive.”
+
+时间窗口：原文写出（within
+a few decades）。
+
+扩展观点（解释，非原文）：Shaler认为数十年内会发明替代金属本位的价值计量办法；作者引用后倡议研究但未明确认领该期限
+
+
+口径与范围：Shaler认为数十年内会发明替代金属本位的价值计量办法；作者引用后倡议研究但未明确认领该期限
+判定：原代码因中性转述、未明确认可而降为unclear，非作者可核验预测；不额外作语义去重。
+限制：作者引用他人观点不等于认领期限或结果。
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：原v5归属规则及原文语义复核（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 17. TXT 第 17941—17950 行 · 暂无法判断
+
+记录：`txt-137dadcc61-000627315-000627856`
+
+原文：Bimetallism, then, even could it be maintained, would
+offer but an indifferent remedy for the variations in the
+price level, and, moreover, there is always the objection
+previously noted that the system may break down.
+We then saw that whatever the ratio at which both
+metals are to circulate, one metal is likely, sometime, to
+be produced in such abundance as completely to fill
+the money reservoir, driving the other metal altogether
+out of circulation. Such a result may be long in com­
+ing, but eventually it is practically sure to come.
+
+时间窗口：原文写出（eventually）。
+
+扩展观点（解释，非原文）：若实行复本位，无论法定比率如何，最终一种金属将因大量生产把另一种完全逐出流通
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：若实行复本位，无论法定比率如何，最终一种金属将因大量生产把另一种完全逐出流通；条件：复本位维持流通；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：版后重建的主要是金本位而非两金属自由铸币的复本位制度；没有满足原句前提的版后持续实验，不能用19世纪格雷欣法则史实直接判对。
+限制：辅币并存不等于双方皆为本位货币；此处是对真实政策条件的预测而非宣称条件必定发生。
+观察终点：未形成可判定观察终点；条件状态：not_met。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-1eb0117013da](https://academic.oup.com/book/36016/chapter/313262062)；[ev-dd29eb64afeb](https://en.wikipedia.org/wiki/Bimetallism)
+
+### 18. TXT 第 18060—18068 行 · 暂无法判断
+
+记录：`txt-137dadcc61-000630852-000631293`
+
+原文：that of poly­
+metallism looks to the contemporaneous circulation of
+more than two. So long as several metals could be
+maintained in circulation together, the price level might
+fluctuate less than if one metal only were used. But
+all of the theoretical objections against bimetallism
+apply also against polymetallism. One metal would
+eventually drive all the others out of a country, or,—
+if polymetallism were international, — into the arts.
+
+时间窗口：原文写出（eventually）。
+
+扩展观点（解释，非原文）：若实行多金属本位，最终一种金属将把其他金属逐出本国流通，国际实施时则逐到非货币用途
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：若实行多金属本位，最终一种金属将把其他金属逐出本国流通，国际实施时则逐到非货币用途；条件：实施多金属本位；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：搜索得到的瑞典三金属经验发生在1624–1776年，早于本版；1920年代满洲多币并行则缺少作者要求的共同固定多金属本位前提，不能用来判必然驱逐结论。
+限制：多种材质辅币或无统一中央调控的多币竞争，并不等于该polymetallism制度。
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-a38bc249f66b](https://doi.org/10.1093/ereh/hes007)；[ev-ebaddaaa8749](https://crossworks.holycross.edu/cgi/viewcontent.cgi?article=1096&context=econ_working_papers)
+
+### 19. TXT 第 18151—18153 行 · 正确
+
+记录：`txt-137dadcc61-000634622-000634768`
+
+原文：As soon as any particular government controls a paper
+currency bearing no relation to gold or silver, excuses
+for its over-issue are to be feared.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：政府一旦掌控与金银无联系的纸币，就有以各种借口超发的风险
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：政府一旦掌控与金银无联系的纸币，就有以各种借口超发的风险；条件：政府掌控不与金银联系的纸币；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：法币条件已现实存在，圣路易斯联储资料明确记录政府迫使央行过量印钞的通胀偏向以及津巴布韦极端通胀，所预警风险确曾出现。
+限制：这是风险存在的预测，不是所有法币必定失控；同一来源也记录央行独立性与更低通胀，保留这一边界。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-5c86f50c0194](https://www.stlouisfed.org/about-us/resources/why-fed-is-well-designed-central-bank/central-bank-independence-inflation)
+
+### 20. TXT 第 18305—18309 行 · 正确
+
+记录：`txt-137dadcc61-000641391-000641601`
+
+原文：But the contracts based on
+index numbers would not be affected because made
+in terms of the index number. Doubtless the plan
+would encounter much opposition,1 but it would ap­
+peal strongly to certain classes.2
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：指数契约方案若提出/采用将遭遇很多反对，同时强烈吸引某些群体
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：指数契约方案若提出/采用将遭遇很多反对，同时强烈吸引某些群体；条件：推行以价格指数计价的延期支付契约方案；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：以指数调整金融契约的实践既遭到强烈政策争论，也吸引养老金等特定长期投资群体：英国1981年国债引入过程及养老金偏好研究均支持原句的两个组成部分。
+限制：验证金融契约核心而非声称整个价格体系已经完全指数化；英国首批投资资格限制也会影响需求观察。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-8e47a1d17c20](https://oro.open.ac.uk/60077/8/60077.pdf)；[ev-2864fad830c2](https://www.cnb.cz/en/economic-research/research-publications/cnb-working-paper-series/Hedging-Against-Inflation-International-Evidence-on-Investor-Clientele-Effects-00001/)；[ev-20b91efcf68b](https://www.bostonfed.org/-/media/Documents/neer/neer199a.pdf)
+
+### 21. TXT 第 18311—18315 行 · 部分符合
+
+记录：`txt-137dadcc61-000641704-000641931`
+
+原文：A widow, or a trustee,
+or other long-time investor, would prefer to buy bonds
+which guaranteed a regular yearly purchasing power over
+subsistence, rather than those which merely promised a
+given sum of money of uncertain value.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：寡妇、受托人及其他长期投资者将更喜欢保证每年固定购买力的债券而非固定名义金额债券
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：寡妇、受托人及其他长期投资者将更喜欢保证每年固定购买力的债券而非固定名义金额债券；条件：提供该类固定购买力债券；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：养老金基金确实超配通胀保值债，长期投资者的购买力保护需求得到支持；但保险机构反而低配，且零售及早期TIPS需求有限，不能把所有长期投资者或寡妇受托人都判作更偏好指数债。
+限制：机构负债、监管和实际利率风险会改变选择；并无寡妇/受托人群体全样本的直接调查。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-2864fad830c2](https://www.cnb.cz/en/economic-research/research-publications/cnb-working-paper-series/Hedging-Against-Inflation-International-Evidence-on-Investor-Clientele-Effects-00001/)；[ev-f021e448edc5](https://www.nber.org/reporter/2013number3/inflation-indexed-bonds)
+
+### 22. TXT 第 18340—18346 行 · 暂无法判断
+
+记录：`txt-137dadcc61-000642757-000643110`
+
+原文：The beginnings of such a plan for “ a tabular standard
+of value” could be made at any time by private con­
+tracting parties, some index number already in vogue,
+such as Sauerbeck’s or the Bureau of Labor’s, being
+used as a standard. Should the results of such experi­
+ments, on the whole, satisfy the contracting parties,
+others might follow their lead.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：若私人指数契约试验总体使当事人满意，其他人可能跟随采用
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：若私人指数契约试验总体使当事人满意，其他人可能跟随采用；条件：私人指数契约试验总体使当事人满意；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：存档记载1925年Rand Kardex指数债实验并不成功、债券后来被黄金条款债替换，未满足“试验总体使当事人满意”的前提；不能以当时没有模仿者把条件句判错。
+限制：后来各国发行指数债不等于模仿成功的私人试验；不将版前1780年经验计为预测成功。
+观察终点：未形成可判定观察终点；条件状态：not_met。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-b5d7ac85d42b](https://www.richmondfed.org/-/media/RichmondFedOrg/publications/research/economic_review/1974/pdf/er600601.pdf)；[ev-60ba02c84c83](https://doi.org/10.3386/w10183)
+
+### 23. TXT 第 18378—18385 行 · 暂无法判断
+
+记录：`txt-137dadcc61-000644386-000644784`
+
+原文：The system of making contracts in terms of the price
+level is not intended directly to prevent fluctuations
+in price level. Its purpose is rather to prevent these
+fluctuations from introducing a speculative element into
+business. But an incidental result of the system would
+be that fluctuations in the level of prices would be less
+than before, because credit cycles would no longer be
+stimulated.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：实行以购买力计价的契约体系将减少物价波动，因为不再刺激信用周期
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：实行以购买力计价的契约体系将减少物价波动，因为不再刺激信用周期；条件：实行以购买力而非固定货币计价的契约体系；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：现实存在指数化金融合约，但NBER说明UF尚非支付媒介，其他文献也只是部分市场实践或模型；并未出现原句所设想的普遍以购买力计价的完整契约体系，不能拿模型结论当实现。
+限制：工资指数化、部分UF债务及通胀目标制均不是全部购买力契约体系。
+观察终点：未形成可判定观察终点；条件状态：not_met。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-009ec2ad1c6e](https://www.nber.org/papers/w6356)；[ev-6636ade26a81](https://fraser.stlouisfed.org/files/docs/historical/frbclev/wp/frbclv_2011-17.pdf)；[ev-10458bd219a5](https://www.imf.org/external/pubs/ft/wp/wp9815.pdf)
+
+### 24. TXT 第 18424—18427 行 · 部分符合
+
+记录：`txt-137dadcc61-000646397-000646586`
+
+原文：it would involve the trouble of translating
+money into the tabular standard and would therefore
+fail to attract the public sufficiently to warrant its com­
+plete adoption by any government.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：指数标准转换手续将不能充分吸引公众，因而不足以使任何政府完整采用
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：指数标准转换手续将不能充分吸引公众，因而不足以使任何政府完整采用；条件：采用所讨论的独立tabular计价标准；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：公开资料确证公众对指数化有抵触，UF计算复杂性仍是缺点；但政府设立的UF又成功促进长期融资并被其他国家复制，原句关于实际吸引力和可推广性过于悲观。
+限制：不把部分UF采用说成任何政府已完整采用全部tabular标准，也不把现代通胀目标制偷换为该制度；完整采用的全球否定命题仍难直接穷尽验证。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-73ae26435e44](https://www.brookings.edu/wp-content/uploads/1997/01/1997a_bpea_shiller_schultze_hall.pdf)；[ev-324dbf25657f](https://obtienearchivo.bcn.cl/obtienearchivo?id=repositorio%2F10221%2F37432%2F2%2FInforme_BCN._UF_como_mecanismo_de_precios_y_casos_internacionales_FINAL.pdf)；[ev-009ec2ad1c6e](https://www.nber.org/papers/w6356)
+
+### 25. TXT 第 18425—18430 行 · 部分符合
+
+记录：`txt-137dadcc61-000646441-000646768`
+
+原文：money into the tabular standard and would therefore
+fail to attract the public sufficiently to warrant its com­
+plete adoption by any government. Another objection
+is that its halfway adoption would really aggravate
+many of the evils it sought to correct, and therefore
+discourage, rather than encourage, its further extension.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：指数标准半途采用将加剧许多原拟解决的弊端，妨碍进一步推广
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：指数标准半途采用将加剧许多原拟解决的弊端，妨碍进一步推广；条件：tabular标准仅部分采用；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：部分指数化确有增加通胀惯性的风险，但智利经验同时显示私人契约和长期金融市场获益，UF又扩散到其他国家；“弊端加剧并阻止继续推广”的两部分只得到部分支持。
+限制：局部市场指数化属于实际可比部分，不声称等同作者完整体系；风险研究不单独当作已发生的损害。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-4fe3ee8c2d3f](https://repositoriodigital.bcentral.cl/xmlui/bitstream/handle/20.500.12580/3626/BCCh-sbc-v02-p001_018.pdf?isAllowed=y&sequence=1)；[ev-009ec2ad1c6e](https://www.nber.org/papers/w6356)
+
+### 26. TXT 第 18583—18588 行 · 暂无法判断
+
+记录：`txt-137dadcc61-000653259-000653615`
+
+原文：So simple are the duties of maintaining the goldexchange par, and so unfailingly has the system been
+faithfully executed, that even those who at first most
+strenuously opposed it seem now inclined to trust it
+implicitly. There is, indeed, no reason why, under
+almost any conceivable circumstances, there should be
+even the fear of this system being abused.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：在几乎任何可想象情形下，金汇兑制度都无须担心被滥用
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：在几乎任何可想象情形下，金汇兑制度都无须担心被滥用；条件：继续所述金汇兑操作制度；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：战间期金汇兑制度确有政策失灵；补查也找到菲律宾准备金挪用，但明确挪用发生于1918年，不能把版前事实算1920后的反证。尚缺本版之后与原句简单操作制度严格对应的新滥用记录。
+限制：系统崩溃、法国冲销黄金或宏观通缩不自动等于执行官员舞弊；不以1919危机开端反套出版后预测。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-1eb0117013da](https://academic.oup.com/book/36016/chapter/313262062)；[ev-efdc1a55e1e3](https://www.jstage.jst.go.jp/article/sea1971/2001/30/2001_30_3/_article/-char/en)；[ev-3628585c544e](https://hal.science/hal-00375342v1)
+
+### 27. TXT 第 18792—18811 行 · 暂无法判断
+
+记录：`txt-137dadcc61-000662107-000663166`
+
+原文：It will be seen that the plan here proposed requires
+no revolution of the world’s currencies. It requires lit­
+tle more than to assemble, into one working whole,
+operations already existing separately, viz. ( 1) cal­
+culating Index Numbers as done at present by our
+Bureau of Labor; (2) buying and selling exchange, as
+done at present by the Philippine Government; (3)
+buying and selling gold, as done at present in Austria;
+(4) periodically readjusting the gold pars as was done
+at least once when the present system was inaugurated
+in India, the Philippines, Panama and Mexico. The
+readjustment of par is the only feature which could be
+called new, and this should not be condemned as caus­
+ing fluctuations in values; for its only object is to prevent
+the fluctuations from which we now suffer. Neither
+this periodic readjustment nor any other feature of the
+plan would require changes in the circulating medium.
+Each nation would continue to use its old familiar cur­
+rency, whether gold, silver, or paper. The ordinary
+man would be unaware of any change.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：若实施作者国际调节金价方案，各国仍用原熟悉货币，普通人不会察觉变化
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：若实施作者国际调节金价方案，各国仍用原熟悉货币，普通人不会察觉变化；条件：实施所述国际购买力调节方案；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：Bordo等文献明确称Fisher补偿美元计划从未实施；原句关于实施后仍用熟悉货币、普通人无感的后果因此不能实际验收。
+限制：调节黄金重量的国际价格稳定计划不等于后来法币通胀目标制；未实施不能直接判错误。
+观察终点：未形成可判定观察终点；条件状态：not_met。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-ccc637c591ed](https://files.stlouisfed.org/files/htdocs/wp/2003/2003-014.pdf)；[ev-3a9db2774d25](https://www.richmondfed.org/-/media/RichmondFedOrg/publications/research/economic_quarterly/1993/summer/pdf/patinkin.pdf)
+
+### 28. TXT 第 18886—18889 行 · 暂无法判断
+
+记录：`txt-137dadcc61-000666074-000666251`
+
+原文：The danger of abuse or fraud in the Statistical Office,
+the work of which is based on published market prices
+and is necessarily done in the light of day, would seem
+negligible.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：若建立基于公开市价的国际统计局，其滥用或欺诈风险将可忽略
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：若建立基于公开市价的国际统计局，其滥用或欺诈风险将可忽略；条件：按作者方案建立国际统计局；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：方案未实施，因此也没有方案所设国际统计局的实际舞弊率可供检验；一般统计机关的公开价格工作不能替代该机构。
+限制：不把联合国、IMF或某国统计局当成作者提出的执行机构。
+观察终点：未形成可判定观察终点；条件状态：not_met。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-ccc637c591ed](https://files.stlouisfed.org/files/htdocs/wp/2003/2003-014.pdf)
+
+### 29. TXT 第 18893—18899 行 · 暂无法判断
+
+记录：`txt-137dadcc61-000666463-000666765`
+
+原文：No in­
+dividual nation could inflate the currency without
+withdrawing from the international arrangement and
+isolating itself accordingly, while it is quite inconceiv­
+able that all the civilized nations of the world should
+voluntarily and simultaneously commit the folly of
+inflationistic legislation.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：在所建议的国际货币协定下，不会所有文明国家自愿同时实施通胀性立法
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：在所建议的国际货币协定下，不会所有文明国家自愿同时实施通胀性立法；条件：各国参加作者所述国际货币稳定协定；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：国际补偿美元安排未落地，无法观测参与该特定协议的国家是否会同时立通胀法；后来脱离金本位的共同扩张并不满足这个条件。
+限制：未实施的条约约束不能用一般各国法币通胀史判对或判错。
+观察终点：未形成可判定观察终点；条件状态：not_met。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-ccc637c591ed](https://files.stlouisfed.org/files/htdocs/wp/2003/2003-014.pdf)；[ev-3a9db2774d25](https://www.richmondfed.org/-/media/RichmondFedOrg/publications/research/economic_quarterly/1993/summer/pdf/patinkin.pdf)
+
+### 30. TXT 第 18947—18950 行 · 排除：非预测
+
+记录：`txt-137dadcc61-000668776-000668993`
+
+原文：Mr. Edison, in a recent interview, predicts the further
+downfall of gold, through the discovery, — sure to be made sooner
+or later, — of cheap methods of extracting immense quantities of gold
+from some Southern clays.
+
+时间窗口：原文写出（sooner
+or later）。
+
+扩展观点（解释，非原文）：Edison预言终将发现从美国南方黏土低成本大量提金的方法，进一步降低黄金价值；作者引用未明确认领
+
+
+口径与范围：Edison预言终将发现从美国南方黏土低成本大量提金的方法，进一步降低黄金价值；作者引用未明确认领
+判定：原代码因中性转述、未明确认可而降为unclear，非作者可核验预测；不额外作语义去重。
+限制：作者引用他人观点不等于认领期限或结果。
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：原v5归属规则及原文语义复核（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 31. TXT 第 27186—27190 行 · 正确
+
+记录：`txt-137dadcc61-000913720-000914003`
+
+原文：Of the two terms constituting the “ first approxima­
+tion,” the first and most important is susceptible of the m o s t
+accurate determination of all, while the second is made up
+chiefly of wages, which also are susceptible of statistical
+determination, or seem destined to become so.
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：货币流通近似式中的工资等第二项将变得可用统计确定
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：货币流通近似式中的工资等第二项将变得可用统计确定；条件：按原quote核对，未给日期不补造期限；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：工资已可系统统计：ILOSTAT提供平均小时和月工资等多类表格，2026年调查记载81个报告国中68国在2020–2025年采集过收入数据，符合“将可用统计确定”的方向。
+限制：这不表示所有非正规收入均完整覆盖，也未证明作者整个货币流通近似式被精确测得；判分对象仅工资统计可得性。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-c7f1118b998e](https://ilostat.ilo.org/topics/wages/)；[ev-bb5973c49458](https://www.ilo.org/sites/default/files/2026-08/Earnings%20data%20collection%20practices%20survey%20report_0.pdf)
+
+### 32. TXT 第 29267—29268 行 · 正确
+
+记录：`txt-137dadcc61-000964787-000964858`
+
+原文：I personally look forward to an upward
+tendency of prices in the future
+
+时间窗口：隐含，从出版年 1920 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：作者预期未来物价仍趋上涨（第二版附录独立不重叠表述，按1920基准正常保留）
+
+
+口径与范围：1920修订本信息基准至2026-11-15；对象：作者预期未来物价仍趋上涨（第二版附录独立不重叠表述，按1920基准正常保留）；条件：按原quote核对，未给日期不补造期限；先核对是否实际采用/触发，再以结果指标核对；反证需检查相反方向、未采用及替代原因，未触发不判正误。
+判定：无日期方向按1920到截止日窗口判断：明尼阿波利斯联储所列美国CPI从1920年20.0上升至2025年321.9，长期物价上行成立，早期通缩不应把长期方向改记趋势。
+限制：使用美国CPI作可复核价格代理；并非声称物价逐年上涨，也不评价本句未提出的黄金因果。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：逐块全文抽取后，以Exa做PLAN支持/反证检索，从真实返回URL SELECT≤8并存档；阅读相关存档段落后逐项ASSESS及六轴语义复核。部分PDF另用curl公开下载+pdftotext补齐截断。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-26d8d9c16c1d](https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-)；[ev-e6ad95e94d28](https://www.bls.gov/opub/mlr/2014/article/one-hundred-years-of-price-change-the-consumer-price-index-and-the-american-inflation-experience.htm)
+
+## 证据登记
+
+哈希校验只证明本地保存内容未改变。检索摘录与完整原始文件会按证据记录注明；两者均不能代替对来源与命题对应关系的判断。
+
+- [ev-886aac703b9e](https://www.oecd.org/en/publications/policies-for-the-future-of-farming-and-food-in-egypt_cab0cefd-en/full-report/the-agricultural-policy-context-in-egypt_d3486256.html)；资料日期：2026-05-04；覆盖：The agricultural policy context in Egypt: Policies for the Future of Farming and Food in Egypt | OECD。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-3bc047b21c8c](https://openknowledge.fao.org/server/api/core/bitstreams/5da9e6a6-5f9e-43c4-a42f-af5235dd97bd/content)；资料日期：未确定；覆盖：Agricultural policies, trade and sustainable development in Egypt。限制：存档相关段落已审读；全文公开PDF抓取后pdftotext；未显示发布日期者为null；只依所引实际内容。
+- [ev-1eb0117013da](https://academic.oup.com/book/36016/chapter/313262062)；资料日期：未确定；覆盖：The Interwar Gold Standard in Operation | Golden Fetters: The Gold Standard and the Great Depression, 1919-1939 | Oxford Academic。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-7a868b300ede](https://www.brookings.edu/wp-content/uploads/1982/01/1982a_bpea_cooper_dornbusch_hall.pdf)；资料日期：未确定；覆盖：The Gold Standard: Historical Facts and Future Prospects。限制：存档相关段落已审读；全文公开PDF抓取后pdftotext；未显示发布日期者为null；只依所引实际内容。
+- [ev-dd29eb64afeb](https://en.wikipedia.org/wiki/Bimetallism)；资料日期：2026-11-07；覆盖：Bimetallism。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-c531982ca60e](https://www.presidency.ucsb.edu/documents/proclamation-and-statement-ratifying-the-london-agreement-silver)；资料日期：未确定；覆盖：Proclamation and Statement Ratifying the London Agreement on Silver | The American Presidency Project。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-605119613d72](https://history.state.gov/historicaldocuments/frus1933v01/d571)；资料日期：未确定；覆盖：Historical Documents - Office of the Historian。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-a6defc78a301](https://www.federalreservehistory.org/essays/roosevelts-gold-program)；资料日期：未确定；覆盖：Roosevelt's Gold Program | Federal Reserve History。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-ff7b0b6889f4](https://www.bep.gov/system/files/2022-02/factsheet-silvercertificate-20130425.pdf)；资料日期：未确定；覆盖：www.moneyfactory.gov。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-5b13f16df2f6](https://www.bls.gov/cpi/tables/supplemental-files/historical-cpi-u-202412.pdf)；资料日期：未确定；覆盖：Consumer Price Index - December 2024。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-40c3332177d9](https://www.nber.org/system/files/chapters/c11482/c11482.pdf/)；资料日期：未确定；覆盖：The Gold Standard, Deflation, and Financial Crisis in the Great Depression: An International Comparison。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-cb0bb7800026](https://www66.statcan.gc.ca/eng/1942/194203650299_p.%20299.pdf)；资料日期：未确定；覆盖：15.—Quantities and Values of the World Production of Gold and Silver, by Principal Countries, 1939 and 1940。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-142837236d5c](https://www.elibrary.imf.org/view/journals/024/1958/001/article-A004-en.xml)；资料日期：未确定；覆盖：A Note on Gold Production and Additions to International Gold Reserves in: IMF Staff Papers Volume 1958 Issue 001 (1958)。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-2bec2b9c2e0c](https://goldpercapita.com/research/gold-mine-production-history)；资料日期：未确定；覆盖：Gold Mine Production History Since 1900 | USGS Data。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-6e6a557e16c6](https://www66.statcan.gc.ca/eng/1941/194103150253_p.%20253.pdf)；资料日期：未确定；覆盖：14.—Quantities and Yalues of World Production of Gold, 1891-1939。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-a4a0294574b8](https://digital.library.unt.edu/ark:/67531/metadc40311/m2/1/high_res_d/bomeconpapers_6_w.pdf)；资料日期：未确定；覆盖：SUMMARIZED DATA OF GOLD PRODUCTION。限制：存档相关段落已审读；全文公开PDF抓取后pdftotext；未显示发布日期者为null；只依所引实际内容。
+- [ev-af497592fa75](https://www.gold.org/goldhub/data/how-much-gold)；资料日期：未确定；覆盖：How Much Gold Has Been Mined? | World Gold Council。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-65bbbffc668f](https://www.allangray.co.za/latest-insights/markets-and-economy/gold-a-history-of-its-price/)；资料日期：2016-06-29；覆盖：Allan Gray | Gold: A history of its price。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-a591a026eb1a](https://www.gold.org/goldhub/research/market-primer/gold-market-primer-market-size-and-structure)；资料日期：2026-11-03；覆盖：Gold Market Primer: Market size and structure | World Gold Council。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-84acba1f231f](https://www.wto.org/english/res_e/statis_e/trade_evolution_e/evolution_trade_wto_e.htm)；资料日期：未确定；覆盖：Evolution of trade under the WTO: handy statistics。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-780a1928fb96](https://www.mininghistoryassociation.org/Journal/MHJ-v28-2021-McQueen%20Heap%20Leaching%20in%20NV.pdf)；资料日期：未确定；覆盖：Heap Leaching and Nevada’s。限制：存档相关段落已审读；全文公开PDF抓取后pdftotext；未显示发布日期者为null；只依所引实际内容。
+- [ev-38a22228cdf0](https://www.mbari.org/wp-content/static/chemsensor/au/gold.html)；资料日期：未确定；覆盖：Gold。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-52877936fcf7](https://www.federalreserve.gov/boarddocs/speeches/2004/200403022/)；资料日期：2004-03-02；覆盖：FRB:  Speech, Bernanke--Money, Gold, and the Great Depression --March 2, 2004。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-a838ae2e53ec](https://www.stlouisfed.org/the-great-depression/online-resources/-/media/project/frbstl/stlouisfed/files/pdfs/great-depression/wheelock_march_april_2010_review.pdf)；资料日期：未确定；覆盖：Lessons Learned? Comparing the Federal Reserve’s Responses to the Crises of 1929-1933 and 2007-2009, March/April 2010 Review。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-4957fb4fd31a](https://www.cfo.com/news/future-tense/670930/)；资料日期：2008-12-01；覆盖：Future Tense | CFO.com。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-367c30da99f1](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3696377)；资料日期：2020-09-01；覆盖：The Impact of Financial Education of Managers on Medium and Large Enterprises - a Randomized Controlled Trial in Mozambique by Claudia Custodio, Diogo Mendes, Daniel Metzger :: SSRN。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-477bf984e4c8](https://link.springer.com/article/10.1007/s11079-023-09739-0?code=23fcc2ac-2754-41e7-a943-9b13d0b8c5fd&error=cookies_not_supported)；资料日期：2023-11-11；覆盖：Money Growth, Money Velocity and Inflation in the US, 1948–2021。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-bb91326233c3](https://www.imf.org/-/media/files/publications/esr/2025/english/ch2.pdf)；资料日期：未确定；覆盖：ESR, Jul 2025--Chapter 2 - International Monetary System: Currencies in a Changing World。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-a38bc249f66b](https://doi.org/10.1093/ereh/hes007)；资料日期：2012-08-24；覆盖：Early modern copper money: multiple currencies and trimetallism in Sweden 1624–1776。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-ebaddaaa8749](https://crossworks.holycross.edu/cgi/viewcontent.cgi?article=1096&context=econ_working_papers)；资料日期：未确定；覆盖：Currencies, Identities, Free Banking, and Growth in Early Twentieth Century Manchuria。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-5c86f50c0194](https://www.stlouisfed.org/about-us/resources/why-fed-is-well-designed-central-bank/central-bank-independence-inflation)；资料日期：2010-04-20；覆盖：Central Bank Independence and Inflation | St. Louis Fed。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-8e47a1d17c20](https://oro.open.ac.uk/60077/8/60077.pdf)；资料日期：未确定；覆盖：Open Research Online。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-2864fad830c2](https://www.cnb.cz/en/economic-research/research-publications/cnb-working-paper-series/Hedging-Against-Inflation-International-Evidence-on-Investor-Clientele-Effects-00001/)；资料日期：未确定；覆盖：Hedging Against Inflation: International Evidence on Investor Clientele Effects - Czech National Bank。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-20b91efcf68b](https://www.bostonfed.org/-/media/Documents/neer/neer199a.pdf)；资料日期：未确定；覆盖：Inflation-Indexed Bonds: The Dog That Didn't Bark。限制：存档相关段落已审读；全文公开PDF抓取后pdftotext；未显示发布日期者为null；只依所引实际内容。
+- [ev-f021e448edc5](https://www.nber.org/reporter/2013number3/inflation-indexed-bonds)；资料日期：2013-09-26；覆盖：Inflation-Indexed Bonds | NBER。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-b5d7ac85d42b](https://www.richmondfed.org/-/media/RichmondFedOrg/publications/research/economic_review/1974/pdf/er600601.pdf)；资料日期：未确定；覆盖：The Concept of Indexation in the History of Economic Thought。限制：存档相关段落已审读；全文公开PDF抓取后pdftotext；未显示发布日期者为null；只依所引实际内容。
+- [ev-60ba02c84c83](https://doi.org/10.3386/w10183)；资料日期：2003-12-01；覆盖：The Invention of Inflation-Indexed Bonds in Early America。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-009ec2ad1c6e](https://www.nber.org/papers/w6356)；资料日期：1998-01-01；覆盖：Indexed Units of Account: Theory and Assessment of Historical Experience | NBER。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-6636ade26a81](https://fraser.stlouisfed.org/files/docs/historical/frbclev/wp/frbclv_2011-17.pdf)；资料日期：未确定；覆盖：Indexed Debt Contracts and the Financial Accelerator, Working Paper 11-17。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-10458bd219a5](https://www.imf.org/external/pubs/ft/wp/wp9815.pdf)；资料日期：未确定；覆盖：he Microeconomic Consequences of Wage Indexation Revisited - WP/98/15。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-73ae26435e44](https://www.brookings.edu/wp-content/uploads/1997/01/1997a_bpea_shiller_schultze_hall.pdf)；资料日期：未确定；覆盖：Public Resistance to Indexation: A Puzzle。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-324dbf25657f](https://obtienearchivo.bcn.cl/obtienearchivo?id=repositorio%2F10221%2F37432%2F2%2FInforme_BCN._UF_como_mecanismo_de_precios_y_casos_internacionales_FINAL.pdf)；资料日期：未确定；覆盖：La UF como mecanismo de precios。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-4fe3ee8c2d3f](https://repositoriodigital.bcentral.cl/xmlui/bitstream/handle/20.500.12580/3626/BCCh-sbc-v02-p001_018.pdf?isAllowed=y&sequence=1)；资料日期：未确定；覆盖：INDEXATION, INFLATION, AND MONETARY POLICY: AN OVERVIEW。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-efdc1a55e1e3](https://www.jstage.jst.go.jp/article/sea1971/2001/30/2001_30_3/_article/-char/en)；资料日期：2001-06-01；覆盖：The Crisis of the Philippine National Bank and Its Political Consequences: 1919-1922。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-3628585c544e](https://hal.science/hal-00375342v1)；资料日期：2006-04-20；覆盖：The French Monetary Management in the Inter-war Period: the Dismissal of Open Market Procedure?。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-ccc637c591ed](https://files.stlouisfed.org/files/htdocs/wp/2003/2003-014.pdf)；资料日期：未确定；覆盖：Gold, Fiat Money and Price Stability。限制：存档相关段落已审读；全文公开PDF抓取后pdftotext；未显示发布日期者为null；只依所引实际内容。
+- [ev-3a9db2774d25](https://www.richmondfed.org/-/media/RichmondFedOrg/publications/research/economic_quarterly/1993/summer/pdf/patinkin.pdf)；资料日期：未确定；覆盖：Irving Fisher and His Compensated Dollar Plan。限制：存档相关段落已审读；全文公开PDF抓取后pdftotext；未显示发布日期者为null；只依所引实际内容。
+- [ev-c7f1118b998e](https://ilostat.ilo.org/topics/wages/)；资料日期：未确定；覆盖：Statistics on earnings and labour income - ILOSTAT。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-bb5973c49458](https://www.ilo.org/sites/default/files/2026-08/Earnings%20data%20collection%20practices%20survey%20report_0.pdf)；资料日期：未确定；覆盖：Earnings data collection practices。限制：存档相关段落已审读；全文公开PDF抓取后pdftotext；未显示发布日期者为null；只依所引实际内容。
+- [ev-26d8d9c16c1d](https://www.minneapolisfed.org/about-us/monetary-policy/inflation-calculator/consumer-price-index-1913-)；资料日期：未确定；覆盖：Consumer Price Index, 1913- | Federal Reserve Bank of Minneapolis。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。
+- [ev-e6ad95e94d28](https://www.bls.gov/opub/mlr/2014/article/one-hundred-years-of-price-change-the-consumer-price-index-and-the-american-inflation-experience.htm)；资料日期：未确定；覆盖：One hundred years of price change: the Consumer Price Index and the American inflation experience : Monthly Labor Review : U.S. Bureau of Labor Statistics。限制：存档相关段落已审读；Exa正文可能截至12000字符；未显示发布日期者为null；只依所引实际内容。

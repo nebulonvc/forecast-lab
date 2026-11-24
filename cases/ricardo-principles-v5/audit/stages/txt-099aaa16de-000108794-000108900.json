@@ -1,0 +1,117 @@
+{
+  "id": "txt-099aaa16de-000108794-000108900",
+  "plan": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "not_a_pre_search_plan": "这是2026-11-20的r3补写。r2里这栏若只有“当前审查”一句，那个时间保留在previous_r2_plan，不把本段倒签成检索之前。",
+    "object": "社会进步中，制造品的自然价格下降，原料的自然价格上升。",
+    "condition": "社会进步。",
+    "observable": "制造品与原料两条同时的自然价格，不是初级产品对制成品的一个指数。",
+    "potential_counterevidence": "若原料相对制造品下降，或两条价格不是一降一升。",
+    "queries": [
+      {
+        "role": "support",
+        "query": "price of raw produce rose relative to manufactured goods after 1817",
+        "precall_file": "audit/r2-missing-direction/precall/04.json"
+      },
+      {
+        "role": "counter",
+        "query": "relative price of agricultural products versus manufactured goods long run decline",
+        "source": "audit/search-log.jsonl"
+      },
+      {
+        "role": "support",
+        "query": "raw produce prices rose relative to manufactures",
+        "source": "audit/search-log.jsonl"
+      }
+    ]
+  },
+  "select": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "max_urls": 8,
+    "urls": [
+      {
+        "url": "https://documents1.worldbank.org/curated/en/650181468765914171/pdf/Primary-commodity-prices-manufactured-goods-prices-and-the-terms-of-trade-of-developing-countries-what-the-long-run-shows.pdf",
+        "kept": true,
+        "used_for_score": false,
+        "reason": "检索日志把这份1988年世界银行文件记在原料相对制成品这一条的反证上：1900至1986年全部初级产品相对价格每年下降0.5%。方向对这句不利，保留。它不是每一种原料从1817年起的序列，也没有写到日，不计分。"
+      }
+    ],
+    "selected_for_score": [],
+    "url_gap": "上列是证据表里实有的地址，不超过8个。不利地址保留，且都未用于计分。"
+  },
+  "assess": {
+    "id": "txt-099aaa16de-000108794-000108900",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "社会进步中，制造品总是下降，原料总是上升。",
+    "reason": "这是相对价格趋势。已定位的一次检索对应初级产品相对制成品在 1900–1986 年下降，只有年份。本次补了原料相对上升的方向。新页写二十世纪原料相对制成品下降，并提到十九世纪末曾有改善，仍无日，也不能把“总是”打成一个方向。",
+    "limitation": "已有检索能复用的不再重搜。新检索只补法证未定位的方向或整条缺失。保存页的对象或日期不足，不计分。",
+    "evidence_ids": [],
+    "method": "按这句自己的对象、条件和窗口审查，不把倾向或条件句整类排除。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [],
+    "remaining_gap": "缺制造品与原料两条同时、带日的相对价格。",
+    "r2_reviewed_at": "2026-11-20T12:00:41Z",
+    "previous_verdict": "排除：非预测",
+    "change_reason": "按独立 QA 恢复进预测分母，先保持未知，不打分。"
+  },
+  "semantic_review": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "decision": "unresolved",
+    "checks": {
+      "object_match": "unknown",
+      "condition_logic": "unknown",
+      "time_alignment": "unknown",
+      "evidence_support": "unknown",
+      "counterevidence": "unknown",
+      "verdict_logic": "pass"
+    },
+    "check_reasons": {
+      "object_match": "世界银行文件量的是1900至1986年全部初级产品相对制成品，不是这句的每一种原料和每一种制造品。评估没有用它打分，对象仍未对齐。",
+      "condition_logic": "社会进步没有在该文件的1900至1986年窗口里被单独证实为这句的条件。",
+      "time_alignment": "文件写的是1900至1986年的趋势，没有日。观察终点留空。不能把1986收成12月31日。",
+      "evidence_support": "没有制造品下降和原料上升同时成立的序列。",
+      "counterevidence": "每年下降0.5%对“原料上升”不利，已保留。它不是这句的两条自然价格，不能判错。",
+      "verdict_logic": "不利指数被留下，但没有被当成同对象反证。结论仍是暂无法判断。"
+    },
+    "revision": "本轮六项没有fail，所以没有做那一次修订。判决保持暂无法判断。",
+    "remaining_gap": "还缺制造品与原料两条同时、带日的相对价格。"
+  },
+  "revision_trail": {
+    "previous_verdict": "排除：非预测",
+    "action": "r2",
+    "why": "按独立 QA 恢复进预测分母，先保持未知，不打分。",
+    "reviewed_at": "2026-11-20T12:00:41Z"
+  },
+  "previous_r2_plan": {
+    "reviewed_at": "2026-11-20T12:00:41Z",
+    "note": "当前审查。历史 precall 不是工具回显。"
+  },
+  "previous_r2_select": {
+    "note": "已有检索能复用的不再重搜。新检索只补法证未定位的方向或整条缺失。保存页的对象或日期不足，不计分。"
+  },
+  "previous_r2_semantic_review": {
+    "reviewed_at": "2026-11-20T12:00:41Z",
+    "object": "社会进步中，制造品总是下降，原料总是上升。",
+    "condition": "unknown",
+    "window": "句子没有写出截止日。文件出版年代理是 1817，只到年。不能把别的年份收成 12 月 31 日。",
+    "counterevidence_limit": "缺制造品与原料两条同时、带日的相对价格。",
+    "checks": {
+      "object_match": "保存材料的对象与这句不完全相同，不能据此打分。",
+      "condition_logic": "条件若未在同一材料里成立，不用另一种情境代替。",
+      "time_alignment": "没有源日期，或只有年份。观察终点留空。",
+      "evidence_support": "支持材料不足以单独证明这句。",
+      "counterevidence": "反面材料也不足以单独证伪这句。",
+      "verdict_logic": "六项没有同时通过，判暂无法判断，不制造分数。"
+    },
+    "issues": [
+      "缺制造品与原料两条同时、带日的相对价格。"
+    ],
+    "decision": "暂无法判断"
+  }
+}

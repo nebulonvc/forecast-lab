@@ -1,0 +1,725 @@
+{
+  "date": "2026-11-09",
+  "case": "america-against-america",
+  "scope": "two frozen prediction tasks; final decisions made by in-program review and bounded revision, no root per-item adjudication; accepted historical case unchanged",
+  "real_llm_requests": 25,
+  "llm_stages": {
+    "search_plan": 5,
+    "select_sources": 7,
+    "assess": 3,
+    "semantic_review": 7,
+    "revise_assessment": 3
+  },
+  "real_exa_requests": 10,
+  "exa_kinds": {
+    "search": 6,
+    "contents": 4
+  },
+  "provider_bill_checked": false,
+  "phases": [
+    {
+      "phase": "initial_live",
+      "all_network_disabled": false,
+      "exa_network_disabled": false,
+      "summary": {
+        "version": "search-verifier-v1",
+        "requested": 2,
+        "task_states": {
+          "completed": 0,
+          "partial": 2,
+          "failed": 0,
+          "not_started": 0
+        },
+        "completed_research_unresolved": 0,
+        "all_tasks_completed": false,
+        "imported": false,
+        "semantic_review_complete": false,
+        "callback_errors": [],
+        "deepseek": {
+          "estimated_cost_CNY": 0.07490272,
+          "estimated_off_peak_cost_CNY": 0.03745136,
+          "price_basis": "conservative peak estimate; missing usage retains reservations; provider billing not checked",
+          "unknown_or_inflight_reserved_CNY": 0,
+          "budget_committed_CNY": 0.07490272,
+          "usage_unknown_requests": 0,
+          "usage_unknown_reserved_CNY": 0,
+          "total_tokens": 31430,
+          "completed_stages": 7,
+          "cache_hits_this_run": 0,
+          "active_requests": 0,
+          "peak_concurrency_this_run": 2,
+          "elapsed_seconds": 20.88
+        },
+        "exa": {
+          "estimated_cost_USD": 0.03,
+          "unknown_or_inflight_reserved_USD": 0,
+          "budget_committed_USD": 0.03,
+          "budget_limit_USD": 0.1,
+          "requests": 5,
+          "attempts": 5,
+          "failed_attempts": 0,
+          "unknown_requests": 0,
+          "missing_cost_attempts": 0,
+          "cache_hits_this_run": 2,
+          "active_requests": 0,
+          "peak_concurrency_this_run": 2,
+          "price_basis": "costDollars estimates plus conservative unknown reservations; bill not reconciled"
+        }
+      },
+      "results": [
+        {
+          "claim_id": "txt-1c4066fc0c-000188277-000188300",
+          "task_state": "partial",
+          "assessment_verdict": null,
+          "assessment_reason": null,
+          "remaining_gap": "任务未完成；查看错误、已取得材料和请求状态，不能据此判断原预测。",
+          "raw_model_verdict": null,
+          "raw_model_trend_aligned": null,
+          "errors": [
+            {
+              "stage": "worker",
+              "error": "cached_response_invalid_b1e053fc633c"
+            }
+          ],
+          "validation_warnings": [],
+          "source_counts": {
+            "previously_registered_excerpt": 4
+          },
+          "autonomous_decision": false,
+          "semantic_validation": null,
+          "revision_count": 0,
+          "reviews": [],
+          "draft_verdicts": [],
+          "canonical_result_sha256": "0e52e70b922dfb7e93c12cd79732cb2a795b26489ffce011c3a77dc8c6ca5543"
+        },
+        {
+          "claim_id": "txt-1c4066fc0c-000208790-000208831",
+          "task_state": "partial",
+          "assessment_verdict": null,
+          "assessment_reason": null,
+          "remaining_gap": "任务未完成；查看错误、已取得材料和请求状态，不能据此判断原预测。",
+          "raw_model_verdict": null,
+          "raw_model_trend_aligned": null,
+          "errors": [
+            {
+              "stage": "worker",
+              "error": "cached_response_invalid_f6e773ad5496"
+            }
+          ],
+          "validation_warnings": [],
+          "source_counts": {
+            "previously_registered_excerpt": 3,
+            "exa_contents": 2
+          },
+          "autonomous_decision": false,
+          "semantic_validation": null,
+          "revision_count": 0,
+          "reviews": [],
+          "draft_verdicts": [],
+          "canonical_result_sha256": "612a1085c9d0994d7c1719bec08f658130ba0c168d6274e5988a0714f87f427f"
+        }
+      ]
+    },
+    {
+      "phase": "retry_live",
+      "all_network_disabled": false,
+      "exa_network_disabled": false,
+      "summary": {
+        "version": "search-verifier-v1",
+        "requested": 2,
+        "task_states": {
+          "completed": 1,
+          "partial": 1,
+          "failed": 0,
+          "not_started": 0
+        },
+        "completed_research_unresolved": 1,
+        "all_tasks_completed": false,
+        "imported": false,
+        "semantic_review_complete": false,
+        "callback_errors": [],
+        "deepseek": {
+          "estimated_cost_CNY": 0.1818832,
+          "estimated_off_peak_cost_CNY": 0.0909416,
+          "price_basis": "conservative peak estimate; missing usage retains reservations; provider billing not checked",
+          "unknown_or_inflight_reserved_CNY": 0,
+          "budget_committed_CNY": 0.1818832,
+          "usage_unknown_requests": 0,
+          "usage_unknown_reserved_CNY": 0,
+          "total_tokens": 73741,
+          "completed_stages": 10,
+          "cache_hits_this_run": 2,
+          "active_requests": 0,
+          "peak_concurrency_this_run": 2,
+          "elapsed_seconds": 25.63
+        },
+        "exa": {
+          "estimated_cost_USD": 0.053,
+          "unknown_or_inflight_reserved_USD": 0,
+          "budget_committed_USD": 0.053,
+          "budget_limit_USD": 0.1,
+          "requests": 10,
+          "attempts": 10,
+          "failed_attempts": 0,
+          "unknown_requests": 0,
+          "missing_cost_attempts": 0,
+          "cache_hits_this_run": 6,
+          "active_requests": 0,
+          "peak_concurrency_this_run": 1,
+          "price_basis": "costDollars estimates plus conservative unknown reservations; bill not reconciled"
+        }
+      },
+      "results": [
+        {
+          "claim_id": "txt-1c4066fc0c-000188277-000188300",
+          "task_state": "completed",
+          "assessment_verdict": "暂无法判断",
+          "assessment_reason": "引用材料的发表时间尚未确认，无法确认其属于证据截止日前；原模型建议保留待复核。",
+          "remaining_gap": "核对被引用材料的可证实发表版本及日期。缺少2022年后种族/资源分隔的最新全国数据，以及青少年吸毒在2023年后的趋势；教育质量指标存在长期改善与近期下降并存的口径差异，需进一步区分。",
+          "raw_model_verdict": "部分符合",
+          "raw_model_trend_aligned": true,
+          "errors": [],
+          "validation_warnings": [
+            {
+              "code": "publication_date_unconfirmed",
+              "evidence_ids": [
+                "prior-25a598579f8c1f94e4b5",
+                "prior-398d6cca944740e1f4a1"
+              ]
+            }
+          ],
+          "source_counts": {
+            "previously_registered_excerpt": 4,
+            "exa_contents": 6
+          },
+          "autonomous_decision": false,
+          "semantic_validation": null,
+          "revision_count": 0,
+          "reviews": [],
+          "draft_verdicts": [],
+          "canonical_result_sha256": "53f456b6c111d8877705c70454363e372f3da75a0f98c1b8c885413c29303689"
+        },
+        {
+          "claim_id": "txt-1c4066fc0c-000208790-000208831",
+          "task_state": "partial",
+          "assessment_verdict": null,
+          "assessment_reason": null,
+          "remaining_gap": "任务未完成；查看错误、已取得材料和请求状态，不能据此判断原预测。",
+          "raw_model_verdict": "部分符合",
+          "raw_model_trend_aligned": true,
+          "errors": [
+            {
+              "stage": "worker",
+              "error": "evidence_quote_not_in_shown_source"
+            }
+          ],
+          "validation_warnings": [],
+          "source_counts": {
+            "previously_registered_excerpt": 3,
+            "exa_contents": 3
+          },
+          "autonomous_decision": false,
+          "semantic_validation": null,
+          "revision_count": 0,
+          "reviews": [],
+          "draft_verdicts": [],
+          "canonical_result_sha256": "cf5fd6c9fcc786fd90adc2ce6b1c4206563eb3512d00d3f10502873c6c00d69c"
+        }
+      ]
+    },
+    {
+      "phase": "offline_validation_replay",
+      "all_network_disabled": true,
+      "exa_network_disabled": true,
+      "summary": {
+        "version": "search-verifier-v1",
+        "requested": 2,
+        "task_states": {
+          "completed": 2,
+          "partial": 0,
+          "failed": 0,
+          "not_started": 0
+        },
+        "completed_research_unresolved": 2,
+        "all_tasks_completed": true,
+        "imported": false,
+        "semantic_review_complete": false,
+        "callback_errors": [],
+        "deepseek": {
+          "estimated_cost_CNY": 0.1818832,
+          "estimated_off_peak_cost_CNY": 0.0909416,
+          "price_basis": "conservative peak estimate; missing usage retains reservations; provider billing not checked",
+          "unknown_or_inflight_reserved_CNY": 0,
+          "budget_committed_CNY": 0.1818832,
+          "usage_unknown_requests": 0,
+          "usage_unknown_reserved_CNY": 0,
+          "total_tokens": 73741,
+          "completed_stages": 10,
+          "cache_hits_this_run": 10,
+          "active_requests": 0,
+          "peak_concurrency_this_run": 0,
+          "elapsed_seconds": 0.02
+        },
+        "exa": {
+          "estimated_cost_USD": 0.053,
+          "unknown_or_inflight_reserved_USD": 0,
+          "budget_committed_USD": 0.053,
+          "budget_limit_USD": 0.1,
+          "requests": 10,
+          "attempts": 10,
+          "failed_attempts": 0,
+          "unknown_requests": 0,
+          "missing_cost_attempts": 0,
+          "cache_hits_this_run": 11,
+          "active_requests": 0,
+          "peak_concurrency_this_run": 0,
+          "price_basis": "costDollars estimates plus conservative unknown reservations; bill not reconciled"
+        }
+      },
+      "results": [
+        {
+          "claim_id": "txt-1c4066fc0c-000188277-000188300",
+          "task_state": "completed",
+          "assessment_verdict": "暂无法判断",
+          "assessment_reason": "引用材料的发表时间尚未确认，无法确认其属于证据截止日前；原模型建议保留待复核。",
+          "remaining_gap": "核对被引用材料的可证实发表版本及日期。缺少2022年后种族/资源分隔的最新全国数据，以及青少年吸毒在2023年后的趋势；教育质量指标存在长期改善与近期下降并存的口径差异，需进一步区分。",
+          "raw_model_verdict": "部分符合",
+          "raw_model_trend_aligned": true,
+          "errors": [],
+          "validation_warnings": [
+            {
+              "code": "publication_date_unconfirmed",
+              "evidence_ids": [
+                "prior-25a598579f8c1f94e4b5",
+                "prior-398d6cca944740e1f4a1"
+              ]
+            }
+          ],
+          "source_counts": {
+            "previously_registered_excerpt": 4,
+            "exa_contents": 6
+          },
+          "autonomous_decision": false,
+          "semantic_validation": null,
+          "revision_count": 0,
+          "reviews": [],
+          "draft_verdicts": [],
+          "canonical_result_sha256": "9402a4fd24d58fb1af6325470f6b76d08079a56ab9660e42d6ce7416d66c5a36"
+        },
+        {
+          "claim_id": "txt-1c4066fc0c-000208790-000208831",
+          "task_state": "completed",
+          "assessment_verdict": "暂无法判断",
+          "assessment_reason": "引用材料的发表时间尚未确认，无法确认其属于证据截止日前；原模型建议保留待复核。",
+          "remaining_gap": "核对被引用材料的可证实发表版本及日期。缺乏对1988年前后“当时无用”成果总体被后续独立引用的比例统计，现有证据仅为若干具名个案，无法量化“许多成果”的普遍性。",
+          "raw_model_verdict": "部分符合",
+          "raw_model_trend_aligned": true,
+          "errors": [],
+          "validation_warnings": [
+            {
+              "code": "publication_date_unconfirmed",
+              "evidence_ids": [
+                "ev-528f2f971f6c547cd518bcf4",
+                "ev-6dde1a41923f2068b7d8811d",
+                "prior-7d06e6364b493a0682f9"
+              ]
+            }
+          ],
+          "source_counts": {
+            "previously_registered_excerpt": 3,
+            "exa_contents": 3
+          },
+          "autonomous_decision": false,
+          "semantic_validation": null,
+          "revision_count": 0,
+          "reviews": [],
+          "draft_verdicts": [],
+          "canonical_result_sha256": "77ab2126e8436c38faddd4ee99b22b85ca0d0cd7a3cd0dd9c9b731c31edb3412"
+        }
+      ]
+    },
+    {
+      "phase": "autonomous_review_initial",
+      "all_network_disabled": false,
+      "exa_network_disabled": true,
+      "summary": {
+        "version": "search-verifier-v1",
+        "requested": 2,
+        "task_states": {
+          "completed": 1,
+          "partial": 1,
+          "failed": 0,
+          "not_started": 0
+        },
+        "completed_research_unresolved": 1,
+        "all_tasks_completed": false,
+        "imported": false,
+        "semantic_review_complete": false,
+        "automatic_semantic_accepted": 1,
+        "automatic_semantic_unresolved": 0,
+        "callback_errors": [],
+        "deepseek": {
+          "estimated_cost_CNY": 0.25718512,
+          "estimated_off_peak_cost_CNY": 0.12859256,
+          "price_basis": "conservative peak estimate; missing usage retains reservations; provider billing not checked",
+          "unknown_or_inflight_reserved_CNY": 0,
+          "budget_committed_CNY": 0.25718512,
+          "usage_unknown_requests": 0,
+          "usage_unknown_reserved_CNY": 0,
+          "total_tokens": 106319,
+          "completed_stages": 14,
+          "cache_hits_this_run": 10,
+          "active_requests": 0,
+          "peak_concurrency_this_run": 2,
+          "elapsed_seconds": 16.09
+        },
+        "exa": {
+          "estimated_cost_USD": 0.053,
+          "unknown_or_inflight_reserved_USD": 0,
+          "budget_committed_USD": 0.053,
+          "budget_limit_USD": 0.1,
+          "requests": 10,
+          "attempts": 10,
+          "failed_attempts": 0,
+          "unknown_requests": 0,
+          "missing_cost_attempts": 0,
+          "cache_hits_this_run": 11,
+          "active_requests": 0,
+          "peak_concurrency_this_run": 0,
+          "price_basis": "costDollars estimates plus conservative unknown reservations; bill not reconciled"
+        }
+      },
+      "results": [
+        {
+          "claim_id": "txt-1c4066fc0c-000188277-000188300",
+          "task_state": "partial",
+          "assessment_verdict": null,
+          "assessment_reason": null,
+          "remaining_gap": "任务未完成；查看错误、已取得材料和请求状态，不能据此判断原预测。",
+          "raw_model_verdict": "部分符合",
+          "raw_model_trend_aligned": true,
+          "errors": [
+            {
+              "stage": "worker",
+              "error": "cached_response_invalid_44a2b3f29de2"
+            }
+          ],
+          "validation_warnings": [
+            {
+              "code": "publication_date_unconfirmed",
+              "evidence_ids": [
+                "prior-25a598579f8c1f94e4b5",
+                "prior-398d6cca944740e1f4a1"
+              ]
+            }
+          ],
+          "source_counts": {
+            "previously_registered_excerpt": 4,
+            "exa_contents": 6
+          },
+          "autonomous_decision": false,
+          "semantic_validation": null,
+          "revision_count": 0,
+          "reviews": [],
+          "draft_verdicts": [
+            {
+              "verdict": "部分符合",
+              "trend_aligned": true
+            }
+          ],
+          "canonical_result_sha256": "c72ee5a642af41a801562b6e7d8ae6d2ce7cd553a895144b9ab887f01ce6be83"
+        },
+        {
+          "claim_id": "txt-1c4066fc0c-000208790-000208831",
+          "task_state": "completed",
+          "assessment_verdict": "暂无法判断",
+          "assessment_reason": "复核指出所引案例（1928、1949、1959年）均非1991年前后发表，也无证据表明它们在发表时“未被政策采用”，不能对应卡罗尔所指“许多成果现在没有用”的成果集合；1949交通研究仅被记为“建议建立交通部”，不能加强为“促成”。因此关键对象与条件尚未确定，不能判部分符合或趋势符合。",
+          "remaining_gap": "需要取得原书语境下（约1991年前）布鲁金斯已发表、当时未被政策采用的具名成果，并证明其发表时“未被采用”，以及其后被独立政策文件、国会记录、司法意见或学术讨论实际调用的证据；同时核实1949交通研究是否真的促成交通部建立而非仅提出建议。现有材料不能解决这些对象、条件和时间对应问题。",
+          "raw_model_verdict": "部分符合",
+          "raw_model_trend_aligned": true,
+          "errors": [],
+          "validation_warnings": [],
+          "source_counts": {
+            "previously_registered_excerpt": 3,
+            "exa_contents": 3
+          },
+          "autonomous_decision": true,
+          "semantic_validation": "accepted",
+          "revision_count": 1,
+          "reviews": [
+            {
+              "decision": "revise",
+              "checks": {
+                "object_match": "fail",
+                "condition_logic": "pass",
+                "time_alignment": "fail",
+                "evidence_support": "fail",
+                "counterevidence": "pass",
+                "verdict_logic": "fail"
+              },
+              "issues": [
+                {
+                  "check": "object_match",
+                  "reason": "原书断言的对象是卡罗尔所说的“许多成果”，即布鲁金斯学会当时已产出、当时没有用、将来会被需要的成果集合；研究口径把它限定为“1988年前后已发表、当时未被政策采用的具名研究”。但所引案例（1928 Meriam报告、1959债务上限研究、1949交通研究）都不是1988年前后发表，也没有证据表明它们在发表时“未被政策采用”。因此，这些案例不能对应研究口径所定义的成果集合，也不能直接支持原断言中的“当时无用”这一限定。",
+                  "quote_origin": null
+                },
+                {
+                  "check": "time_alignment",
+                  "reason": "研究口径要求观察1988年前后已发表的研究在1988年之后是否被调用，但所引支持案例的发表时间分别是1928年、1959年和1949年，均早于1988年；而且这些案例的“后来引用”发生在1960年代、2013年、2023年等不同时期，并非统一在1988年之后观察。原书出版于1991年，卡罗尔所说的“现在没有用”应指1991年前后，而不是1988年前后；研究口径的时间锚点与原书语境不一致。",
+                  "quote_origin": null
+                },
+                {
+                  "check": "evidence_support",
+                  "reason": "建议把“1949交通研究促成交通部建立”列为支持证据，但所引来源prior-7d06e6364b493a0682f9的原文只写“1949交通政策著作建议建立交通部”，并未说明该建议被采纳或促成交通部建立；这是把“建议”加强为“促成”。此外，ev-528f2f971f6c547cd518bcf4和ev-6dde1a41923f2068b7d8811d的verified=false，且日期未知，不能作为已确认的支持材料。",
+                  "quote_origin": null
+                },
+                {
+                  "check": "verdict_logic",
+                  "reason": "建议判定为“部分符合”，并设置trend_aligned=true，理由是“方向与断言一致，但未覆盖‘许多成果’的整体比例”。然而，现有证据只是若干具名旧研究后来被引用，既不能证明这些成果在发表时“没有用”，也不能证明它们属于卡罗尔所指的“许多成果”集合；而且“许多成果”的普遍性结果尚未验证。按口径，这应属于关键对象和条件尚未确定，不能据此判定为部分符合或趋势符合。",
+                  "quote_origin": null
+                }
+              ],
+              "remaining_gap": "需要把观察对象改为原书语境下（约1991年前）布鲁金斯已发表、当时未被政策采用的具名成果，并取得这些成果在发表时“未被采用”的证据，以及其后被独立政策文件、国会记录、司法意见或学术讨论实际调用的证据；同时需要核实1949交通研究是否真的促成交通部建立，而不是仅提出建议。现有材料不能解决这些对象、条件和时间对应问题。"
+            },
+            {
+              "decision": "accept",
+              "checks": {
+                "object_match": "pass",
+                "condition_logic": "pass",
+                "time_alignment": "pass",
+                "evidence_support": "pass",
+                "counterevidence": "pass",
+                "verdict_logic": "pass"
+              },
+              "issues": [],
+              "remaining_gap": ""
+            }
+          ],
+          "draft_verdicts": [
+            {
+              "verdict": "部分符合",
+              "trend_aligned": true
+            },
+            {
+              "verdict": "暂无法判断",
+              "trend_aligned": false
+            }
+          ],
+          "canonical_result_sha256": "77079d1633999dc1180f2f4f5928bc5d460e01feb9e8b1e3c228b23a8e8a4f82"
+        }
+      ]
+    },
+    {
+      "phase": "autonomous_review_final",
+      "all_network_disabled": false,
+      "exa_network_disabled": true,
+      "summary": {
+        "version": "search-verifier-v1",
+        "requested": 2,
+        "task_states": {
+          "completed": 2,
+          "partial": 0,
+          "failed": 0,
+          "not_started": 0
+        },
+        "completed_research_unresolved": 2,
+        "all_tasks_completed": true,
+        "imported": false,
+        "semantic_review_complete": true,
+        "automatic_semantic_accepted": 2,
+        "automatic_semantic_unresolved": 0,
+        "callback_errors": [],
+        "deepseek": {
+          "estimated_cost_CNY": 0.37739528,
+          "estimated_off_peak_cost_CNY": 0.18869764,
+          "price_basis": "conservative peak estimate; missing usage retains reservations; provider billing not checked",
+          "unknown_or_inflight_reserved_CNY": 0,
+          "budget_committed_CNY": 0.37739528,
+          "usage_unknown_requests": 0,
+          "usage_unknown_reserved_CNY": 0,
+          "total_tokens": 159503,
+          "completed_stages": 16,
+          "cache_hits_this_run": 10,
+          "active_requests": 0,
+          "peak_concurrency_this_run": 2,
+          "elapsed_seconds": 16.23
+        },
+        "exa": {
+          "estimated_cost_USD": 0.053,
+          "unknown_or_inflight_reserved_USD": 0,
+          "budget_committed_USD": 0.053,
+          "budget_limit_USD": 0.1,
+          "requests": 10,
+          "attempts": 10,
+          "failed_attempts": 0,
+          "unknown_requests": 0,
+          "missing_cost_attempts": 0,
+          "cache_hits_this_run": 11,
+          "active_requests": 0,
+          "peak_concurrency_this_run": 0,
+          "price_basis": "costDollars estimates plus conservative unknown reservations; bill not reconciled"
+        }
+      },
+      "results": [
+        {
+          "claim_id": "txt-1c4066fc0c-000188277-000188300",
+          "task_state": "completed",
+          "assessment_verdict": "暂无法判断",
+          "assessment_reason": "引用材料的发表时间尚未确认，无法确认其属于证据截止日前；原模型建议保留待复核。",
+          "remaining_gap": "核对被引用材料的可证实发表版本及日期。缺少2022年后种族/资源分隔的最新全国数据，以及青少年吸毒在2023年后的趋势；教育质量指标存在长期改善与近期下降并存的口径差异，需进一步区分。",
+          "raw_model_verdict": "部分符合",
+          "raw_model_trend_aligned": true,
+          "errors": [],
+          "validation_warnings": [
+            {
+              "code": "publication_date_unconfirmed",
+              "evidence_ids": [
+                "prior-25a598579f8c1f94e4b5",
+                "prior-398d6cca944740e1f4a1"
+              ]
+            }
+          ],
+          "source_counts": {
+            "previously_registered_excerpt": 4,
+            "exa_contents": 6
+          },
+          "autonomous_decision": true,
+          "semantic_validation": "accepted",
+          "revision_count": 1,
+          "reviews": [
+            {
+              "decision": "revise",
+              "checks": {
+                "object_match": "pass",
+                "condition_logic": "fail",
+                "time_alignment": "pass",
+                "evidence_support": "pass",
+                "counterevidence": "pass",
+                "verdict_logic": "fail"
+              },
+              "issues": [
+                {
+                  "check": "condition_logic",
+                  "reason": "原文的条件是“教育中潜在的危机，如不解决，将成为一大问题”，后果B是“成为一大问题”。建议把复合前提A拆成低质量、种族分隔、吸毒等分项，再因吸毒分项改善而判“部分符合”，这等于把A的部分指标改善当成B只实现一部分；但按任务口径，A是否仍未解决与B是否实现应分别判断。现有材料显示A中的教育质量与种族/资源分隔问题仍存在，B（仍构成全国性重大教育政策难题）也有直接证据，吸毒分项改善只能作为缓解或限制，不能据此把结论降为部分符合。",
+                  "quote_origin": "book"
+                },
+                {
+                  "check": "verdict_logic",
+                  "reason": "建议以“复合命题各分项方向不一”为由判部分符合，但未指出后果B哪些具体部分实现、哪些未实现。其reason把前提A的吸毒分项改善与后果B的实现程度混在一起，属于分类口径错误；同时trend_aligned=true与“部分符合”并存，也缺乏持续方向证据支撑。",
+                  "quote_origin": "proposal"
+                }
+              ],
+              "remaining_gap": "需把前提A（教育低质量、种族/资源分隔、青少年吸毒等危机是否仍未解决）与后果B（是否已成为全国性重大教育政策难题）分开表述；吸毒改善只能作为缓解或限制，不能据此降为部分符合。若要维持部分符合，必须具体指出B的哪些部分实现、哪些未实现及直接证据；否则应改判为符合并保留限制说明。"
+            },
+            {
+              "decision": "accept",
+              "checks": {
+                "object_match": "pass",
+                "condition_logic": "pass",
+                "time_alignment": "pass",
+                "evidence_support": "pass",
+                "counterevidence": "pass",
+                "verdict_logic": "pass"
+              },
+              "issues": [],
+              "remaining_gap": ""
+            }
+          ],
+          "draft_verdicts": [
+            {
+              "verdict": "部分符合",
+              "trend_aligned": true
+            },
+            {
+              "verdict": "正确",
+              "trend_aligned": false
+            }
+          ],
+          "canonical_result_sha256": "b53b92323961b401a5314277396e05928e896b2a49024a96b0674228c57d384c"
+        },
+        {
+          "claim_id": "txt-1c4066fc0c-000208790-000208831",
+          "task_state": "completed",
+          "assessment_verdict": "暂无法判断",
+          "assessment_reason": "所引证据只能证明少数布鲁金斯旧研究后来被引用或产生影响，不能证明这些成果在1988年前后“当时未被政策采用”，也不能支撑“许多成果”整体被需要的比例性结论。原文断言的关键前提（当时无用）和范围（许多成果）均缺证据，无法按声明口径操作化评估。",
+          "remaining_gap": "需提供1988年前后已发表且当时未被政策采用的布鲁金斯具名成果清单，并补充这些成果在1988年后被独立政策文件、国会记录、司法意见或学术讨论实际引用的证据，以及“许多成果”层面的比例或代表性证据；现有材料只能证明少数旧研究后来被引用，不能支撑部分符合或趋势符合。",
+          "raw_model_verdict": "部分符合",
+          "raw_model_trend_aligned": true,
+          "errors": [],
+          "validation_warnings": [],
+          "source_counts": {
+            "previously_registered_excerpt": 3,
+            "exa_contents": 3
+          },
+          "autonomous_decision": true,
+          "semantic_validation": "accepted",
+          "revision_count": 1,
+          "reviews": [
+            {
+              "decision": "revise",
+              "checks": {
+                "object_match": "fail",
+                "condition_logic": "pass",
+                "time_alignment": "fail",
+                "evidence_support": "fail",
+                "counterevidence": "pass",
+                "verdict_logic": "fail"
+              },
+              "issues": [
+                {
+                  "check": "object_match",
+                  "reason": "原文对象是卡罗尔所描述的布鲁金斯学会长期研究的一般性知识储备，并未限定为“1988年前后已发表、当时未即时用于政策的具名研究”。建议的scope把对象收窄为1988年前后的具名研究，但所引证据（1928 Meriam报告、1959债务上限研究、1949交通研究）均不在该时间窗口内，也没有证据证明这些成果在1988年前后“当时未被政策采用”。因此取证对象与原文对象不对应。",
+                  "quote_origin": "book"
+                },
+                {
+                  "check": "time_alignment",
+                  "reason": "建议的scope把观察起点定为1988年前后，但所引支持证据的成果分别形成于1928、1949、1959年，引用发生在2013、2023年，均不是“1988年前后已发表”的成果；observation_end写作2023-06-15，而scope声称观察至cutoff 2026-11-09，内部时期口径不一致。",
+                  "quote_origin": "proposal"
+                },
+                {
+                  "check": "evidence_support",
+                  "reason": "所引证据只能证明若干布鲁金斯旧研究后来被引用或产生影响，不能证明这些成果在1988年前后“当时未被政策采用”，也不能支撑“许多成果”整体被需要的比例性结论。prior-7d06e6364b493a0682f9为学会自述，ev-528f2f971f6c547cd518bcf4与ev-6dde1a41923f2068b7d8811d为verified=false的候选材料，且日期未知；建议却将其作为支持或边界证据纳入结论。",
+                  "quote_origin": "evidence"
+                },
+                {
+                  "check": "verdict_logic",
+                  "reason": "建议一方面称“方向与断言一致”“仅显示趋势符合”，另一方面又判“部分符合”并设trend_aligned=true。原文断言是“许多成果将来会被需要”，其可检验的主要结果是这些成果后来确实被需要；现有证据只显示少数具名案例被引用，既未证明“许多”这一范围，也未证明“当时无用”这一前提，属于关键证据缺口，应保留为具体未定，而不是以个案趋势判部分符合。",
+                  "quote_origin": "proposal"
+                }
+              ],
+              "remaining_gap": "需将scope改为与原文一致的一般性长期研究知识储备口径，或提供1988年前后已发表且当时未被政策采用的具名成果清单；并补充这些成果在1988年后被独立政策文件、国会记录、司法意见或学术讨论实际引用的证据，以及“许多成果”层面的比例或代表性证据。现有材料只能证明少数旧研究后来被引用，不能支撑部分符合的结论。"
+            },
+            {
+              "decision": "accept",
+              "checks": {
+                "object_match": "pass",
+                "condition_logic": "pass",
+                "time_alignment": "pass",
+                "evidence_support": "pass",
+                "counterevidence": "pass",
+                "verdict_logic": "pass"
+              },
+              "issues": [],
+              "remaining_gap": ""
+            }
+          ],
+          "draft_verdicts": [
+            {
+              "verdict": "部分符合",
+              "trend_aligned": true
+            },
+            {
+              "verdict": "暂无法判断",
+              "trend_aligned": false
+            }
+          ],
+          "canonical_result_sha256": "127538cb04aadf325f5617e374e9b16f1af1c2488c0f12d62dfe79dc9a701bf5"
+        }
+      ]
+    }
+  ],
+  "autonomous_final_completed": 2,
+  "human_adjudications_in_final_runtime": 0,
+  "independent_scientific_qualification": false,
+  "archive_policy": "Raw responses and full source extractions remain local in ignored run directories; this file preserves sanitized phase outcomes and cumulative accounting."
+}

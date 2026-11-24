@@ -1,0 +1,57 @@
+{
+  "book": "债务危机",
+  "cutoff": "2026-11-15",
+  "rules_version": "simple-v3-trend-four-class",
+  "candidates": 9,
+  "assessment_reviewed": 9,
+  "unreviewed": 0,
+  "extraction_v2_reviewed": 9,
+  "expanded_claims_n": 9,
+  "unresolved_references_n": 0,
+  "legacy_extraction_reviewed": 0,
+  "whole_candidate_pass_complete": true,
+  "candidate_completion_rate": 1.0,
+  "forecast_n": 8,
+  "verdicts": {
+    "正确": 3,
+    "部分符合": 4,
+    "错误": 0,
+    "暂无法判断": 1
+  },
+  "display_verdicts": {
+    "正确": 3,
+    "趋势符合": 1,
+    "部分符合": 3,
+    "错误": 0,
+    "暂无法判断": 1
+  },
+  "display_schema": "five-categories-trend-separate",
+  "excluded": {
+    "nonforecast": 1,
+    "duplicate": 0
+  },
+  "decided_n": 7,
+  "forecasts_with_bound_evidence": 8,
+  "forecasts_without_bound_evidence": 0,
+  "no_decidable_outcomes": false,
+  "trend_aligned_n": 1,
+  "evaluation_coverage": 0.875,
+  "correct_share_of_decided": 0.42857142857142855,
+  "unresolved_bases": {
+    "future": 1
+  },
+  "evidence": 36,
+  "evidence_hash_verified": 36,
+  "method_attribution": {
+    "inferred": 8,
+    "explicit": 1
+  },
+  "interpretation": "Retrospective parent-record counts, not independent forecast accuracy or prospective skill.",
+  "brier": null,
+  "partial_numeric_weight": null,
+  "prepublication_observation_warning_ids": [],
+  "horizon_sources": {
+    "implicit_publication_to_cutoff": 7,
+    "explicit": 1
+  }
+}

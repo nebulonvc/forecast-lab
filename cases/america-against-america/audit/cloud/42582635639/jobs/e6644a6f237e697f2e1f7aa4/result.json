@@ -1,0 +1,108 @@
+{
+  "claim_id": "txt-1c4066fc0c-000118342-000118369",
+  "version": "search-verifier-v1",
+  "input_sha256": "acd7f1816a0b2669c52d1ca7ff632301b9ddfc8e42989f1437130572d2490bff",
+  "cutoff": "2026-11-09",
+  "task_state": "partial",
+  "assessment": null,
+  "raw_assessment": null,
+  "evidence_candidates": [
+    {
+      "id": "prior-0faec4964a3999a6139f",
+      "url": "https://api.worldbank.org/v2/country/US;CN/indicator/NY.GDP.PCAP.PP.CD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-r2-l2-wb-percap",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-wb-percap",
+      "archive_sha256": "fc426583cf86a8c06cfd128d329e4e9e9b9939952510dbca6eb1a0d6ada736a5",
+      "archive_path": "data/sources/r2-l2-wb-percap.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-b11c0a4895ecbd2eb37f",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.CD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-cd",
+      "published_date": "2026-10-08",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-cd",
+      "archive_sha256": "7ad5c1c4f44e15850a861521955b29727497d2cb232432f3dbc2e56ba20d4e42",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.CD.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-c46d2d3bbcefde156d1e",
+      "url": "https://history.state.gov/milestones/1989-1992/collapse-soviet-union",
+      "title": "ev-l2-soviet-collapse",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-l2-soviet-collapse",
+      "archive_sha256": "2ad477d822db290114ff9d7db517c69d10cb42510281166370f67a5cfad2e478",
+      "archive_path": "data/sources/lane2-ev-l2-soviet-collapse.html",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "World Bank GDP per capita PPP China United States 1991 2024 convergence data",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "ideological competition Cold War end convergence economic development Fukuyama end of history evidence",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [
+    {
+      "stage": "worker",
+      "error": "cached_response_invalid_bc540dd56559"
+    }
+  ],
+  "validation_warnings": [],
+  "remaining_gap": "任务未完成；查看错误、已取得材料和请求状态，不能据此判断原预测。",
+  "source_statuses": [],
+  "scope_suggestions": [],
+  "llm_calls": 2,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "1f98456a96f20d395b4a654148fa32577dca2a5cca49439255f8b2d550b2d872"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "ba93b960500b8d78301569b50d7964da",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "cd6c73f9d42e042af134e7d026bfb083",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [],
+  "revision_count": 0,
+  "draft_history": [],
+  "autonomous_decision": false,
+  "semantic_validation": null,
+  "scope": "王沪宁1991年前后提出的条件性判断：若东西方经济水平拉平（不必倒转），意识形态之争可能重新兴起。可观察口径包括：以名义GDP总量或PPP人均GDP衡量东西方主要阵营/代表国家的经济差距是否显著缩小至“拉平”；以及此后是否出现可归因于经济差距缩小的意识形态竞争回升。反证包括：经济差距未拉平而意识形态竞争仍回升，或差距拉平后意识形态竞争未回升。注意原东方集团已发生制度变迁，跨期比较主体需谨慎对应。",
+  "elapsed_seconds": 9.098,
+  "completed_at": "2026-11-09T08:00:00.886996+00:00"
+}

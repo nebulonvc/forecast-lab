@@ -1,0 +1,28 @@
+{
+  "id": "912b91b7-5b58-4ba0-8f02-a749d0b21f3d",
+  "object": "chat.completion",
+  "created": 1794201583,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000028279-000028305\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"对2014年领英估值的解释性陈述，无可独立检验的未来现金流数值或期限。\",\"reason\":\"该句只是解释领英高估值需考虑其预测未来现金流，属于估值逻辑说明而非可检验预测。\",\"limitation\":\"原文未给出具体现金流预测数字，无法作为独立预测评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"未来\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000028756-000028800\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为“把短期增长看成重中之重”，结果为忽视公司10年后能否存续；无具体公司对象，无法操作化。\",\"reason\":\"这是条件性告诫，未指定具体公司或可观察对象，条件是否发生及结果均无法核实。\",\"limitation\":\"缺少具体主体与指标，不能以个别公司案例代替该一般性判断。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"10年之后\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000029272-000029312\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"“前所未有的有价值事物”与“价值无限增长”均不可常规操作化，无期限。\",\"reason\":\"“无限增长”是理论推演而非可检验命题，无法用任何有限估值数据判定。\",\"limitation\":\"概念不可操作化，不能因某公司高估值就判正确。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000029312-000029350\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为出现能安全消除睡眠需求的药物或秃顶治疗方法，结果为其支撑垄断公司。\",\"reason\":\"所设前提（安全消除睡眠需求的药物）截至cutoff未出现，条件未触发，无法评分。\",\"limitation\":\"秃顶治疗方法虽存在，但原文并列的“消除睡眠需求药物”前提未满足，不能拆分评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"not_met\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000029373-000029394\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为“做到10倍好”，结果为避开竞争；未指定具体产品与衡量口径。\",\"reason\":\"原文以PayPal、亚马逊、iPad等举例说明，但“10倍好”与“避开竞争”缺乏统一可操作标准，无法整体检验。\",\"limitation\":\"举例属作者论证，不能替代对一般命题的系统验证。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000029919-000029958\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"网络效应的示意性条件与价值判断，非未来事件预测。\",\"reason\":\"该句用假设情境说明网络效应，不构成可检验的未来预测。\",\"limitation\":\"属解释性举例，无预测期限与可观察结果。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000030009-000030049\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为产品在网络群组规模尚小时对初期用户已有价值，结果为能获得网络效应；未指定具体产品。\",\"reason\":\"这是关于网络效应实现条件的一般性判断，缺少具体产品与规模口径，无法操作化检验。\",\"limitation\":\"原文以Facebook等为例，但举例不足以系统验证该条件命题。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"网络群组规模尚小时\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000030149-000030183\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"对象为Xanadu技术，条件为“一定规模时”，结果为其只能在一定规模上使用；规模未定义。\",\"reason\":\"“一定规模”无具体阈值，且Xanadu已倒闭，技术应用结果无法按原文口径核实。\",\"limitation\":\"对象与规模定义不明，不能以万维网普及等事后事实替代原文判断。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"一定规模时\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8767,
+    "completion_tokens": 1174,
+    "total_tokens": 9941,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 7999
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

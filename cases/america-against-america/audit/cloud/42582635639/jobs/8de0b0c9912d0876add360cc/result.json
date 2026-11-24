@@ -1,0 +1,791 @@
+{
+  "claim_id": "txt-1c4066fc0c-000242553-000242574",
+  "version": "search-verifier-v1",
+  "input_sha256": "8949da437fae152ba501e292f0f25bdf152a6a9e36ad201b8b879c80fb3706c7",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000242553-000242574",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "对象为美国黑人群体；原文核心可检验判断是条件句：若社会不能找出改善黑人状况的根本方法（前提A），结局很可能是更猛烈（后果B）。观察窗口1991—2024年，用黑人贫困率、教育获得、失业率、青少年生育率、双亲同住比例等代际劣势指标衡量A侧是否改善，并检查B侧“更猛烈结局”是否有同对象直接证据。",
+    "reason": "原文“雪球越滚越大”是代际劣势累积的修辞，真正可检验的后果是条件句中的“更猛烈结局”。现有证据显示贫困率、教育获得、青少年生育率等A侧指标长期改善，但A是否已“找到根本方法”无法由这些指标直接确认，B侧“更猛烈结局”也缺少同对象、同指标的直接证据，故不能判错误或部分符合。",
+    "limitation": "关键修订：不再把条件句改写为无条件“持续扩大”并据指标改善判错误，而是分开核对前提A与后果B。现有材料只覆盖前提侧指标，不能直接判定B未实现；相对差距、失业率周期波动和单亲家庭比例仍高，说明劣势未消除。",
+    "evidence_ids": [
+      "prior-bb481a398dd32f114f6d",
+      "prior-5fae0ec369b77b60da9a",
+      "prior-5df3c44c828f5ab0ed68",
+      "prior-2a09c236dcfd5c419c2b",
+      "prior-03811aafc03c8332dbd1",
+      "ev-de89e9d7eaba9b5ec1df01b8",
+      "ev-d775bb54e475834c0393f571",
+      "ev-96fea000c4871c1710da3ded"
+    ],
+    "method": "从教育、就业与家庭环境反馈推演代际劣势累积",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-31",
+    "future_time_text": "代代相传；如果社会不能找出改善黑人状况的根本方法，最后的结局很可能是更猛烈",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-bb481a398dd32f114f6d",
+        "relation": "boundary",
+        "quote": "黑人贫困率1991年32.7%、2001年22.7%；2002起黑人单一种族口径，2010年27.4%、2022年17.1%、2024年18.4%。",
+        "publication_date": "2025-09-09",
+        "observation_end": "2024-12-31",
+        "limitation": "贫困率长期下降但2024较2022略升，且2002年前后种族口径变化，不能逐年严格比较；仅属前提侧指标。"
+      },
+      {
+        "evidence_id": "prior-5fae0ec369b77b60da9a",
+        "relation": "boundary",
+        "quote": "黑人25岁以上劳动力无高中文凭占比1992为18.2%、2018为6.4%；学士以上15.9%→31.2%。",
+        "publication_date": "2019-02-13",
+        "observation_end": "2018-12-31",
+        "limitation": "仅覆盖劳动力群体至2018年，失业率有周期反弹，非单调改善；仅属前提侧指标。"
+      },
+      {
+        "evidence_id": "prior-5df3c44c828f5ab0ed68",
+        "relation": "boundary",
+        "quote": "黑人18岁以下儿童与两名已婚父母同住，1990为38%、2000为36%、2010为32%、2019为34%、2024为35%。",
+        "publication_date": "2026-03-25",
+        "observation_end": "2024-12-31",
+        "limitation": "双亲同住比例长期偏低且先降后略升，是家庭结构劣势的边界证据，但不构成持续恶化；仅属前提侧指标。"
+      },
+      {
+        "evidence_id": "prior-2a09c236dcfd5c419c2b",
+        "relation": "boundary",
+        "quote": "非西裔黑人15—19岁女性每千人生育率1991为118.2、2000为79.2、2010为51.5、2015为32.0。",
+        "publication_date": null,
+        "observation_end": "2015-12-31",
+        "limitation": "数据止于2015年，发表日期未知；仅覆盖青少年生育率单一前提侧指标。"
+      },
+      {
+        "evidence_id": "prior-03811aafc03c8332dbd1",
+        "relation": "boundary",
+        "quote": "非西裔黑人15—19生育率2024比2023下降8%；黑人非婚生育比例2024为68.6%且比2023下降。",
+        "publication_date": "2026-06-09",
+        "observation_end": "2024-12-31",
+        "limitation": "非婚生育比例仍高，仅说明方向下降而非问题消除；仅属前提侧指标。"
+      },
+      {
+        "evidence_id": "ev-de89e9d7eaba9b5ec1df01b8",
+        "relation": "boundary",
+        "quote": "In the early 1990s, more than half of employed African Americans age 25 and older had completed no more than a high school education. In 2014, more than three-fifths of employed African Americans had completed at least some college.",
+        "publication_date": "2015-02-25",
+        "observation_end": "2014-12-31",
+        "limitation": "仅就业黑人群体，非全体黑人；候选来源verified=false，待语义复核；仅属前提侧指标。"
+      },
+      {
+        "evidence_id": "ev-d775bb54e475834c0393f571",
+        "relation": "boundary",
+        "quote": "The official poverty rate of the U.S. Black population reached a historic low of 17.1% in 2022, according to U.S. Census Bureau data released today.",
+        "publication_date": "2023-09-12",
+        "observation_end": "2022-12-31",
+        "limitation": "仅到2022年，且文内提示2026年将修订SPM阈值；候选来源verified=false；仅属前提侧指标。"
+      },
+      {
+        "evidence_id": "ev-96fea000c4871c1710da3ded",
+        "relation": "boundary",
+        "quote": "today, 88% of Blacks or African Americans have a high school diploma, just shy of the national average",
+        "publication_date": "2020-06-10",
+        "observation_end": "2020-12-31",
+        "limitation": "仅高中完成率，大学完成率仍低于全国；候选来源verified=false；仅属前提侧指标。"
+      }
+    ],
+    "remaining_gap": "需先确认前提A“社会不能找出改善黑人状况的根本方法”在观察期内是否成立，再就后果B“更猛烈结局”寻找同对象、同指标的直接证据；现有材料只覆盖教育、贫困、生育等前提侧指标，不能直接判定B实现或未实现。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000242553-000242574",
+    "inclusion": "forecast",
+    "verdict": "错误",
+    "basis": "observed_window",
+    "scope": "对象为美国黑人群体；以1991—2024年可观察的代际劣势指标衡量：高中未完成率、大学完成率、贫困率、失业率、青少年生育率、双亲同住比例。作者判断这些困境“代代相传”使“黑人问题雪球越滚越大”，即问题持续累积恶化。观察窗口内主要指标方向与之相反。",
+    "reason": "多项主要指标在1991—2024年间明显改善：黑人贫困率由1991年32.7%降至2022年17.1%、2024年18.4%；25岁以上无高中文凭占比由1992年18.2%降至2018年6.4%，学士以上由15.9%升至31.2%；黑人青少年生育率由1991年118.2‰降至2015年32.0‰并继续下降。虽然相对差距与部分指标波动仍存在，但“雪球越滚越大”的累积恶化主判断与主要可观测趋势相反。",
+    "limitation": "作者未给出精确指标与期限，评估采用回顾性操作化；相对差距、失业率周期波动和单亲家庭比例仍高，说明劣势未消除，但不支持“持续扩大”的方向判断。贫困口径在2002年前后有种族分类变化。",
+    "evidence_ids": [
+      "prior-bb481a398dd32f114f6d",
+      "prior-5fae0ec369b77b60da9a",
+      "prior-5df3c44c828f5ab0ed68",
+      "prior-2a09c236dcfd5c419c2b",
+      "prior-03811aafc03c8332dbd1",
+      "ev-de89e9d7eaba9b5ec1df01b8",
+      "ev-d775bb54e475834c0393f571",
+      "ev-96fea000c4871c1710da3ded"
+    ],
+    "method": "从教育、就业与家庭环境反馈推演代际劣势累积",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-31",
+    "future_time_text": "代代相传",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-bb481a398dd32f114f6d",
+        "relation": "counter",
+        "quote": "黑人贫困率1991年32.7%、2001年22.7%；2002起黑人单一种族口径，2010年27.4%、2022年17.1%、2024年18.4%。",
+        "publication_date": "2025-09-09",
+        "observation_end": "2024-12-31",
+        "limitation": "贫困率长期下降但2024较2022略升，且2002年前后种族口径变化，不能逐年严格比较。"
+      },
+      {
+        "evidence_id": "prior-5fae0ec369b77b60da9a",
+        "relation": "counter",
+        "quote": "黑人25岁以上劳动力无高中文凭占比1992为18.2%、2018为6.4%；学士以上15.9%→31.2%。",
+        "publication_date": "2019-02-13",
+        "observation_end": "2018-12-31",
+        "limitation": "仅覆盖劳动力群体至2018年，失业率有周期反弹，非单调改善。"
+      },
+      {
+        "evidence_id": "prior-5df3c44c828f5ab0ed68",
+        "relation": "boundary",
+        "quote": "黑人18岁以下儿童与两名已婚父母同住，1990为38%、2000为36%、2010为32%、2019为34%、2024为35%。",
+        "publication_date": "2026-03-25",
+        "observation_end": "2024-12-31",
+        "limitation": "双亲同住比例长期偏低且先降后略升，是家庭结构劣势的边界证据，但不构成持续恶化。"
+      },
+      {
+        "evidence_id": "prior-2a09c236dcfd5c419c2b",
+        "relation": "counter",
+        "quote": "非西裔黑人15—19岁女性每千人生育率1991为118.2、2000为79.2、2010为51.5、2015为32.0。",
+        "publication_date": null,
+        "observation_end": "2015-12-31",
+        "limitation": "数据止于2015年，发表日期未知；仅覆盖青少年生育率单一指标。"
+      },
+      {
+        "evidence_id": "prior-03811aafc03c8332dbd1",
+        "relation": "counter",
+        "quote": "非西裔黑人15—19生育率2024比2023下降8%；黑人非婚生育比例2024为68.6%且比2023下降。",
+        "publication_date": "2026-06-09",
+        "observation_end": "2024-12-31",
+        "limitation": "非婚生育比例仍高，仅说明方向下降而非问题消除。"
+      },
+      {
+        "evidence_id": "ev-de89e9d7eaba9b5ec1df01b8",
+        "relation": "counter",
+        "quote": "In the early 1990s, more than half of employed African Americans age 25 and older had completed no more than a high school education. In 2014, more than three-fifths of employed African Americans had completed at least some college.",
+        "publication_date": "2015-02-25",
+        "observation_end": "2014-12-31",
+        "limitation": "仅就业黑人群体，非全体黑人；候选来源verified=false，待语义复核。"
+      },
+      {
+        "evidence_id": "ev-d775bb54e475834c0393f571",
+        "relation": "counter",
+        "quote": "The official poverty rate of the U.S. Black population reached a historic low of 17.1% in 2022, according to U.S. Census Bureau data released today.",
+        "publication_date": "2023-09-12",
+        "observation_end": "2022-12-31",
+        "limitation": "仅到2022年，且文内提示2026年将修订SPM阈值；候选来源verified=false。"
+      },
+      {
+        "evidence_id": "ev-96fea000c4871c1710da3ded",
+        "relation": "counter",
+        "quote": "today, 88% of Blacks or African Americans have a high school diploma, just shy of the national average",
+        "publication_date": "2020-06-10",
+        "observation_end": "2020-12-31",
+        "limitation": "仅高中完成率，大学完成率仍低于全国；候选来源verified=false。"
+      }
+    ],
+    "remaining_gap": "缺少1991—2024年连续、同口径的黑人大学完成率与收入中位数序列，以及家庭结构长期序列的完整正文；但现有主要指标方向已足以判断主命题方向相反。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-bb481a398dd32f114f6d",
+      "url": "https://www2.census.gov/library/publications/2025/demo/p60-287.pdf",
+      "title": "ev-lane3-poverty",
+      "published_date": "2025-09-09",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-poverty",
+      "archive_sha256": "b99624bfd024a4f9396594d23a845d5bd581f8094401a3b469aa0a3fb6c799d1",
+      "archive_path": "data/sources/lane3-poverty.pdf",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-5fae0ec369b77b60da9a",
+      "url": "https://www.bls.gov/opub/ted/2019/rising-educational-attainment-among-blacks-or-african-americans-in-the-labor-force-1992-to-2018.htm",
+      "title": "ev-r2-l3-black-education",
+      "published_date": "2019-02-13",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-black-education",
+      "archive_sha256": "3f30538af65317d935f64b1361fa2a70e45b60024bd0992922e925beb9b527b1",
+      "archive_path": "data/sources/r2-l3-open-finance-education.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-1a54e3c46ca18197aabd",
+      "url": "https://www.bls.gov/spotlight/2020/",
+      "title": "ev-r2-l3-black-labor",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-black-labor",
+      "archive_sha256": "818d556c2a1627f6baea88b924e3937e9dd2280bb5d99b17e72f8bd115228657",
+      "archive_path": "data/sources/r2-l3-open-ssa-labor-japan.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-5df3c44c828f5ab0ed68",
+      "url": "https://www.pewresearch.org/chart/st_26-03-02_america250_childparents_race/",
+      "title": "ev-r2-l3-black-family",
+      "published_date": "2026-03-25",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-black-family",
+      "archive_sha256": "27e5e3d41f607d1df021b1726e8d6c9db2bbbadc0d5018e7a43c8a3a4a74f8da",
+      "archive_path": "data/sources/r2-l3-black-families.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-2a09c236dcfd5c419c2b",
+      "url": "https://data.cdc.gov/resource/e8kx-wbww.json?$limit=5000",
+      "title": "ev-r2-l3-teen-series",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-teen-series",
+      "archive_sha256": "f519a64b39a1d3c26b23dafe16ba1609e3768d4b168f6027e17bce3a8de7b28c",
+      "archive_path": "data/sources/r2-l3-teen-race-series.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-03811aafc03c8332dbd1",
+      "url": "https://www.cdc.gov/nchs/data/nvsr/nvsr75/nvsr75-2.pdf",
+      "title": "ev-r2-l3-births2024",
+      "published_date": "2026-06-09",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-births2024",
+      "archive_sha256": "54d56e3c17777139bcdbf5154dce58d72c0981bf743a3a5ab79ba1500fc34e4c",
+      "archive_path": "data/sources/r2-l3-nss-births-targeted.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-1db65ea6fa9284f5d724",
+      "url": "https://www.justice.gov/archives/crs/highlights/2020-hate-crimes-statistics",
+      "title": "ev-lane3-antiblack",
+      "published_date": "2023-04-04",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-antiblack",
+      "archive_sha256": "6421dd3859464a0f28ad8a710940827ded742300569e93dd569e4a57395f249a",
+      "archive_path": "data/sources/lane3-web-extracts.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-de89e9d7eaba9b5ec1df01b8",
+      "url": "https://www.bls.gov/opub/ted/2015/educational-attainment-employment-and-unemployment-among-african-americans.htm",
+      "resolved_url": "https://www.bls.gov/opub/ted/2015/educational-attainment-employment-and-unemployment-among-african-americans.htm",
+      "title": "Educational attainment, employment, and unemployment among African Americans : The Economics Daily : U.S. Bureau of Labor Statistics",
+      "published_date": "2015-02-25",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:30.323356+00:00",
+      "archive_sha256": "9a53d6b154b3d3ef9dd469ceae2a44fdcbe3ffc20008cd53ce7065dcc414a978",
+      "archive_path": "jobs/8de0b0c9912d0876add360cc/9a53d6b154b3d3ef9dd469ceae2a44fdcbe3ffc20008cd53ce7065dcc414a978.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d775bb54e475834c0393f571",
+      "url": "https://www.census.gov/library/stories/2023/09/black-poverty-rate.html",
+      "resolved_url": "https://www.census.gov/library/stories/2023/09/black-poverty-rate.html",
+      "title": "Poverty Rate for the Black Population Fell Below Pre-Pandemic Levels",
+      "published_date": "2023-09-12",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:30.323561+00:00",
+      "archive_sha256": "332c7dac820d835757e58ff41ce468821a6b010942e1142768a2ed80b7c7b39f",
+      "archive_path": "jobs/8de0b0c9912d0876add360cc/332c7dac820d835757e58ff41ce468821a6b010942e1142768a2ed80b7c7b39f.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-101598580bc17de2cb74e706",
+      "url": "https://www.census.gov/data/tables/time-series/demo/income-poverty/historical-poverty-people.html",
+      "resolved_url": "https://www.census.gov/data/tables/time-series/demo/income-poverty/historical-poverty-people.html",
+      "title": "Historical Poverty Tables: People and Families - 1959 to 2025",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:30.323725+00:00",
+      "archive_sha256": "cea55d0ea564403935ec5177ecbaa8a9452b88f9dfa440b771559dc7a18c0898",
+      "archive_path": "jobs/8de0b0c9912d0876add360cc/cea55d0ea564403935ec5177ecbaa8a9452b88f9dfa440b771559dc7a18c0898.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-50ddb64ec34344efd2160f1b",
+      "url": "https://data.bls.gov/timeseries/LNS14000006?years_option=all_years",
+      "resolved_url": "https://data.bls.gov/timeseries/LNS14000006?years_option=all_years",
+      "title": "Bureau of Labor Statistics Data",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:41.209741+00:00",
+      "archive_sha256": "bb85a0945233f579751600fd9189ac9d3e8847cc3645c65254367574d508b5be",
+      "archive_path": "jobs/8de0b0c9912d0876add360cc/bb85a0945233f579751600fd9189ac9d3e8847cc3645c65254367574d508b5be.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-28b269755cb334c272e56229",
+      "url": "https://www.bls.gov/cps/race_ethnicity_2008_10.htm",
+      "resolved_url": "https://www.bls.gov/cps/race_ethnicity_2008_10.htm",
+      "title": "Table 10.  Unemployment rates by sex, race, and Hispanic or Latino ethnicity, 1972—2008 annual averages : U.S. Bureau of Labor Statistics",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:41.209940+00:00",
+      "archive_sha256": "ecbbf57dbbf62d55a99e9eb01ad55852e78bd42e3dfdeb5aafebaa5e305a23ab",
+      "archive_path": "jobs/8de0b0c9912d0876add360cc/ecbbf57dbbf62d55a99e9eb01ad55852e78bd42e3dfdeb5aafebaa5e305a23ab.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-96fea000c4871c1710da3ded",
+      "url": "https://www.census.gov/library/stories/2020/06/black-high-school-attainment-nearly-on-par-with-national-average.html",
+      "resolved_url": "https://www.census.gov/library/stories/2020/06/black-high-school-attainment-nearly-on-par-with-national-average.html",
+      "title": "88% of Blacks Have a High School Diploma, 26% a Bachelor’s Degree",
+      "published_date": "2020-06-10",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:41.210116+00:00",
+      "archive_sha256": "0cbba9c7affcb5076fcf2c9e9f8f05a8251cbdd183c948b40cd7e81eae430186",
+      "archive_path": "jobs/8de0b0c9912d0876add360cc/0cbba9c7affcb5076fcf2c9e9f8f05a8251cbdd183c948b40cd7e81eae430186.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ffcc4147f3fcd822d05a236c",
+      "url": "https://www2.census.gov/programs-surveys/demo/tables/educational-attainment/time-series/cps-historical-time-series/taba-2.csv",
+      "resolved_url": "https://www2.census.gov/programs-surveys/demo/tables/educational-attainment/time-series/cps-historical-time-series/taba-2.csv",
+      "title": "",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:41.210341+00:00",
+      "archive_sha256": "87f3bb7c44c9b4fbf9c79e7b906e699dc2e65904d988dad042affcb16038e36d",
+      "archive_path": "jobs/8de0b0c9912d0876add360cc/87f3bb7c44c9b4fbf9c79e7b906e699dc2e65904d988dad042affcb16038e36d.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "site:bls.gov Black labor force educational attainment unemployment 1992 2018 long-term trend",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "site:census.gov Black poverty rate 1991 2024 historical table",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "site:bls.gov Black unemployment rate 1991 2024 long-term trend racial gap persistent",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "site:census.gov Black educational attainment college completion 1992 2024 historical trend",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "需先确认前提A“社会不能找出改善黑人状况的根本方法”在观察期内是否成立，再就后果B“更猛烈结局”寻找同对象、同指标的直接证据；现有材料只覆盖教育、贫困、生育等前提侧指标，不能直接判定B实现或未实现。",
+  "source_statuses": [
+    {
+      "url": "https://www.bls.gov/opub/ted/2015/educational-attainment-employment-and-unemployment-among-african-americans.htm",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.census.gov/library/stories/2023/09/black-poverty-rate.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.census.gov/data/tables/time-series/demo/income-poverty/historical-poverty-people.html",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://data.bls.gov/timeseries/LNS14000006?years_option=all_years",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.bls.gov/cps/race_ethnicity_2008_10.htm",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.census.gov/library/stories/2020/06/black-high-school-attainment-nearly-on-par-with-national-average.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www2.census.gov/programs-surveys/demo/tables/educational-attainment/time-series/cps-historical-time-series/taba-2.csv",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "b3b9c4e53e617909bb6c246a19a0bc094bcb83f1c6a9bc4a1b48bf11b0c47d25"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "1f3882019f01c4ad7df551fbe5c07e0e",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f904014289d07af92f953ebe5cf915f5",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "e11a9651a762d3232d3e97725b7ec68f8f94983105bd4307827ee817bc2b8deb"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "64041fdca2ebdbc3aceb8cd466ea34d1",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "5a45043d72ef400302a42657cac755ab4ceb3c238bbaa079921c1b34a216409e"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "a28ae97f80d437a2cdce61dfd366dd3c",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "566d77dedfe469ea2668095f1d7eefc9",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "53204eb0f90909683a0b03a0922d53add303c2f6c9f49056ba5be5eabd638d3d"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "b7d0c1a66e2d927f256adff93b53b4e0",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "cf9fb78eb58087322b0841301b5e7b9249787200d5ecba3f669c32b0ec1e83ea"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "d7c0fa8c9dd4200232da232cc527cf91c2a2f1cc16ee43fd2ae453172b1f3708"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "665d719548dcb7c9eeb31083e984db2d7ec6be2fab6055005a7044a2a2f87176"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "0286a0fbacb8f12a80ca32ead509a9e680c668cc9e1a143cdcae43f1e3a68ced"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000242553-000242574",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原书的核心条件预测是“如果社会不能找出改善黑人状况的根本方法，最后的结局很可能是更猛烈……”，即前提A（社会未能找到根本改善方法）触发后果B（结局更猛烈）。建议把该条件预测改写成无条件的“代际劣势累积导致问题持续扩大”，并据此用贫困率、教育、青少年生育率等指标改善来判“错误”。这混淆了前提A与后果B：A中的部分指标改善不等于A已解决，也不等于B未实现；建议未先确认A是否仍成立，也未就B（更猛烈结局）给出直接证据。",
+          "source_quote": "如果社会\n不能找出改善黑人状况的根本方法，最后的结局很可能是更猛烈",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议以“多项主要指标改善”直接判“雪球越滚越大”为错误，但原文的“雪球越滚越大”是代际劣势累积的修辞，真正可检验的后果是条件句中的“更猛烈结局”。在A（根本方法未找到）仍可能成立的情况下，指标改善只能作为缓解或限制，不能仅凭它把结论降为错误；建议也未指出B的哪些具体部分实现或未实现。",
+          "source_quote": "虽然相对差距与部分指标波动仍存在，但“雪球越滚越大”的累积恶化主判断与主要可观测趋势相反。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需按原文条件句重新拆分：先确认“社会不能找出改善黑人状况的根本方法”这一前提A在观察期内是否成立，再就后果B“更猛烈结局”寻找同对象、同指标的直接证据；现有材料只覆盖教育、贫困、生育等前提侧指标，不能直接判定B未实现。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000242553-000242574",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000242553-000242574",
+      "inclusion": "forecast",
+      "verdict": "错误",
+      "basis": "observed_window",
+      "scope": "对象为美国黑人群体；以1991—2024年可观察的代际劣势指标衡量：高中未完成率、大学完成率、贫困率、失业率、青少年生育率、双亲同住比例。作者判断这些困境“代代相传”使“黑人问题雪球越滚越大”，即问题持续累积恶化。观察窗口内主要指标方向与之相反。",
+      "reason": "多项主要指标在1991—2024年间明显改善：黑人贫困率由1991年32.7%降至2022年17.1%、2024年18.4%；25岁以上无高中文凭占比由1992年18.2%降至2018年6.4%，学士以上由15.9%升至31.2%；黑人青少年生育率由1991年118.2‰降至2015年32.0‰并继续下降。虽然相对差距与部分指标波动仍存在，但“雪球越滚越大”的累积恶化主判断与主要可观测趋势相反。",
+      "limitation": "作者未给出精确指标与期限，评估采用回顾性操作化；相对差距、失业率周期波动和单亲家庭比例仍高，说明劣势未消除，但不支持“持续扩大”的方向判断。贫困口径在2002年前后有种族分类变化。",
+      "evidence_ids": [
+        "prior-bb481a398dd32f114f6d",
+        "prior-5fae0ec369b77b60da9a",
+        "prior-5df3c44c828f5ab0ed68",
+        "prior-2a09c236dcfd5c419c2b",
+        "prior-03811aafc03c8332dbd1",
+        "ev-de89e9d7eaba9b5ec1df01b8",
+        "ev-d775bb54e475834c0393f571",
+        "ev-96fea000c4871c1710da3ded"
+      ],
+      "method": "从教育、就业与家庭环境反馈推演代际劣势累积",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "代代相传",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-bb481a398dd32f114f6d",
+          "relation": "counter",
+          "quote": "黑人贫困率1991年32.7%、2001年22.7%；2002起黑人单一种族口径，2010年27.4%、2022年17.1%、2024年18.4%。",
+          "publication_date": "2025-09-09",
+          "observation_end": "2024-12-31",
+          "limitation": "贫困率长期下降但2024较2022略升，且2002年前后种族口径变化，不能逐年严格比较。"
+        },
+        {
+          "evidence_id": "prior-5fae0ec369b77b60da9a",
+          "relation": "counter",
+          "quote": "黑人25岁以上劳动力无高中文凭占比1992为18.2%、2018为6.4%；学士以上15.9%→31.2%。",
+          "publication_date": "2019-02-13",
+          "observation_end": "2018-12-31",
+          "limitation": "仅覆盖劳动力群体至2018年，失业率有周期反弹，非单调改善。"
+        },
+        {
+          "evidence_id": "prior-5df3c44c828f5ab0ed68",
+          "relation": "boundary",
+          "quote": "黑人18岁以下儿童与两名已婚父母同住，1990为38%、2000为36%、2010为32%、2019为34%、2024为35%。",
+          "publication_date": "2026-03-25",
+          "observation_end": "2024-12-31",
+          "limitation": "双亲同住比例长期偏低且先降后略升，是家庭结构劣势的边界证据，但不构成持续恶化。"
+        },
+        {
+          "evidence_id": "prior-2a09c236dcfd5c419c2b",
+          "relation": "counter",
+          "quote": "非西裔黑人15—19岁女性每千人生育率1991为118.2、2000为79.2、2010为51.5、2015为32.0。",
+          "publication_date": null,
+          "observation_end": "2015-12-31",
+          "limitation": "数据止于2015年，发表日期未知；仅覆盖青少年生育率单一指标。"
+        },
+        {
+          "evidence_id": "prior-03811aafc03c8332dbd1",
+          "relation": "counter",
+          "quote": "非西裔黑人15—19生育率2024比2023下降8%；黑人非婚生育比例2024为68.6%且比2023下降。",
+          "publication_date": "2026-06-09",
+          "observation_end": "2024-12-31",
+          "limitation": "非婚生育比例仍高，仅说明方向下降而非问题消除。"
+        },
+        {
+          "evidence_id": "ev-de89e9d7eaba9b5ec1df01b8",
+          "relation": "counter",
+          "quote": "In the early 1990s, more than half of employed African Americans age 25 and older had completed no more than a high school education. In 2014, more than three-fifths of employed African Americans had completed at least some college.",
+          "publication_date": "2015-02-25",
+          "observation_end": "2014-12-31",
+          "limitation": "仅就业黑人群体，非全体黑人；候选来源verified=false，待语义复核。"
+        },
+        {
+          "evidence_id": "ev-d775bb54e475834c0393f571",
+          "relation": "counter",
+          "quote": "The official poverty rate of the U.S. Black population reached a historic low of 17.1% in 2022, according to U.S. Census Bureau data released today.",
+          "publication_date": "2023-09-12",
+          "observation_end": "2022-12-31",
+          "limitation": "仅到2022年，且文内提示2026年将修订SPM阈值；候选来源verified=false。"
+        },
+        {
+          "evidence_id": "ev-96fea000c4871c1710da3ded",
+          "relation": "counter",
+          "quote": "today, 88% of Blacks or African Americans have a high school diploma, just shy of the national average",
+          "publication_date": "2020-06-10",
+          "observation_end": "2020-12-31",
+          "limitation": "仅高中完成率，大学完成率仍低于全国；候选来源verified=false。"
+        }
+      ],
+      "remaining_gap": "缺少1991—2024年连续、同口径的黑人大学完成率与收入中位数序列，以及家庭结构长期序列的完整正文；但现有主要指标方向已足以判断主命题方向相反。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000242553-000242574",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "对象为美国黑人群体；原文核心可检验判断是条件句：若社会不能找出改善黑人状况的根本方法（前提A），结局很可能是更猛烈（后果B）。观察窗口1991—2024年，用黑人贫困率、教育获得、失业率、青少年生育率、双亲同住比例等代际劣势指标衡量A侧是否改善，并检查B侧“更猛烈结局”是否有同对象直接证据。",
+      "reason": "原文“雪球越滚越大”是代际劣势累积的修辞，真正可检验的后果是条件句中的“更猛烈结局”。现有证据显示贫困率、教育获得、青少年生育率等A侧指标长期改善，但A是否已“找到根本方法”无法由这些指标直接确认，B侧“更猛烈结局”也缺少同对象、同指标的直接证据，故不能判错误或部分符合。",
+      "limitation": "关键修订：不再把条件句改写为无条件“持续扩大”并据指标改善判错误，而是分开核对前提A与后果B。现有材料只覆盖前提侧指标，不能直接判定B未实现；相对差距、失业率周期波动和单亲家庭比例仍高，说明劣势未消除。",
+      "evidence_ids": [
+        "prior-bb481a398dd32f114f6d",
+        "prior-5fae0ec369b77b60da9a",
+        "prior-5df3c44c828f5ab0ed68",
+        "prior-2a09c236dcfd5c419c2b",
+        "prior-03811aafc03c8332dbd1",
+        "ev-de89e9d7eaba9b5ec1df01b8",
+        "ev-d775bb54e475834c0393f571",
+        "ev-96fea000c4871c1710da3ded"
+      ],
+      "method": "从教育、就业与家庭环境反馈推演代际劣势累积",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "代代相传；如果社会不能找出改善黑人状况的根本方法，最后的结局很可能是更猛烈",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-bb481a398dd32f114f6d",
+          "relation": "boundary",
+          "quote": "黑人贫困率1991年32.7%、2001年22.7%；2002起黑人单一种族口径，2010年27.4%、2022年17.1%、2024年18.4%。",
+          "publication_date": "2025-09-09",
+          "observation_end": "2024-12-31",
+          "limitation": "贫困率长期下降但2024较2022略升，且2002年前后种族口径变化，不能逐年严格比较；仅属前提侧指标。"
+        },
+        {
+          "evidence_id": "prior-5fae0ec369b77b60da9a",
+          "relation": "boundary",
+          "quote": "黑人25岁以上劳动力无高中文凭占比1992为18.2%、2018为6.4%；学士以上15.9%→31.2%。",
+          "publication_date": "2019-02-13",
+          "observation_end": "2018-12-31",
+          "limitation": "仅覆盖劳动力群体至2018年，失业率有周期反弹，非单调改善；仅属前提侧指标。"
+        },
+        {
+          "evidence_id": "prior-5df3c44c828f5ab0ed68",
+          "relation": "boundary",
+          "quote": "黑人18岁以下儿童与两名已婚父母同住，1990为38%、2000为36%、2010为32%、2019为34%、2024为35%。",
+          "publication_date": "2026-03-25",
+          "observation_end": "2024-12-31",
+          "limitation": "双亲同住比例长期偏低且先降后略升，是家庭结构劣势的边界证据，但不构成持续恶化；仅属前提侧指标。"
+        },
+        {
+          "evidence_id": "prior-2a09c236dcfd5c419c2b",
+          "relation": "boundary",
+          "quote": "非西裔黑人15—19岁女性每千人生育率1991为118.2、2000为79.2、2010为51.5、2015为32.0。",
+          "publication_date": null,
+          "observation_end": "2015-12-31",
+          "limitation": "数据止于2015年，发表日期未知；仅覆盖青少年生育率单一前提侧指标。"
+        },
+        {
+          "evidence_id": "prior-03811aafc03c8332dbd1",
+          "relation": "boundary",
+          "quote": "非西裔黑人15—19生育率2024比2023下降8%；黑人非婚生育比例2024为68.6%且比2023下降。",
+          "publication_date": "2026-06-09",
+          "observation_end": "2024-12-31",
+          "limitation": "非婚生育比例仍高，仅说明方向下降而非问题消除；仅属前提侧指标。"
+        },
+        {
+          "evidence_id": "ev-de89e9d7eaba9b5ec1df01b8",
+          "relation": "boundary",
+          "quote": "In the early 1990s, more than half of employed African Americans age 25 and older had completed no more than a high school education. In 2014, more than three-fifths of employed African Americans had completed at least some college.",
+          "publication_date": "2015-02-25",
+          "observation_end": "2014-12-31",
+          "limitation": "仅就业黑人群体，非全体黑人；候选来源verified=false，待语义复核；仅属前提侧指标。"
+        },
+        {
+          "evidence_id": "ev-d775bb54e475834c0393f571",
+          "relation": "boundary",
+          "quote": "The official poverty rate of the U.S. Black population reached a historic low of 17.1% in 2022, according to U.S. Census Bureau data released today.",
+          "publication_date": "2023-09-12",
+          "observation_end": "2022-12-31",
+          "limitation": "仅到2022年，且文内提示2026年将修订SPM阈值；候选来源verified=false；仅属前提侧指标。"
+        },
+        {
+          "evidence_id": "ev-96fea000c4871c1710da3ded",
+          "relation": "boundary",
+          "quote": "today, 88% of Blacks or African Americans have a high school diploma, just shy of the national average",
+          "publication_date": "2020-06-10",
+          "observation_end": "2020-12-31",
+          "limitation": "仅高中完成率，大学完成率仍低于全国；候选来源verified=false；仅属前提侧指标。"
+        }
+      ],
+      "remaining_gap": "需先确认前提A“社会不能找出改善黑人状况的根本方法”在观察期内是否成立，再就后果B“更猛烈结局”寻找同对象、同指标的直接证据；现有材料只覆盖教育、贫困、生育等前提侧指标，不能直接判定B实现或未实现。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象：美国黑人群体（作者所称“黑人社会”）的教育获得、就业/收入与青少年生育等代际劣势指标；条件：无明确条件，作者以“代代相传”推断问题持续扩大；可观察口径：1991年至2024年间黑人高中辍学率、大学完成率、失业率、贫困率、青少年生育率等长期趋势是否呈累积恶化；反证：若上述主要指标长期改善或稳定，则与“雪球越滚越大”相反。",
+  "elapsed_seconds": 43.783,
+  "completed_at": "2026-11-09T08:02:05.842726+00:00"
+}

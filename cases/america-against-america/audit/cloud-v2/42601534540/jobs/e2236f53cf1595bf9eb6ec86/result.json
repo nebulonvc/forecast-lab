@@ -1,0 +1,966 @@
+{
+  "claim_id": "txt-1c4066fc0c-000253442-000253504",
+  "version": "search-verifier-v2",
+  "input_sha256": "784fe6d9c9d8b6b82ded442193a82b831e612a73eb1ff8e08328b0820c8b7864",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000253442-000253504",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "原文条件为“美国社会相斥因素和力量继续这样运动下去”；可观察口径分两项：(1)美国相对优势是否受阻，(2)是否形成不可阻挡的危机潜流。观察时段为1991年至2024年可得数据（WDI年度序列、NSF研发报告、党派极化与不确定性指标）。",
+    "reason": "原文是带真实if前提的条件后果判断，前提A（相斥因素是否继续按原方式运动）未被直接测量，condition_state保留unknown。已有证据显示党派极化与政策不确定性上升，但只是内部冲突的代理，不能等同于原文所指全部相斥力量；GDP与研发来源仅说明序列口径或摘要，未展示可支持“优势未明显受阻”的具体数值。B1、B2均缺同对象直接证据，无法判定主要结果。",
+    "limitation": "“相斥因素继续这样运动”这一条件是否持续未被直接测量；极化、不确定性只是代理指标，不能等同于原文所指全部社会相斥力量。危机潜流无明确阈值，无法给出终局判断。关键修订：不再把GDP/研发摘要当作“优势未明显受阻”的counter证据，改为说明其仅提供口径背景。",
+    "evidence_ids": [
+      "prior-81427a19f3894f8e09f0",
+      "ev-5e0198205533eeeab8e2bed8",
+      "ev-eba2c7cc074e80df239c4047",
+      "prior-038019c735d4360d56c8",
+      "prior-f54eb082d2586bb854e7"
+    ],
+    "method": "汇总制度文化内部矛盾并外推危机累积",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-31",
+    "future_time_text": "继续下去",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-81427a19f3894f8e09f0",
+        "relation": "support",
+        "quote": "跨20年价值观调查显示党派意识形态重叠减少，党派反感扩大；也保留公共立场并非全面极化的区别。",
+        "publication_date": "2014-06-12",
+        "observation_end": null,
+        "limitation": "摘要性记录，未给出具体年份区间与数值；且极化是内部冲突的代理，不等于原文全部相斥力量。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-5e0198205533eeeab8e2bed8",
+        "relation": "support",
+        "quote": "the 1970s marked a significant turning point, with polarization increasing substantially. In the years since, the trend has continued. The result is that the ideological gap between the two parties is now at its widest in 60 years.",
+        "publication_date": "2023-06-21",
+        "observation_end": null,
+        "limitation": "仅覆盖国会投票极化，正文截断；极化上升不直接证明“优势发挥不出来”或危机潜流。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-eba2c7cc074e80df239c4047",
+        "relation": "background",
+        "quote": "The Partisan Conflict Index tracks the degree of political disagreement among U.S. federal lawmakers by measuring the frequency of newspaper articles reporting disagreement in a given month.",
+        "publication_date": "2026-10-09",
+        "observation_end": null,
+        "limitation": "页面为指标说明，未给出具体序列数值；且发表日期晚于cutoff，仅作方法背景，不能作为已实现结果或冲突持续累积的证据。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-038019c735d4360d56c8",
+        "relation": "boundary",
+        "quote": "世界银行WDI原始年度序列；指标NY.GDP.MKTP.KD；不含2025及以后预测值。",
+        "publication_date": "2026-10-08",
+        "observation_end": "2024-12-31",
+        "limitation": "仅说明序列口径，未展示具体数值；不能支持“优势未明显受阻”或相反判断，只提示可用指标口径。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-f54eb082d2586bb854e7",
+        "relation": "boundary",
+        "quote": "NSF《2024美国科学与工程状况》显示美国仍有庞大研发体系，同时中国研发增长改变国际格局；只使用文中实际年份。",
+        "publication_date": "2024-03-13",
+        "observation_end": null,
+        "limitation": "摘要性记录，未给具体年份数值；研发规模庞大说明优势仍在，但不排除相对优势受挑战，不足以单独支撑主要结果判断。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "需先确认原文if前提A（相斥因素和力量是否继续按原方式运动）是否触发；再分别用同对象、同指标、观察期在cutoff前的直接证据判断B1（优势发挥受阻）与B2（危机潜流）。现有GDP与研发来源只说明序列口径或摘要，未展示可支持“优势未明显受阻”的具体数值；极化与不确定性代理也不能等同于原文所指全部相斥力量。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000253442-000253504",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "原文条件为“美国社会相斥因素和力量继续这样运动下去”；可观察口径分两项：(1)美国相对优势是否受阻，(2)是否形成不可阻挡的危机潜流。观察时段为1991年至2024年可得数据（WDI年度序列、NSF研发报告、党派极化与不确定性指标）。",
+    "reason": "原文是带真实if前提的条件后果判断，且“不可阻挡的危机潜流”缺乏可操作终点。已有证据显示党派极化与政策不确定性上升（支持内部冲突累积），但美国GDP与研发体系仍庞大（优势未明显受阻），两项主要分项方向不一致，无法判定主要结果。",
+    "limitation": "“相斥因素继续这样运动”这一条件是否持续未被直接测量；极化、不确定性只是代理指标，不能等同于原文所指全部社会相斥力量。危机潜流无明确阈值，无法给出终局判断。",
+    "evidence_ids": [
+      "prior-81427a19f3894f8e09f0",
+      "ev-5e0198205533eeeab8e2bed8",
+      "ev-eba2c7cc074e80df239c4047",
+      "prior-038019c735d4360d56c8",
+      "prior-f54eb082d2586bb854e7"
+    ],
+    "method": "汇总制度文化内部矛盾并外推危机累积",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-31",
+    "future_time_text": "继续下去",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-81427a19f3894f8e09f0",
+        "relation": "support",
+        "quote": "跨20年价值观调查显示党派意识形态重叠减少，党派反感扩大；也保留公共立场并非全面极化的区别。",
+        "publication_date": "2014-06-12",
+        "observation_end": null,
+        "limitation": "摘要性记录，未给出具体年份区间与数值；且极化是内部冲突的代理，不等于原文全部相斥力量。"
+      },
+      {
+        "evidence_id": "ev-5e0198205533eeeab8e2bed8",
+        "relation": "support",
+        "quote": "the 1970s marked a significant turning point, with polarization increasing substantially. In the years since, the trend has continued. The result is that the ideological gap between the two parties is now at its widest in 60 years.",
+        "publication_date": "2023-06-21",
+        "observation_end": null,
+        "limitation": "仅覆盖国会投票极化，正文截断；极化上升不直接证明“优势发挥不出来”或危机潜流。"
+      },
+      {
+        "evidence_id": "ev-eba2c7cc074e80df239c4047",
+        "relation": "support",
+        "quote": "The Partisan Conflict Index tracks the degree of political disagreement among U.S. federal lawmakers by measuring the frequency of newspaper articles reporting disagreement in a given month.",
+        "publication_date": "2026-10-09",
+        "observation_end": null,
+        "limitation": "页面为指标说明，未给出具体序列数值；且发表日期晚于cutoff，仅作方法背景，不能作为已实现结果。"
+      },
+      {
+        "evidence_id": "prior-038019c735d4360d56c8",
+        "relation": "counter",
+        "quote": "世界银行WDI原始年度序列；指标NY.GDP.MKTP.KD；不含2025及以后预测值。",
+        "publication_date": "2026-10-08",
+        "observation_end": "2024-12-31",
+        "limitation": "仅说明序列口径，未展示具体数值；GDP总量不能直接代表“优势发挥”，需结合相对份额。"
+      },
+      {
+        "evidence_id": "prior-f54eb082d2586bb854e7",
+        "relation": "counter",
+        "quote": "NSF《2024美国科学与工程状况》显示美国仍有庞大研发体系，同时中国研发增长改变国际格局；只使用文中实际年份。",
+        "publication_date": "2024-03-13",
+        "observation_end": null,
+        "limitation": "摘要性记录，未给具体年份数值；研发规模庞大说明优势仍在，但不排除相对优势受挑战。"
+      }
+    ],
+    "remaining_gap": "缺少对“相斥因素继续按原方式运动”这一条件的直接测量，以及“不可阻挡的危机潜流”的可操作阈值；现有极化/不确定性代理与GDP/研发指标方向不一致，无法判定主要结果。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-ec20d662d539ed82aeb7",
+      "url": "https://www.federalreserve.gov/econres/notes/feds-notes/costs-of-rising-uncertainty-20250424.html",
+      "title": "ev-r2-l3-uncertainty",
+      "published_date": "2025-04-24",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-04-24",
+        "latest": "2025-04-24"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-uncertainty",
+      "archive_sha256": "48a6374e08c0376b56f79e00aa97a3b9f6d4f21acdd80c7e742895d1a46b1e29",
+      "archive_path": "data/sources/r2-l3-uncertainty.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-81427a19f3894f8e09f0",
+      "url": "https://www.pewresearch.org/politics/2014/06/12/political-polarization-in-the-american-public/",
+      "title": "ev-polarization",
+      "published_date": "2014-06-12",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2014-06-12",
+        "latest": "2014-06-12"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-polarization",
+      "archive_sha256": "e0abc539884f05b92dc6fc7731fba6ed3bc0f145317bb77d45bf60032c7aabb3",
+      "archive_path": "data/sources/e0abc539884f05b92dc6fc7731fba6ed3bc0f145317bb77d45bf60032c7aabb3.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-038019c735d4360d56c8",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.KD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-kd",
+      "published_date": "2026-10-08",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-10-08",
+        "latest": "2026-10-08"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-kd",
+      "archive_sha256": "0eabb480af54e08e1fa6c8a30424b5f98a316e14d676054b7b88acb293744bb4",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.KD.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-f54eb082d2586bb854e7",
+      "url": "https://www.ncses.nsf.gov/pubs/nsb20243/discovery-u-s-and-global-r-d",
+      "title": "ev-nsf",
+      "published_date": "2024-03-13",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-03-13",
+        "latest": "2024-03-13"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-nsf",
+      "archive_sha256": "48d44bfdae4f5f92a3f44364f67e6ca7670f659eb1c77f1e11453f89e6023f33",
+      "archive_path": "data/sources/48d44bfdae4f5f92a3f44364f67e6ca7670f659eb1c77f1e11453f89e6023f33.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-5e0198205533eeeab8e2bed8",
+      "url": "https://www.richmondfed.org/publications/research/economic_brief/2023/eb_23-20",
+      "resolved_url": "https://www.richmondfed.org/publications/research/economic_brief/2023/eb_23-20",
+      "title": "Partisan Conflict in the U.S. and Potential Impacts on the Economy | Richmond Fed",
+      "published_date": "2023-06-21",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2023-06-21",
+        "latest": "2023-06-21"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:52.265672+00:00",
+      "archive_sha256": "a45fb075a27489139c369f42991083d0c62bf3da7be3654f9ac7d3d5cadfef2c",
+      "archive_path": "jobs/e2236f53cf1595bf9eb6ec86/a45fb075a27489139c369f42991083d0c62bf3da7be3654f9ac7d3d5cadfef2c.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a33de7bcc47bac1314c3c5dc",
+      "url": "https://www.federalreserve.gov/econres/notes/feds-notes/costs-of-rising-uncertainty-accessible-20250424.htm",
+      "resolved_url": "https://www.federalreserve.gov/econres/notes/feds-notes/costs-of-rising-uncertainty-accessible-20250424.htm",
+      "title": "Federal Reserve Board - Costs of Rising Uncertainty, Accessible Data",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:52.266947+00:00",
+      "archive_sha256": "afb9d038e9354e19237c43827b32412ce1418e6c43030ca527bc156715603955",
+      "archive_path": "jobs/e2236f53cf1595bf9eb6ec86/afb9d038e9354e19237c43827b32412ce1418e6c43030ca527bc156715603955.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c39bf9bb53c7a8861e66bdf3",
+      "url": "https://ncses.nsf.gov/pubs/nsbsep20261/assets/nsbsep20261.pdf",
+      "resolved_url": "https://ncses.nsf.gov/pubs/nsbsep20261/assets/nsbsep20261.pdf",
+      "title": "The State of U.S. Science and Engineering 2026",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:52.267145+00:00",
+      "archive_sha256": "56422fb92da715d39cd3a2d04645cc6b7cc679549cc7298614a39fe5a57821ec",
+      "archive_path": "jobs/e2236f53cf1595bf9eb6ec86/56422fb92da715d39cd3a2d04645cc6b7cc679549cc7298614a39fe5a57821ec.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-1e08329e5125f5354cb90044",
+      "url": "https://ncses.nsf.gov/pubs/nsb20246/assets/nsb20246.pdf",
+      "resolved_url": "https://ncses.nsf.gov/pubs/nsb20246/assets/nsb20246.pdf",
+      "title": "NSB-2024-6, Research and Development: U.S. Trends and International Comparisons",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:52.267279+00:00",
+      "archive_sha256": "752ed6a804146fbf54e4d4f32fe358751e0dd38fa383e70dea0342c20429e2d3",
+      "archive_path": "jobs/e2236f53cf1595bf9eb6ec86/752ed6a804146fbf54e4d4f32fe358751e0dd38fa383e70dea0342c20429e2d3.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-eba2c7cc074e80df239c4047",
+      "url": "https://www.richmondfed.org/research/national_economy/partisan_conflict_index",
+      "resolved_url": "https://www.richmondfed.org/research/national_economy/partisan_conflict_index",
+      "title": "Partisan Conflict Index | Richmond Fed",
+      "published_date": "2026-10-09",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-10-09",
+        "latest": "2026-10-09"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:36:00.029668+00:00",
+      "archive_sha256": "a1c1851287dabde4da68cd2c224d92cd12e365e89d101e4abaf799ea63866b66",
+      "archive_path": "jobs/e2236f53cf1595bf9eb6ec86/a1c1851287dabde4da68cd2c224d92cd12e365e89d101e4abaf799ea63866b66.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "Federal Reserve rising uncertainty polarization United States investment decline 2019 2025 evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "United States GDP R&D global share resilience 1991 2024 World Bank NSF evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "United States partisan polarization policy uncertainty investment decline 1991 2024 Federal Reserve Richmond Fed evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "United States GDP R&D global share resilience 1991 2024 World Bank NSF evidence",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "需先确认原文if前提A（相斥因素和力量是否继续按原方式运动）是否触发；再分别用同对象、同指标、观察期在cutoff前的直接证据判断B1（优势发挥受阻）与B2（危机潜流）。现有GDP与研发来源只说明序列口径或摘要，未展示可支持“优势未明显受阻”的具体数值；极化与不确定性代理也不能等同于原文所指全部相斥力量。",
+  "source_statuses": [
+    {
+      "url": "https://www.richmondfed.org/publications/research/economic_brief/2023/eb_23-20",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.federalreserve.gov/econres/notes/feds-notes/costs-of-rising-uncertainty-accessible-20250424.htm",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://ncses.nsf.gov/pubs/nsbsep20261/assets/nsbsep20261.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://ncses.nsf.gov/pubs/nsb20246/assets/nsb20246.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.richmondfed.org/research/national_economy/partisan_conflict_index",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "ad33e5d4db131424e6bc36532c244005af3af7edf5489879ff8776ce5e80e7c9"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "de4ed1a735344215c76204584981dd77",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "fa1c17decc0ff06464e71ca583c0c256",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "65693fd45712a81c30212f9b40c24ed020fbfc0edfd6a97a130cca3acfdc21cf"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "0f3cb9be872a04643172e77252f165c9",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "7566421b4b5c027e488fc32c884d630175174a7bc430c3c17f75a29b2e4bf7c5"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "2decdc2c2cfaaa4bc4bbc78b337a77b6",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "fa1c17decc0ff06464e71ca583c0c256",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "38b1fe3b987e09121e0ddc0737ace22e7438e5acf77aba3f6303a5919d3f4824"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "41bd0e5d0a7251279056a9b70687a939",
+      "cost_estimate_USD": 0.001,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "81b699a13515b1ec1adbee0c3b97351aa76c8cf676eeb12484df2edc669077a8"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "7f9523669c50740246491cd763a07447839b35a72523f593bf3e7c4c1a328f8b"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "d0d4f44d0e7749f19fddd6117c6ae970a42580d68dc49dd352d0d0eae16b11ac"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "9e8dea80f7966f09e554eaf8949a2d65db476a5e52f3241ffbe5a0460cdd3eb3"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-ec20d662d539ed82aeb7",
+        "source_bytes": 173,
+        "shown_bytes": 173,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-81427a19f3894f8e09f0",
+        "source_bytes": 134,
+        "shown_bytes": 134,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-038019c735d4360d56c8",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-f54eb082d2586bb854e7",
+        "source_bytes": 154,
+        "shown_bytes": 154,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-5e0198205533eeeab8e2bed8",
+        "source_bytes": 8364,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a33de7bcc47bac1314c3c5dc",
+        "source_bytes": 5721,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c39bf9bb53c7a8861e66bdf3",
+        "source_bytes": 12047,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-1e08329e5125f5354cb90044",
+        "source_bytes": 12052,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-eba2c7cc074e80df239c4047",
+        "source_bytes": 2077,
+        "shown_bytes": 2077,
+        "context_truncated": false
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-ec20d662d539ed82aeb7",
+        "source_bytes": 173,
+        "shown_bytes": 173,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-81427a19f3894f8e09f0",
+        "source_bytes": 134,
+        "shown_bytes": 134,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-038019c735d4360d56c8",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-f54eb082d2586bb854e7",
+        "source_bytes": 154,
+        "shown_bytes": 154,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-5e0198205533eeeab8e2bed8",
+        "source_bytes": 8364,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a33de7bcc47bac1314c3c5dc",
+        "source_bytes": 5721,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c39bf9bb53c7a8861e66bdf3",
+        "source_bytes": 12047,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-1e08329e5125f5354cb90044",
+        "source_bytes": 12052,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-eba2c7cc074e80df239c4047",
+        "source_bytes": 2077,
+        "shown_bytes": 2077,
+        "context_truncated": false
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-ec20d662d539ed82aeb7",
+        "source_bytes": 173,
+        "shown_bytes": 173,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-81427a19f3894f8e09f0",
+        "source_bytes": 134,
+        "shown_bytes": 134,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-038019c735d4360d56c8",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-f54eb082d2586bb854e7",
+        "source_bytes": 154,
+        "shown_bytes": 154,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-5e0198205533eeeab8e2bed8",
+        "source_bytes": 8364,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a33de7bcc47bac1314c3c5dc",
+        "source_bytes": 5721,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c39bf9bb53c7a8861e66bdf3",
+        "source_bytes": 12047,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-1e08329e5125f5354cb90044",
+        "source_bytes": 12052,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-eba2c7cc074e80df239c4047",
+        "source_bytes": 2077,
+        "shown_bytes": 2077,
+        "context_truncated": false
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-ec20d662d539ed82aeb7",
+        "source_bytes": 173,
+        "shown_bytes": 173,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-81427a19f3894f8e09f0",
+        "source_bytes": 134,
+        "shown_bytes": 134,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-038019c735d4360d56c8",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-f54eb082d2586bb854e7",
+        "source_bytes": 154,
+        "shown_bytes": 154,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-5e0198205533eeeab8e2bed8",
+        "source_bytes": 8364,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a33de7bcc47bac1314c3c5dc",
+        "source_bytes": 5721,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c39bf9bb53c7a8861e66bdf3",
+        "source_bytes": 12047,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-1e08329e5125f5354cb90044",
+        "source_bytes": 12052,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-eba2c7cc074e80df239c4047",
+        "source_bytes": 2077,
+        "shown_bytes": 2077,
+        "context_truncated": false
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000253442-000253504",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原文的真实if前提是“相斥因素和力量如果继续这样运动下去”。建议把condition_state写成unknown，却没有先确认该前提是否持续；同时把“优势未明显受阻”和“危机潜流无阈值”直接当作无法判定主要结果的理由，混淆了前提是否触发与后果是否实现。应先确认A（相斥因素是否继续按原方式运动），再分别判断B1（优势发挥受阻）和B2（危机潜流）。",
+          "source_quote": "国社会上存在的种种相斥因素和力量如果继续这样运动下去，不仅会使其优势发挥",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议把prior-038019c735d4360d56c8列为counter，但该来源文本只说明WDI序列口径，未展示任何GDP数值或相对份额，不能支持“美国GDP仍庞大、优势未明显受阻”。同样，prior-f54eb082d2586bb854e7只是摘要性记录，未给具体年份数值，不足以支撑“优势未明显受阻”的主要结果判断。",
+          "source_quote": "世界银行WDI原始年度序列；指标NY.GDP.MKTP.KD；不含2025及以后预测值。",
+          "evidence_id": "prior-038019c735d4360d56c8",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议用党派极化与政策不确定性上升作为“内部冲突累积”的支持证据，但这些代理指标只覆盖政治极化或不确定性，不能等同于原文“种种相斥因素和力量”这一特定集合；且ev-eba2c7cc074e80df239c4047页面只说明指标方法，未给出具体序列数值，不能证明冲突在观察期内持续累积。",
+          "source_quote": "The Partisan Conflict Index tracks the degree of political disagreement among U.S. federal lawmakers by measuring the frequency of newspaper articles reporting disagreement in a given month.",
+          "evidence_id": "ev-eba2c7cc074e80df239c4047",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议以“两项主要分项方向不一致”为由判暂无法判断，但未先确认真实if前提A是否触发，也未分别说明B1、B2各自是否有直接证据。若A未触发或未知，应保留条件状态与缺口；若A已触发，则须分别判断B1、B2，不能仅因代理指标方向不一致就判未定。当前结论缺少对前提与后果的分层判断。",
+          "source_quote": "原文是带真实if前提的条件后果判断，且“不可阻挡的危机潜流”缺乏可操作终点。已有证据显示党派极化与政策不确定性上升（支持内部冲突累积），但美国GDP与研发体系仍庞大（优势未明显受阻），两项主要分项方向不一致，无法判定主要结果。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需先确认原文if前提A（相斥因素和力量是否继续按原方式运动）是否触发；再分别用同对象、同指标、观察期在cutoff前的直接证据判断B1（优势发挥受阻）与B2（危机潜流）。现有GDP与研发来源只说明序列口径或摘要，未展示可支持“优势未明显受阻”的具体数值；极化与不确定性代理也不能等同于原文所指全部相斥力量。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000253442-000253504",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000253442-000253504",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "原文条件为“美国社会相斥因素和力量继续这样运动下去”；可观察口径分两项：(1)美国相对优势是否受阻，(2)是否形成不可阻挡的危机潜流。观察时段为1991年至2024年可得数据（WDI年度序列、NSF研发报告、党派极化与不确定性指标）。",
+      "reason": "原文是带真实if前提的条件后果判断，且“不可阻挡的危机潜流”缺乏可操作终点。已有证据显示党派极化与政策不确定性上升（支持内部冲突累积），但美国GDP与研发体系仍庞大（优势未明显受阻），两项主要分项方向不一致，无法判定主要结果。",
+      "limitation": "“相斥因素继续这样运动”这一条件是否持续未被直接测量；极化、不确定性只是代理指标，不能等同于原文所指全部社会相斥力量。危机潜流无明确阈值，无法给出终局判断。",
+      "evidence_ids": [
+        "prior-81427a19f3894f8e09f0",
+        "ev-5e0198205533eeeab8e2bed8",
+        "ev-eba2c7cc074e80df239c4047",
+        "prior-038019c735d4360d56c8",
+        "prior-f54eb082d2586bb854e7"
+      ],
+      "method": "汇总制度文化内部矛盾并外推危机累积",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "继续下去",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-81427a19f3894f8e09f0",
+          "relation": "support",
+          "quote": "跨20年价值观调查显示党派意识形态重叠减少，党派反感扩大；也保留公共立场并非全面极化的区别。",
+          "publication_date": "2014-06-12",
+          "observation_end": null,
+          "limitation": "摘要性记录，未给出具体年份区间与数值；且极化是内部冲突的代理，不等于原文全部相斥力量。"
+        },
+        {
+          "evidence_id": "ev-5e0198205533eeeab8e2bed8",
+          "relation": "support",
+          "quote": "the 1970s marked a significant turning point, with polarization increasing substantially. In the years since, the trend has continued. The result is that the ideological gap between the two parties is now at its widest in 60 years.",
+          "publication_date": "2023-06-21",
+          "observation_end": null,
+          "limitation": "仅覆盖国会投票极化，正文截断；极化上升不直接证明“优势发挥不出来”或危机潜流。"
+        },
+        {
+          "evidence_id": "ev-eba2c7cc074e80df239c4047",
+          "relation": "support",
+          "quote": "The Partisan Conflict Index tracks the degree of political disagreement among U.S. federal lawmakers by measuring the frequency of newspaper articles reporting disagreement in a given month.",
+          "publication_date": "2026-10-09",
+          "observation_end": null,
+          "limitation": "页面为指标说明，未给出具体序列数值；且发表日期晚于cutoff，仅作方法背景，不能作为已实现结果。"
+        },
+        {
+          "evidence_id": "prior-038019c735d4360d56c8",
+          "relation": "counter",
+          "quote": "世界银行WDI原始年度序列；指标NY.GDP.MKTP.KD；不含2025及以后预测值。",
+          "publication_date": "2026-10-08",
+          "observation_end": "2024-12-31",
+          "limitation": "仅说明序列口径，未展示具体数值；GDP总量不能直接代表“优势发挥”，需结合相对份额。"
+        },
+        {
+          "evidence_id": "prior-f54eb082d2586bb854e7",
+          "relation": "counter",
+          "quote": "NSF《2024美国科学与工程状况》显示美国仍有庞大研发体系，同时中国研发增长改变国际格局；只使用文中实际年份。",
+          "publication_date": "2024-03-13",
+          "observation_end": null,
+          "limitation": "摘要性记录，未给具体年份数值；研发规模庞大说明优势仍在，但不排除相对优势受挑战。"
+        }
+      ],
+      "remaining_gap": "缺少对“相斥因素继续按原方式运动”这一条件的直接测量，以及“不可阻挡的危机潜流”的可操作阈值；现有极化/不确定性代理与GDP/研发指标方向不一致，无法判定主要结果。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000253442-000253504",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "原文条件为“美国社会相斥因素和力量继续这样运动下去”；可观察口径分两项：(1)美国相对优势是否受阻，(2)是否形成不可阻挡的危机潜流。观察时段为1991年至2024年可得数据（WDI年度序列、NSF研发报告、党派极化与不确定性指标）。",
+      "reason": "原文是带真实if前提的条件后果判断，前提A（相斥因素是否继续按原方式运动）未被直接测量，condition_state保留unknown。已有证据显示党派极化与政策不确定性上升，但只是内部冲突的代理，不能等同于原文所指全部相斥力量；GDP与研发来源仅说明序列口径或摘要，未展示可支持“优势未明显受阻”的具体数值。B1、B2均缺同对象直接证据，无法判定主要结果。",
+      "limitation": "“相斥因素继续这样运动”这一条件是否持续未被直接测量；极化、不确定性只是代理指标，不能等同于原文所指全部社会相斥力量。危机潜流无明确阈值，无法给出终局判断。关键修订：不再把GDP/研发摘要当作“优势未明显受阻”的counter证据，改为说明其仅提供口径背景。",
+      "evidence_ids": [
+        "prior-81427a19f3894f8e09f0",
+        "ev-5e0198205533eeeab8e2bed8",
+        "ev-eba2c7cc074e80df239c4047",
+        "prior-038019c735d4360d56c8",
+        "prior-f54eb082d2586bb854e7"
+      ],
+      "method": "汇总制度文化内部矛盾并外推危机累积",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "继续下去",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-81427a19f3894f8e09f0",
+          "relation": "support",
+          "quote": "跨20年价值观调查显示党派意识形态重叠减少，党派反感扩大；也保留公共立场并非全面极化的区别。",
+          "publication_date": "2014-06-12",
+          "observation_end": null,
+          "limitation": "摘要性记录，未给出具体年份区间与数值；且极化是内部冲突的代理，不等于原文全部相斥力量。"
+        },
+        {
+          "evidence_id": "ev-5e0198205533eeeab8e2bed8",
+          "relation": "support",
+          "quote": "the 1970s marked a significant turning point, with polarization increasing substantially. In the years since, the trend has continued. The result is that the ideological gap between the two parties is now at its widest in 60 years.",
+          "publication_date": "2023-06-21",
+          "observation_end": null,
+          "limitation": "仅覆盖国会投票极化，正文截断；极化上升不直接证明“优势发挥不出来”或危机潜流。"
+        },
+        {
+          "evidence_id": "ev-eba2c7cc074e80df239c4047",
+          "relation": "background",
+          "quote": "The Partisan Conflict Index tracks the degree of political disagreement among U.S. federal lawmakers by measuring the frequency of newspaper articles reporting disagreement in a given month.",
+          "publication_date": "2026-10-09",
+          "observation_end": null,
+          "limitation": "页面为指标说明，未给出具体序列数值；且发表日期晚于cutoff，仅作方法背景，不能作为已实现结果或冲突持续累积的证据。"
+        },
+        {
+          "evidence_id": "prior-038019c735d4360d56c8",
+          "relation": "boundary",
+          "quote": "世界银行WDI原始年度序列；指标NY.GDP.MKTP.KD；不含2025及以后预测值。",
+          "publication_date": "2026-10-08",
+          "observation_end": "2024-12-31",
+          "limitation": "仅说明序列口径，未展示具体数值；不能支持“优势未明显受阻”或相反判断，只提示可用指标口径。"
+        },
+        {
+          "evidence_id": "prior-f54eb082d2586bb854e7",
+          "relation": "boundary",
+          "quote": "NSF《2024美国科学与工程状况》显示美国仍有庞大研发体系，同时中国研发增长改变国际格局；只使用文中实际年份。",
+          "publication_date": "2024-03-13",
+          "observation_end": null,
+          "limitation": "摘要性记录，未给具体年份数值；研发规模庞大说明优势仍在，但不排除相对优势受挑战，不足以单独支撑主要结果判断。"
+        }
+      ],
+      "remaining_gap": "需先确认原文if前提A（相斥因素和力量是否继续按原方式运动）是否触发；再分别用同对象、同指标、观察期在cutoff前的直接证据判断B1（优势发挥受阻）与B2（危机潜流）。现有GDP与研发来源只说明序列口径或摘要，未展示可支持“优势未明显受阻”的具体数值；极化与不确定性代理也不能等同于原文所指全部相斥力量。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象为美国社会内部相斥因素与力量按原文所述方式持续运动这一条件；可观察口径分两项：(1)美国相对优势是否受阻，(2)是否形成不可阻挡的危机潜流。保留真实if前提，不把任何后来发生的危机自动视为同一条件已触发；反证包括美国经济、研发等优势持续发挥，或内部冲突未持续累积。",
+  "elapsed_seconds": 37.827,
+  "completed_at": "2026-11-09T10:36:20.343311+00:00"
+}

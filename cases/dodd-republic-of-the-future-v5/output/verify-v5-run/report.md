@@ -1,0 +1,156 @@
+# 安娜·鲍曼·多德《未来共和国》（1887）：出版后预测人工核查
+
+- 案例目录：`cases/dodd-republic-of-the-future-v5/`
+- 出版日期：1887年（仅知年份；配置使用1月1日占位）
+- 截止日：2026-11-15（Asia/Shanghai）
+
+## 方法说明
+
+完整阅读25/25个3500/600字符chunk（含授权条款），每块手写JSON，经85e6da1版原代码逐字校验和自动重叠去重；共37候选，31 resolvable，6项因原代码的引号归属规则降为unclear，全部保留，未人工语义去重。核验仅面向小说明确、具象的社会技术状态，纯粹讽刺、道德寓意、人物感想和一般机制不作为预测。第一封信明确以2050年12月1日为场景时点，故多数未逐句重写年份的状态仍以2050年而非截止日为终点；“一百年前”等相对时点按该叙事时钟换算，不凭空给无日期论断加期限。先剔除非预测（出版前已发生的史实、一般规律、规范建议、反事实推演等），再对每条预测用 Exa 检索公开来源并抓取存档（`data/sources/`，sha256 记于 `data/evidence.jsonl`）核对至截止日。没有写明终点的预测按“出版日→2026-11-15”的隐含窗口判断；写明的终点未到、或条件句的前提从未出现，一律记“暂无法判断”，不强行判对错。所有来源均为实际抓取并存档的公开页面或文件；本稿未使用 DeepSeek 自动核验结论作为最终判断。
+
+五级判断：正确／趋势符合（方向对、程度或时点未完全到位）／部分符合（一部分成立）／错误／暂无法判断。严格胜率＝正确÷可判定；加权胜率＝（正确＋0.75×趋势符合＋0.5×部分符合）÷可判定；错误率＝错误÷可判定；可判定＝前四级之和。
+
+## 统计
+
+候选 31 条，剔除非预测 0 条，计入 **31 条预测**，其中 **6 条可判定**。
+
+| 判断 | 条数 |
+|---|---:|
+| 正确 | 1 |
+| 趋势符合 | 0 |
+| 部分符合 | 1 |
+| 错误 | 4 |
+| 暂无法判断 | 25 |
+
+| 指标 | 数值 |
+|---|---:|
+| 严格胜率 | **16.7%**（1/6） |
+| 加权胜率 | **25.0%** |
+| 错误率 | **66.7%**（4/6） |
+| 未定占比（暂无法判断/预测） | 80.6%（25/31） |
+
+## 总体评价
+
+本书是反乌托邦讽刺小说，不是统计模型或政策预测。已实现的自助入住技术、部分女性职业参与与未发生的约1900/1950制度叙事应分开；大多数2050年终点仍未到来。这里的比率只描述选定具象场景，不能视为作者所有思想或社会主义学说的准确率。
+
+## 逐条判断
+
+编号为 `data/claims.jsonl` 中可判定候选的顺序号。
+
+### 正确（1 条）
+
+- **#7** 「On the table lay a big book with a placard on which was printed, “_Please write name, country, length of stay …」  
+  判断：**正确**。Atos的2012年纽约YOTEL案例明确记载自动登记、核对预订和支付后发放新编码RFID房卡，行业报道也描述了自助选房与取钥匙。书中这一独立的入住技术功能在2050年前已实现；不把它扩大为整间酒店没有员工。  
+  来源：<https://atos.net/content/dam/global/documents/your-business/atos-case-study-yotel.pdf>；<https://www.kioskmarketplace.com/articles/hotels-waking-up-to-self-service/>；<https://www.tandfonline.com/doi/full/10.1080/15256480.2024.2386694>
+
+### 部分符合（1 条）
+
+- **#17** 「One sees them everywhere--in all the public offices, as heads of departments, as government clerks, as officia…」  
+  判断：**部分符合**。FAA记录女性取得飞行员和机械师资格，CDC也确认女性进入消防队伍，但指出消防工作仍有91%为男性并有进入和留任障碍。列举职业的一部分确已向女性开放，现有证据不足以确认“每一职业”或普遍公职存在，故只判部分符合。  
+  来源：<https://www.faa.gov/sites/faa.gov/files/about/history/pioneers/women_in_aviation_2019.pdf>；<https://www.cdc.gov/niosh/bulletin/2024/women-firefighters.html>
+
+### 错误（4 条）
+
+- **#11** 「The city itself was rebuilt a hundred years ago, in order that the houses and the public buildings might be in…」  
+  判断：**错误**。纽约城市博物馆把20世纪改造描述为逐步形成的超级街区和高层住宅，而1952年影像说明部分项目刚开始清拆、另有联合国大楼及中等收入住宅。它不是约1950年已完成的全城社会主义式重建。  
+  来源：<https://www.mcny.org/nyaic-worldcity-online>；<https://thegreatestgrid.mcny.org/greatest-grid/superblocks/300>
+- **#21** 「You recollect, of course, the terrible reign of blood that took place during the awful conflict between the re…」  
+  判断：**错误**。1900年总统咨文称共和制度强固、宪法仅有少数修正；国会图书馆记录同年麦金莱连任。1901年确有无政府主义者刺杀总统的事件，但它不是书中1900年共和派与社会主义和无政府主义势力的毁灭性国内战争。  
+  来源：<https://inthesetimes.com/article/anarchy-in-the-usa>；<https://guides.loc.gov/presidential-election-1900>；<https://www.presidency.ucsb.edu/documents/fourth-annual-message-14>
+- **#22** 「For over a hundred and fifty years, now, this ideal socialistic society had existed, and what are the results?」  
+  判断：**错误**。国务院和国家档案馆资料记录1897—1901年的麦金莱政府及1900年共和党候选人赢得选举；当年咨文还明确说宪法延续原有基础。因而约1900年前建立并延续超过150年的美国社会主义共同体，其起始历史并未发生。  
+  来源：<https://history.state.gov/historicaldocuments/mckinley>；<https://www.archives.gov/electoral-college/1900>；<https://www.presidency.ucsb.edu/documents/fourth-annual-message-14>
+- **#24** 「At first, a hundred or so years ago, in the early days of the community, the time of labor was fixed at five h…」  
+  判断：**错误**。劳工部历史资料记载FLSA的每周工时制度，经济史资料的1950年分性别种族表仍列出各组平均每周40小时以上。即便按每周七天计算，也不能与普遍每天五小时上限相容，约1950年的具体工时预测不符。  
+  来源：<https://www.dol.gov/general/aboutdol/history/flsa1938>；<https://www.dol.gov/node/22273>；<https://www.bls.gov/opub/mlr/2016/article/current-employment-statistics-survey-100-years-of-employment-hours-and-earnings.htm>；<https://eh.net/encyclopedia/hours-of-work-in-u-s-history/>
+
+### 暂无法判断（25 条）
+
+- **#1** 「You may remember, perhaps, that before starting I found myself in very grave doubt as to which route to take--…」  
+  判断：**暂无法判断**。Snopes的2024年核查未找到跨大西洋隧道的具体建设计划，2025年工程讨论也把它视为受技术约束的构想。场景终点是2050年，尚不能因当前未建成判错。  
+  来源：<https://www.livescience.com/technology/engineering/could-we-ever-build-a-transatlantic-tunnel>；<https://www.snopes.com/news/2024/12/18/tunnel-london-new-york-city/>
+- **#2** 「The perfection of the contrivances for supplying hot and cold air, for instance, during the journey, are such …」  
+  判断：**暂无法判断**。铁路空调已在1887年后广泛发展，SBB资料也确认绝大多数列车有空调；但同一资料说明温度受运行条件制约。它不证明跨洋隧道列车能按70、80、100华氏度供旅客选座，2050年终点未到。  
+  来源：<https://www.williscarrier.com/weathermakers/1930-1940/>；<https://news.sbb.ch/en/019d7b77-b348-7b9f-9261-476e74797e9f/too-hot-too-cold-here-s-everything-you-need-to-know-about-air-conditioning>
+- **#3** 「The speed at which we were shot was terrific--five miles to the minute--making the journey of three thousand m…」  
+  判断：**暂无法判断**。存档工程讨论仍将跨大西洋客运隧道视为构想，不能实测书中每分钟五英里与十小时的组合。2050年尚未来临，不能用普通列车速度替代该线路速度。  
+  来源：<https://www.livescience.com/technology/engineering/could-we-ever-build-a-transatlantic-tunnel>
+- **#4** 「In spite of the swiftness of our transit, we were enabled by the aid of the instantaneous photographic process…」  
+  判断：**暂无法判断**。高速摄影论文确认了短曝光与高速成像的发展，同时讨论运动模糊和欠曝光噪声的限制。但没有证明书中移动交通里的望远镜观景系统已经部署，2050年的具体应用仍待观察。  
+  来源：<https://arxiv.org/abs/1808.00428>；<https://arxiv.org/abs/2211.16034>
+- **#5** 「there we found air-balloon omnibuses, into which we and our luggage were transported by means of little electr…」  
+  判断：**暂无法判断**。航空博物馆记录了客运飞艇衰落及新一代电推进飞艇构想，航空学会也报道复兴项目。两者均未证明纽约已有气球公交与电动车组合系统，2050年终点未到。  
+  来源：<https://airandspace.si.edu/air-and-space-quarterly/issue-9/airships>；<https://www.aerosociety.com/news/floating-into-the-future/>
+- **#6** 「but as more and more land became necessary new channels for these rivers were dug, and the river-beds filled i…」  
+  判断：**暂无法判断**。纽约DEP的控制计划仍以哈德逊河和东河等现存水域为对象；滨水规划也以东河沿岸改造为主题。这不符合当前已填平河床的状态，但不能提前判定2050年的改道填河情景失败。  
+  来源：<https://www.nyc.gov/assets/planning/download/pdf/plans-studies/east-river-waterfront/east_river_waterfront_book.pdf>；<https://www.nyc.gov/site/dep/water/citywide-east-river-open-water.page>
+- **#8** 「My dear Hannevig, can you believe me when I tell you that I have been in this hotel four mortal days, have eat…」  
+  判断：**暂无法判断**。Wired和SCMP的存档均记录机器人酒店使用自动化服务，也记录机器人退役并重新由人类承担部分职能。证据不足以证明全酒店无人服务；2050年终点未到，现有回撤也不能直接判未来失败。  
+  来源：<https://www.wired.com/story/inside-japan-henn-na-robot-hotel/>；<https://www.scmp.com/news/asia/east-asia/article/2182295/ai-fail-japans-henn-na-hotel-dumps-annoying-robot-staff-hires>
+- **#9** 「Meals are served in one’s own room, by a system of ingenious sliding shelves, which open and shut, and disappe…」  
+  判断：**暂无法判断**。酒店机器人综述和Kalle案例表明自动送餐已有试验，但研究讨论的是移动机器人与人机协作。没有证据显示书中墙内滑架覆盖客房送餐，2050年终点尚未到来。  
+  来源：<https://www.mdpi.com/2071-1050/14/17/10827>；<https://doi.org/10.24251/hicss.2025.072>
+- **#10** 「Imagine, therefore, miles upon miles of a city composed of little two-story houses as like one unto another as…」  
+  判断：**暂无法判断**。摩天楼博物馆区分了纽约密集街区与独立高层住宅，NYU也记录了大型多户住房建设。它们显示目前并非清一色两层住宅，但2050年的城市形态尚不能最终判定。  
+  来源：<https://www.skyscraper.org/housing-density/tenements-and-towers/>；<https://www.furmancenter.org/soc-report/state-of-the-city-2025/state-of-the-citys-housing-stock-2025/>
+- **#12** 「All shops are run by the government on government capital; there is, consequently, neither rivalry nor competi…」  
+  判断：**暂无法判断**。城市商店档案记载家族和移民经营的商铺，州审计长2026年零售报告仍讨论私营行业就业。当前背景不支持政府独营，不过2050年的制度终点未到。  
+  来源：<https://legacy.urbanarchive.org/stories/pxAt5QfK8wQ>；<https://www.osc.ny.gov/files/reports/osdc/2026/pdf/nyc-retail-industry-final-version-9-29-26.pdf>
+- **#13** 「The women dress so exactly like the men in this country that it is somewhat difficult to tell the sexes apart.」  
+  判断：**暂无法判断**。史密森资料记录1960—1970年代中性服装运动；哥伦比亚的研究仍发现性别流动服装的采用差异。它们支持某些趋同而不等于全民服装几乎完全相同，2050年终点未到。  
+  来源：<https://www.smithsonianmag.com/arts-culture/his-her-ponchoes-became-thing-history-unisex-fashion-180955240/>；<https://business.columbia.edu/insights/gender-fluid-fashion-just-repackaging-male-style>
+- **#14** 「I had noticed almost immediately on my arrival that, throughout the entire city, not a chimney was to be seen.」  
+  判断：**暂无法判断**。纽约电气化史表明能源技术持续变化，但2025年国会议员的公告仍记录Mitchel Houses的烟囱坍塌和燃气锅炉改造诉求。到2050年是否完全无烟囱仍需等待，不能按当前反例提前判错。  
+  来源：<https://www.archives.nyc/blog/2019/8/2/the-electric-grid>；<https://ritchietorres.house.gov/posts/congressman-ritchie-torres-calls-on-nycha-to-electrify-mitchel-houses-after-gas-explosion-and-chimney-collapse>
+- **#15** 「Oh, every thing is done by machinery, as at your hotel. Every thing, the sweeping, bed making, window scrubbin…」  
+  判断：**暂无法判断**。ACM研究确认家用机器人已承担专门任务，但2026年报道仍把通用家务机器人的入户能力视为试验并载明任务失败。现有证据不能覆盖清扫、铺床、擦窗和洗涤的完整自动化，2050年终点未到。  
+  来源：<https://dl.acm.org/doi/10.1145/3706598.3714266>；<https://www.calcalistech.com/ctechnews/article/4n7913rhc>
+- **#16** 「Most of the machinery goes by electricity. A house can be kept in perfect order by two hours’ work daily.」  
+  判断：**暂无法判断**。家务时间研究确认核心家务时间长期下降，也指出照护和购物抵消部分节省；另一研究说明节时技术证据和时间分配问题。没有存档证明各种家庭每天两小时足以保持完好，且2050年终点未到。  
+  来源：<https://academic.oup.com/sf/article/95/2/503/2354533>；<https://www.jstage.jst.go.jp/article/agishiten/37/1/37_3/_article/-char/en>
+- **#18** 「Their predominance in office just now is owing to their over-powering number, the women’s vote polled being te…」  
+  判断：**暂无法判断**。Rutgers资料确认女性投票率和投票人数常高于男性，但没有证实十比一的悬殊比例，也不能由票数直接推出公职构成。2050年比例终点未到，当前差距不能外推为必达。  
+  来源：<https://cawp.rutgers.edu/data/voters/gender-differences-voter-registration-and-turnout>；<https://cawp.rutgers.edu/blog/women-continued-outvote-men-2024-despite-overall-drop-turnout>
+- **#19** 「A law was passed providing that children almost immediately after birth, should be brought up, educated and tr…」  
+  判断：**暂无法判断**。儿童福利研究和GAO报告描述受保护或进入寄养体系的特定儿童，而非所有新生儿从出生到成年均交由国家抚养。它们不支持当前已全面实施，但2050年终点未到。  
+  来源：<https://pmc.ncbi.nlm.nih.gov/articles/PMC4243611/>；<https://www.gao.gov/products/gao-26-107592>
+- **#20** 「Wars, for instance, have been within the last fifty years declared illegal. Woman found that whereas she was e…」  
+  判断：**暂无法判断**。国会资料仍列举依法宣战、法定授权或遭攻击时使用武力的条件；CRS报告也记录总统继续出动军队。书中设定的是2000—2050年间禁战并改仲裁，区间尚未结束，不能把当前制度直接判成最终错误。  
+  来源：<https://www.everycrsreport.com/reports/RL32267.html>；<https://constitution.congress.gov/browse/essay/artII-S2-C1-1-12/ALDE_00013474/>
+- **#23** 「Is not private property abolished--is not the land the property of the State--the wage system become a thing o…」  
+  判断：**暂无法判断**。国会宪法注释记录的工资制度是在私人雇佣关系中调整最低工资和劳动条件，而不是取消工资或所有私人资本。这只能界定已观察制度，2050年的整体所有制安排仍未到期。  
+  来源：<https://constitution.congress.gov/browse/essay/amdt14-S1-8-1/ALDE_00013705/>
+- **#25** 「Recently a law has been put into effect, forbidding any one’s working more than two hours a day.」  
+  判断：**暂无法判断**。经济史资料记录工作周长期缩短，劳工部仍以传统每周40小时作为弹性工作的参照。这不是每天两小时的法律上限，但该条场景在2050年，尚不能最终判错或据长期下降直接判趋势符合。  
+  来源：<https://eh.net/encyclopedia/hours-of-work-in-u-s-history/>；<https://www.dol.gov/general/topic/workhours/flexibleschedules?lang=en>
+- **#26** 「It became necessary, therefore, to make a law against learning and the sciences. All scholars, authors, artist…」  
+  判断：**暂无法判断**。学术自由史和Nature报道都显示现实存在学术自由争议或打压，但不能把政治迫害等同于依法放逐所有能力超过平均值的人。2050年普遍法律制度尚未到期。  
+  来源：<https://prod.nas.org/reports/charting-academic-freedom-103-years-of-debate/full-report>；<https://www.nature.com/articles/d41586-026-02998-0>
+- **#27** 「A strict law was passed, and has since been rigidly enforced, forbidding mental or artistic development being …」  
+  判断：**暂无法判断**。AHA和第一修正案资料讨论学术自由及政府干预的法律边界。它们没有证实以人人可达为准对智力或艺术成就设统一上限；2050年制度终点未到。  
+  来源：<https://www.historians.org/resource/the-federal-government-academic-freedom-in-higher-education/>；<https://firstamendment.mtsu.edu/article/first-amendment-rights-of-colleges-and-universities/>
+- **#28** 「Each citizen, men and women alike, of course, serves his or her term as a government official, as in old Pruss…」  
+  判断：**暂无法判断**。公务员史记载考试和择优制度，美国法典将公务员界定为任命职位，并非公民普遍轮值。当前制度不能证实全民任官，2050年终点仍须等待。  
+  来源：<https://www.historians.org/resource/history-of-the-federal-civil-service/>；<https://uscode.house.gov/view.xhtml?edition=prelim&num=0&req=granuleid%3AUSC-prelim-title5-section2101>
+- **#29** 「There has, for instance, been a noticeable and lamentable dying out of international commerce and a general sl…」  
+  判断：**暂无法判断**。经济史总结美国贸易比较优势的多次兴衰，BEA截至2026年9月仍报告活跃进出口。现有波动不足以证明2050年的贸易衰亡，也不能在终点前据仍有贸易就判错。  
+  来源：<https://www.cambridge.org/core/books/abs/cambridge-economic-history-of-the-united-states/us-foreign-trade-and-trade-policy-in-the-twentieth-century/7C999BDCE396890A9E70F5F62E1BFC5F>；<https://www.bea.gov/data/intl-trade-investment/international-trade-goods-and-services>
+- **#30** 「All trade and commerce are conducted on the socialistic principle, which forbids the venture of private capita…」  
+  判断：**暂无法判断**。美联储研究记录美国企业进入外国市场，SBA资料也确认小企业占出口企业的大多数。当前私营出口没有被排除，但这不足以最终判断2050年的国家独营情景。  
+  来源：<https://www.federalreserve.gov/econresdata/ifdp/2016/files/ifdp1157.pdf>；<https://advocacy.sba.gov/wp-content/uploads/2024/03/Issue-Brief-No.-19-Small-Business-Exports.pdf>
+- **#31** 「So all holidays are prescribed by law except Christmas. This day is kept up for two reasons--because it is tho…」  
+  判断：**暂无法判断**。国会研究与现行法典都列有圣诞以外的多个法定节日，尚不是书中单留圣诞的制度。该项2050年情景未到期，不能用当前节日清单直接判定最终失败。  
+  来源：<https://www.congress.gov/crs_external_products/R/PDF/R41990/R41990.10.pdf>；<https://uscode.house.gov/us/usc/119-124/t5/s6103/>
+
+## 剔除的非预测
+
+| 编号 | 原文 | 类型 | 说明 |
+|---:|---|---|---|
+| — | （无） | — | 候选为人工挑选，未收入非预测 |
+
+## 文件
+
+- 本文：`cases/dodd-republic-of-the-future-v5/REPORT-manual-zh.md`
+- 逐条结构化结果：`cases/dodd-republic-of-the-future-v5/output/manual-final/results.manual.jsonl`（review_source = `manual-assistant-2026-11-15`），汇总 `output/manual-final/summary.json`
+- 人工决定源文件：`cases/dodd-republic-of-the-future-v5/audit/manual_review_2026-11-15.py`
+总候选37与报告核验候选31相差6，全部为确定性引号归属降级，见extraction审计；ASSESS没有duplicate排除。1900年内战项前两轮仍缺直接制度连续性证据，第三轮用2条自适应查询补查总统咨文（≤5）；其他项无第三轮。

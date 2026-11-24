@@ -1,0 +1,86 @@
+{
+  "id": "txt-5386516eaf-001764572-001764828",
+  "plan": {
+    "queries": [
+      {
+        "role": "support"
+      },
+      {
+        "role": "counter"
+      }
+    ],
+    "note": "r4 新执行。见 audit/search-returns-r4/manifest.json。不回填。"
+  },
+  "select": {
+    "urls": [
+      "https://www.wipo.int/edocs/pubdocs/en/wipo-pub-943-2023-en-wipo-ip-facts-and-figures-2023.pdf"
+    ],
+    "reason": "摘录已在存档中。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "method": "2026-11-20 新的支持与反证检索。",
+    "id": "txt-5386516eaf-001764572-001764828",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "observation_end": "2005-12-31",
+    "scope": "节约劳动的发明会大量并长期相继出现。",
+    "reason": "全球专利授权增到2004年60万件以上。同一页写1995到2005年的增长率很不均匀，有过负增长时期。授权不是每一件发明，负增长也不是发明停止。",
+    "limitation": "专利不是全部发明。",
+    "evidence_ids": [
+      "ev-r4-patents",
+      "ev-r4-patneg"
+    ],
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-r4-patents",
+        "quote": "The number of patents granted worldwide has increased steadily to more than 600,000 in 2004.",
+        "relation": "support",
+        "limitation": "数量增加。",
+        "observation_end": "2004-12-31",
+        "publication_date": "2006",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-r4-patneg",
+        "quote": "there have been periods of negative growth.",
+        "relation": "counter",
+        "limitation": "不是每年都增。",
+        "observation_end": "2005-12-31",
+        "publication_date": "2006",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": ""
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001764572-001764828",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "r4_execution": {
+    "new": true,
+    "executed_at": "2026-11-20T11:20:00Z",
+    "previous_verdict": "暂无法判断"
+  }
+}

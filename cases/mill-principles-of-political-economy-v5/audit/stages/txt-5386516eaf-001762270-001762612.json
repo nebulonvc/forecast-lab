@@ -1,0 +1,76 @@
+{
+  "id": "txt-5386516eaf-001762270-001762612",
+  "plan": {
+    "queries": [
+      {
+        "role": "support"
+      },
+      {
+        "role": "counter"
+      }
+    ],
+    "note": "r4 新执行。见 audit/search-returns-r4/manifest.json。不回填。"
+  },
+  "select": {
+    "urls": [],
+    "reason": "只保留摘录在存档中的来源。对象不符的不拿来计分。"
+  },
+  "assess": {
+    "id": "txt-5386516eaf-001762270-001762612",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "习惯上称为文明的国家，在一段时间内生产和人口都会继续逐渐增加。原文的未来量词是 for some time，不是永久。",
+    "reason": "日本人口在2011到2019年下降1%。这是出版后一百多年里的一段后期下降，不能代替“一段时间内继续增加”的全时段，也没有同时给出这些国家的生产。不能把这段下降写成全称已经失败。",
+    "limitation": "日本人口下降只作边界。",
+    "evidence_ids": [
+      "ev-r4-japan"
+    ],
+    "method": "按原文 for some time 和所有文明国家的生产与人口重审。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "for some time",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-r4-japan",
+        "quote": "in Japan it declined by 1% in 9 years (2011–2019)",
+        "relation": "boundary",
+        "limitation": "不是全时段，也不是生产。",
+        "observation_end": "2019-12-31",
+        "publication_date": "2023",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺1909年之后、作者称为文明的各国，在“一段时间”内生产和人口是否继续增加。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001762270-001762612",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "r4_execution": {
+    "new": true,
+    "executed_at": "2026-11-20T11:20:00Z",
+    "previous_verdict": "暂无法判断"
+  },
+  "revision_trail": {
+    "withdrawn_verdict": "错误",
+    "withdrawn_reason": "日本总人口在2011到2019年下降了1%。这与“所有这类国家的人口都增加”相反。生产是否同时下降，这条材料没有写。人口这一全称已经被一个反例打破。",
+    "why": "短期下降不是 for some time 的失败。"
+  }
+}

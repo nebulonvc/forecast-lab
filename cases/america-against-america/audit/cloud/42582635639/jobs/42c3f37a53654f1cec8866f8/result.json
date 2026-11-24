@@ -1,0 +1,618 @@
+{
+  "claim_id": "txt-1c4066fc0c-000187739-000187780",
+  "version": "search-verifier-v1",
+  "input_sha256": "b219c5b7fdece40500762f8037873a443478cca9b2dfa8461cd0c037cdb5a377",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000187739-000187780",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "以美国联邦K-12教育资助扩大为条件，观察其是否影响教育政策制定并削弱州/地方教育委员会权限；观察时段为1965年ESEA至2015年ESSA及后续实施（截止2026-11-09前可获取材料）。",
+    "reason": "原文条件为“联邦政府资助的日益扩大”，但所引材料主要证明NCLB以目标与制裁扩大联邦问责、ESSA后权限回州，未提供联邦K-12资助规模或占比扩大的连续证据，条件是否触发无法确认。后果方面亦无同对象、同指标的直接证据分别说明“影响教育政策制定”和“削弱州/地方教育委员会权限”哪些部分实现、哪些未实现。",
+    "limitation": "关键修订：不再把“联邦介入/问责扩张”当作“资助扩大”条件已满足，也不以混合方向判部分符合或趋势符合。材料多为制度史与法律文本，不能直接证明资助规模与权限削弱的因果。",
+    "evidence_ids": [
+      "prior-d8670c055a44d8ea5226",
+      "ev-4859ec0ff203be428d8691b5",
+      "ev-e973057534250b4a99501bec",
+      "ev-e297c073cca1e470bba50e7c",
+      "ev-2409d415bccb4670947f4198"
+    ],
+    "method": "从资金提供者的影响力推演教育治理权限变化",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-d8670c055a44d8ea5226",
+        "relation": "boundary",
+        "quote": "NCLB时期联邦以目标与制裁推动问责，2015年ESSA取代后更多权限回到州，教育部长不得规定部分指标权重与识别学校方法。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "该摘录同时显示联邦问责扩张与ESSA后权限回州，未提供资助规模数据，不能确认条件A已触发。"
+      },
+      {
+        "evidence_id": "ev-4859ec0ff203be428d8691b5",
+        "relation": "background",
+        "quote": "persistent racial and socioeconomic achievement gaps, global economic competition, and concerns about the performance of U.S. students on international tests have led to an increasingly active federal role in American public schools.",
+        "publication_date": "2015-12-01",
+        "observation_end": null,
+        "limitation": "摘要性表述，说明联邦角色更活跃，但未量化资助扩大，也未直接证明州/地方教育委员会权限削弱。"
+      },
+      {
+        "evidence_id": "ev-e973057534250b4a99501bec",
+        "relation": "counter",
+        "quote": "the involvement of federal policy making was substantially reduced when Congress passed the Every Student Succeeds Act in 2015.",
+        "publication_date": "2024-04-01",
+        "observation_end": null,
+        "limitation": "表明联邦介入在2015年后显著减少，构成对单向削弱判断的反向边界；未提供资助规模连续数据。"
+      },
+      {
+        "evidence_id": "ev-e297c073cca1e470bba50e7c",
+        "relation": "support",
+        "quote": "When passed in 2001, the No Child Left Behind Act represented the federal government’s most dramatic foray into the elementary and secondary public school policymaking terrain.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "法律评论，强调NCLB扩张联邦介入，但同文指出ESSA重置联邦主义边界；不能替代资助规模证据。"
+      },
+      {
+        "evidence_id": "ev-2409d415bccb4670947f4198",
+        "relation": "support",
+        "quote": "Expansion of Federal Power in American Education: Federal-State Relationships Under the No Child Left Behind Act, Year One",
+        "publication_date": "2004-02-01",
+        "observation_end": null,
+        "limitation": "标题与报告主题支持联邦权力扩张，但为NCLB第一年观察，不能代表长期趋势，也未提供资助规模数据。"
+      }
+    ],
+    "remaining_gap": "需补充联邦K-12资助规模或占比扩大的连续量化证据，以确认条件A是否触发；并需分别就“影响教育政策制定”和“削弱州/地方教育委员会权限”给出同对象、同条件、同指标的直接证据，说明后果B哪些部分实现、哪些未实现。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000187739-000187780",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以美国联邦K-12教育资助扩大为条件，观察联邦资助是否伴随对教育政策制定的影响及州/地方教育委员会权限削弱；观察时段为1965年ESEA至2015年ESSA及后续实施（截止2026-11-09前可获取材料）。",
+    "reason": "材料显示NCLB时期联邦通过目标与制裁推动问责、扩大联邦介入，与“资助扩大影响政策制定并压缩州/地方权限”方向一致；但ESSA（2015）又将大量权限交还州，联邦资助与地方权限并非单向削弱，故仅部分符合。",
+    "limitation": "原文为条件性趋势判断，未给出期限和量化指标；材料多为制度史与法律文本，不能直接证明资助规模与权限削弱的因果，且ESSA后出现反向调整。",
+    "evidence_ids": [
+      "prior-d8670c055a44d8ea5226",
+      "ev-4859ec0ff203be428d8691b5",
+      "ev-e973057534250b4a99501bec",
+      "ev-e297c073cca1e470bba50e7c",
+      "ev-2409d415bccb4670947f4198"
+    ],
+    "method": "从资金提供者的影响力推演教育治理权限变化",
+    "method_basis": "explicit",
+    "observation_end": "2026-11-09",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-d8670c055a44d8ea5226",
+        "relation": "support",
+        "quote": "NCLB时期联邦以目标与制裁推动问责，2015年ESSA取代后更多权限回到州，教育部长不得规定部分指标权重与识别学校方法。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "该摘录同时显示联邦问责扩张与ESSA后权限回州，支持方向有限且含反向信息。"
+      },
+      {
+        "evidence_id": "ev-4859ec0ff203be428d8691b5",
+        "relation": "support",
+        "quote": "persistent racial and socioeconomic achievement gaps, global economic competition, and concerns about the performance of U.S. students on international tests have led to an increasingly active federal role in American public schools.",
+        "publication_date": "2015-12-01",
+        "observation_end": null,
+        "limitation": "摘要性表述，未直接量化资助扩大与州/地方权限削弱的关系。"
+      },
+      {
+        "evidence_id": "ev-e973057534250b4a99501bec",
+        "relation": "boundary",
+        "quote": "the involvement of federal policy making was substantially reduced when Congress passed the Every Student Succeeds Act in 2015.",
+        "publication_date": "2024-04-01",
+        "observation_end": null,
+        "limitation": "表明联邦介入在2015年后显著减少，构成对单向削弱判断的反向边界。"
+      },
+      {
+        "evidence_id": "ev-e297c073cca1e470bba50e7c",
+        "relation": "support",
+        "quote": "When passed in 2001, the No Child Left Behind Act represented the federal government’s most dramatic foray into the elementary and secondary public school policymaking terrain.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "法律评论，强调NCLB扩张联邦介入，但同文指出ESSA重置联邦主义边界。"
+      },
+      {
+        "evidence_id": "ev-2409d415bccb4670947f4198",
+        "relation": "support",
+        "quote": "Expansion of Federal Power in American Education: Federal-State Relationships Under the No Child Left Behind Act, Year One",
+        "publication_date": "2004-02-01",
+        "observation_end": null,
+        "limitation": "标题与报告主题支持联邦权力扩张，但为NCLB第一年观察，不能代表长期趋势。"
+      }
+    ],
+    "remaining_gap": "缺少联邦K-12资助规模与占比的连续量化数据，以及州/地方教育委员会法定权限变化的系统指标；无法精确校准“资助扩大→权限削弱”的强度与因果。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-d8670c055a44d8ea5226",
+      "url": "https://www.ed.gov/sites/ed/files/2020/10/pathways_to_new_accountability_through_every_student_succeeds_act_0.pdf",
+      "title": "ev-lane3-education",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-education",
+      "archive_sha256": "7ccf2d730929185737d675a044837e872b0c1aa54bd7a51de580dd3537a54fb6",
+      "archive_path": "data/sources/lane3-education-cached.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-4859ec0ff203be428d8691b5",
+      "url": "https://www.rsfjournal.org/content/1/3/77",
+      "resolved_url": "https://www.rsfjournal.org/content/1/3/77",
+      "title": "Schooling the State: ESEA and the Evolution of the U.S. Department of Education | RSF: The Russell Sage Foundation Journal of the Social Sciences",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:27.041595+00:00",
+      "archive_sha256": "654b71524a4bc5641a0c8826e0a231dcd9195140b558a6a7b47ac90a0746dfa2",
+      "archive_path": "jobs/42c3f37a53654f1cec8866f8/654b71524a4bc5641a0c8826e0a231dcd9195140b558a6a7b47ac90a0746dfa2.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-03b50272d21f6dbad0875f5a",
+      "url": "https://www.congress.gov/crs-product/R45977",
+      "resolved_url": "https://www.congress.gov/crs-product/R45977",
+      "title": "The Elementary and Secondary Education Act (ESEA), as Amended by the Every Student Succeeds Act (ESSA): A Primer | Congress.gov | Library of Congress",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:27.041819+00:00",
+      "archive_sha256": "f7f3c6a8a5cb8859e9c208b39af8737b210d251fdc5b452f8f0f276160b6cc3f",
+      "archive_path": "jobs/42c3f37a53654f1cec8866f8/f7f3c6a8a5cb8859e9c208b39af8737b210d251fdc5b452f8f0f276160b6cc3f.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e973057534250b4a99501bec",
+      "url": "https://www.nber.org/system/files/working_papers/w32351/w32351.pdf",
+      "resolved_url": "https://www.nber.org/system/files/working_papers/w32351/w32351.pdf",
+      "title": "NATIONAL BUREAU OF ECONOMIC RESEARCH 1050 Massachusetts Avenue Cambridge, MA 02138 April 2024",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:27.042010+00:00",
+      "archive_sha256": "218f5e68c4e4d9c7464332e65c1cb0cf9072296dab1a768b287d8c0fa6fc6a81",
+      "archive_path": "jobs/42c3f37a53654f1cec8866f8/218f5e68c4e4d9c7464332e65c1cb0cf9072296dab1a768b287d8c0fa6fc6a81.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e297c073cca1e470bba50e7c",
+      "url": "https://columbialawreview.org/content/from-no-child-left-behind-to-every-student-succeeds-back-to-a-future-for-education-federalism/",
+      "resolved_url": "https://columbialawreview.org/content/from-no-child-left-behind-to-every-student-succeeds-back-to-a-future-for-education-federalism/",
+      "title": "From No Child Left Behind to Every Student Succeeds: Back To A Future for Education Federalism - Columbia Law Review",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:27.042248+00:00",
+      "archive_sha256": "410164e63aab1dc640304c70128504f92e4a59563c80baf7e6abe75ebf84edbe",
+      "archive_path": "jobs/42c3f37a53654f1cec8866f8/410164e63aab1dc640304c70128504f92e4a59563c80baf7e6abe75ebf84edbe.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-2409d415bccb4670947f4198",
+      "url": "https://civilrightsproject.ucla.edu/wp-content/uploads/2004/02/sunderman-kim-expansion-federal-power-american.pdf",
+      "resolved_url": "https://civilrightsproject.ucla.edu/wp-content/uploads/2004/02/sunderman-kim-expansion-federal-power-american.pdf",
+      "title": "Expansion of Federal Power in American Education:",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:37.775653+00:00",
+      "archive_sha256": "60ee7c850e04bb27a57fb3f5896b02008e6ae595355955db711942393185e762",
+      "archive_path": "jobs/42c3f37a53654f1cec8866f8/60ee7c850e04bb27a57fb3f5896b02008e6ae595355955db711942393185e762.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-0e4bd2fdfc5689d320c8b2fb",
+      "url": "https://www.ed.gov/media/document/state-and-local-implementation-of-no-child-left-behind-act-volume-ix-accountability-under-nclb-final-report-2010-106901.pdf",
+      "resolved_url": "https://www.ed.gov/media/document/state-and-local-implementation-of-no-child-left-behind-act-volume-ix-accountability-under-nclb-final-report-2010-106901.pdf",
+      "title": "State and Local Implementation of the No Child Left Behind Act (PDF)",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:37.775884+00:00",
+      "archive_sha256": "60daeac2454238eee98bdf2b6172f8d113bb18240e76b4b0285bdc6599b13d57",
+      "archive_path": "jobs/42c3f37a53654f1cec8866f8/60daeac2454238eee98bdf2b6172f8d113bb18240e76b4b0285bdc6599b13d57.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c44d6cf5684dfb1a5df423d4",
+      "url": "https://www.ed.gov/sites/ed/files/policy/elsec/leg/essa/essa-flexibilities-document-for-publication.pdf",
+      "resolved_url": "https://www.ed.gov/sites/ed/files/policy/elsec/leg/essa/essa-flexibilities-document-for-publication.pdf",
+      "title": "ESSA Flexibilities (PDF)",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:37.776079+00:00",
+      "archive_sha256": "8908d08a4268288664a448a312e3788b0cbc6e3c3beffd810ca091163075a5c8",
+      "archive_path": "jobs/42c3f37a53654f1cec8866f8/8908d08a4268288664a448a312e3788b0cbc6e3c3beffd810ca091163075a5c8.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "federal education funding share K-12 Elementary and Secondary Education Act conditions state local authority accountability history",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "ESSA 2015 restored state authority federal education funding increased local control evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "No Child Left Behind 2001 federal Title I funding conditions state accountability standards assessments school improvement reduced local control evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "ESSA 2015 federal education funding increased state flexibility local school district authority evidence CRS",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "需补充联邦K-12资助规模或占比扩大的连续量化证据，以确认条件A是否触发；并需分别就“影响教育政策制定”和“削弱州/地方教育委员会权限”给出同对象、同条件、同指标的直接证据，说明后果B哪些部分实现、哪些未实现。",
+  "source_statuses": [
+    {
+      "url": "https://www.rsfjournal.org/content/1/3/77",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.congress.gov/crs-product/R45977",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.nber.org/system/files/working_papers/w32351/w32351.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://columbialawreview.org/content/from-no-child-left-behind-to-every-student-succeeds-back-to-a-future-for-education-federalism/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://civilrightsproject.ucla.edu/wp-content/uploads/2004/02/sunderman-kim-expansion-federal-power-american.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.ed.gov/media/document/state-and-local-implementation-of-no-child-left-behind-act-volume-ix-accountability-under-nclb-final-report-2010-106901.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.ed.gov/sites/ed/files/policy/elsec/leg/essa/essa-flexibilities-document-for-publication.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "对象为美国联邦K-12教育资助扩大是否影响教育政策制定并削弱州政府与地方教育委员会权限；可观察口径包括联邦资助规模/占比、联邦附加问责条件、州与学区在标准、指标、干预和学校选择上的法定权限；反证为联邦资助扩大而地方权限未减，或联邦资助收缩而地方权限反受约束。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "d2d6030b5acd4ea66c4a08d09dd721273517f6a8b3264a7ecfc0f40e77cb97f2"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "0229a11b383c8a7000bbea75ea7b5fa5",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "2f49ca47388d2e5835d6c6449077913a",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "b89da0c5c8dc369a977079318b2bd1ba85399dda58ee874ad98ded4a21d14d52"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "094973a75f8c1c8c33ff1cca74824031",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "2f646a3547f7038b584135f54917894346e38111f17e4b1a7d0b8720b57c70e6"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f40c204d721c7152a656be4048991939",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "691e05c994dcc7582d89c1a044edfbfb",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "5d641486419950db2e4a0e51f80c0f2f80f4702da6bf1f38f1aa3a1558b3c460"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "b63fbc7f57320ba034867fab17f9dce8",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "8439008396d64974247275ed1f9f7e14f6d6b3b222b2b5730793efc97f9018ad"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "a874be1c7e4fbce83adc6abc2c545553f6b159bb86b5973cd5aad9c9519b3b41"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "0b062713c7b313842be175ad41a5796861e7872e90e9bee7fc4b75c2e8e0e310"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "3a6143fc3bd373932b40c90f3a8f2272ca617a6073f16f2672afad597e7d9cba"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000187739-000187780",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原文的条件是“联邦政府资助的日益扩大”，后果是影响教育政策制定并削弱州/地方教育委员会权限。建议把条件状态写成satisfied，但所引材料主要证明NCLB以目标与制裁扩大联邦问责，并未提供联邦K-12资助规模或占比扩大的连续证据；把“联邦介入/问责扩张”直接当作“资助扩大”这一触发条件已满足，混淆了条件与后果。",
+          "source_quote": "因为联\n邦政府的资助将会影响教育政策的制定，将会削弱州政府和地方教育委员会的权限。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议称NCLB时期“联邦通过目标与制裁推动问责、扩大联邦介入”与资助扩大方向一致，但所引材料没有给出联邦教育资助规模或占比扩大的数据，也没有直接证明州/地方教育委员会权限被削弱；ev-2409d415bccb4670947f4198仅以标题和报告主题支持联邦权力扩张，且为NCLB第一年观察，不能支撑长期趋势。",
+          "source_quote": "Expansion of Federal Power in American Education: Federal-State Relationships Under the No Child Left Behind Act, Year One",
+          "evidence_id": "ev-2409d415bccb4670947f4198",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议判“部分符合”并设trend_aligned=true，但理由只说明NCLB时期方向一致、ESSA后权限回州，属于混合方向；没有指出后果B（影响教育政策制定、削弱州/地方教育委员会权限）哪些具体部分实现、哪些未实现及其直接证据。按口径，混合方向不能直接设trend_aligned=true，也不能仅凭前提A的指标有升有降就判部分符合。",
+          "source_quote": "材料显示NCLB时期联邦通过目标与制裁推动问责、扩大联邦介入，与“资助扩大影响政策制定并压缩州/地方权限”方向一致；但ESSA（2015）又将大量权限交还州，联邦资助与地方权限并非单向削弱，故仅部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充联邦K-12资助规模或占比扩大的连续量化证据，以确认条件A是否触发；并需分别就“影响教育政策制定”和“削弱州/地方教育委员会权限”给出同对象、同条件、同指标的直接证据，说明后果B哪些部分实现、哪些未实现，才能重新判定部分符合或趋势符合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000187739-000187780",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000187739-000187780",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以美国联邦K-12教育资助扩大为条件，观察联邦资助是否伴随对教育政策制定的影响及州/地方教育委员会权限削弱；观察时段为1965年ESEA至2015年ESSA及后续实施（截止2026-11-09前可获取材料）。",
+      "reason": "材料显示NCLB时期联邦通过目标与制裁推动问责、扩大联邦介入，与“资助扩大影响政策制定并压缩州/地方权限”方向一致；但ESSA（2015）又将大量权限交还州，联邦资助与地方权限并非单向削弱，故仅部分符合。",
+      "limitation": "原文为条件性趋势判断，未给出期限和量化指标；材料多为制度史与法律文本，不能直接证明资助规模与权限削弱的因果，且ESSA后出现反向调整。",
+      "evidence_ids": [
+        "prior-d8670c055a44d8ea5226",
+        "ev-4859ec0ff203be428d8691b5",
+        "ev-e973057534250b4a99501bec",
+        "ev-e297c073cca1e470bba50e7c",
+        "ev-2409d415bccb4670947f4198"
+      ],
+      "method": "从资金提供者的影响力推演教育治理权限变化",
+      "method_basis": "explicit",
+      "observation_end": "2026-11-09",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-d8670c055a44d8ea5226",
+          "relation": "support",
+          "quote": "NCLB时期联邦以目标与制裁推动问责，2015年ESSA取代后更多权限回到州，教育部长不得规定部分指标权重与识别学校方法。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "该摘录同时显示联邦问责扩张与ESSA后权限回州，支持方向有限且含反向信息。"
+        },
+        {
+          "evidence_id": "ev-4859ec0ff203be428d8691b5",
+          "relation": "support",
+          "quote": "persistent racial and socioeconomic achievement gaps, global economic competition, and concerns about the performance of U.S. students on international tests have led to an increasingly active federal role in American public schools.",
+          "publication_date": "2015-12-01",
+          "observation_end": null,
+          "limitation": "摘要性表述，未直接量化资助扩大与州/地方权限削弱的关系。"
+        },
+        {
+          "evidence_id": "ev-e973057534250b4a99501bec",
+          "relation": "boundary",
+          "quote": "the involvement of federal policy making was substantially reduced when Congress passed the Every Student Succeeds Act in 2015.",
+          "publication_date": "2024-04-01",
+          "observation_end": null,
+          "limitation": "表明联邦介入在2015年后显著减少，构成对单向削弱判断的反向边界。"
+        },
+        {
+          "evidence_id": "ev-e297c073cca1e470bba50e7c",
+          "relation": "support",
+          "quote": "When passed in 2001, the No Child Left Behind Act represented the federal government’s most dramatic foray into the elementary and secondary public school policymaking terrain.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "法律评论，强调NCLB扩张联邦介入，但同文指出ESSA重置联邦主义边界。"
+        },
+        {
+          "evidence_id": "ev-2409d415bccb4670947f4198",
+          "relation": "support",
+          "quote": "Expansion of Federal Power in American Education: Federal-State Relationships Under the No Child Left Behind Act, Year One",
+          "publication_date": "2004-02-01",
+          "observation_end": null,
+          "limitation": "标题与报告主题支持联邦权力扩张，但为NCLB第一年观察，不能代表长期趋势。"
+        }
+      ],
+      "remaining_gap": "缺少联邦K-12资助规模与占比的连续量化数据，以及州/地方教育委员会法定权限变化的系统指标；无法精确校准“资助扩大→权限削弱”的强度与因果。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000187739-000187780",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "以美国联邦K-12教育资助扩大为条件，观察其是否影响教育政策制定并削弱州/地方教育委员会权限；观察时段为1965年ESEA至2015年ESSA及后续实施（截止2026-11-09前可获取材料）。",
+      "reason": "原文条件为“联邦政府资助的日益扩大”，但所引材料主要证明NCLB以目标与制裁扩大联邦问责、ESSA后权限回州，未提供联邦K-12资助规模或占比扩大的连续证据，条件是否触发无法确认。后果方面亦无同对象、同指标的直接证据分别说明“影响教育政策制定”和“削弱州/地方教育委员会权限”哪些部分实现、哪些未实现。",
+      "limitation": "关键修订：不再把“联邦介入/问责扩张”当作“资助扩大”条件已满足，也不以混合方向判部分符合或趋势符合。材料多为制度史与法律文本，不能直接证明资助规模与权限削弱的因果。",
+      "evidence_ids": [
+        "prior-d8670c055a44d8ea5226",
+        "ev-4859ec0ff203be428d8691b5",
+        "ev-e973057534250b4a99501bec",
+        "ev-e297c073cca1e470bba50e7c",
+        "ev-2409d415bccb4670947f4198"
+      ],
+      "method": "从资金提供者的影响力推演教育治理权限变化",
+      "method_basis": "explicit",
+      "observation_end": null,
+      "future_time_text": "",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-d8670c055a44d8ea5226",
+          "relation": "boundary",
+          "quote": "NCLB时期联邦以目标与制裁推动问责，2015年ESSA取代后更多权限回到州，教育部长不得规定部分指标权重与识别学校方法。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "该摘录同时显示联邦问责扩张与ESSA后权限回州，未提供资助规模数据，不能确认条件A已触发。"
+        },
+        {
+          "evidence_id": "ev-4859ec0ff203be428d8691b5",
+          "relation": "background",
+          "quote": "persistent racial and socioeconomic achievement gaps, global economic competition, and concerns about the performance of U.S. students on international tests have led to an increasingly active federal role in American public schools.",
+          "publication_date": "2015-12-01",
+          "observation_end": null,
+          "limitation": "摘要性表述，说明联邦角色更活跃，但未量化资助扩大，也未直接证明州/地方教育委员会权限削弱。"
+        },
+        {
+          "evidence_id": "ev-e973057534250b4a99501bec",
+          "relation": "counter",
+          "quote": "the involvement of federal policy making was substantially reduced when Congress passed the Every Student Succeeds Act in 2015.",
+          "publication_date": "2024-04-01",
+          "observation_end": null,
+          "limitation": "表明联邦介入在2015年后显著减少，构成对单向削弱判断的反向边界；未提供资助规模连续数据。"
+        },
+        {
+          "evidence_id": "ev-e297c073cca1e470bba50e7c",
+          "relation": "support",
+          "quote": "When passed in 2001, the No Child Left Behind Act represented the federal government’s most dramatic foray into the elementary and secondary public school policymaking terrain.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "法律评论，强调NCLB扩张联邦介入，但同文指出ESSA重置联邦主义边界；不能替代资助规模证据。"
+        },
+        {
+          "evidence_id": "ev-2409d415bccb4670947f4198",
+          "relation": "support",
+          "quote": "Expansion of Federal Power in American Education: Federal-State Relationships Under the No Child Left Behind Act, Year One",
+          "publication_date": "2004-02-01",
+          "observation_end": null,
+          "limitation": "标题与报告主题支持联邦权力扩张，但为NCLB第一年观察，不能代表长期趋势，也未提供资助规模数据。"
+        }
+      ],
+      "remaining_gap": "需补充联邦K-12资助规模或占比扩大的连续量化证据，以确认条件A是否触发；并需分别就“影响教育政策制定”和“削弱州/地方教育委员会权限”给出同对象、同条件、同指标的直接证据，说明后果B哪些部分实现、哪些未实现。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象为美国联邦教育资助扩大对教育政策制定及州/地方教育委员会权限的影响；可观察口径为联邦K-12资助规模与占比变化、联邦附加条件/问责要求、州与学区在课程标准、指标、干预和学校选择上的法定权限；反证包括联邦资助扩大而地方权限未减、或联邦资助收缩而地方权限反受约束。",
+  "elapsed_seconds": 45.489,
+  "completed_at": "2026-11-09T08:01:01.760113+00:00"
+}

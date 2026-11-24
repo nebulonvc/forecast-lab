@@ -1,0 +1,41 @@
+{
+  "id": "txt-5386516eaf-001764829-001765029",
+  "assessment": {
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "id": "txt-5386516eaf-001764829-001765029",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "observation_end": "1990-12-31",
+    "scope": "文明社会中人身与财产的安全继续增加。",
+    "reason": "九国平均凶杀率从1880年代约2.4降到1950年代约0.8。英格兰和威尔士的记录犯罪从1960年代持续升到1990年的450万。人身安全有长期改善，记录犯罪在后一段上升。",
+    "limitation": "上升的那句是记录犯罪总量。财产犯罪在同一篇里被讨论，但这句没有单独给出财产犯罪序列。",
+    "evidence_ids": [
+      "ev-r4b-eisner",
+      "ev-r4b-crime"
+    ],
+    "method": "两份文件分别来自支持和反证检索。",
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-r4b-eisner",
+        "quote": "the average homicide rate is about 2.4 per 100,000 in the 1880s and drops to about 0.8 in the 1950s.",
+        "relation": "support",
+        "limitation": "人身凶杀下降。",
+        "observation_end": "1959-12-31",
+        "publication_date": "2008"
+      },
+      {
+        "evidence_id": "ev-r4b-crime",
+        "quote": "Crime had been rising steadily from the 1960s throughout the 1970s and into the first half of the 1980s. In 1979 there were 2.5m recorded crimes, which increased to 4.5m by 1990",
+        "relation": "counter",
+        "limitation": "记录犯罪上升。",
+        "observation_end": "1990-12-31",
+        "publication_date": null
+      }
+    ],
+    "remaining_gap": ""
+  }
+}

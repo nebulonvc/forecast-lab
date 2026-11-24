@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000132687-000132980",
+  "plan": {
+    "object": "生活在君主之下的腐化城市。不是任何曾经有君主的国家。",
+    "condition": "corrupted city living under a prince。even were the prince and all his line exterminated 是加强句，不是必须先灭门才适用；但 corrupted 不能省。",
+    "quantifier": "can never recover its freedom ... until a new lord be established。",
+    "result": "不能恢复自由，直到确立新主人；一位君主会被另一位替换。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "一个被正文称为腐化、且生活在君主之下的城市，在没有新主人的情况下恢复并保持了自由。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "Naples 1647 Masaniello revolt republic ended new Spanish viceroy",
+      "counter_query": "Dutch Republic after Habsburg rule remained a republic without a new prince 1581 1795"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://slantchev.ucsd.edu/courses/ps143a/09%20The%20Dutch%20Republic.pdf"],
+    "dropped": "那不勒斯1647至1648年的短命共和国检索摘要没有存成可引用的完整正文，且没有称那不勒斯为腐化城市。不用摘要计分。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-slantchev-dutch-1588"],
+    "scope": "对象必须是腐化而处于君主之下的城市。没有新主人就恢复自由，才会直接反驳 never ... until a new lord。",
+    "reason": "课程讲义写联省在找不到新保护者之后，于1588年自己成为共和国。这像是没有新主人的自由，但讲义没有把荷兰写成腐化的城市，菲利普二世的家族也没有被消灭。因此它不满足 corrupted，也不能拿来把 never 判成错误。决定性缺口是：存档正文没有一个被标成腐化、又生活在君主之下的城市，以及它后来是否在没有新主人时保持自由。",
+    "limitation": "讲义没有单独的出版日。1588是正文里的年，没有日。",
+    "method": "先核对腐化这个必要条件，再看没有新主人的自由是否出现。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "pass",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "荷兰成为共和国不能代替腐化城市这个条件。条件未通过，不计分。"
+  }
+}

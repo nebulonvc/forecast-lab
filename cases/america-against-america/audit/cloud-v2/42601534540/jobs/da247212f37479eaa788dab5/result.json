@@ -1,0 +1,667 @@
+{
+  "claim_id": "txt-1c4066fc0c-000074650-000074679",
+  "version": "search-verifier-v2",
+  "input_sha256": "e3ed9f4bd28b269f17afde0a237ad799e3de5e3f01a65f8847b32dee7518c328",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000074650-000074679",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "对象为美国政治系统；观察口径为1991年前后至2026-11-09，孤独/社会隔离是否被美国官方公共卫生与治理机构持续认定为重大公共负担并提出政策行动；不要求逐年增加，不以独居等同孤独，不验证个人主义导致孤独的因果解释。",
+    "reason": "自动复核未确认主要判断：建议把观察窗口写成“1991年前后至2026-11-09”，但实际观察终点只到2025-06-26，且所引官方认定集中在2023年；1991年至2023年间没有连续记录，不能据此确认“持续”覆盖整个窗口。; 原文“已经成为……一大负担，并且还将继续如此”的主要可检验结果是负担在说话时已存在并延续；现有证据只覆盖2023—2025年的官方认定，缺少1991年前后至2023年间的连续同口径记录，无法确认“持续”覆盖整个观察窗口，因此判“正确”过强，应保留为具体未定或限定为较晚时点已获支持。",
+    "limitation": "官方认定可支持“负担持续存在”，但不能直接证明孤独是政治系统行为的基本动因；2025年评论指出孤独比例长期稳定、并非“流行病”，且美国50至80岁成年人缺乏陪伴比例先升后降，故不证明负担逐年加重，仅作为范围限制。",
+    "evidence_ids": [
+      "prior-0d49951ce718fab39802",
+      "ev-2c1ae3a121b6a2bc4f4e48d9",
+      "ev-7e5bfd54d4b722b3ae6e7455"
+    ],
+    "method": "从个人主义、私域保护及社会流动形成的孤独机制推断治理负担持续",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "还将继续",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-0d49951ce718fab39802",
+        "relation": "support",
+        "quote": "美国卫生总监2023社会连接报告认为孤独与隔离造成公共卫生和社会负担；疫情前已有约一半成年人报告孤独，报告同时区分独居、孤独和社会隔离。",
+        "publication_date": "2023-05-02",
+        "observation_end": "2023-05-02",
+        "limitation": "该摘录为已登记摘要，仅证明官方认定公共卫生与社会负担，不证明政治系统动因或负担逐年加重。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-2c1ae3a121b6a2bc4f4e48d9",
+        "relation": "support",
+        "quote": "Today, United States Surgeon General Dr. Vivek Murthy released a new Surgeon General Advisory calling attention to the public health crisis of loneliness, isolation, and lack of connection in our country.",
+        "publication_date": "2023-05-03",
+        "observation_end": "2023-05-03",
+        "limitation": "新闻稿证明官方将孤独列为公共卫生危机并提出政策框架，但不等于证明孤独是政治系统基本动因，也不证明趋势持续恶化。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-7e5bfd54d4b722b3ae6e7455",
+        "relation": "boundary",
+        "quote": "Loneliness is a problem, even if it is not an epidemic.",
+        "publication_date": "2025-06-26",
+        "observation_end": "2025-06-26",
+        "limitation": "该评论承认孤独是真实问题、需要长期应对，支持负担持续存在；但同时指出比例长期稳定、非流行病，且美国50至80岁成年人缺乏陪伴比例先升后降，构成对“持续加重”方向的边界，不构成对“负担持续”的反驳。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "需补充1991年前后至2023年间连续、同口径的美国官方或治理机构对孤独作为重大公共负担的认定与政策行动记录，才能确认“持续”覆盖整个观察窗口；否则应把结论改为有明确时点限定的未定，而非“正确”。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000074650-000074679",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象为美国政治系统；观察口径为1991年前后至2026-11-09，孤独/社会隔离是否被美国官方公共卫生与治理机构持续认定为重大公共负担并提出政策行动；不要求逐年增加，不以独居等同孤独，不验证个人主义导致孤独的因果解释。",
+    "reason": "原文判断孤独已成为美国政治系统一大负担并将继续如此。2023年美国卫生总监发布社会连接报告与新闻稿，将孤独和隔离称为公共卫生危机并推出国家战略框架，显示该负担在观察窗口内被官方持续认定；但2025年评论指出孤独比例长期稳定、并非“流行病”，对“持续加重”的方向构成边界。",
+    "limitation": "官方认定可支持“负担持续存在”，但不能直接证明孤独是政治系统行为的基本动因，也不能证明负担逐年加重；2025年评论对“流行病”叙事提出反证，故仅判部分符合。",
+    "evidence_ids": [
+      "prior-0d49951ce718fab39802",
+      "ev-2c1ae3a121b6a2bc4f4e48d9",
+      "ev-7e5bfd54d4b722b3ae6e7455"
+    ],
+    "method": "从个人主义、私域保护及社会流动形成的孤独机制推断治理负担持续",
+    "method_basis": "inferred",
+    "observation_end": "2025-06-26",
+    "future_time_text": "还将继续",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-0d49951ce718fab39802",
+        "relation": "support",
+        "quote": "美国卫生总监2023社会连接报告认为孤独与隔离造成公共卫生和社会负担；疫情前已有约一半成年人报告孤独，报告同时区分独居、孤独和社会隔离。",
+        "publication_date": "2023-05-02",
+        "observation_end": "2023-05-02",
+        "limitation": "该摘录为已登记摘要，仅证明官方认定公共卫生与社会负担，不证明政治系统动因或负担逐年加重。"
+      },
+      {
+        "evidence_id": "ev-2c1ae3a121b6a2bc4f4e48d9",
+        "relation": "support",
+        "quote": "Today, United States Surgeon General Dr. Vivek Murthy released a new Surgeon General Advisory calling attention to the public health crisis of loneliness, isolation, and lack of connection in our country.",
+        "publication_date": "2023-05-03",
+        "observation_end": "2023-05-03",
+        "limitation": "新闻稿证明官方将孤独列为公共卫生危机并提出政策框架，但不等于证明孤独是政治系统基本动因，也不证明趋势持续恶化。"
+      },
+      {
+        "evidence_id": "ev-7e5bfd54d4b722b3ae6e7455",
+        "relation": "counter",
+        "quote": "But these are different things, and the proportion of people feeling lonely is stable over time.",
+        "publication_date": "2025-06-26",
+        "observation_end": "2025-06-26",
+        "limitation": "该评论反驳“孤独流行病”叙事，指出比例长期稳定；但未否认孤独是真实问题或官方治理负担，故只构成对“持续加重”方向的边界。"
+      }
+    ],
+    "remaining_gap": "缺少1991年前后至2023年间连续、同口径的美国官方孤独负担认定与政策行动记录，无法确认“持续”覆盖整个观察窗口；也缺少孤独作为政治系统基本动因的直接证据。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-0d49951ce718fab39802",
+      "url": "https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf",
+      "title": "ev-loneliness",
+      "published_date": "2023-05-02",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2023-05-02",
+        "latest": "2023-05-02"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-loneliness",
+      "archive_sha256": "b48a67eaa668c2ef42375f78381f1ecbbdbab424077064b2af07fad66a38f2d6",
+      "archive_path": "data/sources/web-loneliness.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-2c1ae3a121b6a2bc4f4e48d9",
+      "url": "https://www.hhs.gov/about/news/2023/05/03/new-surgeon-general-advisory-raises-alarm-about-devastating-impact-epidemic-loneliness-isolation-united-states.html",
+      "resolved_url": "https://www.hhs.gov/about/news/2023/05/03/new-surgeon-general-advisory-raises-alarm-about-devastating-impact-epidemic-loneliness-isolation-united-states.html",
+      "title": "New Surgeon General Advisory Raises Alarm about the Devastating Impact of the Epidemic of Loneliness and Isolation in the United States",
+      "published_date": "2023-05-03",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2023-05-03",
+        "latest": "2023-05-03"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:16.431854+00:00",
+      "archive_sha256": "5ea96ed291dce0db0da7097083d2f6caebb0601fb792505a4e9cb1c6281e3134",
+      "archive_path": "jobs/da247212f37479eaa788dab5/5ea96ed291dce0db0da7097083d2f6caebb0601fb792505a4e9cb1c6281e3134.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-043f99003040afe70bf57524",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40232791/",
+      "resolved_url": "https://pubmed.ncbi.nlm.nih.gov/40232791/",
+      "title": "Social connection or loneliness? How we frame the issue may significantly impact public policy - PubMed",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:16.431977+00:00",
+      "archive_sha256": "f0ee46caa5e587c10f8d7f784d2458fbcefb3e6103df699a266739e69a1af261",
+      "archive_path": "jobs/da247212f37479eaa788dab5/f0ee46caa5e587c10f8d7f784d2458fbcefb3e6103df699a266739e69a1af261.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-7e5bfd54d4b722b3ae6e7455",
+      "url": "https://theconversation.com/there-is-no-loneliness-epidemic-so-why-do-we-keep-talking-as-if-there-is-259072",
+      "resolved_url": "https://theconversation.com/there-is-no-loneliness-epidemic-so-why-do-we-keep-talking-as-if-there-is-259072",
+      "title": "There is no loneliness epidemic – so why do we keep talking as if there is?",
+      "published_date": "2025-06-26",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-06-26",
+        "latest": "2025-06-26"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:16.432071+00:00",
+      "archive_sha256": "bac0d89dafb7f971305c29cff135245995d2853c53873b1c38ff422b427957bb",
+      "archive_path": "jobs/da247212f37479eaa788dab5/bac0d89dafb7f971305c29cff135245995d2853c53873b1c38ff422b427957bb.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "US Surgeon General advisory loneliness social isolation public health burden 2023 site:hhs.gov",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "loneliness not a public health crisis United States critique policy burden evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "US Surgeon General advisory loneliness social isolation public health burden 2023 site:hhs.gov",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "loneliness not a public health crisis United States critique policy burden evidence",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "需补充1991年前后至2023年间连续、同口径的美国官方或治理机构对孤独作为重大公共负担的认定与政策行动记录，才能确认“持续”覆盖整个观察窗口；否则应把结论改为有明确时点限定的未定，而非“正确”。",
+  "source_statuses": [
+    {
+      "url": "https://www.hhs.gov/about/news/2023/05/03/new-surgeon-general-advisory-raises-alarm-about-devastating-impact-epidemic-loneliness-isolation-united-states.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40232791/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://theconversation.com/there-is-no-loneliness-epidemic-so-why-do-we-keep-talking-as-if-there-is-259072",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "对象为美国政治系统；可观察口径为1991年前后至截止日前，孤独/社会隔离是否被美国官方公共卫生与治理机构持续认定为重大公共负担并提出政策行动；不要求逐年增加，不以独居等同孤独，也不验证作者关于个人主义与资本主义导致孤独的因果解释。反证包括：官方或研究记录显示孤独并非持续治理负担、相关认定仅为个别时点或已被否定。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 9,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "d20dcf55694271f093b837e56c6a9157176e16ecae264ac96f893f705bf963dd"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "d91e892ef73c0e4a1fd4f263cf8e784e",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b3944382d9254e2467dc841ae6de42b0",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "35a0a4a15f8288896aadcf23de9855e262fae2dc75b40f146d8ce3cc9a6bc36f"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "7d9528321bcebed33efa34b132f9822f",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "10c4cd2f70a93fe5e45d05d58952ea58a8463d2d9de093f2dc6f3f84ca2d4d3b"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "d91e892ef73c0e4a1fd4f263cf8e784e",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b3944382d9254e2467dc841ae6de42b0",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "ed57c2c2a0852e5bc246951527da3f7e6a9f57c3931d06547c53e08d8425e9e2"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "dc3ba31c1c4a8b4c200555112e95dddfcb6caf692ede686b86a437b55264f694",
+      "validation_error": "evidence_quote_not_in_shown_source"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "98270c4fdd5d01462248ceaaff28287337c422fe57576b61eaa78dcd01f4458d"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "8da158545bbdc29b7f520f87d0dec65c5049e19e757358232864118617dfe8b9"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "d839b19226382af1e2297c798f022421331873151504fe669981e32883d845fe"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "34ecad5b6b57fa9321076413e8927a0c99dd052e3ebe45f2acf46882ff1b9ace"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "dc3ba31c1c4a8b4c200555112e95dddfcb6caf692ede686b86a437b55264f694",
+      "validation_error": "evidence_quote_not_in_shown_source"
+    }
+  ],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "正确",
+      "mechanical_verdict": "正确",
+      "warnings": [],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-0d49951ce718fab39802",
+        "source_bytes": 196,
+        "shown_bytes": 196,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-2c1ae3a121b6a2bc4f4e48d9",
+        "source_bytes": 7717,
+        "shown_bytes": 5750,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-043f99003040afe70bf57524",
+        "source_bytes": 1179,
+        "shown_bytes": 1179,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-7e5bfd54d4b722b3ae6e7455",
+        "source_bytes": 4683,
+        "shown_bytes": 4683,
+        "context_truncated": false
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-0d49951ce718fab39802",
+        "source_bytes": 196,
+        "shown_bytes": 196,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-2c1ae3a121b6a2bc4f4e48d9",
+        "source_bytes": 7717,
+        "shown_bytes": 5750,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-043f99003040afe70bf57524",
+        "source_bytes": 1179,
+        "shown_bytes": 1179,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-7e5bfd54d4b722b3ae6e7455",
+        "source_bytes": 4683,
+        "shown_bytes": 4683,
+        "context_truncated": false
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-0d49951ce718fab39802",
+        "source_bytes": 196,
+        "shown_bytes": 196,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-2c1ae3a121b6a2bc4f4e48d9",
+        "source_bytes": 7717,
+        "shown_bytes": 5750,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-043f99003040afe70bf57524",
+        "source_bytes": 1179,
+        "shown_bytes": 1179,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-7e5bfd54d4b722b3ae6e7455",
+        "source_bytes": 4683,
+        "shown_bytes": 4683,
+        "context_truncated": false
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-0d49951ce718fab39802",
+        "source_bytes": 196,
+        "shown_bytes": 196,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-2c1ae3a121b6a2bc4f4e48d9",
+        "source_bytes": 7717,
+        "shown_bytes": 5750,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-043f99003040afe70bf57524",
+        "source_bytes": 1179,
+        "shown_bytes": 1179,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-7e5bfd54d4b722b3ae6e7455",
+        "source_bytes": 4683,
+        "shown_bytes": 4683,
+        "context_truncated": false
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000074650-000074679",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "fail",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "counterevidence",
+          "reason": "2025年评论指出美国50至80岁成年人缺乏陪伴的比例从2018年34%升至疫情期间42%，2024年回落至33%，即孤独指标在观察窗口内先升后降、并未持续恶化。建议只引用了“比例长期稳定”一句，未纳入这一同对象、同指标、同时期的反向数据，导致对“持续加重”方向的边界判断不完整。",
+          "quote_ref": "q6",
+          "source_quote": "But these are different things, and the proportion of people feeling lonely is stable over time.",
+          "evidence_id": "ev-7e5bfd54d4b722b3ae6e7455",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "原文的核心结果是“孤独已成为政治系统一大负担，并且还将继续如此”，并未提出“持续加重”或“逐年恶化”的方向性预测。建议把2025年评论对“流行病/持续加重”叙事的反驳当作对原文的边界，并据此判为部分符合、trend_aligned=true，实际上是用原文未主张的“加重趋势”替换了“负担持续存在”这一结果。按现有材料，官方2023年认定与2025年评论均支持孤独仍是真实治理负担，主要结果符合，应判为正确；评论只能作为限制，不能降为部分符合。",
+          "quote_ref": "q3",
+          "source_quote": "原文判断孤独已成为美国政治系统一大负担并将继续如此。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需将结论修正为“正确”：以官方2023年认定及2025年评论中“孤独仍是真实问题、需要长期应对”支持负担持续存在；把“比例稳定、非流行病、先升后降”写入limitation，说明其不构成对“负担持续”的反驳，并删除trend_aligned=true及“持续加重”的边界表述。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000074650-000074679",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "fail",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "time_alignment",
+          "reason": "建议把观察窗口写成“1991年前后至2026-11-09”，但实际观察终点只到2025-06-26，且所引官方认定集中在2023年；1991年至2023年间没有连续记录，不能据此确认“持续”覆盖整个窗口。",
+          "quote_ref": "q2",
+          "source_quote": "对象为美国政治系统；观察口径为1991年前后至2026-11-09，孤独/社会隔离是否被美国官方公共卫生与治理机构持续认定为重大公共负担并提出政策行动；不要求逐年增加，不以独居等同孤独，不验证个人主义导致孤独的因果解释。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "原文“已经成为……一大负担，并且还将继续如此”的主要可检验结果是负担在说话时已存在并延续；现有证据只覆盖2023—2025年的官方认定，缺少1991年前后至2023年间的连续同口径记录，无法确认“持续”覆盖整个观察窗口，因此判“正确”过强，应保留为具体未定或限定为较晚时点已获支持。",
+          "quote_ref": "q3",
+          "source_quote": "原文判断孤独已成为美国政治系统一大负担并将继续如此。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充1991年前后至2023年间连续、同口径的美国官方或治理机构对孤独作为重大公共负担的认定与政策行动记录，才能确认“持续”覆盖整个观察窗口；否则应把结论改为有明确时点限定的未定，而非“正确”。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000074650-000074679",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象为美国政治系统；观察口径为1991年前后至2026-11-09，孤独/社会隔离是否被美国官方公共卫生与治理机构持续认定为重大公共负担并提出政策行动；不要求逐年增加，不以独居等同孤独，不验证个人主义导致孤独的因果解释。",
+      "reason": "原文判断孤独已成为美国政治系统一大负担并将继续如此。2023年美国卫生总监发布社会连接报告与新闻稿，将孤独和隔离称为公共卫生危机并推出国家战略框架，显示该负担在观察窗口内被官方持续认定；但2025年评论指出孤独比例长期稳定、并非“流行病”，对“持续加重”的方向构成边界。",
+      "limitation": "官方认定可支持“负担持续存在”，但不能直接证明孤独是政治系统行为的基本动因，也不能证明负担逐年加重；2025年评论对“流行病”叙事提出反证，故仅判部分符合。",
+      "evidence_ids": [
+        "prior-0d49951ce718fab39802",
+        "ev-2c1ae3a121b6a2bc4f4e48d9",
+        "ev-7e5bfd54d4b722b3ae6e7455"
+      ],
+      "method": "从个人主义、私域保护及社会流动形成的孤独机制推断治理负担持续",
+      "method_basis": "inferred",
+      "observation_end": "2025-06-26",
+      "future_time_text": "还将继续",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-0d49951ce718fab39802",
+          "relation": "support",
+          "quote": "美国卫生总监2023社会连接报告认为孤独与隔离造成公共卫生和社会负担；疫情前已有约一半成年人报告孤独，报告同时区分独居、孤独和社会隔离。",
+          "publication_date": "2023-05-02",
+          "observation_end": "2023-05-02",
+          "limitation": "该摘录为已登记摘要，仅证明官方认定公共卫生与社会负担，不证明政治系统动因或负担逐年加重。"
+        },
+        {
+          "evidence_id": "ev-2c1ae3a121b6a2bc4f4e48d9",
+          "relation": "support",
+          "quote": "Today, United States Surgeon General Dr. Vivek Murthy released a new Surgeon General Advisory calling attention to the public health crisis of loneliness, isolation, and lack of connection in our country.",
+          "publication_date": "2023-05-03",
+          "observation_end": "2023-05-03",
+          "limitation": "新闻稿证明官方将孤独列为公共卫生危机并提出政策框架，但不等于证明孤独是政治系统基本动因，也不证明趋势持续恶化。"
+        },
+        {
+          "evidence_id": "ev-7e5bfd54d4b722b3ae6e7455",
+          "relation": "counter",
+          "quote": "But these are different things, and the proportion of people feeling lonely is stable over time.",
+          "publication_date": "2025-06-26",
+          "observation_end": "2025-06-26",
+          "limitation": "该评论反驳“孤独流行病”叙事，指出比例长期稳定；但未否认孤独是真实问题或官方治理负担，故只构成对“持续加重”方向的边界。"
+        }
+      ],
+      "remaining_gap": "缺少1991年前后至2023年间连续、同口径的美国官方孤独负担认定与政策行动记录，无法确认“持续”覆盖整个观察窗口；也缺少孤独作为政治系统基本动因的直接证据。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000074650-000074679",
+      "inclusion": "forecast",
+      "verdict": "正确",
+      "basis": "observed_window",
+      "scope": "对象为美国政治系统；观察口径为1991年前后至2026-11-09，孤独/社会隔离是否被美国官方公共卫生与治理机构持续认定为重大公共负担并提出政策行动；不要求逐年增加，不以独居等同孤独，不验证个人主义导致孤独的因果解释。",
+      "reason": "原文判断孤独已成为美国政治系统一大负担并将继续如此。2023年美国卫生总监报告与新闻稿将孤独和隔离称为公共卫生危机并推出国家战略框架，2025年评论亦承认孤独是真实问题、需要长期应对，支持该负担在观察窗口内持续存在。",
+      "limitation": "官方认定可支持“负担持续存在”，但不能直接证明孤独是政治系统行为的基本动因；2025年评论指出孤独比例长期稳定、并非“流行病”，且美国50至80岁成年人缺乏陪伴比例先升后降，故不证明负担逐年加重，仅作为范围限制。",
+      "evidence_ids": [
+        "prior-0d49951ce718fab39802",
+        "ev-2c1ae3a121b6a2bc4f4e48d9",
+        "ev-7e5bfd54d4b722b3ae6e7455"
+      ],
+      "method": "从个人主义、私域保护及社会流动形成的孤独机制推断治理负担持续",
+      "method_basis": "inferred",
+      "observation_end": "2025-06-26",
+      "future_time_text": "还将继续",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-0d49951ce718fab39802",
+          "relation": "support",
+          "quote": "美国卫生总监2023社会连接报告认为孤独与隔离造成公共卫生和社会负担；疫情前已有约一半成年人报告孤独，报告同时区分独居、孤独和社会隔离。",
+          "publication_date": "2023-05-02",
+          "observation_end": "2023-05-02",
+          "limitation": "该摘录为已登记摘要，仅证明官方认定公共卫生与社会负担，不证明政治系统动因或负担逐年加重。"
+        },
+        {
+          "evidence_id": "ev-2c1ae3a121b6a2bc4f4e48d9",
+          "relation": "support",
+          "quote": "Today, United States Surgeon General Dr. Vivek Murthy released a new Surgeon General Advisory calling attention to the public health crisis of loneliness, isolation, and lack of connection in our country.",
+          "publication_date": "2023-05-03",
+          "observation_end": "2023-05-03",
+          "limitation": "新闻稿证明官方将孤独列为公共卫生危机并提出政策框架，但不等于证明孤独是政治系统基本动因，也不证明趋势持续恶化。"
+        },
+        {
+          "evidence_id": "ev-7e5bfd54d4b722b3ae6e7455",
+          "relation": "boundary",
+          "quote": "Loneliness is a problem, even if it is not an epidemic.",
+          "publication_date": "2025-06-26",
+          "observation_end": "2025-06-26",
+          "limitation": "该评论承认孤独是真实问题、需要长期应对，支持负担持续存在；但同时指出比例长期稳定、非流行病，且美国50至80岁成年人缺乏陪伴比例先升后降，构成对“持续加重”方向的边界，不构成对“负担持续”的反驳。"
+        }
+      ],
+      "remaining_gap": "缺少1991年前后至2023年间连续、同口径的美国官方孤独负担认定与政策行动记录，无法确认“持续”覆盖整个观察窗口；也缺少孤独作为政治系统基本动因的直接证据。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "对象为美国政治系统；可观察口径为1991年前后至截止日前，孤独/社会隔离是否被官方公共卫生与治理机构持续认定为重大公共负担并提出政策行动；不要求逐年增加，不以独居等同孤独，也不验证作者关于个人主义与资本主义导致孤独的因果解释。反证包括：官方或研究记录显示孤独并非持续治理负担、相关认定仅为个别时点或已被否定。",
+  "elapsed_seconds": 36.615,
+  "completed_at": "2026-11-09T10:33:44.536693+00:00"
+}

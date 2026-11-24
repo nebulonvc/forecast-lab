@@ -1,0 +1,42 @@
+{
+  "saved_at_utc": "2026-11-20T11:23:00Z",
+  "tool_call_id": null,
+  "tool_timestamp": null,
+  "clock_note": "2026-11-20T11:21:55Z is date -u immediately after the WebSearch tool returned. The General_Grant fetch returned in the following tool batch. This file is written after both returns were on disk.",
+  "search": {
+    "tool": "WebSearch",
+    "arguments": {
+      "search_term": "Ulysses S. Grant elected president in 1868 Wikipedia"
+    },
+    "result_urls": [
+      "https://en.wikipedia.org/wiki/1868_United_States_presidential_election",
+      "https://www.archives.gov/electoral-college/1868",
+      "https://www.nps.gov/articles/000/presidency-1869-1877.htm",
+      "https://en.wikipedia.org/wiki/Ulysses_S._Grant",
+      "https://en.wikipedia.org/wiki/Ulysses_S._Grant_and_the_American_Civil_War"
+    ],
+    "package_url_in_return": "https://en.wikipedia.org/wiki/Ulysses_S._Grant",
+    "returned_highlight_containing_excerpt": "A war hero, drawn in by his sense of duty, Grant was unanimously nominated by the Republican Party and elected president in 1868.",
+    "full_page_archive": "audit/r3-grant/search-return-ulysses-page.txt",
+    "full_page_sha256": "4fbbca0a3b591ee1c92eb040ba16fe795713798d9b207d8d57c6acc13216d8a5"
+  },
+  "fetch_general_grant": {
+    "tool": "WebFetch",
+    "arguments": {
+      "url": "https://en.wikipedia.org/wiki/General_Grant"
+    },
+    "tool_header": "Content from https://en.wikipedia.org/wiki/General_Grant",
+    "redirect_status_in_tool_text": null,
+    "page_title_in_body": "Ulysses S. Grant",
+    "excerpt_present": true,
+    "archive": "audit/r3-grant/fetch-general-grant-page.txt",
+    "sha256": "d996e8cda9b3e1c31f3890123ae3918e5c976f7da8ee51c7e5c4fb2eeefe089a",
+    "bytes_differ_from_ulysses_page": true
+  },
+  "evidence_id": "ev-wiki-grant-1868",
+  "evidence_url_kept": "https://en.wikipedia.org/wiki/Ulysses_S._Grant",
+  "excerpt": "elected president in 1868.",
+  "archive_sha256": "4fbbca0a3b591ee1c92eb040ba16fe795713798d9b207d8d57c6acc13216d8a5",
+  "verdict_not_reopened": "txt-4934182645-000673477-000673596 remains 错误",
+  "historical_dump_not_rewritten": true
+}

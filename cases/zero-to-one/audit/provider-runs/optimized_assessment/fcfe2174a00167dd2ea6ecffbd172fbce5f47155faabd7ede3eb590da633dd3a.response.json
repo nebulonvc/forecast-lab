@@ -1,0 +1,28 @@
+{
+  "id": "e9b23dd7-0644-4199-a622-5ee5009480d8",
+  "object": "chat.completion",
+  "created": 1794201585,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000042083-000042106\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文以开放问题形式提出生物技术能否与信息技术同步发展，未给出方向性预测或可检验的时间终点。\",\"reason\":\"该句是修辞性设问，表达对生物技术发展路径的不确定，而非对未来的方向性判断。\",\"limitation\":\"问题式表述不构成可评分的预测命题，故按非预测排除。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4250,
+    "completion_tokens": 154,
+    "total_tokens": 4404,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3482
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

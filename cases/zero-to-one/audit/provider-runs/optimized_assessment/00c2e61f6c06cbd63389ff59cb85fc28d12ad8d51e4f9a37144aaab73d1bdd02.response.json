@@ -1,0 +1,28 @@
+{
+  "id": "48326b17-ae63-403f-89bc-965fd322c129",
+  "object": "chat.completion",
+  "created": 1794201586,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000045894-000045949\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"风险投资基金退出回报机制的条件性描述，无具体基金、事件或期限。\",\"reason\":\"原文以“如果……都会……”说明升值、上市或被收购时基金获得回报的机制，属于投资机制概述，不构成可检验的具体未来事件判断。\",\"limitation\":\"升值不等于现金已实现，且未指定任何具体基金或时间窗口，无法作为预测评分。\",\"evidence_ids\":[],\"method\":\"条件性判断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000045949-000045983\",\"inclusion\":\"forecast\",\"verdict\":\"部分符合\",\"basis\":\"observed_window\",\"scope\":\"以“风险投资基金通常要10年之后才能退出”为一般性经验判断；用世界银行2014年报告所述常见基金10+2年期限、单项投资平均持有5—7年作回顾性对照，观察窗口为出版前后至cutoff。\",\"reason\":\"世界银行报告确认常见基金期限约10+2年，与“通常10年”方向一致；但单项投资平均持有5—7年，说明“退出”并非普遍恰在10年后，存在口径差异。\",\"limitation\":\"基金期限、单项投资退出时点与资金分配给LP的日期是不同概念；该证据为制度与经验概述，不能证明所有基金均在10年后退出。\",\"evidence_ids\":[\"extra-vc-worldbank-2014\"],\"method\":\"一般性推断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"10年之后\",\"condition_state\":\"unconditional\",\"trend_aligned\":true},{\"id\":\"txt-4001dbbdf2-000046052-000046131\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"风险投资家对基金价值提升的期望与目标，非客观预测。\",\"reason\":\"原文用“希望”表达投资目标与愿望，并未承诺或判断实际基金将在几年内达到收支平衡或收入大于支出。\",\"limitation\":\"目标性表述不可操作化为可验证的未来事件，且未指定具体基金或指标口径。\",\"evidence_ids\":[],\"method\":\"条件性期望\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"几年的时间内\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000046165-000046185\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"“大多数基金永远不会出现指数级增长”需定义指数级增长、基金总体与观察窗口；现有证据仅支持回报高度集中。\",\"reason\":\"a16z引用的Horsley Bridge样本显示约6%投资贡献约60%回报，支持右偏集中，但不能量化“大多数基金”是否永无指数级增长。\",\"limitation\":\"样本非随机行业全体、底层数据未公开；集中分布不能代替对多数基金是否出现指数级增长的直接检验。\",\"evidence_ids\":[\"extra-vc-a16z-2015\"],\"method\":\"一般性判断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"永远都不会\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7070,
+    "completion_tokens": 745,
+    "total_tokens": 7815,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 6302
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

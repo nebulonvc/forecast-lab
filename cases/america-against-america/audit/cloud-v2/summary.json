@@ -1,0 +1,106 @@
+{
+  "unique_predictions": 53,
+  "task_attempts": 59,
+  "task_states": {
+    "completed": 53
+  },
+  "completed_verdicts": {
+    "正确": 1,
+    "暂无法判断": 46,
+    "趋势符合": 5,
+    "部分符合": 1
+  },
+  "costs": {
+    "estimated_CNY": 6.44046116,
+    "committed_CNY": 6.44046116,
+    "estimated_USD": 1.687,
+    "committed_USD": 1.687
+  },
+  "human_semantic_review": false,
+  "runs": [
+    {
+      "run_id": "42601534540",
+      "url": "https://github.com/nebulonvc/froecast-lab/actions/runs/42601534540",
+      "commit": "a40b52820e7f5ec5852b93661bb039453546507e",
+      "requested": 53,
+      "task_states": {
+        "completed": 47,
+        "partial": 6,
+        "failed": 0,
+        "not_started": 0
+      },
+      "deepseek": {
+        "estimated_cost_CNY": 5.81540468,
+        "estimated_off_peak_cost_CNY": 2.90770234,
+        "price_basis": "conservative peak estimate; missing usage retains reservations; provider billing not checked",
+        "unknown_or_inflight_reserved_CNY": 0,
+        "budget_committed_CNY": 5.81540468,
+        "usage_unknown_requests": 0,
+        "usage_unknown_reserved_CNY": 0,
+        "total_tokens": 3006955,
+        "completed_stages": 431,
+        "cache_hits_this_run": 0,
+        "active_requests": 0,
+        "peak_concurrency_this_run": 8,
+        "elapsed_seconds": 289.49
+      },
+      "exa": {
+        "estimated_cost_USD": 1.518,
+        "unknown_or_inflight_reserved_USD": 0,
+        "budget_committed_USD": 1.518,
+        "budget_limit_USD": 3.0,
+        "requests": 269,
+        "attempts": 269,
+        "failed_attempts": 0,
+        "unknown_requests": 0,
+        "missing_cost_attempts": 0,
+        "cache_hits_this_run": 34,
+        "active_requests": 0,
+        "peak_concurrency_this_run": 8,
+        "price_basis": "costDollars estimates plus conservative unknown reservations; bill not reconciled"
+      }
+    },
+    {
+      "run_id": "42602777099",
+      "url": "https://github.com/nebulonvc/froecast-lab/actions/runs/42602777099",
+      "commit": "a40b52820e7f5ec5852b93661bb039453546507e",
+      "requested": 6,
+      "task_states": {
+        "completed": 6,
+        "partial": 0,
+        "failed": 0,
+        "not_started": 0
+      },
+      "deepseek": {
+        "estimated_cost_CNY": 0.62505648,
+        "estimated_off_peak_cost_CNY": 0.31252824,
+        "price_basis": "conservative peak estimate; missing usage retains reservations; provider billing not checked",
+        "unknown_or_inflight_reserved_CNY": 0,
+        "budget_committed_CNY": 0.62505648,
+        "usage_unknown_requests": 0,
+        "usage_unknown_reserved_CNY": 0,
+        "total_tokens": 340594,
+        "completed_stages": 48,
+        "cache_hits_this_run": 0,
+        "active_requests": 0,
+        "peak_concurrency_this_run": 6,
+        "elapsed_seconds": 52.32
+      },
+      "exa": {
+        "estimated_cost_USD": 0.169,
+        "unknown_or_inflight_reserved_USD": 0,
+        "budget_committed_USD": 0.169,
+        "budget_limit_USD": 1.482,
+        "requests": 31,
+        "attempts": 31,
+        "failed_attempts": 0,
+        "unknown_requests": 0,
+        "missing_cost_attempts": 0,
+        "cache_hits_this_run": 4,
+        "active_requests": 0,
+        "peak_concurrency_this_run": 6,
+        "price_basis": "costDollars estimates plus conservative unknown reservations; bill not reconciled"
+      }
+    }
+  ]
+}

@@ -1,0 +1,766 @@
+{
+  "unique_predictions": 53,
+  "task_attempts": 53,
+  "runs_in_override_order": [
+    {
+      "directory": "/Users/wenyongteng/Documents/ChatGPT/forcast-labs-exa-worker/cases/america-against-america/audit/cloud-v2/42601534540",
+      "task_attempts": 53
+    }
+  ],
+  "task_states": {
+    "partial": 6,
+    "completed": 47
+  },
+  "raw_verdicts": {
+    "not_recorded": 5,
+    "趋势符合": 24,
+    "部分符合": 7,
+    "暂无法判断": 15,
+    "正确": 1,
+    "错误": 1
+  },
+  "last_draft_verdicts": {
+    "not_recorded": 5,
+    "趋势符合": 12,
+    "暂无法判断": 29,
+    "部分符合": 3,
+    "正确": 4
+  },
+  "final_verdicts": {
+    "not_recorded": 6,
+    "暂无法判断": 41,
+    "趋势符合": 5,
+    "部分符合": 1
+  },
+  "transitions": [
+    {
+      "raw": "not_recorded",
+      "last_draft": "not_recorded",
+      "final": "not_recorded",
+      "count": 5
+    },
+    {
+      "raw": "暂无法判断",
+      "last_draft": "暂无法判断",
+      "final": "暂无法判断",
+      "count": 15
+    },
+    {
+      "raw": "正确",
+      "last_draft": "正确",
+      "final": "暂无法判断",
+      "count": 1
+    },
+    {
+      "raw": "趋势符合",
+      "last_draft": "暂无法判断",
+      "final": "暂无法判断",
+      "count": 10
+    },
+    {
+      "raw": "趋势符合",
+      "last_draft": "正确",
+      "final": "暂无法判断",
+      "count": 2
+    },
+    {
+      "raw": "趋势符合",
+      "last_draft": "趋势符合",
+      "final": "not_recorded",
+      "count": 1
+    },
+    {
+      "raw": "趋势符合",
+      "last_draft": "趋势符合",
+      "final": "暂无法判断",
+      "count": 6
+    },
+    {
+      "raw": "趋势符合",
+      "last_draft": "趋势符合",
+      "final": "趋势符合",
+      "count": 5
+    },
+    {
+      "raw": "部分符合",
+      "last_draft": "暂无法判断",
+      "final": "暂无法判断",
+      "count": 4
+    },
+    {
+      "raw": "部分符合",
+      "last_draft": "正确",
+      "final": "暂无法判断",
+      "count": 1
+    },
+    {
+      "raw": "部分符合",
+      "last_draft": "部分符合",
+      "final": "暂无法判断",
+      "count": 1
+    },
+    {
+      "raw": "部分符合",
+      "last_draft": "部分符合",
+      "final": "部分符合",
+      "count": 1
+    },
+    {
+      "raw": "错误",
+      "last_draft": "部分符合",
+      "final": "暂无法判断",
+      "count": 1
+    }
+  ],
+  "first_review_cross": [
+    {
+      "raw": "not_recorded",
+      "decision": "not_recorded",
+      "count": 5
+    },
+    {
+      "raw": "暂无法判断",
+      "decision": "accept",
+      "count": 12
+    },
+    {
+      "raw": "暂无法判断",
+      "decision": "revise",
+      "count": 2
+    },
+    {
+      "raw": "暂无法判断",
+      "decision": "unresolved",
+      "count": 1
+    },
+    {
+      "raw": "正确",
+      "decision": "accept",
+      "count": 1
+    },
+    {
+      "raw": "趋势符合",
+      "decision": "accept",
+      "count": 3
+    },
+    {
+      "raw": "趋势符合",
+      "decision": "not_recorded",
+      "count": 1
+    },
+    {
+      "raw": "趋势符合",
+      "decision": "revise",
+      "count": 20
+    },
+    {
+      "raw": "部分符合",
+      "decision": "accept",
+      "count": 1
+    },
+    {
+      "raw": "部分符合",
+      "decision": "revise",
+      "count": 6
+    },
+    {
+      "raw": "错误",
+      "decision": "revise",
+      "count": 1
+    }
+  ],
+  "terminal_origins": {
+    "technical_incomplete": 6,
+    "last_review_rejected": 10,
+    "draft_already_unresolved": 29,
+    "determinate": 6,
+    "mechanical_downgrade": 2
+  },
+  "initial_date_exposure_cross": [
+    {
+      "method": "recorded_decision_trace",
+      "exposure": "mechanical_unresolved",
+      "raw": "正确",
+      "first_review": "accept",
+      "count": 1
+    },
+    {
+      "method": "recorded_decision_trace",
+      "exposure": "mechanical_unresolved",
+      "raw": "趋势符合",
+      "first_review": "revise",
+      "count": 5
+    },
+    {
+      "method": "recorded_decision_trace",
+      "exposure": "mechanical_unresolved",
+      "raw": "部分符合",
+      "first_review": "revise",
+      "count": 3
+    },
+    {
+      "method": "recorded_decision_trace",
+      "exposure": "no_mechanical_downgrade",
+      "raw": "暂无法判断",
+      "first_review": "accept",
+      "count": 12
+    },
+    {
+      "method": "recorded_decision_trace",
+      "exposure": "no_mechanical_downgrade",
+      "raw": "暂无法判断",
+      "first_review": "revise",
+      "count": 2
+    },
+    {
+      "method": "recorded_decision_trace",
+      "exposure": "no_mechanical_downgrade",
+      "raw": "暂无法判断",
+      "first_review": "unresolved",
+      "count": 1
+    },
+    {
+      "method": "recorded_decision_trace",
+      "exposure": "no_mechanical_downgrade",
+      "raw": "趋势符合",
+      "first_review": "accept",
+      "count": 3
+    },
+    {
+      "method": "recorded_decision_trace",
+      "exposure": "no_mechanical_downgrade",
+      "raw": "趋势符合",
+      "first_review": "revise",
+      "count": 15
+    },
+    {
+      "method": "recorded_decision_trace",
+      "exposure": "no_mechanical_downgrade",
+      "raw": "部分符合",
+      "first_review": "accept",
+      "count": 1
+    },
+    {
+      "method": "recorded_decision_trace",
+      "exposure": "no_mechanical_downgrade",
+      "raw": "部分符合",
+      "first_review": "revise",
+      "count": 3
+    },
+    {
+      "method": "recorded_decision_trace",
+      "exposure": "no_mechanical_downgrade",
+      "raw": "错误",
+      "first_review": "revise",
+      "count": 1
+    },
+    {
+      "method": "recorded_decision_trace",
+      "exposure": "not_recorded",
+      "raw": "not_recorded",
+      "first_review": "not_recorded",
+      "count": 5
+    },
+    {
+      "method": "recorded_decision_trace",
+      "exposure": "not_recorded",
+      "raw": "趋势符合",
+      "first_review": "not_recorded",
+      "count": 1
+    }
+  ],
+  "recorded_initial_mechanical_warning_codes": {
+    "publication_date_unconfirmed": 33,
+    "model_publication_date_not_verified": 6,
+    "source_availability_unconfirmed": 9,
+    "publication_date_range_overlaps_cutoff": 3
+  },
+  "final_warning_codes": {
+    "publication_date_unconfirmed": 33,
+    "model_publication_date_not_verified": 6,
+    "source_availability_unconfirmed": 6,
+    "publication_date_range_overlaps_cutoff": 3
+  },
+  "review_decisions": {
+    "revise": 40,
+    "accept": 35,
+    "unresolved": 1
+  },
+  "review_nonpass_checks": [
+    {
+      "check": "condition_logic",
+      "value": "fail",
+      "count": 10
+    },
+    {
+      "check": "counterevidence",
+      "value": "fail",
+      "count": 5
+    },
+    {
+      "check": "evidence_support",
+      "value": "fail",
+      "count": 25
+    },
+    {
+      "check": "object_match",
+      "value": "fail",
+      "count": 10
+    },
+    {
+      "check": "time_alignment",
+      "value": "fail",
+      "count": 8
+    },
+    {
+      "check": "verdict_logic",
+      "value": "fail",
+      "count": 40
+    }
+  ],
+  "search": {
+    "queries": 212,
+    "query_states": {
+      "completed": 212
+    },
+    "tasks_without_query_log": 0,
+    "query_roles": {
+      "support": 106,
+      "counter": 106
+    },
+    "reported_hits": 1060,
+    "known_hit_subtotal": 1060,
+    "missing_hit_counts": 0,
+    "tasks_with_both_query_roles": 53,
+    "new_source_records": 272,
+    "tasks_with_new_source": 53,
+    "source_statuses": {
+      "retrieved": 272
+    },
+    "source_date_statuses": [
+      {
+        "source_kind": "exa_contents",
+        "date_status": "known",
+        "count": 132
+      },
+      {
+        "source_kind": "exa_contents",
+        "date_status": "unknown",
+        "count": 140
+      },
+      {
+        "source_kind": "previously_registered_excerpt",
+        "date_status": "known",
+        "count": 119
+      },
+      {
+        "source_kind": "previously_registered_excerpt",
+        "date_status": "overlaps_cutoff",
+        "count": 5
+      },
+      {
+        "source_kind": "previously_registered_excerpt",
+        "date_status": "unknown",
+        "count": 22
+      }
+    ],
+    "source_bodies_present": 0,
+    "context_truncation_not_recorded": 418,
+    "context_truncation_not_recorded_scope": "Candidate field only; absence does not mean stage coverage is missing. See context_coverage.",
+    "provider_limit_reached": 130
+  },
+  "context_coverage": {
+    "tasks_total": 53,
+    "tasks_with_recorded_stages": 53,
+    "tasks_without_recorded_stages": 0,
+    "tasks_missing_coverage_field": 0,
+    "tasks_invalid_coverage_field": 0,
+    "tasks_empty_coverage": 0,
+    "by_stage": {
+      "assess": {
+        "tasks": 53,
+        "stage_snapshots": 53,
+        "recorded_stage_keys": {
+          "assess-2": 53
+        },
+        "source_appearances": 418,
+        "truncated_appearances": 216,
+        "not_truncated_appearances": 202,
+        "truncation_unknown_appearances": 0,
+        "shown_bytes": 713749,
+        "known_shown_bytes": 713749,
+        "missing_shown_bytes_appearances": 0,
+        "source_bytes": 2284320,
+        "known_source_bytes": 2284320,
+        "missing_source_bytes_appearances": 0
+      },
+      "revise_assessment": {
+        "tasks": 29,
+        "stage_snapshots": 29,
+        "recorded_stage_keys": {
+          "revise_assessment-1": 29
+        },
+        "source_appearances": 229,
+        "truncated_appearances": 123,
+        "not_truncated_appearances": 106,
+        "truncation_unknown_appearances": 0,
+        "shown_bytes": 404545,
+        "known_shown_bytes": 404545,
+        "missing_shown_bytes_appearances": 0,
+        "source_bytes": 1284434,
+        "known_source_bytes": 1284434,
+        "missing_source_bytes_appearances": 0
+      },
+      "semantic_review": {
+        "tasks": 48,
+        "stage_snapshots": 77,
+        "recorded_stage_keys": {
+          "semantic_review-1": 48,
+          "semantic_review-2": 29
+        },
+        "source_appearances": 609,
+        "truncated_appearances": 325,
+        "not_truncated_appearances": 284,
+        "truncation_unknown_appearances": 0,
+        "shown_bytes": 1065674,
+        "known_shown_bytes": 1065674,
+        "missing_shown_bytes_appearances": 0,
+        "source_bytes": 3392387,
+        "known_source_bytes": 3392387,
+        "missing_source_bytes_appearances": 0
+      }
+    },
+    "meaning": "Prepared stage/round snapshots, not proof of successful API consumption. Sources appearing in multiple snapshots count repeatedly; byte totals refer to the supplied source body, not necessarily the full original page. Missing byte values stay null."
+  },
+  "evidence_note_relations": {
+    "raw": {
+      "support": 112,
+      "counter": 66,
+      "boundary": 43,
+      "background": 10
+    },
+    "final": {
+      "support": 91,
+      "counter": 51,
+      "boundary": 64,
+      "background": 23
+    }
+  },
+  "fees_by_currency": {
+    "deepseek_CNY": {
+      "estimated_cost_CNY": {
+        "total": 5.81540468,
+        "known_subtotal": 5.81540468,
+        "missing_runs": 0
+      },
+      "budget_committed_CNY": {
+        "total": 5.81540468,
+        "known_subtotal": 5.81540468,
+        "missing_runs": 0
+      },
+      "unknown_or_inflight_reserved_CNY": {
+        "total": 0,
+        "known_subtotal": 0,
+        "missing_runs": 0
+      }
+    },
+    "exa_USD": {
+      "estimated_cost_USD": {
+        "total": 1.518,
+        "known_subtotal": 1.518,
+        "missing_runs": 0
+      },
+      "budget_committed_USD": {
+        "total": 1.518,
+        "known_subtotal": 1.518,
+        "missing_runs": 0
+      },
+      "unknown_or_inflight_reserved_USD": {
+        "total": 0,
+        "known_subtotal": 0,
+        "missing_runs": 0
+      }
+    }
+  },
+  "same_material_review_audit": {
+    "selected_samples": 12,
+    "all_four_completed": 9,
+    "all_four_same_material_hash": 9,
+    "all_four_same_protocol": 9,
+    "all_four_excluded_schema_repair_or_missing": 0,
+    "comparison_policy": "Primary comparisons require completed arms, identical material hashes and explicit schema_repaired=false on both sides. Repaired or unrecorded protocols remain counted as exclusions.",
+    "arms": {
+      "legacy_hint": {
+        "statuses": {
+          "completed": 9,
+          "missing": 3
+        },
+        "completed": 9,
+        "failed_or_missing": 3,
+        "schema_repaired": 0,
+        "schema_repair_flag_missing": 0,
+        "decisions": {
+          "accept": 3,
+          "revise": 6
+        },
+        "nonpass_checks": [
+          {
+            "check": "counterevidence",
+            "value": "fail",
+            "count": 1
+          },
+          {
+            "check": "evidence_support",
+            "value": "fail",
+            "count": 6
+          },
+          {
+            "check": "object_match",
+            "value": "fail",
+            "count": 2
+          },
+          {
+            "check": "time_alignment",
+            "value": "fail",
+            "count": 1
+          },
+          {
+            "check": "verdict_logic",
+            "value": "fail",
+            "count": 6
+          }
+        ]
+      },
+      "legacy_nohint": {
+        "statuses": {
+          "completed": 9,
+          "missing": 3
+        },
+        "completed": 9,
+        "failed_or_missing": 3,
+        "schema_repaired": 0,
+        "schema_repair_flag_missing": 0,
+        "decisions": {
+          "accept": 4,
+          "revise": 5
+        },
+        "nonpass_checks": [
+          {
+            "check": "condition_logic",
+            "value": "fail",
+            "count": 1
+          },
+          {
+            "check": "counterevidence",
+            "value": "fail",
+            "count": 1
+          },
+          {
+            "check": "evidence_support",
+            "value": "fail",
+            "count": 3
+          },
+          {
+            "check": "object_match",
+            "value": "fail",
+            "count": 1
+          },
+          {
+            "check": "verdict_logic",
+            "value": "fail",
+            "count": 5
+          }
+        ]
+      },
+      "shared_hint": {
+        "statuses": {
+          "completed": 9,
+          "missing": 3
+        },
+        "completed": 9,
+        "failed_or_missing": 3,
+        "schema_repaired": 0,
+        "schema_repair_flag_missing": 0,
+        "decisions": {
+          "accept": 3,
+          "revise": 6
+        },
+        "nonpass_checks": [
+          {
+            "check": "evidence_support",
+            "value": "fail",
+            "count": 5
+          },
+          {
+            "check": "object_match",
+            "value": "fail",
+            "count": 2
+          },
+          {
+            "check": "time_alignment",
+            "value": "fail",
+            "count": 2
+          },
+          {
+            "check": "verdict_logic",
+            "value": "fail",
+            "count": 6
+          }
+        ]
+      },
+      "shared_nohint": {
+        "statuses": {
+          "completed": 9,
+          "not_recorded": 2,
+          "started": 1
+        },
+        "completed": 9,
+        "failed_or_missing": 3,
+        "schema_repaired": 1,
+        "schema_repair_flag_missing": 2,
+        "decisions": {
+          "accept": 6,
+          "revise": 3
+        },
+        "nonpass_checks": [
+          {
+            "check": "evidence_support",
+            "value": "fail",
+            "count": 2
+          },
+          {
+            "check": "object_match",
+            "value": "fail",
+            "count": 1
+          },
+          {
+            "check": "verdict_logic",
+            "value": "fail",
+            "count": 3
+          }
+        ]
+      }
+    },
+    "paired_changes": [
+      {
+        "left": "legacy_hint",
+        "right": "legacy_nohint",
+        "completed_pairs": 9,
+        "all_material_hash_pairs": 9,
+        "same_material_pairs": 9,
+        "same_protocol_pairs": 9,
+        "excluded_schema_repair_or_missing_pairs": 0,
+        "excluded_schema_repair_pairs": 0,
+        "excluded_missing_schema_repair_flag_pairs": 0,
+        "changed_decisions_same_material": 1,
+        "transitions_same_material": [
+          {
+            "left_decision": "accept",
+            "right_decision": "accept",
+            "count": 3
+          },
+          {
+            "left_decision": "revise",
+            "right_decision": "accept",
+            "count": 1
+          },
+          {
+            "left_decision": "revise",
+            "right_decision": "revise",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "left": "shared_hint",
+        "right": "shared_nohint",
+        "completed_pairs": 9,
+        "all_material_hash_pairs": 9,
+        "same_material_pairs": 9,
+        "same_protocol_pairs": 9,
+        "excluded_schema_repair_or_missing_pairs": 0,
+        "excluded_schema_repair_pairs": 0,
+        "excluded_missing_schema_repair_flag_pairs": 0,
+        "changed_decisions_same_material": 3,
+        "transitions_same_material": [
+          {
+            "left_decision": "accept",
+            "right_decision": "accept",
+            "count": 3
+          },
+          {
+            "left_decision": "revise",
+            "right_decision": "accept",
+            "count": 3
+          },
+          {
+            "left_decision": "revise",
+            "right_decision": "revise",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "left": "legacy_hint",
+        "right": "shared_hint",
+        "completed_pairs": 9,
+        "all_material_hash_pairs": 9,
+        "same_material_pairs": 9,
+        "same_protocol_pairs": 9,
+        "excluded_schema_repair_or_missing_pairs": 0,
+        "excluded_schema_repair_pairs": 0,
+        "excluded_missing_schema_repair_flag_pairs": 0,
+        "changed_decisions_same_material": 0,
+        "transitions_same_material": [
+          {
+            "left_decision": "accept",
+            "right_decision": "accept",
+            "count": 3
+          },
+          {
+            "left_decision": "revise",
+            "right_decision": "revise",
+            "count": 6
+          }
+        ]
+      },
+      {
+        "left": "legacy_nohint",
+        "right": "shared_nohint",
+        "completed_pairs": 9,
+        "all_material_hash_pairs": 9,
+        "same_material_pairs": 9,
+        "same_protocol_pairs": 9,
+        "excluded_schema_repair_or_missing_pairs": 0,
+        "excluded_schema_repair_pairs": 0,
+        "excluded_missing_schema_repair_flag_pairs": 0,
+        "changed_decisions_same_material": 2,
+        "transitions_same_material": [
+          {
+            "left_decision": "accept",
+            "right_decision": "accept",
+            "count": 4
+          },
+          {
+            "left_decision": "revise",
+            "right_decision": "accept",
+            "count": 2
+          },
+          {
+            "left_decision": "revise",
+            "right_decision": "revise",
+            "count": 3
+          }
+        ]
+      }
+    ],
+    "limitation": "Paired changes measure recorded prompt/hint sensitivity, not correctness against an independent truth standard."
+  },
+  "limitations": [
+    "These are recorded transitions, not human adjudications or proof that any original verdict was correct.",
+    "Search success and body retrieval do not establish relevance, coverage or truth.",
+    "Observational transitions cannot isolate prompt causality; use a same-material API comparison.",
+    "Legacy undated exposure reconstructs the old metadata-only rule; it is not applied when a newer decision trace is present.",
+    "Missing fees remain null with known subtotals, never zero-cost claims."
+  ]
+}

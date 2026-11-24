@@ -1,0 +1,28 @@
+{
+  "id": "89447b1e-b214-4235-ba05-4dc76861627d",
+  "object": "chat.completion",
+  "created": 1794201592,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000072831-000072869\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"该句描述美国人对未来技术的恐惧及其归因，属于对当下态度的解释，不是作者对可观测未来结果的预测。\",\"reason\":\"原文以“美国人害怕……因为他们认为……”陈述一种社会心理与归因，并未提出可由后续事实检验的预测命题。\",\"limitation\":\"“不远的未来”只是被描述对象的恐惧时间，不是作者设定的预测期限；不能据此构造可评分预测。\",\"evidence_ids\":[],\"method\":\"归因判断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"不远的未来\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4546,
+    "completion_tokens": 175,
+    "total_tokens": 4721,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3778
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

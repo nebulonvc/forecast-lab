@@ -1,0 +1,51 @@
+{
+  "id": "txt-4934182645-000556179-000556523",
+  "plan": {
+    "object": "把法律重新显明的惩罚事例。同段举的是布鲁图斯之子、十人团、曼利乌斯一类罕见而非常的执法。",
+    "condition": "两次这种显例相隔超过十年，而且没有事情重新唤起惩罚的观念，恐惧也没有回到人心。十年是原文写出的最多间隔。",
+    "quantifier": "so many offenders suddenly spring up together that it is impossible to punish them without danger。不可能没有危险地惩罚的是突然一起出现的许多违法者，不是仍然能够处死一个人。",
+    "result": "登记变化是 impossible to punish。不可能的是没有危险地惩罚这许多人。",
+    "window": "1531至2026-11-15。佛罗伦萨1434至1494年每五年更新是作者的旁证，早于1531。",
+    "counterevidence_needed": "一个超过十年没有这种显例的国家，后来仍能没有危险地惩罚那许多违法者；或者超过十年之后，惩罚许多人确实引起了危险。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "state went more than ten years without exemplary punishment then could not punish crime without revolt",
+      "counter_query": "after a decade without a notable public execution the government punished offenders without disorder"
+    },
+    "adaptive_rounds": 1,
+    "adaptive": {
+      "strategy": "改查陪审团因死刑适用太广而不敢定罪，看是否对应十年没有显例之后的不可能",
+      "queries": ["juries would not convict because too many would hang after years without exemplary executions"]
+    },
+    "kept_urls": [
+      "https://www.upi.com/Archives/1983/04/07/Public-hanging-in-Beirut/2396418539600/",
+      "https://hummedia.manchester.ac.uk/schools/law/main/research/MSLR_Vol2_3%28Evans%29.pdf"
+    ],
+    "dropped": "孟加拉的报道要求惩罚，没有写超过十年没有显例之后已经不可能没有危险地惩罚许多人。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "ten years, at most",
+    "observation_end": null,
+    "evidence_ids": ["ev-upi-beirut-1983", "ev-bloody-code-discretion"],
+    "scope": "间隔必须超过原文的十年，而且没有新的显例；结果必须是许多人不可能没有危险地被惩罚。",
+    "reason": "合众国际社写，1983年贝鲁特的绞刑是内战混乱十年之后的第一次政府处决，上一次政府处决在1972年。这超过十年，但他们仍然处决了一个人；律师说还有成百的杀人者没有被处理。页面没有写这许多人已经不可能没有危险地受到惩罚。曼彻斯特的论文写，十八世纪血腥法典下法官和陪审团用减罪和赦免让死刑远少于法条，制度因此能维持很久。那是持续的裁量，不是两次显例之间超过十年、然后违法者多到不能罚。决定性缺口是：没有正文同时给出超过十年没有显例，以及随后对许多人的惩罚成为不可能或仍然可能。",
+    "limitation": "两页都没有把出版日写成年月日。贝鲁特处决是1983年4月7日，上一次写1972年。血腥法典的统计是1660至1800年，没有一次十年空白。",
+    "method": "先用十年和没有新的显例卡住条件，再看许多人是否不可能没有危险地受罚。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "1972至1983年没有政府处决，但1983年仍处死一人。血腥法典是持续减刑，不是十年空白后的不可能。"
+  }
+}

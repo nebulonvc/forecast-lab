@@ -1,0 +1,28 @@
+{
+  "id": "0724bd1c-864a-4abd-bfdf-3117b009e5d3",
+  "object": "chat.completion",
+  "created": 1794201591,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000068234-000068275\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性规则：采用复杂销售模式且10年内年增长率达50%或100%的公司将成功；观察窗口为出版后至cutoff，但触发条件（特定公司达到该增长率）未在材料中确定。\",\"reason\":\"这是带明确前提的条件性判断，原文未给出满足该前提的具体公司及10年后的结果，无法在cutoff前操作化验证。\",\"limitation\":\"缺少满足条件的具体样本与成功定义，不能以个别成功企业反推规则成立。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"10年内\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000068821-000068863\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"对Box过去另一条销售路线的反事实陈述，非可验证的前瞻预测。\",\"reason\":\"该句是对已发生历史路径的反事实假设，条件未实际发生，不能作为预测评分。\",\"limitation\":\"反事实无法用实际结果直接验证，仅作审计记录。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5079,
+    "completion_tokens": 325,
+    "total_tokens": 5404,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 4311
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

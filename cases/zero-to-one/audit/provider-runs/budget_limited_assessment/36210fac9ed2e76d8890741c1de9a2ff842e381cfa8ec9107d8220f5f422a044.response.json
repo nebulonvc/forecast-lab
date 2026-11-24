@@ -1,0 +1,28 @@
+{
+  "id": "5a92331c-b91f-4ad7-b0de-2dbec6e2b902",
+  "object": "chat.completion",
+  "created": 1794201441,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000023485-000023510\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为对未发生的过去路径的反事实推测（若当年赢得最高法院书记员竞争，人生会向坏方向转变），无可观测的预测终点。\",\"reason\":\"该句是对已错过的假设路径的反事实评价，不是可验证的未来预测。\",\"limitation\":\"反事实人生结果无法观测，不能作为预测评分。\",\"evidence_ids\":[],\"method\":\"反事实推测\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4260,
+    "completion_tokens": 153,
+    "total_tokens": 4413,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3492
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "txt-4934182645-000233717-000234105",
+  "plan": {
+    "object": "一座政治共同体里的人民，以及他们为了打击所恨的人而支持的那一个人。原文说 that city。这里的城是这个人民所属的共同体，不另收成必须有城墙。",
+    "condition": "人民把支持借给一个人，让他打击他们所恨的人；并且 if he only be prudent。同段把谨慎写成：他会等到能靠人民给所恨的一方致命一击，并且在那一方被除尽之前不去压迫人民。",
+    "quantifier": "inevitably。一次同型结果不能把必然判成对所有这种人都成立。",
+    "result": "他成为该共同体的僭主；到那时人民虽然认出自己受奴役，也无人可投。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "一个按这段谨慎行事、又得到人民支持去打击他们所恨的人的人，没有成为僭主，或者成为僭主之后人民仍有可投之处。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "Louis Napoleon popular support against the Assembly coup 1851 emperor no opposition left",
+      "counter_query": "popular leader backed to attack a hated elite left power without becoming dictator"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [
+      "https://historion.net/france-nineteenth-century-1830-1890/chapter-viii-coup-detat",
+      "https://passerelles.essentiels.bnf.fr/fr/chronologie/article/99258709-1052-4b2c-9d59-a1361f6a6149-coup-etat-2-decembre-1851"
+    ],
+    "dropped": "2026年4月匈牙利选举刚结束，页面没有写新当选者后来是否成为僭主。卢武铉离开职位，但页面没有写他先按这段方式除尽所恨的一方。两者都不是“谨慎而没有成为僭主”的反例。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-historion-coup-1851", "ev-bnf-coup-1851"],
+    "scope": "登记变化是 inevitably become the tyrant。条件是 if he only be prudent。引文里的时序是：人民先为了让他打击所恨的人而支持他，他等到能给贵族致命一击，并且在贵族被除尽之前不压迫人民，然后成为僭主，人民无人可投。对象、条件和这个时序必须同时成立。一次相似不能单独给部分符合。",
+    "reason": "先前的部分符合撤回。Historion 写的工人反应发生在1851年12月2日早晨，他们是在读已经贴出的告示，而不是事先把支持借给他、以便他去打击所恨的人。法国国家图书馆页写他在同一天解散议会，抵抗在几天内被压下，1852年12月2日成为皇帝。压下抵抗和打击议会发生在同几天，没有写出“先除尽所恨的一方，再不去压迫人民”的时序。登记条件 if he only be prudent 因此没有过。成为皇帝是邻接的结局，不能代替这个时序。一次相似也不支撑 inevitably。",
+    "limitation": "两页都没有出版日。法国是全国共和国，原文用 city 指这个人民所属的共同体。百分之九十没有写出分母日以外的12月21日已经写明。观察截止用1852年12月2日称帝。",
+    "method": "先核对人民是否为了打击所恨的一方而支持他，再看他是否成为无人可制衡的统治者。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "fail",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "部分符合撤回。告示之后的赞同不是事先支持。打击议会和压下抵抗没有按引文的先后分开。一次相似不给部分符合。"
+  }
+}

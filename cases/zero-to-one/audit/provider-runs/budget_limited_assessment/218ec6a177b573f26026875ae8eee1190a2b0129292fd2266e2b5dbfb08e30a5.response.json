@@ -1,0 +1,28 @@
+{
+  "id": "4fbe86b8-26e6-44be-858f-10e34d08f837",
+  "object": "chat.completion",
+  "created": 1794201446,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000035984-000036017\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"原文以“往往会”表述目标明确者的行为倾向，属于无期限、无量化指标的一般性行为概括；观察时段为出版前后至cutoff，但无可操作样本或指标。\",\"reason\":\"该句是对“目标明确的人”行为倾向的泛化判断，缺少可界定的对象、指标与观察窗口，无法用现有证据检验。\",\"limitation\":\"“目标明确”“最该做的事”“专心做好”均未操作化，且无任何证据材料；不能凭常识或模型记忆补判。\",\"evidence_ids\":[],\"method\":\"倾向性判断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4307,
+    "completion_tokens": 199,
+    "total_tokens": 4506,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3539
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

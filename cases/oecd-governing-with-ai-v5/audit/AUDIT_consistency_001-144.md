@@ -1,0 +1,28 @@
+# Consistency review of 001–144 exclusions vs later DISCOVER standard
+
+Date: 2026-11-16 15:20 Asia/Shanghai (box-local). Book: oecd-governing-with-ai. Publication 2025-09-18, cutoff 2026-11-15.
+
+This review was required after all 291 chunks were read. It compares items previously left out of 001–144 (and noted in earlier exclusion logs) with the standard actually used from 145 onward (txt-00162 FTA 2026 publication; txt-00200 DWP GBP 1.6bn by 2030; txt-00230 Portugal transactional features in 2025; txt-00235 TBI GBP 6bn/year by 2040). It does not rewrite other 001–144 answers, does not change toolkit 85e6da1, and does not recode reported attributions as author/author_endorsed for scoring.
+
+## Standard applied
+Extract a specific, then-unrealized, later-checkable future fact when the wording supports it (dated institutional publication, a stated numerical target with a verbatim horizon, a committed dated rollout). Distinguish normative obligations and policy-document mandates (“requires / gives agencies 180 days / should”) from an explicit statement that a named actor will do a checkable thing by a time. Record reported third-party plans with reported attribution. Do not extract mere capability, undated “is developing / upcoming / coming months / future developments”, or hedged “could / may / expected to / intend to” without a firm directional claim and a verbatim horizon. Do not loosen to inflate density.
+
+## Supplement (added with this audit; answers.jsonl txt-00138 only)
+- **txt-00138**, reported, Global Coalition for Inclusive AI: “In 2025 and 2026, the Global Coalition for Inclusive AI … will conduct deliberative assemblies that intend to reach more than 10 000 citizens in more than 100 countries.” Previously skipped because the 10 000 / 100-country scale is hedged (“intend to”). The dated “will conduct deliberative assemblies” in 2025 and 2026 is a firm, later-checkable programme plan, comparable to the later Portugal 2025 rollout. The claim recorded is that the assemblies will be conducted in 2025 and 2026; the 10 000 figure is not treated as a firm numerical target. Citation (Vergne and Siu, 2025[153]) is retained in the surrounding sentence but the quoted sentence itself has years 2025 and 2026 (max 2026, not historical). Validated: kept, reported, flags explicit + third_party_view_not_endorsed, resolvable False.
+
+## Reviewed and not supplemented (with reason)
+- **txt-00026 / txt-00127**, Korea AI Basic Act “will take effect / will come into effect in January 2026” (2024[95]/[122]). Firm and dated, but this is the scheduled commencement of an already-enacted 2024 statute, presented as descriptive context for what the Act does. It is not a then-unrealized work-product or rollout plan comparable to “plans to publish findings in 2026” or “is set to introduce features in 2025”. A legally determined in-force date is not treated as a forecast of an uncertain future result. Not added.
+- **txt-00098**, UK “A blueprint for modern digital government” “requires all public sector organisations to include a digital leader on their executive committee by 2026.” This reports the content of a policy mandate, not a forecast that the requirement will be fulfilled. Consistent with not extracting EU AI Act / M-25-21 obligation language as fulfillment predictions. Not added.
+- **txt-00099 area**, US policy “gives government agencies 180 days to develop and publish their own AI strategy” (M-25-21 issued 3 April 2025). Mandate/deadline description, not a forecast of fulfillment. Not added.
+- **txt-00122**, “a centre of government agency will release publicly available guide(s)” (US OMB 2025). Undated plan, comparable to later-skipped undated “is set to expand” / “future developments include”. Not added.
+- **txt-00104**, Spain GovTechLab “Twenty out of the 300 identified use cases will be piloted … Those that are successful will be scaled”. No verbatim horizon; second clause is conditional. Comparable to undated rollouts left out later. Not added.
+- **txt-00107**, Spain ALIA “will be available as open source”; Svea “In the upcoming phase, they will gain access to shared databases”. Undated. Not added.
+- **txt-00112**, Greece DAEDALUS “is set to be one of the most powerful supercomputers in Europe and will be accessible to public institutions”. Undated. Not added. Mitre sandbox “will be capable”: capability language, undated. Not added.
+- **txt-00136 area**, “the upcoming IndiaAI Safety Institute will serve as…”. Undated “upcoming” plus intended function. Not added.
+- **txt-00051 / txt-00141**, OECD “In the coming months, the OECD will establish a living global repository”; “a report on AI experimentation in government … will be released in the coming months.” Author-side commitments, but the horizon is the vague “coming months”, comparable to the later-skipped undated “forthcoming OECD report” and weaker than the calendar-year FTA 2026 commitment that was extracted in txt-00162. Not added.
+- **txt-00118**, Gartner “governments may increase their annual spending on AI-related technologies by 19% in 2025”. Hedged “may”, comparable to later-skipped “is expected to reduce the cost … by GBP 80 million”. Not added.
+- **txt-00110**, McKinsey “global demand for AI-ready data centre capacity could triple by 2030”. Hedged “could”. Not added.
+- **txt-00111**, IEA-related “emissions could increase significantly in the next ten years”. Hedged “could”. Not added.
+- **txt-00088**, Cottier et al. “training the largest models may cost over EUR 1 billion by 2027”. Hedged “may”. Not added.
+
+No other 001–144 answers were rewritten. txt-00013 remains the complete sentence including OECD (2024[24]), with AUDIT_txt-00013.md unchanged.

@@ -1,0 +1,592 @@
+{
+  "claim_id": "txt-1c4066fc0c-000011739-000011800",
+  "version": "search-verifier-v1",
+  "input_sha256": "9c74f8c2dbd8f393f36e88204fae41e9fe55b96d4673adcf2b823447344113e2",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000011739-000011800",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "王沪宁1991年提出的条件性判断：电脑普及使社会通讯系统脆弱；一旦机器故障或病毒侵入电脑，可大范围波及，有时造成大量数据丢失。观察口径为1991年后至cutoff（2026-11-09）公开记录的跨组织IT故障/恶意软件事件：触发条件（故障或病毒侵入）发生后，是否出现跨组织大范围波及，以及是否有时出现实质数据丢失。",
+    "reason": "引用材料的发表时间尚未确认，无法确认其属于证据截止日前；原模型建议保留待复核。",
+    "limitation": "原文是条件性判断而非“每次事件必然扩散/丢失”的无条件断言；CrowdStrike影响设备不足全部Windows设备的1%，且多数系统可快速恢复，不能据此断言“社会通讯系统”整体脆弱。TeamViewer与2026年零售连锁案例显示缓解能力存在，作为边界保留。关键修订：不再把成功隔离个案当作反证降级，改按条件后果分项核对。",
+    "evidence_ids": [
+      "ev-4660f25a2a0be1e619525d1b",
+      "ev-56746c6083afe9c98c422237",
+      "prior-f1ee5a795bca4d3ba245",
+      "ev-8926f5ff43ec344c9ce7bb71",
+      "ev-881fbda7df22b636e176ebc7"
+    ],
+    "method": "从系统互联推断故障传播与集中依赖风险",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-4660f25a2a0be1e619525d1b",
+        "relation": "support",
+        "quote": "On July 19, 2024, CrowdStrike, a cybersecurity firm that delivers its products and services via a cloud computing platform, released a software update with a defective file for devices using the Windows operating system, causing some Windows devices to crash.",
+        "publication_date": "2024-07-24",
+        "observation_end": "2024-07-24",
+        "limitation": "CRS报告，verified=false，尚待语义复核；微软估计受影响设备不足全部Windows设备的1%，扩散广度有限。"
+      },
+      {
+        "evidence_id": "ev-56746c6083afe9c98c422237",
+        "relation": "support",
+        "quote": "The widespread adoption of both Microsoft products and CrowdStrike's cybersecurity services led to global disruptions to industries like aviation, emergency services, financial services, health care, and retail.",
+        "publication_date": "2024-07-23",
+        "observation_end": "2024-07-23",
+        "limitation": "CRS Insight，verified=false；描述跨行业全球中断，但未量化数据丢失规模。"
+      },
+      {
+        "evidence_id": "prior-f1ee5a795bca4d3ba245",
+        "relation": "support",
+        "quote": "CERT-EU报告Petya样恶意软件迅速在组织内传播且可跨境扩散；发现额外擦盘行为，部分扇区被实质删除，文件加密后的恢复资料不可靠。",
+        "publication_date": "2017-06-29",
+        "observation_end": "2017-06-29",
+        "limitation": "为已登记摘要，verified=true；属恶意软件事件，支持“病毒侵入致数据丢失”分项，但为单一事件。"
+      },
+      {
+        "evidence_id": "ev-8926f5ff43ec344c9ce7bb71",
+        "relation": "boundary",
+        "quote": "we confirmed that the incident was contained to our internal corporate IT environment and that neither our separated product environment, nor the connectivity platform, nor any customer data had been affected.",
+        "publication_date": null,
+        "observation_end": "2024-07-04",
+        "limitation": "厂商自述，verified=false；显示攻击被隔离、无客户数据受影响，属条件触发后后果被限制的边界案例，不反驳条件后果。"
+      },
+      {
+        "evidence_id": "ev-881fbda7df22b636e176ebc7",
+        "relation": "boundary",
+        "quote": "Thanks to prepared incident response processes and automated network segmentation, the security team contained the attack in under two hours – with no data loss and no ransom payment.",
+        "publication_date": "2026-01-15",
+        "observation_end": "2026-01-15",
+        "limitation": "媒体报道，verified=false；显示勒索攻击被快速隔离、无数据丢失，属缓解能力边界案例，不反驳条件后果。"
+      }
+    ],
+    "remaining_gap": "核对被引用材料的可证实发表版本及日期。缺少对“社会通讯系统整体脆弱性”这一宏观判断的系统性量化证据；现有材料为个别事件，但已足以在条件触发口径下核对“大范围波及”和“有时数据丢失”两个后果分项。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000011739-000011800",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "王沪宁1991年提出的条件性判断：电脑普及使社会通讯系统脆弱，机器故障或病毒侵入可大范围波及并有时造成大量数据丢失。观察口径为1991年后至cutoff（2026-11-09）公开记录的跨组织IT故障/恶意软件事件是否出现大范围扩散和实质数据丢失；反证为同类事件被迅速隔离、无扩散或无数据损失。",
+    "reason": "CrowdStrike错误更新导致全球约850万台Windows设备崩溃，波及航空、银行、零售、急救等跨行业机构，符合“机器故障大范围波及”的分项；Petya样恶意软件跨境扩散并造成扇区实质删除，符合“病毒侵入、数据丢失”的分项。但TeamViewer事件被控制在内部IT环境、无客户数据受影响，2026年零售连锁勒索攻击2小时内隔离且无数据丢失，显示并非所有事件都大范围扩散或丢失数据，故为部分符合而非完全正确。",
+    "limitation": "原文为条件性判断（“一旦……或……”），并非无条件断言每次事件都必然大范围扩散；证据中既有扩散案例也有成功隔离案例，方向并非单向。CrowdStrike影响面虽广但微软称不足全部Windows设备的1%，且多数系统可快速恢复，不能据此断言“社会通讯系统”整体脆弱。",
+    "evidence_ids": [
+      "ev-4660f25a2a0be1e619525d1b",
+      "ev-56746c6083afe9c98c422237",
+      "prior-f1ee5a795bca4d3ba245",
+      "ev-8926f5ff43ec344c9ce7bb71",
+      "ev-881fbda7df22b636e176ebc7"
+    ],
+    "method": "从系统互联推断故障传播与集中依赖风险",
+    "method_basis": "inferred",
+    "observation_end": "2026-01-15",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-4660f25a2a0be1e619525d1b",
+        "relation": "support",
+        "quote": "On July 19, 2024, CrowdStrike, a cybersecurity firm that delivers its products and services via a cloud computing platform, released a software update with a defective file for devices using the Windows operating system, causing some Windows devices to crash.",
+        "publication_date": "2024-07-24",
+        "observation_end": "2024-07-24",
+        "limitation": "CRS报告，verified=false，尚待语义复核；微软估计受影响设备不足全部Windows设备的1%，扩散广度有限。"
+      },
+      {
+        "evidence_id": "ev-56746c6083afe9c98c422237",
+        "relation": "support",
+        "quote": "The widespread adoption of both Microsoft products and CrowdStrike's cybersecurity services led to global disruptions to industries like aviation, emergency services, financial services, health care, and retail.",
+        "publication_date": "2024-07-23",
+        "observation_end": "2024-07-23",
+        "limitation": "CRS Insight，verified=false；描述跨行业全球中断，但未量化数据丢失规模。"
+      },
+      {
+        "evidence_id": "prior-f1ee5a795bca4d3ba245",
+        "relation": "support",
+        "quote": "CERT-EU报告Petya样恶意软件迅速在组织内传播且可跨境扩散；发现额外擦盘行为，部分扇区被实质删除，文件加密后的恢复资料不可靠。",
+        "publication_date": "2017-06-29",
+        "observation_end": "2017-06-29",
+        "limitation": "为已登记摘要，verified=true；属恶意软件事件，支持“病毒侵入致数据丢失”分项，但为单一事件。"
+      },
+      {
+        "evidence_id": "ev-8926f5ff43ec344c9ce7bb71",
+        "relation": "counter",
+        "quote": "we confirmed that the incident was contained to our internal corporate IT environment and that neither our separated product environment, nor the connectivity platform, nor any customer data had been affected.",
+        "publication_date": null,
+        "observation_end": "2024-07-04",
+        "limitation": "厂商自述，verified=false；显示攻击被隔离、无客户数据受影响，构成反证，但为单一企业且属自报。"
+      },
+      {
+        "evidence_id": "ev-881fbda7df22b636e176ebc7",
+        "relation": "counter",
+        "quote": "Thanks to prepared incident response processes and automated network segmentation, the security team contained the attack in under two hours – with no data loss and no ransom payment.",
+        "publication_date": "2026-01-15",
+        "observation_end": "2026-01-15",
+        "limitation": "媒体报道，verified=false；显示勒索攻击被快速隔离、无数据丢失，构成反证，但为单一案例且依赖企业防护能力。"
+      }
+    ],
+    "remaining_gap": "缺少对“社会通讯系统整体脆弱性”这一宏观判断的系统性量化证据；现有材料为个别事件，既有扩散案例也有成功隔离案例，无法确定整体趋势方向。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-32e4334532fb2a8766c7",
+      "url": "https://www.gao.gov/products/gao-24-107733",
+      "title": "ev-cyber",
+      "published_date": "2024-09-23",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-cyber",
+      "archive_sha256": "6bf62c459a4c0829574ace416a27fe1e81811e0b982576e7f9e69d9094eb4233",
+      "archive_path": "data/sources/web-cyber-budget-attitudes.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-f1ee5a795bca4d3ba245",
+      "url": "https://cert.europa.eu/publications/security-advisories/2017-014/",
+      "title": "ev-lane1-notpetya",
+      "published_date": "2017-06-29",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane1-notpetya",
+      "archive_sha256": "592e1e455e7011d344b5c352d9789ceb052a2ce6004e800a4b39b1a436e2ec78",
+      "archive_path": "data/sources/lane1-web-extracted-2.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-4660f25a2a0be1e619525d1b",
+      "url": "https://www.congress.gov/crs-product/R48135",
+      "resolved_url": "https://www.congress.gov/crs-product/R48135",
+      "title": "IT Disruptions from CrowdStrike’s Update: Frequently Asked Questions | Congress.gov | Library of Congress",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:24.587834+00:00",
+      "archive_sha256": "25e5278c163f653070faffb4720f6dd6bb2376193d8faee0432f0836f36a959c",
+      "archive_path": "jobs/ac5067bfda2e35cb0b083eb7/25e5278c163f653070faffb4720f6dd6bb2376193d8faee0432f0836f36a959c.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-1e9275248965deced439a9ea",
+      "url": "https://www.cisa.gov/news-events/alerts/2024/07/19/widespread-it-outage-due-crowdstrike-update",
+      "resolved_url": "https://www.cisa.gov/news-events/alerts/2024/07/19/widespread-it-outage-due-crowdstrike-update",
+      "title": "Widespread IT Outage Due to CrowdStrike Update | CISA",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:24.588039+00:00",
+      "archive_sha256": "2ad88e5f4dbd9ec7f5904925c6526f0db8b18ae8ec0fb762d61f29de38d58134",
+      "archive_path": "jobs/ac5067bfda2e35cb0b083eb7/2ad88e5f4dbd9ec7f5904925c6526f0db8b18ae8ec0fb762d61f29de38d58134.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-8926f5ff43ec344c9ce7bb71",
+      "url": "https://www.teamviewer.com/en-us/resources/trust-center/security-bulletins/tv-2024-1005/",
+      "resolved_url": "https://www.teamviewer.com/en-us/resources/trust-center/security-bulletins/tv-2024-1005/",
+      "title": "TV-2024-1005",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:24.588286+00:00",
+      "archive_sha256": "3d0a42db2ca976466e359c73fc543ea1d0a1946903c9d7bbe026777e161c123a",
+      "archive_path": "jobs/ac5067bfda2e35cb0b083eb7/3d0a42db2ca976466e359c73fc543ea1d0a1946903c9d7bbe026777e161c123a.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-56746c6083afe9c98c422237",
+      "url": "https://www.congress.gov/crs-product/IN12392",
+      "resolved_url": "https://www.congress.gov/crs-product/IN12392",
+      "title": "The July 19th Global IT Outages | Congress.gov | Library of Congress",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:32.819319+00:00",
+      "archive_sha256": "1e866259a496dd1baff6f22ceb5123731a781751363f466c16af6cad5040378e",
+      "archive_path": "jobs/ac5067bfda2e35cb0b083eb7/1e866259a496dd1baff6f22ceb5123731a781751363f466c16af6cad5040378e.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-881fbda7df22b636e176ebc7",
+      "url": "https://www.securitytoday.de/en/2026/01/15/major-retail-chain-halts-ransomware-attack-in-under-2-hours/",
+      "resolved_url": "https://www.securitytoday.de/en/2026/01/15/major-retail-chain-halts-ransomware-attack-in-under-2-hours/",
+      "title": "Major Retail Chain Halts Ransomware Attack in Under 2 Hours - SecurityToday",
+      "published_date": "2026-01-15",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:32.819523+00:00",
+      "archive_sha256": "228b3d26e775476b6a7d452731bcdb5641d4b6c2c61ab65462e8f87cb06fba00",
+      "archive_path": "jobs/ac5067bfda2e35cb0b083eb7/228b3d26e775476b6a7d452731bcdb5641d4b6c2c61ab65462e8f87cb06fba00.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "CrowdStrike faulty update July 2024 millions Windows systems outage hospitals airlines GAO",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "cyber incident rapid containment no data loss isolated single organization report CERT",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "CrowdStrike faulty update July 2024 8.5 million Windows devices global outage airlines banks CRS report",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "cyber incident rapid containment no data loss isolated single organization report CERT-EU",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-4660f25a2a0be1e619525d1b",
+        "ev-56746c6083afe9c98c422237",
+        "ev-8926f5ff43ec344c9ce7bb71"
+      ]
+    }
+  ],
+  "remaining_gap": "核对被引用材料的可证实发表版本及日期。缺少对“社会通讯系统整体脆弱性”这一宏观判断的系统性量化证据；现有材料为个别事件，但已足以在条件触发口径下核对“大范围波及”和“有时数据丢失”两个后果分项。",
+  "source_statuses": [
+    {
+      "url": "https://www.congress.gov/crs-product/R48135",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.cisa.gov/news-events/alerts/2024/07/19/widespread-it-outage-due-crowdstrike-update",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.teamviewer.com/en-us/resources/trust-center/security-bulletins/tv-2024-1005/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.congress.gov/crs-product/IN12392",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.securitytoday.de/en/2026/01/15/major-retail-chain-halts-ransomware-attack-in-under-2-hours/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "12542ca1daa2c76c822def148a791b6bb29245a3112a3dd0b5962d6c91e86073"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "27c6810487789f89c4f4a4c823a08cc0",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e7245102105d06827f44971090023bfe",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "d3dd6233beb93ba3dd79fa04bf818fa06614ddc1a451732085901416326a2528"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "08bd7565c9cc3fd0d4d2882b9ee90307",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "0a1ed7f3ea3018a9b3a02bdd77c306b3919a2c6f3696d21eba9ab95fa1048697"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "932e609d49b9789ba5eda0fe3dd7e3a3",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "afd6a39c89690cae09faea5ebb20f877",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "0a6063775f169755ec4ac379985a7239eda389f1067ae2205d7318d07ad0ee6b"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "173ad1af04fac0e171076ac5b13fab89",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "36fea8d7c2a576e573906d31be4c108786af3f7909b488f15561963174765ff5"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "b3aa813e1aa28730b2ad4a418477dcdab42519bdb53b99a2a0d5bac459d69eec"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "28a0e32ecbf214e0cd869ca3d66bc32b1043310c057cedfb3cfbe460efb73864"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "06d574b4d08c4dd72a1e068b088cdbdd9e632a095b50bdc32d6ea2db1308ed95"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000011739-000011800",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "fail",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原文是条件性判断：只有“机器出故障”或“病毒侵入电脑”发生时才谈波及与数据丢失。建议把“并非所有事件都大范围扩散或丢失数据”当作部分不符合的依据，等于把条件后果误读成“每次事件都必然扩散/丢失”的无条件断言；原文并未如此承诺，成功隔离的案例只说明条件触发后后果未发生，不能据此把条件预测降为部分符合。",
+          "source_quote": "电脑多——社会通讯系统变得脆弱，一旦机器出故障，或有“病毒”侵入电\n   脑，马上波及一大片，有时大批的数据资料荡然无存；",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "counterevidence",
+          "reason": "TeamViewer事件被描述为攻击被控制在内部IT环境、产品环境和客户数据未受影响，这属于“条件触发但后果未发生”的个案，不能直接反驳“一旦故障或病毒侵入就大范围波及并有时丢失数据”的条件判断；把它列为反证并据此降低结论，属于把不同结果口径的材料机械冲抵。2026年零售连锁勒索攻击同样是被快速隔离、无数据丢失的个案，只能说明存在缓解，不能证明原条件后果不成立。",
+          "source_quote": "we confirmed that the incident was contained to our internal corporate IT environment and that neither our separated product environment, nor the connectivity platform, nor any customer data had been affected.",
+          "evidence_id": "ev-8926f5ff43ec344c9ce7bb71",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议一方面认定条件已满足（condition_state=satisfied），另一方面又以“并非所有事件都大范围扩散或丢失数据”为由判为部分符合，并把trend_aligned设为true。原文的条件后果是“马上波及一大片，有时大批数据荡然无存”，CrowdStrike全球跨行业中断与Petya擦盘删除已分别对应“波及一大片”和“有时数据丢失”；成功隔离的个案只是缓解或限制，不构成对条件后果的反驳。按现有口径应判为符合（或至少在理由中明确后果B已实现、隔离案例仅为缓解），而非部分符合。",
+          "source_quote": "但TeamViewer事件被控制在内部IT环境、无客户数据受影响，2026年零售连锁勒索攻击2小时内隔离且无数据丢失，显示并非所有事件都大范围扩散或丢失数据，故为部分符合而非完全正确。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正条件逻辑与结论口径：把“机器故障或病毒侵入”作为触发条件，分别确认后果“大范围波及”和“有时大量数据丢失”是否实现；成功隔离、无数据丢失的个案只能作为缓解或限制，不应作为把条件预测降为部分符合的反证。若维持部分符合，必须指出后果B中哪些具体部分未实现及其直接证据。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000011739-000011800",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000011739-000011800",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "王沪宁1991年提出的条件性判断：电脑普及使社会通讯系统脆弱，机器故障或病毒侵入可大范围波及并有时造成大量数据丢失。观察口径为1991年后至cutoff（2026-11-09）公开记录的跨组织IT故障/恶意软件事件是否出现大范围扩散和实质数据丢失；反证为同类事件被迅速隔离、无扩散或无数据损失。",
+      "reason": "CrowdStrike错误更新导致全球约850万台Windows设备崩溃，波及航空、银行、零售、急救等跨行业机构，符合“机器故障大范围波及”的分项；Petya样恶意软件跨境扩散并造成扇区实质删除，符合“病毒侵入、数据丢失”的分项。但TeamViewer事件被控制在内部IT环境、无客户数据受影响，2026年零售连锁勒索攻击2小时内隔离且无数据丢失，显示并非所有事件都大范围扩散或丢失数据，故为部分符合而非完全正确。",
+      "limitation": "原文为条件性判断（“一旦……或……”），并非无条件断言每次事件都必然大范围扩散；证据中既有扩散案例也有成功隔离案例，方向并非单向。CrowdStrike影响面虽广但微软称不足全部Windows设备的1%，且多数系统可快速恢复，不能据此断言“社会通讯系统”整体脆弱。",
+      "evidence_ids": [
+        "ev-4660f25a2a0be1e619525d1b",
+        "ev-56746c6083afe9c98c422237",
+        "prior-f1ee5a795bca4d3ba245",
+        "ev-8926f5ff43ec344c9ce7bb71",
+        "ev-881fbda7df22b636e176ebc7"
+      ],
+      "method": "从系统互联推断故障传播与集中依赖风险",
+      "method_basis": "inferred",
+      "observation_end": "2026-01-15",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-4660f25a2a0be1e619525d1b",
+          "relation": "support",
+          "quote": "On July 19, 2024, CrowdStrike, a cybersecurity firm that delivers its products and services via a cloud computing platform, released a software update with a defective file for devices using the Windows operating system, causing some Windows devices to crash.",
+          "publication_date": "2024-07-24",
+          "observation_end": "2024-07-24",
+          "limitation": "CRS报告，verified=false，尚待语义复核；微软估计受影响设备不足全部Windows设备的1%，扩散广度有限。"
+        },
+        {
+          "evidence_id": "ev-56746c6083afe9c98c422237",
+          "relation": "support",
+          "quote": "The widespread adoption of both Microsoft products and CrowdStrike's cybersecurity services led to global disruptions to industries like aviation, emergency services, financial services, health care, and retail.",
+          "publication_date": "2024-07-23",
+          "observation_end": "2024-07-23",
+          "limitation": "CRS Insight，verified=false；描述跨行业全球中断，但未量化数据丢失规模。"
+        },
+        {
+          "evidence_id": "prior-f1ee5a795bca4d3ba245",
+          "relation": "support",
+          "quote": "CERT-EU报告Petya样恶意软件迅速在组织内传播且可跨境扩散；发现额外擦盘行为，部分扇区被实质删除，文件加密后的恢复资料不可靠。",
+          "publication_date": "2017-06-29",
+          "observation_end": "2017-06-29",
+          "limitation": "为已登记摘要，verified=true；属恶意软件事件，支持“病毒侵入致数据丢失”分项，但为单一事件。"
+        },
+        {
+          "evidence_id": "ev-8926f5ff43ec344c9ce7bb71",
+          "relation": "counter",
+          "quote": "we confirmed that the incident was contained to our internal corporate IT environment and that neither our separated product environment, nor the connectivity platform, nor any customer data had been affected.",
+          "publication_date": null,
+          "observation_end": "2024-07-04",
+          "limitation": "厂商自述，verified=false；显示攻击被隔离、无客户数据受影响，构成反证，但为单一企业且属自报。"
+        },
+        {
+          "evidence_id": "ev-881fbda7df22b636e176ebc7",
+          "relation": "counter",
+          "quote": "Thanks to prepared incident response processes and automated network segmentation, the security team contained the attack in under two hours – with no data loss and no ransom payment.",
+          "publication_date": "2026-01-15",
+          "observation_end": "2026-01-15",
+          "limitation": "媒体报道，verified=false；显示勒索攻击被快速隔离、无数据丢失，构成反证，但为单一案例且依赖企业防护能力。"
+        }
+      ],
+      "remaining_gap": "缺少对“社会通讯系统整体脆弱性”这一宏观判断的系统性量化证据；现有材料为个别事件，既有扩散案例也有成功隔离案例，无法确定整体趋势方向。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000011739-000011800",
+      "inclusion": "forecast",
+      "verdict": "正确",
+      "basis": "observed_window",
+      "scope": "王沪宁1991年提出的条件性判断：电脑普及使社会通讯系统脆弱；一旦机器故障或病毒侵入电脑，可大范围波及，有时造成大量数据丢失。观察口径为1991年后至cutoff（2026-11-09）公开记录的跨组织IT故障/恶意软件事件：触发条件（故障或病毒侵入）发生后，是否出现跨组织大范围波及，以及是否有时出现实质数据丢失。",
+      "reason": "CrowdStrike错误更新触发全球约850万台Windows设备崩溃，波及航空、银行、零售、急救等跨行业机构，对应“机器故障→马上波及一大片”；Petya样恶意软件跨境扩散并造成扇区实质删除，对应“病毒侵入→有时大批数据资料荡然无存”。原文为条件性判断，成功隔离、无数据丢失的个案只说明后果可被缓解或限制，不构成对条件后果的反驳，故判正确。",
+      "limitation": "原文是条件性判断而非“每次事件必然扩散/丢失”的无条件断言；CrowdStrike影响设备不足全部Windows设备的1%，且多数系统可快速恢复，不能据此断言“社会通讯系统”整体脆弱。TeamViewer与2026年零售连锁案例显示缓解能力存在，作为边界保留。关键修订：不再把成功隔离个案当作反证降级，改按条件后果分项核对。",
+      "evidence_ids": [
+        "ev-4660f25a2a0be1e619525d1b",
+        "ev-56746c6083afe9c98c422237",
+        "prior-f1ee5a795bca4d3ba245",
+        "ev-8926f5ff43ec344c9ce7bb71",
+        "ev-881fbda7df22b636e176ebc7"
+      ],
+      "method": "从系统互联推断故障传播与集中依赖风险",
+      "method_basis": "inferred",
+      "observation_end": "2026-01-15",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-4660f25a2a0be1e619525d1b",
+          "relation": "support",
+          "quote": "On July 19, 2024, CrowdStrike, a cybersecurity firm that delivers its products and services via a cloud computing platform, released a software update with a defective file for devices using the Windows operating system, causing some Windows devices to crash.",
+          "publication_date": "2024-07-24",
+          "observation_end": "2024-07-24",
+          "limitation": "CRS报告，verified=false，尚待语义复核；微软估计受影响设备不足全部Windows设备的1%，扩散广度有限。"
+        },
+        {
+          "evidence_id": "ev-56746c6083afe9c98c422237",
+          "relation": "support",
+          "quote": "The widespread adoption of both Microsoft products and CrowdStrike's cybersecurity services led to global disruptions to industries like aviation, emergency services, financial services, health care, and retail.",
+          "publication_date": "2024-07-23",
+          "observation_end": "2024-07-23",
+          "limitation": "CRS Insight，verified=false；描述跨行业全球中断，但未量化数据丢失规模。"
+        },
+        {
+          "evidence_id": "prior-f1ee5a795bca4d3ba245",
+          "relation": "support",
+          "quote": "CERT-EU报告Petya样恶意软件迅速在组织内传播且可跨境扩散；发现额外擦盘行为，部分扇区被实质删除，文件加密后的恢复资料不可靠。",
+          "publication_date": "2017-06-29",
+          "observation_end": "2017-06-29",
+          "limitation": "为已登记摘要，verified=true；属恶意软件事件，支持“病毒侵入致数据丢失”分项，但为单一事件。"
+        },
+        {
+          "evidence_id": "ev-8926f5ff43ec344c9ce7bb71",
+          "relation": "boundary",
+          "quote": "we confirmed that the incident was contained to our internal corporate IT environment and that neither our separated product environment, nor the connectivity platform, nor any customer data had been affected.",
+          "publication_date": null,
+          "observation_end": "2024-07-04",
+          "limitation": "厂商自述，verified=false；显示攻击被隔离、无客户数据受影响，属条件触发后后果被限制的边界案例，不反驳条件后果。"
+        },
+        {
+          "evidence_id": "ev-881fbda7df22b636e176ebc7",
+          "relation": "boundary",
+          "quote": "Thanks to prepared incident response processes and automated network segmentation, the security team contained the attack in under two hours – with no data loss and no ransom payment.",
+          "publication_date": "2026-01-15",
+          "observation_end": "2026-01-15",
+          "limitation": "媒体报道，verified=false；显示勒索攻击被快速隔离、无数据丢失，属缓解能力边界案例，不反驳条件后果。"
+        }
+      ],
+      "remaining_gap": "缺少对“社会通讯系统整体脆弱性”这一宏观判断的系统性量化证据；现有材料为个别事件，但已足以在条件触发口径下核对“大范围波及”和“有时数据丢失”两个后果分项。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "王沪宁关于电脑普及导致社会通讯系统脆弱、机器故障或病毒侵入可大范围波及并有时造成大量数据丢失的条件性判断；可观察口径为1991年后美国及跨国电脑/网络系统在故障或恶意软件事件中出现跨组织扩散和实质数据丢失的公开记录；反证包括同类事件被迅速隔离、无扩散或无数据损失，或集中依赖并未产生系统性影响。",
+  "elapsed_seconds": 41.043,
+  "completed_at": "2026-11-09T07:58:54.810749+00:00"
+}

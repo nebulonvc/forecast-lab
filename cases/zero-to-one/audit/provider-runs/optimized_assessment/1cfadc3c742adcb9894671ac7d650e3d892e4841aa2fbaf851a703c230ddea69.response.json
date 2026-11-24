@@ -1,0 +1,28 @@
+{
+  "id": "901aefa8-1233-40ce-8f15-ec77ac00e0ba",
+  "object": "chat.completion",
+  "created": 1794201580,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000017894-000017928\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"规范性建议，非可观测预测；无观察时段。\",\"reason\":\"原文是给企业家的规范性告诫，主张避免跟风无特色企业，并非对某事件的可检验预测。\",\"limitation\":\"隐含判断（无特色企业难获持久价值）属论证性主张，未给出可操作指标与期限。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000019211-000019255\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"心理反应描述，非对特定餐厅结果的预测；无观察时段。\",\"reason\":\"原文描述创业者听到餐厅高倒闭率后的本能反应，属心理偏误例示，不是对某餐厅生存的可检验预测。\",\"limitation\":\"“大多数新开餐厅一两年内关门”为背景陈述，未指定可核验对象与数据来源。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5104,
+    "completion_tokens": 298,
+    "total_tokens": 5402,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 5104
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

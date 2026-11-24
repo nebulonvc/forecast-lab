@@ -1,0 +1,28 @@
+{
+  "id": "3afa4ff1-f3ed-4a52-a5a2-ede52b0a1e45",
+  "object": "chat.completion",
+  "created": 1794201586,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000044454-000044484\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"判断对象为“目标明确的企业是否被系统性低估”，需可操作的估值指标（如市场估值相对内在价值、长期回报）与“目标明确”的判定标准；原文未给出指标、期限或可观察样本，观察窗口无法界定。\",\"reason\":\"该句是作者对估值现象的一般性断言，缺少可操作化的“目标明确”与“被低估”标准，也没有可核对的样本或期限。现有证据为空，无法验证方向。\",\"limitation\":\"“人人迷茫”为模糊条件，且“被低估”需估值基准，原文未提供；不能凭个别企业案例（如Facebook）推断整体规律。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4260,
+    "completion_tokens": 217,
+    "total_tokens": 4477,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3492
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

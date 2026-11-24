@@ -1,0 +1,17 @@
+{
+  "book": "世界发展报告2023：移民、难民与社会（World Development Report 2023: Migrants, Refugees, and Societies）",
+  "author": "World Bank（世界银行，WDR 2023 团队，主任 Xavier Devictor）",
+  "cutoff": "2026-11-15",
+  "publication_year_proxy": 2023,
+  "rules_version": "simple-v3-trend-four-class",
+  "publication_date": "2023-04-26",
+  "publication_year_note": "世界银行 Documents & Reports 记录的文件日期为 2023-04-26（WDR 2023 英文全文 PDF，documents1.worldbank.org/curated/en/099042523192514880）；窗口取 2023-04-26 → 2026-11-15。PDF 为 reading-library/2026-11-15-未来判断扩展100本/04-经济与资源/056-world-development-report-2023-migrants-refugees-and-societies.pdf（本地从世界银行官方地址下载，sha256 与队列记录一致）。抽取用 pdftotext -enc UTF-8 全文（默认版式、保留分页符）生成的 TXT；引文为该 TXT 的连续片段，位置记为 TXT 字符偏移。未把全文文本加入仓库。",
+  "source_text": "reading-library/2026-11-15-未来判断扩展100本/04-经济与资源/056-world-development-report-2023-migrants-refugees-and-societies.pdf",
+  "source_sha256": "0e6b0b4dfd923acfbc8c404fb35a10dbc1a8634cef53b8933272f90c7683c3a7",
+  "source_url": "https://www.worldbank.org/en/publication/wdr2023",
+  "license": "CC BY 3.0 IGO",
+  "execution_mode": "prepare_book-txt v5 (manual model replacement) + manual verify",
+  "source_txt_sha256": "65f798f9c4c7c8d3f8967f8ef6134edab7f7229fbdd96d74492fa2248cde99ec",
+  "queue_id": "world-bank-wdr-2023-migrants-refugees",
+  "worker": "bot2-w6"
+}

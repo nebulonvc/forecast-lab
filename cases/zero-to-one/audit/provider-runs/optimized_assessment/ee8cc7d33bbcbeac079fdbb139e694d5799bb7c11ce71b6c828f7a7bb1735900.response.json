@@ -1,0 +1,28 @@
+{
+  "id": "a49c95da-b622-459c-b4fc-fb3d7e298365",
+  "object": "chat.completion",
+  "created": 1794201588,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000057088-000057147\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为“早先的错误决定一旦做出”，后果为“之后很难改正、纠正可能使公司面临几近破产危险”；无具体公司、期限与可量化指标，观察窗口为出版至cutoff。\",\"reason\":\"这是带触发条件的因果性判断，原文未给出可检验的具体对象或期限，无法在回顾中确定条件是否发生及后果程度。\",\"limitation\":\"条件未确定且后果“很难改正”“几近破产”缺乏操作化标准，不能凭个别公司案例推断普遍成立。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"早先；之后\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000057319-000057344\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为“创始人之间有不可调解的矛盾”，后果为“公司将深受其害”；无具体公司、期限与损害指标，观察窗口为出版至cutoff。\",\"reason\":\"该判断依赖“不可调解的矛盾”这一未定义触发条件，原文未提供可核验的具体案例或量化损害标准。\",\"limitation\":\"“不可调解”“深受其害”均为主观表述，无法合理操作化，且不能以事后个别公司成败反推因果。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000057719-000057745\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"作者关于创始人应否在创业前有深厚交情的规范性建议与风险比喻。\",\"reason\":\"该句是选择合伙人的规范性建议，不是可检验的未来事件预测。\",\"limitation\":\"“碰运气”为修辞性风险表述，不构成可观测结果判断。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"共同创业前\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000059086-000059163\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为“以股票作为短期业绩奖励”，后果为首席执行官偏好降本而非长期投资；对象为通用电气式大公司CEO，观察窗口为出版至cutoff。\",\"reason\":\"这是基于激励结构的条件性因果预测，原文未给出可核验的具体公司、指标或期限，无法确认条件普遍成立及后果方向。\",\"limitation\":\"“短期业绩奖励”“长期更大价值”缺乏统一操作化口径，且激励与投资行为的相关性不等于因果。\",\"evidence_ids\":[],\"method\":\"inferred\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"短期；遥远未来\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6364,
+    "completion_tokens": 686,
+    "total_tokens": 7050,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 5596
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,8 @@
+{
+ "url": "https://svmiller.com/peacesciencer/reference/cow_trade_ndy.html",
+ "title": "Correlates of War Dyadic Trade Data Set (v. 4.0) — cow_trade_ndy • peacesciencer",
+ "publishedDate": "",
+ "fetched_at": "2026-11-16T14:03:21.783629+08:00",
+ "fetched_via": "exa-contents",
+ "text": "Correlates of War Dyadic Trade Data Set (v. 4.0) — cow_trade_ndy • peacesciencer\n\n# Correlates of War Dyadic Trade Data Set (v. 4.0)\n\n`cow_trade_ndy.Rd`\n\nThese are dyad-year-level data for national trade from the Correlates of War project.\n\n```\ncow_trade_ndy\n```\n\n## Format\n\nA data frame with 673654 observations on the following seven variables.\n\n`ccode1`\n: a numeric vector for the Correlates of War state code for the first state\n`ccode2`\n: a numeric vector for the Correlates of War state code for the second state\n`year`\n: the year\n`flow1`\n: imports of `ccode1` from `ccode2`, in current million USD\n`flow2`\n: imports of `ccode2` from `ccode1`, in current million USD\n`smoothflow1`\n: smoothed `flow1` values\n`smoothflow2`\n: smoothed `flow2` values\n\n## Details\n\nThe `data-raw` directory on the project's Github shows how the data were processed.\n\n## References\n\nBarbieri, Katherine and Omar M.G. Keshk. 2016. Correlates of War Project Trade Data Set Codebook, Version 4.0. Online: https://correlatesofwar.org\n\nBarbieri, Katherine, Omar M.G. Keshk, and Brian Pollins. 2009. \"TRADING DATA: Evaluating Our Assumptions and Coding Rules.\" Conflict Management and Peace Science, 26(5): 471-491."
+}

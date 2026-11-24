@@ -1,0 +1,48 @@
+{
+  "id": "txt-4934182645-000204896-000204972",
+  "plan": {
+    "object": "得到不受制约的绝对权力的人，以及他所面对的人民。",
+    "condition": "where an uncontrolled authority is given。同句前半 “no security is afforded by the circumstance that the body of the people is not corrupted” 是让步：就算人民尚未腐化，也不能当作安全。它不是“必须先证明人民生平从未腐化”的必要条件。",
+    "quantifier": "will。the briefest possible time 没有年数，不另造门槛。",
+    "result": "登记的 changes 只有 make a people corrupt。存档引文也停在 corrupt。中文转述多写了“得到朋友和党羽”，那是下一分句，不是这条登记的变化核心。第十八章把腐化写成：人变坏之后，法律不再能约束，因为良好习俗已经不在。一党国会是制度名称，不是这个结果。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "不受制约的绝对权力出现后，法律和习俗仍然约束人民；或者相反，它们在短时间内不再约束人民。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "absolute ruler quickly created a personal following and broke civic independence after taking power",
+      "counter_query": "absolute monarch people remained civic and independent no court party formed quickly"
+    },
+    "adaptive_rounds": 2,
+    "adaptive": [
+      {"strategy": "改查官方政党是否没有变成人民的依附", "queries": ["Franco regime Falange remained a minority most Spaniards did not join the party"]},
+      {"strategy": "改查法律和习俗是否失去约束，不再用政党形式代替腐化", "queries": ["new absolute ruler people ceased to obey laws civic customs collapsed within a short time"]}
+    ],
+    "kept_urls": ["https://germanhistorydocs.org/en/nazi-germany-1933-1945/adolf-hitler-at-the-lectern-in-the-kroll-opera-house-on-the-occasion-of-the-extension-of-the-enabling-act-january-30-1937"],
+    "dropped": "塔克文和查士丁尼都早于1531。德国历史文献页只写1933年年底其他政党消失、国会全部由国家社会主义党组成。那是取得党羽和一党议会，不是第十八章所说的法律不再约束。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "the briefest possible time",
+    "observation_end": null,
+    "evidence_ids": ["ev-ghdi-enabling-act-practice"],
+    "scope": "先前的部分符合撤回。登记变化核心是腐化人民。取得党羽不能当作这一核心的半成。复合句里的党羽分句即使单独成立，也不是腐化的同义词，不能按判定口径把未观察到的主要结果填成部分符合。",
+    "reason": "判定口径要求主要结果有直接证据才能给部分符合。本条 extraction 的 changes 是 make a people corrupt，存档引文也到 corrupt 为止。连续原文下一分句才是 obtain friends and partisans。第十八章写，腐化普遍时，没有任何法律或制度还能约束它，因为法律要被人遵守就需要良好习俗，人变坏之后旧制度会败坏新法律。德国历史文献页写的是1933年当年清除其他政党、国会全部由一党组成。这是党羽和制度形式，没有写人民的习俗败坏到法律不再能约束他们。原先是否腐化是让步，不另加从未腐化的门槛；但腐化这个结果仍然没有正文。1531年之后的检索没有补上法律和习俗失去约束的材料。",
+    "limitation": "briefest possible time 没有年数。德国历史文献页没有单独的出版日。",
+    "method": "先按登记的 changes 确定主要结果是腐化人民，再用第十八章的法律与习俗口径核对，不把一党议会算成腐化。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "部分符合撤回。登记核心只是腐化人民。一党国会不是第十八章的腐化。原先未腐化是让步，不是额外门槛。"
+  }
+}

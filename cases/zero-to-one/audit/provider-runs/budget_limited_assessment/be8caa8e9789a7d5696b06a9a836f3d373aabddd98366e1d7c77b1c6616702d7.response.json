@@ -1,0 +1,28 @@
+{
+  "id": "1b5895a1-7d43-49ed-b768-742555eb474c",
+  "object": "chat.completion",
+  "created": 1794201444,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000033486-000033527\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为规范性建议：若想创造新事物就去创造，创新行为比旧产业的不喜欢更重要；无可操作化的未来结果指标或观察时段。\",\"reason\":\"该句是价值判断与行动建议，不是对未来可观测结果的预测。\",\"limitation\":\"不含可检验的时间、指标或结果，无法作为预测评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4269,
+    "completion_tokens": 155,
+    "total_tokens": 4424,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3501
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

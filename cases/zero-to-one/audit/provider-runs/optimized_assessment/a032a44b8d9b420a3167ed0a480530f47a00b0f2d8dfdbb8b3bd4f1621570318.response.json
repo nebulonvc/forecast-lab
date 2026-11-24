@@ -1,0 +1,28 @@
+{
+  "id": "8f35c230-8417-412d-b26c-68016eb988b1",
+  "object": "chat.completion",
+  "created": 1794201590,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000066036-000066062\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"判断对象为广告对消费者购买行为的作用：是否不立即促成购买、而为后续购买埋下伏笔；原文未给出可量化指标、观察人群或期限，无法在cutoff前做回顾性操作化。\",\"reason\":\"该句是作者对广告作用机制的概括性论断，属于可检验方向但缺乏具体指标与观察窗口；现有证据列表为空，无法核对广告是否普遍不立即促成购买而影响后续购买。\",\"limitation\":\"广告效果因品类、渠道、人群差异很大，且“埋下伏笔”难以直接观测；无证据时不能凭常识或模型记忆补判。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"以后\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4347,
+    "completion_tokens": 214,
+    "total_tokens": 4561,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3579
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,376 @@
+{
+  "claim_id": "txt-1c4066fc0c-000251400-000251448",
+  "version": "search-verifier-v2",
+  "input_sha256": "2df675d6a5105499912714afbf4894cacf6fde22ee00b7a5fc85652fead1aa4c",
+  "cutoff": "2026-11-09",
+  "task_state": "partial",
+  "assessment": null,
+  "raw_assessment": null,
+  "evidence_candidates": [
+    {
+      "id": "prior-871dcdbdaf9152e07536",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.CD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-cd",
+      "published_date": "2026-10-08",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-10-08",
+        "latest": "2026-10-08"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-cd",
+      "archive_sha256": "7ad5c1c4f44e15850a861521955b29727497d2cb232432f3dbc2e56ba20d4e42",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.CD.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-3860b59dde3f3677ccba",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.KD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-kd",
+      "published_date": "2026-10-08",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-10-08",
+        "latest": "2026-10-08"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-kd",
+      "archive_sha256": "0eabb480af54e08e1fa6c8a30424b5f98a316e14d676054b7b88acb293744bb4",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.KD.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-4c0a4fc0e5db546e17fb",
+      "url": "https://www2.boj.or.jp/archive/en/announcements/press/koen_2009/ko0904c.htm",
+      "title": "ev-japan-growth",
+      "published_date": "2009-04-23",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2009-04-23",
+        "latest": "2009-04-23"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-japan-growth",
+      "archive_sha256": "71ea4ae45c718dee270c90b533919d74c3e7e2649a70e0d081c8acc0b03ad508",
+      "archive_path": "data/sources/71ea4ae45c718dee270c90b533919d74c3e7e2649a70e0d081c8acc0b03ad508.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d8d679fe2a81b3c8bb97b14b",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+      "resolved_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+      "title": "GDP (current US$) | Data",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:25.402992+00:00",
+      "archive_sha256": "6b4e3cdf699e1ee6a465d0e2fe0db71e97eb3ea39cc01770a1bfc7202ecc3dc7",
+      "archive_path": "jobs/cb83e15fbf3a656fb412efaa/6b4e3cdf699e1ee6a465d0e2fe0db71e97eb3ea39cc01770a1bfc7202ecc3dc7.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-9317426a4a90bf0cc7271742",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=JP&start=1990",
+      "resolved_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=JP&start=1990",
+      "title": "GDP (current US$) - Japan | Data",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:25.403120+00:00",
+      "archive_sha256": "c37db44d1dad1b0405428e348d08b8880e8c219b6df8e5a1adf0c61890b9c534",
+      "archive_path": "jobs/cb83e15fbf3a656fb412efaa/c37db44d1dad1b0405428e348d08b8880e8c219b6df8e5a1adf0c61890b9c534.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-03b93a61ebada554b99a9227",
+      "url": "https://www.latimes.com/archives/la-xpm-1995-05-08-fi-63836-story.html",
+      "resolved_url": "https://www.latimes.com/archives/la-xpm-1995-05-08-fi-63836-story.html",
+      "title": "ECONOMIC SUPERPOWERS AT ODDS : NEWS ANALYSIS : As Yen Rises, Japanese and U.S. GDPs Go Head-to-Head : Currencies: A forecast that Japan's economy will surpass America's by 2000 almost came true on April 19. - Los Angeles Times",
+      "published_date": "1995-05-08",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "1995-05-08",
+        "latest": "1995-05-08"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:25.403202+00:00",
+      "archive_sha256": "40f802afbbf5693f6776c2696b5bfc4e5d8b1ad58a8de8135ccf9480900afa1c",
+      "archive_path": "jobs/cb83e15fbf3a656fb412efaa/40f802afbbf5693f6776c2696b5bfc4e5d8b1ad58a8de8135ccf9480900afa1c.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-78addd9289c24227ac41debf",
+      "url": "https://carnegieendowment.org/research/2010/03/japans-past-and-the-us-future",
+      "resolved_url": "https://carnegieendowment.org/research/2010/03/japans-past-and-the-us-future",
+      "title": "Japan's Past and the U.S. Future | Carnegie Endowment for International Peace",
+      "published_date": "2010-03-18",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2010-03-18",
+        "latest": "2010-03-18"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:25.403290+00:00",
+      "archive_sha256": "9382e205d76d48aa94f7328aa67bf4ef471b3329afe9329394b36eab9d168965",
+      "archive_path": "jobs/cb83e15fbf3a656fb412efaa/9382e205d76d48aa94f7328aa67bf4ef471b3329afe9329394b36eab9d168965.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "World Bank WDI NY.GDP.MKTP.CD United States Japan 1991 2000 GDP current US dollars annual data",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Japan overtook United States largest economy GDP 1990s evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "World Bank WDI NY.GDP.MKTP.CD United States Japan 1991 2000 annual GDP current US dollars data",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Japan GDP surpassed United States 1995 yen appreciation largest economy evidence",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [
+    {
+      "stage": "worker",
+      "error": "cached_response_invalid_76bb7e847d06:JSONDecodeError"
+    }
+  ],
+  "validation_warnings": [],
+  "remaining_gap": "任务未完成；查看错误、已取得材料和请求状态，不能据此判断原预测。",
+  "source_statuses": [
+    {
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=JP&start=1990",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.latimes.com/archives/la-xpm-1995-05-08-fi-63836-story.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://carnegieendowment.org/research/2010/03/japans-past-and-the-us-future",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "68a6d78e52fe1106fe11ba060cd33198e0d9612753a0c52c3fffeab9c6814d44"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "7a61cf9c4cb92463c67321e1902e7235",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "2f9549a34fc973a146192df4c8f0d782",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "5ef3d44d8abefd04383879eeb7d417a402a40ec72e81cf95133a42f5c70751bb"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "9b20e0ebc57fa30a641872743b1e5334",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "cc4f882505fc115050cc0aad354c36343da14c1973326ce76ccb4a24e387c749"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "9e91723ed203ec505ce73820382fa16d",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b6a3ad69e8cc28fb5c31c404836a206f",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "273a850a423550cae5e8d0b0e698051767a69e4a2ce49f31cdfdb44846f80895"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "8a8d23c56416234585ba46b3193fe282830ceb6f966dc4766fdc3926abaef6d6",
+      "validation_error": "evidence_quote_not_in_shown_source"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "76bb7e847d067cbf72e590be9abbe43248331f2994e1286048b3cbd787d47154",
+      "validation_error": "JSONDecodeError"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "8a8d23c56416234585ba46b3193fe282830ceb6f966dc4766fdc3926abaef6d6",
+      "validation_error": "evidence_quote_not_in_shown_source"
+    }
+  ],
+  "decision_trace": [],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-871dcdbdaf9152e07536",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3860b59dde3f3677ccba",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-4c0a4fc0e5db546e17fb",
+        "source_bytes": 117,
+        "shown_bytes": 117,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-d8d679fe2a81b3c8bb97b14b",
+        "source_bytes": 506,
+        "shown_bytes": 506,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-9317426a4a90bf0cc7271742",
+        "source_bytes": 291,
+        "shown_bytes": 291,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-03b93a61ebada554b99a9227",
+        "source_bytes": 1008,
+        "shown_bytes": 1008,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-78addd9289c24227ac41debf",
+        "source_bytes": 8540,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [],
+  "revision_count": 0,
+  "draft_history": [],
+  "autonomous_decision": false,
+  "semantic_validation": null,
+  "scope": "对象：日本是否在“近期内”取代美国成为最大经济体；原文明确保留“不能说日本取代美国”，并以日本对美经济挑战严峻为背景。可观察口径：以1991—2000年（出版后首个十年，作为“近期”的透明回顾性代理）逐年名义GDP（现价美元）比较美日，辅以实际GDP增长；若日本在该窗口内GDP总量超过美国，则构成对“近期不能取代”的反证；若美国持续领先，则支持原文的近期保留。限制：GDP总量只覆盖经济取代，不等同于全球政治军事地位；“近期”无作者精确年份，十年为研究口径；不把“近期不能”加强为“永远不会”。",
+  "elapsed_seconds": 29.767,
+  "completed_at": "2026-11-09T10:35:46.540982+00:00"
+}

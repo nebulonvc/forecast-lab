@@ -1,0 +1,773 @@
+{
+  "claim_id": "txt-1c4066fc0c-000031340-000031369",
+  "version": "search-verifier-v2",
+  "input_sha256": "e8c0f32c8afc2efa79a976acef1aded7da79c6fe70abed0944969686f3594330",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000031340-000031369",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以1991年后至2026-11-09前美国历史遗产保护体系是否持续运转并积累公开可用历史资料为口径；观察指标包括国家史迹名录累计入册规模、名录周报持续更新、联邦保护基金存续与拨款。",
+    "reason": "原文预测美国因持续保护历史遗存而将在未来拥有可继承的历史资源。现有材料显示国家史迹名录累计入册95000余处、关联140万余资源，且2025—2026年周报持续发布，保护基金虽面临削减威胁但仍在运转，主要方向已有持续观察证据而最终终点未到，属趋势符合。",
+    "limitation": "“将来美国人会有历史”是修辞性表述，无法精确操作化为单一终点；保护基金近年拨款下降、FY2026拟议取消及2025年拨款延迟显示保护体系存在压力，但尚未出现名录停止更新或资料不再公开的反证。累计存量不能直接证明1991年后逐年增量，文化认同层面的“有历史”未获直接测量。",
+    "evidence_ids": [
+      "prior-f6aab75697c44f53dc9e",
+      "ev-d761ef1da1222b72968c5513",
+      "ev-fe3766b17673ef4ea61f3f3e",
+      "ev-f3905f4fd7e4a323bc8fbb8b"
+    ],
+    "method": "从历史遗产保护投入推断未来文化资源积累",
+    "method_basis": "inferred",
+    "observation_end": "2026-11-06",
+    "future_time_text": "将来",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-f6aab75697c44f53dc9e",
+        "relation": "support",
+        "quote": "NPS国家史迹名录说明，自1966年创设以来95000余处入册，关联140万余单体资源，提供各级历史遗产资料。",
+        "publication_date": "2026-06-04",
+        "observation_end": null,
+        "limitation": "为已登记摘要，给出的是1966年以来累计存量，未提供1991年后逐年增长序列，只能证明累计规模与资料可获取性。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-d761ef1da1222b72968c5513",
+        "relation": "support",
+        "quote": "Search weekly lists from 1966-2025 See what's pending",
+        "publication_date": null,
+        "observation_end": "2026-11-06",
+        "limitation": "页面显示周报持续至2026年11月，证明名录页面仍在更新，但未提供入册数量或质量评估；日期元数据缺失。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-fe3766b17673ef4ea61f3f3e",
+        "relation": "boundary",
+        "quote": "In Fiscal year 2026, Congress provided $181.059 million for the overall HPF [a decrease of $5.25 million from FY25].",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "显示保护基金仍在拨款但较上年下降，属体系承压的边界证据，不构成名录停止更新或资料不公开的反证。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-f3905f4fd7e4a323bc8fbb8b",
+        "relation": "counter",
+        "quote": "More alarming still is the proposed elimination of HPF funding in the President’s FY 2026 budget.",
+        "publication_date": "2025-07-18",
+        "observation_end": null,
+        "limitation": "为行业协会声明，反映FY2026拟议取消保护基金及2025年拨款延迟，属对保护体系前景的威胁证据；但拟议取消不等于已实施，且未直接证明名录停止更新。",
+        "publication_date_status": "unconfirmed_by_source_metadata",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      }
+    ],
+    "remaining_gap": "缺少1991年后逐年名录入册数量与保护资金实际执行序列，无法量化“持续积累”的速率；文化认同层面的“有历史”无直接测量指标。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000031340-000031369",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以1991年后至2026-11-09前美国历史遗产保护体系是否持续运转并积累公开可用历史资料为口径；观察指标包括国家史迹名录累计入册规模、名录周报持续更新、联邦保护基金存续与拨款。",
+    "reason": "原文预测美国因持续保护历史遗存而将在未来拥有可继承的历史资源。现有材料显示国家史迹名录自1966年以来累计入册95000余处、关联140万余资源，且2025—2026年周报持续发布，保护基金虽面临削减威胁但仍在运转，方向与预测一致。",
+    "limitation": "“将来美国人会有历史”是修辞性表述，无法精确操作化为单一终点；保护基金近年拨款下降、FY2026拟议取消及2025年拨款延迟显示保护体系存在压力，但尚未出现名录停止更新或资料不再公开的反证。最终文化认同层面的“有历史”未获直接测量。",
+    "evidence_ids": [
+      "prior-f6aab75697c44f53dc9e",
+      "ev-d761ef1da1222b72968c5513",
+      "ev-fe3766b17673ef4ea61f3f3e",
+      "ev-f3905f4fd7e4a323bc8fbb8b"
+    ],
+    "method": "从历史遗产保护投入推断未来文化资源积累",
+    "method_basis": "inferred",
+    "observation_end": "2026-11-06",
+    "future_time_text": "将来",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-f6aab75697c44f53dc9e",
+        "relation": "support",
+        "quote": "NPS国家史迹名录说明，自1966年创设以来95000余处入册，关联140万余单体资源，提供各级历史遗产资料。",
+        "publication_date": "2026-06-04",
+        "observation_end": null,
+        "limitation": "为已登记摘要，未给出逐年增长序列，只能证明累计规模与资料可获取性。"
+      },
+      {
+        "evidence_id": "ev-d761ef1da1222b72968c5513",
+        "relation": "support",
+        "quote": "Search weekly lists from 1966-2025 See what's pending",
+        "publication_date": null,
+        "observation_end": "2026-11-06",
+        "limitation": "页面显示周报持续至2026年11月，但未提供入册数量或质量评估；日期元数据缺失。"
+      },
+      {
+        "evidence_id": "ev-fe3766b17673ef4ea61f3f3e",
+        "relation": "boundary",
+        "quote": "In Fiscal year 2026, Congress provided $181.059 million for the overall HPF [a decrease of $5.25 million from FY25].",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "显示保护基金仍在拨款但较上年下降，属体系承压的边界证据，不构成名录停止更新或资料不公开的反证。"
+      },
+      {
+        "evidence_id": "ev-f3905f4fd7e4a323bc8fbb8b",
+        "relation": "counter",
+        "quote": "More alarming still is the proposed elimination of HPF funding in the President’s FY 2026 budget.",
+        "publication_date": "2025-07-18",
+        "observation_end": null,
+        "limitation": "为行业协会声明，反映FY2026拟议取消保护基金及2025年拨款延迟，属对保护体系前景的威胁证据；但拟议取消不等于已实施，且未直接证明名录停止更新。"
+      }
+    ],
+    "remaining_gap": "缺少1991年后逐年名录入册数量与保护资金实际执行序列，无法量化“持续积累”的速率；文化认同层面的“有历史”无直接测量指标。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-f6aab75697c44f53dc9e",
+      "url": "https://www.nps.gov/subjects/nationalregister/database-research.htm",
+      "title": "ev-lane1-heritage",
+      "published_date": "2026-06-04",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-06-04",
+        "latest": "2026-06-04"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane1-heritage",
+      "archive_sha256": "53999dc20015647d62da0f061f8be4080f646716cb0285c43115e6ac05e8c654",
+      "archive_path": "data/sources/lane1-heritage.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d240d4b7d16396ab6016cf5b",
+      "url": "https://npgallery.nps.gov/nrhp/SearchResults",
+      "resolved_url": "https://npgallery.nps.gov/nrhp/SearchResults",
+      "title": "NPGallery NRHP Archive Search Results",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:19.446176+00:00",
+      "archive_sha256": "22ef4f8fe030cf95d026ce3f5c1db211a22caacc218f19112dab9baaffd7b14f",
+      "archive_path": "jobs/ac2867d660721330d152a18d/22ef4f8fe030cf95d026ce3f5c1db211a22caacc218f19112dab9baaffd7b14f.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-fe3766b17673ef4ea61f3f3e",
+      "url": "https://ncshpo.org/issues/historic-preservation-fund/",
+      "resolved_url": "https://ncshpo.org/issues/historic-preservation-fund/",
+      "title": "Historic Preservation Fund - NCSHPO",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:19.446309+00:00",
+      "archive_sha256": "183004e1bd423cde2bd6e8851601249a4e4f8ad28b4f80c05a42f1f250993e86",
+      "archive_path": "jobs/ac2867d660721330d152a18d/183004e1bd423cde2bd6e8851601249a4e4f8ad28b4f80c05a42f1f250993e86.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-f3905f4fd7e4a323bc8fbb8b",
+      "url": "https://sah.org/wp-content/uploads/2025/09/SAH_Statement-on-the-Historic-Preservation-Fund_2025.07.18.pdf",
+      "resolved_url": "https://sah.org/wp-content/uploads/2025/09/SAH_Statement-on-the-Historic-Preservation-Fund_2025.07.18.pdf",
+      "title": "Society of Architectural Historians Heritage Conservation Committee",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:19.446398+00:00",
+      "archive_sha256": "60ae0269f6256ec9b08d34b89d1942ff7fe5b3aeeb7078e140bd0e471cdf046c",
+      "archive_path": "jobs/ac2867d660721330d152a18d/60ae0269f6256ec9b08d34b89d1942ff7fe5b3aeeb7078e140bd0e471cdf046c.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d761ef1da1222b72968c5513",
+      "url": "https://www.nps.gov/subjects/nationalregister/weekly-list.htm",
+      "resolved_url": "https://www.nps.gov/subjects/nationalregister/weekly-list.htm",
+      "title": "Weekly List - National Register of Historic Places (U.S. National Park Service)",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:24.751958+00:00",
+      "archive_sha256": "53964dc720db7c61b66f230137ca3ccda869887d794f23dc45c1b8d93a549237",
+      "archive_path": "jobs/ac2867d660721330d152a18d/53964dc720db7c61b66f230137ca3ccda869887d794f23dc45c1b8d93a549237.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "National Park Service National Register of Historic Places database research listings continue 1991 2025",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "US historic preservation funding cuts National Register listings backlog 1991 2025",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "National Park Service National Register of Historic Places database research listings continue 1991 2025",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "US historic preservation funding cuts National Register listings backlog 1991 2025",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-d761ef1da1222b72968c5513",
+        "ev-f3905f4fd7e4a323bc8fbb8b",
+        "ev-fe3766b17673ef4ea61f3f3e"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "model_publication_date_not_verified",
+      "evidence_ids": [
+        "ev-f3905f4fd7e4a323bc8fbb8b"
+      ]
+    }
+  ],
+  "remaining_gap": "缺少1991年后逐年名录入册数量与保护资金实际执行序列，无法量化“持续积累”的速率；文化认同层面的“有历史”无直接测量指标。",
+  "source_statuses": [
+    {
+      "url": "https://npgallery.nps.gov/nrhp/SearchResults",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://ncshpo.org/issues/historic-preservation-fund/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://sah.org/wp-content/uploads/2025/09/SAH_Statement-on-the-Historic-Preservation-Fund_2025.07.18.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.nps.gov/subjects/nationalregister/weekly-list.htm",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "68281b7d3ae09ee6ff09b48fd2dddba2ad56ca72326767bc8b510d1b84427d46"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "4b952a6cce74494bfadeb6fe1e6f4e55",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "571f3307665cf691fb2fb4b87e4e7dc6",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "65a6e4c5eb55b0787f0a17be30059ad2de9130666aa0db5f395ea014c01905b0"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "cebde255b0d3318368f5f02d90e4e091",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "24ff118edcc8bef8801bab22282971eb53162fe089e1763eef9adf3cb6466314"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "4b952a6cce74494bfadeb6fe1e6f4e55",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "571f3307665cf691fb2fb4b87e4e7dc6",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "f06d5e8cae3412cf7e8755796af1375c134c7447b3264be3cef4b3e388b37448"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "3a680da46ce72ccdebdf897a99292e50",
+      "cost_estimate_USD": 0.001,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "b4f090a4b9c685ef1b52a958e50d8f44134bd9a80685e7fdc19e4f644d91a1b7"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "6cc299696a9f5115fc5859f9dab51d83e28771dce0b6911b0d19744f60e6d90a"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "afdb3e7ec71d83f0e6262269776bd7278a38fcd639add702dc4197435e755e23"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "197810559daa6b5b336f36c6ad4859f4b74856c4f399fa8bf2b08b29b2aa102d"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-d761ef1da1222b72968c5513",
+            "ev-f3905f4fd7e4a323bc8fbb8b",
+            "ev-fe3766b17673ef4ea61f3f3e"
+          ],
+          "blocks_verdict": false
+        },
+        {
+          "code": "model_publication_date_not_verified",
+          "evidence_ids": [
+            "ev-f3905f4fd7e4a323bc8fbb8b"
+          ]
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-d761ef1da1222b72968c5513",
+            "ev-f3905f4fd7e4a323bc8fbb8b",
+            "ev-fe3766b17673ef4ea61f3f3e"
+          ],
+          "blocks_verdict": false
+        },
+        {
+          "code": "model_publication_date_not_verified",
+          "evidence_ids": [
+            "ev-f3905f4fd7e4a323bc8fbb8b"
+          ]
+        }
+      ],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-f6aab75697c44f53dc9e",
+        "source_bytes": 135,
+        "shown_bytes": 135,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-d240d4b7d16396ab6016cf5b",
+        "source_bytes": 449,
+        "shown_bytes": 449,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-fe3766b17673ef4ea61f3f3e",
+        "source_bytes": 8689,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-f3905f4fd7e4a323bc8fbb8b",
+        "source_bytes": 3823,
+        "shown_bytes": 3823,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-d761ef1da1222b72968c5513",
+        "source_bytes": 3630,
+        "shown_bytes": 3630,
+        "context_truncated": false
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-f6aab75697c44f53dc9e",
+        "source_bytes": 135,
+        "shown_bytes": 135,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-d240d4b7d16396ab6016cf5b",
+        "source_bytes": 449,
+        "shown_bytes": 449,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-fe3766b17673ef4ea61f3f3e",
+        "source_bytes": 8689,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-f3905f4fd7e4a323bc8fbb8b",
+        "source_bytes": 3823,
+        "shown_bytes": 3823,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-d761ef1da1222b72968c5513",
+        "source_bytes": 3630,
+        "shown_bytes": 3630,
+        "context_truncated": false
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-f6aab75697c44f53dc9e",
+        "source_bytes": 135,
+        "shown_bytes": 135,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-d240d4b7d16396ab6016cf5b",
+        "source_bytes": 449,
+        "shown_bytes": 449,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-fe3766b17673ef4ea61f3f3e",
+        "source_bytes": 8689,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-f3905f4fd7e4a323bc8fbb8b",
+        "source_bytes": 3823,
+        "shown_bytes": 3823,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-d761ef1da1222b72968c5513",
+        "source_bytes": 3630,
+        "shown_bytes": 3630,
+        "context_truncated": false
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-f6aab75697c44f53dc9e",
+        "source_bytes": 135,
+        "shown_bytes": 135,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-d240d4b7d16396ab6016cf5b",
+        "source_bytes": 449,
+        "shown_bytes": 449,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-fe3766b17673ef4ea61f3f3e",
+        "source_bytes": 8689,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-f3905f4fd7e4a323bc8fbb8b",
+        "source_bytes": 3823,
+        "shown_bytes": 3823,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-d761ef1da1222b72968c5513",
+        "source_bytes": 3630,
+        "shown_bytes": 3630,
+        "context_truncated": false
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000031340-000031369",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "evidence_support",
+          "reason": "所引NPS摘要称名录“自1966年创设以来95000余处入册”，这是1966年以来的累计存量，不能证明1991年之后名录仍在持续新增；建议却用它支撑“1991年后持续积累”的方向判断，属于把累计规模当作观察窗口内的增量证据。",
+          "source_quote": "NPS国家史迹名录说明，自1966年创设以来95000余处入册，关联140万余单体资源，提供各级历史遗产资料。",
+          "evidence_id": "prior-f6aab75697c44f53dc9e",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "周报页面只列出1966—2025年可检索及2026年各周条目，未提供1991年后入册数量或增长序列；它至多证明名录页面仍在更新，不能单独支撑“持续积累”的速率或规模判断。",
+          "source_quote": "Search weekly lists from 1966-2025 See what's pending",
+          "evidence_id": "ev-d761ef1da1222b72968c5513",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议判为“部分符合”并设trend_aligned=true，但reason只说明方向与预测一致，limitation中的保护基金下降、FY2026拟议取消和拨款延迟均被明确称为“尚未出现名录停止更新或资料不再公开的反证”。按口径，主要方向已有持续观察证据而终点未到应为趋势符合；若存在实质分项分化才可判部分符合，而建议未指出后果B中哪些具体部分实现、哪些未实现。分类与理由矛盾。",
+          "source_quote": "保护基金近年拨款下降、FY2026拟议取消及2025年拨款延迟显示保护体系存在压力，但尚未出现名录停止更新或资料不再公开的反证。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充1991年后名录逐年新增数量或可比的持续积累序列，以支撑观察窗口内的方向判断；并据现有材料将结论统一为趋势符合（若确认仅有持续方向而无实质分项分化），或明确指出后果B中哪些具体部分实现、哪些未实现及直接证据后再判部分符合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000031340-000031369",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000031340-000031369",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以1991年后至2026-11-09前美国历史遗产保护体系是否持续运转并积累公开可用历史资料为口径；观察指标包括国家史迹名录累计入册规模、名录周报持续更新、联邦保护基金存续与拨款。",
+      "reason": "原文预测美国因持续保护历史遗存而将在未来拥有可继承的历史资源。现有材料显示国家史迹名录自1966年以来累计入册95000余处、关联140万余资源，且2025—2026年周报持续发布，保护基金虽面临削减威胁但仍在运转，方向与预测一致。",
+      "limitation": "“将来美国人会有历史”是修辞性表述，无法精确操作化为单一终点；保护基金近年拨款下降、FY2026拟议取消及2025年拨款延迟显示保护体系存在压力，但尚未出现名录停止更新或资料不再公开的反证。最终文化认同层面的“有历史”未获直接测量。",
+      "evidence_ids": [
+        "prior-f6aab75697c44f53dc9e",
+        "ev-d761ef1da1222b72968c5513",
+        "ev-fe3766b17673ef4ea61f3f3e",
+        "ev-f3905f4fd7e4a323bc8fbb8b"
+      ],
+      "method": "从历史遗产保护投入推断未来文化资源积累",
+      "method_basis": "inferred",
+      "observation_end": "2026-11-06",
+      "future_time_text": "将来",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-f6aab75697c44f53dc9e",
+          "relation": "support",
+          "quote": "NPS国家史迹名录说明，自1966年创设以来95000余处入册，关联140万余单体资源，提供各级历史遗产资料。",
+          "publication_date": "2026-06-04",
+          "observation_end": null,
+          "limitation": "为已登记摘要，未给出逐年增长序列，只能证明累计规模与资料可获取性。"
+        },
+        {
+          "evidence_id": "ev-d761ef1da1222b72968c5513",
+          "relation": "support",
+          "quote": "Search weekly lists from 1966-2025 See what's pending",
+          "publication_date": null,
+          "observation_end": "2026-11-06",
+          "limitation": "页面显示周报持续至2026年11月，但未提供入册数量或质量评估；日期元数据缺失。"
+        },
+        {
+          "evidence_id": "ev-fe3766b17673ef4ea61f3f3e",
+          "relation": "boundary",
+          "quote": "In Fiscal year 2026, Congress provided $181.059 million for the overall HPF [a decrease of $5.25 million from FY25].",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "显示保护基金仍在拨款但较上年下降，属体系承压的边界证据，不构成名录停止更新或资料不公开的反证。"
+        },
+        {
+          "evidence_id": "ev-f3905f4fd7e4a323bc8fbb8b",
+          "relation": "counter",
+          "quote": "More alarming still is the proposed elimination of HPF funding in the President’s FY 2026 budget.",
+          "publication_date": "2025-07-18",
+          "observation_end": null,
+          "limitation": "为行业协会声明，反映FY2026拟议取消保护基金及2025年拨款延迟，属对保护体系前景的威胁证据；但拟议取消不等于已实施，且未直接证明名录停止更新。"
+        }
+      ],
+      "remaining_gap": "缺少1991年后逐年名录入册数量与保护资金实际执行序列，无法量化“持续积累”的速率；文化认同层面的“有历史”无直接测量指标。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000031340-000031369",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以1991年后至2026-11-09前美国历史遗产保护体系是否持续运转并积累公开可用历史资料为口径；观察指标包括国家史迹名录累计入册规模、名录周报持续更新、联邦保护基金存续与拨款。",
+      "reason": "原文预测美国因持续保护历史遗存而将在未来拥有可继承的历史资源。现有材料显示国家史迹名录累计入册95000余处、关联140万余资源，且2025—2026年周报持续发布，保护基金虽面临削减威胁但仍在运转，主要方向已有持续观察证据而最终终点未到，属趋势符合。",
+      "limitation": "“将来美国人会有历史”是修辞性表述，无法精确操作化为单一终点；保护基金近年拨款下降、FY2026拟议取消及2025年拨款延迟显示保护体系存在压力，但尚未出现名录停止更新或资料不再公开的反证。累计存量不能直接证明1991年后逐年增量，文化认同层面的“有历史”未获直接测量。",
+      "evidence_ids": [
+        "prior-f6aab75697c44f53dc9e",
+        "ev-d761ef1da1222b72968c5513",
+        "ev-fe3766b17673ef4ea61f3f3e",
+        "ev-f3905f4fd7e4a323bc8fbb8b"
+      ],
+      "method": "从历史遗产保护投入推断未来文化资源积累",
+      "method_basis": "inferred",
+      "observation_end": "2026-11-06",
+      "future_time_text": "将来",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-f6aab75697c44f53dc9e",
+          "relation": "support",
+          "quote": "NPS国家史迹名录说明，自1966年创设以来95000余处入册，关联140万余单体资源，提供各级历史遗产资料。",
+          "publication_date": "2026-06-04",
+          "observation_end": null,
+          "limitation": "为已登记摘要，给出的是1966年以来累计存量，未提供1991年后逐年增长序列，只能证明累计规模与资料可获取性。"
+        },
+        {
+          "evidence_id": "ev-d761ef1da1222b72968c5513",
+          "relation": "support",
+          "quote": "Search weekly lists from 1966-2025 See what's pending",
+          "publication_date": null,
+          "observation_end": "2026-11-06",
+          "limitation": "页面显示周报持续至2026年11月，证明名录页面仍在更新，但未提供入册数量或质量评估；日期元数据缺失。"
+        },
+        {
+          "evidence_id": "ev-fe3766b17673ef4ea61f3f3e",
+          "relation": "boundary",
+          "quote": "In Fiscal year 2026, Congress provided $181.059 million for the overall HPF [a decrease of $5.25 million from FY25].",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "显示保护基金仍在拨款但较上年下降，属体系承压的边界证据，不构成名录停止更新或资料不公开的反证。"
+        },
+        {
+          "evidence_id": "ev-f3905f4fd7e4a323bc8fbb8b",
+          "relation": "counter",
+          "quote": "More alarming still is the proposed elimination of HPF funding in the President’s FY 2026 budget.",
+          "publication_date": "2025-07-18",
+          "observation_end": null,
+          "limitation": "为行业协会声明，反映FY2026拟议取消保护基金及2025年拨款延迟，属对保护体系前景的威胁证据；但拟议取消不等于已实施，且未直接证明名录停止更新。"
+        }
+      ],
+      "remaining_gap": "缺少1991年后逐年名录入册数量与保护资金实际执行序列，无法量化“持续积累”的速率；文化认同层面的“有历史”无直接测量指标。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "王沪宁1991年著作中的修辞性预测：美国当时对历史遗存、实物与记录的保护，会使未来美国人拥有可继承、可参观、可研究的历史资源。可观察口径为1991年后至2026-11-09前美国历史遗产保护体系是否持续运转并积累公开可用的历史资料；不评价美国民族历史长短，也不把“有历史”扩展为文化认同或因果机制已获证明。反证包括保护体系萎缩、名录停止更新或资料不再公开。",
+  "elapsed_seconds": 33.784,
+  "completed_at": "2026-11-09T10:32:41.937715+00:00"
+}

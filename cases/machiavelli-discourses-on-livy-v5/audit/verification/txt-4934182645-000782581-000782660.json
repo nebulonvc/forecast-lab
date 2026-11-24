@@ -1,0 +1,64 @@
+{
+  "claim_id": "txt-4934182645-000782581-000782660",
+  "plan": {
+    "object": "不是靠自己会用武器、走在鹰旗前面、在战斗最密处作战，而靠运气或阴谋得到将领地位的人",
+    "conditions": [
+      "地位来自运气或阴谋，而不是来自上述战功"
+    ],
+    "quantifier": "rather takes away than brings",
+    "result": "这种升迁减损名声，而不是带来名声",
+    "time_window": "1531年之后",
+    "counterevidence_needed": "完全靠运气或阴谋、自己不会作战的人，升迁之后名声增加"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "purpose": "首轮一正一反",
+        "support_query": "general promoted by court favor lost his military reputation after 1531",
+        "counter_query": "officer advanced by political intrigue won a lasting military reputation",
+        "support_result": "蒙莫朗西1538年任法国王室总管之前已有军功，1541年失宠是谈判失败，不是不会作战的人因阴谋升迁而失去名声。页面已下载。",
+        "counter_result": "马尔博罗页写他以勇气和外交得到升迁，并且从未打过败仗。这不是完全靠运气或阴谋、自己不会作战。",
+        "adopted": false
+      }
+    ],
+    "adaptive_rounds": 0,
+    "stop_reason": "两边的人都有作战能力，不符合靠运气或阴谋代替战功。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Anne_de_Montmorency,_1st_Duke_of_Montmorency",
+        "fetched": true,
+        "note": "已有军功，不用来计分。"
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/John_Churchill,_1st_Duke_of_Marlborough",
+        "fetched": true,
+        "note": "页面写勇气带来升迁，不用来计分。"
+      }
+    ]
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "insufficient_evidence",
+    "trend_aligned": null,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "减损名声只针对靠运气或阴谋、而不是靠亲自作战得到将领地位的人。有战功的宠臣不是这个对象。",
+    "reason": "连续原文先写将领应当自己会用长矛、走在鹰旗前面、在战斗最密处作战；接着说，如果有人用别的办法得到这个地位，他很快会发现，靠运气或阴谋的升迁减损名声，而不是带来名声，因为人给头衔光彩，不是头衔给人光彩。蒙莫朗西在1538年成为王室总管之前已经打过马里尼亚诺、比科卡和帕维亚，1541年离开宫廷是米兰谈判失败和失宠，不是一个不会作战的人因阴谋升迁。马尔博罗页写他以勇气和外交技能得到升迁，并且以从未战败闻名。两页都不是这个对象，所以不判。",
+    "limitation": "两页都已下载，但都不写完全靠运气或阴谋、自己不会作战。",
+    "method": "先看升迁是不是代替了亲自作战的资格。有战功的人后来失宠，不能算这个结果。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "蒙莫朗西和马尔博罗都有作战资格。失宠和名声都不能套到靠阴谋升迁上。"
+  }
+}

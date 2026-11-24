@@ -1,0 +1,552 @@
+{
+  "claim_id": "txt-1c4066fc0c-000242721-000242761",
+  "version": "search-verifier-v1",
+  "input_sha256": "3cac2eac559f796aad3a3b8c88b3b3f2f3f10d8c36244801ead4d937a9db6259",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000242721-000242761",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "条件为美国社会未能找到根本改善黑人状况的方法，以黑人贫困率、教育、就业等结构性指标是否长期未改善判定；结果为反黑人敌意行动强度上升，以1991年后反黑人仇恨犯罪/事件趋势及相对强度观察，并区分报告覆盖率变化。观察期至cutoff 2026-11-09。",
+    "reason": "条件是否成立存在混合证据：黑人贫困率、无高中文凭比例等长期下降，但相对白人差距仍大，难以判定“根本方法”是否找到。结果侧反黑人仇恨犯罪有2020年激增与2021年记录高位等材料，但报告覆盖率变化大，且2024年总仇恨事件下降，无法确认“更猛烈的反黑人行动”这一终局趋势。",
+    "limitation": "“根本方法”与“更猛烈”均无原文精确阈值，回顾性操作化存在口径弹性；仇恨犯罪统计受报告机构数与NIBRS转换影响，不能直接等同实际敌意行动强度。",
+    "evidence_ids": [
+      "prior-d863a61051d0f519dba6",
+      "prior-8da7b20fdfeb0c4b7b84",
+      "prior-cbbe3051e049c110efa1",
+      "ev-bcfe5063081c56f198d4823b",
+      "ev-4e197378210b0328451fc881",
+      "ev-6d021ad2bcb4eb35612eef47"
+    ],
+    "method": "由未解社会困境与反对情绪推演种族反弹",
+    "method_basis": "explicit",
+    "observation_end": "2026-11-09",
+    "future_time_text": "最后",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-d863a61051d0f519dba6",
+        "relation": "support",
+        "quote": "司法部汇总FBI统计：2020年反黑人仇恨犯罪2871起，较2019年增49%；同时报告机构数减少452家。",
+        "publication_date": "2023-04-04",
+        "observation_end": "2020-12-31",
+        "limitation": "单年激增且报告机构减少，不能单独证明长期升级趋势。"
+      },
+      {
+        "evidence_id": "prior-8da7b20fdfeb0c4b7b84",
+        "relation": "counter",
+        "quote": "黑人贫困率1991年32.7%、2001年22.7%；2002起黑人单一种族口径，2010年27.4%、2022年17.1%、2024年18.4%。2024非西班牙裔白人单一种族贫困率7.6%。",
+        "publication_date": "2025-09-09",
+        "observation_end": "2024-12-31",
+        "limitation": "贫困率显著下降说明状况有改善，但相对白人差距仍大，口径在2002年变化。"
+      },
+      {
+        "evidence_id": "prior-cbbe3051e049c110efa1",
+        "relation": "counter",
+        "quote": "黑人25岁以上劳动力无高中文凭占比1992为18.2%、2018为6.4%；学士以上15.9%→31.2%。同群体总失业率10.9%→5.3%，2009—2011显著反弹（2010/2011为13.4%），并非逐年单调改善。",
+        "publication_date": "2019-02-13",
+        "observation_end": "2018-12-31",
+        "limitation": "教育与就业长期改善，但存在周期性反弹，不能证明“根本方法”已找到或未找到。"
+      },
+      {
+        "evidence_id": "ev-bcfe5063081c56f198d4823b",
+        "relation": "support",
+        "quote": "analysis of the latest, though partial Federal Bureau of Investigation hate crime data release, when overlaid with available data from excluded large jurisdictions, reveals hate crimes hit a record high in 2021 in the United States that previously went unreported.",
+        "publication_date": null,
+        "observation_end": "2021-12-31",
+        "limitation": "来源未标日期且为部分数据叠加估计，2021记录高位不能代表持续升级。"
+      },
+      {
+        "evidence_id": "ev-4e197378210b0328451fc881",
+        "relation": "counter",
+        "quote": "In total, there were 11,679 hate incidents reported to the FBI in 2024, marking the second highest year on record since the FBI began reporting data in 1991. Compared to 2023’s total of 12,498, at this time, 2024 represents a 10 percent decrease.",
+        "publication_date": "2025-08-05",
+        "observation_end": "2024-12-31",
+        "limitation": "总仇恨事件而非仅反黑人，且报告系统持续更新，年度波动不宜过度解读。"
+      },
+      {
+        "evidence_id": "ev-6d021ad2bcb4eb35612eef47",
+        "relation": "counter",
+        "quote": "Earnings increased for Black children at all parental income levels, reducing white- Black earnings gaps for children from low-income families by 30%.",
+        "publication_date": "2024-07-15",
+        "observation_end": "2024-07-15",
+        "limitation": "代际流动性研究显示种族差距缩小，但属学术估计，不直接对应“根本方法”判定。"
+      }
+    ],
+    "remaining_gap": "缺少1991—2024年反黑人仇恨犯罪经报告覆盖率调整后的连续可比序列，以及“根本改善”的可操作阈值，无法判定条件成立与终局结果。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000242721-000242761",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "条件为美国社会未能找到根本改善黑人状况的方法，以黑人贫困率、教育、就业等结构性指标是否长期未改善判定；结果为反黑人敌意行动强度上升，以1991年后反黑人仇恨犯罪/事件趋势及相对强度观察，并区分报告覆盖率变化。观察期至cutoff 2026-11-09。",
+    "reason": "条件是否成立存在混合证据：黑人贫困率、无高中文凭比例等长期下降，但相对白人差距仍大，难以判定“根本方法”是否找到。结果侧反黑人仇恨犯罪有2020年激增与2021年记录高位等材料，但报告覆盖率变化大，且2024年总仇恨事件下降，无法确认“更猛烈的反黑人行动”这一终局趋势。",
+    "limitation": "“根本方法”与“更猛烈”均无原文精确阈值，回顾性操作化存在口径弹性；仇恨犯罪统计受报告机构数与NIBRS转换影响，不能直接等同实际敌意行动强度。",
+    "evidence_ids": [
+      "prior-d863a61051d0f519dba6",
+      "prior-8da7b20fdfeb0c4b7b84",
+      "prior-cbbe3051e049c110efa1",
+      "ev-bcfe5063081c56f198d4823b",
+      "ev-4e197378210b0328451fc881",
+      "ev-6d021ad2bcb4eb35612eef47"
+    ],
+    "method": "由未解社会困境与反对情绪推演种族反弹",
+    "method_basis": "explicit",
+    "observation_end": "2026-11-09",
+    "future_time_text": "最后",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-d863a61051d0f519dba6",
+        "relation": "support",
+        "quote": "司法部汇总FBI统计：2020年反黑人仇恨犯罪2871起，较2019年增49%；同时报告机构数减少452家。",
+        "publication_date": "2023-04-04",
+        "observation_end": "2020-12-31",
+        "limitation": "单年激增且报告机构减少，不能单独证明长期升级趋势。"
+      },
+      {
+        "evidence_id": "prior-8da7b20fdfeb0c4b7b84",
+        "relation": "counter",
+        "quote": "黑人贫困率1991年32.7%、2001年22.7%；2002起黑人单一种族口径，2010年27.4%、2022年17.1%、2024年18.4%。2024非西班牙裔白人单一种族贫困率7.6%。",
+        "publication_date": "2025-09-09",
+        "observation_end": "2024-12-31",
+        "limitation": "贫困率显著下降说明状况有改善，但相对白人差距仍大，口径在2002年变化。"
+      },
+      {
+        "evidence_id": "prior-cbbe3051e049c110efa1",
+        "relation": "counter",
+        "quote": "黑人25岁以上劳动力无高中文凭占比1992为18.2%、2018为6.4%；学士以上15.9%→31.2%。同群体总失业率10.9%→5.3%，2009—2011显著反弹（2010/2011为13.4%），并非逐年单调改善。",
+        "publication_date": "2019-02-13",
+        "observation_end": "2018-12-31",
+        "limitation": "教育与就业长期改善，但存在周期性反弹，不能证明“根本方法”已找到或未找到。"
+      },
+      {
+        "evidence_id": "ev-bcfe5063081c56f198d4823b",
+        "relation": "support",
+        "quote": "analysis of the latest, though partial Federal Bureau of Investigation hate crime data release, when overlaid with available data from excluded large jurisdictions, reveals hate crimes hit a record high in 2021 in the United States that previously went unreported.",
+        "publication_date": null,
+        "observation_end": "2021-12-31",
+        "limitation": "来源未标日期且为部分数据叠加估计，2021记录高位不能代表持续升级。"
+      },
+      {
+        "evidence_id": "ev-4e197378210b0328451fc881",
+        "relation": "counter",
+        "quote": "In total, there were 11,679 hate incidents reported to the FBI in 2024, marking the second highest year on record since the FBI began reporting data in 1991. Compared to 2023’s total of 12,498, at this time, 2024 represents a 10 percent decrease.",
+        "publication_date": "2025-08-05",
+        "observation_end": "2024-12-31",
+        "limitation": "总仇恨事件而非仅反黑人，且报告系统持续更新，年度波动不宜过度解读。"
+      },
+      {
+        "evidence_id": "ev-6d021ad2bcb4eb35612eef47",
+        "relation": "counter",
+        "quote": "Earnings increased for Black children at all parental income levels, reducing white- Black earnings gaps for children from low-income families by 30%.",
+        "publication_date": "2024-07-15",
+        "observation_end": "2024-07-15",
+        "limitation": "代际流动性研究显示种族差距缩小，但属学术估计，不直接对应“根本方法”判定。"
+      }
+    ],
+    "remaining_gap": "缺少1991—2024年反黑人仇恨犯罪经报告覆盖率调整后的连续可比序列，以及“根本改善”的可操作阈值，无法判定条件成立与终局结果。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-d863a61051d0f519dba6",
+      "url": "https://www.justice.gov/archives/crs/highlights/2020-hate-crimes-statistics",
+      "title": "ev-lane3-antiblack",
+      "published_date": "2023-04-04",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-antiblack",
+      "archive_sha256": "6421dd3859464a0f28ad8a710940827ded742300569e93dd569e4a57395f249a",
+      "archive_path": "data/sources/lane3-web-extracts.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-8da7b20fdfeb0c4b7b84",
+      "url": "https://www2.census.gov/library/publications/2025/demo/p60-287.pdf",
+      "title": "ev-lane3-poverty",
+      "published_date": "2025-09-09",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-poverty",
+      "archive_sha256": "b99624bfd024a4f9396594d23a845d5bd581f8094401a3b469aa0a3fb6c799d1",
+      "archive_path": "data/sources/lane3-poverty.pdf",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-cbbe3051e049c110efa1",
+      "url": "https://www.bls.gov/opub/ted/2019/rising-educational-attainment-among-blacks-or-african-americans-in-the-labor-force-1992-to-2018.htm",
+      "title": "ev-r2-l3-black-education",
+      "published_date": "2019-02-13",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-black-education",
+      "archive_sha256": "3f30538af65317d935f64b1361fa2a70e45b60024bd0992922e925beb9b527b1",
+      "archive_path": "data/sources/r2-l3-open-finance-education.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-988a71c1453d005803bf",
+      "url": "https://www.cdc.gov/nchs/data/nvsr/nvsr75/nvsr75-2.pdf",
+      "title": "ev-r2-l3-births2024",
+      "published_date": "2026-06-09",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-births2024",
+      "archive_sha256": "54d56e3c17777139bcdbf5154dce58d72c0981bf743a3a5ab79ba1500fc34e4c",
+      "archive_path": "data/sources/r2-l3-nss-births-targeted.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-09bf5c86400690a4b6091a4e",
+      "url": "https://www.congress.gov/crs-product/R49493",
+      "resolved_url": "https://www.congress.gov/crs-product/R49493",
+      "title": "Crime by the Numbers: Hate Crime, 2015-2024 | Congress.gov | Library of Congress",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:41.799015+00:00",
+      "archive_sha256": "d826e51ce158e8727614b54b84a6d1a6144cee9ba2cbca411bf1172c1af0876e",
+      "archive_path": "jobs/7458ce5ef7fb4201ce1970f3/d826e51ce158e8727614b54b84a6d1a6144cee9ba2cbca411bf1172c1af0876e.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-bcfe5063081c56f198d4823b",
+      "url": "https://scholarlycommons.law.northwestern.edu/cgi/viewcontent.cgi?article=7732&context=jclc",
+      "resolved_url": "https://scholarlycommons.law.northwestern.edu/cgi/viewcontent.cgi?article=7732&context=jclc",
+      "title": "U.S. Hate Crime Trends: What Disaggregation of Three Decades of Data Reveals About a Changing Threat and an Invisible Record",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:41.799262+00:00",
+      "archive_sha256": "06274637fb909a08ca9341950f2b15f43c18f73ed1ce0bd403473691c435adc8",
+      "archive_path": "jobs/7458ce5ef7fb4201ce1970f3/06274637fb909a08ca9341950f2b15f43c18f73ed1ce0bd403473691c435adc8.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-6d021ad2bcb4eb35612eef47",
+      "url": "https://www.census.gov/library/working-papers/2024/adrm/CES-WP-24-38.html",
+      "resolved_url": "https://www.census.gov/library/working-papers/2024/adrm/CES-WP-24-38.html",
+      "title": "Changing Opportunity: Sociological Mechanisms Underlying Growing Class Gaps and Shrinking Race Gaps in Economic Mobility",
+      "published_date": "2024-07-15",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:41.799439+00:00",
+      "archive_sha256": "f3c9f2f493c1ebdfdc1aa858891e3b60acf7cdf70b25b8e45fbfba5f578d7dda",
+      "archive_path": "jobs/7458ce5ef7fb4201ce1970f3/f3c9f2f493c1ebdfdc1aa858891e3b60acf7cdf70b25b8e45fbfba5f578d7dda.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-b8f1cd314f45d8d766b461f5",
+      "url": "https://cepr.net/publications/the-best-black-economy-in-generations-and-why-it-isnt-enough/",
+      "resolved_url": "https://cepr.net/publications/the-best-black-economy-in-generations-and-why-it-isnt-enough/",
+      "title": "The Best Black Economy in Generations – And Why It Isn’t Enough – CEPR",
+      "published_date": "2024-08-26",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:41.799637+00:00",
+      "archive_sha256": "8abaa6c963165c57ad2821e9637ca513b367c07786e90751530fb48ead801580",
+      "archive_path": "jobs/7458ce5ef7fb4201ce1970f3/8abaa6c963165c57ad2821e9637ca513b367c07786e90751530fb48ead801580.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-4e197378210b0328451fc881",
+      "url": "https://www.aaiusa.org/library/2024-hate-crime-data",
+      "resolved_url": "https://www.aaiusa.org/library/2024-hate-crime-data",
+      "title": "AAI Statement on the FBI's 2024 Hate Crime Data Release",
+      "published_date": "2025-08-05",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:55.076437+00:00",
+      "archive_sha256": "cae2a39e3e99d266a5c68ad2f34081cb8621cbb82bd289ca6eed63a742b31830",
+      "archive_path": "jobs/7458ce5ef7fb4201ce1970f3/cae2a39e3e99d266a5c68ad2f34081cb8621cbb82bd289ca6eed63a742b31830.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a9bc8d78b06c51f0ccca64c4",
+      "url": "https://www.epi.org/publication/disparities-chartbook/",
+      "resolved_url": "https://www.epi.org/publication/disparities-chartbook/",
+      "title": "Racial and ethnic disparities in the United States: An interactive chartbook | Economic Policy Institute",
+      "published_date": "2025-10-15",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:55.076659+00:00",
+      "archive_sha256": "cafe0e14ea7cfa14014a654e2806e7462d1c1c8ffc22e6ce7fc1b140b15b58aa",
+      "archive_path": "jobs/7458ce5ef7fb4201ce1970f3/cafe0e14ea7cfa14014a654e2806e7462d1c1c8ffc22e6ce7fc1b140b15b58aa.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "FBI hate crime statistics anti-Black incidents trend 1991 2024 increase",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Black Americans economic progress poverty education income 1991 2024 Census Bureau",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "FBI hate crime statistics anti-Black incidents 1991 2024 trend report coverage agencies",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Black Americans poverty education employment improvement 1991 2024 Census BLS racial gaps",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少1991—2024年反黑人仇恨犯罪经报告覆盖率调整后的连续可比序列，以及“根本改善”的可操作阈值，无法判定条件成立与终局结果。",
+  "source_statuses": [
+    {
+      "url": "https://www.congress.gov/crs-product/R49493",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://scholarlycommons.law.northwestern.edu/cgi/viewcontent.cgi?article=7732&context=jclc",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.census.gov/library/working-papers/2024/adrm/CES-WP-24-38.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://cepr.net/publications/the-best-black-economy-in-generations-and-why-it-isnt-enough/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.aaiusa.org/library/2024-hate-crime-data",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.epi.org/publication/disparities-chartbook/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "对象为美国社会对黑人的敌意行动强度；条件为“社会不能找出改善黑人状况的根本方法”，以黑人教育、贫困、就业等结构性指标是否长期未改善判定条件是否成立；可观察口径为1991年后反黑人仇恨犯罪/事件的趋势与相对强度，需区分FBI报告机构覆盖率变化；反证包括黑人关键社会经济指标显著改善、反黑人暴力未持续升级或近年下降。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "70897ca9a7a23059054ef31d1048d4b7e2ce6df7a98d9d538195d1f9e6d26dd2"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "ddae01eeee1ec173d88a41d6f8111b9d",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "2e8b62f1e76d5ba3bb63cee5eb55396e",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "4c88243e8cddb5f8a66d2031aab1f2bf5335eb4b00c2b94cdfa1b67f335c7929"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "0396ff6f1dc4a253f95d15cee91b381b",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "87412b0d5e743c103276939ba6af68a30a78fe191500c4edc1ec926a31fb4fb9"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e74e2d63661c3808d0e746a3ab1eae3b",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "ae7599c266b1b37761286d533c687477",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "4ab021dfbf5a34f6d6bf8fd15d1c47e01999fbae0e2986edb194b2ffcf6ebde6"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "bf1c9528a7ac8b09a621857db5cabb68",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "83d933899c0dde687e4a68b4582c93653ecaa17ea0a87dc6bcd1702a0c30494e"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "8c3c069fe9631f694521690324706e198a368c53e9a6bad458ed1999757056b4"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000242721-000242761",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000242721-000242761",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "条件为美国社会未能找到根本改善黑人状况的方法，以黑人贫困率、教育、就业等结构性指标是否长期未改善判定；结果为反黑人敌意行动强度上升，以1991年后反黑人仇恨犯罪/事件趋势及相对强度观察，并区分报告覆盖率变化。观察期至cutoff 2026-11-09。",
+      "reason": "条件是否成立存在混合证据：黑人贫困率、无高中文凭比例等长期下降，但相对白人差距仍大，难以判定“根本方法”是否找到。结果侧反黑人仇恨犯罪有2020年激增与2021年记录高位等材料，但报告覆盖率变化大，且2024年总仇恨事件下降，无法确认“更猛烈的反黑人行动”这一终局趋势。",
+      "limitation": "“根本方法”与“更猛烈”均无原文精确阈值，回顾性操作化存在口径弹性；仇恨犯罪统计受报告机构数与NIBRS转换影响，不能直接等同实际敌意行动强度。",
+      "evidence_ids": [
+        "prior-d863a61051d0f519dba6",
+        "prior-8da7b20fdfeb0c4b7b84",
+        "prior-cbbe3051e049c110efa1",
+        "ev-bcfe5063081c56f198d4823b",
+        "ev-4e197378210b0328451fc881",
+        "ev-6d021ad2bcb4eb35612eef47"
+      ],
+      "method": "由未解社会困境与反对情绪推演种族反弹",
+      "method_basis": "explicit",
+      "observation_end": "2026-11-09",
+      "future_time_text": "最后",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-d863a61051d0f519dba6",
+          "relation": "support",
+          "quote": "司法部汇总FBI统计：2020年反黑人仇恨犯罪2871起，较2019年增49%；同时报告机构数减少452家。",
+          "publication_date": "2023-04-04",
+          "observation_end": "2020-12-31",
+          "limitation": "单年激增且报告机构减少，不能单独证明长期升级趋势。"
+        },
+        {
+          "evidence_id": "prior-8da7b20fdfeb0c4b7b84",
+          "relation": "counter",
+          "quote": "黑人贫困率1991年32.7%、2001年22.7%；2002起黑人单一种族口径，2010年27.4%、2022年17.1%、2024年18.4%。2024非西班牙裔白人单一种族贫困率7.6%。",
+          "publication_date": "2025-09-09",
+          "observation_end": "2024-12-31",
+          "limitation": "贫困率显著下降说明状况有改善，但相对白人差距仍大，口径在2002年变化。"
+        },
+        {
+          "evidence_id": "prior-cbbe3051e049c110efa1",
+          "relation": "counter",
+          "quote": "黑人25岁以上劳动力无高中文凭占比1992为18.2%、2018为6.4%；学士以上15.9%→31.2%。同群体总失业率10.9%→5.3%，2009—2011显著反弹（2010/2011为13.4%），并非逐年单调改善。",
+          "publication_date": "2019-02-13",
+          "observation_end": "2018-12-31",
+          "limitation": "教育与就业长期改善，但存在周期性反弹，不能证明“根本方法”已找到或未找到。"
+        },
+        {
+          "evidence_id": "ev-bcfe5063081c56f198d4823b",
+          "relation": "support",
+          "quote": "analysis of the latest, though partial Federal Bureau of Investigation hate crime data release, when overlaid with available data from excluded large jurisdictions, reveals hate crimes hit a record high in 2021 in the United States that previously went unreported.",
+          "publication_date": null,
+          "observation_end": "2021-12-31",
+          "limitation": "来源未标日期且为部分数据叠加估计，2021记录高位不能代表持续升级。"
+        },
+        {
+          "evidence_id": "ev-4e197378210b0328451fc881",
+          "relation": "counter",
+          "quote": "In total, there were 11,679 hate incidents reported to the FBI in 2024, marking the second highest year on record since the FBI began reporting data in 1991. Compared to 2023’s total of 12,498, at this time, 2024 represents a 10 percent decrease.",
+          "publication_date": "2025-08-05",
+          "observation_end": "2024-12-31",
+          "limitation": "总仇恨事件而非仅反黑人，且报告系统持续更新，年度波动不宜过度解读。"
+        },
+        {
+          "evidence_id": "ev-6d021ad2bcb4eb35612eef47",
+          "relation": "counter",
+          "quote": "Earnings increased for Black children at all parental income levels, reducing white- Black earnings gaps for children from low-income families by 30%.",
+          "publication_date": "2024-07-15",
+          "observation_end": "2024-07-15",
+          "limitation": "代际流动性研究显示种族差距缩小，但属学术估计，不直接对应“根本方法”判定。"
+        }
+      ],
+      "remaining_gap": "缺少1991—2024年反黑人仇恨犯罪经报告覆盖率调整后的连续可比序列，以及“根本改善”的可操作阈值，无法判定条件成立与终局结果。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象为美国社会对黑人的敌意行动强度；条件为“社会不能找出改善黑人状况的根本方法”，需以黑人教育、贫困、就业等结构性指标是否长期未改善来判定条件是否成立；可观察口径为反黑人仇恨犯罪/事件在1991年后的趋势及相对强度，并区分报告覆盖率变化；反证包括黑人关键社会经济指标显著改善、反黑人暴力未呈持续升级或近年下降。",
+  "elapsed_seconds": 38.072,
+  "completed_at": "2026-11-09T08:02:08.759997+00:00"
+}

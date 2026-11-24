@@ -1,0 +1,92 @@
+{
+  "id": "txt-5386516eaf-001959136-001959220",
+  "assess": {
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "id": "txt-5386516eaf-001959136-001959220",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "observation_end": "1980-12-31",
+    "scope": "合作原则的前途。",
+    "reason": "消费合作社成员1961年近1300万，1980年1020万。先大后缩。",
+    "limitation": "成员数不是原则。",
+    "evidence_ids": [
+      "ev-r3-coops"
+    ],
+    "method": "新执行。",
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-r3-coops",
+        "quote": "nearly 13 million in 1961 but only 10.2 million in 1980",
+        "relation": "counter",
+        "limitation": "后来下降。",
+        "observation_end": "1980-12-31",
+        "publication_date": null,
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      }
+    ],
+    "remaining_gap": ""
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001959136-001959220",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-r3-coops"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-r3-coops"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "先增后降。"
+      },
+      {
+        "role": "counter",
+        "query": "先增后降。"
+      }
+    ],
+    "note": "r3 新执行，见 audit/search-returns-r3/manifest.json。不是回填。"
+  },
+  "select": {
+    "urls": [
+      "https://oro.open.ac.uk/89009/1/CRUOP04.pdf",
+      "http://hdl.handle.net/2262/84689"
+    ],
+    "reason": "先扩展后收缩。"
+  },
+  "r3_execution": {
+    "new": true,
+    "executed_at": "2026-11-20T10:55:00Z",
+    "why": "先增后降。",
+    "previous_verdict": "部分符合"
+  }
+}

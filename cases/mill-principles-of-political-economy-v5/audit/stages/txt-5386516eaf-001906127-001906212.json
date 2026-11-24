@@ -1,0 +1,122 @@
+{
+  "id": "txt-5386516eaf-001906127-001906212",
+  "assess": {
+    "id": "txt-5386516eaf-001906127-001906212",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "劳动阶级这个社会关系并非必要或永久。",
+    "reason": "最富10%的财富份额从约90%降到60%–70%，不能证明劳动阶级不再存在，也不能证明不劳动的阶级关系已经结束。",
+    "limitation": "旧的部分符合已撤回。对象不一致时不保留分数。",
+    "evidence_ids": [
+      "ev-piketty-zucman-wealth"
+    ],
+    "method": "复核后撤回计分。原支持与反证仍留在修订轨迹，不当作同对象分数。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-piketty-zucman-wealth",
+        "quote": "to be as large as 90%, while it is around 60-70% today",
+        "relation": "boundary",
+        "limitation": "欧洲份额下降。",
+        "observation_end": "2010-12-31",
+        "publication_date": null,
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "ev-piketty-zucman-wealth",
+        "quote": "almost returned to its early 20 th century level",
+        "relation": "boundary",
+        "limitation": "美国几乎回到旧水平。",
+        "observation_end": "2010-12-31",
+        "publication_date": null,
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      }
+    ],
+    "remaining_gap": "缺劳动阶级作为一种社会关系是否不再是永久安排的同对象证据。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001906127-001906212",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-piketty-zucman-wealth"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-piketty-zucman-wealth"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "revision_trail": {
+    "withdrawn_verdict": "部分符合",
+    "withdrawn_reason": "欧洲最富10%的财富份额从约90%降到今天的60%–70%。集中减轻了，但仍然很大；美国的财富集中几乎回到20世纪初。不劳动就能靠财富生活的格局没有消失。",
+    "failed_review": {
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "财富集中下降换成了劳动阶级是否还存在。",
+          "source_quote": "descriptive of an existing, but by no means a necessary or permanent, state of social",
+          "evidence_id": null
+        }
+      ],
+      "remaining_gap": "缺劳动阶级作为一种社会关系是否不再是永久安排的同对象证据。"
+    },
+    "why": "财富集中下降换成了劳动阶级是否还存在。"
+  },
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "European top 10 percent wealth share fell from 90 percent"
+      },
+      {
+        "role": "counter",
+        "query": "US wealth concentration almost returned to the early twentieth century"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "http://piketty.pse.ens.fr/files/PikettyZucman2014HIDRevised.pdf"
+    ],
+    "reason": "下降但未消失。"
+  }
+}

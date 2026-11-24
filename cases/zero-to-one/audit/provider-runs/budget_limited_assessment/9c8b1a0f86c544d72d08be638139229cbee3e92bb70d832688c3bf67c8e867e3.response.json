@@ -1,0 +1,28 @@
+{
+  "id": "c66267c4-0cdd-40f7-a12d-630d136fb3f4",
+  "object": "chat.completion",
+  "created": 1794201440,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000016704-000016727\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"规范性创业建议，非可检验的未来事件预测；无观察时段。\",\"reason\":\"原文是作者对创业者的规范性主张，不是对某个未来事件的可检验预测。\",\"limitation\":\"属于价值/方法建议，无法按事件结果评分。\",\"evidence_ids\":[],\"method\":\"基于创业经验的建议\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000017447-000017476\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为“进入市场的公司太多”，结果为其亏损并部分倒闭；原文未给出具体市场、指标或期限，无法在截止日前确定条件是否发生及对应结果。\",\"reason\":\"这是完全竞争模型下的条件性经济学推理，触发条件“公司太多”未在原文中操作化为可观察事件。\",\"limitation\":\"缺少具体市场与时间窗口，无法用事后数据检验该条件命题；不能以一般企业倒闭现象替代条件验证。\",\"evidence_ids\":[],\"method\":\"经济学推理\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7737,
+    "completion_tokens": 311,
+    "total_tokens": 8048,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 6969
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,446 @@
+{
+  "claim_id": "txt-1c4066fc0c-000025336-000025404",
+  "version": "search-verifier-v1",
+  "input_sha256": "c22e2bb2c9bf1a8a0770d4b4200dc5e9b19d8dddd916e7c5d04a80692e1c76af",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000025336-000025404",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "attribution",
+    "scope": "对象为书中爱荷华农场主奥伯曼（Oberman）的独子：大学毕业后是否最终返回农场；条件分项为若不返回，独子无人接班是否使农场出现问题。观察时段为1988年前后受访至cutoff 2026-11-09，需能将该受访家庭与后续经营、子女数及接班记录相连的原始资料。",
+    "reason": "原文是受访农场主奥伯曼对儿子最终返乡的个人信念，属明确未来判断，但现有证据无法把任何后续农场记录对应到该受访家庭。检索到的Oberman/Eberman材料或为同姓他人、或为虚构教学案例，均不能作为该家庭结果。",
+    "limitation": "无法确认受访者全名、农场位置与儿子身份，故不能以同姓农场主、4-H人物或县评估记录替代；条件分项（不返乡致农场出问题）同样无对应证据。",
+    "evidence_ids": [
+      "prior-6451d807f1e851cf6883",
+      "ev-d3002640e8500baf43cd06f3",
+      "ev-c13aae74d75b29232e24d35b",
+      "ev-9c2caf2e19f0d9933b6e1532",
+      "ev-ddbe9013b71b6d9b41a95589"
+    ],
+    "method": "依赖家庭继承与个人信念推断接班",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "最终",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-6451d807f1e851cf6883",
+        "relation": "boundary",
+        "quote": "爱荷华官方名录检索出现农民及银行董事Claude Oberman，1889年生，登记三子；与原书1988年农场主“独子”线索不匹配，不能据同姓强认。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "同姓但子女数不符，明确不能据此认定同一家庭，属排除性边界材料。"
+      },
+      {
+        "evidence_id": "ev-d3002640e8500baf43cd06f3",
+        "relation": "boundary",
+        "quote": "This case is intended for educational purposes only. Any resemblance to actual persons living or dead is purely coincidental.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "Eberman教学案例自述为虚构，且拼写与Oberman不同，不能作为该家庭接班证据。"
+      },
+      {
+        "evidence_id": "ev-c13aae74d75b29232e24d35b",
+        "relation": "boundary",
+        "quote": "Carroll returned to 4-H in 1968 when his son joined as a member.",
+        "publication_date": "2011-04-21",
+        "observation_end": null,
+        "limitation": "Carroll Oberman为另一人物，无证据表明与书中受访农场主为同一家庭，不能替代其接班结果。"
+      },
+      {
+        "evidence_id": "ev-9c2caf2e19f0d9933b6e1532",
+        "relation": "boundary",
+        "quote": "Deedholder:\n: OBERMAN CARROLL I REVOCABLE TRUST",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "县评估记录属Carroll Oberman信托，与书中家庭无已证关联，不能证明该农场是否由儿子接手。",
+        "quote_verification": {
+          "method": "unique_whitespace_alignment",
+          "model_quote": "Deedholder: : OBERMAN CARROLL I REVOCABLE TRUST"
+        }
+      },
+      {
+        "evidence_id": "ev-ddbe9013b71b6d9b41a95589",
+        "relation": "boundary",
+        "quote": "Seller:\n: OBERMAN VIRGINIA L ESTATE",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "2025年交易涉及Carroll Oberman相关信托，无法对应书中受访家庭，且交易本身不说明接班安排。",
+        "quote_verification": {
+          "method": "unique_whitespace_alignment",
+          "model_quote": "Seller: : OBERMAN VIRGINIA L ESTATE"
+        }
+      }
+    ],
+    "remaining_gap": "缺少能把书中奥伯曼受访家庭（独子、1988年前后爱荷华农场）与其后续子女数、儿子是否返乡及农场是否由家庭接班的原始资料相连的证据；现有同姓材料均不能确认同一主体。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000025336-000025404",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "attribution",
+    "scope": "对象为书中爱荷华农场主奥伯曼（Oberman）的独子：大学毕业后是否最终返回农场；条件分项为若不返回，独子无人接班是否使农场出现问题。观察时段为1988年前后受访至cutoff 2026-11-09，需能将该受访家庭与后续经营、子女数及接班记录相连的原始资料。",
+    "reason": "原文是受访农场主奥伯曼对儿子最终返乡的个人信念，属明确未来判断，但现有证据无法把任何后续农场记录对应到该受访家庭。检索到的Oberman/Eberman材料或为同姓他人、或为虚构教学案例，均不能作为该家庭结果。",
+    "limitation": "无法确认受访者全名、农场位置与儿子身份，故不能以同姓农场主、4-H人物或县评估记录替代；条件分项（不返乡致农场出问题）同样无对应证据。",
+    "evidence_ids": [
+      "prior-6451d807f1e851cf6883",
+      "ev-d3002640e8500baf43cd06f3",
+      "ev-c13aae74d75b29232e24d35b",
+      "ev-9c2caf2e19f0d9933b6e1532",
+      "ev-ddbe9013b71b6d9b41a95589"
+    ],
+    "method": "依赖家庭继承与个人信念推断接班",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "最终",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-6451d807f1e851cf6883",
+        "relation": "boundary",
+        "quote": "爱荷华官方名录检索出现农民及银行董事Claude Oberman，1889年生，登记三子；与原书1988年农场主“独子”线索不匹配，不能据同姓强认。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "同姓但子女数不符，明确不能据此认定同一家庭，属排除性边界材料。"
+      },
+      {
+        "evidence_id": "ev-d3002640e8500baf43cd06f3",
+        "relation": "boundary",
+        "quote": "This case is intended for educational purposes only. Any resemblance to actual persons living or dead is purely coincidental.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "Eberman教学案例自述为虚构，且拼写与Oberman不同，不能作为该家庭接班证据。"
+      },
+      {
+        "evidence_id": "ev-c13aae74d75b29232e24d35b",
+        "relation": "boundary",
+        "quote": "Carroll returned to 4-H in 1968 when his son joined as a member.",
+        "publication_date": "2011-04-21",
+        "observation_end": null,
+        "limitation": "Carroll Oberman为另一人物，无证据表明与书中受访农场主为同一家庭，不能替代其接班结果。"
+      },
+      {
+        "evidence_id": "ev-9c2caf2e19f0d9933b6e1532",
+        "relation": "boundary",
+        "quote": "Deedholder: : OBERMAN CARROLL I REVOCABLE TRUST",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "县评估记录属Carroll Oberman信托，与书中家庭无已证关联，不能证明该农场是否由儿子接手。"
+      },
+      {
+        "evidence_id": "ev-ddbe9013b71b6d9b41a95589",
+        "relation": "boundary",
+        "quote": "Seller: : OBERMAN VIRGINIA L ESTATE",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "2025年交易涉及Carroll Oberman相关信托，无法对应书中受访家庭，且交易本身不说明接班安排。"
+      }
+    ],
+    "remaining_gap": "缺少能把书中奥伯曼受访家庭（独子、1988年前后爱荷华农场）与其后续子女数、儿子是否返乡及农场是否由家庭接班的原始资料相连的证据；现有同姓材料均不能确认同一主体。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-6451d807f1e851cf6883",
+      "url": "https://www.legis.iowa.gov/docs/publications/REDBK/860903.pdf",
+      "title": "ev-r2-l1-oberman-exclusion",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-oberman-exclusion",
+      "archive_sha256": "420d35e0f6ded92b697d4e9bd5e539baf0af7e0e5fc568070a4d8f98bcbe86bb",
+      "archive_path": "data/sources/r2-l1-search-6.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d3002640e8500baf43cd06f3",
+      "url": "https://www.extension.iastate.edu/Pages/communications/farmsit/materials/eberman.html",
+      "resolved_url": "https://www.extension.iastate.edu/Pages/communications/farmsit/materials/eberman.html",
+      "title": "Rich and Sharon Eberman",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:28.663068+00:00",
+      "archive_sha256": "96593a1e34d58c5d8a3291076a3d4dc0c01f21aec57fe17c3e6bdecca288e23e",
+      "archive_path": "jobs/e8b7a780dd6e8a331c7cdf6d/96593a1e34d58c5d8a3291076a3d4dc0c01f21aec57fe17c3e6bdecca288e23e.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c13aae74d75b29232e24d35b",
+      "url": "https://www.iowa4hfoundation.org/what-we-do/recognizing-service/iowa-4-h-hall-of-fame/iowa-4-h-hall-of-fame-inductees/2011/04/21/2010-des-moines-county-carroll-oberman",
+      "resolved_url": "https://www.iowa4hfoundation.org/what-we-do/recognizing-service/iowa-4-h-hall-of-fame/iowa-4-h-hall-of-fame-inductees/2011/04/21/2010-des-moines-county-carroll-oberman",
+      "title": "2010 Des Moines County - Carroll Oberman | Iowa 4-H Hall of Fame Inductees | Iowa 4-H Foundation",
+      "published_date": "2011-04-21",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:28.663306+00:00",
+      "archive_sha256": "92a11598145a36bf20b14d16650af2a1d17eda09402296b160fada68a7a9f5ec",
+      "archive_path": "jobs/e8b7a780dd6e8a331c7cdf6d/92a11598145a36bf20b14d16650af2a1d17eda09402296b160fada68a7a9f5ec.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-9c2caf2e19f0d9933b6e1532",
+      "url": "https://desmoines.iowaassessors.com/sale/f907488f564ba414474e89f78464bb58",
+      "resolved_url": "https://desmoines.iowaassessors.com/sale/f907488f564ba414474e89f78464bb58",
+      "title": "Sale Details | Des Moines County Assessor",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:28.663477+00:00",
+      "archive_sha256": "0b5b56b44873cc529dabaa5b56680e95e7adf9fd228f9679c1c0678215260058",
+      "archive_path": "jobs/e8b7a780dd6e8a331c7cdf6d/0b5b56b44873cc529dabaa5b56680e95e7adf9fd228f9679c1c0678215260058.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ddbe9013b71b6d9b41a95589",
+      "url": "https://desmoines.iowaassessors.com/sale/a81e10b9d730279d3952ef9eb9a7d6bd/",
+      "resolved_url": "https://desmoines.iowaassessors.com/sale/a81e10b9d730279d3952ef9eb9a7d6bd/",
+      "title": "Sale Details | Des Moines County Assessor",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:37.249116+00:00",
+      "archive_sha256": "612640f9c1e31747d559200c2214b22f5d4a3173a472a6b076ca69af30bd20c1",
+      "archive_path": "jobs/e8b7a780dd6e8a331c7cdf6d/612640f9c1e31747d559200c2214b22f5d4a3173a472a6b076ca69af30bd20c1.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "Oberman Iowa farm son college graduate return farm succession interview 1980s",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Oberman family farm Iowa sold no son successor county history",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "\"Oberman\" Iowa farm son \"return\" farm succession 1990s county history biography",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "\"Oberman\" Iowa farm sold auction estate no son successor county assessor deed",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少能把书中奥伯曼受访家庭（独子、1988年前后爱荷华农场）与其后续子女数、儿子是否返乡及农场是否由家庭接班的原始资料相连的证据；现有同姓材料均不能确认同一主体。",
+  "source_statuses": [
+    {
+      "url": "https://www.extension.iastate.edu/Pages/communications/farmsit/materials/eberman.html",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.iowa4hfoundation.org/what-we-do/recognizing-service/iowa-4-h-hall-of-fame/iowa-4-h-hall-of-fame-inductees/2011/04/21/2010-des-moines-county-carroll-oberman",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://desmoines.iowaassessors.com/sale/f907488f564ba414474e89f78464bb58",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://desmoines.iowaassessors.com/sale/a81e10b9d730279d3952ef9eb9a7d6bd/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "814a810662301cb44f0a0460bafa07b6f5c4cd103c92d34d5735c948e3e6c199"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "4c7437280bf40beedd14ef3527598be3",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "da9c4236484a3f1cb67e0649973a9ad2",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "76323f4e4b3a015ce3cafade19c45796fd58146cf05e0afab8c73a9c110b618a"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "f4eb1c8f78631e2711d1493a78677423",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "1f016eac1e215e903f0c26d85ebffb5746891e69e51df2dae8fc49773e3b593c"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "8048ef129493efc47b81aedef8b4f42f",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "bcb857680c5cf535403ddbecaa59a3cc",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "c0d166881f3aa8dc8437711b2fae09de87bed4ed7adc25d8b116e2cba6a31908"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "bde5acc9be995b36c05ecd86cf14b363",
+      "cost_estimate_USD": 0.001,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "bc65bbe1de9ec65fc4981fe7ec3480a42a9fbf14632d6c757d82e7df2a750800"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "9d87274e12c254227e6926da8fdaf16f32485c3f9def2495f4e855a9312fe8c6"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000025336-000025404",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000025336-000025404",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "attribution",
+      "scope": "对象为书中爱荷华农场主奥伯曼（Oberman）的独子：大学毕业后是否最终返回农场；条件分项为若不返回，独子无人接班是否使农场出现问题。观察时段为1988年前后受访至cutoff 2026-11-09，需能将该受访家庭与后续经营、子女数及接班记录相连的原始资料。",
+      "reason": "原文是受访农场主奥伯曼对儿子最终返乡的个人信念，属明确未来判断，但现有证据无法把任何后续农场记录对应到该受访家庭。检索到的Oberman/Eberman材料或为同姓他人、或为虚构教学案例，均不能作为该家庭结果。",
+      "limitation": "无法确认受访者全名、农场位置与儿子身份，故不能以同姓农场主、4-H人物或县评估记录替代；条件分项（不返乡致农场出问题）同样无对应证据。",
+      "evidence_ids": [
+        "prior-6451d807f1e851cf6883",
+        "ev-d3002640e8500baf43cd06f3",
+        "ev-c13aae74d75b29232e24d35b",
+        "ev-9c2caf2e19f0d9933b6e1532",
+        "ev-ddbe9013b71b6d9b41a95589"
+      ],
+      "method": "依赖家庭继承与个人信念推断接班",
+      "method_basis": "inferred",
+      "observation_end": null,
+      "future_time_text": "最终",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-6451d807f1e851cf6883",
+          "relation": "boundary",
+          "quote": "爱荷华官方名录检索出现农民及银行董事Claude Oberman，1889年生，登记三子；与原书1988年农场主“独子”线索不匹配，不能据同姓强认。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "同姓但子女数不符，明确不能据此认定同一家庭，属排除性边界材料。"
+        },
+        {
+          "evidence_id": "ev-d3002640e8500baf43cd06f3",
+          "relation": "boundary",
+          "quote": "This case is intended for educational purposes only. Any resemblance to actual persons living or dead is purely coincidental.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "Eberman教学案例自述为虚构，且拼写与Oberman不同，不能作为该家庭接班证据。"
+        },
+        {
+          "evidence_id": "ev-c13aae74d75b29232e24d35b",
+          "relation": "boundary",
+          "quote": "Carroll returned to 4-H in 1968 when his son joined as a member.",
+          "publication_date": "2011-04-21",
+          "observation_end": null,
+          "limitation": "Carroll Oberman为另一人物，无证据表明与书中受访农场主为同一家庭，不能替代其接班结果。"
+        },
+        {
+          "evidence_id": "ev-9c2caf2e19f0d9933b6e1532",
+          "relation": "boundary",
+          "quote": "Deedholder: : OBERMAN CARROLL I REVOCABLE TRUST",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "县评估记录属Carroll Oberman信托，与书中家庭无已证关联，不能证明该农场是否由儿子接手。"
+        },
+        {
+          "evidence_id": "ev-ddbe9013b71b6d9b41a95589",
+          "relation": "boundary",
+          "quote": "Seller: : OBERMAN VIRGINIA L ESTATE",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "2025年交易涉及Carroll Oberman相关信托，无法对应书中受访家庭，且交易本身不说明接班安排。"
+        }
+      ],
+      "remaining_gap": "缺少能把书中奥伯曼受访家庭（独子、1988年前后爱荷华农场）与其后续子女数、儿子是否返乡及农场是否由家庭接班的原始资料相连的证据；现有同姓材料均不能确认同一主体。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象为《美国反对美国》中爱荷华农场主奥伯曼（Oberman）的独子：其大学毕业后是否最终返回农场；条件分项为若不返回，独子无人接班是否使农场出现问题。可观察口径是能将该受访家庭与后续农场经营、子女数及接班记录相连的原始资料；反证包括该家庭无子/多子、农场已出售或非家庭接班、儿子长期不返乡且农场由他人接手。不以全美农场老龄化或同姓他人替代此家庭结果。",
+  "elapsed_seconds": 33.918,
+  "completed_at": "2026-11-09T07:58:47.694813+00:00"
+}

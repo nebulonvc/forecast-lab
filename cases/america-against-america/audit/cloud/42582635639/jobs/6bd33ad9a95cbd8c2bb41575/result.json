@@ -1,0 +1,452 @@
+{
+  "claim_id": "txt-1c4066fc0c-000118308-000118342",
+  "version": "search-verifier-v1",
+  "input_sha256": "7053a3941b3654f68e7cc007fdea6c81bf684f4b7b79a4371416ecde7c4d44c1",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000118308-000118342",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "条件性预测：若东西方经济水平倒转（或拉平），美国将管制主张改革资本主义制度的激进组织。观察口径：①东西方经济水平是否倒转/拉平（名义GDP总量、PPP人均GDP代理，需说明阵营成员与跨期对应）；②美国是否对自称社会主义/主张改革资本主义的激进组织实施新的管制（立法、执法、监控记录）。观察时段：1991年至cutoff 2026-11-09。",
+    "reason": "原文为明确if条件句，触发条件“东西方经济水平倒转/拉平”在观察期内未明确成立：现有数据仅显示中国PPP总量或人均相对美国上升，但“东西方阵营”对应关系与“倒转/拉平”口径均未确定。条件未满足，结果判断无法评分。",
+    "limitation": "“东西方”阵营成员与“经济水平倒转/拉平”缺乏原文可操作化定义；FBI COINTELPRO材料为1961-71年历史记录，早于条件可能成立时段，不能作为条件触发后的管制证据。",
+    "evidence_ids": [
+      "prior-d93ae353db08f274a544",
+      "ev-472a617faee18ef2b1bb69e3",
+      "ev-e39c2ef160aeac87d83535ef"
+    ],
+    "method": "经济吸引力变动引起意识形态威胁与管制反应",
+    "method_basis": "inferred",
+    "observation_end": "2026-11-09",
+    "future_time_text": "有一天",
+    "condition_state": "not_met",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-d93ae353db08f274a544",
+        "relation": "boundary",
+        "quote": "世界银行API2024 PPP人均GDP：中国约27139.52国际元、美国86169.66；与总量排名采用不同口径。",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "仅为人均PPP口径，中国仍远低于美国，不能证明“倒转/拉平”；且未覆盖“东方阵营”其他成员。"
+      },
+      {
+        "evidence_id": "ev-472a617faee18ef2b1bb69e3",
+        "relation": "boundary",
+        "quote": "| China | 2024 | 38190084585497.84 |",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "仅为中国PPP总量序列，未提供美国对照值，也未定义“东西方”阵营，无法直接判断倒转/拉平。"
+      },
+      {
+        "evidence_id": "ev-e39c2ef160aeac87d83535ef",
+        "relation": "background",
+        "quote": "This is the Federal Bureau of Investigation (FBI) main Headquarters (HQ) file on its counterintelligence program (COINTELPRO) against the Socialist Workers Party (SWP) from 1961-71.",
+        "publication_date": null,
+        "observation_end": "1971-12-31",
+        "limitation": "记录的是1961-71年历史监控，早于条件可能成立时段，不能证明条件触发后美国实施了新管制。"
+      }
+    ],
+    "remaining_gap": "需明确“东西方”阵营成员及“经济水平倒转/拉平”的操作化指标（名义GDP总量或PPP人均、对应年份），并检索条件可能成立后美国对激进组织的新立法、执法或监控记录；现有证据不足以判定条件成立或结果发生。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000118308-000118342",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "条件性预测：若东西方经济水平倒转（或拉平），美国将管制主张改革资本主义制度的激进组织。观察口径：①东西方经济水平是否倒转/拉平（名义GDP总量、PPP人均GDP代理，需说明阵营成员与跨期对应）；②美国是否对自称社会主义/主张改革资本主义的激进组织实施新的管制（立法、执法、监控记录）。观察时段：1991年至cutoff 2026-11-09。",
+    "reason": "原文为明确if条件句，触发条件“东西方经济水平倒转/拉平”在观察期内未明确成立：现有数据仅显示中国PPP总量或人均相对美国上升，但“东西方阵营”对应关系与“倒转/拉平”口径均未确定。条件未满足，结果判断无法评分。",
+    "limitation": "“东西方”阵营成员与“经济水平倒转/拉平”缺乏原文可操作化定义；FBI COINTELPRO材料为1961-71年历史记录，早于条件可能成立时段，不能作为条件触发后的管制证据。",
+    "evidence_ids": [
+      "prior-d93ae353db08f274a544",
+      "ev-472a617faee18ef2b1bb69e3",
+      "ev-e39c2ef160aeac87d83535ef"
+    ],
+    "method": "经济吸引力变动引起意识形态威胁与管制反应",
+    "method_basis": "inferred",
+    "observation_end": "2026-11-09",
+    "future_time_text": "有一天",
+    "condition_state": "not_met",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-d93ae353db08f274a544",
+        "relation": "boundary",
+        "quote": "世界银行API2024 PPP人均GDP：中国约27139.52国际元、美国86169.66；与总量排名采用不同口径。",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "仅为人均PPP口径，中国仍远低于美国，不能证明“倒转/拉平”；且未覆盖“东方阵营”其他成员。"
+      },
+      {
+        "evidence_id": "ev-472a617faee18ef2b1bb69e3",
+        "relation": "boundary",
+        "quote": "| China | 2024 | 38190084585497.84 |",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "仅为中国PPP总量序列，未提供美国对照值，也未定义“东西方”阵营，无法直接判断倒转/拉平。"
+      },
+      {
+        "evidence_id": "ev-e39c2ef160aeac87d83535ef",
+        "relation": "background",
+        "quote": "This is the Federal Bureau of Investigation (FBI) main Headquarters (HQ) file on its counterintelligence program (COINTELPRO) against the Socialist Workers Party (SWP) from 1961-71.",
+        "publication_date": null,
+        "observation_end": "1971-12-31",
+        "limitation": "记录的是1961-71年历史监控，早于条件可能成立时段，不能证明条件触发后美国实施了新管制。"
+      }
+    ],
+    "remaining_gap": "需明确“东西方”阵营成员及“经济水平倒转/拉平”的操作化指标（名义GDP总量或PPP人均、对应年份），并检索条件可能成立后美国对激进组织的新立法、执法或监控记录；现有证据不足以判定条件成立或结果发生。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-d93ae353db08f274a544",
+      "url": "https://api.worldbank.org/v2/country/US;CN/indicator/NY.GDP.PCAP.PP.CD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-r2-l2-wb-percap",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-wb-percap",
+      "archive_sha256": "fc426583cf86a8c06cfd128d329e4e9e9b9939952510dbca6eb1a0d6ada736a5",
+      "archive_path": "data/sources/r2-l2-wb-percap.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-525b2b1c5ae2093ba9a2",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.CD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-cd",
+      "published_date": "2026-10-08",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-cd",
+      "archive_sha256": "7ad5c1c4f44e15850a861521955b29727497d2cb232432f3dbc2e56ba20d4e42",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.CD.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-708663f6b6edcead488f",
+      "url": "https://history.state.gov/milestones/1989-1992/collapse-soviet-union",
+      "title": "ev-l2-soviet-collapse",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-l2-soviet-collapse",
+      "archive_sha256": "2ad477d822db290114ff9d7db517c69d10cb42510281166370f67a5cfad2e478",
+      "archive_path": "data/sources/lane2-ev-l2-soviet-collapse.html",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-98078e2acaeec3866737de0c",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD",
+      "resolved_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD",
+      "title": "GDP per capita, PPP (current international $) | Data",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:57.874834+00:00",
+      "archive_sha256": "d85a7d39885611dea4bd4f00bb003ad0dbd8eb71870d62b14616d554dfcc90e8",
+      "archive_path": "jobs/6bd33ad9a95cbd8c2bb41575/d85a7d39885611dea4bd4f00bb003ad0dbd8eb71870d62b14616d554dfcc90e8.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ba2de6b105ee9deb1b5bd4a0",
+      "url": "https://chinainfigures.com/indicators/gdp/",
+      "resolved_url": "https://chinainfigures.com/indicators/gdp/",
+      "title": "China GDP and the China–US comparison | China in Figures",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:57.875059+00:00",
+      "archive_sha256": "98fd43202caca7d225be4dd6b4b8e508eae0b058932f0563590f1be69a7d4d2a",
+      "archive_path": "jobs/6bd33ad9a95cbd8c2bb41575/98fd43202caca7d225be4dd6b4b8e508eae0b058932f0563590f1be69a7d4d2a.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-365ea6ff0c0418df88634e58",
+      "url": "https://vault.fbi.gov/cointel-pro/socialist-workers-party",
+      "resolved_url": "https://vault.fbi.gov/cointel-pro/socialist-workers-party",
+      "title": "FBI — Federal Bureau of Investigation",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:57.875261+00:00",
+      "archive_sha256": "fd94c6e1afa037e666d871094e9a43b255fba1da983eaccb9710ac5ce283e0f0",
+      "archive_path": "jobs/6bd33ad9a95cbd8c2bb41575/fd94c6e1afa037e666d871094e9a43b255fba1da983eaccb9710ac5ce283e0f0.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e39c2ef160aeac87d83535ef",
+      "url": "https://archive.org/details/FBI-COINTELPRO-Socialist-Workers-Party",
+      "resolved_url": "https://archive.org/details/FBI-COINTELPRO-Socialist-Workers-Party",
+      "title": "FBI COINTELPRO-Socialist Workers Party : U.S. Federal Bureau of Investigation (FBI) : Free Download, Borrow, and Streaming : Internet Archive",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:57.875433+00:00",
+      "archive_sha256": "bdade4ba5b6de21517f14d3b89860d5127498255c79b991539a18b27eef03d3f",
+      "archive_path": "jobs/6bd33ad9a95cbd8c2bb41575/bdade4ba5b6de21517f14d3b89860d5127498255c79b991539a18b27eef03d3f.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-472a617faee18ef2b1bb69e3",
+      "url": "https://data.un.org/Data.aspx?q=gdp+china&d=WDI&f=Indicator_Code%3ANY.GDP.MKTP.PP.CD%3BCountry_Code%3ACHN",
+      "resolved_url": "https://data.un.org/Data.aspx?q=gdp+china&d=WDI&f=Indicator_Code%3ANY.GDP.MKTP.PP.CD%3BCountry_Code%3ACHN",
+      "title": "UNdata | record view | GDP, PPP (current international $)",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:05.430977+00:00",
+      "archive_sha256": "52df9a7d0ed5c291c55428649b59f734ec1e9529ee4431c8ab000593fd0448f2",
+      "archive_path": "jobs/6bd33ad9a95cbd8c2bb41575/52df9a7d0ed5c291c55428649b59f734ec1e9529ee4431c8ab000593fd0448f2.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d0262063a049ba1699709892",
+      "url": "https://macrovedia.com/series/25d7be0183ad1a0d/",
+      "resolved_url": "https://macrovedia.com/series/25d7be0183ad1a0d/",
+      "title": "GDP, PPP (current international $) | MacroVedia",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:05.431262+00:00",
+      "archive_sha256": "1cd21937e288de272a4623edd4486466dfc2d78aee64164cd471eedae47b8b72",
+      "archive_path": "jobs/6bd33ad9a95cbd8c2bb41575/1cd21937e288de272a4623edd4486466dfc2d78aee64164cd471eedae47b8b72.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "World Bank GDP per capita PPP China United States 1991 2024 comparison data",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "United States government surveillance repression socialist organizations FBI COINTELPRO historical records",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "World Bank WDI NY.GDP.MKTP.PP.CD China United States 1991 2024 GDP PPP current international dollars data",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "United States government surveillance repression socialist organizations FBI COINTELPRO historical records",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "需明确“东西方”阵营成员及“经济水平倒转/拉平”的操作化指标（名义GDP总量或PPP人均、对应年份），并检索条件可能成立后美国对激进组织的新立法、执法或监控记录；现有证据不足以判定条件成立或结果发生。",
+  "source_statuses": [
+    {
+      "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://chinainfigures.com/indicators/gdp/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://vault.fbi.gov/cointel-pro/socialist-workers-party",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://archive.org/details/FBI-COINTELPRO-Socialist-Workers-Party",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://data.un.org/Data.aspx?q=gdp+china&d=WDI&f=Indicator_Code%3ANY.GDP.MKTP.PP.CD%3BCountry_Code%3ACHN",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://macrovedia.com/series/25d7be0183ad1a0d/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "c6e3f0b36afcef0f5c66d84215949a2e849490c8137be0e74b3031cd4f47d131"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "c3379a21f044b94866eb6aab21717b6f",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "798acf4a1b890a36582c2874162faeab",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "85ef133c4c5ab2060d1fc9368236ca4c1f3697f0454a7637dca88d5f133b2b27"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "04ed3fbcca9388a6e3b8de5b06bafc5f",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "ace1a7daf98eaefe268b00d0d9aa7727b2f6d4266f5c738d74a8c41d5eb6def9"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "911982a318708fc9bf23bc6c8f55e850",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "798acf4a1b890a36582c2874162faeab",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "f8b1e985140e81f0939185f4a61d3571d265e56a03477fc2a9fa218e2cf22bcc"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "9667134b268136b8ae762c3dcf46fe8f",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "4fec3b2a15b09336e7d0132153d837d9715b58424813203bda58d09139652af7"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "a76af0a51ed5c8a0375961bdd0e23363da06f62c5b80fa6a3c891816ecfc490c"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000118308-000118342",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000118308-000118342",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "条件性预测：若东西方经济水平倒转（或拉平），美国将管制主张改革资本主义制度的激进组织。观察口径：①东西方经济水平是否倒转/拉平（名义GDP总量、PPP人均GDP代理，需说明阵营成员与跨期对应）；②美国是否对自称社会主义/主张改革资本主义的激进组织实施新的管制（立法、执法、监控记录）。观察时段：1991年至cutoff 2026-11-09。",
+      "reason": "原文为明确if条件句，触发条件“东西方经济水平倒转/拉平”在观察期内未明确成立：现有数据仅显示中国PPP总量或人均相对美国上升，但“东西方阵营”对应关系与“倒转/拉平”口径均未确定。条件未满足，结果判断无法评分。",
+      "limitation": "“东西方”阵营成员与“经济水平倒转/拉平”缺乏原文可操作化定义；FBI COINTELPRO材料为1961-71年历史记录，早于条件可能成立时段，不能作为条件触发后的管制证据。",
+      "evidence_ids": [
+        "prior-d93ae353db08f274a544",
+        "ev-472a617faee18ef2b1bb69e3",
+        "ev-e39c2ef160aeac87d83535ef"
+      ],
+      "method": "经济吸引力变动引起意识形态威胁与管制反应",
+      "method_basis": "inferred",
+      "observation_end": "2026-11-09",
+      "future_time_text": "有一天",
+      "condition_state": "not_met",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-d93ae353db08f274a544",
+          "relation": "boundary",
+          "quote": "世界银行API2024 PPP人均GDP：中国约27139.52国际元、美国86169.66；与总量排名采用不同口径。",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "仅为人均PPP口径，中国仍远低于美国，不能证明“倒转/拉平”；且未覆盖“东方阵营”其他成员。"
+        },
+        {
+          "evidence_id": "ev-472a617faee18ef2b1bb69e3",
+          "relation": "boundary",
+          "quote": "| China | 2024 | 38190084585497.84 |",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "仅为中国PPP总量序列，未提供美国对照值，也未定义“东西方”阵营，无法直接判断倒转/拉平。"
+        },
+        {
+          "evidence_id": "ev-e39c2ef160aeac87d83535ef",
+          "relation": "background",
+          "quote": "This is the Federal Bureau of Investigation (FBI) main Headquarters (HQ) file on its counterintelligence program (COINTELPRO) against the Socialist Workers Party (SWP) from 1961-71.",
+          "publication_date": null,
+          "observation_end": "1971-12-31",
+          "limitation": "记录的是1961-71年历史监控，早于条件可能成立时段，不能证明条件触发后美国实施了新管制。"
+        }
+      ],
+      "remaining_gap": "需明确“东西方”阵营成员及“经济水平倒转/拉平”的操作化指标（名义GDP总量或PPP人均、对应年份），并检索条件可能成立后美国对激进组织的新立法、执法或监控记录；现有证据不足以判定条件成立或结果发生。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象：王沪宁1991年《美国反对美国》中的条件性预测——若东西方经济水平倒转（或拉平），美国恐怕会管制主张改革资本主义制度的激进组织。可观察口径：①东西方经济水平是否发生倒转/拉平（用名义GDP总量、PPP人均GDP等代理，需说明阵营成员与跨期对应）；②美国是否对自称社会主义/主张改革资本主义的激进组织实施了新的管制（立法、执法、监控记录）。反证：经济水平未倒转/拉平，或倒转/拉平后美国未加强管制，或管制与意识形态威胁无关。",
+  "elapsed_seconds": 26.66,
+  "completed_at": "2026-11-09T08:00:15.594885+00:00"
+}

@@ -1,0 +1,205 @@
+# 埃文·约翰·戴维（Evan John David）《航空器：战争与和平中的发展及其商业未来》（Aircraft: Its Development in War and Peace and Its Commercial Future）：出版后预测人工核查
+
+- 案例目录：`cases/david-aircraft-commercial-future-v5/`
+- 出版日期：**1919 年**（Charles Scribner's Sons，纽约；写于一战结束后不久，书中已记 1919 年 5—7 月的 NC-4、阿尔科克—布朗和 R-34 跨大西洋飞行）。正文取自 Project Gutenberg #74358（reading-library 路径 `05-技术与科学/098-aircraft-its-development-in-war-and-peace-and-its-commercial-future.txt`，sha256 `f8e3598edeacb69c09e28decd5ff041bc0a89d1b861d5fe6015e9c7868d3aaf4`，与队列登记一致）。观察窗口为 1919→2026-11-15；书中明示的终点（“很快”“两年内”“不久之后”等）分别适用。
+- 截止日：2026-11-15（Asia/Shanghai）
+
+## 方法说明
+
+本稿按 METHOD.md 执行。抽取：用仓库 prepare_book v5 流水线（toolkit 85e6da1）把全文切成 181 块（3500 字符、600 字符上下文）；仓库代码未划出任何 matter_spans（excluded_matter_spans 与 skipped_matter_chunks 均为空），181 块全部逐块完整通读，包括书末附录（美国航空生产统计、王牌名单、NACA 航空术语表）和古腾堡许可证块，这些块通读后 predictions 均为空。助手按 DISCOVER_PROMPT_V5 逐块写出模型本应返回的 JSON，再由仓库代码完成引文对齐、归属降级、去重和导入，得到 60 条候选，其中 43 条可核验预测（约 0.24 条/块）。出版前（1919 年 9 月前）已发生的事实（如 1919 年的跨大西洋飞行）视为历史叙述，不计为预测；引述第三方（Praeger、Menoher、Marsh、飞机制造商、R-34 日志作者 Maitland 等）的预测降为 unclear（16 条），另 1 条作者表述（巨型商业机队构成永久威胁）无可观察结果，记为 unclear。核验：每条预测先写 scope，第 1 轮各做一次 support 和一次 counter 的 Exa 检索（86 次），第 2 轮仅对 6 条证据不足者再各做一次 support/counter（12 次），未启用自适应轮；只使用检索返回的 URL。所选来源经 Exa 内容接口抓取并存档于 data/sources（118 份，sha256），写入 data/evidence.jsonl（118 条），由助手逐条阅读存档文本后按四分类规则评断，再经 pipeline.py apply assess → check → report。本稿以 v5 抽取的候选句（`data/claims.jsonl` 中可判定的条目）为起点，由助手逐条对照书中原文与存档证据人工复核：先剔除非预测（出版前已发生的史实、一般规律、规范建议、反事实推演等），再对每条预测用 Exa 检索公开来源并抓取存档（`data/sources/`，sha256 记于 `data/evidence.jsonl`）核对至截止日。没有写明终点的预测按“出版日→2026-11-15”的隐含窗口判断；写明的终点未到、或条件句的前提从未出现，一律记“暂无法判断”，不强行判对错。所有来源均为实际抓取并存档的公开页面或文件；本稿未使用 DeepSeek 自动核验结论作为最终判断。
+
+五级判断：正确／趋势符合（方向对、程度或时点未完全到位）／部分符合（一部分成立）／错误／暂无法判断。严格胜率＝正确÷可判定；加权胜率＝（正确＋0.75×趋势符合＋0.5×部分符合）÷可判定；错误率＝错误÷可判定；可判定＝前四级之和。
+
+## 统计
+
+候选 43 条，剔除非预测 0 条，计入 **43 条预测**，其中 **42 条可判定**。
+
+| 判断 | 条数 |
+|---|---:|
+| 正确 | 22 |
+| 趋势符合 | 3 |
+| 部分符合 | 10 |
+| 错误 | 7 |
+| 暂无法判断 | 1 |
+
+| 指标 | 数值 |
+|---|---:|
+| 严格胜率 | **52.4%**（22/42） |
+| 加权胜率 | **69.6%** |
+| 错误率 | **16.7%**（7/42） |
+| 未定占比（暂无法判断/预测） | 2.3%（1/43） |
+
+## 总体评价
+
+戴维对航空商业前景的技术与运营判断大多成立：大型载客水上飞机、轰炸机改装客机、封闭客舱、航空公司机场间客运、灯光航路与夜航、低空特技与最低安全高度立法、航空测绘、环球飞行、各国首都与中南美洲航线网、齐柏林飞艇载客、民用飞机占绝大多数、飞行死亡率降至极低等均得到印证；1953 年邮政部以空运运送 3 美分平信（纽约—芝加哥）更与书中“3 美分一封”的具体判断吻合。部分符合集中在价格与时间表：运动飞机一度与中价汽车相当但后来昂贵、伦敦—纽约定期航班晚了约 20 年、北京东京并非“下一批”、夜航未与白天同样普遍、海关只在区域内取消。主要误判是社会政治层面的乐观设想：大型飞机价格降到高档汽车、水上飞机廉价且绝对安全、美国众多氦气飞艇公司、城市人口彻底重分布、英伦三岛被放弃、国际联盟废除战争、飞机消灭战争与民族主义。
+
+## 逐条判断
+
+编号为 `data/claims.jsonl` 中可判定候选的顺序号。
+
+### 正确（22 条）
+
+- **#1** 「it is the forerunner of the great passenger-carrying seaplanes of the future.」  
+  判断：**正确**。1930年代出现了波音314“快船”等大型载客水上飞机，吉尼斯记录其翼展46.3米、为商业载客最大水上飞机；泛美、帝国航空的水上飞机航线是当时远程客运主力，预测的大型载客水上飞机确已出现（二战后才衰落）。  
+  来源：<https://guinnessworldrecords.com/world-records/largest-flying-boat-in-commercial-operation>；<https://airandspace.si.edu/air-and-space-quarterly/issue-11/flying-boats-history>；<https://doi.org/10.17265/2159-5836/2014.07.011>
+- **#2** 「with the increase in the size of planes there ought to be much increase in the size of aeroplane guns.」  
+  判断：**正确**。二战期间美军B-25G/H和部分A-26B在机头装75毫米炮，37毫米航炮亦有批量使用；现代战斗机普遍装备20—30毫米航炮，机载火炮口径较1919年的步枪口径机枪大幅增加。  
+  来源：<https://www.nationalmuseum.af.mil/Visit/Museum-Exhibits/Fact-Sheets/Display/Article/197613/t9e1-75mm-cannon/>；<https://aerospaceweb.org/question/weapons/q0174.shtml>；<https://flying-guns.com/flying-guns-big-guns/>
+- **#3** 「Without a doubt when large bimotored machines have been put into aero mail service, letters will be carried fo…」  
+  判断：**正确**。1953年10月邮政部开始试验以空运运送普通3美分平信（纽约、华盛顿与芝加哥之间，按舱位空余），USPS史料称此后二十年空运普通信件已成常态；双发客机投入邮运后，纽约—芝加哥信件以3美分空运成为事实。  
+  来源：<https://postalmuseum.si.edu/object/npm_1982.0157.519>；<https://about.usps.com/who/profile/history/pdf/airmail-route-maps.pdf>；<https://docslib.org/doc/2988148/three-cent-mail-now-being-flown-in-jpo-experiment>；<https://about.usps.com/who/profile/history/domestic-letter-rates-since-1863.htm>
+- **#4** 「Night flying for commercial purposes, though, might easily be developed into a comparatively safe means of aer…」  
+  判断：**正确**。1923—1924年美国灯光航路建成后开始定期夜间航空邮政，横贯大陆邮件压缩到29小时；此后夜航成为商业航空常规运行，夜航已发展为相对安全的运输方式。  
+  来源：<https://airandspace.si.edu/explore/stories/how-did-air-mail-pilots-find-their-way>；<https://www.smithsonianmag.com/air-space-magazine/no-longer-afraid-of-the-dark-11347460/>；<https://postalmuseum.si.edu/museum-highlight/airmail-beacon>
+- **#5** 「With the growth of flying, lighthouses and captive balloons poised high above the fog or clouds will undoubted…」  
+  判断：**正确**。美国商务部1926年接管灯光航路后将其扩展到18,000英里、1,500多座航空灯塔，蒙大拿等州至1940年代仍有数十座灯塔，航空灯塔确曾普遍设立（后被无线电导航取代）。  
+  来源：<https://www.smithsonianmag.com/air-space-magazine/by-stars-beacons-and-satellites-11663723/>；<https://en.wikipedia.org/wiki/Transcontinental_Airway_System>；<https://mdt.mt.gov/aviation/beacons.aspx>
+- **#7** 「Eventually a law will be passed preventing, on pain of forfeiting of a license, looping, spinning, etc., below…」  
+  判断：**正确**。美国1926年《航空商业法》后开始联邦飞行规章，现行14 CFR 91.303禁止在城镇上空、露天人群上空及离地1,500英尺以下作特技飞行，违规可受执照处罚，预测的法律已出现。  
+  来源：<https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-D/section-91.303>；<https://generalaviationnews.com/2011/10/23/the-first-regulations/>；<https://www.faa.gov/documentLibrary/media/Advisory_Circular/91-48.pdf>
+- **#8** 「The result will be a decrease in the number of flying casualties and a proportionate increase in the confidenc…」  
+  判断：**正确**。MIT研究显示商业航空每次登机的死亡风险从1968—1977年的约1/35万降至2018—2022年的1/1370万；Our World in Data统计1970年代每百万航班约6起致命事故，此后大幅下降，飞行伤亡下降的方向成立。  
+  来源：<https://news.mit.edu/2024/study-flying-keeps-getting-safer-0807>；<https://ourworldindata.org/data-insights/commercial-flights-have-become-significantly-safer-in-recent-decades>；<https://www.boeing.com/content/dam/boeing/v2/safety/statsum.pdf>
+- **#9** 「The large Caproni and Handley Page bombers will do some passenger carrying.」  
+  判断：**正确**。亨德利·佩奇运输公司首批客机即由O/400轰炸机改装，飞伦敦—巴黎航线；卡普罗尼Ca.4系列衍生出可载25—30人的Ca.48客机，两型轰炸机都承担了客运（1919年起）。  
+  来源：<https://en.wikipedia.org/wiki/Handley_Page_Transport>；<https://flyingmachines.ru/Site2/Crafts/Craft33283.htm>；<https://www.flightglobal.com/ops-safety/2019/08/retrospective-the-centenary-of-international-air-services/>
+- **#10** 「the dangers of flying can be reduced to proportions commensurate with the desire of the public to get from pla…」  
+  判断：**正确**。政府以多发动机、双向无线电等安全装备为条件奖励航空公司，1930年代引入无线电导航，此后商业航空在固定航路、多发、无线电引导下运行，死亡风险降至每1370万次登机一次，条件成立且危险已降到公众可接受程度。  
+  来源：<https://airandspace.si.edu/stories/editorial/making-modern-airliner>；<https://aviationweek.com/air-transport/short-history-making-flying-safer>；<https://news.mit.edu/2024/study-flying-keeps-getting-safer-0807>
+- **#12** 「Needless to say, aerial laws will be passed to prevent stunting with passengers and requiring machines to fly …」  
+  判断：**正确**。1926年起美国发布《航空商业规章》，现行14 CFR 91.119(a)要求任何地点飞行高度须能在动力装置失效时无不当危险地紧急着陆，91.303限制特技飞行，预测的航空法规已通过。  
+  来源：<https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-B/subject-group-ECFRe4c59b5f5506932/section-91.119>；<http://ia601808.us.archive.org/1/items/AirCommerceRegulations/aircommerceregulations1928.pdf>；<https://www.ecfr.gov/current/title-14/chapter-I/subchapter-F/part-91/subpart-D/section-91.303>
+- **#14** 「With the increase in the size of the aeroplanes and the number of motors, the nacelles and the enclosed roomy …」  
+  判断：**正确**。1920年代福克F.VII和1926年首飞的福特三发机已采用封闭客舱，后者被视为首款豪华客机，随着机体增大宽敞封闭客舱成为客机标准配置。  
+  来源：<https://www.key.aero/article/story-first-class-air-travel>；<https://en.wikipedia.org/wiki/Fokker_F.VII>；<https://www.eaa.org/eaa/about-eaa/eaa-media-room/eaa-ford-tri-motor-media-room/eaas-tri-motor-history>
+- **#19** 「These machines will be sold to transportation companies, which will make a business of carrying people from ae…」  
+  判断：**正确**。1919年起KLM、亨德利·佩奇运输等航空运输公司相继成立并经营机场间客运，美国航空公司在邮政合同扶持下于1920年代后期兴起，以运输公司经营载客业务的模式成为现实。  
+  来源：<https://www.klm.com/information/corporate/history>；<https://www.airandspace.si.edu/explore/stories/early-commercial-aviation>；<https://en.wikipedia.org/wiki/Handley_Page_Transport>
+- **#21** 「will expedite the work of the engineer and the surveyor over the jungles and unexplored and inaccessible porti…」  
+  判断：**正确**。1919年起美国海岸与大地测量局等开始利用航空照片编制地形图，航空摄影测量在两次大战之间迅速发展并成为地形测绘主要手段，飞机确实加快了测量工作。  
+  来源：<https://www.ngs.noaa.gov/wp-content/uploads/2018/06/history_of_photogrammetric_mapping-2.pdf>；<https://onlinepubs.trb.org/Onlinepubs/hrr/1973/452/452-007.pdf>；<https://geography.wisc.edu/histcart/wp-content/uploads/sites/12/2017/04/05collier.pdf>
+- **#23** 「the dangers will be diminished to infinitesimal proportions」  
+  判断：**正确**。IATA称2023年商业航空死亡风险为史上最低；MIT研究给出2018—2022年每1370万次登机1例死亡，2025年ICAO事故率降至每百万离港2.2起，航空危险已降到极小。  
+  来源：<https://news.mit.edu/2024/study-flying-keeps-getting-safer-0807>；<https://flightsafety.org/asw-article/exceptionally-safe/>；<https://mexicobusiness.news/aerospace/news/commercial-aviation-grew-safer-despite-higher-fatalities-2025>
+- **#24** 「Before long then we may reasonably expect that all the capitals of the world will be connected by air lines.」  
+  判断：**正确**。1920—1930年代欧洲各国与美国航空公司已建成跨大陆航线网，1933年法航网络覆盖斯德哥尔摩、突尼斯、圣地亚哥、西贡等；世界银行航空地球仪显示219个国家和地区的4,349个机场相互连通，各国首都已由航线相连。  
+  来源：<https://corporate.airfrance.com/en/historical-network>；<https://aviationglobe.worldbank.org/index.html>；<https://www.ghi-dc.org/research/german-european-history/research-program/empire-and-their-legacies/skyways-to-empire>
+- **#27** 「Then all the capitals of Central and South America will be joined up.」  
+  判断：**正确**。SCADTA自1921年在哥伦比亚运营，泛美1928年开始拉美客运并在1930年代通过收购覆盖西印度群岛和南美，中南美洲各国首都已由航线连接。  
+  来源：<https://www.panam.org/about-pahf/a-brief-history-of-pan-am-by-gene-banning>；<https://www.aerosociety.com/news/airlines-in-south-america-1920-1942-the-german-influence/>；<https://www.panam.org/enduring-legacy/r-e-g-davies-maps>
+- **#28** 「The globe will be aerially circumnavigated.」  
+  判断：**正确**。1924年美国陆军航空勤务队的道格拉斯世界巡航者历时175天、约27,000英里完成首次环球飞行，预测实现。  
+  来源：<https://en.wikipedia.org/wiki/First_aerial_circumnavigation>；<https://www.nps.gov/articles/douglasworldcruiserspearson.htm>；<https://www.airandspace.si.edu/stories/editorial/story-first-flight-around-world>
+- **#29** 「Tokio and Peking will be as accessible to New York as London now is」  
+  判断：**正确**。如今纽约—东京有每周数十班直飞、航程约14.5小时，纽约—北京直飞约14—17小时，远比1919年乘船往返纽约—伦敦的数天更快，东京、北京对纽约的可达性已达到甚至超过当时的伦敦。  
+  来源：<https://proflightsearch.com/search-flights/JFK-HND>；<https://2lnr.com/routes/jfk-pek>；<https://howlongfly.sg/flight-time/nyc/tyo/>
+- **#31** 「it is only an augury of what will be accomplished when the same vessels of the air will be put to carrying man…」  
+  判断：**正确**。齐柏林LZ 127号1928—1937年载客飞行，提供首个商业跨大西洋客运，1930—1937年开辟至南美的定期航线，兴登堡号亦载客往返纽约，齐柏林式飞艇确被用于载客。  
+  来源：<https://en.wikipedia.org/wiki/LZ_127_Graf_Zeppelin>；<https://www.zeppelin-museum.de/en/digital-offers/by-zeppelin-to-rio>；<https://www.worldhistory.org/article/2752/the-transatlantic-zeppelins/>
+- **#32** 「These defects will undoubtedly be greatly overcome with standardized construction of aircraft and the establis…」  
+  判断：**正确**。标准化适航规章和机场体系建立后，涡轮发动机可靠性极高、寿命达数万小时，波音统计近二十年致命事故率又降60%；断翼、单发迫降这类早期常见缺陷已大大克服。  
+  来源：<https://en.wikipedia.org/wiki/Turbine_engine_failure>；<https://www.boeing.com/content/dam/boeing/v2/safety/statsum.pdf>；<https://www.icas.org/icas_archive/ICAS2000/PAPERS/ICA0442.PDF>
+- **#35** 「Is there any reason to doubt that in a very short time man will extend the capacity of these airships or the d…」  
+  判断：**正确**。1929年英国R100、R101容积约500万立方英尺，为当时最大飞艇，格拉夫·齐柏林号实现环球与跨洋定期飞行，较R-34的能力明显提升，飞艇载重和航程在约十年内确有扩展。  
+  来源：<https://airshipsonline.com/airships/r-100/>；<https://www.science.org/doi/pdf/10.1126/science.70.1823.x.s>；<https://en.wikipedia.org/wiki/LZ_127_Graf_Zeppelin>
+- **#43** 「Since the preponderance of aircraft shall be commercial」  
+  判断：**正确**。GAMA统计全球通用航空飞机逾44万架，2025年商业机队约3.56万架，而《世界空军》名录统计全球军机约5.26万架，民用飞机占绝大多数。  
+  来源：<https://gama.aero/wp-content/uploads/GAMA_2019Databook_ForWebFinal-2020-02-19.pdf>；<https://www.blackjet.com/post/how-many-planes-are-there-in-the-world>；<https://www.aerotime.aero/articles/biggest-air-forces-worldwide-2025>
+
+### 趋势符合（3 条）
+
+- **#13** 「Therefore a bimotored machine, flying under peace conditions, should be able to make its aerodrome safely near…」  
+  判断：**趋势符合**。FAA的ETOPS规章与政策允许双发客机在距备降场最多180分钟的航路上运行，其安全依据是发动机推力丧失风险与备降能力，说明监管机构认定双发客机单发失效后可安全飞抵机场；但轻型双发飞机单发失效后仍多发失控事故，且无直接“几乎每次”的统计，按趋势符合。  
+  来源：<https://www.faa.gov/media/32041>；<https://www.federalregister.gov/documents/2007/01/16/07-39/extended-operations-etops-of-multi-engine-airplanes>；<https://www.atsb.gov.au/sites/default/files/media/36444/Power_loss_twin_engine_aircraft.pdf>
+- **#22** 「the expense will be reduced to within the means of all」  
+  判断：**趋势符合**。GAO指出美国机票中位价自1980年以来按不变价下降近40%，1978年后实际票价约减半，航空出行费用大幅下降；但波音CEO称全球80%以上的人从未乘机，尚未达到“人人可承受”，按趋势符合。  
+  来源：<https://www.gao.gov/assets/gao-06-630.pdf>；<https://www.theatlantic.com/business/archive/2013/02/how-airline-ticket-prices-fell-50-in-30-years-and-why-nobody-noticed/273506/>；<https://www.cnbc.com/2017/12/07/boeing-ceo-80-percent-of-people-never-flown-for-us-that-means-growth.html>
+- **#39** 「one international language may have to be adopted for trade and convenience.」  
+  判断：**趋势符合**。ICAO于1950年代确定英语为航空通用语，英语已成为外交、商业、科技和航空的主导通用语；但并无正式“采用”的单一国际语言，世界语等人工语言未获普及，按趋势符合。  
+  来源：<https://www.icaea.aero/about/aviation-english-getting-started>；<https://en.wikipedia.org/wiki/List_of_lingua_francas>；<https://pmc.ncbi.nlm.nih.gov/articles/PMC61387/>
+
+### 部分符合（10 条）
+
+- **#6** 「with the increase in the size and number of aircraft, night flying will become as commonplace as day flying.」  
+  判断：**部分符合**。夜间运行已成为客货运常规组成部分（英国文献综述称夜航在客运衔接和货运中起结构性作用），但2025年美国国内航班中红眼航班仅约1/60，欧洲多数大机场实行宵禁或配额，夜航并未与白天一样普遍，仅部分符合。  
+  来源：<https://assets.publishing.service.gov.uk/media/6a75acff3a690e9ef0ea6d2a/socio-economic-impacts-night-flying-literature-review.pdf>；<https://championtraveler.com/news/red-eye-flights-share-of-us-flights/>；<https://en.wikipedia.org/wiki/Night_flying_restrictions>
+- **#16** 「so that aerial travel may become cheaper than any other known to man.」  
+  判断：**部分符合**。绿色和平2023年对欧洲112条线路的比较中79条航班比铁路便宜；CNET测算美国每英里成本飞机约14美分、铁路15美分、汽车29美分，但巴士约12美分更低，航空在许多线路上最便宜但并非比所有方式都便宜，仅部分符合。  
+  来源：<https://www.greenpeace.de/publikationen/report-ticket-prices-of-planes-vs-trains-in-europe.pdf>；<https://web.archive.org/web/20250805062102/https:/www.cnet.com/personal-finance/planes-trains-cars-and-buses-we-do-the-math-to-discover-the-cheapest-way-to-travel-per-mile/>
+- **#18** 「These aircraft will sell for about the price of a medium-cost automobile.」  
+  判断：**部分符合**。1930年代Taylor/Piper Cub售价约1,270美元，而1938年新车均价约650—860美元，轻型飞机约为一辆中高价汽车的水平；但如今新塞斯纳172目录价约58万美元，远超汽车，只在一段时期内大致符合。  
+  来源：<https://philip.greenspun.com/blog/2019/10/06/a-factory-new-airplane-for-1270/>；<https://worththen.com/prices/transportation/car/1938.html>；<https://pilot-next.com/blog/how-much-does-a-cessna-172-cost>
+- **#20** 「and the price will be within the means of many young men.」  
+  判断：**部分符合**。1938—1947年J-3 Cub生产2万架，深受飞行学校和爱好者欢迎，私人飞行一度扩大；但如今新塞斯纳172S目录价约58万美元，私人飞机日益昂贵，远超多数年轻人承受范围，仅部分符合。  
+  来源：<https://pioneersofflight.si.edu/content/success-j-3-cub>；<https://pilot-next.com/blog/how-much-does-a-cessna-172-cost>
+- **#25** 「Peking and Tokio will next be added.」  
+  判断：**部分符合**。《东京日日新闻》1937年3月报道东京至新京、北平自6月起实现当日联络航线，1933年中国航空公司已有上海—北平航线，1939年汉莎尝试柏林—东京飞行，北京、东京在1930年代接入航线网；但它们并非紧随其后的“下一批”，欧亚定期直航晚至战后，仅部分符合。  
+  来源：<https://da.lib.kobe-u.ac.jp/da/np/0100108337/>；<http://www.timetableimages.com/ttimages/cn1.htm>；<https://drf.collections.keeneland.com/catalog/1930s/drf1939042401/drf1939042401_27_4>
+- **#26** 「The flight from London to New York will also soon be an accomplished fact.」  
+  判断：**部分符合**。1939年泛美波音314开通南安普顿—纽约跨大西洋客运，1946年BOAC开通伦敦—纽约航线，伦敦—纽约航空客运成为事实；但距预测约20年，与“很快”的时间表不符，仅部分符合。  
+  来源：<https://www.panam.org/explorations/1st-transatlantic-passenger-flight>；<https://simpleflying.com/boac-first-flight-to-new-york/>；<https://time.com/archive/6756919/transport-transatlantica-contd/>
+- **#30** 「with the new aerial age will come a new internationalism founded on speedy intercommunication and good-will to…」  
+  判断：**部分符合**。学界认为商业航空是全球化的引擎，《芝加哥公约》以促进各国友谊与了解为宗旨；但两次大战之间航空同时被用作民族国家建设和军事工具，民族主义并未消退，只部分符合。  
+  来源：<https://www.ghi-dc.org/fileadmin/publications/Bulletin/bu75/GHI-75_09WingsofGlobalization_3pp_151-156.pdf>；<https://doi.org/10.1057/9780230292314_18>；<https://doi.org/10.1177/0022009410375257>
+- **#33** 「Undoubtedly aeroplanes weighing only a thousand pounds, with a flying radius of 600 miles and making 150 miles…」  
+  判断：**部分符合**。1930年代美国海军阿克伦号和梅肯号飞艇确曾放飞并回收F9C-2“雀鹰”寄生战斗机，从飞艇上放飞飞机得以实现；但这是军事侦察用途，并未出现跨大西洋超级飞艇在距终点500英里处放飞飞机投递邮件的商业做法，仅部分符合。  
+  来源：<https://airandspace.si.edu/collection-objects/curtiss-f9c-2-sparrowhawk/nasm_A19410007000>；<https://www.icao.int/sites/default/files/postalhistory/aviation_history_the_catapult_mail.htm>
+- **#37** 「it is quite conceivable that the great centres of population and commerce may grow up themselves round those h…」  
+  判断：**部分符合**。纽芬兰甘德因1930年代建跨大西洋中转机场而从无到有，1954年建镇，2021年人口约1.19万；但喷气机1958年后无需经停，甘德、香农的枢纽地位衰落，未形成大型人口商业中心，只部分符合。  
+  来源：<https://thecanadianencyclopedia.ca/en/article/gander>；<https://canadiangeographic.ca/articles/from-the-archives-they-almost-called-it-airlandia-the-past-and-future-of-gander/>；<https://www.irishtimes.com/opinion/an-irishman-s-diary-kevin-myers-1.1142456>
+- **#38** 「there will be such rapid and constant intercommunication that customs practices will become obsolete」  
+  判断：**部分符合**。欧盟取消了欧盟内部航班旅客手提及托运行李的海关检查，申根区取消内部边境检查；但国际到达旅客仍普遍接受海关检查，海关制度整体并未被淘汰，仅部分符合。  
+  来源：<https://eur-lex.europa.eu/legal-content/SV/TXT/?uri=LEGISSUM%3Al11008>；<https://www.ais.fi/eaip/006-2024_2024_11_28/eAIP/EF-GEN%201.3-en-GB.html>；<https://apnews.com/article/passport-customs-border-protection-travel-airport-9d1af7dfbf5f00100f621a61acbedfa2>
+
+### 错误（7 条）
+
+- **#15** 「the price of even the biggest machines must soon shrink to that of a high-priced automobile or private yacht.」  
+  判断：**错误**。大型飞机价格并未降到高档汽车水平：波音2008年747-400目录价2.34—2.67亿美元，787目录价十余年间翻倍，最大飞机价格反而持续上涨。  
+  来源：<https://www.boeing-747.com/blog/how-much-does-a-boeing-747-.html>；<https://simpleflying.com/boeing-787-build-cost-2026/>；<https://www.seattletimes.com/business/boeing-raises-jet-prices/>
+- **#17** 「this type of aerial navigation bids fair to be fast, cheap, and absolutely safe.」  
+  判断：**错误**。1930年代水上飞机客运昂贵、主要服务富人，帝国航空水上飞机多次失事（如1936年Scipio号事故），二战后因跑道普及和低效迅速被淘汰，并未成为廉价且绝对安全的交通方式。  
+  来源：<https://www.tandfonline.com/doi/full/10.1080/17551820902742772>；<https://archive.spectator.co.uk/article/28th-august-1936/3/flying-boat-accidents-the-accident-to-the-imperial>；<https://airandspace.si.edu/stories/editorial/how-world-war-ii-killed-flying-boat>
+- **#34** 「Within a comparatively short time, then, we ought to see many companies organized in this country for aerial t…」  
+  判断：**错误**。美国从未出现众多氦气飞艇运输公司：兴登堡号事故后客运飞艇时代结束，仅Airship Ventures于2008—2012年运营一艘观光齐柏林飞艇，后因氦价高昂和缺乏赞助停业，预测落空。  
+  来源：<https://www.theverge.com/2012/11/16/3654280/airship-ventures-ceases-operations>；<https://www.airships.net/blog/may-6-1937-hindenburg-disaster/>；<https://www.aircharterservice.com/about-us/news-features/blog/the-history-of-airships-and-airship-travel-in-commercial-aviation>
+- **#36** 「a complete redistribution and reconcentration of the cities, people, and nations and a new internationalism in…」  
+  判断：**错误**。客货航空运输已普及（条件成立），但研究发现机场规模对都市就业的弹性仅约0.04，航空对城市体系的影响有限，城市与人口并未彻底重新分布，习俗语言的新国际主义也未出现，预测错误。  
+  来源：<https://onlinelibrary.wiley.com/doi/abs/10.1111/ecca.12262>；<https://onlinelibrary.wiley.com/doi/10.1111/j.1468-2257.1992.tb00580.x>；<https://www.sciencedirect.com/science/article/abs/pii/S0966692303000024>
+- **#40** 「it is conceivable that foggy and damp countries like the British Isles may be abandoned—save by the workers of…」  
+  判断：**错误**。英国人口持续增长，2025年中约6,950万人，2024年增幅为1940年代末以来第二大，英伦三岛远未被放弃作为居住和制造地。  
+  来源：<https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/bulletins/annualmidyearpopulationestimates/mid2025>；<https://www.bbc.com/news/articles/cm2djl9jem7o>
+- **#41** 「then undoubtedly a league of nations will have been organized for self-preservation and war abolished as too h…」  
+  判断：**错误**。国际联盟1920年成立（盟约1919年6月已签署，出版时已知），但未能阻止第二次世界大战，战争并未被废除；预测的核心“废除战争”落空。  
+  来源：<https://www.nationalww2museum.org/war/articles/world-war-ii-and-founding-united-nations>；<https://www.ungeneva.org/en/about/league-of-nations/overview>；<https://link.springer.com/article/10.1007/s11698-010-0049-9>
+- **#42** 「Thus by levelling boundaries and borders of nations and countries the aircraft promises to perform the greates…」  
+  判断：**错误**。飞机并未废除战争或消灭民族主义：20世纪战略轰炸和空中力量成为战争核心手段，从二战到伊拉克、波斯尼亚的空中作战层出不穷，预测错误。  
+  来源：<https://www.jstor.org/stable/10.7591/j.ctt1287f6v>；<https://press.armywarcollege.edu/cgi/viewcontent.cgi?article=1377&context=monographs>；<https://www.opendemocracy.net/en/bombs-away-air-power-as-panacea/>
+
+### 暂无法判断（1 条）
+
+- **#11** 「This accomplished, the danger of flying in an aeroplane will be reduced to infinitesimal proportions」  
+  判断：**暂无法判断**。预测以发明把着陆速度降到每小时十英里的装置为前提；襟翼、缝翼和STOL飞机虽降低了着陆速度，但客机着陆速度仍在约130—150节，前提未实现，无法检验后果。  
+  来源：<https://www.blackjet.com/post/landing-speed-of-737>；<https://www.kitplanes.com/design-process-flap-types/>
+
+## 剔除的非预测
+
+| 编号 | 原文 | 类型 | 说明 |
+|---:|---|---|---|
+| — | （无） | — | 候选为人工挑选，未收入非预测 |
+
+## 文件
+
+- 本文：`cases/david-aircraft-commercial-future-v5/REPORT-manual-zh.md`
+- 逐条结构化结果：`cases/david-aircraft-commercial-future-v5/output/manual-final/results.manual.jsonl`（review_source = `manual-assistant-2026-11-15`），汇总 `output/manual-final/summary.json`
+- 人工决定源文件：`cases/david-aircraft-commercial-future-v5/audit/manual_review_2026-11-15.py`
+
+## 说明
+
+- 第 11 条以“发明把着陆速度降到每小时十英里的装置”为前提，截至截止日该前提未实现（客机着陆速度仍约 130—150 节），记暂无法判断。
+- 第 3、10、36、37 条为条件句，条件已成立（双发飞机投入邮运；多发、固定航路、无线电引导；客货航空运输普及；大陆间最近点建成空港），按结果评断。
+- 第 13 条（双发飞机单发失效几乎每次能安全到达机场）、第 22 条（费用降到人人可承受）、第 39 条（可能采用一种国际语言）方向已被证据确认但未完全达到，按趋势符合计。
+- 第 9 条亨德利·佩奇运输公司 1919 年 8 月即以改装 O/400 飞伦敦—巴黎，与出版时间（1919 年秋）相邻；书稿写作早于此，且此类客运贯穿 1920 年代，按正确计并在此注明。
+- 第 41 条中“国际联盟成立”在出版时已由《凡尔赛和约》确定，核心判断为“废除战争”，按错误计。
+- 候选中 16 条因引述第三方被流水线降为 unclear，1 条作者表述无可观察结果记为 unclear，共 17 条不进入核验。
+- 统计以 pipeline.py report 的 summary.json 为准；本表的加权胜率按 manual_report.py 的权重计算。
+

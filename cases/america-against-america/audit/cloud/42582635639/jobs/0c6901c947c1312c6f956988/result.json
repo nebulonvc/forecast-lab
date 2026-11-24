@@ -1,0 +1,417 @@
+{
+  "claim_id": "txt-1c4066fc0c-000150979-000151037",
+  "version": "search-verifier-v1",
+  "input_sha256": "b07cc8b565121f61f41d1f89324852458051425e8cf645c052e0a627b79c4593",
+  "cutoff": "2026-11-09",
+  "task_state": "partial",
+  "assessment": null,
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000150979-000151037",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "按研究声明口径：UCDP/PRIO ACD 26.1中location含美国、type3/4、incompatibility为领土或领土兼政府、intensity≥25的冲突年度记录，观察窗1991—2025；另看≥1000死亡的war子集。原文判断为“南北战争那样的状况难以再生”，即美国国内领土分离式内战难以再现。",
+    "reason": "过滤结果显示美国单独location的type3/4、领土类冲突年度记录为0行，18条美国记录均为政府与基地组织冲突，未出现南北战争式国内领土分离内战；观察窗内方向与“难以再生”一致。但原文同时包含“政治系统不必多做努力”的因果与程度判断，现有证据只支持结果方向，不能验证该机制。",
+    "limitation": "UCDP仅覆盖有组织武装冲突且以年度记录为口径，不能证明美国社会不存在分离主义政治运动或未来不会发生；1月6日事件不等同于内战，未作为反证。经济一体化因果机制未被检验。",
+    "evidence_ids": [
+      "prior-393df04d3fb3a1278330",
+      "prior-5c26846489b9b68026f6",
+      "prior-8f2c0086f1316039aae9",
+      "prior-13d4eee8172a1e2b58c2"
+    ],
+    "method": "经济一体化减少分裂动机与政治协调负担",
+    "method_basis": "inferred",
+    "observation_end": "2025-12-31",
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-393df04d3fb3a1278330",
+        "relation": "support",
+        "quote": "从完整2816行中过滤：gwno_loc精确为{2}、type3/4、incompatibility1/3，命中0行；美国单独location的18行均为政府与基地组织冲突。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "该过滤结果依赖gwno_loc精确匹配美国，可能遗漏多地点记录；且只覆盖ACD年度冲突，不覆盖低强度分离主义政治运动。"
+      },
+      {
+        "evidence_id": "prior-5c26846489b9b68026f6",
+        "relation": "boundary",
+        "quote": "UCDP/PRIO ACD26.1共2816条冲突年度记录；美国涉及22条，含基地组织、阿富汗/伊拉克及也门相关冲突，不能笼统说美国没有战争。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "美国涉及境外冲突记录说明“没有战争”表述过宽；本评估只针对国内领土分离式内战，不把境外冲突当作反证。"
+      },
+      {
+        "evidence_id": "prior-8f2c0086f1316039aae9",
+        "relation": "background",
+        "quote": "Codebook：type3为国内、type4为国际化国内冲突；incompatibility1为领土、2为政府、3为两者；intensity2为当年战斗相关死亡至少1000。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "该条仅提供分类定义，本身不提供美国结果；用于说明过滤口径。"
+      },
+      {
+        "evidence_id": "prior-13d4eee8172a1e2b58c2",
+        "relation": "boundary",
+        "quote": "众议院调查委员会报告记录特朗普拒绝承认2020合法选举结果，并企图阻止权力交接；国会大厦遇袭。",
+        "publication_date": "2022-12-22",
+        "observation_end": null,
+        "limitation": "该事件显示政治制度承压，但按研究声明不等同于南北战争式内战，不能作为领土分离武装冲突的反证。"
+      }
+    ],
+    "remaining_gap": "缺少对1991—2025年间美国国内低强度分离主义武装活动或州际武装对抗的系统记录；UCDP年度冲突口径不能完全排除非年度化或未达门槛的事件。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-5c26846489b9b68026f6",
+      "url": "https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-261-csv.zip",
+      "title": "ev-r2-l2-ucdp-data",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-ucdp-data",
+      "archive_sha256": "5f951743222964674a446e32a5a871077b29bd13349588d85fc59953d89c878a",
+      "archive_path": "data/sources/r2-l2-ucdp-data.zip",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-8f2c0086f1316039aae9",
+      "url": "https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-261.pdf",
+      "title": "ev-r2-l2-ucdp-codebook",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-ucdp-codebook",
+      "archive_sha256": "6d757183dd632d10d7287ee63493b1e632733f308b77220406dce7ceab664455",
+      "archive_path": "data/sources/r2-l2-ucdp-codebook.pdf",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-393df04d3fb3a1278330",
+      "url": "https://ucdp.uu.se/downloads/",
+      "title": "ev-r2-l2-ucdp-filter",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-ucdp-filter",
+      "archive_sha256": "3faac1e7d4c66f34a75db80146394bc5327377c7e8cd9d0c71253926741df5bb",
+      "archive_path": "data/sources/r2-l2-ucdp-filter-result.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-13d4eee8172a1e2b58c2",
+      "url": "https://www.govinfo.gov/content/pkg/GPO-J6-REPORT/html-submitted/index.html",
+      "title": "ev-jan6",
+      "published_date": "2022-12-22",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-jan6",
+      "archive_sha256": "99340c674c6c84701d1e92df8613deece20d66ac62c29ce126634ed77b1b8636",
+      "archive_path": "data/sources/99340c674c6c84701d1e92df8613deece20d66ac62c29ce126634ed77b1b8636.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-0ab58b869341f490f9d58c08",
+      "url": "https://ucdp.uu.se/Downloads/",
+      "resolved_url": "https://ucdp.uu.se/Downloads/",
+      "title": "UCDP Dataset Download Center",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:12.345465+00:00",
+      "archive_sha256": "4fde922ddd7b0710016efb23fd25f8a2137095f9752e8083b0482e9235f02331",
+      "archive_path": "jobs/0c6901c947c1312c6f956988/4fde922ddd7b0710016efb23fd25f8a2137095f9752e8083b0482e9235f02331.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-8a9e90e22708ce07374af68b",
+      "url": "https://ucdp.uu.se/downloads/ucdpprio/versionhistory-acd-261.pdf",
+      "resolved_url": "https://ucdp.uu.se/downloads/ucdpprio/versionhistory-acd-261.pdf",
+      "title": "Version History v4-2009",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:12.345685+00:00",
+      "archive_sha256": "fe2bf7cd1824a1e04ca7e4c1c8080ae87f2b995a07ec280172cbea3ec0378782",
+      "archive_path": "jobs/0c6901c947c1312c6f956988/fe2bf7cd1824a1e04ca7e4c1c8080ae87f2b995a07ec280172cbea3ec0378782.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-cd6a14d53efb81d5ad8086e0",
+      "url": "https://data.humdata.org/dataset/ucdp-data-for-united-states-of-america",
+      "resolved_url": "https://data.humdata.org/dataset/ucdp-data-for-united-states-of-america",
+      "title": "United States of America - Data on Conflict Events | Humanitarian Dataset | HDX",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:25.842947+00:00",
+      "archive_sha256": "18c899d992fbf27118e63d7fa379af9c7cda934eef762e4c0384c79eabe20805",
+      "archive_path": "jobs/0c6901c947c1312c6f956988/18c899d992fbf27118e63d7fa379af9c7cda934eef762e4c0384c79eabe20805.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d1678ea9b344dba2c780abfb",
+      "url": "https://ucdp.uu.se/downloads/ged/ged251.pdf",
+      "resolved_url": "https://ucdp.uu.se/downloads/ged/ged251.pdf",
+      "title": "UCDP Georeferenced Event Dataset Codebook",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:25.843207+00:00",
+      "archive_sha256": "5fe9b1418a2d04e67696129c95117459426b2b859776fd634c106d9fe47c75b1",
+      "archive_path": "jobs/0c6901c947c1312c6f956988/5fe9b1418a2d04e67696129c95117459426b2b859776fd634c106d9fe47c75b1.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "UCDP PRIO Armed Conflict Dataset 26.1 United States domestic territorial conflict type 3 4 incompatibility 1 3",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "United States civil war territorial secession armed conflict 1991 2025 UCDP PRIO dataset",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "UCDP/PRIO Armed Conflict Dataset 26.1 United States location type 3 4 incompatibility territory government 1991 2025",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "United States secessionist armed conflict territorial civil war 1991 2025 UCDP GED events",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [
+    {
+      "stage": "worker",
+      "error": "cached_response_invalid_b1f16473fe24"
+    }
+  ],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "prior-393df04d3fb3a1278330",
+        "prior-5c26846489b9b68026f6",
+        "prior-8f2c0086f1316039aae9"
+      ]
+    }
+  ],
+  "remaining_gap": "任务未完成；查看错误、已取得材料和请求状态，不能据此判断原预测。",
+  "source_statuses": [
+    {
+      "url": "https://ucdp.uu.se/Downloads/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://ucdp.uu.se/downloads/ucdpprio/versionhistory-acd-261.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://data.humdata.org/dataset/ucdp-data-for-united-states-of-america",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://ucdp.uu.se/downloads/ged/ged251.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 7,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "a09fa137d9902f90fe68588bdda48201662cf1de0f3d7ec67293634f45542082"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "8eb5000df32b519f41630879dceaeedd",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b331d6b4f155e123db1b19321e7cde68",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "ec5fe87345ea0516e8d8e86cd56a7e3851d9d9857b68c94d1d4f8658a0e39793"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "5e29a70c90c19ccbf527fe770e7d2ed7",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "05a686b56d3d519cbc9002abca273bc055ab6218c5ab093a561784527c7791ea"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "2acb539d48e095d136fcdaa95dacb447",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "570e053518a0619c83be74271a23f36c",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "3410fb72dd4ee319ffbda02ff82a9cd865a0b0dd8696028be7cc6ccb061a1eba"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "916116d6d29ae2418b944f909b103984",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "2ea5d550ee9e99323c22c347f79bebd074960aefc953e6d16d1eb918ca3219f8"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "755ddcfe685344f326b033715bee46af118b2878488b03340533645875458a3e"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000150979-000151037",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "verdict_logic",
+          "reason": "原文的核心可检验结果是“南北战争那样的状况难以再生”，即美国国内领土分离式内战难以再现；现有ACD过滤显示该口径下0条记录，方向与原文一致，且没有同对象反证。按任务口径，主要结果符合应判“符合”，不能因经济一体化因果机制未被检验而降为“部分符合”。判“部分符合”必须指出后果B哪些具体部分实现、哪些未实现；建议只说明机制不能验证，并未指出“南北战争式内战难以再生”这一结果有任何未实现部分，因此分类错误。",
+          "source_quote": "但原文同时包含“政治系统不必多做努力”的因果与程度判断，现有证据只支持结果方向，不能验证该机制。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "将verdict由“部分符合”改为“符合”，并在reason中明确：经济一体化因果机制未被检验只作为解释限制，不构成结果层面的部分未实现；保留现有limitation与remaining_gap。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000150979-000151037",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "按研究声明口径：UCDP/PRIO ACD 26.1中location含美国、type3/4、incompatibility为领土或领土兼政府、intensity≥25的冲突年度记录，观察窗1991—2025；另看≥1000死亡的war子集。原文判断为“南北战争那样的状况难以再生”，即美国国内领土分离式内战难以再现。",
+      "reason": "过滤结果显示美国单独location的type3/4、领土类冲突年度记录为0行，18条美国记录均为政府与基地组织冲突，未出现南北战争式国内领土分离内战；观察窗内方向与“难以再生”一致。但原文同时包含“政治系统不必多做努力”的因果与程度判断，现有证据只支持结果方向，不能验证该机制。",
+      "limitation": "UCDP仅覆盖有组织武装冲突且以年度记录为口径，不能证明美国社会不存在分离主义政治运动或未来不会发生；1月6日事件不等同于内战，未作为反证。经济一体化因果机制未被检验。",
+      "evidence_ids": [
+        "prior-393df04d3fb3a1278330",
+        "prior-5c26846489b9b68026f6",
+        "prior-8f2c0086f1316039aae9",
+        "prior-13d4eee8172a1e2b58c2"
+      ],
+      "method": "经济一体化减少分裂动机与政治协调负担",
+      "method_basis": "inferred",
+      "observation_end": "2025-12-31",
+      "future_time_text": "",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-393df04d3fb3a1278330",
+          "relation": "support",
+          "quote": "从完整2816行中过滤：gwno_loc精确为{2}、type3/4、incompatibility1/3，命中0行；美国单独location的18行均为政府与基地组织冲突。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "该过滤结果依赖gwno_loc精确匹配美国，可能遗漏多地点记录；且只覆盖ACD年度冲突，不覆盖低强度分离主义政治运动。"
+        },
+        {
+          "evidence_id": "prior-5c26846489b9b68026f6",
+          "relation": "boundary",
+          "quote": "UCDP/PRIO ACD26.1共2816条冲突年度记录；美国涉及22条，含基地组织、阿富汗/伊拉克及也门相关冲突，不能笼统说美国没有战争。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "美国涉及境外冲突记录说明“没有战争”表述过宽；本评估只针对国内领土分离式内战，不把境外冲突当作反证。"
+        },
+        {
+          "evidence_id": "prior-8f2c0086f1316039aae9",
+          "relation": "background",
+          "quote": "Codebook：type3为国内、type4为国际化国内冲突；incompatibility1为领土、2为政府、3为两者；intensity2为当年战斗相关死亡至少1000。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "该条仅提供分类定义，本身不提供美国结果；用于说明过滤口径。"
+        },
+        {
+          "evidence_id": "prior-13d4eee8172a1e2b58c2",
+          "relation": "boundary",
+          "quote": "众议院调查委员会报告记录特朗普拒绝承认2020合法选举结果，并企图阻止权力交接；国会大厦遇袭。",
+          "publication_date": "2022-12-22",
+          "observation_end": null,
+          "limitation": "该事件显示政治制度承压，但按研究声明不等同于南北战争式内战，不能作为领土分离武装冲突的反证。"
+        }
+      ],
+      "remaining_gap": "缺少对1991—2025年间美国国内低强度分离主义武装活动或州际武装对抗的系统记录；UCDP年度冲突口径不能完全排除非年度化或未达门槛的事件。"
+    }
+  ],
+  "autonomous_decision": false,
+  "semantic_validation": null,
+  "scope": "对象为美国国内领土分离/南北战争式内战是否在1991—2025观察窗内再生；可观察口径为UCDP/PRIO ACD中location含美国、type3/4、incompatibility为领土或领土兼政府、intensity≥25的冲突年度记录，并另看≥1000死亡的war子集；反证包括任何美国国内领土分离武装冲突年度记录、或大规模州际/区域武装对抗。该结果只检验‘难以再生’的方向，不验证经济一体化因果机制，也不把1月6日事件等同于内战。",
+  "elapsed_seconds": 42.588,
+  "completed_at": "2026-11-09T08:00:43.692247+00:00"
+}

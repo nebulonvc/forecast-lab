@@ -1,0 +1,151 @@
+{
+  "claim_id": "txt-9b034d0990-000199616-000199919",
+  "ledger": {
+    "primary_ids": "txt-00001–txt-00142",
+    "primary_count": 142,
+    "duplicate_primary_ids": [],
+    "revision_lines": [
+      "txt-00058"
+    ],
+    "line_ranges_match_manifest": true,
+    "max_chunk_chars": 3500,
+    "truncated_reread": false,
+    "truncation_note": "每块正文最多 3500 字。账本行号与 manifest 一致。没有发现工具截断后的残段，所以没有补读，也没有新的阅读时钟。"
+  },
+  "quote_check": {
+    "exact_continuous": true,
+    "context": "",
+    "char_start": 199616,
+    "char_end": 199919,
+    "alignment": {
+      "method": "exact",
+      "ratio": 1.0
+    }
+  },
+  "plan": {
+    "id": "txt-9b034d0990-000199616-000199919",
+    "scope": "对象只能是原文写的 all the noblest arts。原文没有成员名单，没有完美或衰落的指标，very little moment 和 soon 也不是日历区间。可观察口径因此不能形成。反证必须落在原文自己划定的同一门类和同一指标上，不能先换成绘画、音乐、文学或某个指数。",
+    "queries": [],
+    "strategy_change": "缺口是原文对象本身无法识别。公开检索不能补上原文没有写出的门类和指标。不另选一门艺术。WebSearch 和 WebFetch 没有调用。queries 为空。"
+  },
+  "select": {
+    "id": "txt-9b034d0990-000199616-000199919",
+    "urls": [],
+    "reason": "没有发出检索，所以没有 search_results，allowed_urls 也是空的。urls 为空不是检索之后没有选中，而是这一步没有可选项。不编造 URL，也不把未执行的检索写成已经双向查询。"
+  },
+  "tools": {
+    "web_search": "not_called",
+    "web_fetch": "not_called",
+    "deepseek": "not_called",
+    "reason": "缺口是原文对象本身无法识别。公开检索不能补上原文没有写出的门类和指标。不另选一门艺术。WebSearch 和 WebFetch 没有调用。queries 为空。"
+  },
+  "assess": {
+    "id": "txt-9b034d0990-000199616-000199919",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "definition",
+    "trend_aligned": false,
+    "condition_state": "unconditional",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "evidence_notes": [],
+    "scope": "只审叙述者关于一切最高明的艺术在短时完美后到达高度并开始衰落的那一句。不把比喻扩成某一门艺术或某一年的结果。",
+    "reason": "方向是到达高度后开始衰落，而且没有写日期，所以没有因为缺少国名或年份删掉。同句把艺术比成生物。对象 all the noblest arts 没有成员，完美和衰落没有指标。不替作者选门类，就不能形成可验证观察。判定留在分母里，为暂无法判断。",
+    "limitation": "没有支持检索，也没有反证检索。空查询是因为原文缺口不能用公开材料填上，不是检索后没有结果。",
+    "method": "叙述者先说不知道为什么，再把最高明的艺术比成生物：到了顶点就开始衰落。",
+    "method_basis": "explicit",
+    "remaining_gap": "原文没有列出哪些艺术算 noblest arts，没有写出完美或衰落的指标，也没有把 very little moment 或 soon 收成可计时期。这个缺口在原文里，公开材料不能代替作者补上门类和指标。"
+  },
+  "semantic_review": {
+    "id": "txt-9b034d0990-000199616-000199919",
+    "decision": "unresolved",
+    "checks": {
+      "object_match": "unknown",
+      "condition_logic": "pass",
+      "time_alignment": "unknown",
+      "evidence_support": "unknown",
+      "counterevidence": "unknown",
+      "verdict_logic": "pass"
+    },
+    "issues": [
+      {
+        "check": "object_match",
+        "evidence_id": null,
+        "source_quote": "all the noblest arts",
+        "reason": "原文只给了这个总称，没有成员。不能用一门艺术代替这个集合。",
+        "quote_origin": "book"
+      },
+      {
+        "check": "time_alignment",
+        "evidence_id": null,
+        "source_quote": "very little moment",
+        "reason": "very little moment 和 soon 是艺术生命里的说法，不是从出版年到截止日的已固定窗口。没有门类和指标时，也不能把窗口内的某种艺术史当成这句的观察。",
+        "quote_origin": "book"
+      },
+      {
+        "check": "evidence_support",
+        "evidence_id": null,
+        "source_quote": "an art is like a living\r\norganism",
+        "reason": "没有取得外部材料。这句是比喻，不能把未做的检索写成支持或反对。",
+        "quote_origin": "book",
+        "quote_verification": {
+          "method": "unique_whitespace_alignment",
+          "model_quote": "an art is like a living organism"
+        }
+      },
+      {
+        "check": "counterevidence",
+        "evidence_id": null,
+        "source_quote": "all the noblest arts",
+        "reason": "没有取得反向材料。一个未点名的例子也不能反驳这个全称，因为成员还没有被原文划定。",
+        "quote_origin": "book"
+      }
+    ],
+    "remaining_gap": "原文没有列出哪些艺术算 noblest arts，没有写出完美或衰落的指标，也没有把 very little moment 或 soon 收成可计时期。这个缺口在原文里，公开材料不能代替作者补上门类和指标。"
+  },
+  "validator_log": [
+    {
+      "step": "plan_initial_empty",
+      "ok": false,
+      "detail": "ValueError: search_requires_support_and_counter"
+    },
+    {
+      "step": "plan_adaptive_empty",
+      "ok": true,
+      "detail": "accepted_empty_queries"
+    },
+    {
+      "step": "select_empty",
+      "ok": true,
+      "detail": "accepted"
+    },
+    {
+      "step": "assess",
+      "ok": true,
+      "detail": "accepted"
+    },
+    {
+      "step": "correct_verdict_block",
+      "ok": true,
+      "detail": "'not_resolvable'"
+    },
+    {
+      "step": "semantic_review",
+      "ok": true,
+      "detail": "decision=unresolved"
+    },
+    {
+      "step": "inspect_assessment",
+      "ok": true,
+      "detail": "warnings=[] keys=basis,condition_state,evidence_ids,evidence_notes,future_time_text,id,inclusion,limitation,method,method_basis,observation_end,reason,remaining_gap,scope,trend_aligned,verdict"
+    }
+  ],
+  "inspect_assessment": {
+    "called": true,
+    "applicable_as_claim_pass": false,
+    "rule": "inspect_assessment 只核对已引用证据的引文是否在提供的来源正文里，不读取 claim_type，也不判断 unclear 是否成立。本条 evidence_ids 为空，warnings 为空只表示没有证据笔记可核。这不是本条通过。",
+    "warnings": []
+  },
+  "correct_verdict_block": "not_resolvable"
+}

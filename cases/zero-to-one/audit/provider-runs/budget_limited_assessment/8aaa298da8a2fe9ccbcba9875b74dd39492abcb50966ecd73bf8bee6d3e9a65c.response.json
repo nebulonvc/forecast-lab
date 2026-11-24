@@ -1,0 +1,28 @@
+{
+  "id": "30305a69-0458-4d62-a4f8-19a2bf03fe36",
+  "object": "chat.completion",
+  "created": 1794201442,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\": \"json_object\", \"items\": [{\"id\": \"txt-4001dbbdf2-000027869-000027900\", \"inclusion\": \"forecast\", \"verdict\": \"暂无法判断\", \"basis\": \"future\", \"scope\": \"原文判断对象为“科技公司”整体，指标为“大部分价值在未来至少10~15年体现”；观察起点按出版年2014年代理，终点至少到2024-2029年，但cutoff为2026-11-09，且无证据材料。\", \"reason\": \"该判断是对科技公司价值实现时间的长期趋势陈述，但“大部分价值”缺乏可操作指标，且无任何证据可用于核对。\", \"limitation\": \"未提供具体公司、估值口径或现金流数据；不能凭模型记忆补结果，最终结果也尚未到期。\", \"evidence_ids\": [], \"method\": \"unknown\", \"method_basis\": \"unknown\", \"observation_end\": null, \"future_time_text\": \"未来至少10~15年\", \"condition_state\": \"unconditional\", \"trend_aligned\": false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4219,
+    "completion_tokens": 238,
+    "total_tokens": 4457,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3451
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

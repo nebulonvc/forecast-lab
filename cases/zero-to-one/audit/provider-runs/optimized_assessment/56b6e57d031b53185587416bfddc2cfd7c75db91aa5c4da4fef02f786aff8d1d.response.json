@@ -1,0 +1,28 @@
+{
+  "id": "2298bf43-02d4-42ca-b67a-5a86a9bf9167",
+  "object": "chat.completion",
+  "created": 1794201580,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000010811-000010825\",\"inclusion\":\"duplicate\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"与父命题txt-4001dbbdf2-000010801-000010826重复，仅保留审计记录，不纳入预测分母。\",\"reason\":\"该句与同一原文父命题重复或拆分，属于重复记录。\",\"limitation\":\"重复项不参与预测评分，仅作审计保留。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000011244-000011279\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"作者提出创造新科技的任务与目标，未承诺21世纪必然更和谐繁荣。\",\"reason\":\"原文是面向未来的任务陈述与规范性目标，不是可检验的结果预测。\",\"limitation\":\"目标性表述不构成对结果的承诺，无法作为预测评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"21世纪\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000011517-000011558\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为“舍弃团体”，判断孤独天才可创造经典文艺作品但不能创造整个产业；该条件未发生且无法合理操作化。\",\"reason\":\"这是带“如果”条件的推测，触发条件未发生或未知，不能按相似事件替代评分。\",\"limitation\":\"条件未确定，且“整个产业”缺乏可操作指标，无法评估。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000013918-000013949\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为规范性劝告：若想未来更好，须找到处处行得通的方法。\",\"reason\":\"该句是条件性建议，没有对具体未来结果作出可检验判断。\",\"limitation\":\"规范性劝告不构成预测，无法评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6455,
+    "completion_tokens": 558,
+    "total_tokens": 7013,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 5687
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

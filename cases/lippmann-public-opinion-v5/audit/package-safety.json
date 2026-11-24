@@ -1,0 +1,1030 @@
+{
+ "case_files_scanned": 109,
+ "book_overlap_window_characters": 300,
+ "allowed_quote_count": 48,
+ "maximum_allowed_quote_characters": 1279,
+ "long_quote_field_instances": 203,
+ "nonquote_fulltext_overlap_hits": [],
+ "unstructured_fulltext_overlap_hits": [],
+ "nonempty_contexts": [],
+ "secret_scan_hits": [],
+ "secret_scan_method": "指定Exa密钥内部精确匹配及常见API/私钥模式；不输出任何密钥值",
+ "full_text_files_packaged": false,
+ "long_quote_exemptions": [
+  {
+   "file": "data/claims.jsonl",
+   "field": "[2].quote",
+   "chars": 440
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[2].extraction_v2.model_quote",
+   "chars": 440
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[3].quote",
+   "chars": 757
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[3].extraction_v2.model_quote",
+   "chars": 757
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[5].quote",
+   "chars": 536
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[5].extraction_v2.model_quote",
+   "chars": 536
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[6].quote",
+   "chars": 398
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[6].extraction_v2.model_quote",
+   "chars": 398
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[11].quote",
+   "chars": 442
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[11].extraction_v2.model_quote",
+   "chars": 442
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[14].quote",
+   "chars": 316
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[14].extraction_v2.model_quote",
+   "chars": 316
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[15].quote",
+   "chars": 679
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[15].extraction_v2.model_quote",
+   "chars": 679
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[20].quote",
+   "chars": 504
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[20].extraction_v2.model_quote",
+   "chars": 504
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[25].quote",
+   "chars": 402
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[25].extraction_v2.model_quote",
+   "chars": 402
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[27].quote",
+   "chars": 368
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[27].extraction_v2.model_quote",
+   "chars": 368
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[28].quote",
+   "chars": 321
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[28].extraction_v2.model_quote",
+   "chars": 321
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[30].quote",
+   "chars": 1051
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[30].extraction_v2.model_quote",
+   "chars": 1051
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[31].quote",
+   "chars": 301
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[31].extraction_v2.model_quote",
+   "chars": 301
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[32].quote",
+   "chars": 442
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[32].extraction_v2.model_quote",
+   "chars": 442
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[36].quote",
+   "chars": 1080
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[36].extraction_v2.model_quote",
+   "chars": 1080
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[37].quote",
+   "chars": 558
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[37].extraction_v2.model_quote",
+   "chars": 558
+  },
+  {
+   "file": "output/claims.csv",
+   "field": "[2].quote",
+   "chars": 440
+  },
+  {
+   "file": "output/claims.csv",
+   "field": "[3].quote",
+   "chars": 757
+  },
+  {
+   "file": "output/claims.csv",
+   "field": "[5].quote",
+   "chars": 536
+  },
+  {
+   "file": "output/claims.csv",
+   "field": "[6].quote",
+   "chars": 398
+  },
+  {
+   "file": "output/claims.csv",
+   "field": "[11].quote",
+   "chars": 442
+  },
+  {
+   "file": "output/claims.csv",
+   "field": "[14].quote",
+   "chars": 316
+  },
+  {
+   "file": "output/claims.csv",
+   "field": "[15].quote",
+   "chars": 679
+  },
+  {
+   "file": "output/claims.csv",
+   "field": "[20].quote",
+   "chars": 504
+  },
+  {
+   "file": "output/claims.csv",
+   "field": "[25].quote",
+   "chars": 402
+  },
+  {
+   "file": "output/claims.csv",
+   "field": "[27].quote",
+   "chars": 368
+  },
+  {
+   "file": "output/claims.csv",
+   "field": "[28].quote",
+   "chars": 321
+  },
+  {
+   "file": "output/claims.csv",
+   "field": "[30].quote",
+   "chars": 1051
+  },
+  {
+   "file": "output/claims.csv",
+   "field": "[31].quote",
+   "chars": 301
+  },
+  {
+   "file": "output/claims.csv",
+   "field": "[32].quote",
+   "chars": 442
+  },
+  {
+   "file": "output/claims.csv",
+   "field": "[36].quote",
+   "chars": 1080
+  },
+  {
+   "file": "output/claims.csv",
+   "field": "[37].quote",
+   "chars": 558
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[2].quote",
+   "chars": 440
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[2].extraction_v2.model_quote",
+   "chars": 440
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[3].quote",
+   "chars": 757
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[3].extraction_v2.model_quote",
+   "chars": 757
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[5].quote",
+   "chars": 536
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[5].extraction_v2.model_quote",
+   "chars": 536
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[6].quote",
+   "chars": 398
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[6].extraction_v2.model_quote",
+   "chars": 398
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[11].quote",
+   "chars": 442
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[11].extraction_v2.model_quote",
+   "chars": 442
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[14].quote",
+   "chars": 316
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[14].extraction_v2.model_quote",
+   "chars": 316
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[15].quote",
+   "chars": 679
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[15].extraction_v2.model_quote",
+   "chars": 679
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[20].quote",
+   "chars": 504
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[20].extraction_v2.model_quote",
+   "chars": 504
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[25].quote",
+   "chars": 402
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[25].extraction_v2.model_quote",
+   "chars": 402
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[27].quote",
+   "chars": 368
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[27].extraction_v2.model_quote",
+   "chars": 368
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[28].quote",
+   "chars": 321
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[28].extraction_v2.model_quote",
+   "chars": 321
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[30].quote",
+   "chars": 1051
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[30].extraction_v2.model_quote",
+   "chars": 1051
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[31].quote",
+   "chars": 301
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[31].extraction_v2.model_quote",
+   "chars": 301
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[32].quote",
+   "chars": 442
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[32].extraction_v2.model_quote",
+   "chars": 442
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[36].quote",
+   "chars": 1080
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[36].extraction_v2.model_quote",
+   "chars": 1080
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[37].quote",
+   "chars": 558
+  },
+  {
+   "file": "output/claims_before_assessment_b373f0e1f3ea.jsonl",
+   "field": "[37].extraction_v2.model_quote",
+   "chars": 558
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[2].claim.quote",
+   "chars": 440
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[2].claim.extraction_v2.model_quote",
+   "chars": 440
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[3].claim.quote",
+   "chars": 536
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[3].claim.extraction_v2.model_quote",
+   "chars": 536
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[4].claim.quote",
+   "chars": 398
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[4].claim.extraction_v2.model_quote",
+   "chars": 398
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[9].claim.quote",
+   "chars": 442
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[9].claim.extraction_v2.model_quote",
+   "chars": 442
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[12].claim.quote",
+   "chars": 316
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[12].claim.extraction_v2.model_quote",
+   "chars": 316
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[13].claim.quote",
+   "chars": 679
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[13].claim.extraction_v2.model_quote",
+   "chars": 679
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[18].claim.quote",
+   "chars": 504
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[18].claim.extraction_v2.model_quote",
+   "chars": 504
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[23].claim.quote",
+   "chars": 402
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[23].claim.extraction_v2.model_quote",
+   "chars": 402
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[25].claim.quote",
+   "chars": 368
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[25].claim.extraction_v2.model_quote",
+   "chars": 368
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[26].claim.quote",
+   "chars": 321
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[26].claim.extraction_v2.model_quote",
+   "chars": 321
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[28].claim.quote",
+   "chars": 1051
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[28].claim.extraction_v2.model_quote",
+   "chars": 1051
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[29].claim.quote",
+   "chars": 301
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[29].claim.extraction_v2.model_quote",
+   "chars": 301
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[30].claim.quote",
+   "chars": 442
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[30].claim.extraction_v2.model_quote",
+   "chars": 442
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[34].claim.quote",
+   "chars": 1080
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[34].claim.extraction_v2.model_quote",
+   "chars": 1080
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[35].claim.quote",
+   "chars": 558
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[35].claim.extraction_v2.model_quote",
+   "chars": 558
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[2].quote",
+   "chars": 440
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[2].extraction_v2.model_quote",
+   "chars": 440
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[3].quote",
+   "chars": 757
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[3].extraction_v2.model_quote",
+   "chars": 757
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[5].quote",
+   "chars": 536
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[5].extraction_v2.model_quote",
+   "chars": 536
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[6].quote",
+   "chars": 398
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[6].extraction_v2.model_quote",
+   "chars": 398
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[11].quote",
+   "chars": 442
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[11].extraction_v2.model_quote",
+   "chars": 442
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[14].quote",
+   "chars": 316
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[14].extraction_v2.model_quote",
+   "chars": 316
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[15].quote",
+   "chars": 679
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[15].extraction_v2.model_quote",
+   "chars": 679
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[20].quote",
+   "chars": 504
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[20].extraction_v2.model_quote",
+   "chars": 504
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[25].quote",
+   "chars": 402
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[25].extraction_v2.model_quote",
+   "chars": 402
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[27].quote",
+   "chars": 368
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[27].extraction_v2.model_quote",
+   "chars": 368
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[28].quote",
+   "chars": 321
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[28].extraction_v2.model_quote",
+   "chars": 321
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[30].quote",
+   "chars": 1051
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[30].extraction_v2.model_quote",
+   "chars": 1051
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[31].quote",
+   "chars": 301
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[31].extraction_v2.model_quote",
+   "chars": 301
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[32].quote",
+   "chars": 442
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[32].extraction_v2.model_quote",
+   "chars": 442
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[36].quote",
+   "chars": 1080
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[36].extraction_v2.model_quote",
+   "chars": 1080
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[37].quote",
+   "chars": 558
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[37].extraction_v2.model_quote",
+   "chars": 558
+  },
+  {
+   "file": "output/txt_import/policy_report.json",
+   "field": ".excluded[0].quote",
+   "chars": 867
+  },
+  {
+   "file": "output/txt_import/policy_report.json",
+   "field": ".demoted[0].quote",
+   "chars": 757
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[40].predictions[1].quote",
+   "chars": 440
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[40].predictions[1].model_quote",
+   "chars": 440
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[46].predictions[0].quote",
+   "chars": 757
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[46].predictions[0].model_quote",
+   "chars": 757
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[64].predictions[0].quote",
+   "chars": 536
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[64].predictions[0].model_quote",
+   "chars": 536
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[82].predictions[0].quote",
+   "chars": 398
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[82].predictions[0].model_quote",
+   "chars": 398
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[109].predictions[1].quote",
+   "chars": 442
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[109].predictions[1].model_quote",
+   "chars": 442
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[131].predictions[0].quote",
+   "chars": 316
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[131].predictions[0].model_quote",
+   "chars": 316
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[131].predictions[1].quote",
+   "chars": 679
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[131].predictions[1].model_quote",
+   "chars": 679
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[133].predictions[2].quote",
+   "chars": 381
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[133].predictions[2].model_quote",
+   "chars": 381
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[134].predictions[1].quote",
+   "chars": 504
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[134].predictions[1].model_quote",
+   "chars": 504
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[134].predictions[2].quote",
+   "chars": 714
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[134].predictions[2].model_quote",
+   "chars": 714
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[161].predictions[0].quote",
+   "chars": 867
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[161].predictions[0].model_quote",
+   "chars": 867
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[164].predictions[0].quote",
+   "chars": 402
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[164].predictions[0].model_quote",
+   "chars": 402
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[164].predictions[2].quote",
+   "chars": 368
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[164].predictions[2].model_quote",
+   "chars": 368
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[165].predictions[0].quote",
+   "chars": 321
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[165].predictions[0].model_quote",
+   "chars": 321
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[165].predictions[1].quote",
+   "chars": 1279
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[165].predictions[1].model_quote",
+   "chars": 1279
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[169].predictions[0].quote",
+   "chars": 1051
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[169].predictions[0].model_quote",
+   "chars": 1051
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[169].predictions[1].quote",
+   "chars": 301
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[169].predictions[1].model_quote",
+   "chars": 301
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[170].predictions[0].quote",
+   "chars": 442
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[170].predictions[0].model_quote",
+   "chars": 442
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[172].predictions[2].quote",
+   "chars": 477
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[172].predictions[2].model_quote",
+   "chars": 477
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[172].predictions[3].quote",
+   "chars": 692
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[172].predictions[3].model_quote",
+   "chars": 692
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[175].predictions[0].quote",
+   "chars": 1080
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[175].predictions[0].model_quote",
+   "chars": 1080
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[175].predictions[1].quote",
+   "chars": 558
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[175].predictions[1].model_quote",
+   "chars": 558
+  },
+  {
+   "file": "output/manual-final/results.manual.jsonl",
+   "field": "[2].quote",
+   "chars": 440
+  },
+  {
+   "file": "output/manual-final/results.manual.jsonl",
+   "field": "[3].quote",
+   "chars": 536
+  },
+  {
+   "file": "output/manual-final/results.manual.jsonl",
+   "field": "[4].quote",
+   "chars": 398
+  },
+  {
+   "file": "output/manual-final/results.manual.jsonl",
+   "field": "[9].quote",
+   "chars": 442
+  },
+  {
+   "file": "output/manual-final/results.manual.jsonl",
+   "field": "[12].quote",
+   "chars": 316
+  },
+  {
+   "file": "output/manual-final/results.manual.jsonl",
+   "field": "[13].quote",
+   "chars": 679
+  },
+  {
+   "file": "output/manual-final/results.manual.jsonl",
+   "field": "[18].quote",
+   "chars": 504
+  },
+  {
+   "file": "output/manual-final/results.manual.jsonl",
+   "field": "[23].quote",
+   "chars": 402
+  },
+  {
+   "file": "output/manual-final/results.manual.jsonl",
+   "field": "[25].quote",
+   "chars": 368
+  },
+  {
+   "file": "output/manual-final/results.manual.jsonl",
+   "field": "[26].quote",
+   "chars": 321
+  },
+  {
+   "file": "output/manual-final/results.manual.jsonl",
+   "field": "[28].quote",
+   "chars": 1051
+  },
+  {
+   "file": "output/manual-final/results.manual.jsonl",
+   "field": "[29].quote",
+   "chars": 301
+  },
+  {
+   "file": "output/manual-final/results.manual.jsonl",
+   "field": "[30].quote",
+   "chars": 442
+  },
+  {
+   "file": "output/manual-final/results.manual.jsonl",
+   "field": "[34].quote",
+   "chars": 1080
+  },
+  {
+   "file": "output/manual-final/results.manual.jsonl",
+   "field": "[35].quote",
+   "chars": 558
+  }
+ ]
+}

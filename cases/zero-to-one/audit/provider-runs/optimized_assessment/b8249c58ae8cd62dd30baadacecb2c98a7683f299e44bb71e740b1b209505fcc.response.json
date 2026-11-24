@@ -1,0 +1,28 @@
+{
+  "id": "c93c633d-148a-4fba-848d-731e77b554d9",
+  "object": "chat.completion",
+  "created": 1794201583,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000031528-000031543\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"一般性机制判断：科技公司能否仅靠品牌持续发展；无具体公司、指标或期限，观察窗口取出版后至cutoff（2014—2026-11-09）\",\"reason\":\"该句是对科技公司发展条件的普遍性断言，缺乏可操作化的公司样本、指标与期限；Yahoo在2021年仍有约9亿月活并被出售，既不能证明“只靠品牌”发展，也不能证伪该一般命题。\",\"limitation\":\"单一公司存亡或月活数据无法确定品牌与技术投入各自的因果作用；一般性因果命题难以用回顾性证据直接评分。\",\"evidence_ids\":[\"biz-yahoo-2021\"],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":\"2021-05-03\",\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4618,
+    "completion_tokens": 226,
+    "total_tokens": 4844,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3850
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

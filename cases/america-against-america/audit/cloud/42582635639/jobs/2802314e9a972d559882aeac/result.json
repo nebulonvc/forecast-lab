@@ -1,0 +1,592 @@
+{
+  "claim_id": "txt-1c4066fc0c-000224931-000224959",
+  "version": "search-verifier-v1",
+  "input_sha256": "751a30ae87c8d8c0deed9df3fe43aa0328f8c6c17337140bbb9de2c3561f58df",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000224931-000224959",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "第三方转述预测：在工业文明/现代化冲击下，作为农业文明产物的“养儿防老”观念（父母期待子女承担晚年养老）会减弱。操作化为跨时期对子女养老责任的期待、代际赡养意愿的变化；拟观察时段为中国CGSS 2006—2017年及美国代际追踪1985—2000年。",
+    "reason": "中国CGSS研究显示“子女为主”养老责任观念随年龄下降，但这是年龄效应，不是工业化进程中的跨时期趋势；其孝道分数随出生队列变化的句子在摘要中被截断，无法确认方向。美国代际追踪研究同时报告“filial norms weakened ... over historical time”，历史时期上规范减弱与预测方向一致，而“later-born generations strengthened”是世代差异，不能单独作为反向趋势证据。现有材料不足以对“跨时期减弱”作出方向判定。",
+    "limitation": "关键修订：不再把年龄效应或截断的孝道分数当作支持，也不把美国研究的世代增强单独当作反向趋势；美国研究本身含历史时期减弱的方向，需完整核对时期与队列效应。缺少同一对象、同一指标、覆盖工业化进程的长期面板数据。",
+    "evidence_ids": [
+      "ev-deddf0a8833265ac7d6f4785",
+      "ev-c8ef56b53e9a066994a7d0ac",
+      "ev-a747ac720aa73fab88778b48",
+      "ev-c33f6791c24ed9a60afd1f2b"
+    ],
+    "method": "从农业与工业生活条件的差异推导家庭养老观念变化",
+    "method_basis": "explicit",
+    "observation_end": "2017-12-31",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-deddf0a8833265ac7d6f4785",
+        "relation": "boundary",
+        "quote": "APC analyses revealed that the offspring-based concept declined with aging (OR = 0.81, 95% CI: 0.79–0.84), whereas the government-based (OR = 1.37, 95% CI: 1.33–1.41) and self-based (OR = 1.55, 95% CI: 1.47–1.63) concepts increased with aging.",
+        "publication_date": "2024-06-22",
+        "observation_end": "2017-12-31",
+        "limitation": "该结果衡量年龄效应，不是跨时期或工业化进程中的时间趋势；中国样本，不能直接外推为全球长期趋势。"
+      },
+      {
+        "evidence_id": "ev-c8ef56b53e9a066994a7d0ac",
+        "relation": "support",
+        "quote": "offspring responsibility still is a common COACR, but this concept has been gradually weakened and been replaced by the responsibility of the government and the aged.",
+        "publication_date": "2021-01-14",
+        "observation_end": "2017-12-31",
+        "limitation": "基于2017年CGSS横断面数据，趋势判断依赖回顾性比较，未提供跨年份同一指标的面板结果。"
+      },
+      {
+        "evidence_id": "ev-a747ac720aa73fab88778b48",
+        "relation": "boundary",
+        "quote": "Results revealed that filial norms weakened after midlife, in response to parental death, and over historical time, yet strengthened in later-born generations.",
+        "publication_date": "2006-10-13",
+        "observation_end": "2000-12-31",
+        "limitation": "美国样本，观察期止于2000年；同一摘要同时含历史时期减弱与晚出生世代增强两个方向，不能只取其一作为单向趋势证据。"
+      },
+      {
+        "evidence_id": "ev-c33f6791c24ed9a60afd1f2b",
+        "relation": "boundary",
+        "quote": "Results revealed that filial norms weakened after midlife, in response to parental death, \nand over historical time, yet strengthened in later-born generations.",
+        "publication_date": null,
+        "observation_end": "2000-12-31",
+        "limitation": "同一研究的会议论文版本，发表日期未知，结论与期刊版一致，同样含时期减弱与世代增强两个方向。",
+        "quote_verification": {
+          "method": "unique_whitespace_alignment",
+          "model_quote": "Results revealed that filial norms weakened after midlife, in response to parental death, and over historical time, yet strengthened in later-born generations."
+        }
+      }
+    ],
+    "remaining_gap": "缺少直接衡量“工业化/现代化进程中父母对子女养老期待跨时期变化”的同一对象、同一指标长期面板数据；需完整核对美国研究的历史时期趋势与中国CGSS的时期/队列效应，不能以年龄效应或截断的孝道分数替代。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000224931-000224959",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "第三方转述预测：在工业文明/现代化冲击下，作为农业文明产物的“养儿防老”观念（父母期待子女承担晚年养老）会减弱。操作化为跨时期对子女养老责任的期待、代际赡养意愿的变化；观察时段为2006—2017年中国CGSS数据及1985—2000年美国代际追踪数据。",
+    "reason": "中国CGSS 2006—2017分析显示以子女为主的养老责任观念随年龄下降、政府与自我责任观念上升，且孝道分数随出生队列变新而下降，方向与“减弱”一致；但美国代际追踪研究显示孝道规范在较晚出生世代反而增强，构成反向证据。",
+    "limitation": "证据来自中国与美国，非全球统一口径；美国研究显示晚出生世代规范增强，说明减弱并非普遍单向。中国研究为横断面APC分析，不能直接等同于长期趋势。",
+    "evidence_ids": [
+      "ev-deddf0a8833265ac7d6f4785",
+      "ev-c8ef56b53e9a066994a7d0ac",
+      "ev-a747ac720aa73fab88778b48",
+      "ev-c33f6791c24ed9a60afd1f2b"
+    ],
+    "method": "从农业与工业生活条件的差异推导家庭养老观念变化",
+    "method_basis": "explicit",
+    "observation_end": "2017-12-31",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-deddf0a8833265ac7d6f4785",
+        "relation": "support",
+        "quote": "APC analyses revealed that the offspring-based concept declined with aging (OR = 0.81, 95% CI: 0.79–0.84), whereas the government-based (OR = 1.37, 95% CI: 1.33–1.41) and self-based (OR = 1.55, 95% CI: 1.47–1.63) concepts increased with aging.",
+        "publication_date": "2024-06-22",
+        "observation_end": "2017-12-31",
+        "limitation": "中国样本，APC分析，不能直接外推为全球长期趋势。"
+      },
+      {
+        "evidence_id": "ev-c8ef56b53e9a066994a7d0ac",
+        "relation": "support",
+        "quote": "offspring responsibility still is a common COACR, but this concept has been gradually weakened and been replaced by the responsibility of the government and the aged.",
+        "publication_date": "2021-01-14",
+        "observation_end": "2017-12-31",
+        "limitation": "基于2017年CGSS横断面数据，趋势判断依赖回顾性比较。"
+      },
+      {
+        "evidence_id": "ev-a747ac720aa73fab88778b48",
+        "relation": "counter",
+        "quote": "Results revealed that filial norms weakened after midlife, in response to parental death, and over historical time, yet strengthened in later-born generations.",
+        "publication_date": "2006-10-13",
+        "observation_end": "2000-12-31",
+        "limitation": "美国样本，晚出生世代规范增强，与“减弱”方向相反；但观察期止于2000年。"
+      },
+      {
+        "evidence_id": "ev-c33f6791c24ed9a60afd1f2b",
+        "relation": "counter",
+        "quote": "Results revealed that filial norms weakened after midlife, in response to parental death, and over historical time, yet strengthened in later-born generations.",
+        "publication_date": null,
+        "observation_end": "2000-12-31",
+        "limitation": "同一研究的会议论文版本，发表日期未知，结论与期刊版一致。"
+      }
+    ],
+    "remaining_gap": "缺少覆盖更多工业化社会、统一口径的长期面板数据来验证“必然减弱”的普遍性；美国证据显示反向趋势，需更多跨国比较。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-0b6c1aafd513af4adb6b",
+      "url": "https://www.census.gov/newsroom/press-releases/2024/families-and-living-arrangements.html",
+      "title": "ev-households",
+      "published_date": "2024-11-12",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-households",
+      "archive_sha256": "dfdde4f1bbdf24961ad76e8d94047ad8959d8086c1f66162e5add0406bb97cb3",
+      "archive_path": "data/sources/dfdde4f1bbdf24961ad76e8d94047ad8959d8086c1f66162e5add0406bb97cb3.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-46917ef417610d6673fc",
+      "url": "https://www.census.gov/library/stories/2023/06/adults-provided-support-to-parents.html",
+      "title": "ev-r2-l3-parent-transfers",
+      "published_date": "2023-06-14",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-parent-transfers",
+      "archive_sha256": "f38ae62c443e1bc3d408176304f0901a3ea7c79dda3fe9ef1d63d3b218b98a4e",
+      "archive_path": "data/sources/r2-l3-census-parent-support.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-7a9128e09f8ba8873291",
+      "url": "https://www.urban.org/urban-wire/how-more-people-are-supporting-their-aging-parents-financially-and-how-it-might-affect",
+      "title": "ev-r2-l3-reverse-transfers",
+      "published_date": "2026-06-15",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-reverse-transfers",
+      "archive_sha256": "d560aa0aec5fb7f6e18fdf531245024003bca1bcf12b48291f35b1e0d85a84ce",
+      "archive_path": "data/sources/r2-l3-open-care-democracy.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-deddf0a8833265ac7d6f4785",
+      "url": "https://link.springer.com/article/10.1186/s12889-024-19175-5",
+      "resolved_url": "https://link.springer.com/article/10.1186/s12889-024-19175-5",
+      "title": "The transition of eldercare responsibility and traditional filial piety concepts and its urban-rural differences in China: an age-period-cohort analysis from 2006 to 2017 | BMC Public Health | Springer Nature Link",
+      "published_date": "2024-06-22",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:58.757548+00:00",
+      "archive_sha256": "c6214c4eda56f80d701e35095360d08ec62451733c3009a1b3706540148e474d",
+      "archive_path": "jobs/2802314e9a972d559882aeac/c6214c4eda56f80d701e35095360d08ec62451733c3009a1b3706540148e474d.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-aaf0dfc63dd69e7443ade6ca",
+      "url": "https://doi.org/10.1016/j.jaging.2023.101104",
+      "resolved_url": "https://doi.org/10.1016/j.jaging.2023.101104",
+      "title": "Filial piety, love or money? Foundation of old-age support in urban China",
+      "published_date": "2023-01-25",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:58.757751+00:00",
+      "archive_sha256": "c791f525e64333a5f5f0c53f87499e5f0f383a5f9c87901dfa47dee76be7bf23",
+      "archive_path": "jobs/2802314e9a972d559882aeac/c791f525e64333a5f5f0c53f87499e5f0f383a5f9c87901dfa47dee76be7bf23.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a747ac720aa73fab88778b48",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1741-3737.2006.00307.x",
+      "resolved_url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1741-3737.2006.00307.x",
+      "title": "Norms of Filial Responsibility for Aging Parents Across Time and Generations",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:58.757945+00:00",
+      "archive_sha256": "9ef89bdf99680378bbf73f45de010227b862a8d9ed701c7a517a70e04f8b2b25",
+      "archive_path": "jobs/2802314e9a972d559882aeac/9ef89bdf99680378bbf73f45de010227b862a8d9ed701c7a517a70e04f8b2b25.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-25556abe2fc39df75a58e738",
+      "url": "https://www.socialpolicydynamics.de/f/085bd4e40e.pdf",
+      "resolved_url": "https://www.socialpolicydynamics.de/f/085bd4e40e.pdf",
+      "title": "Intergenerational solidarity in a developing welfare state: The case of South Korea",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:58.758137+00:00",
+      "archive_sha256": "5d6e894d3a6c23910fdb5ced3da9156bcc4b10a8bc9df337bd3ede5bce8b8363",
+      "archive_path": "jobs/2802314e9a972d559882aeac/5d6e894d3a6c23910fdb5ced3da9156bcc4b10a8bc9df337bd3ede5bce8b8363.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c8ef56b53e9a066994a7d0ac",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7828671/",
+      "resolved_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7828671/",
+      "title": "Cognitive Differences and Influencing Factors of Chinese People’s Old-Age Care Responsibility against the Ageing Background",
+      "published_date": "2021-01-14",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:08.473563+00:00",
+      "archive_sha256": "1f038b3d4308f0f96b97c8e2ed207d8fb85ecfd982588ee6ca2e9edc53692bcb",
+      "archive_path": "jobs/2802314e9a972d559882aeac/1f038b3d4308f0f96b97c8e2ed207d8fb85ecfd982588ee6ca2e9edc53692bcb.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c33f6791c24ed9a60afd1f2b",
+      "url": "https://paa2006.populationassociation.org/papers/60228",
+      "resolved_url": "https://paa2006.populationassociation.org/papers/60228",
+      "title": "",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:08.473782+00:00",
+      "archive_sha256": "d1aeda1dce442040805e3fbefd1324cdee630e178c75ffd6be475bc5a98dff90",
+      "archive_path": "jobs/2802314e9a972d559882aeac/d1aeda1dce442040805e3fbefd1324cdee630e178c75ffd6be475bc5a98dff90.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "industrialization decline filial obligation expectation old age support parents longitudinal study East Asia",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "industrialized societies persistent filial piety parental support expectations longitudinal evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "China General Social Survey 2006 2017 offspring-based eldercare responsibility declined younger cohorts industrialization filial piety weakening",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Longitudinal Study of Generations filial responsibility norms strengthened later-born generations 1985 2000 United States",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少直接衡量“工业化/现代化进程中父母对子女养老期待跨时期变化”的同一对象、同一指标长期面板数据；需完整核对美国研究的历史时期趋势与中国CGSS的时期/队列效应，不能以年龄效应或截断的孝道分数替代。",
+  "source_statuses": [
+    {
+      "url": "https://link.springer.com/article/10.1186/s12889-024-19175-5",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.jaging.2023.101104",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1741-3737.2006.00307.x",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.socialpolicydynamics.de/f/085bd4e40e.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7828671/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://paa2006.populationassociation.org/papers/60228",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "154c46113ba5b97276bf1a424605506b9ba7a2795665886cd04dba3af82cbc8a"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b292353e8ba1556e59548ec063722b63",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "9bbb1aab1c01e6a7224af14be2a1bbb9",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "fac8bd27e32c66373d78dbcf361c61e94b2d5642ee73a759c1d8b22d3817dd99"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "cb85fa32260aab6c90ffc2fa096b637f",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "edda87033c82e6f70259ec9b21a2c4240d41549fb9bf8a5183a0fbeeb4a9b48e"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b9a63a424df0a2855a94335da9c10f7d",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "fdb37a0d47a6ce47efd174abeab17a85",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "bc4987cebee8d1bc380a1d0bcf22dad9b0d35702513dfc8ae9d073ccfac3a3dd"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "1ea498206856f3907f5f6613d178f18c",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "31d584d40b0013e7bcf89fca016b1cb49eef68b6badcc47f7f3358f1793b8712"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "fe278ba9d6a0c831ca3539518a21278c9a6914378eba23559bd7ad479aad61af"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "144cc511b894fb06ca7e91713d80fbedc4bcd7854605d4e27bd9d301bd7b3c4f"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "5dd04814ae9507d0cf11e5a8beeb01f7902d699ce5309bdef0399eeb6619d782"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000224931-000224959",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "fail",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "evidence_support",
+          "reason": "建议把“孝道分数随出生队列变新而下降”当作支持“养儿防老观念减弱”的证据，但所引摘要的该句在“decreased as the birt”处被截断，未显示完整结果；且孝道分数与“父母期待子女承担晚年养老”并非同一指标，不能直接支撑该声明。",
+          "source_quote": "Filial piety score slightly increased with aging (β = 0.18, SD: 0.05) but decreased as the birt",
+          "evidence_id": "ev-deddf0a8833265ac7d6f4785",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议称中国CGSS分析显示“以子女为主的养老责任观念随年龄下降”，但该结果衡量的是年龄效应（aging），不是跨时期或工业化进程中的时间趋势；用它支持“在工业文明冲击下减弱”属于指标与时间维度错配。",
+          "source_quote": "APC analyses revealed that the offspring-based concept declined with aging (OR = 0.81, 95% CI: 0.79–0.84), whereas the government-based (OR = 1.37, 95% CI: 1.33–1.41) and self-based (OR = 1.55, 95% CI: 1.47–1.63) concepts increased with aging.",
+          "evidence_id": "ev-deddf0a8833265ac7d6f4785",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "counterevidence",
+          "reason": "建议把美国代际追踪研究列为反向证据，但该研究摘要同时报告“filial norms weakened ... over historical time”，即历史时期上规范减弱，与预测方向一致；建议只摘取“later-born generations strengthened”而忽略同一研究中的时间趋势结果，属于对反向材料的片面使用。",
+          "source_quote": "Results revealed that filial norms weakened after midlife, in response to parental death, and over historical time, yet strengthened in later-born generations.",
+          "evidence_id": "ev-a747ac720aa73fab88778b48",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议以“美国晚出生世代规范增强”作为反向证据，从而把结论降为“部分符合”；但该反向证据本身包含“over historical time”规范减弱的方向，且中国证据的年龄效应不等于时间趋势。现有材料不足以支撑“部分符合”的分类，应改为对时间趋势证据不足的具体未定，或重新界定可检验口径后再判。",
+          "source_quote": "观察时段为2006—2017年中国CGSS数据及1985—2000年美国代际追踪数据。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充能直接衡量“工业化/现代化进程中父母对子女养老期待跨时期变化”的同一对象、同一指标长期数据；并完整核对美国研究的历史时间趋势结果与中国CGSS的时期/队列效应，不能以年龄效应或截断的孝道分数替代。修订后应据此重新确定verdict，而非维持“部分符合”。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000224931-000224959",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000224931-000224959",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "第三方转述预测：在工业文明/现代化冲击下，作为农业文明产物的“养儿防老”观念（父母期待子女承担晚年养老）会减弱。操作化为跨时期对子女养老责任的期待、代际赡养意愿的变化；观察时段为2006—2017年中国CGSS数据及1985—2000年美国代际追踪数据。",
+      "reason": "中国CGSS 2006—2017分析显示以子女为主的养老责任观念随年龄下降、政府与自我责任观念上升，且孝道分数随出生队列变新而下降，方向与“减弱”一致；但美国代际追踪研究显示孝道规范在较晚出生世代反而增强，构成反向证据。",
+      "limitation": "证据来自中国与美国，非全球统一口径；美国研究显示晚出生世代规范增强，说明减弱并非普遍单向。中国研究为横断面APC分析，不能直接等同于长期趋势。",
+      "evidence_ids": [
+        "ev-deddf0a8833265ac7d6f4785",
+        "ev-c8ef56b53e9a066994a7d0ac",
+        "ev-a747ac720aa73fab88778b48",
+        "ev-c33f6791c24ed9a60afd1f2b"
+      ],
+      "method": "从农业与工业生活条件的差异推导家庭养老观念变化",
+      "method_basis": "explicit",
+      "observation_end": "2017-12-31",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-deddf0a8833265ac7d6f4785",
+          "relation": "support",
+          "quote": "APC analyses revealed that the offspring-based concept declined with aging (OR = 0.81, 95% CI: 0.79–0.84), whereas the government-based (OR = 1.37, 95% CI: 1.33–1.41) and self-based (OR = 1.55, 95% CI: 1.47–1.63) concepts increased with aging.",
+          "publication_date": "2024-06-22",
+          "observation_end": "2017-12-31",
+          "limitation": "中国样本，APC分析，不能直接外推为全球长期趋势。"
+        },
+        {
+          "evidence_id": "ev-c8ef56b53e9a066994a7d0ac",
+          "relation": "support",
+          "quote": "offspring responsibility still is a common COACR, but this concept has been gradually weakened and been replaced by the responsibility of the government and the aged.",
+          "publication_date": "2021-01-14",
+          "observation_end": "2017-12-31",
+          "limitation": "基于2017年CGSS横断面数据，趋势判断依赖回顾性比较。"
+        },
+        {
+          "evidence_id": "ev-a747ac720aa73fab88778b48",
+          "relation": "counter",
+          "quote": "Results revealed that filial norms weakened after midlife, in response to parental death, and over historical time, yet strengthened in later-born generations.",
+          "publication_date": "2006-10-13",
+          "observation_end": "2000-12-31",
+          "limitation": "美国样本，晚出生世代规范增强，与“减弱”方向相反；但观察期止于2000年。"
+        },
+        {
+          "evidence_id": "ev-c33f6791c24ed9a60afd1f2b",
+          "relation": "counter",
+          "quote": "Results revealed that filial norms weakened after midlife, in response to parental death, and over historical time, yet strengthened in later-born generations.",
+          "publication_date": null,
+          "observation_end": "2000-12-31",
+          "limitation": "同一研究的会议论文版本，发表日期未知，结论与期刊版一致。"
+        }
+      ],
+      "remaining_gap": "缺少覆盖更多工业化社会、统一口径的长期面板数据来验证“必然减弱”的普遍性；美国证据显示反向趋势，需更多跨国比较。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000224931-000224959",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "第三方转述预测：在工业文明/现代化冲击下，作为农业文明产物的“养儿防老”观念（父母期待子女承担晚年养老）会减弱。操作化为跨时期对子女养老责任的期待、代际赡养意愿的变化；拟观察时段为中国CGSS 2006—2017年及美国代际追踪1985—2000年。",
+      "reason": "中国CGSS研究显示“子女为主”养老责任观念随年龄下降，但这是年龄效应，不是工业化进程中的跨时期趋势；其孝道分数随出生队列变化的句子在摘要中被截断，无法确认方向。美国代际追踪研究同时报告“filial norms weakened ... over historical time”，历史时期上规范减弱与预测方向一致，而“later-born generations strengthened”是世代差异，不能单独作为反向趋势证据。现有材料不足以对“跨时期减弱”作出方向判定。",
+      "limitation": "关键修订：不再把年龄效应或截断的孝道分数当作支持，也不把美国研究的世代增强单独当作反向趋势；美国研究本身含历史时期减弱的方向，需完整核对时期与队列效应。缺少同一对象、同一指标、覆盖工业化进程的长期面板数据。",
+      "evidence_ids": [
+        "ev-deddf0a8833265ac7d6f4785",
+        "ev-c8ef56b53e9a066994a7d0ac",
+        "ev-a747ac720aa73fab88778b48",
+        "ev-c33f6791c24ed9a60afd1f2b"
+      ],
+      "method": "从农业与工业生活条件的差异推导家庭养老观念变化",
+      "method_basis": "explicit",
+      "observation_end": "2017-12-31",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-deddf0a8833265ac7d6f4785",
+          "relation": "boundary",
+          "quote": "APC analyses revealed that the offspring-based concept declined with aging (OR = 0.81, 95% CI: 0.79–0.84), whereas the government-based (OR = 1.37, 95% CI: 1.33–1.41) and self-based (OR = 1.55, 95% CI: 1.47–1.63) concepts increased with aging.",
+          "publication_date": "2024-06-22",
+          "observation_end": "2017-12-31",
+          "limitation": "该结果衡量年龄效应，不是跨时期或工业化进程中的时间趋势；中国样本，不能直接外推为全球长期趋势。"
+        },
+        {
+          "evidence_id": "ev-c8ef56b53e9a066994a7d0ac",
+          "relation": "support",
+          "quote": "offspring responsibility still is a common COACR, but this concept has been gradually weakened and been replaced by the responsibility of the government and the aged.",
+          "publication_date": "2021-01-14",
+          "observation_end": "2017-12-31",
+          "limitation": "基于2017年CGSS横断面数据，趋势判断依赖回顾性比较，未提供跨年份同一指标的面板结果。"
+        },
+        {
+          "evidence_id": "ev-a747ac720aa73fab88778b48",
+          "relation": "boundary",
+          "quote": "Results revealed that filial norms weakened after midlife, in response to parental death, and over historical time, yet strengthened in later-born generations.",
+          "publication_date": "2006-10-13",
+          "observation_end": "2000-12-31",
+          "limitation": "美国样本，观察期止于2000年；同一摘要同时含历史时期减弱与晚出生世代增强两个方向，不能只取其一作为单向趋势证据。"
+        },
+        {
+          "evidence_id": "ev-c33f6791c24ed9a60afd1f2b",
+          "relation": "boundary",
+          "quote": "Results revealed that filial norms weakened after midlife, in response to parental death, and over historical time, yet strengthened in later-born generations.",
+          "publication_date": null,
+          "observation_end": "2000-12-31",
+          "limitation": "同一研究的会议论文版本，发表日期未知，结论与期刊版一致，同样含时期减弱与世代增强两个方向。"
+        }
+      ],
+      "remaining_gap": "缺少直接衡量“工业化/现代化进程中父母对子女养老期待跨时期变化”的同一对象、同一指标长期面板数据；需完整核对美国研究的历史时期趋势与中国CGSS的时期/队列效应，不能以年龄效应或截断的孝道分数替代。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "第三方转述预测：在工业文明冲击条件下，作为农业文明产物的“养儿防老”观念（父母期待子女承担晚年养老）会减弱。可观察口径为工业化/现代化进程中，对子女养老责任的期待、代际同住或赡养意愿的跨时期变化；反证包括工业化社会中养儿防老期待稳定或回升、代际经济/照护支持未减弱。不计作者独立预测能力，也不把子女实际现金转移等同于父母期待。",
+  "elapsed_seconds": 41.396,
+  "completed_at": "2026-11-09T08:01:30.665501+00:00"
+}

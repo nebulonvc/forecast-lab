@@ -1,0 +1,653 @@
+{
+  "claim_id": "txt-1c4066fc0c-000023002-000023063",
+  "version": "search-verifier-v1",
+  "input_sha256": "398c5837b5d8bf2d62e0f89f6efb96c339464c204f77300063100ba4b61be039",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000023002-000023063",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "三项并列分项：(1)美国城乡差距/乡村困难长期存在——以非都市与都市贫困率差距及乡村相对弱势衡量，观察1990年代至2024年；(2)乡村问题有恶化倾向——以非都市贫困率、人口流失、乡村医院关闭等多维趋势衡量，观察1990年代至2024年；(3)乡村问题暂时或在一定条件下掀不起大波大澜——以乡村大规模社会运动、持续暴力冲突或全国性政治动荡记录衡量，观察1990年代至2024年。",
+    "reason": "自动复核未确认主要判断：原句的限定是“乡村问题暂时或在一定条件下掀不起大波大澜”，即作者对后果B（乡村问题引发大动荡）给出的是带条件的否定性判断，而非把“恶化倾向”本身当作触发条件。建议把“恶化倾向”与“掀不起大波大澜”拆成两个并列分项，并因第三分项“难以操作化”而整体判暂无法判断，实际上把作者已明确给出的限定性稳定判断（B不实现）降格为未知，未按原文条件结构处理。; 建议称“缺少收入、医院关闭等多维时间序列，无法判定‘恶化倾向’整体成立或不成立”，但已引材料中ev-8c30dc99f78ab00128bb5ce3明确给出“最偏远乡村贫困差距扩大”与“所有非都市县贫困率自2013年下降”并存的局部证据，prior-4acf7825736ecfce70d3给出“51%非都市县2020—2024人口减少”的局部恶化证据。这些材料已足以支持“恶化倾向”在部分维度、部分地区成立，而非整体证据不足；建议未说明为何这些已取得的局部恶化证据不能支撑分项结论。; 建议将“长期存在”判为有证据支持，却因“恶化倾向”方向混杂、“大波大澜”难以操作化而整体判暂无法判断。按原文结构，作者的核心可检验后果是“乡村问题掀不起大波大澜”（B不实现），已引Bundy事件仅为单一对峙，不足以推翻该限定判断；而“恶化倾向”是前提A的一部分，其局部成立或混杂不应直接使整个复合判断变为未知。建议未区分“前提A部分成立”与“后果B是否实现”，导致结论口径与原文条件结构不匹配。",
+    "limitation": "关键修订：将“暂时或在一定条件下掀不起大波大澜”作为带限定条件的独立分项处理，不再以单一贫困率下降否定整个“恶化倾向”分项；因多维时间序列缺失，第二、三分项无法给出确定结论。原“部分符合”综合口径不成立，改为暂无法判断。",
+    "evidence_ids": [
+      "prior-7f40589d1b8077f47b6a",
+      "prior-4acf7825736ecfce70d3",
+      "ev-e4ecaa01a3c316db003527d4",
+      "ev-8c30dc99f78ab00128bb5ce3",
+      "ev-5e0d348922cdfb25820a6303"
+    ],
+    "method": "比较乡村人口占比与城乡迁移对冲突的缓冲作用",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "长期；暂时或在一定条件下",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-7f40589d1b8077f47b6a",
+        "relation": "support",
+        "quote": "2024非都市贫困率13.7%，较2022的15.0%下降，为25年较低水平之一；都市10.2%，差距仍3.5个百分点。",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "差距仍存在支持“长期存在”，但贫困率下降不支持“恶化倾向”；发布日期未知。"
+      },
+      {
+        "evidence_id": "prior-4acf7825736ecfce70d3",
+        "relation": "boundary",
+        "quote": "2010年代非都市人口下降，但2020—2024每年增长，增长来自净迁入抵消自然减少；2023—2024增加134540人，仍有51%的非都市县2020—2024人口减少。",
+        "publication_date": "2026-02-13",
+        "observation_end": "2024-12-31",
+        "limitation": "总体人口转为增长与“恶化”相反，但半数县仍减少显示局部恶化，方向混杂，不能整体归为支持或反证。"
+      },
+      {
+        "evidence_id": "ev-e4ecaa01a3c316db003527d4",
+        "relation": "support",
+        "quote": "the higher incidence of nonmetro poverty relative to metro poverty has existed since the 1960s when poverty rates were first officially recorded. Over time, the difference between nonmetro and metro poverty rates has generally narrowed, falling from an average difference of 4.5 percentage points in the 1980s to an average gap of about 3.1 percentage points over the last 10 years.",
+        "publication_date": "2026-02-13",
+        "observation_end": "2024-12-31",
+        "limitation": "支持差距长期存在，但同时显示差距在收窄，削弱“恶化”判断；仅覆盖贫困维度。"
+      },
+      {
+        "evidence_id": "ev-8c30dc99f78ab00128bb5ce3",
+        "relation": "boundary",
+        "quote": "Poverty rates are highest in the most rural, isolated settings, and the gap between poverty rates in these and other settings has grown. Even so, poverty rates have declined since 2013 in all types of nonmetro counties.",
+        "publication_date": null,
+        "observation_end": "2018-12-31",
+        "limitation": "最偏远乡村差距扩大可支持局部恶化，但总体贫困率下降；报告为2019版，观察止于2018，发布日期未知。"
+      },
+      {
+        "evidence_id": "ev-5e0d348922cdfb25820a6303",
+        "relation": "boundary",
+        "quote": "Hundreds of backers of cattle rancher Cliven Bundy faced off with the U.S. Bureau of Land Management, which was trying to enforce court orders to remove his cattle from the rangeland surrounding his ranch.",
+        "publication_date": "2024-04-13",
+        "observation_end": "2024-04-13",
+        "limitation": "单一武装对峙事件，是否构成“大波大澜”存争议，不足以判定第三分项成立或不成立。"
+      }
+    ],
+    "remaining_gap": "需按原文条件结构重写：先确认前提A（乡村问题长期存在并有恶化倾向）在已引材料下哪些维度成立、哪些不成立，再单独判断后果B（掀不起大波大澜）是否被Bundy等单一事件推翻；不能因第三分项难以量化就把作者明确的限定性稳定判断整体降为未知。若坚持暂无法判断，须说明已引局部恶化证据为何不足以支撑A的部分成立，以及B为何不能依现有记录判为未被推翻。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000023002-000023063",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "三项口径：(1)城乡差距/乡村困难长期存在——以非都市与都市贫困率差距衡量，观察1990年代至2024年；(2)恶化倾向——以非都市贫困率、人口流失趋势衡量，观察1990年代至2024年；(3)乡村问题不掀大波大澜——以乡村大规模社会运动/全国性政治动荡记录衡量，观察1990年代至2024年。",
+    "reason": "非都市贫困率长期高于都市（2019年15.4%对11.9%，2024年13.7%对10.2%），差距持续存在，符合第一分项；但贫困率自2013年峰值18.4%持续下降、2020—2024非都市人口净迁入增长，与“恶化倾向”方向相反，第二分项不符；乡村未出现持续大规模动荡，第三分项大体符合。综合为部分符合。",
+    "limitation": "“恶化倾向”缺乏单一综合指标，本评估以贫困率与人口趋势代理，可能遗漏乡村医院关闭等其他恶化维度；乡村动荡的“大波大澜”阈值主观，且Bundy对峙等事件是否构成反例存在口径争议。",
+    "evidence_ids": [
+      "prior-7f40589d1b8077f47b6a",
+      "prior-4acf7825736ecfce70d3",
+      "ev-e4ecaa01a3c316db003527d4",
+      "ev-8c30dc99f78ab00128bb5ce3",
+      "ev-5e0d348922cdfb25820a6303"
+    ],
+    "method": "比较乡村人口占比与城乡迁移对冲突的缓冲作用",
+    "method_basis": "inferred",
+    "observation_end": "2024-12-31",
+    "future_time_text": "长期；暂时或在一定条件下",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-7f40589d1b8077f47b6a",
+        "relation": "support",
+        "quote": "2024非都市贫困率13.7%，较2022的15.0%下降，为25年较低水平之一；都市10.2%，差距仍3.5个百分点。",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "差距仍存在支持“长期存在”，但贫困率下降不支持“恶化倾向”；发布日期未知。"
+      },
+      {
+        "evidence_id": "prior-4acf7825736ecfce70d3",
+        "relation": "counter",
+        "quote": "2010年代非都市人口下降，但2020—2024每年增长，增长来自净迁入抵消自然减少；2023—2024增加134540人，仍有51%的非都市县2020—2024人口减少。",
+        "publication_date": "2026-02-13",
+        "observation_end": "2024-12-31",
+        "limitation": "总体人口转为增长，与“恶化”相反；但半数县仍减少，恶化在局部县仍可成立。"
+      },
+      {
+        "evidence_id": "ev-e4ecaa01a3c316db003527d4",
+        "relation": "support",
+        "quote": "the higher incidence of nonmetro poverty relative to metro poverty has existed since the 1960s when poverty rates were first officially recorded. Over time, the difference between nonmetro and metro poverty rates has generally narrowed, falling from an average difference of 4.5 percentage points in the 1980s to an average gap of about 3.1 percentage points over the last 10 years.",
+        "publication_date": "2026-02-13",
+        "observation_end": "2024-12-31",
+        "limitation": "支持差距长期存在，但同时显示差距在收窄，削弱“恶化”判断。"
+      },
+      {
+        "evidence_id": "ev-8c30dc99f78ab00128bb5ce3",
+        "relation": "boundary",
+        "quote": "Poverty rates are highest in the most rural, isolated settings, and the gap between poverty rates in these and other settings has grown. Even so, poverty rates have declined since 2013 in all types of nonmetro counties.",
+        "publication_date": null,
+        "observation_end": "2018-12-31",
+        "limitation": "最偏远乡村差距扩大可支持局部恶化，但总体贫困率下降；报告为2019版，观察止于2018。"
+      },
+      {
+        "evidence_id": "ev-5e0d348922cdfb25820a6303",
+        "relation": "boundary",
+        "quote": "Hundreds of backers of cattle rancher Cliven Bundy faced off with the U.S. Bureau of Land Management, which was trying to enforce court orders to remove his cattle from the rangeland surrounding his ranch.",
+        "publication_date": "2024-04-13",
+        "observation_end": "2024-04-13",
+        "limitation": "单一武装对峙事件，是否构成“大波大澜”存争议，不足以推翻总体稳定判断。"
+      }
+    ],
+    "remaining_gap": "缺少1990年代至2024年连续的非都市贫困率、收入、乡村医院关闭等综合时间序列，无法精确刻画“恶化倾向”的完整轨迹；乡村大规模动荡的量化阈值未定。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-7f40589d1b8077f47b6a",
+      "url": "https://ers.usda.gov/sites/default/files/_laserfiche/publications/113657/EIB-295.pdf",
+      "title": "ev-r2-l1-rural2024",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-rural2024",
+      "archive_sha256": "0b0eb4e09874ff079a5d350a2fdcad16582cb633c1d94f40261d0d8fba5803bf",
+      "archive_path": "data/sources/r2-l1-rural2025.pdf",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-4acf7825736ecfce70d3",
+      "url": "https://www.ers.usda.gov/topics/rural-economy-population/population-migration",
+      "title": "ev-lane1-rural-migration",
+      "published_date": "2026-02-13",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane1-rural-migration",
+      "archive_sha256": "51d6785f8db2456120f4fa75c3e050350305f39d2fa4a08f21513b345caa35df",
+      "archive_path": "data/sources/lane1-rural-migration.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-65713f7a7544dc37faf378d0",
+      "url": "https://www.ers.usda.gov/sites/default/files/_laserfiche/publications/110351/EIB-282.pdf",
+      "resolved_url": "https://www.ers.usda.gov/sites/default/files/_laserfiche/publications/110351/EIB-282.pdf",
+      "title": "Rural America at a Glance: 2024 Edition",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:27.624569+00:00",
+      "archive_sha256": "f01c71ff8ba2d2cc83fb4dd0baf00c727e8066b18761956d90c47ef951fd69cc",
+      "archive_path": "jobs/c1e252cefd896672f112987d/f01c71ff8ba2d2cc83fb4dd0baf00c727e8066b18761956d90c47ef951fd69cc.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-987160cc0dc54cf5a16fab6f",
+      "url": "https://ers.usda.gov/media/20831/eib-295.pdf",
+      "resolved_url": "https://ers.usda.gov/media/20831/eib-295.pdf",
+      "title": "Rural America at a Glance 2025 Edition",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:27.624825+00:00",
+      "archive_sha256": "1208a362ecdbf68351dae6b69088b5a5fed74e6e69ffc92fddd3194654d075e4",
+      "archive_path": "jobs/c1e252cefd896672f112987d/1208a362ecdbf68351dae6b69088b5a5fed74e6e69ffc92fddd3194654d075e4.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-8c30dc99f78ab00128bb5ce3",
+      "url": "https://ers.usda.gov/sites/default/files/_laserfiche/publications/95341/EIB-212.pdf",
+      "resolved_url": "https://ers.usda.gov/sites/default/files/_laserfiche/publications/95341/EIB-212.pdf",
+      "title": "Rural America At A Glance, 2019 Edition",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:27.625042+00:00",
+      "archive_sha256": "6861a63c9f8689b6d60d18f6792b7a06073d576553164020e439a108548af16f",
+      "archive_path": "jobs/c1e252cefd896672f112987d/6861a63c9f8689b6d60d18f6792b7a06073d576553164020e439a108548af16f.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-5e0d348922cdfb25820a6303",
+      "url": "https://www.latimes.com/world-nation/story/2024-04-13/bundy-cattle-grazing-disputed-rangeland-10-years-after-standoff-federal-agents",
+      "resolved_url": "https://www.latimes.com/world-nation/story/2024-04-13/bundy-cattle-grazing-disputed-rangeland-10-years-after-standoff-federal-agents",
+      "title": "Years after protesters' standoff, Bundy cattle graze disputed land - Los Angeles Times",
+      "published_date": "2024-04-13",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:27.625252+00:00",
+      "archive_sha256": "af6ecf67276f17aafafdbf3de8bad9206a76bb7ec996b7f4901e84f9fb92d7cb",
+      "archive_path": "jobs/c1e252cefd896672f112987d/af6ecf67276f17aafafdbf3de8bad9206a76bb7ec996b7f4901e84f9fb92d7cb.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e4ecaa01a3c316db003527d4",
+      "url": "https://ers.usda.gov/topics/rural-economy-population/rural-poverty-well-being",
+      "resolved_url": "https://ers.usda.gov/topics/rural-economy-population/rural-poverty-well-being",
+      "title": "Rural Poverty & Well-Being | Economic Research Service",
+      "published_date": "2026-02-13",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:37.147984+00:00",
+      "archive_sha256": "a69e078350a75f80a30ff5ac37d776f212788e516279b6a9d1f0de9e88d10dbc",
+      "archive_path": "jobs/c1e252cefd896672f112987d/a69e078350a75f80a30ff5ac37d776f212788e516279b6a9d1f0de9e88d10dbc.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-b3e05398456475ce20d24377",
+      "url": "http://www.ers.usda.gov/data-products/chart-gallery/56288",
+      "resolved_url": "http://www.ers.usda.gov/data-products/chart-gallery/56288",
+      "title": "Poverty rates by metro/nonmetro residence, 1959-2019 | Economic Research Service",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:37.148213+00:00",
+      "archive_sha256": "807108d10f5c102230469089ba72f50268bf93fe5394226b6e08e3ec0f49309d",
+      "archive_path": "jobs/c1e252cefd896672f112987d/807108d10f5c102230469089ba72f50268bf93fe5394226b6e08e3ec0f49309d.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e3f3f09a380cf7a1d4bf59d8",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/03066150.2019.1572603",
+      "resolved_url": "https://www.tandfonline.com/doi/full/10.1080/03066150.2019.1572603",
+      "title": "Rural rage: the roots of right-wing populism in the United States*: The Journal of Peasant Studies: Vol 46 , No 3  - Get Access",
+      "published_date": "2019-04-16",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:37.148423+00:00",
+      "archive_sha256": "a2e3ca65a461bdf7d51a8dcc820bb23b9dfbe404cca6a963f03cc51dd268befd",
+      "archive_path": "jobs/c1e252cefd896672f112987d/a2e3ca65a461bdf7d51a8dcc820bb23b9dfbe404cca6a963f03cc51dd268befd.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "USDA ERS rural America at a glance nonmetro poverty rate long-term trend 1990 2024",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "rural America protest movement unrest 1990s 2024 farmers strikes political upheaval",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "USDA ERS nonmetro poverty rate 1990 2000 2010 2024 long-term rural urban gap trend",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "rural America farmers protest movement 1990s 2024 political unrest national significance",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "需按原文条件结构重写：先确认前提A（乡村问题长期存在并有恶化倾向）在已引材料下哪些维度成立、哪些不成立，再单独判断后果B（掀不起大波大澜）是否被Bundy等单一事件推翻；不能因第三分项难以量化就把作者明确的限定性稳定判断整体降为未知。若坚持暂无法判断，须说明已引局部恶化证据为何不足以支撑A的部分成立，以及B为何不能依现有记录判为未被推翻。",
+  "source_statuses": [
+    {
+      "url": "https://www.ers.usda.gov/sites/default/files/_laserfiche/publications/110351/EIB-282.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://ers.usda.gov/media/20831/eib-295.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://ers.usda.gov/sites/default/files/_laserfiche/publications/95341/EIB-212.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.latimes.com/world-nation/story/2024-04-13/bundy-cattle-grazing-disputed-rangeland-10-years-after-standoff-federal-agents",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://ers.usda.gov/topics/rural-economy-population/rural-poverty-well-being",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "http://www.ers.usda.gov/data-products/chart-gallery/56288",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/03066150.2019.1572603",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "对象：王沪宁1991年前后对美国城乡差别与乡村问题的复合判断。可观察口径分三项：(1)城乡差距/乡村困难是否长期存在，以USDA ERS非都市县贫困率、收入、人口相对都市的持续差距衡量；(2)是否有“恶化倾向”，以1990年代至2024年非都市贫困率、人口流失、乡村医院关闭等趋势衡量，须区分长期存在与持续恶化；(3)乡村问题是否“暂时或在一定条件下掀不起大波大澜”，以乡村大规模社会运动、持续暴力冲突或全国性政治动荡的可观察记录衡量。反证包括：乡村贫困显著收窄或消失、乡村状况系统性改善、出现大规模乡村抗议/骚乱或乡村问题成为全国政治主导。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "6b47d4a427aafcdffd7c8222a7e70e1069410e8dea5f1aeb8e0b7b293bf5e01d"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "a20256b1e2066100eaec7d55bd4d7d6b",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "28f98e9b9e617015ec005ab511de48c7",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "74d94e5e9ae7ee3bca8fe8da9c8ea68b4400093e17931b599ca8bdc01e9366f3"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "5657916d6d52723aab46c3202900b1de",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "58456d8a1f29a2f33444f74be038ee4f6786979ee73996e405c9a466a6710f4c"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e867302e0434f4221e5759e453b2aa93",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "4c2ad93f66c58540f4fea1bcb5a2644f",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "a6ae4772605f5e1c50ef09c1efd4f21b54b1fd89886cf63a3af4bae4a1e02a29"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "53382a2dfc5711c57e6499a2aa170a50",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "ac9c951286cd944c5ad481c1025d3dea9311551f8cda0fdff089b07b3df99c15"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "756b3c980e74de52f919aa564706682ff93bd5c0420a0b744b0cf2d6d17cac96"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "8ac0dd545397432f04d003c1290634f55b45081734117016c8bd2eed03118742"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "f0a26892d49185cda93fa6e0ccf1d78dc8501bb07bc400fa4d5fb443252fac33"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000023002-000023063",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原文的限定是“乡村问题暂时或在一定条件下掀不起大波大澜”，即“不掀大波大澜”本身带有“暂时或在一定条件下”的限定，而“长期存在并有恶化倾向”是并列的独立判断，并非“A未解决→B重大后果”的条件结构。建议把三项口径并列打分，未把“暂时/一定条件”作为第三分项的限定条件处理，导致条件状态被写成unconditional，第三分项的成立范围被放宽。",
+          "source_quote": "尽管没有找到良策来\n解决这一问题，这一问题还会长期存在，并且有恶化的倾向，不过乡村问题暂时或\n在一定条件下掀不起大波大澜。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议用“非都市贫困率自2013年峰值18.4%持续下降”来判定“恶化倾向”不符，但所引ERS材料显示的是贫困率下降与城乡差距收窄，这只能说明贫困维度未恶化，不能覆盖“乡村问题恶化”的复合含义（人口流失、医院关闭等）；同时prior-4acf7825736ecfce70d3明确仍有51%的非都市县2020—2024人口减少，建议却将其整体归为counter，弱化了局部恶化证据。以单一贫困率代理否定整个“恶化倾向”分项，证据范围不足。",
+          "source_quote": "2010年代非都市人口下降，但2020—2024每年增长，增长来自净迁入抵消自然减少；2023—2024增加134540人，仍有51%的非都市县2020—2024人口减少。",
+          "evidence_id": "prior-4acf7825736ecfce70d3",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议将“长期存在”判为符合、“恶化倾向”判为不符、“不掀大波大澜”判为大体符合，然后综合为“部分符合”。但“恶化倾向”是原文并列的独立预测，其被证伪应作为该分项的错误，而非把整体降为部分符合；同时“部分符合”要求指出后果B哪些具体部分实现、哪些未实现，建议仅罗列前提指标升降，未按分项给出实现/未实现的直接对应，分类逻辑不成立。",
+          "source_quote": "非都市贫困率长期高于都市（2019年15.4%对11.9%，2024年13.7%对10.2%），差距持续存在，符合第一分项；但贫困率自2013年峰值18.4%持续下降、2020—2024非都市人口净迁入增长，与“恶化倾向”方向相反，第二分项不符；乡村未出现持续大规模动荡，第三分项大体符合。综合为部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需重新界定三项分项各自的判定：将“暂时或在一定条件下掀不起大波大澜”作为带限定条件的独立分项处理；对“恶化倾向”需补充1990年代至2024年非都市贫困率、收入、人口流失、乡村医院关闭等多维时间序列，区分总体改善与局部恶化，不能仅以贫困率下降否定整个分项；并据此重新给出分项结论与综合口径，而非直接判为部分符合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000023002-000023063",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原句的限定是“乡村问题暂时或在一定条件下掀不起大波大澜”，即作者对后果B（乡村问题引发大动荡）给出的是带条件的否定性判断，而非把“恶化倾向”本身当作触发条件。建议把“恶化倾向”与“掀不起大波大澜”拆成两个并列分项，并因第三分项“难以操作化”而整体判暂无法判断，实际上把作者已明确给出的限定性稳定判断（B不实现）降格为未知，未按原文条件结构处理。",
+          "source_quote": "尽管没有找到良策来\n解决这一问题，这一问题还会长期存在，并且有恶化的倾向，不过乡村问题暂时或\n在一定条件下掀不起大波大澜。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议称“缺少收入、医院关闭等多维时间序列，无法判定‘恶化倾向’整体成立或不成立”，但已引材料中ev-8c30dc99f78ab00128bb5ce3明确给出“最偏远乡村贫困差距扩大”与“所有非都市县贫困率自2013年下降”并存的局部证据，prior-4acf7825736ecfce70d3给出“51%非都市县2020—2024人口减少”的局部恶化证据。这些材料已足以支持“恶化倾向”在部分维度、部分地区成立，而非整体证据不足；建议未说明为何这些已取得的局部恶化证据不能支撑分项结论。",
+          "source_quote": "Poverty rates are highest in the most rural, isolated settings, and the gap between poverty rates in these and other settings has grown. Even so, poverty rates have declined since 2013 in all types of nonmetro counties.",
+          "evidence_id": "ev-8c30dc99f78ab00128bb5ce3",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议将“长期存在”判为有证据支持，却因“恶化倾向”方向混杂、“大波大澜”难以操作化而整体判暂无法判断。按原文结构，作者的核心可检验后果是“乡村问题掀不起大波大澜”（B不实现），已引Bundy事件仅为单一对峙，不足以推翻该限定判断；而“恶化倾向”是前提A的一部分，其局部成立或混杂不应直接使整个复合判断变为未知。建议未区分“前提A部分成立”与“后果B是否实现”，导致结论口径与原文条件结构不匹配。",
+          "source_quote": "三项并列分项：(1)美国城乡差距/乡村困难长期存在——以非都市与都市贫困率差距及乡村相对弱势衡量，观察1990年代至2024年；(2)乡村问题有恶化倾向——以非都市贫困率、人口流失、乡村医院关闭等多维趋势衡量，观察1990年代至2024年；(3)乡村问题暂时或在一定条件下掀不起大波大澜——以乡村大规模社会运动、持续暴力冲突或全国性政治动荡记录衡量，观察1990年代至2024年。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需按原文条件结构重写：先确认前提A（乡村问题长期存在并有恶化倾向）在已引材料下哪些维度成立、哪些不成立，再单独判断后果B（掀不起大波大澜）是否被Bundy等单一事件推翻；不能因第三分项难以量化就把作者明确的限定性稳定判断整体降为未知。若坚持暂无法判断，须说明已引局部恶化证据为何不足以支撑A的部分成立，以及B为何不能依现有记录判为未被推翻。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000023002-000023063",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "三项口径：(1)城乡差距/乡村困难长期存在——以非都市与都市贫困率差距衡量，观察1990年代至2024年；(2)恶化倾向——以非都市贫困率、人口流失趋势衡量，观察1990年代至2024年；(3)乡村问题不掀大波大澜——以乡村大规模社会运动/全国性政治动荡记录衡量，观察1990年代至2024年。",
+      "reason": "非都市贫困率长期高于都市（2019年15.4%对11.9%，2024年13.7%对10.2%），差距持续存在，符合第一分项；但贫困率自2013年峰值18.4%持续下降、2020—2024非都市人口净迁入增长，与“恶化倾向”方向相反，第二分项不符；乡村未出现持续大规模动荡，第三分项大体符合。综合为部分符合。",
+      "limitation": "“恶化倾向”缺乏单一综合指标，本评估以贫困率与人口趋势代理，可能遗漏乡村医院关闭等其他恶化维度；乡村动荡的“大波大澜”阈值主观，且Bundy对峙等事件是否构成反例存在口径争议。",
+      "evidence_ids": [
+        "prior-7f40589d1b8077f47b6a",
+        "prior-4acf7825736ecfce70d3",
+        "ev-e4ecaa01a3c316db003527d4",
+        "ev-8c30dc99f78ab00128bb5ce3",
+        "ev-5e0d348922cdfb25820a6303"
+      ],
+      "method": "比较乡村人口占比与城乡迁移对冲突的缓冲作用",
+      "method_basis": "inferred",
+      "observation_end": "2024-12-31",
+      "future_time_text": "长期；暂时或在一定条件下",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-7f40589d1b8077f47b6a",
+          "relation": "support",
+          "quote": "2024非都市贫困率13.7%，较2022的15.0%下降，为25年较低水平之一；都市10.2%，差距仍3.5个百分点。",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "差距仍存在支持“长期存在”，但贫困率下降不支持“恶化倾向”；发布日期未知。"
+        },
+        {
+          "evidence_id": "prior-4acf7825736ecfce70d3",
+          "relation": "counter",
+          "quote": "2010年代非都市人口下降，但2020—2024每年增长，增长来自净迁入抵消自然减少；2023—2024增加134540人，仍有51%的非都市县2020—2024人口减少。",
+          "publication_date": "2026-02-13",
+          "observation_end": "2024-12-31",
+          "limitation": "总体人口转为增长，与“恶化”相反；但半数县仍减少，恶化在局部县仍可成立。"
+        },
+        {
+          "evidence_id": "ev-e4ecaa01a3c316db003527d4",
+          "relation": "support",
+          "quote": "the higher incidence of nonmetro poverty relative to metro poverty has existed since the 1960s when poverty rates were first officially recorded. Over time, the difference between nonmetro and metro poverty rates has generally narrowed, falling from an average difference of 4.5 percentage points in the 1980s to an average gap of about 3.1 percentage points over the last 10 years.",
+          "publication_date": "2026-02-13",
+          "observation_end": "2024-12-31",
+          "limitation": "支持差距长期存在，但同时显示差距在收窄，削弱“恶化”判断。"
+        },
+        {
+          "evidence_id": "ev-8c30dc99f78ab00128bb5ce3",
+          "relation": "boundary",
+          "quote": "Poverty rates are highest in the most rural, isolated settings, and the gap between poverty rates in these and other settings has grown. Even so, poverty rates have declined since 2013 in all types of nonmetro counties.",
+          "publication_date": null,
+          "observation_end": "2018-12-31",
+          "limitation": "最偏远乡村差距扩大可支持局部恶化，但总体贫困率下降；报告为2019版，观察止于2018。"
+        },
+        {
+          "evidence_id": "ev-5e0d348922cdfb25820a6303",
+          "relation": "boundary",
+          "quote": "Hundreds of backers of cattle rancher Cliven Bundy faced off with the U.S. Bureau of Land Management, which was trying to enforce court orders to remove his cattle from the rangeland surrounding his ranch.",
+          "publication_date": "2024-04-13",
+          "observation_end": "2024-04-13",
+          "limitation": "单一武装对峙事件，是否构成“大波大澜”存争议，不足以推翻总体稳定判断。"
+        }
+      ],
+      "remaining_gap": "缺少1990年代至2024年连续的非都市贫困率、收入、乡村医院关闭等综合时间序列，无法精确刻画“恶化倾向”的完整轨迹；乡村大规模动荡的量化阈值未定。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000023002-000023063",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "三项并列分项：(1)美国城乡差距/乡村困难长期存在——以非都市与都市贫困率差距及乡村相对弱势衡量，观察1990年代至2024年；(2)乡村问题有恶化倾向——以非都市贫困率、人口流失、乡村医院关闭等多维趋势衡量，观察1990年代至2024年；(3)乡村问题暂时或在一定条件下掀不起大波大澜——以乡村大规模社会运动、持续暴力冲突或全国性政治动荡记录衡量，观察1990年代至2024年。",
+      "reason": "第一分项有证据支持：非都市贫困率长期高于都市（2019年15.4%对11.9%，2024年13.7%对10.2%），差距持续存在。第二分项证据方向混杂：总体贫困率下降、城乡差距收窄，但仍有51%的非都市县2020—2024人口减少，且缺少收入、医院关闭等多维时间序列，无法判定“恶化倾向”整体成立或不成立。第三分项仅有Bundy对峙等单一事件，缺乏系统的大规模动荡记录，难以操作化判定。综合主要分项证据不足，暂无法判断。",
+      "limitation": "关键修订：将“暂时或在一定条件下掀不起大波大澜”作为带限定条件的独立分项处理，不再以单一贫困率下降否定整个“恶化倾向”分项；因多维时间序列缺失，第二、三分项无法给出确定结论。原“部分符合”综合口径不成立，改为暂无法判断。",
+      "evidence_ids": [
+        "prior-7f40589d1b8077f47b6a",
+        "prior-4acf7825736ecfce70d3",
+        "ev-e4ecaa01a3c316db003527d4",
+        "ev-8c30dc99f78ab00128bb5ce3",
+        "ev-5e0d348922cdfb25820a6303"
+      ],
+      "method": "比较乡村人口占比与城乡迁移对冲突的缓冲作用",
+      "method_basis": "inferred",
+      "observation_end": "2024-12-31",
+      "future_time_text": "长期；暂时或在一定条件下",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-7f40589d1b8077f47b6a",
+          "relation": "support",
+          "quote": "2024非都市贫困率13.7%，较2022的15.0%下降，为25年较低水平之一；都市10.2%，差距仍3.5个百分点。",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "差距仍存在支持“长期存在”，但贫困率下降不支持“恶化倾向”；发布日期未知。"
+        },
+        {
+          "evidence_id": "prior-4acf7825736ecfce70d3",
+          "relation": "boundary",
+          "quote": "2010年代非都市人口下降，但2020—2024每年增长，增长来自净迁入抵消自然减少；2023—2024增加134540人，仍有51%的非都市县2020—2024人口减少。",
+          "publication_date": "2026-02-13",
+          "observation_end": "2024-12-31",
+          "limitation": "总体人口转为增长与“恶化”相反，但半数县仍减少显示局部恶化，方向混杂，不能整体归为支持或反证。"
+        },
+        {
+          "evidence_id": "ev-e4ecaa01a3c316db003527d4",
+          "relation": "support",
+          "quote": "the higher incidence of nonmetro poverty relative to metro poverty has existed since the 1960s when poverty rates were first officially recorded. Over time, the difference between nonmetro and metro poverty rates has generally narrowed, falling from an average difference of 4.5 percentage points in the 1980s to an average gap of about 3.1 percentage points over the last 10 years.",
+          "publication_date": "2026-02-13",
+          "observation_end": "2024-12-31",
+          "limitation": "支持差距长期存在，但同时显示差距在收窄，削弱“恶化”判断；仅覆盖贫困维度。"
+        },
+        {
+          "evidence_id": "ev-8c30dc99f78ab00128bb5ce3",
+          "relation": "boundary",
+          "quote": "Poverty rates are highest in the most rural, isolated settings, and the gap between poverty rates in these and other settings has grown. Even so, poverty rates have declined since 2013 in all types of nonmetro counties.",
+          "publication_date": null,
+          "observation_end": "2018-12-31",
+          "limitation": "最偏远乡村差距扩大可支持局部恶化，但总体贫困率下降；报告为2019版，观察止于2018，发布日期未知。"
+        },
+        {
+          "evidence_id": "ev-5e0d348922cdfb25820a6303",
+          "relation": "boundary",
+          "quote": "Hundreds of backers of cattle rancher Cliven Bundy faced off with the U.S. Bureau of Land Management, which was trying to enforce court orders to remove his cattle from the rangeland surrounding his ranch.",
+          "publication_date": "2024-04-13",
+          "observation_end": "2024-04-13",
+          "limitation": "单一武装对峙事件，是否构成“大波大澜”存争议，不足以判定第三分项成立或不成立。"
+        }
+      ],
+      "remaining_gap": "缺少1990年代至2024年连续的非都市贫困率、收入、乡村医院关闭等多维时间序列，无法判定“恶化倾向”整体轨迹；乡村大规模动荡的量化阈值未定，第三分项无法操作化判定。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "对象：王沪宁1991年前后对美国城乡差别与乡村问题的复合判断；可观察口径分三项：(1)美国城乡差距/乡村困难是否长期存在（以非都市县贫困率、收入、公共服务等相对都市的持续差距衡量）；(2)是否有“恶化倾向”（以1990年代至2024年非都市贫困率、人口流失、乡村医院关闭等趋势衡量，须区分长期存在与持续恶化）；(3)乡村问题是否“暂时或在一定条件下掀不起大波大澜”（以乡村大规模社会运动、持续暴力冲突或全国性政治动荡的可观察记录衡量）。反证包括：乡村贫困显著收窄或消失、乡村状况系统性改善、出现大规模乡村抗议/骚乱或乡村问题成为全国政治主导。",
+  "elapsed_seconds": 53.968,
+  "completed_at": "2026-11-09T07:59:07.735626+00:00"
+}

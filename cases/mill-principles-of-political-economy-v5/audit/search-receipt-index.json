@@ -1,0 +1,15 @@
+{
+  "execution_receipt": "audit/search-log.jsonl",
+  "receipt_rows": 14,
+  "ids_with_execution_receipt": [
+    "txt-5386516eaf-000055360-000055411",
+    "txt-5386516eaf-001564673-001564796",
+    "txt-5386516eaf-001710722-001710894",
+    "txt-5386516eaf-001769443-001769612",
+    "txt-5386516eaf-001920576-001920691",
+    "txt-5386516eaf-002489772-002489920",
+    "txt-5386516eaf-002532783-002532843"
+  ],
+  "other_execution_receipts_found": [],
+  "disclosure": "只有 search-log.jsonl 里这 7 个 ID 有检索执行记录。其余阶段的 plan.queries 和 select.urls 写明无 executed=true，不是工具返回。本次不回填、不伪造。"
+}

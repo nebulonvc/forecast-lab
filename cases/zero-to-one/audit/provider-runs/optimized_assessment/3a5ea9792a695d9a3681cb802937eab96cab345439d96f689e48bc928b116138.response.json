@@ -1,0 +1,28 @@
+{
+  "id": "05b34038-2fba-46b3-a34c-0a84051762ad",
+  "object": "chat.completion",
+  "created": 1794201585,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000038182-000038245\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"判断对象为“今天”（作者写作时约2014年前后）社会对宏大计划的态度：在校教师的雄心计划被弃用、稍有权势者的长远愿景被嘲笑。需可观察的案例或态度调查，观察窗口为2014年至cutoff 2026-11-09。\",\"reason\":\"原文以“肯定会被”“都会被”作全称判断，但未给出可核验的指标、案例或调查来源；现有证据列表为空，无法确认该态度判断是否成立。\",\"limitation\":\"“怪诞想法”“狂妄自大”属主观态度，缺乏可操作化数据；无证据不能判正确或错误。\",\"evidence_ids\":[],\"method\":\"对比推断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"今天\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4392,
+    "completion_tokens": 222,
+    "total_tokens": 4614,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3624
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

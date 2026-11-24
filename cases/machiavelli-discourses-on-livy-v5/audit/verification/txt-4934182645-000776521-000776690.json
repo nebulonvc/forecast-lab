@@ -1,0 +1,59 @@
+{
+  "claim_id": "txt-4934182645-000776521-000776690",
+  "plan": {
+    "object": "要和新而可畏的敌人打会战的军队",
+    "conditions": [
+      "会战之前没有先让士兵认识敌人并摆脱恐惧"
+    ],
+    "quantifier": "certain",
+    "result": "走向确定的毁灭",
+    "time_window": "1531年之后",
+    "counterevidence_needed": "士兵事先没有认识敌人，却在会战中没有毁灭"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "purpose": "首轮一正一反",
+        "support_query": "army destroyed in first pitched battle against an enemy the soldiers had never faced",
+        "counter_query": "untried soldiers won a pitched battle the first time they met the enemy",
+        "support_result": "伊桑德尔瓦纳和瓦巴什是失败，页面没有写士兵在会战前完全没有认识敌人的机会。坎尼是出版前。",
+        "counter_result": "1792年热马普写缺乏经验的志愿兵打胜，但可见文字没有写会战前没有让他们认识敌人。贝洛伍德页写老兵带着新兵作战。",
+        "adopted": false
+      }
+    ],
+    "adaptive_rounds": 0,
+    "stop_reason": "两边都没有同时写明没有事先认识敌人，以及会战结果是毁灭或不是毁灭。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Jemmapes",
+        "fetched": false,
+        "note": "检索可见缺乏经验的志愿兵取胜，但没有写会战前是否已认识敌人。未把摘要存成摘录。"
+      }
+    ]
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "insufficient_evidence",
+    "trend_aligned": null,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "确定毁灭的条件是会战前没有先让士兵认识敌人并摆脱恐惧。仅仅缺乏经验不够。",
+    "reason": "连续原文说，将领在和新而可畏的敌人打总决战之前，应当先用小战让士兵认识敌人并摆脱恐惧；不这样做就去会战，是走向确定的毁灭。一次毁灭不能证明确定，一次取胜只有在确实没有先认识敌人时才能否定确定。热马普可见文字只写缺乏经验的志愿兵打胜，没有写他们事先没有认识奥军。贝洛伍德写的是老兵带领新兵。伊桑德尔瓦纳和瓦巴什没有写这个事先认识的条件。坎尼在出版之前。所以不判。",
+    "limitation": "热马普页没有下载成可引用正文。",
+    "method": "先看会战前有没有认识敌人的机会，再看结果是不是毁灭。缺乏经验不能代替这个条件。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "缺乏经验不是没有事先认识敌人。出版前的坎尼不用。"
+  }
+}

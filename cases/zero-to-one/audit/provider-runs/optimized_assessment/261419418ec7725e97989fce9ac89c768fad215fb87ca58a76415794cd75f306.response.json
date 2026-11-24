@@ -1,0 +1,28 @@
+{
+  "id": "a4691c11-df61-415e-8fd4-4e5832fe3334",
+  "object": "chat.completion",
+  "created": 1794201583,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000030617-000030650\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"关于初创企业设计时应考虑规模潜能的规范性建议，无可检验的未来结果。\",\"reason\":\"原文是面向创业者的设计建议，不是对可观察未来事件的具体预测。\",\"limitation\":\"属规范性主张，不纳入预测评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"之后\",\"condition_state\":\"unconditional\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000030650-000030708\",\"inclusion\":\"forecast\",\"verdict\":\"部分符合\",\"basis\":\"observed_window\",\"scope\":\"以推特用户规模能否在2.5亿基础上继续增长为主要可观测判断，观察2014年后至2022年第二季度的公开用户指标；不要求验证“无需添加定制化特色”的机制。\",\"reason\":\"2018年披露月活335百万高于书中2.5亿基数，2022年第二季度mDAU同比增长16.6%，用户规模沿继续增长方向变化；但“无需定制化特色”及“没有内在固有原因阻止增长”的机制未被证实，且口径不同不可直接相减。趋势符合，最终长期结果待验证。\",\"limitation\":\"仅有2018与2022两个时点，且mDAU与书中总用户口径不同；2022年后数据未完整核对，不能据此断言永远不停止增长。\",\"evidence_ids\":[\"biz-twitter-2018\",\"biz-twitter-2022\"],\"method\":\"软件规模经济推演\",\"method_basis\":\"explicit\",\"observation_end\":\"2022-07-22\",\"future_time_text\":\"未给出确切期限\",\"condition_state\":\"unconditional\",\"trend_aligned\":true}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5560,
+    "completion_tokens": 405,
+    "total_tokens": 5965,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 4792
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,53 @@
+{
+  "written_at": "2026-11-20",
+  "external_model_api_used": false,
+  "imported_forecasts": 3,
+  "chunks_complete": 156,
+  "note": "接口没有返回 tool_call_id，不编造。2026 年抓到的现行词典页没有用作证据，因为截止日是 2026-11-15。德性检索的返回页是青少年问卷、方便样本或本书自身，没有绑定。",
+  "searches": [
+    {
+      "time": "2026-11-20T09:11:13Z",
+      "query": "midwife dictionary definition still current word accoucheur did not replace",
+      "tool_call_id": null
+    },
+    {
+      "time": "2026-11-20T09:11:13Z",
+      "query": "Catharine Macaulay historian remembered intellectual woman posterity reputation",
+      "tool_call_id": null
+    },
+    {
+      "time": "2026-11-20T09:11:13Z",
+      "query": "measure of virtue prevailing in society both sexes reason Wollstonecraft not legal rights employment",
+      "tool_call_id": null
+    },
+    {
+      "time": "2026-11-20T09:11:13Z",
+      "query": "virtue prevalence survey time series society men women moral character not employment statistics",
+      "tool_call_id": null
+    }
+  ],
+  "curls": [
+    {
+      "time": "2026-11-20T09:11:13Z",
+      "url": "https://www.lrb.co.uk/the-paper/v14/n13/linda-colley/herstory",
+      "http": 200
+    },
+    {
+      "time": "2026-11-20T09:16:58Z",
+      "url": "https://web.archive.org/web/20161223194152id_/http://dictionary.cambridge.org/dictionary/english/midwife",
+      "http": 200
+    },
+    {
+      "time": "2026-11-20T09:16:58Z",
+      "url": "https://web.archive.org/web/20160814015807id_/http://www.dictionary.com/browse/accoucheur",
+      "http": 200
+    }
+  ],
+  "current_receipt": {
+    "rules": "simple-v3-trend-four-class",
+    "response_sha256": "d59684385ce33ef9f92df68543fbe19edf678e1fe448642f66901770323109f4",
+    "input_claims_sha256": "78cfc6a4f128218d9ac6b16299ba0e7e52bd38b65270bd5796a6f71207f24d80",
+    "evidence_table_sha256": "887a4ffa2b2f3fbd4126f9f72ccae78c22fa0e0ac79aa027b7de497dc69bcc44",
+    "config_sha256": "dd808feda81b3d4efd7039b9dbb236014ac85b81d580c22640ebbd04d17df4e5"
+  }
+}

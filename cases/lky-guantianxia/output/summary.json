@@ -1,0 +1,92 @@
+{
+  "book": "李光耀观天下",
+  "cutoff": "2026-11-08",
+  "rules_version": "simple-v3-trend-four-class",
+  "candidates": 326,
+  "assessment_reviewed": 326,
+  "unreviewed": 0,
+  "extraction_v2_reviewed": 326,
+  "expanded_claims_n": 323,
+  "unresolved_references_n": 21,
+  "legacy_extraction_reviewed": 40,
+  "whole_candidate_pass_complete": true,
+  "candidate_completion_rate": 1.0,
+  "forecast_n": 306,
+  "verdicts": {
+    "正确": 53,
+    "部分符合": 73,
+    "错误": 13,
+    "暂无法判断": 167
+  },
+  "display_verdicts": {
+    "正确": 53,
+    "趋势符合": 42,
+    "部分符合": 31,
+    "错误": 13,
+    "暂无法判断": 167
+  },
+  "display_schema": "five-categories-trend-separate",
+  "excluded": {
+    "nonforecast": 17,
+    "duplicate": 3
+  },
+  "decided_n": 139,
+  "forecasts_with_bound_evidence": 189,
+  "forecasts_without_bound_evidence": 117,
+  "no_decidable_outcomes": false,
+  "trend_aligned_n": 42,
+  "evaluation_coverage": 0.4542483660130719,
+  "correct_share_of_decided": 0.381294964028777,
+  "unresolved_bases": {
+    "future": 24,
+    "conditional": 81,
+    "evidence": 52,
+    "definition": 8,
+    "attribution": 2
+  },
+  "evidence": 216,
+  "evidence_hash_verified": 216,
+  "method_attribution": {
+    "unknown": 93,
+    "inferred": 200,
+    "explicit": 33
+  },
+  "interpretation": "Retrospective parent-record counts, not independent forecast accuracy or prospective skill.",
+  "brier": null,
+  "partial_numeric_weight": null,
+  "prepublication_observation_warning_ids": [],
+  "execution": {
+    "request_count": 42,
+    "response_count": 42,
+    "api_peak_concurrency": 12,
+    "api_wall_seconds": 24.73,
+    "usage": {
+      "prompt_tokens": 264602,
+      "completion_tokens": 49854,
+      "total_tokens": 314456,
+      "prompt_cache_hit_tokens": 22784,
+      "prompt_cache_miss_tokens": 241818
+    },
+    "estimated_cost_CNY_range": [
+      0.44168968,
+      0.88337936
+    ],
+    "automatic_retries": 0,
+    "final_accepted_records": 326
+  },
+  "session_review": {
+    "reviewed": 243,
+    "carried_forward": 83,
+    "verdict_or_inclusion_changed": 76,
+    "transitions": {
+      "暂无法判断 → 部分符合": 61,
+      "暂无法判断 → 正确": 13,
+      "暂无法判断 → 错误": 2
+    },
+    "trend_aligned_n": 42,
+    "new_evidence_records": 78,
+    "model_final_verdict_or_trend_disagreements": 11,
+    "method_changed": 0,
+    "source_quotes_changed": 0
+  }
+}

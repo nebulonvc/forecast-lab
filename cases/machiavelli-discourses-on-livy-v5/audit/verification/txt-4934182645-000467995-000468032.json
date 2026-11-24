@@ -1,0 +1,48 @@
+{
+  "id": "txt-4934182645-000467995-000468032",
+  "plan": {
+    "object": "为了进攻别人而召来辅助军的人。同段定义：辅助军是另一君主派来的部队，用他的旗号、他的军官、他的军饷；召他们的人对他们没有指挥权。并肩作战而仍由派出者指挥的国家盟军，就是这个定义，不是另一类。编进自己军队、由自己发饷的外籍团不是。",
+    "condition": "summon such help, not for purposes of defence but in order to attack others。these ills 指前一句：他要得到自己永远保不住的东西，而且极可能被帮助他得到它的人夺走。议定交出的原有土地、没有打到的目标，都要记入，不能只留战果。",
+    "quantifier": "must speedily ensue。speedily 没有年数。保不住战果、被帮助者夺走，若在同一场战争结束时已经没有发生，就不能再把后来另交的本土说成这句的祸害。",
+    "result": "登记变化是 speedily ensue，发生的是上述祸害。一次没有发生，就反驳 must。",
+    "window": "1531至2026-11-15。斯维亚托斯拉夫在十世纪。",
+    "counterevidence_needed": "一个为进攻而召来另一君主军队的人，保住了借此得到的战果，帮助者没有夺走它。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "prince invited foreign auxiliaries to attack a neighbor and the ally then seized the conquest",
+      "counter_query": "state hired foreign troops for an offensive war and retained the territory it conquered"
+    },
+    "adaptive_rounds": 1,
+    "adaptive": {
+      "strategy": "改查撒丁为取得伦巴第而召来法军之后，战果是否被法国夺走",
+      "queries": ["Piedmont called French army against Austria 1859 ceded Savoy but kept Lombardy"]
+    },
+    "kept_urls": ["https://www.historyofwar.org/articles/wars_second_war_italian_independence.html"],
+    "dropped": "路易十四的外籍团是编入本国军队的雇军，不是另一君主派来进攻、再夺走战果的辅助军。黑森兵没有夺走英国的战果。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "错误",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "satisfied",
+    "future_time_text": "speedily",
+    "observation_end": "1860-04-15",
+    "evidence_ids": ["ev-historyofwar-piedmont-1859"],
+    "scope": "普遍的 must。一个为进攻而召来辅助军、并保住战果的国家，就反驳祸害必然很快到来。",
+    "reason": "辅助军按同段是另一君主派出、用他自己的旗号军官和军饷、召援者无权指挥的部队。1859年的法军由拿破仑指挥，符合这个定义，不是皮埃蒙特自己的外籍团。战争史页面写，约定是把奥地利逐出伦巴第和威尼西亚，代价是萨伏依和尼斯。1859年7月11日维拉弗兰卡把伦巴第交给法国再转给皮埃蒙特，威尼西亚仍留在奥地利；加富尔称之为背叛并辞职。同一页写皮埃蒙特得到伦巴第；1860年3月24日把尼斯和萨伏依交给法国，换取同意接管托斯卡纳和艾米利亚；4月15日这些地区投票并入。利益交换全部在此：伦巴第留下，威尼西亚没有打到，尼斯和萨伏依交给帮助者。这句的祸害是帮助者夺走刚替他打下的东西。法国没有留下伦巴第。尼斯和萨伏依是议定的原有土地，不是那块战果。因此“保不住并由帮助者夺走”没有发生在伦巴第上。must 不成立。",
+    "limitation": "页面没有出版日。威尼西亚未得、尼斯和萨伏依交出，都记在这里，不从账上删去。它们不是帮助者把伦巴第据为己有。",
+    "method": "先用前一句确定祸害是保不住战果并被帮助者夺走，再看皮埃蒙特是否保住伦巴第。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "pass",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "法军由法国旗号、军官和军饷指挥，符合辅助军定义。伦巴第留下；威尼西亚未得；尼斯和萨伏依交出。被夺走的不是刚打下的伦巴第。"
+  }
+}

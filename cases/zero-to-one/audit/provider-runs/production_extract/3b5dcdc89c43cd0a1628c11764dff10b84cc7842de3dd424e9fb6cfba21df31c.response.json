@@ -1,0 +1,28 @@
+{
+  "id": "e41d565d-5fb8-49d0-9a40-134b823764a4",
+  "object": "chat.completion",
+  "created": 1794201131,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"items\": [\n    {\n      \"id\": \"txt-00020\",\n      \"predictions\": [\n        {\n          \"quote\": \"你发明了新产品却没有有效的方式推销，那么你的生意将很难做下去——无论你的产品质量有多好。\",\n          \"kind\": \"prediction\",\n          \"speaker\": \"作者\",\n          \"claim\": \"如果发明新产品但没有有效推销方式，生意将很难做下去，无论产品质量多好。\",\n          \"expanded_claim\": \"如果发明新产品但没有有效推销方式，那么生意将很难做下去，无论产品质量有多好。\",\n          \"reference_resolutions\": [],\n          \"unresolved_references\": [],\n          \"time_text\": \"\",\n          \"condition_text\": \"发明新产品却没有有效的方式推销\",\n          \"method\": \"unknown\",\n          \"method_basis\": \"unknown\",\n          \"reason\": \"条件性预测，说明缺乏推销的后果。\"\n        },\n        {\n          \"quote\": \"采用复杂销售模式的公司如果10年内年增长率达到50% 或100%，那么就能成功。\",\n          \"kind\": \"prediction\",\n          \"speaker\": \"作者\",\n          \"claim\": \"采用复杂销售模式的公司如果10年内年增长率达到50%或100%，就能成功。\",\n          \"expanded_claim\": \"采用复杂销售模式的公司如果10年内年增长率达到50%或100%，那么就能成功。\",\n          \"reference_resolutions\": [],\n          \"unresolved_references\": [],\n          \"time_text\": \"10年内\",\n          \"condition_text\": \"采用复杂销售模式且年增长率达到50%或100%\",\n          \"method\": \"unknown\",\n          \"method_basis\": \"unknown\",\n          \"reason\": \"条件性预测，给出成功条件。\"\n        },\n        {\n          \"quote\": \"如果Box一开始就基于整个学校的企业解决方案，直接去找校长洽谈，那么它将一无所获。\",\n          \"kind\": \"prediction\",\n          \"speaker\": \"作者\",\n          \"claim\": \"如果Box一开始就基于整个学校的企业解决方案直接找校长洽谈，那么它将一无所获。\",\n          \"expanded_claim\": \"如果Box一开始就基于整个学校的企业解决方案，直接去找校长洽谈，那么Box将一无所获。\",\n          \"reference_resolutions\": [\n            {\n              \"expression\": \"Box\",\n              \"referent\": \"Box公司\",\n              \"support_quote\": \"2008年，Box公司开发出了安全便捷地存储数据的云服务。\"\n            }\n          ],\n          \"unresolved_references\": [],\n          \"time_text\": \"\",\n          \"condition_text\": \"Box一开始就基于整个学校的企业解决方案，直接去找校长洽谈\",\n          \"method\": \"unknown\",\n          \"method_basis\": \"unknown\",\n          \"reason\": \"反事实条件预测，说明不同销售策略的结果。\"\n        },\n        {\n          \"quote\": \"如果再继续扩大规模，让大多数执业医师参与其中，那么它将成为美国医保行业的基础性公用事业。\",\n          \"kind\": \"prediction\",\n          \"speaker\": \"作者\",\n          \"claim\": \"如果ZocDoc继续扩大规模让大多数执业医师参与，那么它将成为美国医保行业的基础性公用事业。\",\n          \"expanded_claim\": \"如果ZocDoc再继续扩大规模，让大多数执业医师参与其中，那么ZocDoc将成为美国医保行业的基础性公用事业。\",\n          \"reference_resolutions\": [\n            {\n              \"expression\": \"它\",\n              \"referent\": \"ZocDoc\",\n              \"support_quote\": \"ZocDoc是创始人基金投资的一家公司，帮助人们在线查找并预约医生。\"\n            }\n          ],\n          \"unresolved_references\": [],\n          \"time_text\": \"\",\n          \"condition_text\": \"再继续扩大规模，让大多数执业医师参与其中\",\n          \"method\": \"unknown\",\n          \"method_basis\": \"unknown\",\n          \"reason\": \"条件性预测，说明规模扩大后的地位。\"\n        }\n      ]\n    }\n  ]\n}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3293,
+    "completion_tokens": 835,
+    "total_tokens": 4128,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 3037
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

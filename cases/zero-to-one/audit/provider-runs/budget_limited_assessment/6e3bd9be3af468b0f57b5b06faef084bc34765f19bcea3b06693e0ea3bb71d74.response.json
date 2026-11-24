@@ -1,0 +1,28 @@
+{
+  "id": "504c6e39-9d67-4855-9302-30b8325398f7",
+  "object": "chat.completion",
+  "created": 1794201439,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000008199-000008241\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性预测：对象为“美国的公司”，条件为“不在艰难的创新上进行投资”，结果为“将来都会以失败而告终”。原文未定义“艰难的创新投资”“失败”的具体口径，也未给出期限；观察窗口为出版年2014年至cutoff 2026-11-09。\",\"reason\":\"该判断是带明确前置条件的全称预测，条件是否满足、以及“失败”如何操作化均未在原文界定，无法在观察窗口内对“所有不投资艰难创新的美国公司都会失败”作出可核验的判定。\",\"limitation\":\"原文未给出可量化指标与期限，且“失败”含义宽泛；无证据材料可支撑对条件满足情况的系统观察，故不据模型记忆补结果。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"将来\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4272,
+    "completion_tokens": 247,
+    "total_tokens": 4519,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 4272
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,99 @@
+{
+  "id": "txt-5386516eaf-001922431-001922515",
+  "assess": {
+    "id": "txt-5386516eaf-001922431-001922515",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "工人阶级的见识会表现为节俭的行为习惯并随之增长。",
+    "reason": "注册互助会会员到1910年达到660万，这是预测当时的规模，不是此后习惯的增长。1988年家庭储蓄率降到5.7%是全体家庭的储蓄率，不是工人阶级的节俭习惯。",
+    "limitation": "相关指标不用来计分。",
+    "evidence_ids": [
+      "ev-friendly-societies",
+      "ev-uk-saving-1998"
+    ],
+    "method": "支持检索工人阶级互助储蓄，反证检索储蓄率下降。两者都不是1909年之后的节俭习惯。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-friendly-societies",
+        "quote": "by 1910 the figure had reached 6.6 million, having increased at an annual average rate since 1897 of 140,000. It was at the height of their expansion that the state intervened and transformed the friendly societies by introducing compulsory national insurance",
+        "relation": "boundary",
+        "limitation": "止于1910的会员数。",
+        "observation_end": "1910-12-31",
+        "publication_date": null,
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "ev-uk-saving-1998",
+        "quote": "fell sharply to a mere 5.7% in 1988 but then climbed back to 12.8% in 1992",
+        "relation": "boundary",
+        "limitation": "全体家庭储蓄率。",
+        "observation_end": "1992-12-31",
+        "publication_date": "1998",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺1909年之后工人阶级节俭习惯是否增长的同对象记录。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001922431-001922515",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-friendly-societies"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-friendly-societies"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "friendly society membership of manual workers after 1909"
+      },
+      {
+        "role": "counter",
+        "query": "household saving rate fell in the 1980s"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "http://www.caledonia.org.uk/papers/UK-friendly-societies.pdf",
+      "https://www.stephanygj.net/papers/SwingingSinceThe60s1998.pdf"
+    ],
+    "reason": "两个指标都不是节俭习惯本身。"
+  }
+}

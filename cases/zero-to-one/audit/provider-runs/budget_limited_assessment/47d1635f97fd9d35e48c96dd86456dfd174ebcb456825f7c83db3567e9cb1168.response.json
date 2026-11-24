@@ -1,0 +1,28 @@
+{
+  "id": "b3dcd667-e56c-4139-ad39-62db5de34b3e",
+  "object": "chat.completion",
+  "created": 1794201443,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000030617-000030650\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为对初创企业设计原则的建议性表述，无可检验的预测终点或可观测指标。\",\"reason\":\"该句是作者对初创企业设计应具规模潜能的规范性建议，并非对未来事件的可检验预测。\",\"limitation\":\"建议性表述无法用回顾性证据判定对错，仅作排除记录。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"之后\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4202,
+    "completion_tokens": 151,
+    "total_tokens": 4353,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3434
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

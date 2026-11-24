@@ -1,0 +1,81 @@
+{
+  "id": "txt-5386516eaf-001836414-001836562",
+  "assess": {
+    "id": "txt-5386516eaf-001836414-001836562",
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "observation_end": null,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-rent-share-1855-1910",
+        "quote": "from 18.4% of the total domestic income in 1855 to 14.9% in 1910",
+        "relation": "boundary",
+        "limitation": "止于1910且是份额下降。",
+        "observation_end": "1910-12-31",
+        "publication_date": null
+      }
+    ],
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "由地主、资本家和劳动者构成的社会，其经济进步倾向于使地主阶级逐步变富。",
+    "reason": "牛津论文写英国综合地租占国内收入从1855年18.4%降到1910年14.9%。这是1910年以前的份额下降，不是1909年之后地主阶级变富，也不是整个三阶级社会。",
+    "limitation": "论文发布日未知。法国住房租金份额是另一对象，不用。",
+    "evidence_ids": [
+      "ev-rent-share-1855-1910"
+    ],
+    "remaining_gap": "缺1909年之后地主阶级收入或其占社会财富比重上升的同对象序列。",
+    "method": "检索地租份额。时期和方向都对不上，不判错误或正确。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001836414-001836562",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-rent-share-1855-1910"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-rent-share-1855-1910"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "this round"
+      },
+      {
+        "role": "counter",
+        "query": "this round"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://ora.ox.ac.uk/objects/uuid:d64dc54b-2a02-4a40-aff2-fd9fce3c7474"
+    ],
+    "reason": "对象或量词不符的材料只作边界，不计分。"
+  }
+}

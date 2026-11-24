@@ -1,0 +1,13 @@
+{
+  "written_at": "2026-11-20",
+  "imported_forecasts": 0,
+  "support_queries": [],
+  "counter_queries": [],
+  "tool_calls": [],
+  "failures": [],
+  "reason": "130 块顺序读完后，没有可进口的作者明确可核预言。因此没有执行支持检索或反证检索，也没有保存外部正文。没有编造 tool_call_id、查询参数或返回块哈希。",
+  "reading": "从 txt-00006 整块起顺序读到 txt-00129，跳过此前已完整读过的 13 块。txt-00036 与 txt-00044 在轮到时整块补齐。账本记录 130 块全部 complete。全本账本不进入交付 ZIP。",
+  "rejected_span_file": "audit/rejected-spans.json",
+  "rejected_span_count": 19,
+  "external_model_api_used": false
+}

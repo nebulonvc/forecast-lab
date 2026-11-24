@@ -1,0 +1,50 @@
+{
+  "claim_id": "txt-1895656fef-000423150-000423300",
+  "plan": {
+    "object": "塞尚、梵高和赖德，以及艺术边界不再缩回学院限度",
+    "conditions": [],
+    "quantifier": "will hold their own，and ever shrinking again",
+    "result": "三人站得住，艺术边界不再缩回学院范围",
+    "time_window": "1923年到2026-11-15",
+    "counterevidence_needed": "艺术边界缩回学院限度，或这三人不再站得住"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "support_query": "Cezanne Van Gogh remain central to modern art history after academic painting",
+        "counter_query": "academic art replaced Cezanne and Van Gogh as the boundary of modern painting",
+        "saved_at_utc": "2026-11-20T11:04:46Z",
+        "tool_call_id": null
+      }
+    ],
+    "adaptive_rounds": 0,
+    "stop_reason": "2009年页写梵高一直被敬重，但没有写赖德，也没有写永远不再缩回。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unconditional",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [
+      "ev-nyrb-cezanne-2009"
+    ],
+    "scope": "三人一起站得住，并且艺术边界永远不再缩回学院限度。I trust 保留为中等把握，不把永远改成到2009年为止。",
+    "reason": "2009年8月13日的书评写，几十年后塞尚取代修拉、梵高和高更，成为现代主义的主要先驱，另外三人一直被敬重，但他们的遗产广泛分散。这不是缩回学院限度，也没有提到赖德。一直被敬重到2009年不能证明永远不再缩回。",
+    "limitation": "大都会和艺术报的全文没有存成摘录。赖德不在这页上。",
+    "method": "先看三个人是否都在页面上，再看永远不再缩回有没有被观察完。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "unknown",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "赖德缺失，所以对象没有对齐。没有页面把边界写回学院限度。永远尚未结束。"
+  }
+}

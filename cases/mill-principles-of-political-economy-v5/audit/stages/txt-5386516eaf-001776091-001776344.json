@@ -1,0 +1,66 @@
+{
+  "id": "txt-5386516eaf-001776091-001776344",
+  "assess": {
+    "id": "txt-5386516eaf-001776091-001776344",
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "observation_end": null,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-oecd-life-1820",
+        "quote": "In the 2000s, life expectancy at birth was still below the age of 50 in more than a quarter of all countries in Sub-Saharan Africa.",
+        "relation": "boundary",
+        "limitation": "只是预期寿命。",
+        "observation_end": "2009-12-31",
+        "publication_date": "2014"
+      }
+    ],
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "自然条件优厚却仍无知和失政的地区，大概还要许多世代，才会被提高到欧洲最文明部分当时的水平。",
+    "reason": "OECD章节写2000年代撒哈拉以南非洲仍有超过四分之一的国家出生预期寿命低于50岁。预期寿命不是“欧洲最文明部分当时的整体水平”，不能用这一项判许多世代之后已经达到或尚未达到。",
+    "limitation": "页内另有1900年代西欧46.3岁等数字，但仍只是寿命。",
+    "evidence_ids": [
+      "ev-oecd-life-1820"
+    ],
+    "remaining_gap": "缺知识、政制与生活水平相对1909年前后欧洲最文明部分的同对象比较。",
+    "method": "检索地区生活水平。拒绝用预期寿命代替整体水平。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001776091-001776344",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "this round"
+      },
+      {
+        "role": "counter",
+        "query": "this round"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://doi.org/10.1787/9789264214262-10-en"
+    ],
+    "reason": "对象或量词不符的材料只作边界，不计分。"
+  }
+}

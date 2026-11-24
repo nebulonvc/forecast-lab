@@ -1,0 +1,70 @@
+{
+  "id": "txt-5386516eaf-001892315-001892399",
+  "assess": {
+    "id": "txt-5386516eaf-001892315-001892399",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "future",
+    "scope": "人类产业最终会流入表面上停滞的海。很快到达停滞被作者系于不再有技术改良并且资本不再外流。最终没有日期。",
+    "reason": "全要素生产率增长从19世纪末升到黄金时代，其后明显放慢，但没有停止。不再改良这个条件没有成立，最终时点也还没有封闭。",
+    "limitation": "放慢不是停滞，继续增长也不把最终判断判成已经错误。",
+    "evidence_ids": [
+      "ev-imf-tfp-2000"
+    ],
+    "method": "检索停滞是否出现，并检索技术改良是否已经停止。",
+    "method_basis": "explicit",
+    "observation_end": "1992-12-31",
+    "future_time_text": "finally",
+    "condition_state": "not_met",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-imf-tfp-2000",
+        "quote": "The broad picture is that generally TFP growth rose from the late nineteenth century through the Golden Age and then declined sharply in the recent growth slowdown",
+        "relation": "boundary",
+        "limitation": "改良继续后放慢。",
+        "observation_end": "1992-12-31",
+        "publication_date": "2000-03-01",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "没有不再改良、资本也不再外流的窗口。最终到截止日尚未封闭。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001892315-001892399",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "rich economies reached a stationary state"
+      },
+      {
+        "role": "counter",
+        "query": "TFP growth continued then only slowed"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://www.elibrary.imf.org/view/journals/001/2000/044/article-A001-en.xml"
+    ],
+    "reason": "条件未成立。"
+  }
+}

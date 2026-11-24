@@ -1,0 +1,552 @@
+{
+  "claim_id": "txt-1c4066fc0c-000218997-000219034",
+  "version": "search-verifier-v1",
+  "input_sha256": "8ce772dc5290082618da37022e1159c003e95cbf3e3cfac89dbe614a31c37eea",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000218997-000219034",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "以原段已举的“文革红卫兵小报”为同类资料样本，检验其后来是否被学者用于历史研究；观察时段为1991年原书出版后至cutoff 2026-11-09，不声称定位匿名图书馆负责人及同一物理纸本。",
+    "reason": "引用材料的发表时间尚未确认，无法确认其属于证据截止日前；原模型建议保留待复核。",
+    "limitation": "仅以红卫兵报刊这一同类样本检验，未覆盖该负责人所在馆的全部收藏；馆藏目录类证据只能证明资料被收藏，不能直接证明被学术研究使用。关键修订：将仅证明收藏的馆藏目录降为背景证据，主要结果只由研究使用证据支撑；并因“也许”为低确定性用途判断、非持续趋势预测，将trend_aligned改为false。",
+    "evidence_ids": [
+      "prior-f6df306ead01297e8e58",
+      "ev-a025169e2cf6d1319383587a",
+      "ev-30bc113d99b44c8a44e6f6c1",
+      "ev-006efbd7a34da7209396a64d",
+      "ev-fdd133fee3e90f92520d02ef"
+    ],
+    "method": "在用途不确定时保存原始资料作为未来知识储备",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "后人研究历史时",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-f6df306ead01297e8e58",
+        "relation": "support",
+        "quote": "Nicolai Volland2021论文利用红卫兵报刊研究其政治社会功能，并回顾早期国际研究者收集传播此类材料",
+        "publication_date": "2021-06-17",
+        "observation_end": "2021-06-17",
+        "limitation": "为已登记摘录，非全文；仅证明该类资料被研究使用，未涉及原书所指具体图书馆。"
+      },
+      {
+        "evidence_id": "ev-a025169e2cf6d1319383587a",
+        "relation": "support",
+        "quote": "Scholars in Hong Kong, the U.S. and elsewhere have spent decades collecting “Red Guard tabloids” from the Cultural Revolution’s early years.",
+        "publication_date": "2021-10-21",
+        "observation_end": "2021-10-21",
+        "limitation": "候选来源verified=false，正文截断；说明收藏与研究现象，但未直接证明原书所指具体图书馆的收藏被使用。"
+      },
+      {
+        "evidence_id": "ev-30bc113d99b44c8a44e6f6c1",
+        "relation": "background",
+        "quote": "Collection of Chinese Cultural Revolution newspaper issues published mainly between 1966 and 1968 by different Red Guard groups.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "图书馆馆藏目录，仅证明资料被收藏，不能直接证明被学术研究使用；日期未知。"
+      },
+      {
+        "evidence_id": "ev-006efbd7a34da7209396a64d",
+        "relation": "background",
+        "quote": "Newspaper issues, pamphlets, broadsides, flyers, and sound recordings, issued by Red Guards, relating to the Chinese Cultural Revolution.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "档案查找工具，证明机构收藏，未证明具体研究使用；日期未知。"
+      },
+      {
+        "evidence_id": "ev-fdd133fee3e90f92520d02ef",
+        "relation": "background",
+        "quote": "UL Cultural Revolution Tabloid Newspaper Collection - China Studies - LibGuides at The Chinese University of Hong Kong",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "仅为馆藏列表，证明收藏与整理，未证明被用于历史研究；日期未知。"
+      }
+    ],
+    "remaining_gap": "核对被引用材料的可证实发表版本及日期。缺少直接证明原书所指匿名图书馆负责人所在馆的收藏后来被学者使用的证据；现有研究使用证据仅覆盖红卫兵报刊这一同类样本。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000218997-000219034",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以原段已举的“文革红卫兵小报”为同类资料样本，检验其后来是否被学者用于历史研究；观察时段为1991年原书出版后至cutoff 2026-11-09，不声称定位匿名图书馆负责人及同一物理纸本。",
+    "reason": "原文判断“今天无用”的资料“对后人研究历史也许有用”，属带不确定性的用途判断。证据显示红卫兵报刊后来确被学者系统收藏并用于研究（Volland 2021论文分析《新闻战报》等1967年报刊），方向与预测一致；但“也许”本身是概率性表述，无法据此判定终局正确。",
+    "limitation": "仅以红卫兵报刊这一同类样本检验，未覆盖该负责人所在馆的全部收藏；且“也许有用”为低确定性表述，观察到的使用不能证明其概率校准。",
+    "evidence_ids": [
+      "prior-f6df306ead01297e8e58",
+      "ev-a025169e2cf6d1319383587a",
+      "ev-30bc113d99b44c8a44e6f6c1",
+      "ev-006efbd7a34da7209396a64d",
+      "ev-fdd133fee3e90f92520d02ef"
+    ],
+    "method": "在用途不确定时保存原始资料作为未来知识储备",
+    "method_basis": "explicit",
+    "observation_end": "2026-11-09",
+    "future_time_text": "后人研究历史时",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-f6df306ead01297e8e58",
+        "relation": "support",
+        "quote": "Nicolai Volland2021论文利用红卫兵报刊研究其政治社会功能，并回顾早期国际研究者收集传播此类材料",
+        "publication_date": "2021-06-17",
+        "observation_end": "2021-06-17",
+        "limitation": "为已登记摘录，非全文；仅证明该类资料被研究使用，未涉及原书所指具体图书馆。"
+      },
+      {
+        "evidence_id": "ev-a025169e2cf6d1319383587a",
+        "relation": "support",
+        "quote": "Scholars in Hong Kong, the U.S. and elsewhere have spent decades collecting “Red Guard tabloids” from the Cultural Revolution’s early years.",
+        "publication_date": "2021-10-21",
+        "observation_end": "2021-10-21",
+        "limitation": "候选来源verified=false，正文截断；仅说明收藏与研究现象，未直接证明“今天无用”资料被后人使用。"
+      },
+      {
+        "evidence_id": "ev-30bc113d99b44c8a44e6f6c1",
+        "relation": "support",
+        "quote": "Collection of Chinese Cultural Revolution newspaper issues published mainly between 1966 and 1968 by different Red Guard groups.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "图书馆馆藏目录，仅证明资料被收藏，不能直接证明被学术研究使用；日期未知。"
+      },
+      {
+        "evidence_id": "ev-006efbd7a34da7209396a64d",
+        "relation": "support",
+        "quote": "Newspaper issues, pamphlets, broadsides, flyers, and sound recordings, issued by Red Guards, relating to the Chinese Cultural Revolution.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "档案查找工具，证明机构收藏，未证明具体研究使用；日期未知。"
+      },
+      {
+        "evidence_id": "ev-fdd133fee3e90f92520d02ef",
+        "relation": "support",
+        "quote": "UL Cultural Revolution Tabloid Newspaper Collection - China Studies - LibGuides at The Chinese University of Hong Kong",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "仅为馆藏列表，证明收藏与整理，未证明被用于历史研究；日期未知。"
+      }
+    ],
+    "remaining_gap": "缺少直接证明原书所指匿名图书馆负责人所在馆的收藏后来被学者使用的证据；现有证据仅覆盖红卫兵报刊这一同类样本。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-f6df306ead01297e8e58",
+      "url": "https://www.cambridge.org/core/journals/china-quarterly/article/liberating-the-small-devils-red-guard-newspapers-and-radical-publics-19661968/1B64D41ADF7DC64E7E99543EE55975DC",
+      "title": "ev-r2-l3-redguard-research",
+      "published_date": "2021-06-17",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-redguard-research",
+      "archive_sha256": "9bec06de96ad2ebf9164df23265add11593d8163383f09f4ecb2b27f0d6de4b5",
+      "archive_path": "data/sources/r2-l3-redguard-paper.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a025169e2cf6d1319383587a",
+      "url": "https://www.thechinastory.org/chinese-newspapers-and-red-guard-tabloids-a-cultural-revolution-puzzle/",
+      "resolved_url": "https://www.thechinastory.org/chinese-newspapers-and-red-guard-tabloids-a-cultural-revolution-puzzle/",
+      "title": "Chinese newspapers and red guard tabloids: A Cultural Revolution puzzle - The China Story",
+      "published_date": "2021-10-21",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:31.791715+00:00",
+      "archive_sha256": "fca580d256f0d7f4d54e9b6cb7c075534c6fe4efd70ee5c9c7a64411352ed6eb",
+      "archive_path": "jobs/01aa507c972624f047fda817/fca580d256f0d7f4d54e9b6cb7c075534c6fe4efd70ee5c9c7a64411352ed6eb.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-30bc113d99b44c8a44e6f6c1",
+      "url": "https://catalogue.nla.gov.au/catalog/7540862",
+      "resolved_url": "https://catalogue.nla.gov.au/catalog/7540862",
+      "title": "[Chinese Cultural Revolution newspapers collected by the National Library of Australia]",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:31.791890+00:00",
+      "archive_sha256": "f33e873a2c3b7a47caebd859a687ce83fdec9b419d0e645bca7dac5dbb75249b",
+      "archive_path": "jobs/01aa507c972624f047fda817/f33e873a2c3b7a47caebd859a687ce83fdec9b419d0e645bca7dac5dbb75249b.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-006efbd7a34da7209396a64d",
+      "url": "https://oac.cdlib.org/findaid/static/ark:/13030/kt0489r3nn",
+      "resolved_url": "https://oac.cdlib.org/findaid/static/ark:/13030/kt0489r3nn",
+      "title": "Chinese Cultural Revolution collection, bulk 1966-1976 - OAC",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:31.792045+00:00",
+      "archive_sha256": "6fdc2c0b5f5cacea26ba91abf6dec2ab122f85b44e3bad1671b9d4c281fddcd5",
+      "archive_path": "jobs/01aa507c972624f047fda817/6fdc2c0b5f5cacea26ba91abf6dec2ab122f85b44e3bad1671b9d4c281fddcd5.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-fdd133fee3e90f92520d02ef",
+      "url": "https://libguides.lib.cuhk.edu.hk/c.php?g=250224&p=4809297",
+      "resolved_url": "https://libguides.lib.cuhk.edu.hk/c.php?g=250224&p=4809297",
+      "title": "UL Cultural Revolution Tabloid Newspaper Collection - China Studies - LibGuides at The Chinese University of Hong Kong",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:41.359750+00:00",
+      "archive_sha256": "72678bce5fc95be093364e9abaf3f098647adf2b4e29a8987aa6b21eefeb4947",
+      "archive_path": "jobs/01aa507c972624f047fda817/72678bce5fc95be093364e9abaf3f098647adf2b4e29a8987aa6b21eefeb4947.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "Volland \"Liberating the Small Devils\" Red Guard newspapers 1966-1968 China Quarterly full text",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "red guard newspapers 1966-1968 unused by historians archives not consulted",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Volland \"Liberating the Small Devils\" Red Guard newspapers China Quarterly 2021 full text 新闻战报 1967",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "red guard tabloids 1966-1968 never used by historians uncited archives unconsulted",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-006efbd7a34da7209396a64d",
+        "ev-30bc113d99b44c8a44e6f6c1",
+        "ev-fdd133fee3e90f92520d02ef"
+      ]
+    }
+  ],
+  "remaining_gap": "核对被引用材料的可证实发表版本及日期。缺少直接证明原书所指匿名图书馆负责人所在馆的收藏后来被学者使用的证据；现有研究使用证据仅覆盖红卫兵报刊这一同类样本。",
+  "source_statuses": [
+    {
+      "url": "https://www.thechinastory.org/chinese-newspapers-and-red-guard-tabloids-a-cultural-revolution-puzzle/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://catalogue.nla.gov.au/catalog/7540862",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://oac.cdlib.org/findaid/static/ark:/13030/kt0489r3nn",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://libguides.lib.cuhk.edu.hk/c.php?g=250224&p=4809297",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "8b4644ffb5904b618140ce712cd5c48db96f89549c4ad96908ccb8ccdef1eee7"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "c4c16130c15759a247061885fb20f2fa",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "9f5e8cd80a76e9aeb82cbe5a51987bc7",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "4e840c8df1f24d8a25845e9328ccfe74d47ad8705f56bbd19848d4edd4f66f98"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "974e2872c3923f0338ed88d854186f5e",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "bccf61b052bd617d8f2c4a15a5e029905115f5ac57f42c7b7c9d26ef025601d6"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "8d718c43b73fac97027c46705668e3c6",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "cd7f32a2d4500eb3e831dde246ffaaf5",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "eb6d45aa4a91dbef40e208d3792741b518dc965f7586ddc55d62cff1e45d2cf6"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "040d4861ca5c11b582993c99528aa834",
+      "cost_estimate_USD": 0.001,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "960ade781d22c8cdcf1bc17c20779c6b546bd813f6119d2d23760dd1f53ad1f3"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "2106181b1f9f6964287ccf85003e178485ceb7c572e660b67100bac0478d4be5"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "45ed79ce61944fe80d770d72d11833e2c4541503a57c6680b4354a2dfc8a4d6b"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "12fb28418f99ea2baae52a49608cca974c4c6558b48aa25f42d5e91f0fd68585"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000218997-000219034",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "evidence_support",
+          "reason": "proposed_assessment把ev-30bc113d99b44c8a44e6f6c1、ev-006efbd7a34da7209396a64d、ev-fdd133fee3e90f92520d02ef列为support，但evidence_notes自己承认这些只是馆藏目录或档案查找工具，仅证明资料被收藏，不能直接证明被学术研究使用。它们不能支撑“后来确被学者系统收藏并用于研究”这一主要结果；其中只有prior-f6df306ead01297e8e58和ev-a025169e2cf6d1319383587a涉及研究使用。",
+          "source_quote": "Collection of Chinese Cultural Revolution newspaper issues published mainly between 1966 and 1968 by different Red Guard groups.",
+          "evidence_id": "ev-30bc113d99b44c8a44e6f6c1",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "原文是带“也许”的低确定性用途判断，不是可检验的持续趋势预测。proposed_assessment一方面说方向与预测一致，另一方面又说“也许”无法判定终局正确，却给出“部分符合”并设置trend_aligned=true。按口径，这既不是有持续方向证据的趋势符合，也没有分项/阶段/口径的实质差异可判部分符合；应改为“符合”或保留为带不确定性的符合，并去掉trend_aligned=true，或说明为何不是趋势却仍设true。",
+          "source_quote": "原文判断“今天无用”的资料“对后人研究历史也许有用”，属带不确定性的用途判断。证据显示红卫兵报刊后来确被学者系统收藏并用于研究（Volland 2021论文分析《新闻战报》等1967年报刊），方向与预测一致；但“也许”本身是概率性表述，无法据此判定终局正确。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正：将仅证明收藏的馆藏目录从support降为背景/收藏证据，主要结果只由研究使用证据支撑；并修正“部分符合”与trend_aligned=true的分类矛盾，按低确定性用途判断给出符合或明确限定为带不确定性的符合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000218997-000219034",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000218997-000219034",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以原段已举的“文革红卫兵小报”为同类资料样本，检验其后来是否被学者用于历史研究；观察时段为1991年原书出版后至cutoff 2026-11-09，不声称定位匿名图书馆负责人及同一物理纸本。",
+      "reason": "原文判断“今天无用”的资料“对后人研究历史也许有用”，属带不确定性的用途判断。证据显示红卫兵报刊后来确被学者系统收藏并用于研究（Volland 2021论文分析《新闻战报》等1967年报刊），方向与预测一致；但“也许”本身是概率性表述，无法据此判定终局正确。",
+      "limitation": "仅以红卫兵报刊这一同类样本检验，未覆盖该负责人所在馆的全部收藏；且“也许有用”为低确定性表述，观察到的使用不能证明其概率校准。",
+      "evidence_ids": [
+        "prior-f6df306ead01297e8e58",
+        "ev-a025169e2cf6d1319383587a",
+        "ev-30bc113d99b44c8a44e6f6c1",
+        "ev-006efbd7a34da7209396a64d",
+        "ev-fdd133fee3e90f92520d02ef"
+      ],
+      "method": "在用途不确定时保存原始资料作为未来知识储备",
+      "method_basis": "explicit",
+      "observation_end": "2026-11-09",
+      "future_time_text": "后人研究历史时",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-f6df306ead01297e8e58",
+          "relation": "support",
+          "quote": "Nicolai Volland2021论文利用红卫兵报刊研究其政治社会功能，并回顾早期国际研究者收集传播此类材料",
+          "publication_date": "2021-06-17",
+          "observation_end": "2021-06-17",
+          "limitation": "为已登记摘录，非全文；仅证明该类资料被研究使用，未涉及原书所指具体图书馆。"
+        },
+        {
+          "evidence_id": "ev-a025169e2cf6d1319383587a",
+          "relation": "support",
+          "quote": "Scholars in Hong Kong, the U.S. and elsewhere have spent decades collecting “Red Guard tabloids” from the Cultural Revolution’s early years.",
+          "publication_date": "2021-10-21",
+          "observation_end": "2021-10-21",
+          "limitation": "候选来源verified=false，正文截断；仅说明收藏与研究现象，未直接证明“今天无用”资料被后人使用。"
+        },
+        {
+          "evidence_id": "ev-30bc113d99b44c8a44e6f6c1",
+          "relation": "support",
+          "quote": "Collection of Chinese Cultural Revolution newspaper issues published mainly between 1966 and 1968 by different Red Guard groups.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "图书馆馆藏目录，仅证明资料被收藏，不能直接证明被学术研究使用；日期未知。"
+        },
+        {
+          "evidence_id": "ev-006efbd7a34da7209396a64d",
+          "relation": "support",
+          "quote": "Newspaper issues, pamphlets, broadsides, flyers, and sound recordings, issued by Red Guards, relating to the Chinese Cultural Revolution.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "档案查找工具，证明机构收藏，未证明具体研究使用；日期未知。"
+        },
+        {
+          "evidence_id": "ev-fdd133fee3e90f92520d02ef",
+          "relation": "support",
+          "quote": "UL Cultural Revolution Tabloid Newspaper Collection - China Studies - LibGuides at The Chinese University of Hong Kong",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "仅为馆藏列表，证明收藏与整理，未证明被用于历史研究；日期未知。"
+        }
+      ],
+      "remaining_gap": "缺少直接证明原书所指匿名图书馆负责人所在馆的收藏后来被学者使用的证据；现有证据仅覆盖红卫兵报刊这一同类样本。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000218997-000219034",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以原段已举的“文革红卫兵小报”为同类资料样本，检验其后来是否被学者用于历史研究；观察时段为1991年原书出版后至cutoff 2026-11-09，不声称定位匿名图书馆负责人及同一物理纸本。",
+      "reason": "原文判断“今天无用”的资料“对后人研究历史也许有用”，属带不确定性的用途判断。Volland 2021论文明确利用红卫兵报刊研究其政治社会功能，说明该类资料后来确被学者用于历史研究，方向与预测一致；但“也许”为低确定性表述，且仅覆盖红卫兵报刊这一同类样本，不能据此判定该负责人所在馆全部收藏的终局用途。",
+      "limitation": "仅以红卫兵报刊这一同类样本检验，未覆盖该负责人所在馆的全部收藏；馆藏目录类证据只能证明资料被收藏，不能直接证明被学术研究使用。关键修订：将仅证明收藏的馆藏目录降为背景证据，主要结果只由研究使用证据支撑；并因“也许”为低确定性用途判断、非持续趋势预测，将trend_aligned改为false。",
+      "evidence_ids": [
+        "prior-f6df306ead01297e8e58",
+        "ev-a025169e2cf6d1319383587a",
+        "ev-30bc113d99b44c8a44e6f6c1",
+        "ev-006efbd7a34da7209396a64d",
+        "ev-fdd133fee3e90f92520d02ef"
+      ],
+      "method": "在用途不确定时保存原始资料作为未来知识储备",
+      "method_basis": "explicit",
+      "observation_end": "2026-11-09",
+      "future_time_text": "后人研究历史时",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-f6df306ead01297e8e58",
+          "relation": "support",
+          "quote": "Nicolai Volland2021论文利用红卫兵报刊研究其政治社会功能，并回顾早期国际研究者收集传播此类材料",
+          "publication_date": "2021-06-17",
+          "observation_end": "2021-06-17",
+          "limitation": "为已登记摘录，非全文；仅证明该类资料被研究使用，未涉及原书所指具体图书馆。"
+        },
+        {
+          "evidence_id": "ev-a025169e2cf6d1319383587a",
+          "relation": "support",
+          "quote": "Scholars in Hong Kong, the U.S. and elsewhere have spent decades collecting “Red Guard tabloids” from the Cultural Revolution’s early years.",
+          "publication_date": "2021-10-21",
+          "observation_end": "2021-10-21",
+          "limitation": "候选来源verified=false，正文截断；说明收藏与研究现象，但未直接证明原书所指具体图书馆的收藏被使用。"
+        },
+        {
+          "evidence_id": "ev-30bc113d99b44c8a44e6f6c1",
+          "relation": "background",
+          "quote": "Collection of Chinese Cultural Revolution newspaper issues published mainly between 1966 and 1968 by different Red Guard groups.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "图书馆馆藏目录，仅证明资料被收藏，不能直接证明被学术研究使用；日期未知。"
+        },
+        {
+          "evidence_id": "ev-006efbd7a34da7209396a64d",
+          "relation": "background",
+          "quote": "Newspaper issues, pamphlets, broadsides, flyers, and sound recordings, issued by Red Guards, relating to the Chinese Cultural Revolution.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "档案查找工具，证明机构收藏，未证明具体研究使用；日期未知。"
+        },
+        {
+          "evidence_id": "ev-fdd133fee3e90f92520d02ef",
+          "relation": "background",
+          "quote": "UL Cultural Revolution Tabloid Newspaper Collection - China Studies - LibGuides at The Chinese University of Hong Kong",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "仅为馆藏列表，证明收藏与整理，未证明被用于历史研究；日期未知。"
+        }
+      ],
+      "remaining_gap": "缺少直接证明原书所指匿名图书馆负责人所在馆的收藏后来被学者使用的证据；现有研究使用证据仅覆盖红卫兵报刊这一同类样本。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "第三方图书馆负责人关于收藏可能有益后人研究的一般用途判断；以原段已举的红卫兵报刊这一同类资料的后来学术使用检验，不声称定位匿名馆及同一物理纸本。",
+  "elapsed_seconds": 38.39,
+  "completed_at": "2026-11-09T08:12:59.634346+00:00"
+}

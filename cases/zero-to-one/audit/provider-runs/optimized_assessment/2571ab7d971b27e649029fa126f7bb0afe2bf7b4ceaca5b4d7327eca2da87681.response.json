@@ -1,0 +1,28 @@
+{
+  "id": "e4b92d41-d8ee-4afe-9c7d-92ea18fa469c",
+  "object": "chat.completion",
+  "created": 1794201587,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000054390-000054409\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为关于探索与秘密的一般性认识论主张，无可操作化的未来结果、时间窗口或可检验指标。\",\"reason\":\"该句是作者对探索态度的原则性论断，不是对具体未来事件或趋势的预测。\",\"limitation\":\"属于规范性/认识论陈述，无法作为可观测预测进行回顾性评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4318,
+    "completion_tokens": 153,
+    "total_tokens": 4471,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3550
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

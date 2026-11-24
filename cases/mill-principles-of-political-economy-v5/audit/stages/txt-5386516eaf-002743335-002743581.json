@@ -1,0 +1,85 @@
+{
+  "id": "txt-5386516eaf-002743335-002743581",
+  "assess": {
+    "id": "txt-5386516eaf-002743335-002743581",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "社会主义提出的问题不会因拒绝倾听而平息，只会因越来越完整地实现它的目的而平息。",
+    "reason": "公共支出份额上升说明社会支出变多，但没有说明这些问题已经平息，也没有说明平息只能来自实现社会主义的目的。",
+    "limitation": "支出不是问题平息。",
+    "evidence_ids": [
+      "ev-public-spend"
+    ],
+    "method": "支持检索问题是否因实现目的而平息，反证检索拒绝倾听是否已使问题平息。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-public-spend",
+        "quote": "28 percent in 1960 to around 43 percent in 1980.",
+        "relation": "boundary",
+        "limitation": "支出不是平息。",
+        "observation_end": "1980-12-31",
+        "publication_date": null,
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      }
+    ],
+    "remaining_gap": "缺社会主义提出的问题是否只因更完整地实现其目的而平息。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-002743335-002743581",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-public-spend"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-public-spend"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "socialist questions settled by realizing socialist ends"
+      },
+      {
+        "role": "counter",
+        "query": "socialist questions settled by refusing them"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "http://assets.cambridge.org/052166/2915/sample/0521662915wsn01.pdf"
+    ],
+    "reason": "支出不是平息。"
+  }
+}

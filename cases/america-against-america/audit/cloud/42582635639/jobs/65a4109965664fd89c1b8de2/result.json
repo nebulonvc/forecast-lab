@@ -1,0 +1,524 @@
+{
+  "claim_id": "txt-1c4066fc0c-000050396-000050436",
+  "version": "search-verifier-v1",
+  "input_sha256": "b74d9d06dd0c759db46d575775b8430cfd92a7931aac3b6fd51e4d7216603e30",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000050396-000050436",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "attribution",
+    "scope": "原判断为美国西部大学受访教授（王沪宁转述）关于“二十一世纪将是亚太世纪、西海岸大学应注重亚太研究”的取向性预测；可检验结果应落在西海岸大学亚太研究/教育的发展，或“亚太世纪”作为完整时代判断的验证。现有证据仅提供东亚太平洋占全球GDP份额，未对应西海岸大学研究取向，也未覆盖政治军事社会终局。",
+    "reason": "复核意见成立：原判断的对象是西海岸大学应注重亚太研究，而所引WDI数据只说明EAS占全球GDP份额变化，既非西海岸大学的研究教育成果，也不能代表“亚太世纪”完整终局，属于用不同指标替代原对象。现有材料无法对原判断的主要分项作可操作验证，故改为暂无法判断。",
+    "limitation": "关键修订：撤回以EAS经济份额代理原判断并判部分符合的做法，因对象与成果集合不对应。经济份额趋势仅作背景，不能证明西海岸大学是否注重亚太研究，也不能证明“亚太世纪”终局。",
+    "evidence_ids": [
+      "prior-a3df386dd7e705e58cbd",
+      "prior-e8c2a015ec5fdc2dab35",
+      "prior-398f1ad2fb376abfd02f"
+    ],
+    "method": "从亚太发展与西海岸区位推断区域重要性",
+    "method_basis": "inferred",
+    "observation_end": "2024-12-31",
+    "future_time_text": "二十一世纪",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-a3df386dd7e705e58cbd",
+        "relation": "background",
+        "quote": "WDI东亚太平洋EAS和全球WLD实际年度当期美元GDP，计算区域/全球份额：1991 22.9352%，2000 24.9855%，2010 25.8498%，2020 32.0834%，2024 28.8355%。",
+        "publication_date": "2026-10-08",
+        "observation_end": "2024-12-31",
+        "limitation": "仅反映EAS名义GDP份额，且2020年后回落；不能对应西海岸大学亚太研究取向或“亚太世纪”终局。"
+      },
+      {
+        "evidence_id": "prior-e8c2a015ec5fdc2dab35",
+        "relation": "background",
+        "quote": "WDI东亚太平洋EAS和全球WLD实际年度2015年不变价美元GDP，计算区域/全球份额：1991 19.5596%，2000 21.4429%，2010 26.7280%，2020 32.2760%，2024 32.7931%。",
+        "publication_date": "2026-10-08",
+        "observation_end": "2024-12-31",
+        "limitation": "不变价份额上升仅为经济代理，EAS不含美国与南亚，不能替代原判断的教育研究取向对象。"
+      },
+      {
+        "evidence_id": "prior-398f1ad2fb376abfd02f",
+        "relation": "boundary",
+        "quote": "日本银行回顾日本泡沫破裂后的长期通缩、需求不足及趋势增长率下降。",
+        "publication_date": "2024-05-27",
+        "observation_end": null,
+        "limitation": "日本长期低增长提示区域内部分化，但同样不涉及西海岸大学亚太研究，不能作为原判断的直接证据。"
+      }
+    ],
+    "remaining_gap": "缺少西海岸大学亚太研究/教育发展（如课程、师资、研究项目、区域研究排名等）的对应证据，也缺少“亚太世纪”作为完整时代判断的可操作验证；需补充与原对象对应的材料，否则维持暂无法判断。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000050396-000050436",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以东亚太平洋（EAS）占全球GDP份额作为“亚太世纪”的经济重心代理，观察1991—2024全窗：当期美元口径由22.94%升至2020年32.08%后回落至2024年28.84%；2015不变价口径由19.56%持续升至2024年32.79%。仅评估经济份额方向，不评估“亚太世纪”作为完整政治军事社会终局。",
+    "reason": "两个口径在1991—2024观察窗内总体均呈上升，不变价口径持续走高，名义口径2020年后回落但仍高于1991基准，经济重心向亚太移动的趋势与受访教授判断方向一致。但“亚太世纪”是涵盖政治、军事、社会的完整终局判断，现有证据仅覆盖经济份额代理，且EAS口径不含美国与南亚，故只能判部分符合、趋势符合而终局待验证。",
+    "limitation": "名义份额2020—2024回落构成反证边界；EAS区域口径与“亚太”不完全对应，且不含美国；日本长期低增长（BOJ材料）提示区域内部分化。经济份额不能代表政治军事社会层面的“亚太世纪”。",
+    "evidence_ids": [
+      "prior-a3df386dd7e705e58cbd",
+      "prior-e8c2a015ec5fdc2dab35",
+      "prior-398f1ad2fb376abfd02f"
+    ],
+    "method": "从亚太发展与西海岸区位推断区域重要性",
+    "method_basis": "inferred",
+    "observation_end": "2024-12-31",
+    "future_time_text": "二十一世纪",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-a3df386dd7e705e58cbd",
+        "relation": "support",
+        "quote": "WDI东亚太平洋EAS和全球WLD实际年度当期美元GDP，计算区域/全球份额：1991 22.9352%，2000 24.9855%，2010 25.8498%，2020 32.0834%，2024 28.8355%。",
+        "publication_date": "2026-10-08",
+        "observation_end": "2024-12-31",
+        "limitation": "名义份额2020年后回落，2024年低于2020年峰值，仅总体高于1991基准。"
+      },
+      {
+        "evidence_id": "prior-e8c2a015ec5fdc2dab35",
+        "relation": "support",
+        "quote": "WDI东亚太平洋EAS和全球WLD实际年度2015年不变价美元GDP，计算区域/全球份额：1991 19.5596%，2000 21.4429%，2010 26.7280%，2020 32.2760%，2024 32.7931%。",
+        "publication_date": "2026-10-08",
+        "observation_end": "2024-12-31",
+        "limitation": "不变价口径持续上升，但仅覆盖经济份额，不代表政治军事社会终局。"
+      },
+      {
+        "evidence_id": "prior-398f1ad2fb376abfd02f",
+        "relation": "boundary",
+        "quote": "日本银行回顾日本泡沫破裂后的长期通缩、需求不足及趋势增长率下降。",
+        "publication_date": "2024-05-27",
+        "observation_end": null,
+        "limitation": "日本长期低增长提示亚太区域内部分化，区域整体份额上升不等于各成员同步。"
+      }
+    ],
+    "remaining_gap": "“亚太世纪”作为完整政治军事社会终局缺乏可操作证据；EAS口径不含美国与南亚，与“亚太”不完全对应；名义份额近期回落需持续观察。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-a3df386dd7e705e58cbd",
+      "url": "https://api.worldbank.org/v2/country/EAS;WLD;US;JP;CN/indicator/NY.GDP.MKTP.CD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-r2-l1-eap-current",
+      "published_date": "2026-10-08",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-eap-current",
+      "archive_sha256": "044300760f3093fea6f8ab724d4a010b89c15f7061e9cebcb03b6fe64b36f613",
+      "archive_path": "data/sources/r2-l1-wdi-ny-gdp-mktp-cd.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-e8c2a015ec5fdc2dab35",
+      "url": "https://api.worldbank.org/v2/country/EAS;WLD;US;JP;CN/indicator/NY.GDP.MKTP.KD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-r2-l1-eap-real",
+      "published_date": "2026-10-08",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-eap-real",
+      "archive_sha256": "8cc453d41ec16b4cb231025e6c8ade18d21b0bd69bf07de940fc52595fda4dfd",
+      "archive_path": "data/sources/r2-l1-wdi-ny-gdp-mktp-kd.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-398f1ad2fb376abfd02f",
+      "url": "https://www.boj.or.jp/en/about/press/koen_2024/ko240527b.htm",
+      "title": "ev-boj",
+      "published_date": "2024-05-27",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-boj",
+      "archive_sha256": "40fa6f0900b25d801577b8629b6f6dbecc58b7d22f18da4558b8920da02432fc",
+      "archive_path": "data/sources/40fa6f0900b25d801577b8629b6f6dbecc58b7d22f18da4558b8920da02432fc.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-1f203bead72e6c6ed0f7cb52",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=Z4",
+      "resolved_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=Z4",
+      "title": "GDP (current US$) - East Asia & Pacific | Data",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:59.591053+00:00",
+      "archive_sha256": "f74c5dc29093d16cee09c187d87714b71d52cfc24acd1b90b4c6bf5ac6858b6c",
+      "archive_path": "jobs/65a4109965664fd89c1b8de2/f74c5dc29093d16cee09c187d87714b71d52cfc24acd1b90b4c6bf5ac6858b6c.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-161bb1427c9acdb13b937850",
+      "url": "https://www.imf.org/-/media/files/publications/reo/apd/2024/october/english/text.pdf",
+      "resolved_url": "https://www.imf.org/-/media/files/publications/reo/apd/2024/october/english/text.pdf",
+      "title": "November 2024 Regional Economic Outlook: Asia and Pacific--Resilient Growth but Higher Risks",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:59.591320+00:00",
+      "archive_sha256": "d574e9d5cc7a8fc54935ddac04b83c7efffb6bf14ade3d70fcc108dbd5dc0b01",
+      "archive_path": "jobs/65a4109965664fd89c1b8de2/d574e9d5cc7a8fc54935ddac04b83c7efffb6bf14ade3d70fcc108dbd5dc0b01.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c1e19d8f57a789d0d773ba2d",
+      "url": "https://www.imf.org/-/media/files/publications/weo/2024/april/english/ch3.pdf",
+      "resolved_url": "https://www.imf.org/-/media/files/publications/weo/2024/april/english/ch3.pdf",
+      "title": "World Economic Outlook, April 2024; Chapter 3: Slowdown in Global Medium-Term Growth: What Will It Take to Turn the Tide?; April 10, 2024",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:59.591526+00:00",
+      "archive_sha256": "b548c8e0c70abd4f1d1463ab5d26429d7a3677927ecd64601662ed7f02d9ca7c",
+      "archive_path": "jobs/65a4109965664fd89c1b8de2/b548c8e0c70abd4f1d1463ab5d26429d7a3677927ecd64601662ed7f02d9ca7c.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-18f5d85d310de0b2ddbd644e",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD?locations=Z4",
+      "resolved_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD?locations=Z4",
+      "title": "GDP (constant 2015 US$) - East Asia & Pacific | Data",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:06.635620+00:00",
+      "archive_sha256": "4da87409f734a76ed691b8316a82350494ca5a22e4d4865174b63f30219a6640",
+      "archive_path": "jobs/65a4109965664fd89c1b8de2/4da87409f734a76ed691b8316a82350494ca5a22e4d4865174b63f30219a6640.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-8fa6429a35c550e8975fd35e",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+      "resolved_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+      "title": "GDP (current US$) | Data",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:06.635806+00:00",
+      "archive_sha256": "6b4e3cdf699e1ee6a465d0e2fe0db71e97eb3ea39cc01770a1bfc7202ecc3dc7",
+      "archive_path": "jobs/65a4109965664fd89c1b8de2/6b4e3cdf699e1ee6a465d0e2fe0db71e97eb3ea39cc01770a1bfc7202ecc3dc7.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "World Bank WDI East Asia Pacific GDP share of world GDP current US dollars 1991 2024",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "East Asia Pacific share of world GDP decline 2024 nominal Japan secular stagnation IMF World Economic Outlook",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "World Bank WDI East Asia Pacific GDP share of world GDP constant 2015 US dollars 1991 2024",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "East Asia Pacific share of world GDP decline 2024 nominal Japan secular stagnation IMF World Economic Outlook",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少西海岸大学亚太研究/教育发展（如课程、师资、研究项目、区域研究排名等）的对应证据，也缺少“亚太世纪”作为完整时代判断的可操作验证；需补充与原对象对应的材料，否则维持暂无法判断。",
+  "source_statuses": [
+    {
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=Z4",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.imf.org/-/media/files/publications/reo/apd/2024/october/english/text.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.imf.org/-/media/files/publications/weo/2024/april/english/ch3.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD?locations=Z4",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "8a658ea6354f2b9594752c1c159b048027ec7d12f63dddb21e6d67cdcec1e528"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "df3beb7423d61e8076b123147ff51455",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "fb327a1d390246769d0c00be5f4bc5f6",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "fcf58fe27ab54925f37b1e82eff47766bd914d2ffd473ee5dcb621aa9ac332a0"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "68055b5a7fb8908ab275654b4df70300",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "1c18873b3356a2ca5b79658ebbf0838139e97cb6361dc604eb4286623eff12c0"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "3d1fd481bff785ee52ba7fa0b93c34a8",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "fb327a1d390246769d0c00be5f4bc5f6",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "2e1632361d749427f1c3a6bac34283f5efd59ff5b5c4e08439ab73d137699525"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "178aa54e845cf52cd3351481f50f1744",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "4f9d0918a76678c204adea33264f05b89e4afcd3cdd652ef7e88166df781a7e0"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "f5a70416837b394be10ac64fdb68d83d916d235dc46f62188c4bfb84a16de459"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "b246383879df247130ba3fcdb5520f6340e910e57201d210dfbd3fab7a9d814c"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "bec5c97437a948e470d479c3a39ea4c743c1055a9b9eccaccbf467c1c5e972d8"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000050396-000050436",
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "原书对象是“美国西部大学受访教授”关于“西海岸大学应注重亚太研究”的判断，属于教育/研究取向的预测；建议把对象替换为“东亚太平洋占全球GDP份额”这一区域经济重心代理，EAS既不是“西海岸大学”也不是“亚太研究”，没有成员对应证据说明该代理能代表原判断的成果集合。",
+          "source_quote": "这里的教授强调二十一世纪将是亚太\n 世纪，西海岸又遥对亚太地区，故应注重亚太研究",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "所引WDI份额数据只支持“EAS占全球GDP份额上升”这一经济代理，不能支持原判断中“西海岸大学应注重亚太研究”是否实现；建议把经济份额趋势当作原预测的主要结果，属于用不同指标替代，证据与声明范围不匹配。",
+          "source_quote": "WDI东亚太平洋EAS和全球WLD实际年度当期美元GDP，计算区域/全球份额：1991 22.9352%，2000 24.9855%，2010 25.8498%，2020 32.0834%，2024 28.8355%。",
+          "evidence_id": "prior-a3df386dd7e705e58cbd",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议一方面承认“亚太世纪”作为完整政治军事社会终局未获验证、EAS口径与“亚太”不完全对应，另一方面仍以经济份额总体上升判“部分符合”并设trend_aligned=true；但“部分符合”要求指出原判断哪些具体部分实现、哪些未实现，而现有材料只覆盖一个替代性经济代理，未对“西海岸大学注重亚太研究”或“亚太世纪”终局作分项验证，结论口径与证据不匹配。",
+          "source_quote": "以东亚太平洋（EAS）占全球GDP份额作为“亚太世纪”的经济重心代理，观察1991—2024全窗：当期美元口径由22.94%升至2020年32.08%后回落至2024年28.84%；2015不变价口径由19.56%持续升至2024年32.79%。仅评估经济份额方向，不评估“亚太世纪”作为完整政治军事社会终局。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需把评估对象还原为原书“西海岸大学应注重亚太研究”的教育/研究取向判断，或明确说明为何EAS经济份额可作为其可检验代理并提供成员对应证据；若无法建立对应，应改为具体未定，而不是以经济代理判部分符合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000050396-000050436",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000050396-000050436",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以东亚太平洋（EAS）占全球GDP份额作为“亚太世纪”的经济重心代理，观察1991—2024全窗：当期美元口径由22.94%升至2020年32.08%后回落至2024年28.84%；2015不变价口径由19.56%持续升至2024年32.79%。仅评估经济份额方向，不评估“亚太世纪”作为完整政治军事社会终局。",
+      "reason": "两个口径在1991—2024观察窗内总体均呈上升，不变价口径持续走高，名义口径2020年后回落但仍高于1991基准，经济重心向亚太移动的趋势与受访教授判断方向一致。但“亚太世纪”是涵盖政治、军事、社会的完整终局判断，现有证据仅覆盖经济份额代理，且EAS口径不含美国与南亚，故只能判部分符合、趋势符合而终局待验证。",
+      "limitation": "名义份额2020—2024回落构成反证边界；EAS区域口径与“亚太”不完全对应，且不含美国；日本长期低增长（BOJ材料）提示区域内部分化。经济份额不能代表政治军事社会层面的“亚太世纪”。",
+      "evidence_ids": [
+        "prior-a3df386dd7e705e58cbd",
+        "prior-e8c2a015ec5fdc2dab35",
+        "prior-398f1ad2fb376abfd02f"
+      ],
+      "method": "从亚太发展与西海岸区位推断区域重要性",
+      "method_basis": "inferred",
+      "observation_end": "2024-12-31",
+      "future_time_text": "二十一世纪",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-a3df386dd7e705e58cbd",
+          "relation": "support",
+          "quote": "WDI东亚太平洋EAS和全球WLD实际年度当期美元GDP，计算区域/全球份额：1991 22.9352%，2000 24.9855%，2010 25.8498%，2020 32.0834%，2024 28.8355%。",
+          "publication_date": "2026-10-08",
+          "observation_end": "2024-12-31",
+          "limitation": "名义份额2020年后回落，2024年低于2020年峰值，仅总体高于1991基准。"
+        },
+        {
+          "evidence_id": "prior-e8c2a015ec5fdc2dab35",
+          "relation": "support",
+          "quote": "WDI东亚太平洋EAS和全球WLD实际年度2015年不变价美元GDP，计算区域/全球份额：1991 19.5596%，2000 21.4429%，2010 26.7280%，2020 32.2760%，2024 32.7931%。",
+          "publication_date": "2026-10-08",
+          "observation_end": "2024-12-31",
+          "limitation": "不变价口径持续上升，但仅覆盖经济份额，不代表政治军事社会终局。"
+        },
+        {
+          "evidence_id": "prior-398f1ad2fb376abfd02f",
+          "relation": "boundary",
+          "quote": "日本银行回顾日本泡沫破裂后的长期通缩、需求不足及趋势增长率下降。",
+          "publication_date": "2024-05-27",
+          "observation_end": null,
+          "limitation": "日本长期低增长提示亚太区域内部分化，区域整体份额上升不等于各成员同步。"
+        }
+      ],
+      "remaining_gap": "“亚太世纪”作为完整政治军事社会终局缺乏可操作证据；EAS口径不含美国与南亚，与“亚太”不完全对应；名义份额近期回落需持续观察。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000050396-000050436",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "attribution",
+      "scope": "原判断为美国西部大学受访教授（王沪宁转述）关于“二十一世纪将是亚太世纪、西海岸大学应注重亚太研究”的取向性预测；可检验结果应落在西海岸大学亚太研究/教育的发展，或“亚太世纪”作为完整时代判断的验证。现有证据仅提供东亚太平洋占全球GDP份额，未对应西海岸大学研究取向，也未覆盖政治军事社会终局。",
+      "reason": "复核意见成立：原判断的对象是西海岸大学应注重亚太研究，而所引WDI数据只说明EAS占全球GDP份额变化，既非西海岸大学的研究教育成果，也不能代表“亚太世纪”完整终局，属于用不同指标替代原对象。现有材料无法对原判断的主要分项作可操作验证，故改为暂无法判断。",
+      "limitation": "关键修订：撤回以EAS经济份额代理原判断并判部分符合的做法，因对象与成果集合不对应。经济份额趋势仅作背景，不能证明西海岸大学是否注重亚太研究，也不能证明“亚太世纪”终局。",
+      "evidence_ids": [
+        "prior-a3df386dd7e705e58cbd",
+        "prior-e8c2a015ec5fdc2dab35",
+        "prior-398f1ad2fb376abfd02f"
+      ],
+      "method": "从亚太发展与西海岸区位推断区域重要性",
+      "method_basis": "inferred",
+      "observation_end": "2024-12-31",
+      "future_time_text": "二十一世纪",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-a3df386dd7e705e58cbd",
+          "relation": "background",
+          "quote": "WDI东亚太平洋EAS和全球WLD实际年度当期美元GDP，计算区域/全球份额：1991 22.9352%，2000 24.9855%，2010 25.8498%，2020 32.0834%，2024 28.8355%。",
+          "publication_date": "2026-10-08",
+          "observation_end": "2024-12-31",
+          "limitation": "仅反映EAS名义GDP份额，且2020年后回落；不能对应西海岸大学亚太研究取向或“亚太世纪”终局。"
+        },
+        {
+          "evidence_id": "prior-e8c2a015ec5fdc2dab35",
+          "relation": "background",
+          "quote": "WDI东亚太平洋EAS和全球WLD实际年度2015年不变价美元GDP，计算区域/全球份额：1991 19.5596%，2000 21.4429%，2010 26.7280%，2020 32.2760%，2024 32.7931%。",
+          "publication_date": "2026-10-08",
+          "observation_end": "2024-12-31",
+          "limitation": "不变价份额上升仅为经济代理，EAS不含美国与南亚，不能替代原判断的教育研究取向对象。"
+        },
+        {
+          "evidence_id": "prior-398f1ad2fb376abfd02f",
+          "relation": "boundary",
+          "quote": "日本银行回顾日本泡沫破裂后的长期通缩、需求不足及趋势增长率下降。",
+          "publication_date": "2024-05-27",
+          "observation_end": null,
+          "limitation": "日本长期低增长提示区域内部分化，但同样不涉及西海岸大学亚太研究，不能作为原判断的直接证据。"
+        }
+      ],
+      "remaining_gap": "缺少西海岸大学亚太研究/教育发展（如课程、师资、研究项目、区域研究排名等）的对应证据，也缺少“亚太世纪”作为完整时代判断的可操作验证；需补充与原对象对应的材料，否则维持暂无法判断。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "第三方（美国西部大学受访教授，王沪宁转述）关于“二十一世纪将是亚太世纪、西海岸大学应注重亚太研究”的判断。可观察口径限于经济重心代理：东亚太平洋（EAS）占全球GDP份额在1991—2024全窗的当期美元与2015不变价双口径趋势；反证包括名义份额近期回落、日本长期低增长、EAS不含美国与南亚、以及“亚太世纪”作为完整政治军事社会终局未获验证。",
+  "elapsed_seconds": 36.799,
+  "completed_at": "2026-11-09T07:59:27.386646+00:00"
+}

@@ -1,0 +1,82 @@
+{
+  "claim_id": "txt-1895656fef-000458317-000458374",
+  "plan": {
+    "object": "本书的选目和篇幅",
+    "conditions": [],
+    "quantifier": "doubtless",
+    "result": "无疑会有不同意见",
+    "time_window": "出版后到截止日",
+    "counterevidence_needed": "评论接受全部选目和篇幅，没有异议"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "support_query": "review The Story of Utopias Mumford disagreed with his selection of utopias",
+        "counter_query": "Mumford Story of Utopias review praised the choice and proportions of the utopias",
+        "saved_at_utc": "2026-11-20T11:11:02Z",
+        "tool_call_id": null
+      }
+    ],
+    "adaptive_rounds": 0,
+    "stop_reason": "1923年4月的大西洋月刊书评怀疑某一部分值不值得那样的篇幅。反证检索没有给出一份无异议的评论正文。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unconditional",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [
+      "ev-atlantic-1923"
+    ],
+    "scope": "不同意见要落在这份 Harrap 1923 正文的选目或篇幅上。源版没有月日。",
+    "reason": "档案里有“有时会怀疑走完这一部分值不值得旅途的不适”。抓取正文没有印月份、评者，也没有印 Boni and Liveright 1922。月份只在网址 archive/1923/04。Harrap 扉页只写 Published 1923，没有月日。不能用目录 1922 当作观察起点。出版对齐未解决，不保留正确。",
+    "limitation": "大西洋月刊档案是 1111 字节的短摘，不是抓取全文。保存钟不是工具执行钟。不编 Harrap 的月日。",
+    "method": "先解决评论落在哪一版、哪一个月。窗口未对齐时不判正确。",
+    "method_basis": "explicit",
+    "remaining_gap": "缺 Harrap 1923 的月份，以及评论正文里的版本和评者，才能把网址上的 1923-04 放进这份源版的窗口。"
+  },
+  "semantic_review": {
+    "object_match": "unknown",
+    "condition_logic": "pass",
+    "time_alignment": "fail",
+    "evidence_support": "unknown",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "异议文句在短摘里，但正文没有版本、月日和评者。1923-04 不能对上只有 1923 的 Harrap 扉页。"
+  },
+  "history": [
+    {
+      "stage": "r1",
+      "assess": {
+        "inclusion": "forecast",
+        "verdict": "正确",
+        "basis": "endpoint",
+        "trend_aligned": false,
+        "condition_state": "unconditional",
+        "future_time_text": "",
+        "observation_end": "1923-04-30",
+        "evidence_ids": [
+          "ev-atlantic-1923"
+        ],
+        "scope": "不同意见要落在选目或篇幅上。一句总评称赞不够。",
+        "reason": "Charles Rumford Walker 在《大西洋月刊》写，有些乌托邦有趣，有些乏味，有时会怀疑走完这一部分值不值得旅途的不适。这是对一部分篇幅的不同意见。",
+        "limitation": "正文没有印出月份，月份在工具网址 archive/1923/04。评论写的是 Boni and Liveright 1922 年版。这份 Harrap 正文只印 Published 1923，没有月日。若 Harrap 的月份晚于1923年4月，这条观察落在版本边界上。不同意见针对的是同一本书。",
+        "method": "找出版后对选目或篇幅的明确异议。一处就满足 doubtless 所写的会有不同意见。",
+        "method_basis": "explicit"
+      },
+      "semantic_review": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass",
+        "note": "大西洋月刊怀疑某一部分的篇幅。版本边界写在限制里。"
+      }
+    }
+  ]
+}

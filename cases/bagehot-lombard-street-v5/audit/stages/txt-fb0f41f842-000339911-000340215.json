@@ -1,0 +1,71 @@
+{
+  "id": "txt-fb0f41f842-000339911-000340215",
+  "r3_revision": false,
+  "plan": {
+    "queries": [],
+    "note": "r3 不重研。QA 已认可的裁决保持，六项与现行裁决一致。"
+  },
+  "select": {
+    "urls": [],
+    "reason": "本轮没有新的同对象来源入选。没有把 executed 写成 true。"
+  },
+  "assess": {
+    "id": "txt-fb0f41f842-000339911-000340215",
+    "inclusion": "forecast",
+    "verdict": "正确",
+    "basis": "observed_window",
+    "scope": "较小的私人银行保不住阵地，不会突然倒闭，但生意会被慢慢带到别处。",
+    "reason": "该页写到1914年私人银行减到八家。这与小私人银行阵地不能维持、生意转向股份银行的方向一致，也不是一夜倒闭。",
+    "limitation": "八家仍然存在，所以不是全部消失。原文允许没有致命崩溃。",
+    "evidence_ids": [
+      "ev-ws-banks-1926"
+    ],
+    "method": "用已存档公开正文核对对象和方向。",
+    "method_basis": "explicit",
+    "observation_end": "1914-12-31",
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-ws-banks-1926",
+        "quote": "private banks had decreased to eight",
+        "relation": "support",
+        "limitation": "八家仍然存在，所以不是全部消失。原文允许没有致命崩溃。",
+        "observation_end": "1914-12-31",
+        "publication_date": null
+      }
+    ],
+    "remaining_gap": ""
+  },
+  "semantic_review": {
+    "id": "txt-fb0f41f842-000339911-000340215",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-ws-banks-1926"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-ws-banks-1926"
+      ],
+      "blocks_verdict": false
+    }
+  ]
+}

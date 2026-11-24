@@ -1,0 +1,28 @@
+{
+  "id": "c7a94ab4-04c7-433e-8bf8-a3165c7fa402",
+  "object": "chat.completion",
+  "created": 1794201311,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-00025\",\"predictions\":[{\"quote\":\"其领先地位在未来几年将会扩大\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"特斯拉的领先地位在未来几年将会扩大\",\"expanded_claim\":\"特斯拉有先行一步的优势，而且比其他公司发展更快，因此特斯拉的领先地位在未来几年将会扩大。\",\"reference_resolutions\":[{\"expression\":\"其\",\"referent\":\"特斯拉\",\"support_quote\":\"特斯拉有先行一步的优势\"}],\"unresolved_references\":[],\"time_text\":\"未来几年\",\"condition_text\":\"\",\"method\":\"由先行优势和发展速度推断领先地位扩大\",\"method_basis\":\"inferred\",\"reason\":\"对特斯拉未来竞争地位的明确前瞻判断。\"},{\"quote\":\"因此公司发展的速度不会很快就慢下来\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"特斯拉公司发展的速度不会很快就慢下来\",\"expanded_claim\":\"因为特斯拉的创始人依然掌管着公司，所以特斯拉公司发展的速度不会很快就慢下来。\",\"reference_resolutions\":[{\"expression\":\"公司\",\"referent\":\"特斯拉\",\"support_quote\":\"特斯拉的创始人依然掌管着公司\"}],\"unresolved_references\":[],\"time_text\":\"很快\",\"condition_text\":\"特斯拉的创始人依然掌管着公司\",\"method\":\"由创始人仍掌管公司推断发展速度不会很快放缓\",\"method_basis\":\"inferred\",\"reason\":\"对特斯拉未来增长速度的条件性判断。\"},{\"quote\":\"除非开发新科技，否则全球化会带来越来越多严峻的能源挑战\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"除非开发新科技，否则全球化会带来越来越多严峻的能源挑战\",\"expanded_claim\":\"如果大多数国家的人追求美国式舒适生活而世界没有足够能源重复旧技术，那么除非开发新科技，否则全球化会带来越来越多严峻的能源挑战。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"除非开发新科技\",\"method\":\"由能源需求与旧技术限制推断\",\"method_basis\":\"inferred\",\"reason\":\"带条件的未来趋势判断。\"},{\"quote\":\"能源初创公司能否像它们一样，在清洁技术公司折戟后成功建立？\",\"kind\":\"unclear\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"能源初创公司能否像Web 2.0初创公司一样在清洁技术公司失败后成功建立，尚不确定\",\"expanded_claim\":\"能源初创公司能否像Web 2.0初创公司在网络公司残骸上成功兴起那样，在清洁技术公司折戟后成功建立，尚不确定。\",\"reference_resolutions\":[{\"expression\":\"它们\",\"referent\":\"Web 2.0初创公司\",\"support_quote\":\"Web 2.0初创公司能够在网络公司的残骸上成功兴起\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"类比网络泡沫后的Web 2.0兴起\",\"method_basis\":\"inferred\",\"reason\":\"以问句形式表达对能源初创公司未来能否成功的开放判断，非确定预测。\"},{\"quote\":\"想要建立能源2.0公司，企业家面临的挑战首先是找到小型市场\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"建立能源2.0公司的企业家首先面临的挑战是找到小型市场\",\"expanded_claim\":\"想要建立能源2.0公司的企业家，首先面临的挑战是找到小型市场。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"想要建立能源2.0公司\",\"method\":\"由Facebook等从小市场起步的经验推断\",\"method_basis\":\"inferred\",\"reason\":\"对能源2.0创业路径的前瞻性判断，含条件性。\"}]}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3279,
+    "completion_tokens": 826,
+    "total_tokens": 4105,
+    "prompt_tokens_details": {
+      "cached_tokens": 3072
+    },
+    "prompt_cache_hit_tokens": 3072,
+    "prompt_cache_miss_tokens": 207
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

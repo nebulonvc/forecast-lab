@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-11-20T02:25:00Z",
+  "rule": "每条 excerpt 必须能在所存档正文中找到。空白可折叠。自写摘要、检索片段和只有哈希不算正文。不设最少字数；正文要够覆核对象、条件和上下文。源日期用页面实际精度；没有印日就写未知。窗口上界不是源日期。",
+  "evidence": 71,
+  "excerpt_missing": 0,
+  "under_2048_bytes": [
+    {
+      "id": "ev-wb-wage-api-2018-2024",
+      "bytes": 1959,
+      "why_kept": "这是工资指标 2018–2024 共 7 个年度的完整接口返回，不是摘要。文件里有指标名、年份和 2019 年的 53.8040136421832。"
+    }
+  ],
+  "war_excerpt_fixed": "ev-owid-war-20240320 改为存档中连续的句子。",
+  "scored_excerpts_found": [
+    "ev-colby-19200826",
+    "ev-nara-vra-19650806",
+    "ev-prc-marriage-19500501",
+    "ev-ohchr-borders",
+    "ev-wb-wage-1991-2019",
+    "ev-bls-women-lfpr",
+    "ev-gallup-women-19930825",
+    "ev-wb-wage-api-2018-2024"
+  ],
+  "scores_withdrawn_this_pass": 0
+}

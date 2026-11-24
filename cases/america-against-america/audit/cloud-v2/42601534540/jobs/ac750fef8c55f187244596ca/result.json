@@ -1,0 +1,1113 @@
+{
+  "claim_id": "txt-1c4066fc0c-000188277-000188300",
+  "version": "search-verifier-v2",
+  "input_sha256": "b679d8196d027b79f6d3b919f9f01941e9c7de2a450035180f6f95325df1fa0c",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000188277-000188300",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "对象：王沪宁所述美国教育低质量、种族/资源分隔与青少年吸毒等潜在危机；条件：这些危机后续未解决；观察口径：1991年后至2024年，NAEP阅读与低端成绩、GAO学校族裔/资源分隔统计、CDC青少年物质使用趋势；后果B“一大问题”操作化为全国性教育质量与公平重大政策难题的持续存在。",
+    "reason": "必要引用在证据截止日前的可得性未确认：缺少有效发表范围或截止日前程序抓取记录；原模型建议保留。",
+    "limitation": "原文未给精确指标与期限，本评估采用NAEP、GAO、CDC作为回顾性代理；族裔集中不等于法律隔离，也不证明文化因果；数学与药物使用改善作为缓解因素列入限制，不构成后果B的分项反向证据。修订要点：按复核意见，不再把前提A的局部改善当作后果B的分项分化，改判正确。",
+    "evidence_ids": [
+      "prior-f09f0f108e7c7c957762",
+      "prior-398d6cca944740e1f4a1",
+      "prior-0d68c305ab9bd53ba409",
+      "prior-25a598579f8c1f94e4b5",
+      "ev-25bc950bd3b538d0794a257f",
+      "ev-02b1fa3b758ed3c72860f570"
+    ],
+    "method": "从已观察教育危机外推累积后果",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-f09f0f108e7c7c957762",
+        "relation": "support",
+        "quote": "2024四、八年级阅读继续下降；数学全国均分高于1990年代但低于2013高点，疫情后各州表现不同。",
+        "publication_date": "2025-01-29",
+        "observation_end": "2024-12-31",
+        "limitation": "摘要同时含数学高于1990年代的缓解信息，不能只取阅读下降。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-398d6cca944740e1f4a1",
+        "relation": "boundary",
+        "quote": "2024比疫情前下降而长期高于1990；2024教育相关旅行服务出口548亿美元。",
+        "publication_date": "2026",
+        "observation_end": "2024-12-31",
+        "limitation": "数学长期高于1990年代，属缓解因素；出口数据与教育质量无直接关系；出版年为2026，与截止日重叠，仅作边界参考。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "prior-0d68c305ab9bd53ba409",
+        "relation": "support",
+        "quote": "GAO分析：2020—2021约1850万学生在75%以上同一种族/族裔学校，超过总数三分之一；学区分离后新学区更富且白人/亚裔占比更高，资源和种族分隔持续。",
+        "publication_date": "2022-07-14",
+        "observation_end": "2021-12-31",
+        "limitation": "族裔集中不等于法律隔离，也不直接证明教育质量低。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-25a598579f8c1f94e4b5",
+        "relation": "boundary",
+        "quote": "CDC2013—2023 YRBS综述：目前饮酒、使用大麻、曾用选定非法药物及曾滥用处方阿片等长期趋势改善；校园暴力与部分心理健康风险方向不同。",
+        "publication_date": "2024",
+        "observation_end": "2023-12-31",
+        "limitation": "物质使用改善是缓解因素，但心理健康风险方向不同，不能据此否定教育危机整体存在。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-25bc950bd3b538d0794a257f",
+        "relation": "support",
+        "quote": "The Nation's Report Card released today shows continued declines in reading for U.S. students, compounding a decline in the nation’s reading scores that started prior to the pandemic.",
+        "publication_date": "2025-01-29",
+        "observation_end": "2024-12-31",
+        "limitation": "仅覆盖阅读，未覆盖数学与药物使用；来源verified=false，待语义复核。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-02b1fa3b758ed3c72860f570",
+        "relation": "support",
+        "quote": "As the K-12 public school student population grows significantly more diverse, schools remain divided along racial, ethnic, and economic lines throughout the U.S.",
+        "publication_date": null,
+        "observation_end": "2021-12-31",
+        "limitation": "报告为2022年6月，元数据无精确发表日期；族裔分隔不等于法律隔离或教育质量低。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      }
+    ],
+    "remaining_gap": "确认必要引用的发表范围或截止日前可核对的内容版本。原文未给精确指标与期限；数学长期改善与青少年物质使用改善作为缓解因素记录，不改变“一大问题”已实现的主判断。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000188277-000188300",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象：王沪宁所述美国教育低质量、种族/资源分隔与青少年吸毒等潜在危机；条件：这些危机后续未解决；观察口径：1991年后至2024年，NAEP阅读与低端成绩、GAO学校族裔/资源分隔统计、CDC青少年物质使用趋势；不要求三项全部单调恶化。",
+    "reason": "原文判断教育潜在危机若不解决将成为一大问题。观察期内阅读成绩持续下降、低端学生表现恶化、学校族裔与资源分隔规模仍大，支持危机未解决且构成实质问题；但数学长期成绩高于1990年代、青少年饮酒与大麻等使用趋势改善，分项出现反向证据，故为部分符合。",
+    "limitation": "原文未给精确指标与期限，本评估采用NAEP、GAO、CDC作为回顾性代理；族裔集中不等于法律隔离，也不证明文化因果；数学与药物使用改善削弱全面恶化判断。",
+    "evidence_ids": [
+      "prior-f09f0f108e7c7c957762",
+      "prior-398d6cca944740e1f4a1",
+      "prior-0d68c305ab9bd53ba409",
+      "prior-25a598579f8c1f94e4b5",
+      "ev-25bc950bd3b538d0794a257f",
+      "ev-02b1fa3b758ed3c72860f570"
+    ],
+    "method": "从已观察教育危机外推累积后果",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-31",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-f09f0f108e7c7c957762",
+        "relation": "support",
+        "quote": "2024四、八年级阅读继续下降；数学全国均分高于1990年代但低于2013高点，疫情后各州表现不同。",
+        "publication_date": "2025-01-29",
+        "observation_end": "2024-12-31",
+        "limitation": "摘要同时含数学高于1990年代的反向信息，不能只取阅读下降。"
+      },
+      {
+        "evidence_id": "prior-398d6cca944740e1f4a1",
+        "relation": "counter",
+        "quote": "2024比疫情前下降而长期高于1990；2024教育相关旅行服务出口548亿美元。",
+        "publication_date": "2026",
+        "observation_end": "2024-12-31",
+        "limitation": "数学长期高于1990年代，削弱教育质量全面恶化判断；出口数据与教育质量无直接关系。"
+      },
+      {
+        "evidence_id": "prior-0d68c305ab9bd53ba409",
+        "relation": "support",
+        "quote": "GAO分析：2020—2021约1850万学生在75%以上同一种族/族裔学校，超过总数三分之一；学区分离后新学区更富且白人/亚裔占比更高，资源和种族分隔持续。",
+        "publication_date": "2022-07-14",
+        "observation_end": "2021-12-31",
+        "limitation": "族裔集中不等于法律隔离，也不直接证明教育质量低。"
+      },
+      {
+        "evidence_id": "prior-25a598579f8c1f94e4b5",
+        "relation": "counter",
+        "quote": "CDC2013—2023 YRBS综述：目前饮酒、使用大麻、曾用选定非法药物及曾滥用处方阿片等长期趋势改善；校园暴力与部分心理健康风险方向不同。",
+        "publication_date": "2024",
+        "observation_end": "2023-12-31",
+        "limitation": "物质使用改善与原文青少年吸毒危机判断相反，但心理健康风险方向不同。"
+      },
+      {
+        "evidence_id": "ev-25bc950bd3b538d0794a257f",
+        "relation": "support",
+        "quote": "The Nation's Report Card released today shows continued declines in reading for U.S. students, compounding a decline in the nation’s reading scores that started prior to the pandemic.",
+        "publication_date": "2025-01-29",
+        "observation_end": "2024-12-31",
+        "limitation": "仅覆盖阅读，未覆盖数学与药物使用；来源verified=false，待语义复核。"
+      },
+      {
+        "evidence_id": "ev-02b1fa3b758ed3c72860f570",
+        "relation": "support",
+        "quote": "As the K-12 public school student population grows significantly more diverse, schools remain divided along racial, ethnic, and economic lines throughout the U.S.",
+        "publication_date": null,
+        "observation_end": "2021-12-31",
+        "limitation": "报告为2022年6月，元数据无精确发表日期；族裔分隔不等于法律隔离或教育质量低。"
+      }
+    ],
+    "remaining_gap": "原文未给精确指标与期限；数学长期改善与青少年物质使用改善构成反向分项，无法支持三项危机全面恶化，故判部分符合而非正确。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-f09f0f108e7c7c957762",
+      "url": "https://www.nagb.gov/content/dam/nagb/en/documents/newsroom/press-releases/2025/naep2024-pressrelease-final.pdf",
+      "title": "ev-naep",
+      "published_date": "2025-01-29",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-01-29",
+        "latest": "2025-01-29"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-naep",
+      "archive_sha256": "c1bea2acfb8c0f7ac66f649f5fc6cc18c6a1d7d3c1589cd5c5c0ef4bb7b7d114",
+      "archive_path": "data/sources/c1bea2acfb8c0f7ac66f649f5fc6cc18c6a1d7d3c1589cd5c5c0ef4bb7b7d114.pdf",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-398d6cca944740e1f4a1",
+      "url": "https://www.ncses.nsf.gov/pubs/nsbsep20261/figure/11",
+      "title": "ev-r2-l2-nsf-education",
+      "published_date": "2026",
+      "publication_date_precision": "year",
+      "publication_date_range": {
+        "earliest": "2026-01-01",
+        "latest": "2026-12-31"
+      },
+      "date_status": "overlaps_cutoff",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-nsf-education",
+      "archive_sha256": "769bdb1e6d59a7fccc697cc173fa0963ae15f10519328421e4af09a58ee55328",
+      "archive_path": "data/sources/r2-l2-nsf-education.html",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-0d68c305ab9bd53ba409",
+      "url": "https://www.gao.gov/products/gao-22-104737",
+      "title": "ev-r2-l2-gao-schools",
+      "published_date": "2022-07-14",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2022-07-14",
+        "latest": "2022-07-14"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-gao-schools",
+      "archive_sha256": "f449ae651c62fffeffdcf0ad1ef70a4af0fa29408f18981be87b4aa6c4852ee8",
+      "archive_path": "data/sources/r2-l2-gao-schools-web-notes.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-25a598579f8c1f94e4b5",
+      "url": "https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf",
+      "title": "ev-r2-l2-cdc-drugs",
+      "published_date": "2024",
+      "publication_date_precision": "year",
+      "publication_date_range": {
+        "earliest": "2024-01-01",
+        "latest": "2024-12-31"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-cdc-drugs",
+      "archive_sha256": "c5e3c4111195ea65fa67e64c2f226208d4d358fff910f6ba96674190d100ed10",
+      "archive_path": "data/sources/r2-l2-cdc-drugs-web-notes.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-25bc950bd3b538d0794a257f",
+      "url": "https://www.nagb.gov/news-and-events/news-releases/2025/nations-report-card-decline-in-reading-progress-in-math.html",
+      "resolved_url": "https://www.nagb.gov/news-and-events/news-releases/2025/nations-report-card-decline-in-reading-progress-in-math.html",
+      "title": "The Nation's Report Card Shows Declines in Reading, Some Progress in 4th Grade Math",
+      "published_date": "2025-01-29",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-01-29",
+        "latest": "2025-01-29"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:17.320258+00:00",
+      "archive_sha256": "567b5fa058850c38962278d4daa44bfde79402e58ef64960d1a174ec2647157b",
+      "archive_path": "jobs/ac750fef8c55f187244596ca/567b5fa058850c38962278d4daa44bfde79402e58ef64960d1a174ec2647157b.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-59134609405eb82859149ba1",
+      "url": "https://www.nationsreportcard.gov/reports/reading/2024/g4_8/performance-by-student-group/?grade=",
+      "resolved_url": "https://www.nationsreportcard.gov/reports/reading/2024/g4_8/performance-by-student-group/?grade=",
+      "title": "NAEP Reading: Performance by Student Group",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:17.320381+00:00",
+      "archive_sha256": "3c725892770c0a0420c8e3e0f44ec2b6977bc058cdb3b09f23897205744f6444",
+      "archive_path": "jobs/ac750fef8c55f187244596ca/3c725892770c0a0420c8e3e0f44ec2b6977bc058cdb3b09f23897205744f6444.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-057cd9d8adece982eef35e4c",
+      "url": "https://www.npr.org/sections/shots-health-news/2024/08/07/nx-s1-5064406/cdc-youth-risk-behavior-survey-suicide-mental-health-drugs-alcohol",
+      "resolved_url": "https://www.npr.org/sections/shots-health-news/2024/08/07/nx-s1-5064406/cdc-youth-risk-behavior-survey-suicide-mental-health-drugs-alcohol",
+      "title": "The latest CDC look at the youth mental health crisis still shows a grim picture : Shots - Health News : NPR",
+      "published_date": "2024-08-07",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-08-07",
+        "latest": "2024-08-07"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:17.320498+00:00",
+      "archive_sha256": "70636cc4a5d74d1b15741d76a4526fbe82caa68e03faf482bd8a9fa1bb987df2",
+      "archive_path": "jobs/ac750fef8c55f187244596ca/70636cc4a5d74d1b15741d76a4526fbe82caa68e03faf482bd8a9fa1bb987df2.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-02b1fa3b758ed3c72860f570",
+      "url": "https://www.gao.gov/assets/gao-22-104737.pdf",
+      "resolved_url": "https://www.gao.gov/assets/gao-22-104737.pdf",
+      "title": "GAO-22-104737, K-12 EDUCATION: Student Population Has Significantly Diversified, But Many Schools Remain Divided Along Racial, Ethnic, and Economic Lines",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:25.261793+00:00",
+      "archive_sha256": "691ac6cd744de26c0ff5584d3f93814775554ecb781b0a8b754d588eb3a59fcf",
+      "archive_path": "jobs/ac750fef8c55f187244596ca/691ac6cd744de26c0ff5584d3f93814775554ecb781b0a8b754d588eb3a59fcf.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ad4fc0af1239967649145232",
+      "url": "https://www.nationsreportcard.gov/ltt/2025/mathematics/scores-percentiles/",
+      "resolved_url": "https://www.nationsreportcard.gov/ltt/2025/mathematics/scores-percentiles/",
+      "title": "NAEP Long-Term Trends: Mathematics - Average Scores and Percentiles",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:25.261916+00:00",
+      "archive_sha256": "330c7b5365c72598931e7768ef63af21dca78807d4eae648f5e78eef345e29a7",
+      "archive_path": "jobs/ac750fef8c55f187244596ca/330c7b5365c72598931e7768ef63af21dca78807d4eae648f5e78eef345e29a7.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d73e5542a5627f862270f35f",
+      "url": "https://nces.ed.gov/fastfacts/display.asp?id=38&utm=",
+      "resolved_url": "https://nces.ed.gov/fastfacts/display.asp?id=38&utm=",
+      "title": "Fast Facts: Long-term trends in reading and mathematics achievement (38)",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:25.262010+00:00",
+      "archive_sha256": "909256f802902087bc264e346470eab3ddaa800e2c6eaf8d09c50d410fba6592",
+      "archive_path": "jobs/ac750fef8c55f187244596ca/909256f802902087bc264e346470eab3ddaa800e2c6eaf8d09c50d410fba6592.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "NAEP 2024 reading scores decline achievement gap low-performing students United States",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "CDC YRBS 2013 2023 adolescent substance use trends declined United States",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "GAO 2022 K-12 education segregation school districts racial economic isolation report gao-22-104737",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "NAEP long-term trend mathematics scores 1990 2024 improvement United States",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-02b1fa3b758ed3c72860f570"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "publication_date_range_overlaps_cutoff",
+      "evidence_ids": [
+        "prior-398d6cca944740e1f4a1"
+      ],
+      "blocks_verdict": true
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "prior-398d6cca944740e1f4a1"
+      ],
+      "blocks_verdict": true
+    }
+  ],
+  "remaining_gap": "确认必要引用的发表范围或截止日前可核对的内容版本。原文未给精确指标与期限；数学长期改善与青少年物质使用改善作为缓解因素记录，不改变“一大问题”已实现的主判断。",
+  "source_statuses": [
+    {
+      "url": "https://www.nagb.gov/news-and-events/news-releases/2025/nations-report-card-decline-in-reading-progress-in-math.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.nationsreportcard.gov/reports/reading/2024/g4_8/performance-by-student-group/?grade=",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.npr.org/sections/shots-health-news/2024/08/07/nx-s1-5064406/cdc-youth-risk-behavior-survey-suicide-mental-health-drugs-alcohol",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.gao.gov/assets/gao-22-104737.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.nationsreportcard.gov/ltt/2025/mathematics/scores-percentiles/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://nces.ed.gov/fastfacts/display.asp?id=38&utm=",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "63d01a518e2ff57a66d6f4120b6ad63dfd306e38ae452b46d1268c468b06e0b1"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "a022d2d4130106962449052e8c628376",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b43ef40dacfba52f05d46a3aaa782a06",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "d163154d3d8eb9f37e52d8a6216262e36448fd352ff969e19572433209aab8b3"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "15a1e09f4b2c1d4431cc48ded6656b59",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "f8b792c54cb2beffaa68089ba4be27809084cb8d57dbaff39b304a40597f026d"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e73ebb3f934402f6d80d9d580ee82a8b",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f0e1d9917313fbda6ca2f7de1a764e0b",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "36fa4668a28d3e53a1bb16df8793cb527cea4c3c71e6dd28738a19c209080b90"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "f312fd29174c6ca3b77b74a634e36329",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "668f9077020364640174bb9cb0a39ecf4afb6feb7b8285fc03078e5df7d739d5"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "6f4d01eb9a2e0e93e9ec8e8026705474a87a9dce1d9fe9c3a7a110587963599a"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "b26bae8b97696dc13d3cf769fa711a2c1aedc2380395c93fe37f6d523411ad67"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "aa8dd4625043abc6a8286f41adea7db403f6f1e268886bd6bbb772830d923e24"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-02b1fa3b758ed3c72860f570"
+          ],
+          "blocks_verdict": false
+        },
+        {
+          "code": "publication_date_range_overlaps_cutoff",
+          "evidence_ids": [
+            "prior-398d6cca944740e1f4a1"
+          ],
+          "blocks_verdict": true
+        },
+        {
+          "code": "source_availability_unconfirmed",
+          "evidence_ids": [
+            "prior-398d6cca944740e1f4a1"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "正确",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-02b1fa3b758ed3c72860f570"
+          ],
+          "blocks_verdict": false
+        },
+        {
+          "code": "publication_date_range_overlaps_cutoff",
+          "evidence_ids": [
+            "prior-398d6cca944740e1f4a1"
+          ],
+          "blocks_verdict": true
+        },
+        {
+          "code": "source_availability_unconfirmed",
+          "evidence_ids": [
+            "prior-398d6cca944740e1f4a1"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-f09f0f108e7c7c957762",
+        "source_bytes": 126,
+        "shown_bytes": 126,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-398d6cca944740e1f4a1",
+        "source_bytes": 193,
+        "shown_bytes": 193,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-0d68c305ab9bd53ba409",
+        "source_bytes": 197,
+        "shown_bytes": 197,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-25a598579f8c1f94e4b5",
+        "source_bytes": 184,
+        "shown_bytes": 184,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-25bc950bd3b538d0794a257f",
+        "source_bytes": 7355,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-59134609405eb82859149ba1",
+        "source_bytes": 12008,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-057cd9d8adece982eef35e4c",
+        "source_bytes": 6282,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-02b1fa3b758ed3c72860f570",
+        "source_bytes": 12030,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-ad4fc0af1239967649145232",
+        "source_bytes": 3342,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d73e5542a5627f862270f35f",
+        "source_bytes": 7912,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-f09f0f108e7c7c957762",
+        "source_bytes": 126,
+        "shown_bytes": 126,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-398d6cca944740e1f4a1",
+        "source_bytes": 193,
+        "shown_bytes": 193,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-0d68c305ab9bd53ba409",
+        "source_bytes": 197,
+        "shown_bytes": 197,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-25a598579f8c1f94e4b5",
+        "source_bytes": 184,
+        "shown_bytes": 184,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-25bc950bd3b538d0794a257f",
+        "source_bytes": 7355,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-59134609405eb82859149ba1",
+        "source_bytes": 12008,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-057cd9d8adece982eef35e4c",
+        "source_bytes": 6282,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-02b1fa3b758ed3c72860f570",
+        "source_bytes": 12030,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-ad4fc0af1239967649145232",
+        "source_bytes": 3342,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d73e5542a5627f862270f35f",
+        "source_bytes": 7912,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-f09f0f108e7c7c957762",
+        "source_bytes": 126,
+        "shown_bytes": 126,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-398d6cca944740e1f4a1",
+        "source_bytes": 193,
+        "shown_bytes": 193,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-0d68c305ab9bd53ba409",
+        "source_bytes": 197,
+        "shown_bytes": 197,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-25a598579f8c1f94e4b5",
+        "source_bytes": 184,
+        "shown_bytes": 184,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-25bc950bd3b538d0794a257f",
+        "source_bytes": 7355,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-59134609405eb82859149ba1",
+        "source_bytes": 12008,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-057cd9d8adece982eef35e4c",
+        "source_bytes": 6282,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-02b1fa3b758ed3c72860f570",
+        "source_bytes": 12030,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-ad4fc0af1239967649145232",
+        "source_bytes": 3342,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d73e5542a5627f862270f35f",
+        "source_bytes": 7912,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-f09f0f108e7c7c957762",
+        "source_bytes": 126,
+        "shown_bytes": 126,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-398d6cca944740e1f4a1",
+        "source_bytes": 193,
+        "shown_bytes": 193,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-0d68c305ab9bd53ba409",
+        "source_bytes": 197,
+        "shown_bytes": 197,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-25a598579f8c1f94e4b5",
+        "source_bytes": 184,
+        "shown_bytes": 184,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-25bc950bd3b538d0794a257f",
+        "source_bytes": 7355,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-59134609405eb82859149ba1",
+        "source_bytes": 12008,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-057cd9d8adece982eef35e4c",
+        "source_bytes": 6282,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-02b1fa3b758ed3c72860f570",
+        "source_bytes": 12030,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-ad4fc0af1239967649145232",
+        "source_bytes": 3342,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d73e5542a5627f862270f35f",
+        "source_bytes": 7912,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000188277-000188300",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原文是“教育中潜在的危机，如不解决，将成为一大问题”，后果B是笼统的“一大问题”，前提A是所列危机未解决。建议把数学长期改善、青少年物质使用改善当作“分项反向证据”从而降为部分符合，但原文并未把“三项指标全面恶化”设为后果；A中部分指标改善只说明危机部分缓解，不能直接推出B只实现一部分。判部分符合必须指出B哪些具体部分实现、哪些未实现，建议未做到。",
+          "quote_ref": "q1",
+          "source_quote": "如不解决，将成为一大问题。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "book"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议一方面认定危机未解决且阅读下降、低端表现恶化、学校分隔持续构成“一大问题”（B已实现），另一方面仅凭数学与药物使用改善就降为部分符合，属于把前提A的局部改善误当作后果B的分项分化。按口径，A确仍未解决且B在声明范围内已实现时，改善只能作为缓解或限制，不能仅凭它降为部分符合。",
+          "quote_ref": "q3",
+          "source_quote": "原文判断教育潜在危机若不解决将成为一大问题。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正结论口径：要么在明确B（“一大问题”）的具体可观察部分后，指出哪些部分实现、哪些未实现及直接证据以支持部分符合；要么承认A未解决且B已实现，将数学与药物使用改善降为limitation中的缓解因素，而非分项反向证据。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000188277-000188300",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000188277-000188300",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象：王沪宁所述美国教育低质量、种族/资源分隔与青少年吸毒等潜在危机；条件：这些危机后续未解决；观察口径：1991年后至2024年，NAEP阅读与低端成绩、GAO学校族裔/资源分隔统计、CDC青少年物质使用趋势；不要求三项全部单调恶化。",
+      "reason": "原文判断教育潜在危机若不解决将成为一大问题。观察期内阅读成绩持续下降、低端学生表现恶化、学校族裔与资源分隔规模仍大，支持危机未解决且构成实质问题；但数学长期成绩高于1990年代、青少年饮酒与大麻等使用趋势改善，分项出现反向证据，故为部分符合。",
+      "limitation": "原文未给精确指标与期限，本评估采用NAEP、GAO、CDC作为回顾性代理；族裔集中不等于法律隔离，也不证明文化因果；数学与药物使用改善削弱全面恶化判断。",
+      "evidence_ids": [
+        "prior-f09f0f108e7c7c957762",
+        "prior-398d6cca944740e1f4a1",
+        "prior-0d68c305ab9bd53ba409",
+        "prior-25a598579f8c1f94e4b5",
+        "ev-25bc950bd3b538d0794a257f",
+        "ev-02b1fa3b758ed3c72860f570"
+      ],
+      "method": "从已观察教育危机外推累积后果",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-f09f0f108e7c7c957762",
+          "relation": "support",
+          "quote": "2024四、八年级阅读继续下降；数学全国均分高于1990年代但低于2013高点，疫情后各州表现不同。",
+          "publication_date": "2025-01-29",
+          "observation_end": "2024-12-31",
+          "limitation": "摘要同时含数学高于1990年代的反向信息，不能只取阅读下降。"
+        },
+        {
+          "evidence_id": "prior-398d6cca944740e1f4a1",
+          "relation": "counter",
+          "quote": "2024比疫情前下降而长期高于1990；2024教育相关旅行服务出口548亿美元。",
+          "publication_date": "2026",
+          "observation_end": "2024-12-31",
+          "limitation": "数学长期高于1990年代，削弱教育质量全面恶化判断；出口数据与教育质量无直接关系。"
+        },
+        {
+          "evidence_id": "prior-0d68c305ab9bd53ba409",
+          "relation": "support",
+          "quote": "GAO分析：2020—2021约1850万学生在75%以上同一种族/族裔学校，超过总数三分之一；学区分离后新学区更富且白人/亚裔占比更高，资源和种族分隔持续。",
+          "publication_date": "2022-07-14",
+          "observation_end": "2021-12-31",
+          "limitation": "族裔集中不等于法律隔离，也不直接证明教育质量低。"
+        },
+        {
+          "evidence_id": "prior-25a598579f8c1f94e4b5",
+          "relation": "counter",
+          "quote": "CDC2013—2023 YRBS综述：目前饮酒、使用大麻、曾用选定非法药物及曾滥用处方阿片等长期趋势改善；校园暴力与部分心理健康风险方向不同。",
+          "publication_date": "2024",
+          "observation_end": "2023-12-31",
+          "limitation": "物质使用改善与原文青少年吸毒危机判断相反，但心理健康风险方向不同。"
+        },
+        {
+          "evidence_id": "ev-25bc950bd3b538d0794a257f",
+          "relation": "support",
+          "quote": "The Nation's Report Card released today shows continued declines in reading for U.S. students, compounding a decline in the nation’s reading scores that started prior to the pandemic.",
+          "publication_date": "2025-01-29",
+          "observation_end": "2024-12-31",
+          "limitation": "仅覆盖阅读，未覆盖数学与药物使用；来源verified=false，待语义复核。"
+        },
+        {
+          "evidence_id": "ev-02b1fa3b758ed3c72860f570",
+          "relation": "support",
+          "quote": "As the K-12 public school student population grows significantly more diverse, schools remain divided along racial, ethnic, and economic lines throughout the U.S.",
+          "publication_date": null,
+          "observation_end": "2021-12-31",
+          "limitation": "报告为2022年6月，元数据无精确发表日期；族裔分隔不等于法律隔离或教育质量低。"
+        }
+      ],
+      "remaining_gap": "原文未给精确指标与期限；数学长期改善与青少年物质使用改善构成反向分项，无法支持三项危机全面恶化，故判部分符合而非正确。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000188277-000188300",
+      "inclusion": "forecast",
+      "verdict": "正确",
+      "basis": "observed_window",
+      "scope": "对象：王沪宁所述美国教育低质量、种族/资源分隔与青少年吸毒等潜在危机；条件：这些危机后续未解决；观察口径：1991年后至2024年，NAEP阅读与低端成绩、GAO学校族裔/资源分隔统计、CDC青少年物质使用趋势；后果B“一大问题”操作化为全国性教育质量与公平重大政策难题的持续存在。",
+      "reason": "原文判断所列教育潜在危机若不解决将成为一大问题。观察期内阅读成绩持续下降、低端学生表现恶化、学校族裔与资源分隔规模仍大，表明危机未解决且已构成全国性教育质量与公平的重大问题，主要结果符合。数学长期成绩高于1990年代、青少年饮酒与大麻使用趋势改善属于部分缓解因素，不推翻“一大问题”已实现的主判断。",
+      "limitation": "原文未给精确指标与期限，本评估采用NAEP、GAO、CDC作为回顾性代理；族裔集中不等于法律隔离，也不证明文化因果；数学与药物使用改善作为缓解因素列入限制，不构成后果B的分项反向证据。修订要点：按复核意见，不再把前提A的局部改善当作后果B的分项分化，改判正确。",
+      "evidence_ids": [
+        "prior-f09f0f108e7c7c957762",
+        "prior-398d6cca944740e1f4a1",
+        "prior-0d68c305ab9bd53ba409",
+        "prior-25a598579f8c1f94e4b5",
+        "ev-25bc950bd3b538d0794a257f",
+        "ev-02b1fa3b758ed3c72860f570"
+      ],
+      "method": "从已观察教育危机外推累积后果",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-f09f0f108e7c7c957762",
+          "relation": "support",
+          "quote": "2024四、八年级阅读继续下降；数学全国均分高于1990年代但低于2013高点，疫情后各州表现不同。",
+          "publication_date": "2025-01-29",
+          "observation_end": "2024-12-31",
+          "limitation": "摘要同时含数学高于1990年代的缓解信息，不能只取阅读下降。"
+        },
+        {
+          "evidence_id": "prior-398d6cca944740e1f4a1",
+          "relation": "boundary",
+          "quote": "2024比疫情前下降而长期高于1990；2024教育相关旅行服务出口548亿美元。",
+          "publication_date": "2026",
+          "observation_end": "2024-12-31",
+          "limitation": "数学长期高于1990年代，属缓解因素；出口数据与教育质量无直接关系；出版年为2026，与截止日重叠，仅作边界参考。"
+        },
+        {
+          "evidence_id": "prior-0d68c305ab9bd53ba409",
+          "relation": "support",
+          "quote": "GAO分析：2020—2021约1850万学生在75%以上同一种族/族裔学校，超过总数三分之一；学区分离后新学区更富且白人/亚裔占比更高，资源和种族分隔持续。",
+          "publication_date": "2022-07-14",
+          "observation_end": "2021-12-31",
+          "limitation": "族裔集中不等于法律隔离，也不直接证明教育质量低。"
+        },
+        {
+          "evidence_id": "prior-25a598579f8c1f94e4b5",
+          "relation": "boundary",
+          "quote": "CDC2013—2023 YRBS综述：目前饮酒、使用大麻、曾用选定非法药物及曾滥用处方阿片等长期趋势改善；校园暴力与部分心理健康风险方向不同。",
+          "publication_date": "2024",
+          "observation_end": "2023-12-31",
+          "limitation": "物质使用改善是缓解因素，但心理健康风险方向不同，不能据此否定教育危机整体存在。"
+        },
+        {
+          "evidence_id": "ev-25bc950bd3b538d0794a257f",
+          "relation": "support",
+          "quote": "The Nation's Report Card released today shows continued declines in reading for U.S. students, compounding a decline in the nation’s reading scores that started prior to the pandemic.",
+          "publication_date": "2025-01-29",
+          "observation_end": "2024-12-31",
+          "limitation": "仅覆盖阅读，未覆盖数学与药物使用；来源verified=false，待语义复核。"
+        },
+        {
+          "evidence_id": "ev-02b1fa3b758ed3c72860f570",
+          "relation": "support",
+          "quote": "As the K-12 public school student population grows significantly more diverse, schools remain divided along racial, ethnic, and economic lines throughout the U.S.",
+          "publication_date": null,
+          "observation_end": "2021-12-31",
+          "limitation": "报告为2022年6月，元数据无精确发表日期；族裔分隔不等于法律隔离或教育质量低。"
+        }
+      ],
+      "remaining_gap": "原文未给精确指标与期限；数学长期改善与青少年物质使用改善作为缓解因素记录，不改变“一大问题”已实现的主判断。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象：王沪宁所述美国教育中低质量、种族/资源分隔与青少年吸毒等潜在危机；条件：这些危机在后续未解决；可观察口径：1991年后至2024年，美国是否出现可核实的全国性教育质量与公平重大政策难题（NAEP低端成绩与阅读下降、GAO统计的学校族裔/资源分隔规模），并同时记录数学长期改善、青年药物风险下降等反证；不要求三项指标全部单调恶化，也不把族裔集中直接等同于法律隔离或证明文化因果。",
+  "elapsed_seconds": 35.073,
+  "completed_at": "2026-11-09T10:34:43.032008+00:00"
+}

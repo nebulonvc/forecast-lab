@@ -1,0 +1,70 @@
+{
+  "id": "txt-5386516eaf-001922185-001922261",
+  "assess": {
+    "id": "txt-5386516eaf-001922185-001922261",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "劳动者会自己判断哪些人配得知识上的尊重。",
+    "reason": "2022年英国实验写，候选人的朋友地位和文化爱好几乎不影响公众觉得他有多能干。这是公众对候选人能力的印象，不是劳动者自己判断谁配得知识上的尊重。",
+    "limitation": "能力印象不是知识尊重的资格判断。",
+    "evidence_ids": [
+      "ev-voter-competence-2023"
+    ],
+    "method": "检索劳动者是否自己判断谁配得尊重。得到的是候选人能力实验。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-voter-competence-2023",
+        "quote": "bear almost no relation to how competent they are perceived to be by the public",
+        "relation": "boundary",
+        "limitation": "能力印象，不是资格判断。",
+        "observation_end": "2022-08-31",
+        "publication_date": "2023-04-07",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺劳动者自己判断谁配得知识尊重的同对象证据。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001922185-001922261",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "workers judge who deserves deference for knowledge"
+      },
+      {
+        "role": "counter",
+        "query": "voters still defer to social rank rather than judging competence"
+      }
+    ],
+    "note": "无 executed=true。ID保持原字符跨度，不另造子ID。"
+  },
+  "select": {
+    "urls": [
+      "https://joegreenwoodhau.org/wp-content/uploads/2023/04/greenwood-hau-candidate-capital-perceived-descriptive-representativeness-and-competence-and-voting.pdf"
+    ],
+    "reason": "候选人能力实验不是这句。"
+  }
+}

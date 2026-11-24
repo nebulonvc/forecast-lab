@@ -1,0 +1,577 @@
+{
+  "claim_id": "txt-1c4066fc0c-000025336-000025404",
+  "version": "search-verifier-v2",
+  "input_sha256": "7879d1a07a37498de67637ac7c357635c42aedf79a91cc54a8430ab46917b792",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000025336-000025404",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "attribution",
+    "scope": "对象为《美国反对美国》中农场主奥伯曼（Oberman）的独子：其大学毕业后是否最终返回农场；以及若其不返回，独子无人接班是否会使该农场出现问题。观察期应为书稿观察期（约1980年代末）之后至cutoff 2026-11-09的继承与接班记录。",
+    "reason": "原文是受访农场主奥伯曼本人对儿子最终返乡的信念，属于转述中的个人预测，而非王沪宁的独立判断。现有候选证据中，爱荷华官方名录的Claude Oberman登记三子，与原书“独子”线索不匹配；讣告中的Richard Oberman有女儿Sue和儿子Charles，也与“独子”结构不符；Ryan Oberman案例无法确认与书中奥伯曼为同一家庭。均不能对应到原书所指的具体家庭，故无法判断该独子是否最终返乡。",
+    "limitation": "无法确认书中奥伯曼的身份与家庭结构，所有候选来源均不能可靠对应原书对象；不能以全美农场继承趋势或同姓家庭替代该具体家庭结果。",
+    "evidence_ids": [
+      "prior-6451d807f1e851cf6883",
+      "ev-58cf311a9a54645cc554450a",
+      "ev-51e0558bea6881ce6337ac97"
+    ],
+    "method": "依赖家庭继承与个人信念推断接班",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "最终",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-6451d807f1e851cf6883",
+        "relation": "boundary",
+        "quote": "爱荷华官方名录检索出现农民及银行董事Claude Oberman，1889年生，登记三子；与原书1988年农场主“独子”线索不匹配，不能据同姓强认。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "该记录显示三子，与原书“独子”结构不符，不能作为书中奥伯曼的对应证据。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "ev-58cf311a9a54645cc554450a",
+        "relation": "boundary",
+        "quote": "His family includes his wife, Joyce; daughter and her husband, Sue and Willy Wever; son and his wife, Charles and Karen Oberman;",
+        "publication_date": "2019-09-04",
+        "observation_end": "2019-09-01",
+        "limitation": "该讣告中的Richard Oberman有女儿和儿子，非“独子”结构，且无法确认与书中农场主为同一人。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-51e0558bea6881ce6337ac97",
+        "relation": "background",
+        "quote": "Southeast Iowa Farmer, Ryan Oberman, shares the dynamic evolution of his farm spanning the past 15 years.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "仅说明有一位叫Ryan Oberman的农场主，无法确认其与书中奥伯曼家庭的父子关系或继承关系。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      }
+    ],
+    "remaining_gap": "缺少能确认书中农场主奥伯曼身份及其独子后续是否返乡、农场是否由该独子继承的可靠记录。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000025336-000025404",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "attribution",
+    "scope": "对象为《美国反对美国》中农场主奥伯曼（Oberman）的独子：其大学毕业后是否最终返回农场；以及若其不返回，独子无人接班是否会使该农场出现问题。观察期应为书稿观察期（约1980年代末）之后至cutoff 2026-11-09的继承与接班记录。",
+    "reason": "原文是受访农场主奥伯曼本人对儿子最终返乡的信念，属于转述中的个人预测，而非王沪宁的独立判断。现有候选证据中，爱荷华官方名录的Claude Oberman登记三子，与原书“独子”线索不匹配；讣告中的Richard Oberman有女儿Sue和儿子Charles，也与“独子”结构不符；Ryan Oberman案例无法确认与书中奥伯曼为同一家庭。均不能对应到原书所指的具体家庭，故无法判断该独子是否最终返乡。",
+    "limitation": "无法确认书中奥伯曼的身份与家庭结构，所有候选来源均不能可靠对应原书对象；不能以全美农场继承趋势或同姓家庭替代该具体家庭结果。",
+    "evidence_ids": [
+      "prior-6451d807f1e851cf6883",
+      "ev-58cf311a9a54645cc554450a",
+      "ev-51e0558bea6881ce6337ac97"
+    ],
+    "method": "依赖家庭继承与个人信念推断接班",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "最终",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-6451d807f1e851cf6883",
+        "relation": "boundary",
+        "quote": "爱荷华官方名录检索出现农民及银行董事Claude Oberman，1889年生，登记三子；与原书1988年农场主“独子”线索不匹配，不能据同姓强认。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "该记录显示三子，与原书“独子”结构不符，不能作为书中奥伯曼的对应证据。"
+      },
+      {
+        "evidence_id": "ev-58cf311a9a54645cc554450a",
+        "relation": "boundary",
+        "quote": "His family includes his wife, Joyce; daughter and her husband, Sue and Willy Wever; son and his wife, Charles and Karen Oberman;",
+        "publication_date": "2019-09-04",
+        "observation_end": "2019-09-01",
+        "limitation": "该讣告中的Richard Oberman有女儿和儿子，非“独子”结构，且无法确认与书中农场主为同一人。"
+      },
+      {
+        "evidence_id": "ev-51e0558bea6881ce6337ac97",
+        "relation": "background",
+        "quote": "Southeast Iowa Farmer, Ryan Oberman, shares the dynamic evolution of his farm spanning the past 15 years.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "仅说明有一位叫Ryan Oberman的农场主，无法确认其与书中奥伯曼家庭的父子关系或继承关系。"
+      }
+    ],
+    "remaining_gap": "缺少能确认书中农场主奥伯曼身份及其独子后续是否返乡、农场是否由该独子继承的可靠记录。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-6451d807f1e851cf6883",
+      "url": "https://www.legis.iowa.gov/docs/publications/REDBK/860903.pdf",
+      "title": "ev-r2-l1-oberman-exclusion",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-oberman-exclusion",
+      "archive_sha256": "420d35e0f6ded92b697d4e9bd5e539baf0af7e0e5fc568070a4d8f98bcbe86bb",
+      "archive_path": "data/sources/r2-l1-search-6.json",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-94ce3a2ad7fd623b3c7d8576",
+      "url": "https://www.extension.iastate.edu/Pages/communications/farmsit/materials/eberman.html",
+      "resolved_url": "https://www.extension.iastate.edu/Pages/communications/farmsit/materials/eberman.html",
+      "title": "Rich and Sharon Eberman",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:18.882995+00:00",
+      "archive_sha256": "919c36746e05102f3ec7721970ade00806703611dac47ebe7b5669b62327f262",
+      "archive_path": "jobs/e8b7a780dd6e8a331c7cdf6d/919c36746e05102f3ec7721970ade00806703611dac47ebe7b5669b62327f262.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-b22566eb5a360ff78580e9a1",
+      "url": "https://www.card.iastate.edu/files/publications/pdf/22WP631.pdf",
+      "resolved_url": "https://www.card.iastate.edu/files/publications/pdf/22WP631.pdf",
+      "title": "Of Women and Land: How Gender Affects Successions and Transfers of Iowa Farms",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:18.883135+00:00",
+      "archive_sha256": "bcd33436de41d074edcc1cac46fb96bb0d4a84922067b60f5dc0f5a7d8b59af7",
+      "archive_path": "jobs/e8b7a780dd6e8a331c7cdf6d/bcd33436de41d074edcc1cac46fb96bb0d4a84922067b60f5dc0f5a7d8b59af7.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-dfb2e7abb5150cf540664af1",
+      "url": "https://card.iastate.edu/products/publications/synopsis?p=1316",
+      "resolved_url": "https://card.iastate.edu/products/publications/synopsis?p=1316",
+      "title": "Iowa Farmers’ Business and Farm Transfer Plans: A Comparison between 2019 and 2006",
+      "published_date": "2020-01-01",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2020-01-01",
+        "latest": "2020-01-01"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:18.883238+00:00",
+      "archive_sha256": "43676c198c15502a8c97a72b114ee1f23a19b3e86bf5ad5000f51c3e29cfe335",
+      "archive_path": "jobs/e8b7a780dd6e8a331c7cdf6d/43676c198c15502a8c97a72b114ee1f23a19b3e86bf5ad5000f51c3e29cfe335.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-58cf311a9a54645cc554450a",
+      "url": "https://www.press-citizen.com/obituaries/icp018391",
+      "resolved_url": "https://www.press-citizen.com/obituaries/icp018391",
+      "title": "Richard W. \"Dick\" Oberman Obituary - The Iowa City Press-Citizen",
+      "published_date": "2019-09-04",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2019-09-04",
+        "latest": "2019-09-04"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:27.354181+00:00",
+      "archive_sha256": "a045df1aaf3e6233de68c55df4f8b3639e696459c3bde12230746d74a9a55087",
+      "archive_path": "jobs/e8b7a780dd6e8a331c7cdf6d/a045df1aaf3e6233de68c55df4f8b3639e696459c3bde12230746d74a9a55087.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-51e0558bea6881ce6337ac97",
+      "url": "https://continuum.ag/case-studies/ryan-oberman/",
+      "resolved_url": "https://continuum.ag/case-studies/ryan-oberman/",
+      "title": "Ryan Oberman - Continuum",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:27.354294+00:00",
+      "archive_sha256": "6900051f865c949fcac3fc60fcbf3c8e2b443d52d53c37bb093cfe6962610feb",
+      "archive_path": "jobs/e8b7a780dd6e8a331c7cdf6d/6900051f865c949fcac3fc60fcbf3c8e2b443d52d53c37bb093cfe6962610feb.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "Oberman Iowa farm son university graduate return farm inherit 1980s 1990s",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Oberman family farm Iowa sold no son successor inherited outside family",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Oberman Iowa farm son returned farm succession 1990s 2000s family farm transfer record",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Oberman Iowa farm sold auction estate no son successor outside family inheritance",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-51e0558bea6881ce6337ac97",
+        "prior-6451d807f1e851cf6883"
+      ],
+      "blocks_verdict": true
+    }
+  ],
+  "remaining_gap": "缺少能确认书中农场主奥伯曼身份及其独子后续是否返乡、农场是否由该独子继承的可靠记录。",
+  "source_statuses": [
+    {
+      "url": "https://www.extension.iastate.edu/Pages/communications/farmsit/materials/eberman.html",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.card.iastate.edu/files/publications/pdf/22WP631.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://card.iastate.edu/products/publications/synopsis?p=1316",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.press-citizen.com/obituaries/icp018391",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://continuum.ag/case-studies/ryan-oberman/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "baaa5ff7663589173fd81b249c8e282949f5dd8bdbe8197781b87a28338c7ab4"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "404f70191119502966b2cc6f7818b61f",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "25c92f24039fedf732887a297fb9769d",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "fbe7c1ad52010320f1fe1088b90ad77f734dc7cfdc518f97f223357f7780e623"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "f51e3fd7e037b116bd3d4b506778a274",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "496495dc8b1fa9c2a09ee0a1103f9e8015b931f1cd66fb9f4f7bb587d48fb023"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "50a35525b1eec0e4e8d2fa133213b0d6",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "838dfa03d41f1d155921221d10b03b3b",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "25ddb4fc730424cc29a7721a8e8b9a1c852d9947f5b8fc36daa3592cce4155d9"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "ff246ade2231987823029dfc7467e2ea",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "947b5f9c3cebfdc666fdbd9b58155522d3cc1cecf1d9809b2ae9d3657d900e23"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "fbd3d8cce0dcc3675273424e3367a3060201ccb5542855f820e90282f8b68294"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-51e0558bea6881ce6337ac97",
+            "prior-6451d807f1e851cf6883"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-6451d807f1e851cf6883",
+        "source_bytes": 178,
+        "shown_bytes": 178,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-94ce3a2ad7fd623b3c7d8576",
+        "source_bytes": 3841,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-b22566eb5a360ff78580e9a1",
+        "source_bytes": 12029,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-dfb2e7abb5150cf540664af1",
+        "source_bytes": 12033,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-58cf311a9a54645cc554450a",
+        "source_bytes": 2498,
+        "shown_bytes": 2498,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-51e0558bea6881ce6337ac97",
+        "source_bytes": 1638,
+        "shown_bytes": 1638,
+        "context_truncated": false
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-6451d807f1e851cf6883",
+        "source_bytes": 178,
+        "shown_bytes": 178,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-94ce3a2ad7fd623b3c7d8576",
+        "source_bytes": 3841,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-b22566eb5a360ff78580e9a1",
+        "source_bytes": 12029,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-dfb2e7abb5150cf540664af1",
+        "source_bytes": 12033,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-58cf311a9a54645cc554450a",
+        "source_bytes": 2498,
+        "shown_bytes": 2498,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-51e0558bea6881ce6337ac97",
+        "source_bytes": 1638,
+        "shown_bytes": 1638,
+        "context_truncated": false
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000025336-000025404",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000025336-000025404",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "attribution",
+      "scope": "对象为《美国反对美国》中农场主奥伯曼（Oberman）的独子：其大学毕业后是否最终返回农场；以及若其不返回，独子无人接班是否会使该农场出现问题。观察期应为书稿观察期（约1980年代末）之后至cutoff 2026-11-09的继承与接班记录。",
+      "reason": "原文是受访农场主奥伯曼本人对儿子最终返乡的信念，属于转述中的个人预测，而非王沪宁的独立判断。现有候选证据中，爱荷华官方名录的Claude Oberman登记三子，与原书“独子”线索不匹配；讣告中的Richard Oberman有女儿Sue和儿子Charles，也与“独子”结构不符；Ryan Oberman案例无法确认与书中奥伯曼为同一家庭。均不能对应到原书所指的具体家庭，故无法判断该独子是否最终返乡。",
+      "limitation": "无法确认书中奥伯曼的身份与家庭结构，所有候选来源均不能可靠对应原书对象；不能以全美农场继承趋势或同姓家庭替代该具体家庭结果。",
+      "evidence_ids": [
+        "prior-6451d807f1e851cf6883",
+        "ev-58cf311a9a54645cc554450a",
+        "ev-51e0558bea6881ce6337ac97"
+      ],
+      "method": "依赖家庭继承与个人信念推断接班",
+      "method_basis": "inferred",
+      "observation_end": null,
+      "future_time_text": "最终",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-6451d807f1e851cf6883",
+          "relation": "boundary",
+          "quote": "爱荷华官方名录检索出现农民及银行董事Claude Oberman，1889年生，登记三子；与原书1988年农场主“独子”线索不匹配，不能据同姓强认。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "该记录显示三子，与原书“独子”结构不符，不能作为书中奥伯曼的对应证据。"
+        },
+        {
+          "evidence_id": "ev-58cf311a9a54645cc554450a",
+          "relation": "boundary",
+          "quote": "His family includes his wife, Joyce; daughter and her husband, Sue and Willy Wever; son and his wife, Charles and Karen Oberman;",
+          "publication_date": "2019-09-04",
+          "observation_end": "2019-09-01",
+          "limitation": "该讣告中的Richard Oberman有女儿和儿子，非“独子”结构，且无法确认与书中农场主为同一人。"
+        },
+        {
+          "evidence_id": "ev-51e0558bea6881ce6337ac97",
+          "relation": "background",
+          "quote": "Southeast Iowa Farmer, Ryan Oberman, shares the dynamic evolution of his farm spanning the past 15 years.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "仅说明有一位叫Ryan Oberman的农场主，无法确认其与书中奥伯曼家庭的父子关系或继承关系。"
+        }
+      ],
+      "remaining_gap": "缺少能确认书中农场主奥伯曼身份及其独子后续是否返乡、农场是否由该独子继承的可靠记录。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象为《美国反对美国》中农场主奥伯曼（Oberman）的独子：其大学毕业后是否最终返回农场；以及若其不返回，独子无人接班是否会使该农场出现问题。可观察口径为奥伯曼本人或其家庭农场在书稿观察期（约1980年代末）之后的继承与接班记录；反证包括该独子长期不返乡、农场被出售或由非直系继承，或找到可靠身份资料显示该家庭并非独子结构。不以全美农场老龄化或一般农户继承趋势替代这一具体家庭结果。",
+  "elapsed_seconds": 26.701,
+  "completed_at": "2026-11-09T10:32:34.848368+00:00"
+}

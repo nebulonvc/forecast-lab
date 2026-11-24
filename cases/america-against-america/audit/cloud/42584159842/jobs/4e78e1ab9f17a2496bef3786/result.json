@@ -1,0 +1,566 @@
+{
+  "claim_id": "txt-1c4066fc0c-000017953-000017982",
+  "version": "search-verifier-v1",
+  "input_sha256": "badefe612b38fbac4fbc49a301e5564816f246d872692487388e502d024c7eed",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000017953-000017982",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "attribution",
+    "scope": "对象按研究范围保留为原文所称“亚美尼亚人”（高可信指爱荷华Kalona一带Amish/Mennonite社区，但原词保留）；条件为政府强迫该群体接受现代化（以现代污水/卫生系统为主要可观察口径）；观察1991年后至cutoff前该对象遭遇强制技术改造时是否出现诉讼、抵抗、政策让步等“增加政府压力”的证据。",
+    "reason": "原文对象是作者所称“亚美尼亚人”，研究范围虽高可信指向Kalona一带Amish/Mennonite社区，但所引Mast案对象是明尼苏达Fillmore县Swartzentruber Amish，无证据表明二者属于同一群体，不能替代原文特定对象。原文条件“如果政府强迫亚美尼亚人接受现代化”是否在该对象上发生亦无证据，故无法评估后果“增加政府压力”。",
+    "limitation": "关键修订：原判部分符合并设trend_aligned=true，但对象（Kalona社区）与条件（对该群体的强制现代化）均未对应，明尼苏达个案不能替代；现有材料仅显示另一地点Amish的污水诉讼，不能据此推断原文群体或普遍趋势。",
+    "evidence_ids": [
+      "prior-0ccc287eb7b998562076",
+      "ev-9352d66848e914659e5325bc",
+      "ev-f15e2c282a19538ba424e668",
+      "ev-ad1900d93509b461d489e486"
+    ],
+    "method": "从文化认同冲突推断强制政策成本",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-0ccc287eb7b998562076",
+        "relation": "boundary",
+        "quote": "Mast案记录明尼苏达Fillmore县要求23个Amish家庭安装现代污水系统；产生诉讼，最高法院撤销下级判决并发回重审。",
+        "publication_date": "2021-07-02",
+        "observation_end": "2021-07-02",
+        "limitation": "对象为明尼苏达Swartzentruber Amish，非研究范围所指Kalona社区，不能直接验证原文特定对象；仅为个案摘要，未量化政府成本。"
+      },
+      {
+        "evidence_id": "ev-9352d66848e914659e5325bc",
+        "relation": "boundary",
+        "quote": "A state appeals court says members of a deeply conservative Amish community in Minnesota don’t need to install septic systems to dispose of their “gray water.”",
+        "publication_date": "2023-07-13",
+        "observation_end": "2023-07-13",
+        "limitation": "报道为节选，仅涉及明尼苏达一社区，非原文所称群体；未提供完整判决理由与成本数据。"
+      },
+      {
+        "evidence_id": "ev-f15e2c282a19538ba424e668",
+        "relation": "boundary",
+        "quote": "The MPCA instead demanded the installation of the modern system under threat of criminal penalty, civil fines, and eviction from their farms.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "法律评论文章，published_date为null；描述Mast案事实，对象为明尼苏达Amish，非Kalona社区，且非普遍统计。"
+      },
+      {
+        "evidence_id": "ev-ad1900d93509b461d489e486",
+        "relation": "boundary",
+        "quote": "Judge Joseph Chase ruled Monday that four members of the Amish community in Fillmore County were not exempt from the county’s and the Minnesota Pollution Control Agency’s requirement that rural residences have subsurface sewage systems",
+        "publication_date": "2019-04-27",
+        "observation_end": "2019-04-27",
+        "limitation": "该判决支持强制，说明政府并非总让步，构成反向边界；但对象为Fillmore县Amish，非原文群体，且随后被最高法院撤销。"
+      }
+    ],
+    "remaining_gap": "需找到能对应原文所称“亚美尼亚人”（研究范围所指Kalona一带Amish/Mennonite社区）的政府强制现代化实例，并分别确认该强制条件是否发生、是否导致政府压力增加；现有明尼苏达Swartzentruber Amish污水案不能替代该对象与条件。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000017953-000017982",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象按研究范围保留为原文所称“亚美尼亚人”（高可信指爱荷华Kalona一带Amish/Mennonite社区，但原词保留）；条件为政府强制该类社区接受现代化（以现代污水/卫生系统为主要可观察口径）；观察1991年后至cutoff前联邦/州/地方强制技术改造引发的诉讼、抵抗、政策让步等“增加政府压力”的证据。",
+    "reason": "Mast案显示明尼苏达Fillmore县要求Amish家庭安装现代污水系统，引发多年诉讼，州法院一度支持强制、最高法院撤销并发回，2023年州上诉法院又判Amish可不安 septic，政府执法遭遇持续法律阻力与成本，方向符合“强制增加政府压力”。但这是单一社区、单一政策领域，且原文条件为假设性“如果政府强迫”，并非已全面发生的普遍强制，故只判部分符合。",
+    "limitation": "证据集中于明尼苏达Swartzentruber Amish的污水系统争议，不能代表原文所称“亚美尼亚人”全群体或所有现代化强制领域；原文为条件性判断，条件是否普遍发生无法确认；未量化政府净成本，仅见诉讼与政策反复。",
+    "evidence_ids": [
+      "prior-0ccc287eb7b998562076",
+      "ev-9352d66848e914659e5325bc",
+      "ev-f15e2c282a19538ba424e668",
+      "ev-ad1900d93509b461d489e486"
+    ],
+    "method": "从文化认同冲突推断强制政策成本",
+    "method_basis": "inferred",
+    "observation_end": "2023-07-13",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-0ccc287eb7b998562076",
+        "relation": "support",
+        "quote": "Mast案记录明尼苏达Fillmore县要求23个Amish家庭安装现代污水系统；产生诉讼，最高法院撤销下级判决并发回重审。",
+        "publication_date": "2021-07-02",
+        "observation_end": "2021-07-02",
+        "limitation": "仅为个案摘要，未量化政府成本，且对象是Amish而非原文“亚美尼亚人”原词。"
+      },
+      {
+        "evidence_id": "ev-9352d66848e914659e5325bc",
+        "relation": "support",
+        "quote": "A state appeals court says members of a deeply conservative Amish community in Minnesota don’t need to install septic systems to dispose of their “gray water.”",
+        "publication_date": "2023-07-13",
+        "observation_end": "2023-07-13",
+        "limitation": "报道为节选，未提供完整判决理由与成本数据；仅涉及明尼苏达一社区。"
+      },
+      {
+        "evidence_id": "ev-f15e2c282a19538ba424e668",
+        "relation": "support",
+        "quote": "The MPCA instead demanded the installation of the modern system under threat of criminal penalty, civil fines, and eviction from their farms.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "法律评论文章，日期仅见页面标注2021-12-22但published_date为null；描述的是Mast案事实，非普遍统计。"
+      },
+      {
+        "evidence_id": "ev-ad1900d93509b461d489e486",
+        "relation": "boundary",
+        "quote": "Judge Joseph Chase ruled Monday that four members of the Amish community in Fillmore County were not exempt from the county’s and the Minnesota Pollution Control Agency’s requirement that rural residences have subsurface sewage systems",
+        "publication_date": "2019-04-27",
+        "observation_end": "2019-04-27",
+        "limitation": "该判决支持强制，说明政府并非总是让步，构成对“强制必增压力”的反向边界；但随后被最高法院撤销，显示争议持续。"
+      }
+    ],
+    "remaining_gap": "缺少对原文所称“亚美尼亚人”群体在1991年后各现代化强制领域（不止污水系统）的系统性政府成本/抵抗统计，无法确认条件普遍发生及净成本方向。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-cb759426a6df77ee5d43",
+      "url": "https://www.cityofkalona.org/index.asp?SEC=D5DB9FC7-80F0-474D-909C-D23D56F09F4B",
+      "title": "ev-r2-l1-kalona",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-kalona",
+      "archive_sha256": "a29e24575d040cb06603fecddc75367fe1cb7cd8c1b6497b0625b9590e1247ea",
+      "archive_path": "data/sources/r2-l1-kalona.html",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-d4de8fd7cec52da95ff8",
+      "url": "https://ci.nii.ac.jp/ncid/BD19923744",
+      "title": "ev-r2-l1-amish-book",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-amish-book",
+      "archive_sha256": "733716be86bfc46e558825442b27616efc834b9ea8ef716b785a743168e4bc6e",
+      "archive_path": "data/sources/r2-l1-nie-book.html",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-5a3fc63c72a7a2f3ca2b",
+      "url": "https://www.nps.gov/subjects/travelamanacolonies/index.htm",
+      "title": "ev-r2-l1-amana",
+      "published_date": "2018-01-04",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-amana",
+      "archive_sha256": "9d836424c03e589bbbdc28d08b0da7fb50bcf07e6816f5c6888bab05668cbaa2",
+      "archive_path": "data/sources/r2-l1-amana.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-0ccc287eb7b998562076",
+      "url": "https://www.supremecourt.gov/opinions/20pdf/20-7028_o758.pdf",
+      "title": "ev-r2-l1-mast",
+      "published_date": "2021-07-02",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-mast",
+      "archive_sha256": "96d64c51cd8e15fc22d2662008fe6c3ad7fd2db79457cf825c09eae1700d2402",
+      "archive_path": "data/sources/r2-l1-mast.pdf",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-9352d66848e914659e5325bc",
+      "url": "https://apnews.com/article/amish-septic-tanks-court-minnesota-ad2fdc9d51a12a3292e6c9a740f57f6e",
+      "resolved_url": "https://apnews.com/article/amish-septic-tanks-court-minnesota-ad2fdc9d51a12a3292e6c9a740f57f6e",
+      "title": "Religious freedom vs. 'gray water.' AP explains ruling favoring Amish families who shun septic tanks | AP News",
+      "published_date": "2023-07-13",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:00.705181+00:00",
+      "archive_sha256": "54ddc265c7a8146dbafb11f0f667bd5a43b561acd3926ab7132408aea5994e1b",
+      "archive_path": "jobs/4e78e1ab9f17a2496bef3786/54ddc265c7a8146dbafb11f0f667bd5a43b561acd3926ab7132408aea5994e1b.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-f15e2c282a19538ba424e668",
+      "url": "https://journals.law.umn.edu/mjlst/2021/12/22/holy-crap-the-first-amendment-septic-systems-and-the-strict-scrutiny-standard-in-land-use-law",
+      "resolved_url": "https://journals.law.umn.edu/mjlst/2021/12/22/holy-crap-the-first-amendment-septic-systems-and-the-strict-scrutiny-standard-in-land-use-law",
+      "title": "Holy Crap: The First Amendment, Septic Systems, and the Strict Scrutiny Standard in Land Use Law | Law Journals",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:00.705337+00:00",
+      "archive_sha256": "04788616c7696e2e05a3815b74954405953191400543ddee77c13b720afcc06e",
+      "archive_path": "jobs/4e78e1ab9f17a2496bef3786/04788616c7696e2e05a3815b74954405953191400543ddee77c13b720afcc06e.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-10c38d801c7ac4fdee77e6ef",
+      "url": "https://amishamerica.com/iowa-amish/",
+      "resolved_url": "https://amishamerica.com/iowa-amish/",
+      "title": "The Amish in Iowa: 2026 Guide (29 Communities) - Amish America",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:00.705472+00:00",
+      "archive_sha256": "820555cfcafa72ac498dbd1db59f1052c8cc73d27df9ec342d04840c132b3bde",
+      "archive_path": "jobs/4e78e1ab9f17a2496bef3786/820555cfcafa72ac498dbd1db59f1052c8cc73d27df9ec342d04840c132b3bde.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ad1900d93509b461d489e486",
+      "url": "https://www.postbulletin.com/newsmd/judge-amish-not-exempt-from-sewage-treatment-rules",
+      "resolved_url": "https://www.postbulletin.com/newsmd/judge-amish-not-exempt-from-sewage-treatment-rules",
+      "title": "Judge: Amish not exempt from sewage treatment rules - Post Bulletin | Rochester Minnesota news, weather, sports",
+      "published_date": "2019-04-27",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:10.293455+00:00",
+      "archive_sha256": "8b59225d8252aaa8025b6f8e758b153c3bf5a7940dfa76f76f3e7c72e02a5e43",
+      "archive_path": "jobs/4e78e1ab9f17a2496bef3786/8b59225d8252aaa8025b6f8e758b153c3bf5a7940dfa76f76f3e7c72e02a5e43.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "Amish community lawsuit government forced modern septic system Minnesota Fillmore County Mast Supreme Court costs",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Amish Kalona Iowa government modernization regulation compliance no litigation acceptance",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Amish religious exemption septic system litigation government cost Fillmore County Minnesota Mast v. City of Fillmore ruling 2023",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Kalona Iowa Amish modern technology adoption compliance no litigation government regulation",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "需找到能对应原文所称“亚美尼亚人”（研究范围所指Kalona一带Amish/Mennonite社区）的政府强制现代化实例，并分别确认该强制条件是否发生、是否导致政府压力增加；现有明尼苏达Swartzentruber Amish污水案不能替代该对象与条件。",
+  "source_statuses": [
+    {
+      "url": "https://apnews.com/article/amish-septic-tanks-court-minnesota-ad2fdc9d51a12a3292e6c9a740f57f6e",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://journals.law.umn.edu/mjlst/2021/12/22/holy-crap-the-first-amendment-septic-systems-and-the-strict-scrutiny-standard-in-land-use-law",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://amishamerica.com/iowa-amish/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.postbulletin.com/newsmd/judge-amish-not-exempt-from-sewage-treatment-rules",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 9,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "82c05e2ae33a39ab3a5a42bef3f1fcdf23ecaa9065e11535845c9b098f11ac33"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "fbefad0b0bd2d4c48fb44aff0dc3bb13",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "34801e85b7768119474d9589953754ca",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "df5d3d79af7873ab71f9c8975f10d77f15f3f7fc8b47d37f99cf670768d2faca"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "25a6537456c0f216e9eeed3532218f1a",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "a4582faa12176eae13bba1401dab7c0315388c543f4a38f2f26094644c367002"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "6a697bbad6442612abec9a2fff77ad05",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "6d2ad08a9c6421f39350cec4fd65f9e4",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "c7ed4fb558c5086bada5ebd6ad8474e1775ee7efd8241c0076126b303e07d2d9"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "30e55435a1bb5513d88f3093de84a94f",
+      "cost_estimate_USD": 0.001,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "84039d96196508305310c43e2252bd76d0459bcde8d7f3631826aef2698cf2a7"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "4debc7a41d841b8efb101dfa7ef8dcb6e15b289121047edd5896faa3f8ce60ec",
+      "validation_error": "semantic_review_quote_not_in_supplied_text"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "ad05c428feccd306021a17e191192a059a7feea5f431f1e06af20164a5657e6f"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "9d3c8c8fa8a0c688d238f26599e15759337e03bcf9ed0808eea524b0e3803308"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "8472e0571818379abaa4a7f22d480797cdf52b998fc65719ee6af9fac6a451df"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "4debc7a41d841b8efb101dfa7ef8dcb6e15b289121047edd5896faa3f8ce60ec",
+      "validation_error": "semantic_review_quote_not_in_supplied_text"
+    }
+  ],
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000017953-000017982",
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "原文对象是作者所称“亚美尼亚人”，研究范围将其高可信地解释为爱荷华Kalona一带Amish/Mennonite社区，但所引Mast案对象是明尼苏达Fillmore县Swartzentruber Amish，并非Kalona社区，也没有证据表明二者属于同一群体。用另一地点的Amish案例不能直接验证原文特定对象。",
+          "source_quote": "象亚美尼亚人这类的例子，在美国很多。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "condition_logic",
+          "reason": "原文是假设条件“如果政府强迫亚美尼亚人接受现代化”，建议把明尼苏达一个Amish社区被要求安装污水系统当作该条件已满足（condition_state=satisfied），但该案例既非原文所称群体，也不代表“政府强迫亚美尼亚人接受现代化”这一条件已发生。条件是否触发仍不确定。",
+          "source_quote": "如果政府强迫亚美尼亚人接受现代化，那它只会给自己增加压力。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议判“部分符合”并设trend_aligned=true，但其理由主要是单一社区、单一政策领域的诉讼与政策反复，且自认不能代表原文群体或所有现代化强制领域。原文后果是“增加政府压力”，建议未说明该后果哪些具体部分已实现、哪些未实现；在对象和条件均未对应的情况下，不能据此判部分符合。",
+          "source_quote": "但这是单一社区、单一政策领域，且原文条件为假设性“如果政府强迫”，并非已全面发生的普遍强制，故只判部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需找到能对应原文所称“亚美尼亚人”（研究范围所指Kalona一带Amish/Mennonite社区）的政府强制现代化实例，并分别确认该强制条件是否发生、是否导致政府压力增加；现有明尼苏达Swartzentruber Amish污水案不能替代该对象与条件。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000017953-000017982",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000017953-000017982",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象按研究范围保留为原文所称“亚美尼亚人”（高可信指爱荷华Kalona一带Amish/Mennonite社区，但原词保留）；条件为政府强制该类社区接受现代化（以现代污水/卫生系统为主要可观察口径）；观察1991年后至cutoff前联邦/州/地方强制技术改造引发的诉讼、抵抗、政策让步等“增加政府压力”的证据。",
+      "reason": "Mast案显示明尼苏达Fillmore县要求Amish家庭安装现代污水系统，引发多年诉讼，州法院一度支持强制、最高法院撤销并发回，2023年州上诉法院又判Amish可不安 septic，政府执法遭遇持续法律阻力与成本，方向符合“强制增加政府压力”。但这是单一社区、单一政策领域，且原文条件为假设性“如果政府强迫”，并非已全面发生的普遍强制，故只判部分符合。",
+      "limitation": "证据集中于明尼苏达Swartzentruber Amish的污水系统争议，不能代表原文所称“亚美尼亚人”全群体或所有现代化强制领域；原文为条件性判断，条件是否普遍发生无法确认；未量化政府净成本，仅见诉讼与政策反复。",
+      "evidence_ids": [
+        "prior-0ccc287eb7b998562076",
+        "ev-9352d66848e914659e5325bc",
+        "ev-f15e2c282a19538ba424e668",
+        "ev-ad1900d93509b461d489e486"
+      ],
+      "method": "从文化认同冲突推断强制政策成本",
+      "method_basis": "inferred",
+      "observation_end": "2023-07-13",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-0ccc287eb7b998562076",
+          "relation": "support",
+          "quote": "Mast案记录明尼苏达Fillmore县要求23个Amish家庭安装现代污水系统；产生诉讼，最高法院撤销下级判决并发回重审。",
+          "publication_date": "2021-07-02",
+          "observation_end": "2021-07-02",
+          "limitation": "仅为个案摘要，未量化政府成本，且对象是Amish而非原文“亚美尼亚人”原词。"
+        },
+        {
+          "evidence_id": "ev-9352d66848e914659e5325bc",
+          "relation": "support",
+          "quote": "A state appeals court says members of a deeply conservative Amish community in Minnesota don’t need to install septic systems to dispose of their “gray water.”",
+          "publication_date": "2023-07-13",
+          "observation_end": "2023-07-13",
+          "limitation": "报道为节选，未提供完整判决理由与成本数据；仅涉及明尼苏达一社区。"
+        },
+        {
+          "evidence_id": "ev-f15e2c282a19538ba424e668",
+          "relation": "support",
+          "quote": "The MPCA instead demanded the installation of the modern system under threat of criminal penalty, civil fines, and eviction from their farms.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "法律评论文章，日期仅见页面标注2021-12-22但published_date为null；描述的是Mast案事实，非普遍统计。"
+        },
+        {
+          "evidence_id": "ev-ad1900d93509b461d489e486",
+          "relation": "boundary",
+          "quote": "Judge Joseph Chase ruled Monday that four members of the Amish community in Fillmore County were not exempt from the county’s and the Minnesota Pollution Control Agency’s requirement that rural residences have subsurface sewage systems",
+          "publication_date": "2019-04-27",
+          "observation_end": "2019-04-27",
+          "limitation": "该判决支持强制，说明政府并非总是让步，构成对“强制必增压力”的反向边界；但随后被最高法院撤销，显示争议持续。"
+        }
+      ],
+      "remaining_gap": "缺少对原文所称“亚美尼亚人”群体在1991年后各现代化强制领域（不止污水系统）的系统性政府成本/抵抗统计，无法确认条件普遍发生及净成本方向。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000017953-000017982",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "attribution",
+      "scope": "对象按研究范围保留为原文所称“亚美尼亚人”（高可信指爱荷华Kalona一带Amish/Mennonite社区，但原词保留）；条件为政府强迫该群体接受现代化（以现代污水/卫生系统为主要可观察口径）；观察1991年后至cutoff前该对象遭遇强制技术改造时是否出现诉讼、抵抗、政策让步等“增加政府压力”的证据。",
+      "reason": "原文对象是作者所称“亚美尼亚人”，研究范围虽高可信指向Kalona一带Amish/Mennonite社区，但所引Mast案对象是明尼苏达Fillmore县Swartzentruber Amish，无证据表明二者属于同一群体，不能替代原文特定对象。原文条件“如果政府强迫亚美尼亚人接受现代化”是否在该对象上发生亦无证据，故无法评估后果“增加政府压力”。",
+      "limitation": "关键修订：原判部分符合并设trend_aligned=true，但对象（Kalona社区）与条件（对该群体的强制现代化）均未对应，明尼苏达个案不能替代；现有材料仅显示另一地点Amish的污水诉讼，不能据此推断原文群体或普遍趋势。",
+      "evidence_ids": [
+        "prior-0ccc287eb7b998562076",
+        "ev-9352d66848e914659e5325bc",
+        "ev-f15e2c282a19538ba424e668",
+        "ev-ad1900d93509b461d489e486"
+      ],
+      "method": "从文化认同冲突推断强制政策成本",
+      "method_basis": "inferred",
+      "observation_end": null,
+      "future_time_text": "",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-0ccc287eb7b998562076",
+          "relation": "boundary",
+          "quote": "Mast案记录明尼苏达Fillmore县要求23个Amish家庭安装现代污水系统；产生诉讼，最高法院撤销下级判决并发回重审。",
+          "publication_date": "2021-07-02",
+          "observation_end": "2021-07-02",
+          "limitation": "对象为明尼苏达Swartzentruber Amish，非研究范围所指Kalona社区，不能直接验证原文特定对象；仅为个案摘要，未量化政府成本。"
+        },
+        {
+          "evidence_id": "ev-9352d66848e914659e5325bc",
+          "relation": "boundary",
+          "quote": "A state appeals court says members of a deeply conservative Amish community in Minnesota don’t need to install septic systems to dispose of their “gray water.”",
+          "publication_date": "2023-07-13",
+          "observation_end": "2023-07-13",
+          "limitation": "报道为节选，仅涉及明尼苏达一社区，非原文所称群体；未提供完整判决理由与成本数据。"
+        },
+        {
+          "evidence_id": "ev-f15e2c282a19538ba424e668",
+          "relation": "boundary",
+          "quote": "The MPCA instead demanded the installation of the modern system under threat of criminal penalty, civil fines, and eviction from their farms.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "法律评论文章，published_date为null；描述Mast案事实，对象为明尼苏达Amish，非Kalona社区，且非普遍统计。"
+        },
+        {
+          "evidence_id": "ev-ad1900d93509b461d489e486",
+          "relation": "boundary",
+          "quote": "Judge Joseph Chase ruled Monday that four members of the Amish community in Fillmore County were not exempt from the county’s and the Minnesota Pollution Control Agency’s requirement that rural residences have subsurface sewage systems",
+          "publication_date": "2019-04-27",
+          "observation_end": "2019-04-27",
+          "limitation": "该判决支持强制，说明政府并非总让步，构成反向边界；但对象为Fillmore县Amish，非原文群体，且随后被最高法院撤销。"
+        }
+      ],
+      "remaining_gap": "需找到能对应原文所称“亚美尼亚人”（研究范围所指Kalona一带Amish/Mennonite社区）的政府强制现代化实例，并分别确认该强制条件是否发生、是否导致政府压力增加；现有明尼苏达Swartzentruber Amish污水案不能替代该对象与条件。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象：王沪宁《美国反对美国》中被称为“亚美尼亚人”的群体（据上下文与既有材料，高可信指爱荷华Kalona一带Amish/Mennonite社区，但原词保留）；条件：政府强迫该群体接受现代化（如现代污水系统、技术设施）；可观察口径：1991年后美国联邦/州/地方政府对该类社区实施强制技术改造时，是否出现诉讼、行政成本、社区抵抗或政策让步等“增加政府压力”的证据；反证：若强制政策顺利实施且政府净成本低、社区接受度高，则削弱原判断。",
+  "elapsed_seconds": 50.721,
+  "completed_at": "2026-11-09T08:12:39.744392+00:00"
+}

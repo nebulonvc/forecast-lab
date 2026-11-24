@@ -1,0 +1,939 @@
+{
+  "claim_id": "txt-1c4066fc0c-000049004-000049051",
+  "version": "search-verifier-v2",
+  "input_sha256": "b11eeee7e3d3dbe6f385eeb419afda414797be17c1d7567f3db8d5a1afafd292",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000049004-000049051",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "原文条件为“美国转向小政府”，后果为“整个社会供血不足”。可观察代理：联邦总支出及占GDP比重下降（小政府财政代理）与同期跨部门公共服务供给减少或延迟（供血不足代理）。观察2012-2013财年联邦支出与2013财年自动削减后的公共服务。",
+    "reason": "2013财年联邦总支出由35380亿降至34540亿美元、占GDP由22.0%降至20.8%，方向与“小政府”财政代理一致；GAO亦记录教育、住房、营养援助及科研拨款减少或延迟。但支出下降主要源于跨机构自动削减、失业改善、阿富汗撤军等，并非美国主动转向小政府的制度转型，条件是否真正触发未被证明；且“整个社会供血不足”这一主要后果仅有部分联邦项目收缩证据，且被地方资金与效率调整缓冲，不能据此认定主要后果已实现。",
+    "limitation": "仅以2013财年自动削减作为阶段代理，不等同完整制度转型或“整个社会”全面不足；GAO指出许多影响难以量化或被其他因素抵消，因果机制未获证明。修订要点：原判部分符合并设trend_aligned=true，但条件A（转向小政府）未真正触发、后果B（整个社会供血不足）整体未被证据覆盖，故改为暂无法判断。",
+    "evidence_ids": [
+      "prior-020ab057f7af85477035",
+      "prior-3bb1bb8466892281e484",
+      "ev-277488b99cb8a143d3ebbc38",
+      "ev-dccf05d21248fc6d0d3d5799",
+      "ev-c149690ff2e53ea6eafcc02d"
+    ],
+    "method": "由社会全面协调需要与政府功能缩减比较推断供给不足",
+    "method_basis": "inferred",
+    "observation_end": "2014-05-30",
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-020ab057f7af85477035",
+        "relation": "boundary",
+        "quote": "总支出2012为35380亿美元、2013为34540亿美元，下降840亿约2%；支出占GDP由22.0%降至20.8%。",
+        "publication_date": "2013-10-30",
+        "observation_end": "2013-09-30",
+        "limitation": "仅为2013财年财政决算，下降主要源于自动削减、失业改善、阿富汗撤军等，不能代表主动制度转型或长期小政府。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-3bb1bb8466892281e484",
+        "relation": "support",
+        "quote": "GAO记录2013预算自动削减后部分公共服务减少或延迟：租房援助少约41000户；部分机场等待增长，部分学校资源减少。",
+        "publication_date": "2014-05-28",
+        "observation_end": "2013-09-30",
+        "limitation": "同时指出地方资金、效率和调整缓冲了一些影响，仅覆盖部分联邦项目。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-277488b99cb8a143d3ebbc38",
+        "relation": "support",
+        "quote": "Fiscal year 2013 sequestration reduced or delayed some public services and disrupted some operations in the 23 federal agencies GAO reviewed",
+        "publication_date": "2014-03-06",
+        "observation_end": "2013-09-30",
+        "limitation": "许多影响无法量化或需未来年份才可知，且国会与机构行动缓解了部分影响；仅覆盖23个联邦机构的部分项目。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-dccf05d21248fc6d0d3d5799",
+        "relation": "support",
+        "quote": "Sequestration reduced assistance for education, housing, and nutrition, as well as grants for health and science research and development",
+        "publication_date": "2014-05-30",
+        "observation_end": "2013-09-30",
+        "limitation": "二手转述GAO报告，且部分项目通过其他资金来源继续服务。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-c149690ff2e53ea6eafcc02d",
+        "relation": "support",
+        "quote": "Mandatory across-the-board cuts to agency budgets in fiscal 2013, though uncertain for much of the year, reduced or delayed operations, benefit payments, grants and long-term program investment",
+        "publication_date": "2014-03-07",
+        "observation_end": "2013-09-30",
+        "limitation": "GAO警告许多影响可能数年后才可知，且受助方可用其他资金暂时抵消。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺少能对应“美国主动转向小政府”这一制度转型（而非仅2013财年自动削减）的证据，以及覆盖“整个社会供血不足”的系统性指标或分项证据；现有材料只能支持部分联邦项目服务减少或延迟，不能支持主要后果B已实现。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000049004-000049051",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以联邦总支出及占GDP比重实际下降作为“小政府”的财政代理，并核查同期跨部门公共服务是否出现供给减少或延迟；观察2012-2013财年联邦支出与2013财年自动削减后的公共服务供给。",
+    "reason": "2013财年联邦总支出由35380亿降至34540亿美元、占GDP由22.0%降至20.8%，符合“转向小政府”的财政代理方向；同期GAO记录教育、住房、营养援助及科研拨款减少或延迟，部分公共服务出现供给收缩，与“供血不足”方向一致。但原文“整个社会供血不足”为强断言，现有证据仅覆盖部分联邦项目且部分影响被地方资金与效率调整缓冲，故为部分符合。",
+    "limitation": "仅以2013财年自动削减作为阶段代理，不等同完整制度转型或“整个社会”全面不足；GAO亦指出许多影响难以量化或被其他因素抵消，因果机制未获证明。",
+    "evidence_ids": [
+      "prior-020ab057f7af85477035",
+      "prior-3bb1bb8466892281e484",
+      "ev-277488b99cb8a143d3ebbc38",
+      "ev-dccf05d21248fc6d0d3d5799",
+      "ev-c149690ff2e53ea6eafcc02d"
+    ],
+    "method": "由社会全面协调需要与政府功能缩减比较推断供给不足",
+    "method_basis": "inferred",
+    "observation_end": "2014-05-30",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-020ab057f7af85477035",
+        "relation": "support",
+        "quote": "总支出2012为35380亿美元、2013为34540亿美元，下降840亿约2%；支出占GDP由22.0%降至20.8%。",
+        "publication_date": "2013-10-30",
+        "observation_end": "2013-09-30",
+        "limitation": "仅为2013财年财政决算，不能代表长期制度转型。"
+      },
+      {
+        "evidence_id": "prior-3bb1bb8466892281e484",
+        "relation": "support",
+        "quote": "GAO记录2013预算自动削减后部分公共服务减少或延迟：租房援助少约41000户；部分机场等待增长，部分学校资源减少。",
+        "publication_date": "2014-05-28",
+        "observation_end": "2013-09-30",
+        "limitation": "同时指出地方资金、效率和调整缓冲了一些影响。"
+      },
+      {
+        "evidence_id": "ev-277488b99cb8a143d3ebbc38",
+        "relation": "support",
+        "quote": "Fiscal year 2013 sequestration reduced or delayed some public services and disrupted some operations in the 23 federal agencies GAO reviewed",
+        "publication_date": "2014-03-06",
+        "observation_end": "2013-09-30",
+        "limitation": "许多影响无法量化或需未来年份才可知，且国会与机构行动缓解了部分影响。"
+      },
+      {
+        "evidence_id": "ev-dccf05d21248fc6d0d3d5799",
+        "relation": "support",
+        "quote": "Sequestration reduced assistance for education, housing, and nutrition, as well as grants for health and science research and development",
+        "publication_date": "2014-05-30",
+        "observation_end": "2013-09-30",
+        "limitation": "报道为二手转述GAO报告，且部分项目通过其他资金来源继续服务。"
+      },
+      {
+        "evidence_id": "ev-c149690ff2e53ea6eafcc02d",
+        "relation": "support",
+        "quote": "Mandatory across-the-board cuts to agency budgets in fiscal 2013, though uncertain for much of the year, reduced or delayed operations, benefit payments, grants and long-term program investment",
+        "publication_date": "2014-03-07",
+        "observation_end": "2013-09-30",
+        "limitation": "GAO警告许多影响可能数年后才可知，且受助方可用其他资金暂时抵消。"
+      }
+    ],
+    "remaining_gap": "缺少覆盖“整个社会”全面供血不足的系统性指标，且2013年后联邦支出是否持续下降未纳入；现有证据仅支持2013财年阶段的部分公共服务收缩。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-020ab057f7af85477035",
+      "url": "https://home.treasury.gov/news/press-releases/jl2197",
+      "title": "ev-r2-l1-treasury2013",
+      "published_date": "2013-10-30",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2013-10-30",
+        "latest": "2013-10-30"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-treasury2013",
+      "archive_sha256": "ae3c215962111d56c839ceb4c0ca99b6b3cd6869c822e939588dc8d8736246aa",
+      "archive_path": "data/sources/r2-l1-treasury2013.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-3bb1bb8466892281e484",
+      "url": "https://www.gao.gov/products/gao-14-452",
+      "title": "ev-r2-l1-sequester",
+      "published_date": "2014-05-28",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2014-05-28",
+        "latest": "2014-05-28"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-sequester",
+      "archive_sha256": "113cebeb077184b662b2762532609a0b96b6ed8727cff3309742f44ba9e5f8bb",
+      "archive_path": "data/sources/r2-l1-open-2.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-277488b99cb8a143d3ebbc38",
+      "url": "https://www.gao.gov/products/gao-14-244",
+      "resolved_url": "https://www.gao.gov/products/gao-14-244",
+      "title": "2013 Sequestration: Agencies Reduced Some Services and Investments, While Taking Certain Actions to Mitigate Effects | U.S. GAO",
+      "published_date": "2014-03-06",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2014-03-06",
+        "latest": "2014-03-06"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:42.176970+00:00",
+      "archive_sha256": "72ad7cc0c4e21a2be8d1232925f52d22de6beae1749eab1869b188558f366cad",
+      "archive_path": "jobs/7a2bad7a0449edeb82f0e0d8/72ad7cc0c4e21a2be8d1232925f52d22de6beae1749eab1869b188558f366cad.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-dccf05d21248fc6d0d3d5799",
+      "url": "https://federalnewsnetwork.com/budget/2014/05/sequestration-forced-agencies-elsewhere-for-program-funding-gao-says/",
+      "resolved_url": "https://federalnewsnetwork.com/budget/2014/05/sequestration-forced-agencies-elsewhere-for-program-funding-gao-says/",
+      "title": "Sequestration forced agencies elsewhere for program funding, GAO says - Federal News Network",
+      "published_date": "2014-05-30",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2014-05-30",
+        "latest": "2014-05-30"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:42.177102+00:00",
+      "archive_sha256": "9bfb6298baaf805e564e6b27e1d8f8c089b527d0cf6bc31c1eaca8e5cf0ff091",
+      "archive_path": "jobs/7a2bad7a0449edeb82f0e0d8/9bfb6298baaf805e564e6b27e1d8f8c089b527d0cf6bc31c1eaca8e5cf0ff091.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-04d78152d4b7604e6cdb462c",
+      "url": "https://www.gao.gov/products/gao-16-263",
+      "resolved_url": "https://www.gao.gov/products/gao-16-263",
+      "title": "2014 Sequestration: Opportunities Exist to Improve Transparency of Progress Toward Deficit Reduction Goals | U.S. GAO",
+      "published_date": "2016-04-14",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2016-04-14",
+        "latest": "2016-04-14"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:42.177194+00:00",
+      "archive_sha256": "fb1dfff4091a809872e46db5fc0d3235937fde1dfb290439026294b10f4dcda2",
+      "archive_path": "jobs/7a2bad7a0449edeb82f0e0d8/fb1dfff4091a809872e46db5fc0d3235937fde1dfb290439026294b10f4dcda2.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c149690ff2e53ea6eafcc02d",
+      "url": "https://www.govexec.com/management/2014/03/agencies-detail-how-sequestration-disrupted-government-2013/80110/",
+      "resolved_url": "https://www.govexec.com/management/2014/03/agencies-detail-how-sequestration-disrupted-government-2013/80110/",
+      "title": "Agencies Detail How Sequestration Disrupted Government in 2013 - Government Executive",
+      "published_date": "2014-03-07",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2014-03-07",
+        "latest": "2014-03-07"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:50.711765+00:00",
+      "archive_sha256": "3a4ef0682ce014219ef853b4f8e7f03e4f86b589dfda99d84c51d02038095dbf",
+      "archive_path": "jobs/7a2bad7a0449edeb82f0e0d8/3a4ef0682ce014219ef853b4f8e7f03e4f86b589dfda99d84c51d02038095dbf.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e7894f27c83f88c123afee08",
+      "url": "https://www.gao.gov/assets/680/676751.pdf",
+      "resolved_url": "https://www.gao.gov/assets/680/676751.pdf",
+      "title": "GAO-16-263, Accessible Version, 2015 Sequestration: Opportunities Exist to Improve Transparency of Progress Toward Deficit Reduction Goals",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:50.711888+00:00",
+      "archive_sha256": "70ebae7d00c60537f5c01369de54147f18131834f39686343b218ec2e27bd4c4",
+      "archive_path": "jobs/7a2bad7a0449edeb82f0e0d8/70ebae7d00c60537f5c01369de54147f18131834f39686343b218ec2e27bd4c4.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-72cb4a05cdffca7c69410bb8",
+      "url": "https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/legislative_reports/sequestration/sequestration_final_january_2015_president.pdf",
+      "resolved_url": "https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/legislative_reports/sequestration/sequestration_final_january_2015_president.pdf",
+      "title": "OMB Final Sequestration Report to the President and Congress for Fiscal Year 2015",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:50.711989+00:00",
+      "archive_sha256": "e5d0eebfc9882e97653283af1dc58c6ea052883d35f4b4f31475d5a629e3e92d",
+      "archive_path": "jobs/7a2bad7a0449edeb82f0e0d8/e5d0eebfc9882e97653283af1dc58c6ea052883d35f4b4f31475d5a629e3e92d.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "GAO 2013 sequester effects public services reduced housing assistance airports schools report",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "US federal spending increased after 2013 services maintained local funds offset sequester GAO",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "GAO 2013 sequestration reduced assistance education housing nutrition services report gao-14-244",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "federal spending 2014 2015 increased above pre-sequester levels services restored GAO sequestration effects mitigated",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少能对应“美国主动转向小政府”这一制度转型（而非仅2013财年自动削减）的证据，以及覆盖“整个社会供血不足”的系统性指标或分项证据；现有材料只能支持部分联邦项目服务减少或延迟，不能支持主要后果B已实现。",
+  "source_statuses": [
+    {
+      "url": "https://www.gao.gov/products/gao-14-244",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://federalnewsnetwork.com/budget/2014/05/sequestration-forced-agencies-elsewhere-for-program-funding-gao-says/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.gao.gov/products/gao-16-263",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.govexec.com/management/2014/03/agencies-detail-how-sequestration-disrupted-government-2013/80110/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.gao.gov/assets/680/676751.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://obamawhitehouse.archives.gov/sites/default/files/omb/assets/legislative_reports/sequestration/sequestration_final_january_2015_president.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "ac9303c4eef6610680cf9071a984b4694abd708a3038c31a98a2609d6a970c2e"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "cef51334ba431419242c2ca133ce1d5b",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "20cedbc42db017c0ecb4ebc36dae6559",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "09d5169f8b58d8858bcc45cf0108c0e72046987192ee97a843b3435c5b9af61e"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "43f1c446614c8f79d71141eb8bcd507b",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "6ff9563ec93a5ec3fd87eb3abdacc2fb039e027d52a399e1c2f1a7c67b9a3c0c"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "751460f09967d151bdc52ea39fd5d176",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b62cdef2de7ef78d8181cbd3cf459921",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "792c5738ebb446d693b15025df7ac211c87dc19072fa75be69c0ba91b0aef983"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "cf7deb00b19d1efc1f487cc369f5078e",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "358bd6e9a1cb6a9fc0f57adb7af71b32addc14d5e86a881c08ea28eca7739b19"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "77cbbc787c37caaa038e4087c91de0e4ce9bd7c117103d02018011cde55f62e7"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "4b0bf477a26b704e0d8b2c5d3a3317547e7c0ce924808d655de92753cc868fa6"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "7407031a03a265bd285965801a6440081a09fdeeb15e5db9f7d1bcf99bbe9b44"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-020ab057f7af85477035",
+        "source_bytes": 254,
+        "shown_bytes": 254,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3bb1bb8466892281e484",
+        "source_bytes": 210,
+        "shown_bytes": 210,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-277488b99cb8a143d3ebbc38",
+        "source_bytes": 7790,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-dccf05d21248fc6d0d3d5799",
+        "source_bytes": 5033,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-04d78152d4b7604e6cdb462c",
+        "source_bytes": 6961,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c149690ff2e53ea6eafcc02d",
+        "source_bytes": 5298,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e7894f27c83f88c123afee08",
+        "source_bytes": 12041,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-72cb4a05cdffca7c69410bb8",
+        "source_bytes": 14690,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-020ab057f7af85477035",
+        "source_bytes": 254,
+        "shown_bytes": 254,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3bb1bb8466892281e484",
+        "source_bytes": 210,
+        "shown_bytes": 210,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-277488b99cb8a143d3ebbc38",
+        "source_bytes": 7790,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-dccf05d21248fc6d0d3d5799",
+        "source_bytes": 5033,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-04d78152d4b7604e6cdb462c",
+        "source_bytes": 6961,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c149690ff2e53ea6eafcc02d",
+        "source_bytes": 5298,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e7894f27c83f88c123afee08",
+        "source_bytes": 12041,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-72cb4a05cdffca7c69410bb8",
+        "source_bytes": 14690,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-020ab057f7af85477035",
+        "source_bytes": 254,
+        "shown_bytes": 254,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3bb1bb8466892281e484",
+        "source_bytes": 210,
+        "shown_bytes": 210,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-277488b99cb8a143d3ebbc38",
+        "source_bytes": 7790,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-dccf05d21248fc6d0d3d5799",
+        "source_bytes": 5033,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-04d78152d4b7604e6cdb462c",
+        "source_bytes": 6961,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c149690ff2e53ea6eafcc02d",
+        "source_bytes": 5298,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e7894f27c83f88c123afee08",
+        "source_bytes": 12041,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-72cb4a05cdffca7c69410bb8",
+        "source_bytes": 14690,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-020ab057f7af85477035",
+        "source_bytes": 254,
+        "shown_bytes": 254,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3bb1bb8466892281e484",
+        "source_bytes": 210,
+        "shown_bytes": 210,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-277488b99cb8a143d3ebbc38",
+        "source_bytes": 7790,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-dccf05d21248fc6d0d3d5799",
+        "source_bytes": 5033,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-04d78152d4b7604e6cdb462c",
+        "source_bytes": 6961,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c149690ff2e53ea6eafcc02d",
+        "source_bytes": 5298,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e7894f27c83f88c123afee08",
+        "source_bytes": 12041,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-72cb4a05cdffca7c69410bb8",
+        "source_bytes": 14690,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000049004-000049051",
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "原文对象是“美国社会”整体因转向小政府而出现的“整个社会的供血不足”，而所引证据只覆盖2013财年自动削减（sequestration）下23个联邦机构的部分项目服务收缩。自动削减是预算封存机制，并非原文所说的“美国转向小政府”这一制度转型；证据对象与原文特定集合不对应，不能把部分联邦项目收缩当作“整个社会供血不足”的成员证据。",
+          "quote_ref": "q1",
+          "source_quote": "想要小政府，但对美国社会来说，小政府肯定会造成整个社会的供血不足。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "book"
+        },
+        {
+          "check": "condition_logic",
+          "reason": "原文真实条件是“美国想要小政府/转向小政府”，后果是“整个社会的供血不足”。建议把“联邦总支出及占GDP比重实际下降”当作“小政府”的财政代理，但2013年支出下降主要来自跨机构自动削减、失业改善、阿富汗撤军及住房机构分红等，并非美国主动转向小政府的制度转型；条件是否真正触发未被证明，不能直接记为condition_state=satisfied。",
+          "quote_ref": "q4",
+          "source_quote": "总支出2012为35380亿美元、2013为34540亿美元，下降840亿约2%；支出占GDP由22.0%降至20.8%。",
+          "evidence_id": "prior-020ab057f7af85477035",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "所引GAO材料明确说许多影响无法量化或需未来年份才可知，且国会与机构行动、地方资金和其他资金来源缓解了部分影响。这些材料支持“部分联邦公共服务减少或延迟”，但不支持“整个社会供血不足”这一主要结果；把部分项目收缩当作主要结果已实现，属于证据范围不足。",
+          "quote_ref": "q6",
+          "source_quote": "Fiscal year 2013 sequestration reduced or delayed some public services and disrupted some operations in the 23 federal agencies GAO reviewed",
+          "evidence_id": "ev-277488b99cb8a143d3ebbc38",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议一方面承认原文“整个社会供血不足”是强断言、现有证据仅覆盖部分联邦项目且被地方资金与效率调整缓冲，另一方面仍判“部分符合”并设trend_aligned=true。按口径，判部分符合必须指出后果B哪些具体部分实现、哪些未实现及其直接证据；这里后果B（整个社会供血不足）整体未被证据覆盖，只有前提A的财政代理和若干项目收缩，不能据此把强断言降为部分符合。应保留为暂无法判断，或明确限定为仅对“部分联邦公共服务收缩”这一窄口径作判断。",
+          "quote_ref": "q3",
+          "source_quote": "2013财年联邦总支出由35380亿降至34540亿美元、占GDP由22.",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需要能对应“美国转向小政府”这一制度转型（而非仅2013财年自动削减）的证据，以及覆盖“整个社会供血不足”的系统性指标或分项证据；现有材料只能支持部分联邦项目服务减少或延迟，不能支持主要后果B已实现，故应修正为暂无法判断或明确窄口径。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000049004-000049051",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000049004-000049051",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以联邦总支出及占GDP比重实际下降作为“小政府”的财政代理，并核查同期跨部门公共服务是否出现供给减少或延迟；观察2012-2013财年联邦支出与2013财年自动削减后的公共服务供给。",
+      "reason": "2013财年联邦总支出由35380亿降至34540亿美元、占GDP由22.0%降至20.8%，符合“转向小政府”的财政代理方向；同期GAO记录教育、住房、营养援助及科研拨款减少或延迟，部分公共服务出现供给收缩，与“供血不足”方向一致。但原文“整个社会供血不足”为强断言，现有证据仅覆盖部分联邦项目且部分影响被地方资金与效率调整缓冲，故为部分符合。",
+      "limitation": "仅以2013财年自动削减作为阶段代理，不等同完整制度转型或“整个社会”全面不足；GAO亦指出许多影响难以量化或被其他因素抵消，因果机制未获证明。",
+      "evidence_ids": [
+        "prior-020ab057f7af85477035",
+        "prior-3bb1bb8466892281e484",
+        "ev-277488b99cb8a143d3ebbc38",
+        "ev-dccf05d21248fc6d0d3d5799",
+        "ev-c149690ff2e53ea6eafcc02d"
+      ],
+      "method": "由社会全面协调需要与政府功能缩减比较推断供给不足",
+      "method_basis": "inferred",
+      "observation_end": "2014-05-30",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-020ab057f7af85477035",
+          "relation": "support",
+          "quote": "总支出2012为35380亿美元、2013为34540亿美元，下降840亿约2%；支出占GDP由22.0%降至20.8%。",
+          "publication_date": "2013-10-30",
+          "observation_end": "2013-09-30",
+          "limitation": "仅为2013财年财政决算，不能代表长期制度转型。"
+        },
+        {
+          "evidence_id": "prior-3bb1bb8466892281e484",
+          "relation": "support",
+          "quote": "GAO记录2013预算自动削减后部分公共服务减少或延迟：租房援助少约41000户；部分机场等待增长，部分学校资源减少。",
+          "publication_date": "2014-05-28",
+          "observation_end": "2013-09-30",
+          "limitation": "同时指出地方资金、效率和调整缓冲了一些影响。"
+        },
+        {
+          "evidence_id": "ev-277488b99cb8a143d3ebbc38",
+          "relation": "support",
+          "quote": "Fiscal year 2013 sequestration reduced or delayed some public services and disrupted some operations in the 23 federal agencies GAO reviewed",
+          "publication_date": "2014-03-06",
+          "observation_end": "2013-09-30",
+          "limitation": "许多影响无法量化或需未来年份才可知，且国会与机构行动缓解了部分影响。"
+        },
+        {
+          "evidence_id": "ev-dccf05d21248fc6d0d3d5799",
+          "relation": "support",
+          "quote": "Sequestration reduced assistance for education, housing, and nutrition, as well as grants for health and science research and development",
+          "publication_date": "2014-05-30",
+          "observation_end": "2013-09-30",
+          "limitation": "报道为二手转述GAO报告，且部分项目通过其他资金来源继续服务。"
+        },
+        {
+          "evidence_id": "ev-c149690ff2e53ea6eafcc02d",
+          "relation": "support",
+          "quote": "Mandatory across-the-board cuts to agency budgets in fiscal 2013, though uncertain for much of the year, reduced or delayed operations, benefit payments, grants and long-term program investment",
+          "publication_date": "2014-03-07",
+          "observation_end": "2013-09-30",
+          "limitation": "GAO警告许多影响可能数年后才可知，且受助方可用其他资金暂时抵消。"
+        }
+      ],
+      "remaining_gap": "缺少覆盖“整个社会”全面供血不足的系统性指标，且2013年后联邦支出是否持续下降未纳入；现有证据仅支持2013财年阶段的部分公共服务收缩。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000049004-000049051",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "原文条件为“美国转向小政府”，后果为“整个社会供血不足”。可观察代理：联邦总支出及占GDP比重下降（小政府财政代理）与同期跨部门公共服务供给减少或延迟（供血不足代理）。观察2012-2013财年联邦支出与2013财年自动削减后的公共服务。",
+      "reason": "2013财年联邦总支出由35380亿降至34540亿美元、占GDP由22.0%降至20.8%，方向与“小政府”财政代理一致；GAO亦记录教育、住房、营养援助及科研拨款减少或延迟。但支出下降主要源于跨机构自动削减、失业改善、阿富汗撤军等，并非美国主动转向小政府的制度转型，条件是否真正触发未被证明；且“整个社会供血不足”这一主要后果仅有部分联邦项目收缩证据，且被地方资金与效率调整缓冲，不能据此认定主要后果已实现。",
+      "limitation": "仅以2013财年自动削减作为阶段代理，不等同完整制度转型或“整个社会”全面不足；GAO指出许多影响难以量化或被其他因素抵消，因果机制未获证明。修订要点：原判部分符合并设trend_aligned=true，但条件A（转向小政府）未真正触发、后果B（整个社会供血不足）整体未被证据覆盖，故改为暂无法判断。",
+      "evidence_ids": [
+        "prior-020ab057f7af85477035",
+        "prior-3bb1bb8466892281e484",
+        "ev-277488b99cb8a143d3ebbc38",
+        "ev-dccf05d21248fc6d0d3d5799",
+        "ev-c149690ff2e53ea6eafcc02d"
+      ],
+      "method": "由社会全面协调需要与政府功能缩减比较推断供给不足",
+      "method_basis": "inferred",
+      "observation_end": "2014-05-30",
+      "future_time_text": "",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-020ab057f7af85477035",
+          "relation": "boundary",
+          "quote": "总支出2012为35380亿美元、2013为34540亿美元，下降840亿约2%；支出占GDP由22.0%降至20.8%。",
+          "publication_date": "2013-10-30",
+          "observation_end": "2013-09-30",
+          "limitation": "仅为2013财年财政决算，下降主要源于自动削减、失业改善、阿富汗撤军等，不能代表主动制度转型或长期小政府。"
+        },
+        {
+          "evidence_id": "prior-3bb1bb8466892281e484",
+          "relation": "support",
+          "quote": "GAO记录2013预算自动削减后部分公共服务减少或延迟：租房援助少约41000户；部分机场等待增长，部分学校资源减少。",
+          "publication_date": "2014-05-28",
+          "observation_end": "2013-09-30",
+          "limitation": "同时指出地方资金、效率和调整缓冲了一些影响，仅覆盖部分联邦项目。"
+        },
+        {
+          "evidence_id": "ev-277488b99cb8a143d3ebbc38",
+          "relation": "support",
+          "quote": "Fiscal year 2013 sequestration reduced or delayed some public services and disrupted some operations in the 23 federal agencies GAO reviewed",
+          "publication_date": "2014-03-06",
+          "observation_end": "2013-09-30",
+          "limitation": "许多影响无法量化或需未来年份才可知，且国会与机构行动缓解了部分影响；仅覆盖23个联邦机构的部分项目。"
+        },
+        {
+          "evidence_id": "ev-dccf05d21248fc6d0d3d5799",
+          "relation": "support",
+          "quote": "Sequestration reduced assistance for education, housing, and nutrition, as well as grants for health and science research and development",
+          "publication_date": "2014-05-30",
+          "observation_end": "2013-09-30",
+          "limitation": "二手转述GAO报告，且部分项目通过其他资金来源继续服务。"
+        },
+        {
+          "evidence_id": "ev-c149690ff2e53ea6eafcc02d",
+          "relation": "support",
+          "quote": "Mandatory across-the-board cuts to agency budgets in fiscal 2013, though uncertain for much of the year, reduced or delayed operations, benefit payments, grants and long-term program investment",
+          "publication_date": "2014-03-07",
+          "observation_end": "2013-09-30",
+          "limitation": "GAO警告许多影响可能数年后才可知，且受助方可用其他资金暂时抵消。"
+        }
+      ],
+      "remaining_gap": "缺少能对应“美国主动转向小政府”这一制度转型（而非仅2013财年自动削减）的证据，以及覆盖“整个社会供血不足”的系统性指标或分项证据；现有材料只能支持部分联邦项目服务减少或延迟，不能支持主要后果B已实现。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "王沪宁关于美国转向小政府会造成社会“供血不足”的条件性判断。可观察口径：以联邦总支出及占GDP比重实际下降作为“小政府”的财政代理，并核查同期跨部门公共服务是否出现供给减少或延迟；反证包括支出未持续下降、服务未减少或地方/效率调整完全抵消。仅适用该财政代理与2013财年阶段，不等同完整制度转型或“整个社会”全面不足。",
+  "elapsed_seconds": 36.931,
+  "completed_at": "2026-11-09T10:33:11.780344+00:00"
+}

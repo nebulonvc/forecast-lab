@@ -1,0 +1,136 @@
+{
+  "id": "txt-099aaa16de-000584284-000584412",
+  "plan": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "not_a_pre_search_plan": "这是2026-11-20的r3补写。r2里这栏若只有“当前审查”一句，那个时间保留在previous_r2_plan，不把本段倒签成检索之前。",
+    "object": "《人口论》的正当声誉会随着政治经济学的培育而传播。",
+    "condition": "随着这门科学的培育。传播不是永不衰减。",
+    "observable": "正当声誉是否随培育而传播，不是原理被改写，也不是后来是否只剩一个名字。",
+    "potential_counterevidence": "若培育继续而正当声誉没有传播。萎缩句不是这个反面。",
+    "queries": [
+      {
+        "role": "support",
+        "query": "Malthus principle of population adopted in nineteenth century political economy",
+        "precall_file": "audit/r2-missing-direction/precall/01.json"
+      },
+      {
+        "role": "support",
+        "query": "Malthus Essay on Population influence and reputation nineteenth and twentieth century",
+        "source": "audit/search-log.jsonl"
+      },
+      {
+        "role": "counter",
+        "query": "Malthus reputation declined or withered in later economics",
+        "source": "audit/search-log.jsonl"
+      }
+    ]
+  },
+  "select": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "max_urls": 8,
+    "urls": [
+      {
+        "url": "https://doi.org/10.4337/9781788977579.00006",
+        "kept": true,
+        "used_for_score": false,
+        "reason": "同一存档同时有再加工句和遗产萎缩句。再加工不是声誉传播，萎缩也不是“永不衰减”的反面。2020-04-20是页面出版日。两句都留在名单里，都不计分。"
+      }
+    ],
+    "selected_for_score": [],
+    "url_gap": "上列是证据表里实有的地址，不超过8个。不利地址保留，且都未用于计分。"
+  },
+  "assess": {
+    "id": "txt-099aaa16de-000584284-000584412",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "《人口论》的正当声誉会随着政治经济学这门科学的培育而传播。",
+    "reason": "原文的量词是 spread with the cultivation，不是声誉永不衰减，也没有截止日。同一存档里，五十年后的主要遗产被写成人口原理的再加工；后文又写遗产萎缩、今天不过是公共争论里的一个名字。再加工不是声誉本身，萎缩也不是“曾经或伴随培育而传播”的否定。两句都保留，都不计分。",
+    "limitation": "法证只定位到一次来源匹配检索，返回里同时有这两句。事后日志里的支持/反证查询不证明两次调用。本次另补了一次支持方向，时钟 2026-11-20T12:00:12Z 至 2026-11-20T12:00:41Z。新页仍是再陈述与过时，不是传播完成度。Published: 2020-04-20 是页面出版日，不写入 observation_end。",
+    "evidence_ids": [
+      "ev-malthus-reception"
+    ],
+    "method": "按这句自己的对象、条件和窗口审查，不把倾向或条件句整类排除。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-malthus-reception",
+        "relation": "support",
+        "quote": "50 years after the Essay first appeared it was clear that Malthus's major legacy was to be through the creative reworking of his principle of population.",
+        "publication_date": "2020-04-20",
+        "observation_end": null,
+        "limitation": "再加工是原理被改写，不是声誉传播的完成。"
+      },
+      {
+        "evidence_id": "ev-malthus-reception",
+        "relation": "counter",
+        "quote": "Malthus's legacy withered, and today he has become little more than a name to invoke in public debates over poverty that are conducted without either theology or fear of Jacobinism.",
+        "publication_date": "2020-04-20",
+        "observation_end": null,
+        "limitation": "萎缩和被提起的名字不是 spread 的反面，也不证明永不衰减。"
+      }
+    ],
+    "remaining_gap": "没有一份材料把“正当声誉是否随这门科学的培育而传播”做成可计分的同对象结果。",
+    "r2_reviewed_at": "2026-11-20T12:00:41Z",
+    "previous_verdict": "错误",
+    "change_reason": "撤回错误。传播不等于永不衰减。2020-04-20 不再作为观察终点。"
+  },
+  "semantic_review": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "decision": "unresolved",
+    "checks": {
+      "object_match": "unknown",
+      "condition_logic": "unknown",
+      "time_alignment": "unknown",
+      "evidence_support": "unknown",
+      "counterevidence": "unknown",
+      "verdict_logic": "pass"
+    },
+    "check_reasons": {
+      "object_match": "再加工句的对象是人口原理的遗产形式，萎缩句的对象是后来的公共名字。都不是“正当声誉随培育传播”。评估把两者都留着，但没有当成同一对象。",
+      "condition_logic": "“随着培育”没有被写成一个可以开关的条件。评估没有用五十年后的再加工代替培育已经完成。",
+      "time_alignment": "2020-04-20是页面出版日，不是观察终点。句子自己没有截止日。观察终点留空。",
+      "evidence_support": "再加工不能证明声誉传播。",
+      "counterevidence": "萎缩和“不过是一个名字”对声誉不利，已保留。它不是“从未随培育传播”，也不能证明永不衰减。法证里原先只有一次来源匹配检索，12:00的支持方向没有改这些句子的对象。",
+      "verdict_logic": "先前的错误已撤回。传播不等于永不衰减。这次仍不打分。"
+    },
+    "revision": "本轮六项没有fail，所以没有做那一次修订。判决保持暂无法判断。",
+    "remaining_gap": "还没有一份材料把正当声誉是否随培育传播做成可计分的同对象结果。"
+  },
+  "revision_trail": {
+    "previous_verdict": "错误",
+    "action": "r2",
+    "why": "撤回错误。传播不等于永不衰减。2020-04-20 不再作为观察终点。",
+    "reviewed_at": "2026-11-20T12:00:41Z"
+  },
+  "previous_r2_plan": {
+    "reviewed_at": "2026-11-20T12:00:41Z",
+    "note": "当前审查。历史 precall 不是工具回显。"
+  },
+  "previous_r2_select": {
+    "note": "法证只定位到一次来源匹配检索，返回里同时有这两句。事后日志里的支持/反证查询不证明两次调用。本次另补了一次支持方向，时钟 2026-11-20T12:00:12Z 至 2026-11-20T12:00:41Z。新页仍是再陈述与过时，不是传播完成度。Published: 2020-04-20 是页面出版日，不写入 observation_end。"
+  },
+  "previous_r2_semantic_review": {
+    "reviewed_at": "2026-11-20T12:00:41Z",
+    "object": "《人口论》的正当声誉会随着政治经济学这门科学的培育而传播。",
+    "condition": "unknown",
+    "window": "句子没有写出截止日。文件出版年代理是 1817，只到年。不能把别的年份收成 12 月 31 日。",
+    "counterevidence_limit": "没有一份材料把“正当声誉是否随这门科学的培育而传播”做成可计分的同对象结果。",
+    "checks": {
+      "object_match": "保存材料的对象与这句不完全相同，不能据此打分。",
+      "condition_logic": "条件若未在同一材料里成立，不用另一种情境代替。",
+      "time_alignment": "没有源日期，或只有年份。观察终点留空。",
+      "evidence_support": "支持材料不足以单独证明这句。",
+      "counterevidence": "反面材料也不足以单独证伪这句。",
+      "verdict_logic": "六项没有同时通过，判暂无法判断，不制造分数。"
+    },
+    "issues": [
+      "没有一份材料把“正当声誉是否随这门科学的培育而传播”做成可计分的同对象结果。"
+    ],
+    "decision": "暂无法判断"
+  }
+}

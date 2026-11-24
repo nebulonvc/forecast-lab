@@ -1,0 +1,92 @@
+{
+  "states": {
+    "completed": 250,
+    "not_started": 52,
+    "partial": 125
+  },
+  "verdicts": {
+    "错误": 13,
+    "暂无法判断": 99,
+    "趋势符合": 49,
+    "正确": 32,
+    "部分符合": 57
+  },
+  "partial_reasons": [
+    [
+      "estimated_budget_reservation_exceeded",
+      30
+    ],
+    [
+      "scored_claim_missing_evidence_or_scope",
+      21
+    ],
+    [
+      "evidence_quote_not_in_shown_source",
+      16
+    ],
+    [
+      "adaptive_strategy_change_required",
+      14
+    ],
+    [
+      "JSONDecodeError",
+      12
+    ],
+    [
+      "source_publication_date_mismatch",
+      10
+    ],
+    [
+      "semantic_review_quote_not_in_supplied_text",
+      4
+    ],
+    [
+      "request_failed_http_400",
+      3
+    ],
+    [
+      "unseen_or_duplicate_selected_url",
+      3
+    ],
+    [
+      "adaptive_strategy_not_changed",
+      2
+    ],
+    [
+      "adaptive_query_repeats_previous",
+      2
+    ],
+    [
+      "expected_one_result",
+      2
+    ],
+    [
+      "trend_requires_partial_observed_verdict",
+      2
+    ],
+    [
+      "semantic_review_invalid_issue",
+      1
+    ],
+    [
+      "evidence_date_after_cutoff_or_invalid",
+      1
+    ],
+    [
+      "page_text_unavailable",
+      1
+    ],
+    [
+      "search_requires_support_and_counter",
+      1
+    ]
+  ],
+  "not_started_reasons": [
+    [
+      "estimated_budget_reservation_exceeded",
+      52
+    ]
+  ],
+  "adaptive_tasks": 1,
+  "adaptive_rounds": 3
+}

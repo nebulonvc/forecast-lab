@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "case": "/workspace/forecast-bot3-w16/repo/cases/fisher-purchasing-power-of-money-v5",
+  "packaged_files": 123,
+  "candidates": 32,
+  "resolvable": 30,
+  "predictions": 30,
+  "decidable": 17,
+  "counts": {
+    "正确": 7,
+    "趋势符合": 0,
+    "部分符合": 9,
+    "错误": 1,
+    "暂无法判断": 13
+  },
+  "evidence": 51,
+  "source_archives": 79,
+  "quote_exact": 32,
+  "context_nonempty": 0,
+  "semantic_reviews": 30,
+  "selected_max": 7,
+  "all_selected_urls_actually_returned": true,
+  "archive_hash_and_evidence_quotes_verified": 51,
+  "queries": {
+    "1": 68,
+    "2": 20,
+    "adaptive": 5
+  },
+  "secrets_hits": 0,
+  "secret_scope": "all case files including excluded caches; exact active credential plus token/private-key patterns; values never printed",
+  "fulltext_probe": {
+    "samples": 1000,
+    "normalized_characters_per_probe": 10000,
+    "hits": 0,
+    "entire_book_hits": 0,
+    "forbidden_filenames": 0
+  },
+  "excluded_patterns": [
+    "exa/",
+    "llm/",
+    "__pycache__/",
+    "*.pyc",
+    "run.lock",
+    "accepted_assessment_*.jsonl",
+    "claims_before_assessment_*.jsonl"
+  ],
+  "claims_sha256": "07ed26e52a23de7831627fa1532cb83b6242e11d6c2a88c0ee78b805d4ad8a2a",
+  "evidence_sha256": "1bb888ded6ce7d9de9386d127aa8e7904653256ca216d228e921a67fd8247203"
+}

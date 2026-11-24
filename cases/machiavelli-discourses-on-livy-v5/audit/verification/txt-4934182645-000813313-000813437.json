@@ -1,0 +1,59 @@
+{
+  "claim_id": "txt-4934182645-000813313-000813437",
+  "logged_at": "2026-11-20T10:50:00Z",
+  "plan": {
+    "object": "国家本身的紊乱，紧接着的例子是新公民占有过大的投票份额，使政府改变旧轨",
+    "conditions": ["紊乱在国家本身，不是下毒或酒神祭那种仍有时间纠正的罪行", "没有一位明智公民加以处理"],
+    "quantifier": "always",
+    "result": "把城邦带到毁灭",
+    "time_window": "1531年之后",
+    "counterevidence_needed": "1531年之后，新公民的投票份额改变了政府，没有人加以限制，城邦却没有毁灭"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "purpose": "首轮一正一反",
+        "support_query": "republic destroyed after new citizens gained the vote and no reformer limited them",
+        "counter_query": "city survived after a large new class of citizens received the vote without a censor limiting their tribes",
+        "support_result": "返回的是公元前91年同盟战争之后的罗马公民权，早于1531。",
+        "counter_result": "同样是同盟战争和罗马部落登记，早于1531。费边把新公民分入四个部落是作者自己的例子。",
+        "adopted": false
+      },
+      {
+        "round": 2,
+        "purpose": "补轮：改找1531年之后扩大公民投票而城邦仍在的记录",
+        "support_query": "republic enlarged the electorate with new citizens and was not destroyed",
+        "support_result": "仍然返回同盟战争、罗马共和国和公元212年的公民权，都早于1531。",
+        "adopted": false
+      }
+    ],
+    "adaptive_rounds": 1,
+    "stop_reason": "两轮都停在1531年之前的罗马。没有1531年之后的同类城邦记录。",
+    "sources": []
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "总是毁灭的是国家本身的紊乱，原文紧接着写的是新公民投票过多、政府离开旧轨，而且没有明智公民处理。下毒和酒神祭有时间纠正，不是这一句。",
+    "reason": "连续原文把下毒者和酒神祭与国家本身的紊乱分开：前者几乎总有时间纠正，不是致命的；后者若不由某位明智公民处理，总是把城邦带到毁灭。紧接着的例子是罗马把公民权给予外人，新公民的投票份额大到政府开始改变，费边任监察官时把他们分进四个部落。费边是作者举的处理，在出版之前。一次未经处理而毁灭的城邦不能证明总是；一次未经处理却没有毁灭的城邦可以否定总是，但必须是1531年之后、并且是这种国家本身的紊乱。首轮和补轮返回的都是公元前的罗马公民权扩大。它们不能核验这条出版之后的预测。所以不判。",
+    "limitation": "没有把公元前的罗马存成这条的证据。",
+    "method": "先把国家本身的紊乱和普通罪行分开。出版前的罗马不能充当出版后的正例或反例。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "fail",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "检索停在1531年之前的罗马。一次古代事例不能证明或否定这条出版后的总是。"
+  }
+}

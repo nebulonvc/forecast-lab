@@ -1,0 +1,47 @@
+{
+  "id": "txt-4934182645-000620444-000620528",
+  "plan": {
+    "object": "针对君主的密谋被发现、密谋者被处死之后的公众看法。",
+    "condition": "if it be discovered, and the conspirators be put to death。密谋被发现，而且密谋者自己被处死。两项都要有。",
+    "quantifier": "always be believed。相信者是会使君主丧失信誉的那种公众看法，不是行刑场上被官方记载写下的旁观者。一次许多人如此相信，不能证明始终。行刑记载里的高兴，若没有说出这批人是否认为密谋真实、而不是君主编造，不能单独反驳始终。",
+    "result": "登记变化是 always be believed。相信的内容是君主为了贪婪和残忍而编造整个事情，而这看法使他丧失信誉。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "密谋被发现、密谋者被处死，而旁观者并不相信这是君主编造的。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "after the conspirators were executed people said the ruler had fabricated the plot",
+      "counter_query": "Gunpowder Plot conspirators executed and contemporaries believed the plot against James I was real"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [
+      "https://www.hrp.org.uk/tower-of-london/history-and-stories/guy-fawkes-and-the-gunpowder-plot/",
+      "https://en.wikipedia.org/wiki/Sanvitale_conspiracy"
+    ],
+    "dropped": ""
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-hrp-fawkes-1606", "ev-wiki-sanvitale-1612"],
+    "scope": "always 的相信者是使君主丧失信誉的公众看法。行刑场旁观者的高兴，若只出现在纪念性记载里，不能直接当成这批人的看法。",
+    "reason": "原文说密谋若成功就杀死君主，若被发现而密谋者被处死，就总会被人相信整个事情是君主为了贪婪和残忍编造的，从而使他丧失信誉。相信者是这种会使他丧失信誉的看法，不是某一场行刑的观众。王室宫殿页引用当时记载：1606年1月31日福克斯等人被处决，所有旁观者为国土除掉邪恶罪行而高兴。这是行刑场面的记载，站在国王得救的叙述里，没有写这些旁观者或更广的公众是否考虑过密谋是詹姆斯编造的。因此不能用这一句直接反掉始终。圣维塔莱页写1612年5月19日十人被处决后，许多人和一些外国宫廷相信拉努乔编造了密谋。那更接近使君主丧失信誉的看法，但是许多人、而且是外国宫廷，不是每次都会如此的公众。先前把旁观者的高兴当成始终的反例，范围窄了，现予收回。决定性缺口仍是：没有页面写出原文所指的那个人群，在发现并处死之后，是相信编造，还是相信密谋真实。",
+    "limitation": "两页都没有研究出版日。福克斯句是纪念性页面里的当时行刑记载。圣维塔莱页的“许多人”包括外国宫廷，不是帕尔马全体公众。",
+    "method": "先确定相信者是使君主丧失信誉的公众，再看始终。行刑记载的高兴不自动等于这批人相信密谋真实。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "1606年旁观者的高兴是行刑记载，没有写出会使国王丧失信誉的公众是否相信密谋真实。1612年的许多人相信编造，也不是始终。错误判定收回。"
+  }
+}

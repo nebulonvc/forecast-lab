@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000654288-000654349",
+  "plan": {
+    "object": "一个共和国要使另一个共和国臣服。原文说邻国之间的争夺在共和国尤其如此。",
+    "condition": "contention and rivalry。是共和国对共和国。王国或公爵国吞并共和国，不是这句的两边。",
+    "quantifier": "always will make it extremely hard。将来也总是使这件事极其困难。不是不可能。一次极其困难不能证明总是；一次很容易地臣服，可以反驳极其困难。",
+    "result": "登记变化是 always will make。造成的是臣服极其困难。",
+    "window": "1531至2026-11-15。托斯卡纳和威尼斯的比较是作者当时的说明。",
+    "counterevidence_needed": "一个共和国极难使另一个共和国臣服；或者一个共和国轻易使另一个共和国臣服。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "republic failed for years to subdue a neighboring republic",
+      "counter_query": "one republic conquered another republic quickly and with little resistance after 1531"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://en.wikipedia.org/wiki/Republic_of_Siena"],
+    "dropped": "维爱战争在公元前。1512年纳瓦拉被卡斯蒂利亚攻下，早于1531年，而且卡斯蒂利亚不是共和国。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-wiki-siena-1555"],
+    "scope": "两边都必须是共和国。十八个月的抵抗说明困难，但不能换成共和国对共和国。",
+    "reason": "维基百科写，锡耶纳共和国抵抗十八个月后，于1555年4月21日向西班牙投降。西班牙国王腓力二世因欠美第奇家巨款，把锡耶纳全境让给佛罗伦萨公国。投降的对象是西班牙，接受土地的是公国，不是一个共和国使另一个共和国臣服。十八个月是困难，但对象不对。支持检索回到的维爱是公元前的事。决定性缺口是：1531年之后没有正文写出一个共和国对另一个共和国的臣服是极其困难，或是轻易完成。",
+    "limitation": "百科页没有出版日。1555年4月21日是向西班牙投降的日子。蒙塔尔奇诺的共和国残余到1559年才被托斯卡纳军队兼并。",
+    "method": "先确认两边都是共和国，再看臣服是不是极其困难。公国和王国不算。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "1555年4月21日锡耶纳向西班牙投降，土地给了佛罗伦萨公国。不是共和国使共和国臣服。"
+  }
+}

@@ -1,0 +1,619 @@
+{
+  "claim_id": "txt-1c4066fc0c-000023211-000023273",
+  "version": "search-verifier-v1",
+  "input_sha256": "31edc0340ae0f138ee5676875ea2d570557d5c24543a2cb70e95132c2d9aa311",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000023211-000023273",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "复合条件判断：(1)前提A为“美国农业生产受到严重威胁”，以2012年大范围干旱作为候选触发事件，但需先确认该事件是否构成作者所指的严重威胁；(2)后果B为“城乡差别成为严重问题”，需以2012年干旱后城乡收入/贫困差距的逐年直接对比检验；(3)第二分项以美国非都市人口净迁移方向观察人口是否长期单向从农村流向城市。观察期约2012—2024年，截止2026-11-09。",
+    "reason": "2012年干旱虽广泛，但所引证据显示农业总体收入仍近历史高位、保险与价格缓冲明显，前提A是否构成“严重威胁”本身存疑，不能直接记为已满足。后果B缺少2012年干旱后城乡收入或贫困差距的逐年直接对比，现有2024年贫困率数据不足以单独支撑“差距未因农业冲击恶化”的终局判断。人口迁移分项有2020—2022年非都市净迁入回升的反向证据，但不足以单独支撑复合命题整体成立。",
+    "limitation": "关键修订：不再把2012年干旱直接视为前提A已满足，也不再用农业缓冲证据和迁移方向合并推出“部分符合”；前提A与后果B均缺直接对应证据，故判暂无法判断。作者未给出“严重威胁”“严重问题”的量化阈值，本评估以2012年干旱及城乡贫困/收入差距作透明近似，但近似不足以完成判断。",
+    "evidence_ids": [
+      "ev-03a5410bdddd2189f629e726",
+      "ev-b4645018056276026c9f967e",
+      "prior-1aa4f83c23c3609eef91",
+      "ev-e94f7a96bd653f219c4d5651",
+      "prior-3a7a58f902a0dc45ab20"
+    ],
+    "method": "由农业产出底线和既有城市吸引机制推断城乡风险",
+    "method_basis": "inferred",
+    "observation_end": "2024-12-31",
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-03a5410bdddd2189f629e726",
+        "relation": "boundary",
+        "quote": "Despite a historic drought affecting much of U.S. agriculture, the U.S. agricultural economy is strong and, in aggregate, farm incomes are near record highs.",
+        "publication_date": "2013-02-14",
+        "observation_end": "2013-02-14",
+        "limitation": "官方证词，仅证明2012年干旱下农业总体收入坚挺，反而使“农业生产受到严重威胁”这一前提是否成立存疑；未直接测量城乡差距；为未复核候选来源。"
+      },
+      {
+        "evidence_id": "ev-b4645018056276026c9f967e",
+        "relation": "boundary",
+        "quote": "It is now clear that the impact of the drought on retail food prices will be smaller than initially forecast.",
+        "publication_date": null,
+        "observation_end": "2013-06-30",
+        "limitation": "说明干旱对零售食品价格冲击小于预期，属缓冲证据，但未覆盖城乡收入或贫困差距，不能证明后果B；日期未知。"
+      },
+      {
+        "evidence_id": "prior-1aa4f83c23c3609eef91",
+        "relation": "boundary",
+        "quote": "2024非都市贫困率13.7%，较2022的15.0%下降，为25年较低水平之一；都市10.2%，差距仍3.5个百分点。",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "仅提供2024年城乡贫困率对比，缺少2012年干旱后逐年直接对比，不能单独判断后果B是否因农业冲击恶化；该来源为已登记摘录，发布日期未知。"
+      },
+      {
+        "evidence_id": "ev-e94f7a96bd653f219c4d5651",
+        "relation": "counter",
+        "quote": "The U.S. rural (nonmetro) population is growing again after a decade of overall population loss, with growth of about a quarter percent from July 2020 through June 2022.",
+        "publication_date": "2024-02-22",
+        "observation_end": "2022-06-30",
+        "limitation": "证明2020—2022年非都市净迁入回升，与“难以逆转农村流向城市”方向相反；但增长部分由疫情远程办公驱动，且2010—2016年净迁移仍为负，不能证明长期单向逆转，也不涉及城乡差别后果B。"
+      },
+      {
+        "evidence_id": "prior-3a7a58f902a0dc45ab20",
+        "relation": "boundary",
+        "quote": "2010年代非都市人口下降，但2020—2024每年增长，增长来自净迁入抵消自然减少；2023—2024增加134540人，仍有51%的非都市县2020—2024人口减少。",
+        "publication_date": "2026-02-13",
+        "observation_end": "2024-12-31",
+        "limitation": "显示近期非都市净迁入持续，但仍有约半数非都市县人口减少，人口流向并非全面逆转；该来源发布日期晚于cutoff，仅作背景边界，不作为已实现结果。"
+      }
+    ],
+    "remaining_gap": "需先确认2012年干旱是否构成作者所指的“农业生产受到严重威胁”（农业总体收入坚挺可能意味着前提未触发），并补充2012年干旱后城乡收入/贫困差距的逐年直接对比数据，以分别判断后果B是否实现；人口流向的长期单向性也需更长观察窗口。",
+    "evidence_notes_placeholder": null
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000023211-000023273",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "复合判断：(1)以2012年美国大范围干旱作为“农业生产受到严重威胁”的近似触发事件，观察其后城乡差距（非都市贫困率、收入、就业）是否恶化；(2)以美国非都市人口净迁移方向观察人口是否长期单向从农村流向城市。观察期约2012—2024年，截止2026-11-09。",
+    "reason": "2012年干旱确实严重冲击农业，但农场总体收入仍处高位、保险与价格缓冲明显，未见城乡差距因农业冲击而显著恶化；同时2010年代非都市人口总体下降、2020—2022年出现净迁入回升，人口流向并非始终单向流出。两个分项均只得到部分或方向性证据，故判部分符合。",
+    "limitation": "“严重威胁”与“城乡差别成为严重问题”均无作者给出的量化阈值，本评估以2012年干旱及非都市贫困率/迁移方向作透明近似；2020—2022年净迁入部分由疫情远程办公驱动，不能据此断言人口流向永久逆转。",
+    "evidence_ids": [
+      "ev-03a5410bdddd2189f629e726",
+      "ev-b4645018056276026c9f967e",
+      "prior-1aa4f83c23c3609eef91",
+      "ev-e94f7a96bd653f219c4d5651",
+      "prior-3a7a58f902a0dc45ab20"
+    ],
+    "method": "由农业产出底线和既有城市吸引机制推断城乡风险",
+    "method_basis": "inferred",
+    "observation_end": "2024-12-31",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-03a5410bdddd2189f629e726",
+        "relation": "counter",
+        "quote": "Despite a historic drought affecting much of U.S. agriculture, the U.S. agricultural economy is strong and, in aggregate, farm incomes are near record highs.",
+        "publication_date": "2013-02-14",
+        "observation_end": "2013-02-14",
+        "limitation": "官方证词，仅证明2012年干旱下农业总体收入坚挺，未直接测量城乡差距；且为未复核候选来源。"
+      },
+      {
+        "evidence_id": "ev-b4645018056276026c9f967e",
+        "relation": "counter",
+        "quote": "It is now clear that the impact of the drought on retail food prices will be smaller than initially forecast.",
+        "publication_date": null,
+        "observation_end": "2013-06-30",
+        "limitation": "说明干旱对零售食品价格冲击小于预期，属缓冲证据，但未覆盖城乡收入或贫困差距；日期未知。"
+      },
+      {
+        "evidence_id": "prior-1aa4f83c23c3609eef91",
+        "relation": "boundary",
+        "quote": "2024非都市贫困率13.7%，较2022的15.0%下降，为25年较低水平之一；都市10.2%，差距仍3.5个百分点。",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "显示城乡贫困差距仍存在但趋于缩小，非都市贫困率下降，不支持“差距因农业冲击而恶化”；该来源为已登记摘录，发布日期未知。"
+      },
+      {
+        "evidence_id": "ev-e94f7a96bd653f219c4d5651",
+        "relation": "counter",
+        "quote": "The U.S. rural (nonmetro) population is growing again after a decade of overall population loss, with growth of about a quarter percent from July 2020 through June 2022.",
+        "publication_date": "2024-02-22",
+        "observation_end": "2022-06-30",
+        "limitation": "证明2020—2022年非都市净迁入回升，与“难以逆转农村流向城市”方向相反；但增长部分由疫情远程办公驱动，且2010—2016年净迁移仍为负，不能证明长期单向逆转。"
+      },
+      {
+        "evidence_id": "prior-3a7a58f902a0dc45ab20",
+        "relation": "boundary",
+        "quote": "2010年代非都市人口下降，但2020—2024每年增长，增长来自净迁入抵消自然减少；2023—2024增加134540人，仍有51%的非都市县2020—2024人口减少。",
+        "publication_date": "2026-02-13",
+        "observation_end": "2024-12-31",
+        "limitation": "显示近期非都市净迁入持续，但仍有约半数非都市县人口减少，人口流向并非全面逆转；该来源发布日期晚于cutoff，仅作背景边界，不作为已实现结果。"
+      }
+    ],
+    "remaining_gap": "缺少作者对“严重威胁”和“城乡差别成为严重问题”的量化定义，也缺少2012年干旱后城乡收入/贫困差距的逐年直接对比数据；人口流向的长期单向性需更长观察窗口才能定论。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-a0ff3160090033e15456",
+      "url": "https://www.govinfo.gov/content/pkg/ERP-2013/pdf/ERP-2013-chapter8.pdf",
+      "title": "ev-r2-l1-drought",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-drought",
+      "archive_sha256": "edfe725fed51bc5c537f79da84044f58f53e30a4eb0b0f414f5e12dcadf0cfaa",
+      "archive_path": "data/sources/r2-l1-drought2012.pdf",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-3a7a58f902a0dc45ab20",
+      "url": "https://www.ers.usda.gov/topics/rural-economy-population/population-migration",
+      "title": "ev-lane1-rural-migration",
+      "published_date": "2026-02-13",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane1-rural-migration",
+      "archive_sha256": "51d6785f8db2456120f4fa75c3e050350305f39d2fa4a08f21513b345caa35df",
+      "archive_path": "data/sources/lane1-rural-migration.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-1aa4f83c23c3609eef91",
+      "url": "https://ers.usda.gov/sites/default/files/_laserfiche/publications/113657/EIB-295.pdf",
+      "title": "ev-r2-l1-rural2024",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-rural2024",
+      "archive_sha256": "0b0eb4e09874ff079a5d350a2fdcad16582cb633c1d94f40261d0d8fba5803bf",
+      "archive_path": "data/sources/r2-l1-rural2025.pdf",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-03a5410bdddd2189f629e726",
+      "url": "https://www.usda.gov/sites/default/files/documents/OCR-20130214-Glauber-statement.pdf",
+      "resolved_url": "https://www.usda.gov/sites/default/files/documents/OCR-20130214-Glauber-statement.pdf",
+      "title": "Statement of Joseph Glauber Before the U.S. Senate Committee on Agriculture, Nutrition and Forestry",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:27.197560+00:00",
+      "archive_sha256": "6b729d43985eb4c83527723247618c990f7dde373a987d4dfddd02998f45cd6c",
+      "archive_path": "jobs/68a5a6fe1c9fbca532605cb7/6b729d43985eb4c83527723247618c990f7dde373a987d4dfddd02998f45cd6c.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-b4645018056276026c9f967e",
+      "url": "https://drought.unl.edu/archive/assessments/USDA-ERS-2012-farm-food-impacts.pdf",
+      "resolved_url": "https://drought.unl.edu/archive/assessments/USDA-ERS-2012-farm-food-impacts.pdf",
+      "title": "USDA ERS - U.S. Drought 2012: Farm and Food Impacts",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:27.197763+00:00",
+      "archive_sha256": "5d98522622d06caed18c2637eb3310811332954f83ed6aa2d8d2bdcb7d9d6bfd",
+      "archive_path": "jobs/68a5a6fe1c9fbca532605cb7/5d98522622d06caed18c2637eb3310811332954f83ed6aa2d8d2bdcb7d9d6bfd.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e94f7a96bd653f219c4d5651",
+      "url": "http://www.ers.usda.gov/amber-waves/2024/february/net-migration-spurs-renewed-growth-in-rural-areas-of-the-united-states",
+      "resolved_url": "http://www.ers.usda.gov/amber-waves/2024/february/net-migration-spurs-renewed-growth-in-rural-areas-of-the-united-states",
+      "title": "Net Migration Spurs Renewed Growth in Rural Areas of the United States | Economic Research Service",
+      "published_date": "2024-02-22",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:27.197947+00:00",
+      "archive_sha256": "4b5b19f49edc36cc4ec3decf8275b7ce993af0e6237c6628bd854a5c767b3b5e",
+      "archive_path": "jobs/68a5a6fe1c9fbca532605cb7/4b5b19f49edc36cc4ec3decf8275b7ce993af0e6237c6628bd854a5c767b3b5e.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-06bc63013f14d46f53cfa73e",
+      "url": "https://www.ers.usda.gov/amber-waves/2024/february/net-migration-spurs-renewed-growth-in-rural-areas-of-the-united-states",
+      "resolved_url": "https://www.ers.usda.gov/amber-waves/2024/february/net-migration-spurs-renewed-growth-in-rural-areas-of-the-united-states",
+      "title": "Net Migration Spurs Renewed Growth in Rural Areas of the United States | Economic Research Service",
+      "published_date": "2024-02-22",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:36.067397+00:00",
+      "archive_sha256": "bc4df6cebe04257a6248b4b0446bc70eb343ead0419fa38ae7e7557ee760c6b0",
+      "archive_path": "jobs/68a5a6fe1c9fbca532605cb7/bc4df6cebe04257a6248b4b0446bc70eb343ead0419fa38ae7e7557ee760c6b0.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-0b101f4c75893226fbe3b5fb",
+      "url": "https://www.ers.usda.gov/media/16123/in-brochure-format-requires-11x17-inch-paper-for-printing.pdf?v=34655",
+      "resolved_url": "https://www.ers.usda.gov/media/16123/in-brochure-format-requires-11x17-inch-paper-for-printing.pdf?v=34655",
+      "title": "Rural America at a Glance, 2013 Edition",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:36.067618+00:00",
+      "archive_sha256": "3db3232858c03aadffd2220dbd67cefda233ac02be22b42549a15ddef0cefbd5",
+      "archive_path": "jobs/68a5a6fe1c9fbca532605cb7/3db3232858c03aadffd2220dbd67cefda233ac02be22b42549a15ddef0cefbd5.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-17a23c63e6a973efb19f5ca5",
+      "url": "https://www.ers.usda.gov/media/8636/eb-21.pdf?v=93570",
+      "resolved_url": "https://www.ers.usda.gov/media/8636/eb-21.pdf?v=93570",
+      "title": "Rural America at a Glance, 2012 Edition",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:36.067817+00:00",
+      "archive_sha256": "ec26a9e270d040de101fe6c467aa231cd7f84ca13658ee1541c5fb02924895d6",
+      "archive_path": "jobs/68a5a6fe1c9fbca532605cb7/ec26a9e270d040de101fe6c467aa231cd7f84ca13658ee1541c5fb02924895d6.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "USDA 2012 drought farm income crop losses rural urban disparity report",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "USDA ERS nonmetro population net migration gain 2020 2024 rural counties",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "USDA ERS rural urban poverty gap 2012 drought farm income county nonmetro report",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "USDA ERS nonmetro population net migration 2020 2024 rural growth counties data",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "需先确认2012年干旱是否构成作者所指的“农业生产受到严重威胁”（农业总体收入坚挺可能意味着前提未触发），并补充2012年干旱后城乡收入/贫困差距的逐年直接对比数据，以分别判断后果B是否实现；人口流向的长期单向性也需更长观察窗口。",
+  "source_statuses": [
+    {
+      "url": "https://www.usda.gov/sites/default/files/documents/OCR-20130214-Glauber-statement.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://drought.unl.edu/archive/assessments/USDA-ERS-2012-farm-food-impacts.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "http://www.ers.usda.gov/amber-waves/2024/february/net-migration-spurs-renewed-growth-in-rural-areas-of-the-united-states",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.ers.usda.gov/amber-waves/2024/february/net-migration-spurs-renewed-growth-in-rural-areas-of-the-united-states",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.ers.usda.gov/media/16123/in-brochure-format-requires-11x17-inch-paper-for-printing.pdf?v=34655",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.ers.usda.gov/media/8636/eb-21.pdf?v=93570",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "02331a13943927a25e02cf3107e7da105e85d37b059abf6c9972b5065176ea1f"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "be4fad7d4daffd5c5be37d505562ac86",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "8c7345a50a1679e860edfbcd737d9033",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "e6c4ad2f0357d0bedfd187f00828b5a2589b4fabbd16c7cd50e2c4b08cd86972"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "53f61e05b8a8a04b39101da4615703c1",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "640cdb9ccc2337e5b01eec17ef3b347005189c1004e574546cf9b2cf5a8d5c6e"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e5fcbf490e9180e04a968b4311a4d6ab",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e52338ee78f09de0dfe15a8415ba2d65",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "d2207012d1df92c82f591133dbf3b36ecbab65c9d05ee2e4930a598fe8818c15"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "6229ee43035e86395b4e02747e6ede4c",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "0379a49c7acc0f8857570ea567234a84e7f7c87791632936a87b7e2935a255b9"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "cfece558e9314d4b94d683fafde14769a3e5b6eaa3aa1201208cbe5facc664d2"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "0ba54ecad8633b28ce5ffdb9e01171f7c80fe4cbcc3490ed3b91a701db5700bb"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "893e6d50e04a4447d6a7808ca23305b26348b3ee722faf5532ab025aa8155993"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000023211-000023273",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原书的条件预测是“若农业生产受到严重威胁，城乡差别就将成为一个严重的问题”。建议把2012年干旱当作触发事件，但所引证据恰恰显示农业总体收入坚挺、保险与价格缓冲明显，因此“农业生产受到严重威胁”这一前提是否成立本身存疑；建议却把condition_state写成satisfied，未先确认前提A是否成立，就直接判断后果B。",
+          "source_quote": "如果农\n业生产受到严重威胁，城乡差别就将成为一个严重的问题。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议用非都市贫困率、收入、就业来检验“城乡差别成为严重问题”，但所引证据只覆盖2012年农业总体收入、零售食品价格冲击和2024年贫困率，缺少2012年干旱后城乡收入或贫困差距的逐年直接对比；因此无法支撑“未见城乡差距因农业冲击而显著恶化”这一主要结果。",
+          "source_quote": "2024非都市贫困率13.7%，较2022的15.0%下降，为25年较低水平之一；都市10.2%，差距仍3.5个百分点。",
+          "evidence_id": "prior-1aa4f83c23c3609eef91",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "判“部分符合”必须指出后果B哪些具体部分实现、哪些未实现及其直接证据；建议只罗列前提A的农业缓冲证据和人口迁移方向，未给出“城乡差别成为严重问题”这一后果B的分项实现或未实现证据，且把两个分项合并为“部分或方向性证据”，分类依据不足。",
+          "source_quote": "两个分项均只得到部分或方向性证据，故判部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需先确认“农业生产受到严重威胁”这一前提在2012年干旱下是否成立（农业总体收入坚挺可能意味着前提未触发），并补充2012年干旱后城乡收入/贫困差距的逐年直接对比数据，以分别判断后果B是否实现；在此之前不能维持“部分符合”的结论。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000023211-000023273",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000023211-000023273",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "复合判断：(1)以2012年美国大范围干旱作为“农业生产受到严重威胁”的近似触发事件，观察其后城乡差距（非都市贫困率、收入、就业）是否恶化；(2)以美国非都市人口净迁移方向观察人口是否长期单向从农村流向城市。观察期约2012—2024年，截止2026-11-09。",
+      "reason": "2012年干旱确实严重冲击农业，但农场总体收入仍处高位、保险与价格缓冲明显，未见城乡差距因农业冲击而显著恶化；同时2010年代非都市人口总体下降、2020—2022年出现净迁入回升，人口流向并非始终单向流出。两个分项均只得到部分或方向性证据，故判部分符合。",
+      "limitation": "“严重威胁”与“城乡差别成为严重问题”均无作者给出的量化阈值，本评估以2012年干旱及非都市贫困率/迁移方向作透明近似；2020—2022年净迁入部分由疫情远程办公驱动，不能据此断言人口流向永久逆转。",
+      "evidence_ids": [
+        "ev-03a5410bdddd2189f629e726",
+        "ev-b4645018056276026c9f967e",
+        "prior-1aa4f83c23c3609eef91",
+        "ev-e94f7a96bd653f219c4d5651",
+        "prior-3a7a58f902a0dc45ab20"
+      ],
+      "method": "由农业产出底线和既有城市吸引机制推断城乡风险",
+      "method_basis": "inferred",
+      "observation_end": "2024-12-31",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-03a5410bdddd2189f629e726",
+          "relation": "counter",
+          "quote": "Despite a historic drought affecting much of U.S. agriculture, the U.S. agricultural economy is strong and, in aggregate, farm incomes are near record highs.",
+          "publication_date": "2013-02-14",
+          "observation_end": "2013-02-14",
+          "limitation": "官方证词，仅证明2012年干旱下农业总体收入坚挺，未直接测量城乡差距；且为未复核候选来源。"
+        },
+        {
+          "evidence_id": "ev-b4645018056276026c9f967e",
+          "relation": "counter",
+          "quote": "It is now clear that the impact of the drought on retail food prices will be smaller than initially forecast.",
+          "publication_date": null,
+          "observation_end": "2013-06-30",
+          "limitation": "说明干旱对零售食品价格冲击小于预期，属缓冲证据，但未覆盖城乡收入或贫困差距；日期未知。"
+        },
+        {
+          "evidence_id": "prior-1aa4f83c23c3609eef91",
+          "relation": "boundary",
+          "quote": "2024非都市贫困率13.7%，较2022的15.0%下降，为25年较低水平之一；都市10.2%，差距仍3.5个百分点。",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "显示城乡贫困差距仍存在但趋于缩小，非都市贫困率下降，不支持“差距因农业冲击而恶化”；该来源为已登记摘录，发布日期未知。"
+        },
+        {
+          "evidence_id": "ev-e94f7a96bd653f219c4d5651",
+          "relation": "counter",
+          "quote": "The U.S. rural (nonmetro) population is growing again after a decade of overall population loss, with growth of about a quarter percent from July 2020 through June 2022.",
+          "publication_date": "2024-02-22",
+          "observation_end": "2022-06-30",
+          "limitation": "证明2020—2022年非都市净迁入回升，与“难以逆转农村流向城市”方向相反；但增长部分由疫情远程办公驱动，且2010—2016年净迁移仍为负，不能证明长期单向逆转。"
+        },
+        {
+          "evidence_id": "prior-3a7a58f902a0dc45ab20",
+          "relation": "boundary",
+          "quote": "2010年代非都市人口下降，但2020—2024每年增长，增长来自净迁入抵消自然减少；2023—2024增加134540人，仍有51%的非都市县2020—2024人口减少。",
+          "publication_date": "2026-02-13",
+          "observation_end": "2024-12-31",
+          "limitation": "显示近期非都市净迁入持续，但仍有约半数非都市县人口减少，人口流向并非全面逆转；该来源发布日期晚于cutoff，仅作背景边界，不作为已实现结果。"
+        }
+      ],
+      "remaining_gap": "缺少作者对“严重威胁”和“城乡差别成为严重问题”的量化定义，也缺少2012年干旱后城乡收入/贫困差距的逐年直接对比数据；人口流向的长期单向性需更长观察窗口才能定论。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000023211-000023273",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "复合条件判断：(1)前提A为“美国农业生产受到严重威胁”，以2012年大范围干旱作为候选触发事件，但需先确认该事件是否构成作者所指的严重威胁；(2)后果B为“城乡差别成为严重问题”，需以2012年干旱后城乡收入/贫困差距的逐年直接对比检验；(3)第二分项以美国非都市人口净迁移方向观察人口是否长期单向从农村流向城市。观察期约2012—2024年，截止2026-11-09。",
+      "reason": "2012年干旱虽广泛，但所引证据显示农业总体收入仍近历史高位、保险与价格缓冲明显，前提A是否构成“严重威胁”本身存疑，不能直接记为已满足。后果B缺少2012年干旱后城乡收入或贫困差距的逐年直接对比，现有2024年贫困率数据不足以单独支撑“差距未因农业冲击恶化”的终局判断。人口迁移分项有2020—2022年非都市净迁入回升的反向证据，但不足以单独支撑复合命题整体成立。",
+      "limitation": "关键修订：不再把2012年干旱直接视为前提A已满足，也不再用农业缓冲证据和迁移方向合并推出“部分符合”；前提A与后果B均缺直接对应证据，故判暂无法判断。作者未给出“严重威胁”“严重问题”的量化阈值，本评估以2012年干旱及城乡贫困/收入差距作透明近似，但近似不足以完成判断。",
+      "evidence_ids": [
+        "ev-03a5410bdddd2189f629e726",
+        "ev-b4645018056276026c9f967e",
+        "prior-1aa4f83c23c3609eef91",
+        "ev-e94f7a96bd653f219c4d5651",
+        "prior-3a7a58f902a0dc45ab20"
+      ],
+      "method": "由农业产出底线和既有城市吸引机制推断城乡风险",
+      "method_basis": "inferred",
+      "observation_end": "2024-12-31",
+      "future_time_text": "",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-03a5410bdddd2189f629e726",
+          "relation": "boundary",
+          "quote": "Despite a historic drought affecting much of U.S. agriculture, the U.S. agricultural economy is strong and, in aggregate, farm incomes are near record highs.",
+          "publication_date": "2013-02-14",
+          "observation_end": "2013-02-14",
+          "limitation": "官方证词，仅证明2012年干旱下农业总体收入坚挺，反而使“农业生产受到严重威胁”这一前提是否成立存疑；未直接测量城乡差距；为未复核候选来源。"
+        },
+        {
+          "evidence_id": "ev-b4645018056276026c9f967e",
+          "relation": "boundary",
+          "quote": "It is now clear that the impact of the drought on retail food prices will be smaller than initially forecast.",
+          "publication_date": null,
+          "observation_end": "2013-06-30",
+          "limitation": "说明干旱对零售食品价格冲击小于预期，属缓冲证据，但未覆盖城乡收入或贫困差距，不能证明后果B；日期未知。"
+        },
+        {
+          "evidence_id": "prior-1aa4f83c23c3609eef91",
+          "relation": "boundary",
+          "quote": "2024非都市贫困率13.7%，较2022的15.0%下降，为25年较低水平之一；都市10.2%，差距仍3.5个百分点。",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "仅提供2024年城乡贫困率对比，缺少2012年干旱后逐年直接对比，不能单独判断后果B是否因农业冲击恶化；该来源为已登记摘录，发布日期未知。"
+        },
+        {
+          "evidence_id": "ev-e94f7a96bd653f219c4d5651",
+          "relation": "counter",
+          "quote": "The U.S. rural (nonmetro) population is growing again after a decade of overall population loss, with growth of about a quarter percent from July 2020 through June 2022.",
+          "publication_date": "2024-02-22",
+          "observation_end": "2022-06-30",
+          "limitation": "证明2020—2022年非都市净迁入回升，与“难以逆转农村流向城市”方向相反；但增长部分由疫情远程办公驱动，且2010—2016年净迁移仍为负，不能证明长期单向逆转，也不涉及城乡差别后果B。"
+        },
+        {
+          "evidence_id": "prior-3a7a58f902a0dc45ab20",
+          "relation": "boundary",
+          "quote": "2010年代非都市人口下降，但2020—2024每年增长，增长来自净迁入抵消自然减少；2023—2024增加134540人，仍有51%的非都市县2020—2024人口减少。",
+          "publication_date": "2026-02-13",
+          "observation_end": "2024-12-31",
+          "limitation": "显示近期非都市净迁入持续，但仍有约半数非都市县人口减少，人口流向并非全面逆转；该来源发布日期晚于cutoff，仅作背景边界，不作为已实现结果。"
+        }
+      ],
+      "remaining_gap": "需先确认2012年干旱是否构成作者所指的“农业生产受到严重威胁”（农业总体收入坚挺可能意味着前提未触发），并补充2012年干旱后城乡收入/贫困差距的逐年直接对比数据，以分别判断后果B是否实现；人口流向的长期单向性也需更长观察窗口。",
+      "evidence_notes_placeholder": null
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "王沪宁1991年前后关于美国的复合判断：(1)若美国农业生产受到严重威胁，城乡差别将成为严重问题；(2)在当时体制下，难以想象有力量或方策能逆转人口从农村流向城市的方向。可观察口径：以真实农业严重压力事件（如2012年广泛干旱）检验是否出现城乡差距恶化；以美国非都市人口净迁移方向检验人口流向是否长期单向。反证包括：农业冲击下城乡差距未恶化、非都市净迁入持续出现、或政策/市场机制明显缓冲农业冲击。",
+  "elapsed_seconds": 49.075,
+  "completed_at": "2026-11-09T07:59:02.849431+00:00"
+}

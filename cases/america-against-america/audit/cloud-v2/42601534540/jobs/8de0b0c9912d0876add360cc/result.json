@@ -1,0 +1,1255 @@
+{
+  "claim_id": "txt-1c4066fc0c-000242553-000242574",
+  "version": "search-verifier-v2",
+  "input_sha256": "85bf6133b3a82aaa70068b547c56a7c9f47bae151737996ebbcb57e4fe1ec7e9",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000242553-000242574",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "原文主判断为“代际劣势累积使黑人问题雪球越滚越大”，并紧接真实条件句“如果社会不能找出改善黑人状况的根本方法，最后的结局很可能是更猛烈……”。操作化口径为1991—2024年黑人贫困率、教育程度、失业/劳动参与、青少年生育率、家庭结构及反黑人仇恨犯罪等分项趋势；但整体“雪球”后果无单一指标。",
+    "reason": "原文后果“雪球越滚越大”被作者置于“社会不能找出根本方法”这一真实条件之下，该条件是否成立在材料中未确定，不能把分项改善或恶化直接当作整体后果已实现。且贫困率、教育、青少年生育率等分项改善与失业反弹、男性劳动参与下降、仇恨犯罪上升并存，方向混合，无法确定整体“越滚越大”是否发生。",
+    "limitation": "“黑人社会问题”为宽泛复合概念，无综合指数；各分项方向分化，混合方向不能支撑整体扩大或缩小的终局判断。仇恨犯罪数据受报告机构减少影响，青少年生育率来源缺发表日期元数据。修订要点：按复核意见将真实条件纳入，撤销仅凭分项分化判部分符合。",
+    "evidence_ids": [
+      "prior-bb481a398dd32f114f6d",
+      "prior-5fae0ec369b77b60da9a",
+      "prior-1a54e3c46ca18197aabd",
+      "prior-5df3c44c828f5ab0ed68",
+      "prior-2a09c236dcfd5c419c2b",
+      "prior-03811aafc03c8332dbd1",
+      "prior-1db65ea6fa9284f5d724"
+    ],
+    "method": "从教育、就业与家庭环境反馈推演代际劣势累积",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-31",
+    "future_time_text": "代代相传；如果社会不能找出改善黑人状况的根本方法，最后的结局很可能是更猛烈",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-bb481a398dd32f114f6d",
+        "relation": "counter",
+        "quote": "黑人贫困率1991年32.7%、2001年22.7%；2002起黑人单一种族口径，2010年27.4%、2022年17.1%、2024年18.4%。",
+        "publication_date": "2025-09-09",
+        "observation_end": "2024-12-31",
+        "limitation": "口径在2002年由多种族改为单一种族，跨年比较需注意；贫困率下降与“问题扩大”方向相反。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-5fae0ec369b77b60da9a",
+        "relation": "counter",
+        "quote": "黑人25岁以上劳动力无高中文凭占比1992为18.2%、2018为6.4%；学士以上15.9%→31.2%。",
+        "publication_date": "2019-02-13",
+        "observation_end": "2018-12-31",
+        "limitation": "仅覆盖劳动力群体至2018年；教育改善与原文教育不足代际延续方向相反。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-1a54e3c46ca18197aabd",
+        "relation": "boundary",
+        "quote": "黑人男性劳参率1991为70.4%、2019为64.8%，总体男性75.8%→69.2%。",
+        "publication_date": "2020-02",
+        "observation_end": "2019-12-31",
+        "limitation": "劳动参与率下降可视为分项恶化，但总体男性也下降，需区分相对与绝对变化。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-5df3c44c828f5ab0ed68",
+        "relation": "boundary",
+        "quote": "黑人18岁以下儿童与两名已婚父母同住，1990为38%、2000为36%、2010为32%、2019为34%、2024为35%。",
+        "publication_date": "2026-03-25",
+        "observation_end": "2024-12-31",
+        "limitation": "家庭结构大体稳定而非持续恶化，与原文成长环境困境代际延续部分不符。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-2a09c236dcfd5c419c2b",
+        "relation": "counter",
+        "quote": "非西裔黑人15—19岁女性每千人生育率1991为118.2、2000为79.2、2010为51.5、2015为32.0。",
+        "publication_date": null,
+        "observation_end": "2015-12-31",
+        "limitation": "数据止于2015年，且来源无发表日期元数据；青少年生育率大幅下降与原文“儿童母亲”问题扩大方向相反。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "prior-03811aafc03c8332dbd1",
+        "relation": "counter",
+        "quote": "非西裔黑人15—19生育率2024比2023下降8%；黑人非婚生育比例2024为68.6%且比2023下降。",
+        "publication_date": "2026-06-09",
+        "observation_end": "2024-12-31",
+        "limitation": "非婚生育比例仍高，但趋势下降；仅证明近期方向。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-1db65ea6fa9284f5d724",
+        "relation": "support",
+        "quote": "2020年反黑人仇恨犯罪2871起，较2019年增49%；同时报告机构数减少452家。",
+        "publication_date": "2023-04-04",
+        "observation_end": "2020-12-31",
+        "limitation": "报告机构减少使增幅可能被高估或低估，单年数据不足以证明长期趋势。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺少对“黑人社会问题”整体综合指数的直接证据，且原文真实条件“社会不能找出改善黑人状况的根本方法”在观察期内是否成立未确定；各分项方向分化，无法确定整体是否“越滚越大”。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000242553-000242574",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以1991—2024年黑人贫困率、25岁以上教育程度、失业率/劳动参与率、15—19岁生育率、儿童与双亲同住比例等长期趋势为操作化口径；原文“雪球越滚越大”指黑人社会问题持续扩大，观察窗口为1991年至2024年可得数据。",
+    "reason": "多项分项呈改善而非扩大：黑人贫困率由1991年32.7%降至2024年18.4%，无高中文凭占比由1992年18.2%降至2018年6.4%，青少年生育率大幅下降，儿童与双亲同住比例1990—2024年大体稳定（38%→35%）。但失业率存在周期性反弹、黑人男性劳动参与率下降、反黑人仇恨犯罪2020年上升，且相对白人贫困率差距仍大，故为分项实质分化，非整体单向扩大。",
+    "limitation": "“黑人社会问题”为宽泛复合概念，无单一指标；贫困、教育、生育率改善与相对差距、仇恨犯罪上升并存，不能简单判为整体扩大或整体缩小。仇恨犯罪数据受报告机构减少影响。",
+    "evidence_ids": [
+      "prior-bb481a398dd32f114f6d",
+      "prior-5fae0ec369b77b60da9a",
+      "prior-1a54e3c46ca18197aabd",
+      "prior-5df3c44c828f5ab0ed68",
+      "prior-2a09c236dcfd5c419c2b",
+      "prior-03811aafc03c8332dbd1",
+      "prior-1db65ea6fa9284f5d724"
+    ],
+    "method": "从教育、就业与家庭环境反馈推演代际劣势累积",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-31",
+    "future_time_text": "代代相传",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-bb481a398dd32f114f6d",
+        "relation": "counter",
+        "quote": "黑人贫困率1991年32.7%、2001年22.7%；2002起黑人单一种族口径，2010年27.4%、2022年17.1%、2024年18.4%。",
+        "publication_date": "2025-09-09",
+        "observation_end": "2024-12-31",
+        "limitation": "口径在2002年由多种族改为单一种族，跨年比较需注意；贫困率下降与原文“问题扩大”方向相反。"
+      },
+      {
+        "evidence_id": "prior-5fae0ec369b77b60da9a",
+        "relation": "counter",
+        "quote": "黑人25岁以上劳动力无高中文凭占比1992为18.2%、2018为6.4%；学士以上15.9%→31.2%。",
+        "publication_date": "2019-02-13",
+        "observation_end": "2018-12-31",
+        "limitation": "仅覆盖劳动力群体至2018年；教育改善与原文教育不足代际延续方向相反。"
+      },
+      {
+        "evidence_id": "prior-1a54e3c46ca18197aabd",
+        "relation": "boundary",
+        "quote": "黑人男性劳参率1991为70.4%、2019为64.8%，总体男性75.8%→69.2%。",
+        "publication_date": "2020-02",
+        "observation_end": "2019-12-31",
+        "limitation": "劳动参与率下降可视为分项恶化，但总体男性也下降，需区分相对与绝对变化。"
+      },
+      {
+        "evidence_id": "prior-5df3c44c828f5ab0ed68",
+        "relation": "boundary",
+        "quote": "黑人18岁以下儿童与两名已婚父母同住，1990为38%、2000为36%、2010为32%、2019为34%、2024为35%。",
+        "publication_date": "2026-03-25",
+        "observation_end": "2024-12-31",
+        "limitation": "家庭结构大体稳定而非持续恶化，与原文成长环境困境代际延续部分不符。"
+      },
+      {
+        "evidence_id": "prior-2a09c236dcfd5c419c2b",
+        "relation": "counter",
+        "quote": "非西裔黑人15—19岁女性每千人生育率1991为118.2、2000为79.2、2010为51.5、2015为32.0。",
+        "publication_date": null,
+        "observation_end": "2015-12-31",
+        "limitation": "数据止于2015年，且来源无发表日期元数据；青少年生育率大幅下降与原文“儿童母亲”问题扩大方向相反。"
+      },
+      {
+        "evidence_id": "prior-03811aafc03c8332dbd1",
+        "relation": "counter",
+        "quote": "非西裔黑人15—19生育率2024比2023下降8%；黑人非婚生育比例2024为68.6%且比2023下降。",
+        "publication_date": "2026-06-09",
+        "observation_end": "2024-12-31",
+        "limitation": "非婚生育比例仍高，但趋势下降；仅证明近期方向。"
+      },
+      {
+        "evidence_id": "prior-1db65ea6fa9284f5d724",
+        "relation": "support",
+        "quote": "2020年反黑人仇恨犯罪2871起，较2019年增49%；同时报告机构数减少452家。",
+        "publication_date": "2023-04-04",
+        "observation_end": "2020-12-31",
+        "limitation": "报告机构减少使增幅可能被高估或低估，单年数据不足以证明长期趋势。"
+      }
+    ],
+    "remaining_gap": "缺少对“黑人社会问题”整体综合指数的直接证据；各分项方向分化，无法确定整体是否“越滚越大”。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-bb481a398dd32f114f6d",
+      "url": "https://www2.census.gov/library/publications/2025/demo/p60-287.pdf",
+      "title": "ev-lane3-poverty",
+      "published_date": "2025-09-09",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-09-09",
+        "latest": "2025-09-09"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-poverty",
+      "archive_sha256": "b99624bfd024a4f9396594d23a845d5bd581f8094401a3b469aa0a3fb6c799d1",
+      "archive_path": "data/sources/lane3-poverty.pdf",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-5fae0ec369b77b60da9a",
+      "url": "https://www.bls.gov/opub/ted/2019/rising-educational-attainment-among-blacks-or-african-americans-in-the-labor-force-1992-to-2018.htm",
+      "title": "ev-r2-l3-black-education",
+      "published_date": "2019-02-13",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2019-02-13",
+        "latest": "2019-02-13"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-black-education",
+      "archive_sha256": "3f30538af65317d935f64b1361fa2a70e45b60024bd0992922e925beb9b527b1",
+      "archive_path": "data/sources/r2-l3-open-finance-education.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-1a54e3c46ca18197aabd",
+      "url": "https://www.bls.gov/spotlight/2020/",
+      "title": "ev-r2-l3-black-labor",
+      "published_date": "2020-02",
+      "publication_date_precision": "month",
+      "publication_date_range": {
+        "earliest": "2020-02-01",
+        "latest": "2020-02-29"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-black-labor",
+      "archive_sha256": "818d556c2a1627f6baea88b924e3937e9dd2280bb5d99b17e72f8bd115228657",
+      "archive_path": "data/sources/r2-l3-open-ssa-labor-japan.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-5df3c44c828f5ab0ed68",
+      "url": "https://www.pewresearch.org/chart/st_26-03-02_america250_childparents_race/",
+      "title": "ev-r2-l3-black-family",
+      "published_date": "2026-03-25",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-03-25",
+        "latest": "2026-03-25"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-black-family",
+      "archive_sha256": "27e5e3d41f607d1df021b1726e8d6c9db2bbbadc0d5018e7a43c8a3a4a74f8da",
+      "archive_path": "data/sources/r2-l3-black-families.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-2a09c236dcfd5c419c2b",
+      "url": "https://data.cdc.gov/resource/e8kx-wbww.json?$limit=5000",
+      "title": "ev-r2-l3-teen-series",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-teen-series",
+      "archive_sha256": "f519a64b39a1d3c26b23dafe16ba1609e3768d4b168f6027e17bce3a8de7b28c",
+      "archive_path": "data/sources/r2-l3-teen-race-series.json",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-03811aafc03c8332dbd1",
+      "url": "https://www.cdc.gov/nchs/data/nvsr/nvsr75/nvsr75-2.pdf",
+      "title": "ev-r2-l3-births2024",
+      "published_date": "2026-06-09",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-06-09",
+        "latest": "2026-06-09"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-births2024",
+      "archive_sha256": "54d56e3c17777139bcdbf5154dce58d72c0981bf743a3a5ab79ba1500fc34e4c",
+      "archive_path": "data/sources/r2-l3-nss-births-targeted.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-1db65ea6fa9284f5d724",
+      "url": "https://www.justice.gov/archives/crs/highlights/2020-hate-crimes-statistics",
+      "title": "ev-lane3-antiblack",
+      "published_date": "2023-04-04",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2023-04-04",
+        "latest": "2023-04-04"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-antiblack",
+      "archive_sha256": "6421dd3859464a0f28ad8a710940827ded742300569e93dd569e4a57395f249a",
+      "archive_path": "data/sources/lane3-web-extracts.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-4dc16521d28613a641468f00",
+      "url": "https://jointcenter.org/wp-content/uploads/2024/08/The-Best-Black-Economy-in-Generations-Final.pdf",
+      "resolved_url": "https://jointcenter.org/wp-content/uploads/2024/08/The-Best-Black-Economy-in-Generations-Final.pdf",
+      "title": "2024-08 The Best Black Economy in Generations (Asante-Muhammad and Austin)",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:10.557852+00:00",
+      "archive_sha256": "7c54c907fae29f19422ade9db56c90978898a64899fc4407a1651133d6ee53ca",
+      "archive_path": "jobs/8de0b0c9912d0876add360cc/7c54c907fae29f19422ade9db56c90978898a64899fc4407a1651133d6ee53ca.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-848137c9fed53683566cb179",
+      "url": "https://www.cdc.gov/mmwr/volumes/65/wr/mm6516a1.htm",
+      "resolved_url": "https://www.cdc.gov/mmwr/volumes/65/wr/mm6516a1.htm",
+      "title": "Reduced Disparities in Birth Rates Among Teens Aged 15–19 Years — United States, 2006–2007 and 2013–2014  | MMWR",
+      "published_date": "2016-04-29",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2016-04-29",
+        "latest": "2016-04-29"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:10.557998+00:00",
+      "archive_sha256": "2a324baf80c35f95be5b5c7c7336ffa0f6c3df25657f50bf922b9fee0ebc4dc6",
+      "archive_path": "jobs/8de0b0c9912d0876add360cc/2a324baf80c35f95be5b5c7c7336ffa0f6c3df25657f50bf922b9fee0ebc4dc6.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-101598580bc17de2cb74e706",
+      "url": "https://www.census.gov/data/tables/time-series/demo/income-poverty/historical-poverty-people.html",
+      "resolved_url": "https://www.census.gov/data/tables/time-series/demo/income-poverty/historical-poverty-people.html",
+      "title": "Historical Poverty Tables: People and Families - 1959 to 2025",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:10.558078+00:00",
+      "archive_sha256": "cea55d0ea564403935ec5177ecbaa8a9452b88f9dfa440b771559dc7a18c0898",
+      "archive_path": "jobs/8de0b0c9912d0876add360cc/cea55d0ea564403935ec5177ecbaa8a9452b88f9dfa440b771559dc7a18c0898.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-89d935020557eb69034d9d6b",
+      "url": "https://cepr.net/publications/the-best-black-economy-in-generations-and-why-it-isnt-enough/",
+      "resolved_url": "https://cepr.net/publications/the-best-black-economy-in-generations-and-why-it-isnt-enough/",
+      "title": "The Best Black Economy in Generations – And Why It Isn’t Enough – CEPR",
+      "published_date": "2024-08-26",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-08-26",
+        "latest": "2024-08-26"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:20.101204+00:00",
+      "archive_sha256": "8abaa6c963165c57ad2821e9637ca513b367c07786e90751530fb48ead801580",
+      "archive_path": "jobs/8de0b0c9912d0876add360cc/8abaa6c963165c57ad2821e9637ca513b367c07786e90751530fb48ead801580.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-77efdf73c55a12796982c359",
+      "url": "https://data.bls.gov/timeseries/LNS14000006?years_option=all_years",
+      "resolved_url": "https://data.bls.gov/timeseries/LNS14000006?years_option=all_years",
+      "title": "Bureau of Labor Statistics Data",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:20.101327+00:00",
+      "archive_sha256": "28d7c24d87e24897a4057c3954676b6a9a1f6d81b8bf41ebac7cf5970b7e8b81",
+      "archive_path": "jobs/8de0b0c9912d0876add360cc/28d7c24d87e24897a4057c3954676b6a9a1f6d81b8bf41ebac7cf5970b7e8b81.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-f6148bdb79427a959423f9ba",
+      "url": "https://www.congress.gov/crs_external_products/R/PDF/R45184/R45184.6.pdf",
+      "resolved_url": "https://www.congress.gov/crs_external_products/R/PDF/R45184/R45184.6.pdf",
+      "title": "Teen Birth Trends: In Brief",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:20.101423+00:00",
+      "archive_sha256": "6b03fe93f7339f772e0ca265d4d9683ca602d38036e139505ca27ca9cdb3f082",
+      "archive_path": "jobs/8de0b0c9912d0876add360cc/6b03fe93f7339f772e0ca265d4d9683ca602d38036e139505ca27ca9cdb3f082.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "black poverty rate 1991 2024 Census historical table black unemployment education attainment trend",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "black educational attainment rising 1992 2018 BLS black teen birth rate decline CDC 1991 2024",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "black poverty rate unemployment rate 1991 2024 historical trend Census BLS black Americans economic insecurity persistent inequality",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "black educational attainment rising 1992 2018 BLS black teen birth rate decline 1991 2024 CDC black poverty rate decline 1991 2024",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "prior-2a09c236dcfd5c419c2b"
+      ],
+      "blocks_verdict": true
+    }
+  ],
+  "remaining_gap": "缺少对“黑人社会问题”整体综合指数的直接证据，且原文真实条件“社会不能找出改善黑人状况的根本方法”在观察期内是否成立未确定；各分项方向分化，无法确定整体是否“越滚越大”。",
+  "source_statuses": [
+    {
+      "url": "https://jointcenter.org/wp-content/uploads/2024/08/The-Best-Black-Economy-in-Generations-Final.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.cdc.gov/mmwr/volumes/65/wr/mm6516a1.htm",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.census.gov/data/tables/time-series/demo/income-poverty/historical-poverty-people.html",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://cepr.net/publications/the-best-black-economy-in-generations-and-why-it-isnt-enough/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://data.bls.gov/timeseries/LNS14000006?years_option=all_years",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.congress.gov/crs_external_products/R/PDF/R45184/R45184.6.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "评估王沪宁关于美国黑人因教育、就业与成长环境代际劣势累积而使黑人社会问题持续扩大的推断。可观察口径为1991—2024年黑人贫困率、25岁以上教育程度、失业率与劳动参与率、15—19岁生育率及儿童家庭结构等长期趋势；反证包括贫困或失业周期性反弹、男性劳动参与下降、反黑人仇恨犯罪上升等分项恶化。只评整体困境是否持续累积恶化，不评作者的文化因果机制。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "99a0d8a4a5cf74a72e607c747b4701c68577d169317a9a023db61ff1ba904cc7"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "7360f6376a0d61e273db5ed5b16a0f51",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "338a255eaec3fdbf487785aafec00c30",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "2d6b5503f5ce05aa0e52ff686cc27ebdcac129cea2d90698516c6ed60680bb4c"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "49288cb8957ab6708a1ceaacc1ccc9bd",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "1879872205ac59aa27ef4eec15ac7abd16053734c757a52ba68d8e43d9615e4f"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "5408a99bc3af5ea80d6add35825d7c99",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "2d5a5bfd029747d177cba0b0a25199ae",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "02f1de39896f499391cd9eda41b5f2757235d427e7e33d1744e967889bb9e39e"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "d740761ace6090ce678a06fdf557feb9",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "d592f3653776f0d3a33e3a7cf8e4d0731417fcb3b9951fa46265f94813ae37aa"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "93847309ec06c9d285b9b27f85a805054dc068d09a079412aebba5040bd06ebb"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "4cedf047eb66c245903f98ab145976959d196cb2d3e770e3e994e57c86a9d26b"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "5da820483f8ecc5a821af02779e7d23f54729c571ebe40a212227169a886b0a1"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "prior-2a09c236dcfd5c419c2b"
+          ],
+          "blocks_verdict": true
+        },
+        {
+          "code": "source_availability_unconfirmed",
+          "evidence_ids": [
+            "prior-2a09c236dcfd5c419c2b"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "prior-2a09c236dcfd5c419c2b"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-bb481a398dd32f114f6d",
+        "source_bytes": 207,
+        "shown_bytes": 207,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-5fae0ec369b77b60da9a",
+        "source_bytes": 222,
+        "shown_bytes": 222,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-1a54e3c46ca18197aabd",
+        "source_bytes": 281,
+        "shown_bytes": 281,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-5df3c44c828f5ab0ed68",
+        "source_bytes": 163,
+        "shown_bytes": 163,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-2a09c236dcfd5c419c2b",
+        "source_bytes": 137,
+        "shown_bytes": 137,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-03811aafc03c8332dbd1",
+        "source_bytes": 197,
+        "shown_bytes": 197,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-1db65ea6fa9284f5d724",
+        "source_bytes": 120,
+        "shown_bytes": 120,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-4dc16521d28613a641468f00",
+        "source_bytes": 12034,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-848137c9fed53683566cb179",
+        "source_bytes": 12102,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-101598580bc17de2cb74e706",
+        "source_bytes": 2589,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-89d935020557eb69034d9d6b",
+        "source_bytes": 12036,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-77efdf73c55a12796982c359",
+        "source_bytes": 6019,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-f6148bdb79427a959423f9ba",
+        "source_bytes": 12058,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-bb481a398dd32f114f6d",
+        "source_bytes": 207,
+        "shown_bytes": 207,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-5fae0ec369b77b60da9a",
+        "source_bytes": 222,
+        "shown_bytes": 222,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-1a54e3c46ca18197aabd",
+        "source_bytes": 281,
+        "shown_bytes": 281,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-5df3c44c828f5ab0ed68",
+        "source_bytes": 163,
+        "shown_bytes": 163,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-2a09c236dcfd5c419c2b",
+        "source_bytes": 137,
+        "shown_bytes": 137,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-03811aafc03c8332dbd1",
+        "source_bytes": 197,
+        "shown_bytes": 197,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-1db65ea6fa9284f5d724",
+        "source_bytes": 120,
+        "shown_bytes": 120,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-4dc16521d28613a641468f00",
+        "source_bytes": 12034,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-848137c9fed53683566cb179",
+        "source_bytes": 12102,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-101598580bc17de2cb74e706",
+        "source_bytes": 2589,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-89d935020557eb69034d9d6b",
+        "source_bytes": 12036,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-77efdf73c55a12796982c359",
+        "source_bytes": 6019,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-f6148bdb79427a959423f9ba",
+        "source_bytes": 12058,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-bb481a398dd32f114f6d",
+        "source_bytes": 207,
+        "shown_bytes": 207,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-5fae0ec369b77b60da9a",
+        "source_bytes": 222,
+        "shown_bytes": 222,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-1a54e3c46ca18197aabd",
+        "source_bytes": 281,
+        "shown_bytes": 281,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-5df3c44c828f5ab0ed68",
+        "source_bytes": 163,
+        "shown_bytes": 163,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-2a09c236dcfd5c419c2b",
+        "source_bytes": 137,
+        "shown_bytes": 137,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-03811aafc03c8332dbd1",
+        "source_bytes": 197,
+        "shown_bytes": 197,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-1db65ea6fa9284f5d724",
+        "source_bytes": 120,
+        "shown_bytes": 120,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-4dc16521d28613a641468f00",
+        "source_bytes": 12034,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-848137c9fed53683566cb179",
+        "source_bytes": 12102,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-101598580bc17de2cb74e706",
+        "source_bytes": 2589,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-89d935020557eb69034d9d6b",
+        "source_bytes": 12036,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-77efdf73c55a12796982c359",
+        "source_bytes": 6019,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-f6148bdb79427a959423f9ba",
+        "source_bytes": 12058,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-bb481a398dd32f114f6d",
+        "source_bytes": 207,
+        "shown_bytes": 207,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-5fae0ec369b77b60da9a",
+        "source_bytes": 222,
+        "shown_bytes": 222,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-1a54e3c46ca18197aabd",
+        "source_bytes": 281,
+        "shown_bytes": 281,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-5df3c44c828f5ab0ed68",
+        "source_bytes": 163,
+        "shown_bytes": 163,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-2a09c236dcfd5c419c2b",
+        "source_bytes": 137,
+        "shown_bytes": 137,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-03811aafc03c8332dbd1",
+        "source_bytes": 197,
+        "shown_bytes": 197,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-1db65ea6fa9284f5d724",
+        "source_bytes": 120,
+        "shown_bytes": 120,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-4dc16521d28613a641468f00",
+        "source_bytes": 12034,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-848137c9fed53683566cb179",
+        "source_bytes": 12102,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-101598580bc17de2cb74e706",
+        "source_bytes": 2589,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-89d935020557eb69034d9d6b",
+        "source_bytes": 12036,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-77efdf73c55a12796982c359",
+        "source_bytes": 6019,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-f6148bdb79427a959423f9ba",
+        "source_bytes": 12058,
+        "shown_bytes": 1769,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000242553-000242574",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原文的“雪球越滚越大”是作者对代际劣势累积机制所导致后果的推断，并非无条件断言；但更关键的是，原文紧接着给出真实条件句“如果社会不能找出改善黑人状况的根本方法，最后的结局很可能是更猛烈……”。建议把condition_state写成unconditional，遗漏了作者明确设定的条件，也未判断该条件是否发生，因此条件逻辑不成立。",
+          "source_quote": "如果社会\n不能找出改善黑人状况的根本方法，最后的结局很可能是更猛烈",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议以贫困率、教育、生育率等分项改善与失业、劳参、仇恨犯罪等分项恶化并存为由判“部分符合”，但原文后果是“黑人问题的雪球越滚越大”这一整体扩大判断。所列改善分项直接指向问题缩小，恶化分项则指向扩大，属于混合方向而非同一后果内部有明确部分实现、部分未实现；且建议未先确认作者设定的“社会不能找出根本方法”条件是否触发。按口径，混合方向不能直接支撑部分符合，应保留条件状态并说明整体后果无法由这些分化指标确定。",
+          "source_quote": "多项分项呈改善而非扩大：黑人贫困率由1991年32.",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需先核对原文真实条件“社会不能找出改善黑人状况的根本方法”在观察期内是否成立或未知，再据此判断“雪球越滚越大”的整体后果；若条件未知，应保留条件未定，而不能仅凭分项方向分化判部分符合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000242553-000242574",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000242553-000242574",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以1991—2024年黑人贫困率、25岁以上教育程度、失业率/劳动参与率、15—19岁生育率、儿童与双亲同住比例等长期趋势为操作化口径；原文“雪球越滚越大”指黑人社会问题持续扩大，观察窗口为1991年至2024年可得数据。",
+      "reason": "多项分项呈改善而非扩大：黑人贫困率由1991年32.7%降至2024年18.4%，无高中文凭占比由1992年18.2%降至2018年6.4%，青少年生育率大幅下降，儿童与双亲同住比例1990—2024年大体稳定（38%→35%）。但失业率存在周期性反弹、黑人男性劳动参与率下降、反黑人仇恨犯罪2020年上升，且相对白人贫困率差距仍大，故为分项实质分化，非整体单向扩大。",
+      "limitation": "“黑人社会问题”为宽泛复合概念，无单一指标；贫困、教育、生育率改善与相对差距、仇恨犯罪上升并存，不能简单判为整体扩大或整体缩小。仇恨犯罪数据受报告机构减少影响。",
+      "evidence_ids": [
+        "prior-bb481a398dd32f114f6d",
+        "prior-5fae0ec369b77b60da9a",
+        "prior-1a54e3c46ca18197aabd",
+        "prior-5df3c44c828f5ab0ed68",
+        "prior-2a09c236dcfd5c419c2b",
+        "prior-03811aafc03c8332dbd1",
+        "prior-1db65ea6fa9284f5d724"
+      ],
+      "method": "从教育、就业与家庭环境反馈推演代际劣势累积",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "代代相传",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-bb481a398dd32f114f6d",
+          "relation": "counter",
+          "quote": "黑人贫困率1991年32.7%、2001年22.7%；2002起黑人单一种族口径，2010年27.4%、2022年17.1%、2024年18.4%。",
+          "publication_date": "2025-09-09",
+          "observation_end": "2024-12-31",
+          "limitation": "口径在2002年由多种族改为单一种族，跨年比较需注意；贫困率下降与原文“问题扩大”方向相反。"
+        },
+        {
+          "evidence_id": "prior-5fae0ec369b77b60da9a",
+          "relation": "counter",
+          "quote": "黑人25岁以上劳动力无高中文凭占比1992为18.2%、2018为6.4%；学士以上15.9%→31.2%。",
+          "publication_date": "2019-02-13",
+          "observation_end": "2018-12-31",
+          "limitation": "仅覆盖劳动力群体至2018年；教育改善与原文教育不足代际延续方向相反。"
+        },
+        {
+          "evidence_id": "prior-1a54e3c46ca18197aabd",
+          "relation": "boundary",
+          "quote": "黑人男性劳参率1991为70.4%、2019为64.8%，总体男性75.8%→69.2%。",
+          "publication_date": "2020-02",
+          "observation_end": "2019-12-31",
+          "limitation": "劳动参与率下降可视为分项恶化，但总体男性也下降，需区分相对与绝对变化。"
+        },
+        {
+          "evidence_id": "prior-5df3c44c828f5ab0ed68",
+          "relation": "boundary",
+          "quote": "黑人18岁以下儿童与两名已婚父母同住，1990为38%、2000为36%、2010为32%、2019为34%、2024为35%。",
+          "publication_date": "2026-03-25",
+          "observation_end": "2024-12-31",
+          "limitation": "家庭结构大体稳定而非持续恶化，与原文成长环境困境代际延续部分不符。"
+        },
+        {
+          "evidence_id": "prior-2a09c236dcfd5c419c2b",
+          "relation": "counter",
+          "quote": "非西裔黑人15—19岁女性每千人生育率1991为118.2、2000为79.2、2010为51.5、2015为32.0。",
+          "publication_date": null,
+          "observation_end": "2015-12-31",
+          "limitation": "数据止于2015年，且来源无发表日期元数据；青少年生育率大幅下降与原文“儿童母亲”问题扩大方向相反。"
+        },
+        {
+          "evidence_id": "prior-03811aafc03c8332dbd1",
+          "relation": "counter",
+          "quote": "非西裔黑人15—19生育率2024比2023下降8%；黑人非婚生育比例2024为68.6%且比2023下降。",
+          "publication_date": "2026-06-09",
+          "observation_end": "2024-12-31",
+          "limitation": "非婚生育比例仍高，但趋势下降；仅证明近期方向。"
+        },
+        {
+          "evidence_id": "prior-1db65ea6fa9284f5d724",
+          "relation": "support",
+          "quote": "2020年反黑人仇恨犯罪2871起，较2019年增49%；同时报告机构数减少452家。",
+          "publication_date": "2023-04-04",
+          "observation_end": "2020-12-31",
+          "limitation": "报告机构减少使增幅可能被高估或低估，单年数据不足以证明长期趋势。"
+        }
+      ],
+      "remaining_gap": "缺少对“黑人社会问题”整体综合指数的直接证据；各分项方向分化，无法确定整体是否“越滚越大”。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000242553-000242574",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "原文主判断为“代际劣势累积使黑人问题雪球越滚越大”，并紧接真实条件句“如果社会不能找出改善黑人状况的根本方法，最后的结局很可能是更猛烈……”。操作化口径为1991—2024年黑人贫困率、教育程度、失业/劳动参与、青少年生育率、家庭结构及反黑人仇恨犯罪等分项趋势；但整体“雪球”后果无单一指标。",
+      "reason": "原文后果“雪球越滚越大”被作者置于“社会不能找出根本方法”这一真实条件之下，该条件是否成立在材料中未确定，不能把分项改善或恶化直接当作整体后果已实现。且贫困率、教育、青少年生育率等分项改善与失业反弹、男性劳动参与下降、仇恨犯罪上升并存，方向混合，无法确定整体“越滚越大”是否发生。",
+      "limitation": "“黑人社会问题”为宽泛复合概念，无综合指数；各分项方向分化，混合方向不能支撑整体扩大或缩小的终局判断。仇恨犯罪数据受报告机构减少影响，青少年生育率来源缺发表日期元数据。修订要点：按复核意见将真实条件纳入，撤销仅凭分项分化判部分符合。",
+      "evidence_ids": [
+        "prior-bb481a398dd32f114f6d",
+        "prior-5fae0ec369b77b60da9a",
+        "prior-1a54e3c46ca18197aabd",
+        "prior-5df3c44c828f5ab0ed68",
+        "prior-2a09c236dcfd5c419c2b",
+        "prior-03811aafc03c8332dbd1",
+        "prior-1db65ea6fa9284f5d724"
+      ],
+      "method": "从教育、就业与家庭环境反馈推演代际劣势累积",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "代代相传；如果社会不能找出改善黑人状况的根本方法，最后的结局很可能是更猛烈",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-bb481a398dd32f114f6d",
+          "relation": "counter",
+          "quote": "黑人贫困率1991年32.7%、2001年22.7%；2002起黑人单一种族口径，2010年27.4%、2022年17.1%、2024年18.4%。",
+          "publication_date": "2025-09-09",
+          "observation_end": "2024-12-31",
+          "limitation": "口径在2002年由多种族改为单一种族，跨年比较需注意；贫困率下降与“问题扩大”方向相反。"
+        },
+        {
+          "evidence_id": "prior-5fae0ec369b77b60da9a",
+          "relation": "counter",
+          "quote": "黑人25岁以上劳动力无高中文凭占比1992为18.2%、2018为6.4%；学士以上15.9%→31.2%。",
+          "publication_date": "2019-02-13",
+          "observation_end": "2018-12-31",
+          "limitation": "仅覆盖劳动力群体至2018年；教育改善与原文教育不足代际延续方向相反。"
+        },
+        {
+          "evidence_id": "prior-1a54e3c46ca18197aabd",
+          "relation": "boundary",
+          "quote": "黑人男性劳参率1991为70.4%、2019为64.8%，总体男性75.8%→69.2%。",
+          "publication_date": "2020-02",
+          "observation_end": "2019-12-31",
+          "limitation": "劳动参与率下降可视为分项恶化，但总体男性也下降，需区分相对与绝对变化。"
+        },
+        {
+          "evidence_id": "prior-5df3c44c828f5ab0ed68",
+          "relation": "boundary",
+          "quote": "黑人18岁以下儿童与两名已婚父母同住，1990为38%、2000为36%、2010为32%、2019为34%、2024为35%。",
+          "publication_date": "2026-03-25",
+          "observation_end": "2024-12-31",
+          "limitation": "家庭结构大体稳定而非持续恶化，与原文成长环境困境代际延续部分不符。"
+        },
+        {
+          "evidence_id": "prior-2a09c236dcfd5c419c2b",
+          "relation": "counter",
+          "quote": "非西裔黑人15—19岁女性每千人生育率1991为118.2、2000为79.2、2010为51.5、2015为32.0。",
+          "publication_date": null,
+          "observation_end": "2015-12-31",
+          "limitation": "数据止于2015年，且来源无发表日期元数据；青少年生育率大幅下降与原文“儿童母亲”问题扩大方向相反。"
+        },
+        {
+          "evidence_id": "prior-03811aafc03c8332dbd1",
+          "relation": "counter",
+          "quote": "非西裔黑人15—19生育率2024比2023下降8%；黑人非婚生育比例2024为68.6%且比2023下降。",
+          "publication_date": "2026-06-09",
+          "observation_end": "2024-12-31",
+          "limitation": "非婚生育比例仍高，但趋势下降；仅证明近期方向。"
+        },
+        {
+          "evidence_id": "prior-1db65ea6fa9284f5d724",
+          "relation": "support",
+          "quote": "2020年反黑人仇恨犯罪2871起，较2019年增49%；同时报告机构数减少452家。",
+          "publication_date": "2023-04-04",
+          "observation_end": "2020-12-31",
+          "limitation": "报告机构减少使增幅可能被高估或低估，单年数据不足以证明长期趋势。"
+        }
+      ],
+      "remaining_gap": "缺少对“黑人社会问题”整体综合指数的直接证据，且原文真实条件“社会不能找出改善黑人状况的根本方法”在观察期内是否成立未确定；各分项方向分化，无法确定整体是否“越滚越大”。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "评估王沪宁关于美国黑人因教育、就业与成长环境代际劣势累积而使黑人社会问题持续扩大的推断；可观察口径为1991—2024年黑人贫困率、教育 attainment、失业/劳动参与、青少年生育率及家庭结构等长期趋势，反证包括贫困或失业周期性反弹、男性劳动参与下降、反黑人仇恨犯罪上升等分项恶化。",
+  "elapsed_seconds": 40.157,
+  "completed_at": "2026-11-09T10:35:42.495699+00:00"
+}

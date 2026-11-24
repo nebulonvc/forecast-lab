@@ -1,0 +1,70 @@
+{
+  "id": "txt-5386516eaf-002743108-002743247",
+  "assess": {
+    "id": "txt-5386516eaf-002743108-002743247",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "法国和其他地方的有势力阶级将必须丢掉对一切带社会主义味道的想法的不加区别的反感。",
+    "reason": "社会民主党和工会的材料写的是组织和党员，不是有势力阶级是否丢掉了对社会主义想法的不加区别的反感。",
+    "limitation": "政党存在不是反感消失。",
+    "evidence_ids": [
+      "ev-union-density"
+    ],
+    "method": "支持检索反感是否被丢掉，反证检索反感是否仍在。没有得到反感本身的正文。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-union-density",
+        "quote": "the UK (50 per cent to 26 per cent)",
+        "relation": "boundary",
+        "limitation": "工会密度不是反感。",
+        "observation_end": "2014-12-31",
+        "publication_date": "2014",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺有势力阶级对社会主义想法的不加区别的反感是否已经必须丢掉。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-002743108-002743247",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "elites dropped blanket hostility to socialist ideas"
+      },
+      {
+        "role": "counter",
+        "query": "antipathy to socialism remained among influential classes"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://pure.mpg.de/rest/items/item_2383436/component/file_2554298/content"
+    ],
+    "reason": "密度不是反感。"
+  }
+}

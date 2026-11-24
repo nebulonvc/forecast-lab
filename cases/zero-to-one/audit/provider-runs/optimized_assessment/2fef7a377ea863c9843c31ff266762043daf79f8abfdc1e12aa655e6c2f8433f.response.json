@@ -1,0 +1,28 @@
+{
+  "id": "46c3e689-107f-41dc-8155-1fb1f6649e0c",
+  "object": "chat.completion",
+  "created": 1794201594,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000087298-000087326\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"原文称创始人特质循环：从不同寻常之人开始，最终表现更非比寻常；未给出可量化指标、对象样本或期限，无法在观察窗口内客观操作化。\",\"reason\":\"该句是对创始人特质被夸大并自我强化的机制性描述，缺乏可检验的指标与时间终点。现有材料未提供任何创始人特质变化的客观观察数据，无法判断方向。\",\"limitation\":\"“非比寻常”属主观评价，且原文本身以“或许”讨论夸大机制，难以回顾性量化；无证据可用。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"最终\",\"condition_state\":\"unconditional\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000089859-000089885\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文以“也许”对摇滚明星英年早逝与永恒名声作修辞性评论，非可检验的未来预测。\",\"reason\":\"该句是带讽刺意味的修辞表达，不是对可观测未来事件的预测，应排除出预测评估。\",\"limitation\":\"若按字面理解也涉及“永远”与主观名声，无法操作化；此处按非预测处理。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"永远\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5214,
+    "completion_tokens": 356,
+    "total_tokens": 5570,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 4446
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

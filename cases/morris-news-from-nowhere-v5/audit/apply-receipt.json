@@ -1,0 +1,12 @@
+{
+  "rules": "simple-v3-trend-four-class",
+  "response_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "input_claims_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "evidence_table_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "config_sha256": "0e542112c3f5576abe78b1f6f0e5340f379254dadcd4bb7a5ab2957b583b09bd",
+  "reviewer": "llm_with_session_review",
+  "human_reviewed": false,
+  "assessment_timing": "retrospective",
+  "apply_printed": "accepted assess 0",
+  "note": "pipeline apply 只把 receipt 写进每条主张。本轮主张为零，claims.jsonl 保持空文件，receipt 没有被写进主张表。这里的字段按 apply 当时哈希的同一批文件计算。输入与响应的原始字节是两个空文件，SHA-256 都是 e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855。"
+}

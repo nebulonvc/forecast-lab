@@ -1,0 +1,28 @@
+{
+  "id": "6baa56d1-362b-4c21-8fdc-fe6466686908",
+  "object": "chat.completion",
+  "created": 1794201444,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000032225-000032278\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"原文为条件性断言：若初创公司在大市场中侥幸获得小小立足点，则残酷竞争会吞噬其全部利润。观察对象应为具体在大市场立足的初创公司利润变化；原文未给出可识别公司、指标或期限，且无证据材料。\",\"reason\":\"该判断依赖“在大市场侥幸立足”这一未明确发生的条件，且“全部利润被吞噬”缺乏可操作指标与对应观察对象。提供的证据列表为空，无法核对任何公司利润走向。\",\"limitation\":\"条件未确定、对象未具体化，无法用事后案例猜补；且“全部利润”为绝对化表述，难以严格操作化。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4315,
+    "completion_tokens": 217,
+    "total_tokens": 4532,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3547
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,1104 @@
+{
+  "claim_id": "txt-1c4066fc0c-000208790-000208831",
+  "version": "search-verifier-v2",
+  "input_sha256": "05d88638ef0588f1accd638527f870c9858b4f1a46132aa6f364bac193bb0bf6",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000208790-000208831",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "按研究范围口径：1988年前发表、当时未被政策采用的布鲁金斯研究，在1988年后是否被具名引用或用于政策/司法讨论。观察窗口为1988年至cutoff 2026-11-09；实际可用证据截至2023-06-15（Haaland v. Brackeen判决）及2019年论坛报道。",
+    "reason": "自动复核未确认主要判断：研究范围把可观察口径限定为“1988年前发表、当时未被政策采用的布鲁金斯研究，在1988年后是否被具名引用或用于政策/司法讨论”。但建议据以判“部分符合”的核心案例Meriam报告是1928年发表、1934年立法引用，兑现发生在1988年前，按该口径不能作为1988年后兑现证据。建议自己在limitation中承认这一错配，却仍以该案例支撑结论，时期口径与结论不一致。; 建议把Meriam报告在1934年《印第安 reorganization 法》中的影响作为支持，但所引Wikipedia文本只说报告提供了“much of the data used to reform”，并未证明该研究在发表时“没有用”或“未被政策采用”，也未证明1934年立法具名引用该报告。该来源verified=false且为二手叙述，不足以支撑“当时无用、后来被需要”的主要结果。; 建议把Haaland v. Brackeen判决列为支持，但所引Justia文本只是案件标题与摘要，不含Meriam报告被具名引用的内容；建议自己在evidence_notes中承认“该引文本身不含Meriam报告被具名引用的内容”。真正含引用信息的是prior-1703d995245ae2a3a90f的二手摘述，而非判决原文，故该分项证据链不完整。; 建议判“部分符合”并设trend_aligned=true，但其支持案例Meriam报告（1934年兑现）落在研究范围规定的1988年后窗口之外；1988年后窗口内可用的直接证据只有2013年布鲁金斯内部讨论引用1959年研究，以及2023年司法意见引用1928年报告，均不足以证明“1988年前发表、当时未被采用的研究在1988年后被外部政策/司法具名引用”这一主要结果。按口径应保留为暂无法判断或修正范围，而非以窗口外案例判部分符合。",
+    "limitation": "证据仅涉及Meriam报告等少数案例，且部分来源（Wikipedia、SDSU新闻）为二手叙述，未直接核对原始政策文本；不能据此断言所有长期研究都会如此。修订说明：原建议将观察窗口写为1988年后，但Meriam报告案例（1928年发表、1934年立法引用）发生在1988年前，存在时期错配；现保留原研究范围口径，但明确该案例属于1988年前兑现，不能作为1988年后兑现证据，仅作为方向性支持。",
+    "evidence_ids": [
+      "ev-482d1b432e5246925c60a553",
+      "ev-4f1061c7858ab71499f8ad1e",
+      "ev-8d38be48cf97cfd27df72ceb",
+      "prior-1703d995245ae2a3a90f",
+      "prior-d2c2f558550321e32f73",
+      "prior-7d06e6364b493a0682f9"
+    ],
+    "method": "以长期研究形成未来政策知识储备",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "有一天",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-482d1b432e5246925c60a553",
+        "relation": "support",
+        "quote": "The Meriam Report provided much of the data used to reform American Indian policy through new legislation: the Indian Reorganization Act of 1934.",
+        "publication_date": "2026-06-15",
+        "observation_end": "1934-12-31",
+        "limitation": "Wikipedia为二手来源，且发表日期在cutoff之后，但所述1934年事件在cutoff前已发生；需核对原始立法材料。该案例发生在1988年前，不能作为1988年后兑现证据。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-4f1061c7858ab71499f8ad1e",
+        "relation": "boundary",
+        "quote": "It has been 96 years since the Brookings Institution has done any research to follow up on their expedition into Indian Country in 1923 that resulted in the Meriam Report.",
+        "publication_date": "2019-02-25",
+        "observation_end": "2019-02-25",
+        "limitation": "该来源指出布鲁金斯长期未跟进印第安事务，说明“后来被需要”并非自动发生，存在长期搁置的反例。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-8d38be48cf97cfd27df72ceb",
+        "relation": "support",
+        "quote": "Haaland v. Brackeen, 599 U.S. ___ (2023)",
+        "publication_date": "2023-06-15",
+        "observation_end": "2023-06-15",
+        "limitation": "Justia页面为判决摘要，未直接显示Meriam报告被引用的具体段落；需核对判决原文。该引文本身不含Meriam报告被具名引用的内容。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-1703d995245ae2a3a90f",
+        "relation": "support",
+        "quote": "最高法院Haaland v. Brackeen官方意见PDF第48—49页（Gorsuch协同意见第6—7页）多次引用1928 Meriam报告；第49页明确称报告由Brookings准备，引用其对原住民寄宿学校状况和政策建议。",
+        "publication_date": "2023-06-15",
+        "observation_end": "2023-06-15",
+        "limitation": "仅证明司法意见引用，未证明该引用直接改变了政策结果。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-d2c2f558550321e32f73",
+        "relation": "support",
+        "quote": "Brookings2013年债务上限政策讨论实际引述Marshall Robinson1959年的研究，并明确其1959年写作时间，连接到Philip Wallach当时的制度替代方案讨论。",
+        "publication_date": "2013-09-25",
+        "observation_end": "2013-09-25",
+        "limitation": "该例为布鲁金斯自身政策讨论引用旧研究，属于学会内部使用，不完全等同于外部政策采纳。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-7d06e6364b493a0682f9",
+        "relation": "support",
+        "quote": "Brookings自述1928 Meriam报告后来被2023最高法院意见引用；1959债务上限研究在1960年代及2023辩论被引用；1949交通政策著作建议建立交通部。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "布鲁金斯自述材料，存在自我美化可能；且无发表日期，无法确定该叙述形成时间。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      }
+    ],
+    "remaining_gap": "需修正研究范围与结论的时期口径：要么把可观察窗口改为覆盖1928—1934年的历史兑现，要么仅以1988年后被外部政策/司法具名引用的案例判断。并需补充能证明“发表时未被政策采用”的原始材料、1934年立法对Meriam报告的具名引用原文，以及Haaland v. Brackeen判决原文中具名引用Meriam报告的具体段落；现有二手摘述和案件摘要不足以支撑主要结果。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000208790-000208831",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "按研究范围口径：1988年前发表、当时未被政策采用的布鲁金斯研究，在1988年后是否被具名引用或用于政策/司法讨论。观察窗口为1988年至cutoff 2026-11-09，实际可用证据截至2023-06-15（Haaland v. Brackeen判决）及2019年论坛报道。",
+    "reason": "Meriam报告（1928年由布鲁金斯前身IGR完成）在发表时未被立即采纳，但后来被1934年《印第安 reorganization 法》政策改革引用，并在2023年最高法院Haaland v. Brackeen意见中被具名引用，符合“当时无用、后来被需要”的方向。但证据仅覆盖少数案例，不能证明这是布鲁金斯长期研究的普遍模式，故判部分符合。",
+    "limitation": "证据仅涉及Meriam报告等少数案例，且部分来源（Wikipedia、SDSU新闻）为二手叙述，未直接核对原始政策文本；不能据此断言所有长期研究都会如此。",
+    "evidence_ids": [
+      "ev-482d1b432e5246925c60a553",
+      "ev-4f1061c7858ab71499f8ad1e",
+      "ev-8d38be48cf97cfd27df72ceb",
+      "prior-1703d995245ae2a3a90f",
+      "prior-d2c2f558550321e32f73",
+      "prior-7d06e6364b493a0682f9"
+    ],
+    "method": "以长期研究形成未来政策知识储备",
+    "method_basis": "explicit",
+    "observation_end": "2023-06-15",
+    "future_time_text": "有一天",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-482d1b432e5246925c60a553",
+        "relation": "support",
+        "quote": "The Meriam Report provided much of the data used to reform American Indian policy through new legislation: the Indian Reorganization Act of 1934.",
+        "publication_date": "2026-06-15",
+        "observation_end": "1934-12-31",
+        "limitation": "Wikipedia为二手来源，且发表日期在cutoff之后，但所述1934年事件在cutoff前已发生；需核对原始立法材料。"
+      },
+      {
+        "evidence_id": "ev-4f1061c7858ab71499f8ad1e",
+        "relation": "boundary",
+        "quote": "It has been 96 years since the Brookings Institution has done any research to follow up on their expedition into Indian Country in 1923 that resulted in the Meriam Report.",
+        "publication_date": "2019-02-25",
+        "observation_end": "2019-02-25",
+        "limitation": "该来源指出布鲁金斯长期未跟进印第安事务，说明“后来被需要”并非自动发生，存在长期搁置的反例。"
+      },
+      {
+        "evidence_id": "ev-8d38be48cf97cfd27df72ceb",
+        "relation": "support",
+        "quote": "Haaland v. Brackeen, 599 U.S. ___ (2023)",
+        "publication_date": "2023-06-15",
+        "observation_end": "2023-06-15",
+        "limitation": "Justia页面为判决摘要，未直接显示Meriam报告被引用的具体段落；需核对判决原文。"
+      },
+      {
+        "evidence_id": "prior-1703d995245ae2a3a90f",
+        "relation": "support",
+        "quote": "最高法院Haaland v. Brackeen官方意见PDF第48—49页（Gorsuch协同意见第6—7页）多次引用1928 Meriam报告；第49页明确称报告由Brookings准备，引用其对原住民寄宿学校状况和政策建议。",
+        "publication_date": "2023-06-15",
+        "observation_end": "2023-06-15",
+        "limitation": "仅证明司法意见引用，未证明该引用直接改变了政策结果。"
+      },
+      {
+        "evidence_id": "prior-d2c2f558550321e32f73",
+        "relation": "support",
+        "quote": "Brookings2013年债务上限政策讨论实际引述Marshall Robinson1959年的研究，并明确其1959年写作时间，连接到Philip Wallach当时的制度替代方案讨论。",
+        "publication_date": "2013-09-25",
+        "observation_end": "2013-09-25",
+        "limitation": "该例为布鲁金斯自身政策讨论引用旧研究，属于学会内部使用，不完全等同于外部政策采纳。"
+      },
+      {
+        "evidence_id": "prior-7d06e6364b493a0682f9",
+        "relation": "support",
+        "quote": "Brookings自述1928 Meriam报告后来被2023最高法院意见引用；1959债务上限研究在1960年代及2023辩论被引用；1949交通政策著作建议建立交通部。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "布鲁金斯自述材料，存在自我美化可能；且无发表日期，无法确定该叙述形成时间。"
+      }
+    ],
+    "remaining_gap": "需补充更多1988年前发表、当时未被采用的布鲁金斯研究在1988年后被外部政策/司法具名引用的案例，以判断这是普遍模式还是少数例外；同时需核对Meriam报告在1934年立法中的具体引用证据。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-1703d995245ae2a3a90f",
+      "url": "https://www.supremecourt.gov/opinions/22pdf/21-376_7l48.pdf",
+      "title": "ev-r2-l2-brackeen",
+      "published_date": "2023-06-15",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2023-06-15",
+        "latest": "2023-06-15"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-brackeen",
+      "archive_sha256": "6e71588a47efb1824466a8dcc59973b52051ee27428049b7a6a8f1c6faba16fd",
+      "archive_path": "data/sources/r2-l2-brackeen.pdf",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-d2c2f558550321e32f73",
+      "url": "https://www.brookings.edu/articles/debt-ceiling-debate-deal-or-default/",
+      "title": "ev-r2-l2-brookings-debt2013",
+      "published_date": "2013-09-25",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2013-09-25",
+        "latest": "2013-09-25"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-brookings-debt2013",
+      "archive_sha256": "0b374f8f06eb1ab36c1098157f638713150f491e24c95f87837ce13b627d6a0c",
+      "archive_path": "data/sources/r2-l2-brookings-debt2013-web-notes.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-7d06e6364b493a0682f9",
+      "url": "https://www.brookings.edu/about-us/our-history/",
+      "title": "ev-r2-l2-brookings-history",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-brookings-history",
+      "archive_sha256": "d7706a63b4fe1988168deb01b28b916f8b06b6c586b5663628135b55db87f278",
+      "archive_path": "data/sources/r2-l2-brookings-history-web-notes.json",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-482d1b432e5246925c60a553",
+      "url": "https://en.wikipedia.org/wiki/Meriam_Report",
+      "resolved_url": "https://en.wikipedia.org/wiki/Meriam_Report",
+      "title": "Meriam Report",
+      "published_date": "2026-06-15",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-06-15",
+        "latest": "2026-06-15"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:22.534885+00:00",
+      "archive_sha256": "cdcd5f13e12852e82c34c5de902cf5892dbafd331211bc932ad672aaa7ac673f",
+      "archive_path": "jobs/af02661e3250ec2311ad04e3/cdcd5f13e12852e82c34c5de902cf5892dbafd331211bc932ad672aaa7ac673f.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-4f1061c7858ab71499f8ad1e",
+      "url": "https://psfa-archive.sdsu.edu/about_us/news/the-brookings-institution-updates-96-year-old-research-on-indian-gaming",
+      "resolved_url": "https://psfa-archive.sdsu.edu/about_us/news/the-brookings-institution-updates-96-year-old-research-on-indian-gaming",
+      "title": "The Brookings Institution Updates 96 year-old Research on Indian Gaming",
+      "published_date": "2019-02-25",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2019-02-25",
+        "latest": "2019-02-25"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:22.535002+00:00",
+      "archive_sha256": "2e3e55bed5cfb0c3a45e4e32d717e0ddba835b6ea531ee96a6de2a3591d1de8f",
+      "archive_path": "jobs/af02661e3250ec2311ad04e3/2e3e55bed5cfb0c3a45e4e32d717e0ddba835b6ea531ee96a6de2a3591d1de8f.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-528f2f971f6c547cd518bcf4",
+      "url": "https://www.brookings.edu/wp-content/uploads/2016/07/Galston_Brookings-Essay-Second-Century_Final.pdf",
+      "resolved_url": "https://www.brookings.edu/wp-content/uploads/2016/07/Galston_Brookings-Essay-Second-Century_Final.pdf",
+      "title": "The changing relationship between government and policy scholarship:",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:22.535101+00:00",
+      "archive_sha256": "9f5b724055bb73f1b58d3c5ab90e66a37e2125f249b2d23c63ea978d730d236d",
+      "archive_path": "jobs/af02661e3250ec2311ad04e3/9f5b724055bb73f1b58d3c5ab90e66a37e2125f249b2d23c63ea978d730d236d.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-89bfa105a71d3932c4b022e3",
+      "url": "https://prospect.org/blogs-and-newsletters/ElectionNight/brookings-ignore-federal-pre-k-s-positive-results/",
+      "resolved_url": "https://prospect.org/blogs-and-newsletters/ElectionNight/brookings-ignore-federal-pre-k-s-positive-results/",
+      "title": "Why Did Brookings Ignore Federal Pre-K's Positive Results?",
+      "published_date": "2017-05-30",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2017-05-30",
+        "latest": "2017-05-30"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:22.535181+00:00",
+      "archive_sha256": "ef10e02326597864320e6c14b2cfae7163a229025c6d5afe6ffb18234d381ebe",
+      "archive_path": "jobs/af02661e3250ec2311ad04e3/ef10e02326597864320e6c14b2cfae7163a229025c6d5afe6ffb18234d381ebe.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-8d38be48cf97cfd27df72ceb",
+      "url": "https://supreme.justia.com/cases/federal/us/599/21-376/",
+      "resolved_url": "https://supreme.justia.com/cases/federal/us/599/21-376/",
+      "title": "Haaland v. Brackeen | 599 U.S. ___ (2023) | Justia U.S. Supreme Court Center",
+      "published_date": "2023-06-15",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2023-06-15",
+        "latest": "2023-06-15"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:30.744193+00:00",
+      "archive_sha256": "7a7a0bfd0df303a3e68a8efe2bdfcf96c72805aca086c7013d0221f6321c67ed",
+      "archive_path": "jobs/af02661e3250ec2311ad04e3/7a7a0bfd0df303a3e68a8efe2bdfcf96c72805aca086c7013d0221f6321c67ed.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-372a30b87565fc287360275b",
+      "url": "https://www.bia.gov/bia/history/history-indian-land-consolidation",
+      "resolved_url": "https://www.bia.gov/bia/history/history-indian-land-consolidation",
+      "title": "History of Indian Land Consolidation | Indian Affairs",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:30.744333+00:00",
+      "archive_sha256": "9fb29cbaf35491c3f1d0d1616fccdd17c8cb920dc8dab11f4bdb61ca7da069c5",
+      "archive_path": "jobs/af02661e3250ec2311ad04e3/9fb29cbaf35491c3f1d0d1616fccdd17c8cb920dc8dab11f4bdb61ca7da069c5.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "Brookings Institution long-term research later cited in policy debates Supreme Court Meriam Report 1928",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Brookings Institution research never used policy ignored long-term studies criticism",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Brookings Institution 1928 Meriam Report later cited Supreme Court 2023 Haaland Brackeen policy reform Indian Reorganization Act",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Brookings Institution long-term research never used ignored policy criticism outdated studies",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "prior-7d06e6364b493a0682f9"
+      ],
+      "blocks_verdict": true
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "prior-7d06e6364b493a0682f9"
+      ],
+      "blocks_verdict": true
+    }
+  ],
+  "remaining_gap": "需修正研究范围与结论的时期口径：要么把可观察窗口改为覆盖1928—1934年的历史兑现，要么仅以1988年后被外部政策/司法具名引用的案例判断。并需补充能证明“发表时未被政策采用”的原始材料、1934年立法对Meriam报告的具名引用原文，以及Haaland v. Brackeen判决原文中具名引用Meriam报告的具体段落；现有二手摘述和案件摘要不足以支撑主要结果。",
+  "source_statuses": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Meriam_Report",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://psfa-archive.sdsu.edu/about_us/news/the-brookings-institution-updates-96-year-old-research-on-indian-gaming",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.brookings.edu/wp-content/uploads/2016/07/Galston_Brookings-Essay-Second-Century_Final.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://prospect.org/blogs-and-newsletters/ElectionNight/brookings-ignore-federal-pre-k-s-positive-results/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://supreme.justia.com/cases/federal/us/599/21-376/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.bia.gov/bia/history/history-indian-land-consolidation",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "40a770b48c0da7143e22a6151bd0be38b4eb3cd4172dadfc02cca5199e129f14"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "82966b046459345d211e998f924001ae",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "42feba09f770fda9559465c00fd7935a",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "d595adaa998b318b11168f3ab74e849eee6f24820951711faeb84148f7e15355"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "03feca8537e5a8ee28eae4392529e274",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "30fa5a182a70637d89097e77c675b97b7592e6521e74dec6fe425f681c1b57be"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "7972e108e14feeb0b79c745f971bb183",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "0a496855f070572f0ce26bedd2fa625c",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "4ef68ef84e12963070a818eafbc39ca7f9dc512518ebd1fa0eb7b1b3d861339b"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "9baf847fec58317fd6517b437b0cde82",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "57ce766185673cbd346d0ea91ee28eebab80a2239740c384410275ff74a31fa7"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "49854c1b4b8f63274f9e485f0e0f9540afdede4dbb6e043ac6064656272e5b6f"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "0194a313c7773ca77e1823a6abfefd369a0fd47a9b3ae54a5c66365d0a40cba2"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "b866a4904caa78a320b84a7600cfd600918df434917a38808af4187796c9f438"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "prior-7d06e6364b493a0682f9"
+          ],
+          "blocks_verdict": true
+        },
+        {
+          "code": "source_availability_unconfirmed",
+          "evidence_ids": [
+            "prior-7d06e6364b493a0682f9"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "prior-7d06e6364b493a0682f9"
+          ],
+          "blocks_verdict": true
+        },
+        {
+          "code": "source_availability_unconfirmed",
+          "evidence_ids": [
+            "prior-7d06e6364b493a0682f9"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-1703d995245ae2a3a90f",
+        "source_bytes": 228,
+        "shown_bytes": 228,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-d2c2f558550321e32f73",
+        "source_bytes": 181,
+        "shown_bytes": 181,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-7d06e6364b493a0682f9",
+        "source_bytes": 178,
+        "shown_bytes": 178,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-482d1b432e5246925c60a553",
+        "source_bytes": 12058,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-4f1061c7858ab71499f8ad1e",
+        "source_bytes": 3043,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-528f2f971f6c547cd518bcf4",
+        "source_bytes": 12092,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-89bfa105a71d3932c4b022e3",
+        "source_bytes": 5579,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-8d38be48cf97cfd27df72ceb",
+        "source_bytes": 12258,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-372a30b87565fc287360275b",
+        "source_bytes": 10960,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-1703d995245ae2a3a90f",
+        "source_bytes": 228,
+        "shown_bytes": 228,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-d2c2f558550321e32f73",
+        "source_bytes": 181,
+        "shown_bytes": 181,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-7d06e6364b493a0682f9",
+        "source_bytes": 178,
+        "shown_bytes": 178,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-482d1b432e5246925c60a553",
+        "source_bytes": 12058,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-4f1061c7858ab71499f8ad1e",
+        "source_bytes": 3043,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-528f2f971f6c547cd518bcf4",
+        "source_bytes": 12092,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-89bfa105a71d3932c4b022e3",
+        "source_bytes": 5579,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-8d38be48cf97cfd27df72ceb",
+        "source_bytes": 12258,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-372a30b87565fc287360275b",
+        "source_bytes": 10960,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-1703d995245ae2a3a90f",
+        "source_bytes": 228,
+        "shown_bytes": 228,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-d2c2f558550321e32f73",
+        "source_bytes": 181,
+        "shown_bytes": 181,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-7d06e6364b493a0682f9",
+        "source_bytes": 178,
+        "shown_bytes": 178,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-482d1b432e5246925c60a553",
+        "source_bytes": 12058,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-4f1061c7858ab71499f8ad1e",
+        "source_bytes": 3043,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-528f2f971f6c547cd518bcf4",
+        "source_bytes": 12092,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-89bfa105a71d3932c4b022e3",
+        "source_bytes": 5579,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-8d38be48cf97cfd27df72ceb",
+        "source_bytes": 12258,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-372a30b87565fc287360275b",
+        "source_bytes": 10960,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-1703d995245ae2a3a90f",
+        "source_bytes": 228,
+        "shown_bytes": 228,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-d2c2f558550321e32f73",
+        "source_bytes": 181,
+        "shown_bytes": 181,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-7d06e6364b493a0682f9",
+        "source_bytes": 178,
+        "shown_bytes": 178,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-482d1b432e5246925c60a553",
+        "source_bytes": 12058,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-4f1061c7858ab71499f8ad1e",
+        "source_bytes": 3043,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-528f2f971f6c547cd518bcf4",
+        "source_bytes": 12092,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-89bfa105a71d3932c4b022e3",
+        "source_bytes": 5579,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-8d38be48cf97cfd27df72ceb",
+        "source_bytes": 12258,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-372a30b87565fc287360275b",
+        "source_bytes": 10960,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000208790-000208831",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "fail",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "time_alignment",
+          "reason": "建议把观察窗口写成1988年至cutoff，但所依赖的Meriam报告案例（1928年发表、1934年立法引用）发生在1988年之前，不在该窗口内；同时把1934年事件当作1988年后兑现，属于时期错配。",
+          "quote_ref": "q2",
+          "source_quote": "按研究范围口径：1988年前发表、当时未被政策采用的布鲁金斯研究，在1988年后是否被具名引用或用于政策/司法讨论。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "Meriam报告在1934年《印第安 reorganization 法》中的引用仅由二手Wikipedia叙述支撑，且该来源verified=false、发表日期在cutoff之后；建议自己也承认需核对原始立法材料，却仍将其作为主要支持证据。",
+          "quote_ref": "q4",
+          "source_quote": "The Meriam Report provided much of the data used to reform American Indian policy through new legislation: the Indian Reorganization Act of 1934.",
+          "evidence_id": "ev-482d1b432e5246925c60a553",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "Haaland v. Brackeen的Justia页面只是判决摘要，未显示Meriam报告被引用的具体段落；建议用该来源支撑“2023年最高法院意见具名引用”，但引文本身不含该内容。",
+          "quote_ref": "q6",
+          "source_quote": "Haaland v. Brackeen, 599 U.S. ___ (2023)",
+          "evidence_id": "ev-8d38be48cf97cfd27df72ceb",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议判“部分符合”并设trend_aligned=true，但其理由主要是少数案例方向符合，并未指出后果B哪些具体部分实现、哪些未实现；按口径，少数案例方向符合且普遍性未证，应保留为有边界判断或未定，不能仅因“不能证明普遍模式”就降为部分符合。",
+          "quote_ref": "q3",
+          "source_quote": "观察窗口为1988年至cutoff 2026-11-09，实际可用证据截至2023-06-15（Haaland v.",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需把观察窗口与所引案例时期对齐（Meriam报告案例在1988年前，不能作为1988年后兑现证据）；需取得1934年立法或政策文本中直接引用Meriam报告的原始证据，以及Haaland v. Brackeen判决原文中具名引用Meriam报告的具体段落；并明确“部分符合”对应后果B的哪些具体部分实现、哪些未实现。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000208790-000208831",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "fail",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "time_alignment",
+          "reason": "研究范围把可观察口径限定为“1988年前发表、当时未被政策采用的布鲁金斯研究，在1988年后是否被具名引用或用于政策/司法讨论”。但建议据以判“部分符合”的核心案例Meriam报告是1928年发表、1934年立法引用，兑现发生在1988年前，按该口径不能作为1988年后兑现证据。建议自己在limitation中承认这一错配，却仍以该案例支撑结论，时期口径与结论不一致。",
+          "quote_ref": "q2",
+          "source_quote": "按研究范围口径：1988年前发表、当时未被政策采用的布鲁金斯研究，在1988年后是否被具名引用或用于政策/司法讨论。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议把Meriam报告在1934年《印第安 reorganization 法》中的影响作为支持，但所引Wikipedia文本只说报告提供了“much of the data used to reform”，并未证明该研究在发表时“没有用”或“未被政策采用”，也未证明1934年立法具名引用该报告。该来源verified=false且为二手叙述，不足以支撑“当时无用、后来被需要”的主要结果。",
+          "quote_ref": "q4",
+          "source_quote": "The Meriam Report provided much of the data used to reform American Indian policy through new legislation: the Indian Reorganization Act of 1934.",
+          "evidence_id": "ev-482d1b432e5246925c60a553",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议把Haaland v. Brackeen判决列为支持，但所引Justia文本只是案件标题与摘要，不含Meriam报告被具名引用的内容；建议自己在evidence_notes中承认“该引文本身不含Meriam报告被具名引用的内容”。真正含引用信息的是prior-1703d995245ae2a3a90f的二手摘述，而非判决原文，故该分项证据链不完整。",
+          "quote_ref": "q6",
+          "source_quote": "Haaland v. Brackeen, 599 U.S. ___ (2023)",
+          "evidence_id": "ev-8d38be48cf97cfd27df72ceb",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议判“部分符合”并设trend_aligned=true，但其支持案例Meriam报告（1934年兑现）落在研究范围规定的1988年后窗口之外；1988年后窗口内可用的直接证据只有2013年布鲁金斯内部讨论引用1959年研究，以及2023年司法意见引用1928年报告，均不足以证明“1988年前发表、当时未被采用的研究在1988年后被外部政策/司法具名引用”这一主要结果。按口径应保留为暂无法判断或修正范围，而非以窗口外案例判部分符合。",
+          "quote_ref": "q2",
+          "source_quote": "按研究范围口径：1988年前发表、当时未被政策采用的布鲁金斯研究，在1988年后是否被具名引用或用于政策/司法讨论。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正研究范围与结论的时期口径：要么把可观察窗口改为覆盖1928—1934年的历史兑现，要么仅以1988年后被外部政策/司法具名引用的案例判断。并需补充能证明“发表时未被政策采用”的原始材料、1934年立法对Meriam报告的具名引用原文，以及Haaland v. Brackeen判决原文中具名引用Meriam报告的具体段落；现有二手摘述和案件摘要不足以支撑主要结果。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000208790-000208831",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "按研究范围口径：1988年前发表、当时未被政策采用的布鲁金斯研究，在1988年后是否被具名引用或用于政策/司法讨论。观察窗口为1988年至cutoff 2026-11-09，实际可用证据截至2023-06-15（Haaland v. Brackeen判决）及2019年论坛报道。",
+      "reason": "Meriam报告（1928年由布鲁金斯前身IGR完成）在发表时未被立即采纳，但后来被1934年《印第安 reorganization 法》政策改革引用，并在2023年最高法院Haaland v. Brackeen意见中被具名引用，符合“当时无用、后来被需要”的方向。但证据仅覆盖少数案例，不能证明这是布鲁金斯长期研究的普遍模式，故判部分符合。",
+      "limitation": "证据仅涉及Meriam报告等少数案例，且部分来源（Wikipedia、SDSU新闻）为二手叙述，未直接核对原始政策文本；不能据此断言所有长期研究都会如此。",
+      "evidence_ids": [
+        "ev-482d1b432e5246925c60a553",
+        "ev-4f1061c7858ab71499f8ad1e",
+        "ev-8d38be48cf97cfd27df72ceb",
+        "prior-1703d995245ae2a3a90f",
+        "prior-d2c2f558550321e32f73",
+        "prior-7d06e6364b493a0682f9"
+      ],
+      "method": "以长期研究形成未来政策知识储备",
+      "method_basis": "explicit",
+      "observation_end": "2023-06-15",
+      "future_time_text": "有一天",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-482d1b432e5246925c60a553",
+          "relation": "support",
+          "quote": "The Meriam Report provided much of the data used to reform American Indian policy through new legislation: the Indian Reorganization Act of 1934.",
+          "publication_date": "2026-06-15",
+          "observation_end": "1934-12-31",
+          "limitation": "Wikipedia为二手来源，且发表日期在cutoff之后，但所述1934年事件在cutoff前已发生；需核对原始立法材料。"
+        },
+        {
+          "evidence_id": "ev-4f1061c7858ab71499f8ad1e",
+          "relation": "boundary",
+          "quote": "It has been 96 years since the Brookings Institution has done any research to follow up on their expedition into Indian Country in 1923 that resulted in the Meriam Report.",
+          "publication_date": "2019-02-25",
+          "observation_end": "2019-02-25",
+          "limitation": "该来源指出布鲁金斯长期未跟进印第安事务，说明“后来被需要”并非自动发生，存在长期搁置的反例。"
+        },
+        {
+          "evidence_id": "ev-8d38be48cf97cfd27df72ceb",
+          "relation": "support",
+          "quote": "Haaland v. Brackeen, 599 U.S. ___ (2023)",
+          "publication_date": "2023-06-15",
+          "observation_end": "2023-06-15",
+          "limitation": "Justia页面为判决摘要，未直接显示Meriam报告被引用的具体段落；需核对判决原文。"
+        },
+        {
+          "evidence_id": "prior-1703d995245ae2a3a90f",
+          "relation": "support",
+          "quote": "最高法院Haaland v. Brackeen官方意见PDF第48—49页（Gorsuch协同意见第6—7页）多次引用1928 Meriam报告；第49页明确称报告由Brookings准备，引用其对原住民寄宿学校状况和政策建议。",
+          "publication_date": "2023-06-15",
+          "observation_end": "2023-06-15",
+          "limitation": "仅证明司法意见引用，未证明该引用直接改变了政策结果。"
+        },
+        {
+          "evidence_id": "prior-d2c2f558550321e32f73",
+          "relation": "support",
+          "quote": "Brookings2013年债务上限政策讨论实际引述Marshall Robinson1959年的研究，并明确其1959年写作时间，连接到Philip Wallach当时的制度替代方案讨论。",
+          "publication_date": "2013-09-25",
+          "observation_end": "2013-09-25",
+          "limitation": "该例为布鲁金斯自身政策讨论引用旧研究，属于学会内部使用，不完全等同于外部政策采纳。"
+        },
+        {
+          "evidence_id": "prior-7d06e6364b493a0682f9",
+          "relation": "support",
+          "quote": "Brookings自述1928 Meriam报告后来被2023最高法院意见引用；1959债务上限研究在1960年代及2023辩论被引用；1949交通政策著作建议建立交通部。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "布鲁金斯自述材料，存在自我美化可能；且无发表日期，无法确定该叙述形成时间。"
+        }
+      ],
+      "remaining_gap": "需补充更多1988年前发表、当时未被采用的布鲁金斯研究在1988年后被外部政策/司法具名引用的案例，以判断这是普遍模式还是少数例外；同时需核对Meriam报告在1934年立法中的具体引用证据。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000208790-000208831",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "按研究范围口径：1988年前发表、当时未被政策采用的布鲁金斯研究，在1988年后是否被具名引用或用于政策/司法讨论。观察窗口为1988年至cutoff 2026-11-09；实际可用证据截至2023-06-15（Haaland v. Brackeen判决）及2019年论坛报道。",
+      "reason": "Meriam报告（1928年由布鲁金斯前身IGR完成）在发表时未被立即采纳，后来被1934年《印第安 reorganization 法》政策改革引用，并在2023年最高法院Haaland v. Brackeen意见中被具名引用，符合“当时无用、后来被需要”的方向。但证据仅覆盖少数案例，不能证明这是布鲁金斯长期研究的普遍模式，故判部分符合。",
+      "limitation": "证据仅涉及Meriam报告等少数案例，且部分来源（Wikipedia、SDSU新闻）为二手叙述，未直接核对原始政策文本；不能据此断言所有长期研究都会如此。修订说明：原建议将观察窗口写为1988年后，但Meriam报告案例（1928年发表、1934年立法引用）发生在1988年前，存在时期错配；现保留原研究范围口径，但明确该案例属于1988年前兑现，不能作为1988年后兑现证据，仅作为方向性支持。",
+      "evidence_ids": [
+        "ev-482d1b432e5246925c60a553",
+        "ev-4f1061c7858ab71499f8ad1e",
+        "ev-8d38be48cf97cfd27df72ceb",
+        "prior-1703d995245ae2a3a90f",
+        "prior-d2c2f558550321e32f73",
+        "prior-7d06e6364b493a0682f9"
+      ],
+      "method": "以长期研究形成未来政策知识储备",
+      "method_basis": "explicit",
+      "observation_end": "2023-06-15",
+      "future_time_text": "有一天",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-482d1b432e5246925c60a553",
+          "relation": "support",
+          "quote": "The Meriam Report provided much of the data used to reform American Indian policy through new legislation: the Indian Reorganization Act of 1934.",
+          "publication_date": "2026-06-15",
+          "observation_end": "1934-12-31",
+          "limitation": "Wikipedia为二手来源，且发表日期在cutoff之后，但所述1934年事件在cutoff前已发生；需核对原始立法材料。该案例发生在1988年前，不能作为1988年后兑现证据。"
+        },
+        {
+          "evidence_id": "ev-4f1061c7858ab71499f8ad1e",
+          "relation": "boundary",
+          "quote": "It has been 96 years since the Brookings Institution has done any research to follow up on their expedition into Indian Country in 1923 that resulted in the Meriam Report.",
+          "publication_date": "2019-02-25",
+          "observation_end": "2019-02-25",
+          "limitation": "该来源指出布鲁金斯长期未跟进印第安事务，说明“后来被需要”并非自动发生，存在长期搁置的反例。"
+        },
+        {
+          "evidence_id": "ev-8d38be48cf97cfd27df72ceb",
+          "relation": "support",
+          "quote": "Haaland v. Brackeen, 599 U.S. ___ (2023)",
+          "publication_date": "2023-06-15",
+          "observation_end": "2023-06-15",
+          "limitation": "Justia页面为判决摘要，未直接显示Meriam报告被引用的具体段落；需核对判决原文。该引文本身不含Meriam报告被具名引用的内容。"
+        },
+        {
+          "evidence_id": "prior-1703d995245ae2a3a90f",
+          "relation": "support",
+          "quote": "最高法院Haaland v. Brackeen官方意见PDF第48—49页（Gorsuch协同意见第6—7页）多次引用1928 Meriam报告；第49页明确称报告由Brookings准备，引用其对原住民寄宿学校状况和政策建议。",
+          "publication_date": "2023-06-15",
+          "observation_end": "2023-06-15",
+          "limitation": "仅证明司法意见引用，未证明该引用直接改变了政策结果。"
+        },
+        {
+          "evidence_id": "prior-d2c2f558550321e32f73",
+          "relation": "support",
+          "quote": "Brookings2013年债务上限政策讨论实际引述Marshall Robinson1959年的研究，并明确其1959年写作时间，连接到Philip Wallach当时的制度替代方案讨论。",
+          "publication_date": "2013-09-25",
+          "observation_end": "2013-09-25",
+          "limitation": "该例为布鲁金斯自身政策讨论引用旧研究，属于学会内部使用，不完全等同于外部政策采纳。"
+        },
+        {
+          "evidence_id": "prior-7d06e6364b493a0682f9",
+          "relation": "support",
+          "quote": "Brookings自述1928 Meriam报告后来被2023最高法院意见引用；1959债务上限研究在1960年代及2023辩论被引用；1949交通政策著作建议建立交通部。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "布鲁金斯自述材料，存在自我美化可能；且无发表日期，无法确定该叙述形成时间。"
+        }
+      ],
+      "remaining_gap": "需补充更多1988年前发表、当时未被采用的布鲁金斯研究在1988年后被外部政策/司法具名引用的案例，以判断这是普遍模式还是少数例外；同时需核对Meriam报告在1934年立法中的具体引用证据，以及Haaland v. Brackeen判决原文中具名引用Meriam报告的具体段落。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "评估卡罗尔关于布鲁金斯学会长期研究成果的断言：一些在发表时没有即时用途的成果，后来会被政策或司法讨论需要，而届时学会已能提供。可观察口径为：1988年前发表、当时未被政策采用的布鲁金斯研究，在1988年后是否被具名引用或用于政策/司法讨论。反证包括：旧研究从未被后续引用，或虽有引用但引用对象并非当时无用的成果。",
+  "elapsed_seconds": 39.783,
+  "completed_at": "2026-11-09T10:34:53.118427+00:00"
+}

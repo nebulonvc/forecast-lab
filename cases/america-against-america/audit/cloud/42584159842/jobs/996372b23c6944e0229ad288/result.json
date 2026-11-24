@@ -1,0 +1,420 @@
+{
+  "claim_id": "txt-1c4066fc0c-000227158-000227189",
+  "version": "search-verifier-v1",
+  "input_sha256": "389e2025c229e737c9bb09cc04cb548128b6d73bf210ef7f2c05ebb034966d2f",
+  "cutoff": "2026-11-09",
+  "task_state": "partial",
+  "assessment": null,
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000227158-000227189",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "原文预测：到20世纪90年代，IBM成人识字计划所在地区（芝加哥地区，由1988年10月3日《芝加哥论坛报》报道定位）将难以找到所需工人。回顾性操作化：以1990—1999年芝加哥地区劳动力市场紧张程度（失业率下行、雇主招工困难报道）作为“难以找到所需工人”的可观测代理，观察窗口为1990-01至1999-12。",
+    "reason": "芝加哥地区失业率从1990年代初约7%降至1999年约4%，同期《芝加哥论坛报》1990年报道称杜佩奇县已从劳动力过剩转为短缺、雇主开始招募退休人员，芝加哥联储1999年文章亦称中西部劳动力市场持续紧张、招工困难成为企业最棘手问题，方向与预测一致。但原文所指为IBM识字中心服务地区及“所需工人”（合格/可培训劳动力），现有证据多为区域整体劳动力紧张，未直接测量该中心服务人群的合格劳动力供给，故仅判部分符合。",
+    "limitation": "证据为区域层面劳动力市场指标与媒体报道，非IBM该中心服务地区的合格劳动力招聘直接测量；失业率下降也可能反映需求扩张而非合格劳动力绝对短缺，相关性不等于因果。最终“难以找到所需工人”的精确程度无法量化。",
+    "evidence_ids": [
+      "ev-af7abd77b88cedea1a5ba7a2",
+      "ev-736d2dccfb55fcd0bd3fcda0",
+      "ev-ea6cb9fa4aaefa7fc60d6199",
+      "ev-a0e525450c429bdaebbc9937"
+    ],
+    "method": "由当地成人识字不足推测未来合格劳动力供给",
+    "method_basis": "explicit",
+    "observation_end": "1999-12-31",
+    "future_time_text": "到九十年代",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-af7abd77b88cedea1a5ba7a2",
+        "relation": "background",
+        "quote": "the latest wrinkle in the business community`s growing concern that employers won`t be able to find the workers they need in the 1990s.",
+        "publication_date": "1988-10-03",
+        "observation_end": null,
+        "limitation": "该句为1988年报道中对商界担忧的转述，属预测背景而非90年代实际结果；发表日期由正文PUBLISHED标注，非抓取日期。"
+      },
+      {
+        "evidence_id": "ev-736d2dccfb55fcd0bd3fcda0",
+        "relation": "support",
+        "quote": "I think this is particularly true in Du Page, where there is no longer a labor surplus but a shortage.",
+        "publication_date": "1990-06-10",
+        "observation_end": "1990-06-10",
+        "limitation": "为杜佩奇县官员对当地劳动力短缺的判断，属芝加哥都会区一部分，非IBM识字中心服务地区直接测量。"
+      },
+      {
+        "evidence_id": "ev-ea6cb9fa4aaefa7fc60d6199",
+        "relation": "support",
+        "quote": "many business executives in the Midwest report finding good help at current wage offers as the most vexing of current problems",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "为中西部区域层面1990年代末的劳动力紧张描述，非芝加哥IBM中心服务地区；发表日期未知，仅能作背景。"
+      },
+      {
+        "evidence_id": "ev-a0e525450c429bdaebbc9937",
+        "relation": "support",
+        "quote": "| 1999-12-01 | 4.0 |",
+        "publication_date": null,
+        "observation_end": "1999-12-01",
+        "limitation": "为芝加哥都会区失业率月度数据，1990年代由约7%降至约4%，可作劳动力市场趋紧的代理，但失业率低不等于合格劳动力短缺，且非IBM中心服务地区专属。"
+      }
+    ],
+    "remaining_gap": "缺少IBM成人识字中心服务地区（芝加哥特定社区/企业）在1990年代合格劳动力招聘困难或供给不足的直接证据；现有证据为区域整体劳动力市场指标，无法精确对应原文所指人群与地区。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "ev-af7abd77b88cedea1a5ba7a2",
+      "url": "https://bancodeprofissionais.com/1988/10/03/literacy-quest-brings-together-cabrini-and-ibm/",
+      "resolved_url": "https://bancodeprofissionais.com/1988/10/03/literacy-quest-brings-together-cabrini-and-ibm/",
+      "title": "LITERACY QUEST BRINGS TOGETHER CABRINI AND IBM – Chicago Tribune",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:36.667428+00:00",
+      "archive_sha256": "a90fabd9217d2debad1d8a9d899db6396456ec756d9fbcb0598393617d6f471f",
+      "archive_path": "jobs/996372b23c6944e0229ad288/a90fabd9217d2debad1d8a9d899db6396456ec756d9fbcb0598393617d6f471f.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-b6ea188bf9cf514cfb6c2c7e",
+      "url": "https://bancodeprofissionais.com/1991/02/01/computers-drive-literacy-classes/",
+      "resolved_url": "https://bancodeprofissionais.com/1991/02/01/computers-drive-literacy-classes/",
+      "title": "COMPUTERS DRIVE LITERACY CLASSES – Chicago Tribune",
+      "published_date": "1991-02-01",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:36.667598+00:00",
+      "archive_sha256": "633b41740e2a28f957b780b8c4f995e3616dda440f1bc342085e27d1e813af59",
+      "archive_path": "jobs/996372b23c6944e0229ad288/633b41740e2a28f957b780b8c4f995e3616dda440f1bc342085e27d1e813af59.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-5243761e8119e7674647ef3a",
+      "url": "https://files.eric.ed.gov/fulltext/ED322296.pdf",
+      "resolved_url": "https://files.eric.ed.gov/fulltext/ED322296.pdf",
+      "title": "Project Workplace Literacy Partners in Chicago. Final Report. October 1988-March 1990.",
+      "published_date": "1990-03-01",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:36.667770+00:00",
+      "archive_sha256": "652884b0c2d1664121bb52a1c98aa26199606a9446fe7a77d7bf833bab0795a1",
+      "archive_path": "jobs/996372b23c6944e0229ad288/652884b0c2d1664121bb52a1c98aa26199606a9446fe7a77d7bf833bab0795a1.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-736d2dccfb55fcd0bd3fcda0",
+      "url": "https://bancodeprofissionais.com/1990/06/10/graying-work-force-2/",
+      "resolved_url": "https://bancodeprofissionais.com/1990/06/10/graying-work-force-2/",
+      "title": "GRAYING WORK FORCE – Chicago Tribune",
+      "published_date": "1990-06-10",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:46.264294+00:00",
+      "archive_sha256": "8a98454e958341e7825d5458d636934bf9d36810a9ff253ff58314c26b58fd1b",
+      "archive_path": "jobs/996372b23c6944e0229ad288/8a98454e958341e7825d5458d636934bf9d36810a9ff253ff58314c26b58fd1b.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ea6cb9fa4aaefa7fc60d6199",
+      "url": "https://www.chicagofed.org/-/media/publications/economic-perspectives/1999/ep2q99-3-pdf.pdf",
+      "resolved_url": "https://www.chicagofed.org/-/media/publications/economic-perspectives/1999/ep2q99-3-pdf.pdf",
+      "title": "Slow work force growth: A challenge for the Midwest?",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:46.264463+00:00",
+      "archive_sha256": "53d06dfd706389787cfd1d312185db3c38b8b25eb8244ab6819e9f5f9b8e9232",
+      "archive_path": "jobs/996372b23c6944e0229ad288/53d06dfd706389787cfd1d312185db3c38b8b25eb8244ab6819e9f5f9b8e9232.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a0e525450c429bdaebbc9937",
+      "url": "https://fred.stlouisfed.org/data/CHIC917URN",
+      "resolved_url": "https://fred.stlouisfed.org/data/CHIC917URN",
+      "title": "Table Data - Unemployment Rate in Chicago-Naperville-Elgin, IL-IN-WI (MSA) | FRED | St. Louis Fed",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:46.264585+00:00",
+      "archive_sha256": "f376c32eef5bf985643597d807c08e0d23dfd3e042dad264f95126eb9369289e",
+      "archive_path": "jobs/996372b23c6944e0229ad288/f376c32eef5bf985643597d807c08e0d23dfd3e042dad264f95126eb9369289e.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ec9190e665e614c46f8b069d",
+      "url": "https://www.chicagofed.org/publications/chicago-fed-letter/1996/june-106",
+      "resolved_url": "https://www.chicagofed.org/publications/chicago-fed-letter/1996/june-106",
+      "title": "The Heartland Keeps Beating - Federal Reserve Bank of Chicago",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:46.264724+00:00",
+      "archive_sha256": "47be9f0b385dae8101e395549b504f77486de2a3c1a4283475391531eab07508",
+      "archive_path": "jobs/996372b23c6944e0229ad288/47be9f0b385dae8101e395549b504f77486de2a3c1a4283475391531eab07508.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "Chicago Tribune IBM adult literacy center Dave Cox 1990s shortage workers Chicago",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Chicago 1990s labor market unemployment IBM hiring workers adult literacy program",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Chicago 1990s labor shortage employers entry-level workers low-skilled hiring difficulty report",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Chicago 1990s unemployment rate labor market slack IBM hiring workers statistics",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [
+    {
+      "stage": "worker",
+      "error": "cached_response_invalid_9586ffda326c:semantic_review_quote_not_in_supplied_text"
+    }
+  ],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-a0e525450c429bdaebbc9937",
+        "ev-af7abd77b88cedea1a5ba7a2",
+        "ev-ea6cb9fa4aaefa7fc60d6199"
+      ]
+    }
+  ],
+  "remaining_gap": "任务未完成；查看错误、已取得材料和请求状态，不能据此判断原预测。",
+  "source_statuses": [
+    {
+      "url": "https://bancodeprofissionais.com/1988/10/03/literacy-quest-brings-together-cabrini-and-ibm/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://bancodeprofissionais.com/1991/02/01/computers-drive-literacy-classes/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://files.eric.ed.gov/fulltext/ED322296.pdf",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://bancodeprofissionais.com/1990/06/10/graying-work-force-2/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.chicagofed.org/-/media/publications/economic-perspectives/1999/ep2q99-3-pdf.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://fred.stlouisfed.org/data/CHIC917URN",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.chicagofed.org/publications/chicago-fed-letter/1996/june-106",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 7,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "fd3fcca58d4bd6b0777d510f768f76697219559b66452dababa370e238a2dce2"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "448fd8a9e8ee013a86be96552aba4a89",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "d1004012a12c09e395251d022f208236",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "4a1848d7ad0ef3bc2b6f76a0ed8dd33e9beec7b5cbb524f3b6cd4d99d79211cf"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "bdc2fbcf5ef0066e1a1f63f236bda88b",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "876c2e4b09fbcbe404b7316c7d2ae96d554f6ced8a6817bda3a9c2bd85c113db"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "44746bc8bf0a7390c0738476d6407f52",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e1c9cecbcde64242623e7a9cf41784b7",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "119ae9a24d7c88d9ae7d4c3739aa80948f1ec54e91787f91a9c62192801f742b"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "560fc1bcdc99021b26dd715833a07d93",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "4eb841e66495c17fa510e0e1a46959b2d3602c132439a05841abf609cfb316f8"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "3a23ee6f26ea8aaa563279c6ed6495e9f8fa5ddaf9ec3a0aaa008b2afeb33c91",
+      "validation_error": "semantic_review_quote_not_in_supplied_text"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "9586ffda326c540142ccae3ec33894ca039f43f63d11a240cfc74b6f8a91e65d",
+      "validation_error": "semantic_review_quote_not_in_supplied_text"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "3a23ee6f26ea8aaa563279c6ed6495e9f8fa5ddaf9ec3a0aaa008b2afeb33c91",
+      "validation_error": "semantic_review_quote_not_in_supplied_text"
+    }
+  ],
+  "semantic_reviews": [],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000227158-000227189",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "原文预测：到20世纪90年代，IBM成人识字计划所在地区（芝加哥地区，由1988年10月3日《芝加哥论坛报》报道定位）将难以找到所需工人。回顾性操作化：以1990—1999年芝加哥地区劳动力市场紧张程度（失业率下行、雇主招工困难报道）作为“难以找到所需工人”的可观测代理，观察窗口为1990-01至1999-12。",
+      "reason": "芝加哥地区失业率从1990年代初约7%降至1999年约4%，同期《芝加哥论坛报》1990年报道称杜佩奇县已从劳动力过剩转为短缺、雇主开始招募退休人员，芝加哥联储1999年文章亦称中西部劳动力市场持续紧张、招工困难成为企业最棘手问题，方向与预测一致。但原文所指为IBM识字中心服务地区及“所需工人”（合格/可培训劳动力），现有证据多为区域整体劳动力紧张，未直接测量该中心服务人群的合格劳动力供给，故仅判部分符合。",
+      "limitation": "证据为区域层面劳动力市场指标与媒体报道，非IBM该中心服务地区的合格劳动力招聘直接测量；失业率下降也可能反映需求扩张而非合格劳动力绝对短缺，相关性不等于因果。最终“难以找到所需工人”的精确程度无法量化。",
+      "evidence_ids": [
+        "ev-af7abd77b88cedea1a5ba7a2",
+        "ev-736d2dccfb55fcd0bd3fcda0",
+        "ev-ea6cb9fa4aaefa7fc60d6199",
+        "ev-a0e525450c429bdaebbc9937"
+      ],
+      "method": "由当地成人识字不足推测未来合格劳动力供给",
+      "method_basis": "explicit",
+      "observation_end": "1999-12-31",
+      "future_time_text": "到九十年代",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-af7abd77b88cedea1a5ba7a2",
+          "relation": "background",
+          "quote": "the latest wrinkle in the business community`s growing concern that employers won`t be able to find the workers they need in the 1990s.",
+          "publication_date": "1988-10-03",
+          "observation_end": null,
+          "limitation": "该句为1988年报道中对商界担忧的转述，属预测背景而非90年代实际结果；发表日期由正文PUBLISHED标注，非抓取日期。"
+        },
+        {
+          "evidence_id": "ev-736d2dccfb55fcd0bd3fcda0",
+          "relation": "support",
+          "quote": "I think this is particularly true in Du Page, where there is no longer a labor surplus but a shortage.",
+          "publication_date": "1990-06-10",
+          "observation_end": "1990-06-10",
+          "limitation": "为杜佩奇县官员对当地劳动力短缺的判断，属芝加哥都会区一部分，非IBM识字中心服务地区直接测量。"
+        },
+        {
+          "evidence_id": "ev-ea6cb9fa4aaefa7fc60d6199",
+          "relation": "support",
+          "quote": "many business executives in the Midwest report finding good help at current wage offers as the most vexing of current problems",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "为中西部区域层面1990年代末的劳动力紧张描述，非芝加哥IBM中心服务地区；发表日期未知，仅能作背景。"
+        },
+        {
+          "evidence_id": "ev-a0e525450c429bdaebbc9937",
+          "relation": "support",
+          "quote": "| 1999-12-01 | 4.0 |",
+          "publication_date": null,
+          "observation_end": "1999-12-01",
+          "limitation": "为芝加哥都会区失业率月度数据，1990年代由约7%降至约4%，可作劳动力市场趋紧的代理，但失业率低不等于合格劳动力短缺，且非IBM中心服务地区专属。"
+        }
+      ],
+      "remaining_gap": "缺少IBM成人识字中心服务地区（芝加哥特定社区/企业）在1990年代合格劳动力招聘困难或供给不足的直接证据；现有证据为区域整体劳动力市场指标，无法精确对应原文所指人群与地区。"
+    }
+  ],
+  "autonomous_decision": false,
+  "semantic_validation": null,
+  "scope": "IBM（王沪宁转述）判断：到20世纪90年代，其成人识字计划所在地区将难以找到所需工人。观察口径为1990—1999年该中心服务地区（原文未明示，仅能由《芝加哥论坛报》10月3日报道及IBM成人识字中心定位）的合格劳动力招聘/短缺证据；反证包括该地区同期招聘顺利、失业或劳动力供给充足、或IBM未出现招工困难。不以全国技能短缺或IBM后续教育项目替代。",
+  "elapsed_seconds": 39.486,
+  "completed_at": "2026-11-09T08:13:07.358617+00:00"
+}

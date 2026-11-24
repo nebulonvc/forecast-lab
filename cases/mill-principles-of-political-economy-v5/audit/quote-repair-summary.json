@@ -1,0 +1,39 @@
+{
+  "files_changed": 438,
+  "repair_records": 1375,
+  "predictions_kept": 27,
+  "methods": {
+    "unique_whitespace_alignment": 1367,
+    "single_line_of_restored_span": 4,
+    "ambiguous_exact": 3,
+    "not_in_quote": 1
+  },
+  "unresolved": [
+    {
+      "path": "rejections[4].quote",
+      "method": "ambiguous_exact",
+      "old": "PLL v6.0 (generated September, 2011)",
+      "id": "txt-00447"
+    },
+    {
+      "path": "rejections[3].quote",
+      "method": "ambiguous_exact",
+      "old": "PLL v6.0 (generated September, 2011)",
+      "id": "txt-00451"
+    },
+    {
+      "path": "rejections[5].quote",
+      "method": "ambiguous_exact",
+      "old": "PLL v6.0 (generated September, 2011)",
+      "id": "txt-00521"
+    }
+  ],
+  "not_in_quote": [
+    {
+      "method": "not_in_quote",
+      "old": "Agricultural improvements are a counteracting force to the two last effects",
+      "path": "predictions[1].condition_text",
+      "id": "txt-00532"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "fb4359dc-5be9-43be-a6c3-603cef96c3e3",
+  "object": "chat.completion",
+  "created": 1794201448,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000042667-000042690\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为条件性储蓄—未来消费的近似定义性陈述，无独立可检验的预测终点或指标。\",\"reason\":\"该句是“如果存钱则之后有钱花”的条件性常识陈述，属于解释性/定义性表述，不构成可检验的预测。\",\"limitation\":\"条件未指定具体时间、金额或可观测指标，无法作为预测评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"之后\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4240,
+    "completion_tokens": 167,
+    "total_tokens": 4407,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3472
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

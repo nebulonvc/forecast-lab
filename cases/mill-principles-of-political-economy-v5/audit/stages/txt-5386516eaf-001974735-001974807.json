@@ -1,0 +1,90 @@
+{
+  "id": "txt-5386516eaf-001974735-001974807",
+  "assess": {
+    "id": "txt-5386516eaf-001974735-001974807",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "合作制度把分配者限制到真正需要的人数之后，人手和养活他们的资本转入生产。",
+    "reason": "制造业从1970年770万（29%）降到2021年250万（8%），同一页写劳动力转向服务业。这不是合作制度已经限制分配者之后、人手转入全部生产的反证。直接效果没有观察到。",
+    "limitation": "制造业下降和转向服务只留作边界。不把它们写成错误。",
+    "evidence_ids": [
+      "ev-jobs-share-2022"
+    ],
+    "method": "独立QA要求撤回错误。不另打对错。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-jobs-share-2022",
+        "quote": "In 1970 there were 7.7 million jobs in manufacturing, accounting for 29 per cent of the total. By 2021 that number had fallen to 2.5 million jobs, 8 per cent of the total.",
+        "relation": "boundary",
+        "limitation": "制造业下降和转向服务，不是转入生产。",
+        "observation_end": "2021-12-31",
+        "publication_date": "2022-01",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺合作制度把分配者限制到必要人数之后，人手是否转入生产。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001974735-001974807",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "workers moved from retail into manufacturing"
+      },
+      {
+        "role": "counter",
+        "query": "manufacturing employment fell 1970 to 2021"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://economy2030.resolutionfoundation.org/wp-content/uploads/2022/01/Changing-jobs.pdf"
+    ],
+    "reason": "制造业就业绝对数和份额都下降。"
+  },
+  "revision_trail": {
+    "withdrawn_verdict": "错误",
+    "withdrawn_reason": "生产这一侧的就业没有扩大。1970年制造业有770万个工作、占29%，2021年降到250万、占8%。人手没有被释放去从事生产，制造业就业的绝对数和份额都下降。检索没有找到分配业人手转入制造业的同对象记录。",
+    "failed_review": {
+      "id": "txt-5386516eaf-001974735-001974807",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    },
+    "why": "制造业下降不是人手转入生产，合作制度的直接效果未观察。",
+    "qa": "2026-11-20-mill-principles-of-political-economy"
+  }
+}

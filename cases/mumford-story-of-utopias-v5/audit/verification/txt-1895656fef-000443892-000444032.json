@@ -1,0 +1,54 @@
+{
+  "claim_id": "txt-1895656fef-000443892-000444032",
+  "plan": {
+    "object": "这些特定神话和偶像",
+    "conditions": [
+      "the sooner those who are capable of intellectual criticism abandon these particular myths"
+    ],
+    "quantifier": "the sooner ... the sooner",
+    "result": "批评者越早放弃，偶像越早落入无害的废弃",
+    "time_window": "1923年到截止日",
+    "counterevidence_needed": "有能力的批评者已经放弃，偶像却没有进入无害废弃"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "support_query": "intellectual critics abandoned nationalism and the nation state fell into disuse",
+        "counter_query": "scholars criticize nationalism but the nation state remains in political use",
+        "saved_at_utc": "2026-11-20T11:11:02Z",
+        "tool_call_id": null
+      }
+    ],
+    "adaptive_rounds": 0,
+    "stop_reason": "批评存在，国家仍在使用。没有一份材料给放弃的时间和进入废弃的时间。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "the sooner",
+    "observation_end": null,
+    "evidence_ids": [
+      "ev-roth-2021",
+      "ev-ndu-nationalism"
+    ],
+    "scope": "这是放弃的早晚和无害废弃的早晚之间的对应，不是国家总会消失。",
+    "reason": "评论把战争中的民族主义看成黑暗力量，但同一材料仍为民族理想辩护。Roth 写国家到2021年仍是政治共同体。这不能证明有能力的批评者已经放弃这些神话，也不能证明偶像已经落入无害废弃。早晚对应没有被计时。",
+    "limitation": "批评不等于放弃。国家仍在，不能单独把比较句判成错误。",
+    "method": "比较句要有放弃的时间和废弃的时间。只有一端时不打分。",
+    "method_basis": "explicit",
+    "remaining_gap": "缺有能力的批评者放弃这些神话的时间，以及这些偶像进入无害废弃的时间。现在只有批评仍在、国家仍在。"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "pass",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "比较句的两端都没有被计时。"
+  }
+}

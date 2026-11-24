@@ -1,0 +1,28 @@
+{
+  "id": "33e25d12-56b4-4699-9554-7988a4455f76",
+  "object": "chat.completion",
+  "created": 1794201446,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000036462-000036504\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文是对“对未来不明确的悲观主义者”这一认知类型的定义性描述，说明其不知道衰退会加快还是放慢、是毁灭性还是平缓；不构成对衰退实际走向的预测。\",\"reason\":\"该句描述的是某类人的认知状态，而非作者对衰退速度或严重程度作出可检验预测。\",\"limitation\":\"属于概念/类型描述，无预测终点与可观测指标，不纳入预测评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4307,
+    "completion_tokens": 172,
+    "total_tokens": 4479,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3539
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

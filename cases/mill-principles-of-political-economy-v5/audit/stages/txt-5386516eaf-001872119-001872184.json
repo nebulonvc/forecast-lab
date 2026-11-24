@@ -1,0 +1,124 @@
+{
+  "id": "txt-5386516eaf-001872119-001872184",
+  "assess": {
+    "id": "txt-5386516eaf-001872119-001872184",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "欧洲粮食出口国农业的大幅改良很可能是一个很慢的过程。",
+    "reason": "人均产出下降不是农业技术改良的速度。1960年后“技术改良是重要因素”也没有给出快慢。两则材料都不能充当这句的速度。",
+    "limitation": "旧的部分符合已撤回。对象不一致时不保留分数。",
+    "evidence_ids": [
+      "ev-east-europe-wheat",
+      "ev-east-europe-ag-1970"
+    ],
+    "method": "复核后撤回计分。原支持与反证仍留在修订轨迹，不当作同对象分数。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-east-europe-wheat",
+        "quote": "Per capita production even declined.",
+        "relation": "boundary",
+        "limitation": "人均产出下降。",
+        "observation_end": "1938-12-31",
+        "publication_date": null,
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "ev-east-europe-ag-1970",
+        "quote": "Technological improvements since 1960 have been important in this upswing.",
+        "relation": "boundary",
+        "limitation": "1960年后技术改良已经重要。",
+        "observation_end": "1968-12-31",
+        "publication_date": "1970-01-01",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺欧洲粮食出口国农业技术改良速度在1909年之后是否很慢的同对象序列。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001872119-001872184",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-east-europe-wheat"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-east-europe-wheat"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "revision_trail": {
+    "withdrawn_verdict": "部分符合",
+    "withdrawn_reason": "东欧农业人均产出在一战到大萧条期间下降。1960年以来的技术改良则被写成东欧农业上升的重要因素。很慢只对上前一段。",
+    "failed_review": {
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "人均产出和“改良很重要”都不是改良速度。",
+          "source_quote": "The former is likely to be a very slow process, from the rudeness",
+          "evidence_id": null
+        }
+      ],
+      "remaining_gap": "缺欧洲粮食出口国农业技术改良速度在1909年之后是否很慢的同对象序列。"
+    },
+    "why": "人均产出和“改良很重要”都不是改良速度。"
+  },
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "Eastern European agriculture weak 1913-1938"
+      },
+      {
+        "role": "counter",
+        "query": "technological improvements in Eastern Europe since 1960"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://www.degruyterbrill.com/document/doi/10.1515/9783110680515-002/pdf",
+      "https://doi.org/10.22004/ag.econ.145299"
+    ],
+    "reason": "前慢后有技术改良。"
+  }
+}

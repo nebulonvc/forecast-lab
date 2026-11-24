@@ -1,0 +1,28 @@
+{
+  "id": "113b8c02-6c00-4384-9962-0a62c36b0cac",
+  "object": "chat.completion",
+  "created": 1794201441,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000020727-000020758\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"原文以“完全竞争”这一理论模型为条件，断言该条件下企业只着眼短期利益、无法长期规划；观察窗口为出版后至cutoff（2014—2026-11-09），但“完全竞争”是经济学理想类型，现实中无公认可操作样本，无法确定条件是否成立。\",\"reason\":\"该判断是条件性理论命题，触发条件“完全竞争”在现实中难以界定和观测，原文也未给出可检验指标或期限。缺少可操作化对象，不能据个别行业竞争现象直接判真伪。\",\"limitation\":\"未找到可对应“完全竞争”市场的实证样本；且“长期规划”本身缺乏统一度量，评估受操作化限制。\",\"evidence_ids\":[],\"method\":\"经济学推理\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4281,
+    "completion_tokens": 237,
+    "total_tokens": 4518,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3513
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

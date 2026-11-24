@@ -1,0 +1,41 @@
+{
+  "id": "txt-5386516eaf-002763771-002763986",
+  "assessment": {
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "id": "txt-5386516eaf-002763771-002763986",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "observation_end": "2014-12-31",
+    "scope": "利润分享一类安排会增多并成长。",
+    "reason": "支持文件写覆盖率从2002年34%到2006年38%。反证文件写2002年33.2%、2006年38.1%、2014年35.8%。有过增长，没有变成多数，2014年低于2006年。",
+    "limitation": "增长停在少数雇员。",
+    "evidence_ids": [
+      "ev-r4b-share2",
+      "ev-r4b-gss"
+    ],
+    "method": "支持与反证各用本次检索写下的文件。",
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-r4b-share2",
+        "quote": "2002 (34%) and 2006 (38%)",
+        "relation": "support",
+        "limitation": "2002到2006年上升。",
+        "observation_end": "2006-12-31",
+        "publication_date": null
+      },
+      {
+        "evidence_id": "ev-r4b-gss",
+        "quote": "Profit sharing | 33.2% | 38.1% | ^ | 35.8%",
+        "relation": "counter",
+        "limitation": "2014年仍约为三分之一。",
+        "observation_end": "2014-12-31",
+        "publication_date": null
+      }
+    ],
+    "remaining_gap": ""
+  }
+}

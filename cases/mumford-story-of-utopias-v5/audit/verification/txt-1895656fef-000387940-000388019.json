@@ -1,0 +1,84 @@
+{
+  "claim_id": "txt-1895656fef-000387940-000388019",
+  "plan": {
+    "object": "阻止我们步失败文明后尘的因素",
+    "conditions": [],
+    "quantifier": "nothing but",
+    "result": "只有向优托邦的意志能阻止",
+    "time_window": "1923年到截止日",
+    "counterevidence_needed": "文明没有步其后尘，而记录中的原因不是这个意志"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "support_query": "Western civilization avoided collapse only because of a utopian will to rebuild",
+        "counter_query": "Western Europe survived after 1945 because of institutions and power not utopian will",
+        "saved_at_utc": "2026-11-20T11:11:02Z",
+        "tool_call_id": null
+      }
+    ],
+    "adaptive_rounds": 0,
+    "stop_reason": "Conway 写出战争后果、资本主义重建和美国影响三个因素，并写判断不要对照理想型。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unconditional",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [
+      "ev-conway-causes-2002",
+      "ev-counterpunch-2022"
+    ],
+    "scope": "nothing but 是排他量词。反证必须是阻止步已失败文明后尘的其他原因。",
+    "reason": "Conway 的三个因素划定的是战后西欧议会民主的形态：独裁方案在二战中丧失信用、自由市场重建、美国的非正式影响。这不是阻止文明失败消失的原因。社会还在、优托邦方案未实现，也不能把这段制度史写成排他句的反例。页面没有使用 eutopia。",
+    "limitation": "两页保留，只说明它们解释的是政体，不是这句的阻止原因。",
+    "method": "排他句要有同对象的其他阻止原因。政体成因不能代替。",
+    "method_basis": "explicit",
+    "remaining_gap": "缺同对象的其他阻止原因：是什么，而不是向优托邦的意志，阻止了步已失败文明的后尘。"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "战后民主的三个成因换成了另一个现象。不能用来否定 nothing but。"
+  },
+  "history": [
+    {
+      "stage": "r1",
+      "assess": {
+        "inclusion": "forecast",
+        "verdict": "错误",
+        "basis": "endpoint",
+        "trend_aligned": false,
+        "condition_state": "unconditional",
+        "future_time_text": "",
+        "observation_end": "1969-12-31",
+        "evidence_ids": [
+          "ev-conway-causes-2002",
+          "ev-counterpunch-2022"
+        ],
+        "scope": "nothing but 是排他量词。只要战后西欧没有消失，而且记录给出了别的原因，这句就不成立。",
+        "reason": "Conway 写，战后西欧议会民主的范围由三件事划定：独裁替代方案在第二次世界大战中丧失信用，战后重建里的自由市场资本主义，以及美国的非正式影响。同页写这种民主不要对照理想型来理解。2022年的文章又写芒福德的区域设想没有实现。社会还在，阻止它步失败文明后尘的记录原因不是那个没有实现的优托邦意志。",
+        "limitation": "页面没有使用 eutopia 这个词。1960年代没有写出日，观察终点用1969年年末。",
+        "method": "排他句用一个同对象的其他原因即可反驳，不用证明所有其他原因。",
+        "method_basis": "explicit"
+      },
+      "semantic_review": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass",
+        "note": "nothing but 被三个已写出的其他因素反掉。优托邦方案本身没有实现。"
+      }
+    }
+  ]
+}

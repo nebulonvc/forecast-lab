@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000457120-000457476",
+  "plan": {
+    "object": "边界受限制、又想长久安稳享受自由的共和国。作者把德意志自由城市写成别处没有的例外，不把每一个小共和国都收进这句。",
+    "condition": "should no enemies be found abroad。国外没有敌人，国内才会有敌人。国外仍有强邻或最后被外国征服，就不进入这个分句。",
+    "quantifier": "will be found。登记变化是这一分句，不是前一句“别人也会来犯”。",
+    "result": "国内会找到敌人。城市内部长期没有叛乱，若国外其实有强邻，不能用来反驳这句，也不能把外国征服改写成国内敌人。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "一个边界受限制的共和国，国外没有敌人，国内也没有敌人，并且这样过了长久的自由。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "small republic at peace abroad civil conflict at home after 1531",
+      "counter_query": "small republic remained internally peaceful for centuries without foreign war or civil strife"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://eusp.org/sites/default/files/archive/RESPUBLICA/RepTradition/10.Kuncevic_-_Another_most_serene_republic.pdf"],
+    "dropped": "瑞士卡佩尔战争在1531年，而且材料写的是宗教分裂加上对外事务瘫痪，不是国外没有敌人。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "not_met",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-kuncevic-ragusa"],
+    "scope": "只核验国外没有敌人时国内会有敌人。拉古萨内部安定不能单独计分，因为它处在大国之间并最终被外国征服。",
+    "reason": "昆切维奇写，大约从十四世纪中叶到十八世纪中叶，拉古萨城本身没有一次社会骚乱或叛乱；它又写这个共和国军事无力，靠在奥斯曼、威尼斯和哈布斯堡之间平衡，从十四世纪中叶生存到十九世纪初被拿破仑征服。内部没有叛乱，是国内没有出现这句所说的敌人。但国外并不是没有敌人：它处在帝国边界上，最后被外国征服。条件 should no enemies be found abroad 没有成立。外国征服是前一句“别人也会来犯”，不是登记的 will be found at home。决定性缺口是：没有一个国外确实没有敌人、边界又受限制的共和国，以及它国内后来有没有敌人。",
+    "limitation": "论文是未定稿，没有单独的出版日。十四世纪中叶到十九世纪初只有世纪，没有日。",
+    "method": "先确认国外没有敌人，再看国内敌人。外国征服不改记成国内敌人。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "拉古萨内部长期无叛乱，但被拿破仑征服，国外并非没有敌人。不把外国征服当成国内敌人。"
+  }
+}

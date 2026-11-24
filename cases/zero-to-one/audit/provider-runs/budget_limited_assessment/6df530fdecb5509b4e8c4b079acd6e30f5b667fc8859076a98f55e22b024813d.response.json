@@ -1,0 +1,28 @@
+{
+  "id": "ab47f27b-7f5c-4958-b5d3-0e87a95b3c30",
+  "object": "chat.completion",
+  "created": 1794201447,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000038455-000038480\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文是对“对未来不明确的乐观主义者”这一类型人群的定义性描述，不是作者对自身或可检验对象未来结果的预测；无可操作化预测终点。\",\"reason\":\"该句是在界定一类人的心态：预期未来会更好、想获利却不制订具体规划，属于概念描述而非可验证预测。\",\"limitation\":\"作为定义性陈述，不涉及可观察的未来事件，无法按预测评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"未来\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4268,
+    "completion_tokens": 174,
+    "total_tokens": 4442,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3500
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

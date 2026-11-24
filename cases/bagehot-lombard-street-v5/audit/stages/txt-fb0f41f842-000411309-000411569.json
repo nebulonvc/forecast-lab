@@ -1,0 +1,56 @@
+{
+  "id": "txt-fb0f41f842-000411309-000411569",
+  "r3_revision": false,
+  "plan": {
+    "queries": [],
+    "note": "r3 不重研。QA 已认可的裁决保持，六项与现行裁决一致。"
+  },
+  "select": {
+    "urls": [],
+    "reason": "本轮没有新的同对象来源入选。没有把 executed 写成 true。"
+  },
+  "assess": {
+    "id": "txt-fb0f41f842-000411309-000411569",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "缓慢长成的信用制度不会因为理论家反对或有书写来反对就被改变。",
+    "reason": "1946年法令把英格兰银行股本转入公共所有，制度后来确实改变了。该页没有写改变的原因是理论家的书。",
+    "limitation": "不能把国有化当成理论家著作导致的改变，也不能因此说制度完全没变。",
+    "evidence_ids": [
+      "ev-boe-act-1946"
+    ],
+    "method": "用已存档公开正文核对对象和方向。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-boe-act-1946",
+        "quote": "into public ownership and bring the Bank under public control",
+        "relation": "counter",
+        "limitation": "不能把国有化当成理论家著作导致的改变，也不能因此说制度完全没变。",
+        "observation_end": "1946-12-31",
+        "publication_date": "1946"
+      }
+    ],
+    "remaining_gap": "缺1946年或更早的制度改变是否由理论家的反对造成。仅有法令不能回答原因。"
+  },
+  "semantic_review": {
+    "id": "txt-fb0f41f842-000411309-000411569",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": []
+}

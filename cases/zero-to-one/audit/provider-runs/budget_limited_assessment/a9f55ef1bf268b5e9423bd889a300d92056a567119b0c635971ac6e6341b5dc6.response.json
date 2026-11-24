@@ -1,0 +1,28 @@
+{
+  "id": "2f5826d6-b7e5-46e8-9f67-785f7f69846b",
+  "object": "chat.completion",
+  "created": 1794201446,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000037031-000037048\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"原文以“冬天”比喻中国公众预期中的困难时期，未界定具体指标（如经济衰退、失业、金融风险或社会动荡）与时间窗口；观察期可设为出版后至cutoff（2014—2026-11-09），但无对应可观测定义。\",\"reason\":\"“冬天”是模糊比喻，未说明何种困难、程度与期限，无法透明操作化为可检验结果。原文也未给出可核验的公众预期数据，仅作转述。\",\"limitation\":\"不能因出现任何经济下行就自动判命中；缺乏明确指标与期限使回顾性评分高度任意。\",\"evidence_ids\":[],\"method\":\"转述公众预期\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"即将\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000037076-000037115\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文描述作者写作时（约2014年）中国富人与较贫穷者的资产转移和储蓄行为，属于现状描述而非未来预测。\",\"reason\":\"该句以“正”描述当前行为，未给出可检验的未来结果或时间终点，应作为非预测排除。\",\"limitation\":\"若将其视为对后续资本外流或储蓄倾向的隐含预测，则原文未明确期限与指标，不宜评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7674,
+    "completion_tokens": 382,
+    "total_tokens": 8056,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 6906
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

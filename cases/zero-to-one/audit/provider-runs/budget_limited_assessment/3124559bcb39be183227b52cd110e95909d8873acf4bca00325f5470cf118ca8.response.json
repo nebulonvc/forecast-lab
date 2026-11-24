@@ -1,0 +1,28 @@
+{
+  "id": "64c1c882-8257-4f05-8315-dac7ab860f30",
+  "object": "chat.completion",
+  "created": 1794201441,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000019634-000019650\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件句预测：若餐厅忽视激烈竞争、仅依赖细微特色，则生意无法持续。原文未给出具体餐厅、期限或可观测指标；观察窗口为出版年2014至cutoff 2026-11-09，但无对应个案数据。\",\"reason\":\"该判断是带明确条件的泛化预测，触发条件（某具体餐厅忽视竞争只靠小特色）未在材料中对应到可观察对象，无法核验其生意是否持续。\",\"limitation\":\"缺少具体餐厅样本与经营存续数据；不能以一般餐饮业高失败率替代对该条件句的验证。\",\"evidence_ids\":[],\"method\":\"类比推理\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4335,
+    "completion_tokens": 212,
+    "total_tokens": 4547,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3567
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

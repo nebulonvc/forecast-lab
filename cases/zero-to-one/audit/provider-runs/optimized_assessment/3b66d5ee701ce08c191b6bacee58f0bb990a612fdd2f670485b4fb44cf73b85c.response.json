@@ -1,0 +1,28 @@
+{
+  "id": "0f03dbda-2411-466f-a552-c94f3aeeea67",
+  "object": "chat.completion",
+  "created": 1794201594,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000084947-000084964\",\"inclusion\":\"forecast\",\"verdict\":\"部分符合\",\"basis\":\"observed_window\",\"scope\":\"以特斯拉2014年后数年交付量增速为“发展速度”的操作化指标，观察2018—2019年（证据截止2020-01-29）；不评估“很快”的永久期限。\",\"reason\":\"原文预测创始人掌管下特斯拉发展速度不会很快慢下来；2019年交付约36.75万辆、同比增长50%，显示观察窗口内仍处增长，趋势符合。但证据仅覆盖2018—2019，不能证明长期不放缓，故为部分符合。\",\"limitation\":\"交付量不等于盈利、技术领先或品牌优势；2019年高增速不能排除之后放缓，最终结果待验证。\",\"evidence_ids\":[\"main-tesla-2019\",\"main-tesla-retail\"],\"method\":\"基于创始人仍掌管公司的推断\",\"method_basis\":\"inferred\",\"observation_end\":\"2020-01-29\",\"future_time_text\":\"很快\",\"condition_state\":\"satisfied\",\"trend_aligned\":true},{\"id\":\"txt-4001dbbdf2-000085331-000085359\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为“除非开发新科技”，即未开发新科技情形下全球化导致越来越多严峻能源挑战；观察窗口至2025年，但反事实条件无法操作化。\",\"reason\":\"这是条件性预测，其核心反事实（没有开发新科技）在现实中未发生且无法观察；现有可再生能源成本下降和电动车销量增长反而表明新科技在开发，不能直接检验该条件句。\",\"limitation\":\"不能把新能源技术进步当作条件未满足的评分依据，也不能用其反推无创新世界的结果；条件未确定，暂无法判断。\",\"evidence_ids\":[\"tech-iea-ev-2024\",\"tech-irena-costs-2024\"],\"method\":\"基于能源需求与旧技术限制的推断\",\"method_basis\":\"inferred\",\"observation_end\":\"2025-07\",\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000085874-000085903\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文以问句提出能源初创公司能否像Web 2.0公司一样成功，未给出方向性判断。\",\"reason\":\"开放提问没有回答未来方向，不构成可检验预测，归为非预测。\",\"limitation\":\"问句本身不提供可评分的方向或期限。\",\"evidence_ids\":[],\"method\":\"类比网络泡沫后的Web 2.0兴起\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000086068-000086097\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文是对能源2.0创业路径的建议性判断，非具体未来结果。\",\"reason\":\"“企业家面临的挑战首先是找到小型市场”属于创业策略建议，不是可检验的未来事件预测。\",\"limitation\":\"建议性陈述无明确可观测终点，不纳入预测评分。\",\"evidence_ids\":[],\"method\":\"基于Facebook等从小市场起步的类比\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7591,
+    "completion_tokens": 760,
+    "total_tokens": 8351,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 6823
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

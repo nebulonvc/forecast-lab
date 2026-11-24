@@ -1,0 +1,977 @@
+{
+  "claim_id": "txt-1c4066fc0c-000101650-000101708",
+  "version": "search-verifier-v2",
+  "input_sha256": "6633e4e5d15aea8d7a64b2d69384b2c2cf4dd2836f38b4427415a8347b4e7783",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000101650-000101708",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "对象：美国科技发展使管理手段进入个人内心世界并侵入私人领域这一前瞻判断；操作化：美国大型科技/平台企业是否通过数据收集、跨站追踪、敏感信息推断、算法定向、情绪操纵等方式实质侵入个人隐私与心理边界。实际观察窗口限定为2014—2024年（材料集中于FTC 2024年报告、2023年演讲、2014年Facebook情绪实验投诉等），1991—2013年无材料，不纳入已观察趋势。",
+    "reason": "自动复核未确认主要判断：建议把实际观察窗口写成2014—2024年，并称材料集中于“2014年Facebook情绪实验投诉”，但所给EPIC投诉文本没有出现2014年或该实验的观察日期；该日期是建议自行补入的，不能作为已核实的观察时期。; 建议用EPIC投诉支撑“情绪操纵”分项，但该文本是投诉中的指控，不是已裁决事实；建议自己也承认这是“投诉级证据”，却仍把它当作“直接触及内心世界分项”的支撑，证据强度与声明范围不匹配。; 建议判“部分符合、趋势符合”，但“趋势符合”要求主要方向已有持续观察证据；现有材料只覆盖2014—2024年且早期无材料，无法支撑跨时段持续趋势。同时，建议把“走向每个人的内心世界”的全称程度未被证实当作降为部分符合的理由，但原文是“有可能……走向每个人的内心世界”，并非断言必然覆盖每个人；不能因未证实全称程度就判部分符合。",
+    "limitation": "关键修订：将观察窗口从“1991年后至2026-11-09”收窄为2014—2024年，明确1991—2013年无材料，不据此声称全时段趋势。证据多为监管调查、投诉与政策文本，能证明数据收集与心理画像的普遍性，但不能直接证明对每个个体内心世界的全面侵入；因果机制与“科技治人”整体命题仍属解释性判断。",
+    "evidence_ids": [
+      "prior-fcea77e7f71c07575f47",
+      "ev-880d0fe5bf7b774cecd1d5db",
+      "ev-c0cb5c861a3694918e5332d4",
+      "ev-eb000cc4260679bb58af83bc",
+      "ev-8d66c3f550b80d00aade5b82",
+      "ev-a015a8a94d1cb80bde513e9e"
+    ],
+    "method": "从技术管理能力增长推演隐私与心理控制边界",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-fcea77e7f71c07575f47",
+        "relation": "support",
+        "quote": "FTC对大型社交媒体和视频平台的调查发现大范围收集个人信息并商业化，对儿童保护不足。",
+        "publication_date": "2024-09-19",
+        "observation_end": "2024-09-19",
+        "limitation": "为已登记摘要，非全文；仅概括调查发现，未给出具体侵入心理世界的量化证据。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-880d0fe5bf7b774cecd1d5db",
+        "relation": "support",
+        "quote": "The Companies Generally Collected Vast Amounts of Data About Users and Non-Users",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "FTC工作人员报告，日期元数据缺失（正文标September 2024）；证明数据收集广度，不直接证明心理侵入。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-c0cb5c861a3694918e5332d4",
+        "relation": "support",
+        "quote": "The Report details how these firms surveilled users not just on the firms’ platforms but also across the Internet, gathering information they compiled into dossiers then made available to advertisers and other entities.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "主席声明，属官方立场文本；描述跨站监视与画像，但未量化对个人内心世界的影响。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-eb000cc4260679bb58af83bc",
+        "relation": "support",
+        "quote": "With increasing precision, \ncompanies are collecting and sharing a staggering amount of information about American consumers.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "演讲文本，日期元数据缺失（正文标September 21, 2023）；为官员表述，非独立实证研究。",
+        "quote_verification": {
+          "method": "unique_whitespace_alignment",
+          "model_quote": "With increasing precision, companies are collecting and sharing a staggering amount of information about American consumers."
+        },
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-8d66c3f550b80d00aade5b82",
+        "relation": "support",
+        "quote": "Facebook altered the News Feeds of Facebook users to elicit positive and negative emotional responses.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "EPIC投诉文本，属指控而非已裁决事实；直接涉及情绪操纵，但对象为70万用户而非全体。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-a015a8a94d1cb80bde513e9e",
+        "relation": "boundary",
+        "quote": "the prevalence of commercial surveillance and data security practices that harm consumers",
+        "publication_date": "2022-08-22",
+        "observation_end": "2022-08-22",
+        "limitation": "拟议规则制定通知，证明监管关注商业监控，但不直接证明侵入内心世界；亦显示制度层面存在回应。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "需修正观察窗口：删除无来源支持的“2014年Facebook情绪实验投诉”日期，或补充能证明该实验观察时期的材料；需把“趋势符合”改为与现有证据相符的结论，或补充覆盖更早时段且能显示持续方向的材料；需重新说明“部分符合”具体对应后果B的哪些部分已实现、哪些未实现，不能仅以全称程度未证实为由降级。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000101650-000101708",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象：美国科技发展使管理手段进入个人内心世界并侵入私人领域；操作化：1991年后至2026-11-09前，美国大型科技/平台企业是否通过数据收集、心理画像、算法定向、情绪操纵等方式实质侵入个人隐私与心理边界。观察材料集中于2014—2024年。",
+    "reason": "原文判断科技治人手段可能突破一般技术管理、侵入个人私域与内心世界。FTC 2024年报告与主席声明显示大型平台大规模收集用户及非用户数据、跨站追踪、推断敏感信息并用于定向广告，属于侵入私人领域与心理边界的持续客观证据；EPIC投诉还记录了未经同意对用户进行情绪操纵的心理实验。但“进入每个人内心世界”的全称程度未被完全证实，且部分材料为投诉或制度文本，故判部分符合、趋势符合。",
+    "limitation": "证据多为监管调查、投诉与政策文本，能证明数据收集与心理画像的普遍性，但不能直接证明对每个个体内心世界的全面侵入；因果机制与“科技治人”整体命题仍属解释性判断。",
+    "evidence_ids": [
+      "prior-fcea77e7f71c07575f47",
+      "ev-880d0fe5bf7b774cecd1d5db",
+      "ev-c0cb5c861a3694918e5332d4",
+      "ev-eb000cc4260679bb58af83bc",
+      "ev-8d66c3f550b80d00aade5b82",
+      "ev-a015a8a94d1cb80bde513e9e"
+    ],
+    "method": "从技术管理能力增长推演隐私与心理控制边界",
+    "method_basis": "inferred",
+    "observation_end": "2024-09-19",
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-fcea77e7f71c07575f47",
+        "relation": "support",
+        "quote": "FTC对大型社交媒体和视频平台的调查发现大范围收集个人信息并商业化，对儿童保护不足。",
+        "publication_date": "2024-09-19",
+        "observation_end": "2024-09-19",
+        "limitation": "为已登记摘要，非全文；仅概括调查发现，未给出具体侵入心理世界的量化证据。"
+      },
+      {
+        "evidence_id": "ev-880d0fe5bf7b774cecd1d5db",
+        "relation": "support",
+        "quote": "The Companies Generally Collected Vast Amounts of Data About Users and Non-Users",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "FTC工作人员报告，日期元数据缺失（正文标September 2024）；证明数据收集广度，不直接证明心理侵入。"
+      },
+      {
+        "evidence_id": "ev-c0cb5c861a3694918e5332d4",
+        "relation": "support",
+        "quote": "The Report details how these firms surveilled users not just on the firms’ platforms but also across the Internet, gathering information they compiled into dossiers then made available to advertisers and other entities.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "主席声明，属官方立场文本；描述跨站监视与画像，但未量化对个人内心世界的影响。"
+      },
+      {
+        "evidence_id": "ev-eb000cc4260679bb58af83bc",
+        "relation": "support",
+        "quote": "With increasing precision, companies are collecting and sharing a staggering amount of information about American consumers.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "演讲文本，日期元数据缺失（正文标September 21, 2023）；为官员表述，非独立实证研究。"
+      },
+      {
+        "evidence_id": "ev-8d66c3f550b80d00aade5b82",
+        "relation": "support",
+        "quote": "Facebook altered the News Feeds of Facebook users to elicit positive and negative emotional responses.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "EPIC投诉文本，属指控而非已裁决事实；直接涉及情绪操纵，但对象为70万用户而非全体。"
+      },
+      {
+        "evidence_id": "ev-a015a8a94d1cb80bde513e9e",
+        "relation": "boundary",
+        "quote": "the prevalence of commercial surveillance and data security practices that harm consumers",
+        "publication_date": "2022-08-22",
+        "observation_end": "2022-08-22",
+        "limitation": "拟议规则制定通知，证明监管关注商业监控，但不直接证明侵入内心世界；亦显示制度层面存在回应。"
+      }
+    ],
+    "remaining_gap": "缺少覆盖1991年至2024年全时段、可量化“进入个人内心世界”程度的独立实证材料；现有证据集中于数据收集与画像，心理操纵仅有投诉级证据。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-fcea77e7f71c07575f47",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-staff-report-finds-large-social-media-video-streaming-companies-have-engaged-vast-surveillance",
+      "title": "ev-privacy",
+      "published_date": "2024-09-19",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-09-19",
+        "latest": "2024-09-19"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-privacy",
+      "archive_sha256": "3bef4ed3b27a80cc09bbef06221649cf1c5ba6e7ffad1e3561c94c3b5ae9fa9b",
+      "archive_path": "data/sources/web-access-fallback.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-880d0fe5bf7b774cecd1d5db",
+      "url": "https://search.ftc.gov/system/files/ftc_gov/pdf/Social-Media-6b-Report-9-11-2024.pdf",
+      "resolved_url": "https://search.ftc.gov/system/files/ftc_gov/pdf/Social-Media-6b-Report-9-11-2024.pdf",
+      "title": "A Look Behind the Screens: Examining the Data Practices of Social Media and Video Streaming Services",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:31.894570+00:00",
+      "archive_sha256": "6c5e7001c6b85b33f3b92e86a4d2176f40c0fd2220efc3ce5cb734e2b6b8e16e",
+      "archive_path": "jobs/d97d9f18dc4208e283d5e3c6/6c5e7001c6b85b33f3b92e86a4d2176f40c0fd2220efc3ce5cb734e2b6b8e16e.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c0cb5c861a3694918e5332d4",
+      "url": "https://search.ftc.gov/system/files/ftc_gov/pdf/statement-chair-khan-social-media-6b.pdf",
+      "resolved_url": "https://search.ftc.gov/system/files/ftc_gov/pdf/statement-chair-khan-social-media-6b.pdf",
+      "title": "Statement of Chair Lina M. Khan Regarding the Social Media and Video Streaming Service Providers Privacy Report",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:31.894710+00:00",
+      "archive_sha256": "2afc496b99357d87fa3e9b436e201062a4275801e8fe4a8681330bbc9cb6efd5",
+      "archive_path": "jobs/d97d9f18dc4208e283d5e3c6/2afc496b99357d87fa3e9b436e201062a4275801e8fe4a8681330bbc9cb6efd5.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a015a8a94d1cb80bde513e9e",
+      "url": "https://www.federalregister.gov/documents/2022/08/22/2022-17752/trade-regulation-rule-on-commercial-surveillance-and-data-security",
+      "resolved_url": "https://www.federalregister.gov/documents/2022/08/22/2022-17752/trade-regulation-rule-on-commercial-surveillance-and-data-security",
+      "title": "Federal Register\n       :: \n      Trade Regulation Rule on Commercial Surveillance and Data Security",
+      "published_date": "2022-08-22",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2022-08-22",
+        "latest": "2022-08-22"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:31.894808+00:00",
+      "archive_sha256": "b2dfac7d1fb9f0c0fea13f64d49d9801337642a1c6eb05d299a6b36b272d5148",
+      "archive_path": "jobs/d97d9f18dc4208e283d5e3c6/b2dfac7d1fb9f0c0fea13f64d49d9801337642a1c6eb05d299a6b36b272d5148.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-eb000cc4260679bb58af83bc",
+      "url": "https://search.ftc.gov/system/files/ftc_gov/pdf/cdia-sam-levine-9-21-2023.pdf",
+      "resolved_url": "https://search.ftc.gov/system/files/ftc_gov/pdf/cdia-sam-levine-9-21-2023.pdf",
+      "title": "2023 Consumer Data Industry Association Law & Industry Conference - Sam Levine - September 21, 2023",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:31.894894+00:00",
+      "archive_sha256": "f31c0348b549b3f6012810173b091ee4044f2d5b2ce3b3e5f27700b6235f7837",
+      "archive_path": "jobs/d97d9f18dc4208e283d5e3c6/f31c0348b549b3f6012810173b091ee4044f2d5b2ce3b3e5f27700b6235f7837.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-8d66c3f550b80d00aade5b82",
+      "url": "https://www2.epic.org/privacy/internet/ftc/facebook/psycho/Facebook-Study-Complaint.pdf",
+      "resolved_url": "https://www2.epic.org/privacy/internet/ftc/facebook/psycho/Facebook-Study-Complaint.pdf",
+      "title": "Before the FEDERAL TRADE COMMISSION Washington, DC 20580",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:44.599555+00:00",
+      "archive_sha256": "17dbbc3f795a1a7287affde33fe91abf20b53c2beca4ab033fcbf0008789cdcd",
+      "archive_path": "jobs/d97d9f18dc4208e283d5e3c6/17dbbc3f795a1a7287affde33fe91abf20b53c2beca4ab033fcbf0008789cdcd.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-44875755c2449c7026b1dfc6",
+      "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF12246/IF12246.3.pdf",
+      "resolved_url": "https://www.congress.gov/crs_external_products/IF/PDF/IF12246/IF12246.3.pdf",
+      "title": "What Hides in the Shadows: Deceptive Design of Dark Patterns",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:44.599704+00:00",
+      "archive_sha256": "984d74842f5884c14b6befe84d0eb4f7f7cec7233c98172d649e3a8cbcb5a7ea",
+      "archive_path": "jobs/d97d9f18dc4208e283d5e3c6/984d74842f5884c14b6befe84d0eb4f7f7cec7233c98172d649e3a8cbcb5a7ea.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "FTC 2024 report large social media video streaming companies vast surveillance personal data targeted advertising",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "FTC privacy enforcement limits data collection psychological profiling not intrusive private domain evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "FTC 2024 report social media video streaming data practices behavioral advertising psychological profiling sensitive inferences privacy",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "FTC enforcement privacy limits data collection not psychological manipulation private domain evidence counterexample",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-880d0fe5bf7b774cecd1d5db",
+        "ev-8d66c3f550b80d00aade5b82",
+        "ev-c0cb5c861a3694918e5332d4",
+        "ev-eb000cc4260679bb58af83bc"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "remaining_gap": "需修正观察窗口：删除无来源支持的“2014年Facebook情绪实验投诉”日期，或补充能证明该实验观察时期的材料；需把“趋势符合”改为与现有证据相符的结论，或补充覆盖更早时段且能显示持续方向的材料；需重新说明“部分符合”具体对应后果B的哪些部分已实现、哪些未实现，不能仅以全称程度未证实为由降级。",
+  "source_statuses": [
+    {
+      "url": "https://search.ftc.gov/system/files/ftc_gov/pdf/Social-Media-6b-Report-9-11-2024.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://search.ftc.gov/system/files/ftc_gov/pdf/statement-chair-khan-social-media-6b.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.federalregister.gov/documents/2022/08/22/2022-17752/trade-regulation-rule-on-commercial-surveillance-and-data-security",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://search.ftc.gov/system/files/ftc_gov/pdf/cdia-sam-levine-9-21-2023.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www2.epic.org/privacy/internet/ftc/facebook/psycho/Facebook-Study-Complaint.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.congress.gov/crs_external_products/IF/PDF/IF12246/IF12246.3.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "对象：王沪宁所述美国科技发展使管理手段突破一般技术性管理、进入个人内心世界并侵入私人领域的可能趋势。可观察口径：1991年后至2026-11-09前，美国大型科技/平台企业是否通过数据收集、行为追踪、心理/偏好画像、算法定向等方式实质侵入个人隐私与心理边界。反证：若权威制度记录显示科技管理仍限于一般技术性事务、未触及私人领域，或隐私侵入主要来自非科技主体，则构成反证。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "3e4b04de4cee3a5e63097db99a7ff78fb6f604e20294529907648c49ef02fb1f"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "60ceccf618f42dae48af6c61a6670fec",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "ea9d0081bd89c91897c9c98163d52e93",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "dd5b8048106f67394c5d98dd60f22434d7da570c794cd6ec9ae7caeabbbfdb8d"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "4a33f2e47c2ba16baecf8531b0de5ac4",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "7fd20c097651f797e85ede0fa9730b63542bbc6b0da33a5d1156fe65cb039654"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "d91773e007eff1545462e71585ea29ac",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "c2b85b997483e215fae60099ab59ea4a",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "a308a079d02311a36d4d9739bc1008b05292cdef90a791e1f2ab4822f74297f9"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "de122b3cc248f49e386442488dfce0ef",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "b442236801421fcc414f9df8c1a9994eac5d9d2ab5f7d3e70e510832ba16b214"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "7cea3104e6bf05ebcbe6d520ee23dad087353eae35b1924dd9116e83aca45635"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "70acab2e267a091f9aff447ba8d8290db5a410c4b2f01f732913f4bf6a1987dd"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "ffeba7a76d4681a2a086b76e40ac7e55b2c1de337875fc831d5878623ffc4441"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-880d0fe5bf7b774cecd1d5db",
+            "ev-8d66c3f550b80d00aade5b82",
+            "ev-c0cb5c861a3694918e5332d4",
+            "ev-eb000cc4260679bb58af83bc"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-880d0fe5bf7b774cecd1d5db",
+            "ev-8d66c3f550b80d00aade5b82",
+            "ev-c0cb5c861a3694918e5332d4",
+            "ev-eb000cc4260679bb58af83bc"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-fcea77e7f71c07575f47",
+        "source_bytes": 120,
+        "shown_bytes": 120,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-880d0fe5bf7b774cecd1d5db",
+        "source_bytes": 12096,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c0cb5c861a3694918e5332d4",
+        "source_bytes": 10967,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a015a8a94d1cb80bde513e9e",
+        "source_bytes": 12048,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-eb000cc4260679bb58af83bc",
+        "source_bytes": 12086,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-8d66c3f550b80d00aade5b82",
+        "source_bytes": 12167,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-44875755c2449c7026b1dfc6",
+        "source_bytes": 11386,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-fcea77e7f71c07575f47",
+        "source_bytes": 120,
+        "shown_bytes": 120,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-880d0fe5bf7b774cecd1d5db",
+        "source_bytes": 12096,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c0cb5c861a3694918e5332d4",
+        "source_bytes": 10967,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a015a8a94d1cb80bde513e9e",
+        "source_bytes": 12048,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-eb000cc4260679bb58af83bc",
+        "source_bytes": 12086,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-8d66c3f550b80d00aade5b82",
+        "source_bytes": 12167,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-44875755c2449c7026b1dfc6",
+        "source_bytes": 11386,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-fcea77e7f71c07575f47",
+        "source_bytes": 120,
+        "shown_bytes": 120,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-880d0fe5bf7b774cecd1d5db",
+        "source_bytes": 12096,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c0cb5c861a3694918e5332d4",
+        "source_bytes": 10967,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a015a8a94d1cb80bde513e9e",
+        "source_bytes": 12048,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-eb000cc4260679bb58af83bc",
+        "source_bytes": 12086,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-8d66c3f550b80d00aade5b82",
+        "source_bytes": 12167,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-44875755c2449c7026b1dfc6",
+        "source_bytes": 11386,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-fcea77e7f71c07575f47",
+        "source_bytes": 120,
+        "shown_bytes": 120,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-880d0fe5bf7b774cecd1d5db",
+        "source_bytes": 12096,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c0cb5c861a3694918e5332d4",
+        "source_bytes": 10967,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a015a8a94d1cb80bde513e9e",
+        "source_bytes": 12048,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-eb000cc4260679bb58af83bc",
+        "source_bytes": 12086,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-8d66c3f550b80d00aade5b82",
+        "source_bytes": 12167,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-44875755c2449c7026b1dfc6",
+        "source_bytes": 11386,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000101650-000101708",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "fail",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "time_alignment",
+          "reason": "scope声称覆盖1991年后至2026-11-09，但实际观察材料集中于2014—2024年，observation_end=2024-09-19。原文预测无明确时间点，但把1991—2013年整段未观察时期纳入“已观察窗口”并据此判趋势符合，属于把未覆盖时期当作已兑现。应把观察窗口限定为2014—2024，并说明1991—2013无材料，不能据此声称全时段趋势。",
+          "quote_ref": "q3",
+          "source_quote": "观察材料集中于2014—2024年。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "原文是“有可能突破……走向每个人的内心世界，侵入人们的私域”，核心是可能性与方向，不是“每个人内心世界已被全面侵入”的全称结果。建议一方面承认“进入每个人内心世界”的全称程度未被完全证实，另一方面又判“部分符合、趋势符合”，但未指出后果B中哪些具体部分已实现、哪些未实现及其直接证据；仅以数据收集、画像、定向广告的普遍性支撑，属于把前提性技术能力证据当作后果实现证据。按口径，主要结果未观测到终点、仅有方向性材料时应判趋势符合（部分符合且trend_aligned=true）并明确终点待验证；若认为“进入内心世界”这一主要结果仍缺证据，则应保留具体未定，而不是用数据收集广度填成部分符合。",
+          "quote_ref": "q2",
+          "source_quote": "对象：美国科技发展使管理手段进入个人内心世界并侵入私人领域；操作化：1991年后至2026-11-09前，美国大型科技/平台企业是否通过数据收集、心理画像、算法定向、情绪操纵等方式实质侵入个人隐私与心理边界。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需将观察窗口明确限定为2014—2024（并说明1991—2013无材料），并明确“进入个人内心世界/侵入私域”这一后果B中哪些具体部分有直接证据实现、哪些仍属方向性未到终点；若无法给出后果B的分项实现证据，应改为趋势符合并注明终点待验证，或保留具体未定。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000101650-000101708",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "fail",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "time_alignment",
+          "reason": "建议把实际观察窗口写成2014—2024年，并称材料集中于“2014年Facebook情绪实验投诉”，但所给EPIC投诉文本没有出现2014年或该实验的观察日期；该日期是建议自行补入的，不能作为已核实的观察时期。",
+          "quote_ref": "q3",
+          "source_quote": "实际观察窗口限定为2014—2024年（材料集中于FTC 2024年报告、2023年演讲、2014年Facebook情绪实验投诉等），1991—2013年无材料，不纳入已观察趋势。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议用EPIC投诉支撑“情绪操纵”分项，但该文本是投诉中的指控，不是已裁决事实；建议自己也承认这是“投诉级证据”，却仍把它当作“直接触及内心世界分项”的支撑，证据强度与声明范围不匹配。",
+          "quote_ref": "q7",
+          "source_quote": "Facebook altered the News Feeds of Facebook users to elicit positive and negative emotional responses.",
+          "evidence_id": "ev-8d66c3f550b80d00aade5b82",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议判“部分符合、趋势符合”，但“趋势符合”要求主要方向已有持续观察证据；现有材料只覆盖2014—2024年且早期无材料，无法支撑跨时段持续趋势。同时，建议把“走向每个人的内心世界”的全称程度未被证实当作降为部分符合的理由，但原文是“有可能……走向每个人的内心世界”，并非断言必然覆盖每个人；不能因未证实全称程度就判部分符合。",
+          "quote_ref": "q2",
+          "source_quote": "对象：美国科技发展使管理手段进入个人内心世界并侵入私人领域这一前瞻判断；操作化：美国大型科技/平台企业是否通过数据收集、跨站追踪、敏感信息推断、算法定向、情绪操纵等方式实质侵入个人隐私与心理边界。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正观察窗口：删除无来源支持的“2014年Facebook情绪实验投诉”日期，或补充能证明该实验观察时期的材料；需把“趋势符合”改为与现有证据相符的结论，或补充覆盖更早时段且能显示持续方向的材料；需重新说明“部分符合”具体对应后果B的哪些部分已实现、哪些未实现，不能仅以全称程度未证实为由降级。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000101650-000101708",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象：美国科技发展使管理手段进入个人内心世界并侵入私人领域；操作化：1991年后至2026-11-09前，美国大型科技/平台企业是否通过数据收集、心理画像、算法定向、情绪操纵等方式实质侵入个人隐私与心理边界。观察材料集中于2014—2024年。",
+      "reason": "原文判断科技治人手段可能突破一般技术管理、侵入个人私域与内心世界。FTC 2024年报告与主席声明显示大型平台大规模收集用户及非用户数据、跨站追踪、推断敏感信息并用于定向广告，属于侵入私人领域与心理边界的持续客观证据；EPIC投诉还记录了未经同意对用户进行情绪操纵的心理实验。但“进入每个人内心世界”的全称程度未被完全证实，且部分材料为投诉或制度文本，故判部分符合、趋势符合。",
+      "limitation": "证据多为监管调查、投诉与政策文本，能证明数据收集与心理画像的普遍性，但不能直接证明对每个个体内心世界的全面侵入；因果机制与“科技治人”整体命题仍属解释性判断。",
+      "evidence_ids": [
+        "prior-fcea77e7f71c07575f47",
+        "ev-880d0fe5bf7b774cecd1d5db",
+        "ev-c0cb5c861a3694918e5332d4",
+        "ev-eb000cc4260679bb58af83bc",
+        "ev-8d66c3f550b80d00aade5b82",
+        "ev-a015a8a94d1cb80bde513e9e"
+      ],
+      "method": "从技术管理能力增长推演隐私与心理控制边界",
+      "method_basis": "inferred",
+      "observation_end": "2024-09-19",
+      "future_time_text": "",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-fcea77e7f71c07575f47",
+          "relation": "support",
+          "quote": "FTC对大型社交媒体和视频平台的调查发现大范围收集个人信息并商业化，对儿童保护不足。",
+          "publication_date": "2024-09-19",
+          "observation_end": "2024-09-19",
+          "limitation": "为已登记摘要，非全文；仅概括调查发现，未给出具体侵入心理世界的量化证据。"
+        },
+        {
+          "evidence_id": "ev-880d0fe5bf7b774cecd1d5db",
+          "relation": "support",
+          "quote": "The Companies Generally Collected Vast Amounts of Data About Users and Non-Users",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "FTC工作人员报告，日期元数据缺失（正文标September 2024）；证明数据收集广度，不直接证明心理侵入。"
+        },
+        {
+          "evidence_id": "ev-c0cb5c861a3694918e5332d4",
+          "relation": "support",
+          "quote": "The Report details how these firms surveilled users not just on the firms’ platforms but also across the Internet, gathering information they compiled into dossiers then made available to advertisers and other entities.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "主席声明，属官方立场文本；描述跨站监视与画像，但未量化对个人内心世界的影响。"
+        },
+        {
+          "evidence_id": "ev-eb000cc4260679bb58af83bc",
+          "relation": "support",
+          "quote": "With increasing precision, companies are collecting and sharing a staggering amount of information about American consumers.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "演讲文本，日期元数据缺失（正文标September 21, 2023）；为官员表述，非独立实证研究。"
+        },
+        {
+          "evidence_id": "ev-8d66c3f550b80d00aade5b82",
+          "relation": "support",
+          "quote": "Facebook altered the News Feeds of Facebook users to elicit positive and negative emotional responses.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "EPIC投诉文本，属指控而非已裁决事实；直接涉及情绪操纵，但对象为70万用户而非全体。"
+        },
+        {
+          "evidence_id": "ev-a015a8a94d1cb80bde513e9e",
+          "relation": "boundary",
+          "quote": "the prevalence of commercial surveillance and data security practices that harm consumers",
+          "publication_date": "2022-08-22",
+          "observation_end": "2022-08-22",
+          "limitation": "拟议规则制定通知，证明监管关注商业监控，但不直接证明侵入内心世界；亦显示制度层面存在回应。"
+        }
+      ],
+      "remaining_gap": "缺少覆盖1991年至2024年全时段、可量化“进入个人内心世界”程度的独立实证材料；现有证据集中于数据收集与画像，心理操纵仅有投诉级证据。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000101650-000101708",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象：美国科技发展使管理手段进入个人内心世界并侵入私人领域这一前瞻判断；操作化：美国大型科技/平台企业是否通过数据收集、跨站追踪、敏感信息推断、算法定向、情绪操纵等方式实质侵入个人隐私与心理边界。实际观察窗口限定为2014—2024年（材料集中于FTC 2024年报告、2023年演讲、2014年Facebook情绪实验投诉等），1991—2013年无材料，不纳入已观察趋势。",
+      "reason": "原文判断科技治人手段可能突破一般技术管理、侵入个人私域与内心世界。FTC 2024年报告与主席声明显示大型平台大规模收集用户及非用户数据、跨站追踪、推断敏感信息并用于定向广告，属于侵入私人领域与心理边界的持续客观证据；EPIC投诉记录了未经同意对用户进行情绪操纵的心理实验，直接触及“内心世界”分项。但“走向每个人的内心世界”的全称程度未被证实，且情绪操纵仅有投诉级证据，故判部分符合、趋势符合，最终终点待验证。",
+      "limitation": "关键修订：将观察窗口从“1991年后至2026-11-09”收窄为2014—2024年，明确1991—2013年无材料，不据此声称全时段趋势。证据多为监管调查、投诉与政策文本，能证明数据收集与心理画像的普遍性，但不能直接证明对每个个体内心世界的全面侵入；因果机制与“科技治人”整体命题仍属解释性判断。",
+      "evidence_ids": [
+        "prior-fcea77e7f71c07575f47",
+        "ev-880d0fe5bf7b774cecd1d5db",
+        "ev-c0cb5c861a3694918e5332d4",
+        "ev-eb000cc4260679bb58af83bc",
+        "ev-8d66c3f550b80d00aade5b82",
+        "ev-a015a8a94d1cb80bde513e9e"
+      ],
+      "method": "从技术管理能力增长推演隐私与心理控制边界",
+      "method_basis": "inferred",
+      "observation_end": "2024-09-19",
+      "future_time_text": "",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-fcea77e7f71c07575f47",
+          "relation": "support",
+          "quote": "FTC对大型社交媒体和视频平台的调查发现大范围收集个人信息并商业化，对儿童保护不足。",
+          "publication_date": "2024-09-19",
+          "observation_end": "2024-09-19",
+          "limitation": "为已登记摘要，非全文；仅概括调查发现，未给出具体侵入心理世界的量化证据。"
+        },
+        {
+          "evidence_id": "ev-880d0fe5bf7b774cecd1d5db",
+          "relation": "support",
+          "quote": "The Companies Generally Collected Vast Amounts of Data About Users and Non-Users",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "FTC工作人员报告，日期元数据缺失（正文标September 2024）；证明数据收集广度，不直接证明心理侵入。"
+        },
+        {
+          "evidence_id": "ev-c0cb5c861a3694918e5332d4",
+          "relation": "support",
+          "quote": "The Report details how these firms surveilled users not just on the firms’ platforms but also across the Internet, gathering information they compiled into dossiers then made available to advertisers and other entities.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "主席声明，属官方立场文本；描述跨站监视与画像，但未量化对个人内心世界的影响。"
+        },
+        {
+          "evidence_id": "ev-eb000cc4260679bb58af83bc",
+          "relation": "support",
+          "quote": "With increasing precision, companies are collecting and sharing a staggering amount of information about American consumers.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "演讲文本，日期元数据缺失（正文标September 21, 2023）；为官员表述，非独立实证研究。"
+        },
+        {
+          "evidence_id": "ev-8d66c3f550b80d00aade5b82",
+          "relation": "support",
+          "quote": "Facebook altered the News Feeds of Facebook users to elicit positive and negative emotional responses.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "EPIC投诉文本，属指控而非已裁决事实；直接涉及情绪操纵，但对象为70万用户而非全体。"
+        },
+        {
+          "evidence_id": "ev-a015a8a94d1cb80bde513e9e",
+          "relation": "boundary",
+          "quote": "the prevalence of commercial surveillance and data security practices that harm consumers",
+          "publication_date": "2022-08-22",
+          "observation_end": "2022-08-22",
+          "limitation": "拟议规则制定通知，证明监管关注商业监控，但不直接证明侵入内心世界；亦显示制度层面存在回应。"
+        }
+      ],
+      "remaining_gap": "缺少覆盖1991—2013年时段的材料，无法评估该早期阶段趋势；2014—2024年证据集中于数据收集与画像，心理操纵仅有投诉级证据，缺少独立实证材料量化“进入个人内心世界”的程度，最终终点待验证。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "对象：美国科技发展使管理手段进入个人内心世界并侵入私人领域这一前瞻判断；可观察口径：1991年后至截止日前，美国大型平台/科技企业是否通过数据收集、心理画像、算法定向等方式实质侵入个人隐私与心理边界；反证：若制度记录显示科技管理仍限于一般技术性事务、未触及私人领域，或隐私侵入主要来自非科技主体，则构成反证。",
+  "elapsed_seconds": 43.52,
+  "completed_at": "2026-11-09T10:34:07.741751+00:00"
+}

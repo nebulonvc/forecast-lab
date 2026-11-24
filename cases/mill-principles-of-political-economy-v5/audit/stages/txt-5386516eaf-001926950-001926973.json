@@ -1,0 +1,84 @@
+{
+  "id": "txt-5386516eaf-001926950-001926973",
+  "assess": {
+    "id": "txt-5386516eaf-001926950-001926973",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "雇主阶级迟早会无法忍受与利益和感情都敌对的人保持密切、时刻不断的接触。",
+    "reason": "英国大公司的管理控制在1914年前已经大体完成与所有权的分离。这不是因为与敌对工人的密切接触变得无法忍受。制造业小企业的就业和产出份额从1970年代初上升，说明较小单位还在，但材料没有写雇主是否与工人时刻接触。",
+    "limitation": "已做支持与反证。缺口专指敌对这一条件。",
+    "evidence_ids": [
+      "ev-hannah-2011",
+      "ev-small-firms-1992"
+    ],
+    "method": "支持检索离开工场的接触，反证检索小雇主是否仍在。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "sooner or later",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-hannah-2011",
+        "quote": "The evolution of managerial control in the UK was substantially \ncomplete before 1914.",
+        "relation": "boundary",
+        "limitation": "分离不是敌对接触。",
+        "observation_end": "1914-12-31",
+        "publication_date": "2011",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-small-firms-1992",
+        "quote": "the share of small business in manufacturing employment and output has increased since the early 1970s in most industrialized countries, reversing the previous trend",
+        "relation": "boundary",
+        "limitation": "小企业份额不是接触。",
+        "observation_end": "1992-12-01",
+        "publication_date": "1992-12-01",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺雇主是否因工人利益和感情敌对而无法再忍受密切、时刻不断的接触。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001926950-001926973",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "owners withdrew from shop-floor contact"
+      },
+      {
+        "role": "counter",
+        "query": "small firms employment share rose"
+      }
+    ],
+    "note": "无 executed=true。不另造claim ID。"
+  },
+  "select": {
+    "urls": [
+      "https://orca.cardiff.ac.uk/id/eprint/77911/1/e2011_21.pdf",
+      "https://ifn.se/wfiles/wp/wp357.pdf"
+    ],
+    "reason": "两个材料都不是敌对接触。"
+  }
+}

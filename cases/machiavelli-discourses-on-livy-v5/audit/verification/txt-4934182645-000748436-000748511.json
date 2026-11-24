@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000748436-000748511",
+  "plan": {
+    "object": "没有在平时和战时受过训练的军队。前文说，没有这种训练，任何将领都不能指望他们好好作战。",
+    "condition": "with such troops。部队是未经训练的。将领即使是另一个汉尼拔，也改变不了这个条件。将领不如汉尼拔而部队取胜，仍然说明这种部队的失败不是一定的。",
+    "quantifier": "defeat were certain。失败是一定的。一次未经训练而取胜，可以反驳一定；一次未经训练而战败，不能证明一定。",
+    "result": "登记变化是 defeat were certain。一定的是战败。",
+    "window": "1531至2026-11-15。卡米卢斯是出版前的例子。",
+    "counterevidence_needed": "未经训练的部队在一场战斗中战败或取胜。取胜就使一定失败不成立。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "untrained militia under an experienced general was defeated in battle after 1531",
+      "counter_query": "raw untrained troops led by an able general won a battle instead of being defeated"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://benningtonbattlemonument.com/about-the-monument/"],
+    "dropped": "1547年米尔贝格的页面没有写军队未经训练。1302年金马刺战役早于1531年。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "错误",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "satisfied",
+    "future_time_text": "",
+    "observation_end": "1777-08-16",
+    "evidence_ids": ["ev-bennington-1777"],
+    "scope": "一定失败针对的是未经训练的部队。though he were another Hannibal 是让步：即便将领好到汉尼拔那样，这种部队也一定失败。它不是要求反例里的将领必须被叫作汉尼拔。",
+    "reason": "连续原文先说，没有在平时和战时受过训练的军队，将领不能指望他们；接着用 though he were another Hannibal 加强这句：即便将领是另一个汉尼拔，这种部队也一定失败。后一句解释将领不能处处在场，除非事先让士兵理解命令。汉尼拔子句是让步，不是另加的能力门槛，也不因页面没称斯塔克为汉尼拔就把他排除。本宁顿纪念页写，1777年8月16日约两千名志愿兵大多数未经训练，这些大多未经训练的人彻底打败了欧洲受过最好训练的部队。未经训练的范围是这支部队的大多数，不是必须每一个人。他们取胜，所以失败不是一定的。支持检索的1547年米尔贝格没有写军队未经训练。观察停在1777年8月16日。复核后维持错误。",
+    "limitation": "纪念页没有研究出版日。它写大多数未经训练。页面没有比较斯塔克和汉尼拔，这个比较不是反例的条件。",
+    "method": "先看部队是不是未经训练，再看失败是不是一定。一次取胜就使一定不成立。不先把这一仗预定成反例，只按页面上的取胜来判。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "汉尼拔子句是让步，不是必须被称作汉尼拔的条件。1777年8月16日大多数未经训练的志愿兵取胜，一定失败不成立。复核后不改判。"
+  }
+}

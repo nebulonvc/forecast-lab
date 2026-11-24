@@ -1,0 +1,73 @@
+{
+  "id": "txt-099aaa16de-000561347-000561640",
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "新近的法律对银币收取约百分之六的铸币税，即每盎司四便士，黄金则由造币厂免费铸造。作者认为这样最适当，因为它会更有效地防止通货不必要的变动。",
+    "reason": "支持方向落下的全文是1816年法令正文和1816年5月30日的银币辩论，写的是法律本身。反方向没有落下全文页。没有后来的金银价值序列说明不必要的变动已被防止或仍在发生。",
+    "limitation": "辩论页地址中的1816-05-30是立法当天，不是法律生效之后的观察日，不写入 observation_end。",
+    "evidence_ids": [],
+    "method": "银币有铸币税、黄金免费铸造，因此通货更不容易出现不必要的变动。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": false,
+    "evidence_notes": [],
+    "remaining_gap": "缺1816年之后通货金银价值是否还有不必要变动的同对象记录，以及那份记录自己的源日期。",
+    "id": "txt-099aaa16de-000561347-000561640"
+  },
+  "previous_r2_plan": null,
+  "previous_r2_select": null,
+  "previous_r2_semantic_review": null,
+  "plan": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "not_a_pre_search_plan": "这是2026-11-20的r3补写。r2里这栏若只有“当前审查”一句，那个时间保留在previous_r2_plan，不把本段倒签成检索之前。",
+    "object": "银币约收百分之六铸币税、黄金免费铸造，作者认为这样会更有效地防止通货不必要的变动。",
+    "condition": "这套铸币规则已经立下。要看的是它是否防止了不必要的变动。",
+    "observable": "1816年这套规则之后，通货的金银价值是否还有不必要的变动。",
+    "potential_counterevidence": "若规则实行后，金银价值仍有被作者称为不必要的变动。",
+    "queries": [
+      {
+        "role": "support",
+        "query": "British Coinage Act 1816 silver seignorage and gold coined free",
+        "precall_file": "audit/r-batch5/precall/01.json"
+      },
+      {
+        "role": "counter",
+        "query": "variations in the bullion value of British currency after 1816",
+        "precall_file": "audit/r-batch5/precall/02.json"
+      }
+    ]
+  },
+  "select": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "max_urls": 8,
+    "urls": [],
+    "selected_for_score": [],
+    "url_gap": "这条的已存返回是precall和页文本或空的saved_pages。那些文件没有URL行。不编URL。不利材料若只有查询名、没有地址，不能装成名单。"
+  },
+  "semantic_review": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "decision": "unresolved",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "unknown",
+      "evidence_support": "unknown",
+      "counterevidence": "unknown",
+      "verdict_logic": "pass"
+    },
+    "check_reasons": {
+      "object_match": "评估把对象放在防止变动，没有把1816年法律本身的通过当成结果。",
+      "condition_logic": "法律是1816年的铸币规则。评估把它当成已经立下的前提，没有把前提成立写成预防已经成功。",
+      "time_alignment": "检索页没有被收成1816年之后变动的观察日。观察终点留空。",
+      "evidence_support": "支持查询只落到铸币税和免费铸造，没有防止变动的记录。",
+      "counterevidence": "反证查询是1816年后金银价值的变动。保存页列表为空，没有URL，不能把空列表说成没有变动。",
+      "verdict_logic": "规则存在不等于预防成功。暂无法判断没有判成正确。"
+    },
+    "revision": "本轮六项没有fail，所以没有做那一次修订。判决保持暂无法判断。",
+    "remaining_gap": "还缺1816年之后通货金银价值是否还有不必要变动的同对象记录，以及那份记录的日期。"
+  }
+}

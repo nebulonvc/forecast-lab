@@ -1,0 +1,28 @@
+{
+  "id": "71ca6c03-50c2-4276-85c7-301bfc632474",
+  "object": "chat.completion",
+  "created": 1794201447,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000040923-000040954\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为对罗尔斯《正义论》中“无知之幕”前提的哲学转述，不涉及可观察的未来事件或时间窗口。\",\"reason\":\"该句是对罗尔斯公平政治理论的解释性陈述，属于哲学论证而非对未来事实的预测。\",\"limitation\":\"原文为条件性哲学论断，无可观测指标或时间终点，不构成可评估预测。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4229,
+    "completion_tokens": 160,
+    "total_tokens": 4389,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3461
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

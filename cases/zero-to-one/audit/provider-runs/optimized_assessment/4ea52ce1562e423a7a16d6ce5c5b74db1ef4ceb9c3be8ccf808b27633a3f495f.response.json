@@ -1,0 +1,28 @@
+{
+  "id": "6e7984e8-78d2-46d0-9d66-553b14f6e5be",
+  "object": "chat.completion",
+  "created": 1794201590,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000063637-000063670\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"预测对象为“奔着免费洗衣或宠物看护等福利而来的人”是否成为合格团队成员；无期限、无具体团队与合格标准，无法在观察窗口内客观操作化。\",\"reason\":\"该句是对招聘取向的规范性断言，缺乏可核验的团队、成员与合格标准，也没有任何证据可对照。\",\"limitation\":\"“合格成员”属主观评价，无法用公开数据检验；不因作者未给期限而强行判错。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000064116-000064136\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为“员工世界观相同”，结果为初创公司更易快速高效运转；条件是否发生及“世界观相同”如何度量均未界定。\",\"reason\":\"这是转述列夫琴的条件性判断，触发条件未确定、结果指标不可操作化，无法评分。\",\"limitation\":\"“世界观相同”与“快速高效运转”均无客观口径；不能以PayPal个案代替普遍检验。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000064580-000064591\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为对PayPal管理经验的历史总结（“界定角色可减少矛盾”），非面向未来的可检验预测。\",\"reason\":\"该句是对已发生管理实践效果的回顾性陈述，不构成对未来结果的预测。\",\"limitation\":\"作为经验总结无法独立检验因果，且不属预测类。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000064733-000064750\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"预测“派别冲突会使公司无力应付外部威胁”；未指定公司、冲突程度与外部威胁类型，无法操作化。\",\"reason\":\"该句为一般性因果断言，缺乏可核验的具体对象与指标，也无证据可对照。\",\"limitation\":\"“无力应付”属结果性评价，难以量化；不能以个别公司案例代表普遍规律。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6309,
+    "completion_tokens": 635,
+    "total_tokens": 6944,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 5541
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

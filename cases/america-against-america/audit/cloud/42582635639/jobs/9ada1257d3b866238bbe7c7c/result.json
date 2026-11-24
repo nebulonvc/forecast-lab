@@ -1,0 +1,540 @@
+{
+  "claim_id": "txt-1c4066fc0c-000179362-000179432",
+  "version": "search-verifier-v1",
+  "input_sha256": "b2034f21f9b885ba0ab9b20ebafd2cf0294caac2b1670d668bd254a5bb99c5f4",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000179362-000179432",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "对象为美国社会整体人类服务/社会安全网缓冲功能；条件为美国社会持续制造越来越多的否定力量（贫困、失业、无家可归等）且人类服务只能转化不能消除；观察口径为社会问题存量/增量是否持续上升，同时人类服务支出与覆盖是否出现系统性收缩、福利中断或制度性失效。观察时段为1991年出版至2026-11-09截止日前的实际数据。",
+    "reason": "原文判断是条件性长期趋势：否定力量持续增多且人类服务只能缓冲，则缓冲功能终有一天达到极限。现有证据显示无家可归人数长期上升（2013—2025增27%），但官方贫困率2024年降至10.6%，社会安全金2024年仍向7290万人发放，OASI 2025年出现收入低于支出但仍在支付，社会服务并未出现系统性收缩或制度性失效。主要分项方向不一致，无法判定缓冲功能是否已达或趋近极限。",
+    "limitation": "原文未给出“极限”的可观测定义或期限，且“否定力量”涵盖贫困、失业、无家可归等多指标，现有证据仅覆盖部分指标且方向不一；社会安全金精算缺口属预测，不能当作已发生结果。",
+    "evidence_ids": [
+      "prior-71359ce34658d6db8f93",
+      "prior-c0c8213343a393e3eaea",
+      "ev-1f39286ba4cf775b42aa8eb8",
+      "ev-78f4f2263208d0c468f5fddd",
+      "ev-b6a72912337b22b18bf69f7a"
+    ],
+    "method": "由问题持续产生与缓冲能力有限推演机制极限",
+    "method_basis": "explicit",
+    "observation_end": "2026-05-29",
+    "future_time_text": "长此以往；总有一天",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-71359ce34658d6db8f93",
+        "relation": "boundary",
+        "quote": "2026受托人摘要列2025实际：OASI收入12488亿美元、支出14488亿美元，准备金下降2000亿美元；DI和HI当年则有盈余，年底仍向约6230万OASI及820万DI受益人付款。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "OASI当年收入低于支出可视为缓冲压力信号，但仍在持续付款，且DI/HI有盈余，不能证明整体功能达极限；日期未知。"
+      },
+      {
+        "evidence_id": "prior-c0c8213343a393e3eaea",
+        "relation": "support",
+        "quote": "HUD报告2024年1月单夜无家可归者超过77万，比2023增18%；家庭上升但退伍军人无家可归有所改善。",
+        "publication_date": "2024-12-27",
+        "observation_end": "2024-01-01",
+        "limitation": "单年无家可归上升支持“否定力量增多”分项，但仅一个指标、一个时点，且退伍军人分项改善。"
+      },
+      {
+        "evidence_id": "ev-1f39286ba4cf775b42aa8eb8",
+        "relation": "support",
+        "quote": "745,652 people were homeless, including 266,320 people living on the street on a single night in January 2025 – a 27% increase since 2013 and a 3% decrease since 2024",
+        "publication_date": "2026-05-29",
+        "observation_end": "2025-01-01",
+        "limitation": "长期上升支持否定力量增多，但较2024年下降3%，方向并非单向；且仅无家可归一个指标。"
+      },
+      {
+        "evidence_id": "ev-78f4f2263208d0c468f5fddd",
+        "relation": "counter",
+        "quote": "The official poverty rate fell 0.4 percentage points to 10.6% in 2024.",
+        "publication_date": "2025-09-09",
+        "observation_end": "2024-12-31",
+        "limitation": "官方贫困率下降与“否定力量持续增多”分项相反，但SPM为12.9%且与2023无统计差异，指标口径不同。"
+      },
+      {
+        "evidence_id": "ev-b6a72912337b22b18bf69f7a",
+        "relation": "counter",
+        "quote": "72.9 million people received benefits from programs administered by the Social Security Administration (SSA) in 2024.",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "显示社会安全网覆盖仍广、未出现系统性收缩，但仅覆盖社保项目，不含全部人类服务；日期未知。"
+      }
+    ],
+    "remaining_gap": "缺少能直接操作化“缓冲功能极限”的指标（如福利给付中断、覆盖系统性收缩、服务等待名单激增等）在截止日前的连续数据；贫困、无家可归等分项方向不一致，无法判定条件是否满足及趋势是否指向极限。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000179362-000179432",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "对象为美国社会整体人类服务/社会安全网缓冲功能；条件为美国社会持续制造越来越多的否定力量（贫困、失业、无家可归等）且人类服务只能转化不能消除；观察口径为社会问题存量/增量是否持续上升，同时人类服务支出与覆盖是否出现系统性收缩、福利中断或制度性失效。观察时段为1991年出版至2026-11-09截止日前的实际数据。",
+    "reason": "原文判断是条件性长期趋势：否定力量持续增多且人类服务只能缓冲，则缓冲功能终有一天达到极限。现有证据显示无家可归人数长期上升（2013—2025增27%），但官方贫困率2024年降至10.6%，社会安全金2024年仍向7290万人发放，OASI 2025年出现收入低于支出但仍在支付，社会服务并未出现系统性收缩或制度性失效。主要分项方向不一致，无法判定缓冲功能是否已达或趋近极限。",
+    "limitation": "原文未给出“极限”的可观测定义或期限，且“否定力量”涵盖贫困、失业、无家可归等多指标，现有证据仅覆盖部分指标且方向不一；社会安全金精算缺口属预测，不能当作已发生结果。",
+    "evidence_ids": [
+      "prior-71359ce34658d6db8f93",
+      "prior-c0c8213343a393e3eaea",
+      "ev-1f39286ba4cf775b42aa8eb8",
+      "ev-78f4f2263208d0c468f5fddd",
+      "ev-b6a72912337b22b18bf69f7a"
+    ],
+    "method": "由问题持续产生与缓冲能力有限推演机制极限",
+    "method_basis": "explicit",
+    "observation_end": "2026-05-29",
+    "future_time_text": "长此以往；总有一天",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-71359ce34658d6db8f93",
+        "relation": "boundary",
+        "quote": "2026受托人摘要列2025实际：OASI收入12488亿美元、支出14488亿美元，准备金下降2000亿美元；DI和HI当年则有盈余，年底仍向约6230万OASI及820万DI受益人付款。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "OASI当年收入低于支出可视为缓冲压力信号，但仍在持续付款，且DI/HI有盈余，不能证明整体功能达极限；日期未知。"
+      },
+      {
+        "evidence_id": "prior-c0c8213343a393e3eaea",
+        "relation": "support",
+        "quote": "HUD报告2024年1月单夜无家可归者超过77万，比2023增18%；家庭上升但退伍军人无家可归有所改善。",
+        "publication_date": "2024-12-27",
+        "observation_end": "2024-01-01",
+        "limitation": "单年无家可归上升支持“否定力量增多”分项，但仅一个指标、一个时点，且退伍军人分项改善。"
+      },
+      {
+        "evidence_id": "ev-1f39286ba4cf775b42aa8eb8",
+        "relation": "support",
+        "quote": "745,652 people were homeless, including 266,320 people living on the street on a single night in January 2025 – a 27% increase since 2013 and a 3% decrease since 2024",
+        "publication_date": "2026-05-29",
+        "observation_end": "2025-01-01",
+        "limitation": "长期上升支持否定力量增多，但较2024年下降3%，方向并非单向；且仅无家可归一个指标。"
+      },
+      {
+        "evidence_id": "ev-78f4f2263208d0c468f5fddd",
+        "relation": "counter",
+        "quote": "The official poverty rate fell 0.4 percentage points to 10.6% in 2024.",
+        "publication_date": "2025-09-09",
+        "observation_end": "2024-12-31",
+        "limitation": "官方贫困率下降与“否定力量持续增多”分项相反，但SPM为12.9%且与2023无统计差异，指标口径不同。"
+      },
+      {
+        "evidence_id": "ev-b6a72912337b22b18bf69f7a",
+        "relation": "counter",
+        "quote": "72.9 million people received benefits from programs administered by the Social Security Administration (SSA) in 2024.",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "显示社会安全网覆盖仍广、未出现系统性收缩，但仅覆盖社保项目，不含全部人类服务；日期未知。"
+      }
+    ],
+    "remaining_gap": "缺少能直接操作化“缓冲功能极限”的指标（如福利给付中断、覆盖系统性收缩、服务等待名单激增等）在截止日前的连续数据；贫困、无家可归等分项方向不一致，无法判定条件是否满足及趋势是否指向极限。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-71359ce34658d6db8f93",
+      "url": "https://www.ssa.gov/oact/trsum/index.html",
+      "title": "ev-r2-l2-ssa-actual",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-ssa-actual",
+      "archive_sha256": "d7ac26b32f8dc1fd29fee5b25f54585af209c71f6fb9e9170cf2a704fea261fd",
+      "archive_path": "data/sources/r2-l2-ssa-actual-web-notes.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-394c925dc249717933d2",
+      "url": "https://home.treasury.gov/news/press-releases/jy2657",
+      "title": "ev-budget",
+      "published_date": "2024-10-18",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-budget",
+      "archive_sha256": "357cda3c8aac9ade2875be537b7f9f3442c931d8ceaa29a8c568c4a3e22d2a99",
+      "archive_path": "data/sources/357cda3c8aac9ade2875be537b7f9f3442c931d8ceaa29a8c568c4a3e22d2a99.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-c0c8213343a393e3eaea",
+      "url": "https://archives.hud.gov/news/2024/pr24-327.cfm",
+      "title": "ev-homeless",
+      "published_date": "2024-12-27",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-homeless",
+      "archive_sha256": "85fa2ad034549af8986bb96f6e15ecaae4c3b46f73ef816bbda6b090cf158f83",
+      "archive_path": "data/sources/85fa2ad034549af8986bb96f6e15ecaae4c3b46f73ef816bbda6b090cf158f83.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-d136604e6c2ad68bc44a",
+      "url": "https://www.brookings.edu/articles/a-primer-on-snap-work-requirements-october-2023/",
+      "title": "ev-lane3-snap2023",
+      "published_date": "2023-10-05",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-snap2023",
+      "archive_sha256": "6421dd3859464a0f28ad8a710940827ded742300569e93dd569e4a57395f249a",
+      "archive_path": "data/sources/lane3-web-extracts.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-6feb73483a70e488fcdcf685",
+      "url": "https://www.huduser.gov/portal/sites/default/files/pdf/2024-AHAR-Part-1.pdf",
+      "resolved_url": "https://www.huduser.gov/portal/sites/default/files/pdf/2024-AHAR-Part-1.pdf",
+      "title": "The 2024 Annual Homelessness Assessment Report (AHAR to Congress) Part 1: Point-In-Time Estimates of Homelessness, December 2024",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:26.325737+00:00",
+      "archive_sha256": "7ce019da0f5e10bc36130bc79a0f5f4dc75fc32ab6a0226c734a5afa1d59c583",
+      "archive_path": "jobs/9ada1257d3b866238bbe7c7c/7ce019da0f5e10bc36130bc79a0f5f4dc75fc32ab6a0226c734a5afa1d59c583.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-1f39286ba4cf775b42aa8eb8",
+      "url": "https://www.hud.gov/news/hud-no-26-037",
+      "resolved_url": "https://www.hud.gov/news/hud-no-26-037",
+      "title": "HUD Releases 2025 Annual Homelessness Assessment Report to Congress | HUD.gov / U.S. Department of Housing and Urban Development (HUD)",
+      "published_date": "2026-05-29",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:26.325928+00:00",
+      "archive_sha256": "633565684ee78e8be572533f121be4628dfb2fbae4ccbe2171dc04a39d5ca18e",
+      "archive_path": "jobs/9ada1257d3b866238bbe7c7c/633565684ee78e8be572533f121be4628dfb2fbae4ccbe2171dc04a39d5ca18e.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-de3f8d27bc78e06983d92050",
+      "url": "https://www2.census.gov/library/publications/2025/demo/p60-287.pdf",
+      "resolved_url": "https://www2.census.gov/library/publications/2025/demo/p60-287.pdf",
+      "title": "Poverty in the United States: 2024",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:26.326124+00:00",
+      "archive_sha256": "9f6f7cca85c116c46bce05a8d14630810b6898de3c167c15b5e4d7a8dbeae959",
+      "archive_path": "jobs/9ada1257d3b866238bbe7c7c/9f6f7cca85c116c46bce05a8d14630810b6898de3c167c15b5e4d7a8dbeae959.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-b6a72912337b22b18bf69f7a",
+      "url": "https://www.ssa.gov/policy/docs/chartbooks/fast_facts/2025/fast_facts25.html",
+      "resolved_url": "https://www.ssa.gov/policy/docs/chartbooks/fast_facts/2025/fast_facts25.html",
+      "title": "Fast Facts & Figures About Social Security, 2025",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:26.326361+00:00",
+      "archive_sha256": "5efd7778bceeec4b69c99dbbac1edb233337f18562ef9ba8e9095bf1cc17ce3c",
+      "archive_path": "jobs/9ada1257d3b866238bbe7c7c/5efd7778bceeec4b69c99dbbac1edb233337f18562ef9ba8e9095bf1cc17ce3c.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-7c5c0e9d32d49586dec9ab50",
+      "url": "https://www.huduser.gov/portal/sites/default/files/pdf/2025-AHAR-Part-1.pdf",
+      "resolved_url": "https://www.huduser.gov/portal/sites/default/files/pdf/2025-AHAR-Part-1.pdf",
+      "title": "The 2025 Annual Homelessness Assessment Report (AHAR) to Congress Part 1: Point-In-Time Estimates of Homelessness, May 2026",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:37.343681+00:00",
+      "archive_sha256": "941a6feec381ea2e5f13c603e9236c38cd191b10a1a1ca46cbdfc678b43a896c",
+      "archive_path": "jobs/9ada1257d3b866238bbe7c7c/941a6feec381ea2e5f13c603e9236c38cd191b10a1a1ca46cbdfc678b43a896c.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-78f4f2263208d0c468f5fddd",
+      "url": "https://www.census.gov/newsroom/press-releases/2025/income-poverty-health-insurance-coverage.html",
+      "resolved_url": "https://www.census.gov/newsroom/press-releases/2025/income-poverty-health-insurance-coverage.html",
+      "title": "Income, Poverty and Health Insurance Coverage in the United States: 2024",
+      "published_date": "2025-09-09",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:37.343918+00:00",
+      "archive_sha256": "e6dd4056adb28e53ce9c87450db7cabaf17df52502387ba78e344bbaeea44600",
+      "archive_path": "jobs/9ada1257d3b866238bbe7c7c/e6dd4056adb28e53ce9c87450db7cabaf17df52502387ba78e344bbaeea44600.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-eb1ac051cb4b89a23e5e9341",
+      "url": "https://www.census.gov/library/publications/2025/demo/p60-287.html",
+      "resolved_url": "https://www.census.gov/library/publications/2025/demo/p60-287.html",
+      "title": "Poverty in the United States: 2024",
+      "published_date": "2025-09-09",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:37.344106+00:00",
+      "archive_sha256": "ac2ef654d690d2905e5d231fa1cb2648f37a6e36e188671fd169f51bd100a663",
+      "archive_path": "jobs/9ada1257d3b866238bbe7c7c/ac2ef654d690d2905e5d231fa1cb2648f37a6e36e188671fd169f51bd100a663.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "US homelessness poverty rate increase 2024 2025 HUD Census official statistics social safety net strain",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "US social safety net spending coverage expansion 2024 2025 SNAP Medicaid Social Security beneficiaries official",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "HUD 2025 Annual Homelessness Assessment Report point-in-time count January 2025 increase since 2013 official",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Census Bureau poverty rate 2024 official report P60-287 supplemental poverty measure decline",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少能直接操作化“缓冲功能极限”的指标（如福利给付中断、覆盖系统性收缩、服务等待名单激增等）在截止日前的连续数据；贫困、无家可归等分项方向不一致，无法判定条件是否满足及趋势是否指向极限。",
+  "source_statuses": [
+    {
+      "url": "https://www.huduser.gov/portal/sites/default/files/pdf/2024-AHAR-Part-1.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.hud.gov/news/hud-no-26-037",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www2.census.gov/library/publications/2025/demo/p60-287.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.ssa.gov/policy/docs/chartbooks/fast_facts/2025/fast_facts25.html",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.huduser.gov/portal/sites/default/files/pdf/2025-AHAR-Part-1.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.census.gov/newsroom/press-releases/2025/income-poverty-health-insurance-coverage.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.census.gov/library/publications/2025/demo/p60-287.html",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "f0fd0c37736226b868cdb07032c91b96f9eb7ebb288bc611b15b97040d4bda03"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "79023e815deaff77bbc5a93e56b2a961",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "19a4de8bb12e5c39660da99dea759a7a",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "808db2bb01906b6641b1ef70ec7b6f8663c6dd606591745114d8339cde1795eb"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "06b0e43eb24f835d17ab11462e4d1f17",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "759bd4ab38bc789838723dcab2075ce8a6edcbe43f1823b610a8f6c73c974680"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "9dfa872e8069a1f9d18297988eadedbe",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "33980b72f7d9c288b6d7f6e5256728c8",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "db4cd72f465daf204351d49deb8c2868cef78822fbce12b35b65d689e7e719bc"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "767b2183eaed9f422253d17ded2be64b",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "5fd5aea34b982d184218081d7e545fea6c21232e21e6350545815448adb800b1"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "59cd84148729480afdb1f9d85556c14583aa4b6eab532ae407aa6789fef7ea77"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000179362-000179432",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000179362-000179432",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "对象为美国社会整体人类服务/社会安全网缓冲功能；条件为美国社会持续制造越来越多的否定力量（贫困、失业、无家可归等）且人类服务只能转化不能消除；观察口径为社会问题存量/增量是否持续上升，同时人类服务支出与覆盖是否出现系统性收缩、福利中断或制度性失效。观察时段为1991年出版至2026-11-09截止日前的实际数据。",
+      "reason": "原文判断是条件性长期趋势：否定力量持续增多且人类服务只能缓冲，则缓冲功能终有一天达到极限。现有证据显示无家可归人数长期上升（2013—2025增27%），但官方贫困率2024年降至10.6%，社会安全金2024年仍向7290万人发放，OASI 2025年出现收入低于支出但仍在支付，社会服务并未出现系统性收缩或制度性失效。主要分项方向不一致，无法判定缓冲功能是否已达或趋近极限。",
+      "limitation": "原文未给出“极限”的可观测定义或期限，且“否定力量”涵盖贫困、失业、无家可归等多指标，现有证据仅覆盖部分指标且方向不一；社会安全金精算缺口属预测，不能当作已发生结果。",
+      "evidence_ids": [
+        "prior-71359ce34658d6db8f93",
+        "prior-c0c8213343a393e3eaea",
+        "ev-1f39286ba4cf775b42aa8eb8",
+        "ev-78f4f2263208d0c468f5fddd",
+        "ev-b6a72912337b22b18bf69f7a"
+      ],
+      "method": "由问题持续产生与缓冲能力有限推演机制极限",
+      "method_basis": "explicit",
+      "observation_end": "2026-05-29",
+      "future_time_text": "长此以往；总有一天",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-71359ce34658d6db8f93",
+          "relation": "boundary",
+          "quote": "2026受托人摘要列2025实际：OASI收入12488亿美元、支出14488亿美元，准备金下降2000亿美元；DI和HI当年则有盈余，年底仍向约6230万OASI及820万DI受益人付款。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "OASI当年收入低于支出可视为缓冲压力信号，但仍在持续付款，且DI/HI有盈余，不能证明整体功能达极限；日期未知。"
+        },
+        {
+          "evidence_id": "prior-c0c8213343a393e3eaea",
+          "relation": "support",
+          "quote": "HUD报告2024年1月单夜无家可归者超过77万，比2023增18%；家庭上升但退伍军人无家可归有所改善。",
+          "publication_date": "2024-12-27",
+          "observation_end": "2024-01-01",
+          "limitation": "单年无家可归上升支持“否定力量增多”分项，但仅一个指标、一个时点，且退伍军人分项改善。"
+        },
+        {
+          "evidence_id": "ev-1f39286ba4cf775b42aa8eb8",
+          "relation": "support",
+          "quote": "745,652 people were homeless, including 266,320 people living on the street on a single night in January 2025 – a 27% increase since 2013 and a 3% decrease since 2024",
+          "publication_date": "2026-05-29",
+          "observation_end": "2025-01-01",
+          "limitation": "长期上升支持否定力量增多，但较2024年下降3%，方向并非单向；且仅无家可归一个指标。"
+        },
+        {
+          "evidence_id": "ev-78f4f2263208d0c468f5fddd",
+          "relation": "counter",
+          "quote": "The official poverty rate fell 0.4 percentage points to 10.6% in 2024.",
+          "publication_date": "2025-09-09",
+          "observation_end": "2024-12-31",
+          "limitation": "官方贫困率下降与“否定力量持续增多”分项相反，但SPM为12.9%且与2023无统计差异，指标口径不同。"
+        },
+        {
+          "evidence_id": "ev-b6a72912337b22b18bf69f7a",
+          "relation": "counter",
+          "quote": "72.9 million people received benefits from programs administered by the Social Security Administration (SSA) in 2024.",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "显示社会安全网覆盖仍广、未出现系统性收缩，但仅覆盖社保项目，不含全部人类服务；日期未知。"
+        }
+      ],
+      "remaining_gap": "缺少能直接操作化“缓冲功能极限”的指标（如福利给付中断、覆盖系统性收缩、服务等待名单激增等）在截止日前的连续数据；贫困、无家可归等分项方向不一致，无法判定条件是否满足及趋势是否指向极限。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象为美国社会整体的人类服务/社会安全网缓冲功能，而非单一基金或单项福利；条件为美国社会持续制造越来越多的“否定力量”（贫困、失业、无家可归等社会问题）且人类服务只能转化不能消除；可观察口径为：社会问题存量/增量是否持续上升，同时联邦、州、地方人类服务支出与覆盖是否出现系统性收缩、福利中断或制度性失效（而非单年赤字或精算长期缺口）；反证包括：社会服务支出与覆盖扩大、贫困/无家可归等指标改善、或缓冲机制通过改革延续而未达“极限”。截止2026-11-09，仅用此前实际发生数据，不把精算预测日期当已发生。",
+  "elapsed_seconds": 33.635,
+  "completed_at": "2026-11-09T08:00:49.242319+00:00"
+}

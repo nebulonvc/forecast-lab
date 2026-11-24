@@ -1,0 +1,86 @@
+{
+  "reviewed_at": "2026-11-16T14:05:22.435021+08:00",
+  "permission_gate": {
+    "remote_main_case_config": "404 Not Found; remote main README read successfully",
+    "local_coordinator_status": "2026-11-16 14:03 Asia/Shanghai: Bengio duplicate复核修复待完成",
+    "scope": "only /workspace/forecast-bot1-w9 working copy and original per-book bundle; batch2/stage/check-repo untouched"
+  },
+  "code": {
+    "toolkit_commit": "85e6da1dc0f185830a6ea9037d731fd39a27411e",
+    "overlaps_duplicate": "toolkit/prepare_book.py:424-432; overlap<=0 -> continue",
+    "claims_from_results": "toolkit/prepare_book.py:619-642; calls overlaps_duplicate before appending",
+    "method": "METHOD.md:76-87; deterministic overlap dedupe unchanged"
+  },
+  "claims": {
+    "8": {
+      "id": "txt-16e1e13630-000037681-000037739",
+      "source_location": {
+        "type": "txt",
+        "line_start": 2135,
+        "line_end": 2137,
+        "char_start": 37681,
+        "char_end": 37739,
+        "source_sha256": "16e1e13630baabc942bc5bab0befcccbcf0fd0aed7e6f74606d590edfe5fe387"
+      },
+      "quote": "如果这种趋势继续下去，人工智能系统到\n2027 年就能完成耗时数小时的任务，到 2030 年就能\n完成耗时数天的任务"
+    },
+    "11": {
+      "id": "txt-16e1e13630-000039077-000039143",
+      "source_location": {
+        "type": "txt",
+        "line_start": 2233,
+        "line_end": 2236,
+        "char_start": 39077,
+        "char_end": 39143,
+        "source_sha256": "16e1e13630baabc942bc5bab0befcccbcf0fd0aed7e6f74606d590edfe5fe387"
+      },
+      "quote": "如果这种趋势继\n续下去，人工智能系统到 2027-2028 年就能自主完成\n耗时数小时的软件项目，到本十年末就能完成耗时数\n天的项目"
+    }
+  },
+  "overlap_characters": 0,
+  "dedupe_result": false,
+  "conclusion": "#11 is not an overlap duplicate; retain as forecast, future endpoint -> 暂无法判断",
+  "verification": {
+    "network_calls": 0,
+    "reuse_archived_source": "https://metr.org/blog/2026-01-29-time-horizon-1-1/",
+    "source_limitation": "2026-01-29 baseline before publication; not evidence of subsequent trend",
+    "semantic_review": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    }
+  },
+  "backup": "/workspace/forecast-bot1-w9/backups/before-dedupe-repair-20261116-140522",
+  "deterministic_replay": {
+    "function": "prepare_book.claims_from_results",
+    "candidates": 46,
+    "duplicates": 0,
+    "ids_match": true,
+    "source_proposals": "output/txt_import/proposals.jsonl"
+  },
+  "acceptance": {
+    "unit_tests": 209,
+    "quote_tests": 6,
+    "pipeline_check": "pass",
+    "pipeline_report": "pass",
+    "canonical_manual_report_md5": "682248fa9f6c63e3492a559ccac12761",
+    "evidence_hashes_verified": 60,
+    "sources_unchanged": 60,
+    "contexts_empty": true,
+    "only_assessment_11_changed_excluding_receipts": true,
+    "toolkit_85e6da1_unchanged": true,
+    "safety": {
+      "manifest_files": 84,
+      "secret_scan_files": 86,
+      "secret_hits": 0,
+      "overlap_minimum_match": 30,
+      "maximum_contiguous_nonwhitespace_chars": 85,
+      "maximum_file": "cases/bengio-international-ai-safety-report-2026-v5/output/verify-v5-run/manual_research.jsonl",
+      "includes_json_decoded_strings": true,
+      "no_fulltext": true
+    }
+  }
+}

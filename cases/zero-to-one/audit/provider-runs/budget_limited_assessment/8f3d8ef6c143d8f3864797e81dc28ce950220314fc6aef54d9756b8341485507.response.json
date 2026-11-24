@@ -1,0 +1,28 @@
+{
+  "id": "f533fcf0-e3d3-4276-a244-77c3cbe84a58",
+  "object": "chat.completion",
+  "created": 1794201442,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000027989-000028020\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为作者回忆2001年对PayPal未来现金流的估值判断（75%价值来自2011年及之后利润），并非面向2014年出版时点的新增预测；无独立可核验的估值数据。\",\"reason\":\"该句是作者对2001年估值结论的回顾性叙述，属于解释性/历史陈述而非可评分的未来预测。\",\"limitation\":\"原文未给出估值口径、折现率与利润数据，无法独立核验75%这一比例；且2011年相对2001年已是过去，不构成2014年后的预测。\",\"evidence_ids\":[],\"method\":\"现金流折现估值，按未来利润总和判断公司价值\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"2011年甚至之后\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4270,
+    "completion_tokens": 228,
+    "total_tokens": 4498,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3502
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,51 @@
+{
+  "written_at": "2026-11-20",
+  "external_model_api_used": false,
+  "imported_forecasts": 6,
+  "note": "检索在评估文件写成之后、apply 之前执行。接口没有返回 tool_call_id，故不编造。curl 成功的正文以文件 SHA-256 为准。curl 403 的页面改由随后的页面抓取保存，并在证据限制里写明。",
+  "curl_403": [
+    "https://www.gmc-uk.org/news/news-archive/more-female-than-male-doctors-for-first-time-ever-in-the-uk",
+    "https://commonslibrary.parliament.uk/2024-general-election-how-many-women-were-elected/",
+    "https://www.parliament.uk/about/living-heritage/transformingsociety/electionsvoting/womenvote/keydates/",
+    "https://data.ipu.org/parliament/GB/GB-LC01/data-on-women/",
+    "https://www.gmc-uk.org/cdn/documents/wfr25-report-251117_pdf-112967442.pdf"
+  ],
+  "superseded_apply": "第一次 apply 后 check 因空 context 缺少 support_quote 被拒绝。当前 apply 的输入把两处支持短语放进 context 后通过 check。",
+  "current_receipt": {
+    "rules": "simple-v3-trend-four-class",
+    "response_sha256": "09b725e1c59ee8a99c5fb398e2704fa53db188b827fbd8a83a230b9b7a760fae",
+    "input_claims_sha256": "19821810483cc3d2c95d593b547df7389a31ecb923a80d9210d5ec575183aa17",
+    "evidence_table_sha256": "6d25243268bd80c1af069cdd56e6d39b6dffc65dd4f2115b30a54b7e1e71279a",
+    "config_sha256": "6d584cbe3a9da76b3c437a52b10428d27064f4431de0829dedb881cfad319836",
+    "reviewer": "llm_with_session_review",
+    "human_reviewed": false,
+    "assessment_timing": "retrospective"
+  },
+  "r1_receipt": {
+    "rules": "simple-v3-trend-four-class",
+    "response_sha256": "ba683342db1181692603a18b249803572d0cba46058d50ac2a291a7cc2bb661d",
+    "input_claims_sha256": "19821810483cc3d2c95d593b547df7389a31ecb923a80d9210d5ec575183aa17",
+    "evidence_table_sha256": "77c4db2321fd12782f7e532dfea94dde49528a638eeff19e520e58c74bb2f67e",
+    "config_sha256": "6d584cbe3a9da76b3c437a52b10428d27064f4431de0829dedb881cfad319836",
+    "reviewer": "llm_with_session_review",
+    "human_reviewed": false,
+    "assessment_timing": "retrospective"
+  },
+  "r2": {
+    "written_at": "2026-11-20",
+    "new_search": false,
+    "external_model_api_used": false,
+    "tool_call_ids": null,
+    "note": "独立 QA 的最小修订。没有新检索，没有新的 tool_call_id。日期只按已归档正文改正：1919 法页首 [23rd December 1919]；1878 法页首 [27th May 1878.]；WISC 页首 Published: 22 September 2022；Lynn 页首 accepted 8 June 2004 不记为发表日，发表精度仍是卷期年 2004。三条裁决改动见 r2 评估文件。财产最早补救和两条未知的判决不重开。",
+    "current_receipt": {
+      "rules": "simple-v3-trend-four-class",
+      "response_sha256": "09b725e1c59ee8a99c5fb398e2704fa53db188b827fbd8a83a230b9b7a760fae",
+      "input_claims_sha256": "19821810483cc3d2c95d593b547df7389a31ecb923a80d9210d5ec575183aa17",
+      "evidence_table_sha256": "6d25243268bd80c1af069cdd56e6d39b6dffc65dd4f2115b30a54b7e1e71279a",
+      "config_sha256": "6d584cbe3a9da76b3c437a52b10428d27064f4431de0829dedb881cfad319836",
+      "reviewer": "llm_with_session_review",
+      "human_reviewed": false,
+      "assessment_timing": "retrospective"
+    }
+  }
+}

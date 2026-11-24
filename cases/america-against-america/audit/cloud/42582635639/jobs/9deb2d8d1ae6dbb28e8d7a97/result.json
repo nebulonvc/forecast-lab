@@ -1,0 +1,512 @@
+{
+  "claim_id": "txt-1c4066fc0c-000223456-000223517",
+  "version": "search-verifier-v1",
+  "input_sha256": "025f5250bd6c720010abde4d825bee6ad9067f6b69cab7523aba0442f308fb63",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000223456-000223517",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "对象为美国社会整体；原预测核心后果是“不善与人打交道、不会与人共同生活”成为未来社会难题。可观察口径按research_scope限定为家庭/居住结构（独居户比例、初婚年龄、有子女家庭比例）与社会连接/孤独公共卫生指标，观察期约1975—2025年（结构指标）与2003—2020年（社会连接指标），截止2026-11-09。",
+    "reason": "居住结构指标（独居户比例由1975年20%升至2025年29%、初婚年龄上升、有子女家庭比例下降）与社会连接指标（独处时间增加、面对面社交减少）方向一致，但均不直接测量“不善与人打交道、不会与人共同生活”这一特定后果；孤独报告只证明该问题被记录为公共卫生议题，不能证明其源于个人主义教育或等同于原预测后果。缺少直接测量核心后果的长期指标，故按具体未定处理。",
+    "limitation": "关键修订：原判“部分符合”依赖居住结构代理，复核意见指出这属于口径放宽，故改为暂无法判断。独居不等于孤独或不会共同生活，公共卫生报告不能识别个人主义教育的独立因果；若维持部分符合，须逐项说明后果哪些具体部分已实现、哪些未实现及其直接证据。",
+    "evidence_ids": [
+      "ev-503e4dfcc54ec8a99da95e5e",
+      "ev-47df15f869cb19673eb8b204",
+      "ev-fd60f8b65a82f50f44f2c265",
+      "ev-bb186762341b188d2a8b4be4"
+    ],
+    "method": "从个人主义教育的社会化后果推演协作与共同生活困难",
+    "method_basis": "explicit",
+    "observation_end": "2025-12-02",
+    "future_time_text": "将来",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-503e4dfcc54ec8a99da95e5e",
+        "relation": "boundary",
+        "quote": "In 2025, there were 39.7 million one-person households, accounting for 29% of all households, up from 20% in 1975.",
+        "publication_date": "2025-12-02",
+        "observation_end": "2025-12-02",
+        "limitation": "独居户比例上升只反映居住结构，不能直接证明“不善与人交往”或“不会共同生活”；来源verified=false，待语义复核。"
+      },
+      {
+        "evidence_id": "ev-47df15f869cb19673eb8b204",
+        "relation": "boundary",
+        "quote": "From 2003 to 2020, time spent alone increased, while time spent on in-person social engagement decreased.",
+        "publication_date": null,
+        "observation_end": "2020-12-31",
+        "limitation": "趋势截至2020年，含疫情年份影响；无发表日期，且为图表摘要，不能识别个人主义教育因果，也不直接测量共同生活能力。"
+      },
+      {
+        "evidence_id": "ev-fd60f8b65a82f50f44f2c265",
+        "relation": "boundary",
+        "quote": "Even before the onset of the COVID-19 pandemic, approximately half of U.S. adults reported experiencing measurable levels of loneliness.",
+        "publication_date": "2023-05-03",
+        "observation_end": "2023-05-03",
+        "limitation": "官方报告证明孤独被记录为公共卫生问题，但不证明其由个人主义教育造成，也不等同于“不会与人共同生活”，不代表所有美国人。"
+      },
+      {
+        "evidence_id": "ev-bb186762341b188d2a8b4be4",
+        "relation": "boundary",
+        "quote": "The percentage of families with their own children under age 18 in the household declined from 2003 to 2023. In 2003, 48% of all families lived with their own children under age 18, compared to 43% in 2013 and 39% in 2023.",
+        "publication_date": "2023-11-21",
+        "observation_end": "2023-11-21",
+        "limitation": "家庭结构变化可提示共同生活形态变化，但不能归因于个人主义教育；且多数儿童仍与双亲同住，现象并非全面，不能直接测量原预测后果。"
+      }
+    ],
+    "remaining_gap": "缺少能直接测量“不善与人打交道、不会与人共同生活”这一核心后果的长期指标，也缺少识别个人主义教育因果的证据；现有居住结构与社会连接指标只能作背景性方向参考，不足以判定原预测后果已部分实现。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000223456-000223517",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象为美国社会整体；以家庭/居住结构（独居户比例、初婚年龄、有子女家庭比例）及社会连接/孤独公共卫生指标为可观察口径，观察期约1975—2025年（结构指标）与2003—2020年（社会连接指标），截止2026-11-09。",
+    "reason": "独居户比例由1975年20%升至2025年29%、初婚年龄中位数显著上升、有子女家庭比例下降，社会连接指标显示独处时间增加、面对面社交减少，方向与“不善共同生活倾向成为社会难题”一致；但“个人主义教育”的因果归因未被证据识别，且独居不等于孤独，故仅部分符合。",
+    "limitation": "证据为结构性与公共卫生相关性指标，不能证明个人主义教育是原因，也不能把独居直接等同“不会与人共同生活”；最终“难题”的严重程度无统一量化终点。",
+    "evidence_ids": [
+      "ev-503e4dfcc54ec8a99da95e5e",
+      "ev-47df15f869cb19673eb8b204",
+      "ev-fd60f8b65a82f50f44f2c265",
+      "ev-bb186762341b188d2a8b4be4"
+    ],
+    "method": "从个人主义教育的社会化后果推演协作与共同生活困难",
+    "method_basis": "explicit",
+    "observation_end": "2025-12-02",
+    "future_time_text": "将来",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-503e4dfcc54ec8a99da95e5e",
+        "relation": "support",
+        "quote": "In 2025, there were 39.7 million one-person households, accounting for 29% of all households, up from 20% in 1975.",
+        "publication_date": "2025-12-02",
+        "observation_end": "2025-12-02",
+        "limitation": "独居户比例上升只反映居住结构，不能直接证明“不善与人交往”或孤独；来源verified=false，待语义复核。"
+      },
+      {
+        "evidence_id": "ev-47df15f869cb19673eb8b204",
+        "relation": "support",
+        "quote": "From 2003 to 2020, time spent alone increased, while time spent on in-person social engagement decreased.",
+        "publication_date": null,
+        "observation_end": "2020-12-31",
+        "limitation": "趋势截至2020年，含疫情年份影响；无发表日期，且为图表摘要，不能识别个人主义教育因果。"
+      },
+      {
+        "evidence_id": "ev-fd60f8b65a82f50f44f2c265",
+        "relation": "support",
+        "quote": "Even before the onset of the COVID-19 pandemic, approximately half of U.S. adults reported experiencing measurable levels of loneliness.",
+        "publication_date": "2023-05-03",
+        "observation_end": "2023-05-03",
+        "limitation": "官方报告证明孤独被记录为公共卫生问题，但不证明其由个人主义教育造成，也不代表所有美国人。"
+      },
+      {
+        "evidence_id": "ev-bb186762341b188d2a8b4be4",
+        "relation": "boundary",
+        "quote": "The percentage of families with their own children under age 18 in the household declined from 2003 to 2023. In 2003, 48% of all families lived with their own children under age 18, compared to 43% in 2013 and 39% in 2023.",
+        "publication_date": "2023-11-21",
+        "observation_end": "2023-11-21",
+        "limitation": "家庭结构变化可支持共同生活弱化方向，但同样不能归因于个人主义教育；且多数儿童仍与双亲同住，提示现象并非全面。"
+      }
+    ],
+    "remaining_gap": "缺少能直接测量“不善与人打交道、不会共同生活”的长期指标，也缺少识别个人主义教育因果的证据；现有结构指标只能作方向性支持。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-3fe6a714118a0c66b77f",
+      "url": "https://www.census.gov/newsroom/press-releases/2024/families-and-living-arrangements.html",
+      "title": "ev-households",
+      "published_date": "2024-11-12",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-households",
+      "archive_sha256": "dfdde4f1bbdf24961ad76e8d94047ad8959d8086c1f66162e5add0406bb97cb3",
+      "archive_path": "data/sources/dfdde4f1bbdf24961ad76e8d94047ad8959d8086c1f66162e5add0406bb97cb3.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-6b0d2c90d3a6b4e02b04",
+      "url": "https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf",
+      "title": "ev-loneliness",
+      "published_date": "2023-05-02",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-loneliness",
+      "archive_sha256": "b48a67eaa668c2ef42375f78381f1ecbbdbab424077064b2af07fad66a38f2d6",
+      "archive_path": "data/sources/web-loneliness.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-503e4dfcc54ec8a99da95e5e",
+      "url": "https://www.census.gov/newsroom/press-releases/2025/families-and-living-arrangements.html",
+      "resolved_url": "https://www.census.gov/newsroom/press-releases/2025/families-and-living-arrangements.html",
+      "title": "Census Bureau Releases New Estimates on America’s Families and Living Arrangements",
+      "published_date": "2025-12-02",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:53.115560+00:00",
+      "archive_sha256": "dcc04195a000587b2ddf4bfb04df6016a90a05239a46ec8afd2f4f30b0f3e99d",
+      "archive_path": "jobs/9deb2d8d1ae6dbb28e8d7a97/dcc04195a000587b2ddf4bfb04df6016a90a05239a46ec8afd2f4f30b0f3e99d.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-47df15f869cb19673eb8b204",
+      "url": "https://www.hhs.gov/sites/default/files/sg-social-connection-graphic-trends.pdf",
+      "resolved_url": "https://www.hhs.gov/sites/default/files/sg-social-connection-graphic-trends.pdf",
+      "title": "National Trends for Social Connection",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:53.115755+00:00",
+      "archive_sha256": "4c7e9a576e9de9d6e207d5086726c2914f5972317a07d7519ae1908f83fcaaac",
+      "archive_path": "jobs/9deb2d8d1ae6dbb28e8d7a97/4c7e9a576e9de9d6e207d5086726c2914f5972317a07d7519ae1908f83fcaaac.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-fd60f8b65a82f50f44f2c265",
+      "url": "https://www.hhs.gov/about/news/2023/05/03/new-surgeon-general-advisory-raises-alarm-about-devastating-impact-epidemic-loneliness-isolation-united-states.html",
+      "resolved_url": "https://www.hhs.gov/about/news/2023/05/03/new-surgeon-general-advisory-raises-alarm-about-devastating-impact-epidemic-loneliness-isolation-united-states.html",
+      "title": "New Surgeon General Advisory Raises Alarm about the Devastating Impact of the Epidemic of Loneliness and Isolation in the United States",
+      "published_date": "2023-05-03",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:53.115941+00:00",
+      "archive_sha256": "5ea96ed291dce0db0da7097083d2f6caebb0601fb792505a4e9cb1c6281e3134",
+      "archive_path": "jobs/9deb2d8d1ae6dbb28e8d7a97/5ea96ed291dce0db0da7097083d2f6caebb0601fb792505a4e9cb1c6281e3134.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-bb186762341b188d2a8b4be4",
+      "url": "https://www.census.gov/newsroom/press-releases/2023/children-families-living-arrangements.html",
+      "resolved_url": "https://www.census.gov/newsroom/press-releases/2023/children-families-living-arrangements.html",
+      "title": "Three-Quarters of Children Younger Than 6 Years Old Live With Two Parents",
+      "published_date": "2023-11-21",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:01.920592+00:00",
+      "archive_sha256": "c8bc4e39a63a0b7b777b0c8d480c88148134be3faf2479ecdaa74e2a8cb945c8",
+      "archive_path": "jobs/9deb2d8d1ae6dbb28e8d7a97/c8bc4e39a63a0b7b777b0c8d480c88148134be3faf2479ecdaa74e2a8cb945c8.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "site:census.gov families living arrangements 2024 solitary living households percentage 1974 median age first marriage",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "site:hhs.gov social connection loneliness isolation trends United States adults survey before pandemic improvement",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "site:census.gov 2025 families living arrangements one-person households 29 percent 1975 median age first marriage",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "site:hhs.gov social connection trends time spent alone decreased in-person social engagement 2003 2020 improvement",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少能直接测量“不善与人打交道、不会与人共同生活”这一核心后果的长期指标，也缺少识别个人主义教育因果的证据；现有居住结构与社会连接指标只能作背景性方向参考，不足以判定原预测后果已部分实现。",
+  "source_statuses": [
+    {
+      "url": "https://www.census.gov/newsroom/press-releases/2025/families-and-living-arrangements.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.hhs.gov/sites/default/files/sg-social-connection-graphic-trends.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.hhs.gov/about/news/2023/05/03/new-surgeon-general-advisory-raises-alarm-about-devastating-impact-epidemic-loneliness-isolation-united-states.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.census.gov/newsroom/press-releases/2023/children-families-living-arrangements.html",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "2ac635fc169ed8a75ace7a62e5b8d393813fe2639c65838950e4b6fce7003d92"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f908c7a91d4753006ab4ad1d6db11434",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "ce1a32e2938688d347a67a347edf6355",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "d7fd457b96d90df6a0a853efe39841e938cfe451599f55a7310fbbaac05d28e2"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "b4d81d72a95a945650421a9b1bc27dc5",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "1b1ca3d45c71f9bccbd37a31aea8dfb86bd9f83a637a6c14a0e2360f23898f44"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "8e28e4a6b8abe1279eded550035c1a4a",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "89bc8e722b597a688a25445193f78865",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "3cbc797eed98b77d30bfaaadff932bcb84cb703a5bcf84c05a7a501b151bc1ec"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "7aadb8f17a2e9b427781b6ee85d00310",
+      "cost_estimate_USD": 0.001,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "4f8d61d09da1dd1c2c5a6ebcbcfe78e22f4963211686e8f6385bf9c4a884904c"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "182d0064f105d59d21d450cb0602559cae817bc21d3f978e138194b194e87394"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "0bb9898288da6181b0af174bf7401be9088e6f1ffcd66c0a7e025a9a1f09318a"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "254fbef110ff9fc399df7ac12175a7b7376ec7c5ffdd2d66adcc69a0b19ac38d"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000223456-000223517",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "verdict_logic",
+          "reason": "原预测的核心后果是“不善与人打交道、不会与人共同生活”成为美国社会将来的难题。建议用独居户比例、初婚年龄、有子女家庭比例等居住结构指标作为方向性支持，但这些指标并不直接测量“不善交往/不会共同生活”，且建议自己在limitation中承认不能把独居等同“不会与人共同生活”。在缺少直接测量该后果的指标时，把结论定为“部分符合”并设trend_aligned=true，等于用间接结构变化替代了原预测的特定后果，属于口径放宽。应保留为具体未定（后果B缺直接证据），或明确指出后果B哪些具体部分已实现、哪些未实现及其直接证据，而不能仅凭居住结构方向一致就判部分符合。",
+          "source_quote": "另一方面，由于长期受这\n种教育，已变得不那么善于与人打交道，已不会与人共同生活。我个人认为，这是\n美国社会将来的一个难题。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        }
+      ],
+      "remaining_gap": "需补充能直接测量“不善与人打交道、不会与人共同生活”这一后果的长期指标（而非仅独居户、初婚年龄、有子女家庭比例等居住结构代理），或据此把结论改为具体未定；若维持部分符合，须逐项说明后果B哪些具体部分实现、哪些未实现及其直接证据。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000223456-000223517",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000223456-000223517",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象为美国社会整体；以家庭/居住结构（独居户比例、初婚年龄、有子女家庭比例）及社会连接/孤独公共卫生指标为可观察口径，观察期约1975—2025年（结构指标）与2003—2020年（社会连接指标），截止2026-11-09。",
+      "reason": "独居户比例由1975年20%升至2025年29%、初婚年龄中位数显著上升、有子女家庭比例下降，社会连接指标显示独处时间增加、面对面社交减少，方向与“不善共同生活倾向成为社会难题”一致；但“个人主义教育”的因果归因未被证据识别，且独居不等于孤独，故仅部分符合。",
+      "limitation": "证据为结构性与公共卫生相关性指标，不能证明个人主义教育是原因，也不能把独居直接等同“不会与人共同生活”；最终“难题”的严重程度无统一量化终点。",
+      "evidence_ids": [
+        "ev-503e4dfcc54ec8a99da95e5e",
+        "ev-47df15f869cb19673eb8b204",
+        "ev-fd60f8b65a82f50f44f2c265",
+        "ev-bb186762341b188d2a8b4be4"
+      ],
+      "method": "从个人主义教育的社会化后果推演协作与共同生活困难",
+      "method_basis": "explicit",
+      "observation_end": "2025-12-02",
+      "future_time_text": "将来",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-503e4dfcc54ec8a99da95e5e",
+          "relation": "support",
+          "quote": "In 2025, there were 39.7 million one-person households, accounting for 29% of all households, up from 20% in 1975.",
+          "publication_date": "2025-12-02",
+          "observation_end": "2025-12-02",
+          "limitation": "独居户比例上升只反映居住结构，不能直接证明“不善与人交往”或孤独；来源verified=false，待语义复核。"
+        },
+        {
+          "evidence_id": "ev-47df15f869cb19673eb8b204",
+          "relation": "support",
+          "quote": "From 2003 to 2020, time spent alone increased, while time spent on in-person social engagement decreased.",
+          "publication_date": null,
+          "observation_end": "2020-12-31",
+          "limitation": "趋势截至2020年，含疫情年份影响；无发表日期，且为图表摘要，不能识别个人主义教育因果。"
+        },
+        {
+          "evidence_id": "ev-fd60f8b65a82f50f44f2c265",
+          "relation": "support",
+          "quote": "Even before the onset of the COVID-19 pandemic, approximately half of U.S. adults reported experiencing measurable levels of loneliness.",
+          "publication_date": "2023-05-03",
+          "observation_end": "2023-05-03",
+          "limitation": "官方报告证明孤独被记录为公共卫生问题，但不证明其由个人主义教育造成，也不代表所有美国人。"
+        },
+        {
+          "evidence_id": "ev-bb186762341b188d2a8b4be4",
+          "relation": "boundary",
+          "quote": "The percentage of families with their own children under age 18 in the household declined from 2003 to 2023. In 2003, 48% of all families lived with their own children under age 18, compared to 43% in 2013 and 39% in 2023.",
+          "publication_date": "2023-11-21",
+          "observation_end": "2023-11-21",
+          "limitation": "家庭结构变化可支持共同生活弱化方向，但同样不能归因于个人主义教育；且多数儿童仍与双亲同住，提示现象并非全面。"
+        }
+      ],
+      "remaining_gap": "缺少能直接测量“不善与人打交道、不会共同生活”的长期指标，也缺少识别个人主义教育因果的证据；现有结构指标只能作方向性支持。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000223456-000223517",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "对象为美国社会整体；原预测核心后果是“不善与人打交道、不会与人共同生活”成为未来社会难题。可观察口径按research_scope限定为家庭/居住结构（独居户比例、初婚年龄、有子女家庭比例）与社会连接/孤独公共卫生指标，观察期约1975—2025年（结构指标）与2003—2020年（社会连接指标），截止2026-11-09。",
+      "reason": "居住结构指标（独居户比例由1975年20%升至2025年29%、初婚年龄上升、有子女家庭比例下降）与社会连接指标（独处时间增加、面对面社交减少）方向一致，但均不直接测量“不善与人打交道、不会与人共同生活”这一特定后果；孤独报告只证明该问题被记录为公共卫生议题，不能证明其源于个人主义教育或等同于原预测后果。缺少直接测量核心后果的长期指标，故按具体未定处理。",
+      "limitation": "关键修订：原判“部分符合”依赖居住结构代理，复核意见指出这属于口径放宽，故改为暂无法判断。独居不等于孤独或不会共同生活，公共卫生报告不能识别个人主义教育的独立因果；若维持部分符合，须逐项说明后果哪些具体部分已实现、哪些未实现及其直接证据。",
+      "evidence_ids": [
+        "ev-503e4dfcc54ec8a99da95e5e",
+        "ev-47df15f869cb19673eb8b204",
+        "ev-fd60f8b65a82f50f44f2c265",
+        "ev-bb186762341b188d2a8b4be4"
+      ],
+      "method": "从个人主义教育的社会化后果推演协作与共同生活困难",
+      "method_basis": "explicit",
+      "observation_end": "2025-12-02",
+      "future_time_text": "将来",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-503e4dfcc54ec8a99da95e5e",
+          "relation": "boundary",
+          "quote": "In 2025, there were 39.7 million one-person households, accounting for 29% of all households, up from 20% in 1975.",
+          "publication_date": "2025-12-02",
+          "observation_end": "2025-12-02",
+          "limitation": "独居户比例上升只反映居住结构，不能直接证明“不善与人交往”或“不会共同生活”；来源verified=false，待语义复核。"
+        },
+        {
+          "evidence_id": "ev-47df15f869cb19673eb8b204",
+          "relation": "boundary",
+          "quote": "From 2003 to 2020, time spent alone increased, while time spent on in-person social engagement decreased.",
+          "publication_date": null,
+          "observation_end": "2020-12-31",
+          "limitation": "趋势截至2020年，含疫情年份影响；无发表日期，且为图表摘要，不能识别个人主义教育因果，也不直接测量共同生活能力。"
+        },
+        {
+          "evidence_id": "ev-fd60f8b65a82f50f44f2c265",
+          "relation": "boundary",
+          "quote": "Even before the onset of the COVID-19 pandemic, approximately half of U.S. adults reported experiencing measurable levels of loneliness.",
+          "publication_date": "2023-05-03",
+          "observation_end": "2023-05-03",
+          "limitation": "官方报告证明孤独被记录为公共卫生问题，但不证明其由个人主义教育造成，也不等同于“不会与人共同生活”，不代表所有美国人。"
+        },
+        {
+          "evidence_id": "ev-bb186762341b188d2a8b4be4",
+          "relation": "boundary",
+          "quote": "The percentage of families with their own children under age 18 in the household declined from 2003 to 2023. In 2003, 48% of all families lived with their own children under age 18, compared to 43% in 2013 and 39% in 2023.",
+          "publication_date": "2023-11-21",
+          "observation_end": "2023-11-21",
+          "limitation": "家庭结构变化可提示共同生活形态变化，但不能归因于个人主义教育；且多数儿童仍与双亲同住，现象并非全面，不能直接测量原预测后果。"
+        }
+      ],
+      "remaining_gap": "缺少能直接测量“不善与人打交道、不会与人共同生活”这一核心后果的长期指标，也缺少识别个人主义教育因果的证据；现有居住结构与社会连接指标只能作背景性方向参考，不足以判定原预测后果已部分实现。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象：美国社会整体，而非每个美国人；条件：长期个人主义教育所造成的不善交往、不善共同生活倾向；可观察口径：家庭/居住结构（独居户比例、初婚年龄）、社会连接与孤独/隔离的公共卫生指标，以及这些困难是否被制度记录为持续社会问题；反证：若社会连接指标稳定或改善、共同生活/家庭形成未弱化，或困难未被记录为公共问题，则削弱该判断。不把独居直接等同孤独或不会共同生活，也不识别个人主义教育的独立因果。",
+  "elapsed_seconds": 38.331,
+  "completed_at": "2026-11-09T08:01:22.039227+00:00"
+}

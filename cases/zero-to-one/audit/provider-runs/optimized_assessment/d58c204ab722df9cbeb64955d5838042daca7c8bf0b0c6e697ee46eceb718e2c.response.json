@@ -1,0 +1,28 @@
+{
+  "id": "c97d8b0f-97b0-4cd1-99dc-52d417e8ad96",
+  "object": "chat.completion",
+  "created": 1794201590,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000063392-000063425\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性判断：若创业者能解释公司使命为何激动人心，则能吸引所需员工；无期限、无量化指标，观察窗口为出版后至cutoff，但无对应招聘结果数据。\",\"reason\":\"原文为条件句，属可检验的条件性预测，但触发条件是否发生及结果均无客观证据。\",\"limitation\":\"缺乏可操作化的招聘结果指标与对照数据，无法验证因果性；仅凭原文无法判断。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000063603-000063620\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"招聘建议性判断，非对未来事实的预测。\",\"reason\":\"该句是作者对招聘匹配的规范性建议，用“可能”表达判断，不构成可检验的未来预测。\",\"limitation\":\"作为建议性表述，不纳入预测评估。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5114,
+    "completion_tokens": 306,
+    "total_tokens": 5420,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 4346
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

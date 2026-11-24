@@ -1,0 +1,1252 @@
+
+
+
+
+<html lang="en">
+<head>
+    <base target="_top" href="/">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    
+		<title>The Battlefields Hub &#8594; The Civil Wars &#8594; The Worcester Campaign 1651 &#8594; The Battle of Battle of Worcester</title>
+		
+    <meta name="Description" content="[METADESCRIPTION]">
+    <meta name="Keywords" content="[METAKEYWORD]">    
+    <link rel="stylesheet" href="/cms/assets/css/superfish.css" media="screen">
+    <link rel="stylesheet" href="/cms/assets/css/slicknav.css" />
+
+    <link rel='stylesheet' id='thb-foundation-css' href='/cms/assets/css/foundation.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='thb-fa-css' href='//maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='thb-app-css' href='/resource-centre/css/styles.css' type='text/css' media='all' />
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,100|Raleway:100,200,400,600,800|Open+Sans|Ropa+Sans" rel="stylesheet" id='thb-google-fonts-css' /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;600;700&display=swap" rel="stylesheet"> 
+	
+	<style>
+        body {
+            font-family: "roboto" Arial, Helvetica, sans-serif;
+            font-weight: 100;
+        }
+
+ </style>
+
+
+    <script src="/cms/assets/js/jquery.js"></script>
+    <script src="/cms/assets/js/hoverIntent.js"></script>
+    <script src="/cms/assets/js/superfish.js"></script>
+    <script src="/cms/assets/js/jquery.slicknav.min.js"></script>
+    <script src="/cms/assets/js/vendor/jquery.foundation.plugins.js"></script>
+    <script type="text/javascript" src="/cms/assets/fresco/fresco.js"></script>
+    <link rel="stylesheet" type="text/css" href="/cms/assets/fresco/fresco.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script type="text/javascript">
+
+
+        var locationMarker = null;
+        var map;
+
+        (function ($) { //create closure so we can safely use $ as alias for jQuery
+
+            $(document).ready(function () {
+
+                var $doc = $(document),
+                        win = $(window),
+                        AnimationsArray = [];
+
+
+                $(".slide_hd").on("click", function (event) {
+                    if ($(this).next(".slide_body").is(":hidden")) {
+                        $(this).addClass("isOpen");
+                    }
+                    else {
+                        $(this).removeClass("isOpen");
+                    }
+                    $(this).next(".slide_body").slideToggle("slow");
+                });
+
+                (function () {
+                    var menu = $('#mobile-menu'),
+                        items = menu.find('.mobile-menu>li,.menu-footer p, .select-wrapper'),
+                        toggle = $('.mobile-toggle'),
+                        span = toggle.find('span'),
+                        cc = menu.find('.spacer'),
+                        inner = menu.find('.menu-container'),
+                        close = $('.panel-close');
+
+
+                    close.on('click', function () {
+
+                            menu.hide();
+                            toggle.data('toggled', false);
+                        
+                        return false;
+                    });
+
+                    toggle.on('click', function () {
+                        if (!toggle.data('toggled')) {
+                            menu.show();
+                            toggle.data('toggled', true);
+                        } else {
+                            menu.hide();
+                            toggle.data('toggled', false);
+                        }
+                        return false;
+                    });
+
+                })();
+
+
+                (function () {
+
+                    var container = $('.mobile-menu'),
+                        parents = container.find('li:has(".sub-menu")>a');
+
+
+                    parents.on('click', function (e) {
+                        var that = $(this),
+                                menu = that.next('.sub-menu');
+
+                        if (that.hasClass('active')) {
+                            that.removeClass('active');
+                            menu.slideUp('200');
+                        } else {
+                            that.addClass('active');
+                            menu.slideDown('200');
+                        }
+                        e.stopPropagation();
+                        e.preventDefault();
+                    });
+
+                })();
+
+
+
+                (function () {
+
+
+
+                    var container = $('.sf-menu'),
+                            item = container.find('li.menu-item-has-children:not(.menu-item-mega-child)');
+
+                    item.each(function () {
+                        var that = $(this),
+                                offset = that.offset(),
+                                dropdown = that.find('>.sub-menu'),
+                                children = that.find('li.menu-item-has-children');
+
+                        that.hoverIntent(
+                            function () {
+                                var window_width = parseInt(win.outerWidth(), 10),
+                                        dropdown_width = parseInt(dropdown.outerWidth(), 10),
+                                        dropdown_offset_left = parseInt(that.offset().left, 10),
+                                        dropdown_move = window_width - dropdown_width - dropdown_offset_left;
+
+                                that.addClass('sfHover');
+
+                                if (dropdown_move < 0) {
+                                    dropdown.css("left", dropdown_move - 60 + "px");
+                                }
+                                dropdown.fadeIn();
+                                $(this).find('>a').addClass('active');
+
+                            },
+                            function () {
+                                that.removeClass('sfHover');
+                                dropdown.hide();
+                                $(this).find('>a').removeClass('active');
+                            }
+                        );
+
+                    });
+
+                })();
+
+
+                $(".carousel").each(function (index) {
+                    const galleryCarousel = new Carousel(this, {
+                        Dots: false,
+                    });
+                });
+
+                Fancybox.bind('[data-fancybox="gallery"]', {
+                    caption: function (fancybox, carousel, slide) {
+                        let caption = slide.caption;
+
+                        if (slide.type === "image") {
+                            caption =
+                              (caption.length ? caption + "<br />" : "") +
+                              '<a target="_blank" href="' +
+                              slide.src +
+                              '">Click here to see the original (larger) version of this image</a>';
+                        }
+
+                        return caption;
+                    },
+                });
+
+
+
+                var script = document.createElement('script');
+                script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyB3NoB4RNP-NjQuxoGWX_GZPiPzC-yy48Y&callback=initMap';
+                script.async = true;
+                document.head.appendChild(script);
+
+
+            });
+
+
+            // Initialize and add the map
+            window.initMap = function () {
+                console.log('initmap');
+                var stylesArray =
+                [
+                    {
+                        "featureType": "all",
+                        "stylers": [
+                        {
+                            "saturation": -75
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.business",
+                        "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "labels.text",
+                        "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                        ]
+                    }
+                ]
+
+
+                var curLat = Number($("#PosLat").val());
+                var curLng = Number($("#PosLng").val());
+
+                if (curLat == NaN) {
+                    curLat = 0;
+
+                }
+                if (curLat == NaN) {
+                    curLng = 0;
+
+                }
+                console.log(curLat);
+                console.log(curLng);
+
+                var bounds = new google.maps.LatLngBounds();
+                bounds.extend({ lat: curLat, lng: curLng });
+
+
+
+
+                map = new google.maps.Map(document.getElementById("map"), {
+                    styles: stylesArray,
+                    zoom: 8,
+                    zoomControl: true,
+                    mapTypeControl: true,
+                    scaleControl: false,
+                    streetViewControl: false,
+                    rotateControl: false,
+                    fullscreenControl: true,
+                    center: { lat: curLat, lng: curLng }
+
+                });
+
+                var markericon = {
+                    url: '/markers/cp-pointer-completed.svg',
+                    anchor: new google.maps.Point(25, 50),
+                    scaledSize: new google.maps.Size(50, 50),
+                    labelOrigin: new google.maps.Point(25, 20)
+                }
+
+
+                var newMarkerOptions = {
+                    position: { lat: curLat, lng: curLng },
+                    map: map,
+                    draggable: false,
+                    icon: markericon
+                };
+
+                locationMarker = new google.maps.Marker(newMarkerOptions);
+
+                google.maps.event.addListener(locationMarker, 'dragend', function (evt) {
+                    console.log(evt.latLng);
+                    $("#PosLat").val(evt.latLng.lat().toFixed(6));
+                    $("#PosLng").val(evt.latLng.lng().toFixed(6));
+                });
+
+                //map.fitBounds(bounds);
+                map.panToBounds(bounds);
+
+            }
+
+        })(jQuery);
+
+
+    </script>
+        
+
+        
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51512324-1', 'battlefieldstrust.com');
+  ga('send', 'pageview');
+
+</script>
+
+<script language="javascript" src="/inc/gallery.js"></script>
+<script language="javascript" src="/inc/new/nav.js"></script>
+<SCRIPT language=JavaScript src="/inc/new/milonic/milonic_src.js" type="text/javascript"></SCRIPT>
+<script	language=JavaScript>
+if(ns4)_d.write("<scr"+"ipt language=JavaScript src=/inc/new/milonic/mmenuns4.js><\/scr"+"ipt>");
+  else _d.write("<scr"+"ipt language=JavaScript src=/inc/new/milonic/mmenudom.js><\/scr"+"ipt>");
+</script>
+<SCRIPT language="javascript" src="/inc/new/milonic/static/menu_data.js" type="text/javascript"></SCRIPT>
+<script language="javascript" src="/inc/new/printer.js"></script>
+<script language="javascript" src="/inc/new/imageloader.js"></script>
+
+<script  language="javascript">
+function showPrinter(id) {
+  var lyr = getElemRefs(id);
+  if (lyr && lyr.css){
+
+
+	window.frames.FramePriterBox.location = '/resource-centre/printer/battleview.asp?BattleFieldId=49&Trail=Home+%26%238594%3B+The+Civil+Wars%26nbsp%3B%26%238594%3B+The+Worcester+Campaign+1651%26nbsp%3B%26%238594%3B+The+Battle+of+Battle+of+Worcester';
+  	lyr.css.visibility = "visible";
+
+
+
+  	}
+  else{
+  	alert('sorry, printer friendly version unavailable at this time');
+  }
+}
+
+function changeon(row,total) {
+
+	for (i = 1; i <= total; i++)
+	{
+		changeoff("Counter"+i)
+	}
+	eval(row + ".style.backgroundColor = \"#52795C\"");
+}
+
+function changeoff(row) {
+	eval(row + ".style.backgroundColor = \"#7AA585\"");
+}
+
+</script>
+
+
+
+
+        
+</head>
+
+<body class="">
+    <div id="wrapper" class="">
+       
+        
+        <!-- Start Header -->
+        <header id="header" class="header row no-padding">
+        
+        
+            <div class="header-container" style="position: relative;">
+                <div class="logo" style="height: 41px; z-index: 40; position: absolute; top: 0; left: 10px"><span class="logo" style="height: 41px; z-index: 40; position: absolute; top: 0; left: 10px"><a href="/resource-centre/" class="logolink">
+                <img src="/resource-centre/img/BF-logo-resourcecentre.png" class="logoimg" alt="The Battlefields Trust Resource Centre" /></a></span></div>
+                
+                    <nav id="full-menu" role="navigation">
+<ul class="sf-menu">
+<li class=" menu-item-has-children  menu-item"><a href="/aboutus\">About Us</a><ul class="sub-menu " ><li class=" menu-item"><a href="/regions\">Regions</a></li><li class=" menu-item"><a href="/thetrustees\">The Board of Trustees</a></li><li class=" menu-item"><a href="/page72.asp">Who's who in the Battlefields Trust</a></li><li class=" menu-item"><a href="/HowYouCanHelp\">How You Can Help</a></li><li class=" menu-item-has-children  menu-item"><a href="/trustpolicy\">Policies and documents</a><ul class="sub-menu " ><li class=" menu-item"><a href="/page226.asp">Governing documents</a></li><li class=" menu-item"><a href="/page131.asp">Battlefield Threats - The Trust's Policy</a></li><li class=" menu-item"><a href="/page228.asp">Battlefield Investigation Policy and Guidance</a></li><li class=" menu-item"><a href="/page238.asp">Managing Change on Historic Battlefields - A Guide for Heritage & Planning Professionals</a></li><li class=" menu-item"><a href="/page262.asp">Natural England Environmental Guidance for Registered Battlefields</a></li><li class=" menu-item"><a href="/page94.asp">statement on metal detecting</a></li><li class=" menu-item"><a href="/page145.asp">Battlefields Trust Complaints Policy</a></li><li class=" menu-item"><a href="/page259.asp">Safeguarding policy and incident reporting</a></li><li class=" menu-item"><a href="/page197.asp">Battlefields Trust Health and Safety Policy Statement</a></li><li class=" menu-item"><a href="/page198.asp">Battlefields Trust Equal Opportunities Statement</a></li><li class=" menu-item"><a href="/page213.asp">Battlefields Trust Battlefields Hub Change Policy</a></li></ul></li><li class=" menu-item"><a href="/page54.asp">Links</a></li><li class=" menu-item-has-children  menu-item"><a href="/page49.asp">Under Threat</a><ul class="sub-menu " ><li class=" menu-item"><a href="/page200.asp">Types of Battlefield Threats</a></li><li class=" menu-item"><a href="/page201.asp">Battlefield Planning Rules and Heritage Guidance</a></li><li class=" menu-item"><a href="/page202.asp">Battlefield Panel</a></li><li class=" menu-item"><a href="/page203.asp">Recent Battlefield Threats</a></li></ul></li><li class=" menu-item"><a href="/privacypolicy\">Privacy Statement</a></li></ul></li><li class=" menu-item"><a href="/battlefields-events\">Events</a></li><li class=" menu-item"><a href="/battlefields-news\">News</a></li><li class=" menu-item-has-children  menu-item"><a href="/magazine/">Magazine & Journal</a><ul class="sub-menu " ><li class=" menu-item"><a href="/magazine/">Magazine</a></li><li class=" menu-item-has-children  menu-item"><a href="/journal\">Journal</a><ul class="sub-menu " ><li class=" menu-item"><a href="/page242.asp">Battalia Volume I 2017</a></li><li class=" menu-item"><a href="/page243.asp">Battalia Volume II 2024</a></li><li class=" menu-item"><a href="/page251.asp">Battalia Volume III 2025</a></li><li class=" menu-item"><a href="/page263.asp">Battalia Volume IV 2026</a></li></ul></li></ul></li><li class=" menu-item-has-children  menu-item"><a href="/members\">Members Only</a><ul class="sub-menu " ><li class=" menu-item"><a href="/onlinelectures\">Battlefields Trust online lectures</a></li><li class=" menu-item-has-children  menu-item"><a href="/members-annual-general-meetings\">Annual General Meetings</a><ul class="sub-menu " ><li class=" menu-item"><a href="/page258.asp">Battlefields Trust AGM 2026</a></li><li class=" menu-item"><a href="/page249.asp">2025 AGM Documents</a></li><li class=" menu-item"><a href="/page241.asp">2024 AGM Documents</a></li><li class=" menu-item"><a href="/page230.asp">2023 AGM Documents</a></li><li class=" menu-item"><a href="/page221.asp">2022 AGM Documents</a></li><li class=" menu-item"><a href="/page214.asp">2021 AGM Documents</a></li><li class=" menu-item"><a href="/page209.asp">2020 AGM Documents</a></li><li class=" menu-item"><a href="/members-AGM2019\">2019 AGM Documents</a></li><li class=" menu-item"><a href="/page210.asp">2018 AGM Documents</a></li><li class=" menu-item"><a href="/members-AGM2017\">2017 AGM Documents</a></li><li class=" menu-item"><a href="/members-AGM2016\">2016 AGM Documents</a></li><li class=" menu-item"><a href="/members-AGM2015\">2015 AGM Documents</a></li><li class=" menu-item"><a href="/members-AGM2013\">2013 AGM Documents</a></li><li class=" menu-item"><a href="/members-AGM2012\">2012 AGM Documents</a></li><li class=" menu-item"><a href="/members-AGM2011\">2011 AGM Documents</a></li></ul></li><li class=" menu-item"><a href="/members-battlefields-trust-magazine\">Battlefields Trust Magazine</a></li><li class=" menu-item"><a href="/members-Newsletters\">Battlefields Trust Newsletters</a></li><li class=" menu-item"><a href="/members-Good-Practice-Guides\">Good Practice Guides</a></li><li class=" menu-item"><a href="/members-Public-Liability-Insurance\">Battlefields Trust Governing Document and annual insurance</a></li><li class=" menu-item"><a href="/Members-Articles\">Members' Articles</a></li><li class=" menu-item"><a href="/Members-Benefits\">Members' Benefits</a></li><li class=" menu-item"><a href="/members-Project-Reports\">Project Reports, Updates and Lessons Learned</a></li><li class=" menu-item"><a href="/members-regional-newsletters\">Regional Newsletters</a></li></ul></li><li class=" menu-item-has-children  menu-item"><a href="/resource-centre-entrance\">Learning Resources</a><ul class="sub-menu " ><li class=" menu-item"><a href="/resource-centre/">The Battlefields Hub</a></li><li class=" menu-item-has-children  menu-item"><a href="/educationresources\">Battlefield Education Packs</a><ul class="sub-menu " ><li class=" menu-item"><a href="/page231.asp">Otterburn</a></li><li class=" menu-item"><a href="/carham\">Carham</a></li><li class=" menu-item"><a href="/Shrewsbury-Resources\">Shrewsbury</a></li><li class=" menu-item"><a href="/StokeField-Resources\">Stoke Field</a></li><li class=" menu-item"><a href="/page182.asp">Newburn Ford</a></li><li class=" menu-item"><a href="/edgehill-resources\">Edgehill</a></li><li class=" menu-item"><a href="/page215.asp">Worcester</a></li></ul></li><li class=" menu-item-has-children  menu-item"><a href="/memorial\">British Civil Wars Memorials</a><ul class="sub-menu " ><li class=" menu-item"><a href="/memorial/map.asp">BCW Memorial Map</a></li><li class=" menu-item"><a href="/memorial/search.asp">Advanced Search</a></li><li class=" menu-item"><a href="/memorial/submit.asp">Submit Memorial</a></li><li class=" menu-item"><a href="/Civil-War-Memorial-Database-partners\">BCW Memorial Database Partners</a></li></ul></li><li class=" menu-item-has-children  menu-item"><a href="/wotrmemorial\">Wars of the Roses Memorials</a><ul class="sub-menu " ><li class=" menu-item"><a href="/wotrmemorial/map.asp">WotR Memorial Map</a></li><li class=" menu-item"><a href="/wotrmemorial/search.asp">Advanced Search</a></li><li class=" menu-item"><a href="/wotrmemorial/submit.asp">Submit Memorial</a></li><li class=" menu-item"><a href="/War-of-the-Roses-Memorial-Database-partners\">Wars of the Roses Memorial Database Partners</a></li></ul></li><li class=" menu-item"><a href="/page237.asp">Magna Carta Battlefields</a></li></ul></li><li class=" menu-item"><a href="/contactus\">Contact Us</a></li>
+</ul>
+</nav>
+
+            
+				<div class="resource-subnav-container"></div>
+				
+				
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Start Mobile Header -->
+       <header id="mobile-header" class="mobile-header row no-padding">
+        <a href="/resource-centre/" ><img src="/resource-centre/img/BF-logo-mobile.png" class="logoimg-home" alt="The Battlefields Trust" /></a>
+         
+			
+	
+     <a href="#" data-target="open-menu" class="mobile-toggle">
+                    <div>
+                        <span></span><span></span><span></span>
+                    </div>
+                </a> 
+      
+     
+
+        <!-- Start Mobile Menu -->
+        <nav id="mobile-menu">
+    <ul class="mobile-menu">
+<li class=" menu-item-has-children  menu-item"><a href="/aboutus\/">About Us</a><ul class="sub-menu " ><li class=" menu-item"><a href="/aboutus\/">About Us</a></li><li class=" menu-item"><a href="/regions\">Regions</a></li><li class=" menu-item"><a href="/thetrustees\">The Board of Trustees</a></li><li class=" menu-item"><a href="/page72.asp">Who's who in the Battlefields Trust</a></li><li class=" menu-item"><a href="/HowYouCanHelp\">How You Can Help</a></li><li class=" menu-item-has-children  menu-item"><a href="/trustpolicy\">Policies and documents</a><ul class="sub-menu " ><li class=" menu-item"><a href="/trustpolicy\">Policies and documents</a></li><li class=" menu-item"><a href="/page226.asp">Governing documents</a></li><li class=" menu-item"><a href="/page131.asp">Battlefield Threats - The Trust's Policy</a></li><li class=" menu-item"><a href="/page228.asp">Battlefield Investigation Policy and Guidance</a></li><li class=" menu-item"><a href="/page238.asp">Managing Change on Historic Battlefields - A Guide for Heritage & Planning Professionals</a></li><li class=" menu-item"><a href="/page262.asp">Natural England Environmental Guidance for Registered Battlefields</a></li><li class=" menu-item"><a href="/page94.asp">statement on metal detecting</a></li><li class=" menu-item"><a href="/page145.asp">Battlefields Trust Complaints Policy</a></li><li class=" menu-item"><a href="/page259.asp">Safeguarding policy and incident reporting</a></li><li class=" menu-item"><a href="/page197.asp">Battlefields Trust Health and Safety Policy Statement</a></li><li class=" menu-item"><a href="/page198.asp">Battlefields Trust Equal Opportunities Statement</a></li><li class=" menu-item"><a href="/page213.asp">Battlefields Trust Battlefields Hub Change Policy</a></li></ul></li><li class=" menu-item"><a href="/page54.asp">Links</a></li><li class=" menu-item-has-children  menu-item"><a href="/page49.asp">Under Threat</a><ul class="sub-menu " ><li class=" menu-item"><a href="/page49.asp">Under Threat</a></li><li class=" menu-item"><a href="/page200.asp">Types of Battlefield Threats</a></li><li class=" menu-item"><a href="/page201.asp">Battlefield Planning Rules and Heritage Guidance</a></li><li class=" menu-item"><a href="/page202.asp">Battlefield Panel</a></li><li class=" menu-item"><a href="/page203.asp">Recent Battlefield Threats</a></li></ul></li><li class=" menu-item"><a href="/privacypolicy\">Privacy Statement</a></li></ul></li><li class=" menu-item"><a href="/battlefields-events\/">Events</a></li><li class=" menu-item"><a href="/battlefields-news\/">News</a></li><li class=" menu-item-has-children  menu-item"><a href="/magazine/">Magazine & Journal</a><ul class="sub-menu " ><li class=" menu-item"><a href="/magazine/">Magazine & Journal</a></li><li class=" menu-item"><a href="/magazine/">Magazine</a></li><li class=" menu-item-has-children  menu-item"><a href="/journal\">Journal</a><ul class="sub-menu " ><li class=" menu-item"><a href="/journal\">Journal</a></li><li class=" menu-item"><a href="/page242.asp">Battalia Volume I 2017</a></li><li class=" menu-item"><a href="/page243.asp">Battalia Volume II 2024</a></li><li class=" menu-item"><a href="/page251.asp">Battalia Volume III 2025</a></li><li class=" menu-item"><a href="/page263.asp">Battalia Volume IV 2026</a></li></ul></li></ul></li><li class=" menu-item-has-children  menu-item"><a href="/members\/">Members Only</a><ul class="sub-menu " ><li class=" menu-item"><a href="/members\/">Members Only</a></li><li class=" menu-item"><a href="/onlinelectures\">Battlefields Trust online lectures</a></li><li class=" menu-item-has-children  menu-item"><a href="/members-annual-general-meetings\">Annual General Meetings</a><ul class="sub-menu " ><li class=" menu-item"><a href="/members-annual-general-meetings\">Annual General Meetings</a></li><li class=" menu-item"><a href="/page258.asp">Battlefields Trust AGM 2026</a></li><li class=" menu-item"><a href="/page249.asp">2025 AGM Documents</a></li><li class=" menu-item"><a href="/page241.asp">2024 AGM Documents</a></li><li class=" menu-item"><a href="/page230.asp">2023 AGM Documents</a></li><li class=" menu-item"><a href="/page221.asp">2022 AGM Documents</a></li><li class=" menu-item"><a href="/page214.asp">2021 AGM Documents</a></li><li class=" menu-item"><a href="/page209.asp">2020 AGM Documents</a></li><li class=" menu-item"><a href="/members-AGM2019\">2019 AGM Documents</a></li><li class=" menu-item"><a href="/page210.asp">2018 AGM Documents</a></li><li class=" menu-item"><a href="/members-AGM2017\">2017 AGM Documents</a></li><li class=" menu-item"><a href="/members-AGM2016\">2016 AGM Documents</a></li><li class=" menu-item"><a href="/members-AGM2015\">2015 AGM Documents</a></li><li class=" menu-item"><a href="/members-AGM2013\">2013 AGM Documents</a></li><li class=" menu-item"><a href="/members-AGM2012\">2012 AGM Documents</a></li><li class=" menu-item"><a href="/members-AGM2011\">2011 AGM Documents</a></li></ul></li><li class=" menu-item"><a href="/members-battlefields-trust-magazine\">Battlefields Trust Magazine</a></li><li class=" menu-item"><a href="/members-Newsletters\">Battlefields Trust Newsletters</a></li><li class=" menu-item"><a href="/members-Good-Practice-Guides\">Good Practice Guides</a></li><li class=" menu-item"><a href="/members-Public-Liability-Insurance\">Battlefields Trust Governing Document and annual insurance</a></li><li class=" menu-item"><a href="/Members-Articles\">Members' Articles</a></li><li class=" menu-item"><a href="/Members-Benefits\">Members' Benefits</a></li><li class=" menu-item"><a href="/members-Project-Reports\">Project Reports, Updates and Lessons Learned</a></li><li class=" menu-item"><a href="/members-regional-newsletters\">Regional Newsletters</a></li></ul></li><li class=" menu-item-has-children  menu-item"><a href="/resource-centre-entrance\/">Learning Resources</a><ul class="sub-menu " ><li class=" menu-item"><a href="/resource-centre-entrance\/">Learning Resources</a></li><li class=" menu-item"><a href="/resource-centre/">The Battlefields Hub</a></li><li class=" menu-item-has-children  menu-item"><a href="/educationresources\">Battlefield Education Packs</a><ul class="sub-menu " ><li class=" menu-item"><a href="/educationresources\">Battlefield Education Packs</a></li><li class=" menu-item"><a href="/page231.asp">Otterburn</a></li><li class=" menu-item"><a href="/carham\">Carham</a></li><li class=" menu-item"><a href="/Shrewsbury-Resources\">Shrewsbury</a></li><li class=" menu-item"><a href="/StokeField-Resources\">Stoke Field</a></li><li class=" menu-item"><a href="/page182.asp">Newburn Ford</a></li><li class=" menu-item"><a href="/edgehill-resources\">Edgehill</a></li><li class=" menu-item"><a href="/page215.asp">Worcester</a></li></ul></li><li class=" menu-item-has-children  menu-item"><a href="/memorial\">British Civil Wars Memorials</a><ul class="sub-menu " ><li class=" menu-item"><a href="/memorial\">British Civil Wars Memorials</a></li><li class=" menu-item"><a href="/memorial/map.asp">BCW Memorial Map</a></li><li class=" menu-item"><a href="/memorial/search.asp">Advanced Search</a></li><li class=" menu-item"><a href="/memorial/submit.asp">Submit Memorial</a></li><li class=" menu-item"><a href="/Civil-War-Memorial-Database-partners\">BCW Memorial Database Partners</a></li></ul></li><li class=" menu-item-has-children  menu-item"><a href="/wotrmemorial\">Wars of the Roses Memorials</a><ul class="sub-menu " ><li class=" menu-item"><a href="/wotrmemorial\">Wars of the Roses Memorials</a></li><li class=" menu-item"><a href="/wotrmemorial/map.asp">WotR Memorial Map</a></li><li class=" menu-item"><a href="/wotrmemorial/search.asp">Advanced Search</a></li><li class=" menu-item"><a href="/wotrmemorial/submit.asp">Submit Memorial</a></li><li class=" menu-item"><a href="/War-of-the-Roses-Memorial-Database-partners\">Wars of the Roses Memorial Database Partners</a></li></ul></li><li class=" menu-item"><a href="/page237.asp">Magna Carta Battlefields</a></li></ul></li><li class=" menu-item"><a href="/contactus\/">Contact Us</a></li>
+    </ul>
+</nav>
+        <!-- End Mobile Menu -->      
+      
+       
+       		</header>
+        
+        <div role="main" id="maincontainer" class="">
+        <div id="main" class="row">
+        
+			
+			
+			
+			
+			
+		<div class="NavTrail">
+						<a title="Battlefields Hub" href="/resource-centre/"><b><i class="bi bi-box-arrow-in-down-right fa-2x" style="font-size: 1.6em;"></i> Battlefields Hub</b></a> &#8594;  <a title="View The Civil Wars Period" href="/resource-centre/civil-war/index.asp">The Civil Wars</a> &#8594; 
+							<a title="View The Worcester Campaign 1651 Campain" href="/resource-centre/civil-war/campainview.asp?CampainId=78">The Worcester Campaign 1651</a> &#8594; Battle of Worcester
+						<!--End Page Trail -->
+						</div>
+			
+			
+ 					
+   <div class="leftnav_container">
+				
+			
+
+
+<div class="leftnav_battle">
+	 <div class="NavMainHeader">
+	 
+				
+				<img src="/main-images/shim.gif" height="9" border=0><br/><span class="headerstrap">Other pages about</span>
+				
+
+				<br/>
+				Battle of Worcester
+
+</div>
+
+				
+
+
+<div class="Navcontent">
+			 <a href="/resource-centre/battlepageview.asp?pageid=800">The Battle (1)</a>
+</div>
+			
+
+	 </div>
+
+
+
+	
+		    <div class="leftnav_Memorials">
+		        <div class="Navcontent">
+
+		            <a href="/resource-centre/battlememorials.asp?BattleFieldId=49">Memorials (14)</a> 
+
+		        </div>				
+			</div>
+	    
+
+		
+		<div class="leftnav_campaign">
+			<div class="Navcontent">
+		<a href="/resource-centre/campainview.asp?CampainId=78">The Worcester Campaign 1651</a>
+				</div>
+</div>
+			
+			
+			
+			<div class="leftnav_downloads">
+				<div class="NavHeaders">File Downloads</div>
+				
+				
+				
+
+
+	
+                    <div class="Navcontent-image">
+                        <a 
+                            data-fancybox 
+                            data-type="pdf" href="/media/357.pdf" 
+                            data-caption="OS Explorer map with troop deployments and action superimposed.<br/>Map base: Ordnance Survey Explorer (1:25,000 scale) mapping. <br/>Explorer map: Ordnance Survey; Battlefield data: The Battlefields Trust<br/>
+                            <a href='/media/357.pdf' target='_blank'>Click here to download file<a/>"><i class="bi bi-file-earmark-pdf"></i>Worcester battlefield OS Explorer map</a>
+                    </div> 
+		
+                    <div class="Navcontent-image">
+                        <a 
+                            data-fancybox 
+                            data-type="pdf" href="/media/359.pdf" 
+                            data-caption="Wider context of battlefield also showing extent of Registered Battlefield.<br/>Extract of out of copyright Ordnance Survey one inch (1:63360) scale New Popular edition map of 1947 &amp; 1946 (full revision 1915 &amp; 1930).<br/>Copyright &#169; The Battlefields Trust 2004<br/>
+                            <a href='/media/359.pdf' target='_blank'>Click here to download file<a/>"><i class="bi bi-file-earmark-pdf"></i>Worcester context map</a>
+                    </div> 
+		
+                    <div class="Navcontent-image">
+                        <a 
+                            data-fancybox 
+                            data-type="pdf" href="/media/360.pdf" 
+                            data-caption="Deployments and action on background of terrain<br/>Contours from OS 1&quot;(1:63360) New Popular edition mapping of 1940s<br/>Copyright &#169; The Battlefields Trust 2004<br/>
+                            <a href='/media/360.pdf' target='_blank'>Click here to download file<a/>"><i class="bi bi-file-earmark-pdf"></i>Worcester terrain & action map 1</a>
+                    </div> 
+		
+                    <div class="Navcontent-image">
+                        <a 
+                            data-fancybox 
+                            data-type="pdf" href="/media/361.pdf" 
+                            data-caption="Deployments and action on background of terrain<br/>Contours from OS 1&quot;(1:63360) New Popular edition mapping of 1940s<br/>Copyright &#169; The Battlefields Trust 2004<br/>
+                            <a href='/media/361.pdf' target='_blank'>Click here to download file<a/>"><i class="bi bi-file-earmark-pdf"></i>Worcester terrain & action map 2</a>
+                    </div> 
+		
+                    <div class="Navcontent-image">
+                        <a 
+                            data-fancybox 
+                            data-type="pdf" href="/media/358.pdf" 
+                            data-caption="Key to RAF vertical air photos of 1940s provided on the website<br/>Map base: extract of OS 1&quot;(1:63360) New Popular edition map of 1947 &amp; 1946 (full revision 1915 &amp; 1930)<br/>Copyright &#169; The Battlefields Trust 2004<br/>
+                            <a href='/media/358.pdf' target='_blank'>Click here to download file<a/>"><i class="bi bi-file-earmark-pdf"></i>Worcester air photo key</a>
+                    </div> 
+		
+                    <div class="Navcontent-image">
+                        <a 
+                            data-fancybox 
+                            href="/media/362.jpg" 
+                            data-caption="RAF vertical air photo of 1940s<br/>English Heritage (National Monuments Record)<br/>English Heritage<br/>
+                            <a href='/media/362.jpg' target='_blank'>Click here to download file<a/>"><i class="bi bi-file-image"></i>Worcester air photo 1</a>
+                    </div> 
+		
+                    <div class="Navcontent-image">
+                        <a 
+                            data-fancybox 
+                            href="/media/363.jpg" 
+                            data-caption="RAF vertical air photo of 1940s<br/>English Heritage (National Monuments Record)<br/>English Heritage<br/>
+                            <a href='/media/363.jpg' target='_blank'>Click here to download file<a/>"><i class="bi bi-file-image"></i>Worcester air photo 2</a>
+                    </div> 
+		
+                    <div class="Navcontent-image">
+                        <a 
+                            data-fancybox 
+                            href="/media/364.jpg" 
+                            data-caption="RAF vertical air photo of 1940s<br/>English Heritage (National Monuments Record)<br/>English Heritage<br/>
+                            <a href='/media/364.jpg' target='_blank'>Click here to download file<a/>"><i class="bi bi-file-image"></i>Worcester air photo 3</a>
+                    </div> 
+		
+                    <div class="Navcontent-image">
+                        <a 
+                            data-fancybox 
+                            href="/media/365.jpg" 
+                            data-caption="RAF vertical air photo of 1940s<br/>English Heritage (National Monuments Record)<br/>English Heritage<br/>
+                            <a href='/media/365.jpg' target='_blank'>Click here to download file<a/>"><i class="bi bi-file-image"></i>Worcester air photo 4</a>
+                    </div> 
+		
+                    <div class="Navcontent-image">
+                        <a 
+                            data-fancybox 
+                            href="/media/366.jpg" 
+                            data-caption="RAF vertical air photo of 1940s<br/>English Heritage (National Monuments Record)<br/>English Heritage<br/>
+                            <a href='/media/366.jpg' target='_blank'>Click here to download file<a/>"><i class="bi bi-file-image"></i>Worcester air photo 5</a>
+                    </div> 
+		
+			
+			</div>
+		
+
+        
+
+	
+
+		<div class="leftnav_battles">
+
+
+<div class="NavHeaders">Battles</div>
+		
+	
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=29">Battle of Newburn Ford&nbsp;-&nbsp;1640</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=35">Battle of Powick Bridge&nbsp;-&nbsp;1642</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=3">Battle of Edgehill&nbsp;-&nbsp;1642</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=53">Battle of Brentford&nbsp;-&nbsp;1642</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=83">Battle of Turnham Green&nbsp;-&nbsp;1642</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=91">Battle of Piercebridge&nbsp;-&nbsp;1642</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=92">Battle of Guisborough&nbsp;-&nbsp;1643</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=9">Battle of Braddock Down&nbsp;-&nbsp;1643</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=93">Battle of Yarm Bridge&nbsp;-&nbsp;1643</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=103">Battle of Modbury&nbsp;-&nbsp;1643</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=19">Battle of Hopton Heath&nbsp;-&nbsp;1643</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=50">Battle of Seacroft Moor&nbsp;-&nbsp;1643</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=112">Battle of Birmingham&nbsp;-&nbsp;1643</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=94">Battle of Ripple&nbsp;-&nbsp;1643</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=99">Battle of Middleton Cheney&nbsp;-&nbsp;1643</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=44">Battle of Stratton&nbsp;-&nbsp;1643</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=10">Battle of Chalgrove&nbsp;-&nbsp;1643</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=4">Battle of Adwalton Moor&nbsp;-&nbsp;1643</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=21">Battle of Lansdown Hill&nbsp;-&nbsp;1643</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=36">Battle of Roundway Down&nbsp;-&nbsp;1643</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=102">Battle of Gainsborough&nbsp;-&nbsp;1643</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=30">Battle of Newbury I&nbsp;-&nbsp;1643</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=48">Battle of Winceby&nbsp;-&nbsp;1643</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=104">Battle of Alton&nbsp;-&nbsp;1643</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=27">Battle of Nantwich&nbsp;-&nbsp;1644</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=11">Battle of Cheriton&nbsp;-&nbsp;1644</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=2">Battle of Cropredy Bridge&nbsp;-&nbsp;1644</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=24">Battle of Marston Moor&nbsp;-&nbsp;1644</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=88">Battle of Lostwithiel&nbsp;-&nbsp;1644</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=55">Battle of Aberdeen II&nbsp;-&nbsp;1644</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=89">Battle of Newbury II&nbsp;-&nbsp;1644</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=105">Battle of Islip&nbsp;-&nbsp;1645</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=54">Battle of Auldearn&nbsp;-&nbsp;1645</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=51">Battle of Naseby&nbsp;-&nbsp;1645</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=56">Battle of Alford&nbsp;-&nbsp;1645</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=20">Battle of Langport&nbsp;-&nbsp;1645</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=66">Battle of Kilsyth&nbsp;-&nbsp;1645</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=74">Battle of Philiphaugh&nbsp;-&nbsp;1645</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=38">Battle of Rowton Heath&nbsp;-&nbsp;1645</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=43">Battle of Stow on the Wold&nbsp;-&nbsp;1646</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=90">Battle of Winwick&nbsp;-&nbsp;1648</a> 
+			
+		</div>	
+			
+			
+		<div class="Navcontent">
+		<a href="/resource-centre/battleview.asp?BattleFieldId=61">Battle of Dunbar II&nbsp;-&nbsp;1650</a> 
+			
+		</div>	
+			
+			
+		
+		
+		<div class="Navcontent">
+		<span class="currentbattle">Battle of Worcester&nbsp;-&nbsp;1651</span><br/>
+		</div>
+	
+		
+	
+				
+			</div>
+
+				
+		
+			
+
+	
+		</div>
+						<div class="maincontent">
+							
+                                
+
+
+ <div class="hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/imagestore/image/747.jpg');">
+  <div class="hero-text">
+    <h1>Battle of Worcester</h1>
+    <p>3rd September 1651</p>
+  </div>
+</div> 
+
+
+                                
+                                <!--
+                                <div class="mainpageheader">
+                                <h1 class="TitleText">Battle of Worcester</h1><h3>3rd September 1651</h3></div>-->
+									
+							
+<div class="RightNav_container">
+        
+    <!--
+    <div class="RightNav_mainimage"><img src="/images/imagestore/image250x250/747.jpg" alt="The cathedral and its gateway, as seen from Fort Royal." border="0"></div>
+-->
+        
+    <div id="galleryCarousel-2-49" class="galleryCarousel carousel">
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/991.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="The viewpoint beside the bypass has been vandalised.<br/>Photo: G Foard 08/06/2003; photo number: 070; Grid Reference: 385275,251637<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/991.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/992.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="On the east side of the Severn much of the battlefield has been built over, as here looking north from the viewpoint towards the city.<br/>Photo: G Foard 08/06/2003; photo number: 069; Grid Reference: 385275,251637<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/992.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/990.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="The confluence of Teme and Severn close to where the bridge fo boats was built.<br/>Photo: G Foard 08/06/2003; photo number: 074; Grid Reference: 385046,252180<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/990.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/757.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="Perry Wood Hill where part of the parliament army was deployed, overlooking the city.<br/>Photo: G Foard 08/06/2003; photo number: 063; Grid Reference: 386570,254805<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/757.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/758.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="The line of the old road running north east from the city can still be traced where there is a deep hollow running up the hill through Perry Wood.<br/>Photo: G Foard 08/06/2003; photo number: 068; Grid Reference: 386343,254341<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/758.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/756.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="The city viewed from Red Hill, where other parliamentarian divisions encircled the Worcester.<br/>Photo: G Foard 08/06/2003; photo number: 057; Grid Reference: 386625,253746<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/756.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/630.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="Shot impacts on Powick church probably relate to the initial skirmish as parliamentarian forces secured the south bank of the Teme the night before the battle.<br/>Photo: G Foard 06/06/2003<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/630.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/727.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="The westernmost of the parliamentarian attacks went in over Powick bridge.<br/>Photo: G Foard 08/06/2003; photo number: 087; Grid Reference: <br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/727.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/723.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="Memorial to the Scots at Powick Bridge.<br/>Photo: G Foard 28/09/2002; photo number: 054<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/723.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/725.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="A tiny memorial marks the action at Powick Bridge.<br/>Photo: G Foard 28/09/2002; photo number: 057<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/725.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/752.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="The view from the cathedral tower to the site of Fort Royal in the small park, with Red Hill and Perry Hill in the distance.<br/>Photo: G Foard 08/06/2003; photo number: 039; Grid Reference: 384998,254522<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/752.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/748.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="Earthworks of Fort Royal still survive in the park.<br/>Photo: G Foard 08/06/2003; photo number: 014; Grid Reference: 385426,254343<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/748.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/747.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="Fort Royal had to be protected by a royalist artillery fort, because it dominated the city.<br/>Photo: G Foard 08/06/2003; photo number: 008; Grid Reference: 385397,254331<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/747.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/746.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="The earthworks of Fort Royal.<br/>Photo: G Foard 08/06/2004; photo number: 005; Grid Reference: 385420,254286<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/746.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/745.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="Fort Royal is now encompassed on all sides by 19th century development.<br/>Photo: G Foard 08/06/2003; photo number: 001; Grid Reference: 385478,254235<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/745.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/751.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="The royalists viewed the battlefield from the cathedral town, which gives excellent views on all sides of the city, as here looking south towards Powick.<br/>Photo: G Foard 08/06/2003; photo number: 031; Grid Reference: 384998,254522<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/751.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/755.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="A few tiny remnants of the town wall still survive.<br/>Photo: G Foard 08/06/2003; photo number: 054; Grid Reference:385197,254950 <br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/755.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/750.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="The cathedral gate survives, but none of those on the city defences.<br/>Photo: G Foard 08/06/2003; photo number: 026; Grid Reference: 385072,254444<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/750.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/754.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="The site of the gates are maked by modern plaques.<br/>Photo: G Foard 08/06/2003; photo number: 049; Grid Reference: 385183,254982<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/754.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/753.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="The Duke of Hamilton was killed inthe royalist counter attack on the east of the city.<br/>Photo: G Foard 08/06/2003; photo number: 046<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/753.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/743.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="The house from which Charles II began his escape from Worcester, as parliamentarian forces were fighting their way into the city.<br/>Photo: G Foard 28/09/2002; photo number: 094; Grid Reference: 385167,254931<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/743.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/744.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="Plaque on the house from which Charles began his escape.<br/>Photo: G Foard 28/09/2002; photo number: 097; Grid Reference: 385167,254931<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/744.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/749.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="The Commandery houses England's only substantial Civil War interpretive facility.<br/>Photo: G Foard 08/06/2003; photo number: 021; Grid Reference: 385220,254386<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/749.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/759.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="Civil War events are regularly staged in the Commandery.<br/>Photo: G Foard 28/09/2002; photo number: 022<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/759.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/760.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="Living history events at the Commandery are not restricted purely to the military aspects of life during the Civil Wars.<br/>Photo: G Foard 28/09/2002; photo number: 103<br/>Copyright &#169; The Battlefields Trust 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/760.jpg" />
+        </div>
+            
+        <div
+        class="carousel__slide"
+        data-src="/images/imagestore/image/995.jpg"
+        data-fancybox="gallery-2-49"
+        data-caption="Fort Royal as it was in 1896.<br/>Barrett, 1896, p.389<br/>Copyright &#169; Glenn Foard 2004<br/>"
+        >
+        <img src="/images/imagestore/image550x550/995.jpg" />
+        </div>
+            
+    </div>
+        
+	<div class="keyfacts_container">
+	
+
+	<div class="keyfacts_hd">BATTLE DATA</div>
+	<div class="keyfacts_body">
+
+        <p><strong>Name:</strong> Battle of Worcester</p>
+
+<p><strong>Date:</strong> 3 September 1651</p>
+
+<p><strong>War period:</strong>&nbsp;The Civil Wars</p>
+
+<p><strong>Start time and duration:</strong> around midday, lasting ten hours</p>
+
+<p><strong>Outcome:</strong>&nbsp;Parliamentarian victory</p>
+
+<p><strong>Armies:</strong>&nbsp;Royalist: army of around 12,000 men commanded by Charles II; Parliamentarian: army of circa 28,000 men commanded by Cromwell. Losses:&nbsp;Royalist: circa 3,000 killed, circa 7,000 captured; Parliamentarian: circa 200 killed</p>
+
+<p><strong>Location:</strong>&nbsp;securely located to the south and east of the city of Worcester.&nbsp; Fought across&nbsp;enclosures, meadow, urban, ?open field</p>
+
+<p><strong>Map details:</strong> Grid Reference:&nbsp;SO854528 (385414,252815); OS Landranger map: 150; OS Explorer map:&nbsp;204</p>
+
+
+
+	</div>
+		
+	</div>
+    
+
+</div>	
+
+
+							<div class="maincontent_desc">
+								<div class="introtext"><p>The last major battle of the Civil Wars in England which saw the destruction of an Anglo-Scottish royalist force in the fields south and east of Worcester by the New Model Army.   </p></div>
+                                <p>The Battle of Worcester, the last battle of the Civil Wars, was fought on 3rd September 1651; nine years earlier the first substantial action of the war had taken place barely two miles to the south of the city, at Powick Bridge. Whereas that first skirmish had been a dramatic success for Prince Rupert&#39;s Royalist cavalry, by 1651 it was Parliament&#39;s New Model Army that was the dominant military force. The battle of Worcester destroyed the final hopes of the Royalists regaining power by military force. Charles II was forced into exile and the long and bitter Civil War was over, appropriately ending where it had begun. This was Cromwell&#39;s last great victory in battle and it secured his dominant position, political as well as military, contributing to his appointment in 1653 as Lord Protector.</p>
+
+<p>The area to the south of Worcester between Powick Bridge and the confluence of the Severn and Teme is the best preserved part of the battlefield. Here the ground is still open agricultural land, where the manoeuvres of the armies between the bridge and the position of the pontoons can be best appreciated. Further north and to the east of the city late 19th and particularly 20th century&nbsp;development has destroyed large parts of the battlefield and most traces&nbsp;of the landscape within which the&nbsp;action was fought here. However there are some surviving&nbsp;undeveloped areas in key locations, most notably&nbsp;Perry Wood.</p>
+
+<p>A visit to the battlefield is well worthwhile. Within the city there are several buildings and monuments associated with the battle, and the top of the cathedral tower still gives the best view of the battlefield, as it did for Charles II in the hours leading up to the main action. At Powick church shot impact scars can be seen on the tower, probably resulting from the initial skirmish as Fleetwood&#39;s troops secured the south bank of the Teme. There is&nbsp;a&nbsp;Civil War visitor centre in the Commandery, on the south side of the&nbsp;historic core of&nbsp;city. Nearby in a small hilltop park&nbsp;are the slight earthwork remains of&nbsp;Fort Royal, a Royalist artillery fort that was being constructed to protect the south east side of the city, where some of the action was played out in the later stages of the battle. Iinformation panels have been erected here by the Battle of Worcester Society.&nbsp;There is good access to Powick Bridge, now by-passed by the modern road, and there are a number of footpaths leading across the battlefield, including paths on the north side of the Teme and on both sides of the Severn.</p>
+
+<ul>
+	<li><span style="font-weight: bolder;"><em>Historic England Battlefields Register&nbsp;</em></span><em><strong><a href="/resource-centre/periodpageview.asp?pageid=199"><span style="color:#0000CD;">CLICK HERE</span></a></strong></em></li>
+	<li><span style="font-weight: bolder;"><em>Historic England battlefield report for&nbsp;</em></span><em><strong><a href="https://historicengland.org.uk/listing/the-list/list-entry/1000042?section=official-list-entry"><span style="color:#0000CD;">Battle of Worcester 1651 with Powick Bridge 1642</span></a></strong></em></li>
+</ul>
+
+<p><em>Worcester pages compiled by G Foard and T Partida, May 2005. Edits by S Marsh 2016.</em></p>
+							</div>
+
+
+                    <div id="map"  style="height: 400px; clear:both;"></div>
+                    
+                    <input id="PosLat" name="PosLat" readonly type="hidden" class="" value="52.173399"/>
+                    <input id="PosLng" name="PosLng" readonly type="hidden" class="" value="-2.214703"/>
+
+
+
+
+		</div>
+			
+ 		</div>
+		<!-- Start Explore Footer -->
+			<div class="resourcehomefooter panel5 row">
+	<h1 align="center">Explore the Battlefields Hub</h1>
+	<div class="small-12 medium-4 columns"><a href="/resource-centre/map.asp" role="button" class="button explorehub"><i class="bi bi-map fa-3x"></i><p>Battle Locations</p></a></div>
+	<div class="small-12 medium-4 columns"><a href="/resource-centre/timeline.asp" role="button" class="button explorehub"><i class="bi bi-clock-history fa-3x"></i><p>Battle Timeline</p></a></div>
+	<div class="small-12 medium-4 columns"><a href="/resource-centre/fullbattleslist.asp" role="button" class="button explorehub"><i class="bi bi-search fa-3x"></i><p>Find a Battle</p></a></div>
+</div>
+        <!-- End Explore Footer -->
+			
+	
+        <!-- Start Footer -->
+			<div id="calltoactions-home" class="row">
+        
+        
+         <a href="/battlefields-news/"><img src="/cms/assets/img/calltoactions/homehero1-news.jpg" alt="Battlefields Trust News"></a><a href="/battlefields-events"><img src="/cms/assets/img/calltoactions/homehero2-events.jpg" alt="Battlefields Trust Events"></a><a href="/membership/"><img src="/cms/assets/img/calltoactions/homehero3-join.jpg" alt="Join the Battlefields Trust"></a><a href="/donations/"><img src="/cms/assets/img/calltoactions/homehero4-donate.jpg" alt="Donate to The Battlefields Trust"></a>
+        
+        
+        </div>
+        
+<footer id="footer" role="contentinfo">
+		<div class="row">
+			
+            <div class="col1">
+                <h4>Find out more </h4>
+                <p><a href="/aboutus">About The Battlefields Trust</a><br />
+                <a href="/regions">Our Regions</a><br />
+                <a href="/thetrustees">Board of Trustees</a></p>       
+            </div>
+            
+            <div class="col2">
+                <h4>Resources </h4>
+                <p><a href="/resource-centre/">The Battlefields Hub</a><br />
+                <a href="/educationresources">Education Packs</a><br />
+</p>
+            </div>
+           
+            <div class="col3">
+            <h4>Membership Info </h4>
+                <p><a href="/membershipdetails">Membership Details</a><br />
+                  <a href="/membership">Members Benefits</a><br />
+                <a href="/members">Members Log In</a></p>
+            </div>
+            
+            <div class="col4">
+            <h4>Battlefields Trust</h4>
+                <p><a href="/battlefields-news">Battlefields News</a><br />
+                  <a href="/battlefields-events">Battlefields Trust Events</a><br />
+                  <a href="/magazine/">Magazine</a><br>
+                  <a href="/donations/">Donate</a><br />
+                <a href="/contactus">Contact Us</a></p>
+            </div>
+  </div>
+         
+<div class="row">
+			
+            <div class="copyright columns">
+     <p>&copy; Copyright 2026 The Battlefields Trust - Registered Charity No:1017387 and Registered Company Limited by Guarantee No:2786730  (England and Wales)<br /><a href="/privacypolicy">Privacy Policy</a> - Website by <a href="http://www.mintmedia.co.uk" target="_blank">&#176;mint</a></p>
+  </div>
+            
+         </div>
+	</footer>
+
+        <!-- End Footer -->
+        <a href="#" id="scroll_totop"></a>
+        
+    </div>
+    <!-- End #main -->
+    </div>
+        <!-- End #wrapper -->
+
+</body>
+</html>
+
+        
+   
+
+
+
+
+

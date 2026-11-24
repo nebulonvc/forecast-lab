@@ -1,0 +1,507 @@
+{
+  "claim_id": "txt-1c4066fc0c-000251400-000251448",
+  "version": "search-verifier-v1",
+  "input_sha256": "03012f2feec33afe749615f29a096a637efc4a71273ae31d21aebdbbcc9b2b4c",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000251400-000251448",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "以名义GDP总量（现价美元）为主要可观察口径，回顾窗口为出版后首个十年1991—2000；判断日本是否在该窗口内取代美国成为最大经济体，兼看日本对美经济挑战是否严峻。",
+    "reason": "引用材料的发表时间尚未确认，无法确认其属于证据截止日前；原模型建议保留待复核。",
+    "limitation": "原文“近期内”未给精确期限，本评估透明操作化为1991—2000；名义GDP受汇率波动影响，1995年日元升值曾使日本接近美国，但未实现超越。不评估政治军事全面取代。",
+    "evidence_ids": [
+      "ev-43225111ae6cb82b696c475f",
+      "ev-03b93a61ebada554b99a9227",
+      "ev-c19556e22b1e3d3360bcfada",
+      "ev-d64bfbcc547cc7a3084ce4e9"
+    ],
+    "method": "区分日本现实挑战与取代美国的近期终点",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "近期内",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-43225111ae6cb82b696c475f",
+        "relation": "support",
+        "quote": "The country with the highest annual GDP was 🇺🇸 United States, with a total of $6,158,129,000,000. Closely followed by 🇯🇵 Japan with a GDP of $3,648,065,760,648.88",
+        "publication_date": null,
+        "observation_end": "1991-12-31",
+        "limitation": "该来源为第三方汇总网站，日期未知，数据为1991年名义GDP，仅作窗口起点参考。"
+      },
+      {
+        "evidence_id": "ev-03b93a61ebada554b99a9227",
+        "relation": "boundary",
+        "quote": "on April 19, the economy of Japan came within an eyelash of surpassing that of the United States.",
+        "publication_date": "1995-05-08",
+        "observation_end": "1995-04-19",
+        "limitation": "报道称日本经济在1995年4月19日“差一点”超越美国，但并未超越；该口径为通胀调整后GDP且受日元升值影响，属接近但未实现的边界证据。"
+      },
+      {
+        "evidence_id": "ev-c19556e22b1e3d3360bcfada",
+        "relation": "support",
+        "quote": "In 1995, Japan’s GDP was $5.449 Trillion while the United States was $7.664 Trillion. Japan’s GDP was 71% of the United States and it looked to be closing. Now, in 2017 it was 25% of the United States",
+        "publication_date": "2018-10-23",
+        "observation_end": "2017-12-31",
+        "limitation": "该文为2018年回顾性文章，引用世界银行数据；1995年日本为美国71%，未超越，2017年降至25%，支持“未取代”判断，但观察期超出1991—2000窗口。"
+      },
+      {
+        "evidence_id": "ev-d64bfbcc547cc7a3084ce4e9",
+        "relation": "support",
+        "quote": "In the late 1980s, most Japanese and many Americans believed that Japan was on its way to becoming the dominant economy in the world - if it had not already achieved that position.",
+        "publication_date": "1998-06-19",
+        "observation_end": "1998-06-19",
+        "limitation": "该文描述1980年代末的预期，并指出此后形势变化；未直接给出1991—2000年逐年GDP对比，仅作背景支持。"
+      }
+    ],
+    "remaining_gap": "核对被引用材料的可证实发表版本及日期。缺少世界银行WDI逐年名义GDP完整序列（1991—2000）的直接正文数据；现有证据足以支持窗口内日本未超越美国的主要判断，但精确年度对比仍待补充。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000251400-000251448",
+    "inclusion": "forecast",
+    "verdict": "正确",
+    "basis": "observed_window",
+    "scope": "以名义GDP总量（现价美元）为主要可观察口径，回顾窗口为出版后首个十年1991—2000；判断日本是否在该窗口内取代美国成为最大经济体，兼看日本对美经济挑战是否严峻。",
+    "reason": "原文判断日本尚未取代美国、近期也不能作此判断，同时强调日本经济挑战严峻。1991年名义GDP美国约6.16万亿美元、日本约3.65万亿美元，日本未超过美国；1995年日本GDP约为美国的71%，接近但未超越；2017年降至约25%。窗口内无日本取代美国的证据，主要判断成立。",
+    "limitation": "原文“近期内”未给精确期限，本评估透明操作化为1991—2000；名义GDP受汇率波动影响，1995年日元升值曾使日本接近美国，但未实现超越。不评估政治军事全面取代。",
+    "evidence_ids": [
+      "ev-43225111ae6cb82b696c475f",
+      "ev-03b93a61ebada554b99a9227",
+      "ev-c19556e22b1e3d3360bcfada",
+      "ev-d64bfbcc547cc7a3084ce4e9"
+    ],
+    "method": "区分日本现实挑战与取代美国的近期终点",
+    "method_basis": "explicit",
+    "observation_end": "2000-12-31",
+    "future_time_text": "近期内",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-43225111ae6cb82b696c475f",
+        "relation": "support",
+        "quote": "The country with the highest annual GDP was 🇺🇸 United States, with a total of $6,158,129,000,000. Closely followed by 🇯🇵 Japan with a GDP of $3,648,065,760,648.88",
+        "publication_date": null,
+        "observation_end": "1991-12-31",
+        "limitation": "该来源为第三方汇总网站，日期未知，数据为1991年名义GDP，仅作窗口起点参考。"
+      },
+      {
+        "evidence_id": "ev-03b93a61ebada554b99a9227",
+        "relation": "boundary",
+        "quote": "on April 19, the economy of Japan came within an eyelash of surpassing that of the United States.",
+        "publication_date": "1995-05-08",
+        "observation_end": "1995-04-19",
+        "limitation": "报道称日本经济在1995年4月19日“差一点”超越美国，但并未超越；该口径为通胀调整后GDP且受日元升值影响，属接近但未实现的边界证据。"
+      },
+      {
+        "evidence_id": "ev-c19556e22b1e3d3360bcfada",
+        "relation": "support",
+        "quote": "In 1995, Japan’s GDP was $5.449 Trillion while the United States was $7.664 Trillion. Japan’s GDP was 71% of the United States and it looked to be closing. Now, in 2017 it was 25% of the United States",
+        "publication_date": "2018-10-23",
+        "observation_end": "2017-12-31",
+        "limitation": "该文为2018年回顾性文章，引用世界银行数据；1995年日本为美国71%，未超越，2017年降至25%，支持“未取代”判断，但观察期超出1991—2000窗口。"
+      },
+      {
+        "evidence_id": "ev-d64bfbcc547cc7a3084ce4e9",
+        "relation": "support",
+        "quote": "In the late 1980s, most Japanese and many Americans believed that Japan was on its way to becoming the dominant economy in the world - if it had not already achieved that position.",
+        "publication_date": "1998-06-19",
+        "observation_end": "1998-06-19",
+        "limitation": "该文描述1980年代末的预期，并指出此后形势变化；未直接给出1991—2000年逐年GDP对比，仅作背景支持。"
+      }
+    ],
+    "remaining_gap": "缺少世界银行WDI逐年名义GDP完整序列（1991—2000）的直接正文数据；现有证据足以支持窗口内日本未超越美国的主要判断，但精确年度对比仍待补充。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-871dcdbdaf9152e07536",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.CD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-cd",
+      "published_date": "2026-10-08",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-cd",
+      "archive_sha256": "7ad5c1c4f44e15850a861521955b29727497d2cb232432f3dbc2e56ba20d4e42",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.CD.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-3860b59dde3f3677ccba",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.KD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-kd",
+      "published_date": "2026-10-08",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-kd",
+      "archive_sha256": "0eabb480af54e08e1fa6c8a30424b5f98a316e14d676054b7b88acb293744bb4",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.KD.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-4c0a4fc0e5db546e17fb",
+      "url": "https://www2.boj.or.jp/archive/en/announcements/press/koen_2009/ko0904c.htm",
+      "title": "ev-japan-growth",
+      "published_date": "2009-04-23",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-japan-growth",
+      "archive_sha256": "71ea4ae45c718dee270c90b533919d74c3e7e2649a70e0d081c8acc0b03ad508",
+      "archive_path": "data/sources/71ea4ae45c718dee270c90b533919d74c3e7e2649a70e0d081c8acc0b03ad508.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-3836a979d361c01cf9be9a5f",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=US&name_desc=false",
+      "resolved_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=US&name_desc=false",
+      "title": "GDP (current US$) - United States | Data",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:46.673734+00:00",
+      "archive_sha256": "05133ad502443197db17aff64a625c7030f96c062e24c5fb5b191ec179cad919",
+      "archive_path": "jobs/cb83e15fbf3a656fb412efaa/05133ad502443197db17aff64a625c7030f96c062e24c5fb5b191ec179cad919.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-9317426a4a90bf0cc7271742",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=JP&start=1990",
+      "resolved_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=JP&start=1990",
+      "title": "GDP (current US$) - Japan | Data",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:46.685199+00:00",
+      "archive_sha256": "c37db44d1dad1b0405428e348d08b8880e8c219b6df8e5a1adf0c61890b9c534",
+      "archive_path": "jobs/cb83e15fbf3a656fb412efaa/c37db44d1dad1b0405428e348d08b8880e8c219b6df8e5a1adf0c61890b9c534.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-03b93a61ebada554b99a9227",
+      "url": "https://www.latimes.com/archives/la-xpm-1995-05-08-fi-63836-story.html",
+      "resolved_url": "https://www.latimes.com/archives/la-xpm-1995-05-08-fi-63836-story.html",
+      "title": "ECONOMIC SUPERPOWERS AT ODDS : NEWS ANALYSIS : As Yen Rises, Japanese and U.S. GDPs Go Head-to-Head : Currencies: A forecast that Japan's economy will surpass America's by 2000 almost came true on April 19. - Los Angeles Times",
+      "published_date": "1995-05-08",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:46.691556+00:00",
+      "archive_sha256": "40f802afbbf5693f6776c2696b5bfc4e5d8b1ad58a8de8135ccf9480900afa1c",
+      "archive_path": "jobs/cb83e15fbf3a656fb412efaa/40f802afbbf5693f6776c2696b5bfc4e5d8b1ad58a8de8135ccf9480900afa1c.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-78addd9289c24227ac41debf",
+      "url": "https://carnegieendowment.org/research/2010/03/japans-past-and-the-us-future",
+      "resolved_url": "https://carnegieendowment.org/research/2010/03/japans-past-and-the-us-future",
+      "title": "Japan's Past and the U.S. Future | Carnegie Endowment for International Peace",
+      "published_date": "2010-03-18",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:46.691849+00:00",
+      "archive_sha256": "9382e205d76d48aa94f7328aa67bf4ef471b3329afe9329394b36eab9d168965",
+      "archive_path": "jobs/cb83e15fbf3a656fb412efaa/9382e205d76d48aa94f7328aa67bf4ef471b3329afe9329394b36eab9d168965.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-43225111ae6cb82b696c475f",
+      "url": "https://database.earth/economy/gdp/1991",
+      "resolved_url": "https://database.earth/economy/gdp/1991",
+      "title": "Annual GDP (Gross Domestic Product) by Country in 1991 (World Map)",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:56.361893+00:00",
+      "archive_sha256": "906c02203e00d4b694b27fca642a9f04420b15881e132e2aa0e105d0541b3b9d",
+      "archive_path": "jobs/cb83e15fbf3a656fb412efaa/906c02203e00d4b694b27fca642a9f04420b15881e132e2aa0e105d0541b3b9d.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c19556e22b1e3d3360bcfada",
+      "url": "https://dupuyinstitute.org/2018/10/23/where-did-japan-go/",
+      "resolved_url": "https://dupuyinstitute.org/2018/10/23/where-did-japan-go/",
+      "title": "Where Did Japan Go? - The Dupuy Institute",
+      "published_date": "2018-10-23",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:56.362103+00:00",
+      "archive_sha256": "7575ddd0ea6d53d6aafee30ea9c196f09e341c19a26300487ebbf48eb1698aec",
+      "archive_path": "jobs/cb83e15fbf3a656fb412efaa/7575ddd0ea6d53d6aafee30ea9c196f09e341c19a26300487ebbf48eb1698aec.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d64bfbcc547cc7a3084ce4e9",
+      "url": "https://www.piie.com/commentary/speeches-papers/japan-and-united-states-world-economy",
+      "resolved_url": "https://www.piie.com/commentary/speeches-papers/japan-and-united-states-world-economy",
+      "title": "Japan and the United States in the World Economy",
+      "published_date": "1998-06-19",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:56.362350+00:00",
+      "archive_sha256": "b0bc8fbcd2483dad1bdb40a03fc2bde2d296e264b7311129969deb93d152b8b4",
+      "archive_path": "jobs/cb83e15fbf3a656fb412efaa/b0bc8fbcd2483dad1bdb40a03fc2bde2d296e264b7311129969deb93d152b8b4.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "World Bank WDI NY.GDP.MKTP.CD United States Japan 1991 2000 GDP current US$ annual data",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Japan overtook United States largest economy GDP 1990s evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "World Bank WDI NY.GDP.MKTP.CD United States Japan 1991 2000 annual GDP current US$ data Japan below United States",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Japan GDP surpassed United States 1991 2000 largest economy World Bank OECD evidence",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-43225111ae6cb82b696c475f"
+      ]
+    }
+  ],
+  "remaining_gap": "核对被引用材料的可证实发表版本及日期。缺少世界银行WDI逐年名义GDP完整序列（1991—2000）的直接正文数据；现有证据足以支持窗口内日本未超越美国的主要判断，但精确年度对比仍待补充。",
+  "source_statuses": [
+    {
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=US&name_desc=false",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=JP&start=1990",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.latimes.com/archives/la-xpm-1995-05-08-fi-63836-story.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://carnegieendowment.org/research/2010/03/japans-past-and-the-us-future",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://database.earth/economy/gdp/1991",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://dupuyinstitute.org/2018/10/23/where-did-japan-go/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.piie.com/commentary/speeches-papers/japan-and-united-states-world-economy",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "86981d5602b346126291b5ac3f0bd9f65f3124d99e98fadaaa18a133ae100a36"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f3a50ca140d9634aec6dc0beb3e2083e",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "0eb37ffcb36dda8d5e6f97c7d854bc6a",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "dce7083ee458bbbde81e160e18dd8cdb8da4d9ab1dd79b0234685c55de73b38e"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "e5affa1d55fdc86bf269b6846f5fab91",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "cb6449f1ec548b7fc1d9c50d37f2ba6c59856072f46bb274a66ee482aa8fe852"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "d57cd613e9dcc6186a6adaadca73a293",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "2acbd1ec06b96314513362fad5b55304",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "48b4e18743f1e20bba030abc43c25623563b0c493c3906ed1f7091752087d2a6"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "bb0e74b78782c30d755f469349ff5d76",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "636294b7f8dae24156af98344b3d70468cde2bc3a602c4b302416c8917ec8db0"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "d6017ddd0ef6a4eeb53efe691d12889b690c03b903d93485197b0969b5d07467"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000251400-000251448",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000251400-000251448",
+      "inclusion": "forecast",
+      "verdict": "正确",
+      "basis": "observed_window",
+      "scope": "以名义GDP总量（现价美元）为主要可观察口径，回顾窗口为出版后首个十年1991—2000；判断日本是否在该窗口内取代美国成为最大经济体，兼看日本对美经济挑战是否严峻。",
+      "reason": "原文判断日本尚未取代美国、近期也不能作此判断，同时强调日本经济挑战严峻。1991年名义GDP美国约6.16万亿美元、日本约3.65万亿美元，日本未超过美国；1995年日本GDP约为美国的71%，接近但未超越；2017年降至约25%。窗口内无日本取代美国的证据，主要判断成立。",
+      "limitation": "原文“近期内”未给精确期限，本评估透明操作化为1991—2000；名义GDP受汇率波动影响，1995年日元升值曾使日本接近美国，但未实现超越。不评估政治军事全面取代。",
+      "evidence_ids": [
+        "ev-43225111ae6cb82b696c475f",
+        "ev-03b93a61ebada554b99a9227",
+        "ev-c19556e22b1e3d3360bcfada",
+        "ev-d64bfbcc547cc7a3084ce4e9"
+      ],
+      "method": "区分日本现实挑战与取代美国的近期终点",
+      "method_basis": "explicit",
+      "observation_end": "2000-12-31",
+      "future_time_text": "近期内",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-43225111ae6cb82b696c475f",
+          "relation": "support",
+          "quote": "The country with the highest annual GDP was 🇺🇸 United States, with a total of $6,158,129,000,000. Closely followed by 🇯🇵 Japan with a GDP of $3,648,065,760,648.88",
+          "publication_date": null,
+          "observation_end": "1991-12-31",
+          "limitation": "该来源为第三方汇总网站，日期未知，数据为1991年名义GDP，仅作窗口起点参考。"
+        },
+        {
+          "evidence_id": "ev-03b93a61ebada554b99a9227",
+          "relation": "boundary",
+          "quote": "on April 19, the economy of Japan came within an eyelash of surpassing that of the United States.",
+          "publication_date": "1995-05-08",
+          "observation_end": "1995-04-19",
+          "limitation": "报道称日本经济在1995年4月19日“差一点”超越美国，但并未超越；该口径为通胀调整后GDP且受日元升值影响，属接近但未实现的边界证据。"
+        },
+        {
+          "evidence_id": "ev-c19556e22b1e3d3360bcfada",
+          "relation": "support",
+          "quote": "In 1995, Japan’s GDP was $5.449 Trillion while the United States was $7.664 Trillion. Japan’s GDP was 71% of the United States and it looked to be closing. Now, in 2017 it was 25% of the United States",
+          "publication_date": "2018-10-23",
+          "observation_end": "2017-12-31",
+          "limitation": "该文为2018年回顾性文章，引用世界银行数据；1995年日本为美国71%，未超越，2017年降至25%，支持“未取代”判断，但观察期超出1991—2000窗口。"
+        },
+        {
+          "evidence_id": "ev-d64bfbcc547cc7a3084ce4e9",
+          "relation": "support",
+          "quote": "In the late 1980s, most Japanese and many Americans believed that Japan was on its way to becoming the dominant economy in the world - if it had not already achieved that position.",
+          "publication_date": "1998-06-19",
+          "observation_end": "1998-06-19",
+          "limitation": "该文描述1980年代末的预期，并指出此后形势变化；未直接给出1991—2000年逐年GDP对比，仅作背景支持。"
+        }
+      ],
+      "remaining_gap": "缺少世界银行WDI逐年名义GDP完整序列（1991—2000）的直接正文数据；现有证据足以支持窗口内日本未超越美国的主要判断，但精确年度对比仍待补充。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象：日本是否在“近期内”取代美国成为最大经济体（以名义/实际GDP总量比较为主要可观察口径，兼看日本对美经济挑战是否严峻）；条件：无明示条件；期限：原文“近期内”，回顾性操作化为出版后首个十年1991—2000；反证口径：若该窗口内日本GDP总量任一年超过美国，或权威统计显示日本已取代美国最大经济体地位，则构成反证；不把“永远不会取代”或政治军事全面取代纳入本条。",
+  "elapsed_seconds": 29.519,
+  "completed_at": "2026-11-09T08:02:05.624579+00:00"
+}

@@ -1,0 +1,733 @@
+{
+  "claim_id": "txt-1c4066fc0c-000118342-000118369",
+  "version": "search-verifier-v2",
+  "input_sha256": "d2621b0d3da5b8a20be20b168a0849e648c75bf65943a3f02fcec79d1602c40c",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000118342-000118369",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "原文条件性预测：东西方经济水平拉平（不必倒转）时，意识形态之争可能重新兴起。观察口径为1991年前后至截止日，比较原东方集团（苏联/东欧及中国）与西方（美欧日）人均实际GDP或PPP人均生活水平差距是否显著缩小至接近，并以制度性意识形态竞争是否回升作为结果代理。",
+    "reason": "原文以“只要拉平”为真实条件，属条件性预测；现有材料仅显示中国与美国PPP人均GDP仍有巨大差距（约27140对86170国际元），未见东西方整体经济水平已拉平的证据，条件未满足。意识形态竞争是否回升的代理证据亦不完整，无法据此判定结果。",
+    "limitation": "原东方集团已发生制度剧变，跨期主体对应存在偏离；PPP人均GDP仅为经济水平代理，且材料未覆盖东欧、俄罗斯等完整集团对比。意识形态竞争缺乏统一可操作指标，相关文献多为背景讨论。",
+    "evidence_ids": [
+      "prior-0faec4964a3999a6139f",
+      "ev-e7571c2d01b2827be61f2050",
+      "ev-c47fca6d14fa1b875161cbd9"
+    ],
+    "method": "从经济差距缩小推断意识形态竞争恢复",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "not_met",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-0faec4964a3999a6139f",
+        "relation": "boundary",
+        "quote": "世界银行API2024 PPP人均GDP：中国约27139.52国际元、美国86169.66；与总量排名采用不同口径。",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "仅中国与美国两点，未覆盖东欧、俄罗斯等原东方集团整体，且为PPP人均口径。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "ev-e7571c2d01b2827be61f2050",
+        "relation": "background",
+        "quote": "This indicator provides values for gross domestic product (GDP) per person expressed in constant international dollars, converted by purchasing power parities (PPPs).",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "仅为指标定义说明，未给出具体国家数值或东西方差距变化。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-c47fca6d14fa1b875161cbd9",
+        "relation": "background",
+        "quote": "This study is rooted in the need to reconsider these ‘finalisation’ theses founded on liberalism’s supposed lack of alternatives in the aftermath of the 2007–2008 global financial crisis.",
+        "publication_date": "2022-10-07",
+        "observation_end": null,
+        "limitation": "讨论意识形态终结论的文献，未直接测量东西方经济水平是否拉平或意识形态竞争强度。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺少原东方集团（苏联/东欧/中国）与西方（美欧日）整体人均实际GDP或PPP生活水平差距是否缩小至接近的系统数据，以及意识形态竞争回升的可操作指标与观察结果。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000118342-000118369",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "原文条件性预测：东西方经济水平拉平（不必倒转）时，意识形态之争可能重新兴起。观察口径为1991年前后至截止日，比较原东方集团（苏联/东欧及中国）与西方（美欧日）人均实际GDP或PPP人均生活水平差距是否显著缩小至接近，并以制度性意识形态竞争是否回升作为结果代理。",
+    "reason": "原文以“只要拉平”为真实条件，属条件性预测；现有材料仅显示中国与美国PPP人均GDP仍有巨大差距（约27140对86170国际元），未见东西方整体经济水平已拉平的证据，条件未满足。意识形态竞争是否回升的代理证据亦不完整，无法据此判定结果。",
+    "limitation": "原东方集团已发生制度剧变，跨期主体对应存在偏离；PPP人均GDP仅为经济水平代理，且材料未覆盖东欧、俄罗斯等完整集团对比。意识形态竞争缺乏统一可操作指标，相关文献多为背景讨论。",
+    "evidence_ids": [
+      "prior-0faec4964a3999a6139f",
+      "ev-e7571c2d01b2827be61f2050",
+      "ev-c47fca6d14fa1b875161cbd9"
+    ],
+    "method": "从经济差距缩小推断意识形态竞争恢复",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "not_met",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-0faec4964a3999a6139f",
+        "relation": "boundary",
+        "quote": "世界银行API2024 PPP人均GDP：中国约27139.52国际元、美国86169.66；与总量排名采用不同口径。",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "仅中国与美国两点，未覆盖东欧、俄罗斯等原东方集团整体，且为PPP人均口径。"
+      },
+      {
+        "evidence_id": "ev-e7571c2d01b2827be61f2050",
+        "relation": "background",
+        "quote": "This indicator provides values for gross domestic product (GDP) per person expressed in constant international dollars, converted by purchasing power parities (PPPs).",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "仅为指标定义说明，未给出具体国家数值或东西方差距变化。"
+      },
+      {
+        "evidence_id": "ev-c47fca6d14fa1b875161cbd9",
+        "relation": "background",
+        "quote": "This study is rooted in the need to reconsider these ‘finalisation’ theses founded on liberalism’s supposed lack of alternatives in the aftermath of the 2007–2008 global financial crisis.",
+        "publication_date": "2022-10-07",
+        "observation_end": null,
+        "limitation": "讨论意识形态终结论的文献，未直接测量东西方经济水平是否拉平或意识形态竞争强度。"
+      }
+    ],
+    "remaining_gap": "缺少原东方集团（苏联/东欧/中国）与西方（美欧日）整体人均实际GDP或PPP生活水平差距是否缩小至接近的系统数据，以及意识形态竞争回升的可操作指标与观察结果。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-0faec4964a3999a6139f",
+      "url": "https://api.worldbank.org/v2/country/US;CN/indicator/NY.GDP.PCAP.PP.CD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-r2-l2-wb-percap",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-wb-percap",
+      "archive_sha256": "fc426583cf86a8c06cfd128d329e4e9e9b9939952510dbca6eb1a0d6ada736a5",
+      "archive_path": "data/sources/r2-l2-wb-percap.json",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-b11c0a4895ecbd2eb37f",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.CD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-cd",
+      "published_date": "2026-10-08",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-10-08",
+        "latest": "2026-10-08"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-cd",
+      "archive_sha256": "7ad5c1c4f44e15850a861521955b29727497d2cb232432f3dbc2e56ba20d4e42",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.CD.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-c46d2d3bbcefde156d1e",
+      "url": "https://history.state.gov/milestones/1989-1992/collapse-soviet-union",
+      "title": "ev-l2-soviet-collapse",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-l2-soviet-collapse",
+      "archive_sha256": "2ad477d822db290114ff9d7db517c69d10cb42510281166370f67a5cfad2e478",
+      "archive_path": "data/sources/lane2-ev-l2-soviet-collapse.html",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d9f19e55193d961ffc1e4b0b",
+      "url": "https://databank.worldbank.org/embed/MGE-Session-3---2025/id/b62021ef",
+      "resolved_url": "https://databank.worldbank.org/embed/MGE-Session-3---2025/id/b62021ef",
+      "title": "MGE Session 3 - 2025 | World Development Indicators",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:39.812816+00:00",
+      "archive_sha256": "229842d4fe450313c43e44b1976359841450a7aa17b7aeb038e2b38f1a0a2e41",
+      "archive_path": "jobs/e6644a6f237e697f2e1f7aa4/229842d4fe450313c43e44b1976359841450a7aa17b7aeb038e2b38f1a0a2e41.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e7571c2d01b2827be61f2050",
+      "url": "https://ourworldindata.org/grapher/gdp-per-capita-worldbank?tab=line&time=1991..latest",
+      "resolved_url": "https://ourworldindata.org/grapher/gdp-per-capita-worldbank?tab=line&time=1991..latest",
+      "title": "GDP per capita",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:39.812942+00:00",
+      "archive_sha256": "f8fe521a3813a9597b1eca54ab77848b7caa017e2dacff73ffe106cfe915b26e",
+      "archive_path": "jobs/e6644a6f237e697f2e1f7aa4/f8fe521a3813a9597b1eca54ab77848b7caa017e2dacff73ffe106cfe915b26e.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c47fca6d14fa1b875161cbd9",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/23311886.2024.2350159",
+      "resolved_url": "https://www.tandfonline.com/doi/full/10.1080/23311886.2024.2350159",
+      "title": "Full article: Rereading the victory discourses of liberalism—’the end of ideology’ and ‘the end of history’ (finalisation theories)—alongside the 2008 financial crisis",
+      "published_date": "2022-10-07",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2022-10-07",
+        "latest": "2022-10-07"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:39.813041+00:00",
+      "archive_sha256": "29cab17e295890821d9efb949ae9a2757597f96e2b004c141fb5e1d529f81277",
+      "archive_path": "jobs/e6644a6f237e697f2e1f7aa4/29cab17e295890821d9efb949ae9a2757597f96e2b004c141fb5e1d529f81277.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ba0eb33dee9ef5b55c3f256e",
+      "url": "https://ny.fes.de/fileadmin/user_upload/The_Return_of_the_West_online.pdf",
+      "resolved_url": "https://ny.fes.de/fileadmin/user_upload/The_Return_of_the_West_online.pdf",
+      "title": "The Return of the West",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:39.813132+00:00",
+      "archive_sha256": "3033b0192640b5677179e1e266dab4e02f520c61a4d322a94f30d39163e9f7b3",
+      "archive_path": "jobs/e6644a6f237e697f2e1f7aa4/3033b0192640b5677179e1e266dab4e02f520c61a4d322a94f30d39163e9f7b3.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-7103aee726104dfeb157678a",
+      "url": "https://datahub.io/world-development-indicators/ny.gdp.pcap.pp.cd",
+      "resolved_url": "https://datahub.io/world-development-indicators/ny.gdp.pcap.pp.cd",
+      "title": "GDP per capita, PPP (current international $)",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:49.666759+00:00",
+      "archive_sha256": "92fc60c7a951c7af2e3909cd82f2d5f5212bd7d00e415d6749629d43e7e952d6",
+      "archive_path": "jobs/e6644a6f237e697f2e1f7aa4/92fc60c7a951c7af2e3909cd82f2d5f5212bd7d00e415d6749629d43e7e952d6.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-1f956453b4f57bd9fd36c2d3",
+      "url": "https://journals.sagepub.com/doi/10.1177/1463499620977992",
+      "resolved_url": "https://journals.sagepub.com/doi/10.1177/1463499620977992",
+      "title": "The reshaping of political representation in post-growth capitalism: A paradigmatic analysis of green and right-wing populist parties - Tilman Reitz, Dirk Jörke, 2021",
+      "published_date": "2021-01-06",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2021-01-06",
+        "latest": "2021-01-06"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:49.666902+00:00",
+      "archive_sha256": "2bf2d4ba3502f7cbfe8d4d812ef46eda26d0ca2e235bf05203ebb72742d4c747",
+      "archive_path": "jobs/e6644a6f237e697f2e1f7aa4/2bf2d4ba3502f7cbfe8d4d812ef46eda26d0ca2e235bf05203ebb72742d4c747.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-07a29f0038408c3567ef704c",
+      "url": "https://www.brookings.edu/wp-content/uploads/2019/02/FP_20190226_european_left_belin_reinert.pdf",
+      "resolved_url": "https://www.brookings.edu/wp-content/uploads/2019/02/FP_20190226_european_left_belin_reinert.pdf",
+      "title": "Mutations of the left in Western Europe",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:49.666996+00:00",
+      "archive_sha256": "8417edb9f650fe7a28ef275278340bb3c8bc792ed47b52cd48ef9cfdaa736fe4",
+      "archive_path": "jobs/e6644a6f237e697f2e1f7aa4/8417edb9f650fe7a28ef275278340bb3c8bc792ed47b52cd48ef9cfdaa736fe4.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "World Bank GDP per capita PPP China United States Russia 1991 2024 comparison convergence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "post-Cold War ideological competition decline end of history 1990s 2000s socialism capitalism debate evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "World Bank WDI NY.GDP.PCAP.PP.CD China Russia Poland United States 1991 2024 PPP per capita convergence gap",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "post-2008 ideological competition socialism capitalism revival anti-capitalist movements evidence Western democracies",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-e7571c2d01b2827be61f2050",
+        "prior-0faec4964a3999a6139f"
+      ],
+      "blocks_verdict": true
+    }
+  ],
+  "remaining_gap": "缺少原东方集团（苏联/东欧/中国）与西方（美欧日）整体人均实际GDP或PPP生活水平差距是否缩小至接近的系统数据，以及意识形态竞争回升的可操作指标与观察结果。",
+  "source_statuses": [
+    {
+      "url": "https://databank.worldbank.org/embed/MGE-Session-3---2025/id/b62021ef",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://ourworldindata.org/grapher/gdp-per-capita-worldbank?tab=line&time=1991..latest",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/23311886.2024.2350159",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://ny.fes.de/fileadmin/user_upload/The_Return_of_the_West_online.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://datahub.io/world-development-indicators/ny.gdp.pcap.pp.cd",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.1177/1463499620977992",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.brookings.edu/wp-content/uploads/2019/02/FP_20190226_european_left_belin_reinert.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 7,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "264ba5b7d091ae1a7cf1fa4179eb45e0e2987310ebdbd6774c70611e3a333c72"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "bf1468fb406020bbfcdf5e070287e37c",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "c3005805ebe59f59f277c3b596261f1f",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "60155ef26e1c28ab00c36e096b775d161bd68529d5a1ff9f289b49fd4119a0d2"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "650876a71609238397c435c982ae4206",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "3053e85a20a527bf32da80eda872d1a36dd24053ea2fd2a641d639bc28b99f05"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "047f180efa22352da4dfb8b565e29e76",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "1ebec5afc1c1e348024cbdbad564aa2d",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "f62c6e6f3d08a148a2ca2adda96fee1e31b36ecfc4e35dc98de50542fc5895f5"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "720b812abe0a9ee118e185a9ec76d495",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "faf2010861b6f9d5169e4d33b017e64b557489a356f88af375ae1945fcd54abb",
+      "validation_error": "source_publication_date_mismatch"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "aefcaa8fa9da8cd0dc8c2fe7eb2133ac505a6cf725d5e6c4bad796b8de943cc6"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "5adeb9fcced102f1d22d305a689da6961f97554966706f33f4a7d7754ab823dc"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "faf2010861b6f9d5169e4d33b017e64b557489a356f88af375ae1945fcd54abb",
+      "validation_error": "source_publication_date_mismatch"
+    }
+  ],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-e7571c2d01b2827be61f2050",
+            "prior-0faec4964a3999a6139f"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-0faec4964a3999a6139f",
+        "source_bytes": 117,
+        "shown_bytes": 117,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-b11c0a4895ecbd2eb37f",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-c46d2d3bbcefde156d1e",
+        "source_bytes": 170,
+        "shown_bytes": 170,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-d9f19e55193d961ffc1e4b0b",
+        "source_bytes": 2825,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e7571c2d01b2827be61f2050",
+        "source_bytes": 12016,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c47fca6d14fa1b875161cbd9",
+        "source_bytes": 12228,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-ba0eb33dee9ef5b55c3f256e",
+        "source_bytes": 12163,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-7103aee726104dfeb157678a",
+        "source_bytes": 4985,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-1f956453b4f57bd9fd36c2d3",
+        "source_bytes": 12127,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-07a29f0038408c3567ef704c",
+        "source_bytes": 12062,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-0faec4964a3999a6139f",
+        "source_bytes": 117,
+        "shown_bytes": 117,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-b11c0a4895ecbd2eb37f",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-c46d2d3bbcefde156d1e",
+        "source_bytes": 170,
+        "shown_bytes": 170,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-d9f19e55193d961ffc1e4b0b",
+        "source_bytes": 2825,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e7571c2d01b2827be61f2050",
+        "source_bytes": 12016,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c47fca6d14fa1b875161cbd9",
+        "source_bytes": 12228,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-ba0eb33dee9ef5b55c3f256e",
+        "source_bytes": 12163,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-7103aee726104dfeb157678a",
+        "source_bytes": 4985,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-1f956453b4f57bd9fd36c2d3",
+        "source_bytes": 12127,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-07a29f0038408c3567ef704c",
+        "source_bytes": 12062,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000118342-000118369",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000118342-000118369",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "原文条件性预测：东西方经济水平拉平（不必倒转）时，意识形态之争可能重新兴起。观察口径为1991年前后至截止日，比较原东方集团（苏联/东欧及中国）与西方（美欧日）人均实际GDP或PPP人均生活水平差距是否显著缩小至接近，并以制度性意识形态竞争是否回升作为结果代理。",
+      "reason": "原文以“只要拉平”为真实条件，属条件性预测；现有材料仅显示中国与美国PPP人均GDP仍有巨大差距（约27140对86170国际元），未见东西方整体经济水平已拉平的证据，条件未满足。意识形态竞争是否回升的代理证据亦不完整，无法据此判定结果。",
+      "limitation": "原东方集团已发生制度剧变，跨期主体对应存在偏离；PPP人均GDP仅为经济水平代理，且材料未覆盖东欧、俄罗斯等完整集团对比。意识形态竞争缺乏统一可操作指标，相关文献多为背景讨论。",
+      "evidence_ids": [
+        "prior-0faec4964a3999a6139f",
+        "ev-e7571c2d01b2827be61f2050",
+        "ev-c47fca6d14fa1b875161cbd9"
+      ],
+      "method": "从经济差距缩小推断意识形态竞争恢复",
+      "method_basis": "inferred",
+      "observation_end": null,
+      "future_time_text": "",
+      "condition_state": "not_met",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-0faec4964a3999a6139f",
+          "relation": "boundary",
+          "quote": "世界银行API2024 PPP人均GDP：中国约27139.52国际元、美国86169.66；与总量排名采用不同口径。",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "仅中国与美国两点，未覆盖东欧、俄罗斯等原东方集团整体，且为PPP人均口径。"
+        },
+        {
+          "evidence_id": "ev-e7571c2d01b2827be61f2050",
+          "relation": "background",
+          "quote": "This indicator provides values for gross domestic product (GDP) per person expressed in constant international dollars, converted by purchasing power parities (PPPs).",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "仅为指标定义说明，未给出具体国家数值或东西方差距变化。"
+        },
+        {
+          "evidence_id": "ev-c47fca6d14fa1b875161cbd9",
+          "relation": "background",
+          "quote": "This study is rooted in the need to reconsider these ‘finalisation’ theses founded on liberalism’s supposed lack of alternatives in the aftermath of the 2007–2008 global financial crisis.",
+          "publication_date": "2022-10-07",
+          "observation_end": null,
+          "limitation": "讨论意识形态终结论的文献，未直接测量东西方经济水平是否拉平或意识形态竞争强度。"
+        }
+      ],
+      "remaining_gap": "缺少原东方集团（苏联/东欧/中国）与西方（美欧日）整体人均实际GDP或PPP生活水平差距是否缩小至接近的系统数据，以及意识形态竞争回升的可操作指标与观察结果。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "原文条件性预测：若东西方经济水平拉平（不必倒转），意识形态之争可能重新兴起。对象为东西方两大阵营/制度集团，条件为经济水平接近，结果为意识形态竞争重新活跃。可观察口径：以1991年前后至截止日，比较原东方集团（苏联/东欧及中国）与西方（美欧日）的人均实际GDP或PPP人均生活水平差距是否显著缩小至接近；并以制度性意识形态竞争（如社会主义/资本主义制度辩论、激进左翼或反资本主义组织影响力）是否回升作为结果代理。反证包括：经济差距未拉平而意识形态竞争仍活跃，或差距拉平但意识形态竞争未回升。注意原东方集团已发生制度剧变，跨期主体对应存在偏离。",
+  "elapsed_seconds": 31.499,
+  "completed_at": "2026-11-09T10:34:01.383536+00:00"
+}

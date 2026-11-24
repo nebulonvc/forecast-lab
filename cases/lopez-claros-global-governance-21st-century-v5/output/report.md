@@ -1,0 +1,1153 @@
+# 全球治理与21世纪全球机构的兴起：五类评估
+
+证据截止日：2026-11-15。已处理 51/51 条全书候选；尚未处理 0 条。
+
+累计已完成全量抽取复核 51 条；保留旧抽样抽取 0 条，两者不重复相加。
+
+已补充扩展观点 51 条；其中 0 条仍有待确认的代指、对象或范围，已逐条标记。扩展观点不自动改变原有评估。
+
+本轮沿用候选清单逐条核查，不保证没有漏抽。PDF记录使用PDF页码，TXT记录使用原始文本行号。扩展观点是依据所给语境的解释，原文短引文另行保留。
+
+|类别|父记录数|
+|---|---:|
+|正确|9|
+|趋势符合|0|
+|部分符合|9|
+|错误|4|
+|暂无法判断|14|
+|排除：非预测|15|
+|排除：重复|0|
+|尚未处理|0|
+
+可判定覆盖率：22/36 = 61.1%。
+绑定外部证据的预测：36/36；未绑定：0。绑定不代表证据充分或研究已完成。
+“正确”占已判定记录：9/22 = 40.9%。
+
+趋势符合 0 条单独列出，与部分符合互不重复；它表示已有持续证据支持方向，最终结果仍待验证。
+
+以上是回顾性的记录统计，不是独立预测准确率或事前预测能力检验。部分符合不折算成 0.5 分；暂无法判断不算错误。跨章相关判断尚未完全去重，同一父记录也不因多个观察而增加命中次数。没有作者明确给出的概率，不计算 Brier 分数。
+
+## 评估口径
+
+正确：在列明口径和观察窗口内，主要可检验内容符合。趋势符合：已有持续客观证据支持预测方向，最终结果尚待验证。部分符合：具体分项部分成立、部分不符，或合理口径产生不同结果。错误：所评内容与已发生结果相反。暂无法判断：无法确认趋势或结果、条件不明、对象难测或证据仍不足；缺证据不能自动换成趋势符合或部分符合。
+
+明确未来终点尚未到达时，可以评价已有趋势，并保留原期限；这类进展单列为趋势符合，不作终局正确。单次波动、未来预测数据或仅有因果解释不算趋势证据。真正的前提条件仍须确认成立，作者的因果解释不自动增加为额外触发门槛。无期限持续判断可评价已观察阶段，不能证明永久成立。出版年只是未找到发言日期时的研究起点代理，出版前已知事实不是新的预见力证据。
+
+“不太可能”没有被转换为数值概率；低概率事件发生可记录为方向反例，不能据单次结果证明概率失准。官方声明证明立场或制度安排，不自动证明实际成效；同时出现的政策与结果不自动证明因果。
+
+## 暂无法判断的原因
+
+|原因类型|记录数|
+|---|---:|
+|定义或可测量性不足|2|
+|证据不足|8|
+|明确未来期限未到|4|
+时间窗口来源：原文写出 11 条，隐含的出版年至截止日 32 条。
+
+
+## 逐条结果
+
+### 1. TXT 第 748—749 行 · 排除：非预测
+
+记录：`txt-090efd4b9b-000040693-000040841`
+
+原文：It is estimated, for instance, that by 2025 the number of people
+living in regions with absolute water scarcity will have risen to some 1.8 billion.
+
+时间窗口：原文写出（by 2025）。
+
+扩展观点（解释，非原文）：有估计称到2025年生活在绝对缺水地区的人口将升至约18亿。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 2. TXT 第 750 行 · 部分符合
+
+记录：`txt-090efd4b9b-000040842-000040995`
+
+原文：Climate change, soil erosion, and overﬁshing are expected to reduce food production and are likely to put upward pressure on food prices in coming years.
+
+时间窗口：原文写出（in coming years）。
+
+扩展观点（解释，非原文）：气候变化、土壤侵蚀和过度捕捞将在未来几年对粮食价格形成上行压力。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；复合预测仅价格压力分项得到印证；未单独识别土壤侵蚀及过度捕捞的净效应。
+判定：2022—24年多个极端天气事件伴随食品涨价，支持价格上行压力这一分项；但FAO2025年报告预计产量广泛回升、并记载谷物价格下压，不能将局地减产外推为全球粮食产量减少。
+限制：复合预测仅价格压力分项得到印证；未单独识别土壤侵蚀及过度捕捞的净效应。
+观察终点：2025-11-13；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-9efeb66da4f8](https://www.carbonbrief.org/mapped-16-times-extreme-weather-drove-higher-food-prices-since-2022)；[ev-54ec076b41ba](https://www.fao.org/newsroom/detail/fao-food-outlook-points-to-broad-based-increase-in-global-food-commodity-production/en)
+
+### 3. TXT 第 849—850 行 · 排除：非预测
+
+记录：`txt-090efd4b9b-000047442-000047514`
+
+原文：global energy demand is expected to
+grow by more than 25 percent by 2040
+
+时间窗口：原文写出（by 2040）。
+
+扩展观点（解释，非原文）：IEA预计到2040年全球能源需求增长超过25%。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 4. TXT 第 850—854 行 · 暂无法判断
+
+记录：`txt-090efd4b9b-000047478-000047970`
+
+原文：grow by more than 25 percent by 2040,19 reﬂecting the addition of some 1.7 billion
+people to the world’s population and the corresponding need for housing, transportation, heating, illumination, food production, waste disposal, and the push for
+sustained increases in standards of living. Because many of the mothers who will
+bear these close to 2 billion children are already alive today, this expected increase in
+the world’s population – barring some unexpected calamity – will materialize
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：到2040年世界人口预期增加约17亿，除非发生意外灾难将会实现。
+
+指代展开：this expected increase → 到2040年新增约17亿人口；上下文依据：grow by more than 25 percent by 2040,19 reﬂecting the addition of some 1.7 billion
+people to the world’s population
+
+口径与范围：严格以原句对象、量级、前提及时间为准；“除非意外灾难”为例外条件；人口估计与城市定义版本可变。
+判定：上下文将约17亿新增人口放在2040年；现有联合国材料给出2024/2025年约82亿人口，2040年尚未到来。未取得同口径的持续实绩及原基数来确认该增量的兑现程度，故不把新人口预测当成实绩。
+限制：“除非意外灾难”为例外条件；人口估计与城市定义版本可变。
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-2d65a3bf6c64](https://www.un.org/en/UN-projects-world-population-to-peak-within-this-century)；[ev-1c89a59a6818](https://www.un.org/en/desa/WUP-2025)
+
+### 5. TXT 第 856—857 行 · 排除：非预测
+
+记录：`txt-090efd4b9b-000048097-000048214`
+
+原文：rapid population growth in the
+poorest parts of the world in the next several decades will lead to growing imbalances
+
+扩展观点（解释，非原文）：最贫困地区未来几十年的人口快速增长将导致日益加剧的失衡。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 6. TXT 第 878—880 行 · 正确
+
+记录：`txt-090efd4b9b-000049111-000049269`
+
+原文：in the Middle East and North Africa, high fertility rates and the highest
+rates of population growth in the world will put an enormous strain on labor
+markets
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：中东北非的高生育率和全球最高人口增速将给劳动力市场带来巨大压力（失业率居高）。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；压力不等于失业率逐年恶化：ILO还指出较疫情前改善；不能把全部失业归因于人口增长。
+判定：ILO2024年资料显示中东北非2023年青年失业率24.4%，仍为全球最高、近全球均值两倍，劳动力市场压力这一无明确终点判断在观察窗内出现。
+限制：压力不等于失业率逐年恶化：ILO还指出较疫情前改善；不能把全部失业归因于人口增长。
+观察终点：2023-12-31；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-66bbf2cbf7d7](https://www.ilo.org/sites/default/files/2024-08/MENA%20GET%20Youth%20Brief%202024.pdf)
+
+### 7. TXT 第 899—901 行 · 正确
+
+记录：`txt-090efd4b9b-000050876-000050992`
+
+原文：the populations of
+countries such as Italy, Japan, Russia and others in the industrial world will continue
+to shrink
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：意大利、日本、俄罗斯等工业国人口将继续减少。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；俄罗斯二手汇编涉及统计边界和普查修订，不与另外两国直接比较降幅；只核方向。
+判定：意大利2024年人口继续下降，日本2024年总人口同比减少55万；俄罗斯资料也显示2025年初人口低于2021年普查值。三个点名国家在观察窗内均出现人口收缩。
+限制：俄罗斯二手汇编涉及统计边界和普查修订，不与另外两国直接比较降幅；只核方向。
+观察终点：2025-01-01；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-5b2ee37b2449](https://www.istat.it/wp-content/uploads/2025/03/DEMOGRAPHIC-INDICATORS_YEAR-2024.pdf)；[ev-56efd6b3976f](https://www.stat.go.jp/english/data/jinsui/2024np/)；[ev-7f60e07881a4](https://en.wikipedia.org/wiki/Demography_of_Russia)
+
+### 8. TXT 第 932—933 行 · 暂无法判断
+
+记录：`txt-090efd4b9b-000052986-000053137`
+
+原文：Migration has become a new issue of planetary scale and is anticipated
+to accelerate as climate change displaces increasing numbers in the years ahead.
+
+时间窗口：原文写出（in the years ahead）。
+
+扩展观点（解释，非原文）：移民问题预计在未来几年加速，气候变化将使越来越多的人流离失所。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；灾害移动次数不是净迁移人数，也不等于全部由人为气候变化引起。
+判定：IOM确认气候压力影响迁移，但同时强调多因交互和全球数据不足；IDMC灾害移动量2025年反而下降。尚缺可把天气灾害、冲突及重复撤离分开的气候归因迁移加速度序列。
+限制：灾害移动次数不是净迁移人数，也不等于全部由人为气候变化引起。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-1e66ce7918e0](https://worldmigrationreport.iom.int/what-we-do/world-migration-report-2026/chapter-6/climate-change-and-migration-understanding-context)；[ev-1d382e98e658](https://api.internal-displacement.org/sites/default/files/publications/documents/2026-idmc-global-report-on-internal-displacement-2026-summary-en.pdf)；[ev-9821c6f0ece3](https://www.frontiersin.org/journals/climate/articles/10.3389/fclim.2025.1570995/full)
+
+### 9. TXT 第 960—962 行 · 排除：非预测
+
+记录：`txt-090efd4b9b-000055095-000055282`
+
+原文：The quantitative historian/mathematical ecologist Peter Turchin predicted
+some years ago a risk of political instability and impending crisis in Western Europe and the
+USA peaking in 2020
+
+时间窗口：原文写出（2020）。
+
+扩展观点（解释，非原文）：图尔钦预测西欧和美国政治不稳定风险在2020年达到峰值。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 10. TXT 第 979—980 行 · 排除：非预测
+
+记录：`txt-090efd4b9b-000056180-000056284`
+
+原文：Another challenge is the growing risk of a global ﬁnancial collapse when the
+present debt bubble bursts.
+
+扩展观点（解释，非原文）：当前债务泡沫破裂时全球金融崩溃风险上升。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 11. TXT 第 1024—1025 行 · 暂无法判断
+
+记录：`txt-090efd4b9b-000058967-000059024`
+
+原文：Military conscription is on its way out in
+most countries
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：大多数国家的征兵制正在走向消亡。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；欧洲复辟不能外推全球相反；单年无征兵国家占多数也不能证明退出趋势。
+判定：2024年跨国快照显示大量国家仍征兵，欧盟2025年资料则记录征兵重新受到重视；这些都不能回答2020年以后全球“多数国家”是否正在退出。已改查跨国面板，但公开页面未给出所需的近年完整序列。
+限制：欧洲复辟不能外推全球相反；单年无征兵国家占多数也不能证明退出趋势。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-d223e3361910](https://www.europarl.europa.eu/RegData/etudes/BRIE/2025/769541/EPRS_BRI(2025)769541_EN.pdf)；[ev-d0a37f7f1326](https://gnv.news/archives/24690)；[ev-f0724ab9a317](https://www.uptoninstitute.org/data/military-recruitment)
+
+### 12. TXT 第 1154—1156 行 · 部分符合
+
+记录：`txt-090efd4b9b-000067793-000067991`
+
+原文：publics everywhere are showing growing dissatisfaction with the inability
+of national politics and politicians to ﬁnd solutions to a whole range of global
+problems. This trend is likely to intensify
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：各国公众对本国政治无力解决全球问题的不满将继续加剧。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；调查主要覆盖高收入国家；民主满意度和政府信任并不完全等同于因全球问题产生的不满。
+判定：OECD同组调查显示2021—23年政府信任小幅下降，支持部分不满上升；Pew2026年却显示多数调查国家无显著变化，日韩满意度明显提高。全球普遍继续加剧的强表述不能全部成立。
+限制：调查主要覆盖高收入国家；民主满意度和政府信任并不完全等同于因全球问题产生的不满。
+观察终点：2026-06-10；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-69b9011be368](https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en/full-report/overview-new-trends-persistent-patterns-and-necessary-changes_f3abe0c7.html)；[ev-5fe850af0a6a](https://www.pewresearch.org/short-reads/2026/06/10/americans-are-more-dissatisfied-with-how-their-democracy-is-working-than-people-in-other-high-income-countries/)
+
+### 13. TXT 第 1631 行 · 排除：非预测
+
+记录：`txt-090efd4b9b-000100141-000100219`
+
+原文：The risk of the catastrophic collapse of the present system is not negligible.
+
+扩展观点（解释，非原文）：现行体系灾难性崩溃的风险不可忽视。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 14. TXT 第 4189 行 · 暂无法判断
+
+记录：`txt-090efd4b9b-000271015-000271075`
+
+原文：the two countries will never again be at war with each other
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：法国和德国将永远不会再相互开战。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；不能把双边政策争执当作战争，也不能给“永远”任意添加终点。
+判定：德国外交部2026年描述法德安全合作密切并在2022年后加强，支持当前和平合作状态；但截至截止日的一段和平无法证明“永不再战”。
+限制：不能把双边政策争执当作战争，也不能给“永远”任意添加终点。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-127849404d46](https://www.auswaertiges-amt.de/en/aussenpolitik/europe/cooperation-in-europe/german-french-cooperation-228748)
+
+### 15. TXT 第 5984—6015 行 · 暂无法判断
+
+记录：`txt-090efd4b9b-000366260-000367923`
+
+原文：creation of a United Nations Parliamentary Assembly” and that the UN “must
+address the democratic deﬁcit within global decision-making processes” if it is to
+be successful “in the pursuit of creating a better world for all and ensuring that no
+one is left behind.”14 A similar resolution was issued in May of 2016 by the PanAfrican Parliament.15
+10
+
+Establishment of a Parliamentary Assembly at the UN, Committee for a Democratic United
+Nations, February 8, 2005: https://en.unpacampaign.org/about/declarations/unpa-appeal/en/.
+11
+Strengthening citizens representation on international level through an UN Parliamentary
+Assembly, Resolution adopted by the 53rd Congress of the Liberal International on May 14,
+2005, in Soﬁa.
+12
+www.europarl.europa.eu/sides/getDoc.do?type=TA&language=EN&reference=P6-TA-20050237. The 2018 resolution was arguably even stronger than that of 2005, requesting that the
+EU’s governments call for ”the establishment of a United Nations Parliamentary Assembly”
+and to support a “UN 2020 summit” that would consider “comprehensive reform measures
+for a renewal and strengthening of the United Nations.”
+13
+https://en.unpacampaign.org/
+14
+https://en.unpacampaign.org/11200/world-congress-of-united-nations-associations-calls-for-a-unparliamentary-assembly/.
+15
+https://en.unpacampaign.org/7629/pan-african-parliament-calls-on-african-union-to-support-thecreation-of-a-un-parliamentary-assembly/.
+
+https://doi.org/10.1017/9781108569293 Published online by Cambridge University Press
+
+112
+
+Reforming UN Central Institutions
+
+Despite these initiatives and prominent statements, it is reasonable to assume that
+there will be some opposition.
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：尽管有诸多倡议，设立联合国议会大会（WPA/UNPA）将遭遇一些反对（尤其来自部分大国、常任理事国）。
+
+指代展开：these initiatives → 设立联合国议会大会的倡议；上下文依据：creation of a United Nations Parliamentary Assembly
+
+口径与范围：严格以原句对象、量级、前提及时间为准；未成立不等于因反对而失败；2019年的IPU重复机构忧虑不能作为2020年后的命中。
+判定：2025年联合国/IPU报告记载与各国议会合作扩大，UNPA倡议材料也有支持及民调；但这些不是部分大国实际反对另设UNPA的证据。经机构材料定向补查仍缺观察窗内可归属的直接反对表态。
+限制：未成立不等于因反对而失败；2019年的IPU重复机构忧虑不能作为2020年后的命中。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-460542aa9873](https://www.ipu.org/file/21575/download)；[ev-88c301ac7db6](https://www.unpacampaign.org/proposal/milestones/)
+
+### 16. TXT 第 6087—6088 行 · 排除：非预测
+
+记录：`txt-090efd4b9b-000373555-000373664`
+
+原文：this sense that our current global order is in need of
+signiﬁcant repair might well intensify in coming years
+
+扩展观点（解释，非原文）：认为现行全球秩序亟需修补的观感可能在未来几年加剧。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 17. TXT 第 6603—6604 行 · 正确
+
+记录：`txt-090efd4b9b-000398514-000398627`
+
+原文：with increased intra-EU migratory ﬂows, there will be shifts in
+the composition of national populations over time
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：随着欧盟内部人口流动增加，各成员国人口构成将随时间变化（来自其他欧盟国家的人口占比上升）。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；不主张所有成员国占比逐年上升；跨境流量与居住存量分开使用。
+判定：Eurostat记载2023年有150万人在欧盟国家间迁移、2024年1400万欧盟公民居于另一成员国；此前资料也显示不同国籍群体人数增减不一。人口流动改变成员国人口组成这一无明确终点方向在窗内得到支持。
+限制：不主张所有成员国占比逐年上升；跨境流量与居住存量分开使用。
+观察终点：2024-01-01；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-5270d6b1c075](https://ec.europa.eu/eurostat/web/interactive-publications/migration-2025)；[ev-cc114dcce24b](https://ec.europa.eu/eurostat/cache/digpub/demography_2022/bloc-3b.html?lang=en)
+
+### 18. TXT 第 6851—6853 行 · 部分符合
+
+记录：`txt-090efd4b9b-000415506-000415658`
+
+原文：migrants and displaced persons whose numbers will
+increase dramatically if climate change and resource destruction are not brought
+rapidly under control
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：若气候变化和资源破坏未能迅速控制，移民和流离失所者人数将大幅增加。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；总量含冲突和非气候灾害；2025年总存量及灾害移动次数都有回落，不支持单调加速。
+判定：IDMC资料显示内部流离失所总人数由2019年4910万升至2025年8220万，灾害类存量2024—25年也增加，结果方向部分出现；但“气候变化和资源破坏未被迅速控制”的前提没有统一可判定阈值，不能给条件命中。
+限制：总量含冲突和非气候灾害；2025年总存量及灾害移动次数都有回落，不支持单调加速。
+观察终点：2025-12-31；条件状态：unknown。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-76887d09b6af](https://www.iom.int/news/idmc-report-record-83-million-people-living-internal-displacement-worldwide)；[ev-1d382e98e658](https://api.internal-displacement.org/sites/default/files/publications/documents/2026-idmc-global-report-on-internal-displacement-2026-summary-en.pdf)
+
+### 19. TXT 第 7095—7097 行 · 正确
+
+记录：`txt-090efd4b9b-000430778-000430975`
+
+原文：with these countries again beginning to use
+their veto more frequently, to advance individual agendas or to counter each
+other.11 There is no sign of this attitude changing in the immediate future.
+
+时间窗口：原文写出（in the immediate future）。
+
+扩展观点（解释，非原文）：中俄美重新更频繁使用否决权的态度在近期不会改变（安理会否决将继续频繁）。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；频率可观察，不据此推测各国主观态度永不改变。
+判定：安理会报告记载2024年七份草案因否决失败，为1986年以来最高；中俄美共投出八次否决。三国继续频繁动用否决权的近期方向已出现。
+限制：频率可观察，不据此推测各国主观态度永不改变。
+观察终点：2024-12-31；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-63334a3641cd](https://www.securitycouncilreport.org/monthly-forecast/2025-01/in-hindsight-the-security-council-in-2024-and-looking-ahead-to-2025.php)
+
+### 20. TXT 第 7373—7374 行 · 正确
+
+记录：`txt-090efd4b9b-000448477-000448630`
+
+原文：The resistance to change by permanent members of the Security Council with a
+veto will likely continue to be a stumbling block to the proposals made here
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：拥有否决权的安理会常任理事国对改革的抵制可能继续阻碍安理会改革（否决权取消/安理会重组不会实现）。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；不是断言所有改革永不可能；反对阵营也包括非常任国家。
+判定：2025年研究直述常任理事国抵制削弱其影响力的结构改革；2026年11月材料仍记载改革谈判僵局，俄罗斯等抵制文本谈判。常任国阻力继续阻碍改革这一无明确终点判断成立。
+限制：不是断言所有改革永不可能；反对阵营也包括非常任国家。
+观察终点：2026-11-02；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-3f32c88c2cbc](https://www.accord.org.za/conflict-trends/un-security-council-reform-africas-quest-for-permanent-representation-and-veto-power/)；[ev-51d87b4cdd66](https://www.stimson.org/2026/is-reforming-the-unsc-realistic-article-273-of-the-un-charter-offers-a-starting-point/)
+
+### 21. TXT 第 8710—8711 行 · 暂无法判断
+
+记录：`txt-090efd4b9b-000541027-000541127`
+
+原文：Nuclear mass extermination was
+never and is hardly ever likely to be an attractive political option.
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：核大规模灭绝今后几乎不可能成为有吸引力的政治选项。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；未使用不证明没有政治吸引力，有限核武器威慑也不等于大规模灭绝。
+判定：原文说的是核“大规模灭绝”作为政治选项的吸引力，不是简单预测核武器不被使用。SIPRI的未使用记录及RAND关于有限核使用情景的分析均不能直接测量前者，缺少其可操作的结果指标。
+限制：未使用不证明没有政治吸引力，有限核武器威慑也不等于大规模灭绝。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-ab08bda0eb58](https://www.sipri.org/sites/default/files/SIPRIYB25c01.pdf)；[ev-d70abe2268af](https://www.rand.org/pubs/research_reports/RRA3859-1.html)
+
+### 22. TXT 第 8761—8763 行 · 正确
+
+记录：`txt-090efd4b9b-000544526-000544700`
+
+原文：there is no certainty that, in the absence of
+further deployment of ﬁnancial resources to maintain a military presence there, the
+Taliban would not, in fact, stage a comeback
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：若不再投入资源维持在阿富汗的军事存在，塔利班可能卷土重来。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；不把撤军认作唯一原因；结果在撤军完成前已显现，但撤出过程已启动。
+判定：CRS记载塔利班2021年8月15日进入喀布尔、美国撤军8月30日完成，塔利班推进发生在撤军完成过程中。维持军事存在的投入停止后塔利班可能回归这一条件风险已经兑现。
+限制：不把撤军认作唯一原因；结果在撤军完成前已显现，但撤出过程已启动。
+观察终点：2021-08-30；条件状态：satisfied。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-bd6187c5b9f3](https://www.congress.gov/crs_external_products/R/PDF/R46879/R46879.8.pdf)
+
+### 23. TXT 第 8899—8900 行 · 正确
+
+记录：`txt-090efd4b9b-000552974-000553016`
+
+原文：a ﬁgure quickly approaching
+US$ 2 trillion
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：全球（193个成员国）军费总额正迅速接近2万亿美元。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；使用SIPRI全球总额，不另加按193国重算的精确覆盖承诺。
+判定：SIPRI统计2021年全球军费达到2.113万亿美元，首次超过2万亿。“迅速接近2万亿”的方向及规模在出版后不久兑现。
+限制：使用SIPRI全球总额，不另加按193国重算的精确覆盖承诺。
+观察终点：2021-12-31；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-46db93527d04](https://www.sipri.org/media/press-release/2022/world-military-expenditure-passes-2-trillion-first-time)
+
+### 24. TXT 第 9790—9791 行 · 排除：非预测
+
+记录：`txt-090efd4b9b-000607046-000607190`
+
+原文：is expected to have a normative and longer-term impact on the development
+of international law and the further stigmatization of nuclear weapons
+
+扩展观点（解释，非原文）：《禁止核武器条约》预计将对国际法发展和核武器进一步污名化产生规范性的长期影响。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 25. TXT 第 12656—12658 行 · 错误
+
+记录：`txt-090efd4b9b-000799064-000799227`
+
+原文：Given the sheer
+volume of persons currently displaced for a variety of reasons (which will only grow
+in the foreseeable future given the effects of climate change)
+
+时间窗口：原文写出（in the foreseeable future）。
+
+扩展观点（解释，非原文）：受气候变化影响，因各种原因流离失所的人数在可预见的未来只会增长。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；观察窗总体人数仍高，错误针对“only grow”而非否认长期压力；此口径不涵盖全部灾害移动。
+判定：UNHCR记录2024年底全球被迫流离失所人数1.232亿，而2025年底为1.178亿，出现明确年度下降。原文“只会增长”的单向强断言因此遇到反例。
+限制：观察窗总体人数仍高，错误针对“only grow”而非否认长期压力；此口径不涵盖全部灾害移动。
+观察终点：2025-12-31；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-62a3c2dbe445](https://www.unhcr.org/publications/global-trends-2024)；[ev-1255bccfced1](https://www.unhcr.org/sites/default/files/2026-06/global-trends-report-2025.pdf)
+
+### 26. TXT 第 14942—14944 行 · 正确
+
+记录：`txt-090efd4b9b-000917829-000918007`
+
+原文：However, political opposition could be strong, given
+powerful anti-tax sentiments in many countries such as the United States, where
+even a carbon tax remains a distant prospect.
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：在美国等反税情绪强烈的国家，连碳税（联邦层面）也仍是遥远的前景，短期内不会实施。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；观测至2026年2月材料；州政策及甲烷收费不冒充全国碳税。
+判定：C2ES对第119届国会的2026年资料明确指出联邦碳定价政策尚未通过，虽然部分州已有制度、国会有提案。美国联邦碳税近期仍遥远这一方向在已观察窗口内成立。
+限制：观测至2026年2月材料；州政策及甲烷收费不冒充全国碳税。
+观察终点：2026-02-28；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-595ebef226b9](https://www.c2es.org/wp-content/uploads/2026/02/carbon-pricing-proposals-in-the-119th-Congress-FINAL.pdf)
+
+### 27. TXT 第 15024—15025 行 · 排除：非预测
+
+记录：`txt-090efd4b9b-000923422-000923503`
+
+原文：budgets everywhere are going to come
+under pressure because of demographic trends
+
+扩展观点（解释，非原文）：由于人口老龄化等人口趋势、气候变化成本以及迟早到来的下一次全球金融危机，各地预算将承受压力。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 28. TXT 第 15230—15231 行 · 暂无法判断
+
+记录：`txt-090efd4b9b-000936875-000936955`
+
+原文：Sooner or later, it is
+very likely that the global population crisis will emerge
+
+时间窗口：原文写出（Sooner or later）。
+
+扩展观点（解释，非原文）：全球人口危机迟早很可能爆发，或许在气候变化等冲击使世界粮食供应不足以养活所有人时出现。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；人口规模、总供给、获取能力是不同指标，不能自行定义危机终点。
+判定：联合国/FAO仍记录严重饥饿，但英国粮食安全报告指出全球总食物量足够，FAO2026年又记录饥饿率下降。作者没有给出“全球人口危机爆发”的阈值或有限时间，现有资料不能将地区饥饿等同于该事件。
+限制：人口规模、总供给、获取能力是不同指标，不能自行定义危机终点。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-463b21f761e9](https://www.gov.uk/government/statistics/united-kingdom-food-security-report-2024/united-kingdom-food-security-report-2024-theme-1-global-food-availability)；[ev-8e90e09d6dc0](https://www.fao.org/newsroom/detail/sofi-2026--hunger-not-inevitable--fao-says-as-global-hunger-report-shows-progress/en)
+
+### 29. TXT 第 16434—16435 行 · 部分符合
+
+记录：`txt-090efd4b9b-001018809-001018925`
+
+原文：it is very probably an irreversible process.32
+Policy-makers are not likely to be any more successful at stopping it
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：由技术和科学创新、逐利动机等驱动的全球化很可能是不可逆的过程，政策制定者不太可能成功阻止它。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；贸易仅是全球化一项指标；不以某一年增长证明所有领域永久不可逆。
+判定：WTO记载2025年货物和服务贸易量仍增长，显示跨境整合韧性；IMF同年却指出贸易开放度停滞和关税逆转。全球联系仍存在这一部分成立，但政策不能阻断、整体不可逆的强推断没有完全兑现。
+限制：贸易仅是全球化一项指标；不以某一年增长证明所有领域永久不可逆。
+观察终点：2025-12-31；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-0a3717a2aece](https://www.wto.org/english/news%5Fe/news26%5Fe/anrp%5F09sep26%5F482%5Fe.htm)；[ev-7327bde9a2f9](https://www.imf.org/en/publications/fandd/issues/2025/06/picture-this-trade-reckoning)
+
+### 30. TXT 第 16848 行 · 暂无法判断
+
+记录：`txt-090efd4b9b-001047678-001047719`
+
+原文：Climate-induced migration will accelerate
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：气候变化引发的移民将加速。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；有气候影响不等于存在可识别的全球加速度；与其他相近句保留原确定性抽取结果，不人工批量降级或去重。
+判定：天气灾害移动2024年大幅上升，但归因综述明确指出长期气候变化对已观察全球迁移的贡献尚未量化。不能从灾害次数推导出气候引致迁移已经加速。
+限制：有气候影响不等于存在可识别的全球加速度；与其他相近句保留原确定性抽取结果，不人工批量降级或去重。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-f0db2c9e9425](https://news.un.org/en/story/2025/05/1163176)；[ev-9821c6f0ece3](https://www.frontiersin.org/journals/climate/articles/10.3389/fclim.2025.1570995/full)；[ev-1d382e98e658](https://api.internal-displacement.org/sites/default/files/publications/documents/2026-idmc-global-report-on-internal-displacement-2026-summary-en.pdf)
+
+### 31. TXT 第 17217—17218 行 · 错误
+
+记录：`txt-090efd4b9b-001073097-001073186`
+
+原文：we think there is a high likelihood that the next
+ﬁnancial crisis will be ﬁscal in nature
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：作者认为下一次金融危机很可能是财政性质的（即财政政策引发全球金融体系不稳定）。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；出版日使用年代理，2020年同年事件有时间敏感性；英国局部危机不冒充全球危机。
+判定：按2020年出版年窗口，随后2020年市场危机的研究将冲击根源归为疫情而非财政问题；2022年英国迷你预算虽引起国债压力，却不能倒置为“下一次”全球危机。财政起源这一主要判断不符。
+限制：出版日使用年代理，2020年同年事件有时间敏感性；英国局部危机不冒充全球危机。
+观察终点：2020-12-31；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-28df1f645f78](https://pmc.ncbi.nlm.nih.gov/articles/PMC7665755/)；[ev-be7d5da464bd](https://www.chicagofed.org/publications/chicago-fed-letter/2023/480)
+
+### 32. TXT 第 17288—17290 行 · 错误
+
+记录：`txt-090efd4b9b-001077623-001077797`
+
+原文：in the absence of additional progress in
+currently frozen negotiations on a quota increase, it is expected that more than half
+of the total IMF ﬁrepower will be gone by 2021.
+
+时间窗口：原文写出（by 2021）。
+
+扩展观点（解释，非原文）：若冻结的IMF份额增资谈判无进展，到2021年IMF总放贷能力将有一半以上消失。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；严格区分份额增资与借款扩容，不能把后者当成原条件未触发。
+判定：IMF第十五次份额审议于2020年以不增资结束，但2021年通过扩大NAB和新的双边借款将放贷能力维持约1万亿美元。未获份额增资而能力仍未减半，是该条件预测的反例。
+限制：严格区分份额增资与借款扩容，不能把后者当成原条件未触发。
+观察终点：2021-01-08；条件状态：satisfied。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-b44845436b94](https://www.imf.org/en/news/articles/2020/02/13/pr2050-imf-board-of-governors-approves-a-resolution-on-quota-reviews)；[ev-63643f4a23e2](https://www.imf.org/en/news/articles/2021/01/08/pr214-imf-concludes-steps-to-maintain-its-lending-capacity)
+
+### 33. TXT 第 17716—17717 行 · 排除：非预测
+
+记录：`txt-090efd4b9b-001107587-001107699`
+
+原文：federal government may soon pay more annually to service debt interest payments
+than on the military or Medicaid
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：（CBO）美国联邦政府用于偿付债务利息的年度支出可能很快超过军费或医疗补助支出。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 34. TXT 第 17745—17747 行 · 排除：非预测
+
+记录：`txt-090efd4b9b-001109376-001109515`
+
+原文：interest payments will hit US$390
+billion in 2019 – 50 percent higher than in 2017 – and are on track to hit US$900
+billion within a decade
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：（CBO）美国联邦利息支出将在十年内达到9000亿美元。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 35. TXT 第 17850—17851 行 · 排除：非预测
+
+记录：`txt-090efd4b9b-001116734-001116824`
+
+原文：the crises that, surely, will
+remain a feature of our economic landscape for years to come
+
+扩展观点（解释，非原文）：经济/金融危机在未来多年仍将是经济图景中的常态。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 36. TXT 第 18339—18342 行 · 错误
+
+记录：`txt-090efd4b9b-001146847-001147126`
+
+原文：Dealing with the next global ﬁnancial crisis in the context of sharply
+reduced ﬁscal space, when the traditional responses to managing downturns (such
+as reducing interest rates, unleashing ﬁscal stimulus) will largely no longer be there
+as weapons in the arsenal of policymakers
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：应对下一次全球金融危机时，由于财政空间大幅缩小，降息和财政刺激等传统应对手段将基本不再可用。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；财政空间确有国别差异及债务约束，但受约束不等于工具消失；2020年同年时序按出版年代理处理。
+判定：2020年全球冲击中，IMF记载截至9月宣布的财政措施达11.7万亿美元，G20同时实施大规模货币宽松。传统工具仍被大规模使用，不符合“基本不再可用”。
+限制：财政空间确有国别差异及债务约束，但受约束不等于工具消失；2020年同年时序按出版年代理处理。
+观察终点：2020-09-11；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-7c01e5dfb724](https://www.imf.org/-/media/files/publications/fiscal-monitor/2020/october/english/ch1.pdf)；[ev-2d4e4f6695f3](https://www.imf.org/external/np/g20/pdf/2020/071620a.pdf)
+
+### 37. TXT 第 18343—18345 行 · 部分符合
+
+记录：`txt-090efd4b9b-001147198-001147343`
+
+原文：There is no doubt in our minds that the IMF will be
+forced to play a central role in crisis management during the next global ﬁnancial
+implosion.
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：下一次全球金融崩溃时，IMF必将被迫在危机管理中发挥核心作用。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；“核心”没有量化阈值；承认支持作用，不与所有央行和政府支出简单同比。
+判定：IMF2020年为80国提供约910亿美元融资，独立评估称反应有效而敏捷，确有重要危机管理参与；但G20财政支持超过10万亿美元，不能仅以参与和贷款国数证明IMF已在全球金融危机管理中居于“核心”。
+限制：“核心”没有量化阈值；承认支持作用，不与所有央行和政府支出简单同比。
+观察终点：2020-09-15；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-2185c8efe552](https://www.imf.org/external/pubs/ft/ar/2020/eng/what-we-do/lending/)；[ev-63ae046f1ec4](https://ieo.imf.org/en/-/media/ieo/files/evaluations/completed/03-20-2023-emergency-response-to-the-covid-19-pandemic/erp-chapeau-web-v2.pdf)；[ev-2d4e4f6695f3](https://www.imf.org/external/np/g20/pdf/2020/071620a.pdf)
+
+### 38. TXT 第 18660—18662 行 · 暂无法判断
+
+记录：`txt-090efd4b9b-001167959-001168091`
+
+原文：Parts of the planet will become
+less able to support a human population, or even uninhabitable, due to excessively
+high temperatures
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：过高气温将使地球部分地区更难支持人类居住甚至无法居住。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；未来阈值模型及2000年以来累计死亡不等于2020年后地区居住性净变化；不判趋势。
+判定：热风险综述确认极端热可致命，IPCC也报告健康风险，但所选材料没有给出出版后具体区域因过高气温而持续丧失居住承载力的可比观察。后续搬迁检索多为冻土融化等不同机制，不能移作生理热不宜居的命中。
+限制：未来阈值模型及2000年以来累计死亡不等于2020年后地区居住性净变化；不判趋势。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-e05e45b8afec](https://www.nature.com/articles/s43017-024-00635-w)；[ev-e348eb239039](https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-7/?utm=)
+
+### 39. TXT 第 18815—18818 行 · 暂无法判断
+
+记录：`txt-090efd4b9b-001178660-001178905`
+
+原文：Since about 100 million people currently live
+less than 1 meter above sea level, and many others will be threatened, the magnitude
+of these forced permanent migrations will exceed anything the world has previously
+experienced on this time scale.
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：海平面上升等导致的被迫永久性迁移规模将超过世界在这一时间尺度上经历过的任何情况。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；风险暴露、拟搬迁、撤离次数和已完成永久迁移严格区分。
+判定：IPCC给出未来沿海风险暴露，联合国2025年说太平洋至少37个社区被列为拟搬迁；这不是全球已经发生的永久迁移数量。缺少可与过去同等时长比较的去重永久迁移序列，无法证明“超过以往任何规模”。
+限制：风险暴露、拟搬迁、撤离次数和已完成永久迁移严格区分。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-9a28f1843378](https://www.ipcc.ch/report/ar6/wg2/downloads/outreach/IPCC_AR6_WGII_FactSheet_SLR.pdf)；[ev-8231d4d7e1fe](https://www.undrr.org/resource/case-study/understanding-disaster-displacement-and-assessing-future-risk)；[ev-ec07359b181e](https://pacific.un.org/en/299779-rc-remarks-iom-development-partner-roundtable-%E2%80%93-climate-mobility-pacific-%E2%80%93-series-1-planned)
+
+### 40. TXT 第 18844—18845 行 · 部分符合
+
+记录：`txt-090efd4b9b-001180543-001180672`
+
+原文：their increasing frequency and severity will push
+countries beyond their capacity to recover, requiring international assistance.
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：气候相关自然灾害的频率和严重程度上升，将使国家无力自行恢复，需要国际援助。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；不是把所有自然灾害都归因气候变化，也不以融资需求直接证明国家永久失去恢复能力。
+判定：世界银行对巴基斯坦2022年洪灾评估要求至少163亿美元恢复重建，并称国际支持对气候冲击恢复至关重要；OCHA2023年仍报告援助需求。灾害恢复依靠国际支持这一后果出现，但单一国家案例不足以确认全球频率和严重程度上升导致多国无力恢复的完整链条。
+限制：不是把所有自然灾害都归因气候变化，也不以融资需求直接证明国家永久失去恢复能力。
+观察终点：2023-08-31；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-5f682087838d](https://www.worldbank.org/en/news/press-release/2022/10/28/pakistan-flood-damages-and-economic-losses-over-usd-30-billion-and-reconstruction-needs-over-usd-16-billion-new-assessme)；[ev-760b6116c835](https://www.unocha.org/publications/report/pakistan/one-year-after-pakistan-monsoon-floods-2022-31-august-2023)
+
+### 41. TXT 第 18847—18848 行 · 正确
+
+记录：`txt-090efd4b9b-001180769-001180863`
+
+原文：Staple crops may no longer grow where they had previously
+been mainstays of local populations.
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：气候变化可能使主粮不能再在原本赖以为生的地区生长。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；这是局地稻作案例，不外推全部主粮或全世界；适应品种和换种仍可能缓解。
+判定：Crop Trust2025年的实地报道明确说津巴布韦Chimukoko许多农户已不能继续种稻，原因是气候变化使雨季过短。原文“原有地区主粮可能不再能生长”的无明确终点、局地可能性结果已出现。
+限制：这是局地稻作案例，不外推全部主粮或全世界；适应品种和换种仍可能缓解。
+观察终点：2025-02-24；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-426afa33294f](https://www.croptrust.org/news-events/news/article/zimbabwes-crop-diversity-secured-in-svalbard/)
+
+### 42. TXT 第 18861—18862 行 · 部分符合
+
+记录：`txt-090efd4b9b-001181968-001182083`
+
+原文：This acidiﬁcation is already occurring and will impact all marine life that depends on calciﬁed
+shells or skeletons
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：海洋酸化将影响所有依赖钙化外壳或骨骼的海洋生物。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；实验耐受不等于永不受影响，未把耐受直接当成全称反证；实验和自然环境分开。
+判定：IPCC报告酸化等压力影响海洋生态；2022年覆盖985项研究的综述却显示多类钙化生物对近期酸化耐受、反应差异明显。部分生物受影响有支持，但“所有”钙化生物这一全称范围没有被证明。
+限制：实验耐受不等于永不受影响，未把耐受直接当成全称反证；实验和自然环境分开。
+观察终点：2022-12-31；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-63ec8ff5ea70](https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-3/)；[ev-2aa90c726633](https://pubmed.ncbi.nlm.nih.gov/35934837/)
+
+### 43. TXT 第 19291—19293 行 · 排除：非预测
+
+记录：`txt-090efd4b9b-001211042-001211167`
+
+原文：the still rapidly growing world
+population, projected by the UN to reach perhaps 11 billion people by the end of
+this century
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：（联合国预测）世界人口到本世纪末可能达到约110亿。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 44. TXT 第 19493—19497 行 · 部分符合
+
+记录：`txt-090efd4b9b-001223795-001224117`
+
+原文：A new category of environmentally displaced persons includes those who
+migrate because rising sea levels, drought, storms, ﬂooding and other disasters, often
+associated with climate change, have permanently rendered their former homes
+uninhabitable. Their numbers are expected to increase substantially in the
+years ahead.
+
+时间窗口：原文写出（years ahead）。
+
+扩展观点（解释，非原文）：因海平面上升、干旱、风暴、洪水等环境原因流离失所的人数将在未来几年大幅增加。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；人数存量与重复移动次数不混用；灾害类别含非气候事件，无法等量替代原文全部环境类别。
+判定：灾害类内部流离失所存量从2023年770万到2024年980万、2025年约1360万，支持环境流离失所人数增加；但统计覆盖灾害而非全部环境迁移，且2025年移动次数下降。
+限制：人数存量与重复移动次数不混用；灾害类别含非气候事件，无法等量替代原文全部环境类别。
+观察终点：2025-12-31；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-7dbd7b41390d](https://www.migrationdataportal.org/climate-mobility-spotlight)；[ev-c885d6c486df](https://api.internal-displacement.org/sites/default/files/publications/documents/250506_IDMC_Global_Report_Internal_Displacement_2025_Summary_ENG.pdf)；[ev-1d382e98e658](https://api.internal-displacement.org/sites/default/files/publications/documents/2026-idmc-global-report-on-internal-displacement-2026-summary-en.pdf)
+
+### 45. TXT 第 19578—19580 行 · 暂无法判断
+
+记录：`txt-090efd4b9b-001229902-001230004`
+
+原文：accelerating
+climate change, are going to displace hundreds of millions of people in the decades
+ahead
+
+时间窗口：原文写出（decades）。
+
+扩展观点（解释，非原文）：加速的气候变化将在未来几十年使数亿人离开家园。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；原文有数亿规模；情景迁移、重复撤离次数和去重迁移人数不能混用，不额外添加永久性要求。
+判定：世界银行的2.16亿为2050年情景上限，RAND提醒估计可在4400万到2.16亿间、旧模型永久离开的假设有问题。未有数亿人离家的实测统计，几十年后的预测不能由另一预测替代验收。
+限制：原文有数亿规模；情景迁移、重复撤离次数和去重迁移人数不能混用，不额外添加永久性要求。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-9615215a2e5f](https://www.worldbank.org/en/news/press-release/2021/09/13/climate-change-could-force-216-million-people-to-migrate-within-their-own-countries-by-2050)；[ev-509837d8d484](https://www.rand.org/pubs/commentary/2024/11/understanding-climate-migration.html)
+
+### 46. TXT 第 19589 行 · 部分符合
+
+记录：`txt-090efd4b9b-001230876-001230930`
+
+原文：We must anticipate greatly increased ﬂows of migrants.
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：移民流动将大幅增加。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；明确不用国际移民存量代替迁移流量；不把局部下降外推为全球总体相反。
+判定：OECD永久迁移2024年比2019年高15%，2025年仍高12.5%，有增加分项；但2024、2025连续下降，且OECD不等于全球所有流量。全球迁移流大幅增加只能部分支持。
+限制：明确不用国际移民存量代替迁移流量；不把局部下降外推为全球总体相反。
+观察终点：2025-12-31；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-6462b6037111](https://www.oecd.org/content/dam/oecd/en/publications/support-materials/2025/11/international-migration-outlook-2025_355ae9fd/Migration%20Outlook%20-%20infographic.pdf)；[ev-f1ff367437bf](https://www.oecd.org/en/about/news/press-releases/2026/11/migration-to-oecd-countries-declines-for-second-consecutive-year-but-remains-high-by-historical-standards.html?status=none)
+
+### 47. TXT 第 20895—20896 行 · 暂无法判断
+
+记录：`txt-090efd4b9b-001318951-001319070`
+
+原文：The time may well come in the future when governments will see the need for
+an ofﬁcial international auxiliary language
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：未来各国政府可能会认识到需要一种官方国际辅助语言。
+
+
+口径与范围：严格以原句对象、量级、前提及时间为准；民间世界语倡议或语言存在不等于政府正式认识及采纳；“可能”不能以现时未实现判错。
+判定：联合国目前列出六种官方语言，2024年大会决议继续强调其平等和多语制。两者都不证明各国政府未来不会认识到单一辅助语的需要，也未提供其已正式认可的事实；原文没有期限。
+限制：民间世界语倡议或语言存在不等于政府正式认识及采纳；“可能”不能以现时未实现判错。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-adca96d4fc4c](https://www.un.org/en/our-work/official-languages)；[ev-3832a7553a51](https://treaties.un.org/doc/source/a_res_78_330-English.pdf)
+
+### 48. TXT 第 22926 行 · 排除：非预测
+
+记录：`txt-090efd4b9b-001451586-001451628`
+
+原文：Drift is a recipe for inevitable disaster.
+
+扩展观点（解释，非原文）：维持现状最终必然导致灾难。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 49. TXT 第 23015—23033 行 · 暂无法判断
+
+记录：`txt-090efd4b9b-001457559-001458880`
+
+原文：Einstein was right when he wrote that “the destiny of
+civilized humanity depends more than ever on the moral forces it is capable of
+generating.”20
+
+some immediate steps ahead
+A ﬁrst step is obviously to reopen the debate on the need for revision of the UN
+Charter and the options to make the UN ﬁt for purpose in this century. This
+debate should extend beyond academic and specialist circles, and should involve
+governments on the one hand, and a wide range of professionals and the general
+public on the other. For the latter, clear messages will be needed comparing what
+the public naturally expects from government at the national level and what is
+lacking internationally, which leaves an anarchy that threatens their well-being in
+fundamental ways. As large an alliance as possible of like-minded people and
+organizations should be gathered around this public discourse, leaving the specifics to be considered and debated openly. It is hoped that many ideas will be
+championed by one organization or another. There will clearly be opposition to
+such discussion, with attempts to discredit and distort proposals, which should be
+anticipated and countered to the extent possible. A particularly strong reaction
+may be expected from at least some of the permanent members of the Security
+Council, given present trends.
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：至少一些安理会常任理事国预计会强烈反对讨论联合国宪章改革。
+
+指代展开：reaction → 重启联合国宪章修订讨论的反应；上下文依据：A ﬁrst step is obviously to reopen the debate on the need for revision of the UN
+Charter
+
+口径与范围：严格以原句对象、量级、前提及时间为准；不把对某项改革内容的立场、一般联合国政策或宪章批准门槛当成对讨论本身的反应。
+判定：2024年俄罗斯反对《未来契约》、安理会改革争执可见，但它们并不等同于针对重启宪章修订讨论的特别强烈反应。2025—26年Article109资料仍以倡议及程序设计为主，缺少与原对象直接对应的常任国反应证据。
+限制：不把对某项改革内容的立场、一般联合国政策或宪章批准门槛当成对讨论本身的反应。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-4ef9068d6b5f](https://www.dw.com/en/un-reform-plan-adopted-despite-russian-opposition/a-70295441)；[ev-c51bdfcf76ba](https://article109.org/2025/10/02/let-it-roll-article-109-at-unga80/)；[ev-f66fd7eb786e](https://www.stimson.org/2026/negotiation-process-design-is-key-for-article-109-un-charter-review/)
+
+### 50. TXT 第 23522—23526 行 · 暂无法判断
+
+记录：`txt-090efd4b9b-001490956-001491244`
+
+原文：Civil society organizations are
+active in public discourses and have built mature international coalitions in support
+of critical issues. With new technologies of information and communications, this
+collaboration has only begun to fulﬁl its potential and can only increase in the
+future.
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：信息通信技术推动下，国际公民社会合作未来只会增加。
+
+指代展开：this
+collaboration → 国际公民社会组织的跨国协作；上下文依据：Civil society organizations are
+active in public discourses and have built mature international coalitions in support
+of critical issues.
+
+口径与范围：严格以原句对象、量级、前提及时间为准；公民空间收缩不直接等于合作量下降；NGO登记数量也不等于实际跨境协作。
+判定：2024年联合国会议有逾2150名代表，显示合作活动存在；OHCHR同年却报告跨境团结网络面临审查、限制数字平台等压力。没有统一可比的国际公民社会合作量序列及ICT贡献指标，不能据单次盛会判持续只增。
+限制：公民空间收缩不直接等于合作量下降；NGO登记数量也不等于实际跨境协作。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：人工复刻METHOD.md：预定scope；首轮support/counter；必要时定向第二轮及不超过5查询的换策略自适应；仅选检索返回URL；阅读本地公开来源档案并逐条核对原句、反证、时间/条件和评分逻辑。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-253b8e7bb1b4](https://www.un.org/sites/un2.un.org/files/final_2024uncsc_report_part_i.pdf)；[ev-e775c0c5222b](https://www.ohchr.org/en/documents/thematic-reports/ahrc5657-participation-civil-society-organizations-seeking-express)
+
+### 51. TXT 第 23994—23996 行 · 排除：非预测
+
+记录：`txt-090efd4b9b-001525098-001525303`
+
+原文：Systems science suggests that humanity will make it
+through this age of transition to achieve a new equilibrium at a global level of social
+organization, including in the realm of international governance.
+
+时间窗口：隐含，从出版年 2020 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：人类将渡过转型期，在包括国际治理的全球社会组织层面达到新的均衡。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+## 证据登记
+
+哈希校验只证明本地保存内容未改变。检索摘录与完整原始文件会按证据记录注明；两者均不能代替对来源与命题对应关系的判断。
+
+- [ev-9efeb66da4f8](https://www.carbonbrief.org/mapped-16-times-extreme-weather-drove-higher-food-prices-since-2022)；资料日期：未确定；覆盖：Mapped: 16 times extreme weather drove higher food prices since 2022 - Carbon Brief。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-54ec076b41ba](https://www.fao.org/newsroom/detail/fao-food-outlook-points-to-broad-based-increase-in-global-food-commodity-production/en)；资料日期：2025-11-13；覆盖：FAO Food Outlook points to broad-based increase in global food commodity production。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-2d65a3bf6c64](https://www.un.org/en/UN-projects-world-population-to-peak-within-this-century)；资料日期：2024-07-11；覆盖：UN projects world population to peak within this century | United Nations。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-1c89a59a6818](https://www.un.org/en/desa/WUP-2025)；资料日期：2025-11-18；覆盖：Cities are home to 45 per cent of the global population, with megacities continuing to grow, UN report finds  | United Nations。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-66bbf2cbf7d7](https://www.ilo.org/sites/default/files/2024-08/MENA%20GET%20Youth%20Brief%202024.pdf)；资料日期：未确定；覆盖：Global Employment Trends for Youth。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-5b2ee37b2449](https://www.istat.it/wp-content/uploads/2025/03/DEMOGRAPHIC-INDICATORS_YEAR-2024.pdf)；资料日期：未确定；覆盖：DEMOGRAPHIC INDICATORS_YEAR 2024。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-56efd6b3976f](https://www.stat.go.jp/english/data/jinsui/2024np/)；资料日期：未确定；覆盖：Statistics Bureau Home Page/Population Estimates/Current Population Estimates as of October 1, 2024。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-7f60e07881a4](https://en.wikipedia.org/wiki/Demography_of_Russia)；资料日期：未确定；覆盖：Demographics of Russia。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-1e66ce7918e0](https://worldmigrationreport.iom.int/what-we-do/world-migration-report-2026/chapter-6/climate-change-and-migration-understanding-context)；资料日期：未确定；覆盖：Climate change and migration: understanding the context | World Migration Report。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-1d382e98e658](https://api.internal-displacement.org/sites/default/files/publications/documents/2026-idmc-global-report-on-internal-displacement-2026-summary-en.pdf)；资料日期：未确定；覆盖：Global Report on Internal Displacement。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-9821c6f0ece3](https://www.frontiersin.org/journals/climate/articles/10.3389/fclim.2025.1570995/full)；资料日期：2025-05-19；覆盖：Frontiers | The magnitude of climate change-induced migration: an overview of projections and a case for attribution。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-d223e3361910](https://www.europarl.europa.eu/RegData/etudes/BRIE/2025/769541/EPRS_BRI(2025)769541_EN.pdf)；资料日期：未确定；覆盖：Conscription as an element in European Union preparedness。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-d0a37f7f1326](https://gnv.news/archives/24690)；资料日期：2024-09-12；覆盖：Conscription around the world | Global News View (GNV)。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-f0724ab9a317](https://www.uptoninstitute.org/data/military-recruitment)；资料日期：未确定；覆盖：Upton Institute - Military Recruitment。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-69b9011be368](https://www.oecd.org/en/publications/oecd-survey-on-drivers-of-trust-in-public-institutions-2024-results_9a20554b-en/full-report/overview-new-trends-persistent-patterns-and-necessary-changes_f3abe0c7.html)；资料日期：2024-07-10；覆盖：Overview: New trends, persistent patterns and necessary changes: OECD Survey on Drivers of Trust in Public Institutions – 2024 Results | OECD。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-5fe850af0a6a](https://www.pewresearch.org/short-reads/2026/06/10/americans-are-more-dissatisfied-with-how-their-democracy-is-working-than-people-in-other-high-income-countries/)；资料日期：2026-06-10；覆盖：Americans more dissatisfied with their democracy than people in other countries | Pew Research Center。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-127849404d46](https://www.auswaertiges-amt.de/en/aussenpolitik/europe/cooperation-in-europe/german-french-cooperation-228748)；资料日期：未确定；覆盖：German-French cooperation - Federal Foreign Office。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-460542aa9873](https://www.ipu.org/file/21575/download)；资料日期：未确定；覆盖：General Assembly。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-88c301ac7db6](https://www.unpacampaign.org/proposal/milestones/)；资料日期：未确定；覆盖：Milestones – Campaign for a UN Parliamentary Assembly。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-5270d6b1c075](https://ec.europa.eu/eurostat/web/interactive-publications/migration-2025)；资料日期：未确定；覆盖：Migration and asylum in Europe – 2025 edition - Interactive publications - Eurostat。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-cc114dcce24b](https://ec.europa.eu/eurostat/cache/digpub/demography_2022/bloc-3b.html?lang=en)；资料日期：未确定；覆盖：Mobility of EU citizens increasing。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-76887d09b6af](https://www.iom.int/news/idmc-report-record-83-million-people-living-internal-displacement-worldwide)；资料日期：2025-05-13；覆盖：IDMC Report: Record 83 Million People Living in Internal Displacement Worldwide。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-63334a3641cd](https://www.securitycouncilreport.org/monthly-forecast/2025-01/in-hindsight-the-security-council-in-2024-and-looking-ahead-to-2025.php)；资料日期：2024-12-30；覆盖：In Hindsight: The Security Council in 2024 and Looking Ahead to 2025, January 2025 Monthly Forecast : Security Council Report。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-3f32c88c2cbc](https://www.accord.org.za/conflict-trends/un-security-council-reform-africas-quest-for-permanent-representation-and-veto-power/)；资料日期：2025-10-26；覆盖：UN Security Council Reform: Africa’s Quest for Permanent Representation and Veto Power – ACCORD。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-51d87b4cdd66](https://www.stimson.org/2026/is-reforming-the-unsc-realistic-article-273-of-the-un-charter-offers-a-starting-point/)；资料日期：2026-11-02；覆盖：Is Reforming the UNSC Realistic? Article 27(3) of the UN Charter Offers a Starting Point. • Stimson Center。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-ab08bda0eb58](https://www.sipri.org/sites/default/files/SIPRIYB25c01.pdf)；资料日期：未确定；覆盖：International stability, human security and the nuclear challenge。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-d70abe2268af](https://www.rand.org/pubs/research_reports/RRA3859-1.html)；资料日期：2025-08-17；覆盖：Understanding Russian strategic culture and the low-yield nuclear threat | RAND。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-bd6187c5b9f3](https://www.congress.gov/crs_external_products/R/PDF/R46879/R46879.8.pdf)；资料日期：未确定；覆盖：U.S. Military Withdrawal and Taliban。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-46db93527d04](https://www.sipri.org/media/press-release/2022/world-military-expenditure-passes-2-trillion-first-time)；资料日期：2022-04-25；覆盖：World military expenditure passes $2 trillion for first time | SIPRI。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-62a3c2dbe445](https://www.unhcr.org/publications/global-trends-2024)；资料日期：未确定；覆盖：Global Trends 2024 | UNHCR。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-1255bccfced1](https://www.unhcr.org/sites/default/files/2026-06/global-trends-report-2025.pdf)；资料日期：未确定；覆盖：GLOBAL。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-595ebef226b9](https://www.c2es.org/wp-content/uploads/2026/02/carbon-pricing-proposals-in-the-119th-Congress-FINAL.pdf)；资料日期：未确定；覆盖：Carbon Pricing Proposals in the 119th Congress。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-463b21f761e9](https://www.gov.uk/government/statistics/united-kingdom-food-security-report-2024/united-kingdom-food-security-report-2024-theme-1-global-food-availability)；资料日期：2024-12-11；覆盖：United Kingdom Food Security Report 2024: Theme 1: Global Food Availability - GOV.UK。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-8e90e09d6dc0](https://www.fao.org/newsroom/detail/sofi-2026--hunger-not-inevitable--fao-says-as-global-hunger-report-shows-progress/en)；资料日期：2026-07-21；覆盖：SOFI 2026: Hunger not inevitable, FAO says as global hunger report shows progress。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-0a3717a2aece](https://www.wto.org/english/news%5Fe/news26%5Fe/anrp%5F09sep26%5F482%5Fe.htm)；资料日期：未确定；覆盖：WTO issues 2026 Annual Report。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-7327bde9a2f9](https://www.imf.org/en/publications/fandd/issues/2025/06/picture-this-trade-reckoning)；资料日期：2026-09-26；覆盖：Trade Reckoning。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-f0db2c9e9425](https://news.un.org/en/story/2025/05/1163176)；资料日期：2025-05-13；覆盖：Number of internally displaced breaks new record with no let-up in conflicts, disasters | UN News。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-28df1f645f78](https://pmc.ncbi.nlm.nih.gov/articles/PMC7665755/)；资料日期：2020-09-23；覆盖：A Tale of Two Crises: The 2008 Mortgage Meltdown and the 2020 COVID-19 Crisis。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-be7d5da464bd](https://www.chicagofed.org/publications/chicago-fed-letter/2023/480)；资料日期：未确定；覆盖：UK Pension Market Stress in 2022—Why It Happened and Implications for the U.S. - Federal Reserve Bank of Chicago。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-b44845436b94](https://www.imf.org/en/news/articles/2020/02/13/pr2050-imf-board-of-governors-approves-a-resolution-on-quota-reviews)；资料日期：2020-02-13；覆盖：IMF Board of Governors Approves a Resolution on Quota Reviews。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-63643f4a23e2](https://www.imf.org/en/news/articles/2021/01/08/pr214-imf-concludes-steps-to-maintain-its-lending-capacity)；资料日期：2021-01-08；覆盖：IMF Concludes Steps to Maintain its Lending Capacity。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-7c01e5dfb724](https://www.imf.org/-/media/files/publications/fiscal-monitor/2020/october/english/ch1.pdf)；资料日期：未确定；覆盖：Chapter 1. Fiscal Policies to Address the COVID-19 Pandemic. IMF Fiscal Monitor, October 2020。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-2d4e4f6695f3](https://www.imf.org/external/np/g20/pdf/2020/071620a.pdf)；资料日期：未确定；覆盖：G-20 Background Note: Implementation of the G-20 Action Plan, July 2020; Prepared by the Staff of the International Monetary Fund。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-2185c8efe552](https://www.imf.org/external/pubs/ft/ar/2020/eng/what-we-do/lending/)；资料日期：未确定；覆盖：IMF Annual Report 2020 | What We Do | Lending。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-63ae046f1ec4](https://ieo.imf.org/en/-/media/ieo/files/evaluations/completed/03-20-2023-emergency-response-to-the-covid-19-pandemic/erp-chapeau-web-v2.pdf)；资料日期：未确定；覆盖：The IMF’s emergency response to the COVID-19 pandemic : evaluation report 2023 / Independent Evaluation Office of the International Monetary Fund。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-e05e45b8afec](https://www.nature.com/articles/s43017-024-00635-w)；资料日期：2025-02-04；覆盖：Mortality impacts of the most extreme heat events | Nature Reviews Earth & Environment。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-e348eb239039](https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-7/?utm=)；资料日期：未确定；覆盖：Chapter 7: Health, Wellbeing and the Changing Structure of Communities | Climate Change 2022: Impacts, Adaptation and Vulnerability。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-9a28f1843378](https://www.ipcc.ch/report/ar6/wg2/downloads/outreach/IPCC_AR6_WGII_FactSheet_SLR.pdf)；资料日期：未确定；覆盖：Fact sheet - Responding to Sea Level Rise。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-8231d4d7e1fe](https://www.undrr.org/resource/case-study/understanding-disaster-displacement-and-assessing-future-risk)；资料日期：2025-07-18；覆盖：Understanding disaster displacement and assessing future risk | UNDRR。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-ec07359b181e](https://pacific.un.org/en/299779-rc-remarks-iom-development-partner-roundtable-%E2%80%93-climate-mobility-pacific-%E2%80%93-series-1-planned)；资料日期：2025-08-04；覆盖：RC Remarks at the IOM Development Partner Roundtable – Climate Mobility in the Pacific – Series 1 Planned Relocation and Evacuation | United Nations in Fiji, So。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-5f682087838d](https://www.worldbank.org/en/news/press-release/2022/10/28/pakistan-flood-damages-and-economic-losses-over-usd-30-billion-and-reconstruction-needs-over-usd-16-billion-new-assessme)；资料日期：2022-10-28；覆盖：Pakistan: Flood Damages and Economic Losses Over USD 30 billion and Reconstruction Needs Over USD 16 billion - New Assessment。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-760b6116c835](https://www.unocha.org/publications/report/pakistan/one-year-after-pakistan-monsoon-floods-2022-31-august-2023)；资料日期：2023-08-31；覆盖：One Year After Pakistan Monsoon Floods 2022 (As of 31 August 2023) | OCHA。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-426afa33294f](https://www.croptrust.org/news-events/news/article/zimbabwes-crop-diversity-secured-in-svalbard/)；资料日期：2025-02-19；覆盖：Zimbabwe’s Crop Diversity Secured in Svalbard - Crop Trust。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-63ec8ff5ea70](https://www.ipcc.ch/report/ar6/wg2/chapter/chapter-3/)；资料日期：未确定；覆盖：Chapter 3: Oceans and Coastal Ecosystems and their Services | Climate Change 2022: Impacts, Adaptation and Vulnerability。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-2aa90c726633](https://pubmed.ncbi.nlm.nih.gov/35934837/)；资料日期：2022-08-07；覆盖：Is Ocean Acidification Really a Threat to Marine Calcifiers? A Systematic Review and Meta‐Analysis of 980+ Studies Spanning Two Decades。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-7dbd7b41390d](https://www.migrationdataportal.org/climate-mobility-spotlight)；资料日期：未确定；覆盖：Climate change and human mobility | Migration data portal。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-c885d6c486df](https://api.internal-displacement.org/sites/default/files/publications/documents/250506_IDMC_Global_Report_Internal_Displacement_2025_Summary_ENG.pdf)；资料日期：未确定；覆盖：Global Report on Internal Displacement。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-9615215a2e5f](https://www.worldbank.org/en/news/press-release/2021/09/13/climate-change-could-force-216-million-people-to-migrate-within-their-own-countries-by-2050)；资料日期：2021-09-13；覆盖：Groundswell Report。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-509837d8d484](https://www.rand.org/pubs/commentary/2024/11/understanding-climate-migration.html)；资料日期：2024-11-19；覆盖：Understanding Climate Migration | RAND。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-6462b6037111](https://www.oecd.org/content/dam/oecd/en/publications/support-materials/2025/11/international-migration-outlook-2025_355ae9fd/Migration%20Outlook%20-%20infographic.pdf)；资料日期：未确定；覆盖：Migration Outlook - infographic。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-f1ff367437bf](https://www.oecd.org/en/about/news/press-releases/2026/11/migration-to-oecd-countries-declines-for-second-consecutive-year-but-remains-high-by-historical-standards.html?status=none)；资料日期：2026-11-12；覆盖：Migration to OECD countries declines for second consecutive year, but remains high by historical standards。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-adca96d4fc4c](https://www.un.org/en/our-work/official-languages)；资料日期：未确定；覆盖：Official Languages | United Nations。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-3832a7553a51](https://treaties.un.org/doc/source/a_res_78_330-English.pdf)；资料日期：未确定；覆盖：General Assembly。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-4ef9068d6b5f](https://www.dw.com/en/un-reform-plan-adopted-despite-russian-opposition/a-70295441)；资料日期：2024-09-22；覆盖：UN reform plan adopted despite Russian opposition。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-c51bdfcf76ba](https://article109.org/2025/10/02/let-it-roll-article-109-at-unga80/)；资料日期：2025-10-02；覆盖："Let it roll": Article 109 at UNGA80 - Article 109。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-f66fd7eb786e](https://www.stimson.org/2026/negotiation-process-design-is-key-for-article-109-un-charter-review/)；资料日期：2026-06-11；覆盖：Negotiation Process-Design Is Key for Article 109 UN Charter Review • Stimson Center。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-253b8e7bb1b4](https://www.un.org/sites/un2.un.org/files/final_2024uncsc_report_part_i.pdf)；资料日期：未确定；覆盖：9-10 MAY, NAIROBI, K ENYA。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null
+- [ev-e775c0c5222b](https://www.ohchr.org/en/documents/thematic-reports/ahrc5657-participation-civil-society-organizations-seeking-express)；资料日期：未确定；覆盖：A/HRC/56/57: Participation of civil society organizations seeking to express international solidarity through transnational, international and regional networks。限制：网页存档（exa-contents），只用于所引数字/事实；日期为页面发布或检索所示日期，未注明者为 null

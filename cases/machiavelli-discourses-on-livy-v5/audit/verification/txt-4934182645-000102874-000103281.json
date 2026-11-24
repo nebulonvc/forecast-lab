@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000102874-000103281",
+  "plan": {
+    "object": "没有对上帝的畏惧的王国；以及完全依靠君主本人品质的王国。不是一切王国。",
+    "condition": "without the fear of God；rests wholly on the qualities of its prince。两条结果各有自己的对象，不能用立宪继承代替其中任何一条。",
+    "quantifier": "must either ... or；lasts for a brief time only。brief 没有写成多少年。",
+    "result": "要么瓦解，要么只靠一位君主的畏惧维持；完全靠君主品质的王国只能维持很短的时间，因为品质随他的生命结束，很少在继任者身上再现。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "一个完全依靠君主品质的王国在他死后仍长期延续；或一个没有对上帝的畏惧的王国既没有瓦解，也不是只靠对君主的畏惧维持。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "Napoleonic Empire ended 1814 1815 did not survive Napoleon personal rule successor",
+      "counter_query": "United Kingdom monarchy continued after death of sovereign 20th century without collapse"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://en.wikipedia.org/wiki/Bourbon_Restoration_in_France"],
+    "dropped": "英国王位按1701年法案立即继承，页面没有写这个王国没有对上帝的畏惧，也没有写它完全依靠君主个人品质。不能把英国当成反证。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "a brief time only",
+    "observation_end": null,
+    "evidence_ids": ["ev-wiki-bourbon-personal"],
+    "scope": "只核“完全依靠君主品质的王国只能维持很短时间”。没有对上帝的畏惧则瓦解或只靠畏惧维持，这一支在已存档正文里没有对应王国。",
+    "reason": "波旁复辟页写拿破仑把权力收成威权的个人统治，第一帝国在1814年结束。personal rule 不是原文的 wholly on the qualities of its prince，页面也没有把第一帝国定义为 kingdom。没有任何存档页写出一个没有对上帝的畏惧的王国。英国的继承是法律规定，不能补上这两个条件。缺了必要条件，不能因为统治随这个人结束就记部分符合。",
+    "limitation": "brief 仍没有年数。1814年只有年。页面没有出版日。",
+    "method": "用个人统治是否随该统治者结束来核第二句；第一句缺少同时写出“没有对上帝的畏惧”和“瓦解或只靠畏惧”的王国，不把英国补进去。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "pass",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "先前的部分符合撤回。object_match 和 condition_logic 只有在不把 personal rule 或英国君主立宪当成原文条件时才通过；因此不计分。"
+  }
+}

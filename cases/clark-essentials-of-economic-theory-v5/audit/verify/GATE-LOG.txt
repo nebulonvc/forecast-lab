@@ -1,0 +1,87 @@
+当前状态（2026-11-20，本段只描述现在）
+data/claims.jsonl 有 418 条。本轮 apply 之后，每条都有评估。
+两条早先的扩引已在主张表：txt-79cebd6bce-000690515-000690785、txt-79cebd6bce-000777569-000777835。REIMPORT-QUEUE 的状态是 closed。
+本轮又把 6 条截断引文扩成不与其他主张重叠的连续原句，旧新 ID 在 ID-MAP.jsonl，阶段记录在 ALL-DRAFTS.jsonl。
+check、report、unittest 的结果写在本文件末尾的本轮记录，不写在下面的历史段。
+劳动份额 txt-79cebd6bce-000536173-000536383 仍为错误。
+未使用 DeepSeek。未 push，未开 PR，未合并。
+
+历史记录
+下面是更早轮次的原文字节，不改。其中的现在时，包括 claims.jsonl not edited、applied assessments 0、REIMPORT-QUEUE still has 2 items、apply not run，都是当时的话，不是现在。
+
+claims_sha256 a0c180e10566566a54998c57d4d0a066b23b6bc3438a57ea697d33500e53ae02 unchanged
+manifest ids 294 = ledger ids
+claims 418; resolvable 402; nonresolvable 16
+applied assessments 0
+HISTORICAL (superseded; do not read the older lines below as the current state): earlier notes said apply, tests, and the zip had not been run.
+CURRENT: canonical data/claims.jsonl contains 418 assessments after pipeline apply. check OK. report wrote output/report.md, output/summary.json, output/claims.csv. unittest 209 OK, log output/unittest.log. Two quote expansions are in claims.jsonl; REIMPORT-QUEUE status is closed. Evidence excerpts are continuous text from the archives.
+16 nonresolvable drafts are in batch-nonresolvable.jsonl and are not scored.
+Scores withdrawn this round: txt-79cebd6bce-000790993-000791113 and txt-79cebd6bce-000934635-000934700. Prior verdicts remain in score_history.
+Gold verdict kept only after the fetched page body replaced the summary; the 64 percent sentence is in that file. Page date June 2, 2026 is the article date.
+REIMPORT-QUEUE still has 2 items. apply, tests, and the zip are not run. claims.jsonl not edited.
+The nine transferred books have no case directories and were not started.
+batch-000967634.jsonl and batch-000971433.jsonl are after the earlier 375-draft mark.
+16 nonresolvable claims and 2 reimport items remain open. apply not run. claims.jsonl not edited.
+batch-000938602.jsonl covers 12 claims from txt-79cebd6bce-000938602-000938632
+16 nonresolvable claims are not drafted. REIMPORT-QUEUE still has 2 items. apply, tests, and the zip are not run. claims.jsonl not edited.
+batch-000934635.jsonl covers 8 claims from txt-79cebd6bce-000934635-000934700
+REIMPORT-QUEUE still has 2 items. Canonical expansion, id mapping, and stage recheck wait until all 418 drafts exist. claims.jsonl not edited.
+batch-000927288.jsonl covers 10 claims from txt-79cebd6bce-000927288-000927484
+Manufacturing output per hour from 1919 is used as productivity, not as output level or as secure-monopoly progress. REIMPORT-QUEUE still has 2 items. claims.jsonl not edited.
+batch-000910996.jsonl covers 10 claims from txt-79cebd6bce-000910996-000911065
+Post-1907 tariff rates are used when the object is the rate. A series that starts before publication is not discarded when a later segment can be separated. REIMPORT-QUEUE still has 2 items. claims.jsonl not edited.
+batch-000896668.jsonl covers 10 claims from txt-79cebd6bce-000896668-000896737
+REIMPORT-QUEUE still has 2 items. Canonical expansion, old-to-new id mapping, and stage recheck remain required before acceptance. claims.jsonl not edited.
+batch-000877142.jsonl covers 10 claims from txt-79cebd6bce-000877142-000877246
+Five earlier drafts no longer treat the 1935 United States statute as proof that the tenure-forfeiture scheme was absent everywhere. The 1920 encyclopedia records different compulsory systems in New Zealand, Australian states, and Canada. The exact scheme in the passage was still not found, so those results stay unscored.
+REIMPORT-QUEUE still has 2 items for canonical expansion, mapping, and recheck. claims.jsonl not edited.
+batch-000853602.jsonl covers 12 claims from txt-79cebd6bce-000853602-000853772
+txt-79cebd6bce-000836835-000837033 revised from 错误 to 暂无法判断. Regulated utility franchises are not substituted for commercial monopolies already established at publication. Standard Oil remains one 1911 dissolution, not every such monopoly.
+REIMPORT-QUEUE still has 2 items for canonical expansion, mapping, and recheck. claims.jsonl not edited.
+batch-000829797.jsonl covers 12 claims from txt-79cebd6bce-000829797-000829858
+REIMPORT-QUEUE still has 2 items. They are not treated as done. claims.jsonl not edited.
+batch-000788599.jsonl covers 12 claims from txt-79cebd6bce-000788599-000788825
+REIMPORT-QUEUE still has 2 items. They are not in an acceptance package. claims.jsonl not edited.
+batch-000772635.jsonl covers 12 claims from txt-79cebd6bce-000772635-000772705
+REIMPORT-QUEUE now has 2 items. Both stay until the single writer expands them by the canonical reimport and maps or rechecks the drafts. claims.jsonl not edited.
+batch-000759185.jsonl covers 10 claims from txt-79cebd6bce-000759185-000759249
+REIMPORT-QUEUE.jsonl holds txt-79cebd6bce-000690567-000690762 for later quote expansion; claims.jsonl not edited. Referents recovered from the same chapter and the draft reason was revised.
+batch-000710365.jsonl covers 10 claims from txt-79cebd6bce-000710365-000710561
+batch-000690567.jsonl covers 10 claims from txt-79cebd6bce-000690567-000690762
+batch-000672332.jsonl covers 10 claims from txt-79cebd6bce-000672332-000672438
+batch-000662733.jsonl covers 12 claims from txt-79cebd6bce-000662733-000662862
+batch-000648389.jsonl covers 12 claims from txt-79cebd6bce-000648389-000648511
+capital-not-retarded error withdrawn: 1889-1919 overlaps publication and the series is capital-input growth, not the stock
+batch-000628065.jsonl covers 12 claims from txt-79cebd6bce-000628065-000628182
+population-offset error withdrawn: headcount growth is not the net drag on productivity
+narrow series previously marked correct were reviewed down where they did not reach the cutoff
+batch-000581944.jsonl covers 12 claims from txt-79cebd6bce-000581944-000582076
+undated technical-gains continuation re-reviewed to correct inside the publication-to-cutoff window
+batch-000566907.jsonl covers 14 claims from txt-79cebd6bce-000566907-000566996
+two earlier partials revised to undecided with prior_verdict kept: machine-price importance, young men farm-to-city
+batch-000559288.jsonl covers 10 claims from txt-79cebd6bce-000559288-000559355
+batch-000546533.jsonl covers 12 claims from txt-79cebd6bce-000546533-000546600
+nearly-always labor claim re-reviewed from partial to undecided: no frequency denominator and causation not separated
+batch-000536173.jsonl covers 10 claims from txt-79cebd6bce-000536173-000536383
+nearly-always labor claim revised from wrong to partial after a multi-industry sample
+batch-000524511.jsonl covers 12 claims from txt-79cebd6bce-000524511-000524581
+batch-000502573.jsonl covers 12 claims from txt-79cebd6bce-000502573-000502635
+two prior correct verdicts on hours and pay revised to partial: 1900 baseline, manufacturing class, causation not isolated
+batch-000491970.jsonl covers 14 claims from txt-79cebd6bce-000491970-000492008
+batch-000461912.jsonl covers 16 claims from txt-79cebd6bce-000461912-000461978
+batch-000429127.jsonl covers 20 claims from txt-79cebd6bce-000429127-000429177
+earlier 正确 on industry change and 错误 on terms of trade were narrowed: one slice is not the whole window
+EIA wind and Balance unemployment archives are bounded excerpts; Kendrick file is the full fetch
+check with 0 verified evidence is not completion
+
+本轮记录（写在历史原文之后，描述现在）
+apply：accepted assess 418。日志 output/apply.log。
+check：OK: 418 claims; 43 verified evidence records。日志 output/check.log。
+report：output/report.md、output/summary.json、output/claims.csv。展示为正确 0、趋势符合 8、部分符合 55、错误 1、暂无法判断 338。
+unittest：Ran 209 tests，OK，退出码 0。日志 output/unittest.log 只收了测试程序的标准错误；个别测试打印到标准输出的 JSON 没有放进这份日志。
+ALL-DRAFTS.jsonl 418 条都有 plan、select、assess_draft、六项语义复核。applied_to_claims 在这次 apply 成功之后标为 true。
+
+r4 记录（接在历史原文之后，描述现在）
+没有重新 apply，收据没有手改。input_claims_sha256 5ebc921617254e2659081b06b4568d016609859a433a986db11aa3d02d759501 与 output/claims_before_assessment_5ebc92161725.jsonl 的字节哈希相同。response_sha256 0afd550c270c10d1d00bae2b3012f04291cc28d7536f54718b362f2878bfcc90 与 output/accepted_assessment_0afd550c270c.jsonl 相同。
+ALL-DRAFTS 里 39 条现行 assess_draft 已与主张表的 verdict 对齐。旧草稿整份留在 historical_assess_draft。6 条旧正确的撤分理由是评估表里已有的句子，补进 score_history，不是新检索。
+劳动份额仍为错误。证据日期没有改。

@@ -1,0 +1,939 @@
+## WORKING PAPER
+
+N° 2011 - 8
+
+### Productivity, Capital and Labor in Labor-Managed and Conventional Firms
+
+#### FATHI FAKHFAKH, VIRGINIE PEROTIN, MONICA GAGO
+
+#### www.tepp.eu TEPP - Institute for Labor Studies and Public Policies TEPP - Travail, Emploi et Politiques Publiques - FR CNRS 3126
+
+ISSN 2110-5472
+
+#### Productivity, Capital and Labor in Labor-Managed and Conventional Firms
+
+by
+
+Fathi Fakhfakh 
+ERMES 
+Paris II University 
+26, rue des Fossés-Saint-Jacques 
+75005 Paris 
+France 
+fakhfakh@u-paris2.fr 
+Virginie Pérotin 
+Leeds University Business School 
+Leeds, LS2 9JT 
+UK 
+v.perotin@lubs.leeds.ac.uk 
+and ERMES 
+
+and
+
+Mónica Gago 
+Mondragon University 
+Facultad de Ciencias Empresariales 
+20560 Oñate (Gipuzkoa) 
+Spain 
+mgago@eteo.mondragon.edu 
+
+The authors are grateful to the French worker cooperatives federation, Confédération Générale des SCOP (CG-SCOP) for communicating the data on cooperatives and to Jean-Marie Collache and Alain Schlecht for transferring and documenting the data; and to Aurélie Charles for her excellent assistance in mounting one of the data sets. Participants in an ERMES seminar, in the IAFEP Conferences at Halifax (Canada) and Mondragon (Spain) in the European Productivity Conference in Espoo (Finland) in the Shared Capitalism session of the Academy of Management meetings at Anaheim (CA, USA) and in the ICA Research Conference at Riva del Garda (Italy) provided helpful comments on earlier versions of this work. Parts of this research were carried out while Pérotin was visiting ERMES and while Gago was visiting Leeds with funding from the Spanish government’s José Castillejo Program. The mounting of one of the data sets was funded by a seedcorn grant from Leeds University Business School.
+
+##### ABSTRACT
+
+Despite a continuing interest in the compared efficiency of labor-managed and conventional firms, 
+only a handful of comparative empirical studies exist. These studies suggest that labor-managed 
+firms have the same productivity levels as conventional ones, but organize production differently. 
+However, the data used in these studies cover a single industry, or firms matched by industry and 
+size in manufacturing, and concern a few dozen firms. In addition, the use of constant-elasticity 
+production functions in past studies has made it difficult to distinguish the effects of incentives 
+embodied in the factors of production from those of scale differences that could be caused by the 
+differences in factor demand behavior between conventional and labor-managed firms hypothesized 
+by economic theory. 
+The paper compares the productivity of labor-managed and conventional firms using two new panel 
+data sets covering several thousand firms from France, including representative samples of 
+conventional firms and all worker cooperatives with 20 employees or more in manufacturing and 
+services. We present Generalized Least Squares (GLS) and Generalized Moments Method (GMM) 
+estimations of translog production functions industry by industry for cooperative and conventional 
+firms and test for the equality of their total factor productivities. We also allow systematic 
+differences in scale and technology to be determined by the ownership form. The translog 
+specification, which allows returns to scale to vary with input levels, makes it possible to 
+disentangle embodied incentive effects from systematic differences in scale due to under 
+investment in labor-managed firms. In the process, we also propose updated “stylized facts” about 
+labor-managed firms in comparison with conventional firms. 
+Our production function estimates suggest that cooperatives are at least as productive as 
+conventional firms. However, the two types of firms organize production differently. Cooperatives 
+are more X-efficient, i.e., they use their capital and labour more effectively, than conventional 
+firms. With their current levels of inputs, cooperatives produce at least as much with the 
+technology they have chosen as they would if they were using conventional firms’ technology. In 
+contrast, in several industries conventional firms would produce more with their current inputs if 
+they were organizing production as cooperatives do. In all industries and in both data sets, both 
+types of firms would produce at constant or decreasing returns to scale if they were using the same 
+technology at their current input levels, and we find no evidence that returns to scale are 
+systematically higher in cooperatives. Contrary to received wisdom, descriptive statistics indicate 
+that workers’ cooperatives are not always smaller or less capitalized than conventional firms, and 
+grow at least as fast as conventional firms in all the industries studied. 
+
+##### 1. Introduction
+
+The current recession has sparked renewed interest in alternative forms of firm governance that might be associated with greater oversight of management decisions involving risk. Firms managed by their employees have traditionally been regarded as more risk averse than conventional firms and may offer greater employment stability (Dow 2003). Over the last two decades, a sustained policy interest in employee ownership has been supported by an abundant empirical literature consistently showing firms with employee ownership and/or profit sharing to perform as well as or better than other firms in capitalist economies. Employee ownership was unexpectedly widespread at the start of the transition from central planning (Earle and Estrin 1998). However, it has had an often unremarkable record in transition economies (Jones 2004) and the century-old debate on the performance effects of employee ownership is by no means over. For example, Megginson and Netter (2002) conclude from their meta-analysis of the empirical literature on privatization that employee ownership is the worst way to privatize. This paper contributes to the debate by examining the productivity of conventional and labor-managed firms with two new large panel data sets covering some 7,000 French firms annually, about 500 of which are fully employee owned. In the process, we revisit classic theoretical hypotheses regarding factor demands in labor managed firms. In particular, we explore implications of the under-investment hypothesis, which has played a major role in policy debates about employee ownership, but regarding which little systematic evidence is available.
+
+A key issue in the debate on the performance effects of employee ownership is employee participation in governance. Much less empirical work has been done on the effect of this type of employee involvement on enterprise productivity than on profit sharing and employee stock ownership plans, perhaps because of measurement difficulties. 1 Existing studies have produced mixed findings (see e.g. Addison et al. 2004, FitzRoy and Kraft 2005). Yet it has often been argued that there is a complementarity between participation in profit, such as profit sharing and the financial component of employee stock ownership, and participation in governance. In this case, there should be stronger positive effects on productivity if the two forms are present together in the same firm (see Ben-Ner and Jones 1995, Conte and Svejnar 1990, and Levine and Tyson 1990).
+
+1 Governance participation can take a range of forms, and there is a lack of consensus on which involvement schemes qualify as participation. Pérotin and Robinson (2000) provide an economic definition based on the framework proposed by Ben-Ner and Jones (1995) according to which participatory schemes and practices are forms of employee involvement in which some aspects of property rights are shared with the firm’s workforce.
+
+The finding in the meta-analysis by Doucouliagos (1995) that profit sharing and employee stock ownership had higher productivity effects in worker cooperatives than in conventional firms has been attributed to this complementarity.
+
+Worker cooperatives practice the ultimate form of participation in governance, in that employees own the firm, vote on strategic decisions and elect senior management, who can be voted down at any time in French cooperatives. In this way cooperative members also decide on the extent of their own day-to-day involvement in running the firm. As Pencavel (2001) notes, the performance of worker cooperatives provides a crucial test for the productivity effects of employee ownership in general. Until now, only a small number of studies have been able to compare the performance of fully employee-owned firms with that of conventional firms (Conte and Svejnar 1988, Berman and Berman 1989, Estrin 1991, Craig and Pencavel 1992 and 1995, Pencavel and Craig 1994, Bayo Moriones et al. 2003 and Jones 2007). 2 With the exception of Bayo Moriones et al., these studies all use samples of a few dozen firms. The data we use cover a much larger sample than previous performance studies. We compare two representative samples of conventional French firms with 20 employees or more with all the worker cooperatives in existence in France in the same size band. Existing studies look at labor-managed and conventional firms from one industry only, or match firms in the two groups by industry and size. The data we have make it possible to allow systematic differences in firm size and technology to be related to ownership form as well as industry. It also offers us an opportunity to update “stylized facts” about labor-managed firms in relation to conventional ones.
+
+A labor-managed firm’s production function may differ in several ways from that of a conventional firm. Differences in X-efficiency associated with employee involvement may shift the whole function up- or downwards, and may be reflected in different output elasticities if incentive effects are embodied in the factors. Several hypotheses on labor-managed firms’ investment and labor demand behavior also imply that the two types of firms should operate at different scales and with different combinations of capital and labor, so that their observed marginal productivities and
+
+2 See also Pencavel et al. (2006) who study labor-managed firms’ response to price changes using data on a large sample of Italian conventional firms and worker cooperatives, and Bartlett (1994) on the compared labor demand of conventional and employee-owned firms in Italy and Spain. Maietta and Sena (2004) look at the compared efficiency adjustments of cooperatives and conventional firms following a financial shock. Among performance studies, Conte and Svejnar (1988) and Bayo Moriones et al (2003) are unusual in that they control for different forms of participation in both types of firms, but Bayo Moriones et al only have qualitative performance data; Jones 2006 controls for different types of participation in the cooperatives only. Outside this group of studies, a number of investigations compare cooperatives among themselves and/or with a standard profit-maximizing firm model (on France see Estrin and Jones, e.g., 1992, 1995 and Estrin et al. 1987). Several studies also present univariate comparisons with conventional firms (Ben-Ner 1988a, Robinson and Wilson 1993, Bartlett et al. 1992).
+
+October 09 5 elasticities may differ. Using Generalized Least Squares (GLS) and Generalized Moments Method (GMM) estimation, we estimate a production function industry by industry for the two groups of firms, and test for differences in total factor productivity and for the equality of the estimated parameters. The translog specification, which fits the data best, also makes it easier to disentangle incentive effects from issues of scale and factor proportions than specifications using functional forms with constant output elasticities with respect to the factors, such as the Cobb-Douglas form. Thus, we examine incentive issues by testing for the equality of the estimated coefficients of the translog, which is rejected. We then explore the traditional hypothesis that labor-managed firms under-invest by comparing the estimated local returns to scale for the two groups of firms in our samples using the same estimated production function parameters, so that any differences are due to systematic differences in input levels between the two groups of firms. We also make univariate comparisons suggested by the literature to revisit this and other traditional hypotheses on factor demands.
+
+The French case is useful for looking at these issues because the cooperative movement in that country has been relatively successful. French worker cooperatives (Sociétés coopératives de production—SCOPs) have not degenerated into or been sold out to conventional firms, so that the movement has had a continuous presence since the mid-nineteenth century. SCOPs also represent reasonable models of participatory or labor management for conventional firms. Because cooperatives are required by law to start up with at least 2-5 members, they include no micro firms and the vast majority are small and medium-sized enterprises. In this paper, we look at firms with 20 employees or more, a minimum imposed by the available data on conventional firms. While SCOPs have narrower pay differentials than conventional French firms, pay varies across jobs and most SCOPs have a fairly heterogeneous labor force. These features again make SCOPs a rather realistic model and allow us to examine the effect of labor management without conflating it with skill homogeneity and pay equality issues. Finally, French cooperative law makes it very difficult for a cooperative to become a conventional firm, so that even if some cooperatives are doing less well as cooperatives than they might as conventional firms they effectively do not have the option of exiting the cooperative form; conversely, members of firms that are doing exceptionally well as cooperatives cannot sell their firms to conventional owners to realize the value of their assets. This characteristic removes a potential source of bias in the assessment of productivity effects. 3
+
+3 In contrast, voluntary schemes like profit sharing may be abandoned by firms that find the schemes unprofitable, so that the performance effects observed among firms that currently have voluntary schemes may be biased upwards unless the data set also includes firms that abandon the scheme. In this data set, the cooperatives also include more newly-created firms and firms that are about to close down than the sample of conventional firms, so that if anything the bias should go against cooperatives.
+
+In the next section we provide some background information on French worker cooperatives. Theory is presented in section three; the data, empirical strategy and estimation approaches in section four; and the results are discussed in section five. Conclusions are drawn in section six.
+
+##### 2. Worker Cooperatives in France
+
+In 2008, there were about 1,900 worker cooperatives in France, employing a little more than 40,000 people. 4 Although this is sizeable by industrialized countries’ standards, SCOPs still represent a minute proportion of all French firms (less than 0.2% of all firms with one employee or more).
+
+The characteristics of SCOPs’ membership shares and rights are in large part defined by French law. 5 A few salient features are particularly relevant to our purposes. SCOPs are owned by their employees, and all employees can become members. Members have normal shareholders’ rights. In particular, they elect the board and chief executive officer, and vote in general meetings. Member workers have one vote each, regardless of the share of capital they hold. 6 In 2006, 58% of all SCOP employees were members. The other employees were either newly-hired employees still in their probationary period or employees that had chosen not to join (85% of employees that had been with the firm for two years or longer were members in 2006, 91% in 2007 and 87% in 2008).
+
+Each new member is required to buy at least one share, but members typically buy more and individual cooperatives may require their members to purchase more shares later on (up to a maximum of 10% of the members’ wages every year). The average capital stake individually held by worker members was about € 6,000 in 2005 and € 6,300 in 2006, equivalent to about five months’ pay on minimum wage. 7 Membership shares are paid back at par when members leave the firm, though limited possibilities exist for the cooperative to offer leaving members some additional compensation when they redeem their shares.
+
+4 Figures in this section come from CG-SCOP (2007and 2009) for cooperatives and from INSEE (2009) for French 
+firms in general. Information on large worker cooperatives can be found in EFES (2009). 
+5 See CG-SCOP (2003). French regulation regarding worker cooperatives is very similar to the Italian one (see e.g. 
+Dow 2003, Pencavel et al 2006 for recent accounts of the Italian situation). 
+6 French law allows very limited ownership of a worker cooperative’s capital by non-employees, with specific 
+provisions for dividends and voting rights (see CG-SCOP 2003). 
+7 Roughly US$ 7,500 and US$ 7,900 respectively (at current prices). 
+
+Although only members vote, at least 25% of profit is distributed to all employees. This implies that existing members have no incentive to prevent other employees from joining, so that SCOPs do not degenerate into capitalist firms. 8 French cooperative law requires another share of profit to be plowed back into a collectively-owned portion of capital, which cannot be split among members even if the cooperative goes bankrupt. 9 Collective capital reserves amounted to some € 24,500 per employee on average in 2005 and about € 28,300 in 2006. 10
+
+SCOPs are found in a range of industries, in which manufacturing and construction still dominate but 45% of SCOPs supplied services in 2005 (as against 71% of all French firms) and the share of that sector is growing fast. SCOPs are not generally smaller than conventional French firms, but the size distributions of the two groups of firms are different. Very small firms (less than 10 employees) which make up the bulk of conventional firms (83.4% of firms with at least one employee had less than 10 in 2007) represent a significantly lower proportion of SCOPs (55.5% in 2007). Cooperatives include more medium-sized firms. Firms with 10-499 employees constitute a considerably higher proportion of SCOPs (44.2%) than of conventional firms with at least one employee (16.4%). However, the proportion of firms having 500-1999 employees is similar in the two groups (0.2% of conventional firms and 0.3% of SCOPs) as is that of firms with more than 2000 employees (0.04% of conventional firms and 0.05% of SCOPs) and there have always been few large SCOPs.
+
+##### 3. Theory
+
+Two types of hypotheses have been put forward regarding the compared productivity of labor managed and conventional firms. An abundant literature on the incentive and information effects of participatory schemes on productivity applies in particular to labor-managed firms. Another literature posits that both the labor demand and investment behavior of the labor-managed and conventional firms may differ because they have different objectives, so that, as Estrin (1991) put it, they organize production differently. We will summarize hypotheses drawn from each part of the literature in turn.
+
+8 In 2005 the average profit-related pay per employee was about € 3,700, the bulk of which was held in blocked 
+accounts with the firm. Models explaining cooperative degeneration processes were proposed in particular by Ben-Ner 
+(1984, 1988b) and Miyazaki (1984) who showed that unless members were more productive than non-members the 
+former had incentives to replace departing members by non-member employees in cooperatives that did not share 
+profits with non-member employees. See Estrin and Jones (1992, 1998) for an empirical examination of degeneration 
+and under-investment issues for SCOPs. 
+9 The net assets of a SCOP that closes down go to another cooperative or a charity. 
+10 Roughly US$ 30,600 and US$ 35,400 respectively at current prices. The 2005 value represents about 18 months’ pay 
+at the average private sector pay in that year (about € 16,100 according to INSEE 2009). 
+
+##### Incentive and Information Issues
+
+The hypotheses concerning the effects of employee participation on X-efficiency are well known, and we will only outline the arguments here (for extensive reviews see Dow 2003, Ben-Ner and Jones 1995, Bonin et al. 1993 and Addison 2005). Employee participation is thought to increase productive efficiency by reducing agency and information costs. Participation in governance and profit, as in SCOPs, offers workers both incentives and opportunities to reveal private information to management and to each other, to work more and better, to invest in firm specific human capital and to monitor each other, which may be more effective than hierarchical monitoring. Governance participation may promote dignity—a factor that may increase intrinsic motivation (Ellingsten and Johanneson 2007). Decisions in which employees have a voice also internalize their interests. Employee voice may therefore improve decision quality, and reduces the attractiveness of “exit” options like quits that are costly to the firm. Finally, participation in profit and in governance may be complements, giving worker cooperatives, which have both, an additional advantage. However, labor-managed firms may be beset with coordination failures due to the collective nature of incentives and decision processes in democratic firms, and their managers’ incentives to manage may be diluted. Theory thus makes ambiguous predictions concerning the incentive and information effects of worker participation on productive efficiency.
+
+The empirical literature on participatory schemes confirms that participation in profit is often associated with an increase in total factor productivity, though findings regarding governance participation are mixed. 11 Doucouliagos’s (1995) finding that participatory practices had greater positive effects on productivity in worker cooperatives has been interpreted as evidence that worker cooperatives must be more productive than conventional firms. The effects of all forms of participation may be embodied in either of the factors, so that output elasticities may differ between labor-managed and conventional firms.
+
+It should be noted that even in the presence of positive incentive effects from participatory practices, worker cooperatives may not be more productive overall than less participatory conventional firms. If the labor-managed firm maximizes a member’s utility function (whether a
+
+11 For worker cooperatives, see Dow (2003). Studies on participation in surplus in conventional firms are also reviewed in Pérotin and Robinson (2003). More recent evidence that surplus participation is associated with peer monitoring can be found in Kruse et al. (2004, 2008). For participation in governance in conventional firms, see FitzRoy and Kraft (2005). Studies of French cooperatives include, e.g., Estrin and Jones (1995) and Estrin et al. (1987). For a review of studies of French participatory firms, see Fakhfakh and Pérotin (2002) and Fakhfakh (2004).
+
+October 09 9 representative or a median member’s utility) in which both income and leisure are arguments and worker owners have a normal income-leisure tradeoff, the firm may choose a lower level of effort than a conventional firm would (see McCain, e.g., 1985, Jensen and Meckling 1976). This effort may be more effective than in the conventional firm due to the incentives and information effects we have just reviewed, so that the net effect on total factor productivity of having a cooperative structure may be either positive, negative, or neutral at the same level of employment.
+
+Interestingly, three of the four studies of comparative productivity estimating production functions for matched samples of employee-owned and capitalist firms (Berman and Berman 1989, Estrin 1991 and Craig and Pencavel 1995) find no significant difference in total factor productivity between the two groups when they are constrained to have the same production function. The fourth (Jones 2007) finds differences that are not consistent across specifications and estimation methods. Using qualitative measures of performance and controlling for shop-floor participation, Bayo Moriones et al. (2003) do not find that worker cooperatives perform better or worse than conventional firms either, nor do they observe participation to have a greater effect in cooperatives.
+
+However, the three production-function studies that test for differences in the estimated functions between the two groups find them to be significantly different, and the other study (Jones 2007) finds there are significant firm-specific fixed effects, which may capture technological differences between the two groups. Craig and Pencavel (1995) go on to compute output differentials using the estimated functions at each subsample mean point and find predicted output is higher with the cooperative elasticity estimates at both points.
+
+Differences in the estimated technologies can reflect embodied incentive effects, but may also be due to differences in the equilibrium factor demands of the two groups of firms.
+
+Factor Demand Issues
+
+Both the investment behavior and the labor demand of labor-managed firms may differ from those of conventional firms. A classic hypothesis proposed with variants by Furubotn and Pejovich (1970) and Vanek (1977) states that labor-managed firms that rely on collectively-owned self finance will under-invest. The key point here is that collective ownership (and/or the absence of a market for individual membership shares) truncates cooperative members’ property rights by limiting their rights to the returns on investments to the period in which they work with the firm.
+
+As a result the firm may not invest, or require inefficiently high rates of return on investment and short payback periods and under-invest. If the production function common to the cooperative firm and its capitalist “twin” exhibits increasing then decreasing returns to scale, the cooperative will find its long-run equilibrium in the increasing returns range rather than at constant returns like the conventional firm. If returns to scale are constant along the whole relevant output range, the labor managed firm will consume its capital and “self-extinguish”. 12 SCOPs cannot consume their capital and are constrained by law to plow back a portion of all profit. This may be why there is no evidence that they under-invest or self-extinguish (Estrin and Jones 1992, 1998). The under investment hypothesis more generally has been much disputed. 13 It nonetheless remains important because it has been invoked as a reason for the small number of labor-managed firms in capitalist economies, and the small scale of many worker cooperatives or their low capitalization are still often seen as evidence in support of the hypothesis.
+
+Together with a slower capital growth and a smaller size for cooperatives, increasing returns to scale among cooperatives and constant returns among conventional firms would be consistent with under-investment. However, a smaller scale could also be evidence of capital starvation, which is commonly thought to characterize labor-managed firms, especially at foundation, due to their difficulties in accessing external finance and to members’ limited wealth. Capital constraints at foundation are consistent with the life-cycle observed by Estrin and Jones (1992) who argue that SCOPs may over-accumulate collective assets. Berman and Berman (1989) show that in the capital starvation case a smaller scale should be associated with lower capital intensity for cooperatives—a standard finding--and a higher marginal product of capital, together with the same or a faster rate of capital growth.
+
+Labor-managed firms may also use less capital intensive technologies than conventional firms because of a preference for employment. Alternatively, they may simply have a more stable labor demand than conventional firms, at least downwards, if the firm maximizes profit per member subject to a minimum employment level constraint. As Pencavel et al (2006) observe, pay is endogenous in a labor-managed firm. 14 Their findings on Italy, as well as those of Craig and Pencavel (1992) and Pencavel and Craig (1994) on the US, confirm that worker cooperatives tend to adjust pay rather than employment in response to demand shocks while conventional firms adjust
+
+12 In Vanek’s model, the labor-managed firm maximises revenue per member and does not pay for the use of 
+collectively owned capital, so that it produces where average revenue is equal to the value marginal product and never 
+has an incentive to increase employment (Vanek 1977). 
+13 See Uvalić (1993) for a detailed review of the under-investment debate. 
+14 See also Basu et al (2005) for an analysis of labor demand in conventional and employee-owned firms. 
+
+October 09 11 employment rather than pay. Bartlett et al (1992) also find Italian cooperatives to have more stable employment levels than their conventional counterparts. However, Bartlett (1994) finds Italian cooperatives’ employment responds to wages as well as to demand changes and both he and Estrin (1991) observe Italian cooperatives increase employment faster than conventional firms at certain stages of the firm’s life.
+
+More stable employment levels in response to downturns, at least for some occupational groups, would also be consistent with a collective choice model in which the cooperative maximizes the median member’s utility. Testing such a model for Italy, Estrin (1991) suggests that the median voter in Italian cooperatives is a blue-collar worker, whose employment is favored by the firm. A correspondingly lower proportion of managerial staff in cooperatives than in conventional firms could also follow from superior incentives and lower agency costs in the labor managed firm.
+
+##### 4. Empirical Strategy, Data and Estimation
+
+Empirical Strategy
+
+In order to test the main hypotheses outlined above, we estimate production functions on panel data for large samples of worker cooperatives and conventional firms, industry by industry. We first test for an overall difference in total factor productivity by inserting a dummy variable for the cooperative form while constraining the parameters of the production function other than the intercept to be the same for the two groups. In all industries significance tests lead to prefering the Transcendental Logarithmic form (“translog”) to the Cobb-Douglas, so that we estimate a function of the form:
+
+it it i it
+
+h it j it
+
+j h jh k j
+
+j jj it
+
+k j
+
+j it j it
+
+Control Scop e
+
+Log Q a Log I Log I Log I Log I + + + +
+
+= +∑ + ∑ +∑ = = ≠ λ β µ
+
+α α α
+
+. .
+
+( ) . ( ) 0.5 .( ( )) . ( ). ( ) 2 1 1 (1)
+
+where Qit is a measure of the output of firm i at time t, j it I is the amount of the jth input for firm i at time t, and Scop is a dummy variable equal to 1 if the firm is a worker cooperative (and 0 otherwise). Control is a set of variables intended to control for human capital and occupational mix differences that may result from labor demand differences in the two groups, including the share of managers in the workforce; that of supervisory staff; and the gender composition of the workforce. Control also includes an estimate of the firm’s share of its product market in order to proxy for output price differences that might otherwise be confused with productivity differences.
+
+We then allow for the possibility that incentive effects are embodied in the factors and the two groups have different production functions, by testing for differences in all estimated parameters. The sets of parameters estimated for the cooperative and conventional firms turn out to be significantly different for all industries. Following Craig and Pencavel’s (1995) approach, we therefore look at total factor productivity by comparing, for each group of firms, the predicted outputs obtained using the two estimated sets of parameters. Thus, we compare the outputs predicted for SCOPs (i.e., using their input levels) in each industry when using the parameters estimated for cooperatives in that industry and when using the parameters estimated for conventional firms in the industry. Any difference is due to differences in the technologies used by the two groups of firms (i.e., the set of estimated parameters of the production function). We repeat the exercise using conventional firms’ input levels and comparing the outputs predicted using the two sets of estimated parameters. Rather than doing this at the mean point of each sample as in Craig and Pencavel (ibid.) we compute predicted outputs for each firm, which allows us to test for the statistical significance of the observed mean difference between the two predicted outputs in each group.
+
+We then investigate the key prediction of the under-investment hypothesis, which concerns returns to scale. Observed differences in estimated output elasticities with respect to labor and capital may result in differences in estimated returns to scale. Thus observed returns to scale could be consistent with incentive effects embodied in the factors and/or with different investment behavior in the labor-managed firms. The translog specification makes it possible to disentangle these two types of effects, because it allows marginal products, elasticities and returns to scale to vary with input levels.
+
+In order to examine differences in returns to scale that might be due to systematic differences in input levels possibly associated with differing investment behavior, we hold technology constant. We compare the two estimates of local returns to scale obtained using one set of estimated parameters but the different input levels of the two types of firm, so that any difference reflects input differences only. Local returns to scale with each technology are again computed for each firm, so that differences between estimates using conventional firms’ and cooperatives’ inputs with a given technology can be tested for. We also test for constant returns to scale (by comparing each estimate to 1). While we do not estimate investment or labor demand functions in this paper, these estimated returns to scale, together with descriptive statistics concerning capital and labor in the two
+
+October 09 13 types of firms, provide stylized facts against which to check the patterns implied by the under investment, capital starvation and labor demand hypotheses reviewed in section 2.
+
+The Data
+
+We have assembled two new data sets from several sources. For cooperatives we use the data collected by the SCOP federation, CG-SCOP, on all French worker cooperatives in 1987-2004 (about 1,500 firms per year). For conventional firms we have access to different subsets of two surveys conducted annually by the French statistical office INSEE on firms with 20 employees or more--the Annual Enterprise Survey, which provides economic information on a stratified representative sample of about 12,000 firms, and the Structure of Employment Survey, which provides information on the occupational and gender distribution of the workforce of some 22,000 firms. For some years, we also have balance-sheets and selected accounts for 10,000 of the firms included in the Enterprise Survey. A number of SCOPs appear in both the INSEE and the CG SCOP data sets, so that we were able to check in detail the consistency of the variable definitions and measurement across sources. 15
+
+We had to remove cooperatives with less than 20 employees for consistency with the data on conventional firms. In addition, we decided to remove the industries where SCOPs were absent (Pharmaceuticals, Aeronautics and Energy generation and distribution) or were present but constituted less than 2% of the firms in that industry in the data set. This was done in order to perform the analysis industry by industry, so as not to confuse scale and factor demand issues with mean characteristics that might stem from the different industry distributions of conventional and labor-managed firms. The resulting data comprise two data sets.
+
+The first data set is an unbalanced panel covering seven industries in 1987-1990 (Capital Goods, White Goods, Consumer Goods, Building, Transport, Business Services and Consumer Services) and has about 19,500 observations in total. The representativeness of the conventional firm sample is achieved with weights attached to each firm-size stratum and proportional to inverse sampling proportions. We use the weights for descriptive statistics but not for the estimations. 16 The second data set is an unbalanced panel covering four manufacturing industries in 1989-1996 (Capital Goods, Printing and Publishing, Paper and Wood, and Metals) with about 18,000
+
+15 See Data Appendix for the details of data set construction and variable definitions. 
+16 The conventional firm sample was designed for another project. Since firm size (employment level) is an argument 
+of the estimated function, and the translog functional form allows the technology to vary with firm size, unweighted 
+estimation is preferable (see Reiter et al 2005). 
+
+October 09 14 observations in total. In this data set, the conventional firm sample is exhaustive for manufacturing firms with 30 employees or more and includes a random sample of firms with 20-29 employees, but we do not have the sampling proportions. Two industries (Capital Goods and White Goods) were originally present in both data sets. We were not able to obtain safe estimates with Data Set 2 for the White Goods industry because of the small number of usable observations on cooperatives with 20 employees or more, and this industry was dropped from Data Set 2. However, we used both industries to carry out further consistency checks between the two data sets since the sample periods of the two data sets also overlap by two years (1989 and 1990). While there are differences—for example, conventional firms are larger and cooperatives smaller on average in the second data set— estimation results for the same industry and years are very similar with the two data sets (see Appendix Table A5). For some estimations, we extended the second data set to include worker cooperatives with less than 20 employees (see below).
+
+Our measure of output is value added; capital and labor are measured by fixed assets and the number of employees respectively. All financial variables are deflated by the consumer price index.
+
+Estimation
+
+To estimate our production function, we have used OLS and random effects. Given the shape of our panels and numbers of observations in each group of firms, GLS is preferred to Fixed Effects, and we present GLS estimation results. We also present GMM estimations carried out on the extended version of the second data set. GMM handles not only unobservable firm effects but also possible endogeneity of the inputs (see Arellano and Bond, 1991, Arellano and Bover, 1995). For the Standard GMM estimators, variables are used in differences, to eliminate unobservable individual effects, and lagged values in levels are used as instruments to correct for endogeneity. However, as suggested by Griliches and Mairesse (1997), fixed effects and GMM estimators produce rather unsatisfactory results (low, insignificant and often negative capital elasticity and very low estimates of returns to scale). Blundell and Bond (1998, 2000) show that the lagged levels of a series provide weak instruments for first differences, whereas results in levels are still reliable. They suggest adding to equations in differences equations in levels with variables in differences as instruments (Ahn and Schmidt 1995). This System-GMM estimator yields more reasonable results. Our estimation results lead us to a similar interpretation of the merits of the various estimators. However, we could not use this strategy with the first data set, which has a very short time dimension (four years at most for a given firm) and only present GLS estimation results with this
+
+October 09 15 data set, which may be more vulnerable to endogeneity issues. The second data set in its original form had too few observations on cooperatives, but to get around this problem, we constructed an extended version of this data set, which includes cooperatives with less than 20 employees. We therefore present three sets of results for the second data set—GLS estimations using only firms with 20 employees or more in both groups; GMM estimations using the extended version of the data set; and GLS estimations performed on this extended data set, in order to check whether any differences between the GLS and GMM estimates result from the different sample or estimation method.
+
+##### 5. Empirical Results
+
+Descriptive Statistics and Stylized Facts
+
+Tables 1 and 2 present the mean values of the main variables and ratios for each of the data sets, with t-tests of the mean differences between cooperative and conventional firms. The representativeness of the conventional firm sample and availability of the appropriate weights for the first data set, together with the exhaustive cooperative sample (for firms with 20 employees or more) imply that comparisons using this data set should provide more reliable “stylized facts” than the comparisons presented in many earlier studies. 17 Table 1 confirms that the size of worker cooperatives, as measured by their employment level, is not necessarily smaller than conventional firms’, even when the smallest firms, which are more common among conventional firms, are removed from the sample. While conventional firms are significantly larger in three industries, there is no significant difference between the two groups in two industries and cooperatives are actually larger on average than conventional firms in the remaining two industries. In Data Set 2 (Table 2) conventional firms are consistently larger than labor-managed ones, though this may be due to under-sampling of conventional firms with 20-29 employees. When size is measured by the level of capital, conventional firms are significantly larger in most industries in both data sets (Tables 1 and 2) though in two industries in Data Set 1 there is no significant difference between the two groups of firms. Capital intensity shows no significant difference between the two groups of firms in the majority of industries in both data sets (conventional firms are larger in all other industries). These findings suggest that labor-managed firms are not necessarily under-capitalized,
+
+17 Unweighted means for Data Set 1 are presented in the appendix (Table A6). We also present the variable means for the extended version of Data Set 2 in the appendix (Tables A7 and A8).
+
+October 09 16 whether because of capital starvation or under-investment. Average labor productivity is higher in conventional firms in most, though not all, of the industries in both data sets.
+
+The percentage of women is lower in the SCOP workforce in the majority of industries in both data sets, although three industries show no difference between cooperative and other firms. Worker cooperatives have been observed to employ a higher proportion of men in France before, as well as in Spain (Elio 2006) but in France at least this was traditionally attributed to the industry composition of the sector. Clearly, there are other factors involved. Finally, although the percentage of managerial and supervisory staff is lower in cooperatives in the majority of industries, as expected, several industries show insignificant differences, especially in the proportion of supervisors.
+
+The under-investment hypothesis is a dynamic question, as is the issue of the relative stability of employment levels in labor-managed firms. The bottom four lines of Tables 1 and 2 show the average annual percentage growth of fixed assets, capital intensity and employment for each group of firms in the two data sets respectively. In both data sets and in all industries, the growth of capital in SCOPs is the same as or higher than in conventional firms. Capital intensity grows faster among cooperatives in two industries in the first data set, but the differences are only weakly significant. In the other industries in Data Set 1, and in all industries in Data Set 2, there is no significant difference between the rates of growth of capital intensity in the two groups. This evidence is consistent neither with under-investment, nor really with capital starvation. Of the two industries in which capital intensity grows faster in cooperatives—a possible sign of capital starvation if it associated with lower capital intensity according to Berman and Berman (1989)— only one shows a significantly lower capital intensity among SCOPs.
+
+Differences in employment growth rates are weakly significant or insignificant in both data sets (Tables 1 and 2). When they are significant, they show conventional firms growing faster in three industries (cooperatives grow faster in one industry) in the first data set, which covers a period of moderate growth. In the second period, which includes a recession, conventional firms cut jobs while cooperative firms cut jobs less fast or even grow. Since the second data set covers a period of recession or slow growth, this pattern suggests that labor-managed firms may keep employment more stable over the cycle.
+
+Total Factor Productivity
+
+The GLS estimates of total factor productivity differentials (i.e. the estimated coefficient of the cooperative dummy) for each industry with our two data sets are presented in Tables 3 (for 1987-1990) and 4 (1989-1996); GLS and GMM estimates for the extended version of Data Set 2 also appear in Table 4. Once appropriate controls are included in the equation, the estimates concerning the industry that is common to the two data sets are consistent across data sets with the same estimation method, despite the difference in time periods. More generally, the GLS estimates show the importance of controlling for labor force composition, which differs between cooperatives and conventional firms.
+
+Overall, the GLS estimates suggest that in most industries there is no significant productivity difference between labor-managed and conventional firms. This result is in keeping with existing studies. Only in one industry, “Paper and Wood”, is there a significant difference, in favor of worker cooperatives. More significant differences appear in the GMM estimates performed on the version of Data Set 2 in which small cooperatives have been included. By comparing these estimates with GLS estimates for the same extended data set, we can infer, to a certain extent, whether the differences with the GLS estimates for the non-extended data set are due to the inclusion of small cooperatives, to the estimation method or to both. The advantage of cooperatives in the Paper and Wood industry remains; its magnitude is cut in half by the instrumentation but remains high, at 18.3 %. The more robust GMM method also is the source of the 7.4 % differential now estimated in favor of cooperatives in the printing and publishing industry (the inclusion of small cooperatives results in a mildly significant negative GLS estimate). No significant difference in total factor productivity is observed in the other two industries.
+
+It is difficult to conclude from these tests that overall the total factor productivity of labor managed firms is markedly different from that of conventional firms in France. If there is a difference, our results suggest it may be in favor of worker cooperatives. However, we test for differences in all the estimated parameters and in all cases the technologies of the two groups of firms are significantly different—they organize production differently, presumably because incentive effects are embodied in the factors.
+
+In order to compare the two groups’ productivities, we therefore compare the output each group of firms would produce using their current inputs with each of the two technologies. These
+
+October 09 18 comparisons are presented in Tables 5 and 6 using the GLS estimates on Data Sets 1 and 2 respectively, and in Table 6 using GLS and GMM estimates obtained with the extended version of Data Set 2. In several cases, there is no significant difference between the outputs a given type of firm would produce with the technology used by the cooperatives and with the conventional firms’ technology. In almost all cases where there is a significant difference, the SCOPs would produce more with their own technology, regardless of the data set or estimation method. The exception is the GLS estimate for the Capital Goods industry with Data Set 2, but the GMM estimate indicates that SCOPs would produce more with their own technology in that industry too. In contrast, in several industries (four with Data Set 1 and two using Data Set 2) conventional firms would produce more using the cooperatives’ technology with their current input levels.
+
+Overall these results suggest that SCOPs are as productive as conventional firms or more productive, and use their inputs better. It seems that in several industries conventional firms would be better off is they used the labor-managed firms’ technologies.
+
+Input Level Effects: Returns to Scale
+
+Before examining returns to scale holding technology constant, we present the average local returns to scale estimated with Data Sets 1 and 2 for the two groups of firms in Table 7. The variety of industries, including services, present in our data sets and the representative samples offer us a rare opportunity to present new “stylized facts” regarding this aspect of the technologies of the two groups of firms. 18
+
+If they maximize profit, conventional firms should operate at constant returns to scale, while under-investing labor-managed firms would at best operate in the increasing returns portion of the production function. Estimated returns to scale are decreasing in most industries and for both groups of firms in Data Set 1. The one exception is the Construction industry, where both groups of firms have constant returns, though here the returns to scale parameter estimated for conventional firms is greater than that of cooperatives. In addition, in two of the three other industries in which
+
+18 We only present the GLS estimates, and do not use the version of Data Set 2 that includes small cooperatives, given the obvious sensitivity of marginal products and returns to scale to firm size. The GLS and GMM estimates for the extended data set are presented in the data appendix for reference (Table A8). We also estimated marginal products and elasticities for the two types of firms. In most cases elasticities and marginal products for SCOPs and conventional firms are not significantly different with data set 1; for the remaining parameters in data set 1, and those estimated with data set 2, differences between the two types of firms show no consistent pattern. No consistent pattern was observed either when we compared elasticities and marginal products estimated at given input points but using the two different technologies—embodied effects did not always operate in the same direction.
+
+October 09 19 the parameters estimated for the two groups are significantly different, the labor-managed firms’ is the lower of the two. The parameters estimated for Data Set 2 tell a different story, with cooperatives’ parameter always significantly higher than conventional firms’, as suggested by theory. In that data set both groups have constant returns in two industries, and in the other two conventional firms have decreasing returns and cooperatives increasing returns. However, what happens in the Capital Goods industry suggests both groups may have been adjusting to the business cycle: both types of firms have decreasing returns to scale in the first data set, which covers a period of moderate growth, and constant or increasing returns in the second one, which covers a recession. If there is underinvestment in labor-managed firms relative to conventional ones, these observed returns to scale would suggest it only happens in recessions and in half the industries studied. This issue is taken up more rigorously next, with comparisons that keep technology constant.
+
+We have computed the local returns to scale for both groups of firms under the same technology, so that the only differences should stem from systematic differences in input levels rather than the use of different technologies. These estimates are presented in Tables 8 and 9. It is apparent from these tables that both types of firms would tend to operate at constant or decreasing returns to scale in most industries and in both periods. In Data Set 1, both SCOP and conventional input levels are associated with mostly decreasing returns (under SCOP technology) or constant returns (with conventional technology). However, the estimated returns to scale parameter is more often the same in both groups or higher for conventional firms’ input levels. With Data Set 2, both input levels are associated primarily with constant returns, with a few cases of decreasing returns. While under the SCOP technology the estimated parameter is greater for SCOPs in three out of four industries, the reverse is observed for all industries under conventional technology—the estimated returns to scale parameter is always higher with conventional input levels. There is no evidence of systematic scale differences or under-investment behavior here.
+
+##### 6. Conclusions
+
+With two new large data sets on France, we set out to compare the productivity and technologies used by worker cooperatives and conventional firms, revisiting in the process hypotheses concerning the investment and labor demand behavior of labor-managed firms. We estimated production functions industry by industry, using new data on large representative samples of French firms that allow us to derive updated stylized facts about the compared features of labor-
+
+October 09 20 managed and conventional firms. Our use of a translog specification for the production function has made it possible to disentangle incentive and information effects embodied in the factors of production from differences in returns to scale that could be due to differences in the investment demand behavior of the two groups of firms.
+
+We find worker cooperatives to be as productive or possibly more productive overall than conventional firms in most industries. However, the two types of firms use different technologies. These differences are consistent with the existence of incentive and information effects associated with full employee ownership that are embodied in the inputs and result in different output elasticities. In some industries, conventional firms would produce more if they used the cooperatives’ technologies, whereas SCOPs always produce at least as much with their own technology as with conventional firms’. These findings suggest that in several industries French worker cooperatives produce in such a way that they use their current inputs better than conventional firms, which could produce more at their current levels of inputs if they produced in the same way as worker cooperatives.
+
+We find no evidence that systematic differences in input levels cause the cooperatives to produce at inefficiently small scale. Using a given technology, the returns to scale parameter is significantly lower in cooperatives than conventional firms in some industries, and both groups of firms operate at constant or decreasing returns in most industries. However, differences in the average returns to scale of both groups of firms between the two sample periods, which cover different parts of the business cycle, suggest both groups adjust scale in the same direction as growth slows down.
+
+Univariate comparisons show that worker cooperatives are not smaller than conventional firms in all industries, and are observed to expand their capital at least as fast as conventional firms. Capital intensity is often the same in the two groups of firms, and they adjust their capital intensity at the same rate in all industries. We find no prima facie evidence of under-investment, or of capital starvation among French labor-managed firms. Employment may be more stable in cooperatives over the business cycle, but the differences with conventional firms are only weakly significant.
+
+Generally, the behavior observed for both types of firms, as well as the differences between the two groups, seem to vary across time periods and stages in the business cycle, and are not
+
+October 09 21 homogeneous across industries. This confirms the importance of testing hypotheses regarding labor-managed firms on a range of industries and parts of the business cycle in order to produce reliable stylized facts. It also suggests that there is a lot more to understand about the comparative dynamics of labor demand and investment in labor-managed and conventional firms with appropriate models allowing in particular for pay adjustments in cooperatives over the cycle and differences in the cost of capital across firm types.
+
+##### References
+
+Addison, John T, 2005. “The determinants of firm performance: Unions, works councils and 
+employee involvement / high-performance work practices,” Scottish Journal of Political Economy, 
+52, 3, pp 406-450. 
+Addison, John T, T Schank, C Schnabel and Joachim Wagner, 2004. “Works councils, labour 
+productivity and plant heterogeneity: Evidence from quantile regressions,” Discussion Paper No. 
+1414, Institute for the Study of Labour/IZA, Bonn. 
+Ahn, SC and P Schmidt, 1995. “Efficient estimation of models for dynamic panel data,” Journal of 
+Econometrics, 68, pp. 5-28. 
+Arellano, M and S Bond, 1991, “Some tests of specification for panel data: Monte Carlo evidence 
+and an application to employment equations,” Review of Economic Studies, 58, pp 277-298. 
+Arellano, M and O Bover, 1995. “Another look at the instrumental-variable estimation of error 
+components models,” Journal of Econometrics, 68, pp. 29-52. 
+Bartlett, Will, 1994. “Employment in small firms: Are cooperatives different? Evidence from 
+southern Europe,” in J. Atkinson and D. Storey (eds.) Employment, the Small Firm and the Labour 
+Market, Routledge, ch. 7, pp. 256-287. 
+Bartlett, Will, John Cable, Saul Estrin, Derek C Jones and Stephen C Smith, 1992. “Labor 
+managed and private firms in north central Italy: An empirical comparison,” Industrial and Labor 
+Relations Review, 46(1), pp. 103-118. 
+Basu, Swati, Saul Estrin and Jan Svejnar, 2005. “Employment determination in enterprises under 
+communism and in transition: Evidence from Central Europe”, Industrial and Labor Relations 
+Review, vol. 58, 3, pp. 353-369. 
+Bayo Moriones, José Alberto, Pedro Javier Galilea Salvatierra and Javier Merino Díaz de Cerio, 
+2003. “Participation, cooperatives and performance: an analysis of Spanish manufacturing firms,” 
+in Takao Kato and Jeff Pliskin (eds.), Advances in the Economic Analysis of Participatory and 
+Labor-Managed Firms, vol. 7, pp. 31-56. 
+Ben-Ner, Avner, 1984. “On the stability of the cooperative form of organization,” Journal of 
+Comparative Economics, 8 (3), pp. 247-260. 
+Ben-Ner, Avner, 1988a. “Comparative empirical observations on worker-owned and capitalist 
+firms,” International Journal of Industrial Organization, 6, pp. 7-31. 
+Ben-Ner, Avner, 1988b. “The life-cycle of worker-owned firms in market economies. A 
+theoretical analysis,” Journal of Economic Behavior and Organization, 10 (3), pp. 287-313. 
+Ben-Ner, Avner and Derek C Jones, 1995. “Employee participation, ownership and productivity: A 
+new theoretical framework,” Industrial Relations, 34, 4, pp. 532-554. 
+Berman, Katrina V and Matthew D Berman, 1989. “An empirical test of the theory of the labor 
+managed firm,” Journal of Comparative Economics, 13, pp. 281-300. 
+
+Blundell, Richard and S. Bond, 1998. “Initial conditions and moment restrictions in dynamic panel 
+data models,” Journal of Econometrics, 87, pp. 115-145. 
+Blundell, Richard and S. Bond, 2000. “GMM estimation with persistent panel Data: An application 
+to production functions,” Econometric Review, 19 (3), pp. 321-340. 
+Bonin, John, Derek C Jones and Louis Putterman, 1993. “Theoretical and empirical studies of 
+producer cooperatives: Will ever the twain meet?” Journal of Economic Literature, 31, pp. 1290- 
+1320. 
+CG-SCOP, 2003. Guide juridique des SCOP. Scop Edit, Paris. 
+CG-SCOP, 2006. “Les Scop en chiffres”, http://www.scop.coop. 
+CG-SCOP, 2007. “Bilan 2006. 1996-2006: 10 ans de croissance”, Participer, 622, March-April. 
+CG-SCOP, 2009. “Chiffres clés”, http://www.scop.coop. 
+Conte, Michael A and Jan Svejnar, 1988. “Productivity effects of worker participation in 
+management, profit-sharing, worker ownership of assets and unionization in US firms,” 
+International Journal of Industrial Organization, 6, pp. 139-151. 
+Conte, Michael A and Jan Svejnar, 1990. “The performance effect of employee ownership plans,” 
+in AS Blinder, ed., Paying for Productivity: A Look at the Evidence. Washington (DC): Brookings 
+Institution Press, pp. 143-172. 
+Craig, Ben and John Pencavel, 1992. “The behavior of worker cooperatives: The plywood 
+companies of the Pacific Northwest,” American Economic Review, 82 (5), pp. 1083-1105. 
+Craig, Ben and John Pencavel, 1995. “Participation and productivity: A comparison of worker 
+cooperatives and conventional firms in the plywood industry,” Brookings Papers: Microeconomics, 
+pp. 121-174. 
+Doucouliagos, Chris, 1995. “Worker participation and productivity in labor-managed and 
+participatory capitalist firms: A meta-analysis,” Industrial and Labor Relations Review, 49 (1), pp. 
+58-78. 
+Dow, Gregory K., 2003. Governing the Firm. Workers’ Control in Theory and Practice. 
+Cambridge (UK): Cambridge University Press. 
+Earle, John S. and Saul Estrin, 1998. “Workers’ self-management in transition economies”, 
+Advances in the Economic Analysis of Participatory and Labor-Managed Firms, Vol. 6, pp. 3-28. 
+Elio, Eunate, 2006. “Women in the Mondragon cooperatives,” paper presented at the 13 th Congress 
+of the International Association for the Economics of Participation, Mondragon University (Spain). 
+Ellingsen, Tore and Magnus Johannesson, 2007. “Paying respect,” Journal of Economic 
+Perspectives, 21, 4, 135-149. 
+Estrin, Saul, 1991. “Some reflections on self-management, social choice, and reform in Eastern 
+Europe”, Journal of Comparative Economics, 15, pp. 349-366. 
+
+Estrin, Saul and Derek C Jones, 1992. “The viability of employee-owned firms: Evidence from 
+France,” Industrial and Labor Relations Review, 45 (2), pp. 323-338. 
+Estrin, Saul and Derek C Jones, 1998. “The determinants of investment in employee-owned firms: 
+Evidence from France,” Economic Analysis, 1 (1), pp. 17-28. 
+Estrin, Saul and Derek C Jones, 1995. “Workers’ participation, employee ownership and 
+productivity: Results from French producer cooperatives,” Advances in the Economic Analysis of 
+Participatory and Labor-Managed Firms, 5, pp. 3-24. 
+Estrin, Saul, Derek C Jones and Jan Svejnar, 1987. “The productivity effects of worker 
+participation: Producer cooperatives in Western economies,” Journal of Comparative Economics, 
+11(1), pp. 40-61. 
+European Federation of Employee Ownership (EFES), 2009. “The European employee ownership 
+top 100,” www.efesonline.org. 
+Fakhfakh, Fathi, 2004. “The effects of profit sharing and employee share ownership on quits: 
+Evidence from a panel of French firms,” in Virginie Pérotin and Andrew Robinson, eds., Employee 
+Participation, Firm Performance and Survival. Advances in the Economic Analysis of 
+Participatory and Labor-Managed Firms, Vol 8, pp. 129-147. 
+Fakhfakh, Fathi and Virginie Pérotin, 2002. “France: Weitzman under state paternalism?” in 
+Brown, Michele and John Heywood, eds., paying for Performance: An International Comparison. 
+EM Sharpe, pp. 90-114. 
+Findlay, Ronald and Ronald Jones, 2000. “Factor bias and technical progress,” Economics Letters, 
+68, pp. 303-308. 
+FitzRoy, Felix and Kornelius Kraft, 2005. “Co-determination, efficiency and productivity,” British 
+Journal of Industrial Relations, 43 (2), pp. 233-247. 
+Furubotn and Pejovich 1970 
+Griliches, Zvi and Jacques Mairesse, J, 1997. “Production functions: The search for identification,” 
+in S. Strom (ed.), Essays in Honour of Ragnar Frisch, Econometric Society Monograph D series, 
+Cambridge: Cambridge University Press. 
+INSEE, 2009. “La France en chiffres.” www.insee.fr. 
+Jensen, M and W Meckling, 1976. “Theory of the firm: Managerial behavior, agency costs and 
+ownership structure,” Journal of Financial Economics, 3, pp. 305-360. 
+Jones, Derek C, 2007. “The productive efficiency of Italian producer cooperatives: Evidence from 
+conventional and cooperative firms,” in Sonja Novkovic and Vania Sena, eds., Cooperative Firms 
+in Global Markets: Incidence, Viability and Economic Performance. Advances in the Economic 
+Analysis of Participatory and Labor-Managed Firms, Vol 9, pp. 3-28. 
+Jones, Derek C, 2004. “Ownership and participation: A review of empirical evidence for transition 
+economies,” in Virginie Pérotin and Andrew Robinson, eds., Employee Participation, Firm 
+
+Performance and Survival. Advances in the Economic Analysis of Participatory and Labor 
+Managed Firms, Vol 8, pp. 171-209. 
+Kruse, Douglas, Richard Freeman, Joseph Blasi, Robert Buchele, Adria Scharf, Loren Rodgers and 
+Chris Mackin, 2004. “Motivating employee owners in ESOP firms: Human resource policies and 
+company performance,” in Virginie Pérotin and Andrew Robinson, eds., Employee Participation, 
+Firm Performance and Survival. Advances in the Economic Analysis of Participatory and Labor 
+Managed Firms, Vol 8, pp. 101-128. 
+Kruse, Douglas, Joseph Blasi and Rhokeun Park, 2008. “Shared Capitalism in the U.S. Economy: 
+Prevalence, Characteristics, and Employee Views of Financial Participation in Enterprises,” Paper 
+presented at the Academy of Management Conference, Anaheim (CA). 
+Levine, David I and Laura Tyson, 1990. “Participation, productivity and the firm’s environment”, 
+AS Blinder, ed., paying for Productivity: A Look at the Evidence. Washington (DC): Brookings 
+Institution Press, pp. 183-243. 
+Maietta, Ornella Wanda and Vania Sena, 2004. “Profit sharing, technical efficiency change and 
+finance constraints,” in Virginie Pérotin and Andrew Robinson, eds., Employee Participation, Firm 
+Performance and Survival. Advances in the Economic Analysis of Participatory and Labor 
+Managed Firms, Vol 8, pp. 149-167. 
+McCain, Roger, 1985. "The Theory of the Labor-Managed Firm in the Short Run: An Implicit 
+Contracts Approach," Advances in the Economics of Participatory and Labor-Managed Firms, 
+1985. 
+Megginson, W and JM Netter, 2002. "From State to Market: A Survey of Empirical Studies on 
+Privatization." Journal of Economic Literature, 39, (2001), pp. 321-389. 
+Miyazaki, Hajime, 1984. “On success and dissolution of the labor-managed firm in the capitalist 
+economy,” Journal of Political Economy, 92 (5), pp. 909-931. 
+Pencavel, John, 2001. Worker Participation: Lessons from the Worker Co-ops of the Pacific 
+Northwest. New York (NY): Russell Sage Foundation. 
+Pencavel, John and Ben Craig, 1994. “The empirical performance of orthodox models of the firm: 
+Conventional firms and worker cooperatives,” Journal of Political Economy, 102 (4), pp. 718-744. 
+Pencavel, John, Luigi Pistaferri and Fabiano Schivardi, 2006. “Wages, employment and capital in 
+capitalist and worker-owned firms,” Industrial and Labor Relations Review, 60 (1), pp. 23-44. 
+Pérotin, Virginie, 2006. “Entry, exit and the business cycle: Are cooperatives different?” Journal of 
+Comparative Economics, 34, pp. 295-316. 
+Pérotin, Virginie and Andrew Robinson, 2000. “Employee participation and equal opportunities 
+practices: Productivity effects and potential complementarities,” British Journal of Industrial 
+Relations, 38 (4), pp. 557-584. 
+Pérotin, Virginie and Andrew Robinson, 2003. “Employee participation in profit and ownership: A 
+review of the issues and evidence,” Working Paper SOCI 109 EN, European Parliament. 
+
+Ramanathan, Ramu, 1982. Introduction to the Theory of Economic Growth. Zurich: Springer 
+Verlag. 
+Reiter, Jerome P, Elaine L Zanutto and Larry W Hunter, 2005. “Analytical modeling in complex 
+surveys of work practices,” Industrial and Labor Relations Review, 59 (1), pp. 82-100. 
+Uvalić, Milica, 1992. Investment and Property Rights in Yugoslavia. Cambridge (UK): Cambridge 
+University Press. 
+Vanek, Jaroslav, 1977. The Labor-Managed Economy. Ithaca (NY): Cornell University Press. 
+Weitzman, Martin L, 1984. The Share Economy. Cambridge (MA): Harvard University Press. 
+
+Table 1. Weighted Variable Means°, Data Set 1, 1987-1990 (€ 1000s)
+
+Industry (max n: SCOPs; conv. firms)
+
+Capital Goods (157; 3217)
+
+White Goods (128; 2588)
+
+Consumer Goods (272; 3678)
+
+Construction (645; 925)
+
+Transport (71; 1702)
+
+Business Services (71; 2788)
+
+Consumer Services (134; 6132)
+
+Scops Conv. t-test Scops Conv. t Scops Conv. t Scops Conv. t Scops Conv. t Scops Conv. t Scops Conv. t L 64 61 NS 79 63 NS 71 51 *** 61 93 *** 40 66 *** 47 56 * 108 66 * K 1668 2718 *** 4401 1649 NS 1600 1319 NS 958 1220 *** 1113 1933 *** 561 1891 *** 539 1538 *** K /L 20.8 31.3 *** 20.2 19.0 NS 20.5 20.2 NS 14.1 14.1 NS 25.7 32.7 ** 17.1 16.7 NS 9.8 18.7 *** VA/L 31.4 36.4 *** 30.3 34.2 *** 30.8 31.3 NS 29.3 30.2 *** 35.9 32.6 NS 37.1 40.3 ** 21.6 26.4 *** % Women 22.8 22.6 NS 19.8 22.3 NS 40.5 48.3 *** 6.2 7 *** 10.6 15.2 *** 20.9 44.4 *** 32.0 66.3 *** % Manag. 16.4 18.6 *** 20.4 23.9 *** 15.8 17.4 ** 19.3 18.6 NS 8.3 12.9 *** 9.3 27.8 *** 7.4 16.6 *** % Superv. 6.6 7.2 NS 7.6 8.4 NS 6.6 8.6 *** 4.7 5.1 *** 7.1 11.3 ** 6.9 18.0 *** 12.4 18.0 * ∆ L (%) 3.3 3.4 NS 2.9 4.8 * 0.6 2 * 2.3 0.9 ** 1.1 3.7 ** 5.1 5.9 NS 8.9 3.9 NS ∆Κ (%) 10.0 7.2 * 13.5 7.3 ** 5.1 5.2 NS 8.8 6.2 *** 8.6 5.9 NS 18.6 9.7 *** 11.0 7.7 NS ∆(Κ/L) (%) 12.3 5.3 ** 11.4 5.6 * 6.7 6.1 NS 7.9 6.1 NS 10.3 4.6 NS 14.1 8.7 NS 5.2 8.3 NS
+
+***, ** and *: the means are significantly different at the 1%, 5% and 10% levels respectively; NS: difference is not statistically different from zero. 
+° Observations on conventional firms weighted by inverse strata sampling probabilities. 
+
+Table 2. Variable Means, Data Set 2, Firms with 20 or More Employees, 1989-1996 (€ 1000s)
+
+Capital Goods (303; 4447)
+
+Printing & Pub. (503; 1219)
+
+Paper and Wood (92; 2095)
+
+Metals (218; 4041)
+
+Industry 
+(max n scops; conv. 
+firms) 
+
+| | Scops | Conv. | t-test | Scops | Conv. | t-test | Scops | Conv. | t-test | Scops | Conv. | t-test |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| L | 57 | 329 | *** | 70 | 305 | *** | 87 | 310 | *** | 50 | 365 | *** |
+| K | 1973 | 12456 | *** | 3558 | 13071 | *** | 3180 | 29460 | *** | 2280 | 24934 | *** |
+| K/L | 31.12 | 29.71 | NS | 40.99 | 38.94 | NS | 30.26 | 58.73 | *** | 39.83 | 43.85 | NS |
+| VA/L | 33.08 | 39.80 | *** | 39.70 | 42.85 | *** | 33.00 | 42.07 | *** | 34.60 | 37.34 | NS |
+| % Women | 9.3 | 17.7 | *** | 32.1 | 43.7 | *** | 26.3 | 32.2 | NS | 17.2 | 24.2 | *** |
+| % Managerial | 7.7 | 31.9 | *** | 11.7 | 21.2 | *** | 9.6 | 19.0 | *** | 7.5 | 22.1 | *** |
+| % Superv. | 10.1 | 9.4 | NS | 6.8 | 12.8 | *** | 3.7 | 8.2 | *** | 6.0 | 6.9 | NS |
+| ∆L (%) | -1.6 | -1.3 | NS | -0.4 | -1.9 | * | -2.2 | -1.0 | NS | 0.9 | -1.0 | * |
+| ∆K (%) | 6.6 | 4.6 | NS | 4.8 | 4.8 | NS | 10.4 | 5.9 | * | 7.8 | 5.7 | NS |
+
+∆(K/L) (%) 9.9 8.2 NS 9 8.7 NS 13.6 9.2 NS 8.5 8.8 NS ***, ** and *: the means are significantly different at the 1%, 5% and 10% levels respectively; NS: difference is not statistically different from zero.
+
+October 09 29 
+Table 3. Productivity differential : GLS estimates, Data Set 1 
+Dependent Variable: Log(Value Added); 1987-1990 
+
+| | No Controls | Controls: Labor Composition | Controls: Labor Composition & Market Share |
+| --- | --- | --- | --- |
+| Capital Goods | -0.043 | -0.062 | -0.062 |
+| | (0.88) | (1.18) | (1.17) |
+| White Goods | * -0.100 | | |
+| | | -0.086 | -0.081 |
+| | (1.73) | (1.48) | (1.37) |
+| Consumer Goods | -0.012 (0.24) | 0.072 (1.33) | 0.079 (1.44) |
+| Construction | -0.047* (1.66) | -0.006 (0.23) | -0.006 (0.25) |
+| Transport | 0.047 (0.56) | -0.107 (1.02) | -0.101 (0.91) |
+| Business Services | -0.145 (1.16) | -0.079 (0.19) | -0.083 (0.20) |
+| Consumer Services | 0.019 (0.15) | 0.005 (0.04) | -0.042 (0.30) |
+
+Asymptotic t-ratios in parentheses; ***, ** and *: significant at the 1%, 5% and 10% levels respectively.
+
+Table 4. Productivity differential, Data Set 2 Dependent Variable: Log(Value Added); 1989-1996
+
+GLS, firms w/ 20 employees or more GLS w/ small SCOPs GMM w/ small SCOPs No controls Controls: Labor Composition
+
+No controls
+
+No controls
+
+Controls: Labor Composition
+
+Controls: Labor Composition
+
+Controls: 
+Labor 
+Composition 
+& Market 
+Share 
+Controls: 
+Labor 
+Composition 
+& Market 
+Share 
+Controls: 
+Labor 
+Composition 
+& Market 
+Share 
+
+-0.071 (0.53)
+
+Capital Goods -0.374*** (6.42)
+
+-0.151*** (2.83)
+
+-0.378*** (-7.42)
+
+-0.149*** (-3.00)
+
+0.042 (0.65)
+
+0.086 (1.36)
+
+-0.058 (-0.92)
+
+Printing & Publishing -0.394*** (4.13)
+
+-0.567*** (-7.27)
+
+| -0.089* (-1.81) | 0.044 (0.34) | 0.107 (1.30) | 0.088 (1.17) |
+| --- | --- | --- | --- |
+| | | ** 0.088 | ** 0.074 |
+| -0.104* | -0.069 | | |
+| (-1.67) | (0.50) | (2.22) | (2.18) |
+| | | *** 0.217 | *** 0.183 |
+| 0.162 | 0.348*** | | |
+| (1.44) | (3.18) | (3.72) | (5.67) |
+| 0.004 (0.06) | 0.123 (1.51) | 0.031 (0.40) | 0.028 (0.35) |
+
+Paper and Wood 0.010 (0.08)
+
+0.004 (0.03)
+
+-0.056 (-0.48)
+
+-0.062 (-0.54)
+
+0.360*** (3.04)
+
+Metals -0.126 (1.61)
+
+-0.116 (1.51)
+
+0.004 (0.05)
+
+-0.182*** (-2.77)
+
+-0.139** (-2.10)
+
+Asymptotic t-ratios in parentheses; ***, ** and *: significant at the 1%, 5% or 10% levels respectively.
+
+Table 5. Predicted Output Using the Two Different Estimated Technologies, in Logs Data Set 1, GLS, 1987-1990 Capital Goods White Goods Consumer Goods Construction Transport Business Services
+
+Consumer Services
+
+| SCOPs SCOP Technology | 7.02 | 8.55 | 8.48 | 8.80 | 11.51 | 10.14 | 7.07 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Conventional Technology | 7.06 | 7.53 | 8.56 | 7.30 | 7.54 | 6.96 | 6.96 |
+| t-test | NS | *** | NS | *** | *** | *** | NS |
+| Conventional Firms SCOP Technology | 7.48 | 8.71 | 8.66 | 10.01 | 13.05 | 10.76 | 7.08 |
+| Conventional Technology | 7.65 | 7.76 | 8.78 | 8.00 | 8.00 | 7.14 | 7.04 |
+
+t-test *** *** ** *** *** *** NS ***, ** and *: the means are significantly different at the 1%, 5% and 10% levels respectively; NS: difference is not statistically different from zero.
+
+Table 6. Predicted Output Using the Two Different Estimated Technologies, in Logs Data Set 2, GLS, 1989-1996
+
+| | Capital Goods GLS 20 employees or more | GLS w/ small SCOPs | GMM w/ small SCOPs | Printing and Publishing GLS 20 employees or more | GLS w/ small SCOPs | GMM w/ small SCOPs | Paper and Wood GLS 20 employees or more | GLS w/ small SCOPs | GMM w/ small SCOPs | Metals GLS 20 employees or more | GLS w/ small SCOPs | GMM w/ small SCOPs |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| SCOPs SCOP Technology | 7.21 | 6.49 | 6.51 | 7.84 | 6.26 | 6.13 | 7.42 | 6.31 | 6.20 | 7.50 | 6.29 | 6.28 |
+| Conventional Technology | 7.34 | 6.64 | 6.05 | 7.50 | 5.95 | 5.95 | 7.44 | 6.33 | 5.19 | 7.40 | 6.55 | 6.20 |
+| t-test | * | ** | *** | *** | *** | ** | NS | NS | *** | NS | *** | NS |
+| Conventional Firms SCOP Technology | 8.45 | 8.59 | 10.25 | 9.35 | 9.33 | 9.97 | 8.96 | 9.17 | 7.79 | 8.72 | 8.38 | 7.91 |
+| Conventional Technology | 8.84 | 8.84 | 9.07 | 9.02 | 9.02 | 9.06 | 9.11 | 9.11 | 8.99 | 9.03 | 9.02 | 9.05 |
+| t-test | *** | *** | *** | *** | *** | *** | *** | ** | *** | *** | *** | *** |
+
+***, ** and *: the means are significantly different at the 1%, 5% and 10% levels respectively NS: difference is not statistically different from zero.
+
+Table 7. Average Observed Returns to Scale, GLS
+
+| Data Set 1, 1987-1990 | | | | | | | | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | Capital Goods | White Goods | Consumer Goods | Construction | Transport | Business Services | Consumer Services |
+| | Scops | 0.824°°° | 0.959 | 0.845°°° | 1.015 | 0.865°° | 0.803°° | 0.849 |
+| Returns to Scale | Others | 0.809°°° | 0.961°° | 0.844°°° | 1.023 | 0.873°° | 0.843°° | 0.808° |
+| | t-test | *** | NS | NS | *** | *** | ** | NS |
+| Data Set 2, firms with 20 employees or more, 1989-1996 | | Capital Goods | Printing & Publishing | | Paper & Wood | | Metals | |
+
+Scops 1.018 1.084°°° 1.344°°° 1.043 Returns to Scale Others 0.928 0.929°°° 0.879°°° 0.975 t-test *** *** *** *** ***, ** and *: difference significant at the 1%, 5% and 10% levels respectively; °°°, °° and °: returns to scale are significantly different from 1 at the 1%, 5% and 10% levels respectively.
+
+Table 8. Returns to Scale Keeping Technology Constant, at Scop and Conventional Input Levels Data Set 1, GLS, 1987-1990
+
+| SCOP Technology SCOPs | Capital Goods 0.866ººº | White Goods 0.873ºº | Consumer Goods 0.955 | Construction 0.959 | Transport 0.931 | Business Services 0.633 | Consumer Services 0.786 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Conventional Firms | 0.874ººº | 0.860ººº | 0.959 | 1.012 | 1.082 | 0.733 | 0.827 |
+| t-test | ** | *** | NS | *** | *** | *** | NS |
+| Conventional Technology SCOPs | 0.791ººº | 0.951ººº | 0.989 | 1.052ººº | 0.862ººº | 0.848ºº | 0.902ººº |
+| Conventional Firms | 0.778ººº | 0.954ººº | 0.993 | 1.035ºº | 0.877ººº | 0.861ºº | 0.921ºº |
+| t-test | *** | * | NS | *** | *** | NS | *** |
+
+***, ** and *: the means are significantly different at the 1%, 5% and 10% levels respectively; NS: difference is not statistically different from zero. 
+°°°, °° and °: returns to scale are significantly different from 1 at the 1%, 5% and 10% levels respectively. 
+
+Table 9. Returns to Scale KeepingTechnology Constant, at SCOP and Conventional Input Levels Data Set 2, GLS, 1989-1996, Firms with More than 20 Employees Only
+
+Paper & Wood Metals
+
+Capital Goods Printing and Publishing
+
+| SCOP Technology SCOPs | 0.957 | 1.063 | 1.061 | 0.862°°° |
+| --- | --- | --- | --- | --- |
+| Conventional Firms | 0.723ºº | 1.095 | 0.813 | 0.489º°° |
+| t-test | *** | *** | *** | *** |
+| Conventional Technology SCOPs | 0.923ºº | 1.052 | 1.043 | 0.905ººº |
+| Conventional Firms | 1.008 | 1.078 | 1.064 | 0.997 |
+| t-test | *** | *** | ** | *** |
+
+***, ** and *: the means are significantly different at the 1%, 5% and 10% levels respectively; NS: difference is not statistically different from zero. 
+°°°, °° and °: returns to scale are significantly different from 1 at the 1%, 5% and 10% levels respectively. 
+
+#### Data Appendix
+
+##### 1. Variable Definitions
+
+L Average monthly employment level K Fixed assets at book value (end calendar year) in 1990 euros VA Value Added (standard accounting definition) in 1990 euros %Women Percentage of women in the firm’s workforce %Managerial Percentage of managers in the firm’s workforce %Supervisory Percentage of technicians and supervisors in firm’s workforce
+
+product at the three-digit level
+
+K and VA have been deflated by the French consumer price index, and values in French Francs (for years before the adoption of the euro) have been converted into euros.
+
+##### 2. Data Set Construction and Numbers of Observations Data Set Construction
+
+Data Set 1 was constructed by merging an existing data set constructed for a previous project from the French Annual Enterprise Survey (Enquête Annuelle d’Entreprise) tax data (the Bilans Industriels et Commerciaux data base) and information from the Structure des Emplois (Workforce composition) survey, with data from the CG-SCOP data base Centrale des Bilans, which includes all accounts of all French worker cooperatives, as well as limited information on workforce composition . Data Set 2 was constructed by merging data from the CG-SCOP data
+
+Market share Ratio of firm’s sales to total sales of industry of the firm’s main
+
+October 09 37 base with the French Annual Enterprise Survey and the Structure des Emplois survey. Industries in which the number of SCOPs represented less than 2% of the number of firms available in the other data sets were eliminated, as well as industries in which there were no SCOPs (nuclear electricity generation, Mining and Pharmaceuticals). Observations on about 100 cooperative firms that appeared in the conventional firm samples were used to test that variable definitions were consistent between SCOP and official survey sources. The resulting numbers of observations are presented in Tables A1 and A2 below.
+
+Table A1. Numbers of Observations and Firms, Data Set 1 (1987-1990)
+
+Capital Goods White Goods Consumer Goods
+
+Construction Services Transport
+
+SCOP Conv SCOP Conv SCOP Conv SCOP Conv SCOP Conv SCOP Conv Obs. 157 3211 128 2583 272 3660 645 914 134 6122 71 1700 Firms 47 1084 41 909 88 1265 194 295 44 2370 22 611
+
+Table A2. Numbers of Observations and Firms, Data Set 2 (1989-1996)
+
+Capital Goods White Goods Metals Paper & Wood
+
+Printing and Publishing SCOP Conv SCOP Conv SCOP Conv SCOP Conv SCOP Conv Obs. 303 5311 132 2701 221 4412 92 2362 564 2063
+
+October 09 38 Firms 43 873 20 434 30 694 13 373 80 326
+
+##### 3. Consistency between Data Sets
+
+Two industries (Capital Goods and White Goods) and two years (1989 and 1990) which were present in both data sets, were used to verify consistency between the two data sets. . In Data Set 2, the White Goods industry had two few usable observations on SCOPs, so that afe estimates of the production functions could not be obtained. Consequently, the industry was removed from Data Set 2, though it was used for consistency checks.The conventional firm sample in data set 2, which was constructed to represent manufacturing, is substantially larger relative to the average SCOP with 20 employees or more than the corresponding sample in Data Set 1. However, the substance of the results is not affected. Tables A3, A4 and A5 below present comparisons of variable means and estimates for the two industries and years using the two data sets
+
+Table A3. Variable Means (unweighted) Capital Goods, Data Sets 1 and 2, 1989-1990
+
+| | Data Set 1 unweighted (conventional 1675, SCOPs 77) | | | Data Set 2 Extended (conventional 1088, SCOPs 73) | | | Data Set 2 (1088,34) (firms with more 19 emp) | | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | SCOP | Conv. | t | SCOP | Conv. | t | SCOP | Conv. | t |
+| L | 62 | 176 | *** | 35 | 347 | *** | 61 | 347 | *** |
+| K | 1361 | 11123 | *** | 774 | 10370 | *** | 1524 | 11212 | *** |
+| K /L | 24.4 | 36.4 | *** | 19.4 | 25.9 | *** | 24.4 | 25.9 | NS |
+| VA/L | 31.4 | 37.8 | *** | 35.9 | 40.5 | *** | 34.9 | 40.5 | *** |
+| %Women | 23.1 | 22.3 | NS | 9.8 | 17.6 | *** | 9.4 | 17.6 | *** |
+| %Managerial | 16.1 | 18.8 | ** | 9.5 | 30.8 | *** | 7.3 | 30.8 | *** |
+| %Superv. | 6.1 | 7.1 | ** | 6.8 | 9.6 | ** | 9.3 | 9.6 | NS |
+| %∆L/L | 3.3 | 3.1 | NS | 1.6 | 1.8 | NS | 1.3 | 1.9 | NS |
+| %∆K/K | 8.2 | 7.5 | NS | 17.6 | 8.8 | *** | 10.7 | 8.5 | NS |
+
+***, ** and *: the means are significantly different at the 1%, 5% and 10% levels respectively, financial variables are in € 1000s
+
+Table A4. Variable Means (unweighted) White Goods, Data Sets 1 and 2, 1989-1990
+
+| | Data Set 1 unweighted (conventional 1334, SCOPs 63) | | | Data Set 2 extended (conventional 403, SCOPs 27) | | | Data Set 2 (403;7) (firms with more 19 emp) | | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | SCOP | Conv. | T | SCOP | Conv. | T | SCOP | Conv. | T |
+| L | 85 | 157 | *** | 30 | 336 | *** | 94 | 336 | *** |
+| K | 4700 | 5694 | NS | 356 | 10643 | *** | 1007 | 11875 | *** |
+| K /L | 25.8 | 23.7 | NS | 14.9 | 27.8 | *** | 17.5 | 27.8 | ** |
+| VA/L | 31.7 | 36.4 | *** | 23.7 | 36.5 | *** | 29.5 | 36.5 | NS |
+| %Women | 19.9 | 23.7 | NS | 29 | 42.1 | ** | 26.2 | 42.1 | * |
+| %Managerial | 19.2 | 25.6 | *** | 9.8 | 19.9 | *** | 5.7 | 19.9 | **** |
+| %Superv. | 7.7 | 8.7 | NS | 3.5 | 9.7 | *** | 6.6 | 9.7 | NS |
+| ∆L (%) | 3.7 | 4.1 | NS | 11.4 | 0.8 | NS | -9 | 0.8 | NS |
+| ∆K (%) | 14.2 | 6.8 | ** | 12.8 | 9.4 | NS | 10.9 | 9.4 | NS |
+
+***, ** and *: the means are significantly different at the 1%, 5% and 10% levels respectively, financial variables are in € 1000s
+
+Table A5. Productivity Differential, GLS Estimations,
+
+Data Sets 1 and 2, Common Industries, 1989-1990
+
+| | | Data Set 1 Dependent variable: Log Value Added | | Data Set 2 Dependent variable: Log Value Added | |
+| --- | --- | --- | --- | --- | --- |
+| Capital Goods Max N=1567 | | White Goods Max N=1246 | Capital Goods Max N=1350 | White Goods Max N=685 | |
+| | - 0.085 | * | | | |
+| | | | - 0.116* | - 0.411*** | - 0.219 |
+| No controls | (1.68) | | (1.83) | (5.62) | (1.46) |
+| | - 0.098 | * | * - 0.116 | | |
+| Controls: Labor | | | | - 0.070 | - 0.002 |
+| Composition | | (1.67) | (1.25) | (0.98) | (0.01) |
+| | | | * - 0.110 | | |
+| Controls: Labor | - 0.098 | | | - 0.020 | - 0.035 |
+| Composition and | | (1.67) | (1.67) | (0.27) | (0.22) |
+| Market Share | | | | | |
+
+***, ** and *: statistically significant at the 1%, 5% and 10% levels respectively
+
+October 09 42 4. Variable Means
+
+Table A6. Variable Means, Data Set 1, unweighted, 1987-1990 (€ 1000s)
+
+Capital Goods (157; 3217)
+
+White Goods (128; 2588)
+
+Consum. Goods (272; 3678)
+
+Construction (645; 925)
+
+Transport (71; 1702)
+
+Business Services (71; 2788)
+
+Consumer Services (47; 1412)
+
+| | SCOP | Conv. | t | SCOP | Conv. | t | SCOP | Conv. | t SCOP | Conv. | t | SCOP | Conv. | t | SCOP | Conv. | t | SCOP | Conv. | t |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| L | 64 | 177 | *** | 79 | 160 | *** | 71 | 94 | *** 61 | 139 | *** | 40 | 188 | *** | 47 | 76 | *** | 108 | 99 | NS |
+| K | 1668 | 10546 | *** | 4401 | 5671 | NS | 1600 | 2965 | *** 958 | 1727 | *** | 1113 | 2221 | *** | 561 | 3675 | ** | 539 | 1707 | *** |
+| K /L | 20.8 | 33.5 | *** | 20.2 | 21.9 | NS | 20.5 | 21.7 | NS 14.1 | 13.8 | NS | 25.7 | 32.6 | ** | 17.1 | 16.7 | NS | 9.8 | 18.4 | *** |
+| VA/L | 31.4 | 36.9 | *** | 30.3 | 35.3 | *** | 30.8 | 32.0 | NS 29.3 | 30.4 | ** | 35.9 | 32.8 | NS | 37.1 | 40.2 | * | 21.6 | 26.2 | *** |
+| %Women | 22.8 | 22.6 | NS | 19.8 | 23.5 | * | 40.5 | 49.1 | *** 6.2 | 7 | *** | 10.6 | 15.7 | *** | 20.9 | 44.0 | *** | 33.0 | 65.9 | *** |
+| %Manag. | 16.4 | 19 | *** | 20.4 | 25.4 | *** | 15.8 | 17.8 | *** 19.3 | 18.9 | NS | 8.3 | 13.2 | *** | 9.3 | 27.4 | *** | 7.4 | 16.3 | *** |
+| %Superv. | 6.6 | 7.2 | NS | 7.6 | 8.9 | *** | 6.6 | 8.9 | *** 4.7 | 5.2 | ** | 7.1 | 11.7 | ** | 6.9 | 18.0 | *** | 12.4 | 17.2 | NS |
+| ∆ L (%) | 3.3 | 3 | NS | 2.9 | 4 | NS | 0.6 | 1.5 | NS 2.3 | 0.9 | * | 1.1 | 3.8 | * | 5.1 | 6.0 | NS | 8.9 | 3.7 | NS |
+| ∆Κ (%) | 10.0 | 7.1 | * | 13.5 | 6.6 | *** | 5.1 | 5.1 | NS 8.8 | 6.1 | ** | 8.6 | 5.9 | NS | 18.6 | 9.7 | *** | 11.0 | 7.6 | NS |
+| ∆(Κ/L) (%) | 12.3 | 5.4 | ** | 11.4 | 5.3 | ** | 6.7 | 6.4 | NS 7.9 | 6.2 | NS | 10.1 | 4.6 | NS | 14.1 | 8.8 | NS | 5.2 | 8.4 | NS |
+
+***, ** and *: the means are significantly different at the 1%, 5% and 10% levels respectively
+
+Table A7. Variable Means, Data Set 2, including small SCOPs, 1989-1996 (€ 1000s)
+
+| Industry (max n scops; conv. firms) | Capital Goods (max n=303; 4447) | | | White Goods (max n=128; 1700) | | | Printing & Pub. (max n= 503; 1219) | | | Paper and Wood (max n=92; 2095) | | | Metals (max n=218; 4041) | | |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | Scops | Conv. | t-test | Scops | Conv. | t-test | Scops | Conv. | t-test | Scops | Conv. | t-test | Scops | Conv. | t-test |
+| L | 32 | 328 | *** | 28 | 340 | *** | 28 | 305 | *** | 42 | 310 | *** | 25 | 365 | *** |
+| K | 1039 | 12454 | *** | 464 | 13352 | *** | 1299 | 12926 | *** | 1292 | 29191 | *** | 1013 | 24648 | *** |
+| K/L | 26.42 | 30.02 | *** | 14.92 | 31.97 | *** | 29.96 | 39.54 | *** | 22.72 | 67.85 | *** | 30.18 | 45.38 | *** |
+| VA/L | 34.94 | 40.40 | *** | 23.12 | 36.14 | *** | 35.14 | 42.88 | *** | 30.26 | 42.76 | *** | 32.20 | 37.34 | *** |
+| % Women | 10.5 | 18.7 | *** | 26 | 43 | *** | 30.5 | 43.7 | *** | 16.5 | 32.2 | *** | 16.3 | 24.2 | *** |
+| %Managerial | 9.9 | 31.9 | *** | 0.14 | 0.21 | *** | 18 | 21.2 | *** | 10.6 | 19 | *** | 10.8 | 22.1 | *** |
+| % Superv. | 8.8 | 9.4 | NS | 5.2 | 9.6 | *** | 4 | 12.8 | *** | 5.4 | 8.2 | *** | 5.8 | 6.9 | * |
+| ∆L (%) | 0.5 | -1.3 | ** | 2.7 | -1.2 | ** | -0.2 | -1.9 | ** | 1.52 | 1 | NS | 0.1 | -1.1 | ** |
+| ∆K (%) | 9 | 4.6 | *** | 7.5 | 5.6 | NS | 4.9 | 5.1 | NS | 9.1 | 5.9 | ** | 7.6 | 5.7 | NS |
+| ∆(K/L) (%) | 11.4 | 8.2 | * | 8.39 | 9.46 | NS | 8.4 | 8.7 | NS | 11 | 9.1 | NS | 11.3 | 8.8 | NS |
+
+***, ** and *: the means are significantly different at the 1%, 5% and 10% levels respectively; NS: difference is not statistically different from zero
+
+October 09 44 5. Estimates for Data Set 2 extended with small cooperatives
+
+Table A8. Returns to scale, Data Set 2, including small SCOPs, 1989-1996, GLS Estimates Capital Goods Printing & Publishing
+
+Paper & Wood
+
+Metals
+
+Scops 0.982 1.034 1.058 1.092° GLS Estimates Others t-test
+
+0.935 ***
+
+0.931 ***
+
+0.863 ***
+
+0.990 *** Scops 1.104°°° 1.093°°° 1.091°°° 1.060°° GMM Estimates Others t-test
+
+1.015 ***
+
+1.039°° ***
+
+1.029 ***
+
+1.010 ***
+
+***, ** and *: difference significant at the 1%, 5% and 10% levels respectively; 
+°°°, °° and °: returns to scale are significantly different from 1 at the 1%, 5% and 10% levels respectively. 
+
+TEPP Working Papers 2010
+
+10-1. Are young French jobseekers of ethnic immigrant origin discriminated against? A 
+controlled experiment in the Paris area 
+Emmanuel Duguet, Noam Leandri, Yannick L’Horty, Pascale Petit 
+
+10-2. Couple’s Work Hours, Satisfaction and reconciling Work and family Life Nathalie Georges, Dominique Méda, Danièle Trancart
+
+10-3. Housing ownership, social housing and unemployment: an econometric analysis of 
+the Paris area 
+Emmanuel Duguet, Yannick L’Horty, Florent Sari 
+10-4. Do Public Subsidies Have an Impact on New Firm Survival? An Empirical Study 
+with French Data 
+Lionel Désiage, Richard Duhautois, Dominique Redor 
+10-5. The effect of social security payroll tax reductions on employment and wages: an 
+evaluation of the 2003 French reform 
+Matthieu Bunel, Fabrice Gilles, Yannick L’Horty 
+
+10-6. What are Entrepreneurs’ Objectives When Starting a New Business? Lionel Désiage
+
+10-7. Health and Early Retirement: Evidence from French Data for individuals Thomas Barnay, Karine Briard
+
+10-8. Ageing, chronic conditions and the evolution of future drugs expenditures Thomas Barnay, Sophie Thiébaut, Bruno Ventelou
+
+10-9. Entrepreneurial motives and performance: Why might better educated 
+entrepreneurs be less successful? 
+Arnab Bhattacharjee, Jean Bonnet, Nicolas Le Pape, Régis Renault 
+
+10-10. Returns to firm-provided training in France: Evidence on mobility and wages Arnaud Chéron, Bénédicte Rouland, François-Charles Wolff
+
+10-11. Taxation of early retirement windows and delaying retirement: the French 
+experience 
+Pierre-Jean Messe 
+10-12. Pre Entry Motives into Entrepreneurship and Post Entry Entrepreneurial 
+Orientation 
+Jean Bonnet, Nicolas Le Pape 
+
+10-13. Hiring Practices, Employment Protection and Temporary Jobs Anne Bucher
+
+10-14. Young-in Old-out: a new evaluation Michela Bia, Pierre-Jean Messe, Roberto Leombruni
+
+10-15. On the impact of the TFP growth on the employment rate: does training on-the 
+job matter? 
+Eva Moreno-Galbis 
+
+10-16. The dynamics of youth labor market integration Anne Bucher
+
+10-17. Fostering the potential endogenous development of European regions: a spatial 
+dynamic panel data analysis of the Cohesion Policy on regional convergence over the 
+period 1980-2005 
+Salima Bouayad-Agha, Nadine Turpin, Lionel Védrine 
+10-18. Cost-saving or Cost-enhancing Mergers: the Impact of the Distribution of Roles 
+in Oligopoly 
+Nicolas Le Pape, Kai Zhao 
+
+10-19. Bankruptcy Risk, Product Market Competition and Horizontal Mergers Bernard Franck, Nicolas Le Pape
+
+10-20. Endogenous Job Destructions and the Distribution of Wages Arnaud Chéron, Bénédicte Rouland
+
+10-21. Employment Protection Legislation and Adverse Selection at the Labor Market 
+Entry 
+Anne Bucher, Sébastien Ménard 
+
+TEPP Working Papers 2011
+
+11-1. The French "Earned Income Supplement" (RSA) and back-to-work incentives Denis Anne, Yannick L’Horty
+
+11-2. The effect of place of residence on access to employment: a field experiment on qualified young job applicants in Ile-de-France Yannick L’Horty, Emmanuel Duguet, Loïc du Parquet, Pascale Petit, Florent Sari
+
+11-3. Why is there a faster return to work near the border? Jonathan Bougard
+
+11-4. Residential Discrimination and Ethnic Origin: An experimental assessment in the 
+Paris suburbs 
+Emmanuel Duguet, Yannick L’Horty, Pascale Petit 
+11-5.The Fateful Triangle : Complementarities between product, process and 
+organisational innovation in the UK and France 
+Gérard Ballot, Fathi Fakhfakh, Fabrice Galia, and Ammon Salter 
+11-6. How important is innovation? A Bayesian factor-augmented productivity model on 
+panel data 
+Georges Bressona, Jean-Michel Etienne, Pierre Mohnen 
+11-7. Fiscal Shocks in a Two Sector Open Economy 
+Olivier Cardi, Romain Restout 
+
+The TEPP Institute
+
+The CNRS Institute for Labor Studies and Public Policies (the TEPP Institute, FR n°3126 CNRS) gathers together research centres specializing in economics and sociology:
+
+• the Centre d'Etudes de l'Emploi (Centre for Employment Studies), CEE, Public Administrative Organization, under the leadership of the Ministers of Work and Research 
+• l'Equipe de Recherche sur les Marchés, l'Emploi et la Simulation (Research Team on Markets, Employment and Simulation), ERMES, University of Paris II Panthéon Assas 
+• the Centre d'Etudes des Politiques Economiques de l'université d'Evry (Research Centre focused on the analysis of economic policy and its foundations and implications), EPEE, University of Evry Val d’Essonne 
+• the Centre Pierre Naville (Research on Work and Urban Policies), CPN, University of Evry Val d’Essonne 
+• l'Equipe de Recherche sur l'Utilisation des Données Temporelles en Economie (Research Team on Use of Time Data in Economics), ERUDITE, University of Paris Est Créteil and University of Paris-Est Marne-la-Vallée 
+• the Groupe d'Analyse des Itinéraires et des Niveaux Salariaux (The Group on Analysis of Wage Levels and Trajectories), GAINS, University of the Maine 
+
+The TEPP Institute brings together 147 researchers and research professors and 100 PhD students who study changes in work and employment in relation to the choices made by firms and analyse public policies using new evaluation methods.
+
+#### www.tepp.eu
+

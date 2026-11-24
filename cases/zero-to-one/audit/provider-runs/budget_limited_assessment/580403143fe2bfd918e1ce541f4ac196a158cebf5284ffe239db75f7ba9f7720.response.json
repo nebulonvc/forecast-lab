@@ -1,0 +1,28 @@
+{
+  "id": "de5553f3-4906-4003-a86a-63afe6886586",
+  "object": "chat.completion",
+  "created": 1794201443,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000031187-000031210\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性判断：若企业先靠品牌而非实力经营，则存在很大隐患。原文以雅虎（梅耶尔2012年任CEO后重品牌、收购Tumblr、个人明星效应）为案例，但未给出可检验的量化指标或明确期限；观察窗口为2012年至cutoff 2026-11-09。\",\"reason\":\"该判断是未明确触发的条件命题，原文仅以雅虎作为说明性案例，未提供可独立核验的隐患结果指标。条件是否成立及隐患是否实现均缺乏可操作化证据。\",\"limitation\":\"原文未定义“实力经营”与“隐患”的具体口径，也无量化期限；雅虎案例属作者叙述，不能直接作为条件命题成立的独立证据。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4220,
+    "completion_tokens": 247,
+    "total_tokens": 4467,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3452
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "txt-fb0f41f842-000413821-000414165",
+  "r3_revision": true,
+  "plan": {
+    "queries": [],
+    "note": "r3 撤回对象代理计分，本轮不新增检索。"
+  },
+  "select": {
+    "urls": [],
+    "reason": "本轮没有新的同对象来源入选。没有把 executed 写成 true。"
+  },
+  "assess": {
+    "id": "txt-fb0f41f842-000413821-000414165",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "以英格兰银行单一储备为基础的银行制度不能被改变，也不能换成各银行自留储备；除革命外无从做到，而并没有会引起革命的事。",
+    "reason": "原裁决“错误”用1946年英格兰银行国有化。该法改变的是所有权与公共控制，没有把单一储备改成各行自留储备。没有同对象证据，撤回计分。",
+    "limitation": "1946年法把英格兰银行股本转入公共所有并置于公共控制，没有建立各行自留储备。所有权变更不是储备制度被替换。",
+    "evidence_ids": [],
+    "method": "撤回原错误。不把国有化当成单一储备改为各行自留储备的证据。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [],
+    "remaining_gap": "缺同对象证据：单一储备的银行制度是否被改为各银行自留储备，以及该改变是否不是革命。1946年国有化不能填这个缺口。"
+  },
+  "semantic_review": {
+    "id": "txt-fb0f41f842-000413821-000414165",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": []
+}

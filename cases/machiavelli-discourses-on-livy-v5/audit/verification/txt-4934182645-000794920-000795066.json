@@ -1,0 +1,63 @@
+{
+  "claim_id": "txt-4934182645-000794920-000795066",
+  "logged_at": "2026-11-20T10:50:00Z",
+  "plan": {
+    "object": "被武力逼出、关系公共福利的承诺",
+    "conditions": ["承诺是被武力逼出来的", "它关系公共福利", "逼出它的压力已经撤去"],
+    "quantifier": "always",
+    "result": "压力一撤就被打破，打破的一方并不以此为耻",
+    "time_window": "1531年之后",
+    "counterevidence_needed": "压力撤去之后，被逼的一方仍然遵守这项公共承诺"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "purpose": "首轮一正一反",
+        "support_query": "Convention of Canton 27 May 1841 ransom British withdrew then hostilities resumed",
+        "counter_query": "city paid an extorted ransom and the attacker kept the promised peace after the army left",
+        "support_result": "1841年5月27日广州和约是赎城。英军收到付款后撤走，广州未被占领。1841年稍后在璞鼎查之下战事再起。",
+        "counter_result": "弗雷德里克1864年的赎金出现在检索结果里。纽约时报页面于2026-11-20抓取超时，摘要不存成引文。845年巴黎围城早于1531。",
+        "adopted": false
+      },
+      {
+        "round": 2,
+        "purpose": "补轮：下载已知的广州页，并再试弗雷德里克页",
+        "fetch": "https://en.wikipedia.org/wiki/Convention_of_Canton",
+        "fetch_result": "正文已存档。七天付款期限写在英军仍能威胁城市的时候，英军收款后才撤走。",
+        "fetch_failure": "https://www.nytimes.com/1951/09/30/archives/frederick-md-liberated-at-last-civil-war-ransom-loan-paid-off.html 于2026-11-20抓取超时",
+        "adopted": false
+      }
+    ],
+    "adaptive_rounds": 1,
+    "stop_reason": "广州页写的是压力还在时付款，以及英方后来另起战事。这不是被逼一方在压力撤去后打破或遵守承诺。一次战事也不能证明总是。",
+    "sources": [
+      {"url": "https://en.wikipedia.org/wiki/Convention_of_Canton", "fetched": true},
+      {"url": "https://www.nytimes.com/1951/09/30/archives/frederick-md-liberated-at-last-civil-war-ransom-loan-paid-off.html", "fetched": false, "note": "2026-11-20抓取超时"}
+    ]
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-wiki-canton-1841"],
+    "scope": "总是打破的是被武力逼出、关系公共福利、并且压力已经撤去之后仍待履行的承诺。施压一方后来另打一仗，不是这个结果。",
+    "reason": "连续原文接在考迪纳峡谷之后：被武力逼出、关系公共福利的承诺，一旦压力撤去，总是会被打破，打破的一方并不以此为耻。1841年5月27日广州和约的存档正文写，条款实质上是广州为避免毁灭而付的赎金；英军收到付款后撤走，广州未被占领；条款没有解决底层争端，1841年稍后在璞鼎查之下战事再起。付款期限写的是七天内，当时英军仍能威胁城市，所以被逼的付款是在压力还在时履行的。后来再起的战事是英方更换全权代表之后的新战役，页面没有写清方在英军撤走后拒绝履行赎城承诺。一次再开战也不能证明总是打破。弗雷德里克页抓取超时，不用摘要。845年早于1531。所以不判。",
+    "limitation": "百科页没有研究出版日。超时页面没有正文。",
+    "method": "先确认被逼的是哪一方、压力撤去时承诺是否还未履行，再看总是。压力尚在时的付款和施压方的新战役都不充当反例或正例。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "广州赎款在撤军前付出。后来的战事不是被逼一方在压力撤去后毁约。一次事例也不能证明总是。"
+  }
+}

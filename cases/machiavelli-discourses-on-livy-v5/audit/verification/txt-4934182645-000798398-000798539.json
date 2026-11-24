@@ -1,0 +1,52 @@
+{
+  "claim_id": "txt-4934182645-000798398-000798539",
+  "logged_at": "2026-11-20T10:50:00Z",
+  "plan": {
+    "object": "法兰西人和德意志人",
+    "conditions": ["方法与本段所说的相同：贪婪、骄傲、残忍、背信，具体是收了钱却不履行恢复要塞或出兵的承诺"],
+    "quantifier": "always，in all circumstances，with all men alike",
+    "result": "性格相同，并且对所有人都用同样的方法",
+    "time_window": "1531年之后",
+    "counterevidence_needed": "法兰西或德意志在1531年之后收了钱，并履行了恢复要塞或出兵的承诺"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "purpose": "首轮一正一反",
+        "support_query": "French or German government took money and failed to restore a fortress it had promised after 1531",
+        "counter_query": "French government after 1531 returned a fortress it had been paid to restore",
+        "support_result": "维尔登施泰因是查理五世要求修道院重建城堡，不是收钱后不履行。比切和于利希是要塞沿革，不是这种收钱承诺。",
+        "counter_result": "布雷冈松和乌丹是领地回归王室，不是被人付钱后归还要塞。伊夫堡是弗朗索瓦一世自己修建。",
+        "adopted": false
+      }
+    ],
+    "adaptive_rounds": 0,
+    "stop_reason": "两边都没有1531年之后、法兰西或德意志收钱并履行或拒绝履行军事承诺的正文。",
+    "sources": []
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "总是使用同样方法，指的是本段写明的法兰西人和德意志人的贪婪、骄傲、残忍和背信。查理八世不归还比萨、皇帝收了佛罗伦萨的钱就折返，是作者举的近事，不用来给1531年之后评分。",
+    "reason": "连续原文先写法兰西人和德意志人充满贪婪、骄傲、残忍和背信，并以查理八世多次收款却不归还比萨、皇帝收下佛罗伦萨的军费后在维罗纳折返为例，然后说这些民族的性格总是一样，在一切情形下对所有人都用同样的方法。这两件例证都在出版之前。支持检索没有返回1531年之后收钱却不履行的同类承诺。反例检索返回的是要塞易主、王室收回自己的领地或国王自建堡垒，都不是被人付钱后归还要塞。一次无关的归还不能否定这个方法，没有同类履行也不能证明对所有人总是背信。所以不判。",
+    "limitation": "这些要塞页没有存成摘录，因为它们对不上收钱承诺。",
+    "method": "方法固定为本段的收钱而不履行。要塞产权变动不能换成这个方法。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "作者举的近事在1531年之前。检索到的要塞不是收钱后的履行或拒绝。"
+  }
+}

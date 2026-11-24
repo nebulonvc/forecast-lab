@@ -1,0 +1,47 @@
+{
+  "id": "txt-4934182645-000560409-000560628",
+  "plan": {
+    "object": "法国的高等法院，尤其是巴黎高等法院。原文说它甚至对国王本人宣判，并且一直是法律面对贵族时的无畏维护者。",
+    "condition": "should it ever at any future time suffer wrongs to pass unpunished, and should offences multiply。两项都要在1531年之后出现：冤屈不受惩罚，并且违法增多。",
+    "quantifier": "either ... or。要么在国家大乱中纠正，要么王国本身瓦解。只废除法院或王国后来结束，若没有前两项，就不进入这句。",
+    "result": "登记变化是 fall to pieces，或者以巨大扰乱来纠正。两者是条件成立后的分岔，不是法院停止办公本身。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "巴黎高等法院让冤屈不受惩罚且违法增多，而既没有巨大扰乱，王国也没有瓦解。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "Parlement of Paris ceased to punish noble offences before the French Revolution kingdom fell",
+      "counter_query": "Parlement of Paris condemned a prince and the French kingdom continued"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [
+      "https://www.siv.archives-nationales.culture.gouv.fr/siv/NP/FRAN_NP_050964",
+      "https://numerabilis.u-paris.fr/editions-critiques/patin/?let=0332&note=10&tnote=nfn"
+    ],
+    "dropped": "1653年巴黎高等法院把孔代亲王判处死刑，王国继续存在。这是它仍在惩罚，不是冤屈不受惩罚。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "at any future time",
+    "observation_end": null,
+    "evidence_ids": ["ev-an-parlement-1790"],
+    "scope": "1790年法院停止职能和1792年王国结束，不能代替“冤屈不受惩罚并且违法增多”。",
+    "reason": "法国国家档案页写，巴黎高等法院于1790年10月14日停止一切职能。这是机构结束，不是它让冤屈不受惩罚、违法因而增多。1653年它仍能对血亲亲王孔代判处死刑，王国并未因此瓦解，所以那一次也不满足条件。决定性缺口是：1531年之后没有正文同时写出巴黎高等法院放任冤屈、违法增多，以及随后是大乱纠正还是王国瓦解，或者两者都没有。",
+    "limitation": "档案页没有把1790年10月14日写成带出版日的研究。孔代死刑的信件注没有存成可引用正文，只用它说明检索没有给出条件，不拿来当反证。",
+    "method": "先要两项条件都写在正文里，再看大乱或瓦解。机构被废除不等于条件成立。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "1790年10月14日法院停止职能。没有正文写它放任冤屈且违法增多。未保存的孔代判决不作为反证。"
+  }
+}

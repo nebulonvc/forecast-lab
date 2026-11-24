@@ -1,0 +1,28 @@
+{
+  "id": "201ef70c-2ef7-4cc4-9301-1eef5b1aa2f2",
+  "object": "chat.completion",
+  "created": 1794201129,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-00016\",\"predictions\":[{\"quote\":\"如果我们不想了解，并迫使自己去探索这些奥秘，我们将永远也不会了解这些秘密。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"如果人们不想了解并迫使自己去探索这些奥秘，就永远不会了解这些秘密。\",\"expanded_claim\":\"如果人们不想了解并迫使自己去探索癌症、痴呆、新能源、交通工具、太空定居等奥秘，人们将永远也不会了解这些秘密。\",\"reference_resolutions\":[{\"expression\":\"这些奥秘\",\"referent\":\"治疗癌症、痴呆、所有老年病和代谢衰变，开发新能源，发明更快捷的交通工具，彻底离开地球定居新疆域等目标\",\"support_quote\":\"我们可以治疗癌症、痴呆、所有老年病和代谢衰变；我们可以开发新能源来避免化石燃料引起的冲突；我们可以发明地球上更快捷的交通工具；我们还可以彻底离开地球，定居在新的疆域。\"},{\"expression\":\"这些秘密\",\"referent\":\"等待被探索的科学、医药、工程及技术方面的秘密\",\"support_quote\":\"事实是还有许多秘密等待我们去探索，只有坚持不懈的探索者才能发现它们。在科学、医药、工程及各种技术方面还有很多事情要做。\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"如果我们不想了解，并迫使自己去探索这些奥秘\",\"method\":\"条件性判断\",\"method_basis\":\"explicit\",\"reason\":\"原文以“如果……将……”形式给出对未来能否了解秘密的条件性预测。\"},{\"quote\":\"如果看起来如此简单的想法都能支撑起重要而有价值的企业，那么一定还有许多好公司等待我们去创办。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"如果简单想法能支撑重要企业，那么一定还有许多好公司等待创办。\",\"expanded_claim\":\"如果像Facebook这样看起来简单的网络公司想法都能支撑起重要而有价值的企业，那么一定还有许多好公司等待人们去创办。\",\"reference_resolutions\":[{\"expression\":\"看起来如此简单的想法\",\"referent\":\"包括Facebook在内的众多网络公司极为简单的商业想法\",\"support_quote\":\"包括Facebook在内的众多网络公司（它们的商业想法都极为简单）常常被低估也是同样的原因\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"如果看起来如此简单的想法都能支撑起重要而有价值的企业\",\"method\":\"条件性推断\",\"method_basis\":\"explicit\",\"reason\":\"原文以“如果……那么一定……”形式预测还有许多好公司等待创办。\"},{\"quote\":\"相信秘密才是探索有效进行的关键所在。\",\"kind\":\"unclear\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"相信秘密是探索有效进行的关键。\",\"expanded_claim\":\"相信秘密存在是使探索有效进行的关键所在。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"该句更像一般性主张而非对具体未来结果的预测，是否算预测不确定。\"},{\"quote\":\"只有相信并探索秘密才能发现常规之外的，近在眼前却不为常人所见的商机。\",\"kind\":\"unclear\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"只有相信并探索秘密才能发现常规之外的商机。\",\"expanded_claim\":\"只有相信并探索秘密，才能发现常规之外、近在眼前却不为常人所见的商机。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"只有相信并探索秘密\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"该句为必要条件式的一般主张，是否构成对未来结果的预测不确定。\"}]}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3309,
+    "completion_tokens": 796,
+    "total_tokens": 4105,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 3053
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

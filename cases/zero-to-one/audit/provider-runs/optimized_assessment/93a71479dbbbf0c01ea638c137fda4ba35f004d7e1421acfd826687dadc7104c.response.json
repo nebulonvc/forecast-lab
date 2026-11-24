@@ -1,0 +1,28 @@
+{
+  "id": "ca3f90ae-993a-4d8f-9268-57c5a681228b",
+  "object": "chat.completion",
+  "created": 1794201588,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000059397-000059445\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性判断：若董事会中存在“问题董事”，可能危及公司未来发展；未限定具体公司、时间或可观测指标，无法在观察窗口内操作化验证。\",\"reason\":\"原文用“可能”表达条件性负面后果，属于对未来的不确定预测，而非可核验的确定结论。缺少具体公司、问题董事定义与结果指标，无法用现有证据判断是否发生。\",\"limitation\":\"“问题董事”与“危及未来发展”均未操作化，且为概率性表述；不能因个别公司成败反推该条件性判断成立或不成立。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4316,
+    "completion_tokens": 203,
+    "total_tokens": 4519,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3548
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

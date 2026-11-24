@@ -1,0 +1,28 @@
+{
+  "id": "2d0fe73b-6455-40e3-8d6c-d9cf87e26344",
+  "object": "chat.completion",
+  "created": 1794201443,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000029272-000029312\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"原文为条件性理论断言：若创造前所未有的有价值事物，公司价值理论上无限增长；未给期限、指标或可识别公司，“无限增长”无法用市值/现金流等常规指标操作化，观察窗口至cutoff=2026-11-09。\",\"reason\":\"该判断是带条件的理论推演，“无限增长”本身不可观测、不可量化，无法用任何公司估值结果判定符合或相反。\",\"limitation\":\"未提供可检验的指标与期限；高估值或个别成功案例不能证明“无限增长”，故不据此评分。\",\"evidence_ids\":[],\"method\":\"理论推演/假设性断言\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000029312-000029350\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"原文为假设性举例：若出现能安全消除睡眠需求的药物或秃顶治疗方法，将支撑垄断公司；触发条件（此类产品上市并形成垄断）在cutoff前未确认，观察窗口至2026-11-09。\",\"reason\":\"真正的前置条件——安全消除睡眠需求的药物或有效秃顶治疗形成垄断产品——未确认发生，不能把相似产品当作触发条件评分。\",\"limitation\":\"条件未触发且“垄断公司”缺乏明确操作化标准；无证据可判定结果方向。\",\"evidence_ids\":[],\"method\":\"假设性举例/类比推演\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"not_met\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7549,
+    "completion_tokens": 403,
+    "total_tokens": 7952,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 6781
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

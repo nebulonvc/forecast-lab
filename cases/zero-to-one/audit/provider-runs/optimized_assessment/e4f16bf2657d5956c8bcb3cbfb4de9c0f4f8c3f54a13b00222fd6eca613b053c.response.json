@@ -1,0 +1,28 @@
+{
+  "id": "64534668-63d1-4bac-892d-78448ba49d83",
+  "object": "chat.completion",
+  "created": 1794201582,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000020727-000020758\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"以“完全竞争市场中的企业是否普遍只着眼短期、无法长期规划”为操作化对象；原文未给出可识别的具体企业、行业或观察时段，无法在2014—2026年间定位对应样本。\",\"reason\":\"该句是对完全竞争条件下企业行为的一般性经济学断言，属于可检验但高度概括的命题。原文未指定可观察对象与期限，且“完全竞争”在现实中难以界定，缺乏可核对的客观证据。\",\"limitation\":\"无具体企业样本与指标，无法排除反例或确认普遍性；仅凭理论推理不能作为已实现结果。\",\"evidence_ids\":[],\"method\":\"经济学推理\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000020758-000020793\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"该句为规范性/因果性主张（获取垄断利润是摆脱生存竞赛的唯一方法），不构成可独立观察的未来结果预测。\",\"reason\":\"原文以“唯一的方法”表述一种经营主张，缺少可检验的时间、对象与结果指标，属于理论建议而非预测。\",\"limitation\":\"若强行操作化会与“垄断利润”定义循环，无法独立评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5063,
+    "completion_tokens": 367,
+    "total_tokens": 5430,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 4295
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

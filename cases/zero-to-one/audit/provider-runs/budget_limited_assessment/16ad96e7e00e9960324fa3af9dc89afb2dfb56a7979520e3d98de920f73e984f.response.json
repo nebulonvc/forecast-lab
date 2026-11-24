@@ -1,0 +1,28 @@
+{
+  "id": "db80b533-e30c-456c-be4c-89397cd3ed35",
+  "object": "chat.completion",
+  "created": 1794201439,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000010801-000010826\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"预测对象为“丢掉科技创新的全球化”这一条件性未来：若全球化缺乏科技创新，则其持续性不会长久。观察窗口为出版后至cutoff（2014—2026-11-09），但“丢掉科技创新”的全球化是否出现、如何界定“长久”均无明确操作化。\",\"reason\":\"原文给出的是条件性否定判断，触发条件“丢掉科技创新的全球化”在观察期内是否成立无法确定；现有证据仅显示2009—2024全球贸易总体增长，不能说明该条件已发生或未发生。\",\"limitation\":\"缺少对“丢掉科技创新”和“长久”的可操作定义，且贸易增长数据不能直接检验该条件性命题；不将相似趋势当作条件已触发。\",\"evidence_ids\":[\"main-trade\"],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":\"2025-03-01\",\"future_time_text\":\"在资源稀缺的今天（对未来的持续性判断）\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4449,
+    "completion_tokens": 256,
+    "total_tokens": 4705,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 4449
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

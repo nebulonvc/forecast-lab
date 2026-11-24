@@ -1,0 +1,112 @@
+{
+  "purpose": "Mechanical probes only; no real prediction re-adjudication and no API calls.",
+  "baseline_code_commit": "9599d1a",
+  "repaired_code_commit": "a40b52820e7f5ec5852b93661bb039453546507e",
+  "legacy_probes": {
+    "metrics": {
+      "n": 53,
+      "raw_scored": 37,
+      "last_draft_scored": 11,
+      "final_unknown": 53,
+      "raw_scored_with_missing_source_date": 33,
+      "last_scored_with_missing_source_date": 10,
+      "direct_final_program_downgrades": 3,
+      "raw_missing_date_note_roles": {
+        "support": 51,
+        "counter": 16,
+        "boundary": 13
+      },
+      "raw_missing_date_with_model_date": 17,
+      "raw_scored_unknown_only_background_boundary": 1,
+      "prior_missing_date_original_shape": {
+        "other_or_null": 22,
+        "year": 15,
+        "month": 11
+      },
+      "terminal_paths": {
+        "program_date_downgrade": 3,
+        "api_draft_unknown": 42,
+        "semantic_review_not_accepted": 8
+      },
+      "review_first_decision": {
+        "revise": 37,
+        "accept": 16
+      },
+      "raw_to_first_review": {
+        "scored->revise": 36,
+        "unknown->accept": 15,
+        "unknown->revise": 1,
+        "scored->accept": 1
+      },
+      "review_last_decision": {
+        "accept": 44,
+        "revise": 9
+      },
+      "review_first_nonpass": {
+        "condition_logic": 15,
+        "counterevidence": 11,
+        "verdict_logic": 37,
+        "time_alignment": 7,
+        "evidence_support": 27,
+        "object_match": 5
+      }
+    },
+    "synthetic_probes": {
+      "dated_support_only": {
+        "verdict": "正确",
+        "warnings": []
+      },
+      "same_support_plus_undated_background": {
+        "verdict": "暂无法判断",
+        "warnings": [
+          {
+            "code": "publication_date_unconfirmed",
+            "evidence_ids": [
+              "background"
+            ]
+          }
+        ]
+      },
+      "note_exact_date_metadata_missing": {
+        "verdict": "暂无法判断",
+        "warnings": [
+          {
+            "code": "publication_date_unconfirmed",
+            "evidence_ids": [
+              "dated"
+            ]
+          }
+        ]
+      },
+      "prior_partial_date_month_before_cutoff": {
+        "verdict": "暂无法判断",
+        "warnings": [
+          {
+            "code": "publication_date_unconfirmed",
+            "evidence_ids": [
+              "dated"
+            ]
+          }
+        ]
+      },
+      "future_observation_still_rejected": {
+        "error": "evidence_date_after_cutoff_or_invalid"
+      },
+      "iso_date_shapes": {
+        "2025": null,
+        "2025-01": null,
+        "2025-01-01": "2025-01-01",
+        "2025-01-01T00:00:00Z": "2025-01-01"
+      }
+    }
+  },
+  "new_availability_on_old_metadata": {
+    "candidate_availability_v2": {
+      "available:publication_range": 246,
+      "available:program_capture": 163,
+      "unknown:not_established": 27
+    },
+    "raw_scored_with_v2_availability_block": 8,
+    "previous_direct_date_downgrades_without_v2_availability_block": 3
+  }
+}

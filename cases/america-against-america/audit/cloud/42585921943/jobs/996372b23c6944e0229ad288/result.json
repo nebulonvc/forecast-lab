@@ -1,0 +1,579 @@
+{
+  "claim_id": "txt-1c4066fc0c-000227158-000227189",
+  "version": "search-verifier-v1",
+  "input_sha256": "fd365ea088f5356119b77299049d10715fa7ed8ca43856f29b857aa82258ff82",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000227158-000227189",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "attribution",
+    "scope": "原文预测对象为IBM成人识字计划所在“这个地区”在20世纪90年代难以找到所需工人；原文未明示具体城市或地区，观察口径应限于该未明示地区1990—1999年的合格劳动力招聘困难，不以更宽泛的芝加哥或中西部劳动力市场替代。",
+    "reason": "原文“这个地区”归属不明，无法确定其对应芝加哥还是其他地区；现有材料中1988、1989年报道属九十年代前的预测性担忧，1993年调查为全州技能提升需求，1997年报道为中西部企业缺工且同时显示低技能工人求职困难，均未直接对应原文特定地区在九十年代的招聘结果。",
+    "limitation": "关键修订：不再把“这个地区”径行按芝加哥操作化，也不把九十年代前的预测性报道计入观察窗口；缺少该未明示地区1990—1999年合格劳动力招聘困难的直接结果证据。",
+    "evidence_ids": [
+      "ev-af7abd77b88cedea1a5ba7a2",
+      "ev-e9ebbb5f988f6800368ec890",
+      "ev-9aaaf0802546cc92489ad1b3",
+      "ev-51d476f58da909823010c371"
+    ],
+    "method": "由当地成人识字不足推测未来合格劳动力供给",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "到九十年代",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-af7abd77b88cedea1a5ba7a2",
+        "relation": "background",
+        "quote": "the latest wrinkle in the business community`s growing concern that employers won`t be able to find the workers they need in the 1990s.",
+        "publication_date": "1988-10-03",
+        "observation_end": "1988-10-03",
+        "limitation": "该句为1988年对企业界担忧的转述，属九十年代前的预测性表述，不是九十年代实际招聘结果。"
+      },
+      {
+        "evidence_id": "ev-e9ebbb5f988f6800368ec890",
+        "relation": "background",
+        "quote": "The gap between the skills of Chicago`s adult work force and the demands of its employers is widening to the point where businesses are considering leaving the city.",
+        "publication_date": "1989-10-21",
+        "observation_end": "1989-10-21",
+        "limitation": "为1989年评论判断，早于九十年代，且“考虑迁离”非实际招聘困难证据；同时该文指向芝加哥，不能自动等同于原文未明示的“这个地区”。"
+      },
+      {
+        "evidence_id": "ev-9aaaf0802546cc92489ad1b3",
+        "relation": "boundary",
+        "quote": "53 percent of Illinois firms reported d need to upgrade employees basic skills, yet only 24 percent of the firms provided such training.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "1993年伊利诺伊全州调查，反映技能提升需求而非招聘困难；具体发表日期不明，且范围宽于原文特定地区。"
+      },
+      {
+        "evidence_id": "ev-51d476f58da909823010c371",
+        "relation": "boundary",
+        "quote": "the complaints of Midwest companies that say they must cut their output due to a lack of workers.",
+        "publication_date": "1997-12-28",
+        "observation_end": "1997-12-28",
+        "limitation": "为中西部企业缺工 complaint，范围宽于原文特定地区；同一报道亦显示低技能工人求职困难，劳动力市场分化，不能代表原文对象全面短缺。"
+      }
+    ],
+    "remaining_gap": "需先明确原文“这个地区”能否对应具体城市或IBM成人识字中心服务区域，并取得该地区1990—1999年合格劳动力招聘困难的实际结果证据；现有材料不足以支撑趋势或部分符合判断。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000227158-000227189",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "观察口径为1990—1999年芝加哥地区（IBM成人识字中心所在地）合格/低技能劳动力招聘困难；原文未明示具体城市，按芝加哥处理。观察时段为1988—1997年已发表材料。",
+    "reason": "1988年报道明确称企业界担忧1990年代找不到所需工人，1989年报道称芝加哥成人劳动力技能与雇主需求差距扩大、企业考虑迁离，1997年报道称中西部企业因缺工削减产出，方向与预测一致。但1993年伊利诺伊调查显示53%企业需提升员工基本技能、仅24%提供培训，属需求侧证据，未直接证明“难以找到工人”的招聘结果。",
+    "limitation": "原文未明示具体地区，按芝加哥操作化存在口径偏差；1997年报道同时显示低技能工人求职困难与高技能人才短缺并存，劳动力市场结构性分化，不能简单等同于全面短缺。",
+    "evidence_ids": [
+      "ev-af7abd77b88cedea1a5ba7a2",
+      "ev-e9ebbb5f988f6800368ec890",
+      "ev-9aaaf0802546cc92489ad1b3",
+      "ev-51d476f58da909823010c371"
+    ],
+    "method": "由当地成人识字不足推测未来合格劳动力供给",
+    "method_basis": "explicit",
+    "observation_end": "1997-12-28",
+    "future_time_text": "到九十年代",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-af7abd77b88cedea1a5ba7a2",
+        "relation": "support",
+        "quote": "the latest wrinkle in the business community`s growing concern that employers won`t be able to find the workers they need in the 1990s.",
+        "publication_date": "1988-10-03",
+        "observation_end": "1988-10-03",
+        "limitation": "该句为1988年对企业界担忧的转述，属预测性表述而非1990年代实际招聘结果。"
+      },
+      {
+        "evidence_id": "ev-e9ebbb5f988f6800368ec890",
+        "relation": "support",
+        "quote": "The gap between the skills of Chicago`s adult work force and the demands of its employers is widening to the point where businesses are considering leaving the city.",
+        "publication_date": "1989-10-21",
+        "observation_end": "1989-10-21",
+        "limitation": "为1989年评论文章的判断，早于1990年代，且“考虑迁离”非实际招聘困难证据。"
+      },
+      {
+        "evidence_id": "ev-9aaaf0802546cc92489ad1b3",
+        "relation": "boundary",
+        "quote": "53 percent of Illinois firms reported d need to upgrade employees basic skills, yet only 24 percent of the firms provided such training.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "1993年伊利诺伊全州调查，反映技能提升需求而非招聘困难；日期仅知为1993年秋，具体日期不明。"
+      },
+      {
+        "evidence_id": "ev-51d476f58da909823010c371",
+        "relation": "support",
+        "quote": "the complaints of Midwest companies that say they must cut their output due to a lack of workers.",
+        "publication_date": "1997-12-28",
+        "observation_end": "1997-12-28",
+        "limitation": "同一报道亦显示低技能工人求职困难，劳动力市场分化，不能代表所有工人短缺。"
+      }
+    ],
+    "remaining_gap": "缺少1990—1999年芝加哥地区针对IBM成人识字中心服务对象的直接招聘困难统计或IBM自身用工短缺记录；现有证据多为企业界担忧与结构性技能缺口，未直接量化“难以找到所需工人”。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "ev-af7abd77b88cedea1a5ba7a2",
+      "url": "https://bancodeprofissionais.com/1988/10/03/literacy-quest-brings-together-cabrini-and-ibm/",
+      "resolved_url": "https://bancodeprofissionais.com/1988/10/03/literacy-quest-brings-together-cabrini-and-ibm/",
+      "title": "LITERACY QUEST BRINGS TOGETHER CABRINI AND IBM – Chicago Tribune",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:26:32.367369+00:00",
+      "archive_sha256": "a90fabd9217d2debad1d8a9d899db6396456ec756d9fbcb0598393617d6f471f",
+      "archive_path": "jobs/996372b23c6944e0229ad288/a90fabd9217d2debad1d8a9d899db6396456ec756d9fbcb0598393617d6f471f.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e9ebbb5f988f6800368ec890",
+      "url": "https://bancodeprofissionais.com/1989/10/21/creating-a-literate-chicago-work-force/",
+      "resolved_url": "https://bancodeprofissionais.com/1989/10/21/creating-a-literate-chicago-work-force/",
+      "title": "CREATING A LITERATE CHICAGO WORK FORCE – Chicago Tribune",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:26:32.367577+00:00",
+      "archive_sha256": "9ff1aec6b9c26d2e6c2abc8763761b2673e6088b31ef43aadfb2287d3742789a",
+      "archive_path": "jobs/996372b23c6944e0229ad288/9ff1aec6b9c26d2e6c2abc8763761b2673e6088b31ef43aadfb2287d3742789a.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-b6ea188bf9cf514cfb6c2c7e",
+      "url": "https://bancodeprofissionais.com/1991/02/01/computers-drive-literacy-classes/",
+      "resolved_url": "https://bancodeprofissionais.com/1991/02/01/computers-drive-literacy-classes/",
+      "title": "COMPUTERS DRIVE LITERACY CLASSES – Chicago Tribune",
+      "published_date": "1991-02-01",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:26:32.367758+00:00",
+      "archive_sha256": "633b41740e2a28f957b780b8c4f995e3616dda440f1bc342085e27d1e813af59",
+      "archive_path": "jobs/996372b23c6944e0229ad288/633b41740e2a28f957b780b8c4f995e3616dda440f1bc342085e27d1e813af59.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-9aaaf0802546cc92489ad1b3",
+      "url": "https://files.eric.ed.gov/fulltext/ED367778.pdf",
+      "resolved_url": "https://files.eric.ed.gov/fulltext/ED367778.pdf",
+      "title": "ED 367 778 CE 065 650",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:26:32.367926+00:00",
+      "archive_sha256": "567e47357a8fa5b3329766d922ce3658b4cde9abbef78959ca5acc1712d4c712",
+      "archive_path": "jobs/996372b23c6944e0229ad288/567e47357a8fa5b3329766d922ce3658b4cde9abbef78959ca5acc1712d4c712.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-88993846a4c513aa81c9a908",
+      "url": "https://www.chicagofed.org/publications/chicago-fed-letter/1996/november-111",
+      "resolved_url": "https://www.chicagofed.org/publications/chicago-fed-letter/1996/november-111",
+      "title": "Workforce Issues - Federal Reserve Bank of Chicago",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:26:40.231202+00:00",
+      "archive_sha256": "aebc5b3f3545496509bcfbff1359b978de46f76cd079df3ae4501cb3e2197e72",
+      "archive_path": "jobs/996372b23c6944e0229ad288/aebc5b3f3545496509bcfbff1359b978de46f76cd079df3ae4501cb3e2197e72.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-fd314d964409a9fc3a6350c4",
+      "url": "https://www.chicagofed.org/publications/chicago-fed-letter/1998/january-125",
+      "resolved_url": "https://www.chicagofed.org/publications/chicago-fed-letter/1998/january-125",
+      "title": "Help Wanted in the Midwest - Federal Reserve Bank of Chicago",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:26:40.231419+00:00",
+      "archive_sha256": "d89d03e86b162a95c4edaf2a62e6558e3b36b908504e90381270946f053fd630",
+      "archive_path": "jobs/996372b23c6944e0229ad288/d89d03e86b162a95c4edaf2a62e6558e3b36b908504e90381270946f053fd630.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-51d476f58da909823010c371",
+      "url": "https://bancodeprofissionais.com/1997/12/28/bountiful-brutal/",
+      "resolved_url": "https://bancodeprofissionais.com/1997/12/28/bountiful-brutal/",
+      "title": "BOUNTIFUL, BRUTAL – Chicago Tribune",
+      "published_date": "1997-12-28",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:26:40.231601+00:00",
+      "archive_sha256": "17bac551f1615f5d76c596b9b47a22574f34d280484d3d81c289d0396876a235",
+      "archive_path": "jobs/996372b23c6944e0229ad288/17bac551f1615f5d76c596b9b47a22574f34d280484d3d81c289d0396876a235.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "Chicago Tribune October 3 IBM adult literacy center Dave Cox 1990s workers shortage",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "IBM adult literacy program Chicago 1990s labor shortage hiring workers",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Illinois workplace literacy survey 1993 employers need upgrade basic skills labor shortage 1990s",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Chicago 1990s labor market IBM hiring workers shortage unemployment low-skilled workers",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "需先明确原文“这个地区”能否对应具体城市或IBM成人识字中心服务区域，并取得该地区1990—1999年合格劳动力招聘困难的实际结果证据；现有材料不足以支撑趋势或部分符合判断。",
+  "source_statuses": [
+    {
+      "url": "https://bancodeprofissionais.com/1988/10/03/literacy-quest-brings-together-cabrini-and-ibm/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://bancodeprofissionais.com/1989/10/21/creating-a-literate-chicago-work-force/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://bancodeprofissionais.com/1991/02/01/computers-drive-literacy-classes/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://files.eric.ed.gov/fulltext/ED367778.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.chicagofed.org/publications/chicago-fed-letter/1996/november-111",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.chicagofed.org/publications/chicago-fed-letter/1998/january-125",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://bancodeprofissionais.com/1997/12/28/bountiful-brutal/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "fd3fcca58d4bd6b0777d510f768f76697219559b66452dababa370e238a2dce2"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "acb761f190c254a7e07c63b85506b24b",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "cac68c81c4ef94f292e71539ba2447d8",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "28cd7ed1f8d0abcfdab2f4cd415d8a35c63f6760b5151ac10a31936bc9002e64"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "c305ef61edb3d7ced8217ded208c922a",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "b3616e686a2ea70e131a3ec5f739aa216c2cea812dcaa233aea72814dfde10a8"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "228c862be9af436fdd774a2cb8fd7518",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "a08bd309bd4dd2382c96246294a63e0a",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "4c060e7a911b2cb0e87a8ec728c940a8d4e9e6d0a0c56ae2921863bb89e67b2c"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "cddf0947d2744996fe9b6bc250efcef8",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "9c42977dd133580e3b48886bd768fff10826c106e2ada9716d7069c11ff15153"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "951114b614266281e6dc399087769acea174b2afca61cb65c593aeaa25cfd03d"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "ac5ccffa382428cc9db3378af9c6586df067c99c1b501208306295911f8c2bf7"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "3df835235fc8dd056fd278dc1132789b8385166bc6776c6e19e6539a86c23e91"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000227158-000227189",
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "fail",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "原文的说话者是IBM（王沪宁转述），对象是“这个地区”即IBM成人识字中心所在地区；建议把原文未明示的城市直接按芝加哥处理，并把观察对象扩展为“芝加哥地区合格/低技能劳动力”，超出了原文特定对象集合。",
+          "quote_ref": "q1",
+          "source_quote": "们认为，到九十年代，在这个地区就难以找到他们需要的工人了。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "book"
+        },
+        {
+          "check": "time_alignment",
+          "reason": "原文预测的是“到九十年代”的结果，建议却把观察时段写成1988—1997年已发表材料，并把1988、1989年的预测性报道计入观察窗口；这些材料早于九十年代，不能作为九十年代实际结果的证据。",
+          "quote_ref": "q3",
+          "source_quote": "观察时段为1988—1997年已发表材料。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "所引1988年报道只是转述企业界对1990年代的担忧，1989年报道是早于九十年代的评论判断，1997年报道说的是中西部企业缺工，均未直接证明“这个地区”在九十年代难以找到所需工人；1993年调查也只是技能提升需求，不是招聘困难结果。",
+          "quote_ref": "q4",
+          "source_quote": "the latest wrinkle in the business community`s growing concern that employers won`t be able to find the workers they need in the 1990s.",
+          "evidence_id": "ev-af7abd77b88cedea1a5ba7a2",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "在对象地区未明示、九十年代实际招聘结果缺少直接证据的情况下，建议以“部分符合”并设trend_aligned=true，把预测性担忧和结构性技能缺口当作结果证据；这既未确认后果B在声明口径内实现，也未指出B哪些具体部分实现、哪些未实现。",
+          "quote_ref": "q2",
+          "source_quote": "观察口径为1990—1999年芝加哥地区（IBM成人识字中心所在地）合格/低技能劳动力招聘困难；原文未明示具体城市，按芝加哥处理。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需先明确原文“这个地区”能否对应芝加哥，并取得1990—1999年该地区（或IBM成人识字中心服务对象）关于合格劳动力招聘困难的实际结果证据；现有1988、1989年预测性报道和1993年需求侧调查不足以支撑“部分符合”的结论。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000227158-000227189",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000227158-000227189",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "观察口径为1990—1999年芝加哥地区（IBM成人识字中心所在地）合格/低技能劳动力招聘困难；原文未明示具体城市，按芝加哥处理。观察时段为1988—1997年已发表材料。",
+      "reason": "1988年报道明确称企业界担忧1990年代找不到所需工人，1989年报道称芝加哥成人劳动力技能与雇主需求差距扩大、企业考虑迁离，1997年报道称中西部企业因缺工削减产出，方向与预测一致。但1993年伊利诺伊调查显示53%企业需提升员工基本技能、仅24%提供培训，属需求侧证据，未直接证明“难以找到工人”的招聘结果。",
+      "limitation": "原文未明示具体地区，按芝加哥操作化存在口径偏差；1997年报道同时显示低技能工人求职困难与高技能人才短缺并存，劳动力市场结构性分化，不能简单等同于全面短缺。",
+      "evidence_ids": [
+        "ev-af7abd77b88cedea1a5ba7a2",
+        "ev-e9ebbb5f988f6800368ec890",
+        "ev-9aaaf0802546cc92489ad1b3",
+        "ev-51d476f58da909823010c371"
+      ],
+      "method": "由当地成人识字不足推测未来合格劳动力供给",
+      "method_basis": "explicit",
+      "observation_end": "1997-12-28",
+      "future_time_text": "到九十年代",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-af7abd77b88cedea1a5ba7a2",
+          "relation": "support",
+          "quote": "the latest wrinkle in the business community`s growing concern that employers won`t be able to find the workers they need in the 1990s.",
+          "publication_date": "1988-10-03",
+          "observation_end": "1988-10-03",
+          "limitation": "该句为1988年对企业界担忧的转述，属预测性表述而非1990年代实际招聘结果。"
+        },
+        {
+          "evidence_id": "ev-e9ebbb5f988f6800368ec890",
+          "relation": "support",
+          "quote": "The gap between the skills of Chicago`s adult work force and the demands of its employers is widening to the point where businesses are considering leaving the city.",
+          "publication_date": "1989-10-21",
+          "observation_end": "1989-10-21",
+          "limitation": "为1989年评论文章的判断，早于1990年代，且“考虑迁离”非实际招聘困难证据。"
+        },
+        {
+          "evidence_id": "ev-9aaaf0802546cc92489ad1b3",
+          "relation": "boundary",
+          "quote": "53 percent of Illinois firms reported d need to upgrade employees basic skills, yet only 24 percent of the firms provided such training.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "1993年伊利诺伊全州调查，反映技能提升需求而非招聘困难；日期仅知为1993年秋，具体日期不明。"
+        },
+        {
+          "evidence_id": "ev-51d476f58da909823010c371",
+          "relation": "support",
+          "quote": "the complaints of Midwest companies that say they must cut their output due to a lack of workers.",
+          "publication_date": "1997-12-28",
+          "observation_end": "1997-12-28",
+          "limitation": "同一报道亦显示低技能工人求职困难，劳动力市场分化，不能代表所有工人短缺。"
+        }
+      ],
+      "remaining_gap": "缺少1990—1999年芝加哥地区针对IBM成人识字中心服务对象的直接招聘困难统计或IBM自身用工短缺记录；现有证据多为企业界担忧与结构性技能缺口，未直接量化“难以找到所需工人”。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000227158-000227189",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "attribution",
+      "scope": "原文预测对象为IBM成人识字计划所在“这个地区”在20世纪90年代难以找到所需工人；原文未明示具体城市或地区，观察口径应限于该未明示地区1990—1999年的合格劳动力招聘困难，不以更宽泛的芝加哥或中西部劳动力市场替代。",
+      "reason": "原文“这个地区”归属不明，无法确定其对应芝加哥还是其他地区；现有材料中1988、1989年报道属九十年代前的预测性担忧，1993年调查为全州技能提升需求，1997年报道为中西部企业缺工且同时显示低技能工人求职困难，均未直接对应原文特定地区在九十年代的招聘结果。",
+      "limitation": "关键修订：不再把“这个地区”径行按芝加哥操作化，也不把九十年代前的预测性报道计入观察窗口；缺少该未明示地区1990—1999年合格劳动力招聘困难的直接结果证据。",
+      "evidence_ids": [
+        "ev-af7abd77b88cedea1a5ba7a2",
+        "ev-e9ebbb5f988f6800368ec890",
+        "ev-9aaaf0802546cc92489ad1b3",
+        "ev-51d476f58da909823010c371"
+      ],
+      "method": "由当地成人识字不足推测未来合格劳动力供给",
+      "method_basis": "explicit",
+      "observation_end": null,
+      "future_time_text": "到九十年代",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-af7abd77b88cedea1a5ba7a2",
+          "relation": "background",
+          "quote": "the latest wrinkle in the business community`s growing concern that employers won`t be able to find the workers they need in the 1990s.",
+          "publication_date": "1988-10-03",
+          "observation_end": "1988-10-03",
+          "limitation": "该句为1988年对企业界担忧的转述，属九十年代前的预测性表述，不是九十年代实际招聘结果。"
+        },
+        {
+          "evidence_id": "ev-e9ebbb5f988f6800368ec890",
+          "relation": "background",
+          "quote": "The gap between the skills of Chicago`s adult work force and the demands of its employers is widening to the point where businesses are considering leaving the city.",
+          "publication_date": "1989-10-21",
+          "observation_end": "1989-10-21",
+          "limitation": "为1989年评论判断，早于九十年代，且“考虑迁离”非实际招聘困难证据；同时该文指向芝加哥，不能自动等同于原文未明示的“这个地区”。"
+        },
+        {
+          "evidence_id": "ev-9aaaf0802546cc92489ad1b3",
+          "relation": "boundary",
+          "quote": "53 percent of Illinois firms reported d need to upgrade employees basic skills, yet only 24 percent of the firms provided such training.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "1993年伊利诺伊全州调查，反映技能提升需求而非招聘困难；具体发表日期不明，且范围宽于原文特定地区。"
+        },
+        {
+          "evidence_id": "ev-51d476f58da909823010c371",
+          "relation": "boundary",
+          "quote": "the complaints of Midwest companies that say they must cut their output due to a lack of workers.",
+          "publication_date": "1997-12-28",
+          "observation_end": "1997-12-28",
+          "limitation": "为中西部企业缺工 complaint，范围宽于原文特定地区；同一报道亦显示低技能工人求职困难，劳动力市场分化，不能代表原文对象全面短缺。"
+        }
+      ],
+      "remaining_gap": "需先明确原文“这个地区”能否对应具体城市或IBM成人识字中心服务区域，并取得该地区1990—1999年合格劳动力招聘困难的实际结果证据；现有材料不足以支撑趋势或部分符合判断。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "IBM（王沪宁转述）判断：到20世纪90年代，其成人识字计划所在地区将难以找到所需工人。观察口径为1990—1999年该IBM成人识字中心服务地区（原文未明示城市/地区）的合格劳动力招聘困难；需保留说话者、期限和地区条件，反证包括该地区同期招聘顺利、IBM未出现相关劳动力短缺或计划并非因预期短缺而设。",
+  "elapsed_seconds": 34.294,
+  "completed_at": "2026-11-09T08:26:58.369055+00:00"
+}

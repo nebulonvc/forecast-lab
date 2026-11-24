@@ -1,0 +1,473 @@
+{
+  "claim_id": "txt-1c4066fc0c-000150979-000151037",
+  "version": "search-verifier-v1",
+  "input_sha256": "32ab88db96402ba528b5e8069158b23984611bb7eec2a8c60a1b1a6cd7a56592",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000150979-000151037",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "对象为美国国内领土分离式武装冲突（南北战争式局面）在1991—2025观察窗内是否再生；操作口径为UCDP/PRIO ACD中location含美国、type3/4、incompatibility为领土或领土兼政府、intensity达战争门槛（当年战斗死亡至少1000）的年度记录。",
+    "reason": "自动复核未确认主要判断：原预测的核心可检验结果是“南北战争那样的状况难以再生”，即美国国内领土分离式武装冲突（南北战争式局面）不再发生。按建议自身采用的UCDP/PRIO ACD操作口径，1991—2025观察窗内美国单独location的type3/4、领土不兼容记录为0行，未见达到战争门槛的国内领土分离武装冲突，主要结果与预测方向一致，应判“符合”，而非“部分符合”。建议把“该口径不能覆盖未达门槛的分离主义暴力”作为限制，这属于证据边界，不构成对主要结果的部分反证；不能仅因口径有覆盖缺口就把主要结果已符合的预测降为部分符合。",
+    "limitation": "UCDP数据仅覆盖有组织武装冲突且以战斗死亡门槛编码，不能证明美国不存在分离主义暴力或政治暴力；作者的经济一体化因果机制未被检验。2021年国会大厦事件属政治暴力与权力交接危机，并非领土分离武装冲突，不作为同对象反证。",
+    "evidence_ids": [
+      "prior-393df04d3fb3a1278330",
+      "prior-8f2c0086f1316039aae9"
+    ],
+    "method": "经济一体化减少分裂动机与政治协调负担",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-393df04d3fb3a1278330",
+        "relation": "support",
+        "quote": "从完整2816行中过滤：gwno_loc精确为{2}、type3/4、incompatibility1/3，命中0行；美国单独location的18行均为政府与基地组织冲突。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "该过滤仅覆盖UCDP/PRIO ACD编码的有组织武装冲突，未覆盖未达门槛的分离主义暴力或政治暴力。"
+      },
+      {
+        "evidence_id": "prior-8f2c0086f1316039aae9",
+        "relation": "boundary",
+        "quote": "Codebook：type3为国内、type4为国际化国内冲突；incompatibility1为领土、2为政府、3为两者；intensity2为当年战斗相关死亡至少1000。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "编码定义限定了“战争式冲突”的操作口径，低于1000战斗死亡的事件不计入，可能低估分离主义紧张。"
+      }
+    ],
+    "remaining_gap": "将verdict由“部分符合”改为“符合”，保留现有limitation与remaining_gap作为口径边界说明；无需新增材料。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000150979-000151037",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象为美国国内领土分离式武装冲突（南北战争式局面）在1991—2025观察窗内是否再生；操作口径为UCDP/PRIO ACD中location含美国、type3/4、incompatibility为领土或领土兼政府、intensity达战争门槛的年度记录。",
+    "reason": "按UCDP/PRIO ACD过滤，美国单独location的type3/4、领土不兼容记录为0行，1991—2025观察窗内未见南北战争式的国内领土分离武装冲突再生，方向与作者判断一致。但作者同时断言政治系统维持统一“不必多做努力”，2021年国会大厦遇袭及围绕权力交接的冲突显示政治系统仍承受压力，故仅部分符合。",
+    "limitation": "UCDP数据仅覆盖有组织武装冲突且以战斗死亡门槛编码，不能证明美国不存在分离主义暴力或政治暴力；作者的经济一体化因果机制未被检验。",
+    "evidence_ids": [
+      "prior-393df04d3fb3a1278330",
+      "prior-8f2c0086f1316039aae9",
+      "prior-13d4eee8172a1e2b58c2"
+    ],
+    "method": "经济一体化减少分裂动机与政治协调负担",
+    "method_basis": "inferred",
+    "observation_end": "2025-12-31",
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-393df04d3fb3a1278330",
+        "relation": "support",
+        "quote": "从完整2816行中过滤：gwno_loc精确为{2}、type3/4、incompatibility1/3，命中0行；美国单独location的18行均为政府与基地组织冲突。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "该过滤仅覆盖UCDP/PRIO ACD编码的有组织武装冲突，未覆盖未达门槛的分离主义暴力或政治暴力。"
+      },
+      {
+        "evidence_id": "prior-8f2c0086f1316039aae9",
+        "relation": "boundary",
+        "quote": "Codebook：type3为国内、type4为国际化国内冲突；incompatibility1为领土、2为政府、3为两者；intensity2为当年战斗相关死亡至少1000。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "编码定义限定了“战争式冲突”的操作口径，低于1000战斗死亡的事件不计入，可能低估分离主义紧张。"
+      },
+      {
+        "evidence_id": "prior-13d4eee8172a1e2b58c2",
+        "relation": "counter",
+        "quote": "众议院调查委员会报告记录特朗普拒绝承认2020合法选举结果，并企图阻止权力交接；国会大厦遇袭。",
+        "publication_date": "2022-12-22",
+        "observation_end": "2022-12-22",
+        "limitation": "该事件属政治暴力与权力交接危机，并非领土分离武装冲突，不能直接推翻“南北战争难再生”，但削弱“政治系统不必多做努力”的分项。"
+      }
+    ],
+    "remaining_gap": "缺少1991—2025年间美国国内分离主义暴力（未达UCDP战争门槛）的系统记录，无法完整评估“南北战争式局面难再生”的全部含义。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-5c26846489b9b68026f6",
+      "url": "https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-261-csv.zip",
+      "title": "ev-r2-l2-ucdp-data",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-ucdp-data",
+      "archive_sha256": "5f951743222964674a446e32a5a871077b29bd13349588d85fc59953d89c878a",
+      "archive_path": "data/sources/r2-l2-ucdp-data.zip",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-8f2c0086f1316039aae9",
+      "url": "https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-261.pdf",
+      "title": "ev-r2-l2-ucdp-codebook",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-ucdp-codebook",
+      "archive_sha256": "6d757183dd632d10d7287ee63493b1e632733f308b77220406dce7ceab664455",
+      "archive_path": "data/sources/r2-l2-ucdp-codebook.pdf",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-393df04d3fb3a1278330",
+      "url": "https://ucdp.uu.se/downloads/",
+      "title": "ev-r2-l2-ucdp-filter",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-ucdp-filter",
+      "archive_sha256": "3faac1e7d4c66f34a75db80146394bc5327377c7e8cd9d0c71253926741df5bb",
+      "archive_path": "data/sources/r2-l2-ucdp-filter-result.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-13d4eee8172a1e2b58c2",
+      "url": "https://www.govinfo.gov/content/pkg/GPO-J6-REPORT/html-submitted/index.html",
+      "title": "ev-jan6",
+      "published_date": "2022-12-22",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-jan6",
+      "archive_sha256": "99340c674c6c84701d1e92df8613deece20d66ac62c29ce126634ed77b1b8636",
+      "archive_path": "data/sources/99340c674c6c84701d1e92df8613deece20d66ac62c29ce126634ed77b1b8636.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d5d36328e878769880cff318",
+      "url": "https://ucdp.uu.se/downloads/replication_data/2026_ucdp-prio-acd-261.pdf",
+      "resolved_url": "https://ucdp.uu.se/downloads/replication_data/2026_ucdp-prio-acd-261.pdf",
+      "title": "UCDP/PRIO Armed Conflict Dataset Codebook Version 2 6.1",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:11:59.806961+00:00",
+      "archive_sha256": "ee1a2149baff34932cc8e4a7ceef6e734e34895496f5a2491d23df97e479b266",
+      "archive_path": "jobs/0c6901c947c1312c6f956988/ee1a2149baff34932cc8e4a7ceef6e734e34895496f5a2491d23df97e479b266.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-cd6a14d53efb81d5ad8086e0",
+      "url": "https://data.humdata.org/dataset/ucdp-data-for-united-states-of-america",
+      "resolved_url": "https://data.humdata.org/dataset/ucdp-data-for-united-states-of-america",
+      "title": "United States of America - Data on Conflict Events | Humanitarian Dataset | HDX",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:11:59.807124+00:00",
+      "archive_sha256": "18c899d992fbf27118e63d7fa379af9c7cda934eef762e4c0384c79eabe20805",
+      "archive_path": "jobs/0c6901c947c1312c6f956988/18c899d992fbf27118e63d7fa379af9c7cda934eef762e4c0384c79eabe20805.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "UCDP/PRIO Armed Conflict Dataset 26.1 United States location type 3 4 territory incompatibility civil war 1991 2025",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "United States domestic territorial separatist armed conflict civil war since 1991 UCDP PRIO dataset",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "UCDP/PRIO Armed Conflict Dataset 26.1 United States location type 3 4 territory incompatibility civil war 1991 2025",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "United States domestic territorial separatist armed conflict civil war since 1991 UCDP PRIO dataset",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "prior-393df04d3fb3a1278330",
+        "prior-8f2c0086f1316039aae9"
+      ]
+    }
+  ],
+  "remaining_gap": "将verdict由“部分符合”改为“符合”，保留现有limitation与remaining_gap作为口径边界说明；无需新增材料。",
+  "source_statuses": [
+    {
+      "url": "https://ucdp.uu.se/downloads/replication_data/2026_ucdp-prio-acd-261.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://data.humdata.org/dataset/ucdp-data-for-united-states-of-america",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "a09fa137d9902f90fe68588bdda48201662cf1de0f3d7ec67293634f45542082"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "95fd5bb8ae0cfd3da7810338f4fce3fa",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "47a590fd9e14e038cd6a2229ffc75559",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "f90c04f659770ae9e10886d03d1c9917f4d532a7e80f3d1e7cafe829c7d41f95"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "9586b20514599c6c1847e933d5ef37b3",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "fb11c91c6b257f82fa18ef30f478ddbfd6e3c285a58c115921ce81300c6df3dd"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "95fd5bb8ae0cfd3da7810338f4fce3fa",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "47a590fd9e14e038cd6a2229ffc75559",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "13c926d1f72387cc9544363300d0cc06d1b35201500e6637171ecfe993f002e2"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "c924d5fbee20f8c00b739fcdc77bad093e4f2b5a84a1d5d9f3db8cf9daaebb69"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "6b1539512e424cfee049956beb810054b2156f014322eed863fc3e1b01992689"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "de745c82b7066d9e7e34791af387803313e7c64d9c3d7a29cf69e66524b5c178"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "38699bdc29d7c99f674893a936e507fb44cb92ac710963408329c96f67d9d882"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000150979-000151037",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "fail",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原句的因果结构是：经济高度发展发挥维护全国统一的功能，因此政治系统不必多做努力，南北战争式局面难以再生。建议把“政治系统不必多做努力”当作与“南北战争难再生”并列的独立断言，并用2021年国会大厦事件削弱它，从而判为部分符合；但原文并未把“政治系统不必多做努力”设为可独立检验的后果，它只是对因果机制的解释。按任务规则，不能把解释机制当作预测后果来判部分符合。",
+          "source_quote": "经济的高度发展发挥了维护全国统一\n的重要功能。在这种情况下，政治系统反倒不必多做努力，南北战争那样的状况难\n以再生。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议用UCDP/PRIO ACD中“美国单独location的type3/4、领土不兼容记录为0行”来支持“南北战争式局面未再生”。但该过滤只覆盖达到战争门槛（当年战斗死亡至少1000）的有组织武装冲突，不能直接证明“南北战争式局面”这一更宽泛的对象未出现；而且建议自己在limitation中承认未覆盖未达门槛的分离主义暴力。因此，现有证据不足以支撑“方向与作者判断一致”的主要结果声明。",
+          "source_quote": "从完整2816行中过滤：gwno_loc精确为{2}、type3/4、incompatibility1/3，命中0行；美国单独location的18行均为政府与基地组织冲突。",
+          "evidence_id": "prior-393df04d3fb3a1278330",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "counterevidence",
+          "reason": "建议把2021年国会大厦事件列为counter，并据此削弱“政治系统不必多做努力”。但该事件属于政治暴力与权力交接危机，并非领土分离武装冲突，与“南北战争式局面难再生”不是同对象、同指标；建议自己也承认它不能直接推翻该判断。因此，它不能作为判定“部分符合”的反向证据，建议对反向材料的处理有误。",
+          "source_quote": "众议院调查委员会报告记录特朗普拒绝承认2020合法选举结果，并企图阻止权力交接；国会大厦遇袭。",
+          "evidence_id": "prior-13d4eee8172a1e2b58c2",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议一方面称UCDP过滤显示1991—2025未见南北战争式国内领土分离武装冲突再生、方向与作者判断一致，另一方面又因政治系统压力判为“部分符合”。但“政治系统不必多做努力”是解释机制，不是原文预测的可独立检验后果；而且UCDP战争门槛口径不足以覆盖“南北战争式局面”的全部含义。因此，判“部分符合”缺乏对后果B具体哪些部分实现、哪些未实现的直接证据，分类不成立。",
+          "source_quote": "按UCDP/PRIO ACD过滤，美国单独location的type3/4、领土不兼容记录为0行，1991—2025观察窗内未见南北战争式的国内领土分离武装冲突再生，方向与作者判断一致。但作者同时断言政治系统维持统一“不必多做努力”，2021年国会大厦遇袭及围绕权力交接的冲突显示政治系统仍承受压力，故仅部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正：不得把“政治系统不必多做努力”这一解释机制当作独立后果来判部分符合；应仅围绕“南北战争式局面难再生”这一主要结果，按UCDP战争门槛口径说明其只能覆盖达到门槛的有组织武装冲突，不能覆盖未达门槛的分离主义暴力，并据此将结论改为有界符合或具体未定；2021年国会大厦事件不能作为同对象反证。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000150979-000151037",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "verdict_logic",
+          "reason": "原预测的核心可检验结果是“南北战争那样的状况难以再生”，即美国国内领土分离式武装冲突（南北战争式局面）不再发生。按建议自身采用的UCDP/PRIO ACD操作口径，1991—2025观察窗内美国单独location的type3/4、领土不兼容记录为0行，未见达到战争门槛的国内领土分离武装冲突，主要结果与预测方向一致，应判“符合”，而非“部分符合”。建议把“该口径不能覆盖未达门槛的分离主义暴力”作为限制，这属于证据边界，不构成对主要结果的部分反证；不能仅因口径有覆盖缺口就把主要结果已符合的预测降为部分符合。",
+          "source_quote": "按UCDP/PRIO ACD过滤，美国单独location的type3/4、领土不兼容记录为0行，1991—2025观察窗内未见达到战争门槛的国内领土分离武装冲突，方向与“南北战争式局面难再生”一致。但该口径仅覆盖有组织武装冲突且以战斗死亡门槛编码，不能覆盖未达门槛的分离主义暴力，故只能判有界部分符合，不能声称南北战争式局面在所有含义上未再生。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "将verdict由“部分符合”改为“符合”，保留现有limitation与remaining_gap作为口径边界说明；无需新增材料。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000150979-000151037",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象为美国国内领土分离式武装冲突（南北战争式局面）在1991—2025观察窗内是否再生；操作口径为UCDP/PRIO ACD中location含美国、type3/4、incompatibility为领土或领土兼政府、intensity达战争门槛的年度记录。",
+      "reason": "按UCDP/PRIO ACD过滤，美国单独location的type3/4、领土不兼容记录为0行，1991—2025观察窗内未见南北战争式的国内领土分离武装冲突再生，方向与作者判断一致。但作者同时断言政治系统维持统一“不必多做努力”，2021年国会大厦遇袭及围绕权力交接的冲突显示政治系统仍承受压力，故仅部分符合。",
+      "limitation": "UCDP数据仅覆盖有组织武装冲突且以战斗死亡门槛编码，不能证明美国不存在分离主义暴力或政治暴力；作者的经济一体化因果机制未被检验。",
+      "evidence_ids": [
+        "prior-393df04d3fb3a1278330",
+        "prior-8f2c0086f1316039aae9",
+        "prior-13d4eee8172a1e2b58c2"
+      ],
+      "method": "经济一体化减少分裂动机与政治协调负担",
+      "method_basis": "inferred",
+      "observation_end": "2025-12-31",
+      "future_time_text": "",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-393df04d3fb3a1278330",
+          "relation": "support",
+          "quote": "从完整2816行中过滤：gwno_loc精确为{2}、type3/4、incompatibility1/3，命中0行；美国单独location的18行均为政府与基地组织冲突。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "该过滤仅覆盖UCDP/PRIO ACD编码的有组织武装冲突，未覆盖未达门槛的分离主义暴力或政治暴力。"
+        },
+        {
+          "evidence_id": "prior-8f2c0086f1316039aae9",
+          "relation": "boundary",
+          "quote": "Codebook：type3为国内、type4为国际化国内冲突；incompatibility1为领土、2为政府、3为两者；intensity2为当年战斗相关死亡至少1000。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "编码定义限定了“战争式冲突”的操作口径，低于1000战斗死亡的事件不计入，可能低估分离主义紧张。"
+        },
+        {
+          "evidence_id": "prior-13d4eee8172a1e2b58c2",
+          "relation": "counter",
+          "quote": "众议院调查委员会报告记录特朗普拒绝承认2020合法选举结果，并企图阻止权力交接；国会大厦遇袭。",
+          "publication_date": "2022-12-22",
+          "observation_end": "2022-12-22",
+          "limitation": "该事件属政治暴力与权力交接危机，并非领土分离武装冲突，不能直接推翻“南北战争难再生”，但削弱“政治系统不必多做努力”的分项。"
+        }
+      ],
+      "remaining_gap": "缺少1991—2025年间美国国内分离主义暴力（未达UCDP战争门槛）的系统记录，无法完整评估“南北战争式局面难再生”的全部含义。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000150979-000151037",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象为美国国内领土分离式武装冲突（南北战争式局面）在1991—2025观察窗内是否再生；操作口径为UCDP/PRIO ACD中location含美国、type3/4、incompatibility为领土或领土兼政府、intensity达战争门槛（当年战斗死亡至少1000）的年度记录。",
+      "reason": "按UCDP/PRIO ACD过滤，美国单独location的type3/4、领土不兼容记录为0行，1991—2025观察窗内未见达到战争门槛的国内领土分离武装冲突，方向与“南北战争式局面难再生”一致。但该口径仅覆盖有组织武装冲突且以战斗死亡门槛编码，不能覆盖未达门槛的分离主义暴力，故只能判有界部分符合，不能声称南北战争式局面在所有含义上未再生。",
+      "limitation": "UCDP数据仅覆盖有组织武装冲突且以战斗死亡门槛编码，不能证明美国不存在分离主义暴力或政治暴力；作者的经济一体化因果机制未被检验。2021年国会大厦事件属政治暴力与权力交接危机，并非领土分离武装冲突，不作为同对象反证。",
+      "evidence_ids": [
+        "prior-393df04d3fb3a1278330",
+        "prior-8f2c0086f1316039aae9"
+      ],
+      "method": "经济一体化减少分裂动机与政治协调负担",
+      "method_basis": "inferred",
+      "observation_end": "2025-12-31",
+      "future_time_text": "",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-393df04d3fb3a1278330",
+          "relation": "support",
+          "quote": "从完整2816行中过滤：gwno_loc精确为{2}、type3/4、incompatibility1/3，命中0行；美国单独location的18行均为政府与基地组织冲突。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "该过滤仅覆盖UCDP/PRIO ACD编码的有组织武装冲突，未覆盖未达门槛的分离主义暴力或政治暴力。"
+        },
+        {
+          "evidence_id": "prior-8f2c0086f1316039aae9",
+          "relation": "boundary",
+          "quote": "Codebook：type3为国内、type4为国际化国内冲突；incompatibility1为领土、2为政府、3为两者；intensity2为当年战斗相关死亡至少1000。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "编码定义限定了“战争式冲突”的操作口径，低于1000战斗死亡的事件不计入，可能低估分离主义紧张。"
+        }
+      ],
+      "remaining_gap": "缺少1991—2025年间美国国内分离主义暴力（未达UCDP战争门槛）的系统记录，无法完整评估“南北战争式局面难再生”的全部含义。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "对象为美国国内领土分离式武装冲突（南北战争式局面）在1991—2025观察窗内是否再生；可观察口径为UCDP/PRIO ACD中location含美国、type3/4、incompatibility为领土或领土兼政府、intensity达战争门槛的年度记录；反证包括任何美国国内领土分离武装冲突记录或大规模分离主义暴力事件。不验证经济一体化因果机制，不声称美国无战争、恐怖主义或政治暴力。",
+  "elapsed_seconds": 38.843,
+  "completed_at": "2026-11-09T08:12:27.870547+00:00"
+}

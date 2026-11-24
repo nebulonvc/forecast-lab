@@ -1,0 +1,28 @@
+{
+  "id": "6b1b61e6-c7d1-4353-8f73-e9540d753512",
+  "object": "chat.completion",
+  "created": 1794201439,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000015701-000015719\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为对2000年纳斯达克泡沫破裂及其后续影响的历史回顾性叙述，非面向未来的预测；观察时段为2000年3月至2002年10月。\",\"reason\":\"该句描述的是已发生的纳斯达克崩溃及其对90年代科技乐观主义叙事的终结，属于历史阐释而非预测。\",\"limitation\":\"抽取将其标为预测，但原文时态与上下文均为回顾，故按非预测排除。\",\"evidence_ids\":[],\"method\":\"基于市场崩溃的因果判断\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4336,
+    "completion_tokens": 186,
+    "total_tokens": 4522,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 4336
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

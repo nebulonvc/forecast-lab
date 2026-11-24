@@ -1,0 +1,28 @@
+{
+  "id": "99873ff6-2c47-4f4f-9cbb-a6483cac4364",
+  "object": "chat.completion",
+  "created": 1794201447,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000040318-000040349\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为规范性政策主张（“为了增加可自由支配开支，我们需要明确的计划来解决具体的问题”），不含可检验的时间终点或可观测结果指标；观察时段不适用。\",\"reason\":\"该句以“需要”表达实现财政目标的必要条件，属于政策建议而非对未来事实的预测。\",\"limitation\":\"规范性主张无法按可观测结果评分；且原文未给出具体指标或期限。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4226,
+    "completion_tokens": 170,
+    "total_tokens": 4396,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3458
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

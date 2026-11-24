@@ -1,0 +1,28 @@
+{
+  "id": "9785b94d-200c-41fa-aaa6-f7807745f546",
+  "object": "chat.completion",
+  "created": 1794201583,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000031701-000031726\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"作者关于初创公司市场选择的经验性判断，无具体公司、指标或期限；观察窗口为出版后至cutoff，但无法操作化为可检验的统计命题。\",\"reason\":\"该句是创业策略的经验概括，未指定可观测对象、指标或期限，无法用公开证据直接验证“小市场占主导更容易”。\",\"limitation\":\"缺乏可操作化指标与对照样本，不能以个别公司成败反推该一般性判断。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000031726-000031752\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"作者给创业者的自我判断规则/建议，非可独立检验的未来结果。\",\"reason\":\"该句是条件性的经验法则，属于创业建议而非可观测预测。\",\"limitation\":\"作为建议性表述，不构成可评分预测。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000032113-000032147\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"作者对初创公司选择大市场的规范性建议，未给出可独立检验的未来结果。\",\"reason\":\"该句是市场选择建议，属于规范性判断而非可观测预测。\",\"limitation\":\"建议性表述无法作为预测评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000032147-000032182\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"作者关于“占据千亿美元市场1%”策略行不通的经验判断，无具体公司、指标或期限；观察窗口为出版后至cutoff。\",\"reason\":\"该句是概括性经验判断，未指定可检验的样本、指标或期限，无法用公开证据直接验证“总是行不通”。\",\"limitation\":\"“总是”为全称判断，缺乏可操作化标准与对照数据，不能以个别案例证实或证伪。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6235,
+    "completion_tokens": 602,
+    "total_tokens": 6837,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 5467
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

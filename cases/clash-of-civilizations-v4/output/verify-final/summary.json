@@ -1,0 +1,149 @@
+{
+  "n": 427,
+  "task_state": {
+    "completed": 427
+  },
+  "display_verdict": {
+    "正确": 47,
+    "趋势符合": 75,
+    "部分符合": 94,
+    "错误": 24,
+    "暂无法判断": 187
+  },
+  "manual_review": {
+    "n": 67,
+    "review_source": "manual-assistant-2026-11-14",
+    "display_verdict": {
+      "正确": 6,
+      "趋势符合": 4,
+      "部分符合": 9,
+      "错误": 7,
+      "暂无法判断": 41
+    },
+    "nonforecast": 10,
+    "nonforecast_kinds": {
+      "aphorism": 2,
+      "policy_suggestion": 1,
+      "historical_explanation": 1,
+      "counterfactual_past": 1,
+      "mechanism_prescription": 1,
+      "metaphor": 1,
+      "hypothetical_war_scenario": 3
+    },
+    "deepseek_cny_incremental": 0,
+    "exa_usd_incremental": 0
+  },
+  "prior_combined_360_completed": {
+    "正确": 41,
+    "趋势符合": 71,
+    "部分符合": 85,
+    "错误": 17,
+    "暂无法判断": 146
+  },
+  "costs_unchanged_from_combined": {
+    "version": "search-verifier-v3-merged",
+    "requested": 427,
+    "merge_rule": "completed wins; otherwise latest retry result",
+    "task_states": {
+      "completed": 360,
+      "partial": 67
+    },
+    "display_verdicts": {
+      "趋势符合": 71,
+      "错误": 17,
+      "暂无法判断": 146,
+      "部分符合": 85,
+      "正确": 41
+    },
+    "sources": {
+      "r2-main": 250,
+      "r2-retry": 177
+    },
+    "retry": {
+      "retry_requested": 177,
+      "retry_states": {
+        "completed": 110,
+        "partial": 67
+      },
+      "partial_to_completed": 72,
+      "not_started_to_completed": 38,
+      "not_started_to_partial": 14,
+      "budget_partial_to_completed": 28,
+      "validation_partial_to_completed": 44,
+      "final_states": {
+        "completed": 360,
+        "partial": 67
+      },
+      "final_verdicts": {
+        "趋势符合": 71,
+        "错误": 17,
+        "暂无法判断": 146,
+        "部分符合": 85,
+        "正确": 41
+      },
+      "remaining_partial_reasons": [
+        [
+          "scored_claim_missing_evidence_or_scope",
+          26
+        ],
+        [
+          "evidence_quote_not_in_shown_source",
+          13
+        ],
+        [
+          "adaptive_strategy_change_required",
+          8
+        ],
+        [
+          "source_publication_date_mismatch",
+          5
+        ],
+        [
+          "JSONDecodeError",
+          3
+        ],
+        [
+          "adaptive_strategy_not_changed",
+          3
+        ],
+        [
+          "adaptive_query_repeats_previous",
+          3
+        ],
+        [
+          "evidence_date_after_cutoff_or_invalid",
+          2
+        ],
+        [
+          "semantic_review_quote_not_in_supplied_text",
+          1
+        ],
+        [
+          "request_failed_http_400",
+          1
+        ],
+        [
+          "evidence_note_outside_task",
+          1
+        ],
+        [
+          "page_text_unavailable",
+          1
+        ]
+      ]
+    },
+    "costs": {
+      "note": "DeepSeek figures are conservative peak estimates from toolkit ledgers; Exa from costDollars estimates.",
+      "extract_CNY": 1.45806264,
+      "verify_main_CNY": 77.85394232,
+      "verify_main_committed_CNY": 78.49432232,
+      "verify_retry_CNY": 36.15368076,
+      "verify_retry_committed_CNY": 36.38714876,
+      "exa_probe_USD": 0.014,
+      "exa_main_USD": 13.125,
+      "exa_retry_USD": 6.978
+    }
+  },
+  "reviewed_at_utc": "2026-11-14T03:36:57.690817+00:00",
+  "reviewed_at_asia_shanghai": "2026-11-14T11:36:57.690844+08:00"
+}

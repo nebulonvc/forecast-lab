@@ -1,0 +1,28 @@
+{
+  "id": "dd7ddb0e-60ff-4e96-8392-d932b8004ec3",
+  "object": "chat.completion",
+  "created": 1794201590,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000060172-000060214\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"evidence\",\"scope\":\"条件性行为预测：年薪30万美元的CEO是否倾向维持现状而非积极解决问题；无具体公司、期限与可观测指标，观察窗口为出版至cutoff。\",\"reason\":\"原文提出高薪诱使CEO维持现状的因果行为假说，但未给出可核验的具体对象或指标。现有证据为空，无法确认或反驳该行为倾向。\",\"limitation\":\"缺乏针对具体CEO薪酬与行为变化的客观数据；薪酬与行为的相关性也不能直接证明因果。\",\"evidence_ids\":[],\"method\":\"inferred\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000060214-000060241\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"evidence\",\"scope\":\"条件性行为预测：低薪CEO是否更致力于为公司创造更多价值；无具体公司、期限与可观测指标，观察窗口为出版至cutoff。\",\"reason\":\"原文以对比方式提出低薪CEO更致力于创造价值的倾向性判断，但未指定可核验对象或价值指标。无证据支持或反驳。\",\"limitation\":\"“创造更多价值”缺乏操作化定义；缺少低薪CEO与公司价值变化的对照数据。\",\"evidence_ids\":[],\"method\":\"inferred\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000060488-000060527\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"evidence\",\"scope\":\"条件性行为预测：员工获高额现金报酬时是否取走已有价值而非投入创造新价值；无具体对象、期限与指标，观察窗口为出版至cutoff。\",\"reason\":\"原文提出高额现金报酬导致员工短期取利行为的假说，但未给出可核验的具体情境或数据。现有证据为空，无法判断。\",\"limitation\":\"“取走已有价值”与“创造新价值”均未操作化；缺少薪酬结构与员工行为变化的客观对照。\",\"evidence_ids\":[],\"method\":\"inferred\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000060555-000060582\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"evidence\",\"scope\":\"条件性行为预测：现金激励报酬是否鼓励短期想法和价值掠夺；无具体对象、期限与指标，观察窗口为出版至cutoff。\",\"reason\":\"原文断言激励报酬鼓励短期想法和价值掠夺，但未提供可核验的具体案例或量化指标。无证据可评估。\",\"limitation\":\"“短期想法”“价值掠夺”缺乏操作化标准；缺少激励制度与行为后果的对照数据。\",\"evidence_ids\":[],\"method\":\"inferred\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000060661-000060689\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"evidence\",\"scope\":\"条件性行为预测：股票报酬是否有效引导人们未来创造价值；无具体对象、期限与指标，观察窗口为出版至cutoff。\",\"reason\":\"原文提出股票报酬引导未来价值创造的判断，但未指定可核验的公司、员工群体或价值指标。现有证据为空。\",\"limitation\":\"“创造价值”未操作化；缺少股票报酬与员工行为/公司价值变化的对照证据。\",\"evidence_ids\":[],\"method\":\"inferred\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000061324-000061370\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"evidence\",\"scope\":\"条件性行为预测：愿意接受股票而非现金工资的人是否长期致力于增加公司价值；无具体对象、期限与指标，观察窗口为出版至cutoff。\",\"reason\":\"原文由选择股票报酬推断其长期投入倾向，但未给出可核验的具体人员或长期价值指标。无证据可评估。\",\"limitation\":\"“长期致力于增加公司价值”缺乏操作化定义；选择股票与长期投入之间可能存在自选择偏差，原文未提供数据。\",\"evidence_ids\":[],\"method\":\"inferred\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000061600-000061630\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"作者对“创业”何时结束的定义性表述，非可检验的公司事实预测。\",\"reason\":\"该句是对“创业”概念的定义：创新停止即创业结束，属于语义界定而非对未来结果的预测。\",\"limitation\":\"定义性陈述不构成可观测预测，无法按事实结果评分。\",\"evidence_ids\":[],\"method\":\"inferred\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000061630-000061696\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"对创始人可把握公司发展方向的条件性建议/可能性陈述，非特定未来结果预测。\",\"reason\":\"该句表达创业时机正确时创始人可以影响公司走向，属于行动建议与可能性描述，未给出可检验的具体结果。\",\"limitation\":\"条件“创业时机正确”无法客观界定，且陈述为规范性建议而非事实预测。\",\"evidence_ids\":[],\"method\":\"inferred\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8826,
+    "completion_tokens": 1339,
+    "total_tokens": 10165,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 8058
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "83da8d80-e5e9-4545-a520-7d5f836a776b",
+  "object": "chat.completion",
+  "created": 1794201441,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000021546-000021576\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为条件性规范性建议（“如果垄断企业阻碍进步，则应抵制”），非对可观察未来结果的预测；无具体时间、指标或可检验终点。\",\"reason\":\"该句是作者对垄断企业应否被抵制的条件性价值判断，不是关于未来事实的预测。\",\"limitation\":\"条件句本身不构成可评分预测；即使现实中存在阻碍进步的垄断企业，也只是触发作者建议，而非验证预测。\",\"evidence_ids\":[],\"method\":\"条件性判断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4275,
+    "completion_tokens": 177,
+    "total_tokens": 4452,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3507
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

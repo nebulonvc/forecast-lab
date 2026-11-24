@@ -1,0 +1,301 @@
+{
+ "case": "fukuyama-end-of-history-v5",
+ "cutoff": "2026-11-15",
+ "publication": "1992-01-22 (English original; some catalogues list 1992-01-31)",
+ "reviewed_at_asia_shanghai": "2026-11-15",
+ "n_candidates_verified": 72,
+ "非预测": 9,
+ "预测": 63,
+ "machine_completed": {
+  "正确": 12,
+  "趋势符合": 11,
+  "部分符合": 8,
+  "错误": 2,
+  "暂无法判断": 27,
+  "可判定": 33,
+  "计分样本": 60,
+  "严格胜率": 0.3636,
+  "加权胜率": 0.7348,
+  "错误率": 0.0606,
+  "未定占比": 0.45
+ },
+ "after_audit": {
+  "正确": 11,
+  "趋势符合": 14,
+  "部分符合": 11,
+  "错误": 2,
+  "暂无法判断": 25,
+  "可判定": 38,
+  "计分样本": 63,
+  "严格胜率": 0.2895,
+  "加权胜率": 0.7105,
+  "错误率": 0.0526,
+  "未定占比": 0.3968
+ },
+ "after_implicit_horizon": {
+  "正确": 11,
+  "趋势符合": 19,
+  "部分符合": 12,
+  "错误": 2,
+  "暂无法判断": 19,
+  "可判定": 44,
+  "计分样本": 63,
+  "严格胜率": 0.25,
+  "加权胜率": 0.7102,
+  "错误率": 0.0455,
+  "未定占比": 0.3016
+ },
+ "by_horizon": {
+  "explicit": {
+   "正确": 4,
+   "趋势符合": 6,
+   "部分符合": 6,
+   "错误": 1,
+   "暂无法判断": 7,
+   "可判定": 17,
+   "计分样本": 24,
+   "严格胜率": 0.2353,
+   "加权胜率": 0.6765,
+   "错误率": 0.0588,
+   "未定占比": 0.2917
+  },
+  "implicit_publication_to_cutoff": {
+   "正确": 7,
+   "趋势符合": 13,
+   "部分符合": 6,
+   "错误": 1,
+   "暂无法判断": 12,
+   "可判定": 27,
+   "计分样本": 39,
+   "严格胜率": 0.2593,
+   "加权胜率": 0.7315,
+   "错误率": 0.037,
+   "未定占比": 0.3077
+  }
+ },
+ "review_counts": {
+  "manual-audit-2026-11-15-implicit-horizon": 6,
+  "manual-audit-2026-11-15": 13,
+  "manual-assistant-2026-11-15": 12
+ },
+ "manual_stuck_items": 12,
+ "changes": [
+  {
+   "idx": 2,
+   "claim_id": "txt-cde9d75059-000038886-000038901",
+   "review_source": "manual-audit-2026-11-15-implicit-horizon",
+   "before": "暂无法判断",
+   "after": "趋势符合"
+  },
+  {
+   "idx": 3,
+   "claim_id": "txt-cde9d75059-000044231-000044262",
+   "review_source": "manual-audit-2026-11-15",
+   "before": "错误",
+   "after": "非预测"
+  },
+  {
+   "idx": 4,
+   "claim_id": "txt-cde9d75059-000053471-000053530",
+   "review_source": "manual-audit-2026-11-15",
+   "before": "暂无法判断",
+   "after": "非预测"
+  },
+  {
+   "idx": 6,
+   "claim_id": "txt-cde9d75059-000083634-000083678",
+   "review_source": "manual-assistant-2026-11-15",
+   "before": null,
+   "after": "非预测"
+  },
+  {
+   "idx": 7,
+   "claim_id": "txt-cde9d75059-000084814-000084895",
+   "review_source": "manual-audit-2026-11-15",
+   "before": "暂无法判断",
+   "after": "部分符合"
+  },
+  {
+   "idx": 8,
+   "claim_id": "txt-cde9d75059-000088612-000088655",
+   "review_source": "manual-audit-2026-11-15",
+   "before": "暂无法判断",
+   "after": "正确"
+  },
+  {
+   "idx": 9,
+   "claim_id": "txt-cde9d75059-000091910-000091963",
+   "review_source": "manual-assistant-2026-11-15",
+   "before": null,
+   "after": "非预测"
+  },
+  {
+   "idx": 13,
+   "claim_id": "txt-cde9d75059-000124336-000124376",
+   "review_source": "manual-audit-2026-11-15",
+   "before": "暂无法判断",
+   "after": "非预测"
+  },
+  {
+   "idx": 14,
+   "claim_id": "txt-cde9d75059-000139922-000139975",
+   "review_source": "manual-audit-2026-11-15-implicit-horizon",
+   "before": "暂无法判断",
+   "after": "趋势符合"
+  },
+  {
+   "idx": 17,
+   "claim_id": "txt-cde9d75059-000142818-000142864",
+   "review_source": "manual-assistant-2026-11-15",
+   "before": null,
+   "after": "暂无法判断"
+  },
+  {
+   "idx": 21,
+   "claim_id": "txt-cde9d75059-000178329-000178372",
+   "review_source": "manual-audit-2026-11-15",
+   "before": "暂无法判断",
+   "after": "非预测"
+  },
+  {
+   "idx": 24,
+   "claim_id": "txt-cde9d75059-000194561-000194617",
+   "review_source": "manual-assistant-2026-11-15",
+   "before": null,
+   "after": "趋势符合"
+  },
+  {
+   "idx": 26,
+   "claim_id": "txt-cde9d75059-000196880-000196931",
+   "review_source": "manual-assistant-2026-11-15",
+   "before": null,
+   "after": "部分符合"
+  },
+  {
+   "idx": 27,
+   "claim_id": "txt-cde9d75059-000286769-000286828",
+   "review_source": "manual-audit-2026-11-15",
+   "before": "部分符合",
+   "after": "非预测"
+  },
+  {
+   "idx": 28,
+   "claim_id": "txt-cde9d75059-000289666-000289701",
+   "review_source": "manual-assistant-2026-11-15",
+   "before": null,
+   "after": "暂无法判断"
+  },
+  {
+   "idx": 31,
+   "claim_id": "txt-cde9d75059-000310858-000310941",
+   "review_source": "manual-audit-2026-11-15",
+   "before": "正确",
+   "after": "趋势符合"
+  },
+  {
+   "idx": 33,
+   "claim_id": "txt-cde9d75059-000326282-000326437",
+   "review_source": "manual-audit-2026-11-15",
+   "before": "暂无法判断",
+   "after": "非预测"
+  },
+  {
+   "idx": 34,
+   "claim_id": "txt-cde9d75059-000327090-000327140",
+   "review_source": "manual-assistant-2026-11-15",
+   "before": null,
+   "after": "错误"
+  },
+  {
+   "idx": 35,
+   "claim_id": "txt-cde9d75059-000330413-000330486",
+   "review_source": "manual-assistant-2026-11-15",
+   "before": null,
+   "after": "暂无法判断"
+  },
+  {
+   "idx": 36,
+   "claim_id": "txt-cde9d75059-000348118-000348154",
+   "review_source": "manual-audit-2026-11-15",
+   "before": "正确",
+   "after": "部分符合"
+  },
+  {
+   "idx": 41,
+   "claim_id": "txt-cde9d75059-000363357-000363443",
+   "review_source": "manual-audit-2026-11-15-implicit-horizon",
+   "before": "暂无法判断",
+   "after": "部分符合"
+  },
+  {
+   "idx": 42,
+   "claim_id": "txt-cde9d75059-000367256-000367299",
+   "review_source": "manual-audit-2026-11-15",
+   "before": "暂无法判断",
+   "after": "部分符合"
+  },
+  {
+   "idx": 45,
+   "claim_id": "txt-cde9d75059-000368472-000368488",
+   "review_source": "manual-audit-2026-11-15-implicit-horizon",
+   "before": "暂无法判断",
+   "after": "趋势符合"
+  },
+  {
+   "idx": 46,
+   "claim_id": "txt-cde9d75059-000368539-000368575",
+   "review_source": "manual-audit-2026-11-15-implicit-horizon",
+   "before": "暂无法判断",
+   "after": "趋势符合"
+  },
+  {
+   "idx": 51,
+   "claim_id": "txt-cde9d75059-000372938-000372971",
+   "review_source": "manual-audit-2026-11-15",
+   "before": "部分符合",
+   "after": "正确"
+  },
+  {
+   "idx": 56,
+   "claim_id": "txt-cde9d75059-000389486-000389546",
+   "review_source": "manual-assistant-2026-11-15",
+   "before": null,
+   "after": "非预测"
+  },
+  {
+   "idx": 59,
+   "claim_id": "txt-cde9d75059-000411414-000411488",
+   "review_source": "manual-assistant-2026-11-15",
+   "before": null,
+   "after": "暂无法判断"
+  },
+  {
+   "idx": 62,
+   "claim_id": "txt-cde9d75059-000415661-000415708",
+   "review_source": "manual-audit-2026-11-15-implicit-horizon",
+   "before": "暂无法判断",
+   "after": "趋势符合"
+  },
+  {
+   "idx": 66,
+   "claim_id": "txt-cde9d75059-000419037-000419091",
+   "review_source": "manual-assistant-2026-11-15",
+   "before": null,
+   "after": "趋势符合"
+  },
+  {
+   "idx": 69,
+   "claim_id": "txt-cde9d75059-000420193-000420239",
+   "review_source": "manual-audit-2026-11-15",
+   "before": "正确",
+   "after": "部分符合"
+  },
+  {
+   "idx": 71,
+   "claim_id": "txt-cde9d75059-000428429-000428510",
+   "review_source": "manual-assistant-2026-11-15",
+   "before": null,
+   "after": "暂无法判断"
+  }
+ ]
+}

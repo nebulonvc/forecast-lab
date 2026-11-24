@@ -1,0 +1,388 @@
+{
+  "claim_id": "txt-1c4066fc0c-000227158-000227189",
+  "version": "search-verifier-v1",
+  "input_sha256": "58fc1c1c41a67add2285d0dde54231f6947872db204a9c1809d518d795e5daaa",
+  "cutoff": "2026-11-09",
+  "task_state": "partial",
+  "assessment": null,
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000227158-000227189",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "观察口径：1990—1999年芝加哥地区（IBM成人识字中心服务地区）劳动力市场是否出现合格/可培训工人短缺，尤其IBM自身招聘困难。实际观察时段：1988—1998年芝加哥地区劳动力市场与IBM相关报道。",
+    "reason": "原文预测到九十年代该地区难以找到所需工人。1994年芝加哥联储褐皮书报告“劳动力市场持续走强，工人短缺日益频繁”，1998年芝加哥联储专文以“Help Wanted in the Midwest”讨论劳动力市场紧张限制增长，方向与预测一致。但证据多为区域整体劳动力紧张，未直接证明IBM自身招聘困难，故为部分符合。",
+    "limitation": "缺乏IBM公司1990年代在芝加哥的具体招聘数据；区域劳动力短缺不等于IBM个体招聘困难；部分来源出版日期不明。",
+    "evidence_ids": [
+      "ev-fb01893e4601cc2079257de1",
+      "ev-6e4015cc025b812744cd1af8",
+      "ev-38f544786b731f8703f11559"
+    ],
+    "method": "由当地成人识字不足推测未来合格劳动力供给",
+    "method_basis": "explicit",
+    "observation_end": "1998-01-31",
+    "future_time_text": "到九十年代",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-fb01893e4601cc2079257de1",
+        "relation": "support",
+        "quote": "Labor markets continued to strengthen; worker shortages grew increasingly frequent, and temporary help companies reported rising wages and higher recruitment costs.",
+        "publication_date": "1994-09-14",
+        "observation_end": "1994-09-14",
+        "limitation": "区域整体劳动力市场紧张，非IBM个体招聘数据。"
+      },
+      {
+        "evidence_id": "ev-6e4015cc025b812744cd1af8",
+        "relation": "support",
+        "quote": "labor markets have tightened dramatically throughout the region, leading some to examine the possibility that a limited supply of workers is hindering the region’s growth.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "出版日期不明（刊期为1998年1月），讨论中西部区域而非IBM或芝加哥市具体招聘。"
+      },
+      {
+        "evidence_id": "ev-38f544786b731f8703f11559",
+        "relation": "support",
+        "quote": "The focus of this year’s conference was on the labor market and whether an economy operating at full employment can continue to expand when it is running out of workers.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "出版日期不明（刊期1998年2月），为全国/区域劳动力紧张讨论，非IBM招聘直接证据。"
+      }
+    ],
+    "remaining_gap": "缺少IBM公司1990年代在芝加哥地区自身招聘困难或岗位空缺的直接记录；区域劳动力短缺与IBM个体招聘困难之间的对应关系未建立。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "ev-af7abd77b88cedea1a5ba7a2",
+      "url": "https://bancodeprofissionais.com/1988/10/03/literacy-quest-brings-together-cabrini-and-ibm/",
+      "resolved_url": "https://bancodeprofissionais.com/1988/10/03/literacy-quest-brings-together-cabrini-and-ibm/",
+      "title": "LITERACY QUEST BRINGS TOGETHER CABRINI AND IBM – Chicago Tribune",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:12.226889+00:00",
+      "archive_sha256": "a90fabd9217d2debad1d8a9d899db6396456ec756d9fbcb0598393617d6f471f",
+      "archive_path": "jobs/996372b23c6944e0229ad288/a90fabd9217d2debad1d8a9d899db6396456ec756d9fbcb0598393617d6f471f.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e9ebbb5f988f6800368ec890",
+      "url": "https://bancodeprofissionais.com/1989/10/21/creating-a-literate-chicago-work-force/",
+      "resolved_url": "https://bancodeprofissionais.com/1989/10/21/creating-a-literate-chicago-work-force/",
+      "title": "CREATING A LITERATE CHICAGO WORK FORCE – Chicago Tribune",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:12.227082+00:00",
+      "archive_sha256": "9ff1aec6b9c26d2e6c2abc8763761b2673e6088b31ef43aadfb2287d3742789a",
+      "archive_path": "jobs/996372b23c6944e0229ad288/9ff1aec6b9c26d2e6c2abc8763761b2673e6088b31ef43aadfb2287d3742789a.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-da2ffe83baf41d4b0e5e197c",
+      "url": "https://bancodeprofissionais.com/1991/06/10/new-economy-squeezes-out-the-unskilled/",
+      "resolved_url": "https://bancodeprofissionais.com/1991/06/10/new-economy-squeezes-out-the-unskilled/",
+      "title": "NEW ECONOMY SQUEEZES OUT THE UNSKILLED – Chicago Tribune",
+      "published_date": "1991-06-10",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:12.227309+00:00",
+      "archive_sha256": "9fae387fe3f01c2295e0306a7e3b2d4d40bf38bc5f3dbe888b1d2c42bf2da21c",
+      "archive_path": "jobs/996372b23c6944e0229ad288/9fae387fe3f01c2295e0306a7e3b2d4d40bf38bc5f3dbe888b1d2c42bf2da21c.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-6e4015cc025b812744cd1af8",
+      "url": "https://www.chicagofed.org/publications/chicago-fed-letter/1998/january-125",
+      "resolved_url": "https://www.chicagofed.org/publications/chicago-fed-letter/1998/january-125",
+      "title": "Help Wanted in the Midwest - Federal Reserve Bank of Chicago",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:12.227501+00:00",
+      "archive_sha256": "d8fe28990fe0cdb97808207318228db645d4e973bdb56f9bf23b29bdf3597f1b",
+      "archive_path": "jobs/996372b23c6944e0229ad288/d8fe28990fe0cdb97808207318228db645d4e973bdb56f9bf23b29bdf3597f1b.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-fb01893e4601cc2079257de1",
+      "url": "https://www.minneapolisfed.org/beige-book-reports/1994/1994-09-ch",
+      "resolved_url": "https://www.minneapolisfed.org/beige-book-reports/1994/1994-09-ch",
+      "title": "Chicago: September 1994 | The Federal Reserve Bank of Minneapolis",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:19.936831+00:00",
+      "archive_sha256": "d74af9e5cc396b1c5189172ee7262bbaaa9166c56df310b0bbf109dc1649edd1",
+      "archive_path": "jobs/996372b23c6944e0229ad288/d74af9e5cc396b1c5189172ee7262bbaaa9166c56df310b0bbf109dc1649edd1.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ec9190e665e614c46f8b069d",
+      "url": "https://www.chicagofed.org/publications/chicago-fed-letter/1996/june-106",
+      "resolved_url": "https://www.chicagofed.org/publications/chicago-fed-letter/1996/june-106",
+      "title": "The Heartland Keeps Beating - Federal Reserve Bank of Chicago",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:19.937058+00:00",
+      "archive_sha256": "47be9f0b385dae8101e395549b504f77486de2a3c1a4283475391531eab07508",
+      "archive_path": "jobs/996372b23c6944e0229ad288/47be9f0b385dae8101e395549b504f77486de2a3c1a4283475391531eab07508.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-38f544786b731f8703f11559",
+      "url": "https://www.chicagofed.org/publications/chicago-fed-letter/1998/february-126",
+      "resolved_url": "https://www.chicagofed.org/publications/chicago-fed-letter/1998/february-126",
+      "title": "Where Have All the Workers Gone?— A Summary of the 1998 Economic Outlook Symposium - Federal Reserve Bank of Chicago",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:19.937403+00:00",
+      "archive_sha256": "4ddaf308bb6a59c58f3e7bad0449ab16a0d33839f0c1f1e6d84c1d30f78e48a9",
+      "archive_path": "jobs/996372b23c6944e0229ad288/4ddaf308bb6a59c58f3e7bad0449ab16a0d33839f0c1f1e6d84c1d30f78e48a9.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "IBM adult literacy center 1990s labor shortage workers Chicago Tribune 1980s",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Chicago 1990s labor market unemployment IBM hiring workers available",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Chicago 1990s labor shortage skilled workers employers hiring difficulty Federal Reserve Chicago Fed Letter",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Chicago 1990s unemployment rate labor supply IBM hiring workers available Bureau of Labor Statistics",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [
+    {
+      "stage": "worker",
+      "error": "cached_response_invalid_70d33c5ae23f"
+    }
+  ],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-38f544786b731f8703f11559",
+        "ev-6e4015cc025b812744cd1af8",
+        "ev-fb01893e4601cc2079257de1"
+      ]
+    }
+  ],
+  "remaining_gap": "任务未完成；查看错误、已取得材料和请求状态，不能据此判断原预测。",
+  "source_statuses": [
+    {
+      "url": "https://bancodeprofissionais.com/1988/10/03/literacy-quest-brings-together-cabrini-and-ibm/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://bancodeprofissionais.com/1989/10/21/creating-a-literate-chicago-work-force/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://bancodeprofissionais.com/1991/06/10/new-economy-squeezes-out-the-unskilled/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.chicagofed.org/publications/chicago-fed-letter/1998/january-125",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.minneapolisfed.org/beige-book-reports/1994/1994-09-ch",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.chicagofed.org/publications/chicago-fed-letter/1996/june-106",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.chicagofed.org/publications/chicago-fed-letter/1998/february-126",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "IBM（王沪宁转述）判断：到20世纪90年代，其成人识字计划所在地区（芝加哥IBM Plaza/Cabrini-Green服务区）将难以找到所需工人。观察口径为1990—1999年该地区劳动力市场是否出现合格工人短缺，尤其IBM自身招聘困难；反证包括同期该地区IBM招聘充足、失业或劳动力供给充裕、或该中心并非因当地招工困难而设。不以全国技能短缺或后来P-TECH替代。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "fd3fcca58d4bd6b0777d510f768f76697219559b66452dababa370e238a2dce2"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "89dbdb61893a9b3c86ee9b0c547c74b7",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "7f1d3f68234b079d107f429842678ce2",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "3051b8603209841633864e8107904ec1046021f23f4024625baa6f65f0958661"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "38adbee408bd209600387c60699af6c2",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "c23c60194437c6a2f583a4a2462c57b4016de74f3335b126802c992e19f18d1c"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "3e684544cceb572a782e4b15d04fa4c9",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e43211de2eb41d3dc8baf404f74a4a22",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "e3651ddde48f66ca94a1248bf055f95cf370a1b22a86b297883a18803ee06ee4"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "78c946de795189e0dc7a0dbbd58ae2e1",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "6376fb29abe9376ab50b238b3a3a256282f8f958b82dc2cdbd4e1ab9d2231916"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000227158-000227189",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "观察口径：1990—1999年芝加哥地区（IBM成人识字中心服务地区）劳动力市场是否出现合格/可培训工人短缺，尤其IBM自身招聘困难。实际观察时段：1988—1998年芝加哥地区劳动力市场与IBM相关报道。",
+      "reason": "原文预测到九十年代该地区难以找到所需工人。1994年芝加哥联储褐皮书报告“劳动力市场持续走强，工人短缺日益频繁”，1998年芝加哥联储专文以“Help Wanted in the Midwest”讨论劳动力市场紧张限制增长，方向与预测一致。但证据多为区域整体劳动力紧张，未直接证明IBM自身招聘困难，故为部分符合。",
+      "limitation": "缺乏IBM公司1990年代在芝加哥的具体招聘数据；区域劳动力短缺不等于IBM个体招聘困难；部分来源出版日期不明。",
+      "evidence_ids": [
+        "ev-fb01893e4601cc2079257de1",
+        "ev-6e4015cc025b812744cd1af8",
+        "ev-38f544786b731f8703f11559"
+      ],
+      "method": "由当地成人识字不足推测未来合格劳动力供给",
+      "method_basis": "explicit",
+      "observation_end": "1998-01-31",
+      "future_time_text": "到九十年代",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-fb01893e4601cc2079257de1",
+          "relation": "support",
+          "quote": "Labor markets continued to strengthen; worker shortages grew increasingly frequent, and temporary help companies reported rising wages and higher recruitment costs.",
+          "publication_date": "1994-09-14",
+          "observation_end": "1994-09-14",
+          "limitation": "区域整体劳动力市场紧张，非IBM个体招聘数据。"
+        },
+        {
+          "evidence_id": "ev-6e4015cc025b812744cd1af8",
+          "relation": "support",
+          "quote": "labor markets have tightened dramatically throughout the region, leading some to examine the possibility that a limited supply of workers is hindering the region’s growth.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "出版日期不明（刊期为1998年1月），讨论中西部区域而非IBM或芝加哥市具体招聘。"
+        },
+        {
+          "evidence_id": "ev-38f544786b731f8703f11559",
+          "relation": "support",
+          "quote": "The focus of this year’s conference was on the labor market and whether an economy operating at full employment can continue to expand when it is running out of workers.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "出版日期不明（刊期1998年2月），为全国/区域劳动力紧张讨论，非IBM招聘直接证据。"
+        }
+      ],
+      "remaining_gap": "缺少IBM公司1990年代在芝加哥地区自身招聘困难或岗位空缺的直接记录；区域劳动力短缺与IBM个体招聘困难之间的对应关系未建立。"
+    }
+  ],
+  "autonomous_decision": false,
+  "semantic_validation": null,
+  "scope": "IBM（王沪宁转述）判断：到20世纪90年代，其成人识字计划所在地区将难以找到所需工人。观察口径为1990—1999年该IBM成人识字中心服务地区/当地劳动力市场是否出现合格工人短缺，尤其IBM自身招聘困难；反证包括该地区同期IBM招聘充足、失业或劳动力供给充裕、或该中心并非因当地招工困难而设。不以全国技能短缺或后来P-TECH替代。",
+  "elapsed_seconds": 29.234,
+  "completed_at": "2026-11-09T08:01:31.013697+00:00"
+}

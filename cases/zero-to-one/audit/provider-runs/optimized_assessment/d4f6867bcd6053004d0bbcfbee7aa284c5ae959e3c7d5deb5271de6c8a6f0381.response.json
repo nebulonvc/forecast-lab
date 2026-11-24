@@ -1,0 +1,28 @@
+{
+  "id": "7a49b401-9cb9-488e-b09c-01bbc2f3bab6",
+  "object": "chat.completion",
+  "created": 1794201590,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000062788-000062846\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为作者回忆PayPal组建团队时的信念，并列举PayPal成员后续创业经历作为例证；无出版后可检验的预测时间窗口。\",\"reason\":\"该句是作者对过去PayPal团队文化的回顾性判断，不是面向未来的可检验预测。同段列举的后续创业属于已发生事实，用于说明而非预测。\",\"limitation\":\"属于回顾性叙述，无法作为独立预测评分；且“更开心、更高效、更成功”缺乏可操作指标。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4403,
+    "completion_tokens": 184,
+    "total_tokens": 4587,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3635
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

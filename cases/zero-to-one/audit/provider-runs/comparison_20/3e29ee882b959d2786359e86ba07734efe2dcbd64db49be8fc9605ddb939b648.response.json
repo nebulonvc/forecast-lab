@@ -1,0 +1,28 @@
+{
+  "id": "f5be974b-f2de-4a25-918d-35deece27c5f",
+  "object": "chat.completion",
+  "created": 1794201309,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-00024\",\"predictions\":[{\"quote\":\"如果我们花时间来仔细评估每个公司的技术，或许我们能避免不良投资。\",\"kind\":\"prediction\",\"speaker\":\"创始人基金公司（作者群体）\",\"claim\":\"如果花时间仔细评估每个公司的技术，或许能避免不良投资。\",\"expanded_claim\":\"创始人基金公司如果花时间仔细评估每个清洁技术公司的技术，或许能避免不良投资。\",\"reference_resolutions\":[{\"expression\":\"我们\",\"referent\":\"创始人基金公司\",\"support_quote\":\"在创始人基金公司，我们看到这样的情况。\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"如果我们花时间来仔细评估每个公司的技术\",\"method\":\"基于团队洞见的反事实推断\",\"method_basis\":\"explicit\",\"reason\":\"条件性判断，说明另一种做法可能带来的未来结果。\"},{\"quote\":\"怎么才能阻止中国抢走我们的生意？若没有答案，那么结局可想而知。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"清洁技术公司若不能回答如何阻止中国抢走生意，结局可想而知（失败）。\",\"expanded_claim\":\"清洁技术公司的企业家如果无法回答怎么才能阻止中国抢走自己的生意，那么其结局可想而知，即会失败。\",\"reference_resolutions\":[{\"expression\":\"我们\",\"referent\":\"清洁技术公司的企业家\",\"support_quote\":\"清洁技术公司的企业家应该先解决好持久问题并自问\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"若没有答案\",\"method\":\"反问与条件推断\",\"method_basis\":\"explicit\",\"reason\":\"条件性判断，预测无答案者的结局。\"},{\"quote\":\"液压破碎法可能也不是持久的能源解决方案，但它足以摧毁未能预料到其出现的清洁技术公司。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"液压破碎法足以摧毁未能预料到其出现的清洁技术公司。\",\"expanded_claim\":\"液压破碎法可能不是持久的能源解决方案，但它足以摧毁那些未能预料到其出现的清洁技术公司。\",\"reference_resolutions\":[{\"expression\":\"其\",\"referent\":\"液压破碎法\",\"support_quote\":\"液压破碎法（获取天然气的方法）还不成熟\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"基于页岩气占比与天然气价格变化的趋势推断\",\"method_basis\":\"explicit\",\"reason\":\"对清洁技术公司未来命运的预测，含可能性限定。\"},{\"quote\":\"公益创业旨在结合两者精华，并“借由做好事以促成功”，但通常两方面都做不到，最终以失败而告终。\",\"kind\":\"prediction\",\"speaker\":\"作者（彼得·蒂尔、布莱克·马斯特斯）\",\"claim\":\"公益创业通常两方面都做不到，最终以失败告终。\",\"expanded_claim\":\"公益创业旨在结合营利企业和非营利组织的精华，但通常既做不好营利也做不好公益，最终以失败告终。\",\"reference_resolutions\":[{\"expression\":\"两者\",\"referent\":\"营利企业和非营利组织\",\"support_quote\":\"认为营利企业和非营利组织截然相反的想法\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"基于公益创业定义的一般性推断\",\"method_basis\":\"inferred\",\"reason\":\"对公益创业通常结局的预测性判断。\"}]}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3211,
+    "completion_tokens": 716,
+    "total_tokens": 3927,
+    "prompt_tokens_details": {
+      "cached_tokens": 3072
+    },
+    "prompt_cache_hit_tokens": 3072,
+    "prompt_cache_miss_tokens": 139
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

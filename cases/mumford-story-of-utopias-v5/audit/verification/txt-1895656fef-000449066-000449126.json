@@ -1,0 +1,82 @@
+{
+  "claim_id": "txt-1895656fef-000449066-000449126",
+  "plan": {
+    "object": "把人类当成单一单位的抽象",
+    "conditions": [],
+    "quantifier": "will tend to",
+    "result": "区域调查的训练会倾向于灭掉这个抽象",
+    "time_window": "1923年到截止日",
+    "counterevidence_needed": "区域调查出现之后，单一人类的抽象仍然被建立成制度"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "support_query": "regional planning survey replaced the idea of a single united humanity",
+        "counter_query": "one world humanity idea persisted despite regional planning",
+        "saved_at_utc": "2026-11-20T11:11:02Z",
+        "tool_call_id": null
+      }
+    ],
+    "adaptive_rounds": 0,
+    "stop_reason": "2015年文章写联合国按普遍原则而不是区域原则成立，1942年的 One World 写共同人类。抽象没有被灭掉。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unconditional",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [
+      "ev-rosenboim-2015"
+    ],
+    "scope": "对象是区域调查这一训练会倾向于灭掉把人类当成单一单位的抽象。tend to 不是制度宣言。",
+    "reason": "Rosenboim 2015年写的是普遍原则与区域方案之争，以及联合国按普遍原则而不是区域原则成立。这是创始原则的制度宣言，不是区域调查训练的后果，也不能把 tend to kill off 改成主要制度选择没有灭掉单一人类。",
+    "limitation": "该页保留，不再当作这句的反证。文章只有年份。",
+    "method": "先看材料是不是区域调查训练的倾向。制度宣言对不上就不判错误。",
+    "method_basis": "explicit",
+    "remaining_gap": "缺区域调查这一训练是否倾向于灭掉把人类当成单一单位的抽象。联合国原则宣言不能代替。"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "联合国普遍原则是另一对象。不能反证区域调查的倾向。"
+  },
+  "history": [
+    {
+      "stage": "r1",
+      "assess": {
+        "inclusion": "forecast",
+        "verdict": "错误",
+        "basis": "observed_window",
+        "trend_aligned": false,
+        "condition_state": "unconditional",
+        "future_time_text": "",
+        "observation_end": "2015-12-31",
+        "evidence_ids": [
+          "ev-rosenboim-2015"
+        ],
+        "scope": "tend to kill off 是倾向，不是必然。窗口里的主要制度选择如果保住单一人类，这个倾向就没有发生。",
+        "reason": "Rosenboim 2015年的文章写，Willkie 1942年的 One World 把世界看成一个不可分的单位，居民有共同的人类性。同页写联合国组织按普遍原则而不是区域原则成立。单一人类的抽象被写成了制度，不是被区域调查灭掉。",
+        "limitation": "tend to 不是必须成功。这里被反掉的是窗口里的主要方向。文章只有年份。区域调查本身曾经存在，不能当成灭掉已经发生。",
+        "method": "看区域调查之后，单一人类抽象是被灭掉还是被立成制度。",
+        "method_basis": "explicit"
+      },
+      "semantic_review": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass",
+        "note": "普遍原则和 One World 保住了单一人类抽象。"
+      }
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "txt-5386516eaf-001981860-001981922",
+  "assess": {
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "id": "txt-5386516eaf-001981860-001981922",
+    "verdict": "错误",
+    "basis": "observed_window",
+    "observation_end": "2025-02-28",
+    "scope": "产业会趋向劳动者自己的联合。",
+    "reason": "新检索写英国有400个工人合作社、2500名雇员。这不是产业的主要形式。旧的85.1%雇员页这次没有命中，不沿用。",
+    "limitation": "只是工人合作社。",
+    "evidence_ids": [
+      "ev-r3-wcoops"
+    ],
+    "method": "新执行。",
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-r3-wcoops",
+        "quote": "There are 400 worker co-ops in the UK with 2,500 employees",
+        "relation": "counter",
+        "limitation": "规模很小。",
+        "observation_end": "2025-02-28",
+        "publication_date": "2025-02",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": ""
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001981860-001981922",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "不是主要形式。"
+      },
+      {
+        "role": "counter",
+        "query": "不是主要形式。"
+      }
+    ],
+    "note": "r3 新执行，见 audit/search-returns-r3/manifest.json。不是回填。"
+  },
+  "select": {
+    "urls": [
+      "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/employmentintheuk/august2020"
+    ],
+    "reason": "主要形式仍是雇佣。"
+  },
+  "r3_execution": {
+    "new": true,
+    "executed_at": "2026-11-20T10:55:00Z",
+    "why": "不是主要形式。",
+    "previous_verdict": "错误"
+  }
+}

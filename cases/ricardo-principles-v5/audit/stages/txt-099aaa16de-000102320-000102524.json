@@ -1,0 +1,105 @@
+{
+  "id": "txt-099aaa16de-000102320-000102524",
+  "plan": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "not_a_pre_search_plan": "这是2026-11-20的r3补写。r2里这栏若只有“当前审查”一句，那个时间保留在previous_r2_plan，不把本段倒签成检索之前。",
+    "object": "社会进步中，劳动的自然价格有上升趋势，因为调节它的一种主要商品变贵。",
+    "condition": "趋势系在社会进步之上。进步是否持续，材料里没有单独核验。",
+    "observable": "劳动的自然价格，不是市场工资；以及那种主要商品的价格。",
+    "potential_counterevidence": "若在社会仍在进步时，自然价格下降，或那种商品没有变贵。",
+    "queries": [
+      {
+        "role": "counter",
+        "query": "cost of a British subsistence basket fell after 1870",
+        "precall_file": "audit/r-batch3/precall/02-counter.json"
+      },
+      {
+        "role": "support",
+        "query": "cost of a British subsistence basket rose after 1817",
+        "precall_file": "audit/r-batch3/precall/01-support.json"
+      }
+    ]
+  },
+  "select": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "max_urls": 8,
+    "urls": [],
+    "selected_for_score": [],
+    "url_gap": "这条的已存返回是precall和页文本或空的saved_pages。那些文件没有URL行。不编URL。不利材料若只有查询名、没有地址，不能装成名单。"
+  },
+  "assess": {
+    "id": "txt-099aaa16de-000102320-000102524",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "社会进步中，劳动的自然价格总有上升趋势，因为调节它的一种主要商品会变贵。",
+    "reason": "这是可检验倾向。batch3 检索的是生存资料篮子的费用，不是以食物价格定义的自然价格。",
+    "limitation": "已有检索能复用的不再重搜。新检索只补法证未定位的方向或整条缺失。保存页的对象或日期不足，不计分。",
+    "evidence_ids": [],
+    "method": "按这句自己的对象、条件和窗口审查，不把倾向或条件句整类排除。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [],
+    "remaining_gap": "缺自然价格这一个对象。",
+    "r2_reviewed_at": "2026-11-20T12:00:41Z",
+    "previous_verdict": "排除：非预测",
+    "change_reason": "按独立 QA 恢复进预测分母，先保持未知，不打分。"
+  },
+  "semantic_review": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "decision": "unresolved",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "unknown",
+      "time_alignment": "unknown",
+      "evidence_support": "unknown",
+      "counterevidence": "unknown",
+      "verdict_logic": "pass"
+    },
+    "check_reasons": {
+      "object_match": "评估写明缺的是自然价格，没有用Clark或Feinstein的市场工资代替。",
+      "condition_logic": "社会进步这一前提没有一份材料写明在整个观察窗里成立。评估没有用另一种经济状态填上。",
+      "time_alignment": "这句没有作者给出的截止日。已存检索没有带回带日的自然价格。观察终点留空。",
+      "evidence_support": "没有自然价格序列，支持方向不能成立。",
+      "counterevidence": "反证查询找的是生存篮子费用下降。存档没有对应URL，也没有把市场工资下降当成自然价格下降。",
+      "verdict_logic": "缺的就是自然价格这一个对象。暂无法判断对着这个缺口，没有打分。"
+    },
+    "revision": "本轮六项没有fail，所以没有做那一次修订。判决保持暂无法判断。",
+    "remaining_gap": "还缺劳动自然价格和那种主要商品的同对象、带日记录。"
+  },
+  "revision_trail": {
+    "previous_verdict": "排除：非预测",
+    "action": "r2",
+    "why": "按独立 QA 恢复进预测分母，先保持未知，不打分。",
+    "reviewed_at": "2026-11-20T12:00:41Z"
+  },
+  "previous_r2_plan": {
+    "reviewed_at": "2026-11-20T12:00:41Z",
+    "note": "当前审查。历史 precall 不是工具回显。"
+  },
+  "previous_r2_select": {
+    "note": "已有检索能复用的不再重搜。新检索只补法证未定位的方向或整条缺失。保存页的对象或日期不足，不计分。"
+  },
+  "previous_r2_semantic_review": {
+    "reviewed_at": "2026-11-20T12:00:41Z",
+    "object": "社会进步中，劳动的自然价格总有上升趋势，因为调节它的一种主要商品会变贵。",
+    "condition": "unknown",
+    "window": "句子没有写出截止日。文件出版年代理是 1817，只到年。不能把别的年份收成 12 月 31 日。",
+    "counterevidence_limit": "缺自然价格这一个对象。",
+    "checks": {
+      "object_match": "保存材料的对象与这句不完全相同，不能据此打分。",
+      "condition_logic": "条件若未在同一材料里成立，不用另一种情境代替。",
+      "time_alignment": "没有源日期，或只有年份。观察终点留空。",
+      "evidence_support": "支持材料不足以单独证明这句。",
+      "counterevidence": "反面材料也不足以单独证伪这句。",
+      "verdict_logic": "六项没有同时通过，判暂无法判断，不制造分数。"
+    },
+    "issues": [
+      "缺自然价格这一个对象。"
+    ],
+    "decision": "暂无法判断"
+  }
+}

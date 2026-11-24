@@ -1,0 +1,28 @@
+{
+  "id": "d0612e3c-ffd1-40d7-9b88-d4495128f6c8",
+  "object": "chat.completion",
+  "created": 1794201583,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000033979-000034011\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"对扩张到相邻市场时行为方式的建议，非对未来结果的预测。\",\"reason\":\"原文是给创业者的行动建议（不要破坏、躲开竞争），不是对可观察未来结果的判断。\",\"limitation\":\"建议性语句无法作为预测评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000034098-000034202\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性判断：若有公司出现并取代先发者，则最后下手者可在特定市场取得重大进展并获长期垄断利润；无具体市场、公司或期限。\",\"reason\":\"该判断以“被取代”这一条件为前提，且未指定可操作的市场与主体，无法在观察窗口内检验其方向。\",\"limitation\":\"条件未确定、对象不明，且“几年甚至几十年”的垄断利润期限远超截止日，缺证据。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"未来；几年甚至几十年\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5096,
+    "completion_tokens": 312,
+    "total_tokens": 5408,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 4328
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

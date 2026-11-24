@@ -1,0 +1,581 @@
+{
+  "claim_id": "txt-1c4066fc0c-000031340-000031369",
+  "version": "search-verifier-v1",
+  "input_sha256": "323d1581862c9916e22541999da06594854a37664ed5d140a8ff3b518dde8626",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000031340-000031369",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "将“将来美国人会有历史”操作化为：1991年后至2026-11-09，美国历史遗存、记录与公众可利用档案继续得到保存和积累；以国家史迹名录的累计登记规模、名录数据持续更新与公众可查询性为主要观察指标，不评价美国此前是否有历史，也不把名录登记等同于所有遗存原样完好。",
+    "reason": "自动复核未确认主要判断：建议把“名录数据持续更新至2026年”当作支持“历史遗存的记录与认定体系仍在积累”的证据，但所引数据下载页只显示名录数据文件更新到2026年5月22日，并未提供1991年后新增登记数量或积累速度；累计总量与更新日期不能证明作者所说“将来会有历史”的后果在观察窗口内持续实现。; 建议一方面承认缺少1991年后逐年新增序列和公众可利用档案的直接指标，另一方面仍判“部分符合、趋势符合”。按任务口径，趋势符合须有持续方向证据；这里只有累计总量和更新日期，没有1991年后持续积累的方向证据，也没有指出后果B哪些具体部分已实现、哪些未实现，因此不能设置trend_aligned=true并判部分符合，应保留为具体未定。",
+    "limitation": "“将来美国人会有历史”是修辞性表述，难以终局验证；名录累计登记与数据库更新只反映制度性记录与认定，不能证明所有遗存原样保存或公众档案可及性提升。去登记与损毁材料限制的是“保护成效”这一前提强度，不直接反驳“会有历史”的后果，故不据此降为错误。关键修订：不再把去登记与损毁当作对后果的直接反证，也不把“保护无保留、无失败”设为预测成立的条件。",
+    "evidence_ids": [
+      "prior-f6aab75697c44f53dc9e",
+      "ev-ae72a25f379ce0fd714d6724",
+      "ev-58463e782ccd1ee25c759411",
+      "ev-57cb2e83e6703af19076e50a",
+      "ev-6b957bc62229a18527735100"
+    ],
+    "method": "从历史遗产保护投入推断未来文化资源积累",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "将来",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-f6aab75697c44f53dc9e",
+        "relation": "support",
+        "quote": "NPS国家史迹名录说明，自1966年创设以来95000余处入册，关联140万余单体资源，提供各级历史遗产资料。",
+        "publication_date": "2026-06-04",
+        "observation_end": null,
+        "limitation": "为已登记摘要，数字与官方页面略有差异，且仅证明登记规模，不证明实物完好或1991年后逐年新增。"
+      },
+      {
+        "evidence_id": "ev-ae72a25f379ce0fd714d6724",
+        "relation": "support",
+        "quote": "The more than 100,000 properties listed (as of mid-2025) in the National Register represent some two million contributing resources: buildings, sites, districts, structures, and objects",
+        "publication_date": null,
+        "observation_end": "2025-09-15",
+        "limitation": "官方说明页，无明确发表日期；只证明名录累计登记与认定，不证明所有遗存原样保存，也不提供1991年后逐年新增序列。"
+      },
+      {
+        "evidence_id": "ev-58463e782ccd1ee25c759411",
+        "relation": "support",
+        "quote": "Spreadsheet of NRHP Listed properties (listings up to 5/22/2026)",
+        "publication_date": null,
+        "observation_end": "2026-06-04",
+        "limitation": "数据下载页显示名录数据持续更新至2026年，但无发表日期；更新本身不等于保护成效或公众档案可及性提升。"
+      },
+      {
+        "evidence_id": "ev-57cb2e83e6703af19076e50a",
+        "relation": "boundary",
+        "quote": "since 1970, more than 2400 properties have been withdrawn from the NRHP (NPS, 2025b), and notable property deletions often raise public concern.",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "学术会议论文，无明确发表日期；去登记与损毁说明保护并非全面成功，限制“全力以赴保护”的前提强度，但不直接否定“会有历史”的后果。"
+      },
+      {
+        "evidence_id": "ev-6b957bc62229a18527735100",
+        "relation": "boundary",
+        "quote": "A property may be removed from the National Register when it has ceased to meet the criteria for listing because the qualities which caused it to be originally listed have been lost or destroyed (36 C.F.R. § 60.15).",
+        "publication_date": null,
+        "observation_end": "2026-07-31",
+        "limitation": "官方去登记样例页，无明确发表日期；展示实物损毁导致去登记，说明名录登记不保证永久保存，属保护成效的边界材料。"
+      }
+    ],
+    "remaining_gap": "需补充1991年后至2026-11-09的逐年新增登记与去登记连续统计，以及公众可利用历史档案保存与积累的直接指标；若仍无这些材料，应把结论改为具体未定，而不是部分符合/趋势符合。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000031340-000031369",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "将“将来美国人会有历史”操作化为：1991年后至2026-11-09，美国历史遗存、记录与公众可利用档案继续得到保存和积累；以国家史迹名录登记规模、持续更新与公众可查询性为主要观察指标，不评价美国此前是否有历史，也不把名录登记等同于所有遗存原样完好。",
+    "reason": "原文预测美国因全力保护历史遗存而将在未来拥有历史。观察窗口内，国家史迹名录自1966年创设以来累计入册逾10万处、关联约200万单体资源，且名录数据持续更新至2026年，显示保护与记录体系仍在积累，方向与预测一致。但同期也有大量去登记与实物损毁案例，说明“全力以赴保护”并非无保留成立，故仅判部分符合、趋势符合而最终结果待验证。",
+    "limitation": "“将来美国人会有历史”是修辞性表述，难以精确终局验证；名录登记数量只反映制度性记录与认定，不能证明所有遗存原样保存或公众态度。去登记与损毁证据表明保护并非全面成功，且部分来源无明确发表日期。",
+    "evidence_ids": [
+      "prior-f6aab75697c44f53dc9e",
+      "ev-ae72a25f379ce0fd714d6724",
+      "ev-58463e782ccd1ee25c759411",
+      "ev-57cb2e83e6703af19076e50a",
+      "ev-6b957bc62229a18527735100"
+    ],
+    "method": "从历史遗产保护投入推断未来文化资源积累",
+    "method_basis": "inferred",
+    "observation_end": "2026-11-09",
+    "future_time_text": "将来",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-f6aab75697c44f53dc9e",
+        "relation": "support",
+        "quote": "NPS国家史迹名录说明，自1966年创设以来95000余处入册，关联140万余单体资源，提供各级历史遗产资料。",
+        "publication_date": "2026-06-04",
+        "observation_end": null,
+        "limitation": "为已登记摘要，数字与官方页面略有差异，且仅证明登记规模，不证明实物完好。"
+      },
+      {
+        "evidence_id": "ev-ae72a25f379ce0fd714d6724",
+        "relation": "support",
+        "quote": "The more than 100,000 properties listed (as of mid-2025) in the National Register represent some two million contributing resources: buildings, sites, districts, structures, and objects",
+        "publication_date": null,
+        "observation_end": "2025-09-15",
+        "limitation": "官方说明页，无明确发表日期；只证明名录登记与认定，不证明所有遗存原样保存。"
+      },
+      {
+        "evidence_id": "ev-58463e782ccd1ee25c759411",
+        "relation": "support",
+        "quote": "Spreadsheet of NRHP Listed properties (listings up to 5/22/2026)",
+        "publication_date": null,
+        "observation_end": "2026-06-04",
+        "limitation": "数据下载页显示名录持续更新至2026年，但无发表日期；更新本身不等于保护成效。"
+      },
+      {
+        "evidence_id": "ev-57cb2e83e6703af19076e50a",
+        "relation": "counter",
+        "quote": "since 1970, more than 2400 properties have been withdrawn from the NRHP (NPS, 2025b), and notable property deletions often raise public concern.",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "学术会议论文，无明确发表日期；去登记与损毁案例说明保护并非全面成功，构成对“全力以赴保护”的反证。"
+      },
+      {
+        "evidence_id": "ev-6b957bc62229a18527735100",
+        "relation": "counter",
+        "quote": "A property may be removed from the National Register when it has ceased to meet the criteria for listing because the qualities which caused it to be originally listed have been lost or destroyed (36 C.F.R. § 60.15).",
+        "publication_date": null,
+        "observation_end": "2026-07-31",
+        "limitation": "官方去登记样例页，无明确发表日期；展示实物损毁导致去登记，说明名录登记不保证永久保存。"
+      }
+    ],
+    "remaining_gap": "缺少1991年后逐年登记与去登记的连续统计，以及保护经费与公众档案可及性的系统数据，无法精确量化“全力以赴保护”的强度与趋势。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-f6aab75697c44f53dc9e",
+      "url": "https://www.nps.gov/subjects/nationalregister/database-research.htm",
+      "title": "ev-lane1-heritage",
+      "published_date": "2026-06-04",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane1-heritage",
+      "archive_sha256": "53999dc20015647d62da0f061f8be4080f646716cb0285c43115e6ac05e8c654",
+      "archive_path": "data/sources/lane1-heritage.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ae72a25f379ce0fd714d6724",
+      "url": "https://www.nps.gov/subjects/nationalregister/what-is-the-national-register.htm",
+      "resolved_url": "https://www.nps.gov/subjects/nationalregister/what-is-the-national-register.htm",
+      "title": "What is the National Register of Historic Places? - National Register of Historic Places (U.S. National Park Service)",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:00.714512+00:00",
+      "archive_sha256": "0f839f2c11529f2af267b1c99771f99ec1ac803bfaa2dc1f589bd3bbf0baf271",
+      "archive_path": "jobs/ac2867d660721330d152a18d/0f839f2c11529f2af267b1c99771f99ec1ac803bfaa2dc1f589bd3bbf0baf271.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-58463e782ccd1ee25c759411",
+      "url": "https://www.nps.gov/subjects/nationalregister/data-downloads.htm",
+      "resolved_url": "https://www.nps.gov/subjects/nationalregister/data-downloads.htm",
+      "title": "Data Downloads - National Register of Historic Places (U.S. National Park Service)",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:00.714657+00:00",
+      "archive_sha256": "c62002c6ba6a8010972ba0bdb01941f6e2f9d9d4998cbcce464d6b7e3357e782",
+      "archive_path": "jobs/ac2867d660721330d152a18d/c62002c6ba6a8010972ba0bdb01941f6e2f9d9d4998cbcce464d6b7e3357e782.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-57cb2e83e6703af19076e50a",
+      "url": "https://knightscholar.geneseo.edu/cgi/viewcontent.cgi?article=1676&context=great-day-symposium",
+      "resolved_url": "https://knightscholar.geneseo.edu/cgi/viewcontent.cgi?article=1676&context=great-day-symposium",
+      "title": "007 - Heritage Lost: Geographies of National Register Property Delisting and Vulnerability (1970-2024)",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:00.714828+00:00",
+      "archive_sha256": "6e985a5d7e259169cccac77a765a442da1479a1ebc5c1b0f12695d03af6e55df",
+      "archive_path": "jobs/ac2867d660721330d152a18d/6e985a5d7e259169cccac77a765a442da1479a1ebc5c1b0f12695d03af6e55df.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-6b957bc62229a18527735100",
+      "url": "https://www.nps.gov/subjects/nationalregister/sample-nominations-removals.htm",
+      "resolved_url": "https://www.nps.gov/subjects/nationalregister/sample-nominations-removals.htm",
+      "title": "Sample Nominations - Removals - National Register of Historic Places (U.S. National Park Service)",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:00.714979+00:00",
+      "archive_sha256": "da2e73f29d2045c3f03dfa416354e83dd532e1ab7a47ee0511891fdc5bc40deb",
+      "archive_path": "jobs/ac2867d660721330d152a18d/da2e73f29d2045c3f03dfa416354e83dd532e1ab7a47ee0511891fdc5bc40deb.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "National Park Service National Register of Historic Places annual listings statistics 1991 2025 total properties",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "National Register of Historic Places delisted properties budget cuts heritage site loss United States 1991 2025",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "National Park Service National Register of Historic Places annual listings statistics 1991 2025 total properties",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "National Register of Historic Places delisted properties budget cuts heritage site loss United States 1991 2025",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-57cb2e83e6703af19076e50a",
+        "ev-58463e782ccd1ee25c759411",
+        "ev-6b957bc62229a18527735100",
+        "ev-ae72a25f379ce0fd714d6724"
+      ]
+    }
+  ],
+  "remaining_gap": "需补充1991年后至2026-11-09的逐年新增登记与去登记连续统计，以及公众可利用历史档案保存与积累的直接指标；若仍无这些材料，应把结论改为具体未定，而不是部分符合/趋势符合。",
+  "source_statuses": [
+    {
+      "url": "https://www.nps.gov/subjects/nationalregister/what-is-the-national-register.htm",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.nps.gov/subjects/nationalregister/data-downloads.htm",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://knightscholar.geneseo.edu/cgi/viewcontent.cgi?article=1676&context=great-day-symposium",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.nps.gov/subjects/nationalregister/sample-nominations-removals.htm",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "王沪宁1991年前后关于美国历史遗产保护的修辞性预测：“将来美国人会有历史”，操作化为美国历史遗存、记录与公众可利用档案在1991年后至2026-11-09继续得到保存和积累；不评价美国此前是否有历史，也不把名录登记等同于所有遗存原样完好。反证包括：保护体系经费或登记停滞、重要遗存大规模损毁或去登记、公众档案可及性显著下降。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "783c2f2b5cb9dbdf1d346929e68444fca3a3730b4792e5ba1262afd377dfd529"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "0cebc3d56d515f66fa2bd737dacf089b",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "1c9035ccdd914e740e50939eb274c0c3",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "f0f880e529a9dbc08cb2f32563b87f7c11699890cb0eb4ceba014b022d56ee43"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "b21c4bcdcd46221469258e2c61b1118b",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "794da6cad8eb6168584582724a84c7189cabebaf8f6d62af90acf5a1268e97ab"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "0cebc3d56d515f66fa2bd737dacf089b",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "1c9035ccdd914e740e50939eb274c0c3",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "48a006a24e1aaa966f9ad721f876086248163b103bcc3b80d47fb1972f3e0ee7"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "43a28a454aa26a61124673aad36485815addcbce4f68cba5fabdeef7fee7aa86"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "7aa56429ad46b4d093099d0994bd456732fbdfe756341bb3378a8e0b56fd0f97"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "50a646da75993042e0d68138d97ed5f202f37e7d191e409119d4262a2a2e8374"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "2bc5ef25e2ac127486a8cf4f43a48f796afa6cfd2c2bfde2dfd3b15277de6588"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000031340-000031369",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "fail",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原文的因果结构是“因为现在全力以赴地加以保护，所以将来美国人会有历史”。建议把“全力以赴保护”当作可被去登记和损毁案例部分否定的前提，并据此降为部分符合；但原文并未把“保护无保留、无失败”设为预测成立的条件，去登记与损毁只能限制“保护成效”，不能直接否定“将来会有历史”这一后果。",
+          "source_quote": "所以，将来美国\n人会有历史，因为它现在全力以赴地加以保护。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议用名录累计登记规模与数据更新至2026年支持“保护与记录体系仍在积累”，但这些材料只证明名录存在、登记总量和数据库更新，不能证明1991年后相对于作者观察时点有持续新增积累，也不能证明公众可利用档案的保存与积累。",
+          "source_quote": "The more than 100,000 properties listed (as of mid-2025) in the National Register represent some two million contributing resources: buildings, sites, districts, structures, and objects",
+          "evidence_id": "ev-ae72a25f379ce0fd714d6724",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "counterevidence",
+          "reason": "去登记与损毁材料被当作对“全力以赴保护”的反证，但它们与原文预测的后果“将来美国人会有历史”并非同一指标；名录去登记不等于美国人没有历史资源积累，建议未说明这些反向材料如何直接反驳后果，存在把不同指标机械冲抵的问题。",
+          "source_quote": "since 1970, more than 2400 properties have been withdrawn from the NRHP (NPS, 2025b), and notable property deletions often raise public concern.",
+          "evidence_id": "ev-57cb2e83e6703af19076e50a",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议判“部分符合”并设trend_aligned=true，但其理由主要是保护体系有积累、同时有去登记损毁，属于前提强度与保护成效的混合，而非后果“将来美国人会有历史”哪些具体部分实现、哪些未实现。按口径，若后果在声明范围内已实现，改善或损毁只能作为缓解与限制，不能仅凭此降为部分符合；若后果无法终局检验，应保留具体未定而非部分符合。",
+          "source_quote": "将“将来美国人会有历史”操作化为：1991年后至2026-11-09，美国历史遗存、记录与公众可利用档案继续得到保存和积累；以国家史迹名录登记规模、持续更新与公众可查询性为主要观察指标，不评价美国此前是否有历史，也不把名录登记等同于所有遗存原样完好。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需重新界定“将来美国人会有历史”的可检验后果，并补充1991年后相对于作者观察时点的持续新增保存/记录/公众可利用档案证据；若无法终局检验，应改为具体未定，而不是以去登记损毁把前提强度混入后果判定。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000031340-000031369",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "evidence_support",
+          "reason": "建议把“名录数据持续更新至2026年”当作支持“历史遗存的记录与认定体系仍在积累”的证据，但所引数据下载页只显示名录数据文件更新到2026年5月22日，并未提供1991年后新增登记数量或积累速度；累计总量与更新日期不能证明作者所说“将来会有历史”的后果在观察窗口内持续实现。",
+          "source_quote": "Spreadsheet of NRHP Listed properties (listings up to 5/22/2026)",
+          "evidence_id": "ev-58463e782ccd1ee25c759411",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议一方面承认缺少1991年后逐年新增序列和公众可利用档案的直接指标，另一方面仍判“部分符合、趋势符合”。按任务口径，趋势符合须有持续方向证据；这里只有累计总量和更新日期，没有1991年后持续积累的方向证据，也没有指出后果B哪些具体部分已实现、哪些未实现，因此不能设置trend_aligned=true并判部分符合，应保留为具体未定。",
+          "source_quote": "但现有材料只给出累计总量与更新日期，缺少1991年后相对于作者观察时点的逐年新增序列，也缺少公众可利用档案保存与积累的直接指标，故只能判部分符合、趋势符合，最终结果待验证。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充1991年后至2026-11-09的逐年新增登记与去登记连续统计，以及公众可利用历史档案保存与积累的直接指标；若仍无这些材料，应把结论改为具体未定，而不是部分符合/趋势符合。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000031340-000031369",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "将“将来美国人会有历史”操作化为：1991年后至2026-11-09，美国历史遗存、记录与公众可利用档案继续得到保存和积累；以国家史迹名录登记规模、持续更新与公众可查询性为主要观察指标，不评价美国此前是否有历史，也不把名录登记等同于所有遗存原样完好。",
+      "reason": "原文预测美国因全力保护历史遗存而将在未来拥有历史。观察窗口内，国家史迹名录自1966年创设以来累计入册逾10万处、关联约200万单体资源，且名录数据持续更新至2026年，显示保护与记录体系仍在积累，方向与预测一致。但同期也有大量去登记与实物损毁案例，说明“全力以赴保护”并非无保留成立，故仅判部分符合、趋势符合而最终结果待验证。",
+      "limitation": "“将来美国人会有历史”是修辞性表述，难以精确终局验证；名录登记数量只反映制度性记录与认定，不能证明所有遗存原样保存或公众态度。去登记与损毁证据表明保护并非全面成功，且部分来源无明确发表日期。",
+      "evidence_ids": [
+        "prior-f6aab75697c44f53dc9e",
+        "ev-ae72a25f379ce0fd714d6724",
+        "ev-58463e782ccd1ee25c759411",
+        "ev-57cb2e83e6703af19076e50a",
+        "ev-6b957bc62229a18527735100"
+      ],
+      "method": "从历史遗产保护投入推断未来文化资源积累",
+      "method_basis": "inferred",
+      "observation_end": "2026-11-09",
+      "future_time_text": "将来",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-f6aab75697c44f53dc9e",
+          "relation": "support",
+          "quote": "NPS国家史迹名录说明，自1966年创设以来95000余处入册，关联140万余单体资源，提供各级历史遗产资料。",
+          "publication_date": "2026-06-04",
+          "observation_end": null,
+          "limitation": "为已登记摘要，数字与官方页面略有差异，且仅证明登记规模，不证明实物完好。"
+        },
+        {
+          "evidence_id": "ev-ae72a25f379ce0fd714d6724",
+          "relation": "support",
+          "quote": "The more than 100,000 properties listed (as of mid-2025) in the National Register represent some two million contributing resources: buildings, sites, districts, structures, and objects",
+          "publication_date": null,
+          "observation_end": "2025-09-15",
+          "limitation": "官方说明页，无明确发表日期；只证明名录登记与认定，不证明所有遗存原样保存。"
+        },
+        {
+          "evidence_id": "ev-58463e782ccd1ee25c759411",
+          "relation": "support",
+          "quote": "Spreadsheet of NRHP Listed properties (listings up to 5/22/2026)",
+          "publication_date": null,
+          "observation_end": "2026-06-04",
+          "limitation": "数据下载页显示名录持续更新至2026年，但无发表日期；更新本身不等于保护成效。"
+        },
+        {
+          "evidence_id": "ev-57cb2e83e6703af19076e50a",
+          "relation": "counter",
+          "quote": "since 1970, more than 2400 properties have been withdrawn from the NRHP (NPS, 2025b), and notable property deletions often raise public concern.",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "学术会议论文，无明确发表日期；去登记与损毁案例说明保护并非全面成功，构成对“全力以赴保护”的反证。"
+        },
+        {
+          "evidence_id": "ev-6b957bc62229a18527735100",
+          "relation": "counter",
+          "quote": "A property may be removed from the National Register when it has ceased to meet the criteria for listing because the qualities which caused it to be originally listed have been lost or destroyed (36 C.F.R. § 60.15).",
+          "publication_date": null,
+          "observation_end": "2026-07-31",
+          "limitation": "官方去登记样例页，无明确发表日期；展示实物损毁导致去登记，说明名录登记不保证永久保存。"
+        }
+      ],
+      "remaining_gap": "缺少1991年后逐年登记与去登记的连续统计，以及保护经费与公众档案可及性的系统数据，无法精确量化“全力以赴保护”的强度与趋势。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000031340-000031369",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "将“将来美国人会有历史”操作化为：1991年后至2026-11-09，美国历史遗存、记录与公众可利用档案继续得到保存和积累；以国家史迹名录的累计登记规模、名录数据持续更新与公众可查询性为主要观察指标，不评价美国此前是否有历史，也不把名录登记等同于所有遗存原样完好。",
+      "reason": "原文的后果判断是“将来美国人会有历史”，其因果理由是“现在全力以赴地加以保护”。观察窗口内，国家史迹名录累计入册逾10万处、关联约200万单体资源，且名录数据持续更新至2026年，说明历史遗存的记录与认定体系仍在积累，后果方向与预测一致。但现有材料只给出累计总量与更新日期，缺少1991年后相对于作者观察时点的逐年新增序列，也缺少公众可利用档案保存与积累的直接指标，故只能判部分符合、趋势符合，最终结果待验证。",
+      "limitation": "“将来美国人会有历史”是修辞性表述，难以终局验证；名录累计登记与数据库更新只反映制度性记录与认定，不能证明所有遗存原样保存或公众档案可及性提升。去登记与损毁材料限制的是“保护成效”这一前提强度，不直接反驳“会有历史”的后果，故不据此降为错误。关键修订：不再把去登记与损毁当作对后果的直接反证，也不把“保护无保留、无失败”设为预测成立的条件。",
+      "evidence_ids": [
+        "prior-f6aab75697c44f53dc9e",
+        "ev-ae72a25f379ce0fd714d6724",
+        "ev-58463e782ccd1ee25c759411",
+        "ev-57cb2e83e6703af19076e50a",
+        "ev-6b957bc62229a18527735100"
+      ],
+      "method": "从历史遗产保护投入推断未来文化资源积累",
+      "method_basis": "inferred",
+      "observation_end": "2026-11-09",
+      "future_time_text": "将来",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-f6aab75697c44f53dc9e",
+          "relation": "support",
+          "quote": "NPS国家史迹名录说明，自1966年创设以来95000余处入册，关联140万余单体资源，提供各级历史遗产资料。",
+          "publication_date": "2026-06-04",
+          "observation_end": null,
+          "limitation": "为已登记摘要，数字与官方页面略有差异，且仅证明登记规模，不证明实物完好或1991年后逐年新增。"
+        },
+        {
+          "evidence_id": "ev-ae72a25f379ce0fd714d6724",
+          "relation": "support",
+          "quote": "The more than 100,000 properties listed (as of mid-2025) in the National Register represent some two million contributing resources: buildings, sites, districts, structures, and objects",
+          "publication_date": null,
+          "observation_end": "2025-09-15",
+          "limitation": "官方说明页，无明确发表日期；只证明名录累计登记与认定，不证明所有遗存原样保存，也不提供1991年后逐年新增序列。"
+        },
+        {
+          "evidence_id": "ev-58463e782ccd1ee25c759411",
+          "relation": "support",
+          "quote": "Spreadsheet of NRHP Listed properties (listings up to 5/22/2026)",
+          "publication_date": null,
+          "observation_end": "2026-06-04",
+          "limitation": "数据下载页显示名录数据持续更新至2026年，但无发表日期；更新本身不等于保护成效或公众档案可及性提升。"
+        },
+        {
+          "evidence_id": "ev-57cb2e83e6703af19076e50a",
+          "relation": "boundary",
+          "quote": "since 1970, more than 2400 properties have been withdrawn from the NRHP (NPS, 2025b), and notable property deletions often raise public concern.",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "学术会议论文，无明确发表日期；去登记与损毁说明保护并非全面成功，限制“全力以赴保护”的前提强度，但不直接否定“会有历史”的后果。"
+        },
+        {
+          "evidence_id": "ev-6b957bc62229a18527735100",
+          "relation": "boundary",
+          "quote": "A property may be removed from the National Register when it has ceased to meet the criteria for listing because the qualities which caused it to be originally listed have been lost or destroyed (36 C.F.R. § 60.15).",
+          "publication_date": null,
+          "observation_end": "2026-07-31",
+          "limitation": "官方去登记样例页，无明确发表日期；展示实物损毁导致去登记，说明名录登记不保证永久保存，属保护成效的边界材料。"
+        }
+      ],
+      "remaining_gap": "缺少1991年后逐年登记与去登记的连续统计，以及保护经费与公众档案可及性的系统数据，无法精确量化“全力以赴保护”的强度，也无法把“将来美国人会有历史”的后果终局检验。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "王沪宁1991年前后关于美国历史遗产保护的修辞性预测：“将来美国人会有历史”操作化为美国历史遗存、记录与公众可利用档案在1991年后至2026-11-09继续得到保存和积累；不评价美国此前是否有历史，也不把名录登记等同于所有遗存原样完好。反证包括：保护体系经费或登记停滞、重要遗存大规模损毁或去登记、公众档案可及性显著下降。",
+  "elapsed_seconds": 43.481,
+  "completed_at": "2026-11-09T08:12:32.504129+00:00"
+}

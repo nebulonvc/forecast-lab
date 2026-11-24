@@ -1,0 +1,28 @@
+{
+  "id": "50e5f6b9-28e4-457c-93b7-2253234cb099",
+  "object": "chat.completion",
+  "created": 1794201588,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000059238-000059263\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"observed_window\",\"scope\":\"预测对象为初创公司董事会中创始人与投资者之间的潜在冲突随时间增加；无具体指标、期限或可量化基准，无法在2014—2026观察窗口内对“潜在冲突”做统一操作化测量。\",\"reason\":\"原文给出的是关于董事会内部利益分歧导致冲突累积的一般性趋势判断，缺少可核验的指标与案例。现有证据为空，无法确认冲突是否随时间增加。\",\"limitation\":\"“潜在冲突”难以量化，且未提供具体公司或时间区间；无证据不能支持或反驳该趋势。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"随着时间的推移\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4348,
+    "completion_tokens": 198,
+    "total_tokens": 4546,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3580
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

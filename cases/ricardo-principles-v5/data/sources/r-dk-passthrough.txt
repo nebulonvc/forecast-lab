@@ -1,0 +1,877 @@
+### Labor cost pass-through to producer prices in
+
+### Denmark
+
+Simon Juul Hviid sjh@nationalbanken.dk DANMARKS NATIONALBANK
+
+Tobias Renkin tobr@nationalbanken.dk DANMARKS NATIONALBANK
+
+The Working Papers of Danmarks Nationalbank describe research and development, often still ongoing, as a contribution to the professional debate.
+
+The viewpoints and conclusions stated are the responsibility of the individual contributors, and do not necessarily reflect the views of Danmarks Nationalbank.
+
+2 1 D E C E M B ER 2 0 20 — NO. 16 6
+
+W O R K I N G P A P E R — D A N M AR K S N A T IO N A L B A N K 2 1 D E C E M B ER 2 0 20 — NO. 16 6
+
+Abstract We estimate the pass-through of a cost-push wage shock to producer prices of firms in Denmark. We deal with the endogeneity of wages by using an identification strategy based on variation in the estimated outside option of workers within an industry. Our results suggest that the pass-through elasticity of wage increases to prices amounts to about one third when keeping the marginal product of labor constant. Our results are in line with previous studies of earlier time periods and confirm an important causal relationship between wages and prices.
+
+Resume Vi estimerer gennemslaget af et stød til lønningerne til producentpriserne for virksomheder i Danmark. Vi håndterer endogeniteten of lønninger ved at anvende en identifikationsstrategi, som baserer sig på variationen i den eksterne option for medarbejdere indenfor en given industri. Vores resultater indikerer, at gennemslagselasticiteten af lønstigninger til prisstigninger udgør omtrent en tredjedel, for et givet niveau af marginalproduktet af arbejde. Vores resultater er i overensstemmelse med andre studier af data fra tidligere perioder og bekræfter dermed en vigtig kausal sammenhæng mellem lønninger og priser.
+
+Labor cost pass-through to producer prices in Denmark
+
+Acknowledgements The authors wish to thank colleagues from Danmarks Nationalbank, in particular Federico Ravenna, Martin Nygaard Jørgensen, Kim Padkjær Abildgren, Paul Lassenius Kramp, and Casper Winther Nguyen Jørgensen for valuable comments. In addition, we would like to thank Mark Strøm Kristoffersen and Gabriel Züllig for valuable sparring on data.
+
+The authors alone are responsible for any remaining errors.
+
+Key words Wage pass-through; Phillips curve; Producer prices.
+
+JEL classification D24; E52; L11.
+
+#### Labor cost pass-through to producer prices in Denmark∗
+
+Simon Juul Hviid† Tobias Renkin‡
+
+Abstract We estimate the pass-through of a cost-push wage shock to producer prices of firms in Denmark. We deal with the endogeneity of wages by using an identification strategy based on variation in the estimated outside option of workers within an industry. Our results suggest that the pass-through elasticity of wage increases to prices amounts to about one third when keeping the marginal product of labor constant. Our results are in line with previous studies of earlier time periods and confirm an important causal relationship between wages and prices.
+
+JEL Classification: D24; E52; L11 Keywords: Wage pass-through; Phillips curve; Producer prices
+
+∗The authors wish to thank colleagues from Danmarks Nationalbank, in particular Federico Ravenna, Martin 
+Nygaard Jørgensen, Kim Padkjær Abildgren, Paul Lassenius Kramp, Christian Ellermann-Aarslev, and Casper 
+Winther Nguyen Jørgensen for valuable comments. In addition, we would like to thank Mark Strøm Kristoffersen 
+and Gabriel Züllig for valuable sparring on data. The viewpoints and conclusions stated are the responsibility of the 
+individual contributors, and do not necessarily reflect the views of Danmarks Nationalbank. The authors alone are 
+responsible for any remaining errors. 
+†Danmarks Nationalbank. E-mail: sjh@nationalbanken.dk. 
+‡Danmarks Nationalbank. E-mail: tobr@nationalbanken.dk. 
+
+##### 1 Introduction
+
+In this paper, we estimate the causal effect of idiosyncratic shocks to a firm-level wage growth 
+on producer prices in Denmark for the period between 2000 and 2017. Our work is motivated 
+from two perspectives. First, we aim to contribute to a better understanding of firms’ price 
+setting behavior, and the pass-through of idiosyncratic cost-shocks is especially informative 
+about the role of competition for prices. Second, the relationship between wages and prices at 
+the aggregate level is important for several dimensions of economic policy. In macroeconomic 
+policy, the Phillips curve relationship between inflation and the output gap crucially depends 
+on pass-through from wage growth to prices. In labor market policy, the welfare effects of 
+minimum wage policy or collective bargaining outcomes crucially depend on the link between 
+wages and prices. 
+The main challenge in the identificaton of wage-price pass-through is that wages and prices 
+are jointly influenced by many other economic variables. Estimating a causal effect of wages on 
+prices thus requires some exogenous variation in wages. We follow an identification strategy 
+introduced in Carlsson and Skans (2012) to isolate such exogenous variation in wage growth 
+within a cross-section of Danish firms. The main idea of this strategy is that firms have to 
+match improvements in the labor market outside option of their workers by increasing wages. 
+Such wage increases are exogenously “imposed” on firms, and depend on the labor market 
+they operate in, but are independent of their own productivity conditions. We use differences 
+in firms’ exposure to different segregated labor markets – defined by worker occupations, 
+geography, etc. – to construct exogenous instruments that measure the outside wage pressure 
+on a firm. The Carlsson and Skans (2012) identification strategy requires data on prices as well 
+as employer-employee links, individual wages, and employee characteristics. We combine 
+several Danish registry data sets to construct the necessary data set. We will focus specifically 
+on producer prices. Producer prices are a “clean” measure of price inflation and less distorted 
+by direct and indirect taxes than consumer prices. Moreover, producer prices cover mostly 
+manufacturing firms who operate in product markets that usually are unrelated to the firm’s 
+geographical location, and thus allow for a clean separation between product market and labor 
+market shocks. 
+Our estimates of the pass-through of wages to prices are generally in line with previous 
+studies but slightly lower, with elasticities around one third. Pass-through seems to be higher 
+in firms with low market share, but medium labor share of total costs. Pass-through is larger in 
+manufacturing than in the selection of services we observe in the data. We find that the marginal 
+productivity of labor plays a smaller role for prices, even though in theory their impact should 
+be symmetrical. Finally, we find that when we do not condition on the marginal productivity of 
+labor, and thus allow for substitution between input factors, wage-price pass-through is smaller 
+at around 0.1, i.e. roughly one third of the labor share of total costs. 
+
+2
+
+Our work is most closely related to the literature on (labor) cost pass-through, to which we contribute in two ways. We are the first to present results for the period including and following the great recession. This allows us to study pass-through in the persistent low inflation environment characterizing the time from 2008 to the present. Previous studies, such as Amiti et al. (2019) and Carlsson and Skans (2012), which we build on, study mostly the pre-crisis period. Second, we are the first to present such estimates for the Danish economy. Dedola et al. (2020) estimate the pass-through of energy price shocks using the same Danish producer price data, and find close to full pass-through. Beyond that, we contribute to two broader areas of research. In labor economics, it is important to judge the general equilibrium effects of policies designed to boost wages in the absence of corresponding productivity gains, such as higher minimum wages or collective bargaining. Our results contribute to the literature studying the price effects of labor market policies. This literature has looked at the impact of aggregate cost-push wage shocks, most importantly minimum wage increases. It has found complete pass-through of marginal cost shocks (Harasztosi and Lindner (2019), Renkin et al. (2019), Aaronson (2001)). In contrast to this literature, we study the effect of wage shocks that do not affect all firms in a labor market, but are idiosyncratic in nature. This difference is important: in most theoretical settings, aggregate wage shocks should be passed through fully (i.e. to the full extent that they increase marginal cost), but often one would expect a more muted pass-through of idiosyncratic shocks as, e.g., strategic complementarity may play an important role for firm price setting. In macroeconomics, the pass-through from aggregate wage inflation to aggregate price inflation is one link in the Phillips curve relationship between inflation and the output gap, and is at the core of understanding the effects of monetary policy on inflation. For a while, the potential flattening of the Phillips curve has received a lot of attention in macroeconomics. A negative correlation between unemployment and inflation has long been a stylized fact, but the relationship has drastically declined or vanished in recent data for most economies (Kristoffersen (2018), BIS (2017), Bobeica et al. (2019), Hooper et al. (2019), Gumiel and Hahn (2018), and Kiley (2015)). This has sparked discussion of possible causes in the literature, mostly related to misspecification and mismeasurement in the context of macroeconometric models (Galí and Gambetti (2019), Stock and Watson (2019), Coibion and Gorodnichenko (2015), and Sanchez and Kim (2018)). Our study relates to one of the two links in the Phillips curve relationship, the pass-through from wage growth to price inflation, but our focus is on idiosyncratic firm-level shocks rather than aggregate shocks to wages. While our study is clearly related to this literature and our ultimate goal would be to address wage pass-through at the aggregate level, our setting addresses the pass-through of idiosyncratic wage-shocks, and our results do not directly map to the macro level. Deriving the implications for the Phillips curve of our finding of a significant causal relationship between wages and prices at the firm level remains to be done in future work.
+
+3
+
+Among the potential explanations for the apparent death of the Phillips curve in macrodata, 
+Hooper et al. (2019) list three main reasons. First, inflation expectations seem to have become 
+more important than current inflation, as is the case in the conventional neo-classical Phillips 
+curve, and these expectations seem to have become more anchored (relative to, say, the 70s). 
+The other two reasons address potential identification issues using macrodata rather than 
+providing theories in which the standard Phillips curve should be less visible. To start with, 
+there is too little variation in macrodata to pick up the co-movements in unemployment, wages, 
+and prices, as the unemployment gap in absolute terms less frequently exceeds 1 per cent 
+(or some other threshold), beyond which the Phillips curve seems to be significantly steeper, 
+see, e.g., Barnes and Olivei (2003), Stock and Watson (2008), Cororaton et al. (2011), or Doser 
+et al. (2017). Lastly, the endogenous response of monetary policy to changes in inflation and 
+potentially output/labor market gaps can have introduced a bias in the estimated slope of 
+the Phillips curve towards zero, as shown by Fitzgerald and Nicolini (2014) and McLeay and 
+Tenreyro (2019) and a lower observed pass-through from wages to prices. The intuition is that, 
+e.g., a negative demand shock would increase unemployment and decrease inflation, which 
+would be followed by easing of monetary policy from central banks, causing unemployment 
+(wages) to fall (rise) less whereby there will be added a more muted observed negative (positive) 
+correlation between aggregate unemployment (wages) and prices. 
+These last two reasons for the observed low correlation of unemployment, wage, and 
+price inflation in macro time series underline the need for research on data at the micro level, 
+utilizing cross-sectional variation in the identification strategy. To this end, we have focused 
+on idiosyncratic shocks and it is beyond the scope of this paper to address the pass-though of 
+common shocks. 
+The aggregate developments of wages and prices are not only a Danish phenomenon, 
+but a feature of wages and prices in most developed economies, cf. figure 1. We see that 
+wages have been increasing steadily throughout the period from 2003 to 2018 (a), but on the 
+other hand, in particular after 2011, producer price developments have been muted across all 
+depicted countries. Obviously, many factors influence the relationship between wages and 
+prices, as, e.g., productivity gains would be expected to materialize as a wedge between wage 
+and price developments giving rise to increasing real wages. However, there is no indication of 
+a particularly dominant productivity increase in recent years, see De Økonomiske Råd (2019), 
+among others. These plots do not allow any causal statements on the relationship between 
+wages and prices as, e.g., productivity increases, which could give rise to increasing real wages, 
+are not taken into account. But it illustrates that for some reason there seems to have been a 
+declining co-movement in recent years. 
+The remainder of this paper is organized as follows. Section 2 describes the theoretical 
+framework and section 3 then lays out the empirical framework. Section 4 describes the Danish 
+micro data used in our empirical approach. Section 5 describes our results and section 6 
+
+4
+
+.6
+
+.8
+
+1
+
+1.2
+
+1.4
+
+Index, 2011=1
+
+2002 2004 2006 2008 2010 2012 2014 2016 2018 TIME
+
+(a) Labour compensation per hour
+
+.6
+
+.8
+
+1
+
+1.2
+
+1.4
+
+Index, 2011=1
+
+2002 2004 2006 2008 2010 2012 2014 2016 2018 TIME
+
+(b) Producer prices
+
+Figure 1: Wages in western countries has increased more than prices since 2011
+
+Source: OECD Stat. 
+Note: Countries are Belgium, Switzerland, the Czech Republic, Germany, Spain, Finland, France, Great Britain, 
+Ireland, Israel, Italy, Korea, Luxembourg, the Netherlands, Norway, New Zealand, Poland, Portugal, Slovakia, 
+Sweden, and USA in gray. Denmark is included in black. 
+
+concludes the paper.
+
+##### 2 Framework
+
+Wages are an important, but not necessarily a special part of marginal cost, and the question of wage-price pass-through is ultimately a question of marginal cost pass-through. In theory, the extent to which marginal cost is passed through to prices depends on the full specification of market demand and the market structure that a firm is operating in. However, Amiti et al. (2019)
+
+show that under very general assumptions, optimal prices can approximately be described by a very simple reduced form equation (we denote logarithms with lower-case letters):
+
+p∗i,t ≈
+
+1 1 + Γ mci,t +
+
+Γ
+
+1 + Γ pt + Ωi (1)
+
+In this equation, optimal price is a function of marginal costs, mci,t, and the impact of market demand and market structure on the optimal price is summarized by a competitor price index ptand a single parameter Γ. Γ measures the degree of “strategic complementarity” of a firm’s price with the prices of competitors and completely determines the extent of marginal cost pass through. When Γ is zero – for example, in the common Dixit-Stiglitz setting of monopolistic competition with CES demand – the pass-through of marginal cost to prices is one. When Γ goes to infinity – for example, in a perfectly competitive industry – the optimal price perfectly mirrors competitors’ prices, and pass-through is zero. Variation in marginal cost pass-through between firms, sectors, or over time in this framework comes only from variation in Γ. We will
+
+5
+
+not make this potential heterogeneity in the parameter explicit in what follows, but will study 
+potential heterogeneity along several dimensions in our empirical analysis. Finally, the Ω term 
+in the equation is a constant resulting from approximation, that will be absorbed in fixed effects 
+in any estimation, and we will discard Ω for notational simplicity. 
+In a cost-minimizing firm, marginal cost is the same across all margins of production. Labor, 
+L, is one input through which marginal cost can be measured: 
+
+MCi,t = ∂Ci,t ∂Li,t
+
+∂Li,t ∂Yi,t
+
+= Wi,t MPLi,t
+
+(2)
+
+Marginal cost is equal to the cost of increasing labor inputs relative to the corresponding increase in output represented by the marginal productivity of labor, MPL. In a setting with different types of workers, W and MPL represent the cost and benefits of scaling up the entire workforce in proportion. To measure MPL in data later on, we need to assume a functional form for the production technology, and we assume a Cobb-Douglas production function:
+
+Yit = AitL α itZ
+
+β it (3)
+
+A is an exogenous productivity shock, and Z summarizes all other production factors bought at a composite price RZ. In the Cobb-Douglas case, MPL is proportional to output per worker OPH, and MC is proportional to unit labor cost ULC:
+
+MPLit = α Yit Lit
+
+MCit =
+
+1 α
+
+WitLit Yit
+
+=
+
+1 α
+
+ULCit (4)
+
+Using equation 1 and dropping the α constant, we get that:
+
+p∗it =
+
+1 1 + Γ ulcit +
+
+Γ 1 + Γ pt =
+
+1 1 + Γ wit −
+
+1 1 + Γ mplit +
+
+Γ 1 + Γ pt (5)
+
+Equation 5 describes the relationship between wages and prices conditional on MPL. However, MPL itself depends on wages and other factor prices through labor demand. When wages increase relative to other factor prices, firms substitute labor with other inputs, which raises MPL. This partly offsets the marginal cost increase that would occur at a fixed bundle of inputs. The unconditional pass-through of wage increases will thus be smaller, as it already incorporates cost savings through input substitution. In the case of the Cobb-Douglas technology assumed here, we can use the full marginal cost function to get:
+
+p∗it =
+
+α 1 + Γ wit +
+
+β 1 + Γ r Z it +
+
+1 1 + Γ ait +
+
+Γ 1 + Γ
+
+pt. (6)
+
+This illustrates an important point. It is a clear concern that other factor prices and produc tivity correlate with wages. If we (can) condition on MPL, we do not need to condition on these
+
+6
+
+variables to get a consistent estimate of Γ, since they affect prices only through MPL. However, the conditional elasticity we estimate this way is not the same as the unconditional elasticity in equation 6. We will estimate both parameters in this paper, and the two come with different identification concerns. In the Cobb-Douglas case, the two elasticities are connected through the labor elasticity of output α. If there are constant returns to scale in production, α will be equal to the labor share, which provides a testable hypothesis on the relationship between “unconditional” and “conditional” wage-price pass-through.
+
+##### 3 Empirical Strategy
+
+We aim to estimate both the conditional and unconditional wage elasticity of prices. This estimation is subject to several identification concerns that we will discuss in more detail below. The central concern is that wages and prices are both set by firms and may both be influenced by other variables such as productivity or other factor prices. We will tackle this issue using a combination of instrumental variables, controls, and appropriate fixed effects. We start out, discussing the estimation of the unconditional pass-through elasticity. Since the marginal productivity of labor is difficult to measure, it is tempting to estimate unconditional pass-through using a variant of equation 6:
+
+pit = φi + ηs(i),t + βwi,t + εi,t (7)
+
+This equation includes a set of time fixed effects and firm fixed effects, but the firm specific 
+components of factor price and productivity shocks are unobserved and potential confounders. 
+We expect that the OLS estimate of wage-price pass-through would be biased downward. We 
+will solve this issue by constructing an instrument for firms’ wages that is independent of 
+firm-specific components of factor prices and productivity shocks. 
+We follow Carlsson and Skans (2012) and construct an instrument based on workers’ outside 
+option. In bargaining models, each worker’s wage is a function of his/her own marginal 
+productivity and his/her outside option. The outside option depends on the wage he/she can 
+expect to earn in other jobs. Given the rich Danish microdata at our disposal, we will estimate a 
+market wage W 
+b 
+jt for workers indexed by j. We then use these market wages as a proxy measure 
+for workers’ outside option and use the hours-weighted average market wage as an instrument 
+for a firm’s average wage. 
+We estimate market wages in Mincer regressions using employee-level wage data for each 
+year t and for 29 local labor markets l. We can determine the expected market wage by the 
+
+7
+
+fitted values obtained from these regressions:
+
+## W b
+
+j,t = γ
+
+b
+
+0t,lXj,t. (8)
+
+Xj,tincludes a set of occupation and education dummies as well as a cubic polynomial of age. A summary of these regressions is presented in Table 1. The regressions are based on 29.5 million annual wage observations of 3.7 million employees working at 51,000 firms. Overall, the covariates included explain about 29 per cent of the variation in the data. Table 1: Summary of Mincer regressions
+
+Observations 29,526,233 
+R2 0.288 
+Employees 3,761,076 
+Firms 51,463 
+Years 19 
+Regions 29 
+
+We then aggregate individual market wages W b j,tto a firm-level market wage using lagged hours Hj,t− 1 as weights:
+
+## W b
+
+i,t = ∑ j∈ J Hi,j,t− 1W b
+
+j,t. (9)
+
+In Figure 2 we compare the distributions of firm-level market wages and actual wages. The 
+left panel presents the densities of both variables. As expected, there is a bit less variation 
+in market wages than in actual wages, however, the market wage still exhibits considerable 
+dispersion over firms due to differences in their employment composition. In the right panel, 
+we show the relationship between actual and market wages along the distribution of wages in 
+a binned scatter plot. One can see that on average there is a linear relationship that is close to 
+one-to-one all along the wage distribution. 
+The Carlsson-Skans identification strategy uses within-sector variation of employment 
+structures that exposes firms to different combinations of wage growth in segregated labor 
+markets. The strength of this strategy is that it does not rely on any structural assumptions 
+on production technology. However, identification may fail under two conditions: First, 
+productivity shocks could be correlated with employment structure, for instance because 
+specific occupations become more or less productive. Second, the productivity of large firms 
+may affect market wages in monopsonistic labor markets. 
+Estimating conditional pass-through is not subject to these concerns, as the firm-level 
+productivity is explicitly controlled for. However, it does rely on structural assumptions about 
+the production technology to measure MPL using output per hour worked. We estimate two 
+specifications. First, we estimate the original specification in Carlsson and Skans (2012), which 
+
+8
+
+Figure 2: Relationship between actual and market wage
+
+0
+
+.5
+
+1
+
+1.5
+
+2
+
+4 5 6 7 8 Log wage Market wage Actual wage
+
+5
+
+5.5
+
+6
+
+Log actual wage
+
+5 5.2 5.4 5.6 5.8 6 Log market wage
+
+relates marginal cost to prices. Second, we estimate a specification that separately relates wages and MPL to prices:
+
+pit = φi + ηs(i),t + θ mculcit + εit (10)
+
+pit = φi + ηs(i),t + θ wwit − θ mplmplit + εit (11)
+
+Following the simple framework discussed in the previous section, the coefficients of W, MPL and MC should be the same.
+
+Even though we do not need to be concerned with productivity or factor price shocks when conditioning on MC or MPL, there are separate identification concerns. First, prices may be affected by markup shocks (which captures any variation in prices that does not come from variation in cost). If the demand curve slopes downward, and the marginal cost curve is not flat, this will affect MPL and lead to a reverse causality problem. To address this, we map
+
+exogenous variation in market wages W
+
+b
+
+into marginal cost MC. This means that we construct marginal cost measures based on market wages instead of actual wages. Moreover, we use the lagged values of MPL in constructing the instruments.
+
+##### 4 Data
+
+We combine several data sets covering the prices, wages, and balance sheets of Danish firms.
+
+We use price microdata collected for the Danish Producer Price Index (PPI). This data set is based on a survey and contains transaction prices of Danish manufacturing firms at monthly frequency between 1993 and 2016, and of firms in some service sectors at quarterly frequency since 2005. The data set has been used previously in Dedola et al. (2020), who also characterize
+
+9
+
+the basic properties of price-setting in Denmark1. Second, we use administrative employer 
+employee data covering wages and hours of all Danish employees (LONN).2 The data set is 
+based on payroll reports of firms, and contains total annual hours and labor income at the 
+worker-firm level, as well as worker characteristics such as age and occupation. We obtain 
+additional information on workers’ education from the Danish education register. Finally, we 
+use survey data on firms’ balance sheets from the Danish accounting statistics. All data sets can 
+be linked through the Danish firm register from 1997 onward. 
+We take product level prices from the PPI. We follow standard procedures and adjust price 
+series for minor changes in product quality using overlapping price information whenever 
+possible. We winsorize price changes at the 1st and 99th percentile by splitting up series, to 
+account for extreme outliers common in price survey data due to reporting errors. Finally, we 
+calculate the average annual price for each product, which will be our main outcome variable. 
+We calculate separate prices for domestic and export markets and include both domestic and 
+export prices in our analysis. 
+The main wage variable we use is an annual hourly wage index for firm i in year t denoted 
+Wi,t. We first calculate hourly wages for each employment relationship, indexed by j, by 
+dividing the total annual wages (including the value of benefits, bonus payments, etc.) by the 
+total number of hours worked over the year. We then calculate the hours-weighted average 
+hourly wage for each firm: 
+
+Wit =
+
+1
+
+∑j Hjt∑ j
+
+HjtWjt (12)
+
+This wage measure represents the cost of scaling up a firm’s workforce in proportion to the 
+current employment structure. 
+Finally, we use a combination of price and balance sheet data to calculate annual firm output, 
+unit labor cost, and output per hour. We first compute the value of output as the sum of annual 
+sale revenues, the value of work for own account, and changes in the value of end-of-year 
+inventories. To get a measure of output, we deflate this value with a firm specific price index. 
+The PPI data does not cover all products a firm sells, and it contains no information on 
+product-level quantities. Hence, we cannot construct a “correct” deflator. We can use an 
+average price, but we will always measure output with some error. This measurement error 
+translates into noisy measures of output, MPL and MC. Moreover, if we use the same prices 
+on the left-hand-side of a regression that we also use to construct deflators, there will be a 
+mechanical correlation between the measurement error and our endogenous variable. This will 
+
+1We thank Luca Dedola, Mark Strøm Kristoffersen, and Gabriel Zuellig for sharing codes as well as their knowledge about the Danish PPI data. 2Reported hours are not necessarily a perfect measure of actual hours worked, as, e.g., workers on fixed pay contracts would not report voluntary extra hours, which might add some noise to our instrument.
+
+10
+
+bias upward (or downward) coefficient estimates of MC (MPL) in specifications 10 and 11. To 
+address this issue, we construct the two independent measurements of output, MPL and MC, 
+based on two deflators with independent measurement error. 
+We restrict our sample to firms that report prices for at least two products. We then randomly 
+assign products to either set 1 or set 2, which will both contain roughly half of all products. We 
+then construct two deflators indexed 1 and 2. We first calculate the average annual price for 
+each product and then calculate the simple average over all annual prices in each set, denoted 
+P 1 
+it and P 2 it. 
+Using these deflators, we construct two measures of output, Y: 
+Y 1 
+it = 
+Value of outputit 
+P1 
+it 
+Y 2 
+it = 
+Value of outputit 
+P2 
+it 
+
+(13)
+
+We restrict the sample of prices used in pass-through regressions to the half that is in set 
+1. On the right hand side of our regressions, we will use measures of MC and MPL that are 
+based on Y 1 as endogenous variables. In contrast, the instruments we construct will be based 
+on output measure Y 2, which is itself based on deflators using only half of prices in set 2. 
+Thus, the measurement error in the instruments is independent of the measurement errors in 
+the endogenous variables and prices on the left-hand side, and the resulting IV estimates are 
+consistent. 
+To sum up, our endogenous variables and instruments are constructed as follows: 
+
+MCit = WitHit Y1 it
+
+MC d it =
+
+W b itHit− 1 Y2 it− 1 (14)
+
+MPLit =
+
+Y 1 it Hit
+
+MPL [it =
+
+Y 2 
+it− 1 
+Hit− 1 
+
+(15)
+
+Splitting our sample in this way leads to consistent coefficient estimates, but it comes at a cost: First, it reduces the number of prices in our sample by half because we only estimate pass-through to prices in bin 1. Second, because we only use one half of prices to construct deflators 1 and 2, the variance of the measurement error in Y1 and Y2 and consequently in measures of MC and MPL based on them becomes larger. Third, even though Y1 and Y2 are highly correlated in the sample overall, this procedure weakens the power of all instruments we use, and leads to very imprecise estimates in some sub-samples.3
+
+Our combined sample consists of 1,421 firms and 11,167 distinct products. Table 2 lists some descriptive statistics of the PPI sample compared to the overall population of Danish firms.
+
+3In future work, we will address all three issues by using direct, rather than revenue-based measures of firm output. This data exists but is currently unavailable to us. This will make the whole procedure obsolete.
+
+11
+
+Firms in the PPI tend to be large. Service sector firms in the PPI had on average 430 employees in 2005, and are larger than manufacturing sector firms in the PPI, which on average have 300 employees. Both are larger than the average firm in our sample (80 employees) and even larger than the average manufacturing firm in Denmark (18 employees). In terms of revenues, manufacturing firms in the PPI (DKK 622 million) are larger than service sector firms in the PPI (DKK 335 million), and both are larger than the average firm in the population (DKK 114 million).
+
+Table 2: Descriptive statistics
+
+| | (1) | (2) | (3) | (4) | (5) | (6) | (7) | (8) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Sample | All | firms | PPI | sample | PPI mfg. | sample | PPI services | sample |
+| Year | 2005 | 2015 | 2005 | 2015 | 2005 | 2015 | 2005 | 2015 |
+| No. of employees | 86.48 | 121.79 | 345.72 | 343.84 | 330.75 | 299.83 | 433.02 | 431.41 |
+| Revenue (in DKKm) | 114.64 | 200.19 | 580.05 | 951.70 | 622.60 | 1140.49 | 335.22 | 573.47 |
+| Avg. hourly wage | (in DKK) 209.57 | 275.35 | 236.86 | 315.21 | 230.81 | 298.91 | 272.11 | 347.64 |
+| Labor cost share | 0.31 | 0.33 | 0.27 | 0.30 | 0.24 | 0.22 | 0.46 | 0.45 |
+| No. of products | per firm | | 4.61 | 4.95 | 4.50 | 5.26 | 5.17 | 4.40 |
+| No. firms | 21965 | 16697 | 923 | 1053 | 770 | 679 | 153 | 374 |
+
+Notes: Table presents sample averages of selected variables.
+
+The labor share in manufacturing PPI firms is slightly above 20 per cent, and in service sector PPI firms around 45 per cent. Firms in the PPI also tend to pay higher average wages. Figure 3 shows that this is especially true for service sector firms, and especially in the latter half of the sample period.
+
+##### 5 Results
+
+##### 5.1 Baseline results
+
+We now discuss the results of our estimation strategy outlined in the previous section. Observa tions are at the level of a unique product sold by a specific firm. The estimation frequency is annual. We present results for the raw correlation between wages and prices conditional on fixed effects, as well as IV estimates of specifications (7) (unconditional pass-through) and (10) and (11) (conditional pass-through). In the baseline, all specifications include fixed effects at the level of unique-product-firm, sector-time, and product-time. In this way, we study firms within the same industry that face differences in wage pressure because they are exposed to
+
+12
+
+150
+
+200
+
+250
+
+300
+
+Avg. hourly wage in DKK
+
+1997 2000 2003 2006 2009 2012 2015 Year PPI Manufacturing PPI Services All firms
+
+Figure 3: Evolution of average wages in sample of PPI reporting firms versus all firms different labor markets. We use two-digit NACE codes to classify sectors and two-digit HS codes to classify product categories.
+
+Table 3 presents our baseline results, where standard errors have been clustered at the firm level, i.e. the level at which the wage instrument is determined.4 Column 1 presents the OLS coefficient estimated from equation (7). Due to the endogeneity concerns we already discussed, this coefficient has no clear causal interpretation. In column 2, we present the IV estimate of unconditional pass-through using market wages as an instrument for actual wages. If marginal cost pass-through were complete, one would expect this coefficient to be equal to the labor share of cost, i.e. roughly one third. Our estimate of 0.11 indicates that unconditional cost pass-through is incomplete and amounts to around one third.
+
+In columns 3 and 4, we present estimates of conditional pass-through. We report IV estimates of pass-through of marginal cost MC, as well as its two components W and MPL, using market wages and lagged output per hour worked or the ratio of the two as instruments. Under full cost pass-through, all three coefficients should be equal to 1 (-1 for the coefficient of MPL). The sample size in these two columns is substantially smaller, because we exclude all single-product firms and only include the half of prices that is not used to deflate the instruments. We find that wage pass-through conditional on marginal productivity amounts to 0.38. Like the unconditional elasticity, this indicates incomplete pass-through. The magnitude of the two elasticities and the empirical average labor share of about one third is consistent with our assumptions about production technology. As one would expect, a higher marginal productivity of labor decreases prices. However, at − 0.08 the MPL elasticity is substantially smaller than the wage elasticity of prices. This is inconsistent with the simple framework we
+
+4We estimated all specifications clustering standard errors at the sector level which does not affect any of the conclusions drawn even though it slightly inflates the standard errors.
+
+13
+
+presented in section 2. At 0.09, overall marginal cost pass-through is also substantially smaller than the conditional wage pass-through, and is probably caused by the low coefficient of MPL in the previous column.5
+
+We report the first stage and reduced form of our IV regressions in table 4. The market wage is correlated with prices and average wages paid by firms, explaining about 5 per cent of the variation in the latter conditional on fixed effects. The F-statistic of 127.3 suggests that the instrument is relevant and strong. Our instruments for MPL and MC are weaker but also relevant. Since all our IV regressions are just-identified, bias in the IV estimates due to weak instruments is not a big concern.
+
+Table 3: Baseline results
+
+| Dep. variable | (1) OLS Pit | | (2) Pit | (3) IV Pit | (4) Pit |
+| --- | --- | --- | --- | --- | --- |
+| Wit | 0.0338∗∗∗ | 0.111∗∗ | | 0.381∗∗∗ | |
+| | (0.0103) | (0.0507) | | (0.138) | |
+| MPLit | | | | -0.0861∗∗ | |
+| | | | | (0.0399) | |
+| MCit | | | | | 0.0907∗∗ |
+| | | | | | (0.0379) |
+| Observations | 54717 | 50037 | | 14362 | 14362 |
+| Firms | 1382 | 1345 | | 810 | 810 |
+| | | | | it, MPL [it− | MC 1 |
+| Instruments | | W | it | W | it |
+| 1st stage | F-stat | 127.3 | b | 8.858 b | 22.41 d |
+
+Notes: Standard errors clustered at the firm level in parentheses. ∗ p < 0.1,∗∗ p < 0.05,∗∗∗ p < 0.01. All specifications include year-sector and year-product fixed effects.
+
+##### 5.1.1 Robustness checks
+
+We present the results of several robustness checks. First, we estimate all four main specifica tions using different sets of fixed effects. Table 5 presents results with less restrictive year fixed effects instead of year-sector and year-product fixed effects in the baseline. All point estimates are slightly smaller in absolute terms, the idea being that the year-sector and year-product fixed effects capture confounding productivity or demand shocks. Nevertheless, all our qualitative and quantitative conclusions remain unchanged even in this specification. Next, we estimate a specification with year-sector, year-product, and year-local labor market fixed effects. The results are presented in table 6. In this more restrictive specification, most elasticities are slightly
+
+5In the following parts of the paper, we mainly report column (4) for completeness.
+
+14
+
+Table 4: First stage of baseline results
+
+| Dep. | variable | (1) Pit | (2) Wit | (3) Pit | (4) Wit | (5) MPLit | (6) Pit | (7) MCit |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| W | it | 0.0404∗∗ | 0.365∗∗∗ | 0.102∗∗∗ | 0.396∗∗∗ | 0.561∗∗ | | |
+| b | | (0.0187) | (0.0323) | (0.0302) | (0.0545) | (0.277) | | |
+| MPL [it− | 1 | | | -0.0133∗∗∗ | -0.00116 | 0.150∗∗∗ | | |
+| | | | | (0.00508) | (0.00513) | (0.0307) | | |
+| MC | it | | | | | | 0.0136∗∗∗ | 0.150∗∗∗ |
+| d | | | | | | | (0.00503) | (0.0316) |
+| Observations | | 50037 | 50037 | 14366 | 14366 | 14362 | 14366 | 14362 |
+| F-statistic | | 4.687 | 127.3 | 8.070 | 29.31 | 21.01 | 7.257 | 22.41 |
+| R2 | | 0.000357 | 0.0515 | 0.00521 | 0.0541 | 0.0263 | 0.00342 | 0.0205 |
+
+Notes: Standard errors clustered at the firm level in parentheses. ∗ p < 0.1,∗∗ p < 0.05,∗∗∗ p < 0.01. 
+All specifications include year-sector and year-product fixed effects. 
+larger in absolute terms, but close to their baseline values. Again, none of our conclusions 
+are affected, and the coefficients obtained from the different fixed-effect specifications are not 
+statistically significantly different from the baseline specification. 
+In our baseline specification, prices of competitors are absorbed in sector-time and product 
+category-time fixed effects. In table 7, we present results that omit these fixed effects and instead 
+control for an index of prices of competitors in the same sector as suggested by the price-setting 
+framework in section 2. To avoid endogeneity issues (prices of firm “A” affect the prices of 
+other firms, which in turn affect the prices of firm “A”), we instrument the competitor price 
+index with an index of unit labor costs of competitors. The inclusion of the competitor price 
+index does not alter any of the conclusions from our baseline estimate. The coefficients of the 
+competitor price index are very imprecisely estimated and insignificant throughout. This can 
+partly be explained by a very weak first-stage relationship and will be investigated in further 
+work. 
+For completeness, we present results including the full sample of prices, which is presented 
+in table 8. In this case, all variables are constructed using a deflator that includes all prices, 
+and all prices are included on the left-hand side of our regressions. This affects columns 
+(3) and (4) only, and as one would expect, the magnitude of all coefficients decreases. In 
+particular, the coefficients of MPL and MC are only half the size of the estimates from the 
+baseline specification. This most likely reflects bias caused by using wrong deflators whose 
+measurement error correlates with the left-hand side of our regression. It confirms our concerns 
+and suggests that the sample splitting procedure used for our other estimates is absolutely 
+necessary. For completeness, we also present the main results for specifications where the price 
+indices used to construct the endogenous regressors and instruments are reversed. These tables 
+can be found in the appendix. 
+
+15
+
+Table 5: Baseline with few fixed effects
+
+| Dep. | (1) OLS variable Pit | (2) Pit | | (3) IV Pit | (4) Pit |
+| --- | --- | --- | --- | --- | --- |
+| Wit | 0.0231∗ | 0.0865∗ | 0.306∗∗ | | |
+| | (0.0124) | (0.0484) | (0.120) | | |
+| MPLit | | | -0.0799∗∗ | | |
+| | | | (0.0339) | | |
+| MCit | | | | | 0.0802∗∗∗ |
+| | | | | | (0.0306) |
+| Observations | 54862 | 50176 | 14762 | | 14762 |
+| Firms | 1387 | 1350 | 832 | | 832 |
+| | | | it, MPL | [it− | MC 1 |
+| Instruments | | W it | W | | it |
+| 1st stage | F-stat | 115.2 b | 6.774 b | | 19.75 d |
+| Notes: < 0.05, p | Standard errors clustered < 0.01. All specifications p ∗∗∗ Table 6: Baseline | at the firm include with richer | level in year set of | parentheses. fixed effects. fixed effects | < p ∗ 0.1,∗∗ |
+| Dep. | (1) OLS variable Pit | (2) Pit | | (3) IV Pit | (4) Pit |
+| Wit | 0.0372∗∗∗ | 0.156∗∗∗ | 0.420∗∗∗ | | |
+| | (0.0106) | (0.0534) | (0.136) | | |
+| MPLit | | | -0.0821∗∗ | | |
+| | | | (0.0397) | | |
+| MCit | | | | | 0.0940∗∗ |
+| | | | | | (0.0394) |
+| Observations | 53162 | 49256 | | 14122 | 14122 |
+| Firms | 1374 | 1336 | | 805 | 805 |
+| | | | it, | MPL [it− | MC 1 |
+| Instruments | | W it | W | | it |
+| 1st stage | F-stat | 123.8 b | b | 12.86 | 31.92 d |
+
+Notes: Standard errors clustered at the firm level in parentheses. ∗ p < 0.1,∗∗ p < 0.05,∗∗∗ p < 0.01. All specifications include year-sector, year-product, and year-local labor market fixed effects.
+
+##### 5.2 Heterogeneity
+
+In this section, we explore heterogeneity in our pass-though estimates for firms with different observable characteristics. There are two potential avenues for heterogeneity. First, the pass through from wages to prices could be different – this is the dimension we are mainly interested
+
+16
+
+Table 7: Controlling for competitor prices
+
+| Dep. variable | (1) OLS Pit | (2) Pit | (3) IV Pit | (4) Pit |
+| --- | --- | --- | --- | --- |
+| Wit | 0.0311∗∗ | 0.119∗∗ | 0.317∗∗∗ | |
+| | (0.0126) | (0.0536) | (0.122) | |
+| MPLit | | | -0.0794∗∗ | |
+| | | | (0.0340) | |
+| MCit | | | | 0.0799∗∗∗ |
+| | | | | (0.0306) |
+| it P− | 0.272∗∗∗ | 0.242 | 0.0800 | 0.0601 |
+| | (0.0414) | (0.191) | (0.199) | (0.196) |
+| Observations | 54862 | 50176 | 14762 | 14762 |
+| Firms | 1387 | 1350 | 832 | 832 |
+| | | | it, MPL [it− | MC 1 |
+| Instruments | | W it | W | it |
+| 1st stage | F-stat | 18.78 b | 4.557 b | 10.91 d |
+
+Notes: Standard errors clustered at the firm level in parentheses. ∗ p < 0.1,∗∗ p < 0.05,∗∗∗ p < 0.01. All specifications include year sector and year-product fixed effects.
+
+Table 8: Baseline specification without split-sample deflator
+
+| Dep. variable | (1) OLS Pit | (2) Pit | (3) IV Pit | (4) Pit |
+| --- | --- | --- | --- | --- |
+| Wit | 0.0338∗∗∗ | 0.111∗∗ | 0.184∗∗∗ | |
+| | (0.0103) | (0.0507) | (0.0693) | |
+| MPLit | | -0.0412∗∗∗ | | |
+| | | | (0.0151) | |
+| MCit | | | 0.0417∗∗∗ | |
+| | | | (0.0140) | |
+| Observations Firms Instruments | 54717 1382 | 50037 1345 W W it b b | 42353 42353 1249 1249 it, MPL MC 1 [it− | it |
+
+Notes: Standard errors clustered at the firm level in parentheses. ∗ p < 0.1,∗∗ d p < 0.05,∗∗∗ p < 0.01. All specifications include year-sector and year-product fixed effects.
+
+in. Different point estimates for different firms would map to the theoretical framework described in section 2 as heterogeneity in the strategic complementarity parameter Γ. However, another possible source of heterogeneity is the pass-through from market wages to firm wages – the first stage of our IV regressions. It turns out that this link is much weaker for some firms than in the sample overall. This variation in the first-stage relationship will result in different local average treatment effects depending on the sample included in the estimation. Moreover,
+
+17
+
+a weaker first stage will result in a low F-statistic and very imprecise IV wage-price pass 
+through estimates. In this case, we simply cannot make a strong statement about wage-price 
+pass-through using our identification strategy. 
+The first dimension of heterogeneity we investigate is over the distribution of the labor 
+share of total costs. We split our sample into three roughly equally sized parts: firms with a 
+labor share below 0.25, firms with a labor share between 0.25 and 0.35, and firms with a larger 
+labor share. We then estimate our baseline specifications separately by each bin. The results are 
+reported in table 9. We find that firms with a medium labor share have larger pass-through 
+elasticities of around 0.25 (unconditionally) than the sample overall, which indicates almost 
+full pass-though. Firms with a low and high labor share tend to have only a weak link between 
+market wages and wages. As a result, the first stage is weak and our coefficient estimates very 
+imprecise. 
+
+Table 9: Labor share
+
+| | (1) IV | (2) Small IV | (3) IV | | (4) IV | (5) Medium IV | (6) IV | (7) IV | (8) Large IV | (9) IV |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Wit | -0.107 | -11.79 | | 0.252∗∗∗ | | 0.521∗∗∗ | | -0.0296 | -0.270 | |
+| | (0.149) | (331.6) | | (0.0869) | | (0.149) | | (0.148) | (0.308) | |
+| MPLit | | 0.196 | | | | 0.0157 | | | -0.0987 | |
+| | | (11.21) | | | | (0.0436) | | | (0.0914) | |
+| MCit | | | 0.433 | | | | 0.0121 | | | 0.0660 |
+| | | | (0.271) | | | | (0.0340) | | | (0.0650) |
+| Observations | 15330 | 2402 | 4265 | 17390 | | 5040 | 5040 | 15410 | 4019 | 4019 |
+| Firms | 514 | 148 | 268 | 647 | | 400 | 400 | 790 | 400 | 400 |
+| | | it, MPL [it− | MC 1 | | | it, MPL [it− | MC 1 | | it, MPL [it− | MC 1 |
+| Inst. | W it | W | it | W | it | W | it | W it | W | it |
+| F-stat | 21.10 b | 0.000730 b | 2.577 d | 34.72 | b | 5.832 b | 13.91 d | 11.05 b | 1.007 b | 1.940 d |
+
+Notes: Standard errors clustered at the firm level in parentheses. ∗ p < 0.1, ∗∗ p < 0.05, ∗∗∗ p < 0.01. All specifications include year-sector and year-product fixed effects. Small, medium, and large labor share are divided at 25 and 35 per cent of total costs.
+
+Second, we look at the results by the size of the domestic market share. We again split firms into three roughly equal bins: Small firms with a market share below 1 per cent, medium-sized firms with a market share between 1 per cent and 6 per cent and firms with a market share above 6 per cent. We find that firms with a smaller market share exhibit a larger pass-though of wage costs to prices, while firms with a medium and especially those with a large market share do not significantly pass through wage increases to prices. Interestingly, firms with a large market share seem to pass through variation in marginal productivity and marginal cost to prices much more strongly than smaller firms, but not significantly so. Finally, we separately look at pass-through in services and manufacturing. Services’ prices are only collected after 2005, and the sample time periods do not completely align. We find larger pass-through in manufacturing than in the full sample, and insignificant, smaller point estimates for pass-through in services.
+
+18
+
+Table 10: Market share
+
+| | | (1) IV | (2) Small IV | (3) IV | (4) IV | (5) Medium IV | (6) IV | (7) IV | (8) Large IV | (9) IV |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Wit | 0.149∗∗ | | 0.580∗ | | 0.0827 | 0.0833 | | 0.151 | 0.848 | |
+| | (0.0666) | | (0.328) | | (0.113) | (0.221) | | (0.201) | (1.271) | |
+| MPLit | | | -0.120 | | | -0.0346 | | | -0.729 | |
+| | | | (0.0902) | | | (0.0635) | | | (0.543) | |
+| MCit | | | | 0.0628 | | | 0.0406 | | | 0.741 |
+| | | | | (0.0546) | | | (0.0406) | | | (0.521) |
+| Observations | 16310 | | 4351 | 4351 | 17126 | 5021 | 5021 | 11727 | 3399 | 3399 |
+| Firms | 692 | | 401 | 401 | 579 | 356 | 356 | 309 | 170 | 170 |
+| | | | it, MPL [it− | MC 1 | | it, MPL [it− | MC 1 | | it, MPL [it− | MC 1 |
+| Inst. | W | it | W | it | W it | W | it | W it | W | it |
+| F-stat | 51.03 | b | 1.530 b | 7.324 d | 18.92 b | 0.736 b | 4.126 d | 13.41 b | 1.990 b | 4.769 d |
+
+Notes: Standard errors clustered at the firm level in parentheses. ∗ p < 0.1, ∗∗ p < 0.05, ∗∗∗ p < 0.01. All specifications include year-sector and year-product fixed effects. Small, medium, and large labor share are divided at 25 and 35 per cent of total costs.
+
+Table 11: Manufacturing versus service sector
+
+| | | (1) IV | Manufacturing | (2) IV | (3) IV | | (4) IV | (5) Services IV | (6) IV |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Wit | 0.107∗ | | | 0.459∗∗∗ | | 0.125 | | 0.149 | |
+| | (0.0575) | | | (0.167) | | (0.0988) | | (0.115) | |
+| MPLit | | | | -0.105∗∗ | | | | -0.0121 | |
+| | | | | (0.0487) | | | | (0.0471) | |
+| MCit | | | | | 0.0989∗∗ | | | | 0.0406 |
+| | | | | | (0.0434) | | | | (0.0512) |
+| Observations | 39527 | | | 11525 | 11525 | 10500 | | 2828 | 2828 |
+| Firms | 977 | | | 599 | 599 | 370 | | 210 | 210 |
+| | | | | it, MPL [it− | MC 1 | | | it, MPL [it− | MC 1 |
+| Instruments | W | it | W | | it | W | it | W | it |
+| 1st stage | F-stat 105.9 | b | b | 7.161 | 19.50 d | 17.07 | b | 2.271 b | 2.882 d |
+
+Notes: Standard errors clustered at the firm level in parentheses. ∗ p < 0.1, ∗∗ p < 0.05, ∗∗∗ p < 0.01. All specifications include year-sector and year-product fixed effects.
+
+Overall, our investigation of heterogeneity is limited by weak instruments and imprecise estimates for most sample splits.
+
+##### 6 Concluding Remarks
+
+We find that the elasticity of pass-through from idiosyncratic wage increases to Danish producer prices amounts to about one third when keeping the marginal product of labor constant. Our results are in line with previous studies of earlier time periods and confirm an important causal
+
+relationship between wages and prices.
+
+It is important to point out that our analysis is confined to the pass-through of idiosyncratic
+
+19
+
+wage increases – we study firms within the same industry that face differences in wage pressure 
+because they are exposed to different labor markets. In theory, one would expect important 
+differences between the pass-through of idiosyncratic and aggregate wage increases. Aggregate 
+wage increases affect all firms, and there is an additional channel at play: Every firm responds 
+to its own cost increase, as well as to the price increase of all its competitors. As a result, in most 
+settings, even if pass-through of idiosyncratic cost shocks is low and incomplete, pass-through 
+of aggregate wage increases can be much larger. 
+Our study is subject to some important limitations related to the data we currently have at 
+our disposal. First, the PPI sample is small and restricted to relatively large manufacturing firms. 
+Second, due to measurement error in the deflators we can construct from PPI data, we have 
+to resort to an IV strategy that should in principle deliver consistent estimates but drastically 
+reduces the statistical power of our estimation. As a result, the extent of heterogeneity analysis 
+we can conduct is somewhat limited and leaves out some interesting dimensions, such as 
+changes in pass-through over time. In future work, we aim to extend our analysis using price 
+and output data from a larger survey of Danish manufacturing firms. This data would extend 
+the sample to the population of manufacturing firms with more than 10 employees, and would 
+allow us to construct “correct” deflators. We expect to be able to contribute additional results 
+then. 
+
+20
+
+##### References
+
+AARONSON, D. (2001): “Price Pass-Through And The Minimum Wage,” The Review of Economics 
+and Statistics, 83, 158–169. 
+AMITI, M., O. ITSKHOKI, AND J. KONINGS (2019): “International Shocks, Variable Markups, 
+and Domestic Prices,” The Review of Economic Studies. 
+BARNES, M. L. AND G. P. OLIVEI (2003): “Inside and outside bounds: threshold estimates of 
+the Phillips curve,” New England Economic Review, 3–18. 
+BIS (2017): “Bank for International Settlements 87th Annual Report, 2016/17,” Tech. rep. 
+BOBEICA, E., M. CICCARELLI, AND I. VANSTEENKISTE (2019): “The link between labor cost 
+and price inflation in the euro area,” Working Paper Series 2235, European Central Bank. 
+CARLSSON, M. AND O. N. SKANS (2012): “Evaluating Microfoundations for Aggregate Price 
+Rigidities: Evidence from Matched Firm-Level Data on Product Prices and Unit Labor Cost,” 
+American Economic Review, 102, 1571–1595. 
+COIBION, O. AND Y. GORODNICHENKO (2015): “Is the Phillips Curve Alive and Well af 
+ter All? Inflation Expectations and the Missing Disinflation,” American Economic Journal: 
+Macroeconomics, 7, 197–232. 
+CORORATON, A., R. W. RICH, AND R. PEACH (2011): “How does slack influence inflation?” 
+Current Issues in Economics and Finance. 
+DE ØKONOMISKE RÅD (2019): “Udviklingen i produktiviteten,” in Produktivitet, 2019, chap. 1. 
+DEDOLA, L., M. S. KRISTOFFERSEN, AND G. ZÜLLIG (2020): “Price synchronization and cost 
+pass-through in multiproduct firms: Evidence from Danish producer prices,” Working Paper. 
+DOSER, A., R. NUNES, N. RAO, AND V. SHEREMIROV (2017): “Inflation expectations and 
+nonlinearities in the Phillips curve,” Working Papers 17-11, Federal Reserve Bank of Boston. 
+FITZGERALD, T. J. AND J. P. NICOLINI (2014): “Is There a Stable Relationship between Unem 
+ployment and Future Inflation? Evidence from U.S. Cities,” Working Papers 713, Federal 
+Reserve Bank of Minneapolis. 
+GALÍ, J. AND L. GAMBETTI (2019): “Has the U.S. Wage Phillips Curve Flattened? A Semi 
+Structural Exploration,” Working Paper 25476, National Bureau of Economic Research. 
+GUMIEL, J. AND E. HAHN (2018): “The role of wages in the pick-up of inflation,” Economic 
+Bulletin Boxes, 5. 
+HARASZTOSI, P. AND A. LINDNER (2019): “Who Pays for the Minimum Wage?” American 
+Economic Review, 109, 2693–2727. 
+
+21
+
+HOOPER, P., F. S. MISHKIN, AND A. SUFI (2019): “Prospects for Inflation in a High Pressure 
+Economy: Is the Phillips Curve Dead or is It Just Hibernating?” NBER Working Papers 25792, 
+National Bureau of Economic Research, Inc. 
+KILEY, M. T. (2015): “Low Inflation in the United States: A Summary of Recent Research,” Fed 
+notes, Board of Governors of the Federal Reserve System. 
+KRISTOFFERSEN, M. S. (2018): “Why is nominal wage growth so low?” Analysis 10, Danmarks 
+Nationalbank. 
+MCLEAY, M. AND S. TENREYRO (2019): “Optimal Inflation and the Identification of the Phillips 
+Curve,” in NBER Macroeconomics Annual 2019, volume 34, National Bureau of Economic 
+Research, Inc, NBER Chapters. 
+RENKIN, T., C. MONTIALOUX, AND M. SIEGENTHALER (2019): “The Pass-Through of Minimum 
+Wages into US Retail Prices: Evidence from Supermarket Scanner Data,” Working Paper, 
+University of Zurich. 
+SANCHEZ, J. M. AND H. S. KIM (2018): “Why Is Inflation So Low?” The Regional Economist, 26. 
+STOCK, J. H. AND M. W. WATSON (2008): “Phillips Curve Inflation Forecasts,” NBER Working 
+Papers 14322, National Bureau of Economic Research, Inc. 
+——— (2019): “Slack and Cyclically Sensitive Inflation,” Working Paper 25987, National Bureau 
+of Economic Research. 
+
+22
+
+##### Appendix
+
+Table 12: Baseline results with price indices reversed
+
+| | (1) OLS | (2) IV | (3) IV | (4) IV |
+| --- | --- | --- | --- | --- |
+| Wit | 0.0338∗∗∗ | 0.111∗∗ | 0.207∗∗ | |
+| | (0.0103) | (0.0507) | (0.0907) | |
+| MPLit | | | -0.0502∗∗ | |
+| | | | (0.0238) | |
+| MCit | | | | 0.0503∗∗ |
+| | | | | (0.0226) |
+| Observations | 54717 | 50037 | 18694 | 18694 |
+| Firms | 1382 | 1345 | 823 | 823 |
+| | | | it, MPL [it− | MC 1 |
+| Instruments | | W it | W | it |
+| 1st stage F-stat | | 127.3 b | 10.59 b | 26.86 d |
+
+Notes: Standard errors clustered at the firm level in parentheses. ∗ p < 0.1,∗∗ p < 0.05,∗∗∗ p < 0.01. All specifications include year-sector and year-product fixed effects.
+
+23
+
+W O R K I N G P A P E R — D A N M AR K S N A T IO N A L B A N K 2 1 D E C E M B ER 2 0 20 — NO. 16 6
+
+As a rule, Working Papers are not translated, but are available in the original language used by the contributor.
+
+Danmarks Nationalbank's Working Paper are published in PDF format at www.nationalbanken.dk. A free electronic subscription is also available at the website. The subscriber receives an e-mail notification whenever a new Working Paper is published.
+
+Text may be copied from this publication provided that the source is specifically stated. Changes to or misrepresentation of the content are not permitted.
+
+Please direct any enquiries directly to the contributors or to Danmarks Nationalbank, Communications, Kommunikation@nationalbanken.dk.
+

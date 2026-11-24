@@ -1,0 +1,775 @@
+{
+  "claim_id": "txt-1c4066fc0c-000225408-000225484",
+  "version": "search-verifier-v2",
+  "input_sha256": "912935c69813451dbcca341442b90af9e5f3a7c6a9dcf5331a2fd5645e37efc2",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000225408-000225484",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "以1991-92至2020-21美国公共中小学经常支出（2022-23不变价，总量与生均）及1991-2024年OASDI与Medicare等实际福利支付占个人收入比重为公共负担代理指标；观察期截至2024年（教育支出至2020-21）。",
+    "reason": "自动复核未确认主要判断：原文的后果对象是政府因家庭分化而承担的儿童教育到养老等家庭功能负担，并称其成为经济社会发展包袱；建议用公立中小学经常支出和OASDI/Medicare福利占个人收入比重作为代理，但前者是全部公立学校教育支出，后者是社会保险与医疗保险支付，均未对应“因家庭分化而新增承担原属家庭功能”的特定负担集合，代理改变了对象。; 建议判“正确”所依赖的福利占比序列来自ev-db0b0d81cd6327050d6863c9，该来源verified=false，且其表格只列OASDI与Medicare合计福利占个人收入，不能直接证明政府承担了儿童教育、养老等家庭功能；教育支出数据也只到2020-21，不能覆盖scope所称观察期至2024年的教育部分。; 原文主要可检验结果是“政府因家庭分化承担的儿童教育到养老负担越来越大”，建议却把“公共负担规模扩大”当作主要结果并判正确；在代理对象偏离、因果机制未证且关键来源未verified的情况下，不能据此得出主要结果符合，应保留为具体未定或明确限定为仅资源规模趋势。",
+    "limitation": "支出增长不等于政府承担了原属家庭的功能，也不证明“成为发展包袱”；教育支出在2010-11至2012-13间有回落，福利占比在1996-2000、2021等年份有下降，属波动而非持续反向。因果机制未获证据支持，不据此降级。",
+    "evidence_ids": [
+      "prior-1001bcb0b7e1451a88f5",
+      "prior-20d3e81ab25e953b2fa2",
+      "ev-db0b0d81cd6327050d6863c9",
+      "prior-469c4c410c95b909e46a"
+    ],
+    "method": "由家庭协调和照护功能转移推演公共负担增长",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-1001bcb0b7e1451a88f5",
+        "relation": "support",
+        "quote": "NCES表236.15的2022-23不变价公共中小学经常支出：1991-92总额4580亿美元、生均10892美元；2000-01为5962亿美元/12631美元；2010-11为7147亿美元/14453美元；2012-13为6941亿美元/13952美元；2020-21为8011亿美元/16280美元。",
+        "publication_date": "2023-10",
+        "observation_end": "2021-06-30",
+        "limitation": "仅覆盖公立中小学经常支出，不含高等教育、儿童照护等；2010-11至2012-13有回落，且不能证明支出由家庭分化驱动。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-20d3e81ab25e953b2fa2",
+        "relation": "support",
+        "quote": "SSA2025统计补编4.A4（Treasury/CMS/BEA）：OASDI与Medicare等合计实际支付福利占个人收入1991为7.6%、1996为8.2%、2000为7.3%、2010为9.7%、2020为10.3%、2021为9.2%、2024为10.5%。",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "福利支付占个人收入比重受人口老龄化、医疗价格、政策等多因素影响，不能归因于家庭分化；2021年较2020年下降显示存在波动。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "ev-db0b0d81cd6327050d6863c9",
+        "relation": "support",
+        "quote": "| 1991 | 386,912 | 5,089,913 | 7.60% |",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "该表为OASDI与Medicare合计福利占个人收入，属社会保障口径，非全部家庭功能公共负担；来源verified=false，尚待语义复核。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "prior-469c4c410c95b909e46a",
+        "relation": "background",
+        "quote": "2024年家庭户约占64%；独居户3850万，占29%，1974年为19%；初婚年龄中位数上升。",
+        "publication_date": "2024-11-12",
+        "observation_end": "2024-11-12",
+        "limitation": "仅显示家庭结构变化（独居户占比上升），不直接测量政府负担，只能作为条件背景，不能证明因果。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "需补充能直接对应“政府因家庭分化而承担儿童教育、养老等家庭功能”的负担指标或责任证据，并核实福利占比来源；若只能使用公立教育支出和社保医保支付作代理，应把结论改为有明确对象偏离限制的未定或仅趋势描述，不能判正确。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000225408-000225484",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以1991-92至2020-21美国公共中小学经常支出（2022-23不变价，总量与生均）及1991-2024年OASDI与Medicare等实际福利支付占个人收入比重为公共负担代理指标；观察期截至2024年（教育支出至2020-21）。",
+    "reason": "教育支出总量与生均由1991-92年的4580亿美元/10892美元升至2020-21年的8011亿美元/16280美元，福利支付占个人收入比由1991年7.6%升至2024年10.5%，两项代理指标长期方向与“公共负担越来越大”一致。但原文同时强调家庭分化导致负担，材料只能显示公共支出规模扩大，不能证明其由家庭分化驱动，故判部分符合而非正确。",
+    "limitation": "支出增长不等于政府承担了原属家庭的功能，也不证明“成为发展包袱”；教育支出在2010-11至2012-13间有回落，福利占比在1996-2000、2021等年份有下降，属波动而非持续反向。因果机制未获证据支持。",
+    "evidence_ids": [
+      "prior-1001bcb0b7e1451a88f5",
+      "prior-20d3e81ab25e953b2fa2",
+      "ev-db0b0d81cd6327050d6863c9",
+      "prior-469c4c410c95b909e46a"
+    ],
+    "method": "由家庭协调和照护功能转移推演公共负担增长",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-31",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-1001bcb0b7e1451a88f5",
+        "relation": "support",
+        "quote": "NCES表236.15的2022-23不变价公共中小学经常支出：1991-92总额4580亿美元、生均10892美元；2000-01为5962亿美元/12631美元；2010-11为7147亿美元/14453美元；2012-13为6941亿美元/13952美元；2020-21为8011亿美元/16280美元。",
+        "publication_date": "2023-10",
+        "observation_end": "2021-06-30",
+        "limitation": "仅覆盖公立中小学经常支出，不含高等教育、儿童照护等；2010-11至2012-13有回落，且不能证明支出由家庭分化驱动。"
+      },
+      {
+        "evidence_id": "prior-20d3e81ab25e953b2fa2",
+        "relation": "support",
+        "quote": "SSA2025统计补编4.A4（Treasury/CMS/BEA）：OASDI与Medicare等合计实际支付福利占个人收入1991为7.6%、1996为8.2%、2000为7.3%、2010为9.7%、2020为10.3%、2021为9.2%、2024为10.5%。",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "福利支付占个人收入比重受人口老龄化、医疗价格、政策等多因素影响，不能归因于家庭分化；2021年较2020年下降显示存在波动。"
+      },
+      {
+        "evidence_id": "ev-db0b0d81cd6327050d6863c9",
+        "relation": "support",
+        "quote": "| 1991 | 386,912 | 5,089,913 | 7.60% |",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "该表为OASDI与Medicare合计福利占个人收入，属社会保障口径，非全部家庭功能公共负担；来源verified=false，尚待语义复核。"
+      },
+      {
+        "evidence_id": "prior-469c4c410c95b909e46a",
+        "relation": "background",
+        "quote": "2024年家庭户约占64%；独居户3850万，占29%，1974年为19%；初婚年龄中位数上升。",
+        "publication_date": "2024-11-12",
+        "observation_end": "2024-11-12",
+        "limitation": "仅显示家庭结构变化（独居户占比上升），不直接测量政府负担，只能作为条件背景，不能证明因果。"
+      }
+    ],
+    "remaining_gap": "缺少能直接衡量政府因家庭分化而新增承担儿童教育、养老等功能的支出或责任指标，以及家庭分化与公共支出增长之间的因果证据；教育支出数据止于2020-21，2021-2024年教育支出未覆盖。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-1001bcb0b7e1451a88f5",
+      "url": "https://nces.ed.gov/programs/digest/d23/tables/dt23_236.15.asp",
+      "title": "ev-r2-l3-school-real",
+      "published_date": "2023-10",
+      "publication_date_precision": "month",
+      "publication_date_range": {
+        "earliest": "2023-10-01",
+        "latest": "2023-10-31"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-school-real",
+      "archive_sha256": "0899d59353bffd284a73bceef4b731492f6ca3c702ae3831aabca50bc7a20443",
+      "archive_path": "data/sources/r2-l3-school-real.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-20d3e81ab25e953b2fa2",
+      "url": "https://www.ssa.gov/policy/docs/statcomps/supplement/2025/4a.html",
+      "title": "ev-r2-l3-ssa",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-ssa",
+      "archive_sha256": "dc25caeca511859c68f2a41bb5a3e2f9872d17cf8e8ee1c0bab413972d754060",
+      "archive_path": "data/sources/r2-l3-ssa-hdi-targeted.json",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-469c4c410c95b909e46a",
+      "url": "https://www.census.gov/newsroom/press-releases/2024/families-and-living-arrangements.html",
+      "title": "ev-households",
+      "published_date": "2024-11-12",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-11-12",
+        "latest": "2024-11-12"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-households",
+      "archive_sha256": "dfdde4f1bbdf24961ad76e8d94047ad8959d8086c1f66162e5add0406bb97cb3",
+      "archive_path": "data/sources/dfdde4f1bbdf24961ad76e8d94047ad8959d8086c1f66162e5add0406bb97cb3.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-db0b0d81cd6327050d6863c9",
+      "url": "https://www.ssa.gov/oact/STATS/t4a4persInc.html",
+      "resolved_url": "https://www.ssa.gov/oact/STATS/t4a4persInc.html",
+      "title": "Benefits paid as a percent of personal income",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:47.583920+00:00",
+      "archive_sha256": "5bce28300322b75f50f800b15613db9935721e50b7e3b28ea2a147097d44344c",
+      "archive_path": "jobs/6162e40bf3d4a68a4942de08/5bce28300322b75f50f800b15613db9935721e50b7e3b28ea2a147097d44344c.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-edd23b2850a58278015b8595",
+      "url": "https://www.ssa.gov/oact/STATS/table4a4.html",
+      "resolved_url": "https://www.ssa.gov/oact/STATS/table4a4.html",
+      "title": "Social Security and Medicare Benefits",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:47.584044+00:00",
+      "archive_sha256": "9d872f9a96d5592bd64095a2a6e65c17ece94ab5d780416f41ef865348b56eb0",
+      "archive_path": "jobs/6162e40bf3d4a68a4942de08/9d872f9a96d5592bd64095a2a6e65c17ece94ab5d780416f41ef865348b56eb0.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "NCES Digest of Education Statistics public elementary secondary school current expenditures constant dollars 1991-92 2020-21 per pupil",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "SSA Annual Statistical Supplement OASDI Medicare benefits as percent of personal income 1991 2024 trend decline",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "NCES Digest of Education Statistics public elementary secondary school current expenditures constant dollars 1991-92 2020-21 per pupil",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "SSA Annual Statistical Supplement OASDI Medicare benefits as percent of personal income 1991 2024 trend decline",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-db0b0d81cd6327050d6863c9",
+        "prior-20d3e81ab25e953b2fa2"
+      ],
+      "blocks_verdict": true
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "prior-20d3e81ab25e953b2fa2"
+      ],
+      "blocks_verdict": true
+    }
+  ],
+  "remaining_gap": "需补充能直接对应“政府因家庭分化而承担儿童教育、养老等家庭功能”的负担指标或责任证据，并核实福利占比来源；若只能使用公立教育支出和社保医保支付作代理，应把结论改为有明确对象偏离限制的未定或仅趋势描述，不能判正确。",
+  "source_statuses": [
+    {
+      "url": "https://www.ssa.gov/oact/STATS/t4a4persInc.html",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.ssa.gov/oact/STATS/table4a4.html",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 9,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "f63cd2cb013c1b25bbd6aaa0c3a3323e37d9076cb173fba2d05f7253b4ba444e"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "ee1f8b2c416d852c06696d52cb980319",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "08f8b50e6cf08c99de219b740c7ce77d",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "9195ebffba6d67b2837fb21dbfab4d69667af0b2910df11c264a481954257b12"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "49f7039c617478d845020adb71512eaa",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "df0f6f57e98b235b61113806757856856bd9812e96a63a592269a9c4a40aeee4"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "ee1f8b2c416d852c06696d52cb980319",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "08f8b50e6cf08c99de219b740c7ce77d",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "6ccb561a723c23599d0f97b97c0cf56c299b6605a02eb4d53c7a7f17ff62e76e"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "324a4905e33514e9e95922bba199c1434deffff74e80baf53d552498e4a97400"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "be09946e09b3e713169570db411b35f6b7ce333fe8af85ad94d12fcd8db1db1c"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "0800d4e84aac3f8f47734c5bc0055019d5805999dfc06404af107259f0029e53",
+      "validation_error": "trend_requires_partial_observed_verdict"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "3d7e985dc0eaa6dbedf6ccbe5bb45b6daa5f79fcfd90f5e3c677012feac6561b"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "28ce7252d7e8f92787f95bed186f6303de34ab829d8a9927fb6f48a7d99facec"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "0800d4e84aac3f8f47734c5bc0055019d5805999dfc06404af107259f0029e53",
+      "validation_error": "trend_requires_partial_observed_verdict"
+    }
+  ],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-db0b0d81cd6327050d6863c9",
+            "prior-20d3e81ab25e953b2fa2"
+          ],
+          "blocks_verdict": true
+        },
+        {
+          "code": "source_availability_unconfirmed",
+          "evidence_ids": [
+            "prior-20d3e81ab25e953b2fa2"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "正确",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-db0b0d81cd6327050d6863c9",
+            "prior-20d3e81ab25e953b2fa2"
+          ],
+          "blocks_verdict": true
+        },
+        {
+          "code": "source_availability_unconfirmed",
+          "evidence_ids": [
+            "prior-20d3e81ab25e953b2fa2"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-1001bcb0b7e1451a88f5",
+        "source_bytes": 263,
+        "shown_bytes": 263,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-20d3e81ab25e953b2fa2",
+        "source_bytes": 206,
+        "shown_bytes": 206,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-469c4c410c95b909e46a",
+        "source_bytes": 102,
+        "shown_bytes": 102,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-db0b0d81cd6327050d6863c9",
+        "source_bytes": 3798,
+        "shown_bytes": 3798,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-edd23b2850a58278015b8595",
+        "source_bytes": 7587,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-1001bcb0b7e1451a88f5",
+        "source_bytes": 263,
+        "shown_bytes": 263,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-20d3e81ab25e953b2fa2",
+        "source_bytes": 206,
+        "shown_bytes": 206,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-469c4c410c95b909e46a",
+        "source_bytes": 102,
+        "shown_bytes": 102,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-db0b0d81cd6327050d6863c9",
+        "source_bytes": 3798,
+        "shown_bytes": 3798,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-edd23b2850a58278015b8595",
+        "source_bytes": 7587,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-1001bcb0b7e1451a88f5",
+        "source_bytes": 263,
+        "shown_bytes": 263,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-20d3e81ab25e953b2fa2",
+        "source_bytes": 206,
+        "shown_bytes": 206,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-469c4c410c95b909e46a",
+        "source_bytes": 102,
+        "shown_bytes": 102,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-db0b0d81cd6327050d6863c9",
+        "source_bytes": 3798,
+        "shown_bytes": 3798,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-edd23b2850a58278015b8595",
+        "source_bytes": 7587,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-1001bcb0b7e1451a88f5",
+        "source_bytes": 263,
+        "shown_bytes": 263,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-20d3e81ab25e953b2fa2",
+        "source_bytes": 206,
+        "shown_bytes": 206,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-469c4c410c95b909e46a",
+        "source_bytes": 102,
+        "shown_bytes": 102,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-db0b0d81cd6327050d6863c9",
+        "source_bytes": 3798,
+        "shown_bytes": 3798,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-edd23b2850a58278015b8595",
+        "source_bytes": 7587,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000225408-000225484",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "verdict_logic",
+          "reason": "建议把“部分符合”建立在“支出增长不能证明由家庭分化驱动”这一因果归因缺口上，但按统一口径，因果机制未获证明只应写入limitation，不应作为把结果判断降为部分符合的理由。原文的主要可检验结果是“公共负担越来越大”；教育支出总量与生均、福利支付占个人收入比在观察期内长期上升，主要方向一致，应判“正确”，并保留归因与“发展包袱”的限制。",
+          "quote_ref": "q3",
+          "source_quote": "教育支出总量与生均由1991-92年的4580亿美元/10892美元升至2020-21年的8011亿美元/16280美元，福利支付占个人收入比由1991年7.",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需将verdict由“部分符合”改为“正确”，reason改为主要结果方向一致；因果归因和“发展包袱”未证实保留在limitation，不作为降级依据。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000225408-000225484",
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "原文的后果对象是政府因家庭分化而承担的儿童教育到养老等家庭功能负担，并称其成为经济社会发展包袱；建议用公立中小学经常支出和OASDI/Medicare福利占个人收入比重作为代理，但前者是全部公立学校教育支出，后者是社会保险与医疗保险支付，均未对应“因家庭分化而新增承担原属家庭功能”的特定负担集合，代理改变了对象。",
+          "source_quote": "政府承担着沉重的由于家庭分化而产生的负担，从儿童教育到老人问题。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议判“正确”所依赖的福利占比序列来自ev-db0b0d81cd6327050d6863c9，该来源verified=false，且其表格只列OASDI与Medicare合计福利占个人收入，不能直接证明政府承担了儿童教育、养老等家庭功能；教育支出数据也只到2020-21，不能覆盖scope所称观察期至2024年的教育部分。",
+          "source_quote": "| 1991 | 386,912 | 5,089,913 | 7.60% |",
+          "evidence_id": "ev-db0b0d81cd6327050d6863c9",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "原文主要可检验结果是“政府因家庭分化承担的儿童教育到养老负担越来越大”，建议却把“公共负担规模扩大”当作主要结果并判正确；在代理对象偏离、因果机制未证且关键来源未verified的情况下，不能据此得出主要结果符合，应保留为具体未定或明确限定为仅资源规模趋势。",
+          "source_quote": "原文主要可检验结果为公共负担规模扩大，故判正确；家庭分化是否为其原因属机制问题，单列限制。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充能直接对应“政府因家庭分化而承担儿童教育、养老等家庭功能”的负担指标或责任证据，并核实福利占比来源；若只能使用公立教育支出和社保医保支付作代理，应把结论改为有明确对象偏离限制的未定或仅趋势描述，不能判正确。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000225408-000225484",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以1991-92至2020-21美国公共中小学经常支出（2022-23不变价，总量与生均）及1991-2024年OASDI与Medicare等实际福利支付占个人收入比重为公共负担代理指标；观察期截至2024年（教育支出至2020-21）。",
+      "reason": "教育支出总量与生均由1991-92年的4580亿美元/10892美元升至2020-21年的8011亿美元/16280美元，福利支付占个人收入比由1991年7.6%升至2024年10.5%，两项代理指标长期方向与“公共负担越来越大”一致。但原文同时强调家庭分化导致负担，材料只能显示公共支出规模扩大，不能证明其由家庭分化驱动，故判部分符合而非正确。",
+      "limitation": "支出增长不等于政府承担了原属家庭的功能，也不证明“成为发展包袱”；教育支出在2010-11至2012-13间有回落，福利占比在1996-2000、2021等年份有下降，属波动而非持续反向。因果机制未获证据支持。",
+      "evidence_ids": [
+        "prior-1001bcb0b7e1451a88f5",
+        "prior-20d3e81ab25e953b2fa2",
+        "ev-db0b0d81cd6327050d6863c9",
+        "prior-469c4c410c95b909e46a"
+      ],
+      "method": "由家庭协调和照护功能转移推演公共负担增长",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-1001bcb0b7e1451a88f5",
+          "relation": "support",
+          "quote": "NCES表236.15的2022-23不变价公共中小学经常支出：1991-92总额4580亿美元、生均10892美元；2000-01为5962亿美元/12631美元；2010-11为7147亿美元/14453美元；2012-13为6941亿美元/13952美元；2020-21为8011亿美元/16280美元。",
+          "publication_date": "2023-10",
+          "observation_end": "2021-06-30",
+          "limitation": "仅覆盖公立中小学经常支出，不含高等教育、儿童照护等；2010-11至2012-13有回落，且不能证明支出由家庭分化驱动。"
+        },
+        {
+          "evidence_id": "prior-20d3e81ab25e953b2fa2",
+          "relation": "support",
+          "quote": "SSA2025统计补编4.A4（Treasury/CMS/BEA）：OASDI与Medicare等合计实际支付福利占个人收入1991为7.6%、1996为8.2%、2000为7.3%、2010为9.7%、2020为10.3%、2021为9.2%、2024为10.5%。",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "福利支付占个人收入比重受人口老龄化、医疗价格、政策等多因素影响，不能归因于家庭分化；2021年较2020年下降显示存在波动。"
+        },
+        {
+          "evidence_id": "ev-db0b0d81cd6327050d6863c9",
+          "relation": "support",
+          "quote": "| 1991 | 386,912 | 5,089,913 | 7.60% |",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "该表为OASDI与Medicare合计福利占个人收入，属社会保障口径，非全部家庭功能公共负担；来源verified=false，尚待语义复核。"
+        },
+        {
+          "evidence_id": "prior-469c4c410c95b909e46a",
+          "relation": "background",
+          "quote": "2024年家庭户约占64%；独居户3850万，占29%，1974年为19%；初婚年龄中位数上升。",
+          "publication_date": "2024-11-12",
+          "observation_end": "2024-11-12",
+          "limitation": "仅显示家庭结构变化（独居户占比上升），不直接测量政府负担，只能作为条件背景，不能证明因果。"
+        }
+      ],
+      "remaining_gap": "缺少能直接衡量政府因家庭分化而新增承担儿童教育、养老等功能的支出或责任指标，以及家庭分化与公共支出增长之间的因果证据；教育支出数据止于2020-21，2021-2024年教育支出未覆盖。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000225408-000225484",
+      "inclusion": "forecast",
+      "verdict": "正确",
+      "basis": "observed_window",
+      "scope": "以1991-92至2020-21美国公共中小学经常支出（2022-23不变价，总量与生均）及1991-2024年OASDI与Medicare等实际福利支付占个人收入比重为公共负担代理指标；观察期截至2024年（教育支出至2020-21）。",
+      "reason": "教育支出总量与生均由1991-92年的4580亿美元/10892美元升至2020-21年的8011亿美元/16280美元，福利支付占个人收入比由1991年7.6%升至2024年10.5%，两项代理指标长期方向与“公共负担越来越大”一致。原文主要可检验结果为公共负担规模扩大，故判正确；家庭分化是否为其原因属机制问题，单列限制。",
+      "limitation": "支出增长不等于政府承担了原属家庭的功能，也不证明“成为发展包袱”；教育支出在2010-11至2012-13间有回落，福利占比在1996-2000、2021等年份有下降，属波动而非持续反向。因果机制未获证据支持，不据此降级。",
+      "evidence_ids": [
+        "prior-1001bcb0b7e1451a88f5",
+        "prior-20d3e81ab25e953b2fa2",
+        "ev-db0b0d81cd6327050d6863c9",
+        "prior-469c4c410c95b909e46a"
+      ],
+      "method": "由家庭协调和照护功能转移推演公共负担增长",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-1001bcb0b7e1451a88f5",
+          "relation": "support",
+          "quote": "NCES表236.15的2022-23不变价公共中小学经常支出：1991-92总额4580亿美元、生均10892美元；2000-01为5962亿美元/12631美元；2010-11为7147亿美元/14453美元；2012-13为6941亿美元/13952美元；2020-21为8011亿美元/16280美元。",
+          "publication_date": "2023-10",
+          "observation_end": "2021-06-30",
+          "limitation": "仅覆盖公立中小学经常支出，不含高等教育、儿童照护等；2010-11至2012-13有回落，且不能证明支出由家庭分化驱动。"
+        },
+        {
+          "evidence_id": "prior-20d3e81ab25e953b2fa2",
+          "relation": "support",
+          "quote": "SSA2025统计补编4.A4（Treasury/CMS/BEA）：OASDI与Medicare等合计实际支付福利占个人收入1991为7.6%、1996为8.2%、2000为7.3%、2010为9.7%、2020为10.3%、2021为9.2%、2024为10.5%。",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "福利支付占个人收入比重受人口老龄化、医疗价格、政策等多因素影响，不能归因于家庭分化；2021年较2020年下降显示存在波动。"
+        },
+        {
+          "evidence_id": "ev-db0b0d81cd6327050d6863c9",
+          "relation": "support",
+          "quote": "| 1991 | 386,912 | 5,089,913 | 7.60% |",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "该表为OASDI与Medicare合计福利占个人收入，属社会保障口径，非全部家庭功能公共负担；来源verified=false，尚待语义复核。"
+        },
+        {
+          "evidence_id": "prior-469c4c410c95b909e46a",
+          "relation": "background",
+          "quote": "2024年家庭户约占64%；独居户3850万，占29%，1974年为19%；初婚年龄中位数上升。",
+          "publication_date": "2024-11-12",
+          "observation_end": "2024-11-12",
+          "limitation": "仅显示家庭结构变化（独居户占比上升），不直接测量政府负担，只能作为条件背景，不能证明因果。"
+        }
+      ],
+      "remaining_gap": "缺少能直接衡量政府因家庭分化而新增承担儿童教育、养老等功能的支出或责任指标，以及家庭分化与公共支出增长之间的因果证据；教育支出数据止于2020-21，2021-2024年教育支出未覆盖。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "评估王沪宁关于美国家庭组织继续分化时，政府在儿童教育到养老等家庭功能上的公共负担可能越来越大的判断。可观察口径为1991年至2024年间美国公共中小学经常支出（固定美元总量及生均）与OASDI、Medicare等实际福利支付占个人收入比重的长期变化；反证包括这些指标在观察期内出现持续下降或公共责任收缩。支出增长只能支持公共责任资源规模扩大，不能证明其由家庭分化导致，也不证明必然成为发展包袱。",
+  "elapsed_seconds": 39.269,
+  "completed_at": "2026-11-09T10:35:19.270270+00:00"
+}

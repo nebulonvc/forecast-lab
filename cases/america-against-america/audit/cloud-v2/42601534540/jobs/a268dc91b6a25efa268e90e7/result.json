@@ -1,0 +1,737 @@
+{
+  "claim_id": "txt-1c4066fc0c-000227360-000227461",
+  "version": "search-verifier-v2",
+  "input_sha256": "f64094db9a94fe53f2890973d204626a14b547f675dd75effb4c3291c1255be7",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000227360-000227461",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "原文条件为“教育系统不能培养出合格人才”，结果口径为美国未来发展因此成为棘手问题；可观察代理为1991—2024年美国成人读写/数理技能、NAEP学业趋势、劳动力技能错配与人力资本供给。",
+    "reason": "原文是条件后果判断，条件是否成立需先判断美国教育系统是否“不能培养合格人才”。现有证据显示成人读写均分下降、数理低于国际均值，但美国仍有庞大高技能群体与STEM劳动力，合格人才供给是否整体失败并无一致结论，故主结果无法判定。",
+    "limitation": "“合格人才”与“未来发展棘手”均无原文阈值，回顾性代理只能部分对应；日本教育是否构成“最大挑战”缺横向比较证据，不单独决定主结果。",
+    "evidence_ids": [
+      "prior-1e28e95651c2901f7eb6",
+      "prior-491438f23150e07e6899",
+      "ev-d222348ab3780ebfbd7b6642",
+      "ev-357f7e79bc643d384a61ef24"
+    ],
+    "method": "由教育与合格劳动力供给关联，并以日本作比较",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-10",
+    "future_time_text": "未来发展",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-1e28e95651c2901f7eb6",
+        "relation": "support",
+        "quote": "OECD美国2023成人技能报告：读写和计算均分相较2012/15下降，低端增加而高端占比稳定；就业者约26%学历过度、9%学历不足，8%自报技能不足、39%自报技能过剩；美国样本3765人、回应率28%。",
+        "publication_date": "2024-12",
+        "observation_end": "2023-12-31",
+        "limitation": "为摘要性记录，未给具体分数与置信区间；回应率28%提示代表性风险。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-491438f23150e07e6899",
+        "relation": "support",
+        "quote": "2024四、八年级阅读继续下降；数学全国均分高于1990年代但低于2013高点，疫情后各州表现不同。",
+        "publication_date": "2025-01-29",
+        "observation_end": "2024-12-31",
+        "limitation": "NAEP为中小学生学业指标，不能直接等同成人劳动力合格性；数学相对1990年代仍高，方向不一。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-d222348ab3780ebfbd7b6642",
+        "relation": "boundary",
+        "quote": "The literacy skills of working-age U.S. adults were on par with the international average in the latest round of a major international study of basic cognitive and workplace skills",
+        "publication_date": "2024-12-10",
+        "observation_end": "2023-12-31",
+        "limitation": "同文又称平均读写与数理分数低于2017年，且数理与问题解决低于国际均值；仅显示相对位置而非“不能培养合格人才”。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-357f7e79bc643d384a61ef24",
+        "relation": "counter",
+        "quote": "In 2021, 24% of the U.S. workforce worked in STEM occupations (36.8 million workers), of which more than half (52%) did not have a bachelor’s degree and therefore were classified as the STW.",
+        "publication_date": "2024-05-30",
+        "observation_end": "2021-12-31",
+        "limitation": "STEM劳动力规模不能直接证明教育系统培养出“合格人才”，且为2021年单点数据。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺一个可对应原文“合格人才”的连续指标及“未来发展棘手”的结果证据；现有材料只能说明技能指标部分恶化与高技能供给并存，无法判定条件是否成立及后果。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000227360-000227461",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "原文条件为“教育系统不能培养出合格人才”，结果口径为美国未来发展因此成为棘手问题；可观察代理为1991—2024年美国成人读写/数理技能、NAEP学业趋势、劳动力技能错配与人力资本供给。",
+    "reason": "原文是条件后果判断，条件是否成立需先判断美国教育系统是否“不能培养合格人才”。现有证据显示成人读写均分下降、数理低于国际均值，但美国仍有庞大高技能群体与STEM劳动力，合格人才供给是否整体失败并无一致结论，故主结果无法判定。",
+    "limitation": "“合格人才”与“未来发展棘手”均无原文阈值，回顾性代理只能部分对应；日本教育是否构成“最大挑战”缺横向比较证据，不单独决定主结果。",
+    "evidence_ids": [
+      "prior-1e28e95651c2901f7eb6",
+      "prior-491438f23150e07e6899",
+      "ev-d222348ab3780ebfbd7b6642",
+      "ev-357f7e79bc643d384a61ef24"
+    ],
+    "method": "由教育与合格劳动力供给关联，并以日本作比较",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-10",
+    "future_time_text": "未来发展",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-1e28e95651c2901f7eb6",
+        "relation": "support",
+        "quote": "OECD美国2023成人技能报告：读写和计算均分相较2012/15下降，低端增加而高端占比稳定；就业者约26%学历过度、9%学历不足，8%自报技能不足、39%自报技能过剩；美国样本3765人、回应率28%。",
+        "publication_date": "2024-12",
+        "observation_end": "2023-12-31",
+        "limitation": "为摘要性记录，未给具体分数与置信区间；回应率28%提示代表性风险。"
+      },
+      {
+        "evidence_id": "prior-491438f23150e07e6899",
+        "relation": "support",
+        "quote": "2024四、八年级阅读继续下降；数学全国均分高于1990年代但低于2013高点，疫情后各州表现不同。",
+        "publication_date": "2025-01-29",
+        "observation_end": "2024-12-31",
+        "limitation": "NAEP为中小学生学业指标，不能直接等同成人劳动力合格性；数学相对1990年代仍高，方向不一。"
+      },
+      {
+        "evidence_id": "ev-d222348ab3780ebfbd7b6642",
+        "relation": "boundary",
+        "quote": "The literacy skills of working-age U.S. adults were on par with the international average in the latest round of a major international study of basic cognitive and workplace skills",
+        "publication_date": "2024-12-10",
+        "observation_end": "2023-12-31",
+        "limitation": "同文又称平均读写与数理分数低于2017年，且数理与问题解决低于国际均值；仅显示相对位置而非“不能培养合格人才”。"
+      },
+      {
+        "evidence_id": "ev-357f7e79bc643d384a61ef24",
+        "relation": "counter",
+        "quote": "In 2021, 24% of the U.S. workforce worked in STEM occupations (36.8 million workers), of which more than half (52%) did not have a bachelor’s degree and therefore were classified as the STW.",
+        "publication_date": "2024-05-30",
+        "observation_end": "2021-12-31",
+        "limitation": "STEM劳动力规模不能直接证明教育系统培养出“合格人才”，且为2021年单点数据。"
+      }
+    ],
+    "remaining_gap": "缺一个可对应原文“合格人才”的连续指标及“未来发展棘手”的结果证据；现有材料只能说明技能指标部分恶化与高技能供给并存，无法判定条件是否成立及后果。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-1e28e95651c2901f7eb6",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2024/12/survey-of-adults-skills-2023-country-notes_df7b4a60/united-states_efb9f176/427d6aac-en.pdf",
+      "title": "ev-r2-l3-oecd-skills",
+      "published_date": "2024-12",
+      "publication_date_precision": "month",
+      "publication_date_range": {
+        "earliest": "2024-12-01",
+        "latest": "2024-12-31"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-oecd-skills",
+      "archive_sha256": "c491650c654e782c42f6c55c61ffa245da94ada7e90da12b2c4f11c64bfdd213",
+      "archive_path": "data/sources/r2-l3-open-strategy-runaway.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-491438f23150e07e6899",
+      "url": "https://www.nagb.gov/content/dam/nagb/en/documents/newsroom/press-releases/2025/naep2024-pressrelease-final.pdf",
+      "title": "ev-naep",
+      "published_date": "2025-01-29",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-01-29",
+        "latest": "2025-01-29"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-naep",
+      "archive_sha256": "c1bea2acfb8c0f7ac66f649f5fc6cc18c6a1d7d3c1589cd5c5c0ef4bb7b7d114",
+      "archive_path": "data/sources/c1bea2acfb8c0f7ac66f649f5fc6cc18c6a1d7d3c1589cd5c5c0ef4bb7b7d114.pdf",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-dc575588fe6250e3e093",
+      "url": "https://www.ncses.nsf.gov/pubs/nsb20243/discovery-u-s-and-global-r-d",
+      "title": "ev-nsf",
+      "published_date": "2024-03-13",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-03-13",
+        "latest": "2024-03-13"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-nsf",
+      "archive_sha256": "48d44bfdae4f5f92a3f44364f67e6ca7670f659eb1c77f1e11453f89e6023f33",
+      "archive_path": "data/sources/48d44bfdae4f5f92a3f44364f67e6ca7670f659eb1c77f1e11453f89e6023f33.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-308a4d74a7ae40d63c3c",
+      "url": "https://www.ed.gov/sites/ed/files/2020/10/pathways_to_new_accountability_through_every_student_succeeds_act_0.pdf",
+      "title": "ev-lane3-education",
+      "published_date": "2016-04",
+      "publication_date_precision": "month",
+      "publication_date_range": {
+        "earliest": "2016-04-01",
+        "latest": "2016-04-30"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-education",
+      "archive_sha256": "7ccf2d730929185737d675a044837e872b0c1aa54bd7a51de580dd3537a54fb6",
+      "archive_path": "data/sources/lane3-education-cached.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-b79dc5980c2a8bb4317867f3",
+      "url": "https://www.oecd.org/en/publications/survey-of-adults-skills-2023-country-notes_ab4f6b8c-en/united-states_427d6aac-en.html",
+      "resolved_url": "https://www.oecd.org/en/publications/survey-of-adults-skills-2023-country-notes_ab4f6b8c-en/united-states_427d6aac-en.html",
+      "title": "Survey of Adults Skills 2023: United States | OECD",
+      "published_date": "2024-12-10",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-12-10",
+        "latest": "2024-12-10"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:53.490635+00:00",
+      "archive_sha256": "a8bb25ec3f0e9f074e8b952fb328ca36944d66ad4da37fbbfc5a10feeddef890",
+      "archive_path": "jobs/a268dc91b6a25efa268e90e7/a8bb25ec3f0e9f074e8b952fb328ca36944d66ad4da37fbbfc5a10feeddef890.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d222348ab3780ebfbd7b6642",
+      "url": "https://nces.ed.gov/learn/press-release/u-s-adults-score-par-international-average-literacy-skills-below-international-average-numeracy-and",
+      "resolved_url": "https://nces.ed.gov/learn/press-release/u-s-adults-score-par-international-average-literacy-skills-below-international-average-numeracy-and",
+      "title": "U.S. Adults Score on Par With International Average in Literacy Skills, Below International Average in Numeracy and Problem-Solving Skills in Survey of Adult Skills | IES",
+      "published_date": "2024-12-10",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-12-10",
+        "latest": "2024-12-10"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:53.490765+00:00",
+      "archive_sha256": "8e00968fa9c134c72c5826430597541dd6386e653e0e436d72189d0c0ef2e39e",
+      "archive_path": "jobs/a268dc91b6a25efa268e90e7/8e00968fa9c134c72c5826430597541dd6386e653e0e436d72189d0c0ef2e39e.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d1dc4511f0ef2647127dbe28",
+      "url": "https://www.ncses.nsf.gov/pubs/nsb20243/talent-u-s-and-global-stem-education-and-labor-force",
+      "resolved_url": "https://www.ncses.nsf.gov/pubs/nsb20243/talent-u-s-and-global-stem-education-and-labor-force",
+      "title": "The State of U.S. Science and Engineering 2024 | NCSES | NSF",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:53.490861+00:00",
+      "archive_sha256": "186e14121dcdb56f118433852bd07656e21e5cba0eb5d9be83d1217cf206e2b0",
+      "archive_path": "jobs/a268dc91b6a25efa268e90e7/186e14121dcdb56f118433852bd07656e21e5cba0eb5d9be83d1217cf206e2b0.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-357f7e79bc643d384a61ef24",
+      "url": "https://www.ncses.nsf.gov/pubs/nsb20245/u-s-stem-workforce-size-growth-and-employment",
+      "resolved_url": "https://www.ncses.nsf.gov/pubs/nsb20245/u-s-stem-workforce-size-growth-and-employment",
+      "title": "The STEM Labor Force: Scientists, Engineers, and Skilled Technical Workers | NCSES | NSF",
+      "published_date": "2024-05-30",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-05-30",
+        "latest": "2024-05-30"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:53.490949+00:00",
+      "archive_sha256": "fa7684d179deaea48c096d8340cde229a7e151bd8659a90345efd4f6ae293a9f",
+      "archive_path": "jobs/a268dc91b6a25efa268e90e7/fa7684d179deaea48c096d8340cde229a7e151bd8659a90345efd4f6ae293a9f.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-60de656bff4e163a91c820eb",
+      "url": "https://nces.ed.gov/surveys/piaac/2023/national%5Fresults.asp",
+      "resolved_url": "https://nces.ed.gov/surveys/piaac/2023/national%5Fresults.asp",
+      "title": "PIAAC - PIAAC Highlights of U.S. National Results",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:03.355558+00:00",
+      "archive_sha256": "556e75118be5cbbf417b55f726a756f25c87a21b0d65671987cbcf25b2c897a3",
+      "archive_path": "jobs/a268dc91b6a25efa268e90e7/556e75118be5cbbf417b55f726a756f25c87a21b0d65671987cbcf25b2c897a3.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-19a0eaba97e494fe34820fe1",
+      "url": "https://ncses.nsf.gov/pubs/nsb20243/talent-u-s-and-global-stem-education-and-labor-force",
+      "resolved_url": "https://ncses.nsf.gov/pubs/nsb20243/talent-u-s-and-global-stem-education-and-labor-force",
+      "title": "The State of U.S. Science and Engineering 2024 | NCSES | NSF",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:03.355727+00:00",
+      "archive_sha256": "186e14121dcdb56f118433852bd07656e21e5cba0eb5d9be83d1217cf206e2b0",
+      "archive_path": "jobs/a268dc91b6a25efa268e90e7/186e14121dcdb56f118433852bd07656e21e5cba0eb5d9be83d1217cf206e2b0.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "OECD Survey of Adults Skills 2023 United States literacy numeracy decline low-skilled adults employer skills shortage",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "United States educational attainment college graduates STEM workforce 1991 2024 improvement human capital economic growth evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "PIAAC 2023 United States adult literacy numeracy declining low-skilled widening skills gap NCES",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "United States college degree attainment STEM workforce growth 1991 2024 human capital economic competitiveness NSF",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺一个可对应原文“合格人才”的连续指标及“未来发展棘手”的结果证据；现有材料只能说明技能指标部分恶化与高技能供给并存，无法判定条件是否成立及后果。",
+  "source_statuses": [
+    {
+      "url": "https://www.oecd.org/en/publications/survey-of-adults-skills-2023-country-notes_ab4f6b8c-en/united-states_427d6aac-en.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://nces.ed.gov/learn/press-release/u-s-adults-score-par-international-average-literacy-skills-below-international-average-numeracy-and",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.ncses.nsf.gov/pubs/nsb20243/talent-u-s-and-global-stem-education-and-labor-force",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.ncses.nsf.gov/pubs/nsb20245/u-s-stem-workforce-size-growth-and-employment",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://nces.ed.gov/surveys/piaac/2023/national%5Fresults.asp",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://ncses.nsf.gov/pubs/nsb20243/talent-u-s-and-global-stem-education-and-labor-force",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "813c7f38ac901eeadfd1b848318a8c1bea9d7510c554b1822110dd8d5812d9d3"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "fba26d0a83793e83c93b9f630f28688a",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "6a46bd604b1380c8f971b9b0a637b428",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "c2f23c64eb7afe5b4670082ec4e54da2a40b00ba7a46288c051b94ffa4028c55"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "9fdde031d60e0cfaf1994d7093ded168",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "e1437ab6b563f62e72bfb0aba5dac322d7bc717cd0d2c9ffd536ec5d97640f9d"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "87a3d7a0391deab7b8870e0c6eb687de",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "4319fc1797db6f99737e9a56f359ef09",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "c0aa96403992087b175720f4baa79f61a2451bd82470e9e5db54b5e080a439e8"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "b7234f24be19f1482402245afdba56cf",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "bac16464c8af733c95b2790b3b72a7c1708056c9f667fea1eb03296ca17a5141"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "25da4e4c1753b48a73f5358b574170efebd7fa258dee564faffda22aeac0f2ee"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-1e28e95651c2901f7eb6",
+        "source_bytes": 245,
+        "shown_bytes": 245,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-491438f23150e07e6899",
+        "source_bytes": 126,
+        "shown_bytes": 126,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-dc575588fe6250e3e093",
+        "source_bytes": 154,
+        "shown_bytes": 154,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-308a4d74a7ae40d63c3c",
+        "source_bytes": 234,
+        "shown_bytes": 234,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-b79dc5980c2a8bb4317867f3",
+        "source_bytes": 12010,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d222348ab3780ebfbd7b6642",
+        "source_bytes": 6984,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d1dc4511f0ef2647127dbe28",
+        "source_bytes": 12090,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-357f7e79bc643d384a61ef24",
+        "source_bytes": 12048,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-60de656bff4e163a91c820eb",
+        "source_bytes": 12008,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-19a0eaba97e494fe34820fe1",
+        "source_bytes": 12090,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-1e28e95651c2901f7eb6",
+        "source_bytes": 245,
+        "shown_bytes": 245,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-491438f23150e07e6899",
+        "source_bytes": 126,
+        "shown_bytes": 126,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-dc575588fe6250e3e093",
+        "source_bytes": 154,
+        "shown_bytes": 154,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-308a4d74a7ae40d63c3c",
+        "source_bytes": 234,
+        "shown_bytes": 234,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-b79dc5980c2a8bb4317867f3",
+        "source_bytes": 12010,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d222348ab3780ebfbd7b6642",
+        "source_bytes": 6984,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d1dc4511f0ef2647127dbe28",
+        "source_bytes": 12090,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-357f7e79bc643d384a61ef24",
+        "source_bytes": 12048,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-60de656bff4e163a91c820eb",
+        "source_bytes": 12008,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-19a0eaba97e494fe34820fe1",
+        "source_bytes": 12090,
+        "shown_bytes": 2300,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000227360-000227461",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000227360-000227461",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "原文条件为“教育系统不能培养出合格人才”，结果口径为美国未来发展因此成为棘手问题；可观察代理为1991—2024年美国成人读写/数理技能、NAEP学业趋势、劳动力技能错配与人力资本供给。",
+      "reason": "原文是条件后果判断，条件是否成立需先判断美国教育系统是否“不能培养合格人才”。现有证据显示成人读写均分下降、数理低于国际均值，但美国仍有庞大高技能群体与STEM劳动力，合格人才供给是否整体失败并无一致结论，故主结果无法判定。",
+      "limitation": "“合格人才”与“未来发展棘手”均无原文阈值，回顾性代理只能部分对应；日本教育是否构成“最大挑战”缺横向比较证据，不单独决定主结果。",
+      "evidence_ids": [
+        "prior-1e28e95651c2901f7eb6",
+        "prior-491438f23150e07e6899",
+        "ev-d222348ab3780ebfbd7b6642",
+        "ev-357f7e79bc643d384a61ef24"
+      ],
+      "method": "由教育与合格劳动力供给关联，并以日本作比较",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-10",
+      "future_time_text": "未来发展",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-1e28e95651c2901f7eb6",
+          "relation": "support",
+          "quote": "OECD美国2023成人技能报告：读写和计算均分相较2012/15下降，低端增加而高端占比稳定；就业者约26%学历过度、9%学历不足，8%自报技能不足、39%自报技能过剩；美国样本3765人、回应率28%。",
+          "publication_date": "2024-12",
+          "observation_end": "2023-12-31",
+          "limitation": "为摘要性记录，未给具体分数与置信区间；回应率28%提示代表性风险。"
+        },
+        {
+          "evidence_id": "prior-491438f23150e07e6899",
+          "relation": "support",
+          "quote": "2024四、八年级阅读继续下降；数学全国均分高于1990年代但低于2013高点，疫情后各州表现不同。",
+          "publication_date": "2025-01-29",
+          "observation_end": "2024-12-31",
+          "limitation": "NAEP为中小学生学业指标，不能直接等同成人劳动力合格性；数学相对1990年代仍高，方向不一。"
+        },
+        {
+          "evidence_id": "ev-d222348ab3780ebfbd7b6642",
+          "relation": "boundary",
+          "quote": "The literacy skills of working-age U.S. adults were on par with the international average in the latest round of a major international study of basic cognitive and workplace skills",
+          "publication_date": "2024-12-10",
+          "observation_end": "2023-12-31",
+          "limitation": "同文又称平均读写与数理分数低于2017年，且数理与问题解决低于国际均值；仅显示相对位置而非“不能培养合格人才”。"
+        },
+        {
+          "evidence_id": "ev-357f7e79bc643d384a61ef24",
+          "relation": "counter",
+          "quote": "In 2021, 24% of the U.S. workforce worked in STEM occupations (36.8 million workers), of which more than half (52%) did not have a bachelor’s degree and therefore were classified as the STW.",
+          "publication_date": "2024-05-30",
+          "observation_end": "2021-12-31",
+          "limitation": "STEM劳动力规模不能直接证明教育系统培养出“合格人才”，且为2021年单点数据。"
+        }
+      ],
+      "remaining_gap": "缺一个可对应原文“合格人才”的连续指标及“未来发展棘手”的结果证据；现有材料只能说明技能指标部分恶化与高技能供给并存，无法判定条件是否成立及后果。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象为美国教育系统能否培养出足够合格人才，以及由此对美国未来发展的影响；条件为“教育系统不能培养出合格人才”，结果口径为美国发展是否因此成为棘手问题。可观察代理包括1991—2024年美国成人读写与数理技能、NAEP学业趋势、劳动力技能不足与技能错配、研发与人力资本指标；反证包括美国教育仍持续供给大量合格人才、技能指标未整体恶化或美国发展未因教育供给而显著受阻。日本教育体制是否构成美国“最大挑战”作为次要比较判断，需横向证据，不单独决定主结果。",
+  "elapsed_seconds": 29.285,
+  "completed_at": "2026-11-09T10:35:11.688612+00:00"
+}

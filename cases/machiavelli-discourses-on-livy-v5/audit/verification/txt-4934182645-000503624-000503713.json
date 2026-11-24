@@ -1,0 +1,48 @@
+{
+  "id": "txt-4934182645-000503624-000503713",
+  "plan": {
+    "object": "没有强军的君主。同段把有良好军队的君主分开：他在海边有一座能拖延数日的要塞，有时有利。",
+    "condition": "fortresses erected throughout his territories, or upon his frontier。登记变化是 turned against him：要塞容易失去，然后转过来打他自己。敌人若攻不下而弃之不顾，那是另一结果，不能代替转过来打他。",
+    "quantifier": "either useless or hurtful，其中伤害的可观察一半是失去并转打自己。一次没有发生，不能单独反驳；一次发生，也不能单独把“不是无用就是有害”判成全部成立。",
+    "result": "要塞失去并被用来打这个君主。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "一个没有强军的君主所建的境内或边境要塞被夺走，并转用来打他；或者这样的要塞既没有失去，也没有变得无用。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "fortress built by a weak prince captured and then used against him after 1531",
+      "counter_query": "small state fortress held and was not captured by an enemy after 1531"
+    },
+    "adaptive_rounds": 1,
+    "adaptive": {
+      "strategy": "改查没有野战军队的君主，其要塞被夺后是否被用来继续打他",
+      "queries": ["weak ruler without an army his fortress captured by the enemy and used to attack his lands after 1531"]
+    },
+    "kept_urls": [],
+    "dropped": "1532年克塞格由哈布斯堡国王的边境守住，国王并不是没有强军。补轮里的巴哈杜尔沙在曼杜失守前有一支被莫卧儿打败的军队，不是没有强军的君主。弗格拉什材料没有写要塞转过来打他。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "对象必须是没有强军的君主，结果必须是要塞失去并转打他自己。",
+    "reason": "打开的要塞要么属于仍有其他军队的君主并且守住了，要么只写领主被俘，没有写要塞转过来打他。决定性缺口是：没有一条正文同时写出没有强军、要塞失去、以及该要塞随后被用来打他。守住一座要塞不能代替这个结果，一次相似也不能给部分符合。",
+    "limitation": "没有新增可引用正文。",
+    "method": "先确认君主没有强军，再看要塞是否失去并转打他。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "候选要塞没有同时满足没有强军和转过来打他自己。"
+  }
+}

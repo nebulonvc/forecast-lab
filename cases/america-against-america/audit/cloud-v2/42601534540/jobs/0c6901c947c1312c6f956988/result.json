@@ -1,0 +1,817 @@
+{
+  "claim_id": "txt-1c4066fc0c-000150979-000151037",
+  "version": "search-verifier-v2",
+  "input_sha256": "1038a96d0bc3e039b2baeec6c7bd156a7693cf50ffcd43021095e696ca3dc9ad",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000150979-000151037",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "对象为美国国内政治统一：观察1991年至截止日（2026-11-09）前，是否出现类似南北战争的国内领土分离式大规模武装冲突；以UCDP/PRIO冲突年度数据中美国境内、领土不相容、国内或国际化国内冲突为主要口径，辅以2021年1月6日国会事件作为非分离式政治暴力反证。",
+    "reason": "必要引用在证据截止日前的可得性未确认：缺少有效发表范围或截止日前程序抓取记录；原模型建议保留。",
+    "limitation": "该判断为“难以再生”而非“永不发生”，观察窗口内无此类冲突支持主要方向，但不能据此断言未来永远成立；经济一体化是否为原因未被检验，仅评价结果。UCDP数据版本日期跨截止年，需注意其覆盖期。",
+    "evidence_ids": [
+      "prior-393df04d3fb3a1278330",
+      "prior-8f2c0086f1316039aae9",
+      "prior-5c26846489b9b68026f6",
+      "prior-13d4eee8172a1e2b58c2",
+      "ev-354544865d42c53a9f90cf88"
+    ],
+    "method": "经济一体化减少分裂动机与政治协调负担",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-393df04d3fb3a1278330",
+        "relation": "support",
+        "quote": "从完整2816行中过滤：gwno_loc精确为{2}、type3/4、incompatibility1/3，命中0行；美国单独location的18行均为政府与基地组织冲突。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "过滤口径为美国境内领土不相容冲突，命中0行支持无南北战争式冲突；但该来源未给明确发表日期，且仅覆盖UCDP收录范围。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "prior-8f2c0086f1316039aae9",
+        "relation": "boundary",
+        "quote": "Codebook：type3为国内、type4为国际化国内冲突；incompatibility1为领土、2为政府、3为两者；intensity2为当年战斗相关死亡至少1000。",
+        "publication_date": "2026",
+        "observation_end": null,
+        "limitation": "提供操作化定义，说明过滤口径；本身不直接证明美国无冲突，仅界定指标。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "prior-5c26846489b9b68026f6",
+        "relation": "boundary",
+        "quote": "UCDP/PRIO ACD26.1共2816条冲突年度记录；美国涉及22条，含基地组织、阿富汗/伊拉克及也门相关冲突，不能笼统说美国没有战争。",
+        "publication_date": "2026",
+        "observation_end": null,
+        "limitation": "美国相关记录多为境外/反恐冲突，非领土分离式国内冲突；不能据此说美国无任何战争，但支持无南北战争式冲突。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "prior-13d4eee8172a1e2b58c2",
+        "relation": "boundary",
+        "quote": "众议院调查委员会报告记录特朗普拒绝承认2020合法选举结果，并企图阻止权力交接；国会大厦遇袭。",
+        "publication_date": "2022-12-22",
+        "observation_end": "2022-12-22",
+        "limitation": "属非分离式政治暴力，不构成南北战争式冲突反例；但显示政治暴力存在，需在limitation中保留。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-354544865d42c53a9f90cf88",
+        "relation": "support",
+        "quote": "The risks of an actual U.S. civil war in 2025 are negligible, and rhetoric to the contrary is counterproductive and inflammatory when analyzed in relation to studies of political violence.",
+        "publication_date": "2025-09-16",
+        "observation_end": "2025-09-16",
+        "limitation": "为分析文章而非冲突数据，且verified=false；其判断与UCDP口径一致，但仅作辅助支持。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "确认必要引用的发表范围或截止日前可核对的内容版本。UCDP数据版本日期跨截止年，需确认其实际覆盖至截止日前；经济一体化因果机制未检验，不影响结果判断。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000150979-000151037",
+    "inclusion": "forecast",
+    "verdict": "正确",
+    "basis": "observed_window",
+    "scope": "对象为美国国内政治统一：观察1991年至截止日（2026-11-09）前，是否出现类似南北战争的国内领土分离式大规模武装冲突；以UCDP/PRIO冲突年度数据中美国境内、领土不相容、国内或国际化国内冲突为主要口径，辅以2021年1月6日国会事件作为非分离式政治暴力反证。",
+    "reason": "原文判断南北战争式（领土分离型）全国性武装冲突难以再生。按UCDP/PRIO口径过滤美国境内、领土不相容的国内/国际化国内冲突命中0行，1991年至截止日前未观察到此类冲突；2021年国会事件属非分离式政治暴力，不构成该主要判断的反例。",
+    "limitation": "该判断为“难以再生”而非“永不发生”，观察窗口内无此类冲突支持主要方向，但不能据此断言未来永远成立；经济一体化是否为原因未被检验，仅评价结果。UCDP数据版本日期跨截止年，需注意其覆盖期。",
+    "evidence_ids": [
+      "prior-393df04d3fb3a1278330",
+      "prior-8f2c0086f1316039aae9",
+      "prior-5c26846489b9b68026f6",
+      "prior-13d4eee8172a1e2b58c2",
+      "ev-354544865d42c53a9f90cf88"
+    ],
+    "method": "经济一体化减少分裂动机与政治协调负担",
+    "method_basis": "inferred",
+    "observation_end": "2026-11-09",
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-393df04d3fb3a1278330",
+        "relation": "support",
+        "quote": "从完整2816行中过滤：gwno_loc精确为{2}、type3/4、incompatibility1/3，命中0行；美国单独location的18行均为政府与基地组织冲突。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "过滤口径为美国境内领土不相容冲突，命中0行支持无南北战争式冲突；但该来源未给明确发表日期，且仅覆盖UCDP收录范围。"
+      },
+      {
+        "evidence_id": "prior-8f2c0086f1316039aae9",
+        "relation": "boundary",
+        "quote": "Codebook：type3为国内、type4为国际化国内冲突；incompatibility1为领土、2为政府、3为两者；intensity2为当年战斗相关死亡至少1000。",
+        "publication_date": "2026",
+        "observation_end": null,
+        "limitation": "提供操作化定义，说明过滤口径；本身不直接证明美国无冲突，仅界定指标。"
+      },
+      {
+        "evidence_id": "prior-5c26846489b9b68026f6",
+        "relation": "boundary",
+        "quote": "UCDP/PRIO ACD26.1共2816条冲突年度记录；美国涉及22条，含基地组织、阿富汗/伊拉克及也门相关冲突，不能笼统说美国没有战争。",
+        "publication_date": "2026",
+        "observation_end": null,
+        "limitation": "美国相关记录多为境外/反恐冲突，非领土分离式国内冲突；不能据此说美国无任何战争，但支持无南北战争式冲突。"
+      },
+      {
+        "evidence_id": "prior-13d4eee8172a1e2b58c2",
+        "relation": "boundary",
+        "quote": "众议院调查委员会报告记录特朗普拒绝承认2020合法选举结果，并企图阻止权力交接；国会大厦遇袭。",
+        "publication_date": "2022-12-22",
+        "observation_end": "2022-12-22",
+        "limitation": "属非分离式政治暴力，不构成南北战争式冲突反例；但显示政治暴力存在，需在limitation中保留。"
+      },
+      {
+        "evidence_id": "ev-354544865d42c53a9f90cf88",
+        "relation": "support",
+        "quote": "The risks of an actual U.S. civil war in 2025 are negligible, and rhetoric to the contrary is counterproductive and inflammatory when analyzed in relation to studies of political violence.",
+        "publication_date": "2025-09-16",
+        "observation_end": "2025-09-16",
+        "limitation": "为分析文章而非冲突数据，且verified=false；其判断与UCDP口径一致，但仅作辅助支持。"
+      }
+    ],
+    "remaining_gap": "UCDP数据版本日期跨截止年，需确认其实际覆盖至截止日前；经济一体化因果机制未检验，不影响结果判断。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-5c26846489b9b68026f6",
+      "url": "https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-261-csv.zip",
+      "title": "ev-r2-l2-ucdp-data",
+      "published_date": "2026",
+      "publication_date_precision": "year",
+      "publication_date_range": {
+        "earliest": "2026-01-01",
+        "latest": "2026-12-31"
+      },
+      "date_status": "overlaps_cutoff",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-ucdp-data",
+      "archive_sha256": "5f951743222964674a446e32a5a871077b29bd13349588d85fc59953d89c878a",
+      "archive_path": "data/sources/r2-l2-ucdp-data.zip",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-8f2c0086f1316039aae9",
+      "url": "https://ucdp.uu.se/downloads/ucdpprio/ucdp-prio-acd-261.pdf",
+      "title": "ev-r2-l2-ucdp-codebook",
+      "published_date": "2026",
+      "publication_date_precision": "year",
+      "publication_date_range": {
+        "earliest": "2026-01-01",
+        "latest": "2026-12-31"
+      },
+      "date_status": "overlaps_cutoff",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-ucdp-codebook",
+      "archive_sha256": "6d757183dd632d10d7287ee63493b1e632733f308b77220406dce7ceab664455",
+      "archive_path": "data/sources/r2-l2-ucdp-codebook.pdf",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-393df04d3fb3a1278330",
+      "url": "https://ucdp.uu.se/downloads/",
+      "title": "ev-r2-l2-ucdp-filter",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-ucdp-filter",
+      "archive_sha256": "3faac1e7d4c66f34a75db80146394bc5327377c7e8cd9d0c71253926741df5bb",
+      "archive_path": "data/sources/r2-l2-ucdp-filter-result.json",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-13d4eee8172a1e2b58c2",
+      "url": "https://www.govinfo.gov/content/pkg/GPO-J6-REPORT/html-submitted/index.html",
+      "title": "ev-jan6",
+      "published_date": "2022-12-22",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2022-12-22",
+        "latest": "2022-12-22"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-jan6",
+      "archive_sha256": "99340c674c6c84701d1e92df8613deece20d66ac62c29ce126634ed77b1b8636",
+      "archive_path": "data/sources/99340c674c6c84701d1e92df8613deece20d66ac62c29ce126634ed77b1b8636.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-354544865d42c53a9f90cf88",
+      "url": "https://www.csis.org/analysis/united-states-headed-toward-civil-war",
+      "resolved_url": "https://www.csis.org/analysis/united-states-headed-toward-civil-war",
+      "title": "Is the United States Headed Toward a Civil War?",
+      "published_date": "2025-09-16",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-09-16",
+        "latest": "2025-09-16"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:00.916895+00:00",
+      "archive_sha256": "e79ba07411bd47bd48aaacc31f96e37112154486728737ac6330ccb7b48ec6e7",
+      "archive_path": "jobs/0c6901c947c1312c6f956988/e79ba07411bd47bd48aaacc31f96e37112154486728737ac6330ccb7b48ec6e7.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-1818a05db5b003f1f429b865",
+      "url": "https://iafor.org/journal/iafor-journal-of-arts-and-humanities/volume-10-issue-1/article-13/",
+      "resolved_url": "https://iafor.org/journal/iafor-journal-of-arts-and-humanities/volume-10-issue-1/article-13/",
+      "title": "U.S. Civil War Redux? A Prevue",
+      "published_date": "2023-08-16",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2023-08-16",
+        "latest": "2023-08-16"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:00.917020+00:00",
+      "archive_sha256": "03452e2b91a319ee23d334a91fdec5175d729a8ea357920217dfaf5c701b5994",
+      "archive_path": "jobs/0c6901c947c1312c6f956988/03452e2b91a319ee23d334a91fdec5175d729a8ea357920217dfaf5c701b5994.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "UCDP PRIO Armed Conflict Dataset United States government incompatibility territorial conflict 1991 2025",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "United States domestic territorial secessionist armed conflict civil war since 1991 casualties",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "UCDP PRIO Armed Conflict Dataset United States government incompatibility territorial conflict 1991 2025",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "United States domestic territorial secessionist armed conflict civil war since 1991 casualties",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "prior-393df04d3fb3a1278330"
+      ],
+      "blocks_verdict": true
+    },
+    {
+      "code": "publication_date_range_overlaps_cutoff",
+      "evidence_ids": [
+        "prior-5c26846489b9b68026f6",
+        "prior-8f2c0086f1316039aae9"
+      ],
+      "blocks_verdict": true
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "prior-393df04d3fb3a1278330",
+        "prior-5c26846489b9b68026f6",
+        "prior-8f2c0086f1316039aae9"
+      ],
+      "blocks_verdict": true
+    }
+  ],
+  "remaining_gap": "确认必要引用的发表范围或截止日前可核对的内容版本。UCDP数据版本日期跨截止年，需确认其实际覆盖至截止日前；经济一体化因果机制未检验，不影响结果判断。",
+  "source_statuses": [
+    {
+      "url": "https://www.csis.org/analysis/united-states-headed-toward-civil-war",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://iafor.org/journal/iafor-journal-of-arts-and-humanities/volume-10-issue-1/article-13/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "c994bcbb88e109b02388150b3ade3782913e2bcfc19883cf514521c44753bc05"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b75c31ab1a9ecad07c8897a276ea7621",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "01569617625621404d3b9a5c8234b55a",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "811b16e3552451fe7d29b156cacd9ab29e85026ca3bcefdfca635e24b00904e3"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "066ddf81b297a07b8843be79e259cdb1",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "10c625afb7eada9852c3c46c093f631f58b682f8c0c1cd545746739e91b7c0fd"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b75c31ab1a9ecad07c8897a276ea7621",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "01569617625621404d3b9a5c8234b55a",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "e334f4aca88a99aaeb9dd51b49ec5c26d761057ff5fe97d7f968eea0a097be40"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "badc62183baaf8c101e73d0ecdbf4767ef004cf7d15c1751de997942cdaae4d8"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "41c309e8d090f578505a640edec85e1cf358951f86cea7a983155160688491be"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "shared_hint",
+      "request_sha256": "f1a4fef0bf8f63c1a4840fbbe8ee184d842ad441ee6526d2fd96ee7d75e555e1"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "legacy_hint",
+      "request_sha256": "cf62774614fd212adb822b0810fb7ddfb10401c087ca25b17a59885474761a40"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "legacy_nohint",
+      "request_sha256": "777609486a17579471b11109e1e10ef50e7704b507a0101fdab0ae8b0f451398"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "正确",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "prior-393df04d3fb3a1278330"
+          ],
+          "blocks_verdict": true
+        },
+        {
+          "code": "publication_date_range_overlaps_cutoff",
+          "evidence_ids": [
+            "prior-5c26846489b9b68026f6",
+            "prior-8f2c0086f1316039aae9"
+          ],
+          "blocks_verdict": true
+        },
+        {
+          "code": "source_availability_unconfirmed",
+          "evidence_ids": [
+            "prior-393df04d3fb3a1278330",
+            "prior-5c26846489b9b68026f6",
+            "prior-8f2c0086f1316039aae9"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-5c26846489b9b68026f6",
+        "source_bytes": 165,
+        "shown_bytes": 165,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-8f2c0086f1316039aae9",
+        "source_bytes": 164,
+        "shown_bytes": 164,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-393df04d3fb3a1278330",
+        "source_bytes": 215,
+        "shown_bytes": 215,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-13d4eee8172a1e2b58c2",
+        "source_bytes": 133,
+        "shown_bytes": 133,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-354544865d42c53a9f90cf88",
+        "source_bytes": 8210,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-1818a05db5b003f1f429b865",
+        "source_bytes": 1774,
+        "shown_bytes": 1774,
+        "context_truncated": false
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-5c26846489b9b68026f6",
+        "source_bytes": 165,
+        "shown_bytes": 165,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-8f2c0086f1316039aae9",
+        "source_bytes": 164,
+        "shown_bytes": 164,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-393df04d3fb3a1278330",
+        "source_bytes": 215,
+        "shown_bytes": 215,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-13d4eee8172a1e2b58c2",
+        "source_bytes": 133,
+        "shown_bytes": 133,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-354544865d42c53a9f90cf88",
+        "source_bytes": 8210,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-1818a05db5b003f1f429b865",
+        "source_bytes": 1774,
+        "shown_bytes": 1774,
+        "context_truncated": false
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 3,
+  "review_audit": {
+    "selected": true,
+    "arms": {
+      "shared_nohint": {
+        "status": "completed",
+        "common_input_sha256": "4d20823161a8c720b9e789899a5e57176385f715ce79ae8f33146367a7668e13",
+        "schema_repaired": false,
+        "review": {
+          "id": "txt-1c4066fc0c-000150979-000151037",
+          "decision": "accept",
+          "checks": {
+            "object_match": "pass",
+            "condition_logic": "pass",
+            "time_alignment": "pass",
+            "evidence_support": "pass",
+            "counterevidence": "pass",
+            "verdict_logic": "pass"
+          },
+          "issues": [],
+          "remaining_gap": ""
+        },
+        "request_sha256": "41c309e8d090f578505a640edec85e1cf358951f86cea7a983155160688491be",
+        "prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+      },
+      "shared_hint": {
+        "status": "completed",
+        "schema_repaired": false,
+        "common_input_sha256": "4d20823161a8c720b9e789899a5e57176385f715ce79ae8f33146367a7668e13",
+        "primary_material_sha256": "4d20823161a8c720b9e789899a5e57176385f715ce79ae8f33146367a7668e13",
+        "request_sha256": "f1a4fef0bf8f63c1a4840fbbe8ee184d842ad441ee6526d2fd96ee7d75e555e1",
+        "prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1",
+        "primary_schema_repaired": false,
+        "same_protocol_as_primary": true,
+        "review": {
+          "id": "txt-1c4066fc0c-000150979-000151037",
+          "decision": "revise",
+          "checks": {
+            "object_match": "pass",
+            "condition_logic": "pass",
+            "time_alignment": "fail",
+            "evidence_support": "fail",
+            "counterevidence": "pass",
+            "verdict_logic": "fail"
+          },
+          "issues": [
+            {
+              "check": "time_alignment",
+              "reason": "主要支持证据prior-393df04d3fb3a1278330没有发表日期，且其数据版本ACD26.1的出版年为2026，覆盖期可能延伸至2026年全年，晚于或跨越截止日2026-11-09。建议把observation_end写成2026-11-09，等于把版本日期跨截止年的数据当作截止日前已观察到的结果，未确认实际观察期是否在截止日前结束。",
+              "quote_ref": "q2",
+              "source_quote": "对象为美国国内政治统一：观察1991年至截止日（2026-11-09）前，是否出现类似南北战争的国内领土分离式大规模武装冲突；以UCDP/PRIO冲突年度数据中美国境内、领土不相容、国内或国际化国内冲突为主要口径，辅以2021年1月6日国会事件作为非分离式政治暴力反证。",
+              "evidence_id": null,
+              "quote_resolution": "program_supplied_verbatim_option",
+              "quote_origin": "proposal"
+            },
+            {
+              "check": "evidence_support",
+              "reason": "过滤命中0行所依据的UCDP版本为ACD26.1（2026年），其覆盖期是否截至2026-11-09前未确认；且prior-393df04d3fb3a1278330无发表日期，无法证明该过滤结果在截止日前已可得。以该数据支撑“1991年至截止日前未观察到此类冲突”的主要结果，证据链存在时期缺口。",
+              "quote_ref": "q4",
+              "source_quote": "从完整2816行中过滤：gwno_loc精确为{2}、type3/4、incompatibility1/3，命中0行；美国单独location的18行均为政府与基地组织冲突。",
+              "evidence_id": "prior-393df04d3fb3a1278330",
+              "quote_resolution": "program_supplied_verbatim_option",
+              "quote_origin": "evidence"
+            },
+            {
+              "check": "verdict_logic",
+              "reason": "在主要支持数据的实际覆盖期未确认、且版本跨截止年的情况下，直接判“正确”并写observation_end=2026-11-09，属于把未确认覆盖期的数据当作截止日前完整观察结果。应保留时期缺口，或明确数据实际覆盖终点后再定结论。",
+              "quote_ref": "q2",
+              "source_quote": "对象为美国国内政治统一：观察1991年至截止日（2026-11-09）前，是否出现类似南北战争的国内领土分离式大规模武装冲突；以UCDP/PRIO冲突年度数据中美国境内、领土不相容、国内或国际化国内冲突为主要口径，辅以2021年1月6日国会事件作为非分离式政治暴力反证。",
+              "evidence_id": null,
+              "quote_resolution": "program_supplied_verbatim_option",
+              "quote_origin": "proposal"
+            }
+          ],
+          "remaining_gap": "需确认UCDP/PRIO ACD26.1的实际覆盖期是否截至2026-11-09前，以及prior-393df04d3fb3a1278330过滤结果对应的观察终点；若覆盖期跨过截止日或无法确认，应将observation_end改为可证实的截止前日期，或把结论保留为受时期限制的未定。"
+        }
+      },
+      "legacy_hint": {
+        "status": "completed",
+        "schema_repaired": false,
+        "common_input_sha256": "4d20823161a8c720b9e789899a5e57176385f715ce79ae8f33146367a7668e13",
+        "primary_material_sha256": "4d20823161a8c720b9e789899a5e57176385f715ce79ae8f33146367a7668e13",
+        "request_sha256": "cf62774614fd212adb822b0810fb7ddfb10401c087ca25b17a59885474761a40",
+        "prompt_sha256": "fe64d20b3d3cb81be0d11d63babe30487df93edf8a719de208973c011e3151b0",
+        "primary_schema_repaired": false,
+        "same_protocol_as_primary": true,
+        "review": {
+          "id": "txt-1c4066fc0c-000150979-000151037",
+          "decision": "revise",
+          "checks": {
+            "object_match": "pass",
+            "condition_logic": "pass",
+            "time_alignment": "fail",
+            "evidence_support": "fail",
+            "counterevidence": "pass",
+            "verdict_logic": "fail"
+          },
+          "issues": [
+            {
+              "check": "time_alignment",
+              "reason": "建议把观察终点写成2026-11-09，但主要支持证据UCDP/PRIO ACD26.1的出版日期只精确到2026年，且来源状态未确认实际覆盖到截止日；建议自己在remaining_gap中也承认需确认覆盖期。因此不能把“1991年至截止日前未观察到”作为已核实的时间结论。",
+              "quote_ref": "q2",
+              "source_quote": "对象为美国国内政治统一：观察1991年至截止日（2026-11-09）前，是否出现类似南北战争的国内领土分离式大规模武装冲突；以UCDP/PRIO冲突年度数据中美国境内、领土不相容、国内或国际化国内冲突为主要口径，辅以2021年1月6日国会事件作为非分离式政治暴力反证。",
+              "evidence_id": null,
+              "quote_resolution": "program_supplied_verbatim_option",
+              "quote_origin": "proposal"
+            },
+            {
+              "check": "evidence_support",
+              "reason": "过滤命中0行只说明在gwno_loc精确为{2}、type3/4、incompatibility1/3这一特定UCDP口径下没有记录；它不能单独支撑“类似南北战争的国内领土分离式大规模武装冲突未出现”这一更宽声明，因为该口径排除了其他地点编码、其他不相容类型及未达UCDP收录门槛的武装对抗。建议把该证据当作口径内支持，而非主要结果已获充分证明。",
+              "quote_ref": "q4",
+              "source_quote": "从完整2816行中过滤：gwno_loc精确为{2}、type3/4、incompatibility1/3，命中0行；美国单独location的18行均为政府与基地组织冲突。",
+              "evidence_id": "prior-393df04d3fb3a1278330",
+              "quote_resolution": "program_supplied_verbatim_option",
+              "quote_origin": "evidence"
+            },
+            {
+              "check": "verdict_logic",
+              "reason": "建议以“UCDP口径命中0行”直接判“正确”，但该口径只覆盖特定编码的冲突年度记录，且数据覆盖期尚未确认到截止日；在主要可检验结果尚未被充分证据覆盖时，应保留具体未定或限定为口径内未观察到，不能直接给出“正确”的终局判断。",
+              "quote_ref": "q3",
+              "source_quote": "原文判断南北战争式（领土分离型）全国性武装冲突难以再生。",
+              "evidence_id": null,
+              "quote_resolution": "program_supplied_verbatim_option",
+              "quote_origin": "proposal"
+            }
+          ],
+          "remaining_gap": "需确认UCDP/PRIO ACD26.1的实际覆盖期是否包含1991年至2026-11-09，并说明该数据口径之外（其他地点编码、其他不相容类型、未达收录门槛的武装对抗）是否有补充证据；在此之前，结论应限定为“该UCDP口径内未观察到”，或保留具体未定。"
+        }
+      },
+      "legacy_nohint": {
+        "status": "completed",
+        "schema_repaired": false,
+        "common_input_sha256": "4d20823161a8c720b9e789899a5e57176385f715ce79ae8f33146367a7668e13",
+        "primary_material_sha256": "4d20823161a8c720b9e789899a5e57176385f715ce79ae8f33146367a7668e13",
+        "request_sha256": "777609486a17579471b11109e1e10ef50e7704b507a0101fdab0ae8b0f451398",
+        "prompt_sha256": "fe64d20b3d3cb81be0d11d63babe30487df93edf8a719de208973c011e3151b0",
+        "primary_schema_repaired": false,
+        "same_protocol_as_primary": true,
+        "review": {
+          "id": "txt-1c4066fc0c-000150979-000151037",
+          "decision": "accept",
+          "checks": {
+            "object_match": "pass",
+            "condition_logic": "pass",
+            "time_alignment": "pass",
+            "evidence_support": "pass",
+            "counterevidence": "pass",
+            "verdict_logic": "pass"
+          },
+          "issues": [],
+          "remaining_gap": ""
+        }
+      }
+    }
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000150979-000151037",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000150979-000151037",
+      "inclusion": "forecast",
+      "verdict": "正确",
+      "basis": "observed_window",
+      "scope": "对象为美国国内政治统一：观察1991年至截止日（2026-11-09）前，是否出现类似南北战争的国内领土分离式大规模武装冲突；以UCDP/PRIO冲突年度数据中美国境内、领土不相容、国内或国际化国内冲突为主要口径，辅以2021年1月6日国会事件作为非分离式政治暴力反证。",
+      "reason": "原文判断南北战争式（领土分离型）全国性武装冲突难以再生。按UCDP/PRIO口径过滤美国境内、领土不相容的国内/国际化国内冲突命中0行，1991年至截止日前未观察到此类冲突；2021年国会事件属非分离式政治暴力，不构成该主要判断的反例。",
+      "limitation": "该判断为“难以再生”而非“永不发生”，观察窗口内无此类冲突支持主要方向，但不能据此断言未来永远成立；经济一体化是否为原因未被检验，仅评价结果。UCDP数据版本日期跨截止年，需注意其覆盖期。",
+      "evidence_ids": [
+        "prior-393df04d3fb3a1278330",
+        "prior-8f2c0086f1316039aae9",
+        "prior-5c26846489b9b68026f6",
+        "prior-13d4eee8172a1e2b58c2",
+        "ev-354544865d42c53a9f90cf88"
+      ],
+      "method": "经济一体化减少分裂动机与政治协调负担",
+      "method_basis": "inferred",
+      "observation_end": "2026-11-09",
+      "future_time_text": "",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-393df04d3fb3a1278330",
+          "relation": "support",
+          "quote": "从完整2816行中过滤：gwno_loc精确为{2}、type3/4、incompatibility1/3，命中0行；美国单独location的18行均为政府与基地组织冲突。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "过滤口径为美国境内领土不相容冲突，命中0行支持无南北战争式冲突；但该来源未给明确发表日期，且仅覆盖UCDP收录范围。"
+        },
+        {
+          "evidence_id": "prior-8f2c0086f1316039aae9",
+          "relation": "boundary",
+          "quote": "Codebook：type3为国内、type4为国际化国内冲突；incompatibility1为领土、2为政府、3为两者；intensity2为当年战斗相关死亡至少1000。",
+          "publication_date": "2026",
+          "observation_end": null,
+          "limitation": "提供操作化定义，说明过滤口径；本身不直接证明美国无冲突，仅界定指标。"
+        },
+        {
+          "evidence_id": "prior-5c26846489b9b68026f6",
+          "relation": "boundary",
+          "quote": "UCDP/PRIO ACD26.1共2816条冲突年度记录；美国涉及22条，含基地组织、阿富汗/伊拉克及也门相关冲突，不能笼统说美国没有战争。",
+          "publication_date": "2026",
+          "observation_end": null,
+          "limitation": "美国相关记录多为境外/反恐冲突，非领土分离式国内冲突；不能据此说美国无任何战争，但支持无南北战争式冲突。"
+        },
+        {
+          "evidence_id": "prior-13d4eee8172a1e2b58c2",
+          "relation": "boundary",
+          "quote": "众议院调查委员会报告记录特朗普拒绝承认2020合法选举结果，并企图阻止权力交接；国会大厦遇袭。",
+          "publication_date": "2022-12-22",
+          "observation_end": "2022-12-22",
+          "limitation": "属非分离式政治暴力，不构成南北战争式冲突反例；但显示政治暴力存在，需在limitation中保留。"
+        },
+        {
+          "evidence_id": "ev-354544865d42c53a9f90cf88",
+          "relation": "support",
+          "quote": "The risks of an actual U.S. civil war in 2025 are negligible, and rhetoric to the contrary is counterproductive and inflammatory when analyzed in relation to studies of political violence.",
+          "publication_date": "2025-09-16",
+          "observation_end": "2025-09-16",
+          "limitation": "为分析文章而非冲突数据，且verified=false；其判断与UCDP口径一致，但仅作辅助支持。"
+        }
+      ],
+      "remaining_gap": "UCDP数据版本日期跨截止年，需确认其实际覆盖至截止日前；经济一体化因果机制未检验，不影响结果判断。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象为美国国内政治统一：观察1991年至截止日前，是否出现类似南北战争的国内领土分离式大规模武装冲突；以UCDP/PRIO冲突年度数据中美国境内、领土不相容、国内或国际化国内冲突为主要口径，辅以2021年1月6日国会事件作为非分离式政治暴力反证。反证包括任何美国境内造成大量死亡的领土分离武装冲突或州际武装对抗。该口径不检验经济一体化是否为原因，也不把“难以再生”加强为永不发生。",
+  "elapsed_seconds": 19.557,
+  "completed_at": "2026-11-09T10:34:13.324813+00:00"
+}

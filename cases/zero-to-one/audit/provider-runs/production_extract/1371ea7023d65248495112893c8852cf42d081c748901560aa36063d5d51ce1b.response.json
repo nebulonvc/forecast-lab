@@ -1,0 +1,28 @@
+{
+  "id": "f909adcf-0e9d-4c13-a7e9-f0bbfee41321",
+  "object": "chat.completion",
+  "created": 1794201132,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-00022\",\"predictions\":[{\"quote\":\"未来几十年，最具价值的产业还是由创业家建立，他们发展计算机是增强人类的能力，而不是淘汰人类。\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"未来几十年，最具价值的产业将由创业家建立，他们发展计算机是增强人类能力而非淘汰人类。\",\"expanded_claim\":\"未来几十年，最具价值的产业还是由创业家建立，这些创业家发展计算机是为了增强人类的能力，而不是淘汰人类。\",\"reference_resolutions\":[{\"expression\":\"他们\",\"referent\":\"创业家\",\"support_quote\":\"最具价值的产业还是由创业家建立\"}],\"unresolved_references\":[],\"time_text\":\"未来几十年\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"对说话时未来产业格局的明确预测。\"},{\"quote\":\"计算机是工具，不是竞争对手\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"计算机是工具，不是竞争对手。\",\"expanded_claim\":\"计算机是工具，不是竞争对手。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"对计算机角色的一般性判断，含未来竞争关系判断，但更接近论断，标为unclear更稳妥。\",\"kind\":\"unclear\"},{\"quote\":\"科技是在这个全球化的世界中逃避竞争的唯一方式\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"科技是在全球化世界中逃避竞争的唯一方式。\",\"expanded_claim\":\"科技是在这个全球化的世界中逃避竞争的唯一方式。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"对科技作用的判断，含未来性主张，但非具体事件预测，标为unclear。\"},{\"quote\":\"虽然计算机越来越强大，但它们不能取代人类：它们只起补充作用\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"计算机越来越强大，但不能取代人类，只起补充作用。\",\"expanded_claim\":\"虽然计算机越来越强大，但它们不能取代人类，它们只起补充作用。\",\"reference_resolutions\":[{\"expression\":\"它们\",\"referent\":\"计算机\",\"support_quote\":\"虽然计算机越来越强大\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"对计算机未来角色的判断，含未来趋势预测。\"},{\"quote\":\"未来最有价值的公司肯定不是靠计算机单独解决问题，而是关注计算机如何才能帮助人类解决难题\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"未来最有价值的公司不是靠计算机单独解决问题，而是关注计算机如何帮助人类解决难题。\",\"expanded_claim\":\"未来最有价值的公司肯定不是靠计算机单独解决问题，而是关注计算机如何才能帮助人类解决难题。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"未来\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"对未来公司价值来源的明确预测。\"},{\"quote\":\"被计算机取代是22世纪人类该担忧的问题\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"被计算机取代是22世纪人类该担忧的问题。\",\"expanded_claim\":\"被计算机取代是22世纪人类该担忧的问题。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"22世纪\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"对计算机取代人类时间点的预测。\"},{\"quote\":\"未来几十年，理智的人可以建设美好的世界\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"未来几十年，理智的人可以建设美好的世界。\",\"expanded_claim\":\"未来几十年，理智的人可以建设美好的世界。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"未来几十年\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"对未来可能性的预测。\"},{\"quote\":\"我们在计算机使用上的创新，不仅能够帮助人类做好已有工作，还能帮助人类做到之前不可想象的事情\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"计算机使用上的创新能帮助人类做好已有工作，并做到之前不可想象的事情。\",\"expanded_claim\":\"我们在计算机使用上的创新，不仅能够帮助人类做好已有工作，还能帮助人类做到之前不可想象的事情。\",\"reference_resolutions\":[{\"expression\":\"我们\",\"referent\":\"人类/创新者\",\"support_quote\":\"我们在计算机使用上的创新\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"对计算机创新未来效果的预测。\"}]}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3248,
+    "completion_tokens": 1013,
+    "total_tokens": 4261,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 2992
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

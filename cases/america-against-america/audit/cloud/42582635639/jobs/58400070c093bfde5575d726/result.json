@@ -1,0 +1,710 @@
+{
+  "claim_id": "txt-1c4066fc0c-000071998-000072035",
+  "version": "search-verifier-v1",
+  "input_sha256": "77c3aa4eaa6c6d187277f0aed9445a8068744b905042dfe98ca2b9e0266f1520",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000071998-000072035",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "以美国为对象，观察1991年著作出版后至2026-11-09前可得的证据：性取向平等与传统婚姻/表达自由之间的正式法律冲突（303 Creative案）、非自愿亲密影像（含数字伪造）治理立法与执法（TAKE IT DOWN Act及FTC执行）、以及青少年性行为与生育率趋势。原文后果“新问题更明显”操作化为：性规范转换持续产生新的正式治理议题（法律冲突、新型性内容治理立法与执法）。",
+    "reason": "自动复核未确认主要判断：原文对象是“性解放”所提出的新旧性规范/道德秩序转换中的社会管理新问题，尤其指维持旧秩序与建立新秩序之间的两难；303 Creative案是性取向反歧视法与表达自由/宗教表达之间的宪法冲突，TAKE IT DOWN Act是非自愿亲密影像的刑事与平台治理立法。二者虽与性规范相关，但建议未证明它们属于原文所说的“性解放提出的新问题”这一特定集合，属于用广义相关现象替代原文特定对象。; 建议把“性规范转换持续产生新的正式治理议题”作为后果B的操作化，但所引303 Creative案与TAKE IT DOWN Act分别只证明存在一个宪法冲突判例和一项新型内容治理立法，不能支持“持续产生”或“更明显”的方向性判断；FTC执行材料的发布日期未知，observation_end为null，也不能作为cutoff前已观察到的持续趋势证据。; 建议一方面承认原文“新问题更明显”无可量化指标、303 Creative案对象对应需说明、青少年性行为下降口径多义，另一方面仍判“部分符合”并设trend_aligned=true。但“部分符合”要求指出后果B哪些具体部分实现、哪些未实现及其直接证据；建议只罗列两个不同性质的制度事件，未给出B的分解与未实现部分，也未证明方向持续，属于分类与趋势标记矛盾。",
+    "limitation": "原文“新问题更明显”未给出可量化指标，本评估以正式法律冲突与新型性内容治理立法作为操作化口径，属合理但非作者原意；303 Creative案争点为表达自由与反歧视法冲突，与“性解放新旧性规范治理”的对象对应需说明；青少年性行为下降也可解读为性解放深化而非问题缓解，口径存在多义性。关键修订：不再把青少年性行为与生育率下降当作反驳“新问题更明显”的反证，仅作缓解/限制；并说明303 Creative案的对象对应关系。",
+    "evidence_ids": [
+      "prior-5457d1a30dffb612cd61",
+      "prior-ccf647242d4f2ac6e7aa",
+      "prior-da4b3e186785c01538df",
+      "prior-46ade59345439e262197",
+      "prior-dd097b99677ebc433d3c",
+      "ev-aa095718b7ddb2bdc73c1580",
+      "ev-99586ad47291bbe2cdfb8041"
+    ],
+    "method": "从新旧道德秩序转换的两难外推治理矛盾显化",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "未来",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-5457d1a30dffb612cd61",
+        "relation": "support",
+        "quote": "303 Creative案体现性取向平等与传统婚姻信仰/表达自由的正式治理冲突。最高法院裁定不得强迫网站设计者创作其反对的信息；多数与少数意见分歧明显。",
+        "publication_date": "2023-06-30",
+        "observation_end": "2023-06-30",
+        "limitation": "该案争点为表达自由与反歧视法冲突，与“性解放新旧性规范治理”的对象对应需说明；单一判例仅证明正式法律冲突存在，不能直接证明冲突总量或严重度上升。"
+      },
+      {
+        "evidence_id": "prior-ccf647242d4f2ac6e7aa",
+        "relation": "support",
+        "quote": "Public Law119-12已于2025年5月19日批准，建立对非自愿亲密图像披露（含数字伪造）的刑事限制和平台通知移除制度。",
+        "publication_date": "2025-05-19",
+        "observation_end": "2025-05-19",
+        "limitation": "立法存在说明新型性内容治理议题出现，但不等于伤害总量增加或治理失败。"
+      },
+      {
+        "evidence_id": "prior-da4b3e186785c01538df",
+        "relation": "support",
+        "quote": "FTC表示开始执行TAKE IT DOWN Act并开设接受受害者关于平台未处理移除要求的投诉的网站。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "发布日期未知，无法确认是否在cutoff前；执行启动属制度动作，非问题严重度指标。"
+      },
+      {
+        "evidence_id": "prior-46ade59345439e262197",
+        "relation": "boundary",
+        "quote": "美国联邦跨部门儿童统计报告引用CDC：高中生曾有性行为占比1991为54%、2001为46%、2013为47%、2019为38%、2023为32%。",
+        "publication_date": null,
+        "observation_end": "2023-12-31",
+        "limitation": "仅覆盖高中生自报性行为，不能代表全部人群或“社会问题”整体；下降也可解读为性解放深化，故仅作缓解/限制而非反驳“新问题更明显”的反证。"
+      },
+      {
+        "evidence_id": "prior-dd097b99677ebc433d3c",
+        "relation": "boundary",
+        "quote": "CDC的2022临时出生统计：青年生育率较2021下降3%创新低；1991年以来除2006和2007外每年下降。",
+        "publication_date": "2023-06-01",
+        "observation_end": "2022-12-31",
+        "limitation": "青年生育率受避孕、教育等多因素影响，不能单独作为性解放治理后果的指标；仅作缓解/限制。"
+      },
+      {
+        "evidence_id": "ev-aa095718b7ddb2bdc73c1580",
+        "relation": "boundary",
+        "quote": "| Total | 54.1 | 53.0 | 53.1 | 48.4 | 49.9 | 45.6 | 46.7 | 46.8 | 47.8 | 46.0 | 47.4 | 46.8 | 41.2 | 39.5 | 38.4 | 30.0 | 31.6 |",
+        "publication_date": null,
+        "observation_end": "2023-12-31",
+        "limitation": "表格数据为高中生自报，来源未标注发布日期，且仅覆盖至2023年；仅作缓解/限制。"
+      },
+      {
+        "evidence_id": "ev-99586ad47291bbe2cdfb8041",
+        "relation": "boundary",
+        "quote": "According to the Centers for Disease Control and Prevention’s (CDC) Youth Risk Behavior Survey (YRBS) from 2023, 32 percent of high schoolers said they’ve ever had sexual intercourse. That’s a noticeable drop from 54 percent in 1991 and 47 percent in 2013",
+        "publication_date": "2025-06-12",
+        "observation_end": "2023-12-31",
+        "limitation": "二手评论文章，数据源自CDC；仅反映青少年自报性行为，不覆盖成年人或治理冲突维度；仅作缓解/限制。"
+      }
+    ],
+    "remaining_gap": "需补充能直接对应原文“性解放提出的新旧性规范治理新问题”的连续或可分解证据（如相关诉讼、立法、行政投诉的时间序列），并明确后果B中哪些具体部分已实现、哪些未实现；若无法建立303 Creative案与TAKE IT DOWN Act同原文特定对象的成员对应，应改为具体未定而非部分符合。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000071998-000072035",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以美国为对象，观察1991年著作出版后至2026-11-09前可得的证据：性取向平等与传统婚姻/表达自由之间的正式法律冲突（303 Creative案）、非自愿亲密影像（含数字伪造）治理立法与执法（TAKE IT DOWN Act及FTC执行）、以及青少年性行为与生育率趋势。",
+    "reason": "303 Creative案与TAKE IT DOWN Act及FTC执行显示，性规范转换确实持续产生新的正式治理议题，沿“新问题更明显”的方向发展；但青少年性行为比例与青年生育率长期下降，与“社会问题加剧”这一口径相反，故仅部分符合。",
+    "limitation": "原文“新问题更明显”未给出可量化指标，本评估以正式法律冲突与新型性内容治理立法作为操作化口径，属合理但非作者原意；青少年性行为下降也可解读为性解放深化而非问题缓解，口径存在多义性。",
+    "evidence_ids": [
+      "prior-5457d1a30dffb612cd61",
+      "prior-ccf647242d4f2ac6e7aa",
+      "prior-da4b3e186785c01538df",
+      "prior-46ade59345439e262197",
+      "prior-dd097b99677ebc433d3c",
+      "ev-aa095718b7ddb2bdc73c1580",
+      "ev-99586ad47291bbe2cdfb8041"
+    ],
+    "method": "从新旧道德秩序转换的两难外推治理矛盾显化",
+    "method_basis": "inferred",
+    "observation_end": "2026-11-09",
+    "future_time_text": "未来",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-5457d1a30dffb612cd61",
+        "relation": "support",
+        "quote": "303 Creative案体现性取向平等与传统婚姻信仰/表达自由的正式治理冲突。最高法院裁定不得强迫网站设计者创作其反对的信息；多数与少数意见分歧明显。",
+        "publication_date": "2023-06-30",
+        "observation_end": "2023-06-30",
+        "limitation": "单一判例仅证明正式法律冲突存在，不能直接证明冲突总量或严重度上升。"
+      },
+      {
+        "evidence_id": "prior-ccf647242d4f2ac6e7aa",
+        "relation": "support",
+        "quote": "Public Law119-12已于2025年5月19日批准，建立对非自愿亲密图像披露（含数字伪造）的刑事限制和平台通知移除制度。",
+        "publication_date": "2025-05-19",
+        "observation_end": "2025-05-19",
+        "limitation": "立法存在说明新型性内容治理议题出现，但不等于伤害总量增加或治理失败。"
+      },
+      {
+        "evidence_id": "prior-da4b3e186785c01538df",
+        "relation": "support",
+        "quote": "FTC表示开始执行TAKE IT DOWN Act并开设接受受害者关于平台未处理移除要求的投诉的网站。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "发布日期未知，无法确认是否在cutoff前；执行启动属制度动作，非问题严重度指标。"
+      },
+      {
+        "evidence_id": "prior-46ade59345439e262197",
+        "relation": "counter",
+        "quote": "美国联邦跨部门儿童统计报告引用CDC：高中生曾有性行为占比1991为54%、2001为46%、2013为47%、2019为38%、2023为32%。",
+        "publication_date": null,
+        "observation_end": "2023-12-31",
+        "limitation": "仅覆盖高中生自报性行为，不能代表全部人群或“社会问题”整体；下降也可解读为性解放深化。"
+      },
+      {
+        "evidence_id": "prior-dd097b99677ebc433d3c",
+        "relation": "counter",
+        "quote": "CDC的2022临时出生统计：青年生育率较2021下降3%创新低；1991年以来除2006和2007外每年下降。",
+        "publication_date": "2023-06-01",
+        "observation_end": "2022-12-31",
+        "limitation": "青年生育率受避孕、教育等多因素影响，不能单独作为性解放治理后果的指标。"
+      },
+      {
+        "evidence_id": "ev-aa095718b7ddb2bdc73c1580",
+        "relation": "counter",
+        "quote": "| Total | 54.1 | 53.0 | 53.1 | 48.4 | 49.9 | 45.6 | 46.7 | 46.8 | 47.8 | 46.0 | 47.4 | 46.8 | 41.2 | 39.5 | 38.4 | 30.0 | 31.6 |",
+        "publication_date": null,
+        "observation_end": "2023-12-31",
+        "limitation": "表格数据为高中生自报，来源未标注发布日期，且仅覆盖至2023年。"
+      },
+      {
+        "evidence_id": "ev-99586ad47291bbe2cdfb8041",
+        "relation": "counter",
+        "quote": "According to the Centers for Disease Control and Prevention’s (CDC) Youth Risk Behavior Survey (YRBS) from 2023, 32 percent of high schoolers said they’ve ever had sexual intercourse. That’s a noticeable drop from 54 percent in 1991 and 47 percent in 2013",
+        "publication_date": "2025-06-12",
+        "observation_end": "2023-12-31",
+        "limitation": "二手评论文章，数据源自CDC；仅反映青少年自报性行为，不覆盖成年人或治理冲突维度。"
+      }
+    ],
+    "remaining_gap": "缺少能直接量化“新旧性规范治理矛盾更明显”的连续指标（如相关诉讼、立法、行政投诉数量时间序列），且青少年性行为与生育率下降与“问题加剧”口径相反，需在口径上进一步区分。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-5457d1a30dffb612cd61",
+      "url": "https://www.supremecourt.gov/opinions/22pdf/21-476_c185.pdf",
+      "title": "ev-r2-l1-303creative",
+      "published_date": "2023-06-30",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-303creative",
+      "archive_sha256": "eb177a0fbe75459e489530e9bc75b5aad8e1e45ffb515a3b06ff0573fb3a9676",
+      "archive_path": "data/sources/r2-l1-303creative.pdf",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-ccf647242d4f2ac6e7aa",
+      "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ12/pdf/PLAW-119publ12.pdf",
+      "title": "ev-r2-l1-tida-law",
+      "published_date": "2025-05-19",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-tida-law",
+      "archive_sha256": "53a58ea5b5cfbca4a0ee0c10d642dd30fdd38a56fe64cf17a4a0baf7230f8fda",
+      "archive_path": "data/sources/r2-l1-tida-law.pdf",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-da4b3e186785c01538df",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-begins-enforcing-take-it-down-act",
+      "title": "ev-r2-l1-tida-enforcement",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-tida-enforcement",
+      "archive_sha256": "fe4c44f88d5b5298fbe0ffa03c32620f8431b410de8a8c63c1bf070d3eaa3ef2",
+      "archive_path": "data/sources/r2-l1-search-9.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-46ade59345439e262197",
+      "url": "https://www.childstats.gov/americaschildren/beh4.asp",
+      "title": "ev-r2-l1-sexual-behaviour",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-sexual-behaviour",
+      "archive_sha256": "febf3c9846d947af05ca52901e0742f7d0d37c301b6a317f18be536b5f814dff",
+      "archive_path": "data/sources/r2-l1-yrbs.html",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-dd097b99677ebc433d3c",
+      "url": "https://www.cdc.gov/nchs/pressroom/releases/20230601.html",
+      "title": "ev-lane1-teen-births",
+      "published_date": "2023-06-01",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane1-teen-births",
+      "archive_sha256": "75de485cf3098b44f581fededa22bca1c251a1ad737b1730119796b919bcd345",
+      "archive_path": "data/sources/lane1-web-extracted.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-aa095718b7ddb2bdc73c1580",
+      "url": "https://www.childstats.gov/americaschildren/tables/beh4a.asp",
+      "resolved_url": "https://www.childstats.gov/americaschildren/tables/beh4a.asp",
+      "title": "BEH4.A Sexual activity: Percentage of high school students who reported ever having had sexual intercourse by sex, race and Hispanic origin, and grade, selected years 1991–2023",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:17.280024+00:00",
+      "archive_sha256": "9ff6c7060c0ef094fc5d8567adba568c623cf3cc3e2acdae2698dfb1790060df",
+      "archive_path": "jobs/58400070c093bfde5575d726/9ff6c7060c0ef094fc5d8567adba568c623cf3cc3e2acdae2698dfb1790060df.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-bdd51590d4cd1ac7cf1bdaea",
+      "url": "https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf",
+      "resolved_url": "https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf",
+      "title": "Youth Risk Behavior Survey Data Summary & Trends Report: 2013-2023",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:17.280276+00:00",
+      "archive_sha256": "86c1f6febca5c3e72bb6c935f12654ebe65f7dc0b3a7d77266f685a422f647c5",
+      "archive_path": "jobs/58400070c093bfde5575d726/86c1f6febca5c3e72bb6c935f12654ebe65f7dc0b3a7d77266f685a422f647c5.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-99586ad47291bbe2cdfb8041",
+      "url": "https://www.childtrends.org/publications/fewer-high-schoolers-say",
+      "resolved_url": "https://www.childtrends.org/publications/fewer-high-schoolers-say",
+      "title": "Fewer High Schoolers Say They’ve Had Sex | Child Trends",
+      "published_date": "2025-06-12",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:17.280455+00:00",
+      "archive_sha256": "2dfb487d48331be52edd96571c3fff6c27e70774d1c993110284747ba067d5f4",
+      "archive_path": "jobs/58400070c093bfde5575d726/2dfb487d48331be52edd96571c3fff6c27e70774d1c993110284747ba067d5f4.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d70007bc320872c6fe9014f9",
+      "url": "https://www.childstats.gov/americaschildren23/beh4.asp",
+      "resolved_url": "https://www.childstats.gov/americaschildren23/beh4.asp",
+      "title": "Childstats.gov - America's Children: Key National Indicators of Well-Being, 2023 - Sexual Activity",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:22.941297+00:00",
+      "archive_sha256": "cadceb0eb51a816280f3f42a6adf1a28e08d194e46c992f7c2929e0b86d218b2",
+      "archive_path": "jobs/58400070c093bfde5575d726/cadceb0eb51a816280f3f42a6adf1a28e08d194e46c992f7c2929e0b86d218b2.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "site:supremecourt.gov 303 Creative 21-476 opinion sexual orientation public accommodations conflict",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "CDC youth risk behavior survey sexual activity high school students 1991 2023 trend",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "site:supremecourt.gov 303 Creative 21-476 opinion sexual orientation public accommodations conflict",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "CDC youth risk behavior survey sexual activity high school students 1991 2023 trend",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-aa095718b7ddb2bdc73c1580",
+        "prior-46ade59345439e262197",
+        "prior-da4b3e186785c01538df"
+      ]
+    }
+  ],
+  "remaining_gap": "需补充能直接对应原文“性解放提出的新旧性规范治理新问题”的连续或可分解证据（如相关诉讼、立法、行政投诉的时间序列），并明确后果B中哪些具体部分已实现、哪些未实现；若无法建立303 Creative案与TAKE IT DOWN Act同原文特定对象的成员对应，应改为具体未定而非部分符合。",
+  "source_statuses": [
+    {
+      "url": "https://www.childstats.gov/americaschildren/tables/beh4a.asp",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.childtrends.org/publications/fewer-high-schoolers-say",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.childstats.gov/americaschildren23/beh4.asp",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "核查王沪宁1991年著作中“性解放”判断：性解放已引发维持旧性规范与建立新性规范之间的社会管理新问题，且这些问题未来会更明显。可观察口径包括：美国在性取向/性别平等与传统婚姻、宗教表达自由之间是否出现正式法律冲突及制度化协调；非自愿亲密影像（含数字伪造）等新型性内容治理是否出现并持续；以及性行为、青少年生育等指标是否显示相关社会问题加剧。反证包括：相关争议已被制度化处理而非持续恶化；青少年性行为与生育率长期下降；新增权利或新法执行不等于伤害总量增加或治理失败。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "c1c142c890bd9151f6a60e3054aa861faeb0e225d7deea9d07251a5d7ef89f56"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "980175ff3c48c766d8a9b2f95a39177d",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e589c511949b7f09ea003f3612c9a0d8",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "93b942a52aefdc91684f7a7c20e4ad718c4543b4387f27b45e822b6a56772401"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "124c943ee8ffb1b6f0beb61450a45091",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "617e261acc091b4543f55da21cb3dd7c54f666bc62e89eba1bae7ceb2db4b4bc"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "980175ff3c48c766d8a9b2f95a39177d",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e589c511949b7f09ea003f3612c9a0d8",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "506d2837cd0682245fa06521bdd59f49887605f31e65f4e78746a6097019d5ea"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "4994950a1423bd40d2291b1fd1f3182f",
+      "cost_estimate_USD": 0.001,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "a36c2b697094175171bcaf71c955e5e32d43bbc56779e0cc95198b7e887ef43c"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "444fd6c4ce03ba5ca435ec940e83a44dc9581752005083d539d90642dd22399b"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "5564ff01b6043b583a79ab63edc4dd62b34ec315ee94604791db13f0750c4e3f"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "5fac152f9d00fb08bda2e98d745cae8d5b28864ed57a4d465f5eb3d5714fed99"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000071998-000072035",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "fail",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "evidence_support",
+          "reason": "303 Creative案被列为“性取向平等与传统婚姻/表达自由之间的正式法律冲突”的支持证据，但该案争点是公共accommodation法是否可强制网站设计者创作其反对的表达，属于表达自由与反歧视法的冲突，并非原文所说的“性解放”所提出的新旧性规范治理问题；该证据与声明范围的主要结果之间缺少对象对应，不能直接支撑“性解放的新问题更明显”。",
+          "source_quote": "303 Creative案体现性取向平等与传统婚姻信仰/表达自由的正式治理冲突。最高法院裁定不得强迫网站设计者创作其反对的信息；多数与少数意见分歧明显。",
+          "evidence_id": "prior-5457d1a30dffb612cd61",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "counterevidence",
+          "reason": "青少年性行为比例与青年生育率下降被直接当作“与‘社会问题加剧’口径相反”的反证，但原文的后果是“性解放所提出的新问题未来会更明显”，并未把“青少年性行为比例上升”或“生育率上升”设为后果指标；这些指标下降至多说明部分传统风险缓解，不能直接反驳“新旧性规范治理矛盾更明显”这一后果，属于把不同指标机械冲抵。",
+          "source_quote": "美国联邦跨部门儿童统计报告引用CDC：高中生曾有性行为占比1991为54%、2001为46%、2013为47%、2019为38%、2023为32%。",
+          "evidence_id": "prior-46ade59345439e262197",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议一方面认定“性规范转换确实持续产生新的正式治理议题，沿‘新问题更明显’的方向发展”，另一方面又因青少年性行为与生育率下降而判“部分符合”。但原文后果是“新问题更明显”，青少年性行为/生育率并非该后果的分项；若以正式法律冲突与新型性内容治理立法作为后果B的实现证据，则下降指标只能作为缓解或限制，不能仅凭它把结论降为部分符合。判部分符合必须指出后果B哪些具体部分实现、哪些未实现，而建议未做到。",
+          "source_quote": "303 Creative案与TAKE IT DOWN Act及FTC执行显示，性规范转换确实持续产生新的正式治理议题，沿“新问题更明显”的方向发展；但青少年性行为比例与青年生育率长期下降，与“社会问题加剧”这一口径相反，故仅部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正：将303 Creative案与“性解放新旧性规范治理”的对象对应关系说明清楚或替换为直接对应证据；不得把青少年性行为比例和生育率下降直接当作反驳“新问题更明显”的反证，应仅作为缓解/限制；若维持“部分符合”，须具体指出后果B（新问题更明显）哪些部分实现、哪些未实现及直接证据，否则应改为趋势符合或保留具体未定。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000071998-000072035",
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "原文对象是“性解放”所提出的新旧性规范/道德秩序转换中的社会管理新问题，尤其指维持旧秩序与建立新秩序之间的两难；303 Creative案是性取向反歧视法与表达自由/宗教表达之间的宪法冲突，TAKE IT DOWN Act是非自愿亲密影像的刑事与平台治理立法。二者虽与性规范相关，但建议未证明它们属于原文所说的“性解放提出的新问题”这一特定集合，属于用广义相关现象替代原文特定对象。",
+          "source_quote": "“性解放”是最典型的样本，它所提出的新问题，现在已出现了，未来还会更明显。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议把“性规范转换持续产生新的正式治理议题”作为后果B的操作化，但所引303 Creative案与TAKE IT DOWN Act分别只证明存在一个宪法冲突判例和一项新型内容治理立法，不能支持“持续产生”或“更明显”的方向性判断；FTC执行材料的发布日期未知，observation_end为null，也不能作为cutoff前已观察到的持续趋势证据。",
+          "source_quote": "FTC表示开始执行TAKE IT DOWN Act并开设接受受害者关于平台未处理移除要求的投诉的网站。",
+          "evidence_id": "prior-da4b3e186785c01538df",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议一方面承认原文“新问题更明显”无可量化指标、303 Creative案对象对应需说明、青少年性行为下降口径多义，另一方面仍判“部分符合”并设trend_aligned=true。但“部分符合”要求指出后果B哪些具体部分实现、哪些未实现及其直接证据；建议只罗列两个不同性质的制度事件，未给出B的分解与未实现部分，也未证明方向持续，属于分类与趋势标记矛盾。",
+          "source_quote": "原文后果“新问题更明显”操作化为：性规范转换持续产生新的正式治理议题（法律冲突、新型性内容治理立法与执法）。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充能直接对应原文“性解放提出的新旧性规范治理新问题”的连续或可分解证据（如相关诉讼、立法、行政投诉的时间序列），并明确后果B中哪些具体部分已实现、哪些未实现；若无法建立303 Creative案与TAKE IT DOWN Act同原文特定对象的成员对应，应改为具体未定而非部分符合。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000071998-000072035",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以美国为对象，观察1991年著作出版后至2026-11-09前可得的证据：性取向平等与传统婚姻/表达自由之间的正式法律冲突（303 Creative案）、非自愿亲密影像（含数字伪造）治理立法与执法（TAKE IT DOWN Act及FTC执行）、以及青少年性行为与生育率趋势。",
+      "reason": "303 Creative案与TAKE IT DOWN Act及FTC执行显示，性规范转换确实持续产生新的正式治理议题，沿“新问题更明显”的方向发展；但青少年性行为比例与青年生育率长期下降，与“社会问题加剧”这一口径相反，故仅部分符合。",
+      "limitation": "原文“新问题更明显”未给出可量化指标，本评估以正式法律冲突与新型性内容治理立法作为操作化口径，属合理但非作者原意；青少年性行为下降也可解读为性解放深化而非问题缓解，口径存在多义性。",
+      "evidence_ids": [
+        "prior-5457d1a30dffb612cd61",
+        "prior-ccf647242d4f2ac6e7aa",
+        "prior-da4b3e186785c01538df",
+        "prior-46ade59345439e262197",
+        "prior-dd097b99677ebc433d3c",
+        "ev-aa095718b7ddb2bdc73c1580",
+        "ev-99586ad47291bbe2cdfb8041"
+      ],
+      "method": "从新旧道德秩序转换的两难外推治理矛盾显化",
+      "method_basis": "inferred",
+      "observation_end": "2026-11-09",
+      "future_time_text": "未来",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-5457d1a30dffb612cd61",
+          "relation": "support",
+          "quote": "303 Creative案体现性取向平等与传统婚姻信仰/表达自由的正式治理冲突。最高法院裁定不得强迫网站设计者创作其反对的信息；多数与少数意见分歧明显。",
+          "publication_date": "2023-06-30",
+          "observation_end": "2023-06-30",
+          "limitation": "单一判例仅证明正式法律冲突存在，不能直接证明冲突总量或严重度上升。"
+        },
+        {
+          "evidence_id": "prior-ccf647242d4f2ac6e7aa",
+          "relation": "support",
+          "quote": "Public Law119-12已于2025年5月19日批准，建立对非自愿亲密图像披露（含数字伪造）的刑事限制和平台通知移除制度。",
+          "publication_date": "2025-05-19",
+          "observation_end": "2025-05-19",
+          "limitation": "立法存在说明新型性内容治理议题出现，但不等于伤害总量增加或治理失败。"
+        },
+        {
+          "evidence_id": "prior-da4b3e186785c01538df",
+          "relation": "support",
+          "quote": "FTC表示开始执行TAKE IT DOWN Act并开设接受受害者关于平台未处理移除要求的投诉的网站。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "发布日期未知，无法确认是否在cutoff前；执行启动属制度动作，非问题严重度指标。"
+        },
+        {
+          "evidence_id": "prior-46ade59345439e262197",
+          "relation": "counter",
+          "quote": "美国联邦跨部门儿童统计报告引用CDC：高中生曾有性行为占比1991为54%、2001为46%、2013为47%、2019为38%、2023为32%。",
+          "publication_date": null,
+          "observation_end": "2023-12-31",
+          "limitation": "仅覆盖高中生自报性行为，不能代表全部人群或“社会问题”整体；下降也可解读为性解放深化。"
+        },
+        {
+          "evidence_id": "prior-dd097b99677ebc433d3c",
+          "relation": "counter",
+          "quote": "CDC的2022临时出生统计：青年生育率较2021下降3%创新低；1991年以来除2006和2007外每年下降。",
+          "publication_date": "2023-06-01",
+          "observation_end": "2022-12-31",
+          "limitation": "青年生育率受避孕、教育等多因素影响，不能单独作为性解放治理后果的指标。"
+        },
+        {
+          "evidence_id": "ev-aa095718b7ddb2bdc73c1580",
+          "relation": "counter",
+          "quote": "| Total | 54.1 | 53.0 | 53.1 | 48.4 | 49.9 | 45.6 | 46.7 | 46.8 | 47.8 | 46.0 | 47.4 | 46.8 | 41.2 | 39.5 | 38.4 | 30.0 | 31.6 |",
+          "publication_date": null,
+          "observation_end": "2023-12-31",
+          "limitation": "表格数据为高中生自报，来源未标注发布日期，且仅覆盖至2023年。"
+        },
+        {
+          "evidence_id": "ev-99586ad47291bbe2cdfb8041",
+          "relation": "counter",
+          "quote": "According to the Centers for Disease Control and Prevention’s (CDC) Youth Risk Behavior Survey (YRBS) from 2023, 32 percent of high schoolers said they’ve ever had sexual intercourse. That’s a noticeable drop from 54 percent in 1991 and 47 percent in 2013",
+          "publication_date": "2025-06-12",
+          "observation_end": "2023-12-31",
+          "limitation": "二手评论文章，数据源自CDC；仅反映青少年自报性行为，不覆盖成年人或治理冲突维度。"
+        }
+      ],
+      "remaining_gap": "缺少能直接量化“新旧性规范治理矛盾更明显”的连续指标（如相关诉讼、立法、行政投诉数量时间序列），且青少年性行为与生育率下降与“问题加剧”口径相反，需在口径上进一步区分。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000071998-000072035",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以美国为对象，观察1991年著作出版后至2026-11-09前可得的证据：性取向平等与传统婚姻/表达自由之间的正式法律冲突（303 Creative案）、非自愿亲密影像（含数字伪造）治理立法与执法（TAKE IT DOWN Act及FTC执行）、以及青少年性行为与生育率趋势。原文后果“新问题更明显”操作化为：性规范转换持续产生新的正式治理议题（法律冲突、新型性内容治理立法与执法）。",
+      "reason": "303 Creative案与TAKE IT DOWN Act及FTC执行显示，性规范转换确实持续产生新的正式治理议题，沿“新问题更明显”的方向发展，构成后果B的部分实现；但原文未给出可量化指标，且青少年性行为比例与青年生育率长期下降仅说明部分传统风险缓解，不能直接反驳“新旧性规范治理矛盾更明显”，故仅作为限制而非反证。",
+      "limitation": "原文“新问题更明显”未给出可量化指标，本评估以正式法律冲突与新型性内容治理立法作为操作化口径，属合理但非作者原意；303 Creative案争点为表达自由与反歧视法冲突，与“性解放新旧性规范治理”的对象对应需说明；青少年性行为下降也可解读为性解放深化而非问题缓解，口径存在多义性。关键修订：不再把青少年性行为与生育率下降当作反驳“新问题更明显”的反证，仅作缓解/限制；并说明303 Creative案的对象对应关系。",
+      "evidence_ids": [
+        "prior-5457d1a30dffb612cd61",
+        "prior-ccf647242d4f2ac6e7aa",
+        "prior-da4b3e186785c01538df",
+        "prior-46ade59345439e262197",
+        "prior-dd097b99677ebc433d3c",
+        "ev-aa095718b7ddb2bdc73c1580",
+        "ev-99586ad47291bbe2cdfb8041"
+      ],
+      "method": "从新旧道德秩序转换的两难外推治理矛盾显化",
+      "method_basis": "inferred",
+      "observation_end": "2026-11-09",
+      "future_time_text": "未来",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-5457d1a30dffb612cd61",
+          "relation": "support",
+          "quote": "303 Creative案体现性取向平等与传统婚姻信仰/表达自由的正式治理冲突。最高法院裁定不得强迫网站设计者创作其反对的信息；多数与少数意见分歧明显。",
+          "publication_date": "2023-06-30",
+          "observation_end": "2023-06-30",
+          "limitation": "该案争点为表达自由与反歧视法冲突，与“性解放新旧性规范治理”的对象对应需说明；单一判例仅证明正式法律冲突存在，不能直接证明冲突总量或严重度上升。"
+        },
+        {
+          "evidence_id": "prior-ccf647242d4f2ac6e7aa",
+          "relation": "support",
+          "quote": "Public Law119-12已于2025年5月19日批准，建立对非自愿亲密图像披露（含数字伪造）的刑事限制和平台通知移除制度。",
+          "publication_date": "2025-05-19",
+          "observation_end": "2025-05-19",
+          "limitation": "立法存在说明新型性内容治理议题出现，但不等于伤害总量增加或治理失败。"
+        },
+        {
+          "evidence_id": "prior-da4b3e186785c01538df",
+          "relation": "support",
+          "quote": "FTC表示开始执行TAKE IT DOWN Act并开设接受受害者关于平台未处理移除要求的投诉的网站。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "发布日期未知，无法确认是否在cutoff前；执行启动属制度动作，非问题严重度指标。"
+        },
+        {
+          "evidence_id": "prior-46ade59345439e262197",
+          "relation": "boundary",
+          "quote": "美国联邦跨部门儿童统计报告引用CDC：高中生曾有性行为占比1991为54%、2001为46%、2013为47%、2019为38%、2023为32%。",
+          "publication_date": null,
+          "observation_end": "2023-12-31",
+          "limitation": "仅覆盖高中生自报性行为，不能代表全部人群或“社会问题”整体；下降也可解读为性解放深化，故仅作缓解/限制而非反驳“新问题更明显”的反证。"
+        },
+        {
+          "evidence_id": "prior-dd097b99677ebc433d3c",
+          "relation": "boundary",
+          "quote": "CDC的2022临时出生统计：青年生育率较2021下降3%创新低；1991年以来除2006和2007外每年下降。",
+          "publication_date": "2023-06-01",
+          "observation_end": "2022-12-31",
+          "limitation": "青年生育率受避孕、教育等多因素影响，不能单独作为性解放治理后果的指标；仅作缓解/限制。"
+        },
+        {
+          "evidence_id": "ev-aa095718b7ddb2bdc73c1580",
+          "relation": "boundary",
+          "quote": "| Total | 54.1 | 53.0 | 53.1 | 48.4 | 49.9 | 45.6 | 46.7 | 46.8 | 47.8 | 46.0 | 47.4 | 46.8 | 41.2 | 39.5 | 38.4 | 30.0 | 31.6 |",
+          "publication_date": null,
+          "observation_end": "2023-12-31",
+          "limitation": "表格数据为高中生自报，来源未标注发布日期，且仅覆盖至2023年；仅作缓解/限制。"
+        },
+        {
+          "evidence_id": "ev-99586ad47291bbe2cdfb8041",
+          "relation": "boundary",
+          "quote": "According to the Centers for Disease Control and Prevention’s (CDC) Youth Risk Behavior Survey (YRBS) from 2023, 32 percent of high schoolers said they’ve ever had sexual intercourse. That’s a noticeable drop from 54 percent in 1991 and 47 percent in 2013",
+          "publication_date": "2025-06-12",
+          "observation_end": "2023-12-31",
+          "limitation": "二手评论文章，数据源自CDC；仅反映青少年自报性行为，不覆盖成年人或治理冲突维度；仅作缓解/限制。"
+        }
+      ],
+      "remaining_gap": "缺少能直接量化“新旧性规范治理矛盾更明显”的连续指标（如相关诉讼、立法、行政投诉数量时间序列）；303 Creative案与“性解放新旧性规范治理”的对象对应仍需更直接证据；青少年性行为与生育率下降与“问题加剧”口径的关系需在口径上进一步区分。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "核查王沪宁1991年著作中关于“性解放”的判断：性解放已引发维持旧性规范与建立新性规范之间的社会管理新问题，且这些问题未来会更明显。可观察口径包括：美国在性取向/性别平等与传统婚姻、宗教表达自由之间是否出现正式法律冲突及制度化协调；非自愿亲密影像（含数字伪造）等新型性内容治理是否出现并持续；以及性行为、青少年生育等指标是否显示相关社会问题加剧。反证包括：相关争议已被制度化处理而非持续恶化；青少年性行为与生育率长期下降；新增权利或新法执行不等于伤害总量增加或治理失败。",
+  "elapsed_seconds": 44.035,
+  "completed_at": "2026-11-09T07:59:51.777199+00:00"
+}

@@ -1,0 +1,35 @@
+{
+  "mode": "codex-native",
+  "worker_agents": 3,
+  "source_extraction_ranges": [
+    [
+      0,
+      81834
+    ],
+    [
+      81834,
+      169953
+    ],
+    [
+      169953,
+      253529
+    ]
+  ],
+  "characters": 253529,
+  "candidates": 135,
+  "assessments": 135,
+  "evidence_records": 49,
+  "deepseek_calls": 0,
+  "native_provider_usage": null,
+  "native_provider_cost": null,
+  "independent_human_review": false,
+  "adjudicated_assessments": 3,
+  "extraction_field_edits": 9,
+  "method_commit": "8d529b8105cf9412037ad5cc7d049f46404c4134",
+  "accepted_assessments_sha256": "10a21d1ef340c0e1414bd2a9f8ff0b4b8130374375dbccf271b389915eff9bd9",
+  "limitations": [
+    "Native provider token/cost metrics were not obtained.",
+    "Three workers performed their own extraction and evidence review; cross-review covered interpretation and scored lane-3 proposals, not all claims independently.",
+    "All candidate records processed does not prove exhaustive extraction or factual qualification."
+  ]
+}

@@ -1,0 +1,561 @@
+{
+  "claim_id": "txt-1c4066fc0c-000049448-000049475",
+  "version": "search-verifier-v1",
+  "input_sha256": "1e2d1946be5b33e71d8c8520707123852b228f67433149796a21b393f577c795",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000049448-000049475",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "评估王沪宁“门罗主义难以在美国再现，除非有特定历史条件”的判断。操作化口径：(1) 2025年美国正式战略文件是否明确重申门罗主义或Trump Corollary并据此限制域外势力在西半球存在；(2) 是否伴随实际政策行动（巴拿马运河安全合作、联合训练等）。观察时段为2025年文件与行动，截止2026-11-09。",
+    "reason": "原句为带例外条件的判断，作者明确保留“除非有特定的历史条件”，而该条件在原文中未定义、是否触发无法确认。2025年白宫公告与国家安全战略重申门罗主义/Trump Corollary、西半球优先及有限双边行动，构成对主判断方向的反向证据，但在例外条件未确认时不足以直接判为“错误”。",
+    "limitation": "关键修订：将condition_state由unconditional改为unknown，verdict由“错误”改为“暂无法判断”，因原句例外条件未定义、无法判定是否触发。2025年文件同时保留亚洲、欧洲等全球安排，并非经典门罗主义全盘复归，反向证据有限。",
+    "evidence_ids": [
+      "prior-eb52b32e10dbc0d04be7",
+      "ev-92524adbfbff7771554bdbea",
+      "prior-76e8368f97d5452e0604",
+      "prior-e380672bed0377b4f1da",
+      "ev-940c2a9ba893652638f7bba9"
+    ],
+    "method": "从美国被世界经济及国际交往卷入的结构推断孤立回归困难",
+    "method_basis": "inferred",
+    "observation_end": "2025-12-08",
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-eb52b32e10dbc0d04be7",
+        "relation": "counter",
+        "quote": "美国2025国家安全战略明言重申执行门罗主义及Trump Corollary，要求阻止域外竞争者控制半球关键资产；同文件仍有亚洲、欧洲等全球战略安排。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "日期未知，且为已登记摘录；同文件保留全球安排，说明并非全面孤立。"
+      },
+      {
+        "evidence_id": "ev-92524adbfbff7771554bdbea",
+        "relation": "counter",
+        "quote": "Today, my Administration proudly reaffirms this promise under a new “Trump Corollary” to the Monroe Doctrine",
+        "publication_date": "2025-12-02",
+        "observation_end": "2025-12-02",
+        "limitation": "为总统公告修辞，证明立场与制度宣示，不直接证明政策有效性或所有民众态度。"
+      },
+      {
+        "evidence_id": "prior-76e8368f97d5452e0604",
+        "relation": "support",
+        "quote": "美国国防部报道美巴已签合作安全活动谅解备忘录，并宣布加强运河安全合作以抗衡中国影响。",
+        "publication_date": "2025-04-09",
+        "observation_end": "2025-04-09",
+        "limitation": "单一双边合作，不能代表整个西半球政策落地。"
+      },
+      {
+        "evidence_id": "prior-e380672bed0377b4f1da",
+        "relation": "boundary",
+        "quote": "巴拿马海空部门报告PANAMAX ALPHA第一阶段训练已于2025年7月14日在本国基地开始，由本国安全力量与美南方司令部支持；同时明确该系列自2006年举行。",
+        "publication_date": "2025-07-14",
+        "observation_end": "2025-07-14",
+        "limitation": "该训练系列自2006年即举行，属延续性活动，不能单独作为门罗主义“再现”的新证据。"
+      },
+      {
+        "evidence_id": "ev-940c2a9ba893652638f7bba9",
+        "relation": "boundary",
+        "quote": "the new NSS overwhelmingly focuses on the Western Hemisphere, trade, immigration, and other issues close to home",
+        "publication_date": "2025-12-08",
+        "observation_end": "2025-12-08",
+        "limitation": "评论文章，指出战略重心转向西半球，但同时称在台湾、北约等问题上延续，非全面孤立。"
+      }
+    ],
+    "remaining_gap": "“特定历史条件”未定义，无法判定该例外是否被触发；且缺乏对门罗主义式政策实际执行效果的独立评估，仅有文件与有限行动证据。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000049448-000049475",
+    "inclusion": "forecast",
+    "verdict": "错误",
+    "basis": "observed_window",
+    "scope": "评估王沪宁“门罗主义难以在美国再现，除非有特定历史条件”的判断。操作化口径：(1) 2025年美国正式战略文件是否明确重申门罗主义或Trump Corollary并据此限制域外势力在西半球存在；(2) 是否伴随实际政策行动（巴拿马运河安全合作、联合训练等）。观察时段为2025年文件与行动，截止2026-11-09。",
+    "reason": "2025年12月白宫总统公告明确以“Trump Corollary”重申门罗主义并称其“alive and well”，2025国家安全战略亦重申执行门罗主义、阻止域外竞争者控制半球关键资产；同时美巴运河安全合作与PANAMAX训练提供实际政策行动佐证。这与“门罗主义难以再现”的主要判断方向相反。",
+    "limitation": "原文“特定历史条件”未定义，不能事后补写以免疫反证；且美国战略文件同时保留亚洲、欧洲等全球安排，并非全面孤立主义转向，故“再现”是有限度、半球优先式的，而非经典门罗主义全盘复归。",
+    "evidence_ids": [
+      "prior-eb52b32e10dbc0d04be7",
+      "ev-92524adbfbff7771554bdbea",
+      "prior-76e8368f97d5452e0604",
+      "prior-e380672bed0377b4f1da",
+      "ev-940c2a9ba893652638f7bba9"
+    ],
+    "method": "从美国被世界经济及国际交往卷入的结构推断孤立回归困难",
+    "method_basis": "inferred",
+    "observation_end": "2025-12-08",
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-eb52b32e10dbc0d04be7",
+        "relation": "counter",
+        "quote": "美国2025国家安全战略明言重申执行门罗主义及Trump Corollary，要求阻止域外竞争者控制半球关键资产；同文件仍有亚洲、欧洲等全球战略安排。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "日期未知，且为已登记摘录；同文件保留全球安排，说明并非全面孤立。"
+      },
+      {
+        "evidence_id": "ev-92524adbfbff7771554bdbea",
+        "relation": "counter",
+        "quote": "Today, my Administration proudly reaffirms this promise under a new “Trump Corollary” to the Monroe Doctrine",
+        "publication_date": "2025-12-02",
+        "observation_end": "2025-12-02",
+        "limitation": "为总统公告修辞，证明立场与制度宣示，不直接证明政策有效性或所有民众态度。"
+      },
+      {
+        "evidence_id": "prior-76e8368f97d5452e0604",
+        "relation": "support",
+        "quote": "美国国防部报道美巴已签合作安全活动谅解备忘录，并宣布加强运河安全合作以抗衡中国影响。",
+        "publication_date": "2025-04-09",
+        "observation_end": "2025-04-09",
+        "limitation": "单一双边合作，不能代表整个西半球政策落地。"
+      },
+      {
+        "evidence_id": "prior-e380672bed0377b4f1da",
+        "relation": "boundary",
+        "quote": "巴拿马海空部门报告PANAMAX ALPHA第一阶段训练已于2025年7月14日在本国基地开始，由本国安全力量与美南方司令部支持；同时明确该系列自2006年举行。",
+        "publication_date": "2025-07-14",
+        "observation_end": "2025-07-14",
+        "limitation": "该训练系列自2006年即举行，属延续性活动，不能单独作为门罗主义“再现”的新证据。"
+      },
+      {
+        "evidence_id": "ev-940c2a9ba893652638f7bba9",
+        "relation": "boundary",
+        "quote": "the new NSS overwhelmingly focuses on the Western Hemisphere, trade, immigration, and other issues close to home",
+        "publication_date": "2025-12-08",
+        "observation_end": "2025-12-08",
+        "limitation": "评论文章，指出战略重心转向西半球，但同时称在台湾、北约等问题上延续，非全面孤立。"
+      }
+    ],
+    "remaining_gap": "“特定历史条件”未定义，无法精确判定该例外是否被触发；且缺乏对门罗主义式政策实际执行效果的独立评估，仅有文件与有限行动证据。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-eb52b32e10dbc0d04be7",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-National-Security-Strategy.pdf",
+      "title": "ev-r2-l1-nss2025",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-nss2025",
+      "archive_sha256": "df82a9913ce702b91a4599539d96fcb2378c0231de401d30ea71182bf356f161",
+      "archive_path": "data/sources/r2-l1-nss2025.pdf",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-76e8368f97d5452e0604",
+      "url": "https://www.defense.gov/News/News-Stories/Article/article/4150935/hegseth-says-us-partnering-with-panama-to-secure-canal-deter-china/",
+      "title": "ev-r2-l1-panama-mou",
+      "published_date": "2025-04-09",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-panama-mou",
+      "archive_sha256": "48c1342b0c9e4fefd03126bbf05ba43dbe4c173f98fd03f947f2f4fa06f56051",
+      "archive_path": "data/sources/r2-l1-search-2.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-e380672bed0377b4f1da",
+      "url": "https://www.aeronaval.gob.pa/default.asp?aid=noticias&n=articulos-noticias-2025-20250714.html",
+      "title": "ev-r2-l1-panama-training",
+      "published_date": "2025-07-14",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-panama-training",
+      "archive_sha256": "490b425a9eb2917773c35760d987f0b76bfff1c5703862ebb8001f926d9da35f",
+      "archive_path": "data/sources/r2-l1-open-4.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d0753b092bd522d4222a24a6",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-national-security-strategy.pdf",
+      "resolved_url": "https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-national-security-strategy.pdf",
+      "title": "National Security Strategy",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:57.238982+00:00",
+      "archive_sha256": "7222f9e729f158004489e2844d228e45ecd713baabe60aebecd9919347b8fc95",
+      "archive_path": "jobs/f98881e2f7ee9654ffa64963/7222f9e729f158004489e2844d228e45ecd713baabe60aebecd9919347b8fc95.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-92524adbfbff7771554bdbea",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/12/america-250-presidential-message-on-the-anniversary-of-the-monroe-doctrine/",
+      "resolved_url": "https://www.whitehouse.gov/presidential-actions/2025/12/america-250-presidential-message-on-the-anniversary-of-the-monroe-doctrine/",
+      "title": "America 250: Presidential Message on the Anniversary of the Monroe Doctrine – The White House",
+      "published_date": "2025-12-02",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:57.239229+00:00",
+      "archive_sha256": "ee839a78bf7d7a989c9505b0c7acecad948906d9540db6763dd8d4f2607bff2f",
+      "archive_path": "jobs/f98881e2f7ee9654ffa64963/ee839a78bf7d7a989c9505b0c7acecad948906d9540db6763dd8d4f2607bff2f.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-940c2a9ba893652638f7bba9",
+      "url": "https://www.brookings.edu/articles/breaking-down-trumps-2025-national-security-strategy/",
+      "resolved_url": "https://www.brookings.edu/articles/breaking-down-trumps-2025-national-security-strategy/",
+      "title": "Breaking down Trump’s 2025 National Security Strategy | Brookings",
+      "published_date": "2025-12-08",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:57.239448+00:00",
+      "archive_sha256": "3d5b3d097910c016ee300877d34ed30bfd28727d629e3654a59f3ae2cf7aa039",
+      "archive_path": "jobs/f98881e2f7ee9654ffa64963/3d5b3d097910c016ee300877d34ed30bfd28727d629e3654a59f3ae2cf7aa039.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ddac940c539be3a8faf47ba9",
+      "url": "https://theprint.in/diplomacy/trumps-new-national-security-strategy-china-a-threat-india-a-critical-partner-europe-in-decline/2799460/",
+      "resolved_url": "https://theprint.in/diplomacy/trumps-new-national-security-strategy-china-a-threat-india-a-critical-partner-europe-in-decline/2799460/",
+      "title": "Trump’s new national security strategy: China a threat, India a critical partner, Europe in 'decline'",
+      "published_date": "2025-12-05",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:57.239640+00:00",
+      "archive_sha256": "f0214b940531913221a57cc0904a0556a23bb3eb92a2d00b6017d13d1055999b",
+      "archive_path": "jobs/f98881e2f7ee9654ffa64963/f0214b940531913221a57cc0904a0556a23bb3eb92a2d00b6017d13d1055999b.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "2025 National Security Strategy Monroe Doctrine Trump Corollary Western Hemisphere site:whitehouse.gov",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "2025 National Security Strategy global alliances Europe Asia Indo-Pacific commitments text",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "2025 National Security Strategy Monroe Doctrine Trump Corollary Western Hemisphere site:whitehouse.gov",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "2025 National Security Strategy global alliances Europe Asia Indo-Pacific commitments text",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "“特定历史条件”未定义，无法判定该例外是否被触发；且缺乏对门罗主义式政策实际执行效果的独立评估，仅有文件与有限行动证据。",
+  "source_statuses": [
+    {
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-national-security-strategy.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/12/america-250-presidential-message-on-the-anniversary-of-the-monroe-doctrine/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.brookings.edu/articles/breaking-down-trumps-2025-national-security-strategy/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://theprint.in/diplomacy/trumps-new-national-security-strategy-china-a-threat-india-a-critical-partner-europe-in-decline/2799460/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "46368e4e26d03c147c04a4b2e7a1b9984834952ae437bbd71af9affd42c8370a"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "16fe382676f3ca1a1d89a6fb7bc7ba21",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "193ef47847d29ae21db6c62a569dc219",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "80d648aca134323bd3531d4ac2e9b7c3c08750f12f599310969b3ba271b1622f"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "e178836743c5b1ece758308bd9d26cfa",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "fb7937090b874f66e0939c4e8f600d1d2c344e62c7d9919b5e5469be9656a0be"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "16fe382676f3ca1a1d89a6fb7bc7ba21",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "193ef47847d29ae21db6c62a569dc219",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "1b837f501b202dfb566b84edda6265e6dce286e26fdb62e7958584a66b3a62d0"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "9fcc8f858bae337f30f9d5b1fd872461dac21805d38107e23bcb064b00a91502"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "931826b3b24c5bcad917229f9afea3e4ac8aa3462f172934c9e729c2b9a4c1ca"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "ab8c5f7e2ce37034ab0c235f90e2cada81d335f94253221ebd12658ea2f4e7f3"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "6775a8a990c77ffca376fc735999da40de35d46dfb003b480e7e02fab7e2fd30"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000049448-000049475",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原句是带例外条件的判断：“门罗主义难以再现，除非有特定的历史条件”。建议把condition_state写成unconditional，等于删掉了作者明确保留的触发条件，随后又用“特定历史条件未定义”来限制结论，前后矛盾。应保留条件状态为“特定历史条件未定义/未确认”，并说明在该例外未确认时，2025年重申门罗主义只能作为对主判断的反向证据，不能直接判为“错误”。",
+          "source_quote": "早先盛行的门罗主义已经难以再现，除非有特定的历史条件。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "在“特定历史条件”未定义、例外是否触发未知的情况下，把“门罗主义难以再现”判为“错误”过强。2025年文件重申Trump Corollary、西半球优先及有限双边行动，可以反驳“难以再现”的主方向，但作者原句保留了例外；且建议自己承认并非经典门罗主义全盘复归、仍保留全球安排。按口径应保留为条件未确认下的具体未定或有限反向，而不是直接“错误”。",
+          "source_quote": "原文“特定历史条件”未定义，不能事后补写以免疫反证；且美国战略文件同时保留亚洲、欧洲等全球安排，并非全面孤立主义转向，故“再现”是有限度、半球优先式的，而非经典门罗主义全盘复归。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需把condition_state改为“特定历史条件未定义/未确认”，并据此把verdict从“错误”调整为条件未确认下的具体未定（或说明为何该例外不适用）；同时明确2025年文件与有限行动只构成对主判断的反向证据，不足以在例外未确认时判为错误。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000049448-000049475",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000049448-000049475",
+      "inclusion": "forecast",
+      "verdict": "错误",
+      "basis": "observed_window",
+      "scope": "评估王沪宁“门罗主义难以在美国再现，除非有特定历史条件”的判断。操作化口径：(1) 2025年美国正式战略文件是否明确重申门罗主义或Trump Corollary并据此限制域外势力在西半球存在；(2) 是否伴随实际政策行动（巴拿马运河安全合作、联合训练等）。观察时段为2025年文件与行动，截止2026-11-09。",
+      "reason": "2025年12月白宫总统公告明确以“Trump Corollary”重申门罗主义并称其“alive and well”，2025国家安全战略亦重申执行门罗主义、阻止域外竞争者控制半球关键资产；同时美巴运河安全合作与PANAMAX训练提供实际政策行动佐证。这与“门罗主义难以再现”的主要判断方向相反。",
+      "limitation": "原文“特定历史条件”未定义，不能事后补写以免疫反证；且美国战略文件同时保留亚洲、欧洲等全球安排，并非全面孤立主义转向，故“再现”是有限度、半球优先式的，而非经典门罗主义全盘复归。",
+      "evidence_ids": [
+        "prior-eb52b32e10dbc0d04be7",
+        "ev-92524adbfbff7771554bdbea",
+        "prior-76e8368f97d5452e0604",
+        "prior-e380672bed0377b4f1da",
+        "ev-940c2a9ba893652638f7bba9"
+      ],
+      "method": "从美国被世界经济及国际交往卷入的结构推断孤立回归困难",
+      "method_basis": "inferred",
+      "observation_end": "2025-12-08",
+      "future_time_text": "",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-eb52b32e10dbc0d04be7",
+          "relation": "counter",
+          "quote": "美国2025国家安全战略明言重申执行门罗主义及Trump Corollary，要求阻止域外竞争者控制半球关键资产；同文件仍有亚洲、欧洲等全球战略安排。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "日期未知，且为已登记摘录；同文件保留全球安排，说明并非全面孤立。"
+        },
+        {
+          "evidence_id": "ev-92524adbfbff7771554bdbea",
+          "relation": "counter",
+          "quote": "Today, my Administration proudly reaffirms this promise under a new “Trump Corollary” to the Monroe Doctrine",
+          "publication_date": "2025-12-02",
+          "observation_end": "2025-12-02",
+          "limitation": "为总统公告修辞，证明立场与制度宣示，不直接证明政策有效性或所有民众态度。"
+        },
+        {
+          "evidence_id": "prior-76e8368f97d5452e0604",
+          "relation": "support",
+          "quote": "美国国防部报道美巴已签合作安全活动谅解备忘录，并宣布加强运河安全合作以抗衡中国影响。",
+          "publication_date": "2025-04-09",
+          "observation_end": "2025-04-09",
+          "limitation": "单一双边合作，不能代表整个西半球政策落地。"
+        },
+        {
+          "evidence_id": "prior-e380672bed0377b4f1da",
+          "relation": "boundary",
+          "quote": "巴拿马海空部门报告PANAMAX ALPHA第一阶段训练已于2025年7月14日在本国基地开始，由本国安全力量与美南方司令部支持；同时明确该系列自2006年举行。",
+          "publication_date": "2025-07-14",
+          "observation_end": "2025-07-14",
+          "limitation": "该训练系列自2006年即举行，属延续性活动，不能单独作为门罗主义“再现”的新证据。"
+        },
+        {
+          "evidence_id": "ev-940c2a9ba893652638f7bba9",
+          "relation": "boundary",
+          "quote": "the new NSS overwhelmingly focuses on the Western Hemisphere, trade, immigration, and other issues close to home",
+          "publication_date": "2025-12-08",
+          "observation_end": "2025-12-08",
+          "limitation": "评论文章，指出战略重心转向西半球，但同时称在台湾、北约等问题上延续，非全面孤立。"
+        }
+      ],
+      "remaining_gap": "“特定历史条件”未定义，无法精确判定该例外是否被触发；且缺乏对门罗主义式政策实际执行效果的独立评估，仅有文件与有限行动证据。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000049448-000049475",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "评估王沪宁“门罗主义难以在美国再现，除非有特定历史条件”的判断。操作化口径：(1) 2025年美国正式战略文件是否明确重申门罗主义或Trump Corollary并据此限制域外势力在西半球存在；(2) 是否伴随实际政策行动（巴拿马运河安全合作、联合训练等）。观察时段为2025年文件与行动，截止2026-11-09。",
+      "reason": "原句为带例外条件的判断，作者明确保留“除非有特定的历史条件”，而该条件在原文中未定义、是否触发无法确认。2025年白宫公告与国家安全战略重申门罗主义/Trump Corollary、西半球优先及有限双边行动，构成对主判断方向的反向证据，但在例外条件未确认时不足以直接判为“错误”。",
+      "limitation": "关键修订：将condition_state由unconditional改为unknown，verdict由“错误”改为“暂无法判断”，因原句例外条件未定义、无法判定是否触发。2025年文件同时保留亚洲、欧洲等全球安排，并非经典门罗主义全盘复归，反向证据有限。",
+      "evidence_ids": [
+        "prior-eb52b32e10dbc0d04be7",
+        "ev-92524adbfbff7771554bdbea",
+        "prior-76e8368f97d5452e0604",
+        "prior-e380672bed0377b4f1da",
+        "ev-940c2a9ba893652638f7bba9"
+      ],
+      "method": "从美国被世界经济及国际交往卷入的结构推断孤立回归困难",
+      "method_basis": "inferred",
+      "observation_end": "2025-12-08",
+      "future_time_text": "",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-eb52b32e10dbc0d04be7",
+          "relation": "counter",
+          "quote": "美国2025国家安全战略明言重申执行门罗主义及Trump Corollary，要求阻止域外竞争者控制半球关键资产；同文件仍有亚洲、欧洲等全球战略安排。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "日期未知，且为已登记摘录；同文件保留全球安排，说明并非全面孤立。"
+        },
+        {
+          "evidence_id": "ev-92524adbfbff7771554bdbea",
+          "relation": "counter",
+          "quote": "Today, my Administration proudly reaffirms this promise under a new “Trump Corollary” to the Monroe Doctrine",
+          "publication_date": "2025-12-02",
+          "observation_end": "2025-12-02",
+          "limitation": "为总统公告修辞，证明立场与制度宣示，不直接证明政策有效性或所有民众态度。"
+        },
+        {
+          "evidence_id": "prior-76e8368f97d5452e0604",
+          "relation": "support",
+          "quote": "美国国防部报道美巴已签合作安全活动谅解备忘录，并宣布加强运河安全合作以抗衡中国影响。",
+          "publication_date": "2025-04-09",
+          "observation_end": "2025-04-09",
+          "limitation": "单一双边合作，不能代表整个西半球政策落地。"
+        },
+        {
+          "evidence_id": "prior-e380672bed0377b4f1da",
+          "relation": "boundary",
+          "quote": "巴拿马海空部门报告PANAMAX ALPHA第一阶段训练已于2025年7月14日在本国基地开始，由本国安全力量与美南方司令部支持；同时明确该系列自2006年举行。",
+          "publication_date": "2025-07-14",
+          "observation_end": "2025-07-14",
+          "limitation": "该训练系列自2006年即举行，属延续性活动，不能单独作为门罗主义“再现”的新证据。"
+        },
+        {
+          "evidence_id": "ev-940c2a9ba893652638f7bba9",
+          "relation": "boundary",
+          "quote": "the new NSS overwhelmingly focuses on the Western Hemisphere, trade, immigration, and other issues close to home",
+          "publication_date": "2025-12-08",
+          "observation_end": "2025-12-08",
+          "limitation": "评论文章，指出战略重心转向西半球，但同时称在台湾、北约等问题上延续，非全面孤立。"
+        }
+      ],
+      "remaining_gap": "“特定历史条件”未定义，无法判定该例外是否被触发；且缺乏对门罗主义式政策实际执行效果的独立评估，仅有文件与有限行动证据。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "王沪宁1991年前后判断：门罗主义式半球排外/美国优先战略难以在美国再现，除非出现特定历史条件。可观察口径分两层：(1) 2025年美国正式战略文件是否明确重申门罗主义或Trump Corollary并据此限制域外势力在西半球存在；(2) 是否伴随实际政策行动（如巴拿马运河安全合作、联合训练、基地或主权安排）。反证包括：正式文件仅修辞而无实施、政策仍以全球同盟为主、或出现明确全面孤立主义转向。原文“特定历史条件”未定义，不能事后补写以免疫反证。",
+  "elapsed_seconds": 35.873,
+  "completed_at": "2026-11-09T07:59:23.571114+00:00"
+}

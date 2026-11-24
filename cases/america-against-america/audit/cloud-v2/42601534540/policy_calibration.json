@@ -1,0 +1,1367 @@
+{
+  "kind": "synthetic_review_contract_calibration",
+  "fixture_count": 8,
+  "planned_calls": 16,
+  "human_authored_synthetic_expectations": true,
+  "real_world_gold": false,
+  "fixtures": [
+    {
+      "id": "synthetic-supported_correct",
+      "expected_decisions": [
+        "accept"
+      ],
+      "input": {
+        "id": "synthetic-supported_correct",
+        "claim_id": "synthetic-supported_correct",
+        "round": 1,
+        "book": "合成复核契约测试（虚构）",
+        "cutoff": "2026-11-09",
+        "publication_year_proxy": 2020,
+        "fixture_notice": "这是封闭的合成逻辑样例：记录是题设事实，明示缺失也属于题设。不搜索、不补外部事实；只检验给定建议是否遵守复核规则。",
+        "cases": [
+          {
+            "id": "synthetic-supported_correct",
+            "quote": "澄星地区2025年的常住人口将低于2020年的100人。",
+            "context": "本例所有地名、数值和资料均为虚构。范围只有澄星地区，指标定义不变；不使用任何真实书籍或外部事实。",
+            "speaker": "虚构作者",
+            "source_verified": true,
+            "duplicate_of": null
+          }
+        ],
+        "research_scope": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。",
+        "evidence_candidates": [
+          {
+            "id": "synthetic-evidence-supported_correct",
+            "url": "https://synthetic.invalid/supported_correct",
+            "title": "虚构题设记录",
+            "published_date": "2026-01-15",
+            "source_kind": "synthetic_fixture",
+            "verified": true,
+            "text": "澄星地区完整人口登记：2020年100人，2025年80人；地区边界和常住人口口径相同，2025年登记已经完成。",
+            "context_truncated": false,
+            "date_status": "known"
+          }
+        ],
+        "proposed_assessment": {
+          "id": "synthetic-supported_correct",
+          "inclusion": "forecast",
+          "verdict": "正确",
+          "basis": "endpoint",
+          "scope": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。",
+          "reason": "同地区同口径的2025年80人低于2020年100人。",
+          "limitation": "结论仅适用于题设地区、明示指标和时段，不推断其他地区或因果机制。",
+          "evidence_ids": [
+            "synthetic-evidence-supported_correct"
+          ],
+          "method": "原句未提供推理",
+          "method_basis": "unknown",
+          "observation_end": "2025-12-31",
+          "future_time_text": "",
+          "condition_state": "unconditional",
+          "trend_aligned": false,
+          "evidence_notes": [
+            {
+              "evidence_id": "synthetic-evidence-supported_correct",
+              "relation": "support",
+              "quote": "澄星地区完整人口登记：2020年100人，2025年80人；地区边界和常住人口口径相同，2025年登记已经完成。",
+              "publication_date": "2026-01-15",
+              "observation_end": "2025-12-31",
+              "limitation": "纯合成题设资料，不对应真实文献或真实人口。"
+            }
+          ],
+          "remaining_gap": ""
+        },
+        "review_quote_options": {
+          "q0": {
+            "quote_origin": "book",
+            "evidence_id": null,
+            "source_quote": "澄星地区2025年的常住人口将低于2020年的100人。"
+          },
+          "q1": {
+            "quote_origin": "book",
+            "evidence_id": null,
+            "source_quote": "本例所有地名、数值和资料均为虚构。"
+          },
+          "q2": {
+            "quote_origin": "proposal",
+            "evidence_id": null,
+            "source_quote": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。"
+          },
+          "q3": {
+            "quote_origin": "proposal",
+            "evidence_id": null,
+            "source_quote": "同地区同口径的2025年80人低于2020年100人。"
+          },
+          "q4": {
+            "quote_origin": "evidence",
+            "evidence_id": "synthetic-evidence-supported_correct",
+            "source_quote": "澄星地区完整人口登记：2020年100人，2025年80人；地区边界和常住人口口径相同，2025年登记已经完成。"
+          }
+        }
+      }
+    },
+    {
+      "id": "synthetic-opposite_wrong",
+      "expected_decisions": [
+        "accept"
+      ],
+      "input": {
+        "id": "synthetic-opposite_wrong",
+        "claim_id": "synthetic-opposite_wrong",
+        "round": 1,
+        "book": "合成复核契约测试（虚构）",
+        "cutoff": "2026-11-09",
+        "publication_year_proxy": 2020,
+        "fixture_notice": "这是封闭的合成逻辑样例：记录是题设事实，明示缺失也属于题设。不搜索、不补外部事实；只检验给定建议是否遵守复核规则。",
+        "cases": [
+          {
+            "id": "synthetic-opposite_wrong",
+            "quote": "澄星地区2025年的常住人口将低于2020年的100人。",
+            "context": "本例所有地名、数值和资料均为虚构。范围只有澄星地区，指标定义不变；不使用任何真实书籍或外部事实。",
+            "speaker": "虚构作者",
+            "source_verified": true,
+            "duplicate_of": null
+          }
+        ],
+        "research_scope": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。",
+        "evidence_candidates": [
+          {
+            "id": "synthetic-evidence-opposite_wrong",
+            "url": "https://synthetic.invalid/opposite_wrong",
+            "title": "虚构题设记录",
+            "published_date": "2026-01-15",
+            "source_kind": "synthetic_fixture",
+            "verified": true,
+            "text": "澄星地区完整人口登记：2020年100人，2025年120人；地区边界和常住人口口径相同，2025年登记已经完成。",
+            "context_truncated": false,
+            "date_status": "known"
+          }
+        ],
+        "proposed_assessment": {
+          "id": "synthetic-opposite_wrong",
+          "inclusion": "forecast",
+          "verdict": "错误",
+          "basis": "endpoint",
+          "scope": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。",
+          "reason": "2025年120人高于100人，与预测的低于100人相反。",
+          "limitation": "结论仅适用于题设地区、明示指标和时段，不推断其他地区或因果机制。",
+          "evidence_ids": [
+            "synthetic-evidence-opposite_wrong"
+          ],
+          "method": "原句未提供推理",
+          "method_basis": "unknown",
+          "observation_end": "2025-12-31",
+          "future_time_text": "",
+          "condition_state": "unconditional",
+          "trend_aligned": false,
+          "evidence_notes": [
+            {
+              "evidence_id": "synthetic-evidence-opposite_wrong",
+              "relation": "support",
+              "quote": "澄星地区完整人口登记：2020年100人，2025年120人；地区边界和常住人口口径相同，2025年登记已经完成。",
+              "publication_date": "2026-01-15",
+              "observation_end": "2025-12-31",
+              "limitation": "纯合成题设资料，不对应真实文献或真实人口。"
+            }
+          ],
+          "remaining_gap": ""
+        },
+        "review_quote_options": {
+          "q0": {
+            "quote_origin": "book",
+            "evidence_id": null,
+            "source_quote": "澄星地区2025年的常住人口将低于2020年的100人。"
+          },
+          "q1": {
+            "quote_origin": "book",
+            "evidence_id": null,
+            "source_quote": "本例所有地名、数值和资料均为虚构。"
+          },
+          "q2": {
+            "quote_origin": "proposal",
+            "evidence_id": null,
+            "source_quote": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。"
+          },
+          "q3": {
+            "quote_origin": "proposal",
+            "evidence_id": null,
+            "source_quote": "2025年120人高于100人，与预测的低于100人相反。"
+          },
+          "q4": {
+            "quote_origin": "evidence",
+            "evidence_id": "synthetic-evidence-opposite_wrong",
+            "source_quote": "澄星地区完整人口登记：2020年100人，2025年120人；地区边界和常住人口口径相同，2025年登记已经完成。"
+          }
+        }
+      }
+    },
+    {
+      "id": "synthetic-two_components_partial",
+      "expected_decisions": [
+        "accept"
+      ],
+      "input": {
+        "id": "synthetic-two_components_partial",
+        "claim_id": "synthetic-two_components_partial",
+        "round": 1,
+        "book": "合成复核契约测试（虚构）",
+        "cutoff": "2026-11-09",
+        "publication_year_proxy": 2020,
+        "fixture_notice": "这是封闭的合成逻辑样例：记录是题设事实，明示缺失也属于题设。不搜索、不补外部事实；只检验给定建议是否遵守复核规则。",
+        "cases": [
+          {
+            "id": "synthetic-two_components_partial",
+            "quote": "澄星地区到2025年将同时实现常住人口低于100人，以及平均通勤少于30分钟；这两项同为主要目标。",
+            "context": "本例所有地名、数值和资料均为虚构。范围只有澄星地区，指标定义不变；不使用任何真实书籍或外部事实。",
+            "speaker": "虚构作者",
+            "source_verified": true,
+            "duplicate_of": null
+          }
+        ],
+        "research_scope": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。",
+        "evidence_candidates": [
+          {
+            "id": "synthetic-evidence-two_components_partial",
+            "url": "https://synthetic.invalid/two_components_partial",
+            "title": "虚构题设记录",
+            "published_date": "2026-01-15",
+            "source_kind": "synthetic_fixture",
+            "verified": true,
+            "text": "澄星地区2025年完整登记显示，常住人口为80人，平均通勤为40分钟；两项指标定义与预测相同，记录已经完成。",
+            "context_truncated": false,
+            "date_status": "known"
+          }
+        ],
+        "proposed_assessment": {
+          "id": "synthetic-two_components_partial",
+          "inclusion": "forecast",
+          "verdict": "部分符合",
+          "basis": "endpoint",
+          "scope": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。",
+          "reason": "人口80人满足低于100人，但通勤40分钟不满足少于30分钟；两个主要分项一成一反。",
+          "limitation": "结论仅适用于题设地区、明示指标和时段，不推断其他地区或因果机制。",
+          "evidence_ids": [
+            "synthetic-evidence-two_components_partial"
+          ],
+          "method": "原句未提供推理",
+          "method_basis": "unknown",
+          "observation_end": "2025-12-31",
+          "future_time_text": "",
+          "condition_state": "unconditional",
+          "trend_aligned": false,
+          "evidence_notes": [
+            {
+              "evidence_id": "synthetic-evidence-two_components_partial",
+              "relation": "boundary",
+              "quote": "澄星地区2025年完整登记显示，常住人口为80人，平均通勤为40分钟；两项指标定义与预测相同，记录已经完成。",
+              "publication_date": "2026-01-15",
+              "observation_end": "2025-12-31",
+              "limitation": "纯合成题设资料，不对应真实文献或真实人口。"
+            }
+          ],
+          "remaining_gap": ""
+        },
+        "review_quote_options": {
+          "q0": {
+            "quote_origin": "book",
+            "evidence_id": null,
+            "source_quote": "澄星地区到2025年将同时实现常住人口低于100人，以及平均通勤少于30分钟；这两项同为主要目标。"
+          },
+          "q1": {
+            "quote_origin": "book",
+            "evidence_id": null,
+            "source_quote": "本例所有地名、数值和资料均为虚构。"
+          },
+          "q2": {
+            "quote_origin": "proposal",
+            "evidence_id": null,
+            "source_quote": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。"
+          },
+          "q3": {
+            "quote_origin": "proposal",
+            "evidence_id": null,
+            "source_quote": "人口80人满足低于100人，但通勤40分钟不满足少于30分钟；两个主要分项一成一反。"
+          },
+          "q4": {
+            "quote_origin": "evidence",
+            "evidence_id": "synthetic-evidence-two_components_partial",
+            "source_quote": "澄星地区2025年完整登记显示，常住人口为80人，平均通勤为40分钟；两项指标定义与预测相同，记录已经完成。"
+          }
+        }
+      }
+    },
+    {
+      "id": "synthetic-future_endpoint_trend",
+      "expected_decisions": [
+        "accept"
+      ],
+      "input": {
+        "id": "synthetic-future_endpoint_trend",
+        "claim_id": "synthetic-future_endpoint_trend",
+        "round": 1,
+        "book": "合成复核契约测试（虚构）",
+        "cutoff": "2026-11-09",
+        "publication_year_proxy": 2020,
+        "fixture_notice": "这是封闭的合成逻辑样例：记录是题设事实，明示缺失也属于题设。不搜索、不补外部事实；只检验给定建议是否遵守复核规则。",
+        "cases": [
+          {
+            "id": "synthetic-future_endpoint_trend",
+            "quote": "澄星地区常住人口到2030年将达到150人。",
+            "context": "本例所有地名、数值和资料均为虚构。范围只有澄星地区，指标定义不变；不使用任何真实书籍或外部事实。",
+            "speaker": "虚构作者",
+            "source_verified": true,
+            "duplicate_of": null
+          }
+        ],
+        "research_scope": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。",
+        "evidence_candidates": [
+          {
+            "id": "synthetic-evidence-future_endpoint_trend",
+            "url": "https://synthetic.invalid/future_endpoint_trend",
+            "title": "虚构题设记录",
+            "published_date": "2026-01-15",
+            "source_kind": "synthetic_fixture",
+            "verified": true,
+            "text": "同边界同口径的人口登记：2020年100人，2022年115人，2025年130人；以上均为已经发生的年度实际结果。尚无2030年结果。",
+            "context_truncated": false,
+            "date_status": "known"
+          }
+        ],
+        "proposed_assessment": {
+          "id": "synthetic-future_endpoint_trend",
+          "inclusion": "forecast",
+          "verdict": "部分符合",
+          "basis": "observed_window",
+          "scope": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。",
+          "reason": "三个已发生观察点持续接近150人的预测方向，只评估截至2025年的趋势。",
+          "limitation": "2030年终点尚未到，130人不等于终点150人已经实现。",
+          "evidence_ids": [
+            "synthetic-evidence-future_endpoint_trend"
+          ],
+          "method": "原句未提供推理",
+          "method_basis": "unknown",
+          "observation_end": "2025-12-31",
+          "future_time_text": "2030年",
+          "condition_state": "unconditional",
+          "trend_aligned": true,
+          "evidence_notes": [
+            {
+              "evidence_id": "synthetic-evidence-future_endpoint_trend",
+              "relation": "support",
+              "quote": "同边界同口径的人口登记：2020年100人，2022年115人，2025年130人；以上均为已经发生的年度实际结果。尚无2030年结果。",
+              "publication_date": "2026-01-15",
+              "observation_end": "2025-12-31",
+              "limitation": "纯合成题设资料，不对应真实文献或真实人口。"
+            }
+          ],
+          "remaining_gap": ""
+        },
+        "review_quote_options": {
+          "q0": {
+            "quote_origin": "book",
+            "evidence_id": null,
+            "source_quote": "澄星地区常住人口到2030年将达到150人。"
+          },
+          "q1": {
+            "quote_origin": "book",
+            "evidence_id": null,
+            "source_quote": "本例所有地名、数值和资料均为虚构。"
+          },
+          "q2": {
+            "quote_origin": "proposal",
+            "evidence_id": null,
+            "source_quote": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。"
+          },
+          "q3": {
+            "quote_origin": "proposal",
+            "evidence_id": null,
+            "source_quote": "三个已发生观察点持续接近150人的预测方向，只评估截至2025年的趋势。"
+          },
+          "q4": {
+            "quote_origin": "evidence",
+            "evidence_id": "synthetic-evidence-future_endpoint_trend",
+            "source_quote": "同边界同口径的人口登记：2020年100人，2022年115人，2025年130人；以上均为已经发生的年度实际结果。尚无2030年结果。"
+          }
+        }
+      }
+    },
+    {
+      "id": "synthetic-real_condition_unknown",
+      "expected_decisions": [
+        "accept"
+      ],
+      "input": {
+        "id": "synthetic-real_condition_unknown",
+        "claim_id": "synthetic-real_condition_unknown",
+        "round": 1,
+        "book": "合成复核契约测试（虚构）",
+        "cutoff": "2026-11-09",
+        "publication_year_proxy": 2020,
+        "fixture_notice": "这是封闭的合成逻辑样例：记录是题设事实，明示缺失也属于题设。不搜索、不补外部事实；只检验给定建议是否遵守复核规则。",
+        "cases": [
+          {
+            "id": "synthetic-real_condition_unknown",
+            "quote": "如果澄星地区的新桥在2024年底前建成，那么2025年平均通勤将低于20分钟。",
+            "context": "本例所有地名、数值和资料均为虚构。范围只有澄星地区，指标定义不变；不使用任何真实书籍或外部事实。",
+            "speaker": "虚构作者",
+            "source_verified": true,
+            "duplicate_of": null
+          }
+        ],
+        "research_scope": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。",
+        "evidence_candidates": [
+          {
+            "id": "synthetic-evidence-real_condition_unknown",
+            "url": "https://synthetic.invalid/real_condition_unknown",
+            "title": "虚构题设记录",
+            "published_date": "2026-01-15",
+            "source_kind": "synthetic_fixture",
+            "verified": true,
+            "text": "2025年同口径平均通勤为18分钟。档案中没有新桥是否在2024年底前建成的记录，该前提在本题材料中未知。",
+            "context_truncated": false,
+            "date_status": "known"
+          }
+        ],
+        "proposed_assessment": {
+          "id": "synthetic-real_condition_unknown",
+          "inclusion": "forecast",
+          "verdict": "暂无法判断",
+          "basis": "conditional",
+          "scope": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。",
+          "reason": "后果的通勤数字已知，但原文真实前提是否按时建成仍未知，不能确认该条件预测。",
+          "limitation": "结论仅适用于题设地区、明示指标和时段，不推断其他地区或因果机制。",
+          "evidence_ids": [
+            "synthetic-evidence-real_condition_unknown"
+          ],
+          "method": "原句未提供推理",
+          "method_basis": "unknown",
+          "observation_end": "2025-12-31",
+          "future_time_text": "",
+          "condition_state": "unknown",
+          "trend_aligned": false,
+          "evidence_notes": [
+            {
+              "evidence_id": "synthetic-evidence-real_condition_unknown",
+              "relation": "support",
+              "quote": "2025年同口径平均通勤为18分钟。档案中没有新桥是否在2024年底前建成的记录，该前提在本题材料中未知。",
+              "publication_date": "2026-01-15",
+              "observation_end": "2025-12-31",
+              "limitation": "纯合成题设资料，不对应真实文献或真实人口。"
+            }
+          ],
+          "remaining_gap": "缺少新桥是否在2024年底前建成这一真实触发条件的记录。"
+        },
+        "review_quote_options": {
+          "q0": {
+            "quote_origin": "book",
+            "evidence_id": null,
+            "source_quote": "如果澄星地区的新桥在2024年底前建成，那么2025年平均通勤将低于20分钟。"
+          },
+          "q1": {
+            "quote_origin": "book",
+            "evidence_id": null,
+            "source_quote": "本例所有地名、数值和资料均为虚构。"
+          },
+          "q2": {
+            "quote_origin": "proposal",
+            "evidence_id": null,
+            "source_quote": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。"
+          },
+          "q3": {
+            "quote_origin": "proposal",
+            "evidence_id": null,
+            "source_quote": "后果的通勤数字已知，但原文真实前提是否按时建成仍未知，不能确认该条件预测。"
+          },
+          "q4": {
+            "quote_origin": "evidence",
+            "evidence_id": "synthetic-evidence-real_condition_unknown",
+            "source_quote": "2025年同口径平均通勤为18分钟。档案中没有新桥是否在2024年底前建成的记录，该前提在本题材料中未知。"
+          }
+        }
+      }
+    },
+    {
+      "id": "synthetic-no_outcome_evidence",
+      "expected_decisions": [
+        "accept"
+      ],
+      "input": {
+        "id": "synthetic-no_outcome_evidence",
+        "claim_id": "synthetic-no_outcome_evidence",
+        "round": 1,
+        "book": "合成复核契约测试（虚构）",
+        "cutoff": "2026-11-09",
+        "publication_year_proxy": 2020,
+        "fixture_notice": "这是封闭的合成逻辑样例：记录是题设事实，明示缺失也属于题设。不搜索、不补外部事实；只检验给定建议是否遵守复核规则。",
+        "cases": [
+          {
+            "id": "synthetic-no_outcome_evidence",
+            "quote": "澄星地区2025年的常住人口将低于2020年的100人。",
+            "context": "本例所有地名、数值和资料均为虚构。范围只有澄星地区，指标定义不变；不使用任何真实书籍或外部事实。",
+            "speaker": "虚构作者",
+            "source_verified": true,
+            "duplicate_of": null
+          }
+        ],
+        "research_scope": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。",
+        "evidence_candidates": [
+          {
+            "id": "synthetic-evidence-no_outcome_evidence",
+            "url": "https://synthetic.invalid/no_outcome_evidence",
+            "title": "虚构题设记录",
+            "published_date": "2026-01-15",
+            "source_kind": "synthetic_fixture",
+            "verified": true,
+            "text": "这份材料仅记录澄星地区2020年人口为100人。它是一份调查计划，尚未取得2025年人口，不能提供预测结果。",
+            "context_truncated": false,
+            "date_status": "known"
+          }
+        ],
+        "proposed_assessment": {
+          "id": "synthetic-no_outcome_evidence",
+          "inclusion": "forecast",
+          "verdict": "暂无法判断",
+          "basis": "evidence",
+          "scope": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。",
+          "reason": "没有2025年同口径人口结果，无法比较它是否低于100人。",
+          "limitation": "结论仅适用于题设地区、明示指标和时段，不推断其他地区或因果机制。",
+          "evidence_ids": [
+            "synthetic-evidence-no_outcome_evidence"
+          ],
+          "method": "原句未提供推理",
+          "method_basis": "unknown",
+          "observation_end": null,
+          "future_time_text": "",
+          "condition_state": "unconditional",
+          "trend_aligned": false,
+          "evidence_notes": [
+            {
+              "evidence_id": "synthetic-evidence-no_outcome_evidence",
+              "relation": "support",
+              "quote": "这份材料仅记录澄星地区2020年人口为100人。它是一份调查计划，尚未取得2025年人口，不能提供预测结果。",
+              "publication_date": "2026-01-15",
+              "observation_end": null,
+              "limitation": "纯合成题设资料，不对应真实文献或真实人口。"
+            }
+          ],
+          "remaining_gap": "缺少2025年同口径实际人口结果。"
+        },
+        "review_quote_options": {
+          "q0": {
+            "quote_origin": "book",
+            "evidence_id": null,
+            "source_quote": "澄星地区2025年的常住人口将低于2020年的100人。"
+          },
+          "q1": {
+            "quote_origin": "book",
+            "evidence_id": null,
+            "source_quote": "本例所有地名、数值和资料均为虚构。"
+          },
+          "q2": {
+            "quote_origin": "proposal",
+            "evidence_id": null,
+            "source_quote": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。"
+          },
+          "q3": {
+            "quote_origin": "proposal",
+            "evidence_id": null,
+            "source_quote": "没有2025年同口径人口结果，无法比较它是否低于100人。"
+          },
+          "q4": {
+            "quote_origin": "evidence",
+            "evidence_id": "synthetic-evidence-no_outcome_evidence",
+            "source_quote": "这份材料仅记录澄星地区2020年人口为100人。它是一份调查计划，尚未取得2025年人口，不能提供预测结果。"
+          }
+        }
+      }
+    },
+    {
+      "id": "synthetic-unjustified_unresolved",
+      "expected_decisions": [
+        "revise"
+      ],
+      "input": {
+        "id": "synthetic-unjustified_unresolved",
+        "claim_id": "synthetic-unjustified_unresolved",
+        "round": 1,
+        "book": "合成复核契约测试（虚构）",
+        "cutoff": "2026-11-09",
+        "publication_year_proxy": 2020,
+        "fixture_notice": "这是封闭的合成逻辑样例：记录是题设事实，明示缺失也属于题设。不搜索、不补外部事实；只检验给定建议是否遵守复核规则。",
+        "cases": [
+          {
+            "id": "synthetic-unjustified_unresolved",
+            "quote": "澄星地区2025年的常住人口将低于2020年的100人。",
+            "context": "本例所有地名、数值和资料均为虚构。范围只有澄星地区，指标定义不变；不使用任何真实书籍或外部事实。",
+            "speaker": "虚构作者",
+            "source_verified": true,
+            "duplicate_of": null
+          }
+        ],
+        "research_scope": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。",
+        "evidence_candidates": [
+          {
+            "id": "synthetic-evidence-unjustified_unresolved",
+            "url": "https://synthetic.invalid/unjustified_unresolved",
+            "title": "虚构题设记录",
+            "published_date": "2026-01-15",
+            "source_kind": "synthetic_fixture",
+            "verified": true,
+            "text": "澄星地区完整人口登记：2020年100人，2025年80人；地区边界和常住人口口径相同，2025年登记已经完成。",
+            "context_truncated": false,
+            "date_status": "known"
+          }
+        ],
+        "proposed_assessment": {
+          "id": "synthetic-unjustified_unresolved",
+          "inclusion": "forecast",
+          "verdict": "暂无法判断",
+          "basis": "evidence",
+          "scope": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。",
+          "reason": "虽然同口径登记明确为100人降至80人，但没有人口变化的因果识别实验，所以无法判断人数是否下降。",
+          "limitation": "结论仅适用于题设地区、明示指标和时段，不推断其他地区或因果机制。",
+          "evidence_ids": [
+            "synthetic-evidence-unjustified_unresolved"
+          ],
+          "method": "原句未提供推理",
+          "method_basis": "unknown",
+          "observation_end": "2025-12-31",
+          "future_time_text": "",
+          "condition_state": "unconditional",
+          "trend_aligned": false,
+          "evidence_notes": [
+            {
+              "evidence_id": "synthetic-evidence-unjustified_unresolved",
+              "relation": "support",
+              "quote": "澄星地区完整人口登记：2020年100人，2025年80人；地区边界和常住人口口径相同，2025年登记已经完成。",
+              "publication_date": "2026-01-15",
+              "observation_end": "2025-12-31",
+              "limitation": "纯合成题设资料，不对应真实文献或真实人口。"
+            }
+          ],
+          "remaining_gap": "还需要因果识别实验才能比较这两个已给出的人数。"
+        },
+        "review_quote_options": {
+          "q0": {
+            "quote_origin": "book",
+            "evidence_id": null,
+            "source_quote": "澄星地区2025年的常住人口将低于2020年的100人。"
+          },
+          "q1": {
+            "quote_origin": "book",
+            "evidence_id": null,
+            "source_quote": "本例所有地名、数值和资料均为虚构。"
+          },
+          "q2": {
+            "quote_origin": "proposal",
+            "evidence_id": null,
+            "source_quote": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。"
+          },
+          "q3": {
+            "quote_origin": "proposal",
+            "evidence_id": null,
+            "source_quote": "虽然同口径登记明确为100人降至80人，但没有人口变化的因果识别实验，所以无法判断人数是否下降。"
+          },
+          "q4": {
+            "quote_origin": "evidence",
+            "evidence_id": "synthetic-evidence-unjustified_unresolved",
+            "source_quote": "澄星地区完整人口登记：2020年100人，2025年80人；地区边界和常住人口口径相同，2025年登记已经完成。"
+          }
+        }
+      }
+    },
+    {
+      "id": "synthetic-causal_overclaim",
+      "expected_decisions": [
+        "revise",
+        "unresolved"
+      ],
+      "input": {
+        "id": "synthetic-causal_overclaim",
+        "claim_id": "synthetic-causal_overclaim",
+        "round": 1,
+        "book": "合成复核契约测试（虚构）",
+        "cutoff": "2026-11-09",
+        "publication_year_proxy": 2020,
+        "fixture_notice": "这是封闭的合成逻辑样例：记录是题设事实，明示缺失也属于题设。不搜索、不补外部事实；只检验给定建议是否遵守复核规则。",
+        "cases": [
+          {
+            "id": "synthetic-causal_overclaim",
+            "quote": "澄星地区灯光改造后，2025年事故率将低于2020年的每万人10起。",
+            "context": "本例所有地名、数值和资料均为虚构。范围只有澄星地区，指标定义不变；不使用任何真实书籍或外部事实。",
+            "speaker": "虚构作者",
+            "source_verified": true,
+            "duplicate_of": null
+          }
+        ],
+        "research_scope": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。",
+        "evidence_candidates": [
+          {
+            "id": "synthetic-evidence-causal_overclaim",
+            "url": "https://synthetic.invalid/causal_overclaim",
+            "title": "虚构题设记录",
+            "published_date": "2026-01-15",
+            "source_kind": "synthetic_fixture",
+            "verified": true,
+            "text": "同一澄星地区按同口径记录：2020年每万人10起事故，2025年每万人6起。同期实施灯光改造和限速；这些描述性观察没有识别各措施的因果效应。",
+            "context_truncated": false,
+            "date_status": "known"
+          }
+        ],
+        "proposed_assessment": {
+          "id": "synthetic-causal_overclaim",
+          "inclusion": "forecast",
+          "verdict": "正确",
+          "basis": "endpoint",
+          "scope": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。",
+          "reason": "这证明灯光改造是事故率下降的唯一原因，并且排除了限速等所有其他因素。",
+          "limitation": "已证明唯一因果关系，无需限定。",
+          "evidence_ids": [
+            "synthetic-evidence-causal_overclaim"
+          ],
+          "method": "原句未提供推理",
+          "method_basis": "unknown",
+          "observation_end": "2025-12-31",
+          "future_time_text": "",
+          "condition_state": "unconditional",
+          "trend_aligned": false,
+          "evidence_notes": [
+            {
+              "evidence_id": "synthetic-evidence-causal_overclaim",
+              "relation": "support",
+              "quote": "同一澄星地区按同口径记录：2020年每万人10起事故，2025年每万人6起。同期实施灯光改造和限速；这些描述性观察没有识别各措施的因果效应。",
+              "publication_date": "2026-01-15",
+              "observation_end": "2025-12-31",
+              "limitation": "纯合成题设资料，不对应真实文献或真实人口。"
+            }
+          ],
+          "remaining_gap": ""
+        },
+        "review_quote_options": {
+          "q0": {
+            "quote_origin": "book",
+            "evidence_id": null,
+            "source_quote": "澄星地区灯光改造后，2025年事故率将低于2020年的每万人10起。"
+          },
+          "q1": {
+            "quote_origin": "book",
+            "evidence_id": null,
+            "source_quote": "本例所有地名、数值和资料均为虚构。"
+          },
+          "q2": {
+            "quote_origin": "proposal",
+            "evidence_id": null,
+            "source_quote": "只评估题设虚构地区、原句明示指标和时点；只使用下面给出的完整题设事实。"
+          },
+          "q3": {
+            "quote_origin": "proposal",
+            "evidence_id": null,
+            "source_quote": "这证明灯光改造是事故率下降的唯一原因，并且排除了限速等所有其他因素。"
+          },
+          "q4": {
+            "quote_origin": "evidence",
+            "evidence_id": "synthetic-evidence-causal_overclaim",
+            "source_quote": "同一澄星地区按同口径记录：2020年每万人10起事故，2025年每万人6起。同期实施灯光改造和限速；这些描述性观察没有识别各措施的因果效应。"
+          }
+        }
+      }
+    }
+  ],
+  "results": [
+    {
+      "fixture_id": "synthetic-supported_correct",
+      "arm": "legacy",
+      "expected_decisions": [
+        "accept"
+      ],
+      "common_input_sha256": "77185680973ba67dc0c080db2a9186149fe2bed140114ce19301e72d8a2bfd6b",
+      "request_sha256": "2a9e05fb4ef2b0f14c8aa4076010c92f76adb4c95b87b7e7e27f1cf30d7f6afd",
+      "prompt_sha256": "fe64d20b3d3cb81be0d11d63babe30487df93edf8a719de208973c011e3151b0",
+      "status": "completed",
+      "api_response_received": true,
+      "schema_valid": true,
+      "expected_match": true,
+      "review": {
+        "id": "synthetic-supported_correct",
+        "decision": "accept",
+        "checks": {
+          "object_match": "pass",
+          "condition_logic": "pass",
+          "time_alignment": "pass",
+          "evidence_support": "pass",
+          "counterevidence": "pass",
+          "verdict_logic": "pass"
+        },
+        "issues": [],
+        "remaining_gap": ""
+      },
+      "decision": "accept"
+    },
+    {
+      "fixture_id": "synthetic-supported_correct",
+      "arm": "shared",
+      "expected_decisions": [
+        "accept"
+      ],
+      "common_input_sha256": "77185680973ba67dc0c080db2a9186149fe2bed140114ce19301e72d8a2bfd6b",
+      "request_sha256": "6d16a95a9d5a7bf9d5560dbf523e30f2e1d7a2f742d90fad9562af4a1fa4a362",
+      "prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1",
+      "status": "completed",
+      "api_response_received": true,
+      "schema_valid": true,
+      "expected_match": true,
+      "review": {
+        "id": "synthetic-supported_correct",
+        "decision": "accept",
+        "checks": {
+          "object_match": "pass",
+          "condition_logic": "pass",
+          "time_alignment": "pass",
+          "evidence_support": "pass",
+          "counterevidence": "pass",
+          "verdict_logic": "pass"
+        },
+        "issues": [],
+        "remaining_gap": ""
+      },
+      "decision": "accept"
+    },
+    {
+      "fixture_id": "synthetic-opposite_wrong",
+      "arm": "legacy",
+      "expected_decisions": [
+        "accept"
+      ],
+      "common_input_sha256": "0f71d0482308c8452557b2c827c80489cb47a079f8353e0a8f96af35202e627e",
+      "request_sha256": "9813fd8b27213317a1264dd8822bc02a1177837c65880b12512712ceb8ed4921",
+      "prompt_sha256": "fe64d20b3d3cb81be0d11d63babe30487df93edf8a719de208973c011e3151b0",
+      "status": "completed",
+      "api_response_received": true,
+      "schema_valid": true,
+      "expected_match": true,
+      "review": {
+        "id": "synthetic-opposite_wrong",
+        "decision": "accept",
+        "checks": {
+          "object_match": "pass",
+          "condition_logic": "pass",
+          "time_alignment": "pass",
+          "evidence_support": "pass",
+          "counterevidence": "pass",
+          "verdict_logic": "pass"
+        },
+        "issues": [],
+        "remaining_gap": ""
+      },
+      "decision": "accept"
+    },
+    {
+      "fixture_id": "synthetic-opposite_wrong",
+      "arm": "shared",
+      "expected_decisions": [
+        "accept"
+      ],
+      "common_input_sha256": "0f71d0482308c8452557b2c827c80489cb47a079f8353e0a8f96af35202e627e",
+      "request_sha256": "a9fc04e0ea9e7b1429d36bac36102412a3698a217d3d3383cec39d268a765e2a",
+      "prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1",
+      "status": "completed",
+      "api_response_received": true,
+      "schema_valid": true,
+      "expected_match": true,
+      "review": {
+        "id": "synthetic-opposite_wrong",
+        "decision": "accept",
+        "checks": {
+          "object_match": "pass",
+          "condition_logic": "pass",
+          "time_alignment": "pass",
+          "evidence_support": "pass",
+          "counterevidence": "pass",
+          "verdict_logic": "pass"
+        },
+        "issues": [],
+        "remaining_gap": ""
+      },
+      "decision": "accept"
+    },
+    {
+      "fixture_id": "synthetic-two_components_partial",
+      "arm": "legacy",
+      "expected_decisions": [
+        "accept"
+      ],
+      "common_input_sha256": "d607aa1b048ce16ceac3041c517ca2f942cc96ed96b945b1e5f03f9298ce9614",
+      "request_sha256": "99bd5aaadfe7edec6dab639264244ba4666f57dd6117fa4bcd2c314f4f0f43ba",
+      "prompt_sha256": "fe64d20b3d3cb81be0d11d63babe30487df93edf8a719de208973c011e3151b0",
+      "status": "completed",
+      "api_response_received": true,
+      "schema_valid": true,
+      "expected_match": true,
+      "review": {
+        "id": "synthetic-two_components_partial",
+        "decision": "accept",
+        "checks": {
+          "object_match": "pass",
+          "condition_logic": "pass",
+          "time_alignment": "pass",
+          "evidence_support": "pass",
+          "counterevidence": "pass",
+          "verdict_logic": "pass"
+        },
+        "issues": [],
+        "remaining_gap": ""
+      },
+      "decision": "accept"
+    },
+    {
+      "fixture_id": "synthetic-two_components_partial",
+      "arm": "shared",
+      "expected_decisions": [
+        "accept"
+      ],
+      "common_input_sha256": "d607aa1b048ce16ceac3041c517ca2f942cc96ed96b945b1e5f03f9298ce9614",
+      "request_sha256": "a4ec09c77060abf8491848f3d12403f4fc59a051a83c989bc7abd286c268afc0",
+      "prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1",
+      "status": "completed",
+      "api_response_received": true,
+      "schema_valid": true,
+      "expected_match": true,
+      "review": {
+        "id": "synthetic-two_components_partial",
+        "decision": "accept",
+        "checks": {
+          "object_match": "pass",
+          "condition_logic": "pass",
+          "time_alignment": "pass",
+          "evidence_support": "pass",
+          "counterevidence": "pass",
+          "verdict_logic": "pass"
+        },
+        "issues": [],
+        "remaining_gap": ""
+      },
+      "decision": "accept"
+    },
+    {
+      "fixture_id": "synthetic-future_endpoint_trend",
+      "arm": "legacy",
+      "expected_decisions": [
+        "accept"
+      ],
+      "common_input_sha256": "23f71a635cfc768679621eae71e07e24742ef099e39bee56633194d4b66182d9",
+      "request_sha256": "09a694dd32652dd53c27a5945bb12cf9663c863d78a5d6ef8319055e666f728e",
+      "prompt_sha256": "fe64d20b3d3cb81be0d11d63babe30487df93edf8a719de208973c011e3151b0",
+      "status": "completed",
+      "api_response_received": true,
+      "schema_valid": true,
+      "expected_match": false,
+      "review": {
+        "id": "synthetic-future_endpoint_trend",
+        "decision": "revise",
+        "checks": {
+          "object_match": "pass",
+          "condition_logic": "pass",
+          "time_alignment": "pass",
+          "evidence_support": "pass",
+          "counterevidence": "pass",
+          "verdict_logic": "fail"
+        },
+        "issues": [
+          {
+            "check": "verdict_logic",
+            "reason": "原预测是到2030年达到150人的终点预测，题设明确尚无2030年结果；现有证据只显示2020—2025年从100人升至130人的趋势，终点未到、未验证。按口径，趋势符合只能判为“趋势符合（终点待验证）”，不能判“部分符合”。判部分符合需要分项或阶段存在实质差异的直接证据，而这里没有2030年结果，也没有任何分项差异；把“终点尚未实现”当作部分符合，等于把未到期当成部分失败。",
+            "quote_ref": "q3",
+            "source_quote": "三个已发生观察点持续接近150人的预测方向，只评估截至2025年的趋势。",
+            "evidence_id": null,
+            "quote_resolution": "program_supplied_verbatim_option",
+            "quote_origin": "proposal"
+          }
+        ],
+        "remaining_gap": "需将verdict改为“趋势符合（终点待验证）”或等价的未定终点口径，并相应说明2030年终点尚无实际结果；若坚持“部分符合”，须提供2030年或分项口径下部分实现、部分未实现的直接证据。"
+      },
+      "decision": "revise"
+    },
+    {
+      "fixture_id": "synthetic-future_endpoint_trend",
+      "arm": "shared",
+      "expected_decisions": [
+        "accept"
+      ],
+      "common_input_sha256": "23f71a635cfc768679621eae71e07e24742ef099e39bee56633194d4b66182d9",
+      "request_sha256": "f86da94e96729d16e1ffe3aead4be40a83a516e77a1a02ec68318144acc54ebd",
+      "prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1",
+      "status": "completed",
+      "api_response_received": true,
+      "schema_valid": true,
+      "expected_match": true,
+      "review": {
+        "id": "synthetic-future_endpoint_trend",
+        "decision": "accept",
+        "checks": {
+          "object_match": "pass",
+          "condition_logic": "pass",
+          "time_alignment": "pass",
+          "evidence_support": "pass",
+          "counterevidence": "pass",
+          "verdict_logic": "pass"
+        },
+        "issues": [],
+        "remaining_gap": ""
+      },
+      "decision": "accept"
+    },
+    {
+      "fixture_id": "synthetic-real_condition_unknown",
+      "arm": "legacy",
+      "expected_decisions": [
+        "accept"
+      ],
+      "common_input_sha256": "450f6f8f0d3cb827027eab4df54a8f06c0bdd1b47bddc9bd4a171225b2b56427",
+      "request_sha256": "d5ef2e80bf45899b21661b28404023b2b7ef2f6f306b5fd968a5ec4bc9878e78",
+      "prompt_sha256": "fe64d20b3d3cb81be0d11d63babe30487df93edf8a719de208973c011e3151b0",
+      "status": "completed",
+      "api_response_received": true,
+      "schema_valid": true,
+      "expected_match": true,
+      "review": {
+        "id": "synthetic-real_condition_unknown",
+        "decision": "accept",
+        "checks": {
+          "object_match": "pass",
+          "condition_logic": "pass",
+          "time_alignment": "pass",
+          "evidence_support": "pass",
+          "counterevidence": "pass",
+          "verdict_logic": "pass"
+        },
+        "issues": [],
+        "remaining_gap": ""
+      },
+      "decision": "accept"
+    },
+    {
+      "fixture_id": "synthetic-real_condition_unknown",
+      "arm": "shared",
+      "expected_decisions": [
+        "accept"
+      ],
+      "common_input_sha256": "450f6f8f0d3cb827027eab4df54a8f06c0bdd1b47bddc9bd4a171225b2b56427",
+      "request_sha256": "d43b006bf8a6725e7839fc6350fa7771a6456316a1b7304e53dbefbb4f6c3c3e",
+      "prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1",
+      "status": "completed",
+      "api_response_received": true,
+      "schema_valid": true,
+      "expected_match": true,
+      "review": {
+        "id": "synthetic-real_condition_unknown",
+        "decision": "accept",
+        "checks": {
+          "object_match": "pass",
+          "condition_logic": "pass",
+          "time_alignment": "pass",
+          "evidence_support": "pass",
+          "counterevidence": "pass",
+          "verdict_logic": "pass"
+        },
+        "issues": [],
+        "remaining_gap": ""
+      },
+      "decision": "accept"
+    },
+    {
+      "fixture_id": "synthetic-no_outcome_evidence",
+      "arm": "legacy",
+      "expected_decisions": [
+        "accept"
+      ],
+      "common_input_sha256": "c1362bd8f3510e684b0b10b0511c50e0114f34a0ab79c036702aa7b2acc054ba",
+      "request_sha256": "5cd9a06e860f8f4ecbc714d0c971cc46337aaf0848401a76d867b3bc516278c1",
+      "prompt_sha256": "fe64d20b3d3cb81be0d11d63babe30487df93edf8a719de208973c011e3151b0",
+      "status": "completed",
+      "api_response_received": true,
+      "schema_valid": true,
+      "expected_match": true,
+      "review": {
+        "id": "synthetic-no_outcome_evidence",
+        "decision": "accept",
+        "checks": {
+          "object_match": "pass",
+          "condition_logic": "pass",
+          "time_alignment": "pass",
+          "evidence_support": "pass",
+          "counterevidence": "pass",
+          "verdict_logic": "pass"
+        },
+        "issues": [],
+        "remaining_gap": ""
+      },
+      "decision": "accept"
+    },
+    {
+      "fixture_id": "synthetic-no_outcome_evidence",
+      "arm": "shared",
+      "expected_decisions": [
+        "accept"
+      ],
+      "common_input_sha256": "c1362bd8f3510e684b0b10b0511c50e0114f34a0ab79c036702aa7b2acc054ba",
+      "request_sha256": "15b4dc5c453679e2529eca47ce51b5b0ca2f393b3f3d2cc8ee75b0c0983a0af9",
+      "prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1",
+      "status": "completed",
+      "api_response_received": true,
+      "schema_valid": true,
+      "expected_match": true,
+      "review": {
+        "id": "synthetic-no_outcome_evidence",
+        "decision": "accept",
+        "checks": {
+          "object_match": "pass",
+          "condition_logic": "pass",
+          "time_alignment": "pass",
+          "evidence_support": "pass",
+          "counterevidence": "pass",
+          "verdict_logic": "pass"
+        },
+        "issues": [],
+        "remaining_gap": ""
+      },
+      "decision": "accept"
+    },
+    {
+      "fixture_id": "synthetic-unjustified_unresolved",
+      "arm": "legacy",
+      "expected_decisions": [
+        "revise"
+      ],
+      "common_input_sha256": "f1beb76084387f4bccd03a69efde98fad128083847738bbaa27aceb2e01f641f",
+      "request_sha256": "802b8ce88a2aac800e4699d93f372987086a3f22834f4ab11c911454f581070a",
+      "prompt_sha256": "fe64d20b3d3cb81be0d11d63babe30487df93edf8a719de208973c011e3151b0",
+      "status": "completed",
+      "api_response_received": true,
+      "schema_valid": true,
+      "expected_match": true,
+      "review": {
+        "id": "synthetic-unjustified_unresolved",
+        "decision": "revise",
+        "checks": {
+          "object_match": "pass",
+          "condition_logic": "pass",
+          "time_alignment": "pass",
+          "evidence_support": "pass",
+          "counterevidence": "pass",
+          "verdict_logic": "fail"
+        },
+        "issues": [
+          {
+            "check": "verdict_logic",
+            "reason": "原句是无条件的人口比较预测：2025年常住人口低于2020年的100人。题设证据给出同地区、同口径、同指标且2025年登记已完成，2025年为80人，低于100人，主要可检验结果已经实现。建议却以“缺少因果识别实验”为由判为“暂无法判断”，把预测是否兑现与解释下降原因混为一谈，属于口径错误；应判为符合，trend_aligned 不应作为主要依据，且无需因果实验。",
+            "quote_ref": "q3",
+            "source_quote": "虽然同口径登记明确为100人降至80人，但没有人口变化的因果识别实验，所以无法判断人数是否下降。",
+            "evidence_id": null,
+            "quote_resolution": "program_supplied_verbatim_option",
+            "quote_origin": "proposal"
+          }
+        ],
+        "remaining_gap": "将结论改为“符合”：依据同口径完整登记，2025年80人低于2020年100人；删除“需要因果识别实验才能比较人数”的缺口说明，因果机制不在原预测的检验范围内。"
+      },
+      "decision": "revise"
+    },
+    {
+      "fixture_id": "synthetic-unjustified_unresolved",
+      "arm": "shared",
+      "expected_decisions": [
+        "revise"
+      ],
+      "common_input_sha256": "f1beb76084387f4bccd03a69efde98fad128083847738bbaa27aceb2e01f641f",
+      "request_sha256": "4f7fea645e0824d29e480dd7ae4a8732f8a74e5d816e7a2449b918912c33a652",
+      "prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1",
+      "status": "completed",
+      "api_response_received": true,
+      "schema_valid": true,
+      "expected_match": true,
+      "review": {
+        "id": "synthetic-unjustified_unresolved",
+        "decision": "revise",
+        "checks": {
+          "object_match": "pass",
+          "condition_logic": "pass",
+          "time_alignment": "pass",
+          "evidence_support": "pass",
+          "counterevidence": "pass",
+          "verdict_logic": "fail"
+        },
+        "issues": [
+          {
+            "check": "verdict_logic",
+            "reason": "原句是无条件的人口比较预测，题设证据已给出同地区、同口径、同指标且观察期已完成的2020年100人与2025年80人，主要结果明确符合（80<100）。建议却把“因果识别实验”新增为判断人数是否下降的门槛，并据此判为暂无法判断；这违反“因果机制未获证明不额外加为结果成立门槛”的口径，属于无依据的未定。",
+            "quote_ref": "q3",
+            "source_quote": "虽然同口径登记明确为100人降至80人，但没有人口变化的因果识别实验，所以无法判断人数是否下降。",
+            "evidence_id": null,
+            "quote_resolution": "program_supplied_verbatim_option",
+            "quote_origin": "proposal"
+          }
+        ],
+        "remaining_gap": "应把verdict改为正确（主要结果符合），删除以缺少因果识别实验为由的未定；limitation可保留不推断因果机制，remaining_gap应为空。"
+      },
+      "decision": "revise"
+    },
+    {
+      "fixture_id": "synthetic-causal_overclaim",
+      "arm": "legacy",
+      "expected_decisions": [
+        "revise",
+        "unresolved"
+      ],
+      "common_input_sha256": "aed3812b185a199506986f110c540fb0b00ae3b969738cd7e805ebe3ee984d07",
+      "request_sha256": "22511a059bcf5c32b27cda83547bd5108daa2057185845fcaf32164c6429f6a3",
+      "prompt_sha256": "fe64d20b3d3cb81be0d11d63babe30487df93edf8a719de208973c011e3151b0",
+      "status": "completed",
+      "api_response_received": true,
+      "schema_valid": true,
+      "expected_match": true,
+      "review": {
+        "id": "synthetic-causal_overclaim",
+        "decision": "revise",
+        "checks": {
+          "object_match": "pass",
+          "condition_logic": "pass",
+          "time_alignment": "pass",
+          "evidence_support": "fail",
+          "counterevidence": "pass",
+          "verdict_logic": "fail"
+        },
+        "issues": [
+          {
+            "check": "evidence_support",
+            "reason": "所引证据只支持描述性结果：2025年每万人6起低于2020年每万人10起；它明确说明这些观察没有识别各措施的因果效应，因此不能支持“灯光改造是唯一原因”或“排除限速等所有因素”的因果声明。",
+            "quote_ref": "q4",
+            "source_quote": "同一澄星地区按同口径记录：2020年每万人10起事故，2025年每万人6起。同期实施灯光改造和限速；这些描述性观察没有识别各措施的因果效应。",
+            "evidence_id": "synthetic-evidence-causal_overclaim",
+            "quote_resolution": "program_supplied_verbatim_option",
+            "quote_origin": "evidence"
+          },
+          {
+            "check": "verdict_logic",
+            "reason": "建议把“事故率低于2020年”这一主要结果判为“正确”尚可，但reason和limitation把描述性下降升级为已证明唯一因果并排除其他因素，超出原预测和证据口径；应删除因果唯一性断言，并把limitation改为未识别因果效应。",
+            "quote_ref": "q3",
+            "source_quote": "这证明灯光改造是事故率下降的唯一原因，并且排除了限速等所有其他因素。",
+            "evidence_id": null,
+            "quote_resolution": "program_supplied_verbatim_option",
+            "quote_origin": "proposal"
+          }
+        ],
+        "remaining_gap": "需将reason与limitation改为仅陈述同口径事故率下降这一结果，并明确描述性观察不能识别灯光改造与限速各自的因果效应；无需新增外部材料。"
+      },
+      "decision": "revise"
+    },
+    {
+      "fixture_id": "synthetic-causal_overclaim",
+      "arm": "shared",
+      "expected_decisions": [
+        "revise",
+        "unresolved"
+      ],
+      "common_input_sha256": "aed3812b185a199506986f110c540fb0b00ae3b969738cd7e805ebe3ee984d07",
+      "request_sha256": "6f3e297ad904ae1cbf8ef5b890ef4a24fe2b201bc7b46404f1f67e11ea87404a",
+      "prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1",
+      "status": "completed",
+      "api_response_received": true,
+      "schema_valid": true,
+      "expected_match": true,
+      "review": {
+        "id": "synthetic-causal_overclaim",
+        "decision": "revise",
+        "checks": {
+          "object_match": "pass",
+          "condition_logic": "pass",
+          "time_alignment": "pass",
+          "evidence_support": "fail",
+          "counterevidence": "pass",
+          "verdict_logic": "fail"
+        },
+        "issues": [
+          {
+            "check": "evidence_support",
+            "reason": "所引证据只支持描述性结果：事故率从每万人10起降至6起，并明确说明未识别各措施的因果效应；它不支持“灯光改造是唯一原因”或“排除限速等所有因素”的因果断言。",
+            "quote_ref": "q4",
+            "source_quote": "同一澄星地区按同口径记录：2020年每万人10起事故，2025年每万人6起。同期实施灯光改造和限速；这些描述性观察没有识别各措施的因果效应。",
+            "evidence_id": "synthetic-evidence-causal_overclaim",
+            "quote_resolution": "program_supplied_verbatim_option",
+            "quote_origin": "evidence"
+          },
+          {
+            "check": "verdict_logic",
+            "reason": "建议把结果符合升级为唯一因果机制已证明，并据此写“正确”；但原文预测的是事故率低于2020年，证据支持该结果，却不支持唯一因果解释。应保留结果判断，并把因果识别限制写入limitation，而不是作为结论依据。",
+            "quote_ref": "q3",
+            "source_quote": "这证明灯光改造是事故率下降的唯一原因，并且排除了限速等所有其他因素。",
+            "evidence_id": null,
+            "quote_resolution": "program_supplied_verbatim_option",
+            "quote_origin": "proposal"
+          }
+        ],
+        "remaining_gap": "需把reason与limitation改为仅陈述2025年每万人6起低于2020年每万人10起这一结果，并明确描述性观察未识别灯光改造与限速各自的因果效应；不得声称唯一原因或排除其他因素。"
+      },
+      "decision": "revise"
+    }
+  ],
+  "summary": {
+    "legacy": {
+      "requested": 8,
+      "completed": 8,
+      "schema_failed": 0,
+      "call_failed": 0,
+      "expected_matches": 7,
+      "completed_mismatches": 1
+    },
+    "shared": {
+      "requested": 8,
+      "completed": 8,
+      "schema_failed": 0,
+      "call_failed": 0,
+      "expected_matches": 8,
+      "completed_mismatches": 0
+    }
+  },
+  "totals_before": {
+    "estimated_cost_CNY": 5.53957112,
+    "estimated_off_peak_cost_CNY": 2.76978556,
+    "price_basis": "conservative peak estimate; missing usage retains reservations; provider billing not checked",
+    "unknown_or_inflight_reserved_CNY": 0,
+    "budget_committed_CNY": 5.53957112,
+    "usage_unknown_requests": 0,
+    "usage_unknown_reserved_CNY": 0,
+    "total_tokens": 2710077,
+    "completed_stages": 388,
+    "cache_hits_this_run": 0,
+    "active_requests": 0,
+    "peak_concurrency_this_run": 8,
+    "elapsed_seconds": 252.27
+  },
+  "totals_after": {
+    "estimated_cost_CNY": 5.58972568,
+    "estimated_off_peak_cost_CNY": 2.79486284,
+    "price_basis": "conservative peak estimate; missing usage retains reservations; provider billing not checked",
+    "unknown_or_inflight_reserved_CNY": 0,
+    "budget_committed_CNY": 5.58972568,
+    "usage_unknown_requests": 0,
+    "usage_unknown_reserved_CNY": 0,
+    "total_tokens": 2752941,
+    "completed_stages": 404,
+    "cache_hits_this_run": 0,
+    "active_requests": 0,
+    "peak_concurrency_this_run": 8,
+    "elapsed_seconds": 259.47
+  },
+  "shared_ledger_delta": {
+    "estimated_cost_CNY": 0.05015456,
+    "estimated_off_peak_cost_CNY": 0.02507728,
+    "budget_committed_CNY": 0.05015456,
+    "unknown_or_inflight_reserved_CNY": 0,
+    "usage_unknown_requests": 0,
+    "usage_unknown_reserved_CNY": 0,
+    "total_tokens": 42864,
+    "completed_stages": 16,
+    "cache_hits_this_run": 0
+  },
+  "accounting_note": "Uses the same runner and budget as the book run. This delta is already included in the shared ledger: never add it again. Concurrent unrelated work would also affect before/after deltas. Missing totals remain null.",
+  "limitations": "These are human-authored fictional logic contracts, not real-world gold labels or evidence of factual accuracy on book predictions."
+}

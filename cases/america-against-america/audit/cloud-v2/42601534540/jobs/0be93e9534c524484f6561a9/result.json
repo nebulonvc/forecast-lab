@@ -1,0 +1,696 @@
+{
+  "claim_id": "txt-1c4066fc0c-000091244-000091270",
+  "version": "search-verifier-v2",
+  "input_sha256": "384736670d3fb01d9732532eeb1e5a6976864f5a3672eb7df2a31ebcf368fd8d",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000091244-000091270",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "对象为ACT等承担标准化考试的美国私营/非营利考试公司；条件为机构自身弄虚作假被证实；观察口径为造假被证实后是否出现业务大量流失、合同取消、收入骤降乃至公司垮台或停止运营。观察时段为1991年前后至2026-11-09。",
+    "reason": "原文是条件性判断：只有考试公司自身弄虚作假，才可能因失去业务而垮台。现有材料显示的是试题泄露、外部作弊及ACT取消考试、调整安全部门，并未证明ACT自身弄虚作假，触发条件未满足。",
+    "limitation": "材料只能证明泄题与外部作弊事件及ACT仍在运营，不能证明机构自身造假，也不能据此验证或否定条件句的结果。原文用“可能”，不要求必然发生。",
+    "evidence_ids": [
+      "ev-458bc4cb92589795c8c4c6fd",
+      "ev-4c44ea35ac19939e9c4ffbfe",
+      "prior-7af69977650d65fc1756",
+      "ev-e40418442dbfd0207f47767e"
+    ],
+    "method": "信誉损失通过业务收入影响机构生存",
+    "method_basis": "inferred",
+    "observation_end": "2026-11-09",
+    "future_time_text": "",
+    "condition_state": "not_met",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-458bc4cb92589795c8c4c6fd",
+        "relation": "boundary",
+        "quote": "ACT Inc, the Iowa-based nonprofit that operates the test, said it halted the test after discovering that it had leaked in advance.",
+        "publication_date": "2016-06-11",
+        "observation_end": "2016-06-11",
+        "limitation": "证明试题泄露导致取消考试，但泄露不等于ACT自身弄虚作假，未触发原文条件。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-4c44ea35ac19939e9c4ffbfe",
+        "relation": "boundary",
+        "quote": "ACT Inc, maker of America’s most popular university entrance exam, is laying off its head of test security and plans to audit nearly 200 education centres after Reuters detailed widespread cheating in an ACT-owned college-prep program for international students.",
+        "publication_date": "2016-08-10",
+        "observation_end": "2016-08-10",
+        "limitation": "涉及外部作弊与安全整改，未证明ACT自身造假，也未显示公司垮台。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-7af69977650d65fc1756",
+        "relation": "counter",
+        "quote": "ACT宣布完成Delaware公益公司组建及Nexus合作交易，ACT Education Corp继续原有评估、证书和其他服务，另有原爱荷华非营利组织延续安排。",
+        "publication_date": "2024-05-01",
+        "observation_end": "2024-05-01",
+        "limitation": "显示ACT在2024年仍延续主要业务，但这是重组而非因自身造假垮台，不能直接反证条件句。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-e40418442dbfd0207f47767e",
+        "relation": "background",
+        "quote": "After years of losses, the nonprofit ACT is moving the test into a for-profit corporation that will be majority owned by Nexus Capital Management.",
+        "publication_date": "2024-04-10",
+        "observation_end": "2024-04-10",
+        "limitation": "说明ACT因多年亏损而重组，但亏损原因未归因于机构自身造假，不能作为条件句结果证据。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺少ACT等考试公司自身弄虚作假被证实、随后业务大量流失或公司垮台的直接证据；现有材料只涉及外部泄题/作弊与业务重组。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000091244-000091270",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "对象为ACT等承担标准化考试的美国私营/非营利考试公司；条件为机构自身弄虚作假被证实；观察口径为造假被证实后是否出现业务大量流失、合同取消、收入骤降乃至公司垮台或停止运营。观察时段为1991年前后至2026-11-09。",
+    "reason": "原文是条件性判断：只有考试公司自身弄虚作假，才可能因失去业务而垮台。现有材料显示的是试题泄露、外部作弊及ACT取消考试、调整安全部门，并未证明ACT自身弄虚作假，触发条件未满足。",
+    "limitation": "材料只能证明泄题与外部作弊事件及ACT仍在运营，不能证明机构自身造假，也不能据此验证或否定条件句的结果。原文用“可能”，不要求必然发生。",
+    "evidence_ids": [
+      "ev-458bc4cb92589795c8c4c6fd",
+      "ev-4c44ea35ac19939e9c4ffbfe",
+      "prior-7af69977650d65fc1756",
+      "ev-e40418442dbfd0207f47767e"
+    ],
+    "method": "信誉损失通过业务收入影响机构生存",
+    "method_basis": "inferred",
+    "observation_end": "2026-11-09",
+    "future_time_text": "",
+    "condition_state": "not_met",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-458bc4cb92589795c8c4c6fd",
+        "relation": "boundary",
+        "quote": "ACT Inc, the Iowa-based nonprofit that operates the test, said it halted the test after discovering that it had leaked in advance.",
+        "publication_date": "2016-06-11",
+        "observation_end": "2016-06-11",
+        "limitation": "证明试题泄露导致取消考试，但泄露不等于ACT自身弄虚作假，未触发原文条件。"
+      },
+      {
+        "evidence_id": "ev-4c44ea35ac19939e9c4ffbfe",
+        "relation": "boundary",
+        "quote": "ACT Inc, maker of America’s most popular university entrance exam, is laying off its head of test security and plans to audit nearly 200 education centres after Reuters detailed widespread cheating in an ACT-owned college-prep program for international students.",
+        "publication_date": "2016-08-10",
+        "observation_end": "2016-08-10",
+        "limitation": "涉及外部作弊与安全整改，未证明ACT自身造假，也未显示公司垮台。"
+      },
+      {
+        "evidence_id": "prior-7af69977650d65fc1756",
+        "relation": "counter",
+        "quote": "ACT宣布完成Delaware公益公司组建及Nexus合作交易，ACT Education Corp继续原有评估、证书和其他服务，另有原爱荷华非营利组织延续安排。",
+        "publication_date": "2024-05-01",
+        "observation_end": "2024-05-01",
+        "limitation": "显示ACT在2024年仍延续主要业务，但这是重组而非因自身造假垮台，不能直接反证条件句。"
+      },
+      {
+        "evidence_id": "ev-e40418442dbfd0207f47767e",
+        "relation": "background",
+        "quote": "After years of losses, the nonprofit ACT is moving the test into a for-profit corporation that will be majority owned by Nexus Capital Management.",
+        "publication_date": "2024-04-10",
+        "observation_end": "2024-04-10",
+        "limitation": "说明ACT因多年亏损而重组，但亏损原因未归因于机构自身造假，不能作为条件句结果证据。"
+      }
+    ],
+    "remaining_gap": "缺少ACT等考试公司自身弄虚作假被证实、随后业务大量流失或公司垮台的直接证据；现有材料只涉及外部泄题/作弊与业务重组。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-ab6d6b2943c88943796e",
+      "url": "https://www.act.org/content/act/en/newsroom/act-to-move-to-single-test-center-in-south-korea.html",
+      "title": "ev-r2-l1-act-breach",
+      "published_date": "2016-11-04",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2016-11-04",
+        "latest": "2016-11-04"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-act-breach",
+      "archive_sha256": "567b8ae34209a9b898db842d05ab8a98b814d3085f84d01bfe6d57df2e416847",
+      "archive_path": "data/sources/r2-l1-act-security.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-7af69977650d65fc1756",
+      "url": "https://industryinsights.act.org/2024/05/act-completes-formation-partnership-nexus",
+      "title": "ev-r2-l1-act-continuity",
+      "published_date": "2024-05-01",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-05-01",
+        "latest": "2024-05-01"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-act-continuity",
+      "archive_sha256": "a9fe27f18e33d9a102dbeeb303e8d01a7d8ec004c369343fe0454625aa2f0912",
+      "archive_path": "data/sources/r2-l1-act2024.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-4c44ea35ac19939e9c4ffbfe",
+      "url": "https://www.reuters.com/article/world/exclusive-act-shakes-up-security-unit-plans-audit-after-cheating-reports-idUSKCN10L16D/",
+      "resolved_url": "https://www.reuters.com/article/world/exclusive-act-shakes-up-security-unit-plans-audit-after-cheating-reports-idUSKCN10L16D/",
+      "title": "Exclusive - ACT shakes up security unit, plans audit after cheating reports",
+      "published_date": "2016-08-10",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2016-08-10",
+        "latest": "2016-08-10"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:18.511568+00:00",
+      "archive_sha256": "b69e7a095db24743278f6a1396b16cbe16c7d8b8a79822a3e56dd94d45deb215",
+      "archive_path": "jobs/0be93e9534c524484f6561a9/b69e7a095db24743278f6a1396b16cbe16c7d8b8a79822a3e56dd94d45deb215.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-458bc4cb92589795c8c4c6fd",
+      "url": "https://www.reuters.com/article/world/act-cancels-entrance-exam-in-south-korea-hong-kong-after-test-leak-idUSKCN0YX00V/",
+      "resolved_url": "https://www.reuters.com/article/world/act-cancels-entrance-exam-in-south-korea-hong-kong-after-test-leak-idUSKCN0YX00V/",
+      "title": "ACT cancels entrance exam in South Korea, Hong Kong after test leak",
+      "published_date": "2016-06-11",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2016-06-11",
+        "latest": "2016-06-11"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:18.511685+00:00",
+      "archive_sha256": "840e3c79d51228678711b3ee581d628ebe864908fada3094d964583f2792a1c2",
+      "archive_path": "jobs/0be93e9534c524484f6561a9/840e3c79d51228678711b3ee581d628ebe864908fada3094d964583f2792a1c2.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e40418442dbfd0207f47767e",
+      "url": "https://www.forbes.com/sites/emmawhitford/2024/04/10/latest-private-equity-trophy-act-test-for-college-admissions/",
+      "resolved_url": "https://www.forbes.com/sites/emmawhitford/2024/04/10/latest-private-equity-trophy-act-test-for-college-admissions/",
+      "title": "Latest Private Equity Trophy: ACT Test For College Admissions",
+      "published_date": "2024-04-10",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-04-10",
+        "latest": "2024-04-10"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:18.511762+00:00",
+      "archive_sha256": "c9ff8d52706fc3e0b34b80e37de54755db187dd8c06b5fd05e43b117ded6bfef",
+      "archive_path": "jobs/0be93e9534c524484f6561a9/c9ff8d52706fc3e0b34b80e37de54755db187dd8c06b5fd05e43b117ded6bfef.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-5593c1efe29fb383b71ade5b",
+      "url": "https://en.wikipedia.org/wiki/ACT_Inc",
+      "resolved_url": "https://en.wikipedia.org/wiki/ACT_Inc",
+      "title": "ACT (for-profit organization)",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:18.511846+00:00",
+      "archive_sha256": "dcad65342c9220398e27e2ef23e100a74fef428da8f2222fb21a2391d0adea07",
+      "archive_path": "jobs/0be93e9534c524484f6561a9/dcad65342c9220398e27e2ef23e100a74fef428da8f2222fb21a2391d0adea07.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "ACT Inc test security breach cheating scandal contract lost revenue company collapse",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "ACT Inc still operating testing business after security breach settlement 2024",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "ACT Inc test security breach cheating scandal contract lost revenue company collapse",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "ACT Inc still operating testing business after security breach settlement 2024",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少ACT等考试公司自身弄虚作假被证实、随后业务大量流失或公司垮台的直接证据；现有材料只涉及外部泄题/作弊与业务重组。",
+  "source_statuses": [
+    {
+      "url": "https://www.reuters.com/article/world/exclusive-act-shakes-up-security-unit-plans-audit-after-cheating-reports-idUSKCN10L16D/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.reuters.com/article/world/act-cancels-entrance-exam-in-south-korea-hong-kong-after-test-leak-idUSKCN0YX00V/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.forbes.com/sites/emmawhitford/2024/04/10/latest-private-equity-trophy-act-test-for-college-admissions/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/ACT_Inc",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "db827bd09add42051ddc5eb53b19ef6f1b93d33e51baccdb95f63e81e3abc825"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "c66367f92d328100f0f6469ecdd18a20",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f5af1fc5fcd810dc507bf2b2422b85dd",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "1533b816ef657230e3189e823a1c06005e3f1405f896a243d9a916a3d878394d"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "207ea264765722e318d0229d4b71944b",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "9fb60cb0fde46538bf19fc4dc3504638df904338a31b9ef652ec648ec4ad860f"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "c66367f92d328100f0f6469ecdd18a20",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f5af1fc5fcd810dc507bf2b2422b85dd",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "12da16338ee72017322cab3e2f44161e3920d757ed54f829d1444528596ae861"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "537e7a3e578ec89409face088ed0762f6486c5b77a3fb1e37d846f0f82067360"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "044897cbc632480a41e19c03a8f78063057a73ff1e0aca96ccedbf27afe8fd1d"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "legacy_hint",
+      "request_sha256": "04391db72235d743348c155b4d3d7585aa3f8d95a3424395bedb73d70f1a1dcc"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "shared_hint",
+      "request_sha256": "baebf354560ad381fc6f68f9f3b4b049e129f9aa3442ebf77fde445179bb539e"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "legacy_nohint",
+      "request_sha256": "1e20c227c5ad16e760eeb069a63654951d97cfab451eef26084be432e3ae31cb"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-ab6d6b2943c88943796e",
+        "source_bytes": 172,
+        "shown_bytes": 172,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-7af69977650d65fc1756",
+        "source_bytes": 175,
+        "shown_bytes": 175,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-4c44ea35ac19939e9c4ffbfe",
+        "source_bytes": 1002,
+        "shown_bytes": 1002,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-458bc4cb92589795c8c4c6fd",
+        "source_bytes": 1004,
+        "shown_bytes": 1004,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-e40418442dbfd0207f47767e",
+        "source_bytes": 1000,
+        "shown_bytes": 1000,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-5593c1efe29fb383b71ade5b",
+        "source_bytes": 12028,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-ab6d6b2943c88943796e",
+        "source_bytes": 172,
+        "shown_bytes": 172,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-7af69977650d65fc1756",
+        "source_bytes": 175,
+        "shown_bytes": 175,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-4c44ea35ac19939e9c4ffbfe",
+        "source_bytes": 1002,
+        "shown_bytes": 1002,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-458bc4cb92589795c8c4c6fd",
+        "source_bytes": 1004,
+        "shown_bytes": 1004,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-e40418442dbfd0207f47767e",
+        "source_bytes": 1000,
+        "shown_bytes": 1000,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-5593c1efe29fb383b71ade5b",
+        "source_bytes": 12028,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 3,
+  "review_audit": {
+    "selected": true,
+    "arms": {
+      "shared_nohint": {
+        "status": "completed",
+        "common_input_sha256": "aac2bd9805e468df7333daada7706fd418a169271bad9547f96244b15a2e297a",
+        "schema_repaired": false,
+        "review": {
+          "id": "txt-1c4066fc0c-000091244-000091270",
+          "decision": "accept",
+          "checks": {
+            "object_match": "pass",
+            "condition_logic": "pass",
+            "time_alignment": "pass",
+            "evidence_support": "pass",
+            "counterevidence": "pass",
+            "verdict_logic": "pass"
+          },
+          "issues": [],
+          "remaining_gap": ""
+        },
+        "request_sha256": "044897cbc632480a41e19c03a8f78063057a73ff1e0aca96ccedbf27afe8fd1d",
+        "prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+      },
+      "legacy_hint": {
+        "status": "completed",
+        "schema_repaired": false,
+        "common_input_sha256": "aac2bd9805e468df7333daada7706fd418a169271bad9547f96244b15a2e297a",
+        "primary_material_sha256": "aac2bd9805e468df7333daada7706fd418a169271bad9547f96244b15a2e297a",
+        "request_sha256": "04391db72235d743348c155b4d3d7585aa3f8d95a3424395bedb73d70f1a1dcc",
+        "prompt_sha256": "fe64d20b3d3cb81be0d11d63babe30487df93edf8a719de208973c011e3151b0",
+        "primary_schema_repaired": false,
+        "same_protocol_as_primary": true,
+        "review": {
+          "id": "txt-1c4066fc0c-000091244-000091270",
+          "decision": "accept",
+          "checks": {
+            "object_match": "pass",
+            "condition_logic": "pass",
+            "time_alignment": "pass",
+            "evidence_support": "pass",
+            "counterevidence": "pass",
+            "verdict_logic": "pass"
+          },
+          "issues": [],
+          "remaining_gap": ""
+        }
+      },
+      "shared_hint": {
+        "status": "completed",
+        "schema_repaired": false,
+        "common_input_sha256": "aac2bd9805e468df7333daada7706fd418a169271bad9547f96244b15a2e297a",
+        "primary_material_sha256": "aac2bd9805e468df7333daada7706fd418a169271bad9547f96244b15a2e297a",
+        "request_sha256": "baebf354560ad381fc6f68f9f3b4b049e129f9aa3442ebf77fde445179bb539e",
+        "prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1",
+        "primary_schema_repaired": false,
+        "same_protocol_as_primary": true,
+        "review": {
+          "id": "txt-1c4066fc0c-000091244-000091270",
+          "decision": "accept",
+          "checks": {
+            "object_match": "pass",
+            "condition_logic": "pass",
+            "time_alignment": "pass",
+            "evidence_support": "pass",
+            "counterevidence": "pass",
+            "verdict_logic": "pass"
+          },
+          "issues": [],
+          "remaining_gap": ""
+        }
+      },
+      "legacy_nohint": {
+        "status": "completed",
+        "schema_repaired": false,
+        "common_input_sha256": "aac2bd9805e468df7333daada7706fd418a169271bad9547f96244b15a2e297a",
+        "primary_material_sha256": "aac2bd9805e468df7333daada7706fd418a169271bad9547f96244b15a2e297a",
+        "request_sha256": "1e20c227c5ad16e760eeb069a63654951d97cfab451eef26084be432e3ae31cb",
+        "prompt_sha256": "fe64d20b3d3cb81be0d11d63babe30487df93edf8a719de208973c011e3151b0",
+        "primary_schema_repaired": false,
+        "same_protocol_as_primary": true,
+        "review": {
+          "id": "txt-1c4066fc0c-000091244-000091270",
+          "decision": "accept",
+          "checks": {
+            "object_match": "pass",
+            "condition_logic": "pass",
+            "time_alignment": "pass",
+            "evidence_support": "pass",
+            "counterevidence": "pass",
+            "verdict_logic": "pass"
+          },
+          "issues": [],
+          "remaining_gap": ""
+        }
+      }
+    }
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000091244-000091270",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000091244-000091270",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "对象为ACT等承担标准化考试的美国私营/非营利考试公司；条件为机构自身弄虚作假被证实；观察口径为造假被证实后是否出现业务大量流失、合同取消、收入骤降乃至公司垮台或停止运营。观察时段为1991年前后至2026-11-09。",
+      "reason": "原文是条件性判断：只有考试公司自身弄虚作假，才可能因失去业务而垮台。现有材料显示的是试题泄露、外部作弊及ACT取消考试、调整安全部门，并未证明ACT自身弄虚作假，触发条件未满足。",
+      "limitation": "材料只能证明泄题与外部作弊事件及ACT仍在运营，不能证明机构自身造假，也不能据此验证或否定条件句的结果。原文用“可能”，不要求必然发生。",
+      "evidence_ids": [
+        "ev-458bc4cb92589795c8c4c6fd",
+        "ev-4c44ea35ac19939e9c4ffbfe",
+        "prior-7af69977650d65fc1756",
+        "ev-e40418442dbfd0207f47767e"
+      ],
+      "method": "信誉损失通过业务收入影响机构生存",
+      "method_basis": "inferred",
+      "observation_end": "2026-11-09",
+      "future_time_text": "",
+      "condition_state": "not_met",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-458bc4cb92589795c8c4c6fd",
+          "relation": "boundary",
+          "quote": "ACT Inc, the Iowa-based nonprofit that operates the test, said it halted the test after discovering that it had leaked in advance.",
+          "publication_date": "2016-06-11",
+          "observation_end": "2016-06-11",
+          "limitation": "证明试题泄露导致取消考试，但泄露不等于ACT自身弄虚作假，未触发原文条件。"
+        },
+        {
+          "evidence_id": "ev-4c44ea35ac19939e9c4ffbfe",
+          "relation": "boundary",
+          "quote": "ACT Inc, maker of America’s most popular university entrance exam, is laying off its head of test security and plans to audit nearly 200 education centres after Reuters detailed widespread cheating in an ACT-owned college-prep program for international students.",
+          "publication_date": "2016-08-10",
+          "observation_end": "2016-08-10",
+          "limitation": "涉及外部作弊与安全整改，未证明ACT自身造假，也未显示公司垮台。"
+        },
+        {
+          "evidence_id": "prior-7af69977650d65fc1756",
+          "relation": "counter",
+          "quote": "ACT宣布完成Delaware公益公司组建及Nexus合作交易，ACT Education Corp继续原有评估、证书和其他服务，另有原爱荷华非营利组织延续安排。",
+          "publication_date": "2024-05-01",
+          "observation_end": "2024-05-01",
+          "limitation": "显示ACT在2024年仍延续主要业务，但这是重组而非因自身造假垮台，不能直接反证条件句。"
+        },
+        {
+          "evidence_id": "ev-e40418442dbfd0207f47767e",
+          "relation": "background",
+          "quote": "After years of losses, the nonprofit ACT is moving the test into a for-profit corporation that will be majority owned by Nexus Capital Management.",
+          "publication_date": "2024-04-10",
+          "observation_end": "2024-04-10",
+          "limitation": "说明ACT因多年亏损而重组，但亏损原因未归因于机构自身造假，不能作为条件句结果证据。"
+        }
+      ],
+      "remaining_gap": "缺少ACT等考试公司自身弄虚作假被证实、随后业务大量流失或公司垮台的直接证据；现有材料只涉及外部泄题/作弊与业务重组。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象为ACT等承担标准化考试的美国私营/非营利考试公司；条件为机构自身（而非外部个人或泄题者）弄虚作假；可观察口径为造假被证实后是否出现业务大量流失、合同取消、收入骤降乃至公司倒闭或停止运营。原文用“可能”，不要求必然发生；反证包括机构被证实造假后仍长期保有主要业务或仅受有限处罚。",
+  "elapsed_seconds": 22.0,
+  "completed_at": "2026-11-09T10:33:30.501398+00:00"
+}

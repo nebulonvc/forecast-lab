@@ -1,0 +1,124 @@
+{
+  "id": "txt-5386516eaf-001850792-001850836",
+  "assess": {
+    "id": "txt-5386516eaf-001850792-001850836",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "生产投资的风险此后所要求的利润补偿会低于当时。",
+    "reason": "已归档的是股票溢价：一个口径下降，一个已实现口径上升。股票溢价不是储蓄投入生产时所要求的利润补偿。两者只是相关指标相交，不能计分。",
+    "limitation": "旧的部分符合已撤回。对象不一致时不保留分数。",
+    "evidence_ids": [
+      "ev-nber-equity-premium",
+      "ev-dimson-erp-2002"
+    ],
+    "method": "复核后撤回计分。原支持与反证仍留在修订轨迹，不当作同对象分数。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "hereafter",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-nber-equity-premium",
+        "quote": "Between 1926 and 1970, for example, the average premium for the S&P stocks relative to long-term government bonds is 6.8 percentage points. Since then, this premium has averaged 0.7 of a percentage point",
+        "relation": "support",
+        "limitation": "计算溢价下降。",
+        "observation_end": "1999-12-31",
+        "publication_date": null,
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "ev-dimson-erp-2002",
+        "quote": "relative to bills was 4.1 percent, whereas over the period 1950–2001, it was 7.7 percent",
+        "relation": "counter",
+        "limitation": "已实现世界溢价后半段更高。",
+        "observation_end": "2001-12-31",
+        "publication_date": "2002-09",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺1909年之后、为补偿生产投资风险而要求的利润率是否低于当时的同对象序列。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001850792-001850836",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-nber-equity-premium"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-nber-equity-premium"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "revision_trail": {
+    "withdrawn_verdict": "部分符合",
+    "withdrawn_reason": "美国股票相对长期国债的计算溢价，1926–1970年为6.8个百分点，其后为0.7个百分点。已实现的世界股票溢价则是1950–2001年7.7%，高于20世纪上半叶的4.1%。要求的补偿在一个口径上变小，在已实现口径上没有变小。",
+    "failed_review": {
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "股票溢价换成了另一个现象，不是生产投资风险所要求的利润。",
+          "source_quote": "will hereafter require less than at present.",
+          "evidence_id": null
+        }
+      ],
+      "remaining_gap": "缺1909年之后、为补偿生产投资风险而要求的利润率是否低于当时的同对象序列。"
+    },
+    "why": "股票溢价换成了另一个现象，不是生产投资风险所要求的利润。"
+  },
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "calculated US equity premium fell after 1970"
+      },
+      {
+        "role": "counter",
+        "query": "realized world equity premium higher in 1950-2001"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://www.nber.org/system/files/working_papers/w8172/w8172.pdf",
+      "https://www.wertpapier-forum.de/applications/core/interface/file/attachment.php?id=80005"
+    ],
+    "reason": "两个溢价口径方向相反。"
+  }
+}

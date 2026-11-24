@@ -1,0 +1,265 @@
+{
+ "case_files_scanned": 125,
+ "book_overlap_window_characters": 300,
+ "allowed_quote_count": 61,
+ "maximum_allowed_quote_characters": 954,
+ "long_quote_field_instances": 50,
+ "nonquote_fulltext_overlap_hits": [],
+ "unstructured_fulltext_overlap_hits": [],
+ "nonempty_contexts": [],
+ "secret_scan_hits": [],
+ "secret_scan_method": "指定Exa密钥内部精确匹配及常见API/私钥模式；不输出任何密钥值",
+ "full_text_files_packaged": false,
+ "long_quote_exemptions": [
+  {
+   "file": "data/claims.jsonl",
+   "field": "[11].quote",
+   "chars": 352
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[11].extraction_v2.model_quote",
+   "chars": 352
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[18].quote",
+   "chars": 411
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[18].extraction_v2.model_quote",
+   "chars": 411
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[25].quote",
+   "chars": 364
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[25].extraction_v2.model_quote",
+   "chars": 364
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[51].quote",
+   "chars": 343
+  },
+  {
+   "file": "data/claims.jsonl",
+   "field": "[51].extraction_v2.model_quote",
+   "chars": 343
+  },
+  {
+   "file": "output/claims_before_assessment_3d732b3fc8bd.jsonl",
+   "field": "[11].quote",
+   "chars": 352
+  },
+  {
+   "file": "output/claims_before_assessment_3d732b3fc8bd.jsonl",
+   "field": "[11].extraction_v2.model_quote",
+   "chars": 352
+  },
+  {
+   "file": "output/claims_before_assessment_3d732b3fc8bd.jsonl",
+   "field": "[18].quote",
+   "chars": 411
+  },
+  {
+   "file": "output/claims_before_assessment_3d732b3fc8bd.jsonl",
+   "field": "[18].extraction_v2.model_quote",
+   "chars": 411
+  },
+  {
+   "file": "output/claims_before_assessment_3d732b3fc8bd.jsonl",
+   "field": "[25].quote",
+   "chars": 364
+  },
+  {
+   "file": "output/claims_before_assessment_3d732b3fc8bd.jsonl",
+   "field": "[25].extraction_v2.model_quote",
+   "chars": 364
+  },
+  {
+   "file": "output/claims_before_assessment_3d732b3fc8bd.jsonl",
+   "field": "[51].quote",
+   "chars": 343
+  },
+  {
+   "file": "output/claims_before_assessment_3d732b3fc8bd.jsonl",
+   "field": "[51].extraction_v2.model_quote",
+   "chars": 343
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[11].claim.quote",
+   "chars": 352
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[11].claim.extraction_v2.model_quote",
+   "chars": 352
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[16].claim.quote",
+   "chars": 411
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[16].claim.extraction_v2.model_quote",
+   "chars": 411
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[21].claim.quote",
+   "chars": 364
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[21].claim.extraction_v2.model_quote",
+   "chars": 364
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[44].claim.quote",
+   "chars": 343
+  },
+  {
+   "file": "output/verify-v5-run/tasks.jsonl",
+   "field": "[44].claim.extraction_v2.model_quote",
+   "chars": 343
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[11].quote",
+   "chars": 352
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[11].extraction_v2.model_quote",
+   "chars": 352
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[18].quote",
+   "chars": 411
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[18].extraction_v2.model_quote",
+   "chars": 411
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[25].quote",
+   "chars": 364
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[25].extraction_v2.model_quote",
+   "chars": 364
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[51].quote",
+   "chars": 343
+  },
+  {
+   "file": "output/txt_import/claims_proposals.jsonl",
+   "field": "[51].extraction_v2.model_quote",
+   "chars": 343
+  },
+  {
+   "file": "output/txt_import/policy_report.json",
+   "field": ".excluded[1].quote",
+   "chars": 320
+  },
+  {
+   "file": "output/txt_import/policy_report.json",
+   "field": ".excluded[2].quote",
+   "chars": 954
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[10].predictions[1].quote",
+   "chars": 352
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[10].predictions[1].model_quote",
+   "chars": 352
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[31].predictions[0].quote",
+   "chars": 411
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[31].predictions[0].model_quote",
+   "chars": 411
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[84].predictions[0].quote",
+   "chars": 320
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[84].predictions[0].model_quote",
+   "chars": 320
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[87].predictions[0].quote",
+   "chars": 364
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[87].predictions[0].model_quote",
+   "chars": 364
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[91].predictions[2].quote",
+   "chars": 954
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[91].predictions[2].model_quote",
+   "chars": 954
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[128].predictions[1].quote",
+   "chars": 343
+  },
+  {
+   "file": "output/txt_import/proposals.jsonl",
+   "field": "[128].predictions[1].model_quote",
+   "chars": 343
+  },
+  {
+   "file": "output/manual-final/results.manual.jsonl",
+   "field": "[11].quote",
+   "chars": 352
+  },
+  {
+   "file": "output/manual-final/results.manual.jsonl",
+   "field": "[16].quote",
+   "chars": 411
+  },
+  {
+   "file": "output/manual-final/results.manual.jsonl",
+   "field": "[21].quote",
+   "chars": 364
+  },
+  {
+   "file": "output/manual-final/results.manual.jsonl",
+   "field": "[44].quote",
+   "chars": 343
+  }
+ ]
+}

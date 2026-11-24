@@ -1,0 +1,48 @@
+{
+  "id": "txt-4934182645-000124892-000125016",
+  "plan": {
+    "object": "习惯于被别人统治的人民。原文紧接着的原因是他们不会自己攻守，也不认识外国君主。对象仍是这类人民，不把“法国”或“美国”写成必要条件。",
+    "condition": "偶然获得自由。不会攻守和不认识外国君主是作者给出的原因，不是另写的“若且仅若”。",
+    "quantifier": "is speedily brought back；often under a heavier yoke。speedily 和 often 都没有数字。",
+    "result": "很快重新套上轭，而且常常是更重的轭。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "习惯于君主统治的人民获得自由后，没有很快重新处于一个君主或皇帝之下。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "French First Republic 1792 ended Napoleon Empire 1804 Bourbon restoration 1814",
+      "counter_query": "United States independence 1776 remained a republic not restored to monarchy"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [
+      "https://en.wikipedia.org/wiki/French_First_Republic",
+      "https://en.wikipedia.org/wiki/Bourbon_Restoration_in_France",
+      "https://www.gilderlehrman.org/history-resources/essays/creating-new-government"
+    ],
+    "dropped": "没有用模型所知的“美国至今仍是共和国”补伍德文章没有写到的年份。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "speedily",
+    "observation_end": null,
+    "evidence_ids": ["ev-wiki-first-republic", "ev-wiki-bourbon-personal", "ev-gilder-lehrman-1776"],
+    "scope": "对象是习惯于被别人统治、然后获得自由的人民。更重的轭是“常常”，不是每一例都必须更重。",
+    "reason": "章题和笼中兽的比喻把对象写成习惯于君主、一旦放出就不会自己觅食和藏身的人民；紧接着的原因是不会自己攻守，也不认识外国君主。法国在1792年已与普鲁士和奥地利交战，不满足“不认识外国君主”。美国殖民社会有自己的议会并与法国结盟，不是笼中兽那种不会自己行动的人民。补检索到的奥贝丁战役是边境战争，不是这类新获自由的人民。决定性缺口是：没有一份存档同时写出这类人民，以及他们或很快重新套上轭，或没有。混合的两国不能自动记成部分符合。",
+    "limitation": "speedily 和 often 都没有数字。三页都没有出版日。",
+    "method": "用法国从共和国回到帝国和王国，对照美国在独立后建立选举共和国而不是回到世袭君主。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "pass",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "先前的部分符合撤回。殖民定居社会和已经对外作战的法国都没有通过原文对象。条件未通过，不计分。"
+  }
+}

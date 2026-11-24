@@ -1,0 +1,991 @@
+## Terms of Trade Effects: Theory and Measurement
+
+Marshall B. Reinsdorf* Marshall.Reinsdorf@BEA.gov
+
+Revised version of WP2009-01 October 2009
+
+Foreign trade enables a nation to consume a different mix of goods and services than it produces, so to measure real gross domestic income (GDI) for an open economy, we must deflate by an index of the prices of the things that this income is used to buy, not the price index for GDP. The differences between these two indexes come from the export and import components of the GDP, and are measured by the trading gains index. Fisher indexes are a natural way to estimate the conceptual economic indexes of trading gains and real GDI because they are averages of the theoretical upper and lower bounds of the economic indexes. They can be decomposed in a way that permits analyses of the factors driving changes in trading gains, such as changes in the terms of trade and in the relative price of tradables, or changes in the prices of particular commodities. Applying these methods to the United States, we find that trading gains have a median absolute effect on US real GDI of 0.2 percentage points in annual data. The petroleum price shocks that occurred in late 1973 and in 1980 subtracted more than a full percentage point from the annual growth of real GDI, and in the first half of 2008 price increases in petroleum and other imported commodities subtracted 2 percentage points from the annual rate of growth of real GDI, making it negative despite the steady growth of real GDP. On the other hand, with petroleum prices excluded, US terms of trade begin to improve steadily starting in 1995 and the relative price of tradables falls. These effects increase the growth rate of US real GDI by 0.15 percent per year on average.
+
+* I am grateful to Ulrich Kohli for helpful discussions and to Erwin Diewert for helpful comments on an earlier draft of this paper. The views expressed in this paper are solely those of the author and should not be attributed to the Bureau of Economic Analysis.
+
+1. Introduction 
+Over the past half century the openness of the world’s economies has grown rapidly as lower 
+tariffs and advances in communication and transportation have lowered trading costs and as advances 
+in logistics have made complex, trans-national supply chains more manageable. Export and import 
+prices have therefore taken on an increased importance in determining nations’ real consumption 
+possibilities, making information on the effects of changes in these prices an integral part of the story 
+of macroeconomic developments. Indeed, even though over longer intervals trend reversion behavior 
+of trade prices tends to dampen their average annual effect on real gross domestic income (GDI), over 
+a period of 16 years, a quarter of the countries included in Kohli’s (2004) table 1 register effects on 
+real GDI of 0.4 percent per year or more. 
+This paper explains the conceptual framework for measuring the effects of changes in export 
+and import prices on real income, develops techniques for the analysis of those effects, and estimates 
+the amount and sources of changes in trading gains for United States in 1973-2008. Section 2 uses a 
+Laspeyres index framework to introduce the concepts of trading gains and real gross domestic income 
+(GDI). 1 It also proposes a resolution to a longstanding controversy over the deflator for the trade 
+balance in the definition of real GDI, finding that the use of the import price index—which is 
+common in practice and is accepted by the international guidelines found in the SNA (United 
+Nations, 1993 and 2008)—lacks a sound justification. Section 3 then uses the economic approach to 
+index number theory to develop measurement concepts for terms of trade (defined as the ratio of 
+export prices to import prices), trading gains and real GDI. Laspeyres and Paasche indexes are 
+shown to provide upper or lower bounds for these concepts, so averages of these bounds in the form 
+of Fisher indexes provide point estimates that accurately account for substitution effects. Section 4 
+
+1 In the US National Income and Product Accounts (NIPAs) “real GDI” refers to GDI deflated by the GDP deflator, which is an income-approach estimate of a production concept, not an income concept. This paper adopts the nomenclature of the System of National Accounts (SNA), which uses “real GDI” to refer to an income concept. “Command-basis GDI” would be the term in the NIPAs for what this paper calls real GDI.
+
+develops analytical measures of the sources of change in Fisher indexes of trading gains, including a decomposition into effects of changes in terms of trade and changes in the relative price of tradables. Section 5 applies the measurement techniques developed in this paper to US data. With petroleum imports excluded, changes in US terms of trade and the relative price of tradables make a substantial positive contribution to real GDI growth over the period from 1996 to 2007. Yet the overall measure of trading gains seems to have a long-run downward trend resulting from an upward trend in a petroleum import prices.
+
+2. Real GDI as a Measure of the Purchasing Power of Gross Income 
+2.1 Real GDI depends on Real GDP and Trading Gains 
+In nominal terms, production as measured by GDP is conceptually identical to the gross income 
+arising from production as measured by GDI. One might therefore suppose that real GDI must equal 
+real GDP, so that real GDP can serve as a measure of real GDI. Yet, because trade allows a nation to 
+consume a different mix of commodities than it produces, the price index for GDP is not the right 
+deflator for finding the purchasing power of the income arising from gross domestic production. The 
+need to deflate by an index that reflects the uses of income rather than the composition of output 
+makes real GDI a distinct concept from real GDP. 
+GDP equals domestic absorption—which is known as “gross domestic final expenditures” 
+(GDFE) in the SNA—plus exports minus imports. Let pDt⋅qDt, pXt⋅qXt and pMt⋅qMt be inner products 
+
+of the price and quantity vectors for GDFE, exports and imports, respectively, and let PD Paasche, PX Paasche and PM Paasche be Paasche price indexes comparing period t+1 to period t. The Laspeyres volume index of GDP is, then:
+
+VGDP Lasp ≡ pDt⋅qDt+1 + pXt⋅qXt+1 – pMt⋅qMt+1 pDt⋅qDt + pXt⋅qXt – pMt⋅qMt
+
+3 = pDt+1⋅qDt+1 /PD Paasche + pXt+1⋅qXt+1/PX Paasche – pMt+1⋅qMt+1 /PM Paasche pDt⋅qDt + pXt⋅qXt – pMt⋅qMt
+
+. (1)
+
+To keep the exposition simple, the foreign income receipts and payments that are included in 
+gross national income (GNI) but not in GDI are assumed to be zero. 2 This means that in the case of 
+balanced trade, net foreign borrowing is zero and all income is used for current consumption, where 
+for purposes of analyzing terms of trade effects GDFE is an appropriate measure of consumption. 3 
+With no borrowing and income entirely used for current consumption, the purchasing power of 
+income is measured by real current consumption, so the measure of real GDI is real GDFE. But if the 
+exports and imports deflators have different values in equation (1) and trade is balanced, real GDP 
+will differ from real GDI as measured by real GDFE. 
+The requirement that real GDI equal real GDFE when trade is balanced implies that a common 
+deflator is needed for exports and imports. Therefore, the Laspeyres index for real GDI has the form: 
+
+VGDI Lasp =
+
+pDt+1⋅qDt+1/PD Paasche + pXt+1⋅qXt+1/P* – pMt+1⋅qMt+1/P* pDt⋅qDt + pXt⋅qXt – pMt⋅qMt
+
+=
+
+pDt+1⋅qDt+1/PD Paasche + (pXt+1⋅qXt+1 – pMt+1⋅qMt+1)/P* pDt⋅qDt + pXt⋅qXt – pMt⋅qMt . (2)
+
+The ratio of the volume index of real GDI to the volume index of real GDP is known as the trading gains index. The trading gains index equals the ratio of the numerator of equation (2) to the numerator of equation (1), and a nation’s trading gains are measured by the difference between these numerators, or [pXt+1⋅qXt+1/PX Paasche – pMt+1⋅qMt+1 /PM Paasche] – (pXt+1⋅qXt+1 – pMt+1⋅qMt+1)/P*.
+
+2 Extending the results on real GDI to real GNI is a trivial matter. The deflator is the same (Macdonald, 2007, p. 20). 3 Although a measure of real income might need to give special treatment to the investment component of GDFE, this question is tangential to the problem of how to measure terms of trade effects. Weitzman (1976) offers a rationale for treating investment goods like consumption goods in measuring real income.
+
+### 2.2 Use of the Imports Price Index to Deflate the Trade Balance
+
+GDI differs from GDFE when a trade surplus generates income that is used for foreign lending, or when a trade deficit is financed by foreign borrowing. How to measure real GDI in these cases is the topic of a long controversy centering on the definition of P* in equation (2). Of the many proposed definitions for P*, two are regularly used in practice. In the 1980s, several countries adopted the imports index for their national accounts (Vanoli, 2002, p. 475). In particular, the imports index was selected by Denison (1981) to measure real GNI in the US national accounts. It is also often used by researchers; for a recent example, see Kehoe and Ruhl (2008). The other leading candidate for P* is the GDFE index. It is used in research by Fox and Kohli (1998), Kohli (2004, 2006, and 2008) and Macdonald (2007, 2008), and it has recently begun to make its way into official statistics, including the monthly statistical bulletin of the Swiss National Bank (since 2007), and the national accounts of Canada (since December 2008). Both the imports index and the GDFE index have been identified as acceptable definitions for P* in the SNA since 1968. 4 The right deflator for determining the real consumption value of current income depends on how any income used for lending would have been spent had it been used for consumption, or, in the case of net borrowing, on the composition of consumption if expenditures were reduced to match income. The approach that views the aim of trade as obtaining imports implies a choice of PM for P* in the definition of real GDI. Under this view, a trade deficit would be closed by curtailing imports, and a trade surplus would be used to purchase additional imports (Nicholson, 1960). In either case, the value of the imports that would be purchased with current income equals the value of exports.
+
+4 But the 1993 SNA indicates a preference for an average of the export and import price indexes. Averaging these indexes confers some cross-sectional consistency properties on the trading gains indexes of a pair or group of trading partners (Kurabayashi 1971, and Baldwin 2009). These are important for problems that involve combining or comparing trading gains across countries, but they do not seem critical for general national accounts purposes.
+
+Adjusting the period t+1 consumption vector qDt+1by the difference between the imports that could be acquired with the revenue from exports and actual imports qMt +1 (where we are assuming for the sake of simplicity that imports consist of final goods) gives a consumption vector consistent with income of qDt+1 + qMt +1(pXt+1⋅qXt+1/pMt+1⋅qMt+1) – qMt+1. Assuming that the price of a good is the same regardless of whether it appears in imports or in GDFE, this consumption vector implies a measure of real GDI in which exports are deflated by the imports index:
+
+pDt⋅qDt+ 1 + pDt⋅qMt+ 1 (pXt+1⋅qXt+ 1/pMt+1⋅qMt+ 1) – pDt⋅qMt+1 = pDt⋅qDt+ 1 + pMt⋅qMt+ 1 (pXt+1⋅qXt+ 1/pMt+1⋅qMt+ 1) – pMt⋅qMt+1 = pDt+1⋅qDt+1/PD Paasche + pXt+1⋅qXt+1/PM Paasche – pMt+1⋅qMt+1 /PM Paasche. (3)
+
+The problem with equation (3) as a definition of real GDI is the lack of justification for the 
+assumption that the margin of adjustment for equating consumption to income is limited to imports. 
+Assuming that marginal income is spent entirely on imports ignores the substitution possibilities 
+between domestic consumption and exports. The adjustments to close a trade deficit may involve an 
+increase in exports made possible by a contraction in domestic absorption, and a trade surplus may be 
+eliminated by diverting resources from the production of exports to items for domestic consumption. 
+Economic theory does not predict the kind of link between sources and uses of income that 
+would justify using weights that reflect sources of income in a deflator for measuring the real uses (or 
+purchasing power) of income. 5 Presuming the existence of such a link by having one deflator for 
+income originating from sales to residents and another for income originating from sales to export 
+markets can lead to paradoxical results if high national saving leads to a trade surplus, or dissaving 
+leads to a trade deficit. For example, many newly industrialized countries that have enjoyed strong 
+productivity gains have had strong export growth and rising national saving as their income growth 
+
+5 Deflating different sources of income with different deflators is appropriate for some purposes, such as the estimation of real labor and capital inputs in a calculation of productivity growth.
+
+has outstripped their consumption growth. Countries can also decide to run a trade surplus for consumption smoothing purposes because their population is aging or their deposits of petroleum or minerals are being exhausted. In these cases, rising saving would cause a rising share of income to be deflated by the imports index if the imports index is used to deflate income from exports, which could result in a distort measure of the growth of real GDI. Similarly, the effect of import prices on real income may be understated in countries with low saving and a negative trade balance because the change in the terms of trade is weighted by the share of exports in GDP in calculating the rate of change of trading gains when the imports index is used for P* in equation (2). (In particular, VGDI Lasp – VGDP Lasp = (sXt+1/PX Paasche)(TOT Paasche – 1), where sXt+1 is the share of exports in GDP and TOT Paasche = PX Paasche/PM Paasche.) For example, the effect on US real GDI of the improvement in terms of trade in the recession year of 2001 is found to be 0.2 percentage points when the imports index is used to deflate net exports, compared to an estimate of 0.4 percentage points if the GDFE index is used, as is recommended in the next section.
+
+2.3 Use of the Index for GDFE to deflate the Trade Balance In the absence of direct evidence on the specific uses of marginal real income arising from trading gains, a reasonable assumption is that marginal income is spent in the same way as average income. This assumption—which is analogous to homotheticity in microeconomic models—is appropriate in national accounts because they are used in a very general range of circumstances. It means that GDFE adjusts to eliminate a trade imbalance, making PD the appropriate specification for P* in equation (2). Substituting the Paasche version of this index into equation (2) gives a Laspeyres volume index for GDI whose numerator deflates GDP by price index for GDFE:
+
+VGDI Lasp =
+
+(pDt+1⋅qDt+1 + pXt+1⋅qXt+1 – pMt+1⋅qMt+1)/PD Paasche pDt⋅qDt + pXt⋅qXt – pMt⋅qMt . (4)
+
+A uniform proportional increase (decrease) in all components of domestic absorption that 
+changes the value of GDFE by an amount equal to the trade surplus (deficit) results in adjustments to 
+imports and exports that eliminate the trade imbalance under the assumptions that output prices are 
+proportional to marginal costs of production and that input prices are equal to marginal revenue 
+products. In the case of a trade deficit, for example, a uniform decrease in consumption will cause a 
+fall in imports of final and intermediate goods and a shift in production from domestic consumption 
+to exports. The resulting rise in net exports will be equal in value to the fall of GDFE. 
+With real GDI defined as the level of real GDFE that could be purchased with current income, 
+the definition of the trading gains index as the ratio of the Laspeyres volume indexes for GDI and 
+GDP implies that it equals a ratio of Paasche price indexes of GDP and GDFE. Expressing PGDP 
+Paasche 
+
+as a harmonic mean with weights equal to the shares sDt+1,sXt+1, and sMt+1, the Paasche price index (PPI) ratio can be further simplified as:
+
+TGI PPI =
+
+(pDt+1⋅qDt+1 + pXt+1⋅qXt+1 – pMt+1⋅qMt+1)/PD Paasche pDt+1⋅qDt+1/PD Paasche + pXt+1⋅qXt+1/PX Paasche – pMt+1⋅qMt+1 /PM Paasche .
+
+= PGDP Paasche PD Paasche
+
+= [sDt+1 + sXt+1(PD Paasche/PX Paasche) – sMt+1(PD Paasche/PM Paasche )] −1 . (5)
+
+The change in the bracketed term above can be expressed as the sum of a contribution from the change in the terms of trade and a contribution from the change in the relative price of tradables. The latter is measured as RPT Paasche = h(PX Paasche,PM Paasche)/PD Paasche, where h(⋅,⋅) denotes a harmonic mean. 6 Rearranging equation (5), we have:
+
+6 Note that RPT is not a pure comparison of prices of tradables and non-tradables because final goods that are traded and also consumed domestically are present in both its numerator and its denominator.
+
+TGI PPI = [sDt+1 + 0.5(sXt+1 + sMt+1)(PD Paasche/PX Paasche)(1 – TOT Paasche) + 0.5(sXt+1 – sMt+1)PD Paasche(1/PX Paasche + 1/PM Paasche )] −1 = [1 – 0.5(sXt+1 + sMt+1)(PD Paasche/PX Paasche)(TOT Paasche – 1) – (1 – sDt+1)(1 – PD Paasche/h(PX Paasche,PM Paasche))] −1 .
+
+= [1 – 0.5(sXt+1 + sMt+1)(PD Paasche/PX Paasche)(TOT Paasche – 1)
+
+– (sXt+1 – sMt+1){(RPT Paasche – 1)/RPT Paasche}] −1 . (6)
+
+A first-order Taylor series for equation (6) gives a lower bound approximation to the change in the Paasche trading gains index whose two terms resemble the ones that appear in Kohli’s (2006 and 2008) decomposition of the change in the Törnqvist trading gains index. The change in the terms of trade times the average share of trade in GDP plus the change in the relative price of tradables times the trade balance’s share of GDP is approximately equal to the change in the trading gains index:
+
+TGI PPI – 1 ≈ 0.5(sXt+1 + sMt+1)(PD Paasche/PX Paasche)(TOT Paasche – 1)
+
++ (sXt+1 – sMt+1)(RPT Paasche – 1)/RPT Paasche. (7)
+
+For example, if the improvement in the terms of trade is 10 percent and the average share of trade in GDP is 10 percent, the effect on the trading gains index and on real GDI would be about +1 percent. If the trade deficit equals 5 percent of GDP and the relative price of tradables falls by 2 percent, the effect on trading gains and real GDI would be +0.1 percent. The expression for the change in trading gains in a Laspeyres price index framework is similar but simpler. It compares Paasche volume indexes for GDI and GDP, where the index for GDI is:
+
+VGDI Paasche = pDt+1⋅qDt+1 + pXt+1⋅qXt+1 – pMt+1⋅qMt+1 (pDt⋅qDt + pXt⋅qXt – pMt⋅qMt)PD Lasp . (8)
+
+9 After canceling out the identical numerators in the ratio of the Paasche volume indexes for GDI and GDP, we obtain a trading gains index that compares Laspeyres price indexes of GDP and GDFE:
+
+TGI LPI =
+
+(pDt⋅qDt)PD Lasp + (pXt⋅qXt)PX Lasp – (pMt⋅qMt)PM Lasp (pDt⋅qDt + pXt⋅qXt – pMt⋅qMt)PD Lasp = sDt + sXt(PX Lasp /PD Lasp) – sMt(PM Lasp /PD Lasp)
+
+= 1 + sXt(PX Lasp /PD Lasp – 1) – sMt(PM Lasp /PD Lasp – 1). (9)
+
+Subtracting 1 from both sides of equation (9) provides the formula for contributions to change in the trading gains index of export prices and import prices. This formula can also be rearranged to decompose the change in trading gains into a contribution from the change in terms of trade and a contribution from the change in the relative price of tradables. If TOT Lasp = PX Lasp /PM Lasp and RPT Lasp is the ratio of a simple average of PX Lasp and PM Lasp to PD Lasp, equation (9) implies that:
+
+TGI LPI – 1 = 0.5(sXt + sMt)(PX Lasp – PM Lasp )/PD Lasp + (sXt – sMt)[0.5(PX Lasp + PM Lasp )/PD Lasp – 1] = 0.5(sXt + sMt)(PM Lasp /PD Lasp)(TOT Lasp – 1) + (sXt – sMt)(RPT Lasp – 1). (10)
+
+As in equation (7), the change in the terms of trade is weighted by the average share of trade in GDP, and the change in the relative price of tradables is weighted by the trade balance’s share of GDP.
+
+3. Laspeyres and Paasche Bounds for the Theoretical Index of Trading Gains 
+3.1 Laspeyres and Paasche Bounds in the Theories of Consumption and Output Indexes 
+A well-defined conceptual goal of estimation is needed to guide the design of the estimator and 
+to evaluate its properties and limitations. The conceptual measurement objective for the indexes of 
+the terms of trade and trading gains comes from the economic approach to index number theory. 
+Furthermore, the economic approach identifies the Laspeyres and Paasche versions of these indexes 
+
+as bounds on underlying economic concepts of terms of trade indexes, trading gains indexes and real 
+GDI. These bounds can be averaged using a Fisher index formula to obtain a better measure of the 
+economic concept than either of them would provide on its own. 
+The economic approach to index numbers assumes that consumption and production decisions 
+are solutions to constrained optimization problems. In the consumption case, the observed 
+consumption vector maximizes utility subject to a budget constraint, so it represents the cost 
+minimizing point in the convex set of consumption vectors that yield a utility greater than or equal to 
+the reference level of utility. In the production case, the observed mix of outputs maximizes revenue 
+(or value added) over a convex set of outputs (and intermediate inputs in the value added case) that is 
+attainable given the inputs at the disposal of the producer. 
+The bounding properties for the Laspeyres and Paasche indexes implied by these assumptions 
+are the topic of a large literature in the case of the consumption measurement problem. Economic 
+price and volume indexes of consumption track the change in the expenditure function e(p,u), which 
+gives the minimum cost of achieving utility or welfare level u at the vector of prices p. (The 
+properties of the utility function linking u to the vector of quantities q allow u to play the role of a 
+summary statistic for q in these indexes.) The Laspeyres-perspective volume index holds prices and 
+preferences constant at their initial value, so it may be written as et(pt,ut+1)/et(pt,ut), where et(⋅) 
+denotes the expenditure function reflecting the structure of preferences in period t. The minimum 
+cost of achieving the utility of period t at the prices of period t equals pt⋅qt, but the minimum cost of 
+achieving the utility level of period t+1 at those prices might be less than pt⋅qt+1. Consequently, 
+et(pt,ut+1)/et(pt,ut) ≤ pt⋅qt+1 /pt⋅qt. The Laspeyres-perspective economic index is therefore bounded 
+from above by the ordinary Laspeyres index. Similarly, the possibility that its denominator might be 
+too high makes the Paasche index a lower bound on a Paasche-perspective economic index of 
+
+consumption. Some other consumption bundle besides qt might achieve ut at lower cost at the prices 
+given by pt+1, so pt+1⋅qt+1 /pt+1⋅qt ≤ et+1(pt+1,ut+1)/et+1(pt+1,ut). 
+If the question is just the sign of the welfare change, the bounding properties of the Laspeyres 
+and Paasche indexes are independent of whether the Laspeyres perspective, the Paasche perspective, 
+or some other perspective is chosen for the economic index as long as preferences are stable. 
+Dropping the time subscript on the expenditure function, the sign of e(p,ut+1)/e(p,ut) – 1 does not 
+depend on the choice of p, so if the sign of the change in either the Laspeyres-perspective or the 
+Paasche-perspective economic index can be deduced, the sign of the change in every economic index 
+will be the same. 
+The ordinal bounding properties of Laspeyres and Paasche indexes can also be established by 
+use of the weak axiom of revealed preference (WARP). According to WARP, an opportunity set that 
+contains the consumption bundle that was actually chosen cannot be inferior to the opportunity set 
+from which that bundle was chosen. Thus, if qt+1 would have cost the same or less in period t than 
+the bundle that was actually chosen in period t, namely qt, then the fact that qt+1 was not chosen tells 
+us that qt+1 is not strictly preferred to qt. If the Laspeyres volume index is less than or equal to 1, then 
+qt+1 was in the opportunity set when qt was chosen, so WARP tells us that the opportunity set of 
+period t represents at least as high a level of welfare as that of period t+1. Conversely, a Paasche 
+volume index greater than 1 implies that the change in welfare is non-negative, as it means that qt is 
+in the opportunity set of period t+1. 
+The production measurement problem is analogous to the consumption measurement problem, 
+but the positions of the Laspeyres and Paasche indexes are reversed (Varian, 1982 and 1984). 7 This 
+reversal occurs because the objective function used to gauge the position of the production possibility 
+frontier maximizes revenue instead of minimizing costs. The Laspeyres volume index is a lower 
+
+7 Besides running in the opposite direction, substitution of outputs by producers is likely to happen more slowly than substitution of inputs by consumers because of the time and expense required to adjust production processes.
+
+bound on the Laspeyres-perspective economic index of output volume because at prices pt some 
+other point besides qt+1 on the production possibility frontier passing through qt+1 might give the 
+producer more revenue than pt⋅qt+1. Similarly, the Paasche volume index is an upper bound on the 
+Paasche-perspective economic output volume index because at prices pt+1 some other point on 
+production possibility frontier passing through qt might yield higher revenue than pt+1⋅qt. 8 
+The same logic can be applied if the objective is to maximize value added rather than revenue 
+as long as the Laspeyres and Paasche indexes of value added remain positive. GDP equals the 
+consolidated value added of all the producers in the economy, so an index of GDP is a value added 
+index. The intermediate inputs in this index come from imports, as in Diewert and Morrison’s (1986) 
+model of imports as intermediate inputs in the GDP function. 
+Figure 1 illustrates GDP and GDFE for a simple economy that exports one final good and uses 
+the proceeds to pay for imports of another final good. The balanced trade constraint implies a budget 
+line for this economy whose slope equals minus the ratio of the export good price to the import good 
+price. The production possibility frontier—whose position is measured by real GDP—reflects the 
+inputs and technology at the disposal of the economy’s producers. In a competitive equilibrium, 
+production is at point A, which is the point on the production possibility frontier that maximizes 
+revenue given the slope of the budget line. Consumption is given by point B, which is on the highest 
+indifference curve attainable by trade. Gains from trade make this indifference curve superior to any 
+indifference curve that touches the production possibility frontier. 
+The effect of deteriorating terms of trade on production is shown to shift from point A to point 
+A′ in figure 2. This shift leaves real output unchanged because these points on the same production 
+
+8 In practice, the Laspeyres index is often found to be above the Paasche index even in applications of the production measurement theory. This pattern could arise if supply shocks cause the Paasche-perspective production index to reflect a different technology from the Laspeyres-perspective index. Indeed, as discussed in footnote 7, if supply and demand shocks both occur, the response to the supply shocks is likely to dominate in the short run.
+
+possibility frontier. Nevertheless, real domestic absorption declines, as illustrated by the shift in GDFE to point B′ on the lower indifference curve. The curvatures of the production possibility frontier and the indifference curves in figure 2 imply downward bias in the Laspeyres index of GDP and the Paasche index of GDFE, and upward bias in the Paasche index of GDP and the Laspeyres index of GDFE. The Laspeyres volume index for GDP uses a parallel shift in the original budget line to compare point A′ to point A, so this index would show a spurious decline in output. In contrast, a budget line with the original slope through point B′ would be above a budget line with that slope that just touches the indifference curve on which point B′ lies, so the Laspeyres index of GDFE understates the drop in consumption. The Paasche volume index for GDP is also upward biased. It considers a parallel shift in the final budget line, and using this budget line point A′ represents a higher level of output than point A.
+
+3.2 Economic Concepts of Trading Gains and Real GDI 3.2.1. Assumptions We make a number of assumptions to simplify our investigation of the effects of export and import price changes. First, as discussed in footnote 3, in applying the definition of real GDI as the level of consumption that can be purchased with nominal GDI, we take consumption to mean GDFE despite the presence of an investment component in GDFE that provides for future consumption. 9 Second, our theoretical exposition focuses on gross income even though the amount of investment that is needed to offset consumption of fixed capital would not be included in a definition of income as the sustainable level of consumption (a concept that is favored by Diewert, 2008). Our empirical results do, however, include a measure of real net domestic income calculated as net domestic product deflated by the index for net domestic absorption (NDFE).
+
+9 Explicitly including the present value of the stream of future consumption possibilities in the measure of real income would raise a host of difficult issues that are not essential for the main purposes of this paper. Hamada and Iwata (1986) address some of these issues by including future dated goods in the consumption basket.
+
+We also make three assumptions concerning prices. Price changes are not so extreme that a Laspeyres or Paasche index ceases to be positive, prices of traded goods are exogenous world prices (which means that the country does not attempt to exercise monopoly or monopsony power in its production or purchase decisions), and purchasers’ prices and producers’ prices are the same because tariffs and other taxes on products are absent. Taxes on products cause GDP to exceed gross value added at basic prices because the revenue from these taxes is not part of the value added of any industry at basic prices and because GDP measures imports at tariff-free prices. The effect of extending our model to include the tariffs and other taxes on products would be to make the volume index of gross value added at basic prices the measure of output growth arising from growth in inputs and technological progress. The difference between this index and the volume index of GDP would then measure the change in the deadweight losses due to tax-induced misallocations. 10 In the older literature on terms of trade effects, trade is generally assumed to involve final goods, but the more recent literature recognizes that most trade is in products that require further processing, or at least wholesale and retail distribution services. It therefore treats imports as intermediate inputs. 11 Although this is more realistic than treating all imports as final goods, some imports, such as finished investment goods and services for final consumption, do not require even distribution services. Therefore, we assume that pMt⋅qMt = pDMt⋅qDMt + pMMt⋅qMMt, where qDM is the quantity vector of final good imports and qMMt is the quantity vector of imported intermediate inputs. The presence of imports of final goods as a component of domestic final expenditures implies that gross domestic final expenditures in period t are pDt⋅qDt = pDt⋅(qDDt + qDMt), where qDDt denotes
+
+10 Feenstra, Reinsdorf and Slaughter (2007) show that in a neo-classical model eliminating tariffs increases GDP by inducing an expansion in trade. Aulin-Ahmavaara and Pakarinen (2007) also investigate taxes on products. 11 Krueger and Sonnenschein (1967) investigate terms of trade effects using the older approach. Their Proposition 2 resembles case (a) of this paper’s Proposition 1 because it implies that real GDI rises whenever the Laspeyres terms of trade index rises given constant real GDP and balanced trade. Papers that treat imports as intermediate goods include Diewert (2005, 2008), Diewert and Lawrence (2006) and Kohli (2004, 2005, 2006, 2008).
+
+domestically supplied final goods. The expression for GDP as pDt⋅qDt + pXt⋅qXt – pMt⋅qMt then becomes GDPt = pDt⋅qDDt + pXt⋅qXt – pMMt⋅qMMt. We also assume a full-employment equilibrium where producers are price-taking profit maximizers and consumers utility maximizers, so that price ratios are equal to marginal rates of transformation for producers and marginal rates of substitution for consumers. As shown by Kohli (1978) and Diewert and Morrison (1986), this allows us to define the GDP function as a maximum of value added given the endowment of primary inputs and technology and configuration of world prices for traded goods. Let St(Lt) be the set of feasible combinations of final domestic absorption outputs qDD, export product outputs qX, and imported intermediate inputs qMM given the technology of time t and the endowment of primary inputs Lt. The production technology is such that St(Lt) is strictly convex. Then, the GDP function Gt(pDt, pXt, pMMt, Lt) for the technology of time t is:
+
+GDPt = Gt(pDt , pXt , pMMt , Lt)
+
+= maximum (qDD‚qX‚qMM)∈St(Lt)
+
+pDt⋅qDD + pXt⋅qX – pMMt⋅qMM . (11)
+
+Last, we assume stable preferences. Then the Laspeyres-perspective and Paasche-perspective economic volume indexes (which are also known as Allen indexes) for GDFE are, respectively:
+
+QD Lasp = e(pDt,U(qDt+1)) / e(pDt,U(qDt)) (12)
+
+and
+
+QD Paasche = e(pDt+1,U(qDt+1)) / e(pDt+1,U(qDt)). (13)
+
+3.2.2 Inferring the Direction of Change in Real GDI from the Change in Terms of Trade Under certain conditions, WARP can be used to show that a rise in the Laspeyres terms of trade index implies a rise in real GDI and that a fall in the Paasche terms of trade index implies a fall in real
+
+GDI. (A fall in the Laspeyres terms of trade index or a rise in the Paasche terms of trade index is not indicative of the direction of change in real GDI, however.) Consider first the rise in the Laspeyres terms of trade index. By WARP, a positive change in the Paasche volume index of GDFE implies a positive change in welfare, or real GDI, so we have the following proposition:
+
+PROPOSITION 1: Given a Paasche volume index of GDP ≥ 1, a rise in the Laspeyres terms of trade index implies a rise in real GDI if either: (a) trade is balanced; (b) there is a trade deficit and the change in the relative price of tradables is non-positive; or (c) there is a trade surplus and the change in the relative price of tradables is non-negative. PROOF: By WARP, a rise in real GDI is implied by a rise in the Paasche volume index of the level of GDFE that can be purchased, with the nominal income generated by GDP. In case (a), the Paasche volume index of GDFE equals the Paasche index of GDP times TGI LPI. But with balanced trade equation (10) becomes:
+
+TGI LPI – 1 = s$ Mt+1[TOT Lasp – 1], (14)
+
+where s$ Mt+1 = sMt(PM 
+Lasp 
+/PD Lasp), the predicted share of imports in GDP given Leontief behavior and 
+unchanged terms of trade. The sign of TOT Lasp – 1 determines the sign of the change in TGI LPI, so if 
+the GDP index equals 1, a rise in the trading gains index implies a rise in the Paasche index of GDFE. 
+In cases (b) or (c), the weight on TOT Lasp – 1 is still positive in the equation (10) expression 
+for the change in the trading gains index, but a second term that weights the change in the relative 
+price of tradables by the trade balance (as a share of GDP) is also present. If the relative price of 
+tradables falls in the case of a trade deficit (rises in the case of a trade surplus), this term is positive. 
+When TGI LPI > 1 the deflator for GDFE is smaller than the deflator for GDP, so the change in the 
+Paasche measure of the volume of GDFE that can be purchased with the income generated by GDP is 
+greater than the change in the Paasche volume index of GDP. 
+
+The Proposition 1 assumption of non-negativity of the Paasche index of real GDP is a weaker condition than non-negativity of the economic index of real GDP, because substitution effects tend to make the Paasche volume index exceed the Paasche-perspective economic index of real GDP. Thus, Proposition 1 has the paradoxical implication that real GDI can be unambiguously up even if the improvement in trade prices is accompanied by a negative productivity shock. The negative productivity shock must, however, be smaller in magnitude than the substitution bias of the Paasche volume index, so that the downward substitution bias of TGI LPI (documented in Proposition 4 below) offsets the effects of upward substitution bias of the Paasche index of real GDP. The Paasche price index analog of Proposition 1 is given by Proposition 2: PROPOSITION 2. Given a Laspeyres volume index of GDP ≤ 1, a decline in the Paasche terms of trade index implies a fall in real GDI if: (a) trade is balanced; (b) the trade balance is negative and the change in the relative price of tradables is non-negative; or (c) the trade balance is positive and the change in the relative price of tradables is non-positive.
+
+PROOF: In case (a), we can drop the RPT term from equation (6) and subtract 1 from both sides to obtain a power series for the change in TGI PPI that weights the change in TOT Paasche by s$Xt = sXt+1(PD Paasche/PX Paasche), the share of exports in GDP in period t that would be predicted from the observed share in period t+1 given unchanged terms of trade:
+
+TGI PPI – 1 = [1 – s$Xt(TOT Paasche – 1)] −1 – 1 = s$Xt(TOT Paasche – 1) + [s$Xt(TOT Paasche – 1)] 2 + [s$Xt(TOT Paasche – 1)] 3 + … (15)
+
+Because |s$Xt(TOT Paasche – 1)| < 1 by the assumption of no extreme price changes, a negative value for s$Xt(TOT Paasche – 1) implies that the sum on the last line of equation (15) is negative. Also, with balanced trade, the Laspeyres volume index of GDFE equals the Laspeyres volume index of
+
+GDP times TGI PPI, so given a GDP index of 1, the Laspeyres volume index of GDFE falls when TOT Paasche falls. But by WARP, if the change in the Laspeyres volume index of GDFE is negative, then so is the change in real GDI. In cases (b) or (c), a negative change in TOT Paasche still has a negative effect on TGI PPI , and the effect of the RPT term in equation (6) is also negative if the trade balance is opposite in sign from the change in the relative price of tradables.
+
+3.2.3 Upper and Lower Bounds for Economic Indexes of Terms of Trade and Trading Gains Bounding properties for the Laspeyres and Paasche trading gains indexes can be derived from the properties of the volume indexes for GDFE and GDP. The following proposition shows that the Laspeyres volume index of GDP in the denominator of TGI PPI is a lower bound on the Laspeyres perspective economic index of GDP, while the Paasche volume index of GDP in the denominator of TGI LPI is an upper bound on the Paasche-perspective economic index of GDP.
+
+PROPOSITION 3: The Paasche volume index of GDP is an upper bound for the Paasche-perspective economic index of GDP, and the Laspeyres volume index of GDP is a lower bound for the Laspeyres perspective economic index of GDP.
+
+PROOF: The Paasche volume index for GDP is:
+
+VGDP Paasche = pDt+1⋅qDDt+1 + pXt+1⋅qXt+1 – pMMt+1⋅qMMt+1 pDt+1⋅qDDt + pXt+1⋅qXt – pMMt+1⋅qMMt
+
+. (16)
+
+The Paasche-perspective economic index of GDP uses the prices of period t+1 to compare the level of output that is possible with the technology and primary inputs of period t+1 to the level of output that is possible with the technology and primary inputs of period t. It does this by comparing optimal points in the production possibility sets St+1(Lt+1) and St(Lt):
+
+QGDP Paasche = Gt+1(pDt+1 ̦ pXt+1 ̦ pMMt+1 ̦Lt+1) Gt(pDt+1 ̦ pXt+1 ̦ pMMt+1 ̦Lt) . (17)
+
+The numerator of the Paasche-perspective economic index of GDP equals the numerator of the 
+Paasche index, but its denominator is the maximum over the set St(Lt). The quantities in the 
+denominator of the Paasche volume index are also a point in St(Lt), so QGDP 
+Paasche 
+≤ VGDP Paasche. 
+The proof of the lower bound property of the Laspeyres volume index of GDP is analogous. 
+
+The Laspeyres volume index of GDFE in the numerator of TGI PPI is an upper bound on the Laspeyres-perspective economic index, while the Paasche volume index of GDFE in the numerator of TGI LPI is a lower bound on the Paasche-perspective economic index. (The proof of these bounds for the economic volume indexes of consumption, or Allen indexes, is analogous to the proof of Proposition 3, but with the roles of the Laspeyres and Paasche indexes reversed.) The bounds for the trading gains indexes thus resemble the bounds for the volume indexes of GDFE in their numerator:
+
+PROPOSITION 4: Let the Laspeyres-perspective economic index of trading gains be defined as the ratio of the Laspeyres-perspective volume index of GDI to the Laspeyres-perspective volume index of GDP, with the Paasche-perspective economic index of trading gains defined analogously. The trading gains index calculated from Paasche price indexes, TGI PPI, is an upper bound for a Laspeyres-perspective economic index of trading gains. The trading gains index calculated from Laspeyres price indexes, TGI LPI, is a lower bound for a Paasche-perspective economic index of trading gains.
+
+PROOF: The Laspeyres-perspective economic trading gains index is defined as the ratio an economic index whose upper bound is given by the numerator of TGI PPI to an economic index whose lower bound is given by denominator of TGI PPI. Since TGI PPI has at least as high a numerator and at least as
+
+low a denominator as the corresponding economic trading gains index, it is an upper bound on the economic index. These inequalities are reversed in the case of TGI LPI.
+
+4. Contributions to Change in Trading Gains in a Fisher Index Framework 
+The bounding results derived in section 3 arise because price changes generate substitution 
+effects that make Laspeyres and Paasche indexes diverge from their economic index counterparts in 
+opposite directions. Fisher price and volume indexes for GDFE account for these effects because the 
+substitution biases that give the Laspeyres and Paasche indexes their character as upper and lower 
+bounds offset one another when they are averaged. Similarly, Fisher indexes of GDP properly 
+account for substitution in production between outputs and between types of intermediate inputs. 12 
+Furthermore, although other superlative indexes are able to account for substitution effects in a 
+satisfactory way under many circumstances, the Fisher index is the only superlative index that is 
+always within the Laspeyres-Paasche bounds (Hill, 2006). An index formula that can be outside the 
+Laspeyres-Paasche bounds is likely to get the sign of the welfare change wrong under some 
+circumstances, since it will violate WARP if it is too far below a slowly rising Paasche volume index, 
+or too far above a slowly falling Laspeyres volume index. 
+Another advantage of Fisher indexes for national accounts purposes is that deflating by a Fisher 
+price index yields a Fisher volume index (a property known as “factor reversal” in the literature on 
+the axiomatic approach to index numbers.) The Fisher trading gains index of [GDPt+1 / PD Fisher] / 
+[GDPt+1 / PGDP Fisher] can therefore be calculated from Fisher price indexes as TGI Fisher = 
+
+12 Fisher indexes also permit reliable measurement of both price change and volume change at the same time. With a Laspeyres volume index based in period, the change in the implied Paasche price index between year t+1 and year t+2 will fail to hold the weights constant, making it an unreliable measure of price change. This problem can be avoided by chaining, but then the Laspeyres and Paasche indexes will be more susceptible to chain drift than Fisher indexes.
+
+PGDP Fisher/PD Fisher. Expressions for Fisher price indexes are precisely analogous to expressions for 
+Fisher volume indexes, with prices and quantities exchanging roles. 
+These advantages of Fisher indexes come at a cost of a loss of additivity, meaning that the 
+components of GDP expressed in real terms no longer not add up to real GDP after we switch from a 
+Laspeyres to a Fisher framework. The solution to this problem is to express the top-level Fisher 
+index as a weighted average of lower level aggregates that are similar to Fisher indexes, but not quite 
+the same except in special cases. In particular, as shown by Dikhanov (1997) and van IJzeren (1951), 
+the additive form of the Fisher volume index holds prices fixed at an average of their initial value and 
+their deflated final value. 13 For any detailed item i let pi* = (pit + pi,t+1/PGDP Fisher). Also let si* = 
+sit(pi*/pit)/(1 + PGDP Lasp/ PGDP 
+Fisher ), where the constant denominator makes the si* sum to 1. Then 
+
+the contribution of detailed item i to the change in VGDP Fisher is: ci = si*[(qi,t+1/qit) – 1]. The contribution of a mid-level aggregate to change in VGDP Fisher equals the sum of the ci for the detailed items in that aggregate. In the case of exports, for example, the total of the included si*, denoted sX*, equals sXt(1 + PX Lasp/ PGDP Fisher) /(1 + PGDP Lasp/ PGDP Fisher ). The volume index VX * such that sX*( VX * – 1) = ∑ i∈X ci then equals {∑ i∈X si*(qi,t+1/qit)}/{∑ i∈X si*}, which can be simplified to a weighted average of the Laspeyres and Paasche indexes for exports:
+
+VX * = VX Lasp + (PX Lasp/ PGDP Fisher)VX Paasche 1 + PX Lasp/ PGDP Fisher . (18)
+
+If PGDP Fisher = PX Fisher then VX * = VX Fisher. Otherwise, the weights on the Laspeyres and Paasche indexes will differ from those used by the Fisher index, but VX * will generally still be close to VX Fisher. The Fisher price index has an analogous additive decomposition, with the roles of the price and volume indexes reversed. Let PX ** be the price index version of VX *, and let PD ** and PM ** be the
+
+corresponding price indexes for computing the contributions of GDFE and imports to the change in
+
+13 This formula provides an excellent approximation to the contributions to change in an economic objective function (Reinsdorf, Diewert and Ehemann, 2002).
+
+PGDP Fisher. These indexes can be approximated by ordinary Fisher indexes, so the Fisher price index for GDP approximately equals a convex combination of component Fisher indexes that uses weights from the contributions-to-change formula for Fisher indexes:
+
+PGDP Fisher =
+
+sDt(1+VD Lasp/VGDP Fisher)PD ** + sXt(1+VX Lasp/VGDP Fisher)PX ** – sMt(1+VM Lasp/VGDP Fisher)PM ** sDt(1+VD Lasp/VGDP Fisher) + sXt(1+VX Lasp/VGDP Fisher) – sMt(1+VM Lasp/VGDP Fisher)
+
+≈
+
+sDt(1+VD Lasp/VGDP Fisher)PD Fisher + sXt(1+VX Lasp/VGDP Fisher)PX Fisher – sMt(1+VM Lasp/VGDP Fisher)PM Fisher sDt(1+VD Lasp/VGDP Fisher) + sXt(1+VX Lasp/VGDP Fisher) – sMt(1+VM Lasp/VGDP Fisher)
+
+≈
+
+sDt(1+VD Fisher/VGDP Fisher)PD Fisher + sXt(1+VX Fisher/VGDP Fisher)PX Fisher – sMt(1+VM Fisher/VGDP Fisher)PM Fisher sDt(1+VD Fisher/VGDP Fisher) + sXt(1+VX Fisher/VGDP Fisher) – sMt(1+VM Fisher/VGDP Fisher)
+
+=
+
+∼ sDt PD Fisher + ∼ sXt PX Fisher –
+
+∼ sMt PM Fisher . (19)
+
+The additive contributions to the change in the Fisher price index are therefore:
+
+∼ sDt(PD Fisher – 1), ∼ sXt(PX Fisher – 1) and –
+
+∼ sMt(PM Fisher – 1). Writing equation (19) as PGDP Fisher = 1 +
+
+∼ sXt(PX Fisher – PD Fisher)
+
+–
+
+∼ sMt(PM Fisher – PD Fisher) and dividing by PD Fisher yields the Fisher index version of equation (9):
+
+TGI Fisher = 1 + ∼ sXt(PX Fisher/PD Fisher – 1) – ∼ sMt(PM Fisher/PD Fisher – 1). (20)
+
+Equation (20) can be rearranged to obtain an expression parallel to equation (10). It gives the contributions of the change in the terms of trade and the change in the relative price of tradables to the change in the Fisher trading gains index:
+
+TGI Fisher – 1 ≈ 0.5(
+
+∼ sXt +
+
+∼ sMt)(PM Fisher/PD Fisher)(TOT Fisher – 1) + (
+
+∼ sXt –
+
+∼ sMt)(RPT Fisher – 1). (21)
+
+5. Estimates of Real GDI and Sources of Change in Real GDI for the United States 
+5.1 Trading Gains and Real GDI 
+Although Fisher volume measures are not additive, their Laspeyres and Paasche constituents 
+are. Table 1 therefore shows the derivation of the index of real GDI by removing the exports and 
+imports components of constant-price GDP, then adding back their purchasing power equivalents, 
+which are calculated by deflating by PD Fisher. Next, the table summarizes the effect of these 
+substitutions via the trading gains index, which shows how real GDI compares to real GDP. 
+The price spike for petroleum imports of 1973-74 is associated with a drop of 1.3 percentage 
+points in the US trading gains index, the petroleum price spike of 1979-80 is associated with a two 
+year drop of 1.7 percentage points in the trading gains index, and a series of price increases for 
+petroleum from 2003 to mid-2008 coincided with a cumulative decline of 1.8 percentage points in 
+this index. On the other hand, after recessions begin, declines in import prices caused by falling 
+demand often raise the trading gains index, helping to stabilize US real GDI. For example, in the 
+recession years of 1982, 1991 and 2001, US trading gains rose by 0.2 to 0.4 percent, and an overseas 
+recession in the countries affected by the Asian currency crisis of 1998 brought a rise in trading gains 
+of 0.5 percent. Rising trading gains also continued to add to US real GDI improvements in the years 
+following the 1982 recession because of a rising exchange rate. A switch in regime then occurred, 
+following a multilateral agreement in late 1985 calling for a devaluation of the dollar, the Plaza 
+Accord. From 1986 to 1995 annual changes in trading gains were generally zero or negative. 
+Even though the treatment of consumption of fixed capital is not directly affected by foreign 
+trade prices, a measure that deducts consumption of fixed capital is part of a complete set of measures 
+of income. Net domestic income, which is a measure of sustainable consumption that takes into 
+account the need to replace obsolete and worn out capital stock, is therefore reported at the bottom of 
+table 1. Note that the deflator for real net domestic income is the price index for net domestic final 
+
+expenditures; use of the index for GDFE would effectively result in double adjustment for price changes of the investment needed to offset CFC. On average, real net income rises more slowly than real gross income because expenses for consumption of fixed capital (CFC) have grown faster than GDP. This trend reflects growth in stocks of fast-depreciating equipment like computers.
+
+5.2 Contributions of Exports and Imports to Changes in Real GDI 
+The contributions of export and import prices to the change in real GDI shown in equation (20) 
+provide a gauge of the importance of export and import price movements for the US economy. In 
+1974, for example, the fall in real GDI of 1.6 percent included a contribution of –1.1 percentage 
+points from the change in trading gains, which consisted of a contribution of rising petroleum prices 
+of –1.2 percentage points that was partially offset by a positive net contribution of export and 
+nonpetroleum import prices (table 2). The contribution of trading gains to real GDI was –1.25 
+percentage points in1980, but in this case non-petroleum imports augmented a contribution of –1 
+percentage point coming from the spike in the price of petroleum imports. Petroleum prices again 
+played a key role in a string of negative contributions of trading gains to real GDI from 2003 to the 
+first half of 2008 that were cumulatively quite large. On the other hand, non-petroleum imports had 
+declines in prices that increased trading gains in the strong dollar years of 1982-85 and again in 1996- 
+2002, and that offset much of the negative impact of rising oil prices in 2003-2006. Indeed, if 
+petroleum products are excluded, trading gains for goods have a remarkable string of positive 
+contributions to real GDI starting in 1996, which average about 0.17 percent per year. 
+Besides changes in trading gains, the other driver of the change in real GDI is the change in real 
+GDP. To provide a complete picture of the sources of change in real GDI and to allow the price 
+change contributions to be compared with volume change contributions, contributions to real GDP 
+change are shown in the bottom panel of table 2. Note, however, that the contributions of volume 
+changes for individual components of GDP reflect changes in the uses of the economy’s output and 
+
+income, which can occur without any change the overall level of output and income. For example, a rise in the GDFE contribution might be linked to a fall in the net export contribution caused by growth in imports and a diversion of output from exports to domestic consumption, rather than an expansion of aggregate output. 14 If so, the fall in net exports would represent a fall in net national lending, an important component of national saving. Thus in an economic sense, the large negative contributions to real GDP of volume of net exports in 1996 to 2005 reflect declines in US saving. Contributions of net export volumes tend to be inversely related to those of trading gains in table 2, as would be expected if foreign demand for US exports rises with low prices and foreign supply of US imports rises when high demand brings high prices. Years with large positive contributions from trading gains, like 1983-84 and 1998, generally have large negative contributions from trade volume changes, while in 2007 and early 2008, negative trading gain contributions coincide with positive trade volume contributions. The net export volume changes have the larger role in the evolution of the trade balance: their median absolute contribution to real GDP change is 0.6 percentage points, compared with 0.2 percentage points for trading gains.
+
+5.3 The Terms of Trade and in the Relative Price of Tradables 
+The overall pattern of US export and import prices is summarized by the terms of trade index 
+and by the relative price of tradables shown in table 3. Occasional sharp jumps in oil prices that are 
+never fully reversed produce a rising long run trend in this price of petroleum imports. As a result, 
+the long run trend for US terms of trade is down. The negative contribution of the terms of trade to 
+trading gains over long run is partly offset by a small positive contribution from the relative price of 
+
+14 But if frictions prevent the assumption of full employment from holding, changes in net exports may lead to short run changes in domestic output. For example, in the first half of 2008 the growth in US real GDP of 1.8 percent per year came entirely from the contribution of net exports volume change. Although a fall in GDFE growth could possibly have reduced imports sufficiently to account for the entire jump in net exports, it is also plausible that the growth in net exports helped to stabilize the fall in US employment.
+
+tradables, resulting in a cumulative fall in the trading gains index from 1973 to the first half of 2008 
+of 3 percentage points (figure 3). 
+Excluding petroleum imports from our calculations brings into focus some key effects on terms 
+of trade and the relative price of tradables, such as the growth of low-cost imports from newly 
+industrialized suppliers like China or exchange rate devaluations. Table 3 therefore also reports on 
+non-petroleum terms of trade. 15 In the last half of the 1980s, a rise in the relative price of tradables 
+brought about by the Plaza Accord devaluation of the dollar is accompanied by sharply deteriorating 
+non-petroleum terms of trade. A few years later, the relative price of non-petroleum tradables begins 
+a steady decline. This results in significant trading gains in the years when the US has a substantial 
+trade deficit. Indeed, with petroleum excluded, the average contribution to the annual growth rate of 
+US real GDI in 1998-2002 from the falling relative price of tradables of 0.08 percentage points 
+exceeds the 0.07 percentage point average contribution of terms of trade. 
+The nonpetroleum trading gains that began in the mid-1990s reflect the emergence of China 
+and other newly industrialized countries as major trading partners of the US. In effect, some of the 
+benefits of rising productivity in the newly industrialized countries have been enjoyed by the US, as 
+prices for its manufactured imports fell. Their contributions to US real GDI in the years since 1995 
+are substantial: excluding petroleum, the cumulative effect of the contributions of changes in terms of 
+trade and changes in the relative price of tradables is to raise real GDI nearly two percentage points 
+over the period of 1995 to 2007 (figure 4.) On the other hand, the newly industrialized countries 
+have an indirect effect on US terms of trade that partly offsets the beneficial direct effects, as rising 
+
+15 The exclusion of a particular type of import from the calculation might be viewed unjustifiable in the framework of traditional trade theory, in which imports and exports differ in type because of differences in comparative advantage. Yet, to be more consistent with what is actually observed, modern trade theory emphasizes the importance of exchange of different varieties of the same good or class of goods (Neary, 2009, 218.) A limited domain terms of trade index is therefore an economically meaningful concept. Non-petroleum terms of trade can also be used to investigate the role of petroleum prices in the short-term swings in overall terms of trade.
+
+demand from these countries for petroleum and other crude commodities is one cause of the import price increases that push the overall trading gains index in figure 3 down after 2002. With petroleum included, the contributions of trading gains to the change in real GDI from 1974 to 2007 (table 4) imply a subtraction of at least 0.21 percentage points from real GDI a quarter of the time, and an addition at least 0.18 percentage points a quarter of the time. Trade price effects of 0.2 percent or more on real gross income occur about half the time in annual data. These effects come mainly from terms of trade movements rather than changes in the relative price of tradables. The contributions to the change in real GDI also show that the terms of trade shocks of 1974 and 1980 were quite large, as they each subtracted over a percentage point from income growth. The terms of trade shock from the spike in prices of petroleum and other imported crude commodities in the first half of 2008 was almost as large, but it proved to be short lived.
+
+6. Conclusion 
+In many of the world’s economies foreign trade has a large enough role to make export and 
+import prices important determinants of prosperity. The effect of changes in these prices can be 
+measured by the growth rate differential between real GDI and real GDP. 
+How to define real GDI has long been controversial. This paper identifies the best definition as 
+the simplest one. To adjust nominal GDP for changes in the prices of the things that society’s income 
+is used to buy, it should be deflated by the price index for gross domestic final expenditures. Then 
+the difference between real GDI and real GDP can be decomposed into two key terms: the change in 
+the terms of trade weighted by the average share of trade in GDP, and the change in the relative price 
+of tradables weighted by the average share of the trade balance in GDP. 
+The theoretical economic concept of real GDI and the associated concepts of the trading gains 
+index and the terms of trade index are measured very well in practice by Fisher indexes. Fisher 
+
+indexes based on US national accounts data for1974 to 2007 show that significant terms of trade 
+effects in many years. Trading gains subtract at least 0.21 percentage points from real GDI a quarter 
+of the time, and that they add at least 0.18 percentage points a quarter of the time. Occasionally, 
+however, the shocks are much larger. The petroleum price shocks that occurred at the end of 1973 
+and in 1980 subtracted more than a full percentage point from real GDI, and the one in the first half 
+of 2008 in combination with rising prices of other imports subtracted almost 2 percentage points from 
+the annualized growth rate of real GDI. 
+When petroleum prices are excluded, large effects of falling prices for imports from newly 
+industrialized countries such as China are revealed. Excluding petroleum, US terms of trade 
+improved steadily from 1996 to 2007. Combined with the contribution from a falling relative price of 
+tradables, this terms of trade improvement added an average of 0.15 percentage points to the annual 
+growth rate of real GDI, or a cumulative 1.8 percent over 12 years. 
+
+References 
+Aulin-Ahmavaara, Pirkko and Perttu Pakarinen. 2007. “Integrated Industry and Economy-wide 
+TFP-Measures with Different Prices in Different Uses.” Economic Systems Research19 (no. 
+3, September): 253–276. 
+Baldwin, Andrew. 2009. “Trading Gains and Canadian Income Growth, 2002-2008.” Paper 
+presented at the 8 th Annual Ottawa Productivity Workshop, (at the Bank of Canada, May 6.) 
+Denison, Edward F. 1981. “International Transactions in Measures of the Nation's Production,” 
+Survey of Current Business 61 (May): 17-28. 
+Diewert, W. Erwin 1984. “Group Cost of Living Index: Approximations and Axiomatics,” Methods 
+of Operations Research 48, 23-45. 
+Diewert, W.Erwin. 1992. “Fisher ideal output, input, and productivity indexes revisited,” Journal 
+of Productivity Analysis 3, 211-248. 
+Diewert, W. Erwin. 2005. “Welfare, Productivity and Changes in the Terms of Trade.” Department 
+of Economics, University of British Columbia, November. 
+Diewert, W. Erwin and Denis Lawrence. 2006. Measuring the Contributions of Productivity and 
+Terms of Trade to Australia's Economic Welfare, report by Meyrick and Associates to the 
+Productivity Commission, Canberra. 
+Diewert, W. Erwin. 2008. “Changes in the Terms of Trade and Canada’s Productivity Performance.” 
+Available at http://www.indexmeasures.com/dc2008/finalprogram.htm . 
+Diewert, W. Erwin and Catherine J. Morrison. 1986. “Adjusting Outputs and Productivity Indexes for 
+Changes in the Terms of Trade.” Economic Journal 96, 659-679. 
+Dikhanov, Yuri. “The Sensitivity of PPP-Based Income Estimates to Choice of Aggregation 
+Procedures.” mimeo, The World Bank, Washington, DC, January 1997. 
+Fox, Kevin J. and Ulrich Kohli. 1998. “GDP Growth, Terms-of-trade Effects and Total Factor 
+Productivity.” Journal of International Trade and Economic Development 7, 87-110. 
+Geary, R.C. 1961. “Productivity Aspects of Accounts Deflation.” Studies in Social and Financial 
+Accounting. Income and Wealth, Series IX. 3-45. 
+Gutmann, Pierre. 1981. “The Measurement of Terms of Trade Effects,” Review of Income and 
+Wealth 27 (December): 433-453. 
+Hamada, Koichi and Iwata, Kazumasa. 1984. “National Income, Terms of Trade and Economic 
+Welfare.” Economic Journal 94, (Dec.): 752-771. 
+Hill, Robert J. 2006. “Superlative Index Numbers: Not All of Them are Super.” Journal of 
+Econometrics 130, 25-43. 
+
+Kehoe, Timothy J. and Kim J. Ruhl. 2008. “Are Shocks to the Terms of Trade Shocks to 
+Productivity?” Review of Economic Dynamics 11 (October): 804-819. 
+Kohli, Ulrich. 1978. "A Gross National Product Function and the Derived Demand for Imports and 
+Supply of Exports", Canadian Journal of Economics 11, 167-182. 
+Kohli, Ulrich. 2003. “Growth accounting in the open economy: international comparisons.” 
+International Review of Economics and Finance 12: 417–435. 
+Kohli, Ulrich. 2004. “Real GDP, real domestic income, and terms-of-trade changes.” Journal of 
+International Economics 62, 83-106. 
+Kohli, Ulrich. 2006. “Real GDP, Real GDI, and Trading Gains: Canada, 1981-2005.” International 
+Productivity Monitor 13 (Fall): 46-56. 
+Kohli, Ulrich. 2008. “Globalization, Trade in Middle Products, and Relative Prices.” in Sugata 
+Marjit and Eden Yu (eds.) Contemporary and Emerging Issues in Trade Theory and Policy 
+(Bingley, United Kingdom: Emerald Group Publishing). 
+Krueger; Anne O. and Hugo Sonnenschein. 1976. “The Terms of Trade, the Gains from Trade and 
+Price Divergence.” International Economic Review 8, No. 1. (February): 121-127. 
+Kurabayashi, Yoshimasa. 1971. “ The Impact of Changes in Terms of Trade on a System of National 
+Accounts: An Attempted Synthesis.” Review of Income and Wealth 17 (September): 285-297. 
+Macdonald, Ryan. 2007. “Canadian and U.S. Real Income Growth Pre and Post 2000: A Reversal 
+of Fortunes.” Economic Analysis Research Paper Series 11F0027MIE, no. 048 (November): 
+Statistics Canada. 
+Macdonald, Ryan. 2008. “Real Income Measurement: The Canadian Experience” Presented to the 
+BEA Advisory Committee, Nov. 7, 2008. Available at: 
+http://www.bea.gov/about/pdf/Macdonald07November2008.pdf 
+Neary, J. Peter. 2009. Putting the “New” into New Trade Theory: Paul Krugman's Nobel Memorial 
+Prize in Economics. Scandinavian Journal of Economics 111, no. 2, 217-250. 
+Nicholson, J. L. 1960. “The Effects of International Trade on the Measurement of Real National 
+Income.” The Economic Journal 70, No. 279. (Sept.): 608-612. 
+Reinsdorf, Marshall B., W. Erwin Diewert and Christian Ehemann. 2002. “Additive 
+Decompositions for Fisher, Törnqvist and Geometric Mean Indexes.” Journal of Economic and 
+Social Measurement 28, 51–61. 
+Reinsdorf, Marshall B., Feenstra Robert C., and Slaughter Matthew J. 2007. “Effects of Terms of 
+Trade Gains and Tariffs Changes on the Measurement of U.S. Productivity Growth.” Available 
+at http://www.indexmeasures.com/dc2008/finalprogram.htm. 
+
+Sanyal, Kalyan K. and Ronald W. Jones. 1982. “The Theory of Trade in Middle Products.” 
+American Economic Review 72, No. 1. (March), pp. 16-31. 
+Silver, Mick and Khashayar Mahdavy. 1989. The Measurement of a Nation’s Terms of Trade Effect 
+and Real National Disposable Income within a National Accounting Framework. Journal of 
+the Royal Statistical Society, series A, 152, 87-107. 
+Stuvel G. 1958. “The Impact of Changes in the Terms of Trade on Western Europe's Balance of 
+Payments.” Econometrica 26, No. 1. (Jan.,), pp. 107-116. 
+Stuvel, G. 1959. “Asset Revaluation and Terms-of-Trade Effects in the Framework of the National 
+Accounts.” The Economic Journal 69, No. 274, (June): 275-292. 
+United Nations, Commission of the European Communities, IMF, OECD and World Bank. 1993. 
+System of National Accounts 1993. New York, Brussels, Paris and Washington. 
+United Nations, Commission of the European Communities, IMF, OECD and World Bank. 2008. 
+System of National Accounts 2008. New York, Brussels, Paris and Washington. 
+van IJzeren, Jan. 1952. Over de Plausibiliteit van Fisher’s Ideale Indices, (On the Plausibility of 
+Fisher’s Ideal Indices), Statistische en Econometrische Onderzoekingen (Centraal Bureau voor 
+de Statistiek), Nieuwe Reeks 7(2), 104–115. 
+Vanoli, André. 2002. Une Histoire de la Comptabilité Nationale. Paris: La Decouverte. 
+Varian, Hal. 1982. The non-parametric approach to demand analysis, Econometrica 50, 945-974. 
+Varian, Hal. 1984. The non-parametric approach to production analysis, Econometrica 52, 579- 
+597. 
+Weitzman, Martin L. 1976. “On the Welfare Significance of National Product in a Dynamic 
+Economy.” Quarterly Journal of Economics 90(1): February: 156-162. 
+
+Figure 3:  Contributions of Terms of Trade and Relative Price of Tradables to Trading Gains (Cumulated into Indexes, with 1994=100)
+
+98.0
+
+98.5
+
+99.0
+
+99.5
+
+100.0
+
+100.5
+
+101.0
+
+101.5
+
+102.0
+
+102.5
+
+103.0
+
+1973
+
+1974
+
+1975
+
+1976
+
+1977
+
+1978
+
+1979
+
+1980
+
+1981
+
+1982
+
+1983
+
+1984
+
+1985
+
+1986
+
+1987
+
+1988
+
+1989
+
+1990
+
+1991
+
+1992
+
+1993
+
+1994
+
+1995
+
+1996
+
+1997
+
+1998
+
+1999
+
+2000
+
+2001
+
+2002
+
+2003
+
+2004
+
+2005
+
+2006
+
+2007
+
+2008H1
+
+Terms of Trade, goods and services Relative price of tradables Trading gains
+
+Figure 4:  Contributions of Terms of Trade and RPT to Trading Gains Excluding Petroleum (Cumulated into Indexes, with 1994=100)
+
+99.0
+
+99.5
+
+100.0
+
+100.5
+
+101.0
+
+101.5
+
+102.0
+
+102.5
+
+1973
+
+1974
+
+1975
+
+1976
+
+1977
+
+1978
+
+1979
+
+1980
+
+1981
+
+1982
+
+1983
+
+1984
+
+1985
+
+1986
+
+1987
+
+1988
+
+1989
+
+1990
+
+1991
+
+1992
+
+1993
+
+1994
+
+1995
+
+1996
+
+1997
+
+1998
+
+1999
+
+2000
+
+2001
+
+2002
+
+2003
+
+2004
+
+2005
+
+2006
+
+2007
+
+2008H1
+
+Terms of trade Relative price of tradables Trading gains
+
+Table 1: Relation of Real Gross Domestic Income to Real GDP and Real GDFE (Percentage Changes in Volume from Preceding Year; 2008 H1 at annual rate)
+
+| | 1973 | 1974 | 1979 | 1980 | 1981 | 1982 | 1983 | 1984 | 1985 | 1986 | 1987 | 1988 | 1989 | 1990 | 1991 | 1992 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Gross domestic product | 5.8 | -0.5 | 3.2 | -0.2 | 2.5 | -1.9 | 4.5 | 7.2 | 4.1 | 3.5 | 3.4 | 4.1 | 3.5 | 1.9 | -0.2 | 3.3 |
+| Less: Exports of goods and services | 18.9 | 7.9 | 9.9 | 10.8 | 1.2 | -7.6 | -2.6 | 8.2 | 3.0 | 7.7 | 10.8 | 16.0 | 11.5 | 9.0 | 6.6 | 6.9 |
+| Plus: Imports of goods and services | 4.6 | -2.3 | 1.7 | -6.6 | 2.6 | -1.3 | 12.6 | 24.3 | 6.5 | 8.6 | 5.9 | 3.9 | 4.4 | 3.6 | -0.6 | 7.0 |
+| Equals: Gross dom. final expenditures | 4.9 | -1.3 | 2.5 | -1.9 | 2.7 | -1.3 | 5.8 | 8.7 | 4.4 | 3.7 | 3.1 | 3.2 | 3.0 | 1.4 | -0.8 | 3.3 |
+| PLUS: Exports, real GDI basis | a 27.2 | 20.6 | 13.2 | 10.5 | -0.4 | -12.2 | -5.5 | 5.5 | -2.9 | 3.8 | 10.2 | 18.0 | 9.2 | 5.5 | 4.6 | 4.0 |
+| LESS: Imports, real GDI basis | 16.2 | 26.8 | 9.4 | 5.2 | -0.9 | -9.7 | 4.7 | 19.1 | 0.1 | 6.2 | 9.0 | 5.3 | 2.8 | 2.4 | -4.1 | 4.6 |
+| EQUALS: Real gross domestic income | 5.5 | -1.6 | 2.7 | -1.5 | 2.7 | -1.5 | 5.0 | 7.4 | 4.3 | 3.4 | 3.0 | 4.1 | 3.5 | 1.7 | 0.0 | 3.3 |
+| b | | | | | | | | | | | | | | | | |
+| Trading gains | -0.2 | -1.1 | -0.4 | -1.3 | 0.2 | 0.4 | 0.4 | 0.2 | 0.2 | 0.0 | -0.3 | 0.0 | 0.0 | -0.2 | 0.2 | 0.0 |
+| Net domestic product | 5.9 | -1.1 | 2.9 | -0.8 | 2.4 | -2.8 | 4.7 | 7.4 | 3.9 | 3.6 | 3.2 | 4.2 | 3.3 | 1.6 | -0.8 | 3.3 |
+| c Real net domestic income | 5.6 | -2.3 | 2.4 | -2.2 | 2.7 | -2.3 | 5.2 | 7.7 | 4.1 | 3.5 | 2.8 | 4.2 | 3.3 | 1.4 | -0.6 | 3.2 |
+| | 1993 | 1994 | 1995 | 1996 | 1997 | 1998 | 1999 | 2000 | 2001 | 2002 | 2003 | 2004 | 2005 | 2006 | 2007 | H1 2008 |
+| Gross domestic product | 2.7 | 4.0 | 2.5 | 3.7 | 4.5 | 4.2 | 4.5 | 3.7 | 0.8 | 1.6 | 2.5 | 3.6 | 2.9 | 2.8 | 2.0 | 1.8 |
+| Less: Exports of goods and services | 3.2 | 8.7 | 10.1 | 8.4 | 11.9 | 2.4 | 4.3 | 8.7 | -5.4 | -2.3 | 1.3 | 9.7 | 7.0 | 9.1 | 8.4 | 8.6 |
+| Plus: Imports of goods and services | 8.8 | 11.9 | 8.0 | 8.7 | 13.6 | 11.6 | 11.5 | 13.1 | -2.7 | 3.4 | 4.1 | 11.3 | 5.9 | 6.0 | 2.2 | -4.1 |
+| Equals: Gross dom. final expenditures | 3.2 | 4.4 | 2.4 | 3.8 | 4.8 | 5.3 | 5.3 | 4.4 | 0.9 | 2.2 | 2.8 | 4.1 | 3.0 | 2.6 | 1.4 | 0.0 |
+| PLUS: Exports, real GDI basis | 1.0 | 7.7 | 10.4 | 5.1 | 8.5 | -0.6 | 2.1 | 7.9 | -7.6 | -4.1 | 1.1 | 10.2 | 7.0 | 9.2 | 9.3 | 15.0 |
+| LESS: Imports, real GDI basis | 5.5 | 10.7 | 8.7 | 4.9 | 8.1 | 4.9 | 10.4 | 15.0 | -7.0 | 0.6 | 5.3 | 13.2 | 8.6 | 6.9 | 3.1 | 11.3 |
+| EQUALS: Real gross domestic income | 2.8 | 4.1 | 2.5 | 3.8 | 4.8 | 4.7 | 4.3 | 3.3 | 1.2 | 1.8 | 2.3 | 3.4 | 2.5 | 2.6 | 2.0 | -0.1 |
+| b Trading gains | 0.1 | 0.0 | 0.0 | 0.1 | 0.3 | 0.5 | -0.1 | -0.3 | 0.4 | 0.2 | -0.2 | -0.2 | -0.4 | -0.1 | -0.1 | -1.9 |
+| Net domestic product | 2.8 | 3.8 | 2.3 | 3.6 | 4.3 | 3.9 | 4.1 | 3.3 | -0.2 | 1.7 | 2.5 | 3.5 | 2.2 | 3.7 | 1.8 | 1.1 |
+| Real net domestic income | 2.9 | 3.8 | 2.3 | 3.7 | 4.6 | 4.4 | 4.0 | 2.9 | 0.3 | 1.9 | 2.3 | 3.2 | 1.8 | 3.5 | 1.7 | -0.5 |
+
+a. Real GDI basis exports and imports are deflated by the price index for gross domestic final expenditures. 
+b. Calculated as the percent change in the ratio of real GDI to real GDP. 
+c. Defined as net domestic product deflated by the price index for net domestic final expenditures. 
+
+Table 2: Contributions to Annual Rate of Change in Real Gross Domestic Income (Percentage Points)
+
+| | 1973 | 1974 | 1979 | 1980 | 1981 | 1982 | 1983 | 1984 | 1985 | 1986 | 1987 | 1988 | 1989 | 1990 | 1991 | 1992 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| a | | | | | | | | | | | | | | | | |
+| Trading gains | -0.24 | -1.10 | -0.46 | -1.25 | 0.21 | 0.40 | 0.45 | 0.24 | 0.19 | -0.05 | -0.35 | 0.00 | -0.02 | -0.19 | 0.20 | -0.05 |
+| Exports of goods and services | 0.45 | 0.84 | 0.26 | -0.03 | -0.16 | -0.46 | -0.26 | -0.21 | -0.46 | -0.28 | -0.04 | 0.14 | -0.19 | -0.32 | -0.19 | -0.28 |
+| Goods | 0.46 | 0.82 | 0.28 | -0.06 | -0.16 | -0.47 | -0.27 | -0.16 | -0.46 | -0.30 | -0.03 | 0.18 | -0.17 | -0.34 | -0.23 | -0.29 |
+| Services | -0.02 | 0.02 | -0.02 | 0.03 | -0.01 | 0.01 | 0.01 | -0.05 | 0.00 | 0.02 | -0.02 | -0.03 | -0.03 | 0.03 | 0.05 | 0.00 |
+| Imports of goods and services | -0.69 | -1.94 | -0.73 | -1.22 | 0.37 | 0.85 | 0.71 | 0.46 | 0.65 | 0.23 | -0.31 | -0.15 | 0.17 | 0.13 | 0.38 | 0.24 |
+| Goods | -0.56 | -1.83 | -0.67 | -1.14 | 0.30 | 0.77 | 0.62 | 0.36 | 0.59 | 0.39 | -0.34 | -0.12 | 0.09 | 0.20 | 0.39 | 0.24 |
+| Nonpetroleum goods | -0.46 | -0.65 | -0.12 | -0.13 | 0.38 | 0.47 | 0.37 | 0.30 | 0.47 | -0.27 | -0.21 | -0.31 | 0.21 | 0.35 | 0.23 | 0.19 |
+| Petroleum and petroleum products | -0.10 | -1.18 | -0.55 | -1.01 | -0.08 | 0.30 | 0.26 | 0.06 | 0.12 | 0.65 | -0.13 | 0.19 | -0.12 | -0.15 | 0.16 | 0.05 |
+| Services | -0.13 | -0.11 | -0.06 | -0.08 | 0.07 | 0.09 | 0.09 | 0.09 | 0.05 | -0.16 | 0.03 | -0.03 | 0.09 | -0.07 | -0.01 | -0.01 |
+| PLUS: Gross domestic product | 5.76 | -0.50 | 3.16 | -0.23 | 2.52 | -1.94 | 4.52 | 7.19 | 4.13 | 3.47 | 3.38 | 4.13 | 3.54 | 1.88 | -0.17 | 3.33 |
+| Gross dom. final expenditures | 4.94 | -1.26 | 2.50 | -1.91 | 2.67 | -1.33 | 5.87 | 8.77 | 4.55 | 3.77 | 3.21 | 3.32 | 3.02 | 1.45 | -0.85 | 3.36 |
+| Net exports of goods and services | 0.82 | 0.75 | 0.66 | 1.68 | -0.15 | -0.60 | -1.35 | -1.58 | -0.42 | -0.30 | 0.17 | 0.82 | 0.52 | 0.43 | 0.69 | -0.04 |
+| Exports of goods and services | 1.12 | 0.58 | 0.82 | 0.97 | 0.12 | -0.73 | -0.22 | 0.63 | 0.23 | 0.54 | 0.77 | 1.24 | 0.99 | 0.81 | 0.62 | 0.68 |
+| Goods | 1.01 | 0.46 | 0.77 | 0.86 | -0.09 | -0.67 | -0.19 | 0.46 | 0.20 | 0.26 | 0.56 | 1.04 | 0.75 | 0.55 | 0.46 | 0.52 |
+| Services | 0.11 | 0.12 | 0.06 | 0.11 | 0.21 | -0.06 | -0.03 | 0.17 | 0.02 | 0.28 | 0.21 | 0.20 | 0.24 | 0.26 | 0.16 | 0.16 |
+| Imports of goods and services | -0.30 | 0.17 | -0.16 | 0.71 | -0.27 | 0.12 | -1.13 | -2.21 | -0.65 | -0.84 | -0.61 | -0.43 | -0.47 | -0.39 | 0.06 | -0.72 |
+| Goods | -0.34 | 0.17 | -0.14 | 0.67 | -0.18 | 0.21 | -1.00 | -1.83 | -0.52 | -0.82 | -0.39 | -0.36 | -0.38 | -0.26 | 0.01 | -0.77 |
+| Nonpetroleum goods | -0.17 | 0.13 | -0.11 | 0.11 | -0.54 | -0.12 | -1.02 | -1.74 | -0.60 | -0.60 | -0.36 | -0.27 | -0.31 | -0.24 | -0.04 | -0.74 |
+| Petroleum and petroleum products | -0.18 | 0.05 | -0.02 | 0.57 | 0.36 | 0.33 | 0.02 | -0.09 | 0.09 | -0.22 | -0.04 | -0.09 | -0.07 | -0.01 | 0.05 | -0.03 |
+| Services | 0.05 | 0.00 | -0.02 | 0.04 | -0.09 | -0.08 | -0.13 | -0.39 | -0.13 | -0.02 | -0.22 | -0.07 | -0.10 | -0.13 | 0.05 | 0.05 |
+| EQUALS: Real gross domestic income | 5.52 | -1.60 | 2.70 | -1.48 | 2.73 | -1.54 | 4.96 | 7.43 | 4.32 | 3.42 | 3.02 | 4.13 | 3.52 | 1.69 | 0.03 | 3.28 |
+
+See note at end of table.
+
+Table 2, Continued (Percentage Points)
+
+| | 1993 | 1994 | 1995 | 1996 | 1997 | 1998 | 1999 | 2000 | 2001 | 2002 | 2003 | 2004 | 2005 | 2006 | 2007 | H1 b 2008 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Trading gains a | 0.11 | 0.03 | -0.05 | 0.10 | 0.29 | 0.48 | -0.12 | -0.33 | 0.40 | 0.19 | -0.17 | -0.22 | -0.42 | -0.14 | -0.06 | -1.97 |
+| Exports of goods and services | -0.22 | -0.10 | 0.02 | -0.36 | -0.37 | -0.35 | -0.24 | -0.09 | -0.25 | -0.19 | -0.01 | 0.04 | -0.01 | 0.01 | 0.09 | 1.21 |
+| Goods | -0.20 | -0.07 | 0.02 | -0.36 | -0.35 | -0.32 | -0.23 | -0.11 | -0.20 | -0.16 | -0.02 | 0.04 | -0.04 | 0.00 | 0.06 | 0.94 |
+| Services | -0.02 | -0.02 | 0.00 | 0.00 | -0.01 | -0.02 | -0.01 | 0.02 | -0.05 | -0.04 | 0.01 | 0.00 | 0.04 | 0.02 | 0.03 | 0.27 |
+| Imports of goods and services | 0.33 | 0.13 | -0.07 | 0.45 | 0.65 | 0.83 | 0.13 | -0.24 | 0.66 | 0.38 | -0.16 | -0.26 | -0.41 | -0.15 | -0.15 | -3.17 |
+| Goods | 0.30 | 0.12 | -0.06 | 0.46 | 0.62 | 0.76 | 0.16 | -0.27 | 0.61 | 0.39 | -0.07 | -0.23 | -0.36 | -0.12 | -0.13 | -2.84 |
+| Nonpetroleum goods | 0.20 | 0.06 | 0.01 | 0.60 | 0.55 | 0.45 | 0.35 | 0.22 | 0.38 | 0.40 | 0.12 | 0.07 | 0.14 | 0.26 | 0.07 | -1.13 |
+| Petroleum and petroleum products | 0.10 | 0.07 | -0.07 | -0.15 | 0.07 | 0.31 | -0.18 | -0.49 | 0.23 | -0.01 | -0.19 | -0.30 | -0.50 | -0.38 | -0.20 | -1.71 |
+| Services | 0.03 | 0.01 | -0.01 | -0.01 | 0.04 | 0.06 | -0.04 | 0.03 | 0.04 | 0.00 | -0.09 | -0.03 | -0.05 | -0.04 | -0.03 | -0.33 |
+| PLUS: Gross domestic product | 2.67 | 4.02 | 2.50 | 3.70 | 4.50 | 4.17 | 4.45 | 3.66 | 0.75 | 1.60 | 2.51 | 3.64 | 2.94 | 2.78 | 2.03 | 1.84 |
+| Gross dom. final expenditures | 3.26 | 4.45 | 2.40 | 3.84 | 4.83 | 5.33 | 5.44 | 4.52 | 0.95 | 2.29 | 2.95 | 4.32 | 3.15 | 2.79 | 1.45 | -0.01 |
+| Net exports of goods and services | -0.59 | -0.43 | 0.11 | -0.14 | -0.33 | -1.16 | -0.99 | -0.86 | -0.20 | -0.69 | -0.44 | -0.68 | -0.21 | -0.02 | 0.58 | 1.84 |
+| Exports of goods and services | 0.32 | 0.85 | 1.03 | 0.91 | 1.30 | 0.27 | 0.47 | 0.93 | -0.60 | -0.23 | 0.12 | 0.93 | 0.71 | 0.96 | 0.95 | 1.12 |
+| Goods | 0.23 | 0.67 | 0.85 | 0.68 | 1.11 | 0.18 | 0.29 | 0.84 | -0.48 | -0.28 | 0.12 | 0.60 | 0.54 | 0.73 | 0.59 | 0.92 |
+| Services | 0.09 | 0.18 | 0.19 | 0.22 | 0.19 | 0.09 | 0.18 | 0.09 | -0.12 | 0.06 | 0.00 | 0.33 | 0.17 | 0.23 | 0.36 | 0.20 |
+| Imports of goods and services | -0.91 | -1.29 | -0.93 | -1.04 | -1.63 | -1.43 | -1.46 | -1.79 | 0.40 | -0.46 | -0.56 | -1.61 | -0.93 | -0.98 | -0.37 | 0.72 |
+| Goods | -0.85 | -1.18 | -0.86 | -0.93 | -1.45 | -1.20 | -1.31 | -1.55 | 0.39 | -0.41 | -0.56 | -1.34 | -0.89 | -0.82 | -0.25 | 0.68 |
+| Nonpetroleum goods | -0.77 | -1.13 | -0.88 | -0.87 | -1.40 | -1.15 | -1.31 | -1.49 | 0.43 | -0.44 | -0.49 | -1.25 | -0.85 | -0.86 | -0.30 | 0.16 |
+| Petroleum and petroleum products | -0.08 | -0.05 | 0.01 | -0.07 | -0.04 | -0.05 | 0.00 | -0.06 | -0.04 | 0.03 | -0.07 | -0.09 | -0.04 | 0.04 | 0.05 | 0.52 |
+| Services | -0.06 | -0.11 | -0.06 | -0.11 | -0.19 | -0.23 | -0.15 | -0.25 | 0.01 | -0.05 | 0.00 | -0.27 | -0.04 | -0.16 | -0.12 | 0.04 |
+| EQUALS: Real gross domestic income | 2.78 | 4.05 | 2.46 | 3.80 | 4.79 | 4.65 | 4.33 | 3.33 | 1.15 | 1.79 | 2.34 | 3.42 | 2.52 | 2.64 | 1.97 | -0.12 |
+
+a. Calculated as the percent change in the ratio of the price index for GDP to the price index for GDFE, with export and import components given by 
+equation (20). 
+b. First half of 2008 is shown at annual rate of change. 
+
+Table 3: Prices of Exports and Imports (Percentage Change from Preceding Year; 2008 H1 at Annual Rate)
+
+| | 1973 | 1974 | 1979 | 1980 | 1981 | 1982 | 1983 | 1984 | 1985 | 1986 | 1987 | 1988 | 1989 | 1990 | 1991 | 1992 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Exports of goods and services | 13.1 | 23.2 | 12.0 | 10.1 | 7.4 | 0.5 | 0.4 | 0.9 | -3.1 | -1.5 | 2.5 | 5.2 | 1.7 | 0.7 | 1.3 | -0.4 |
+| Goods | 16.1 | 26.6 | 13.2 | 9.6 | 7.1 | -1.1 | -0.7 | 0.9 | -5.0 | -3.3 | 2.6 | 6.4 | 1.3 | -1.0 | -0.1 | -1.6 |
+| Services | 4.7 | 11.6 | 7.8 | 12.3 | 8.7 | 6.1 | 3.9 | 1.1 | 2.7 | 3.4 | 2.2 | 2.0 | 2.7 | 5.2 | 5.0 | 2.5 |
+| Imports of goods and services | 17.4 | 43.1 | 17.1 | 24.6 | 5.4 | -3.4 | -3.7 | -0.9 | -3.3 | 0.1 | 6.1 | 4.8 | 2.2 | 2.9 | -0.4 | 0.1 |
+| Goods | 17.9 | 49.6 | 17.9 | 26.2 | 5.6 | -4.0 | -4.2 | -0.7 | -3.9 | -2.2 | 7.1 | 4.8 | 2.8 | 1.8 | -1.4 | -0.5 |
+| Nonpetroleum goods | 16.9 | 26.1 | 10.9 | 13.0 | 2.6 | -2.5 | -2.4 | -0.8 | -3.6 | 6.0 | 5.8 | 7.3 | 1.2 | -0.4 | 0.2 | -0.1 |
+| Petroleum and petroleum products | 27.4 | 228.4 | 40.4 | 62.9 | 12.5 | -8.1 | -10.1 | -0.2 | -5.7 | -46.0 | 19.9 | -16.6 | 19.1 | 20.8 | -12.6 | -3.8 |
+| Services | 15.7 | 18.9 | 12.9 | 16.1 | 4.3 | 0.1 | -1.6 | -1.7 | -0.1 | 11.2 | 1.4 | 5.0 | -0.6 | 7.6 | 3.7 | 2.7 |
+| a | | | | | | | | | | | | | | | | |
+| Terms of Trade, Goods and Services | -3.6 | -13.9 | -4.3 | -11.6 | 1.9 | 4.0 | 4.3 | 1.8 | 0.2 | -1.5 | -3.4 | 0.4 | -0.5 | -2.1 | 1.7 | -0.5 |
+| Terms of Trade, Goods | -1.5 | -15.4 | -4.0 | -13.1 | 1.4 | 3.0 | 3.6 | 1.6 | -1.1 | -1.1 | -4.2 | 1.6 | -1.5 | -2.7 | 1.3 | -1.1 |
+| Terms of Trade, Nonpetroleum goods | -0.7 | 0.4 | 2.1 | -3.0 | 4.3 | 1.4 | 1.7 | 1.7 | -1.5 | -8.7 | -3.1 | -0.8 | 0.1 | -0.6 | -0.3 | -1.5 |
+| b | | | | | | | | | | | | | | | | |
+| Relative price of tradables | 8.9 | 20.5 | 5.3 | 6.0 | -2.5 | -6.8 | -5.0 | -3.4 | -5.9 | -2.9 | 1.1 | 1.5 | -1.8 | -2.2 | -2.7 | -2.4 |
+| Relative price of tradables, Goods | 10.5 | 24.9 | 6.2 | 6.4 | -2.6 | -7.8 | -5.8 | -3.3 | -7.1 | -4.9 | 1.7 | 2.1 | -1.7 | -3.5 | -3.9 | -3.3 |
+| Relative price of tradables, Nonpetroleum | 10.1 | 14.6 | 3.0 | 0.7 | -4.0 | -7.1 | -4.9 | -3.4 | -7.0 | -1.0 | 1.1 | 3.3 | -2.4 | -4.6 | -3.2 | -3.1 |
+| c | | | | | | | | | | | | | | | | |
+| Trading gains | -0.2 | -1.1 | -0.4 | -1.3 | 0.2 | 0.4 | 0.4 | 0.2 | 0.2 | 0.0 | -0.3 | 0.0 | 0.0 | -0.2 | 0.2 | 0.0 |
+| Gross domestic product price index | 5.6 | 9.0 | 8.3 | 9.1 | 9.4 | 6.1 | 3.9 | 3.8 | 3.0 | 2.2 | 2.7 | 3.4 | 3.8 | 3.9 | 3.5 | 2.3 |
+| Gross dom. final expenditures prices | 5.8 | 10.2 | 8.8 | 10.5 | 9.1 | 5.7 | 3.5 | 3.5 | 2.9 | 2.3 | 3.1 | 3.4 | 3.8 | 4.1 | 3.3 | 2.3 |
+
+See footnotes at end of table.
+
+Table 3, Continued (Percentage Change from Preceding Year; 2008 H1 at Annual Rate)
+
+| | 1993 | 1994 | 1995 | 1996 | 1997 | 1998 | 1999 | 2000 | 2001 | 2002 | 2003 | 2004 | 2005 | 2006 | 2007 | H1 2008 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Exports of goods and services | 0.0 | 1.1 | 2.3 | -1.3 | -1.7 | -2.3 | -0.6 | 1.7 | -0.4 | -0.4 | 2.2 | 3.5 | 3.6 | 3.5 | 3.5 | 9.9 |
+| Goods | -0.6 | 1.1 | 2.4 | -2.6 | -2.7 | -3.2 | -1.4 | 1.1 | -0.7 | -0.7 | 2.0 | 3.7 | 3.1 | 3.3 | 3.5 | 11.2 |
+| Services | 1.4 | 1.3 | 2.1 | 1.9 | 1.0 | -0.1 | 1.3 | 3.1 | 0.4 | 0.4 | 2.6 | 3.2 | 4.9 | 3.8 | 3.5 | 7.2 |
+| Imports of goods and services | -0.9 | 0.9 | 2.7 | -1.8 | -3.6 | -5.4 | 0.6 | 4.2 | -2.5 | -1.2 | 3.5 | 4.9 | 6.3 | 4.3 | 3.7 | 20.5 |
+| Goods | -1.2 | 0.8 | 2.7 | -2.5 | -4.2 | -6.0 | 0.1 | 4.8 | -3.0 | -1.8 | 2.9 | 4.9 | 6.5 | 4.2 | 3.6 | 22.2 |
+| Nonpetroleum goods | -0.3 | 1.4 | 2.0 | -4.3 | -4.0 | -3.7 | -1.7 | 0.6 | -1.5 | -2.2 | 1.2 | 2.4 | 2.5 | 1.2 | 2.1 | 9.6 |
+| Petroleum and petroleum products | -9.6 | -6.2 | 11.2 | 20.3 | -5.7 | -33.7 | 33.1 | 67.5 | -16.9 | 2.5 | 20.8 | 27.3 | 36.5 | 22.5 | 11.7 | 82.6 |
+| Services | 0.7 | 1.7 | 2.8 | 2.1 | -0.4 | -2.2 | 3.2 | 1.4 | 0.1 | 1.7 | 6.3 | 4.4 | 5.7 | 4.8 | 3.7 | 12.2 |
+| a | | | | | | | | | | | | | | | | |
+| Terms of Trade, Goods and Services | 0.9 | 0.2 | -0.4 | 0.4 | 1.9 | 3.3 | -1.2 | -2.4 | 2.2 | 0.8 | -1.3 | -1.3 | -2.5 | -0.8 | -0.1 | -8.8 |
+| Terms of Trade, Goods | 0.6 | 0.3 | -0.3 | -0.1 | 1.5 | 3.1 | -1.5 | -3.5 | 2.4 | 1.1 | -0.9 | -1.2 | -3.2 | -0.8 | -0.1 | -9.0 |
+| Terms of Trade, Nonpetroleum goods | -0.3 | -0.3 | 0.4 | 1.8 | 1.3 | 0.5 | 0.3 | 0.6 | 0.8 | 1.5 | 0.8 | 1.2 | 0.6 | 2.1 | 1.4 | 1.5 |
+| b | | | | | | | | | | | | | | | | |
+| Relative price of tradables : | -2.6 | -1.0 | 0.4 | -3.3 | -4.0 | -4.5 | -1.5 | 0.4 | -3.4 | -2.3 | 0.5 | 1.1 | 1.2 | 0.5 | 0.8 | 10.8 |
+| Relative price of tradables, Goods | -3.0 | -1.1 | 0.4 | -4.3 | -4.8 | -5.2 | -2.1 | 0.4 | -3.8 | -2.7 | 0.2 | 1.2 | 1.0 | 0.4 | 0.8 | 12.2 |
+| Relative price of tradables, Nonpetroleum | -2.6 | -0.8 | 0.1 | -5.2 | -4.7 | -4.0 | -3.0 | -1.6 | -3.0 | -2.9 | -0.7 | 0.0 | -0.9 | -1.1 | 0.1 | 6.3 |
+| c | | | | | | | | | | | | | | | | |
+| Trading gains | 0.1 | 0.0 | 0.0 | 0.1 | 0.3 | 0.5 | -0.1 | -0.3 | 0.4 | 0.2 | -0.2 | -0.2 | -0.4 | -0.1 | -0.1 | -1.9 |
+| Gross domestic product price index | 2.3 | 2.1 | 2.0 | 1.9 | 1.7 | 1.1 | 1.4 | 2.2 | 2.4 | 1.7 | 2.1 | 2.9 | 3.3 | 3.2 | 2.7 | 1.9 |
+| Gross dom. final expenditures price index | 2.2 | 2.1 | 2.1 | 1.8 | 1.4 | 0.6 | 1.6 | 2.5 | 2.0 | 1.6 | 2.3 | 3.1 | 3.7 | 3.4 | 2.8 | 3.9 |
+
+a. Ratio of the price index for exports to the price index for imports. 
+b. Ratio of the average of the price index for exports and the price index for imports to the price index for gross domestic final expenditures. 
+c. Ratio of the gross domestic product price index to the gross domestic final expenditures price index. . 
+
+Table 4: Contributions of the Terms of Trade and the Relative Price of Tradables to the Change in Trading Gains a
+
+(percentage points; 2008 H1 expressed at annual rate)
+
+| | 1973 | 1974 | 1979 | 1980 | 1981 | 1982 | 1983 | 1984 | 1985 | 1986 | 1987 | 1988 | 1989 | 1990 | 1991 | 1992 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Terms of trade, goods and services | -0.24 | -1.24 | -0.41 | -1.24 | 0.19 | 0.36 | 0.36 | 0.15 | 0.02 | -0.13 | -0.31 | 0.03 | -0.05 | -0.21 | 0.17 | -0.05 |
+| Goods | -0.08 | -1.12 | -0.31 | -1.17 | 0.12 | 0.22 | 0.24 | 0.11 | -0.07 | -0.07 | -0.30 | 0.12 | -0.11 | -0.21 | 0.10 | -0.09 |
+| Nonpetroleum goods | -0.03 | 0.02 | 0.13 | -0.21 | 0.29 | 0.09 | 0.10 | 0.10 | -0.09 | -0.56 | -0.20 | -0.06 | 0.00 | -0.04 | -0.02 | -0.11 |
+| PLUS: Relative price of tradables | 0.01 | 0.13 | -0.04 | -0.01 | 0.01 | 0.05 | 0.06 | 0.07 | 0.16 | 0.08 | -0.03 | -0.04 | 0.03 | 0.03 | 0.03 | 0.01 |
+| Goods | -0.01 | 0.11 | -0.07 | -0.03 | 0.02 | 0.09 | 0.10 | 0.08 | 0.21 | 0.15 | -0.05 | -0.06 | 0.04 | 0.07 | 0.07 | 0.05 |
+| Nonpetroleum goods | 0.03 | 0.15 | 0.02 | 0.01 | -0.07 | -0.08 | -0.01 | 0.03 | 0.10 | 0.02 | -0.03 | -0.07 | 0.04 | 0.05 | 0.02 | 0.02 |
+| EQUALS: Trading Gains | -0.23 | -1.11 | -0.45 | -1.25 | 0.20 | 0.41 | 0.43 | 0.23 | 0.18 | -0.05 | -0.34 | 0.00 | -0.02 | -0.18 | 0.20 | -0.04 |
+| PLUS: Gross dom. final exp. prices | 5.81 | 10.11 | 8.73 | 10.35 | 9.17 | 5.70 | 3.52 | 3.53 | 2.86 | 2.26 | 3.06 | 3.42 | 3.80 | 4.06 | 3.28 | 2.35 |
+| EQUALS: Gross domestic product prices | 5.58 | 9.00 | 8.28 | 9.10 | 9.37 | 6.11 | 3.95 | 3.76 | 3.04 | 2.22 | 2.72 | 3.42 | 3.78 | 3.88 | 3.48 | 2.30 |
+| | | | | | | | | | | | | | | | | |
+| | 1993 | 1994 | 1995 | 1996 | 1997 | 1998 | 1999 | 2000 | 2001 | 2002 | 2003 | 2004 | 2005 | 2006 | 2007 | 2008 H1 |
+| Terms of trade, goods and services | 0.09 | 0.02 | -0.04 | 0.05 | 0.22 | 0.38 | -0.15 | -0.31 | 0.27 | 0.10 | -0.15 | -0.16 | -0.34 | -0.11 | -0.02 | -1.45 |
+| Goods | 0.05 | 0.02 | -0.02 | -0.01 | 0.13 | 0.28 | -0.14 | -0.35 | 0.23 | 0.10 | -0.08 | -0.12 | -0.33 | -0.09 | -0.01 | -1.17 |
+| Nonpetroleum goods | -0.02 | -0.03 | 0.03 | 0.15 | 0.11 | 0.05 | 0.03 | 0.05 | 0.07 | 0.13 | 0.07 | 0.11 | 0.06 | 0.20 | 0.14 | 0.15 |
+| PLUS: Relative price of tradables | 0.02 | 0.01 | 0.00 | 0.04 | 0.05 | 0.08 | 0.03 | -0.01 | 0.13 | 0.09 | -0.02 | -0.05 | -0.07 | -0.03 | -0.04 | -0.50 |
+| Goods | 0.05 | 0.03 | -0.01 | 0.10 | 0.12 | 0.15 | 0.07 | -0.02 | 0.18 | 0.13 | -0.01 | -0.06 | -0.06 | -0.03 | -0.05 | -0.68 |
+| Nonpetroleum goods | 0.03 | 0.01 | 0.00 | 0.09 | 0.08 | 0.08 | 0.08 | 0.05 | 0.10 | 0.11 | 0.03 | 0.00 | 0.04 | 0.05 | 0.00 | -0.21 |
+| EQUALS: Trading Gains | 0.11 | 0.03 | -0.05 | 0.09 | 0.28 | 0.46 | -0.11 | -0.32 | 0.40 | 0.19 | -0.17 | -0.21 | -0.40 | -0.14 | -0.06 | -1.94 |
+| PLUS: Gross dom. final exp. prices | 2.19 | 2.09 | 2.10 | 1.80 | 1.38 | 0.65 | 1.56 | 2.50 | 2.00 | 1.56 | 2.30 | 3.08 | 3.67 | 3.35 | 2.76 | 3.80 |
+| EQUALS: Gross domestic product prices | 2.30 | 2.12 | 2.05 | 1.89 | 1.66 | 1.11 | 1.44 | 2.18 | 2.40 | 1.75 | 2.13 | 2.87 | 3.27 | 3.22 | 2.69 | 1.86 |
+
+a. Calculated from equation (21).
+

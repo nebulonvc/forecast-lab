@@ -1,0 +1,28 @@
+{
+  "id": "68dfa34d-cb23-4366-bde3-49cafc89e364",
+  "object": "chat.completion",
+  "created": 1794201585,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000036504-000036517\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"对“对未来不明确的悲观主义者”行为倾向的描述，非可检验的未来结果预测。\",\"reason\":\"原文描述该类人面对未来时只会等待事情发生，属于态度/行为特征刻画，不是对具体未来事件的预测。\",\"limitation\":\"无时间、指标或可观测结果，无法作为预测评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000036907-000036969\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"判断对象为“中国人民生活水平完全赶上世界最富有国家”，无期限、无具体指标（人均收入、PPP或实际消费等均未指定）。\",\"reason\":\"原文给出的是无期限的结构性判断，且“生活水平完全赶上”缺乏可操作化口径；现有证据为空，无法在截止日前判定方向。\",\"limitation\":\"未指定指标与期限，若采用不同口径（名义/PPP、人均/总量）结论可能不同；无证据不得凭模型记忆补结果。\",\"evidence_ids\":[],\"method\":\"资源约束与人口规模推演\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"未给出确切期限\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000037031-000037048\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"“冬天”指困难时期/衰退，但未界定具体经济指标、幅度与时间窗口。\",\"reason\":\"“冬天即将来临”语义模糊，无法确定何种下行、多大程度算命中；无证据支持具体方向判断。\",\"limitation\":\"不能因任何经济下行自动判为命中，也不能因短期波动判为错误；需明确指标与期限。\",\"evidence_ids\":[],\"method\":\"转述公众预期\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"即将\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000037076-000037115\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"对当时中国富人与较贫穷者资金转移、储蓄行为的现状描述。\",\"reason\":\"原文用“正”描述当前行为，属于现状陈述而非对未来结果的预测。\",\"limitation\":\"无未来时间指向，不能作为预测评分对象。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6313,
+    "completion_tokens": 626,
+    "total_tokens": 6939,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 5545
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

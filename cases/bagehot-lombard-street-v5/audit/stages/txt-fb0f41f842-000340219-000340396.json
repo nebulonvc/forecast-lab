@@ -1,0 +1,80 @@
+{
+  "id": "txt-fb0f41f842-000340219-000340396",
+  "r3_revision": false,
+  "plan": {
+    "queries": [],
+    "note": "r3 不重研。QA 已认可的裁决保持，六项与现行裁决一致。"
+  },
+  "select": {
+    "urls": [],
+    "reason": "本轮没有新的同对象来源入选。没有把 executed 写成 true。"
+  },
+  "assess": {
+    "id": "txt-fb0f41f842-000340219-000340396",
+    "inclusion": "forecast",
+    "verdict": "正确",
+    "basis": "observed_window",
+    "scope": "迟早伦巴第街的生意分属于股份银行和少数大私人银行。",
+    "reason": "2023年国民西敏寺页面写1918年出现五大行。百科页写1914年私人银行只剩八家、股份银行存款远大于它们。生意已经主要在大股份银行和少数私人银行之间。",
+    "limitation": "五大行是股份银行，不是私人银行。少数私人银行仍然存在，与原文的少数大私人银行相容。",
+    "evidence_ids": [
+      "ev-natwest-2023",
+      "ev-ws-banks-1926"
+    ],
+    "method": "用已存档公开正文核对对象和方向。",
+    "method_basis": "explicit",
+    "observation_end": "1918-12-31",
+    "future_time_text": "Sooner or later",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-natwest-2023",
+        "quote": "By 1918, England’s so-called 'Big Five' banks had emerged: National Provincial, London County Westmi",
+        "relation": "support",
+        "limitation": "五大行是股份银行，不是私人银行。少数私人银行仍然存在，与原文的少数大私人银行相容。",
+        "observation_end": "1918-12-31",
+        "publication_date": "2023-12-08"
+      },
+      {
+        "evidence_id": "ev-ws-banks-1926",
+        "quote": "private banks had decreased to eight",
+        "relation": "support",
+        "limitation": "五大行是股份银行，不是私人银行。少数私人银行仍然存在，与原文的少数大私人银行相容。",
+        "observation_end": "1914-12-31",
+        "publication_date": null
+      }
+    ],
+    "remaining_gap": ""
+  },
+  "semantic_review": {
+    "id": "txt-fb0f41f842-000340219-000340396",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-ws-banks-1926"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-ws-banks-1926"
+      ],
+      "blocks_verdict": false
+    }
+  ]
+}

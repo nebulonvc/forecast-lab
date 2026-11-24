@@ -1,0 +1,718 @@
+{
+  "claim_id": "txt-1c4066fc0c-000011739-000011800",
+  "version": "search-verifier-v2",
+  "input_sha256": "84096f8dc9116a15ae82994c770964094c25b54be8a4367f5e20d03ca85251cb",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000011739-000011800",
+    "inclusion": "forecast",
+    "verdict": "正确",
+    "basis": "observed_window",
+    "scope": "原文为条件性判断：电脑普及使社会通讯系统脆弱，机器故障或病毒侵入可大范围波及，有时造成大量数据丢失。回顾口径为1991年后至cutoff前公开记录的电脑/网络系统故障或恶意软件事件中是否出现广泛传播与实质数据损失；不要求每次故障均扩散。",
+    "reason": "CERT-EU记录Petya样恶意软件迅速在组织内传播、可跨境扩散并造成扇区实质删除；CrowdStrike错误更新导致全球约850万台Windows设备崩溃，波及航空、银行、零售与急救服务；USENIX研究显示单一文件系统故障即可在分布式存储系统中造成数据丢失、损坏与不可用。这些直接对应原文‘大范围波及’与‘有时大量数据丢失’的主要判断。",
+    "limitation": "证据多为具体事件与实验研究，不能量化‘电脑越多风险按固定比例增加’，也不证明每次故障都会扩散；原文‘有时’的量词已保留例外空间。",
+    "evidence_ids": [
+      "prior-f1ee5a795bca4d3ba245",
+      "ev-4660f25a2a0be1e619525d1b",
+      "ev-1e9275248965deced439a9ea",
+      "ev-2e122599410b12f63c659658",
+      "ev-8919d460747fbd3f47735ab4",
+      "prior-32e4334532fb2a8766c7"
+    ],
+    "method": "从系统互联推断故障传播与集中依赖风险",
+    "method_basis": "inferred",
+    "observation_end": "2024-08-06",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-f1ee5a795bca4d3ba245",
+        "relation": "support",
+        "quote": "CERT-EU报告Petya样恶意软件迅速在组织内传播且可跨境扩散；发现额外擦盘行为，部分扇区被实质删除，文件加密后的恢复资料不可靠。",
+        "publication_date": "2017-06-29",
+        "observation_end": "2017-06-29",
+        "limitation": "为已登记摘要，非全文；证明该次事件传播与数据删除，不覆盖所有病毒事件。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-4660f25a2a0be1e619525d1b",
+        "relation": "support",
+        "quote": "On July 19, 2024, CrowdStrike, a cybersecurity firm that delivers its products and services via a cloud computing platform, released a software update with a defective file for devices using the Windows operating system, causing some Windows devices to crash.",
+        "publication_date": "2024-07-24",
+        "observation_end": "2024-07-20",
+        "limitation": "正文截断；摘要称约850万台Windows设备受影响、低于全部Windows设备1%，属单次事件，不能代表所有故障。",
+        "publication_date_status": "unconfirmed_by_source_metadata",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-1e9275248965deced439a9ea",
+        "relation": "support",
+        "quote": "Microsoft estimates the outage affected 8.5 million Windows devices. Microsoft notes that this number makes up less than one percent of all Windows machines.",
+        "publication_date": null,
+        "observation_end": "2024-08-06",
+        "limitation": "CISA页面元数据无发表日期，仅有最后修订日期；正文截断，且为官方通报，证明事件规模而非因果机制。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-2e122599410b12f63c659658",
+        "relation": "support",
+        "quote": "The major result of our study is that a single file-system fault introduced in one node of the cluster can induce catastrophic outcomes such as data loss, corruption, and unavailability.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "期刊页面无发表日期元数据；为实验研究，证明技术可能性而非生产环境普遍发生率。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-8919d460747fbd3f47735ab4",
+        "relation": "support",
+        "quote": "We find that modern distributed systems do not consistently use redundancy to recover from file-system faults: a single file-system fault can cause catastrophic outcomes such as data loss, corruption, and unavailability.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "会议论文PDF，元数据无发表日期；实验条件与生产部署存在差异。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "prior-32e4334532fb2a8766c7",
+        "relation": "support",
+        "quote": "GAO记录CrowdStrike错误软件更新造成数百万Windows系统故障，影响航空与医院；同时回顾SolarWinds攻击，讨论供应链相互依赖的系统脆弱性。",
+        "publication_date": "2024-09-23",
+        "observation_end": "2024-09-23",
+        "limitation": "为已登记摘要，非全文；概括性记录，未给出逐项数据损失统计。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺少覆盖1991年后长时段、系统性的全球故障与数据损失统计，无法量化‘电脑普及程度’与脆弱性的比例关系；现有证据足以支持原文条件性主要判断。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000011739-000011800",
+    "inclusion": "forecast",
+    "verdict": "正确",
+    "basis": "observed_window",
+    "scope": "原文为条件性判断：电脑普及使社会通讯系统脆弱，机器故障或病毒侵入可大范围波及，有时造成大量数据丢失。回顾口径为1991年后至cutoff前公开记录的电脑/网络系统故障或恶意软件事件中是否出现广泛传播与实质数据损失；不要求每次故障均扩散。",
+    "reason": "CERT-EU记录Petya样恶意软件迅速在组织内传播、可跨境扩散并造成扇区实质删除；CrowdStrike错误更新导致全球约850万台Windows设备崩溃，波及航空、银行、零售与急救服务；USENIX研究显示单一文件系统故障即可在分布式存储系统中造成数据丢失、损坏与不可用。这些直接对应原文‘大范围波及’与‘有时大量数据丢失’的主要判断。",
+    "limitation": "证据多为具体事件与实验研究，不能量化‘电脑越多风险按固定比例增加’，也不证明每次故障都会扩散；原文‘有时’的量词已保留例外空间。",
+    "evidence_ids": [
+      "prior-f1ee5a795bca4d3ba245",
+      "ev-4660f25a2a0be1e619525d1b",
+      "ev-1e9275248965deced439a9ea",
+      "ev-2e122599410b12f63c659658",
+      "ev-8919d460747fbd3f47735ab4",
+      "prior-32e4334532fb2a8766c7"
+    ],
+    "method": "从系统互联推断故障传播与集中依赖风险",
+    "method_basis": "inferred",
+    "observation_end": "2024-08-06",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-f1ee5a795bca4d3ba245",
+        "relation": "support",
+        "quote": "CERT-EU报告Petya样恶意软件迅速在组织内传播且可跨境扩散；发现额外擦盘行为，部分扇区被实质删除，文件加密后的恢复资料不可靠。",
+        "publication_date": "2017-06-29",
+        "observation_end": "2017-06-29",
+        "limitation": "为已登记摘要，非全文；证明该次事件传播与数据删除，不覆盖所有病毒事件。"
+      },
+      {
+        "evidence_id": "ev-4660f25a2a0be1e619525d1b",
+        "relation": "support",
+        "quote": "On July 19, 2024, CrowdStrike, a cybersecurity firm that delivers its products and services via a cloud computing platform, released a software update with a defective file for devices using the Windows operating system, causing some Windows devices to crash.",
+        "publication_date": "2024-07-24",
+        "observation_end": "2024-07-20",
+        "limitation": "正文截断；摘要称约850万台Windows设备受影响、低于全部Windows设备1%，属单次事件，不能代表所有故障。"
+      },
+      {
+        "evidence_id": "ev-1e9275248965deced439a9ea",
+        "relation": "support",
+        "quote": "Microsoft estimates the outage affected 8.5 million Windows devices. Microsoft notes that this number makes up less than one percent of all Windows machines.",
+        "publication_date": null,
+        "observation_end": "2024-08-06",
+        "limitation": "CISA页面元数据无发表日期，仅有最后修订日期；正文截断，且为官方通报，证明事件规模而非因果机制。"
+      },
+      {
+        "evidence_id": "ev-2e122599410b12f63c659658",
+        "relation": "support",
+        "quote": "The major result of our study is that a single file-system fault introduced in one node of the cluster can induce catastrophic outcomes such as data loss, corruption, and unavailability.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "期刊页面无发表日期元数据；为实验研究，证明技术可能性而非生产环境普遍发生率。"
+      },
+      {
+        "evidence_id": "ev-8919d460747fbd3f47735ab4",
+        "relation": "support",
+        "quote": "We find that modern distributed systems do not consistently use redundancy to recover from file-system faults: a single file-system fault can cause catastrophic outcomes such as data loss, corruption, and unavailability.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "会议论文PDF，元数据无发表日期；实验条件与生产部署存在差异。"
+      },
+      {
+        "evidence_id": "prior-32e4334532fb2a8766c7",
+        "relation": "support",
+        "quote": "GAO记录CrowdStrike错误软件更新造成数百万Windows系统故障，影响航空与医院；同时回顾SolarWinds攻击，讨论供应链相互依赖的系统脆弱性。",
+        "publication_date": "2024-09-23",
+        "observation_end": "2024-09-23",
+        "limitation": "为已登记摘要，非全文；概括性记录，未给出逐项数据损失统计。"
+      }
+    ],
+    "remaining_gap": "缺少覆盖1991年后长时段、系统性的全球故障与数据损失统计，无法量化‘电脑普及程度’与脆弱性的比例关系；现有证据足以支持原文条件性主要判断。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-32e4334532fb2a8766c7",
+      "url": "https://www.gao.gov/products/gao-24-107733",
+      "title": "ev-cyber",
+      "published_date": "2024-09-23",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-09-23",
+        "latest": "2024-09-23"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-cyber",
+      "archive_sha256": "6bf62c459a4c0829574ace416a27fe1e81811e0b982576e7f9e69d9094eb4233",
+      "archive_path": "data/sources/web-cyber-budget-attitudes.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-f1ee5a795bca4d3ba245",
+      "url": "https://cert.europa.eu/publications/security-advisories/2017-014/",
+      "title": "ev-lane1-notpetya",
+      "published_date": "2017-06-29",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2017-06-29",
+        "latest": "2017-06-29"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane1-notpetya",
+      "archive_sha256": "592e1e455e7011d344b5c352d9789ceb052a2ce6004e800a4b39b1a436e2ec78",
+      "archive_path": "data/sources/lane1-web-extracted-2.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-4660f25a2a0be1e619525d1b",
+      "url": "https://www.congress.gov/crs-product/R48135",
+      "resolved_url": "https://www.congress.gov/crs-product/R48135",
+      "title": "IT Disruptions from CrowdStrike’s Update: Frequently Asked Questions | Congress.gov | Library of Congress",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:52.617347+00:00",
+      "archive_sha256": "25e5278c163f653070faffb4720f6dd6bb2376193d8faee0432f0836f36a959c",
+      "archive_path": "jobs/ac5067bfda2e35cb0b083eb7/25e5278c163f653070faffb4720f6dd6bb2376193d8faee0432f0836f36a959c.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-2e122599410b12f63c659658",
+      "url": "https://www.usenix.org/publications/login/summer2017/ganesan",
+      "resolved_url": "https://www.usenix.org/publications/login/summer2017/ganesan",
+      "title": "Redundancy Does Not Imply Fault Tolerance: Analysis of Distributed Storage Reactions to Single Errors and Corruptions | USENIX",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:52.617563+00:00",
+      "archive_sha256": "5651ae06691e7fd5786295d16396b55d1c40ae896f6e645744039e12ae80af1c",
+      "archive_path": "jobs/ac5067bfda2e35cb0b083eb7/5651ae06691e7fd5786295d16396b55d1c40ae896f6e645744039e12ae80af1c.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a679fc20ad52a9362cfecb63",
+      "url": "https://cs.uwaterloo.ca/~amsalqur/neat/NEAT-OSDI18.pdf",
+      "resolved_url": "https://cs.uwaterloo.ca/~amsalqur/neat/NEAT-OSDI18.pdf",
+      "title": "An Analysis of Network-Partitioning Failures in Cloud Systems",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:52.617776+00:00",
+      "archive_sha256": "812fe84f73956de395fb1a7c2c8e2b49038282b9694fe76bb32ac9dbc1e95ba3",
+      "archive_path": "jobs/ac5067bfda2e35cb0b083eb7/812fe84f73956de395fb1a7c2c8e2b49038282b9694fe76bb32ac9dbc1e95ba3.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-1e9275248965deced439a9ea",
+      "url": "https://www.cisa.gov/news-events/alerts/2024/07/19/widespread-it-outage-due-crowdstrike-update",
+      "resolved_url": "https://www.cisa.gov/news-events/alerts/2024/07/19/widespread-it-outage-due-crowdstrike-update",
+      "title": "Widespread IT Outage Due to CrowdStrike Update | CISA",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:42:01.284117+00:00",
+      "archive_sha256": "2ad88e5f4dbd9ec7f5904925c6526f0db8b18ae8ec0fb762d61f29de38d58134",
+      "archive_path": "jobs/ac5067bfda2e35cb0b083eb7/2ad88e5f4dbd9ec7f5904925c6526f0db8b18ae8ec0fb762d61f29de38d58134.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-8919d460747fbd3f47735ab4",
+      "url": "https://www.usenix.org/system/files/conference/fast17/fast17-ganesan.pdf",
+      "resolved_url": "https://www.usenix.org/system/files/conference/fast17/fast17-ganesan.pdf",
+      "title": "Redundancy Does Not Imply Fault Tolerance: Analysis of Distributed Storage Reactions to Single Errors and Corruptions",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:42:01.284387+00:00",
+      "archive_sha256": "c9c5fadf9e9bea698d51d7aa4259581f84ecd2ef61cc914781a33cd570f8acdd",
+      "archive_path": "jobs/ac5067bfda2e35cb0b083eb7/c9c5fadf9e9bea698d51d7aa4259581f84ecd2ef61cc914781a33cd570f8acdd.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "CrowdStrike faulty update July 2024 millions Windows systems outage airlines hospitals GAO",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "study computer system failures data loss not widespread redundancy resilience distributed systems evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "CrowdStrike faulty update July 2024 8.5 million Windows devices global IT outage airlines banks CRS report",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "distributed storage systems single fault data loss corruption study USENIX redundancy does not imply fault tolerance",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-1e9275248965deced439a9ea",
+        "ev-2e122599410b12f63c659658",
+        "ev-4660f25a2a0be1e619525d1b",
+        "ev-8919d460747fbd3f47735ab4"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "model_publication_date_not_verified",
+      "evidence_ids": [
+        "ev-4660f25a2a0be1e619525d1b"
+      ]
+    }
+  ],
+  "remaining_gap": "缺少覆盖1991年后长时段、系统性的全球故障与数据损失统计，无法量化‘电脑普及程度’与脆弱性的比例关系；现有证据足以支持原文条件性主要判断。",
+  "source_statuses": [
+    {
+      "url": "https://www.congress.gov/crs-product/R48135",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.usenix.org/publications/login/summer2017/ganesan",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://cs.uwaterloo.ca/~amsalqur/neat/NEAT-OSDI18.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.cisa.gov/news-events/alerts/2024/07/19/widespread-it-outage-due-crowdstrike-update",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.usenix.org/system/files/conference/fast17/fast17-ganesan.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "9054fa57e4feb2190629d1c4f1c2492c0ce1762e807f54011d77ef2e45cbd986"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "a0d047a9304795508ae1aa34223b7531",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "ceb8c3f4e5feb765c7b285d9be9f5d39",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "46ced8c39918860194fba1374d6f6651dc6799129ef2a91c00412931efaf0437"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "300b957de7b7edf888603abfac794787",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "549eb76885d3924f282ad00e688e9a4c4e928765da79d1499d97c9bb613c65ed"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "55cbb394ddd0087523194556d2e23258",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "ce4e2d48b1c3438659f62a4c1a4c09e4",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "15a1a6be718fbdfdac259261c2aa3709ce2779319e30154df2dba8649cf45561"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "7255f56383a68462a9de98b00489345d",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "68b6cdc5d8e02be27f119c73e35e4407dcc00f4d43dfa30bbaf750f18ea57ad3"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "88c52c21b85a682a582c054253dc1b208746bb6fcd84fe1fc423552541442fbc"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "正确",
+      "mechanical_verdict": "正确",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-1e9275248965deced439a9ea",
+            "ev-2e122599410b12f63c659658",
+            "ev-4660f25a2a0be1e619525d1b",
+            "ev-8919d460747fbd3f47735ab4"
+          ],
+          "blocks_verdict": false
+        },
+        {
+          "code": "model_publication_date_not_verified",
+          "evidence_ids": [
+            "ev-4660f25a2a0be1e619525d1b"
+          ]
+        }
+      ],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-32e4334532fb2a8766c7",
+        "source_bytes": 178,
+        "shown_bytes": 178,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-f1ee5a795bca4d3ba245",
+        "source_bytes": 177,
+        "shown_bytes": 177,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-4660f25a2a0be1e619525d1b",
+        "source_bytes": 12008,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-2e122599410b12f63c659658",
+        "source_bytes": 1251,
+        "shown_bytes": 1251,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-a679fc20ad52a9362cfecb63",
+        "source_bytes": 12006,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-1e9275248965deced439a9ea",
+        "source_bytes": 5633,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-8919d460747fbd3f47735ab4",
+        "source_bytes": 12020,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-32e4334532fb2a8766c7",
+        "source_bytes": 178,
+        "shown_bytes": 178,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-f1ee5a795bca4d3ba245",
+        "source_bytes": 177,
+        "shown_bytes": 177,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-4660f25a2a0be1e619525d1b",
+        "source_bytes": 12008,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-2e122599410b12f63c659658",
+        "source_bytes": 1251,
+        "shown_bytes": 1251,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-a679fc20ad52a9362cfecb63",
+        "source_bytes": 12006,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-1e9275248965deced439a9ea",
+        "source_bytes": 5633,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-8919d460747fbd3f47735ab4",
+        "source_bytes": 12020,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000011739-000011800",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000011739-000011800",
+      "inclusion": "forecast",
+      "verdict": "正确",
+      "basis": "observed_window",
+      "scope": "原文为条件性判断：电脑普及使社会通讯系统脆弱，机器故障或病毒侵入可大范围波及，有时造成大量数据丢失。回顾口径为1991年后至cutoff前公开记录的电脑/网络系统故障或恶意软件事件中是否出现广泛传播与实质数据损失；不要求每次故障均扩散。",
+      "reason": "CERT-EU记录Petya样恶意软件迅速在组织内传播、可跨境扩散并造成扇区实质删除；CrowdStrike错误更新导致全球约850万台Windows设备崩溃，波及航空、银行、零售与急救服务；USENIX研究显示单一文件系统故障即可在分布式存储系统中造成数据丢失、损坏与不可用。这些直接对应原文‘大范围波及’与‘有时大量数据丢失’的主要判断。",
+      "limitation": "证据多为具体事件与实验研究，不能量化‘电脑越多风险按固定比例增加’，也不证明每次故障都会扩散；原文‘有时’的量词已保留例外空间。",
+      "evidence_ids": [
+        "prior-f1ee5a795bca4d3ba245",
+        "ev-4660f25a2a0be1e619525d1b",
+        "ev-1e9275248965deced439a9ea",
+        "ev-2e122599410b12f63c659658",
+        "ev-8919d460747fbd3f47735ab4",
+        "prior-32e4334532fb2a8766c7"
+      ],
+      "method": "从系统互联推断故障传播与集中依赖风险",
+      "method_basis": "inferred",
+      "observation_end": "2024-08-06",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-f1ee5a795bca4d3ba245",
+          "relation": "support",
+          "quote": "CERT-EU报告Petya样恶意软件迅速在组织内传播且可跨境扩散；发现额外擦盘行为，部分扇区被实质删除，文件加密后的恢复资料不可靠。",
+          "publication_date": "2017-06-29",
+          "observation_end": "2017-06-29",
+          "limitation": "为已登记摘要，非全文；证明该次事件传播与数据删除，不覆盖所有病毒事件。"
+        },
+        {
+          "evidence_id": "ev-4660f25a2a0be1e619525d1b",
+          "relation": "support",
+          "quote": "On July 19, 2024, CrowdStrike, a cybersecurity firm that delivers its products and services via a cloud computing platform, released a software update with a defective file for devices using the Windows operating system, causing some Windows devices to crash.",
+          "publication_date": "2024-07-24",
+          "observation_end": "2024-07-20",
+          "limitation": "正文截断；摘要称约850万台Windows设备受影响、低于全部Windows设备1%，属单次事件，不能代表所有故障。"
+        },
+        {
+          "evidence_id": "ev-1e9275248965deced439a9ea",
+          "relation": "support",
+          "quote": "Microsoft estimates the outage affected 8.5 million Windows devices. Microsoft notes that this number makes up less than one percent of all Windows machines.",
+          "publication_date": null,
+          "observation_end": "2024-08-06",
+          "limitation": "CISA页面元数据无发表日期，仅有最后修订日期；正文截断，且为官方通报，证明事件规模而非因果机制。"
+        },
+        {
+          "evidence_id": "ev-2e122599410b12f63c659658",
+          "relation": "support",
+          "quote": "The major result of our study is that a single file-system fault introduced in one node of the cluster can induce catastrophic outcomes such as data loss, corruption, and unavailability.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "期刊页面无发表日期元数据；为实验研究，证明技术可能性而非生产环境普遍发生率。"
+        },
+        {
+          "evidence_id": "ev-8919d460747fbd3f47735ab4",
+          "relation": "support",
+          "quote": "We find that modern distributed systems do not consistently use redundancy to recover from file-system faults: a single file-system fault can cause catastrophic outcomes such as data loss, corruption, and unavailability.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "会议论文PDF，元数据无发表日期；实验条件与生产部署存在差异。"
+        },
+        {
+          "evidence_id": "prior-32e4334532fb2a8766c7",
+          "relation": "support",
+          "quote": "GAO记录CrowdStrike错误软件更新造成数百万Windows系统故障，影响航空与医院；同时回顾SolarWinds攻击，讨论供应链相互依赖的系统脆弱性。",
+          "publication_date": "2024-09-23",
+          "observation_end": "2024-09-23",
+          "limitation": "为已登记摘要，非全文；概括性记录，未给出逐项数据损失统计。"
+        }
+      ],
+      "remaining_gap": "缺少覆盖1991年后长时段、系统性的全球故障与数据损失统计，无法量化‘电脑普及程度’与脆弱性的比例关系；现有证据足以支持原文条件性主要判断。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "王沪宁关于电脑普及导致社会通讯系统脆弱、机器故障或病毒侵入可大范围波及并有时造成大量数据丢失的条件性判断；可观察口径为1991年后美国及跨国电脑/网络系统在故障或恶意软件事件中出现广泛传播和实质数据损失的实际记录，不要求每次故障均扩散，也不把‘电脑越多风险按固定比例增加’作为必要条件。",
+  "elapsed_seconds": 25.447,
+  "completed_at": "2026-11-09T10:42:09.817699+00:00"
+}

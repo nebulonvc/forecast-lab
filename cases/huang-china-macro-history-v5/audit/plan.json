@@ -1,0 +1,76 @@
+{
+  "executed_at": "2026-11-20T01:05:00+00:00",
+  "stage": "revision",
+  "note": "初包没有PLAN/SELECT。本次修订实际检索后写入，不回填成初评。",
+  "claims": [
+    {
+      "id": "txt-07d9664e1f-000183251-000183270",
+      "queries": [
+        {
+          "round": 1,
+          "role": "support",
+          "query": "NPC Civil Code of the People's Republic of China adopted May 28 2020 official",
+          "strategy": "检查一部新法能否证明必有新法律产生"
+        },
+        {
+          "round": 1,
+          "role": "counter",
+          "query": "Huang China macro history new laws mechanism not a dated forecast",
+          "strategy": "回到引文上下文，看这句是不是一般机制"
+        }
+      ],
+      "gap": "上下文是机制类比。一部民法典不能当作这句的终局证据。"
+    },
+    {
+      "id": "txt-07d9664e1f-000186802-000186824",
+      "queries": [],
+      "gap": "引文没有可检索指标，本轮不为这三条新发查询。"
+    },
+    {
+      "id": "txt-07d9664e1f-000187159-000187182",
+      "queries": [],
+      "gap": "引文没有可检索指标，本轮不为这三条新发查询。"
+    },
+    {
+      "id": "txt-07d9664e1f-000190598-000190625",
+      "queries": [],
+      "gap": "引文没有可检索指标，本轮不为这三条新发查询。"
+    },
+    {
+      "id": "txt-07d9664e1f-000191040-000191188",
+      "queries": [
+        {
+          "round": 1,
+          "role": "support",
+          "query": "Hong Kong Monetary Authority Hong Kong dollar legal tender after 1997 Chief Executive elected appointed 20 years residence Court of Final Appeal",
+          "strategy": "找1997年7月1日之后仍在实施的制度正文，而不是1990年通过文本"
+        },
+        {
+          "round": 1,
+          "role": "counter",
+          "query": "Hong Kong Chief Executive appointed by Central People's Government not universal election legislators 20 years residence",
+          "strategy": "核对选举是否还要中央任命，以及二十年居留是否适用于全体立法员"
+        }
+      ],
+      "gap": "货币和区旗的1997年后实施页这次没有存成独立档案。"
+    },
+    {
+      "id": "txt-07d9664e1f-000191295-000191329",
+      "queries": [
+        {
+          "round": 1,
+          "role": "support",
+          "query": "cross-strait relations 2024 no unification Taiwan mainland official status",
+          "strategy": "看截止日前统一是否已经发生"
+        },
+        {
+          "round": 1,
+          "role": "counter",
+          "query": "China will realize complete reunification Wang Yi 2024",
+          "strategy": "保留仍把统一放在未来的官方表述，避免只收未统一"
+        }
+      ],
+      "gap": "来日没有终点，2024年现状不能关闭它。"
+    }
+  ]
+}

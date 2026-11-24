@@ -1,0 +1,28 @@
+{
+  "id": "fd61c77e-a882-42a4-97d7-74a185ee1c81",
+  "object": "chat.completion",
+  "created": 1794201589,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000059635-000059681\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为关于董事会规模的规范性/经验性建议，非可检验的时点预测；无观察时段。\",\"reason\":\"该句是作者对董事会规模与效率关系的行动建议，属于规范性命题而非对未来事件的可检验预测。\",\"limitation\":\"若将其视为经验命题，需另行设计董事会规模与效率的实证研究，本轮不作预测评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4325,
+    "completion_tokens": 156,
+    "total_tokens": 4481,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3557
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

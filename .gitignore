@@ -1,0 +1,52 @@
+# Python & runtime caches
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.pytest_cache/
+
+# Secrets & credentials (NEVER commit)
+.env
+.env.*
+*.key
+*.pem
+*secret*
+!toolkit/tests/*
+
+# Temporary files & OS metadata
+*.tmp
+*.tmp.zip
+.DS_Store
+Thumbs.db
+
+# Copyrighted source books & raw inputs (NEVER commit full books)
+reading-library/
+books/
+cases/*/input/
+my-forecasts/input/
+
+# Large local video masters (distributed via GitHub Releases instead)
+media/videos/*.mp4
+media/videos/*.mov
+media/.build_cache/
+预测动画教程/
+
+# Local legacy symlink
+froecast-lab
+
+# Pipeline intermediate / paid API run caches
+cases/*/output/parallel_run/
+cases/*/output/review/api/
+cases/*/output/claims_before_*.jsonl
+cases/*/output/accepted_*.jsonl
+cases/*/output/txt_import/
+cases/*/output/expansions/
+cases/*/output/search_verify/
+my-forecasts/output/parallel_run/
+my-forecasts/output/review/api/
+my-forecasts/output/claims_before_*.jsonl
+my-forecasts/output/accepted_*.jsonl
+my-forecasts/output/txt_import/
+my-forecasts/output/expansions/
+my-forecasts/output/search_verify/

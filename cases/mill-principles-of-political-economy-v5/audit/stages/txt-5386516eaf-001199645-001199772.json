@@ -1,0 +1,89 @@
+{
+  "id": "txt-5386516eaf-001199645-001199772",
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "紫貂稀缺，养殖水貂不是稀缺。"
+      },
+      {
+        "role": "counter",
+        "query": "紫貂稀缺，养殖水貂不是稀缺。"
+      }
+    ],
+    "note": "r3 新执行。见 audit/search-returns-r3/manifest.json。不回填旧历史，不写旧的 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://google.iopscience.iop.org/article/10.1088/1755-1315/981/4/042006/pdf"
+    ],
+    "reason": "摘录已在存档中。"
+  },
+  "assess": {
+    "id": "txt-5386516eaf-001199645-001199772",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "更贵重的毛皮会受到原料稀缺价值的影响。紫貂是其中一种，不是全部毛皮。",
+    "reason": "2026-11-20新检索再次打开同一篇紫貂论文，文件哈希与旧档相同。文中写到20世纪30年代紫貂在大部分分布区几乎被毁灭。同一轮反证检索写中国水貂产量在2016年从6000万降到2600万，养殖毛皮可以大量供给。稀缺只落实在紫貂，不落实在所有贵重毛皮。",
+    "limitation": "水貂不是紫貂。",
+    "evidence_ids": [
+      "ev-r3-sable",
+      "ev-r3-mink"
+    ],
+    "method": "新执行支持与反证。紫貂因字节相同沿用。",
+    "method_basis": "explicit",
+    "observation_end": "2016-12-31",
+    "future_time_text": "the time seems to be approaching",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-r3-sable",
+        "quote": "by the 30s of the 20th century, the sable was practically destroyed in most of the range",
+        "relation": "support",
+        "limitation": "一种贵重毛皮的原料下降。",
+        "observation_end": "1939-12-31",
+        "publication_date": "2022",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-r3-mink",
+        "quote": "by 2016 China’s annual production of mink pelts had plummeted from 60 million to 26 million",
+        "relation": "counter",
+        "limitation": "养殖毛皮曾大量供给。",
+        "observation_end": "2016-12-31",
+        "publication_date": "2019",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": ""
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001199645-001199772",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "r3_execution": {
+    "new": true,
+    "executed_at": "2026-11-20T10:55:00Z",
+    "why": "紫貂稀缺，养殖水貂不是稀缺。",
+    "previous_verdict": "部分符合"
+  }
+}

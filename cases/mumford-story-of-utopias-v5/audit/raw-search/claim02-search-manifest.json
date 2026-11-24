@@ -1,0 +1,54 @@
+{
+  "saved_at_utc": "2026-11-20T11:04:00Z",
+  "tool_timestamp": null,
+  "tool_call_id": null,
+  "calls": [
+    {
+      "role": "support",
+      "tool": "WebSearch",
+      "arguments": {
+        "search_term": "World War II killed far more people than World War I"
+      },
+      "result_urls": [
+        "https://www.history.com/articles/world-war-ii-deadliest-war",
+        "https://en.wikipedia.org/wiki/World_War_I_casualties",
+        "https://wardeathdata.com/ww1-vs-ww2-death-comparison/",
+        "https://www.diffen.com/difference/World_War_I_vs_World_War_II",
+        "https://blogs.lse.ac.uk/europpblog/2025/01/30/dark-figures-innocent-bystanders-the-civilian-victims-of-the-two-world-wars/"
+      ]
+    },
+    {
+      "role": "counter",
+      "tool": "WebSearch",
+      "arguments": {
+        "search_term": "the war after 1918 only slightly increased the destruction of the previous war"
+      },
+      "result_urls": [
+        "http://assets.cambridge.org/97805218/36791/excerpt/9780521836791_excerpt.pdf",
+        "https://www.bu.edu/articles/2014/pov-the-legacy-of-world-war-i/",
+        "https://www.carnegiecouncil.org/explore-engage/classroom-resources/short-expert-videos-and-flipped-classroom/009",
+        "https://www.cambridge.org/core/journals/international-review-of-the-red-cross/article/great-war-world-war-total-war/B05708FDACB687A721778CA62EE09B92",
+        "https://thereader.mitpress.mit.edu/the-mega-wars-that-shaped-world-history/"
+      ]
+    },
+    {
+      "role": "fetch",
+      "tool": "WebFetch",
+      "arguments": {
+        "url": "https://www.bu.edu/articles/2014/pov-the-legacy-of-world-war-i/"
+      },
+      "archive": "audit/raw-search/claim02-fetch-bu-2014.txt",
+      "sha256": "4ade7a723c3787146a451b03d468059bb1b3c7e7943ddd9ba7cf29235c285c88"
+    },
+    {
+      "role": "fetch",
+      "tool": "WebFetch",
+      "arguments": {
+        "url": "https://www.history.com/articles/world-war-ii-deadliest-war"
+      },
+      "archive": "audit/raw-search/claim02-fetch-history-2026.txt",
+      "sha256": "944956578a3df05e762d12a1877435efdd5ff42500f135545598804cd0b8fbfc",
+      "note": "Page publication line is May 07, 2026, before cutoff 2026-11-15."
+    }
+  ]
+}

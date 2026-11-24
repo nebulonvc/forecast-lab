@@ -1,0 +1,70 @@
+{
+  "id": "txt-5386516eaf-002245834-002246112",
+  "assess": {
+    "id": "txt-5386516eaf-002245834-002246112",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "future",
+    "scope": "把社会绝对分成付工资者和领工资者、前者数以千计后者数以百万计的产业制度，既不适宜也没有能力无限期延续。",
+    "reason": "2020年雇员仍占85.1%，这个划分还在。作者写的是没有能力无限期延续，不是一个已经到期的年份。继续存在不能证明它有能力无限期延续，也不能证明它没有这种能力。",
+    "limitation": "不把持续存在写成已经失败或已经证实。",
+    "evidence_ids": [
+      "ev-ons-employees-2020"
+    ],
+    "method": "支持检索工资划分是否结束，反证检索它是否仍是主体。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "indefinite duration",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-ons-employees-2020",
+        "quote": "28.02 million employees (85.1% of all people in employment)",
+        "relation": "boundary",
+        "limitation": "仍存在，但无限期没有封闭。",
+        "observation_end": "2020-06-30",
+        "publication_date": "2020-08-11",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "无限期尚未封闭。缺这个划分已经不能继续，或已经表明可以无限继续的同对象终点。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-002245834-002246112",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "wage payer and receiver division ended"
+      },
+      {
+        "role": "counter",
+        "query": "employees remain the majority"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/employmentintheuk/august2020"
+    ],
+    "reason": "无限期未封闭。"
+  }
+}

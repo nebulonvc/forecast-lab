@@ -1,0 +1,36 @@
+{
+  "source_sha256": "099aaa16de8fc4f68a0b0bd85d62fd596bffba059d397c71d352945de18050c5",
+  "chunks": 207,
+  "ledgers_verified": 207,
+  "quote_mismatches": 0,
+  "claims": 123,
+  "kinds": {
+    "unclear": 27,
+    "prediction": 96
+  },
+  "resolvable": 96,
+  "duplicates_dropped": 0,
+  "excluded": {
+    "not_future_oriented": 1
+  },
+  "demoted": 16,
+  "predictions_without_verbatim_direction": [
+    5,
+    7,
+    7,
+    17,
+    28,
+    31,
+    36,
+    38,
+    42,
+    42,
+    43,
+    47,
+    48,
+    52,
+    52,
+    180
+  ],
+  "changes_note": "kind=prediction 且引文里有方向原词时，changes 取该连续原文，供 canonical screen 识别英文方向。没有这种原词的不升为可核验。"
+}

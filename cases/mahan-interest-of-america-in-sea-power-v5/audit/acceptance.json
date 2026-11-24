@@ -1,0 +1,42 @@
+{
+ "checked_at": "2026-11-16T14:37:00+08:00",
+ "case_accepted": true,
+ "unit_tests": {
+  "total": 209,
+  "passed": true
+ },
+ "canonical_quotes_tests": {
+  "total": 6,
+  "passed": true
+ },
+ "pipeline_apply_check_report": true,
+ "canonical_report_md5": "682248fa9f6c63e3492a559ccac12761",
+ "toolkit_commit": "85e6da1dc0f185830a6ea9037d731fd39a27411e",
+ "toolkit_byte_identical_to_batch_a": true,
+ "source_sha256_verified": 124,
+ "evidence_records": 124,
+ "evidence_notes_verbatim_verified": 200,
+ "all_evidence_urls_returned_by_real_search": true,
+ "all_79_claim_contexts_empty": true,
+ "proposal_contexts_empty": true,
+ "numeric_source_check": "all passed; thousands separators normalized with numeric boundaries",
+ "semantic_reviews": 67,
+ "semantic_failures": 0,
+ "semantic_unknowns": "仅未定条目的对象定义或结果证据存在unknown，已明确remaining_gap",
+ "scan": {
+  "checked_at": "2026-11-16T14:35:40+08:00",
+  "files_scanned": 173,
+  "key_value_leaks": 0,
+  "known_secret_pattern_hits": 0,
+  "forbidden_fulltext_or_cache_files": 0,
+  "nonempty_context_fields": 0,
+  "maximum_contiguous_book_overlap_chars": 655,
+  "maximum_overlap_file": "data/claims.jsonl",
+  "unique_book_characters_covered": 22099,
+  "normalized_book_characters": 361377,
+  "aggregate_book_overlap_fraction": 0.06115220393107475,
+  "criteria": "No exact full TXT, chunk/request/cache files or nonempty context; longest contiguous overlap <3500 chars and aggregate original-book coverage <30%; legitimate prediction quotes retained.",
+  "passed": true
+ },
+ "bundle_note": "最终tar解包/文件hash/check/重扫见外层bundle-validation.json，避免在tar内部记录自身hash。"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000551629-000551674",
+  "plan": {
+    "object": "教派、国家和王国这些混合团体。",
+    "condition": "unless thus renewed。同段把更新定义为带回最初的开端，因为开端里有使它们获得最初名声和成长的优点。不是任何后来的改革或道德衰败。",
+    "quantifier": "do not last。原文没有年数。一个没有写明是否回到开端的王朝灭亡，不能当成这句成立。",
+    "result": "登记变化是 do not last。不持久的是没有被带回开端的团体。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "一个没有被带回最初开端的教派、国家或王国，仍然持续了原文所说不能持久的时间以外的长时段。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "state that never reformed back to its founding principles collapsed after 1531",
+      "counter_query": "institution lasted centuries without a return to its original foundations"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://www.frontiersin.org/journals/political-science/articles/10.3389/fpos.2020.568704/full"],
+    "dropped": "学校和大学的延续不是教派、国家或王国。天主教会仍在的说法没有写它没有被带回开端。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-frontiers-ming-1644"],
+    "scope": "条件是没有被带回最初开端。道德疏忽和1644年亡国，不等于这个条件。",
+    "reason": "《政治学前沿》页写，明朝皇帝忽视统治义务，北方边防不足，满人入侵带来1644年王朝结束。这是一个王国的结束。页面没有写它没有被带回最初的开端，也没有把开端里的优点写成缺失的原因。决定性缺口是更新这个条件。不能用道德衰败代替带回开端，也不能用一次亡国给部分符合。",
+    "limitation": "页面没有出版日。王朝结束写的是1644年，没有日。",
+    "method": "先按同段把更新定为带回开端，页面没有这一句就不用亡国计分。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "1644年明朝结束有记载。没有记载它未曾被带回最初开端。"
+  }
+}

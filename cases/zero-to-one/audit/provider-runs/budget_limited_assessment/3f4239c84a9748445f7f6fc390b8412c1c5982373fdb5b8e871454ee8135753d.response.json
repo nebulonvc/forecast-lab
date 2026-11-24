@@ -1,0 +1,28 @@
+{
+  "id": "a57ef57b-1882-4b8f-a92f-b34512ef3f22",
+  "object": "chat.completion",
+  "created": 1794201449,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000054621-000054659\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为条件性认识论陈述：若不探索则无法了解秘密；不涉及可观察的时限或可检验的未来事件。\",\"reason\":\"该句以“如果……将……”表达探索与了解秘密之间的条件关系，属于定义性/认识论判断，而非对可观察未来的预测。\",\"limitation\":\"条件句中的“这些奥秘”虽可回指癌症、新能源等目标，但原文未给出可检验的期限或指标，不能作为预测评分。\",\"evidence_ids\":[],\"method\":\"条件性判断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4488,
+    "completion_tokens": 188,
+    "total_tokens": 4676,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3720
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

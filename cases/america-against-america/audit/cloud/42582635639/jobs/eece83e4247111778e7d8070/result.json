@@ -1,0 +1,497 @@
+{
+  "claim_id": "txt-1c4066fc0c-000100886-000101089",
+  "version": "search-verifier-v1",
+  "input_sha256": "807234dee28b19e402090fb70de55ddc09b91613c20bfb4b7c9a17efdc583fc4",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000100886-000101089",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "加尔布雷斯复合命题六项后果：工作起止分离、生产资本增加、时间财力固定投入、专业化人力、高度组织化、社会需要计划。观察时段为1991年至截止日2026-11-09，跨行业技术采用是否伴随六项可测变化，须逐项核查。",
+    "reason": "现有证据仅零散涉及专业化人力与组织化（如半导体项目需专门设备与人力、算法管理扩展），未系统覆盖六项后果，尤其缺乏生产资本增加、时间财力固定投入、社会需要计划的直接可测证据。复合命题不能以单一分项代表全部，故暂无法判断。",
+    "limitation": "证据多为机构报告摘要或书籍评论，非针对六项后果的系统实证；部分来源无发表日期，无法确定观察窗口。不能因个别行业现象推断整体趋势。",
+    "evidence_ids": [
+      "prior-beae754a1aaf3b2a204b",
+      "prior-3c1f064721490441b74b",
+      "ev-faa905237546c795aaa09d50",
+      "ev-62a1d9182d662eb2ef5c95db"
+    ],
+    "method": "技术复杂化对资本、分工和组织的要求",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-beae754a1aaf3b2a204b",
+        "relation": "support",
+        "quote": "制造涉及专业设备、跨国分工与专门人力。",
+        "publication_date": "2025-12-11",
+        "observation_end": "2025-12-11",
+        "limitation": "仅涉及半导体行业，支持第(4)项专业化人力，不能代表六项全部，且为项目拨款统计非整体趋势。"
+      },
+      {
+        "evidence_id": "prior-3c1f064721490441b74b",
+        "relation": "support",
+        "quote": "ILO定义算法管理为以追踪数据组织、分派、监督与评价工作；指出功能委托跨客服、运输、物流、金融和医疗行业扩展，人与管理者/同事接触可能减少。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "涉及组织化与工作分离，但为定义性描述，无量化趋势，日期未知。"
+      },
+      {
+        "evidence_id": "ev-faa905237546c795aaa09d50",
+        "relation": "background",
+        "quote": "Machines have extensively replaced crude manpower, and one machine increasingly instructs other machines in the process we call automation.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "为加尔布雷斯1966年讲座原文，属命题来源背景，非独立验证证据；文本截断。"
+      },
+      {
+        "evidence_id": "ev-62a1d9182d662eb2ef5c95db",
+        "relation": "background",
+        "quote": "The New Industrial State deals with most of the major economic \nissues: the role of the antitrust laws, the effects of technology, the con \ntrol of inflation and of unemployment, and the role of advertising.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "为书评，仅概述命题主题，不含六项后果的实证检验；日期未知。",
+        "quote_verification": {
+          "method": "unique_whitespace_alignment",
+          "model_quote": "The New Industrial State deals with most of the major economic issues: the role of the antitrust laws, the effects of technology, the control of inflation and of unemployment, and the role of advertising."
+        }
+      }
+    ],
+    "remaining_gap": "缺乏跨行业、跨时段的系统数据分别检验六项后果，尤其生产资本增加、时间财力固定投入与社会计划需求；现有来源多为单行业或定义性材料。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000100886-000101089",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "加尔布雷斯复合命题六项后果：工作起止分离、生产资本增加、时间财力固定投入、专业化人力、高度组织化、社会需要计划。观察时段为1991年至截止日2026-11-09，跨行业技术采用是否伴随六项可测变化，须逐项核查。",
+    "reason": "现有证据仅零散涉及专业化人力与组织化（如半导体项目需专门设备与人力、算法管理扩展），未系统覆盖六项后果，尤其缺乏生产资本增加、时间财力固定投入、社会需要计划的直接可测证据。复合命题不能以单一分项代表全部，故暂无法判断。",
+    "limitation": "证据多为机构报告摘要或书籍评论，非针对六项后果的系统实证；部分来源无发表日期，无法确定观察窗口。不能因个别行业现象推断整体趋势。",
+    "evidence_ids": [
+      "prior-beae754a1aaf3b2a204b",
+      "prior-3c1f064721490441b74b",
+      "ev-faa905237546c795aaa09d50",
+      "ev-62a1d9182d662eb2ef5c95db"
+    ],
+    "method": "技术复杂化对资本、分工和组织的要求",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-beae754a1aaf3b2a204b",
+        "relation": "support",
+        "quote": "制造涉及专业设备、跨国分工与专门人力。",
+        "publication_date": "2025-12-11",
+        "observation_end": "2025-12-11",
+        "limitation": "仅涉及半导体行业，支持第(4)项专业化人力，不能代表六项全部，且为项目拨款统计非整体趋势。"
+      },
+      {
+        "evidence_id": "prior-3c1f064721490441b74b",
+        "relation": "support",
+        "quote": "ILO定义算法管理为以追踪数据组织、分派、监督与评价工作；指出功能委托跨客服、运输、物流、金融和医疗行业扩展，人与管理者/同事接触可能减少。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "涉及组织化与工作分离，但为定义性描述，无量化趋势，日期未知。"
+      },
+      {
+        "evidence_id": "ev-faa905237546c795aaa09d50",
+        "relation": "background",
+        "quote": "Machines have extensively replaced crude manpower, and one machine increasingly instructs other machines in the process we call automation.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "为加尔布雷斯1966年讲座原文，属命题来源背景，非独立验证证据；文本截断。"
+      },
+      {
+        "evidence_id": "ev-62a1d9182d662eb2ef5c95db",
+        "relation": "background",
+        "quote": "The New Industrial State deals with most of the major economic issues: the role of the antitrust laws, the effects of technology, the control of inflation and of unemployment, and the role of advertising.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "为书评，仅概述命题主题，不含六项后果的实证检验；日期未知。"
+      }
+    ],
+    "remaining_gap": "缺乏跨行业、跨时段的系统数据分别检验六项后果，尤其生产资本增加、时间财力固定投入与社会计划需求；现有来源多为单行业或定义性材料。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-beae754a1aaf3b2a204b",
+      "url": "https://files.gao.gov/reports/GAO-26-107882/index.html",
+      "title": "ev-r2-l2-gao-chips",
+      "published_date": "2025-12-11",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-gao-chips",
+      "archive_sha256": "905787ee5d4a79acf26924bb7af6753fecbd7d104e18f83cac5e4d51a7988ec4",
+      "archive_path": "data/sources/r2-l2-gao-chips.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-3c1f064721490441b74b",
+      "url": "https://www.ilo.org/algorithmic-management-workplace",
+      "title": "ev-r2-l2-ilo-algorithm",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-ilo-algorithm",
+      "archive_sha256": "4ab52fc749657e674e44b6d27b8c9c32f04ce7c0340b2a6954f537479afd5569",
+      "archive_path": "data/sources/r2-l2-ilo-algorithm.html",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-faa905237546c795aaa09d50",
+      "url": "https://downloads.bbc.co.uk/rmhttp/radio4/transcripts/1966_reith1.pdf",
+      "resolved_url": "https://downloads.bbc.co.uk/rmhttp/radio4/transcripts/1966_reith1.pdf",
+      "title": "Lecture 1: Planning and Technological Imperatives",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:37.865113+00:00",
+      "archive_sha256": "e39d7105911d6d2ba3fdeee9654b3879ad65ccf488e9bcb08bdcb94545f6740b",
+      "archive_path": "jobs/eece83e4247111778e7d8070/e39d7105911d6d2ba3fdeee9654b3879ad65ccf488e9bcb08bdcb94545f6740b.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-62a1d9182d662eb2ef5c95db",
+      "url": "https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=3564&context=uclrev",
+      "resolved_url": "https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=3564&context=uclrev",
+      "title": "Review of The New Industrial State by John Kenneth Galbraith",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:37.865416+00:00",
+      "archive_sha256": "913c8fe6070ac74b0f9cc0075ff0fb503b74ffad9d86b0485250b89324b576cc",
+      "archive_path": "jobs/eece83e4247111778e7d8070/913c8fe6070ac74b0f9cc0075ff0fb503b74ffad9d86b0485250b89324b576cc.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-6760a7723fd6bf1de4868e7e",
+      "url": "https://www.theatlantic.com/magazine/archive/1967/04/the-new-industrial-state-planning-and-the-modern-corporation/660112/",
+      "resolved_url": "https://www.theatlantic.com/magazine/archive/1967/04/the-new-industrial-state-planning-and-the-modern-corporation/660112/",
+      "title": "The New Industrial State: Planning and the Modern Corporation - The Atlantic",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:37.865761+00:00",
+      "archive_sha256": "40fa6265af8287e73d8fc6051f41614207d55bf2456cee119708d0048d6ab21b",
+      "archive_path": "jobs/eece83e4247111778e7d8070/40fa6265af8287e73d8fc6051f41614207d55bf2456cee119708d0048d6ab21b.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-3155510fbef8d6bb689e2ec8",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2019/02/digitalisation-and-productivity-in-search-of-the-holy-grail-firm-level-empirical-evidence-from-eu-countries_a3e5982a/5080f4b6-en.pdf",
+      "resolved_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2019/02/digitalisation-and-productivity-in-search-of-the-holy-grail-firm-level-empirical-evidence-from-eu-countries_a3e5982a/5080f4b6-en.pdf",
+      "title": "Digitalisation and productivity: In search of the holy grail – Firm-level empirical evidence from EU countries (EN)",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:37.866018+00:00",
+      "archive_sha256": "66174595ab43b47b93c72124091b43d7c3c6b65a1b48846d31f9fe4ccd2c1084",
+      "archive_path": "jobs/eece83e4247111778e7d8070/66174595ab43b47b93c72124091b43d7c3c6b65a1b48846d31f9fe4ccd2c1084.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-cd95ed09b9ee4568829c1c28",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/12/firms-going-digital_d6f53feb/ee8340c1-en.pdf",
+      "resolved_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/12/firms-going-digital_d6f53feb/ee8340c1-en.pdf",
+      "title": "Firms going digital (EN)",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:50.271946+00:00",
+      "archive_sha256": "4f711c3f58aab9fd1873892d58e91584da10012edf6aaa031ed66474879461e0",
+      "archive_path": "jobs/eece83e4247111778e7d8070/4f711c3f58aab9fd1873892d58e91584da10012edf6aaa031ed66474879461e0.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-f4e70b08f35f0bb16d0e2d22",
+      "url": "https://doi.org/10.1111/jems.12269",
+      "resolved_url": "https://doi.org/10.1111/jems.12269",
+      "title": "Technological and organizational capital: Where complementarities exist",
+      "published_date": "2018-08-02",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:50.272195+00:00",
+      "archive_sha256": "a3f3252526a5483669646a5376c204de0232bc52a521e60abeae62b730695717",
+      "archive_path": "jobs/eece83e4247111778e7d8070/a3f3252526a5483669646a5376c204de0232bc52a521e60abeae62b730695717.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-b0b40c4cef745b2076762a06",
+      "url": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/@ed_emp/documents/publication/wcms_854353.pdf",
+      "resolved_url": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/@ed_emp/documents/publication/wcms_854353.pdf",
+      "title": "Digitalization and Employment",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:50.272406+00:00",
+      "archive_sha256": "fe987160d0ef4fd1d8682f620c6188069f7c7d6b26c3185d380e7f34308b524b",
+      "archive_path": "jobs/eece83e4247111778e7d8070/fe987160d0ef4fd1d8682f620c6188069f7c7d6b26c3185d380e7f34308b524b.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "Galbraith New Industrial State six consequences technology capital specialization organization planning empirical evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "technology adoption declining capital intensity less organizational planning flexible work evidence OECD",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "OECD firm-level evidence digital technology adoption capital intensity specialized skills organizational planning long lead times 2000-2024",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "technology adoption declining capital intensity flexible work less organizational hierarchy market coordination evidence OECD ILO 2000-2024",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺乏跨行业、跨时段的系统数据分别检验六项后果，尤其生产资本增加、时间财力固定投入与社会计划需求；现有来源多为单行业或定义性材料。",
+  "source_statuses": [
+    {
+      "url": "https://downloads.bbc.co.uk/rmhttp/radio4/transcripts/1966_reith1.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://chicagounbound.uchicago.edu/cgi/viewcontent.cgi?article=3564&context=uclrev",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.theatlantic.com/magazine/archive/1967/04/the-new-industrial-state-planning-and-the-modern-corporation/660112/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2019/02/digitalisation-and-productivity-in-search-of-the-holy-grail-firm-level-empirical-evidence-from-eu-countries_a3e5982a/5080f4b6-en.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/12/firms-going-digital_d6f53feb/ee8340c1-en.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://doi.org/10.1111/jems.12269",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.ilo.org/sites/default/files/wcmsp5/groups/public/@ed_emp/documents/publication/wcms_854353.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "对象为加尔布雷斯《新工业国》中由王沪宁转述的复合命题：科技广泛应用将导致六项后果——(1)工作开始与完成分离；(2)生产资本增加；(3)时间与财力更固定投入特定工作；(4)需要专业化人力；(5)需要高度组织化；(6)社会需要计划。可观察口径为1991年后至2026-11-09跨行业技术采用是否伴随六项可测变化，须逐项核查，不以单一行业项目代替整体，不把计划投资当作已实现资本增长；反证包括技术采用伴随资本强度下降、工作起止更整合、资源投入更灵活、去组织化或市场化替代计划。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "a40fa3bffe79dcf859d69afcb14d390b53275eef2269d1c72e2716580a9facce"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "486aa4736345123694c8bf7f39cd5b9c",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "542b9584e44e5e65ea0ebcb4d8aabfad",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "0bd5abe8ac2c418448c9ff19797c0f2c4fb4ce390478d992fdc744a9dfad8d11"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "5d867400690f904b1edc32540b8b5ef8",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "1824aab31ce55dd2fdf6812393930f7749cb1e5035b18d7e439eaefffeff73f8"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "9f2b905b820ab98d24ce0273af765613",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "fe258b9c9057965df10c153eb78b8fad",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "5dcda9579da81b0d4a4ab3f4025ceaa5f75d706f9130915f8559f3a8308e3f15"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "2390f66fccdb0e51c19a285d78a0c4eb",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "1b1600521e915a9385e26f71df06cb9c7b22d9aa7890379b38d2f96ad7f89efb"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "33da8b450627d6bf9b4eb714d417eb9c03293139c983801e0fd9b5a49f72e144"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000100886-000101089",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000100886-000101089",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "加尔布雷斯复合命题六项后果：工作起止分离、生产资本增加、时间财力固定投入、专业化人力、高度组织化、社会需要计划。观察时段为1991年至截止日2026-11-09，跨行业技术采用是否伴随六项可测变化，须逐项核查。",
+      "reason": "现有证据仅零散涉及专业化人力与组织化（如半导体项目需专门设备与人力、算法管理扩展），未系统覆盖六项后果，尤其缺乏生产资本增加、时间财力固定投入、社会需要计划的直接可测证据。复合命题不能以单一分项代表全部，故暂无法判断。",
+      "limitation": "证据多为机构报告摘要或书籍评论，非针对六项后果的系统实证；部分来源无发表日期，无法确定观察窗口。不能因个别行业现象推断整体趋势。",
+      "evidence_ids": [
+        "prior-beae754a1aaf3b2a204b",
+        "prior-3c1f064721490441b74b",
+        "ev-faa905237546c795aaa09d50",
+        "ev-62a1d9182d662eb2ef5c95db"
+      ],
+      "method": "技术复杂化对资本、分工和组织的要求",
+      "method_basis": "inferred",
+      "observation_end": null,
+      "future_time_text": "",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-beae754a1aaf3b2a204b",
+          "relation": "support",
+          "quote": "制造涉及专业设备、跨国分工与专门人力。",
+          "publication_date": "2025-12-11",
+          "observation_end": "2025-12-11",
+          "limitation": "仅涉及半导体行业，支持第(4)项专业化人力，不能代表六项全部，且为项目拨款统计非整体趋势。"
+        },
+        {
+          "evidence_id": "prior-3c1f064721490441b74b",
+          "relation": "support",
+          "quote": "ILO定义算法管理为以追踪数据组织、分派、监督与评价工作；指出功能委托跨客服、运输、物流、金融和医疗行业扩展，人与管理者/同事接触可能减少。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "涉及组织化与工作分离，但为定义性描述，无量化趋势，日期未知。"
+        },
+        {
+          "evidence_id": "ev-faa905237546c795aaa09d50",
+          "relation": "background",
+          "quote": "Machines have extensively replaced crude manpower, and one machine increasingly instructs other machines in the process we call automation.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "为加尔布雷斯1966年讲座原文，属命题来源背景，非独立验证证据；文本截断。"
+        },
+        {
+          "evidence_id": "ev-62a1d9182d662eb2ef5c95db",
+          "relation": "background",
+          "quote": "The New Industrial State deals with most of the major economic issues: the role of the antitrust laws, the effects of technology, the control of inflation and of unemployment, and the role of advertising.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "为书评，仅概述命题主题，不含六项后果的实证检验；日期未知。"
+        }
+      ],
+      "remaining_gap": "缺乏跨行业、跨时段的系统数据分别检验六项后果，尤其生产资本增加、时间财力固定投入与社会计划需求；现有来源多为单行业或定义性材料。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象是加尔布雷斯在《新工业国》中提出的复合命题：科技广泛应用将导致六项后果——(1)工作开始与完成分离；(2)生产资本增加；(3)时间与财力更固定地投入特定工作；(4)需要专业化人力；(5)需要高度组织化；(6)社会需要计划。可观察口径：在1991年后至截止日，跨行业技术采用是否伴随上述六项的可测变化；须分别核查，不能以单一行业项目代替整体，也不能把计划投资当作已实现资本增长。反证包括：技术采用伴随资本强度下降、工作起止更整合、资源投入更灵活、去组织化或市场化替代计划。",
+  "elapsed_seconds": 30.217,
+  "completed_at": "2026-11-09T07:59:57.610824+00:00"
+}

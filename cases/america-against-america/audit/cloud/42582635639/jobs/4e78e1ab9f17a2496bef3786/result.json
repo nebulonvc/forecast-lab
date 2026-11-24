@@ -1,0 +1,468 @@
+{
+  "claim_id": "txt-1c4066fc0c-000017953-000017982",
+  "version": "search-verifier-v1",
+  "input_sha256": "14b6a669ca9396997f47ca5c0a6cec65e1b1d74871a11e7ffc56a93e7f55db30",
+  "cutoff": "2026-11-09",
+  "task_state": "partial",
+  "assessment": null,
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000017953-000017982",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象保留原文“亚美尼亚人”，按研究范围以爱荷华Kalona一带Amish/Mennonite社区为高度可能对应群体；条件口径为1991年后联邦、州或地方政府以法规、执法或诉讼强制该群体接受被视为“现代化”的技术或生活方式；观察指标为诉讼、行政成本、政治反弹、社区抵抗、政策让步或放弃；观察时段为1991年至cutoff 2026-11-09，实际可用证据截至2016-06-21。",
+    "reason": "已有持续客观证据显示，地方政府对Mennonite社区钢轮/道路规则的强制执法引发宪法诉讼、下级法院反复审理和规则被推翻或限缩，属于政府自身压力增加的可观察结果。但原文对象“亚美尼亚人”与Amish/Mennonite的对应仍属保留性操作化，且证据集中于钢轮交通规则，不能覆盖所有“现代化”强制情形。",
+    "limitation": "原文未给出精确期限和“压力”指标，本评估以诉讼与政策受挫作回顾性操作化；对象对应存在归属不确定性，且证据多为Mennonite而非严格意义上的Amish，不能据此声称所有强制现代化政策均如此。",
+    "evidence_ids": [
+      "prior-0ccc287eb7b998562076",
+      "ev-ae3fc8b21ba5f614f714b940",
+      "ev-1b180a72d1fc15af3a26e43e",
+      "ev-7074caddb07a0ef57d845487",
+      "ev-3de97044a52ba9837ac0059e"
+    ],
+    "method": "从文化认同冲突推断强制政策成本",
+    "method_basis": "inferred",
+    "observation_end": "2016-06-21",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-0ccc287eb7b998562076",
+        "relation": "support",
+        "quote": "Mast案记录明尼苏达Fillmore县要求23个Amish家庭安装现代污水系统；产生诉讼，最高法院撤销下级判决并发回重审。",
+        "publication_date": "2021-07-02",
+        "observation_end": "2021-07-02",
+        "limitation": "该案发生在明尼苏达而非爱荷华Kalona，且涉及污水系统而非钢轮；只能作为Amish社区抵制现代化强制并产生诉讼成本的旁证。"
+      },
+      {
+        "evidence_id": "ev-ae3fc8b21ba5f614f714b940",
+        "relation": "support",
+        "quote": "The manager of a produce auction says Mitchell County's ban on steel wheels on county roads could keep Mennonites from taking their flowers to market.",
+        "publication_date": "2010-05-07",
+        "observation_end": "2010-05-07",
+        "limitation": "报道描述禁令对Mennonite农户的市场影响及即将举行的合宪性辩论，属冲突初期材料，未给出最终治理成本。"
+      },
+      {
+        "evidence_id": "ev-1b180a72d1fc15af3a26e43e",
+        "relation": "support",
+        "quote": "Although the issue is a close one, we conclude the ordinance as applied to church members violates the Free Exercise Clause of the First Amendment of the United States Constitution.",
+        "publication_date": null,
+        "observation_end": "2012-02-03",
+        "limitation": "判决日期取自正文“Filed February 3, 2012”，出版日期未知；该案针对Groffdale Conference Mennonite，非严格Amish，且只涉及钢轮道路条例。"
+      },
+      {
+        "evidence_id": "ev-7074caddb07a0ef57d845487",
+        "relation": "support",
+        "quote": "The Court ruled that a county ordinance adopted to protect the county’s newly paved roads violated the Constitution’s Free Exercise Clause contained in the First Amendment.",
+        "publication_date": "2013-07-03",
+        "observation_end": "2013-07-03",
+        "limitation": "评论文章概括2012年判决，说明政府规则受挫，但未量化行政或政治成本。"
+      },
+      {
+        "evidence_id": "ev-3de97044a52ba9837ac0059e",
+        "relation": "support",
+        "quote": "A magistrate has ruled a revised ordinance limiting the use of steel wheels on Mitchell County's paved roads still violates the religious freedom of Mennonites.",
+        "publication_date": "2016-06-21",
+        "observation_end": "2016-06-21",
+        "limitation": "显示2012年后修订条例仍被裁定违宪，构成持续压力证据；但仍是单一县、单一技术规则，不能外推到所有现代化强制政策。"
+      }
+    ],
+    "remaining_gap": "缺少1991年后爱荷华Kalona Amish社区因其他“现代化”强制（如教育、技术、土地利用）产生诉讼或政策让步的直接证据；原文“亚美尼亚人”与Amish/Mennonite的对应仍待语义复核。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-cb759426a6df77ee5d43",
+      "url": "https://www.cityofkalona.org/index.asp?SEC=D5DB9FC7-80F0-474D-909C-D23D56F09F4B",
+      "title": "ev-r2-l1-kalona",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-kalona",
+      "archive_sha256": "a29e24575d040cb06603fecddc75367fe1cb7cd8c1b6497b0625b9590e1247ea",
+      "archive_path": "data/sources/r2-l1-kalona.html",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-d4de8fd7cec52da95ff8",
+      "url": "https://ci.nii.ac.jp/ncid/BD19923744",
+      "title": "ev-r2-l1-amish-book",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-amish-book",
+      "archive_sha256": "733716be86bfc46e558825442b27616efc834b9ea8ef716b785a743168e4bc6e",
+      "archive_path": "data/sources/r2-l1-nie-book.html",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-5a3fc63c72a7a2f3ca2b",
+      "url": "https://www.nps.gov/subjects/travelamanacolonies/index.htm",
+      "title": "ev-r2-l1-amana",
+      "published_date": "2018-01-04",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-amana",
+      "archive_sha256": "9d836424c03e589bbbdc28d08b0da7fb50bcf07e6816f5c6888bab05668cbaa2",
+      "archive_path": "data/sources/r2-l1-amana.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-0ccc287eb7b998562076",
+      "url": "https://www.supremecourt.gov/opinions/20pdf/20-7028_o758.pdf",
+      "title": "ev-r2-l1-mast",
+      "published_date": "2021-07-02",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-mast",
+      "archive_sha256": "96d64c51cd8e15fc22d2662008fe6c3ad7fd2db79457cf825c09eae1700d2402",
+      "archive_path": "data/sources/r2-l1-mast.pdf",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ae3fc8b21ba5f614f714b940",
+      "url": "https://www.thegazette.com/article/steel-wheel-ban-could-keep-mennonites-from-iowa-market/",
+      "resolved_url": "https://www.thegazette.com/article/steel-wheel-ban-could-keep-mennonites-from-iowa-market/",
+      "title": "Steel wheel ban could keep Mennonites from Iowa market | The Gazette",
+      "published_date": "2010-05-07",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:26.987002+00:00",
+      "archive_sha256": "b2e7ecf5f8964b78524e7250feae26cbea76bf0dff2fb1805b85a6d893472b63",
+      "archive_path": "jobs/4e78e1ab9f17a2496bef3786/b2e7ecf5f8964b78524e7250feae26cbea76bf0dff2fb1805b85a6d893472b63.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-5ed3946a041c4b1c9361b932",
+      "url": "https://www.press-citizen.com/story/news/local/2014/09/26/epa-dnr-cheese-factory-violated-regulations-decade/16281231/",
+      "resolved_url": "https://www.press-citizen.com/story/news/local/2014/09/26/epa-dnr-cheese-factory-violated-regulations-decade/16281231/",
+      "title": "EPA, DNR: Cheese Factory violated regulations for decade",
+      "published_date": "2014-09-26",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:26.987239+00:00",
+      "archive_sha256": "57a446b8f417e953f8369d9b43b35bc6213c3b7b643a6dd3ba940ec76f755720",
+      "archive_path": "jobs/4e78e1ab9f17a2496bef3786/57a446b8f417e953f8369d9b43b35bc6213c3b7b643a6dd3ba940ec76f755720.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-10c38d801c7ac4fdee77e6ef",
+      "url": "https://amishamerica.com/iowa-amish/",
+      "resolved_url": "https://amishamerica.com/iowa-amish/",
+      "title": "The Amish in Iowa: 2026 Guide (29 Communities) - Amish America",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:26.987453+00:00",
+      "archive_sha256": "820555cfcafa72ac498dbd1db59f1052c8cc73d27df9ec342d04840c132b3bde",
+      "archive_path": "jobs/4e78e1ab9f17a2496bef3786/820555cfcafa72ac498dbd1db59f1052c8cc73d27df9ec342d04840c132b3bde.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-b310d1161e789ad3c1170736",
+      "url": "https://thereader.mitpress.mit.edu/how-the-amish-let-technology-in-without-letting-it-take-over/",
+      "resolved_url": "https://thereader.mitpress.mit.edu/how-the-amish-let-technology-in-without-letting-it-take-over/",
+      "title": "How the Amish Let Technology in Without Letting It Take Over | The MIT Press Reader",
+      "published_date": "2026-07-27",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:26.987651+00:00",
+      "archive_sha256": "273e80ddc21e02f12f597cc437e85b60183a181fc08b73551d4c21402c743625",
+      "archive_path": "jobs/4e78e1ab9f17a2496bef3786/273e80ddc21e02f12f597cc437e85b60183a181fc08b73551d4c21402c743625.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-1b180a72d1fc15af3a26e43e",
+      "url": "https://www.iowacourts.gov/moduledocuments/embed/2218/101932_453BAA5E6C064.pdf",
+      "resolved_url": "https://www.iowacourts.gov/moduledocuments/embed/2218/101932_453BAA5E6C064.pdf",
+      "title": "IN THE SUPREME COURT OF IOWA",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:38.151271+00:00",
+      "archive_sha256": "a6bf3ff631f1fb1690c1dec691db067c568064f1cc0a6a211f86cafeccce166e",
+      "archive_path": "jobs/4e78e1ab9f17a2496bef3786/a6bf3ff631f1fb1690c1dec691db067c568064f1cc0a6a211f86cafeccce166e.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-7074caddb07a0ef57d845487",
+      "url": "https://www.calt.iastate.edu/article/steel-wheels-keep-turning",
+      "resolved_url": "https://www.calt.iastate.edu/article/steel-wheels-keep-turning",
+      "title": "Steel Wheels Keep on Turning | Center for Agricultural Law and Taxation",
+      "published_date": "2013-07-03",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:38.151484+00:00",
+      "archive_sha256": "b5a885d2d565cc7e94826146b805e97a34ddd0e03592b2ddb75ec59bcf58a7da",
+      "archive_path": "jobs/4e78e1ab9f17a2496bef3786/b5a885d2d565cc7e94826146b805e97a34ddd0e03592b2ddb75ec59bcf58a7da.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-3de97044a52ba9837ac0059e",
+      "url": "https://www.kcci.com/article/magistrate-steel-wheel-rules-violates-mennonites-rights/6921050",
+      "resolved_url": "https://www.kcci.com/article/magistrate-steel-wheel-rules-violates-mennonites-rights/6921050",
+      "title": "Magistrate: Steel wheel rules violates Mennonites' rights",
+      "published_date": "2016-06-21",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:38.151654+00:00",
+      "archive_sha256": "c67cee200286f9de860e3d8156e774baff8efba7a5317106190bc443c55862f9",
+      "archive_path": "jobs/4e78e1ab9f17a2496bef3786/c67cee200286f9de860e3d8156e774baff8efba7a5317106190bc443c55862f9.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "Amish Kalona Iowa government regulation modernization lawsuit resistance cost",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Amish Kalona Iowa successful technology regulation compliance no litigation",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Amish Kalona Iowa county ordinance steel wheels Mennonite lawsuit constitutional challenge government cost",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Kalona Iowa Amish Mennonite comply with government regulation no litigation successful enforcement",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [
+    {
+      "stage": "worker",
+      "error": "cached_response_invalid_97bbab871cbb"
+    }
+  ],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-1b180a72d1fc15af3a26e43e"
+      ]
+    }
+  ],
+  "remaining_gap": "任务未完成；查看错误、已取得材料和请求状态，不能据此判断原预测。",
+  "source_statuses": [
+    {
+      "url": "https://www.thegazette.com/article/steel-wheel-ban-could-keep-mennonites-from-iowa-market/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.press-citizen.com/story/news/local/2014/09/26/epa-dnr-cheese-factory-violated-regulations-decade/16281231/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://amishamerica.com/iowa-amish/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://thereader.mitpress.mit.edu/how-the-amish-let-technology-in-without-letting-it-take-over/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.iowacourts.gov/moduledocuments/embed/2218/101932_453BAA5E6C064.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.calt.iastate.edu/article/steel-wheels-keep-turning",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.kcci.com/article/magistrate-steel-wheel-rules-violates-mennonites-rights/6921050",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "82c05e2ae33a39ab3a5a42bef3f1fcdf23ecaa9065e11535845c9b098f11ac33"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "31906e45caa5470ff242de12d9ab35c2",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "0068e68a063bc343e19d4dcf2167978d",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "7361df01b2b7a69620e9934fd87c7f3c49360638380a769bac0a7cbcd2e122c6"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "a9f47323720913bf3b11e9c1097fc480",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "43ef97a8c5c6998d277dcb134e1220824378b310860964b192e343f4c5c0d0e8"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "9de3edaa611080c29b0161415605796a",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "5568485609dd28ae57107a179125319f",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "d35ec46c71087f35748c3963aac89457911bcb9f8f191fba26f3e937ac22415e"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "dc2a349ca3d226d48f2f41e19740c977",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "a0f0270e5ac238090a7d0d8916b5e8c82af25f0b9aac891cfd63810aaf56a6df"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000017953-000017982",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象保留原文“亚美尼亚人”，按研究范围以爱荷华Kalona一带Amish/Mennonite社区为高度可能对应群体；条件口径为1991年后联邦、州或地方政府以法规、执法或诉讼强制该群体接受被视为“现代化”的技术或生活方式；观察指标为诉讼、行政成本、政治反弹、社区抵抗、政策让步或放弃；观察时段为1991年至cutoff 2026-11-09，实际可用证据截至2016-06-21。",
+      "reason": "已有持续客观证据显示，地方政府对Mennonite社区钢轮/道路规则的强制执法引发宪法诉讼、下级法院反复审理和规则被推翻或限缩，属于政府自身压力增加的可观察结果。但原文对象“亚美尼亚人”与Amish/Mennonite的对应仍属保留性操作化，且证据集中于钢轮交通规则，不能覆盖所有“现代化”强制情形。",
+      "limitation": "原文未给出精确期限和“压力”指标，本评估以诉讼与政策受挫作回顾性操作化；对象对应存在归属不确定性，且证据多为Mennonite而非严格意义上的Amish，不能据此声称所有强制现代化政策均如此。",
+      "evidence_ids": [
+        "prior-0ccc287eb7b998562076",
+        "ev-ae3fc8b21ba5f614f714b940",
+        "ev-1b180a72d1fc15af3a26e43e",
+        "ev-7074caddb07a0ef57d845487",
+        "ev-3de97044a52ba9837ac0059e"
+      ],
+      "method": "从文化认同冲突推断强制政策成本",
+      "method_basis": "inferred",
+      "observation_end": "2016-06-21",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-0ccc287eb7b998562076",
+          "relation": "support",
+          "quote": "Mast案记录明尼苏达Fillmore县要求23个Amish家庭安装现代污水系统；产生诉讼，最高法院撤销下级判决并发回重审。",
+          "publication_date": "2021-07-02",
+          "observation_end": "2021-07-02",
+          "limitation": "该案发生在明尼苏达而非爱荷华Kalona，且涉及污水系统而非钢轮；只能作为Amish社区抵制现代化强制并产生诉讼成本的旁证。"
+        },
+        {
+          "evidence_id": "ev-ae3fc8b21ba5f614f714b940",
+          "relation": "support",
+          "quote": "The manager of a produce auction says Mitchell County's ban on steel wheels on county roads could keep Mennonites from taking their flowers to market.",
+          "publication_date": "2010-05-07",
+          "observation_end": "2010-05-07",
+          "limitation": "报道描述禁令对Mennonite农户的市场影响及即将举行的合宪性辩论，属冲突初期材料，未给出最终治理成本。"
+        },
+        {
+          "evidence_id": "ev-1b180a72d1fc15af3a26e43e",
+          "relation": "support",
+          "quote": "Although the issue is a close one, we conclude the ordinance as applied to church members violates the Free Exercise Clause of the First Amendment of the United States Constitution.",
+          "publication_date": null,
+          "observation_end": "2012-02-03",
+          "limitation": "判决日期取自正文“Filed February 3, 2012”，出版日期未知；该案针对Groffdale Conference Mennonite，非严格Amish，且只涉及钢轮道路条例。"
+        },
+        {
+          "evidence_id": "ev-7074caddb07a0ef57d845487",
+          "relation": "support",
+          "quote": "The Court ruled that a county ordinance adopted to protect the county’s newly paved roads violated the Constitution’s Free Exercise Clause contained in the First Amendment.",
+          "publication_date": "2013-07-03",
+          "observation_end": "2013-07-03",
+          "limitation": "评论文章概括2012年判决，说明政府规则受挫，但未量化行政或政治成本。"
+        },
+        {
+          "evidence_id": "ev-3de97044a52ba9837ac0059e",
+          "relation": "support",
+          "quote": "A magistrate has ruled a revised ordinance limiting the use of steel wheels on Mitchell County's paved roads still violates the religious freedom of Mennonites.",
+          "publication_date": "2016-06-21",
+          "observation_end": "2016-06-21",
+          "limitation": "显示2012年后修订条例仍被裁定违宪，构成持续压力证据；但仍是单一县、单一技术规则，不能外推到所有现代化强制政策。"
+        }
+      ],
+      "remaining_gap": "缺少1991年后爱荷华Kalona Amish社区因其他“现代化”强制（如教育、技术、土地利用）产生诉讼或政策让步的直接证据；原文“亚美尼亚人”与Amish/Mennonite的对应仍待语义复核。"
+    }
+  ],
+  "autonomous_decision": false,
+  "semantic_validation": null,
+  "scope": "对象是王沪宁《美国反对美国》中所述“亚美尼亚人”（据上下文及既有证据高度可能指爱荷华Kalona一带Amish/Mennonite社区，但原词保留）。条件口径：1991年成书后，若美国联邦、州或地方政府以法规、执法或诉讼强制该社区接受被视为“现代化”的技术或生活方式，是否出现政府自身压力增加的可观察结果（诉讼、行政成本、政治反弹、社区抵抗、政策让步或放弃）。反证包括：强制政策顺利实施且无显著治理成本，或政府获得净收益、社区迅速同化。",
+  "elapsed_seconds": 41.02,
+  "completed_at": "2026-11-09T07:58:54.786489+00:00"
+}

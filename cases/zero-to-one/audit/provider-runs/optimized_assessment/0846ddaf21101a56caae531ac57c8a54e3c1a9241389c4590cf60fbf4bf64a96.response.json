@@ -1,0 +1,28 @@
+{
+  "id": "37acd1dc-3b0b-434e-8572-b061c8b63f82",
+  "object": "chat.completion",
+  "created": 1794201586,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000047754-000047807\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"原文指一家投资公司投资10家有潜力成为垄断者的企业，在“接下来的几年”内成败分化、估值变化，且指数级与线性增长差异不明显；未给出具体基金、指标或期限。\",\"reason\":\"该判断缺少可核验的具体投资组合与“差异不明显”的量化口径，现有证据无法对应到原文所指的10家公司组合。\",\"limitation\":\"未找到该假想组合的完整回报序列；不能以一般VC行业数据替代原文特定对象。\",\"evidence_ids\":[],\"method\":\"一般性推断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"接下来的几年中\",\"condition_state\":\"unconditional\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000047838-000047889\",\"inclusion\":\"forecast\",\"verdict\":\"部分符合\",\"basis\":\"observed_window\",\"scope\":\"以风险投资回报高度集中于少数投资为操作化口径，观察2015年Horsley Bridge历史样本及2014年前后行业概述；原文“10年后只剩一项主要投资”的严格结构未被直接检验。\",\"reason\":\"证据显示少数投资贡献大部分回报、成功基金有更多且更大的高倍数投资，方向与幂次集中一致；但未证明每个基金十年后恰好只有一项主要投资。\",\"limitation\":\"样本非随机行业全体，底层数据未公开；不能把“集中”等同于“严格一项主要投资”。\",\"evidence_ids\":[\"extra-vc-a16z-2015\",\"extra-vc-worldbank-2014\"],\"method\":\"一般性推断\",\"method_basis\":\"explicit\",\"observation_end\":\"2015-06-08\",\"future_time_text\":\"10年后\",\"condition_state\":\"unconditional\",\"trend_aligned\":true},{\"id\":\"txt-4001dbbdf2-000048551-000048592\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文描述人们选择职业时所持的信念，并非作者对某一职业未来价值的具体预测。\",\"reason\":\"该句是解释职业选择动机的陈述，没有提出可检验的特定职业回报预测。\",\"limitation\":\"作为非预测项仅保留审计记录，不进行命中评估。\",\"evidence_ids\":[],\"method\":\"一般性推断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"今后的几十年中\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000048760-000048789\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文是在引述并随后批判“多元化下注降低风险”的传统观念，不是作者独立提出的预测。\",\"reason\":\"该句属于作者转述待批判的观点，不能归为作者自己的未来判断。\",\"limitation\":\"作为非预测项仅保留审计记录；世界银行材料只描述分散投资动机，不构成对作者预测的验证。\",\"evidence_ids\":[\"extra-vc-worldbank-2014\"],\"method\":\"一般性推断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"不确定的未来\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6987,
+    "completion_tokens": 719,
+    "total_tokens": 7706,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 6219
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

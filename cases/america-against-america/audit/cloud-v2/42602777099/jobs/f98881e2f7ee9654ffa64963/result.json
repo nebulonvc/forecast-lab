@@ -1,0 +1,849 @@
+{
+  "claim_id": "txt-1c4066fc0c-000049448-000049475",
+  "version": "search-verifier-v2",
+  "input_sha256": "7a6bd5d6d7dbe11e1a7f7b21b2594bf3219792fc94a9708238c912819b95d610",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000049448-000049475",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "对象：美国官方战略与政策实践是否重新采用门罗主义式半球排他/优势路线；观察窗口：原文发表（1991年出版代理）至截止日2026-11-09前实际出现的政策文件与行动。操作化：正式战略文件明确援引/重申门罗主义并伴随半球排他性安全合作即视为“再现”。",
+    "reason": "自动复核未确认主要判断：原文的条件是“除非有特定的历史条件”，即门罗主义再现以特定历史条件为前提。建议把“特定历史条件是否出现”当作无法判断的关键缺口，但原文并未把“特定历史条件”定义为再现的必要触发机制；它只是给“难以再现”留了一个未定义的例外。现有材料已显示2025年官方文件明确重申门罗主义并伴随半球安全合作，这直接对应“再现”这一主要结果，不能因为例外条件未定义就把主要结果整体判为暂无法判断。; 建议的操作化口径是“正式战略文件明确援引/重申门罗主义并伴随半球排他性安全合作即视为‘再现’”，而所引2025年总统公告、国家安全战略摘录及美巴安全合作材料正好满足这一口径。建议却以“特定历史条件未定义”为由判暂无法判断，与其自身scope和已引证据矛盾；应改为对“再现”这一主要结果作出有边界的判断（如正确或部分符合），并把“特定历史条件”未定义、再现深度与持续性列入limitation，而非作为未定的决定性缺口。",
+    "limitation": "原文“特定历史条件”未定义，无法确认是否发生；正式文件与MOU不等于全面政策实施或永久军事存在，且美国同时保留亚洲、欧洲等全球战略安排。关键条件未定，故保留暂无法判断而非判错误。",
+    "evidence_ids": [
+      "ev-92524adbfbff7771554bdbea",
+      "ev-512ff39a82b87ec2906e4b06",
+      "prior-eb52b32e10dbc0d04be7",
+      "prior-76e8368f97d5452e0604"
+    ],
+    "method": "从美国被世界经济及国际交往卷入的结构推断孤立回归困难",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-92524adbfbff7771554bdbea",
+        "relation": "counter",
+        "quote": "Today, my Administration proudly reaffirms this promise under a new “Trump Corollary” to the Monroe Doctrine",
+        "publication_date": "2025-12-02",
+        "observation_end": "2025-12-02",
+        "limitation": "总统公告属官方立场表述，证明政策宣示而非全部实施；且为单一政府文件。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-512ff39a82b87ec2906e4b06",
+        "relation": "counter",
+        "quote": "New strategy document says US should bring back Monroe Doctrine",
+        "publication_date": "2025-12-05",
+        "observation_end": "2025-12-05",
+        "limitation": "新闻报道为二手概括，正文截断，未展示战略文件全文细节。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-eb52b32e10dbc0d04be7",
+        "relation": "counter",
+        "quote": "美国2025国家安全战略明言重申执行门罗主义及Trump Corollary，要求阻止域外竞争者控制半球关键资产；同文件仍有亚洲、欧洲等全球战略安排。",
+        "publication_date": "2025-11",
+        "observation_end": "2025-11-30",
+        "limitation": "摘要式摘录，非全文；同时含全球战略安排，说明再现非全面孤立。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-76e8368f97d5452e0604",
+        "relation": "support",
+        "quote": "美国国防部报道美巴已签合作安全活动谅解备忘录，并宣布加强运河安全合作以抗衡中国影响。",
+        "publication_date": "2025-04-09",
+        "observation_end": "2025-04-09",
+        "limitation": "MOU不等于永久基地或主权转移，仅证明半球排他性安全合作方向。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "需修正结论：按建议自身scope，2025年官方文件重申门罗主义及半球安全合作已构成“再现”的主要结果证据，应据此给出有边界的判定；仅将“特定历史条件”未定义、再现是否长期制度化及全球战略并存列为limitation，不再作为暂无法判断的决定性缺口。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000049448-000049475",
+    "inclusion": "forecast",
+    "verdict": "错误",
+    "basis": "observed_window",
+    "scope": "对象：美国官方战略与政策实践是否重新采用门罗主义式半球排他/优势路线；观察窗口：原文发表（1991年出版代理）至截止日2026-11-09前实际出现的政策文件与行动。操作化：正式战略文件明确援引/重申门罗主义并伴随半球排他性安全合作即视为“再现”。",
+    "reason": "2025年12月白宫总统公告明确以“Trump Corollary”重新确认门罗主义，2025年国家安全战略亦被报道“revives Monroe Doctrine”，并有美巴运河安全合作等半球排他性行动，构成门罗主义式路线在观察窗口内实质再现，与“难以再现”的主要判断相反。",
+    "limitation": "原文“特定历史条件”未定义，本评估不做事后补写；正式文件与MOU不等于全部政策实施或永久军事存在，且美国同时保留亚洲、欧洲等全球战略安排，故“再现”是有限度、非全面孤立的门罗主义。",
+    "evidence_ids": [
+      "ev-92524adbfbff7771554bdbea",
+      "ev-512ff39a82b87ec2906e4b06",
+      "prior-eb52b32e10dbc0d04be7",
+      "prior-76e8368f97d5452e0604"
+    ],
+    "method": "从美国被世界经济及国际交往卷入的结构推断孤立回归困难",
+    "method_basis": "inferred",
+    "observation_end": "2025-12-08",
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-92524adbfbff7771554bdbea",
+        "relation": "counter",
+        "quote": "Today, my Administration proudly reaffirms this promise under a new “Trump Corollary” to the Monroe Doctrine",
+        "publication_date": "2025-12-02",
+        "observation_end": "2025-12-02",
+        "limitation": "总统公告属官方立场表述，证明政策宣示而非全部实施；且为单一政府文件。"
+      },
+      {
+        "evidence_id": "ev-512ff39a82b87ec2906e4b06",
+        "relation": "counter",
+        "quote": "New strategy document says US should bring back Monroe Doctrine",
+        "publication_date": "2025-12-05",
+        "observation_end": "2025-12-05",
+        "limitation": "新闻报道为二手概括，正文截断，未展示战略文件全文细节。"
+      },
+      {
+        "evidence_id": "prior-eb52b32e10dbc0d04be7",
+        "relation": "counter",
+        "quote": "美国2025国家安全战略明言重申执行门罗主义及Trump Corollary，要求阻止域外竞争者控制半球关键资产；同文件仍有亚洲、欧洲等全球战略安排。",
+        "publication_date": "2025-11",
+        "observation_end": "2025-11-30",
+        "limitation": "摘要式摘录，非全文；同时含全球战略安排，说明再现非全面孤立。"
+      },
+      {
+        "evidence_id": "prior-76e8368f97d5452e0604",
+        "relation": "support",
+        "quote": "美国国防部报道美巴已签合作安全活动谅解备忘录，并宣布加强运河安全合作以抗衡中国影响。",
+        "publication_date": "2025-04-09",
+        "observation_end": "2025-04-09",
+        "limitation": "MOU不等于永久基地或主权转移，仅证明半球排他性安全合作方向。"
+      }
+    ],
+    "remaining_gap": "原文“特定历史条件”未定义，无法判断再现是否恰由该条件触发；门罗主义“再现”的深度与持续性（是否长期制度化）仍待后续观察。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-eb52b32e10dbc0d04be7",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-National-Security-Strategy.pdf",
+      "title": "ev-r2-l1-nss2025",
+      "published_date": "2025-11",
+      "publication_date_precision": "month",
+      "publication_date_range": {
+        "earliest": "2025-11-01",
+        "latest": "2025-11-30"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-nss2025",
+      "archive_sha256": "df82a9913ce702b91a4599539d96fcb2378c0231de401d30ea71182bf356f161",
+      "archive_path": "data/sources/r2-l1-nss2025.pdf",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-76e8368f97d5452e0604",
+      "url": "https://www.defense.gov/News/News-Stories/Article/article/4150935/hegseth-says-us-partnering-with-panama-to-secure-canal-deter-china/",
+      "title": "ev-r2-l1-panama-mou",
+      "published_date": "2025-04-09",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-04-09",
+        "latest": "2025-04-09"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-panama-mou",
+      "archive_sha256": "48c1342b0c9e4fefd03126bbf05ba43dbe4c173f98fd03f947f2f4fa06f56051",
+      "archive_path": "data/sources/r2-l1-search-2.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-e380672bed0377b4f1da",
+      "url": "https://www.aeronaval.gob.pa/default.asp?aid=noticias&n=articulos-noticias-2025-20250714.html",
+      "title": "ev-r2-l1-panama-training",
+      "published_date": "2025-07-14",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-07-14",
+        "latest": "2025-07-14"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-panama-training",
+      "archive_sha256": "490b425a9eb2917773c35760d987f0b76bfff1c5703862ebb8001f926d9da35f",
+      "archive_path": "data/sources/r2-l1-open-4.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-92524adbfbff7771554bdbea",
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/12/america-250-presidential-message-on-the-anniversary-of-the-monroe-doctrine/",
+      "resolved_url": "https://www.whitehouse.gov/presidential-actions/2025/12/america-250-presidential-message-on-the-anniversary-of-the-monroe-doctrine/",
+      "title": "America 250: Presidential Message on the Anniversary of the Monroe Doctrine – The White House",
+      "published_date": "2025-12-02",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-12-02",
+        "latest": "2025-12-02"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:54.360506+00:00",
+      "archive_sha256": "ee839a78bf7d7a989c9505b0c7acecad948906d9540db6763dd8d4f2607bff2f",
+      "archive_path": "jobs/f98881e2f7ee9654ffa64963/ee839a78bf7d7a989c9505b0c7acecad948906d9540db6763dd8d4f2607bff2f.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d0753b092bd522d4222a24a6",
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-national-security-strategy.pdf",
+      "resolved_url": "https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-national-security-strategy.pdf",
+      "title": "National Security Strategy",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:54.360807+00:00",
+      "archive_sha256": "7222f9e729f158004489e2844d228e45ecd713baabe60aebecd9919347b8fc95",
+      "archive_path": "jobs/f98881e2f7ee9654ffa64963/7222f9e729f158004489e2844d228e45ecd713baabe60aebecd9919347b8fc95.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-512ff39a82b87ec2906e4b06",
+      "url": "https://www.reuters.com/business/finance/trump-strategy-document-revives-monroe-doctrine-slams-europe-2025-12-05/",
+      "resolved_url": "https://www.reuters.com/business/finance/trump-strategy-document-revives-monroe-doctrine-slams-europe-2025-12-05/",
+      "title": "Trump strategy document revives Monroe Doctrine, slams Europe | Reuters",
+      "published_date": "2025-12-05",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-12-05",
+        "latest": "2025-12-05"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:54.361066+00:00",
+      "archive_sha256": "764d85c2baece8e4b205e7347b9c3573b1643dbe0e9d730572311c52facda6a1",
+      "archive_path": "jobs/f98881e2f7ee9654ffa64963/764d85c2baece8e4b205e7347b9c3573b1643dbe0e9d730572311c52facda6a1.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-940c2a9ba893652638f7bba9",
+      "url": "https://www.brookings.edu/articles/breaking-down-trumps-2025-national-security-strategy/",
+      "resolved_url": "https://www.brookings.edu/articles/breaking-down-trumps-2025-national-security-strategy/",
+      "title": "Breaking down Trump’s 2025 National Security Strategy | Brookings",
+      "published_date": "2025-12-08",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-12-08",
+        "latest": "2025-12-08"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:54.361514+00:00",
+      "archive_sha256": "3d5b3d097910c016ee300877d34ed30bfd28727d629e3654a59f3ae2cf7aa039",
+      "archive_path": "jobs/f98881e2f7ee9654ffa64963/3d5b3d097910c016ee300877d34ed30bfd28727d629e3654a59f3ae2cf7aa039.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "2025 National Security Strategy Monroe Doctrine Trump Corollary Western Hemisphere exclusion China site:whitehouse.gov",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "2025 National Security Strategy global commitments Asia Europe Indo-Pacific contradicts Monroe Doctrine isolation",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "2025 National Security Strategy Monroe Doctrine Trump Corollary Western Hemisphere exclusion China site:whitehouse.gov",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "2025 National Security Strategy global commitments Asia Europe Indo-Pacific contradicts Monroe Doctrine isolation",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "需修正结论：按建议自身scope，2025年官方文件重申门罗主义及半球安全合作已构成“再现”的主要结果证据，应据此给出有边界的判定；仅将“特定历史条件”未定义、再现是否长期制度化及全球战略并存列为limitation，不再作为暂无法判断的决定性缺口。",
+  "source_statuses": [
+    {
+      "url": "https://www.whitehouse.gov/presidential-actions/2025/12/america-250-presidential-message-on-the-anniversary-of-the-monroe-doctrine/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.whitehouse.gov/wp-content/uploads/2025/12/2025-national-security-strategy.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.reuters.com/business/finance/trump-strategy-document-revives-monroe-doctrine-slams-europe-2025-12-05/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.brookings.edu/articles/breaking-down-trumps-2025-national-security-strategy/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "评估王沪宁“早先盛行的门罗主义已经难以再现，除非有特定的历史条件”这一判断。对象为美国官方战略与政策实践是否在原文发表至截止日2026-11-09前重新采用门罗主义式半球排他/优势路线。可观察口径：正式战略文件是否明确援引或重申门罗主义，是否伴随半球排他性安全合作或政策行动。反证包括：美国同时维持全球战略安排、合作仅为旧有活动延续、或未出现实质排他政策。原文“特定历史条件”未定义，不做事后补写；正式文件不等于全部实施，MOU不等于永久基地或主权转移。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 9,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "2b9ff5a09bbafa8b2e21eeabdab88589a712f85d3676fd591bce242ae347121e"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "710e76a064d1a85b7fd97ed4045cf43e",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "0d4a23c975eadf5059341043fb6c7faf",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "9c2546c8133c2123f474ca79301c6235639fe8aaf009e35846129857b5a67b65"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "a66082b959ab35d9d58f6054dde794a3",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "e9f6cb480745cab5f1632983bce96026e0c9fbf0bf2f819ecaa77d6876b0f493"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "710e76a064d1a85b7fd97ed4045cf43e",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "0d4a23c975eadf5059341043fb6c7faf",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "1dd65bb05c36ceb0edd5f2ed6aa776787178a1d87fcdfb6c2eb66fcf1e833cfd"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "b4e96f710665b3fccfdfd6521cdff01f7076fd230149e5ca1d8c85d7e7fe06e4"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "08d90999125378936d47c422dce34f9336070685e652e6d98bc34f32d3251e5c",
+      "validation_error": "semantic_review_quote_not_in_supplied_text"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "afe48eca9e6420bba7c9c59afd230457e2a608ffa661f689db7da9fad596fcfc"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "79781471ee13875f7ecc33d0501526aeb2fecd3d0e89314abf69d2874d06d083"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "82bc350ed985b7f5c1a2daca3296855e27df09c838815cb24a5c0f2a47b77864"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "08d90999125378936d47c422dce34f9336070685e652e6d98bc34f32d3251e5c",
+      "validation_error": "semantic_review_quote_not_in_supplied_text"
+    }
+  ],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "错误",
+      "mechanical_verdict": "错误",
+      "warnings": [],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-eb52b32e10dbc0d04be7",
+        "source_bytes": 187,
+        "shown_bytes": 187,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-76e8368f97d5452e0604",
+        "source_bytes": 126,
+        "shown_bytes": 126,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-e380672bed0377b4f1da",
+        "source_bytes": 195,
+        "shown_bytes": 195,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-92524adbfbff7771554bdbea",
+        "source_bytes": 2880,
+        "shown_bytes": 2880,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-d0753b092bd522d4222a24a6",
+        "source_bytes": 12658,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-512ff39a82b87ec2906e4b06",
+        "source_bytes": 1000,
+        "shown_bytes": 1000,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-940c2a9ba893652638f7bba9",
+        "source_bytes": 12208,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-eb52b32e10dbc0d04be7",
+        "source_bytes": 187,
+        "shown_bytes": 187,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-76e8368f97d5452e0604",
+        "source_bytes": 126,
+        "shown_bytes": 126,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-e380672bed0377b4f1da",
+        "source_bytes": 195,
+        "shown_bytes": 195,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-92524adbfbff7771554bdbea",
+        "source_bytes": 2880,
+        "shown_bytes": 2880,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-d0753b092bd522d4222a24a6",
+        "source_bytes": 12658,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-512ff39a82b87ec2906e4b06",
+        "source_bytes": 1000,
+        "shown_bytes": 1000,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-940c2a9ba893652638f7bba9",
+        "source_bytes": 12208,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-eb52b32e10dbc0d04be7",
+        "source_bytes": 187,
+        "shown_bytes": 187,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-76e8368f97d5452e0604",
+        "source_bytes": 126,
+        "shown_bytes": 126,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-e380672bed0377b4f1da",
+        "source_bytes": 195,
+        "shown_bytes": 195,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-92524adbfbff7771554bdbea",
+        "source_bytes": 2880,
+        "shown_bytes": 2880,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-d0753b092bd522d4222a24a6",
+        "source_bytes": 12658,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-512ff39a82b87ec2906e4b06",
+        "source_bytes": 1000,
+        "shown_bytes": 1000,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-940c2a9ba893652638f7bba9",
+        "source_bytes": 12208,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-eb52b32e10dbc0d04be7",
+        "source_bytes": 187,
+        "shown_bytes": 187,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-76e8368f97d5452e0604",
+        "source_bytes": 126,
+        "shown_bytes": 126,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-e380672bed0377b4f1da",
+        "source_bytes": 195,
+        "shown_bytes": 195,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-92524adbfbff7771554bdbea",
+        "source_bytes": 2880,
+        "shown_bytes": 2880,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-d0753b092bd522d4222a24a6",
+        "source_bytes": 12658,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-512ff39a82b87ec2906e4b06",
+        "source_bytes": 1000,
+        "shown_bytes": 1000,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-940c2a9ba893652638f7bba9",
+        "source_bytes": 12208,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000049448-000049475",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原文把“门罗主义难以再现”限定在“除非有特定的历史条件”这一真实例外条件下。建议把condition_state写成unconditional，等于删除了作者明确保留的触发条件；在“特定历史条件”未定义、也未确认是否发生的情况下，不能把例外条件当作不存在，并据此直接判定主要判断相反。",
+          "quote_ref": "q0",
+          "source_quote": "早先盛行的门罗主义已经难以再现，除非有特定的历史条件。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "book"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议以2025年官方文件重申门罗主义及美巴安全合作，直接判为“错误”。但这些材料至多证明门罗主义式政策宣示和有限半球安全合作，并未证明原文所保留的“特定历史条件”已经出现；同时建议自己也承认再现是有限度、非全面孤立。把有限政策复兴等同于原句主要判断被相反结果推翻，结论口径过强。",
+          "quote_ref": "q3",
+          "source_quote": "操作化：正式战略文件明确援引/重申门罗主义并伴随半球排他性安全合作即视为“再现”。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需先明确或取得证据判断原文“特定的历史条件”是否发生，并区分政策宣示、有限合作与门罗主义实质全面再现；在此之前应保留条件未定，而不能直接判为错误。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000049448-000049475",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原文的条件是“除非有特定的历史条件”，即门罗主义再现以特定历史条件为前提。建议把“特定历史条件是否出现”当作无法判断的关键缺口，但原文并未把“特定历史条件”定义为再现的必要触发机制；它只是给“难以再现”留了一个未定义的例外。现有材料已显示2025年官方文件明确重申门罗主义并伴随半球安全合作，这直接对应“再现”这一主要结果，不能因为例外条件未定义就把主要结果整体判为暂无法判断。",
+          "source_quote": "早先盛行的门罗主义已经难以再现，除非有特定的历史条件。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议的操作化口径是“正式战略文件明确援引/重申门罗主义并伴随半球排他性安全合作即视为‘再现’”，而所引2025年总统公告、国家安全战略摘录及美巴安全合作材料正好满足这一口径。建议却以“特定历史条件未定义”为由判暂无法判断，与其自身scope和已引证据矛盾；应改为对“再现”这一主要结果作出有边界的判断（如正确或部分符合），并把“特定历史条件”未定义、再现深度与持续性列入limitation，而非作为未定的决定性缺口。",
+          "source_quote": "操作化：正式战略文件明确援引/重申门罗主义并伴随半球排他性安全合作即视为“再现”。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正结论：按建议自身scope，2025年官方文件重申门罗主义及半球安全合作已构成“再现”的主要结果证据，应据此给出有边界的判定；仅将“特定历史条件”未定义、再现是否长期制度化及全球战略并存列为limitation，不再作为暂无法判断的决定性缺口。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000049448-000049475",
+      "inclusion": "forecast",
+      "verdict": "错误",
+      "basis": "observed_window",
+      "scope": "对象：美国官方战略与政策实践是否重新采用门罗主义式半球排他/优势路线；观察窗口：原文发表（1991年出版代理）至截止日2026-11-09前实际出现的政策文件与行动。操作化：正式战略文件明确援引/重申门罗主义并伴随半球排他性安全合作即视为“再现”。",
+      "reason": "2025年12月白宫总统公告明确以“Trump Corollary”重新确认门罗主义，2025年国家安全战略亦被报道“revives Monroe Doctrine”，并有美巴运河安全合作等半球排他性行动，构成门罗主义式路线在观察窗口内实质再现，与“难以再现”的主要判断相反。",
+      "limitation": "原文“特定历史条件”未定义，本评估不做事后补写；正式文件与MOU不等于全部政策实施或永久军事存在，且美国同时保留亚洲、欧洲等全球战略安排，故“再现”是有限度、非全面孤立的门罗主义。",
+      "evidence_ids": [
+        "ev-92524adbfbff7771554bdbea",
+        "ev-512ff39a82b87ec2906e4b06",
+        "prior-eb52b32e10dbc0d04be7",
+        "prior-76e8368f97d5452e0604"
+      ],
+      "method": "从美国被世界经济及国际交往卷入的结构推断孤立回归困难",
+      "method_basis": "inferred",
+      "observation_end": "2025-12-08",
+      "future_time_text": "",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-92524adbfbff7771554bdbea",
+          "relation": "counter",
+          "quote": "Today, my Administration proudly reaffirms this promise under a new “Trump Corollary” to the Monroe Doctrine",
+          "publication_date": "2025-12-02",
+          "observation_end": "2025-12-02",
+          "limitation": "总统公告属官方立场表述，证明政策宣示而非全部实施；且为单一政府文件。"
+        },
+        {
+          "evidence_id": "ev-512ff39a82b87ec2906e4b06",
+          "relation": "counter",
+          "quote": "New strategy document says US should bring back Monroe Doctrine",
+          "publication_date": "2025-12-05",
+          "observation_end": "2025-12-05",
+          "limitation": "新闻报道为二手概括，正文截断，未展示战略文件全文细节。"
+        },
+        {
+          "evidence_id": "prior-eb52b32e10dbc0d04be7",
+          "relation": "counter",
+          "quote": "美国2025国家安全战略明言重申执行门罗主义及Trump Corollary，要求阻止域外竞争者控制半球关键资产；同文件仍有亚洲、欧洲等全球战略安排。",
+          "publication_date": "2025-11",
+          "observation_end": "2025-11-30",
+          "limitation": "摘要式摘录，非全文；同时含全球战略安排，说明再现非全面孤立。"
+        },
+        {
+          "evidence_id": "prior-76e8368f97d5452e0604",
+          "relation": "support",
+          "quote": "美国国防部报道美巴已签合作安全活动谅解备忘录，并宣布加强运河安全合作以抗衡中国影响。",
+          "publication_date": "2025-04-09",
+          "observation_end": "2025-04-09",
+          "limitation": "MOU不等于永久基地或主权转移，仅证明半球排他性安全合作方向。"
+        }
+      ],
+      "remaining_gap": "原文“特定历史条件”未定义，无法判断再现是否恰由该条件触发；门罗主义“再现”的深度与持续性（是否长期制度化）仍待后续观察。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000049448-000049475",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "对象：美国官方战略与政策实践是否重新采用门罗主义式半球排他/优势路线；观察窗口：原文发表（1991年出版代理）至截止日2026-11-09前实际出现的政策文件与行动。操作化：正式战略文件明确援引/重申门罗主义并伴随半球排他性安全合作即视为“再现”。",
+      "reason": "原文主要判断是“门罗主义难以再现，除非有特定的历史条件”，作者明确保留了一个未定义的例外条件。2025年官方文件重申门罗主义及美巴安全合作只能证明政策宣示和有限半球合作，不能证明作者所指的“特定历史条件”已经出现，因此不能据此判定主要判断被相反结果推翻。",
+      "limitation": "原文“特定历史条件”未定义，无法确认是否发生；正式文件与MOU不等于全面政策实施或永久军事存在，且美国同时保留亚洲、欧洲等全球战略安排。关键条件未定，故保留暂无法判断而非判错误。",
+      "evidence_ids": [
+        "ev-92524adbfbff7771554bdbea",
+        "ev-512ff39a82b87ec2906e4b06",
+        "prior-eb52b32e10dbc0d04be7",
+        "prior-76e8368f97d5452e0604"
+      ],
+      "method": "从美国被世界经济及国际交往卷入的结构推断孤立回归困难",
+      "method_basis": "inferred",
+      "observation_end": "2025-12-08",
+      "future_time_text": "",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-92524adbfbff7771554bdbea",
+          "relation": "counter",
+          "quote": "Today, my Administration proudly reaffirms this promise under a new “Trump Corollary” to the Monroe Doctrine",
+          "publication_date": "2025-12-02",
+          "observation_end": "2025-12-02",
+          "limitation": "总统公告属官方立场表述，证明政策宣示而非全部实施；且为单一政府文件。"
+        },
+        {
+          "evidence_id": "ev-512ff39a82b87ec2906e4b06",
+          "relation": "counter",
+          "quote": "New strategy document says US should bring back Monroe Doctrine",
+          "publication_date": "2025-12-05",
+          "observation_end": "2025-12-05",
+          "limitation": "新闻报道为二手概括，正文截断，未展示战略文件全文细节。"
+        },
+        {
+          "evidence_id": "prior-eb52b32e10dbc0d04be7",
+          "relation": "counter",
+          "quote": "美国2025国家安全战略明言重申执行门罗主义及Trump Corollary，要求阻止域外竞争者控制半球关键资产；同文件仍有亚洲、欧洲等全球战略安排。",
+          "publication_date": "2025-11",
+          "observation_end": "2025-11-30",
+          "limitation": "摘要式摘录，非全文；同时含全球战略安排，说明再现非全面孤立。"
+        },
+        {
+          "evidence_id": "prior-76e8368f97d5452e0604",
+          "relation": "support",
+          "quote": "美国国防部报道美巴已签合作安全活动谅解备忘录，并宣布加强运河安全合作以抗衡中国影响。",
+          "publication_date": "2025-04-09",
+          "observation_end": "2025-04-09",
+          "limitation": "MOU不等于永久基地或主权转移，仅证明半球排他性安全合作方向。"
+        }
+      ],
+      "remaining_gap": "原文“特定历史条件”未定义，无法判断再现是否恰由该条件触发；门罗主义“再现”的深度与持续性（是否长期制度化）仍待后续观察。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "评估王沪宁关于“门罗主义难以在美国再现，除非有特定历史条件”的判断。对象为美国官方战略与政策实践是否重新采用门罗主义式半球排他/优势路线；观察窗口为原文发表至截止日2026-11-09前实际发生的政策文件与行动。可观察口径：正式战略文件是否明确援引或重申门罗主义、是否伴随半球排他性安全合作；反证包括美国同时维持全球战略安排、合作仅为旧有活动延续、或未出现实质排他政策。原文“特定历史条件”未定义，不做事后补写；正式文件不等于全部实施，MOU不等于永久基地或主权转移。",
+  "elapsed_seconds": 37.995,
+  "completed_at": "2026-11-09T10:42:22.363852+00:00"
+}

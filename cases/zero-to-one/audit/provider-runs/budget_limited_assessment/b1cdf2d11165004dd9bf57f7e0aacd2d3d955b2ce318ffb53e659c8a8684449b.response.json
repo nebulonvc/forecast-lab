@@ -1,0 +1,28 @@
+{
+  "id": "f68b015d-42d5-4762-a8a7-5dbf5361d59a",
+  "object": "chat.completion",
+  "created": 1794201442,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000028064-000028129\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"原判断为2014年时点对PayPal估值中2020年及之后现金流现值占比的分解；需2014年估值模型、折现率及2020年前后现金流序列，实际观察仅到2024年财报。\",\"reason\":\"2024年PayPal仍产生可观经营与自由现金流，说明2020年后仍有现金产出，但无法据此验证“当时大部分价值来自2020年甚至之后”的估值占比。该判断依赖折现模型，现有证据不足以操作化验证。\",\"limitation\":\"仅有2024年现金流与账户数据，缺2014年估值分解和折现率；不能把公司持续存续或现金流存在等同于原估值比例成立。\",\"evidence_ids\":[\"biz-paypal-2024\"],\"method\":\"基于增长率与折现率对现金流现值来源时间作判断\",\"method_basis\":\"explicit\",\"observation_end\":\"2025-02-04\",\"future_time_text\":\"2020年甚至之后\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4641,
+    "completion_tokens": 261,
+    "total_tokens": 4902,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3873
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

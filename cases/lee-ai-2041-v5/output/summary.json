@@ -1,0 +1,58 @@
+{
+  "book": "AI 2041",
+  "cutoff": "2026-11-15",
+  "rules_version": "simple-v3-trend-four-class",
+  "candidates": 109,
+  "assessment_reviewed": 109,
+  "unreviewed": 0,
+  "extraction_v2_reviewed": 109,
+  "expanded_claims_n": 109,
+  "unresolved_references_n": 0,
+  "legacy_extraction_reviewed": 0,
+  "whole_candidate_pass_complete": true,
+  "candidate_completion_rate": 1.0,
+  "forecast_n": 109,
+  "verdicts": {
+    "正确": 16,
+    "部分符合": 51,
+    "错误": 0,
+    "暂无法判断": 42
+  },
+  "display_verdicts": {
+    "正确": 16,
+    "趋势符合": 17,
+    "部分符合": 34,
+    "错误": 0,
+    "暂无法判断": 42
+  },
+  "display_schema": "five-categories-trend-separate",
+  "excluded": {
+    "nonforecast": 0,
+    "duplicate": 0
+  },
+  "decided_n": 67,
+  "forecasts_with_bound_evidence": 85,
+  "forecasts_without_bound_evidence": 24,
+  "no_decidable_outcomes": false,
+  "trend_aligned_n": 17,
+  "evaluation_coverage": 0.6146788990825688,
+  "correct_share_of_decided": 0.23880597014925373,
+  "unresolved_bases": {
+    "future": 15,
+    "observed_window": 18,
+    "evidence": 9
+  },
+  "evidence": 49,
+  "evidence_hash_verified": 49,
+  "method_attribution": {
+    "inferred": 109
+  },
+  "interpretation": "Retrospective parent-record counts, not independent forecast accuracy or prospective skill.",
+  "brier": null,
+  "partial_numeric_weight": null,
+  "prepublication_observation_warning_ids": [],
+  "horizon_sources": {
+    "implicit_publication_to_cutoff": 48,
+    "explicit": 61
+  }
+}

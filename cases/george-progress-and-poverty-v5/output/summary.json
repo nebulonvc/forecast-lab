@@ -1,0 +1,59 @@
+{
+  "book": "Progress and Poverty",
+  "cutoff": "2026-11-15",
+  "rules_version": "simple-v3-trend-four-class",
+  "candidates": 41,
+  "assessment_reviewed": 41,
+  "unreviewed": 0,
+  "extraction_v2_reviewed": 41,
+  "expanded_claims_n": 41,
+  "unresolved_references_n": 1,
+  "legacy_extraction_reviewed": 0,
+  "whole_candidate_pass_complete": true,
+  "candidate_completion_rate": 1.0,
+  "forecast_n": 29,
+  "verdicts": {
+    "正确": 2,
+    "部分符合": 1,
+    "错误": 1,
+    "暂无法判断": 25
+  },
+  "display_verdicts": {
+    "正确": 2,
+    "趋势符合": 0,
+    "部分符合": 1,
+    "错误": 1,
+    "暂无法判断": 25
+  },
+  "display_schema": "five-categories-trend-separate",
+  "excluded": {
+    "nonforecast": 12,
+    "duplicate": 0
+  },
+  "decided_n": 4,
+  "forecasts_with_bound_evidence": 10,
+  "forecasts_without_bound_evidence": 19,
+  "no_decidable_outcomes": false,
+  "trend_aligned_n": 0,
+  "evaluation_coverage": 0.13793103448275862,
+  "correct_share_of_decided": 0.5,
+  "unresolved_bases": {
+    "definition": 7,
+    "evidence": 11,
+    "conditional": 1,
+    "future": 6
+  },
+  "evidence": 6,
+  "evidence_hash_verified": 6,
+  "method_attribution": {
+    "explicit": 41
+  },
+  "interpretation": "Retrospective parent-record counts, not independent forecast accuracy or prospective skill.",
+  "brier": null,
+  "partial_numeric_weight": null,
+  "prepublication_observation_warning_ids": [],
+  "horizon_sources": {
+    "explicit": 22,
+    "implicit_publication_to_cutoff": 19
+  }
+}

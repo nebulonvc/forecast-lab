@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000403350-000403404",
+  "plan": {
+    "object": "本国没有像罗马人或瑞士人那样以人力严密设防、力量在钱而不在人的国家。同段点名的是当时的法国国王和意大利人，不是任何有陆军的交战国。",
+    "condition": "whenever the supply of money is cut off。同句写，没有什么比入侵战争更快切断这笔供应。切断供应和随后灭亡必须是同一国家、同一场战争。",
+    "quantifier": "whenever。一次金钱被切断而灭亡，不能单独支撑每当；一次金钱被切断而没有灭亡，可以反驳每当。",
+    "result": "登记变化是 undone。灭亡是这个国家完了，不是暂时财政困难，也不是卖掉一块属地。",
+    "window": "1531至2026-11-15。迦太基和作者自己举的佛罗伦萨战例不用来核验出版之后的判断。",
+    "counterevidence_needed": "一个力量在钱而不在人的无设防国家，金钱供应被切断之后没有灭亡。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "merchant republic without a strong army invaded revenues collapsed state ended after 1531",
+      "counter_query": "state that relied on money not soldiers survived after invasion cut off its revenues"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [],
+    "dropped": "热那亚百科写它缺少常备军，1768年因财政出售科西嘉，1797年被法军结束独立。页面没有写金钱供应被切断是灭亡的原因。乌克兰有陆军，而且外援没有让金钱供应被切断，国家也没有灭亡。两者都不是这句的对象加条件。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "必须同时是无人力设防、力量在钱、金钱供应被切断，然后国家灭亡或没有灭亡。",
+    "reason": "首轮两边都没有给出这样一条1531年之后的正文。被入侵而结束的商业共和国，材料没有写金钱供应先被切断。靠外援维持的交战国既有陆军，供应也没有被切断。决定性缺口是这三个要素没有落在同一个国家的同一场战争上。不能用财政困难或军事占领代替 undone。",
+    "limitation": "没有新增可引用正文。",
+    "method": "先分开无人力设防和金钱供应被切断，两项不齐就不看灭亡。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "候选要么有陆军，要么没有写出金钱供应被切断。不把占领或出售属地当成这句的灭亡。"
+  }
+}

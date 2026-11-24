@@ -1,0 +1,45 @@
+{
+  "id": "txt-4934182645-000725591-000725733",
+  "plan": {
+    "object": "臣属城市里对你不友好的一派，以及统治它的君主或共和国。",
+    "condition": "if one party in a subject city be unfriendly to you，并且 so soon as you are involved in war。必须是城内的一派不友好，而且你已经卷入战争。守军在首领被俘后开门，不是这一派。",
+    "quantifier": "will be that you will lose that city。你会失去这座城。一次失去不能证明凡是如此就失去；一次城内有不友好的派、战争中仍保有该城，可以反驳。",
+    "result": "登记变化是 lose that city。失去的是这座臣属城市。",
+    "window": "1531至2026-11-15。1501年阿雷佐是出版前的例子。",
+    "counterevidence_needed": "臣属城市里有一派不友好，战争一开始这座城失去或仍被保有。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "faction inside a subject city opened the gates to the enemy when war started after 1531",
+      "counter_query": "subject city with a hostile faction remained loyal when its ruler went to war"
+    },
+    "adaptive_rounds": 0,
+    "fetch_note": "弗格拉什堡页出现在支持检索里，全文尚未抓取，不是访问失败。摘要已写守军在首领被俘后开门，对象已不是城内不友好的一派，故不再为这页补抓。摘要不升格为摘录。",
+    "kept_urls": [],
+    "dropped": "1465年巴黎有勃艮第派而仍忠于国王，早于1531年。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "so soon as you are involved in war",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "必须是臣属城市里不友好的一派，而且发生在你卷入战争之时。守军投降不是这一派。",
+    "reason": "支持检索给出1541年弗格拉什堡。摘要写守军听说首领被俘后不再抵抗并开门。那是守军，不是城内不友好的一派把城交给敌人。该页全文尚未抓取；摘要已经表明对象不符，不把未下载本身当成不可核验，也不把摘要当摘录。反对检索的巴黎忠于国王发生在1465年。决定性缺口是：1531年之后没有已存档正文写出臣属城市的不友好派，以及战争中这座城失去或仍在。",
+    "limitation": "弗格拉什页尚未抓取。1465年不进入窗口。没有可引用正文。",
+    "method": "先确认是城内的一派，再看战争中是否失去该城。守军开门不代替这一派。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "弗格拉什摘要是守军在首领被俘后开门，全文尚未抓取。1465年的巴黎不在1531年之后。"
+  }
+}

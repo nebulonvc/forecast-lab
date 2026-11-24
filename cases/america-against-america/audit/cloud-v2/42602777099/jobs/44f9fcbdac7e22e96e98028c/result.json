@@ -1,0 +1,853 @@
+{
+  "claim_id": "txt-1c4066fc0c-000253337-000253408",
+  "version": "search-verifier-v2",
+  "input_sha256": "731ec25a3fb8dbb914879c938feba9cddc86265c41a70a6c6791f53368631582",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000253337-000253408",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "以21世纪（2001-01-01至cutoff 2026-11-09）为观察窗口，考察是否有除日本外的多个民族/国家在政治、经济、军事或科技上实质挑战美国；并以美国官方战略文件是否承认外部竞争压力与内部不足作为“反省”的有限代理。",
+    "reason": "所引材料仅覆盖2022年10月一个时点的美国官方战略立场，能证明当时把中国、俄罗斯列为竞争者和威胁，但不足以证明2001年至cutoff期间“更多民族挑战美国”的持续方向，也不能证明美国社会整体“真正反省”政治、经济、文化。两个主要分项均缺持续或直接证据，故不能判部分符合或趋势符合。",
+    "limitation": "“反省”是内心与社会整体状态，官方文件只能证明制度立场和部分自我批评，不能证明全民态度或因果；证据仅覆盖2022年单一时点，21世纪尚未结束，最终结果未定。修订要点：原建议把2022年单一时点材料当作截至2026年的持续趋势，observation_end与trend_aligned不成立，现改为暂无法判断。",
+    "evidence_ids": [
+      "prior-3bcc8bb5aea26f4b93b0",
+      "ev-9ab3524aa4d7a1cb113b8cbb",
+      "ev-6e3d89c6c8bef2bac4b23223",
+      "ev-c4890c29a6b00c873313ed3b"
+    ],
+    "method": "将美日竞争视为结构现象并外推更多民族挑战",
+    "method_basis": "explicit",
+    "observation_end": "2022-10-14",
+    "future_time_text": "下个世纪（21世纪）",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-3bcc8bb5aea26f4b93b0",
+        "relation": "boundary",
+        "quote": "美国2022 NSS分别称中国为具经济外交军事技术能力的最重大竞争者、俄罗斯为即时威胁，并列国内产业创新、人民投资与加强民主等任务，承认内部民主挑战和需要纠错。",
+        "publication_date": "2022-10-12",
+        "observation_end": "2022-10-12",
+        "limitation": "为已登记摘要而非全文，只能证明2022年官方战略立场，不能证明美国社会整体反省，也不能证明21世纪持续趋势。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-9ab3524aa4d7a1cb113b8cbb",
+        "relation": "boundary",
+        "quote": "报告称“中国是唯一一个既有重塑国际秩序意图的竞争者，也逐渐拥有经济、外交、军事和科技力量来日益推进这一目标”。",
+        "publication_date": "2022-10-14",
+        "observation_end": "2022-10-14",
+        "limitation": "媒体报道官方战略，属2022年单一时点的制度立场证据；正文截断，不能证明内心反省、因果或持续趋势。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-6e3d89c6c8bef2bac4b23223",
+        "relation": "boundary",
+        "quote": "The strategy focuses on two main strategic challenges. The first is the geopolitical competition the United States faces with China and Russia.",
+        "publication_date": "2022-10-13",
+        "observation_end": "2022-10-13",
+        "limitation": "美国国防部新闻转述战略，证明2022年官方认知；正文截断，不覆盖社会整体态度或持续方向。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-c4890c29a6b00c873313ed3b",
+        "relation": "boundary",
+        "quote": "The White House rolled out a long-delayed national security strategy on Wednesday that seeks to contain China's rise while reemphasizing the importance of working with allies to tackle challenges",
+        "publication_date": "2022-10-12",
+        "observation_end": "2022-10-12",
+        "limitation": "路透社报道，正文仅显示开头，属2022年官方战略立场证据，不能证明反省已全面发生或持续趋势。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺少覆盖2001年至cutoff期间、可对应“更多民族/国家实质挑战美国”的持续系统证据（而非仅2022年单份战略文件），以及可对应“美国真正反省政治、经济、文化”的直接材料；21世纪尚未结束，最终结果待验证。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000253337-000253408",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以21世纪（2001-01-01至cutoff 2026-11-09）为观察窗口，考察是否有除日本外的多个民族/国家在政治、经济、军事或科技上实质挑战美国；并以美国官方战略文件是否承认外部竞争压力与内部不足作为“反省”的有限代理。",
+    "reason": "2022年美国国家安全战略明确把中国列为最大地缘政治竞争者、俄罗斯列为即时威胁，显示21世纪确有日本之外多个国家在政治、经济、军事和科技层面挑战美国，主要方向已有持续证据。但“美国人才会真正反省自己的政治、经济和文化”这一分项只有官方战略承认内部民主挑战等有限材料，尚不足以证明美国社会整体已“真正反省”，最终结果待验证。",
+    "limitation": "“反省”是内心与社会整体状态，官方文件只能证明制度立场和部分自我批评，不能证明全民态度或因果；观察窗口截至2026年，21世纪尚未结束，最终结果未定。",
+    "evidence_ids": [
+      "prior-3bcc8bb5aea26f4b93b0",
+      "ev-9ab3524aa4d7a1cb113b8cbb",
+      "ev-6e3d89c6c8bef2bac4b23223",
+      "ev-c4890c29a6b00c873313ed3b"
+    ],
+    "method": "将美日竞争视为结构现象并外推更多民族挑战",
+    "method_basis": "explicit",
+    "observation_end": "2022-10-14",
+    "future_time_text": "下个世纪（21世纪）",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-3bcc8bb5aea26f4b93b0",
+        "relation": "support",
+        "quote": "美国2022 NSS分别称中国为具经济外交军事技术能力的最重大竞争者、俄罗斯为即时威胁，并列国内产业创新、人民投资与加强民主等任务，承认内部民主挑战和需要纠错。",
+        "publication_date": "2022-10-12",
+        "observation_end": "2022-10-12",
+        "limitation": "为已登记摘要而非全文，只能证明官方战略立场，不能证明美国社会整体反省。"
+      },
+      {
+        "evidence_id": "ev-9ab3524aa4d7a1cb113b8cbb",
+        "relation": "support",
+        "quote": "报告称“中国是唯一一个既有重塑国际秩序意图的竞争者，也逐渐拥有经济、外交、军事和科技力量来日益推进这一目标”。",
+        "publication_date": "2022-10-14",
+        "observation_end": "2022-10-14",
+        "limitation": "媒体报道官方战略，属制度立场证据；正文截断，且不能证明内心反省或因果。"
+      },
+      {
+        "evidence_id": "ev-6e3d89c6c8bef2bac4b23223",
+        "relation": "support",
+        "quote": "The strategy focuses on two main strategic challenges. The first is the geopolitical competition the United States faces with China and Russia.",
+        "publication_date": "2022-10-13",
+        "observation_end": "2022-10-13",
+        "limitation": "美国国防部新闻转述战略，证明官方认知；正文截断，不覆盖社会整体态度。"
+      },
+      {
+        "evidence_id": "ev-c4890c29a6b00c873313ed3b",
+        "relation": "support",
+        "quote": "The White House rolled out a long-delayed national security strategy on Wednesday that seeks to contain China's rise while reemphasizing the importance of working with allies to tackle challenges",
+        "publication_date": "2022-10-12",
+        "observation_end": "2022-10-12",
+        "limitation": "路透社报道，正文仅显示开头，属官方战略立场证据，不能证明反省已全面发生。"
+      }
+    ],
+    "remaining_gap": "缺少覆盖21世纪全期、可对应“更多民族挑战”和“美国真正反省政治经济文化”两分项的持续系统证据；尤其“真正反省”的社会整体状态尚无直接材料，最终结果待21世纪结束验证。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-3bcc8bb5aea26f4b93b0",
+      "url": "https://bidenwhitehouse.archives.gov/wp-content/uploads/2022/10/Biden-Harris-Administrations-National-Security-Strategy-10.2022.pdf",
+      "title": "ev-r2-l3-nss2022",
+      "published_date": "2022-10-12",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2022-10-12",
+        "latest": "2022-10-12"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-nss2022",
+      "archive_sha256": "54d56e3c17777139bcdbf5154dce58d72c0981bf743a3a5ab79ba1500fc34e4c",
+      "archive_path": "data/sources/r2-l3-nss-births-targeted.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-584fccf05cf6643419d6",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.CD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-cd",
+      "published_date": "2026-10-08",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-10-08",
+        "latest": "2026-10-08"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-cd",
+      "archive_sha256": "7ad5c1c4f44e15850a861521955b29727497d2cb232432f3dbc2e56ba20d4e42",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.CD.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-dc3b312f95b6ceb47c97",
+      "url": "https://www.ncses.nsf.gov/pubs/nsb20243/discovery-u-s-and-global-r-d",
+      "title": "ev-nsf",
+      "published_date": "2024-03-13",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-03-13",
+        "latest": "2024-03-13"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-nsf",
+      "archive_sha256": "48d44bfdae4f5f92a3f44364f67e6ca7670f659eb1c77f1e11453f89e6023f33",
+      "archive_path": "data/sources/48d44bfdae4f5f92a3f44364f67e6ca7670f659eb1c77f1e11453f89e6023f33.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-9ab3524aa4d7a1cb113b8cbb",
+      "url": "https://www.bbc.com/zhongwen/simp/world-63242528",
+      "resolved_url": "https://www.bbc.com/zhongwen/simp/world-63242528",
+      "title": "拜登政府国家安全战略：中国是对全球秩序最大挑战 - BBC News 中文",
+      "published_date": "2022-10-14",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2022-10-14",
+        "latest": "2022-10-14"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:54.717401+00:00",
+      "archive_sha256": "964b890b6e6a2bf7cde28a7874b55961a249413aa224470e8feafeb6cb3cfd5d",
+      "archive_path": "jobs/44f9fcbdac7e22e96e98028c/964b890b6e6a2bf7cde28a7874b55961a249413aa224470e8feafeb6cb3cfd5d.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-6e3d89c6c8bef2bac4b23223",
+      "url": "https://www.war.gov/News/News-Stories/Article/Article/3187907/national-security-strategy-aims-to-address-new-challenges/",
+      "resolved_url": "https://www.war.gov/News/News-Stories/Article/Article/3187907/national-security-strategy-aims-to-address-new-challenges/",
+      "title": "National Security Strategy Aims to Address New Challenges > U.S. Department of War > Defense Department News | U.S. Department of War",
+      "published_date": "2022-10-13",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2022-10-13",
+        "latest": "2022-10-13"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:54.717635+00:00",
+      "archive_sha256": "c5b7bb88ac840373bef28f1b06683fe06334aaf86c29d500b889de6d48f6b168",
+      "archive_path": "jobs/44f9fcbdac7e22e96e98028c/c5b7bb88ac840373bef28f1b06683fe06334aaf86c29d500b889de6d48f6b168.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-f848d87e79bb234f04fa8db5",
+      "url": "https://millercenter.org/president/clinton/domestic-affairs",
+      "resolved_url": "https://millercenter.org/president/clinton/domestic-affairs",
+      "title": "Bill Clinton: Domestic Affairs | Miller Center",
+      "published_date": "2016-10-04",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2016-10-04",
+        "latest": "2016-10-04"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:54.717845+00:00",
+      "archive_sha256": "171c8e6deee0c691e625591a0c48587c0d4a2c7249f73049343b5af425407ae8",
+      "archive_path": "jobs/44f9fcbdac7e22e96e98028c/171c8e6deee0c691e625591a0c48587c0d4a2c7249f73049343b5af425407ae8.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c4890c29a6b00c873313ed3b",
+      "url": "https://www.reuters.com/world/us/bidens-national-security-plan-aims-china-russia-2022-10-12/",
+      "resolved_url": "https://www.reuters.com/world/us/bidens-national-security-plan-aims-china-russia-2022-10-12/",
+      "title": "Biden's national security plan takes aim at China, Russia | Reuters",
+      "published_date": "2022-10-12",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2022-10-12",
+        "latest": "2022-10-12"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:42:04.823997+00:00",
+      "archive_sha256": "6eedf469356de00d1bf6a814e7db0d521818f10c3b77ffd45155d32a5e601d4c",
+      "archive_path": "jobs/44f9fcbdac7e22e96e98028c/6eedf469356de00d1bf6a814e7db0d521818f10c3b77ffd45155d32a5e601d4c.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "21世纪 中国 俄罗斯 欧盟 挑战 美国 霸权 竞争 官方战略 2022 National Security Strategy China Russia challenge",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "美国 20世纪 90年代 已 反省 政治 经济 文化 改革 克林顿 福利改革 历史 证据",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "2022 National Security Strategy China Russia challenge United States official strategy 21st century",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "United States domestic reform self-reflection 1990s Clinton welfare reform before 21st century",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少覆盖2001年至cutoff期间、可对应“更多民族/国家实质挑战美国”的持续系统证据（而非仅2022年单份战略文件），以及可对应“美国真正反省政治、经济、文化”的直接材料；21世纪尚未结束，最终结果待验证。",
+  "source_statuses": [
+    {
+      "url": "https://www.bbc.com/zhongwen/simp/world-63242528",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.war.gov/News/News-Stories/Article/Article/3187907/national-security-strategy-aims-to-address-new-challenges/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://millercenter.org/president/clinton/domestic-affairs",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.reuters.com/world/us/bidens-national-security-plan-aims-china-russia-2022-10-12/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "对象为作者对21世纪的结构性预测：日本是首个挑战美国的民族，21世纪必然有更多民族挑战美国，且美国届时才会真正反省政治、经济、文化。可观察口径：21世纪是否出现除日本外多个民族/国家在政治、经济、军事或科技上实质挑战美国；美国官方或社会是否出现对自身政治、经济、文化的反省。反证包括：21世纪没有更多民族挑战美国，或美国在21世纪前已持续反省，或“更多民族挑战”仅停留在一般竞争而无实质挑战。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 9,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "d5c1bf433b2d45950ada57f4dae483e495c88f5f68e149da7856a6d6059bef5e"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "a3df0afb4cf897f1bf8566a1e81c5436",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "ddc1721475eaf7cce03ad4905141e189",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "c2fc31d3aeeaac10a69ce6ab33dc6820df29e3904ef6d6990c18e8c222c7becf"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "396e84f9a96792621cac3919e4ef62a2",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "5f529416cd3ad5d87a840621faa75342222d8582fe07c3e710e8fea8971051cf"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "ecc8c63f895a8d16a264ef8f8745df58",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "735d3092d955e7b8f0ca18b54b7c58c5",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "0248a7fee9988fb2d97918160a93b56bab918dce2945a0fb08db341b72a62ce0"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "73329d642355bdcd153edc8affcf4793",
+      "cost_estimate_USD": 0.001,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "8f2abb1d0b7c2c2e3435087f2db76919179788bfdd72930a6ad10b4aef5dc418",
+      "validation_error": "JSONDecodeError"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "b9be13509b0795440e6142ffd171b7a4e940882b973382a720e9d0f486aa15b8"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "a76b580eb3b09f34ccce6e4809bf865eaa9e57be0c5f3f7e10b4a4a24cd1a18f"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "81a165add5497b6b31de4c07b9998f647addfe5b24956637ff8e60e963cb65f2"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "e8ddcb32c4ec5aad76dc96ce7ca54d31da7a8ba0933283ee64d116a44faee347"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "8f2abb1d0b7c2c2e3435087f2db76919179788bfdd72930a6ad10b4aef5dc418",
+      "validation_error": "JSONDecodeError"
+    }
+  ],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-3bcc8bb5aea26f4b93b0",
+        "source_bytes": 224,
+        "shown_bytes": 224,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-584fccf05cf6643419d6",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-dc3b312f95b6ceb47c97",
+        "source_bytes": 154,
+        "shown_bytes": 154,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-9ab3524aa4d7a1cb113b8cbb",
+        "source_bytes": 4456,
+        "shown_bytes": 3284,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-6e3d89c6c8bef2bac4b23223",
+        "source_bytes": 8886,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-f848d87e79bb234f04fa8db5",
+        "source_bytes": 12028,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c4890c29a6b00c873313ed3b",
+        "source_bytes": 1000,
+        "shown_bytes": 1000,
+        "context_truncated": false
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-3bcc8bb5aea26f4b93b0",
+        "source_bytes": 224,
+        "shown_bytes": 224,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-584fccf05cf6643419d6",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-dc3b312f95b6ceb47c97",
+        "source_bytes": 154,
+        "shown_bytes": 154,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-9ab3524aa4d7a1cb113b8cbb",
+        "source_bytes": 4456,
+        "shown_bytes": 3284,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-6e3d89c6c8bef2bac4b23223",
+        "source_bytes": 8886,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-f848d87e79bb234f04fa8db5",
+        "source_bytes": 12028,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c4890c29a6b00c873313ed3b",
+        "source_bytes": 1000,
+        "shown_bytes": 1000,
+        "context_truncated": false
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-3bcc8bb5aea26f4b93b0",
+        "source_bytes": 224,
+        "shown_bytes": 224,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-584fccf05cf6643419d6",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-dc3b312f95b6ceb47c97",
+        "source_bytes": 154,
+        "shown_bytes": 154,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-9ab3524aa4d7a1cb113b8cbb",
+        "source_bytes": 4456,
+        "shown_bytes": 3284,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-6e3d89c6c8bef2bac4b23223",
+        "source_bytes": 8886,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-f848d87e79bb234f04fa8db5",
+        "source_bytes": 12028,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c4890c29a6b00c873313ed3b",
+        "source_bytes": 1000,
+        "shown_bytes": 1000,
+        "context_truncated": false
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-3bcc8bb5aea26f4b93b0",
+        "source_bytes": 224,
+        "shown_bytes": 224,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-584fccf05cf6643419d6",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-dc3b312f95b6ceb47c97",
+        "source_bytes": 154,
+        "shown_bytes": 154,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-9ab3524aa4d7a1cb113b8cbb",
+        "source_bytes": 4456,
+        "shown_bytes": 3284,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-6e3d89c6c8bef2bac4b23223",
+        "source_bytes": 8886,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-f848d87e79bb234f04fa8db5",
+        "source_bytes": 12028,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c4890c29a6b00c873313ed3b",
+        "source_bytes": 1000,
+        "shown_bytes": 1000,
+        "context_truncated": false
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000253337-000253408",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "fail",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "time_alignment",
+          "reason": "建议把观察窗口写成2001-01-01至cutoff 2026-11-09，但实际observation_end填的是2022-10-14，且所引证据全部是2022年10月的官方战略文件。2022年至2026年之间没有任何观察材料，因此不能把“21世纪主要方向已有持续证据”当作截至2026年的持续观察；这属于把证据发表时期与观察时期混同，并夸大了观察覆盖范围。",
+          "quote_ref": "q3",
+          "source_quote": "2022年美国国家安全战略明确把中国列为最大地缘政治竞争者、俄罗斯列为即时威胁，显示21世纪确有日本之外多个国家在政治、经济、军事和科技层面挑战美国，主要方向已有持续证据。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "所引材料只能证明2022年美国官方战略把中国、俄罗斯列为竞争者和威胁，并承认内部民主挑战；它们不能证明“21世纪确有日本之外多个国家在政治、经济、军事和科技层面挑战美国”这一复合分项，尤其不能证明“多个国家”在“经济、军事、科技”各层面都构成实质挑战。证据只覆盖官方认知的一个时点，不足以支撑“主要方向已有持续证据”的结论。",
+          "quote_ref": "q4",
+          "source_quote": "美国2022 NSS分别称中国为具经济外交军事技术能力的最重大竞争者、俄罗斯为即时威胁，并列国内产业创新、人民投资与加强民主等任务，承认内部民主挑战和需要纠错。",
+          "evidence_id": "prior-3bcc8bb5aea26f4b93b0",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议一方面判定“部分符合”并设trend_aligned=true，另一方面又承认“美国人才会真正反省自己的政治、经济和文化”这一分项尚不足以证明、最终结果待验证。按统一口径，趋势符合要求主要方向已有持续观察证据而终点未到；这里“更多民族挑战”只有2022年单一时点的官方战略材料，没有持续方向证据，“真正反省”分项也缺少直接证据，因此不能同时成立“部分符合”和trend_aligned=true。应改为暂无法判断，或明确限定为仅对2022年官方战略立场作有限判断，并相应调整verdict与trend_aligned。",
+          "quote_ref": "q2",
+          "source_quote": "以21世纪（2001-01-01至cutoff 2026-11-09）为观察窗口，考察是否有除日本外的多个民族/国家在政治、经济、军事或科技上实质挑战美国；并以美国官方战略文件是否承认外部竞争压力与内部不足作为“反省”的有限代理。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充覆盖2001年至cutoff期间、可对应“更多民族/国家实质挑战美国”的持续系统证据（而非仅2022年单份战略文件），以及可对应“美国真正反省政治、经济、文化”的直接材料；在此之前应把结论改为暂无法判断，或把观察窗口和verdict严格限定在2022年官方战略立场这一有限口径内，并修正observation_end与trend_aligned。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000253337-000253408",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000253337-000253408",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以21世纪（2001-01-01至cutoff 2026-11-09）为观察窗口，考察是否有除日本外的多个民族/国家在政治、经济、军事或科技上实质挑战美国；并以美国官方战略文件是否承认外部竞争压力与内部不足作为“反省”的有限代理。",
+      "reason": "2022年美国国家安全战略明确把中国列为最大地缘政治竞争者、俄罗斯列为即时威胁，显示21世纪确有日本之外多个国家在政治、经济、军事和科技层面挑战美国，主要方向已有持续证据。但“美国人才会真正反省自己的政治、经济和文化”这一分项只有官方战略承认内部民主挑战等有限材料，尚不足以证明美国社会整体已“真正反省”，最终结果待验证。",
+      "limitation": "“反省”是内心与社会整体状态，官方文件只能证明制度立场和部分自我批评，不能证明全民态度或因果；观察窗口截至2026年，21世纪尚未结束，最终结果未定。",
+      "evidence_ids": [
+        "prior-3bcc8bb5aea26f4b93b0",
+        "ev-9ab3524aa4d7a1cb113b8cbb",
+        "ev-6e3d89c6c8bef2bac4b23223",
+        "ev-c4890c29a6b00c873313ed3b"
+      ],
+      "method": "将美日竞争视为结构现象并外推更多民族挑战",
+      "method_basis": "explicit",
+      "observation_end": "2022-10-14",
+      "future_time_text": "下个世纪（21世纪）",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-3bcc8bb5aea26f4b93b0",
+          "relation": "support",
+          "quote": "美国2022 NSS分别称中国为具经济外交军事技术能力的最重大竞争者、俄罗斯为即时威胁，并列国内产业创新、人民投资与加强民主等任务，承认内部民主挑战和需要纠错。",
+          "publication_date": "2022-10-12",
+          "observation_end": "2022-10-12",
+          "limitation": "为已登记摘要而非全文，只能证明官方战略立场，不能证明美国社会整体反省。"
+        },
+        {
+          "evidence_id": "ev-9ab3524aa4d7a1cb113b8cbb",
+          "relation": "support",
+          "quote": "报告称“中国是唯一一个既有重塑国际秩序意图的竞争者，也逐渐拥有经济、外交、军事和科技力量来日益推进这一目标”。",
+          "publication_date": "2022-10-14",
+          "observation_end": "2022-10-14",
+          "limitation": "媒体报道官方战略，属制度立场证据；正文截断，且不能证明内心反省或因果。"
+        },
+        {
+          "evidence_id": "ev-6e3d89c6c8bef2bac4b23223",
+          "relation": "support",
+          "quote": "The strategy focuses on two main strategic challenges. The first is the geopolitical competition the United States faces with China and Russia.",
+          "publication_date": "2022-10-13",
+          "observation_end": "2022-10-13",
+          "limitation": "美国国防部新闻转述战略，证明官方认知；正文截断，不覆盖社会整体态度。"
+        },
+        {
+          "evidence_id": "ev-c4890c29a6b00c873313ed3b",
+          "relation": "support",
+          "quote": "The White House rolled out a long-delayed national security strategy on Wednesday that seeks to contain China's rise while reemphasizing the importance of working with allies to tackle challenges",
+          "publication_date": "2022-10-12",
+          "observation_end": "2022-10-12",
+          "limitation": "路透社报道，正文仅显示开头，属官方战略立场证据，不能证明反省已全面发生。"
+        }
+      ],
+      "remaining_gap": "缺少覆盖21世纪全期、可对应“更多民族挑战”和“美国真正反省政治经济文化”两分项的持续系统证据；尤其“真正反省”的社会整体状态尚无直接材料，最终结果待21世纪结束验证。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000253337-000253408",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "以21世纪（2001-01-01至cutoff 2026-11-09）为观察窗口，考察是否有除日本外的多个民族/国家在政治、经济、军事或科技上实质挑战美国；并以美国官方战略文件是否承认外部竞争压力与内部不足作为“反省”的有限代理。",
+      "reason": "所引材料仅覆盖2022年10月一个时点的美国官方战略立场，能证明当时把中国、俄罗斯列为竞争者和威胁，但不足以证明2001年至cutoff期间“更多民族挑战美国”的持续方向，也不能证明美国社会整体“真正反省”政治、经济、文化。两个主要分项均缺持续或直接证据，故不能判部分符合或趋势符合。",
+      "limitation": "“反省”是内心与社会整体状态，官方文件只能证明制度立场和部分自我批评，不能证明全民态度或因果；证据仅覆盖2022年单一时点，21世纪尚未结束，最终结果未定。修订要点：原建议把2022年单一时点材料当作截至2026年的持续趋势，observation_end与trend_aligned不成立，现改为暂无法判断。",
+      "evidence_ids": [
+        "prior-3bcc8bb5aea26f4b93b0",
+        "ev-9ab3524aa4d7a1cb113b8cbb",
+        "ev-6e3d89c6c8bef2bac4b23223",
+        "ev-c4890c29a6b00c873313ed3b"
+      ],
+      "method": "将美日竞争视为结构现象并外推更多民族挑战",
+      "method_basis": "explicit",
+      "observation_end": "2022-10-14",
+      "future_time_text": "下个世纪（21世纪）",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-3bcc8bb5aea26f4b93b0",
+          "relation": "boundary",
+          "quote": "美国2022 NSS分别称中国为具经济外交军事技术能力的最重大竞争者、俄罗斯为即时威胁，并列国内产业创新、人民投资与加强民主等任务，承认内部民主挑战和需要纠错。",
+          "publication_date": "2022-10-12",
+          "observation_end": "2022-10-12",
+          "limitation": "为已登记摘要而非全文，只能证明2022年官方战略立场，不能证明美国社会整体反省，也不能证明21世纪持续趋势。"
+        },
+        {
+          "evidence_id": "ev-9ab3524aa4d7a1cb113b8cbb",
+          "relation": "boundary",
+          "quote": "报告称“中国是唯一一个既有重塑国际秩序意图的竞争者，也逐渐拥有经济、外交、军事和科技力量来日益推进这一目标”。",
+          "publication_date": "2022-10-14",
+          "observation_end": "2022-10-14",
+          "limitation": "媒体报道官方战略，属2022年单一时点的制度立场证据；正文截断，不能证明内心反省、因果或持续趋势。"
+        },
+        {
+          "evidence_id": "ev-6e3d89c6c8bef2bac4b23223",
+          "relation": "boundary",
+          "quote": "The strategy focuses on two main strategic challenges. The first is the geopolitical competition the United States faces with China and Russia.",
+          "publication_date": "2022-10-13",
+          "observation_end": "2022-10-13",
+          "limitation": "美国国防部新闻转述战略，证明2022年官方认知；正文截断，不覆盖社会整体态度或持续方向。"
+        },
+        {
+          "evidence_id": "ev-c4890c29a6b00c873313ed3b",
+          "relation": "boundary",
+          "quote": "The White House rolled out a long-delayed national security strategy on Wednesday that seeks to contain China's rise while reemphasizing the importance of working with allies to tackle challenges",
+          "publication_date": "2022-10-12",
+          "observation_end": "2022-10-12",
+          "limitation": "路透社报道，正文仅显示开头，属2022年官方战略立场证据，不能证明反省已全面发生或持续趋势。"
+        }
+      ],
+      "remaining_gap": "缺少覆盖2001年至cutoff期间、可对应“更多民族/国家实质挑战美国”的持续系统证据（而非仅2022年单份战略文件），以及可对应“美国真正反省政治、经济、文化”的直接材料；21世纪尚未结束，最终结果待验证。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象为作者对21世纪的结构性预测：日本是首个挑战美国的民族，21世纪必然有更多民族挑战美国，且美国届时才会真正反省政治、经济、文化。可观察口径包括：21世纪是否出现除日本外多个民族/国家在政治、经济、军事或科技上挑战美国；美国官方或社会是否出现对自身政治、经济、文化的反省。反证包括：21世纪没有更多民族挑战美国，或美国在21世纪前已持续反省，或“更多民族挑战”仅停留在一般竞争而无实质挑战。",
+  "elapsed_seconds": 52.29,
+  "completed_at": "2026-11-09T10:42:36.679749+00:00"
+}

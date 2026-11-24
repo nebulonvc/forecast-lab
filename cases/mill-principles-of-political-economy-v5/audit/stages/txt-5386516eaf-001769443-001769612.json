@@ -1,0 +1,72 @@
+{
+  "id": "txt-5386516eaf-001769443-001769612",
+  "plan": {
+    "queries": [],
+    "note": "检索记录见 audit/search-log.jsonl。没有把 executed 写成 true。"
+  },
+  "select": {
+    "urls": [
+      "https://ica.coop/en/newsroom/news/icas-story-journey-back-time"
+    ],
+    "reason": "只入选摘录已在存档、且日期不晚于 cutoff 的来源。"
+  },
+  "assess": {
+    "id": "txt-5386516eaf-001769443-001769612",
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "合作原则与合作实践持续增长。",
+    "reason": "国际合作社联盟页写“现在”约有 12 亿合作社成员，但页面没有发布日期，这句话也没有可放在 2026-11-15 之前的观察终点。不能把未标日期的“现在”当成截止日前已经成立。",
+    "limitation": "1895年8月19日第一次大会在同一页有日期，只能证明起点，不能单独证明此后持续增长到截止日。",
+    "evidence_ids": [
+      "ev-ica-cooperatives"
+    ],
+    "observation_end": null,
+    "condition_state": "unconditional",
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-ica-cooperatives",
+        "quote": "1.2 billion cooperative members on the planet",
+        "relation": "boundary",
+        "limitation": "无发布日，不能把 nowadays 放在 cutoff 之前。",
+        "observation_end": null,
+        "publication_date": null
+      }
+    ],
+    "remaining_gap": "缺一份发布日不晚于 2026-11-15、并写明观察年份的合作社成员或协会数量序列。",
+    "method": "撤回原正确。未标日期的现时数字不计入截止日前的结果。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001769443-001769612",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-ica-cooperatives"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-ica-cooperatives"
+      ],
+      "blocks_verdict": false
+    }
+  ]
+}

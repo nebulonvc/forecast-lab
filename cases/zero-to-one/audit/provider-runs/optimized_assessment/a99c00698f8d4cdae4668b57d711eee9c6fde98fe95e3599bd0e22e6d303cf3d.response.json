@@ -1,0 +1,28 @@
+{
+  "id": "edc3ab27-ea15-48ef-89eb-29186489942d",
+  "object": "chat.completion",
+  "created": 1794201592,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000071458-000071479\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性判断：若公司拥有一条有效销售渠道则能成功；原文未给出可操作的成功指标、期限或具体公司样本，无法在观察窗口内系统检验。\",\"reason\":\"该句是“如果……就能……”的条件性断言，触发条件（拥有有效销售渠道）与结果（成功）均未在原文中操作化，也无对应证据。\",\"limitation\":\"条件未确定且成功定义模糊，不能以个别公司案例反推；无verified证据可用。\",\"evidence_ids\":[],\"method\":\"条件推理\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000071479-000071510\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性判断：若尝试多种销售渠道却无一有效则公司关门；原文未界定“有效”“关门”的指标与期限。\",\"reason\":\"该句为条件性负面预测，触发条件与结果均缺乏可操作化标准，且无证据显示条件已发生。\",\"limitation\":\"条件未确定、结果定义模糊，无法评分；无verified证据可用。\",\"evidence_ids\":[],\"method\":\"条件推理\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000071643-000071673\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性判断：除非有精细招聘计划和深层次推销，否则人们争相加入、投资者纷纷投钱不会发生；原文未给出可检验的指标或期限。\",\"reason\":\"该句以“除非……不然不会……”给出条件性判断，条件与结果均未操作化，也无证据显示条件状态。\",\"limitation\":\"条件未确定、结果（争相加入/投钱）难以量化，无法评分；无verified证据可用。\",\"evidence_ids\":[],\"method\":\"条件推理\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000072164-000072188\",\"inclusion\":\"forecast\",\"verdict\":\"部分符合\",\"basis\":\"observed_window\",\"scope\":\"观察窗口为出版年2014年至cutoff 2026-11-09；指标为计算能力（如芯片晶体管密度/算力）是否持续提升，条件为摩尔定律是否继续适用。\",\"reason\":\"趋势符合，最终结果待验证：2014年以来计算能力持续增强，摩尔定律虽放缓但相关技术仍在推进，方向与预测一致。\",\"limitation\":\"“更加强大”未量化，摩尔定律是否“继续适用”存在争议；无verified证据ID，仅作方向性观察。\",\"evidence_ids\":[],\"method\":\"条件推理\",\"method_basis\":\"explicit\",\"observation_end\":\"2026-11-09\",\"future_time_text\":\"今后\",\"condition_state\":\"satisfied\",\"trend_aligned\":true}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6386,
+    "completion_tokens": 711,
+    "total_tokens": 7097,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 5618
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

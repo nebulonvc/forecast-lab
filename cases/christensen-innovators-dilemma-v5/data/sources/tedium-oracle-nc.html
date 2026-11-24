@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests;">
+
+
+
+<link href="/css/styles.css?v=mwgvrlhz" rel="stylesheet">
+<style type="text/css">@font-face {font-family:'Besley';font-style:normal;font-weight:400 900;src:url(/cf-fonts/v/besley/5.2.8/latin-ext/wght/normal.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}@font-face {font-family:'Besley';font-style:normal;font-weight:400 900;src:url(/cf-fonts/v/besley/5.2.8/latin/wght/normal.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Besley';font-style:italic;font-weight:400 900;src:url(/cf-fonts/v/besley/5.2.8/latin/wght/italic.woff2);unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;font-display:swap;}@font-face {font-family:'Besley';font-style:italic;font-weight:400 900;src:url(/cf-fonts/v/besley/5.2.8/latin-ext/wght/italic.woff2);unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;font-display:swap;}</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer">
+<script src="https://cdn.jsdelivr.net/gh/Joe12387/detectIncognito@main/dist/es5/detectIncognito.min.js"></script>
+<script src="/js/loader.js"></script>
+
+
+<link rel="home" href="/" />
+<title>Oracle's Network Computer: Larry Ellison's Too-Early Idea</title>
+
+
+<meta name="description" content="Oracle CEO Larry Ellison sold the tech world on the Network Computer, a machine designed to kill the PC’s dominance. The problem? It was 15 years too early.
+    " />
+ 
+
+<meta property="fediverse:creator" content="tedium@social.tedium.co" />
+
+
+<link rel="alternate" type="application/rss+xml" title="Tedium RSS feed" href="https://feed.tedium.co/" />
+
+
+<meta property="og:title" content="Oracle&#39;s Network Computer: Larry Ellison&#39;s Too-Early Idea
+    ">
+
+<meta property="og:description" content="Oracle CEO Larry Ellison sold the tech world on the Network Computer, a machine designed to kill the PC’s dominance. The problem? It was 15 years too early.
+    ">
+
+
+
+    
+    
+    
+    
+
+
+<meta property="og:image" content="https://v1.screenshot.11ty.dev/https%3A%2F%2Ftedium.co%2Fog-images%2F2018%2F04%2F12%2Flarry-ellison-network-computer-history%2F/opengraph/?v=1794689485">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<meta property="og:url" content="https://tedium.co/2018/04/12/larry-ellison-network-computer-history/">
+<meta property="og:site_name" content="Tedium: The Dull Side of the Internet.">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@readtedium">
+<meta name="twitter:title" content="Oracle&#39;s Network Computer: Larry Ellison&#39;s Too-Early Idea
+    ">
+<meta name="twitter:description" content="Oracle CEO Larry Ellison sold the tech world on the Network Computer, a machine designed to kill the PC’s dominance. The problem? It was 15 years too early.
+    ">
+<meta name="twitter:image" content="https://v1.screenshot.11ty.dev/https%3A%2F%2Ftedium.co%2Fog-images%2F2018%2F04%2F12%2Flarry-ellison-network-computer-history%2F/opengraph/?v=1794689485">
+    <style>
+.ad-patreon {
+  --ad-accent: #b00c20;
+  --ad-bg: #dddddd;
+  --ad-text: #000000;
+  --ad-sponsor-bar: #b00c20;
+  --ad-sponsor: #ffffff;
+  background-color: var(--ad-bg);
+  color: var(--ad-text);
+}
+.ad-patreon .adcopy { color: var(--ad-text) !important; }
+.ad-patreon .adcopy p,
+.ad-patreon .adcopy span,
+.ad-patreon .adcopy div,
+.ad-patreon .adcopy li { color: var(--ad-text) !important; }
+.ad-patreon strong,
+.ad-patreon .adcopy strong { color: var(--ad-accent) !important; }
+.ad-patreon a,
+.ad-patreon .adcopy a, .ad-patreon .adcopy h3 { color: var(--ad-accent) !important; }
+.ad-patreon h5 a { color: var(--ad-sponsor) !important; }
+.ad-patreon .adcopy a.button {
+  background-color: var(--ad-accent);
+  color: var(--ad-bg) !important;
+}
+.ad-patreon a:hover,
+.ad-patreon .adcopy a:hover { opacity: 0.8; }
+</style><style>
+.ad-patreon {
+  --ad-accent: #b00c20;
+  --ad-bg: #dddddd;
+  --ad-text: #000000;
+  --ad-sponsor-bar: #b00c20;
+  --ad-sponsor: #ffffff;
+  background-color: var(--ad-bg);
+  color: var(--ad-text);
+}
+.ad-patreon .adcopy { color: var(--ad-text) !important; }
+.ad-patreon .adcopy p,
+.ad-patreon .adcopy span,
+.ad-patreon .adcopy div,
+.ad-patreon .adcopy li { color: var(--ad-text) !important; }
+.ad-patreon strong,
+.ad-patreon .adcopy strong { color: var(--ad-accent) !important; }
+.ad-patreon a,
+.ad-patreon .adcopy a, .ad-patreon .adcopy h3 { color: var(--ad-accent) !important; }
+.ad-patreon h5 a { color: var(--ad-sponsor) !important; }
+.ad-patreon .adcopy a.button {
+  background-color: var(--ad-accent);
+  color: var(--ad-bg) !important;
+}
+.ad-patreon a:hover,
+.ad-patreon .adcopy a:hover { opacity: 0.8; }
+</style>
+    
+<link rel="icon" type="image/png" href="/content/favicons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/content/favicons/favicon.svg" />
+<link rel="shortcut icon" href="/content/favicons/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/content/favicons/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Tedium" />
+<link rel="manifest" href="/content/favicons/site.webmanifest" />
+</head>
+<body>
+
+<content class="relative flex flex-col justify-between items-center bg-white sticky-container">
+    
+<siteheader>
+    <logo>
+        <h3>
+            <a href="/" aria-label="Return to Tedium homepage">
+                <img src="/content/logo_v3.svg" alt="Tedium.">
+            </a>
+        </h3>
+    </logo>
+    <navbar>
+        <a class="navbar-item" href="/what-is-tedium" aria-label="About Tedium">
+            <i class="fas fa-info-circle" aria-hidden="true"></i>&nbsp;About
+        </a> / 
+        <a class="navbar-item" href="/archive" aria-label="Browse Tedium archives">
+            <i class="fas fa-archive" aria-hidden="true"></i>&nbsp;Archives
+        </a> / 
+        <a class="navbar-item" href="/advertising" aria-label="Sponsor Tedium">
+            <i class="fas fa-book" aria-hidden="true"></i>&nbsp;Sponsor Us
+        </a>
+        
+<form action="/search/" method="get" role="search">
+    <div class="relative">
+        <label for="search-input" class="sr-only">Search Tedium</label>
+        <input 
+            id="search-input"
+            type="search" 
+            name="q" 
+            placeholder="Search..." 
+            class="py-1 pl-8 pr-4 text-sm border-b border-gray hover:border-tedium focus:border-tedium focus:outline-none bg-transparent"
+        >
+        <i class="fas fa-search absolute left-2 top-2 text-gray-400" aria-hidden="true"></i>
+    </div>
+</form>
+    </navbar>
+</siteheader>
+    <main>
+        
+<mainimage>
+    
+        
+        <img 
+            src="https://proxy.tedium.co/RiAmduNJAoVJkrx69dKRVNX9OWA=/smart/filters:quality(50):format(jpeg)/2018/04/tedium041218.gif"
+            alt="The Oracle That Spoke Too Soon"
+            class="absolute inset-0 w-full h-full object-cover"
+        >
+        
+        
+        <img 
+            src="https://proxy.tedium.co/eVNxqWU7DLM5hu3nmOYClB2u2mM=/filters:quality(80)/2018/04/tedium041218.gif"
+            alt="The Oracle That Spoke Too Soon"
+            class="animated-header absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 z-10"
+            onload="this.classList.remove('opacity-0')"
+            loading="lazy"
+            decoding="async"
+        >
+    
+</mainimage>
+
+        
+
+        <midnav class="post-navigation" aria-label="Post navigation">
+        
+            
+            <a href="/2018/04/10/nes-homebrew-scene-history/" class="previous" rel="prev">
+            <span class="nav-label">« <span class="mobiletrim tablettrim">Previously …</span>
+            </a>
+        
+
+        <label class="flex-grow signuppitch" for="subscribebox-toggle">
+            <i class="fa-regular fa-envelope"></i> <span class="mobiletrim tablettrim">Subscribe</span>
+        </label>
+
+        
+            <a href="/2017/06/29/90s-internet-books-history/" class="mx-2 flex-grow text-center" title="The Internet On Dead Trees">
+                <i class="fa-solid fa-shuffle"></i><span class="mobiletrim tablettrim"> Shuffle</span>
+            </a>
+        
+
+        <a href="https://ko-fi.com/tedium" class="mx-2 flex-grow text-center"><i class="fa-solid fa-circle-dollar-to-slot"></i> <span class="mobiletrim tablettrim">Support Us On Ko-Fi</span></a>
+
+        
+            
+            <a href="/2018/04/18/mail-fishing-theft-phenomenon/" class="next" rel="next">
+            <span class="nav-label"><span class="mobiletrim tablettrim">Nextly …</span> »</span>
+            </a>
+        
+        </midnav>
+
+        
+<innercontent>
+    
+        <innergrid >
+            
+<stickysidebar>
+    <stickysidebar-inner>
+        <div class="is-carbon-ad">
+            <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CK7IT2JN&placement=tediumco" id="_carbonads_js"></script>
+        </div>
+        <div class="post-social mobiletrim">            
+            
+            
+                
+<div class="post-social">
+    <h5 class="uppercase text-center font-bold italic underline underline-offset-8 text-tedium py-5">Share This Post:</h5>
+    
+    <a class="block text-center px-8 py-3 my-2 text-lg font-bold text-black text-sm bg-gray hover:bg-green-700" 
+       href="https://shareopenly.org/share/?url=https%3A%2F%2Ftedium.co%2F2018%2F04%2F12%2Flarry-ellison-network-computer-history&text=https%3A%2F%2Ftedium.co%2F2018%2F04%2F12%2Flarry-ellison-network-computer-history%3A%20Oracle%20CEO%20Larry%20Ellison%20sold%20the%20tech%20world%20on%20the%20Network%20Computer%2C%20a%20machine%20designed%20to%20kill%20the%20PC%E2%80%99s%20dominance.%20The%20problem%3F%20It%20was%2015%20years%20too%20early." 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Share on ShareOpenly">
+        <img src="https://static.tedium.co/uploads/share-openly.svg" class="inline-block -mt-2" alt=""> 
+        <span class="mobiletrim">&nbsp;ShareOpenly</span>
+    </a>
+
+    <a class="block text-center px-8 py-3 my-2 text-lg font-bold text-white text-sm bg-mastodon hover:bg-green-700" 
+       href="https://toot.kytta.dev/?text=The%20Oracle%20That%20Spoke%20Too%20Soon%3A%20Oracle%20CEO%20Larry%20Ellison%20sold%20the%20tech%20world%20on%20the%20Network%20Computer%2C%20a%20machine%20designed%20to%20kill%20the%20PC%E2%80%99s%20dominance.%20The%20problem%3F%20It%20was%2015%20years%20too%20early.%0A%0Ahttps%3A%2F%2Ftedium.co%2F2018%2F04%2F12%2Flarry-ellison-network-computer-history%0A%0A%28via%20%40tedium%40social%2Etedium%2Eco%29" 
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Share on Mastodon">
+        <i class="fab fa-mastodon" aria-hidden="true"></i>
+        <span>Share Well</span>
+    </a>
+
+    <a class="block text-center px-8 py-3 my-2 text-lg font-bold text-white text-sm bg-bluesky hover:bg-green-700" 
+       href="https://bsky.app/intent/compose?text=The%20Oracle%20That%20Spoke%20Too%20Soon%3A%20Oracle%20CEO%20Larry%20Ellison%20sold%20the%20tech%20world%20on%20the%20Network%20Computer%2C%20a%20machine%20designed%20to%20kill%20the%20PC%E2%80%99s%20dominance.%20The%20problem%3F%20It%20was%2015%20years%20too%20early.%20https%3A%2F%2Ftedium.co%2F2018%2F04%2F12%2Flarry-ellison-network-computer-history" 
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Share on Bluesky">
+        <i class="fab fa-bluesky" aria-hidden="true"></i>
+        <span>Share Amazingly</span>
+    </a>
+
+    <a class="block text-center px-8 py-3 my-2 text-lg font-bold text-white text-sm bg-twitter hover:bg-green-700" 
+       href="https://twitter.com/intent/tweet?url=https%3A%2F%2Ftedium.co%2F2018%2F04%2F12%2Flarry-ellison-network-computer-history&via=readtedium&text=The%20Oracle%20That%20Spoke%20Too%20Soon" 
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Share on Twitter">
+        <i class="fab fa-twitter" aria-hidden="true"></i>
+        <span>Waste Pixels</span>
+    </a>
+</div>
+            
+        </div>
+    </stickysidebar-inner>
+</stickysidebar>
+
+            <innerbody>
+            <article class="post" data-pagefind-body>
+                <header>
+                    <h1 data-pagefind-meta="title">The Oracle That Spoke Too Soon</h1>
+                    
+                        <h2 data-pagefind-meta="description">Oracle CEO Larry Ellison sold the tech world on the Network Computer, a machine designed to kill the PC’s dominance. The problem? It was 15 years too early.</h2>
+                    
+                    <headermeta>
+                        By <span data-pagefind-meta="author">Ernie Smith</span> • 
+                        <span data-pagefind-meta="date">April 12, 2018</span>
+                    </headermeta>
+                    <!-- Image metadata -->
+                    
+                        <div data-pagefind-meta="image" style="display: none;">https://static.tedium.co/2018/04/tedium041218.gif</div>
+                    
+                    
+                        <tags class="flex flex-wrap gap-2 mt-4 md:inline-flex items-center">
+                            
+                                
+                                    <a href="/tag/sun-microsystems/" 
+                                    class="inline-block bg-gray-light hover:bg-tediumdark hover:text-white text-gray-darkish italic text-center font-semibold text-sm px-2 py-1 rounded transition-colors duration-200 no-underline">
+                                        #sun microsystems
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/tag/java/" 
+                                    class="inline-block bg-gray-light hover:bg-tediumdark hover:text-white text-gray-darkish italic text-center font-semibold text-sm px-2 py-1 rounded transition-colors duration-200 no-underline">
+                                        #java
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/tag/computer-history/" 
+                                    class="inline-block bg-gray-light hover:bg-tediumdark hover:text-white text-gray-darkish italic text-center font-semibold text-sm px-2 py-1 rounded transition-colors duration-200 no-underline">
+                                        #computer history
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/tag/computers/" 
+                                    class="inline-block bg-gray-light hover:bg-tediumdark hover:text-white text-gray-darkish italic text-center font-semibold text-sm px-2 py-1 rounded transition-colors duration-200 no-underline">
+                                        #computers
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/tag/internet-history/" 
+                                    class="inline-block bg-gray-light hover:bg-tediumdark hover:text-white text-gray-darkish italic text-center font-semibold text-sm px-2 py-1 rounded transition-colors duration-200 no-underline">
+                                        #internet history
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/tag/oracle/" 
+                                    class="inline-block bg-gray-light hover:bg-tediumdark hover:text-white text-gray-darkish italic text-center font-semibold text-sm px-2 py-1 rounded transition-colors duration-200 no-underline">
+                                        #oracle
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/tag/network-computer/" 
+                                    class="inline-block bg-gray-light hover:bg-tediumdark hover:text-white text-gray-darkish italic text-center font-semibold text-sm px-2 py-1 rounded transition-colors duration-200 no-underline">
+                                        #network computer
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/tag/larry-ellison/" 
+                                    class="inline-block bg-gray-light hover:bg-tediumdark hover:text-white text-gray-darkish italic text-center font-semibold text-sm px-2 py-1 rounded transition-colors duration-200 no-underline">
+                                        #larry ellison
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/tag/acorn-computer-company/" 
+                                    class="inline-block bg-gray-light hover:bg-tediumdark hover:text-white text-gray-darkish italic text-center font-semibold text-sm px-2 py-1 rounded transition-colors duration-200 no-underline">
+                                        #acorn computer company
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/tag/arm-holdings/" 
+                                    class="inline-block bg-gray-light hover:bg-tediumdark hover:text-white text-gray-darkish italic text-center font-semibold text-sm px-2 py-1 rounded transition-colors duration-200 no-underline">
+                                        #arm holdings
+                                    </a>
+                                
+                            
+                        </tags>
+                    
+                </header>
+                <content>
+                    
+                        <div class="whitebox"><div class="big"><strong>Today in Tedium:</strong> Oracle has a few reasons to hate Google. The search company built a significant chunk of its empire, the Android operating system, based on Java, a programming language created by one of Oracle’s largest acquisitions, Sun Microsystems. As a result, the two companies have been going at it in court for years now. Google won a few rounds, but Oracle, more importantly, <a href="https://www.bloomberg.com/news/articles/2018-03-27/oracle-wins-revival-of-billion-dollar-case-against-google">won the latest</a>, likely ensuring a Supreme Court showdown. But I wonder if this battle is a proxy war of sorts—reflecting the fact that Google pulled off the big dream that Oracle once wanted for itself. Today’s Tedium highlights the tale of the Network Computer, the big idea that fell out of Larry Ellison’s fingers. <em>— Ernie @ Tedium</em></div><p><em>Today’s GIF <a href="https://www.youtube.com/watch?v=_d6b8uMRex0">is Ellison from “Triumph of the Nerds,”</a> talking about how much he hates Microsoft.</em></p></div><div class="adlayout ad-patreon"><div class="md:grid md:grid-cols-3 lg:grid-cols-4 items-start gap-8"><div class="md:col-span-1 max-w-[300px]"><a href="https://ko-fi.com/tedium" rel="nofollow sponsored" class="block hover:no-underline"><img src="https://static.tedium.co/uploads/kofi_logo.png" alt="… Nobody?" class="w-full h-auto max-w-[300px] m-0" loading="lazy" /></a></div><div class="md:col-span-2 lg:col-span-3"><h5 class="text-xl font-bold mb-2" style="background-color: var(--ad-sponsor-bar)"><a href="https://ko-fi.com/tedium" rel="nofollow sponsored" class="block hover:no-underline"> Sponsored By … Nobody? </a></h5><div class="adcopy !max-w-none"><p><strong>If you find weird or unusual topics</strong> like this super-fascinating, the best way to tell us is to <strong><a href="https://ko-fi.com/tedium">give us a nod on Ko-Fi</a></strong>. It helps ensure that we can keep this machine moving, support outside writers, and bring on the tools to support our writing. (Also it’s heartening when someone chips in.)</p><p>We accept advertising, too! <a href="https://tedium.co/advertising/">Check out this page to learn more</a>.</p></div></div></div></div><div class="redbox"><p><blockquote class="quote"></p><h3>“The NC is clearly part of our strategy to dethrone Microsoft.”</h3><p></blockquote></p><p><strong>— Larry Ellison,</strong> speaking about the Network Computer in <a href="https://www.independent.co.uk/news/media/network-meet-larry-ellison-the-software-supremo-with-an-ego-to-match-his-income-1269887.html">a 1997 interview with <em>The Independent</em></a>. Ellison was a prominent, wealthy man at the time, a guy who held a lot of power in the software industry due to Oracle’s focus on relational databases—products that make the business world go round, but don’t necessarily make one a household name. Ellison also harbored what the article called a “monomania” about Bill Gates, who always seemed to get more attention for Microsoft than Ellison did for Oracle. The Network Computer, essentially a ‘90s take on the dumb terminal, was directly inspired by his battle with Microsoft.</p></div><div class="whitebox"><p><img src="https://static.tedium.co/2018/04/0412_ellison.jpg" alt="Larry Ellison"></p><p><em>(<a href="https://www.flickr.com/photos/oracle_images/5015810231/">Oracle PR/Flickr</a>)</em></p><h3>The Network Computer’s biggest success may be in making Larry Ellison a household name</h3><p>When it comes down to it, Larry Ellison’s big idea was one that failed to change the world until someone else tried the idea.</p><p>It was a far-reaching vision that reflected the thinking of someone who knew how effective databases had gotten and how sophisticated computer networks really were, but the timing of his concept was a bit off. You could argue that there were more successful historic attempts to do what Oracle was doing elsewhere; France’s <a href="https://motherboard.vice.com/en_us/article/gvmxq9/this-tiny-terminal-was-frances-version-of-aol">Minitel</a> comes to mind, as does the <a href="https://motherboard.vice.com/en_us/article/pa3vvg/the-greatest-computer-network-youve-never-heard-of">University of Illinois’ PLATO system</a>.</p><p>But as a promotion strategy for Larry Ellison and Oracle, it was downright brilliant. This is not a knock on Ellison so much as simply stating fact—he simply did not have much of a profile outside of the world of technology before he started making the case for the Network Computer.</p><p>That idea came to prominence in direct response to the success of Microsoft, a company whose fortunes had always shone brighter in comparison to Oracle’s.</p><p>There was a clear reason for this, of course: Oracle worked higher up in the corporate food chain. Relational databases weren’t exactly something consumers directly dealt with on a regular basis, at least with their knowledge, and Oracle couldn’t exactly pull an “Intel Inside” with their product. Oracle was a vendor; by 1995, Microsoft was effectively a consumer business. No vendor would put a Weezer video on their installation CD. Microsoft Bob has a better ring to it than Oracle Bob.</p><p>The seeds of the Network Computer started in a somewhat altruistic place. Per the 2003 book <a href="https://amzn.to/2INQZoC"><em>Everyone Else Must Fail: The Unvarnished Truth About Oracle and Larry Ellison</em></a>, an unauthorized biography about the Oracle CEO by author Karen Southwick, Ellison had the idea in 1994 while meeting with President Bill Clinton and a number of Silicon Valley CEOs, including the heads of Sun Microsystems and Apple.</p><p><a href="https://books.google.com/books?id=UA343fijDE8C&amp;pg=PT114">He made the case</a> that Clinton should push the computer industry to make a machine for less than $500, much as John Kennedy pushed America to go to the moon. That idea didn’t win over a lot of fans, but the cheap computer idea gained momentum within Oracle after the company wed the idea to the internet, specifically the then-new World Wide Web.</p><p>And it gained momentum outside of Oracle thanks to a well-timed media appearance on the part of Ellison. In September 1995, at the International Data Corp.’s European IT Forum in Paris, Ellison made the case for the Network Computer concept—and against the PC model, which he derided as not being a good choice for most consumers.</p><p>“A PC is a ridiculous device; the idea is so complicated and expensive,” Ellison was quoted as saying <a href="https://books.google.com/books?id=L_AXQqZphvYC&amp;pg=PP74">in a <em>ComputerWorld</em> article</a>. “What the world really wants is to plug into a wall to get electronic power and plug in to get data.”</p><p>This was the introduction of a new vision—and Bill Gates was there to defend the old one. “You’ll still need a way of storing the applications that you download from the network and your personal data,” Gates said at the time.</p><p>Microsoft, which had just released Windows 95, had appeared to vanquish most of its enemies by this point. Apple, still without Steve Jobs, was in dire straits; IBM’s PC business was a shrinking violet in the era of clones. In Paris that week, a new challenger appeared.</p><p>Ellison’s comments pinpointed a problem with computers—they cost too much for the average person—and he had a solution. He wanted to create machines that leverage the computing resources accessible through the network, rather than requiring the user to pay up front for those resources.</p><p>By treating the computer as an appliance rather than a beefy machine in its own right, Ellison introduced a different image of the computer industry—one that gave large players on the sidelines in the Windows era, like Oracle and Sun, a way to stand out.</p><p>It was the perfect way for a guy like Larry Ellison to boost his company’s name recognition.</p></div><div class="redbox"><div class="number"><h3>46M</h3></div><p><strong>The number of Network Computers</strong> that Oracle Senior Director Jim Lynch <a href="https://www.cnet.com/news/netscape-oracle-band-together/">suggested in 1996 that there could be on the market by the year 2000</a>, according to an estimate by CNET. (And that was the low end of his estimate—he suggested it could go as high as 100 million.) There was a lot of momentum behind the concept for a time, with Ellison’s pitch winning over firms like IBM and Netscape—firms that admittedly felt a little isolated by Microsoft’s dominance.</p></div><div class="whitebox"><p><img src="https://static.tedium.co/2018/04/0412_javastation.jpg" alt="Sun JavaStation"></p><p><em>The Sun JavaStation, an early Network Computer built entirely around Java. (<a href="https://www.flickr.com/photos/springfeld/24194330107/">Udo Springfield/Flickr</a>)</em></p><h3>The Network Computer, in many ways, was warmed-over interactive television technology</h3><p>In the early ’90s, a number of companies, Oracle included, tried to turn the interactive TV into a thing. It wasn’t a thing until about 1998, when a Hong Kong company <a href="https://tedium.co/2017/01/05/first-streaming-service-itv-hong-kong/">launched a Netflix-like streaming service</a>.</p><p>The public wasn’t ready for interactive TV—and that meant a lot of tech companies had innovations lying around without a context. Network Computers gave them a context.</p><p>In the case of Oracle, the buzz around interactive TV led to the creation of the Oracle Media Server, which was intended to deliver movies, music, and other features to consumers. The parts were later used to support the NC concept.</p><p>This would become a common theme of the Network Computer, which Oracle designed the concept as something that it would not build itself but that hardware-makers would build on its behalf, much like other technologies of its time, <a href="https://www.giantbomb.com/3do/3045-26/">such as the 3DO</a>. The approach was a little loose for a standard, as it didn’t require a specific hardware platform to be used, but simply required that the platform be able to run Java applets on a diskless system at a resolution of 640x480.</p><p>This approach attracted other firms with languishing interactive television technologies. The British computing firm Acorn, for example, connected with Ellison based on an interview he did with the BBC2 show <em>The Money Programme</em>.</p><p>Acorn had a lot of technology lying around for a video-on-demand revolution that did not yet exist, and the company realized its set-top box technology was very similar to Ellison’s vision.</p><p>The firm, best known today for fostering the multinational semiconductor giant ARM Holdings, would rush to create a reference design to Oracle’s specifications in just a few months. Despite all that effort, <em>Wired UK</em> writer Tom Loosemore ultimately expressed skepticism as to whether all of Acorn’s quick work would amount to much for the firm, which lacked an international profile and seemed not to be all that passionate about the World Wide Web. (Despite Netscape being a partner in Network Computers, Acorn went with another vendor with a crappier browser, and a developer gave Loosemore a look when he dared suggest that they should have used Netscape instead.)</p><p>“The great tragedy of all this is that having set the standards and built the first serious machine, Acorn will never be a serious competitor in the market for network computers,” <a href="http://yoz.com/wired/2.09/features/acorn.html">Loosemore wrote of Acorn’s role in the Network Computer’s creation</a>. “As it tries gamely to flog a turkey to people who don’t yet need one, its competitors will clean up in more lucrative corporate markets where bandwidth is already available, but to which Acorn’s marketing machine has little or no access.”</p><p><img src="https://static.tedium.co/2018/04/0412_acorn.jpg" alt="NetStation"></p><p><em>The NetStation (via <a href="http://chrisacorns.computinghistory.org.uk/AfterAcorn/NetProducts.html">Chris’ Acorns</a>)</em></p><p>A startup firm called NetProducts came to life in 1996 to essentially market Acorn’s design to UK consumers. The result, <a href="http://chrisacorns.computinghistory.org.uk/AfterAcorn/NetProducts.html">called the NetStation</a>, was effectively a <a href="https://www.campaignlive.co.uk/article/cool-toy-netstation-tv-web-browser/123716">different take</a> on the WebTV, which had <a href="https://tedium.co/2016/09/13/webtv-history-20th-anniversary/">launched in the U.S. around the same time</a>. (That firm, which would come to be owned by Microsoft, would see far more success than Ellison’s Network Computer in the home market. That must have drove Ellison crazy.)</p><p>Even some of the office-driven approaches to the network computer had roots in failed interactive television bids. Sun Microsystems, which <a href="https://tedium.co/2017/07/27/yahoo-games-failure-classicgames/">built its Java programming language</a> in an early bid to get on interactive TVs, eventually turned Java into a key programming language for the Web. Oracle built much of the NC spec around computers that would run Java applications, and Sun itself built a Network Computer that was Java through and through.</p><p>Even the operating system on the Sun JavaStation was written in Java, making the machine a great piece of trivia that will never come up during a game of HQ.</p><style>lite-youtube {
+    background-color: #000;
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center center;
+    background-size: cover;
+    cursor: pointer;
+    max-width: 720px;
+}
+
+/* gradient */
+lite-youtube::before {
+    content: attr(data-title);
+    display: block;
+    position: absolute;
+    top: 0;
+    /* Pixel-perfect port of YT's gradient PNG, using https://github.com/bluesmoon/pngtocss plus optimizations */
+    background-image: linear-gradient(180deg, rgb(0 0 0 / 67%) 0%, rgb(0 0 0 / 54%) 14%, rgb(0 0 0 / 15%) 54%, rgb(0 0 0 / 5%) 72%, rgb(0 0 0 / 0%) 94%);
+    height: 99px;
+    width: 100%;
+    font-family: "YouTube Noto",Roboto,Arial,Helvetica,sans-serif;
+    color: hsl(0deg 0% 93.33%);
+    text-shadow: 0 0 2px rgba(0,0,0,.5);
+    font-size: 18px;
+    padding: 25px 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+}
+
+lite-youtube:hover::before {
+    color: white;
+}
+
+/* responsive iframe with a 16:9 aspect ratio
+    thanks https://css-tricks.com/responsive-iframes/
+*/
+lite-youtube::after {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (16 / 9));
+}
+lite-youtube > iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+/* play button */
+lite-youtube > .lyt-playbtn {
+    display: block;
+    /* Make the button element cover the whole area for a large hover/click target… */
+    width: 100%;
+    height: 100%;
+    /* …but visually it's still the same size */
+    background: no-repeat center/68px 48px;
+    /* YT's actual play button svg */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 48"><path d="M66.52 7.74c-.78-2.93-2.49-5.41-5.42-6.19C55.79.13 34 0 34 0S12.21.13 6.9 1.55c-2.93.78-4.63 3.26-5.42 6.19C.06 13.05 0 24 0 24s.06 10.95 1.48 16.26c.78 2.93 2.49 5.41 5.42 6.19C12.21 47.87 34 48 34 48s21.79-.13 27.1-1.55c2.93-.78 4.64-3.26 5.42-6.19C67.94 34.95 68 24 68 24s-.06-10.95-1.48-16.26z" fill="red"/><path d="M45 24 27 14v20" fill="white"/></svg>');
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    filter: grayscale(100%);
+    transition: filter .1s cubic-bezier(0, 0, 0.2, 1);
+    border: 0;
+}
+
+lite-youtube:hover > .lyt-playbtn,
+lite-youtube .lyt-playbtn:focus {
+    filter: none;
+}
+
+/* Post-click styles */
+lite-youtube.lyt-activated {
+    cursor: unset;
+}
+lite-youtube.lyt-activated::before,
+lite-youtube.lyt-activated > .lyt-playbtn {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.lyt-visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+</style>
+<script>/**
+ * A lightweight youtube embed. Still should feel the same to the user, just MUCH faster to initialize and paint.
+ *
+ * Thx to these as the inspiration
+ *   https://storage.googleapis.com/amp-vs-non-amp/youtube-lazy.html
+ *   https://autoplay-youtube-player.glitch.me/
+ *
+ * Once built it, I also found these:
+ *   https://github.com/ampproject/amphtml/blob/master/extensions/amp-youtube (👍👍)
+ *   https://github.com/Daugilas/lazyYT
+ *   https://github.com/vb/lazyframe
+ */
+class LiteYTEmbed extends HTMLElement {
+    connectedCallback() {
+        this.videoId = this.getAttribute('videoid');
+
+        let playBtnEl = this.querySelector('.lyt-playbtn,.lty-playbtn');
+        // A label for the button takes priority over a [playlabel] attribute on the custom-element
+        this.playLabel = (playBtnEl && playBtnEl.textContent.trim()) || this.getAttribute('playlabel') || 'Play';
+
+        this.dataset.title = this.getAttribute('title') || "";
+
+        /**
+         * Lo, the youtube poster image!  (aka the thumbnail, image placeholder, etc)
+         *
+         * See https://github.com/paulirish/lite-youtube-embed/blob/master/youtube-thumbnail-urls.md
+         */
+        if (!this.style.backgroundImage) {
+          this.style.backgroundImage = `url("https://i.ytimg.com/vi/${this.videoId}/hqdefault.jpg")`;
+          this.upgradePosterImage();
+        }
+
+        // Set up play button, and its visually hidden label
+        if (!playBtnEl) {
+            playBtnEl = document.createElement('button');
+            playBtnEl.type = 'button';
+            // Include the mispelled 'lty-' in case it's still being used. https://github.com/paulirish/lite-youtube-embed/issues/65
+            playBtnEl.classList.add('lyt-playbtn', 'lty-playbtn');
+            this.append(playBtnEl);
+        }
+        if (!playBtnEl.textContent) {
+            const playBtnLabelEl = document.createElement('span');
+            playBtnLabelEl.className = 'lyt-visually-hidden';
+            playBtnLabelEl.textContent = this.playLabel;
+            playBtnEl.append(playBtnLabelEl);
+        }
+
+        this.addNoscriptIframe();
+
+        // for the PE pattern, change anchor's semantics to button
+        if(playBtnEl.nodeName === 'A'){
+            playBtnEl.removeAttribute('href');
+            playBtnEl.setAttribute('tabindex', '0');
+            playBtnEl.setAttribute('role', 'button');
+            // fake button needs keyboard help
+            playBtnEl.addEventListener('keydown', e => {
+                if( e.key === 'Enter' || e.key === ' ' ){
+                    e.preventDefault();
+                    this.activate();
+                }
+            });
+        }
+
+        // On hover (or tap), warm up the TCP connections we're (likely) about to use.
+        this.addEventListener('pointerover', LiteYTEmbed.warmConnections, {once: true});
+        this.addEventListener('focusin', LiteYTEmbed.warmConnections, {once: true});
+
+        // Once the user clicks, add the real iframe and drop our play button
+        // TODO: In the future we could be like amp-youtube and silently swap in the iframe during idle time
+        //   We'd want to only do this for in-viewport or near-viewport ones: https://github.com/ampproject/amphtml/pull/5003
+        this.addEventListener('click', this.activate);
+
+        // Chrome & Edge desktop have no problem with the basic YouTube Embed with ?autoplay=1
+        // However Safari desktop and most/all mobile browsers do not successfully track the user gesture of clicking through the creation/loading of the iframe,
+        // so they don't autoplay automatically. Instead we must load an additional 2 sequential JS files (1KB + 165KB) (un-br) for the YT Player API
+        // TODO: Try loading the the YT API in parallel with our iframe and then attaching/playing it. #82
+        this.needsYTApi = this.hasAttribute("js-api") || navigator.vendor.includes('Apple') || navigator.userAgent.includes('Mobi');
+    }
+
+    /**
+     * Add a <link rel={preload | preconnect} ...> to the head
+     */
+    static addPrefetch(kind, url, as) {
+        const linkEl = document.createElement('link');
+        linkEl.rel = kind;
+        linkEl.href = url;
+        if (as) {
+            linkEl.as = as;
+        }
+        document.head.append(linkEl);
+    }
+
+    /**
+     * Begin pre-connecting to warm up the iframe load
+     * Since the embed's network requests load within its iframe,
+     *   preload/prefetch'ing them outside the iframe will only cause double-downloads.
+     * So, the best we can do is warm up a few connections to origins that are in the critical path.
+     *
+     * Maybe `<link rel=preload as=document>` would work, but it's unsupported: http://crbug.com/593267
+     * But TBH, I don't think it'll happen soon with Site Isolation and split caches adding serious complexity.
+     */
+    static warmConnections() {
+        if (LiteYTEmbed.preconnected) return;
+
+        // The iframe document and most of its subresources come right off youtube.com
+        LiteYTEmbed.addPrefetch('preconnect', 'https://www.youtube-nocookie.com');
+        // The botguard script is fetched off from google.com
+        LiteYTEmbed.addPrefetch('preconnect', 'https://www.google.com');
+
+        // Not certain if these ad related domains are in the critical path. Could verify with domain-specific throttling.
+        LiteYTEmbed.addPrefetch('preconnect', 'https://googleads.g.doubleclick.net');
+        LiteYTEmbed.addPrefetch('preconnect', 'https://static.doubleclick.net');
+
+        LiteYTEmbed.preconnected = true;
+    }
+
+    fetchYTPlayerApi() {
+        if (window.YT || (window.YT && window.YT.Player)) return;
+
+        this.ytApiPromise = new Promise((res, rej) => {
+            var el = document.createElement('script');
+            el.src = 'https://www.youtube.com/iframe_api';
+            el.async = true;
+            el.onload = _ => {
+                YT.ready(res);
+            };
+            el.onerror = rej;
+            this.append(el);
+        });
+    }
+
+    /** Return the YT Player API instance. (Public L-YT-E API) */
+    async getYTPlayer() {
+        if(!this.playerPromise) {
+            await this.activate();
+        }
+
+        return this.playerPromise;
+    }
+
+    async addYTPlayerIframe() {
+        this.fetchYTPlayerApi();
+        await this.ytApiPromise;
+
+        const videoPlaceholderEl = document.createElement('div')
+        this.append(videoPlaceholderEl);
+
+        const paramsObj = Object.fromEntries(this.getParams().entries());
+
+        this.playerPromise = new Promise(resolve => {
+            let player = new YT.Player(videoPlaceholderEl, {
+                width: '100%',
+                videoId: this.videoId,
+                playerVars: paramsObj,
+                events: {
+                    'onReady': event => {
+                        event.target.playVideo();
+                        resolve(player);
+                    }
+                }
+            });
+        });
+    }
+
+    // Add the iframe within <noscript> for indexability discoverability. See https://github.com/paulirish/lite-youtube-embed/issues/105
+    addNoscriptIframe() {
+        const iframeEl = this.createBasicIframe();
+        const noscriptEl = document.createElement('noscript');
+        // Appending into noscript isn't equivalant for mysterious reasons: https://html.spec.whatwg.org/multipage/scripting.html#the-noscript-element
+        noscriptEl.innerHTML = iframeEl.outerHTML;
+        this.append(noscriptEl);
+    }
+
+    getParams() {
+        const params = new URLSearchParams(this.getAttribute('params') || []);
+        params.append('autoplay', '1');
+        params.append('playsinline', '1');
+        return params;
+    }
+
+    async activate(){
+        if (this.classList.contains('lyt-activated')) return;
+        this.classList.add('lyt-activated');
+
+        if (this.needsYTApi) {
+            return this.addYTPlayerIframe(this.getParams());
+        }
+
+        const iframeEl = this.createBasicIframe();
+        this.append(iframeEl);
+
+        // Set focus for a11y
+        iframeEl.focus();
+    }
+
+    createBasicIframe(){
+        const iframeEl = document.createElement('iframe');
+        iframeEl.width = 560;
+        iframeEl.height = 315;
+        // No encoding necessary as [title] is safe. https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html#:~:text=Safe%20HTML%20Attributes%20include
+        iframeEl.title = this.playLabel;
+        iframeEl.allow = 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture';
+        iframeEl.allowFullscreen = true;
+        // Required by Youtube to fix Error 153
+        iframeEl.referrerPolicy = 'strict-origin-when-cross-origin';
+        // AFAIK, the encoding here isn't necessary for XSS, but we'll do it only because this is a URL
+        // https://stackoverflow.com/q/64959723/89484
+        iframeEl.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(this.videoId)}?${this.getParams().toString()}`;
+        return iframeEl;
+    }
+
+    /**
+     * In the spirit of the `lowsrc` attribute and progressive JPEGs, we'll upgrade the reliable
+     * poster image to a higher resolution one, if it's available.
+     * Interestingly this sddefault webp is often smaller in filesize, but we will still attempt it second
+     * because getting _an_ image in front of the user if our first priority.
+     *
+     * See https://github.com/paulirish/lite-youtube-embed/blob/master/youtube-thumbnail-urls.md for more details
+     */
+    upgradePosterImage() {
+         // Defer to reduce network contention.
+        setTimeout(() => {
+            const webpUrl = `https://i.ytimg.com/vi_webp/${this.videoId}/sddefault.webp`;
+            const img = new Image();
+            img.fetchPriority = 'low'; // low priority to reduce network contention
+            img.referrerpolicy = 'origin'; // Not 100% sure it's needed, but https://github.com/ampproject/amphtml/pull/3940
+            img.src = webpUrl;
+            img.onload = e => {
+                // A pretty ugly hack since onerror won't fire on YouTube image 404. This is (probably) due to
+                // Youtube's style of returning data even with a 404 status. That data is a 120x90 placeholder image.
+                // … per "annoying yt 404 behavior" in the .md
+                const noAvailablePoster = e.target.naturalHeight == 90 && e.target.naturalWidth == 120;
+                if (noAvailablePoster) return;
+
+                this.style.backgroundImage = `url("${webpUrl}")`;
+            }
+        }, 100);
+    }
+}
+// Register custom element
+customElements.define('lite-youtube', LiteYTEmbed);
+</script>
+<style>.eleventy-plugin-youtube-embed lite-youtube {max-width:100%}</style>
+<div id="yxV_pR1ZsXM" class="eleventy-plugin-youtube-embed"><lite-youtube videoid="yxV_pR1ZsXM" style="background-image: url('https://i.ytimg.com/vi/yxV_pR1ZsXM/hqdefault.jpg');"><div class="lty-playbtn"></div></lite-youtube></div><p>YouTuber Cameron Gray <a href="https://www.youtube.com/watch?v=yxV_pR1ZsXM">recently did an analysis of the system</a>, and what he found in his archaeological dig was a bizarre little box that was slow as a dog but included a built-in office suite and Sun’s HotJava web browser. “It must be absolute hell trying to use these in a production environment,” Gray said. (It should be said that when it was released, <a href="https://www.cnet.com/news/sun-javastation-ships-quietly/">it did not cost $500</a>.)</p><p><img src="https://static.tedium.co/2018/04/0412_pippin.jpg" alt="Apple Pippin"></p><p><em>The Apple Pippin. (<a href="https://www.flickr.com/photos/ivansosa/8590890516/">Ivan Sosa/Flickr</a>)</em></p><p>One final case-in-point on the Network Computer being warmed-over interactive TV? Apple. The company had spent much time investing in a failed console-like system <a href="http://lowendmac.com/2006/apples-pippin-and-bandais-world-missing-the-market/">called the Pippin</a>. That machine was licensed out much like the 3DO, and the guts of that system were later applied to the NC concept.</p><p>“There will be titles designed to be Network Computer compliant, and there will be web sites that are Network Computer friendly. All these companies will have machines that can do that,” Larry Tesler, then an Apple exec, <a href="https://books.google.com/books?id=eU_Xp-nUNFsC&amp;pg=PA17">explained in a 1996 keynote</a>. “The Pippin, or something derived from it, is one machine from Apple that will do that.”</p><p>Larry Ellison, a close friend of Steve Jobs and <a href="https://www.forbes.com/2002/09/20/0920ellison.html">later an Apple board member</a>, was often seen as an off-in-the-distance threat to Apple’s future—many Apple fans thought Ellison would try to buy the company to support the Network Computer concept. But as Ellison recalled in a 2016 commencement speech, <a href="https://www.cio.com/article/3077294/consumer-electronics/how-larry-ellison-plotted-to-buy-apple-and-make-steve-jobs-ceo.html">Jobs talked him out of it</a>, in favor of taking a more subtle approach to putting Jobs in charge of the company. That approach involved Apple acquiring his company NeXT, and Jobs slowly making the case that he should be the guy in charge once he got back in the building. Which, of course, was what happened.</p><p>That move did not favor Ellison’s idea, alas. When Jobs got back in charge of Apple, he ditched the Pippin and every other clone system Apple was supporting at the time, and released the iMac instead—a machine that’s said to have integrated some of the Pippin’s ideas.</p><p>The iMac, as it turned out, would look more the kind of machine that would end up in homes around the U.S. in 1998 and 1999—not the Network Computer.</p></div><div class="redbox"><p><blockquote class="quote"></p><h3>“We believe there will be a category of networked computers in many different forms, in portable versions and desktop versions. They will exist and they will be very successful, and not just from Sun and Oracle. The price points are going to be pretty low, and they’ll look more like consumer electronics.”</h3><p></blockquote></p><p><strong>— Eric Schmidt,</strong> then the chief scientist at Sun Microsystems and later Google’s CEO and Executive Chairman, discussing the value that Sun saw in the Network Computer concept <a href="https://www.nytimes.com/1995/11/27/business/doubts-about-the-fantasy-of-a-500-network-pc.html">in a 1995 <em>New York Times</em> article</a> that questioned whether the concept would actually work. Schmidt, as Google’s chairman and CEO, would oversee a company behind the <a href="https://www.google.com/chromebook/">Chromebook</a>, the closest thing we have to the Network Computer concept today.</p></div><div class="graybox"><p><strong>The short view of the Network Computer</strong>—that is, the concept that Larry Ellison came up with in 1995 while Microsoft was taking over the world—was that the idea was the wrong idea for the wrong time. By late 1999, the writing was on the wall, and the warmed-over Network Computer assets were being rechristened for … wait for it … <a href="https://www.zdnet.com/article/nci-liberated-with-50m-investment/">interactive television</a>.</p><p>The clear reason for this was that Ellison’s vision of a $500 glorified dumb terminal looked like a bad bet when <a href="https://tedium.co/2016/12/27/packard-bell-multiple-brand-history/">companies like Packard Bell</a> were doing their best to get the price of the home computer down to a reasonable level. It didn’t help, either, that the networks of 1996 and 1997 just weren’t strong enough to support Network Computers.</p><p>Ellison did try to take another stab or two at the concept outside of Oracle, <a href="https://www.computerworld.com.au/article/99621/ellison_launches_another_nc_firm/">launching a machine called the New Internet Computer, or NIC, in 2000</a>. That machine ran Linux and cost $199, rather than $500. But based on the fact you’re probably not reading this on a NIC, the idea didn’t work then, either.</p><p><a href="https://www.wired.com/2009/12/fail_oracle/">But the long view</a> was ultimately much kinder to Ellison, who it should be said <a href="https://www.forbes.com/profile/larry-ellison/">is not a man who struggles for money</a>. The Network Computer’s concepts would eventually resurface in many ways—as cloud computing, in smartphones, and at companies not owned by Larry Ellison.</p><p>Our computers tend to have a lot of storage to them, but we ultimately do a huge chunk of our work on the web. Eric Schmidt, a true believer in the concept, ultimately won big off of it at Google, messy Java lawsuit or not.</p><p>It’s not that Larry Ellison was wrong. He was just early.</p></div>
+                    
+                    
+                </content>
+            </article>
+            <author-box>
+    
+    <author-image>
+        <img 
+        src="https://proxy.tedium.co/4DURKSI2domRaY9WpcAvjrbLaZM=/150x150/smart/filters:quality(80)/uploads/ernie_crop.jpg"
+        alt="Ernie Smith"
+        width="200"
+        height="150"
+        loading="lazy"
+        >
+    </author-image>
+    
+    <author-bio>
+        <author-heading>Your time was wasted by … <a href="/author/ernie/">Ernie Smith</a></author-heading>
+        <author-description>Ernie Smith is the editor of Tedium, and an active internet snarker. Between his many internet side projects, he finds time to hang out with his wife Cat, who's funnier than he is.</author-description>
+        <author-socials>
+             
+                <a href="https://writing.exchange/@ernie" class="mastodon">
+                    <i class="fab fa-mastodon"></i>
+                </a>
+            
+             
+                <a href="https://bsky.app/profile/ernie.tedium.co" class="bluesky">
+                    <i class="fab fa-bluesky"></i>
+                </a>
+            
+             
+                <a href="https://www.threads.net/@shortformernie" class="threads">
+                    <i class="fab fa-threads"></i>
+                </a>
+            
+            
+             
+                <a href="https://erniesmith.net/" class="website">
+                    <i class="fa-solid fa-globe"></i>
+                </a>
+               
+                 
+                <a href="/cdn-cgi/l/email-protection#bedbccd0d7dbfecadbdad7cbd390ddd1" class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            
+        </author-socials>
+    </author-bio>
+</author-box>
+        </innerbody>
+    </innergrid>
+    
+</innercontent>
+
+<innercontent class="shopping-network">
+      <innergrid>
+          <div class="col-span-4 2xl:col-span-5">
+              <iframe src="https://shopping.tedium.co/embed" width="100%"  class="h-[250px] lg:h-[400px]" style="border:0;display:block;" loading="lazy"></iframe>
+          </div>
+      </innergrid>
+</innercontent>
+
+
+        <midnav class="pagination post-navigation" aria-label="Post navigation">
+        
+            
+            <a href="/2018/04/10/nes-homebrew-scene-history/" class="previous" rel="prev">
+            <span class="nav-label">« <span class="mobiletrim tablettrim">Not Just Nostalgia</span>
+            </a>
+        
+
+        <label class="flex-grow signuppitch" for="subscribebox-toggle">
+            <i class="fa-regular fa-envelope"></i> <span class="mobiletrim tablettrim">Subscribe</span>
+        </label>
+
+        
+            
+            <a href="/2018/04/18/mail-fishing-theft-phenomenon/" class="next" rel="next">
+            <span class="nav-label"><span class="mobiletrim tablettrim">Fishing For Checks</span> »</span>
+            </a>
+        
+        </midnav>
+    </main>
+</content>
+
+<!-- Modal Toggle Input -->
+<input type="checkbox" id="subscribebox-toggle" class="hidden peer">
+
+<div class="sl-captcha-overlay" id="sl-captcha-overlay"></div>
+
+<!-- Modal Backdrop & Container -->
+<div class="fixed inset-0 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-all duration-300 z-40">
+    <label for="subscribebox-toggle" class="absolute inset-0 bg-black bg-opacity-50 z-50"></label>
+    
+    <div class="flex items-center justify-center min-h-screen relative">
+        <modalbox>
+            <modalcard class="col-span-2 relative overflow-hidden bg-tediumdarken mobiletrim">
+                <modalbg class="absolute top-[-100px] left-[-100px] w-[150%] h-[150%] mix-blend-darken bg-[url('/content/mosaic_with_overlay_bw_small.jpg')] bg-cover rotate-[3deg]"></modalbg>
+            </modalcard>
+
+            <div class="col-span-2">
+                <div class="p-8 m-8 border-white border-solid border">
+                    <h4>Subscribe to Tedium</h4>
+                    <h3>Get more bizarre takes in your inbox.</h3>
+                    <p>
+                        <strong>This is a newsletter that existed before Substack.</strong> (We even turned Substack down!) Our goal is to outlive it. But we will be unable to do so unless you put your email in this box<span class="mobiletrim"> and let us invade your inbox with these messages that we send when we feel like it. It's an important obligation</span>. Are you up to the task?
+                    </p>
+                    
+                    <div class="border-t-4 border-gray pt-6">
+                        <form 
+                            data-action-encoded="aHR0cHM6Ly9lb21haWwzLmNvbS9mb3JtLzA0ODgxNjAwLWM2NWEtMTFlZi04ODUwLWY1MWY4YjljYmRmOA=="
+                            method="POST" 
+                            id="signup-form"
+                            data-sparkloop-form-ignore
+                        >
+                            <inputbox>
+                                <input 
+                                    type="email" 
+                                    name="field_0" 
+                                    placeholder="Your Freaking Email Address" 
+                                    class="tediumform" 
+                                    required
+                                    id="email-input"
+                                >
+                                <button type="submit" class="tediumbutton">Shoryuken!</button>
+                            </inputbox>
+
+                            <div aria-hidden="true" class="emailoctopus-form-row-hp hidden">
+                                <input 
+                                    type="text" 
+                                    name="hpc4b27b6e-eb38-11e9-be00-06b4694bee2a" 
+                                    tabindex="-1" 
+                                    autocomplete="nope"
+                                >
+                            </div>
+
+                            <div class="consent-row">
+                                <input 
+                                    type="checkbox" 
+                                    id="consent" 
+                                    name="consent" 
+                                    required
+                                >
+                                <label for="consent">
+                                    Tedium can email me<span class="mobiletrim"> random bits of errata and rants about salsa jars. I am signing up for this</span>.
+                                </label>
+                            </div>
+
+                            <div id="hcaptcha-container" class="hcaptcha-container"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </modalbox>
+    </div>
+</div>
+
+<style>
+.sl-captcha-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 2147483646;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+.sl-captcha-overlay.active {
+    opacity: 1;
+}
+</style>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+(function() {
+    var DEBUG = true;
+    function log() { if (DEBUG) console.log('[SparkloopModal]', Array.prototype.slice.call(arguments).join(' ')); }
+
+    var TediumForms = {
+        hcaptchaWidget: null,
+        isHCaptchaLoaded: false,
+        
+        setCookie: function(name, value, days) {
+            var expires = new Date();
+            expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
+            document.cookie = name + '=' + value + '; expires=' + expires.toUTCString() + '; path=/; SameSite=Lax';
+        },
+
+        getCookie: function(name) {
+            var cookies = document.cookie.split('; ').reduce(function(acc, cookie) {
+                var parts = cookie.split('=');
+                acc[parts[0]] = parts[1];
+                return acc;
+            }, {});
+            return cookies[name];
+        },
+
+        decodeBase64: function(encoded) {
+            return atob(encoded);
+        },
+
+        initializeForm: function(formId) {
+            log('initializeForm:', formId);
+            var form = document.getElementById(formId);
+            if (!form) { console.error('Form not found:', formId); return; }
+
+            if (this.getCookie('signed_up')) {
+                this.thanksForm(form);
+                return;
+            }
+
+            var self = this;
+            try {
+                detectIncognito().then(function(result) {
+                    if (result.isPrivate) {
+                        self.disableForm(form);
+                        return;
+                    }
+                    self.enableForm(form);
+                    self.addFormHandlers(form);
+                }).catch(function() {
+                    self.enableForm(form);
+                    self.addFormHandlers(form);
+                });
+            } catch (e) {
+                this.enableForm(form);
+                this.addFormHandlers(form);
+            }
+        },
+
+        enableForm: function(form) {
+            form.style.display = 'block';
+            form.querySelectorAll('input, button').forEach(function(el) { el.disabled = false; });
+        },
+
+        disableForm: function(form) {
+            form.style.display = 'none';
+            var w = document.createElement('div');
+            w.innerHTML = '<p style="color:#fff;margin:1rem 0;text-align:center"><em>Sorry, our signup doesn\'t work in incognito mode.</em></p>';
+            form.parentNode.insertBefore(w, form.nextSibling);
+        },
+
+        thanksForm: function(form) {
+            form.style.display = 'none';
+            var w = document.createElement('div');
+            w.innerHTML = '<p style="color:#fff;margin:1rem 0;text-align:center"><em>Hey, you already signed up. Cool!</em></p>';
+            form.parentNode.insertBefore(w, form.nextSibling);
+        },
+
+        addFormHandlers: function(form) {
+            var self = this;
+            var emailInput = form.querySelector('input[type="email"]');
+            if (emailInput) {
+                emailInput.addEventListener('focus', function() {
+                    self.loadHCaptcha(form);
+                });
+            }
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                if (form._sparkloopDone) return;
+                self.handleSubmit(e);
+            });
+        },
+
+        loadHCaptcha: function(form) {
+            var self = this;
+            var containerId = form.id === 'signup-form-front' ? 'hcaptcha-container-home' : 'hcaptcha-container';
+
+            if (window.hcaptcha) {
+                if (!this.hcaptchaWidget) {
+                    this.hcaptchaWidget = hcaptcha.render(containerId, {
+                        sitekey: '187bcf63-2d0b-488b-98f3-1c8e20bc2514',
+                        size: 'invisible',
+                        'open-callback': function() {
+                            var o = document.getElementById('sl-captcha-overlay');
+                            if (o) o.classList.add('active');
+                        },
+                        'close-callback': function() {
+                            var o = document.getElementById('sl-captcha-overlay');
+                            if (o) o.classList.remove('active');
+                        },
+                        callback: function(token) {
+                            self.onCaptchaSuccess(token, form);
+                        }
+                    });
+                }
+                return;
+            }
+
+            if (!this.isHCaptchaLoaded) {
+                var s = document.createElement('script');
+                s.setAttribute('src', 'https://js.hcaptcha.com/1/api.js?onload=hCaptchaOnLoad&render=explicit');
+                s.setAttribute('async', '');
+                s.setAttribute('defer', '');
+                s.onload = function() {
+                    window.currentForm = form;
+                };
+                document.body.appendChild(s);
+                this.isHCaptchaLoaded = true;
+            }
+        },
+
+        handleSubmit: function(event) {
+            event.preventDefault();
+            var form = event.target;
+
+            var honeypot = form.querySelector('input[name="hpc4b27b6e-eb38-11e9-be00-06b4694bee2a"]');
+            if (honeypot && honeypot.value) return;
+
+            if (!form.consent.checked) {
+                alert('Please check the consent box to continue.');
+                return;
+            }
+
+            var encodedAction = form.getAttribute('data-action-encoded');
+            if (encodedAction) {
+                form.action = this.decodeBase64(encodedAction);
+            } else {
+                console.error('Encoded action URL not found');
+                return;
+            }
+
+            var self = this;
+            if (!this.hcaptchaWidget) {
+                this.loadHCaptcha(form);
+                setTimeout(function() {
+                    if (self.hcaptchaWidget) hcaptcha.execute(self.hcaptchaWidget);
+                }, 500);
+            } else {
+                hcaptcha.execute(this.hcaptchaWidget);
+            }
+        },
+
+        onCaptchaSuccess: function(token, form) {
+            // EmailOctopus rejects multipart bodies (415), so send urlencoded
+            var formData = new URLSearchParams(new FormData(form));
+            formData.append('h-captcha-response', token);
+
+            fetch(form.action, { method: 'POST', mode: 'cors', body: formData })
+            .then(function(response) { return response.json(); })
+            .then(function(result) {
+                if (result.success) {
+                    TediumForms.setCookie('signed_up', 'true', 7);
+
+                    // Kill the form action so nothing can navigate us away
+                    form.action = '';
+                    form.method = 'GET';
+
+                    // Close the modal
+                    document.getElementById('subscribebox-toggle').checked = false;
+
+                    // Let Sparkloop pick up the form
+                    form.removeAttribute('data-sparkloop-form-ignore');
+                    form.setAttribute('data-sparkloop-form', '');
+                    form._sparkloopDone = true;
+
+                    log('Loading Sparkloop...');
+
+                    // Watch for Sparkloop to attach to the form
+                    var observer = new MutationObserver(function(mutations) {
+                        for (var i = 0; i < mutations.length; i++) {
+                            if (mutations[i].attributeName === 'data-sparkloop-form-id') {
+                                log('Sparkloop attached, re-triggering');
+                                observer.disconnect();
+                                var btn = form.querySelector('button[type="submit"]');
+                                if (btn) btn.click();
+                                return;
+                            }
+                        }
+                    });
+                    observer.observe(form, { attributes: true });
+                    var fallback = setTimeout(function() {
+                        observer.disconnect();
+                        log('Observer fallback, re-triggering');
+                        var btn = form.querySelector('button[type="submit"]');
+                        if (btn) btn.click();
+                    }, 3000);
+
+                    // Load Sparkloop
+                    var sl = document.createElement('script');
+                    sl.setAttribute('async', '');
+                    sl.setAttribute('data-sparkloop', '');
+                    sl.setAttribute('src', 'https://js.sparkloop.app/embed.js?publication_id=pub_a2ef071818f3');
+                    sl.addEventListener('load', function() {
+                        clearTimeout(fallback);
+                        log('Sparkloop script loaded');
+                    });
+                    document.head.appendChild(sl);
+                } else {
+                    alert('There was an error submitting the form. Please try again.');
+                }
+            }).catch(function(error) {
+                console.error('Submission error:', error);
+                alert('There was an error submitting the form. Please try again.');
+            });
+        }
+    };
+
+    window.hCaptchaOnLoad = function() {
+        var form = window.currentForm;
+        if (!form) { console.error('No form reference'); return; }
+        var containerId = form.id === 'signup-form-front' ? 'hcaptcha-container-home' : 'hcaptcha-container';
+        TediumForms.hcaptchaWidget = hcaptcha.render(containerId, {
+            sitekey: '187bcf63-2d0b-488b-98f3-1c8e20bc2514',
+            size: 'invisible',
+            'open-callback': function() {
+                var o = document.getElementById('sl-captcha-overlay');
+                if (o) o.classList.add('active');
+            },
+            'close-callback': function() {
+                var o = document.getElementById('sl-captcha-overlay');
+                if (o) o.classList.remove('active');
+            },
+            callback: function(token) { TediumForms.onCaptchaSuccess(token, form); }
+        });
+    };
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var modalToggle = document.getElementById('subscribebox-toggle');
+        if (modalToggle) {
+            modalToggle.addEventListener('change', function() {
+                if (this.checked) {
+                    TediumForms.initializeForm('signup-form');
+                }
+            });
+        }
+        if (document.getElementById('signup-form-front')) {
+            TediumForms.initializeForm('signup-form-front');
+        }
+    });
+})();
+</script>
+
+    <footer class="overflow-hidden">
+        <footerbg>&nbsp;</footerbg>
+
+        <footerbox>
+            <footerlogo><img class="w-full" src="https://static.tedium.co/uploads/t-logo_nobg_v3.svg" alt="Tedium T Logo"></footerlogo>
+            <footeroutro>
+            <footerblurb><strong>Once upon a time,</strong> there was an internet that was weird and fascinating and didn’t make you mad. Since 2015, Tedium has tried to bring that internet back through a commitment to weirdness and a love for the obscure and offbeat. We are nominally a newsletter, but if you share our content on the web, we won’t be upset. But if you email us asking for a backlink, we’ll publicly scold you on social media using the most sarcastic possible language. Them’s the breaks.</footerblurb>
+            <footerlinks>
+                <ul>
+                    <li><a href="https://tedium.co/what-is-tedium">What is Tedium?</a></li>
+                    <li><a href="https://www.patreon.com/tedium">Support us on Patreon</a></li>
+                    <li><a href="https://tedium.co/contribute">Share your ideas!</a></li>
+                    <li><a href="https://tedium.co/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="https://tedium.co/advertising">Advertise With Us</a></li>
+                    <li><a href="https://feed.tedium.co/">RSS feed</a></li>
+                    <li><a rel="me" href="https://writing.exchange/@ernie">Ernie on Mastodon</a></li>
+                </ul>
+            </footerlinks>
+            </footeroutro>
+        </footerbox>
+        <fineprint>
+            <p><em><strong>Disclosure:</strong> From time to time, we may use affiliate links in our content—but only when it makes sense. Promise.</em></p>
+            <p><em><strong>P.S.:</strong> If you email me asking about doing a guest post or posting a backlink, you forfeit ownership of your site to me.</em></p>
+            <p>Proudly built using a combination of <a href="https://craftcms.com/">Craft CMS</a>, Eleventy, Tailwind, and general magic.</p>
+            <p>Copyright &copy; 2015-2026 Tedium LLC. All rights reserved. <a href="https://www.youtube.com/watch?v=hqi2Jy0UMiA">Please, try the fish</a>.</p>
+        </fineprint>
+    </footer>
+
+    <script defer data-domain="tedium.co" src="https://analytics.tedium.co/js/script.outbound-links.js"></script>
+<script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+
+
+<script src="//m.servedby-buysellads.com/monetization.js" type="text/javascript"></script>
+<div class="sticky-js"></div>
+<script>
+(function() {
+    if (typeof _bsa !== 'undefined' && _bsa) {
+    _bsa.init('custom', 'CWYDKK37', 'placement:tediumco-stickybar', {
+        target: '.sticky-js',
+        id: "sticky-js",
+        template: `
+<a class="sticky-bar" style="background-color: ##backgroundColor##; color: ##textColor##" href="##link##" rel="sponsored noopener" target="_blank" title="##company## — ##tagline##">
+    <div class="native-main">
+    <img class="native-img" src="##logo##">
+    <div class="native-details" style="color: ##textColor##">
+        <span class="native-tagline">Sponsored by ##company##</span>
+        <span class="native-desc">##description##</span>
+    </div>
+    <span class="native-cta" style="color: ##ctaTextColor##; background-color: ##ctaBackgroundColor##;">##callToAction##</span>
+    </div>
+</a>
+<div class="native-hide" style="background-color: ##textColor##; color: ##backgroundColor##; border: solid 1px ##backgroundColor##;" onclick="_bsa.close('sticky-js')">✕</div>
+`
+    });
+    }
+})();
+</script>
+
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5af3b8d382750a5',t:'MTc5NDc1NTk0OQ=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5af3b8d382750a5',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"5b57744a89b64eeda9113fea5c79464f","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

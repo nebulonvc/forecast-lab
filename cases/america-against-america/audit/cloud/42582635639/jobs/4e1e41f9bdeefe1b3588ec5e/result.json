@@ -1,0 +1,661 @@
+{
+  "claim_id": "txt-1c4066fc0c-000118381-000118407",
+  "version": "search-verifier-v1",
+  "input_sha256": "89a0e6e379aebcf092d949ddb641b6c013d4a788e8d9deff1fac95c408160aa2",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000118381-000118407",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "对象为西方资本主义国家的激进/社会主义组织；条件为“再有几次严重的经济衰退”；可观察口径为这些组织在衰退后是否获得实际支持市场（会员、选票、执政或组阁支持）。观察时段为1991年出版后至cutoff 2026-11-09，重点看2001、2007-2009、2020年衰退后的表现。",
+    "reason": "原文是转述朋友的带条件预测，条件“再有几次严重的经济衰退”在观察期内确有发生（2001、2007-2009、2020年衰退），但“激进分子获得市场”这一结果缺乏直接、可归因于衰退的证据。DSA会员在2020年疫情期间确有增长，但材料同时显示其增长可归因于疫情救助、组织动员等非衰退因素，且2021年后会员下降，无法确认是衰退驱动的持续支持扩大。希腊SYRIZA 2015年胜选与反紧缩相关，但主要触发是债务危机与救助条件，不能直接等同于“严重经济衰退后激进分子获得市场”的普遍命题。",
+    "limitation": "条件已部分满足，但结果证据零散且归因不清；DSA会员数据口径（有效会员、总会员）不一致，SYRIZA案例是单一国家选举事件，不能代表西方激进组织整体。无法排除非衰退因素主导，故暂无法判断。",
+    "evidence_ids": [
+      "prior-feb6d5e84d2b6cc74719",
+      "prior-51b773363118cee4bb46",
+      "prior-403061fc43c822c18d9b",
+      "ev-883463fa2df9a1d0c938b2d7",
+      "ev-bdd00a614441e8af540123e1",
+      "ev-06f751b0d341bbbcf7704783",
+      "ev-eef1bc70cbfa65337dca9b95",
+      "ev-94ef6df6153d5182cdaae2bc"
+    ],
+    "method": "经济危机推动激进政治需求",
+    "method_basis": "inferred",
+    "observation_end": "2026-11-09",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-feb6d5e84d2b6cc74719",
+        "relation": "background",
+        "quote": "NBER公告列出1990年7月衰退起点、1991年3月终点，2001年3月至11月、2007年12月至2009年6月、2020年2月至4月衰退。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "仅证明衰退发生的时间，不证明激进组织支持变化。"
+      },
+      {
+        "evidence_id": "prior-51b773363118cee4bb46",
+        "relation": "boundary",
+        "quote": "NBER将衰退界定为广泛分布、幅度显著的经济活动下降；2020年虽短，但下降幅度和广度足够大而确认为衰退。衰退起终点并不等于经济恢复到原趋势。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "定义性材料，说明衰退口径，不涉及激进组织支持。"
+      },
+      {
+        "evidence_id": "prior-403061fc43c822c18d9b",
+        "relation": "boundary",
+        "quote": "DSA自己的会员名册研究称长期约5000会员，2016—2020增至约5万，2021有效会员峰值不足79000，2024年10月约51000；2016、2018、2020有多重政治触发因素。",
+        "publication_date": "2025-02-27",
+        "observation_end": "2024-10-31",
+        "limitation": "会员增长期跨越多次事件，材料自述有多重政治触发因素，不能单独归因于衰退；2021年后下降。"
+      },
+      {
+        "evidence_id": "ev-883463fa2df9a1d0c938b2d7",
+        "relation": "support",
+        "quote": "The Democratic Socialists of America have an estimated 10,000 new members—growth that organizers attribute, in part, to the coronavirus pandemic.",
+        "publication_date": "2020-05-14",
+        "observation_end": "2020-05-14",
+        "limitation": "增长归因于疫情及组织动员，非严格意义上的经济衰退；且为单一时点报道。"
+      },
+      {
+        "evidence_id": "ev-bdd00a614441e8af540123e1",
+        "relation": "counter",
+        "quote": "Total DSA membership has declined since late 2021 from approximately 93,000 total members (including both dues-paying and ‘constitutional’ members who had not paid dues in the last year) to approximately 72,000 at the time of the convention.",
+        "publication_date": "2023-09-25",
+        "observation_end": "2023-08-06",
+        "limitation": "显示2021年后会员下降，与“衰退后激进分子获得市场”的持续趋势相反；但下降原因归于拜登当选等政治因素。"
+      },
+      {
+        "evidence_id": "ev-06f751b0d341bbbcf7704783",
+        "relation": "counter",
+        "quote": "Despite a brief increase thanks to working class radicalization over the genocide in Gaza, our membership is shrinking (a trend since 2021).",
+        "publication_date": "2024-08-23",
+        "observation_end": "2024-08-23",
+        "limitation": "确认会员自2021年持续收缩，增长归因于加沙事件而非衰退。"
+      },
+      {
+        "evidence_id": "ev-eef1bc70cbfa65337dca9b95",
+        "relation": "support",
+        "quote": "The Coalition of the Radical Left (SYRIZA) led by Mr. Alexis Tsipras won the elections by a clear margin, more than doubling its presence to take 149 seats in the 300-member Parliament.",
+        "publication_date": null,
+        "observation_end": "2015-01-25",
+        "limitation": "单一国家选举事件，触发为总统选举失败与反紧缩，不能直接等同于严重经济衰退后激进组织普遍获得市场。"
+      },
+      {
+        "evidence_id": "ev-94ef6df6153d5182cdaae2bc",
+        "relation": "support",
+        "quote": "Coalition of the Radical Left (SYRIZA) | 2,245,978 | 36.3 | 149",
+        "publication_date": null,
+        "observation_end": "2015-01-25",
+        "limitation": "选举结果数据，支持SYRIZA得票，但同样不能代表西方整体或归因于衰退。"
+      }
+    ],
+    "remaining_gap": "缺少直接检验“严重经济衰退后西方激进/社会主义组织支持扩大”的跨国、跨组织系统证据；现有DSA会员数据归因混杂，SYRIZA为单一选举案例，无法确认衰退是主要驱动因素。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000118381-000118407",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "对象为西方资本主义国家的激进/社会主义组织；条件为“再有几次严重的经济衰退”；可观察口径为这些组织在衰退后是否获得实际支持市场（会员、选票、执政或组阁支持）。观察时段为1991年出版后至cutoff 2026-11-09，重点看2001、2007-2009、2020年衰退后的表现。",
+    "reason": "原文是转述朋友的带条件预测，条件“再有几次严重的经济衰退”在观察期内确有发生（2001、2007-2009、2020年衰退），但“激进分子获得市场”这一结果缺乏直接、可归因于衰退的证据。DSA会员在2020年疫情期间确有增长，但材料同时显示其增长可归因于疫情救助、组织动员等非衰退因素，且2021年后会员下降，无法确认是衰退驱动的持续支持扩大。希腊SYRIZA 2015年胜选与反紧缩相关，但主要触发是债务危机与救助条件，不能直接等同于“严重经济衰退后激进分子获得市场”的普遍命题。",
+    "limitation": "条件已部分满足，但结果证据零散且归因不清；DSA会员数据口径（有效会员、总会员）不一致，SYRIZA案例是单一国家选举事件，不能代表西方激进组织整体。无法排除非衰退因素主导，故暂无法判断。",
+    "evidence_ids": [
+      "prior-feb6d5e84d2b6cc74719",
+      "prior-51b773363118cee4bb46",
+      "prior-403061fc43c822c18d9b",
+      "ev-883463fa2df9a1d0c938b2d7",
+      "ev-bdd00a614441e8af540123e1",
+      "ev-06f751b0d341bbbcf7704783",
+      "ev-eef1bc70cbfa65337dca9b95",
+      "ev-94ef6df6153d5182cdaae2bc"
+    ],
+    "method": "经济危机推动激进政治需求",
+    "method_basis": "inferred",
+    "observation_end": "2026-11-09",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-feb6d5e84d2b6cc74719",
+        "relation": "background",
+        "quote": "NBER公告列出1990年7月衰退起点、1991年3月终点，2001年3月至11月、2007年12月至2009年6月、2020年2月至4月衰退。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "仅证明衰退发生的时间，不证明激进组织支持变化。"
+      },
+      {
+        "evidence_id": "prior-51b773363118cee4bb46",
+        "relation": "boundary",
+        "quote": "NBER将衰退界定为广泛分布、幅度显著的经济活动下降；2020年虽短，但下降幅度和广度足够大而确认为衰退。衰退起终点并不等于经济恢复到原趋势。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "定义性材料，说明衰退口径，不涉及激进组织支持。"
+      },
+      {
+        "evidence_id": "prior-403061fc43c822c18d9b",
+        "relation": "boundary",
+        "quote": "DSA自己的会员名册研究称长期约5000会员，2016—2020增至约5万，2021有效会员峰值不足79000，2024年10月约51000；2016、2018、2020有多重政治触发因素。",
+        "publication_date": "2025-02-27",
+        "observation_end": "2024-10-31",
+        "limitation": "会员增长期跨越多次事件，材料自述有多重政治触发因素，不能单独归因于衰退；2021年后下降。"
+      },
+      {
+        "evidence_id": "ev-883463fa2df9a1d0c938b2d7",
+        "relation": "support",
+        "quote": "The Democratic Socialists of America have an estimated 10,000 new members—growth that organizers attribute, in part, to the coronavirus pandemic.",
+        "publication_date": "2020-05-14",
+        "observation_end": "2020-05-14",
+        "limitation": "增长归因于疫情及组织动员，非严格意义上的经济衰退；且为单一时点报道。"
+      },
+      {
+        "evidence_id": "ev-bdd00a614441e8af540123e1",
+        "relation": "counter",
+        "quote": "Total DSA membership has declined since late 2021 from approximately 93,000 total members (including both dues-paying and ‘constitutional’ members who had not paid dues in the last year) to approximately 72,000 at the time of the convention.",
+        "publication_date": "2023-09-25",
+        "observation_end": "2023-08-06",
+        "limitation": "显示2021年后会员下降，与“衰退后激进分子获得市场”的持续趋势相反；但下降原因归于拜登当选等政治因素。"
+      },
+      {
+        "evidence_id": "ev-06f751b0d341bbbcf7704783",
+        "relation": "counter",
+        "quote": "Despite a brief increase thanks to working class radicalization over the genocide in Gaza, our membership is shrinking (a trend since 2021).",
+        "publication_date": "2024-08-23",
+        "observation_end": "2024-08-23",
+        "limitation": "确认会员自2021年持续收缩，增长归因于加沙事件而非衰退。"
+      },
+      {
+        "evidence_id": "ev-eef1bc70cbfa65337dca9b95",
+        "relation": "support",
+        "quote": "The Coalition of the Radical Left (SYRIZA) led by Mr. Alexis Tsipras won the elections by a clear margin, more than doubling its presence to take 149 seats in the 300-member Parliament.",
+        "publication_date": null,
+        "observation_end": "2015-01-25",
+        "limitation": "单一国家选举事件，触发为总统选举失败与反紧缩，不能直接等同于严重经济衰退后激进组织普遍获得市场。"
+      },
+      {
+        "evidence_id": "ev-94ef6df6153d5182cdaae2bc",
+        "relation": "support",
+        "quote": "Coalition of the Radical Left (SYRIZA) | 2,245,978 | 36.3 | 149",
+        "publication_date": null,
+        "observation_end": "2015-01-25",
+        "limitation": "选举结果数据，支持SYRIZA得票，但同样不能代表西方整体或归因于衰退。"
+      }
+    ],
+    "remaining_gap": "缺少直接检验“严重经济衰退后西方激进/社会主义组织支持扩大”的跨国、跨组织系统证据；现有DSA会员数据归因混杂，SYRIZA为单一选举案例，无法确认衰退是主要驱动因素。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-feb6d5e84d2b6cc74719",
+      "url": "https://www.nber.org/research/business-cycle-dating/business-cycle-dating-committee-announcements",
+      "title": "ev-l2-recessions",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-l2-recessions",
+      "archive_sha256": "50b84cd403fc84597354654c3d257ca586da1845084c7572b19d31c301a1e32b",
+      "archive_path": "data/sources/lane2-ev-l2-recessions.html",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-51b773363118cee4bb46",
+      "url": "https://www.nber.org/research/business-cycle-dating",
+      "title": "ev-r2-l2-nber-definition",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-nber-definition",
+      "archive_sha256": "04125b8f87fd5ba0529d3648d2b65fae7ea7a0c4c09a25d1aa2718bcbfd01421",
+      "archive_path": "data/sources/r2-l2-nber-definition-web-notes.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-403061fc43c822c18d9b",
+      "url": "https://democraticleft.dsausa.org/2025/02/27/state-of-dsa-part-one-welcome-to-dsa/",
+      "title": "ev-r2-l2-dsa-members",
+      "published_date": "2025-02-27",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-dsa-members",
+      "archive_sha256": "4424d8744a09d13b4ff90e45d3a15a55e494a4692fbf6c1bf8cefa421f8d4d95",
+      "archive_path": "data/sources/r2-l2-dsa-members-web-notes.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-2d4fd8fd0b4af5356d51",
+      "url": "https://convention2021.dsausa.org/platform-development/",
+      "title": "ev-r2-l2-dsa-platform",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-dsa-platform",
+      "archive_sha256": "18b32dc1412581c4fa492dae2e99531f1e51878fea59b5355c27cd48cbb60261",
+      "archive_path": "data/sources/r2-l2-dsa-platform-web-notes.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-9c3989597221147a8652",
+      "url": "https://data.ipu.org/election-summary/HTML/2125_15_Jan.htm",
+      "title": "ev-r2-l2-ipu-greece",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-ipu-greece",
+      "archive_sha256": "d08f92162dd112f61db0dd11eca3a369cda31e1a045f8f83296e9562052114d0",
+      "archive_path": "data/sources/r2-l2-ipu-greece-web-notes.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-33a886b2ad22f97d509b19ef",
+      "url": "https://www.nber.org/news/business-cycle-dating-committee-announcement-december-1-2008",
+      "resolved_url": "https://www.nber.org/news/business-cycle-dating-committee-announcement-december-1-2008",
+      "title": "Business Cycle Dating Committee Announcement December 1, 2008 | NBER",
+      "published_date": "2008-12-01",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:05.177573+00:00",
+      "archive_sha256": "17cb9fd0ea7687718134f81a21897c60d7a7d8760b38e86fd0c73096fff72b3b",
+      "archive_path": "jobs/4e1e41f9bdeefe1b3588ec5e/17cb9fd0ea7687718134f81a21897c60d7a7d8760b38e86fd0c73096fff72b3b.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-33f9d2f4fd92726b35680797",
+      "url": "https://www.nber.org/news/business-cycle-dating-committee-announcement-june-8-2020",
+      "resolved_url": "https://www.nber.org/news/business-cycle-dating-committee-announcement-june-8-2020",
+      "title": "Business Cycle Dating Committee Announcement June 8, 2020 | NBER",
+      "published_date": "2020-06-08",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:05.177773+00:00",
+      "archive_sha256": "c213d84b21102378508c54d67cd1d30e408285988ff0847e53cd9f331bd66b63",
+      "archive_path": "jobs/4e1e41f9bdeefe1b3588ec5e/c213d84b21102378508c54d67cd1d30e408285988ff0847e53cd9f331bd66b63.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-bdd00a614441e8af540123e1",
+      "url": "https://www.californiadsa.org/news/national-convention-silicon-valley",
+      "resolved_url": "https://www.californiadsa.org/news/national-convention-silicon-valley",
+      "title": "The Silicon Valley chapter’s view of the Convention — California DSA",
+      "published_date": "2023-09-25",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:05.177959+00:00",
+      "archive_sha256": "d8382be4265e2053edd1f4ef1c7115e3c281274c19d24e4a3eed4402cf6d7cb4",
+      "archive_path": "jobs/4e1e41f9bdeefe1b3588ec5e/d8382be4265e2053edd1f4ef1c7115e3c281274c19d24e4a3eed4402cf6d7cb4.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-06f751b0d341bbbcf7704783",
+      "url": "https://www.dsausa.org/blog/the-only-way-out-is-through-organizing/",
+      "resolved_url": "https://www.dsausa.org/blog/the-only-way-out-is-through-organizing/",
+      "title": "The Only Way Out Is Through Organizing - Democratic Socialists of America (DSA)",
+      "published_date": "2024-08-23",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:05.178147+00:00",
+      "archive_sha256": "b6f016c0b8fff02250df505bb1ddd54e1f63c5b256c6c15e3fe2196ed8976212",
+      "archive_path": "jobs/4e1e41f9bdeefe1b3588ec5e/b6f016c0b8fff02250df505bb1ddd54e1f63c5b256c6c15e3fe2196ed8976212.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-eef1bc70cbfa65337dca9b95",
+      "url": "https://ipu.org/parline-e/reports/arc/2125_15_Jan.htm",
+      "resolved_url": "https://ipu.org/parline-e/reports/arc/2125_15_Jan.htm",
+      "title": "IPU PARLINE database: GREECE (Vouli Ton Ellinon), ELECTIONS IN JANUARY 2015",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:16.283056+00:00",
+      "archive_sha256": "d6c2c2888c2ac4e2a1336e22064cb166148995d47a406efe2299c90718b2d36e",
+      "archive_path": "jobs/4e1e41f9bdeefe1b3588ec5e/d6c2c2888c2ac4e2a1336e22064cb166148995d47a406efe2299c90718b2d36e.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-94ef6df6153d5182cdaae2bc",
+      "url": "http://www.electionresources.org/gr/vouli.php?election=2015",
+      "resolved_url": "http://www.electionresources.org/gr/vouli.php?election=2015",
+      "title": "Election Resources on the Internet: Elections to the Hellenic Parliament (Vouli) - Results Lookup",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:16.283293+00:00",
+      "archive_sha256": "be22149118f614d519f2198c049871d94a70d37c2af69bccd59ecd3bf79a1f9a",
+      "archive_path": "jobs/4e1e41f9bdeefe1b3588ec5e/be22149118f614d519f2198c049871d94a70d37c2af69bccd59ecd3bf79a1f9a.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-883463fa2df9a1d0c938b2d7",
+      "url": "https://www.theatlantic.com/politics/archive/2020/05/dsa-growing-during-coronavirus/611599/",
+      "resolved_url": "https://www.theatlantic.com/politics/archive/2020/05/dsa-growing-during-coronavirus/611599/",
+      "title": "The DSA Is Growing Fast During the Coronavirus Pandemic - The Atlantic",
+      "published_date": "2020-05-14",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:16.283471+00:00",
+      "archive_sha256": "1b5570d6e2a1bd086d61ef31dc6883724c1c934ba467b8003c82fb646d92e0be",
+      "archive_path": "jobs/4e1e41f9bdeefe1b3588ec5e/1b5570d6e2a1bd086d61ef31dc6883724c1c934ba467b8003c82fb646d92e0be.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-5823c9c268a0eb8c870ff66b",
+      "url": "https://sfarchive.dsausa.org/issues/fall-2022/a-dsa-where-there-are-millions-the-recommitment-drive-and-the-road-to-building-a-mass-organization/",
+      "resolved_url": "https://sfarchive.dsausa.org/issues/fall-2022/a-dsa-where-there-are-millions-the-recommitment-drive-and-the-road-to-building-a-mass-organization/",
+      "title": "A DSA Where There are Millions: The Recommitment Drive and the Road to Building a Mass Organization - Socialist Forum",
+      "published_date": "2022-11-30",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:16.283667+00:00",
+      "archive_sha256": "9b8321f0c2460c49f956a5dba98476db541f493205e0569ea4d97194c4a7b323",
+      "archive_path": "jobs/4e1e41f9bdeefe1b3588ec5e/9b8321f0c2460c49f956a5dba98476db541f493205e0569ea4d97194c4a7b323.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "NBER business cycle dating committee announcements recession 2001 2007-2009 2020 official dates",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Democratic Socialists of America membership decline after 2021 recession organizing factors not recession",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "SYRIZA 2015 Greek legislative election seats anti-austerity government IPU official results",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Democratic Socialists of America membership growth 2008 2020 recession attribution study not recession",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少直接检验“严重经济衰退后西方激进/社会主义组织支持扩大”的跨国、跨组织系统证据；现有DSA会员数据归因混杂，SYRIZA为单一选举案例，无法确认衰退是主要驱动因素。",
+  "source_statuses": [
+    {
+      "url": "https://www.nber.org/news/business-cycle-dating-committee-announcement-december-1-2008",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.nber.org/news/business-cycle-dating-committee-announcement-june-8-2020",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.californiadsa.org/news/national-convention-silicon-valley",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.dsausa.org/blog/the-only-way-out-is-through-organizing/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://ipu.org/parline-e/reports/arc/2125_15_Jan.htm",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "http://www.electionresources.org/gr/vouli.php?election=2015",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.theatlantic.com/politics/archive/2020/05/dsa-growing-during-coronavirus/611599/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://sfarchive.dsausa.org/issues/fall-2022/a-dsa-where-there-are-millions-the-recommitment-drive-and-the-road-to-building-a-mass-organization/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "王沪宁转述的一位朋友的条件预测：在西方资本主义国家，若再发生几次严重经济衰退，激进/社会主义组织将获得实际支持市场（会员、选票、执政或组阁支持），不要求持续单调增长或掌握国家政权。以NBER判定的全国显著经济活动下降作为“严重衰退”的透明代理；反证包括多次严重衰退后激进组织支持未上升，或上升可完全归因于非衰退因素且无任何衰退后支持扩大的实例。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "8d37104930e33e0c24d6dff0e1d25fcab3207ccec07bd8ace84e3dced40a7688"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "a70970e4667eb5af0d677398606b8816",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e8089ce567b8dc6eeb966ec80d3d2902",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "23fad273c933ae29d5ef4b3f6ff44fe94269698d854293501fcf9c7b9924fa4f"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "45118a2225283bd28cfcf5d96394eb94",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "c236a8d27ff33367a28c3b877b388d9a7861dcb2c29b200d0130f9cab4e920be"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "8bd66f7b8dbef1defb2199fa5489ec00",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "8ebc32b70ae7e8fd580bbfb8eca9217c",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "1ca1c88b69900a06f8fe68afc044c0d0eb55a9b9c5e47e8367861783c320329f"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "425feb7d481abb44301de074fc15e308",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "0278d9c2a3fae1f3679bb8989d5d96efb8208e53f4e10061c3950d7867406081"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "85465cd5d95dc61236cd1315d0e5b1486f5e8168cabb11451a5c838d1d4b56c4"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000118381-000118407",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000118381-000118407",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "对象为西方资本主义国家的激进/社会主义组织；条件为“再有几次严重的经济衰退”；可观察口径为这些组织在衰退后是否获得实际支持市场（会员、选票、执政或组阁支持）。观察时段为1991年出版后至cutoff 2026-11-09，重点看2001、2007-2009、2020年衰退后的表现。",
+      "reason": "原文是转述朋友的带条件预测，条件“再有几次严重的经济衰退”在观察期内确有发生（2001、2007-2009、2020年衰退），但“激进分子获得市场”这一结果缺乏直接、可归因于衰退的证据。DSA会员在2020年疫情期间确有增长，但材料同时显示其增长可归因于疫情救助、组织动员等非衰退因素，且2021年后会员下降，无法确认是衰退驱动的持续支持扩大。希腊SYRIZA 2015年胜选与反紧缩相关，但主要触发是债务危机与救助条件，不能直接等同于“严重经济衰退后激进分子获得市场”的普遍命题。",
+      "limitation": "条件已部分满足，但结果证据零散且归因不清；DSA会员数据口径（有效会员、总会员）不一致，SYRIZA案例是单一国家选举事件，不能代表西方激进组织整体。无法排除非衰退因素主导，故暂无法判断。",
+      "evidence_ids": [
+        "prior-feb6d5e84d2b6cc74719",
+        "prior-51b773363118cee4bb46",
+        "prior-403061fc43c822c18d9b",
+        "ev-883463fa2df9a1d0c938b2d7",
+        "ev-bdd00a614441e8af540123e1",
+        "ev-06f751b0d341bbbcf7704783",
+        "ev-eef1bc70cbfa65337dca9b95",
+        "ev-94ef6df6153d5182cdaae2bc"
+      ],
+      "method": "经济危机推动激进政治需求",
+      "method_basis": "inferred",
+      "observation_end": "2026-11-09",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-feb6d5e84d2b6cc74719",
+          "relation": "background",
+          "quote": "NBER公告列出1990年7月衰退起点、1991年3月终点，2001年3月至11月、2007年12月至2009年6月、2020年2月至4月衰退。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "仅证明衰退发生的时间，不证明激进组织支持变化。"
+        },
+        {
+          "evidence_id": "prior-51b773363118cee4bb46",
+          "relation": "boundary",
+          "quote": "NBER将衰退界定为广泛分布、幅度显著的经济活动下降；2020年虽短，但下降幅度和广度足够大而确认为衰退。衰退起终点并不等于经济恢复到原趋势。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "定义性材料，说明衰退口径，不涉及激进组织支持。"
+        },
+        {
+          "evidence_id": "prior-403061fc43c822c18d9b",
+          "relation": "boundary",
+          "quote": "DSA自己的会员名册研究称长期约5000会员，2016—2020增至约5万，2021有效会员峰值不足79000，2024年10月约51000；2016、2018、2020有多重政治触发因素。",
+          "publication_date": "2025-02-27",
+          "observation_end": "2024-10-31",
+          "limitation": "会员增长期跨越多次事件，材料自述有多重政治触发因素，不能单独归因于衰退；2021年后下降。"
+        },
+        {
+          "evidence_id": "ev-883463fa2df9a1d0c938b2d7",
+          "relation": "support",
+          "quote": "The Democratic Socialists of America have an estimated 10,000 new members—growth that organizers attribute, in part, to the coronavirus pandemic.",
+          "publication_date": "2020-05-14",
+          "observation_end": "2020-05-14",
+          "limitation": "增长归因于疫情及组织动员，非严格意义上的经济衰退；且为单一时点报道。"
+        },
+        {
+          "evidence_id": "ev-bdd00a614441e8af540123e1",
+          "relation": "counter",
+          "quote": "Total DSA membership has declined since late 2021 from approximately 93,000 total members (including both dues-paying and ‘constitutional’ members who had not paid dues in the last year) to approximately 72,000 at the time of the convention.",
+          "publication_date": "2023-09-25",
+          "observation_end": "2023-08-06",
+          "limitation": "显示2021年后会员下降，与“衰退后激进分子获得市场”的持续趋势相反；但下降原因归于拜登当选等政治因素。"
+        },
+        {
+          "evidence_id": "ev-06f751b0d341bbbcf7704783",
+          "relation": "counter",
+          "quote": "Despite a brief increase thanks to working class radicalization over the genocide in Gaza, our membership is shrinking (a trend since 2021).",
+          "publication_date": "2024-08-23",
+          "observation_end": "2024-08-23",
+          "limitation": "确认会员自2021年持续收缩，增长归因于加沙事件而非衰退。"
+        },
+        {
+          "evidence_id": "ev-eef1bc70cbfa65337dca9b95",
+          "relation": "support",
+          "quote": "The Coalition of the Radical Left (SYRIZA) led by Mr. Alexis Tsipras won the elections by a clear margin, more than doubling its presence to take 149 seats in the 300-member Parliament.",
+          "publication_date": null,
+          "observation_end": "2015-01-25",
+          "limitation": "单一国家选举事件，触发为总统选举失败与反紧缩，不能直接等同于严重经济衰退后激进组织普遍获得市场。"
+        },
+        {
+          "evidence_id": "ev-94ef6df6153d5182cdaae2bc",
+          "relation": "support",
+          "quote": "Coalition of the Radical Left (SYRIZA) | 2,245,978 | 36.3 | 149",
+          "publication_date": null,
+          "observation_end": "2015-01-25",
+          "limitation": "选举结果数据，支持SYRIZA得票，但同样不能代表西方整体或归因于衰退。"
+        }
+      ],
+      "remaining_gap": "缺少直接检验“严重经济衰退后西方激进/社会主义组织支持扩大”的跨国、跨组织系统证据；现有DSA会员数据归因混杂，SYRIZA为单一选举案例，无法确认衰退是主要驱动因素。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "说话者为王沪宁转述的一位朋友；对象是西方资本主义国家的激进/社会主义组织，条件为“再有几次严重的经济衰退”，可观察口径是这些组织在衰退后是否获得实际支持市场（会员、选票、执政或组阁支持），不要求持续单调增长或掌握国家政权；反证包括：多次严重衰退后激进组织支持未上升、或上升可完全归因于非衰退因素且无任何衰退后支持扩大的实例。",
+  "elapsed_seconds": 34.987,
+  "completed_at": "2026-11-09T08:00:31.251279+00:00"
+}

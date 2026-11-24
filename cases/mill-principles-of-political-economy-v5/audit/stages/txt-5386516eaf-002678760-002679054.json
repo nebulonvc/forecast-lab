@@ -1,0 +1,70 @@
+{
+  "id": "txt-5386516eaf-002678760-002679054",
+  "assess": {
+    "id": "txt-5386516eaf-002678760-002679054",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "在生养大家庭被看成和酗酒或其他肉体放纵一样之前，道德很难有改进。",
+    "reason": "1850–1914年英格兰的研究写，并没有一场把孩子普遍变成负担的转变。大家庭没有被写成和酗酒一样的放纵。条件没有触发，不能用生育率下降代替道德改进。",
+    "limitation": "孩子不是负担，不等于道德没有变化。",
+    "evidence_ids": [
+      "ev-children-burdens"
+    ],
+    "method": "先核条件。条件未发生。",
+    "method_basis": "explicit",
+    "observation_end": "1914-12-31",
+    "future_time_text": "until",
+    "condition_state": "not_met",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-children-burdens",
+        "quote": "there was not a universal shift that made children into burdens.",
+        "relation": "boundary",
+        "limitation": "不是酗酒式的谴责。",
+        "observation_end": "1914-12-31",
+        "publication_date": "2013",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "大家庭并未被看成酗酒那样的放纵。缺这个条件出现之后道德是否改进。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-002678760-002679054",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "large families came to be viewed as excess like drunkenness"
+      },
+      {
+        "role": "counter",
+        "query": "children were not universally seen as burdens"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3865739/"
+    ],
+    "reason": "条件未触发。"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "fcfd5bdf-e49e-47db-927e-581cbec1fbb7",
+  "object": "chat.completion",
+  "created": 1794201444,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000032113-000032147\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为对初创公司选择大市场后果的规范性建议，未给出可独立检验的未来结果、对象或期限。\",\"reason\":\"该句是创业策略建议，不是可独立验证的预测；相关竞争吞噬利润的判断也属于同一规范性论述。\",\"limitation\":\"作为非预测项仅保留审计记录，不评估其经验正确性。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000032147-000032182\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"需检验“企业家占据1000亿美元市场1%总是行不通”这一全称命题；但“行不通”未定义成功标准，且无具体企业、市场或观察窗口。\",\"reason\":\"原文未给出可操作化的成功指标或期限，无法用回顾性证据判定该全称判断是否成立。\",\"limitation\":\"缺少证据且命题为无期限全称断言；不能以个别企业成败反推“总是”成立或不成立。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7639,
+    "completion_tokens": 328,
+    "total_tokens": 7967,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 6871
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,43 @@
+{
+  "unittest": "PYTHONPATH=toolkit python3 -m unittest discover -s toolkit/tests: Ran 209 tests in 0.993s OK",
+  "book_overlap_300": {
+    "hits_authored_case_files": 0,
+    "hits_including_tool_pages": 0,
+    "step": 50,
+    "window": 300,
+    "excluded": "registered claim quotes, their context, and considered-refusal quotes when found in the book",
+    "authored_hit_sample": [],
+    "tool_page_hit_files": [],
+    "note": "Hits inside audit/returns/tool-pages are third-party page archives that reprint source text. They are not extra book text added to claims."
+  },
+  "secret_scan": {
+    "patterns": [
+      "sk-",
+      "api_key",
+      "AKIA",
+      "BEGIN PRIVATE",
+      "ghp_",
+      "xoxb-",
+      "password="
+    ],
+    "credential_hits": 0,
+    "raw_pattern_hits_classified": [
+      {
+        "file": "audit/gate-scans.json",
+        "note": "The pattern names listed in this scan record. Not a credential."
+      },
+      {
+        "file": "data/sources/prologue-1788.html",
+        "pattern": "sk-",
+        "count": 7,
+        "note": "CSS mask- identifiers. Not a credential."
+      },
+      {
+        "file": "audit/returns/pc-navy-counter.txt",
+        "pattern": "sk-",
+        "count": 1,
+        "note": "URL path ask-a-historian. Not a credential."
+      }
+    ]
+  }
+}

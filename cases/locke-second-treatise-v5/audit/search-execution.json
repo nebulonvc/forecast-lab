@@ -1,0 +1,1981 @@
+{
+  "kind": "search_execution_index",
+  "provenance": "父流程 dump 的独立只读审计，不是本轮重搜。原文件按字节纳入 audit/independent-search-execution-audit-2026-11-20.json。",
+  "independent_audit_bytes": 118343,
+  "independent_audit_sha256": "95f819f6a05aaabb0ce5b7fa1c4302f42d5b5d398b947f661ab767ee9339ef31",
+  "source_transcript_sha256": "bf297674cc590b9e23ad1650e56e57e4a0fcbf10e85b37c77b99260c3a4865f2",
+  "source_transcript_not_packed": true,
+  "source_transcript_bytes": 7256625,
+  "tool_args_limitation": "All 124 web_search records in this dump lack tool_args on both the assistant tool_calls and the tool result lines. The exact query string sent to the tool therefore cannot be byte-verified from this file. select.query in the r2 package is an assistant-written field, not a recovered tool argument. Correspondence below is by URL (and, for one Wikisource path, the same URL inside the result chunk).",
+  "select_query_status": "select.query 只是包内计划字段。原 dump 没有 tool_args，不能把它当成已核验的发送参数。本文件不补造查询字符串。",
+  "query_strings_byte_verified_from_tool_args": 0,
+  "r2_web_search_calls_n": 30,
+  "unknowns_n": 31,
+  "returned_urls_cover_31_unknowns": true,
+  "locke_source_mirror_ids": [
+    "txt-720196308b-000059144-000059403",
+    "txt-720196308b-000066464-000066674",
+    "txt-720196308b-000067337-000067495",
+    "txt-720196308b-000183444-000183692",
+    "txt-720196308b-000191483-000191832",
+    "txt-720196308b-000195506-000195733",
+    "txt-720196308b-000265059-000265308",
+    "txt-720196308b-000270412-000270601",
+    "txt-720196308b-000291306-000291464"
+  ],
+  "locke_source_mirror_note": "这9条命中的是洛克原文镜像。它们只证明检索确实返回了页面，不是事后结果证据，也不改变暂无法判断。",
+  "scores_unchanged": true,
+  "calls": [
+    {
+      "transcript_line": 2212,
+      "tool_call_id": "turn-67:step:14:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:19 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:21 Asia/Shanghai",
+      "started_at_ms": 1795143799603,
+      "completed_at_ms": 1795143801731,
+      "duration_ms": 2128,
+      "rejected": false,
+      "result_urls": [
+        "https://standardebooks.org/ebooks/john-locke/two-treatises-of-government/text/chapter-2-2",
+        "https://respublicalibrary.org/locke-second-treatise/2/",
+        "https://doi.org/10.31389/lsepress.cwr.f",
+        "https://plato.stanford.edu/entries/locke-political/",
+        "https://www.prisms.digital/static/N10104"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "f5c8999d02c559b3d3c5297357253c5adad7f6176428ce608a94fcc2155386d8",
+      "result_chunk_sha256": "c2f81845dd8d566d437a4fccd48d27e7bbf98f8e1e6d86bca2c6a15de6889e5f",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2214,
+      "tool_call_id": "turn-67:step:15:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:19 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:22 Asia/Shanghai",
+      "started_at_ms": 1795143799963,
+      "completed_at_ms": 1795143802110,
+      "duration_ms": 2147,
+      "rejected": false,
+      "result_urls": [
+        "https://www.goodreads.com/work/quotes/3078362-two-treatises-of-government",
+        "https://quotewise.io/q/z58i3r/",
+        "https://plato.stanford.edu/entries/locke-political/",
+        "https://standardebooks.org/ebooks/john-locke/two-treatises-of-government/text/chapter-2-14",
+        "https://oll-resources.s3.amazonaws.com/titles/2638/Locke_TwoTreatises_EnhancedEdition.pdf"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "89a004026e6dda29cf466a6221489f0b9cc3b615cb95aa32f793d5106ec66cbf",
+      "result_chunk_sha256": "45eb543d12fe96be0c28f6b357a523dea769e09994f108cd885dee54fb79cd99",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2216,
+      "tool_call_id": "turn-67:step:16:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:20 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:22 Asia/Shanghai",
+      "started_at_ms": 1795143800299,
+      "completed_at_ms": 1795143802232,
+      "duration_ms": 1933,
+      "rejected": false,
+      "result_urls": [
+        "https://history.hanover.edu/texts/locke/j-l2-008.html",
+        "http://bev.berkeley.edu/PE%20100/Locke%20Of%20Property.pdf",
+        "https://classautonomy.info/wp-content/uploads/2026/03/Ince-EnclosingGodsName-2011.pdf",
+        "http://hdl.handle.net/10072/18011",
+        "https://eprints.gla.ac.uk/293013/1/293013.pdf"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "4b4f3999df7068954ba82a18a5b6222e0ed23153ea22ccb4d4d73e1a98a37c7c",
+      "result_chunk_sha256": "22fd813b5d220cd51fb8384a242003ad8fd040b85ef0101a9129bd3ea91533cb",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2218,
+      "tool_call_id": "turn-67:step:17:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:20 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:22 Asia/Shanghai",
+      "started_at_ms": 1795143800567,
+      "completed_at_ms": 1795143802869,
+      "duration_ms": 2302,
+      "rejected": false,
+      "result_urls": [
+        "https://standardebooks.org/ebooks/john-locke/two-treatises-of-government/text/chapter-2-5",
+        "http://bev.berkeley.edu/PE%20100/Locke%20Of%20Property.pdf",
+        "https://quotations.pro/people/john-locke/quote/thus-in-the-beginning-all-the-world-was-america-and-more-so",
+        "https://doi.org/10.23941/ejpe.v6i1.119",
+        "https://doi.org/10.71548/23942"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "6d06b74c4f270f5e1ec2628320c171e2e85271a63e4df9020fd19778d6eaf431",
+      "result_chunk_sha256": "dc81378a5f39b4638c4dfaf2cf579c907c807bbcfc342b0af78f3d4bafabdb97",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2220,
+      "tool_call_id": "turn-67:step:18:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:20 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:23 Asia/Shanghai",
+      "started_at_ms": 1795143800897,
+      "completed_at_ms": 1795143803014,
+      "duration_ms": 2117,
+      "rejected": false,
+      "result_urls": [
+        "https://www.law.cornell.edu/supremecourt/text/62/290",
+        "https://supreme.justia.com/cases/federal/us/49/317/",
+        "https://supreme.justia.com/cases/federal/us/75/650/",
+        "https://www.philippinelawjournal.org/wp-content/uploads/2025/02/63PLJ082_LYNCH.pdf",
+        "https://www.law.cornell.edu/supremecourt/text/212/449"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "ec25f09d9bd1853209ae4c740505eb6ba7fe8a96ee47bf90738bdc92172aa252",
+      "result_chunk_sha256": "a423bda5e1836d9f272ce4686804639ac537fda371316f3321d8fb64712cd86e",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2222,
+      "tool_call_id": "turn-67:step:19:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:21 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:23 Asia/Shanghai",
+      "started_at_ms": 1795143801163,
+      "completed_at_ms": 1795143803457,
+      "duration_ms": 2294,
+      "rejected": false,
+      "result_urls": [
+        "https://standardebooks.org/ebooks/john-locke/two-treatises-of-government/text/chapter-2-11",
+        "https://teachingamericanhistory.org/document/second-treatise-chapters-10-12/",
+        "https://history.hanover.edu/courses/excerpts/165locke.html",
+        "https://press-pubs.uchicago.edu/founders/documents/v1ch17s5.html",
+        "https://www.d.umn.edu/cla/faculty/jhamlin/4111/SocialContract/Lockegovern11.htm"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "dd77149892241af5c6ccff422022322ea67c32c17f3891b361d6486eafc61bca",
+      "result_chunk_sha256": "1d737c042f706943557fea6d4277e17d59f9ac3ea5f7e8754291a1dfaefc1ce7",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2224,
+      "tool_call_id": "turn-67:step:20:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:21 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:24 Asia/Shanghai",
+      "started_at_ms": 1795143801961,
+      "completed_at_ms": 1795143804110,
+      "duration_ms": 2149,
+      "rejected": false,
+      "result_urls": [
+        "https://www.cambridge.org/core/journals/european-journal-of-political-research/article/new-political-system-model-semiparliamentary-government/D9EFDEED7D0BC00BC835A2BAF1677962",
+        "https://en.wikipedia.org/wiki/Divided_government",
+        "https://researchonline.lse.ac.uk/id/eprint/109626/1/democraticaudit.com_Does_it_really_matter_if_we_call_Australian_politics_semi_parliamentary.pdf",
+        "https://doi.org/10.1057/palgrave.fp.8200087",
+        "https://link.springer.com/article/10.1057/s41304-023-00426-9"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "e1e598650f7fa325411deb92873e8ea4c91339e8e5f3d793a76e3ebb579231d9",
+      "result_chunk_sha256": "92b95d0d7dae925e37bb3f5aecd9f031c33c63cc46dafde3b0ed48d546b1f69c",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2226,
+      "tool_call_id": "turn-67:step:21:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:21 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:24 Asia/Shanghai",
+      "started_at_ms": 1795143801438,
+      "completed_at_ms": 1795143804690,
+      "duration_ms": 3252,
+      "rejected": false,
+      "result_urls": [
+        "http://press-pubs.uchicago.edu/founders/print_documents/amendV_due_processs6.html",
+        "https://standardebooks.org/ebooks/john-locke/two-treatises-of-government/text/chapter-2-11",
+        "https://mises.org/online-book/aristocracy-monarchy-democracy/aristocracy-monarchy-democracy-0",
+        "https://www.cambridge.org/core/books/abs/cambridge-history-of-political-thought-14501700/absolutism-and-royalism/0F3677F42A607CDD26AE8782BA3579E1",
+        "https://doi.org/10.7765/9781526137487"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "0dcb79e89d6d37074121dbf5572c8ad691191103a918de07f7866e8e15390b28",
+      "result_chunk_sha256": "9e517032f64f6450a499d72739b6ec0f476edb8ba0c93933b6e8991ff9f9fd29",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2228,
+      "tool_call_id": "turn-67:step:22:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:21 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:24 Asia/Shanghai",
+      "started_at_ms": 1795143801723,
+      "completed_at_ms": 1795143804849,
+      "duration_ms": 3126,
+      "rejected": false,
+      "result_urls": [
+        "https://lonang.com/library/reference/locke-two-treatises-government/loc-212/",
+        "https://www.floridalawreview.com/article/80909-why-congress-matters-the-collective-congress-in-the-structural-constitution.pdf",
+        "https://scholar.law.colorado.edu/articles/703",
+        "https://billofrightsinstitute.org/activities/handout-a-montesquieu-excerpts-from-the-spirit-of-laws-1748/",
+        "https://ir.law.fsu.edu/cgi/viewcontent.cgi?article=1003&context=lr&httpsredir=1"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "15bf23f547b03b2c5ec31a0641074694aae57ae39f7ec9d44c0d16295599f216",
+      "result_chunk_sha256": "85d2b9dd6dbbca2bff126476ec3a83b11b3e07b74e826fad076d14140d3a46cd",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2230,
+      "tool_call_id": "turn-67:step:23:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:21 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:25 Asia/Shanghai",
+      "started_at_ms": 1795143801870,
+      "completed_at_ms": 1795143805002,
+      "duration_ms": 3132,
+      "rejected": false,
+      "result_urls": [
+        "https://dialogos.aurea-mediocritas.net/original-texts/cmsbm5ptc021p31t7qds1xv5t",
+        "https://www.thomasblechschmidt.de/2017/02/08/ttog-ii-%c2%a7-148/",
+        "https://respublicalibrary.org/locke-second-treatise/12/",
+        "https://monadnock.net/locke/government-12.html",
+        "https://researchonline.lse.ac.uk/id/eprint/113373/1/Locke_on_the_Federative_HPT_FINAL_1_.pdf"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "d3ccdae9df423eaa094ad0e0b9b751166acff9a95b9d11d93ebf6b57058520b9",
+      "result_chunk_sha256": "3e5149cbc76e9d304696f3f1b28efcedcb58f208a57505ab1009d036f0eeb8cc",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2235,
+      "tool_call_id": "turn-67:step:26:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:35 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:38 Asia/Shanghai",
+      "started_at_ms": 1795143815371,
+      "completed_at_ms": 1795143818070,
+      "duration_ms": 2699,
+      "rejected": false,
+      "result_urls": [
+        "https://nhcp.gov.ph/the-palaris-revolt-of-1762/",
+        "https://www.oerproject.com/OER-Materials/OER-Media/HTML-Articles/Origins/Unit7/Economic-and-Material-Causes-of-Revolt",
+        "https://www.americanhistory.si.edu/explore/exhibitions/price-of-freedom/online/war-of-independence/from-resistance-to-rebellion",
+        "https://pasttensejournal.com/wp-content/uploads/2016/05/lurie-taxation-and-representation.pdf",
+        "https://tenthamendmentcenter.com/2025/04/15/tax-resistance-and-the-birth-of-the-american-revolution/"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "fdf914b17aa77062996b03323ad96ba6149119b62f70cb11a81386a371dfffe9",
+      "result_chunk_sha256": "39c2b802b81e7610f3586276554dd066a5887c56c744f636ae3c948c48575dd7",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2237,
+      "tool_call_id": "turn-67:step:27:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:35 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:38 Asia/Shanghai",
+      "started_at_ms": 1795143815176,
+      "completed_at_ms": 1795143818240,
+      "duration_ms": 3064,
+      "rejected": false,
+      "result_urls": [
+        "https://api.repository.cam.ac.uk/server/api/core/bitstreams/d30c3ee9-de24-43d6-89c5-86af7cf43ada/content",
+        "https://www.parliament.uk/about/living-heritage/transformingsociety/electionsvoting/chartists/case-study/the-right-to-vote/thomas-attwood-and-the-birmingham-political-union/reform-and-the-birmingham-connection/",
+        "https://cdn.nationalarchives.gov.uk/documents/education/great-reform-act-lesson-pack.pdf",
+        "https://riot1831.com/2021/10/an-overview-of-public-responses/",
+        "https://www.parliament.uk/about/living-heritage/evolutionofparliament/houseofcommons/reformacts/overview/reformact1832/"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "afc7cbb31970cba5b5cf3b6fe9d35c5e549f2907f3f71b38c9e28f360326aceb",
+      "result_chunk_sha256": "d046aa183780de4cfc9ef7e57c32c784abdcf29163f75e43f041a378addcc540",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2239,
+      "tool_call_id": "turn-67:step:28:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:36 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:38 Asia/Shanghai",
+      "started_at_ms": 1795143816534,
+      "completed_at_ms": 1795143818314,
+      "duration_ms": 1780,
+      "rejected": false,
+      "result_urls": [
+        "https://sentencingcouncil.org.uk/guidelines/violent-disorder/",
+        "https://www.respicio.ph/commentaries/procedures-in-alarm-and-scandal-versus-physical-injuries-cases-philippines",
+        "https://voxjuris.org/judgment/1966-insc-96/mrs-veeda-menezes-v-yusuf-khan-and-anr",
+        "https://lawtext.in/judgement.php?bid=42432",
+        "https://www.respicio.ph/commentaries/penalties-and-damages-for-slight-physical-injuries-under-philippine-law"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "621812b2a204b060d7aa98b39754c8be3feb09671c64018bca8ddf0cafeb59f5",
+      "result_chunk_sha256": "2a8986842e13a68d714b657c2ffd51fdd255cffeab23cca61af40167de7bccfb",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2241,
+      "tool_call_id": "turn-67:step:29:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:36 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:38 Asia/Shanghai",
+      "started_at_ms": 1795143816010,
+      "completed_at_ms": 1795143818343,
+      "duration_ms": 2333,
+      "rejected": false,
+      "result_urls": [
+        "https://www.essentialscholars.org/sites/default/files/2022-12/essential-locke-chapter-8.pdf",
+        "https://pure.st-andrews.ac.uk/ws/portalfiles/portal/265878427/Harris_2020_LS_Treatises_CC.pdf",
+        "https://ojs.st-andrews.ac.uk/index.php/aporia/article/download/2050/1516/7212",
+        "https://blog.supplysideliberal.com/post/2019/5/19/john-locke-how-to-resist-tyrants-without-causing-anarchy",
+        "https://scholarship.law.duke.edu/lcp/vol87/iss3/15"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "1ef841ff2744c9fe2ba507f8365b84221c74774b7a56d77c9b2ffa8f0590b7e5",
+      "result_chunk_sha256": "e8637179c84c21e40372ed5409757a1b99b2dc48d13d3e39e60ba0a4d49c4b57",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2243,
+      "tool_call_id": "turn-67:step:30:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:36 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:38 Asia/Shanghai",
+      "started_at_ms": 1795143816783,
+      "completed_at_ms": 1795143818406,
+      "duration_ms": 1623,
+      "rejected": false,
+      "result_urls": [
+        "https://standardebooks.org/ebooks/john-locke/two-treatises-of-government/text/chapter-2-18",
+        "https://www.essentialscholars.org/sites/default/files/2022-12/essential-locke-chapter-8.pdf",
+        "https://ojs.st-andrews.ac.uk/index.php/aporia/article/download/2050/1516/7212",
+        "https://doi.org/10.1017/cbo9780511760204.005",
+        "https://www.jameslafond.com/as-private-oppressors"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "c6246ae130d3ffbdc2ff6015296b1257c51b10b4597cc73c346114a44f43915b",
+      "result_chunk_sha256": "ffd8f392f400bb3d379a046bde44a568f94382ad5b2efc725bcccd87f28d7e29",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2245,
+      "tool_call_id": "turn-67:step:31:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:35 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:38 Asia/Shanghai",
+      "started_at_ms": 1795143815739,
+      "completed_at_ms": 1795143818431,
+      "duration_ms": 2692,
+      "rejected": false,
+      "result_urls": [
+        "https://en.wikisource.org/wiki/Ancient_Egypt_(Rawlinson)/Three_Desperate_Revolts",
+        "https://doi.org/10.47054/ziva21711-2085b",
+        "https://doi.org/10.1002/9781118455074.wbeoe309",
+        "https://www.oerproject.com/OER-Materials/OER-Media/HTML-Articles/AP-World-History/Unit5/The-Atlantic-Revolutions",
+        "https://erenow.org/common/sapiensbriefhistory/53.php",
+        "https://en.wikisource.org/wiki/Ancient_Egypt_(Rawlinson"
+      ],
+      "result_url_count": 6,
+      "line_sha256": "24d50bf8f6b95e7db8f5e123837ce9b3691e4945e164d5c5f5e7da4fc3d569bb",
+      "result_chunk_sha256": "004dd3a9f135006fda821b46d679c59bbef6c00ec37adf3483259d1cb8f214bf",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2247,
+      "tool_call_id": "turn-67:step:32:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:36 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:38 Asia/Shanghai",
+      "started_at_ms": 1795143816145,
+      "completed_at_ms": 1795143818958,
+      "duration_ms": 2813,
+      "rejected": false,
+      "result_urls": [
+        "https://en.wikisource.org/wiki/Cato%27s_Letters/Letter_72",
+        "https://www.infoplease.com/world/social-statistics/worlds-most-notorious-despots",
+        "https://www.ebsco.com/research-starters/history/leopold-ii",
+        "https://www.historyextra.com/period/medieval/9-of-the-worst-monarchs-in-history/",
+        "https://doi.org/10.21039/rsj.407"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "2eab9348da59ea8d26199d1380e67bcb1bec70c6fb9860a8199cb9365dcd19ad",
+      "result_chunk_sha256": "169ccef5f99532ecdac1ab5ea4a0b114e972afda8e2d1613078edae23c9d3166",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2249,
+      "tool_call_id": "turn-67:step:33:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:34 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:39 Asia/Shanghai",
+      "started_at_ms": 1795143814925,
+      "completed_at_ms": 1795143819200,
+      "duration_ms": 4275,
+      "rejected": false,
+      "result_urls": [
+        "https://api.parliament.uk/historic-hansard/commons/1851/feb/05/late-sittings",
+        "https://api.parliament.uk/historic-hansard/commons/1844/mar/05/late-sittings",
+        "https://api.parliament.uk/historic-hansard/commons/1870/jun/21/parliament-sittings-of-the-house",
+        "https://historyofparliament.com/2023/11/09/time-and-the-hard-nights-day-in-the-long-parliament/",
+        "https://www.lrb.co.uk/the-paper/v32/n11/john-pemble/high-taxes-bad-times"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "e27c46591256cba96b91b0c2ff2f3a1605266f5e7469368f0a5ef406eae4ef78",
+      "result_chunk_sha256": "fb1649ebbb52515429b72cd9fe42748991b066a4cdd3be43e4649d7cf8eec90a",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2251,
+      "tool_call_id": "turn-67:step:34:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:37 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:39 Asia/Shanghai",
+      "started_at_ms": 1795143817425,
+      "completed_at_ms": 1795143819349,
+      "duration_ms": 1924,
+      "rejected": false,
+      "result_urls": [
+        "https://ctmirror.org/2018/12/20/no-surprise-not-governor-go-gentle/",
+        "https://www.colonialsociety.org/node/2511",
+        "https://prospect.org/2005/07/18/california-s-master-builder/",
+        "https://www.latimes.com/la-op-rarick15-2008jun15-story.html",
+        "https://indianexpress.com/article/india/jagdeep-dhankhar-west-bengal-governor-bengal-cm-7368037/"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "853166fcbfa707472597892cb9dbe333411cfdbb49fe64069e821cadfc121fca",
+      "result_chunk_sha256": "0f3604a909b02d1ddb82f885d546e89dd714b239576cbd203838c5b20b98e36e",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2253,
+      "tool_call_id": "turn-67:step:35:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:37 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:39 Asia/Shanghai",
+      "started_at_ms": 1795143817146,
+      "completed_at_ms": 1795143819437,
+      "duration_ms": 2291,
+      "rejected": false,
+      "result_urls": [
+        "https://press-pubs.uchicago.edu/founders/documents/v1ch3s2.html",
+        "https://respublicalibrary.org/locke-second-treatise/18/",
+        "https://wkkk.net/library/chapter/47030/53.html",
+        "https://www.journals.uchicago.edu/doi/10.1086/741620",
+        "https://scholarlypublications.universiteitleiden.nl/access/item%3A3638816/view",
+        "https://doi.org/10.1086/741620"
+      ],
+      "result_url_count": 6,
+      "line_sha256": "b0d8498d59b7098d8785f15ab73c72bb5ed1e8bf34d782d986af3a1b4a266baa",
+      "result_chunk_sha256": "de77b216039bd78a3fb4c76a29305c816093a93197717ba3cf6f83d071022170",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2255,
+      "tool_call_id": "turn-67:step:36:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:37 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:40 Asia/Shanghai",
+      "started_at_ms": 1795143817453,
+      "completed_at_ms": 1795143820834,
+      "duration_ms": 3381,
+      "rejected": false,
+      "result_urls": [
+        "https://www.loc.gov/exhibits/creating-the-united-states/interactives/declaration-of-independence/abuses/enlarge6-transcribe.html",
+        "https://doi.org/10.5040/9798216448587.ch-0013",
+        "https://engineered.at/articles/a-long-train-of-abuses",
+        "https://www.cnn.com/travel/milan-stazione-centrale-binario-21-shoah-memorial",
+        "https://doi.org/10.1163/9789004408012_004"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "5af22b92680940ad19b454083ed00ccaa9d59b00c63bf5207553931aab32ee55",
+      "result_chunk_sha256": "f9eed447db6be293164712debfffe1021ebe85c8b486115c9889d78d95e3f70a",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2258,
+      "tool_call_id": "turn-67:step:38:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:48 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:50 Asia/Shanghai",
+      "started_at_ms": 1795143828939,
+      "completed_at_ms": 1795143830936,
+      "duration_ms": 1997,
+      "rejected": false,
+      "result_urls": [
+        "https://www.theatlantic.com/magazine/archive/2025/10/constitutional-originalism-amendment/683961/",
+        "https://www.archives.gov/files/aa-the-ebook-med-res.pdf",
+        "https://www.pewresearch.org/short-reads/2026/09/14/the-us-constitution-is-among-the-hardest-in-the-world-to-amend/",
+        "https://hls.harvard.edu/today/lets-fix-how-we-fix-the-constitution/",
+        "https://digitalcommons.wcl.american.edu/cgi/viewcontent.cgi?article=1057&context=aulr"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "4946b87219d62409875b59c8d8278cb8cbaddc70eae7cb77bed65480e8b54e06",
+      "result_chunk_sha256": "85e0f616ad8a52353188684a4f1d94561a2323b36b297605ca65359b680d5326",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2260,
+      "tool_call_id": "turn-67:step:39:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:49 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:51 Asia/Shanghai",
+      "started_at_ms": 1795143829482,
+      "completed_at_ms": 1795143831257,
+      "duration_ms": 1775,
+      "rejected": false,
+      "result_urls": [
+        "https://ageconsearch.umn.edu/record/195752/files/NL2014-104.pdf",
+        "https://journals.sagepub.com/doi/10.1177/2233865920909611",
+        "https://ideas.repec.org/a/eee/eecrev/v85y2016icp188-207.html",
+        "https://www.hoover.org/research/how-solidarity-arose",
+        "https://www.meforum.org/mef-observer/why-has-iran-not-reached-its-tipping-point"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "fe49f551385af2adc4d6a726ea298fa4a27910c2175d6335f96a545a240f7dfa",
+      "result_chunk_sha256": "35f45ca9f8cb3e757a6fa155c7a9bd63814f3f8c4357daa9515ce41592c439bd",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2262,
+      "tool_call_id": "turn-67:step:40:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:51 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:52 Asia/Shanghai",
+      "started_at_ms": 1795143831026,
+      "completed_at_ms": 1795143832553,
+      "duration_ms": 1527,
+      "rejected": false,
+      "result_urls": [
+        "https://www.bbc.com/news/articles/c1529vgdvlgo",
+        "https://www.bbc.com/news/uk-england-lincolnshire-29855270",
+        "https://www.thetrace.org/2015/08/good-guys-without-guns-thwart-french-train-shooter-validate-data/",
+        "https://apnews.com/article/michigan-walmart-stabbing-matthew-kolakowski-3f231b61026b7d137ce7903a8327db49",
+        "https://bearingarms.com/jennjacques/2016/04/07/dad-stops-armed-intruder-assault-16-year-old-daughter-n25047"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "cd4f5d87ec57fe998652c0faafe990533458ec3bb534e9772b2952272a58718e",
+      "result_chunk_sha256": "024603d8b8b0dd0676405428facd5d7ddd391f3ae07b7c1341a8d7f2a61eccfb",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2264,
+      "tool_call_id": "turn-67:step:41:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:49 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:52 Asia/Shanghai",
+      "started_at_ms": 1795143829758,
+      "completed_at_ms": 1795143832946,
+      "duration_ms": 3188,
+      "rejected": false,
+      "result_urls": [
+        "https://www.thomasblechschmidt.de/tag/mutiny/",
+        "https://www.thomasblechschmidt.de/2017/02/11/ttog-ii-%c2%a7-225/",
+        "https://jsis.washington.edu/wordpress/wp-content/uploads/sites/11/2018/01/American-Sociological-Review_Mutiny-paper.pdf",
+        "https://api.repository.cam.ac.uk/server/api/core/bitstreams/76f802ba-de99-4b9d-8f3b-fa8a6d3645d0/content",
+        "https://readifyai.com/books/The%20Caine%20Mutiny/wiki/Naval%20Rule-Bound%20Formalism"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "98e0ee181bb0a93d607d3203a22543865d1088e13abd71dd565e39cc380c5c79",
+      "result_chunk_sha256": "41eb65642e63668dc4faf4780be29778fc1f00553cdede306344c25751517b18",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2266,
+      "tool_call_id": "turn-67:step:42:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:49 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:53 Asia/Shanghai",
+      "started_at_ms": 1795143829224,
+      "completed_at_ms": 1795143833179,
+      "duration_ms": 3955,
+      "rejected": false,
+      "result_urls": [
+        "https://doi.org/10.1080/01419870.2022.2034911",
+        "https://www.cambridge.org/core/books/abs/power-in-movement/political-opportunities-and-constraints/671B8882CB094A0FAC776FB3B599457F",
+        "https://doi.org/10.1080/23254823.2023.2239328",
+        "https://www.tandfonline.com/doi/full/10.1080/23254823.2023.2239328",
+        "https://jlhochschild.scholars.harvard.edu/publications/when-do-people-%C2%ACnot-protest-unfairness-case-skin-color-discrimination"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "cd8eeabd38a2a001499a80b3ddde1a6f4b5d4afc0daaa1446b2766722930d64b",
+      "result_chunk_sha256": "fdc76183253cf294b398b989b8c8c90f73966345a48582ccbfcf6085b3542960",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2268,
+      "tool_call_id": "turn-67:step:43:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:50 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:53 Asia/Shanghai",
+      "started_at_ms": 1795143830042,
+      "completed_at_ms": 1795143833506,
+      "duration_ms": 3464,
+      "rejected": false,
+      "result_urls": [
+        "https://jrv.mycpanel.princeton.edu/Gandhi&Vreeland_LASA04.pdf",
+        "https://etda.libraries.psu.edu/files/final_submissions/8865",
+        "https://bpb-us-w2.wpmucdn.com/campuspress.yale.edu/dist/6/1038/files/2015/10/institutions1-1lt4a7r.pdf",
+        "https://strathprints.strath.ac.uk/75457/7/Kim_Sudduth_CPS_2021_Political_institutions_and_coups_in.pdf",
+        "https://doi.org/10.1093/isq/sqaa076"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "69fcb21c1f0a5c3f3587094fb7d9743c652f6b78d3a25d468398883691868add",
+      "result_chunk_sha256": "235d0152c5abf10573cc66ebeb583d41668aa4e4d1f8dec36eaa9b8e8eb5686f",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2270,
+      "tool_call_id": "turn-67:step:44:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:50 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:53 Asia/Shanghai",
+      "started_at_ms": 1795143830744,
+      "completed_at_ms": 1795143833584,
+      "duration_ms": 2840,
+      "rejected": false,
+      "result_urls": [
+        "https://www.bbc.com/travel/article/20210817-the-indigenous-rebellion-that-inspired-perus-independence",
+        "https://www.thenewsminute.com/kerala/variyamkunnath-and-nuances-malabar-rebellion-author-manu-s-pillai-interview-127217",
+        "https://en.wikipedia.org/wiki/Rising_of_the_Priests",
+        "https://www.nps.gov/articles/000/insurrections-slave-stampedes-riots.htm",
+        "https://en.wikipedia.org/wiki/Chenaux_uprising"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "c55b4fae0d618980a9b1f1e2ef8f0aceeed5ef196f1f3f9c8c48fc146679d597",
+      "result_chunk_sha256": "0c09a07336c18ddaaba66f1934cf7cc4923d0bffeaa3bcb889c07c5bffa0a209",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2272,
+      "tool_call_id": "turn-67:step:45:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:51 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:54 Asia/Shanghai",
+      "started_at_ms": 1795143831190,
+      "completed_at_ms": 1795143834127,
+      "duration_ms": 2937,
+      "rejected": false,
+      "result_urls": [
+        "https://doi.org/10.7208/chicago/9780226015675.003.0011",
+        "https://slaverylawpower.org/chapters/reacting-absolutism/john-locke-essay-reputation/",
+        "https://eprints.whiterose.ac.uk/id/eprint/123746/1/HPT_Submission_Locke_Reputation_FINAL.pdf",
+        "https://oaktrust.library.tamu.edu/bitstreams/3e359e17-f96c-4865-8a90-e4c9cba10609/download",
+        "https://constitution.org/2-Authors/jl/2ndtr04.htm"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "83e80476e332906c5ff1daa87277bb46a45fb0d958f42fa5c3d6859b9d43f5fe",
+      "result_chunk_sha256": "00256eef362349e6525a11b27c6b7768b1c11d2ba3057a083bf45ec99e3a4271",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    },
+    {
+      "transcript_line": 2274,
+      "tool_call_id": "turn-67:step:46:tool",
+      "tool_name": "web_search",
+      "started_at": "2026-11-20 11:03:50 Asia/Shanghai",
+      "completed_at": "2026-11-20 11:03:55 Asia/Shanghai",
+      "started_at_ms": 1795143830431,
+      "completed_at_ms": 1795143835127,
+      "duration_ms": 4696,
+      "rejected": false,
+      "result_urls": [
+        "https://www.theatlantic.com/national/archive/2014/09/police-officers-who-hit-their-wives-or-girlfriends/380329/",
+        "https://uaptsd.org/campaigns/police-dv/",
+        "https://olis.oregonlegislature.gov/liz/2017R1/Downloads/CommitteeMeetingDocument/132808",
+        "https://www.snopes.com/fact-check/cops-abuse-partners-studies/",
+        "https://www.ojp.gov/pdffiles1/nij/grants/181409.pdf"
+      ],
+      "result_url_count": 5,
+      "line_sha256": "ecc260a359fd9342f03d07ea8dc5635e45bb12c9a8806e3a74f60784bc0ff827",
+      "result_chunk_sha256": "82a8e723aaa0723d03634468c5c74cc3b24985a0b85c9e254bb1f55d4fd1eea6",
+      "tool_args": null,
+      "tool_args_status": "absent_in_parent_dump_not_reconstructed"
+    }
+  ],
+  "claim_map": [
+    {
+      "claim_id": "txt-720196308b-000023834-000023924",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit",
+        "r1_archived_page_reused"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "numbers of men in Locke's state of nature",
+      "url_hits": [
+        {
+          "claim_url": "https://plato.stanford.edu/entries/locke-political/",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2212,
+            2214
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2212,
+              "index_in_result_url_list": 4,
+              "result_url_count": 5
+            },
+            {
+              "transcript_line": 2214,
+              "index_in_result_url_list": 3,
+              "result_url_count": 5
+            }
+          ]
+        },
+        {
+          "claim_url": "https://research.un.org/en/unmembers/currentmembers",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2140
+          ],
+          "periods": [
+            "r1"
+          ],
+          "positions": []
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2212,
+          "tool_call_id": "turn-67:step:14:tool",
+          "duration_ms": 2128,
+          "result_chunk_sha256": "c2f81845dd8d566d437a4fccd48d27e7bbf98f8e1e6d86bca2c6a15de6889e5f"
+        },
+        {
+          "transcript_line": 2214,
+          "tool_call_id": "turn-67:step:15:tool",
+          "duration_ms": 2147,
+          "result_chunk_sha256": "45eb543d12fe96be0c28f6b357a523dea769e09994f108cd885dee54fb79cd99"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000059144-000059403",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_but_source_text_mirror",
+      "url_classes": [
+        "source_text_mirror"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "prince laws of liberty quickly stronger than neighbours",
+      "url_hits": [
+        {
+          "claim_url": "https://www.goodreads.com/work/quotes/3078362-two-treatises-of-government",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2214
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2214,
+              "index_in_result_url_list": 1,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2214,
+          "tool_call_id": "turn-67:step:15:tool",
+          "duration_ms": 2147,
+          "result_chunk_sha256": "45eb543d12fe96be0c28f6b357a523dea769e09994f108cd885dee54fb79cd99"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000066464-000066674",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_but_source_text_mirror",
+      "url_classes": [
+        "source_text_mirror"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "societies without durable scarce goods did not enlarge land",
+      "url_hits": [
+        {
+          "claim_url": "https://history.hanover.edu/texts/locke/j-l2-008.html",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2216
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2216,
+              "index_in_result_url_list": 1,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2216,
+          "tool_call_id": "turn-67:step:16:tool",
+          "duration_ms": 1933,
+          "result_chunk_sha256": "22fd813b5d220cd51fb8384a242003ad8fd040b85ef0101a9129bd3ea91533cb"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000067337-000067495",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_but_source_text_mirror",
+      "url_classes": [
+        "source_text_mirror"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "introduction of money same person enlarged possessions presently",
+      "url_hits": [
+        {
+          "claim_url": "https://standardebooks.org/ebooks/john-locke/two-treatises-of-government/text/chapter-2-5",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2218
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2218,
+              "index_in_result_url_list": 1,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2218,
+          "tool_call_id": "turn-67:step:17:tool",
+          "duration_ms": 2302,
+          "result_chunk_sha256": "dc81378a5f39b4638c4dfaf2cf579c907c807bbcfc342b0af78f3d4bafabdb97"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000181102-000181280",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "government without declared laws property uncertainty",
+      "url_hits": [
+        {
+          "claim_url": "https://www.law.cornell.edu/supremecourt/text/62/290",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2220
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2220,
+              "index_in_result_url_list": 1,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2220,
+          "tool_call_id": "turn-67:step:18:tool",
+          "duration_ms": 2117,
+          "result_chunk_sha256": "a423bda5e1836d9f272ce4686804639ac537fda371316f3321d8fb64712cd86e"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000183444-000183692",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_but_source_text_mirror",
+      "url_classes": [
+        "source_text_mirror"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "unlimited extemporary decrees worse than state of nature",
+      "url_hits": [
+        {
+          "claim_url": "https://standardebooks.org/ebooks/john-locke/two-treatises-of-government/text/chapter-2-11",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2222,
+            2226
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2222,
+              "index_in_result_url_list": 1,
+              "result_url_count": 5
+            },
+            {
+              "transcript_line": 2226,
+              "index_in_result_url_list": 2,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2222,
+          "tool_call_id": "turn-67:step:19:tool",
+          "duration_ms": 2294,
+          "result_chunk_sha256": "1d737c042f706943557fea6d4277e17d59f9ac3ea5f7e8754291a1dfaefc1ce7"
+        },
+        {
+          "transcript_line": 2226,
+          "tool_call_id": "turn-67:step:21:tool",
+          "duration_ms": 3252,
+          "result_chunk_sha256": "9e517032f64f6450a499d72739b6ec0f476edb8ba0c93933b6e8991ff9f9fd29"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000185812-000186025",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "permanent legislature or absolute monarch enriched itself from the people",
+      "url_hits": [
+        {
+          "claim_url": "http://press-pubs.uchicago.edu/founders/print_documents/amendV_due_processs6.html",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2226
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2226,
+              "index_in_result_url_list": 1,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2226,
+          "tool_call_id": "turn-67:step:21:tool",
+          "duration_ms": 3252,
+          "result_chunk_sha256": "9e517032f64f6450a499d72739b6ec0f476edb8ba0c93933b6e8991ff9f9fd29"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000191483-000191832",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_but_source_text_mirror",
+      "url_classes": [
+        "source_text_mirror"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "same persons making and executing laws exempted themselves",
+      "url_hits": [
+        {
+          "claim_url": "https://lonang.com/library/reference/locke-two-treatises-government/loc-212/",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2228
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2228,
+              "index_in_result_url_list": 1,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2228,
+          "tool_call_id": "turn-67:step:22:tool",
+          "duration_ms": 3126,
+          "result_chunk_sha256": "85d2b9dd6dbbca2bff126476ec3a83b11b3e07b74e826fad076d14140d3a46cd"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000195506-000195733",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_but_source_text_mirror",
+      "url_classes": [
+        "source_text_mirror"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "separate executive and federative commands caused disorder",
+      "url_hits": [
+        {
+          "claim_url": "https://respublicalibrary.org/locke-second-treatise/12/",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2230
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2230,
+              "index_in_result_url_list": 3,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2230,
+          "tool_call_id": "turn-67:step:23:tool",
+          "duration_ms": 3132,
+          "result_chunk_sha256": "3e5149cbc76e9d304696f3f1b28efcedcb58f208a57505ab1009d036f0eeb8cc"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000200176-000200509",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "executive with a legislative share was barely subordinate",
+      "url_hits": [
+        {
+          "claim_url": "https://www.cambridge.org/core/journals/european-journal-of-political-research/article/new-political-system-model-semiparliamentary-government/D9EFDEED7D0BC00BC835A2BAF1677962",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2224
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2224,
+              "index_in_result_url_list": 1,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2224,
+          "tool_call_id": "turn-67:step:20:tool",
+          "duration_ms": 2149,
+          "result_chunk_sha256": "92b95d0d7dae925e37bb3f5aecd9f031c33c63cc46dafde3b0ed48d546b1f69c"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000205615-000205847",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "long legislative sessions produced a named dangerous inconvenience",
+      "url_hits": [
+        {
+          "claim_url": "https://api.parliament.uk/historic-hansard/commons/1844/mar/05/late-sittings",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2249
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2249,
+              "index_in_result_url_list": 2,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2249,
+          "tool_call_id": "turn-67:step:33:tool",
+          "duration_ms": 4275,
+          "result_chunk_sha256": "fb1649ebbb52515429b72cd9fe42748991b066a4cdd3be43e4649d7cf8eec90a"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000210105-000210306",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "reformer who equalized representation received consent",
+      "url_hits": [
+        {
+          "claim_url": "https://www.parliament.uk/about/living-heritage/transformingsociety/electionsvoting/chartists/case-study/the-right-to-vote/thomas-attwood-and-the-birmingham-political-union/reform-and-the-birmingham-connection/",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2237
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2237,
+              "index_in_result_url_list": 2,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2237,
+          "tool_call_id": "turn-67:step:27:tool",
+          "duration_ms": 3064,
+          "result_chunk_sha256": "d046aa183780de4cfc9ef7e57c32c784abdcf29163f75e43f041a378addcc540"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000223648-000223868",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "resistance doctrine unused until a majority was weary",
+      "url_hits": [
+        {
+          "claim_url": "https://nhcp.gov.ph/the-palaris-revolt-of-1762/",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2235
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2235,
+              "index_in_result_url_list": 1,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2235,
+          "tool_call_id": "turn-67:step:26:tool",
+          "duration_ms": 2699,
+          "result_chunk_sha256": "39c2b802b81e7610f3586276554dd066a5887c56c744f636ae3c948c48575dd7"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000255663-000255976",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "conquered people threw off the yoke when courage and opportunity came",
+      "url_hits": [
+        {
+          "claim_url": "https://en.wikisource.org/wiki/Ancient_Egypt_(Rawlinson)/Three_Desperate_Revolts",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2245
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2245,
+              "index_in_result_url_list": 1,
+              "result_url_count": 6
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2245,
+          "tool_call_id": "turn-67:step:31:tool",
+          "duration_ms": 2692,
+          "result_chunk_sha256": "004dd3a9f135006fda821b46d679c59bbef6c00ec37adf3483259d1cb8f214bf"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000265059-000265308",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_but_source_text_mirror",
+      "url_classes": [
+        "source_text_mirror"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "opposition limited to unjust force was not followed by the suggested anarchy",
+      "url_hits": [
+        {
+          "claim_url": "https://www.essentialscholars.org/sites/default/files/2022-12/essential-locke-chapter-8.pdf",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2241,
+            2243
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2241,
+              "index_in_result_url_list": 1,
+              "result_url_count": 5
+            },
+            {
+              "transcript_line": 2243,
+              "index_in_result_url_list": 2,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2241,
+          "tool_call_id": "turn-67:step:29:tool",
+          "duration_ms": 2333,
+          "result_chunk_sha256": "e8637179c84c21e40372ed5409757a1b99b2dc48d13d3e39e60ba0a4d49c4b57"
+        },
+        {
+          "transcript_line": 2243,
+          "tool_call_id": "turn-67:step:30:tool",
+          "duration_ms": 1623,
+          "result_chunk_sha256": "ffd8f392f400bb3d379a046bde44a568f94382ad5b2efc725bcccd87f28d7e29"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000266213-000266490",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "a single prince's personal harm stayed rare and local",
+      "url_hits": [
+        {
+          "claim_url": "https://en.wikisource.org/wiki/Cato%27s_Letters/Letter_72",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2247
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2247,
+              "index_in_result_url_list": 1,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2247,
+          "tool_call_id": "turn-67:step:32:tool",
+          "duration_ms": 2813,
+          "result_chunk_sha256": "169ccef5f99532ecdac1ab5ea4a0b114e972afda8e2d1613078edae23c9d3166"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000268370-000268750",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "where courts gave relief, slight injuries did not bring force",
+      "url_hits": [
+        {
+          "claim_url": "https://voxjuris.org/judgment/1966-insc-96/mrs-veeda-menezes-v-yusuf-khan-and-anr",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2239
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2239,
+              "index_in_result_url_list": 3,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2239,
+          "tool_call_id": "turn-67:step:28:tool",
+          "duration_ms": 1780,
+          "result_chunk_sha256": "2a8986842e13a68d714b657c2ffd51fdd255cffeab23cca61af40167de7bccfb"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000270412-000270601",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_but_source_text_mirror",
+      "url_classes": [
+        "source_text_mirror"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "private cases of tyranny did not suddenly disturb government",
+      "url_hits": [
+        {
+          "claim_url": "https://standardebooks.org/ebooks/john-locke/two-treatises-of-government/text/chapter-2-18",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2243
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2243,
+              "index_in_result_url_list": 1,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2243,
+          "tool_call_id": "turn-67:step:30:tool",
+          "duration_ms": 1623,
+          "result_chunk_sha256": "ffd8f392f400bb3d379a046bde44a568f94382ad5b2efc725bcccd87f28d7e29"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000271135-000271602",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "majority under that threat was not hindered from resisting",
+      "url_hits": [
+        {
+          "claim_url": "https://press-pubs.uchicago.edu/founders/documents/v1ch3s2.html",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2253
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2253,
+              "index_in_result_url_list": 1,
+              "result_url_count": 6
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2253,
+          "tool_call_id": "turn-67:step:35:tool",
+          "duration_ms": 2291,
+          "result_chunk_sha256": "de77b216039bd78a3fb4c76a29305c816093a93197717ba3cf6f83d071022170"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000271933-000272095",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "a governor aiming at the people's good made them feel it",
+      "url_hits": [
+        {
+          "claim_url": "https://www.colonialsociety.org/node/2511",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2251
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2251,
+              "index_in_result_url_list": 2,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2251,
+          "tool_call_id": "turn-67:step:34:tool",
+          "duration_ms": 1924,
+          "result_chunk_sha256": "0f3604a909b02d1ddb82f885d546e89dd714b239576cbd203838c5b20b98e36e"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000272981-000273196",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "a long train of actions made the direction visible",
+      "url_hits": [
+        {
+          "claim_url": "https://www.loc.gov/exhibits/creating-the-united-states/interactives/declaration-of-independence/abuses/enlarge6-transcribe.html",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2255
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2255,
+              "index_in_result_url_list": 1,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2255,
+          "tool_call_id": "turn-67:step:36:tool",
+          "duration_ms": 3381,
+          "result_chunk_sha256": "f9eed447db6be293164712debfffe1021ebe85c8b486115c9889d78d95e3f70a"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000289428-000289541",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "acknowledged constitutional faults were left unamended",
+      "url_hits": [
+        {
+          "claim_url": "https://www.pewresearch.org/short-reads/2026/09/14/the-us-constitution-is-among-the-hardest-in-the-world-to-amend/",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2258
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2258,
+              "index_in_result_url_list": 3,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2258,
+          "tool_call_id": "turn-67:step:38:tool",
+          "duration_ms": 1997,
+          "result_chunk_sha256": "85e0f616ad8a52353188684a4f1d94561a2323b36b297605ca65359b680d5326"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000290688-000290830",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "generally ill-treated people were ready at each occasion",
+      "url_hits": [
+        {
+          "claim_url": "https://doi.org/10.1080/01419870.2022.2034911",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2266
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2266,
+              "index_in_result_url_list": 1,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2266,
+          "tool_call_id": "turn-67:step:42:tool",
+          "duration_ms": 3955,
+          "result_chunk_sha256": "fdc76183253cf294b398b989b8c8c90f73966345a48582ccbfcf6085b3542960"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000290833-000290977",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "opportunities to resist arrived soon after ill treatment",
+      "url_hits": [
+        {
+          "claim_url": "https://ageconsearch.umn.edu/record/195752/files/NL2014-104.pdf",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2260
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2260,
+              "index_in_result_url_list": 1,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2260,
+          "tool_call_id": "turn-67:step:39:tool",
+          "duration_ms": 1775,
+          "result_chunk_sha256": "35f45ca9f8cb3e757a6fa155c7a9bd63814f3f8c4357daa9515ce41592c439bd"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000291306-000291464",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_but_source_text_mirror",
+      "url_classes": [
+        "source_text_mirror"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "ordinary bad laws were borne without mutiny",
+      "url_hits": [
+        {
+          "claim_url": "https://www.thomasblechschmidt.de/2017/02/11/ttog-ii-%c2%a7-225/",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2264
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2264,
+              "index_in_result_url_list": 2,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2264,
+          "tool_call_id": "turn-67:step:41:tool",
+          "duration_ms": 3188,
+          "result_chunk_sha256": "41eb65642e63668dc4faf4780be29778fc1f00553cdede306344c25751517b18"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000291476-000291863",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "a visible long train was followed by an attempt to change rulers",
+      "url_hits": [
+        {
+          "claim_url": "https://www.loc.gov/exhibits/creating-the-united-states/interactives/declaration-of-independence/abuses/enlarge6-transcribe.html",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2255
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2255,
+              "index_in_result_url_list": 1,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2255,
+          "tool_call_id": "turn-67:step:36:tool",
+          "duration_ms": 3381,
+          "result_chunk_sha256": "f9eed447db6be293164712debfffe1021ebe85c8b486115c9889d78d95e3f70a"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000292158-000292421",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "states recognizing a right to a new legislature had fewer rebellions",
+      "url_hits": [
+        {
+          "claim_url": "https://jrv.mycpanel.princeton.edu/Gandhi&Vreeland_LASA04.pdf",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2268
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2268,
+              "index_in_result_url_list": 1,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2268,
+          "tool_call_id": "turn-67:step:43:tool",
+          "duration_ms": 3464,
+          "result_chunk_sha256": "235d0152c5abf10573cc66ebeb583d41668aa4e4d1f8dec36eaa9b8e8eb5686f"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000293015-000293191",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "people in power committed the evil more often than others",
+      "url_hits": [
+        {
+          "claim_url": "https://www.theatlantic.com/national/archive/2014/09/police-officers-who-hit-their-wives-or-girlfriends/380329/",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2274
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2274,
+              "index_in_result_url_list": 1,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2274,
+          "tool_call_id": "turn-67:step:46:tool",
+          "duration_ms": 4696,
+          "result_chunk_sha256": "82a8e723aaa0723d03634468c5c74cc3b24985a0b85c9e254bb1f55d4fd1eea6"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000297305-000297647",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "isolated resistance failed until the mischief was general",
+      "url_hits": [
+        {
+          "claim_url": "https://en.wikipedia.org/wiki/Rising_of_the_Priests",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2270
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2270,
+              "index_in_result_url_list": 3,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2270,
+          "tool_call_id": "turn-67:step:44:tool",
+          "duration_ms": 2840,
+          "result_chunk_sha256": "0c09a07336c18ddaaba66f1934cf7cc4923d0bffeaa3bcb889c07c5bffa0a209"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000305364-000305567",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "shield-only resistance to an assault ended quickly and worsened the defender's treatment",
+      "url_hits": [
+        {
+          "claim_url": "https://www.bbc.com/news/uk-england-lincolnshire-29855270",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2262
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2262,
+              "index_in_result_url_list": 2,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2262,
+          "tool_call_id": "turn-67:step:40:tool",
+          "duration_ms": 1527,
+          "result_chunk_sha256": "024603d8b8b0dd0676405428facd5d7ddd391f3ae07b7c1341a8d7f2a61eccfb"
+        }
+      ]
+    },
+    {
+      "claim_id": "txt-720196308b-000315771-000315924",
+      "r2_verdict": "暂无法判断",
+      "kept_unknown": true,
+      "bound_as_outcome_evidence": false,
+      "status": "real_web_search_return_url_corresponds",
+      "url_classes": [
+        "external_search_hit"
+      ],
+      "select_query_is_plan_only": true,
+      "select_query_not_byte_verified": "later writers abhorred the servile flatterers Locke names",
+      "url_hits": [
+        {
+          "claim_url": "https://doi.org/10.7208/chicago/9780226015675.003.0011",
+          "match": "exact_in_tool_result",
+          "transcript_lines": [
+            2272
+          ],
+          "periods": [
+            "r2"
+          ],
+          "positions": [
+            {
+              "transcript_line": 2272,
+              "index_in_result_url_list": 1,
+              "result_url_count": 5
+            }
+          ]
+        }
+      ],
+      "tool_calls": [
+        {
+          "transcript_line": 2272,
+          "tool_call_id": "turn-67:step:45:tool",
+          "duration_ms": 2937,
+          "result_chunk_sha256": "00256eef362349e6525a11b27c6b7768b1c11d2ba3057a083bf45ec99e3a4271"
+        }
+      ]
+    }
+  ]
+}

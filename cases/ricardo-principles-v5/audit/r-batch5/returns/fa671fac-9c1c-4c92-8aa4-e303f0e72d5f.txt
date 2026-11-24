@@ -1,0 +1,1697 @@
+Discussion Paper ISSN 2042-2695 
+No. 2033 
+September 2024 
+
+The distributional consequences of trade: Evidence from the Grain Invasion
+
+#### Stephan Heblich Stephen J. Redding Yanos Zylberberg
+
+Abstract 
+We examine the distributional consequences of trade using the New World Grain Invasion that occurred 
+in the second half of the 19th century. We use a newly-created dataset on population, employment by 
+sector, property values, and poor law transfers for over 10,000 parishes in England and Wales from 
+1801–1901. In response to this trade shock, we show that locations with high wheat suitability 
+experience population decline, rural-urban migration, structural transformation away from agriculture, 
+increases in welfare transfers, and declines in property values, relative to locations with low wheat 
+suitability. We develop a quantitative spatial model to evaluate the income distributional consequences 
+of this trade shock. Undertaking counterfactuals for the Grain Invasion, we show that geography is an 
+important dimension along which these income distributional consequences occur. 
+Keywords: international trade, income distribution, geography 
+JEL: F14; F16; F66 
+This paper was produced as part of the Centre’s Trade Programme. The Centre for Economic 
+Performance is financed by the Economic and Social Research Council. 
+We are grateful to Princeton University, the University of Bristol and the University of Toronto for 
+research support. We would like to thank Leah Boustan, Paula Bustos, Doug Irwin, David Nagy, Chenzi 
+Xu and conference and seminar participants at American Economic Association (AEA), AREUEA, 
+CEPR CURE, CREI, Economic History Association, Harvard-MIT, London School of Economics, 
+NBER Summer Institute, Northwestern, Philadelphia Fed, Princeton, Toronto, Urban Economics 
+Association (UEA), UC Berkeley, and UC Davis. We also would like to thank Leigh Shaw-Taylor and 
+the Cambridge Group for the History of Population and Social Structure, the British Library and Paul 
+Sharp for generously sharing data. Thank you also to Bobray Bordelon and T. Wangyal Shawa for help 
+with GIS data. We are also grateful to Andre Alcantara, Mateus Ferraz Dias, Stephanie Hu, Maximilian 
+Schwarz, Bingqing Yang, Gordon Yi and Yinou Zhang for excellent research assistance. Heblich and 
+Zylberberg acknowledge the support of the ORA Grant ES/V013602/1 (MAPHIS). The usual 
+disclaimer applies. 
+Stephan Heblich, University of Toronto and NBER. Stephen J. Redding, Princeton University, 
+NBER, CEPR and Centre for Economic Performance at London School of Economics. Yanos 
+Zylberberg, University of Bristol and CEPR. 
+Published by 
+Centre for Economic Performance 
+London School of Economic and Political Science 
+Houghton Street 
+London WC2A 2AE 
+
+All rights reserved. No part of this publication may be reproduced, stored in a retrieval system or transmitted in any form or by any means without the prior permission in writing of the publisher nor be issued to the public or circulated in any form other than that in which it is published. Requests for permission to reproduce any article or part of the Working Paper should be sent to the editor at the above address.
+
+ S. Heblich, S.J. Redding and Y. Zylberberg, submitted 2024.
+
+### 1 Introduction
+
+One of the classic insights from international economics is that there are winners and losers from 
+trade. While traditionally research has focused on the aggregate distribution of income across fac 
+tors and sectors, more recent work has highlighted the uneven incidence of trade shocks across 
+regions within a country. We provide new theory and evidence on these distributional conse 
+quences of trade using one of the most in!uential trade shocks in history – the New World Grain 
+Invasion that occurred in the second half of the 19th century following Britain’s Repeal of the 
+Corn Laws.1 The key idea behind our approach is that there is a marked di"erence in agroclimatic 
+conditions between the Western and Eastern parts of England and Wales, with Western locations 
+more suitable for grass (and hence the grazing of cattle and sheep), and Eastern locations more 
+suitable for the cultivation of cereal grains (historically mainly wheat). 
+Following the Grain Invasion, we show that locations with high wheat suitability experience 
+a population decline, rural-urban migration, structural transformation away from agriculture, 
+reallocation within agriculture from arable to pastoral farming, increases in welfare transfers, 
+and a reduction in property values, relative to locations with low wheat suitability. We develop 
+a quantitative spatial model to account for these empirical #ndings. As in conventional trade 
+theories, our model features factor endowment di"erences across locations and factor intensity 
+di"erences across sectors. In contrast to those conventional theories, our framework accom 
+modates heterogeneity in the productivity of land across sectors, products within sectors and 
+locations, as well as population mobility across locations. In response to a fall in the relative 
+price of arable products induced by the Grain Invasion, conventional trade theory emphasizes 
+the aggregate redistribution of income away from landlords towards workers. We #nd that ge 
+ography is an important dimension along which the income distributional e"ects of trade occur, 
+with landlords in high-wheat-suitability locations experiencing notably larger declines in real 
+income than those in low-wheat-suitability locations. 
+We make use of a newly-created, spatially-disaggregated dataset on population, employment 
+by sector, property values, and poor law transfers for over 10,000 parishes in England and Wales 
+from 1801–1901. There are a number of advantages of this empirical setting. First, the Grain 
+Invasion following the Repeal of the Corn Laws in 1846 provides a large-scale international trade 
+shock. Second, we are able to measure regional exposure to this trade shock using exogenous 
+measures of agro-climatic conditions. Third, we have data at a #ne level of spatial disaggregation 
+over a long historical time period to examine the impact of this trade shock. Fourth, we have 
+detailed data on a range of economic outcomes, which enables us to examine the distributional 
+
+1Throughout the paper, we use the word “corn” according to the historical British usage of all cereal grains, including wheat, oats, barley and rye, and not restricted to maize. Of all these cereal grains, wheat was by far the most important in the British market.
+
+consequences of the trade shock across both factors of production and geographical locations. 
+Fifth, we use individual-level census data to track individuals over time, which allows us to ex 
+amine the margins through which the economy adjusts to this trade shock. Sixth, 19th-century 
+Britain was a largely laissez-faire economy, and hence provides a setting in which we would 
+expect the market-based mechanisms in the model to apply. 
+We begin by showing that Britain experienced a large-scale trade shock from the New World 
+Grain Invasion. Over the twenty-#ve year period from 1846–1871, the average price of wheat rel 
+ative to pastoral products fell by around 15 percent, and imports of wheat grew more than #vefold 
+from 1,411-8,952 thousand quarters.2 Traditional suppliers in Prussia and Russia were replaced 
+with new suppliers in Argentina, Canada and the United States, such that the share of wheat 
+imports from the New World rose from 17-43 percent. In the next three decades from 1871–1901, 
+the average price of wheat relative to pastoral products fell by a further 26 percent, and imports of 
+wheat increased by an additional 77 percent. With continuing reductions in transatlantic trans 
+port costs from the steam ship and railway, the share of Britain’s wheat imports from the New 
+World more than doubled from 43-95 percent. 
+We next establish a substantial reallocation of economic activity following this trade shock: 
+(i) within agriculture from arable to pastoral farming; (ii) between agriculture and other sectors; 
+and (iii) between high and low-wheat suitability locations within Britain. Over the period from 
+1871 (the #rst year of the agricultural census) to 1901, acreage of cereal grains declined by 29 
+percent, while acreage of permanent pasture rose by 35 percent. Between 1851 and 1901, the share 
+of agricultural laborers in employment declined by more than 20 percentage points in Eastern 
+locations with the highest levels of wheat suitability, compared to a fall of less than 10 percentage 
+points in Western locations with the lowest levels of wheat suitability. 
+To tighten the connection between this reallocation of economic activity and the Grain Inva 
+sion, we estimate event-study speci#cations using our exogenous measure of wheat suitability. 
+We include parish and year #xed e"ects to control for time-invariant unobserved heterogeneity 
+across locations and secular trends over time. We include interactions between observed parish 
+characteristics and year dummies to control for other determinants of parish growth rates. In 
+the #rst half of the 19th-century, we #nd no di"erences in trends between high and low-wheat 
+suitability locations. In the second half of the 19th-century following the Grain Invasion, we #nd a 
+relative economic decline in high-wheat-suitability locations compared to low-wheat-suitability 
+locations. By the end of our sample period in 1901, we estimate a relative decline of population 
+and property values of 18 and 24 percent, respectively. 
+
+2The price index for pastoral products includes eleven pastoral products, as discussed further below, and in Online Appendix F2.1. A quarter corresponded to a quarter of a ton, which equalled 8 bushels of 8 gallons each (64 gallons), where a gallon was a volume of water weight of ten troy pounds (3.74 kilograms).
+
+We next develop a quantitative spatial model to account for these empirical #ndings and 
+evaluate their implications for the distribution of real income. We model parishes as small open 
+economies that face exogenous prices of traded goods determined on world markets. We con 
+sider three production sectors: agriculture, manufacturing and services. Within agriculture, we 
+distinguish between arable farming (cereal grains) and pastoral farming (grazing). Markets are 
+competitive. Goods are produced using labor and land. Each parish is endowed with a continuum 
+of land plots that are heterogeneous in terms of their productivities for alternative land uses. Land 
+is owned by landlords who are geographically immobile. Workers are geographically mobile and 
+have idiosyncratic preferences for each location. 
+We calibrate the model’s parameters using data from our historical setting and estimates from 
+the related empirical literature. We show that the model rationalizes our observed data on arable 
+and pastoral land use, sectoral employment, and the market rental value of land and buildings 
+(rateable values) across locations and over time as equilibrium outcomes. Given these observed 
+data on the model’s endogenous variables, we show how the model can be inverted to recover un 
+observed location characteristics in each year: relative productivity in arable and pastoral farming 
+within agriculture; relative productivity in the agricultural, manufacturing and services sectors; 
+and relative amenities across locations. We allow each of these unobserved characteristics to 
+change across locations and over time, such that our model controls for other determinants of 
+economic activity, including manufacturing productivity growth driven by technological inno 
+vation, and changes in amenities from the disease environment. 
+We use the model to undertake a counterfactual for the Grain Invasion, which corresponds to 
+an exogenous fall in the price of arable products on world markets. We follow an exact-hat algebra 
+approach, in which we use the observed values of the model’s endogenous variables in an initial 
+year to control for unobserved location characteristics. We undertake these counterfactuals using 
+both the observed fall in the relative price of arable products from 1846–1871 after the Repeal of 
+the Corn Laws, and its subsequent fall from 1871–1901 following the continuing integration of 
+New World producers into global markets. These counterfactuals isolate the general equilibrium 
+impact of the Grain Invasion, holding constant other determinants of economic activity, including 
+the prices of other traded goods, productivities and amenities. 
+In response to a fall in the price of arable products, the model predicts a reallocation of land 
+from arable to pastoral use within the agricultural sector; a reallocation of employment away 
+from the agricultural sector towards manufacturing and services; and a reallocation of population 
+away from locations with higher initial shares of arable land use. We #nd that these reallocations 
+in our counterfactuals (where only the price of arable products changes) are sizable relative to the 
+observed reallocations in the data (which include other shocks, such as changes in productivities 
+and amenities). We #nd substantial e"ects for both sub-periods 1846–1871 and 1871–1901, high 
+
+lighting the importance of both the initial Repeal of the Corn Laws and the subsequent deepening 
+integration of New World producers into global markets. 
+We #nd that the Grain Invasion has large income distributional consequences across loca 
+tions, with the change in the rental rate ranging from reductions of 10 percent in locations with 
+high wheat suitability to rises of 10 percent in locations with low wheat suitability. These results 
+contrast with the predictions of the conventional Heckscher-Ohlin model with two goods, two 
+factors and labor immobility, in which a decline in the price of the land-intensive agricultural 
+good necessarily reduces the rental rate and increases the wage. Our framework generates much 
+richer income distributional predictions for two main reasons, First, the decline in the price of 
+arable products leads to a reallocation within agriculture from arable to pastoral farming. Since 
+arable farming is land intensive relative to manufacturing and services, but labor intensive rela 
+tive to pastoral farming, this reallocation towards pastoral farming mitigates the reduction in the 
+demand for land from the contraction of the agricultural sector as a whole. Second, the decline in 
+the price of arable products reduces labor demand in high-wheat-suitability locations and leads to 
+a population redistribution away from these locations towards those with low wheat suitability. 
+This population redistribution magni#es the decline in the price of land in high-wheat-suitability 
+locations and increases the price of land in low-wheat-suitability locations. 
+Our paper relates to several strands of existing research. First, we contribute to the recent 
+empirical literature on the local labor market e"ects of international trade shocks, including 
+Topalova (2010), Autor et al. (2013), Kovak (2013), Autor et al. (2014), Pierce and Schott (2016), 
+Costa et al. (2016), Dix-Carneiro and Kovak (2017), Caliendo et al. (2019), Borusyak and Jaravel 
+(2021), Kim and Vogel (2021), as reviewed in Redding (2022). Much of this research has focused 
+on the China shock, because of its size, and the fact that it was driven by domestic supply-side 
+reform. We provide evidence from another large-scale international trade shock and exploit an 
+exogenous exposure measure based on agroclimatic suitability for wheat cultivation. We have 
+rich spatially-disaggregated data on a range of economic outcomes over a long historical time 
+period. We use individual-level population census data to trace margins of adjustment to this 
+trade shock. We combine our micro data and quasi-experimental variation with a quantitative 
+spatial model to evaluate the income distributional consequences of this trade shock. 
+Second, our paper is also related to recent research on quantitative spatial models, including 
+Redding and Sturm (2008), Allen and Arkolakis(2014), Ahlfeldt et al. (2015), Donaldson and Horn 
+beck (2016), Redding (2016), Donaldson (2018), Allen et al. (2017), Caliendo et al. (2018), Desmet 
+et al. (2018), Gaubert (2018), Monte et al. (2018), Caliendo et al. (2019), Fajgelbaum and Gaubert 
+(2020), and Galle et al. (2023), as reviewed in Redding and Rossi-Hansberg (2017). One strand of 
+this research examines the relationship between structural transformation and trade, including 
+Bustos et al. (2016), Sotelo (2020), Fajgelbaum and Redding (2022), Peters (2022), Farrokhi and 
+
+Pellegrina (2023), Eckert and Peters (2023) and Nagy (2023). We use the natural experiment of the 
+Grain Invasion to provide evidence on the relationship between structural transformation and 
+trade. We use our quantitative spatial model to evaluate the income distributional consequences 
+of this trade shock across locations and factors of production. 
+Third, our paper is related to a large economic history literature on the Repeal of the Corn 
+Laws and the Grain Invasion from the New World, including Graham (1892), Nicholson (1904), 
+Lord Ernle (1912), Barnes (1930), Olson and Harris (1959), Williamson (1990), O’Rourke et al. 
+(1996), O’Rourke (1997), Howe (1998), Taylor (1999), Schonhardt-Bailey (2006), Sharp and Weis 
+dorf (2013), Sharp (2009), O’Rourke and Williamson (2001), Cannadine (2019), Chepeliev and Ir 
+win (2021) and Bräuer and Kersting (2024). Most of this research has focused on the implications 
+of this trade shock for the distribution of income across factors (land and labor) and sectors (agri 
+culture and manufacturing). In contrast, we examine the uneven geographical incidence of this 
+trade shock, and the close connection between structural transformation and rural depopulation, 
+using our quantitative spatial general equilibrium model. 
+The remainder of the paper is structured as follows. Section 2 introduces the historical back 
+ground to the Repeal of the Corn Laws and the Grain Invasion. Section 3 summarizes our data 
+sources and de#nitions. Section 4 presents reduced-form evidence on the impact of this interna 
+tional trade shock across sectors and locations. Section 5 develops the theoretical model that we 
+use to rationalize these empirical #ndings. Section 6 quanti#es the model and reports the results 
+of our counterfactuals for the Grain Invasion. Section 7 summarizes our conclusions. 
+
+### 2 Historical Background
+
+Regulations on wheat imports in Britain under the Corn Laws date back to medieval times.3 From 1670–1815, the law speci#ed a small “nominal” duty payable when the domestic price was high and a “pivot level” for the domestic price below which larger duties were payable. In the #rst half of the 18th century, Britain was largely self-su$cient in grain, and the import duties were suspended in times of scarcity, which limited their impact on the domestic price of wheat. How ever, following the onset of the industrial revolution in the 1760s and rapid population growth, the Corn Laws became of increasing relevance, as Britain developed into a growing net importer of wheat, with Prussia and Russia the traditional sources of supply. In the aftermath of the French Revolution, Britain and France were almost continuously at war during the Revolutionary and Napoleonic Wars from 1792–1815. This widespread con!ict and Napoleon’s continental blockade restricted Britain’s access to wheat imports from traditional
+
+3For historical discussions of the Corn Laws, see for example Nicholson (1904), Lord Ernle (1912), Barnes (1930), Fay (1932), and Sharp (2009).
+
+suppliers in continental Europe and led to a rise in the domestic price of wheat and an expansion in domestic wheat production.4 In Figure 1, we show the price of wheat relative to a price index for pastoral products from 1701–1901, using the farm price data from Clark (2004).5 Both prices are normalized to take the value one in 1701, such that the #gure shows changes in relative prices over time. The substantial year-on-year !uctuations in part re!ect variation in weather conditions and the harvest. Over the wartime period from 1792–1815 as a whole, the relative price of wheat was 10.8 percent higher than during the years before 1792. Figure 1: Relative Price of Wheat from 1701–1901
+
+.5
+
+1
+
+1 . 5
+
+2
+
+2 . 5
+
+1700 1750 1800 1850 1900 Year Note: Price of wheat relative to a pastoral price index using the farm price data from Clark (2004); Pastoral price index is based on the price of eleven pastoral products: hay, cheese, butter, milk, beef, mutton, pork, bacon, tallow, wool and eggs; Gray vertical lines show the years 1792, 1815, 1846 and 1871. Red horizontal lines show means before 1792, from 1792–1815, 1815–1846, 1846–71, and 1871–1901. Straight blue line shows a linear trend from 1846-1901.
+
+Following victory in 1815, the Tory (conservative) government of Lord Liverpool became concerned about the potential for an in!ux of cheap imported grains to cause a collapse in the domestic price of wheat and an agricultural crisis. To prevent such a crisis, his government passed the Corn Law of 1815, which prohibited wheat imports when prices were under 82.5 shillings per quarter, and admitted wheat free of duty above this level. As a result, with a few exceptions of some months during the years 1816–19, British ports were closed to imports of wheat until 1825. Over the period from 1815–1846, the average domestic relative price of wheat in Figure 1 remained around 91.3 percent of its level before 1792.
+
+4See in particular Galpin (1925). For an analysis of the impact of the continental blockade on industrial develop ment in France, see Juhász (2018). 5The pastoral price index is based on the price of eleven pastoral products: hay, cheese, butter, milk, beef, mutton, pork, bacon, tallow, wool and eggs, as discussed in Online Appendix F2.1.
+
+In the early 1830s, domestic harvests were plentiful, and hence domestic prices remained rel atively low, which ensured that discussion of the Corn Laws remained muted. In contrast, from 1837 onwards, poor domestic harvests led to a rise in the domestic price of wheat, and an increase in political protest against the Corn Laws. Supported by the growing constituency of manufac turers, and in!uenced by the intellectual case for free trade as espoused in Ricardo (1817), the Anti-Corn Law League developed into an in!uential nationwide movement, which was led by Richard Cobden and John Bight from 1838 onwards. Around the same time, the economic reces sion of 1838 was the stimulus for the formation of the Chartist Movement, which campaigned for greater democratic representation of the interests of working people. In response to this growing discontent, the Tory Prime Minister Robert Peel attempted an initial set of reforms in 1842, which reduced the level of import duties. Following continuing failed harvests in Europe during the 1840s (the “Hungry Forties”), and with the beginning of the Irish Potato Famine in 1845, political pressure for further reform intensi#ed. Finally, in a move that split his own Tory party, Robert Peel’s government repealed the Corn Laws in 1846.6 Repeal gradually reduced import duties to 1 shilling per quarter in February 1849, with the remaining nominal duty ultimately removed in 1869. Over the period from 1846–1871, the average domestic relative price of wheat in Figure 1 fell to 77.7 percent of its level before 1792 (corresponding to 85 percent of its level from 1815–1846). This Repeal of the Corn Laws left British markets open to the New World Grain Invasion in the second half of the 19th century.7 With improvements in the speed, reliability and capacity of steam ships, transatlantic freight rates fell by around 1.5 percent per annum from around 1840 onwards, with a cumulative decline of around 70 percent points from 1840–1914 (see North 1958, Harley 1988, and Pascali 2017). After the end of the American Civil War in 1865, the U.S. railroad network expanded into the interior, connecting the grain-growing regions of the mid-West to international markets (see Fogel 1964 and Donaldson and Hornbeck 2016). Similar expansions of the railroad network in Argentina and Canada integrated their arable hinterlands with world markets (see Adelman 1994 and Fajgelbaum and Redding 2022). In response to these reductions in international transport costs, there was an in!ux of cheap New World Grain into European markets, as illustrated in Figure 2. The red line indicates UK wheat production; the black line denotes UK wheat consumption (production plus imports); and the di"erence between the two lines shows UK wheat imports (broken down by major sources of supply). Before the Repeal of the Corn Laws in 1846, wheat imports were small, and largely 6Although this repeal is frequently interpreted as a political concession by an existing elite to forestall greater political change, a growing historical literature argues that Peel’s decision was in!uenced by a threefold combination of political interests, ideologies and ideas, including in particular Irwin (1989) and Schonhardt-Bailey (2006). 7In contrast, a number of continental European countries responded to this Grain Invasion with increased levels of protection, as discussed in Trentmann (2008).
+
+originated from traditional sources of supply in Europe. Following the Repeal of the Corn Laws, we observe an increase in wheat imports, which accelerates after the end of the American Civil War. From 1871 onwards, Argentina, Australia, Canada, and the United States all emerge as major New World sources of supply for wheat. In response to this Grain Invasion, the average domestic relative price of wheat in Figure 1 fell to 57.8 percent of its level before 1792 (corresponding to 74 percent of its level from 1846-1871), with the evolution of the relative price after 1846 well approximated by a downward linear trend (blue line). The counterpart of this domestic price decline is a progressive reduction in domestic wheat production in Figure 2, which intensi#es from 1871 onwards in what was referred to at the time as the “great agricultural depression.” Figure 2: United Kingdom Consumption, Production and Imports of Wheat from 1831–1901
+
+Note: Consumption, production and imports of wheat (quantities) in millions of quarters for the United Kingdom based on its 1901 boundaries (England, Wales, Scotland and Ireland); consumption is the sum of domestic production and imports; imports from di"erent source countries indicated by the gray shading and white letters: ARG (Argentina); AUS (Australia); CAN (Canada), IND (India), ROW (Rest of World), RUS (Russia), and US (United States); Source: Sharp (2009).
+
+### 3 Data
+
+We construct a new spatially-disaggregated dataset on population, employment by sector, prop 
+erty values (rateable values), and poor law transfers for England and Wales from 1801–1901.8 Our 
+main source of data is the population census, which we augment with a number of other sources 
+of data, as summarized below, and discussed in further detail in Online Appendix F. 
+Spatial Units: Data are available at three main levels of spatial aggregation: parishes (11,448), 
+poor law unions (575) and counties (53). Parishes were historically the lowest level of local gov 
+ernment in England and Wales, responsible for the provision of public goods, including poor relief 
+(welfare transfers) since the Poor Law Act of 1601. Parish boundaries are relatively stable during 
+the 19th century, but experience substantial changes after 1901, and hence we end our sample in 
+1901. We construct constant parish boundary data every census decade from 1801–1901 using 
+the classi#cation from Shaw-Taylor et al. (2010), as discussed further in Online Appendix F1.2. 
+Following the Poor Law Amendment Act of 1834, parishes were grouped into poor law unions, 
+which became an intermediate tier of local government, responsible for the administration of 
+poor relief for the parishes within their boundaries. These poor law unions correspond closely 
+to registration districts in the population census and we use these two terms interchangeably. 
+Both parishes and registration districts aggregate to counties (e.g., Warwickshire), which were 
+historically the upper tier of local government in England and Wales, responsible for the admin 
+istration of justice, taxes, and parliamentary representation. Parishes have an average area of 
+13 kilometers squared and 1851 population of 1,590, which compares to an average area of 262 
+kilometers squared and 1851 population of 26,401 for registration districts, and an average area 
+of 2,553 kilometers squared and 1851 population of 404,262 for counties. 
+We focus on parishes as our units of analysis for two main reasons. First, registration districts 
+typically aggregate neighboring rural and urban parishes together, whereas we are concerned 
+with the reallocation of economic activity from rural to urban areas. Second, parishes allow us 
+to measure variation in agroclimatic conditions at a #ner level of spatial disaggregation, taking 
+into account local di"erences in soil conditions and topography, whereas registration districts 
+average out this variation. In some of our empirical analysis, we distinguish between rural and 
+urban parishes, where we de#ne these two groups using K-means clustering based on initial 
+population density in 1801, as discussed further in Online Appendix F4. 
+Parish Population: We construct population data from the parish-level records of the popu 
+lation census of England and Wales, which is enumerated every decade from 1801–1901. 
+
+8We focus on England and Wales, because the Scottish population census is enumerated separately, and we have neither rateable value data nor individual-level population census data for Scotland.
+
+Employment by industry: The population census of England and Wales reports detailed in formation on occupation from 1851 onwards. We use this information to construct employment data for the three aggregate sectors of agriculture, manufacturing and services for each parish. Individual-Level Data: Individual-level records from the population census of England and Wales are available digitally for 1851–1861 and 1881–1901 through the Integrated Census Micro data Project (I-CeM).9 We use these individual-level records to track people across locations and sectors over time. Building on the record-linking techniques developed for the United States in Abramitzky et al. (2021), we match individuals across the di"erent waves of the population cen sus. Our matching procedure uses a combination of the age, gender, county of birth and name of each individual to select a unique match across consecutive Census waves. Our use of only these matching variables ensures that the matching process is not in!uenced by individuals’ choices of location and sector after birth. We focus on men, because women often changed their last name upon marriage during our historical time period. In Online Appendix G, we provide further details on the matching process, including match quality and balance statistics for the matched and unmatched samples. The availability of infor mation on county of birth contributes to high match quality, since counties within England and Wales are relatively small geographically. For each consecutive pair of census waves, we match around 30 percent of the population. We thus obtain the following matched samples: 5,323,072 (1851–61), 3,686,306 (1861–81), 7,527,280 (1881–1891), and 12,151,542 (1891–1901). Additionally, the population census reports both current county and county of birth. Therefore, we use this information to construct a separate measure of bilateral migration since birth, which does not require name matching across census waves, and includes both men and women. Rateable Values: We measure the value of land and buildings in England and Wales using rateable values, which correspond to the market rental value of property for tax purposes. In particular, these rateable values are “The annual rent which a tenant might reasonably be ex pected, taking one year with one another, to pay for a hereditament, if the tenant undertook to pay all usual tenant’s rates and taxes ... after deducting the probable annual average cost of the repairs, insurance and other expenses” (Stamp 1920). With a few minor exceptions, they cover all categories of property, including public services (such as tramways, electricity works etc.), government property (such as courts, parliaments etc.), private property (including factories, warehouses, wharves, o$ces, shops, theaters, music halls, clubs, and all residential dwellings), and other property (including colleges and halls in universities, hospitals and other charity prop erties, public schools, and almshouses). They also include both agricultural and non-agricultural land. All categories of properties were assessed, regardless of whether or not their owners were liable for income tax. The main exemptions are roads, canals, railways, mines, quarries, Crown
+
+9The individual-level records for the 1801–1841 and 1871 population censuses are not available digitally. 10
+
+property occupied by the Crown, and places of divine worship. We construct rateable values 
+for each parish for the years for which these are available from 1815–1896 by digitizing the data 
+reported in the publications of the Houses of Parliament (see Online Appendix F1.3). 
+Poor Law Transfers: The poor law corresponded to a system of welfare transfers for the poor, 
+dating back to the 1601 Poor Relief Act, as discussed in Boyer (1990) and Renwick (2017). Orig 
+inally, these welfare transfers were administered at the parish level, and provided money and 
+resources for those in need, typically referred to as “outdoor relief.” After the 1834 New Poor Law 
+Act, parishes were grouped into Poor Law Unions (registration districts), and there was a move 
+towards housing poor law recipients in designated workhouses, typically referred to as “indoor 
+relief.” Nevertheless, substantial amounts of outdoor relief continued to be given, even after 1834. 
+We construct data on the number of paupers relieved for each registration district for 1841, 1851, 
+1860, 1870, 1881 and 1891 by digitizing the data reported in the publications of the Houses of 
+Parliament (see Online Appendix F1.4). 
+Agricultural Prices, Production and Trade: We use data on the prices of wheat, arable prod 
+ucts and pastoral products for English agriculture from Clark (2004). We obtain data on total 
+wheat imports and wheat imports from di"erent exporting countries for the United Kingdom 
+from Sharp (2009), Sharp (2010), and Sharp and Weisdorf (2013). 
+Agricultural Production: We use county-level data on agricultural land use in acres from the 
+Agricultural Returns of the United Kingdom from 1871–1901. Agricultural acreage is reported 
+for a number of di"erent categories: (i) wheat; (ii) other corn crops (e.g., barley, oats and rye); 
+(iii) permanent pasture or grass not broken up in rotation; (iv) clover, sanfoin and grasses under 
+rotation; (v) green crops (potatos, turnips and swedes, mangold, carrots, cabbage, kohl-rabi and 
+rape, and vetches); and (vi) bare fallow (land remaining uncropped for a season and kept free of 
+vegetation). We also use data on cultivated land area for a number of di"erent crops from the 
+1801 crop census, as used in Caprettini and Voth (2020), and the 1836 Tithe Surveys. We construct 
+our exogenous measure of exposure to the Grain Invasion using data on the suitability of climate 
+and soil conditions for the cultivation of wheat from the United Nations Food and Agricultural 
+Organization Global Agro-Ecological Zones (GAEZ) dataset, as used in Costinot et al. (2016). 
+Consistent with 19th-century farming practices in England and Wales, we use the measure of 
+wheat suitability for low-input and rain-fed cultivation. 
+
+### 4 Reduced-Form Evidence
+
+In this section, we present reduced-form evidence on the impact of the Grain Invasion. In Subsec tion 4.1, we introduce our exogenous measure of location exposure to the Grain Invasion, based on the suitability of agroclimatic conditions for the cultivation of wheat. In Subsection 4.2, we 11
+
+provide evidence on the relationship between structural transformation away from agriculture and wheat suitability over time. In Subsection 4.3, we examine reallocation between arable and pastoral products within agriculture over time. In Subsection 4.4, we provide further evidence on timing using an event-study speci#cation. In Section 4.5, we use our individual-level census data to directly examine mobility decisions in response to this international trade shock.
+
+4.1 Grain and Grazing Regions 
+An advantage of our empirical setting is that there is a marked di"erence in agroclimatic con 
+ditions between the Western and Eastern parts of England and Wales.10 In particular, the warm 
+ocean current of the North Atlantic Drift and the prevailing winds from the South-West generate 
+greater cloud cover, more precipitation, and lower average temperatures in Western areas. Many 
+of the more mountainous areas of England and Wales are also concentrated in these Western 
+areas (such as the Welsh mountains and the Lake District), with a line of hills (the Pennines) run 
+ning approximately down the middle of England. As a result, these more rugged Western areas 
+typically have thinner and more barren soils. 
+In contrast, the Eastern parts of the country are in the rain shadow of these mountains, with 
+lower cloud cover, less precipitation, and higher average temperatures. These Eastern areas are 
+also more low-lying, with thicker and more fertile soils, in part because of the accumulated sed 
+iment from the water erosion of the more mountainous areas to the West. For these combined 
+reasons of climate, terrain and soil, Western locations are more suitable for grass (and hence the 
+grazing of cattle and sheep), while Eastern locations are more suitable for the cultivation of corn 
+(historically mainly wheat, but also barley, maize, and rye). 
+This di"erence in agroclimatic conditions has been re!ected in longstanding di"erences in 
+agricultural land use between Western and Eastern regions. In his seminal mid-19th century 
+study of the state of English agriculture, Caird (1852) drew a line approximately down the middle 
+of England that separated the “grazing counties” of the West from the “corn counties” of the East, 
+as shown in a reproduction of his original map in Panel (a) of Figure 3. 
+As a check on this categorization, we superimpose the Caird line on a map of low-input, 
+rain-fed wheat suitability from the United Nations Global Agro-Ecological Zones (GAEZ) data 
+in Panel (b) of Figure 3.11 Although this GAEZ measure is computed for the period 1961–1990, 
+these di"erences in relative agroclimatic conditions between the Western and Eastern parts of 
+England and Wales have been stable for centuries.12 As shown in the #gure, we #nd a close 
+10See, for example, the classic volume on the physical geography of Britain by Goudie and Brunsden (1995). 
+11We provide further evidence on the relationship between arable/pastoral farming and agroclimatic suitability 
+for the cultivation of wheat using the 1836 Tithe maps for unenclosed land in Section B2 of the Online Appendix. 
+12Despite this stability in relative agroclimatic conditions, there was an increase in overall temperature levels 
+during the medieval warm period (900–1300 CE) and a decrease in overall temperature levels during the little ice age 
+12 
+
+Figure 3: Caird’s Western-Grazing and Eastern-Corn Counties and Wheat Suitability (UN GAEZ)
+
+(a) Reproduction of Caird’s Original Map (b) Wheat Suitability (UN GAEZ) Note: Panel (a) shows a reproduction of Caird’s (1852) original map; the thick black line shows his division between the grazing and the corn counties; the thin red line shows the outline of England and Wales used to georeference the original map; Panel (b) shows Low-Input, Rain-Fed Wheat Suitability from the United Nations Global Agro-Ecological Zones (UN GAEZ); lighter shading corresponds to greater suitability for wheat cultivation.
+
+correspondence between the Caird line and wheat suitability as measured by UN GAEZ. Despite the clear di"erences between Western and Eastern areas, we also #nd some heterogeneity in wheat suitability within each of these parts of England and Wales, which we exploit using our spatially-disaggregated parish-level data. In particular, for each parish, we compute mean wheat suitability across 5 arc-minute pixels within its geographical boundaries.
+
+4.2 Structural Transformation We now use this exogenous measure of wheat suitability based on agroclimatic conditions to provide evidence on the impact of the Grain Invasion on the distribution of economic activity across sectors and regions. We begin by con#rming that West-East location within England and Wales is accompanied by systematic di"erences in agricultural practices. In particular, arable farming (including corn cultivation) is more input intensive than pastoral farming (including the (1300–1850 CE), as discussed for example in Fagan (2019).
+
+grazing of cattle and sheep). Whereas cattle and sheep can be left to graze in #elds and pastures, 
+corn cultivation involves a number of horticultural tasks, such as plowing, sowing, weeding, 
+harvesting and threshing. 
+In Figure 4, we display the shares of farmers (red) and agricultural laborers (blue) in employ 
+ment in 1851 (solid lines) and 1901 (dashed lines) against West-East location, as measured by the 
+Eastings of the British National Grid (BNG) of the Ordnance Survey (OS).13 In each case, we show 
+the #tted values from kernel (Epanechnikov) regressions (dark lines) and the 95 percent con#- 
+dence intervals (light gray shading). We #nd that the share of farmers in employment is relatively 
+!at and in fact declines as one moves further Eastwards. In contrast, the share of agricultural la 
+borers in employment rises as one moves further Eastwards, consistent with these more Easterly 
+locations specializing in more labor-intensive corn cultivation. 
+Figure 4: Employment Shares of Agricultural Laborers and Farmers in 1851 and 1901 by Easting 
+
+Note: Kernel (Epanechnikov) regressions of employment shares on Easting across parishes in England and Wales; dark lines show #tted values and lighter shading shows 95 percent point con#dence intervals; Eastings are based on the British National Grid (BNG) of the Ordnance Survey (OS) and measure East-West location, where the Guildhall in the center of the City of London has an Easting of 532 kilometers. Between 1851 and 1901, there is a decline in the share of farmers in employment. Over the same period, however, there is a much larger decline in the share of agricultural laborers in em ployment, with the largest declines observed for locations with Easting of more than 400 (where Birmingham has an Easting of 408). As a result, the West-East gradient in the share of agricul tural laborers in employment becomes shallower over time. Therefore, we #nd greater structural
+
+13The #rst year for which employment by industry is available in the population census is 1851. To provide a benchmark for the interpretation of the Eastings, the Guildhall in the center of the historical City of London has an Easting of 532 kilometers.
+
+transformation away from agriculture in Eastern-corn locations than in Western-grazing loca 
+tions following the Grain Invasion in the second half of the 19th century.14 
+In Figure 5, we tighten this connection between structural transformation and wheat suit 
+ability, by displaying the changes in the shares of sectors in employment from 1851–1901 against 
+our wheat suitability measure (normalized to lie between 0 and 1).15 In each case, we show the 
+#tted values from kernel (Epanechnikov) regressions (dark lines) and the 95 percent con#dence 
+intervals (light gray shading). As shown in the top-left panel, there is a much greater overall 
+decline in agricultural employment in high-wheat-suitability locations. Comparing the top-left 
+and top-right panels, this greater decline in agricultural employment is mainly driven by a larger 
+reduction in employment of agricultural laborers, consistent with a decline in corn cultivation 
+that is intensive in the employment of these agricultural laborers. 
+In the bottom-left panel, we show that there is little relationship between the change in manu 
+facturing’s share of employment and wheat suitability. This #nding con#rms that the more rapid 
+decline in agriculture in high-wheat-suitability locations is not driven by a general equilibrium 
+“Dutch Disease”’ e"ect from a more rapid expansion of manufacturing as part of the industrial 
+revolution that began in the 1760s. This #nding is also consistent with the fact that the expansion 
+in manufacturing after 1760 was concentrated in the new large industrial cities of Manchester and 
+Birmingham, and in the existing urban center of London, which are located in areas with very 
+di"erent levels of wheat suitability (low, medium and high, respectively). 
+Finally, as shown in the bottom-right panel, we #nd a more rapid rise in the share of services 
+in employment in high-wheat-suitability locations. This pattern of results is in line with the idea 
+that the reduction in employment opportunities for agricultural laborers as a result of the Grain 
+Invasion increased the relative importance of local services as a source of rural employment, in 
+cluding in particular personal services for the gentry and aristocracy that historically dominated 
+rural economic life in Britain.16 
+Taken together, this pattern of results is consistent with the negative trade shock from the 
+Grain Invasion in the second half of the 19th century disproportionately a"ecting Eastern-corn 
+locations. These empirical #ndings are in line with a large historical literature on the “great 
+agricultural depression” in Britain following the Grain Invasion of the late-19th century, which 
+emphasizes that Eastern-corn locations were more heavily hit, and discusses rural depopulation 
+from agricultural laborers leaving the land, land sales by the great estates in response to declining 
+14For further evidence on structural transformation in England and Wales during the 19th century, see Online 
+Appendix F4. 
+15The changes in the shares of these four sectors in employment do not sum to zero, because agricultural laborers 
+are part of agriculture, and we omit some sectors, such as construction. 
+16As late as 1876, around 80 percent of all land in Great Britain was held by estates consisting of more than 1,000 
+acres (see Table 1.1. in Cannadine 1990). 
+
+Figure 5: Change in Employment Shares from 1851–1901 by Wheat Suitability (a) Agriculture (b) Agricultural Laborers
+
+(c) Manufacturing (d) Services Note: Kernel (Epanechnikov) regressions of the change in sectoral employment shares on wheat suitability (normalized to lie between 0 and 1) across parishes in England and Wales; dark lines show #tted values and lighter shading shows 95 percent point con#dence intervals.
+
+rents, agricultural bankruptcies, and a switch from arable to pastoral farming.17
+
+4.3 Reallocation Within Agriculture
+
+In this subsection, we provide further evidence in support of our mechanism that the trade shock from the Grain Invasion disproportionately a"ected locations that were more suitable for corn cultivation than the grazing of cattle and sheep. In particular, we use our county-level data on the acreage of agricultural land allocated to di"erent uses from the Agricultural Returns of the
+
+17See Fletcher (1961) and Perry (1973) on the great agricultural depression; Graham (1892), Longsta" (1893) and Board of Agriculture and Fisheries (1906) on rural depopulation; see Thompson (1963) and Cannadine (1990) on the break-up of the great estates; and Perry (1972) on the geography of agricultural bankruptcies and the switch from arable to pastoral farming.
+
+United Kingdom. We focus on the period from 1878 (the #rst year for which wheat cultivated area is reported as a separate category) to the end of our sample in 1901. Figure 6: Reallocation of Agricultural Land from Wheat Cultivation to Permanent Pasture
+
+(a) Change in Wheat Share of Agricultural Land 1878–1901
+
+(b) Change in Permanent Pasture Share of Agricultural 
+Land 1878–1901 
+Note: Panel (a) shows change in wheat share of agricultural land from 1878–1901 against initial wheat share of agricultural land 
+in 1878; Panel (b) shows change in permanent pasture share of agricultural land from 1878–1901 against initial wheat share of 
+agricultural land in 1878; in addition to wheat and permanent pasture (for grazing of animals), agricultural land area also includes 
+other corn crops (e.g., barley, oats and rye), clover, sanfoin and grasses under rotation, green crops (potatos, turnips and swedes, 
+mangold, carrots, cabbage, kohlrabi and rape, and vetches), and bare fallow (land remaining uncropped for a season and kept free 
+of vegetation). 
+In Panel (a) of Figure 6, we display the change in wheat’s share of agricultural land area from 
+1878–1901 against its initial share in 1878. Each blue dot corresponds to a county in England or 
+Wales and we also show the regression relationship between the two variables. As shown in the 
+#gure, we observe a decline in wheat’s share of agricultural land in all counties, which ranges 
+up to 8 percentage points. Consistent with the Grain Invasion disproportionately a"ecting corn 
+growing regions, we #nd that counties with the highest initial wheat shares (up to 25 percentage 
+points) experience the greatest declines in wheat’s share of the agricultural land. The regression 
+relationship is negative and statistically signi#cant at conventional critical values, with a slope 
+coe$cient of -0.331 (standard error of 0.033) and a regression R-squared of 0.77.18 
+In Panel (b) of Figure 6, we display the change in permanent pasture’s share of agricultural 
+land area from 1878–1901 against the initial share of wheat in agriculture land area in 1878. For 
+the vast majority of counties, we observe an increase in permanent pasture’s share of agricultural 
+land area. Furthermore, we #nd that counties with the highest initial wheat shares experience 
+
+18This regression relationship does not simply capture mean reversion for all agricultural goods. If we instead regress the change in permanent pasture’s share of agricultural land from 1878–1901 against its initial share in 1878, we #nd a quite di"erent pattern of results, with a coe$cient that is positive (0.031) and not statistically signi#cantly di"erent from zero (standard error 0.049), with a regression R-squared of 0.01.
+
+the greatest increases in permanent pasture’s share of agricultural land area. The regression relationship is positive and statistically signi#cant at conventional critical values, with a slope coe$cient of 0.321 (standard error 0.092) and a regression R-squared of 0.16. The results of this subsection provide further support for our mechanism, and suggest that our #ndings are not capturing a common decline in all agricultural activities. In this analysis, we use variation within the agricultural sector, and hence di"erence out any shock that is common across all agricultural activities. These results also cast doubt on some other potential explanations for a decline in agricultural employment, such as mechanization in arable farming. If the decline in agricultural employment were driven by technological advances that increased the productivity of arable farming, we would expect to observe an increase in the arable land share, whereas we #nd the opposite pattern of a decrease in this share.19 Overall, we #nd a pattern of changes in land use within the agricultural sector that are consistent with the idea that the Grain Invasion disproportionately a"ected corn-growing regions and led to a reallocation of economic activity within agriculture towards the grazing of cattle and sheep.
+
+4.4 Event-Study Evidence 
+We now provide further evidence connecting the relative economic decline of high-wheat 
+suitability locations to the Grain Invasion, by using an event-study speci#cation to examine the 
+timing of this decline and to control for other determinants of economic activity. 
+4.4.1 Econometric Speci!cation 
+We consider the following event-study speci#cation for the relationship between log economic 
+activity in a parish and wheat suitability: 
+
+log Ljt =
+
+⌧
+
+X
+
+=70 
+⌧= 40 
+
+⌧ (Wj ⇥ I⌧ ) +
+
+⌧
+
+X
+
+=70 
+⌧= 40 
+
+(Xj ⇥ ⌧ ) + ⌘j + dt + ujt, (1)
+
+where j indexes parishes; t indicates year; Ljt is an economic outcome of interest; Wj is an indicator variable that is one if a parish has above-median wheat suitability and zero otherwise; ⌧ denotes treatment year, which equals census year minus 1841 as the last census year before the repeal of the Corn Laws; the excluded category is treatment year ⌧ = 0 (1841); I⌧ is an indicator variable that is one for treatment year ⌧ ; Xj are controls for observable parish characteristics that could a"ect parish growth rates; t are time-varying coe$cients on these controls; ⌘j is a parish #xed e"ect; dt is a census-year dummy; and ujt is a stochastic error. In our baseline speci#cation, 19An explanation for the decline in agricultural employment based on technological advances that increased the productivity of arable farming also sits awkwardly with agricultural bankruptcies that were more severe in areas with greater wheat suitability, as discussed in Perry (1972) and shown in Online Appendix B5.
+
+we report standard errors clustered by registration district, which allows the error term to be 
+serially correlated across parishes within registration districts and over time.20 
+In this speci#cation, the parish #xed e"ects (⌘j ) allow for time-invariant unobserved hetero 
+geneity that can be correlated with wheat suitability. The census-year dummies (dt) control for 
+secular changes in economic activity across all parishes over time. The treatment coe$cients 
+( ⌧ ) on the interaction terms between wheat suitability (Wj ) and the treatment year indicators 
+(I⌧ ) have a “di"erence-in-di"erence” interpretation, where the #rst di"erence compares parishes 
+with above and below-median wheat suitability, and the second di"erence undertakes this com 
+parison between treatment year zero (census year 1841) and other census years. Since our model 
+predicts that low-wheat-suitability locations are a"ected in general equilibrium by a reallocation 
+of economic activity away from high-wheat-suitability locations, these treatment coe$cients ( ⌧ ) 
+capture relative changes in economic activity between the two groups of locations. General equi 
+librium e"ects that are common across all locations, and which are included in our quantitative 
+spatial model below, are here absorbed into the census-year dummies. 
+The main e"ect of each of our controls for observable parish characteristics (Xj ) is captured 
+in the parish #xed e"ect. The time-varying coe$cients on these controls ( t) allow for hetero 
+geneity in parish trends depending on these observed parish characteristics. We include a wide 
+range of controls for other potential determinants of parish growth (Xj ), including (i) travel time 
+to the nearest market town (to control for access to urban centers); (ii) travel time to the nearest 
+coal#eld (to capture access to coal as a natural resource); (iii) Easting and Northing of the parish 
+centroid (to control for geographical location); (iv) an indicator that is one for Wales (to allow 
+for di"erences in growth between England and Wales); (v) distance to London and distance to 
+Manchester (to capture proximity to these two concentrations of urban population); (vi) an in 
+dicator that is one for urban parishes based on the 1801 distribution of population densities (to 
+allow for di"erences in growth between urban and rural areas).21 
+In our baseline speci#cation, we report results using the conventional two-way #xed e"ects 
+estimator. However, a recent empirical literature has highlighted that the interpretation of this 
+two-way #xed e"ects estimator can be problematic in the presence of treatment heterogeneity 
+and a variable timing of the treatment. Although we have a common timing of the treatment 
+(the Grain Invasion in the second half of the 19th century), Online Appendix B6.3 demonstrates 
+the robustness of our results to the use of alternative di"erence-in-di"erences estimators, includ 
+ing Borusyak et al. (2024), De Chaisemartin and d’Haultfoeuille (2020), Callaway and Sant’Anna 
+
+20As robustness checks, we report Heteroskedasticity and Autocorrelation Consistent (HAC) standard errors fol lowing Conley (1999), and standard errors clustered two-way by 560 registration districts and 100 quantiles of wheat suitability to allow for serial correlation across levels of wheat suitability motivated by Adão et al. (2019). 21See Appendix F4 for further details on the construction of the urban indicator and our measures of travel time to the nearest market town and coal#eld.
+
+(2021) and Sun and Abraham (2021). In our empirical application, we #nd a similar pattern of 
+results across all of these di"erent estimators. 
+4.4.2 Population Results 
+We begin by estimating our event-study speci#cation (1) using our parish-level population data, 
+which are available every census decade from 1801-1901. Given the inclusion of the parish #xed 
+e"ects, and the fact that parish geographical area is time invariant, this speci#cation also has an 
+equivalent interpretation in terms of population density. Figure 7 displays the estimated treat 
+ment coe$cients ( ⌧ ) from our baseline speci#cation including all of our controls for observable 
+parish characteristics (Xj ) interacted with census-year dummies. The vertical bars correspond to 
+the 95 percent con#dence intervals clustered by registration district, while the vertical red line 
+shows the Repeal of the Corn Laws in 1846. 
+In the early decades of the 19th century, we #nd that high and low-wheat-suitability locations 
+have similar population trends, with estimated coe$cients that are close to zero and statistically 
+insigni#cant. In contrast, after the Repeal of the Corn Laws in 1846, we observe a decline in popu 
+lation in locations with high wheat suitability relative to those with low wheat suitability, which 
+becomes statistically signi#cant at conventional critical values from 1871 onwards. The estimated 
+treatment e"ect grows in absolute magnitude over time, which is consistent with the continuing 
+decline in the relative price of wheat over the second half of the 19th century, as shown by the 
+downward blue trend in Figure 1. By 1901, we #nd a relative decline in population of around 18 
+percent in high-wheat-suitability locations compared to low-wheat-suitability locations.22 
+The timing of the treatment e"ect in Figure 7 not only corresponds closely to the fall in the 
+relative price of wheat in Figure 1 and the rise in imports of wheat in Figure 2, but is also hard 
+to reconcile with other potential explanations based on either the expansion of manufacturing 
+during the Industrial Revolution or mechanization in agriculture. The industrial revolution began 
+much earlier around 1760, with key innovations in the cotton industry and steam technology 
+occurring in the second half of the 18th century. Similarly, mechanization in agriculture began 
+earlier, with the #rst mechanical threshing machine invented in 1786, and the Captain Swing riots 
+against automation occurring in the 1830s. Yet we #nd no evidence of di"erences in pre-trends in 
+Figure 7 in the #rst half of the 19th century. Indeed, the mid-19th century is sometimes referred 
+to as the “Age of High Farming” in Britain (e.g., Caird 1852), as a period of relative agricultural 
+22While we show 95 percent con#dence errors based on standard errors clustered on registration districts in 
+Figure 7, we #nd a similar pattern of results using Conley HAC standard errors with a 10km spatial lag and a two 
+period time lag (e.g., standard error of 0.03 compared to the coe$cient of about -0.165 for 1901) and standard errors 
+clustered two-way on registration districts and 100 bins for quantiles of wheat suitability (e.g., a standard error of 
+about 0.04 for 1901). In Figure B.16 of Online Appendix B6.3, we demonstrate the robust of our results to using other 
+approaches to compute standard errors and di"erent sets of controls. 
+
+Figure 7: Estimated Treatment E"ects of Wheat Suitability for Log Population
+
+Note: The #gure shows the estimated treatment e"ects ( t) from the di"erences-in-di"erences speci#cation (1) using interactions between years and an indicator variable that is one for parishes with above-median wheat suitability and zero otherwise; vertical lines show 95 percent con#dence intervals based on standard errors clustered by registration district. The speci#cation conditions on parish and year #xed e"ects, and interactions between year and (i) travel time to the nearest market town; (ii) travel time to the nearest coal#eld; (iii) distance to London and distance to Manchester; (iv) Easting and Northing of the parish centroid; (v) an indicator that is one for Wales; (vi) an indicator that is one for urban parishes based on the 1801 distribution of population densities.
+
+prosperity before the fall in the domestic relative price of wheat. Our #nding of a change in relative population levels in response to the Grain Invasion at #rst sight contrasts with evidence of little population response to the China trade shock (e.g., Autor et al. 2013). But there are a number of reasons why the population response could be greater in our empirical setting. First, 19th-century Britain had rapid population growth and a relatively young population, both of which could facilitate changes in relative population levels. Our #ndings of a population response are consistent with the contemporary literature on rural depopulation, including Graham (1892), Longsta" (1893) and Board of Agriculture and Fisheries (1906). More broadly, most people lived in rural areas in the past, whereas few of us do so today.23 Second, real income per capita was closer to subsistence levels, and poor law relief was a more primitive welfare system than in the United States today, both of which could generate a greater population response.24 Third, our parish spatial units are much smaller than the U.S. commuting zones used for the China trade shock. In our individual-level population census data, we #nd
+
+23Substantial population reallocations are observed in the United States for earlier historical time periods, includ ing the migration of African-Americans from the South to the North, as examined in Wilkerson (2011). 24Some of the change in relative population levels could be achieved through international migration. Consistent with this mechanism, the emigration rate in England (higher-wheat suitability) is greater than in Wales (lower-wheat suitability) in the second half of the 19th century, but the magnitude of the di"erence is relatively small (Wilcox 1969). 21
+
+that more than two thirds of migrations between parishes involve movements of less than 50 
+kilometers, as shown in Figure G.3 in Online Appendix G3. Migrations over these short distances 
+would typically fall within the boundaries of U.S. commuting zones, and hence would not show 
+up in changes in the relative populations of these commuting zones. We work with parishes as 
+our spatial units, because they capture local variation in wheat suitability, and are the relevant 
+spatial units in a historical setting in which most people lived where they worked, and most 
+migration occurred between rural areas and nearby towns and cities.25 
+We #nd a similar pattern of event-study estimates across a wide range of di"erent speci#- 
+cations. First, we re-estimated our baseline speci#cation including separate treatment-year in 
+teractions with indicators for low-wheat suitability (bottom tercile) and high-wheat suitability 
+(top tercile), where the excluded category is the middle tercile. As shown in Figure B.13 in On 
+line Appendix B6.2, we #nd that low-wheat-suitability locations experience a weakly statistically 
+signi#cant increase in population relative to those with medium-wheat suitability, while high 
+wheat-suitability locations experience a statistically signi#cant decrease in population relative to 
+those with medium wheat suitability. Therefore, we #nd a consistent pattern of results through 
+out the distribution of wheat suitability. 
+Second, we re-estimated our baseline speci#cation, augmenting it with interactions between 
+treatment years and an indicator for above-median grass suitability. In Figure B.14 in Online 
+Appendix B6.2, we show the estimated coe$cients on both wheat suitability (in blue) and grass 
+suitability (in green). Consistent with our results capturing the Grain Invasion, we #nd a similar 
+pattern of estimated coe$cients for wheat suitability, with negative and statistically signi#cant 
+treatment e"ects in the second half of the 19th century. In line with our earlier #ndings of a 
+reallocation from arable to pastoral farming in Section 4.3 above, we #nd positive and statistically 
+signi#cant treatment e"ects for grass suitability in the second half of the 19th century. 
+4.4.3 Property Values and Poor Law Relief 
+We next re-estimate our baseline event-study speci#cation (1) using our data on property values 
+instead of population. These property values correspond to the market rental value of land and 
+buildings for tax purposes and summarize the relative economic value of locations. Data are 
+available for the years of 1815, 1843, 1852, 1865, 1870, 1881 and 1896, where we choose 1843 as 
+the excluded year, just before the Repeal of the Corn Laws. As shown in Figure B.17 in Online 
+Appendix B6.4, we obtain a similar pattern of results for property values as for population. By 
+the end of the 19th century, we estimate a relative decline in property values of around 24 percent 
+in high-wheat-suitability locations compared to low-wheat-suitability locations. 
+
+25Consistent with local migration, Eckert and Peters (2023) #nd that most structural transformation from agricul ture to manufacturing and services in the 19th-century United States occurred within counties.
+
+Finally, we estimate our event-study speci#cation (1) using data on poor law relief, as a mea sure of welfare relief that captures local economic distress. Our poor law relief data are available for 1841, 1851, 1860, 1870, 1883 and 1891 at the level of registration districts. We match parishes to registration districts and cluster the standard errors on registration districts to take account of the fact that poor law relief is measured at a more aggregate level. Following the Repeal of the Corn Laws in 1846, we #nd a statistically signi#cant increase in welfare relief in high-wheat suitability locations relative to low-wheat-suitability locations, as shown in Figure B.18 in Online Appendix B6.4. This pattern of results is consistent with an increase in local economic distress in response to this trade shock. We #nd that the estimated treatment e"ect for poor law relief declines somewhat in absolute magnitude by the last two decades of the 19th century, which is consistent with the population reallocation estimated above helping to dissipate some of this local economic distress in high-wheat-suitability locations. Taking the results of this section as a whole, we #nd strong evidence of a relative economic decline in high-wheat suitability locations following the Repeal of the Corn Laws and the Grain Invasion in the second half of the 19th century.
+
+4.5 Individual-level Census Data 
+We next use our individual-level census data to directly examine the response of individual mo 
+bility decisions to this international trade shock. 
+We use our matched samples of individuals between each pair of consecutive census years. 
+We treat the #rst pair of census years from 1851–61 as a pre-period, using the fact that the Grain 
+Invasion increases in magnitude following the expansion of the railroad network into the mid 
+West after the end of the American Civil War in 1865. We pool the remaining pairs of census years 
+from 1861–1881, 1881–1891, and 1891–1901 as a post-period. We use the matched data between 
+each pair of consecutive census years to compute several mobility measures: (i) an indicator 
+that is one if an individual moves to another census registration district; (ii) indicators that are 
+one for rural-urban or urban-urban migrations between registration districts respectively; (iii) an 
+indicator that is one if an individual moves two-digit occupation; and (iv) an indicator that is one 
+if an individual moves one-digit industry. 
+Our historical time period is characterized by relatively high levels of mobility. On average, 
+between pairs of consecutive census years, we #nd a probability of moving parish of around 0.4; 
+registration district of about 0.3; county of around 0.2; two-digit occupation of above 0.6; and one 
+digit sector of over 0.5. As a check on these results from name matching across census waves, 
+we #nd an average probability on living outside the county of birth of around 0.4 in each census 
+year, again con#rming substantial mobility.26 
+
+26Using individual-level records from the 1940 U.S. population census, which report current county and country 23
+
+To examine the relationship between this mobility and the Grain Invasion, we estimate the following regression speci#cation:
+
+Mijt = X t2T t (Wj ⇥ It) +X t2T (Xj ⇥ t) + ⌘j + dt + uijt (2)
+
+where an observation is an individual i located in parish j in census year t; Mijt is an indicator 
+that is one if an individual moves (either location, occupation or sector) between a pair of con 
+secutive census years and zero otherwise; the excluded category is the pre-period 1851–61, such 
+that t and t are estimated for the post-periods relative to the pre-period; the other variables 
+are de#ned as in previous subsections; and we include the same set of controls for interactions 
+between observable parish characteristics and year dummies as in our parish-level speci#cation 
+above. To ensure comparability with our parish-level results above, we weight the observations 
+on individuals such that all parishes have the same weight. We report standard errors clustered 
+by registration districts, which allows the error term to be serially correlated across individuals 
+within registration districts and across census years within registration districts. 
+In Panel A of Table 1, we report the estimation results using the following four measures of 
+spatial mobility: (i) mobility across registration districts in column 1, (ii) mobility across counties 
+in column 2, (iii) rural-urban migration in column 3, (iv) urban-urban migration in column 4. In 
+line with our earlier #ndings of a change in relative population levels, we #nd a larger increase in 
+spatial mobility over time in locations with high wheat suitability than in those with low wheat 
+suitability. As shown in column 1, the probability of outmigration at the registration district level 
+rises increases by 1.5 percentage points in high-wheat-suitability locations relative to low-wheat 
+suitability locations in 1861-1881 relative to the excluded category of 1851-61, and increases by 
+5.3 percentage points in 1891-1901 relative to this excluded category. This e"ect is large relative 
+to the average outmigration probability of 0.30 for registration districts. As shown in column 2, 
+we also #nd some increase in outmigration probabilities in the later three periods relative to 
+the excluded category for counties. But this increase is smaller than for registration districts, 
+consistent with most mobility occurring within counties. From columns 3 and 4, this increase 
+in outmigration is mostly driven by movements from rural to urban areas, consistent with the 
+negative impact of the Grain Invasion largely falling on rural areas.27 
+We #nd that this increase in mobility between locations is mirrored by increases in mobility 
+between occupations and sectors. We consider the following four additional mobility measures: 
+(i) occupational mobility across 2-digit occupations within registration districts in column 1; (ii) a 
+#ve years previously, Hornbeck (2023) #nds that 17 percent of people moved counties over that #ve-year period, 
+where U.S. counties are substantially larger than those in England and Wales. Taken together, England and Wales 
+have approximately the same total land area as the U.S. state of Georgia. 
+27In Online Appendix G3, we provide further evidence on bilateral patterns of migration away from areas with 
+higher wheat suitability towards those with lower wheat suitability. 
+24 
+
+Table 1: Wheat Suitability and Spatial/Occupational Mobility
+
+| Panel A: Spatial | mobility | Districts | Counties | Rural-urban | Urban-urban |
+| --- | --- | --- | --- | --- | --- |
+| Wheat suitability | 1861–1881 ⇥ | .0147 | .0235 | .0133 | .0001 |
+| | | (.0066) | (.0064) | (.0050) | (.0029) |
+| Wheat suitability | 1881–1891 ⇥ | .0214 | .0093 | .0118 | -.0016 |
+| | | (.0076) | (.0058) | (.0047) | (.0030) |
+| Wheat suitability | 1891–1901 ⇥ | .0527 | .0121 | .0195 | .0204 |
+| | | (.0143) | (.0098) | (.0085) | (.0065) |
+| Observations | | 9,759,420 | 9,759,420 | 9,759,420 | 9,759,420 |
+| Panel B: Occupational | mobility Occupations | only | Occupations/locations | Agriculture | Industries |
+| Wheat suitability | 1861–1881 ⇥ | -.0109 | .0139 | .0254 | .0129 |
+| | | (.0060) | (.0060) | (.0089) | (.0062) |
+| Wheat suitability | 1881–1891 ⇥ | .0004 | .0199 | .0226 | .0233 |
+| | | (.0052) | (.0059) | (.0086) | (.0060) |
+| Wheat suitability | 1891–1901 ⇥ | -.0125 | .0355 | .0170 | .0174 |
+| | | (.0077) | (.0088) | (.0088) | (.0061) |
+| Observations | | 5,385,948 | 5,385,948 | 1,426,520 | 5,385,948 |
+
+Note: Standard errors are reported between parentheses and are clustered at the level of registration districts. The unit of observation is an individual at a given time t. All speci#cations condition the analysis on parish #xed e"ects, time #xed e"ects and controls for observable parish characteristics interacted with time dummies: (i) travel time to the nearest market town; (ii) travel time to the nearest coal#eld; (iii) distance to London and distance to Manchester; (iv) Easting and Northing of the parish centroid; (v) an indicator that is one for Wales; (vi) an indicator that is one for urban parishes based on the 1801 distribution of population densities.
+
+measure of joint mobility (changing both 2-digit occupation and registration district) in column 2; (iii) a measure of mobility out of agriculture (including both farmers and agricultural laborers) in column 3; (iv) mobility across 1-digit sectors in column 4. We #nd that overall mobility between 2-digit occupations increases in high-wheat-suitability locations relative to low-wheat suitability locations between the pre-period and post-periods. But this increase in overall occupational mo bility is driven entirely by people moving both occupation and registration district (an increase of 3.6 percentage points by 1891-1901 in column 2). In contrast, the probability of moving occupa tion alone within registration district falls (a decrease of 1.25 percentage points by 1891-1901 in column 1). A share of this mobility across occupations and locations can be explained by a move ment out of agriculture, as shown in column 3 (an increase of 1.7 percentage points by 1891-1901), and more generally by movement across 1-digit industries, as shown in column 4 (an increase of 1.74 percentage points by 1891-1901). Overall, our estimates using the individual-level census data con#rm our #ndings using parish population above and support the conclusions of the historical literature on rural depopulation. We #nd that the Grain Invasion increased outmigration from high-wheat-suitability locations,
+
+with the largest increases occurring for rural-urban migration.
+
+### 5 Theoretical Framework
+
+We next develop our quantitative spatial model to rationalize these #ndings and evaluate their 
+implications for the distribution of real income.28 The economy consists of a set of small open 
+economies indexed by i, j 2 J , which correspond to the parishes in our data. There are three 
+aggregate sectors indexed by k 2 { A, M, S}: Agriculture (A), Manufacturing (M), and Services 
+(S). The agricultural sector includes two disaggregated goods indexed by g 2 { G, F}: arable 
+products (G for “grain”) and pastoral products (F for “#eld”). Arable, pastoral and manufacturing 
+goods are traded on world markets, with their local prices exogenously determined by world 
+market prices and transport costs. Services (including housing) are non-traded, with their local 
+prices endogenously determined by the equality of local demand and supply. 
+To examine the long-run impact of the Grain Invasion, we consider a static speci#cation of 
+worker location decisions in our baseline speci#cation.29 The economy is populated by a measure 
+of N¯t workers. Each worker is endowed with one unit of labor that is supplied inelastically. 
+Workers are geographically mobile and have idiosyncratic preferences for locations. Each worker 
+chooses their preferred location given their idiosyncratic preference draws. Each location i is 
+endowed with a continuum of land plots indexed by ' 2 Li, where Li corresponds to land area. 
+Land is owned by local landlords, who decide whether to allocate each land plot to agriculture, 
+manufacturing or services. If they allocate a land plot to agriculture, they choose whether to use 
+it for arable or pastoral farming. We interpret land in the model as capturing land and buildings 
+in the data. In our baseline speci#cation, we assume that land and buildings are in perfectly 
+inelastic supply, but we report an extension with a constant elasticity supply function for land 
+and buildings in Online Appendix E3. 
+We allow locations to di"er in amenities, productivities by sector and disaggregated good, 
+land area, and bilateral trade costs. We allow all of these location characteristics besides land 
+area to change over time. To streamline notation, we suppress the implicit dependence on time t 
+from now onwards, except where otherwise indicated. 
+5.1 Preferences 
+We assume a nested preference structure, in which preferences are #rst de#ned over sectors, 
+and then over disaggregated goods within the agricultural sector. In the upper tier of utility, the 
+28See Online Appendix C for the derivation of all theoretical results in this section of the paper. 
+29In Online Appendix E1, we consider an extension of our theoretical model to incorporate migration dynamics 
+following Artuç et al. (2010) and Caliendo et al. (2019). 
+
+preferences of a worker who chooses to live in location i depend on consumption of the goods produced by each sector k (Cki), residential amenities (Bi), and an idiosyncratic preference shock (bi( )). We assume for simplicity a constant elasticity of substitution (CES) functional form:
+
+ui ( ) = Bibi ( )24 X k2{ A,M,S} ( kCki) 1
+
+35 
+1 
+1 
+
+, 0 < < 1, (3)
+
+where the parameter k controls the relative weight of each sector in consumer utility; the id iosyncratic preference shock (bi ( )) is speci#c to a pair of worker and location, and captures all of the idiosyncratic factors that can in!uence the location decisions of individual workers.30 In the lower tier of utility, the consumption index for the agricultural sector (CAi) is de#ned over the consumption of arable (CGi) and pastoral (CF i) products. We assume for simplicity the following Cobb-Douglas functional form:
+
+CAi = C G Gi C F F i , G + F = 1. (4)
+
+Our assumption of CES preferences in the upper tier follows a large macroeconomics liter ature on structural transformation following Baumol (1967). This literature typically assumes inelastic demand across sectors (0 < < 1), such that faster productivity growth in a given sec tor reallocates employment towards other sectors. Our assumption of Cobb-Douglas preferences in the lower tier is primarily motivated by our quantitative application, for which only limited historical expenditure survey data are available. But this speci#cation also satis#es the intuitive property that demand is more elastic across products within the agricultural sector than across sectors. For both tiers of utility, we assume homotheticity, again mainly for data availability rea sons. In Online Appendix E2, we generalize our theoretical model to allow for non-homothetic preferences following Comin et al. (2021). Although non-homotheticity introduces a new expen diture channel for distributional e"ects, geography remains an important dimension along which the income distributional e"ects of trade occur. We assume that idiosyncratic preferences are drawn independently across individuals and locations from a Fréchet distribution: F (b) = e b , where > 1. We normalize the scale pa rameter to one, because it enters the model isomorphically to common amenities (Bi). The shape parameter controls the dispersion of idiosyncratic preferences, and hence the responsiveness of location decisions to economic variables relative to idiosyncratic preferences. Landlords have the same preferences as workers, except that we abstract from idiosyncratic preferences for landlords, because they are geographically immobile, and hence these idiosyn cratic preferences would not a"ect equilibrium allocations in any way.
+
+30Although we model the worker idiosyncratic shock in terms of preferences, there is a closely-related formulation in terms of an idiosyncratic shock to worker productivity. 27
+
+5.2 Prices and Expenditure Shares 
+The dual consumption goods price index (PCi) is de#ned over the price of the goods produced by 
+each sector (Pki) and takes the following conventional form: 
+
+PCi =24 X k2{ A,M,S} (Pki/ k) 1
+
+35 
+1 
+1 
+
+, (5)
+
+where the agricultural price index is de#ned over the prices of the arable and pastoral goods: 
+PAi = P G 
+Gi P 
+1 G 
+F i . (6) 
+No arbitrage determines the local prices of the traded arable, pastoral and manufacturing 
+goods (Pki) as a function of the world market price (P⇤k ) and domestic transport costs from loca 
+tion i to world markets in that sector (⌧ki): 
+Pki = ⌧kiP⇤k , if Cki > Qki k 2 { G, F, M} , 
+Pki = P⇤k /⌧ki, if Qki > Cki, (7) 
+where Qki is production of good k in location i. In contrast, the local prices of non-traded services 
+are determined by the equality between local demand and local supply. 
+Expenditure minimization implies the following shares of sectors in consumer expenditure: 
+
+xki = (Pki/ k) 1 P m2{ A,M,S} (Pmi/ m) 1 . (8)
+
+5.3 Production Technology Markets are assumed to be perfectly competitive. Goods are produced using labor and land under conditions of constant returns to scale. We make the natural assumption that pastoral farming has the highest land intensity, followed by arable farming, with manufacturing and services having lower land intensities. We assume Cobb-Douglas production technologies for simplicity. Ex pressing these technologies in the intensive form, output per unit of land (qki(')) depends on employment per unit of land (nki(')) and productivity (zki('), agi(')) as follows:
+
+qki (') = #knki (') 1 ↵k zki (') ↵k , 0 < ↵k < 1, k 2 { M,S} ,
+
+qgi (') = #gngi (') 
+1 ↵g 
+zAi (') 
+↵g 
+agi (') 
+↵g 
+, 0 < ↵g < 1, g 2 { F, G} . 
+where #k ⌘ ↵ ↵k k (1 ↵k) (1 ↵k); zki(') captures productivity di"erences across the aggre 
+gate sectors of agriculture, manufacturing, and services; agi(') captures productivity di"erences 
+across the disaggregated arable and pastoral goods within the agricultural sector. Although the 
+
+distinction between land and labor-augmenting technology is not consequential under our as sumption of Cobb-Douglas production technologies, we model technology as land-augmenting to simplify the characterization of the distribution of the wage-rental ratio. We assume that land plots are heterogeneous in productivity for each alternative use, de pending for example on terrain and soil. Productivity for the aggregate sectors (zki for k 2 { A, M, S}) is drawn independently for each land plot from the following Fréchet distribution: Fki (z) = e Tkiz ✓
+
+. Similarly, productivity for each disaggregated good g 2 { G, F} within the agricultural sector is drawn independently for each land plot from the following Fréchet distri bution: Fgi (a) = e Egia ✏
+
+. The scale parameters (Tki, Egi) control absolute advantage and the shape parameters (✓, ✏) regulate comparative advantage. We assume that landlords #rst observe the sectoral productivity draws (zAi, zM i, zSi) and de cide which land plots to allocate to agriculture, manufacturing, and services. Having chosen to allocate a land plot to agriculture, landlords observe the productivity draws for each disaggre gated agricultural good (aGi, aF i), and decide whether to allocate that agricultural land plot to arable or pastoral farming. We use this timing assumption to capture the idea that uncertainty about agricultural conditions (e.g., climate) is typically only fully realized after land already has been allocated to agricultural use.31 An implication of these assumptions is that locations are typically incompletely specialized across alternative land uses for positive and #nite values of the average productivity parameters Tki and Egi. The reason is that support of the Fréchet productivity distribution is unbounded from above. Therefore, with a continuum of land plots in each location, there is a positive measure of land plots with arbitrarily high productivity for each land use. We allow for zero land use for some economic activities in some locations by considering the limiting case in which these average productivity parameters converge towards zero (Tki ! 0 and Egi ! 0).
+
+5.4 Production within Agriculture 
+We #rst characterize the allocation of land between arable and pastoral farming conditional on 
+having chosen to use land agriculturally, before turning next to the allocation of land between 
+agriculture, manufacturing, and services. 
+Each agricultural land plot ' is allocated to the disaggregated good g 2 { G, F} that o"ers 
+the highest rental rate (rgi(')), given the realizations for agricultural productivity (agi(')). With 
+a common wage across goods and sectors within locations (wi), we can equivalently characterize 
+this decision in terms of the good that o"ers the lowest wage-rental ratio (!gi(')). Using the 
+#rst-order conditions for cost minimization and zero pro#ts, the equilibrium wage-rental ratio 
+
+31Although we make this timing assumption, we could equivalently assume a nested extreme value speci#cation for sectoral productivity (zki) and agricultural productivity (agi). 29
+
+for given realizations of agricultural and sector productivity is:
+
+!gi(') ⌘
+
+wi rgi(') = 1 zAi(')agi(')✓
+
+wi
+
+## Pgi◆
+
+1 ↵g
+
+. (9) Using the Fréchet distribution for agricultural productivity (agi) and equation (9) to solve for the distribution of the equilibrium wage-rental ratio, the probability that an agricultural land plot is allocated to disaggregated good g in location i (` A gi), and the share of agricultural land used for disaggregated good g in location i, is:
+
+` A 
+gi = 
+Lgi 
+LAi 
+
+= Egi (Pgi/wi) ✏/↵g P o2{ G,F} Eoi (Poi/wi) ✏/↵h, (10)
+
+where the superscript A indicates that this share is de#ned as a share of agricultural land. 
+The share of agricultural land allocated to each good g (` A gi) in equation (10) is increasing in 
+the average productivity (Egi) and local price for that good (Pgi), and decreasing in the average 
+productivity and local price for the other good. Other things equal, locations with higher equi 
+librium wages (wi) have lower arable shares of agricultural land, because arable farming (G) is 
+labor-intensive relative to pastoral farming (F), such that ↵G < ↵F . The agricultural productivity 
+dispersion parameter ✏ regulates the sensitivity of agricultural land shares to prices and wages 
+relative to idiosyncratic agricultural productivity. 
+With a Fréchet distribution for agricultural productivity, the expected wage-rental ratio is 
+the same across the two disaggregated goods within the agricultural sector, and is determined by 
+productivity (zAi, Egi), prices (Pgi), the common wage (wi), and factor intensities (↵g): 
+
+1
+
+#### !Ai⌘ Ea
+
+1 
+!gi 
+= zAi 
+✏24 X g2{ G,F} Egi (Pgi/wi) 
+
+✏/↵g35
+
+1 ✏
+
+, (11)
+
+where ✏ ⌘
+
+✏ 1 ✏ ; (· )is the Gamma function; Ea [· ] is the expectation over the distribution for idiosyncratic agricultural productivity (a) conditional on land with a given sectoral productivity (zAi) being used agriculturally. The intuition for this equalization of the expected wage-rental ratio is as follows. If a location has lower costs and higher prices for one of the disaggregated goods, agricultural land plots with lower realizations for agricultural productivity are allocated to that good. With a Fréchet distribution for agricultural productivity, this composition e"ect exactly o"sets the lower costs and higher prices, such that the expected wage-rental ratio conditional on agricultural land being used for a good is the same across the two disaggregated goods.32
+
+32This property is analogous to the result in Eaton and Kortum (2002) that average prices conditional on sourcing a good from a country are the same across all source countries. 30
+
+5.5 Production Across Sectors 
+The allocation of land plots across agriculture, manufacturing, and services is determined in a 
+similar way. Each land plot ' is allocated to the sector that o"ers the highest rental rate (rki(')), 
+or lowest wage-rental ratio (!ki(')), given the realizations for sectoral productivity (zki(')). From 
+the #rst-order conditions for cost minimization and zero pro#ts, the equilibrium wage-rental ratio 
+in each sector is given by: 
+
+!ki(') ⌘
+
+wi rki(') = 1 zki(')P ki , (12)
+
+where P ki corresponds to prices adjusted for wages and factor intensities:
+
+## P ki ⌘⇣
+
+## Pki wi⌘
+
+1 
+↵k 
+, k 2 { M,S} , 
+
+P Ai ⌘ ✏P g2{ G,F} Egi ⇣
+
+## Pgi wi⌘
+
+✏ ↵g
+
+1 ✏
+
+, ✏ ⌘ ✏ 1 ✏ .
+
+(13)
+
+Since the sectoral land use decision is made before the realizations for agricultural productivity 
+(agi) are observed, the relevant wage-rental ratio for the agricultural sector is the expected wage 
+rental ratio (11), as re!ected in the de#nition of P Ai in equation (13). 
+Using the Fréchet distribution for sector productivity (zki) and equation (12) to solve for the 
+distribution of the equilibrium wage-rental ratio, the probability that a land plot is allocated to 
+sector k in location i (`ki), and the share of land used for sector k in location i, is: 
+`ki = 
+Lki 
+Li 
+= TkiP 
+
+✓
+
+P ki
+
+s2{ A,M,S} TsiP
+
+✓ si
+
+. (14) Therefore, the share of land allocated to a given sector (`ki) is increasing in average produc tivity (Tki) and adjusted prices (P ki) for that sector and decreasing in those variables for the other sectors. The sector productivity dispersion parameter ✓ regulates the sensitivity of land shares to adjusted prices relative to idiosyncratic sectoral productivity. With a Fréchet distribution for sector productivity, the expected wage-rental ratio is the same across sectors, as determined by productivity (Tki) and adjusted prices (P ki):
+
+## Ez
+
+1 !i
+
+= ✓24 X k2{ A,M,S} TkiP ✓
+
+## ki35
+
+1 ✓
+
+, (15)
+
+where ✓ ⌘
+
+✓ 1 
+✓ , (· ) is the Gamma function; and Ez [· ] is the expectation over the distribu 
+tion for sectoral productivity (z). 
+The intuition is similar as for the equalization of the wage-rental ratio across disaggregated 
+goods within the agricultural sector. If a location has higher adjusted prices for a sector, it al 
+locates land plots with lower realizations for sector productivity to that sector. With a Fréchet 
+31 
+distribution for sector productivity, this composition e"ect exactly o"sets the higher adjusted 
+prices, such that the expected wage-rental ratio conditional on land being allocated to a sector is 
+the same across all sectors. 
+We can solve for all other aggregate variables using this common expected wage-rental ratio, 
+including the expected rental rate: 
+
+## ri = wiEz
+
+1 !i
+
+. (16) Using cost minimization, zero pro#ts, and our assumption of a Cobb-Douglas production tech nology, employment per unit of land used for manufacturing and services is:
+
+nk = 1 ↵k ↵k Ez
+
+1 !i
+
+, k 2 { M,S} , (17) while employment per unit of agricultural land is a weighted average of the factor intensities in arable and pastoral farming, with the weights given by the shares of agricultural land allocated to each of these two disaggregated goods:
+
+nA = X g2{ G,F}
+
+Lg LA
+
+Ng 
+Lg 
+= X g2{ G,F} ` A g ng = X g2{ G,F} ` A g 1 ↵g ↵g Ez 
+
+1 !i
+
+. (18)
+
+5.6 Population Mobility Each worker chooses their preferred location given their idiosyncratic preference draws. Using the Fréchet distribution of idiosyncratic preferences, the probability of choosing to live in location i depends on relative amenities (Bi), wages (wi), and consumption price indexes (PCi):
+
+i = (Biwi/PCi) P m2J (Bmwm/PCm) . (19)
+
+With workers having idiosyncratic preferences, each location faces an upward-sloping supply function for workers, such that it must o"er a higher amenity-adjusted real wage to attract addi tional workers with lower realizations for idiosyncratic preferences for that location. The expected utility of workers depends on amenity-adjusted real income in each location i:
+
+## E [u] = "X m2J (Bmwm/PCm)#
+
+1
+
+, ⌘ ✓
+
+1 ◆ , (20)
+
+where recall that (· ) is the Gamma function. 
+Therefore, although amenity-adjusted real wages (Biwi/PCi) di"er across locations, expected 
+utility conditional on choosing a location is equalized. The intuition is again a composition e"ect. 
+If a location has a higher amenity-adjusted real wage, it attracts workers with lower realizations 
+32 
+
+for idiosyncratic preferences. With a Fréchet distribution for idiosyncratic preferences, this com position e"ect exactly o"sets the higher amenity-adjusted real wages, such that expected utility conditional on choosing a location is the same across all locations.
+
+5.7 Market Clearing 
+Total expenditure in each location i (Xi) equals the sum of the income of workers (wiNi) and the 
+income of landlords (riLi): 
+
+Xi = wiNi + riLi, (21) where Ni is the measure of workers that choose to live in location i; Li is land area; and we abstract from trade imbalances.33 Market clearing for non-traded services requires that local revenue equals local expenditure in that sector in each location:
+
+PSiQSi = xSiXi. (22)
+
+Labor market clearing within each location requires that total employment equals the sum of employment across the disaggregated agricultural goods, manufacturing, and services:
+
+Ni = X k2{ G,F,M,S} Nki. (23)
+
+Labor market clearing across locations requires that total employment in each location (Ni) equals the measure of workers choosing to live in that location: Ni = iN. (24) Land market clearing implies that the income of landlords is equal to total payments for land use. Using our assumption of Cobb-Douglas production technologies, this land market clearing condition can be written as follows:
+
+riLi = X k2{ G,F,M,S}
+
+↵k
+1 ↵k
+
+wiNki, (25)
+
+where the terms on the right-hand side capture payments for land used for the disaggregated agricultural goods, manufacturing, and services.
+
+33We undertake our counterfactuals starting from 1846, when the U.K. had a small trade surplus of 0.17 percent of GDP. In the second half of the 19th century, the U.K.’s trade balance exhibits no clear pattern, and !uctuates between surpluses and de#cits, consistent with it being determined by other intertemporal considerations.
+
+5.8 General Equilibrium 
+The equilibrium spatial distribution of economic activity is determined by (i) model parameters 
+( G, F , A, M, S, ↵G, ↵F , ↵M, ↵S, , ✏, ✓, ); (ii) world prices and transport costs for the traded 
+goods (P⇤G, P⇤F , P⇤M, ⌧Gi, ⌧F i, ⌧M i); (iii) productivities (EGi, EF i, TAi, TM i, TSi); (iv) amenities (Bi); 
+(v) land supplies (Li); (vi) labor supply (N). 
+Given these exogenous primitives, the general equilibrium of the model can be referenced 
+by the following endogenous variables: (i) the local prices of traded goods {PGi, PF i, PM i}, (ii) 
+the local prices of non-traded services (PSi), (iii) the shares of arable and pastoral farming in 
+agricultural land area (` A Gi, ` A F i); (iv) the shares of agriculture, manufacturing, and services in 
+total land area (`Ai, `M i, `Si); (v) the expected wage-rental ratio (!i); (vi) the wage (wi); (vii) total 
+employment shares ( i). Given these equilibrium objects, all other endogenous variables of the 
+model can be determined. 
+We use the model to evaluate the distributional implications of an international trade shock 
+that is concentrated in a particular sector (arable farming). We model the Grain Invasion as a fall 
+in the world price of arable products (P⇤G) relative to the world prices of pastoral products (P⇤F ) 
+and manufacturing goods (P⇤M), which a"ects the spatial distribution of economic activity in the 
+model through a number of di"erent channels. 
+First, there is a reallocation within agriculture. The direct e"ect of the fall in the world arable 
+price (P⇤G) is to reduce the share of agricultural land used for arable farming (` A Gi) and raise the 
+share of agricultural land used for pastoral farming (` A F i) from equation (10). 
+Second, there is a reallocation between agriculture and non-agriculture. The direct e"ect 
+of the fall in the world arable price (P⇤G) is to reduce the adjusted agricultural price (P Ai) from 
+equation (13), which implies a decline in the share of land used for agriculture (`Ai) and an increase 
+in the share of land used non-agriculturally (`M i, `Si) from equation (14). 
+Third, the reallocation of land away from agriculture, and away from arable farming within 
+the agricultural sector, both imply a decline in agricultural employment. Therefore, the decline 
+in the world arable price leads to structural transformation away from agriculture. 
+Fourth, locations with higher wheat suitability and larger initial arable land shares are more 
+exposed to this international trade shock, and hence experience larger declines in agricultural 
+employment. This larger reduction in labor demand in areas with higher wheat suitability leads 
+to a decline in wages relative to other locations, which leads to a population reallocation towards 
+other locations. Therefore, the model rationalizes empirical #ndings of rural depopulation in 
+areas with high wheat suitability and high initial arable land shares. 
+Fifth, since agriculture is land-intensive, the contraction of the agricultural sector changes 
+relative factor prices. This force operates in the conventional Heckscher-Ohlin model, with land 
+and labor as the two factors of production, and agricultural and non-agriculture as the two sec 
+34 
+tors. In that conventional framework, a fall in the price of the agricultural good leads to a more 
+than proportionate decline in the price of land and a rise in the wage. This magni#ed change in 
+factor prices implies that landlords experience a reduction in real income in terms of both goods, 
+whereas workers enjoy higher real income in terms of both goods. 
+Although this conventional force operates in our framework, the income distributional con 
+sequences of this trade shock are considerably more subtle. Our framework distinguishes arable 
+and pastoral farming within the agricultural sector. Therefore, arable farming is only part of the 
+agricultural sector, and is the relatively labor-intensive part, which dampens the impact of the 
+fall in the price of arable products on the price of land. 
+More fundamentally, in the Heckscher-Ohlin model, the income distributional consequences 
+of trade operate at the aggregate country level. In contrast, we consider a setting with many lo 
+cations within each country that di"er in initial patterns of specialization and are linked through 
+labor mobility. Therefore, in our framework, geography is an important dimension along which 
+the income distributional consequences of trade occur. Locations with higher wheat suitability 
+and larger initial arable land shares experience larger contractions in agriculture, and hence larger 
+reductions in the demand for labor. As labor reallocates away from these areas, this dampens the 
+decline in the wage, but magni#es the decline in the price of land. 
+Therefore, our framework rationalizes our earlier empirical #ndings for the Grain Invasion. 
+A decline in the price of arable products on world markets leads to (i) structural transformation 
+away from agriculture; (ii) reallocation within agriculture from arable to pastoral farming; and 
+(iii) rural depopulation that is concentrated in areas with high initial arable land shares. Our 
+framework also highlights the income distributional consequences of the Grain Invasion, both at 
+the aggregate level between land and labor, and at the disaggregate level across locations with 
+high versus low wheat suitability. 
+
+### 6 Quantitative Analysis
+
+We next undertake a quantitative analysis of the model to evaluate the magnitude of these income distributional consequences.34 Subsection 6.1 calibrates the model’s parameters. Subsection 6.2 uses the observed data and the structure of the model to recover unobserved endogenous vari ables that are inputs into our counterfactuals. We show that our model rationalizes the observed data as an equilibrium outcome, by allowing for unobserved time-varying amenities and sectoral productivities, which control for other determinants of economic activity. Section 6.3 undertakes our counterfactuals for the Grain Invasion (a fall in the exogenous world market price of arable products), holding constant other exogenous determinants of economic activity.
+
+34Online Appendix D provides further details on our quantitative analysis of the model.
+
+6.1 Parameterization 
+We calibrate the model’s parameters using historical data for our sample period and estimates 
+from the related empirical literature.35 We set the elasticity of substitution across sectors equal 
+to = 0.5, which is a central value in the existing macroeconomic literature on structural trans 
+formation, and is close to the value of = 0.49 estimated for late-19th-century Argentina in 
+Fajgelbaum and Redding (2022).36 Our quantitative analysis does not require us to specify val 
+ues for the CES weights for each sector ( A, M, S). Instead, we use the observed data and the 
+structure of our model to solve for implied expenditure shares for each sector and location in the 
+initial equilibrium in the data, which capture these unobserved weights. We calibrate the con 
+sumer expenditure share parameters within the agricultural sector using the historical consumer 
+expenditure survey data for Britain at the turn of the 20th century in Allen and Bowley (1935). 
+We set the expenditure share on arable products as G = 0.5 and the corresponding expenditure 
+share on pastoral products as F = 1 G = 0.5. 
+We calibrate the production cost parameters for arable and pastoral farming using national 
+accounts data from Feinstein (1972), together with data on employment and farm size from the 
+population census data for 1851. From the national accounts data, the share of land in production 
+costs for the agricultural sector as a whole was 0.31 in 1855. From the population census for 
+1851, the ratio of agricultural employment to farm size was around 1.5 times larger in high 
+wheat-suitability areas than in low-wheat-suitability areas. Therefore, we calibrate the land cost 
+share parameters for arable and pastoral farming (↵G, ↵F ) such that the model matches these 
+two empirical moments, given the observed aggregate shares of arable and pastoral farming in 
+agricultural land area (` A Git, ` A F it). We thus obtain ↵G = 0.25 and ↵F = 0.34. 
+We assume a common share of land in production costs in manufacturing and services 
+(↵M = ↵S = ↵N ), such that we focus on di"erences in land intensity between agriculture and 
+non-agriculture. We calibrate this common value for ↵N such that the model’s predictions are 
+consistent with the following three empirical moments: (i) our calibrated share of land in pro 
+duction costs for the agricultural sector as a whole of 0.31 in 1855 from Feinstein (1972); (ii) an 
+aggregate share of land in national income of 0.15 in 1855 from Feinstein (1972); (iii) a share of 
+manufacturing and services (including housing) in national income of 0.77 in 1851 from Deane 
+and Cole (1967). Together these three empirical moments imply a common share of land in pro 
+duction costs in manufacturing and services of ↵N = 0.10. 
+We calibrate the three productivity dispersion parameters (✏, ✓, ) using central values from 
+
+35See Online Appendix D1 for further discussion of the calibration of model parameters. 36Using our assumption of CES preferences and data for a number of di"erent countries and time periods, Bah (2007), Rogerson (2008), Duarte and Restuccia (2010), and Üngör (2017) obtain values for this elasticity of substitution of 0.44, 0.45, 0.40, and 0.47, respectively.
+
+the related empirical literature. We set the agricultural productivity dispersion parameter that controls land use decisions within the agricultural sector equal to ✏ = 1.658 based on the esti mates using agricultural land use data in Sotelo (2020). We set the sectoral productivity parameter that controls the allocation of land between sectors equal to ✓ = 1.2, which ensures greater sub stitutability of land between alternative uses within the agricultural sector than across sectors. Finally, we set the preference dispersion parameter that determines the migration elasticity across locations equal to = 2, which lies in center of the range of estimates of this parameter in Bryan and Morten (2019), Fajgelbaum et al. (2019), and Galle et al. (2023).
+
+6.2 Model Inversion 
+We next use the observed data and the structure of our model to recover unobserved endogenous 
+variables, such as rental rates and wages for each parish, which are inputs into our counterfactuals 
+below. Given the model parameters and the observed data, we use the equilibrium conditions of 
+the model to solve for the implied values of these unobserved endogenous variables that are 
+consistent with the data being an equilibrium of the model. Throughout the remainder of this 
+subsection, we make explicit the dependence on time. 
+Proposition 1. (Unobserved Endogenous Variables) Given the demand parameters ( , G, F ), 
+production cost parameters (↵k), productivity and preference dispersion parameters (✏, ✓, ) and data 
+by location i and year t on employment by sector (NAit, NM it, NSit), agricultural land shares for 
+arable and pastoral farming (` A Git, ` A F it), total land area (Li), and rateable values (Vit = ritLi), there 
+exist unique values for unobserved rental rates (rit), wages (wit), sectoral land shares (`Ait, `M it, `Sit), 
+employment in arable and pastoral farming (NGit, NF it), and sectoral expenditure shares (xAit, xM it, 
+xSit) that are consistent with the observed data being an equilibrium of the model. 
+Proof. See Online Appendix D2.1. 
+Intuitively, we use the cost minimization, zero pro#ts and land market clearing conditions 
+to solve for the unobserved endogenous variables. We interpret rateable values as the rental 
+rate times the quantity of land (Vit = ritLi), which allows us to recover the unobserved rental 
+rate for each location (rit) from observed rateable values (Vit) and land area (Li). Noting that 
+cost minimization, zero pro#ts and Cobb-Douglas production technologies together imply that 
+land payments are a multiple of labor payments, we next recover the unobserved wage for each 
+location (wit) from observed rateable values (Vit) and employment by sector (Nkit). 
+Using this proportional relationship between land and labor payments in each sector, we next 
+recover the unobserved shares of land area used for each sector in each location (`kit) from ob 
+served employment by sector (Nkit), together with our solutions for rental rates (rit) and wages 
+37 
+(wit). Using this proportional relationship between land and labor payments for each disaggre 
+gated agricultural good, we next recover employment in arable and pastoral farming in each loca 
+tion (NGit, NF it) from the observed agricultural land shares (` A Git, ` A F it), together with our solutions 
+for rental rates (rit), wages (wit) and land shares (`kit). Finally, using expenditure minimization, 
+market clearing for non-traded services, and the equality between income and expenditure, we 
+recover the implied expenditure shares by sector for each location (xkit). 
+We next show that our model incorporates a wide range of determinants of the evolution of 
+the spatial distribution of economic activity over time. We allow for unobserved changes over 
+time in sectoral productivity for each location, agricultural productivity for each disaggregated 
+good and location, and amenities for each location, such that the model exactly matches the 
+observed changes over time in rateable values, employment by sector and agricultural land shares 
+for arable and pastoral farming in the data. Given the observed values of these variables, we use 
+the equilibrium conditions of the model to solve for unique values of amenity and productivity 
+adjusted prices for which the observed data are an equilibrium of the model. 
+Proposition 2. (Model Inversion) Given the demand parameters ( , G, F ), production cost 
+parameters (↵k), productivity and preference dispersion parameters (✏, ✓, ) and data by location 
+i and year t on employment by sector (NAit, NM it, NSit), agricultural land shares for arable and 
+pastoral farming (` A Git, ` A F it), total land area (Li), and rateable values (Vit = ritLi), there exist unique 
+values of productivity-adjusted prices for each disaggregated agricultural good (Egit), productivity 
+adjusted prices for each sector (Tkit), and amenity-adjusted aggregate prices (Bit) (up to scale) that 
+are consistent with the data being an equilibrium of the model. 
+Proof. See Online Appendix D2.2. 
+Intuitively, the observed shares of agricultural land used for arable and pastoral farming (` A git) 
+in equation (10) reveal relative productivity-adjusted prices for each disaggregated agricultural 
+good (Egit ⌘ EgitP ✏/↵F git ) given wages (wit). Similarly, the shares of overall land area used for each 
+sector (`kit) in equation (14) embody relative productivity-adjusted prices for each sector (Tkit = 
+TkitP 
+✓/↵k 
+kit ) given wages (wit). Finally, the observed total employment shares ( it) in equation 
+(19) contain information on relative amenity-adjusted aggregate prices (Bit ⌘ (Bit/PCit) ) given 
+wages (wit). 
+Proposition 2 makes clear that our model encompasses many other determinants of the evolu 
+tion of economic activity over time, besides movements in world relative prices for traded goods. 
+We allow for di"erential productivity growth by sector and location that can generate uneven 
+industrialization and urbanization across locations. We capture improvements in the domestic 
+transport network that a"ect trade costs, and hence generate variation in local relative prices 
+38 
+
+for given values of world relative prices. We incorporate di"erential changes in amenities across locations, which allows for variation in the sanitation and disease environment across locations and over time.
+
+6.3 Counterfactuals 
+We next use our model to undertake counterfactuals for the Grain Invasion (a fall in the exogenous 
+world price of arable products), holding constant other exogenous determinants of economic 
+activity. We undertake our counterfactuals starting from the observed equilibrium in the data in 
+1851, immediately following the Repeal of the Corn Laws, and the #rst year for which we observe 
+employment by sector and location. 
+We denote the value of variable in the counterfactual equilibrium by a prime (e.g., x0j ), the 
+value of a variable in the observed equilibrium in the data without a prime (e.g., xj ), and the 
+relative changes in variables between the counterfactual and observed equilibria by a hat (e.g., 
+x 
+b 
+j ⌘ x0j/xj ). We show that we can re-write the counterfactual equilibrium conditions in the 
+model in terms of the observed endogenous variables in the initial equilibrium and the counter 
+factual relative changes in the endogenous variables. Therefore, we can solve for a counterfactual 
+equilibrium without requiring information on the initial level of unobserved location characteris 
+tics, such as productivity, amenities and trade costs. Instead, we use the values of the endogenous 
+variables in the initial equilibrium, as observed in the data or recovered from Proposition 1, to 
+control for these unobserved location characteristics. 
+Proposition 3. (Exact-Hat Algebra) Given the demand parameters ( , G, F ), production cost 
+parameters (↵k), productivity and preference dispersion parameters (✏, ✓, ), and data by location 
+i and year t on employment by sector (NAit, NM it, NSit), agricultural land shares for arable and 
+pastoral farming (` A Git, ` A F it), total land area (Li), rateable values (Vit = ritLi), and counterfactual 
+changes in world relative prices for traded goods (P 
+b 
+
+⇤Gt, P b ⇤F t, P b
+
+⇤M t), the solution for counterfactual changes in the model’s endogenous variables does not require information on the level of the location characteristics (Egit, Tkit, ⌧kit, Bit). Proof. See Online Appendix D3.1.
+
+We undertake our counterfactuals for the Grain Invasion using the observed change in the 
+relative price of arable to pastoral products from the agricultural prices data in Clark (2004). We 
+report three sets of counterfactuals: (i) the change in mean relative arable prices between 1815- 
+1846 and 1871-1901 (P 
+b 
+
+⇤Gt = 0.81); (ii) the change in mean relative arable prices between 1815-1846
+
+and 1846-1871 (P b
+
+⇤Gt = 0.92); and (iii) the change in mean relative arable prices between 1846-1871
+
+and 1871-1901 (P b
+
+⇤Gt = 0.88).37 We use these two sub-periods to examine the initial impact of the 
+Repeal of the Corn Laws before the full integration of New World producers into global markets 
+in the last three decades of the 19th century. We assume a counterfactual change in the world 
+price of arable products (P 
+b 
+
+⇤Gt), holding constant the exogenous world prices of the other two traded goods of pastoral products (P b
+
+⇤F t = 1) and manufacturing goods (P b
+
+⇤M t = 1), and solving for the counterfactual changes in the endogenous price of non-traded services (P b
+
+Sit). 
+There are three main di"erences between our earlier reduced-form regressions and these 
+counterfactuals. First, in our earlier reduced-form regressions, we included controls for other 
+determinants of economic activity, whereas these counterfactuals by construction isolate the im 
+pact of the Grain Invasion, holding constant other exogenous determinants of economic activity. 
+Second, our earlier reduced-form regressions estimate relative e"ects of the Grain Invasion be 
+tween high-wheat-suitability and low-wheat-suitability locations, where the aggregate e"ect is 
+captured in the time dummies. In contrast, these counterfactuals capture both relative e"ects and 
+aggregate general equilibrium e"ects. Third, while our reduced-form regressions focused on ob 
+servable variables such as employment and property values, our counterfactuals yield predictions 
+for model-based objects such as real income. 
+Parishes are unevenly a"ected by the counterfactual change in the world price of arable prod 
+ucts (P 
+b 
+⇤Gt), because they di"er in the share of agricultural land used for arable farming (` A Git) and 
+the share of land used agriculturally (`Ait). From equations (13) and (14), the e"ect of this world 
+price change (P 
+b 
+
+⇤Gt) on specialization within agriculture (` A Git) and the adjusted agricultural price
+
+## (Pb
+
+Ait) depends on the initial arable share of agricultural land (` A Git):
+
+## ` b
+
+A Git` A Git = ` A Git ⇣ P b ⇤Gt⌘ ✏/↵G (w b
+
+it) ✏/↵G ` A Git ⇣ P b ⇤Gt⌘ ✏/↵G (w b
+
+it) ✏/↵G + ` A F it (w b
+
+it) ✏/↵F
+
+, (26)
+
+## Pb
+
+Ait = ` A Git ⇣ P
+
+## b ⇤Gt⌘ ✏/↵G (w b
+
+it) ✏/↵G + 1 ` A Git (w b
+
+it) ✏/↵F
+
+1 ✏
+
+, (27)
+
+where we have used P b
+
+⇤F t = 1 and the direct e"ects of this world price change (P b
+
+⇤Gt) are moderated
+
+by general equilibrium e"ects through endogenous changes in wages (w b
+
+it). From equation (14), the e"ect of this change in the adjusted agricultural price
+
+## (Pb
+
+Ait) on the allocation of land across sectors (`Ait) depends on the initial agricultural land share (`Ait):
+
+` 
+b 
+Ait`Ait = `AitPb 
+
+✓ Ait
+
+P k2{ A,M,S} `kitPb
+
+✓ kit
+
+, (28)
+
+37The arable price index includes eleven crops (and is dominated by cereals), while the pastoral price index en compasses eleven pastoral products, as discussed further in Online Appendix F2.1. 40
+
+where we report the full system of general equilibrium conditions for a counterfactual equilib 
+rium in Online Appendix D3.1. Both the initial shares of arable land in agricultural land (` A Git) 
+and agricultural land in total land (`Ait) are strongly positively related across parishes to our 
+exogenous measure of wheat suitability.38 
+In Figure 8, we display the results of our counterfactuals for the Grain Invasion for the full 
+period 1846-1901. The gray circles display values for each parish and the black lines correspond 
+to the linear regression relationships. In Panel A, we show the change in the employment share 
+of arable farming ((N0Git/N0it NGit/Nit)) against our measure of wheat suitability. Consistent 
+with our earlier reduced-form #ndings in Section 4 above, we #nd that the Grain Invasion leads 
+to substantial structural transformation and that these e"ects are heterogeneous across locations. 
+The decline in the arable employment share ranges from close to zero in low-wheat-suitability 
+locations to up to 30 percentage points in high-wheat-suitability locations.39 The linear regression 
+relationship is not a perfect #t for several reasons. First, wheat suitability is not a perfect predictor 
+of initial specialization in arable farming, because for example of the impact of endowments of 
+other natural resources on initial specialization patterns. Second, initial specialization in arable 
+farming is not a perfect predictor of the change in the arable employment share, because of 
+general equilibrium e"ects through endogenous changes in wages and rental rates. 
+In Panel B, we show the log change in the rental rate (log (r 
+b 
+
+it)) against wheat suitability. We #nd that the Grain Invasion has marked income distributional consequences across locations, with the change in the rental rate ranging from reductions of 10 percent in locations with high wheat suitability to rises of 10 percent in locations with low wheat suitability. These results contrast with the predictions of the conventional Heckscher-Ohlin model with two goods, two factors and labor immobility, in which a decline in the price of the land-intensive agricultural good necessarily reduces the rental rate. Our framework generates much richer income distri butional predictions for two main reasons. First, the decline in the price of arable products leads to a reallocation within agriculture from arable to pastoral farming. Since arable farming is land intensive relative to manufacturing and services, but labor intensive relative to pastoral farming, this reallocation towards pastoral farming mitigates the reduction in the demand for land from the contraction of the agricultural sector as a whole. Second, our framework incorporates labor mobility, such that the labor released from the contraction of the agricultural sector in a given location need not be absorbed by the expansion of the non-agricultural sector in that location, but can be accommodated through population mobility. The resulting reallocation of population
+
+38We #nd regression slope coe$cients (standard errors) on wheat suitability of 0.506 (0.039) and 0.112 (0.032) using the arable share of agricultural share (` A Git) and agricultural land share (`Ait) in 1851, respectively. 39We #nd smaller declines in the share of agriculture in total employment, because of reallocation within the agricultural sector from arable to pastoral farming. Nevertheless, we #nd declines in the share of agriculture in employment of up to 15 percentage points in locations with high wheat suitability.
+
+Figure 8: Distributional Consequences of the Grain Invasion Across Locations (1846-1901)
+
+0 .2 .4 .6 .8 1
+
+Wheat Suitability
+
+A. Change in Arable Employment Share
+
+-.1
+
+5
+
+0 .0
+
+5 .1
+
+0 .2 .4 .6 .8 1
+
+Wheat Suitability
+
+B. Log Change in Rental Rate
+
+0 .0
+
+5 .1 .1
+
+5 .2
+
+0 .2 .4 .6 .8 1
+
+Wheat Suitability
+
+C. Log Change in Real Rental Rate
+
+-.0
+
+5
+
+0 .0
+
+5 .1 .1
+
+5
+
+0 .2 .4 .6 .8 1
+
+Wheat Suitability
+
+D. Log Change in Real Income
+
+Note: Counterfactual for the observed decline in the relative price of arable products from 1846-1901 (P
+
+b
+
+⇤Gt = 0.81); gray circles
+
+correspond to parishes in our data; black lines show the linear regression relationship; vertical axes show either the di"erence or the log di"erence between the counterfactual value of a variable and its value in the initial equilibrium; horizontal axis shows our exogenous measure of wheat suitability (normalized to lie between 0 and 1).
+
+away from high-wheat-suitability locations magni#es the decline in the price of land in those locations and increases the price of land in low-wheat-suitability locations.
+
+In Panel C, we show the log change in the real rental rate (log ⇣ r\it/PCit⌘ ) against wheat suitability. This real rental rate incorporates changes in the consumption price index, both from the reduction in the world market price of arable products, and from endogenous changes in the price of non-traded services. Notably, after taking into account these changes in the cost of living, we #nd increases in real rental rates for most locations. Again these results contrast with those of the conventional Heckscher-Ohlin model with two goods, two factors and labor immobility, in which a decline in the price of the land-intensive agricultural good necessarily reduces the real rental rate. Again our framework generates di"erent predictions because of both reallocation within the agricultural sector and the redistribution of population away from locations with high-wheat suitability towards those with low-wheat suitability. Additionally, our framework incorporates non-traded services, such that the negative impact on real income of
+
+a lower rental rate in high-wheat-suitability locations is dampened by a fall in the price of the non-traded services produced using local factors of production. Finally, in Panel D, we show the log change in real income (log ⇣⇣ witN\it + ritLi⌘ /P d Cit⌘ ) against wheat suitability. This change in real income takes into account changes in the prices of both factors of production (wages and rental rates) and the distribution of population across locations. Again we #nd substantial distributional consequences, with the change in real income ranging from rises of 15 percent to declines of 5 percent. While the reallocation of population magni#es the changes in real income in response to the Grain Invasion, the fact that land is in perfectly inelastic supply dampens these changes. These #ndings highlight that international trade shocks (here the Grain Invasion) can have substantial negative impacts on local economic activity (measured here by real income). These declines in real income in the high-wheat suit ability locations that are most exposed to the negative shock of the Grain Invasion are o"set in general equilibrium by increases in real income in other locations. In Figure 9, we examine the aggregate e"ects of the Grain Invasion on worker expected utility. We report the log change in worker expected utility (20) for both the full period and the two sub periods.40 From 1846-1901, we #nd an increase in worker expected utility of 3.65 percent, which includes the impact of both trade liberalization (the Repeal of the Corn Laws) and changes in the terms of trade (the fall in the world price of arable products from the increased integration of the New World into global markets). Although this increase in expected utility is substantial relative to conventional estimates of the aggregate welfare gains from trade for a relatively closed country such as the United States, it is more modest compared to estimates for smaller and more open countries, such as England and Wales. Additionally, while these conventional estimates are computed at the country level, our estimates of these aggregate welfare gains incorporate reallocation across locations within England and Wales. Comparing the two sub-periods, we #nd increases in expected worker utility of comparable magnitude of around 2 percent. This pattern of results suggests that both the initial Repeal of the Corn Laws and the subsequent deepening integration of the New World into global markets con tributed towards the impact of the Grain Invasion. These #ndings are in line with the historical narrative, which emphasizes the closing three decades of the 19th century as the period of the great agricultural depression, when the full e"ects of the New World Grain Invasion were felt. Nevertheless, these aggregate welfare gains for workers in Figure 9 remain small relative to the distributional consequences across locations in Figure 8 above. 40The change in worker expected utility for the full period is not exactly the product of the changes for the two sub-periods, because the general equilibrium of the model is non-linear in the change in world arable prices.
+
+Figure 9: Impact of the Grain Invasion on Worker Expected Utility
+
+.0 
+4 
+
+| 0.0365 3 .0 | |
+| --- | --- |
+| 2 .0 | 0.0238 |
+| 1 .0 | 0.0180 |
+| 0 | |
+
+L o g
+
+1846-1901 1846-1871 1871-1901 Note: Counterfactuals for the observed decline in the relative price of arable products from 1846-1901, 1846-1871, and 1871-1901; each bar shows the log change in worker expected utility (20) for the relevant counterfactual.
+
+### 7 Conclusion
+
+The distributional consequences of trade is one of the most central questions in international eco nomics. We provide new theory and evidence on this question using one of the most in!uential trade shocks in history: the New World Grain Invasion that occurred in the second half of the
+
+19th century following Britain’s Repeal of the Corn Laws.
+
+The key idea behind our approach is that there is a marked di"erence in agroclimatic condi tions between the Western and Eastern parts of England and Wales, with Western locations more suitable for grass (and hence the grazing of cattle and sheep), and Eastern locations more suit able for the cultivation of cereal grains (historically mainly wheat). As a result of this exogenous di"erence in agroclimatic conditions, Eastern locations were substantially more exposed to the Grain Invasion than Western locations. We use a newly-created, spatially-disaggregated dataset on population, employment by sec tor, property values (value of land and buildings), and poor law relief (welfare transfers) for over 10,000 parishes in England and Wales from 1801–1901. In the #rst half of the 19th century, we #nd no evidence of di"erences in trends between locations with di"erent levels of wheat suitability.
+
+In the wake of the Grain Invasion in the second half of the 19th century, we #nd an economic decline in high-wheat-suitability locations relative to low-wheat-suitability locations. We show that this pattern holds after controlling for a range of other potential determinants of growth, including proximity to natural resources and urban population concentrations. The timing of these estimated treatment e"ects aligns closely with the observed fall in the
+
+relative price of wheat and in!ux of wheat imports, and is hard to reconcile with a number of 
+alternative potential explanations. When we drill down within the agricultural sector, we #nd a 
+larger reallocation of land from wheat cultivation to pastoral farming in high-wheat-suitability 
+locations, providing further support for our mechanism based on the Grain Invasion. Using 
+individual-level population census data to directly track individual mobility decisions, we #nd 
+larger increases in outmigration and rural-urban migration in higher-wheat-suitability locations 
+in response to the Grain Invasion. 
+We develop a quantitative spatial model to rationalize these empirical #ndings and evaluate 
+the income distributional consequences of the Grain Invasion. We use our model to undertake a 
+counterfactual for a fall in the world price of arable products, holding constant other exogenous 
+forces. Over the second half of the 19th century, we #nd a relatively modest increase in expected 
+worker utility of 3.65 percent, which includes the impact of both the initial Repeal of the Corn 
+Laws and the subsequent deepening integration of the New World into global markets. This 
+relatively modest aggregate welfare gain for workers is combined with much larger distributional 
+consequences for landlords across locations, with changes in rental rates ranging from declines 
+of 10 percent to increases of the same absolute magnitude. 
+Taken together, our #ndings highlight the importance of geography as a dimension along 
+which the income distributional consequences of international trade occur. 
+
+### References
+
+Abramitzky, R., K. Eriksson, J. Feigenbaum, L. Platt Boustan, and S. Perez (2021): “Auto 
+mated Linking of Historical Data,” Journal of Economic Literature, 59, 865–918. 
+Adão, R., E. Morales, and M. Kolesár (2019): “Shift-Share Designs: Theory and Inference,” 
+Quarterly Journal of Economics, 134, 1949–2010. 
+Adelman, J. (1994): Frontier Development: Land, Labor and Capital on the Wheatlands of Argentina 
+and Canada 1890-1914, Oxford: Oxford University Press. 
+Ahlfeldt, G., S. Redding, D. Sturm, and N. Wolf (2015): “The Economics of Density: Evidence 
+from the Berlin Wall,” Econometrica, 83, 2127–2189. 
+Allen, R. G. D. and A. L. Bowley (1935): Family Expenditure: A Study of its Variation, London: 
+P. S. King & Son, Ltd. 
+Allen, T. and C. Arkolakis (2014): “Trade and the Topography of the Spatial Economy,” Quar 
+terly Journal of Economics, 129, 1085–1140. 
+Allen, T., C. Arkolakis, and X. Li (2017): “Optimal City Structure,” Yale University, mimeo 
+graph. 
+Artuç, E., S. Chaudhuri, and J. McLaren (2010): “Trade Shocks and Labor Adjustment: A 
+Structural Empirical Approach,” American Economic Review, 100, 1008–45. 
+Autor, D., D. Dorn, and G. H. Hanson (2013): “The China Syndrome: Local Labor Market 
+E"ects of Import Competition in the United States,” American Economic Review, 103, 2121–68. 
+Autor, D., D. Dorn, G. H. Hanson, and J. Song (2014): “Trade Adjustment: Worker-Level Evi 
+dence,” Quarterly Journal of Economics, 129, 1799–1860. 
+45 
+Bah, E.-h. M. (2007): “A Three-sector Model of Structural Transformation and Economic Devel 
+opment,” Munich Personal RePEc Working Paper, 10654. 
+Barnes, D. G. (1930): A History of the English Corn Laws, London: George Routledge and Sons. 
+Baumol, W. J. (1967): “Macroeconomics of Unbalanced Growth: The Anatomy of Urban Crisis,” 
+American Economic Review, 57, 415–426. 
+Board of Agriculture and Fisheries (1906): Report on the Decline in the Agricultural Population 
+of Great Britain, 1881–1906, London: Darling & Son. 
+Borusyak, K. and X. Jaravel (2021): “The Distributional E"ects of Trade: Theory and Evidence 
+from the United States,” NBER Working Paper, 28957. 
+Borusyak, K., X. Jaravel, and J. Spiess (2024): “Revisiting Event Study Designs: Robust and 
+E$cient Estimation,” Review of Economic Studies, forthcoming. 
+Boyer, G. R. (1990): An Economic History of the English Poor Law 1750-1850, vol. 1, Cambridge: 
+Cambridge University Press. 
+Bräuer, R. and F. Kersting (2024): “Trade Shocks, Labour Markets and Elections in the First 
+Globalization,” Economic Journal, 134, 135–164. 
+Bryan, G. and M. Morten (2019): “The Aggregate Productivity E"ects of Internal Migration: 
+Evidence from Indonesia,” Journal of Political Economy, 127, 1993–2568. 
+Bustos, P., B. Caprettini, and J. Ponticelli (2016): “Agricultural Productivity and Structural 
+Transformation. Evidence from Brazil,” American Economic Review, 106, 1320–1365. 
+Caird, J. (1852): English Agriculture in 1850-51, London: Longman, Brown, Green and Longmans. 
+Caliendo, L., M. Dvorkin, and F. Parro (2019): “Trade and Labor Market Dynamics: General 
+Equilibrium Analysis of the China Trade Shock,” Econometrica, 87, 741–835. 
+Caliendo, L., F. Parro, E. Rossi-Hansberg, and P.-D. Sarte (2018): “The Impact of Regional and 
+Sectoral Productivity Changes on the U.S. Economy,” Review of Economic Studies, 85, 2042–2096. 
+Callaway, B. and P. H. Sant’Anna (2021): “Di"erence-in-di"erences with multiple time peri 
+ods,” Journal of Econometrics, 225, 200–230. 
+Cannadine, D. (1990): The Decline and Fall of the British Aristocracy, New Haven: Yale University 
+Press. 
+——— (2019): Victorious Century: The United Kingdom, 1800-1906, London: Penguin. 
+Caprettini, B. and H.-J. Voth (2020): “Rage Against the Machines: Labor-Saving Technology 
+and Unrest in Industrializing England,” American Economic Review: Insights, 2, 305–20. 
+Chepeliev, M. G. and D. A. Irwin (2021): “The Economic Consequences of Sir Robert Peel: A 
+Quantitative Assessment of the Repeal of the Corn Laws,” Economic Journal, 131, 3322–3337. 
+Clark, G. (2004): “The Price History of English Agriculture, 1209-1914,” Research in Economic 
+History, 22, 41–123. 
+Comin, D., D. Lashkari, and M. Mestieri (2021): “Structural Change With Long-Run Income 
+and Price E"ects,” Econometrica, 89, 311–374. 
+Conley, T. G. (1999): “GMM Estimation with Cross Sectional Dependence,” Journal of Economet 
+rics, 92, 1–45. 
+Costa, F. J., J. Garred, and J. P. Pessoa (2016): “Winners and Losers from a Commodities-for 
+Manufactures Trade Boom,” Journal of International Economics, 102, 50–69. 
+Costinot, A., D. Donaldson, and C. Smith (2016): “Evolving Comparative Advantage and the 
+Impact of Climate Change in Agricultural Markets: Evidence from 1.7 Million Fields around 
+the World,” Journal of Political Economy, 124, 205–248. 
+De Chaisemartin, C. and X. d’Haultfoeuille (2020): “Two-way #xed e"ects estimators with 
+heterogeneous treatment e"ects,” American Economic Review, 110, 2964–96. 
+
+Deane, P. and W. A. Cole (1967): British Economic Growth 1688-1959: Trends and Structure, Cam 
+bridge: Cambridge University Press. 
+Desmet, K., D. K. Nagy, and E. Rossi-Hansberg (2018): “The Geography of Development,” Jour 
+nal of Political Economy, 126, 903–983. 
+Dix-Carneiro, R. and B. K. Kovak (2017): “Trade Liberalization and Regional Dynamics,” Amer 
+ican Economic Review, 107, 1908–2946. 
+Donaldson, D. (2018): “Railroads of the Raj: Estimating the Impact of Transportation Infrastruc 
+ture,” American Economic Review, 108, 899–934. 
+Donaldson, D. and R. Hornbeck (2016): “Railroads and American Economic Growth: A Market 
+Access Approach,” Quarterly Journal of Economics, 131, 799–858. 
+Duarte, M. and D. Restuccia (2010): “The Role of the Structural Transformation in Aggregate 
+Productivity,” Quarterly Journal of Economics, 125, 129–173. 
+Eaton, J. and S. Kortum (2002): “Technology, Geography, and Trade,” Econometrica, 70, 1741– 
+1779. 
+Eckert, F. and M. Peters (2023): “Spatial Structural Change,” Yale University, mimeo. 
+Fagan, B. (2019): Little Ice Age, London: Basic Books. 
+Fajgelbaum, P. and C. Gaubert (2020): “Optimal Spatial Policies, Geography, and Sorting,” Quar 
+terly Journal of Economics, 135, 959–1036. 
+Fajgelbaum, P. D., E. Morales, J. C. Suárez-Serrato, and O. Zidar (2019): “State Taxes and 
+Spatial Misallocation,” Review of Economic Studies, 86, 333–376. 
+Fajgelbaum, P. D. and S. J. Redding (2022): “Trade, Structural Transformation and Development: 
+Evidence from Argentina 1869-1914,” Journal of Political Economy, 130, 1249–1318. 
+Farrokhi, F. and H. S. Pellegrina (2023): “Trade, Technology and Agricultural Productivity,” 
+Journal of Political Economy, 131, 2509–2555. 
+Fay, C. R. (1932): The Corn Laws and Social England, Cambridge University Press. 
+Feinstein, C. H. (1972): National Income, Expenditure and Output of the United Kingdom, 1855- 
+1965, Cambridge: Cambridge University Press. 
+Fletcher, T. (1961): “The Great Depression of English Agriculture 1873-1896,” The Economic 
+History Review, 13, 417–432. 
+Fogel, R. W. (1964): Railroads and American Economic Growth: Essays in Econometric History, 
+Baltimore, MD: Johns Hopkins University Press. 
+Galle, S., A. Rodríguez-Clare, and M. Yi (2023): “Slicing the Pie: Quantifying the Aggregate 
+and Distributional Consequences of Trade,” Review of Economic Studies, 90, 331–375. 
+Galpin, W. F. (1925): The Grain Supply of England During the Napoleonic Period, Macmillan. 
+Gaubert, C. (2018): “Firm Sorting and Agglomeration,” American Economic Review, 108, 3117–53. 
+Goudie, A. S. and D. Brunsden (1995): The Environment of the British Isles: An Atlas, Oxford: 
+Oxford University Press. 
+Graham, P. A. (1892): The Rural Exodus: the Problem of the Village and the Town, London: Methuen 
+& Co. 
+Harley, C. K. (1988): “Ocean Freight Rates and Productivity, 1740-1913: The Primacy of Mechan 
+ical Invention Rea$rmed,” The Journal of Economic History, 48, 851–876. 
+Hornbeck, R. (2023): “Dust Bowl Migrants: Environmental Refugees and Economic Adaptation,” 
+Journal of Economic History, 83, 645–675. 
+Howe, A. (1998): The Whigs, the City and Free Trade, 1846-1853, Oxford: Oxford University Press. 
+Irwin, D. (1989): “Political Economy and Peel’s Repeal of the Corn Laws,” Economics and Politics, 
+
+1, 41–59. 
+Juhász, R. (2018): “Temporary Protection and Technology Adoption: Evidence from the 
+Napoleonic Blockade,” American Economic Review, 108, 3339–76. 
+Kim, R. and J. Vogel (2021): “Trade Shocks and Labor Market Adjustment,” American Economic 
+Review: Insights, 3, 115–130. 
+Kovak, B. K. (2013): “Regional E"ects of Trade Reform: What is the Correct Measure of Liberal 
+ization?” American Economic Review, 103, 1960–1976. 
+Longstaff, G. B. (1893): Rural Depopulation, London: Royal Statistical Society. 
+Lord Ernle, f. R. E. P. (1912): English Farming, Past and Present, Longmans, Green & Co., 1st ed. 
+Monte, F., S. Redding, and E. Rossi-Hansberg (2018): “Commuting, Migration and Local Em 
+ployment Elasticities,” American Economic Review, 108, 3855–3890. 
+Nagy, D. (2023): “Hinterlands, City Formation and Growth: Evidence from the U.S. Westward 
+Expansion,” Review of Economic Studies, 90, 3238–3281. 
+Nicholson, J. S. (1904): The History of the English Corn Laws, London: Swan Sonnenschein & Co. 
+North, D. (1958): “Freight Rates and Economic Development 1750-1913,” Journal of Economic 
+History, 18, 537–555. 
+Olson, M. and C. C. Harris (1959): “Free Trade in “Corn”: A Statistical Study of the Prices and 
+Production of Wheat in Great Britain from 1873 to 1914,” The Quarterly Journal of Economics, 
+73, 145–168. 
+O’Rourke, K. H. (1997): “The European Grain Invasion, 1870–1913,” Journal of Economic History,, 
+57, 775–801. 
+O’Rourke, K. H., A. M. Taylor, and J. G. Williamson (1996): “Factor price convergence in the 
+late nineteenth century,” International Economic Review, 37, 499–530. 
+O’Rourke, K. H. and J. G. Williamson (2001): Globalization and History: The Evolution of a 
+Nineteenth-Century Atlantic Economy, Cambridge MA: MIT Press. 
+Pascali, L. (2017): “The Wind of Change: Maritime Technology, Trade, and Economic Develop 
+ment,” American Economic Review, 107, 2821–54. 
+Perry, P. (1973): British agriculture 1875-1914, London: Methuen & Co Ltd. 
+Perry, P. J. (1972): “Where Was the ‘Great Agricultural Depression’? A Geography of Agricultural 
+Bankruptcy in Late Victorian England and Wales,” The Agricultural History Review, 20, 30–45. 
+Peters, M. (2022): “Market Size and Spatial Growth: Evidence from Germany’s Post-War Popu 
+lation Expulsions,” Econometrica, 90, 2357–2396. 
+Pierce, J. R. and P. K. Schott (2016): “The Surprisingly Swift Decline of US Manufacturing 
+Employment,” American Economic Review, 106, 1632–62. 
+Redding, S. J. (2016): “Goods Trade, Factor Mobility and Welfare,” Journal of International Eco 
+nomics, 101, 148–167. 
+——— (2022): “Trade and Geography,” in Handbook of International Economics, ed. by G. Gita, 
+E. Helpman, and K. Rogo", Amsterdam: Elsevier, chap. 3, 147–217. 
+Redding, S. J. and E. Rossi-Hansberg (2017): “Quantitative Spatial Models,” Annual Review of 
+Economics, 9, 21–58. 
+Redding, S. J. and D. M. Sturm (2008): “The Costs of Remoteness: Evidence from German Divi 
+sion and Reuni#cation,” American Economic Review, 98, 1766–1797. 
+Renwick, C. (2017): Bread for All: The Origins of the Welfare State, London: Penguin Random 
+House. 
+Ricardo, D. (1817): On the Principles of Political Economy and Taxation, London: John Murray. 
+
+Rogerson, R. (2008): “Structural Transformation and the Deterioration of European Labor Market 
+Outcomes,” Journal of Political Economy, 116, 235–59. 
+Schonhardt-Bailey, C. (2006): From the Corn Laws to Free Trade: Interests, Ideas, and Institutions 
+in Historical Perspective, Cambridge MA: MIT Press. 
+Sharp, P. (2009): “Wheat, Globalization and History,” University of Copenhagen, PhD Thesis. 
+——— (2010): “‘1846 and All That’: the Rise and Fall of British Wheat Protection in the Nineteenth 
+Century,” Agricultural History Review, 58, 76–94. 
+Sharp, P. and J. Weisdorf (2013): “Globalization Revisited: Market Integration and the Wheat 
+Trade Between North America and Britain from the Eighteenth Century,” Explorations in Eco 
+nomic History, 50, 88–98. 
+Shaw-Taylor, L., R. S. Davies, P. M. Kitson, G. Newton, A. E. M. Satchell, and 
+E. A. Wrigley (2010): “The Occupational Structure of England and Wales c.1817-1881,” 
+Http://www.geog.cam.ac.uk/research/projects/occupations/. 
+Sotelo, S. (2020): “Domestic Trade Frictions and Agriculture,” Journal of Political Economy, 128, 
+2690–738. 
+Stamp, J. (1920): British Incomes and Property: The Application of O!cial Statistics to Economic 
+Problems, London: P. S. King & Son. 
+Sun, L. and S. Abraham (2021): “Estimating dynamic treatment e"ects in event studies with 
+heterogeneous treatment e"ects,” Journal of Econometrics, 225, 175–199. 
+Taylor, A. M. (1999): “Sources of Convergence in the Late Nineteenth Century,” European Eco 
+nomic Review, 1621–45. 
+Thompson, F. M. L. (1963): English Landed Society in the Nineteenth Century, London: Routlege 
+& Kegan. 
+Topalova, P. (2010): “Factor Immobility and Regional Impacts of Trade Liberalization: Evidence 
+on Poverty from India,” American Economic Journal: Applied Economics, 2, 1–41. 
+Trentmann, F. (2008): Free Trade Nation: Commerce, Consumption, and Civil Society in Modern 
+Britain, Oxford: Oxford University Press. 
+Üngör, M. (2017): “Productivity Growth and Labor Reallocation: Latin America versus East Asia,” 
+Review of Economic Dynamics, 24, 25–42. 
+Wilcox, W. F. (1969): International Migrations: Volume I Statistics, vol. 1, New York: Gordon and 
+Breach. 
+Wilkerson, I. (2011): The Warmth of Other Suns: The Epic Story of America’s Great Migration, 
+New York: Vintage. 
+Williamson, J. (1990): “The Impact of the Corn Laws Just Prior to Repeal,” Explorations in Eco 
+nomic History, 27, 123–156. 
+
+##### CENTRE FOR ECONOMIC PERFORMANCE Recent Discussion Papers
+
+| 2032 | Brian Bell Philip Johnson | Immigrant downgrading: New evidence from UK panel data |
+| --- | --- | --- |
+| | | |
+| 2031 | Ying Chen Paul Cheshire Xiangqing Wang You-Sin Wang | Valuing consumption services as technology transforms accessibility: Evidence from Beijing |
+| | | |
+| 2030 | Johannes Boehm Thomas Chaney | Trade and the end of antiquity |
+| | | |
+| 2029 | Jay Euijung Lee Martina Zanella | Learning about women’s competence: The dynamic response of political parties to gender quotes in South Korea |
+| | | |
+| 2028 | Christos Genakos Blair Yuan Lyu Mario Pagliero | Asymmetric pass-through and competition |
+| | | |
+| 2027 | Fabrice Defever Alejandro Riaño Gonzalo Varela | Evaluating the impact of export finance support on firm-level export performance: Evidence from Pakistan |
+| | | |
+| 2026 | Andrés Barrios-Fernández Christopher Neilson Seth Zimmerman | Elite universities and the intergenerational transmission of human and social capital |
+| | | |
+| 2025 | Agnes Norris Keiller | Brexit and investment |
+| | | |
+| 2024 | Lídia Farré Libertad González Claudia Hupkau Jenifer Ruiz-Valenzuela | Paternity leave and child development |
+| | | |
+
+Housing-consumption channel of mortgage demand
+
+2023 Gabriel M. Ahlfeldt Nikodem Szumilo Jagdish Tripathy
+
+When trade drives markup divergence. An application to auto markets
+
+2022 Agnes Norris Keiller Tim Obermeier Andreas Teichgraeber John Van Reenen
+
+| | | |
+| --- | --- | --- |
+| 2021 | Amanda Dahlstrand Nestor Le Nestour Guy Michaels | Online versus in-person services: Effects on patients and providers |
+| | | |
+| 2020 | Hanwei Huang Kalina Manova Oscar Perelló Frank Pisch | Firm heterogeneity and imperfect competition in global production networks |
+| | | |
+| 2019 | Jan David Bakker Nikhil Datta | Avenging the tenants: Regulating the middle man’s rents |
+| | | |
+| 2018 | Agnes Norris Keiller Áureo de Paula John Van Reenen | Production function estimation using subjective expectations data |
+| | | |
+| 2017 | Philippe Aghion Lint Barrage David Hémous Ernest Liu | Transition to green technology along the chain supply |
+| | | |
+| 2016 | Tom Schmitz Italo Colantone Gianmarco Ottaviano | Regional and aggregate economic consequences of environmental policy |
+| | | |
+| 2015 | Agnes Norris Keiller Tim Obermeier Andreas Teichgraeber John Van Reenen | An engine of (pay) growth? Productivity and wages in the UK auto industry |
+
+The Centre for Economic Performance Publications Unit Tel: +44 (0)20 7955 7673 Email info@cep.lse.ac.uk Website: http://cep.lse.ac.uk Twitter: @CEP_LSE
+

@@ -1,0 +1,28 @@
+{
+  "id": "734e218c-076a-441a-abb2-3795b384b119",
+  "object": "chat.completion",
+  "created": 1794201305,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-00008\",\"predictions\":[{\"quote\":\"投资者认为推特在之后的10年中可以获得垄断利润，而报纸的垄断时代却会结束。\",\"kind\":\"prediction\",\"speaker\":\"作者（转述投资者观点）\",\"claim\":\"投资者预期推特未来10年可获得垄断利润，报纸的垄断时代将结束。\",\"expanded_claim\":\"投资者预期推特在之后的10年中可以获得垄断利润，而报纸的垄断时代却会结束。\",\"reference_resolutions\":[{\"expression\":\"推特\",\"referent\":\"推特（Twitter）公司\",\"support_quote\":\"推特（Twitter）公司\"},{\"expression\":\"报纸\",\"referent\":\"报纸行业/报纸公司\",\"support_quote\":\"纽约时报公司\"}],\"unresolved_references\":[],\"time_text\":\"之后的10年中\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"转述投资者对未来利润与行业格局的判断，属于对未来的预测。\"},{\"quote\":\"一家科技公司的大部分价值都会在未来至少10~15年得到体现。\",\"kind\":\"prediction\",\"speaker\":\"作者\",\"claim\":\"科技公司的大部分价值将在未来至少10到15年体现。\",\"expanded_claim\":\"一家科技公司的大部分价值都会在未来至少10到15年得到体现。\",\"reference_resolutions\":[{\"expression\":\"一家科技公司\",\"referent\":\"科技公司（泛指）\",\"support_quote\":\"科技公司则走相反的道路\"}],\"unresolved_references\":[],\"time_text\":\"未来至少10~15年\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"对科技公司价值实现时间的未来判断。\"},{\"quote\":\"这场莎士比亚式的传奇故事看来要等到所有的形状都被模仿完才能落幕。\",\"kind\":\"unclear\",\"speaker\":\"作者\",\"claim\":\"读卡器形状模仿竞争要等到所有形状被模仿完才会结束。\",\"expanded_claim\":\"这场移动信用卡读卡器的莎士比亚式竞争故事看来要等到所有的形状都被模仿完才能落幕。\",\"reference_resolutions\":[{\"expression\":\"这场莎士比亚式的传奇故事\",\"referent\":\"移动信用卡读卡器的几何图形模仿竞争\",\"support_quote\":\"移动信用卡读卡器的几何图形战争\"}],\"unresolved_references\":[],\"unresolved_references_note\":\"\",\"time_text\":\"\",\"condition_text\":\"等到所有的形状都被模仿完\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"以比喻方式表达竞争将持续到模仿穷尽，带有推测性，是否构成严格预测不明确。\"},{\"quote\":\"最终，Pets.com在网络风潮结束后破产，3亿美元的投资也随之烟消云散。\",\"kind\":\"unclear\",\"speaker\":\"作者\",\"claim\":\"Pets.com在网络风潮结束后破产，3亿美元投资损失。\",\"expanded_claim\":\"最终，Pets.com在网络风潮结束后破产，3亿美元的投资也随之烟消云散。\",\"reference_resolutions\":[{\"expression\":\"Pets.com\",\"referent\":\"Pets.com公司\",\"support_quote\":\"Pets.com、PetStore.com、Petopia.com\"}],\"unresolved_references\":[],\"time_text\":\"网络风潮结束后\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"叙述已发生的历史结果，不是说话时对未来的预测，故标为unclear。\"},{\"quote\":\"作为一个整体，我们可以安全熬过网络泡沫，并建立起一个成功的事业。\",\"kind\":\"prediction\",\"speaker\":\"作者\",\"claim\":\"合并后的整体可以安全熬过网络泡沫并建立成功事业。\",\"expanded_claim\":\"合并后的PayPal与X.com整体可以安全熬过网络泡沫，并建立起一个成功的事业。\",\"reference_resolutions\":[{\"expression\":\"我们\",\"referent\":\"合并后的PayPal与X.com公司整体\",\"support_quote\":\"一个股权比例为50 ∶ 50的合并公司诞生了\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"作为合并后的一个整体\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"对合并后公司未来前景的判断，属于预测。\"},{\"quote\":\"下一章我们就来讨论一下如何以清醒的头脑去打造垄断的事业。\",\"kind\":\"unclear\",\"speaker\":\"作者\",\"claim\":\"下一章将讨论如何打造垄断事业。\",\"expanded_claim\":\"下一章我们就来讨论一下如何以清醒的头脑去打造垄断的事业。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"下一章\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"关于书籍结构的陈述，不是对现实结果的预测。\"}]}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3315,
+    "completion_tokens": 950,
+    "total_tokens": 4265,
+    "prompt_tokens_details": {
+      "cached_tokens": 3072
+    },
+    "prompt_cache_hit_tokens": 3072,
+    "prompt_cache_miss_tokens": 243
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

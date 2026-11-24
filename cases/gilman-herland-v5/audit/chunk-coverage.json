@@ -1,0 +1,34 @@
+{
+  "status": "current",
+  "current_receipt": "audit/reread-receipt.json",
+  "ledger_path": "/tmp/p1-work/gilman-herland/ledger-reread-2026-11-20.jsonl",
+  "ledger_sha256": "0020bc604d5bd626e48b382d43a38d2b1dd3a894d4ee71917831ff06aec44b5a",
+  "ledger_bytes": null,
+  "manifest_count": 94,
+  "ledger_count": 94,
+  "ids_equal": true,
+  "predictions_nonempty": 0,
+  "rejection_counts": {
+    "gutenberg_title_page_and_story_start": 1,
+    "fiction_narrative": 68,
+    "fiction_dialogue": 8,
+    "fiction_history": 5,
+    "fiction_comparison": 1,
+    "fiction_exposition": 5,
+    "gutenberg_license_not_fiction": 5,
+    "gutenberg_newsletter_not_fiction": 1
+  },
+  "note": "现行分类是本轮重读收据，不是恢复的原件。全账本不在包内。",
+  "superseded": {
+    "status": "superseded_not_current",
+    "rejection_counts": {
+      "gutenberg_title_page": 1,
+      "gutenberg_newsletter_footer": 1,
+      "fiction_scenario_not_a_real_world_forecast_not_reclassified": 92
+    },
+    "ledger_sha256": null,
+    "ledger_bytes": null,
+    "note": "原始账本文件在 VM 上不存在，见 audit/original-ledger-missing.json。先前把 94 块都写成 fiction_scenario 并给出重建哈希，该哈希撤回。txt-00001 和 txt-00094 已按现存分块文件改类。其余 92 块没有原件可改，不新造账本，也不新增预测。",
+    "why": "旧的 92 块 fiction_scenario_not_reclassified 和空哈希不再作为现行分类。"
+  }
+}

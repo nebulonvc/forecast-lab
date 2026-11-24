@@ -1,0 +1,74 @@
+{
+  "id": "txt-099aaa16de-000124630-000124810",
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "现行济贫法仍然有效时，济贫基金按自然趋势增加，直到吸尽国家的纯收入，或至少吸尽公共开支之后留下来的那一部分。",
+    "reason": "已保存的页写救济支出占GDP之比，从1748-50年的1.0%到1818-20年的2.7%，并写到1834年修改济贫法。GDP不是纯收入，年份也不是日。",
+    "limitation": "1818-20和1834只以年份出现。若程序要给年份一个区间上界，那个上界不是源日期，不写入 observation_end 或 date。",
+    "evidence_ids": [],
+    "method": "在现行法继续有效的条件下看基金是否吸尽纯收入。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": false,
+    "evidence_notes": [],
+    "remaining_gap": "缺现行法仍然有效期间、基金是否吸尽纯收入的同对象记录，也没有源日期。",
+    "calculation_upper_bound_not_source_date": "1818-20若被收成区间，上界不是源日期。",
+    "id": "txt-099aaa16de-000124630-000124810"
+  },
+  "previous_r2_plan": null,
+  "previous_r2_select": null,
+  "previous_r2_semantic_review": null,
+  "plan": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "not_a_pre_search_plan": "这是2026-11-20的r3补写。r2里这栏若只有“当前审查”一句，那个时间保留在previous_r2_plan，不把本段倒签成检索之前。",
+    "object": "现行济贫法仍然有效时，济贫基金按自然趋势增加，直到吸尽国家的纯收入，或至少吸尽公共开支之后余下的那一部分。",
+    "condition": "现行济贫法仍然有效。",
+    "observable": "该法仍然有效的期间，基金是否增加到吸尽纯收入或公共开支后的剩余。",
+    "potential_counterevidence": "若该法仍有效，基金却没有向纯收入增加，或被后来的法律换掉。",
+    "queries": [
+      {
+        "role": "counter",
+        "query": "poor law spending remained far below British national income",
+        "precall_file": "audit/r-batch3/precall/12-counter.json"
+      },
+      {
+        "role": "support",
+        "query": "English poor rate expenditure share of national income",
+        "precall_file": "audit/r-batch3/precall/11-support.json"
+      }
+    ]
+  },
+  "select": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "max_urls": 8,
+    "urls": [],
+    "selected_for_score": [],
+    "url_gap": "这条的已存返回是precall和页文本或空的saved_pages。那些文件没有URL行。不编URL。不利材料若只有查询名、没有地址，不能装成名单。"
+  },
+  "semantic_review": {
+    "reviewed_at": "2026-11-20T12:22:02Z",
+    "decision": "unresolved",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "unknown",
+      "time_alignment": "unknown",
+      "evidence_support": "unknown",
+      "counterevidence": "unknown",
+      "verdict_logic": "pass"
+    },
+    "check_reasons": {
+      "object_match": "评估要的是济贫基金对纯收入，不是济贫支出占国民收入的一个百分比。",
+      "condition_logic": "“仍然有效”的起讫没有被写明。1834年改法是否使“现行法”停止，现有页没有判死，所以条件仍是未知，不用另一套救济制度代替。",
+      "time_alignment": "没有源日期。观察终点留空。",
+      "evidence_support": "没有基金吸尽纯收入的记录。",
+      "counterevidence": "反证查询是济贫支出远低于国民收入。没有URL。低于国民收入也不等于没有吸尽纯收入。",
+      "verdict_logic": "条件和吸尽口径都未闭合。暂无法判断没有判成错误。"
+    },
+    "revision": "本轮六项没有fail，所以没有做那一次修订。判决保持暂无法判断。",
+    "remaining_gap": "还缺现行法仍然有效期间、基金是否吸尽纯收入的同对象记录。"
+  }
+}

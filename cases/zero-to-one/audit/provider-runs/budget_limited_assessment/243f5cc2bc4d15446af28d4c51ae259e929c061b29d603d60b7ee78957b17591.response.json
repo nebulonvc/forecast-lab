@@ -1,0 +1,28 @@
+{
+  "id": "1b173769-d72f-40b4-99dd-5badb3956386",
+  "object": "chat.completion",
+  "created": 1794201445,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000035619-000035660\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为条件性规范性判断（若认为未来明确，则提前了解并打造未来有意义），无可观测的未来结果、指标或期限。\",\"reason\":\"该句是作者对行动意义的规范性主张，不是可验证的未来事件或趋势预测。\",\"limitation\":\"规范性判断无法用外部事实判定真假，故仅作非预测审计记录。\",\"evidence_ids\":[],\"method\":\"条件性判断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4332,
+    "completion_tokens": 156,
+    "total_tokens": 4488,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3564
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

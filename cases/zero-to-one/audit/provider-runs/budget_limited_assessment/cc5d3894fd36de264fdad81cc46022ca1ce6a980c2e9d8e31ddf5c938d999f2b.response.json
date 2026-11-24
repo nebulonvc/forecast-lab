@@ -1,0 +1,28 @@
+{
+  "id": "0df6e0fa-8d93-4cb0-8477-55b0d3785d66",
+  "object": "chat.completion",
+  "created": 1794201446,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000036504-000036517\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文是对“对未来不明确的悲观主义者”行为倾向的类型化描述，不构成可检验的未来结果预测；无观察时段。\",\"reason\":\"该句描述一类人的态度与行为倾向，并非对特定未来事件或结果的预测。\",\"limitation\":\"属于概念性描述，无法按预测评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4290,
+    "completion_tokens": 145,
+    "total_tokens": 4435,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3522
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

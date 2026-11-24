@@ -1,0 +1,659 @@
+{
+  "claim_id": "txt-1c4066fc0c-000179063-000179098",
+  "version": "search-verifier-v1",
+  "input_sha256": "644abeb0bf29c48601c584789acc3694d003e998f39d201c96127f22d70db5a4",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000179063-000179098",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "对象为美国社会服务/福利开支及纳税人负担引发的全国性政治争论；观察口径为1991年出版后至截止日2026-11-09期间联邦福利立法、预算协商、总统否决与资格规则改革中争议是否反复出现并升级。已观察节点包括1996年福利改革立法与两次总统否决、2011-2014年食品券/农业法案之争、2023年债务上限中的SNAP修改、2025年P.L.119-21扩大SNAP与Medicaid工作要求。",
+    "reason": "原文预测围绕福利开支与纳税人负担的争论将愈演愈烈。现有材料能证明该议题在1996、2014、2023、2025年反复成为全国立法争议焦点，但缺少可比的争论强度序列，无法判断是否“愈演愈烈”而非仅反复出现；且1996年否决后两党合作增多、2014年最终达成妥协，属同议题降温材料。",
+    "limitation": "原文未给出量化指标或期限，“愈演愈烈”只能以争议反复出现和立法冲突频次粗略操作化，强度难以精确比较。关键修订：不再把证据发表日期当作观察终点，不再将verified=false且仅证明争论存在的候选来源作为支持主要结果的依据，并纳入同议题降温材料。",
+    "evidence_ids": [
+      "prior-9b657e0516dd91780ae7",
+      "ev-55f151d50a2f08f7d445238b",
+      "prior-de993ffec3fad643c5b7",
+      "ev-1f99d025e7cb750e2bba89bc"
+    ],
+    "method": "由财政负担与政治利益冲突外推争论升级",
+    "method_basis": "explicit",
+    "observation_end": "2025-12-09",
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-9b657e0516dd91780ae7",
+        "relation": "boundary",
+        "quote": "1996年8月1日国会记录中，参议院民主党领袖Daschle回顾18个月福利辩论及两次总统否决，同时指出经过否决后两党合作增多。",
+        "publication_date": "1996-08-01",
+        "observation_end": "1996-08-01",
+        "limitation": "该摘录同时显示两党合作增多，说明争论并非单向升级，含降温迹象。"
+      },
+      {
+        "evidence_id": "ev-55f151d50a2f08f7d445238b",
+        "relation": "boundary",
+        "quote": "beginning in 2011, a pitched battle over food stamps thrust the nation’s farm bill into the thick of the red-blue culture wars and a charged 2012 campaign-trail debate over government dependency.",
+        "publication_date": "2015-10-22",
+        "observation_end": "2015-10-22",
+        "limitation": "该文同时强调最终达成妥协，说明争论虽激烈但有阶段性收敛；为未语义复核候选。"
+      },
+      {
+        "evidence_id": "prior-de993ffec3fad643c5b7",
+        "relation": "support",
+        "quote": "Brookings研究者指出SNAP工作要求是否修改的辩论近年加强；2023债务上限协商改变资格要求，并进入后续农业法案讨论。",
+        "publication_date": "2023-10-05",
+        "observation_end": "2023-10-05",
+        "limitation": "聚焦SNAP工作要求，未直接量化纳税人负担争论强度，仅证明议题持续存在。"
+      },
+      {
+        "evidence_id": "ev-1f99d025e7cb750e2bba89bc",
+        "relation": "support",
+        "quote": "Enacted July 4, 2025, the FY2025 budget reconciliation law (P.L. 119-21) included significant changes to the means-tested programs Medicaid and the Supplemental Nutrition Assistance Program (SNAP).",
+        "publication_date": "2025-12-09",
+        "observation_end": "2025-12-09",
+        "limitation": "证明2025年福利规则改革引发立法争议，但为未语义复核候选，且未直接反映纳税人负担争论强度。"
+      }
+    ],
+    "remaining_gap": "缺少对“争论强度”的可比量化指标（如国会听证、议案数、民调关注度）的连续序列，无法判断是否“愈演愈烈”而非仅反复出现；部分候选来源尚待语义复核。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000179063-000179098",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象为美国社会服务/福利开支及纳税人负担引发的全国性政治争论；观察口径为1991年出版后至截止日2026-11-09期间联邦福利立法、预算协商、总统否决与资格规则改革中争议是否反复出现并升级。实际观察到的关键节点包括1996年福利改革立法与两次总统否决、2011-2014年食品券/农业法案之争、2023年债务上限中的SNAP修改、2025年P.L.119-21扩大SNAP与Medicaid工作要求。",
+    "reason": "原文预测围绕福利开支与纳税人负担的争论将愈演愈烈。观察窗口内福利改革、SNAP/Medicaid工作要求在1996、2014、2023、2025年反复成为全国立法与预算争议焦点，方向与预测一致，故判部分符合（趋势符合，最终是否持续升级待验证）。",
+    "limitation": "原文未给出量化指标或期限，“愈演愈烈”只能以争议反复出现和立法冲突频次作粗略操作化；部分来源为未语义复核的候选，且争论强度难以精确比较。",
+    "evidence_ids": [
+      "prior-9b657e0516dd91780ae7",
+      "ev-ecd90db22e5123f693cd47a3",
+      "ev-55f151d50a2f08f7d445238b",
+      "prior-de993ffec3fad643c5b7",
+      "ev-678775ce78c28e46584795d4",
+      "ev-1f99d025e7cb750e2bba89bc"
+    ],
+    "method": "由财政负担与政治利益冲突外推争论升级",
+    "method_basis": "explicit",
+    "observation_end": "2025-12-09",
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-9b657e0516dd91780ae7",
+        "relation": "support",
+        "quote": "1996年8月1日国会记录中，参议院民主党领袖Daschle回顾18个月福利辩论及两次总统否决，同时指出经过否决后两党合作增多。",
+        "publication_date": "1996-08-01",
+        "observation_end": "1996-08-01",
+        "limitation": "该摘录同时显示两党合作增多，说明争论并非单向升级，含降温迹象。"
+      },
+      {
+        "evidence_id": "ev-ecd90db22e5123f693cd47a3",
+        "relation": "support",
+        "quote": "Leading up to its passage, debates over welfare reform had spanned four decades, from the 1960s through the early 1990s.",
+        "publication_date": "2026-06-30",
+        "observation_end": null,
+        "limitation": "该CRS产品标注出版日期2026-06-30，晚于cutoff 2026-11-09之前但属回顾性文本；其所述四十年辩论支持争论长期持续，但为未语义复核候选。"
+      },
+      {
+        "evidence_id": "ev-55f151d50a2f08f7d445238b",
+        "relation": "support",
+        "quote": "beginning in 2011, a pitched battle over food stamps thrust the nation’s farm bill into the thick of the red-blue culture wars and a charged 2012 campaign-trail debate over government dependency.",
+        "publication_date": "2015-10-22",
+        "observation_end": "2015-10-22",
+        "limitation": "该文同时强调最终达成妥协，说明争论虽激烈但有阶段性收敛。"
+      },
+      {
+        "evidence_id": "prior-de993ffec3fad643c5b7",
+        "relation": "support",
+        "quote": "Brookings研究者指出SNAP工作要求是否修改的辩论近年加强；2023债务上限协商改变资格要求，并进入后续农业法案讨论。",
+        "publication_date": "2023-10-05",
+        "observation_end": "2023-10-05",
+        "limitation": "聚焦SNAP工作要求，未直接量化纳税人负担争论强度。"
+      },
+      {
+        "evidence_id": "ev-678775ce78c28e46584795d4",
+        "relation": "support",
+        "quote": "As congressional Republicans begin to fill in the details of President Donald Trump’s economic agenda, one proposal is expanded work requirements for the Supplemental Nutrition Assistance Program (SNAP) and Medicaid.",
+        "publication_date": "2025-03-03",
+        "observation_end": "2025-03-03",
+        "limitation": "该文为评论性文章，且为未语义复核候选，仅证明争论存在而非强度升级。"
+      },
+      {
+        "evidence_id": "ev-1f99d025e7cb750e2bba89bc",
+        "relation": "support",
+        "quote": "Enacted July 4, 2025, the FY2025 budget reconciliation law (P.L. 119-21) included significant changes to the means-tested programs Medicaid and the Supplemental Nutrition Assistance Program (SNAP).",
+        "publication_date": "2025-12-09",
+        "observation_end": "2025-12-09",
+        "limitation": "证明2025年福利规则改革引发立法争议，但为未语义复核候选，且未直接反映纳税人负担争论。"
+      }
+    ],
+    "remaining_gap": "缺少对“争论强度”的可比量化指标（如国会听证、议案数、民调关注度）的连续序列，无法精确判断是否“愈演愈烈”而非仅反复出现；部分候选来源尚待语义复核。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-9b657e0516dd91780ae7",
+      "url": "https://www.govinfo.gov/link/crec/142/S/9412",
+      "title": "ev-lane3-welfare1996",
+      "published_date": "1996-08-01",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-welfare1996",
+      "archive_sha256": "a2277a70b86de2633a68a351f937c625f9e0adf421ec019db1ba0755b2d61c06",
+      "archive_path": "data/sources/lane3-welfare1996.pdf",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-de993ffec3fad643c5b7",
+      "url": "https://www.brookings.edu/articles/a-primer-on-snap-work-requirements-october-2023/",
+      "title": "ev-lane3-snap2023",
+      "published_date": "2023-10-05",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-snap2023",
+      "archive_sha256": "6421dd3859464a0f28ad8a710940827ded742300569e93dd569e4a57395f249a",
+      "archive_path": "data/sources/lane3-web-extracts.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-e1c8b624bf7b57aa91c3",
+      "url": "https://www.congress.gov/crs_external_products/IN/PDF/IN12165/IN12165.1.pdf",
+      "title": "ev-lane3-snapcrs",
+      "published_date": "2023-05-31",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-snapcrs",
+      "archive_sha256": "d1ab410527ffab8d70473dc1db7eec9b599b282b58c26738db5be59ed345db92",
+      "archive_path": "data/sources/lane3-snapcrs.pdf",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ecd90db22e5123f693cd47a3",
+      "url": "https://www.congress.gov/crs-product/IF13261",
+      "resolved_url": "https://www.congress.gov/crs-product/IF13261",
+      "title": "The Personal Responsibility and Work Opportunity Reconciliation Act of 1996 | Congress.gov | Library of Congress",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:11:57.517148+00:00",
+      "archive_sha256": "6b8c105fd0244e0df258a28860531b600daf030a2001f3f26d04f9d020767eb3",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/6b8c105fd0244e0df258a28860531b600daf030a2001f3f26d04f9d020767eb3.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-adda1940f002bc65363eec7b",
+      "url": "https://www.congress.gov/crs-product/R44668",
+      "resolved_url": "https://www.congress.gov/crs-product/R44668",
+      "title": "The Temporary Assistance for Needy Families (TANF) Block Grant: A Legislative History | Congress.gov | Library of Congress",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:11:57.517329+00:00",
+      "archive_sha256": "521583136338bb4a917f1c00985a0a0c7b71739f065c5bba255e4e8194a05dc8",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/521583136338bb4a917f1c00985a0a0c7b71739f065c5bba255e4e8194a05dc8.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-678775ce78c28e46584795d4",
+      "url": "https://www.brookings.edu/articles/congress-is-debating-stricter-snap-and-medicaid-work-requirements-but-research-shows-they-dont-work/",
+      "resolved_url": "https://www.brookings.edu/articles/congress-is-debating-stricter-snap-and-medicaid-work-requirements-but-research-shows-they-dont-work/",
+      "title": "Congress is debating stricter SNAP and Medicaid work requirements—but research shows they don’t work | Brookings",
+      "published_date": "2025-03-03",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:11:57.517476+00:00",
+      "archive_sha256": "71c9de664a2f713f8bc6d116eac29f4d03e5b114d87ca3adc5fd2b01219c5d63",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/71c9de664a2f713f8bc6d116eac29f4d03e5b114d87ca3adc5fd2b01219c5d63.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-55f151d50a2f08f7d445238b",
+      "url": "https://www.brookings.edu/articles/profiles-in-negotiation-the-2014-farm-and-food-stamp-deal/",
+      "resolved_url": "https://www.brookings.edu/articles/profiles-in-negotiation-the-2014-farm-and-food-stamp-deal/",
+      "title": "Profiles in negotiation: The 2014 farm and food stamp deal | Brookings",
+      "published_date": "2015-10-22",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:11:57.517590+00:00",
+      "archive_sha256": "07fa5fd53f590492df1442f5e40538f2e344c06977cd6e7c4643001f2c2f5cc4",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/07fa5fd53f590492df1442f5e40538f2e344c06977cd6e7c4643001f2c2f5cc4.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ab0966c44b2fff8a64df45b4",
+      "url": "https://www.congress.gov/crs-product/R48531",
+      "resolved_url": "https://www.congress.gov/crs-product/R48531",
+      "title": "Work Requirements: Existing Policies in Medicaid, SNAP, Housing Assistance, and TANF | Congress.gov | Library of Congress",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:07.151714+00:00",
+      "archive_sha256": "a520fba3fe6ecb117d8e6cfeaae344b9097cff77df64575067ac1ae931d5a92c",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/a520fba3fe6ecb117d8e6cfeaae344b9097cff77df64575067ac1ae931d5a92c.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-1f99d025e7cb750e2bba89bc",
+      "url": "https://www.congress.gov/crs_external_products/R/PDF/R48755/R48755.1.pdf",
+      "resolved_url": "https://www.congress.gov/crs_external_products/R/PDF/R48755/R48755.1.pdf",
+      "title": "Work Requirements: Comparison of Medicaid and Supplemental Nutrition Assistance Program (SNAP) After P.L. 119-21",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:07.151914+00:00",
+      "archive_sha256": "79d9db57dd49cd7ca03d1fa479be41aa7e88482bd1d6adf3872d42ac5a50077a",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/79d9db57dd49cd7ca03d1fa479be41aa7e88482bd1d6adf3872d42ac5a50077a.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d5d32766335e358325a93b71",
+      "url": "https://www.brookings.edu/articles/changes-in-the-safety-net-over-recent-decades-and-their-impact/",
+      "resolved_url": "https://www.brookings.edu/articles/changes-in-the-safety-net-over-recent-decades-and-their-impact/",
+      "title": "Changes in the safety net over recent decades and their impact | Brookings",
+      "published_date": "2025-05-01",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:07.152048+00:00",
+      "archive_sha256": "7093b4f1ecd9693c3fc0449229974ac8b3ab7baddafea12ca22b7b3357f82e31",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/7093b4f1ecd9693c3fc0449229974ac8b3ab7baddafea12ca22b7b3357f82e31.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "site:congress.gov welfare reform debate 1996 presidential veto conference compromise",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "site:brookings.edu welfare debate bipartisan compromise declining salience SNAP work requirements",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "site:congress.gov SNAP work requirements 2025 budget reconciliation debate welfare spending",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "site:brookings.edu welfare debate bipartisan compromise declining salience SNAP work requirements 2024 2025",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少对“争论强度”的可比量化指标（如国会听证、议案数、民调关注度）的连续序列，无法判断是否“愈演愈烈”而非仅反复出现；部分候选来源尚待语义复核。",
+  "source_statuses": [
+    {
+      "url": "https://www.congress.gov/crs-product/IF13261",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.congress.gov/crs-product/R44668",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.brookings.edu/articles/congress-is-debating-stricter-snap-and-medicaid-work-requirements-but-research-shows-they-dont-work/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.brookings.edu/articles/profiles-in-negotiation-the-2014-farm-and-food-stamp-deal/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.congress.gov/crs-product/R48531",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.congress.gov/crs_external_products/R/PDF/R48755/R48755.1.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.brookings.edu/articles/changes-in-the-safety-net-over-recent-decades-and-their-impact/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "对象为美国社会服务/福利开支及纳税人负担引发的全国性政治争论；可观察口径为1991年至截止日2026-11-09期间联邦立法、预算协商、总统否决、福利资格规则改革中争议是否反复出现并升级；反证包括争论降温、跨党妥协后争议显著减弱或福利议题长期退出全国议程。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "27c268f73191f739ca7d76d6e0076bf9627860946bff0668fa2f0a1273ac794c"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "5b682ee7cf3a395a52fb118d5b36898d",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "426d7d8da4251dbd127aa9e843aa01eb",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "d2c52f682dbd2107905db3218e605e34de4354d7770be6cb58d792186fd61f6b"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "cd35a2af6d092b1107e4c54f0e1870c9",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "7bb10aea00c2db7dad1b790923ef15eb312ef345868792e37402b1c67b387d91"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "4cedbe7e188ce7cc9988559b94f09e2b",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "6070dececf5d782eb48e3c37c181bf74",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "476af4802d930e5c23b9fd1cf659ac9c13513f0915246eee54340f08060e03b3"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "48d2756c269301028af2dbc99ba9ba6f",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "58007681bc836b166fb713173d2496613c4bb1be38fe20d711f2b7abdce0126c"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "4a3bb06d117cfea8d1fa105d7edb2554ffeb407260ccb23e3359422e9538c09e"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "eed7dcef7b72e256a987df883cd96804463ab3d1482f8103891abe0b1289632f"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "b495c6ced381e5a71b14d9fcea5ce7d07166111464611f7aa55a7271a0e75ff3"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000179063-000179098",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "fail",
+        "evidence_support": "fail",
+        "counterevidence": "fail",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "time_alignment",
+          "reason": "建议把observation_end写成2025-12-09，但所引CRS产品R48755的出版日期为2025-12-09，而任务cutoff为2026-11-09；把证据发表日期当作观察终点，且未覆盖cutoff前最后近一年，导致“至截止日”的观察窗口表述与所用材料不一致。",
+          "source_quote": "Enacted July 4, 2025, the FY2025 budget reconciliation law (P.L. 119-21) included significant changes to the means-tested programs Medicaid and the Supplemental Nutrition Assistance Program (SNAP).",
+          "evidence_id": "ev-1f99d025e7cb750e2bba89bc",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议将ev-ecd90db22e5123f693cd47a3列为支持，但该来源verified=false且出版日期标注为2026-06-30，属于候选状态；其正文只说明1996年立法前有四十年福利改革辩论，并未证明1991年之后争论“愈演愈烈”，不能作为主要结果的支持证据。",
+          "source_quote": "Leading up to its passage, debates over welfare reform had spanned four decades, from the 1960s through the early 1990s.",
+          "evidence_id": "ev-ecd90db22e5123f693cd47a3",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议将ev-678775ce78c28e46584795d4列为支持，但该来源verified=false，且引句只说明共和党提出扩大SNAP和Medicaid工作要求的提案，属于争论存在的证据，不能证明争论强度升级；建议自身limitation也承认“仅证明争论存在而非强度升级”。",
+          "source_quote": "As congressional Republicans begin to fill in the details of President Donald Trump’s economic agenda, one proposal is expanded work requirements for the Supplemental Nutrition Assistance Program (SNAP) and Medicaid.",
+          "evidence_id": "ev-678775ce78c28e46584795d4",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "counterevidence",
+          "reason": "建议在evidence_notes中承认prior-9b657e0516dd91780ae7显示“经过否决后两党合作增多”、ev-55f151d50a2f08f7d445238b显示最终达成妥协，这些是同对象、同议题的降温或收敛材料，但建议未在verdict_logic中据此评估“愈演愈烈”是否被削弱，反而仍设trend_aligned=true。",
+          "source_quote": "1996年8月1日国会记录中，参议院民主党领袖Daschle回顾18个月福利辩论及两次总统否决，同时指出经过否决后两党合作增多。",
+          "evidence_id": "prior-9b657e0516dd91780ae7",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议判“部分符合”并设trend_aligned=true，但其reason只说争议“反复成为焦点、方向与预测一致”，未给出争论强度持续升级的连续证据；同时其limitation承认“争论强度难以精确比较”、remaining_gap承认缺少可比量化指标。按口径，趋势符合须有持续方向证据，仅有反复出现不能直接设trend_aligned=true，也不能据此判部分符合。",
+          "source_quote": "原文未给出量化指标或期限，“愈演愈烈”只能以争议反复出现和立法冲突频次作粗略操作化；部分来源为未语义复核的候选，且争论强度难以精确比较。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正observation_end与cutoff的关系，并补充能直接比较1991年后争论强度是否持续升级的连续证据（如国会听证、议案数、民调关注度序列）；同时把verified=false的候选来源降为待复核，不能作为支持主要结果的依据。若无法取得强度序列，应保留为具体未定而非判部分符合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000179063-000179098",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000179063-000179098",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象为美国社会服务/福利开支及纳税人负担引发的全国性政治争论；观察口径为1991年出版后至截止日2026-11-09期间联邦福利立法、预算协商、总统否决与资格规则改革中争议是否反复出现并升级。实际观察到的关键节点包括1996年福利改革立法与两次总统否决、2011-2014年食品券/农业法案之争、2023年债务上限中的SNAP修改、2025年P.L.119-21扩大SNAP与Medicaid工作要求。",
+      "reason": "原文预测围绕福利开支与纳税人负担的争论将愈演愈烈。观察窗口内福利改革、SNAP/Medicaid工作要求在1996、2014、2023、2025年反复成为全国立法与预算争议焦点，方向与预测一致，故判部分符合（趋势符合，最终是否持续升级待验证）。",
+      "limitation": "原文未给出量化指标或期限，“愈演愈烈”只能以争议反复出现和立法冲突频次作粗略操作化；部分来源为未语义复核的候选，且争论强度难以精确比较。",
+      "evidence_ids": [
+        "prior-9b657e0516dd91780ae7",
+        "ev-ecd90db22e5123f693cd47a3",
+        "ev-55f151d50a2f08f7d445238b",
+        "prior-de993ffec3fad643c5b7",
+        "ev-678775ce78c28e46584795d4",
+        "ev-1f99d025e7cb750e2bba89bc"
+      ],
+      "method": "由财政负担与政治利益冲突外推争论升级",
+      "method_basis": "explicit",
+      "observation_end": "2025-12-09",
+      "future_time_text": "",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-9b657e0516dd91780ae7",
+          "relation": "support",
+          "quote": "1996年8月1日国会记录中，参议院民主党领袖Daschle回顾18个月福利辩论及两次总统否决，同时指出经过否决后两党合作增多。",
+          "publication_date": "1996-08-01",
+          "observation_end": "1996-08-01",
+          "limitation": "该摘录同时显示两党合作增多，说明争论并非单向升级，含降温迹象。"
+        },
+        {
+          "evidence_id": "ev-ecd90db22e5123f693cd47a3",
+          "relation": "support",
+          "quote": "Leading up to its passage, debates over welfare reform had spanned four decades, from the 1960s through the early 1990s.",
+          "publication_date": "2026-06-30",
+          "observation_end": null,
+          "limitation": "该CRS产品标注出版日期2026-06-30，晚于cutoff 2026-11-09之前但属回顾性文本；其所述四十年辩论支持争论长期持续，但为未语义复核候选。"
+        },
+        {
+          "evidence_id": "ev-55f151d50a2f08f7d445238b",
+          "relation": "support",
+          "quote": "beginning in 2011, a pitched battle over food stamps thrust the nation’s farm bill into the thick of the red-blue culture wars and a charged 2012 campaign-trail debate over government dependency.",
+          "publication_date": "2015-10-22",
+          "observation_end": "2015-10-22",
+          "limitation": "该文同时强调最终达成妥协，说明争论虽激烈但有阶段性收敛。"
+        },
+        {
+          "evidence_id": "prior-de993ffec3fad643c5b7",
+          "relation": "support",
+          "quote": "Brookings研究者指出SNAP工作要求是否修改的辩论近年加强；2023债务上限协商改变资格要求，并进入后续农业法案讨论。",
+          "publication_date": "2023-10-05",
+          "observation_end": "2023-10-05",
+          "limitation": "聚焦SNAP工作要求，未直接量化纳税人负担争论强度。"
+        },
+        {
+          "evidence_id": "ev-678775ce78c28e46584795d4",
+          "relation": "support",
+          "quote": "As congressional Republicans begin to fill in the details of President Donald Trump’s economic agenda, one proposal is expanded work requirements for the Supplemental Nutrition Assistance Program (SNAP) and Medicaid.",
+          "publication_date": "2025-03-03",
+          "observation_end": "2025-03-03",
+          "limitation": "该文为评论性文章，且为未语义复核候选，仅证明争论存在而非强度升级。"
+        },
+        {
+          "evidence_id": "ev-1f99d025e7cb750e2bba89bc",
+          "relation": "support",
+          "quote": "Enacted July 4, 2025, the FY2025 budget reconciliation law (P.L. 119-21) included significant changes to the means-tested programs Medicaid and the Supplemental Nutrition Assistance Program (SNAP).",
+          "publication_date": "2025-12-09",
+          "observation_end": "2025-12-09",
+          "limitation": "证明2025年福利规则改革引发立法争议，但为未语义复核候选，且未直接反映纳税人负担争论。"
+        }
+      ],
+      "remaining_gap": "缺少对“争论强度”的可比量化指标（如国会听证、议案数、民调关注度）的连续序列，无法精确判断是否“愈演愈烈”而非仅反复出现；部分候选来源尚待语义复核。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000179063-000179098",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "对象为美国社会服务/福利开支及纳税人负担引发的全国性政治争论；观察口径为1991年出版后至截止日2026-11-09期间联邦福利立法、预算协商、总统否决与资格规则改革中争议是否反复出现并升级。已观察节点包括1996年福利改革立法与两次总统否决、2011-2014年食品券/农业法案之争、2023年债务上限中的SNAP修改、2025年P.L.119-21扩大SNAP与Medicaid工作要求。",
+      "reason": "原文预测围绕福利开支与纳税人负担的争论将愈演愈烈。现有材料能证明该议题在1996、2014、2023、2025年反复成为全国立法争议焦点，但缺少可比的争论强度序列，无法判断是否“愈演愈烈”而非仅反复出现；且1996年否决后两党合作增多、2014年最终达成妥协，属同议题降温材料。",
+      "limitation": "原文未给出量化指标或期限，“愈演愈烈”只能以争议反复出现和立法冲突频次粗略操作化，强度难以精确比较。关键修订：不再把证据发表日期当作观察终点，不再将verified=false且仅证明争论存在的候选来源作为支持主要结果的依据，并纳入同议题降温材料。",
+      "evidence_ids": [
+        "prior-9b657e0516dd91780ae7",
+        "ev-55f151d50a2f08f7d445238b",
+        "prior-de993ffec3fad643c5b7",
+        "ev-1f99d025e7cb750e2bba89bc"
+      ],
+      "method": "由财政负担与政治利益冲突外推争论升级",
+      "method_basis": "explicit",
+      "observation_end": "2025-12-09",
+      "future_time_text": "",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-9b657e0516dd91780ae7",
+          "relation": "boundary",
+          "quote": "1996年8月1日国会记录中，参议院民主党领袖Daschle回顾18个月福利辩论及两次总统否决，同时指出经过否决后两党合作增多。",
+          "publication_date": "1996-08-01",
+          "observation_end": "1996-08-01",
+          "limitation": "该摘录同时显示两党合作增多，说明争论并非单向升级，含降温迹象。"
+        },
+        {
+          "evidence_id": "ev-55f151d50a2f08f7d445238b",
+          "relation": "boundary",
+          "quote": "beginning in 2011, a pitched battle over food stamps thrust the nation’s farm bill into the thick of the red-blue culture wars and a charged 2012 campaign-trail debate over government dependency.",
+          "publication_date": "2015-10-22",
+          "observation_end": "2015-10-22",
+          "limitation": "该文同时强调最终达成妥协，说明争论虽激烈但有阶段性收敛；为未语义复核候选。"
+        },
+        {
+          "evidence_id": "prior-de993ffec3fad643c5b7",
+          "relation": "support",
+          "quote": "Brookings研究者指出SNAP工作要求是否修改的辩论近年加强；2023债务上限协商改变资格要求，并进入后续农业法案讨论。",
+          "publication_date": "2023-10-05",
+          "observation_end": "2023-10-05",
+          "limitation": "聚焦SNAP工作要求，未直接量化纳税人负担争论强度，仅证明议题持续存在。"
+        },
+        {
+          "evidence_id": "ev-1f99d025e7cb750e2bba89bc",
+          "relation": "support",
+          "quote": "Enacted July 4, 2025, the FY2025 budget reconciliation law (P.L. 119-21) included significant changes to the means-tested programs Medicaid and the Supplemental Nutrition Assistance Program (SNAP).",
+          "publication_date": "2025-12-09",
+          "observation_end": "2025-12-09",
+          "limitation": "证明2025年福利规则改革引发立法争议，但为未语义复核候选，且未直接反映纳税人负担争论强度。"
+        }
+      ],
+      "remaining_gap": "缺少对“争论强度”的可比量化指标（如国会听证、议案数、民调关注度）的连续序列，无法判断是否“愈演愈烈”而非仅反复出现；部分候选来源尚待语义复核。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象为美国社会服务/福利开支及纳税人负担引发的全国性政治争论；可观察口径为1991年至截止日（2026-11-09）期间联邦立法、预算协商、总统否决、福利资格规则改革中争议是否反复出现并升级；反证包括争论降温、跨党妥协后争议显著减弱或福利议题长期退出全国议程。",
+  "elapsed_seconds": 40.943,
+  "completed_at": "2026-11-09T08:12:29.971887+00:00"
+}

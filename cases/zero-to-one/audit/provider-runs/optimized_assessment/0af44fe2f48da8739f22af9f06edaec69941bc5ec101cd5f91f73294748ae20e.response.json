@@ -1,0 +1,28 @@
+{
+  "id": "428d1b2d-25e0-4289-b237-4852017bdde7",
+  "object": "chat.completion",
+  "created": 1794201586,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000043933-000043954\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"对乔布斯/苹果经营理念的回顾性陈述，非可检验的未来预测。\",\"reason\":\"原文以“只有……才”表述条件性判断，属于对乔布斯管理理念的回顾性总结，未给出可观察的未来结果或期限。\",\"limitation\":\"条件性价值判断难以操作化为可验证预测，且无具体观察指标。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000044276-000044311\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"关于“对未来计划明确的创立者不卖公司、说明买家出价不够高”的一般行为命题；无具体公司、期限或可量化指标。\",\"reason\":\"该命题是对创立者行为与出价关系的概括性判断，缺乏可操作化的具体对象和观察窗口，无法用单一案例（如扎克伯格）验证全部。\",\"limitation\":\"命题为一般性行为推断，未给出可检验的指标或时间范围；仅凭个别案例不足以证实或证伪。\",\"evidence_ids\":[],\"method\":\"inferred\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4962,
+    "completion_tokens": 336,
+    "total_tokens": 5298,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 4194
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

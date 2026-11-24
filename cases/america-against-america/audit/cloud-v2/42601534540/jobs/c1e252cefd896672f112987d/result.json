@@ -1,0 +1,1013 @@
+{
+  "claim_id": "txt-1c4066fc0c-000023002-000023063",
+  "version": "search-verifier-v2",
+  "input_sha256": "51103fd3fbf5f0c06295da79b28442042cc38fff1963952ae818391fc7d4009c",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000023002-000023063",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "复合判断分项：(1)城乡差别/乡村问题长期存在——以2002—2024年非都市与都市贫困率差距是否持续为口径；(2)有恶化倾向——以乡村贫困率、非都市人口等主要困难指标在观察窗口内的方向为口径；(3)暂时或在一定条件下不引发巨大社会动荡——以截止2026-11-09前美国乡村是否出现与全国性动荡相称的大规模政治社会冲突为口径。观察时段约2002—2025年6月。",
+    "reason": "自动复核未确认主要判断：原文的稳定判断是“乡村问题暂时或在一定条件下掀不起大波大澜”，即后果B（不引发巨大社会动荡）以“暂时”或“一定条件”为限定。建议把condition_state写成unconditional，并按无条件观察窗口检验分项(3)，等于删去了原文的限定条件；同时把“有恶化的倾向”与“不引发大动荡”并列拆成三个独立分项，未先确认前提A（乡村问题未解决、长期存在）是否仍成立，再判断后果B是否实现。; 建议以“恶化倾向未获支持”作为判部分符合的主要理由，但原文的后果判断是“不引发大波大澜”，而建议自己认定该后果在观察窗口内成立（2025年抗议属常规政治表达，未达大波大澜）。按口径，前提A（乡村问题长期存在、未解决）仍成立且后果B在声明口径内已实现时，近期贫困率下降、人口回升只能作为缓解或限制，不能仅凭“恶化倾向”分项方向相反就把结论降为部分符合；判部分符合须指出后果B哪些具体部分实现、哪些未实现。",
+    "limitation": "原文“暂时或在一定条件下”为限定性稳定判断，其“一定条件”未具体化，本评估按无条件观察窗口检验，不声称永远成立。“恶化倾向”为长期趋势判断，观察窗口内贫困率下降与人口回升只能说明该分项近期未获支持，不能断言作者长期方向永远错误；贫困率与人口只是乡村困难的代理指标。2025年乡村抗议规模上升构成边界性反证，需保留。",
+    "evidence_ids": [
+      "prior-7f40589d1b8077f47b6a",
+      "ev-219b745d952a8264c27a5399",
+      "prior-4acf7825736ecfce70d3",
+      "ev-ab14d9fb2080f8c4560d9acc",
+      "ev-6cdb37a7aa2f9e19120d4ce2"
+    ],
+    "method": "比较乡村人口占比与城乡迁移对冲突的缓冲作用",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "长期；暂时或在一定条件下",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-7f40589d1b8077f47b6a",
+        "relation": "support",
+        "quote": "2024非都市贫困率13.7%，较2022的15.0%下降，为25年较低水平之一；都市10.2%，差距仍3.5个百分点。",
+        "publication_date": "2026-01",
+        "observation_end": "2024-12-31",
+        "limitation": "支持“差距长期存在”，但同时显示贫困率下降，对“恶化倾向”构成反证；来源为已登记摘录，正文细节有限。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-219b745d952a8264c27a5399",
+        "relation": "support",
+        "quote": "In 2002, 14.2 percent of the nonmetro population, or 7.5 million people, were poor, compared with 11.6 percent of the metro population. This difference has persisted through time",
+        "publication_date": null,
+        "observation_end": "2002-12-31",
+        "limitation": "仅证明2002年差距存在及历史持续性，不能证明此后恶化；发表日期元数据缺失。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "prior-4acf7825736ecfce70d3",
+        "relation": "counter",
+        "quote": "2010年代非都市人口下降，但2020—2024每年增长，增长来自净迁入抵消自然减少；2023—2024增加134540人，仍有51%的非都市县2020—2024人口减少。",
+        "publication_date": "2026-02-13",
+        "observation_end": "2024-12-31",
+        "limitation": "人口恢复增长与“恶化倾向”相反，但仍有过半县人口减少，说明乡村内部差异大，不能一概而论。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-ab14d9fb2080f8c4560d9acc",
+        "relation": "counter",
+        "quote": "After a decade of population loss in the 2010s, the population in nonmetropolitan (rural) areas has increased each year since 2020.",
+        "publication_date": "2025-07-18",
+        "observation_end": "2024-12-31",
+        "limitation": "人口指标改善，与恶化倾向相反；但人口不等于全部乡村困难指标，且区域差异显著。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-6cdb37a7aa2f9e19120d4ce2",
+        "relation": "boundary",
+        "quote": "at least 600 rural communities protested across the country on that day, with at least one rural protest held in every state except New Jersey, Delaware, and Rhode Island.",
+        "publication_date": "2025-06-26",
+        "observation_end": "2025-06-14",
+        "limitation": "乡村抗议规模创纪录，构成“不引发大波大澜”的边界性反证；但属常规政治表达，未达全国性社会动荡程度，不足以推翻主要判断。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "需修订：把“暂时或在一定条件下”保留为后果判断的真实限定，condition_state不应写成unconditional；先确认前提A（乡村问题未解决、长期存在）是否成立，再单独判断后果B（不引发大波大澜）是否实现。若A成立且B在口径内实现，应据此给出相应结论，并把贫困率下降、人口回升作为缓解/限制而非降级理由；若要以“恶化倾向”分项相反判部分符合，须具体说明后果B哪些部分实现、哪些未实现及直接证据。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000023002-000023063",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "复合判断分项：(1)城乡差别/乡村问题长期存在——以1999—2024年非都市与都市贫困率差距是否持续为口径；(2)有恶化倾向——以乡村贫困率、人口等主要困难指标在观察窗口内的方向为口径；(3)暂时或一定条件下不引发巨大社会动荡——以截止2026-11-09前美国乡村是否出现与全国性动荡相称的大规模政治社会冲突为口径。观察时段约2002—2024年。",
+    "reason": "分项(1)有直接证据：2002年非都市贫困率14.2%对都市11.6%，2024年13.7%对10.2%，差距长期存在，符合“长期存在”。分项(2)方向相反：2024非都市贫困率较2022年15.0%下降，且2020—2024非都市人口恢复增长，主要困难指标未呈持续恶化，与“恶化倾向”不符。分项(3)在观察窗口内未见与全国性动荡相称的大规模乡村冲突，2025年“No Kings”乡村抗议虽规模创纪录但属常规政治表达，不足以构成“大波大澜”。综合为部分符合。",
+    "limitation": "“恶化倾向”为长期趋势判断，观察窗口内贫困率下降与人口回升只能说明该分项在近期未获支持，不能断言作者长期方向永远错误；乡村困难指标多元，贫困率与人口只是代理。“不引发巨大动荡”缺乏统一量化阈值，2025年乡村抗议规模上升构成边界性反证，需保留。",
+    "evidence_ids": [
+      "prior-7f40589d1b8077f47b6a",
+      "ev-219b745d952a8264c27a5399",
+      "prior-4acf7825736ecfce70d3",
+      "ev-ab14d9fb2080f8c4560d9acc",
+      "ev-6cdb37a7aa2f9e19120d4ce2"
+    ],
+    "method": "比较乡村人口占比与城乡迁移对冲突的缓冲作用",
+    "method_basis": "inferred",
+    "observation_end": "2024-12-31",
+    "future_time_text": "长期；暂时或在一定条件下",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-7f40589d1b8077f47b6a",
+        "relation": "support",
+        "quote": "2024非都市贫困率13.7%，较2022的15.0%下降，为25年较低水平之一；都市10.2%，差距仍3.5个百分点。",
+        "publication_date": "2026-01",
+        "observation_end": "2024-12-31",
+        "limitation": "支持“差距长期存在”，但同时显示贫困率下降，对“恶化倾向”构成反证；来源为已登记摘录，正文细节有限。"
+      },
+      {
+        "evidence_id": "ev-219b745d952a8264c27a5399",
+        "relation": "support",
+        "quote": "In 2002, 14.2 percent of the nonmetro population, or 7.5 million people, were poor, compared with 11.6 percent of the metro population. This difference has persisted through time",
+        "publication_date": null,
+        "observation_end": "2002-12-31",
+        "limitation": "仅证明2002年差距存在及历史持续性，不能证明此后恶化；发表日期元数据缺失。"
+      },
+      {
+        "evidence_id": "prior-4acf7825736ecfce70d3",
+        "relation": "counter",
+        "quote": "2010年代非都市人口下降，但2020—2024每年增长，增长来自净迁入抵消自然减少；2023—2024增加134540人，仍有51%的非都市县2020—2024人口减少。",
+        "publication_date": "2026-02-13",
+        "observation_end": "2024-12-31",
+        "limitation": "人口恢复增长与“恶化倾向”相反，但仍有过半县人口减少，说明乡村内部差异大，不能一概而论。"
+      },
+      {
+        "evidence_id": "ev-ab14d9fb2080f8c4560d9acc",
+        "relation": "counter",
+        "quote": "After a decade of population loss in the 2010s, the population in nonmetropolitan (rural) areas has increased each year since 2020.",
+        "publication_date": "2025-07-18",
+        "observation_end": "2024-12-31",
+        "limitation": "人口指标改善，与恶化倾向相反；但人口不等于全部乡村困难指标，且区域差异显著。"
+      },
+      {
+        "evidence_id": "ev-6cdb37a7aa2f9e19120d4ce2",
+        "relation": "boundary",
+        "quote": "at least 600 rural communities protested across the country on that day, with at least one rural protest held in every state except New Jersey, Delaware, and Rhode Island.",
+        "publication_date": "2025-06-26",
+        "observation_end": "2025-06-14",
+        "limitation": "乡村抗议规模创纪录，构成“不引发大波大澜”的边界性反证；但属常规政治表达，未达全国性社会动荡程度，不足以推翻主要判断。"
+      }
+    ],
+    "remaining_gap": "“恶化倾向”缺乏覆盖1999—2024全期的连续乡村多维困难指标序列，仅以贫困率与人口代理；乡村社会动荡缺乏统一量化阈值，2025年抗议规模上升的长期意义待观察。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-7f40589d1b8077f47b6a",
+      "url": "https://ers.usda.gov/sites/default/files/_laserfiche/publications/113657/EIB-295.pdf",
+      "title": "ev-r2-l1-rural2024",
+      "published_date": "2026-01",
+      "publication_date_precision": "month",
+      "publication_date_range": {
+        "earliest": "2026-01-01",
+        "latest": "2026-01-31"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-rural2024",
+      "archive_sha256": "0b0eb4e09874ff079a5d350a2fdcad16582cb633c1d94f40261d0d8fba5803bf",
+      "archive_path": "data/sources/r2-l1-rural2025.pdf",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-4acf7825736ecfce70d3",
+      "url": "https://www.ers.usda.gov/topics/rural-economy-population/population-migration",
+      "title": "ev-lane1-rural-migration",
+      "published_date": "2026-02-13",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-02-13",
+        "latest": "2026-02-13"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane1-rural-migration",
+      "archive_sha256": "51d6785f8db2456120f4fa75c3e050350305f39d2fa4a08f21513b345caa35df",
+      "archive_path": "data/sources/lane1-rural-migration.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-65713f7a7544dc37faf378d0",
+      "url": "https://www.ers.usda.gov/sites/default/files/_laserfiche/publications/110351/EIB-282.pdf",
+      "resolved_url": "https://www.ers.usda.gov/sites/default/files/_laserfiche/publications/110351/EIB-282.pdf",
+      "title": "Rural America at a Glance: 2024 Edition",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:21.160413+00:00",
+      "archive_sha256": "f01c71ff8ba2d2cc83fb4dd0baf00c727e8066b18761956d90c47ef951fd69cc",
+      "archive_path": "jobs/c1e252cefd896672f112987d/f01c71ff8ba2d2cc83fb4dd0baf00c727e8066b18761956d90c47ef951fd69cc.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-219b745d952a8264c27a5399",
+      "url": "https://ers.usda.gov/sites/default/files/_laserfiche/publications/47002/30445_rdrr100full_002.pdf",
+      "resolved_url": "https://ers.usda.gov/sites/default/files/_laserfiche/publications/47002/30445_rdrr100full_002.pdf",
+      "title": "Rural Poverty At A Glance",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:21.160571+00:00",
+      "archive_sha256": "f929ae22aca5531b52302670a66913f2713463ec3e68cfe219a6d29e82f4ab09",
+      "archive_path": "jobs/c1e252cefd896672f112987d/f929ae22aca5531b52302670a66913f2713463ec3e68cfe219a6d29e82f4ab09.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-6cdb37a7aa2f9e19120d4ce2",
+      "url": "https://dailyyonder.com/no-kings-protests-across-rural-america-biggest-to-date/2025/06/26/",
+      "resolved_url": "https://dailyyonder.com/no-kings-protests-across-rural-america-biggest-to-date/2025/06/26/",
+      "title": "‘No Kings’ Protests Across Rural America Biggest To-Date | The Daily Yonder",
+      "published_date": "2025-06-26",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-06-26",
+        "latest": "2025-06-26"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:21.160665+00:00",
+      "archive_sha256": "f2082cf93cc7a3dbdd98dc9cafeb9a4971f5730a39ed2638c1883c3a0b23ca37",
+      "archive_path": "jobs/c1e252cefd896672f112987d/f2082cf93cc7a3dbdd98dc9cafeb9a4971f5730a39ed2638c1883c3a0b23ca37.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-afa07f82bc9adb9ac1e1f3e8",
+      "url": "https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-040623-114017",
+      "resolved_url": "https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-040623-114017",
+      "title": "Rural Politics in the United States | Annual Reviews",
+      "published_date": "2025-06-17",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-06-17",
+        "latest": "2025-06-17"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:21.160757+00:00",
+      "archive_sha256": "54137e2c62d2cbd46f0ee67b19adf636ae9f0f054c71e2f81637dce1ae8ebb7c",
+      "archive_path": "jobs/c1e252cefd896672f112987d/54137e2c62d2cbd46f0ee67b19adf636ae9f0f054c71e2f81637dce1ae8ebb7c.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ab14d9fb2080f8c4560d9acc",
+      "url": "https://www-tx.ers.usda.gov/data-products/ag-and-food-statistics-charting-the-essentials/rural-economy?topicId=4e8a0642-e40d-4299-906e-906bbaaf9e4d",
+      "resolved_url": "https://www-tx.ers.usda.gov/data-products/ag-and-food-statistics-charting-the-essentials/rural-economy?topicId=4e8a0642-e40d-4299-906e-906bbaaf9e4d",
+      "title": "Ag and Food Statistics: Charting the Essentials - Rural Economy | Economic Research Service",
+      "published_date": "2025-07-18",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-07-18",
+        "latest": "2025-07-18"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:29.936579+00:00",
+      "archive_sha256": "17f5f5f5d2dffadfd15c65edd2c4af9a23b01bb4a3920545150fe088bcba9579",
+      "archive_path": "jobs/c1e252cefd896672f112987d/17f5f5f5d2dffadfd15c65edd2c4af9a23b01bb4a3920545150fe088bcba9579.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c1b83a7bb35d74277104c769",
+      "url": "http://www.ers.usda.gov/data-products/chart-gallery/chart-detail?chartId=56288",
+      "resolved_url": "http://www.ers.usda.gov/data-products/chart-gallery/chart-detail?chartId=56288",
+      "title": "Poverty rates by metro/nonmetro residence, 1959-2019 | Economic Research Service",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:29.936733+00:00",
+      "archive_sha256": "cc3399eb32fb17b00a878828cbd06fbaf72329b67de621b42bcfb8e55e83f44e",
+      "archive_path": "jobs/c1e252cefd896672f112987d/cc3399eb32fb17b00a878828cbd06fbaf72329b67de621b42bcfb8e55e83f44e.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c3a32646e9fcd8bd1aff255c",
+      "url": "https://cpost.uchicago.edu/publications/research_report_trump_suburban_rage/",
+      "resolved_url": "https://cpost.uchicago.edu/publications/research_report_trump_suburban_rage/",
+      "title": "UChicago CPOST",
+      "published_date": "2025-04-14",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-04-14",
+        "latest": "2025-04-14"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:29.936879+00:00",
+      "archive_sha256": "e47d7bed57d561ec008a4ea721a0025a2f64ca6b3e3f3f1175e70c362a9377da",
+      "archive_path": "jobs/c1e252cefd896672f112987d/e47d7bed57d561ec008a4ea721a0025a2f64ca6b3e3f3f1175e70c362a9377da.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "USDA rural America poverty nonmetro metro gap 1999 2024 long-term rural disadvantage",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "rural America social unrest protests political instability 2016 2025 rural counties national significance",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "USDA ERS rural America at a glance nonmetro poverty rate trend 1999 2024 persistent gap metro",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "rural America large-scale social unrest political violence 2020 2025 rural counties national significance",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-219b745d952a8264c27a5399"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "remaining_gap": "需修订：把“暂时或在一定条件下”保留为后果判断的真实限定，condition_state不应写成unconditional；先确认前提A（乡村问题未解决、长期存在）是否成立，再单独判断后果B（不引发大波大澜）是否实现。若A成立且B在口径内实现，应据此给出相应结论，并把贫困率下降、人口回升作为缓解/限制而非降级理由；若要以“恶化倾向”分项相反判部分符合，须具体说明后果B哪些部分实现、哪些未实现及直接证据。",
+  "source_statuses": [
+    {
+      "url": "https://www.ers.usda.gov/sites/default/files/_laserfiche/publications/110351/EIB-282.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://ers.usda.gov/sites/default/files/_laserfiche/publications/47002/30445_rdrr100full_002.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://dailyyonder.com/no-kings-protests-across-rural-america-biggest-to-date/2025/06/26/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.annualreviews.org/content/journals/10.1146/annurev-polisci-040623-114017",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www-tx.ers.usda.gov/data-products/ag-and-food-statistics-charting-the-essentials/rural-economy?topicId=4e8a0642-e40d-4299-906e-906bbaaf9e4d",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "http://www.ers.usda.gov/data-products/chart-gallery/chart-detail?chartId=56288",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://cpost.uchicago.edu/publications/research_report_trump_suburban_rage/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "评估王沪宁关于美国乡村问题的复合判断：城乡差别/乡村问题长期存在、有恶化倾向，但暂时或在一定条件下不会引发巨大社会动荡。可观察口径：1999—2024年非都市与都市贫困率差距是否持续存在、乡村困难指标是否总体恶化，以及截止2026-11-09前美国乡村是否出现与全国性社会动荡相称的大规模政治社会冲突。反证包括：乡村贫困差距消失或显著缩小、乡村主要困难指标持续改善、或出现大规模乡村社会动荡。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "e39c072dab19705061338baceb3a7272e3050e93d5f77deefadbd2087ba3cf82"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "cc556cad61d5e3440c4fe143995e7909",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "3e0f23b630215b9375e482f710b8aeaa",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "7b0afcfe0e8b8cac1fe993b105cf3a1e24bb1d53b00558567a356687e7a3053b"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "4d5d9f6dc7419de3629251d18a1c985f",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "3f6018285105804d5b4a3e511b5108a3198f600494d1189693bda0d2ccc274df"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "4740db1dc4821fd94340e18165a6a5c4",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "91606d58bcaac7e2453cfed14518eb79",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "28edd8cbd6f13b1602b85ec4779f420a17698c13b7b62ce5362878559151ecfb"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "d4ecedff02d93a20f535324612a1e3ca",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "8d839c8929db9c6a2b9123c42f965fac88e111de97c64d4d631089e9cacd76b4"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "7f975d176235154d3db842da8784372f14a3b1770f975fd1c4b305d21893103c"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "1a632df4e7b9b5a2d8f3fb27ce696237890c65ed0e28500a322108100376bad5"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "097e83497d791a97f3448c8714e6866421648ad2000fb9cba76400d84c7e0e39"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-219b745d952a8264c27a5399"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-219b745d952a8264c27a5399"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-7f40589d1b8077f47b6a",
+        "source_bytes": 201,
+        "shown_bytes": 201,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-4acf7825736ecfce70d3",
+        "source_bytes": 196,
+        "shown_bytes": 196,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-65713f7a7544dc37faf378d0",
+        "source_bytes": 12062,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-219b745d952a8264c27a5399",
+        "source_bytes": 12014,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-6cdb37a7aa2f9e19120d4ce2",
+        "source_bytes": 5267,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-afa07f82bc9adb9ac1e1f3e8",
+        "source_bytes": 12096,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-ab14d9fb2080f8c4560d9acc",
+        "source_bytes": 7008,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c1b83a7bb35d74277104c769",
+        "source_bytes": 310,
+        "shown_bytes": 310,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-c3a32646e9fcd8bd1aff255c",
+        "source_bytes": 12070,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-7f40589d1b8077f47b6a",
+        "source_bytes": 201,
+        "shown_bytes": 201,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-4acf7825736ecfce70d3",
+        "source_bytes": 196,
+        "shown_bytes": 196,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-65713f7a7544dc37faf378d0",
+        "source_bytes": 12062,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-219b745d952a8264c27a5399",
+        "source_bytes": 12014,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-6cdb37a7aa2f9e19120d4ce2",
+        "source_bytes": 5267,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-afa07f82bc9adb9ac1e1f3e8",
+        "source_bytes": 12096,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-ab14d9fb2080f8c4560d9acc",
+        "source_bytes": 7008,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c1b83a7bb35d74277104c769",
+        "source_bytes": 310,
+        "shown_bytes": 310,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-c3a32646e9fcd8bd1aff255c",
+        "source_bytes": 12070,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-7f40589d1b8077f47b6a",
+        "source_bytes": 201,
+        "shown_bytes": 201,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-4acf7825736ecfce70d3",
+        "source_bytes": 196,
+        "shown_bytes": 196,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-65713f7a7544dc37faf378d0",
+        "source_bytes": 12062,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-219b745d952a8264c27a5399",
+        "source_bytes": 12014,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-6cdb37a7aa2f9e19120d4ce2",
+        "source_bytes": 5267,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-afa07f82bc9adb9ac1e1f3e8",
+        "source_bytes": 12096,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-ab14d9fb2080f8c4560d9acc",
+        "source_bytes": 7008,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c1b83a7bb35d74277104c769",
+        "source_bytes": 310,
+        "shown_bytes": 310,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-c3a32646e9fcd8bd1aff255c",
+        "source_bytes": 12070,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-7f40589d1b8077f47b6a",
+        "source_bytes": 201,
+        "shown_bytes": 201,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-4acf7825736ecfce70d3",
+        "source_bytes": 196,
+        "shown_bytes": 196,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-65713f7a7544dc37faf378d0",
+        "source_bytes": 12062,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-219b745d952a8264c27a5399",
+        "source_bytes": 12014,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-6cdb37a7aa2f9e19120d4ce2",
+        "source_bytes": 5267,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-afa07f82bc9adb9ac1e1f3e8",
+        "source_bytes": 12096,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-ab14d9fb2080f8c4560d9acc",
+        "source_bytes": 7008,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c1b83a7bb35d74277104c769",
+        "source_bytes": 310,
+        "shown_bytes": 310,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-c3a32646e9fcd8bd1aff255c",
+        "source_bytes": 12070,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000023002-000023063",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原文的“暂时或在一定条件下掀不起大波大澜”是一个带限定条件的稳定判断，其真实条件（“一定条件”）在原文中并未具体化。建议把condition_state写成unconditional，等于取消了原文的限定条件，把“在一定条件下不引发大动荡”当成无条件成立，从而把分项(3)的检验口径放宽了。",
+          "source_quote": "解决这一问题，这一问题还会长期存在，并且有恶化的倾向，不过乡村问题暂时或",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议把“有恶化倾向”判为方向相反，并据此把整体结论降为部分符合；但原文的复合判断是“问题长期存在且有恶化倾向，不过暂时或在一定条件下不引发大动荡”。分项(2)在近期未获支持，只说明恶化倾向这一分项证据不足或方向相反，并不自动使整体成为“部分符合”。建议没有说明分项(3)这一后果B究竟哪些具体部分实现、哪些未实现，只以“未见大规模冲突”和“抗议属常规表达”带过，缺少对后果B的直接分项证据，因此部分符合的判定依据不充分。",
+          "source_quote": "复合判断分项：(1)城乡差别/乡村问题长期存在——以1999—2024年非都市与都市贫困率差距是否持续为口径；(2)有恶化倾向——以乡村贫困率、人口等主要困难指标在观察窗口内的方向为口径；(3)暂时或一定条件下不引发巨大社会动荡——以截止2026-11-09前美国乡村是否出现与全国性动荡相称的大规模政治社会冲突为口径。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正condition_state，保留原文“暂时或在一定条件下”的限定，不能写成unconditional；并需就分项(3)“不引发大波大澜”给出后果B的具体实现/未实现证据与判定，而非仅以抗议属常规表达带过，再据此确定整体结论是部分符合还是其他口径。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000023002-000023063",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原文的稳定判断是“乡村问题暂时或在一定条件下掀不起大波大澜”，即后果B（不引发巨大社会动荡）以“暂时”或“一定条件”为限定。建议把condition_state写成unconditional，并按无条件观察窗口检验分项(3)，等于删去了原文的限定条件；同时把“有恶化的倾向”与“不引发大动荡”并列拆成三个独立分项，未先确认前提A（乡村问题未解决、长期存在）是否仍成立，再判断后果B是否实现。",
+          "source_quote": "解决这一问题，这一问题还会长期存在，并且有恶化的倾向，不过乡村问题暂时或",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议以“恶化倾向未获支持”作为判部分符合的主要理由，但原文的后果判断是“不引发大波大澜”，而建议自己认定该后果在观察窗口内成立（2025年抗议属常规政治表达，未达大波大澜）。按口径，前提A（乡村问题长期存在、未解决）仍成立且后果B在声明口径内已实现时，近期贫困率下降、人口回升只能作为缓解或限制，不能仅凭“恶化倾向”分项方向相反就把结论降为部分符合；判部分符合须指出后果B哪些具体部分实现、哪些未实现。",
+          "source_quote": "复合判断分项：(1)城乡差别/乡村问题长期存在——以2002—2024年非都市与都市贫困率差距是否持续为口径；(2)有恶化倾向——以乡村贫困率、非都市人口等主要困难指标在观察窗口内的方向为口径；(3)暂时或在一定条件下不引发巨大社会动荡——以截止2026-11-09前美国乡村是否出现与全国性动荡相称的大规模政治社会冲突",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修订：把“暂时或在一定条件下”保留为后果判断的真实限定，condition_state不应写成unconditional；先确认前提A（乡村问题未解决、长期存在）是否成立，再单独判断后果B（不引发大波大澜）是否实现。若A成立且B在口径内实现，应据此给出相应结论，并把贫困率下降、人口回升作为缓解/限制而非降级理由；若要以“恶化倾向”分项相反判部分符合，须具体说明后果B哪些部分实现、哪些未实现及直接证据。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000023002-000023063",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "复合判断分项：(1)城乡差别/乡村问题长期存在——以1999—2024年非都市与都市贫困率差距是否持续为口径；(2)有恶化倾向——以乡村贫困率、人口等主要困难指标在观察窗口内的方向为口径；(3)暂时或一定条件下不引发巨大社会动荡——以截止2026-11-09前美国乡村是否出现与全国性动荡相称的大规模政治社会冲突为口径。观察时段约2002—2024年。",
+      "reason": "分项(1)有直接证据：2002年非都市贫困率14.2%对都市11.6%，2024年13.7%对10.2%，差距长期存在，符合“长期存在”。分项(2)方向相反：2024非都市贫困率较2022年15.0%下降，且2020—2024非都市人口恢复增长，主要困难指标未呈持续恶化，与“恶化倾向”不符。分项(3)在观察窗口内未见与全国性动荡相称的大规模乡村冲突，2025年“No Kings”乡村抗议虽规模创纪录但属常规政治表达，不足以构成“大波大澜”。综合为部分符合。",
+      "limitation": "“恶化倾向”为长期趋势判断，观察窗口内贫困率下降与人口回升只能说明该分项在近期未获支持，不能断言作者长期方向永远错误；乡村困难指标多元，贫困率与人口只是代理。“不引发巨大动荡”缺乏统一量化阈值，2025年乡村抗议规模上升构成边界性反证，需保留。",
+      "evidence_ids": [
+        "prior-7f40589d1b8077f47b6a",
+        "ev-219b745d952a8264c27a5399",
+        "prior-4acf7825736ecfce70d3",
+        "ev-ab14d9fb2080f8c4560d9acc",
+        "ev-6cdb37a7aa2f9e19120d4ce2"
+      ],
+      "method": "比较乡村人口占比与城乡迁移对冲突的缓冲作用",
+      "method_basis": "inferred",
+      "observation_end": "2024-12-31",
+      "future_time_text": "长期；暂时或在一定条件下",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-7f40589d1b8077f47b6a",
+          "relation": "support",
+          "quote": "2024非都市贫困率13.7%，较2022的15.0%下降，为25年较低水平之一；都市10.2%，差距仍3.5个百分点。",
+          "publication_date": "2026-01",
+          "observation_end": "2024-12-31",
+          "limitation": "支持“差距长期存在”，但同时显示贫困率下降，对“恶化倾向”构成反证；来源为已登记摘录，正文细节有限。"
+        },
+        {
+          "evidence_id": "ev-219b745d952a8264c27a5399",
+          "relation": "support",
+          "quote": "In 2002, 14.2 percent of the nonmetro population, or 7.5 million people, were poor, compared with 11.6 percent of the metro population. This difference has persisted through time",
+          "publication_date": null,
+          "observation_end": "2002-12-31",
+          "limitation": "仅证明2002年差距存在及历史持续性，不能证明此后恶化；发表日期元数据缺失。"
+        },
+        {
+          "evidence_id": "prior-4acf7825736ecfce70d3",
+          "relation": "counter",
+          "quote": "2010年代非都市人口下降，但2020—2024每年增长，增长来自净迁入抵消自然减少；2023—2024增加134540人，仍有51%的非都市县2020—2024人口减少。",
+          "publication_date": "2026-02-13",
+          "observation_end": "2024-12-31",
+          "limitation": "人口恢复增长与“恶化倾向”相反，但仍有过半县人口减少，说明乡村内部差异大，不能一概而论。"
+        },
+        {
+          "evidence_id": "ev-ab14d9fb2080f8c4560d9acc",
+          "relation": "counter",
+          "quote": "After a decade of population loss in the 2010s, the population in nonmetropolitan (rural) areas has increased each year since 2020.",
+          "publication_date": "2025-07-18",
+          "observation_end": "2024-12-31",
+          "limitation": "人口指标改善，与恶化倾向相反；但人口不等于全部乡村困难指标，且区域差异显著。"
+        },
+        {
+          "evidence_id": "ev-6cdb37a7aa2f9e19120d4ce2",
+          "relation": "boundary",
+          "quote": "at least 600 rural communities protested across the country on that day, with at least one rural protest held in every state except New Jersey, Delaware, and Rhode Island.",
+          "publication_date": "2025-06-26",
+          "observation_end": "2025-06-14",
+          "limitation": "乡村抗议规模创纪录，构成“不引发大波大澜”的边界性反证；但属常规政治表达，未达全国性社会动荡程度，不足以推翻主要判断。"
+        }
+      ],
+      "remaining_gap": "“恶化倾向”缺乏覆盖1999—2024全期的连续乡村多维困难指标序列，仅以贫困率与人口代理；乡村社会动荡缺乏统一量化阈值，2025年抗议规模上升的长期意义待观察。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000023002-000023063",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "复合判断分项：(1)城乡差别/乡村问题长期存在——以2002—2024年非都市与都市贫困率差距是否持续为口径；(2)有恶化倾向——以乡村贫困率、非都市人口等主要困难指标在观察窗口内的方向为口径；(3)暂时或在一定条件下不引发巨大社会动荡——以截止2026-11-09前美国乡村是否出现与全国性动荡相称的大规模政治社会冲突为口径。观察时段约2002—2025年6月。",
+      "reason": "分项(1)有直接证据：2002年非都市贫困率14.2%对都市11.6%，2024年13.7%对10.2%，差距长期存在，符合“长期存在”。分项(2)方向相反：2024非都市贫困率较2022年15.0%下降，且2020—2024非都市人口恢复增长，主要困难指标未呈持续恶化，与“恶化倾向”不符。分项(3)在观察窗口内未见与全国性动荡相称的大规模乡村冲突，2025年“No Kings”乡村抗议虽规模创纪录但属常规政治表达，未达“大波大澜”程度，该分项在观察期内成立。综合：长期存在成立、恶化倾向未获支持、不引发大动荡在观察期内成立，故为部分符合。",
+      "limitation": "原文“暂时或在一定条件下”为限定性稳定判断，其“一定条件”未具体化，本评估按无条件观察窗口检验，不声称永远成立。“恶化倾向”为长期趋势判断，观察窗口内贫困率下降与人口回升只能说明该分项近期未获支持，不能断言作者长期方向永远错误；贫困率与人口只是乡村困难的代理指标。2025年乡村抗议规模上升构成边界性反证，需保留。",
+      "evidence_ids": [
+        "prior-7f40589d1b8077f47b6a",
+        "ev-219b745d952a8264c27a5399",
+        "prior-4acf7825736ecfce70d3",
+        "ev-ab14d9fb2080f8c4560d9acc",
+        "ev-6cdb37a7aa2f9e19120d4ce2"
+      ],
+      "method": "比较乡村人口占比与城乡迁移对冲突的缓冲作用",
+      "method_basis": "inferred",
+      "observation_end": "2025-06-14",
+      "future_time_text": "长期；暂时或在一定条件下",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-7f40589d1b8077f47b6a",
+          "relation": "support",
+          "quote": "2024非都市贫困率13.7%，较2022的15.0%下降，为25年较低水平之一；都市10.2%，差距仍3.5个百分点。",
+          "publication_date": "2026-01",
+          "observation_end": "2024-12-31",
+          "limitation": "支持“差距长期存在”，但同时显示贫困率下降，对“恶化倾向”构成反证；来源为已登记摘录，正文细节有限。"
+        },
+        {
+          "evidence_id": "ev-219b745d952a8264c27a5399",
+          "relation": "support",
+          "quote": "In 2002, 14.2 percent of the nonmetro population, or 7.5 million people, were poor, compared with 11.6 percent of the metro population. This difference has persisted through time",
+          "publication_date": null,
+          "observation_end": "2002-12-31",
+          "limitation": "仅证明2002年差距存在及历史持续性，不能证明此后恶化；发表日期元数据缺失。"
+        },
+        {
+          "evidence_id": "prior-4acf7825736ecfce70d3",
+          "relation": "counter",
+          "quote": "2010年代非都市人口下降，但2020—2024每年增长，增长来自净迁入抵消自然减少；2023—2024增加134540人，仍有51%的非都市县2020—2024人口减少。",
+          "publication_date": "2026-02-13",
+          "observation_end": "2024-12-31",
+          "limitation": "人口恢复增长与“恶化倾向”相反，但仍有过半县人口减少，说明乡村内部差异大，不能一概而论。"
+        },
+        {
+          "evidence_id": "ev-ab14d9fb2080f8c4560d9acc",
+          "relation": "counter",
+          "quote": "After a decade of population loss in the 2010s, the population in nonmetropolitan (rural) areas has increased each year since 2020.",
+          "publication_date": "2025-07-18",
+          "observation_end": "2024-12-31",
+          "limitation": "人口指标改善，与恶化倾向相反；但人口不等于全部乡村困难指标，且区域差异显著。"
+        },
+        {
+          "evidence_id": "ev-6cdb37a7aa2f9e19120d4ce2",
+          "relation": "boundary",
+          "quote": "at least 600 rural communities protested across the country on that day, with at least one rural protest held in every state except New Jersey, Delaware, and Rhode Island.",
+          "publication_date": "2025-06-26",
+          "observation_end": "2025-06-14",
+          "limitation": "乡村抗议规模创纪录，构成“不引发大波大澜”的边界性反证；但属常规政治表达，未达全国性社会动荡程度，不足以推翻主要判断。"
+        }
+      ],
+      "remaining_gap": "“恶化倾向”缺乏覆盖1999—2024全期的连续乡村多维困难指标序列，仅以贫困率与人口代理；乡村社会动荡缺乏统一量化阈值，2025年抗议规模上升的长期意义待观察；原文“一定条件”未具体化，无法检验条件触发情形。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "评估王沪宁关于美国乡村问题的复合判断：城乡差别/乡村问题长期存在、有恶化倾向，但暂时或在一定条件下不会引发巨大社会动荡。可观察口径包括：1999—2024年非都市与都市贫困率差距是否持续存在、乡村困难指标是否总体恶化，以及截止2026-11-09前美国乡村是否出现与全国性社会动荡相称的大规模政治社会冲突。反证包括：乡村贫困差距消失或显著缩小、乡村主要困难指标持续改善、或出现大规模乡村社会动荡。",
+  "elapsed_seconds": 45.315,
+  "completed_at": "2026-11-09T10:32:53.459386+00:00"
+}

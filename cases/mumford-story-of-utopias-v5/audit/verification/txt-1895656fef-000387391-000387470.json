@@ -1,0 +1,82 @@
+{
+  "claim_id": "txt-1895656fef-000387391-000387470",
+  "plan": {
+    "object": "我们的内心世界和有用的思想家具",
+    "conditions": [],
+    "quantifier": "as empty as a deserted house",
+    "result": "很快空得像废弃的房子",
+    "time_window": "soon，从1923年到截止日",
+    "counterevidence_needed": "很快就有仍可使用的思想框架"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "support_query": "Western thought after 1920 lost its usable ideas and became intellectually empty",
+        "counter_query": "twentieth century created new usable intellectual frameworks after the 1920s",
+        "saved_at_utc": "2026-11-20T11:11:02Z",
+        "tool_call_id": null
+      }
+    ],
+    "adaptive_rounds": 0,
+    "stop_reason": "斯坦福哲学百科写1930年代起的批判理论把哲学和社会科学结合起来，目的是促进解放。空屋没有成立。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unconditional",
+    "future_time_text": "soon",
+    "observation_end": null,
+    "evidence_ids": [
+      "ev-sep-critical-1930s"
+    ],
+    "scope": "对象是内心世界很快空得像废弃的房子。批判理论作为一个学派存在，不是这个对象。",
+    "reason": "斯坦福哲学百科写批判理论从1930年代的法兰克福社会研究所开始，并把哲学和社会科学结合起来。这只证明一个学派和一种研究制度存在。它不能反证内心世界已经空如废屋。有后来的理论工作，不能当成空屋被否定。",
+    "limitation": "该页仍留在证据表，只说明它不能决定这句。页面给1937年，没有给日。不改判部分符合。",
+    "method": "先核对取证对象是不是空屋。对象换成学派之后，不给错误。",
+    "method_basis": "explicit",
+    "remaining_gap": "缺一份材料测量1923年后不久，作者所说的内心世界是否空得像废弃的房子。学派条目不能代替。"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "学派存在被当成空屋的反证。对象和反证都不成立，所以不能保持错误。"
+  },
+  "history": [
+    {
+      "stage": "r1",
+      "assess": {
+        "inclusion": "forecast",
+        "verdict": "错误",
+        "basis": "observed_window",
+        "trend_aligned": false,
+        "condition_state": "unconditional",
+        "future_time_text": "soon",
+        "observation_end": "1937-12-31",
+        "evidence_ids": [
+          "ev-sep-critical-1930s"
+        ],
+        "scope": "空得像废弃房子，指有用的思想家具近于没有。1930年代形成的可用理论足以否定这种空。",
+        "reason": "斯坦福哲学百科2023年12月12日的条目写，批判理论从1930年代法兰克福社会研究所开始，把哲学和社会科学结合起来，实际目的是促进解放。霍克海默1937年的文章被写成定义这个理论的依据。这是出版后很快就有的有用家具，不是空屋。",
+        "limitation": "一个学派不是全部内心世界。空屋要求的是近于没有。有一套仍在使用的框架就与空屋相反。页面给1937年，没有给日。",
+        "method": "先看 soon 的窗口里有没有可用的思想框架。有，就不把空屋判成部分空。",
+        "method_basis": "explicit"
+      },
+      "semantic_review": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass",
+        "note": "1930年代的批判理论是有用家具。空屋不成立。"
+      }
+    }
+  ]
+}

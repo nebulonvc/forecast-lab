@@ -1,0 +1,28 @@
+{
+  "id": "9befa72a-320a-4774-97ce-38d0690f0b37",
+  "object": "chat.completion",
+  "created": 1794201304,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-00002\",\"predictions\":[{\"quote\":\"假以时日，从这个项目里必将涌现出一批优秀的公司和著名的企业家，将在许多方面彻底改变人们对教育、对成长、对创业以及对人生的某些固有态度，推动社会更快速地进步，推动人生更自由地发展。\",\"kind\":\"prediction\",\"speaker\":\"徐小平\",\"claim\":\"假以时日，这个项目必将涌现出一批优秀的公司和著名的企业家，并将在许多方面彻底改变人们对教育、成长、创业和人生的某些固有态度，推动社会更快速进步、人生更自由发展。\",\"expanded_claim\":\"假以时日，彼得·蒂尔的“20 under 20”项目（后改名“蒂尔奖学金”）必将涌现出一批优秀的公司和著名的企业家，并将在许多方面彻底改变人们对教育、成长、创业和人生的某些固有态度，推动社会更快速进步、人生更自由发展。\",\"reference_resolutions\":[{\"expression\":\"这个项目\",\"referent\":\"“20 under 20”项目（后改名“蒂尔奖学金”）\",\"support_quote\":\"通过这个项目（后来改名为“蒂尔奖学金”）\"}],\"unresolved_references\":[],\"time_text\":\"假以时日\",\"condition_text\":\"假以时日\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"作者对项目未来将产生优秀公司、企业家及观念改变作出确定性预测。\"},{\"quote\":\"彼得·蒂尔奉献给世界的，将不仅是一批伟大的公司和科技，还包括他这种站在人类发展高度来考虑问题的思想。\",\"kind\":\"prediction\",\"speaker\":\"徐小平\",\"claim\":\"彼得·蒂尔将给世界带来一批伟大的公司和科技，以及他站在人类发展高度考虑问题的思想。\",\"expanded_claim\":\"彼得·蒂尔将给世界带来一批伟大的公司和科技，以及他这种站在人类发展高度来考虑问题的思想。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"对彼得·蒂尔未来贡献作出确定性预测。\"},{\"quote\":\"也许那个时候，彼得·蒂尔就会常常来中国参加各种网络峰会的活动。\",\"kind\":\"prediction\",\"speaker\":\"徐小平\",\"claim\":\"也许到中国诞生征服全球的公司和产品的时候，彼得·蒂尔会常常来中国参加各种网络峰会活动。\",\"expanded_claim\":\"也许到中国诞生像Facebook、谷歌、苹果、特斯拉这样征服全球的公司和产品的时候，彼得·蒂尔就会常常来中国参加各种网络峰会的活动。\",\"reference_resolutions\":[{\"expression\":\"那个时候\",\"referent\":\"中国诞生像Facebook、谷歌、苹果、特斯拉这样征服全球的公司和产品的时候\",\"support_quote\":\"中国何时才能诞生像Facebook、谷歌、苹果、特斯拉这样征服全球的公司和产品呢？\"}],\"unresolved_references\":[],\"time_text\":\"那个时候\",\"condition_text\":\"也许那个时候（中国诞生征服全球的公司和产品时）\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"以“也许”表达条件性未来可能。\"}]}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3128,
+    "completion_tokens": 644,
+    "total_tokens": 3772,
+    "prompt_tokens_details": {
+      "cached_tokens": 2944
+    },
+    "prompt_cache_hit_tokens": 2944,
+    "prompt_cache_miss_tokens": 184
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

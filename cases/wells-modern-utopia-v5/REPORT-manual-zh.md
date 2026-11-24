@@ -1,0 +1,112 @@
+# 现代乌托邦（A Modern Utopia）：出版后预测人工核查
+
+- 案例目录：`cases/wells-modern-utopia-v5/`
+- 出版日期：1905
+- 截止日：2026-11-15（Asia/Shanghai）
+
+## 方法说明
+
+按 METHOD.md 执行。抽取：用仓库 prepare_book v5 流水线（toolkit 85e6da1）把 Project Gutenberg 全文 TXT（569,931 字符，sha256 c452ccec…）切成 165 块（每块 3500 字符，带 600 字符上下文）。助手逐块通读，按 DISCOVER_PROMPT_V5 写出模型本应返回的 JSON（26 条原始条目），再由仓库代码完成引文对齐、归属降级、去重和导入：共 24 条候选，其中 13 条为可核验预测；11 条为 unclear（1 条为书中转述的他人看法，10 条无法核验或与已收条目同一论断）；另有 2 条（1 条机制解释、1 条假设推演）被排除。核验：每条先写 scope，各做一次 support 与 counter 的 Exa 检索（含补充查询共 32 次），其中 4 条追加一轮改变策略的检索（8 次）；只从检索返回的 URL 中选源，原文经 Exa contents 抓取（不足时 curl）存档于 data/sources（sha256），写入 data/evidence.jsonl（36 条）。助手阅读后按“正确／趋势符合／部分符合／错误／暂无法判断”规则逐条评断，再经 pipeline.py apply assess → check → report。本稿由助手逐条对照书中原文与存档证据人工复核：先剔除非预测（出版前已发生的史实、一般规律、规范建议、反事实推演等），再对每条预测用 Exa 检索公开来源并抓取存档（`data/sources/`，sha256 记于 `data/evidence.jsonl`）核对至截止日。没有写明终点的预测按“出版日→2026-11-15”的隐含窗口判断；写明的终点未到、或条件句的前提从未出现，一律记“暂无法判断”，不强行判对错。所有来源均为实际抓取并存档的公开页面或文件；本稿未使用 DeepSeek 自动核验结论作为最终判断。
+
+五级判断：正确／趋势符合（方向对、程度或时点未完全到位）／部分符合（一部分成立）／错误／暂无法判断。严格胜率＝正确÷可判定；加权胜率＝（正确＋0.75×趋势符合＋0.5×部分符合）÷可判定；错误率＝错误÷可判定；可判定＝前四级之和。
+
+## 统计
+
+候选 13 条，剔除非预测 0 条，计入 **13 条预测**，其中 **12 条可判定**。
+
+| 判断 | 条数 |
+|---|---:|
+| 正确 | 5 |
+| 趋势符合 | 1 |
+| 部分符合 | 3 |
+| 错误 | 3 |
+| 暂无法判断 | 1 |
+
+| 指标 | 数值 |
+|---|---:|
+| 严格胜率 | **41.7%**（5/12） |
+| 加权胜率 | **60.4%** |
+| 错误率 | **25.0%**（3/12） |
+| 未定占比（暂无法判断/预测） | 7.7%（1/13） |
+
+## 总体评价
+
+《现代乌托邦》是小说体的社会构想，书中大部分内容描写另一颗星球上的乌托邦制度，属于规范设想或假设，均未计入。计入的 13 条只取作者以自己口吻对现实地球未来的判断。技术与基础设施类判断命中较好：飞行器跨越地理屏障（1909 年飞越英吉利海峡）、冒烟蒸汽列车被淘汰、伦敦马拉公共汽车很快消失、机械能比重上升、全球系统性消灭传染病（天花 1980 年根除）都成立。偏差集中在社会制度类：电力未归地方政府经营（先国有化后私有化），劳动阶级远未“不再必要”，世界通用语走的是英语单一扩散而非多语融合。部分符合三条：电气化未覆盖供暖、出生率虽再未回到 1905 年水平但有明显婴儿潮、种族偏见只能解释部分战争与暴行。人口流动大增方向成立但程度被夸大，记为趋势符合；“终将走向世界国家”无时限，记暂无法判断。
+
+## 逐条判断
+
+编号为 `data/claims.jsonl` 中可判定候选的顺序号。
+
+### 正确（5 条）
+
+- **#1** 「but what of that near to-morrow when the flying machine soars overhead, free to descend at this point or that?」  
+  判断：**正确**。飞行器很快成为现实：1909年7月25日布莱里奥驾驶单翼机飞越英吉利海峡，从加来附近飞抵多佛；《每日邮报》称“英格兰不再是一个岛屿”。飞行器可越过地理屏障、在选定地点降落的预测成立  
+  来源：<https://airandspace.si.edu/stories/editorial/bleriots-cross-channel-flight>；<https://www.casematepublishers.com/9781526775603/cross-channel-aviation-pioneers/>
+- **#4** 「they are already doomed on earth, already threatened with that obsolescence that will endear them to the Ruski…」  
+  判断：**正确**。冒烟的蒸汽列车确被淘汰：英国随柴油化和主干线电气化，于1968年8月11日开出最后一趟蒸汽牵引的英国铁路客运列车；在全球范围，据2022年行业刊物所说，仍有蒸汽机车营运货运的只剩中国、朝鲜和波斯尼亚的小规模调车作业  
+  来源：<https://www.bbc.co.uk/liverpool/content/articles/2008/08/06/history_end_of_steam_1968_feature.shtml>；<https://en.wikipedia.org/wiki/Retirement_of_steam_locomotives_by_country>；<https://blog.railwaymuseum.org.uk/fifteen-guineas-the-price-of-progress/>；<https://en.wikipedia.org/wiki/Fifteen_Guinea_Special>
+- **#7** 「There is every indication of a steady increase in this proportion of mechanical energy, in this emancipation o…」  
+  判断：**正确**。机械能比例持续上升的方向成立：长期研究显示1800年以来农业等生产中人和畜力肌肉做功的相对贡献大幅让位于机器，20世纪制造业也由手工作坊转向无生命动力驱动的机械化生产  
+  来源：<https://link.springer.com/article/10.1007/s41247-022-00096-z>；<https://www.bu.edu/econ/files/2019/07/Atack-Margo-Rhode-Mechanization-Takes-Command-July-2019-Working-Paper.pdf>
+- **#11** 「a phase in the world's development is inevitable when a systematic world-wide attempt will be made to destroy …」  
+  判断：**正确**。系统性的全球消灭传染病行动确已出现：世卫组织天花根除规划（1966—1980）使天花于1980年被宣布根除；1988年启动的全球根除脊髓灰质炎行动使发病减少99%以上；世卫组织早年还曾尝试根除疟疾  
+  来源：<https://www.who.int/news-room/feature-stories/detail/the-smallpox-eradication-programme---sep-(1966-1980)>；<https://www.who.int/publications/i/item/WHO-POLIO-18.01>；<https://pmc.ncbi.nlm.nih.gov/articles/PMC2647379/>
+- **#13** 「These omnibuses, these great, stalwart, crowded, many-coloured things that jostle one another, and make so han…」  
+  判断：**正确**。伦敦马拉公共汽车很快消失：伦敦通用公共汽车公司1910年推出B型机动公共汽车，并在1911和1912年以机动车取代全部马车；第一次世界大战爆发时马车时代结束  
+  来源：<https://www.ltmuseum.co.uk/collections/stories/transport/london-buses-during-first-world-war>；<https://www.ltmuseum.co.uk/collections/stories/transport/collections-close-b-type-motorbus-1913>；<https://content.tfl.gov.uk/research-guide-14-horse-buses-in-london.pdf>
+
+### 趋势符合（1 条）
+
+- **#9** 「all local establishments, all definitions of place, are even now melting under our eyes. Presently all the wor…」  
+  判断：**趋势符合**。人口流动大增的方向成立但程度被夸大：国际移民由1970年的84 million增至2020年的281 million，国际游客由1950年的25 million增至2019年的1.5 billion；但移民只占世界人口3.6%，绝大多数人仍生活在出生国，谈不上“全世界充满陌生人”  
+  来源：<https://news.un.org/en/story/2021/12/1106902>；<https://worldmigrationreport.iom.int/sites/g/files/tmzbdl1691/files/documents/2024-05/key-migration-data-at-a-glance_2024.pdf>；<https://www.unwto-tourismacademy.ie.edu/2021/08/the-evolution-of-the-tourism-sector>
+
+### 部分符合（3 条）
+
+- **#5** 「In a little while heating and lighting and the supply of power for domestic and industrial purposes and for ur…」  
+  判断：**部分符合**。部分应验：照明、动力和城市交通确由公共发电站供电，英国接电住户比例由1919年的6%大幅上升，国家电网在1930年代建成，电车和地铁实现电气化；但供暖没有“全部”电气化，英国约30 million户住宅中85%仍靠天然气供暖  
+  来源：<https://www.sciencemuseum.org.uk/objects-and-stories/everyday-wonders/electric-lighting-home>；<https://www.londonmuseum.org.uk/collections/london-stories/when-did-london-get-electricity/>；<https://www.energy-uk.org.uk/fuelling-the-future/the-role-of-gas-heating-in-homes/>
+- **#10** 「with a high and rising standard of comfort and circumspection it is unlikely that the birth-rate will ever ris…」  
+  判断：**部分符合**。部分应验：维基共享资源的英国总和生育率数据显示1905年为3.3，此后再未回到这一水平，2025年降至1.39；但1933年降到1.72后出现明显回升，1964年达2.95（《卫报》引英格兰和威尔士峰值2.93），二战后和1960年代婴儿潮使出生率一度显著回升  
+  来源：<https://commons.wikimedia.org/wiki/Data:United_Kingdom_TFR.tab>；<https://www.theguardian.com/money/2021/sep/20/british-baby-shortage-could-lead-to-economic-decline-says-thinktank>；<https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/livebirths/bulletins/birthsummarytablesenglandandwales/2015-07-15>
+- **#12** 「these new arbitrary and unsubstantial race prejudices become daily more formidable. They are shaping policies …」  
+  判断：**部分符合**。部分应验：纳粹的种族主义意识形态驱动了大屠杀和东线的灭绝战争；但第一次世界大战主要源于民族主义、帝国竞争、同盟体系和军国主义，种族偏见是否造成近未来“很大一部分”战争无法量化确认  
+  来源：<https://encyclopedia.ushmm.org/content/en/article/nazi-racism-an-overview>；<https://encyclopedia.ushmm.org/content/en/article/introduction-to-the-holocaust>；<https://schoolshistory.org.uk/topics/world-history/first-world-war/causes-first-world-war/>
+
+### 错误（3 条）
+
+- **#3** 「I think now that this wedding and survival of several in a common offspring is a far more probable thing.」  
+  判断：**错误**。实际走向与“多种语言融合成共同后代”相反：20世纪后期以来是单一既有语言（英语）扩散为全球通用语，开放大学称这是人类历史上第一次有单一语言达到如此普遍；混合英语只是地方变体，人工国际语世界语的母语者仅约2,000人  
+  来源：<https://www.open.edu/openlearn/history-the-arts/culture/english-language/global-english>；<https://en.wikipedia.org/wiki/English_language>；<https://en.wikipedia.org/wiki/Esperanto>；<https://www.bbc.com/news/world-44200901>
+- **#6** 「the supply of electrical energy, just like drainage and the supply of water, will fall to the local authority.」  
+  判断：**错误**。电力供应没有长期“归地方政府”：出版时已有地方政府经营的电力企业与私营公司并存，但1947年电力法把电力工业国有化、收归全国性机构，1990年起又私有化；像排水和供水那样由地方政府统一经营的格局并未形成  
+  来源：<https://api.parliament.uk/historic-hansard/commons/1902/apr/21/electric-supply-undertakings-local>；<https://engineers.scot/office/resources/papers/private-elec-26th-june-final.pdf>；<https://wpehs.org.uk/historicsupplements/Sup041ElectricityCouncil1.pdf>
+- **#8** 「it is becoming conceivable that presently there may be no need for anyone to toil habitually at all; that a la…」  
+  判断：**错误**。劳动阶级并未变得“不再必要”：1971年英国近60%的雇员从事体力职业；当代美国劳工统计局数据仍显示39.1%的平民劳动力从事需要搬举、推拉、攀爬等动作的体力繁重工作，经常性体力劳作远未消失  
+  来源：<https://api.parliament.uk/historic-hansard/written-answers/1971/dec/22/manual-workers>；<https://pmc.ncbi.nlm.nih.gov/articles/PMC10291931/>
+
+### 暂无法判断（1 条）
+
+- **#2** 「the endless multitudes about us and in our loins are to come at last to the World State and a greater fellowsh…」  
+  判断：**暂无法判断**。“终将”走向世界国家与通用语言属无时限的终局预测：截至截止日，拥有行政、立法、司法职能的世界政府从未存在，英语虽已成为全球通用语但并非全人类的共同语言；终点尚未到来，暂无法判定  
+  来源：<https://en.wikipedia.org/wiki/World_government>；<https://en.wikipedia.org/wiki/English_language>
+
+## 剔除的非预测
+
+| 编号 | 原文 | 类型 | 说明 |
+|---:|---|---|---|
+| — | （无） | — | 候选为人工挑选，未收入非预测 |
+
+## 文件
+
+- 本文：`cases/wells-modern-utopia-v5/REPORT-manual-zh.md`
+- 逐条结构化结果：`cases/wells-modern-utopia-v5/output/manual-final/results.manual.jsonl`（review_source = `manual-assistant-2026-11-15`），汇总 `output/manual-final/summary.json`
+- 人工决定源文件：`cases/wells-modern-utopia-v5/audit/manual_review_2026-11-15.py`
+
+## 说明
+
+- 本书为小说体乌托邦，按队列说明只抽取具体、有时间指向的社会或技术判断，乌托邦内部描写不计分；可核验密度（约 2.3 条/10 万字符）因此明显低于非虚构类目标。
+- 第 2 条（世界国家与通用语言）与书末“终将走向世界国家”“综合是世界趋势”等句为同一终局论断，后两句记为 unclear，不重复计分。
+- 第 5、6、10 条按英国口径核对，第 7 条证据以美国长期研究为主；口径限制写在 assessment 的 scope／limitation 字段。
+- 第 10 条的 1905 年英国总和生育率取自维基共享资源数据表（二手汇编），并以 ONS 和《卫报》对照。
+

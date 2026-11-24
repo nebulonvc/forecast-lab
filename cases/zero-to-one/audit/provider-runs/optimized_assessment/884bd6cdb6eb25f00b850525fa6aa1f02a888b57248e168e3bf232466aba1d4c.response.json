@@ -1,0 +1,28 @@
+{
+  "id": "df9bada8-f25d-49c1-b08e-bb132cfcae70",
+  "object": "chat.completion",
+  "created": 1794201591,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000067333-000067379\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性判断：若新产品缺乏有效推销方式，则生意难以为继；未限定具体产品、行业或期限，无法在观察窗口内操作化为可检验的总体结果。\",\"reason\":\"该句是带明确前提的条件性断言，前提“发明新产品却没有有效推销方式”是否发生、对应哪一具体生意均未确定，无法用现有证据评分。\",\"limitation\":\"条件未触发且对象不具体，不能以个别产品失败或成功反推该通则；无可用证据。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4333,
+    "completion_tokens": 188,
+    "total_tokens": 4521,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3565
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

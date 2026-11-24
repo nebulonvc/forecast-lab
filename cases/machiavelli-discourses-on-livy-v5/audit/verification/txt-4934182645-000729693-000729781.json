@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000729693-000729781",
+  "plan": {
+    "object": "以公开途径取得的名声。同段写的是为公共好处提出好建议或做出好行动，并因此得到荣誉。",
+    "condition": "acquired honestly and openly by such means。诚实、公开、并且是这种公共功绩。私下借钱、帮人嫁女儿、替人对抗官员，是下一种危险信誉，不是这句。",
+    "quantifier": "can never be dangerous。永不会有危险。一次公开功劳后来危害共和国，可以反驳；一次没有危害不能证明永不会。",
+    "result": "登记变化是 never be dangerous。没有危险，不是只没有称王。",
+    "window": "1531至2026-11-15。罗马的凯旋和斯普里乌斯是出版前的例子。",
+    "counterevidence_needed": "公开、诚实的公共功劳带来危险；或这种功劳没有带来危险。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "republic gave public honors for open service and that reputation caused no danger",
+      "counter_query": "statesman honored for open public service later used that reputation to threaten the republic"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [],
+    "dropped": "西塞罗是出版前。检索没有给出已存档正文，写一个公开功劳后来危害共和国。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "必须是公开、诚实、为公共好处取得的名声。一次安全不能证明永不会有危险。",
+    "reason": "支持检索已经补做。它打开的是《李维史论》这一章自己的句子，不能用来独立核验这句。反对检索要找公开功劳后来威胁共和国的人，打开的材料没有存成可引用正文，也没有把危险写成由这种公开功劳造成。决定性缺口是：除了本书自身，没有已存档正文写出这种名声，以及它有危险或没有危险。",
+    "limitation": "支持检索命中的是本书。反对检索没有留下可逐字引用的出版后正文。",
+    "method": "先确认名声来自公开的公共功劳，再看它是否永不会有危险。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "支持检索已做，命中的是本书自身，不能独立核验。反对检索仍没有可引用正文把公开功劳和危险连在一起。"
+  }
+}

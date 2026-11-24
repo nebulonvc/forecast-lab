@@ -1,0 +1,109 @@
+{
+  "id": "txt-5386516eaf-001974084-001974155",
+  "assess": {
+    "id": "txt-5386516eaf-001974084-001974155",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "纯分配者阶级的人数缩到更有节制的规模，并且这来自合作运动的推进。",
+    "reason": "批发、零售和汽车服务的就业份额下降，不是纯分配者的人数。伦敦零售就业是上升。合作运动这一来源没有被观察到。份额和一地人数不能代替这个结果。",
+    "limitation": "份额和伦敦人数只留作边界。来源未核实时不能改判对或错。",
+    "evidence_ids": [
+      "ev-jobs-share-2022",
+      "ev-london-retail"
+    ],
+    "method": "独立QA要求撤回部分符合。不另打对错。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-jobs-share-2022",
+        "quote": "the sectors which have fallen as a share of overall employment have been manufacturing; wholesale, retail, and motor services",
+        "relation": "boundary",
+        "limitation": "就业份额不是人数，汽车服务也不等于纯分配者。",
+        "observation_end": "2021-12-31",
+        "publication_date": "2022-01",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-london-retail",
+        "quote": "Employment in the retail sector has been on an upward trend in London",
+        "relation": "boundary",
+        "limitation": "伦敦零售人数上升，不是全国纯分配者人数。",
+        "observation_end": "2004-12-31",
+        "publication_date": "2007-09",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺合作运动推进之后，纯分配者阶级的人数是否缩到更有节制的规模。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001974084-001974155",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "wholesale and retail employment share fell"
+      },
+      {
+        "role": "counter",
+        "query": "London retail employment rose"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://economy2030.resolutionfoundation.org/wp-content/uploads/2022/01/Changing-jobs.pdf",
+      "https://www.london.gov.uk/media/65269/download"
+    ],
+    "reason": "份额下降，伦敦人数曾上升。"
+  },
+  "revision_trail": {
+    "withdrawn_verdict": "部分符合",
+    "withdrawn_reason": "自1978年，批发、零售和汽车服务占全部就业的份额下降，分配者阶级的规模这一结果变小了。伦敦零售就业在材料所述的二十多年里上升，所以不是每一处的分配就业都变少。合作运动是原句给出的来源，材料没有证明这个机制；按判定合同，机制未证实不取消对结果的评价，也不单独构成部分符合的理由。",
+    "failed_review": {
+      "id": "txt-5386516eaf-001974084-001974155",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    },
+    "why": "份额和伦敦人数不是纯分配者人数，合作运动来源未观察。",
+    "qa": "2026-11-20-mill-principles-of-political-economy"
+  },
+  "rule_audit": {
+    "source": "toolkit/METHOD.md",
+    "quote": "若主要预测结果可以观察、附带机制无法识别，可评结果并在限制中说明因果未验证。",
+    "reasoning": "分配者规模是主要结果，份额与伦敦就业是这个结果的直接分化。合作运动是附带机制，不是未触发的如果条件。"
+  }
+}

@@ -1,0 +1,654 @@
+{
+  "claim_id": "txt-1c4066fc0c-000049051-000049136",
+  "version": "search-verifier-v1",
+  "input_sha256": "5bb2d7de9c324b0cfcf43885d7248a01c253a71f367df8717eefd75bbd54abc7",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000049051-000049136",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "原书判断对象为：美国社会发展提出的“全面协调”要求，与美国人意识形态、情感上不能接受全面协调之间的冲突“还将持续多年”。回顾性观察口径应为1991年后约十年内，是否有直接材料显示美国人在意识形态/情感层面持续抗拒全面协调；联邦赤字、预算僵局、预算执行法约束等财政程序指标属于不同口径，仅作背景，不替代原对象。",
+    "reason": "现有CBO/GAO材料只涉及联邦赤字、预算执行法约束和年末拨款僵局等财政程序问题，没有直接观察“美国人在意识形态和情感上不能接受全面协调”这一特定冲突是否持续多年。以财政预算困难替代原书对象会改变命题，故不能据此判部分符合或趋势符合。",
+    "limitation": "关键修订：撤回以联邦财政/预算协调困难替代原书“意识形态/情感抗拒全面协调”的判定，改判暂无法判断。财政预算材料仅作背景，不能证明作者归因机制或原冲突的持续长度。",
+    "evidence_ids": [
+      "ev-eb550c1910025743e771b08f",
+      "ev-c3c69ab42d15cc45c30698c6",
+      "ev-14633b9d9a2fcc188dde9c1c",
+      "ev-dec9bf0a148e9bdeccf2b2a7",
+      "ev-5d5f56c5595a2b6838f24527"
+    ],
+    "method": "由治理需求与传统价值间矛盾推断制度转型持续困难",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "还将持续多年",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-eb550c1910025743e771b08f",
+        "relation": "background",
+        "quote": "The federal deficit is projected to approach $300 billion in both 1991 and 1992",
+        "publication_date": "1991-01-30",
+        "observation_end": "1991-01-30",
+        "limitation": "这是1991年初的赤字预测值而非已实现结果，且属财政口径，不涉及美国人对“全面协调”的意识形态/情感态度。"
+      },
+      {
+        "evidence_id": "ev-c3c69ab42d15cc45c30698c6",
+        "relation": "background",
+        "quote": "Deficits will begin rising\nsteadily in 1996, however, if current policies remain unchanged.",
+        "publication_date": null,
+        "observation_end": "1995-08-31",
+        "limitation": "为1995年8月的预测性表述，非已实现结果；仅反映财政压力预期，不能替代原书意识形态/情感冲突对象。",
+        "quote_verification": {
+          "method": "unique_whitespace_alignment",
+          "model_quote": "Deficits will begin rising steadily in 1996, however, if current policies remain unchanged."
+        }
+      },
+      {
+        "evidence_id": "ev-14633b9d9a2fcc188dde9c1c",
+        "relation": "background",
+        "quote": "GAO discussed the evolution of the budget process and challenges to changing the budget process.",
+        "publication_date": "1996-07-11",
+        "observation_end": "1996-07-11",
+        "limitation": "概括性表述，说明预算过程改革面临挑战，属制度程序层面，不涉及文化/情感因素。"
+      },
+      {
+        "evidence_id": "ev-dec9bf0a148e9bdeccf2b2a7",
+        "relation": "background",
+        "quote": "the budget\t \nprocess should be designed to avoid what has been described as\t \nthe year-end \"train wreck\".",
+        "publication_date": "2001-07-19",
+        "observation_end": "2001-07-19",
+        "limitation": "2001年材料显示年末拨款僵局问题仍存在，但属制度程序层面，不能直接对应作者所说的意识形态抗拒。",
+        "quote_verification": {
+          "method": "unique_whitespace_alignment",
+          "model_quote": "the budget process should be designed to avoid what has been described as the year-end \"train wreck\"."
+        }
+      },
+      {
+        "evidence_id": "ev-5d5f56c5595a2b6838f24527",
+        "relation": "background",
+        "quote": "full compliance with the act's provisions will not necessarily reduce the overall deficit as much as anticipated",
+        "publication_date": "1991-07-16",
+        "observation_end": "1991-07-16",
+        "limitation": "说明预算执行法约束效果有限，属财政协调困难的表现之一，为1991年当年评估，观察期短且不涉及原书对象。"
+      }
+    ],
+    "remaining_gap": "缺少1991年后约十年内关于美国人意识形态/情感层面是否持续抗拒“全面协调”的直接证据，无法验证原书特定冲突的持续性与作者归因机制；财政预算材料只能作为不同口径的背景，不能据此判定原预测。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000049051-000049136",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以1991年前后为起点，观察约十年（1991-2001）内美国联邦财政与预算协调困难是否持续：赤字与预算僵局、预算执行法约束与年末拨款冲突等制度性协调难题。文化/意识形态根源不单独验证。",
+    "reason": "CBO 1991年预测赤字接近3000亿美元并强调临时因素，1995年赤字虽降至1610亿美元但预测1996年后将再度上升，GAO 1996年指出预算过程面临持续挑战，2001年GAO仍讨论预算执行法到期与年末“train wreck”僵局，显示财政与预算协调困难在观察窗口内持续存在，方向与“挑战还将持续多年”一致。",
+    "limitation": "这些材料只证明财政/预算协调困难持续，不能直接证明作者归因的“意识形态与情感抗拒全面协调”这一因果机制；且观察窗口仅约十年，无法验证“多年”的最终长度。",
+    "evidence_ids": [
+      "ev-eb550c1910025743e771b08f",
+      "ev-c3c69ab42d15cc45c30698c6",
+      "ev-14633b9d9a2fcc188dde9c1c",
+      "ev-dec9bf0a148e9bdeccf2b2a7",
+      "ev-5d5f56c5595a2b6838f24527"
+    ],
+    "method": "由治理需求与传统价值间矛盾推断制度转型持续困难",
+    "method_basis": "inferred",
+    "observation_end": "2001-07-19",
+    "future_time_text": "还将持续多年",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-eb550c1910025743e771b08f",
+        "relation": "support",
+        "quote": "The federal deficit is projected to approach $300 billion in both 1991 and 1992",
+        "publication_date": "1991-01-30",
+        "observation_end": "1991-01-30",
+        "limitation": "这是1991年初的预测值而非已实现结果，且赤字受衰退与储贷机构处置等临时因素影响，不能单独证明协调困难持续。"
+      },
+      {
+        "evidence_id": "ev-c3c69ab42d15cc45c30698c6",
+        "relation": "support",
+        "quote": "Deficits will begin rising steadily in 1996, however, if current policies remain unchanged.",
+        "publication_date": null,
+        "observation_end": "1995-08-31",
+        "limitation": "为1995年8月的预测性表述，非已实现结果；仅反映财政压力预期，不涉及意识形态根源。"
+      },
+      {
+        "evidence_id": "ev-14633b9d9a2fcc188dde9c1c",
+        "relation": "support",
+        "quote": "GAO discussed the evolution of the budget process and challenges to changing the budget process.",
+        "publication_date": "1996-07-11",
+        "observation_end": "1996-07-11",
+        "limitation": "概括性表述，说明预算过程改革面临挑战，但未量化协调困难程度，也不涉及文化/情感因素。"
+      },
+      {
+        "evidence_id": "ev-dec9bf0a148e9bdeccf2b2a7",
+        "relation": "support",
+        "quote": "the budget process should be designed to avoid what has been described as the year-end \"train wreck\".",
+        "publication_date": "2001-07-19",
+        "observation_end": "2001-07-19",
+        "limitation": "2001年材料显示年末拨款僵局问题仍存在，但属制度程序层面，不能直接对应作者所说的意识形态抗拒。"
+      },
+      {
+        "evidence_id": "ev-5d5f56c5595a2b6838f24527",
+        "relation": "boundary",
+        "quote": "full compliance with the act's provisions will not necessarily reduce the overall deficit as much as anticipated",
+        "publication_date": "1991-07-16",
+        "observation_end": "1991-07-16",
+        "limitation": "说明预算执行法约束效果有限，属协调困难的表现之一，但为1991年当年评估，观察期短。"
+      }
+    ],
+    "remaining_gap": "缺少1991-2001年间关于美国人意识形态/情感层面是否持续抗拒“全面协调”的直接证据，无法验证作者归因机制；也缺少对“多年”具体终点的界定。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-d89de3a128b0bbac0ae3",
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-Y10-PURL-gpo115381/pdf/GOVPUB-Y10-PURL-gpo115381.pdf",
+      "title": "ev-lane1-shutdown",
+      "published_date": "2019-01-28",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane1-shutdown",
+      "archive_sha256": "0d79075d481c225a242dc4ecdf61e39e2b658c081dac9318beaf37cc657cf259",
+      "archive_path": "data/sources/lane1-shutdown.pdf",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-2fe65b93d3849ebc45af",
+      "url": "https://home.treasury.gov/news/press-releases/jy2657",
+      "title": "ev-budget",
+      "published_date": "2024-10-18",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-budget",
+      "archive_sha256": "357cda3c8aac9ade2875be537b7f9f3442c931d8ceaa29a8c568c4a3e22d2a99",
+      "archive_path": "data/sources/357cda3c8aac9ade2875be537b7f9f3442c931d8ceaa29a8c568c4a3e22d2a99.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-eb550c1910025743e771b08f",
+      "url": "https://www.cbo.gov/sites/default/files/102nd-congress-1991-1992/reports/91-cbo-002.pdf",
+      "resolved_url": "https://www.cbo.gov/sites/default/files/102nd-congress-1991-1992/reports/91-cbo-002.pdf",
+      "title": "The Economic and Budget Outlook: Fiscal Years 1992-1996",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:56.841563+00:00",
+      "archive_sha256": "cfd3eb96558a1129f345bcb48fe21fe34b0073e9a72ebe210b7f8bde21237af8",
+      "archive_path": "jobs/7af7f77d77bc851c131a0064/cfd3eb96558a1129f345bcb48fe21fe34b0073e9a72ebe210b7f8bde21237af8.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-cc2d76863a726bc18600efd5",
+      "url": "https://www.cbo.gov/sites/default/files/104th-congress-1995-1996/reports/eb1295.pdf",
+      "resolved_url": "https://www.cbo.gov/sites/default/files/104th-congress-1995-1996/reports/eb1295.pdf",
+      "title": "",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:56.841781+00:00",
+      "archive_sha256": "08d75deb3f21d6cc42c703e96ff8abdb0c6e17263910ac85408e9b193add55ba",
+      "archive_path": "jobs/7af7f77d77bc851c131a0064/08d75deb3f21d6cc42c703e96ff8abdb0c6e17263910ac85408e9b193add55ba.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-14633b9d9a2fcc188dde9c1c",
+      "url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-T-AIMD-96-129/html/GAOREPORTS-T-AIMD-96-129.htm",
+      "resolved_url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-T-AIMD-96-129/html/GAOREPORTS-T-AIMD-96-129.htm",
+      "title": "Budget Process: Evolution and Challenges",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:56.841963+00:00",
+      "archive_sha256": "e2f2380d7a0bfad34b1b8fd4b19a5f7d23b4fb57cc969ed8c85160bc63daf0c5",
+      "archive_path": "jobs/7af7f77d77bc851c131a0064/e2f2380d7a0bfad34b1b8fd4b19a5f7d23b4fb57cc969ed8c85160bc63daf0c5.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-dec9bf0a148e9bdeccf2b2a7",
+      "url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-01-991T/html/GAOREPORTS-GAO-01-991T.htm",
+      "resolved_url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-01-991T/html/GAOREPORTS-GAO-01-991T.htm",
+      "title": "Budget Process: Considerations for Updating the Budget Enforcement Act",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:56.842136+00:00",
+      "archive_sha256": "6f40a469e5cbef1d2042c73961568c96064b0ae51efae0d263e3bdcd0814dd89",
+      "archive_path": "jobs/7af7f77d77bc851c131a0064/6f40a469e5cbef1d2042c73961568c96064b0ae51efae0d263e3bdcd0814dd89.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c3c69ab42d15cc45c30698c6",
+      "url": "https://www.cbo.gov/sites/default/files/104th-congress-1995-1996/reports/entirereport_9.pdf",
+      "resolved_url": "https://www.cbo.gov/sites/default/files/104th-congress-1995-1996/reports/entirereport_9.pdf",
+      "title": "",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:07.492812+00:00",
+      "archive_sha256": "5e3ab3054761e6bcb6986f1f720bf7046bf5ec053f7e1397108557a03166d70b",
+      "archive_path": "jobs/7af7f77d77bc851c131a0064/5e3ab3054761e6bcb6986f1f720bf7046bf5ec053f7e1397108557a03166d70b.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-5d5f56c5595a2b6838f24527",
+      "url": "https://www.gao.gov/products/t-afmd-91-8",
+      "resolved_url": "https://www.gao.gov/products/t-afmd-91-8",
+      "title": "The Effects of Budget Enforcement Act Discretionary Spending Limits in Fiscal Years 1994 and 1995",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:07.493010+00:00",
+      "archive_sha256": "1d65f5f4acf211b7e9ca7cd9a0e6a1f322590df3ac597b40547e5dfc182f9ecb",
+      "archive_path": "jobs/7af7f77d77bc851c131a0064/1d65f5f4acf211b7e9ca7cd9a0e6a1f322590df3ac597b40547e5dfc182f9ecb.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ea172df04ed7d6a605678ac7",
+      "url": "https://www.gao.gov/assets/gao-02-794.pdf",
+      "resolved_url": "https://www.gao.gov/assets/gao-02-794.pdf",
+      "title": "GAO-02-794 Budget Issues: Budget Enforcement Compliance Report",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:07.493239+00:00",
+      "archive_sha256": "8b952a73edc00b8b497c80f28e09b4e5e4fee7f2fd643f351e4efbb54140eae0",
+      "archive_path": "jobs/7af7f77d77bc851c131a0064/8b952a73edc00b8b497c80f28e09b4e5e4fee7f2fd643f351e4efbb54140eae0.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-b3f1e74a3c1f2dd40d2d0df9",
+      "url": "https://www.gao.gov/assets/afmd-93-38.pdf",
+      "resolved_url": "https://www.gao.gov/assets/afmd-93-38.pdf",
+      "title": "AFMD-93-38 Budget Issues: Compliance With the Budget Enforcement Act of 1990",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:07.493435+00:00",
+      "archive_sha256": "f281cf0f296ac8f20105c5e3c6e515126a285c19d24f34cbfe063ca19dc99d9b",
+      "archive_path": "jobs/7af7f77d77bc851c131a0064/f281cf0f296ac8f20105c5e3c6e515126a285c19d24f34cbfe063ca19dc99d9b.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "site:cbo.gov federal budget deficits government shutdown history 1990s 2000s projections",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "site:govinfo.gov budget enforcement act deficit reduction 1990s federal government reform coordination",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "site:cbo.gov 1995 1996 budget outlook deficit continuing projections federal spending",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "site:gao.gov 1990s budget enforcement act deficit reduction success coordination federal budget process",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少1991年后约十年内关于美国人意识形态/情感层面是否持续抗拒“全面协调”的直接证据，无法验证原书特定冲突的持续性与作者归因机制；财政预算材料只能作为不同口径的背景，不能据此判定原预测。",
+  "source_statuses": [
+    {
+      "url": "https://www.cbo.gov/sites/default/files/102nd-congress-1991-1992/reports/91-cbo-002.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.cbo.gov/sites/default/files/104th-congress-1995-1996/reports/eb1295.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-T-AIMD-96-129/html/GAOREPORTS-T-AIMD-96-129.htm",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/GAOREPORTS-GAO-01-991T/html/GAOREPORTS-GAO-01-991T.htm",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.cbo.gov/sites/default/files/104th-congress-1995-1996/reports/entirereport_9.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.gao.gov/products/t-afmd-91-8",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.gao.gov/assets/gao-02-794.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.gao.gov/assets/afmd-93-38.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "c96c778515b3c269b8f876bfd8f4c35a1a6a89a17b0b0f3e26668ea88c3e4db0"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "85a18e2c5cd6217417695f9cb61de1fb",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "08e33a2329c1b700ee799b9e3676a7e3",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "03615d818e1b4e094bd691b0cd3560e0ef5590ca53af773daef1821d4f922817"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "66927ffa0e656fcd09e16ec2f67513e3",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "34f011f3f596aa947d21ad7c99a70f02c82a6614c88b2059a640697d7cd638dd"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f611c7be2a876674d27c661d99b95ac2",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "cffd323ba57482e5ed91950e9c114ba9",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "752234f2a90728401570ef7c3bc02a6bbe61d5e4744d9b6452961fedbc0e1ccc"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "2dcfebecb4359f6b0943df2112bedb5f",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "7d4c3d7fd29aa8d001b90f235bb3e783a482e1dc4f09f7a45add35b498b40fe8"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "46aae7c7ef585b6cf029b9008f39e027ee806466abd4c897c99c7f498d70860a"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "3f7e164676fcbd1088e5b3871f5b10ae9575f7bf03763c30a0669e5dfa4c47a0"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "d4fe6b16c844bc4620d9ac85d740b3d3e5ce619b4ca9319979afac07088b3cdf"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000049051-000049136",
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "原书对象是“美国人在意识形态和情感上不能接受全面协调”与“社会发展提出全面协调要求”之间的冲突，并判断这一挑战持续多年；建议的scope却把对象替换为联邦财政/预算协调困难（赤字、预算僵局、拨款冲突）。财政预算困难不是原书“全面协调”所指的社会全面协调，也不是意识形态/情感抗拒这一特定对象，属于广义相关现象替代原文特定集合。",
+          "source_quote": "社会的\n发展提出了全面协调的要求、科学技术也提供了必要的条件，但美国人在意识形态\n和情感上不能接受全面协调。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "所引CBO/GAO材料只支持联邦赤字、预算执行法约束和年末拨款僵局等财政程序问题，没有任何材料直接观察“美国人在意识形态和情感上不能接受全面协调”是否持续多年。建议自己也承认文化/意识形态根源不单独验证，却仍以财政预算材料作为主要支持并给出“部分符合”，证据范围不足以支撑该声明。",
+          "source_quote": "自由主义的回忆仍然笼罩着人们的心灵。这个挑战，\n还将持续多年。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议将“财政与预算协调困难持续存在”判为与原预测“方向一致”，但原预测的核心是意识形态/情感抗拒全面协调的挑战持续多年，财政预算困难只是不同口径的替代指标。以替代口径的持续现象判“部分符合”，既未指出原预测后果中哪些具体部分实现、哪些未实现，也把不同对象的材料当作同一预测的兑现。",
+          "source_quote": "以1991年前后为起点，观察约十年（1991-2001）内美国联邦财政与预算协调困难是否持续：赤字与预算僵局、预算执行法约束与年末拨款冲突等制度性协调难题。文化/意识形态根源不单独验证。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需将观察对象改回原书所指的“美国人在意识形态/情感上抗拒全面协调”这一特定冲突，并取得1991年后约十年内该冲突是否持续的对应证据；若只能取得财政预算协调困难材料，应保留为不同口径的未定，而不能据此判部分符合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000049051-000049136",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000049051-000049136",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以1991年前后为起点，观察约十年（1991-2001）内美国联邦财政与预算协调困难是否持续：赤字与预算僵局、预算执行法约束与年末拨款冲突等制度性协调难题。文化/意识形态根源不单独验证。",
+      "reason": "CBO 1991年预测赤字接近3000亿美元并强调临时因素，1995年赤字虽降至1610亿美元但预测1996年后将再度上升，GAO 1996年指出预算过程面临持续挑战，2001年GAO仍讨论预算执行法到期与年末“train wreck”僵局，显示财政与预算协调困难在观察窗口内持续存在，方向与“挑战还将持续多年”一致。",
+      "limitation": "这些材料只证明财政/预算协调困难持续，不能直接证明作者归因的“意识形态与情感抗拒全面协调”这一因果机制；且观察窗口仅约十年，无法验证“多年”的最终长度。",
+      "evidence_ids": [
+        "ev-eb550c1910025743e771b08f",
+        "ev-c3c69ab42d15cc45c30698c6",
+        "ev-14633b9d9a2fcc188dde9c1c",
+        "ev-dec9bf0a148e9bdeccf2b2a7",
+        "ev-5d5f56c5595a2b6838f24527"
+      ],
+      "method": "由治理需求与传统价值间矛盾推断制度转型持续困难",
+      "method_basis": "inferred",
+      "observation_end": "2001-07-19",
+      "future_time_text": "还将持续多年",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-eb550c1910025743e771b08f",
+          "relation": "support",
+          "quote": "The federal deficit is projected to approach $300 billion in both 1991 and 1992",
+          "publication_date": "1991-01-30",
+          "observation_end": "1991-01-30",
+          "limitation": "这是1991年初的预测值而非已实现结果，且赤字受衰退与储贷机构处置等临时因素影响，不能单独证明协调困难持续。"
+        },
+        {
+          "evidence_id": "ev-c3c69ab42d15cc45c30698c6",
+          "relation": "support",
+          "quote": "Deficits will begin rising steadily in 1996, however, if current policies remain unchanged.",
+          "publication_date": null,
+          "observation_end": "1995-08-31",
+          "limitation": "为1995年8月的预测性表述，非已实现结果；仅反映财政压力预期，不涉及意识形态根源。"
+        },
+        {
+          "evidence_id": "ev-14633b9d9a2fcc188dde9c1c",
+          "relation": "support",
+          "quote": "GAO discussed the evolution of the budget process and challenges to changing the budget process.",
+          "publication_date": "1996-07-11",
+          "observation_end": "1996-07-11",
+          "limitation": "概括性表述，说明预算过程改革面临挑战，但未量化协调困难程度，也不涉及文化/情感因素。"
+        },
+        {
+          "evidence_id": "ev-dec9bf0a148e9bdeccf2b2a7",
+          "relation": "support",
+          "quote": "the budget process should be designed to avoid what has been described as the year-end \"train wreck\".",
+          "publication_date": "2001-07-19",
+          "observation_end": "2001-07-19",
+          "limitation": "2001年材料显示年末拨款僵局问题仍存在，但属制度程序层面，不能直接对应作者所说的意识形态抗拒。"
+        },
+        {
+          "evidence_id": "ev-5d5f56c5595a2b6838f24527",
+          "relation": "boundary",
+          "quote": "full compliance with the act's provisions will not necessarily reduce the overall deficit as much as anticipated",
+          "publication_date": "1991-07-16",
+          "observation_end": "1991-07-16",
+          "limitation": "说明预算执行法约束效果有限，属协调困难的表现之一，但为1991年当年评估，观察期短。"
+        }
+      ],
+      "remaining_gap": "缺少1991-2001年间关于美国人意识形态/情感层面是否持续抗拒“全面协调”的直接证据，无法验证作者归因机制；也缺少对“多年”具体终点的界定。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000049051-000049136",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "原书判断对象为：美国社会发展提出的“全面协调”要求，与美国人意识形态、情感上不能接受全面协调之间的冲突“还将持续多年”。回顾性观察口径应为1991年后约十年内，是否有直接材料显示美国人在意识形态/情感层面持续抗拒全面协调；联邦赤字、预算僵局、预算执行法约束等财政程序指标属于不同口径，仅作背景，不替代原对象。",
+      "reason": "现有CBO/GAO材料只涉及联邦赤字、预算执行法约束和年末拨款僵局等财政程序问题，没有直接观察“美国人在意识形态和情感上不能接受全面协调”这一特定冲突是否持续多年。以财政预算困难替代原书对象会改变命题，故不能据此判部分符合或趋势符合。",
+      "limitation": "关键修订：撤回以联邦财政/预算协调困难替代原书“意识形态/情感抗拒全面协调”的判定，改判暂无法判断。财政预算材料仅作背景，不能证明作者归因机制或原冲突的持续长度。",
+      "evidence_ids": [
+        "ev-eb550c1910025743e771b08f",
+        "ev-c3c69ab42d15cc45c30698c6",
+        "ev-14633b9d9a2fcc188dde9c1c",
+        "ev-dec9bf0a148e9bdeccf2b2a7",
+        "ev-5d5f56c5595a2b6838f24527"
+      ],
+      "method": "由治理需求与传统价值间矛盾推断制度转型持续困难",
+      "method_basis": "inferred",
+      "observation_end": null,
+      "future_time_text": "还将持续多年",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-eb550c1910025743e771b08f",
+          "relation": "background",
+          "quote": "The federal deficit is projected to approach $300 billion in both 1991 and 1992",
+          "publication_date": "1991-01-30",
+          "observation_end": "1991-01-30",
+          "limitation": "这是1991年初的赤字预测值而非已实现结果，且属财政口径，不涉及美国人对“全面协调”的意识形态/情感态度。"
+        },
+        {
+          "evidence_id": "ev-c3c69ab42d15cc45c30698c6",
+          "relation": "background",
+          "quote": "Deficits will begin rising steadily in 1996, however, if current policies remain unchanged.",
+          "publication_date": null,
+          "observation_end": "1995-08-31",
+          "limitation": "为1995年8月的预测性表述，非已实现结果；仅反映财政压力预期，不能替代原书意识形态/情感冲突对象。"
+        },
+        {
+          "evidence_id": "ev-14633b9d9a2fcc188dde9c1c",
+          "relation": "background",
+          "quote": "GAO discussed the evolution of the budget process and challenges to changing the budget process.",
+          "publication_date": "1996-07-11",
+          "observation_end": "1996-07-11",
+          "limitation": "概括性表述，说明预算过程改革面临挑战，属制度程序层面，不涉及文化/情感因素。"
+        },
+        {
+          "evidence_id": "ev-dec9bf0a148e9bdeccf2b2a7",
+          "relation": "background",
+          "quote": "the budget process should be designed to avoid what has been described as the year-end \"train wreck\".",
+          "publication_date": "2001-07-19",
+          "observation_end": "2001-07-19",
+          "limitation": "2001年材料显示年末拨款僵局问题仍存在，但属制度程序层面，不能直接对应作者所说的意识形态抗拒。"
+        },
+        {
+          "evidence_id": "ev-5d5f56c5595a2b6838f24527",
+          "relation": "background",
+          "quote": "full compliance with the act's provisions will not necessarily reduce the overall deficit as much as anticipated",
+          "publication_date": "1991-07-16",
+          "observation_end": "1991-07-16",
+          "limitation": "说明预算执行法约束效果有限，属财政协调困难的表现之一，为1991年当年评估，观察期短且不涉及原书对象。"
+        }
+      ],
+      "remaining_gap": "缺少1991年后约十年内关于美国人意识形态/情感层面是否持续抗拒“全面协调”的直接证据，无法验证原书特定冲突的持续性与作者归因机制；财政预算材料只能作为不同口径的背景，不能据此判定原预测。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象：王沪宁1991年前后关于美国“全面协调需求”与美国人意识形态/情感抗拒之间冲突“还将持续多年”的判断。可观察口径：1991年后至少约十年内，美国联邦政府职能扩张/收缩、财政与福利协调、政府停摆或预算僵局等制度性协调困难是否持续出现；反证包括协调机制显著改善、政府职能与财政争议长期平息或冲突明确终结。文化/意识形态根源不单独验证，实例不证明因果机制。",
+  "elapsed_seconds": 45.065,
+  "completed_at": "2026-11-09T07:59:30.573127+00:00"
+}

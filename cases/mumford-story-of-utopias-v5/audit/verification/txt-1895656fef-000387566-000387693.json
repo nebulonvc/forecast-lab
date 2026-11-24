@@ -1,0 +1,86 @@
+{
+  "claim_id": "txt-1895656fef-000387566-000387693",
+  "plan": {
+    "object": "我们的文明前景，对照施本格勒",
+    "conditions": [
+      "Unless we can weave a new pattern for our lives"
+    ],
+    "quantifier": "almost as dismal",
+    "result": "若织不出新的生活格局，前景几乎和施本格勒所见一样黯淡",
+    "time_window": "1923年到截止日",
+    "counterevidence_needed": "新格局没有织成，但文明前景并不是施本格勒式的没落"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "support_query": "Spengler Decline of the West confirmed no new pattern Western civilization",
+        "counter_query": "postwar Western Europe built a new social pattern contrary to Spengler decline",
+        "saved_at_utc": "2026-11-20T11:11:02Z",
+        "tool_call_id": null
+      }
+    ],
+    "adaptive_rounds": 1,
+    "stop_reason": "补看芒福德自己的区域设想是否实现。Counterpunch 写没有实现。Conway 写战后西欧是稳定的议会民主，不是施本格勒式的终局。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [
+      "ev-counterpunch-2022",
+      "ev-conway-2002"
+    ],
+    "scope": "条件是为生活织出新格局，不能收成某一种城市方案。结果是文明前景几乎像施本格勒所见那样黯淡。",
+    "reason": "Counterpunch 写霍华德和芒福德的社会城市没有实现。这把新格局收成一种城市方案，条件因此不稳。Conway 写1940年代末到1960年代的西欧议会民主整齐、受控、有点乏味。那是政体描述，不是施本格勒式文明没落的同对象测量。almost as dismal 没有阈值。",
+    "limitation": "两页保留，不作这句的反证。不把有点乏味的稳定民主写成没落的反面。",
+    "method": "条件未稳、结果对象不对时，不判错误。",
+    "method_basis": "explicit",
+    "remaining_gap": "缺未收窄的新格局是否织成，以及文明前景是否几乎像施本格勒所见那样黯淡。"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "城市方案和乏味民主都不是这句的对象。条件被收窄，结果也没有对齐。"
+  },
+  "history": [
+    {
+      "stage": "r1",
+      "assess": {
+        "inclusion": "forecast",
+        "verdict": "错误",
+        "basis": "conditional",
+        "trend_aligned": false,
+        "condition_state": "satisfied",
+        "future_time_text": "",
+        "observation_end": "1999-12-31",
+        "evidence_ids": [
+          "ev-counterpunch-2022",
+          "ev-conway-2002"
+        ],
+        "scope": "新格局按同章的优托邦重建理解，不把任何福利国家都算成这句的新格局。条件是这个格局没有织成。结果是前景几乎像施本格勒所见那样黯淡。",
+        "reason": "2022年4月26日的文章写，霍华德和芒福德的社会城市设想没有实现。条件成立。Conway 2002年的文章从二十世纪末回看1940年代末到1960年代的西欧，写政治图景整齐、受控、甚至有点乏味，议会民主成为标准。这不是施本格勒那种文明冬日。",
+        "limitation": "almost as dismal 没有数字。这里用的是有没有走成施本格勒的终局，不是自行规定一个黯淡百分比。福利国家没有被当成这句的新格局。",
+        "method": "先看优托邦新格局有没有织成，再看前景是不是施本格勒式的没落。",
+        "method_basis": "explicit"
+      },
+      "semantic_review": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass",
+        "note": "条件成立，前景却是稳定的议会政治，不是施本格勒的没落。"
+      }
+    }
+  ]
+}

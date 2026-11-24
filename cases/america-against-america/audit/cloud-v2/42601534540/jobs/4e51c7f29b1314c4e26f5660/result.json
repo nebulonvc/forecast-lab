@@ -1,0 +1,1364 @@
+{
+  "claim_id": "txt-1c4066fc0c-000248386-000248451",
+  "version": "search-verifier-v2",
+  "input_sha256": "7a7663eb95668fe7442303576918b49bb505ea03a0c420480529222aa2b419b6",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000248386-000248451",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "原文为布鲁姆（经王沪宁概述）的复合判断：前提A“西方传统价值体系衰落”并导致个人决策缺乏价值引导、大学不提供价值体系，后果B“最终冲击民主制度”。回顾性操作化：A以美国社会/大学是否出现传统价值体系引导力衰落的可测迹象衡量；B以1991年后至2026-11-09前美国民主制度是否出现可测制度性冲击（V-Dem自由民主指数、Freedom House评分、选举与权力交接事件）衡量。不要求制度终结，也不要求验证文化因果。",
+    "reason": "后果B有直接证据：V-Dem美国自由民主指数2024年0.75降至2025年0.57，Freedom House由84降至81，2021年国会山事件记录了对权力交接的挑战，显示民主制度受到可测冲击。但前提A“西方传统价值体系衰落”及“大学不提供价值体系”在材料中没有对应观察指标，无法确认该前提是否成立，故不能把B的指标下降直接当作A→B复合判断的成立。",
+    "limitation": "关键缺口是前提A缺乏可操作证据，现有材料只覆盖后果B的指标层面；且B的指标下降不等于原文“最终冲击民主制度”的终局结果，文化价值体系与制度冲击之间的因果机制亦未获证据。修订说明：原建议把对象替换为B的指标下降并判趋势符合，未核对前提A，现按复合命题保留未定。",
+    "evidence_ids": [
+      "prior-c998ce81090d9f5e9a56",
+      "prior-06d6377e6cdd97e98fc6",
+      "prior-fcb79837fded982860ac",
+      "prior-887eea4121ccaae80fa3",
+      "ev-a450d77a17732c002cb8b70b",
+      "ev-a9ae27c19819055f68488b1a",
+      "ev-8e4afae092de072093dc8a43",
+      "ev-cf58d6aafd2e4f04857a84f6",
+      "ev-99d48566708463ed550d021b",
+      "ev-3fb3c39aa34e0e6d1921048a",
+      "ev-2ccf2d7fcdfa16b5ce886060"
+    ],
+    "method": "从价值体系与自主判断联系推演民主制度后果",
+    "method_basis": "explicit",
+    "observation_end": "2025-12-31",
+    "future_time_text": "最终",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-c998ce81090d9f5e9a56",
+        "relation": "support",
+        "quote": "V-Dem v16：美国自由民主指数2024为0.75、2025为0.57；2025的68%可信区间0.51—0.62。",
+        "publication_date": null,
+        "observation_end": "2025-12-31",
+        "limitation": "仅覆盖后果B的指数层面，未涉及前提A价值体系衰落；来源无发表日期元数据。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "prior-06d6377e6cdd97e98fc6",
+        "relation": "support",
+        "quote": "V-Dem2026报告给出美国1955—2025历史曲线、2023自由民主指数0.79与2025的0.57，并讨论制度约束和权利环境；同时区分多种民主指标。",
+        "publication_date": "2026",
+        "observation_end": "2025-12-31",
+        "limitation": "出版年为2026，观察数据截至2025；不同民主指标口径不一，且不涉及价值体系前提。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "prior-fcb79837fded982860ac",
+        "relation": "support",
+        "quote": "Freedom House2026美国81/100，页面同版列上年84/100，仍属Free；记录立法僵局、行政权限扩张、表达环境问题，也记录2024选举产生2025政府及大量司法挑战。",
+        "publication_date": null,
+        "observation_end": "2025-12-31",
+        "limitation": "美国仍属Free，说明制度未终结；仅评分下降，不涉及前提A。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "prior-887eea4121ccaae80fa3",
+        "relation": "support",
+        "quote": "众议院调查委员会报告记录特朗普拒绝承认2020合法选举结果，并企图阻止权力交接；国会大厦遇袭。",
+        "publication_date": "2022-12-22",
+        "observation_end": "2022-12-22",
+        "limitation": "单一事件，不能代表长期制度冲击全貌，也不涉及价值体系前提。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-a450d77a17732c002cb8b70b",
+        "relation": "support",
+        "quote": "Democracy in the USA is deteriorating at unprecedented speed, and media and journalists are increasingly targeted across the world.",
+        "publication_date": "2026-03-17",
+        "observation_end": "2025-12-31",
+        "limitation": "新闻稿为机构立场表述，非独立因果证据；候选来源尚未语义复核，且不涉及前提A。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-a9ae27c19819055f68488b1a",
+        "relation": "support",
+        "quote": "The health of America’s democracy declined in 2025, according to new evaluations from organizations that have long tracked how well democracies around the world are working.",
+        "publication_date": "2026-04-15",
+        "observation_end": "2025-12-31",
+        "limitation": "汇总多家评分，仍属指标层面，未验证文化因果，也不涉及前提A。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-8e4afae092de072093dc8a43",
+        "relation": "support",
+        "quote": "Among countries rated Free, the United States, Bulgaria, and Italy have experienced the year’s largest declines.",
+        "publication_date": null,
+        "observation_end": "2025-12-31",
+        "limitation": "来源无发表日期元数据，观察期为2025年；美国仍属Free，不涉及前提A。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-cf58d6aafd2e4f04857a84f6",
+        "relation": "counter",
+        "quote": "Broadly, the reports’ findings converge on a similar picture: that American democracy has been damaged in the first year of President Donald Trump’s second term, perhaps severely, but remains alive and functioning.",
+        "publication_date": "2026-04-13",
+        "observation_end": "2025-12-31",
+        "limitation": "评论文章指出制度仍运作，构成对“制度终结”终局的反证，但不否定已发生的冲击，也不涉及前提A。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-99d48566708463ed550d021b",
+        "relation": "background",
+        "quote": "The latest version of the V-Dem dataset includes scores for 179 countries for the year 2025. These scores report the situation in a country on December 31.",
+        "publication_date": null,
+        "observation_end": "2025-12-31",
+        "limitation": "说明评分时点，未直接给出美国数值；来源无发表日期。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-3fb3c39aa34e0e6d1921048a",
+        "relation": "counter",
+        "quote": "The report concludes that while political opposition to Trump’s autocratic initiatives has intensified, the prospects for a long-term recovery of American democracy are limited.",
+        "publication_date": "2026-08-15",
+        "observation_end": "2026-08-15",
+        "limitation": "结论为长期前景评估，非已实现终局；同时承认反对力量增强，不涉及前提A。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-2ccf2d7fcdfa16b5ce886060",
+        "relation": "counter",
+        "quote": "Democratic erosion does not necessarily entail an irreversible drift towards authoritarianism, however.",
+        "publication_date": "2026-11-03",
+        "observation_end": "2025-12-31",
+        "limitation": "评论文章强调制度韧性，构成对终局冲击的反证，但不否认已发生的侵蚀，也不涉及前提A。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "前提A“西方传统价值体系衰落”及“大学不提供价值体系”在材料中没有对应观察指标，无法确认其是否成立；后果B的指标下降只能说明制度受冲击，不能替代A的确认，也不能证明A→B的因果链。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000248386-000248451",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象为布鲁姆（经王沪宁概述）关于西方传统价值体系衰落最终冲击民主制度的判断；操作化为1991年后至2026-11-09前美国民主制度是否出现可测的制度性冲击（V-Dem自由民主指数、Freedom House评分、选举与权力交接事件），不要求制度终结或验证文化因果。",
+    "reason": "V-Dem美国自由民主指数由2024年0.75降至2025年0.57，Freedom House由84降至81，2021年国会山事件记录了对权力交接的挑战，均显示美国民主制度受到可测冲击，方向与原文判断一致。但原文的最终终点（民主制度终结）远未出现，且价值体系衰落导致制度冲击的因果链未被验证，故仅判部分符合、趋势符合。",
+    "limitation": "指标下降与制度受冲击不等于原文所称“最终冲击民主制度”的终局结果；文化价值体系与民主制度之间的因果机制未获证据支持，仅评价结果方向。",
+    "evidence_ids": [
+      "prior-c998ce81090d9f5e9a56",
+      "prior-06d6377e6cdd97e98fc6",
+      "prior-fcb79837fded982860ac",
+      "prior-887eea4121ccaae80fa3",
+      "ev-a450d77a17732c002cb8b70b",
+      "ev-a9ae27c19819055f68488b1a",
+      "ev-8e4afae092de072093dc8a43",
+      "ev-cf58d6aafd2e4f04857a84f6",
+      "ev-99d48566708463ed550d021b",
+      "ev-3fb3c39aa34e0e6d1921048a",
+      "ev-2ccf2d7fcdfa16b5ce886060"
+    ],
+    "method": "从价值体系与自主判断联系推演民主制度后果",
+    "method_basis": "explicit",
+    "observation_end": "2025-12-31",
+    "future_time_text": "最终",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-c998ce81090d9f5e9a56",
+        "relation": "support",
+        "quote": "V-Dem v16：美国自由民主指数2024为0.75、2025为0.57；2025的68%可信区间0.51—0.62。",
+        "publication_date": null,
+        "observation_end": "2025-12-31",
+        "limitation": "指数下降为综合评分，不能直接证明价值体系衰落导致制度冲击的因果。"
+      },
+      {
+        "evidence_id": "prior-06d6377e6cdd97e98fc6",
+        "relation": "support",
+        "quote": "V-Dem2026报告给出美国1955—2025历史曲线、2023自由民主指数0.79与2025的0.57，并讨论制度约束和权利环境；同时区分多种民主指标。",
+        "publication_date": "2026",
+        "observation_end": "2025-12-31",
+        "limitation": "报告出版年为2026，观察数据截至2025；不同民主指标口径不一。"
+      },
+      {
+        "evidence_id": "prior-fcb79837fded982860ac",
+        "relation": "support",
+        "quote": "Freedom House2026美国81/100，页面同版列上年84/100，仍属Free；记录立法僵局、行政权限扩张、表达环境问题，也记录2024选举产生2025政府及大量司法挑战。",
+        "publication_date": null,
+        "observation_end": "2025-12-31",
+        "limitation": "美国仍属Free，说明制度未终结，仅评分下降。"
+      },
+      {
+        "evidence_id": "prior-887eea4121ccaae80fa3",
+        "relation": "support",
+        "quote": "众议院调查委员会报告记录特朗普拒绝承认2020合法选举结果，并企图阻止权力交接；国会大厦遇袭。",
+        "publication_date": "2022-12-22",
+        "observation_end": "2022-12-22",
+        "limitation": "单一事件，不能代表长期制度冲击全貌。"
+      },
+      {
+        "evidence_id": "ev-a450d77a17732c002cb8b70b",
+        "relation": "support",
+        "quote": "Democracy in the USA is deteriorating at unprecedented speed, and media and journalists are increasingly targeted across the world.",
+        "publication_date": "2026-03-17",
+        "observation_end": "2025-12-31",
+        "limitation": "新闻稿为机构立场表述，非独立因果证据；候选来源尚未语义复核。"
+      },
+      {
+        "evidence_id": "ev-a9ae27c19819055f68488b1a",
+        "relation": "support",
+        "quote": "The health of America’s democracy declined in 2025, according to new evaluations from organizations that have long tracked how well democracies around the world are working.",
+        "publication_date": "2026-04-15",
+        "observation_end": "2025-12-31",
+        "limitation": "汇总多家评分，仍属指标层面，未验证文化因果。"
+      },
+      {
+        "evidence_id": "ev-8e4afae092de072093dc8a43",
+        "relation": "support",
+        "quote": "Among countries rated Free, the United States, Bulgaria, and Italy have experienced the year’s largest declines.",
+        "publication_date": null,
+        "observation_end": "2025-12-31",
+        "limitation": "来源无发表日期元数据，观察期为2025年；美国仍属Free。"
+      },
+      {
+        "evidence_id": "ev-cf58d6aafd2e4f04857a84f6",
+        "relation": "counter",
+        "quote": "Broadly, the reports’ findings converge on a similar picture: that American democracy has been damaged in the first year of President Donald Trump’s second term, perhaps severely, but remains alive and functioning.",
+        "publication_date": "2026-04-13",
+        "observation_end": "2025-12-31",
+        "limitation": "评论文章指出制度仍运作，构成对“制度终结”终局的反证，但不否定已发生的冲击。"
+      },
+      {
+        "evidence_id": "ev-99d48566708463ed550d021b",
+        "relation": "background",
+        "quote": "The latest version of the V-Dem dataset includes scores for 179 countries for the year 2025. These scores report the situation in a country on December 31.",
+        "publication_date": null,
+        "observation_end": "2025-12-31",
+        "limitation": "说明评分时点，未直接给出美国数值；来源无发表日期。"
+      },
+      {
+        "evidence_id": "ev-3fb3c39aa34e0e6d1921048a",
+        "relation": "counter",
+        "quote": "The report concludes that while political opposition to Trump’s autocratic initiatives has intensified, the prospects for a long-term recovery of American democracy are limited.",
+        "publication_date": "2026-08-15",
+        "observation_end": "2026-08-15",
+        "limitation": "结论为长期前景评估，非已实现终局；同时承认反对力量增强。"
+      },
+      {
+        "evidence_id": "ev-2ccf2d7fcdfa16b5ce886060",
+        "relation": "counter",
+        "quote": "Democratic erosion does not necessarily entail an irreversible drift towards authoritarianism, however.",
+        "publication_date": "2026-11-03",
+        "observation_end": "2025-12-31",
+        "limitation": "评论文章强调制度韧性，构成对终局冲击的反证，但不否认已发生的侵蚀。"
+      }
+    ],
+    "remaining_gap": "原文“最终冲击民主制度”的终局结果尚未出现，价值体系衰落与制度冲击之间的因果机制无直接证据；现有材料只能支持指标层面的趋势符合。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-c998ce81090d9f5e9a56",
+      "url": "https://www.v-dem.net/release-statement-for-v16-of-the-v-dem-dataset/",
+      "title": "ev-r2-l3-vdem-release",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-vdem-release",
+      "archive_sha256": "550fb928ed49a7c1e2fdd8b5af870a1afc2c39d54824db0ce0996418ddc152ae",
+      "archive_path": "data/sources/r2-l3-vdem-release.html",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-06d6377e6cdd97e98fc6",
+      "url": "https://www.v-dem.net/documents/75/V-Dem_Institute_Democracy_Report_2026_lowres.pdf",
+      "title": "ev-r2-l3-vdem-report",
+      "published_date": "2026",
+      "publication_date_precision": "year",
+      "publication_date_range": {
+        "earliest": "2026-01-01",
+        "latest": "2026-12-31"
+      },
+      "date_status": "overlaps_cutoff",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-vdem-report",
+      "archive_sha256": "ac69482da0b1ce321435128cdecf311aba03703c6062f205581a76a2edfadc21",
+      "archive_path": "data/sources/r2-l3-vdem-report.pdf",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-fcb79837fded982860ac",
+      "url": "https://freedomhouse.org/country/united-states/freedom-world/2026",
+      "title": "ev-r2-l3-freedomhouse",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-freedomhouse",
+      "archive_sha256": "d560aa0aec5fb7f6e18fdf531245024003bca1bcf12b48291f35b1e0d85a84ce",
+      "archive_path": "data/sources/r2-l3-open-care-democracy.json",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-887eea4121ccaae80fa3",
+      "url": "https://www.govinfo.gov/content/pkg/GPO-J6-REPORT/html-submitted/index.html",
+      "title": "ev-jan6",
+      "published_date": "2022-12-22",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2022-12-22",
+        "latest": "2022-12-22"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-jan6",
+      "archive_sha256": "99340c674c6c84701d1e92df8613deece20d66ac62c29ce126634ed77b1b8636",
+      "archive_path": "data/sources/99340c674c6c84701d1e92df8613deece20d66ac62c29ce126634ed77b1b8636.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a450d77a17732c002cb8b70b",
+      "url": "https://www.v-dem.net/news/press-release-democratic-backsliding-reaches-western-democracies-with-us-decline-unprecedented/",
+      "resolved_url": "https://www.v-dem.net/news/press-release-democratic-backsliding-reaches-western-democracies-with-us-decline-unprecedented/",
+      "title": "Democratic Backsliding Reaches Western Democracies, with U.S. Decline “Unprecedented” – V-Dem",
+      "published_date": "2026-03-17",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-03-17",
+        "latest": "2026-03-17"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:23.734772+00:00",
+      "archive_sha256": "68c2b6c26a5d523f06d93b18dc3d19299125976219a563d47d9553f50aa9618a",
+      "archive_path": "jobs/4e51c7f29b1314c4e26f5660/68c2b6c26a5d523f06d93b18dc3d19299125976219a563d47d9553f50aa9618a.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a9ae27c19819055f68488b1a",
+      "url": "https://www.pewresearch.org/short-reads/2026/04/15/multiple-indicators-show-a-decline-in-the-health-of-americas-democracy-in-2025/",
+      "resolved_url": "https://www.pewresearch.org/short-reads/2026/04/15/multiple-indicators-show-a-decline-in-the-health-of-americas-democracy-in-2025/",
+      "title": "Health of US democracy in decline, based on multiple evaluations | Pew Research Center",
+      "published_date": "2026-04-15",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-04-15",
+        "latest": "2026-04-15"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:23.734931+00:00",
+      "archive_sha256": "5641b3f62d7c7f86946b302de8f99f22e323c470aaf3fde25e9556280101eefe",
+      "archive_path": "jobs/4e51c7f29b1314c4e26f5660/5641b3f62d7c7f86946b302de8f99f22e323c470aaf3fde25e9556280101eefe.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-8e4afae092de072093dc8a43",
+      "url": "https://freedomhouse.org/report/freedom-world/2026/growing-shadow-autocracy",
+      "resolved_url": "https://freedomhouse.org/report/freedom-world/2026/growing-shadow-autocracy",
+      "title": "The Growing Shadow of Autocracy | Freedom House",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:23.735031+00:00",
+      "archive_sha256": "3301cc6a7ea03ac76446c273c94240b505e24605b06bcc1a8f91b285e0f74c11",
+      "archive_path": "jobs/4e51c7f29b1314c4e26f5660/3301cc6a7ea03ac76446c273c94240b505e24605b06bcc1a8f91b285e0f74c11.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-cf58d6aafd2e4f04857a84f6",
+      "url": "https://www.vox.com/politics/485278/democracy-reports-america-trump-2025",
+      "resolved_url": "https://www.vox.com/politics/485278/democracy-reports-america-trump-2025",
+      "title": "New data: Trump’s attack on US democracy may be stalling out | Vox",
+      "published_date": "2026-04-13",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-04-13",
+        "latest": "2026-04-13"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:23.735124+00:00",
+      "archive_sha256": "7bbb13138c112292f3e4ff7ea04f068686ea140d9ca8bcdf81bbfbd91c1ee8f8",
+      "archive_path": "jobs/4e51c7f29b1314c4e26f5660/7bbb13138c112292f3e4ff7ea04f068686ea140d9ca8bcdf81bbfbd91c1ee8f8.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-99d48566708463ed550d021b",
+      "url": "https://v-dem.net/release-statement-for-v16-of-the-v-dem-dataset/",
+      "resolved_url": "https://v-dem.net/release-statement-for-v16-of-the-v-dem-dataset/",
+      "title": "Release statement for v.16 of the V-Dem dataset – V-Dem",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:33.400997+00:00",
+      "archive_sha256": "df57402c60cd86f53bd4df1e9e8130e29fb37a9adbc78e66b9ffbaa391c7e751",
+      "archive_path": "jobs/4e51c7f29b1314c4e26f5660/df57402c60cd86f53bd4df1e9e8130e29fb37a9adbc78e66b9ffbaa391c7e751.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-3fb3c39aa34e0e6d1921048a",
+      "url": "https://toda.org/publications/policy-briefs-and-reports/report-313-full-text/",
+      "resolved_url": "https://toda.org/publications/policy-briefs-and-reports/report-313-full-text/",
+      "title": "Democratic Resilience in the United States in the Second Trump Presidency | Toda Peace Institute",
+      "published_date": "2026-08-15",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-08-15",
+        "latest": "2026-08-15"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:33.401146+00:00",
+      "archive_sha256": "b4c804a86af4edd04220275d6539096486602417aa8078f75e7828ec2b83cb8a",
+      "archive_path": "jobs/4e51c7f29b1314c4e26f5660/b4c804a86af4edd04220275d6539096486602417aa8078f75e7828ec2b83cb8a.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-2ccf2d7fcdfa16b5ce886060",
+      "url": "https://www.realinstitutoelcano.org/en/commentaries/mid-term-in-the-us-seven-reasons-for-being-moderately-optimistic-about-the-future-of-american-democracy/",
+      "resolved_url": "https://www.realinstitutoelcano.org/en/commentaries/mid-term-in-the-us-seven-reasons-for-being-moderately-optimistic-about-the-future-of-american-democracy/",
+      "title": "Mid-term in the United States: seven reasons for being (moderately) optimistic about the future of American democracy",
+      "published_date": "2026-11-03",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-11-03",
+        "latest": "2026-11-03"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:33.401245+00:00",
+      "archive_sha256": "50c64b08b117e367c9d6964c5020c9d9ad4c71ba9ea22ab5860f3d87cd777499",
+      "archive_path": "jobs/4e51c7f29b1314c4e26f5660/50c64b08b117e367c9d6964c5020c9d9ad4c71ba9ea22ab5860f3d87cd777499.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "V-Dem United States liberal democracy index decline 2024 2025 dataset",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "United States democracy resilience democratic backsliding reversal Freedom House 2025 2026 score stable",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "V-Dem United States liberal democracy index 2025 decline 24 percent world rank 51",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "United States democracy resilience 2025 2026 courts checks and balances prevented authoritarian consolidation",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-8e4afae092de072093dc8a43",
+        "ev-99d48566708463ed550d021b",
+        "prior-c998ce81090d9f5e9a56",
+        "prior-fcb79837fded982860ac"
+      ],
+      "blocks_verdict": true
+    },
+    {
+      "code": "publication_date_range_overlaps_cutoff",
+      "evidence_ids": [
+        "prior-06d6377e6cdd97e98fc6"
+      ],
+      "blocks_verdict": true
+    }
+  ],
+  "remaining_gap": "前提A“西方传统价值体系衰落”及“大学不提供价值体系”在材料中没有对应观察指标，无法确认其是否成立；后果B的指标下降只能说明制度受冲击，不能替代A的确认，也不能证明A→B的因果链。",
+  "source_statuses": [
+    {
+      "url": "https://www.v-dem.net/news/press-release-democratic-backsliding-reaches-western-democracies-with-us-decline-unprecedented/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.pewresearch.org/short-reads/2026/04/15/multiple-indicators-show-a-decline-in-the-health-of-americas-democracy-in-2025/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://freedomhouse.org/report/freedom-world/2026/growing-shadow-autocracy",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.vox.com/politics/485278/democracy-reports-america-trump-2025",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://v-dem.net/release-statement-for-v16-of-the-v-dem-dataset/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://toda.org/publications/policy-briefs-and-reports/report-313-full-text/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.realinstitutoelcano.org/en/commentaries/mid-term-in-the-us-seven-reasons-for-being-moderately-optimistic-about-the-future-of-american-democracy/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "5e5aee61c99452a9c399d0573cf304f01582fd63bbdac4e6045975c779b14a5f"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "77f3f60997f9babf0e04f1dc1586b318",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "74c02c3155b27f5c0679c24e844b11af",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "618acd766b6a60b8aff0d8f4da20f3f23fa0aeff367d990c6e3555b5289ee064"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "e31f638e348cc79ebf576ad17d05efed",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "2afa37bc082c0a0c693b5b4f34aa24cab988909830e1d4c4db1563eae46d89fa"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "6778fd74409de62079ba32bc0be82065",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e3b54b37cea5c649ab15fd0c2709b285",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "dc1e5f70d1c9f84c767f15ac65c428e8a5703e0199d5c093d4ca37be377cb836"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "59d4e7883d09d198068f32c4cd8c79ec",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "a8c8f686e96df76bf6b718314229bb12569a111a8eecc5aacd44bdd4a1098eb5"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "523b2f1564edc08cce677e9f213ca640dde8fab2a8f747189fc6d3b93a3b319b"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "55b3a0606e8cf1fc85e04bf6c24c49313d6f94e5c3821b96cac93e99924155c2"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "6f09c66c5e90fea80b80ebb01ed52251f95cae22769a5729afcb6d59ea6c090a"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-8e4afae092de072093dc8a43",
+            "ev-99d48566708463ed550d021b",
+            "prior-c998ce81090d9f5e9a56",
+            "prior-fcb79837fded982860ac"
+          ],
+          "blocks_verdict": true
+        },
+        {
+          "code": "publication_date_range_overlaps_cutoff",
+          "evidence_ids": [
+            "prior-06d6377e6cdd97e98fc6"
+          ],
+          "blocks_verdict": true
+        },
+        {
+          "code": "source_availability_unconfirmed",
+          "evidence_ids": [
+            "prior-06d6377e6cdd97e98fc6",
+            "prior-c998ce81090d9f5e9a56",
+            "prior-fcb79837fded982860ac"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-8e4afae092de072093dc8a43",
+            "ev-99d48566708463ed550d021b",
+            "prior-c998ce81090d9f5e9a56",
+            "prior-fcb79837fded982860ac"
+          ],
+          "blocks_verdict": true
+        },
+        {
+          "code": "publication_date_range_overlaps_cutoff",
+          "evidence_ids": [
+            "prior-06d6377e6cdd97e98fc6"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-c998ce81090d9f5e9a56",
+        "source_bytes": 233,
+        "shown_bytes": 233,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-06d6377e6cdd97e98fc6",
+        "source_bytes": 168,
+        "shown_bytes": 168,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-fcb79837fded982860ac",
+        "source_bytes": 197,
+        "shown_bytes": 197,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-887eea4121ccaae80fa3",
+        "source_bytes": 133,
+        "shown_bytes": 133,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-a450d77a17732c002cb8b70b",
+        "source_bytes": 4154,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a9ae27c19819055f68488b1a",
+        "source_bytes": 12096,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-8e4afae092de072093dc8a43",
+        "source_bytes": 12058,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-cf58d6aafd2e4f04857a84f6",
+        "source_bytes": 11698,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-99d48566708463ed550d021b",
+        "source_bytes": 6708,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-3fb3c39aa34e0e6d1921048a",
+        "source_bytes": 12112,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-2ccf2d7fcdfa16b5ce886060",
+        "source_bytes": 12030,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-c998ce81090d9f5e9a56",
+        "source_bytes": 233,
+        "shown_bytes": 233,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-06d6377e6cdd97e98fc6",
+        "source_bytes": 168,
+        "shown_bytes": 168,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-fcb79837fded982860ac",
+        "source_bytes": 197,
+        "shown_bytes": 197,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-887eea4121ccaae80fa3",
+        "source_bytes": 133,
+        "shown_bytes": 133,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-a450d77a17732c002cb8b70b",
+        "source_bytes": 4154,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a9ae27c19819055f68488b1a",
+        "source_bytes": 12096,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-8e4afae092de072093dc8a43",
+        "source_bytes": 12058,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-cf58d6aafd2e4f04857a84f6",
+        "source_bytes": 11698,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-99d48566708463ed550d021b",
+        "source_bytes": 6708,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-3fb3c39aa34e0e6d1921048a",
+        "source_bytes": 12112,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-2ccf2d7fcdfa16b5ce886060",
+        "source_bytes": 12030,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-c998ce81090d9f5e9a56",
+        "source_bytes": 233,
+        "shown_bytes": 233,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-06d6377e6cdd97e98fc6",
+        "source_bytes": 168,
+        "shown_bytes": 168,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-fcb79837fded982860ac",
+        "source_bytes": 197,
+        "shown_bytes": 197,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-887eea4121ccaae80fa3",
+        "source_bytes": 133,
+        "shown_bytes": 133,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-a450d77a17732c002cb8b70b",
+        "source_bytes": 4154,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a9ae27c19819055f68488b1a",
+        "source_bytes": 12096,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-8e4afae092de072093dc8a43",
+        "source_bytes": 12058,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-cf58d6aafd2e4f04857a84f6",
+        "source_bytes": 11698,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-99d48566708463ed550d021b",
+        "source_bytes": 6708,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-3fb3c39aa34e0e6d1921048a",
+        "source_bytes": 12112,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-2ccf2d7fcdfa16b5ce886060",
+        "source_bytes": 12030,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-c998ce81090d9f5e9a56",
+        "source_bytes": 233,
+        "shown_bytes": 233,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-06d6377e6cdd97e98fc6",
+        "source_bytes": 168,
+        "shown_bytes": 168,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-fcb79837fded982860ac",
+        "source_bytes": 197,
+        "shown_bytes": 197,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-887eea4121ccaae80fa3",
+        "source_bytes": 133,
+        "shown_bytes": 133,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-a450d77a17732c002cb8b70b",
+        "source_bytes": 4154,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a9ae27c19819055f68488b1a",
+        "source_bytes": 12096,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-8e4afae092de072093dc8a43",
+        "source_bytes": 12058,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-cf58d6aafd2e4f04857a84f6",
+        "source_bytes": 11698,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-99d48566708463ed550d021b",
+        "source_bytes": 6708,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-3fb3c39aa34e0e6d1921048a",
+        "source_bytes": 12112,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-2ccf2d7fcdfa16b5ce886060",
+        "source_bytes": 12030,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000248386-000248451",
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "原文对象是“西方传统价值体系衰落”这一前提及其对民主制度的冲击，且说话者是布鲁姆（王沪宁概述），语境为美国精神/大学教育；建议把对象操作化为“1991年后美国民主制度是否出现可测制度性冲击”，完全跳过了前提A（价值体系衰落）是否成立，只测后果B。原文的特定集合是“西方传统价值体系衰落”，不是泛化的美国民主指标下降。",
+          "quote_ref": "q1",
+          "source_quote": "系的衰落，最终将冲击民主制度，社会没有任何价值体系可以作为引导个人决策的",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "book"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议判“部分符合、趋势符合”，但reason只罗列了后果B的指标下降，未指出B的哪些具体部分实现、哪些未实现；同时把“最终终点（民主制度终结）远未出现”当作降为部分符合的理由，而scope明确“不要求制度终结”。按口径，若A未确认、B已实现，应说明A状态；若A未知则保留条件状态，不能仅凭B指标下降就判部分符合并设trend_aligned=true。",
+          "quote_ref": "q2",
+          "source_quote": "对象为布鲁姆（经王沪宁概述）关于西方传统价值体系衰落最终冲击民主制度的判断；操作化为1991年后至2026-11-09前美国民主制度是否出现可测的制度性冲击（V-Dem自由民主指数、Freedom House评分、选举与权力交接事件），不要求制度终结或验证文化因果。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需先确认原文前提A（西方传统价值体系衰落）在声明口径内是否成立及其观察指标，再分别判断后果B的实现部分；当前scope把A替换为B的指标下降，需修订scope与verdict_logic，明确A的条件状态与B的具体实现/未实现部分。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000248386-000248451",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000248386-000248451",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象为布鲁姆（经王沪宁概述）关于西方传统价值体系衰落最终冲击民主制度的判断；操作化为1991年后至2026-11-09前美国民主制度是否出现可测的制度性冲击（V-Dem自由民主指数、Freedom House评分、选举与权力交接事件），不要求制度终结或验证文化因果。",
+      "reason": "V-Dem美国自由民主指数由2024年0.75降至2025年0.57，Freedom House由84降至81，2021年国会山事件记录了对权力交接的挑战，均显示美国民主制度受到可测冲击，方向与原文判断一致。但原文的最终终点（民主制度终结）远未出现，且价值体系衰落导致制度冲击的因果链未被验证，故仅判部分符合、趋势符合。",
+      "limitation": "指标下降与制度受冲击不等于原文所称“最终冲击民主制度”的终局结果；文化价值体系与民主制度之间的因果机制未获证据支持，仅评价结果方向。",
+      "evidence_ids": [
+        "prior-c998ce81090d9f5e9a56",
+        "prior-06d6377e6cdd97e98fc6",
+        "prior-fcb79837fded982860ac",
+        "prior-887eea4121ccaae80fa3",
+        "ev-a450d77a17732c002cb8b70b",
+        "ev-a9ae27c19819055f68488b1a",
+        "ev-8e4afae092de072093dc8a43",
+        "ev-cf58d6aafd2e4f04857a84f6",
+        "ev-99d48566708463ed550d021b",
+        "ev-3fb3c39aa34e0e6d1921048a",
+        "ev-2ccf2d7fcdfa16b5ce886060"
+      ],
+      "method": "从价值体系与自主判断联系推演民主制度后果",
+      "method_basis": "explicit",
+      "observation_end": "2025-12-31",
+      "future_time_text": "最终",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-c998ce81090d9f5e9a56",
+          "relation": "support",
+          "quote": "V-Dem v16：美国自由民主指数2024为0.75、2025为0.57；2025的68%可信区间0.51—0.62。",
+          "publication_date": null,
+          "observation_end": "2025-12-31",
+          "limitation": "指数下降为综合评分，不能直接证明价值体系衰落导致制度冲击的因果。"
+        },
+        {
+          "evidence_id": "prior-06d6377e6cdd97e98fc6",
+          "relation": "support",
+          "quote": "V-Dem2026报告给出美国1955—2025历史曲线、2023自由民主指数0.79与2025的0.57，并讨论制度约束和权利环境；同时区分多种民主指标。",
+          "publication_date": "2026",
+          "observation_end": "2025-12-31",
+          "limitation": "报告出版年为2026，观察数据截至2025；不同民主指标口径不一。"
+        },
+        {
+          "evidence_id": "prior-fcb79837fded982860ac",
+          "relation": "support",
+          "quote": "Freedom House2026美国81/100，页面同版列上年84/100，仍属Free；记录立法僵局、行政权限扩张、表达环境问题，也记录2024选举产生2025政府及大量司法挑战。",
+          "publication_date": null,
+          "observation_end": "2025-12-31",
+          "limitation": "美国仍属Free，说明制度未终结，仅评分下降。"
+        },
+        {
+          "evidence_id": "prior-887eea4121ccaae80fa3",
+          "relation": "support",
+          "quote": "众议院调查委员会报告记录特朗普拒绝承认2020合法选举结果，并企图阻止权力交接；国会大厦遇袭。",
+          "publication_date": "2022-12-22",
+          "observation_end": "2022-12-22",
+          "limitation": "单一事件，不能代表长期制度冲击全貌。"
+        },
+        {
+          "evidence_id": "ev-a450d77a17732c002cb8b70b",
+          "relation": "support",
+          "quote": "Democracy in the USA is deteriorating at unprecedented speed, and media and journalists are increasingly targeted across the world.",
+          "publication_date": "2026-03-17",
+          "observation_end": "2025-12-31",
+          "limitation": "新闻稿为机构立场表述，非独立因果证据；候选来源尚未语义复核。"
+        },
+        {
+          "evidence_id": "ev-a9ae27c19819055f68488b1a",
+          "relation": "support",
+          "quote": "The health of America’s democracy declined in 2025, according to new evaluations from organizations that have long tracked how well democracies around the world are working.",
+          "publication_date": "2026-04-15",
+          "observation_end": "2025-12-31",
+          "limitation": "汇总多家评分，仍属指标层面，未验证文化因果。"
+        },
+        {
+          "evidence_id": "ev-8e4afae092de072093dc8a43",
+          "relation": "support",
+          "quote": "Among countries rated Free, the United States, Bulgaria, and Italy have experienced the year’s largest declines.",
+          "publication_date": null,
+          "observation_end": "2025-12-31",
+          "limitation": "来源无发表日期元数据，观察期为2025年；美国仍属Free。"
+        },
+        {
+          "evidence_id": "ev-cf58d6aafd2e4f04857a84f6",
+          "relation": "counter",
+          "quote": "Broadly, the reports’ findings converge on a similar picture: that American democracy has been damaged in the first year of President Donald Trump’s second term, perhaps severely, but remains alive and functioning.",
+          "publication_date": "2026-04-13",
+          "observation_end": "2025-12-31",
+          "limitation": "评论文章指出制度仍运作，构成对“制度终结”终局的反证，但不否定已发生的冲击。"
+        },
+        {
+          "evidence_id": "ev-99d48566708463ed550d021b",
+          "relation": "background",
+          "quote": "The latest version of the V-Dem dataset includes scores for 179 countries for the year 2025. These scores report the situation in a country on December 31.",
+          "publication_date": null,
+          "observation_end": "2025-12-31",
+          "limitation": "说明评分时点，未直接给出美国数值；来源无发表日期。"
+        },
+        {
+          "evidence_id": "ev-3fb3c39aa34e0e6d1921048a",
+          "relation": "counter",
+          "quote": "The report concludes that while political opposition to Trump’s autocratic initiatives has intensified, the prospects for a long-term recovery of American democracy are limited.",
+          "publication_date": "2026-08-15",
+          "observation_end": "2026-08-15",
+          "limitation": "结论为长期前景评估，非已实现终局；同时承认反对力量增强。"
+        },
+        {
+          "evidence_id": "ev-2ccf2d7fcdfa16b5ce886060",
+          "relation": "counter",
+          "quote": "Democratic erosion does not necessarily entail an irreversible drift towards authoritarianism, however.",
+          "publication_date": "2026-11-03",
+          "observation_end": "2025-12-31",
+          "limitation": "评论文章强调制度韧性，构成对终局冲击的反证，但不否认已发生的侵蚀。"
+        }
+      ],
+      "remaining_gap": "原文“最终冲击民主制度”的终局结果尚未出现，价值体系衰落与制度冲击之间的因果机制无直接证据；现有材料只能支持指标层面的趋势符合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000248386-000248451",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "原文为布鲁姆（经王沪宁概述）的复合判断：前提A“西方传统价值体系衰落”并导致个人决策缺乏价值引导、大学不提供价值体系，后果B“最终冲击民主制度”。回顾性操作化：A以美国社会/大学是否出现传统价值体系引导力衰落的可测迹象衡量；B以1991年后至2026-11-09前美国民主制度是否出现可测制度性冲击（V-Dem自由民主指数、Freedom House评分、选举与权力交接事件）衡量。不要求制度终结，也不要求验证文化因果。",
+      "reason": "后果B有直接证据：V-Dem美国自由民主指数2024年0.75降至2025年0.57，Freedom House由84降至81，2021年国会山事件记录了对权力交接的挑战，显示民主制度受到可测冲击。但前提A“西方传统价值体系衰落”及“大学不提供价值体系”在材料中没有对应观察指标，无法确认该前提是否成立，故不能把B的指标下降直接当作A→B复合判断的成立。",
+      "limitation": "关键缺口是前提A缺乏可操作证据，现有材料只覆盖后果B的指标层面；且B的指标下降不等于原文“最终冲击民主制度”的终局结果，文化价值体系与制度冲击之间的因果机制亦未获证据。修订说明：原建议把对象替换为B的指标下降并判趋势符合，未核对前提A，现按复合命题保留未定。",
+      "evidence_ids": [
+        "prior-c998ce81090d9f5e9a56",
+        "prior-06d6377e6cdd97e98fc6",
+        "prior-fcb79837fded982860ac",
+        "prior-887eea4121ccaae80fa3",
+        "ev-a450d77a17732c002cb8b70b",
+        "ev-a9ae27c19819055f68488b1a",
+        "ev-8e4afae092de072093dc8a43",
+        "ev-cf58d6aafd2e4f04857a84f6",
+        "ev-99d48566708463ed550d021b",
+        "ev-3fb3c39aa34e0e6d1921048a",
+        "ev-2ccf2d7fcdfa16b5ce886060"
+      ],
+      "method": "从价值体系与自主判断联系推演民主制度后果",
+      "method_basis": "explicit",
+      "observation_end": "2025-12-31",
+      "future_time_text": "最终",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-c998ce81090d9f5e9a56",
+          "relation": "support",
+          "quote": "V-Dem v16：美国自由民主指数2024为0.75、2025为0.57；2025的68%可信区间0.51—0.62。",
+          "publication_date": null,
+          "observation_end": "2025-12-31",
+          "limitation": "仅覆盖后果B的指数层面，未涉及前提A价值体系衰落；来源无发表日期元数据。"
+        },
+        {
+          "evidence_id": "prior-06d6377e6cdd97e98fc6",
+          "relation": "support",
+          "quote": "V-Dem2026报告给出美国1955—2025历史曲线、2023自由民主指数0.79与2025的0.57，并讨论制度约束和权利环境；同时区分多种民主指标。",
+          "publication_date": "2026",
+          "observation_end": "2025-12-31",
+          "limitation": "出版年为2026，观察数据截至2025；不同民主指标口径不一，且不涉及价值体系前提。"
+        },
+        {
+          "evidence_id": "prior-fcb79837fded982860ac",
+          "relation": "support",
+          "quote": "Freedom House2026美国81/100，页面同版列上年84/100，仍属Free；记录立法僵局、行政权限扩张、表达环境问题，也记录2024选举产生2025政府及大量司法挑战。",
+          "publication_date": null,
+          "observation_end": "2025-12-31",
+          "limitation": "美国仍属Free，说明制度未终结；仅评分下降，不涉及前提A。"
+        },
+        {
+          "evidence_id": "prior-887eea4121ccaae80fa3",
+          "relation": "support",
+          "quote": "众议院调查委员会报告记录特朗普拒绝承认2020合法选举结果，并企图阻止权力交接；国会大厦遇袭。",
+          "publication_date": "2022-12-22",
+          "observation_end": "2022-12-22",
+          "limitation": "单一事件，不能代表长期制度冲击全貌，也不涉及价值体系前提。"
+        },
+        {
+          "evidence_id": "ev-a450d77a17732c002cb8b70b",
+          "relation": "support",
+          "quote": "Democracy in the USA is deteriorating at unprecedented speed, and media and journalists are increasingly targeted across the world.",
+          "publication_date": "2026-03-17",
+          "observation_end": "2025-12-31",
+          "limitation": "新闻稿为机构立场表述，非独立因果证据；候选来源尚未语义复核，且不涉及前提A。"
+        },
+        {
+          "evidence_id": "ev-a9ae27c19819055f68488b1a",
+          "relation": "support",
+          "quote": "The health of America’s democracy declined in 2025, according to new evaluations from organizations that have long tracked how well democracies around the world are working.",
+          "publication_date": "2026-04-15",
+          "observation_end": "2025-12-31",
+          "limitation": "汇总多家评分，仍属指标层面，未验证文化因果，也不涉及前提A。"
+        },
+        {
+          "evidence_id": "ev-8e4afae092de072093dc8a43",
+          "relation": "support",
+          "quote": "Among countries rated Free, the United States, Bulgaria, and Italy have experienced the year’s largest declines.",
+          "publication_date": null,
+          "observation_end": "2025-12-31",
+          "limitation": "来源无发表日期元数据，观察期为2025年；美国仍属Free，不涉及前提A。"
+        },
+        {
+          "evidence_id": "ev-cf58d6aafd2e4f04857a84f6",
+          "relation": "counter",
+          "quote": "Broadly, the reports’ findings converge on a similar picture: that American democracy has been damaged in the first year of President Donald Trump’s second term, perhaps severely, but remains alive and functioning.",
+          "publication_date": "2026-04-13",
+          "observation_end": "2025-12-31",
+          "limitation": "评论文章指出制度仍运作，构成对“制度终结”终局的反证，但不否定已发生的冲击，也不涉及前提A。"
+        },
+        {
+          "evidence_id": "ev-99d48566708463ed550d021b",
+          "relation": "background",
+          "quote": "The latest version of the V-Dem dataset includes scores for 179 countries for the year 2025. These scores report the situation in a country on December 31.",
+          "publication_date": null,
+          "observation_end": "2025-12-31",
+          "limitation": "说明评分时点，未直接给出美国数值；来源无发表日期。"
+        },
+        {
+          "evidence_id": "ev-3fb3c39aa34e0e6d1921048a",
+          "relation": "counter",
+          "quote": "The report concludes that while political opposition to Trump’s autocratic initiatives has intensified, the prospects for a long-term recovery of American democracy are limited.",
+          "publication_date": "2026-08-15",
+          "observation_end": "2026-08-15",
+          "limitation": "结论为长期前景评估，非已实现终局；同时承认反对力量增强，不涉及前提A。"
+        },
+        {
+          "evidence_id": "ev-2ccf2d7fcdfa16b5ce886060",
+          "relation": "counter",
+          "quote": "Democratic erosion does not necessarily entail an irreversible drift towards authoritarianism, however.",
+          "publication_date": "2026-11-03",
+          "observation_end": "2025-12-31",
+          "limitation": "评论文章强调制度韧性，构成对终局冲击的反证，但不否认已发生的侵蚀，也不涉及前提A。"
+        }
+      ],
+      "remaining_gap": "前提A“西方传统价值体系衰落”及“大学不提供价值体系”在材料中没有对应观察指标，无法确认其是否成立；后果B的指标下降只能说明制度受冲击，不能替代A的确认，也不能证明A→B的因果链。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象为布鲁姆（经王沪宁概述）关于西方传统价值体系衰落最终冲击民主制度的未来判断；可观察口径为1991年后至截止日前美国民主制度是否出现可测的制度性冲击（民主指标显著下降、权力交接/选举制度受挑战），而非要求制度终结或验证文化因果；反证包括美国民主指标长期稳定或回升、制度在危机中正常运作且无显著制度冲击。",
+  "elapsed_seconds": 43.526,
+  "completed_at": "2026-11-09T10:35:57.524411+00:00"
+}

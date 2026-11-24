@@ -1,0 +1,28 @@
+{
+  "id": "b62d98d3-87b9-4506-8f15-f461b8927dfc",
+  "object": "chat.completion",
+  "created": 1794201580,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000010715-000010765\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性预测：若印度亿万家庭按美国家庭方式生活（仅用现代工具），则对环境造成毁灭性破坏。观察时段为出版至cutoff（2014—2026-11-09），但触发条件（印度家庭普遍达到美国式消费水平）在观察期内未发生，无法评估后果。\",\"reason\":\"该判断以明确的if条件为前提，条件在观察窗口内未满足，无法检验其后果。原文未给出可操作化的时间或指标，只能保留为条件性预测。\",\"limitation\":\"条件未发生，不能以相似趋势（如印度消费增长）替代触发条件；且“毁灭性破坏”缺乏量化口径。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"not_met\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4337,
+    "completion_tokens": 224,
+    "total_tokens": 4561,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 4337
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

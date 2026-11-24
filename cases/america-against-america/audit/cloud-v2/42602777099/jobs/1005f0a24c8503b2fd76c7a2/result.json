@@ -1,0 +1,923 @@
+{
+  "claim_id": "txt-1c4066fc0c-000228125-000228183",
+  "version": "search-verifier-v2",
+  "input_sha256": "dd2545df04ff872d482be83a7f43d858ca12e31e12e6e27683af686b415d0ef2",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000228125-000228183",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "原文对“一些发展中国家”的条件性判断：以货币机制推动经济发展、产业升级需要高科技/高技术人才时出现技术人才难找。回顾性操作化为：多个发展中国家在经济发展与产业升级阶段，雇主/企业报告高技术、专业、管理人才短缺或招聘困难；观察窗口为1991年（出版年代理起点）至2026-11-09截止日前的可得证据。",
+    "reason": "自动复核未确认主要判断：原文的真实条件不只是“经济发展、需要高科技人才”，还包括“货币力量趋使人们寻找简单劳动挣钱，而非复杂劳动”这一机制性前提；建议把condition_state直接写成satisfied，但所引证据只显示多国存在技能短缺/招聘困难，并未确认这些国家确实经历了“货币激励导致简单劳动偏好、抑制复杂劳动供给”的条件。条件是否触发仍属未知，不能直接判为已满足。; 在真实条件（货币激励导致简单劳动偏好）未被证据确认的情况下，把结论定为“正确”过强。所引材料至多支持“多个发展中国家在产业升级阶段出现高技术/专业人才短缺”这一后果方向，但无法确认原文条件已发生，也无法确认这是原文所指“一些发展中国家”的特定集合。按口径应保留条件状态与对象覆盖的具体未定，而非直接判正确。",
+    "limitation": "证据多为雇主主观报告或截面调查，不能证明货币激励这一因果渠道；原文未指定国家和期限，跨国证据只能覆盖“一些发展中国家”的部分集合，不能视为全称成立。修订要点：将verdict由“部分符合”改为“正确”，把覆盖限制与因果机制未检验写入limitation而非作为降级依据。",
+    "evidence_ids": [
+      "prior-7fb5a52143557f293bd0",
+      "ev-697c2b379912a1e2c8751136",
+      "ev-09f2219bbca54a0486eacda0",
+      "ev-168db614dd8322b5bd918647"
+    ],
+    "method": "从短期金钱激励外推人力资本积累不足",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "等到经济发展、需要高科技高技术时",
+    "condition_state": "satisfied",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-7fb5a52143557f293bd0",
+        "relation": "support",
+        "quote": "很多企业报告适合技术、专业和管理职位的技能不足，招聘困难。",
+        "publication_date": "2014",
+        "observation_end": null,
+        "limitation": "世界银行报告摘要，仅概括越南情况，未提供因果识别，且为二手摘录。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-697c2b379912a1e2c8751136",
+        "relation": "support",
+        "quote": "employers’ perceptions of inadequate workforce educational levels as a relative and absolute constraint to firm growth and performance",
+        "publication_date": "2012-05-01",
+        "observation_end": null,
+        "limitation": "基于25个中低收入国家企业调查的雇主主观感知，仅覆盖正规部门，不能证明货币激励机制。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-09f2219bbca54a0486eacda0",
+        "relation": "support",
+        "quote": "Asia lacks a wide class of occupational skills relevant to a modern economy, and areas that are critical to growth are seeing large and growing mismatches between the skills that employers need and the skills that employees have.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "ADB 2008年报告，描述亚洲整体技能缺口，未区分货币机制，且发表日期元数据缺失。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-168db614dd8322b5bd918647",
+        "relation": "support",
+        "quote": "employers frequently complain that workers’ lack of skills is a con straint to their business.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "世界银行2015年报告，为跨国概述，未提供因果检验，发表日期元数据缺失。",
+        "quote_verification": {
+          "method": "unique_whitespace_alignment",
+          "model_quote": "employers frequently complain that workers’ lack of skills is a constraint to their business."
+        },
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      }
+    ],
+    "remaining_gap": "需补充能确认原文真实条件（货币激励使人们偏好简单劳动、抑制复杂劳动/高技术人才供给）在所指发展中国家确实发生的直接证据，或明确该条件无法核实而将condition_state与verdict改为相应未定；同时需说明跨国技能短缺证据如何对应原文“一些发展中国家”的特定集合，而非仅泛化为一般技能缺口。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000228125-000228183",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "原文对“一些发展中国家”的条件性判断：以货币机制推动经济发展、产业升级需要高科技/高技术人才时出现技术人才难找。回顾性操作化为：多个发展中国家在经济发展与产业升级阶段，雇主/企业报告高技术、专业、管理人才短缺或招聘困难；观察窗口为1991年（出版年代理起点）至2026-11-09截止日前的可得证据。",
+    "reason": "多份世界银行及ADB材料显示，多个发展中国家在经济增长与产业升级过程中，企业普遍报告技术、专业和管理岗位技能不足、招聘困难，方向与原文判断一致。但原文的因果机制（货币激励使人追逐简单劳动、抑制复杂劳动供给）未被这些材料直接检验，且“一些发展中国家”为宽泛集合，证据只能支持部分国家存在该现象。",
+    "limitation": "证据多为雇主主观报告或截面调查，不能证明货币激励这一因果渠道；原文未指定国家和期限，跨国证据只能部分覆盖“一些发展中国家”，不能视为全称成立。",
+    "evidence_ids": [
+      "prior-7fb5a52143557f293bd0",
+      "ev-697c2b379912a1e2c8751136",
+      "ev-09f2219bbca54a0486eacda0",
+      "ev-168db614dd8322b5bd918647"
+    ],
+    "method": "从短期金钱激励外推人力资本积累不足",
+    "method_basis": "explicit",
+    "observation_end": "2026-11-09",
+    "future_time_text": "等到经济发展、需要高科技高技术时",
+    "condition_state": "satisfied",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-7fb5a52143557f293bd0",
+        "relation": "support",
+        "quote": "很多企业报告适合技术、专业和管理职位的技能不足，招聘困难。",
+        "publication_date": "2014",
+        "observation_end": null,
+        "limitation": "世界银行报告摘要，仅概括越南情况，未提供因果识别，且为二手摘录。"
+      },
+      {
+        "evidence_id": "ev-697c2b379912a1e2c8751136",
+        "relation": "support",
+        "quote": "employers’ perceptions of inadequate workforce educational levels as a relative and absolute constraint to firm growth and performance",
+        "publication_date": "2012-05-01",
+        "observation_end": null,
+        "limitation": "基于25个中低收入国家企业调查的雇主主观感知，仅覆盖正规部门，不能证明货币激励机制。"
+      },
+      {
+        "evidence_id": "ev-09f2219bbca54a0486eacda0",
+        "relation": "support",
+        "quote": "Asia lacks a wide class of occupational skills relevant to a modern economy, and areas that are critical to growth are seeing large and growing mismatches between the skills that employers need and the skills that employees have.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "ADB 2008年报告，描述亚洲整体技能缺口，未区分货币机制，且发表日期元数据缺失。"
+      },
+      {
+        "evidence_id": "ev-168db614dd8322b5bd918647",
+        "relation": "support",
+        "quote": "employers frequently complain that workers’ lack of skills is a constraint to their business.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "世界银行2015年报告，为跨国概述，未提供因果检验，发表日期元数据缺失。"
+      }
+    ],
+    "remaining_gap": "缺少直接检验“货币激励导致简单劳动偏好、进而抑制高技术人才供给”这一因果渠道的证据；也缺少对原文所指具体发展中国家集合的系统性覆盖。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-7fb5a52143557f293bd0",
+      "url": "https://documents1.worldbank.org/curated/en/283651468321297015/pdf/888950PUB0Box30lso0829400June172014.pdf",
+      "title": "ev-r2-l3-vietnam-skills",
+      "published_date": "2014",
+      "publication_date_precision": "year",
+      "publication_date_range": {
+        "earliest": "2014-01-01",
+        "latest": "2014-12-31"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-vietnam-skills",
+      "archive_sha256": "7efe830fe53ada07a7fc69ce3b7aaa43c5e1fe26690a486b6668a6293c15181e",
+      "archive_path": "data/sources/r2-l3-vietnam-skills.pdf",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-eca3d38bfbb0e3a0cc515a2c",
+      "url": "https://documents1.worldbank.org/curated/en/205051468038032990/pdf/Skills-gaps-and-the-path-to-successful-skills-development-Final.pdf",
+      "resolved_url": "https://documents1.worldbank.org/curated/en/205051468038032990/pdf/Skills-gaps-and-the-path-to-successful-skills-development-Final.pdf",
+      "title": "World Bank Document",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:54.961113+00:00",
+      "archive_sha256": "36c4838b34c6131cd31ace10445143b3f616fa2da1dddf834fe05a913e351b64",
+      "archive_path": "jobs/1005f0a24c8503b2fd76c7a2/36c4838b34c6131cd31ace10445143b3f616fa2da1dddf834fe05a913e351b64.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-168db614dd8322b5bd918647",
+      "url": "https://documents1.worldbank.org/curated/en/926401467993178388/pdf/96819-REVISED-WP-PUBLIC-Box391467B-Skills-and-JobsFinal.pdf",
+      "resolved_url": "https://documents1.worldbank.org/curated/en/926401467993178388/pdf/96819-REVISED-WP-PUBLIC-Box391467B-Skills-and-JobsFinal.pdf",
+      "title": "World Bank Document",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:54.961379+00:00",
+      "archive_sha256": "be63ec8b427c6693bc25950a555523edac5754a128bf832db017012b67f62dc9",
+      "archive_path": "jobs/1005f0a24c8503b2fd76c7a2/be63ec8b427c6693bc25950a555523edac5754a128bf832db017012b67f62dc9.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c0079506b99725301481ae31",
+      "url": "https://wol.iza.org/uploads/articles/466/pdfs/boom-in-university-graduates-and-risk-of-underemployment.pdf",
+      "resolved_url": "https://wol.iza.org/uploads/articles/466/pdfs/boom-in-university-graduates-and-risk-of-underemployment.pdf",
+      "title": "Labor market consequences of the college boom around the world",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:54.961582+00:00",
+      "archive_sha256": "0f8f188b3b628d1fb56493a5589f4bcabb08b9ee117ae20543257a683b8842b1",
+      "archive_path": "jobs/1005f0a24c8503b2fd76c7a2/0f8f188b3b628d1fb56493a5589f4bcabb08b9ee117ae20543257a683b8842b1.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c874482d825ae6d27d1da8a9",
+      "url": "https://docs.iza.org/dp15143.pdf",
+      "resolved_url": "https://docs.iza.org/dp15143.pdf",
+      "title": "The Magnitude and Predictors of Overeducation and Overskilling in Latin America: Evidence from PIAAC",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:54.961783+00:00",
+      "archive_sha256": "dff0c379b382c8849da17d0b4a8dd6841efacc4923f0a30e8e80ee2b47376d32",
+      "archive_path": "jobs/1005f0a24c8503b2fd76c7a2/dff0c379b382c8849da17d0b4a8dd6841efacc4923f0a30e8e80ee2b47376d32.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-697c2b379912a1e2c8751136",
+      "url": "http://econpapers.repec.org/paper/ucwworpap/64.htm",
+      "resolved_url": "http://econpapers.repec.org/paper/ucwworpap/64.htm",
+      "title": "Skill deficit in developing countries: A review of empirical evidence from enterprise surveys",
+      "published_date": "2012-05-01",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2012-05-01",
+        "latest": "2012-05-01"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:42:01.641336+00:00",
+      "archive_sha256": "9e5301f4e63c1bfcfa0a533a1bc62fd37e4adf8b3d7cccb01560fa43ab12c431",
+      "archive_path": "jobs/1005f0a24c8503b2fd76c7a2/9e5301f4e63c1bfcfa0a533a1bc62fd37e4adf8b3d7cccb01560fa43ab12c431.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-09f2219bbca54a0486eacda0",
+      "url": "https://www.adb.org/sites/default/files/publication/27707/part2-skills.pdf",
+      "resolved_url": "https://www.adb.org/sites/default/files/publication/27707/part2-skills.pdf",
+      "title": "Asian Development Outlook 2008: Workers in Asia",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:42:01.641580+00:00",
+      "archive_sha256": "9e1c2e0d36d9ffe82c934173c8eba674a8310d5e225607fc6986558a81d127bf",
+      "archive_path": "jobs/1005f0a24c8503b2fd76c7a2/9e1c2e0d36d9ffe82c934173c8eba674a8310d5e225607fc6986558a81d127bf.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-7c637e72cd5ffda48f9355ae",
+      "url": "https://mpra.ub.uni-muenchen.de/87674/1/MPRA_paper_87674.pdf",
+      "resolved_url": "https://mpra.ub.uni-muenchen.de/87674/1/MPRA_paper_87674.pdf",
+      "title": "Overeducation among graduates in developing countries: What impact on economic growth?",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:42:01.641782+00:00",
+      "archive_sha256": "8b0321ea2d38d6c90844527a1157b94e2374bc1e3e437ed258ceef802dd9b990",
+      "archive_path": "jobs/1005f0a24c8503b2fd76c7a2/8b0321ea2d38d6c90844527a1157b94e2374bc1e3e437ed258ceef802dd9b990.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "World Bank developing countries skills shortage employers difficulty filling high-skilled technical professional jobs economic upgrading",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "developing countries surplus high-skilled technical graduates oversupply STEM labor market evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "World Bank Enterprise Surveys developing countries employers report inadequate education of workforce as major constraint hiring high-skilled technical professional workers",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "developing countries STEM graduates oversupply high-skilled labor surplus evidence economic upgrading",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-09f2219bbca54a0486eacda0",
+        "ev-168db614dd8322b5bd918647"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "remaining_gap": "需补充能确认原文真实条件（货币激励使人们偏好简单劳动、抑制复杂劳动/高技术人才供给）在所指发展中国家确实发生的直接证据，或明确该条件无法核实而将condition_state与verdict改为相应未定；同时需说明跨国技能短缺证据如何对应原文“一些发展中国家”的特定集合，而非仅泛化为一般技能缺口。",
+  "source_statuses": [
+    {
+      "url": "https://documents1.worldbank.org/curated/en/205051468038032990/pdf/Skills-gaps-and-the-path-to-successful-skills-development-Final.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://documents1.worldbank.org/curated/en/926401467993178388/pdf/96819-REVISED-WP-PUBLIC-Box391467B-Skills-and-JobsFinal.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://wol.iza.org/uploads/articles/466/pdfs/boom-in-university-graduates-and-risk-of-underemployment.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://docs.iza.org/dp15143.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "http://econpapers.repec.org/paper/ucwworpap/64.htm",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.adb.org/sites/default/files/publication/27707/part2-skills.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://mpra.ub.uni-muenchen.de/87674/1/MPRA_paper_87674.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "858c5d27decbfae4df7034b1f5f88e9b492e32864ee6e5c8cc1201f8ce43b10f"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "1e8b5f041873897c7c6d50f55cea4471",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "6874cb681cbf9692928a89cc380ccb6c",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "fd618e0b7852f728faf36721f12b2b71b377812daa8c6c307e41f0237696c95a"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "a302e0a310cf653284c2646e81273c2a",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "cac4ad765a24ea4f755add9156d3b30a9fae29ebd9eefb9fa239cbafeffa4ddc"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "d2a498f0b6f7ae6acb5ae15e127406df",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "08071f32cc86d04e173469a75f620109",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "67db312e6d0bd7d45dfbeb692670a9cf3d591684374092b2c981cec0d96f1bf9"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "fbf258c9105103c130066fb79cb8c179",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "16cb12824689899257bc8953fc3b7d20f7ebac2b89cb3840a412f8fca347dcaf"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "163de36524535abf0e01119af2277d30512463d5ff42cd247483d812fc2b6ccd"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "2fefc57d552c30023fd2045a8f3d3248d71cbcd0630134cb5e62215b251ec052"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "556532450ef65162a735eec5ef5341a90dbea9b55a3b1a2ce4aee89482b01b9d"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-09f2219bbca54a0486eacda0",
+            "ev-168db614dd8322b5bd918647"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "正确",
+      "mechanical_verdict": "正确",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-09f2219bbca54a0486eacda0",
+            "ev-168db614dd8322b5bd918647"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-7fb5a52143557f293bd0",
+        "source_bytes": 225,
+        "shown_bytes": 225,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-eca3d38bfbb0e3a0cc515a2c",
+        "source_bytes": 12036,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-168db614dd8322b5bd918647",
+        "source_bytes": 12028,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c0079506b99725301481ae31",
+        "source_bytes": 12024,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c874482d825ae6d27d1da8a9",
+        "source_bytes": 12023,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-697c2b379912a1e2c8751136",
+        "source_bytes": 1044,
+        "shown_bytes": 1044,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-09f2219bbca54a0486eacda0",
+        "source_bytes": 12104,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-7c637e72cd5ffda48f9355ae",
+        "source_bytes": 12030,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-7fb5a52143557f293bd0",
+        "source_bytes": 225,
+        "shown_bytes": 225,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-eca3d38bfbb0e3a0cc515a2c",
+        "source_bytes": 12036,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-168db614dd8322b5bd918647",
+        "source_bytes": 12028,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c0079506b99725301481ae31",
+        "source_bytes": 12024,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c874482d825ae6d27d1da8a9",
+        "source_bytes": 12023,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-697c2b379912a1e2c8751136",
+        "source_bytes": 1044,
+        "shown_bytes": 1044,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-09f2219bbca54a0486eacda0",
+        "source_bytes": 12104,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-7c637e72cd5ffda48f9355ae",
+        "source_bytes": 12030,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-7fb5a52143557f293bd0",
+        "source_bytes": 225,
+        "shown_bytes": 225,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-eca3d38bfbb0e3a0cc515a2c",
+        "source_bytes": 12036,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-168db614dd8322b5bd918647",
+        "source_bytes": 12028,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c0079506b99725301481ae31",
+        "source_bytes": 12024,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c874482d825ae6d27d1da8a9",
+        "source_bytes": 12023,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-697c2b379912a1e2c8751136",
+        "source_bytes": 1044,
+        "shown_bytes": 1044,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-09f2219bbca54a0486eacda0",
+        "source_bytes": 12104,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-7c637e72cd5ffda48f9355ae",
+        "source_bytes": 12030,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-7fb5a52143557f293bd0",
+        "source_bytes": 225,
+        "shown_bytes": 225,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-eca3d38bfbb0e3a0cc515a2c",
+        "source_bytes": 12036,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-168db614dd8322b5bd918647",
+        "source_bytes": 12028,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c0079506b99725301481ae31",
+        "source_bytes": 12024,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-c874482d825ae6d27d1da8a9",
+        "source_bytes": 12023,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-697c2b379912a1e2c8751136",
+        "source_bytes": 1044,
+        "shown_bytes": 1044,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-09f2219bbca54a0486eacda0",
+        "source_bytes": 12104,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-7c637e72cd5ffda48f9355ae",
+        "source_bytes": 12030,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000228125-000228183",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "verdict_logic",
+          "reason": "原文的条件预测是：一些发展中国家以货币机制推动经济发展后，到需要高科技/高技术人才时，出现“难找这样的人才”。其可检验的主要结果是“高技术/专业人才短缺、招聘困难”这一后果是否出现。所引世界银行、ADB材料均显示多个发展中国家在增长与升级阶段企业普遍报告技术、专业、管理岗位技能不足、招聘困难，方向与原文后果一致，属于主要结果符合，应判“正确”，而非“部分符合”。建议把“部分符合”建立在“证据只覆盖部分国家”“因果机制未检验”上：前者是宽泛集合“一些发展中国家”的正常覆盖限制，后者是作者的原因解释，按口径不自动成为结果成立的门槛，二者都不构成主要分项/阶段的实质分化，不能据此降为部分符合。",
+          "quote_ref": "q2",
+          "source_quote": "原文对“一些发展中国家”的条件性判断：以货币机制推动经济发展、产业升级需要高科技/高技术人才时出现技术人才难找。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议同时设置trend_aligned=true，但“部分符合”的理由并非“主要方向已有持续观察证据而最终终点未到”，而是覆盖与机制限制；这与五类互斥口径不符。若维持主要结果符合，应改为“正确”，trend_aligned不应作为该结论的支撑；若确要判部分符合，必须指出后果B哪些具体部分实现、哪些未实现及其直接证据，而当前reason只罗列覆盖与机制缺口，未给出后果分项的直接分化证据。",
+          "quote_ref": "q3",
+          "source_quote": "回顾性操作化为：多个发展中国家在经济发展与产业升级阶段，雇主/企业报告高技术、专业、管理人才短缺或招聘困难；观察窗口为1991年（出版年代理起点）至2026-11-09截止日前的可得证据。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需将verdict由“部分符合”修正为“正确”（主要结果符合），并把“一些发展中国家”的覆盖限制与货币激励因果渠道未检验写入limitation，而非作为降级依据；若坚持“部分符合”，须补充后果B具体分项实现/未实现的直接证据。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000228125-000228183",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原文的真实条件不只是“经济发展、需要高科技人才”，还包括“货币力量趋使人们寻找简单劳动挣钱，而非复杂劳动”这一机制性前提；建议把condition_state直接写成satisfied，但所引证据只显示多国存在技能短缺/招聘困难，并未确认这些国家确实经历了“货币激励导致简单劳动偏好、抑制复杂劳动供给”的条件。条件是否触发仍属未知，不能直接判为已满足。",
+          "source_quote": "高科技高技术了，才发现难找这样的人才，因为货币力量会趋使人们寻找简单劳动",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "在真实条件（货币激励导致简单劳动偏好）未被证据确认的情况下，把结论定为“正确”过强。所引材料至多支持“多个发展中国家在产业升级阶段出现高技术/专业人才短缺”这一后果方向，但无法确认原文条件已发生，也无法确认这是原文所指“一些发展中国家”的特定集合。按口径应保留条件状态与对象覆盖的具体未定，而非直接判正确。",
+          "source_quote": "原文对“一些发展中国家”的条件性判断：以货币机制推动经济发展、产业升级需要高科技/高技术人才时出现技术人才难找。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充能确认原文真实条件（货币激励使人们偏好简单劳动、抑制复杂劳动/高技术人才供给）在所指发展中国家确实发生的直接证据，或明确该条件无法核实而将condition_state与verdict改为相应未定；同时需说明跨国技能短缺证据如何对应原文“一些发展中国家”的特定集合，而非仅泛化为一般技能缺口。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000228125-000228183",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "原文对“一些发展中国家”的条件性判断：以货币机制推动经济发展、产业升级需要高科技/高技术人才时出现技术人才难找。回顾性操作化为：多个发展中国家在经济发展与产业升级阶段，雇主/企业报告高技术、专业、管理人才短缺或招聘困难；观察窗口为1991年（出版年代理起点）至2026-11-09截止日前的可得证据。",
+      "reason": "多份世界银行及ADB材料显示，多个发展中国家在经济增长与产业升级过程中，企业普遍报告技术、专业和管理岗位技能不足、招聘困难，方向与原文判断一致。但原文的因果机制（货币激励使人追逐简单劳动、抑制复杂劳动供给）未被这些材料直接检验，且“一些发展中国家”为宽泛集合，证据只能支持部分国家存在该现象。",
+      "limitation": "证据多为雇主主观报告或截面调查，不能证明货币激励这一因果渠道；原文未指定国家和期限，跨国证据只能部分覆盖“一些发展中国家”，不能视为全称成立。",
+      "evidence_ids": [
+        "prior-7fb5a52143557f293bd0",
+        "ev-697c2b379912a1e2c8751136",
+        "ev-09f2219bbca54a0486eacda0",
+        "ev-168db614dd8322b5bd918647"
+      ],
+      "method": "从短期金钱激励外推人力资本积累不足",
+      "method_basis": "explicit",
+      "observation_end": "2026-11-09",
+      "future_time_text": "等到经济发展、需要高科技高技术时",
+      "condition_state": "satisfied",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-7fb5a52143557f293bd0",
+          "relation": "support",
+          "quote": "很多企业报告适合技术、专业和管理职位的技能不足，招聘困难。",
+          "publication_date": "2014",
+          "observation_end": null,
+          "limitation": "世界银行报告摘要，仅概括越南情况，未提供因果识别，且为二手摘录。"
+        },
+        {
+          "evidence_id": "ev-697c2b379912a1e2c8751136",
+          "relation": "support",
+          "quote": "employers’ perceptions of inadequate workforce educational levels as a relative and absolute constraint to firm growth and performance",
+          "publication_date": "2012-05-01",
+          "observation_end": null,
+          "limitation": "基于25个中低收入国家企业调查的雇主主观感知，仅覆盖正规部门，不能证明货币激励机制。"
+        },
+        {
+          "evidence_id": "ev-09f2219bbca54a0486eacda0",
+          "relation": "support",
+          "quote": "Asia lacks a wide class of occupational skills relevant to a modern economy, and areas that are critical to growth are seeing large and growing mismatches between the skills that employers need and the skills that employees have.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "ADB 2008年报告，描述亚洲整体技能缺口，未区分货币机制，且发表日期元数据缺失。"
+        },
+        {
+          "evidence_id": "ev-168db614dd8322b5bd918647",
+          "relation": "support",
+          "quote": "employers frequently complain that workers’ lack of skills is a constraint to their business.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "世界银行2015年报告，为跨国概述，未提供因果检验，发表日期元数据缺失。"
+        }
+      ],
+      "remaining_gap": "缺少直接检验“货币激励导致简单劳动偏好、进而抑制高技术人才供给”这一因果渠道的证据；也缺少对原文所指具体发展中国家集合的系统性覆盖。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000228125-000228183",
+      "inclusion": "forecast",
+      "verdict": "正确",
+      "basis": "observed_window",
+      "scope": "原文对“一些发展中国家”的条件性判断：以货币机制推动经济发展、产业升级需要高科技/高技术人才时出现技术人才难找。回顾性操作化为：多个发展中国家在经济发展与产业升级阶段，雇主/企业报告高技术、专业、管理人才短缺或招聘困难；观察窗口为1991年（出版年代理起点）至2026-11-09截止日前的可得证据。",
+      "reason": "多份世界银行及ADB材料显示，多个发展中国家在经济增长与产业升级过程中，企业普遍报告技术、专业和管理岗位技能不足、招聘困难，主要可观测后果与原文判断方向一致。原文的因果机制（货币激励使人追逐简单劳动、抑制复杂劳动供给）未被这些材料直接检验，但按口径不自动成为结果成立的门槛。",
+      "limitation": "证据多为雇主主观报告或截面调查，不能证明货币激励这一因果渠道；原文未指定国家和期限，跨国证据只能覆盖“一些发展中国家”的部分集合，不能视为全称成立。修订要点：将verdict由“部分符合”改为“正确”，把覆盖限制与因果机制未检验写入limitation而非作为降级依据。",
+      "evidence_ids": [
+        "prior-7fb5a52143557f293bd0",
+        "ev-697c2b379912a1e2c8751136",
+        "ev-09f2219bbca54a0486eacda0",
+        "ev-168db614dd8322b5bd918647"
+      ],
+      "method": "从短期金钱激励外推人力资本积累不足",
+      "method_basis": "explicit",
+      "observation_end": "2026-11-09",
+      "future_time_text": "等到经济发展、需要高科技高技术时",
+      "condition_state": "satisfied",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-7fb5a52143557f293bd0",
+          "relation": "support",
+          "quote": "很多企业报告适合技术、专业和管理职位的技能不足，招聘困难。",
+          "publication_date": "2014",
+          "observation_end": null,
+          "limitation": "世界银行报告摘要，仅概括越南情况，未提供因果识别，且为二手摘录。"
+        },
+        {
+          "evidence_id": "ev-697c2b379912a1e2c8751136",
+          "relation": "support",
+          "quote": "employers’ perceptions of inadequate workforce educational levels as a relative and absolute constraint to firm growth and performance",
+          "publication_date": "2012-05-01",
+          "observation_end": null,
+          "limitation": "基于25个中低收入国家企业调查的雇主主观感知，仅覆盖正规部门，不能证明货币激励机制。"
+        },
+        {
+          "evidence_id": "ev-09f2219bbca54a0486eacda0",
+          "relation": "support",
+          "quote": "Asia lacks a wide class of occupational skills relevant to a modern economy, and areas that are critical to growth are seeing large and growing mismatches between the skills that employers need and the skills that employees have.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "ADB 2008年报告，描述亚洲整体技能缺口，未区分货币机制，且发表日期元数据缺失。"
+        },
+        {
+          "evidence_id": "ev-168db614dd8322b5bd918647",
+          "relation": "support",
+          "quote": "employers frequently complain that workers’ lack of skills is a constraint to their business.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "世界银行2015年报告，为跨国概述，未提供因果检验，发表日期元数据缺失。"
+        }
+      ],
+      "remaining_gap": "缺少直接检验“货币激励导致简单劳动偏好、进而抑制高技术人才供给”这一因果渠道的证据；也缺少对原文所指具体发展中国家集合的系统性覆盖。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "王沪宁对“一些发展中国家”的条件性判断：这些国家以货币机制推动经济发展后，到产业升级需要高科技/高技术人才时，出现技术人才难找；可观察口径为多个发展中国家在经济发展与产业升级阶段出现高技术/专业/管理人才短缺、招聘困难的直接证据，反证为同期这些国家技术人才供给充足或短缺不构成主要瓶颈。原文未指定国家和期限，故以跨国、多国证据评估，不以单一国家覆盖全称。",
+  "elapsed_seconds": 42.83,
+  "completed_at": "2026-11-09T10:42:27.212539+00:00"
+}

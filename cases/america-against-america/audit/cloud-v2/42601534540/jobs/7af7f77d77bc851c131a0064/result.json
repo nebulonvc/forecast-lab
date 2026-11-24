@@ -1,0 +1,1057 @@
+{
+  "claim_id": "txt-1c4066fc0c-000049051-000049136",
+  "version": "search-verifier-v2",
+  "input_sha256": "0df6e93f4a475b2633ce41a0b174ea7e365c7c9d1130d736099e732e74dbd3b8",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000049051-000049136",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "对象：王沪宁1991年前后判断的“美国社会全面协调需要与美国人意识形态/情感抗拒之间的挑战还将持续多年”。操作化：以1991年后美国在政府职能、财政与福利协调上持续出现难以达成全面协调的治理冲突（预算僵局、政府停摆、赤字与支出占比压力）为观察指标；观察窗口为1991年至2026-11-09（cutoff）。",
+    "reason": "自动复核未确认主要判断：建议把观察窗口写成“1991年至2026-11-09（cutoff）”，但所引2025年停摆材料发表于2026-11-04，且文中称停摆“ended on November 12”，未标年份；若按2025年11月12日结束，则属cutoff前已实现结果，但建议的observation_end与scope窗口写法把“2026-11-09”当作观察终点，混淆了cutoff、证据发表日与实际观察期。应明确观察期截至cutoff前可取得的结果，并保留2025-11-12这一实际结束日，不把cutoff日当作事实观察日。; 建议判“部分符合、趋势符合”，但reason中把“同期也有福利改革、平衡预算等协调进展”作为降为部分符合的理由，而scope的反证口径是“很快形成稳定、全面的协调机制且相关冲突基本消失”。局部协调进展只能作为缓解或限制，不能仅凭它把“挑战持续多年”的趋势判断降为部分符合；若主要方向已有持续证据且终点未到，应保持趋势符合（部分符合且trend_aligned=true）并说明限制，或明确指出后果B哪些具体部分未实现。当前未指出“挑战持续多年”这一后果的哪些具体部分未实现，分类理由不足。",
+    "limitation": "仅以治理冲突的持续作为代理指标，未直接测量美国人的意识形态/情感抗拒；1990年代平衡预算与福利改革显示存在部分协调进展，不能据此断言冲突完全消失或永远持续。2025年停摆仅见媒体综述，缺独立官方核实来源。",
+    "evidence_ids": [
+      "ev-2486926213ec8efe5669bd31",
+      "ev-99dab9f558dc70bd28f2a811",
+      "ev-b59a59530a9e21f11caa829e",
+      "prior-2fe65b93d3849ebc45af",
+      "ev-690280699e447e748b64621b",
+      "ev-7bd9fdaebe3acde8140e0f5a"
+    ],
+    "method": "由治理需求与传统价值间矛盾推断制度转型持续困难",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "还将持续多年",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-2486926213ec8efe5669bd31",
+        "relation": "support",
+        "quote": "The partial government shutdown reached a record 35 days under President Trump in January 2019, topping the previous record of 21 days, set under President Bill Clinton in 1995-96.",
+        "publication_date": "2019-01-10",
+        "observation_end": "2019-01-25",
+        "limitation": "仅列五次最长停摆，非完整清单；观察止于2019年初。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-99dab9f558dc70bd28f2a811",
+        "relation": "support",
+        "quote": "Since FY1977, 23 funding gaps have occurred, ranging in duration from 1 day to 75 full days.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "CRS页面无发表日期，观察期含FY2026条目，具体截止不明；仅证明拨款缺口频发，不直接证明意识形态抗拒。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-b59a59530a9e21f11caa829e",
+        "relation": "support",
+        "quote": "The record for a U.S. government shutdown now stands at 43 days. That shutdown began on October 1, 2025, and ended on November 12, when President Donald Trump signed a funding bill.",
+        "publication_date": "2026-11-04",
+        "observation_end": "2025-11-12",
+        "limitation": "该文发表于cutoff前，所述2025年停摆结束于2025-11-12，属cutoff前已实现结果；为媒体综述，非官方统计，verified=false。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-2fe65b93d3849ebc45af",
+        "relation": "support",
+        "quote": "美国财政部2024决算：赤字约1.8万亿美元，支出占GDP从2023年的22.5%升至2024年的23.4%，收入也增加。",
+        "publication_date": "2024-10-18",
+        "observation_end": "2024-09-30",
+        "limitation": "仅反映2024财年财政压力，不能单独证明协调失败或意识形态抗拒。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-690280699e447e748b64621b",
+        "relation": "counter",
+        "quote": "We've turned record deficits into record surpluses, as Governor Carper said.",
+        "publication_date": "1999-08-08",
+        "observation_end": "1999-08-08",
+        "limitation": "克林顿讲话为政治自述，显示1990年代末出现财政协调进展，构成对“持续冲突”的反例，但不否定长期冲突延续。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-7bd9fdaebe3acde8140e0f5a",
+        "relation": "counter",
+        "quote": "The Vice President’s Reinventing Government Initiative has resulted in 377,000 fewer civilian employees in the federal government — the lowest level since the Kennedy Administration — and reduced federal spending as a share of the economy from 22.2 percent in 1992 to a projected 18.5 percent in 2000, the lowest since 1966.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "官方成就清单，含2000年预测值；无发表日期，仅证明存在政府改革与支出缩减努力，属部分协调进展。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      }
+    ],
+    "remaining_gap": "需修正观察窗口与observation_end的写法：区分cutoff、证据发表日和实际观察期，明确2025年停摆结束日（2025-11-12）属cutoff前结果；并修正verdict_logic，说明局部协调进展只作为限制而非降级依据，或具体列出“挑战持续多年”后果中哪些部分未实现及直接证据。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000049051-000049136",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象：1991年前后王沪宁判断的“美国社会全面协调需要与美国人意识形态/情感抗拒之间的挑战还将持续多年”。操作化：以1991年后美国在政府职能、财政与福利协调上持续出现难以达成全面协调的治理冲突（预算僵局、政府停摆、赤字与支出占比压力）为观察指标；观察窗口为1991年至2026-11-09（cutoff）。",
+    "reason": "1991年后美国持续出现预算僵局与政府停摆（1995-96、2013、2018-19、2025年43天等），财政赤字与支出占比压力延续，符合“挑战持续多年”的方向；但“全面协调需要与意识形态抗拒”的因果机制未获直接证明，且同期也有福利改革、平衡预算等协调进展，故为部分符合、趋势符合。",
+    "limitation": "仅以治理冲突的持续作为代理指标，未直接测量美国人的意识形态/情感抗拒；1990年代平衡预算与福利改革显示存在部分协调进展，不能据此断言冲突完全消失或永远持续。",
+    "evidence_ids": [
+      "ev-2486926213ec8efe5669bd31",
+      "ev-99dab9f558dc70bd28f2a811",
+      "ev-b59a59530a9e21f11caa829e",
+      "prior-2fe65b93d3849ebc45af",
+      "ev-690280699e447e748b64621b",
+      "ev-7bd9fdaebe3acde8140e0f5a"
+    ],
+    "method": "由治理需求与传统价值间矛盾推断制度转型持续困难",
+    "method_basis": "inferred",
+    "observation_end": "2026-11-09",
+    "future_time_text": "还将持续多年",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-2486926213ec8efe5669bd31",
+        "relation": "support",
+        "quote": "The partial government shutdown reached a record 35 days under President Trump in January 2019, topping the previous record of 21 days, set under President Bill Clinton in 1995-96.",
+        "publication_date": "2019-01-10",
+        "observation_end": "2019-01-25",
+        "limitation": "仅列五次最长停摆，非完整清单；观察止于2019年初。"
+      },
+      {
+        "evidence_id": "ev-99dab9f558dc70bd28f2a811",
+        "relation": "support",
+        "quote": "Since FY1977, 23 funding gaps have occurred, ranging in duration from 1 day to 75 full days.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "CRS页面无发表日期，观察期含FY2026条目，具体截止不明；仅证明拨款缺口频发，不直接证明意识形态抗拒。"
+      },
+      {
+        "evidence_id": "ev-b59a59530a9e21f11caa829e",
+        "relation": "support",
+        "quote": "The record for a U.S. government shutdown now stands at 43 days. That shutdown began on October 1, 2025, and ended on November 12, when President Donald Trump signed a funding bill.",
+        "publication_date": "2026-11-04",
+        "observation_end": "2025-11-12",
+        "limitation": "该文发表于cutoff前，但所述2025年停摆结束于2025-11-12，属cutoff前已实现结果；为媒体综述，非官方统计。"
+      },
+      {
+        "evidence_id": "prior-2fe65b93d3849ebc45af",
+        "relation": "support",
+        "quote": "美国财政部2024决算：赤字约1.8万亿美元，支出占GDP从2023年的22.5%升至2024年的23.4%，收入也增加。",
+        "publication_date": "2024-10-18",
+        "observation_end": "2024-09-30",
+        "limitation": "仅反映2024财年财政压力，不能单独证明协调失败或意识形态抗拒。"
+      },
+      {
+        "evidence_id": "ev-690280699e447e748b64621b",
+        "relation": "counter",
+        "quote": "We've turned record deficits into record surpluses, as Governor Carper said.",
+        "publication_date": "1999-08-08",
+        "observation_end": "1999-08-08",
+        "limitation": "克林顿讲话为政治自述，显示1990年代末出现财政协调进展，构成对“持续冲突”的反例，但不否定长期冲突延续。"
+      },
+      {
+        "evidence_id": "ev-7bd9fdaebe3acde8140e0f5a",
+        "relation": "counter",
+        "quote": "The Vice President’s Reinventing Government Initiative has resulted in 377,000 fewer civilian employees in the federal government — the lowest level since the Kennedy Administration — and reduced federal spending as a share of the economy from 22.2 percent in 1992 to a projected 18.5 percent in 2000, the lowest since 1966.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "官方成就清单，含2000年预测值；无发表日期，仅证明存在政府改革与支出缩减努力，属部分协调进展。"
+      }
+    ],
+    "remaining_gap": "缺少直接测量“美国人意识形态/情感抗拒全面协调”的民意或行为指标；治理冲突代理只能间接支持趋势，最终“持续多年”的终点无法精确界定。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-d89de3a128b0bbac0ae3",
+      "url": "https://www.govinfo.gov/content/pkg/GOVPUB-Y10-PURL-gpo115381/pdf/GOVPUB-Y10-PURL-gpo115381.pdf",
+      "title": "ev-lane1-shutdown",
+      "published_date": "2019-01-28",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2019-01-28",
+        "latest": "2019-01-28"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane1-shutdown",
+      "archive_sha256": "0d79075d481c225a242dc4ecdf61e39e2b658c081dac9318beaf37cc657cf259",
+      "archive_path": "data/sources/lane1-shutdown.pdf",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-2fe65b93d3849ebc45af",
+      "url": "https://home.treasury.gov/news/press-releases/jy2657",
+      "title": "ev-budget",
+      "published_date": "2024-10-18",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-10-18",
+        "latest": "2024-10-18"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-budget",
+      "archive_sha256": "357cda3c8aac9ade2875be537b7f9f3442c931d8ceaa29a8c568c4a3e22d2a99",
+      "archive_path": "data/sources/357cda3c8aac9ade2875be537b7f9f3442c931d8ceaa29a8c568c4a3e22d2a99.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-0b724976e27c3c07355d0f4f",
+      "url": "https://history.house.gov/Institution/Shutdown/Government-Shutdowns/",
+      "resolved_url": "https://history.house.gov/Institution/Shutdown/Government-Shutdowns/",
+      "title": "Funding Gaps and Shutdowns in the Federal Government         |     \n\n    \n    US House of Representatives: History, Art & Archives",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:52.379580+00:00",
+      "archive_sha256": "b07790086727c91e790e62b81247ea170785cda353cb4782665e9a55452569a2",
+      "archive_path": "jobs/7af7f77d77bc851c131a0064/b07790086727c91e790e62b81247ea170785cda353cb4782665e9a55452569a2.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-b59a59530a9e21f11caa829e",
+      "url": "https://qz.com/longest-government-shutdowns-us-history",
+      "resolved_url": "https://qz.com/longest-government-shutdowns-us-history",
+      "title": "5 of the longest government shutdowns in U.S. history",
+      "published_date": "2026-11-04",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-11-04",
+        "latest": "2026-11-04"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:52.379720+00:00",
+      "archive_sha256": "e5eeda197c5b5c9d2aee91ed651e015e866ec8dcca3613aee6e99700a86473bf",
+      "archive_path": "jobs/7af7f77d77bc851c131a0064/e5eeda197c5b5c9d2aee91ed651e015e866ec8dcca3613aee6e99700a86473bf.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-690280699e447e748b64621b",
+      "url": "https://www.presidency.ucsb.edu/documents/remarks-the-national-governors-association-st-louis-missouri",
+      "resolved_url": "https://www.presidency.ucsb.edu/documents/remarks-the-national-governors-association-st-louis-missouri",
+      "title": "Remarks to the National Governors' Association in St. Louis, Missouri | The American Presidency Project",
+      "published_date": "1999-08-08",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "1999-08-08",
+        "latest": "1999-08-08"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:52.379815+00:00",
+      "archive_sha256": "d04fa1152768da091edab5cf7c49425c36451118886fe8a1c570392090e8e600",
+      "archive_path": "jobs/7af7f77d77bc851c131a0064/d04fa1152768da091edab5cf7c49425c36451118886fe8a1c570392090e8e600.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-517cb70d5124af21fa13ac36",
+      "url": "https://www.govinfo.gov/content/pkg/BUDGET-1997-BUDSUPP/pdf/BUDGET-1997-BUDSUPP-7-2.pdf",
+      "resolved_url": "https://www.govinfo.gov/content/pkg/BUDGET-1997-BUDSUPP/pdf/BUDGET-1997-BUDSUPP-7-2.pdf",
+      "title": "14. BUILDING ON SUCCESS",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:52.379898+00:00",
+      "archive_sha256": "25471f82a9090c8c64ed5905ea5aeae6603136fc36ac33b79ebff853d7afca6d",
+      "archive_path": "jobs/7af7f77d77bc851c131a0064/25471f82a9090c8c64ed5905ea5aeae6603136fc36ac33b79ebff853d7afca6d.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-99dab9f558dc70bd28f2a811",
+      "url": "https://www.congress.gov/crs_external_products/RS/HTML/RS20348.web.html",
+      "resolved_url": "https://www.congress.gov/crs_external_products/RS/HTML/RS20348.web.html",
+      "title": "Table 1. Appropriations Funding Gaps Since FY1977",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:03.553066+00:00",
+      "archive_sha256": "46cf1238438782035b853ba2dd3adcebeb6e207f34eefdbfa0e0990eb251b6d6",
+      "archive_path": "jobs/7af7f77d77bc851c131a0064/46cf1238438782035b853ba2dd3adcebeb6e207f34eefdbfa0e0990eb251b6d6.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-2486926213ec8efe5669bd31",
+      "url": "https://dataviz.nbcnews.com/projects/20190110-longest-shutdown/",
+      "resolved_url": "https://dataviz.nbcnews.com/projects/20190110-longest-shutdown/",
+      "title": "5 longest government shutdowns",
+      "published_date": "2019-01-10",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2019-01-10",
+        "latest": "2019-01-10"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:03.553191+00:00",
+      "archive_sha256": "633f487d3b6ed471ff584c9ed71d37b5c59ad35cf06ac387d3dc1def5fbea34d",
+      "archive_path": "jobs/7af7f77d77bc851c131a0064/633f487d3b6ed471ff584c9ed71d37b5c59ad35cf06ac387d3dc1def5fbea34d.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-7bd9fdaebe3acde8140e0f5a",
+      "url": "https://clintonwhitehouse5.archives.gov/textonly/WH/Accomplishments/eightyears-02.html",
+      "resolved_url": "https://clintonwhitehouse5.archives.gov/textonly/WH/Accomplishments/eightyears-02.html",
+      "title": "The Clinton Presidency:  Timeline of Major Actions",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:03.553290+00:00",
+      "archive_sha256": "f95b98fa492958759ce31fd9c5bc4115783e8d003f254b073531c4aecce5d06f",
+      "archive_path": "jobs/7af7f77d77bc851c131a0064/f95b98fa492958759ce31fd9c5bc4115783e8d003f254b073531c4aecce5d06f.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "US government shutdown budget impasse 1995 2013 2018 federal spending conflict history",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "United States comprehensive coordination government reform successful 1990s welfare reform balanced budget",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "US federal government shutdowns 1995 1996 2013 2018 2019 budget impasse history table",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "United States 1990s balanced budget welfare reform government reinvention successful comprehensive coordination",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-7bd9fdaebe3acde8140e0f5a",
+        "ev-99dab9f558dc70bd28f2a811"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "remaining_gap": "需修正观察窗口与observation_end的写法：区分cutoff、证据发表日和实际观察期，明确2025年停摆结束日（2025-11-12）属cutoff前结果；并修正verdict_logic，说明局部协调进展只作为限制而非降级依据，或具体列出“挑战持续多年”后果中哪些部分未实现及直接证据。",
+  "source_statuses": [
+    {
+      "url": "https://history.house.gov/Institution/Shutdown/Government-Shutdowns/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://qz.com/longest-government-shutdowns-us-history",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.presidency.ucsb.edu/documents/remarks-the-national-governors-association-st-louis-missouri",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.govinfo.gov/content/pkg/BUDGET-1997-BUDSUPP/pdf/BUDGET-1997-BUDSUPP-7-2.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.congress.gov/crs_external_products/RS/HTML/RS20348.web.html",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://dataviz.nbcnews.com/projects/20190110-longest-shutdown/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://clintonwhitehouse5.archives.gov/textonly/WH/Accomplishments/eightyears-02.html",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "对象：王沪宁1991年前后判断的“美国社会全面协调需要与美国人意识形态/情感抗拒之间的挑战还将持续多年”。可观察口径：1991年后至少延续约十年以上，美国在政府职能扩张/缩减、财政与福利协调上持续出现难以达成全面协调的治理冲突（预算僵局、政府停摆、赤字与支出占比压力）。反证：若1991年后很快形成稳定、全面的协调机制且相关冲突基本消失，则相反。文化/意识形态因果机制不单独作为结果成立门槛，仅在limitation说明。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "703071447517e16c8e2350bf2b019f4de7a247eb5adeebf5077fd9ad29f7e57b"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "30f71ed9026b8bfe0a862c706b1e48c7",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "2a2549172bc2df2fbe7393a7333ad8e8",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "7bdb4cdd1ca52d62930ff867571407b9cec5fda7ad7801bce7eb2d83178073db"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "c40cd79ec1fba34bbefb1b765c98eebe",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "c512d3dd99269d34cf758f79f62cc507a177529e85c7ad851ec1ea5dcf02b2fe"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b9fc64266d13ef9f0f4463b7de11f978",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "6d738cedcd2c721900dce941c4ba3c12",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "1be23a3a6a6c5311a4d28f39356e6d7761ab9137f8f6e0c5e95035f3a9f82370"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "30a2a2038fa5462bcd42b0e4024c7881",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "5162b9e95bd5f7c6035b35755050e18066a02f86eb3813b63ddccd1601260c41"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "bcb5ee8cffbaffec77608328c2343cfbff8233d753a095000840231100282219"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "63e2d44dd8213ea58a08350f6c952533fcb83b8787430d61a3075c06e3c2fa64"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "b28522555a3a485580063bc2cbc9600d34c7ce8519fb17f0c3fbf8f4a19c4c81"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-7bd9fdaebe3acde8140e0f5a",
+            "ev-99dab9f558dc70bd28f2a811"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-7bd9fdaebe3acde8140e0f5a",
+            "ev-99dab9f558dc70bd28f2a811"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-d89de3a128b0bbac0ae3",
+        "source_bytes": 105,
+        "shown_bytes": 105,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-2fe65b93d3849ebc45af",
+        "source_bytes": 127,
+        "shown_bytes": 127,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-0b724976e27c3c07355d0f4f",
+        "source_bytes": 11382,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-b59a59530a9e21f11caa829e",
+        "source_bytes": 12017,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-690280699e447e748b64621b",
+        "source_bytes": 12026,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-517cb70d5124af21fa13ac36",
+        "source_bytes": 12110,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-99dab9f558dc70bd28f2a811",
+        "source_bytes": 12004,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-2486926213ec8efe5669bd31",
+        "source_bytes": 742,
+        "shown_bytes": 742,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-7bd9fdaebe3acde8140e0f5a",
+        "source_bytes": 12050,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-d89de3a128b0bbac0ae3",
+        "source_bytes": 105,
+        "shown_bytes": 105,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-2fe65b93d3849ebc45af",
+        "source_bytes": 127,
+        "shown_bytes": 127,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-0b724976e27c3c07355d0f4f",
+        "source_bytes": 11382,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-b59a59530a9e21f11caa829e",
+        "source_bytes": 12017,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-690280699e447e748b64621b",
+        "source_bytes": 12026,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-517cb70d5124af21fa13ac36",
+        "source_bytes": 12110,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-99dab9f558dc70bd28f2a811",
+        "source_bytes": 12004,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-2486926213ec8efe5669bd31",
+        "source_bytes": 742,
+        "shown_bytes": 742,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-7bd9fdaebe3acde8140e0f5a",
+        "source_bytes": 12050,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-d89de3a128b0bbac0ae3",
+        "source_bytes": 105,
+        "shown_bytes": 105,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-2fe65b93d3849ebc45af",
+        "source_bytes": 127,
+        "shown_bytes": 127,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-0b724976e27c3c07355d0f4f",
+        "source_bytes": 11382,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-b59a59530a9e21f11caa829e",
+        "source_bytes": 12017,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-690280699e447e748b64621b",
+        "source_bytes": 12026,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-517cb70d5124af21fa13ac36",
+        "source_bytes": 12110,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-99dab9f558dc70bd28f2a811",
+        "source_bytes": 12004,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-2486926213ec8efe5669bd31",
+        "source_bytes": 742,
+        "shown_bytes": 742,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-7bd9fdaebe3acde8140e0f5a",
+        "source_bytes": 12050,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-d89de3a128b0bbac0ae3",
+        "source_bytes": 105,
+        "shown_bytes": 105,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-2fe65b93d3849ebc45af",
+        "source_bytes": 127,
+        "shown_bytes": 127,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-0b724976e27c3c07355d0f4f",
+        "source_bytes": 11382,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-b59a59530a9e21f11caa829e",
+        "source_bytes": 12017,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-690280699e447e748b64621b",
+        "source_bytes": 12026,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-517cb70d5124af21fa13ac36",
+        "source_bytes": 12110,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-99dab9f558dc70bd28f2a811",
+        "source_bytes": 12004,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-2486926213ec8efe5669bd31",
+        "source_bytes": 742,
+        "shown_bytes": 742,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-7bd9fdaebe3acde8140e0f5a",
+        "source_bytes": 12050,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000049051-000049136",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "evidence_support",
+          "reason": "建议把“1995-96、2013、2018-19、2025年43天等”停摆作为“挑战持续多年”的支撑，但所引证据中，ev-2486926213ec8efe5669bd31只列五次最长停摆（1977、1978、1995-96、2013、2018-19），不含2013年之外的完整清单，也不含2025年；ev-b59a59530a9e21f11caa829e虽提到2025年43天停摆，但该来源verified=false，且其正文所述2025年停摆“ended on November 12”，而该来源发表于2026-11-04，属cutoff前可得，但建议在reason中把2025年停摆与1995-96、2013、2018-19并列作为“持续出现”的支撑，缺少对2025年停摆的独立官方或已核实来源；ev-99dab9f558dc70bd28f2a811只证明FY1977以来有23次拨款缺口，未直接证明1991年后“持续”出现难以达成全面协调的治理冲突，也未证明2025年停摆。",
+          "source_quote": "Since FY1977, 23 funding gaps have occurred, ranging in duration from 1 day to 75 full days.",
+          "evidence_id": "ev-99dab9f558dc70bd28f2a811",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议结论为“部分符合、趋势符合”，但reason中把“福利改革、平衡预算等协调进展”作为降为部分符合的理由之一，而limitation又说这些进展“不能据此断言冲突完全消失或永远持续”。按统一口径，若主要方向已有持续观察证据而最终终点未到，应为趋势符合（verdict=部分符合且trend_aligned=true）；若存在实质分项/阶段分化才为部分符合。建议未具体指出后果B哪些部分实现、哪些未实现及其直接证据，仅以“同期也有协调进展”降级，属于把缓解性反例当作分项分化，分类理由不充分。",
+          "source_quote": "1991年后美国持续出现预算僵局与政府停摆（1995-96、2013、2018-19、2025年43天等），财政赤字与支出占比压力延续，符合“挑战持续多年”的方向；但“全面协调需要与意识形态抗拒”的因果机制未获直接证明，且同期也有福利改革、平衡预算等协调进展，故为部分符合、趋势符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充1991年后（尤其2025年）政府停摆/预算僵局的已核实官方来源或完整清单，以支撑“持续多年”的方向；并明确后果B（挑战持续）哪些具体部分实现、哪些未实现，避免仅以“存在协调进展”降为部分符合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000049051-000049136",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "fail",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "time_alignment",
+          "reason": "建议把观察窗口写成“1991年至2026-11-09（cutoff）”，但所引2025年停摆材料发表于2026-11-04，且文中称停摆“ended on November 12”，未标年份；若按2025年11月12日结束，则属cutoff前已实现结果，但建议的observation_end与scope窗口写法把“2026-11-09”当作观察终点，混淆了cutoff、证据发表日与实际观察期。应明确观察期截至cutoff前可取得的结果，并保留2025-11-12这一实际结束日，不把cutoff日当作事实观察日。",
+          "quote_ref": "q3",
+          "source_quote": "操作化：以1991年后美国在政府职能、财政与福利协调上持续出现难以达成全面协调的治理冲突（预算僵局、政府停摆、赤字与支出占比压力）为观察指标；观察窗口为1991年至2026-11-09（cutoff）。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议判“部分符合、趋势符合”，但reason中把“同期也有福利改革、平衡预算等协调进展”作为降为部分符合的理由，而scope的反证口径是“很快形成稳定、全面的协调机制且相关冲突基本消失”。局部协调进展只能作为缓解或限制，不能仅凭它把“挑战持续多年”的趋势判断降为部分符合；若主要方向已有持续证据且终点未到，应保持趋势符合（部分符合且trend_aligned=true）并说明限制，或明确指出后果B哪些具体部分未实现。当前未指出“挑战持续多年”这一后果的哪些具体部分未实现，分类理由不足。",
+          "quote_ref": "q2",
+          "source_quote": "对象：王沪宁1991年前后判断的“美国社会全面协调需要与美国人意识形态/情感抗拒之间的挑战还将持续多年”。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正观察窗口与observation_end的写法：区分cutoff、证据发表日和实际观察期，明确2025年停摆结束日（2025-11-12）属cutoff前结果；并修正verdict_logic，说明局部协调进展只作为限制而非降级依据，或具体列出“挑战持续多年”后果中哪些部分未实现及直接证据。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000049051-000049136",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象：1991年前后王沪宁判断的“美国社会全面协调需要与美国人意识形态/情感抗拒之间的挑战还将持续多年”。操作化：以1991年后美国在政府职能、财政与福利协调上持续出现难以达成全面协调的治理冲突（预算僵局、政府停摆、赤字与支出占比压力）为观察指标；观察窗口为1991年至2026-11-09（cutoff）。",
+      "reason": "1991年后美国持续出现预算僵局与政府停摆（1995-96、2013、2018-19、2025年43天等），财政赤字与支出占比压力延续，符合“挑战持续多年”的方向；但“全面协调需要与意识形态抗拒”的因果机制未获直接证明，且同期也有福利改革、平衡预算等协调进展，故为部分符合、趋势符合。",
+      "limitation": "仅以治理冲突的持续作为代理指标，未直接测量美国人的意识形态/情感抗拒；1990年代平衡预算与福利改革显示存在部分协调进展，不能据此断言冲突完全消失或永远持续。",
+      "evidence_ids": [
+        "ev-2486926213ec8efe5669bd31",
+        "ev-99dab9f558dc70bd28f2a811",
+        "ev-b59a59530a9e21f11caa829e",
+        "prior-2fe65b93d3849ebc45af",
+        "ev-690280699e447e748b64621b",
+        "ev-7bd9fdaebe3acde8140e0f5a"
+      ],
+      "method": "由治理需求与传统价值间矛盾推断制度转型持续困难",
+      "method_basis": "inferred",
+      "observation_end": "2026-11-09",
+      "future_time_text": "还将持续多年",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-2486926213ec8efe5669bd31",
+          "relation": "support",
+          "quote": "The partial government shutdown reached a record 35 days under President Trump in January 2019, topping the previous record of 21 days, set under President Bill Clinton in 1995-96.",
+          "publication_date": "2019-01-10",
+          "observation_end": "2019-01-25",
+          "limitation": "仅列五次最长停摆，非完整清单；观察止于2019年初。"
+        },
+        {
+          "evidence_id": "ev-99dab9f558dc70bd28f2a811",
+          "relation": "support",
+          "quote": "Since FY1977, 23 funding gaps have occurred, ranging in duration from 1 day to 75 full days.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "CRS页面无发表日期，观察期含FY2026条目，具体截止不明；仅证明拨款缺口频发，不直接证明意识形态抗拒。"
+        },
+        {
+          "evidence_id": "ev-b59a59530a9e21f11caa829e",
+          "relation": "support",
+          "quote": "The record for a U.S. government shutdown now stands at 43 days. That shutdown began on October 1, 2025, and ended on November 12, when President Donald Trump signed a funding bill.",
+          "publication_date": "2026-11-04",
+          "observation_end": "2025-11-12",
+          "limitation": "该文发表于cutoff前，但所述2025年停摆结束于2025-11-12，属cutoff前已实现结果；为媒体综述，非官方统计。"
+        },
+        {
+          "evidence_id": "prior-2fe65b93d3849ebc45af",
+          "relation": "support",
+          "quote": "美国财政部2024决算：赤字约1.8万亿美元，支出占GDP从2023年的22.5%升至2024年的23.4%，收入也增加。",
+          "publication_date": "2024-10-18",
+          "observation_end": "2024-09-30",
+          "limitation": "仅反映2024财年财政压力，不能单独证明协调失败或意识形态抗拒。"
+        },
+        {
+          "evidence_id": "ev-690280699e447e748b64621b",
+          "relation": "counter",
+          "quote": "We've turned record deficits into record surpluses, as Governor Carper said.",
+          "publication_date": "1999-08-08",
+          "observation_end": "1999-08-08",
+          "limitation": "克林顿讲话为政治自述，显示1990年代末出现财政协调进展，构成对“持续冲突”的反例，但不否定长期冲突延续。"
+        },
+        {
+          "evidence_id": "ev-7bd9fdaebe3acde8140e0f5a",
+          "relation": "counter",
+          "quote": "The Vice President’s Reinventing Government Initiative has resulted in 377,000 fewer civilian employees in the federal government — the lowest level since the Kennedy Administration — and reduced federal spending as a share of the economy from 22.2 percent in 1992 to a projected 18.5 percent in 2000, the lowest since 1966.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "官方成就清单，含2000年预测值；无发表日期，仅证明存在政府改革与支出缩减努力，属部分协调进展。"
+        }
+      ],
+      "remaining_gap": "缺少直接测量“美国人意识形态/情感抗拒全面协调”的民意或行为指标；治理冲突代理只能间接支持趋势，最终“持续多年”的终点无法精确界定。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000049051-000049136",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象：王沪宁1991年前后判断的“美国社会全面协调需要与美国人意识形态/情感抗拒之间的挑战还将持续多年”。操作化：以1991年后美国在政府职能、财政与福利协调上持续出现难以达成全面协调的治理冲突（预算僵局、政府停摆、赤字与支出占比压力）为观察指标；观察窗口为1991年至2026-11-09（cutoff）。",
+      "reason": "1991年后美国多次出现预算僵局与政府停摆（1995-96、2013、2018-19、2025年43天），财政赤字与支出占比压力延续，主要方向已有持续观察证据，符合“挑战持续多年”的趋势；但“全面协调需要与意识形态抗拒”的因果机制未获直接证明，且同期也有福利改革、平衡预算等协调进展，故判部分符合、趋势符合。",
+      "limitation": "仅以治理冲突的持续作为代理指标，未直接测量美国人的意识形态/情感抗拒；1990年代平衡预算与福利改革显示存在部分协调进展，不能据此断言冲突完全消失或永远持续。2025年停摆仅见媒体综述，缺独立官方核实来源。",
+      "evidence_ids": [
+        "ev-2486926213ec8efe5669bd31",
+        "ev-99dab9f558dc70bd28f2a811",
+        "ev-b59a59530a9e21f11caa829e",
+        "prior-2fe65b93d3849ebc45af",
+        "ev-690280699e447e748b64621b",
+        "ev-7bd9fdaebe3acde8140e0f5a"
+      ],
+      "method": "由治理需求与传统价值间矛盾推断制度转型持续困难",
+      "method_basis": "inferred",
+      "observation_end": "2026-11-09",
+      "future_time_text": "还将持续多年",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-2486926213ec8efe5669bd31",
+          "relation": "support",
+          "quote": "The partial government shutdown reached a record 35 days under President Trump in January 2019, topping the previous record of 21 days, set under President Bill Clinton in 1995-96.",
+          "publication_date": "2019-01-10",
+          "observation_end": "2019-01-25",
+          "limitation": "仅列五次最长停摆，非完整清单；观察止于2019年初。"
+        },
+        {
+          "evidence_id": "ev-99dab9f558dc70bd28f2a811",
+          "relation": "support",
+          "quote": "Since FY1977, 23 funding gaps have occurred, ranging in duration from 1 day to 75 full days.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "CRS页面无发表日期，观察期含FY2026条目，具体截止不明；仅证明拨款缺口频发，不直接证明意识形态抗拒。"
+        },
+        {
+          "evidence_id": "ev-b59a59530a9e21f11caa829e",
+          "relation": "support",
+          "quote": "The record for a U.S. government shutdown now stands at 43 days. That shutdown began on October 1, 2025, and ended on November 12, when President Donald Trump signed a funding bill.",
+          "publication_date": "2026-11-04",
+          "observation_end": "2025-11-12",
+          "limitation": "该文发表于cutoff前，所述2025年停摆结束于2025-11-12，属cutoff前已实现结果；为媒体综述，非官方统计，verified=false。"
+        },
+        {
+          "evidence_id": "prior-2fe65b93d3849ebc45af",
+          "relation": "support",
+          "quote": "美国财政部2024决算：赤字约1.8万亿美元，支出占GDP从2023年的22.5%升至2024年的23.4%，收入也增加。",
+          "publication_date": "2024-10-18",
+          "observation_end": "2024-09-30",
+          "limitation": "仅反映2024财年财政压力，不能单独证明协调失败或意识形态抗拒。"
+        },
+        {
+          "evidence_id": "ev-690280699e447e748b64621b",
+          "relation": "counter",
+          "quote": "We've turned record deficits into record surpluses, as Governor Carper said.",
+          "publication_date": "1999-08-08",
+          "observation_end": "1999-08-08",
+          "limitation": "克林顿讲话为政治自述，显示1990年代末出现财政协调进展，构成对“持续冲突”的反例，但不否定长期冲突延续。"
+        },
+        {
+          "evidence_id": "ev-7bd9fdaebe3acde8140e0f5a",
+          "relation": "counter",
+          "quote": "The Vice President’s Reinventing Government Initiative has resulted in 377,000 fewer civilian employees in the federal government — the lowest level since the Kennedy Administration — and reduced federal spending as a share of the economy from 22.2 percent in 1992 to a projected 18.5 percent in 2000, the lowest since 1966.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "官方成就清单，含2000年预测值；无发表日期，仅证明存在政府改革与支出缩减努力，属部分协调进展。"
+        }
+      ],
+      "remaining_gap": "缺少直接测量“美国人意识形态/情感抗拒全面协调”的民意或行为指标；治理冲突代理只能间接支持趋势，最终“持续多年”的终点无法精确界定；2025年停摆缺独立官方核实来源。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "对象：王沪宁1991年前后所判断的“美国社会全面协调需要与美国人意识形态/情感抗拒之间的挑战还将持续多年”。可观察口径：1991年后至少延续约十年以上，美国在政府职能扩张/缩减、财政与福利协调上持续出现难以达成全面协调的治理冲突（如预算僵局、政府停摆、赤字与支出占比压力）。反证：若1991年后很快形成稳定、全面的协调机制且相关冲突基本消失，则相反。文化/意识形态因果机制不单独作为结果成立门槛，仅在limitation说明。",
+  "elapsed_seconds": 48.156,
+  "completed_at": "2026-11-09T10:33:27.147930+00:00"
+}

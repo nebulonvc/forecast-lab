@@ -1,0 +1,28 @@
+{
+  "id": "98d9458f-1728-4e7c-a58d-534071c6ba50",
+  "object": "chat.completion",
+  "created": 1794201439,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000007820-000007898\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"evidence\",\"scope\":\"预测对象为《从0到1》中文版在中国出版后对中国创新者、创造者、创业者产生“启发和前行动力”的主观影响；观察时段为出版后至cutoff 2026-11-09，但无可用证据。\",\"reason\":\"该判断的核心是读者内心是否获得启发与动力，属于主观效果，现有材料仅有作者本人的期望性表述，没有独立证据。\",\"limitation\":\"缺少可核验的读者调查、行为数据或第三方评价；官方出版信息只能证明出版事实，不能证明内心启发。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"在中国的问世（时点未具体说明）\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4401,
+    "completion_tokens": 211,
+    "total_tokens": 4612,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 4401
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

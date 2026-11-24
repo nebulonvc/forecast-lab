@@ -1,0 +1,57 @@
+{
+  "id": "txt-5386516eaf-001837506-001837557",
+  "assessment": {
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "id": "txt-5386516eaf-001837506-001837557",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "observation_end": "2009-12-31",
+    "scope": "随着社会进步，利润有下降倾向。",
+    "reason": "新保存的表写英国1855年利润率36.2%，2009年4.6%。同一主题的另一份返回写1855–71、1922–42和1975–97年利润率上升，并写1975到1997年上升91%。长期下降，中间有数十年回升。",
+    "limitation": "这是利润率口径，不是密尔的每一个利润定义。",
+    "evidence_ids": [
+      "ev-r4b-profit",
+      "ev-r4b-profit-rise"
+    ],
+    "method": "36.2%与4.6%都在本次支持检索保存的原文件里。回升在反证检索保存的原文件里。",
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-r4b-profit",
+        "quote": "1855 4,3% 36,2%",
+        "relation": "support",
+        "limitation": "起点。",
+        "observation_end": "1855-12-31",
+        "publication_date": "2014-05-09"
+      },
+      {
+        "evidence_id": "ev-r4b-profit",
+        "quote": "2009 4,9% 4,6%",
+        "relation": "support",
+        "limitation": "2009年更低。",
+        "observation_end": "2009-12-31",
+        "publication_date": "2014-05-09"
+      },
+      {
+        "evidence_id": "ev-r4b-profit-rise",
+        "quote": "Periods of rising profitability occurred from 1855-71, 1922-42, and 1975-97, amidst secular decline.",
+        "relation": "counter",
+        "limitation": "中间回升。",
+        "observation_end": "1997-12-31",
+        "publication_date": null
+      },
+      {
+        "evidence_id": "ev-r4b-profit-rise",
+        "quote": "a rise in profitability of 91% in the period from 1975 to 1997",
+        "relation": "counter",
+        "limitation": "1975到1997年的升幅。",
+        "observation_end": "1997-12-31",
+        "publication_date": null
+      }
+    ],
+    "remaining_gap": ""
+  }
+}

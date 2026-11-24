@@ -1,0 +1,1966 @@
+Working Papers RESEARCH DEPARTMENT
+
+ISSN: 1962-5361 Disclaimer: This Philadelphia Fed working paper represents preliminary research that is being circulated for discussion purposes. The views expressed in these papers are solely those of the authors and do not necessarily reflect the views of the Federal Reserve Bank of Philadelphia or the Federal Reserve System. Any errors or omissions are the responsibility of the authors. Philadelphia Fed working papers are free to download at: https://www.philadelphiafed.org/ search-results/all-work?searchtype=working-papers.
+
+WP 26-50 PUBLISHED
+
+November 2026
+
+Daniel Sanches Federal Reserve Bank of Philadelphia
+
+### Public and Private Money
+
+#### Inflation Dynamics and
+
+#### Optimal Policy
+
+DOI: https://doi.org/10.21799/frbp.wp.2026.50
+
+Public and Private Money: Inflation Dynamics and
+
+Optimal Policy∗
+
+Daniel Sanches
+
+Federal Reserve Bank of Philadelphia
+
+October 7, 2026
+
+Abstract
+
+The total money supply of a modern economy is a combination of publicly and pri vately issued monies. This paper develops a theory of inflation dynamics and optimal policy for a system in which public fiat money and collateral-backed private liabilities jointly circulate. Private money finances investment projects, and its supply depends on the issuer’s net worth and collateral constraints. The resulting feedback mecha nism can generate persistent oscillations and stable banking cycles without aggregate shocks. For some public money growth rates, a dual-money steady state coexists with a boundary regime in which private money displaces fiat money. Policy affects liquidity and investment. When the collateral constraint is slack, the Friedman rule attains the first best; when it binds, a public money growth rate above the Friedman rule can be optimal. The Ramsey problem considers the transitional dynamics in the net worth of banks.
+
+Keywords: Private money; public money; inflation dynamics; collateral constraints; banking cycles; Friedman rule; optimal monetary policy. JEL Classification: E42, E51, E52, E31, C62.
+
+∗Email address: daniel.sanches@phil.frb.org. The views expressed in this paper are those of the author and do not necessarily reflect the views of the Federal Reserve Bank of Philadelphia or the Federal Reserve System. Philadelphia Fed working papers are free to download at https://philadelphiafed.org/research-and data/publications/working-papers.
+
+1 Introduction
+
+In the account of U.S. monetary history given by Friedman and Schwartz (1963), the stock of money that mattered for prices and economic activity was, over most of the period studied, predominantly created by private institutions. Government-issued currency circu lated alongside the liabilities of commercial banks, and the sharpest movements in the money stock originated from the interaction between its public and private components. The lesson of the Monetary History is that the money supply of a modern economy is the joint product of a public issuer and a private, profit-maximizing issuing sector, and that the dynamics of this mix govern inflation and monetary stability. Friedman (1960) draws a sharp policy conclusion from this reading of history: private money creation is inherently unstable, so the government should closely control the stock of money. These questions have returned with force. Privately issued digital currencies (e.g., stable coins backed by portfolios of assets, tokenized bank deposits, and other related instruments) now circulate alongside public money and traditional collateral-backed private monies (e.g., bank deposits) at scale, and legislatures have recently written regulatory frameworks for their issuers. At the same time, central banks debate whether public money should occupy a larger share of the payment system in the form of a central bank digital currency. Under the new technology lie old questions. When collateral-backed private liabilities circulate as media of exchange, what determines the aggregate quantity of money, its composition, and the price level? Does the growth rate of public money still anchor long-run inflation? What is the optimal rate of public money creation when part of the money supply responds elastically to market incentives? This paper develops a tractable general-equilibrium framework to answer these questions. The economy has the trading structure of Lagos and Wright (2005): in each period, anony mous buyers and sellers first trade in decentralized bilateral meetings, where the absence of commitment and record-keeping makes a medium of exchange essential, and then rebal ance their portfolios in a frictionless centralized market. In this environment, we introduce overlapping generations of entrepreneurs who are heterogeneous in the quality of an indivis ible investment project. Entrepreneurs cannot fully fund their projects internally, so those with sufficiently productive projects borrow by issuing one-period debt claims backed by a pledgeable fraction of the project’s return. Because these claims are perfectly recognizable and freely transferable in bilateral meetings, they circulate as media of exchange: we refer to issuing entrepreneurs as banks and their circulating liabilities as private money. The gov ernment issues fiat money that grows at a constant rate, and both assets can serve as media of exchange.
+
+The equilibrium of the model reduces to a planar dynamical system in two aggregate 
+variables: the mid-life wealth of the entrepreneurs, which determines the net worth of the 
+banking sector, and aggregate real balances. This reduction delivers a transparent link 
+between banking and inflation: in any equilibrium in which both monies circulate, the gross 
+inflation rate equals the price of private money claims and is inversely proportional to the 
+net worth of banks. The dynamics of inflation and the dynamics of private money creation 
+are, therefore, a single object of analysis. The key feedback mechanism operates through the 
+market price of private money. Predetermined entrepreneurial wealth determines both the 
+external finance required by each active bank and the set of projects that can be funded. 
+Aggregate issuance then determines the price and return on private claims. That return, 
+in turn, determines the wealth with which the next generation of banks enters the credit 
+market in the following period. 
+The first set of results concerns endogenous dynamics. In the private-money-only econ 
+omy, the wealth law of motion implies the following dynamics: low current net worth raises 
+the return on private claims and thereby increases next-period net worth, while high current 
+net worth has the opposite effect. When this correction is stable, the economy converges 
+through damped oscillations. For other parameter values, the same mechanism generates a 
+stable period-two banking cycle. These fluctuations are deterministic and arise with constant 
+fundamentals. Introducing fiat money does not necessarily eliminate them. Depending on 
+policy and on which financing constraint binds, convergence to the dual-money steady state 
+can be monotonic or oscillatory and highly persistent; the dual-money steady state can also 
+lose local saddle-path stability. A change in the public money growth rate can thus alter the 
+qualitative form of the transition, not only its steady-state value. 
+The model also yields a conditional limit to the public nominal anchor. For a range of 
+money-growth rates, a dual-money steady state coexists with a boundary steady state at 
+which only private money circulates as a medium of exchange. In many cases, the two steady 
+states are close, even at low levels of the public money growth rate. Near the point where 
+the two steady states meet, the boundary steady state is a sink, and the dual-money steady 
+state is a saddle; its stable manifold locally separates trajectories converging to the two 
+regimes. Along paths that converge to the boundary steady state, private money displaces 
+public money, and inflation converges to a limiting finite value that is unrelated to the public 
+money growth rate. Finally, we show that a stable period-two banking cycle organizes the 
+dynamics of the two-money economy in the same way that the boundary steady state does. 
+Fiat money can also remain valued in the long run in an economy that cycles. 
+The second set of results concerns policy. By comparing dual-money steady states in 
+dexed by the constant money-growth factor, we find that the Friedman rule attains the 
+
+unconstrained first best and is globally optimal when collateral constraints are slack. When the collateral constraints bind, however, the Friedman rule entails under-investment. Raising the money growth rate above the Friedman rule reduces decentralized-market output but can improve project selection. Under sufficient conditions, this tradeoff produces an interior optimum strictly above the Friedman rule. The Ramsey problem considers the transition in the net worth of banks. Under sufficient conditions, it can be shown that the optimal public money growth rate is set above its long-run Ramsey value during the transitional dynamics when banks begin under-capitalized and below it when banks begin over-capitalized. The Ramsey planner manages aggregate liquidity by setting the money growth rate in such a way that the capitalization of the banking system approaches its long-run optimum value, either from above or below, depending on the initial banking capital. The remainder of the paper proceeds as follows. After a discussion of the related liter ature, Section 2 describes the environment, and Section 3 develops the monetary economy and defines equilibrium. Section 4 characterizes stationary and non-stationary equilibrium trajectories. Section 5 studies optimal policy, first in terms of stationary allocations and then accounting for transitional dynamics. Section 6 concludes. All proofs that are not directly derived below can be found in Appendix A.
+
+Related Literature
+
+This paper builds on the search-theoretic approach to monetary economics initiated by 
+Kiyotaki and Wright (1989, 1993) and developed by Trejos and Wright (1995), Shi (1995), 
+and Shi (1997). It adopts the alternating decentralized-centralized market structure of Lagos 
+and Wright (2003) and Lagos and Wright (2005), which keeps the distribution of asset 
+holdings degenerate and delivers tractable dynamics. Shi (2006), Williamson and Wright 
+(2010), and Lagos et al. (2017) survey this research program. Relative to the standard 
+framework, the present model identifies an essential component of the money supply as an 
+equilibrium object: liquid assets are created by a sector of collateral-constrained issuers 
+whose net worth evolves endogenously and induces aggregate fluctuations. 
+A branch of the New Monetarist literature studies the creation and circulation of inside 
+money. Cavalcanti and Wallace (1999a,b) show that note issuance by a subset of monitored 
+agents expands the set of implementable allocations relative to outside money alone, while 
+Williamson (1999) examines the efficiency of private money issuance and Berentsen et al. 
+(2007) integrate banks that take deposits and make loans into the Lagos-Wright framework. 
+Gu et al. (2013a) provide a mechanism-design foundation for banking as liquidity transfor 
+mation. Williamson (2012) analyzes monetary policy when intermediated assets serve as 
+
+media of exchange, and Venkateswaran and Wright (2014) study the macroeconomic effects 
+of limited pledgeability on liquidity provision. More recently, Choi and Rocheteau (2023) 
+develop a model with fiat money and bank deposits to study the effects of monetary policy. 
+This paper studies the joint dynamics of the composition of the money supply, the behav 
+ior of inflation during the transition, and the optimal rate of public money creation in an 
+environment in which the net worth of banks is an endogenous state variable. 
+The oscillatory equilibria and period-two cycles relate the paper to the literature on en 
+dogenous credit cycles, including Gu et al. (2013b), where cycles arise from limited commit 
+ment, as well as Azariadis and Smith (1998) and Matsuyama (2013). Boldrin and Woodford 
+(1990) survey equilibrium models with endogenous fluctuations, and Grandmont (1985) is 
+the classic treatment of dynamics in monetary overlapping-generations economies. Ferraris 
+and Watanabe (2011) study endogenous fluctuations in an economy with monetary and real 
+assets. Rocheteau and Wright (2013) generate equilibrium cycles from liquidity considera 
+tions in asset markets. The distinctive feature of the present model is that the constrained 
+sector issues the economy’s medium of exchange, so fluctuations in the issuer’s net worth 
+are, at the same time, fluctuations in the money supply and the inflation rate. 
+The coexistence of government and private circulating liabilities is a classical theme 
+in monetary theory, much of which developed in the overlapping-generations tradition of 
+Samuelson (1958) and Wallace (1980). Sargent and Wallace (1982) contrast the real-bills 
+and quantity-theory regimes, and Smith (1988) reexamines the associated policy debates; 
+Azariadis et al. (2001) and Bullard and Smith (2003) study economies in which public and 
+private liabilities circulate together, Cavalcanti et al. (1999) analyze reserve management by 
+private note issuers, and Champ et al. (1996) connect the elasticity of private note issuance 
+to banking panics. Holmstr¨om and Tirole (1998) and Farhi and Tirole (2012) study the 
+public and private supply of liquidity under limited pledgeability, although liquid assets in 
+their framework do not serve as media of exchange. The contribution here is a dynamic 
+characterization of a two-asset monetary system with collateral-constrained private issuers, 
+together with a normative analysis of the money growth rate that accounts for transitional 
+dynamics. 
+A modern literature investigates the coexistence of private and public money in digi 
+tal form. Fern´andez-Villaverde and Sanches (2019) show that competition among profit 
+maximizing issuers of intrinsically worthless currencies generally fails to deliver price stability 
+and efficiency, and Schilling and Uhlig (2019) and Benigno et al. (2022) study the interaction 
+between cryptocurrencies and monetary policy. Brunnermeier and Niepelt (2019) establish 
+conditions under which public and private money are equivalent; those conditions fail here 
+because private issuance is tied to investment through the collateral constraint, so the com 
+
+position of the money supply matters for real allocations. The paper also relates to work on 
+central bank digital currency and its effects on private intermediation, investment, consump 
+tion, and welfare, including Fern´andez-Villaverde et al. (2021), Andolfatto (2021), Keister 
+and Sanches (2023), and Chiu et al. (2023), and to the discussion of stablecoin regulation 
+by Gorton and Zhang (2023), who draw a parallel between stablecoins and free-banking-era 
+notes. Viewed through that discussion, the model provides a laboratory in which collateral 
+backed private money coexists with public money, and the pledgeability parameter in the 
+model maps naturally onto the collateral and reserve requirements imposed on private is 
+suers. 
+On the normative side, the paper contributes to the literature on the optimum quantity of 
+money descending from Friedman (1969). Departures from the Friedman rule can arise when 
+money growth interacts with investment or credit margins. Altermatt and Wipf (2024) show 
+that the Friedman rule can be suboptimal when higher inflation produces a first-order welfare 
+gain through greater capital investment, while the associated loss from reduced liquidity 
+intensive trade is only second order. Their mechanism is a Mundell–Tobin portfolio shift 
+between fiat money and capital, whereas ours operates through the endogenous interaction of 
+public and private money, with monetary policy affecting the net worth of banks, collateral 
+capacity, and project selection. 
+
+2 Model
+
+Environment. Time is discrete and indexed by t P t 0, 1, 2, ...u . The planning horizon is infinite. Each period is divided into two sub-periods in which economic activity differs. A perishable commodity is produced and consumed within each sub-period. The economy is populated by three types of agents: buyers, sellers, and entrepreneurs. Buyers and sellers are infinitely-lived agents who discount future periods at the discount factor β P p 0, 1q . There is a unit mass of each type of infinitely-lived agent. Entrepreneurs live for three periods and consume only in old age. Each generation contains a mass η ą 0 of entrepreneurs. Markets. In the first sub-period, a buyer is randomly matched with a seller in a de centralized market. Let α P p 0, 1q denote the probability of finding a trading partner. The buyer wants to consume but cannot produce, while the seller can produce but does not want to consume. In particular, the seller can produce a perishable commodity, termed the decentralized market (DM) good, using a linear technology that requires labor as input. Entrepreneurs do not participate in the DM. In the second sub-period, all agents trade in a centralized market. Buyers and sellers can produce a perishable commodity, called the centralized market (CM) good, using a linear technology that requires labor as input. The
+
+entrepreneurial production technology is described below. All agents derive utility from the consumption of the CM good. Preferences. The buyer has preferences represented by the utility function
+
+U
+
+##### b p q, xq “ u p qq ` x,
+
+where q P R` denotes the consumption of the DM good and x P R denotes the net con sumption of the CM good. The DM utility function u : R` Ñ R` is C
+
+2 on p 0, 8q , strictly increasing, and concave, with u p 0q “ 0 and u1p 0q “ 8 . The seller has preferences repre sented by the utility function
+
+U
+
+##### s p q, xq “ ´ w p qq ` x,
+
+where q P R` denotes the production of the DM good and x P R denotes the net consumption 
+of the CM good. The DM cost function w : R` Ñ R` is C 2, strictly increasing, and convex, 
+with w p 0q “ 0. Entrepreneurs derive linear utility from the consumption of the CM good in 
+old age. Let q˚ P R` be defined by u1p q˚q “ w1p q˚q . 
+Investment. A new generation of entrepreneurs is born each period. An entrepreneur 
+is endowed at birth with A P p 0, βq units of the CM good. A middle-aged entrepreneur j 
+is endowed with an indivisible and non-tradable project that requires exactly one unit of 
+the CM good as input and pays off γj P R` units of the CM good in the following period. 
+Project returns are publicly observable. The distribution of returns is uniform across the 
+support r 0, γ¯s . The upper bound ¯γ P R` satisfies ¯γ ą β´ 1, so some projects are socially 
+efficient to operate, while others are not. 
+Collateral. An entrepreneur has an opportunity to invest in a project in middle age. 
+If an entrepreneur does not have enough funds to meet the required investment amount, 
+they can borrow from external creditors by issuing a one-period debt claim. However, the 
+
+entrepreneur’s ability to borrow is limited by a collateral constraint. Only a fraction θ P p 0, 1q of the project’s return can be pledged to external debt holders. Assets and exchange. Buyers and sellers are anonymous and cannot commit to their future actions, which precludes credit in the DM. Because there is no scope for trading future promises in this market, a medium of exchange is essential to achieve allocations that could not be accomplished without it. In contrast, entrepreneurs can have their trading history publicly recorded. If an entrepreneur satisfies a collateral constraint, they can borrow in the credit market. Privately issued debt claims can be perfectly recognized and transferred in a bilateral match. Therefore, they can be used as a medium of exchange. We state that an entrepreneur who borrows from external creditors by issuing a debt claim is operating a bank, since the entrepreneur’s liabilities are backed by the project’s return and constitute a
+
+liquid asset for their holders. We refer to the debt claims issued by banks as private money. 
+Government-issued fiat money can also be used as a medium of exchange. 
+
+3 Monetary Economy
+
+3.1 Government
+
+The government issues fiat money and injects new money via lump-sum transfers in the CM. Let Mt P R` denote the period-t money supply. Let ϕt P R` denote the period-t value of money in terms of the CM good. Suppose that fiat money is positively valued at all dates. The government’s budget constraint (in real terms) is given by
+
+mt “
+
+ϕt ϕt´ 1 mt´ 1 ` τt,
+
+where mt ” ϕtMt denotes real balances, and τt P R is the real value of transfers to private agents. The government expands the money supply at a constant rate: Mt “ µMt´ 1 for all t P t 0, 1, 2, ...u . Assume that µ ě β.
+
+3.2 Asset Returns
+
+It is helpful to define the real rate of return on fiat money in terms of aggregate real balances. If fiat money is positively valued at each date, the money-growth rule allows us to write the real return on fiat money as
+
+ϕt
+
+ϕt´ 1“
+
+1 µ mt mt´ 1
+
+.
+
+Let ft P R` be the real price of a privately issued debt claim in the period-t CM. This price 
+is determined by the market-clearing condition in the period-t private money market. A 
+debt claim is a promise to pay one unit of the CM good in the following period. If private 
+money is positively valued at date t, its real return is f´ 1 
+t . 
+Suppose that both assets are positively valued in equilibrium. In this case, it will be 
+shown that asset returns satisfy the following boundary conditions: 
+
+##### 0 ă
+
+1 µ
+
+mt` 1 mt ď
+
+1 β
+
+(1)
+
+and
+
+##### 0 ă
+
+1
+
+##### ftď
+
+1 β
+
+. (2)
+
+In other words, the expected real return on each asset is bounded above by the subjective interest rate.
+
+3.3 Entrepreneurs
+
+Let n 1 t ě 0 denote the young entrepreneur’s holdings of private claims, and let m 1 t ě 0 denote their real fiat money balances. Their budget constraint is
+
+ftn 1 t ` m 1 t ď A. (3)
+
+The young entrepreneur invests all their wealth in external assets. If both assets are positively valued in equilibrium, their optimal portfolio satisfies (3) with equality and
+
+n 1
+
+t$’&’%
+
+##### “ 0 if 1 ftă
+
+1 µ mt` 1 mt
+
+##### P r 0, A fts if 1 ft“
+
+1 µ mt` 1 mt
+
+“
+
+##### A ft if 1 ftą
+
+1 µ mt` 1 mt m 1
+
+t$’&’%
+
+##### “ 0 if 1 ftą
+
+1 µ mt` 1 mt
+
+P r 0, As if 1
+
+##### ft“
+
+1 µ mt` 1 mt “ A if 1
+
+##### ftă
+
+1 µ mt` 1 mt .
+
+If only private money is positively valued, n 1 t “
+
+A ft and m 1 t “ 0. If only fiat money is valued,
+
+n 1 
+t “ 0 and m 1 t “ A. When fiat money and private money yield the same expected real 
+return, agents are indifferent between those assets, so the composition of their portfolio is 
+indeterminate. Otherwise, a corner solution is obtained. 
+Next, we consider the decision problem of a middle-aged entrepreneur. Let ωt ě 0 denote 
+the wealth of a middle-aged entrepreneur. When both assets are positively valued, we have 
+
+## ωt “#
+
+A ft´ 1 if 1 ft´ 1ě
+
+1 µ
+
+mt mt´ 1
+
+A µ
+
+mt mt´ 1 if 1 ft´ 1ď
+
+1 µ
+
+mt mt´
+
+1.
+
+(4)
+
+If only private money is positively valued, ωt “
+
+A ft´ 1. If only fiat money is valued, ωt “
+
+A µ
+
+mt mt´
+
+1. 
+Since A ă β and given (1)-(2), we have ωt ă 1, which implies that an entrepreneur does not 
+have enough wealth to fund their project. Therefore, an entrepreneur who wants to invest 
+in their project must raise external funds by issuing private money to the public. 
+The decision to invest in a project implies two ex-post types of middle-aged entrepreneurs: 
+those who issue private money to fund their projects and those who do not invest. The 
+latter will reinvest their wealth in external assets to save for old age. An entrepreneur finds 
+
+it optimal to invest in their internal project, provided that the return condition holds:
+
+γj ´
+
+##### 1 ftp 1 ´ ωtq ě p 1 ` ρtq ωt,
+
+where 1 ` ρt denotes the maximum expected real return available from t to t ` 1. An en trepreneur who operates a bank must be better off investing in their project than reinvesting their wealth in external assets. To operate a bank, the entrepreneur must also satisfy the collateral condition:
+
+θγj ´
+
+##### 1 ftp 1 ´ ωtq ě 0.
+
+Otherwise, the entrepreneur is credit-constrained. If an entrepreneur is credit-constrained, 
+their only option is to reinvest their wealth in external assets. Note that an entrepreneur 
+who satisfies the collateral constraint can choose to reinvest their wealth in external assets 
+if the market return is higher than the entrepreneur’s internal return. 
+Let γ m 
+t ě 0 denote the marginal type above which investment is undertaken and below 
+which it is not. The expression for the marginal type is given by 
+
+γ m
+
+##### t “ max"p 1 ` ρtq ωt `
+
+1 ´ ωt ft
+
+,
+
+1 ´ ωt θft* . (5)
+
+We say that the economy is in the return regime when the marginal type is determined by the first term on the right-hand side of (5), and that the economy is in the collateral regime when the marginal type is determined by the second term on the right-hand side of (5). The threshold (5) for the marginal type determines the issuance of private money and the size of the banking system in equilibrium. In period t, the measure of banks operated by entrepreneurs is given by
+
+η„ 1 ´ γ m t
+
+γ¯ȷ`
+
+.
+
+Each bank has a net worth equal to ωt, so it needs to issue 1´ ωt ft to fund its single project.
+
+Let n 2 t ě 0 denote the private money holdings of a non-bank entrepreneur, and let m 2 t ě 0 denote their real balances. Their optimal portfolio satisfies
+
+ftn 2 t ` m 2 t “ ωt. (6)
+
+When both assets are positively valued, we have
+
+n 2
+
+t$’&’%
+
+##### “ 0 if 1 ftă
+
+1 µ mt` 1 mt
+
+##### P r 0, ωt fts if 1 ft“
+
+1 µ mt` 1 mt
+
+“
+
+ωt ft if 1 ftą
+
+1 µ mt` 1 mt m 2
+
+t$’&’%
+
+##### “ 0 if 1 ftą
+
+1 µ mt` 1 mt
+
+##### P r 0, ωts if 1 ft“
+
+1 µ mt` 1 mt
+
+##### “ ωt if 1 ftă
+
+1 µ mt` 1 mt .
+
+If only private money is positively valued, n 2 t “
+
+ωt ft and m 2 t “ 0. If only fiat money is positively
+
+valued, n 2 
+t “ 0 and m 2 t “ ωt. Non-bank entrepreneurs exhaust their budget constraint (6) and 
+choose a portfolio that maximizes the expected real return on their wealth. Entrepreneurs 
+who operate a bank do not hold external assets over time. 
+If both assets coexist in equilibrium, which is referred to as a dual-money equilibrium, it 
+must be the case that 
+
+1
+
+##### ft“
+
+1 µ
+
+mt` 1 mt
+
+.
+
+Fiat money and private money yield the same expected real return, and entrepreneurs are indifferent between these assets in a dual-money equilibrium.
+
+3.4 Buyers
+
+Let ab “ p mb, nbq denote a portfolio consisting of mb ě 0 real fiat money balances and nb ě 0 units of private money. Let W b tp abq denote the CM value function of a buyer with
+
+portfolio ab P R 2 `
+
+, and let V b tp abq denote the DM value function. The value functions satisfy
+
+the Bellman equation:
+
+W b tp abq “ max p x,ˆabqPRˆR 2 `␣ x ` βV b t` 1p ˆabq(
+
+s.t. x ` pt¨ ˆab “ Rt´ 1 ¨ ab ` τ b t.
+
+The price vector pt “ p 1, ftq measures the cost of acquiring real balances and private money in terms of the CM good, the vector
+
+Rt´ 1 “ˆ
+
+1 µ mt mt´ 1
+
+, 1˙ measures the gross real returns on assets carried over from the previous period, and τ b t P R is the real value of transfers from the government. Recall that mt ě 0 denotes aggregate real balances, and we continue to assume that fiat money is positively valued at each date.
+
+The buyer’s DM value function satisfies:
+
+##### V b tp abq “ α “ up qtp abqq ` W b tp ab ´ htp abqq‰ ` p 1 ´ αq W b tp abq ,
+
+where qtp abq P R` denotes the quantity of DM goods the seller produces for the buyer in a 
+match, and htp abq P R 2 
+` 
+
+denotes the vector of asset transfers from the buyer to the seller. Because of quasi-linear preferences, it is a property of the model that the terms of trade in the DM depend only on the buyer’s asset holdings. The fact that the CM value function is affine allows us to write the DM value function as
+
+V b
+
+##### tp abq “ α r up qtp abqq ´ Rt´ 1 ¨ htp abqs ` Rt´ 1 ¨ ab ` τ b t ` max ˆabPR 2 `␣ ´ pt¨ ˆab ` βV b t` 1p ˆabq(
+
+.
+
+This equation makes explicit the link between the DM value function in the current period and the DM value function in the following period.
+
+3.5 Sellers
+
+Let W s tp asq denote the CM value function of a seller with portfolio as P R 2 `
+
+, and let
+
+V s tp asq denote the DM value function. The value functions satisfy the Bellman equation:
+
+W s tp asq “ max p x,ˆasqPRˆR 2 `␣ x ` βV s t` 1p ˆasq(
+
+s.t. x ` pt¨ ˆas “ Rt´ 1 ¨ as ` τ s t.
+
+The seller’s DM value function satisfies
+
+##### V s tp asq “ α r´ wp qtp abqq ` W s tp as ` htp abqqs ` p 1 ´ αq W s tp asq ,
+
+where ab P R 2 `
+
+denotes the asset holdings of the buyer with whom the seller is paired in the DM. Following the same steps as before, we can show that the CM value function W s tp asq is affine, so the DM value function can be written as
+
+V s
+
+##### tp asq “ α r´ wp qtp abqq ` Rt´ 1 ¨ htp abqs ` Rt´ 1 ¨ as ` τ s t ` max ˆasPR 2 `␣ ´ pt¨ ˆas ` βV s t` 1p ˆasq(
+
+.
+
+It is clear from this expression that the seller’s DM value function is also affine, given that the seller’s asset holdings do not affect the terms of trade in a match.
+
+3.6 Bargaining
+
+The terms of trade in a bilateral match are determined by the generalized Nash bargaining solution. Let ν P p 0, 1s denote the buyer’s bargaining power. Define the following functions: gνp qq ” νu1p qq wp qq ` p 1 ´ νq w1p qq up qq νu1p qq ` p 1 ´ νq w1p qq
+
+and
+
+##### ρνp qq ” u1p qq g1νp qq
+
+. Let ˆqν P R` be the unique solution of ρνp qˆνq “ 1. The solution to the bargaining problem implies the output schedule:
+
+qt p abq “ # g´ 1 ν p Rt´ 1 ¨ abq if Rt´ 1 ¨ ab ă gν p q˚q q˚ otherwise and the payment schedule:
+
+Rt´ 1 ¨ ht p abq “ # Rt´ 1 ¨ ab if Rt´ 1 ¨ ab ă gν p q˚q gν p q˚q otherwise. Note that ˆqν ă q˚ when 0 ă ν ă 1, whereas ˆq1 “ q˚.
+
+3.7 Optimal Portfolio 
+Let a b 
+t “ p m b t, n b 
+tq P R 2 
+` 
+denote the optimal portfolio of the buyer in the CM. Given the 
+properties of the value functions and the solution to the bargaining problem, we can write 
+the buyer’s optimization problem in the CM as 
+max 
+a b tPR 2 `"´ pt¨ a b t ` β 
+
+␣
+
+##### α “ up qt` 1p a b tqq ´ Rt¨ ht` 1p a b tq‰ ` Rt¨ a b t(* .
+
+Suppose that the upper bounds in (1) and (2) are strict inequalities. In that case, the 
+necessary and sufficient first-order conditions are 
+´ 1 ` 
+
+β µ
+
+mt` 1 
+mt“ αρνp g´ 1 ν p Rt¨ a b tqq ` 1 ´ α 
+‰ ď 0, with “ if m b t ą 0, (7) 
+
+´ ft ` β “ αρνp g´ 1 ν p Rt¨ a b tqq ` 1 ´ α ‰ ď 0, with “ if n b t ą 0. (8)
+
+If only private money is positively valued, (8) holds with equality. If only fiat money is valued, (7) holds with equality. Consider an interior solution in which the agent holds both assets. Although the real value of the asset portfolio is determined by (7) and (8), the composition of the portfolio is indeterminate because an interior solution requires that both assets yield the same expected real return. The equilibrium analysis below is derived under CRRA utility and the power cost func
+
+##### tion: up qq “
+
+ζ
+
+##### σq σ and wp qq “
+
+1 ϵq ϵ, where ζ ą 0, 0 ă σ ă 1, and ϵ ě 1. Define the function
+
+##### L ν : p 0, qˆνs Ñ r 1, 8q by
+
+##### L νp qq “ αρνp qq ` 1 ´ α.
+
+The function L ν maps the real value of the buyer’s asset portfolio to a liquidity premium term. Note that L νp qq ą 1 for any 0 ă q ă qˆν. When the real value of the buyer’s portfolio is sufficiently large to induce the seller to produce ˆqν, the liquidity premium disappears (that is, the value of L ν equals one). Next, define the quantity qνp zq implicitly by
+
+##### L νp qνp zqq “
+
+1 βz
+
+and the demand function D νp zq by
+
+##### D νp zq ” gνp qνp zqq z .
+
+Its endpoints are D νp 0q “ 0 and D νp β´ 1 q “ βgνp qˆνq . Given (7)–(8), the buyer’s total
+
+expenditure on liquid assets satisfies m b t ` ftn b t “ D ν p 1 ` ρtq , (9)
+
+where 1 ` ρt “
+
+1
+
+ft or 1 ` ρt “
+
+1 µ mt` 1 mt .
+
+Let a s t “ p m s t, n s tq P R 2 `
+
+denote the optimal portfolio of the seller in the CM. The seller’s optimization problem in the CM is
+
+##### max a s tPR 2 `"´ pt¨ a s t ` β
+
+␣
+
+##### α “ ´ wp qt` 1p a b tqq ` Rt¨ ht` 1p a b tq‰ ` Rt¨ a s t(* ,
+
+where a b t P R 2 `
+
+denotes the portfolio of the buyer with whom the seller is paired in the following period. Suppose that the upper bounds of (1) and (2) are strict inequalities. In that case, it is clear that
+
+a s t “ p 0, 0q . (10)
+
+The seller does not acquire assets in the CM when the upper bounds of (1) and (2) are strict inequalities, regardless of their initial wealth in the CM. Liquid assets are costly to hold over time and do not bring any additional benefit to the seller in the DM.
+
+3.8 Market Clearing
+
+Suppose that γ m t ď γ¯. The clearing condition in the private money market is ηˆ 1 ´ γ m t γ¯˙p 1 ´ ωtq “ ηˆ ftn 1 t ` γ m t γ¯ ftn 2 t˙` ftn b t ` ftn s t.
+
+The left-hand side gives the aggregate supply of private money by the banking system, and the right-hand side represents the aggregate demand for private money. The clearing condition in the fiat money market is
+
+mt “ ηˆ m 1 t ` γ m t γ¯ m 2 t˙` m b t ` m s t.
+
+The left-hand side gives the real balances supplied by the government, and the right-hand side represents the aggregate demand for real balances. Using (3), (6), (9), and (10), the previous market-clearing conditions can be combined to yield a single condition:
+
+##### ηˆ 1 ´ γ m t γ¯˙` mt “ η p A ` ωtq ` D ν p 1 ` ρtq .
+
+3.9 Equilibrium
+
+The wealth equation (4) implies ωt` 1 “ p 1 ` ρtq A. The fraction of middle-aged en trepreneurs who do not operate banks can be written as
+
+min" ωt` 1Kp ωtq Γ , 1* , where Γ ” Aγ¯ and
+
+Kp ωq ” max" 1, 1 ´ ω θ * .
+
+We restrict attention to monetary equilibria with active private-money issuance. Accordingly, every equilibrium trajectory satisfies
+
+##### ωt` 1Kp ωtq ă Γ.
+
+Under this restriction, a strictly positive mass of entrepreneurs operates banks, and the cutoff lies in the interior of the productivity distribution. Fiat-money-only equilibria, which may arise when the cutoff reaches or exceeds ¯γ, are outside the scope of the analysis.
+
+Let ¯ω ”
+
+A β. An equilibrium is a nonnegative sequence t ωt, mtu 8t“ 0 satisfying ωt ď ω¯,
+
+##### ωt` 1Kp ωtq Γ `D ν` ωt` 1 A˘η “ 1 ´ A ´ ωt `
+
+mt η (11)
+
+and mt` 1 “
+
+µ A ωt` 1mt, (12)
+
+given the initial value ω0 P p 0, ω¯q . The equilibrium can be described as a planar system containing one predetermined variable, the mid-life wealth of entrepreneurs, and one jump variable, the real balances. If fiat money is positively valued at all dates, the gross inflation rate is given by
+
+Πt` 1 “
+
+A
+
+ωt` 1
+
+. (13)
+
+In what follows, we characterize the possible solutions to the planar system in p ωt, mtq and use the previous equation to compute the associated inflation trajectory.
+
+4 Equilibrium Analysis
+
+In this section, we characterize stationary and non-stationary trajectories for the single money economy and the dual-money economy. In the single-money economy, only private money is positively valued. In the dual-money economy, both fiat and private money are positively valued. Equation (11) can be rearranged as
+
+mt “ Ψp ωt` 1, ωtq , (14)
+
+where
+
+##### Ψp ω1, ωq ” D νˆ
+
+##### ω1 A˙` η„ A ` ω ´ 1 ` ω1Kp ωq Γ ȷ .
+
+It can be shown that Ψω1p ω1, ωq ą 0 for any feasible values p ω1, ωq . Therefore, for any feasible pair p ωt, mtq , equation (14) implicitly defines the map ωt` 1 “ Fp ωt, mtq . The implicit function theorem gives Fmp ω, mq ą 0.
+
+For a given current wealth ω, the next-period wealth ω1 must satisfy 0 ď ω1 ď ωˆp ωq , where the state-dependent upper bound for the next-period wealth is
+
+##### ωˆp ωq ” min" ω, ¯ Γ Kp ωq* .
+
+Since Ψp ω1, ωq is strictly increasing in ω1, the real balances satisfy Ψp 0, ωq ď m ď Ψp ωˆp ωq , ωq . 
+Define the lower bound on real balances as mp ωq ” maxt 0, ηp A ` ω ´ 1qu , and define the 
+upper bound as mp ωq ” Ψp ωˆp ωq , ωq . 
+The one-period-ahead feasible region is 
+F “ tp ω, mq : 0 ď ω ď ω¯, mp ωq ď m ď mp ωqu . 
+The equilibrium map is defined by 
+Tµp ω, mq “ ´ Fp ω, mq , µ A Fp ω, mq m¯ . 
+The viability kernel that ensures forward invariance is given by 
+
+Q µ “ tp ω, mq P F : T t µp ω, mq P F for every t ě 0u .
+
+4.1 Steady states
+
+Define Hp ωq ” Ψp ω, ωq . Then, the mapping m “ Hp ωq defines the locus on which ωt` 1 “ ωt. The properties of Dp zq and the non-negativity of Kp ωq imply that
+
+##### mt ą Hp ωtq ô ωt` 1 ą ωt mt ă Hp ωtq ô ωt` 1 ă ωt.
+
+This means that the mid-life wealth of entrepreneurs increases above the locus ωt` 1 “ ωt 
+and decreases below it. 
+4.1.1 Single-money steady state 
+Let p ωN , mN q denote a steady state of the single-money economy. We have mN “ 0, and 
+the value ωN is defined by Hp ωN q “ 0. If ωN ă 1 ´ θ, then Kp ωN q ą 1. In that case, the 
+collateral constraint is binding at p ωN , 0q , so it determines the size of the banking system, 
+the aggregate issuance of private money, and aggregate investment. If ωN ą 1 ´ θ, then 
+Kp ωN q “ 1. In that case, the return constraint is binding at p ωN , 0q . 
+17 
+
+Because Hp 0q “ ηp A ´ 1q ă 0, a sufficient condition for the existence of a single-money steady state is
+
+Hp ω¯q ą 0. (15)
+
+Note that
+
+##### H1p ωq “
+
+1
+
+## AD 1ν´
+
+ω
+
+A¯` η„ 1 ` Kp ωq ` ωK1p ωq Γ ȷ away from the kink. On the collateral branch p when ω ă 1 ´ θq , we have Kp ωq ` ωK1p ωq “ θ´ 1 p 1 ´ 2ωq . On the return branch p when ω ą 1 ´ θq , we have Kp ωq ` ωK1p ωq “ 1, which means that H1p ωq ą 0 always holds on the return branch. Only the collateral branch can potentially be non-monotone. A sufficient condition for monotonicity on the collateral branch is A β ď
+
+1 ` θΓ 2 . (16) These observations allow us to prove the following proposition. Proposition 1 If conditions (15) and (16) hold, there is exactly one single-money steady state: p ωN , 0q defined by Hp ωN q “ 0. 4.1.2 Dual-money steady state Let p ωM, mMq denote a dual-money steady state of the dual-money economy. In this equilibrium, we have mM ą 0; thus, equation (12) requires
+
+ωM “
+
+##### A µ” ωp µq . (17)
+
+The corresponding steady-state real balances are
+
+## mM “ D νˆ
+
+1 µ˙` η»–
+
+##### A `
+
+##### A µ´ 1 ` K´
+
+A µ¯µγ¯ fifl ” m p µq . (18) A dual-money steady state exists when H p ωp µqq ą 0. It must also satisfy
+
+## K´
+
+A µ¯µ ă γ¯, (19) 18
+
+so the marginal project type is strictly below the upper bound on project return ¯γ. If Hp ωq satisfies conditions (15) and (16), then H p ωp µqq ą 0 ô ωp µq ą ωN . Therefore, the money growth rate must satisfy
+
+##### β ă µ ă
+
+A 
+ωN” µN . (20) 
+We also consider the allocation in the limiting case µ Ó β, which is associated with the 
+Friedman rule. These observations allow us to prove the following proposition. 
+Proposition 2 Suppose that conditions (15) and (16) hold. There exists a unique dual 
+money steady state p ωM, mMq “ p ωp µq , mp µqq if and only if the money growth rate satisfies 
+(19) and (20). The steady-state values are given by (17) and (18). As µ Ò µN , we have 
+p ωM, mMq Ñ p ωN , 0q . As µ Ó β, we have p ωM, mMq Ñ p ω, m ¯ p βqq . 
+Define the threshold value µR ” Ap 1 ´ θq ´ 1. The economy is in the return regime if 
+µ ă µR and in the collateral regime if µ ą µR. The steady-state wealth and the steady-state 
+real balances decrease as the money growth rate rises. The previous result also shows that 
+the dual-money steady state and the single-money steady state collide in the limit µ Ò µN . 
+
+4.2 Dynamics
+
+Consider now the isocline mt` 1 “ mt. For mt ą 0, we have mt` 1 ą mt ô ωt` 1 ą ωp µq . Since Fp ω, mq is strictly increasing in m, define P µp ωq ” Ψ p ωp µq , ωq . Then, it can be shown that
+
+##### mt ą P µp ωtq ô mt` 1 ą mt mt ă P µp ωtq ô mt` 1 ă mt.
+
+It is also straightforward to show that the wealth isocline and the money isocline have a unique intersection. A global trajectory for the wealth of entrepreneurs can be represented by the following second-order difference equation:
+
+Ψp ωt` 2, ωt` 1q “
+
+##### µ A ωt` 1Ψp ωt` 1, ωtq .
+
+Given ω0 and ω1 “ Fp ω0, m0q , we can use the previous equation to generate global trajecto ries. Let m “ S µp ωq denote the stable manifold in the feasible set. If S µp ωq is a graph, then
+
+it satisfies
+
+##### S µp Fp ω, S µp ωqqq “
+
+##### µ A Fp ω, S µp ωqqS µp ωq .
+
+The boundary condition is S µ p ωp µqq “ mp µq . Figures 1 and 2 illustrate the phase diagram for different parametric values. They also include the linearized saddle path around the dual-money steady state, which is derived below.
+
+Figure 1: An example of the phase diagram for the economy. The locus mt` 1 “ mt is negatively sloped. The parametric values are: A “ 0.50; β “ 0.95; η “ 1.00; θ “ 0.30; γ¯ “ 2.00; α “ 0.50; ζ “ 0.15; σ “ 0.40; ν “ 1; ϵ “ 1.25; and µ “ 1.10.
+
+Next, we can establish that a feasible, bounded trajectory with monotone ωt converges to either the single-money steady state or the dual-money steady state.
+
+Proposition 3 Assume that Hp Aµ´ 1 
+q ą 0 and µ´ 1Kp Aµ´ 1 
+q ă γ¯. Suppose that Hp ωq “ 0 
+has a unique root ωN . Every feasible, bounded trajectory with monotone ωt must converge to 
+one of the two steady states. 
+
+Non-monotonic trajectories can also be an equilibrium outcome. In fact, we later show the existence of equilibrium trajectories that imply persistent aggregate fluctuations. Next, we establish that the single-money steady state is a sink for an open region around it. Later in the analysis, we establish the mode of convergence to this steady state by studying the local behavior of trajectories.
+
+Figure 2: An example of the phase diagram for the economy. The locus mt` 1 “ mt is positively sloped. The parametric values are: A “ 0.70; β “ 0.95; η “ 1.00; θ “ 0.40; γ¯ “ 3.00; α “ 0.50; ζ “ 0.20; σ “ 0.50; ν “ 1; ϵ “ 1.00; and µ “ 1.30. Proposition 4 Suppose that ωN ‰ 1 ´ θ, ´ 1 ă φ1p ωN q ă 0, and β ď µ ă µN , where φp ωq ” Fp ω, 0q . Then there exists δ, m¯ ą 0 such that r ωN ´ δ, ωN ` δs ˆ r 0, m¯ s is a forward invariant trapping rectangle, and every trajectory beginning in it converges to p ωN , 0q . Any trajectory in a neighborhood of p ωN , 0q converges to that steady state. The real balances converge to zero, and the gross inflation rate converges to a value higher than µ. Along a path converging to p ωN , 0q , we have Πt` 1 “
+
+A 
+ωt` 1 Ñ µN ą µ. Although mt converges 
+to zero, the ratio mt` 1{ mt converges to a finite value. The monetary authority expands the 
+nominal money stock at a constant gross rate µ, but the long-run inflation rate is higher 
+than µ and is independent of µ conditional on convergence to p ωN , 0q . 
+The following proposition establishes that the stable manifold is a graph (locally) and 
+that the dual-money steady state is an interior local saddle. It also defines the attraction 
+region of the single-money steady state. 
+Proposition 5 Suppose that β ă µN , ωN ‰ 1´ θ, and ´ 1 ă φ1p ωN q ă 0. Also, assume that 
+the equilibrium map Tµ admits a C 
+3 extension to a neighborhood of p ωN , 0q . There is ε ą 0 
+
+such that, for any µ P p µN ´ ε, µN q , 1. p ωN , 0q is a sink; 2. there is a nearby dual-money steady state p ωp µq , mp µqq , and it is an interior saddle; 21
+
+3. its local stable manifold is a graph m “ S µp ωq ; 4. in a sufficiently small neighborhood Uµ containing both steady states, feasible points between m “ 0 and this graph converge to p ωN , 0q , points on the graph converge to p ωp µq , mp µqq , and feasible points immediately above it leave Uµ. Moreover, there is an interval Jµ of predetermined initial states ω0 on which S µ ą 0. For every ω0 P Jµ , the initial condition m0 “ S µp ω0q converges to p ωp µq , mp µqq , whereas every feasible initial condition in Uµ satisfying 0 ă m0 ă S µp ω0q converges to p ωN , 0q . In the following, we characterize the mode of convergence to p ωp µq , mp µqq by using local methods. But before we proceed to the study of the local dynamics of the dual-money economy, it is useful to understand the mechanics of the single-money economy.
+
+4.3 Single-money dynamics
+
+The dynamics of the single-money economy are helpful in understanding the mechanism 
+of private money creation that will drive the dynamics of the dual-money equilibrium. In the 
+single-money economy, we have mt “ 0 for all t ě 0. In this equilibrium, the wealth sequence 
+satisfies ωt` 1 “ φp ωtq , where φp ωq is implicitly defined by Ψ p φp ωq , ωq “ 0. Feasibility 
+requires ω ď 1 ´ A. The feasible set is defined by I “ r 0, Ωs , where Ω ” mint 1 ´ A, ω¯u . 
+It follows that ω P I ñ φp ωq P I . One way to verify invariance is to show that, for every 
+ω P I , we have Ψp 0, ωq ď 0 and Ψp Ω, ωq ě 0. The first inequality follows from the feasibility 
+requirement: ω ď 1 ´ A. In what follows, we assume that the second inequality holds for 
+any ω P I . 
+It can be easily shown that, away from the kink, 
+
+φ1p ωq “ ´ η” 1 ` φp ωq K1p ωq Γ ı1 AD1ν´ φp ωq A¯` ηKp ωq Γ ă 0,
+
+given that φp ωq ă θΓ holds on the collateral branch. If conditions (15) and (16) hold, the single-money steady state is unique, and
+
+ωt ą ωN ô ωt` 1 ă ωN ωt ă ωN ô ωt` 1 ą ωN .
+
+The equilibrium trajectory alternates around ωN . Why does this happen? Suppose that the current state is ωt ă ωN . The mid-life wealth of entrepreneurs is below its steady-state level. 22
+
+Lower entrepreneurial wealth increases the required external finance per active bank and changes the project cutoff and the number of active banks. Under the model’s monotonicity conditions, the net market-clearing effect is a lower price and a higher return on private money, which raises next-period entrepreneurial wealth. This behavior can be self-correcting, leading to diminishing deviations from the steady state and, therefore, convergence. The previously described interplay between the mid-life wealth of entrepreneurs (which translates into the net worth of the banking system) and the market-clearing price of private money determines the process of money creation by private banks, leading to fluctuations in the quantity of private money and other aggregate variables. Next, we show that these oscillations can be damped or can form perpetual banking cycles.
+
+4.3.1 Local stability
+
+The single-money steady state is locally stable if and only if ´ 1 ă φ1p ωN q ă 0. If the steady state occurs on the collateral branch p when ωN ă 1 ´ θq , the condition for local stability is
+
+1
+
+## AD 1ν´
+
+ωN
+
+##### A¯` ηˆ
+
+1 θΓ´ 1˙ą 0.
+
+If the steady state occurs on the return branch p when ωN ą 1 ´ θq , the condition for local stability is
+
+1
+
+## AD 1ν´
+
+ωN
+
+##### A¯` ηˆ
+
+1 Γ´ 1˙ą 0.
+
+These conditions imply that any trajectory starting near the steady state converges to the single-money steady state through damped oscillations. The fluctuations in the mid-life wealth of entrepreneurs can be persistent, depending on the parametric configuration.
+
+4.3.2 Global stability and period-two cycles
+
+A continuous decreasing map of a compact interval has the property that its even and odd subsequences converge, possibly to different limits. Those limits either coincide at the unique fixed point or form a period-two orbit. Therefore, the uniqueness of the fixed point alone does not ensure global convergence. If it is possible to find a pair p ωL, ωHq in the feasible set such that ωL ‰ ωH, ωH “ φp ωLq , and ωL “ φp ωHq , then p ωL, ωHq forms a two-cycle, so the economy is in a perpetual banking cycle. The fluctuations inherent in the mechanism of private money creation are not self-correcting in a two-cycle.
+
+Proposition 6 Suppose that (15) and (16) hold and that φ : I Ñ I , where I “ r 0, Ωs . If φ1p ωN q ă ´ 1, there is a nontrivial two-period cycle for the single-money economy.
+
+4.4 Local dynamics around the dual-money steady state
+
+Now we consider the dynamics of the dual-money equilibrium in a neighborhood of Mµ ” p ωp µq , mp µqq . The behavior of the economy in this region is the focus of analysis in the optimal policy problem. Assume that the money growth rate satisfies µ ą β, µ ‰ µR, and mp µq ą 0. Define the following coefficients:
+
+##### δp µq ” D 1νˆ
+
+##### 1 µ˙ą 0, ∆p µq ” δp µq A ` ηK ´
+
+A
+
+##### µ¯Γ ą 0, Np µq ” η»–
+
+1 `
+
+## A µ K1´
+
+A
+
+## µ¯Γ fifl
+
+. Also, define γp µq ” µ´ 1K p ωp µqq . The set of feasible values for the money growth rate is given by
+
+A “ t µ ą 0 : mp µq ą 0, γp µq ă γ¯u . Linearizing equation (11) around the dual-money steady state yields
+
+##### dωt` 1 “ ap µq dωt ` bp µq dmt, where ap µq ” ´ Np µq ∆p µq and bp µq ”
+
+1 ∆p µq . Linearizing equation (12) around the dual-money
+
+steady state yields
+
+dmt` 1 “ µmp µq ap µq A dωt `„ 1 ` µmp µq bp µq A ȷ dmt. The Jacobian matrix of the linearized system is given by DTµp ωM, mMq “ ˜ ap µq bp µqκp µq ap µq bp µq 1 ` κp µq¸ , where κp µq ” µmp µq bp µq A´ 1 ą 0. The characteristic polynomial is
+
+##### Pp λq “ λ 2 ´ r 1 ` ap µq ` κp µqs λ ` ap µq .
+
+It is straightforward to show that the roots of the characteristic polynomial are real. Since 24
+
+Pp 1q “ ´ κp µq ă 0, one of the roots is always greater than one. The candidate stable eigenvalue is
+
+λp µq “ 1 ` ap µq ` κp µq ´ a r 1 ` ap µq ` κp µqs 2 ´ 4ap µq 2 . If ap µq ě 0, then 0 ď λp µq ă 1; therefore, the dual-money steady state is a local saddle. If ap µq ă 0, then λp µq ă 0. It is stable in this case if and only if it can be shown that λp µq ą ´ 1. The exact local saddle condition is Pp´ 1q “ 2r 1 ` ap µqs ` κp µq ą 0. This condition can be written as
+
+2r ∆p µq ´ Np µqs ` mp µq 
+ωp µq ą 0. (21) 
+If equality holds in (21), then λp µq “ ´ 1, which is the local loss of stability condition and 
+can indicate a flip bifurcation. On the other hand, if the left-hand side of (21) is strictly 
+negative, then λp µq ă ´ 1, and both eigenvalues are outside the unit circle. In that case, 
+the dual-money steady state is a local source rather than a saddle. Thus, the money growth 
+rate determines the local saddle-path stability of the dual-money equilibrium. 
+4.4.1 Monotone versus damped saddle-path convergence 
+Define the threshold µP ” 
+1 θγ¯. If the dual-money steady state occurs on the collateral 
+
+branch, then we have ap µq “ η´
+
+1 
+θγµ¯ ´ 
+1¯∆p µq ą 0 ô µ ă µP . (22) 
+
+If (22) holds, it follows that 0 ă λp µq ă 1, and the convergence of the economy along the local saddle path is monotonic. If the stable eigenvalue is close to one, the convergence to the steady state occurs slowly; thus, deviations from the steady state can be persistent in that case. It is possible that damped oscillations occur around Mµ. Note that
+
+##### ap µq “ η´
+
+1 
+θγµ¯ ´ 
+1¯∆p µq ă 0 ô µ ą µP . (23) 
+
+If (21) and (23) hold, then ´ 1 ă λp µq ă 0, and the convergence of the economy takes the form of damped oscillations. If the stable eigenvalue is close to ´ 1, the fluctuations are more 25
+
+persistent. 
+We can provide a sufficient condition for the existence of a monotone-convergence region. 
+The dual-money steady state lies on the collateral branch only if µ ą µR. Thus, a non-empty 
+monotone-convergence region requires 
+
+##### maxt β, µRu ă mint µP , µN u . (24)
+
+If the dual-money steady state occurs on the return branch, trajectories along the local saddle path can converge only through damped oscillations. To verify this claim, note that K1p ωq “ 0 for any ω on the return branch, so
+
+##### ap µq “ ´
+
+##### η ∆p µqă 0.
+
+Necessary and sufficient conditions for the existence of the return regime are β ă µ ă mint µR, µN u . (25)
+
+These findings can be summarized in the following proposition.
+
+Proposition 7 Assume that (15) and (16) hold.
+
+1. Suppose Mµ occurs on the collateral branch. If the money growth rate satisfies (22), the convergence of the dual-money economy along the saddle path is monotonic. If the money growth rate satisfies (21) and (23), the convergence of the dual-money economy along the saddle path takes the form of damped oscillations. Condition (24) ensures a non-empty monotone-convergence region.
+
+2. Suppose Mµ occurs on the return branch. If (21) holds, the convergence of the dual money economy along the saddle path takes the form of damped oscillations. Condition (25) ensures the existence of the return regime.
+
+We have seen that µ “ µP is the threshold at which the stable root crosses zero and the stable map reverses orientation. The actual loss-of-stability occurs when λp µq “ ´ 1, namely when the money growth rate is such that condition (21) holds with equality. If the left-hand side of (21) is negative, the dual-money steady state is unstable. The following proposition characterizes all possible binding regimes (collateral or return) and modes of convergence (monotone or oscillatory) for non-stationary trajectories in a neighborhood of Mµ.
+
+Proposition 8 Suppose that (15) and (16) hold. Any µ P p β, mint µR, µN uq XA implies the return regime and has a negative candidate stable root. Any µ P p maxt β, µRu , mint µP , µN uqX
+
+A implies the collateral regime with a positive stable root. Any µ P p maxt β, µR, µP u , µN qXA implies the collateral regime with a negative candidate stable root. Condition (21) ensures the stability of the negative root.
+
+The interaction between public and private money in a dual-money equilibrium can change the dynamics of private money creation previously described for the single-money non-stationary equilibrium. The pattern of convergence can be monotonic or oscillatory in the dual-money equilibrium as the composition of the total money supply changes over time. The adjustment of the net worth of banks along the transition path remains gradual, even though the mode of convergence can be different. An interesting case is the following: β ă µR ă µP ă µN . If µ P p β, µRq , the economy is in the return regime with oscillatory fluctuations around the steady state (assuming the proper stability condition holds). If µ P p µR, µP q , the economy switches to the collateral regime with monotonic convergence. If µ P p µP , µN q , the economy stays in the collateral regime, but the convergence to the steady state is now oscillatory, provided the stability condition holds. Therefore, a small change in policy can cause a drastic change in the dynamic properties of the dual-money economy.
+
+4.4.2 Saddle-path slope
+
+To characterize the inflation trajectories in a neighborhood of Mµ, it is necessary to further characterize the linearized system. The linearized saddle path is given by
+
+##### mt ´ mp µq “ sp µq r ωt ´ ωp µqs ` Op|| ωt ´ ωp µq||
+
+2 q ,
+
+where sp µq ” bp µq ´ 1 
+r λp µq ´ ap µqs . If ap µq ą 0, then 0 ă λp µq ă 1 and sp µq ă 0. Thus, 
+along the local saddle path, wealth and real balances move on opposite sides of their steady 
+state values. If ap µq ă 0 and (21) hold, then ´ 1 ă λp µq ă 0 and sp µq ą 0. Thus, wealth 
+and real balances are initially on the same side of the steady state, but both alternate signs 
+over time. 
+Locally, for any deviation on the local saddle path, 
+
+##### ˜ ωt ´ ωp µq mt ´ mp µq¸« c0λp µq t˜ 1 sp µq¸ .
+
+This equation fully describes the local behavior of the planar system around Mµ.
+
+4.4.3 Inflation dynamics
+
+Given (13), it follows that
+
+Πt` 1 «
+
+##### A ωp µq ` c0λp µq t` 1.
+
+Figure 3 depicts the case of monotonic convergence: The inflation rate converges from above if ω0 ă ωp µq and from below if ω0 ą ωp µq . In both cases, the economy approaches the dual money steady state gradually. Figure 4 shows the case of oscillatory convergence. These examples show two economies with the same policy but different dynamics. The economies differ in the fundamentals of the private money issuing sector.
+
+Figure 3: An example of monotonic transitional dynamics. The parametric values are: A “ 0.85; β “ 0.95; η “ 0.80; θ “ 0.10; ¯γ “ 2.00; α “ 0.40; ζ “ 0.15; σ “ 0.60; ν “ 1; ϵ “ 1.10; and µ “ 1.03.
+
+Figure 4: An example of oscillatory transitional dynamics. The parametric values are: A “ 0.41; β “ 0.925; η “ 0.82; θ “ 0.57; ¯γ “ 4.28; α “ 0.70; ζ “ 0.11; σ “ 0.53; ν “ 1; ϵ “ 1.83; and µ “ 1.03.
+
+4.5 Local dynamics around the single-money steady state
+
+In this section, we characterize the behavior of the planar system in the neighborhood of the single-money steady state. The local dynamic analysis presented in this section allows us to derive sharp results for the binding regime and the modes of convergence around p ωN , 0q . Define aN ” φ1p ωN q and bN ” Fmp ωN , 0q ą 0. The Jacobian matrix at the single-money steady state is
+
+DTµp ωN , 0q “ ˜ aN bN 0 µ AωN¸ .
+
+The two eigenvalues are λ ω 
+N “ aN and λ m N “ µ{ µN . The following proposition provides the 
+conditions for the local stability of the single-money steady state. 
+
+Proposition 9 Suppose that (15) and (16) hold. Assume that ωN ‰ 1´ θ. If ´ 1 ă φ1p ωN q ă 0 and µ ă µN , then both eigenvalues lie inside the unit circle. The single-money steady state is a two-dimensional local sink.
+
+Note that the inflation rate rises monotonically towards µN only if the mid-life wealth of entrepreneurs eventually declines monotonically towards ωN . This is not automatic because the wealth eigenvalue aN is typically negative. It is possible that the inflation trajectory is oscillatory around p ωN , 0q . The local system is given by
+
+ωt ´ ωN « Caa t N `
+
+bN Cm λ m N ´ aNp λ m N q t, mt « Cmp λ m N q t.
+
+Since aN ă 0 and λ m N ą 0, there are two generic cases and one knife-edge case.
+
+4.5.1 Case 1: λ m N ą | aN |
+
+For any Cm ą 0, ωt ´ ωN „
+
+bN Cm λ m N ´ aNp λ m N q t.
+
+Since bN ą 0, Cm ą 0, and λ m N ´ aN ą 0, the coefficient on the right-hand side is positive. Hence, ωt ą ωN and
+
+ωt` 1 ´ ωN ωt ´ ωN Ñ λ m N P p 0, 1q .
+
+Therefore, we have ωt Ó ωN . In other words, the mid-life wealth of entrepreneurs eventually 
+approaches its steady-state value monotonically from above. 
+4.5.2 Case 2: λ m 
+N ă | aN | 
+In this case, the negative eigenvalue dominates if Ca ‰ 0: 
+
+ωt ´ ωN „ Caa t N . Because aN ă 0, the gap ωt ´ ωN oscillates around zero. The exception is the special case: Ca “ 0. In the linearized system, this means
+
+m0 “p λ m N ´ aN q bN p ω0 ´ ωN q .
+
+This is precisely the λ m N -eigenvector direction. Along it, we have
+
+ωt ´ ωN “ p ω0 ´ ωN qp λ m N q t,
+
+so the mid-life wealth of entrepreneurs approaches the steady state monotonically from above, 
+even if λ m 
+N ă | aN | . 
+4.5.3 Case 3: λ m 
+N “ | aN | 
+In this knife-edge case, neither mode dominates. Note that aN “ ´ λ m N . The two modes 
+have equal absolute decay rates. The linearized equation is 
+
+ωt ´ ωN “ p λ m N q
+
+## t “
+
+##### B ` Cp´ 1q
+
+## t ‰
+
+. Whether wealth is eventually monotonic or alternating depends on the coefficients B and C.
+
+4.6 Banking cycles in the dual-money economy
+
+Proposition 6 establishes perpetual banking cycles in the single-money economy. We now show that these cycles also organize the dynamics of the dual-money economy. Two 30
+
+questions arise. First, does the private-money cycle attract equilibrium trajectories along 
+which fiat money is valued, in the same way that the single-money steady state does in 
+Proposition 4? Second, can fiat money remain valued in the long run in an economy that 
+cycles? 
+Note that the set tp ω, mq : m “ 0u is invariant under Tµ. Hence, a two-cycle p ωL, ωHq of 
+the single-money economy is also a two-cycle tp ωL, 0q ,p ωH, 0qu of the dual-money economy. 
+Let Φ ” φ1p ωLq φ1p ωHq denote the multiplier of the cycle in the single-money economy and 
+define the threshold 
+
+µC ”
+
+A ?ωLωH . (26) By (13), the limiting inflation rate along the cycle alternates between A{ ωL and A{ ωH, so µC is the geometric mean of the limiting inflation rate over one cycle. It plays the role that µN plays for the single-money steady state. Indeed, (12) implies
+
+mt` 2 mt “´
+
+µ
+
+## A¯
+
+2
+
+ωt` 2ωt` 1.
+
+So, along the cycle, fiat money loses value faster than the government creates it if and only 
+if µ ă µC. 
+Proposition 10 Let p ωL, ωHq be a two-cycle of the single-money economy whose points lie 
+away from the kink and satisfy 0 ă ωL ă ωH ă ω¯ and ωHKp ωLq ă Γ. Then tp ωL, 0q ,p ωH, 0qu is a two-cycle of the dual-money economy, and the eigenvalues of DT 2 
+µp ωL, 0q are Φ and 
+Λmp µq ” µ 2µ´ 2 C . Suppose that | Φ| ă 1. If µ ă µC, the cycle is a local sink of the dual 
+money economy. There exists a neighborhood U of the cycle such that every initial condition 
+p ω0, m0q P U with m0 ą 0 generates a dual-money equilibrium along which mt converges to 
+zero and p ωt, ωt` 1q converges to p ωL, ωHq or to p ωH, ωLq . 
+Proposition 10 is the counterpart of Proposition 4 when φ1p ωN q ă ´ 1. In that case, the 
+single-money steady state is a saddle of the dual-money system for µ ă µN . Proposition 10 
+implies that the fluctuations in the mid-life wealth of entrepreneurs, the quantity of private 
+money, and the inflation rate are permanent, and fiat money is displaced asymptotically by 
+private money, even though it is valued at every date. The threshold µC exceeds µN if and 
+only if ?ωLωH ă ωN . 
+We now turn to the second question. A two-cycle of the dual-money economy with valued 
+fiat money must reproduce real balances every two periods, which, by (12), pins down the 
+geometric mean of wealth along the cycle. A sequence tp ωa, maq ,p ωb, mbq ,p ωa, maq , . . .u with 
+31 
+
+ma ą 0 is a two-cycle of the dual-money economy if and only if
+
+ωaωb “ r ωp µqs 2, (27) A Ψp ωb, ωaq “ µ ωa Ψp ωa, ωbq , (28) and Ψp ωb, ωaq ą 0. Condition (27) states that the geometric mean of wealth over the cycle equals the wealth at the dual-money steady state or, equivalently, by (13), that the geometric mean of the gross inflation rate over the cycle equals the money growth rate: Πt` 1Πt` 2 “ µ 2. The cycle implies ωa ă ωp µq ă ωb. Define the function Z : r ω¯´ 1ωp µq 2, ω¯s ˆ p β, µ¯q Ñ R by Zp ω, µq ” A Ψˆ ωp µq 2 ω , ω˙´ µ ω Ψˆ ω, ωp µq 2 ω ˙ , where ¯µ ą β is sufficiently large. The steady state ωp µq is always a root of Zp ω, µq . Dual money two-cycles are the other roots. They come in pairs t ωa, ωp µq
+
+2 
+{ ωau . The single-money 
+cycle satisfies (28) for every µ, since Ψp ωH, ωLq “ Ψp ωL, ωHq “ 0, and it satisfies (27) exactly 
+at µ “ µC. The following proposition applies the implicit function theorem to show that a 
+branch of dual-money two-cycles emerges from the single-money cycle at that point. 
+Proposition 11 Let p ωL, ωHq satisfy the hypotheses of Proposition 10, and suppose that 
+Zωp ωL, µCq ‰ 0. Then there exist ε ą 0 and C 
+1 functions ωap µq , ωbp µq “ ωp µq 
+
+##### 2 { ωap µq , and
+
+##### map µq “ Ψp ωbp µq , ωap µqq on p µC ´ ε, µC ` εq that satisfy (27)–(28) and p ωap µCq , ωbp µCq , map µCqq “ p ωL, ωH, 0q .
+
+The dual-money two-cycle converges to the single-money two-cycle as µ Ñ µC. If | Φ| ă 1, 
+the dual-money cycle is asymptotically stable when Zωp ωL, µCq ą 0, and it has a saddle-path 
+structure when Zωp ωL, µCq ă 0. 
+Lagos and Wright (2003) have shown that in the model with fiat money only, monetary 
+two-cycles can emerge only if the demand for liquidity is non-monotonic in inflation. In 
+the model with private and fiat money developed here, monetary two-cycles emerge with 
+a monotonic demand for liquidity. In the case of CRRA utility, the dual-money cycle can 
+occur even if the coefficient of relative risk aversion is less than one. 
+Figure 5 provides an example of the different steady states and two-cycles of the model. 
+The value µF is the threshold value for the money growth factor that implies the loss of 
+stability in the eigenvalue of the stable root for the dual-money economy. The system 
+32 
+
+bifurcates, and the periodic points of the dual-money two-cycle enclose the dual-money steady state in the range µF ă µ ă µN . In this range, the dual-money steady state is a source. For µ ą µC, the single-money two-cycle has a saddle-path structure.
+
+Figure 5: Steady states and two-cycles. The parametric values are: A “ 0.43; β “ 0.95; 
+η “ 1.00; θ “ 0.53; ¯γ “ 6.30; α “ 0.46; ζ “ 0.47; σ “ 0.75; ν “ 1; and ϵ “ 1.02. 
+
+4.7 Feedback policy rule
+
+In this subsection, we allow the government to implement a feedback rule of the form: µ “ µp ωt, mtq , where µ : R 2 ` Ñ p 0, 8q is a smooth function. In that case, the dynamic
+
+mapping becomes:
+
+Tˆ p ω, mq “ ˆ Fp ω, mq , µp ω, mq A Fp ω, mq m˙ . Although the rule changes the viability kernel, it does not change the locus ωt` 1 “ ωt. Appendix B provides the details about the dynamic system under a feedback rule. The key result is to show that the policy rule can impact the dynamic properties of the dual-money and single-money steady states.
+
+Proposition 12 Assume that Hp ωq is strictly increasing with a unique root and that | φ1p ωN q| ă 1. Assume also that ωN ‰ 1 ´ θ. Suppose that the feedback rule is locally affine: µp ω, mq “ 33
+
+aω ` bm ` µ¯ in a neighborhood of p ωN , 0q . Let
+
+##### C ”
+
+##### a ` bH1p ωN q `
+
+A ω 2 N
+
+##### µN H1p ωN q and δ ”
+
+µ¯ ´ µ¯C µN ,
+
+where µ¯C ” µN ´ aωN . Hold both parameters a and b fixed.
+
+1. Suppose that C ą 0. There is ε ą 0 such that whenever µ¯ P p µ¯C ´ ε, µ¯Cq , p ωM, mMq has a saddle-path structure, and p ωN , 0q is a local sink. 2. Suppose that C ă 0. There is ε ą 0 such that whenever µ¯ P p µ¯C, µ¯C ` εq , p ωM, mMq is a local sink, and p ωN , 0q has a saddle-path structure. Figure 6 shows an example of the local phase diagram under the two cases described in Proposition 12. A feedback rule can alter the dynamic properties of the two nearby steady states, depending on the parameters set by the monetary authority.
+
+Figure 6: Dynamic properties under a feedback rule. The parametric values are: A “ 0.08; β “ 0.95; η “ 1.00; θ “ 0.30; ¯γ “ 3.43; α “ 0.50; ζ “ 0.15; σ “ 0.40; ν “ 1; and ϵ “ 1.25. The upper panel has a “ ´ 2.00, b “ 3.7830, and ¯µ “ 1.1209. The lower panel has a “ ´ 2.00, b “ ´ 5.9850, and ¯µ “ 1.3873.
+
+5 Optimal Policy
+
+An important question in monetary economics is the optimum quantity of money. We have developed a model with a dual monetary system in which both fiat money and private money coexist as media of exchange, so the quantity of money in this economy is a combi nation of government-issued money and privately created money. The optimum quantity of money in this hybrid public-private monetary system is presented next. Let X b t P R, X s t P R, and Xt P R` denote the total period-t CM consumption of buyers, sellers, and entrepreneurs, respectively. Social welfare is given by
+
+ÿ
+
+8 
+t“ 0 
+
+##### β t t X b t ` X s t ` Xt ` α r u p qtq ´ w p qtqsu ,
+
+where qt P R` denotes period-t DM output (symmetric across all matches). We focus on allocations characterized by a cutoff value ˆγt above which the banker’s project is operated and below which it is not. The feasibility constraint in period t is given by
+
+X b t ` X s t ` Xt ď η„ż
+
+γ¯
+
+γˆt´ 1
+
+γ
+γ¯
+
+##### dγ ´ˆ 1 ´ γˆt γ¯˙` Aȷ .
+
+The right-hand side of this resource constraint gives the aggregate output of CM goods, net of the investment cost. Throughout this section, we set ν “ 1. This allows us to isolate the interaction between monetary policy and private-money creation without adding the separate generalized-Nash hold-up distortion. Section 5.1 characterizes the optimal stationary-allocation problem. Sec tion 5.2 characterizes the Ramsey problem in which the planner chooses the money growth factor sequence to maximize welfare, subject to the initial state of the economy ω0.
+
+5.1 Steady-state comparison
+
+Here, the planner uses the dual-money steady state mapping to choose the stationary allocation that maximizes long-run welfare. We consider a discounted stationary-policy comparison from a common inherited project distribution. Throughout this section, we assume that Hp ωq is strictly increasing with a unique root, and that β ă µN . At the dual-money steady state, the marginal project type is given by
+
+##### γp µq “
+
+1 
+µ max" 1, 1 
+θˆ 1 ´ A 
+µ˙ * . 
+
+From the equilibrium analysis, it follows that
+
+##### γp µq “ #
+
+1 
+µ if β ď µ ă µR 
+1 
+θµ ´ 1 ´ A 
+µ¯ if µ ą µR. 
+Given that the planner discounts future periods at the discount factor β, a project pro 
+duces a net social present value equal to βγ ´ 1. The socially efficient project threshold 
+is given by γ˚ “ 
+1 β. Therefore, we find that γp µq ą 
+
+1 β means under-investment, whereas
+
+##### γp µq ă
+
+1 β means that projects with a negative social surplus are being operated, leading to over-investment. Recall that mp µq ą 0 ô µ ă µN . We should also require γp µq ă γ¯ for a positive measure of active banks. Therefore, the stationary policy set is given by J “ t µ ě β : mp µq ą 0, γp µq ă γ¯u . Define the stationary DM welfare as αΣp qp µqq , where Σp qq ” up qq ´ wp qq denotes the surplus in a match. The quantity qp µq is defined by
+
+##### qp µq “ ψ´ 1ˆ 1 ` µ ´ β αβ ˙ ,
+
+where ψp qq ” u1p qq w1p qq is strictly decreasing in q. Therefore, up to constants independent of µ, stationary social welfare is given by
+
+##### Wp µq “ αΣp qp µqq `
+
+## η γ¯ż
+
+##### γ¯ γp µqp βγ ´ 1q dγ.
+
+This allows us to write the optimal policy problem simply as: maxµPJ Wp µq . After dropping 
+the constant terms, we can write the objective function as: 
+W 
+
+##### ˜ p µq ” W Dp µq ` W I p µq , where W Dp µq ” αΣp qp µqq and W I p µq ”
+
+##### η γ¯“ γp µq ´ β 2γp µq 2
+
+‰
+
+denote the two relevant compo nents of the objective function. Note that
+
+##### q1p µq “
+
+##### 1 αβψ1p qp µqq ă 0.
+
+Therefore, we have
+
+##### W 1Dp µq “ u1p qp µqq ´ w1p qp µqq βψ1p qp µqq
+
+. 
+Define the Friedman rule allocation as that associated with the limit: µ Ó β. At the Friedman 
+rule, we have u1p q˚q “ w1p q˚q , so W 1Dp βq “ 0. For any µ ą β, we have qp µq ă q˚ and ψ1 ă 0. 
+Therefore, W 1Dp µq ă 0 for µ ą β. 
+Note that 
+
+##### W 1Ip µq “
+
+##### η γ¯r 1 ´ βγp µqs γ1p µq ą 0 ô„ γp µq ´ 1 βȷ γ1p µq ă 0.
+
+Thus, the welfare of CM investment rises when:
+
+• there is under-investment and γp µq falls; 
+• there is over-investment and γp µq rises. 
+
+On the return branch, we have γ1p µq “ ´ µ´ 2. Consequently, the slope of the welfare function for investment is
+
+##### W 1Ip µq “ ´ ηp µ ´ βq γµ¯ 3 .
+
+For µ ą β, it follows that W 1Ip µq ă 0. The slope of the total welfare function is
+
+##### W 1p µq “ u1p qp µqq ´ w1p qp µqq βψ1p qp µqq ´ ηp µ ´ βq γµ¯ 3
+
+for every µ ą β in the return regime. Therefore, there is no interior welfare optimum in the 
+return regime. 
+5.1.1 When the Friedman rule is globally optimal 
+The previous result allows us to characterize the case in which the Friedman rule (µ Ó β) 
+attains the first-best allocation. Suppose that 
+β ď µR. (29) 
+When µ Ó β, the dual-money steady state is in the return regime. This means that the 
+collateral constraint is not binding at the Friedman rule. Therefore, we have qp βq “ q˚ and 
+
+γp βq “ 1 β. Thus, the Friedman rule achieves the unconstrained first-best allocation. The 37
+
+optimality of the Friedman rule is indeed global in this case because no other policy can 
+improve either the DM allocation or the CM project-selection allocation. 
+Proposition 13 If (29) holds, the Friedman rule is the optimal monetary policy. It attains 
+the unconstrained first-best allocation. 
+5.1.2 Collateral regime at the Friedman rule 
+Suppose that 
+
+β ą µR. (30) Then the collateral constraint binds at the Friedman rule. This means that some en trepreneurs who own socially productive projects are credit-constrained under the Friedman rule, which implies that the first-best allocation is no longer available. The expression for the first derivative of γp µq implies that the investment threshold is increasing for µ ă 2A, maximized at µ “ 2A, and decreasing for µ ą 2A. An interior optimum µ˚ satisfies
+
+##### ´ u1p qp µ˚qq ´ w1p qp µ˚qq βψ1p qp µ˚qq “
+
+η γ¯„ 1 ´ βp µ˚ ´ Aq θp µ˚q 2 ȷ p 2A ´ µ˚q θp µ˚q 3 . (31) The left-hand side of (31) is positive. An interior optimum is possible only where
+
+##### „ γp µq ´ 1 βȷ γ1p µq ă 0.
+
+Note that γp βq ą β´ 1 since (30) holds. This means that there is under-investment at the 
+Friedman rule. 
+Since the DM welfare derivative is zero at β, we have 
+W 1p β`q “ 
+η γ¯r A ´ βp 1 ´ θqs p 2A ´ βq θ 2β 4 . 
+Because A ´ βp 1 ´ θq ă 0, we find that: sgnrW 1p β`qs “ sgnr β ´ 2As . Therefore, the 
+following must be true: β ą 2A ñ W 1p β`q ą 0; β “ 2A ñ W 1p β`q “ 0; β ă 2A ñ 
+W 1p β`q ă 0. These properties allow us to evaluate the implications of the Friedman rule 
+under the collateral regime. 
+Proposition 14 Assume that γp β`q ă γ¯. Suppose that (30) holds. If β ą 2A, then the 
+Friedman rule is not optimal. If β ă 2A, then the Friedman rule is locally optimal, but it 
+38 
+
+may not be globally optimal. 5.1.3 A sufficient condition for the existence of an optimum It is helpful to characterize the efficient project selection, denoted by µE, that satisfies
+
+##### γp µEq “
+
+1 βô θµ 2 E ´ βµE ` βA “ 0. When the collateral constraint binds at µ Ó β, the relevant root is
+
+µE “ β `a β 2 ´ 4θβA 2θ . The social surplus from project selection is maximized at µ “ µE, where the marginal project has a zero social net present value. However, DM output is below q˚, so µE generally is not the overall welfare optimum. Proposition 15 Assume that γ¯ ą 1{p 4θAq . Suppose that (30) holds. If β ą 2A and µE ă µN , then there exists an interior optimum µ˚ P p β, µEq in J .
+
+5.2 Ramsey problem
+
+In this section, we solve the Ramsey problem of finding the money-growth factor se 
+quence that implies maximum welfare, given the economy’s initial state p ω0, m0q . Then, ω1 
+is determined by m0 “ Ψp ω1, ω0q . Because the DM occurs before the CM in each period, q0 
+is inherited through f´ 1 and ω0. It is constant across candidate policies for a fixed ω0. 
+Note that in period t, DM output is determined by the inherited entrepreneurial wealth. 
+Since ft´ 1 “ 
+A ωt, the buyer’s first-order condition implies 
+
+##### αψp qtq ` 1 ´ α “
+
+##### A βωtô qt “ ψ´ 1˜
+
+##### A βωt´ p 1 ´ αq α ¸” qp ωtq . (32)
+
+The period-t marginal project is given by γ m t “ ωt` 1Kp ωtq A . (33)
+
+The flow-welfare measure is therefore
+
+##### Λp ωt, ωt` 1q ” α r up qtq ´ wp qtqs `
+
+η
+
+## γ¯ż
+
+γ¯ γ m tp βγ ´ 1q dγ,
+
+where qt satisfies (32) and γ m t satisfies (33). Define µt ” Mt` 1 Mt . Along any strictly positive feasible path, we have
+
+µt “ AΨp ωt` 2, ωt` 1q ωt` 1Ψp ωt` 1, ωtq
+
+. (34) 
+Once the planner selects t ωtu 8t“ 0, equation (34) tells us which time-varying money-growth 
+factor sequence implements it. 
+The primal Ramsey problem is defined by 
+max 
+t ωtu8t“ 0ÿ 
+
+8 
+t“ 0 
+
+##### β tΛp ωt, ωt` 1q ,
+
+subject to 0 ď ωt` 1 ď ωˆp ωtq , Ψp ωt` 1, ωtq ą 0, and AΨp ωt` 2, ωt` 1q ě βωt` 1Ψp ωt` 1, ωtq , given 
+ω0. The Ramsey problem has a recursive formulation. Let the state be represented by two 
+consecutive wealth levels, p ω, ω1q “ p ωt, ωt` 1q . Then, we can write the Bellman equation: 
+Jˆ 
+p ω, ω1q “ Λp ω, ω1q ` β max ζ Jˆ 
+p ω1, ζq , 
+subject to 0 ď ζ ď ωˆp ω1q , Ψp ζ, ω1q ą 0, and AΨp ζ, ω1q ě βω1Ψp ω1, ωq . 
+Next, it is helpful to formulate a relaxed one-state problem as follows. First, solve the 
+problem without the constraint µt ě β. If the recovered money-growth sequence satisfies 
+µt ě β at every date, the relaxed solution also solves the constrained Ramsey problem. 
+When the recovered sequence t µtu 8t“ 0 from (34) is such that µt ě β holds for all t ě 0, the 
+problem reduces to 
+
+Jp ωq “ max ω1P Θp ωqt Λp ω, ω1q ` βJp ω1qu , where the feasible set is
+
+Θp ωq “ t ζ : 0 ď ζ ď ωˆp ωq , Ψp ζ, ωq ą 0u . The value, conditional on the inherited ω0, is
+
+V p ω0q “ max ω1P IRp ω0q
+
+Jˆ p ω0, ω1q , where IRp ω0q contains initial choices that allow for an infinite feasible continuation. To apply the contraction mapping theorem, it is helpful to take the following steps. Let
+
+I “ r a, bs Ă p 0, ω¯s be a set containing the initial state ω0. Define 
+ΘI p ωq “ t ζ P I : ζ ď ωˆp ωq , Ψp ζ, ωq ě 0u . 
+Assume that the set ΘI p ωq is nonempty for every ω P I, that the correspondence ΘI is 
+compact-valued and continuous, and that Λ is continuous on the graph of ΘI . 
+Under these conditions, the relaxed Bellman operator, defined on the space of continuous 
+and bounded functions, 
+
+##### T Jp ωq “ max zP ΘI p ωqt Λp ω, zq ` βJp zqu ,
+
+is a contraction with modulus β. It therefore has a unique fixed point. Let hp ωq denote 
+the relaxed Ramsey policy function: ωt` 1 “ hp ωtq . If the maximizer is unique, hp ωq is 
+continuous. 
+Define rp ωq ” Ψp hp ωq , ωq . If rp ωq is continuous and positive everywhere, then it must be 
+that 
+
+##### min ωP I rp ωq ą 0.
+
+Therefore, the money-growth factor that implements this policy is defined by
+
+##### kp ωq ” Arp hp ωqq hp ωq rp ωq
+
+. 
+If kp ωq ě β holds, the relaxed optimizer satisfies all the constraints of the original Ramsey 
+problem. Because the original feasible set is contained in the relaxed one, a relaxed optimizer 
+that is feasible for the original problem must also be optimal for the original problem. 
+The Euler equation for an interior optimum is 
+
+##### Λ2p ωt´ 1, ωtq ` βΛ1p ωt, ωt` 1q “ 0,
+
+where Λ1p ω, ω1q is the partial derivative of Λp ω, ω1q with respect to the first argument, and Λ2p ω, ω1q is the partial derivative with respect to the second argument. An interior Ramsey steady state, denoted by ω˚˚, satisfies
+
+##### Λ2p ω˚˚, ω˚˚q ` βΛ1p ω˚˚, ω˚˚q “ 0.
+
+The long-run money growth factor is µ˚˚ ”
+
+A ω˚˚ . Using the functional form of Λp ω, ω1q , an
+
+interior Ramsey steady state can be written as
+
+##### βSˆ1p ω˚˚q `
+
+##### η Γp 1 ´ βγ˚˚qr Kp ω˚˚q ` βω˚˚K1p ω˚˚qs “ 0,
+
+where γ˚˚ ” γˆp ω˚˚, ω˚˚q , Sˆ 
+p ωq ” αΣp qp ωqq , and ˆγp ω, ζq ” ζKp ωq A . 
+Note that the Ramsey steady state generically differs from the optimum steady state 
+obtained by comparing the dual-money steady state indexed by µ. The reason is analogous 
+to the modified golden rule: The Ramsey planner discounts the DM welfare gain that ωt` 1 
+delivers next period and the date-p t` 1q cutoff effect through Kp ωt` 1q . The next proposition 
+derives some properties of the Ramsey solution. The results are, admittedly, conditional on 
+the required smoothness of the value and policy functions. 
+Proposition 16 Define Qp ω, zq ” Λp ω, zq ` βJp zq . Assume that hp ωq ă θΓ holds on the 
+collateral branch. Suppose that on a compact invariant interval I “ r a, bs the following holds: 
+(i) the optimum is unique, interior, and remains within one smooth regime; (ii) J, Q P C 2; 
+(iii) Qzz ď ´ c ă 0 for some c ą 0; (iv) 0 ď Λ12 ď d ă c; and (v) the feasibility constraints 
+are slack. Then, h : I Ñ I and r : I Ñ p 0, 8q satisfy: 
+1. h is non-decreasing; 
+2. h has a unique fixed point ω˚˚; 
+3. r is strictly increasing. 
+Moreover, we have: (i) ω ă ω˚˚ ñ kp ωq ą µ˚˚ and (ii) ω ą ω˚˚ ñ kp ωq ă µ˚˚. If, 
+in addition, kp ωq ě β holds for every ω P I, the relaxed policy also solves the constrained 
+Ramsey problem. 
+This proposition produces the following corollary: 
+
+ωt ă ω˚˚
+
+ñ$’’’’&’’’’%
+
+µt ą µ˚˚ mt` 1 ą mt ωt` 1 ą ωt Πt` 1 ă Πt ωt ą ω˚˚
+
+ñ$’’’’&’’’’%
+
+µt ă µ˚˚ 
+mt` 1 ă mt 
+ωt` 1 ă ωt 
+Πt` 1 ą Πt. 
+When the net worth of banks is low (ωt ă ω˚˚), the Ramsey planner sets the money growth 
+path above the steady state to relax external-financing constraints and accelerate the devel 
+opment of the banking sector. When the net worth of banks is high (ωt ą ω˚˚), the Ramsey 
+planner chooses the money growth path below the long-run growth rate, allowing the net 
+42 
+
+worth of banks to decline towards their Ramsey steady-state values. Under sufficient condi tions, we find that the optimal policy is initially expansionary (with money growth above its steady-state value) when issuers begin under-capitalized and initially contractionary (with money growth below its steady-state value) when issuers begin over-capitalized. Figure 7 provides an example.
+
+Figure 7: Ramsey inflation paths. The parametric values are: A “ 0.48; β “ 0.95; η “ 1.00; 
+θ “ 0.485; ¯γ “ 2.50; α “ 0.50; ζ “ 0.04; σ “ 0.50; ν “ 1; and ϵ “ 1.20. 
+
+6 Conclusion
+
+This paper studies a monetary system in which public fiat money and collateral-backed private liabilities jointly provide liquidity services. The central mechanism is a feedback loop between bank capitalization and the market value of private money. The net worth of banks determines individual funding needs and the allocation of resources across productive projects. Private-money issuance determines its return, and that return influences the net worth of banks in the following period. This mechanism generates aggregate fluctuations without external shocks or sticky prices. The fundamentals of the private money issuing sector determine the type of dynamics in the economy. A private-money economy can converge through persistent oscillations or settle into a stable banking cycle. When public and private money coexist, the same policy can lead to fundamentally different dynamic behaviors if the primitives of the private money issuing sector differ across two economies. For the same primitives, we find that a small change in policy can result in a drastic change in the properties of the dynamic system. We have also shown that banking cycles are robust to the presence of public money.
+
+This paper also offers valuable insights into the optimum quantity of money under a hybrid monetary system. The Friedman rule implements the first best when collateral con straints are slack. When they bind, policy trades off decentralized-market output against the allocation of resources across productive projects, and a money-growth factor above the Friedman rule can be optimal. Along the Ramsey transition path, the policymaker manages the capitalization of money issuers by choosing a non-stationary path for the money growth rate to maximize welfare, subject to the economy’s initial state. These results do not rely on defaults, runs, or informational opacity; private claims are recognizable and collateralized. The balance sheets of money issuers alone are sufficient to generate endogenous fluctuations and a state-dependent role for policy. The broader implication is that, in a hybrid monetary system, inflation is jointly determined by public issuance and the capitalization of money-issuing private institutions.
+
+References
+
+Altermatt, L. and Wipf, C. (2024). Liquidity, the Mundell-Tobin effect, and the Friedman rule. Journal of Money, Credit and Banking, 56(5):1235–1259.
+
+Andolfatto, D. (2021). Assessing the impact of central bank digital currency on private banks. Economic Journal, 131:525–540.
+
+Azariadis, C. (1993). Intertemporal Macroeconomics. Blackwell, Oxford, UK, and Cam bridge, MA.
+
+Azariadis, C., Bullard, J., and Smith, B. (2001). Public and private circulating liabilities. Journal of Economic Theory, 99:59–116.
+
+Azariadis, C. and Smith, B. (1998). Financial intermediation and regime switching in busi ness cycles. American Economic Review, 88:516–536.
+
+Benigno, P., Schilling, L., and Uhlig, H. (2022). Cryptocurrencies, currency competition, and the impossible trinity. Journal of International Economics, 136:103601.
+
+Berentsen, A., Camera, G., and Waller, C. (2007). Money, credit and banking. Journal of Economic Theory, 135:171–195.
+
+Boldrin, M. and Woodford, M. (1990). Equilibrium models displaying endogenous fluctua tions and chaos: A survey. Journal of Monetary Economics, 25:189–222.
+
+Brunnermeier, M. and Niepelt, D. (2019). On the equivalence of private and public money. Journal of Monetary Economics, 106:27–41.
+
+Bullard, J. and Smith, B. (2003). The value of inside and outside money. Journal of Monetary Economics, 50:389–417.
+
+Cavalcanti, R., Erosa, A., and Temzelides, T. (1999). Private money and reserve management in a random-matching model. Journal of Political Economy, 107:929–945.
+
+Cavalcanti, R. and Wallace, N. (1999a). Inside and outside money as alternative media of exchange. Journal of Money, Credit and Banking, 31:443–457.
+
+Cavalcanti, R. and Wallace, N. (1999b). A model of private bank-note issue. Review of Economic Dynamics, 2:104–136.
+
+Champ, B., Smith, B., and Williamson, S. (1996). Currency elasticity and banking panics: Theory and evidence. Canadian Journal of Economics, 29:828–864.
+
+Chiu, J., Davoodalhosseini, S. M., Jiang, J., and Zhu, Y. (2023). Bank market power and central bank digital currency: Theory and quantitative assessment. Journal of Political Economy, 131:1213–1248.
+
+Choi, M. and Rocheteau, G. (2023). A model of retail banking and the deposits channel of monetary policy. Journal of Monetary Economics, 139:127–147.
+
+Farhi, E. and Tirole, J. (2012). Bubbly liquidity. Review of Economic Studies, 79:678–706.
+
+Fern´andez-Villaverde, J. and Sanches, D. (2019). Can currency competition work? Journal of Monetary Economics, 106:1–15.
+
+Fern´andez-Villaverde, J., Sanches, D., Schilling, L., and Uhlig, H. (2021). Central bank digital currency: Central banking for all? Review of Economic Dynamics, 41:225–242.
+
+Ferraris, L. and Watanabe, M. (2011). Collateral fluctuations in a monetary economy. Jour nal of Economic Theory, 146:1915–1940.
+
+Friedman, M. (1960). A Program for Monetary Stability. Fordham University Press.
+
+Friedman, M. (1969). The optimum quantity of money. In The Optimum Quantity of Money and Other Essays. Aldine.
+
+Friedman, M. and Schwartz, A. J. (1963). A Monetary History of the United States, 1867– 1960. Princeton University Press.
+
+Gorton, G. and Zhang, J. (2023). Taming wildcat stablecoins. University of Chicago Law Review, 90:909–971.
+
+Grandmont, J.-M. (1985). On endogenous competitive business cycles. Econometrica, 53:995–1045.
+
+Gu, C., Mattesini, F., Monnet, C., and Wright, R. (2013a). Banking: A new monetarist approach. Review of Economic Studies, 80:636–662.
+
+Gu, C., Mattesini, F., Monnet, C., and Wright, R. (2013b). Endogenous credit cycles. Journal of Political Economy, 121:940–965.
+
+Holmstr¨om, B. and Tirole, J. (1998). Private and public supply of liquidity. Journal of Political Economy, 106:1–40.
+
+Keister, T. and Sanches, D. (2023). Should central banks issue digital currency? Review of Economic Studies, 90:404–431.
+
+Kiyotaki, N. and Wright, R. (1989). On money as a medium of exchange. Journal of Political Economy, 97:927–954.
+
+Kiyotaki, N. and Wright, R. (1993). A search-theoretic approach to monetary economics. American Economic Review, 83:63–77.
+
+Lagos, R., Rocheteau, G., and Wright, R. (2017). Liquidity: A new monetarist perspective. Journal of Economic Literature, 55:371–440.
+
+Lagos, R. and Wright, R. (2003). Dynamics, cycles, and sunspot equilibria in ‘genuinely dynamic, fundamentally disaggregative’ models of money. Journal of Economic Theory, 109(2):156–171.
+
+Lagos, R. and Wright, R. (2005). A unified framework for monetary theory and policy analysis. Journal of Political Economy, 113:463–484.
+
+Matsuyama, K. (2013). The good, the bad, and the ugly: An inquiry into the causes and nature of credit cycles. Theoretical Economics, 8:623–651.
+
+Rocheteau, G. and Wright, R. (2013). Liquidity and asset-market dynamics. Journal of Monetary Economics, 60:275–294.
+
+Samuelson, P. (1958). An exact consumption-loan model of interest with or without the social contrivance of money. Journal of Political Economy, 66:467–482.
+
+Sargent, T. and Wallace, N. (1982). The real-bills doctrine versus the quantity theory: A reconsideration. Journal of Political Economy, 90:1212–1236.
+
+Schilling, L. and Uhlig, H. (2019). Some simple Bitcoin economics. Journal of Monetary Economics, 106:16–26.
+
+Shi, S. (1995). Money and prices: A model of search and bargaining. Journal of Economic Theory, 67:467–496.
+
+Shi, S. (1997). A divisible search model of fiat money. Econometrica, 65:75–102.
+
+Shi, S. (2006). Viewpoint: A microfoundation of monetary economics. Canadian Journal of Economics, 39:643–688.
+
+Smith, B. (1988). Legal restrictions, ”sunspots,” and Peel’s Bank Act: The real bills doctrine versus the quantity theory reconsidered. Journal of Political Economy, 96:3–19.
+
+Trejos, A. and Wright, R. (1995). Search, bargaining, money, and prices. Journal of Political Economy, 103:118–141.
+
+Venkateswaran, V. and Wright, R. (2014). Pledgability and liquidity: A new monetarist 
+model of financial and macroeconomic activity. NBER Macroeconomics Annual, 28:227– 
+270. 
+Wallace, N. (1980). The overlapping generations model of fiat money. In Kareken, J. H. and 
+Wallace, N., editors, Models of Monetary Economies. Federal Reserve Bank of Minneapolis. 
+Williamson, S. (1999). Private money. Journal of Money, Credit and Banking, 31:469–491. 
+Williamson, S. (2012). Liquidity, monetary policy, and the financial crisis: A new monetarist 
+approach. American Economic Review, 102:2570–2605. 
+Williamson, S. and Wright, R. (2010). New monetarist economics: Models. In Friedman, 
+B. M. and Woodford, M., editors, Handbook of Monetary Economics, volume 3. Elsevier. 
+
+A Proofs
+
+Proof of Proposition 1. If condition (16) holds, then Hp ωq is strictly increasing every 
+where in its domain. Since Hp ω¯q ą 0 and Hp 0q ă 0, there is a unique ωN P p 0, ω¯q that 
+satisfies Hp ωN q “ 0. 
+Proof of Proposition 2. Conditions (15) and (16) imply that Hp ωq is strictly increasing 
+everywhere in its domain and that Hp ω¯q ą 0. We have shown that Hp ωq Ñ 0 as ω Ó ωN . 
+Also, note that Hp ωq Ñ Hp ω¯q as ω Ò ω¯. Since ωp µq “ 
+
+A µ, a unique dual-money steady state exists if and only if β ă µ ă µN . The limit µ Ó β implies that
+
+##### mp µq “ Hˆ
+
+A
+
+##### µ˙Ñ Hˆ
+
+##### A β˙“ mp βq ą 0.
+
+The limit µ Ò µN implies that
+
+##### mp µq “ Hˆ
+
+A
+
+##### µ˙Ñ Hˆ
+
+##### A µN˙“ 0.
+
+Proof of Proposition 3. We show the proof for the case in which ωt is monotonically increasing. The case in which ωt is monotonically decreasing is analogous. Suppose that p ω0, m0q P F and that the trajectory derived from it satisfies ωt` 1 ą ωt for all t ě 0. Given that the wealth sequence is bounded, there exists a limit: ωt Ñ ω˜. By the continuity of Ψ, we have mt Ñ Hp ω˜q . If we take the limits on both sides of (12), we get
+
+##### Hp ω˜q “
+
+µ 
+A 
+ωH˜ p ω˜q . 
+
+Consequently, either Hp ω˜q “ 0 or ˜ω “ ωp µq . There are, therefore, only two possible cases. First, suppose that Hp ω˜q “ 0. This implies that ˜ω “ ωN , so the limit is p ωN , 0q . Second, suppose that Hp ω˜q ą 0. Then, we have ˜ω “ ωp µq . Therefore, it must be that Hp ωp µqq “ mp µq , which means that the limit is p ωp µq , mp µqq . Proof of Proposition 4. Let φp ωq ” Fp ω, 0q . Suppose that p ωN , 0q is feasible. By hypothesis, | φ1p ωN q| ă 1. Choose δ ą 0 such that there is 0 ă c ă 1 that satisfies Iδ “ r ωN ´ δ, ωN ` δs , ωN ` δ ă ωp µq , and supωP Iδ| φ1p ωq| ď c ă 1. Let B be an upper bound for Fmp ω, mq on a sufficiently small rectangle and choose ¯m ą 0 so that cδ ` Bm¯ ď δ and Iδ ˆ r 0, m¯ s Ă F . Then, the rectangle R N “ Iδ ˆ r 0, m¯ s is forward invariant. Note that | ωt` 1´ ωN | ď c| ωt´ ωN |` Bmt and mt` 1 ď ρp µq mt, where ρp µq ” r ωp µqs ´ 1
+
+p ωN ` δq . Consequently, mt ď ρp µq tm0 Ñ 0 and ωt Ñ ωN . For every m0 ą 0 in this open rectangle, fiat money remains positively valued at every finite date, but Πt` 1 Ñ µN ą µ. Proof of Proposition 5. Define υ ”
+
+##### µ µN´ 1, aN ” φ1p ωN q , and bN ” Fmp ωN , 0q ą 0. Let ωˆt ” ωt ´ ωN . Note that ωp µq “
+
+ωN 1`
+
+υ. Define the function Fˆ p ω, m ˆ q ” Fp ωN ` ω, m ˆ q ´ ωN .
+
+Since Fp ωN , 0q “ ωN , its first-order expansion is ωˆt` 1 “ aN ωˆt ` bNmt ` Op||p ωˆt, mtq||
+
+2 q .
+
+Substituting ˆωt in (12), we get the exact relation:
+
+##### mt` 1 “ p 1 ` υq mt `
+
+1 ` υ ωN ωˆt` 1mt. (35) At υ “ 0 the eigenvalues of the Jacobian matrix are aN and 1. Under | aN | ă 1, ˆω is the stable direction.
+
+Represent the parameter-dependent center manifold by ˆω “ gp m, υq . Because p ωN , 0q is a fixed point for every µ, we have gp 0, υq “ 0. Its first-order expansion is gp m, υq “ cm ` Op m 2 ` | υ| mq . To obtain the coefficient c, impose invariance at υ “ 0. Along the center manifold, ˆωt “ cmt. Then,
+
+##### ωˆt` 1 “ p aN c ` bN q mt ` Op m 2 tq .
+
+At the same time, we have ˆωt` 1 “ ωˆt `Op m 2 tq when υ “ 0. Hence, it must be that c “
+
+bN 1´ aN.
+
+Thus, locally on the center manifold, we have
+
+ωˆt` 1 “
+
+##### bN 1 ´ aN mt ` Op m 2 t ` | υ| mtq .
+
+Since Ψp Fp ω, mq , ωq “ m, it follows that H1p ωN q “ 1´ aN bN . Substituting the expression for ωˆt` 1 into (35), we get
+
+##### mt` 1 “ p 1 ` υq mt `
+
+1
+
+##### ωN H1p ωN q
+
+##### m 2 t ` Op m 3 t ` | υ| m 2 tq .
+
+The coefficient on the quadratic term is positive. The two nearby fixed points of this reduced equation satisfy
+
+##### m„ υ ` m ωN H1p ωN q` ...ȷ“ 0.
+
+Hence, they are mN “ 0 and mM “ ´ υωN H1p ωN q`Op υ 2 
+q . For υ ă 0, the second fixed point 
+is positive. This is the dual-money steady state, while m “ 0 is the single-money steady 
+state. Their collision at υ “ 0 produces a boundary transcritical bifurcation. On the center 
+manifold, the reduced map is m ÞÑ p 1` υq m ` 
+
+m 2 ωN H1p ωN q ; for υ ă 0, its derivative is 1` υ at 0
+
+and 1 ´ υ ` Op υ 2 
+q ą 1 at p ωM, mMq , which with the attracting ˆω-direction gives the saddle 
+and the separatrix. 
+Proof of Proposition 6. Define Gp ωq ” φ 2 
+p ωq ´ ω. Because ωN is a fixed point, 
+
+##### Gp ωN q “ 0. Moreover, G1p ωN q “ r φ1p ωN qs
+
+2 
+´ 1 ą 0. There is ε ą 0 such that Gp ωq ą 0 
+for all ω P p ωN , ωN ` εs . Therefore, we have φ 2 
+p ωq ą ω for any ω slightly above the steady 
+state. Now consider the upper bound Ω. Since I is invariant, φ 2 
+p Ωq P I . Hence, Gp Ωq ď 0. 
+
+Suppose that Gp Ωq “ 0. Then, φ 2 p Ωq “ Ω. Since Ω ą ωN and φ is strictly decreasing, φp Ωq ă φp ωN q “ ωN ă Ω. Therefore, setting ωL “ φp Ωq and ωH “ Ω gives a nontrivial two-period cycle. Suppose that Gp Ωq ă 0. We can find ωN ă ωˆ ă Ω sufficiently close to Ω such that Gp ωˆq ă 0. Hence, φ 2 p ωˆq ă ωˆ. Since φ is strictly decreasing, we have ˆω ą φp ωˆq . Then, we can apply Theorem 8.2 from Azariadis (1993) to show the existence of a two-period cycle. Proof of Proposition 8. Let Mµ ” p ωp µq , mp µqq denote the dual-money steady state. Suppose that ¯ω ă 1 ´ θ. For any µ P A satisfying (20), we have ωp µq “
+
+A 
+µ ă 1 ´ θ. Thus, 
+Mµ is in the collateral regime. Suppose that ¯ω ą 1 ´ θ. For any µ P A satisfying (20) and 
+A 
+µă 1 ´ θ, Mµ is in the collateral regime. For any µ P A satisfying (20) and A 
+µą 1 ´ θ, Mµ 
+is in the return regime. 
+The threshold µP determines whether the coefficient ap µq is positive or negative. If µ P A and µ ă mint µP , µN u , then ap µq ą 0, which implies λp µq P p 0, 1q , so convergence to Mµ is 
+monotonic. If µ P A and µ ą µP , then ap µq ă 0. If (21) holds, then ´ 1 ă λp µq ă 0, so 
+convergence to Mµ is oscillatory. 
+
+Proof of Proposition 10. Since mt` 1 “ A´ 1µωt` 1mt, the set tp ω, mq : m “ 0u is invariant under Tµ, and Fp ω, 0q “ φp ωq . Hence, Tµp ωL, 0q “ p ωH, 0q and Tµp ωH, 0q “ p ωL, 0q . Away from the kink, we have
+
+DTµp ω, 0q “ ˜ φ1p ωq Fmp ω, 0q 0 µ Aφp ωq¸ .
+
+By the chain rule, DT 2 
+µp ωL, 0q “ DTµp ωH, 0q DTµp ωL, 0q . The product of two upper triangu 
+lar matrices is upper triangular. Its diagonal entries are the products of the corresponding 
+diagonal entries: 
+
+Φ ” φ1p ωHq φ1p ωLq and Λmp µq ”
+
+µ 2ωLωH A 2 .
+
+These are the eigenvalues of DT 2 
+µp ωL, 0q and, by the same argument, of DT 2 
+µp ωH, 0q . 
+If | Φ| ă 1 and µ ă µC, both eigenvalues lie inside the unit circle, so p ωL, 0q is a sink 
+of T 2 
+µ and the orbit tp ωL, 0q ,p ωH, 0qu is a local sink of Tµ. Choose a neighborhood U of 
+the orbit that is forward invariant under T 2 µ, on which every point converges to the orbit, 
+and on which the constraints ω ď ω¯ and Fp ω, mq Kp ωq ď Γ hold. Points of U with m ą 0 
+are mapped into points with m ą 0, since Fp ω, mq is close to ωL or ωH and hence strictly 
+positive. A trajectory starting in U with m0 ą 0 satisfies mt ą 0 for all t ě 0, mt Ñ 0, and 
+p ωt, ωt` 1q Ñ p ωL, ωHq or p ωH, ωLq . It satisfies (11)–(12) by construction and the feasibility 
+constraints because it never leaves U. It is therefore a dual-money equilibrium. 
+Proof of Proposition 11. Consider the equation Zp ω, µq “ 0. Away from the kink, Z is 
+continuously differentiable in p ω, µq . At µ “ µC, we have 
+
+##### ωp µCq
+
+2 ωL “
+
+##### A 2 µ 2 CωL“ ωH
+
+by (26), so Zp ωL, µCq “ 0. Since Zωp ωL, µCq ‰ 0, the implicit function theorem yields ε ą 0 and a C 1 function ωap µq on p µC ´ ε, µC ` εq with ωap µCq “ ωL and Zp ωap µq , µq “ 0. Setting
+
+##### ωbp µq “ ωp µq
+
+2
+
+##### ωap µq and map µq “ Ψp ωbp µq , ωap µqq
+
+gives C 
+1 functions satisfying (27)–(28), with ωbp µCq “ ωH and map µCq “ Ψp ωH, ωLq “ 0. 
+Under | Φ| ă 1, we have m1ap µCq ‰ 0. Then, map µq has the sign of m1ap µCqp µ ´ µCq for µ 
+close to µC. Whenever map µq ą 0, it follows that p ωap µq , map µqq and p ωbp µq , mbp µqq , with 
+mb “ 
+µ 
+Aωbma ą 0, form a two-cycle of the dual-money economy. The feasibility constraints 
+hold at both points for µ close to µC, because they hold with strict inequality at the private 
+money cycle. Continuity of the branch gives the convergence to p ωL, ωHq as µ Ñ µC. 
+50 
+Let Xt “ p ωt, mtq denote the state at date t. Define Xa “ p ωa, maq and Xb “ p ωb.mbq . 
+The cycle conditions imply Fp Xaq “ ωb and Fp Xbq “ ωa. To study local stability, consider 
+deviations from the two-cycle every two periods: 
+Xˆ 
+
+##### t` 2 “ MaXˆ t ` Op||
+
+##### Xˆ t||
+
+2 q ,
+
+where Ma “ DT 2 
+µp Xaq “ DTµp Xbq DTµp Xaq . The corresponding matrix at Xb is Mb “ DT 2 
+µp Xbq “ DTµp Xaq DTµp Xbq . 
+It can be shown that det Ma “ aaab, where aa ” ´ Ψmp ωb,ωaq Ψωp ωb,ωaq and ab ” ´ Ψmp ωa,ωbq Ψωp ωa,ωbq . The 
+trace of Ma is 
+
+trMa “ aaab `
+
+µ 
+A 
+maaabb ` 
+µ 
+A 
+mbabba `´ 
+
+µ
+
+## A¯
+
+2
+
+##### p ωa ` mbbbqp ωb ` mabaq .
+
+The characteristic polynomial is Pp λq “ λ 2 
+´ trMaλ ` det Ma. The dual-money two-cycle is 
+a local sink if and only if Pp 1q ą 0, Pp´ 1q ą 0, and det Ma ă 1. If Pp 1q Pp´ 1q ă 0, it has a 
+saddle-path structure. Finally, note that 
+
+##### Pp 1q “
+
+µmababb A 2 Zωp ωa, µq .
+
+Since µ ą 0, ma ą 0, ba ą 0, and bb ą 0, we have sgnr Pp 1qs “ sgnr Zωp ωa, µqs . Given these 
+properties, the analysis near µC delivers the desired local stability result. 
+Proof of Proposition 12. Holding a, b fixed, define ¯µC ” µN ´ aωN and δ ” µ¯´ µ¯C µN . At 
+p ωN , 0q “ µN p 1 ` δq . For small positive m, we have mt` 1 mt Ñ 1 ` δ. The steady state p ωN , 0q exists for every ¯µ. Define ˆωt ” ωt ´ ωN , sN ” φ1p ωN q , and qN ” Fmp ωN , 0q . It follows that 
+H1p ωN q “ 1´ sN qN . At the critical parameter value, the Jacobian is 
+JN p 0q “ ˜ sN qN 0 1 ¸ . 
+Since | sN | ă 1, the wealth direction is stable, while the unit eigenvalue generates a one 
+dimensional center manifold. Its tangent satisfies ˆω “ 
+
+m H1p ωN q . Precisely, the parameter dependent center manifold can be written as ωˆ “
+
+##### m H1p ωN q` Op m 2 ` | δ| mq .
+
+Locally, the first dynamic equation can be written as ωˆt` 1 “ sN ωˆt ` qNmt ` Op||p ωˆt, mtq||
+
+2 q .
+
+The second dynamic equation is exactly
+
+mt` 1 “
+
+µN p 1 ` δq ` aωˆt ` bmt A p ωN ` ωˆt` 1q mt.
+
+At δ “ 0, we have
+
+ωˆt “
+
+##### mt H1p ωN q` Op m 2 tq .
+
+Substituting this into the first dynamic equation, we find that ˆωt` 1 “ Op mtq . Now set δ “ 0 in the second dynamic equation. Since ˆωt` 1 “ Op mtq , we find that ˆωt` 1mt “ Op m 2 tq .
+
+Therefore, mt` 1 “ mt `Op m 2 tq . In other words, the difference mt` 1 ´ mt has no linear term.
+
+Then, we have
+
+ωˆt` 1 “
+
+##### mt H1p ωN q` Op m 2 tq .
+
+On the center manifold, we have
+
+mt` 1 “ mt `„
+
+##### 1 ωN H1p ωN q`
+
+##### a µN H1p ωN q` b µNȷ m 2 t ` Op m 3 tq .
+
+Therefore, allowing δ ‰ 0 gives mt` 1 “ p 1 ` δq mt ` Cm 2 t ` Op m 3 t ` | δ| m 2 tq ,
+
+where
+
+##### C ”
+
+##### a ` bH1p ωN q `
+
+A ω 2 N
+
+##### µN H1p ωN q
+
+. The two nearby steady states of this reduced equation satisfy
+
+##### m r δ ` Cm ` ...s “ 0.
+
+One solution is m “ 0. If C ‰ 0, the other solution is
+
+##### mMp δq “ ´ δ C` Op δ 2 q .
+
+Since H1p ωN q ą 0, mM ą 0 ô ωM ą ωN ô δC ă 0. At the boundary steady state, λ s N “ sN and λ C N “ 1` δ. At the dual-money steady state, λ s M “ sN `Op δq and λ C M “ 1´ δ `Op δ 2 q . Since δC ă 0, the results stated in the proposition
+
+follow directly. 
+Proof of Proposition 13. Condition (29) implies that the Friedman rule is in the return 
+regime, according to Proposition 8. Therefore, the first-best allocation is available, given 
+that no entrepreneur with a socially productive project is collateral-constrained and the 
+opportunity cost of holding monetary assets is zero. 
+Proof of Proposition 14. If β ą 2A, a small increase in µ lowers the project cutoff, 
+relaxes under-investment, and produces a first-order CM investment gain, while the DM 
+welfare loss is only second order at µ Ó β. On the other hand, if β ă 2A, a small increase 
+in µ raises the project cutoff and worsens both distortions, so the Friedman rule is locally 
+optimal. 
+Proof of Proposition 15. The condition ¯γ ą 1{p 4θAq ensures that γp µq ă γ¯. For all 
+µ ą µE, we have γp µq ă β´ 1. On the descending collateral branch, it follows that γ1p µq ă 0. 
+Therefore, W 1Ip µq ă 0. Also, we have W 1Dp µq ă 0. Hence, W 1p µq ă 0 for every µ ą µE. 
+If β ą 2A and µE ă µN , then W 1p β`q ą 0 and W 1p µEq ă 0. Moreover, W is strictly 
+decreasing for µ ą µE. Thus, the global maximizer lies in the compact interval r β, µEs . It 
+cannot be β because the right derivative is positive, and it cannot be µE because the left 
+derivative is negative. Therefore, a global optimum exists in µ˚ P p β, µEq . 
+Proof of Proposition 16. The stated conditions imply 
+
+##### h1p ωq “ ´
+
+Λ12 Qzz ,
+
+so h is a contraction and has a unique fixed point. On the collateral branch, γ ě
+
+1 
+2β implies 
+
+Λ12 ě 0. Since Qzz ď ´ c ă 0, it follows that 0 ď h1 ď 
+d c. Also, we have 
+r1p ωq “ Ψω1p hp ωq , ωq h1p ωq ` Ψωp hp ωq , ωq . 
+On the collateral branch, hp ωq ă θΓ ensures Ψω ą 0, and hence r1 ą 0. 
+Because h is increasing and has a unique fixed point, ω ă ω˚˚ ñ ω ă hp ωq ď ω˚˚. Since 
+53 
+
+r is increasing, rp hp ωqq ą rp ωq . Then,
+
+##### kp ωq “
+
+A
+
+##### hp ωq
+
+##### rp hp ωqq rp ωq ą
+
+##### A hp ωqě
+
+A ω˚˚“ µ˚˚. Similarly, if ω ą ω˚˚, we have ω˚˚ ď hp ωq ă ω, so rp hp ωqq ă rp ωq , and therefore
+
+##### kp ωq ă
+
+##### A hp ωqď
+
+A ω˚˚“ µ˚˚.
+
+B Feedback Policy Rule
+
+Here, we derive some properties of the dynamic system under a feedback rule of the form: µ “ µp ω, mq . This rule does not change the one-period feasible set. However, it changes the viability kernel. For m ą 0, one-step feasibility requires
+
+##### mp Fp ω, mqq ď µp ω, mq Fp ω, mq m A ď mp Fp ω, mqq .
+
+The locus ωt` 1 “ ωt remains unchanged. For m ą 0, mt` 1 mt “ µp ωt, mtq Fp ωt, mtq A .
+
+Thus, mt` 1 ą mt ô µp ωt, mtq Fp ωt, mtq ą A. The locus mt` 1 “ mt is given by
+
+##### Np ω, mq ” µp ω, mq Fp ω, mq ´ A “ 0.
+
+Because m “ 0 implies m1 “ 0, the private-money-only boundary is invariant under every finite affine rule: µp ω, mq “ aω ` bm ` µ¯. A dual-money steady state p ωM, mMq satisfies mM “ Hp ωMq and µp ωM, Hp ωMqq “ A ωM.
+
+Define
+
+##### Rp ωq ” µ¯ ` aω ` bHp ωq ´
+
+A ω . A sufficient condition for the uniqueness of the dual-money steady state is R1p ωq ą 0 through out the relevant interval.
+
+B.1 Stability of the single-money steady state
+
+Suppose that the feedback rule is locally affine near the bifurcation point. The Jacobian at p ωN , 0q is
+
+##### DTˆ p ωN , 0q “ ˜ φ1p ωN q Fmp ωN , 0q 0 λN ¸ ,
+
+where λN “
+
+aωN ` µ¯ µN . Therefore, aωN ` µ¯ ă µN ñ λN ă 1,
+
+so the boundary steady state attracts positive real balances locally;
+
+aωN ` µ¯ ą µN ñ λN ą 1, so the boundary steady-state repels positive real balances locally. If | φ1p ωN q| ă 1 and 0 ă λN ă 1, the trapping-rectangle argument continues to apply: an open set of trajectories with m0 ą 0 converges to p ωN , 0q .
+
+B.2 Local dynamics at a dual-money steady state
+
+Let p ωM, mMq denote an interior dual-money steady state away from the kink. The Jacobian at p ωM, mMq is DTˆ p ωM, mMq “ ˜ p q mM ωMp p ` uq 1 ` κ ` v¸ ,
+
+where p ” Fωp ωM, mMq , q ” Fmp ωM, mMq ą 0, u ”
+
+aω 2 M A , v ”
+
+bωMmM A , and κ ”
+
+mMq ωM ą 0. Let τ denote the trace of the Jacobian matrix, and let ∆ denote its determinant. The character istic polynomial is Pp λq “ λ 2 ´ τλ ` ∆. It can be shown that sgnr Pp 1qs “ ´ sgnr R1p ωMqs . A saddle (and therefore local determinacy of equilibrium with one predetermined variable and one jump variable) exists when Pp 1q Pp´ 1q ă 0. If R1p ωN q ą 0, then Pp 1q ă 0; thus, the roots are necessarily real, and one of them exceeds one. The dual-money steady state is a saddle if and only if Pp´ 1q ą 0. In that case, we have ∆ ą 0 ñ 0 ă λs ă 1, so convergence is monotonic, where λs denotes the stable root. Alternatively, we have ∆ ă 0 ñ ´ 1 ă λs ă 0, so convergence exhibits damped oscillations.
+

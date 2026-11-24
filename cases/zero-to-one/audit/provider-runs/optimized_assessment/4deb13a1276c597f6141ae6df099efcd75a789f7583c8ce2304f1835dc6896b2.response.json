@@ -1,0 +1,28 @@
+{
+  "id": "044e4383-7ea0-49b0-989a-ec4eb504c583",
+  "object": "chat.completion",
+  "created": 1794201587,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000052151-000052171\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为对精英学校欢迎词的反讽评论，无可操作化的可观测预测指标或时间窗口。\",\"reason\":\"该句以“也许”表达反讽性评论，并非对可观测未来结果的事实性预测。\",\"limitation\":\"属于修辞性判断，无法转化为可检验的预测命题。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4373,
+    "completion_tokens": 145,
+    "total_tokens": 4518,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3605
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

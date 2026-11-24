@@ -1,0 +1,28 @@
+{
+  "id": "d378f3d9-5445-448e-9110-e68ed6923a42",
+  "object": "chat.completion",
+  "created": 1794201447,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000039912-000039945\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"原文以“在一个明确的未来中”为条件，判断钱会成为达到最终目的的手段而非最终目的；这是关于社会心态与行为取向的条件性论断，未给出可观测指标、期限或可识别的“明确未来”状态。\",\"reason\":\"该判断依赖“明确的未来”这一未定义且未发生的条件，无法在观察窗口内确定条件是否满足，也没有可操作化的指标衡量“钱是手段而非目的”。\",\"limitation\":\"条件本身模糊且无期限，无法合理操作化；不能以个别投资或消费行为代替整体社会取向。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4249,
+    "completion_tokens": 205,
+    "total_tokens": 4454,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3481
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

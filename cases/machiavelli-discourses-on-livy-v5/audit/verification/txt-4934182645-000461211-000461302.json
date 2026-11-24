@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000461211-000461302",
+  "plan": {
+    "object": "正在增加统治范围的人。同段的说明是征服充满危险，增加统治却可能不增加力量。",
+    "condition": "increases not his strength while he adds to his dominions。力量不增加，必须发生在增加统治的同时。扩张停止以后的财政困难，不是这句。借钱买下土地、随后国力上升，也不是力量没有增加。",
+    "quantifier": "must needs。一次同时满足条件和结果，不能单独支撑必然；一次增加统治、力量未增、却没有毁灭，可以反驳必然。",
+    "result": "登记变化是 ruined。毁灭是这个政权完了，不是仅仅变得更弱。作者下一句用威尼斯取得伦巴第后更弱作说明，那是解释，不把“更弱”替换成登记的毁灭。",
+    "window": "1531至2026-11-15。威尼斯和佛罗伦萨的例子是作者自己的说明，而且取得伦巴第、托斯卡纳在出版代理年之前。",
+    "counterevidence_needed": "一个人或国家增加了统治，同时力量没有增加，而后没有毁灭。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "empire expanded territory while finances and army weakened and then collapsed after 1531",
+      "counter_query": "state acquired territory it could barely afford and remained intact"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [],
+    "dropped": "伊斯兰帝国教材写的是扩张还能用新土地养活军队，扩张放慢或停止后财库才耗竭。路易斯安那购地使美国领土几乎加倍，材料写它由此进入一等强国，不是力量没有增加。印加崩溃的主要叙述在1532年前后，而且材料强调疫病和内战，不是增加统治时力量没有增加。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "增加统治和力量没有增加必须同时发生，然后才看是否毁灭。",
+    "reason": "首轮没有一条1531年之后的正文同时写出：统治范围在增加，力量却没有增加，然后这个政权毁灭，或者没有毁灭。扩张停止后的衰弱，和买下土地后变成更强的国家，都不进入条件。决定性缺口是缺少这一同时性。不能用“变得更弱”代替 ruined，也不能用一次相似给部分符合。",
+    "limitation": "没有新增可引用正文。",
+    "method": "先把增加统治和力量不增加放在同一时期，再看毁灭。时期错开就停。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "候选要么是扩张停止之后才弱，要么是增加统治的同时力量上升。没有进入毁灭这句。"
+  }
+}

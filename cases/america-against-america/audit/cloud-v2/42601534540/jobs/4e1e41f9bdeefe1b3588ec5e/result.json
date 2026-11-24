@@ -1,0 +1,729 @@
+{
+  "claim_id": "txt-1c4066fc0c-000118381-000118407",
+  "version": "search-verifier-v2",
+  "input_sha256": "94f68cf03598cea04a22be82a4965c0523a6401bbb9d199741aab4c27290f05b",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000118381-000118407",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "对象为西方发达资本主义国家；'严重衰退'以NBER衰退判定为透明代理；'有市场'操作化为激进/社会主义组织可观察的会员、选票或执政参与等实际支持。观察窗口为1991年出版后至2026-11-09截止日。",
+    "reason": "原文是转述友人的条件性预测：需'再有几次严重经济衰退'才触发激进分子获得市场。已给证据显示2001、2007-2009、2020年确有多次衰退，但激进组织支持是否随之上升缺乏直接对应证据：DSA会员在2021年后持续下降，且其自身归因于拜登当选降低议题显著性等非衰退因素。衰退次数条件已满足，但'激进分子有市场'这一主要结果在西方多国的可观察支持上既无系统上升证据，也无明确同步下降证据，无法判定方向。",
+    "limitation": "证据仅覆盖美国DSA会员数及个别衰退日期，未覆盖西方多国激进政党选票或执政参与；DSA会员变化受多重因素影响，不能单独作为衰退—激进支持因果检验。原文为友人转述，非作者独立判断。",
+    "evidence_ids": [
+      "prior-feb6d5e84d2b6cc74719",
+      "prior-51b773363118cee4bb46",
+      "prior-403061fc43c822c18d9b",
+      "ev-bdd00a614441e8af540123e1",
+      "ev-06f751b0d341bbbcf7704783"
+    ],
+    "method": "经济危机推动激进政治需求",
+    "method_basis": "inferred",
+    "observation_end": "2026-11-09",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-feb6d5e84d2b6cc74719",
+        "relation": "background",
+        "quote": "NBER公告列出1990年7月衰退起点、1991年3月终点，2001年3月至11月、2007年12月至2009年6月、2020年2月至4月衰退。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "仅证明多次衰退发生，未涉及激进组织支持变化。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "prior-51b773363118cee4bb46",
+        "relation": "boundary",
+        "quote": "NBER将衰退界定为广泛分布、幅度显著的经济活动下降；2020年虽短，但下降幅度和广度足够大而确认为衰退。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "提供'严重衰退'的操作化定义，不涉及政治后果。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "prior-403061fc43c822c18d9b",
+        "relation": "counter",
+        "quote": "DSA自己的会员名册研究称长期约5000会员，2016—2020增至约5万，2021有效会员峰值不足79000，2024年10月约51000；2016、2018、2020有多重政治触发因素。",
+        "publication_date": "2025-02-27",
+        "observation_end": "2024-10-31",
+        "limitation": "仅美国单一组织会员数，且增长期与衰退期不完全对应，不能直接证伪跨国的衰退—激进支持关系。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-bdd00a614441e8af540123e1",
+        "relation": "counter",
+        "quote": "Total DSA membership has declined since late 2021 from approximately 93,000 total members (including both dues-paying and ‘constitutional’ members who had not paid dues in the last year) to approximately 72,000 at the time of the convention.",
+        "publication_date": "2023-09-25",
+        "observation_end": "2023-08-06",
+        "limitation": "单一组织会员数，作者归因于拜登当选等非衰退因素，不能代表西方整体激进支持。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-06f751b0d341bbbcf7704783",
+        "relation": "counter",
+        "quote": "Despite a brief increase thanks to working class radicalization over the genocide in Gaza, our membership is shrinking (a trend since 2021).",
+        "publication_date": "2024-08-23",
+        "observation_end": "2024-08-23",
+        "limitation": "单一组织自述，会员下降趋势与衰退无同步关系，但样本有限。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺少西方多国激进/社会主义政党在多次严重衰退后的选票、执政参与或会员的系统性时间序列证据，无法判断'激进分子有市场'这一主要结果的方向。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000118381-000118407",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "对象为西方发达资本主义国家；'严重衰退'以NBER衰退判定为透明代理；'有市场'操作化为激进/社会主义组织可观察的会员、选票或执政参与等实际支持。观察窗口为1991年出版后至2026-11-09截止日。",
+    "reason": "原文是转述友人的条件性预测：需'再有几次严重经济衰退'才触发激进分子获得市场。已给证据显示2001、2007-2009、2020年确有多次衰退，但激进组织支持是否随之上升缺乏直接对应证据：DSA会员在2021年后持续下降，且其自身归因于拜登当选降低议题显著性等非衰退因素。衰退次数条件已满足，但'激进分子有市场'这一主要结果在西方多国的可观察支持上既无系统上升证据，也无明确同步下降证据，无法判定方向。",
+    "limitation": "证据仅覆盖美国DSA会员数及个别衰退日期，未覆盖西方多国激进政党选票或执政参与；DSA会员变化受多重因素影响，不能单独作为衰退—激进支持因果检验。原文为友人转述，非作者独立判断。",
+    "evidence_ids": [
+      "prior-feb6d5e84d2b6cc74719",
+      "prior-51b773363118cee4bb46",
+      "prior-403061fc43c822c18d9b",
+      "ev-bdd00a614441e8af540123e1",
+      "ev-06f751b0d341bbbcf7704783"
+    ],
+    "method": "经济危机推动激进政治需求",
+    "method_basis": "inferred",
+    "observation_end": "2026-11-09",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-feb6d5e84d2b6cc74719",
+        "relation": "background",
+        "quote": "NBER公告列出1990年7月衰退起点、1991年3月终点，2001年3月至11月、2007年12月至2009年6月、2020年2月至4月衰退。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "仅证明多次衰退发生，未涉及激进组织支持变化。"
+      },
+      {
+        "evidence_id": "prior-51b773363118cee4bb46",
+        "relation": "boundary",
+        "quote": "NBER将衰退界定为广泛分布、幅度显著的经济活动下降；2020年虽短，但下降幅度和广度足够大而确认为衰退。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "提供'严重衰退'的操作化定义，不涉及政治后果。"
+      },
+      {
+        "evidence_id": "prior-403061fc43c822c18d9b",
+        "relation": "counter",
+        "quote": "DSA自己的会员名册研究称长期约5000会员，2016—2020增至约5万，2021有效会员峰值不足79000，2024年10月约51000；2016、2018、2020有多重政治触发因素。",
+        "publication_date": "2025-02-27",
+        "observation_end": "2024-10-31",
+        "limitation": "仅美国单一组织会员数，且增长期与衰退期不完全对应，不能直接证伪跨国的衰退—激进支持关系。"
+      },
+      {
+        "evidence_id": "ev-bdd00a614441e8af540123e1",
+        "relation": "counter",
+        "quote": "Total DSA membership has declined since late 2021 from approximately 93,000 total members (including both dues-paying and ‘constitutional’ members who had not paid dues in the last year) to approximately 72,000 at the time of the convention.",
+        "publication_date": "2023-09-25",
+        "observation_end": "2023-08-06",
+        "limitation": "单一组织会员数，作者归因于拜登当选等非衰退因素，不能代表西方整体激进支持。"
+      },
+      {
+        "evidence_id": "ev-06f751b0d341bbbcf7704783",
+        "relation": "counter",
+        "quote": "Despite a brief increase thanks to working class radicalization over the genocide in Gaza, our membership is shrinking (a trend since 2021).",
+        "publication_date": "2024-08-23",
+        "observation_end": "2024-08-23",
+        "limitation": "单一组织自述，会员下降趋势与衰退无同步关系，但样本有限。"
+      }
+    ],
+    "remaining_gap": "缺少西方多国激进/社会主义政党在多次严重衰退后的选票、执政参与或会员的系统性时间序列证据，无法判断'激进分子有市场'这一主要结果的方向。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-feb6d5e84d2b6cc74719",
+      "url": "https://www.nber.org/research/business-cycle-dating/business-cycle-dating-committee-announcements",
+      "title": "ev-l2-recessions",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-l2-recessions",
+      "archive_sha256": "50b84cd403fc84597354654c3d257ca586da1845084c7572b19d31c301a1e32b",
+      "archive_path": "data/sources/lane2-ev-l2-recessions.html",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-51b773363118cee4bb46",
+      "url": "https://www.nber.org/research/business-cycle-dating",
+      "title": "ev-r2-l2-nber-definition",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-nber-definition",
+      "archive_sha256": "04125b8f87fd5ba0529d3648d2b65fae7ea7a0c4c09a25d1aa2718bcbfd01421",
+      "archive_path": "data/sources/r2-l2-nber-definition-web-notes.json",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-403061fc43c822c18d9b",
+      "url": "https://democraticleft.dsausa.org/2025/02/27/state-of-dsa-part-one-welcome-to-dsa/",
+      "title": "ev-r2-l2-dsa-members",
+      "published_date": "2025-02-27",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-02-27",
+        "latest": "2025-02-27"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-dsa-members",
+      "archive_sha256": "4424d8744a09d13b4ff90e45d3a15a55e494a4692fbf6c1bf8cefa421f8d4d95",
+      "archive_path": "data/sources/r2-l2-dsa-members-web-notes.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-2d4fd8fd0b4af5356d51",
+      "url": "https://convention2021.dsausa.org/platform-development/",
+      "title": "ev-r2-l2-dsa-platform",
+      "published_date": "2021",
+      "publication_date_precision": "year",
+      "publication_date_range": {
+        "earliest": "2021-01-01",
+        "latest": "2021-12-31"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-dsa-platform",
+      "archive_sha256": "18b32dc1412581c4fa492dae2e99531f1e51878fea59b5355c27cd48cbb60261",
+      "archive_path": "data/sources/r2-l2-dsa-platform-web-notes.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-9c3989597221147a8652",
+      "url": "https://data.ipu.org/election-summary/HTML/2125_15_Jan.htm",
+      "title": "ev-r2-l2-ipu-greece",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-ipu-greece",
+      "archive_sha256": "d08f92162dd112f61db0dd11eca3a369cda31e1a045f8f83296e9562052114d0",
+      "archive_path": "data/sources/r2-l2-ipu-greece-web-notes.json",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-33a886b2ad22f97d509b19ef",
+      "url": "https://www.nber.org/news/business-cycle-dating-committee-announcement-december-1-2008",
+      "resolved_url": "https://www.nber.org/news/business-cycle-dating-committee-announcement-december-1-2008",
+      "title": "Business Cycle Dating Committee Announcement December 1, 2008 | NBER",
+      "published_date": "2008-12-01",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2008-12-01",
+        "latest": "2008-12-01"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:39.756139+00:00",
+      "archive_sha256": "17cb9fd0ea7687718134f81a21897c60d7a7d8760b38e86fd0c73096fff72b3b",
+      "archive_path": "jobs/4e1e41f9bdeefe1b3588ec5e/17cb9fd0ea7687718134f81a21897c60d7a7d8760b38e86fd0c73096fff72b3b.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-33f9d2f4fd92726b35680797",
+      "url": "https://www.nber.org/news/business-cycle-dating-committee-announcement-june-8-2020",
+      "resolved_url": "https://www.nber.org/news/business-cycle-dating-committee-announcement-june-8-2020",
+      "title": "Business Cycle Dating Committee Announcement June 8, 2020 | NBER",
+      "published_date": "2020-06-08",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2020-06-08",
+        "latest": "2020-06-08"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:39.756265+00:00",
+      "archive_sha256": "c213d84b21102378508c54d67cd1d30e408285988ff0847e53cd9f331bd66b63",
+      "archive_path": "jobs/4e1e41f9bdeefe1b3588ec5e/c213d84b21102378508c54d67cd1d30e408285988ff0847e53cd9f331bd66b63.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-bdd00a614441e8af540123e1",
+      "url": "https://www.californiadsa.org/news/national-convention-silicon-valley",
+      "resolved_url": "https://www.californiadsa.org/news/national-convention-silicon-valley",
+      "title": "The Silicon Valley chapter’s view of the Convention — California DSA",
+      "published_date": "2023-09-25",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2023-09-25",
+        "latest": "2023-09-25"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:39.756357+00:00",
+      "archive_sha256": "d8382be4265e2053edd1f4ef1c7115e3c281274c19d24e4a3eed4402cf6d7cb4",
+      "archive_path": "jobs/4e1e41f9bdeefe1b3588ec5e/d8382be4265e2053edd1f4ef1c7115e3c281274c19d24e4a3eed4402cf6d7cb4.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-06f751b0d341bbbcf7704783",
+      "url": "https://www.dsausa.org/blog/the-only-way-out-is-through-organizing/",
+      "resolved_url": "https://www.dsausa.org/blog/the-only-way-out-is-through-organizing/",
+      "title": "The Only Way Out Is Through Organizing - Democratic Socialists of America (DSA)",
+      "published_date": "2024-08-23",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-08-23",
+        "latest": "2024-08-23"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:39.756475+00:00",
+      "archive_sha256": "b6f016c0b8fff02250df505bb1ddd54e1f63c5b256c6c15e3fe2196ed8976212",
+      "archive_path": "jobs/4e1e41f9bdeefe1b3588ec5e/b6f016c0b8fff02250df505bb1ddd54e1f63c5b256c6c15e3fe2196ed8976212.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "NBER business cycle dating recession 2001 2007-2009 2020 official announcement",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Democratic Socialists of America membership decline after 2021 recession pandemic support radical left electoral results",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "NBER business cycle dating recession 2001 2007-2009 2020 official announcement",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Democratic Socialists of America membership decline after 2021 recession pandemic support radical left electoral results",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "prior-51b773363118cee4bb46",
+        "prior-feb6d5e84d2b6cc74719"
+      ],
+      "blocks_verdict": true
+    }
+  ],
+  "remaining_gap": "缺少西方多国激进/社会主义政党在多次严重衰退后的选票、执政参与或会员的系统性时间序列证据，无法判断'激进分子有市场'这一主要结果的方向。",
+  "source_statuses": [
+    {
+      "url": "https://www.nber.org/news/business-cycle-dating-committee-announcement-december-1-2008",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.nber.org/news/business-cycle-dating-committee-announcement-june-8-2020",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.californiadsa.org/news/national-convention-silicon-valley",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.dsausa.org/blog/the-only-way-out-is-through-organizing/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "931c07f4e23e4f321224a107caf81c70b36bf4e6983966552b290f6dda9744c8"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "00d6f8725382ff06c3bd0321bee7ec5d",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "67284e4016128b378223e5e614ac5301",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "0631bb005410fe8c80e01f6275624f05d6f4f9dc9161b208568d2099024f6ac4"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "1e148c38a7b15c2ce51b4eb9c3e6c102",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "6361dcbbe8f1e4706734897cad8f7fa09491105320a967e5a9e83f6f97949989"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "00d6f8725382ff06c3bd0321bee7ec5d",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "67284e4016128b378223e5e614ac5301",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "8e554ef0fe4a842fa5481efd134cf46d07a71ab194a30b6b477edf7cefcf0888"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "ead2a2816b9d2280d0e84e2378a966d2af771fa3b852feeda2edf3f2aa1fd345"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "2be00ba306640d44226e56c7203a7241caf0ffb4f957d4232a5f93bfd7c75d69"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "prior-51b773363118cee4bb46",
+            "prior-feb6d5e84d2b6cc74719"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-feb6d5e84d2b6cc74719",
+        "source_bytes": 140,
+        "shown_bytes": 140,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-51b773363118cee4bb46",
+        "source_bytes": 197,
+        "shown_bytes": 197,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-403061fc43c822c18d9b",
+        "source_bytes": 189,
+        "shown_bytes": 189,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-2d4fd8fd0b4af5356d51",
+        "source_bytes": 165,
+        "shown_bytes": 165,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-9c3989597221147a8652",
+        "source_bytes": 176,
+        "shown_bytes": 176,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-33a886b2ad22f97d509b19ef",
+        "source_bytes": 9869,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-33f9d2f4fd92726b35680797",
+        "source_bytes": 6728,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-bdd00a614441e8af540123e1",
+        "source_bytes": 8071,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-06f751b0d341bbbcf7704783",
+        "source_bytes": 11037,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-feb6d5e84d2b6cc74719",
+        "source_bytes": 140,
+        "shown_bytes": 140,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-51b773363118cee4bb46",
+        "source_bytes": 197,
+        "shown_bytes": 197,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-403061fc43c822c18d9b",
+        "source_bytes": 189,
+        "shown_bytes": 189,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-2d4fd8fd0b4af5356d51",
+        "source_bytes": 165,
+        "shown_bytes": 165,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-9c3989597221147a8652",
+        "source_bytes": 176,
+        "shown_bytes": 176,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-33a886b2ad22f97d509b19ef",
+        "source_bytes": 9869,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-33f9d2f4fd92726b35680797",
+        "source_bytes": 6728,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-bdd00a614441e8af540123e1",
+        "source_bytes": 8071,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-06f751b0d341bbbcf7704783",
+        "source_bytes": 11037,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000118381-000118407",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000118381-000118407",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "对象为西方发达资本主义国家；'严重衰退'以NBER衰退判定为透明代理；'有市场'操作化为激进/社会主义组织可观察的会员、选票或执政参与等实际支持。观察窗口为1991年出版后至2026-11-09截止日。",
+      "reason": "原文是转述友人的条件性预测：需'再有几次严重经济衰退'才触发激进分子获得市场。已给证据显示2001、2007-2009、2020年确有多次衰退，但激进组织支持是否随之上升缺乏直接对应证据：DSA会员在2021年后持续下降，且其自身归因于拜登当选降低议题显著性等非衰退因素。衰退次数条件已满足，但'激进分子有市场'这一主要结果在西方多国的可观察支持上既无系统上升证据，也无明确同步下降证据，无法判定方向。",
+      "limitation": "证据仅覆盖美国DSA会员数及个别衰退日期，未覆盖西方多国激进政党选票或执政参与；DSA会员变化受多重因素影响，不能单独作为衰退—激进支持因果检验。原文为友人转述，非作者独立判断。",
+      "evidence_ids": [
+        "prior-feb6d5e84d2b6cc74719",
+        "prior-51b773363118cee4bb46",
+        "prior-403061fc43c822c18d9b",
+        "ev-bdd00a614441e8af540123e1",
+        "ev-06f751b0d341bbbcf7704783"
+      ],
+      "method": "经济危机推动激进政治需求",
+      "method_basis": "inferred",
+      "observation_end": "2026-11-09",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-feb6d5e84d2b6cc74719",
+          "relation": "background",
+          "quote": "NBER公告列出1990年7月衰退起点、1991年3月终点，2001年3月至11月、2007年12月至2009年6月、2020年2月至4月衰退。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "仅证明多次衰退发生，未涉及激进组织支持变化。"
+        },
+        {
+          "evidence_id": "prior-51b773363118cee4bb46",
+          "relation": "boundary",
+          "quote": "NBER将衰退界定为广泛分布、幅度显著的经济活动下降；2020年虽短，但下降幅度和广度足够大而确认为衰退。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "提供'严重衰退'的操作化定义，不涉及政治后果。"
+        },
+        {
+          "evidence_id": "prior-403061fc43c822c18d9b",
+          "relation": "counter",
+          "quote": "DSA自己的会员名册研究称长期约5000会员，2016—2020增至约5万，2021有效会员峰值不足79000，2024年10月约51000；2016、2018、2020有多重政治触发因素。",
+          "publication_date": "2025-02-27",
+          "observation_end": "2024-10-31",
+          "limitation": "仅美国单一组织会员数，且增长期与衰退期不完全对应，不能直接证伪跨国的衰退—激进支持关系。"
+        },
+        {
+          "evidence_id": "ev-bdd00a614441e8af540123e1",
+          "relation": "counter",
+          "quote": "Total DSA membership has declined since late 2021 from approximately 93,000 total members (including both dues-paying and ‘constitutional’ members who had not paid dues in the last year) to approximately 72,000 at the time of the convention.",
+          "publication_date": "2023-09-25",
+          "observation_end": "2023-08-06",
+          "limitation": "单一组织会员数，作者归因于拜登当选等非衰退因素，不能代表西方整体激进支持。"
+        },
+        {
+          "evidence_id": "ev-06f751b0d341bbbcf7704783",
+          "relation": "counter",
+          "quote": "Despite a brief increase thanks to working class radicalization over the genocide in Gaza, our membership is shrinking (a trend since 2021).",
+          "publication_date": "2024-08-23",
+          "observation_end": "2024-08-23",
+          "limitation": "单一组织自述，会员下降趋势与衰退无同步关系，但样本有限。"
+        }
+      ],
+      "remaining_gap": "缺少西方多国激进/社会主义政党在多次严重衰退后的选票、执政参与或会员的系统性时间序列证据，无法判断'激进分子有市场'这一主要结果的方向。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "评估王沪宁转述的友人条件性预测：若西方资本主义国家再发生几次严重经济衰退，激进（反资本主义/社会主义）组织将获得实际支持市场。对象限西方发达资本主义国家；‘严重衰退’以NBER等官方衰退判定为透明代理；‘有市场’限为可观察的会员、选票或执政参与等实际支持，不要求持续单调增长或掌握政权。反证包括：多次严重衰退后激进组织支持未上升或反而下降；或支持上升可明确归因于非衰退因素且无衰退后同步变化。",
+  "elapsed_seconds": 24.677,
+  "completed_at": "2026-11-09T10:33:55.185286+00:00"
+}

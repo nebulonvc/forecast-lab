@@ -1,0 +1,28 @@
+{
+  "id": "43f18e0f-fb7e-4012-9d50-15f9f45b9304",
+  "object": "chat.completion",
+  "created": 1794201442,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000025079-000025112\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"原文以讽刺口吻称移动信用卡读卡器形状模仿竞争要等到“所有形状都被模仿完”才落幕；该说法未给出可穷举的形状集合、时间期限或可观测终点，无法操作化为可检验的预测。\",\"reason\":\"“所有形状都被模仿完”是修辞性、开放式的说法，没有明确形状清单和结束标准，难以判断是否已实现或证伪。\",\"limitation\":\"若按字面穷举所有几何形状则不可操作；只能记录该领域后续是否仍有形状模仿竞争，但原文未提供可核验证据。\",\"evidence_ids\":[],\"method\":\"类比/趋势外推\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000027506-000027528\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文是对企业价值与未来现金流关系的定义性/规范性论述，不是可检验的独立事件预测。\",\"reason\":\"该句陈述判断企业成功与否的标准，属于概念定义而非对特定未来结果的预测。\",\"limitation\":\"作为定义性命题不纳入预测评分；其经验有效性需另行设计检验。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7706,
+    "completion_tokens": 351,
+    "total_tokens": 8057,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 6938
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

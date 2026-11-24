@@ -1,0 +1,47 @@
+{
+  "id": "txt-4934182645-000069423-000069560",
+  "plan": {
+    "object": "受到眷顾、处于完全不必进行战争的共和国。不是所有小共和国，也不是圣马力诺这个专名。",
+    "condition": "no necessity of making war。句中的 ease 是这个条件的结果，不是另一个对象。",
+    "quantifier": "would insure its ruin：柔弱和分裂这两个恶，合在一起或各自，都会造成覆灭。",
+    "result": "effeminate and divided，并因此覆灭。",
+    "window": "1531至2026-11-15。原文没有另写期限。",
+    "counterevidence_needed": "出版后确有一个完全不必战争的共和国，没有变得柔弱分裂并覆灭。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "peaceful republic no external war internal division collapse after 1531 San Marino",
+      "counter_query": "Republic of San Marino independence continuous since 1631 no army survived"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [
+      "http://uniset.ca/microstates2/sm_Miller-RepublicSanMarino-1901.pdf",
+      "https://en.wikipedia.org/wiki/History_of_San_Marino"
+    ],
+    "dropped": "首轮已经指向圣马力诺：一份1901年论文写十六世纪后半命运下降但共和国仍在，一份历史页写1739年被占领。条件“完全不必战争”在这两份正文里都没有成立，不再把同一对象的其他转述页算进新轮。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-miller-1901-decline", "ev-wiki-sanmarino-1739"],
+    "scope": "对象是完全不必进行战争的共和国；结果是安逸造成柔弱和分裂，并且这两个恶各自或一起造成覆灭。",
+    "reason": "1901年米勒的文章写十六世纪后半共和国的命运开始下降、公共精神变弱，但没有写国家覆灭，也没有写它处于完全不必战争的状态。历史页写1739年10月17日阿尔贝罗尼用武力占领圣马力诺，1740年2月5日独立恢复。占领说明战争必要并没有消失，所以不能把共和国仍然存在当成“不必战争却没有覆灭”的反证。决定性缺口是：已存档正文没有指出一个出版后完全不必战争、然后或覆灭或没有覆灭的共和国。",
+    "limitation": "维基百科页没有出版日。1901只有年。公共精神变弱不是句中的覆灭。",
+    "method": "用长期不作战却仍存在的共和国作反证，用长期不作战后内部分裂覆灭作正证；先核对“不必战争”是否被正文写出。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "pass",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "没有用圣马力诺这个名称代替“完全不必战争”。条件未满足，不把继续存在判成错误或正确。"
+  }
+}

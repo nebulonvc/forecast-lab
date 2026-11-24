@@ -1,0 +1,28 @@
+{
+  "id": "5a6376da-1914-4f8d-92ca-1a129346bf46",
+  "object": "chat.completion",
+  "created": 1794201439,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000010811-000010825\",\"inclusion\":\"duplicate\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"与父命题 txt-4001dbbdf2-000010801-000010826 重复的拆分记录，仅保留审计，不纳入预测分母。\",\"reason\":\"该条与同一原文父命题重复，属于拆分记录，不单独评分。\",\"limitation\":\"重复记录不提供独立预测信息，不能重复计入评估。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000011244-000011279\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为面向未来的任务/目标陈述（“挑战是创造出新科技”），不是对可观察结果的承诺性预测。\",\"reason\":\"作者提出创造新科技的任务与愿景，并未断言21世纪必然更和谐繁荣，属于规范性目标而非预测。\",\"limitation\":\"目标性表述缺乏可操作的结果指标与期限，不宜作为预测评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"21世纪\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7913,
+    "completion_tokens": 302,
+    "total_tokens": 8215,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 7913
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

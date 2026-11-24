@@ -1,0 +1,47 @@
+{
+  "id": "txt-4934182645-000681110-000681177",
+  "plan": {
+    "object": "共和国。前文说，被冒犯的公民所造成的紊乱没有确定的补救办法。",
+    "condition": "endure always。永远存续，不是存续许多年或到目前仍在。",
+    "quantifier": "impossible。不可能建立这样一个永远存续的共和国。一次共和国消亡不能证明所有共和国都不可能永远存续。一个仍在的共和国只说明它还没有结束，不能当作已经永远存续的反例。",
+    "result": "登记变化是 impossible。不可能的是永远存续，不是长寿。",
+    "window": "1531至2026-11-15。观察截止本身是有限的，到不了永远。",
+    "counterevidence_needed": "一个共和国被证明已经永远存续；或者有依据说明任何共和国都不可能永远存续，而不是只举出若干消亡。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "historians say no republic has endured permanently every one eventually ended",
+      "counter_query": "San Marino claims to be the oldest republic still in existence"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [
+      "https://repository.law.umich.edu/mlr_online/vol117/iss1/1/",
+      "https://www.bbc.com/news/world-europe-17842338"
+    ],
+    "dropped": ""
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "always",
+    "observation_end": null,
+    "evidence_ids": ["ev-primus-republic-2018", "ev-bbc-san-marino-2023"],
+    "scope": "永远存续不能用活到某一年来反驳，也不能用一次或若干次消亡来证明全称的不可能。",
+    "reason": "普里默斯写，每一种政体最终都会过去，认为我们所知道的宪制共和国会永远存在是不合理的。这是对政体一般会结束的判断，不是观察到所有共和国都已结束，也没有写到原文那个没有补救办法的紊乱。英国广播公司在2023年10月4日的国家简介里写，圣马力诺据说是现存最古老的共和国，页面年表写到2022年。它仍在，只说明到该页更新时还没有结束，不是已经永远存续。有限的存续不是永远的反例，若干消亡也不是全称的不可能。决定性缺口是：截止日之前没有任何观察能证明永远，也没有任何一页证明没有一个共和国能够永远存续。",
+    "limitation": "普里默斯文的引用年是2018年，没有月日。英国广播公司页的更新日期是2023年10月4日。圣马力诺的301年传统不是这页上的连续制度证明。",
+    "method": "永远用永远本身来核。活着的共和国和已经结束的共和国都不单独决定这句。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "2018年的判断是政体不会永远。2023年10月4日圣马力诺仍被称为现存共和国。两者都不是永远或全称不可能。"
+  }
+}

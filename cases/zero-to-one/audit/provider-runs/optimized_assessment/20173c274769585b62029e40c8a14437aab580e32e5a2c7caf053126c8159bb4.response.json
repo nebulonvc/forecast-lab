@@ -1,0 +1,28 @@
+{
+  "id": "e95d99c5-b83a-4e0b-a73c-44edf86ccca3",
+  "object": "chat.completion",
+  "created": 1794201585,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000042909-000042931\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"判断“对未来不明确的乐观主义”能否持续；无期限、无量化指标，观察窗口为出版后至cutoff，但该态度无客观可操作指标。\",\"reason\":\"原文是对一种社会态度可持续性的判断，含“看起来”的弱化措辞，缺乏可量化对象与期限。现有证据仅涉及全球贸易与GDP，无法操作化“不明确乐观主义”的持续性。\",\"limitation\":\"态度类命题难以用客观统计检验，且无可用证据；不因宏观增长数据任意判定。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000042932-000042954\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为“没有规划未来”，结果为“未来不可能越变越好”；条件是否发生及“变好”指标均未界定。\",\"reason\":\"这是条件性判断，但“没有规划未来”这一触发条件在现实中无法明确判定是否发生，“未来变好”也无统一操作化指标。\",\"limitation\":\"条件未确定且结果指标不明，无法评分；不把相似事件当作触发条件。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000043462-000043514\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"判断对已存在事物做小改变能否达到局部市场最大化、不能取得全球市场最大化；无具体企业或市场指标。\",\"reason\":\"命题涉及“局部市场最大化”与“全球市场最大化”的对比，但未指定可检验对象或指标。现有贸易证据与市场最大化无关，无法验证。\",\"limitation\":\"缺乏可操作化的市场最大化指标与对应案例证据；贸易增长数据不能检验该命题。\",\"evidence_ids\":[\"main-trade\"],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000043548-000043573\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"attribution\",\"scope\":\"条件为“没有大胆计划”，结果为不能实现从0到1的跨越；“你”指代不明。\",\"reason\":\"原文“你”指代不清，且“从0到1的跨越”缺乏可操作化标准，无法确定检验对象与结果。\",\"limitation\":\"主体归属不明且结果定义模糊，按归属不明保留暂无法判断。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6437,
+    "completion_tokens": 680,
+    "total_tokens": 7117,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 5669
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,43 @@
+{
+  "tool_difference": "未使用 Exa。初始检索使用 Cursor WebSearch。正文用 curl 保存搜索所返回的公开 URL 的 HTTP 响应。WebFetch 曾返回 Markdown，但密歇根大学新闻稿的 curl 为 403，未把截短 Markdown 或搜索摘要写入 data/sources。",
+  "url_cap": "每条可核验候选最多 8 个实际搜索返回的 URL。本条实际存档少于 8 个。",
+  "rounds": [
+    {
+      "claim": "shaven face goes the way of the powdered wig",
+      "round": 1,
+      "queries": [
+        {"role": "support", "q": "clean-shaven male fashion declined disappeared after 1900 beards returned polite society history"},
+        {"role": "counter", "q": "history of clean-shaven men twentieth century Gillette safety razor facial hair fashion"}
+      ],
+      "archived": [
+        "https://www.bbc.com/news/magazine-30037914",
+        "https://www.encyclopedia.com/fashion/encyclopedias-almanacs-transcripts-and-maps/clean-shaven-men"
+      ],
+      "not_archived_reason": "支持检索返回的维多利亚胡须研究多止于 1900 年前或没有可用全文。新西兰史页面 curl 403，未存档，也不把摘要当反证或正证。"
+    },
+    {
+      "claim": "captain of industry dispensed with in the indefinite future",
+      "round": 1,
+      "queries": [
+        {"role": "support", "q": "owner-manager captain of industry replaced salaried professional managers corporations history"},
+        {"role": "counter", "q": "chief executive officer role persisted large corporations 2000 2020"}
+      ],
+      "archived": [
+        "https://open.oregonstate.education/strategicmanagement/chapter/2-corporate-governance-in-america-a-brief-history/"
+      ],
+      "adaptive": "未做。缺口是作者写明的不定未来尚未结束，不是缺少一个截止日前已经存在、却还没被点名的指标。"
+    },
+    {
+      "claim": "scholastic insignia would decline except for war and wealthy-class support",
+      "round": 1,
+      "queries": [
+        {"role": "support", "q": "academic cap and gown ceremony declined universities twentieth century regalia"},
+        {"role": "counter", "q": "academic regalia cap and gown continued use American universities commencement history"}
+      ],
+      "archived": [
+        "https://www.uni-heidelberg.de/en/university/history/academic-clothing"
+      ],
+      "not_archived_reason": "https://news.umich.edu/long-graduation-gowns-have-an-even-longer-history/ curl 403。未用搜索摘要充正文。除外条件在二十世纪并未缺席，故未把局部礼服变化判成对或错。"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "519cef42-981f-45e0-9464-d67b2c5879e9",
+  "object": "chat.completion",
+  "created": 1794201447,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000038125-000038153\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文以反问句表达对“今天”人们是否会认真对待雷伯式宏大计划的判断，属于对当下态度的修辞性评论，未给出可检验的预测对象、指标或期限。\",\"reason\":\"该句是反问式评论，不是对特定未来事件或趋势的预测，故归为非预测。\",\"limitation\":\"反问句的修辞性质使其难以操作化为可验证的预测；本项仅作审计记录。\",\"evidence_ids\":[],\"method\":\"反问\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4338,
+    "completion_tokens": 178,
+    "total_tokens": 4516,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3570
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

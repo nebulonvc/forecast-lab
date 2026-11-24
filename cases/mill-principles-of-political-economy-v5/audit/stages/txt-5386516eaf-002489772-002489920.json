@@ -1,0 +1,110 @@
+{
+  "id": "txt-5386516eaf-002489772-002489920",
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "撤下正确。"
+      },
+      {
+        "role": "counter",
+        "query": "撤下正确。"
+      }
+    ],
+    "note": "r3 新执行，见 audit/search-returns-r3/manifest.json。不是回填。"
+  },
+  "select": {
+    "urls": [
+      "https://en.wikipedia.org/wiki/Irish_Land_Commission",
+      "https://api.parliament.uk/historic-hansard/written-answers/1911/feb/15/land-purchase-ireland"
+    ],
+    "reason": "只入选摘录已在存档、且日期不晚于 cutoff 的来源。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "id": "txt-5386516eaf-002489772-002489920",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "observation_end": null,
+    "scope": "不太长的时间里，爱尔兰很大一部分土地成为自耕农所有。",
+    "reason": "1909年记录是已售或已同意出售727.1万英亩，仍有900万未售。新抓取写到1920年转移1350万英亩，但页面没有发布日。无日期的句子不维持正确。",
+    "limitation": "维基句只作边界。",
+    "evidence_ids": [
+      "ev-r3-hansard",
+      "ev-r3-wiki"
+    ],
+    "method": "新执行。",
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-r3-hansard",
+        "quote": "the total acreage of the land sold, or agreed to be sold, is 7,271,000 acres",
+        "relation": "boundary",
+        "limitation": "含未完成协议。",
+        "observation_end": "1909-03-30",
+        "publication_date": "1909-03-30",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-r3-wiki",
+        "quote": "The commission eventually transferred 13.5 million acres (55,000 km 2) by 1920.",
+        "relation": "boundary",
+        "limitation": "无发布日。",
+        "observation_end": "1920-12-31",
+        "publication_date": null,
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      }
+    ],
+    "remaining_gap": "缺有发布日的已完成转移面积。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-002489772-002489920",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-r3-wiki"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-r3-wiki"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "r3_execution": {
+    "new": true,
+    "executed_at": "2026-11-20T10:55:00Z",
+    "why": "撤下正确。",
+    "previous_verdict": "正确"
+  },
+  "revision_trail": {
+    "withdrawn_verdict": "正确",
+    "withdrawn_reason": "1911年国会书面答复写，1870至1909年诸法下已垫付的出售加上待售，约为农地的七分之四。土地委员会页写到1920年已转移1350万英亩，并写明1903年与1909年法。很大一部分土地在这些法令之后不久转入购买者。",
+    "why": "撤下正确。"
+  }
+}

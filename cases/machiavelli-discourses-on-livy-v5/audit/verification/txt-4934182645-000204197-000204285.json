@@ -1,0 +1,52 @@
+{
+  "id": "txt-4934182645-000204197-000204285",
+  "plan": {
+    "object": "被欺骗或迷惑、因而像罗马人授权十人团那样授权的人民。",
+    "condition": "像十人团那样：其他官员被取消，可以立法并做他们认为合适的事，没有上诉，也没有人监督。条文上写明的限制如果在实施中被取消、期限被延长或被改成永久，不能只凭原条文排除。",
+    "quantifier": "always。一次同型授权后来变得骄横，不能单独把 always 判成成立；一次限制在实施中仍然有效、授权者并未骄横的同型事例，可以反驳 always。",
+    "result": "结果和罗马人一样。同段把十人团的结果写成第二年变得骄横，因为没有制约。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "一次在实施中同样取消制约、并取消期限的授权，而接受权力的人没有变得不受制约。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "Reichstag Enabling Act 23 March 1933 cabinet power to enact laws without parliament",
+      "counter_query": "legislature granted unrestricted decree power that was later given up without dictatorship"
+    },
+    "adaptive_rounds": 1,
+    "adaptive": {
+      "strategy": "改查授权法的实施、延期和总统制约是否被取消",
+      "queries": ["Enabling Act extended 1937 1939 Reichstag dissolved presidential powers seized"]
+    },
+    "kept_urls": [
+      "https://germanhistorydocs.org/en/nazi-germany-1933-1945/adolf-hitler-at-the-lectern-in-the-kroll-opera-house-on-the-occasion-of-the-extension-of-the-enabling-act-january-30-1937",
+      "https://encyclopedia.ushmm.org/content/en/article/law-on-the-head-of-state-of-the-german-reich-1",
+      "https://www.lanacion.com.ar/politica/el-gobierno-derogo-los-superpoderes-del-ex-presidente-de-la-rua-nid362113/"
+    ],
+    "dropped": "只凭授权法第二条保留国会和总统权利，不再作为排除理由。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-ghdi-enabling-act-practice", "ev-ushmm-head-of-state-1934", "ev-lanacion-dela-rua-2001"],
+    "scope": "登记变化是 always fare with them。同段的罗马结果是十人团在第二年变得骄横。一次实施中取消限制，不能单独做成部分符合。",
+    "reason": "先前的部分符合撤回。登记的 changes 是 always fare with them，不是“出现过一次不受制约”。德国历史文献页和美国大屠杀纪念馆写出授权法在实施中被延期到永久，总统职权在1934年8月1日并入希特勒，1933年年底其他政党消失。那是一次权力不受条文限制的过程。它没有写出十人团那种“第二年变得骄横”的同句结果，一党国会也不是这个结果的同义词。一次相似不能支撑 always，也不能单独给部分符合。阿根廷紧急授权被收回，不是同型反例。决定性缺口仍是：没有一组对象、条件和时序都对上的事例，足以判断 always。",
+    "limitation": "两份德国页面都没有单独的出版日。德国历史文献的推荐引用印有2026年11月5日，早于截止日，不把它当作事件日期。总统职权转移的持续写到1945年4月30日。",
+    "method": "先看授权在实施中是否取消制约和期限，再分开一次结果和 always。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "部分符合撤回。登记核心是 always fare with them。一党国会和总统职权合并不是十人团第二年骄横的同义词。一次相似不单独给部分符合。"
+  }
+}

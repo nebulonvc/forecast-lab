@@ -1,0 +1,74 @@
+{
+  "id": "txt-5386516eaf-001776828-001777079",
+  "assess": {
+    "id": "txt-5386516eaf-001776828-001777079",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "在今后一段时间内，生产更加便宜的一个更活跃来源，大概是自由贸易后果的逐步展开，以及移民和殖民规模越来越大。",
+    "reason": "Jacks等写一战前40年贸易成本降23%，两次大战之间升10%，1950年后降16%。这是贸易成本，不是生产变得更便宜，也没有殖民规模。期间还有上升，不能判成持续变便宜。",
+    "limitation": "不把关税或贸易成本当成殖民和移民。",
+    "evidence_ids": [
+      "ev-jacks-trade-costs"
+    ],
+    "method": "检索贸易成本。对象不符，不硬判。",
+    "method_basis": "explicit",
+    "observation_end": "2000-12-31",
+    "future_time_text": "for some time to come",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-jacks-trade-costs",
+        "quote": "average trade costs are shown to have fallen by 16 percent in the years after 1950",
+        "relation": "boundary",
+        "limitation": "1950年后的下降只是贸易成本。",
+        "observation_end": "2000-12-31",
+        "publication_date": "2008"
+      },
+      {
+        "evidence_id": "ev-jacks-trade-costs",
+        "quote": "trade costs increased by 10 percent in the 20 years from the end of World War I",
+        "relation": "counter",
+        "limitation": "两次大战之间上升。",
+        "observation_end": "1939-12-31",
+        "publication_date": "2008"
+      }
+    ],
+    "remaining_gap": "缺自由贸易与殖民如何使生产变便宜的同对象序列。贸易成本不能填这个缺口。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001776828-001777079",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "world average tariff rate historical decline 1900 to 2000 trade costs"
+      },
+      {
+        "role": "counter",
+        "query": "trade costs rose between the world wars"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://davidjacks.org/wp-content/uploads/2021/06/Trade-Costs-1870-2000.pdf"
+    ],
+    "reason": "贸易成本与生产变便宜、殖民不是同一对象。"
+  }
+}

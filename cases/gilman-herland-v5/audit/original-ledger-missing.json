@@ -1,0 +1,18 @@
+{
+  "original_ledger": "missing",
+  "previous_reconstruction": "withdrawn",
+  "reason": "VM 上没有 Herland 原始阅读账本。不能从空 claims 反造原件覆盖。本轮按同一 source hash 和 94 个 manifest 分块重新阅读，新账本尚未合并，所以包里不放重建账本。",
+  "source_sha256": "76a7f3e4403b98352a466b6095c176a72fdd30d3bf3a96400440c1bd5fa904f5",
+  "manifest_chunks": 94,
+  "reread_status": "complete_outside_package",
+  "new_ledger_path": "/tmp/p1-work/gilman-herland/ledger-reread-2026-11-20.jsonl",
+  "new_ledger_sha256": "0020bc604d5bd626e48b382d43a38d2b1dd3a894d4ee71917831ff06aec44b5a",
+  "new_ledger_bytes": 24774,
+  "chunks": 94,
+  "predictions_nonempty": 0,
+  "duplicate_ids": [],
+  "txt-00001": "gutenberg_title_page plus the start of the novel in the same chunk",
+  "txt-00094": "gutenberg newsletter close, not fiction",
+  "package_contains_full_ledger": false,
+  "note": "新账本只留在 VM 的 /tmp，不放进案例包。94 块都有各自的拒因，没有预填成同一句 fiction_scenario。没有抽出可进入主张表的现实世界预测。"
+}

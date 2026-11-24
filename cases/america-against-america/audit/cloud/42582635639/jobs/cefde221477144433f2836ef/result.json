@@ -1,0 +1,783 @@
+{
+  "claim_id": "txt-1c4066fc0c-000249481-000249527",
+  "version": "search-verifier-v1",
+  "input_sha256": "09fa1c0460589d5fc6cfbfdeed36b14c4f84b92897b23bef62fed409041b0feb",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000249481-000249527",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "对象：日本是否从1991年前后“尚不能谈政治大国和军事大国”走向可观察的政治大国或军事大国地位。口径分两项：军事大国看宪法约束与安保法制实际变更、自卫队远程打击能力与军费实际增长；政治大国看联合国安理会常任席位或同等政治领导角色。观察时段：1991年至2026-11-09，实际证据截至2025-12-18。",
+    "reason": "自动复核未确认主要判断：scope声明观察时段为1991年至2026-11-09，但observation_end被写成2025-12-18，且limitation自述“关键修订：observation_end与scope统一为2025-12-18”，这等于把任务cutoff 2026-11-09的观察窗口缩短到最晚一条证据的日期。证据最晚日期只能说明现有材料覆盖到何时，不能替代scope规定的观察截止；scope与observation_end不一致，属于时期写法错误。; 建议一方面把“军事大国”和“政治大国”两个分项都判为仅部分推进、未达终局，另一方面又设置trend_aligned=true并给出“部分符合”。按口径，分项/阶段/口径有实质差异才可判部分符合，且必须指出后果B哪些具体部分实现、哪些未实现；但原文是“未来并非没有可能”的弱可能判断，并非“A未解决→B重大后果”的条件预测，也没有可检验的终局结果。现有材料只能支持方向性趋势（军费增长、安保法制扩大、非常任理事国轮值），不能支持“部分符合”这一终局分类；应改为趋势符合但终点待验证，或保留具体未定，并相应调整trend_aligned与verdict。",
+    "limitation": "原文为无明确期限的弱可能判断，无法判定终局是否达成；2027年度军费达GDP2%属未来计划，不能当作已完成结果。军费增长与安保法制变化不等于已获军事大国地位，非常任理事国轮值也不等于政治大国。趋势符合但最终结果待验证。关键修订：observation_end与scope统一为2025-12-18，并将2027年目标明确列为未来计划而非已实现结果。",
+    "evidence_ids": [
+      "prior-0ed9985daf84ece9bc28",
+      "prior-4cb6f6a7d643e6403aad",
+      "prior-c0c43608b29bdd4d3c37",
+      "ev-40ae907167f62d323b00b677",
+      "ev-ab8955834ca5ed118aee6ebc",
+      "ev-de17548964c02587aea92199",
+      "ev-6184492f26f6792365ff6f17",
+      "ev-b14b6302950d742ac66ee830"
+    ],
+    "method": "由经济与政治实力及宪法可变性提出长期可能情景",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "未来",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-0ed9985daf84ece9bc28",
+        "relation": "support",
+        "quote": "SIPRI估计日本2024军费553亿美元，比2023实际增21%、比2015实际增49%；美国2024军费9970亿美元，中国3140亿美元。日本军费占GDP1.4%，并支出于远程打击与防空能力。",
+        "publication_date": "2025-04-28",
+        "observation_end": "2024-12-31",
+        "limitation": "军费增长与远程打击支出支持军事能力增强方向，但占GDP仅1.4%，尚不足以单独证明“军事大国”地位。"
+      },
+      {
+        "evidence_id": "prior-4cb6f6a7d643e6403aad",
+        "relation": "support",
+        "quote": "日本政府说明安保法制2015-09-19通过、2016-03-29生效；扩大国际和平协作和支援范围，并在三项限定条件下许可集体自卫相关武力使用，仍强调最小必要限度及和平国家取向。",
+        "publication_date": null,
+        "observation_end": "2016-03-29",
+        "limitation": "安保法制扩大武力使用范围，但限定条件与和平国家取向表明宪法约束仍存，不能等同于军事大国。"
+      },
+      {
+        "evidence_id": "prior-c0c43608b29bdd4d3c37",
+        "relation": "boundary",
+        "quote": "日本外务省总结2023—2024第12次担任安理会非常任理事国，为成员国中最多；主持朝鲜、加沙、阿富汗等议题的部分讨论/文件；仍在争取常任席位。",
+        "publication_date": "2025-01-10",
+        "observation_end": "2024-12-31",
+        "limitation": "非常任理事国轮值与议题主持显示政治参与，但“仍在争取常任席位”说明政治大国地位未达成，属反证/边界。"
+      },
+      {
+        "evidence_id": "ev-40ae907167f62d323b00b677",
+        "relation": "boundary",
+        "quote": "2027年度において、防衛力の抜本的強化とそれを補完する取組をあわせ、そのための予算水準が2022年度の国内総生産 \n(GDP)の2％（11兆円程度）に達するよう、所要の措置を実施する。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "这是2022年三文書设定的2027年度目标，属未来计划，不能当作已完成结果；仅证明政策方向，故列为边界而非支持。",
+        "quote_verification": {
+          "method": "unique_whitespace_alignment",
+          "model_quote": "2027年度において、防衛力の抜本的強化とそれを補完する取組をあわせ、そのための予算水準が2022年度の国内総生産 (GDP)の2％（11兆円程度）に達するよう、所要の措置を実施する。"
+        }
+      },
+      {
+        "evidence_id": "ev-ab8955834ca5ed118aee6ebc",
+        "relation": "counter",
+        "quote": "憲法改正に向けた与野党の合意形成のハードルが一段と高くなっている。日本維新の会が9条の規定する「戦力の不保持」の削除や国防軍の明記を求めるためだ。立憲民主党や公明党などが賛同する可能性は低い。自民党にも慎重論がある。",
+        "publication_date": "2025-12-17",
+        "observation_end": "2025-12-18",
+        "limitation": "修宪合意困难表明宪法约束未解除，是政治/军事大国化的反证；报道日期2025-12-17、正文标注2025-12-18，为本条最晚观察点，故observation_end取2025-12-18。"
+      },
+      {
+        "evidence_id": "ev-de17548964c02587aea92199",
+        "relation": "support",
+        "quote": "Rescheduled the acquisition of Tomahawk missiles one year ahead of schedule (rescheduled from FY2026 to FY2025).",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "远程打击能力采购提前显示军事能力建设推进，但为预算文件，属计划/进展，非最终战力形成。"
+      },
+      {
+        "evidence_id": "ev-6184492f26f6792365ff6f17",
+        "relation": "support",
+        "quote": "Amid this security environment, the Ministry of Defense (MOD) and the Self-Defense Forces \n(SDF) are fundamentally reinforcing Japan’s defense capabilities with independence and initiative, \nin an effort to protect the lives and peaceful livelihoods of Japanese people and resolutely defend \nJapan’s territorial land, waters, and airspace, as expressed in the three strategic documents.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "官方白皮书表述防务强化方向，属政策立场，不能直接证明已获军事大国地位。",
+        "quote_verification": {
+          "method": "unique_whitespace_alignment",
+          "model_quote": "Amid this security environment, the Ministry of Defense (MOD) and the Self-Defense Forces (SDF) are fundamentally reinforcing Japan’s defense capabilities with independence and initiative, in an effort to protect the lives and peaceful livelihoods of Japanese people and resolutely defend Japan’s territorial land, waters, and airspace, as expressed in the three strategic documents."
+        }
+      },
+      {
+        "evidence_id": "ev-b14b6302950d742ac66ee830",
+        "relation": "boundary",
+        "quote": "Regarding a Japanese government target of gaining a permanent seat on the powerful U.N. panel, Akasaka said, “It is difficult to achieve this due to the veto powers of China and Russia.”",
+        "publication_date": "2025-10-21",
+        "observation_end": "2025-10-21",
+        "limitation": "前官员表态说明常任席位目标困难，政治大国地位未实现；属个人观点，非官方决定。"
+      }
+    ],
+    "remaining_gap": "需修正两处：一是把observation_end与scope统一为2026-11-09，或明确说明现有证据仅覆盖至2025-12-18而观察窗口仍到cutoff；二是按原文“未来并非没有可能”的弱可能判断重新分类，不能以两个分项均未达终局为由判“部分符合”，应改为趋势符合但终点待验证或具体未定，并相应调整trend_aligned。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000249481-000249527",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象：日本是否从1991年前后“尚不能谈政治大国和军事大国”走向可观察的政治大国或军事大国地位。口径：宪法解释与安保法制实际变更、自卫队远程打击能力与军费实际增长、联合国安理会常任席位或同等政治领导角色。观察时段：1991年至2026-11-09（实际证据截至2025年）。",
+    "reason": "原文判断当时日本尚不能称政治/军事大国，但未来并非没有可能。观察期内出现实质变化：2015年安保法制扩大集体自卫相关武力使用，2022年三文書确立反击能力与2027年度军费达GDP2%目标，2024年军费实际增长并投入远程打击，显示军事维度沿预测方向推进；但宪法第九条修改未成、未获安理会常任席位，政治大国地位未实现。",
+    "limitation": "原文为无明确期限的弱可能判断，无法判定“终局”是否达成；军费增长与安保法制变化不等于已获军事大国地位，安理会非常任理事国轮值也不等于政治大国。趋势符合但最终结果待验证。",
+    "evidence_ids": [
+      "prior-0ed9985daf84ece9bc28",
+      "prior-4cb6f6a7d643e6403aad",
+      "prior-c0c43608b29bdd4d3c37",
+      "ev-40ae907167f62d323b00b677",
+      "ev-ab8955834ca5ed118aee6ebc",
+      "ev-de17548964c02587aea92199",
+      "ev-6184492f26f6792365ff6f17",
+      "ev-b14b6302950d742ac66ee830"
+    ],
+    "method": "由经济与政治实力及宪法可变性提出长期可能情景",
+    "method_basis": "explicit",
+    "observation_end": "2025-12-18",
+    "future_time_text": "未来",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-0ed9985daf84ece9bc28",
+        "relation": "support",
+        "quote": "SIPRI估计日本2024军费553亿美元，比2023实际增21%、比2015实际增49%；美国2024军费9970亿美元，中国3140亿美元。日本军费占GDP1.4%，并支出于远程打击与防空能力。",
+        "publication_date": "2025-04-28",
+        "observation_end": "2024-12-31",
+        "limitation": "军费增长与远程打击支出支持军事能力增强方向，但占GDP仅1.4%，尚不足以单独证明“军事大国”地位。"
+      },
+      {
+        "evidence_id": "prior-4cb6f6a7d643e6403aad",
+        "relation": "support",
+        "quote": "日本政府说明安保法制2015-09-19通过、2016-03-29生效；扩大国际和平协作和支援范围，并在三项限定条件下许可集体自卫相关武力使用，仍强调最小必要限度及和平国家取向。",
+        "publication_date": null,
+        "observation_end": "2016-03-29",
+        "limitation": "安保法制扩大武力使用范围，但限定条件与和平国家取向表明宪法约束仍存，不能等同于军事大国。"
+      },
+      {
+        "evidence_id": "prior-c0c43608b29bdd4d3c37",
+        "relation": "boundary",
+        "quote": "日本外务省总结2023—2024第12次担任安理会非常任理事国，为成员国中最多；主持朝鲜、加沙、阿富汗等议题的部分讨论/文件；仍在争取常任席位。",
+        "publication_date": "2025-01-10",
+        "observation_end": "2024-12-31",
+        "limitation": "非常任理事国轮值与议题主持显示政治参与，但“仍在争取常任席位”说明政治大国地位未达成，属反证/边界。"
+      },
+      {
+        "evidence_id": "ev-40ae907167f62d323b00b677",
+        "relation": "support",
+        "quote": "2027年度において、防衛力の抜本的強化とそれを補完する取組をあわせ、そのための予算水準が2022年度の国内総生産 (GDP)の2％（11兆円程度）に達するよう、所要の措置を実施する。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "这是2022年三文書设定的2027年度目标，属未来计划，不能当作已完成结果；仅证明政策方向。"
+      },
+      {
+        "evidence_id": "ev-ab8955834ca5ed118aee6ebc",
+        "relation": "counter",
+        "quote": "憲法改正に向けた与野党の合意形成のハードルが一段と高くなっている。日本維新の会が9条の規定する「戦力の不保持」の削除や国防軍の明記を求めるためだ。立憲民主党や公明党などが賛同する可能性は低い。自民党にも慎重論がある。",
+        "publication_date": "2025-12-17",
+        "observation_end": "2025-12-18",
+        "limitation": "修宪合意困难表明宪法约束未解除，是政治/军事大国化的反证；但该报道日期晚于cutoff（2026-11-09前仍有效），内容为2025年12月状态。"
+      },
+      {
+        "evidence_id": "ev-de17548964c02587aea92199",
+        "relation": "support",
+        "quote": "Rescheduled the acquisition of Tomahawk missiles one year ahead of schedule (rescheduled from FY2026 to FY2025).",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "远程打击能力采购提前显示军事能力建设推进，但为预算文件，属计划/进展，非最终战力形成。"
+      },
+      {
+        "evidence_id": "ev-6184492f26f6792365ff6f17",
+        "relation": "support",
+        "quote": "Amid this security environment, the Ministry of Defense (MOD) and the Self-Defense Forces (SDF) are fundamentally reinforcing Japan’s defense capabilities with independence and initiative, in an effort to protect the lives and peaceful livelihoods of Japanese people and resolutely defend Japan’s territorial land, waters, and airspace, as expressed in the three strategic documents.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "官方白皮书表述防务强化方向，属政策立场，不能直接证明已获军事大国地位。"
+      },
+      {
+        "evidence_id": "ev-b14b6302950d742ac66ee830",
+        "relation": "boundary",
+        "quote": "Regarding a Japanese government target of gaining a permanent seat on the powerful U.N. panel, Akasaka said, “It is difficult to achieve this due to the veto powers of China and Russia.”",
+        "publication_date": "2025-10-21",
+        "observation_end": "2025-10-21",
+        "limitation": "前官员表态说明常任席位目标困难，政治大国地位未实现；属个人观点，非官方决定。"
+      }
+    ],
+    "remaining_gap": "缺少截至2026-11-09的宪法第九条修改实际结果、安理会常任席位进展及军费占GDP是否已达2%的最终数据；现有证据截至2025年，无法判定终局。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-0ed9985daf84ece9bc28",
+      "url": "https://www.sipri.org/publications/2025/sipri-fact-sheets/trends-world-military-expenditure-2024",
+      "title": "ev-lane3-sipri",
+      "published_date": "2025-04-28",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-sipri",
+      "archive_sha256": "4d9d13d6b602f43b5c53ddac313f6496ddf5f105dd77cd9e5b56f205a66bebd7",
+      "archive_path": "data/sources/lane3-sipri.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-4cb6f6a7d643e6403aad",
+      "url": "https://www.mofa.go.jp/files/000143304.pdf",
+      "title": "ev-r2-l3-japan-law",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-japan-law",
+      "archive_sha256": "c491650c654e782c42f6c55c61ffa245da94ada7e90da12b2c4f11c64bfdd213",
+      "archive_path": "data/sources/r2-l3-open-strategy-runaway.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-c0c43608b29bdd4d3c37",
+      "url": "https://www.mofa.go.jp/press/statement/pressite_000001_00900.html",
+      "title": "ev-r2-l3-japan-unsc",
+      "published_date": "2025-01-10",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-japan-unsc",
+      "archive_sha256": "818d556c2a1627f6baea88b924e3937e9dd2280bb5d99b17e72f8bd115228657",
+      "archive_path": "data/sources/r2-l3-open-ssa-labor-japan.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-828f713d946e64cd057fdf69",
+      "url": "https://japan.kantei.go.jp/101_kishida/statement/202212/_00006.html?utm=",
+      "resolved_url": "https://japan.kantei.go.jp/101_kishida/statement/202212/_00006.html?utm=",
+      "title": "Press Conference by Prime Minister Kishida (Speeches and Statements <br>by the Prime Minister) | Prime Minister's Office of Japan",
+      "published_date": "2022-12-16",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:46.081387+00:00",
+      "archive_sha256": "07da6eaadf9e8254e1db3a97e1b4b78ffa1fd747b4914491e48a290a54f5f322",
+      "archive_path": "jobs/cefde221477144433f2836ef/07da6eaadf9e8254e1db3a97e1b4b78ffa1fd747b4914491e48a290a54f5f322.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-40ae907167f62d323b00b677",
+      "url": "https://www.mod.go.jp/j/press/wp/wp2025/pdf/R07000032.pdf",
+      "resolved_url": "https://www.mod.go.jp/j/press/wp/wp2025/pdf/R07000032.pdf",
+      "title": "わが国の安全保障・防衛政策",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:46.081599+00:00",
+      "archive_sha256": "26137027c1e1e2c3dbe9cc3718cd1be9a36452d1257334f0f62591fc8b341327",
+      "archive_path": "jobs/cefde221477144433f2836ef/26137027c1e1e2c3dbe9cc3718cd1be9a36452d1257334f0f62591fc8b341327.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ab8955834ca5ed118aee6ebc",
+      "url": "https://www.nikkei.com/article/DGKKZO93284920X11C25A2PD0000/",
+      "resolved_url": "https://www.nikkei.com/article/DGKKZO93284920X11C25A2PD0000/",
+      "title": "改憲、与野党合意遠く　維新「戦力の不保持」削除主張　自民に慎重論、立公は警戒 - 日本経済新聞",
+      "published_date": "2025-12-17",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:46.081771+00:00",
+      "archive_sha256": "6b45d7e4df42d45cbd62936ca3ccb9663786ebd9ba7ccd9c6eba98ee1bb58334",
+      "archive_path": "jobs/cefde221477144433f2836ef/6b45d7e4df42d45cbd62936ca3ccb9663786ebd9ba7ccd9c6eba98ee1bb58334.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e9ba71c580097c827729dafb",
+      "url": "https://www.mofa.go.jp/policy/other/bluebook/2025/en_html/chapter3/c030105.html",
+      "resolved_url": "https://www.mofa.go.jp/policy/other/bluebook/2025/en_html/chapter3/c030105.html",
+      "title": "Diplomatic Bluebook ｜ 5 Japan's Efforts at the United Nations",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:46.081963+00:00",
+      "archive_sha256": "f235754c2a9324a790fedbbe37b0b76792d19d7a38a0c2826542b2ebcca7c627",
+      "archive_path": "jobs/cefde221477144433f2836ef/f235754c2a9324a790fedbbe37b0b76792d19d7a38a0c2826542b2ebcca7c627.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-de17548964c02587aea92199",
+      "url": "https://www.mod.go.jp/en/d_act/d_budget/pdf/fy2025_20250411a.pdf",
+      "resolved_url": "https://www.mod.go.jp/en/d_act/d_budget/pdf/fy2025_20250411a.pdf",
+      "title": "Progress and Budget in Fundamental Reinforcement of Defense Capabilities",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:55.653492+00:00",
+      "archive_sha256": "dea16886f456880a338ddd3ec896af1a09896450654ffc554c11b162ef605c37",
+      "archive_path": "jobs/cefde221477144433f2836ef/dea16886f456880a338ddd3ec896af1a09896450654ffc554c11b162ef605c37.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-6184492f26f6792365ff6f17",
+      "url": "https://www.mod.go.jp/j/press/wp/wp2025/pdf/DOJ2025_Digest_EN.pdf",
+      "resolved_url": "https://www.mod.go.jp/j/press/wp/wp2025/pdf/DOJ2025_Digest_EN.pdf",
+      "title": "MINISTRY OF DEFENSE",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:55.653710+00:00",
+      "archive_sha256": "b9206bdb259e8947ba9f6b6b720ad848b5730055e5f3ed5635424f22bead27e4",
+      "archive_path": "jobs/cefde221477144433f2836ef/b9206bdb259e8947ba9f6b6b720ad848b5730055e5f3ed5635424f22bead27e4.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-b14b6302950d742ac66ee830",
+      "url": "https://www.japantimes.co.jp/news/2025/10/21/japan/politics/quasi-permanent-unsc-seat/",
+      "resolved_url": "https://www.japantimes.co.jp/news/2025/10/21/japan/politics/quasi-permanent-unsc-seat/",
+      "title": "Japan needs quasi-permanent seat on U.N. Security Council, says ex-official - The Japan Times",
+      "published_date": "2025-10-21",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:55.653888+00:00",
+      "archive_sha256": "05efb0ee5597fdb1f051ec8f1dbd0f66c9d679acbcac9d951942edb2c80d67fe",
+      "archive_path": "jobs/cefde221477144433f2836ef/05efb0ee5597fdb1f051ec8f1dbd0f66c9d679acbcac9d951942edb2c80d67fe.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "Japan 2025 National Security Strategy counterstrike capability defense budget 2 percent GDP official",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Japan Article 9 constitutional revision status 2025 pacifist constraints UN Security Council permanent seat bid",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Japan 2025 counterstrike capability Tomahawk deployment defense budget 2 percent GDP actual implementation official MOD white paper",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Japan Article 9 constitutional revision status 2025 pacifist constraints UN Security Council permanent seat bid not achieved",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-40ae907167f62d323b00b677",
+        "ev-6184492f26f6792365ff6f17",
+        "ev-de17548964c02587aea92199",
+        "prior-4cb6f6a7d643e6403aad"
+      ]
+    }
+  ],
+  "remaining_gap": "需修正两处：一是把observation_end与scope统一为2026-11-09，或明确说明现有证据仅覆盖至2025-12-18而观察窗口仍到cutoff；二是按原文“未来并非没有可能”的弱可能判断重新分类，不能以两个分项均未达终局为由判“部分符合”，应改为趋势符合但终点待验证或具体未定，并相应调整trend_aligned。",
+  "source_statuses": [
+    {
+      "url": "https://japan.kantei.go.jp/101_kishida/statement/202212/_00006.html?utm=",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.mod.go.jp/j/press/wp/wp2025/pdf/R07000032.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.nikkei.com/article/DGKKZO93284920X11C25A2PD0000/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.mofa.go.jp/policy/other/bluebook/2025/en_html/chapter3/c030105.html",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.mod.go.jp/en/d_act/d_budget/pdf/fy2025_20250411a.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.mod.go.jp/j/press/wp/wp2025/pdf/DOJ2025_Digest_EN.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.japantimes.co.jp/news/2025/10/21/japan/politics/quasi-permanent-unsc-seat/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "32c9ddbf017a972f63d24f412722fa3a1f87bc712b9a7d95e3476aafb93216a7"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "532e5eb2886277555fa701098d1cc8b5",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "ee9dd41e1fa5cfbd1a64d1d65f1b42b5",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "d5233cc35464ad8e80f28c0f329031f70275959a34f7c85bed7b564a72041b6c"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "f77392632324582151ebb70b12ec58c0",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "4b3eefbfc0e41fbccd3e6c0f6ba69f13c0e08ab206bf0a86c4af98156e4dcb81"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "6f969fe79d387957e85cb63544cc2663",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "5ed62c71c2f8cfc00275753ca98102d2",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "56ed735a8c2d9699d9e7fca6c187f20b52180c0bed5f05d4df5ae11d4188bed1"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "6a9092ef7606e877d34a659f322d2d2e",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "ebb863fbf6457aa7fc2b2b540e0b61b762f2c586b0317adcf9533e3045b06b59"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "39cbb6c6c04034232f4ac309f470c1e9c7f6324803d5851afc430929dbca0460"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "14ad081150862c907fd1d7090e9e143560054a848099768b1d7fc32654258bf6"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "3517a4b78c9e4fabc37bd561ff237235dca9b3101af4b971378a0dba65624010"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000249481-000249527",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "fail",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "time_alignment",
+          "reason": "建议的observation_end写为2025-12-18，但所引证据中ev-ab8955834ca5ed118aee6ebc的报道日期为2025-12-17、正文标注“2025年12月18日 2:00”，而scope声称“实际证据截至2025年”，observation_end与scope及证据实际观察期不一致；且该日期晚于多数其他证据的观察期，不能作为统一观察终点。",
+          "source_quote": "2025年12月18日 2:00 [会員限定記事]",
+          "evidence_id": "ev-ab8955834ca5ed118aee6ebc",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议将“2022年三文書确立反击能力与2027年度军费达GDP2%目标”作为支持军事维度推进的证据，但所引ev-40ae907167f62d323b00b677明确是2027年度预算目标，属未来计划；建议自己在limitation中也承认“属未来计划，不能当作已完成结果”，却在reason中将其与已实现变化并列，构成对证据范围的过度使用。",
+          "source_quote": "2027年度において、防衛力の抜本的強化とそれを補完する取組をあわせ、そのための予算水準が2022年度の国内総生産 \n(GDP)の2％（11兆円程度）に達するよう、所要の措置を実施する。",
+          "evidence_id": "ev-40ae907167f62d323b00b677",
+          "quote_origin": "evidence",
+          "quote_verification": {
+            "method": "unique_whitespace_alignment",
+            "model_quote": "2027年度において、防衛力の抜本的強化とそれを補完する取組をあわせ、そのための予算水準が2022年度の国内総生産 (GDP)の2％（11兆円程度）に達するよう、所要の措置を実施する。"
+          }
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议判定“部分符合”并设trend_aligned=true，但其reason同时列出军事维度沿预测方向推进（支持）与政治大国地位未实现（反证），属于混合方向；按口径，分项/阶段有实质差异才可判部分符合，且必须指出后果B哪些具体部分实现、哪些未实现。建议未明确区分“政治大国”与“军事大国”两个后果分项各自实现与否，仅笼统称“政治大国地位未实现”，却未说明军事大国地位是否实现或仅部分推进，导致部分符合的归类缺乏分项对应。",
+          "source_quote": "趋势符合但最终结果待验证。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正observation_end与scope一致（明确实际证据截止日），并将2027年度GDP2%目标明确列为未来计划而非已实现结果；同时需按“政治大国”与“军事大国”两个后果分项分别说明哪些具体部分已实现、哪些未实现及直接证据，才能支撑“部分符合”的归类。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000249481-000249527",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "fail",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "time_alignment",
+          "reason": "scope声明观察时段为1991年至2026-11-09，但observation_end被写成2025-12-18，且limitation自述“关键修订：observation_end与scope统一为2025-12-18”，这等于把任务cutoff 2026-11-09的观察窗口缩短到最晚一条证据的日期。证据最晚日期只能说明现有材料覆盖到何时，不能替代scope规定的观察截止；scope与observation_end不一致，属于时期写法错误。",
+          "source_quote": "观察时段：1991年至2026-11-09，实际证据截至2025-12-18。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议一方面把“军事大国”和“政治大国”两个分项都判为仅部分推进、未达终局，另一方面又设置trend_aligned=true并给出“部分符合”。按口径，分项/阶段/口径有实质差异才可判部分符合，且必须指出后果B哪些具体部分实现、哪些未实现；但原文是“未来并非没有可能”的弱可能判断，并非“A未解决→B重大后果”的条件预测，也没有可检验的终局结果。现有材料只能支持方向性趋势（军费增长、安保法制扩大、非常任理事国轮值），不能支持“部分符合”这一终局分类；应改为趋势符合但终点待验证，或保留具体未定，并相应调整trend_aligned与verdict。",
+          "source_quote": "两分项均为部分推进、未达终局，故判部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正两处：一是把observation_end与scope统一为2026-11-09，或明确说明现有证据仅覆盖至2025-12-18而观察窗口仍到cutoff；二是按原文“未来并非没有可能”的弱可能判断重新分类，不能以两个分项均未达终局为由判“部分符合”，应改为趋势符合但终点待验证或具体未定，并相应调整trend_aligned。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000249481-000249527",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象：日本是否从1991年前后“尚不能谈政治大国和军事大国”走向可观察的政治大国或军事大国地位。口径：宪法解释与安保法制实际变更、自卫队远程打击能力与军费实际增长、联合国安理会常任席位或同等政治领导角色。观察时段：1991年至2026-11-09（实际证据截至2025年）。",
+      "reason": "原文判断当时日本尚不能称政治/军事大国，但未来并非没有可能。观察期内出现实质变化：2015年安保法制扩大集体自卫相关武力使用，2022年三文書确立反击能力与2027年度军费达GDP2%目标，2024年军费实际增长并投入远程打击，显示军事维度沿预测方向推进；但宪法第九条修改未成、未获安理会常任席位，政治大国地位未实现。",
+      "limitation": "原文为无明确期限的弱可能判断，无法判定“终局”是否达成；军费增长与安保法制变化不等于已获军事大国地位，安理会非常任理事国轮值也不等于政治大国。趋势符合但最终结果待验证。",
+      "evidence_ids": [
+        "prior-0ed9985daf84ece9bc28",
+        "prior-4cb6f6a7d643e6403aad",
+        "prior-c0c43608b29bdd4d3c37",
+        "ev-40ae907167f62d323b00b677",
+        "ev-ab8955834ca5ed118aee6ebc",
+        "ev-de17548964c02587aea92199",
+        "ev-6184492f26f6792365ff6f17",
+        "ev-b14b6302950d742ac66ee830"
+      ],
+      "method": "由经济与政治实力及宪法可变性提出长期可能情景",
+      "method_basis": "explicit",
+      "observation_end": "2025-12-18",
+      "future_time_text": "未来",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-0ed9985daf84ece9bc28",
+          "relation": "support",
+          "quote": "SIPRI估计日本2024军费553亿美元，比2023实际增21%、比2015实际增49%；美国2024军费9970亿美元，中国3140亿美元。日本军费占GDP1.4%，并支出于远程打击与防空能力。",
+          "publication_date": "2025-04-28",
+          "observation_end": "2024-12-31",
+          "limitation": "军费增长与远程打击支出支持军事能力增强方向，但占GDP仅1.4%，尚不足以单独证明“军事大国”地位。"
+        },
+        {
+          "evidence_id": "prior-4cb6f6a7d643e6403aad",
+          "relation": "support",
+          "quote": "日本政府说明安保法制2015-09-19通过、2016-03-29生效；扩大国际和平协作和支援范围，并在三项限定条件下许可集体自卫相关武力使用，仍强调最小必要限度及和平国家取向。",
+          "publication_date": null,
+          "observation_end": "2016-03-29",
+          "limitation": "安保法制扩大武力使用范围，但限定条件与和平国家取向表明宪法约束仍存，不能等同于军事大国。"
+        },
+        {
+          "evidence_id": "prior-c0c43608b29bdd4d3c37",
+          "relation": "boundary",
+          "quote": "日本外务省总结2023—2024第12次担任安理会非常任理事国，为成员国中最多；主持朝鲜、加沙、阿富汗等议题的部分讨论/文件；仍在争取常任席位。",
+          "publication_date": "2025-01-10",
+          "observation_end": "2024-12-31",
+          "limitation": "非常任理事国轮值与议题主持显示政治参与，但“仍在争取常任席位”说明政治大国地位未达成，属反证/边界。"
+        },
+        {
+          "evidence_id": "ev-40ae907167f62d323b00b677",
+          "relation": "support",
+          "quote": "2027年度において、防衛力の抜本的強化とそれを補完する取組をあわせ、そのための予算水準が2022年度の国内総生産 (GDP)の2％（11兆円程度）に達するよう、所要の措置を実施する。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "这是2022年三文書设定的2027年度目标，属未来计划，不能当作已完成结果；仅证明政策方向。"
+        },
+        {
+          "evidence_id": "ev-ab8955834ca5ed118aee6ebc",
+          "relation": "counter",
+          "quote": "憲法改正に向けた与野党の合意形成のハードルが一段と高くなっている。日本維新の会が9条の規定する「戦力の不保持」の削除や国防軍の明記を求めるためだ。立憲民主党や公明党などが賛同する可能性は低い。自民党にも慎重論がある。",
+          "publication_date": "2025-12-17",
+          "observation_end": "2025-12-18",
+          "limitation": "修宪合意困难表明宪法约束未解除，是政治/军事大国化的反证；但该报道日期晚于cutoff（2026-11-09前仍有效），内容为2025年12月状态。"
+        },
+        {
+          "evidence_id": "ev-de17548964c02587aea92199",
+          "relation": "support",
+          "quote": "Rescheduled the acquisition of Tomahawk missiles one year ahead of schedule (rescheduled from FY2026 to FY2025).",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "远程打击能力采购提前显示军事能力建设推进，但为预算文件，属计划/进展，非最终战力形成。"
+        },
+        {
+          "evidence_id": "ev-6184492f26f6792365ff6f17",
+          "relation": "support",
+          "quote": "Amid this security environment, the Ministry of Defense (MOD) and the Self-Defense Forces (SDF) are fundamentally reinforcing Japan’s defense capabilities with independence and initiative, in an effort to protect the lives and peaceful livelihoods of Japanese people and resolutely defend Japan’s territorial land, waters, and airspace, as expressed in the three strategic documents.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "官方白皮书表述防务强化方向，属政策立场，不能直接证明已获军事大国地位。"
+        },
+        {
+          "evidence_id": "ev-b14b6302950d742ac66ee830",
+          "relation": "boundary",
+          "quote": "Regarding a Japanese government target of gaining a permanent seat on the powerful U.N. panel, Akasaka said, “It is difficult to achieve this due to the veto powers of China and Russia.”",
+          "publication_date": "2025-10-21",
+          "observation_end": "2025-10-21",
+          "limitation": "前官员表态说明常任席位目标困难，政治大国地位未实现；属个人观点，非官方决定。"
+        }
+      ],
+      "remaining_gap": "缺少截至2026-11-09的宪法第九条修改实际结果、安理会常任席位进展及军费占GDP是否已达2%的最终数据；现有证据截至2025年，无法判定终局。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000249481-000249527",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象：日本是否从1991年前后“尚不能谈政治大国和军事大国”走向可观察的政治大国或军事大国地位。口径分两项：军事大国看宪法约束与安保法制实际变更、自卫队远程打击能力与军费实际增长；政治大国看联合国安理会常任席位或同等政治领导角色。观察时段：1991年至2026-11-09，实际证据截至2025-12-18。",
+      "reason": "原文判断当时日本尚不能称政治/军事大国，但未来并非没有可能。军事分项出现实质推进：2015年安保法制扩大集体自卫相关武力使用，2024年军费实际增长并投入远程打击，2025年预算文件显示远程打击采购提前；但宪法第九条修改未成、军费占GDP仍约1.4%，军事大国地位仅部分推进。政治分项：日本多次担任非常任理事国并主持议题，但未获常任席位，前官员亦称目标困难，政治大国地位未实现。两分项均为部分推进、未达终局，故判部分符合。",
+      "limitation": "原文为无明确期限的弱可能判断，无法判定终局是否达成；2027年度军费达GDP2%属未来计划，不能当作已完成结果。军费增长与安保法制变化不等于已获军事大国地位，非常任理事国轮值也不等于政治大国。趋势符合但最终结果待验证。关键修订：observation_end与scope统一为2025-12-18，并将2027年目标明确列为未来计划而非已实现结果。",
+      "evidence_ids": [
+        "prior-0ed9985daf84ece9bc28",
+        "prior-4cb6f6a7d643e6403aad",
+        "prior-c0c43608b29bdd4d3c37",
+        "ev-40ae907167f62d323b00b677",
+        "ev-ab8955834ca5ed118aee6ebc",
+        "ev-de17548964c02587aea92199",
+        "ev-6184492f26f6792365ff6f17",
+        "ev-b14b6302950d742ac66ee830"
+      ],
+      "method": "由经济与政治实力及宪法可变性提出长期可能情景",
+      "method_basis": "explicit",
+      "observation_end": "2025-12-18",
+      "future_time_text": "未来",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-0ed9985daf84ece9bc28",
+          "relation": "support",
+          "quote": "SIPRI估计日本2024军费553亿美元，比2023实际增21%、比2015实际增49%；美国2024军费9970亿美元，中国3140亿美元。日本军费占GDP1.4%，并支出于远程打击与防空能力。",
+          "publication_date": "2025-04-28",
+          "observation_end": "2024-12-31",
+          "limitation": "军费增长与远程打击支出支持军事能力增强方向，但占GDP仅1.4%，尚不足以单独证明“军事大国”地位。"
+        },
+        {
+          "evidence_id": "prior-4cb6f6a7d643e6403aad",
+          "relation": "support",
+          "quote": "日本政府说明安保法制2015-09-19通过、2016-03-29生效；扩大国际和平协作和支援范围，并在三项限定条件下许可集体自卫相关武力使用，仍强调最小必要限度及和平国家取向。",
+          "publication_date": null,
+          "observation_end": "2016-03-29",
+          "limitation": "安保法制扩大武力使用范围，但限定条件与和平国家取向表明宪法约束仍存，不能等同于军事大国。"
+        },
+        {
+          "evidence_id": "prior-c0c43608b29bdd4d3c37",
+          "relation": "boundary",
+          "quote": "日本外务省总结2023—2024第12次担任安理会非常任理事国，为成员国中最多；主持朝鲜、加沙、阿富汗等议题的部分讨论/文件；仍在争取常任席位。",
+          "publication_date": "2025-01-10",
+          "observation_end": "2024-12-31",
+          "limitation": "非常任理事国轮值与议题主持显示政治参与，但“仍在争取常任席位”说明政治大国地位未达成，属反证/边界。"
+        },
+        {
+          "evidence_id": "ev-40ae907167f62d323b00b677",
+          "relation": "boundary",
+          "quote": "2027年度において、防衛力の抜本的強化とそれを補完する取組をあわせ、そのための予算水準が2022年度の国内総生産 (GDP)の2％（11兆円程度）に達するよう、所要の措置を実施する。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "这是2022年三文書设定的2027年度目标，属未来计划，不能当作已完成结果；仅证明政策方向，故列为边界而非支持。"
+        },
+        {
+          "evidence_id": "ev-ab8955834ca5ed118aee6ebc",
+          "relation": "counter",
+          "quote": "憲法改正に向けた与野党の合意形成のハードルが一段と高くなっている。日本維新の会が9条の規定する「戦力の不保持」の削除や国防軍の明記を求めるためだ。立憲民主党や公明党などが賛同する可能性は低い。自民党にも慎重論がある。",
+          "publication_date": "2025-12-17",
+          "observation_end": "2025-12-18",
+          "limitation": "修宪合意困难表明宪法约束未解除，是政治/军事大国化的反证；报道日期2025-12-17、正文标注2025-12-18，为本条最晚观察点，故observation_end取2025-12-18。"
+        },
+        {
+          "evidence_id": "ev-de17548964c02587aea92199",
+          "relation": "support",
+          "quote": "Rescheduled the acquisition of Tomahawk missiles one year ahead of schedule (rescheduled from FY2026 to FY2025).",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "远程打击能力采购提前显示军事能力建设推进，但为预算文件，属计划/进展，非最终战力形成。"
+        },
+        {
+          "evidence_id": "ev-6184492f26f6792365ff6f17",
+          "relation": "support",
+          "quote": "Amid this security environment, the Ministry of Defense (MOD) and the Self-Defense Forces (SDF) are fundamentally reinforcing Japan’s defense capabilities with independence and initiative, in an effort to protect the lives and peaceful livelihoods of Japanese people and resolutely defend Japan’s territorial land, waters, and airspace, as expressed in the three strategic documents.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "官方白皮书表述防务强化方向，属政策立场，不能直接证明已获军事大国地位。"
+        },
+        {
+          "evidence_id": "ev-b14b6302950d742ac66ee830",
+          "relation": "boundary",
+          "quote": "Regarding a Japanese government target of gaining a permanent seat on the powerful U.N. panel, Akasaka said, “It is difficult to achieve this due to the veto powers of China and Russia.”",
+          "publication_date": "2025-10-21",
+          "observation_end": "2025-10-21",
+          "limitation": "前官员表态说明常任席位目标困难，政治大国地位未实现；属个人观点，非官方决定。"
+        }
+      ],
+      "remaining_gap": "缺少截至2026-11-09的宪法第九条修改实际结果、安理会常任席位进展及军费占GDP是否已达2%的最终数据；现有证据截至2025-12-18，无法判定终局。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "对象：日本是否已从1991年前后“尚不能谈政治大国和军事大国”的状态，走向可观察的政治大国或军事大国地位；条件：原文为无明确期限的长期弱可能判断，考察截至2026-11-09的实际制度、能力与国际角色，不把未来计划当已完成，也不以军费或非常任理事国轮值单一指标定论；可观察口径：宪法解释与安保法制的实际变更、自卫队远程打击与军费实际增长、联合国安理会常任席位或同等政治领导角色；反证包括法律限制仍存、军费占GDP仍低、未获常任席位及和平取向约束。",
+  "elapsed_seconds": 64.355,
+  "completed_at": "2026-11-09T08:02:36.103230+00:00"
+}

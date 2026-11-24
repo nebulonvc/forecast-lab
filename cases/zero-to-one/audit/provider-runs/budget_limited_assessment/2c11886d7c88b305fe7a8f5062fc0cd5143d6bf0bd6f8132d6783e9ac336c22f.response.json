@@ -1,0 +1,28 @@
+{
+  "id": "21c92760-c536-4598-8c27-1da5f1c3188e",
+  "object": "chat.completion",
+  "created": 1794201448,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000042690-000042719\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性判断：若美国公司投资，则未来可期待收获新财富。观察时段为2014年出版至cutoff 2026-11-09；需检验美国公司投资行为是否发生及是否带来可观测的新财富收益。\",\"reason\":\"原文为条件句，触发条件“美国公司投资”在观察窗口内是否成立、以及“收获新财富”如何操作化均无明确证据。提供的证据列表为空，无法核对投资与收益的对应关系。\",\"limitation\":\"条件未确定且无可用证据；不能以宏观投资或企业盈利的泛化数据替代原文特定条件与结果。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"在未来\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4248,
+    "completion_tokens": 219,
+    "total_tokens": 4467,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3480
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

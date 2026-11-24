@@ -1,0 +1,481 @@
+{
+  "claim_id": "txt-1c4066fc0c-000064422-000064448",
+  "version": "search-verifier-v1",
+  "input_sha256": "9c543723919ae8f9d1b1e570b121ea8bc0b3606f9a3c47d7a5381f8971938afa",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000064422-000064448",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "observed_window",
+    "scope": "评估美国公众对“科技能解决人的/社会问题”这一技术主义信念的认知转变，指标包括对科技解决社会问题的信任度、对科技局限的认知、对技术主义批评的接受度；观察时段为1991年出版至2026-11-09截止日前的可得调查（2019、2020、2025、2026年）。",
+    "reason": "原文预测美国人需“几代人”才认识到科技解决主义误导，属跨世代认知转变，无明确期限与阈值。现有调查显示美国公众对AI等具体技术担忧上升（如50%更担忧而非兴奋），但这是对特定技术的态度，并非对“科技能解决人的/社会问题”这一总体技术主义信念的世代性认知转变，且缺乏跨世代持续调查证据。",
+    "limitation": "“几代人”时间跨度远超现有观察窗口，无法在截止日前验证终局；现有调查多针对AI或具体技术，与原文“科技解决社会/人的问题”的总体命题口径不完全对应，不能据此判定趋势符合或反证。",
+    "evidence_ids": [
+      "prior-1d0a40c4d4f1ed14df64",
+      "ev-3b605ef2f679079e77bba61c",
+      "ev-8eda6fe6df6ac85ae91862b1",
+      "ev-de4ecad4290385a58f6979e9",
+      "ev-646d871d516866928c4ba43d"
+    ],
+    "method": "从技术崇拜与政治技术一体化推断认知纠偏缓慢",
+    "method_basis": "inferred",
+    "observation_end": "2026-07-13",
+    "future_time_text": "可能需要几代人",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-1d0a40c4d4f1ed14df64",
+        "relation": "boundary",
+        "quote": "Pew2025调查：对AI更担忧而非兴奋者50%，2021为37%；53%担心创意思维变差、50%担心有意义关系受损；同时多数仍愿接受AI帮助处理日常任务。",
+        "publication_date": "2025-09-17",
+        "observation_end": "2025-09-17",
+        "limitation": "针对AI具体技术态度，非对“科技解决社会/人的问题”总体信念的世代认知转变。"
+      },
+      {
+        "evidence_id": "ev-3b605ef2f679079e77bba61c",
+        "relation": "boundary",
+        "quote": "61% of Americans say science has had a mostly positive effect on society, up slightly from 57% in 2023. This is still lower than the 73% of U.S. adults who said this in 2019, prior to the start of the COVID-19 pandemic.",
+        "publication_date": "2026-01-15",
+        "observation_end": "2026-01-15",
+        "limitation": "衡量对科学社会影响的总体评价，非技术解决主义信念；且2023至2025略有回升，方向不一致。"
+      },
+      {
+        "evidence_id": "ev-8eda6fe6df6ac85ae91862b1",
+        "relation": "counter",
+        "quote": "Roughly a quarter of Americans (27%) agree there is a technological solution to all of humanity's problems, including 7% who definitely agree, according to a June 2026 Verasight survey.",
+        "publication_date": null,
+        "observation_end": "2026-05-18",
+        "limitation": "单次横断面调查，无跨世代趋势；发表日期未知，仅以调查字段日期为观察终点。"
+      },
+      {
+        "evidence_id": "ev-de4ecad4290385a58f6979e9",
+        "relation": "boundary",
+        "quote": "Half of U.S. adults say the increased use of AI in daily life makes them feel more concerned than excited, according to a June 2025 survey. Just 10% say they are more excited than concerned.",
+        "publication_date": "2026-03-12",
+        "observation_end": "2025-06-30",
+        "limitation": "针对AI具体技术，非总体技术解决主义信念；观察终点取2025年6月调查。"
+      },
+      {
+        "evidence_id": "ev-646d871d516866928c4ba43d",
+        "relation": "boundary",
+        "quote": "61% of U.S. adults agree they feel anxious about the rise of AI, while 48% agree they are excited about the possibilities it brings to their lives.",
+        "publication_date": "2026-07-13",
+        "observation_end": "2026-06-19",
+        "limitation": "针对AI情绪，非对科技解决社会问题的总体信念；单次调查无世代趋势。"
+      }
+    ],
+    "remaining_gap": "缺乏跨世代、针对“科技能解决人的/社会问题”总体技术主义信念的持续调查，无法在截止日前评估“几代人”尺度的认知转变；现有证据仅覆盖具体技术（AI、科学）态度，口径不对应。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000064422-000064448",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "observed_window",
+    "scope": "评估美国公众对“科技能解决人的/社会问题”这一技术主义信念的认知转变，指标包括对科技解决社会问题的信任度、对科技局限的认知、对技术主义批评的接受度；观察时段为1991年出版至2026-11-09截止日前的可得调查（2019、2020、2025、2026年）。",
+    "reason": "原文预测美国人需“几代人”才认识到科技解决主义误导，属跨世代认知转变，无明确期限与阈值。现有调查显示美国公众对AI等具体技术担忧上升（如50%更担忧而非兴奋），但这是对特定技术的态度，并非对“科技能解决人的/社会问题”这一总体技术主义信念的世代性认知转变，且缺乏跨世代持续调查证据。",
+    "limitation": "“几代人”时间跨度远超现有观察窗口，无法在截止日前验证终局；现有调查多针对AI或具体技术，与原文“科技解决社会/人的问题”的总体命题口径不完全对应，不能据此判定趋势符合或反证。",
+    "evidence_ids": [
+      "prior-1d0a40c4d4f1ed14df64",
+      "ev-3b605ef2f679079e77bba61c",
+      "ev-8eda6fe6df6ac85ae91862b1",
+      "ev-de4ecad4290385a58f6979e9",
+      "ev-646d871d516866928c4ba43d"
+    ],
+    "method": "从技术崇拜与政治技术一体化推断认知纠偏缓慢",
+    "method_basis": "inferred",
+    "observation_end": "2026-07-13",
+    "future_time_text": "可能需要几代人",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-1d0a40c4d4f1ed14df64",
+        "relation": "boundary",
+        "quote": "Pew2025调查：对AI更担忧而非兴奋者50%，2021为37%；53%担心创意思维变差、50%担心有意义关系受损；同时多数仍愿接受AI帮助处理日常任务。",
+        "publication_date": "2025-09-17",
+        "observation_end": "2025-09-17",
+        "limitation": "针对AI具体技术态度，非对“科技解决社会/人的问题”总体信念的世代认知转变。"
+      },
+      {
+        "evidence_id": "ev-3b605ef2f679079e77bba61c",
+        "relation": "boundary",
+        "quote": "61% of Americans say science has had a mostly positive effect on society, up slightly from 57% in 2023. This is still lower than the 73% of U.S. adults who said this in 2019, prior to the start of the COVID-19 pandemic.",
+        "publication_date": "2026-01-15",
+        "observation_end": "2026-01-15",
+        "limitation": "衡量对科学社会影响的总体评价，非技术解决主义信念；且2023至2025略有回升，方向不一致。"
+      },
+      {
+        "evidence_id": "ev-8eda6fe6df6ac85ae91862b1",
+        "relation": "counter",
+        "quote": "Roughly a quarter of Americans (27%) agree there is a technological solution to all of humanity's problems, including 7% who definitely agree, according to a June 2026 Verasight survey.",
+        "publication_date": null,
+        "observation_end": "2026-05-18",
+        "limitation": "单次横断面调查，无跨世代趋势；发表日期未知，仅以调查字段日期为观察终点。"
+      },
+      {
+        "evidence_id": "ev-de4ecad4290385a58f6979e9",
+        "relation": "boundary",
+        "quote": "Half of U.S. adults say the increased use of AI in daily life makes them feel more concerned than excited, according to a June 2025 survey. Just 10% say they are more excited than concerned.",
+        "publication_date": "2026-03-12",
+        "observation_end": "2025-06-30",
+        "limitation": "针对AI具体技术，非总体技术解决主义信念；观察终点取2025年6月调查。"
+      },
+      {
+        "evidence_id": "ev-646d871d516866928c4ba43d",
+        "relation": "boundary",
+        "quote": "61% of U.S. adults agree they feel anxious about the rise of AI, while 48% agree they are excited about the possibilities it brings to their lives.",
+        "publication_date": "2026-07-13",
+        "observation_end": "2026-06-19",
+        "limitation": "针对AI情绪，非对科技解决社会问题的总体信念；单次调查无世代趋势。"
+      }
+    ],
+    "remaining_gap": "缺乏跨世代、针对“科技能解决人的/社会问题”总体技术主义信念的持续调查，无法在截止日前评估“几代人”尺度的认知转变；现有证据仅覆盖具体技术（AI、科学）态度，口径不对应。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-1d0a40c4d4f1ed14df64",
+      "url": "https://www.pewresearch.org/science/2025/09/17/how-americans-view-ai-and-its-impact-on-people-and-society/",
+      "title": "ev-r2-l1-ai-limits",
+      "published_date": "2025-09-17",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-ai-limits",
+      "archive_sha256": "6c075f6d8cdc30070c26e8af68d458e1adf87c6dcde25cc75ea0fafafea04967",
+      "archive_path": "data/sources/r2-l1-ai-attitudes.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-3b605ef2f679079e77bba61c",
+      "url": "https://www.pewresearch.org/science/2026/01/15/americans-views-on-the-impact-of-science-on-society/",
+      "resolved_url": "https://www.pewresearch.org/science/2026/01/15/americans-views-on-the-impact-of-science-on-society/",
+      "title": "Americans’ views on the impact of science on society | Pew Research Center",
+      "published_date": "2026-01-15",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:04.332908+00:00",
+      "archive_sha256": "d60541001cfee4f1a0ce9080813f9a86eee63d1c0a8d4243eee191e82d840f72",
+      "archive_path": "jobs/2f5203e9634946ab71fb1c39/d60541001cfee4f1a0ce9080813f9a86eee63d1c0a8d4243eee191e82d840f72.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-8eda6fe6df6ac85ae91862b1",
+      "url": "https://data.verasight.io/ai/about-a-quarter-of-americans-think-technology-can-solve-all-of-humanitys-problems/",
+      "resolved_url": "https://data.verasight.io/ai/about-a-quarter-of-americans-think-technology-can-solve-all-of-humanitys-problems/",
+      "title": "About a quarter of Americans think technology can solve all of humanity's problems · Verasight Data Library",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:04.333060+00:00",
+      "archive_sha256": "0daf30a2e80dc9d18b8171a52fb6ef420a70309fff9dd5814190e6133a7ce658",
+      "archive_path": "jobs/2f5203e9634946ab71fb1c39/0daf30a2e80dc9d18b8171a52fb6ef420a70309fff9dd5814190e6133a7ce658.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-f3c5b3ab2b7a50ada8967877",
+      "url": "https://www.pewresearch.org/social-trends/2019/03/21/worries-priorities-and-potential-problem-solvers/",
+      "resolved_url": "https://www.pewresearch.org/social-trends/2019/03/21/worries-priorities-and-potential-problem-solvers/",
+      "title": "Worries and priorities about America's future | Pew Research Center",
+      "published_date": "2019-03-21",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:04.333197+00:00",
+      "archive_sha256": "454b7d787f70ab8cc0053bd49124c1f0c724074720b657532cf0c488dd182e4b",
+      "archive_path": "jobs/2f5203e9634946ab71fb1c39/454b7d787f70ab8cc0053bd49124c1f0c724074720b657532cf0c488dd182e4b.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-afd9066b5b37939b1b9f56d6",
+      "url": "https://www.pewresearch.org/internet/2020/06/30/tech-causes-more-problems-than-it-solves/",
+      "resolved_url": "https://www.pewresearch.org/internet/2020/06/30/tech-causes-more-problems-than-it-solves/",
+      "title": "Tech causes more problems than it solves | Pew Research Center",
+      "published_date": "2020-06-30",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:04.333336+00:00",
+      "archive_sha256": "e0587233666bfece1ea76e0810056ab7a6eb0928fd8c75159752e9392342591f",
+      "archive_path": "jobs/2f5203e9634946ab71fb1c39/e0587233666bfece1ea76e0810056ab7a6eb0928fd8c75159752e9392342591f.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-de4ecad4290385a58f6979e9",
+      "url": "https://www.pewresearch.org/short-reads/2026/03/12/key-findings-about-how-americans-view-artificial-intelligence/",
+      "resolved_url": "https://www.pewresearch.org/short-reads/2026/03/12/key-findings-about-how-americans-view-artificial-intelligence/",
+      "title": "What the data says about Americans’ views of artificial intelligence | Pew Research Center",
+      "published_date": "2026-03-12",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:13.546264+00:00",
+      "archive_sha256": "2ca6031bb6635a600bb7ca9fb8c032c0686abf0770b093193e1b3c508c916677",
+      "archive_path": "jobs/2f5203e9634946ab71fb1c39/2ca6031bb6635a600bb7ca9fb8c032c0686abf0770b093193e1b3c508c916677.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-646d871d516866928c4ba43d",
+      "url": "https://data.verasight.io/ai/ai-leaves-more-americans-anxious-than-excited/",
+      "resolved_url": "https://data.verasight.io/ai/ai-leaves-more-americans-anxious-than-excited/",
+      "title": "AI leaves more Americans anxious than excited · Verasight Data Library",
+      "published_date": "2026-07-13",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:13.546408+00:00",
+      "archive_sha256": "b01ef03663d6119241d126d902ad6efedea74bcd27740f7c066a1117af5548f8",
+      "archive_path": "jobs/2f5203e9634946ab71fb1c39/b01ef03663d6119241d126d902ad6efedea74bcd27740f7c066a1117af5548f8.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "Pew Research Americans trust science solve social problems survey trend generations technology solutionism",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Americans recognize limits of technology solve social problems survey decline techno-solutionism",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Pew Research 2025 Americans views AI impact society more concerned than excited survey trend",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Verasight 2026 survey Americans technological solution all humanity's problems agree disagree",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺乏跨世代、针对“科技能解决人的/社会问题”总体技术主义信念的持续调查，无法在截止日前评估“几代人”尺度的认知转变；现有证据仅覆盖具体技术（AI、科学）态度，口径不对应。",
+  "source_statuses": [
+    {
+      "url": "https://www.pewresearch.org/science/2026/01/15/americans-views-on-the-impact-of-science-on-society/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://data.verasight.io/ai/about-a-quarter-of-americans-think-technology-can-solve-all-of-humanitys-problems/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.pewresearch.org/social-trends/2019/03/21/worries-priorities-and-potential-problem-solvers/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.pewresearch.org/internet/2020/06/30/tech-causes-more-problems-than-it-solves/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.pewresearch.org/short-reads/2026/03/12/key-findings-about-how-americans-view-artificial-intelligence/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://data.verasight.io/ai/ai-leaves-more-americans-anxious-than-excited/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "609d975b469aa09a153c5ac668afa9b39460371c3cccf4160969857ca9bf51fb"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "5b4a72af92bc1b3673cd517459247170",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "d3bca5ce1863d1afcda90e0c568cc906",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "149504ae2fc2db541dc45a0860a9dd9e2b35bbbb5ff0c2074bb1c7cb5b15eef2"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "789504351fb123fba73b7f8049ff0be2",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "869ad8da00221ef4b5cd81fbdbe19f97b2c7dcd7757185d5b2462ba42d78d423"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "57e78cd5d230644e1be81d3c3d01f1e9",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f4de2629b362af1a397b32fdacad784d",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "e2bcf86889fce70f9f78572b23725f34ef4a28813d4cd3d0ae30cf6c8e30c9db"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "23d25ca628f5ad315d4916acde2ced57",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "c62ad5f5c4f9fc70ff7fdb03a1846fd13052ad8149e6695c0c4bceb58f78d83b"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "11bc5666a2fa00d804312b505ea1bb07a9ad77162b68b17a1cf9493d8f591668"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000064422-000064448",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000064422-000064448",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "observed_window",
+      "scope": "评估美国公众对“科技能解决人的/社会问题”这一技术主义信念的认知转变，指标包括对科技解决社会问题的信任度、对科技局限的认知、对技术主义批评的接受度；观察时段为1991年出版至2026-11-09截止日前的可得调查（2019、2020、2025、2026年）。",
+      "reason": "原文预测美国人需“几代人”才认识到科技解决主义误导，属跨世代认知转变，无明确期限与阈值。现有调查显示美国公众对AI等具体技术担忧上升（如50%更担忧而非兴奋），但这是对特定技术的态度，并非对“科技能解决人的/社会问题”这一总体技术主义信念的世代性认知转变，且缺乏跨世代持续调查证据。",
+      "limitation": "“几代人”时间跨度远超现有观察窗口，无法在截止日前验证终局；现有调查多针对AI或具体技术，与原文“科技解决社会/人的问题”的总体命题口径不完全对应，不能据此判定趋势符合或反证。",
+      "evidence_ids": [
+        "prior-1d0a40c4d4f1ed14df64",
+        "ev-3b605ef2f679079e77bba61c",
+        "ev-8eda6fe6df6ac85ae91862b1",
+        "ev-de4ecad4290385a58f6979e9",
+        "ev-646d871d516866928c4ba43d"
+      ],
+      "method": "从技术崇拜与政治技术一体化推断认知纠偏缓慢",
+      "method_basis": "inferred",
+      "observation_end": "2026-07-13",
+      "future_time_text": "可能需要几代人",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-1d0a40c4d4f1ed14df64",
+          "relation": "boundary",
+          "quote": "Pew2025调查：对AI更担忧而非兴奋者50%，2021为37%；53%担心创意思维变差、50%担心有意义关系受损；同时多数仍愿接受AI帮助处理日常任务。",
+          "publication_date": "2025-09-17",
+          "observation_end": "2025-09-17",
+          "limitation": "针对AI具体技术态度，非对“科技解决社会/人的问题”总体信念的世代认知转变。"
+        },
+        {
+          "evidence_id": "ev-3b605ef2f679079e77bba61c",
+          "relation": "boundary",
+          "quote": "61% of Americans say science has had a mostly positive effect on society, up slightly from 57% in 2023. This is still lower than the 73% of U.S. adults who said this in 2019, prior to the start of the COVID-19 pandemic.",
+          "publication_date": "2026-01-15",
+          "observation_end": "2026-01-15",
+          "limitation": "衡量对科学社会影响的总体评价，非技术解决主义信念；且2023至2025略有回升，方向不一致。"
+        },
+        {
+          "evidence_id": "ev-8eda6fe6df6ac85ae91862b1",
+          "relation": "counter",
+          "quote": "Roughly a quarter of Americans (27%) agree there is a technological solution to all of humanity's problems, including 7% who definitely agree, according to a June 2026 Verasight survey.",
+          "publication_date": null,
+          "observation_end": "2026-05-18",
+          "limitation": "单次横断面调查，无跨世代趋势；发表日期未知，仅以调查字段日期为观察终点。"
+        },
+        {
+          "evidence_id": "ev-de4ecad4290385a58f6979e9",
+          "relation": "boundary",
+          "quote": "Half of U.S. adults say the increased use of AI in daily life makes them feel more concerned than excited, according to a June 2025 survey. Just 10% say they are more excited than concerned.",
+          "publication_date": "2026-03-12",
+          "observation_end": "2025-06-30",
+          "limitation": "针对AI具体技术，非总体技术解决主义信念；观察终点取2025年6月调查。"
+        },
+        {
+          "evidence_id": "ev-646d871d516866928c4ba43d",
+          "relation": "boundary",
+          "quote": "61% of U.S. adults agree they feel anxious about the rise of AI, while 48% agree they are excited about the possibilities it brings to their lives.",
+          "publication_date": "2026-07-13",
+          "observation_end": "2026-06-19",
+          "limitation": "针对AI情绪，非对科技解决社会问题的总体信念；单次调查无世代趋势。"
+        }
+      ],
+      "remaining_gap": "缺乏跨世代、针对“科技能解决人的/社会问题”总体技术主义信念的持续调查，无法在截止日前评估“几代人”尺度的认知转变；现有证据仅覆盖具体技术（AI、科学）态度，口径不对应。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "王沪宁1991年著作中关于美国人可能需几代人才认识到“科技能解决人的/社会问题”这一误导的预测。可观察口径：美国公众对技术解决社会问题的信任度、对科技局限的认知、对技术主义批评的接受度，是否有跨世代持续调查显示认知转变。反证：若已有大规模调查显示美国公众在短期内（如数年）普遍认识到科技不能解决社会/人的问题，或对技术解决主义的信任显著且持续下降，则构成反证。注意“可能”“几代人”无明确期限和阈值，不能制造到期日。",
+  "elapsed_seconds": 32.215,
+  "completed_at": "2026-11-09T08:12:21.241567+00:00"
+}

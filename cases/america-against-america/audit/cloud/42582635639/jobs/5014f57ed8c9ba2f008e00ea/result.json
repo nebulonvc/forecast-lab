@@ -1,0 +1,647 @@
+{
+  "claim_id": "txt-1c4066fc0c-000092202-000092237",
+  "version": "search-verifier-v1",
+  "input_sha256": "f67d3ddd6dfd6b1369aa26ab661354eecebd19830afc8c706545d239b2be3cff",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000092202-000092237",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "对象：王沪宁关于“人力资源发展到一定程度时，个人技能与知识的标准化认证成为社会必不可少环节”的条件性预测。可观察口径：在人力资源发展程度较高的美国，关键就业入口（法定职业执照/认证）与高等教育入口（统一资格标准，如课程/GPA/标准化考试）是否实际依赖可比较的资格判断。观察时段：2022-2025年。",
+    "reason": "原命题为条件句，触发条件“人的资源发展达到某种程度”未在材料中被直接操作化或证明已满足；BLS持证比例与高校招生政策只描述结果，不能证明条件已发生。且24.0%持证、76.0%不持证只能说明部分就业者持证，不能证明标准化认证是“社会必不可少”的环节；高校保留课程/GPA统一规则也说明考试可选不等于标准化需求消失，现有材料不足以判定后果分项实现或未实现。",
+    "limitation": "关键修订：将条件状态由satisfied改为unknown，判定由部分符合改为暂无法判断，trend_aligned改为false；不再把“逾80%不要求ACT/SAT”当作满足scope反证条件的证据，因同一材料显示高校仍保留课程/GPA等统一资格规则。证据仅覆盖美国且多为横截面，无法验证随人力资源发展而增强的趋势。",
+    "evidence_ids": [
+      "prior-215dae4d5080f580df1b",
+      "ev-09c2f437ac1970e06b99037f",
+      "ev-8a1cc6af9a670dfeafa25a2d",
+      "prior-e06cfc05b14127b81a29",
+      "prior-72dada332016d921bd0f",
+      "ev-b3c10eda09622da7fdc86b45",
+      "ev-d859cdbed60fa8b3ad03b40e"
+    ],
+    "method": "从职业流动与证书需求推演标准化需求",
+    "method_basis": "inferred",
+    "observation_end": "2025-01-29",
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-215dae4d5080f580df1b",
+        "relation": "background",
+        "quote": "BLS表52：2024年16岁以上就业者24.0%持认证或执照，76.0%不持；教育和健康服务业持证45.8%。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "为2024年横截面比例，无时间序列，不能证明条件已满足或“必不可少”。"
+      },
+      {
+        "evidence_id": "ev-09c2f437ac1970e06b99037f",
+        "relation": "boundary",
+        "quote": "Total, 16 years and over | 161,346 | 100.0 | 24.0 | 2.4 | 21.6 | 76.0",
+        "publication_date": null,
+        "observation_end": "2025-01-29",
+        "limitation": "官方统计仅证明持证比例，不证明标准化认证对社会“必不可少”；76%不持证构成边界。"
+      },
+      {
+        "evidence_id": "ev-8a1cc6af9a670dfeafa25a2d",
+        "relation": "background",
+        "quote": "Healthcare practitioners and technical occupations | 9,808 | 100.0 | 76.1 | 3.5 | 72.6 | 23.9",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "按职业分列显示专业行当高度持证，但整体仅24.0%，且为2022年数据，不能证明社会整体必要环节。"
+      },
+      {
+        "evidence_id": "prior-e06cfc05b14127b81a29",
+        "relation": "boundary",
+        "quote": "UC不再将SAT/ACT用于综合招生评阅，但仍要求15门指定高中课程、居民GPA至少3.0/非居民3.4，并按统一规则确定合格申请者。",
+        "publication_date": "2022-07-21",
+        "observation_end": "2022-07-21",
+        "limitation": "取消标准化考试但保留统一课程/GPA标准，说明标准化需求可换形式而非消失，也削弱“考试为必要环节”。"
+      },
+      {
+        "evidence_id": "prior-72dada332016d921bd0f",
+        "relation": "background",
+        "quote": "哈佛在疫情暂停、随后可选后宣布恢复标准化成绩要求，SAT/ACT或不可及情况下的替代标准化考试；成绩与其他材料一起审阅。",
+        "publication_date": "2024-04-11",
+        "observation_end": "2024-04-11",
+        "limitation": "单一精英院校恢复要求，不能代表整体高教入口趋势。"
+      },
+      {
+        "evidence_id": "ev-b3c10eda09622da7fdc86b45",
+        "relation": "boundary",
+        "quote": "More than 80% of U.S. four-year colleges and universities will not require applicants for fall 2025 admissions to submit ACT/SAT scores",
+        "publication_date": "2024-02-21",
+        "observation_end": "2024-02-21",
+        "limitation": "为倡导组织统计，且仅指标准化考试要求，不涵盖课程/GPA等其他统一标准；不能据此认定关键入口普遍取消统一资格标准。"
+      },
+      {
+        "evidence_id": "ev-d859cdbed60fa8b3ad03b40e",
+        "relation": "boundary",
+        "quote": "Nearly 90 percent of the nation’s 2,275 bachelor’s degree granting institutions remain either test optional",
+        "publication_date": "2024-11-25",
+        "observation_end": "2024-11-25",
+        "limitation": "评论文章引用FairTest数据，说明考试可选仍为主流，但未否定其他形式的标准化资格判断。"
+      }
+    ],
+    "remaining_gap": "缺少能证明美国“人的资源发展达到某种程度”这一条件已满足的直接指标，以及能直接检验“标准化认证成为社会必不可少环节”的入口覆盖证据（而非仅持证比例或考试要求）；还需跨年份同口径数据才能支持任何趋势判断。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000092202-000092237",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象：美国（人力资源发展程度较高的社会）关键就业入口与高等教育入口是否依赖标准化资格判断。就业口径：BLS 2024年16岁以上就业者持认证或执照比例24.0%（2022年同为24.0%），教育健康服务业45.8%、法律职业64.2%、医疗技术职业76.1%。高教口径：2024-2025学年四年制本科招生中逾80%（至少1825/2275所）不要求ACT/SAT，约90%维持test-optional或test-blind；同时UC保留课程/GPA统一合格规则、哈佛恢复标准化成绩要求。观察时段：2022-2025年。",
+    "reason": "就业入口存在相当规模的法定执照/认证，且部分专业行当高度依赖标准化资格，符合“标准化认证是重要环节”；但高教入口多数不要求统一标准化考试，标准化并非所有关键入口的普遍必要环节，故仅部分符合。",
+    "limitation": "“必不可少”为强命题，持证比例不等于人人持证，考试可选也不等于标准化需求消失；证据仅覆盖美国且为横截面，无法证明随人力资源发展而增强的因果趋势。",
+    "evidence_ids": [
+      "prior-215dae4d5080f580df1b",
+      "ev-09c2f437ac1970e06b99037f",
+      "ev-8a1cc6af9a670dfeafa25a2d",
+      "prior-e06cfc05b14127b81a29",
+      "prior-72dada332016d921bd0f",
+      "ev-b3c10eda09622da7fdc86b45",
+      "ev-d859cdbed60fa8b3ad03b40e"
+    ],
+    "method": "从职业流动与证书需求推演标准化需求",
+    "method_basis": "inferred",
+    "observation_end": "2025-01-29",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-215dae4d5080f580df1b",
+        "relation": "support",
+        "quote": "BLS表52：2024年16岁以上就业者24.0%持认证或执照，76.0%不持；教育和健康服务业持证45.8%。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "为2024年横截面比例，无时间序列，不能证明趋势或“必不可少”。"
+      },
+      {
+        "evidence_id": "ev-09c2f437ac1970e06b99037f",
+        "relation": "support",
+        "quote": "Total, 16 years and over | 161,346 | 100.0 | 24.0 | 2.4 | 21.6 | 76.0",
+        "publication_date": null,
+        "observation_end": "2025-01-29",
+        "limitation": "官方统计仅证明持证比例，不证明标准化认证对社会“必不可少”；76%不持证构成边界。"
+      },
+      {
+        "evidence_id": "ev-8a1cc6af9a670dfeafa25a2d",
+        "relation": "support",
+        "quote": "Healthcare practitioners and technical occupations | 9,808 | 100.0 | 76.1 | 3.5 | 72.6 | 23.9",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "按职业分列显示专业行当高度持证，但整体仅24.0%，且为2022年数据。"
+      },
+      {
+        "evidence_id": "prior-e06cfc05b14127b81a29",
+        "relation": "boundary",
+        "quote": "UC不再将SAT/ACT用于综合招生评阅，但仍要求15门指定高中课程、居民GPA至少3.0/非居民3.4，并按统一规则确定合格申请者。",
+        "publication_date": "2022-07-21",
+        "observation_end": "2022-07-21",
+        "limitation": "取消标准化考试但保留统一课程/GPA标准，说明标准化需求可换形式而非消失，也削弱“考试为必要环节”。"
+      },
+      {
+        "evidence_id": "prior-72dada332016d921bd0f",
+        "relation": "support",
+        "quote": "哈佛在疫情暂停、随后可选后宣布恢复标准化成绩要求，SAT/ACT或不可及情况下的替代标准化考试；成绩与其他材料一起审阅。",
+        "publication_date": "2024-04-11",
+        "observation_end": "2024-04-11",
+        "limitation": "单一精英院校恢复要求，不能代表整体高教入口趋势。"
+      },
+      {
+        "evidence_id": "ev-b3c10eda09622da7fdc86b45",
+        "relation": "counter",
+        "quote": "More than 80% of U.S. four-year colleges and universities will not require applicants for fall 2025 admissions to submit ACT/SAT scores",
+        "publication_date": "2024-02-21",
+        "observation_end": "2024-02-21",
+        "limitation": "为倡导组织统计，且仅指标准化考试要求，不涵盖课程/GPA等其他统一标准。"
+      },
+      {
+        "evidence_id": "ev-d859cdbed60fa8b3ad03b40e",
+        "relation": "counter",
+        "quote": "Nearly 90 percent of the nation’s 2,275 bachelor’s degree granting institutions remain either test optional",
+        "publication_date": "2024-11-25",
+        "observation_end": "2024-11-25",
+        "limitation": "评论文章引用FairTest数据，说明考试可选仍为主流，但未否定其他形式的标准化资格判断。"
+      }
+    ],
+    "remaining_gap": "缺少跨年份的持证比例时间序列及高教入口统一标准（课程/GPA/考试）综合口径，无法验证“随人力资源发展而增强”的趋势；也未覆盖美国以外社会。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-215dae4d5080f580df1b",
+      "url": "https://www.bls.gov/cps/data/aa2024/cpsaat52.pdf",
+      "title": "ev-l2-licenses",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-l2-licenses",
+      "archive_sha256": "3d6c5c5fd3b95c44893611e16a1967b88bb8170893ec40c7d9dc41ede7271bb1",
+      "archive_path": "data/sources/lane2-ev-l2-licenses.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-e06cfc05b14127b81a29",
+      "url": "https://regents.universityofcalifornia.edu/governance/policies/2102.html",
+      "title": "ev-r2-l2-uc-policy",
+      "published_date": "2022-07-21",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-uc-policy",
+      "archive_sha256": "7039e127fd06d58ce537e463620d252ea80e1ea48c0783f08997466d779bdf9b",
+      "archive_path": "data/sources/r2-l2-uc-policy.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-72dada332016d921bd0f",
+      "url": "https://www.fas.harvard.edu/news/2024/04/return-required-testing",
+      "title": "ev-r2-l2-harvard",
+      "published_date": "2024-04-11",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-harvard",
+      "archive_sha256": "59436be243ac97f23f896fef4f5b264aaab98046516e729363bc5aa6356a6319",
+      "archive_path": "data/sources/r2-l2-harvard-web-notes.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-09c2f437ac1970e06b99037f",
+      "url": "https://www.bls.gov/cps/data/aa2024/cpsaat52.htm",
+      "resolved_url": "https://www.bls.gov/cps/data/aa2024/cpsaat52.htm",
+      "title": "Certification and licensing status of the employed by industry and class of worker : U.S. Bureau of Labor Statistics",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:34.945385+00:00",
+      "archive_sha256": "bea3bd465f521b5865fc054833db48ebd2c86a8d3a645896af16934c2e358f53",
+      "archive_path": "jobs/5014f57ed8c9ba2f008e00ea/bea3bd465f521b5865fc054833db48ebd2c86a8d3a645896af16934c2e358f53.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-8a1cc6af9a670dfeafa25a2d",
+      "url": "https://www.bls.gov/cps/aa2022/cpsaat53.htm",
+      "resolved_url": "https://www.bls.gov/cps/aa2022/cpsaat53.htm",
+      "title": "Certification and licensing status of the employed by occupation : U.S. Bureau of Labor Statistics",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:34.945573+00:00",
+      "archive_sha256": "823377af4d75cbdb6cc958e8c0a4fb1c5f978b0f76da611301024adf2149c5d2",
+      "archive_path": "jobs/5014f57ed8c9ba2f008e00ea/823377af4d75cbdb6cc958e8c0a4fb1c5f978b0f76da611301024adf2149c5d2.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-b3c10eda09622da7fdc86b45",
+      "url": "https://fairtest.org/overwhelming-majority-of-u-s-colleges-and-universities-remain-act-sat-optional-or-test-blind-score-free-for-fall-2025/",
+      "resolved_url": "https://fairtest.org/overwhelming-majority-of-u-s-colleges-and-universities-remain-act-sat-optional-or-test-blind-score-free-for-fall-2025/",
+      "title": "OVERWHELMING MAJORITY OF U.S. COLLEGES AND UNIVERSITIES REMAIN ACT/SAT OPTIONAL OR TEST-BLIND/SCORE-FREE FOR FALL 2025 - Fairtest",
+      "published_date": "2024-02-21",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:34.945749+00:00",
+      "archive_sha256": "36d2911e142d7f5d2fa34c041f2027cd3f1b0fb8348e7b4441c0fd8c0c40833e",
+      "archive_path": "jobs/5014f57ed8c9ba2f008e00ea/36d2911e142d7f5d2fa34c041f2027cd3f1b0fb8348e7b4441c0fd8c0c40833e.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d859cdbed60fa8b3ad03b40e",
+      "url": "https://www.future-ed.org/why-many-top-colleges-are-sticking-with-test-optional-admissions/",
+      "resolved_url": "https://www.future-ed.org/why-many-top-colleges-are-sticking-with-test-optional-admissions/",
+      "title": "Why Many Top Colleges are Sticking with Test-Optional Admissions - FutureEd",
+      "published_date": "2024-11-25",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:34.945927+00:00",
+      "archive_sha256": "ddc9374f15bc28634fcfbca6595f27eb88e78abc1594d0ba33ff768860e08944",
+      "archive_path": "jobs/5014f57ed8c9ba2f008e00ea/ddc9374f15bc28634fcfbca6595f27eb88e78abc1594d0ba33ff768860e08944.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "BLS occupational licensing percentage employed certified licensed 2024 cpsaat52",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "universities dropped standardized testing requirements admissions 2024 2025 test-optional growth",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "BLS occupational licensing percentage employed certified licensed 2024 cpsaat52",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "universities dropped standardized testing requirements admissions 2024 2025 test-optional growth",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少能证明美国“人的资源发展达到某种程度”这一条件已满足的直接指标，以及能直接检验“标准化认证成为社会必不可少环节”的入口覆盖证据（而非仅持证比例或考试要求）；还需跨年份同口径数据才能支持任何趋势判断。",
+  "source_statuses": [
+    {
+      "url": "https://www.bls.gov/cps/data/aa2024/cpsaat52.htm",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.bls.gov/cps/aa2022/cpsaat53.htm",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://fairtest.org/overwhelming-majority-of-u-s-colleges-and-universities-remain-act-sat-optional-or-test-blind-score-free-for-fall-2025/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.future-ed.org/why-many-top-colleges-are-sticking-with-test-optional-admissions/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "f713077c0854cba655002987c0a0eba9f677efea5dfc6283dae148dacaa09c50"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "4f83a6f2e252e1c827da29143bd833fc",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "c891fa950dad7085b26b6cee829fac7a",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "4e03031eddd4751918017fbf61f5bf41b265b0fa1379fee7804c396af216c645"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "0eae8051e65582fbc39c2e5685e22f40",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "41b2818f6c600d9c1e236fd5f66c94f53fe6ce4dae639907fdaa2f2bf56aa2d0"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "4f83a6f2e252e1c827da29143bd833fc",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "c891fa950dad7085b26b6cee829fac7a",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "4223238451daeecabb7847c96a2a65e0023e72bbcf8986466df734f87ee86ce7"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "79040a8bdadd00d74ba5aa05c79355e58f5fc8fc0e4242e9806742d8f58bf27d"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "dfcb9fa61c1296d05ad3c1e072dcbe71d747d26a28aae2f369f67fad5c1662c1"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "424f389609417b8394bdbd682f6f9a674323548c80129fa5585d6c9cb3c1a1f1"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "39352fae23493af92e6401271e5c20d3e373d6d48faeb45c5e1230c75134a3e6"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000092202-000092237",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "fail",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原预测是条件句：只有“人的资源发展达到某种程度”时，人的标准化才成为社会必不可少环节。建议把条件状态写成satisfied，却没有给出美国“人力资源发展达到某种程度”这一前提已满足的直接证据；BLS持证比例和高校招生政策只描述结果，不能证明触发条件已经发生。",
+          "source_quote": "在人的资源发展达到某种程度时。\n人的标准化便会成为社会必不可少的环节。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议用BLS持证比例支撑“标准化认证是重要环节”，但24.0%持证、76.0%不持证只能说明部分就业者持有认证或执照，不能证明标准化认证在声明范围内是“社会必不可少”的环节；而且2022与2024同为24.0%也不构成增强趋势。",
+          "source_quote": "Total, 16 years and over | 161,346 | 100.0 | 24.0 | 2.4 | 21.6 | 76.0",
+          "evidence_id": "ev-09c2f437ac1970e06b99037f",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "counterevidence",
+          "reason": "建议把“逾80%四年制本科不要求ACT/SAT”当作反证，但同一材料及UC材料显示高校仍保留课程、GPA等统一资格规则，标准化考试可选不等于关键入口普遍取消统一资格标准或无标准裁量。该反证未满足scope所要求的反证条件，却被用于削弱“必不可少”。",
+          "source_quote": "More than 80% of U.S. four-year colleges and universities will not require applicants for fall 2025 admissions to submit ACT/SAT scores",
+          "evidence_id": "ev-b3c10eda09622da7fdc86b45",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议一方面承认考试可选不等于标准化需求消失、UC保留统一课程/GPA标准，另一方面又以高教入口多数不要求标准化考试为由判“部分符合”，并把trend_aligned设为true。判部分符合必须指出后果“社会必不可少环节”哪些具体部分实现、哪些未实现；现有材料只显示部分职业持证和部分高校保留统一标准，既不能证明“必不可少”，也没有跨年份持续方向证据，trend_aligned=true不成立。",
+          "source_quote": "就业入口存在相当规模的法定执照/认证，且部分专业行当高度依赖标准化资格，符合“标准化认证是重要环节”；但高教入口多数不要求统一标准化考试，标准化并非所有关键入口的普遍必要环节，故仅部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充能证明美国“人的资源发展达到某种程度”这一条件已满足的直接指标，以及能直接检验“标准化认证成为社会必不可少环节”的入口覆盖证据（而非仅持证比例或考试要求）；若无法取得，应保留条件未定而非判部分符合。还需跨年份同口径数据才能支持任何趋势判断。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000092202-000092237",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000092202-000092237",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象：美国（人力资源发展程度较高的社会）关键就业入口与高等教育入口是否依赖标准化资格判断。就业口径：BLS 2024年16岁以上就业者持认证或执照比例24.0%（2022年同为24.0%），教育健康服务业45.8%、法律职业64.2%、医疗技术职业76.1%。高教口径：2024-2025学年四年制本科招生中逾80%（至少1825/2275所）不要求ACT/SAT，约90%维持test-optional或test-blind；同时UC保留课程/GPA统一合格规则、哈佛恢复标准化成绩要求。观察时段：2022-2025年。",
+      "reason": "就业入口存在相当规模的法定执照/认证，且部分专业行当高度依赖标准化资格，符合“标准化认证是重要环节”；但高教入口多数不要求统一标准化考试，标准化并非所有关键入口的普遍必要环节，故仅部分符合。",
+      "limitation": "“必不可少”为强命题，持证比例不等于人人持证，考试可选也不等于标准化需求消失；证据仅覆盖美国且为横截面，无法证明随人力资源发展而增强的因果趋势。",
+      "evidence_ids": [
+        "prior-215dae4d5080f580df1b",
+        "ev-09c2f437ac1970e06b99037f",
+        "ev-8a1cc6af9a670dfeafa25a2d",
+        "prior-e06cfc05b14127b81a29",
+        "prior-72dada332016d921bd0f",
+        "ev-b3c10eda09622da7fdc86b45",
+        "ev-d859cdbed60fa8b3ad03b40e"
+      ],
+      "method": "从职业流动与证书需求推演标准化需求",
+      "method_basis": "inferred",
+      "observation_end": "2025-01-29",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-215dae4d5080f580df1b",
+          "relation": "support",
+          "quote": "BLS表52：2024年16岁以上就业者24.0%持认证或执照，76.0%不持；教育和健康服务业持证45.8%。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "为2024年横截面比例，无时间序列，不能证明趋势或“必不可少”。"
+        },
+        {
+          "evidence_id": "ev-09c2f437ac1970e06b99037f",
+          "relation": "support",
+          "quote": "Total, 16 years and over | 161,346 | 100.0 | 24.0 | 2.4 | 21.6 | 76.0",
+          "publication_date": null,
+          "observation_end": "2025-01-29",
+          "limitation": "官方统计仅证明持证比例，不证明标准化认证对社会“必不可少”；76%不持证构成边界。"
+        },
+        {
+          "evidence_id": "ev-8a1cc6af9a670dfeafa25a2d",
+          "relation": "support",
+          "quote": "Healthcare practitioners and technical occupations | 9,808 | 100.0 | 76.1 | 3.5 | 72.6 | 23.9",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "按职业分列显示专业行当高度持证，但整体仅24.0%，且为2022年数据。"
+        },
+        {
+          "evidence_id": "prior-e06cfc05b14127b81a29",
+          "relation": "boundary",
+          "quote": "UC不再将SAT/ACT用于综合招生评阅，但仍要求15门指定高中课程、居民GPA至少3.0/非居民3.4，并按统一规则确定合格申请者。",
+          "publication_date": "2022-07-21",
+          "observation_end": "2022-07-21",
+          "limitation": "取消标准化考试但保留统一课程/GPA标准，说明标准化需求可换形式而非消失，也削弱“考试为必要环节”。"
+        },
+        {
+          "evidence_id": "prior-72dada332016d921bd0f",
+          "relation": "support",
+          "quote": "哈佛在疫情暂停、随后可选后宣布恢复标准化成绩要求，SAT/ACT或不可及情况下的替代标准化考试；成绩与其他材料一起审阅。",
+          "publication_date": "2024-04-11",
+          "observation_end": "2024-04-11",
+          "limitation": "单一精英院校恢复要求，不能代表整体高教入口趋势。"
+        },
+        {
+          "evidence_id": "ev-b3c10eda09622da7fdc86b45",
+          "relation": "counter",
+          "quote": "More than 80% of U.S. four-year colleges and universities will not require applicants for fall 2025 admissions to submit ACT/SAT scores",
+          "publication_date": "2024-02-21",
+          "observation_end": "2024-02-21",
+          "limitation": "为倡导组织统计，且仅指标准化考试要求，不涵盖课程/GPA等其他统一标准。"
+        },
+        {
+          "evidence_id": "ev-d859cdbed60fa8b3ad03b40e",
+          "relation": "counter",
+          "quote": "Nearly 90 percent of the nation’s 2,275 bachelor’s degree granting institutions remain either test optional",
+          "publication_date": "2024-11-25",
+          "observation_end": "2024-11-25",
+          "limitation": "评论文章引用FairTest数据，说明考试可选仍为主流，但未否定其他形式的标准化资格判断。"
+        }
+      ],
+      "remaining_gap": "缺少跨年份的持证比例时间序列及高教入口统一标准（课程/GPA/考试）综合口径，无法验证“随人力资源发展而增强”的趋势；也未覆盖美国以外社会。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000092202-000092237",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "对象：王沪宁关于“人力资源发展到一定程度时，个人技能与知识的标准化认证成为社会必不可少环节”的条件性预测。可观察口径：在人力资源发展程度较高的美国，关键就业入口（法定职业执照/认证）与高等教育入口（统一资格标准，如课程/GPA/标准化考试）是否实际依赖可比较的资格判断。观察时段：2022-2025年。",
+      "reason": "原命题为条件句，触发条件“人的资源发展达到某种程度”未在材料中被直接操作化或证明已满足；BLS持证比例与高校招生政策只描述结果，不能证明条件已发生。且24.0%持证、76.0%不持证只能说明部分就业者持证，不能证明标准化认证是“社会必不可少”的环节；高校保留课程/GPA统一规则也说明考试可选不等于标准化需求消失，现有材料不足以判定后果分项实现或未实现。",
+      "limitation": "关键修订：将条件状态由satisfied改为unknown，判定由部分符合改为暂无法判断，trend_aligned改为false；不再把“逾80%不要求ACT/SAT”当作满足scope反证条件的证据，因同一材料显示高校仍保留课程/GPA等统一资格规则。证据仅覆盖美国且多为横截面，无法验证随人力资源发展而增强的趋势。",
+      "evidence_ids": [
+        "prior-215dae4d5080f580df1b",
+        "ev-09c2f437ac1970e06b99037f",
+        "ev-8a1cc6af9a670dfeafa25a2d",
+        "prior-e06cfc05b14127b81a29",
+        "prior-72dada332016d921bd0f",
+        "ev-b3c10eda09622da7fdc86b45",
+        "ev-d859cdbed60fa8b3ad03b40e"
+      ],
+      "method": "从职业流动与证书需求推演标准化需求",
+      "method_basis": "inferred",
+      "observation_end": "2025-01-29",
+      "future_time_text": "",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-215dae4d5080f580df1b",
+          "relation": "background",
+          "quote": "BLS表52：2024年16岁以上就业者24.0%持认证或执照，76.0%不持；教育和健康服务业持证45.8%。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "为2024年横截面比例，无时间序列，不能证明条件已满足或“必不可少”。"
+        },
+        {
+          "evidence_id": "ev-09c2f437ac1970e06b99037f",
+          "relation": "boundary",
+          "quote": "Total, 16 years and over | 161,346 | 100.0 | 24.0 | 2.4 | 21.6 | 76.0",
+          "publication_date": null,
+          "observation_end": "2025-01-29",
+          "limitation": "官方统计仅证明持证比例，不证明标准化认证对社会“必不可少”；76%不持证构成边界。"
+        },
+        {
+          "evidence_id": "ev-8a1cc6af9a670dfeafa25a2d",
+          "relation": "background",
+          "quote": "Healthcare practitioners and technical occupations | 9,808 | 100.0 | 76.1 | 3.5 | 72.6 | 23.9",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "按职业分列显示专业行当高度持证，但整体仅24.0%，且为2022年数据，不能证明社会整体必要环节。"
+        },
+        {
+          "evidence_id": "prior-e06cfc05b14127b81a29",
+          "relation": "boundary",
+          "quote": "UC不再将SAT/ACT用于综合招生评阅，但仍要求15门指定高中课程、居民GPA至少3.0/非居民3.4，并按统一规则确定合格申请者。",
+          "publication_date": "2022-07-21",
+          "observation_end": "2022-07-21",
+          "limitation": "取消标准化考试但保留统一课程/GPA标准，说明标准化需求可换形式而非消失，也削弱“考试为必要环节”。"
+        },
+        {
+          "evidence_id": "prior-72dada332016d921bd0f",
+          "relation": "background",
+          "quote": "哈佛在疫情暂停、随后可选后宣布恢复标准化成绩要求，SAT/ACT或不可及情况下的替代标准化考试；成绩与其他材料一起审阅。",
+          "publication_date": "2024-04-11",
+          "observation_end": "2024-04-11",
+          "limitation": "单一精英院校恢复要求，不能代表整体高教入口趋势。"
+        },
+        {
+          "evidence_id": "ev-b3c10eda09622da7fdc86b45",
+          "relation": "boundary",
+          "quote": "More than 80% of U.S. four-year colleges and universities will not require applicants for fall 2025 admissions to submit ACT/SAT scores",
+          "publication_date": "2024-02-21",
+          "observation_end": "2024-02-21",
+          "limitation": "为倡导组织统计，且仅指标准化考试要求，不涵盖课程/GPA等其他统一标准；不能据此认定关键入口普遍取消统一资格标准。"
+        },
+        {
+          "evidence_id": "ev-d859cdbed60fa8b3ad03b40e",
+          "relation": "boundary",
+          "quote": "Nearly 90 percent of the nation’s 2,275 bachelor’s degree granting institutions remain either test optional",
+          "publication_date": "2024-11-25",
+          "observation_end": "2024-11-25",
+          "limitation": "评论文章引用FairTest数据，说明考试可选仍为主流，但未否定其他形式的标准化资格判断。"
+        }
+      ],
+      "remaining_gap": "缺少能证明美国“人的资源发展达到某种程度”这一条件已满足的直接指标，以及能直接检验“标准化认证成为社会必不可少环节”的入口覆盖证据（而非仅持证比例或考试要求）；还需跨年份同口径数据才能支持任何趋势判断。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象：王沪宁关于“人力资源发展到一定程度时，个人技能与知识的标准化认证成为社会必不可少环节”的条件性预测。可观察口径：在人力资源发展程度较高的美国，关键就业入口（法定职业执照/认证）与高等教育入口（统一资格标准，如课程/GPA/标准化考试）是否实际依赖可比较的资格判断；反证包括关键入口普遍取消统一资格标准、改由无标准的个别裁量，或标准化认证并非必要环节。注意：持证比例不等于人人持证，某一考试可被替代不等于标准化需求消失。",
+  "elapsed_seconds": 42.066,
+  "completed_at": "2026-11-09T08:00:07.832828+00:00"
+}

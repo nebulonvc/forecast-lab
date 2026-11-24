@@ -1,0 +1,131 @@
+{
+  "claim_id": "txt-cccef4b752-000000912-000001216",
+  "plan": {
+    "round": 1,
+    "scope": "對象是題辭所說、自癸卯年起算約二十年後交入的「大壯」以及由此「始得」的一次治世。三代之盛在句中是因此尚未絕望的希望，不是二十年內必須完成的終局。不把論文所加的「覆滅清廷」當成原文條件。",
+    "queries": [
+      {
+        "role": "support",
+        "query": "黄宗羲 明夷待访录 题辞 胡翰 十二运 大壮 二十年"
+      },
+      {
+        "role": "counter",
+        "query": "三番之乱 1673 1681 康熙 台湾 1683 战争"
+      }
+    ],
+    "adaptive_rounds": 0,
+    "adaptive_reason": "首輪已同時得到曆算落點、康熙二十一至二十二年戰事結束，以及作者晚年「無乃欺人」。沒有新的具體缺口需要改指標或改語言再查。"
+  },
+  "select": {
+    "urls": [
+      "https://www11.ihp.sinica.edu.tw/storage/w2_file/2802GyZHagN.pdf",
+      "https://qsyj.ruc.edu.cn/EN/article/downloadArticleFile.do?attachType=PDF&id=2872",
+      "https://www.eee-learning.com/book/1358",
+      "https://market.cloud.edu.tw/resources/web/1660494"
+    ],
+    "not_used": [
+      {
+        "url": "https://www.diancang.xyz/rulizhexue/17045/327504.html",
+        "reason": "搜尋結果僅見題辭譯注，未另抓全文；不把摘要當證據。"
+      },
+      {
+        "url": "https://www.shidianguji.com/book/SK0122/chapter/1l9rdmvwzf66n",
+        "reason": "未抓取正文。"
+      },
+      {
+        "url": "https://zh.wikipedia.org/wiki/%E5%BA%B7%E7%86%99%E7%BB%9F%E4%B8%80%E5%8F%B0%E6%B9%BE",
+        "reason": "頁面持續修訂，本次抓取晚於截止日，不能把當前版本當成截止日前正文。"
+      },
+      {
+        "url": "https://baike.baidu.com/item/%E6%B8%85%E7%BB%9F%E4%B8%80%E5%8F%B0%E6%B9%BE%E4%B9%8B%E6%88%98/23294202",
+        "reason": "未確認出版日，不用百科正文計分。"
+      }
+    ],
+    "tool": "WebSearch 與 WebFetch 代替 Exa。搜尋摘要不入證據。",
+    "dropped_fetch": "market.cloud.edu.tw 已抓取，正文段落標成 AI摘要，頁上日期只有上傳時間 2010-06-09，不能把該摘要的日期定在截止日前，故不入 evidence.jsonl，也不把它的缺失當反證。eee-learning.com 頁面日期為 2011-10-23，內容是胡翰《衡運論》原文，只說明大壯是陽晶守政之運的首卦，沒有1683年的政局，故不另立計分證據。"
+  },
+  "assess": {
+    "id": "txt-cccef4b752-000000912-000001216",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "endpoint",
+    "trend_aligned": false,
+    "condition_state": "unconditional",
+    "future_time_text": "",
+    "observation_end": "1695-12-31",
+    "evidence_ids": [
+      "ev-wang-calendar",
+      "ev-wang-war",
+      "ev-wang-retract",
+      "ev-wang-standard",
+      "ev-liu-1683",
+      "ev-liu-stable"
+    ],
+    "scope": "對象是題辭所說、自癸卯年起算約二十年後交入的「大壯」以及由此「始得」的一次治世。三代之盛在句中是因此尚未絕望的希望，不是二十年內必須完成的終局。不把論文所加的「覆滅清廷」當成原文條件。",
+    "reason": "王汎森2013年文核對出《太乙統宗寶鑑》把交入大壯寫在康熙二十二年，並記載康熙二十一年三藩平、二十二年鄭氏政權滅亡。劉辰2025年文亦把第二運終點寫在1683年，且寫明此後時局趨於穩定。但同一王文引黃宗羲晚年原文「秦曉山十二運之言，無乃欺人」，並引出他不以漢唐宋小治比三代的標準。曆運交點和戰爭平息成立，題辭所連上的那次治世並未按其自己的三代標準成立。",
+    "limitation": "觀察終點用1695-12-31，只因論文寫黃宗羲生於1610、八十五歲寫《破邪論》，程序欄位要完整日期；來源沒有月日，這不是事件發生日，也不是資料出版日。出版日分別只記2013-09與2025-07。教育部頁面的「AI摘要」未採信，因其日期不能確定。",
+    "method": "用十二運的年數把「向後二十年」落到康熙二十二年，再以作者晚年對該預言的否定和他本人的三代標準檢驗「始得一治」。",
+    "method_basis": "inferred",
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-wang-calendar",
+        "relation": "support",
+        "quote": "居然清楚載明 康熙二十二年將進入「大壯」",
+        "limitation": "只證明曆算落點。",
+        "observation_end": "1683-12-31",
+        "publication_date": "2013-09"
+      },
+      {
+        "evidence_id": "ev-wang-war",
+        "relation": "support",
+        "quote": "康熙二十一年 (1682) 三藩平，康熙二十二年 (1683)",
+        "limitation": "清朝軍事統一，不是三代之治。",
+        "observation_end": "1683-12-31",
+        "publication_date": "2013-09"
+      },
+      {
+        "evidence_id": "ev-liu-1683",
+        "relation": "support",
+        "quote": "即 1683 年结束",
+        "limitation": "年數終點，不是治世證明。",
+        "observation_end": "1683-12-31",
+        "publication_date": "2025-07"
+      },
+      {
+        "evidence_id": "ev-liu-stable",
+        "relation": "boundary",
+        "quote": "因时局、形势的稳定而最终破灭",
+        "limitation": "穩定與預期破滅同時出現，不能單獨判全對或全錯。",
+        "observation_end": "1683-12-31",
+        "publication_date": "2025-07"
+      },
+      {
+        "evidence_id": "ev-wang-retract",
+        "relation": "counter",
+        "quote": "秦曉山十二運之言，無乃欺人",
+        "limitation": "晚年否定，晚於二十年期限約十餘年。",
+        "observation_end": "1695-12-31",
+        "publication_date": "2013-09"
+      },
+      {
+        "evidence_id": "ev-wang-standard",
+        "relation": "counter",
+        "quote": "漢唐宋之小治，衡之三代而上，是為褻天",
+        "limitation": "這是衡量標準，不是1683年的實況。",
+        "observation_end": "1663-12-31",
+        "publication_date": "2013-09"
+      }
+    ],
+    "remaining_gap": ""
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "pass",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "revision": null,
+    "note": "六項均未 fail，不修訂。有利的曆算與三藩、臺灣戰事結束已保留；不利的「無乃欺人」與三代標準已保留。未把「覆滅清廷」換成本句對象。"
+  }
+}

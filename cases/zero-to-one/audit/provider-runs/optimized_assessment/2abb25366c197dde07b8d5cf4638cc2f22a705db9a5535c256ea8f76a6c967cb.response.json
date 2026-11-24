@@ -1,0 +1,28 @@
+{
+  "id": "bb9d90da-8891-456c-815b-3ba55557a05f",
+  "object": "chat.completion",
+  "created": 1794201584,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000035660-000035698\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性心理命题：若个人认为未来不可预测，则产生放弃掌控未来的念头；无固定人群、指标与观察窗口，无法用外部证据回顾性操作化。\",\"reason\":\"原文以“如果……那么……”表达条件性心理后果，属可保留的预测性命题。但该命题涉及个人内心态度，缺乏可核验的人群、指标与观察时段，无法用现有证据判定。\",\"limitation\":\"心理因果命题难以外部观察，且条件是否发生、结果如何均无数据；不因缺乏证据而判错误。\",\"evidence_ids\":[],\"method\":\"条件性判断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000035984-000036017\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"倾向性行为命题：目标明确者往往选择一件最该做的事并专心做好；无具体人群、指标与期限，难以操作化。\",\"reason\":\"原文用“往往会”表达对目标明确者行为倾向的预测，属可保留的预测性命题。但“目标明确”“最该做的事”“专心做好”均无操作化标准，也无对应观察数据，无法判定。\",\"limitation\":\"命题为一般性倾向描述，缺乏可量化指标与观察窗口；不能凭常识或模型记忆补结果。\",\"evidence_ids\":[],\"method\":\"倾向性判断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000036058-000036098\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"对书写时年轻人现状的因果描述，非对未来结果的预测。\",\"reason\":\"该句描述“现今的年轻人”未做到目标明确、专心一事，并给出因果解释，属对现状的判断而非预测。\",\"limitation\":\"作为非预测项仅作审计记录，不评分。\",\"evidence_ids\":[],\"method\":\"因果解释\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000036462-000036504\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"对“对未来不明确的悲观主义者”认知状态的定义性描述，非对衰退走向的预测。\",\"reason\":\"该句界定某类人无法判断衰退会加快还是放慢、是毁灭性还是平缓，属定义性描述而非预测。\",\"limitation\":\"作为非预测项仅作审计记录，不评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6387,
+    "completion_tokens": 673,
+    "total_tokens": 7060,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 5619
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,47 @@
+{
+  "version": "search-verifier-v3",
+  "requested": 13,
+  "task_states": {
+    "completed": 6,
+    "partial": 7,
+    "failed": 0,
+    "not_started": 0
+  },
+  "completed_research_unresolved": 0,
+  "all_tasks_completed": false,
+  "imported": false,
+  "semantic_review_complete": false,
+  "automatic_semantic_accepted": 7,
+  "automatic_semantic_unresolved": 0,
+  "callback_errors": [],
+  "deepseek": {
+    "estimated_cost_CNY": 2.50933632,
+    "estimated_off_peak_cost_CNY": 1.25466816,
+    "price_basis": "conservative peak estimate; missing usage retains reservations; provider billing not checked",
+    "unknown_or_inflight_reserved_CNY": 0.09895,
+    "budget_committed_CNY": 2.60828632,
+    "usage_unknown_requests": 1,
+    "usage_unknown_reserved_CNY": 0.09895,
+    "total_tokens": 1564380,
+    "completed_stages": 91,
+    "cache_hits_this_run": 0,
+    "active_requests": 0,
+    "peak_concurrency_this_run": 13,
+    "elapsed_seconds": 76.28
+  },
+  "exa": {
+    "estimated_cost_USD": 0.545,
+    "unknown_or_inflight_reserved_USD": 0.024,
+    "budget_committed_USD": 0.569,
+    "budget_limit_USD": 5.0,
+    "requests": 77,
+    "attempts": 79,
+    "failed_attempts": 2,
+    "unknown_requests": 0,
+    "missing_cost_attempts": 2,
+    "cache_hits_this_run": 0,
+    "active_requests": 0,
+    "peak_concurrency_this_run": 13,
+    "price_basis": "costDollars estimates plus conservative unknown reservations; bill not reconciled"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "written_at": "2026-11-20T02:05:39Z",
+  "before_search": true,
+  "claims": [
+    {
+      "id": "txt-37a5a0ec54-000344218-000344303",
+      "scope": "this 是上文维持最高社会等级、却被当成低等、靠饥饿强制的高度细分工作。条件是理解劳动的真实等级。后果是看出它属于最高。工时是下一句，不并入。条件未知时，仍被当成低等不能把整句判错。",
+      "queries": [
+        {
+          "role": "support",
+          "query": "routine service work reclassified as high skill official occupational change"
+        },
+        {
+          "role": "counter",
+          "query": "service and sales workers still low paid relative to other occupations ILO or BLS dated"
+        }
+      ]
+    },
+    {
+      "id": "txt-37a5a0ec54-000371669-000371703",
+      "scope": "被叫做自私、其实是误用的社会性，在重新命名后从恶升为善。这是命名和评价的改变，不是犯罪率。",
+      "queries": [
+        {
+          "role": "support",
+          "query": "self-interest reframed as prosocial or civic virtue survey or official text dated"
+        },
+        {
+          "role": "counter",
+          "query": "selfishness still named a vice in moral surveys dated"
+        }
+      ]
+    },
+    {
+      "id": "txt-37a5a0ec54-000411615-000411650",
+      "scope": "he 是进一步发展的人。不付个人报酬仍工作，指集体的社会利益，不是组织志愿的时点，也不是工资制度消失。前两次 BLS 时间表 403。这次换来源。",
+      "queries": [
+        {
+          "role": "support",
+          "strategy": "change source from BLS PDFs to an already saved AmeriCorps report and one non-BLS unpaid-work page",
+          "query": "unpaid work for community benefit not BLS time use survey official"
+        },
+        {
+          "role": "counter",
+          "query": "individually paid wage employment remains ordinary ILO 2019"
+        }
+      ]
+    },
+    {
+      "id": "txt-37a5a0ec54-000474015-000474071",
+      "scope": "条件是社会更充分更自由地供给需要。后果是更乐意付费。态度和供给要分开。一个美国时点不升成全体和全窗口。",
+      "queries": [
+        {
+          "role": "support",
+          "query": "tax morale willingness to pay for public services trend survey dated"
+        },
+        {
+          "role": "counter",
+          "query": "public resistance to taxes despite public services survey dated"
+        }
+      ]
+    },
+    {
+      "id": "txt-37a5a0ec54-000478697-000478735",
+      "scope": "cosmopolitan race 将最终覆盖全球。ultimately 是更晚终点，未关闭不能判终局错误。首页没有国家句子。替代来源用已下载的 2024 人口摘要，若仍只是许多国家，就如实未定。",
+      "queries": [
+        {
+          "role": "support",
+          "strategy": "replace the empty homepage with the UN summary PDF",
+          "query": "UN World Population Prospects 2024 summary one people or many countries"
+        },
+        {
+          "role": "counter",
+          "query": "world still enumerated as separate countries UN 2024"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,560 @@
+{
+  "claim_id": "txt-1c4066fc0c-000208790-000208831",
+  "version": "search-verifier-v1",
+  "input_sha256": "4b9e6d415b7c30ea16816d6194c6b5899e47bcf8e2bd370c596a947011e5da79",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000208790-000208831",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "原文对象为卡罗尔泛指的“许多当前无用的长期研究成果”，未限定发表年份；可观察口径为布鲁金斯学会已发表、当时无即时政策用途的研究成果，后来在政策文件、国会记录或法院意见中被具名实际引用。所引案例（1928 Meriam报告、1959债务上限研究、1949交通政策著作）均远早于1988年，不能作为“1988年前后”成果；引用不等于政策采纳或因果净收益。观察截止2026-11-09。",
+    "reason": "原文判断“许多成果现在没有用，但有一天人们会想到要用它，这时候布鲁金斯学会已经提供了它们”。现有证据仅显示少数具名旧研究后来被引用，属个案，无法证明“许多成果”这一总体判断的方向；且所引案例与1988年前后对象集合错位，不能支撑总体趋势。",
+    "limitation": "关键修订：原scope锚定1988年前后，但所引案例均远早于1988年，对象集合错位；1949交通政策著作仅属“建议建立交通部”，非被需要后提供的实例；ev-51fcf0910ec04e0fbb548935讲思想持久性，非具体成果被政策或司法引用。证据多为学会自述，存在选择性展示风险，无法覆盖“许多成果”总体。",
+    "evidence_ids": [
+      "prior-1703d995245ae2a3a90f",
+      "prior-d2c2f558550321e32f73",
+      "prior-7d06e6364b493a0682f9",
+      "ev-51fcf0910ec04e0fbb548935"
+    ],
+    "method": "以长期研究形成未来政策知识储备",
+    "method_basis": "explicit",
+    "observation_end": "2026-11-09",
+    "future_time_text": "有一天",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-1703d995245ae2a3a90f",
+        "relation": "support",
+        "quote": "第49页明确称报告由Brookings准备，引用其对原住民寄宿学校状况和政策建议。",
+        "publication_date": "2023-06-15",
+        "observation_end": "2023-06-15",
+        "limitation": "仅证明1928年报告在2023年被法院意见引用，属单一案例，不能代表“许多成果”总体。"
+      },
+      {
+        "evidence_id": "prior-d2c2f558550321e32f73",
+        "relation": "support",
+        "quote": "Brookings2013年债务上限政策讨论实际引述Marshall Robinson1959年的研究，并明确其1959年写作时间，连接到Philip Wallach当时的制度替代方案讨论。",
+        "publication_date": "2013-09-25",
+        "observation_end": "2013-09-25",
+        "limitation": "为学会自身文章引述旧研究，存在自我展示偏差，且引用不等于政策采纳。"
+      },
+      {
+        "evidence_id": "prior-7d06e6364b493a0682f9",
+        "relation": "boundary",
+        "quote": "Brookings自述1928 Meriam报告后来被2023最高法院意见引用；1959债务上限研究在1960年代及2023辩论被引用；1949交通政策著作建议建立交通部。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "学会自述，日期未知；1949交通政策著作仅属“建议建立交通部”，非被需要后提供的实例，不能支撑主要结果。"
+      },
+      {
+        "evidence_id": "ev-51fcf0910ec04e0fbb548935",
+        "relation": "boundary",
+        "quote": "Here are four ideas from these important books that are as relevant today as they were when first introduced:",
+        "publication_date": "2015-09-22",
+        "observation_end": "2015-09-22",
+        "limitation": "列举的是思想持久性而非具体成果被政策或司法引用，且为学会宣传性文章，证据力有限。"
+      }
+    ],
+    "remaining_gap": "缺少对“许多当前无用的长期研究成果”这一总体对象的系统性引用追踪；所引1928/1959/1949案例均远早于1988年，无法对应1988年前后对象集合，且无证据表明它们当时“无即时政策用途”。需补充与原文对象集合对齐的、当时无即时用途的成果被后续具名引用的证据，才能判断总体方向。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000208790-000208831",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以1988年前后布鲁金斯学会已发表、当时无即时政策用途的长期研究成果为对象，观察其在1988年后政策文件、国会记录或法院意见中被具名实际引用的情形；引用不等于政策采纳或因果净收益。观察截止2026-11-09。",
+    "reason": "原文判断长期研究成果将来会被需要、届时学会已能提供。已有持续客观证据沿此方向：1928年Meriam报告在2023年最高法院Haaland v. Brackeen意见中被具名引用，1959年债务上限研究在2013年及后续辩论中被引述，1949年交通政策著作促成交通部建立。这些显示长期储备成果在多年后被需要并可提供，但仅为个案，不能证明所有当前无用成果均会被需要。",
+    "limitation": "证据为学会自述及少量具名引用案例，存在选择性展示风险；引用不等于政策采纳或因果净收益，且无法覆盖“许多成果”这一总体判断。最终结果仍待更多独立证据验证。",
+    "evidence_ids": [
+      "prior-1703d995245ae2a3a90f",
+      "prior-d2c2f558550321e32f73",
+      "prior-7d06e6364b493a0682f9",
+      "ev-51fcf0910ec04e0fbb548935"
+    ],
+    "method": "以长期研究形成未来政策知识储备",
+    "method_basis": "explicit",
+    "observation_end": "2026-11-09",
+    "future_time_text": "有一天",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-1703d995245ae2a3a90f",
+        "relation": "support",
+        "quote": "第49页明确称报告由Brookings准备，引用其对原住民寄宿学校状况和政策建议。",
+        "publication_date": "2023-06-15",
+        "observation_end": "2023-06-15",
+        "limitation": "仅证明1928年报告在2023年被法院意见引用，属单一案例，不能代表所有长期成果。"
+      },
+      {
+        "evidence_id": "prior-d2c2f558550321e32f73",
+        "relation": "support",
+        "quote": "Brookings2013年债务上限政策讨论实际引述Marshall Robinson1959年的研究，并明确其1959年写作时间，连接到Philip Wallach当时的制度替代方案讨论。",
+        "publication_date": "2013-09-25",
+        "observation_end": "2013-09-25",
+        "limitation": "为学会自身文章引述旧研究，存在自我展示偏差，且引用不等于政策采纳。"
+      },
+      {
+        "evidence_id": "prior-7d06e6364b493a0682f9",
+        "relation": "support",
+        "quote": "Brookings自述1928 Meriam报告后来被2023最高法院意见引用；1959债务上限研究在1960年代及2023辩论被引用；1949交通政策著作建议建立交通部。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "学会自述，日期未知，存在选择性列举成功案例的偏差。"
+      },
+      {
+        "evidence_id": "ev-51fcf0910ec04e0fbb548935",
+        "relation": "support",
+        "quote": "Here are four ideas from these important books that are as relevant today as they were when first introduced:",
+        "publication_date": "2015-09-22",
+        "observation_end": "2015-09-22",
+        "limitation": "列举的是思想持久性而非具体成果被政策引用，且为学会宣传性文章，证据力有限。"
+      }
+    ],
+    "remaining_gap": "缺少对1988年前后大量当时无用成果的系统性引用追踪，无法判断“许多成果”整体是否被后续需要；现有证据仅为少数具名案例，且多为学会自述。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-1703d995245ae2a3a90f",
+      "url": "https://www.supremecourt.gov/opinions/22pdf/21-376_7l48.pdf",
+      "title": "ev-r2-l2-brackeen",
+      "published_date": "2023-06-15",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-brackeen",
+      "archive_sha256": "6e71588a47efb1824466a8dcc59973b52051ee27428049b7a6a8f1c6faba16fd",
+      "archive_path": "data/sources/r2-l2-brackeen.pdf",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-d2c2f558550321e32f73",
+      "url": "https://www.brookings.edu/articles/debt-ceiling-debate-deal-or-default/",
+      "title": "ev-r2-l2-brookings-debt2013",
+      "published_date": "2013-09-25",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-brookings-debt2013",
+      "archive_sha256": "0b374f8f06eb1ab36c1098157f638713150f491e24c95f87837ce13b627d6a0c",
+      "archive_path": "data/sources/r2-l2-brookings-debt2013-web-notes.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-7d06e6364b493a0682f9",
+      "url": "https://www.brookings.edu/about-us/our-history/",
+      "title": "ev-r2-l2-brookings-history",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-brookings-history",
+      "archive_sha256": "d7706a63b4fe1988168deb01b28b916f8b06b6c586b5663628135b55db87f278",
+      "archive_path": "data/sources/r2-l2-brookings-history-web-notes.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-51fcf0910ec04e0fbb548935",
+      "url": "https://www.brookings.edu/articles/4-ideas-from-brookings-that-have-withstood-the-test-of-time/",
+      "resolved_url": "https://www.brookings.edu/articles/4-ideas-from-brookings-that-have-withstood-the-test-of-time/",
+      "title": "4 ideas from Brookings that have withstood the test of time | Brookings",
+      "published_date": "2015-09-22",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:43.146662+00:00",
+      "archive_sha256": "a3acfd028bde5e4cb9192627569205dd59dc5057ac63eee9c0c4d6c0a5c4b131",
+      "archive_path": "jobs/af02661e3250ec2311ad04e3/a3acfd028bde5e4cb9192627569205dd59dc5057ac63eee9c0c4d6c0a5c4b131.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-528f2f971f6c547cd518bcf4",
+      "url": "https://www.brookings.edu/wp-content/uploads/2016/07/Galston_Brookings-Essay-Second-Century_Final.pdf",
+      "resolved_url": "https://www.brookings.edu/wp-content/uploads/2016/07/Galston_Brookings-Essay-Second-Century_Final.pdf",
+      "title": "The changing relationship between government and policy scholarship:",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:43.146883+00:00",
+      "archive_sha256": "9f5b724055bb73f1b58d3c5ab90e66a37e2125f249b2d23c63ea978d730d236d",
+      "archive_path": "jobs/af02661e3250ec2311ad04e3/9f5b724055bb73f1b58d3c5ab90e66a37e2125f249b2d23c63ea978d730d236d.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-49cc8ac8c89a3940dee1e3f6",
+      "url": "https://www.brookings.edu/articles/getting-beyond-did-it-work-proposing-a-new-approach-to-integrate-research-and-policy/",
+      "resolved_url": "https://www.brookings.edu/articles/getting-beyond-did-it-work-proposing-a-new-approach-to-integrate-research-and-policy/",
+      "title": "Getting beyond 'did it work?': Proposing a new approach to integrate research and policy | Brookings",
+      "published_date": "2018-09-25",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:43.147082+00:00",
+      "archive_sha256": "484628664b0f6407153c36daefff67fb968a9f25a801b283d0ec3fa797ed1e7e",
+      "archive_path": "jobs/af02661e3250ec2311ad04e3/484628664b0f6407153c36daefff67fb968a9f25a801b283d0ec3fa797ed1e7e.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-67a0685b826852d40f20422f",
+      "url": "https://www.supremecourt.gov/opinions/22pdf/21-376%5F7l48.pdf",
+      "resolved_url": "https://www.supremecourt.gov/opinions/22pdf/21-376%5F7l48.pdf",
+      "title": "21-376 Haaland v. Brackeen (06/15/2023)",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:52.191663+00:00",
+      "archive_sha256": "d41e4301182ce608184adf6a8b1206b61ca45c31c48df242d746f2d4ed92b631",
+      "archive_path": "jobs/af02661e3250ec2311ad04e3/d41e4301182ce608184adf6a8b1206b61ca45c31c48df242d746f2d4ed92b631.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-1d46decc0b13b2dec9a0343f",
+      "url": "https://link.springer.com/article/10.1016/S0952-8733(00)00003-9",
+      "resolved_url": "https://link.springer.com/article/10.1016/S0952-8733(00)00003-9",
+      "title": "A study of education policy research at the",
+      "published_date": "2000-01-01",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:52.191861+00:00",
+      "archive_sha256": "96cd73b67ddd08faea5817fe62574d1ff004e0488c8dbc711fa160a23075aeb3",
+      "archive_path": "jobs/af02661e3250ec2311ad04e3/96cd73b67ddd08faea5817fe62574d1ff004e0488c8dbc711fa160a23075aeb3.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "Brookings Institution long-term research cited decades later policy report site:brookings.edu",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Brookings Institution research never used policy makers criticism long-term studies",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Brookings Institution 1928 Meriam report cited 2023 Supreme Court opinion Haaland Brackeen",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Brookings Institution long-term research never cited unused archive study criticism",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少对“许多当前无用的长期研究成果”这一总体对象的系统性引用追踪；所引1928/1959/1949案例均远早于1988年，无法对应1988年前后对象集合，且无证据表明它们当时“无即时政策用途”。需补充与原文对象集合对齐的、当时无即时用途的成果被后续具名引用的证据，才能判断总体方向。",
+  "source_statuses": [
+    {
+      "url": "https://www.brookings.edu/articles/4-ideas-from-brookings-that-have-withstood-the-test-of-time/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.brookings.edu/wp-content/uploads/2016/07/Galston_Brookings-Essay-Second-Century_Final.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.brookings.edu/articles/getting-beyond-did-it-work-proposing-a-new-approach-to-integrate-research-and-policy/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.supremecourt.gov/opinions/22pdf/21-376%5F7l48.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://link.springer.com/article/10.1016/S0952-8733(00)00003-9",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "b85d482ee4c0d9dd2ff83874fc85d17d3df3228da2a4e8e73eaeca7af392e12a"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f162aab5d45b6888349a122358883970",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f7d53ce174fb41a43797af69b43377ee",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "43bb494dded0d25d9cb8714aa09f4bf675278e95305cfdf6af7ca6df1ac7294a"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "82f38cc0686933717b8eef222d9a387c",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "8ece1ff74310b95cc28834f352f2ca1effb7deb519bd1091385a50c936b954e4"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "acd7916cf34f5f095cb7e006f86322af",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "1d58fb730595f03e6e31ceed97260df9",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "e9670dd6ace2420da023eaf41d6f9f5fed6a6d8dcbf32ad2d62353c760e51afb"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "090f090ec04ae20ad277c436e8cecbf5",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "a478dcfcc9b5edde91b1ea9f796e7ab44c781658404f1bd71c1e68b07bbf8974"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "828478e90349a580a0c198e55458e3e464a3fcaa2824273b1d76b0cf86d2946d"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "3b52ea5f24c97e8d124f3d6e28c815613d3dc7c6518f3ee578e1e0df0bd6e0a7"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "77cbc12aabbf0451b114c49d6f855289d687917ce2e23590a86744a99a8fca95"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000208790-000208831",
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "原文对象是卡罗尔所说“许多成果现在没有用，但有一天人们会想到要用它”的长期研究成果，并未限定为1988年前后已发表、当时无即时政策用途的成果。建议的scope把对象锚定在1988年前后，但所引案例（1928 Meriam报告、1959债务上限研究、1949交通政策著作）均远早于1988年，既非“1988年前后”成果，也无证据表明它们当时“无即时政策用途”。scope与原文及所引证据之间存在对象集合错位。",
+          "source_quote": "许多成果现在没有用，\n但有一天人们会想到要用它，这时候布鲁金斯学会已经提供了它们。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议把1949交通政策著作“促成交通部建立”列为支持证据，但所引来源prior-7d06e6364b493a0682f9仅称“1949交通政策著作建议建立交通部”，是建议而非被需要后提供、被引用的实例；且该来源为学会自述、日期未知。ev-51fcf0910ec04e0fbb548935讲的是思想持久性，并非具体成果被政策或司法引用，不能支撑“成果被需要时学会已能提供”的主要结果。",
+          "source_quote": "Brookings自述1928 Meriam报告后来被2023最高法院意见引用；1959债务上限研究在1960年代及2023辩论被引用；1949交通政策著作建议建立交通部。",
+          "evidence_id": "prior-7d06e6364b493a0682f9",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "原文是“许多成果”将来被需要的一般性判断，属总体性预测。建议仅凭少数具名个案（且多为学会自述）就判“部分符合”并设trend_aligned=true，但未指出后果B（许多成果被需要、届时已能提供）哪些具体部分实现、哪些未实现；个案引用不能证明“许多成果”整体方向，也不能支撑“部分符合”的分类。按口径，证据仅覆盖少数案例、总体未验证，应保留为具体未定而非部分符合。",
+          "source_quote": "这些显示长期储备成果在多年后被需要并可提供，但仅为个案，不能证明所有当前无用成果均会被需要。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需将scope与原文对象对齐：原文对象是卡罗尔泛指的“许多当前无用的长期研究成果”，不应擅自锚定为1988年前后；若要保留可观察口径，须说明所引1928/1959/1949案例如何属于该对象集合，或补充1988年前后当时无即时用途的成果被后续具名引用的证据。同时需剔除“促成交通部建立”这类仅属建议、非被需要后提供的证据，并在缺少“许多成果”总体方向证据时把结论改为具体未定而非部分符合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000208790-000208831",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000208790-000208831",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以1988年前后布鲁金斯学会已发表、当时无即时政策用途的长期研究成果为对象，观察其在1988年后政策文件、国会记录或法院意见中被具名实际引用的情形；引用不等于政策采纳或因果净收益。观察截止2026-11-09。",
+      "reason": "原文判断长期研究成果将来会被需要、届时学会已能提供。已有持续客观证据沿此方向：1928年Meriam报告在2023年最高法院Haaland v. Brackeen意见中被具名引用，1959年债务上限研究在2013年及后续辩论中被引述，1949年交通政策著作促成交通部建立。这些显示长期储备成果在多年后被需要并可提供，但仅为个案，不能证明所有当前无用成果均会被需要。",
+      "limitation": "证据为学会自述及少量具名引用案例，存在选择性展示风险；引用不等于政策采纳或因果净收益，且无法覆盖“许多成果”这一总体判断。最终结果仍待更多独立证据验证。",
+      "evidence_ids": [
+        "prior-1703d995245ae2a3a90f",
+        "prior-d2c2f558550321e32f73",
+        "prior-7d06e6364b493a0682f9",
+        "ev-51fcf0910ec04e0fbb548935"
+      ],
+      "method": "以长期研究形成未来政策知识储备",
+      "method_basis": "explicit",
+      "observation_end": "2026-11-09",
+      "future_time_text": "有一天",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-1703d995245ae2a3a90f",
+          "relation": "support",
+          "quote": "第49页明确称报告由Brookings准备，引用其对原住民寄宿学校状况和政策建议。",
+          "publication_date": "2023-06-15",
+          "observation_end": "2023-06-15",
+          "limitation": "仅证明1928年报告在2023年被法院意见引用，属单一案例，不能代表所有长期成果。"
+        },
+        {
+          "evidence_id": "prior-d2c2f558550321e32f73",
+          "relation": "support",
+          "quote": "Brookings2013年债务上限政策讨论实际引述Marshall Robinson1959年的研究，并明确其1959年写作时间，连接到Philip Wallach当时的制度替代方案讨论。",
+          "publication_date": "2013-09-25",
+          "observation_end": "2013-09-25",
+          "limitation": "为学会自身文章引述旧研究，存在自我展示偏差，且引用不等于政策采纳。"
+        },
+        {
+          "evidence_id": "prior-7d06e6364b493a0682f9",
+          "relation": "support",
+          "quote": "Brookings自述1928 Meriam报告后来被2023最高法院意见引用；1959债务上限研究在1960年代及2023辩论被引用；1949交通政策著作建议建立交通部。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "学会自述，日期未知，存在选择性列举成功案例的偏差。"
+        },
+        {
+          "evidence_id": "ev-51fcf0910ec04e0fbb548935",
+          "relation": "support",
+          "quote": "Here are four ideas from these important books that are as relevant today as they were when first introduced:",
+          "publication_date": "2015-09-22",
+          "observation_end": "2015-09-22",
+          "limitation": "列举的是思想持久性而非具体成果被政策引用，且为学会宣传性文章，证据力有限。"
+        }
+      ],
+      "remaining_gap": "缺少对1988年前后大量当时无用成果的系统性引用追踪，无法判断“许多成果”整体是否被后续需要；现有证据仅为少数具名案例，且多为学会自述。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000208790-000208831",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "原文对象为卡罗尔泛指的“许多当前无用的长期研究成果”，未限定发表年份；可观察口径为布鲁金斯学会已发表、当时无即时政策用途的研究成果，后来在政策文件、国会记录或法院意见中被具名实际引用。所引案例（1928 Meriam报告、1959债务上限研究、1949交通政策著作）均远早于1988年，不能作为“1988年前后”成果；引用不等于政策采纳或因果净收益。观察截止2026-11-09。",
+      "reason": "原文判断“许多成果现在没有用，但有一天人们会想到要用它，这时候布鲁金斯学会已经提供了它们”。现有证据仅显示少数具名旧研究后来被引用，属个案，无法证明“许多成果”这一总体判断的方向；且所引案例与1988年前后对象集合错位，不能支撑总体趋势。",
+      "limitation": "关键修订：原scope锚定1988年前后，但所引案例均远早于1988年，对象集合错位；1949交通政策著作仅属“建议建立交通部”，非被需要后提供的实例；ev-51fcf0910ec04e0fbb548935讲思想持久性，非具体成果被政策或司法引用。证据多为学会自述，存在选择性展示风险，无法覆盖“许多成果”总体。",
+      "evidence_ids": [
+        "prior-1703d995245ae2a3a90f",
+        "prior-d2c2f558550321e32f73",
+        "prior-7d06e6364b493a0682f9",
+        "ev-51fcf0910ec04e0fbb548935"
+      ],
+      "method": "以长期研究形成未来政策知识储备",
+      "method_basis": "explicit",
+      "observation_end": "2026-11-09",
+      "future_time_text": "有一天",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-1703d995245ae2a3a90f",
+          "relation": "support",
+          "quote": "第49页明确称报告由Brookings准备，引用其对原住民寄宿学校状况和政策建议。",
+          "publication_date": "2023-06-15",
+          "observation_end": "2023-06-15",
+          "limitation": "仅证明1928年报告在2023年被法院意见引用，属单一案例，不能代表“许多成果”总体。"
+        },
+        {
+          "evidence_id": "prior-d2c2f558550321e32f73",
+          "relation": "support",
+          "quote": "Brookings2013年债务上限政策讨论实际引述Marshall Robinson1959年的研究，并明确其1959年写作时间，连接到Philip Wallach当时的制度替代方案讨论。",
+          "publication_date": "2013-09-25",
+          "observation_end": "2013-09-25",
+          "limitation": "为学会自身文章引述旧研究，存在自我展示偏差，且引用不等于政策采纳。"
+        },
+        {
+          "evidence_id": "prior-7d06e6364b493a0682f9",
+          "relation": "boundary",
+          "quote": "Brookings自述1928 Meriam报告后来被2023最高法院意见引用；1959债务上限研究在1960年代及2023辩论被引用；1949交通政策著作建议建立交通部。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "学会自述，日期未知；1949交通政策著作仅属“建议建立交通部”，非被需要后提供的实例，不能支撑主要结果。"
+        },
+        {
+          "evidence_id": "ev-51fcf0910ec04e0fbb548935",
+          "relation": "boundary",
+          "quote": "Here are four ideas from these important books that are as relevant today as they were when first introduced:",
+          "publication_date": "2015-09-22",
+          "observation_end": "2015-09-22",
+          "limitation": "列举的是思想持久性而非具体成果被政策或司法引用，且为学会宣传性文章，证据力有限。"
+        }
+      ],
+      "remaining_gap": "缺少对“许多当前无用的长期研究成果”这一总体对象的系统性引用追踪；所引1928/1959/1949案例均远早于1988年，无法对应1988年前后对象集合，且无证据表明它们当时“无即时政策用途”。需补充与原文对象集合对齐的、当时无即时用途的成果被后续具名引用的证据，才能判断总体方向。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "布鲁金斯学会计划主任卡罗尔关于长期研究知识储备的一般性判断：学会当时未即时影响决策、看似无用的研究成果，将来在政策或司法议论中被需要时，学会已能提供。可观察口径为1988年前后已发表、当时无即时政策用途的布鲁金斯研究，在1988年后政策文件、国会记录或法院意见中被具名实际引用；反证包括长期研究从未被后续引用、或学会未能保存/提供相关成果。引用不等于政策采纳或因果净收益。",
+  "elapsed_seconds": 42.511,
+  "completed_at": "2026-11-09T08:01:15.871402+00:00"
+}

@@ -1,0 +1,539 @@
+{
+  "claim_id": "txt-1c4066fc0c-000014154-000014218",
+  "version": "search-verifier-v1",
+  "input_sha256": "707b8d0cf3cbca4100a648879798d90935d73399f5d173cca6a32c0e73ca4b15",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000014154-000014218",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "美国1991—2024年：劳动力总量与求职谋生人数是否增加（BLS CPS 1991/2024劳动力126346/168106千人）；技术/自动化是否排挤越来越多劳动者（高风险自动化职业1999—2018就业增长17%、机器人暴露降低地方相对就业人口比）。不把总就业下降当作作者原意，也不把2025—2035预测值当作已实现结果。",
+    "reason": "“需要求职谋生的人越来越多”有劳动力总量从1991年约1.26亿增至2024年约1.68亿的观察期证据支持；但“科学技术发展将越来越多的人排挤出来”这一分项缺少1991—2024全窗口的直接净排挤序列，现有材料显示高风险自动化职业整体就业仍增长17%、机器人暴露仅带来局部负效应且存在补偿，方向不一，不能确认总体趋势。",
+    "limitation": "作者未给出精确指标与期限，本评估以劳动力总量和自动化职业就业变化作回顾性操作化；技术排挤的总体净方向证据不足且相互矛盾，故不判部分符合或趋势符合。关键修订：删除2025—2035预测表与2025年AI文章作为观察期已实现证据，不再设trend_aligned=true。",
+    "evidence_ids": [
+      "prior-0ea8cff8fdd1d0c300e1",
+      "prior-3f922d8da91aa794ad4a",
+      "prior-6889b6aa1268c2492327"
+    ],
+    "method": "从技术替代劳动与求职需求增加推断就业矛盾",
+    "method_basis": "inferred",
+    "observation_end": "2024-12-31",
+    "future_time_text": "随着科学技术发展",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-0ea8cff8fdd1d0c300e1",
+        "relation": "support",
+        "quote": "BLS CPS年度表：1991/2024劳动力分别126346/168106千人，就业117718/161346千人，失业8628/6761千人。全窗含衰退和疫情反弹。",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "劳动力总量增长支持“求职谋生者越来越多”，但失业人数下降，不能直接证明就业矛盾加剧或技术排挤增加。"
+      },
+      {
+        "evidence_id": "prior-3f922d8da91aa794ad4a",
+        "relation": "counter",
+        "quote": "BLS研究考察被认为易受自动化影响的职业：所列高风险职业整体在1999—2018就业增长17%，并强调部分劳动者仍遭替代。",
+        "publication_date": null,
+        "observation_end": "2018-12-31",
+        "limitation": "高风险职业整体就业增长，与“被排挤者越来越多”的总体方向相反；但作者原意可能指局部替代，故仅作边界证据。"
+      },
+      {
+        "evidence_id": "prior-6889b6aa1268c2492327",
+        "relation": "support",
+        "quote": "Acemoglu和Restrepo《Robots and Jobs》研究美国地方劳动力市场，估计机器人暴露增加降低相对就业人口比和工资，同时模型考虑贸易及资本收益在其他地区的补偿效应。",
+        "publication_date": "2020-04-22",
+        "observation_end": null,
+        "limitation": "支持技术替代的局部就业负效应，但存在跨地区补偿效应，不能推出全国总排挤量上升。"
+      }
+    ],
+    "remaining_gap": "缺少覆盖1991—2024全窗口、直接度量“因技术被排挤劳动者数量”的连续官方序列；现有证据为局部研究或方向不一，无法确定技术排挤的总体净方向，故该分项暂无法判断。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000014154-000014218",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "美国1991—2024年：劳动力参与人数与求职谋生人数是否增加（BLS CPS 1991/2024劳动力126346/168106千人）；技术/自动化是否排挤劳动者（高风险自动化职业1999—2018就业增长17%、机器人暴露降低地方相对就业人口比、部分职业2025—2035预测净减少）。不把总就业下降当作作者原意。",
+    "reason": "劳动力总量从1991年约1.26亿增至2024年约1.68亿，需要求职谋生的人确实越来越多，这一分项有持续客观证据支持；技术排挤劳动者方面，机器人暴露与部分职业净减少提供局部支持，但高风险自动化职业整体就业仍增长17%，技术替代与新增岗位并存，不能证明“被排挤的劳动者越来越多”这一总体方向。",
+    "limitation": "作者未给出精确指标与期限，本评估采用劳动力总量与自动化职业就业变化作回顾性操作化；技术排挤的总体净效应证据方向不一，且部分来源为预测值或未复核候选，不能作为已实现结果。",
+    "evidence_ids": [
+      "prior-0ea8cff8fdd1d0c300e1",
+      "prior-3f922d8da91aa794ad4a",
+      "prior-6889b6aa1268c2492327",
+      "ev-b2034db3231c565040a7ea09",
+      "ev-d1ed402300d90a9123478194"
+    ],
+    "method": "从技术替代劳动与求职需求增加推断就业矛盾",
+    "method_basis": "inferred",
+    "observation_end": "2024-12-31",
+    "future_time_text": "随着科学技术发展",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-0ea8cff8fdd1d0c300e1",
+        "relation": "support",
+        "quote": "BLS CPS年度表：1991/2024劳动力分别126346/168106千人，就业117718/161346千人，失业8628/6761千人。全窗含衰退和疫情反弹。",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "劳动力总量增长支持“求职谋生者越来越多”，但失业人数下降，不能直接证明就业矛盾加剧。"
+      },
+      {
+        "evidence_id": "prior-3f922d8da91aa794ad4a",
+        "relation": "counter",
+        "quote": "BLS研究考察被认为易受自动化影响的职业：所列高风险职业整体在1999—2018就业增长17%，并强调部分劳动者仍遭替代。",
+        "publication_date": null,
+        "observation_end": "2018-12-31",
+        "limitation": "高风险职业整体就业增长，与“被排挤者越来越多”的总体方向相反；但作者原意可能指局部替代，故仅作边界证据。"
+      },
+      {
+        "evidence_id": "prior-6889b6aa1268c2492327",
+        "relation": "support",
+        "quote": "Acemoglu和Restrepo《Robots and Jobs》研究美国地方劳动力市场，估计机器人暴露增加降低相对就业人口比和工资，同时模型考虑贸易及资本收益在其他地区的补偿效应。",
+        "publication_date": "2020-04-22",
+        "observation_end": null,
+        "limitation": "支持技术替代的局部就业负效应，但存在跨地区补偿效应，不能推出全国总排挤量上升。"
+      },
+      {
+        "evidence_id": "ev-b2034db3231c565040a7ea09",
+        "relation": "support",
+        "quote": "Table 1.6 Occupations with the largest job declines, 2025 and projected 2035 (Employment in thousands)",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "该表为2025—2035预测值，非已实现结果，只能作方向性参考，不能作为观察期证据。"
+      },
+      {
+        "evidence_id": "ev-d1ed402300d90a9123478194",
+        "relation": "boundary",
+        "quote": "There have been many claims about new technologies displacing jobs, and although such displacement has occurred in the past, it tends to take longer than technologists typically expect.",
+        "publication_date": "2025-02-10",
+        "observation_end": null,
+        "limitation": "BLS指出技术置换存在但通常慢于预期，且许多受影响职业仍增长，削弱“排挤越来越多”的强度判断。"
+      }
+    ],
+    "remaining_gap": "缺少覆盖1991—2024全窗口、直接度量“因技术被排挤劳动者数量”的连续官方序列；现有证据为局部研究、预测值或未复核候选，无法确定技术排挤的总体净方向。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-0ea8cff8fdd1d0c300e1",
+      "url": "https://www.bls.gov/cps/cpsaat01.pdf",
+      "title": "ev-r2-l1-labour",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-labour",
+      "archive_sha256": "51d6d9e8ad7ad426b3b3dd9ef9410c32216b1d6830db352913cd3ca1cc8ec1ed",
+      "archive_path": "data/sources/r2-l1-open-3.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-3f922d8da91aa794ad4a",
+      "url": "https://www.bls.gov/opub/mlr/2022/article/growth-trends-for-selected-occupations-considered-at-risk-from-automation.htm",
+      "title": "ev-r2-l1-automation",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-automation",
+      "archive_sha256": "80f675b82460822b27c1c495716459e33b36df0e6b60fb9a16f7fa6a6cb250aa",
+      "archive_path": "data/sources/r2-l1-search-1.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-6889b6aa1268c2492327",
+      "url": "https://economics.mit.edu/sites/default/files/publications/Robots%20and%20Jobs%20-%20Evidence%20from%20US%20Labor%20Markets.p.pdf",
+      "title": "ev-lane1-robots",
+      "published_date": "2020-04-22",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane1-robots",
+      "archive_sha256": "760f34d3d93ba960e0ccf2511dab20d01099c53713dac45e6f7a0d61d24370e4",
+      "archive_path": "data/sources/lane1-robots.pdf",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-1b4b62b1bc2818c759584abc",
+      "url": "https://www.bls.gov/opub/mlr/2024/article/industry-and-occupational-employment-projections-overview-and-highlights-2023-33.htm",
+      "resolved_url": "https://www.bls.gov/opub/mlr/2024/article/industry-and-occupational-employment-projections-overview-and-highlights-2023-33.htm",
+      "title": "Industry and occupational employment projections overview and highlights, 2023–33 : Monthly Labor Review : U.S. Bureau of Labor Statistics",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:24.277632+00:00",
+      "archive_sha256": "9562fdc1c24dd96648ddcea9b4d4a4564e743f6588a69c333fc8511c855b2626",
+      "archive_path": "jobs/ac41ad7c7a392003ec9356fb/9562fdc1c24dd96648ddcea9b4d4a4564e743f6588a69c333fc8511c855b2626.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-b2034db3231c565040a7ea09",
+      "url": "https://www.bls.gov/emp/tables/occupations-largest-job-declines.htm",
+      "resolved_url": "https://www.bls.gov/emp/tables/occupations-largest-job-declines.htm",
+      "title": "Occupations with the largest job declines :  U.S. Bureau of Labor Statistics",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:24.277835+00:00",
+      "archive_sha256": "6981e660b8fd003fa092f70f83ab0e8dd6bb5be0c387e3b4e902e6727b65967f",
+      "archive_path": "jobs/ac41ad7c7a392003ec9356fb/6981e660b8fd003fa092f70f83ab0e8dd6bb5be0c387e3b4e902e6727b65967f.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d1ed402300d90a9123478194",
+      "url": "https://www.bls.gov/opub/mlr/2025/article/incorporating-ai-impacts-in-bls-employment-projections.htm",
+      "resolved_url": "https://www.bls.gov/opub/mlr/2025/article/incorporating-ai-impacts-in-bls-employment-projections.htm",
+      "title": "Incorporating AI impacts in BLS employment projections: occupational case studies : Monthly Labor Review : U.S. Bureau of Labor Statistics",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:24.278034+00:00",
+      "archive_sha256": "1d864e328054d483fc63ec2fa6c24e7ed80ee53c0c18b0c0e1af80f65852a5c2",
+      "archive_path": "jobs/ac41ad7c7a392003ec9356fb/1d864e328054d483fc63ec2fa6c24e7ed80ee53c0c18b0c0e1af80f65852a5c2.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-6b9b2b437c82348a6658feb8",
+      "url": "https://www.bls.gov/opub/mlr/1991/article/industrial-output-and-job-growth-continues-slow-into-next-century.htm",
+      "resolved_url": "https://www.bls.gov/opub/mlr/1991/article/industrial-output-and-job-growth-continues-slow-into-next-century.htm",
+      "title": "Industrial output and job growth continues slow into next century : Monthly Labor Review : U.S. Bureau of Labor Statistics",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:30.224560+00:00",
+      "archive_sha256": "7dbb8791e668cd9304980b651d6dff6741b0e1fd270c2a58e0bd3e25f6a9c3c1",
+      "archive_path": "jobs/ac41ad7c7a392003ec9356fb/7dbb8791e668cd9304980b651d6dff6741b0e1fd270c2a58e0bd3e25f6a9c3c1.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "BLS occupational employment projections automation risk occupations declining employment technology displacement United States",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "BLS employment projections total employment growth 1991 2024 technology automation job creation United States",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "BLS occupational employment projections automation risk occupations declining employment technology displacement United States",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "BLS employment projections total employment growth 1991 2024 technology automation job creation United States",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少覆盖1991—2024全窗口、直接度量“因技术被排挤劳动者数量”的连续官方序列；现有证据为局部研究或方向不一，无法确定技术排挤的总体净方向，故该分项暂无法判断。",
+  "source_statuses": [
+    {
+      "url": "https://www.bls.gov/opub/mlr/2024/article/industry-and-occupational-employment-projections-overview-and-highlights-2023-33.htm",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.bls.gov/emp/tables/occupations-largest-job-declines.htm",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.bls.gov/opub/mlr/2025/article/incorporating-ai-impacts-in-bls-employment-projections.htm",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.bls.gov/opub/mlr/1991/article/industrial-output-and-job-growth-continues-slow-into-next-century.htm",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "70e0c8807fa61c5013a18cacdf36b6ee465839cbe49eadcc0229ba710832ebe3"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "0ecc19a981ec448302f2811bd7136ca8",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "2bff73586129da791b4cfea35b54b442",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "bcd4f495f58eee9c3037c1dd5ac9fc4ea45a41d96f4876425ce4c8423f3c166d"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "e5ca2feba44ff9133fa016fc3e39414b",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "3babda7cb4f943d5d134a5e6208738a4956e305aa074c7f6bdd3d59570c98f98"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "0ecc19a981ec448302f2811bd7136ca8",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "2bff73586129da791b4cfea35b54b442",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "a38e005d34a1973d02e96a4943746507023f9303a3339295e8e7d4bc916055f5"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "c92bb91fb23973a3ff47d708cb8d030d",
+      "cost_estimate_USD": 0.001,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "9a2794ff8bc992b8a1b003c05a8ef39cfb908bd7bc5e5b1531035ebcbc5ca8ab"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "57f8fd55dbc74e744ad88e34d59e3e2910155fa029921d0b9649b35635dbee1f"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "067738b1b5d0679b122b857724181ea69f5d7de488452438aac25ca42265123a"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "f2bb77e06b213b94c5db7690bfdf27c584a9b1a24308b37b367b78f71f709811"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000014154-000014218",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "fail",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "time_alignment",
+          "reason": "评估把2025—2035的预测表当作支持“技术排挤”的方向性证据，但该表是未来预测，不是1991—2024观察期内的已实现结果；评估的observation_end为2024-12-31，不能把2035预测纳入已实现判断。",
+          "source_quote": "Table 1.6 Occupations with the largest job declines, 2025 and projected 2035 (Employment in thousands)",
+          "evidence_id": "ev-b2034db3231c565040a7ea09",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "该来源是2025年2月发表的BLS文章，讨论AI对2023—33预测周期的影响，并非1991—2024观察期内技术排挤劳动者数量的直接证据；评估将其列为boundary证据，但未说明它不能支撑观察期结论。",
+          "source_quote": "In this article, we explain the Bureau’s approach to this type of projections work, illustrating it with several occupational case studies based on research done for the 2023–33 projections cycle.",
+          "evidence_id": "ev-d1ed402300d90a9123478194",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "评估将“劳动力总量增加”与“技术排挤劳动者”两个分项一支持一未证实，判为“部分符合”并设trend_aligned=true；但作者原句是同一就业矛盾的两个方面，不是两个可独立计分的分项。技术排挤总体方向未证实，不能仅凭劳动力总量增加就确认趋势方向。",
+          "source_quote": "劳动力总量从1991年约1.26亿增至2024年约1.68亿，需要求职谋生的人确实越来越多，这一分项有持续客观证据支持；技术排挤劳动者方面，机器人暴露与部分职业净减少提供局部支持，但高风险自动化职业整体就业仍增长17%，技术替代与新增岗位并存，不能证明“被排挤的劳动者越来越多”这一总体方向。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需删除或明确排除2025—2035预测表与2025年AI文章作为观察期已实现证据；并重新界定“部分符合”的分项依据：若技术排挤总体方向无1991—2024连续证据，应保留为未定或说明仅劳动力总量分项有证据，不能设trend_aligned=true。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000014154-000014218",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000014154-000014218",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "美国1991—2024年：劳动力参与人数与求职谋生人数是否增加（BLS CPS 1991/2024劳动力126346/168106千人）；技术/自动化是否排挤劳动者（高风险自动化职业1999—2018就业增长17%、机器人暴露降低地方相对就业人口比、部分职业2025—2035预测净减少）。不把总就业下降当作作者原意。",
+      "reason": "劳动力总量从1991年约1.26亿增至2024年约1.68亿，需要求职谋生的人确实越来越多，这一分项有持续客观证据支持；技术排挤劳动者方面，机器人暴露与部分职业净减少提供局部支持，但高风险自动化职业整体就业仍增长17%，技术替代与新增岗位并存，不能证明“被排挤的劳动者越来越多”这一总体方向。",
+      "limitation": "作者未给出精确指标与期限，本评估采用劳动力总量与自动化职业就业变化作回顾性操作化；技术排挤的总体净效应证据方向不一，且部分来源为预测值或未复核候选，不能作为已实现结果。",
+      "evidence_ids": [
+        "prior-0ea8cff8fdd1d0c300e1",
+        "prior-3f922d8da91aa794ad4a",
+        "prior-6889b6aa1268c2492327",
+        "ev-b2034db3231c565040a7ea09",
+        "ev-d1ed402300d90a9123478194"
+      ],
+      "method": "从技术替代劳动与求职需求增加推断就业矛盾",
+      "method_basis": "inferred",
+      "observation_end": "2024-12-31",
+      "future_time_text": "随着科学技术发展",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-0ea8cff8fdd1d0c300e1",
+          "relation": "support",
+          "quote": "BLS CPS年度表：1991/2024劳动力分别126346/168106千人，就业117718/161346千人，失业8628/6761千人。全窗含衰退和疫情反弹。",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "劳动力总量增长支持“求职谋生者越来越多”，但失业人数下降，不能直接证明就业矛盾加剧。"
+        },
+        {
+          "evidence_id": "prior-3f922d8da91aa794ad4a",
+          "relation": "counter",
+          "quote": "BLS研究考察被认为易受自动化影响的职业：所列高风险职业整体在1999—2018就业增长17%，并强调部分劳动者仍遭替代。",
+          "publication_date": null,
+          "observation_end": "2018-12-31",
+          "limitation": "高风险职业整体就业增长，与“被排挤者越来越多”的总体方向相反；但作者原意可能指局部替代，故仅作边界证据。"
+        },
+        {
+          "evidence_id": "prior-6889b6aa1268c2492327",
+          "relation": "support",
+          "quote": "Acemoglu和Restrepo《Robots and Jobs》研究美国地方劳动力市场，估计机器人暴露增加降低相对就业人口比和工资，同时模型考虑贸易及资本收益在其他地区的补偿效应。",
+          "publication_date": "2020-04-22",
+          "observation_end": null,
+          "limitation": "支持技术替代的局部就业负效应，但存在跨地区补偿效应，不能推出全国总排挤量上升。"
+        },
+        {
+          "evidence_id": "ev-b2034db3231c565040a7ea09",
+          "relation": "support",
+          "quote": "Table 1.6 Occupations with the largest job declines, 2025 and projected 2035 (Employment in thousands)",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "该表为2025—2035预测值，非已实现结果，只能作方向性参考，不能作为观察期证据。"
+        },
+        {
+          "evidence_id": "ev-d1ed402300d90a9123478194",
+          "relation": "boundary",
+          "quote": "There have been many claims about new technologies displacing jobs, and although such displacement has occurred in the past, it tends to take longer than technologists typically expect.",
+          "publication_date": "2025-02-10",
+          "observation_end": null,
+          "limitation": "BLS指出技术置换存在但通常慢于预期，且许多受影响职业仍增长，削弱“排挤越来越多”的强度判断。"
+        }
+      ],
+      "remaining_gap": "缺少覆盖1991—2024全窗口、直接度量“因技术被排挤劳动者数量”的连续官方序列；现有证据为局部研究、预测值或未复核候选，无法确定技术排挤的总体净方向。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000014154-000014218",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "美国1991—2024年：劳动力总量与求职谋生人数是否增加（BLS CPS 1991/2024劳动力126346/168106千人）；技术/自动化是否排挤越来越多劳动者（高风险自动化职业1999—2018就业增长17%、机器人暴露降低地方相对就业人口比）。不把总就业下降当作作者原意，也不把2025—2035预测值当作已实现结果。",
+      "reason": "“需要求职谋生的人越来越多”有劳动力总量从1991年约1.26亿增至2024年约1.68亿的观察期证据支持；但“科学技术发展将越来越多的人排挤出来”这一分项缺少1991—2024全窗口的直接净排挤序列，现有材料显示高风险自动化职业整体就业仍增长17%、机器人暴露仅带来局部负效应且存在补偿，方向不一，不能确认总体趋势。",
+      "limitation": "作者未给出精确指标与期限，本评估以劳动力总量和自动化职业就业变化作回顾性操作化；技术排挤的总体净方向证据不足且相互矛盾，故不判部分符合或趋势符合。关键修订：删除2025—2035预测表与2025年AI文章作为观察期已实现证据，不再设trend_aligned=true。",
+      "evidence_ids": [
+        "prior-0ea8cff8fdd1d0c300e1",
+        "prior-3f922d8da91aa794ad4a",
+        "prior-6889b6aa1268c2492327"
+      ],
+      "method": "从技术替代劳动与求职需求增加推断就业矛盾",
+      "method_basis": "inferred",
+      "observation_end": "2024-12-31",
+      "future_time_text": "随着科学技术发展",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-0ea8cff8fdd1d0c300e1",
+          "relation": "support",
+          "quote": "BLS CPS年度表：1991/2024劳动力分别126346/168106千人，就业117718/161346千人，失业8628/6761千人。全窗含衰退和疫情反弹。",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "劳动力总量增长支持“求职谋生者越来越多”，但失业人数下降，不能直接证明就业矛盾加剧或技术排挤增加。"
+        },
+        {
+          "evidence_id": "prior-3f922d8da91aa794ad4a",
+          "relation": "counter",
+          "quote": "BLS研究考察被认为易受自动化影响的职业：所列高风险职业整体在1999—2018就业增长17%，并强调部分劳动者仍遭替代。",
+          "publication_date": null,
+          "observation_end": "2018-12-31",
+          "limitation": "高风险职业整体就业增长，与“被排挤者越来越多”的总体方向相反；但作者原意可能指局部替代，故仅作边界证据。"
+        },
+        {
+          "evidence_id": "prior-6889b6aa1268c2492327",
+          "relation": "support",
+          "quote": "Acemoglu和Restrepo《Robots and Jobs》研究美国地方劳动力市场，估计机器人暴露增加降低相对就业人口比和工资，同时模型考虑贸易及资本收益在其他地区的补偿效应。",
+          "publication_date": "2020-04-22",
+          "observation_end": null,
+          "limitation": "支持技术替代的局部就业负效应，但存在跨地区补偿效应，不能推出全国总排挤量上升。"
+        }
+      ],
+      "remaining_gap": "缺少覆盖1991—2024全窗口、直接度量“因技术被排挤劳动者数量”的连续官方序列；现有证据为局部研究或方向不一，无法确定技术排挤的总体净方向，故该分项暂无法判断。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "王沪宁1991年《美国反对美国》中的就业矛盾判断：随着科技发展，被排挤的劳动者是否越来越多，同时需要求职谋生的人是否越来越多。可观察口径包括美国劳动力参与人数、就业与失业人数、因技术或自动化造成的岗位置换与净就业变化；反证包括总就业增长、高风险自动化职业就业增长、技术替代与新增岗位并存。不把“总就业下降”当作作者原意。",
+  "elapsed_seconds": 36.814,
+  "completed_at": "2026-11-09T07:58:50.584264+00:00"
+}

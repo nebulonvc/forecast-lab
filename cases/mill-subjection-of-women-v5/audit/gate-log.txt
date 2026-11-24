@@ -1,0 +1,30 @@
+The Subjection of Women gate, 2026-11-20.
+check: OK 6 claims; 12 verified evidence records
+report: 正确 1, 部分符合 3, 错误 0, 暂无法判断 2. 可判定 4/6. 正确占已判定 1/4.
+chunks: 81/81 complete. No prior ledger or chunk files were on disk; reading started at txt-00001.
+edition: title page 1869, year only. Not line-collated against another paper copy. Gutenberg header dates 2008-10-28 and 2021-01-04 are electronic. Events in 1869 are not used as later verification.
+unittest: Ran 209 tests in 0.969s OK. This run only.
+300-character book overlap outside registered quotes: none.
+secret scan: no project credential. The only sk- character sequence is inside the CSS class luminous-dusk-gradient on the 1870 statute page.
+curl 403 on GMC, Commons Library, Parliament key dates, and IPU; those three article texts were saved from the subsequent page fetch. legislation.gov.uk and statutes.org.uk were saved by curl.
+An earlier apply was rejected by check because two support phrases were not in the empty context. The current apply input keeps those phrases and is the receipt below.
+input_claims_sha256 19821810483cc3d2c95d593b547df7389a31ecb923a80d9210d5ec575183aa17
+response_sha256 ba683342db1181692603a18b249803572d0cba46058d50ac2a291a7cc2bb661d
+Full book and chunk-reading-ledger.json are not in the zip.
+Morris package and the 13 locked packages were not edited. No push and no pull request.
+
+r2 QA revision, 2026-11-20. No new search. r1 zip bytes were not overwritten.
+check: OK 6 claims; 12 verified evidence records.
+report: 正确 1, 部分符合 1, 错误 0, 暂无法判断 4. 可判定 2/6. 正确占已判定 1/2.
+Education claim stays 正确 on the 2010 Act alone. The 1919 professions Act is unbound from that claim.
+Relic claim changed from 部分符合 to 暂无法判断. The 1919 overseas-post and single-sex jury clauses are not treated as cutoff residuals.
+Fewer-women claim changed from 部分符合 to 暂无法判断. Commons 263 of 650 remains bound as one public office. The licensed-doctor total is unbound.
+Property 部分符合 and the two unknown verdicts were not reopened. Their dates were aligned to the archived text.
+unittest r2: Ran 209 tests in 0.925s OK. Log audit/unittest-r2-20261120.log. The r1 log was kept.
+300-character book overlap outside registered quotes: none.
+secret scan: the only matching character sequence is still the CSS class luminous-dusk-gradient on the 1870 statute page, plus this log and the r1 log naming that class. It is not a credential.
+input_claims_sha256 19821810483cc3d2c95d593b547df7389a31ecb923a80d9210d5ec575183aa17
+response_sha256 09b725e1c59ee8a99c5fb398e2704fa53db188b827fbd8a83a230b9b7a760fae
+evidence_table_sha256 6d25243268bd80c1af069cdd56e6d39b6dffc65dd4f2115b30a54b7e1e71279a
+Full book and chunk-reading-ledger.json are not in the zip.
+r1 package and the 14 locked packages were not edited. No push and no pull request.

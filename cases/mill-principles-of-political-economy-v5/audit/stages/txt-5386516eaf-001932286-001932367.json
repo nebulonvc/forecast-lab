@@ -1,0 +1,108 @@
+{
+  "id": "txt-5386516eaf-001932286-001932367",
+  "assess": {
+    "id": "txt-5386516eaf-001932286-001932367",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "若改进继续，主人与工人的关系会逐渐被两种合伙取代。",
+    "reason": "3.6%的雇员持股和2500名合作社雇员不是主人与工人的关系已经被合伙取代。前提未证实。缺少主要结果“取代”的证据，不能把少量相关形式评成部分符合。",
+    "limitation": "这些数字只说明相关形式存在。",
+    "evidence_ids": [
+      "ev-smf-shares-2020",
+      "ev-uk-coops-2024",
+      "ev-ons-employees-2020"
+    ],
+    "method": "重读手册后撤回部分符合。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "gradually",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-smf-shares-2020",
+        "quote": "just 3.6% of the UK adult population (or approximately \n1.9 million people aged 16 and over) held some form of employee shares",
+        "relation": "boundary",
+        "limitation": "持股不是关系被取代。",
+        "observation_end": "2016-12-31",
+        "publication_date": "2020-02",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-uk-coops-2024",
+        "quote": "There are 400 worker co-ops in the UK with 2,500 employees",
+        "relation": "boundary",
+        "limitation": "存在不是取代。",
+        "observation_end": "2024-03-31",
+        "publication_date": "2024-03",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-ons-employees-2020",
+        "quote": "28.02 million employees (85.1% of all people in employment)",
+        "relation": "boundary",
+        "limitation": "多数雇员不是取代已经发生的反证，因为前提未知。",
+        "observation_end": "2020-06-30",
+        "publication_date": "2020-08-11",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺改进继续之后，主人与工人的关系是否被两种合伙取代。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001932286-001932367",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "revision_trail": {
+    "previous_verdict": "部分符合",
+    "previous_reason": "2014–2016年3.6%的英国成年人持有某种雇员股份，这是劳动者与资本的一种联合，但是少数。2024年工人合作社有400家、2500名雇员，这是劳动者自己的联合，也是少数。2020年雇员仍占85.1%，主人与工人的雇佣关系没有被这两种合伙取代。两个分项都有直接数字，主关系没有被取代。",
+    "why": "少量持股和合作社不是“关系被合伙取代”这一主要结果。",
+    "rule_quote": "前提未知但后果或分项已有直接证据时，可以用部分符合（含趋势符合）并写明未证实的前提；这不能用来把缺少主要结果证据的条目评成部分符合。"
+  },
+  "rule_audit": {
+    "source": "toolkit/METHOD.md",
+    "quote": "前提未知但后果或分项已有直接证据时，可以用部分符合（含趋势符合）并写明未证实的前提；这不能用来把缺少主要结果证据的条目评成部分符合。",
+    "reasoning": "少量持股和合作社不是“关系被合伙取代”这一主要结果。"
+  },
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "employee shares and worker coops exist"
+      },
+      {
+        "role": "counter",
+        "query": "employees remain 85 percent"
+      }
+    ],
+    "note": "无 executed=true。不另造claim ID。"
+  },
+  "select": {
+    "urls": [
+      "https://www.smf.co.uk/wp-content/uploads/2020/02/Employee-Share-Ownership-February-2020.pdf",
+      "https://www.alex-bird.com/wp-content/uploads/2025/02/The-co-operative-economy-in-Wales.pdf"
+    ],
+    "reason": "有联合，未取代。"
+  }
+}

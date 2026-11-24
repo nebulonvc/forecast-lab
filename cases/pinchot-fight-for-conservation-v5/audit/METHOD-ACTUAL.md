@@ -1,0 +1,10 @@
+# 实际方法与偏差
+
+完整阅读本书45/45个3500字符body（前后600字符context仅助理解），非关键词选句。原始73条由原validate_chunk_predictions与claims_from_results确定性排除5条（格言2、机制1、规范2），保留全部68条且全部resolvable；ASSESS不再排除，没有语义去重或duplicate排除，自动重叠去重0。TXT为单栏，不涉及双栏重排/OCR。实际使用Exa新密钥路径，未使用DeepSeek。每条先写scope及正反查询，再从真实返回URL中选不超过8个来源，读取存档后逐条写中文理由、限制和六维审查。第一轮136个计划查询中135成功，#10 support中断保留不确定请求且未重试；第二轮换查询补足，并对仍缺证据的主题作自适应补查，共29条58个第二轮查询，未用第三轮。总计193个成功查询、128个URL/128份来源存档；Exa contents通常至多12000字符，森林管理历史一页另以urllib+BeautifulSoup抓完整公开HTML。所有判分事实限定存档可见内容。无日期方向按1910→2026-11-15窗口，未触发条件不给正确或错误，未知条件可观察后果仅给部分符合；无终点及缺口明确者保守未定。此为有相关性的回顾性父记录计数，不是独立预测技巧估计。
+
+队列源路径本机不可用，改从公开Gutenberg下载，TXT SHA与队列完全相同。仅出版年可靠，01-01为代理。toolkit由w1快照复制，逐个Python文件hash相同，但快照没有.git，不能独立执行git log确认85e6da1。canonical报告工具原样使用；生成报告中的“候选为人工挑选”通用模板行须改为实际抽取说明，不改共享工具。
+
+第一次support检索中断产生一个unknown ledger；未抹去、未重放。第二轮共有29条，不是第三轮。部分内容为网页摘要/截至12000字符，本报告不把未抓取正文算成证据。全部事实局限于存档；全部context及派生context已清空。
+
+
+context清空后，用原toolkit.extraction_provenance函数重绑source-fields receipt（共204条历史/派生记录，实时claims为68条），未改quote、位置、类型、归属或判分；旧新receipt仅保留hash和字段元数据。随后重新apply→check→report，并逐条validate_extraction_provenance及原确定性抽取回放通过。

@@ -1,0 +1,52 @@
+{
+  "id": "txt-4934182645-000189451-000189535",
+  "plan": {
+    "object": "掌握政权的同一位君主或共和国。不能换成制度变更后的另一位君主。",
+    "condition": "连续原文是：不要把安抚人民拖到危险已经到来；凡不事先按灾难中认为正当的方式与人民相处，并相信事情发生后、危险临头时再用好处就能把人争取过来的，就会失位并加速垮台。登记主张的“等到危险临头才施惠”指这次用来脱险的让步是在危险已经发生时给出的。原文没有要求君主生平第一次给予任何恩惠。",
+    "quantifier": "whosoever ... will not merely fail to maintain his place, but will even precipitate his downfall。",
+    "result": "保不住地位，并且加速垮台。标准是失去权位，不是街头危险是否在当周停止。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "同一位君主把用来度过这场危险的让步拖到危险已经到来才给出，而后来仍保住权位。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "monarch last minute concessions to people failed to prevent overthrow 1789 1848",
+      "counter_query": "ruler granted reforms only during crisis and remained in power afterwards"
+    },
+    "adaptive_rounds": 1,
+    "adaptive": {
+      "strategy": "核对同一位国王在街垒之前是否已经给出这场危机所要求的让步",
+      "queries": ["Frederick William IV refused constitution before March 1848 then promised reforms during Berlin uprising"]
+    },
+    "kept_urls": [
+      "https://www.bpb.de/themen/zeit-kulturgeschichte/revolution-1848-1849/516963/der-deutsche-vormaerz/",
+      "https://en.wikipedia.org/wiki/Constitution_of_Prussia_(1848)",
+      "https://www.ebsco.com/research-starters/history/prussian-revolution-1848"
+    ],
+    "dropped": "腓特烈·威廉三世是另一位君主。登基时的赦免和1842年的教堂工程不是这句所要求的“生平从未施惠”，不用来取消条件。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "错误",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "satisfied",
+    "future_time_text": "",
+    "observation_end": "1861-12-31",
+    "evidence_ids": ["ev-bpb-friedrich-wilhelm-1847", "ev-wiki-prussia-1848-constitution", "ev-ebsco-prussia-1848"],
+    "scope": "普遍判断。一位在危险已经到来时才给出脱险让步、其后仍保住权位的同一君主，就足以反驳 will not maintain his place。",
+    "reason": "bpb 点名腓特烈·威廉四世，并写1847年春的联合议会几乎没有满足对普鲁士国民议会的要求，国王坚持君权神授。维基写1848年3月18日，在事件压力下，仍是这位国王给予出版自由、加速召集议会并呼吁自由主义改革；尽管有了让步，示威仍变成街垒战；12月5日他自行颁布宪法并解散国民议会。EBSCO写他在1840至1861年在位。三页是同一国王、1847至1848年同一场危机。这场用来应对街垒危险的让步是在危险已经到来时给出的。此前的赦免和教堂工程是别的行为，原文没有把“任何早先恩惠”写成必要条件。他在12月5日仍掌握立法并在位至1861年，没有失去权位，也没有垮台。街垒继续数日是危险本身。普遍的 will not maintain his place 因此不成立。",
+    "limitation": "三页都没有单独的出版日。在位只写到1861，没有月日，观察截止取该年年末。",
+    "method": "先按原文把条件和结果分开，再把同一国王的拖延、危险时的让步和事后仍在位连起来。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "pass",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "条件是把这场脱险让步拖到危险已经到来。1847年没有给出所要求的议会，3月18日才在压力下给出。同一国王在位至1861年。"
+  }
+}

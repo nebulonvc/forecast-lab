@@ -1,0 +1,48 @@
+{
+  "id": "txt-4934182645-000589747-000589893",
+  "plan": {
+    "object": "密谋者。登记的结果落在后半句：被捕的密谋者超过一个。",
+    "condition": "whenever more than one conspirator is arrested。至少两个参与同一密谋的人被逮捕并受审。只逮捕一个，原文另有他说不定守得住。",
+    "quantifier": "certain to be detected。只要超过一个被捕，密谋就一定被查明。一次查明不能证明一定；一次多人被捕而密谋仍未被查出，可以反驳一定。",
+    "result": "密谋被查明。原因是两个人无法把同一段假话说得完全一致。事后史家从别的文件得知，不等于当时被捕就把密谋查了出来。",
+    "window": "1531至2026-11-15。皮索、帕齐和希罗尼穆斯是出版前的例子。",
+    "counterevidence_needed": "两个以上密谋者被捕，他们的说法对不上，密谋被查出；或者两人以上被捕，密谋仍然没有被查出。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "two arrested conspirators gave conflicting stories and the plot was discovered",
+      "counter_query": "arrested conspirators kept the same story and the wider plot was never discovered"
+    },
+    "adaptive_rounds": 1,
+    "adaptive": {
+      "strategy": "首轮反例停在摘要，改查1849年被捕者是否守住了另一个秘密团体",
+      "queries": ["Petrashevsky circle members arrested and the secret revolutionary group was not discovered"]
+    },
+    "kept_urls": ["https://en.wikipedia.org/wiki/Nikolay_Speshnev"],
+    "dropped": "浦那的两名谋杀嫌疑人互相指责，不是针对君主的密谋，而且报道日期可能晚于2026年11月15日，不用。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-wiki-speshnev-1849"],
+    "scope": "被捕的多名必须是同一密谋的人，当局没有发现的也必须是这个密谋。未发现另一个秘密小组，不是反例。",
+    "reason": "原文紧接皮索案：两名密谋者被捕后说法不一致，密谋才被查清。后一句说，只要被捕的密谋者超过一个，这个密谋就一定被查明，因为两个人无法把彼此之间发生的事说成同一套假话。1849年4月22日被捕的约六十人是彼得拉舍夫斯基小组的成员和关系人，这个小组已经被当局知道。页面写未被发现的是斯佩什涅夫个人的秘密团体，而且它的成员没有向小组里的其他人透露。那是另一个小组。页面没有写这个秘密团体里超过一个人因该团体被捕，并且当局没有查出的就是他们彼此之间的那个密谋。不能用未发现另一个小组来反驳一定被查明。",
+    "limitation": "页面没有出版日。十二月只写到刑场。秘密团体后来为史家所知，这一点不拿来当当时已经查明。",
+    "method": "先数被捕的是否超过一个，再看他们共有的密谋有没有被当局查出。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "被查出的是彼得拉舍夫斯基小组。未被发现的是另一个秘密团体。不是同一密谋的反例。"
+  }
+}

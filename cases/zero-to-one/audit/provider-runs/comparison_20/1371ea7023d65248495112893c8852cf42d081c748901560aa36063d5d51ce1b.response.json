@@ -1,0 +1,28 @@
+{
+  "id": "8ecd4f05-55d5-4566-8210-5876c02b6dc9",
+  "object": "chat.completion",
+  "created": 1794201309,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-00022\",\"predictions\":[{\"quote\":\"未来几十年，最具价值的产业还是由创业家建立，他们发展计算机\\n是增强人类的能力，而不是淘汰人类。\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔、布莱克·马斯特斯\",\"claim\":\"未来几十年，最具价值的产业将由创业家建立，他们发展计算机是增强人类能力而非淘汰人类。\",\"expanded_claim\":\"未来几十年，最具价值的产业还是由创业家建立，这些创业家发展计算机是为了增强人类的能力，而不是淘汰人类。\",\"reference_resolutions\":[{\"expression\":\"他们\",\"referent\":\"创业家\",\"support_quote\":\"最具价值的产业还是由创业家建立，他们发展计算机\"}],\"unresolved_references\":[],\"time_text\":\"未来几十年\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"直接陈述未来产业走向的预测。\"},{\"quote\":\"未来最有价值的公司肯定不是靠计算机单独解决问题，而是关注计算机如何才能帮助人类解决难题。\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔、布莱克·马斯特斯\",\"claim\":\"未来最有价值的公司不是靠计算机单独解决问题，而是关注计算机如何帮助人类解决难题。\",\"expanded_claim\":\"未来最有价值的公司肯定不是靠计算机单独解决问题，而是关注计算机如何才能帮助人类解决难题。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"未来\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"对未来公司价值来源的确定判断。\"},{\"quote\":\"被计算机取代是22世纪人类该担忧的问题\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔、布莱克·马斯特斯\",\"claim\":\"被计算机取代是22世纪人类才需要担忧的问题。\",\"expanded_claim\":\"人类被计算机取代是22世纪才需要担忧的问题，而不是现在。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"22世纪\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"对计算机取代人类时间点的判断。\"},{\"quote\":\"未来几十年，理智的人可以建设美好的世界\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔、布莱克·马斯特斯\",\"claim\":\"未来几十年，理智的人可以建设美好的世界。\",\"expanded_claim\":\"在两个极端之间还有巨大空间，未来几十年，理智的人可以建设美好的世界。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"未来几十年\",\"condition_text\":\"在两个极端之间还有巨大的空间\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"对未来的可能性判断。\"},{\"quote\":\"我们在计算机使用上的创新，不仅能够帮助人类做好已有工作，还能帮助人类做到之前不可想象的事情。\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔、布莱克·马斯特斯\",\"claim\":\"计算机使用上的创新能帮助人类做好已有工作，并做到之前不可想象的事情。\",\"expanded_claim\":\"我们在计算机使用上的创新，不仅能够帮助人类做好已有工作，还能帮助人类做到之前不可想象的事情。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"对计算机创新未来作用的预测。\"},{\"quote\":\"一旦计算机能回答我们的所有问题，它们就可能会问，为什么它们要完全屈从于我们？\",\"kind\":\"unclear\",\"speaker\":\"彼得·蒂尔、布莱克·马斯特斯\",\"claim\":\"一旦计算机能回答所有问题，它们可能会问为什么要完全屈从于人类。\",\"expanded_claim\":\"一旦计算机能回答我们的所有问题，它们就可能会问，为什么它们要完全屈从于我们？\",\"reference_resolutions\":[{\"expression\":\"它们\",\"referent\":\"计算机\",\"support_quote\":\"一旦计算机能回答我们的所有问题，它们就可能会问\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"一旦计算机能回答我们的所有问题\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"以反问形式表达的可能性，是否属于预测不确定。\"}]}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3248,
+    "completion_tokens": 867,
+    "total_tokens": 4115,
+    "prompt_tokens_details": {
+      "cached_tokens": 3072
+    },
+    "prompt_cache_hit_tokens": 3072,
+    "prompt_cache_miss_tokens": 176
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

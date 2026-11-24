@@ -1,0 +1,610 @@
+{
+  "claim_id": "txt-1c4066fc0c-000252988-000253018",
+  "version": "search-verifier-v1",
+  "input_sha256": "f45c57abe52d9ba9ce8641879ceac7d1b51e56f37c7d8e0595b63e016d8c5c6b",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000252988-000253018",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "以1991年著作出版至截止日2026-11-09为观察窗口，按研究范围保留“最发达”的多维口径：综合人类发展（HDI及排名）、经济总量与人均、研发与创新体系相对优势；不把“最发达”单一化为HDI排名或GDP总量，也不要求日本必定超过美国。实际可用证据的观察终点为2021—2024年不等，未覆盖至截止日。",
+    "reason": "原文以“似乎”“难以保证”的或然措辞判断美国体制难以保证其最发达地位，未指定期限。现有证据显示美国HDI从1990年0.878升至2023年0.938、2023年排17/193，研发支出总量与强度仍居前列，但研发强度低于以色列、韩国，HDI排名并非第一；这些只能说明美国在部分分项并非居首，不能直接证明“最发达地位”已部分丧失或作者担忧方向已部分实现。缺少1991—2024年同口径的美日人均GDP与综合竞争力序列，无法操作化“最发达”并判断后果B是否部分发生，故暂无法判断。",
+    "limitation": "“最发达”为多维模糊概念，HDI排名、GDP总量、研发强度口径不同，不能互相替代；日本HDI数据来自非官方聚合站点，仅作边界参考。原文为或然判断且无期限，本评估只记录观察窗口内方向，不构成概率校准或终局结论。关键修订：不再以“部分指标非第一”判部分符合，改判暂无法判断并保留缺口。",
+    "evidence_ids": [
+      "prior-a25cf22cecf32d1ba769",
+      "ev-e32bb5af8b37bc9a7e294dcd",
+      "ev-2d8be427ee5fc7eed3e4490e",
+      "prior-95a5d86b3acdea51bb21",
+      "ev-d1bfb591f23b6f4d01aefee0",
+      "ev-5318b34cdb340c816b8ef9ff"
+    ],
+    "method": "从当时日本经济相对优势外推美国制度竞争力",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-31",
+    "future_time_text": "未来延续",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-a25cf22cecf32d1ba769",
+        "relation": "boundary",
+        "quote": "美国HDI1990为0.878、2000为0.895、2010为0.919、2015为0.928、2020为0.925、2021为0.921、2022为0.930、2023为0.938；2023排17/193，属于极高人类发展。",
+        "publication_date": "2025-05-06",
+        "observation_end": "2023-12-31",
+        "limitation": "HDI为综合指标，排名第17说明并非综合发展第一，但“极高人类发展”类别仍显示高水平；不能单凭HDI判定“最发达”。"
+      },
+      {
+        "evidence_id": "ev-e32bb5af8b37bc9a7e294dcd",
+        "relation": "boundary",
+        "quote": "United States's HDI value for 2023 is 0.938— which puts the country in the Very High human development category—positioning it at 17 out of 193 countries and territories.",
+        "publication_date": null,
+        "observation_end": "2023-12-31",
+        "limitation": "与prior-a25cf22cecf32d1ba769同源数据，非独立佐证；页面日期未知，仅作口径边界。"
+      },
+      {
+        "evidence_id": "ev-2d8be427ee5fc7eed3e4490e",
+        "relation": "boundary",
+        "quote": "Global rank: 23 / 193",
+        "publication_date": null,
+        "observation_end": "2023-12-31",
+        "limitation": "日本HDI数据来自非官方聚合站点，日期未知，仅作美日相对位次的边界参考，不作为官方结论。"
+      },
+      {
+        "evidence_id": "prior-95a5d86b3acdea51bb21",
+        "relation": "background",
+        "quote": "NSF《2024美国科学与工程状况》显示美国仍有庞大研发体系，同时中国研发增长改变国际格局；只使用文中实际年份。",
+        "publication_date": "2024-03-13",
+        "observation_end": null,
+        "limitation": "摘要性描述，未给出具体年份数值；只能说明美国研发体系仍庞大且格局变化，不能量化领先幅度或证明最发达地位变化。"
+      },
+      {
+        "evidence_id": "ev-d1bfb591f23b6f4d01aefee0",
+        "relation": "background",
+        "quote": "United States | 152.4 | 268.6 | 408.5 | 806.0 | 5,963 | 10,251 | 15,049 | 23,315 | 2.56 | 2.62 | 2.71 | 3.46",
+        "publication_date": null,
+        "observation_end": "2021-12-31",
+        "limitation": "GERD为PPP美元口径，美国研发总量领先但研发强度3.46%并非全球最高；数据止于2021年，日期未知。"
+      },
+      {
+        "evidence_id": "ev-5318b34cdb340c816b8ef9ff",
+        "relation": "counter",
+        "quote": "- Israel\n\n6.3%\n- South Korea\n\n4.9%\n- United States\n\n3.4%\n- Japan\n\n3.4%",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "研发强度美国与日本并列3.4%，低于以色列、韩国，说明并非所有维度都居首；页面日期未知，数据来源为UNESCO/World Bank聚合。"
+      }
+    ],
+    "remaining_gap": "缺少1991—2024年连续、同口径的美日人均GDP与综合竞争力序列，以及“最发达”的统一定义；日本HDI来源为非官方站点，需官方数据复核。现有证据不足以判断“最发达地位”是否部分丧失，需补充能直接检验该后果的同口径证据。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000252988-000253018",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以1991年著作出版至截止日2026-11-09为观察窗口，按研究范围保留“最发达”的多维口径：综合人类发展（HDI及排名）、经济总量与人均、研发与创新体系相对优势；不把“最发达”单一化为HDI排名或GDP总量，也不要求日本必定超过美国。",
+    "reason": "原文以“似乎”“难以保证”的或然措辞判断美国体制难以保证其最发达地位，未指定期限。观察窗口内美国HDI从1990年0.878升至2023年0.938、2023年排17/193，研发支出占GDP约3.4%仍居前列，经济与创新体系保持相对优势；但美国并非在所有维度都居首（HDI排名第17、研发强度低于以色列和韩国），且中国研发增长改变国际格局，与“难以保证最发达地位”的担忧方向部分一致。综合看既有维持领先的证据，也有相对位次并非第一的证据，属分项存在实质差异，判部分符合。",
+    "limitation": "“最发达”为多维模糊概念，HDI排名、GDP总量、研发强度各自口径不同，不能互相替代；日本HDI数据来自非官方聚合站点，仅作边界参考。原文为或然判断且无期限，本评估只记录观察窗口内方向，不构成概率校准或终局结论。",
+    "evidence_ids": [
+      "prior-a25cf22cecf32d1ba769",
+      "ev-e32bb5af8b37bc9a7e294dcd",
+      "ev-2d8be427ee5fc7eed3e4490e",
+      "prior-95a5d86b3acdea51bb21",
+      "ev-d1bfb591f23b6f4d01aefee0",
+      "ev-5318b34cdb340c816b8ef9ff"
+    ],
+    "method": "从当时日本经济相对优势外推美国制度竞争力",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-31",
+    "future_time_text": "未来延续",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-a25cf22cecf32d1ba769",
+        "relation": "support",
+        "quote": "美国HDI1990为0.878、2000为0.895、2010为0.919、2015为0.928、2020为0.925、2021为0.921、2022为0.930、2023为0.938；2023排17/193，属于极高人类发展。",
+        "publication_date": "2025-05-06",
+        "observation_end": "2023-12-31",
+        "limitation": "HDI为综合指标，排名第17说明并非综合发展第一，但“极高人类发展”类别仍显示高水平；不能单凭HDI判定“最发达”。"
+      },
+      {
+        "evidence_id": "ev-e32bb5af8b37bc9a7e294dcd",
+        "relation": "boundary",
+        "quote": "United States's HDI value for 2023 is 0.938— which puts the country in the Very High human development category—positioning it at 17 out of 193 countries and territories.",
+        "publication_date": null,
+        "observation_end": "2023-12-31",
+        "limitation": "与prior-a25cf22cecf32d1ba769同源数据，非独立佐证；页面日期未知，仅作口径边界。"
+      },
+      {
+        "evidence_id": "ev-2d8be427ee5fc7eed3e4490e",
+        "relation": "boundary",
+        "quote": "Global rank: 23 / 193",
+        "publication_date": null,
+        "observation_end": "2023-12-31",
+        "limitation": "日本HDI数据来自非官方聚合站点，日期未知，仅作美日相对位次的边界参考，不作为官方结论。"
+      },
+      {
+        "evidence_id": "prior-95a5d86b3acdea51bb21",
+        "relation": "support",
+        "quote": "NSF《2024美国科学与工程状况》显示美国仍有庞大研发体系，同时中国研发增长改变国际格局；只使用文中实际年份。",
+        "publication_date": "2024-03-13",
+        "observation_end": null,
+        "limitation": "摘要性描述，未给出具体年份数值；只能说明美国研发体系仍庞大且格局变化，不能量化领先幅度。"
+      },
+      {
+        "evidence_id": "ev-d1bfb591f23b6f4d01aefee0",
+        "relation": "support",
+        "quote": "United States | 152.4 | 268.6 | 408.5 | 806.0 | 5,963 | 10,251 | 15,049 | 23,315 | 2.56 | 2.62 | 2.71 | 3.46",
+        "publication_date": null,
+        "observation_end": "2021-12-31",
+        "limitation": "GERD为PPP美元口径，美国研发总量领先但研发强度3.46%并非全球最高；数据止于2021年，日期未知。"
+      },
+      {
+        "evidence_id": "ev-5318b34cdb340c816b8ef9ff",
+        "relation": "counter",
+        "quote": "- Israel\n\n6.3%\n- South Korea\n\n4.9%\n- United States\n\n3.4%\n- Japan\n\n3.4%",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "研发强度美国与日本并列3.4%，低于以色列、韩国，说明并非所有维度都居首；页面日期未知，数据来源为UNESCO/World Bank聚合。"
+      }
+    ],
+    "remaining_gap": "缺少1991—2024年连续、同口径的美日人均GDP与综合竞争力序列，以及“最发达”的统一定义；日本HDI来源为非官方站点，需官方数据复核。现有证据足以判断观察窗口内方向，但不足以给出终局结论。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-a25cf22cecf32d1ba769",
+      "url": "https://hdr.undp.org/system/files/documents/global-report-document/hdr2025reporten.pdf",
+      "title": "ev-r2-l3-hdi",
+      "published_date": "2025-05-06",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-hdi",
+      "archive_sha256": "8c836ddac50ab3694fd3c13f113d7e15acf46e04d42dcddb2c12d7372f7a6c37",
+      "archive_path": "data/sources/r2-l3-hdi.pdf",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-e56c07f52622975a3751",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.CD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-cd",
+      "published_date": "2026-10-08",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-cd",
+      "archive_sha256": "7ad5c1c4f44e15850a861521955b29727497d2cb232432f3dbc2e56ba20d4e42",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.CD.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-95a5d86b3acdea51bb21",
+      "url": "https://www.ncses.nsf.gov/pubs/nsb20243/discovery-u-s-and-global-r-d",
+      "title": "ev-nsf",
+      "published_date": "2024-03-13",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-nsf",
+      "archive_sha256": "48d44bfdae4f5f92a3f44364f67e6ca7670f659eb1c77f1e11453f89e6023f33",
+      "archive_path": "data/sources/48d44bfdae4f5f92a3f44364f67e6ca7670f659eb1c77f1e11453f89e6023f33.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e32bb5af8b37bc9a7e294dcd",
+      "url": "https://hdr.undp.org/data-center/specific-country-data",
+      "resolved_url": "https://hdr.undp.org/data-center/specific-country-data",
+      "title": "Specific country data | Human Development Reports",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:50.147591+00:00",
+      "archive_sha256": "06c21c02e6a74b5bb14f1760f68d44aa95cdea204c97a2799e5e60c5ffe951c7",
+      "archive_path": "jobs/b5555a28aa413169e8926e10/06c21c02e6a74b5bb14f1760f68d44aa95cdea204c97a2799e5e60c5ffe951c7.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-2d8be427ee5fc7eed3e4490e",
+      "url": "https://geostarna.com/countries/japan/hdi/",
+      "resolved_url": "https://geostarna.com/countries/japan/hdi/",
+      "title": "Japan HDI Over Time (1990–2023)",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:50.147781+00:00",
+      "archive_sha256": "f0e58b0355697a81e46b598d0ddb22ee810693adbb7ef9310020051dc7ef208c",
+      "archive_path": "jobs/b5555a28aa413169e8926e10/f0e58b0355697a81e46b598d0ddb22ee810693adbb7ef9310020051dc7ef208c.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d1bfb591f23b6f4d01aefee0",
+      "url": "https://ncses.nsf.gov/pubs/nsb20246/assets/cross-national-comparisons-of-r-d-performance/tables/nsb20246-tabrd-005.pdf",
+      "resolved_url": "https://ncses.nsf.gov/pubs/nsb20246/assets/cross-national-comparisons-of-r-d-performance/tables/nsb20246-tabrd-005.pdf",
+      "title": "National Center for Science and Engineering Statistics | NSB-2024-6",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:50.147959+00:00",
+      "archive_sha256": "e49be1bed63e62922793e79b6ea2415ae44c9bfa7db35b9d2562466dccff2555",
+      "archive_path": "jobs/b5555a28aa413169e8926e10/e49be1bed63e62922793e79b6ea2415ae44c9bfa7db35b9d2562466dccff2555.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-5318b34cdb340c816b8ef9ff",
+      "url": "https://ourworldindata.org/grapher/research-spending-gdp?tab=chart",
+      "resolved_url": "https://ourworldindata.org/grapher/research-spending-gdp?tab=chart",
+      "title": "Research & development spending as a share of GDP",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:01:50.148193+00:00",
+      "archive_sha256": "14475d8f0dbd69a3a9d58277c490ada7f48bde20a1e4d3654f3bd8f9175fdff5",
+      "archive_path": "jobs/b5555a28aa413169e8926e10/14475d8f0dbd69a3a9d58277c490ada7f48bde20a1e4d3654f3bd8f9175fdff5.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "UNDP Human Development Report 2025 statistical table United States HDI rank 1990 2023 Japan comparison",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "World Bank WDI GDP current US$ United States Japan 1991 2024 R&D expenditure share NSF science engineering indicators US global leadership",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "UNDP Human Development Report 2025 statistical table United States HDI rank 1990 2023 Japan comparison",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "World Bank WDI GDP current US$ United States Japan 1991 2024 R&D expenditure share NSF science engineering indicators US global leadership",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少1991—2024年连续、同口径的美日人均GDP与综合竞争力序列，以及“最发达”的统一定义；日本HDI来源为非官方站点，需官方数据复核。现有证据不足以判断“最发达地位”是否部分丧失，需补充能直接检验该后果的同口径证据。",
+  "source_statuses": [
+    {
+      "url": "https://hdr.undp.org/data-center/specific-country-data",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://geostarna.com/countries/japan/hdi/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://ncses.nsf.gov/pubs/nsb20246/assets/cross-national-comparisons-of-r-d-performance/tables/nsb20246-tabrd-005.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://ourworldindata.org/grapher/research-spending-gdp?tab=chart",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "王沪宁1991年著作中基于当时美日竞争提出的或然判断：美国以个人主义、享乐主义和民主主义为基础的体制，似乎难以保证美国保持“最发达”地位。可观察口径为1991年至截止日美国在综合发达程度（HDI及分项）、经济总量与人均水平、研发与创新体系等维度是否保持领先或相对优势；反证包括美国在上述维度持续领先、与日本差距扩大或日本相对衰落。保留“似乎”“难以保证”的或然措辞和未指定期限，不把“最发达”单一化为HDI排名或GDP总量，也不把日本必定超过美国当作作者原意。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "6fe59e4c8a554ffb1bc4e0aef6141e7299222045a71d382a81c3c8d200a3e3a0"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e5c3fbeb58811e11072ef774a7109ff1",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f9b5309aba41475cc7d85108d1659559",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "4b7fcb5c6521dd027c67d1d26664bbff167c5d0bdae94e166a29b7fab5f3843b"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "c09d2261b40410f412acd6cc67576983",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "6466c186366d3129612089342404ee86b18074f2a6909eff7722c3165d96cf4c"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e5c3fbeb58811e11072ef774a7109ff1",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f9b5309aba41475cc7d85108d1659559",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "f429f6c6aa32cf216d786d2dad8ebf137198192a36b915f1e7fd0e4f2c2791ce"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "c21084cf9da3a3448cd21a4ad33f70b85c3e0392ca752794089f86189b414973"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "57760fb8ee0ab07c614ce06e2cb66accb7a92e1560b8e50c884ecd445cfe3265"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "a85b11e8d229c292babbbee56f958c32d2cedc54de7fae5b9485f7e00ddc74d8"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "3eaca889bda4f575c9c9189bc9cc983158e5bd7e1d4b031ab9839f93823abb2a"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000252988-000253018",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "fail",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "time_alignment",
+          "reason": "建议的scope写观察窗口至截止日2026-11-09，但observation_end填2024-12-31，且未说明为何在截止日前提前截断；这使“观察窗口内”的表述与所填观察终点不一致，需统一或明确说明数据可得性导致的截断。",
+          "source_quote": "以1991年著作出版至截止日2026-11-09为观察窗口",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议用“研发支出占GDP约3.4%仍居前列”支撑美国研发相对优势，但所引Our World in Data材料显示美国3.4%与日本并列，且低于以色列6.3%、韩国4.9%；该材料只能支持“并非所有维度居首”，不能同时作为“仍居前列”的正面支撑。NSF摘要也未给出具体年份数值，无法量化领先幅度。",
+          "source_quote": "- Israel\n\n6.3%\n- South Korea\n\n4.9%\n- United States\n\n3.4%\n- Japan\n\n3.4%",
+          "evidence_id": "ev-5318b34cdb340c816b8ef9ff",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议将“部分符合”建立在“既有维持领先的证据，也有相对位次并非第一的证据”上，并把HDI排名第17、研发强度低于以色列和韩国作为“分项存在实质差异”。但原文的后果是“难以保证美国的最发达地位”，即美国可能失去最发达地位；美国在HDI排名并非第一、研发强度并非最高，本身并不直接证明“最发达地位”已部分丧失，也不等于作者担忧的方向已部分实现。判部分符合必须指出后果B哪些具体部分实现、哪些未实现；当前理由只罗列美国在若干指标上并非第一，未证明“最发达地位”这一后果已部分发生。",
+          "source_quote": "综合看既有维持领先的证据，也有相对位次并非第一的证据，属分项存在实质差异，判部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需统一观察窗口与observation_end（或说明截断理由）；需补充能直接检验“美国是否失去/部分失去最发达地位”的同口径证据（如1991—2024年美日人均GDP、综合竞争力序列及“最发达”的操作定义），并据此重新判断是维持领先、部分失去还是无法判断；不能仅以美国在某些分项排名非第一就判部分符合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000252988-000253018",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000252988-000253018",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以1991年著作出版至截止日2026-11-09为观察窗口，按研究范围保留“最发达”的多维口径：综合人类发展（HDI及排名）、经济总量与人均、研发与创新体系相对优势；不把“最发达”单一化为HDI排名或GDP总量，也不要求日本必定超过美国。",
+      "reason": "原文以“似乎”“难以保证”的或然措辞判断美国体制难以保证其最发达地位，未指定期限。观察窗口内美国HDI从1990年0.878升至2023年0.938、2023年排17/193，研发支出占GDP约3.4%仍居前列，经济与创新体系保持相对优势；但美国并非在所有维度都居首（HDI排名第17、研发强度低于以色列和韩国），且中国研发增长改变国际格局，与“难以保证最发达地位”的担忧方向部分一致。综合看既有维持领先的证据，也有相对位次并非第一的证据，属分项存在实质差异，判部分符合。",
+      "limitation": "“最发达”为多维模糊概念，HDI排名、GDP总量、研发强度各自口径不同，不能互相替代；日本HDI数据来自非官方聚合站点，仅作边界参考。原文为或然判断且无期限，本评估只记录观察窗口内方向，不构成概率校准或终局结论。",
+      "evidence_ids": [
+        "prior-a25cf22cecf32d1ba769",
+        "ev-e32bb5af8b37bc9a7e294dcd",
+        "ev-2d8be427ee5fc7eed3e4490e",
+        "prior-95a5d86b3acdea51bb21",
+        "ev-d1bfb591f23b6f4d01aefee0",
+        "ev-5318b34cdb340c816b8ef9ff"
+      ],
+      "method": "从当时日本经济相对优势外推美国制度竞争力",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "未来延续",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-a25cf22cecf32d1ba769",
+          "relation": "support",
+          "quote": "美国HDI1990为0.878、2000为0.895、2010为0.919、2015为0.928、2020为0.925、2021为0.921、2022为0.930、2023为0.938；2023排17/193，属于极高人类发展。",
+          "publication_date": "2025-05-06",
+          "observation_end": "2023-12-31",
+          "limitation": "HDI为综合指标，排名第17说明并非综合发展第一，但“极高人类发展”类别仍显示高水平；不能单凭HDI判定“最发达”。"
+        },
+        {
+          "evidence_id": "ev-e32bb5af8b37bc9a7e294dcd",
+          "relation": "boundary",
+          "quote": "United States's HDI value for 2023 is 0.938— which puts the country in the Very High human development category—positioning it at 17 out of 193 countries and territories.",
+          "publication_date": null,
+          "observation_end": "2023-12-31",
+          "limitation": "与prior-a25cf22cecf32d1ba769同源数据，非独立佐证；页面日期未知，仅作口径边界。"
+        },
+        {
+          "evidence_id": "ev-2d8be427ee5fc7eed3e4490e",
+          "relation": "boundary",
+          "quote": "Global rank: 23 / 193",
+          "publication_date": null,
+          "observation_end": "2023-12-31",
+          "limitation": "日本HDI数据来自非官方聚合站点，日期未知，仅作美日相对位次的边界参考，不作为官方结论。"
+        },
+        {
+          "evidence_id": "prior-95a5d86b3acdea51bb21",
+          "relation": "support",
+          "quote": "NSF《2024美国科学与工程状况》显示美国仍有庞大研发体系，同时中国研发增长改变国际格局；只使用文中实际年份。",
+          "publication_date": "2024-03-13",
+          "observation_end": null,
+          "limitation": "摘要性描述，未给出具体年份数值；只能说明美国研发体系仍庞大且格局变化，不能量化领先幅度。"
+        },
+        {
+          "evidence_id": "ev-d1bfb591f23b6f4d01aefee0",
+          "relation": "support",
+          "quote": "United States | 152.4 | 268.6 | 408.5 | 806.0 | 5,963 | 10,251 | 15,049 | 23,315 | 2.56 | 2.62 | 2.71 | 3.46",
+          "publication_date": null,
+          "observation_end": "2021-12-31",
+          "limitation": "GERD为PPP美元口径，美国研发总量领先但研发强度3.46%并非全球最高；数据止于2021年，日期未知。"
+        },
+        {
+          "evidence_id": "ev-5318b34cdb340c816b8ef9ff",
+          "relation": "counter",
+          "quote": "- Israel\n\n6.3%\n- South Korea\n\n4.9%\n- United States\n\n3.4%\n- Japan\n\n3.4%",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "研发强度美国与日本并列3.4%，低于以色列、韩国，说明并非所有维度都居首；页面日期未知，数据来源为UNESCO/World Bank聚合。"
+        }
+      ],
+      "remaining_gap": "缺少1991—2024年连续、同口径的美日人均GDP与综合竞争力序列，以及“最发达”的统一定义；日本HDI来源为非官方站点，需官方数据复核。现有证据足以判断观察窗口内方向，但不足以给出终局结论。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000252988-000253018",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "以1991年著作出版至截止日2026-11-09为观察窗口，按研究范围保留“最发达”的多维口径：综合人类发展（HDI及排名）、经济总量与人均、研发与创新体系相对优势；不把“最发达”单一化为HDI排名或GDP总量，也不要求日本必定超过美国。实际可用证据的观察终点为2021—2024年不等，未覆盖至截止日。",
+      "reason": "原文以“似乎”“难以保证”的或然措辞判断美国体制难以保证其最发达地位，未指定期限。现有证据显示美国HDI从1990年0.878升至2023年0.938、2023年排17/193，研发支出总量与强度仍居前列，但研发强度低于以色列、韩国，HDI排名并非第一；这些只能说明美国在部分分项并非居首，不能直接证明“最发达地位”已部分丧失或作者担忧方向已部分实现。缺少1991—2024年同口径的美日人均GDP与综合竞争力序列，无法操作化“最发达”并判断后果B是否部分发生，故暂无法判断。",
+      "limitation": "“最发达”为多维模糊概念，HDI排名、GDP总量、研发强度口径不同，不能互相替代；日本HDI数据来自非官方聚合站点，仅作边界参考。原文为或然判断且无期限，本评估只记录观察窗口内方向，不构成概率校准或终局结论。关键修订：不再以“部分指标非第一”判部分符合，改判暂无法判断并保留缺口。",
+      "evidence_ids": [
+        "prior-a25cf22cecf32d1ba769",
+        "ev-e32bb5af8b37bc9a7e294dcd",
+        "ev-2d8be427ee5fc7eed3e4490e",
+        "prior-95a5d86b3acdea51bb21",
+        "ev-d1bfb591f23b6f4d01aefee0",
+        "ev-5318b34cdb340c816b8ef9ff"
+      ],
+      "method": "从当时日本经济相对优势外推美国制度竞争力",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "未来延续",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-a25cf22cecf32d1ba769",
+          "relation": "boundary",
+          "quote": "美国HDI1990为0.878、2000为0.895、2010为0.919、2015为0.928、2020为0.925、2021为0.921、2022为0.930、2023为0.938；2023排17/193，属于极高人类发展。",
+          "publication_date": "2025-05-06",
+          "observation_end": "2023-12-31",
+          "limitation": "HDI为综合指标，排名第17说明并非综合发展第一，但“极高人类发展”类别仍显示高水平；不能单凭HDI判定“最发达”。"
+        },
+        {
+          "evidence_id": "ev-e32bb5af8b37bc9a7e294dcd",
+          "relation": "boundary",
+          "quote": "United States's HDI value for 2023 is 0.938— which puts the country in the Very High human development category—positioning it at 17 out of 193 countries and territories.",
+          "publication_date": null,
+          "observation_end": "2023-12-31",
+          "limitation": "与prior-a25cf22cecf32d1ba769同源数据，非独立佐证；页面日期未知，仅作口径边界。"
+        },
+        {
+          "evidence_id": "ev-2d8be427ee5fc7eed3e4490e",
+          "relation": "boundary",
+          "quote": "Global rank: 23 / 193",
+          "publication_date": null,
+          "observation_end": "2023-12-31",
+          "limitation": "日本HDI数据来自非官方聚合站点，日期未知，仅作美日相对位次的边界参考，不作为官方结论。"
+        },
+        {
+          "evidence_id": "prior-95a5d86b3acdea51bb21",
+          "relation": "background",
+          "quote": "NSF《2024美国科学与工程状况》显示美国仍有庞大研发体系，同时中国研发增长改变国际格局；只使用文中实际年份。",
+          "publication_date": "2024-03-13",
+          "observation_end": null,
+          "limitation": "摘要性描述，未给出具体年份数值；只能说明美国研发体系仍庞大且格局变化，不能量化领先幅度或证明最发达地位变化。"
+        },
+        {
+          "evidence_id": "ev-d1bfb591f23b6f4d01aefee0",
+          "relation": "background",
+          "quote": "United States | 152.4 | 268.6 | 408.5 | 806.0 | 5,963 | 10,251 | 15,049 | 23,315 | 2.56 | 2.62 | 2.71 | 3.46",
+          "publication_date": null,
+          "observation_end": "2021-12-31",
+          "limitation": "GERD为PPP美元口径，美国研发总量领先但研发强度3.46%并非全球最高；数据止于2021年，日期未知。"
+        },
+        {
+          "evidence_id": "ev-5318b34cdb340c816b8ef9ff",
+          "relation": "counter",
+          "quote": "- Israel\n\n6.3%\n- South Korea\n\n4.9%\n- United States\n\n3.4%\n- Japan\n\n3.4%",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "研发强度美国与日本并列3.4%，低于以色列、韩国，说明并非所有维度都居首；页面日期未知，数据来源为UNESCO/World Bank聚合。"
+        }
+      ],
+      "remaining_gap": "缺少1991—2024年连续、同口径的美日人均GDP与综合竞争力序列，以及“最发达”的统一定义；日本HDI来源为非官方站点，需官方数据复核。现有证据不足以判断“最发达地位”是否部分丧失，需补充能直接检验该后果的同口径证据。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "王沪宁1991年著作中基于当时美日竞争提出的判断：美国以个人主义、享乐主义和民主主义为基础的体制，似乎难以保证美国保持“最发达”地位。可观察口径包括：1991年至截止日美国是否在综合发达程度（如HDI及其分项）、经济总量与人均水平、研发与创新体系等维度保持领先或相对优势；反证包括美国在上述维度持续领先、与日本差距扩大或日本相对衰落。保留“似乎”“难以保证”的或然措辞和未指定期限，不把“最发达”单一化为HDI排名或GDP总量，也不把日本必定超过美国当作作者原意。",
+  "elapsed_seconds": 45.289,
+  "completed_at": "2026-11-09T08:02:22.481124+00:00"
+}

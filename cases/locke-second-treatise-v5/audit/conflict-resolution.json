@@ -1,0 +1,493 @@
+{
+  "ledger_files": 98,
+  "ledger_predictions": 36,
+  "imported_forecasts": 33,
+  "arithmetic": [
+    "唯一账本98个文件、36条预测。",
+    "txt-00054 同一句两截合成一条，减1。",
+    "txt-00060 城市两面合成一条，减1。",
+    "txt-00084 删去认识当下图谋的一句，减1。",
+    "36-3=33。没有别的删除。"
+  ],
+  "conflict_chunks_found_in_part_directories": 15,
+  "previous_note_said": 14,
+  "previous_note_omitted": "txt-00079",
+  "intermediate_demotion_not_current": {
+    "what_it_was": "第一次对齐时，三句的 changes 被换行拆开，stated_change 失败，policy 曾标 not_resolvable_forecast。",
+    "ids": [
+      "txt-720196308b-000023834-000023924",
+      "txt-720196308b-000059144-000059403",
+      "txt-720196308b-000067337-000067495"
+    ],
+    "current": "第二次导入已把 changes 改成正文里的连续片段，三条都是现行 forecast，不是已撤销的抽取。其中第一条的计分已因对象不成立改为暂无法判断，抽取本身仍保留。"
+  },
+  "chunks": [
+    {
+      "chunk": "txt-00007",
+      "version_counts": {
+        "ledger": 1,
+        "part-a": 1
+      },
+      "decision": "ledger 的短句是 part-a 更完整一句的子串。现行导入用完整句。不是降级。",
+      "distinct_quotes": [
+        {
+          "holders": [
+            "ledger"
+          ],
+          "subset_of_longer": true,
+          "quote": "the world never was, nor ever will be, without numbers of men in that"
+        },
+        {
+          "holders": [
+            "part-a"
+          ],
+          "subset_of_longer": false,
+          "quote": "it is plain the world never was, nor ever will be, without numbers of men in that state."
+        }
+      ]
+    },
+    {
+      "chunk": "txt-00018",
+      "version_counts": {
+        "ledger": 1,
+        "part-a": 1,
+        "part-b": 1
+      },
+      "decision": "part-b 的 will quickly be too hard 是 ledger 长句的子串。现行用长句。",
+      "distinct_quotes": [
+        {
+          "holders": [
+            "ledger",
+            "part-a"
+          ],
+          "subset_of_longer": false,
+          "quote": "that prince, who shall be so wise and godlike, as by established laws of liberty to secure protection and encouragement to the honest industry of mankind, against the oppression of"
+        },
+        {
+          "holders": [
+            "part-b"
+          ],
+          "subset_of_longer": true,
+          "quote": "will quickly be too hard for his neighbours"
+        }
+      ]
+    },
+    {
+      "chunk": "txt-00020",
+      "version_counts": {
+        "ledger": 2,
+        "part-a": 2,
+        "part-b": 1
+      },
+      "decision": "part-b 只有第二句的后半。ledger 两条是不同条件，都在正文里，现行两条都留。",
+      "distinct_quotes": [
+        {
+          "holders": [
+            "ledger",
+            "part-a"
+          ],
+          "subset_of_longer": false,
+          "quote": "Where there is not some thing, both lasting and scarce, and so valuable to be hoarded up, there men will not be apt to enlarge their possessions of land, were it never so rich, nev"
+        },
+        {
+          "holders": [
+            "ledger",
+            "part-a"
+          ],
+          "subset_of_longer": false,
+          "quote": "Find out something that hath the use and value of money amongst his neighbours, you shall see the same man will begin presently to enlarge his possessions."
+        },
+        {
+          "holders": [
+            "part-b"
+          ],
+          "subset_of_longer": true,
+          "quote": "you shall see the same man will begin presently to enlarge his possessions"
+        }
+      ]
+    },
+    {
+      "chunk": "txt-00053",
+      "version_counts": {
+        "ledger": 2,
+        "part-c": 0
+      },
+      "decision": "part-c 后来这份是空的。两句都在正文里，且不是子串关系，现行保留 ledger 的两条。",
+      "distinct_quotes": [
+        {
+          "holders": [
+            "ledger"
+          ],
+          "subset_of_longer": false,
+          "quote": "with this trust, that they shall be governed by declared laws, or else their peace, quiet, and property will still be at the same uncertainty, as it was in the state of nature."
+        },
+        {
+          "holders": [
+            "ledger"
+          ],
+          "subset_of_longer": false,
+          "quote": "mankind will be in a far worse condition than in the state of nature, if they shall have armed one, or a few men with the joint power of a multitude, to force them to obey at pleas"
+        }
+      ]
+    },
+    {
+      "chunk": "txt-00054",
+      "version_counts": {
+        "ledger": 2,
+        "part-c": 1
+      },
+      "decision": "ledger 把同一句拆成两条。现行改用 part-c 连在一起的一条。这一步从36里减1。",
+      "distinct_quotes": [
+        {
+          "holders": [
+            "ledger"
+          ],
+          "subset_of_longer": false,
+          "quote": "in governments, where the legislative is in one lasting assembly always in being, or in one man, as in absolute monarchies, there is danger still, that they will think themselves t"
+        },
+        {
+          "holders": [
+            "ledger"
+          ],
+          "subset_of_longer": true,
+          "quote": "and so will be apt to increase their own riches and power, by taking what they think fit from the people"
+        },
+        {
+          "holders": [
+            "part-c"
+          ],
+          "subset_of_longer": false,
+          "quote": "danger still, that they will think themselves to have a distinct interest from the rest of the community; and so will be apt to increase their own riches and power, by taking what "
+        }
+      ]
+    },
+    {
+      "chunk": "txt-00057",
+      "version_counts": {
+        "ledger": 1,
+        "part-c": 1,
+        "part-d": 1
+      },
+      "decision": "part-d 的短句是长句的子串。现行用含分开指挥的长句。",
+      "distinct_quotes": [
+        {
+          "holders": [
+            "ledger",
+            "part-c"
+          ],
+          "subset_of_longer": false,
+          "quote": "the executive and federative power should be placed in persons, that might act separately, whereby the force of the public would be under different commands: which would be apt som"
+        },
+        {
+          "holders": [
+            "part-d"
+          ],
+          "subset_of_longer": true,
+          "quote": "which would be apt some time or other to cause disorder and ruin."
+        }
+      ]
+    },
+    {
+      "chunk": "txt-00058",
+      "version_counts": {
+        "ledger": 1,
+        "part-c": 1,
+        "part-d": 1
+      },
+      "decision": "part-d 的短句是长句的子串。现行用含 very little 的长句。",
+      "distinct_quotes": [
+        {
+          "holders": [
+            "ledger",
+            "part-c"
+          ],
+          "subset_of_longer": false,
+          "quote": "the supreme executive power vested in one, who having a share in the legislative, has no distinct superior legislative to be subordinate and accountable to, farther than he himself"
+        },
+        {
+          "holders": [
+            "part-d"
+          ],
+          "subset_of_longer": true,
+          "quote": "so that he is no more subordinate than he himself shall think fit, which one may certainly conclude will be but very little."
+        }
+      ]
+    },
+    {
+      "chunk": "txt-00060",
+      "version_counts": {
+        "ledger": 3,
+        "part-c": 3,
+        "part-d": 1
+      },
+      "decision": "part-d 的短句是会议那条的子串。城市衰落和别处兴起是同一句的两面，现行合成一条。这一步从36里减1。",
+      "distinct_quotes": [
+        {
+          "holders": [
+            "ledger",
+            "part-c"
+          ],
+          "subset_of_longer": false,
+          "quote": "Constant frequent meetings of the legislative, and long continuations of their assemblies, without necessary occasion, could not but be burdensome to the people, and must necessari"
+        },
+        {
+          "holders": [
+            "ledger",
+            "part-c"
+          ],
+          "subset_of_longer": false,
+          "quote": "flourishing mighty cities come to ruin, and prove in times neglected desolate corners"
+        },
+        {
+          "holders": [
+            "ledger",
+            "part-c"
+          ],
+          "subset_of_longer": false,
+          "quote": "other unfrequented places grow into populous countries, filled with wealth and inhabitants"
+        },
+        {
+          "holders": [
+            "part-d"
+          ],
+          "subset_of_longer": true,
+          "quote": "necessary occasion, could not but be burdensome to the people, and must necessarily in time produce more dangerous inconveniencies"
+        }
+      ]
+    },
+    {
+      "chunk": "txt-00061",
+      "version_counts": {
+        "ledger": 2,
+        "part-c": 2,
+        "part-d": 0
+      },
+      "decision": "part-d 为空。两条都在正文里，现行保留。",
+      "distinct_quotes": [
+        {
+          "holders": [
+            "ledger",
+            "part-c"
+          ],
+          "subset_of_longer": false,
+          "quote": "comes to pass, that in governments, where part of the legislative consists of representatives chosen by the people, that in tract of time this representation becomes very unequal a"
+        },
+        {
+          "holders": [
+            "ledger",
+            "part-c"
+          ],
+          "subset_of_longer": false,
+          "quote": "to have a fair and equal representative; whoever brings it nearest to that, is an undoubted friend to, and establisher of the government, and cannot miss the consent and approbatio"
+        }
+      ]
+    },
+    {
+      "chunk": "txt-00065",
+      "version_counts": {
+        "ledger": 1,
+        "part-c": 1,
+        "part-d": 0
+      },
+      "decision": "part-d 为空。原句在正文里，现行保留。",
+      "distinct_quotes": [
+        {
+          "holders": [
+            "ledger",
+            "part-c"
+          ],
+          "subset_of_longer": false,
+          "quote": "Nor let any one think, this lays a perpetual foundation for disorder; for this operates not, till the inconveniency is so great, that the majority feel it, and are weary of it, and"
+        }
+      ]
+    },
+    {
+      "chunk": "txt-00074",
+      "version_counts": {
+        "ledger": 1,
+        "part-c": 1,
+        "part-d": 0
+      },
+      "decision": "part-d 为空。原句在正文里，现行保留。",
+      "distinct_quotes": [
+        {
+          "holders": [
+            "ledger",
+            "part-c"
+          ],
+          "subset_of_longer": false,
+          "quote": "and has no better a right of principality, he, nor any of his successors, than Hingar, or Hubba, the Danes, had here in England; or Spartacus, had he conquered Italy, would have ha"
+        }
+      ]
+    },
+    {
+      "chunk": "txt-00079",
+      "version_counts": {
+        "ledger": 4,
+        "part-d": 4,
+        "part-e": 4
+      },
+      "decision": "part-d 与 part-e 的条数不同。现行 ledger 的四条都能在正文里找到，且不是彼此的子串，所以四条都留。上一份说明漏了这一块，所以冲突是15块不是14块。",
+      "distinct_quotes": [
+        {
+          "holders": [
+            "ledger",
+            "part-d"
+          ],
+          "subset_of_longer": true,
+          "quote": "the right of resisting, even in such manifest acts of tyranny, will not suddenly, or on slight occasions, disturb the government: for if it reach no farther than some private men’s"
+        },
+        {
+          "holders": [
+            "ledger",
+            "part-d",
+            "part-e"
+          ],
+          "subset_of_longer": false,
+          "quote": "if either these illegal acts have extended to the majority of the people; or if the mischief and oppression has lighted only on some few, but in such cases, as the precedent, and c"
+        },
+        {
+          "holders": [
+            "ledger",
+            "part-d",
+            "part-e"
+          ],
+          "subset_of_longer": false,
+          "quote": "as impossible for a governor, if he really means the good of his people, and the preservation of them, and their laws together, not to make them see and feel it"
+        },
+        {
+          "holders": [
+            "ledger",
+            "part-d",
+            "part-e"
+          ],
+          "subset_of_longer": false,
+          "quote": "if a long train of actions shew the councils all tending that way; how can a man any more hinder himself from being persuaded in his own mind, which way things are going; or from c"
+        },
+        {
+          "holders": [
+            "part-e"
+          ],
+          "subset_of_longer": false,
+          "quote": "the right of resisting, even in such manifest acts of tyranny, will not suddenly, or on slight occasions, disturb the government: for if it reach no farther than some private men’s"
+        }
+      ]
+    },
+    {
+      "chunk": "txt-00084",
+      "version_counts": {
+        "ledger": 4,
+        "part-d": 4,
+        "part-e": 2
+      },
+      "decision": "part-e 只有后两条。rewards and punishments ... past doubt what is doing 是认识当下图谋，现行删除。这一步从36里减1。其余三条保留。",
+      "distinct_quotes": [
+        {
+          "holders": [
+            "ledger",
+            "part-d"
+          ],
+          "subset_of_longer": false,
+          "quote": "rewards and punishments visibly employed to the same end, and all the arts of perverted law made use of, to take off and destroy all that stand in the way of such a design, and wil"
+        },
+        {
+          "holders": [
+            "ledger",
+            "part-d"
+          ],
+          "subset_of_longer": false,
+          "quote": "They are hardly to be prevailed with to amend the acknowledged faults in the frame they have been accustomed to"
+        },
+        {
+          "holders": [
+            "ledger",
+            "part-d",
+            "part-e"
+          ],
+          "subset_of_longer": false,
+          "quote": "people generally ill treated, and contrary to right, will be ready upon any occasion to ease themselves of a burden that sits heavy upon them"
+        },
+        {
+          "holders": [
+            "ledger",
+            "part-d",
+            "part-e"
+          ],
+          "subset_of_longer": false,
+          "quote": "They will wish, and seek for the opportunity, which in the change, weakness and accidents of human affairs, seldom delays long to offer itself"
+        }
+      ]
+    },
+    {
+      "chunk": "txt-00085",
+      "version_counts": {
+        "ledger": 4,
+        "part-d": 4,
+        "part-e": 2
+      },
+      "decision": "part-e 只有前两条。后两条也在正文里，现行四条都留。",
+      "distinct_quotes": [
+        {
+          "holders": [
+            "ledger",
+            "part-d",
+            "part-e"
+          ],
+          "subset_of_longer": false,
+          "quote": "Great mistakes in the ruling part, many wrong and inconvenient laws, and all the slips of human frailty, will be born by the people without mutiny or murmur"
+        },
+        {
+          "holders": [
+            "ledger",
+            "part-d",
+            "part-e"
+          ],
+          "subset_of_longer": false,
+          "quote": "long train of abuses, prevarications and artifices, all tending the same way, make the design visible to the people, and they cannot but feel what they lie under, and see whither t"
+        },
+        {
+          "holders": [
+            "ledger",
+            "part-d"
+          ],
+          "subset_of_longer": false,
+          "quote": "this doctrine of a power in the people of providing for their safety a-new, by a new legislative, when their legislators have acted contrary to their trust, by invading their prope"
+        },
+        {
+          "holders": [
+            "ledger",
+            "part-d"
+          ],
+          "subset_of_longer": false,
+          "quote": "they who are in power, (by the pretence they have to authority, the temptation of force they have in their hands, and the flattery of those about them) being likeliest to do"
+        }
+      ]
+    },
+    {
+      "chunk": "txt-00086",
+      "version_counts": {
+        "ledger": 1,
+        "part-d": 1,
+        "part-e": 1
+      },
+      "decision": "ledger 短句是 part-e 含 such men may stir 的长句的子串。现行用长句。",
+      "distinct_quotes": [
+        {
+          "holders": [
+            "ledger",
+            "part-d"
+          ],
+          "subset_of_longer": true,
+          "quote": "but it will be only to their own just ruin and perdition: for till the mischief be grown general, and the ill designs of the rulers become visible, or their attempts sensible to th"
+        },
+        {
+          "holders": [
+            "part-e"
+          ],
+          "subset_of_longer": false,
+          "quote": "such men may stir, whenever they please; but it will be only to their own just ruin and perdition: for till the mischief be grown general, and the ill designs of the rulers become "
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000737630-000737673",
+  "plan": {
+    "object": "在腐败城市里长大、不肯承认别人更高、宁可看着祖国毁灭的那种嫉妒。同段前一种嫉妒可以由重大危险熄灭，不是这句。",
+    "condition": "envy such as this。这种嫉妒。一般的政敌和解，若不是宁可毁国也不让步，就不是这句。",
+    "quantifier": "no cure save。除了这种人死去，没有办法。一次没有死亡的和解，若对象不是这种嫉妒，不能反驳；一次死亡也不能单独证明没有别的办法。",
+    "result": "登记变化是 no cure。没有办法，除非占有这种嫉妒的人死去。",
+    "window": "1531至2026-11-15。卡米卢斯、摩西、萨沃纳罗拉和索代里尼是出版前或作者自己的例子。",
+    "counterevidence_needed": "这种宁可毁国的嫉妒在双方都活着时消失；或者只在死亡时消失。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "political rival's envy ended only when he died and the survivor could then act",
+      "counter_query": "political rivals reconciled and the envy ended while both were still alive"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [],
+    "dropped": "支持检索打开的是本书第三十章。反对检索里的亚当斯与杰斐逊、穆加贝与茨万吉拉伊，是政敌和解，页面没有写他们宁可看着祖国毁灭也不让步。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "no cure 只针对这种嫉妒。本书不能独立核验。活着时的普通和解不进入这句。",
+    "reason": "支持检索命中的是《李维史论》这一章，不能用来核验它自己。反对检索找到活着时和解的政敌，但那些页面没有把嫉妒写成在腐败里养成、不肯承认更高、宁可祖国毁灭的那种。因此既不能证明除了死亡没有办法，也不能用普通和解来反驳。决定性缺口是：1531年之后没有已存档正文写出这种嫉妒，以及它是否只随死亡消失。",
+    "limitation": "没有可引用的出版后正文。未保存摘要不计。",
+    "method": "先把嫉妒限制在同段这种，再看除了死亡还有没有办法。本书和普通和解都不代替。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "支持检索是本书。活着时的和解没有写成这种宁可毁国的嫉妒。"
+  }
+}

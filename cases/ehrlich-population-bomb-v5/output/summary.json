@@ -1,0 +1,56 @@
+{
+  "book": "人口爆炸",
+  "cutoff": "2026-11-15",
+  "rules_version": "simple-v3-trend-four-class",
+  "candidates": 50,
+  "assessment_reviewed": 50,
+  "unreviewed": 0,
+  "extraction_v2_reviewed": 50,
+  "expanded_claims_n": 50,
+  "unresolved_references_n": 0,
+  "legacy_extraction_reviewed": 0,
+  "whole_candidate_pass_complete": true,
+  "candidate_completion_rate": 1.0,
+  "forecast_n": 50,
+  "verdicts": {
+    "正确": 7,
+    "部分符合": 16,
+    "错误": 24,
+    "暂无法判断": 3
+  },
+  "display_verdicts": {
+    "正确": 7,
+    "趋势符合": 2,
+    "部分符合": 14,
+    "错误": 24,
+    "暂无法判断": 3
+  },
+  "display_schema": "five-categories-trend-separate",
+  "excluded": {
+    "nonforecast": 0,
+    "duplicate": 0
+  },
+  "decided_n": 47,
+  "forecasts_with_bound_evidence": 50,
+  "forecasts_without_bound_evidence": 0,
+  "no_decidable_outcomes": false,
+  "trend_aligned_n": 2,
+  "evaluation_coverage": 0.94,
+  "correct_share_of_decided": 0.14893617021276595,
+  "unresolved_bases": {
+    "conditional": 3
+  },
+  "evidence": 114,
+  "evidence_hash_verified": 114,
+  "method_attribution": {
+    "inferred": 50
+  },
+  "interpretation": "Retrospective parent-record counts, not independent forecast accuracy or prospective skill.",
+  "brier": null,
+  "partial_numeric_weight": null,
+  "prepublication_observation_warning_ids": [],
+  "horizon_sources": {
+    "explicit": 24,
+    "implicit_publication_to_cutoff": 26
+  }
+}

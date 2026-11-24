@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000597733-000597796",
+  "plan": {
+    "object": "被紧迫必要推着的人。必要是已经没有时间另作安排，只能先对君主做他正要对你做的事。同段的例子是科摩德斯把他们写进次夜的死亡名单，他们当夜先杀了他。",
+    "condition": "A necessity of this sort。必须是他已经要加害于你，而你先下手。一般的宫廷密谋、宫女因虐待或谣言起事，不算这种必要。",
+    "quantifier": "almost always。几乎总是，允许很少的例外。一次达到所要结局不能证明几乎总是；一次失败也不能单独反驳几乎总是。",
+    "result": "登记变化是 the end desired。所要的结局是先做成对他要做的那件事。例子里是先把君主杀死。",
+    "window": "1531至2026-11-15。科摩德斯和卡拉卡拉是出版前的例子。",
+    "counterevidence_needed": "多起这种先下手的事几乎都达到所要结局；或者这种必要之下失败的次数多到不再是几乎总是。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "learned the king meant to execute him and killed the king first the same night",
+      "counter_query": "plotters tried to kill the ruler first because he was about to execute them and the attempt failed"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://www.iranicaonline.org/articles/aga-mohammad-khan/"],
+    "dropped": "1542年壬寅宫变的绳子没有勒死嘉靖，但页面写的起因是红铅、收集露水和要嫁祸端妃，没有写他已经下令处死这些宫女。反对检索没有另给出一个先下手失败的同条件事例。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "satisfied",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-iranica-agha-1797"],
+    "scope": "almost always 需要这类必要下的多次结局。一次当夜杀死君主只说明所要结局可以发生。",
+    "reason": "伊朗百科写，阿迦·穆罕默德下令处死两名喧哗的仆人，把执行推迟到星期五之后，却仍让已被定罪的人继续伺候；1797年6月17日当夜他们刺死了他。这是他正要处死他们，他们先把他杀死，所要的结局发生了。一次成功不能把几乎总是定下来。1542年的宫变失败了，但页面没有写皇帝已经要处死那些宫女。决定性缺口是：没有一组同类必要的结局，能看出几乎总是达到，或失败已经多过几乎总是。",
+    "limitation": "百科的出版信息是1984年12月15日发表、2018年6月5日更新。死亡日写1797年6月17日。没有样本次数。",
+    "method": "先确认他正要加害、对方先下手，再看几乎总是。单次成功只保留，不计成几乎总是。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "1797年6月17日两名已被判处死刑的仆人当夜刺死国王。这是一次所要结局，不是几乎总是。壬寅宫变没有同一必要。"
+  }
+}

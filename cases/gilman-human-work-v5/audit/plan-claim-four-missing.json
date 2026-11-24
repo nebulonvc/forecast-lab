@@ -1,0 +1,41 @@
+{
+  "written_at": "2026-11-20T02:40:00Z",
+  "not_backdated": true,
+  "why": "这四条现行评估没有 plan* 文件。本文件现在补上对象、条件和实际要用的查询，不把日期写成当初检索之前。随后重读已存正文；缺正文的反证再检索一次。",
+  "claims": [
+    {
+      "id": "txt-37a5a0ec54-000156558-000156685",
+      "object": "开始把动态、法则和静态事实一起教给孩子的教育，不久消除把鲁滨逊漂流记当成独居人类的那种无知。",
+      "condition": "无。soon 没有另写日期。",
+      "support_query": "history of biology in secondary school curriculum 20th century official",
+      "counter_query": "Robinson Crusoe still taught as the self-sufficient individual official curriculum or textbook",
+      "already_saved": "data/sources/ev-eric-biology-19610201.pdf",
+      "prior_record": "audit/search-close-20261120.json recorded the biology page and an unsaved counter search"
+    },
+    {
+      "id": "txt-37a5a0ec54-000535883-000536277",
+      "object": "如果全体儿童被充分教育并专门发展，这种威胁性出生率会稳定下降。",
+      "condition": "全体儿童受到那种教育。条件未出现时，全球平均生育率不是这句的人口。",
+      "support_query": "UN World Population Prospects 2024 fertility decline after universal child education",
+      "counter_query": "UN 2024 high-fertility regions still elevated live births",
+      "already_saved": ["data/sources/ev-un-press-2024-07.html", "data/sources/ev-un-wpp-messages-20240711.html"]
+    },
+    {
+      "id": "txt-37a5a0ec54-000536278-000536404",
+      "object": "稳步走向出生与死亡的永久平衡。",
+      "condition": "toward 在引文里，没有写出完成日。投影不是观测。",
+      "support_query": "UN WPP 2024 fertility and population peak",
+      "counter_query": "observed global births versus deaths count dated",
+      "already_saved": ["data/sources/ev-un-press-2024-07.html", "data/sources/ev-un-wpp-2024.pdf", "data/sources/ev-owid-births-read.html"],
+      "prior_record": "audit/search-close-20261120.json has the 403s for database.earth and Visual Capitalist"
+    },
+    {
+      "id": "txt-37a5a0ec54-000540242-000540485",
+      "object": "如果教育儿童、激励成人并提供正当社会服务，贫民区不久变成公平、清洁、有益健康的城区。",
+      "condition": "教育儿童等条件。贫民人口比例下降不是公平、清洁、有益健康。",
+      "support_query": "UN-Habitat slum population share decline fair clean healthful cities",
+      "counter_query": "UN-Habitat absolute slum population still above one billion",
+      "already_saved": ["data/sources/ev-sdg11-20230713.html", "data/sources/ev-slum-share-2023.html"]
+    }
+  ]
+}

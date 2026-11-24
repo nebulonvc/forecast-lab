@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000701469-000701586",
+  "plan": {
+    "object": "用强力维持共和国或统治的人，以及承受这强力的人。",
+    "condition": "when he who suffers is stronger than he who uses the force。承受者必须已经强过用强力的人。抵抗使占领代价变高，还不等于承受者更强。",
+    "quantifier": "we may expect。可以期望随时看到强力结束。这是期望，不是必定。一次结束不能证明可以期望；一次强力继续，若承受者并不更强，也不能反驳这个期望。",
+    "result": "登记变化是 brought to an end。结束的是这强力。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "承受者已经更强，而强力结束或仍在。期望不要求每一次都结束。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "occupation ended when the occupied people became stronger than the occupier",
+      "counter_query": "weaker occupier kept control after the occupied people became stronger"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [],
+    "dropped": "支持检索写美国对海地、多米尼加和尼加拉瓜的占领因当地抵抗而结束。页面没有写被占领者已经强过占领者。反对检索没有单独打开一页。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "at any moment",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "may expect 不是必定。条件是承受者更强。抵抗导致撤军不等于承受者更强。",
+    "reason": "支持检索的书评写，海地1915至1934年、多米尼加1916至1924年、尼加拉瓜1912至1933年的占领，结束的原因主要是当地抵抗，而不是美国国内因素。书评没有写被占领的人已经强过美国。因此这些撤军不进入“承受者更强”。may expect 本来就不是每一次都结束。决定性缺口是：没有正文写出承受者已经更强，以及强力随后结束或仍在。",
+    "limitation": "书评没有存成可逐字引用的正文，所以不把年份和国名写成已核对的摘录。未保存的摘要不用来计分。",
+    "method": "先看谁更强，再看强力是否可以期望结束。抵抗本身不代替更强。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "占领因抵抗结束，页面没有写被占领者更强。may expect 也不由一次撤军证明。"
+  }
+}

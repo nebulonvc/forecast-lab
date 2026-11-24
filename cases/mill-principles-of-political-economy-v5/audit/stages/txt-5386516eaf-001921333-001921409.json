@@ -1,0 +1,70 @@
+{
+  "id": "txt-5386516eaf-001921333-001921409",
+  "assess": {
+    "id": "txt-5386516eaf-001921333-001921409",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "依赖与保护的理论会越来越让劳动者无法忍受，他们会要求自己的行为和处境基本上由自己治理。原ID跨度就是这句，不拆成新ID。",
+    "reason": "已归档的句子说社会保障曾是阶级自己的互助会和工会，不是国家。那是早期制度史，不是1909年之后依赖与保护的理论变得无法忍受，也不是他们要求自治。",
+    "limitation": "福利国家的使用不能直接当成接受或拒绝家长式保护。",
+    "evidence_ids": [
+      "ev-therborn-2002"
+    ],
+    "method": "支持检索劳动者是否拒绝依赖并要求自治，反证检索他们是否继续寻求保护。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-therborn-2002",
+        "quote": "was not an aspect of the state, \nbut of autonomous class or popular institutions, friendly societies and trade unions in",
+        "relation": "boundary",
+        "limitation": "早期互助，不是此后的自治要求。",
+        "observation_end": "1900-12-31",
+        "publication_date": "2002",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺1909年之后劳动者是否越来越无法忍受依赖与保护、并要求处境由自己治理的同对象证据。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001921333-001921409",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "workers rejected dependence and demanded self-government"
+      },
+      {
+        "role": "counter",
+        "query": "workers continued to seek protection from employers and the state"
+      }
+    ],
+    "note": "无 executed=true。ID保持原字符跨度，不另造子ID。"
+  },
+  "select": {
+    "urls": [
+      "https://helda.helsinki.fi/server/api/core/bitstreams/5686253e-cb5f-420a-bd56-b58396fd4014/content"
+    ],
+    "reason": "互助史不是这句的两个分句。"
+  }
+}

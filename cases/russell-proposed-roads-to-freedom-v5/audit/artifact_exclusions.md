@@ -1,0 +1,1 @@
+全文TXT、101个chunk正文与上下文、batch计划、请求/响应缓存、checkpoint和含context的导入前快照均仅存于worker私有work，不在case/bundle。确定性claims_proposals生成后同样清空context；data/claims所有context为空。Exa原始请求/响应缓存在work保留，实际检索日志与全部使用源存档在case内。

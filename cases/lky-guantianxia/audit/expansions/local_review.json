@@ -1,0 +1,1150 @@
+{
+  "reviewer": "session_llm",
+  "human_reviewed": false,
+  "scope": "Review all expansion text; correct unsupported references, visible uncertainty and salient semantic errors. Not a fresh whole-book source review.",
+  "context_additions": [
+    {
+      "id": "e2e_s02_p099_02",
+      "source_id": "e2e_s02_p099_01",
+      "source_field": "quote",
+      "addition": "补充语境（同书候选 e2e_s02_p099_01，PDF 第 99 页，原文短引文）：台灣與大陸的重新統一是時間的問題，這是任何國家無法阻擋的。"
+    },
+    {
+      "id": "e2e_s02_p105_01",
+      "source_id": "e2e_s02_p104_02",
+      "source_field": "context",
+      "addition": "补充语境（同书候选 e2e_s02_p104_02，PDF 第 104 页，已存研究语境）：南海島沙洲主權爭議；距離最近的方案在原文為已表達立場/辦法，不另作李獨立預見或新增命中。"
+    },
+    {
+      "id": "e2e_s02_p112_02",
+      "source_id": "e2e_s02_p112_01",
+      "source_field": "quote",
+      "addition": "补充语境（同书候选 e2e_s02_p112_01，PDF 第 112 页，原文短引文）：在中國開放後出生和成長起來的新一代，有一天將掌管他們的國家。他們會改變。"
+    },
+    {
+      "id": "e2e_s02_p216_02",
+      "source_id": "e2e_s02_p216_01",
+      "source_field": "quote",
+      "addition": "补充语境（同书候选 e2e_s02_p216_01，PDF 第 216 页，原文短引文）：印度或許需要經歷數十年，甚至是數百年的逐漸變化，才能擺脫種姓制度的影響。"
+    },
+    {
+      "id": "e2e_s02_p169_01",
+      "source_id": "e2e_s02_p168_01",
+      "source_field": "quote",
+      "addition": "补充语境（同书候选 e2e_s02_p168_01，PDF 第 168 页，原文短引文）：在歐洲前方的是苦日子。"
+    },
+    {
+      "id": "e2e_s02_p312_02",
+      "source_id": "e2e_s02_p312_03",
+      "source_field": "quote",
+      "addition": "补充语境（同书候选 e2e_s02_p312_03，PDF 第 312 页，原文短引文）：美國永遠都會對中東感興趣，因為這裡有豐富資源。"
+    },
+    {
+      "id": "e2e_s02_p317_03",
+      "source_id": "e2e_s02_p312_03",
+      "source_field": "quote",
+      "addition": "补充语境（同书候选 e2e_s02_p312_03，PDF 第 312 页，原文短引文）：美國永遠都會對中東感興趣，因為這裡有豐富資源。"
+    }
+  ],
+  "changes": [
+    {
+      "id": "lky_17bc48662db63535560c",
+      "before": {
+        "id": "lky_17bc48662db63535560c",
+        "expanded_claim": "李光耀承接“经济改善减弱革命意愿”的论述指出：新阶层在设法进入并稳固地位后，就有可能要求更多透明度、要求在国家治理方面有更多发言权，但这可能是若干年后的事。",
+        "reference_resolutions": [
+          {
+            "expression": "他們",
+            "referent": "新阶层",
+            "support_quote": "承接作者說經濟改善減弱革命意願"
+          }
+        ],
+        "unresolved_references": []
+      },
+      "after": {
+        "id": "lky_17bc48662db63535560c",
+        "expanded_claim": "在设法进入新阶层并稳固地位后，原文所指的人群可能要求更多透明度和国家治理发言权，但可能还需若干年。[指代待确认：他们具体涵盖的人群]",
+        "reference_resolutions": [],
+        "unresolved_references": [
+          "他们具体涵盖的人群"
+        ]
+      }
+    },
+    {
+      "id": "e2e_s02_p099_02",
+      "before": {
+        "id": "e2e_s02_p099_02",
+        "expanded_claim": "李光耀判断，两岸经济关系在今后四年内还将继续发展；双方经济关系在馬總統上台后一直在发展只是过去背景，真正的未来判断是今后四年内继续发展，而发言日期未知，不能擅自将“今后四年”等同于特定的四个日历年份。",
+        "reference_resolutions": [
+          {
+            "expression": "雙方的經濟關係",
+            "referent": "台灣與大陸的經濟關係",
+            "support_quote": "台灣與大陸的重新統一是時間的問題"
+          },
+          {
+            "expression": "馬總統",
+            "referent": "馬英九",
+            "support_quote": "雙方的經濟關係在馬總統上台後一直在發展"
+          }
+        ],
+        "unresolved_references": []
+      },
+      "after": {
+        "id": "e2e_s02_p099_02",
+        "expanded_claim": "李光耀认为，台湾与大陆的经济关系在马总统上台后一直发展，今后四年内还将继续发展；发言日期未确定，不能据此指定四个日历年份。",
+        "reference_resolutions": [
+          {
+            "expression": "雙方",
+            "referent": "台湾与大陆",
+            "support_quote": "台灣與大陸的重新統一是時間的問題"
+          }
+        ],
+        "unresolved_references": []
+      }
+    },
+    {
+      "id": "e2e_s02_p105_01",
+      "before": {
+        "id": "e2e_s02_p105_01",
+        "expanded_claim": "李光耀认为，南海争端将以双边方式处理；印尼、马来西亚或新加坡都不会带领东盟卷入这场争端。",
+        "reference_resolutions": [
+          {
+            "expression": "這場爭端",
+            "referent": "南海争端",
+            "support_quote": "南海爭端"
+          }
+        ],
+        "unresolved_references": []
+      },
+      "after": {
+        "id": "e2e_s02_p105_01",
+        "expanded_claim": "李光耀认为，南海岛礁主权争端会以双边方式处理；印尼、马来西亚或新加坡都不会带领东盟卷入这场争端。",
+        "reference_resolutions": [
+          {
+            "expression": "這場爭端",
+            "referent": "南海岛礁主权争端",
+            "support_quote": "南海島沙洲主權爭議"
+          }
+        ],
+        "unresolved_references": []
+      }
+    },
+    {
+      "id": "e2e_s02_p105_02",
+      "before": {
+        "id": "e2e_s02_p105_02",
+        "expanded_claim": "李光耀对美国是否为越南和菲律宾的利益在军事上卷入与中国交战存疑，认为美国不会为越菲利益在军事上卷入与中国交战。",
+        "reference_resolutions": [
+          {
+            "expression": "他們",
+            "referent": "美國",
+            "support_quote": "美國外交捲入已是背景"
+          }
+        ],
+        "unresolved_references": []
+      },
+      "after": {
+        "id": "e2e_s02_p105_02",
+        "expanded_claim": "李光耀对美国是否会为越南、菲律宾的利益在军事上卷入与中国的冲突表示怀疑；这是存疑判断，不是所有情境下美国绝不会出兵的断言。",
+        "reference_resolutions": [
+          {
+            "expression": "他們",
+            "referent": "美国",
+            "support_quote": "美國外交捲入已是背景"
+          }
+        ],
+        "unresolved_references": []
+      }
+    },
+    {
+      "id": "e2e_s02_p112_02",
+      "before": {
+        "id": "e2e_s02_p112_02",
+        "expanded_claim": "李光耀认为，当中国开放后成长起来的新一代开始意识到自己能做的仍然有限时，他们就会停下来进行反思。",
+        "reference_resolutions": [
+          {
+            "expression": "他們",
+            "referent": "中国开放后出生和成长起来的新一代",
+            "support_quote": "在中國開放後出生和成長起來的新一代，有一天將掌管他們的國家。"
+          }
+        ],
+        "unresolved_references": []
+      },
+      "after": {
+        "id": "e2e_s02_p112_02",
+        "expanded_claim": "李光耀认为，当中国开放后出生、成长并将掌管国家的新一代意识到自身能做的仍有限时，他们就会停下来反思。",
+        "reference_resolutions": [
+          {
+            "expression": "他們",
+            "referent": "将掌管中国的新一代",
+            "support_quote": "在中國開放後出生和成長起來的新一代，有一天將掌管他們的國家。"
+          }
+        ],
+        "unresolved_references": []
+      }
+    },
+    {
+      "id": "e2e_s02_p116_01",
+      "before": {
+        "id": "e2e_s02_p116_01",
+        "expanded_claim": "李光耀认为，最终内陆省份的水准有可能提高到沿海省份的百分之六十至七十；这里的水准未指明是GDP总量还是人均。",
+        "reference_resolutions": [],
+        "unresolved_references": [
+          "水準"
+        ]
+      },
+      "after": {
+        "id": "e2e_s02_p116_01",
+        "expanded_claim": "李光耀认为，最终内陆省份的水准有可能提高到沿海省份的百分之六十至七十；这里的水准未指明是GDP总量还是人均。[指代待确认：水準]",
+        "reference_resolutions": [],
+        "unresolved_references": [
+          "水準"
+        ]
+      }
+    },
+    {
+      "id": "e2e_s02_p148_01",
+      "before": {
+        "id": "e2e_s02_p148_01",
+        "expanded_claim": "李光耀以美国在伊拉克重建和推动民主化的既有政策教训为依据，评价改变他国制度的能力：前者（改变他国制度中的某一类目标）几乎不可能，后者（另一类目标）则根本不可能；这是对能力的一般评价，并非预告新政府事件或预测其成败。",
+        "reference_resolutions": [
+          {
+            "expression": "前者",
+            "referent": "改变他国制度中较可能的一类目标（原文未明示具体所指）",
+            "support_quote": "本段以美國既有伊拉克重建/民主化為政策教訓，談改變他國制度的能力評價"
+          },
+          {
+            "expression": "後者",
+            "referent": "改变他国制度中更不可能的一类目标（原文未明示具体所指）",
+            "support_quote": "本段以美國既有伊拉克重建/民主化為政策教訓，談改變他國制度的能力評價"
+          }
+        ],
+        "unresolved_references": [
+          "前者具体所指",
+          "后者具体所指"
+        ]
+      },
+      "after": {
+        "id": "e2e_s02_p148_01",
+        "expanded_claim": "李光耀评价美国在伊拉克重建、民主化相关目标的可行性，认为前一个目标几乎不可能，后一个目标根本不可能。[指代待确认：前者与后者各自对应的完整目标]",
+        "reference_resolutions": [],
+        "unresolved_references": [
+          "前者与后者各自对应的完整目标"
+        ]
+      }
+    },
+    {
+      "id": "e2e_s02_p169_01",
+      "before": {
+        "id": "e2e_s02_p169_01",
+        "expanded_claim": "如果他们放弃这些政策，他们的GDP大概每年会多出1%至3%的增长。",
+        "reference_resolutions": [
+          {
+            "expression": "他們",
+            "referent": "欧洲国家（实施福利政策的国家）",
+            "support_quote": "是放棄福利政策相對維持政策的未觀測反事實差額"
+          },
+          {
+            "expression": "這些政策",
+            "referent": "福利政策",
+            "support_quote": "是放棄福利政策相對維持政策的未觀測反事實差額"
+          }
+        ],
+        "unresolved_references": []
+      },
+      "after": {
+        "id": "e2e_s02_p169_01",
+        "expanded_claim": "如果欧洲国家放弃所谈福利政策，李光耀认为它们的GDP年增长会比维持这些政策的情形高约一至三个百分点；这是条件性比较，不预告政策必会放弃。",
+        "reference_resolutions": [
+          {
+            "expression": "他們",
+            "referent": "欧洲国家",
+            "support_quote": "歐洲"
+          },
+          {
+            "expression": "這些政策",
+            "referent": "所谈福利政策",
+            "support_quote": "放棄福利政策相對維持政策"
+          }
+        ],
+        "unresolved_references": []
+      }
+    },
+    {
+      "id": "e2e_s02_p169_02",
+      "before": {
+        "id": "e2e_s02_p169_02",
+        "expanded_claim": "不管他们是否乐意，他们在战后为自己创造的舒适和受到百般呵护的世界，最终会被外部力量弄垮。",
+        "reference_resolutions": [
+          {
+            "expression": "他們",
+            "referent": "欧洲人（享受福利的欧洲国家人民）",
+            "support_quote": "歐洲福利與勞工保護路線代價的未來判斷"
+          }
+        ],
+        "unresolved_references": []
+      },
+      "after": {
+        "id": "e2e_s02_p169_02",
+        "expanded_claim": "李光耀认为，不论欧洲人是否乐意，他们在战后建立的舒适、受到百般呵护的福利生活世界，最终会被外部力量弄垮；这不指欧洲在物理意义上消失。",
+        "reference_resolutions": [
+          {
+            "expression": "他們",
+            "referent": "欧洲人",
+            "support_quote": "不解讀成歐洲物理毀滅"
+          }
+        ],
+        "unresolved_references": []
+      }
+    },
+    {
+      "id": "e2e_s02_p171_01",
+      "before": {
+        "id": "e2e_s02_p171_01",
+        "expanded_claim": "只要其他条件不变，富裕的企业大亨和个别高收入者，也不太可能离开这个部族社会。",
+        "reference_resolutions": [
+          {
+            "expression": "這個部族社會",
+            "referent": "北欧同质社会",
+            "support_quote": "北歐同質社會條件下高稅不太可能逼富人離開"
+          }
+        ],
+        "unresolved_references": []
+      },
+      "after": {
+        "id": "e2e_s02_p171_01",
+        "expanded_claim": "在北欧同质社会的语境下，只要其他条件不变，富裕企业家和高收入者也不太可能因高税负而离开这一社会。",
+        "reference_resolutions": [
+          {
+            "expression": "這個部族社會",
+            "referent": "所谈北欧同质社会",
+            "support_quote": "北歐同質社會條件下高稅不太可能逼富人離開"
+          }
+        ],
+        "unresolved_references": []
+      }
+    },
+    {
+      "id": "e2e_s02_p172_01",
+      "before": {
+        "id": "e2e_s02_p172_01",
+        "expanded_claim": "这个人口变化的结果，迟早会改变他们对于慷慨援助低收入人群的看法。",
+        "reference_resolutions": [
+          {
+            "expression": "這個人口變化",
+            "referent": "瑞典接纳难民改变人口",
+            "support_quote": "主語瑞典接納難民改變人口"
+          },
+          {
+            "expression": "他們",
+            "referent": "瑞典人",
+            "support_quote": "主語瑞典接納難民改變人口"
+          }
+        ],
+        "unresolved_references": []
+      },
+      "after": {
+        "id": "e2e_s02_p172_01",
+        "expanded_claim": "瑞典接纳难民带来的人口变化，迟早会改变瑞典人对慷慨援助低收入群体的看法；具体如何改变仍待观察。",
+        "reference_resolutions": [
+          {
+            "expression": "這個人口變化",
+            "referent": "瑞典接纳难民带来的人口变化",
+            "support_quote": "主語瑞典接納難民改變人口"
+          },
+          {
+            "expression": "他們",
+            "referent": "瑞典人",
+            "support_quote": "主語瑞典接納難民改變人口"
+          }
+        ],
+        "unresolved_references": []
+      }
+    },
+    {
+      "id": "e2e_s02_p189_01",
+      "before": {
+        "id": "e2e_s02_p189_01",
+        "expanded_claim": "李光耀指出，每名年长者获得的劳动者供养比到2022年将进一步减少到两人，到2060年则可能降至1.3人；其中年龄分界及人口或就业口径尚待明确。",
+        "reference_resolutions": [
+          {
+            "expression": "兩人",
+            "referent": "每名年长者的劳动者供养比降至两人",
+            "support_quote": "每名年长者获劳动者供养比"
+          },
+          {
+            "expression": "一・三人",
+            "referent": "每名年长者的劳动者供养比可能降至1.3人",
+            "support_quote": "每名年长者获劳动者供养比"
+          }
+        ],
+        "unresolved_references": [
+          "年龄分界",
+          "人口还是就业口径"
+        ]
+      },
+      "after": {
+        "id": "e2e_s02_p189_01",
+        "expanded_claim": "李光耀指出，每名年长者获得的劳动者供养比到2022年将进一步减少到两人，到2060年则可能降至1.3人；其中年龄分界及人口或就业口径尚待明确。[指代待确认：年龄分界；人口还是就业口径]",
+        "reference_resolutions": [
+          {
+            "expression": "兩人",
+            "referent": "每名年长者的劳动者供养比降至两人",
+            "support_quote": "每名年长者获劳动者供养比"
+          },
+          {
+            "expression": "一・三人",
+            "referent": "每名年长者的劳动者供养比可能降至1.3人",
+            "support_quote": "每名年长者获劳动者供养比"
+          }
+        ],
+        "unresolved_references": [
+          "年龄分界",
+          "人口还是就业口径"
+        ]
+      }
+    },
+    {
+      "id": "e2e_s02_p216_02",
+      "before": {
+        "id": "e2e_s02_p216_02",
+        "expanded_claim": "鉴于这些阻力的存在，李光耀认为印度和中国之间的差距将逐步扩大；此差距指平均国民所得及成长率，绝对人均收入差与相对比值须并列为操作化口径。",
+        "reference_resolutions": [
+          {
+            "expression": "這些阻力",
+            "referent": "印度社會種姓制度等阻力",
+            "support_quote": "是社會種姓影響，不是法律是否已禁止歧視"
+          }
+        ],
+        "unresolved_references": []
+      },
+      "after": {
+        "id": "e2e_s02_p216_02",
+        "expanded_claim": "李光耀认为，由于印度面临种姓制度等阻力，印度与中国在国民收入和经济成长方面的差距将逐步扩大。",
+        "reference_resolutions": [
+          {
+            "expression": "這些阻力",
+            "referent": "包括种姓制度影响在内的阻力",
+            "support_quote": "印度或許需要經歷數十年，甚至是數百年的逐漸變化，才能擺脫種姓制度的影響。"
+          }
+        ],
+        "unresolved_references": []
+      }
+    },
+    {
+      "id": "e2e_s02_p218_01",
+      "before": {
+        "id": "e2e_s02_p218_01",
+        "expanded_claim": "李光耀认为，如果由印度人自己来建设基础设施，将需要花很长时间；外包给日韩中或许四至五年是假设能力与政策条件，作者并不确定印度会不会采行。",
+        "reference_resolutions": [
+          {
+            "expression": "這",
+            "referent": "印度人自己建設基礎設施",
+            "support_quote": "若由印度人自己建基建，將花很長時間"
+          }
+        ],
+        "unresolved_references": []
+      },
+      "after": {
+        "id": "e2e_s02_p218_01",
+        "expanded_claim": "李光耀认为，如果港口、铁路、道路、机场、通讯和工业城等基础设施由印度人自行建设，将需要很长时间；外包给日本、韩国或中国或许四至五年可完成，但他不确定印度是否会采用外包。",
+        "reference_resolutions": [
+          {
+            "expression": "這",
+            "referent": "上述基础设施建设",
+            "support_quote": "217–218續頁談港鐵道路機場通訊及工業城基建總體"
+          }
+        ],
+        "unresolved_references": []
+      }
+    },
+    {
+      "id": "e2e_p241_01",
+      "before": {
+        "id": "e2e_p241_01",
+        "expanded_claim": "历史会给予他评价，因为他让人民受教育、使经济成长，并建设公路和基础设施。",
+        "reference_resolutions": [
+          {
+            "expression": "他",
+            "referent": "待确认（原文未明确指代对象）",
+            "support_quote": "歷史會給予他評價"
+          }
+        ],
+        "unresolved_references": [
+          "他"
+        ]
+      },
+      "after": {
+        "id": "e2e_p241_01",
+        "expanded_claim": "历史会根据某位人物推动教育、经济成长和公路等基础设施建设的表现评价他。[指代待确认：他具体指哪位人物]",
+        "reference_resolutions": [],
+        "unresolved_references": [
+          "他具体指哪位人物"
+        ]
+      }
+    },
+    {
+      "id": "e2e_p249_02",
+      "before": {
+        "id": "e2e_p249_02",
+        "expanded_claim": "李光耀表示，只要不影响我们的利益，我们就会支持他们。",
+        "reference_resolutions": [
+          {
+            "expression": "我們",
+            "referent": "李光耀所代表的一方（新加坡）",
+            "support_quote": "我想，只要不影響我們的利益，我們就會支持他們。"
+          },
+          {
+            "expression": "他們",
+            "referent": "待确认的第三方（支持对象）",
+            "support_quote": "我想，只要不影響我們的利益，我們就會支持他們。"
+          }
+        ],
+        "unresolved_references": [
+          "他們"
+        ]
+      },
+      "after": {
+        "id": "e2e_p249_02",
+        "expanded_claim": "只要不影响己方利益，李光耀表示己方就会支持原文所指的对方。[指代待确认：我们与他们各自所指的主体及支持事项]",
+        "reference_resolutions": [],
+        "unresolved_references": [
+          "我们与他们各自所指的主体及支持事项"
+        ]
+      }
+    },
+    {
+      "id": "e2e_p250_01",
+      "before": {
+        "id": "e2e_p250_01",
+        "expanded_claim": "李光耀认为只能等着瞧；他也看不出他如何能偏离我们之前为让东盟成为通讯、物流、贸易和投资枢纽所制定的方向。",
+        "reference_resolutions": [
+          {
+            "expression": "我們",
+            "referent": "李光耀所代表的一方（新加坡）",
+            "support_quote": "我們只能等著瞧。要如何做，我也看不出他如何能偏離我們之前為讓東協成為通訊、物流、貿易和投資樞紐所制定的方向。"
+          },
+          {
+            "expression": "他",
+            "referent": "待确认的领导人（可能为印尼领导人）",
+            "support_quote": "要如何做，我也看不出他如何能偏離我們之前為讓東協成為通訊、物流、貿易和投資樞紐所制定的方向。"
+          }
+        ],
+        "unresolved_references": [
+          "他"
+        ]
+      },
+      "after": {
+        "id": "e2e_p250_01",
+        "expanded_claim": "谈及更自信的印尼在东盟的主导作用，李光耀认为还须观察，但看不出印尼如何能偏离此前把东盟建成通讯、物流、贸易和投资枢纽的方向。",
+        "reference_resolutions": [
+          {
+            "expression": "他",
+            "referent": "所谈印尼一方",
+            "support_quote": "Q跨249至250問更自信印尼主導"
+          }
+        ],
+        "unresolved_references": []
+      }
+    },
+    {
+      "id": "e2e_p256_01",
+      "before": {
+        "id": "e2e_p256_01",
+        "expanded_claim": "针对泰国因民粹政治经历长期瘫痪的问题，李光耀回答认为泰国不太可能发生这种情况，并反问他们为何要过度地迎合穷人；这并非承诺泰国完全不受影响。",
+        "reference_resolutions": [
+          {
+            "expression": "他們",
+            "referent": "泰国政治人物（具体所指待确认）",
+            "support_quote": "Q問泰國因民粹政治經歷長期癱瘓，作者A回答不太可能"
+          }
+        ],
+        "unresolved_references": [
+          "他們（为何要过度地迎合穷人的主体）"
+        ]
+      },
+      "after": {
+        "id": "e2e_p256_01",
+        "expanded_claim": "针对泰国因民粹政治经历长期瘫痪的问题，李光耀回答认为泰国不太可能发生这种情况，并反问他们为何要过度地迎合穷人；这并非承诺泰国完全不受影响。[指代待确认：他們（为何要过度地迎合穷人的主体）]",
+        "reference_resolutions": [
+          {
+            "expression": "他們",
+            "referent": "泰国政治人物（具体所指待确认）",
+            "support_quote": "Q問泰國因民粹政治經歷長期癱瘓，作者A回答不太可能"
+          }
+        ],
+        "unresolved_references": [
+          "他們（为何要过度地迎合穷人的主体）"
+        ]
+      }
+    },
+    {
+      "id": "e2e_p259_01",
+      "before": {
+        "id": "e2e_p259_01",
+        "expanded_claim": "李光耀认为，在越南老一代共产党领袖在世期间，越南这个国家在现代化的道路上无法取得突破；突破的具体指标和集体范围未明确。",
+        "reference_resolutions": [
+          {
+            "expression": "他們",
+            "referent": "越南老一代共产党领袖",
+            "support_quote": "他們指越南老一輩共產黨領袖"
+          },
+          {
+            "expression": "這個國家",
+            "referent": "越南",
+            "support_quote": "他們指越南老一輩共產黨領袖；集體範圍與突破指標待定"
+          }
+        ],
+        "unresolved_references": [
+          "突破指標",
+          "集體範圍"
+        ]
+      },
+      "after": {
+        "id": "e2e_p259_01",
+        "expanded_claim": "李光耀认为，在越南老一代共产党领袖在世期间，越南这个国家在现代化的道路上无法取得突破；突破的具体指标和集体范围未明确。[指代待确认：突破指標；集體範圍]",
+        "reference_resolutions": [
+          {
+            "expression": "他們",
+            "referent": "越南老一代共产党领袖",
+            "support_quote": "他們指越南老一輩共產黨領袖"
+          },
+          {
+            "expression": "這個國家",
+            "referent": "越南",
+            "support_quote": "他們指越南老一輩共產黨領袖；集體範圍與突破指標待定"
+          }
+        ],
+        "unresolved_references": [
+          "突破指標",
+          "集體範圍"
+        ]
+      }
+    },
+    {
+      "id": "e2e_p264_02",
+      "before": {
+        "id": "e2e_p264_02",
+        "expanded_claim": "李光耀叙述或回答称，缅甸将稳步推进，慢慢让国内局势再度恢复正常；该句来源及句内资格标准有待细化。",
+        "reference_resolutions": [],
+        "unresolved_references": [
+          "來源",
+          "句內資格標準"
+        ]
+      },
+      "after": {
+        "id": "e2e_p264_02",
+        "expanded_claim": "李光耀叙述或回答称，缅甸将稳步推进，慢慢让国内局势再度恢复正常；该句来源及句内资格标准有待细化。[指代待确认：來源；句內資格標準]",
+        "reference_resolutions": [],
+        "unresolved_references": [
+          "來源",
+          "句內資格標準"
+        ]
+      }
+    },
+    {
+      "id": "e2e_p266_01",
+      "before": {
+        "id": "e2e_p266_01",
+        "expanded_claim": "李光耀认为，如果那些在青少年时期或成年后才离开缅甸、仍有缅甸情感联系的流亡精英能被说服回国创业，这对缅甸而言无疑是打了一剂强心针；海外长大、对缅甸不感义务的子女则是对照。强心针未明确量化指标，不意味着保证加速开放。",
+        "reference_resolutions": [
+          {
+            "expression": "他們",
+            "referent": "流亡精英",
+            "support_quote": "青少年時期或成年後才離境、仍有緬甸情感聯繫的流亡精英被說服回國創業"
+          },
+          {
+            "expression": "這",
+            "referent": "流亡精英被说服回国创业",
+            "support_quote": "如果他們能被說服回國創業，這對緬甸而言無疑是打了一劑強心針"
+          }
+        ],
+        "unresolved_references": [
+          "強心針的量化指標"
+        ]
+      },
+      "after": {
+        "id": "e2e_p266_01",
+        "expanded_claim": "李光耀认为，如果那些在青少年时期或成年后才离开缅甸、仍有缅甸情感联系的流亡精英能被说服回国创业，这对缅甸而言无疑是打了一剂强心针；海外长大、对缅甸不感义务的子女则是对照。强心针未明确量化指标，不意味着保证加速开放。[指代待确认：強心針的量化指標]",
+        "reference_resolutions": [
+          {
+            "expression": "他們",
+            "referent": "流亡精英",
+            "support_quote": "青少年時期或成年後才離境、仍有緬甸情感聯繫的流亡精英被說服回國創業"
+          },
+          {
+            "expression": "這",
+            "referent": "流亡精英被说服回国创业",
+            "support_quote": "如果他們能被說服回國創業，這對緬甸而言無疑是打了一劑強心針"
+          }
+        ],
+        "unresolved_references": [
+          "強心針的量化指標"
+        ]
+      }
+    },
+    {
+      "id": "e2e_p277_03",
+      "before": {
+        "id": "e2e_p277_03",
+        "expanded_claim": "美国、中国、英国、澳大利亚这些国家在百年后都还会存在；百年后而非指定2113或2114年，实际发言日未知，国家存在的口径待定。",
+        "reference_resolutions": [],
+        "unresolved_references": [
+          "百年后的具体时间口径",
+          "国家存在的具体口径"
+        ]
+      },
+      "after": {
+        "id": "e2e_p277_03",
+        "expanded_claim": "美国、中国、英国、澳大利亚这些国家在百年后都还会存在；百年后而非指定2113或2114年，实际发言日未知，国家存在的口径待定。[指代待确认：百年后的具体时间口径；国家存在的具体口径]",
+        "reference_resolutions": [],
+        "unresolved_references": [
+          "百年后的具体时间口径",
+          "国家存在的具体口径"
+        ]
+      }
+    },
+    {
+      "id": "e2e_p278_01",
+      "before": {
+        "id": "e2e_p278_01",
+        "expanded_claim": "在新加坡总理李显龙和他的团队领导下，新加坡这个国家会在未来至少十到十五年内继续繁荣兴盛；至少10到15年是相对期，发言日未知，繁荣口径未定。",
+        "reference_resolutions": [
+          {
+            "expression": "這個國家",
+            "referent": "新加坡",
+            "support_quote": "新加坡；李顯龍團隊領導背景"
+          }
+        ],
+        "unresolved_references": [
+          "发言日",
+          "繁荣的具体口径"
+        ]
+      },
+      "after": {
+        "id": "e2e_p278_01",
+        "expanded_claim": "在新加坡总理李显龙和他的团队领导下，新加坡这个国家会在未来至少十到十五年内继续繁荣兴盛；至少10到15年是相对期，发言日未知，繁荣口径未定。[指代待确认：发言日；繁荣的具体口径]",
+        "reference_resolutions": [
+          {
+            "expression": "這個國家",
+            "referent": "新加坡",
+            "support_quote": "新加坡；李顯龍團隊領導背景"
+          }
+        ],
+        "unresolved_references": [
+          "发言日",
+          "繁荣的具体口径"
+        ]
+      }
+    },
+    {
+      "id": "e2e_p283_02",
+      "before": {
+        "id": "e2e_p283_02",
+        "expanded_claim": "李光耀以目前生育率、不引进外来人口为条件指出：劳动人口相对于六十五岁以上老龄人口的比率，会在一代人时间里，从2012年的5.9缩减到2030年的2.1；其中劳动人口的定义未明。",
+        "reference_resolutions": [],
+        "unresolved_references": [
+          "勞動人口"
+        ]
+      },
+      "after": {
+        "id": "e2e_p283_02",
+        "expanded_claim": "李光耀以目前生育率、不引进外来人口为条件指出：劳动人口相对于六十五岁以上老龄人口的比率，会在一代人时间里，从2012年的5.9缩减到2030年的2.1；其中劳动人口的定义未明。[指代待确认：勞動人口]",
+        "reference_resolutions": [],
+        "unresolved_references": [
+          "勞動人口"
+        ]
+      }
+    },
+    {
+      "id": "e2e_p285_01",
+      "before": {
+        "id": "e2e_p285_01",
+        "expanded_claim": "李光耀在目前情况下作主观评价：也许一年引进一万五千到两万五千名外来移民，会是大家都可接受的水准；这是对可接受规模的建议性判断，不是声称实际将引进此数量或已观测到社会同意。",
+        "reference_resolutions": [
+          {
+            "expression": "大家",
+            "referent": "新加坡社会",
+            "support_quote": "可能是新加坡社会可接受的水平"
+          }
+        ],
+        "unresolved_references": []
+      },
+      "after": {
+        "id": "e2e_p285_01",
+        "expanded_claim": "李光耀认为，也许每年引进一万五千至两万五千名外来移民，是“大家”都可接受的水平；这是对可接受规模的主观判断。[指代待确认：大家所涵盖的群体范围]",
+        "reference_resolutions": [],
+        "unresolved_references": [
+          "大家所涵盖的群体范围"
+        ]
+      }
+    },
+    {
+      "id": "e2e_p285_02",
+      "before": {
+        "id": "e2e_p285_02",
+        "expanded_claim": "李光耀提出条件：一旦政府成功让国人充分意识到问题的严重性，后续是否逐步增加（原文“究竟规范”语义未定）仍属未决，不假定政府承诺增长。",
+        "reference_resolutions": [
+          {
+            "expression": "國人",
+            "referent": "新加坡人",
+            "support_quote": "一旦政府成功讓國人充分意識問題的嚴重性"
+          }
+        ],
+        "unresolved_references": [
+          "究竟规范"
+        ]
+      },
+      "after": {
+        "id": "e2e_p285_02",
+        "expanded_claim": "李光耀提出“一旦政府成功让国人充分意识到问题严重性”这一前提；所给摘录未完整列出后续结果，不能补成必然增长的承诺。[指代待确认：问题具体所指及条件句的后续结果]",
+        "reference_resolutions": [],
+        "unresolved_references": [
+          "问题具体所指及条件句的后续结果"
+        ]
+      }
+    },
+    {
+      "id": "e2e_p297_02",
+      "before": {
+        "id": "e2e_p297_02",
+        "expanded_claim": "但从建立研究实验室到取得经济回报，还有一段很长的路要走；这未断言最终不会有回报。",
+        "reference_resolutions": [],
+        "unresolved_references": []
+      },
+      "after": {
+        "id": "e2e_p297_02",
+        "expanded_claim": "李光耀认为，从建立生命科学研究实验室到取得经济回报，还需要很长时间。",
+        "reference_resolutions": [
+          {
+            "expression": "研究實驗室",
+            "referent": "生命科学研究",
+            "support_quote": "生命科學研究到經濟回報時距判斷"
+          }
+        ],
+        "unresolved_references": []
+      }
+    },
+    {
+      "id": "e2e_p301_01",
+      "before": {
+        "id": "e2e_p301_01",
+        "expanded_claim": "对知识经济转型是否愈来愈依赖推特脸书式颠覆创新，回答“不会的”；下文等待比尔盖兹的反问及人口人才限制，不等于断言永无创新。",
+        "reference_resolutions": [],
+        "unresolved_references": []
+      },
+      "after": {
+        "id": "e2e_p301_01",
+        "expanded_claim": "对于知识经济转型是否会越来越依赖推特、脸书式的颠覆性创新，李光耀回答“不会”；他的理由涉及人口和人才规模限制，这不等于断言永远不会出现创新。",
+        "reference_resolutions": [
+          {
+            "expression": "不會的",
+            "referent": "否定所问的知识经济转型越来越依赖此类创新",
+            "support_quote": "回答知識經濟轉型是否愈來愈依賴推特臉書式顛覆創新"
+          }
+        ],
+        "unresolved_references": []
+      }
+    },
+    {
+      "id": "e2e_s02_p312_01",
+      "before": {
+        "id": "e2e_s02_p312_01",
+        "expanded_claim": "李光耀相信，新上台的强人过一阵子会需要美国数十亿的经济援助来搞好国家，所以美国人或许会回来。",
+        "reference_resolutions": [
+          {
+            "expression": "新上台的強人",
+            "referent": "未明确指代，需上下文确认",
+            "support_quote": "新上台的強人"
+          },
+          {
+            "expression": "美國人或許會回來",
+            "referent": "美国人可能返回该地区",
+            "support_quote": "美國人或許會回來"
+          }
+        ],
+        "unresolved_references": [
+          "新上台的強人",
+          "那裡"
+        ]
+      },
+      "after": {
+        "id": "e2e_s02_p312_01",
+        "expanded_claim": "李光耀相信，新上台的强人过一阵子会需要美国数十亿的经济援助来搞好国家，所以美国人或许会回来。[指代待确认：新上台的強人；那裡]",
+        "reference_resolutions": [
+          {
+            "expression": "新上台的強人",
+            "referent": "未明确指代，需上下文确认",
+            "support_quote": "新上台的強人"
+          },
+          {
+            "expression": "美國人或許會回來",
+            "referent": "美国人可能返回该地区",
+            "support_quote": "美國人或許會回來"
+          }
+        ],
+        "unresolved_references": [
+          "新上台的強人",
+          "那裡"
+        ]
+      }
+    },
+    {
+      "id": "e2e_s02_p312_02",
+      "before": {
+        "id": "e2e_s02_p312_02",
+        "expanded_claim": "李光耀认为，美国离得太远，很难在那里发挥影响力；中国人会到那里投资、采掘资源。",
+        "reference_resolutions": [
+          {
+            "expression": "他們",
+            "referent": "美国人",
+            "support_quote": "美國人或許會回來"
+          },
+          {
+            "expression": "那裡",
+            "referent": "未明确指代，需上下文确认",
+            "support_quote": "那裡"
+          }
+        ],
+        "unresolved_references": [
+          "那裡"
+        ]
+      },
+      "after": {
+        "id": "e2e_s02_p312_02",
+        "expanded_claim": "李光耀认为，中国距离中东太远，很难在中东发挥影响力；中国人会到中东投资、采掘资源。",
+        "reference_resolutions": [
+          {
+            "expression": "他們",
+            "referent": "中国人",
+            "support_quote": "保留的是中國未來投資及影響限制"
+          },
+          {
+            "expression": "那裡",
+            "referent": "中东",
+            "support_quote": "美國永遠都會對中東感興趣"
+          }
+        ],
+        "unresolved_references": []
+      }
+    },
+    {
+      "id": "e2e_s02_p313_02",
+      "before": {
+        "id": "e2e_s02_p313_02",
+        "expanded_claim": "李光耀认为，美国偏以、默许强硬定居点政策这一现象，可能对以巴和平进程形成无可逆转的负面影响。",
+        "reference_resolutions": [
+          {
+            "expression": "這個現象",
+            "referent": "美国偏以、默许强硬定居点政策",
+            "support_quote": "美國偏以、默許強硬定居點政策"
+          }
+        ],
+        "unresolved_references": []
+      },
+      "after": {
+        "id": "e2e_s02_p313_02",
+        "expanded_claim": "李光耀认为，美国偏向以色列、默许强硬定居点政策这一现象，可能对以巴和平进程造成无可逆转的负面影响。",
+        "reference_resolutions": [
+          {
+            "expression": "這個現象",
+            "referent": "美国偏以并默许强硬定居点政策",
+            "support_quote": "現象為美偏以默許強硬定居點政策"
+          }
+        ],
+        "unresolved_references": []
+      }
+    },
+    {
+      "id": "e2e_s02_p317_03",
+      "before": {
+        "id": "e2e_s02_p317_03",
+        "expanded_claim": "我们或许会见证本地区在二战后率先动用核武器。",
+        "reference_resolutions": [
+          {
+            "expression": "本地區",
+            "referent": "中东地区",
+            "support_quote": "我們或許會見證本地區在二戰後率先動用核武器。"
+          }
+        ],
+        "unresolved_references": []
+      },
+      "after": {
+        "id": "e2e_s02_p317_03",
+        "expanded_claim": "李光耀认为，中东或许会成为二战后率先动用核武器的地区；“或许”不代表必然发生。",
+        "reference_resolutions": [
+          {
+            "expression": "本地區",
+            "referent": "中东",
+            "support_quote": "美國永遠都會對中東感興趣"
+          }
+        ],
+        "unresolved_references": []
+      }
+    },
+    {
+      "id": "e2e_s02_p338_01",
+      "before": {
+        "id": "e2e_s02_p338_01",
+        "expanded_claim": "三十年后，世界最大的经济体大概会是中国；一体化的欧洲或许是第二大经济体。三十年的起算日为发言日，具体日期未知；GDP口径另待确定。",
+        "reference_resolutions": [
+          {
+            "expression": "三十年後",
+            "referent": "自发言日起算的三十年后",
+            "support_quote": "30年起算發言日未知"
+          }
+        ],
+        "unresolved_references": [
+          "三十年后的具体起算日期"
+        ]
+      },
+      "after": {
+        "id": "e2e_s02_p338_01",
+        "expanded_claim": "三十年后，世界最大的经济体大概会是中国；一体化的欧洲或许是第二大经济体。三十年的起算日为发言日，具体日期未知；GDP口径另待确定。[指代待确认：三十年后的具体起算日期]",
+        "reference_resolutions": [
+          {
+            "expression": "三十年後",
+            "referent": "自发言日起算的三十年后",
+            "support_quote": "30年起算發言日未知"
+          }
+        ],
+        "unresolved_references": [
+          "三十年后的具体起算日期"
+        ]
+      }
+    },
+    {
+      "id": "e2e_s02_p338_02",
+      "before": {
+        "id": "e2e_s02_p338_02",
+        "expanded_claim": "太平洋以西亚洲的消费水准还需要数十年的时间才能赶上美国；理由在于储蓄文化。这里指消费水准而非GDP总量，且并非每个亚洲国家完全一致，人均或户均口径待定。",
+        "reference_resolutions": [
+          {
+            "expression": "美國的消費水準",
+            "referent": "美国的消费水准",
+            "support_quote": "指太平洋以西亞洲消費水準，非GDP總量"
+          }
+        ],
+        "unresolved_references": [
+          "消费水准的人均或户均口径"
+        ]
+      },
+      "after": {
+        "id": "e2e_s02_p338_02",
+        "expanded_claim": "太平洋以西亚洲的消费水准还需要数十年的时间才能赶上美国；理由在于储蓄文化。这里指消费水准而非GDP总量，且并非每个亚洲国家完全一致，人均或户均口径待定。[指代待确认：消费水准的人均或户均口径]",
+        "reference_resolutions": [
+          {
+            "expression": "美國的消費水準",
+            "referent": "美国的消费水准",
+            "support_quote": "指太平洋以西亞洲消費水準，非GDP總量"
+          }
+        ],
+        "unresolved_references": [
+          "消费水准的人均或户均口径"
+        ]
+      }
+    },
+    {
+      "id": "e2e_s02_p351_01",
+      "before": {
+        "id": "e2e_s02_p351_01",
+        "expanded_claim": "全球人口到2050年估计会达到90亿；作者写作时用“估计”而未具名，尚不能确认这是作者独立估计还是转述来源，因此保留语义未决，不武断归为第三方，也不当作独立预见命中；2050年尚未到期。",
+        "reference_resolutions": [],
+        "unresolved_references": [
+          "估计来源未具名"
+        ]
+      },
+      "after": {
+        "id": "e2e_s02_p351_01",
+        "expanded_claim": "全球人口到2050年估计会达到90亿；作者写作时用“估计”而未具名，尚不能确认这是作者独立估计还是转述来源，因此保留语义未决，不武断归为第三方，也不当作独立预见命中；2050年尚未到期。[指代待确认：估计来源未具名]",
+        "reference_resolutions": [],
+        "unresolved_references": [
+          "估计来源未具名"
+        ]
+      }
+    },
+    {
+      "id": "e2e_s02_p355_01",
+      "before": {
+        "id": "e2e_s02_p355_01",
+        "expanded_claim": "今后北美相关液化天然气（LNG）设施都会转为出口用途。",
+        "reference_resolutions": [
+          {
+            "expression": "今後都會轉爲出口用途",
+            "referent": "北美相关LNG设施今后转为出口用途",
+            "support_quote": "北美原为进口LNG建成设施"
+          }
+        ],
+        "unresolved_references": [
+          "北美相关LNG设施的具体范围"
+        ]
+      },
+      "after": {
+        "id": "e2e_s02_p355_01",
+        "expanded_claim": "李光耀认为，北美原先为进口液化天然气（LNG）而建成的设施，今后都会转为出口用途。[指代待确认：所指设施的具体集合及地域前文的图像核验]",
+        "reference_resolutions": [
+          {
+            "expression": "今後都會轉爲出口用途",
+            "referent": "北美原先为进口LNG建成的设施将转作出口",
+            "support_quote": "北美原为进口LNG建成设施"
+          }
+        ],
+        "unresolved_references": [
+          "所指设施的具体集合及地域前文的图像核验"
+        ]
+      }
+    },
+    {
+      "id": "e2e_s02_p357_01",
+      "before": {
+        "id": "e2e_s02_p357_01",
+        "expanded_claim": "李光耀表示，地球暖化到极致之时，也许是在介于五十年到一百五十年之后的事，那时他早已不在了；其中“极致”的定义并未明确，实际发言日期未知，不能擅自定为2013年起点或视为2026年已到期。",
+        "reference_resolutions": [
+          {
+            "expression": "我",
+            "referent": "李光耀",
+            "support_quote": "我早已不在了"
+          }
+        ],
+        "unresolved_references": [
+          "极致"
+        ]
+      },
+      "after": {
+        "id": "e2e_s02_p357_01",
+        "expanded_claim": "李光耀表示，地球暖化到极致之时，也许是在介于五十年到一百五十年之后的事，那时他早已不在了；其中“极致”的定义并未明确，实际发言日期未知，不能擅自定为2013年起点或视为2026年已到期。[指代待确认：极致]",
+        "reference_resolutions": [
+          {
+            "expression": "我",
+            "referent": "李光耀",
+            "support_quote": "我早已不在了"
+          }
+        ],
+        "unresolved_references": [
+          "极致"
+        ]
+      }
+    },
+    {
+      "id": "e2e_s02_p398_01",
+      "before": {
+        "id": "e2e_s02_p398_01",
+        "expanded_claim": "李光耀认为，一旦政府由一批不良分子和坏的领导接管，一切都会逐渐倒退，不可能依然还能全速自动运作。",
+        "reference_resolutions": [],
+        "unresolved_references": []
+      },
+      "after": {
+        "id": "e2e_s02_p398_01",
+        "expanded_claim": "李光耀认为，一旦新加坡政府被不良分子和坏的领导人接管，新加坡体制的一切都会逐渐倒退，不可能仍全速自动运作。",
+        "reference_resolutions": [
+          {
+            "expression": "政府",
+            "referent": "新加坡政府",
+            "support_quote": "指新加坡體制不能無視領導品質自動運作"
+          }
+        ],
+        "unresolved_references": []
+      }
+    }
+  ]
+}

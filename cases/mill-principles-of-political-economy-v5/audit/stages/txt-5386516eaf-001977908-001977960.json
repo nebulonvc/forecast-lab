@@ -1,0 +1,96 @@
+{
+  "id": "txt-5386516eaf-001977908-001977960",
+  "assess": {
+    "id": "txt-5386516eaf-001977908-001977960",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "采用这种做法的资本家，大概会轻易战胜仍保留旧制度缺陷的合作团体。",
+    "reason": "利润分享覆盖约三分之一，工人合作社只有2500人，雇佣仍占85.1%。这些数字说明资本家企业仍是就业的主体，但没有比较“连上雇员金钱利益的资本家”和“保留旧缺陷的合作社”谁战胜谁。",
+    "limitation": "规模优势不是这句所说的那场胜利。",
+    "evidence_ids": [
+      "ev-nber-profit-share",
+      "ev-uk-coops-2024",
+      "ev-ons-employees-2020"
+    ],
+    "method": "支持检索利润分享企业是否胜过缺陷合作社，反证检索合作社是否仍占上风。得到的是规模，不是那场比较。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-nber-profit-share",
+        "quote": "in 2002 (34 percent)",
+        "relation": "boundary",
+        "limitation": "覆盖率不是胜利。",
+        "observation_end": "2006-12-31",
+        "publication_date": "2010",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-uk-coops-2024",
+        "quote": "There are 400 worker co-ops in the UK with 2,500 employees",
+        "relation": "boundary",
+        "limitation": "合作社很小，不是对战结果。",
+        "observation_end": "2024-03-31",
+        "publication_date": "2024-03",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-ons-employees-2020",
+        "quote": "28.02 million employees (85.1% of all people in employment)",
+        "relation": "boundary",
+        "limitation": "雇佣多数不是这句的胜利。",
+        "observation_end": "2020-06-30",
+        "publication_date": "2020-08-11",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺把雇员金钱利益连上企业的资本家，与保留旧缺陷的合作社之间的直接胜负。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001977908-001977960",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "profit sharing firms defeated cooperative societies"
+      },
+      {
+        "role": "counter",
+        "query": "cooperative societies outcompeted capitalist firms"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://www.nber.org/system/files/chapters/c8086/c8086.pdf"
+    ],
+    "reason": "规模不是双方胜负。"
+  }
+}

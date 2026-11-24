@@ -1,0 +1,28 @@
+{
+  "id": "22541744-c38b-489e-ab79-69e6f45d8f4a",
+  "object": "chat.completion",
+  "created": 1794201582,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000025079-000025112\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"预测移动信用卡读卡器各公司模仿不同几何形状的竞争会持续到“所有形状都被模仿完”才结束；该表述为修辞性、边界不可穷举，无法设定可观察的终止指标。\",\"reason\":\"原文以讽刺口吻说形状模仿竞争要等所有形状被模仿完才落幕，属于难以操作化的宽泛趋势判断。缺乏可核验的“所有形状”标准，无法判定其是否实现或落空。\",\"limitation\":\"“所有形状”无法穷举，且未给出期限；不能因后续出现新形状或停止出现就简单判对错。\",\"evidence_ids\":[],\"method\":\"类比/趋势外推\",\"method_basis\":\"inferred\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000027506-000027528\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"该句是对企业价值与成功标准的定义性论述，不是可独立验证的未来事件预测。\",\"reason\":\"原文“一个企业成功与否要看它在未来生成现金流的能力”是估值原则的陈述，而非对特定企业或时点的预测。按定义性论述排除。\",\"limitation\":\"作为规范性/定义性主张，不纳入预测准确性评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7747,
+    "completion_tokens": 366,
+    "total_tokens": 8113,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 6979
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

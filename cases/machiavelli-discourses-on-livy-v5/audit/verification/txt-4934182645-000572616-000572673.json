@@ -1,0 +1,47 @@
+{
+  "id": "txt-4934182645-000572616-000572673",
+  "plan": {
+    "object": "君主。他们破坏的是人们已经长期生活于其中的法律、习俗和惯例。",
+    "condition": "from the hour they first violate。从第一次破坏那一刻起。a great while 是这些法律已经存在的长短，不是事后另加的年数。",
+    "quantifier": "they begin to weaken。开始削弱权威的基础，不是必须当年失去王位，也不是必须写出一个日历期限。",
+    "result": "登记变化是 weaken the foundations。权威的基础开始变弱。正式头衔变大，若同一页又写叛乱被压下，不能单独当成已经削弱或并未削弱。",
+    "window": "1531至2026-11-15。塔尔昆是出版前的例子。",
+    "counterevidence_needed": "一个破坏了长期法律的君主，从那一刻起权威基础开始变弱；或者破坏之后权威基础并没有开始变弱。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "monarch broke long-standing laws and customs and his authority began to weaken",
+      "counter_query": "Henry VIII break with Rome royal authority stronger until his death 1547"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [
+      "https://www.royal.uk/henry-viii",
+      "https://www.parliament.uk/about/living-heritage/evolutionofparliament/parliamentaryauthority/civilwar/overview/petition-of-right/"
+    ],
+    "dropped": "理查二世和约翰王都在1531年之前。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "from the hour they first violate",
+    "observation_end": null,
+    "evidence_ids": ["ev-royal-henry-viii", "ev-parliament-charles-tonnage"],
+    "scope": "长期法律被第一次破坏，并且权威基础从那时开始变弱。头衔扩大或叛乱被压下，都不能单独代替这个结果。",
+    "reason": "王室页写，1534年的最高权威法承认亨利是英国教会唯一最高首脑，禁止向罗马上诉。1536年求恩巡礼起事，要求撤换克伦威尔，叛乱被压下。亨利1547年1月28日死于伦敦，儿子爱德华继位。同页又写，在一些人看来，他把教士置于控制之下，从而加强了王冠的地位；宗教改革也造成了危险的教派分歧。加强王冠和危险分歧写在同一页，不能把其中一句改成权威基础已经开始削弱，或并未开始削弱。议会页写，查理一世在整个统治期间用特权继续征收吨税和磅税，尽管议会在1625年违反长期惯例只准他征收一年；他随后十一年不召开议会。页面没有写他的权威基础从破坏惯例那一刻开始变弱。决定性缺口是：没有正文把第一次破坏长期法律，和权威基础开始变弱，写成同一个结果。",
+    "limitation": "王室页和议会页都没有研究出版日。求恩巡礼只写1536年。亨利的死亡日是1547年1月28日。",
+    "method": "先确认被破坏的是人们长期生活于其中的法律，再看权威基础是否从那一刻开始变弱。正式权力变大不等于这个结果。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "亨利打破向罗马上诉的长期办法，同页既写加强王冠，也写1536年叛乱被压下。查理一世违反长期征税惯例，页面没有写权威基础开始变弱。"
+  }
+}

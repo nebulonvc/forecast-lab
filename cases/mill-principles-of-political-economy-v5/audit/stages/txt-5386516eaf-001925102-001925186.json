@@ -1,0 +1,70 @@
+{
+  "id": "txt-5386516eaf-001925102-001925186",
+  "assess": {
+    "id": "txt-5386516eaf-001925102-001925186",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "劳动者不会永久满足于以工资劳动为最终状态。",
+    "reason": "2020年4–6月雇员占全部就业者的85.1%。这是雇佣身份的比重，不是他们是否满足于工资劳动这一最终状态。",
+    "limitation": "“永久”到截止日也还没有封闭。比重不能代替满足。",
+    "evidence_ids": [
+      "ev-ons-employees-2020"
+    ],
+    "method": "检索自雇是否取代工资劳动，反证检索雇员是否仍占多数。得到的是身份比重，不是满足。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "permanently",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-ons-employees-2020",
+        "quote": "28.02 million employees (85.1% of all people in employment)",
+        "relation": "boundary",
+        "limitation": "雇员比重。",
+        "observation_end": "2020-06-30",
+        "publication_date": "2020-08-11",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺劳动者是否不再满足于以工资劳动为最终状态的同对象证据。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001925102-001925186",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "self-employment share of UK employment"
+      },
+      {
+        "role": "counter",
+        "query": "employees remain the majority of UK employment 2020"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/employmentintheuk/august2020"
+    ],
+    "reason": "雇员比重不是满足。"
+  }
+}

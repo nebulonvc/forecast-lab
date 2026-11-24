@@ -1,0 +1,45 @@
+{
+  "id": "txt-4934182645-000709409-000709448",
+  "plan": {
+    "object": "私人身份的公民所用的瓦勒里乌斯式办法：用和气与爱赢得士兵本人的效忠。对君主，同段说这些办法有用。",
+    "condition": "in a private citizen。他必须还是公民，不是已经在位的君主。办法是个人的爱，不是只靠纪律。",
+    "quantifier": "pave the way。为僭政铺路，不是每一个这样的人都成为僭主。一次交出军权，说明这条路没有走成，不能单独取消“铺路”。",
+    "result": "登记变化是 tyranny。铺向的是僭政。",
+    "window": "1531至2026-11-15。威尼斯的舰队指挥官是出版前的例子。",
+    "counterevidence_needed": "一个被士兵个人爱戴的公民，其办法通向僭政；或页面写明这种爱没有开辟那条路。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "private citizen loved by his soldiers later made himself tyrant",
+      "counter_query": "general beloved by his army laid down command and did not seize power"
+    },
+    "adaptive_rounds": 0,
+    "fetch_note": "上一轮检索已给出 Mount Vernon 页，当时尚未抓取，不是访问失败。本轮已抓取并存档。",
+    "kept_urls": ["https://www.mountvernon.org/library/digitalhistory/digital-encyclopedia/article/resignation-of-military-commission"],
+    "dropped": ""
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-mountvernon-washington-1783"],
+    "scope": "铺路不是每一个这样的人都成为僭主。交出军权说明他没有走成僭政，不能单独取消铺路。",
+    "reason": "弗农山庄页现已抓取。它写华盛顿1783年12月23日在安纳波利斯把大陆军总司令的任命交还大陆会议，回到私人生活；前一个春天他平息了纽堡密谋。页面没有写士兵因他的和气而个人爱戴他，也没有写这种爱为僭政铺了路或没有铺路。交权说明他没有成为僭主。原文的铺路不是“每个这样的人都称僭主”，所以一次交权不能取消铺路。决定性缺口仍是：没有正文把私人公民靠个人爱赢得的士兵效忠，写成通向僭政或并不通向。",
+    "limitation": "弗农山庄页此前尚未抓取，本轮已抓取，不是访问失败。页面没有作者和出版日。纽堡密谋只被点名，没有写成士兵的个人爱。",
+    "method": "先确认是公民而不是君主，再看个人的爱是否为僭政铺路。交权说明没有称僭主，不取消铺路。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "1783年12月23日的交权现已存档。他没有成为僭主。页面没有写士兵的个人爱为僭政铺路。"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "bf13953d-810f-4d91-ad0b-e477deb48e1b",
+  "object": "chat.completion",
+  "created": 1794201445,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000034098-000034202\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"future\",\"scope\":\"原文预测：在“先发者被别的公司取代”的条件下，最后进入特定市场的公司可取得重大进展并获几年至几十年垄断利润。观察窗口为出版（2014）至cutoff（2026-11-09），但未指定具体市场、公司或可操作指标。\",\"reason\":\"该判断是带条件的长期趋势预测，未给出可检验的具体市场或企业，无法在观察窗口内客观操作化验证。原文未提供任何已实现结果证据。\",\"limitation\":\"条件“先发者被取代”是否发生、以及“最后下手者”的归属均不明确；长期垄断利润需数十年观察，远超当前窗口。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"未来；几年甚至几十年\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4367,
+    "completion_tokens": 228,
+    "total_tokens": 4595,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3599
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

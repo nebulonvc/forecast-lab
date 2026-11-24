@@ -1,0 +1,28 @@
+{
+  "id": "1ce05984-d8b2-4b9d-9090-f363cae7a7c8",
+  "object": "chat.completion",
+  "created": 1794201439,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000010715-000010764\",\"inclusion\":\"duplicate\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"与txt-4001dbbdf2-000010715-000010765为同一原文命题的拆分重复，保留审计记录，不纳入预测分母。\",\"reason\":\"该条与同一原文父命题重复，抽取内容与另一条一致，仅作为重复记录保留。\",\"limitation\":\"重复项不参与预测评分，也不提供额外证据。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000010715-000010765\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为“印度亿万家庭像现在的美国家庭那样生活、只用现代工具”；结果口径为“对环境造成毁灭性破坏”。截至cutoff，该反事实条件未发生，无法观察条件满足后的环境后果。\",\"reason\":\"这是明确的反事实条件预测，触发条件（印度家庭普遍达到美国式现代工具消费水平）在观察期内未实现，无法检验“毁灭性破坏”这一结果。\",\"limitation\":\"条件未满足，且“毁灭性破坏”缺乏可操作阈值；不能以印度当前排放或消费增长替代该反事实终局判断。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"not_met\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7757,
+    "completion_tokens": 355,
+    "total_tokens": 8112,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 7757
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,611 @@
+{
+  "claim_id": "txt-1c4066fc0c-000064239-000064255",
+  "version": "search-verifier-v1",
+  "input_sha256": "14ff7156bb788b9f1143ee3b1d5bceb55304df8c5912289f03b425ec32f7864c",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000064239-000064255",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "对象：1991年后是否有其他民族/经济体在部分技术经济领域崛起并挑战美国优越感，且美国人起初不愿承认其成功。观察口径：(1)外部经济体在研发/高科技/制造或经济总量上相对美国上升的原始统计；(2)美国公众或精英是否承认对手成功/领先的调查。观察时段：1991年至2026-05-04（来源实际日期，未晚于cutoff 2026-11-09）。",
+    "reason": "“其他民族在部分技术经济领域崛起并挑战美国”这一分项有证据：NSF 2026与AAAS 2026显示中国2024年被估计超过美国成为最大研发执行国，并在高科技制造贸易、S&E博士授予量、论文数量上领先。但原预测的另一核心分项“美国人起初不愿承认其成功”缺乏直接测量：现有Pew调查测的是影响力感知、威胁感知或“谁是第一经济强国”，均不等于承认或不承认对手在具体技术经济领域的成功，故不能据此把该分项判为已部分实现。",
+    "limitation": "关键修订：不再用“38%选中国为第一经济强国”和“四成视为严重问题”折算“承认程度是部分的”，因为二者分别是经济强国判断与威胁感知，未直接检验“不愿承认”。挑战分项已观察到，承认分项保留未定，故整体暂无法判断而非部分符合。",
+    "evidence_ids": [
+      "ev-710ba52a3b0f5c551a9d2a2d",
+      "ev-a8c1ebe67c946a542a563f0e",
+      "ev-c909a9864849e901670aa190",
+      "ev-925e3dcc4c9e410dd1fb05a1",
+      "prior-057b9ba2642cf34a4c68",
+      "prior-d689c559f1fd289bc13f"
+    ],
+    "method": "从美国对日本技术经济成功的反应外推未来大国竞争心理",
+    "method_basis": "inferred",
+    "observation_end": "2026-05-04",
+    "future_time_text": "还会",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-710ba52a3b0f5c551a9d2a2d",
+        "relation": "support",
+        "quote": "In 2024, China was estimated to have surpassed the United States for the first time as the world's largest performer of R&D, according to the latest data from the OECD after adjustment for international comparability.",
+        "publication_date": "2026-05-04",
+        "observation_end": "2024-12-31",
+        "limitation": "为2024年估计值，且同一来源强调美国在高被引论文、专利、风投等领域仍具优势，挑战是局部的；只支撑“崛起挑战”分项，不涉及“不愿承认”。"
+      },
+      {
+        "evidence_id": "ev-a8c1ebe67c946a542a563f0e",
+        "relation": "support",
+        "quote": "China performs strongly in several key science and technology (S&T) areas: in 2024, it is estimated to have surpassed the United States for the first time as the largest performer of R&D",
+        "publication_date": "2026-05-04",
+        "observation_end": "2024-12-31",
+        "limitation": "同一来源也强调美国在多个领域保持比较优势，不能代表全面超越；只支撑“崛起挑战”分项。"
+      },
+      {
+        "evidence_id": "ev-c909a9864849e901670aa190",
+        "relation": "support",
+        "quote": "In 2024, China represented 92.3% of all non-OECD R&D spending, and 29.4% of R&D spending globally — now the largest share. The U.S. contributed 29.1% of R&D globally in 2024.",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "发布日期未知；份额差距很小（29.4%对29.1%），且为单一指标，只支撑“崛起挑战”分项。"
+      },
+      {
+        "evidence_id": "ev-925e3dcc4c9e410dd1fb05a1",
+        "relation": "boundary",
+        "quote": "52% of Americans say their country’s influence in the world is getting weaker, roughly the same share as in 2024.",
+        "publication_date": "2025-05-01",
+        "observation_end": "2025-05-01",
+        "limitation": "反映对本国影响力下降的感知，不等于承认对手在具体技术领域成功或领先，也不直接测量“不愿承认”；党派分化明显。"
+      },
+      {
+        "evidence_id": "prior-057b9ba2642cf34a4c68",
+        "relation": "boundary",
+        "quote": "Pew2025美国调查：73%认为中国世界影响力增强，2024为71%；48%认为美国是第一经济强国，38%选中国。党派间2023—2025变化方向相反。",
+        "publication_date": "2025-04-17",
+        "observation_end": "2025-04-17",
+        "limitation": "测的是影响力感知与“谁是第一经济强国”，非技术领域成功承认；多数仍认为美国第一，且党派方向相反，不能折算“不愿承认”分项。"
+      },
+      {
+        "evidence_id": "prior-d689c559f1fd289bc13f",
+        "relation": "boundary",
+        "quote": "Pew对3576名美国成年人的调查：四成认为中国科技实力增长是美国面临的非常严重问题。",
+        "publication_date": "2023-04-12",
+        "observation_end": "2023-04-12",
+        "limitation": "“视为严重问题”是威胁感知，不等于承认对手成功或领先，也不等于“不愿承认”，不能支撑承认分项判断。"
+      }
+    ],
+    "remaining_gap": "缺少直接测量美国公众或精英是否“不愿承认”对手在具体技术经济领域成功的调查或纵向材料；现有调查只覆盖影响力感知、威胁感知与经济强国判断。挑战分项已有证据，承认分项未定，故整体暂无法判断。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000064239-000064255",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象：1991年后是否有其他民族/经济体在部分技术经济领域崛起并挑战美国优越感，且美国起初不愿承认。观察口径：(1)外部经济体在研发/高科技/制造或经济总量上相对美国上升的原始统计；(2)美国公众是否承认对手成功/领先的调查。观察时段：1991年至2026-05-04（来源实际日期，未晚于cutoff 2026-11-09）。",
+    "reason": "NSF 2026报告与AAAS 2026更新显示，中国在2024年首次被估计超过美国成为全球最大研发执行国，并在高科技制造贸易、S&E博士授予量、论文数量上领先，符合“其他民族在部分技术经济领域崛起并挑战美国优越感”的分项。Pew 2025显示73%美国人认为中国世界影响力增强、38%选中国为第一经济强国，说明相当部分公众已承认中国上升，但仍有48%认为美国是第一经济强国，承认程度是部分的，故判部分符合。",
+    "limitation": "“不愿承认”是心理态度，调查只能间接反映，且党派分化明显（2023—2025方向相反），不能证明全体美国人的内心态度。研发总量领先为2024年估计值，且美国在高被引论文、专利、风投等领域仍保持优势，挑战是局部的而非全面。",
+    "evidence_ids": [
+      "ev-710ba52a3b0f5c551a9d2a2d",
+      "ev-a8c1ebe67c946a542a563f0e",
+      "ev-c909a9864849e901670aa190",
+      "ev-925e3dcc4c9e410dd1fb05a1",
+      "prior-057b9ba2642cf34a4c68",
+      "prior-d689c559f1fd289bc13f"
+    ],
+    "method": "从美国对日本技术经济成功的反应外推未来大国竞争心理",
+    "method_basis": "inferred",
+    "observation_end": "2026-05-04",
+    "future_time_text": "还会",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-710ba52a3b0f5c551a9d2a2d",
+        "relation": "support",
+        "quote": "In 2024, China was estimated to have surpassed the United States for the first time as the world's largest performer of R&D, according to the latest data from the OECD after adjustment for international comparability.",
+        "publication_date": "2026-05-04",
+        "observation_end": "2024-12-31",
+        "limitation": "为2024年估计值，且美国在高被引论文、专利、风投等领域仍具优势，挑战是局部的。"
+      },
+      {
+        "evidence_id": "ev-a8c1ebe67c946a542a563f0e",
+        "relation": "support",
+        "quote": "China performs strongly in several key science and technology (S&T) areas: in 2024, it is estimated to have surpassed the United States for the first time as the largest performer of R&D",
+        "publication_date": "2026-05-04",
+        "observation_end": "2024-12-31",
+        "limitation": "同一来源也强调美国在多个领域保持比较优势，不能代表全面超越。"
+      },
+      {
+        "evidence_id": "ev-c909a9864849e901670aa190",
+        "relation": "support",
+        "quote": "In 2024, China represented 92.3% of all non-OECD R&D spending, and 29.4% of R&D spending globally — now the largest share. The U.S. contributed 29.1% of R&D globally in 2024.",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "发布日期未知，份额差距很小（29.4%对29.1%），且为单一指标。"
+      },
+      {
+        "evidence_id": "ev-925e3dcc4c9e410dd1fb05a1",
+        "relation": "boundary",
+        "quote": "52% of Americans say their country’s influence in the world is getting weaker, roughly the same share as in 2024.",
+        "publication_date": "2025-05-01",
+        "observation_end": "2025-05-01",
+        "limitation": "反映对本国影响力下降的感知，不等于承认对手在具体技术领域领先；党派分化明显。"
+      },
+      {
+        "evidence_id": "prior-057b9ba2642cf34a4c68",
+        "relation": "support",
+        "quote": "Pew2025美国调查：73%认为中国世界影响力增强，2024为71%；48%认为美国是第一经济强国，38%选中国。",
+        "publication_date": "2025-04-17",
+        "observation_end": "2025-04-17",
+        "limitation": "承认中国影响力增强，但多数仍认为美国是第一经济强国，承认是部分的。"
+      },
+      {
+        "evidence_id": "prior-d689c559f1fd289bc13f",
+        "relation": "support",
+        "quote": "Pew对3576名美国成年人的调查：四成认为中国科技实力增长是美国面临的非常严重问题。",
+        "publication_date": "2023-04-12",
+        "observation_end": "2023-04-12",
+        "limitation": "仅四成视为非常严重问题，说明承认程度有限且非全体。"
+      }
+    ],
+    "remaining_gap": "缺少直接测量美国公众或精英“不愿承认”对手成功的纵向调查，现有调查只能间接反映态度；研发领先为2024年估计值，最终长期趋势仍待后续数据验证。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-26acf6acaca501c368fc",
+      "url": "https://www.ncses.nsf.gov/pubs/nsb20243/discovery-u-s-and-global-r-d",
+      "title": "ev-nsf",
+      "published_date": "2024-03-13",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-nsf",
+      "archive_sha256": "48d44bfdae4f5f92a3f44364f67e6ca7670f659eb1c77f1e11453f89e6023f33",
+      "archive_path": "data/sources/48d44bfdae4f5f92a3f44364f67e6ca7670f659eb1c77f1e11453f89e6023f33.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-d689c559f1fd289bc13f",
+      "url": "https://www.pewresearch.org/global/2023/04/12/americans-are-critical-of-chinas-global-role-as-well-as-its-relationship-with-russia/",
+      "title": "ev-lane1-china-tech-survey",
+      "published_date": "2023-04-12",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane1-china-tech-survey",
+      "archive_sha256": "a107865af77f6f9512aa6390e526fcd94fdcbcf4f7c13c4c2e4327e345a5decd",
+      "archive_path": "data/sources/lane1-china-tech-survey.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-057b9ba2642cf34a4c68",
+      "url": "https://www.pewresearch.org/global/2025/04/17/views-of-chinas-role-in-the-world/",
+      "title": "ev-r2-l1-china-recognition",
+      "published_date": "2025-04-17",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-china-recognition",
+      "archive_sha256": "3017710211db7f15fa8271167a70ad290a55ef5fe1b013ff835fbbe271b5315c",
+      "archive_path": "data/sources/r2-l1-china-attitudes.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-710ba52a3b0f5c551a9d2a2d",
+      "url": "https://ncses.nsf.gov/pubs/nsbsep20261/conclusion",
+      "resolved_url": "https://ncses.nsf.gov/pubs/nsbsep20261/conclusion",
+      "title": "The State of U.S. Science and Engineering 2026 | NCSES | NSF",
+      "published_date": "2026-05-04",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:05.975732+00:00",
+      "archive_sha256": "f840588662325a6c4b2aee18a51a730cab5c28e9858e01693d9c417c0d1687c8",
+      "archive_path": "jobs/61b28988bbfea242d383e5ab/f840588662325a6c4b2aee18a51a730cab5c28e9858e01693d9c417c0d1687c8.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c909a9864849e901670aa190",
+      "url": "https://www.aaas.org/sites/default/files/2026-06/AAAS%20Global%20RD%20Update%202026.pdf",
+      "resolved_url": "https://www.aaas.org/sites/default/files/2026-06/AAAS%20Global%20RD%20Update%202026.pdf",
+      "title": "1. Aggregate Trends",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:05.976031+00:00",
+      "archive_sha256": "f470544a2735535e762e8c98a00b1b526a5bab56c765c1335c40f58896229f15",
+      "archive_path": "jobs/61b28988bbfea242d383e5ab/f470544a2735535e762e8c98a00b1b526a5bab56c765c1335c40f58896229f15.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-925e3dcc4c9e410dd1fb05a1",
+      "url": "https://www.pewresearch.org/global/2025/05/01/the-united-states-standing-in-the-world/",
+      "resolved_url": "https://www.pewresearch.org/global/2025/05/01/the-united-states-standing-in-the-world/",
+      "title": "The United States’ standing in the world | Pew Research Center",
+      "published_date": "2025-05-01",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:05.976322+00:00",
+      "archive_sha256": "0f451be36ad0e4cfcc16fbefbbb2b3a687d041aa5240ad8c59ec10f687964c60",
+      "archive_path": "jobs/61b28988bbfea242d383e5ab/0f451be36ad0e4cfcc16fbefbbb2b3a687d041aa5240ad8c59ec10f687964c60.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a8c1ebe67c946a542a563f0e",
+      "url": "https://www.ncses.nsf.gov/pubs/nsbsep20261/executive-summary",
+      "resolved_url": "https://www.ncses.nsf.gov/pubs/nsbsep20261/executive-summary",
+      "title": "The State of U.S. Science and Engineering 2026 | NCSES | NSF",
+      "published_date": "2026-05-04",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:13.303673+00:00",
+      "archive_sha256": "80893a3f4ac39a7ffc07cc45ed74d6dcec97f3b4c6f98c3b111383412127a5dc",
+      "archive_path": "jobs/61b28988bbfea242d383e5ab/80893a3f4ac39a7ffc07cc45ed74d6dcec97f3b4c6f98c3b111383412127a5dc.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "NSF Science and Engineering Indicators China R&D growth share global 2024 United States competition",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Pew Research Americans acknowledge China technological leadership economic power survey 2023 2025",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "NSF Science and Engineering Indicators China R&D surpassed United States largest performer 2024 OECD data",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Pew Research 2025 Americans say China is world's leading economic power acknowledge China technological leadership survey",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少直接测量美国公众或精英是否“不愿承认”对手在具体技术经济领域成功的调查或纵向材料；现有调查只覆盖影响力感知、威胁感知与经济强国判断。挑战分项已有证据，承认分项未定，故整体暂无法判断。",
+  "source_statuses": [
+    {
+      "url": "https://ncses.nsf.gov/pubs/nsbsep20261/conclusion",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.aaas.org/sites/default/files/2026-06/AAAS%20Global%20RD%20Update%202026.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.pewresearch.org/global/2025/05/01/the-united-states-standing-in-the-world/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.ncses.nsf.gov/pubs/nsbsep20261/executive-summary",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "e690d01836df31831e49e055fdafb196824ea4ba020d563173bbbe2dc9d096fc"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "d9799aa4dc22e8a129322c5824acb3a3",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "fc6fa01b307dfeb31c7d7da0eec77d85",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "aa802091052d86b208e9cdcab7bf9fd3d32ece18ab6df616e64bd1410d0ef354"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "05574bf2189a4b62b220715fabd1c202",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "87e8abcd260d6cda6d8fec1d5f6fea4134892597334b44dbdc250276ffa13782"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b617f76399c82da7e3460d998e3537e9",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "3c8bf1b088d60400a4899f1adb6522a0",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "d7673f483e71bd408510583753d719e920799b1cc427857f4ee0bf7e0221531a"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "61445729f94217b25a517584ccb04edf",
+      "cost_estimate_USD": 0.001,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "cce71a37b17ee229eb01376fd4b48dc5110d8f6e430d8c8b7081900dc07d9df0"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "20e0e23beeed30b0525f079ce1b2fabc700cfc0792bf008a70ee1dfe78757b11"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "ef7a292b15cc4214e1a4036da6e3e77c2c48b51efa2b722ddd52a941221bf99a"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "1e02376f8dd40f964319fb0bb521d8bcf95744faea5a2d16239bf0cf98f95544"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000064239-000064255",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "evidence_support",
+          "reason": "建议把“38%选中国为第一经济强国”当作“相当部分公众已承认中国上升”的证据，但同一调查同时显示48%仍认为美国第一，且该题问的是经济强国而非技术领先；更关键的是，原预测的核心是“美国起初不愿承认对手成功”，而现有调查没有直接测量“不愿承认”，建议却据此把承认程度判为“部分”，属于用间接态度数据支撑未直接检验的心理分项。",
+          "source_quote": "Pew2025美国调查：73%认为中国世界影响力增强，2024为71%；48%认为美国是第一经济强国，38%选中国。党派间2023—2025变化方向相反。",
+          "evidence_id": "prior-057b9ba2642cf34a4c68",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议用“四成认为中国科技实力增长是非常严重问题”支持“承认程度有限”，但“视为严重问题”是威胁感知，不等于承认对手成功或领先，也不等于“不愿承认”；该引文不能支撑建议对承认分项的判断。",
+          "source_quote": "Pew对3576名美国成年人的调查：四成认为中国科技实力增长是美国面临的非常严重问题。",
+          "evidence_id": "prior-d689c559f1fd289bc13f",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "原预测是“美国人还会遇到类似状况”，其可检验核心包括“其他民族在部分技术经济领域崛起并挑战美国优越感”以及“美国人起初不愿承认其成功”。建议把前者判为符合、后者判为“承认程度是部分的”，但“部分承认”并不等于“不愿承认”这一心理分项已部分实现；在没有直接测量“不愿承认”的情况下，不能把承认与不承认的混合调查结果直接折算成原预测“部分符合”。应保留该分项未定，或明确区分“挑战已出现”与“不愿承认未直接检验”。",
+          "source_quote": "Pew 2025显示73%美国人认为中国世界影响力增强、38%选中国为第一经济强国，说明相当部分公众已承认中国上升，但仍有48%认为美国是第一经济强国，承认程度是部分的，故判部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充直接测量美国公众或精英是否“不愿承认”对手在具体技术经济领域成功的调查或纵向材料；若没有，应把“不愿承认”分项保留为未定，不能仅凭影响力感知或威胁感知判为部分符合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000064239-000064255",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000064239-000064255",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象：1991年后是否有其他民族/经济体在部分技术经济领域崛起并挑战美国优越感，且美国起初不愿承认。观察口径：(1)外部经济体在研发/高科技/制造或经济总量上相对美国上升的原始统计；(2)美国公众是否承认对手成功/领先的调查。观察时段：1991年至2026-05-04（来源实际日期，未晚于cutoff 2026-11-09）。",
+      "reason": "NSF 2026报告与AAAS 2026更新显示，中国在2024年首次被估计超过美国成为全球最大研发执行国，并在高科技制造贸易、S&E博士授予量、论文数量上领先，符合“其他民族在部分技术经济领域崛起并挑战美国优越感”的分项。Pew 2025显示73%美国人认为中国世界影响力增强、38%选中国为第一经济强国，说明相当部分公众已承认中国上升，但仍有48%认为美国是第一经济强国，承认程度是部分的，故判部分符合。",
+      "limitation": "“不愿承认”是心理态度，调查只能间接反映，且党派分化明显（2023—2025方向相反），不能证明全体美国人的内心态度。研发总量领先为2024年估计值，且美国在高被引论文、专利、风投等领域仍保持优势，挑战是局部的而非全面。",
+      "evidence_ids": [
+        "ev-710ba52a3b0f5c551a9d2a2d",
+        "ev-a8c1ebe67c946a542a563f0e",
+        "ev-c909a9864849e901670aa190",
+        "ev-925e3dcc4c9e410dd1fb05a1",
+        "prior-057b9ba2642cf34a4c68",
+        "prior-d689c559f1fd289bc13f"
+      ],
+      "method": "从美国对日本技术经济成功的反应外推未来大国竞争心理",
+      "method_basis": "inferred",
+      "observation_end": "2026-05-04",
+      "future_time_text": "还会",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-710ba52a3b0f5c551a9d2a2d",
+          "relation": "support",
+          "quote": "In 2024, China was estimated to have surpassed the United States for the first time as the world's largest performer of R&D, according to the latest data from the OECD after adjustment for international comparability.",
+          "publication_date": "2026-05-04",
+          "observation_end": "2024-12-31",
+          "limitation": "为2024年估计值，且美国在高被引论文、专利、风投等领域仍具优势，挑战是局部的。"
+        },
+        {
+          "evidence_id": "ev-a8c1ebe67c946a542a563f0e",
+          "relation": "support",
+          "quote": "China performs strongly in several key science and technology (S&T) areas: in 2024, it is estimated to have surpassed the United States for the first time as the largest performer of R&D",
+          "publication_date": "2026-05-04",
+          "observation_end": "2024-12-31",
+          "limitation": "同一来源也强调美国在多个领域保持比较优势，不能代表全面超越。"
+        },
+        {
+          "evidence_id": "ev-c909a9864849e901670aa190",
+          "relation": "support",
+          "quote": "In 2024, China represented 92.3% of all non-OECD R&D spending, and 29.4% of R&D spending globally — now the largest share. The U.S. contributed 29.1% of R&D globally in 2024.",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "发布日期未知，份额差距很小（29.4%对29.1%），且为单一指标。"
+        },
+        {
+          "evidence_id": "ev-925e3dcc4c9e410dd1fb05a1",
+          "relation": "boundary",
+          "quote": "52% of Americans say their country’s influence in the world is getting weaker, roughly the same share as in 2024.",
+          "publication_date": "2025-05-01",
+          "observation_end": "2025-05-01",
+          "limitation": "反映对本国影响力下降的感知，不等于承认对手在具体技术领域领先；党派分化明显。"
+        },
+        {
+          "evidence_id": "prior-057b9ba2642cf34a4c68",
+          "relation": "support",
+          "quote": "Pew2025美国调查：73%认为中国世界影响力增强，2024为71%；48%认为美国是第一经济强国，38%选中国。",
+          "publication_date": "2025-04-17",
+          "observation_end": "2025-04-17",
+          "limitation": "承认中国影响力增强，但多数仍认为美国是第一经济强国，承认是部分的。"
+        },
+        {
+          "evidence_id": "prior-d689c559f1fd289bc13f",
+          "relation": "support",
+          "quote": "Pew对3576名美国成年人的调查：四成认为中国科技实力增长是美国面临的非常严重问题。",
+          "publication_date": "2023-04-12",
+          "observation_end": "2023-04-12",
+          "limitation": "仅四成视为非常严重问题，说明承认程度有限且非全体。"
+        }
+      ],
+      "remaining_gap": "缺少直接测量美国公众或精英“不愿承认”对手成功的纵向调查，现有调查只能间接反映态度；研发领先为2024年估计值，最终长期趋势仍待后续数据验证。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000064239-000064255",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "对象：1991年后是否有其他民族/经济体在部分技术经济领域崛起并挑战美国优越感，且美国人起初不愿承认其成功。观察口径：(1)外部经济体在研发/高科技/制造或经济总量上相对美国上升的原始统计；(2)美国公众或精英是否承认对手成功/领先的调查。观察时段：1991年至2026-05-04（来源实际日期，未晚于cutoff 2026-11-09）。",
+      "reason": "“其他民族在部分技术经济领域崛起并挑战美国”这一分项有证据：NSF 2026与AAAS 2026显示中国2024年被估计超过美国成为最大研发执行国，并在高科技制造贸易、S&E博士授予量、论文数量上领先。但原预测的另一核心分项“美国人起初不愿承认其成功”缺乏直接测量：现有Pew调查测的是影响力感知、威胁感知或“谁是第一经济强国”，均不等于承认或不承认对手在具体技术经济领域的成功，故不能据此把该分项判为已部分实现。",
+      "limitation": "关键修订：不再用“38%选中国为第一经济强国”和“四成视为严重问题”折算“承认程度是部分的”，因为二者分别是经济强国判断与威胁感知，未直接检验“不愿承认”。挑战分项已观察到，承认分项保留未定，故整体暂无法判断而非部分符合。",
+      "evidence_ids": [
+        "ev-710ba52a3b0f5c551a9d2a2d",
+        "ev-a8c1ebe67c946a542a563f0e",
+        "ev-c909a9864849e901670aa190",
+        "ev-925e3dcc4c9e410dd1fb05a1",
+        "prior-057b9ba2642cf34a4c68",
+        "prior-d689c559f1fd289bc13f"
+      ],
+      "method": "从美国对日本技术经济成功的反应外推未来大国竞争心理",
+      "method_basis": "inferred",
+      "observation_end": "2026-05-04",
+      "future_time_text": "还会",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-710ba52a3b0f5c551a9d2a2d",
+          "relation": "support",
+          "quote": "In 2024, China was estimated to have surpassed the United States for the first time as the world's largest performer of R&D, according to the latest data from the OECD after adjustment for international comparability.",
+          "publication_date": "2026-05-04",
+          "observation_end": "2024-12-31",
+          "limitation": "为2024年估计值，且同一来源强调美国在高被引论文、专利、风投等领域仍具优势，挑战是局部的；只支撑“崛起挑战”分项，不涉及“不愿承认”。"
+        },
+        {
+          "evidence_id": "ev-a8c1ebe67c946a542a563f0e",
+          "relation": "support",
+          "quote": "China performs strongly in several key science and technology (S&T) areas: in 2024, it is estimated to have surpassed the United States for the first time as the largest performer of R&D",
+          "publication_date": "2026-05-04",
+          "observation_end": "2024-12-31",
+          "limitation": "同一来源也强调美国在多个领域保持比较优势，不能代表全面超越；只支撑“崛起挑战”分项。"
+        },
+        {
+          "evidence_id": "ev-c909a9864849e901670aa190",
+          "relation": "support",
+          "quote": "In 2024, China represented 92.3% of all non-OECD R&D spending, and 29.4% of R&D spending globally — now the largest share. The U.S. contributed 29.1% of R&D globally in 2024.",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "发布日期未知；份额差距很小（29.4%对29.1%），且为单一指标，只支撑“崛起挑战”分项。"
+        },
+        {
+          "evidence_id": "ev-925e3dcc4c9e410dd1fb05a1",
+          "relation": "boundary",
+          "quote": "52% of Americans say their country’s influence in the world is getting weaker, roughly the same share as in 2024.",
+          "publication_date": "2025-05-01",
+          "observation_end": "2025-05-01",
+          "limitation": "反映对本国影响力下降的感知，不等于承认对手在具体技术领域成功或领先，也不直接测量“不愿承认”；党派分化明显。"
+        },
+        {
+          "evidence_id": "prior-057b9ba2642cf34a4c68",
+          "relation": "boundary",
+          "quote": "Pew2025美国调查：73%认为中国世界影响力增强，2024为71%；48%认为美国是第一经济强国，38%选中国。党派间2023—2025变化方向相反。",
+          "publication_date": "2025-04-17",
+          "observation_end": "2025-04-17",
+          "limitation": "测的是影响力感知与“谁是第一经济强国”，非技术领域成功承认；多数仍认为美国第一，且党派方向相反，不能折算“不愿承认”分项。"
+        },
+        {
+          "evidence_id": "prior-d689c559f1fd289bc13f",
+          "relation": "boundary",
+          "quote": "Pew对3576名美国成年人的调查：四成认为中国科技实力增长是美国面临的非常严重问题。",
+          "publication_date": "2023-04-12",
+          "observation_end": "2023-04-12",
+          "limitation": "“视为严重问题”是威胁感知，不等于承认对手成功或领先，也不等于“不愿承认”，不能支撑承认分项判断。"
+        }
+      ],
+      "remaining_gap": "缺少直接测量美国公众或精英是否“不愿承认”对手在具体技术经济领域成功的调查或纵向材料；现有调查只覆盖影响力感知、威胁感知与经济强国判断。挑战分项已有证据，承认分项未定，故整体暂无法判断。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象：1991年后美国是否再次遇到“其他民族在部分技术经济领域崛起并挑战美国优越感、美国人起初不愿承认其成功”的类似状况。可观察口径：外部经济体在研发/高科技/制造或经济总量上相对美国上升的原始统计，以及美国公众或精英是否承认对手成功/领先的调查。反证：美国公众或官方明确承认对手在关键领域领先，或不存在可比的追赶挑战。",
+  "elapsed_seconds": 43.057,
+  "completed_at": "2026-11-09T07:59:37.847205+00:00"
+}

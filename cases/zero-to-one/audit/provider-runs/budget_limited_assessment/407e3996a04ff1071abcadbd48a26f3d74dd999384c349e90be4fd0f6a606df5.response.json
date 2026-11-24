@@ -1,0 +1,28 @@
+{
+  "id": "6553b2a4-4e41-4434-9a9a-1f21dea3ab94",
+  "object": "chat.completion",
+  "created": 1794201443,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000029373-000029394\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性判断：若某产品/服务在关键维度比最相近替代品好10倍，则作者预期其可避开竞争。观察时段为出版后至cutoff（2014—2026-11-09），但“10倍好”与“避开竞争”均无统一可操作指标，且条件是否满足需逐案判定。\",\"reason\":\"原文以PayPal、亚马逊、iPad等举例说明10倍改进可避开竞争，但这是解释性论断，未给出可统一检验的指标或期限。现有证据为空，无法对条件是否普遍成立作回顾性判定。\",\"limitation\":\"“10倍好”和“避开竞争”缺乏统一量化口径，且举例属作者自选案例，不能代表普遍规律；无verified证据可用。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000029919-000029958\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"该句为网络效应的示意性说明（若所有朋友都用Facebook，则注册有意义），属概念解释而非对未来事件的可检验预测。\",\"reason\":\"原文用此句解释网络效应机制，不是对特定未来结果的预测，故归为非预测。\",\"limitation\":\"作为示意性条件句，不构成可评分预测；无证据需求。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7514,
+    "completion_tokens": 394,
+    "total_tokens": 7908,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 6746
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

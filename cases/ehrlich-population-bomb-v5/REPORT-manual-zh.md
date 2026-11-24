@@ -1,0 +1,222 @@
+# 保罗·埃利希《人口爆炸》（The Population Bomb）：出版后预测人工核查
+
+- 案例目录：`cases/ehrlich-population-bomb-v5/`
+- 出版日期：Ballantine Books／Sierra Club **1968 年 5 月**初版，按 1968-05 起算。正文用 `reading-library/2026-11-15-未来判断书单/02-人口和资源/09-人口爆炸.pdf`（Internet Archive 扫描本，sha256 `25990bfd…`），版权页只列 1968 年版权，印次为 1968 年 5 月至 1970 年 2 月第 12 次印刷，即修订版之前的原始文本；1971、1978 年修订版新增内容不在本次核查范围。抽取用 `pdftotext -enc UTF-8` 转成的 TXT（sha256 `340cdac9…`）。观察窗口为 1968-05 至 2026-11-15；书中写明的终点（1970 年代、十年左右、1971 年、1984 年等）按各自终点判断。
+- 截止日：2026-11-15（Asia/Shanghai）
+
+## 方法说明
+
+本稿是按 METHOD.md 的重做版（替代此前助手手工挑选 19 条预测的旧稿）。抽取：用仓库 prepare_book v5 流水线把全文切成 82 块（3500 字符、600 字符上下文），助手逐块通读、按 DISCOVER_PROMPT_V5 写出模型本应返回的 JSON，再由仓库代码完成引文对齐、归属降级、去重和导入，得到 50 条可核验预测（另有 1 条因规则被标为历史陈述而排除）。第二章三个情景中的具体事件未计入：作者写明“只是可能性，不是预测”。核验：每条先写 scope，各做一次 support 与 counter 的 Exa 检索，只从检索返回的 URL 中选源，原文存档于 data/sources（sha256），写入 data/evidence.jsonl（114 条），由助手阅读后按四分类规则评断，经 pipeline.py apply assess → check → report。本稿由助手逐条对照书中原文与存档证据人工复核：先剔除非预测（出版前已发生的史实、一般规律、规范建议、反事实推演等），再对每条预测用 Exa 检索公开来源并抓取存档（`data/sources/`，sha256 记于 `data/evidence.jsonl`）核对至截止日。没有写明终点的预测按“出版日→2026-11-15”的隐含窗口判断；写明的终点未到、或条件句的前提从未出现，一律记“暂无法判断”，不强行判对错。所有来源均为实际抓取并存档的公开页面或文件；本稿未使用 DeepSeek 自动核验结论作为最终判断。
+
+五级判断：正确／趋势符合（方向对、程度或时点未完全到位）／部分符合（一部分成立）／错误／暂无法判断。严格胜率＝正确÷可判定；加权胜率＝（正确＋0.75×趋势符合＋0.5×部分符合）÷可判定；错误率＝错误÷可判定；可判定＝前四级之和。
+
+## 统计
+
+候选 50 条，剔除非预测 0 条，计入 **50 条预测**，其中 **47 条可判定**。
+
+| 判断 | 条数 |
+|---|---:|
+| 正确 | 7 |
+| 趋势符合 | 2 |
+| 部分符合 | 14 |
+| 错误 | 24 |
+| 暂无法判断 | 3 |
+
+| 指标 | 数值 |
+|---|---:|
+| 严格胜率 | **14.9%**（7/47） |
+| 加权胜率 | **33.0%** |
+| 错误率 | **51.1%**（24/47） |
+| 未定占比（暂无法判断/预测） | 6.0%（3/50） |
+
+## 总体评价
+
+《人口爆炸》以“养活全人类的战斗已经结束”开篇，核心预测是 1970 年代全球大饥荒和世界死亡率大幅上升。这些核心判断没有应验：70 年代确有孟加拉、柬埔寨、萨赫勒等地的严重饥荒，但规模远不是“数以亿计”；世界粗死亡率不升反降。印度靠绿色革命养活了新增人口，美国用水量也没有在 1984 年达到每天 6000 亿加仑，密歇根湖和加州神鹫都没有“死掉”，肉类消费上升而不是人人改吃素。作者在若干具体机制和现象上是对的：合成农药用量继续上升、害虫抗药性扩散、1972 年苏联大量购粮、通信卫星把 1984 年埃塞俄比亚饥荒送上电视、海水淡化在随后几十年仍是杯水车薪、石油制食品没有及时成为主粮。总体看，最大的失误是低估绿色革命和生育转变的速度，把当时的趋势当成了命运。47 条可判定预测中，错误约占一半。
+
+## 逐条判断
+
+编号为 `data/claims.jsonl` 中可判定候选的顺序号。
+
+### 正确（7 条）
+
+- **#11** 「It is difficult to guess what the exact scale and consequences of the famines will be. But there will be famin…」  
+  判断：**正确**。饥荒在1968年后确实发生：1974年孟加拉、1970年代萨赫勒、柬埔寨以及后来的埃塞俄比亚等，都被饥荒数据集记录在案  
+  来源：<https://ourworldindata.org/famines>；<https://www.cnn.com/world/famine-fast-facts>；<https://worldpeacefoundation.org/blog/historical-trends-in-famine-mortality/>
+- **#15** 「They need money and will be busy selling to food-short」  
+  判断：**正确**。1972年苏联从美国、加拿大、澳大利亚等国大量购粮（“粮食大劫案”），出口国把粮食卖给付得起钱的缺粮国，与判断一致  
+  来源：<https://en.wikipedia.org/wiki/1973_United_States%E2%80%93Soviet_Union_wheat_deal>；<https://www.usda.gov/about-usda/general-information/staff-offices/office-chief-economist/newsroom/podcast-usda-now-you-know/podcast-great-grain-robbery>；<https://www.bbc.co.uk/programmes/w3ct3bw7>
+- **#20** 「It is safe to assume that our use of synthetic pesticides, already massive, will in-— crease.」  
+  判断：**正确**。合成农药用量继续上升：粮农组织统计显示全球农业农药用量在1990—2021年间大致翻了一番，与“已经很大、还会再增加”一致  
+  来源：<https://openknowledge.fao.org/server/api/core/bitstreams/a8a8c2c8-ee36-42e8-a619-7e73c8daf8a6/content>；<https://www.fao.org/newsroom/detail/fao-s-statistical-yearbook-2023-goes-live--highlights-the-impact-of-disasters-on-agriculture-and-cost-of-healthy-diets/en>；<https://data.apps.fao.org/catalog/dataset/cf6432f8-c3b8-404e-897f-5b2c45709ca7>
+- **#21** 「Individuals of these varieties will survive and breed, and their offspring will be resistant.」  
+  判断：**正确**。对农药产生抗性的害虫种类持续增加：IRAC与抗性数据库显示，记录在案的节肢动物抗药性自20世纪中叶以来大幅上升，与“抗性个体存活繁殖、后代也将抗药”一致  
+  来源：<https://irac-online.org/documents/resistance-database-team-update-2011/>；<https://pmc.ncbi.nlm.nih.gov/articles/PMC4592624/>；<https://irac-online.org/documents/moa-classification-and-irm-journal-article/?ext=pdf>
+- **#34** 「the next few decades, is going to be one of those “thimble-bailing” operations.」  
+  判断：**正确**。至少在出版后的几十年里，海水淡化占全球用水的比重仍然很小，把它说成“杯水车薪”是符合当时及随后几十年事实的  
+  来源：<https://archive.unu.edu/unupress/unupbooks/80858e/80858E0k.htm>；<https://www.sciencedirect.com/science/article/abs/pii/S0011916417305428>
+- **#41** 「We won’t see substantial food from petroleum in time to have much effect in the next decade or so,」  
+  判断：**正确**。以石油为原料的单细胞蛋白等方案在1970年代没有成为重要食物来源，未能在“十年左右”产生实质影响  
+  来源：<https://doi.org/10.1038/267194a0>；<https://doi.org/10.1080/00219266.1992.9655282>；<https://doi.org/10.1079/pns19820044>
+- **#43** 「Communications satellites guarantee that we will be treated to the sights and sounds of mass starvation on the…」  
+  判断：**正确**。1984年迈克尔·伯克关于埃塞俄比亚饥荒的电视报道传遍世界，并催生了Live Aid等援助行动，与“通信卫星把大规模饥荒的声画送到晚间新闻”一致  
+  来源：<https://www.theguardian.com/global-development/poverty-matters/2014/oct/22/ethiopian-famine-report-influence-modern-coverage>；<https://www.bbc.com/news/newsbeat-34776109>；<https://www.theguardian.com/music/2004/oct/17/popandrock5>
+
+### 趋势符合（2 条）
+
+- **#40** 「will be replaced by a massive, noholds-barred race to harvest the sea.」  
+  判断：**趋势符合**。海洋捕捞确实走向过度开发，粮农组织一再报告过度捕捞种群比例上升，方向应验；但各国也建立了专属经济区和配额等管理制度，并非完全“不择手段、毫无约束”  
+  来源：<https://sustainablefisheries-uw.org/fao-state-of-world-fisheries-2020/>；<https://openknowledge.worldbank.org/bitstreams/d6ac5090-673e-5d7b-a4ba-92e05c7f830b/download>；<https://openknowledge.fao.org/server/api/core/bitstreams/d3b76869-af74-4d1f-9dbc-0a037b83b00f/content/x7579e08.htm>
+- **#50** 「There is every reason to believe that diminishing population pressures will reduce the prob- — ability of war」  
+  判断：**趋势符合**。20世纪后期全球生育率下降的同时，战争中的战斗死亡整体也呈下降趋势，方向相符；但战争并未消失，且两者的因果关系并不能由趋势单独证明  
+  来源：<https://ourworldindata.org/war-and-peace-long-run>；<https://www.bethanylacina.org/docs/Lacinaetal_declinerisk.pdf>；<https://ourworldindata.org/war-and-peace>
+
+### 部分符合（14 条）
+
+- **#7** 「In the United States the current low birth rates soon will be replaced by higher rates as」  
+  判断：**部分符合**。二战后婴儿潮一代进入育龄后，美国出生人数在1980年代末出现过一轮“回声潮”；但总和生育率在1960年代末后继续下降并在1970年代中期触底后大致企稳，并没有很快被持续的“更高出生率”所取代  
+  来源：<https://www.cdc.gov/nchs/data-visualization/natality-trends/>；<https://www2.census.gov/library/publications/1992/demographics/p23-181.pdf>；<https://www.pop.org/u-s-birth-echo-boom-fades-away/>
+- **#9** 「during the next decade, we’re going to see the greatest baby boom of all time.」  
+  判断：**部分符合**。全球年出生人数后来确实升至历史高位，但高峰大约在1990年前后，而不是“此后十年”；同期总和生育率持续下降，并没有出现作者所说的那种生育率意义上的“有史以来最大婴儿潮”  
+  来源：<https://ourworldindata.org/grapher/number-of-births-per-year>；<https://populationconnection.org/wp-content/uploads/2024/07/2024-WPD-slides.pdf>；<https://database.earth/population/world/births>
+- **#10** 「we will not be able to prevent large-scale famines in the fext decade or so.」  
+  判断：**部分符合**。此后十年左右确实发生了大规模地区性饥荒（1974年孟加拉、萨赫勒、柬埔寨等），“无法完全阻止大规模饥荒”这一点部分应验；但规模远小于书中设想的全球性饥荒  
+  来源：<https://www.cnn.com/world/famine-fast-facts>；<https://ourworldindata.org/famines>；<https://worldpeacefoundation.org/blog/historical-trends-in-famine-mortality/>
+- **#13** 「I have yet to meet anyone familiar with the situ- ation who thinks India will be self-sufficient in food by 19…」  
+  判断：**部分符合**。1971年印度确实尚未实现粮食自给，仍依赖进口，这一点说对了；但“或许永远不能”没有应验，1970年代末以后印度粮食产量持续提高并逐步自给  
+  来源：<https://documents1.worldbank.org/curated/en/823511468041374093/txt/multi-page.txt>；<https://www.jica.go.jp/Resource/jica-ri/publication/workingpaper/jrft3q000000231s-att/JICA-RI_WP_No.17_2010.pdf>；<https://countrystudies.us/india/104.htm>
+- **#16** 「No responsible person thinks that the United States can save the world from famine with her food exports, alth…」  
+  判断：**部分符合**。美国粮食出口和粮食援助未能阻止各地饥荒发生，也确实没有“单靠出口拯救全世界”；但世界并未陷入书中那种无法挽救的全球大饥荒，美国出口能力的上限被放到了过大的灾难背景里  
+  来源：<https://history.state.gov/historicaldocuments/frus1969-76ve06/d20>；<https://la.utexas.edu/users/hcleaver/357L/357Lcleaverfood.pdf>；<https://ourworldindata.org/famines>
+- **#18** 「I predict that the rate of soil deterioration will accelerate as the food crisis intensifies.」  
+  判断：**部分符合**。不少地区的土壤侵蚀和退化确实在继续，粮农组织仍将土壤退化视为全球问题；但美国等国在1980年代后通过保护性耕作和保护区计划使侵蚀下降，并非全球一律“随着粮食危机而加速退化”  
+  来源：<https://www.fao.org/fileadmin/user_upload/newsroom/docs/FAO-world_soils-report-COMPLETE.pdf>；<https://www.fao.org/about/meetings/soil-erosion-symposium/key-messages/en/>；<https://nrcs-prod.azureedge.us/sites/default/files/2026-02/2022%20NRI%20Summary%20Report.pdf>
+- **#31** 「It seems inevitable that world political tensions will increase as the disparity between “haves” and “have-not…」  
+  判断：**部分符合**。1970年代确实出现过南北对话、国际经济新秩序等紧张；但此后中国、印度等国经济增长使国家间差距在一些口径下缩小，冷战也结束，并非简单的“差距扩大、紧张必然加剧”  
+  来源：<https://humanityjournal.org/wp-content/uploads/2014/06/HUM-6.1-final-text-SARGENT.pdf>；<https://cepr.org/voxeu/columns/income-inequality-globalising-world>
+- **#32** 「the kinds of disasters that will occur as mankind slips into the famine decades.」  
+  判断：**部分符合**。书中情景里的某些灾难类型（地区性饥荒、冲突）后来确实出现，但人类并没有滑入作者所说的“饥荒年代”；全球人均粮食供应总体上升  
+  来源：<https://ourworldindata.org/food-supply>；<https://ourworldindata.org/famines>；<https://humanprogress.org/trends/the-end-of-famine/>
+- **#38** 「Laterization is continuing throughout the tropics and will doubtless proceed more rap- idly as mankind gets in…」  
+  判断：**部分符合**。热带毁林和土壤退化在一些地区确实继续发生；但把砖红壤化说成将随“越来越绝望地要粮”而全面加速，并不符合后来多样的土地利用和改良实践  
+  来源：<https://openknowledge.fao.org/server/api/core/bitstreams/3ec22e45-bfd6-4020-8fb9-a01aaf87ad97/content/y1899e08a.htm>；<https://krishikosh.egranth.ac.in/server/api/core/bitstreams/477167af-6dc8-4f16-aa57-04c4f304b938/content>
+- **#44** 「If present trends continue, in 20 years we will be much less than 1/15th of the population, and yet we may use…」  
+  判断：**部分符合**。若以1988年前后计，美国人口占世界比重确实已低于1/15（约5%）；但美国当时远未消耗世界约80%的资源，能源消费占比大约在四分之一量级  
+  来源：<https://pdf.wri.org/worldresources1988-89_bw.pdf>；<https://ourworldindata.org/profile/energy/united-states>；<https://www.eia.gov/TOOLS/FAQS/faq.php?id=87&t=1>
+- **#45** 「If these choices are presented one at a time, out of context, I predict that our behavior will be “selfish.”」  
+  判断：**部分符合**。美国在一些粮食援助和出口决策上确有自利考虑；但1984年埃塞俄比亚饥荒后也出现了政府援助倡议和Live Aid等大规模公众动员，并非一律“自私”  
+  来源：<https://history.state.gov/historicaldocuments/frus1969-76ve14p1/d142>；<https://www.reaganlibrary.gov/archives/speech/statement-announcing-african-hunger-relief-initiative>；<https://www.csmonitor.com/World/2025/0717/live-aid-1985-ethiopia-generosity-priorities>
+- **#47** 「Americans will do none of these things, you say. Well, ’'m inclined to agree.」  
+  判断：**部分符合**。美国确实没有采纳书中那种强制人口控制的激进国内纲领；但1970年地球日、环保局成立以及清洁空气/清洁水法和家庭计划等政策表明，并非“这些事一件也不会做”  
+  来源：<https://flsuspop.org/NixRockefeller.html>；<https://www.epa.gov/history/epa-history-earth-day>；<https://www.govinfo.gov/features/earth-day-milestones>
+- **#48** 「we do not have the capacity to feed the needy of the world over the next decade or so.」  
+  判断：**部分符合**。发达国家确实没有能力在十年左右养活世界上所有饥民，饥饿也并未消失；但全球粮食供应和援助体系的改善幅度大于书中那种全面无力的判断  
+  来源：<https://www.fao.org/4/ag403e/ag403e03.htm>；<https://history.state.gov/historicaldocuments/frus1969-76ve14p1/d142>；<https://documents1.worldbank.org/curated/en/481091468764430393/pdf/multi0page.pdf>
+- **#49** 「universities, like the Catholic Church, will evolve or die.」  
+  判断：**部分符合**。大学在1968年后继续存在并有所演变，并未“要么演变要么消亡”中的消亡；同时50分钟讲座等旧形式也大量保留  
+  来源：<https://pmc.ncbi.nlm.nih.gov/articles/PMC9669073/>；<https://files.eric.ed.gov/fulltext/EJ832893.pdf>
+
+### 错误（24 条）
+
+- **#1** 「In the 1970’s the world will undergo famines—hundreds of millions of people are goin; to starve to death in sp…」  
+  判断：**错误**。1970年代确有大规模地区性饥荒（尼日利亚内战约100万人、孟加拉1974年约150万人、柬埔寨1975—1979年约150—200万人），但据世界和平基金会与Our World in Data，远不是“数以亿计”的全球大饥荒  
+  来源：<https://www.cnn.com/world/famine-fast-facts>；<https://ourworldindata.org/famines>；<https://worldpeacefoundation.org/blog/historical-trends-in-famine-mortality/>
+- **#2** 「At this late date nothing can prevent a substantial increas: in the world death rate.」  
+  判断：**错误**。世界粗死亡率不升反降：世界银行/联合国数据显示，世界粗死亡率1960年约17.7‰，此后持续下降，2020年约7.7‰，1968年后并未出现作者所说的“大幅上升”  
+  来源：<https://ourworldindata.org/grapher/crude-death-rate>；<https://data.worldbank.org/indicator/SP.DYN.CDRT.IN?end=2019&start=1968>；<https://www.indexmundi.com/facts/world/indicator/SP.DYN.CDRT.IN>
+- **#3** 「it now seems inevitable that it will continue to its logical conclusion: mass starvation.」  
+  判断：**错误**。欠发达国家1950—1980年粮食产量年均约增长3%，超过人口增长，绿色革命使亚洲等地人均粮食供应上升，并没有走向作者所说的“逻辑结局：大规模饥饿”  
+  来源：<http://fao.org/docrep/u8480e/U8480E0Q.HTM>；<http://hdl.handle.net/10855/19262>；<https://ourworldindata.org/famines>
+- **#4** 「The rich are going to get richer, but the more numerous poor are going to get poorer.」  
+  判断：**错误**。富国确实更富，但全球穷人整体并未更穷：世界银行口径下，极端贫困人口比例从1981年前后约47%降到2015年前后约10%  
+  来源：<https://www.worldbank.org/en/publication/poverty-and-shared-prosperity-2018>；<https://ourworldindata.org/grapher/above-or-below-extreme-poverty-line-world-bank>；<https://ourworldindata.org/grapher/world-population-in-extreme-poverty-absolute?time=1991..latest>
+- **#5** 「this is a mere handful compared to the numbers that will be starving in a decade or so.」  
+  判断：**错误**。以饥荒死亡计，1970年代末至1980年代初的年度死亡远达不到“远超当年350万”的全球性跃升；世界和平基金会与Our World in Data显示，大规模饥荒死亡在20世纪后期总体下降，地区性饥荒（孟加拉、柬埔寨等）的合计也远低于书中暗示的量级  
+  来源：<https://ourworldindata.org/famines>；<https://worldpeacefoundation.org/blog/historical-trends-in-famine-mortality/>；<https://ourworldindata.org/the-our-world-in-data-dataset-of-famines>
+- **#6** 「As you shall see, the next nine years will probably tell the story.」  
+  判断：**错误**。到1977年左右，世界并未迎来作者所说的那种已成定局的全球粮食灾难；绿色革命已在进行，1972—1975年虽有粮价冲击，但随后收成好转，危机并未在“九年”内按他设想的方向收场  
+  来源：<https://documents1.worldbank.org/curated/en/481091468764430393/pdf/multi0page.pdf>；<https://www.thenewatlantis.com/publications/how-agriculture-system-works>；<https://history.state.gov/historicaldocuments/frus1977-80v02/d218>
+- **#12** 「I don’t see how they can possibly feed two hundred million more people by 1980.」  
+  判断：**错误**。绿色革命使印度粮食增产赶上人口增长：1960年代末到1980年小麦等作物产量大幅上升，印度养活了新增的约两亿人，并逐步走向粮食自给，并非“到1980年不可能养活”  
+  来源：<https://countrystudies.us/india/104.htm>；<https://www.jica.go.jp/Resource/jica-ri/publication/workingpaper/jrft3q000000231s-att/JICA-RI_WP_No.17_2010.pdf>；<https://eprints.cmfri.org.in/13705/1/Current%20Science_2019_Trilochan%20Mohapatra_India%E2%80%99s%20evergreen%20revolution%20in%20cereals%20-%20OP%20Yadav%20et%20al..pdf>
+- **#14** 「for the next two to three years the chances are two to one that production will range between 88 and 96 millio…」  
+  判断：**错误**。Bean认为1967—68年约9300—9500万吨已是上限、此后两三年多半停在8800—9600万吨。印度随后几个年度的粮食产量越过了这一区间，绿色革命带来的增产高于这一悲观区间  
+  来源：<https://www.rbi.org.in/Scripts/PublicationsView.aspx?id=15807>；<https://stats.areppim.com/stats/stats_cerealsxindiaxarea_prod.htm>；<https://static.pib.gov.in/WriteReadData/specificdocs/documents/2022/jul/doc202272874801.pdf>
+- **#17** 「If the pessimists are correct, massive famines will occur soon, possibly in the early 1970's, certainly by the…」  
+  判断：**错误**。作者站在悲观派一边，断言大规模饥荒很快就会来、最迟1980年代初必至。1970—80年代初确有严重地区性饥荒，但Our World in Data按十年计的饥荒死亡远达不到书中“大规模、不可避免”的全球图景  
+  来源：<https://ourworldindata.org/famines>；<https://ourworldindata.org/grapher/deaths-from-famines-by-decade>；<https://www.thelancet.com/pdfs/journals/lancet/PIIS0140-6736%2815%2900480-8.pdf>
+- **#19** 「Ecology will be ignored more and more as things get tough.」  
+  判断：**错误**。1968年之后生态学并未越来越被忽视：1970年地球日、美国环保局成立，《国家环境政策法》等环境立法反而开启了现代环保运动  
+  来源：<https://www.epa.gov/archive/epa/aboutepa/birth-epa.html>；<https://www.epa.gov/archive/epa/aboutepa/earth-day-70-what-it-meant.html>；<https://www.pbs.org/wgbh/americanexperience/features/earth-days-modern-environmental-movement/>
+- **#22** 「The day may come when the obese people of the world must give up diets, since metabolizing their fat deposits …」  
+  判断：**错误**。美国1972年禁止农业使用DDT；文献只记录到极个别误服致死个案，并未出现“节食动员脂肪导致DDT中毒、因而不得不放弃减肥”的普遍现象  
+  来源：<https://www.epa.gov/ingredients-used-pesticide-products/ddt-brief-history-and-status>；<https://www.ncbi.nlm.nih.gov/books/NBK590079/>；<https://pmc.ncbi.nlm.nih.gov/articles/PMC5598246/>
+- **#23** 「it is clear that fewer and fewer people in the future will be obese!」  
+  判断：**错误**。未来肥胖的人不但没有越来越少，反而形成肥胖流行：全球成人肥胖率1980—2008年大致翻倍，美国2017—2020年成人肥胖率达41.9%  
+  来源：<https://cdc.gov/obesity/adult-obesity-facts/index.html>；<https://www.cdc.gov/nchs/data/hestat/hestat111.htm>；<https://link.springer.com/article/10.1186/1478-7954-10-22>
+- **#24** 「Supersonic transports will leave contrails high in the stratosphere, where they will break up very slowly.」  
+  判断：**错误**。美国超音速客机计划于1971年取消，协和飞机机队规模很小，并未形成作者设想的大规模平流层凝结尾迹  
+  来源：<https://en.wikipedia.org/wiki/Supersonic_transport>；<https://thespacereview.com/article/3796/1>
+- **#25** 「A lid of ice crystals gradually will be deposited high in the atmosphere」  
+  判断：**错误**。由于SST商业机队几乎没有形成规模，所谓“高层大气逐渐沉积一层冰晶盖”并未成为可观察的全球现象  
+  来源：<https://en.wikipedia.org/wiki/Supersonic_transport>；<https://thespacereview.com/article/3796/1>
+- **#26** 「One way or another, you can bet their effect will not be “neutral.”」  
+  判断：**错误**。在可观察的全球尺度上，SST没有带来作者所说的那种非中性的气候效应，主要原因是商业SST基本没有大规模运营  
+  来源：<https://en.wikipedia.org/wiki/Supersonic_transport>；<https://thespacereview.com/article/1881/1>
+- **#27** 「Lake Michigan will soon follow it in extinction.」  
+  判断：**错误**。密歇根湖并未步伊利湖后尘“死亡”：研究显示磷富营养化一度出现后有恢复证据，大湖渔业委员会仍报告湖中维持着多样的鲑鳟渔业  
+  来源：<https://doi.org/10.1139/f02-132>；<https://www.glfc.org/state-of-the-lake.php?lake=2>；<https://scavia.seas.umich.edu/wp-content/uploads/2010/08/Mida-et-al-2010.pdf>
+- **#28** 「the California condors, soon to join them.」  
+  判断：**错误**。加州神鹫没有灭绝：1987年将全部个体转入圈养繁育，到2024年底全球种群566只、野外369只，并未“很快步旅鸽后尘”  
+  来源：<https://www.fws.gov/program/california-condor-recovery>；<https://www.fws.gov/sites/default/files/documents/2025-03/2024-california-condor-population-status508-compliant.pdf>；<https://www.ventanaws.org/condorstory.html>
+- **#29** 「rise in the death rate in the next few decades are exactly those most actively operating in preexplosion human…」  
+  判断：**错误**。此后几十年世界粗死亡率并未因战争、瘟疫和饥荒而大幅上升，反而持续下降  
+  来源：<https://ourworldindata.org/grapher/crude-death-rate>；<https://data.worldbank.org/indicator/SP.DYN.CDRT.IN?end=2019&start=1968>
+- **#30** 「It now seems inevitable that death through starvation will be at least one factor in the coming increase in th…」  
+  判断：**错误**。“即将到来的死亡率上升”并未发生，因此饥饿也不可能成为这一上升的因素；世界粗死亡率在1968年后下降  
+  来源：<https://ourworldindata.org/grapher/crude-death-rate>；<https://www.stlouisfed.org/on-the-economy/2024/feb/has-better-nutrition-driven-down-mortality-rates>
+- **#33** 「Unless action is taken on the population front soon, human organ transplants will become an historical curiosi…」  
+  判断：**错误**。作者所主张的那种迅速、严厉的人口控制并未实现，但器官移植不但没有变成“历史奇观”，反而在此后数十年大幅增长  
+  来源：<https://www.statista.com/chart/21110/organ-transplants-timeline-us/>；<https://srtr.hrsa.gov/adr/2020/Introduction/>
+- **#36** 「the United States alone will need 600 billion gallons of water a day in 1984」  
+  判断：**错误**。美国地质调查局的用水统计显示，1980年前后全美取水量约在4000多亿加仑/日，远低于书中1984年每天6000亿加仑，且此后趋于稳定或下降  
+  来源：<https://pubs.usgs.gov/circ/2004/circ1268/htdocs/table14.html>；<https://pacinst.org/wp-content/uploads/2015/04/Water-Use-Trends-Report.pdf>；<https://pubs.usgs.gov/circ/1983/1001/report.pdf>
+- **#39** 「as the world gets hungrier, we will feed lower and lower on the food chains, meat will get more and more expen…」  
+  判断：**错误**。世界人均肉类消费在1968年后总体上升，素食者仍是少数，肉类并未贵到使“大多数人变成素食者”  
+  来源：<https://ourworldindata.org/grapher/per-capita-meat-type?tab=table>；<https://foreignpolicy.com/2022/10/09/world-meat-consumption-data-gdp-diet-alternative-proteins/>；<https://www.destatis.de/EN/Themes/Countries-Regions/International-Statistics/Data-Topic/AgricultureForestryFisheries/livestock_meat.html>
+- **#42** 「After the SST we'll doubtless move on to orbital transports that will circle the ~ earth before reentering」  
+  判断：**错误**。超音速客机之后并没有出现作为民航下一步的轨道客运；航天飞机等并不是SST的客运后继，商业轨道客运至今未开通  
+  来源：<https://en.wikipedia.org/wiki/Supersonic_transport>；<https://thespacereview.com/article/3796/1>；<https://thespacereview.com/article/1881/1>
+- **#46** 「without drastic worldwide measures for population control in the near future, there will be no Church anyway.」  
+  判断：**错误**。全世界并没有采取作者所说的那种严厉人口控制，天主教会也并未因此消失，全球天主教徒人数在此后仍在增加  
+  来源：<http://www.fides.org/en/attachments/view/file/Catholic_Churc_Statistics__2022_ENG.pdf>；<https://www.catholicworldreport.com/2022/02/11/vatican-number-of-catholics-worldwide-rose-by-16-million-in-2020/>
+
+### 暂无法判断（3 条）
+
+- **#8** 「In 1983 they will have twice ‘as many mouths to feed as they had in 1966, if the 1966 trend continues.」  
+  判断：**暂无法判断**。该预测以“若1966年趋势持续”为条件。哥斯达黎加总和生育率在1950年代末到1970年代末从约7降到约4，人口并未在1983年达到1966年的两倍，前提未成立，故不判对错  
+  来源：<https://database.earth/population/costa-rica>；<https://pubmed.ncbi.nlm.nih.gov/12280129>；<https://ccp.ucr.ac.cr/informacion-demografica/tasas-basicas-1941/>
+- **#35** 「we will have a worldwide desalting capacity of 20 billion gallons a day in 1984.」  
+  判断：**暂无法判断**。该条以“若业界最乐观预测成真”为条件。1984年全球海水淡化能力并未达到每天200亿加仑，这一前提未成立，故不按对错计分  
+  来源：<https://worldwater.org/wp-content/uploads/2013/07/Table22.pdf>；<https://www.princeton.edu/~ota/disk2/1988/8842/884210.PDF>；<https://www.desware.net/Global-Production-Desalinated-Water.aspx>
+- **#37** 「in 1984 the United States will quite literally be dying of thirst.」  
+  判断：**暂无法判断**。该预测以流域开发、人口和用水趋势持续为条件。美国取水量约在1980年见顶后下降，用水效率提高，1984年并未“渴死”，前提未按原趋势继续，故不判对错  
+  来源：<https://pubs.usgs.gov/circ/1998/1200/report.pdf>；<https://pubs.usgs.gov/publication/cir1081>；<https://iwra.org/proceedings/congress/resource/MADRID2003_Ben_Dziegielewski_EN.pdf>
+
+## 剔除的非预测
+
+| 编号 | 原文 | 类型 | 说明 |
+|---:|---|---|---|
+| — | （无） | — | 候选为人工挑选，未收入非预测 |
+
+## 文件
+
+- 本文：`cases/ehrlich-population-bomb-v5/REPORT-manual-zh.md`
+- 逐条结构化结果：`cases/ehrlich-population-bomb-v5/output/manual-final/results.manual.jsonl`（review_source = `manual-assistant-2026-11-15`），汇总 `output/manual-final/summary.json`
+- 人工决定源文件：`cases/ehrlich-population-bomb-v5/audit/manual_review_2026-11-15.py`
+
+## 说明
+
+- 第 8 条（哥斯达黎加 1983 年人口翻倍）、第 35 条（1984 年全球淡化能力 200 亿加仑/日）和第 37 条（1984 年美国“渴死”）都是有明确前提的条件句，前提未成立，记为暂无法判断。
+- 第二章三个情景里的具体情节（1972 年泰国战争、1979 年墨西哥政变等）作者自己标明“不是预测”，未纳入可核验预测。
+- 统计以 pipeline.py report 的 summary.json 为准；本表的加权胜率按 manual_report.py 的权重计算（正确×1 + 趋势符合×0.75 + 部分符合×0.5）。
+

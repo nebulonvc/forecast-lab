@@ -1,0 +1,28 @@
+{
+  "id": "018a476a-4bb7-4fe0-9754-9fc4e89386ec",
+  "object": "chat.completion",
+  "created": 1794201444,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000032287-000032323\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为对初创企业扩张路径的规范性建议（先主导利基市场再进入相邻市场），非对可观察未来事件的事实性预测；无具体主体、指标与期限可操作化。\",\"reason\":\"该句是作者给创业者的行动建议，而非预测某公司或市场将如何发展。\",\"limitation\":\"属规范性主张，无法作为可验证预测评分；原文举例（亚马逊、eBay）为历史叙述而非未来预测。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4280,
+    "completion_tokens": 181,
+    "total_tokens": 4461,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3512
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

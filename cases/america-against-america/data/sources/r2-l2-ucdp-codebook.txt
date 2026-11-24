@@ -1,0 +1,797 @@
+      UCDP/PRIO Armed Conflict Dataset Codebook
+                     Version 2 6.1
+                                Uppsala Conflict Data Program
+
+                        Department of Peace and Conflict Research
+                                    Uppsala University
+
+                              Centre for the Study of Civil Wars
+                        International Peace Research Institute, Oslo
+
+
+
+
+This version compiled and upd     ated by Therese Pettersson (202      6)
+
+
+When using this data, please always cite:
+
+
+Gleditsch, N .P ., Wallensteen , P. , Eriksson , M., Sollenberg , M., & Strand H. (2002) . Armed
+Conflict 1946 –2001: A New Dataset. Journal of Peace Research          39(5): 615–637.
+Davies, S., Pettersson, T., & Öberg, M. (202 6). Organized violence 1989 –2025, and violent
+political protests . Journal of Peace Research  , 63(4).
+When appropriate, also cite this cod    ebook: Pettersson, T . (2026) UCDP/PRIO Armed
+Conflict Dataset Codebook v 2 6.1 (https://ucdp.uu.se/downloads/ ).
+Always include the Version number in analyses using the dataset       . When referring to
+the dataset, make sure to use the correct name: the UCDP/PRIO Armed Conflict
+Dataset.
+Contents
+1     Introduction ............................................................................................................................................. 3
+2     Definition of armed conflict ............................................................................................................... 4
+    2.1       State - based Armed Conflict .................................................................................................... 4
+3     Additional information on variables in the dataset                                              ............................................................... 10
+    3.1       Location ......................................................................................................................................... 10
+    4.2       Incompatibility ............................................................................................................................. 11
+    4.3       Start dates temporal precision                             ............................................................................................ 11
+    4.4       Episode end dates temporal precision                                     .............................................................................. 12
+    3.5       System Membership Description                                  ........................................................................................ 12
+4     Missing data .......................................................................................................................................... 13
+5     Version Name Convention                          ............................................................................................................... 13
+6     References ............................................................................................................................................ 14
+Appendix 1 List of System Members Since 1946                                           .............................................................................. 15
+
+
+
+
+                                                                                2
+1 Introduction
+This document describes the UCDP/PRIO Armed Conflict Dataset, a joint project between the
+Uppsala Conflict Data Program (UCDP) at the Department of Peace and Conflict Research,
+Uppsala University and the Centre for the Study of Civil War at the International Peace
+Research Institute in Oslo (PRIO).      The first release of the Armed Conflict Dataset was prepared
+at PRIO in 2002 in close collaboration with researchers at UCDP and the Departments of
+Sociology and Political Science and Geomatics at the Norwegian University of Science and
+Technology (NTNU). For a description of the division of labor in creating the database, see the
+first footnote in the article presenting the dataset, Gleditsch et al. (2002: 615). This footnote also
+lists the financial sources of support for the entire project and credits for comments and advice
+received along the way.
+
+The dataset is av ailable for download from      http://ucdp.uu.se/downloads
+
+Both UCDP and PRIO offer a range of other datasets, compatible with the UCDP/PRIO dataset.
+Of special importance is the UCDP Dyadic dataset, which is based on the UCDP/PRIO Armed
+Conflict Dataset, but goes beneath the conflict level and focuses on different dyads within each
+conflict. Further compatible datasets can be found on both PRIO’s and UCDP’s web pages.
+This is version 2   6.1 of the codebook and associated documents. For our policy on version
+labeling, see Section 5 below, and for a complete history of earlier versions see the document
+called Version History. For further comments and suggestions on the data and the codebook,
+please communicate both t o ucdp@pcr.uu.se and to jpr@prio.no .
+
+Earlier versions and definitions:
+Lotta Themnér
+Peter Wallensteen
+Birger Heldt
+Margareta Sollenberg
+Mikael Eriksson &
+Stina Högbladh
+Uppsala Conflict Data Program (UCDP)
+
+Håvard Strand
+Håvard M. Nygård
+Halvard Buhaug
+Joachim Carlsen
+Nils Petter Gleditsch
+Håvard Hegre
+Christin M. Ormhaug &
+Lars Wilhelmsen
+International Peace Research Institute, Oslo (PRIO)
+
+
+
+
+                                                      3
+2 Definition of armed conflict
+                                                                                                                                   1
+The main unit in this dataset is a “     State - based Armed Conflict” as defined by UCDP.                                             This
+definition is presented unabridged in     S ection 2.1. Each conflict is listed in the database and
+given a unique ID code. The temporal aspect of a conflict is not addressed by this definition;
+hence, two conflict episodes over the same incompatibility will be assigned the same ID
+regardless of the time separating them. See below for further clarifications.
+
+
+
+2.1                 State - based A rmed Conflict
+UCDP defines      state - based armed     conflict as: “a contested incompatibility that concerns
+government and/or territory where the use of armed force between two parties, of which at
+least one is the government of a state, results in at least 25 battle     - related deaths in a calendar
+year .”
+The separate elements of the definition are operationalized as follows:
+(1) Use of armed force:               use of arms, resulting in deaths.
+        (1.1) Arms: any material means, e.g. manufactured weapons but also sticks, stones, fire,
+               water etc.
+(2) 25 deaths: A minimum of 25 battle - related deaths per year and per dyad (see                                       Item 3.3 in this
+     definition ) in an incompatibility. 2
+(3) Party: A government of a state or any opposition organization or alliance of organizations.
+     UCDP distinguishes between primary and secondary parties. Primary parties are those that
+     form an incompatibility by stating incompatible positions (see          Item 5 in this definition). At
+     least one of the primary parties is the government of a state.
+     Secondary parties are states that enter a conflict with troops to actively support one of the
+     primary parties. The secondary party must share the position of the primary party it is
+     supporting in the incompatibility.
+        (3.1) Government: The party controlling the capital of a state.
+        (3.2) Opposition organization: Any non - governmental group of people having announced          a
+               name for their group and using armed force to influence the outcome of the          stated
+               incompatibility (see Item 5 in this definition ). The UCDP only deals with formally
+               organized opposition. The focus is on armed conflict involving consciously     conducted
+               and planned political campaigns rather than spontaneous violence.
+        (3.3) Dyad: A dyad consists of two conflicting primary parties. At least one of the                                      primary
+               parties must be the government of a state. In interstate conflicts, both                                          primary
+
+
+
+
+1
+    For a more in - depth discussion on definitions, see   http://www.pcr.uu.se/research/ucdp/definitions/.
+2
+ Note that an incompatibility involving two opposition groups, each involved in clashes with the government resulting in 20 de         aths,
+would not be recorded as a conflict (neither dyad reached the minimum casualty threshold), whereas an incompatibility involvi          ng a
+single opposition group that caused 25 battle    - deaths would be included in the dataset.
+
+                                                                        4
+                                                    3
+               parties are state governments.         In intrastate and extrasystemic conflicts,      the non -
+               governmental primary party includes one or more opposition                   organization(s). A
+               conflict can include more than one dyad. If e.g. a government             is opposed by three
+               rebel groups over the same incompatibility, the conflict is          made up of three dyads.
+               Note that secondary parties (i.e. intervening states          supplying troops to one of the
+               primary parties) do not lead to the formation of       additional dyads.
+(4) State: A state is an internationally recognised sovereign government controlling a           specific
+     territory or an internationally unrecognised government controlling a specified            territory
+     whose sovereignty is not disputed by another internationally recognized                  sovereign
+     government previously controlling the same territory. See          Section 3.5 for details on the
+     sample of countries covered by this definition.
+(5) Incompatibility concerning government or territory:                                   The in compatibility, as stated by the
+     parties, must concern government and/or territory.
+     (5.1) Incompatibility: The stated general incompatible positions.
+     (5.2) Incompatibility concerning government:        Incompatibility concerning type of     political
+             system , the replacement of the central government, or the change of its       composition.
+     (5.3) Incompatibility concerning territory:     Incompatibility concerning the status of a territory,
+             e.g. the change of the state in control of a certain territory (interstate conflict),
+             secession or autonomy (int rastate conflict).
+     (5.4) Variables in the Armed Conflict Dataset
+
+
+The observation (or unit) in the   dataset is the conflict - year. Each conflict is listed in                                            all years
+where fighting in one or more dyad(s) caused at least 25 ba      ttle- related deaths .4
+The calendar year is the basic unit of every observation. Thus, if a conflict during the period
+June –September results in 30 casualties, that year will be recorded as a year of conflict.
+However, if the same number of casualties occurred in the period November                –February and the
+conflict failed to reach the threshold of 25 battle - related deaths in either calendar year, neither
+year will be coded as in conflict. This has a number of consequences that will be discussed
+below. Start dates frequently refer to years prior to the first calendar year of a conflict, as the
+start of a conflict might be in a year with less than 25        fatalities . Small conflicts might not be
+included. Certain observations might be based on a single event, such as the Omagh bombing in
+Northern Ireland in 1998, which exceeded the minimum threshold for armed conflict.
+
+
+
+
+3
+ With four exceptions, the primary parties in interstate conflicts consist of only one actor on each side (and thus only constitute one
+dyad). See description of Location (Sectio n 4.1) below for further information on these cases.
+4
+  This is in contrast to Version 2.1 (and earlier versions) of the dataset          . The previous formulation read ‘The observation (or unit) in
+the database is a conflict      - year, a subconflict, or a subset of either over a period of time where no element in the definition
+described in Section 2 is changed. Each conflict is likely to include several observations. This definition of the primary un                 it made
+sense in the text lists that preceded this dataset, where space was an important issue. The data structure was kept in order                    to stay
+compatible with previous versions. But while this might be advantageous to old users, it has confused a number of new users.                        The
+annual data structure therefore replaced the old structure in Version 3.0              (2005).
+
+                                                                          5
+Variable name   Content                                                              Type
+
+conflict_id     The unique identifier of the conflict.                               Integer
+
+location        The name of the country/countries                                    S tring
+                whose government(s) has a prima ry claim to the
+                incompatibility . Note that this is not necessarily
+                the g eographical location of the conflict.     Further
+                information on how location is interpreted can be
+                found below, in section 4.1.
+                If multiple countries are listed, this is comma
+                separated.
+
+side_a          The name of the country/countries of Side A in a                      S tring
+                conflict.
+                Always the government side in intrastate conflicts.
+                Note that this is a primary party to the conflict.
+
+side_a_id       The unique identifier of the actor on side A.                         Integer
+                Note that in contrast with older versions of UCDP
+                datasets, this variable is NO LONGER the Gleditsch
+                and
+                Ward state identifier (GWcode or GWNo). Use the
+                gwno_a variable instead.
+
+side_a_2nd      side_a_2nd lists all states that enter a conflict with                S tring
+                troops to actively support side A.       By definition, only
+                independent states can be a secondary party in
+                conflict .
+
+                A secondary warring party on side A shares the
+                position in the incompatibility with Side A in the
+                conflict.
+                s ide_a_2nd does not need to meet the 25 battle                  -
+                related deaths criterion to be included in the dataset;
+                an active troop participation is enough.
+                Comma separated if multiple.
+
+side_b          Identifying the opposition actor or country/countries                 S tring
+                of side B in the conflict. In an int    rastate conflict, this
+                includes a military opposition organization. Note that
+                this is a primary party to the conflict.
+                Comma separated if multiple.
+
+side_b_id       The identifier of each of the actors on side B in the                 S tring
+                conflict.
+
+                                          6
+                  Note that in contrast with older versions of UCDP
+                  datasets, this variable is NO LONGER the Gleditsch
+                  and
+                  Ward state identifier (GWcode or GWNo) if the
+                  conflict is interstate and Side B represents a country.
+                  Use the gwno_b variable instead.
+                  If more than one opposition organization or state       is
+                  involved in a conflict, this is a comma - separated list
+                  of values.
+
+side_b_2nd        side_b_2nd lists all states that enter a conflict with         S tring
+                  troops to actively support side B.       By definition, only
+                  independent states can be a secondary party in
+                  conflict.
+
+                  A secondary warring party on side B shares the
+                  position in the incompatibility with Side B in the
+                  conflict.
+                  Side_b_2nd does not need to meet the 25 battle             -
+                  related deaths criterion to be included in the dataset;
+                  an active troop participation is enough.         Note that
+                  when there is more than one opposition organization
+                  listed in an int rastate conflict, the dataset does not
+                  provide information on which of these groups the
+                  state coded as Side B Secondary is supporting      .
+
+                  Comma separated if multiple.
+
+incompatibility   The main conflict issue        iden tified per the     UCDP    Integer
+                  definitions:
+                  1= Incompatibility about territory
+                  2= Incompatibility about government
+                  3=Incompatibility about government AND territory
+                  Further information on how incompatibility is
+                  interpreted can be found below, in section 4.2
+
+territory_name    The name of the territory over which the conflict is           S tring
+                  fought, provided that the incompatibility is over
+                  territory .
+                  In case the two sides use different names for the
+                  disputed territory, the name listed is the one used by
+                  the opposition organisation. One reason for this is
+                  that this is most often the name that the general
+                  public recognises. Another reason is that there are
+                  cases where the disputed territories do not have an
+                  official name.
+
+                                            7
+year                                  The year of observati on (1946- 2025).                                                Integer
+
+intensity_level                       The intensity level in the    conflict per calendar year.                             Integer
+                                                                                            5
+                                      The intensity variable is coded in two categories:
+                                      1= Minor: between 25 and 999 battle - related deaths in
+                                      a given year.
+                                      2= War: at least 1,000 battle - related deaths in a given
+                                      year.
+cumulative_intensity                  This variable takes         into account the temporal                                 Integer
+                                      dimension of the conflict. It is a dummy variable that
+                                      codes whether the conflict since the onset has
+                                      exceeded 1,000 battle - related deaths. For conflicts
+                                      with a history prior to 1946, it does not take into
+                                      account the fatalities incurred in preceding years. A
+                                      conflict is coded as 0 as long as it has not over time
+                                      resulted in more than 1,000 battle          - related deaths.
+                                      Once a conflict reaches this threshold, it is coded as
+                                      1.
+
+type_of_conflict                      One of the following four types of conflict:                                          Integer
+                                      1= extrasystemic (between a state and a non             - state
+                                      group outside its own territory, where the
+                                      government side is fighting to retain control of a
+                                      territory outside the state system)
+                                      2= interstate (both sides are states in the Gleditsch
+                                      and Ward membership system).
+                                      3= int rastate (side A is always a government; side B
+                                      is always one or more rebel groups; there is no
+                                      involvement of foreign governments with troops, i.e.
+                                      there is no side_a_2nd or side_b_2nd coded)
+                                      4= internationalized intrastate       (side A is always a
+                                      government; side B is always one or more rebel
+                                      groups; there is involvement of foreign         governments
+                                      with troops, i.e. there is at least ONE        side_a_2nd or
+                                      side_b_2nd coded)
+start_date                            The date, as precise as possible, of the first battle                            -    Date
+                                      related death in the conflict.                                                        (YYYY-
+                                                                                                                            MM-
+                                      The date is set after the conflict fulfils all criteria
+                                                                                                                            DD)
+                                      required in the definition of an armed conflict, except
+
+
+
+5
+  In earlier versions of the UCDP/PRIO dataset, the intensity variable contained three categories: minor, intermediate and war.               The
+intermediate category was defined as “more than 25 battle          - related deaths per year and a total conflict history of more than 1000
+battle - related deaths, but fewer than 1000 per year.” Thus, the variable included a temporal dimension into the intensity coding.
+However, as many users incorrectly interpreted the variable as ordinal, it was decided that the intermediate category should                  be
+represented by a separate dummy variable denoting cumulative intensity.
+
+                                                                        8
+                                                                                   6
+                                         for the number of deaths.
+
+start_prec                               The level of precision for the initial start date                          .             Integer
+                                         The values are explained in section 4.3
+
+start_date2                              The date, as precise as possible, when a given                                           Date
+                                         episode of conflict activity reached 25 battle       - related                           (YYYY-
+                                         deaths in a year . Thus, for each episode of a conflict,                                 MM-
+                                         a new Startdate2 is coded. In case precise                                               DD)
+                                         information is lacking, Startdate2 is by default set to
+                                         31 December.
+                                         An episode is defined as continuous conflict activity.
+                                         Consequently, a new episode is coded whenever a
+                                         conflict restarts after one or more year(s) of
+                                         inactivity.
+
+start_prec2                              The level of precision for startdate2.                                                   Integer
+                                         The values are explained in section 4.3
+
+ep_end                                   A dummy variable that codes whether the conflict is                                      Integer
+                                         inactive the following year and an episode of the
+                                         conflict thus ends. If the conflict is inactive the
+                                         following year(s), this variable is coded as 1. If not, a
+                                         0 is coded. For the latest year in the dataset, it is
+                                         unknown whether the conflict will be recorded as
+                                         active or inactive in the following year, and the
+                                         varia ble is always given the code 0 .
+
+ep_end_date                              This variable is only coded in years where            ep_end                             Date
+                                         has the value 1. If a conflict year is followed by at                                    (YYYY-
+                                         least one year of conflict inactivity, the       ep_end_date                             MM-
+                                         variable lists, as precise as possible, the date when                                    DD)
+                                         conflict activity ended.
+
+ep_end_prec                              The level of precision for episode end                        .                          Integer
+                                         The values are explained in section 4.4
+
+gwno_a                                   The Gleditsch and Ward country codes of side_a.                                          S tring
+                                         Comma separated if multiple.
+
+
+6 In some cases, the initial fatality occurs in a year prior to the first year of activity. For instance, in the conflict in Et     hiopia over the
+territory Eritrea (conflict ID 275), the first battle - related deaths occurred in September 1961. During the remaining months of 1961,
+the conflict did not reach the required 25 battle       - related deaths threshold and the conflict is thus coded as inactive in 1961. 25
+battle - related deaths were not recorded until three years later. In ear      ly versions of the dataset, the start_date was assigned a new
+value whenever there was a complete change on side B. Departing from the new start_date users could break a conflict up into
+different periods. However, with the introduction of episodes in the UCDP/PRIO dataset and with the launching of the new UCDP
+Dyadic dataset this became redundant.
+
+                                                                              9
+gwno_a_2nd                   The Gleditsch and Ward country codes of side_a_2nd.             S tring
+                             Comma separated if multiple.
+
+gwno_b                       The Gleditsch and Ward country codes of side_b.                 S tring
+                             Comma separated if multiple.
+
+gwno_b_2nd                   The Gleditsch and Ward country codes of side_b_2nd.             S tring
+                             Comma separated if multiple.
+
+gwno_loc                     The Gleditsch      and Ward country codes of the                S tring
+                             incompatibility.
+                             Comma separated if multiple.
+
+region                       The region of the incompatibility :                             S tring
+                             1 = Europe (GWNo: 200 - 399)
+                             2= Middle East (GWNo: 630 - 699)
+                             3= Asia (GWNo: 700 - 999)
+                             4= Africa (GWNo: 400 - 626)
+                             5= Americas (GWNo: 2 - 199).
+
+version                      The version of t he dataset: 2 6.1                              Float
+
+
+3 Additional information on variables in the dataset
+3.1           Location
+Location is defined as the government side of a conflict, and should not be interpreted as the
+geographical location of the conflict.
+      • For int rastate and internationalized int rastate conflicts, only one country name is listed.
+         This is the country whose government or territory is disputed.                For certain conflicts,
+         such as Kurdistan, the disputed territory is divided between different countries.
+         Following our definition, we have coded separate conflicts for each country.
+      • For interstate conflict, all primary parties are listed in the Location field. Even if several
+         governments are involved in the conflict, only countries that          fulfil the inclusion criteria
+         for primary actors are listed here. This normally means that two countries are listed,
+         but there are five notable exceptions: In the Arab - Israeli war of 1948 –49 as well as the
+         Suez war of 1956 , the war in Afghanistan in 2001, the war in Iraq in 2003 , and the conflict
+         in the Red Sea in 2024 - 2025 , there are more than two primary parties to the conflict.
+      • For extrasystemic conflicts, Location is set to be the disputed area, not the government of
+         the colonial power. Since the Location field in these conflicts by default does not
+         indicate members of the international system, it constitutes an exception from the
+         definition presented in Section 2.
+
+
+
+
+                                                      10
+    4.2          Incomp atibility
+As a country can experience several simultaneous conflicts, it is essential to differentiate
+between them. As described in Section         2.1, UCDP collects information on conflicts where the
+incompatibility, i.e. the general incompatible positions, concerns either government, territory or
+both. Ear ly versions of the UCDP/PRIO dataset only contained two incompatibility categories,
+territory and government. Conflicts that concerned both territory and government were
+assigned to their primary incompatibility. From         Version 4- 2007, the incompatibility has been
+coded in three categories:
+    1. Territory
+    2. Government
+    3. Government AND Territory
+Note that the incompatibility expressed in terms of government or a specific territory is crude
+in the sense that possible underlying incompatibilities are not considered. In other words, the
+stated incompatibility is what the parties are (or claim to be) fighting over, but it says nothing
+about why the parties are fighting.
+While a state can only experience one intrastate conflict over government in a given year, that
+same state can simultaneously be a primary party to one or more interstate conflicts over
+government and/or territory. In the case of intrastate territorial conflicts, multiple conflicts can
+be recorded over different territories in a state in a given year.
+
+
+                                                                           7
+    4.3          Start dates temporal precision
+The Start date is coded as precisely as possible. For certain conflicts we can pinpoint the start
+of the armed conflict down to a single event, taking place on a specific day. For other conflicts,
+this is not possible, due to lack of precise information.      The start precision is coded to highlight
+the level of certainty for the date set in the    start_date variable.
+    1. Day, month and year are precisely coded; we have good information on the event.
+    2. Day is assigned; month and year are precisely coded. The assigned date can either be one
+       of several events that can be classified as the first; it can be the last day in a period when
+       several fatalities have been reported jointly or it can be an event that different sources
+       claim occurred on different dates.
+    3. Day is unknown; month (or a period of 30 days,              not necessarily a calendar       month ) and
+       year are precisely coded. The day is known to be in a given              month or 30 day - period , but
+       we are missing information on an exact date. Day is then set to the             last day of the period .
+    4. Month is assigned; year is coded precisely.
+    5. Day and month are unknown , year is coded precisely. Day and month are                  set as precisely
+       as possible. For example, i f an event is known to have taken place sometime between
+       January and August, the date is coded as 31 August of the coded year               , with a precision of
+       5.
+    6. Year is assigned. There is a wide disagreement between different sources, so that not
+       even year can be coded precisely. The start year is assigned based on subjective
+
+
+7
+  The format for coding start dates   has been slightly   changed in 2014, and then again in 2017 , in an attempt to provide more detailed
+information.
+
+                                                                      11
+     judgment. Day and month are set as precisely as possible. For example, if an event is
+     known to have taken place sometime between January and August in an assigned year,
+     the date is coded as 31 August, with a precision of 6.
+  7. Year is missing. No reliable information on the start year is available.      Day and month are
+     set as precisely as possible   for the first year of recorded activity . For example, if an event
+     is known to have taken place sometime between January and August in an assigned year,
+     the date is coded as 31 August, with a precision of    7.
+
+
+ 4.4         Episode end dates temporal precision
+The end _date is coded as precisely as possible. For certain conflicts we can pinpoint the
+termination of the armed conflict down to a single event, taking place on a specific day. For
+other conflicts, this is not possible, due to lack of precise informat       ion. The e nd_prec is coded to
+highlight the level of certainty for the date set in the       end_date variable.
+
+1= Day, month and year are precisely coded; we have good information on the event.
+2= Day is assigned; month and year are precisely coded. The assigned date can either be one of
+several events that can be classified as the last; it can be the last day in a period when several
+fatalities have been reported jointly or it can be an event that different sources claim occurred
+on different dates.
+3= Day is unknown; month (or a period of 30 days, not necessarily a calendar month) and year
+are precisely coded. The day is known to be in a given month or 30 day                  - period, but we are
+missing information on an exact date. Day is then set to the last day of the period.
+4= Month is assigned; year is coded precisely.
+5= Day and month are unknown, year is coded precisely. Day and month are set as precisely as
+possible. For example, i f an event is known to have taken place sometime between January
+and August, the date is coded as 31 August of the coded year.
+
+
+3.5          System Membership Description
+The definition of a state is crucial to the UCDP/PRIO conflict list, and subsequently also for the
+dyadic dataset.
+   State: A state is:
+      a) an internationally recognized sovereign government controlling a specified territory,
+         or
+      b) an internationally unrecognized government controlling a specified territory whose
+         sovereignty is not disputed by another internationally recognized sovereign
+         government previously controlling the same territory
+The conflict definition, and hence also the dyad definition, is based upon participating
+governmental actors of independent states, and the classification of a given conflict rests
+heavily upon the status of the different actors. In order to define the total population of states
+we use the Gleditsch & Ward (1999) systems membership definition, which is based on the
+Correlates of War project. Gleditsch & Ward include countries with a population of more than
+250,000 that have ‘a relatively autonomous administration over some territory’, and is
+‘considered a distinct entity by local actors or the state it is dependent on’ (Gleditsch & Ward,
+1999: 398).
+
+                                                      12
+The Gleditsch & Ward definition differs from our original definition in two main ways. First, for
+Gleditsch & Ward a state is considered to be a new entity if it is ‘considered a distinct entity by
+local actors’ while the conflict definition only recognizes it as a new entity when the
+‘sovereignty is not disputed by another internationally recognized sovereign government
+previously controlling the same territory’. Second, the Gleditsch & Ward states all have a
+population of more than 250,000 while our conflict definition does not prescribe a specific size
+of the population. In a few cases, countries with less than 250,000 inhabitants experience
+conflict or are active as secondary parties in a conflict. In those         cases, we use the Gleditsch &
+Ward tentative list of microstates. For example, the microstate Tonga was part of the
+multinational coalition fighting in Iraq in 2004.
+Gleditsch & Ward use a slightly modified version of the COW numbering system. The table in
+Appendix 1 presents the system membership table that we base our data tables on. These data
+are based on Gle ditsch & Ward’s 2013 version of the list of independent state  s.
+
+
+4 Missing data
+The missing data code is     - 99. However, the dataset does not include unclear conflicts where
+information on key variables to the definition of conflict is uncertain or missing. Key variables
+are those related to the incompatibility, actors and intensity. In addition, a number of events
+have been identified as potentially in accordance with the criteria for inclusion. These events
+include possible new dyads and additional years for active conflicts. Consult the list of unclear
+cases for further information.
+The information also varies with regard to the level of precision. For the start date variables,
+the precision level is indicated in a separate variable, see           section 4.3 . Apart from that, the
+dataset only includes information when we are quite confident that it is correct. The bias
+produced by this approach is against the inclusion of conflicts in the earlier decades and in the
+less - developed world. An armed conflict in a developed country in the 1990s is more likely to
+be recorded than a conflict in a less developed country in the 1950s.
+
+
+5 Version Name Convention
+In 2017, the version name convention was changed, giving all UCDP datasets the same version
+number across the board. This was done so that users more easily can see which UCDP
+dataset corresponds with which.
+This co debook corresponds to Version 2         6.1 of the UCDP/PRIO dataset. For every new release,
+                                                                            8
+substantial changes will be documented in a separate document.                This should be helpful to
+researchers trying to replicate a particular study. We recommend that whenever this dataset is
+used, the version number should be cited.
+The version number is a combination of a year and a number. The year refers to when the
+dataset is updated with new observations. If there are changes in the data between yearly
+updates, or if there are substantial changes in the structure of the dataset, the number behind
+the year is incremented.
+
+
+
+8
+    http://ucdp.uu.se/downloads/
+
+                                                     13
+6 References
+Gleditsch, K .S. , & Ward M.D. (1999) . Interstate System Membership: A Revised List of the
+      Independent States since 1816. International Interactions 25: 393–413.
+Gleditsch, K .S. , & Ward M.D. (2013). System membership case description list.
+Gleditsch, N.P., Wallensteen, P., Eriksson, M., Sollenberg , M., & Strand , H. (2002) . Armed Conflict
+      1946–2001: A New Dataset. Journal of Peace Research       39(5): 615–637.
+Davies, S., Pettersson, T., & Öberg, M. (202 6). Organized violence 1989 –2025, and violent political
+protests . Journal of Peace Research      , 63(4).
+
+
+
+
+                                                  14
+Appendix 1 List of System Members Since 1946
+
+StateNum   StateAb   StateName                    StartYear   EndYear
+2          USA       United States of America     1946
+20         CAN       Canada                       1946
+31         BHM       Bahamas                      1973
+40         CUB       Cuba                         1946
+41         HAI       Haiti                        1946
+42         DOM       Dominican Republic           1946
+51         JAM       Jamaica                      1962
+52         TRI       Trinidad and Tobago          1962
+53         BAR       Barbados                     1966
+70         MEX       Mexico                       1946
+80         BLZ       Belize                       1981
+90         GUA       Guatemala                    1946
+91         HON       Honduras                     1946
+92         SAL       El Salvador                  1946
+93         NIC       Nicaragua                    1946
+94         COS       Costa Rica                   1946
+95         PAN       Panama                       1946
+100        COL       Colombia                     1946
+101        VEN       Venezuela                    1946
+110        GUY       Guyana                       1966
+115        SUR       Surinam                      1975
+130        ECU       Ecuador                      1946
+135        PER       Peru                         1946
+140        BRA       Brazil                       1946
+145        BOL       Bolivia                      1946
+150        PAR       Paraguay                     1946
+155        CHL       Chile                        1946
+160        ARG       Argentina                    1946
+165        URU       Uruguay                      1946
+200        UKG       United Kingdom               1946
+205        IRE       Ireland                      1946
+210        NTH       Netherlands                  1946
+211        BEL       Belgium                      1946
+212        LUX       Luxembourg                   1946
+220        FRN       France                       1946
+225        SWZ       Switzerland                  1946
+230        SPN       Spain                        1946
+235        POR       Portugal                     1946
+260        GFR       German Federal Republic      1949
+265        GDR       German Democratic Republic   1949        1990
+
+                                           15
+StateNum   StateAb   StateName                    StartYear   EndYear
+290        POL       Poland                       1946
+305        AUS       Austria                      1946
+310        HUN       Hungary                      1946
+315        CZE       Czechoslovakia               1946        1992
+316        CZR       Czech Republic               1993
+317        SLO       Slovakia                     1993
+325        ITA       Italy/Sardinia               1946
+338        MLT       Malta                        1964
+339        ALB       Albania                      1946
+340        SER       Serbia                       2006
+341        MNG       Montenegro                   2006
+343        MAC       Macedonia (FRY)              1991
+344        CRO       Croatia                      1991
+345        YUG       Yugoslavia (Serbia)          1946        2006
+346        BOS       Bosnia - Herzegovina         1992
+347        KOS       Kosovo                       2008
+349        SLV       Slovenia                     1992
+350        GRC       Greece                       1946
+352        CYP       Cyprus                       1960
+355        BUL       Bulgaria                     1946
+359        MLD       Moldova                      1991
+360        RUM       Rumania                      1946
+365        RUS       Russia (Soviet Union)        1946
+366        EST       Estonia                      1991
+367        LAT       Latvia                       1991
+368        LIT       Lithuania                    1991
+369        UKR       Ukraine                      1991
+370        BLR       Belarus (Byelorussia)        1991
+371        ARM       Armenia                      1991
+372        GRG       Georgia                      1991
+373        AZE       Azerbaijan                   1991
+375        FIN       Finland                      1946
+380        SWD       Sweden                       1946
+385        NOR       Norway                       1946
+390        DEN       Denmark                      1946
+395        ICE       Iceland                      1946
+402        CAP       Cape Verde                   1975
+404        GNB       Guinea - Bissau              1974
+411        EQG       Equatorial Guinea            1968
+420        GAM       Gambia                       1965
+432        MLI       Mali                         1960
+433        SEN       Senegal                      1960
+434        BEN       Benin                        1960
+435        MAA       Mauritania                   1960
+                                             16
+StateNum   StateAb   StateName                       StartYear   EndYear
+436        NIR       Niger                           1960
+437        CDI       Cote D ’Ivoire                  1960
+438        GUI       Guinea                          1958
+439        BFO       Burkina Faso (Upper Volta)      1960
+450        LBR       Liberia                         1946
+451        SIE       Sierra Leone                    1961
+452        GHA       Ghana                           1957
+461        TOG       Togo                            1960
+471        CAO       Cameroon                        1960
+475        NIG       Nigeria                         1960
+481        GAB       Gabon                           1960
+482        CEN       Central African Republic        1960
+483        CHA       Chad                            1960
+484        CON       Congo                           1960
+490        DRC       Congo, Democratic Republic of   1960
+                     (Zaire)
+500        UGA       Uganda                          1962
+501        KEN       Kenya                           1963
+510        TAZ       Tanzania/Tanganyika             1961
+511        ZAN       Zanzibar                        1963        1964
+516        BUI       Burundi                         1962
+517        RWA       Rwanda                          1962
+520        SOM       Somalia                         1960
+522        DJI       Djibouti                        1977
+530        ETH       Ethiopia                        1946
+531        ERI       Eritrea                         1993
+540        ANG       Angola                          1975
+541        MZM       Mozambique                      1975
+551        ZAM       Zambia                          1964
+552        ZIM       Zimbabwe (Rhodesia)             1965
+553        MAW       Malawi                          1964
+560        SAF       South Africa                    1946
+565        NAM       Namibia                         1990
+570        LES       Lesotho                         1966
+571        BOT       Botswana                        1966
+572        SWA       Swaziland                       1968
+580        MAG       Madagascar (Malagasy)           1960
+581        COM       Comoros                         1975
+590        MAS       Mauritius                       1968
+600        MOR       Morocco                         1956
+615        ALG       Algeria                         1962
+616        TUN       Tunisia                         1956
+620        LIB       Libya                           1951
+625        SUD       Sudan                           1956
+                                            17
+StateNum   StateAb   StateName                         StartYear   EndYear
+626        SSD       South Sudan                       2011
+630        IRN       Iran (Persia)                     1946
+640        TUR       Turkey/Ottoman Empire             1946
+645        IRQ       Iraq                              1946
+651        EGY       Egypt                             1946
+652        SYR       Syria                             1946
+660        LEB       Lebanon                           1946
+663        JOR       Jordan                            1946
+666        ISR       Israel                            1948
+670        SAU       Saudi Arabia                      1946
+678        YEM       Yemen (Arab Republic of Yemen)    1946
+680        YPR       Yemen, People's Republic of       1967        1990
+690        KUW       Kuwait                            1961
+692        BAH       Bahrain                           1971
+694        QAT       Qatar                             1971
+696        UAE       United Arab Emirates              1971
+698        OMA       Oman                              1946
+700        AFG       Afghanistan                       1946
+701        TKM       Turkmenistan                      1991
+702        TAJ       Tajikistan                        1991
+703        KYR       Kyrgyz Republic                   1991
+704        UZB       Uzbekistan                        1991
+705        KZK       Kazakhstan                        1991
+710        CHN       China                             1946
+711        TBT       Tibet                             1946        1950
+712        MON       Mongolia                          1946
+713        TAW       Taiwan                            1949
+731        PRK       North Korea                       1948
+732        ROK       South Korea                       1948
+740        JPN       Japan                             1946
+750        IND       India                             1947
+760        BHU       Bhutan                            1949
+770        PAK       Pakistan                          1947
+771        BNG       Bangladesh                        1971
+775        MYA       Myanmar (Burma)                   1948
+780        SRI       Sri Lanka                         1948
+781        MAD       Maldives                          1965
+790        NEP       Nepal                             1946
+800        THI       Thailand                          1946
+811        CAM       Cambodia (Kampuchea)              1953
+812        LAO       Laos                              1954
+816        DRV       Vietnam, Democratic Republic of   1954
+817        RVN       Vietnam, Republic of              1954        1975
+820        MAL       Malaysia                          1957
+                                            18
+StateNum   StateAb   StateName               StartYear   EndYear
+830        SIN       Singapore               1965
+835        BRU       Brunei                  1984
+840        PHI       Philippines             1946
+850        INS       Indonesia               1946
+860        ETM       East Timor              2002
+900        AUL       Australia               1946
+910        PNG       Papua New Guinea        1975
+920        NEW       New Zealand             1946
+940        SOL       Solomon Islands         1978
+950        FJI       Fiji                    1970
+
+
+
+
+                                        19
+

@@ -1,0 +1,28 @@
+{
+  "id": "ae2721ed-6a63-4346-bbf4-2ac069c34845",
+  "object": "chat.completion",
+  "created": 1794201439,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"type\":\"json_object\",\"items\":[{\"id\":\"txt-4001dbbdf2-000010765-000010801\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性判断：若全世界普遍采用同一种旧方法创造财富，则结果不是财富而是灾难。原文未给出可操作指标（何种旧方法、财富如何度量、灾难如何界定）与期限；观察窗口为出版年2014年至cutoff 2026-11-09，但触发条件“全世界都用同一种旧方法”未被明确界定或发生。\",\"reason\":\"该句是带明确前提的条件性预测，前提“全世界都用同一种旧方法创造财富”既未被原文操作化，也无证据显示已发生。缺少可核对的指标与观察证据，无法判断结果方向。\",\"limitation\":\"原文未定义“旧方法”“财富”“灾难”的量化口径，也未给期限；不能把局部复制或全球化现象直接当作该全球性前提已满足。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4273,
+    "completion_tokens": 254,
+    "total_tokens": 4527,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 4273
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

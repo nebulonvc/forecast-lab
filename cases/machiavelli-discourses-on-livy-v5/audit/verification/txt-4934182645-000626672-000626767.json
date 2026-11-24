@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000626672-000626767",
+  "plan": {
+    "object": "有冤要报的人造成的政体改变。同章写，以暴力起家的政府倒下时，受过伤害的人要报仇，于是发生屠杀。从全体同意中产生的政府换掉君主，则没有理由伤害别人。",
+    "condition": "wrought by men who have wrongs to revenge。改变必须由要报仇的人做成。只是不流血，若页面没有写改变者是在报复建国时的伤害，就不进入这句。",
+    "quantifier": "always of a most dangerous kind。永远是最危险的一种。一次流血不能证明永远；一次满足报仇条件却不危险，可以反驳。",
+    "result": "登记变化是 most dangerous。最危险，同章的例子是许多人被杀。",
+    "window": "1531至2026-11-15。罗马放逐塔尔昆和1494年美第奇倒台是出版前或出版当年的例子，不拿来计分。",
+    "counterevidence_needed": "要报仇的人造成的改变确实最危险；或者这种改变发生了，却并不危险。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "victims of a violent regime overthrew it and massacred their former rulers",
+      "counter_query": "overthrow of a regime that began in violence by its former victims without executions"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://www.historyimpossible.com/p/the-shifting-history-and-memory-of"],
+    "dropped": "支持检索没有给出以暴力起家、再由受害者报仇的同一次改变。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-velvet-1989"],
+    "scope": "必须是有冤要报的人造成的改变。没有开枪不能代替这个条件。",
+    "reason": "反对检索打开的页面写，1989年11月捷克斯洛伐克的天鹅绒革命没有对当局开一枪。页面没有写这个政权以暴力起家，也没有写改变是由要报复建国伤害的人做成。因此它不是“有冤要报的改变却并不危险”。支持检索没有把受害者的报仇和屠杀接成同一次、1531年之后的改变。决定性缺口是：没有正文同时写出要报仇的人、以及这次改变是最危险还是并不危险。",
+    "limitation": "该页没有单独的出版日。1989年11月是正文里的时间。未保存的罗马尼亚处决材料不用。",
+    "method": "先确认改变者是要报仇的人，再看是否最危险。不流血本身不是反例。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "1989年11月没有对当局开枪。页面没有写改变者是在报复以暴力起家的政府。"
+  }
+}

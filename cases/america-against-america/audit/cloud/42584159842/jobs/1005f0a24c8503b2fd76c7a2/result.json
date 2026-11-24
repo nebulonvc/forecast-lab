@@ -1,0 +1,693 @@
+{
+  "claim_id": "txt-1c4066fc0c-000228125-000228183",
+  "version": "search-verifier-v1",
+  "input_sha256": "c29a28808250c339e860aa06665e05e971f8fe82911f879eee54ccdd22ebdc4a",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000228125-000228183",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "对象为原文未指定的发展中国家群体；操作化为：处于经济发展/升级阶段的经济体，企业是否报告高技能（技术、专业、管理）岗位招聘困难或技能短缺。观察窗口按各来源实际调查/报告年份分别列明：OECD 1999年理论综述、亚行2008年区域综述、2010年世行报告、2015年四国技能调查、2015年坦桑尼亚调查、2016年STEP六国综述、2018年赞比亚调查；均早于cutoff 2026-11-09。",
+    "reason": "自动复核未确认主要判断：建议的scope声称按各来源实际调查/报告年份分别列明观察窗口，但observation_end仍统一写为2018-07-01，且basis为observed_window；这与scope自述的“分别列明”相矛盾，把发表日期/最晚来源日期混作观察终点。; 原命题是条件性后果判断：当发展中国家进入需要高科技人才的阶段时，可能出现高技能人才难找。现有证据显示多国升级期企业报告技术/专业/管理岗位技能不足与招聘困难，后果B在声明口径内已获支持；建议却以“跨国截面/短期调查、不能代表所有发展中国家或长期终局”为由降为“部分符合”，但未指出后果B的哪些具体部分实现、哪些未实现。覆盖范围有限和缺少长期终局属于证据边界，不等于后果只实现一部分；按口径应判“符合”并保留范围限制，或明确列出未实现的具体分项。",
+    "limitation": "关键修订：不再以2018-07-01统称observation_end，改为按各来源实际调查/报告年份分别列明；不再把机制未检验单独作为降级理由，而是以覆盖范围有限、非长期终局作为部分符合依据。技能短缺也可能源于教育质量、移民限制等，不能归因于货币激励。",
+    "evidence_ids": [
+      "prior-7fb5a52143557f293bd0",
+      "ev-97000204d49617372deaa5ba",
+      "ev-e7754dbf9b4c65237e117c2e",
+      "ev-c98b8baf7672639b06d0c449",
+      "ev-eca3d38bfbb0e3a0cc515a2c",
+      "ev-09f2219bbca54a0486eacda0"
+    ],
+    "method": "从短期金钱激励外推人力资本积累不足",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "等到经济发展、需要高科技高技术时",
+    "condition_state": "satisfied",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-7fb5a52143557f293bd0",
+        "relation": "support",
+        "quote": "越南过去二十年基础识字/算术与教育提高推动从农业到非农转移和减贫；但很多企业报告适合技术、专业和管理职位的技能不足，招聘困难。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "为已登记摘要，非全文；仅越南一国，日期未知，不能作为观察终点。"
+      },
+      {
+        "evidence_id": "ev-97000204d49617372deaa5ba",
+        "relation": "support",
+        "quote": "High-skills demand firms, such as those that innovate or export, face greater deficiencies in workers’ cognitive and non-cognitive skills that pose operational constraints for use of technology, innovation, quality, and production.",
+        "publication_date": "2018-07-01",
+        "observation_end": "2018-07-01",
+        "limitation": "仅赞比亚350家正规部门企业，截面数据，不能证明货币激励为原因。"
+      },
+      {
+        "evidence_id": "ev-e7754dbf9b4c65237e117c2e",
+        "relation": "support",
+        "quote": "exporters and innovators face greater skill demand and suffer from skill shortages that are more likely to constrain their operations in such areas as quality assurance, use of new technology, and introducing new products and services.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "仅坦桑尼亚2015年调查，发表日期未知；技能短缺归因于教育培训体系质量，非货币激励。"
+      },
+      {
+        "evidence_id": "ev-c98b8baf7672639b06d0c449",
+        "relation": "support",
+        "quote": "there is a substan tial mismatch between the supply of and demand for skills around the world",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "六国STEP雇主调查综述，日期未知；为描述性分析，未检验货币激励机制。",
+        "quote_verification": {
+          "method": "unique_whitespace_alignment",
+          "model_quote": "there is a substantial mismatch between the supply of and demand for skills around the world"
+        }
+      },
+      {
+        "evidence_id": "ev-eca3d38bfbb0e3a0cc515a2c",
+        "relation": "support",
+        "quote": "Skills gaps affect more dynamic firms more severely",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "仅亚美尼亚、格鲁吉亚、马其顿、乌克兰四国，2015年报告；日期未知，未覆盖所有发展中国家。"
+      },
+      {
+        "evidence_id": "ev-09f2219bbca54a0486eacda0",
+        "relation": "support",
+        "quote": "Asia lacks a wide class of occupational skills relevant to a modern economy, and areas that are critical to growth are seeing large and growing mismatches between the skills that employers need and the skills that employees have.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "2008年亚行区域综述，日期未知；为宏观描述，未直接检验货币激励导致简单劳动偏好的因果链。"
+      }
+    ],
+    "remaining_gap": "需修正两处：一是把observation_end改为与scope一致的逐来源观察年份（或明确说明无法统一而保留具体未定），不能统一写2018-07-01；二是按条件后果口径重新判定——若后果B（升级期高技能岗位招聘困难/技能短缺）在声明范围内已实现，应判“符合”并保留覆盖范围与机制未检验的限制，或具体列出后果B哪些分项未实现后再判“部分符合”。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000228125-000228183",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象为未指定的发展中国家群体；操作化为：在经济发展/升级阶段，企业是否报告高技能（技术、专业、管理）岗位招聘困难或技能短缺。观察时段为1999—2018年多国企业技能调查与政策报告（越南、坦桑尼亚、赞比亚、亚美尼亚、格鲁吉亚、马其顿、乌克兰及亚洲综述），截止2026-11-09前。",
+    "reason": "多份世界银行/亚行企业技能调查显示，处于经济升级与开放中的发展中国家普遍出现雇主报告技术、专业和管理岗位技能不足、招聘困难，与“需要高科技人才时才发现难找”的方向一致。但这些证据只覆盖部分国家与特定年份，且未直接检验“货币激励使人偏好简单劳动”这一因果机制，故仅判趋势部分符合。",
+    "limitation": "原命题未指定国家和期限，证据为跨国截面/短期调查，不能代表所有发展中国家或长期终局；技能短缺也可能源于教育质量、移民限制等，不能归因于货币激励。",
+    "evidence_ids": [
+      "prior-7fb5a52143557f293bd0",
+      "ev-97000204d49617372deaa5ba",
+      "ev-e7754dbf9b4c65237e117c2e",
+      "ev-c98b8baf7672639b06d0c449",
+      "ev-eca3d38bfbb0e3a0cc515a2c",
+      "ev-09f2219bbca54a0486eacda0"
+    ],
+    "method": "从短期金钱激励外推人力资本积累不足",
+    "method_basis": "explicit",
+    "observation_end": "2018-07-01",
+    "future_time_text": "等到经济发展、需要高科技高技术时",
+    "condition_state": "satisfied",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-7fb5a52143557f293bd0",
+        "relation": "support",
+        "quote": "越南过去二十年基础识字/算术与教育提高推动从农业到非农转移和减贫；但很多企业报告适合技术、专业和管理职位的技能不足，招聘困难。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "为已登记摘要，非全文；仅越南一国，日期未知。"
+      },
+      {
+        "evidence_id": "ev-97000204d49617372deaa5ba",
+        "relation": "support",
+        "quote": "High-skills demand firms, such as those that innovate or export, face greater deficiencies in workers’ cognitive and non-cognitive skills that pose operational constraints for use of technology, innovation, quality, and production.",
+        "publication_date": "2018-07-01",
+        "observation_end": "2018-07-01",
+        "limitation": "仅赞比亚350家正规部门企业，截面数据，不能证明货币激励为原因。"
+      },
+      {
+        "evidence_id": "ev-e7754dbf9b4c65237e117c2e",
+        "relation": "support",
+        "quote": "exporters and innovators face greater skill demand and suffer from skill shortages that are more likely to constrain their operations in such areas as quality assurance, use of new technology, and introducing new products and services.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "仅坦桑尼亚2015年调查，发表日期未知；技能短缺归因于教育培训体系质量，非货币激励。"
+      },
+      {
+        "evidence_id": "ev-c98b8baf7672639b06d0c449",
+        "relation": "support",
+        "quote": "there is a substantial mismatch between the supply of and demand for skills around the world",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "六国STEP雇主调查综述，日期未知；为描述性分析，未检验货币激励机制。"
+      },
+      {
+        "evidence_id": "ev-eca3d38bfbb0e3a0cc515a2c",
+        "relation": "support",
+        "quote": "Skills gaps affect more dynamic firms more severely",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "仅亚美尼亚、格鲁吉亚、马其顿、乌克兰四国，2015年报告；日期未知，未覆盖所有发展中国家。"
+      },
+      {
+        "evidence_id": "ev-09f2219bbca54a0486eacda0",
+        "relation": "support",
+        "quote": "Asia lacks a wide class of occupational skills relevant to a modern economy, and areas that are critical to growth are seeing large and growing mismatches between the skills that employers need and the skills that employees have.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "2008年亚行区域综述，日期未知；为宏观描述，未直接检验货币激励导致简单劳动偏好的因果链。"
+      }
+    ],
+    "remaining_gap": "缺少对“货币激励→偏好简单劳动→高技能人才供给不足”这一因果链的直接检验，也缺少覆盖更多发展中国家、跨越更长观察期的面板证据；原命题未指定国家与期限，无法判定终局正确。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-7fb5a52143557f293bd0",
+      "url": "https://documents1.worldbank.org/curated/en/283651468321297015/pdf/888950PUB0Box30lso0829400June172014.pdf",
+      "title": "ev-r2-l3-vietnam-skills",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-vietnam-skills",
+      "archive_sha256": "7efe830fe53ada07a7fc69ce3b7aaa43c5e1fe26690a486b6668a6293c15181e",
+      "archive_path": "data/sources/r2-l3-vietnam-skills.pdf",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-97000204d49617372deaa5ba",
+      "url": "https://doi.org/10.1596/30184",
+      "resolved_url": "https://doi.org/10.1596/30184",
+      "title": "Enterprise Skills and Firm Performance in Zambia",
+      "published_date": "2018-07-01",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:42.264080+00:00",
+      "archive_sha256": "83e7e61bfe3bc6a5fcbf082f17774ca42a831d5e937d44b656399a05e7149a92",
+      "archive_path": "jobs/1005f0a24c8503b2fd76c7a2/83e7e61bfe3bc6a5fcbf082f17774ca42a831d5e937d44b656399a05e7149a92.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e7754dbf9b4c65237e117c2e",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2779369",
+      "resolved_url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2779369",
+      "title": "Skill Use, Skill Deficits, and Firm Performance in Formal Sector Enterprises: Evidence from the Tanzania Enterprise Skills Survey, 2015",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:42.264224+00:00",
+      "archive_sha256": "a59c734e87e302e03cc01f8336a0a976640529947d4a3b6307ceb01703a6f4ee",
+      "archive_path": "jobs/1005f0a24c8503b2fd76c7a2/a59c734e87e302e03cc01f8336a0a976640529947d4a3b6307ceb01703a6f4ee.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-c98b8baf7672639b06d0c449",
+      "url": "https://documents1.worldbank.org/curated/en/225051473859171409/pdf/108249-REVISED-STEPSnapshotWebUpdated.pdf",
+      "resolved_url": "https://documents1.worldbank.org/curated/en/225051473859171409/pdf/108249-REVISED-STEPSnapshotWebUpdated.pdf",
+      "title": "Highlights from Six Low and Middle-Income",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:42.264367+00:00",
+      "archive_sha256": "9d24e6857085738f807ddaff571b83303b4dfa843f0548448095fbb8b58a1885",
+      "archive_path": "jobs/1005f0a24c8503b2fd76c7a2/9d24e6857085738f807ddaff571b83303b4dfa843f0548448095fbb8b58a1885.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-962222ddab866fb48890040d",
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/1999/06/economic-opening-and-the-demand-for-skills-in-developing-countries_g17a1609/722638700667.pdf",
+      "resolved_url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/1999/06/economic-opening-and-the-demand-for-skills-in-developing-countries_g17a1609/722638700667.pdf",
+      "title": "Economic Opening and the Demand for Skills in Developing Countries (EN)",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:42.264500+00:00",
+      "archive_sha256": "e4809fcc23e0d81cf7ef757f75cdc44cb0f0f3fe5ea7cc85d0972435cb2a9354",
+      "archive_path": "jobs/1005f0a24c8503b2fd76c7a2/e4809fcc23e0d81cf7ef757f75cdc44cb0f0f3fe5ea7cc85d0972435cb2a9354.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-eca3d38bfbb0e3a0cc515a2c",
+      "url": "https://documents1.worldbank.org/curated/en/205051468038032990/pdf/Skills-gaps-and-the-path-to-successful-skills-development-Final.pdf",
+      "resolved_url": "https://documents1.worldbank.org/curated/en/205051468038032990/pdf/Skills-gaps-and-the-path-to-successful-skills-development-Final.pdf",
+      "title": "World Bank Document",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:53.606232+00:00",
+      "archive_sha256": "36c4838b34c6131cd31ace10445143b3f616fa2da1dddf834fe05a913e351b64",
+      "archive_path": "jobs/1005f0a24c8503b2fd76c7a2/36c4838b34c6131cd31ace10445143b3f616fa2da1dddf834fe05a913e351b64.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e17d2ad35ee92863f65f20c6",
+      "url": "https://doi.org/10.1596/27892",
+      "resolved_url": "https://doi.org/10.1596/27892",
+      "title": "Stepping Up Skills for More Jobs and Higher Productivity",
+      "published_date": "2010-06-01",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:53.606404+00:00",
+      "archive_sha256": "12e4d36bf98e0d7f56c0a8f4a8bbf15a757fd47c3cc18f913b5005016251b589",
+      "archive_path": "jobs/1005f0a24c8503b2fd76c7a2/12e4d36bf98e0d7f56c0a8f4a8bbf15a757fd47c3cc18f913b5005016251b589.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-09f2219bbca54a0486eacda0",
+      "url": "https://www.adb.org/sites/default/files/publication/27707/part2-skills.pdf",
+      "resolved_url": "https://www.adb.org/sites/default/files/publication/27707/part2-skills.pdf",
+      "title": "Asian Development Outlook 2008: Workers in Asia",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:53.606549+00:00",
+      "archive_sha256": "9e1c2e0d36d9ffe82c934173c8eba674a8310d5e225607fc6986558a81d127bf",
+      "archive_path": "jobs/1005f0a24c8503b2fd76c7a2/9e1c2e0d36d9ffe82c934173c8eba674a8310d5e225607fc6986558a81d127bf.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d8bfedf9e3b5e87adcebef41",
+      "url": "https://www.adb.org/sites/default/files/publication/29407/higher-education-across-asia.pdf",
+      "resolved_url": "https://www.adb.org/sites/default/files/publication/29407/higher-education-across-asia.pdf",
+      "title": "Higher Education Across Asia: An Overview of Issues and Strategies",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:53.606682+00:00",
+      "archive_sha256": "4673bf32a5e83aa696089a0398d67ab8bdfde285a47e992bece9bc5ed1643d54",
+      "archive_path": "jobs/1005f0a24c8503b2fd76c7a2/4673bf32a5e83aa696089a0398d67ab8bdfde285a47e992bece9bc5ed1643d54.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "World Bank enterprise survey developing countries skills shortage hiring difficulties high-skilled workers economic upgrading",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "developing countries rapid economic growth high-skilled workforce supply education expansion skill upgrading evidence",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "World Bank Enterprise Skills Survey developing countries employers report difficulty filling technician professional vacancies skill shortage",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "East Asia developing countries rapid growth tertiary education expansion engineering graduates supply high-skilled workers shortage evidence",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-09f2219bbca54a0486eacda0",
+        "ev-c98b8baf7672639b06d0c449",
+        "ev-e7754dbf9b4c65237e117c2e",
+        "ev-eca3d38bfbb0e3a0cc515a2c",
+        "prior-7fb5a52143557f293bd0"
+      ]
+    }
+  ],
+  "remaining_gap": "需修正两处：一是把observation_end改为与scope一致的逐来源观察年份（或明确说明无法统一而保留具体未定），不能统一写2018-07-01；二是按条件后果口径重新判定——若后果B（升级期高技能岗位招聘困难/技能短缺）在声明范围内已实现，应判“符合”并保留覆盖范围与机制未检验的限制，或具体列出后果B哪些分项未实现后再判“部分符合”。",
+  "source_statuses": [
+    {
+      "url": "https://doi.org/10.1596/30184",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2779369",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://documents1.worldbank.org/curated/en/225051473859171409/pdf/108249-REVISED-STEPSnapshotWebUpdated.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/1999/06/economic-opening-and-the-demand-for-skills-in-developing-countries_g17a1609/722638700667.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://documents1.worldbank.org/curated/en/205051468038032990/pdf/Skills-gaps-and-the-path-to-successful-skills-development-Final.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://doi.org/10.1596/27892",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.adb.org/sites/default/files/publication/27707/part2-skills.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.adb.org/sites/default/files/publication/29407/higher-education-across-asia.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "900333faf507b828453372379667061088b5cbf4bced446ac021ae0f32f27765"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "08d1804319764460593c2091523a3824",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "1f37c91240b44e1c49e0462c18614022",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "33b6b3bef16f9c7fc04241c00467b599ce28cc6d8c353b9674f67129d40d96e7"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "5879bc3de8cd73084699f1ecf4a5beb5",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "b33c048a3e7ff38f4f4b879f89cb6ab95da73afd4a00d6a6e2a6da073c88435f"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b8df0ede7c7e3e55ee0578559fc07e1b",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "5e3ecc687adb885956f634e4934c1d7e",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "efc7cacda51e892a89d6c06d04961cca894dcfd82f9e663d1ae9c4fec21fc6dc"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "e416c26989d17acdfa68332f96999fca",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "1a0c7afa9df7e9ef30b00697b3f2193225f067090c0a39eb2eaa266a8220e09f"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "260adeed62acc473ae7f8920045c0eba09ee0a343459cf49c6da0a0544bad696"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "46ac7c8cd49d600bfae049497bff5b42e3f41236240e58ffd1684b0ce2a97f2c"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "54b96f6eb03c09befbd50fb79543ea89b585c3b9b10f7a561bbb042aa61dde15"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000228125-000228183",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "fail",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "time_alignment",
+          "reason": "建议把observation_end写成2018-07-01，但所引证据中至少亚行2008年区域综述、2015年四国报告、2016年STEP综述等观察期早于或不同于该日期；且多份来源发表日期未知，不能把最晚发表日当作观察终点。观察窗口“1999—2018”也缺少对1999年OECD来源的引用支撑。",
+          "source_quote": "观察时段为1999—2018年多国企业技能调查与政策报告（越南、坦桑尼亚、赞比亚、亚美尼亚、格鲁吉亚、马其顿、乌克兰及亚洲综述），截止2026-11-09前。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "原命题是条件性预测：当发展中国家经济发展到需要高科技人才时，会出现高技能人才难找。所引企业调查确实显示升级/开放中经济体存在高技能岗位短缺，方向与后果B一致；但建议以“未直接检验货币激励因果机制”为由降为“部分符合”，这是把解释机制缺口误当成结果口径的部分实现。机制未证实只限制归因，不构成后果B只实现一部分的直接证据；应保留“符合（趋势/方向）并注明机制未验证”，或若认为条件A未充分确认则具体未定，而不能仅凭机制缺口判部分符合。",
+          "source_quote": "但这些证据只覆盖部分国家与特定年份，且未直接检验“货币激励使人偏好简单劳动”这一因果机制，故仅判趋势部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正观察期写法：按各来源实际调查/报告年份分别列明，不能以2018-07-01统称observation_end；并修正结论口径：若维持“部分符合”，须指出后果B哪些具体部分实现、哪些未实现及直接证据，不能仅以因果机制未检验作为降级理由。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000228125-000228183",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "fail",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "time_alignment",
+          "reason": "建议的scope声称按各来源实际调查/报告年份分别列明观察窗口，但observation_end仍统一写为2018-07-01，且basis为observed_window；这与scope自述的“分别列明”相矛盾，把发表日期/最晚来源日期混作观察终点。",
+          "source_quote": "观察窗口按各来源实际调查/报告年份分别列明：OECD 1999年理论综述、亚行2008年区域综述、2010年世行报告、2015年四国技能调查、2015年坦桑尼亚调查、2016年STEP六国综述、2018年赞比亚调查；均早于cutoff 2026-11-09。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "原命题是条件性后果判断：当发展中国家进入需要高科技人才的阶段时，可能出现高技能人才难找。现有证据显示多国升级期企业报告技术/专业/管理岗位技能不足与招聘困难，后果B在声明口径内已获支持；建议却以“跨国截面/短期调查、不能代表所有发展中国家或长期终局”为由降为“部分符合”，但未指出后果B的哪些具体部分实现、哪些未实现。覆盖范围有限和缺少长期终局属于证据边界，不等于后果只实现一部分；按口径应判“符合”并保留范围限制，或明确列出未实现的具体分项。",
+          "source_quote": "多份世行/亚行企业技能调查显示，处于经济升级与开放中的发展中国家普遍出现雇主报告技术、专业和管理岗位技能不足、招聘困难，与“需要高科技人才时才发现难找”的方向一致，构成后果B的部分实现。但原命题未指定国家与期限，证据为跨国截面/短期调查，不能代表所有发展中国家或长期终局；且“货币激励使人偏好简单劳动”这一因果机制未被直接检验，故仅判趋势部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正两处：一是把observation_end改为与scope一致的逐来源观察年份（或明确说明无法统一而保留具体未定），不能统一写2018-07-01；二是按条件后果口径重新判定——若后果B（升级期高技能岗位招聘困难/技能短缺）在声明范围内已实现，应判“符合”并保留覆盖范围与机制未检验的限制，或具体列出后果B哪些分项未实现后再判“部分符合”。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000228125-000228183",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象为未指定的发展中国家群体；操作化为：在经济发展/升级阶段，企业是否报告高技能（技术、专业、管理）岗位招聘困难或技能短缺。观察时段为1999—2018年多国企业技能调查与政策报告（越南、坦桑尼亚、赞比亚、亚美尼亚、格鲁吉亚、马其顿、乌克兰及亚洲综述），截止2026-11-09前。",
+      "reason": "多份世界银行/亚行企业技能调查显示，处于经济升级与开放中的发展中国家普遍出现雇主报告技术、专业和管理岗位技能不足、招聘困难，与“需要高科技人才时才发现难找”的方向一致。但这些证据只覆盖部分国家与特定年份，且未直接检验“货币激励使人偏好简单劳动”这一因果机制，故仅判趋势部分符合。",
+      "limitation": "原命题未指定国家和期限，证据为跨国截面/短期调查，不能代表所有发展中国家或长期终局；技能短缺也可能源于教育质量、移民限制等，不能归因于货币激励。",
+      "evidence_ids": [
+        "prior-7fb5a52143557f293bd0",
+        "ev-97000204d49617372deaa5ba",
+        "ev-e7754dbf9b4c65237e117c2e",
+        "ev-c98b8baf7672639b06d0c449",
+        "ev-eca3d38bfbb0e3a0cc515a2c",
+        "ev-09f2219bbca54a0486eacda0"
+      ],
+      "method": "从短期金钱激励外推人力资本积累不足",
+      "method_basis": "explicit",
+      "observation_end": "2018-07-01",
+      "future_time_text": "等到经济发展、需要高科技高技术时",
+      "condition_state": "satisfied",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-7fb5a52143557f293bd0",
+          "relation": "support",
+          "quote": "越南过去二十年基础识字/算术与教育提高推动从农业到非农转移和减贫；但很多企业报告适合技术、专业和管理职位的技能不足，招聘困难。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "为已登记摘要，非全文；仅越南一国，日期未知。"
+        },
+        {
+          "evidence_id": "ev-97000204d49617372deaa5ba",
+          "relation": "support",
+          "quote": "High-skills demand firms, such as those that innovate or export, face greater deficiencies in workers’ cognitive and non-cognitive skills that pose operational constraints for use of technology, innovation, quality, and production.",
+          "publication_date": "2018-07-01",
+          "observation_end": "2018-07-01",
+          "limitation": "仅赞比亚350家正规部门企业，截面数据，不能证明货币激励为原因。"
+        },
+        {
+          "evidence_id": "ev-e7754dbf9b4c65237e117c2e",
+          "relation": "support",
+          "quote": "exporters and innovators face greater skill demand and suffer from skill shortages that are more likely to constrain their operations in such areas as quality assurance, use of new technology, and introducing new products and services.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "仅坦桑尼亚2015年调查，发表日期未知；技能短缺归因于教育培训体系质量，非货币激励。"
+        },
+        {
+          "evidence_id": "ev-c98b8baf7672639b06d0c449",
+          "relation": "support",
+          "quote": "there is a substantial mismatch between the supply of and demand for skills around the world",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "六国STEP雇主调查综述，日期未知；为描述性分析，未检验货币激励机制。"
+        },
+        {
+          "evidence_id": "ev-eca3d38bfbb0e3a0cc515a2c",
+          "relation": "support",
+          "quote": "Skills gaps affect more dynamic firms more severely",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "仅亚美尼亚、格鲁吉亚、马其顿、乌克兰四国，2015年报告；日期未知，未覆盖所有发展中国家。"
+        },
+        {
+          "evidence_id": "ev-09f2219bbca54a0486eacda0",
+          "relation": "support",
+          "quote": "Asia lacks a wide class of occupational skills relevant to a modern economy, and areas that are critical to growth are seeing large and growing mismatches between the skills that employers need and the skills that employees have.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "2008年亚行区域综述，日期未知；为宏观描述，未直接检验货币激励导致简单劳动偏好的因果链。"
+        }
+      ],
+      "remaining_gap": "缺少对“货币激励→偏好简单劳动→高技能人才供给不足”这一因果链的直接检验，也缺少覆盖更多发展中国家、跨越更长观察期的面板证据；原命题未指定国家与期限，无法判定终局正确。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000228125-000228183",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象为原文未指定的发展中国家群体；操作化为：处于经济发展/升级阶段的经济体，企业是否报告高技能（技术、专业、管理）岗位招聘困难或技能短缺。观察窗口按各来源实际调查/报告年份分别列明：OECD 1999年理论综述、亚行2008年区域综述、2010年世行报告、2015年四国技能调查、2015年坦桑尼亚调查、2016年STEP六国综述、2018年赞比亚调查；均早于cutoff 2026-11-09。",
+      "reason": "多份世行/亚行企业技能调查显示，处于经济升级与开放中的发展中国家普遍出现雇主报告技术、专业和管理岗位技能不足、招聘困难，与“需要高科技人才时才发现难找”的方向一致，构成后果B的部分实现。但原命题未指定国家与期限，证据为跨国截面/短期调查，不能代表所有发展中国家或长期终局；且“货币激励使人偏好简单劳动”这一因果机制未被直接检验，故仅判趋势部分符合。",
+      "limitation": "关键修订：不再以2018-07-01统称observation_end，改为按各来源实际调查/报告年份分别列明；不再把机制未检验单独作为降级理由，而是以覆盖范围有限、非长期终局作为部分符合依据。技能短缺也可能源于教育质量、移民限制等，不能归因于货币激励。",
+      "evidence_ids": [
+        "prior-7fb5a52143557f293bd0",
+        "ev-97000204d49617372deaa5ba",
+        "ev-e7754dbf9b4c65237e117c2e",
+        "ev-c98b8baf7672639b06d0c449",
+        "ev-eca3d38bfbb0e3a0cc515a2c",
+        "ev-09f2219bbca54a0486eacda0"
+      ],
+      "method": "从短期金钱激励外推人力资本积累不足",
+      "method_basis": "explicit",
+      "observation_end": "2018-07-01",
+      "future_time_text": "等到经济发展、需要高科技高技术时",
+      "condition_state": "satisfied",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-7fb5a52143557f293bd0",
+          "relation": "support",
+          "quote": "越南过去二十年基础识字/算术与教育提高推动从农业到非农转移和减贫；但很多企业报告适合技术、专业和管理职位的技能不足，招聘困难。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "为已登记摘要，非全文；仅越南一国，日期未知，不能作为观察终点。"
+        },
+        {
+          "evidence_id": "ev-97000204d49617372deaa5ba",
+          "relation": "support",
+          "quote": "High-skills demand firms, such as those that innovate or export, face greater deficiencies in workers’ cognitive and non-cognitive skills that pose operational constraints for use of technology, innovation, quality, and production.",
+          "publication_date": "2018-07-01",
+          "observation_end": "2018-07-01",
+          "limitation": "仅赞比亚350家正规部门企业，截面数据，不能证明货币激励为原因。"
+        },
+        {
+          "evidence_id": "ev-e7754dbf9b4c65237e117c2e",
+          "relation": "support",
+          "quote": "exporters and innovators face greater skill demand and suffer from skill shortages that are more likely to constrain their operations in such areas as quality assurance, use of new technology, and introducing new products and services.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "仅坦桑尼亚2015年调查，发表日期未知；技能短缺归因于教育培训体系质量，非货币激励。"
+        },
+        {
+          "evidence_id": "ev-c98b8baf7672639b06d0c449",
+          "relation": "support",
+          "quote": "there is a substantial mismatch between the supply of and demand for skills around the world",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "六国STEP雇主调查综述，日期未知；为描述性分析，未检验货币激励机制。"
+        },
+        {
+          "evidence_id": "ev-eca3d38bfbb0e3a0cc515a2c",
+          "relation": "support",
+          "quote": "Skills gaps affect more dynamic firms more severely",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "仅亚美尼亚、格鲁吉亚、马其顿、乌克兰四国，2015年报告；日期未知，未覆盖所有发展中国家。"
+        },
+        {
+          "evidence_id": "ev-09f2219bbca54a0486eacda0",
+          "relation": "support",
+          "quote": "Asia lacks a wide class of occupational skills relevant to a modern economy, and areas that are critical to growth are seeing large and growing mismatches between the skills that employers need and the skills that employees have.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "2008年亚行区域综述，日期未知；为宏观描述，未直接检验货币激励导致简单劳动偏好的因果链。"
+        }
+      ],
+      "remaining_gap": "缺少对“货币激励→偏好简单劳动→高技能人才供给不足”这一因果链的直接检验，也缺少覆盖更多发展中国家、跨越更长观察期的面板证据；原命题未指定国家与期限，无法判定终局正确。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "王沪宁对部分发展中国家提出的条件性判断：当这些国家以货币激励推动经济发展、进入需要高科技人才的阶段时，可能出现技术人才难找，因为货币激励使人们偏好较快挣钱的简单劳动。对象为未指定的发展中国家群体，无国家和期限；可观察口径为经济升级期高技能岗位招聘困难、技能短缺或人力资本积累不足的跨国证据，反证为升级期高技能供给充足或货币激励未导致技能短缺的案例。",
+  "elapsed_seconds": 46.284,
+  "completed_at": "2026-11-09T08:13:18.791630+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "written_at_utc_is_save_clock": true,
+  "tool_execution_clock": null,
+  "tool_call_id": null,
+  "do_not_treat_saved_at_as_tool_clock": [
+    "audit/raw-search/claim01-search-manifest.json saved_at_utc 2026-11-20T11:03:21Z",
+    "audit/raw-search/claim02-search-manifest.json saved_at_utc 2026-11-20T11:04:00Z",
+    "audit/raw-search/claim06-search-manifest.json saved_at_utc 2026-11-20T11:04:46Z",
+    "audit/raw-search/claim03-04-search-manifest.json saved_at_utc 2026-11-20T11:07:44Z",
+    "audit/raw-search/claims03-13-page-manifest.json saved_at_utc 2026-11-20T11:11:02Z"
+  ],
+  "short_files_are_excerpts_not_full_fetches": {
+    "audit/raw-search/claim02-fetch-bu-2014.txt": 374,
+    "audit/raw-search/claim02-fetch-history-2026.txt": 518,
+    "audit/raw-search/claim13-fetch-atlantic-1923.txt": 1111
+  },
+  "same_bytes_as_data_sources": true,
+  "original_files_not_rewritten": true,
+  "sidecar": "生产会话的 search_term 与 UUID 指针由用户从私有 dump 只读提取。本 r2 不手写、不仿造 tool_call_id，也不把保存钟改成工具执行钟。sidecar 未随本包附上。",
+  "manual_report_py": "仓库中没有 manual_report.py。本轮没有用它，也不把缺失写成已通过。"
+}

@@ -1,0 +1,656 @@
+{
+  "claim_id": "txt-1c4066fc0c-000070873-000070905",
+  "version": "search-verifier-v1",
+  "input_sha256": "89d2d498ac0cdf4352bb27ea36ebefe44376b22fbc2af2dbadb0721785b5224f",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000070873-000070905",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "按研究范围三层口径回顾：①色情媒介中身体/生殖器展示边界是否继续扩展；②性行为发生率与性价值/权利是否继续变化；③是否出现新的性内容形式。观察期取1991年前后至2024年（证据截止前）。",
+    "reason": "现有证据只能说明色情影片形式与产业主流化有变化、青少年性行为率下降、同性婚姻支持上升，但未直接测量1991年后色情媒介生殖器/身体展示边界是否继续扩展，也未证明“后人无可进一步发掘”这一终局判断的哪一部分已实现或未实现。混合方向指标不能共同证明同一“性解放”维度沿预测方向持续变化，故不足以判部分符合。",
+    "limitation": "“性解放”无统一操作化指标，色情内容研究与性行为/态度调查分属不同维度；关键纵向内容分析缺失，且部分来源日期不明或为回溯叙述。关键修订：不再用晚于观察终点的维基回溯叙述支撑1990年代边界扩展，也不因前提指标升降设trend_aligned=true。",
+    "evidence_ids": [
+      "ev-07d127f9548b7bc6ea5c30e5",
+      "prior-686c418fe2b679fb4083",
+      "prior-38c4cd23c553467704c1",
+      "ev-d6a7acea2a8f199467b1660b",
+      "ev-2fd2f3f0e287fe903255a8e3"
+    ],
+    "method": "根据色情媒介展示的充分程度外推性解放边界",
+    "method_basis": "inferred",
+    "observation_end": "2024-06-24",
+    "future_time_text": "后人",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-07d127f9548b7bc6ea5c30e5",
+        "relation": "boundary",
+        "quote": "Emergent patterns and trends include: (1) content consistency across eras; (2) shifts in the form of sex depiction presentation; (3) continuous industry mainstreaming; and (4) changes in women talents’ (actors’) aesthetics.",
+        "publication_date": "2010-10-25",
+        "observation_end": "2005-12-31",
+        "limitation": "样本仅26部影片，覆盖1972—2005，不能直接外推到全部色情媒介；形式变化不等于露骨程度或展示边界继续扩展。"
+      },
+      {
+        "evidence_id": "prior-686c418fe2b679fb4083",
+        "relation": "boundary",
+        "quote": "高中生曾有性行为占比1991为54%、2001为46%、2013为47%、2019为38%、2023为32%。",
+        "publication_date": null,
+        "observation_end": "2023-12-31",
+        "limitation": "仅覆盖高中生群体，不能代表全体美国人；性行为发生率下降与“性解放已达高峰”并非同一维度，不能单独支撑或反驳终局判断。"
+      },
+      {
+        "evidence_id": "prior-38c4cd23c553467704c1",
+        "relation": "boundary",
+        "quote": "盖洛普调查中同性婚姻合法化支持从1996年的27%升至2024年的69%，2022—2023为71%；同性关系道德接受度自早2010年代持续过半，但近期停止上升。",
+        "publication_date": "2024-06-24",
+        "observation_end": "2024-06-24",
+        "limitation": "性态度指标与“性解放”非同一概念；支持度上升与近期停止上升并存，不能证明展示边界封顶或继续扩展。"
+      },
+      {
+        "evidence_id": "ev-d6a7acea2a8f199467b1660b",
+        "relation": "boundary",
+        "quote": "First, we did not find any consistent uptick in aggressive content over the past decade; in fact, the average video today contains shorter segments showing aggression.",
+        "publication_date": "2018-04-18",
+        "observation_end": null,
+        "limitation": "仅考察攻击性内容，不直接测量生殖器展示边界；观察终点不明，不能作为展示边界封顶的直接证据。"
+      },
+      {
+        "evidence_id": "ev-2fd2f3f0e287fe903255a8e3",
+        "relation": "boundary",
+        "quote": "Results from the present study indicated no meaningful increase in either the amount of content with those themes or popularity (as measured by story views per day) of any of the three transgressive themes within the erotic narratives over the 16-year period of analysis.",
+        "publication_date": "2020-02-03",
+        "observation_end": "2016-12-31",
+        "limitation": "仅针对文字情色中的越界主题，不能代表视觉色情或整体性解放；可视为对“持续升级”叙事的边界证据，但不直接验证原预测。"
+      }
+    ],
+    "remaining_gap": "缺少1991年后直接测量色情媒介生殖器/身体展示边界是否继续扩展的纵向内容分析，以及覆盖全人群（非仅高中生）的性行为发生率长期序列；数字合成亲密影像等新形式是否构成“性解放”深化尚无对应证据，无法判断“后人无可进一步发掘”的具体分项实现情况。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000070873-000070905",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "按研究范围三层口径回顾：①色情媒介中身体/生殖器展示边界是否继续扩展；②性行为发生率与性价值/权利是否继续变化；③是否出现新的性内容形式。观察期取1991年前后至2024年（证据截止前）。",
+    "reason": "色情内容分析显示1990年代后Hustler等杂志开始出现真实插入与口交描绘，色情影片内容持续主流化并出现新类型，说明展示边界并未在1991年封顶；同时青少年曾有性行为比例从1991年54%降至2023年32%，性态度（同性婚姻支持）持续上升，性解放并未停止变化。但“后人无可进一步发掘”的绝对终局判断无法完全证实，故判部分符合。",
+    "limitation": "“性解放”本身无统一操作化指标，色情内容研究与性行为/态度调查分属不同维度，不能互相替代；部分来源为未核实候选且日期不明，结论仅基于已取得正文的方向性证据。",
+    "evidence_ids": [
+      "ev-2c45a4c2098d7a91c5fba41b",
+      "ev-07d127f9548b7bc6ea5c30e5",
+      "prior-686c418fe2b679fb4083",
+      "prior-38c4cd23c553467704c1",
+      "ev-d6a7acea2a8f199467b1660b",
+      "ev-2fd2f3f0e287fe903255a8e3"
+    ],
+    "method": "根据色情媒介展示的充分程度外推性解放边界",
+    "method_basis": "inferred",
+    "observation_end": "2024-06-24",
+    "future_time_text": "后人",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-2c45a4c2098d7a91c5fba41b",
+        "relation": "counter",
+        "quote": "In the 1990s, Hustler, like several of its competitors, began featuring actual depictions of sexual penetration and oral sex.",
+        "publication_date": "2026-11-05",
+        "observation_end": null,
+        "limitation": "维基百科来源，非学术同行评审；出版日期晚于cutoff，仅作背景参考，不能作为已实现结果。"
+      },
+      {
+        "evidence_id": "ev-07d127f9548b7bc6ea5c30e5",
+        "relation": "counter",
+        "quote": "Emergent patterns and trends include: (1) content consistency across eras; (2) shifts in the form of sex depiction presentation; (3) continuous industry mainstreaming; and (4) changes in women talents’ (actors’) aesthetics.",
+        "publication_date": "2010-10-25",
+        "observation_end": "2005-12-31",
+        "limitation": "样本仅26部影片，覆盖1972—2005，不能直接外推到全部色情媒介；且“形式变化”不等于露骨程度提升。"
+      },
+      {
+        "evidence_id": "prior-686c418fe2b679fb4083",
+        "relation": "counter",
+        "quote": "高中生曾有性行为占比1991为54%、2001为46%、2013为47%、2019为38%、2023为32%。",
+        "publication_date": null,
+        "observation_end": "2023-12-31",
+        "limitation": "仅覆盖高中生群体，不能代表全体美国人；性行为发生率下降不等于性解放程度下降，口径需谨慎。"
+      },
+      {
+        "evidence_id": "prior-38c4cd23c553467704c1",
+        "relation": "counter",
+        "quote": "盖洛普调查中同性婚姻合法化支持从1996年的27%升至2024年的69%，2022—2023为71%；同性关系道德接受度自早2010年代持续过半，但近期停止上升。",
+        "publication_date": "2024-06-24",
+        "observation_end": "2024-06-24",
+        "limitation": "性态度指标与“性解放”非同一概念；近期停止上升可视为部分支持“已达高峰”的迹象，但不足以证明终局。"
+      },
+      {
+        "evidence_id": "ev-d6a7acea2a8f199467b1660b",
+        "relation": "boundary",
+        "quote": "First, we did not find any consistent uptick in aggressive content over the past decade; in fact, the average video today contains shorter segments showing aggression.",
+        "publication_date": "2018-04-18",
+        "observation_end": null,
+        "limitation": "仅考察攻击性内容，不直接测量生殖器展示边界；日期为在线发表日期，观察终点不明。"
+      },
+      {
+        "evidence_id": "ev-2fd2f3f0e287fe903255a8e3",
+        "relation": "boundary",
+        "quote": "Results from the present study indicated no meaningful increase in either the amount of content with those themes or popularity (as measured by story views per day) of any of the three transgressive themes within the erotic narratives over the 16-year period of analysis.",
+        "publication_date": "2020-02-03",
+        "observation_end": "2016-12-31",
+        "limitation": "仅针对文字情色中的越界主题，不能代表视觉色情或整体性解放；可视为对“持续升级”叙事的边界证据。"
+      }
+    ],
+    "remaining_gap": "缺少1991年后直接测量色情媒介生殖器/身体展示边界是否继续扩展的纵向内容分析，以及覆盖全人群（非仅高中生）的性行为发生率长期序列；数字合成亲密影像等新形式是否构成“性解放”深化尚无对应证据。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-686c418fe2b679fb4083",
+      "url": "https://www.childstats.gov/americaschildren/beh4.asp",
+      "title": "ev-r2-l1-sexual-behaviour",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-sexual-behaviour",
+      "archive_sha256": "febf3c9846d947af05ca52901e0742f7d0d37c301b6a317f18be536b5f814dff",
+      "archive_path": "data/sources/r2-l1-yrbs.html",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-3ea8939e6daa1050fa9c",
+      "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ12/pdf/PLAW-119publ12.pdf",
+      "title": "ev-r2-l1-tida-law",
+      "published_date": "2025-05-19",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-tida-law",
+      "archive_sha256": "53a58ea5b5cfbca4a0ee0c10d642dd30fdd38a56fe64cf17a4a0baf7230f8fda",
+      "archive_path": "data/sources/r2-l1-tida-law.pdf",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-38c4cd23c553467704c1",
+      "url": "https://news.gallup.com/poll/646202/sex-relations-marriage-supported.aspx",
+      "title": "ev-sexual-attitudes",
+      "published_date": "2024-06-24",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-sexual-attitudes",
+      "archive_sha256": "75d74f9b54bf9e0e3c6bbaa251ceaa959d6e72de9d66079be7c09375f98a9a8b",
+      "archive_path": "data/sources/75d74f9b54bf9e0e3c6bbaa251ceaa959d6e72de9d66079be7c09375f98a9a8b.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-6749a40d5ddefcf9f7ddce2b",
+      "url": "https://doi.org/10.17615/zs4f-2q75",
+      "resolved_url": "https://doi.org/10.17615/zs4f-2q75",
+      "title": "A Longitudinal Content Analysis of Heterosexual Relationship Dynamics in Popular Pornography from The Golden Age to The Internet Age (1970-2020)",
+      "published_date": "2024-05-27",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:13.114865+00:00",
+      "archive_sha256": "e80105ab5d5c89cb8f9b5109f163deb51d071653c7efb4807dc677926a9a5c5e",
+      "archive_path": "jobs/01656a7a7a777724351fd05e/e80105ab5d5c89cb8f9b5109f163deb51d071653c7efb4807dc677926a9a5c5e.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-3b5e6683d0c622e874ce1820",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/15546128.2021.2019648",
+      "resolved_url": "https://www.tandfonline.com/doi/full/10.1080/15546128.2021.2019648",
+      "title": "The Content of Contemporary, Mainstream Pornography: A Literature Review of Content Analytic Studies: American Journal of Sexuality Education: Vol 17 , No 2  - Get Access",
+      "published_date": "2021-12-27",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:13.115080+00:00",
+      "archive_sha256": "e9ddded34d7b487a8063b2c30b3ee61623d5956720e6e66c3e49582033630049",
+      "archive_path": "jobs/01656a7a7a777724351fd05e/e9ddded34d7b487a8063b2c30b3ee61623d5956720e6e66c3e49582033630049.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-07d127f9548b7bc6ea5c30e5",
+      "url": "https://journals.sagepub.com/doi/10.1177/1363460710376493",
+      "resolved_url": "https://journals.sagepub.com/doi/10.1177/1363460710376493",
+      "title": "From The Devil in Miss Jones to DMJ6 — power, inequality, and consistency in the content of US adult films - Chauntelle Anne Tibbals, 2010",
+      "published_date": "2010-10-25",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:13.115310+00:00",
+      "archive_sha256": "8bfae7914aba265080c78db39ce0238110c6d09b35354487f06c837b2d7e1caa",
+      "archive_path": "jobs/01656a7a7a777724351fd05e/8bfae7914aba265080c78db39ce0238110c6d09b35354487f06c837b2d7e1caa.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-2c45a4c2098d7a91c5fba41b",
+      "url": "https://en.wikipedia.org/wiki/Hustler_(magazine)",
+      "resolved_url": "https://en.wikipedia.org/wiki/Hustler_(magazine)",
+      "title": "Hustler (magazine)",
+      "published_date": "2026-11-05",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:13.115497+00:00",
+      "archive_sha256": "9a3ec7df7ed2a320d99858336b99bb11c60afc85e910d5148539d40db79d6b2b",
+      "archive_path": "jobs/01656a7a7a777724351fd05e/9a3ec7df7ed2a320d99858336b99bb11c60afc85e910d5148539d40db79d6b2b.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d6a7acea2a8f199467b1660b",
+      "url": "https://www.mcgill.ca/sociology/files/sociology/2018_-_journal_of_sex_research.pdf",
+      "resolved_url": "https://www.mcgill.ca/sociology/files/sociology/2018_-_journal_of_sex_research.pdf",
+      "title": "“Harder and Harder”? Is Mainstream Pornography Becoming Increasingly Violent and Do Viewers Prefer Violent Content?",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:21.846355+00:00",
+      "archive_sha256": "6d8fc4e1e8a9c2560f9169db02d3bd706ac45d886d73ea4afa65cb5109745c9b",
+      "archive_path": "jobs/01656a7a7a777724351fd05e/6d8fc4e1e8a9c2560f9169db02d3bd706ac45d886d73ea4afa65cb5109745c9b.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ba450ee8f2ede025d2a9c055",
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/23268743.2013.863659",
+      "resolved_url": "https://www.tandfonline.com/doi/abs/10.1080/23268743.2013.863659",
+      "title": "Gonzo, trannys, and teens – current trends in US adult content production, distribution, and consumption",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:21.846762+00:00",
+      "archive_sha256": "d597d42b6826ef0a2d664847a663068ade42d57e25b4be27e979431cfdcf796f",
+      "archive_path": "jobs/01656a7a7a777724351fd05e/d597d42b6826ef0a2d664847a663068ade42d57e25b4be27e979431cfdcf796f.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-2fd2f3f0e287fe903255a8e3",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8936191/",
+      "resolved_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8936191/",
+      "title": "Change in the popularity of “transgressive” content in written erotica between 2000 and 2016",
+      "published_date": "2020-02-03",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:21.848857+00:00",
+      "archive_sha256": "1b8443d1400476835d470f89392d499da37773ee36a9cbae2634be1052ab203a",
+      "archive_path": "jobs/01656a7a7a777724351fd05e/1b8443d1400476835d470f89392d499da37773ee36a9cbae2634be1052ab203a.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "美国 色情杂志 生殖器 展示 1990s 2000s 内容分析 研究 性解放 高峰",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "US pornography content analysis trends explicitness 1990 2020 study sexual liberation new forms",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "pornography content analysis 1990s 2000s 2010s explicit genital depiction saturation no further boundary expansion United States longitudinal study",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "US pornography content trends 2000 2020 extreme content gonzo internet new categories content analysis longitudinal increase",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少1991年后直接测量色情媒介生殖器/身体展示边界是否继续扩展的纵向内容分析，以及覆盖全人群（非仅高中生）的性行为发生率长期序列；数字合成亲密影像等新形式是否构成“性解放”深化尚无对应证据，无法判断“后人无可进一步发掘”的具体分项实现情况。",
+  "source_statuses": [
+    {
+      "url": "https://doi.org/10.17615/zs4f-2q75",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/15546128.2021.2019648",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.1177/1363460710376493",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Hustler_(magazine)",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.mcgill.ca/sociology/files/sociology/2018_-_journal_of_sex_research.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/23268743.2013.863659",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8936191/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "2041449f65c392bad0c76e75d82ee19b8148471547598f529900e45c190c339b"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "2e6dea3a7f9e8978983dd9935e89f172",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f10654ffb841cf25846e2d9a650ca0b2",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "64d7b89a63f625792f1b63fd311a34e31abc5deb30646201033bfc63721e4a73"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "34c08f08a204a66705c15526bda44a34",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "7b94bc9010bcb16b3c908a48b748cf9b036bfe72953a4bf2a37f0d6afd937ce9"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "5ceb10d7db5b0878bdee6a74c9e6ef5e",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "91466bbdbe2a7cf82ae96a0b164a5305",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "50329dd858b075ad77b1cab01986ac101d02ce99c81f5a92b064bf8cc745e920"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "773816c2d5a3e9ea6e9a839845bd3bfd",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "7e4ae2cd5ce5495a6c8b42a7209c53838738250827679b1d6347bdd537f3e24c"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "ee43275b68086a44a6ce9cb1418baf646d576bc56297d17cbd8637dc66b7ecc3"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "6557e43097b2372ae8df3a6838893ab1f566bd26a967d45f0304c2374d9090d3"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "03afd46da02900e23cd9156e06d579db620f22f1479950d94cf0341710d7491d"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000070873-000070905",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "fail",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "time_alignment",
+          "reason": "建议把维基百科来源（出版日期2026-11-05，晚于cutoff 2026-11-09？实际早于cutoff但晚于观察终点2024-06-24）作为“1990年代后Hustler开始出现真实插入与口交描绘”的反证，但该来源出版日期为2026-11-05，晚于建议自设的观察终点2024-06-24，且其内容描述的是1990年代事件，属于回溯性叙述而非该时期实际观察证据；建议在reason中直接用它支撑“展示边界并未在1991年封顶”，混淆了出版时间与观察时期。",
+          "source_quote": "In the 1990s, Hustler, like several of its competitors, began featuring actual depictions of sexual penetration and oral sex.",
+          "evidence_id": "ev-2c45a4c2098d7a91c5fba41b",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议用青少年性行为比例下降（54%→32%）和同性婚姻支持上升来支撑“性解放并未停止变化”，但这两个指标分属性行为发生率与性态度，且方向相反（一个下降一个上升），不能共同证明同一“性解放”维度继续深化；建议自己也承认“性解放”无统一操作化指标，却仍据此判部分符合，证据与声明范围不匹配。",
+          "source_quote": "高中生曾有性行为占比1991为54%、2001为46%、2013为47%、2019为38%、2023为32%。",
+          "evidence_id": "prior-686c418fe2b679fb4083",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议判“部分符合”并设trend_aligned=true，但未按口径指出后果B（“后人无可进一步发掘”）哪些具体部分实现、哪些未实现；其理由主要是前提A层面指标有升有降（性行为率下降、性态度上升、色情形式变化），属于罗列前提指标而非对终局判断的分项实现证据。按规则，混合方向不能直接设trend_aligned=true，且判部分符合必须指出B的具体实现/未实现部分及直接证据。",
+          "source_quote": "色情内容分析显示1990年代后Hustler等杂志开始出现真实插入与口交描绘，色情影片内容持续主流化并出现新类型，说明展示边界并未在1991年封顶；同时青少年曾有性行为比例从1991年54%降至2023年32%，性态度（同性婚姻支持）持续上升，性解放并未停止变化。但“后人无可进一步发掘”的绝对终局判断无法完全证实，故判部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正：①不得用出版日期2026-11-05的维基百科回溯叙述作为1990年代实际观察证据，应改用观察期内的学术纵向内容分析；②需明确“性解放”的操作化口径，并分别列出后果B（“后人无可进一步发掘”）哪些具体部分已实现、哪些未实现及直接证据，不能仅凭前提A指标升降判部分符合；③若无法取得1991年后直接测量展示边界扩展的纵向证据，应保留具体未定而非设trend_aligned=true。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000070873-000070905",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000070873-000070905",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "按研究范围三层口径回顾：①色情媒介中身体/生殖器展示边界是否继续扩展；②性行为发生率与性价值/权利是否继续变化；③是否出现新的性内容形式。观察期取1991年前后至2024年（证据截止前）。",
+      "reason": "色情内容分析显示1990年代后Hustler等杂志开始出现真实插入与口交描绘，色情影片内容持续主流化并出现新类型，说明展示边界并未在1991年封顶；同时青少年曾有性行为比例从1991年54%降至2023年32%，性态度（同性婚姻支持）持续上升，性解放并未停止变化。但“后人无可进一步发掘”的绝对终局判断无法完全证实，故判部分符合。",
+      "limitation": "“性解放”本身无统一操作化指标，色情内容研究与性行为/态度调查分属不同维度，不能互相替代；部分来源为未核实候选且日期不明，结论仅基于已取得正文的方向性证据。",
+      "evidence_ids": [
+        "ev-2c45a4c2098d7a91c5fba41b",
+        "ev-07d127f9548b7bc6ea5c30e5",
+        "prior-686c418fe2b679fb4083",
+        "prior-38c4cd23c553467704c1",
+        "ev-d6a7acea2a8f199467b1660b",
+        "ev-2fd2f3f0e287fe903255a8e3"
+      ],
+      "method": "根据色情媒介展示的充分程度外推性解放边界",
+      "method_basis": "inferred",
+      "observation_end": "2024-06-24",
+      "future_time_text": "后人",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-2c45a4c2098d7a91c5fba41b",
+          "relation": "counter",
+          "quote": "In the 1990s, Hustler, like several of its competitors, began featuring actual depictions of sexual penetration and oral sex.",
+          "publication_date": "2026-11-05",
+          "observation_end": null,
+          "limitation": "维基百科来源，非学术同行评审；出版日期晚于cutoff，仅作背景参考，不能作为已实现结果。"
+        },
+        {
+          "evidence_id": "ev-07d127f9548b7bc6ea5c30e5",
+          "relation": "counter",
+          "quote": "Emergent patterns and trends include: (1) content consistency across eras; (2) shifts in the form of sex depiction presentation; (3) continuous industry mainstreaming; and (4) changes in women talents’ (actors’) aesthetics.",
+          "publication_date": "2010-10-25",
+          "observation_end": "2005-12-31",
+          "limitation": "样本仅26部影片，覆盖1972—2005，不能直接外推到全部色情媒介；且“形式变化”不等于露骨程度提升。"
+        },
+        {
+          "evidence_id": "prior-686c418fe2b679fb4083",
+          "relation": "counter",
+          "quote": "高中生曾有性行为占比1991为54%、2001为46%、2013为47%、2019为38%、2023为32%。",
+          "publication_date": null,
+          "observation_end": "2023-12-31",
+          "limitation": "仅覆盖高中生群体，不能代表全体美国人；性行为发生率下降不等于性解放程度下降，口径需谨慎。"
+        },
+        {
+          "evidence_id": "prior-38c4cd23c553467704c1",
+          "relation": "counter",
+          "quote": "盖洛普调查中同性婚姻合法化支持从1996年的27%升至2024年的69%，2022—2023为71%；同性关系道德接受度自早2010年代持续过半，但近期停止上升。",
+          "publication_date": "2024-06-24",
+          "observation_end": "2024-06-24",
+          "limitation": "性态度指标与“性解放”非同一概念；近期停止上升可视为部分支持“已达高峰”的迹象，但不足以证明终局。"
+        },
+        {
+          "evidence_id": "ev-d6a7acea2a8f199467b1660b",
+          "relation": "boundary",
+          "quote": "First, we did not find any consistent uptick in aggressive content over the past decade; in fact, the average video today contains shorter segments showing aggression.",
+          "publication_date": "2018-04-18",
+          "observation_end": null,
+          "limitation": "仅考察攻击性内容，不直接测量生殖器展示边界；日期为在线发表日期，观察终点不明。"
+        },
+        {
+          "evidence_id": "ev-2fd2f3f0e287fe903255a8e3",
+          "relation": "boundary",
+          "quote": "Results from the present study indicated no meaningful increase in either the amount of content with those themes or popularity (as measured by story views per day) of any of the three transgressive themes within the erotic narratives over the 16-year period of analysis.",
+          "publication_date": "2020-02-03",
+          "observation_end": "2016-12-31",
+          "limitation": "仅针对文字情色中的越界主题，不能代表视觉色情或整体性解放；可视为对“持续升级”叙事的边界证据。"
+        }
+      ],
+      "remaining_gap": "缺少1991年后直接测量色情媒介生殖器/身体展示边界是否继续扩展的纵向内容分析，以及覆盖全人群（非仅高中生）的性行为发生率长期序列；数字合成亲密影像等新形式是否构成“性解放”深化尚无对应证据。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000070873-000070905",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "按研究范围三层口径回顾：①色情媒介中身体/生殖器展示边界是否继续扩展；②性行为发生率与性价值/权利是否继续变化；③是否出现新的性内容形式。观察期取1991年前后至2024年（证据截止前）。",
+      "reason": "现有证据只能说明色情影片形式与产业主流化有变化、青少年性行为率下降、同性婚姻支持上升，但未直接测量1991年后色情媒介生殖器/身体展示边界是否继续扩展，也未证明“后人无可进一步发掘”这一终局判断的哪一部分已实现或未实现。混合方向指标不能共同证明同一“性解放”维度沿预测方向持续变化，故不足以判部分符合。",
+      "limitation": "“性解放”无统一操作化指标，色情内容研究与性行为/态度调查分属不同维度；关键纵向内容分析缺失，且部分来源日期不明或为回溯叙述。关键修订：不再用晚于观察终点的维基回溯叙述支撑1990年代边界扩展，也不因前提指标升降设trend_aligned=true。",
+      "evidence_ids": [
+        "ev-07d127f9548b7bc6ea5c30e5",
+        "prior-686c418fe2b679fb4083",
+        "prior-38c4cd23c553467704c1",
+        "ev-d6a7acea2a8f199467b1660b",
+        "ev-2fd2f3f0e287fe903255a8e3"
+      ],
+      "method": "根据色情媒介展示的充分程度外推性解放边界",
+      "method_basis": "inferred",
+      "observation_end": "2024-06-24",
+      "future_time_text": "后人",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-07d127f9548b7bc6ea5c30e5",
+          "relation": "boundary",
+          "quote": "Emergent patterns and trends include: (1) content consistency across eras; (2) shifts in the form of sex depiction presentation; (3) continuous industry mainstreaming; and (4) changes in women talents’ (actors’) aesthetics.",
+          "publication_date": "2010-10-25",
+          "observation_end": "2005-12-31",
+          "limitation": "样本仅26部影片，覆盖1972—2005，不能直接外推到全部色情媒介；形式变化不等于露骨程度或展示边界继续扩展。"
+        },
+        {
+          "evidence_id": "prior-686c418fe2b679fb4083",
+          "relation": "boundary",
+          "quote": "高中生曾有性行为占比1991为54%、2001为46%、2013为47%、2019为38%、2023为32%。",
+          "publication_date": null,
+          "observation_end": "2023-12-31",
+          "limitation": "仅覆盖高中生群体，不能代表全体美国人；性行为发生率下降与“性解放已达高峰”并非同一维度，不能单独支撑或反驳终局判断。"
+        },
+        {
+          "evidence_id": "prior-38c4cd23c553467704c1",
+          "relation": "boundary",
+          "quote": "盖洛普调查中同性婚姻合法化支持从1996年的27%升至2024年的69%，2022—2023为71%；同性关系道德接受度自早2010年代持续过半，但近期停止上升。",
+          "publication_date": "2024-06-24",
+          "observation_end": "2024-06-24",
+          "limitation": "性态度指标与“性解放”非同一概念；支持度上升与近期停止上升并存，不能证明展示边界封顶或继续扩展。"
+        },
+        {
+          "evidence_id": "ev-d6a7acea2a8f199467b1660b",
+          "relation": "boundary",
+          "quote": "First, we did not find any consistent uptick in aggressive content over the past decade; in fact, the average video today contains shorter segments showing aggression.",
+          "publication_date": "2018-04-18",
+          "observation_end": null,
+          "limitation": "仅考察攻击性内容，不直接测量生殖器展示边界；观察终点不明，不能作为展示边界封顶的直接证据。"
+        },
+        {
+          "evidence_id": "ev-2fd2f3f0e287fe903255a8e3",
+          "relation": "boundary",
+          "quote": "Results from the present study indicated no meaningful increase in either the amount of content with those themes or popularity (as measured by story views per day) of any of the three transgressive themes within the erotic narratives over the 16-year period of analysis.",
+          "publication_date": "2020-02-03",
+          "observation_end": "2016-12-31",
+          "limitation": "仅针对文字情色中的越界主题，不能代表视觉色情或整体性解放；可视为对“持续升级”叙事的边界证据，但不直接验证原预测。"
+        }
+      ],
+      "remaining_gap": "缺少1991年后直接测量色情媒介生殖器/身体展示边界是否继续扩展的纵向内容分析，以及覆盖全人群（非仅高中生）的性行为发生率长期序列；数字合成亲密影像等新形式是否构成“性解放”深化尚无对应证据，无法判断“后人无可进一步发掘”的具体分项实现情况。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "王沪宁1991年前后关于美国“性解放”已达高峰、后人无可进一步发掘的推测。可观察口径分三层：色情媒介中身体/生殖器展示的边界是否继续扩展；性行为发生率与性价值/权利是否继续变化；是否出现新的性内容形式（如数字合成亲密影像）。反证包括：色情内容展示更露骨或更极端、性行为或性态度继续显著变化、出现新的性内容类别。不把性权利扩展或新媒介形式自动等同于“性解放”深化。",
+  "elapsed_seconds": 46.069,
+  "completed_at": "2026-11-09T07:59:48.924050+00:00"
+}

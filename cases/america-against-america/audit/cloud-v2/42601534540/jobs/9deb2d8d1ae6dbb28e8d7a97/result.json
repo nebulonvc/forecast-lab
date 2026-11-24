@@ -1,0 +1,720 @@
+{
+  "claim_id": "txt-1c4066fc0c-000223456-000223517",
+  "version": "search-verifier-v2",
+  "input_sha256": "c85c2430a40c0107e6b9a3718256c225e9e675424424cd8f4dd1af6df24d2a84",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000223456-000223517",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "对象为美国社会整体；以独居户占比、孤独/社会隔离的公共卫生负担及社会隔离时间趋势作透明代理，观察期截至2024-11-12（部分指标至2022年）。不把独居等同孤独，也不识别个人主义教育的因果作用。",
+    "reason": "原文判断长期个人主义社会化会使美国社会在人际交往与共同生活上出现持续难题。现有证据方向混合：独居户占比由1974年19%升至2024年29%，社会隔离与孤独被列为公共卫生负担，2003–2020年社会隔离上升；但2024年研究指出2000年代至2010年代无明确隔离上升证据，主要上升集中在疫情期间。混合方向不能支持“持续趋势符合”，也无法区分后果中哪些具体部分已实现、哪些未实现，故暂无法判断。",
+    "limitation": "代理指标（独居、孤独、时间使用）不能直接测量“不会与人共同生活”，且无法验证个人主义教育是否为原因；支持与反向证据并存，主要结果未获一致观测。关键修订：按复核意见撤销“部分符合+趋势符合”，因混合方向不构成持续趋势。",
+    "evidence_ids": [
+      "prior-3fe6a714118a0c66b77f",
+      "prior-6b0d2c90d3a6b4e02b04",
+      "ev-a17e36a0b5fbff099b800af7",
+      "ev-1a95d66dea31636f82b1e541"
+    ],
+    "method": "从个人主义教育的社会化后果推演协作与共同生活困难",
+    "method_basis": "explicit",
+    "observation_end": "2024-11-12",
+    "future_time_text": "将来",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-3fe6a714118a0c66b77f",
+        "relation": "support",
+        "quote": "2024年家庭户约占64%；独居户3850万，占29%，1974年为19%；初婚年龄中位数上升。",
+        "publication_date": "2024-11-12",
+        "observation_end": "2024-11-12",
+        "limitation": "独居户占比上升只反映居住安排，不能直接证明人际交往能力下降或孤独。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-6b0d2c90d3a6b4e02b04",
+        "relation": "support",
+        "quote": "美国卫生总监2023社会连接报告认为孤独与隔离造成公共卫生和社会负担；疫情前已有约一半成年人报告孤独，报告同时区分独居、孤独和社会隔离。",
+        "publication_date": "2023-05-02",
+        "observation_end": "2023-05-02",
+        "limitation": "报告确认孤独是公共卫生负担，但明确区分独居与孤独，不能把独居直接当作“不会共同生活”。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-a17e36a0b5fbff099b800af7",
+        "relation": "support",
+        "quote": "Using the 2003–2020 American Time Use Survey, this study finds that, nationally, social isolation increased, social engagement with family, friends, and ‘others’ (roommates, neighbors, acquaintances, coworkers, clients, etc.) decreased, and companionship (shared leisure and recreation) decreased.",
+        "publication_date": "2022-12-25",
+        "observation_end": "2020-12-31",
+        "limitation": "时间使用数据截至2020年，且作者将工作时长等列为结构性约束，未证明个人主义教育是原因。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-1a95d66dea31636f82b1e541",
+        "relation": "counter",
+        "quote": "Contrary to prior claims, there was no clear evidence of increasing isolation during the 2000s and 2010s.",
+        "publication_date": "2024-02-05",
+        "observation_end": "2022-12-31",
+        "limitation": "该研究以单日无社交接触为指标，与孤独感或共同生活能力口径不同；其显示疫情前无持续上升，削弱“长期持续恶化”的强度。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺少直接测量“不善与人交往、不会共同生活”的长期指标，也缺少能识别个人主义教育因果作用的证据；现有代理方向混合，无法区分后果中已实现与未实现的具体部分。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000223456-000223517",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象为美国社会整体；以独居户占比、孤独/社会隔离的公共卫生负担及社会隔离时间趋势作透明代理，观察期截至2024-11-12（部分指标至2022年）。不把独居等同孤独，也不识别个人主义教育的因果作用。",
+    "reason": "原文判断长期个人主义社会化会使美国社会在人际交往与共同生活上出现持续难题。独居户占比由1974年19%升至2024年29%，社会隔离与孤独被列为公共卫生负担，2003–2020年社会隔离上升、与家庭外亲友的社会参与下降，方向与判断一致。但2024年研究指出2000年代至2010年代无明确隔离上升证据，主要上升集中在疫情期间，故只能判部分符合、趋势符合。",
+    "limitation": "代理指标（独居、孤独、时间使用）不能直接测量“不会与人共同生活”，且无法验证个人主义教育是否为原因；部分证据显示疫情前隔离并未持续上升，削弱“长期持续恶化”的强度。",
+    "evidence_ids": [
+      "prior-3fe6a714118a0c66b77f",
+      "prior-6b0d2c90d3a6b4e02b04",
+      "ev-a17e36a0b5fbff099b800af7",
+      "ev-1a95d66dea31636f82b1e541"
+    ],
+    "method": "从个人主义教育的社会化后果推演协作与共同生活困难",
+    "method_basis": "explicit",
+    "observation_end": "2024-11-12",
+    "future_time_text": "将来",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-3fe6a714118a0c66b77f",
+        "relation": "support",
+        "quote": "2024年家庭户约占64%；独居户3850万，占29%，1974年为19%；初婚年龄中位数上升。",
+        "publication_date": "2024-11-12",
+        "observation_end": "2024-11-12",
+        "limitation": "独居户占比上升只反映居住安排，不能直接证明人际交往能力下降或孤独。"
+      },
+      {
+        "evidence_id": "prior-6b0d2c90d3a6b4e02b04",
+        "relation": "support",
+        "quote": "美国卫生总监2023社会连接报告认为孤独与隔离造成公共卫生和社会负担；疫情前已有约一半成年人报告孤独，报告同时区分独居、孤独和社会隔离。",
+        "publication_date": "2023-05-02",
+        "observation_end": "2023-05-02",
+        "limitation": "报告确认孤独是公共卫生负担，但明确区分独居与孤独，不能把独居直接当作“不会共同生活”。"
+      },
+      {
+        "evidence_id": "ev-a17e36a0b5fbff099b800af7",
+        "relation": "support",
+        "quote": "Using the 2003–2020 American Time Use Survey, this study finds that, nationally, social isolation increased, social engagement with family, friends, and ‘others’ (roommates, neighbors, acquaintances, coworkers, clients, etc.) decreased, and companionship (shared leisure and recreation) decreased.",
+        "publication_date": "2022-12-25",
+        "observation_end": "2020-12-31",
+        "limitation": "时间使用数据截至2020年，且作者将工作时长等列为结构性约束，未证明个人主义教育是原因。"
+      },
+      {
+        "evidence_id": "ev-1a95d66dea31636f82b1e541",
+        "relation": "counter",
+        "quote": "Contrary to prior claims, there was no clear evidence of increasing isolation during the 2000s and 2010s.",
+        "publication_date": "2024-02-05",
+        "observation_end": "2022-12-31",
+        "limitation": "该研究以单日无社交接触为指标，与孤独感或共同生活能力口径不同；其显示疫情前无持续上升，削弱“长期持续恶化”的强度。"
+      }
+    ],
+    "remaining_gap": "缺少直接测量“不善与人交往、不会共同生活”的长期指标，也缺少能识别个人主义教育因果作用的证据；现有代理只能支持方向性趋势。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-3fe6a714118a0c66b77f",
+      "url": "https://www.census.gov/newsroom/press-releases/2024/families-and-living-arrangements.html",
+      "title": "ev-households",
+      "published_date": "2024-11-12",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-11-12",
+        "latest": "2024-11-12"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-households",
+      "archive_sha256": "dfdde4f1bbdf24961ad76e8d94047ad8959d8086c1f66162e5add0406bb97cb3",
+      "archive_path": "data/sources/dfdde4f1bbdf24961ad76e8d94047ad8959d8086c1f66162e5add0406bb97cb3.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-6b0d2c90d3a6b4e02b04",
+      "url": "https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf",
+      "title": "ev-loneliness",
+      "published_date": "2023-05-02",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2023-05-02",
+        "latest": "2023-05-02"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-loneliness",
+      "archive_sha256": "b48a67eaa668c2ef42375f78381f1ecbbdbab424077064b2af07fad66a38f2d6",
+      "archive_path": "data/sources/web-loneliness.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-9126ad22029abbc79c207163",
+      "url": "https://www2.census.gov/library/publications/2024/demo/p20-587.pdf",
+      "resolved_url": "https://www2.census.gov/library/publications/2024/demo/p20-587.pdf",
+      "title": "America's Families and Living Arrangements: 2022",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:34.679557+00:00",
+      "archive_sha256": "87235b3641be6217a9cfad4db023e174e32ef8ad4ad62e6fc3041e0016d31778",
+      "archive_path": "jobs/9deb2d8d1ae6dbb28e8d7a97/87235b3641be6217a9cfad4db023e174e32ef8ad4ad62e6fc3041e0016d31778.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a17e36a0b5fbff099b800af7",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9811250/",
+      "resolved_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9811250/",
+      "title": "US trends in social isolation, social engagement, and companionship ⎯ nationally and by age, sex, race/ethnicity, family income, and work hours, 2003–2020",
+      "published_date": "2022-12-25",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2022-12-25",
+        "latest": "2022-12-25"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:34.679706+00:00",
+      "archive_sha256": "7ae8cf848a57135030adcaba6d7fec8a14db81a53164500cbcb4702b1ae20ed3",
+      "archive_path": "jobs/9deb2d8d1ae6dbb28e8d7a97/7ae8cf848a57135030adcaba6d7fec8a14db81a53164500cbcb4702b1ae20ed3.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-1a95d66dea31636f82b1e541",
+      "url": "https://journals.sagepub.com/doi/full/10.1177/23780231241228445",
+      "resolved_url": "https://journals.sagepub.com/doi/full/10.1177/23780231241228445",
+      "title": "Social Isolation in America? A 20-Year Snapshot - Adam R. Roth, 2024",
+      "published_date": "2024-02-05",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-02-05",
+        "latest": "2024-02-05"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:34.679798+00:00",
+      "archive_sha256": "a7a3d3ca9920487974e90a266076a9825a91979761f19be0e550561d32a2b3ae",
+      "archive_path": "jobs/9deb2d8d1ae6dbb28e8d7a97/a7a3d3ca9920487974e90a266076a9825a91979761f19be0e550561d32a2b3ae.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "U.S. Census Bureau 2024 living arrangements solitary living households share 1974 2024",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "United States social connection loneliness trend improvement volunteering social participation 2000 2024 research",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "U.S. Census Bureau 2024 living arrangements solitary living households share 1974 2024",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "United States social connection loneliness trend improvement volunteering social participation 2000 2024 research",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少直接测量“不善与人交往、不会共同生活”的长期指标，也缺少能识别个人主义教育因果作用的证据；现有代理方向混合，无法区分后果中已实现与未实现的具体部分。",
+  "source_statuses": [
+    {
+      "url": "https://www2.census.gov/library/publications/2024/demo/p20-587.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9811250/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/full/10.1177/23780231241228445",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 9,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "92a66232d32278672655cc08676b922994f131e67538dfea58c73f8df230538b"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "be54eb0f22c8fd856b1e43ef6e0dae4f",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "01fa59595bba4eeef3e18b5376cf89bd",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "1af855dbd70b941954233b2dcf5f289201d70e2f90828dc5d00bf9935bf83e7c"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "d5b07170b772b34e862de9c9d5e3d1c9",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "fb8388474caf6af4fbcbdcd19b7dce9c7d3550f77390ed330bb6964e71956fcd"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "be54eb0f22c8fd856b1e43ef6e0dae4f",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "01fa59595bba4eeef3e18b5376cf89bd",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "02ec124edeb0da69c32f996f4e328ea24c088968cb87286cf4e465b82306fd55"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "7a6e34da1821e5a9f73bbbc4fb3fe731ae8c7c074562b60f321dd131d7b705f4",
+      "validation_error": "evidence_quote_not_in_shown_source"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "1005cee61cab1b1e52ac40a7b830cdb615e5048174da44d33cb9cc5b3b66aaad"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "4ca63b773ed5900594e2fe86eb40a8e63dc3f82d684d35c274ab21b93163ccdc"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "e2603761a35df95f721e6d59450fb7263ed46b513c0267e199b0f1fcaabc2c84"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "f749751af140a9ed6db83af09af0e663a8e63af8466d96878662fa4c31d84aaa"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "7a6e34da1821e5a9f73bbbc4fb3fe731ae8c7c074562b60f321dd131d7b705f4",
+      "validation_error": "evidence_quote_not_in_shown_source"
+    }
+  ],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-3fe6a714118a0c66b77f",
+        "source_bytes": 102,
+        "shown_bytes": 102,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-6b0d2c90d3a6b4e02b04",
+        "source_bytes": 196,
+        "shown_bytes": 196,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-9126ad22029abbc79c207163",
+        "source_bytes": 12040,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a17e36a0b5fbff099b800af7",
+        "source_bytes": 12040,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-1a95d66dea31636f82b1e541",
+        "source_bytes": 7597,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-3fe6a714118a0c66b77f",
+        "source_bytes": 102,
+        "shown_bytes": 102,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-6b0d2c90d3a6b4e02b04",
+        "source_bytes": 196,
+        "shown_bytes": 196,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-9126ad22029abbc79c207163",
+        "source_bytes": 12040,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a17e36a0b5fbff099b800af7",
+        "source_bytes": 12040,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-1a95d66dea31636f82b1e541",
+        "source_bytes": 7597,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-3fe6a714118a0c66b77f",
+        "source_bytes": 102,
+        "shown_bytes": 102,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-6b0d2c90d3a6b4e02b04",
+        "source_bytes": 196,
+        "shown_bytes": 196,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-9126ad22029abbc79c207163",
+        "source_bytes": 12040,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a17e36a0b5fbff099b800af7",
+        "source_bytes": 12040,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-1a95d66dea31636f82b1e541",
+        "source_bytes": 7597,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-3fe6a714118a0c66b77f",
+        "source_bytes": 102,
+        "shown_bytes": 102,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-6b0d2c90d3a6b4e02b04",
+        "source_bytes": 196,
+        "shown_bytes": 196,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-9126ad22029abbc79c207163",
+        "source_bytes": 12040,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-a17e36a0b5fbff099b800af7",
+        "source_bytes": 12040,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-1a95d66dea31636f82b1e541",
+        "source_bytes": 7597,
+        "shown_bytes": 4600,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000223456-000223517",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "verdict_logic",
+          "reason": "建议把结论定为“部分符合、趋势符合”，但给出的支持证据（独居户占比上升、社会隔离与家庭外社会参与下降）与反向证据（2000年代至2010年代无明确隔离上升、主要上升集中在疫情期）方向相反，属于混合方向。按统一口径，混合方向不能直接设置trend_aligned=true，也不能仅凭“方向与判断一致”就判为部分符合。若认为主要结果已实现，应说明哪些具体后果部分实现、哪些未实现；若认为主要方向已有持续观察证据而终点未到，应给出持续方向证据。当前材料不足以支持“部分符合+趋势符合”的分类，应改为“暂无法判断”，或明确列出后果B中已实现与未实现的具体部分及其直接证据。",
+          "quote_ref": "q7",
+          "source_quote": "Contrary to prior claims, there was no clear evidence of increasing isolation during the 2000s and 2010s.",
+          "evidence_id": "ev-1a95d66dea31636f82b1e541",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        }
+      ],
+      "remaining_gap": "需明确后果B（美国社会在人际交往与共同生活上的难题）中哪些具体部分已实现、哪些未实现，并给出对应直接证据；若无法区分，应改为暂无法判断，而非部分符合+趋势符合。",
+      "quote_origin": "proposal"
+    },
+    {
+      "id": "txt-1c4066fc0c-000223456-000223517",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000223456-000223517",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象为美国社会整体；以独居户占比、孤独/社会隔离的公共卫生负担及社会隔离时间趋势作透明代理，观察期截至2024-11-12（部分指标至2022年）。不把独居等同孤独，也不识别个人主义教育的因果作用。",
+      "reason": "原文判断长期个人主义社会化会使美国社会在人际交往与共同生活上出现持续难题。独居户占比由1974年19%升至2024年29%，社会隔离与孤独被列为公共卫生负担，2003–2020年社会隔离上升、与家庭外亲友的社会参与下降，方向与判断一致。但2024年研究指出2000年代至2010年代无明确隔离上升证据，主要上升集中在疫情期间，故只能判部分符合、趋势符合。",
+      "limitation": "代理指标（独居、孤独、时间使用）不能直接测量“不会与人共同生活”，且无法验证个人主义教育是否为原因；部分证据显示疫情前隔离并未持续上升，削弱“长期持续恶化”的强度。",
+      "evidence_ids": [
+        "prior-3fe6a714118a0c66b77f",
+        "prior-6b0d2c90d3a6b4e02b04",
+        "ev-a17e36a0b5fbff099b800af7",
+        "ev-1a95d66dea31636f82b1e541"
+      ],
+      "method": "从个人主义教育的社会化后果推演协作与共同生活困难",
+      "method_basis": "explicit",
+      "observation_end": "2024-11-12",
+      "future_time_text": "将来",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-3fe6a714118a0c66b77f",
+          "relation": "support",
+          "quote": "2024年家庭户约占64%；独居户3850万，占29%，1974年为19%；初婚年龄中位数上升。",
+          "publication_date": "2024-11-12",
+          "observation_end": "2024-11-12",
+          "limitation": "独居户占比上升只反映居住安排，不能直接证明人际交往能力下降或孤独。"
+        },
+        {
+          "evidence_id": "prior-6b0d2c90d3a6b4e02b04",
+          "relation": "support",
+          "quote": "美国卫生总监2023社会连接报告认为孤独与隔离造成公共卫生和社会负担；疫情前已有约一半成年人报告孤独，报告同时区分独居、孤独和社会隔离。",
+          "publication_date": "2023-05-02",
+          "observation_end": "2023-05-02",
+          "limitation": "报告确认孤独是公共卫生负担，但明确区分独居与孤独，不能把独居直接当作“不会共同生活”。"
+        },
+        {
+          "evidence_id": "ev-a17e36a0b5fbff099b800af7",
+          "relation": "support",
+          "quote": "Using the 2003–2020 American Time Use Survey, this study finds that, nationally, social isolation increased, social engagement with family, friends, and ‘others’ (roommates, neighbors, acquaintances, coworkers, clients, etc.) decreased, and companionship (shared leisure and recreation) decreased.",
+          "publication_date": "2022-12-25",
+          "observation_end": "2020-12-31",
+          "limitation": "时间使用数据截至2020年，且作者将工作时长等列为结构性约束，未证明个人主义教育是原因。"
+        },
+        {
+          "evidence_id": "ev-1a95d66dea31636f82b1e541",
+          "relation": "counter",
+          "quote": "Contrary to prior claims, there was no clear evidence of increasing isolation during the 2000s and 2010s.",
+          "publication_date": "2024-02-05",
+          "observation_end": "2022-12-31",
+          "limitation": "该研究以单日无社交接触为指标，与孤独感或共同生活能力口径不同；其显示疫情前无持续上升，削弱“长期持续恶化”的强度。"
+        }
+      ],
+      "remaining_gap": "缺少直接测量“不善与人交往、不会共同生活”的长期指标，也缺少能识别个人主义教育因果作用的证据；现有代理只能支持方向性趋势。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000223456-000223517",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "对象为美国社会整体；以独居户占比、孤独/社会隔离的公共卫生负担及社会隔离时间趋势作透明代理，观察期截至2024-11-12（部分指标至2022年）。不把独居等同孤独，也不识别个人主义教育的因果作用。",
+      "reason": "原文判断长期个人主义社会化会使美国社会在人际交往与共同生活上出现持续难题。现有证据方向混合：独居户占比由1974年19%升至2024年29%，社会隔离与孤独被列为公共卫生负担，2003–2020年社会隔离上升；但2024年研究指出2000年代至2010年代无明确隔离上升证据，主要上升集中在疫情期间。混合方向不能支持“持续趋势符合”，也无法区分后果中哪些具体部分已实现、哪些未实现，故暂无法判断。",
+      "limitation": "代理指标（独居、孤独、时间使用）不能直接测量“不会与人共同生活”，且无法验证个人主义教育是否为原因；支持与反向证据并存，主要结果未获一致观测。关键修订：按复核意见撤销“部分符合+趋势符合”，因混合方向不构成持续趋势。",
+      "evidence_ids": [
+        "prior-3fe6a714118a0c66b77f",
+        "prior-6b0d2c90d3a6b4e02b04",
+        "ev-a17e36a0b5fbff099b800af7",
+        "ev-1a95d66dea31636f82b1e541"
+      ],
+      "method": "从个人主义教育的社会化后果推演协作与共同生活困难",
+      "method_basis": "explicit",
+      "observation_end": "2024-11-12",
+      "future_time_text": "将来",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-3fe6a714118a0c66b77f",
+          "relation": "support",
+          "quote": "2024年家庭户约占64%；独居户3850万，占29%，1974年为19%；初婚年龄中位数上升。",
+          "publication_date": "2024-11-12",
+          "observation_end": "2024-11-12",
+          "limitation": "独居户占比上升只反映居住安排，不能直接证明人际交往能力下降或孤独。"
+        },
+        {
+          "evidence_id": "prior-6b0d2c90d3a6b4e02b04",
+          "relation": "support",
+          "quote": "美国卫生总监2023社会连接报告认为孤独与隔离造成公共卫生和社会负担；疫情前已有约一半成年人报告孤独，报告同时区分独居、孤独和社会隔离。",
+          "publication_date": "2023-05-02",
+          "observation_end": "2023-05-02",
+          "limitation": "报告确认孤独是公共卫生负担，但明确区分独居与孤独，不能把独居直接当作“不会共同生活”。"
+        },
+        {
+          "evidence_id": "ev-a17e36a0b5fbff099b800af7",
+          "relation": "support",
+          "quote": "Using the 2003–2020 American Time Use Survey, this study finds that, nationally, social isolation increased, social engagement with family, friends, and ‘others’ (roommates, neighbors, acquaintances, coworkers, clients, etc.) decreased, and companionship (shared leisure and recreation) decreased.",
+          "publication_date": "2022-12-25",
+          "observation_end": "2020-12-31",
+          "limitation": "时间使用数据截至2020年，且作者将工作时长等列为结构性约束，未证明个人主义教育是原因。"
+        },
+        {
+          "evidence_id": "ev-1a95d66dea31636f82b1e541",
+          "relation": "counter",
+          "quote": "Contrary to prior claims, there was no clear evidence of increasing isolation during the 2000s and 2010s.",
+          "publication_date": "2024-02-05",
+          "observation_end": "2022-12-31",
+          "limitation": "该研究以单日无社交接触为指标，与孤独感或共同生活能力口径不同；其显示疫情前无持续上升，削弱“长期持续恶化”的强度。"
+        }
+      ],
+      "remaining_gap": "缺少直接测量“不善与人交往、不会共同生活”的长期指标，也缺少能识别个人主义教育因果作用的证据；现有代理方向混合，无法区分后果中已实现与未实现的具体部分。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象为美国社会整体，而非每个美国人；结果口径为长期个人主义社会化是否使社会连接、共同生活与协作困难持续成为可观察的社会难题。以独居户占比、孤独/社会隔离的公共卫生负担作透明代理，观察期截至2024-11-12；不把独居直接等同孤独或“不会与人共同生活”，也不把趋势证据当作个人主义教育的因果识别。反证包括：社会连接指标若稳定或改善、独居与孤独脱钩、或社会参与/志愿服务未下降，将削弱该判断。",
+  "elapsed_seconds": 36.223,
+  "completed_at": "2026-11-09T10:35:02.336932+00:00"
+}

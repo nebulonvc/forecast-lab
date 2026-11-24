@@ -1,0 +1,77 @@
+{
+  "id": "txt-5386516eaf-002640551-002641067",
+  "assess": {
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "id": "txt-5386516eaf-002640551-002641067",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "observation_end": "2004-12-31",
+    "scope": "小农地产地区的土地产出会增加。",
+    "reason": "法国农业总产量体积大约翻倍。城镇和肥力这次没有可引用正文，不计入。",
+    "limitation": "只是法国产量。",
+    "evidence_ids": [
+      "ev-r3-insee"
+    ],
+    "method": "新执行。",
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-r3-insee",
+        "quote": "le volume de la production agricole totale a doublé",
+        "relation": "support",
+        "limitation": "产量增加。",
+        "observation_end": "2004-12-31",
+        "publication_date": "2007",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "城镇与肥力未计入。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-002640551-002641067",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "产量增加。"
+      },
+      {
+        "role": "counter",
+        "query": "产量增加。"
+      }
+    ],
+    "note": "r3 新执行，见 audit/search-returns-r3/manifest.json。不是回填。"
+  },
+  "select": {
+    "urls": [
+      "https://www.insee.fr/fr/statistiques/fichier/1372289/agrifra07c.pdf",
+      "https://www.tandfonline.com/doi/full/10.1080/21681376.2015.1090887"
+    ],
+    "reason": "产出增加，城乡方向不同。"
+  },
+  "r3_execution": {
+    "new": true,
+    "executed_at": "2026-11-20T10:55:00Z",
+    "why": "产量增加。",
+    "previous_verdict": "部分符合"
+  }
+}

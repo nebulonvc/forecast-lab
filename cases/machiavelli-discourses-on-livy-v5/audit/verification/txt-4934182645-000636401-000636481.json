@@ -1,0 +1,47 @@
+{
+  "id": "txt-4934182645-000636401-000636481",
+  "plan": {
+    "object": "习惯于一种方法的人。前一句写，他永远不会改变这种方法。",
+    "condition": "when times change so as no longer to accord with his method。时代变得不再符合该方法，而且他没有改方法。已经改去谈判或妥协的人，不满足“永不改变”。",
+    "quantifier": "will be ruined。他就必然毁灭。一次被解除指挥不能证明人人如此；一次方法未改、时代已变、人却没有毁灭，可以反驳。",
+    "result": "登记变化是 ruined。毁灭的是这个人，不是他的国家后来是否得到有利和约。",
+    "window": "1531至2026-11-15。费边和索代里尼是出版前的例子。",
+    "counterevidence_needed": "方法未改、时代已不再符合，而这个人毁灭了；或者方法未改、时代已变，他却没有毁灭。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "ruler refused to change his successful method when circumstances changed and lost power",
+      "counter_query": "leader kept the same policy after conditions changed and remained in power until death"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [
+      "https://ndupress.ndu.edu/Media/News/News-Article-View/Article/2340693/the-duke-of-marlborough-and-the-paradox-of-campaigning-in-long-wars/",
+      "https://www.independent.co.uk/news/people/obituary-kim-il-sung-1413073.html"
+    ],
+    "dropped": "金日成在苏联解体后仍死于权位，但讣告写他转而与日本建交，并告诉卡特准备妥协。他改了方法，不能当作永不改变却未毁灭的反例。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "satisfied",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-ndu-marlborough-1712", "ev-independent-kim-1994"],
+    "scope": "必须方法未改而且时代不再符合。一次被解除指挥不能证明必然毁灭。",
+    "reason": "国防大学页写，马尔伯勒没有使战法适应已经改变的形势，仍追求决定性的军事结果，而那已经不可能；1712年他被解除指挥。这是一次方法未改、时势已变、指挥权失去。同页又写英国后来得到有利的政治解决，而那时他已不在指挥之位。失去指挥是他个人的损失，但一次不能把“必然毁灭”定下来。独立报写金日成1994年7月8日死时仍是朝鲜总统，可是他又与日本接触，并告诉卡特准备妥协，所以不是永不改变。决定性缺口是：没有一个人被写成方法始终未改、时代已不再符合、并且没有毁灭；也没有一组事例能把一次免职变成必然。",
+    "limitation": "国防大学文章日期是2020年9月10日。讣告日期是1994年7月11日。1712年没有月日。",
+    "method": "先看他有没有改方法，再看时代是否不再符合，最后才看他是否毁灭。改了方法的在位者不是反例。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "马尔伯勒1712年因不改战法被解除指挥，只是一次。金日成死于权位，但讣告写他已经转向妥协。"
+  }
+}

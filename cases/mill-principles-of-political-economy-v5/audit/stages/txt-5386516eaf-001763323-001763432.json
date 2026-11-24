@@ -1,0 +1,81 @@
+{
+  "id": "txt-5386516eaf-001763323-001763432",
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "recorded in audit/search-log.jsonl"
+      },
+      {
+        "role": "counter",
+        "query": "recorded in audit/search-log.jsonl"
+      }
+    ],
+    "note": "没有 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://vaclavsmil.com/wp-content/uploads/2024/10/smil-articles-science-energy-ethics-civilization.pdf"
+    ],
+    "reason": "只保留摘录在存档中的来源。对象不符的不拿来计分。"
+  },
+  "assess": {
+    "id": "txt-5386516eaf-001763323-001763432",
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "perpetual",
+    "condition_state": "unconditional",
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-smil-energy",
+        "quote": "about 400 EJ by the year 2000",
+        "relation": "boundary",
+        "limitation": "止于2000年，不是永久。",
+        "observation_end": "2000-12-31",
+        "publication_date": null
+      }
+    ],
+    "observation_end": null,
+    "verdict": "暂无法判断",
+    "basis": "future",
+    "scope": "就人类预见所能及，人对自然的力量将永久地、无限制地增长。",
+    "reason": "同一份能源史只写到2000年的有限上升。永久和无限制都还没有被一份截止日前的正文证明，也不能用有限上升判错，因为永久终点未到。",
+    "limitation": "OWID 能源页的存档戳是2026-11-18，晚于 cutoff，不用。",
+    "evidence_ids": [
+      "ev-smil-energy"
+    ],
+    "remaining_gap": "缺能区分“已经更大”和“永久且无限制”的同对象证据。",
+    "method": "与上一条使用同一次能源检索，不把有限上升写成永久。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001763323-001763432",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-smil-energy"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-smil-energy"
+      ],
+      "blocks_verdict": false
+    }
+  ]
+}

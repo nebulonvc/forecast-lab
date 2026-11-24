@@ -1,0 +1,61 @@
+{
+  "claim_id": "txt-4934182645-000749295-000749325",
+  "plan": {
+    "object": "不习武、完全把命运交给运气的公民",
+    "conditions": [
+      "不习武",
+      "不靠自己的勇气而完全交给运气"
+    ],
+    "quantifier": "will，并且总是给出威尼斯人那样的例子",
+    "result": "脾气随运气改变",
+    "time_window": "1531年之后",
+    "counterevidence_needed": "不习武又完全相信运气的公民，在顺境和逆境里保持同一种脾气"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "purpose": "首轮一正一反",
+        "support_query": "untrained militia panicked after a defeat and grew overconfident after a victory",
+        "counter_query": "untrained citizens kept their courage after both victory and defeat",
+        "support_result": "1780年8月5日悬岩民兵打胜后去抢劫，随后被迫撤退。卡姆登写民兵溃逃。",
+        "counter_result": "反例检索打开了本书这一章。公园页写民兵有时溃逃、有时守住，不是同一种脾气穿过顺境和逆境。",
+        "adopted": false
+      }
+    ],
+    "adaptive_rounds": 0,
+    "stop_reason": "一次得胜后抢劫不能证明总是随运气改变脾气，页面也没有写他们完全相信运气。",
+    "sources": [
+      {
+        "url": "https://ecommons.udayton.edu/cgi/viewcontent.cgi?article=1062&context=udr",
+        "fetched": true
+      }
+    ]
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "insufficient_evidence",
+    "trend_aligned": null,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [
+      "ev-hanging-rock-1780"
+    ],
+    "scope": "改变脾气的人必须不习武，并且不靠自己的勇气而完全交给运气。一次得胜后抢劫不是这个全称。",
+    "reason": "连续原文说，公民不习武、不靠自己的勇气而完全交给运气时，脾气会随运气改变，并且总是像威尼斯人那样。1780年8月5日悬岩的爱国者民兵打胜较小的托利民兵后，不去扩大战果，转去抢劫营地。这只是一次得胜后的松懈，页面没有写他们完全相信运气，也没有写同一批人在失败时变成另一种脾气。反例检索打开的是本书这一章，不能独立核验。卡姆登的溃逃没有被存成可引用正文。观察不能停在一次抢劫上。",
+    "limitation": "代顿页没有文章出版日。它没有写完全相信运气。",
+    "method": "先看不习武和完全相信运气是否同时成立，再看脾气是否随运气改变，并且是否总是这样。一次抢劫不能充当总是。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "悬岩只写得胜后抢劫。完全相信运气没有出现。本书这一章不能核验自己。"
+  }
+}

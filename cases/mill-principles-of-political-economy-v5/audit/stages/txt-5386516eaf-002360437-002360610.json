@@ -1,0 +1,70 @@
+{
+  "id": "txt-5386516eaf-002360437-002360610",
+  "assess": {
+    "id": "txt-5386516eaf-002360437-002360610",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "当前文明强烈倾向于使结成群众而行动的人的权力成为社会里唯一实质权力。",
+    "reason": "英国工会密度从峰值约50%降到26%。这是一种群众组织的覆盖率先高后低，不是“唯一实质权力”。国家、企业和工会同时存在，材料没有比较谁是唯一实质权力。",
+    "limitation": "密度不是唯一权力。",
+    "evidence_ids": [
+      "ev-union-density"
+    ],
+    "method": "支持检索群众组织是否成为唯一实质权力，反证检索其权力下降。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-union-density",
+        "quote": "the UK (50 per cent to 26 per cent)",
+        "relation": "boundary",
+        "limitation": "密度下降不是唯一权力的判定。",
+        "observation_end": "2014-12-31",
+        "publication_date": "2014",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺结成群众的人是否成为社会唯一实质权力。工会密度不能填这个缺口。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-002360437-002360610",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "mass organizations became the only substantial social power"
+      },
+      {
+        "role": "counter",
+        "query": "union density fell from 50 to 26 percent UK"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://pure.mpg.de/rest/items/item_2383436/component/file_2554298/content"
+    ],
+    "reason": "密度不是唯一权力。"
+  }
+}

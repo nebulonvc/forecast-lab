@@ -1,0 +1,16 @@
+{
+  "tool_difference": "用 WebSearch 与 curl 代替 Exa。搜索摘要不是正文。搜索接口的原始响应体没有保存，不补造。",
+  "queries_actually_issued": [
+    {"role": "support", "q": "amalgamation of British private banks joint-stock banks Big Five 1918"},
+    {"role": "counter", "q": "New York overtook London financial centre after 1914"},
+    {"role": "support", "q": "Bank of England Act 1946 nationalisation date"}
+  ],
+  "archived": [
+    "https://www.legislation.gov.uk/ukpga/Geo6/9-10/27/enacted",
+    "https://www.natwestgroupremembers.com/banking-in-wartime/aftermath-and-legacy/the-bank-amalgamation-movement.html",
+    "https://en.wikisource.org/wiki/Page:EB1926_-_Supplement_Volume_2.pdf/295",
+    "https://www.lrb.co.uk/the-paper/v36/n10/jamie-martin/better-off-in-a-stocking"
+  ],
+  "r2_note": "本 r2 不改裁决。只补本轮实际重跑的 check、unittest 与连续 300 字滑窗日志。原 ZIP 不覆盖。",
+  "r3_note": "r3 只撤回三条对象代理计分，不新增查询，不补造搜索响应体，不把 select.executed 写成 true。QA 已认可的三条正确和一条时间量词部分符合未重研。"
+}

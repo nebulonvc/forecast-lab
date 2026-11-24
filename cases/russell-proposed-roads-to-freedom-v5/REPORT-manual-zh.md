@@ -1,0 +1,159 @@
+# 伯特兰·罗素《自由之路》（Proposed Roads to Freedom）：出版后预测人工核查
+
+- 案例目录：`cases/russell-proposed-roads-to-freedom-v5/`
+- 出版日期：1918（采用队列年份代理）
+- 截止日：2026-11-15（Asia/Shanghai）
+
+## 方法说明
+
+本次为逐块全文人工替代模型的 prepare_book-txt v5 抽取与核验，非关键词筛选：完整阅读101个3500/600字符块，含前后置材料并按规则排除。使用85e6da1版toolkit确定性对齐、归属筛选和重叠去重；35个候选中31个resolvable进入核验，4个unclear保留于claims。所有claims.context均为空。TXT来自Gutenberg公开镜像且sha256与队列一致。核验使用Exa公开搜索（每条首轮support/counter，必要时改策略第二轮），Exa contents存档；生存率CSV另以curl抓取完整文件，避免搜索服务12000字符截断。未调用DeepSeek API。先剔除非预测（出版前已发生的史实、一般规律、规范建议、反事实推演等），再对每条预测用 Exa 检索公开来源并抓取存档（`data/sources/`，sha256 记于 `data/evidence.jsonl`）核对至截止日。没有写明终点的预测按“出版日→2026-11-15”的隐含窗口判断；写明的终点未到、或条件句的前提从未出现，一律记“暂无法判断”，不强行判对错。所有来源均为实际抓取并存档的公开页面或文件；本稿未使用 DeepSeek 自动核验结论作为最终判断。
+
+五级判断：正确／趋势符合（方向对、程度或时点未完全到位）／部分符合（一部分成立）／错误／暂无法判断。严格胜率＝正确÷可判定；加权胜率＝（正确＋0.75×趋势符合＋0.5×部分符合）÷可判定；错误率＝错误÷可判定；可判定＝前四级之和。
+
+## 统计
+
+候选 31 条，剔除非预测 0 条，计入 **31 条预测**，其中 **26 条可判定**。
+
+| 判断 | 条数 |
+|---|---:|
+| 正确 | 6 |
+| 趋势符合 | 1 |
+| 部分符合 | 15 |
+| 错误 | 4 |
+| 暂无法判断 | 5 |
+
+| 指标 | 数值 |
+|---|---:|
+| 严格胜率 | **23.1%**（6/26） |
+| 加权胜率 | **54.8%** |
+| 错误率 | **15.4%**（4/26） |
+| 未定占比（暂无法判断/预测） | 16.1%（5/31） |
+
+## 总体评价
+
+罗素对国家出版审查、社会主义国家之间仍可能战争和部分社会人口方向的预判得到支持；但国际革命很快胜利、法国工团主义消亡、美国只能依移民增长、科学整体停止进步等判断落空。大量制度前提未完整出现或证据只覆盖局部，保留为部分符合或未定，不能把苏联的一种现实当成所有理想制度的同口径实验。
+
+## 逐条判断
+
+编号为 `data/claims.jsonl` 中可判定候选的顺序号。
+
+### 正确（6 条）
+
+- **#2** 「it would seem that the international idea has acquired sufficient strength to need again, after the war, some …」  
+  判断：**正确**。战后社会主义国际组织确实重建：伯尔尼召开国际社会主义会议，随后汉堡大会成立工人和社会主义国际。尽管组织分裂且历经争论，作者只预言将重新出现社会主义代表大会式的表达机构。  
+  来源：<http://library.fes.de/cgi-bin/populo/si.pl?f_ORG=org+LSI%3A&t_orga=x>；<https://doi.org/10.1093/oso/9780199641048.003.0003>
+- **#6** 「Pure Syndicalism, however, is not very likely to achieve wide popularity in Great Britain」  
+  判断：**正确**。英国工会对纯粹工团主义理论兴趣有限，创建工党本身即否定其反议会战术；总罢工虽受其影响，多数罢工者并无工团主义夺权的雄心。学术史也把英国革命工团主义这一阶段的结束连于总罢工失败，符合未获广泛支持的判断。  
+  来源：<https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/syndicalists>；<https://doi.org/10.4324/9781315212296-16>
+- **#18** 「There can be no doubt that, whatever regime may be introduced in Europe, African negroes will for a long time …」  
+  判断：**正确**。欧洲殖民统治和剥削在出版后仍持续数十年，强迫劳动直到战后乃至去殖民时期仍存在；此后非洲取得独立的事实也保留在证据中。按“今后很长时间”而非“永远统治”理解，结果符合；这不认可作者的种族优越论或对非洲自治能力的评价。  
+  来源：<https://bpb-us-e1.wpmucdn.com/blogs.uoregon.edu/dist/e/20998/files/2024/05/Ch-3-FALL-Babacar-Fall-Roberts-Richard-Forced-labour-2019-2-12a2e8bbca76b301.pdf>；<https://www.un.org/en/chronicle/article/independence-long-term-stability-united-nations-efforts-africa>
+- **#21** 「If the State were the sole publisher, it would doubtless refuse books opposed to State Socialism」  
+  判断：**正确**。苏联国家出版体系和预先审查确实阻止被认为敌视国家或共产党的文字出版，批判性作品转入地下自出版。地下流传并不推翻“国家出版者会拒绝这类书”的条件预测。  
+  来源：<https://www.encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/glavlit>；<https://www.encyclopedia.com/history/modern-europe/russian-soviet-and-cis-history/samizdat>
+- **#23** 「we cannot abolish death, but we can often postpone it by science, and it may ultimately become possible to sec…」  
+  判断：**正确**。完整存档的世界生存率数据表明，按当期年龄别死亡率计算，男女新生儿活到老年的比例均已是大多数，女性尤其高。作者预言的是科学使这种状况成为可能，而非人人永生；这里把老年操作化为数据中的65岁，不以平均寿命替代生存比例。  
+  来源：<https://ourworldindata.org/grapher/survival-to-age-65-of-cohort.csv>
+- **#27** 「The decline of the birth-rate in all civilized countries, which is pretty certain to continue, whatever econom…」  
+  判断：**正确**。按粗出生率的同指标表格，欧美国家长期出生率明显下降；美国和英国的数据均呈下降方向。战后婴儿潮是重要反例并已保留，但没有终点的方向性判断按长期窗口衡量，不要求每一年都单调下降。  
+  来源：<https://ourworldindata.org/fertility-rate?country=%7EUSA>；<https://www.cdc.gov/mmwr/volumes/69/wr/mm6901a5.htm>；<https://ourworldindata.org/grapher/crude-birth-rate?tab=table&time=1950..2023>；<https://ourworldindata.org/baby-boom-seven-charts>
+
+### 趋势符合（1 条）
+
+- **#8** 「there is no reason to suppose that the population will continue to increase indefinitely」  
+  判断：**趋势符合**。联合国存档明确报告全球生育下降、许多国家人口已达峰值，给停止无限增长提供实测方向支持；但世界总人口仍在增长，全球峰值尚属投射。判趋势符合不以联合国未来峰值投射作为已发生事实。  
+  来源：<https://ourworldindata.org/un-population-2024-revision/>；<https://www.un.org/en/UN-projects-world-population-to-peak-within-this-century>
+
+### 部分符合（15 条）
+
+- **#4** 「When these difficulties pass away, as they must sooner or later, labor will more and more find its place in th…」  
+  判断：**部分符合**。劳资暴力和敌意长期下降这一结果得到支持：研究记载新政劳动法和劳动关系委员会建立后，劳资合作增加，暴力显著减少；同时芝加哥纪念日惨案表明转变并非立即完成。移民困难是否已按原文含义消退缺乏独立确认，不能把制度改革的结果证明为作者所说条件完整成立。  
+  来源：<https://www.nber.org/system/files/chapters/c13504/revisions/c13504.rev1.pdf>；<https://www.chicagohistory.org/memorial-day-massacre-of-1937/>
+- **#5** 「the labor movement in America will probably begin to take on forms similar to those of Europe」  
+  判断：**部分符合**。美国出现全国性产业工会组织与政治动员，CIO改变了美国劳工及政治，符合向更制度化组织发展的部分判断；但美国并未形成欧洲式独立劳工政党，相关文献仍以美国例外讨论这一差异。仅以产业工会壮大不足以认定“形式与欧洲相似”整体实现。  
+  来源：<https://jacobin.com/2026/02/labor-parties-social-democracy-american-exceptionalism/>；<https://depts.washington.edu/moves/CIO_intro.shtml>
+- **#7** 「The possibility of technical improvement in the methods of production is, I believe, so great that, at any rat…」  
+  判断：**部分符合**。技术、生产率提升与工时下降在许多国家确实并行，存档也记录农业每工时产出提高，支持部分设想。但主要跨期证据采用人均GDP和每工人工时，并非原文全部商品数量与普遍福利的同口径检验；数世纪内没有必然障碍的保证更未到期，不能据此判正确或趋势符合。  
+  来源：<https://ourworldindata.org/working-hours>；<https://ourworldindata.org/working-more-than-ever>；<https://ourworldindata.org/rich-poor-working-hours>
+- **#9** 「it could be carried out in no very distant future with regard to many more. It is a flexible plan, since this …」  
+  判断：**部分符合**。免费公共供给确实扩展，NHS建立时全民可在使用时免费就医；但此后也引入部分收费，国际资料记录许多国家医疗教育使用费扩张。实现的是部分公共服务，不能把它等同于作者所说普通物品广泛免费按需供应。  
+  来源：<https://lordslibrary.parliament.uk/research-briefings/lln-2018-0073/>；<https://www.afdb.org/en/documents/document/operational-guidelines-on-user-fees-in-health-and-education-27090>
+- **#10** 「Writing books against Socialism, or against any theory embodied in the government of the day, would certainly …」  
+  判断：**部分符合**。苏联确把不获当局认可的写作排除在正式劳动之外，布罗茨基审判中法官不承认其诗歌劳动，异见文字也遭审查和法律压制。但诗人的案子并非直接因写反社会主义著作，文献还指出部分异见者自认忠于制度，因此只确认原预测的一部分。  
+  来源：<https://soviethistory.msu.edu/1968/limits-of-expression/limits-of-expression-texts/brodskii-trial/>；<https://scholarship.law.duke.edu/cgi/viewcontent.cgi?article=5729&context=faculty_scholarship>
+- **#11** 「those who hold power after the reform has been carried out are likely to belong, in the main, to the ambitious…」  
+  判断：**部分符合**。苏联形成由党控制任命的职业官僚和行政精英，掌权后出现原先革命分析未预期的官僚问题；政治反对受到压制也有证据。但资料不能核实“掌权者主要是野心型人物”的心理类型及总体比例，故不把精英存在等同于全部命题正确。  
+  来源：<https://encyclopedia.com/history/modern-europe/russian-soviet-and-cis-history/nomenklatura>；<https://www.cambridge.org/core/books/abs/stalinism-and-nazism/bureaucracy-and-the-stalinist-state/BB9DB2040FC9A29E4EAACB8D55331621>；<https://spice.fsi.stanford.edu/docs/regional_perspectives_on_human_rights_the_ussr_and_russia_part_one>
+- **#13** 「there is every reason to fear that under State Socialism the power of officials would be vastly greater than i…」  
+  判断：**部分符合**。苏联干部任命制度把学校、医疗、商店及经济文化机构的重要职位纳入党务控制，支持官僚权力广泛扩展这一部分。但没有与出版时英国官僚权力同指标比较的资料，不能把苏联国内的广泛权力直接证明为“远大于现在”。  
+  来源：<https://edu.lvivcenter.org/en/modules/financial-privileges-of-nomenklatura/>；<https://journals.sagepub.com/doi/10.1177/000271627743100114>
+- **#15** 「Although capitalism affords in modern society the channel by which the instinct of pugnacity finds its outlet,…」  
+  判断：**部分符合**。社会主义国家之间仍发生中越战争及中苏边境冲突，说明国家采用非资本主义制度并未自动消除战争。但原文讨论的是废除资本主义与普遍和平，不能把世界资本主义仍存在时的局部国家冲突当作完整前提已经满足；只确认较窄范围的后果，判部分符合。  
+  来源：<https://www.hoover.org/research/1979-sino-vietnamese-war-and-its-consequences>；<https://www.pbs.org/wgbh/americanexperience/features/china-border-disputes/>
+- **#16** 「As time goes on, the destructiveness of war grows greater and its profits grow less」  
+  判断：**部分符合**。第二次世界大战和原子武器的破坏性超过此前战争，支持部分方向；但长期战争数据表明近几十年冲突死亡低于二十世纪大部分时期，并非一直增长。战争“收益越来越少”也缺乏一致指标，不能把武器威力增加等同于整条命题成立。  
+  来源：<https://www.osti.gov/opennet/manhattan-project-history/Events/1945/retrospect.htm>；<https://ourworldindata.org/war-and-peace-long-run>
+- **#17** 「But disarmament, if it is to serve its purpose, must be simultaneous and by mutual agreement among all the Gre…」  
+  判断：**部分符合**。国家猜疑下的全面裁军确多次失败，德国退出日内瓦裁军会议并扩军是明确例子；但华盛顿海军条约在美日互疑的背景下仍达成主力舰比例、停止建造与报废旧舰安排。因此“裁军难以成功”只部分得到支持，不能忽略有限裁军的实际成果。  
+  来源：<https://encyclopedia.ushmm.org/content/en/film/germany-rejects-disarmament-and-international-cooperation>；<https://history.state.gov/milestones/1921-1936/naval-conference>
+- **#19** 「State Socialism might easily universalize the system of scholarships obtained by competitive examination」  
+  判断：**部分符合**。苏联大学实行激烈的入学考试竞争，多数全日制学生领取津贴，支持由考试选拔机会并资助学生的部分设想；同时高教免学费且存在身份关系与政治背书的影响。把竞争入学与津贴并存称为“奖学金竞争考试制度普遍化”仍有指标差异，不能判完全正确。  
+  来源：<http://www.country-data.com/cgi-bin/query/r-12568.html>
+- **#20** 「The bureaucratic State Socialist will have a simple solution for these difficulties. He will appoint a body co…」  
+  判断：**部分符合**。苏联建立统一作家组织，艺术受到官方审查并被要求遵从社会主义现实主义，确认权威机构控制艺术从业这一部分。但档案不是普遍适用于艺术和科学的“由名人审批青年、发放执照”制度记录，不能把相似机制当成完整制度预测正确。  
+  来源：<https://soviethistory.msu.edu/1934/writers-congress/writers-congress-texts/reconstruction-of-literary-and-artistic-organizations/>；<https://www.theartstory.org/movement/socialist-realism/>
+- **#22** 「State Socialism would largely fail to remove existing evils and would introduce new evils of its own」  
+  判断：**部分符合**。国家社会主义下艺术、科学和教育受到严格意识形态审查，确认新的自由障碍；但苏联也大幅扩展教育、培养人才并消除大量文盲。三项条件不能一概判定毫无改善，故将新弊出现与训练机会改善合看为部分符合。  
+  来源：<https://en.wikipedia.org/wiki/Education_in_the_Soviet_Union>；<https://spice.fsi.stanford.edu/docs/regional_perspectives_on_human_rights_the_ussr_and_russia_part_one>
+- **#25** 「By the method of individual curative treatment it will generally be possible to secure that a man's first offe…」  
+  判断：**部分符合**。心理矫治与再犯下降确有系统综述支持，但研究中受治疗者仍发生再犯；官方综述也显示不同服务类型效果不一。且这些样本不全是初犯、也未按作者排除人群严格筛选，不能证明“通常使第一次犯罪也是最后一次”的全部强断言。  
+  来源：<https://pubmed.ncbi.nlm.nih.gov/31476514/>；<https://crimesolutions.ojp.gov/ratedpractices/rehabilitation-programs-adults-convicted-crime>
+- **#29** 「it is quite likely that the birth-rate will also have begun to decline among the races of Asia」  
+  判断：**部分符合**。联合国出生率表和亚太报告均确认亚洲生育与出生水平长期下降，后果方向确已发生。但作者把它系于所谓“黄祸开始严重”的种族化、未定义前提，无法确认该前提；依条件未知而后果可见口径，只判部分符合，不认可该种族叙事。  
+  来源：<https://www.unescap.org/sites/default/d8files/event-documents/2400298E.pdf>；<https://ourworldindata.org/grapher/crude-birth-rate?tab=table&time=1950..2023>
+
+### 错误（4 条）
+
+- **#1** 「influencing Governments more and more, dominating the Russian Revolution, and perhaps capable of achieving at …」  
+  判断：**错误**。“不太遥远”的国际胜利未实现：战后德国起义等革命尝试失败；后来共产主义扩展到多国，却未实现《宣言》式世界无产阶级胜利，欧洲共产主义体制反而崩溃。不能把存在多个社会主义国家替代国际性胜利。  
+  来源：<https://www.rosalux.de/en/news/id/41549/the-world-revolution-that-wasnt>；<https://academic.oup.com/book/40007>
+- **#3** 「It is quite impossible to guess how far either the organization or the ideas of the Syndicalists will remain i…」  
+  判断：**错误**。法国工团主义并未随一战结束作为独特运动消亡：存档学术论文记录战后革命工团主义委员会及贝斯纳尔的活动，并研究战间期法国无政府工团主义。衰落和分裂不能等同于“已经死亡”。  
+  来源：<https://journals.sagepub.com/doi/10.1177/026569149602600403>
+- **#26** 「Under a bureaucratic State Socialism it is to be feared that science would soon cease to be progressive and ac…」  
+  判断：**错误**。官僚和意识形态确曾重创遗传学，李森科主义造成严重倒退；但苏联国家科研机构仍有切伦科夫效应、激光与基础物理等重要成果。原文声称科学整体将很快停止进步，不能由单个受压制领域支撑，整体停止的主结果与事实不符。  
+  来源：<http://www.lebedev.ru/en/history-lpi/achievements.html>；<https://pmc.ncbi.nlm.nih.gov/articles/PMC6499510/>
+- **#28** 「the population of Western Europe is not likely to increase very much beyond its present level, and that of Ame…」  
+  判断：**错误**。美国人口并非只靠移民增长：存档联储研究明确区分自然增长和净移民，并指出二十世纪前半叶净移民贡献很小，人口增长仍强劲；西欧也经历二十世纪人口扩张。具体的“仅移民增长”被直接反证，不能因后来移民重要性上升就给部分符合。  
+  来源：<https://www.stlouisfed.org/on-the-economy/2025/feb/breaking-down-us-population-growth-migration-natural-increase>；<https://www.statista.com/statistics/1303831/western-europe-population-development-historical/>
+
+### 暂无法判断（5 条）
+
+- **#12** 「Government within the Trade Union would probably be quite as strict as State government is now」  
+  判断：**暂无法判断**。西班牙区域集体化资料既记载工会主导的干预，也记载自由结社和混合治理。没有足够证据证明作者设定的完整工团主义制度已成立，因而不能用这些局部实验确定工会治理会与原有国家“同样严格”。  
+  来源：<https://www.raco.cat/index.php/CatalanHistoricalReview/article/download/96853/426261>；<https://www.marxists.org/subject/anarchism/sam-dolgoff/1974/anarchist-collectives/part-2-chapter-10.html>
+- **#14** 「I fear that the evils now connected with the omnipotence of the State would soon reappear」  
+  判断：**暂无法判断**。全国基尔特代表大会变得全能的条件没有实现：基尔特社会主义停留在运动和有限工作实验，建筑基尔特失败后联盟解散。不能把这个制度未实现当成该制度一旦全能就必然产生旧弊的验证。  
+  来源：<https://academic.oup.com/cje/article/47/1/21/6775929>；<https://www.infoplease.com/encyclopedia/history/modern-europe/uk-ireland/guild-socialism>
+- **#24** 「I think it exceedingly probable that, sooner or later, with the continued improvement in the methods of produc…」  
+  判断：**暂无法判断**。粮食生产能力已可供全人类适足饮食，但这只能说明食物产量潜力；最新粮食资料仍记录饥饿与可负担性问题。第二轮检索找到普遍基本服务的方案研究，却未找到把所有普通必需品免费按需供给、且不会造成严重浪费的充分实证，不能据粮食充足断言整个计划可行或不可行。  
+  来源：<https://www.fao.org/4/x0262e/x0262e05.htm>；<https://www.fao.org/publications/fao-flagship-publications/the-state-of-food-security-and-nutrition-in-the-world/2025/en>；<https://www.ucl.ac.uk/bartlett/sites/bartlett/files/universal_basic_services_-_the_institute_for_global_prosperity_.pdf>
+- **#30** 「Anarchism, which avoids the dangers of State Socialism, has dangers and difficulties of its own, which make it…」  
+  判断：**暂无法判断**。西班牙与乌克兰的无政府主义实验确实短命，但均处战争中，西班牙的中央及区域政府并未消失，乌克兰也由起义军控制。缺少满足作者完整无政府主义前提的可比、稳定观察，不能仅凭外部军事失败判定其固有地无法持久。  
+  来源：<https://www.marxists.org/subject/anarchism/bookchin/1974/the-anarchist-collectives/part-1-chapter-1.html>；<https://cultures-of-remembrance.com/en/essays/makhnovshchina/>；<https://www.marxists.org/subject/anarchism/bookchin/1974/the-anarchist-collectives/part-1-chapter-4.html>
+- **#31** 「Syndicalism shares many of the defects of Anarchism, and, like it, would prove unstable, since the need of a c…」  
+  判断：**暂无法判断**。西班牙无政府工团主义者确参加了共和政府，但存档同时明确指出既有国家政府始终存在。加入旧政府不等于先建成完整工团制度、再因内在需要迅速重建中央政府，关键条件链未能验证。  
+  来源：<https://history.state.gov/historicaldocuments/frus1936v02/d499>；<https://journals.openedition.org/mcv/3874>；<https://www.marxists.org/subject/anarchism/bookchin/1974/the-anarchist-collectives/part-1-chapter-4.html>
+
+## 剔除的非预测
+
+| 编号 | 原文 | 类型 | 说明 |
+|---:|---|---|---|
+| — | （无） | — | 候选为人工挑选，未收入非预测 |
+
+## 文件
+
+- 本文：`cases/russell-proposed-roads-to-freedom-v5/REPORT-manual-zh.md`
+- 逐条结构化结果：`cases/russell-proposed-roads-to-freedom-v5/output/manual-final/results.manual.jsonl`（review_source = `manual-assistant-2026-11-15`），汇总 `output/manual-final/summary.json`
+- 人工决定源文件：`cases/russell-proposed-roads-to-freedom-v5/audit/manual_review_2026-11-15.py`
+补充说明：报告固定模板中的“候选为人工挑选”不描述本次过程；实际为101/101块全文读后按流水线筛选，未在ASSESS以主题重复排除任何条目。原文种族化措辞仅用于准确识别历史预测，不代表认可。

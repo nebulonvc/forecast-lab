@@ -1,0 +1,28 @@
+{
+  "id": "8b2a39b0-add3-42c9-b5cb-6461805ad76e",
+  "object": "chat.completion",
+  "created": 1794201445,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000035660-000035698\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"原文以“如果未来无法预测，则萌生放弃掌控的念头”为条件性心理因果命题；无具体人群、指标或观察窗口，无法在2014—2026年间客观操作化验证。\",\"reason\":\"该判断描述的是个人面对不确定未来时的心理倾向，属于难以外部观测的内心状态，且原文未给出可检验的指标或样本。\",\"limitation\":\"缺乏可操作化定义与经验证据，不能以作者论述本身当作验证；未找到相关实证材料。\",\"evidence_ids\":[],\"method\":\"条件性判断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4337,
+    "completion_tokens": 190,
+    "total_tokens": 4527,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3569
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

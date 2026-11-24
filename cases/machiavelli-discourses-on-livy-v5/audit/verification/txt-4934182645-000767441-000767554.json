@@ -1,0 +1,59 @@
+{
+  "claim_id": "txt-4934182645-000767441-000767554",
+  "plan": {
+    "object": "共和国或君主的顾问",
+    "conditions": [
+      "他们按自己认为有利的事认真提出建议"
+    ],
+    "quantifier": "risk，不是每次都失去职位或生命",
+    "result": "冒职位和生命的危险，因为人们按结果判断建议",
+    "time_window": "1531年之后",
+    "counterevidence_needed": "认真建议自己认为有利的事、结果很坏，而建议者没有因此冒职位或生命的危险"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "purpose": "首轮一正一反",
+        "support_query": "minister dismissed or executed because the policy he advised failed",
+        "counter_query": "adviser kept his office after the plan he recommended failed",
+        "support_result": "韩侂胄是1207年，早于1531。玄永哲被写成因不忠或打瞌睡被处决，不是因为他所建议的政策按结果失败。",
+        "counter_result": "卡努戈卢留任和科恩留任，都不是一项他建议的计划失败之后仍保住职位。",
+        "adopted": false
+      }
+    ],
+    "adaptive_rounds": 0,
+    "stop_reason": "没有1531年之后、按结果判断建议而危及职位或生命的可引用正文。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Han_Tuozhou",
+        "fetched": false,
+        "note": "检索可见年份为1207，早于出版，未再下载。"
+      }
+    ]
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "insufficient_evidence",
+    "trend_aligned": null,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "冒险针对的是认真建议自己认为有利之事的顾问。risk 是危险，不是每一次都丢职位或丢命。塞利姆处死帕夏是作者自己举的例子。",
+    "reason": "连续原文说，顾问如果不认真建议自己认为对城邦或君主有利的事，就是失职；如果认真建议，就冒职位和生命的危险，因为人们按结果判断建议。作者举的塞利姆和罗马平民执政官都在出版之前。支持检索里，韩侂胄死于1207年，不能用来核验。玄永哲被写成因不忠或会议中打瞌睡被处决，不是因为他所提建议的结果很坏。反例检索里的留任也不是一项失败建议之后仍保住职位。没有可引用的对应记录，所以不判。",
+    "limitation": "这些页面没有存成可引用摘录。",
+    "method": "先看建议是不是自己认为有利的事，再看人们是不是按结果来危及他的职位或生命。risk 不改成必定丧命。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "fail",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "1207年早于出版。打瞌睡和留任都不是按结果判断建议。"
+  }
+}

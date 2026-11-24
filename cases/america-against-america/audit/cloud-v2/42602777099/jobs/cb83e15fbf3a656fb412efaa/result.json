@@ -1,0 +1,831 @@
+{
+  "claim_id": "txt-1c4066fc0c-000251400-000251448",
+  "version": "search-verifier-v2",
+  "input_sha256": "2df675d6a5105499912714afbf4894cacf6fde22ee00b7a5fc85652fead1aa4c",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000251400-000251448",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "以名义GDP总量（现价美元）作为“取代美国成为最大经济体”的可观察代理；观察窗口为出版后首个十年1991—2000年，逐年比较美日GDP；同时看日本经济挑战方向。",
+    "reason": "自动复核未确认主要判断：所引1991年单点数据只能证明该年日本GDP低于美国，不能支撑“1991—2000整个窗口日本未取代美国”的主要结果；建议自己也承认1992—2000逐年对照未核验，却仍据此给出“部分符合”的实质判断，属于以单点证据覆盖窗口结论。; 按统一口径，主要结果未观测（窗口内完整美日对照缺失）应保留为暂无法判断，而不是判“部分符合”。建议把“窗口内完整序列未全部核验”当作降级为部分符合的理由，混淆了“证据缺口”与“分项/阶段实质分化”；且未指出后果B（日本取代美国）哪些具体部分实现、哪些未实现。",
+    "limitation": "仅用GDP总量代理“取代”，未涵盖金融、科技等综合实力；1991—2000窗口为评估者透明设定，原文“近期”无精确年份；名义美元受汇率影响；窗口内完整序列未全部核验，故判部分符合而非正确。",
+    "evidence_ids": [
+      "ev-43225111ae6cb82b696c475f",
+      "prior-4c0a4fc0e5db546e17fb",
+      "ev-9ba10567d2541c21d2e22b84"
+    ],
+    "method": "区分日本现实挑战与取代美国的近期终点",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "近期内",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-43225111ae6cb82b696c475f",
+        "relation": "support",
+        "quote": "The country with the highest annual GDP was 🇺🇸 United States, with a total of $6,158,129,000,000. Closely followed by 🇯🇵 Japan with a GDP of $3,648,065,760,648.88",
+        "publication_date": null,
+        "observation_end": "1991-12-31",
+        "limitation": "第三方汇编数据，verified=false，仅1991年单点，不能代表整个窗口。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "prior-4c0a4fc0e5db546e17fb",
+        "relation": "support",
+        "quote": "日本1990年代年均实际增长约1.3%，低于前十年4.0%，恢复曾数次中断。",
+        "publication_date": "2009-04-23",
+        "observation_end": "2000-12-31",
+        "limitation": "日本央行总裁回顾性讲话，非原始统计；仅覆盖日本增长，未直接比较美日总量。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-9ba10567d2541c21d2e22b84",
+        "relation": "boundary",
+        "quote": "| 1991-01-01 | 3724887648862.3100 |",
+        "publication_date": null,
+        "observation_end": "1991-12-31",
+        "limitation": "FRED转载世界银行日本名义GDP序列，仅日本单国，需与美国对照；含2025年数据但未用于本判断。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      }
+    ],
+    "remaining_gap": "需取得1992—2000年逐年美日名义（及实际）GDP对照的已读正文，以确认窗口内日本是否始终未超过美国；若无法取得，应将verdict改为暂无法判断并保留该证据缺口，而非以1991年单点判部分符合。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000251400-000251448",
+    "inclusion": "forecast",
+    "verdict": "正确",
+    "basis": "observed_window",
+    "scope": "以名义GDP总量（现价美元）作为“取代美国成为最大经济体”的可观察代理；观察窗口为出版后首个十年1991—2000年，逐年比较美日GDP；同时看日本经济挑战方向。",
+    "reason": "原文判断日本近期不会取代美国，且日本经济挑战严峻。1991年日本名义GDP约3.65万亿美元，美国约6.16万亿美元，日本未超过美国；此后日本进入低增长，1990年代年均实际增长约1.3%，远低于前十年4.0%，与“近期不取代、挑战严峻”方向一致。",
+    "limitation": "仅用GDP总量代理“取代”，未涵盖金融、科技等综合实力；1991—2000窗口为评估者透明设定，原文“近期”无精确年份；名义美元受汇率影响。",
+    "evidence_ids": [
+      "ev-43225111ae6cb82b696c475f",
+      "prior-4c0a4fc0e5db546e17fb",
+      "ev-9ba10567d2541c21d2e22b84"
+    ],
+    "method": "区分日本现实挑战与取代美国的近期终点",
+    "method_basis": "explicit",
+    "observation_end": "2000-12-31",
+    "future_time_text": "近期内",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-43225111ae6cb82b696c475f",
+        "relation": "support",
+        "quote": "The country with the highest annual GDP was 🇺🇸 United States, with a total of $6,158,129,000,000. Closely followed by 🇯🇵 Japan with a GDP of $3,648,065,760,648.88",
+        "publication_date": null,
+        "observation_end": "1991-12-31",
+        "limitation": "第三方汇编数据，verified=false，仅1991年单点，不能代表整个窗口。"
+      },
+      {
+        "evidence_id": "prior-4c0a4fc0e5db546e17fb",
+        "relation": "support",
+        "quote": "日本1990年代年均实际增长约1.3%，低于前十年4.0%，恢复曾数次中断。",
+        "publication_date": "2009-04-23",
+        "observation_end": "2000-12-31",
+        "limitation": "日本央行总裁回顾性讲话，非原始统计；仅覆盖日本增长，未直接比较美日总量。"
+      },
+      {
+        "evidence_id": "ev-9ba10567d2541c21d2e22b84",
+        "relation": "boundary",
+        "quote": "| 1991-01-01 | 3724887648862.3100 |",
+        "publication_date": null,
+        "observation_end": "1991-12-31",
+        "limitation": "FRED转载世界银行日本名义GDP序列，仅日本单国，需与美国对照；含2025年数据但未用于本判断。"
+      }
+    ],
+    "remaining_gap": "缺少1992—2000年逐年美日名义与实际GDP对照的已读正文，窗口内完整序列未全部核验；但1991年差距与日本低增长已足以支持主要判断。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-871dcdbdaf9152e07536",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.CD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-cd",
+      "published_date": "2026-10-08",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-10-08",
+        "latest": "2026-10-08"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-cd",
+      "archive_sha256": "7ad5c1c4f44e15850a861521955b29727497d2cb232432f3dbc2e56ba20d4e42",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.CD.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-3860b59dde3f3677ccba",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.KD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-kd",
+      "published_date": "2026-10-08",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-10-08",
+        "latest": "2026-10-08"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-kd",
+      "archive_sha256": "0eabb480af54e08e1fa6c8a30424b5f98a316e14d676054b7b88acb293744bb4",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.KD.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-4c0a4fc0e5db546e17fb",
+      "url": "https://www2.boj.or.jp/archive/en/announcements/press/koen_2009/ko0904c.htm",
+      "title": "ev-japan-growth",
+      "published_date": "2009-04-23",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2009-04-23",
+        "latest": "2009-04-23"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-japan-growth",
+      "archive_sha256": "71ea4ae45c718dee270c90b533919d74c3e7e2649a70e0d081c8acc0b03ad508",
+      "archive_path": "data/sources/71ea4ae45c718dee270c90b533919d74c3e7e2649a70e0d081c8acc0b03ad508.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-43225111ae6cb82b696c475f",
+      "url": "https://database.earth/economy/gdp/1991",
+      "resolved_url": "https://database.earth/economy/gdp/1991",
+      "title": "Annual GDP (Gross Domestic Product) by Country in 1991 (World Map)",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:53.242196+00:00",
+      "archive_sha256": "906c02203e00d4b694b27fca642a9f04420b15881e132e2aa0e105d0541b3b9d",
+      "archive_path": "jobs/cb83e15fbf3a656fb412efaa/906c02203e00d4b694b27fca642a9f04420b15881e132e2aa0e105d0541b3b9d.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d8d679fe2a81b3c8bb97b14b",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+      "resolved_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+      "title": "GDP (current US$) | Data",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:53.242400+00:00",
+      "archive_sha256": "6b4e3cdf699e1ee6a465d0e2fe0db71e97eb3ea39cc01770a1bfc7202ecc3dc7",
+      "archive_path": "jobs/cb83e15fbf3a656fb412efaa/6b4e3cdf699e1ee6a465d0e2fe0db71e97eb3ea39cc01770a1bfc7202ecc3dc7.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-9ba10567d2541c21d2e22b84",
+      "url": "https://fred.stlouisfed.org/data/MKTGDPJPA646NWDB",
+      "resolved_url": "https://fred.stlouisfed.org/data/MKTGDPJPA646NWDB",
+      "title": "Table Data - Gross Domestic Product for Japan | FRED | St. Louis Fed",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:53.242575+00:00",
+      "archive_sha256": "c8c5e2b117929563ff6e57dbf2ff12c0104de501c33fa6a8e8726791fd17ab3b",
+      "archive_path": "jobs/cb83e15fbf3a656fb412efaa/c8c5e2b117929563ff6e57dbf2ff12c0104de501c33fa6a8e8726791fd17ab3b.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-4291e1d5e56e671460c77289",
+      "url": "https://gdpindex.org/vs/japan-vs-united-states/",
+      "resolved_url": "https://gdpindex.org/vs/japan-vs-united-states/",
+      "title": "United States vs Japan: GDP, Per Capita & Growth Compared 2026 – GDPIndex",
+      "published_date": "2026-06-30",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-06-30",
+        "latest": "2026-06-30"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:41:57.563222+00:00",
+      "archive_sha256": "62025cb6c46afd9789e28eadcdbe7154c24fe9454babb924180fc5e5ce04f946",
+      "archive_path": "jobs/cb83e15fbf3a656fb412efaa/62025cb6c46afd9789e28eadcdbe7154c24fe9454babb924180fc5e5ce04f946.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "World Bank WDI NY.GDP.MKTP.CD United States Japan 1991 2000 GDP current US dollars annual data",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Japan GDP exceeded United States GDP 1991 2000 nominal GDP comparison World Bank",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "World Bank WDI NY.GDP.MKTP.CD United States Japan 1991 2000 GDP current US dollars annual data",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Japan GDP exceeded United States GDP 1991 2000 nominal GDP comparison World Bank",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-43225111ae6cb82b696c475f",
+        "ev-9ba10567d2541c21d2e22b84"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "remaining_gap": "需取得1992—2000年逐年美日名义（及实际）GDP对照的已读正文，以确认窗口内日本是否始终未超过美国；若无法取得，应将verdict改为暂无法判断并保留该证据缺口，而非以1991年单点判部分符合。",
+  "source_statuses": [
+    {
+      "url": "https://database.earth/economy/gdp/1991",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://fred.stlouisfed.org/data/MKTGDPJPA646NWDB",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://gdpindex.org/vs/japan-vs-united-states/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "68a6d78e52fe1106fe11ba060cd33198e0d9612753a0c52c3fffeab9c6814d44"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "43ba0205efff8c93a3172c1e6da3e642",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "347ec80dac160bcd29f30f638b02a21d",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "49a8fe0bd6807cba85808d002abc71b92b2787abf0d6d8be97157ca0d6e3894b"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "c345332f48c450256f981dc8454f18c4",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "422c8183c4d49ae658550641c29becc9de2bb095b263022ce8e506ad1fc4eab5"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "43ba0205efff8c93a3172c1e6da3e642",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "347ec80dac160bcd29f30f638b02a21d",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "f164347c23d4be982dd2f0de010b4a6c55e1fb9dbe26c8b4840c8cc3eb1653ab"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "eafc1378e9b33dfe7244c0e264b40bfe",
+      "cost_estimate_USD": 0.001,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "d3a8f9c3d0f0154ef218772b15ce4c2d5ab24a2ea815617173ffe0d1267ca342"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "50993b65ff5900c0c5b8cd2b9d3af2c63e3c6227379c89993c7ef52c6ae057c8"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "8a8633bca95093c72ddd46d979d06afca04ff0e38d73becafb6a1b0cee50a178"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "387f6e07783b272c95fbbc7dbc035fc741adb01e46552a61cf237703c0d2c536"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "正确",
+      "mechanical_verdict": "正确",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-43225111ae6cb82b696c475f",
+            "ev-9ba10567d2541c21d2e22b84"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-43225111ae6cb82b696c475f",
+            "ev-9ba10567d2541c21d2e22b84"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-871dcdbdaf9152e07536",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3860b59dde3f3677ccba",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-4c0a4fc0e5db546e17fb",
+        "source_bytes": 117,
+        "shown_bytes": 117,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-43225111ae6cb82b696c475f",
+        "source_bytes": 12796,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d8d679fe2a81b3c8bb97b14b",
+        "source_bytes": 506,
+        "shown_bytes": 506,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-9ba10567d2541c21d2e22b84",
+        "source_bytes": 2885,
+        "shown_bytes": 2885,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-4291e1d5e56e671460c77289",
+        "source_bytes": 12041,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-871dcdbdaf9152e07536",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3860b59dde3f3677ccba",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-4c0a4fc0e5db546e17fb",
+        "source_bytes": 117,
+        "shown_bytes": 117,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-43225111ae6cb82b696c475f",
+        "source_bytes": 12796,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d8d679fe2a81b3c8bb97b14b",
+        "source_bytes": 506,
+        "shown_bytes": 506,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-9ba10567d2541c21d2e22b84",
+        "source_bytes": 2885,
+        "shown_bytes": 2885,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-4291e1d5e56e671460c77289",
+        "source_bytes": 12041,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-871dcdbdaf9152e07536",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3860b59dde3f3677ccba",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-4c0a4fc0e5db546e17fb",
+        "source_bytes": 117,
+        "shown_bytes": 117,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-43225111ae6cb82b696c475f",
+        "source_bytes": 12796,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d8d679fe2a81b3c8bb97b14b",
+        "source_bytes": 506,
+        "shown_bytes": 506,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-9ba10567d2541c21d2e22b84",
+        "source_bytes": 2885,
+        "shown_bytes": 2885,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-4291e1d5e56e671460c77289",
+        "source_bytes": 12041,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-871dcdbdaf9152e07536",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3860b59dde3f3677ccba",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-4c0a4fc0e5db546e17fb",
+        "source_bytes": 117,
+        "shown_bytes": 117,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-43225111ae6cb82b696c475f",
+        "source_bytes": 12796,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d8d679fe2a81b3c8bb97b14b",
+        "source_bytes": 506,
+        "shown_bytes": 506,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-9ba10567d2541c21d2e22b84",
+        "source_bytes": 2885,
+        "shown_bytes": 2885,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-4291e1d5e56e671460c77289",
+        "source_bytes": 12041,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000251400-000251448",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "fail",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "time_alignment",
+          "reason": "建议把观察窗口设为1991—2000并声称“逐年比较美日GDP”，但实际引用的证据只有1991年单点（ev-43225111ae6cb82b696c475f）和日本单国序列（ev-9ba10567d2541c21d2e22b84），没有1992—2000年美日对照数据。observation_end=2000-12-31缺乏对应观察证据，属于把窗口终点写成已观测终点。",
+          "quote_ref": "q2",
+          "source_quote": "以名义GDP总量（现价美元）作为“取代美国成为最大经济体”的可观察代理；观察窗口为出版后首个十年1991—2000年，逐年比较美日GDP；同时看日本经济挑战方向。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "“日本未超过美国”的主要结果只有1991年单点支持，不能支撑整个1991—2000窗口；日本央行讲话只覆盖日本增长率，未直接比较美日总量。建议自己也承认“窗口内完整序列未全部核验”，却仍判“正确”，证据范围与声明范围不匹配。",
+          "quote_ref": "q4",
+          "source_quote": "The country with the highest annual GDP was 🇺🇸 United States, with a total of $6,158,129,000,000. Closely followed by 🇯🇵 Japan with a GDP of $3,648,065,760,648.",
+          "evidence_id": "ev-43225111ae6cb82b696c475f",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "原文核心是“近期内不能作日本取代美国之判断”，主要可检验结果是窗口内日本是否取代美国。现有材料仅证明1991年日本GDP低于美国，未覆盖窗口其余年份，不能据此判“正确”；应保留为暂无法判断或缩小口径到1991年单点并明确说明。",
+          "quote_ref": "q3",
+          "source_quote": "原文判断日本近期不会取代美国，且日本经济挑战严峻。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充1992—2000年逐年美日名义（及实际）GDP对照的已读正文，或把结论明确限定为仅1991年单点可验证、窗口其余年份未定；否则不能以“正确”覆盖1991—2000窗口。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000251400-000251448",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "evidence_support",
+          "reason": "所引1991年单点数据只能证明该年日本GDP低于美国，不能支撑“1991—2000整个窗口日本未取代美国”的主要结果；建议自己也承认1992—2000逐年对照未核验，却仍据此给出“部分符合”的实质判断，属于以单点证据覆盖窗口结论。",
+          "quote_ref": "q4",
+          "source_quote": "The country with the highest annual GDP was 🇺🇸 United States, with a total of $6,158,129,000,000. Closely followed by 🇯🇵 Japan with a GDP of $3,648,065,760,648.",
+          "evidence_id": "ev-43225111ae6cb82b696c475f",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "按统一口径，主要结果未观测（窗口内完整美日对照缺失）应保留为暂无法判断，而不是判“部分符合”。建议把“窗口内完整序列未全部核验”当作降级为部分符合的理由，混淆了“证据缺口”与“分项/阶段实质分化”；且未指出后果B（日本取代美国）哪些具体部分实现、哪些未实现。",
+          "quote_ref": "q3",
+          "source_quote": "原文判断日本近期不会取代美国，且日本经济挑战严峻。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需取得1992—2000年逐年美日名义（及实际）GDP对照的已读正文，以确认窗口内日本是否始终未超过美国；若无法取得，应将verdict改为暂无法判断并保留该证据缺口，而非以1991年单点判部分符合。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000251400-000251448",
+      "inclusion": "forecast",
+      "verdict": "正确",
+      "basis": "observed_window",
+      "scope": "以名义GDP总量（现价美元）作为“取代美国成为最大经济体”的可观察代理；观察窗口为出版后首个十年1991—2000年，逐年比较美日GDP；同时看日本经济挑战方向。",
+      "reason": "原文判断日本近期不会取代美国，且日本经济挑战严峻。1991年日本名义GDP约3.65万亿美元，美国约6.16万亿美元，日本未超过美国；此后日本进入低增长，1990年代年均实际增长约1.3%，远低于前十年4.0%，与“近期不取代、挑战严峻”方向一致。",
+      "limitation": "仅用GDP总量代理“取代”，未涵盖金融、科技等综合实力；1991—2000窗口为评估者透明设定，原文“近期”无精确年份；名义美元受汇率影响。",
+      "evidence_ids": [
+        "ev-43225111ae6cb82b696c475f",
+        "prior-4c0a4fc0e5db546e17fb",
+        "ev-9ba10567d2541c21d2e22b84"
+      ],
+      "method": "区分日本现实挑战与取代美国的近期终点",
+      "method_basis": "explicit",
+      "observation_end": "2000-12-31",
+      "future_time_text": "近期内",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-43225111ae6cb82b696c475f",
+          "relation": "support",
+          "quote": "The country with the highest annual GDP was 🇺🇸 United States, with a total of $6,158,129,000,000. Closely followed by 🇯🇵 Japan with a GDP of $3,648,065,760,648.88",
+          "publication_date": null,
+          "observation_end": "1991-12-31",
+          "limitation": "第三方汇编数据，verified=false，仅1991年单点，不能代表整个窗口。"
+        },
+        {
+          "evidence_id": "prior-4c0a4fc0e5db546e17fb",
+          "relation": "support",
+          "quote": "日本1990年代年均实际增长约1.3%，低于前十年4.0%，恢复曾数次中断。",
+          "publication_date": "2009-04-23",
+          "observation_end": "2000-12-31",
+          "limitation": "日本央行总裁回顾性讲话，非原始统计；仅覆盖日本增长，未直接比较美日总量。"
+        },
+        {
+          "evidence_id": "ev-9ba10567d2541c21d2e22b84",
+          "relation": "boundary",
+          "quote": "| 1991-01-01 | 3724887648862.3100 |",
+          "publication_date": null,
+          "observation_end": "1991-12-31",
+          "limitation": "FRED转载世界银行日本名义GDP序列，仅日本单国，需与美国对照；含2025年数据但未用于本判断。"
+        }
+      ],
+      "remaining_gap": "缺少1992—2000年逐年美日名义与实际GDP对照的已读正文，窗口内完整序列未全部核验；但1991年差距与日本低增长已足以支持主要判断。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000251400-000251448",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以名义GDP总量（现价美元）作为“取代美国成为最大经济体”的可观察代理；观察窗口为出版后首个十年1991—2000年，逐年比较美日GDP；同时看日本经济挑战方向。",
+      "reason": "原文判断日本近期不会取代美国，且日本经济挑战严峻。1991年日本名义GDP约3.65万亿美元，美国约6.16万亿美元，日本未超过美国；日本1990年代年均实际增长约1.3%，远低于前十年4.0%，与“近期不取代、挑战严峻”方向一致。但1992—2000年逐年美日对照未全部核验，不能判“正确”覆盖整个窗口。",
+      "limitation": "仅用GDP总量代理“取代”，未涵盖金融、科技等综合实力；1991—2000窗口为评估者透明设定，原文“近期”无精确年份；名义美元受汇率影响；窗口内完整序列未全部核验，故判部分符合而非正确。",
+      "evidence_ids": [
+        "ev-43225111ae6cb82b696c475f",
+        "prior-4c0a4fc0e5db546e17fb",
+        "ev-9ba10567d2541c21d2e22b84"
+      ],
+      "method": "区分日本现实挑战与取代美国的近期终点",
+      "method_basis": "explicit",
+      "observation_end": "2000-12-31",
+      "future_time_text": "近期内",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-43225111ae6cb82b696c475f",
+          "relation": "support",
+          "quote": "The country with the highest annual GDP was 🇺🇸 United States, with a total of $6,158,129,000,000. Closely followed by 🇯🇵 Japan with a GDP of $3,648,065,760,648.88",
+          "publication_date": null,
+          "observation_end": "1991-12-31",
+          "limitation": "第三方汇编数据，verified=false，仅1991年单点，不能代表整个窗口。"
+        },
+        {
+          "evidence_id": "prior-4c0a4fc0e5db546e17fb",
+          "relation": "support",
+          "quote": "日本1990年代年均实际增长约1.3%，低于前十年4.0%，恢复曾数次中断。",
+          "publication_date": "2009-04-23",
+          "observation_end": "2000-12-31",
+          "limitation": "日本央行总裁回顾性讲话，非原始统计；仅覆盖日本增长，未直接比较美日总量。"
+        },
+        {
+          "evidence_id": "ev-9ba10567d2541c21d2e22b84",
+          "relation": "boundary",
+          "quote": "| 1991-01-01 | 3724887648862.3100 |",
+          "publication_date": null,
+          "observation_end": "1991-12-31",
+          "limitation": "FRED转载世界银行日本名义GDP序列，仅日本单国，需与美国对照；含2025年数据但未用于本判断。"
+        }
+      ],
+      "remaining_gap": "缺少1992—2000年逐年美日名义与实际GDP对照的已读正文，窗口内完整序列未全部核验；1991年差距与日本低增长支持方向，但不足以判整个窗口“正确”。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "对象：日本是否在“近期内”取代美国成为最大经济体（以GDP总量为可观察代理），并同时评估原文“日本经济挑战已非常严峻”的方向。条件：原文为无条件判断，未给精确年份；采用出版后首个十年1991—2000作为透明回顾性“近期”窗口，逐年比较美日名义与实际GDP，不延长为“永远不会取代”。反证：若该窗口内日本GDP超过美国，或日本经济挑战未持续，则削弱原文。",
+  "elapsed_seconds": 30.896,
+  "completed_at": "2026-11-09T10:42:15.281409+00:00"
+}

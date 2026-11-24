@@ -1,0 +1,80 @@
+{
+  "id": "txt-5386516eaf-002532783-002532843",
+  "plan": {
+    "queries": [],
+    "note": "检索记录见 audit/search-log.jsonl。没有把 executed 写成 true。"
+  },
+  "select": {
+    "urls": [
+      "https://www.workhouses.org.uk/poorlaws/1905Commission.shtml"
+    ],
+    "reason": "只入选摘录已在存档、且日期不晚于 cutoff 的来源。"
+  },
+  "assess": {
+    "id": "txt-5386516eaf-002532783-002532843",
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "1909年济贫法皇家委员会的报告将引出相当大的立法变动。",
+    "reason": "档案同一句写，委员会的工作没有直接产生新法，但随后发生了若干重要社会立法，其中包括1911年开始的有限失业保险和健康保险。立法变动发生了，直接起因没有被这句写成报告本身。",
+    "limitation": "书中该句先写报告“contains”已经编成的论述，再写 will doubtless lead。报告在这句话里是已有文献，不是与 1909 年版同年就假定的先后。1909年1月1日养老金不纳入报告之后。页面发布日未知；1911年保险是页内写出的年份。",
+    "evidence_ids": [
+      "ev-workhouses-poorlaw-1909"
+    ],
+    "observation_end": "1911-12-31",
+    "condition_state": "unconditional",
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-workhouses-poorlaw-1909",
+        "quote": "Although no new legislation directly resulted from the Commission's work, a number of significant pieces of social legislation took place in its wake.",
+        "relation": "boundary",
+        "limitation": "前半否定直接源于报告的新法。",
+        "observation_end": "1911-12-31",
+        "publication_date": null
+      },
+      {
+        "evidence_id": "ev-workhouses-poorlaw-1909",
+        "quote": "In 1911 unemployment insurance and health insurance began in a limited form.",
+        "relation": "support",
+        "limitation": "这是页内写明的 1911 年，不是从年份推测。",
+        "observation_end": "1911-12-31",
+        "publication_date": null
+      }
+    ],
+    "remaining_gap": "",
+    "method": "用该页对报告与随后立法的原句核对，不把养老金起算日误当成报告的结果。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-002532783-002532843",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-workhouses-poorlaw-1909"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-workhouses-poorlaw-1909"
+      ],
+      "blocks_verdict": false
+    }
+  ]
+}

@@ -1,0 +1,785 @@
+{
+  "claim_id": "txt-1c4066fc0c-000179362-000179432",
+  "version": "search-verifier-v2",
+  "input_sha256": "396c686c691a7f9b529599cb36525e9e9b14f96af872e41177149225f1297def",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000179362-000179432",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "future",
+    "scope": "对象为美国社会服务/人类服务体系的缓冲功能是否达到极限；原文条件为“持续制造越来越多否定力量、服务只能转化不能消除”，期限为开放式的“总有一天”。可观察口径：福利/社会服务是否出现整体性支付中断、覆盖崩溃或制度失衡，而非单项基金赤字、单年预算压力或社会问题仍存在。观察时段截至2026-11-09。",
+    "reason": "原文给出的是开放式未来判断（“总有一天会达到极限”），没有可界定的终点。现有材料显示2025年SNAP曾因政府停摆短暂中断后恢复、社会安全金与医保支付照常，属于阶段性波动而非体系整体崩溃，尚不足以证明或否定“缓冲功能达到极限”。",
+    "limitation": "“极限”缺乏可操作阈值，且原文条件（否定力量持续增多、服务只能转化不能消除）本身难以量化；2025年停摆中断是短期事件，不能等同于长期极限。",
+    "evidence_ids": [
+      "ev-60a4939e9edbd8929c648341",
+      "ev-4e6c67e90996277aac806f70",
+      "ev-3e3364322d3162171d9c3eaf",
+      "ev-5ffa82b30d467a7de320b2c0"
+    ],
+    "method": "由问题持续产生与缓冲能力有限推演机制极限",
+    "method_basis": "explicit",
+    "observation_end": "2026-11-09",
+    "future_time_text": "长此以往；总有一天",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-60a4939e9edbd8929c648341",
+        "relation": "boundary",
+        "quote": "SNAP benefits have now been officially halted due to the ongoing government shutdown, and some of the 42 million people who rely on the program to buy food are already feeling the consequences.",
+        "publication_date": "2025-11-02",
+        "observation_end": "2025-11-02",
+        "limitation": "显示单项福利短期中断，属阶段性波动，不能证明体系整体达到极限。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-4e6c67e90996277aac806f70",
+        "relation": "counter",
+        "quote": "States scramble to send full SNAP food benefits to millions of people after government shutdown ends",
+        "publication_date": "2025-11-13",
+        "observation_end": "2025-11-13",
+        "limitation": "表明停摆结束后福利恢复发放，缓冲机制仍在运转，但仅为短期恢复。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-3e3364322d3162171d9c3eaf",
+        "relation": "counter",
+        "quote": "Social Security and Medicare payments, however, are still going out as usual.",
+        "publication_date": "2025-10-20",
+        "observation_end": "2025-10-20",
+        "limitation": "说明主要社会服务在停摆期间仍照常支付，但只覆盖社保医保，未涵盖全部人类服务。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-5ffa82b30d467a7de320b2c0",
+        "relation": "boundary",
+        "quote": "Local anti-poverty groups have had to scramble and scale back this year as the Trump administration targeted safety-net programs.",
+        "publication_date": "2025-12-29",
+        "observation_end": "2025-12-29",
+        "limitation": "显示地方扶贫机构承压，但为地方层面描述，不能代表全国体系整体崩溃。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺少可界定“极限”的量化阈值与长期观察数据；现有材料仅覆盖2025年短期停摆波动，无法判定缓冲功能是否已达或接近极限。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000179362-000179432",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "future",
+    "scope": "对象为美国社会服务/人类服务体系的缓冲功能是否达到极限；原文条件为“持续制造越来越多否定力量、服务只能转化不能消除”，期限为开放式的“总有一天”。可观察口径：福利/社会服务是否出现整体性支付中断、覆盖崩溃或制度失衡，而非单项基金赤字、单年预算压力或社会问题仍存在。观察时段截至2026-11-09。",
+    "reason": "原文给出的是开放式未来判断（“总有一天会达到极限”），没有可界定的终点。现有材料显示2025年SNAP曾因政府停摆短暂中断后恢复、社会安全金与医保支付照常，属于阶段性波动而非体系整体崩溃，尚不足以证明或否定“缓冲功能达到极限”。",
+    "limitation": "“极限”缺乏可操作阈值，且原文条件（否定力量持续增多、服务只能转化不能消除）本身难以量化；2025年停摆中断是短期事件，不能等同于长期极限。",
+    "evidence_ids": [
+      "ev-60a4939e9edbd8929c648341",
+      "ev-4e6c67e90996277aac806f70",
+      "ev-3e3364322d3162171d9c3eaf",
+      "ev-5ffa82b30d467a7de320b2c0"
+    ],
+    "method": "由问题持续产生与缓冲能力有限推演机制极限",
+    "method_basis": "explicit",
+    "observation_end": "2026-11-09",
+    "future_time_text": "长此以往；总有一天",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-60a4939e9edbd8929c648341",
+        "relation": "boundary",
+        "quote": "SNAP benefits have now been officially halted due to the ongoing government shutdown, and some of the 42 million people who rely on the program to buy food are already feeling the consequences.",
+        "publication_date": "2025-11-02",
+        "observation_end": "2025-11-02",
+        "limitation": "显示单项福利短期中断，属阶段性波动，不能证明体系整体达到极限。"
+      },
+      {
+        "evidence_id": "ev-4e6c67e90996277aac806f70",
+        "relation": "counter",
+        "quote": "States scramble to send full SNAP food benefits to millions of people after government shutdown ends",
+        "publication_date": "2025-11-13",
+        "observation_end": "2025-11-13",
+        "limitation": "表明停摆结束后福利恢复发放，缓冲机制仍在运转，但仅为短期恢复。"
+      },
+      {
+        "evidence_id": "ev-3e3364322d3162171d9c3eaf",
+        "relation": "counter",
+        "quote": "Social Security and Medicare payments, however, are still going out as usual.",
+        "publication_date": "2025-10-20",
+        "observation_end": "2025-10-20",
+        "limitation": "说明主要社会服务在停摆期间仍照常支付，但只覆盖社保医保，未涵盖全部人类服务。"
+      },
+      {
+        "evidence_id": "ev-5ffa82b30d467a7de320b2c0",
+        "relation": "boundary",
+        "quote": "Local anti-poverty groups have had to scramble and scale back this year as the Trump administration targeted safety-net programs.",
+        "publication_date": "2025-12-29",
+        "observation_end": "2025-12-29",
+        "limitation": "显示地方扶贫机构承压，但为地方层面描述，不能代表全国体系整体崩溃。"
+      }
+    ],
+    "remaining_gap": "缺少可界定“极限”的量化阈值与长期观察数据；现有材料仅覆盖2025年短期停摆波动，无法判定缓冲功能是否已达或接近极限。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-71359ce34658d6db8f93",
+      "url": "https://www.ssa.gov/oact/trsum/index.html",
+      "title": "ev-r2-l2-ssa-actual",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-ssa-actual",
+      "archive_sha256": "d7ac26b32f8dc1fd29fee5b25f54585af209c71f6fb9e9170cf2a704fea261fd",
+      "archive_path": "data/sources/r2-l2-ssa-actual-web-notes.json",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-394c925dc249717933d2",
+      "url": "https://home.treasury.gov/news/press-releases/jy2657",
+      "title": "ev-budget",
+      "published_date": "2024-10-18",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-10-18",
+        "latest": "2024-10-18"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-budget",
+      "archive_sha256": "357cda3c8aac9ade2875be537b7f9f3442c931d8ceaa29a8c568c4a3e22d2a99",
+      "archive_path": "data/sources/357cda3c8aac9ade2875be537b7f9f3442c931d8ceaa29a8c568c4a3e22d2a99.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-c0c8213343a393e3eaea",
+      "url": "https://archives.hud.gov/news/2024/pr24-327.cfm",
+      "title": "ev-homeless",
+      "published_date": "2024-12-27",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-12-27",
+        "latest": "2024-12-27"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-homeless",
+      "archive_sha256": "85fa2ad034549af8986bb96f6e15ecaae4c3b46f73ef816bbda6b090cf158f83",
+      "archive_path": "data/sources/85fa2ad034549af8986bb96f6e15ecaae4c3b46f73ef816bbda6b090cf158f83.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-d136604e6c2ad68bc44a",
+      "url": "https://www.brookings.edu/articles/a-primer-on-snap-work-requirements-october-2023/",
+      "title": "ev-lane3-snap2023",
+      "published_date": "2023-10-05",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2023-10-05",
+        "latest": "2023-10-05"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-snap2023",
+      "archive_sha256": "6421dd3859464a0f28ad8a710940827ded742300569e93dd569e4a57395f249a",
+      "archive_path": "data/sources/lane3-web-extracts.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-5ffa82b30d467a7de320b2c0",
+      "url": "https://www.npr.org/2025/12/19/nx-s1-5619695/poverty-safety-net-programs-2025-chaos",
+      "resolved_url": "https://www.npr.org/2025/12/19/nx-s1-5619695/poverty-safety-net-programs-2025-chaos",
+      "title": "For those who help the poor, 2025 was a year of chaos : NPR",
+      "published_date": "2025-12-29",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-12-29",
+        "latest": "2025-12-29"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:09.309581+00:00",
+      "archive_sha256": "5ecf043c12bb276754b61639f75fa2a88049d158509a9e8d7a99690546b4e8da",
+      "archive_path": "jobs/9ada1257d3b866238bbe7c7c/5ecf043c12bb276754b61639f75fa2a88049d158509a9e8d7a99690546b4e8da.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-358b2ec3e5ca615ad49c9a94",
+      "url": "https://prospect.org/2025/11/14/shutdown-is-over-snaps-struggles-arent/",
+      "resolved_url": "https://prospect.org/2025/11/14/shutdown-is-over-snaps-struggles-arent/",
+      "title": "The Shutdown Is Over. SNAP’s Struggles Aren’t. - The American Prospect",
+      "published_date": "2025-11-14",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-11-14",
+        "latest": "2025-11-14"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:09.309715+00:00",
+      "archive_sha256": "f8a27bf4fea499fecff3e23d8ba37968c94431175332eb7b0af42fbfe390e8b6",
+      "archive_path": "jobs/9ada1257d3b866238bbe7c7c/f8a27bf4fea499fecff3e23d8ba37968c94431175332eb7b0af42fbfe390e8b6.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-8d7640cdaef0b666f3e8f627",
+      "url": "https://www.ssa.gov/OACT/TRSUM/tr25summary.pdf",
+      "resolved_url": "https://www.ssa.gov/OACT/TRSUM/tr25summary.pdf",
+      "title": "Status of the Social Security and Medicare Programs",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:09.309816+00:00",
+      "archive_sha256": "48fbabd98fb12cde1895dc4010a53f1bb35d9e77c2a820ad7083ff1e754f8912",
+      "archive_path": "jobs/9ada1257d3b866238bbe7c7c/48fbabd98fb12cde1895dc4010a53f1bb35d9e77c2a820ad7083ff1e754f8912.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-b1ac27d5d5e44752605ff9b3",
+      "url": "https://www.congress.gov/crs-product/IF10426",
+      "resolved_url": "https://www.congress.gov/crs-product/IF10426",
+      "title": "Social Security Overview | Congress.gov | Library of Congress",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:09.309910+00:00",
+      "archive_sha256": "6dcb254a831e2c493daff055055ea6dce33915ca812b37241ac91b22b6f0fa69",
+      "archive_path": "jobs/9ada1257d3b866238bbe7c7c/6dcb254a831e2c493daff055055ea6dce33915ca812b37241ac91b22b6f0fa69.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-60a4939e9edbd8929c648341",
+      "url": "https://www.npr.org/2025/11/02/nx-s1-5591125/snap-benefits-have-now-been-halted-food-banks-across-the-country-are-stepping-up",
+      "resolved_url": "https://www.npr.org/2025/11/02/nx-s1-5591125/snap-benefits-have-now-been-halted-food-banks-across-the-country-are-stepping-up",
+      "title": "SNAP benefits have now been halted. Food banks across the country are stepping up : NPR",
+      "published_date": "2025-11-02",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-11-02",
+        "latest": "2025-11-02"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:18.805918+00:00",
+      "archive_sha256": "36a5daf82d6556a449ff49a33ef5b7096c02d002e7bb0d1130007b18baf3c60b",
+      "archive_path": "jobs/9ada1257d3b866238bbe7c7c/36a5daf82d6556a449ff49a33ef5b7096c02d002e7bb0d1130007b18baf3c60b.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-4e6c67e90996277aac806f70",
+      "url": "https://apnews.com/article/government-shutdown-snap-food-states-6cef598c92000bdff8384a9da1bfd23c",
+      "resolved_url": "https://apnews.com/article/government-shutdown-snap-food-states-6cef598c92000bdff8384a9da1bfd23c",
+      "title": "States scramble to issue full SNAP benefits after shutdown ends | AP News",
+      "published_date": "2025-11-13",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-11-13",
+        "latest": "2025-11-13"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:18.806033+00:00",
+      "archive_sha256": "739b5257d609dc0334a634e709f041cf8d1d186d22ce5083a9099a75f47ce3d5",
+      "archive_path": "jobs/9ada1257d3b866238bbe7c7c/739b5257d609dc0334a634e709f041cf8d1d186d22ce5083a9099a75f47ce3d5.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-3e3364322d3162171d9c3eaf",
+      "url": "https://www.aarp.org/advocacy/government-shutdown-older-americans/",
+      "resolved_url": "https://www.aarp.org/advocacy/government-shutdown-older-americans/",
+      "title": "How the Government Shutdown Affects Older Americans",
+      "published_date": "2025-10-20",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-10-20",
+        "latest": "2025-10-20"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:18.806146+00:00",
+      "archive_sha256": "0cd65f8293eebee2bb4d7090d48565179c065e588525e0309b229401996b73b4",
+      "archive_path": "jobs/9ada1257d3b866238bbe7c7c/0cd65f8293eebee2bb4d7090d48565179c065e588525e0309b229401996b73b4.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "美国 2025 社会服务 福利体系 支付中断 覆盖崩溃 人类服务 极限",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "US 2025 Social Security Medicare SNAP benefits paid recipients services continue trustee report",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "2025 US safety net programs funding cuts shutdown SNAP benefits suspended service disruption nationwide",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "2025 Social Security Medicare benefits paid recipients SNAP restored full benefits safety net continues operating",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少可界定“极限”的量化阈值与长期观察数据；现有材料仅覆盖2025年短期停摆波动，无法判定缓冲功能是否已达或接近极限。",
+  "source_statuses": [
+    {
+      "url": "https://www.npr.org/2025/12/19/nx-s1-5619695/poverty-safety-net-programs-2025-chaos",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://prospect.org/2025/11/14/shutdown-is-over-snaps-struggles-arent/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.ssa.gov/OACT/TRSUM/tr25summary.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.congress.gov/crs-product/IF10426",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.npr.org/2025/11/02/nx-s1-5591125/snap-benefits-have-now-been-halted-food-banks-across-the-country-are-stepping-up",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://apnews.com/article/government-shutdown-snap-food-states-6cef598c92000bdff8384a9da1bfd23c",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.aarp.org/advocacy/government-shutdown-older-americans/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "对象为美国社会服务/人类服务体系的整体缓冲功能是否已达极限；保留原文条件“美国社会持续制造越来越多否定力量、服务只能转化不能消除”和开放期限“总有一天”。可观察口径：主要福利/社会服务是否出现整体性支付中断、覆盖崩溃或制度失衡，而非单项基金赤字、单年预算压力或社会问题仍存在。反证包括：主要社会服务继续支付、覆盖未整体崩溃、缓冲机制仍在运转。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "6b927521a6d47bc0bc4291cfa1dd0f3be07b677d7b44bf3412f2296829501ee8"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "6a740e4cc220c1e29c68aa68c48ff935",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "0393a1f1059b361ee59ce7c795fd24eb",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "124ff4a7d1d6d93f2d210932c9a81ea2710e485bf8c97d9686abda8f73c22494"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "228559322c576e70bf136363ad02c07c",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "34cbb5f0e299f99295776271596164a81964a41e9df7c5ba7006ac83f0e47a21"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "07f886975ac2004cfe04394651193feb",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "4f51b2c5eecaccc02efd7d1ece2f6c1c",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "56f5c44ec600c47baf1d9ea01c8fe615abc1f06dcaa48b07c450cb0c4967582b"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "71cc07936d98e55daf3aff66efd9f45a",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "fbc240e267c8add4b2ce241561c5f1456d928bcc310bff13c4add1908a7498be"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "9c550bd533bf8dee7f32d7f446631f8b7281022c1d9a229295eab91eb0f228da"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-71359ce34658d6db8f93",
+        "source_bytes": 199,
+        "shown_bytes": 199,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-394c925dc249717933d2",
+        "source_bytes": 127,
+        "shown_bytes": 127,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-c0c8213343a393e3eaea",
+        "source_bytes": 125,
+        "shown_bytes": 125,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-d136604e6c2ad68bc44a",
+        "source_bytes": 155,
+        "shown_bytes": 155,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-5ffa82b30d467a7de320b2c0",
+        "source_bytes": 12014,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-358b2ec3e5ca615ad49c9a94",
+        "source_bytes": 9530,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-8d7640cdaef0b666f3e8f627",
+        "source_bytes": 12066,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-b1ac27d5d5e44752605ff9b3",
+        "source_bytes": 12011,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-60a4939e9edbd8929c648341",
+        "source_bytes": 5809,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-4e6c67e90996277aac806f70",
+        "source_bytes": 659,
+        "shown_bytes": 659,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-3e3364322d3162171d9c3eaf",
+        "source_bytes": 12417,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-71359ce34658d6db8f93",
+        "source_bytes": 199,
+        "shown_bytes": 199,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-394c925dc249717933d2",
+        "source_bytes": 127,
+        "shown_bytes": 127,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-c0c8213343a393e3eaea",
+        "source_bytes": 125,
+        "shown_bytes": 125,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-d136604e6c2ad68bc44a",
+        "source_bytes": 155,
+        "shown_bytes": 155,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-5ffa82b30d467a7de320b2c0",
+        "source_bytes": 12014,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-358b2ec3e5ca615ad49c9a94",
+        "source_bytes": 9530,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-8d7640cdaef0b666f3e8f627",
+        "source_bytes": 12066,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-b1ac27d5d5e44752605ff9b3",
+        "source_bytes": 12011,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-60a4939e9edbd8929c648341",
+        "source_bytes": 5809,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-4e6c67e90996277aac806f70",
+        "source_bytes": 659,
+        "shown_bytes": 659,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-3e3364322d3162171d9c3eaf",
+        "source_bytes": 12417,
+        "shown_bytes": 2090,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000179362-000179432",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000179362-000179432",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "future",
+      "scope": "对象为美国社会服务/人类服务体系的缓冲功能是否达到极限；原文条件为“持续制造越来越多否定力量、服务只能转化不能消除”，期限为开放式的“总有一天”。可观察口径：福利/社会服务是否出现整体性支付中断、覆盖崩溃或制度失衡，而非单项基金赤字、单年预算压力或社会问题仍存在。观察时段截至2026-11-09。",
+      "reason": "原文给出的是开放式未来判断（“总有一天会达到极限”），没有可界定的终点。现有材料显示2025年SNAP曾因政府停摆短暂中断后恢复、社会安全金与医保支付照常，属于阶段性波动而非体系整体崩溃，尚不足以证明或否定“缓冲功能达到极限”。",
+      "limitation": "“极限”缺乏可操作阈值，且原文条件（否定力量持续增多、服务只能转化不能消除）本身难以量化；2025年停摆中断是短期事件，不能等同于长期极限。",
+      "evidence_ids": [
+        "ev-60a4939e9edbd8929c648341",
+        "ev-4e6c67e90996277aac806f70",
+        "ev-3e3364322d3162171d9c3eaf",
+        "ev-5ffa82b30d467a7de320b2c0"
+      ],
+      "method": "由问题持续产生与缓冲能力有限推演机制极限",
+      "method_basis": "explicit",
+      "observation_end": "2026-11-09",
+      "future_time_text": "长此以往；总有一天",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-60a4939e9edbd8929c648341",
+          "relation": "boundary",
+          "quote": "SNAP benefits have now been officially halted due to the ongoing government shutdown, and some of the 42 million people who rely on the program to buy food are already feeling the consequences.",
+          "publication_date": "2025-11-02",
+          "observation_end": "2025-11-02",
+          "limitation": "显示单项福利短期中断，属阶段性波动，不能证明体系整体达到极限。"
+        },
+        {
+          "evidence_id": "ev-4e6c67e90996277aac806f70",
+          "relation": "counter",
+          "quote": "States scramble to send full SNAP food benefits to millions of people after government shutdown ends",
+          "publication_date": "2025-11-13",
+          "observation_end": "2025-11-13",
+          "limitation": "表明停摆结束后福利恢复发放，缓冲机制仍在运转，但仅为短期恢复。"
+        },
+        {
+          "evidence_id": "ev-3e3364322d3162171d9c3eaf",
+          "relation": "counter",
+          "quote": "Social Security and Medicare payments, however, are still going out as usual.",
+          "publication_date": "2025-10-20",
+          "observation_end": "2025-10-20",
+          "limitation": "说明主要社会服务在停摆期间仍照常支付，但只覆盖社保医保，未涵盖全部人类服务。"
+        },
+        {
+          "evidence_id": "ev-5ffa82b30d467a7de320b2c0",
+          "relation": "boundary",
+          "quote": "Local anti-poverty groups have had to scramble and scale back this year as the Trump administration targeted safety-net programs.",
+          "publication_date": "2025-12-29",
+          "observation_end": "2025-12-29",
+          "limitation": "显示地方扶贫机构承压，但为地方层面描述，不能代表全国体系整体崩溃。"
+        }
+      ],
+      "remaining_gap": "缺少可界定“极限”的量化阈值与长期观察数据；现有材料仅覆盖2025年短期停摆波动，无法判定缓冲功能是否已达或接近极限。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象为美国社会服务/人类服务体系的缓冲功能是否已达极限；保留原文条件“持续制造越来越多否定力量、服务只能转化不能消除”和开放期限“总有一天”。可观察口径：福利/社会服务是否出现整体性支付中断、覆盖崩溃或制度失衡，而非单项基金赤字、单年预算压力或社会问题仍存在。反证包括：主要社会服务继续支付、覆盖未整体崩溃、缓冲机制仍在运转。",
+  "elapsed_seconds": 24.707,
+  "completed_at": "2026-11-09T10:34:26.100337+00:00"
+}

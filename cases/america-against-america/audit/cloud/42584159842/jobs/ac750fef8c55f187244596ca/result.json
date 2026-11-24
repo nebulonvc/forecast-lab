@@ -1,0 +1,696 @@
+{
+  "claim_id": "txt-1c4066fc0c-000188277-000188300",
+  "version": "search-verifier-v1",
+  "input_sha256": "fba119d8bcc5581479b8c3a378013e04c0df946668fbef9bb68872b792a7de96",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000188277-000188300",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "原文条件结构：前提A为作者所列美国教育潜在危机（教育质量低、种族/资源分隔、青少年吸毒率高）在1991年后是否仍未解决；后果B为这些危机若未解决是否“成为一大问题”。观察口径：NAEP阅读/数学长期成绩与低端学习困难、GAO学校族裔与资源分隔规模、CDC青少年物质使用趋势；后果B需以全国性重大教育政策议题或可比的严重性指标操作化。观察期至2025-01-29。",
+    "reason": "前提A有部分证据：NAEP阅读2024年继续下降、GAO显示学校族裔与资源分隔持续，说明教育质量与分隔危机未解决；但CDC 2013—2023青少年物质使用长期下降，说明A中“吸毒率高”这一指标有所缓解，A呈混合状态。后果B“成为一大问题”缺少直接操作化证据（如全国性政策议程、立法或严重性指标），现有材料只覆盖A的分项，不能据此确认B已实现或未实现。",
+    "limitation": "关键修订：不再把CDC物质使用下降当作后果B的反向分项，也不以A的分项方向不一致判部分符合；改为分开核对A与B，因B缺可操作化证据而暂无法判断。原文未给量化阈值或期限，“一大问题”的终局严重性难以精确操作化。",
+    "evidence_ids": [
+      "ev-25bc950bd3b538d0794a257f",
+      "ev-1f641c1a4bfa175fa13c6977",
+      "prior-0d68c305ab9bd53ba409",
+      "ev-8fe6410b0e4fe0a64cca9032",
+      "ev-5370b35df27f89c0e418c7a1",
+      "prior-25a598579f8c1f94e4b5",
+      "ev-ebf66dc44e3e8d7a19bbe9d4"
+    ],
+    "method": "从已观察教育危机外推累积后果",
+    "method_basis": "explicit",
+    "observation_end": "2025-01-29",
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-25bc950bd3b538d0794a257f",
+        "relation": "support",
+        "quote": "The Nation's Report Card released today shows continued declines in reading for U.S. students, compounding a decline in the nation’s reading scores that started prior to the pandemic.",
+        "publication_date": "2025-01-29",
+        "observation_end": "2024-03-31",
+        "limitation": "仅覆盖阅读成绩，支持前提A中教育质量危机未解决，不直接测量后果B的政策议题化程度。"
+      },
+      {
+        "evidence_id": "ev-1f641c1a4bfa175fa13c6977",
+        "relation": "boundary",
+        "quote": "The average reading score for fourth-grade students in 2024 was lower by two points compared to 2022, but was not significantly different in comparison to the first reading assessment in 1992.",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "与1992年无显著差异，说明长期并非单向恶化；日期未知，且不涉及后果B。"
+      },
+      {
+        "evidence_id": "prior-0d68c305ab9bd53ba409",
+        "relation": "support",
+        "quote": "GAO分析：2020—2021约1850万学生在75%以上同一种族/族裔学校，超过总数三分之一；学区分离后新学区更富且白人/亚裔占比更高，资源和种族分隔持续。",
+        "publication_date": "2022-07-14",
+        "observation_end": "2021-06-30",
+        "limitation": "为2020—2021学年截面，支持前提A中分隔危机持续，不能单独证明此后趋势或后果B。"
+      },
+      {
+        "evidence_id": "ev-8fe6410b0e4fe0a64cca9032",
+        "relation": "support",
+        "quote": "More than a third of students (about 18.5 million of them) attended a predominantly same-race/ethnicity school during the 2020-21 school year, the report finds.",
+        "publication_date": "2022-07-14",
+        "observation_end": "2021-06-30",
+        "limitation": "新闻报道转述GAO报告，非原始统计全文；仅支持前提A的分隔指标。"
+      },
+      {
+        "evidence_id": "ev-5370b35df27f89c0e418c7a1",
+        "relation": "counter",
+        "quote": "From 2013 to 2023, 10-year trends were similar to what data showed in 2021. There were decreases in students' use of substances.",
+        "publication_date": "2025-02-07",
+        "observation_end": "2023-12-31",
+        "limitation": "物质使用下降说明前提A中“吸毒率高”这一指标有所缓解，不构成后果B未实现的证据；报告同时指出暴力与心理健康风险上升。"
+      },
+      {
+        "evidence_id": "prior-25a598579f8c1f94e4b5",
+        "relation": "counter",
+        "quote": "CDC2013—2023 YRBS综述：目前饮酒、使用大麻、曾用选定非法药物及曾滥用处方阿片等长期趋势改善；校园暴力与部分心理健康风险方向不同。",
+        "publication_date": null,
+        "observation_end": "2023-12-31",
+        "limitation": "仅覆盖部分物质类别，日期未知；同样只作用于前提A的吸毒指标，不直接测量后果B。"
+      },
+      {
+        "evidence_id": "ev-ebf66dc44e3e8d7a19bbe9d4",
+        "relation": "boundary",
+        "quote": "Average scores for 9-year-olds in 2025 increased by 4 points in both math and reading compared to 2022, the last time these tests were administered.",
+        "publication_date": null,
+        "observation_end": "2025-12-31",
+        "limitation": "9岁长期趋势出现改善，与主NAEP阅读下降方向不同，显示口径差异；日期未知，且不涉及后果B。"
+      }
+    ],
+    "remaining_gap": "缺少将后果B“成为一大问题”直接操作化的全国性政策议程、立法或严重性指标证据；前提A各分项方向不一致（质量与分隔未解决、物质使用改善），A整体状态与B是否实现均无法确定。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000188277-000188300",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象为作者所列美国教育潜在危机（教育质量低、种族/资源分隔、青少年吸毒）在1991年后至2024/2025年是否仍未解决并成为全国性重大教育政策问题；观察口径：NAEP阅读/数学长期成绩与低端学习困难、GAO学校族裔与资源分隔规模、CDC青少年药物使用趋势。",
+    "reason": "观察窗口内，NAEP阅读2024年继续下降、低端学生困难扩大，GAO显示学校族裔与资源分隔持续，符合“教育质量与分隔危机未解决”的方向；但CDC 2013—2023青少年物质使用长期下降，与“青少年吸毒危机恶化”方向相反，故为部分符合。",
+    "limitation": "原文为条件性累积后果判断，未给出量化阈值或期限；各分项方向不一致，且“成为一大问题”的终局严重性无法精确操作化。",
+    "evidence_ids": [
+      "ev-25bc950bd3b538d0794a257f",
+      "ev-1f641c1a4bfa175fa13c6977",
+      "prior-0d68c305ab9bd53ba409",
+      "ev-8fe6410b0e4fe0a64cca9032",
+      "ev-5370b35df27f89c0e418c7a1",
+      "prior-25a598579f8c1f94e4b5",
+      "ev-ebf66dc44e3e8d7a19bbe9d4"
+    ],
+    "method": "从已观察教育危机外推累积后果",
+    "method_basis": "explicit",
+    "observation_end": "2025-01-29",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-25bc950bd3b538d0794a257f",
+        "relation": "support",
+        "quote": "The Nation's Report Card released today shows continued declines in reading for U.S. students, compounding a decline in the nation’s reading scores that started prior to the pandemic.",
+        "publication_date": "2025-01-29",
+        "observation_end": "2024-03-31",
+        "limitation": "仅覆盖阅读成绩，未直接测量教育质量全貌或政策议题化程度。"
+      },
+      {
+        "evidence_id": "ev-1f641c1a4bfa175fa13c6977",
+        "relation": "support",
+        "quote": "The average reading score for fourth-grade students in 2024 was lower by two points compared to 2022, but was not significantly different in comparison to the first reading assessment in 1992.",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "与1992年无显著差异，说明长期并非单向恶化；日期未知。"
+      },
+      {
+        "evidence_id": "prior-0d68c305ab9bd53ba409",
+        "relation": "support",
+        "quote": "GAO分析：2020—2021约1850万学生在75%以上同一种族/族裔学校，超过总数三分之一；学区分离后新学区更富且白人/亚裔占比更高，资源和种族分隔持续。",
+        "publication_date": "2022-07-14",
+        "observation_end": "2021-06-30",
+        "limitation": "为2020—2021学年截面，不能单独证明此后趋势。"
+      },
+      {
+        "evidence_id": "ev-8fe6410b0e4fe0a64cca9032",
+        "relation": "support",
+        "quote": "More than a third of students (about 18.5 million of them) attended a predominantly same-race/ethnicity school during the 2020-21 school year, the report finds.",
+        "publication_date": "2022-07-14",
+        "observation_end": "2021-06-30",
+        "limitation": "新闻报道转述GAO报告，非原始统计全文。"
+      },
+      {
+        "evidence_id": "ev-5370b35df27f89c0e418c7a1",
+        "relation": "counter",
+        "quote": "From 2013 to 2023, 10-year trends were similar to what data showed in 2021. There were decreases in students' use of substances.",
+        "publication_date": "2025-02-07",
+        "observation_end": "2023-12-31",
+        "limitation": "物质使用下降与原文“青少年吸毒率很高”的危机恶化方向相反；但报告同时指出暴力与心理健康风险上升。"
+      },
+      {
+        "evidence_id": "prior-25a598579f8c1f94e4b5",
+        "relation": "counter",
+        "quote": "CDC2013—2023 YRBS综述：目前饮酒、使用大麻、曾用选定非法药物及曾滥用处方阿片等长期趋势改善；校园暴力与部分心理健康风险方向不同。",
+        "publication_date": null,
+        "observation_end": "2023-12-31",
+        "limitation": "仅覆盖部分物质类别，且日期未知。"
+      },
+      {
+        "evidence_id": "ev-ebf66dc44e3e8d7a19bbe9d4",
+        "relation": "boundary",
+        "quote": "Average scores for 9-year-olds in 2025 increased by 4 points in both math and reading compared to 2022, the last time these tests were administered.",
+        "publication_date": null,
+        "observation_end": "2025-12-31",
+        "limitation": "9岁长期趋势出现改善，与主NAEP阅读下降方向不同，显示口径差异；日期未知。"
+      }
+    ],
+    "remaining_gap": "缺少将“教育危机成为全国性重大政策问题”直接操作化的政策议程或立法证据；各分项指标方向不一致，终局严重性无法量化。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-f09f0f108e7c7c957762",
+      "url": "https://www.nagb.gov/content/dam/nagb/en/documents/newsroom/press-releases/2025/naep2024-pressrelease-final.pdf",
+      "title": "ev-naep",
+      "published_date": "2025-01-29",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-naep",
+      "archive_sha256": "c1bea2acfb8c0f7ac66f649f5fc6cc18c6a1d7d3c1589cd5c5c0ef4bb7b7d114",
+      "archive_path": "data/sources/c1bea2acfb8c0f7ac66f649f5fc6cc18c6a1d7d3c1589cd5c5c0ef4bb7b7d114.pdf",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-398d6cca944740e1f4a1",
+      "url": "https://www.ncses.nsf.gov/pubs/nsbsep20261/figure/11",
+      "title": "ev-r2-l2-nsf-education",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-nsf-education",
+      "archive_sha256": "769bdb1e6d59a7fccc697cc173fa0963ae15f10519328421e4af09a58ee55328",
+      "archive_path": "data/sources/r2-l2-nsf-education.html",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-0d68c305ab9bd53ba409",
+      "url": "https://www.gao.gov/products/gao-22-104737",
+      "title": "ev-r2-l2-gao-schools",
+      "published_date": "2022-07-14",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-gao-schools",
+      "archive_sha256": "f449ae651c62fffeffdcf0ad1ef70a4af0fa29408f18981be87b4aa6c4852ee8",
+      "archive_path": "data/sources/r2-l2-gao-schools-web-notes.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-25a598579f8c1f94e4b5",
+      "url": "https://www.cdc.gov/yrbs/dstr/pdf/YRBS-2023-Data-Summary-Trend-Report.pdf",
+      "title": "ev-r2-l2-cdc-drugs",
+      "published_date": null,
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-cdc-drugs",
+      "archive_sha256": "c5e3c4111195ea65fa67e64c2f226208d4d358fff910f6ba96674190d100ed10",
+      "archive_path": "data/sources/r2-l2-cdc-drugs-web-notes.json",
+      "date_status": "unknown",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-25bc950bd3b538d0794a257f",
+      "url": "https://www.nagb.gov/news-and-events/news-releases/2025/nations-report-card-decline-in-reading-progress-in-math.html",
+      "resolved_url": "https://www.nagb.gov/news-and-events/news-releases/2025/nations-report-card-decline-in-reading-progress-in-math.html",
+      "title": "The Nation's Report Card Shows Declines in Reading, Some Progress in 4th Grade Math",
+      "published_date": "2025-01-29",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:31.489593+00:00",
+      "archive_sha256": "567b5fa058850c38962278d4daa44bfde79402e58ef64960d1a174ec2647157b",
+      "archive_path": "jobs/ac750fef8c55f187244596ca/567b5fa058850c38962278d4daa44bfde79402e58ef64960d1a174ec2647157b.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-1f641c1a4bfa175fa13c6977",
+      "url": "https://www.nationsreportcard.gov/reports/reading/2024/g4_8/national-trends/",
+      "resolved_url": "https://www.nationsreportcard.gov/reports/reading/2024/g4_8/national-trends/",
+      "title": "NAEP Reading: National Trends and Student Skills",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:31.489755+00:00",
+      "archive_sha256": "ee7ac374db88c732541cd321580d07def8c4676734ef7ed666594476acc218e8",
+      "archive_path": "jobs/ac750fef8c55f187244596ca/ee7ac374db88c732541cd321580d07def8c4676734ef7ed666594476acc218e8.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-5370b35df27f89c0e418c7a1",
+      "url": "https://www.cdc.gov/yrbs/dstr/",
+      "resolved_url": "https://www.cdc.gov/yrbs/dstr/",
+      "title": "YRBS Data Summary & Trends Report | Youth Risk Behavior Surveillance System (YRBSS) | CDC",
+      "published_date": "2025-02-07",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:31.489902+00:00",
+      "archive_sha256": "87201230d5161bebb2d920bd9373d8b4bb94e4f9587ec5dd57247d9fcd84e829",
+      "archive_path": "jobs/ac750fef8c55f187244596ca/87201230d5161bebb2d920bd9373d8b4bb94e4f9587ec5dd57247d9fcd84e829.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-8fe6410b0e4fe0a64cca9032",
+      "url": "https://www.npr.org/2022/07/14/1111060299/school-segregation-report",
+      "resolved_url": "https://www.npr.org/2022/07/14/1111060299/school-segregation-report",
+      "title": "U.S. schools remain highly segregated, government report finds : NPR",
+      "published_date": "2022-07-14",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:40.250532+00:00",
+      "archive_sha256": "e3e4c673e0acb16b971ebb19e0bd6f4829f5112edf209b89075faca37c4a3a98",
+      "archive_path": "jobs/ac750fef8c55f187244596ca/e3e4c673e0acb16b971ebb19e0bd6f4829f5112edf209b89075faca37c4a3a98.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ebf66dc44e3e8d7a19bbe9d4",
+      "url": "https://www.nagb.gov/naep/long-term-trend.html",
+      "resolved_url": "https://www.nagb.gov/naep/long-term-trend.html",
+      "title": "NAEP Long-Term Trend",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:40.250682+00:00",
+      "archive_sha256": "b86b5eed597d561ccbb0205e4fe2ce0d0e5345acba7e817a2d4fe81893a4264d",
+      "archive_path": "jobs/ac750fef8c55f187244596ca/b86b5eed597d561ccbb0205e4fe2ce0d0e5345acba7e817a2d4fe81893a4264d.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-730c0cb1301bc5a7128e6f82",
+      "url": "https://nces.ed.gov/nationsreportcard/ltt/",
+      "resolved_url": "https://nces.ed.gov/nationsreportcard/ltt/",
+      "title": "Student Groups and Trend Reports - Long-Term Trends | NAEP",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:40.250819+00:00",
+      "archive_sha256": "ee7ac6e429380c1d27eb28274729786aff10ff8669f971a51ec72bb821c586ed",
+      "archive_path": "jobs/ac750fef8c55f187244596ca/ee7ac6e429380c1d27eb28274729786aff10ff8669f971a51ec72bb821c586ed.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "NAEP 2024 reading scores decline long-term trends achievement gap United States",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "CDC YRBS 2023 adolescent substance use trends decline United States",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "GAO 2022 K-12 education segregation school districts racial economic isolation report",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "NAEP long-term trend reading mathematics 2024 improvement since 1990s United States",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少将后果B“成为一大问题”直接操作化的全国性政策议程、立法或严重性指标证据；前提A各分项方向不一致（质量与分隔未解决、物质使用改善），A整体状态与B是否实现均无法确定。",
+  "source_statuses": [
+    {
+      "url": "https://www.nagb.gov/news-and-events/news-releases/2025/nations-report-card-decline-in-reading-progress-in-math.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.nationsreportcard.gov/reports/reading/2024/g4_8/national-trends/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.cdc.gov/yrbs/dstr/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.npr.org/2022/07/14/1111060299/school-segregation-report",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.nagb.gov/naep/long-term-trend.html",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://nces.ed.gov/nationsreportcard/ltt/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "e61185cf76ed387dabef9bfba2dd671d772a918da2fd41a3cc8f8a4713734ce4"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "4c9a2d001608f94c7a162e4127582a96",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "6c80e0350fc4d64c032ca8c0157bd833",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "178392a81e69e9a0135af9b36f88ccea189e66b72af16f73d751f143e69ad46c"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "1378259338f490eb4d79decd5958ec59",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "c9354466823cfaa2007d02d42ab4089990c509b5fb8e3103d1fef1681d65aa31"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "4266d824f6ac207835d511022c9d49df",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "515fcdac367730fff6ad652359ae6332",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "92db582a34216b35802866c2e1730353e73b399ec0a426f14b9c10053c196061"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "4e41ffa3436163aca3533f5cf0c90e21",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "db703b15ca031aecb0f167fef7143120bceb8a3eb446063d56590d282e076905"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "577b65ce6bce96b9bdb42e5df3cd329b7c6d2ad93b9b165f81748b4172b6e1a7"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "a5f0d76cf64a90387017bde2f7234e39da8cdb2af7a76f383aafea32480127ba"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "e4392edd4640f1371541ee7acd3d1ca98b670f3981b76fa1c7eb527d9db73b79"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000188277-000188300",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原文的条件是“教育中潜在的危机，如不解决”，后果是“将成为一大问题”。建议把“青少年吸毒危机恶化”当作后果B的一个分项，并用CDC物质使用下降来判该分项方向相反；但原文前提A只列“青少年吸毒率很高”，并未预言吸毒率将持续恶化。物质使用下降至多说明前提A中的这一指标有所缓解，不能据此认定后果B的某个分项未实现。",
+          "source_quote": "教育中潜在的危机，\n如不解决，将成为一大问题。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议以“各分项方向不一致”为由判“部分符合”，但未按原文结构分别确认前提A（教育质量低、种族/资源分隔、青少年吸毒率高等危机是否仍未解决）与后果B（是否已成为一大问题）。CDC物质使用下降被当作后果B的反向分项，属于把前提A的局部改善误当成后果B未实现；判部分符合必须指出后果B哪些具体部分实现、哪些未实现及其直接证据，建议未做到。",
+          "source_quote": "观察窗口内，NAEP阅读2024年继续下降、低端学生困难扩大，GAO显示学校族裔与资源分隔持续，符合“教育质量与分隔危机未解决”的方向；但CDC 2013—2023青少年物质使用长期下降，与“青少年吸毒危机恶化”方向相反，故为部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需按原文条件结构重写判断：先确认前提A所列教育质量低、种族/资源分隔、青少年吸毒率高等危机在观察期内是否仍未解决（物质使用下降只能作为A中该指标的缓解），再单独判断后果B“成为一大问题”是否实现；若B缺少可操作化证据，应保留具体未定，而不是以A的分项方向不一致判部分符合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000188277-000188300",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000188277-000188300",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象为作者所列美国教育潜在危机（教育质量低、种族/资源分隔、青少年吸毒）在1991年后至2024/2025年是否仍未解决并成为全国性重大教育政策问题；观察口径：NAEP阅读/数学长期成绩与低端学习困难、GAO学校族裔与资源分隔规模、CDC青少年药物使用趋势。",
+      "reason": "观察窗口内，NAEP阅读2024年继续下降、低端学生困难扩大，GAO显示学校族裔与资源分隔持续，符合“教育质量与分隔危机未解决”的方向；但CDC 2013—2023青少年物质使用长期下降，与“青少年吸毒危机恶化”方向相反，故为部分符合。",
+      "limitation": "原文为条件性累积后果判断，未给出量化阈值或期限；各分项方向不一致，且“成为一大问题”的终局严重性无法精确操作化。",
+      "evidence_ids": [
+        "ev-25bc950bd3b538d0794a257f",
+        "ev-1f641c1a4bfa175fa13c6977",
+        "prior-0d68c305ab9bd53ba409",
+        "ev-8fe6410b0e4fe0a64cca9032",
+        "ev-5370b35df27f89c0e418c7a1",
+        "prior-25a598579f8c1f94e4b5",
+        "ev-ebf66dc44e3e8d7a19bbe9d4"
+      ],
+      "method": "从已观察教育危机外推累积后果",
+      "method_basis": "explicit",
+      "observation_end": "2025-01-29",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-25bc950bd3b538d0794a257f",
+          "relation": "support",
+          "quote": "The Nation's Report Card released today shows continued declines in reading for U.S. students, compounding a decline in the nation’s reading scores that started prior to the pandemic.",
+          "publication_date": "2025-01-29",
+          "observation_end": "2024-03-31",
+          "limitation": "仅覆盖阅读成绩，未直接测量教育质量全貌或政策议题化程度。"
+        },
+        {
+          "evidence_id": "ev-1f641c1a4bfa175fa13c6977",
+          "relation": "support",
+          "quote": "The average reading score for fourth-grade students in 2024 was lower by two points compared to 2022, but was not significantly different in comparison to the first reading assessment in 1992.",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "与1992年无显著差异，说明长期并非单向恶化；日期未知。"
+        },
+        {
+          "evidence_id": "prior-0d68c305ab9bd53ba409",
+          "relation": "support",
+          "quote": "GAO分析：2020—2021约1850万学生在75%以上同一种族/族裔学校，超过总数三分之一；学区分离后新学区更富且白人/亚裔占比更高，资源和种族分隔持续。",
+          "publication_date": "2022-07-14",
+          "observation_end": "2021-06-30",
+          "limitation": "为2020—2021学年截面，不能单独证明此后趋势。"
+        },
+        {
+          "evidence_id": "ev-8fe6410b0e4fe0a64cca9032",
+          "relation": "support",
+          "quote": "More than a third of students (about 18.5 million of them) attended a predominantly same-race/ethnicity school during the 2020-21 school year, the report finds.",
+          "publication_date": "2022-07-14",
+          "observation_end": "2021-06-30",
+          "limitation": "新闻报道转述GAO报告，非原始统计全文。"
+        },
+        {
+          "evidence_id": "ev-5370b35df27f89c0e418c7a1",
+          "relation": "counter",
+          "quote": "From 2013 to 2023, 10-year trends were similar to what data showed in 2021. There were decreases in students' use of substances.",
+          "publication_date": "2025-02-07",
+          "observation_end": "2023-12-31",
+          "limitation": "物质使用下降与原文“青少年吸毒率很高”的危机恶化方向相反；但报告同时指出暴力与心理健康风险上升。"
+        },
+        {
+          "evidence_id": "prior-25a598579f8c1f94e4b5",
+          "relation": "counter",
+          "quote": "CDC2013—2023 YRBS综述：目前饮酒、使用大麻、曾用选定非法药物及曾滥用处方阿片等长期趋势改善；校园暴力与部分心理健康风险方向不同。",
+          "publication_date": null,
+          "observation_end": "2023-12-31",
+          "limitation": "仅覆盖部分物质类别，且日期未知。"
+        },
+        {
+          "evidence_id": "ev-ebf66dc44e3e8d7a19bbe9d4",
+          "relation": "boundary",
+          "quote": "Average scores for 9-year-olds in 2025 increased by 4 points in both math and reading compared to 2022, the last time these tests were administered.",
+          "publication_date": null,
+          "observation_end": "2025-12-31",
+          "limitation": "9岁长期趋势出现改善，与主NAEP阅读下降方向不同，显示口径差异；日期未知。"
+        }
+      ],
+      "remaining_gap": "缺少将“教育危机成为全国性重大政策问题”直接操作化的政策议程或立法证据；各分项指标方向不一致，终局严重性无法量化。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000188277-000188300",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "原文条件结构：前提A为作者所列美国教育潜在危机（教育质量低、种族/资源分隔、青少年吸毒率高）在1991年后是否仍未解决；后果B为这些危机若未解决是否“成为一大问题”。观察口径：NAEP阅读/数学长期成绩与低端学习困难、GAO学校族裔与资源分隔规模、CDC青少年物质使用趋势；后果B需以全国性重大教育政策议题或可比的严重性指标操作化。观察期至2025-01-29。",
+      "reason": "前提A有部分证据：NAEP阅读2024年继续下降、GAO显示学校族裔与资源分隔持续，说明教育质量与分隔危机未解决；但CDC 2013—2023青少年物质使用长期下降，说明A中“吸毒率高”这一指标有所缓解，A呈混合状态。后果B“成为一大问题”缺少直接操作化证据（如全国性政策议程、立法或严重性指标），现有材料只覆盖A的分项，不能据此确认B已实现或未实现。",
+      "limitation": "关键修订：不再把CDC物质使用下降当作后果B的反向分项，也不以A的分项方向不一致判部分符合；改为分开核对A与B，因B缺可操作化证据而暂无法判断。原文未给量化阈值或期限，“一大问题”的终局严重性难以精确操作化。",
+      "evidence_ids": [
+        "ev-25bc950bd3b538d0794a257f",
+        "ev-1f641c1a4bfa175fa13c6977",
+        "prior-0d68c305ab9bd53ba409",
+        "ev-8fe6410b0e4fe0a64cca9032",
+        "ev-5370b35df27f89c0e418c7a1",
+        "prior-25a598579f8c1f94e4b5",
+        "ev-ebf66dc44e3e8d7a19bbe9d4"
+      ],
+      "method": "从已观察教育危机外推累积后果",
+      "method_basis": "explicit",
+      "observation_end": "2025-01-29",
+      "future_time_text": "",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-25bc950bd3b538d0794a257f",
+          "relation": "support",
+          "quote": "The Nation's Report Card released today shows continued declines in reading for U.S. students, compounding a decline in the nation’s reading scores that started prior to the pandemic.",
+          "publication_date": "2025-01-29",
+          "observation_end": "2024-03-31",
+          "limitation": "仅覆盖阅读成绩，支持前提A中教育质量危机未解决，不直接测量后果B的政策议题化程度。"
+        },
+        {
+          "evidence_id": "ev-1f641c1a4bfa175fa13c6977",
+          "relation": "boundary",
+          "quote": "The average reading score for fourth-grade students in 2024 was lower by two points compared to 2022, but was not significantly different in comparison to the first reading assessment in 1992.",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "与1992年无显著差异，说明长期并非单向恶化；日期未知，且不涉及后果B。"
+        },
+        {
+          "evidence_id": "prior-0d68c305ab9bd53ba409",
+          "relation": "support",
+          "quote": "GAO分析：2020—2021约1850万学生在75%以上同一种族/族裔学校，超过总数三分之一；学区分离后新学区更富且白人/亚裔占比更高，资源和种族分隔持续。",
+          "publication_date": "2022-07-14",
+          "observation_end": "2021-06-30",
+          "limitation": "为2020—2021学年截面，支持前提A中分隔危机持续，不能单独证明此后趋势或后果B。"
+        },
+        {
+          "evidence_id": "ev-8fe6410b0e4fe0a64cca9032",
+          "relation": "support",
+          "quote": "More than a third of students (about 18.5 million of them) attended a predominantly same-race/ethnicity school during the 2020-21 school year, the report finds.",
+          "publication_date": "2022-07-14",
+          "observation_end": "2021-06-30",
+          "limitation": "新闻报道转述GAO报告，非原始统计全文；仅支持前提A的分隔指标。"
+        },
+        {
+          "evidence_id": "ev-5370b35df27f89c0e418c7a1",
+          "relation": "counter",
+          "quote": "From 2013 to 2023, 10-year trends were similar to what data showed in 2021. There were decreases in students' use of substances.",
+          "publication_date": "2025-02-07",
+          "observation_end": "2023-12-31",
+          "limitation": "物质使用下降说明前提A中“吸毒率高”这一指标有所缓解，不构成后果B未实现的证据；报告同时指出暴力与心理健康风险上升。"
+        },
+        {
+          "evidence_id": "prior-25a598579f8c1f94e4b5",
+          "relation": "counter",
+          "quote": "CDC2013—2023 YRBS综述：目前饮酒、使用大麻、曾用选定非法药物及曾滥用处方阿片等长期趋势改善；校园暴力与部分心理健康风险方向不同。",
+          "publication_date": null,
+          "observation_end": "2023-12-31",
+          "limitation": "仅覆盖部分物质类别，日期未知；同样只作用于前提A的吸毒指标，不直接测量后果B。"
+        },
+        {
+          "evidence_id": "ev-ebf66dc44e3e8d7a19bbe9d4",
+          "relation": "boundary",
+          "quote": "Average scores for 9-year-olds in 2025 increased by 4 points in both math and reading compared to 2022, the last time these tests were administered.",
+          "publication_date": null,
+          "observation_end": "2025-12-31",
+          "limitation": "9岁长期趋势出现改善，与主NAEP阅读下降方向不同，显示口径差异；日期未知，且不涉及后果B。"
+        }
+      ],
+      "remaining_gap": "缺少将后果B“成为一大问题”直接操作化的全国性政策议程、立法或严重性指标证据；前提A各分项方向不一致（质量与分隔未解决、物质使用改善），A整体状态与B是否实现均无法确定。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象为美国教育中作者列出的潜在危机（教育质量低、种族/资源分隔、青少年吸毒）在1991年后是否仍未解决并成为全国性重大教育政策问题；可观察口径包括NAEP长期成绩与低端学习困难、学校族裔与资源分隔的规模、青少年药物使用趋势及联邦/州政策关注；反证包括各项指标显著持续改善或危机不再构成公共政策议题。",
+  "elapsed_seconds": 40.974,
+  "completed_at": "2026-11-09T08:13:01.579609+00:00"
+}

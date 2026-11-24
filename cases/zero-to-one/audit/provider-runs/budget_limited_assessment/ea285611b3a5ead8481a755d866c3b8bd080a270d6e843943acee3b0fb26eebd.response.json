@@ -1,0 +1,28 @@
+{
+  "id": "b7fcab6a-aa2e-4857-8a99-678ef2c71625",
+  "object": "chat.completion",
+  "created": 1794201441,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000023511-000023565\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为对未发生的过去选择（若当年留在最高法院）的反事实推测，非面向未来的可检验预测；无可观察时段。\",\"reason\":\"该句以“如果当年真的留在了最高法院”为条件，对未发生的过去路径作反事实设想，不构成对未来结果的预测。\",\"limitation\":\"反事实无法观测，且原文未给出可检验指标或期限；仅作排除记录。\",\"evidence_ids\":[],\"method\":\"反事实推测\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4307,
+    "completion_tokens": 169,
+    "total_tokens": 4476,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3539
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

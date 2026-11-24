@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000579166-000579192",
+  "plan": {
+    "object": "不愿放下僭政的僭主。同段的尤维纳利斯诗把不幸的结局说成很少有人无伤无血地平静死去。",
+    "condition": "except by laying down his tyranny; which as none will do。对象是继续做僭主的人。主动交权之后病死，不算仍在僭政里的结局。",
+    "quantifier": "few escape。很少人逃得过，意思是大多数逃不过。这是原文已有的相对多少，不另造年数。一次暴死不能证明很少，一次善终也不能单独反驳；多数善终可以反驳很少。",
+    "result": "登记变化是 unhappy end。按同段的诗，是非平静、带伤带血的死，不是只要曾经遇险。",
+    "window": "1531至2026-11-15。法拉里斯和狄奥尼修斯是出版前的例子。",
+    "counterevidence_needed": "继续掌权的僭主里，大多数以老病而不是被杀结束；或者大多数确实不得善终。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "most modern dictators died violently or were overthrown not a peaceful death",
+      "counter_query": "dictator died peacefully of natural causes while still in power"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://www.livescience.com/41224-how-dictators-die.html"],
+    "dropped": "仍在位或主动退休的人还没有结局，不拿来充数。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-livescience-dictator-deaths"],
+    "scope": "对象是不愿放下僭政的僭主。few 要有样本人数和分母。不幸结局按同段诗是无伤无血的平静死的反面。一个人不能代替大多数。",
+    "reason": "同段先说僭主除了放下僭政无法防备人们想把国家从僭主手里解放出来的心情，既然没有人肯放下，就很少逃得过不幸结局。紧接着的尤维纳利斯诗把这个结局说成很少无伤无血地平静死去。生活科学页写，独裁者和军阀更常死于年老或疾病，而不是死于民众或刺客；压迫性的好战者有百分之六十“幸福地过到最后”。这一页没有给出这百分之六十的人数和分母，也没有说他们是不肯放下僭政的僭主。好战比原文多出一个条件。年老或疾病只是和被刺客杀死相比更常见，没有写成无伤无血的平静死。斯大林1953年3月1日就寝、3月5日死在自己房里，墨索里尼1945年4月被枪杀，都是单个人，不能代替很少或多半。因此这条统计不能判定 few。",
+    "limitation": "页面更新于2022年8月17日。百分之六十出自2011年的书，但本页没有样本定义和分母。不再用这条统计维持错误。",
+    "method": "用同段的平静死亡对不幸结局。few 用多数是否逃过，不用单个人。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "压迫好战者没有人数和分母，也不是不肯放下僭政的僭主。年老疾病没有写成无伤无血。斯大林一个人不能代替 few。"
+  }
+}

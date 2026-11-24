@@ -1,0 +1,121 @@
+{
+  "id": "txt-5386516eaf-001764829-001765029",
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "人身长期下降，财产犯罪与后来的凶杀回升。"
+      },
+      {
+        "role": "counter",
+        "query": "人身长期下降，财产犯罪与后来的凶杀回升。"
+      }
+    ],
+    "note": "r3 新执行，见 audit/search-returns-r3/manifest.json。不是回填。"
+  },
+  "select": {
+    "urls": [
+      "https://ourworldindata.org/data-insights/homicide-rates-have-declined-dramatically-over-the-centuries"
+    ],
+    "reason": "只入选摘录已在存档、且日期不晚于 cutoff 的来源。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "id": "txt-5386516eaf-001764829-001765029",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "observation_end": "1992-12-31",
+    "scope": "文明社会的人身与财产安全会持续增加。",
+    "reason": "九国平均凶杀率从1880年代约2.4降到1950年代约0.8。同一作者写1950年到1990年代初欧洲多数国家凶杀回升。英格兰和威尔士的财产犯罪率从1960年代增到1980年代中期。人身安全有长期下降也有回升，财产安全在这段不是持续增加。",
+    "limitation": "没有把凶杀率当成财产安全。",
+    "evidence_ids": [
+      "ev-r3-eisner",
+      "ev-r3-eisner-up",
+      "ev-r3-property"
+    ],
+    "method": "新检索人身与财产两侧。不再用未在本次命中的旧凶杀页。",
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-r3-eisner",
+        "quote": "the average homicide rate is about 2.4 per 100,000 in the 1880s and drops to about 0.8 in the 1950s",
+        "relation": "support",
+        "limitation": "人身致死暴力长期下降。",
+        "observation_end": "1959-12-31",
+        "publication_date": null,
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "ev-r3-eisner-up",
+        "quote": "point to an upsurge of homicide rates throughout most of Europe",
+        "relation": "counter",
+        "limitation": "1950年后回升。",
+        "observation_end": "1992-12-31",
+        "publication_date": null,
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "ev-r3-property",
+        "quote": "a steady rate of growth in the rate of crime from the 1960s up to the mid-1980s",
+        "relation": "counter",
+        "limitation": "财产犯罪上升。",
+        "observation_end": "1992-12-31",
+        "publication_date": null,
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      }
+    ],
+    "remaining_gap": ""
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001764829-001765029",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-r3-eisner",
+        "ev-r3-eisner-up",
+        "ev-r3-property"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-r3-eisner",
+        "ev-r3-eisner-up",
+        "ev-r3-property"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "r3_execution": {
+    "new": true,
+    "executed_at": "2026-11-20T10:55:00Z",
+    "why": "人身长期下降，财产犯罪与后来的凶杀回升。",
+    "previous_verdict": "部分符合"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": "txt-5386516eaf-001922557-001922599",
+  "assess": {
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "id": "txt-5386516eaf-001922557-001922599",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "observation_end": "2000-12-31",
+    "scope": "人口相对就业的比例会缩小。",
+    "reason": "表内1950–60年人口与劳动力增长都是1.10；1960–2000年劳动力增长高于人口。表内更后的投影显示劳动力增长可以慢于人口。只把2000年以前的已发生数字用于观察。",
+    "limitation": "美国劳动力不是资本存量。",
+    "evidence_ids": [
+      "ev-r3-bls"
+    ],
+    "method": "新执行。观察终点停在2000年，不把表内2050年投影当已发生。",
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-r3-bls",
+        "quote": "Population growth ... 1.10 1.60 2.00 1.20 1.00",
+        "relation": "boundary",
+        "limitation": "到2000年的人口增长。",
+        "observation_end": "2000-12-31",
+        "publication_date": "2002-05",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-r3-bls",
+        "quote": "Labor force growth ... 1.10 1.70 2.60 1.60 1.10",
+        "relation": "support",
+        "limitation": "同期劳动力增长不更低。",
+        "observation_end": "2000-12-31",
+        "publication_date": "2002-05",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": ""
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001922557-001922599",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "revision_trail": {
+    "withdrawn_support": "ev-iab-population-capital",
+    "why": "资本密集度的模型结果不是人口对资本的历史比率。部分符合只保留就业对人口这一直接分项。",
+    "previous_reason": "人口下降时，对增长的负面影响被参与率和资本密集度的上升所缓和，符合人口相对资本变低。欧洲和日本的就业增长却没有跟上人口，所以相对就业并不普遍降低。"
+  },
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "2000年前多数十年劳动力更快。"
+      },
+      {
+        "role": "counter",
+        "query": "2000年前多数十年劳动力更快。"
+      }
+    ],
+    "note": "r3 新执行，见 audit/search-returns-r3/manifest.json。不是回填。"
+  },
+  "select": {
+    "urls": [
+      "https://www.bls.gov/opub/mlr/2002/06/art2full.pdf"
+    ],
+    "reason": "只采用就业与人口的直接比较。"
+  },
+  "r3_execution": {
+    "new": true,
+    "executed_at": "2026-11-20T10:55:00Z",
+    "why": "2000年前多数十年劳动力更快。",
+    "previous_verdict": "部分符合"
+  }
+}

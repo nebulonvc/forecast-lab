@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000606865-000606975",
+  "plan": {
+    "object": "针对两个统治者的密谋。原文要求同一时间在不同地点做成同样的事，或者分两次做就会互相妨碍。",
+    "condition": "against two rulers。必须是两个都是要杀或要打倒的统治者。只针对一个皇帝，不是这句。",
+    "quantifier": "almost hopeless。成功几乎无望，允许极少的成功。一次失败不能证明几乎无望；一次成功也不能单独把几乎无望判成错误。出版前的帕齐案不能计分。",
+    "result": "登记变化是 almost hopeless。结果是这种密谋成功的可能几乎没有。",
+    "window": "1531至2026-11-15。帕齐、希庇亚斯和萨提鲁斯是出版前的例子。",
+    "counterevidence_needed": "1531年之后多起针对两个统治者的密谋几乎都不成功；或者成功的次数多到不再是几乎无望。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "assassination plot against two joint rulers failed one of them survived after 1531",
+      "counter_query": "conspiracy killed both joint rulers at the same time and the plot succeeded"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [],
+    "dropped": "1478年帕齐只杀死朱利亚诺、洛伦佐逃生，早于1531年。1542年壬寅宫变只针对嘉靖一人。打开的未遂名单也是单个统治者。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "两个统治者必须都是对象。almost hopeless 不能用一次失败或一次出版前的失败来定。",
+    "reason": "支持检索回到的双头密谋是1478年的帕齐案，洛伦佐活了下来，但那在1531年之前。反对检索要找两个统治者同时被杀死并且密谋成功，回到的也是出版前的例子，或者只杀死一个法老、王位并没有按密谋转移。1542年宫女要勒死的是一个皇帝。1531年之后没有正文同时写出两个统治者、以及这次密谋是失败还是成功。决定性缺口是这个双头对象没有被观察到。",
+    "limitation": "没有新增可引用的出版后正文。未保存的检索摘要不拿来当反证或正证。",
+    "method": "先确认是两个统治者，再看成功是不是几乎无望。一个统治者的未遂不算。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "出版后的页面没有两个统治者的同一次密谋。1478年的帕齐案不进入窗口。"
+  }
+}

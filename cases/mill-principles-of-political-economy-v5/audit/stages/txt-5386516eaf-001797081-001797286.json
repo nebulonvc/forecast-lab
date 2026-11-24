@@ -1,0 +1,66 @@
+{
+  "id": "txt-5386516eaf-001797081-001797286",
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "recorded in audit/search-log.jsonl"
+      },
+      {
+        "role": "counter",
+        "query": "recorded in audit/search-log.jsonl"
+      }
+    ],
+    "note": "没有 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://www.nber.org/system/files/working_papers/w14748/w14748.pdf"
+    ],
+    "reason": "只保留摘录在存档中的来源。对象不符的不拿来计分。"
+  },
+  "assess": {
+    "id": "txt-5386516eaf-001797081-001797286",
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-nber-volatility-2009",
+        "quote": "little evidence of trend since 1700",
+        "relation": "boundary",
+        "limitation": "对象比原文宽，且没有更温和的方向。",
+        "observation_end": "2009-02-28",
+        "publication_date": "2009-02"
+      }
+    ],
+    "observation_end": null,
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "由供给变动或真实需求（区别于投机需求）引起的价值与价格波动，将随社会进步变得更温和。",
+    "reason": "NBER 2009年2月论文写1700年以来商品价格波动 little evidence of trend。那是一般商品价格，没有分开真实需求与投机需求，也没有写成“变得更温和”。不判正确，也不把“没有趋势”直接判成这句错误。",
+    "limitation": "论文日期用题头 February 2009，不补日。",
+    "evidence_ids": [
+      "ev-nber-volatility-2009"
+    ],
+    "remaining_gap": "缺只针对供给变动或真实需求、并排除投机需求的价格波动序列。",
+    "method": "检索商品价格波动。对象不一致，不硬判。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001797081-001797286",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": []
+}

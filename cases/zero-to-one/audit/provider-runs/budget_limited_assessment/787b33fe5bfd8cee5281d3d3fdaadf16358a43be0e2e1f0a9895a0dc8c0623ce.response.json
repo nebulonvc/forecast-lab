@@ -1,0 +1,28 @@
+{
+  "id": "5c1d8f75-ad88-4818-bbcd-18bd2de41754",
+  "object": "chat.completion",
+  "created": 1794201441,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000020758-000020793\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为规范性/理论性主张（“唯一方法就是获取垄断利润”），无时间期限、无可观测未来结果；观察时段不适用。\",\"reason\":\"该句是作者对企业经营的理论建议，不是可检验的未来事件预测；且“解脱”与“垄断利润”定义上循环，无法独立操作化。\",\"limitation\":\"按规则非预测项不计分；其因果有效性不在本评估范围。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4301,
+    "completion_tokens": 169,
+    "total_tokens": 4470,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3533
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "b9fa68af-5691-4fbf-92c1-7e6267a771f7",
+  "object": "chat.completion",
+  "created": 1794201443,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000031701-000031726\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"原文判断“小市场占主导比大市场容易”，但未定义“小/大市场”的量化边界、主导的衡量指标（份额、利润、持续时间）及适用期限；观察窗口为出版后至cutoff，无可用证据。\",\"reason\":\"该判断是创业策略层面的比较命题，缺少可操作的市场规模与主导标准，无法用现有证据检验。\",\"limitation\":\"未提供任何verified证据；且“容易”是主观比较，难以客观量化。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000031726-000031752\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为条件性创业建议/自我判断规则（“若觉得市场可能太大，那就一定太大”），不是可独立检验的未来结果。\",\"reason\":\"该句是修辞性建议，不构成可观测的未来预测。\",\"limitation\":\"作为排除项保留审计记录，不评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7616,
+    "completion_tokens": 321,
+    "total_tokens": 7937,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 6848
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

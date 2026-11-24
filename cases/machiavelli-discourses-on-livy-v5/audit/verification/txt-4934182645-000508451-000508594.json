@@ -1,0 +1,48 @@
+{
+  "id": "txt-4934182645-000508451-000508594",
+  "plan": {
+    "object": "以后想靠同样理由和类似手段战胜一个分裂民族的人。同段的理由和手段是：倚仗对方内部分裂而开战，像维斯孔蒂对佛罗伦萨那样。",
+    "condition": "against a divided people，并且 on like grounds and by similar means。分裂必须是他用来取胜的依据，不是征服之后才出现的附带事实。",
+    "quantifier": "will always find themselves deceived。一次倚仗分裂并且真的取胜，就反驳 always。",
+    "result": "登记变化是 deceived。受骗是没有靠这个办法取胜。取胜就是没有受骗。",
+    "window": "1531至2026-11-15。维斯孔蒂和维爱人是作者自己的例子，不用来核验。",
+    "counterevidence_needed": "一个倚仗某民族的分裂而去战胜它、并且没有成功的人，不能单独支撑 always。一个这样去做并且成功的人，可以反驳 always。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "aggressor expected a nation to stay divided but the attack united them and he failed",
+      "counter_query": "invader counted on political divisions and conquered the divided country after 1531"
+    },
+    "adaptive_rounds": 1,
+    "adaptive": {
+      "strategy": "改查出版年之后对这个民族的征服，以及分裂是否写在征服本身的因果里，不只推翻首领",
+      "queries": ["Pizarro conquest of the Inca people succeeded because of the civil war between Atahualpa and Huascar Cuzco 1533"]
+    },
+    "kept_urls": ["https://www.encyclopedia.com/humanities/encyclopedias-almanacs-transcripts-and-maps/conquest-through-independence-1"],
+    "dropped": "珍珠港的页面没有写日本倚仗美国内部分裂来取胜。缅甸材料是国内统一战争，不是外人倚仗分裂去战胜一个民族。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "错误",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "satisfied",
+    "future_time_text": "hereafter",
+    "observation_end": "1533-11-15",
+    "evidence_ids": ["ev-encyclopedia-pizarro-1533"],
+    "scope": "反驳 always 的是1533年对这个民族的推进和进入首都，而且正文把安第斯人的分裂写成这一推进的帮助。1531年只标作年末的到达，不能用来越过只有年份的出版界线。推翻首领本身不等于征服该民族。",
+    "reason": "出版代理只有1531这个年，不能把“1531年末到达”编成出版之后的月日。百科页写，在随后几个月里，西班牙人借助安第斯各民族的分裂，把控制扩到塔万廷苏尤的其他部分；1533年7月26日处死阿塔瓦尔帕；1533年11月15日主力进入库斯科；12月扶植瓦斯卡尔一派的曼科为傀儡，并写他们随即利用这次征服。分裂帮助的是对这个民族的推进，不是只写推翻一个首领。这些日期都在1531年之后。他没有受骗。always 因此不成立。国会图书馆页的1572年完全控制没有把内战写成那一年完成的原因，不用它计分。",
+    "limitation": "百科页没有出版日。进入库斯科的日期是1533年11月15日。曼科后来反叛不在这条摘录里，不另补。",
+    "method": "先确认他倚仗的是对方的分裂，再看他是否取胜。取胜就不是 deceived。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "pass",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "1533年11月15日进入库斯科，正文写推进借助安第斯人的分裂。1531年末的到达不越过只有年份的出版界线。"
+  }
+}

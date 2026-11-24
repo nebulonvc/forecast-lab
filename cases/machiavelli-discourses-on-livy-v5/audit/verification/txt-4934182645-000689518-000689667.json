@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000689518-000689667",
+  "plan": {
+    "object": "可以从流血得到好处的君主。同段写，碰臣民的财产才有这种好处；没有好处时，除非必要，君主不会想流血。",
+    "condition": "where advantage is to be gained thereby。好处来自这次流血或没收。自然死亡后的例行充公，不是为了好处而流血。",
+    "quantifier": "blood will always flow，而且欲望和理由永不缺少。一次为了财产而杀人，不能证明只要有好处就总会流血。一次有好处却没有流血，可以反驳总会。",
+    "result": "登记变化是 blood will always flow。流的是血，不是只把财产收走。",
+    "window": "1531至2026-11-15。1531年12月的处决紧贴出版年，年份只有年，不把“晚于1531年”写成已经确定。",
+    "counterevidence_needed": "有财产上的好处，而血确实流了，并且这是通例；或者有这种好处而血没有流。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "ruler executed wealthy subjects and confiscated their estates for his own gain after 1531",
+      "counter_query": "prince spared the wealthy whose property he could have seized and no blood was shed"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["http://www.econ.yale.edu/~egcenter/Yaycioglu%20-%20Wealth%20Death%20and%20Power%20-%20November%202012.pdf"],
+    "dropped": "反对检索回到的是《君主论》本身。亨利八世1531年12月的处决不拿来越过只有年份的出版界限。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-ottoman-confiscation"],
+    "scope": "总会流血要求只要有这种好处血就流。成千上万次处决加充公是反复发生，不是没有例外的总会。",
+    "reason": "耶鲁讨论稿写，从征服君士坦丁堡之后到1839年坦齐马特敕令，成千上万的奥斯曼官员和承包人未经审讯就被苏丹下令处决，他们的财产在处决之后或自然死亡之后被充公。这是好处和流血常常连在一起。同页也写自然死亡后的充公，那种充公不是流血。页面没有写每一次有好处可图时血都流了，也没有写有好处而君主放过。决定性缺口是：没有一页把“只要有好处”和“没有例外地流血”或“有好处却没有流血”写全。",
+    "limitation": "讨论稿的文件名带2012年11月，正文没有单独的出版日。时间范围跨过1531年，页内没有把每一项处决分成1531年之前和之后。",
+    "method": "先确认好处来自流血或夺财，再看是不是总会流。反复发生不等于总会。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "奥斯曼的处决和充公是大量事例。自然死亡后的充公不是流血。页面没有写成没有例外。"
+  }
+}

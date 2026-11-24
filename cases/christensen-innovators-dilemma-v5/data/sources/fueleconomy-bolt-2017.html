@@ -1,0 +1,1724 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+
+	<!-- File: sbs.jsp. -->
+
+	<!-- Core CSS and JS files for site -->
+		<!-- CSS for generic YUI -->
+	<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/yui/2.8.2/build/reset-fonts-grids/reset-fonts-grids.css" type="text/css">
+
+	<!-- CSS for FEG Home Page -->
+	<link rel="stylesheet" href="/feg/includes/home.css">
+    
+    <!-- CSS for Top Nav Mega Menu -->
+    <link rel="stylesheet" href="/feg/includes/mainmenu.css" media="screen" >
+
+	<!-- CSS for left navigation and main content -->
+	<link rel="stylesheet" href="/feg/includes/main-content.css">
+	<link rel="stylesheet" href="/feg/includes/left-nav.css">
+    
+    <!-- CSS for Breadcrumbs -->
+	<style>
+		.breadcrumbs{font-size: 93%; color:#666666; padding-bottom: .308em; *padding-bottom: .3em;}
+		.breadcrumbs a:visited{color:#000099}
+	</style>
+
+	<!-- Dependency source files -->
+	<script src="//ajax.googleapis.com/ajax/libs/yui/2.8.2/build/utilities/utilities.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/yui/2.8.2/build/yahoo-dom-event/yahoo-dom-event.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/yui/2.8.2/build/animation/animation-min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/yui/2.8.2/build/container/container-min.js"></script>
+
+	<!-- Menu source file -->
+	<script src="//ajax.googleapis.com/ajax/libs/yui/2.8.2/build/menu/menu-min.js"></script>
+
+	<!-- Script for Mega-Menu -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/feg/includes/jquery.megamenu.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#megamenu").megamenu();
+			$('#megamenu').show();
+        });
+    </script>
+
+	<!-- DAP -->
+	<script async src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOE" id="_fed_an_ua_tag"></script>
+
+	<!-- Angelfish -->
+	<script src="/angelfish.js"></script>
+	<script> 
+		agf.pageview();
+	</script>
+
+
+
+	<!-- ADD LOCAL STYLES HERE -->
+	<script src="https://ajax.googleapis.com/ajax/libs/yui/2.8.2/build/tabview/tabview-min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/yui/2.8.2/build/element/element-min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/yui/2.8.2/build/button/button-min.js"></script>
+
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/yui/2.8.2/build/tabview/assets/skins/sam/tabview.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/yui/2.8.2/build/container/assets/skins/sam/container.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/yui/2.8.2/build/button/assets/skins/sam/button.css" >
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="includes/sbs.css">
+
+	<!-- ADD LOCAL SCRIPT HERE -->
+	<!-- See script block at the closing html tag. -->
+	<script src="js/popup.js"></script> 
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+	<style>
+		.dialog {display:none}
+		.alert {color: #ff0000;font-weight:600}
+		td.fuel{font-size:11px;text-align:left; padding-left:7px;font-weight:600}
+		.fuelTypeVehicle {background: #C7D7EB;padding:0px 0px 0px 0px; border-left:1px solid #999999; border-right:1px solid #999999;width:150px;height:36px;border-top:1px solid #999999;border-bottom:1px solid #999999;margin:0px 19px 0px 19px}
+		.thumbnail {padding:0px 0px 0px 0px; border-left:1px solid #999999; border-right:1px solid #999999;width:150px;height:80px;border-bottom:1px solid #999999;margin:0px 19px 0px 19px; border-radius: 0 0 0 0}
+		td.fuel{font-size:11px;text-align:left; padding-left:7px;font-weight:600}
+		table.results1 {margin: 7px auto 3px 30px;  border-collapse: collapse; line-height: 1;}
+		table.results2 {margin: 0 auto 0 auto; border-collapse: collapse; line-height: 1;}
+		.results2 .unitsLabel,.results2 .combinedMPG {padding-top: 8px}
+		table.results1 td {border: none; padding: 3px 3px 0px 3px; text-align:left}
+		table.results2 td {border: none; padding: 1px 1px 0px 1px; text-align:left }
+		.combinedMPG { font-weight:600; margin: 0; padding: 0; text-align: center; line-height: .75; *line-height: .8}
+		td.combinedMPG {font-size: 25px; vertical-align:top}
+		td.phevCombined {font-size: 20px}
+		.unitsLabel {font-size:10px; font-weight:600;  text-align:left; line-height: .8; vertical-align: top; margin-bottom: 1px}
+		td.fuel1{background: url(/feg/images/sbsTab1/background.png) no-repeat}
+		td.cng{background: url(/feg/images/sbsTab1/cngBackground.png) no-repeat}
+		td.lpg{background: url(/feg/images/sbsTab1/lpgBackground.png) no-repeat}
+		td.E85{background: url(/feg/images/sbsTab1/E85Background.png) no-repeat}
+		td.phev{background: url(/feg/images/sbsTab1/phevBackground.png) no-repeat}
+		td.phevBlended{background: url(/feg/images/sbsTab1/phevBlendedBackground.png) no-repeat}
+		td.efcv{background: url(/feg/images/sbsTab1/fcevBackground-new.png) no-repeat}
+		td.diesel{background: url(/feg/images/sbsTab1/dieselBackground.png) no-repeat}
+		td.ev{background: url(/feg/images/sbsTab1/elecBackground.png) no-repeat}
+		td.fcv{background: url(/feg/images/sbsTab1/fcvBackgroundLtBlueNu.png) no-repeat}
+		.city {text-align: left; margin: 0 5px 0 0}
+		.ctyhwy {padding: 0px; text-align: left; line-height: 1; vertical-align: bottom}
+		td.ctyhwy{font-size: 12px}
+		.rating-type {font-size: 10px; vertical-align: top; line-height: 1.1; text-align: left; padding-top:0px}
+		td.range {height: 68px}
+
+		.context {position: absolute;left: -999em;width: 1em;overflow: hidden}
+		.fuelconsumption {font-size: 8px; padding: 1px 0px 7px 0px}
+		td.cons {background: url(/feg/images/sbsTab1/background.png) no-repeat; background-position:left bottom; color: #000000}
+		td.phevcons {background: url(/feg/images/sbsTab1/phevBackground.png) no-repeat; background-position:left bottom; color: #000000}
+		td.phevblendedcons {background: url(/feg/images/sbsTab1/phevBlendedBackground.png) no-repeat; background-position:left bottom; color: #000000}
+		td.efcvcons {background: url(/feg/images/sbsTab1/fcevBackground.png) no-repeat; background-position:left bottom; color: #000000}
+		td.evcons {background: url(/feg/images/sbsTab1/elecBackground.png) no-repeat; background-position:left bottom; color: #000000}
+		td.fcvcons {background: url(/feg/images/sbsTab1/fcvBackgroundLtBlueNu.png) no-repeat; background-position:left bottom; color: #000000}
+		td.altcons {background: url(/feg/images/sbsTab1/cngBackground.png) no-repeat; background-position:left bottom; color: #000000}
+		.rangeGraphic {width: 185px; height: 55px; *width: 16.32em; *height: 4.84em; position:relative; padding:0 0 .5em 0}
+		h4.phevRange {position: absolute; top: 2.4em; left: -4.6em; width: 100%}
+		h4.phevRange span {font-size: .85em; font-weight: 500; color: #000000}
+		h4.eRange span {font-size: 1.0em; font-weight: 500; color: #000000}
+		h4.evRange span{font-size: 1.0em; font-weight: 500; color: #000000}
+		h4.evRange {position: absolute; top: 3.4em; left: 3.2em;width: 100%}
+		span.allElecRange {font-size: .9em}
+		div.cdRange {position: absolute;top: 3.5em;left: 0em;width: 96px; font-size: .89em;font-weight:500;color:#000000;}
+		div.phevRange {position: absolute;top: 3.5em;left: 10.0em;width: 96px; font-size: .9em;font-weight:500;color:#000000;}
+		div.totalRange {position: absolute; top: 3.5em; left: 5.0em; width: 100%; font-size: .9em; font-weight:500; color: #000000}
+		th.rowgroup {background: #efefef; color: #555555; border-top: solid 1px #c9c9c9; text-align: center; background-image: none}
+		table.phevMPG {margin-left: 16px; margin-right: 5px; width: 170px}
+
+		td.phevMPG2 {padding-left:15px}
+		tr.even {background-color: #efefef}
+		.yourMpg {color: #666666}
+		.youSave {color: #000000; margin: .2em 1em 0 1em}
+		.youSaveAver{margin: .5em .5em .5em .5em}
+		td.notopborder{border-top: none}
+		td.nobottomborder{border-bottom: none}
+		th.nobottomborder{border-bottom: none}
+		td.padding{padding-top: 7px; padding-bottom: 3px}
+		td.sbsCellButton{border-top: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF}
+		img.infoIcon {vertical-align: text-top; width: 14px; height: 14px}
+		.mympg-warning {border:1px solid #ccc; margin: 2px; background: #ffffff; padding: .5em; text-align: left; margin: .5em .5em 0 .5em}
+		img.warning-icon {float:left; padding:2px; padding-top:15px; padding-bottom:20px; padding-right: 10px; width: 20px; height: 20px}
+		td.sbsCellData {padding-bottom: .5em}
+		td.barrels.sbsCellData {padding-bottom: 2px}
+		td.about-pev {padding: 1em; border-top-width: 0}
+		td.sbsCellData.range {padding-bottom: .75em; border-bottom: 0px}
+		td.sbsCellData.phev-calc {padding: .5em 0 1em 0}
+		td.my-mpg {padding: 1em 0 .5em 0; vertical-align: top}
+		td.sbsCellData.fuelconsumption {padding-bottom: .7em}
+		td.sbsCellData.fueleconRow {padding-bottom: 0em}
+		.msrp {margin-bottom: .5em}
+		.note {padding: .5em .25em .5em .25em}
+		#tab3 .sbsCellData, #tab3 .sbsCellHeader {padding-top: .65em; padding-bottom: .65em}
+		#tab4 .sbsCellData, #tab4 .sbsCellHeader {padding-top: .65em; padding-bottom: .65em}
+		.no-close .ui-dialog-titlebar-close {display: none}
+		.avgBasedOn {padding: .5em .2em .5em .2em}
+
+		.highcharts-tooltip {z-index: 99}
+		.highcharts-axis-title {z-index: 10}
+		.highcharts-tooltip-box {background-color: #fff; z-index: 98}
+		div.legendUpstream {background-color: #9CCEFF}
+		div.legendTailpipe {background-color: #346391}
+		.center {border: 0; margin: auto; width: 50%; padding: 10px;}
+
+
+	</style>
+	<script>
+		$(document).ready(function() {
+			
+				
+			
+
+
+			$( function() {
+				$( ".dialog" ).dialog({closeText: ""});
+			  } );
+			$dlgGasOnlyRange = $('#dlgGasOnlyRange').dialog({autoOpen:false});
+			$dlgPersonalizedEstimatesNA = $('#dlgPersonalizedEstimatesNA').dialog({autoOpen:false});
+			$dlgYourMPG = $('#dlgYourMPG').dialog({autoOpen:false});
+			$dlgCMax = $('#dlgCMax').dialog({autoOpen:false});
+			$dlgFusion= $('#dlgFusion').dialog({autoOpen:false});
+
+			
+			 	
+				
+				$('#emissions'+"1").append("&nbsp;");
+				$('#emissions'+"1").show();
+				
+					
+				
+			
+
+			$('.lnkPersonalizedEstimatesNA').click(function() {
+				$dlgPersonalizedEstimatesNA.dialog('open');
+				return false;
+			});
+
+			$('.lnkGasOnlyRange').click(function() {
+				$dlgGasOnlyRange.dialog('open');
+				return false;
+			});
+			$('.lnkYourMPG').click(function() {
+				$dlgYourMPG.dialog('open');
+				return false;
+			});
+			$('.lnkCMax').click(function() {
+				$dlgCMax.dialog('open');
+				return false;
+			});
+			$('.lnkFusion').click(function() {
+				$dlgFusion.dialog('open');
+				return false;
+			});
+
+		});
+	</script>
+
+	<title>
+	
+
+	2017 Chevrolet Bolt EV
+
+	
+	
+	</title>
+
+
+	
+	 <meta name="description" content="Fuel Economy of the 2017 Chevrolet Bolt EV. Compare the gas mileage and greenhouse gas emissions of the 2017 Chevrolet Bolt EV side-by-side with other cars and trucks">
+	
+	
+
+
+	
+	<meta name="keywords" content="2017 Chevrolet Bolt EV, fuel economy, gas mileage, compare cars, greenhouse gas emissions, global warming, green cars, clean cars, fuel efficient, mileage, car search, car buyers guide">
+	
+	
+
+</head>
+
+<body class="yui-skin-sam">
+<form name="form1" id="form1" method="post" action="Find.do">
+<div id="doc4" class="yui-t7">
+	<!-- Skip navigation for accessbility -->
+<div class="skipnav"><a href="#content">Skip to main content</a></div>
+
+<!--(50% each column) for sponsors below-->
+<div class="sponsor" style="padding-top: 0; padding-bottom: 0">
+	<div class="yui-g">
+		<div class="yui-u first">
+			<a href="https://www.eere.energy.gov" target="_parent">
+				<img src="/feg/images/home/Logo_Black_Seal_Black_Lettering_Horizontal.png" alt="U.S. Department of Energy - Energy Efficiency and Renewable Energy" style="height: 33px; padding: 1px 0 0 0">
+			</a>
+		</div>
+  		<div class="yui-u" style="text-align:right; padding-bottom:0">
+			<a href="https://www.epa.gov/otaq/" target="_parent">
+				<img src="/feg/images/home/EPA_logo_black.png" alt="U.S. Environmental Protection Agency - Office of Transportation and Air Quality" style="height: 25px; padding: 3px 0 0 0; opacity: 75%">
+			</a>
+        </div>
+    
+	</div>
+</div>
+<!-- end sponsor -->
+
+ 
+<!-- Start banner & banner menu -->    
+<div id="hd" role="banner">
+    <div class="yui-g">
+        <div class="yui-u first">
+            <div style="margin: 3px 0 2px 0"><a href="https://www.fueleconomy.gov" target="_parent"><img alt="www.fueleconomy.gov - the official government source for fuel economy information" src="/feg/images/home/fe-logo-bs.png" style="margin: 5px 0 5px 0; text-decoration: none;"></a></div>	  
+        </div>
+        <div class="yui-u" style="text-align:right; padding-bottom:0">
+            <div class="headerNav">
+				<!-- <a href="https://fueleconomy.gov/m">Mobile</a> -->
+				<a href="/feg/esIndex.shtml">Espa&ntilde;ol</a>
+				<a href="/feg/sitemap.shtml">Site Map</a>
+				<a href="/feg/links.shtml">Links</a>
+				<a href="/feg/info.shtml">FAQ</a>
+				<a href="/feg/videos.shtml">Videos</a>
+			</div>
+        </div>
+    </div>
+    <!-- Start megamenu -->
+
+    <ul id="megamenu" class="megamenu" style="display:none">
+        <li>
+            <a href="javascript:void(0)">Find a Car</a>
+            <div class="submenu" style="width: 56em">
+                <div class="pnlSubmenu">
+                    <h3><a href="/feg/findacar.shtml">Searches</a></h3>
+                    <ul>
+						<li><a href="/feg/findacar.shtml">Find a Car &ndash; Home</a></li>
+						<li><a href="/feg/Find.do?action=sbsSelect">Compare Side by Side</a></li>
+						<li><a href="/feg/powerSearch.jsp">Power Search</a></li>
+						<li><a href="/feg/make.shtml">Search by Make</a></li>
+						<li><a href="/feg/alternatives.shtml">Hybrids, Diesels, and Alternative<br>Fuel Cars</a></li>
+						<li><a href="/feg/SmartWay.do">Find a SmartWay Vehicle</a></li>
+						<li><a href="/feg/best-worst.shtml">Best and Worst Vehicles</a></li>
+						<li><a href="/feg/topten.jsp">Fueleconomy.gov Top Ten</a></li>
+						<li><a href="/feg/mostViewed.shtml">Today's Most Viewed Vehicles</a></li>
+						<li><a href="/feg/UsedCarLabel.jsp">Used Car Label</a></li>
+					</ul>
+					 <h3>Fuel Economy Guides</h3>
+					 <ul>
+						<li><a href="/feg/printGuides.shtml">Print the Guide</a></li>
+						<li><a href="/feg/guides.shtml">Help Promote Fuel Economy</a></li>
+                    </ul>
+                </div>
+    
+                <div class="pnlSubmenu">
+                    <h3><a href="/feg/findacar.shtml">Find a Car &ndash; Home</a></h3>
+                    <div class="img-caption" style="width: 15.385em; height: 14.23em; *width: 15em; *height: 13.875em;">
+                        <a href="/feg/findacar.shtml">
+                            <img class="img-caption" src="/feg/images/topnav/findacar2_mm.jpg" alt="">
+                        </a>
+                        <ul>
+                            <li><a href="/feg/findacar.shtml">Find a fuel efficient vehicle that meets your needs</a></li>
+                        </ul>
+                  	</div>
+                </div>
+                
+                <div class="pnlSubmenu"  style="margin-right: 0;">
+                    <h3><a href="/feg/UsedCarLabel.jsp">Used Car Label</a></h3>
+                    <div class="img-caption" style="width: 15.385em; height: 14.23em; *width: 15em; *height: 13.875em;">
+                        <a href="/feg/UsedCarLabel.jsp">
+                            <img src="/feg/images/topnav/used-label-med.png" alt="Used Car Label">
+                        </a>
+                        <ul>
+                            <li><a href="/feg/UsedCarLabel.jsp">Selling your car? We can help you advertise its mpg.</a></li>
+                      </ul>
+                  	</div>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+        </li>
+    
+        <li>
+            <a href="javascript:void(0)">Save Money &amp; Fuel</a>
+            <div class="submenu" style="width: 62em">
+                <div class="pnlSubmenu" style="width: 18em">
+                    <h3><a href="/feg/drive.shtml">Gas Mileage Tips</a></h3>
+                    <ul>
+                        <li><a href="/feg/driveHabits.jsp">Driving More Efficiently</a></li>
+                        <li><a href="/feg/maintain.jsp">Keeping Your Car in Shape</a></li>
+                        <li><a href="/feg/planning.shtml">Planning and Combining Trips</a></li>
+                        <li><a href="/feg/choosing.jsp">Choosing a More Efficient Vehicle</a></li>
+						<li><a href="/feg/evtips.shtml">Tips for Hybrids, Plug-in Hybrids,<br>and Electric Vehicles</a></li>
+                        <li><a href="/feg/coldweather.shtml">Fuel Economy in Cold Weather</a></li>
+						<li><a href="/feg/hotweather.shtml">Fuel Economy in Hot Weather</a></li>								
+                        <li><a href="/feg/moinfo.shtml">More Information</a></li>
+                    </ul>
+                </div>
+    
+                <div class="pnlSubmenu" style="width: 18em">
+                    <h3><a href="/feg/taxcenter.shtml">Tax Incentives</a></h3>
+                    <ul> 
+						<li><a href="/feg/taxcenter.shtml">Tax Credit for Electric Vehicle Recharging Property</a></li>
+                    </ul>
+
+                    <h3 class="stacked"><a href="/feg/gasprices/index.shtml">Gasoline Prices</a></h3>
+                    <ul>
+                        <li><a href="/feg/gasprices/states/index.shtml">Local Prices</a></li>
+                        <li><a href="/feg/gasprices/faq.shtml">Questions About Gas Prices</a></li>
+                    </ul>
+                </div>
+    
+                <div class="pnlSubmenu" style="width: 18em; margin-right: 0;">
+                    <h3>Cost Calculators</h3>
+                    <ul>
+						<li><a href="/feg/savemoney.jsp">Fuel Savings Calculator</a></li>
+						<li><a href="/trip/">Trip Calculator</a></li>
+						<li><a href="/feg/Find.do?action=phev1Prompt">My Plug-in Hybrid Calculator</a></li>
+                    </ul>   
+                </div>
+                <div style="clear: both"></div>
+            </div><!-- submenu -->
+        </li>
+    
+        <li>
+            <a href="javascript:void(0)">Benefits</a>
+            <div class="submenu" style="width: 300px">
+                <div class="pnlSubmenu">
+                    <h3><a href="/feg/why.shtml">Why is fuel economy important?</a></h3>
+                    <ul>
+						<li><a href="/feg/savemoney.jsp">Save Money</a></li>
+                        <li><a href="/feg/oildep.shtml">Oil Dependence Costs</a></li>                        
+                    </ul>
+                </div>
+                <div style="clear: both"></div>
+            </div>
+        </li>
+        <li>
+		<a href="javascript:void(0)">My&nbsp;MPG</a>
+            <div class="submenu" style="width: 42.3em; *width: 41.25em;">
+				<div class="pnlSubmenu">
+	            	<h3><a href="/mpg/MPG.do">My MPG - Home</a></h3>
+	                    <div class="img-caption" style="width: 15.385em;  height: 16.08em; *width: 15em; *height: 15.68em;">
+	                    <a href="/mpg/MPG.do">
+	                    	<img src="/feg/images/topnav/fuel_pump_mm.jpg" alt="" class="img-caption">
+	                    </a>
+	                  	<ul>
+	                        <li><a href="/mpg/MPG.do">We can help you calculate and track your fuel economy.</a></li>
+	                    </ul>
+	                    </div>
+	                </div>
+	                <div class="pnlSubmenu" style="margin-right: 0;">
+	                    <h3><a href="/feg/browseList.jsp?src=feg">MPG Estimates from Others</a></h3>
+	                    <div class="img-caption" style="width: 20.69em;  height: 16.08em; *width: 20.12em; *height: 15.68em;">
+	                        	<a href="/feg/browseList.jsp?src=feg">
+	                            <img src="/feg/images/topnav/realworldmpg_mm.jpg" alt="Example chart showing real-world MPG">
+	                    </a>
+	                </div>
+	            </div>
+            
+	            <div style="clear: both"></div>
+	        </div>
+		</li>
+        <!-- Advanced Vehicles and Fuels -->
+        <li>
+            <a href="javascript:void(0)">Advanced Vehicles &amp; Fuels</a>
+            <div class="submenu" style="width: 63.2em; *width: 63em;">
+                <div class="pnlSubmenu">
+					<h3><a href="/feg/evsplash.shtml">About Hybrid and<br>Electric Cars</a></h3>
+					<ul>
+						<li>
+							<a href="/feg/evsplash.shtml">
+								<img class="thumbnail img-responsive" src="/feg/images/icon_plugin.gif" style="width: 80px" alt="">
+							</a>
+							<p><small>A quick guide to the different<br>kinds of hybrids and electric<br>vehicles.</small></p>
+						</li>
+					</ul>
+					
+					  <h3><a href="/feg/evSelect.jsp">All-Electric Vehicles</a></h3>
+                    <ul>
+                        <li><a href="/feg/evSelect.jsp">Compare Side by Side</a></li>
+                        <li><a href="/feg/evtech.shtml">About Electrics</a></li>
+                        <li><a href="/feg/evnews.shtml">New &amp; Upcoming</a></li>
+						<li><a href="/feg/Find.do?action=bt2">GHG Emissions Calculator</a></li>
+                        <li><a href="/feg/evlinks.shtml">Electric Vehicle Links</a></li>
+                    </ul>
+                    
+                </div>
+    
+                <div class="pnlSubmenu">
+                  <h3><a href="/feg/hybridtech.shtml">Hybrids</a></h3>
+                    <ul>
+                        <li><a href="/feg/hybrids.jsp">Compare Side by Side</a></li>
+                        <li><a href="/feg/hybridtech.shtml">How Hybrids Work</a></li>
+                    	<li><a href="/feg/hybrid_links.shtml">Hybrid Links</a></li>
+                    </ul>
+					
+                    <h3 class="stacked"><a href="/feg/phevsbs.shtml">Plug-In Hybrids</a></h3>
+                    <ul>
+                        <li><a href="/feg/phevsbs.shtml">Compare Side by Side</a></li>        
+                              
+                        <li><a href="/feg/phevtech.shtml">About Plug-in Hybrids</a></li>
+						
+						<li><a href="/feg/phevanim.shtml">How Plug-in Hybrids Save<br>Money</a></li>
+						<li><a href="/feg/Find.do?action=phev1Prompt">My Plug-in Hybrid<br>Calculator</a></li>  
+                        <li><a href="/feg/phevnews.shtml">New &amp; Upcoming</a></li>
+						<li><a href="/feg/Find.do?action=bt2">GHG Emissions Calculator</a></li>
+                        <li><a href="/feg/phevlinks.shtml">Plug-in Hybrid Links</a></li>
+                    </ul>
+                </div>
+    
+                <div class="pnlSubmenu">
+                    <h3><a href="/feg/diesels.jsp">Diesels</a></h3>
+                    <ul>
+                        <li><a href="/feg/diesels.jsp">Compare Side by Side</a></li>
+                        <li><a href="/feg/di_diesels.shtml">About Diesels</a></li>
+                        <li><a href="/feg/dieselnews.shtml">New &amp; Upcoming</a></li>
+                        <li><a href="/feg/lowsulfurdiesel.shtml">Ultra-Low Sulfur Diesel</a></li>
+                        <li><a href="/feg/biodiesel.shtml">Biodiesel</a></li> 
+                        <li><a href="/feg/diesellinks.shtml">Diesel Links</a></li>
+                    </ul>
+					
+                    <h3 class="stacked"><a href="/feg/flextech.shtml">Flex-Fuel Vehicles</a></h3>
+                    <ul>
+                        <li><a href="/feg/flextech.shtml">Flex-Fuel Vehicles</a></li>
+                        <li><a href="/feg/flexlinks.shtml">Flex-Fuel Links</a></li>
+                    </ul>
+                </div>
+    
+                <div class="pnlSubmenu" style="margin-right: 0;">
+                    <h3><a href="/feg/current.shtml">Alternative Fuels</a></h3>
+                    <ul>
+                       
+                        <li><a href="/feg/ethanol.shtml">Ethanol</a></li>
+						<li><a href="/feg/electricity.shtml">Electricity</a></li>
+						<li><a href="/feg/biodiesel.shtml">Biodiesel</a></li>
+                        <li><a href="/feg/bifueltech.shtml">Natural Gas</a></li>
+                        <li><a href="/feg/hydrogen.shtml">Hydrogen</a></li>
+						<li><a href="/feg/lpg.shtml">Propane</a></li>
+                    </ul>
+					
+                    <h3 class="stacked"><a href="/feg/fuelcell.shtml">Fuel Cell Vehicles</a></h3>
+                    <ul>
+						<li><a href="/feg/fcvSelect.jsp">Compare Side by Side</a></li>
+                        <li><a href="/feg/fcv_PEM.shtml">How They Work</a></li>
+                        <li><a href="/feg/fcv_benefits.shtml">Benefits and Challenges</a></li>
+                        <li><a href="/feg/fcv_links.shtml">Fuel Cell Links</a></li>
+                    </ul>
+                </div>
+    
+                <div style="clear: both"></div>
+    
+            </div><!-- submenu -->
+        </li><!-- End of Advanced Vehicles and Fuels -->
+    
+        <li>
+            <a href="javascript:void(0)">About EPA Ratings</a>
+            <div class="submenu" style="width: 50em">
+                <div class="pnlSubmenu">
+                    <h3><a href="/feg/label/">Window Sticker</a></h3>
+    
+                    <ul>
+                        <li><a href="/feg/label/">About the Label</a></li>
+                        <li><p>Sample Labels:</p>
+                            <ul style="margin-left: 1em; *margin-left: .975em;">
+                                <li><a href="/feg/label/learn-more-gasoline-label.shtml">Gasoline Vehicles</a></li>
+                                <li><a href="/feg/label/learn-more-PHEV-label.shtml">Plug-in Hybrid Vehicles</a></li>
+                                <li><a href="/feg/label/learn-more-electric-label.shtml">Electric Vehicles</a></li>                                               
+                            </ul>
+                        </li>
+                        <li><a href="/feg/label/video.shtml">QR Codes</a></li>      
+                    </ul>
+                </div>
+    
+                <div class="pnlSubmenu">
+                    <h3><a href="/feg/ratings.shtml">New vs. Old Ratings</a></h3>
+                    <ul>
+                        <li><a href="/feg/ratings.shtml">2017 Ratings Changes</a></li>
+                        <li><a href="/feg/comparempg.shtml">Compare Old and New MPG</a></li>
+                    </ul>
+                
+                    <h3 class="stacked"><a href="/feg/how_tested.shtml">Fuel Economy Tests</a></h3>
+                    <ul>
+                        <li><a href="/feg/how_tested.shtml">How Vehicles Are Tested</a></li>
+                        <li><a href="/feg/which_tested.shtml">Which Vehicles Are Tested</a></li>
+                        <li><a href="/feg/fe_test_schedules.shtml">Detailed Test Information</a></li>
+                    </ul>
+                </div>
+                
+                <div class="pnlSubmenu" style="margin-right: 0;">
+                    <h3><a href="/feg/why_differ.shtml">Your Mileage Will Vary</a></h3>
+                    <ul>
+                        <li><a href="/feg/why_differ.shtml">Your Mileage Will Vary</a></li>
+                        <li><a href="/feg/factors.shtml">Factors That Affect MPG</a></li>
+						<li><a href="/feg/myths.shtml">Myths and Misconceptions</a></li>
+                    </ul>
+                </div>
+                
+                <div style="clear: both"></div>
+            </div><!-- end of .submenu -->
+        </li><!-- end of. About EPA Ratings -->
+    
+        <li>
+            <a href="javascript:void(0)">More</a>
+            <div class="submenu" style="width: 38.85em;"> 
+                  
+                <div class="pnlSubmenu">
+				
+                    <h3><a href="/feg/atv.shtml">Where the Energy Goes</a></h3>
+					<ul>
+						<li><a href="/feg/atv.shtml">Gasoline Vehicles</a></li>
+						<li><a href="/feg/atv-hev.shtml">Hybrids</a></li>
+						<li><a href="/feg/atv-ev.shtml">Electric Cars</a></li>
+					</ul>
+				
+                    <h3 class="stacked"><a href="/feg/tech_adv.shtml">Fuel-Saving Technologies</a></h3>
+                    <ul>
+						<li><a href="/feg/tech_engine_more.shtml">Engine Technologies</a></li>
+						<li><a href="/feg/tech_transmission.shtml">Transmission Technologies</a></li>
+						<li><a href="/feg/tech-other.shtml">Other Technologies</a></li>
+                    </ul>
+					
+                    <h3 class="stacked"><a href="/feg/extremeMPG.jsp">Extreme MPG</a></h3>
+					
+                </div><!-- end of .pnlSubmenu -->            
+
+                <div class="pnlSubmenu" style="margin-right: 0;">
+                    <h3><a href="/feg/octane.shtml">Selecting the Right Octane Fuel</a></h3>
+                    <div class="img-caption" style="width: 19em">
+                        <a href="/feg/octane.shtml">
+                            <img src="/feg/images/octane.jpg" alt="" class="img-caption">
+							<ul>
+								<li style="color: #fff">Answers to frequently asked questions about octane.</li>
+							</ul>
+						</a>
+					</div>
+                </div>				
+                
+                <div style="clear: both;"></div>
+            </div>
+        </li>
+    </ul>
+
+</div> 
+<!-- End banner and banner menu --> 
+
+	<div id="bd">
+
+<div class="yui-g content">
+
+	<div class="breadcrumbs"> You are here: <a href="findacar.shtml">Find a Car Home</a> &gt; Compare Side-by-Side </div>
+	<h1>Compare Side-by-Side</h1>
+
+<div id="tabContainer" class="yui-navset" style="margin-top: 8px">
+	<ul class="yui-nav">
+		<li class="selected"><a href="#tab1"><em>Fuel Economy</em></a></li>
+		<li><a href="#tab2"><em>Energy and Environment</em></a></li>
+		<li><a href="#tab3"><em>Safety</em></a></li>
+		<li><a href="#tab4"><em>Specs</em></a></li>
+	</ul>
+
+<div class="allTabs">
+<table style="border:solid 1px #ccc; border-bottom:none;" >
+	<col style="width: 180px">
+	
+		<col style="width: 185.917px">
+	
+	<col>
+	<tr >
+	<td class="sbsCellData">&nbsp;</td>
+	
+		<th class="sbsCellHeader" style="vertical-align: top" scope="col">
+			<div class="delete" onClick="window.location='Find.do?action=sbsSelect'">X</div>
+			2017
+			Chevrolet
+			Bolt EV
+			
+		</th>
+	
+	
+		<td class="sbsCellButton" >&nbsp;</td>
+	
+	</tr>
+	<tr>
+	<td class="sbsCellData">
+		<a id="personalizeLink1" href="xxx">Personalize</a>
+		
+	</td>
+
+	
+		<td class="sbsCellData">
+
+			<div style="margin-bottom:0px; padding-bottom:0px;height:38px">
+				<img src="/feg/images/sbsTab1/electricBlue.png" alt="" class="fuelTypeVehicle" >
+			</div>
+			<div style="margin-top:0px; padding-top:0px;">
+			<img src="/feg/photos/2017_Chevy_Bolt_EV.jpg" alt="" class="thumbnail" >
+			</div>
+		</td>
+	
+
+	
+		<td class="sbsCellButton">
+			<a id="btnSbsSelect" href="Find.do?action=sbsSelect&amp;id=38187">Add a Vehicle</a>
+		</td>
+	
+	</tr>
+	<tr class="specs">
+	<td class="sbsCellData">&nbsp;</td>
+	
+		<td class="sbsCellData">
+			Automatic (A1)
+
+		</td>
+	
+	
+		<td class="sbsCellButton" >&nbsp;</td>
+	
+	</tr>
+	<tr class="specs">
+	<td class="sbsCellData">&nbsp;</td>
+	
+		<td class="sbsCellData phev-calc">
+			<div class="msrp">
+				MSRP: $36,620 - $40,905
+			</div>
+
+			
+			<!--
+			<div style="padding-top:5px;font-weight:bold"><a href="/feg/taxevb.shtml" >Possible Tax Break</a></div>
+			-->
+		</td>
+	
+	
+		<td class="sbsCellButton">&nbsp;</td>
+	
+	</tr>
+ </table>
+<!--  allTabs --></div>
+ 
+<div class="yui-content" style="padding:0px; border:none; background:none">
+
+<div id="tab1">
+<table style="border:solid 1px #ccc; border-bottom:none; " >
+	<col style="width: 180px">
+	
+		<col style="width: 185.917px">
+	
+	<tr style="display:none">
+	<td class="sbsCellData">&nbsp;</td>
+	
+		<th class="sbsCellHeader" style="vertical-align: top" scope="col">
+
+			2017
+			Chevrolet
+			Bolt EV
+		</th>
+	
+
+	</tr>
+
+	<tr>
+		<th class="sbsCellHeader" scope="row" rowspan="4" >
+			EPA Fuel Economy
+			<br>
+			
+				
+				
+			
+
+			<p class="footnote">1 gallon of gasoline=33.7 kWh </p><p style="margin-top:10px;"> <a href="javascript:void(0)" onClick="iipopwin('stationLocator.shtml', '820', '600', 'yes');" style="font-weight:500">
+			Show electric charging stations near me</a></p>
+			
+		</th>
+
+		
+			<td class="fuel nobottomborder padding">
+			
+			
+				
+					
+					
+						Electricity
+					
+				
+			
+			
+			</td>
+		
+	</tr>
+	<tr>
+
+		
+			
+				<td class="sbsCellData fueleconRow fuel1 ev    notopborder nobottomborder" >
+
+					
+
+					
+						<table class="results1">
+						<col style="width: 75px">
+						<col style="width: 30px">
+						<col style="width: auto">
+
+							<tr>
+								<td class="combinedMPG" rowspan="2"><span class="context">Combined MPG:</span>119</td>
+								<td class="unitsLabel" colspan="2">
+									MPGe
+									
+									
+								</td>
+							</tr>
+							<tr>
+								<td class="ctyhwy"><span class="context">City MPGe:</span>128</td>
+								<td class="ctyhwy"><span class="context">Highway MPGe:</span>110</td>
+							</tr>
+							<tr>
+								<td class="rating-type centered">combined <br>city/highway</td>
+								<td class="rating-type">city</td>
+								<td class="rating-type">highway</td>
+							</tr>
+						</table> 
+					
+				</td>
+			
+			
+			
+			
+	
+	</tr>
+	<tr class="cons">
+		
+			<td class="sbsCellData fuelconsumption 
+				 
+				 evcons  
+				 
+				 
+				
+				
+				 notopborder" style="border-bottom:none;" >
+
+				<span style="font-size:9px;">
+					
+						
+					
+					28 kWh/100 mi
+					
+				</span>
+				
+				
+			</td>
+		
+	</tr>
+	<tr>
+		
+			<td class="sbsCellData range" style="border-top:none; border-bottom:solid 1px #ccc;" >
+			 	<div class="rangeGraphic"> <img src="images/sbsTab1/rangeElectricity.png" class="rangeGraphic" alt="EPA range: 238 miles"><div class="totalRange">238 miles<br>Total Range</div></div>
+
+			</td>
+		
+	</tr>
+
+
+	
+
+	
+	
+	
+<tr>
+	<td> </td>
+		
+			<td class="notopborder padding about-pev">
+				
+				
+					<a href="/feg/evtech.shtml">About All-Electric Cars</a>
+				
+			</td>
+		
+
+	</tr>
+ 
+	<tr class="valignTop nobottomborder"  >
+		<th class="sbsCellHeader nobottomborder" style="vertical-align: middle">
+			<p style="margin-bottom: 1em">Unofficial MPG Estimates from Vehicle Owners</p>
+			<p style="margin-bottom: .35em"><a href="/mpg/MPG.do" target="_blank" style="font-size: .9em; font-weight: 500">Learn more about "My MPG"</a></p>
+			<p><a href="#" class="lnkYourMPG footnote" style="color: #FF0000; font-weight: 500">Disclaimer</a></p>
+		</th>
+		
+			<td class="sbsCellData nobottomborder my-mpg">
+				
+					
+					<span class="yourMpg">
+						119.2
+							<span style="font-size:9px;"> MPG
+							
+							</span>
+						<br>
+					</span>
+					
+						<div class="mpgLeft">
+							105
+							
+							
+							<p>Lo</p>
+						</div>
+						<div class="mpgRight">
+							130
+							
+							
+							<p>Hi</p>
+						</div>
+						<img src="images/sbsTab1/arrow.gif" alt="" style="width: 60px; height: 18px">
+						<div style="clear:both"></div>
+						
+					
+					<p class="avgBasedOn">Average based on 3 vehicles</p>
+					
+						<p><a href="javascript:void(0)" onclick="iipopwin('Find.do?action=yourMpgVehicle&amp;id=38187', '550', '720', 'yes');">View Individual Estimates</a></p>
+					
+					
+				
+				
+			</td>
+		
+	</tr>
+
+	<!-- < %= getYmpgLinkMarkup(user)  %> -->
+
+	<tr>
+	<th class="sbsCellHeader padding" style="border-top: 1px #cfcfcf solid;">You save or spend* <p class="footnote" style="padding-top:10px;">Note: The average 2026 vehicle <br>gets 28 MPG</p></th>
+	
+		<td class="sbsCellData" style="border-top: 1px #cfcfcf solid; padding: .75em 0 .75em 0;"><div class='youSave'>You SAVE</div><div style="text-align:center; font-size:1.5em; font-weight:600;"> $7,500</div><div class='youSaveAver' style="text-align:center;">in fuel costs over 5 years<br><div style="font-size:.9em; text-align:center;">compared to the <br>average new vehicle</div></div></td>
+	
+	
+	</tr>
+ 
+	<tr ><th scope="row" class="sbsCellHeader">Annual Fuel Cost*</th><td class="sbsEconData">$650</td></tr><tr><th scope="row" class="sbsCellHeader">Cost to Drive 25 Miles</th><td class="sbsEconData2">$1.06</td></tr><tr><th scope="row" class="sbsCellHeader">Cost to Fill the Tank</th><td class="sbsEconData"> </td></tr><tr><th scope="row" class="sbsCellHeader">Tank Size</th><td class="sbsEconData"> </td></tr>
+
+	<tr>
+		<td colspan="2" class="note alignLeft">
+			<p class="sbsBasedOn">*Based on 45% highway, 55% city driving, 15,000 annual miles and current fuel prices. <a id="personalizeLink2" href="action%3Dsbs%26id%3D38187">Personalize</a>.</p>
+			<p class="sbsBasedOn">MSRP and tank size data provided by Edmunds.com, Inc.</p>
+			<p class="sbsBasedOn">Range on a tank and refueling costs assume 100% of fuel in tank will be used before refueling.</p>
+		</td>
+	</tr>
+</table>
+</div><!-- tab1 -->
+
+<!-- Emissions. -->
+<div id="tab2">
+<table>
+<col style="width: 192px">
+	
+		<col style="width: 192px">
+	
+<tr style="display:none">
+	<td class="sbsCellData">&nbsp;</td>
+	
+		<th class="sbsCellHeader" style="vertical-align: top" scope="col">
+			2017
+			Chevrolet
+			Bolt EV
+		</th>
+	
+
+</tr>
+
+	<tr>
+		<th scope="colgroup" class="rowgroup" colspan="2">Energy Impact Score&nbsp;<a href="javascript:void(0)" onClick="iipopwin('findacarhelp.shtml#energyImpact', '460', '300', 'yes'); "><img src="images/findacar/info.gif" class="infoIcon" alt="Additional Information"></a></th>
+	</tr>
+	<tr>
+		<th scope="row" rowspan="3" class="sbsCellHeader valignTop">
+			<p>Annual Petroleum Consumption</p>
+			<br>
+			<p class="footnote">
+
+				1 barrel = 42 gallons
+			</p>
+		</th>
+		
+			<th scope="row" class="colheader sbsCellHeader">
+			
+			Electricity
+			
+			
+			</th>
+		
+	</tr>
+	<tr>
+		
+			<td class="valignTop barrels sbsCellData" style="border-bottom-color:#FFFFFF" >
+
+			
+
+				
+				<img src="images/findacar/barrels0.png" alt="">
+				
+			
+			
+			</td>
+		
+	</tr>
+	<tr>
+		
+			<td class="sbsCellData">
+				
+					
+					<span class="barrelsLabel" >0.1 barrels</span>
+					
+				
+				
+			</td>
+		
+	</tr>
+
+	
+
+	<!-- Greenhouse Gas Emissions.  -->
+	<tr>
+		<th colspan="2" class="rowgroup" scope="colgroup">
+			Greenhouse Gas Emissions&nbsp;<a href="javascript:void(0)" onClick="iipopwin('findacarhelp.shtml#carbonFootprint', '460', '400', 'yes'); "><img src="images/findacar/info.gif" class="infoIcon" alt="Additional Information"></a>
+		</th>
+	</tr>
+	<tr>
+		<th style="padding-right:0" class="sbsCellHeader" rowspan="2">
+			<label for="co2Units">Units:</label>
+			<br>
+			<select name="co2Units" id="co2Units" onchange="this.form.submit()">
+				<option value="1" selected>Grams per mile</option>
+				<option value="2" >U.S. tons per year</option>
+				<option value="3" >Metric tons per year</option>
+			</select>
+
+			<br><br><br>
+			<label for="co2Display">Show: </label>
+			<br>
+			<select name="co2Display" id="co2Display" onchange="this.form.submit()">
+				<option value="tailpipe" selected>Tailpipe CO2</option>
+				<option value="upstream"  >Tailpipe &amp; upstream GHG</option>
+			</select>
+			
+		</th>
+		
+
+		
+			
+			
+				
+				
+					
+						<th class="colheader sbsCellHeader">Electricity</th>
+					
+					
+				
+			
+			
+
+		
+	</tr>
+	<tr>
+		<td class="sbsCellData">0 grams per mile<img src="images/findacar/epaem10.png" alt=""></td>
+	</tr>
+
+	<!-- End of Greenhouse Gas Emissions. -->
+
+	<!-- Optional Greenhouse Gas Emissions for alt fuel. -->
+	
+	<!-- End of optional Greenhouse Gas Emissions for alt fuel. -->
+
+	<!-- Optional Greenhouse Gas Emissions footnotes. -->
+	
+
+	<!-- Emissions.  -->
+	<tr>
+		<th colspan="2" class="rowgroup" scope="colgroup">EPA Smog Rating <a href="javascript:void(0)" onClick="iipopwin('findacarhelp.shtml#airPollutionScore', '460', '400', 'yes'); "><img src="images/findacar/info.gif" class="infoIcon" alt="Additional Information"></a></th>
+
+	</tr>
+	<tr>
+		<th class="sbsCellHeader">
+			<label for="state">State of purchase:</label>
+			<select name="state" id="state">
+				<option value="" selected>Select State</option>
+				
+					<option  value="AL">Alabama</option>
+				
+					<option  value="AK">Alaska</option>
+				
+					<option  value="AZ">Arizona</option>
+				
+					<option  value="AR">Arkansas</option>
+				
+					<option  value="CA">California</option>
+				
+					<option  value="CO">Colorado</option>
+				
+					<option  value="CT">Connecticut</option>
+				
+					<option  value="DE">Delaware</option>
+				
+					<option  value="DC">District of Columbia</option>
+				
+					<option  value="FL">Florida</option>
+				
+					<option  value="GA">Georgia</option>
+				
+					<option  value="HI">Hawaii</option>
+				
+					<option  value="ID">Idaho</option>
+				
+					<option  value="IL">Illinois</option>
+				
+					<option  value="IN">Indiana</option>
+				
+					<option  value="IA">Iowa</option>
+				
+					<option  value="KS">Kansas</option>
+				
+					<option  value="KY">Kentucky</option>
+				
+					<option  value="LA">Louisiana</option>
+				
+					<option  value="ME">Maine</option>
+				
+					<option  value="MD">Maryland</option>
+				
+					<option  value="MA">Massachusetts</option>
+				
+					<option  value="MI">Michigan</option>
+				
+					<option  value="MN">Minnesota</option>
+				
+					<option  value="MS">Mississippi</option>
+				
+					<option  value="MO">Missouri</option>
+				
+					<option  value="MT">Montana</option>
+				
+					<option  value="NE">Nebraska</option>
+				
+					<option  value="NV">Nevada</option>
+				
+					<option  value="NH">New Hampshire</option>
+				
+					<option  value="NJ">New Jersey</option>
+				
+					<option  value="NM">New Mexico</option>
+				
+					<option  value="NY">New York</option>
+				
+					<option  value="NC">North Carolina</option>
+				
+					<option  value="ND">North Dakota</option>
+				
+					<option  value="OH">Ohio</option>
+				
+					<option  value="OK">Oklahoma</option>
+				
+					<option  value="OR">Oregon</option>
+				
+					<option  value="PA">Pennsylvania</option>
+				
+					<option  value="RI">Rhode Island</option>
+				
+					<option  value="SC">South Carolina</option>
+				
+					<option  value="SD">South Dakota</option>
+				
+					<option  value="TN">Tennessee</option>
+				
+					<option  value="TX">Texas</option>
+				
+					<option  value="UT">Utah</option>
+				
+					<option  value="VT">Vermont</option>
+				
+					<option  value="VA">Virginia</option>
+				
+					<option  value="WA">Washington</option>
+				
+					<option  value="WV">West Virginia</option>
+				
+					<option  value="WI">Wisconsin</option>
+				
+					<option  value="WY">Wyoming</option>
+				
+			</select>
+			
+		</th>
+
+		
+					<td class="sbsCellData" id="emissions1" style="display: none;"> 
+
+		
+
+	</tr>
+	<!-- End of emissions. -->
+
+	<tr>
+	<td colspan="2" class="note alignLeft">
+		<p class="sbsBasedOn">*Based on 45% highway, 55% city driving, 15,000 annual miles and current fuel prices. <a id="personalizeLink3" href="action%3Dsbs%26id%3D38187">Personalize</a>.</p>
+		
+	</td>
+	</tr>
+
+</table>
+</div><!-- tab2 -->
+
+<!-- Safety. -->
+<div id="tab3">
+<table>
+ <col style="width: 192px">
+	
+		<col style="width: 192px">
+	
+	<tr>
+	<th scope="colgroup" class="rowgroup" colspan="2">NHTSA Crash Test Results</th>
+	</tr>
+  <tr style="display:none">
+	<td class="sbsCellData">&nbsp;</td>
+	
+		<th class="sbsCellHeader" style="vertical-align: top" scope="col">
+			2017
+			Chevrolet
+			Bolt EV
+		</th>
+	
+  </tr>
+  <tr class="valignTop">
+	<th scope="row" class="sbsCellHeader"><p>Safety Ratings</p>
+		<p><br>For more information visit:<br><a href="http://www.safercar.gov" target="_blank">www.safercar.gov</a></p>
+	</th>
+	<!-- Safety columns. -->
+	
+	<th  class="sbsCellHeader">
+		
+			<div style="text-align: center;">Not Available</div>
+		
+		
+		
+	</th>
+	
+  </tr>
+  <tr id="safety-notes" class="hidden">
+	<td class="alignLeft" colspan="2" style="width:384px">
+		
+	</td>
+  </tr>
+</table>
+</div>
+<!-- tab3 -->
+
+ <div id="tab4">
+ <table>
+ <col style="width: 192px">
+	
+		<col style="width: 192px">
+	
+  <tr>
+	<th scope="colgroup" class="rowgroup" colspan="2">Vehicle Specification Data</th>
+  </tr>
+  <tr style="display:none">
+	<td class="sbsCellData">&nbsp;</td>
+	
+		<th class="sbsCellHeader" style="vertical-align: top" scope="col">
+
+			2017
+			Chevrolet
+			Bolt EV
+		</th>
+	
+  </tr>
+  <tr>
+	<th class="sbsCellHeader" scope="row">EPA Size Class <a href="javascript:void(0)" onClick="iipopwin('findacarhelp.shtml#epaSizeClass', '460', '500', 'yes'); "><img src="images/findacar/info.gif" class="infoIcon" alt="Additional Information"></a></th>
+	
+		<td class="sbsCellData">Small Station Wagons</td>
+	
+  </tr>
+  <tr class="even">
+	<th class="sbsCellHeader" scope="row">Drive</th>
+	
+		<td class="sbsCellData">Front-Wheel Drive</td>
+	
+  </tr>
+  <tr>
+	<th class="sbsCellHeader" scope="row">Stop-Start Technology</th>
+	
+		<td class="sbsCellData">No</td>
+	
+  </tr>
+
+  <tr class="even">
+	<th class="sbsCellHeader" scope="row">Cylinder Deactivation</th>
+	
+		<td class="sbsCellData"> </td>
+	
+  </tr>
+
+  <tr>
+	<th class="sbsCellHeader" scope="row">Gas Guzzler</th>
+	
+		<td class="sbsCellData">No</td>
+	
+  </tr>
+  <tr class="even">
+	<th class="sbsCellHeader" scope="row">Turbocharger</th>
+	
+		<td class="sbsCellData">No</td>
+	
+  </tr>
+  <tr>
+	<th class="sbsCellHeader" scope="row">Supercharger</th>
+	
+		<td class="sbsCellData">No</td>
+	
+  </tr>
+  <tr class="even valignTop">
+	<th class="sbsCellHeader" scope="row">Passenger Volume</th>
+	
+		<td class="sbsCellData">94 ft<sup>3</sup> (4 door)</td>
+	
+  </tr>
+  <tr class="valignTop">
+	<th class="sbsCellHeader" scope="row">Luggage Volume</th>
+	
+		<td class="sbsCellData">17 ft<sup>3</sup> (4 door)</td>
+	
+  </tr>
+  <tr>
+	<th class="even sbsCellHeader" scope="row">Fuel Type</th>
+		
+		<td class="even sbsCellData">Electricity</td>
+		
+
+  </tr>
+  <tr>
+	<th class="sbsCellHeader" scope="row">Engine Descriptor&nbsp;<a href="javascript:void(0)" onClick="iipopwin('findacarhelp.shtml#engine', '460', '400', 'yes'); "><img src="images/findacar/info.gif" class="infoIcon" alt="Additional Information"></a></th>
+	
+		<td class="sbsCellData"></td>
+	
+  </tr>
+  <tr>
+	<th class="even sbsCellHeader" scope="row">Transmission Descriptor <a href="javascript:void(0)" onClick="iipopwin('findacarhelp.shtml#trany', '460', '400', 'yes'); "><img src="images/findacar/info.gif" class="infoIcon" alt="Additional Information"></a></th>
+	
+		<td class="even sbsCellData"></td>
+	
+  </tr>
+  
+  
+	<tr>
+		<th class="sbsCellHeader" scope="row">Electric Motor/Battery <a href="javascript:void(0)" onClick="iipopwin('findacarhelp.shtml#motor-battery', '460', '400', 'yes'); "><img src="images/findacar/info.gif" class="infoIcon" alt="Additional Information"></a></th>
+		
+			<td class="sbsCellData">
+				
+					150 kW ACPM
+				
+			</td>
+		
+	</tr>
+    <tr>
+		<th class="even sbsCellHeader" scope="row">Time to Charge Battery</th>
+		
+		<td class="even sbsCellData">9.3 hrs at 240V</td>
+		
+	</tr>
+  
+  
+ </table>
+
+</div><!-- tab4 -->
+ 
+</div><!-- yui-content -->
+</div><!-- tabContainer -->
+</div><!-- yui-g content -->
+</div><!--  bd -->
+
+<div id="ft" role="contentinfo">
+	<p>
+		<!-- <a href="/m/" >Mobile</a> 
+		| 
+		-->
+		  <a href="/feg/download.shtml">Download Data</a>
+		| <a href="http://www.usa.gov">USA.gov</a>
+		| <a href="/feg/dealers.shtml">Info for Auto Dealers</a>
+		| <a href="/feg/ORNL-disclaimer.htm">Privacy/Security</a>
+		| <a href="mailto:fueleconomy@ornl.gov">Feedback</a>
+	</p>
+	<div style="height: 10px;"></div>
+	<p style="text-align: center; margin-bottom: 15px;">This website is administered by Oak Ridge National Laboratory for the U.S. Department of Energy and the U.S. Environmental Protection Agency.</p>
+</div>
+
+
+</div><!-- doc4 -->
+
+<input type="hidden" id="action" name="action" value="sbsEnvironmentOption">
+</form>
+
+<script src="/feg/assets/Highcharts-12.5.0/code/highcharts.js"></script>
+<script src="/feg/assets/Highcharts-12.5.0/code/modules/accessibility.js"></script>
+
+<script>
+
+$( document ).ready( function() {
+	console.log('Function is firing!');
+	var vehCount = 0;
+	$('.mpg-chart').each( function() {
+		grfId = $(this).attr('id');
+		ups = $(this).attr('data-ups');
+		tail = $(this).attr('data-tail');
+		max = $(this).attr('data-max');
+		tick = $(this).attr('data-tick');
+		if (max > 0){
+			drawChart(grfId, ups, tail, max, tick);
+		}
+	})
+});
+
+	function drawChart(id, ups, tail, max, units) {
+		var myups = 0; //parseInt(ups);
+		var mytail = 0; //parseInt(tail);
+		var mymax = parseInt(max);
+		var myunits = parseInt(units);
+		
+		var tickint = 100;
+		if (myunits > 1) {
+			tickint = 2;
+			myups = ups*1.0;
+			mytail = tail*1.0;
+		} else {
+			myups = parseInt(ups);
+			mytail = parseInt(tail);
+		}
+		
+		Highcharts.chart(id, {
+			chart: {
+				renderTo: id,
+				height: 100,
+				width: 100,
+				spacing: [5, 0, 5, 5],
+				type: 'column'
+			},
+			title: {
+				text: ''
+			},
+			credits: {
+				enabled: false
+			},
+			subtitle: {
+				text: ''
+			},
+			xAxis: {
+				text: '',
+				labels: {
+					enabled: false
+				},
+				tickLength: 0
+			},
+			yAxis: {
+				min: 0,
+				max: mymax,
+				title: {
+					text: ''
+				},
+				style: {
+					zIndex: 1
+				},
+				lineColor: '#777',
+				lineWidth: 1,
+				gridLineWidth: 0,
+				tickColor: '#777',
+				tickInterval: tickint,
+				tickLength: 5,
+				tickWidth: 1,
+				labels: {
+				enabled: false
+				}
+			},
+			legend: {
+				enabled: false
+			},
+			tooltip: {
+				enabled: false
+			}, 
+			plotOptions: {
+				column: {
+					pointPadding: 0.2,
+					borderWidth: 0,
+					stacking: 'normal',
+				},
+				series: {
+					states: {
+						inactive: {
+							opacity: 1
+						},
+						hover: {
+						  enabled: false,
+						}
+					},
+					dataLabels: {
+						enabled: true,
+						allowOverlap: true,
+						formatter: function() {
+							if (this.y) {
+							    return this.y;
+							}
+						},
+						style: {
+							fontSize: '.9em',
+							fontWeight: 'normal',
+							textOutline: 'none'
+						}
+					},
+					pointPadding: 0,
+					pointWidth: 70
+				}
+			},
+			series: [{
+				name: 'Upstream Emissions',
+				color: '#9cceff',
+				data: [myups]
+			}, {
+				name: 'Tailpipe Emissions',
+				color: '#346391',
+				data: [mytail]
+			
+			}]
+		});
+		
+	}
+</script>
+
+<script>
+	YAHOO.util.Event.onDOMReady(function() {
+		// Event handler to track the selected tab.
+		var handleActiveTabChange = function(e) {
+			// Need the full URL with parameters.
+			var returnUrl = location.href;
+
+			// Does this request include a tab specification?
+			// If so, it will be on the end, drop it.
+			var tabIndex = returnUrl.indexOf('&#');
+			if (tabIndex != -1)
+				returnUrl = returnUrl.substring(0, tabIndex);
+			var elPersonalizeLink1 = document.getElementById("personalizeLink1");
+			var elPersonalizeHref = elPersonalizeLink1.getElementsByTagName("a")[0];
+			elPersonalizeHref.href = "Find.do?action=customize&return=" + encodeURIComponent(returnUrl + '&#tab') + (e.newValue + 1);
+
+			var elPersonalizeLink2 = document.getElementById("personalizeLink2");
+			elPersonalizeLink2.href = elPersonalizeHref.href;
+
+			var elPersonalizeLink3 = document.getElementById("personalizeLink3");
+			elPersonalizeLink3.href = elPersonalizeHref.href;
+
+			// We have Add Vehicle or Edit Vehicles button, one or the other.
+			// Update the href to indicate the tab that is currently open.
+			var button = YAHOO.widget.Button.getButton("btnSbsSelect");
+			var buttonHref = button.get("href");
+			tabIndex = buttonHref.indexOf('&tab');
+			if (tabIndex != -1) {
+				buttonHref = buttonHref.substring(0, tabIndex);
+			}
+			buttonHref = buttonHref + '&tabIndex=' + e.newValue;
+			button.set('href', buttonHref);
+		};
+
+		// Create the tabs.
+		var myTabs = new YAHOO.widget.TabView('tabContainer');
+
+		// If the URL has a tab specification, set that tab.
+		var url = location.href.split('#');
+		if (url[1]) {
+			//We have a hash
+			var tabHash = url[1];
+			var tabs = myTabs.get('tabs');
+			for (var i = 0; i < tabs.length; i++) {
+				if (tabs[i].get('href') == '#' + tabHash) {
+					myTabs.set('activeIndex', i);
+					break;
+				}
+			}
+		} else {
+			
+		}
+
+		// Convert the links to a button.
+
+		
+				
+		
+
+		var btnPersonalize1 = new YAHOO.widget.Button("personalizeLink1");
+		var btnSbsSelect = new YAHOO.widget.Button("btnSbsSelect");
+
+		// Initialize the personalize links.
+		var returnUrl = location.href;
+		var tabIndex = returnUrl.indexOf('&#');
+		if (tabIndex != -1)
+			returnUrl = returnUrl.substring(0, tabIndex);
+		var elPersonalizeLink1 = document.getElementById("personalizeLink1");
+		var elPersonalizeHref = elPersonalizeLink1.getElementsByTagName("a")[0];
+		elPersonalizeHref.href = "Find.do?action=customize&return=" + encodeURIComponent(returnUrl + "&#tab") + (myTabs.get('activeIndex') +1);
+
+		var elPersonalizeLink2 = document.getElementById("personalizeLink2");
+		elPersonalizeLink2.href = elPersonalizeHref.href;
+
+		var elPersonalizeLink3 = document.getElementById("personalizeLink3");
+		elPersonalizeLink3.href = elPersonalizeHref.href;
+
+		// Listen to tab changes.
+		myTabs.addListener('activeIndexChange', handleActiveTabChange);
+	});
+
+</script>
+<script>
+
+	$('#state').change(function() {
+		var myid = "";
+		var myyear = "";
+		var mymake = "";
+		var mynotes = "";
+		var mcnt = 0;
+		$('#emissions1').empty();
+		$('#emissions2').empty();
+		$('#emissions3').empty();
+		$('#emissions4').empty();
+
+		//update user with state value
+		var myurl = "&state="+$("#state").val();
+		$.getJSON('Find.do?action=sbsEnvironmentOption'+myurl);
+
+		
+
+			mcnt="1";
+			myid="38187";
+			myyear="2017";
+			mymake="Chevrolet";
+			mynotes="T";
+
+			//console.log("?id=" + myid + "&year=" + myyear + "&state=" + $("#state").val() + "&mymake=" + mymake + "&notes=" + mynotes);
+			var parameters = "?id=" + myid + "&state=" + $("#state").val() + "&year=" + myyear;
+			var myurl = '/ws/rest/vehicle/newemissions/'+parameters; 
+			var sb = "";
+			$.ajax({
+				type: "GET",
+				url: myurl,
+				dataType: "json",
+				async: false, 
+				success: function(edata) {
+					if (edata != null ) {
+						var mylen = 0;
+						if ($.isArray(edata.emissionsInfo)) {
+							mylen = edata.emissionsInfo.length;
+							for(var i=0;i < mylen;i++)  {
+								sb = doEmissionsMarkup(edata.emissionsInfo[i], sb, i);
+							}
+						} else {
+							sb = doEmissionsMarkup(edata.emissionsInfo, sb, 0);
+						}
+					} else {
+						if (myyear.localeCompare("2013") >= 0) 
+							sb = sb + "Currently not available.  Please check back.";
+						else
+							sb = sb + "Not Available";
+					}
+
+				}
+
+			});
+
+			$('#emissions'+mcnt).append(sb);
+			$('#emissions'+mcnt).show();
+		
+
+		function doEmissionsMarkup(emsndata, sb, rcnt) {
+			// Index into the emissions icons.
+			var index = 0;
+			// Odd case where score 9.5 gets mapped to "95".
+			// Or, a handful of cases where ScoreAlt is not equal to Score (flex fuel).
+			if (emsndata.score == 9.5) {
+				index = "95";
+			} else if (emsndata.scoreAlt != -1.0
+					&& emsndata.score != emsndata.scoreAlt) {
+				index = (Math.round(emsndata.score)).toString()
+						+ (Math.round(emsndata.scoreAlt)).toString();
+			} else {
+				index = (Math.round(emsndata.score)).toFixed();
+			}
+
+			if (rcnt > 0) {
+				sb = sb + ("<div style=\"height:0; font:0/0 serif; border-bottom:1px dashed #999; margin-top:8px; margin-bottom:0px\"></div>");
+			}
+			if (mynotes != "P"){
+				sb = sb + ("<img style=\"margin-top:8px\" src=\"images/findacar/epaem");
+				sb = sb + index; 
+				sb = sb + ".png\" alt=\"Emissions Score\">";
+				sb = sb + "<br>";
+				if (mynotes != "R" && mynotes != "M"){
+					sb = sb + emsndata.stdText;
+					sb = sb + "<br>";
+				} 
+				} else {
+					if (mymake == "Jeep" || mymake == "Ram"){
+						sb = sb + "<a href=\"/feg/fca.shtml\">Smog Rating Currently Unavailable</a>";
+					} else if (mymake == "Mercedes-Benz"){
+						sb = sb + "<a href=\"/feg/MercedesPending.shtml\">Smog Rating Currently Unavailable</a>";
+					} else {
+						sb = sb + "<a href=\"/feg/VW.shtml\">Smog Rating Currently Unavailable</a>";
+					}
+
+					sb = sb + "<br>";
+				sb = sb + "<br>";
+			}
+
+			sb = sb + (" <a href=\"javascript:void(0)\" onClick=\"iipopwin('findacarhelp.shtml#engid', '460', '400', 'yes'); \">");
+			sb = sb + emsndata.efid;
+			sb = sb + "</a>";
+
+			// Smartway score.
+			var smartwayScore = emsndata.smartwayScore;
+			if (smartwayScore > 0) {
+				if (smartwayScore == 1)
+					sb = sb + "<br><img style=\"margin-top:8px\" src=\"images/smartway/smartway1.png\" width=\"165\" height=\"44\" alt=\"EPA Certified Smartway\">";
+				else if (smartwayScore == 2)
+					sb = sb + "<br><img style=\"margin-top:8px\" src=\"images/smartway/smartway2.png\" width=\"165\" height=\"57\" alt=\"EPA Certified Smartway Elite\">";
+			}
+
+			if (sb.length == 0)
+				if (myyear.localeCompare("2013") >= 0) 
+					sb = sb + "Currently not available.  Please check back.";
+				else
+					sb = sb + "Not Available";
+
+			return sb.toString();
+		}
+
+		$('#state').blur();
+
+	});
+</script>
+
+	
+	 	
+	
+
+<div id="dlgGasOnlyRange" class="dialog" title="Miles on a tank and refueling cost"><p>Miles on a tank and refueling cost for gasoline only assumes 90% of fuel in tank will be used before refueling. </p></div>
+<div id="dlgPersonalizedEstimatesNA" class="dialog" title="Personalized Estimates"><p>Personalized estimates are currently not available for this vehicle. </p></div>
+<div id="dlgYourMPG" class="dialog" title="My MPG"><p>DISCLAIMER: Average user estimates are based on data from My MPG users rather than official sources. Since the source data cannot be verified, neither DOE nor EPA guarantees the accuracy of these estimates.</p></div>
+<div id="dlgCMax" class="dialog" title="C-Max Energi Plug-in Hybrid"><p>This vehicle did not use any gasoline for the first 21 miles in EPA tests. However, depending on how you drive the vehicle, you may use both gasoline and electricity during the first 21 miles following a full charge.</p></div>
+<div id="dlgFusion" class="dialog" title="Fusion Energi Plug-in Hybrid"><p>This vehicle did not use any gasoline for the first 21 miles in EPA tests. However, depending on how you drive the vehicle, you may use both gasoline and electricity during the first 21 miles following a full charge.</p></div>
+</body>
+</html>
+
+

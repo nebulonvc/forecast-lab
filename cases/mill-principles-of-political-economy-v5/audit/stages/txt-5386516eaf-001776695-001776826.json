@@ -1,0 +1,53 @@
+{
+  "id": "txt-5386516eaf-001776695-001776826",
+  "assess": {
+    "id": "txt-5386516eaf-001776695-001776826",
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "observation_end": null,
+    "evidence_notes": [],
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "地球上的集体产业会因科学和工艺的扩展而提高效率。",
+    "reason": "检索到的“每小时产出”是GDP除以工时，从1950年起，不是密尔所说集体产业因科学与工艺而提高的效率本身。不拿它计分。",
+    "limitation": "页面更新日写2025-10-09，早于 cutoff，但对象仍不匹配。",
+    "evidence_ids": [],
+    "remaining_gap": "缺科学与工艺扩展所提高的集体产业效率，而不是GDP/工时。",
+    "method": "检索劳动生产率后拒绝代理。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001776695-001776826",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "this round"
+      },
+      {
+        "role": "counter",
+        "query": "this round"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [],
+    "reason": "对象或量词不符的材料只作边界，不计分。"
+  }
+}

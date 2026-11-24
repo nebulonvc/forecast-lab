@@ -1,0 +1,28 @@
+{
+  "id": "b1c1c2ae-bace-4c6c-8817-809c100f3822",
+  "object": "chat.completion",
+  "created": 1794201305,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-00009\",\"predictions\":[{\"quote\":\"当我预计未来的现金流时，我发现公司现有的75% 的价值都来自2011年甚至之后的利润\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"PayPal公司现有价值的75%来自2011年及之后的利润\",\"expanded_claim\":\"彼得·蒂尔预计未来现金流时判断，PayPal公司现有价值的75%来自2011年甚至之后的利润。\",\"reference_resolutions\":[{\"expression\":\"我\",\"referent\":\"彼得·蒂尔\",\"support_quote\":\"当我预计未来的现金流时\"}],\"unresolved_references\":[],\"time_text\":\"2011年甚至之后\",\"condition_text\":\"\",\"method\":\"现金流折现估值\",\"method_basis\":\"explicit\",\"reason\":\"作者基于未来现金流预计，对PayPal价值来源作出前瞻性判断。\"},{\"quote\":\"现在PayPal公司继续以每年15% 的速度增长，折现率也比10年前要低，而现在看来公司大部分价值都来自2020年甚至之后\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"PayPal公司大部分价值来自2020年甚至之后\",\"expanded_claim\":\"彼得·蒂尔认为，PayPal公司继续以每年15%的速度增长且折现率低于10年前，因此公司大部分价值来自2020年甚至之后。\",\"reference_resolutions\":[{\"expression\":\"PayPal公司\",\"referent\":\"PayPal公司\",\"support_quote\":\"现在PayPal公司继续以每年15% 的速度增长\"}],\"unresolved_references\":[],\"time_text\":\"2020年甚至之后\",\"condition_text\":\"\",\"method\":\"现金流折现估值\",\"method_basis\":\"explicit\",\"reason\":\"作者基于增长率和折现率判断未来价值来源，属于前瞻性预测。\"},{\"quote\":\"但是这个估价只有考虑到领英预测的未来现金流才有意义\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"领英的市值估价只有考虑其预测的未来现金流才有意义\",\"expanded_claim\":\"彼得·蒂尔认为，领英245亿美元的市值只有考虑到领英预测的未来现金流才有意义。\",\"reference_resolutions\":[{\"expression\":\"这个估价\",\"referent\":\"领英245亿美元的市值\",\"support_quote\":\"2014年初，领英的市值达到245亿美元\"},{\"expression\":\"领英\",\"referent\":\"领英（LinkedIn）\",\"support_quote\":\"领英（LinkedIn，一家面向商业客户的社交网络服务网站）\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"只有考虑到领英预测的未来现金流\",\"method\":\"现金流折现估值\",\"method_basis\":\"explicit\",\"reason\":\"作者以未来现金流解释当前市值，属于条件性判断。\"},{\"quote\":\"如果你把短期增长看成重中之重，就会错过最重要的问题： 10年之后，你的公司还能存在吗？\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"把短期增长看成重中之重会错过公司10年后能否存在的问题\",\"expanded_claim\":\"彼得·蒂尔认为，如果企业家把短期增长看成重中之重，就会错过最重要的问题：10年之后公司还能存在吗。\",\"reference_resolutions\":[{\"expression\":\"你\",\"referent\":\"企业家\",\"support_quote\":\"但是许多企业家只看到短期发展\"}],\"unresolved_references\":[],\"time_text\":\"10年之后\",\"condition_text\":\"如果你把短期增长看成重中之重\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"以条件句形式预测忽视长期问题的后果。\"},{\"quote\":\"理论上，公司价值就会无限增长\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"在某一领域创造前所未有的有价值事物，理论上公司价值会无限增长\",\"expanded_claim\":\"彼得·蒂尔认为，如果在一个领域创造了前所未有的有价值的事物，理论上公司价值就会无限增长。\",\"reference_resolutions\":[{\"expression\":\"公司\",\"referent\":\"创造前所未有价值事物的公司\",\"support_quote\":\"如果你在一个领域创造了前所未有的有价值事物\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"如果你在一个领域创造了前所未有的有价值事物\",\"method\":\"理论推演\",\"method_basis\":\"explicit\",\"reason\":\"条件性理论判断，预测公司价值增长。\"},{\"quote\":\"例如能安全消除睡眠需求的药物，或是秃顶的治疗方法，都会支撑起一家垄断公司\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"能安全消除睡眠需求的药物或秃顶治疗方法会支撑起一家垄断公司\",\"expanded_claim\":\"彼得·蒂尔举例认为，能安全消除睡眠需求的药物或秃顶的治疗方法都会支撑起一家垄断公司。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"举例推演\",\"method_basis\":\"explicit\",\"reason\":\"以假设性产品为例预测其能支撑垄断公司。\"},{\"quote\":\"如果你能做到10倍好，你就可以避开竞争\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"做到10倍好就可以避开竞争\",\"expanded_claim\":\"彼得·蒂尔认为，如果彻底改进一种已经存在的事物并做到10倍好，就可以避开竞争。\",\"reference_resolutions\":[{\"expression\":\"你\",\"referent\":\"创业者\",\"support_quote\":\"或者你可以彻底改进一种已经存在的事物\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"如果你能做到10倍好\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"条件性判断，预测做到10倍好的竞争结果。\"},{\"quote\":\"他们的技术也许能在一定规模时得到应用，但也只能在一定规模上才能使用\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"Xanadu的技术也许能在一定规模时得到应用，但也只能在一定规模上使用\",\"expanded_claim\":\"彼得·蒂尔认为，Xanadu的技术也许能在一定规模时得到应用，但也只能在一定规模上才能使用。\",\"reference_resolutions\":[{\"expression\":\"他们\",\"referent\":\"Xanadu公司\",\"support_quote\":\"一家名叫Xanadu的堂·吉诃德式空想公司\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"对Xanadu技术应用前景的可能性判断。\"},{\"quote\":\"如果先从品牌而不是靠实力来经营，也有很大隐患\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"先从品牌而不是靠实力经营有很大隐患\",\"expanded_claim\":\"彼得·蒂尔认为，如果公司先从品牌而不是靠实力来经营，会有很大隐患。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"如果先从品牌而不是靠实力来经营\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"条件性判断，预测品牌优先经营的隐患。\"},{\"quote\":\"消费者照理说会冲着这种很酷的理念而来\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"消费者照理说会冲着雅虎这种很酷的理念而来\",\"expanded_claim\":\"彼得·蒂尔转述雅虎的链式计划认为，消费者照理说会冲着雅虎这种很酷的理念而来。\",\"reference_resolutions\":[{\"expression\":\"这种很酷的理念\",\"referent\":\"雅虎的链式计划：人先于产品，产品先于交易，交易先于收益\",\"support_quote\":\"雅虎总结了梅耶尔的链式计划：“人先于产品，产品先于交易，交易先于收益。”\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"对消费者行为的预期判断，带推测语气。\"}]}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3245,
+    "completion_tokens": 1614,
+    "total_tokens": 4859,
+    "prompt_tokens_details": {
+      "cached_tokens": 3072
+    },
+    "prompt_cache_hit_tokens": 3072,
+    "prompt_cache_miss_tokens": 173
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

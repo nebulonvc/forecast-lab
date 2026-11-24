@@ -1,0 +1,28 @@
+{
+  "id": "1bd078f6-346a-4670-b17f-7debee506219",
+  "object": "chat.completion",
+  "created": 1794201589,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000059785-000059818\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"evidence\",\"scope\":\"预测对象为“没有认股权或不是正式员工的人”在利润分配上倾向短期收益、不帮助公司未来创造价值；观察时段为出版后至cutoff，但无对应实证数据。\",\"reason\":\"该判断是对特定人员行为倾向的因果性预测，需比较有无认股权/正式身份者的长期价值贡献，现有证据未提供此类对照。\",\"limitation\":\"无可用证据，且“短期收益”“未来创造更多价值”缺乏可操作指标，无法合理检验。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"未来\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000059842-000059886\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"evidence\",\"scope\":\"预测为远程工作（不在相同时间地点上班）导致同事之间产生分歧；观察时段为出版后至cutoff，证据覆盖2020—2022年大型公司信息工作者。\",\"reason\":\"微软研究显示远程使跨群组协作减少、更孤立，但协作网络隔离不等于同事意见分歧；Trip.com混合办公试验也未直接测量分歧。\",\"limitation\":\"证据来自大型公司信息工作者与混合办公，非初创团队全远程，且“分歧”未被直接操作化测量，不能外推验证作者判断。\",\"evidence_ids\":[\"extra-remote-ms-2021\",\"main-hybrid\"],\"method\":\"inferred\",\"method_basis\":\"inferred\",\"observation_end\":\"2022-07-01\",\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5463,
+    "completion_tokens": 396,
+    "total_tokens": 5859,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 4695
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

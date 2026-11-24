@@ -1,0 +1,916 @@
+{
+  "round": "r4-bidirectional",
+  "format_limit": "WebSearch result bodies do not contain search_term, a tool_call_id, or a call timestamp. An earlier Exa probe also did not echo the query and did not contain the profit-table figures. No envelope was wrapped around the returns. The precall JSON was written before the call and holds the query that was then passed as search_term. Artifact files are byte copies of files the tool wrote.",
+  "clocks": {
+    "precall": "Fri Nov 20 11:06:35 AM UTC 2026\n2026-11-20T11:06:36Z\n",
+    "postcall": "Fri Nov 20 11:08:50 AM UTC 2026\n2026-11-20T11:08:50Z\n",
+    "not_a_per_call_tool_timestamp": true
+  },
+  "old_time_correction": "audit/time-correction.txt retained. 2026-11-20T10:55:00Z and 2026-11-20T11:20:00Z were not rewritten.",
+  "calls": [
+    {
+      "candidate_id": "txt-5386516eaf-001199645-001199772",
+      "direction": "support",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/01-01199645-001199772-support.json",
+        "query": "sable fur population decline twentieth century Russia scarcity",
+        "direction": "support"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "sable fur population decline twentieth century Russia scarcity",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/2610bcd9-1b65-449f-bd72-594606f6dc8c.txt",
+          "sha256": "f1d9e60aa4110cabd54f27245134201b2680fa9ef046afb17c4cc509c6503ba4",
+          "bytes": 30427
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/def484f7-0930-428f-becf-9de167c85094.txt",
+          "sha256": "39fbfa3f70f9039fb79cd724a8f7bb0fca10990f12793a48a0046e91aaf32f8a",
+          "bytes": 35520
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/29bba625-cd2b-4c0d-b043-5fc1231beb6d.txt",
+          "sha256": "4f7b7c7942b69071388fdbb455f9aa78e376067a7378b3a3cf9e4b8d12ece10c",
+          "bytes": 41761
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001199645-001199772",
+      "direction": "counter",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/02-01199645-001199772-counter.json",
+        "query": "farmed mink pelt production rose and prices fell",
+        "direction": "counter"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "farmed mink pelt production rose and prices fell",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [],
+      "byte_preserved": false,
+      "inline_only": true
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001764829-001765029",
+      "direction": "support",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/03-01764829-001765029-support.json",
+        "query": "Western Europe homicide rates declined from the 1880s to the 1950s",
+        "direction": "support"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "Western Europe homicide rates declined from the 1880s to the 1950s",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/7e1f576f-f585-4406-9ab7-7be6852b1e12.txt",
+          "sha256": "b9ef179b54502cfbff90d1707ddd066527414a934a5827368e0fc0fa97c0defe",
+          "bytes": 113590
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/35ec6b01-0492-4085-ad0f-795613f64f4d.txt",
+          "sha256": "b8b22134f5e0df1d0acf872497925cff3549016244b3dba909b25b8de91e8bff",
+          "bytes": 146183
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001764829-001765029",
+      "direction": "counter",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/04-01764829-001765029-counter.json",
+        "query": "recorded property crime in England and Wales rose from the 1960s to 1992",
+        "direction": "counter"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "recorded property crime in England and Wales rose from the 1960s to 1992",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/2f89e537-a453-4b2c-acaf-10a5a893b8db.txt",
+          "sha256": "3733ca9e93ceacbbcc39b064dc576fb171e5e79bf6b21024d20310d0d208d7be",
+          "bytes": 75599
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001837506-001837557",
+      "direction": "support",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/05-01837506-001837557-support.json",
+        "query": "United Kingdom rate of profit 1855 36.2 percent 2009 Maito",
+        "direction": "support"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "United Kingdom rate of profit 1855 36.2 percent 2009 Maito",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/670b2e19-7be3-4115-be71-988d0df74fd9.txt",
+          "sha256": "228f8090a87ca0634ab26e5120aacdf3954712647552f287b10a3fe9e354f453",
+          "bytes": 31544
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/a915f9b1-5076-4ca6-9d41-916d19ae98d9.txt",
+          "sha256": "17e1ac6ebb90e13719db3cff0462022e1c16ef4e9e025d6c19df0fa540b89128",
+          "bytes": 43443
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/f3e9aaf7-aa28-4830-8a55-51f04fe5aa14.txt",
+          "sha256": "ffdf32c307746f2d8091c1f2003fdecf748f17b25d82316ccb859060ed0d8706",
+          "bytes": 48858
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001837506-001837557",
+      "direction": "counter",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/06-01837506-001837557-counter.json",
+        "query": "United Kingdom rate of profit increased between 1975 and 1997",
+        "direction": "counter"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "United Kingdom rate of profit increased between 1975 and 1997",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/c957ce26-5c95-40a7-a479-818823254b2d.txt",
+          "sha256": "5e3fb4dabcae987c6e1e0c38f070f58382d21e62967ff1b7fef1d7fc2fb8f718",
+          "bytes": 66970
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/fed7dfac-c5b2-488b-8b70-c88c5bf20d39.txt",
+          "sha256": "308b3d05625510b1d09108c6beb8558a95e3e3f9b09e0bd0175dc1dd0e4eb69e",
+          "bytes": 47570
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/4bbe9300-b221-42fc-894b-d7bffd950e99.txt",
+          "sha256": "c3b27cf0c9dd2e324c03471176f18f60a1da41d2f05cac6e43959e93d98e3123",
+          "bytes": 391867
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001920576-001920691",
+      "direction": "support",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/07-01920576-001920691-support.json",
+        "query": "world primary school enrollment rate increased since 1970",
+        "direction": "support"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "world primary school enrollment rate increased since 1970",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/d8e2dd4c-77d4-4dba-99b3-546f886ea5bd.txt",
+          "sha256": "2524c5f4baf81481a472b51a7aac31f484ee98605358fb4c807b608c0198fd3e",
+          "bytes": 114181
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001920576-001920691",
+      "direction": "counter",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/08-01920576-001920691-counter.json",
+        "query": "Sub-Saharan Africa primary school enrollment stalled after 2010",
+        "direction": "counter"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "Sub-Saharan Africa primary school enrollment stalled after 2010",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/7838f1ea-7342-4ed4-b587-de21bce0b454.txt",
+          "sha256": "d3fb806679c2a1e25b36f2c72a7018c4cd8442168fd84a3056fdc24f8f8d2d65",
+          "bytes": 31747
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/ea292f4b-28c3-4b59-9a10-44f04a8be558.txt",
+          "sha256": "141697c10905f1ac6cbc2039f4e8db7e38e5ea47cab13c100a8454b7cdc62386",
+          "bytes": 69179
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001922557-001922599",
+      "direction": "support",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/13-01922557-001922599-support.json",
+        "query": "BLS civilian labor force growth versus population growth 1950-2000 table",
+        "direction": "support"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "BLS civilian labor force growth versus population growth 1950-2000 table",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/cb880358-bcbc-455e-89be-7701acb45619.txt",
+          "sha256": "863614cdbcc3ad299d12072377ade8e0ad96fae09790a046089d688dff52b658",
+          "bytes": 74844
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/ff233163-e692-4f7f-ad91-e554a8682ae7.txt",
+          "sha256": "d5ea7ac4a4670a4cd40f45a3a182663dc78d375cbbe02fc3c8fb290f7df38d06",
+          "bytes": 43766
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001922557-001922599",
+      "direction": "counter",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/14-01922557-001922599-counter.json",
+        "query": "US labor force growth slower than population growth after 2000 BLS",
+        "direction": "counter"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "US labor force growth slower than population growth after 2000 BLS",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/af870a8d-5c75-4b57-93c8-7001a0569810.txt",
+          "sha256": "a217614ada73f41743f242c3838c30c501cd7725c9d7ebfa094bdcf27dd6c141",
+          "bytes": 22724
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/7c15d6d9-5ea2-4860-9e01-a7c6f2efb5bf.txt",
+          "sha256": "4d06a82cebf72d8c07d97b04ab176264f328606384881e08e7704506fea7ef63",
+          "bytes": 80965
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001920981-001921067",
+      "direction": "support",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/09-01920981-001921067-support.json",
+        "query": "decline of deference toward social superiors in England 1968-2000",
+        "direction": "support"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "decline of deference toward social superiors in England 1968-2000",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/7485f71b-22f1-4952-8308-6a0819518c80.txt",
+          "sha256": "948c7083666e1edc454ff925556c7a388769f801f25a72be6a2f214e3db7a79e",
+          "bytes": 53927
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001920981-001921067",
+      "direction": "counter",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/10-01920981-001921067-counter.json",
+        "query": "1958 interviews found working-class deference to the aristocracy still present",
+        "direction": "counter"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "1958 interviews found working-class deference to the aristocracy still present",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/e201cc04-63e7-4d42-a695-fd06bd424db8.txt",
+          "sha256": "6bd8d9f29961b1ee10812fa227970c7842335b1115eb800396a5f278e2b2d4a7",
+          "bytes": 78350
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/8ca24967-8fdf-4176-b0f2-e64cd7cd2a77.txt",
+          "sha256": "181b5e8fd00678e1c6f0d7581d8d266197fd8f46f048ff5b5c948b11520e868f",
+          "bytes": 29746
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001921181-001921238",
+      "direction": "support",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/11-01921181-001921238-support.json",
+        "query": "British workers became less willing to accept the authority of social betters after 1968",
+        "direction": "support"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "British workers became less willing to accept the authority of social betters after 1968",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/691f45b7-93fb-452a-a7b6-35e6bcfa742c.txt",
+          "sha256": "999f929a20714a0bb14226b5f1522fb6f0b10823d133d3ab4a50a32706141a1e",
+          "bytes": 590214
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/b2a16738-0572-4280-a247-cba7aa8a5a70.txt",
+          "sha256": "b1dfd34628f17d88935acfb2d31512430ba66700252067f7504874d4868f6e61",
+          "bytes": 36839
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/d58cb4b6-656a-41f3-b27f-39ccc0f6b3e7.txt",
+          "sha256": "1c8023c41bc4a70bbf329f172603070b1948a090567f073c28536eb5210c80fb",
+          "bytes": 23562
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001921181-001921238",
+      "direction": "counter",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/12-01921181-001921238-counter.json",
+        "query": "McKenzie and Silver 1968 Angels in Marble deference thesis working class Conservatives",
+        "direction": "counter"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "McKenzie and Silver 1968 Angels in Marble deference thesis working class Conservatives",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/816b97af-de27-43f3-8dea-6ab6e2ced85c.txt",
+          "sha256": "6bd8d9f29961b1ee10812fa227970c7842335b1115eb800396a5f278e2b2d4a7",
+          "bytes": 78350
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001923682-001923775",
+      "direction": "support",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/15-01923682-001923775-support.json",
+        "query": "Sex Disqualification Removal Act 1919 women admitted to professions",
+        "direction": "support"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "Sex Disqualification Removal Act 1919 women admitted to professions",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [],
+      "byte_preserved": false,
+      "inline_only": true
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001923682-001923775",
+      "direction": "counter",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/16-01923682-001923775-counter.json",
+        "query": "UK civil service marriage bar lasted until 1946 and equal pay until 1954",
+        "direction": "counter"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "UK civil service marriage bar lasted until 1946 and equal pay until 1954",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/cc7120a9-a19e-428a-a2e6-e93582c96dae.txt",
+          "sha256": "a9b4b0a5560154bf3d847dd89ba6647e1233bd94cec3072c4c1b118e221d940c",
+          "bytes": 27032
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/17f35f91-faa8-49f6-9233-713bf1f28835.txt",
+          "sha256": "6b9a6efbcd08832845f8911a2c20a89c6c82776208e755a95d97dddffc4bda1e",
+          "bytes": 22630
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/6b9a9215-1698-4d90-8913-82d660571bc9.txt",
+          "sha256": "366bfcf869cdda433092b1521b853325383f2d966f75a3c2744d5272bae032b5",
+          "bytes": 30302
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001929213-001929269",
+      "direction": "support",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/17-01929213-001929269-support.json",
+        "query": "European Community average farm size more than doubled 1950 to 1980",
+        "direction": "support"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "European Community average farm size more than doubled 1950 to 1980",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/ffaed730-a56f-4471-a7d2-3650e5936b6e.txt",
+          "sha256": "2fed1e35f6b7143c65c6ee135cf7859b13c7d2c1d2f36249166470fdcf02d4d2",
+          "bytes": 23264
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001929213-001929269",
+      "direction": "counter",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/18-01929213-001929269-counter.json",
+        "query": "share of employment in small manufacturing plants rose after 1970",
+        "direction": "counter"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "share of employment in small manufacturing plants rose after 1970",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/74df5b82-2354-47a3-bb2a-97ba5942f1cd.txt",
+          "sha256": "07e4d02344f828a59936973698a1fcd35dfccee8a20e0c9bd8f7fa3de1519347",
+          "bytes": 49686
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/f7248754-e4d9-4b55-90d6-9d921595e973.txt",
+          "sha256": "38037fa27b11423ec6e3110446913b8bea93c46c3c895e0cd93c3c76f6ad7a50",
+          "bytes": 879153
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/0b0927da-3931-447a-bf9f-333220aea72d.txt",
+          "sha256": "a5f8a972a0a765865bec5b60432636511dafb17501b1b23bf82c54361fb5f6cb",
+          "bytes": 70662
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001959136-001959220",
+      "direction": "support",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/19-01959136-001959220-support.json",
+        "query": "British consumer cooperative membership nearly 13 million in 1961",
+        "direction": "support"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "British consumer cooperative membership nearly 13 million in 1961",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/3507c751-3207-41a1-8d13-52d4c555945b.txt",
+          "sha256": "aa9ec28254aef868ed37dfbe4ddeb62042ce107cd59de9effd7681dd0733c5ee",
+          "bytes": 77568
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001959136-001959220",
+      "direction": "counter",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/20-01959136-001959220-counter.json",
+        "query": "British consumer cooperative membership 10.2 million in 1980 market share decline",
+        "direction": "counter"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "British consumer cooperative membership 10.2 million in 1980 market share decline",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/6443ed40-8437-43ac-9534-42072d694be4.txt",
+          "sha256": "c2086a6671add4868a20f85e8685e6b98528ac0ea6fb82af3414a6b5ed919046",
+          "bytes": 63851
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/1c348a69-f00c-44f2-8a6a-3e918ad61a60.txt",
+          "sha256": "aa9ec28254aef868ed37dfbe4ddeb62042ce107cd59de9effd7681dd0733c5ee",
+          "bytes": 77568
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/658e286a-34ec-4fe0-a8ea-f2a00a95a127.txt",
+          "sha256": "60b00d0895c86f792b659e700c03e8c7c6fff7475a99e3907fd9cb117857dac6",
+          "bytes": 48332
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001977559-001977618",
+      "direction": "support",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/21-01977559-001977618-support.json",
+        "query": "percent of US employees covered by profit sharing 2002 General Social Survey",
+        "direction": "support"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "percent of US employees covered by profit sharing 2002 General Social Survey",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/abd11f40-c61b-4650-95ef-84f18562b964.txt",
+          "sha256": "f140e4e5d53baef25b774f6cc88a504dba5ea1578f41529ecbbd142f38f386ab",
+          "bytes": 100477
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001977559-001977618",
+      "direction": "counter",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/22-01977559-001977618-counter.json",
+        "query": "most US private sector employees were not covered by profit sharing in 2002",
+        "direction": "counter"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "most US private sector employees were not covered by profit sharing in 2002",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/631a66cd-0c94-4255-84ee-695d630420c5.txt",
+          "sha256": "19f2d6dbc2eab410303afbaf6ddce9c5f010080bbeeadcb712f23d5f8eeaf26d",
+          "bytes": 20012
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/ad853985-c877-4bcf-8614-cb8f80bdb8c6.txt",
+          "sha256": "04a2024aa28ce15665f36be37065ecd672a2e733280fac277063a7384ffaeec3",
+          "bytes": 89635
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/cfe89e16-ff71-4fc7-8791-374a5ea47906.txt",
+          "sha256": "f42b1ffb424d1c399074e26d983a100b493d76e283116cc1307d7c3c4ddbebd4",
+          "bytes": 115045
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/1e97d9ec-8b77-4e52-a3da-21511187bf15.txt",
+          "sha256": "27c876007419d6ab5908bb2753b299132bc54c92f9a255ee8abc766753115cde",
+          "bytes": 20675
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001981860-001981922",
+      "direction": "support",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/23-01981860-001981922-support.json",
+        "query": "worker cooperatives became the predominant form of British industry",
+        "direction": "support"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "worker cooperatives became the predominant form of British industry",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/1b7b7726-134c-4f8c-b91e-7bfc10c85d4b.txt",
+          "sha256": "a0da69061063b58192f77413dc15bc399be597947d6d80cec2848095b3f734cb",
+          "bytes": 734864
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-001981860-001981922",
+      "direction": "counter",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/24-01981860-001981922-counter.json",
+        "query": "number of worker co-operatives and their employees in the UK",
+        "direction": "counter"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "number of worker co-operatives and their employees in the UK",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/b03d2db9-4a88-4d9b-99e7-fc4727e53116.txt",
+          "sha256": "c2621f11bf4ad8a3257240fc6bfd8033c4e5843b087fb8060600aa6db6d02077",
+          "bytes": 75975
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/38ba0b1d-489f-4e87-ad88-a19b17843401.txt",
+          "sha256": "fd185f8a3213a7d8cdf7e6abb7b2a5eea86904f065b5de8095ea3b6b0e928efa",
+          "bytes": 65866
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-002489772-002489920",
+      "direction": "support",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/25-02489772-002489920-support.json",
+        "query": "acres of Irish land transferred to tenant purchasers by 1920",
+        "direction": "support"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "acres of Irish land transferred to tenant purchasers by 1920",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/421393a1-d503-4cec-9620-5b25254adc66.txt",
+          "sha256": "9f5ea26094e16d31aadda414dff34d6fd2e7cc2f2acc5da902b8c58dc99052f0",
+          "bytes": 43070
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/9a240bf9-457b-487b-8aad-d130b7016dfd.txt",
+          "sha256": "ca84ef463f9a8291daeb38975880de9c625ad6876121b1954cad8079c1cc9bf8",
+          "bytes": 44036
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-002489772-002489920",
+      "direction": "counter",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/26-02489772-002489920-counter.json",
+        "query": "Irish land purchase acres agreed but not yet vested 1909",
+        "direction": "counter"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "Irish land purchase acres agreed but not yet vested 1909",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/996eb4de-a9d7-4cb7-99ec-e7255b81a81f.txt",
+          "sha256": "c993ebf107eeeb73a30ff5f4e98f15208a78db449f8765d955f120c4fb3fa9d0",
+          "bytes": 171541
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-002640551-002641067",
+      "direction": "support",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/27-02640551-002641067-support.json",
+        "query": "volume of French agricultural production doubled between 1960 and 2004",
+        "direction": "support"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "volume of French agricultural production doubled between 1960 and 2004",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/eedab253-c5f1-45a6-a608-272054f2fac0.txt",
+          "sha256": "d3feda3e5f4bb7ee0d2652909ad59fc93d8e3e35dfd8b9f9ec886dd7d9c8a4d3",
+          "bytes": 48016
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-002640551-002641067",
+      "direction": "counter",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/28-02640551-002641067-counter.json",
+        "query": "French rural communes lost population while cities grew after 1851",
+        "direction": "counter"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "French rural communes lost population while cities grew after 1851",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/85cb7724-9527-4365-814c-5951bda90d06.txt",
+          "sha256": "709dcddc690a39a4ad77925f60ac8116ee05a0f9b09fefcece6cd831f157c7ad",
+          "bytes": 25255
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/c98ae9ed-d545-4abd-9206-a703ee4a7e8c.txt",
+          "sha256": "6c836f4a67bf66a50c1eb32a1608f05c772c388bbcb06d86a037e630b4f3cb33",
+          "bytes": 62620
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-002763771-002763986",
+      "direction": "support",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/29-02763771-002763986-support.json",
+        "query": "US employees eligible for profit sharing rose between the 1990s and 2006",
+        "direction": "support"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "US employees eligible for profit sharing rose between the 1990s and 2006",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/82225a2f-5d96-4b8a-af9b-ca95c2707fd7.txt",
+          "sha256": "04a2024aa28ce15665f36be37065ecd672a2e733280fac277063a7384ffaeec3",
+          "bytes": 89635
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/bf3301f7-ab81-4b35-8dba-ebd1e333bc05.txt",
+          "sha256": "f140e4e5d53baef25b774f6cc88a504dba5ea1578f41529ecbbd142f38f386ab",
+          "bytes": 100477
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    },
+    {
+      "candidate_id": "txt-5386516eaf-002763771-002763986",
+      "direction": "counter",
+      "precall": {
+        "file": "audit/r4-bidirectional/precall/30-02763771-002763986-counter.json",
+        "query": "profit sharing covered only a minority of US employees in 2006",
+        "direction": "counter"
+      },
+      "tool": "WebSearch",
+      "search_term_passed": "profit sharing covered only a minority of US employees in 2006",
+      "tool_echoed_args": false,
+      "tool_returned_call_id": false,
+      "tool_returned_timestamp": false,
+      "artifact_files": [
+        {
+          "artifact": "audit/r4-bidirectional/returns/87e06617-6ef2-49b2-b9a4-ad230257210c.txt",
+          "sha256": "f140e4e5d53baef25b774f6cc88a504dba5ea1578f41529ecbbd142f38f386ab",
+          "bytes": 100477
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/68cb0092-a4fc-4572-995b-2d11e3c91aae.txt",
+          "sha256": "f42b1ffb424d1c399074e26d983a100b493d76e283116cc1307d7c3c4ddbebd4",
+          "bytes": 115045
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/3bf02ae9-3f7a-4a4f-ae9c-4284b3246eb4.txt",
+          "sha256": "67ecaebed4c7fb2c20a16136e7f0c4744730180e43b2b6427e74f257e082046e",
+          "bytes": 54887
+        },
+        {
+          "artifact": "audit/r4-bidirectional/returns/e9d54255-5a95-4f82-b2c1-ad121d54e181.txt",
+          "sha256": "27c876007419d6ab5908bb2753b299132bc54c92f9a255ee8abc766753115cde",
+          "bytes": 20675
+        }
+      ],
+      "byte_preserved": true,
+      "inline_only": false
+    }
+  ],
+  "unassigned_same_window": [
+    {
+      "artifact": "audit/r4-bidirectional/returns/unassigned-same-window/028e60d0-7ccb-4f1a-a339-6453e3fff40d.txt",
+      "sha256": "3beef93caf017f98d4014154d35259564047e8033d04ee4bac7e95d0f3fd9046",
+      "bytes": 201110,
+      "note": "Written in the same support-call window. Not named on a result line this session can attribute, so not tied to a candidate."
+    },
+    {
+      "artifact": "audit/r4-bidirectional/returns/unassigned-same-window/2e9e9b04-10ae-4909-a231-15464e6148ef.txt",
+      "sha256": "5812d90ea06e0a39e32797cb363c931ee3c5c4507910916f44a0a310e2341d30",
+      "bytes": 91784,
+      "note": "Written in the same support-call window. Not named on a result line this session can attribute, so not tied to a candidate."
+    },
+    {
+      "artifact": "audit/r4-bidirectional/returns/unassigned-same-window/5e3fef09-0a56-4037-8f7f-629d5950e2f9.txt",
+      "sha256": "60a1fdc9654c58d7e55f4b1d65b9df0d6ee94145951570a7c6d7f3f87afd6856",
+      "bytes": 124622,
+      "note": "Written in the same support-call window. Not named on a result line this session can attribute, so not tied to a candidate."
+    },
+    {
+      "artifact": "audit/r4-bidirectional/returns/unassigned-same-window/746fa83b-8863-4b47-8b84-a65892c78ef2.txt",
+      "sha256": "27c876007419d6ab5908bb2753b299132bc54c92f9a255ee8abc766753115cde",
+      "bytes": 20675,
+      "note": "Written in the same support-call window. Not named on a result line this session can attribute, so not tied to a candidate."
+    },
+    {
+      "artifact": "audit/r4-bidirectional/returns/unassigned-same-window/819acdb3-9992-490d-9e7b-c57e22661423.txt",
+      "sha256": "41ab5e30f89f9c014b8d43d045e2f6862a60d1f8b00182c88c9db76cbd80f7d8",
+      "bytes": 28267,
+      "note": "Written in the same support-call window. Not named on a result line this session can attribute, so not tied to a candidate."
+    },
+    {
+      "artifact": "audit/r4-bidirectional/returns/unassigned-same-window/86eb437d-97f5-4cd3-82f2-8346e7d89e2a.txt",
+      "sha256": "fc3cb574138cfae69d4d792103c2554d450303e3bcf57b9beb8a1179b1040f97",
+      "bytes": 86872,
+      "note": "Written in the same support-call window. Not named on a result line this session can attribute, so not tied to a candidate."
+    },
+    {
+      "artifact": "audit/r4-bidirectional/returns/unassigned-same-window/8e9e9ea2-f49a-49c5-82f7-bbb64a6c30c8.txt",
+      "sha256": "e9520df6685e8fd71812d4b6fe472d421b04ed540bc747ca0332449b22ab38dd",
+      "bytes": 290344,
+      "note": "Written in the same support-call window. Not named on a result line this session can attribute, so not tied to a candidate."
+    },
+    {
+      "artifact": "audit/r4-bidirectional/returns/unassigned-same-window/b98594ae-0892-48fb-b721-f32a995c1f07.txt",
+      "sha256": "4ac31593849037781b6e4e78627b1679f78f024aaae414a80b4bada1ba128951",
+      "bytes": 76735,
+      "note": "Written in the same support-call window. Not named on a result line this session can attribute, so not tied to a candidate."
+    },
+    {
+      "artifact": "audit/r4-bidirectional/returns/unassigned-same-window/c526a327-a436-43d7-9bd1-37646478a510.txt",
+      "sha256": "5812d90ea06e0a39e32797cb363c931ee3c5c4507910916f44a0a310e2341d30",
+      "bytes": 91784,
+      "note": "Written in the same support-call window. Not named on a result line this session can attribute, so not tied to a candidate."
+    },
+    {
+      "artifact": "audit/r4-bidirectional/returns/unassigned-same-window/e9e06ef1-900b-4dd3-b940-eb543ed56365.txt",
+      "sha256": "f42b1ffb424d1c399074e26d983a100b493d76e283116cc1307d7c3c4ddbebd4",
+      "bytes": 115045,
+      "note": "Written in the same support-call window. Not named on a result line this session can attribute, so not tied to a candidate."
+    },
+    {
+      "artifact": "audit/r4-bidirectional/returns/unassigned-same-window/ee25b0c0-5c78-4c2c-a1bc-07612b1a0d0f.txt",
+      "sha256": "881dbe5d5782a7e816c7a98c8efb5063c527c72fb2fb9ab32d959dab6002d438",
+      "bytes": 545214,
+      "note": "Written in the same support-call window. Not named on a result line this session can attribute, so not tied to a candidate."
+    },
+    {
+      "artifact": "audit/r4-bidirectional/returns/unassigned-same-window/f677bc60-35b6-4ac4-b68b-6b41f4adbed0.txt",
+      "sha256": "082d132f55462f16bba4acdb3e8d0e535465d60a1bbaa54091be740c7184f3d2",
+      "bytes": 302962,
+      "note": "Written in the same support-call window. Not named on a result line this session can attribute, so not tied to a candidate."
+    }
+  ],
+  "not_scored_without_quote": [
+    "txt-5386516eaf-001199645-001199772 counter has no artifact",
+    "txt-5386516eaf-001921181-001921238 support artifacts do not contain deference",
+    "txt-5386516eaf-001923682-001923775 support has no artifact",
+    "txt-5386516eaf-002489772-002489920 wiki page has no publication date",
+    "txt-5386516eaf-002640551-002641067 national output is not the peasant-property condition"
+  ]
+}

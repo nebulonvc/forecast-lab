@@ -1,0 +1,49 @@
+{
+  "id": "txt-5386516eaf-001922557-001922599",
+  "assessment": {
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "id": "txt-5386516eaf-001922557-001922599",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "observation_end": "2010-12-31",
+    "scope": "人口对资本和就业的比率逐渐变小。",
+    "reason": "表内1950–60到1990–2000年，劳动力增速依次为1.10、1.70、2.60、1.60、1.10，人口增速依次为1.10、1.60、2.00、1.20、1.00。1960–2000年劳动力增速高于人口。反证文件写2000–2010年劳动力增速降到0.8%，但没有写出同期人口增速。",
+    "limitation": "资本不在这两份正文里。0.8%没有对应的人口增速，比率在2000年后是否逆转未证，不计这一比较。表内2000年后标为 projected 的数字不用作已发生结果。智力增加这一前提没有被这两份正文证明。",
+    "evidence_ids": [
+      "ev-r4b-bls",
+      "ev-r4b-bls-slow"
+    ],
+    "method": "两列增速都在支持检索保存的原文件里。0.8%在反证检索保存的原文件里。",
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-r4b-bls",
+        "quote": "Population growth ... 1.10 1.60 2.00 1.20 1.00 1.10",
+        "relation": "support",
+        "limitation": "人口年代增速，只取到1990–2000。",
+        "observation_end": "2000-12-31",
+        "publication_date": null
+      },
+      {
+        "evidence_id": "ev-r4b-bls",
+        "quote": "Labor force growth ... 1.10 1.70 2.60 1.60 1.10 1.10",
+        "relation": "support",
+        "limitation": "劳动力年代增速，1960–2000年高于对应的人口增速。",
+        "observation_end": "2000-12-31",
+        "publication_date": null
+      },
+      {
+        "evidence_id": "ev-r4b-bls-slow",
+        "quote": "The annual growth of the labor force dropped to 0.8 percent",
+        "relation": "boundary",
+        "limitation": "只有劳动力增速。",
+        "observation_end": "2010-12-31",
+        "publication_date": null
+      }
+    ],
+    "remaining_gap": ""
+  }
+}

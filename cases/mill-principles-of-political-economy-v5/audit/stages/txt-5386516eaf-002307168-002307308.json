@@ -1,0 +1,81 @@
+{
+  "id": "txt-5386516eaf-002307168-002307308",
+  "assess": {
+    "id": "txt-5386516eaf-002307168-002307308",
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "observation_end": null,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-fao-nutrients",
+        "quote": "soil nutrients exported with crops are not being replenished",
+        "relation": "boundary",
+        "limitation": "一份指南不是永久的政治思考史。",
+        "observation_end": "2011-12-31",
+        "publication_date": null
+      }
+    ],
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "土壤肥力被输出这一物理事实，此后注定成为政治家思考中的永久因素。",
+    "reason": "FAO 指南写作物带走的土壤养分在撒哈拉以南非洲没有得到补充。这是政策文本里的一个事实，不是“此后一直是政治家思考中的永久因素”。",
+    "limitation": "正文没有核到发布年月日，不填2011。一份指南不是1909年以来的连续政治史。",
+    "evidence_ids": [
+      "ev-fao-nutrients"
+    ],
+    "remaining_gap": "缺1909年之后各国政治家持续把土壤养分输出当作政策因素的同对象记录。",
+    "method": "检索养分输出与政策。一份指南不够“永久因素”。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-002307168-002307308",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-fao-nutrients"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-fao-nutrients"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "this round"
+      },
+      {
+        "role": "counter",
+        "query": "this round"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://www.fao.org/4/i2215e/i2215e02.pdf"
+    ],
+    "reason": "对象或量词不符的材料只作边界，不计分。"
+  }
+}

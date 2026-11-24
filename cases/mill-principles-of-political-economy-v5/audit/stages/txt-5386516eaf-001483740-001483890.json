@@ -1,0 +1,44 @@
+{
+  "id": "txt-5386516eaf-001483740-001483890",
+  "plan": {
+    "queries": [],
+    "note": "unclear 按抽取规则保留，本轮不新检索。"
+  },
+  "select": {
+    "urls": [],
+    "reason": "没有可核验 forecast 需要入选的来源。没有 executed=true。"
+  },
+  "assess": {
+    "id": "txt-5386516eaf-001483740-001483890",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "definition",
+    "scope": "商业正在迅速使战争变得过时。",
+    "reason": "抽取 kind 已是 unclear，不是可核验 forecast。按规则保留，不补成可计分预测。",
+    "limitation": "不把 unclear 条改写成正确、部分符合或错误。",
+    "evidence_ids": [],
+    "method": "沿用 canonical 抽取结果，不新检索、不升格。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [],
+    "remaining_gap": "抽取 kind 已是 unclear，不是可核验 forecast。按规则保留，不补成可计分预测。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001483740-001483890",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": []
+}

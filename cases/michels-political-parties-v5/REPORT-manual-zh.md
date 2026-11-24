@@ -1,0 +1,204 @@
+# 米歇尔斯《政党》：出版后预测人工核查
+
+- 案例目录：`cases/michels-political-parties-v5/`
+- 出版日期：1911（原著）；1915英文增补战争章另行辨认
+- 截止日：2026-11-15（Asia/Shanghai）
+
+## 方法说明
+
+以85e6da1工具将全文1,034,505字符切为300块，全部通读（matter_spans=[]），手写300份答卷、52条原始条目，经仓库确定性处理为51候选、47resolvable与4reported/unclear；无人工按重复或含糊降级。下文工具所称“候选47”指可核验子集，不是全部51候选。本稿以 v5 抽取的候选句（`data/claims.jsonl` 中可判定的条目）为起点，由助手逐条对照书中原文人工复核：先剔除非预测（出版前已发生的史实、一般规律、规范建议、反事实推演等），再对每条预测用 Exa 检索公开来源并抓取存档（`data/sources/`，sha256 记于 `data/evidence.jsonl`）核对至截止日。没有写明终点的预测按“出版日→2026-11-15”的隐含窗口判断；写明的终点未到、或条件句的前提从未出现，一律记“暂无法判断”，不强行判对错。所有来源均为实际抓取并存档的公开页面或文件；本稿未使用 DeepSeek 自动核验结论作为最终判断。
+
+五级判断：正确／趋势符合（方向对、程度或时点未完全到位）／部分符合（一部分成立）／错误／暂无法判断。严格胜率＝正确÷可判定；加权胜率＝（正确＋0.75×趋势符合＋0.5×部分符合）÷可判定；错误率＝错误÷可判定；可判定＝前四级之和。
+
+## 统计
+
+候选 47 条，剔除非预测 0 条，计入 **47 条预测**，其中 **28 条可判定**。
+
+| 判断 | 条数 |
+|---|---:|
+| 正确 | 3 |
+| 趋势符合 | 0 |
+| 部分符合 | 18 |
+| 错误 | 7 |
+| 暂无法判断 | 19 |
+
+| 指标 | 数值 |
+|---|---:|
+| 严格胜率 | **10.7%**（3/28） |
+| 加权胜率 | **42.9%** |
+| 错误率 | **25.0%**（7/28） |
+| 未定占比（暂无法判断/预测） | 40.4%（19/47） |
+
+## 总体评价
+
+本文主要是组织社会学而非事件时间表。保留全部47条可核验预测，严格区分条件是否出现、组织权力与阶级指标，以及永久性理论断言与已观察案例；没有将未搜到反例当作正确，也没有给宽泛理论自动判趋势。
+
+## 逐条判断
+
+编号为 `data/claims.jsonl` 中可判定候选的顺序号。
+
+### 正确（3 条）
+
+- **#25** 「The Poles, widely dispersed, and dis- membered among three separate powers, have preserved their nationality a…」  
+  判断：**正确**。波兰的民族意识和抵抗在斯大林时代仍保存了民族自治与真实生活空间；二战资料也记载民众反对去民族化并保护文化，民族未被强权消灭的结果在观察窗内成立。  
+  来源：<https://www.hoover.org/research/how-solidarity-arose>；<https://eng.ipn.gov.pl/download/2/32615/GmitrukJWiesichlopiENCorkor-skonwertowany1.pdf>
+- **#37** 「The constitution of a new dominant minority would, in addition, be especially facilitated by the manner in whi…」  
+  判断：**正确**。美国国会图书馆据档案记载，布尔什维克夺权后由小型精英集团以法令和恐怖统治，重大决策集中于党内高层，符合革命过渡成为领导人专政的主结果。  
+  来源：<https://www.loc.gov/exhibits/archives/intn.html>；<https://www.cambridge.org/core/books/red-petrograd/076475776FD63ADF1F4AFE2BA346ABDC>
+- **#41** 「the truth of this axiom. One of these is the professor of philosophy, and socialist deputy of the Swedish Uppe…」  
+  判断：**正确**。苏联在1922—1991年间仍有明确的最高领导序列，领导人多通过掌握共产党领导权取得权力，社会主义者胜利后并未消除领导与被领导的政治区分。  
+  来源：<https://www.history.com/articles/soviet-union-leaders-order>
+
+### 部分符合（18 条）
+
+- **#1** 「Such occurrences serve to confirm the experience that the conservatives also endeavour to regulate their actio…」  
+  判断：**部分符合**。竞争政党通过候选人、纲领和选举争取代表权，群众选举渠道确实成为政治竞争的重要方式；但卡特尔党研究同时指出群众党模式衰退及公众联系减弱，不能认定精英逻辑已被完全取代。  
+  来源：<https://www.dbnl.org/tekst/daal024stat01_01/daal024stat01_01_0010.php>；<https://czasopisma.uksw.edu.pl/p/article/download/2378/2225/3772>
+- **#6** 「An electoral right exists, but no electoral duty. Until this duty is superimposed upon the right, it appears p…」  
+  判断：**部分符合**。SNP研究确实记载多数新增党员不活跃、领导层集中权力，但同一材料又记载约五万党员参加领导选举，不能将所有党务都概括为少数人参与。  
+  来源：<https://blogs.lse.ac.uk/politicsandpolicy/scotland-has-a-new-first-minister-but-is-it-the-same-old-scottish-politics/>
+- **#8** 「Thus the gulf between the leaders and the rest of the party becomes ever wider, until the moment arrives in wh…」  
+  判断：**部分符合**。前议员访谈显示，党鞭约束有时使工人出身者无法按阶级立场投票，向上流动顾虑也影响行为；但这些人仍保有工人阶级认同，并非一律丧失团结感。  
+  来源：<https://theconversation.com/beyond-my-dad-was-a-toolmaker-interviews-with-former-politicians-reveal-what-its-really-like-to-be-working-class-in-parliament-232240>
+- **#10** 「The dismissal by the organised masses of a universally esteemed leader would discredit the party throughout th…」  
+  判断：**部分符合**。澳大利亚选举研究报告说，转离工党的选民普遍不满Rudd被撤换；罢免带来政治代价这一部分得到支持。但BBC同时记载其支持率已在被撤换前下滑，不能确认“普遍受尊重”前提及灾难程度。  
+  来源：<https://www.smh.com.au/national/rudd-dumping-cost-votes-survey-20110407-1d6cu.html>；<https://www.bbc.co.uk/news/10399230>
+- **#11** 「Every vigorous political party which is subversive in its aims is predestined to become for a time an exercise…」  
+  判断：**部分符合**。战间期英国独立工党确实同时容纳激进知识分子、工人派别及素食生活改革，并以全面社会主义改造为目标，符合激进党成为多种革新试验场的一部分。  
+  来源：<https://ivu.org/home/2780-history-thesis-political.html>；<https://www.leftvoice.org/excluded-from-the-npa-we-begin-the-process-of-building-a-new-revolutionary-organization-statement-of-296-npa-activists/>
+- **#13** 「Arturo Labriola, isting economic order. who has followed the German movement with keen interest and lively sym…」  
+  判断：**部分符合**。1918年10月SPD参与包含自由派的议会政府，并继续寻求宪法改革；但同一材料也记载此前的运动分裂以及随后超越改革的十一月革命，不能判定改良主义全面无阻力地扩散。  
+  来源：<https://www.weimarer-republik.net/en/weimar-gateway/timeline-of-the-weimar-republic/1918/october-1918/>；<https://www.weimarer-republik.net/en/weimar-gateway/people-whos-who-of-the-weimar-republic/parties/spd/>
+- **#16** 「At the same time the apparatus of the socialist bureaucracy would be greatly developed.」  
+  判断：**部分符合**。资料记载SPD以支薪职员替代早期志愿者，并在1913年雇用约4,000名全职官员；官僚扩张结果与预测相符，但尚不能将其全部归于特定互助福利路线。  
+  来源：<https://theanarchistlibrary.org/library/wild-socialism-workers-councils-in-revolutionary-berlin-1918-21>
+- **#19** 「natural and normal development of the organization will impress upon the most revolutionary of parties an inde…」  
+  判断：**部分符合**。德国社会运动实证研究发现组织趋于官僚化且行动更温和，支持组织发展伴随保守化的方向；同一研究明确发现正式组织也可能激进，否定不褪色、无例外的保守印记。  
+  来源：<https://doi.org/10.17813/maiq.4.2.l2680365q32h6616>
+- **#21** 「The party will then break up into two distinct organisms, and in each of these there will be renewed the oliga…」  
+  判断：**部分符合**。USPD分裂后领导层初期几乎由传统中间派构成，显示领导精英延续；但学术研究发现地方组织能违背全国领导意愿决定党政策，两个新组织都重现寡头支配的结论不完整。  
+  来源：<https://en.wikipedia.org/wiki/Independent_Social_Democratic_Party_of_Germany>；<https://www.cambridge.org/core/services/aop-cambridge-core/content/view/109518D106574FD97ECAF95BEDFAA194/S0020859000005599a.pdf/revolutionary_socialist_internationalism_rankandfile_reaction_in_the_uspd.pdf>
+- **#23** 「been notably attenuated by theoretical and practical democracy, and by the varying necessities of the case abo…」  
+  判断：**部分符合**。1977年的研究记载德国工会候选名单常由地方领导机构组成，重要地区职位受上级影响，说明权力集中未随民主化完全消失；IG Metall同时公开强调自下而上的民主结构。  
+  来源：<https://www.bpb.de/shop/zeitschriften/apuz/archiv/530403/innerverbandliche-demokratie-privatsadie-oder-politikum/>；<https://www.igmetall.de/en/ueber-uns/organisation-und-aufbau>
+- **#28** 「Corruption for honourable motives is likely to be succeeded by corruption for dishonourable. If the method wer…」  
+  判断：**部分符合**。Fimi Media案报道记载同一非法资金同时使HDZ和Sanader本人获益，并称党内将腐败视为常态，支持党用资金与个人侵吞并存的风险。  
+  来源：<https://n1info.hr/english/news/a575501-Judge-Insatiable-Sanader-used-his-power-to-detriment-of-all-citizens/>
+- **#31** 「Bernstein has said with good reason that even if none but the most important political and administrative ques…」  
+  判断：**部分符合**。瑞士公投在20世纪后半叶出现参与率下降，且较多直接民主程序与较低选举参与有关，支持参与负荷问题的一部分；研究却把关系解释为长期适应而非即时投票疲劳。  
+  来源：<https://aceproject.org/ace-en/focus/direct-democracy/cs-swiss>；<https://kops.uni-konstanz.de/server/api/core/bitstreams/34b0ad89-9ad4-4f8e-b992-dc363aad83ee/content>
+- **#36** 「But the new collectivist society, the society without classes, which is to be established upon the ruins of th…」  
+  判断：**部分符合**。苏联的社会财富管理确实依赖庞大行政层级及中央计划，支持集体管理仍需广泛官僚机构的观察结果；但不能把实际苏联直接等同原文的无阶级、严格可撤回任职社会。  
+  来源：<https://www.encyclopedia.com/history/modern-europe/russian-soviet-and-cis-history/command-economy>
+- **#38** 「The danger is imminent lest the social revolution should replace the visible and tangible dominant classes whi…」  
+  判断：**部分符合**。共产主义社会研究记载苏联和东欧形成明显分层、精英子女通过关系及教育延续地位，支持革命后新特权的问题；但中国研究又显示旧精英后代优势回归，不能将一切都说成全新隐蔽寡头的替换。  
+  来源：<https://doi.org/10.1093/oxfordhb/9780199602056.013.029>；<https://www.nber.org/papers/w27053>
+- **#40** 「The leadership of the socialist party may fall into the hands of persons whose practical tendencies are in opp…」  
+  判断：**部分符合**。New Labour在集体劳工权利方面拒绝逆转若干限制，符合工人党领导可能偏离工会利益的担忧；但同一材料记载最低工资和个体劳动权利改善，并非所有政策都服务于完全相反的利益。  
+  来源：<https://historyandpolicy.org/policy-papers/papers/trade-unions-and-the-law-history-and-a-way-forward/>
+- **#42** 「Thus the social revolution would not effect any real modifiThe socialists cation of the internal structure of …」  
+  判断：**部分符合**。莫斯科1922—1923年研究发现新的统治集团与工人之间已形成剥削和对抗关系，支持革命胜利仍可能延续统治区分；但早期妇女和教育改革说明不能说社会主义的一切实际理想都同时落空。  
+  来源：<https://doi.org/10.1080/09546540600970856>；<https://alphahistory.com/russianrevolution/soviet-social-reforms/>
+- **#45** 「Now this predisposition towards free inquiry, in which we cannot fail to recognize one of the most precious fa…」  
+  判断：**部分符合**。跨社会WVS研究发现生活机会扩大伴随更强的解放价值倾向，支持经济和文明条件改善的一部分；但东亚比较发现高教育不必然带来相同自我表达变化，灌输教育也可增强威权动员。  
+  来源：<https://pmc.ncbi.nlm.nih.gov/articles/PMC2848347/>；<https://doi.org/10.1186/s40856-018-0034-9>
+- **#47** 「When democracies have gained a certain stage of development, they undergo a gradual transformation, adopting t…」  
+  判断：**部分符合**。Podemos和五星运动研究发现线上协商仍由领导层控制议题和时机，符合民主运动重新集中权力的一阶段；德国绿党及工会民主研究又表明领导支配并非不可避免。  
+  来源：<https://ijoc.org/index.php/ijoc/article/download/10804/2874>；<https://journals.sagepub.com/doi/10.1177/0010414089022002004>
+
+### 错误（7 条）
+
+- **#5** 「In certain isolated cases, where the questions involved are extremely simple, and where the delegated authorit…」  
+  判断：**错误**。国际印刷工会被研究者明确列为成熟组织中真实民主的例外；西欧政党代表研究也发现，在基层与全国领导冲突时，一些代表更重视基层立场。这与永久代表制“始终”等于代表支配被代表者的绝对断言不符。  
+  来源：<https://dissentmagazine.org/article/the-printers-and-the-iron-law/>；<https://ejpr.onlinelibrary.wiley.com/doi/10.1111/j.1475-6765.1994.tb00418.x>
+- **#14** 「It is certain that in the German socialist party tendencies exist towards laying greater stress upon such mate…」  
+  判断：**错误**。1912年确有工会合作保险公司成立，但SPD在1921年仍有政治纲领，2025年仍是拥有联邦议员的政治党，并未在观察窗内变成工人保险社。  
+  来源：<https://library.fes.de/fulltext/bibliothek/chronik/band1/e235e824.html>；<https://germanhistorydocs.org/en/weimar-germany-1918-1933/platform-of-the-social-democratic-party-1921>；<https://www.deutschland.de/en/topic/politics/the-spd-parties-in-the-german-bundestag>
+- **#22** 「Naturally no immediate punishment is possible of those who rebel against the authority of the caucus; but at t…」  
+  判断：**错误**。Manchin在2018年违背民主党同僚立场支持Kavanaugh，却在随后的参议院选举连任，直接否定异议议员下次选举“必丢席”的绝对结果。  
+  来源：<https://api.politifact.com/factchecks/2018/nov/15/patrick-morrisey/how-late-did-joe-manchin-decide-kavanaugh-vote/>；<https://www.politico.com/story/2018/11/06/patrick-morrisey-vs-joe-manchin-west-virginia-senate-race-results-2018-963524>
+- **#24** 「The [Prussian] state tends to become a republic of official employees, in which the employees are the only ful…」  
+  判断：**错误**。魏玛时期普鲁士转为有民主议会法律基础的国家，宪制包括男女普选，方向与只有官员享有完整公民权的官员共和国相反。  
+  来源：<https://en.wikipedia.org/wiki/Constitution_of_Prussia_(1920)>；<https://doi.org/10.4324/9781315841816-11>
+- **#32** 「No form of strike, however much it may seem to be inspired by the autonomy of the masses, will be able to kill…」  
+  判断：**错误**。瓦文萨领导罢工并成为团结工会领袖的案例支持常见领导形成；但1977年西班牙鞋业罢工记述明确称代表是可撤回的临时传达人、受大会控制，构成“任何罢工都无法避免独立领袖阶层”的反例。  
+  来源：<https://libcom.org/history/reflections-shoe-industry-strike-assembly-movement-alicante-1977>；<https://www.nobelprize.org/prizes/peace/1983/walesa/speedread/>
+- **#35** 「Should the party be attacked, it will abandon valuable positions previously conquered, and will renounce ancie…」  
+  判断：**错误**。1920年右翼政变攻击共和国时，SPD领导人Wels参与组织总罢工并促使政变崩溃，说明受攻击不必然导致放弃既得阵地；他在1933年也公开反对授权法。  
+  来源：<https://encyclopedia.ushmm.org/content/en/article/otto-wels>
+- **#43** 「The mass will never rule except in abstracto.」  
+  判断：**错误**。Porto Alegre参与式预算把投资和支出的真实决定交给开放地方大会，让数千公民作实际决定并监督结果，不只是抽象称其为统治者，与群众永不实际治理的绝对断言冲突。  
+  来源：<https://www.bostonreview.net/articles/gianpaolo-baiocchi-the-citizens-of-porto-alegre/>
+
+### 暂无法判断（19 条）
+
+- **#2** 「The system here sketched is clear and concise, and it might seem at the first glance that its practical applic…」  
+  判断：**暂无法判断**。研究说明了Rittinghausen直接立法方案的地方议会设计，德国后来也引入直接民主程序；尚未找到按其整套制度实施后自治失败的直接记录。  
+  来源：<https://www.cambridge.org/core/journals/modern-intellectual-history/article/democracy-and-direct-legislation-during-the-french-second-republic/51F134C550FBE51004FB34D93AE0B017>
+- **#3** 「Even if we imagined the means of communication to become much better than those which now exist, how would it …」  
+  判断：**暂无法判断**。Your Party允许全体党员网上投票，Podemos也以网上程序处理多次党务选举；这些材料不能证明或推翻上万人按日常党务频率在同一地点开会的可行性。  
+  来源：<https://www.yourparty.uk/briefing/>；<https://sequentech.io/case-study/bringing-online-voting-to-spanish-political-party-podemos/>
+- **#4** 「Unless the rank and file of the party keep taries to the local branches. very much on the alert, unless they a…」  
+  判断：**暂无法判断**。马尔堡研究指出Michels的地方经验不代表整个德国劳工运动；现有资料未同时记录党员警惕程度和支薪书记是否垄断地方倡议。  
+  来源：<https://academic.oup.com/gh/article-abstract/29/1/23/897025>
+- **#7** 「It is obvious that the dynamic influence of these newcomers over the mass of workers will diminish in proporti…」  
+  判断：**暂无法判断**。比较研究发现上海与圣彼得堡工人对知识分子的从属程度不同，并将差异追溯到历史文化情境；它没有检验知识分子人数增加是否使每人的影响按比例下降。  
+  来源：<https://doi.org/10.1017/s0020859000113689>
+- **#9** 「and which will perhaps render them important even should this This is perfectly natural, for the leaders tacti…」  
+  判断：**暂无法判断**。CPGB材料记载1920年对议会参与的争论，联邦档案馆也记载KAPD拒绝议会道路；但未证明某个已放弃议会策略的党因旧领导的议会技能而继续依赖他们。  
+  来源：<https://weimar.bundesarchiv.de/WEIMAR/DE/Content/Virtuelle-Ausstellungen/Raete-Revolution-Republik/KAPD.html>
+- **#12** 「If the party officials are allowed to decide for themselves who is to enter their charmed circle, the danger a…」  
+  判断：**暂无法判断**。客户主义研究发现党内选拔竞争较弱且领导更占优势，但它检验的是客户主义，不是官员自行决定继任圈子后新思想逐年被拒绝。  
+  来源：<https://ora.ox.ac.uk/objects/uuid:2695a39f-fd0b-4c09-b5dc-bfa69b477d2d/files/rx633f2853>
+- **#15** 「It is evident that an evolution in this direction would attract to the party hundreds of thousands of new memb…」  
+  判断：**暂无法判断**。FES记录1914年党员总数为1,085,905，其他资料也记载组织及服务扩展；但总存量不能直接证明出版后因互助保险路线新增数十万人。  
+  来源：<https://library.fes.de/fulltext/bibliothek/chronik/band1/e235e856.html>
+- **#17** 「In such conditions it is likely that the party representation in the legislature will be restricted to persons…」  
+  判断：**暂无法判断**。资料明确记载意大利1912年开始议员津贴，并有工人代表靠同伴筹款任职的先例；不能用其后有薪制度下的议员构成来判无薪且党贫穷的条件预测。  
+  来源：<https://www.9colonne.it/72685/storia-e-stipendi-br-dei-parlamentari>
+- **#18** 「There is no indication whatever that the power possessed by the oligarchy in party life is likely to be overth…」  
+  判断：**暂无法判断**。1919年SPD大会既批评政府内的党员又向其表示信任；当代评论也承认专业干部支配倾向。但这些材料不能确定寡头权力在“可预见时期”内是否作为制度被推翻。  
+  来源：<https://library.fes.de/fulltext/bibliothek/chronik/band2/e235f110.html>
+- **#20** 「But their submission is feigned they are well aware that if they simply remain glued to their posts, their qua…」  
+  判断：**暂无法判断**。Corbyn在2016年挑战后保住领导并于2017年改善地位，但该挑战主要来自议会同僚，基层反而支持他；矿工民主运动案例又是旧领导被替换，均不满足原文“基层反抗但旧领袖留任”的完整条件。  
+  来源：<https://theconversation.com/just-how-far-has-jeremy-corbyn-come-and-how-far-could-he-still-go-79206>；<https://labornotes.org/2023/01/what-todays-union-reformers-can-learn-miners-democracy?language=en>
+- **#26** 「In the severe struggle it has undertaken for the expropriation of the expropriators, it elevates from the dept…」  
+  判断：**暂无法判断**。Nan Hardie在1933年仍以工党候选人当选，说明后代并不必然政治倒向敌方；但政治立场延续本身不能证明家庭经济阶级没有改变，尚不能完整判定原文的阶级转化断言。  
+  来源：<https://strathprints.strath.ac.uk/1525/5/Corr_OUP2004_Agnes_Hardie_daughter_Keir_Hardie_1885_1947_socialist_political_activist.pdf>
+- **#27** 「there may come into existence a number of different strata of workers, as the outcome of the influence of a ge…」  
+  判断：**暂无法判断**。富裕工人研究没有发现物质改善必然带来转投保守党，并拒绝将工人一律理解为日益去激进或必然反体制；这些结果不足以直接测量原文所说革命愿望的逐渐减弱。  
+  来源：<https://www.cambridge.org/core/journals/british-journal-of-political-science/article/abs/politics-of-affluent-and-traditional-workers-in-britain-an-aggregate-data-analysis/0C9C55E529D2A6CABD25BD02981EC9E8>
+- **#29** 「German socialism would lose much of its prestige if it were to eliminate the intellectuals.」  
+  判断：**暂无法判断**。1912年Hildebrand被开除引发自由讨论和科学权利争论；这不等于德国社会主义整体排除知识分子，资料也未给出整体排除后的声望变化。  
+  来源：<https://moving-the-social.ub.rub.de/index.php/MTS/article/view/7629>
+- **#30** 「The increasing democratization of state institutions and the progreslife, together with the securing of better…」  
+  判断：**暂无法判断**。南约克郡工人教育研究说明工人可成长为有机知识分子，但同时仍有公共知识分子任教师和组织者；英国议会资料又显示工党议员毕业生比例上升。两者都不直接测量运动对外来知识分子帮助的必要性。  
+  来源：<https://www.cambridge.org/core/journals/international-labor-and-working-class-history/article/developing-the-politics-of-the-trade-union-movement-popular-workers-education-in-south-yorkshire-uk-1955-to-1985/0839487E420E5C76070D3BD792FB6F7B>；<https://www.parliament.uk/business/publications/research/olympic-britain/parliament-and-elections/representatives-of-society/>
+- **#33** 「new order of things signifies an incalculable progress in respect of public rights, which thus come to conform…」  
+  判断：**暂无法判断**。德国1918—1919年扩大投票权，葡萄牙激进左翼支持政府后也兑现不少政策承诺；但资料不能确认这些案例就是旧统治阶级成功吸纳全部极左反对派的条件，更未直接检验公共权利民主化停止。  
+  来源：<https://www.dhm.de/mediathek/en/weimar-the-essence-and-value-of-democracy/government-programme/elections/>；<https://www.cambridge.org/core/journals/government-and-opposition/article/portuguese-radical-left-parties-supporting-government-from-policytakers-to-policymakers/66DD31FA8DAF7F66F2CCD67236C59DAF/share/fe72cfa567a87ad75596263473d4c29ce8fa953c>
+- **#34** 「For this reason, in all ordinary circumstances, and as far as prevision is humanly possible, every attempt of …」  
+  判断：**暂无法判断**。1919年德国起义流血失败，而1917年布尔什维克成功夺权；关于俄国的研究明确指出国家机构瓦解使成功成为可能，不能把这个非常态反例直接套进“通常情况下”的条件。  
+  来源：<https://encyclopedia.ushmm.org/content/en/article/the-russian-revolution-1917>；<https://www.cambridge.org/core/journals/slavic-review/article/1917-revolution-as-demobilization-and-state-collapse/E9C85596FBF6C8E74ED87ABDAEC7563E>
+- **#39** 「Eudolf Goldscheid, who aims at a renascence of the socialist movement by the strengthening of the more energet…」  
+  判断：**暂无法判断**。人权观察确认苏联长期系统性侵犯人权并于1991年瓦解，但这不能单独证明忽略自由就是社会主义失败的决定机制；其他存档同时强调经济停滞、民族诉求及思想异议。  
+  来源：<https://www.hrw.org/reports/1993/WR93/Hsw-07.htm>；<https://www.hoover.org/research/last-empire>
+- **#44** 「The objective immaturity of the mass is not a mere transitory phenomenon which will disappear with the progres…」  
+  判断：**暂无法判断**。100项研究的元分析发现参与小型公共议事可提高知识和推理技能，这反对将群众能力视为完全不可改善；但能力改善仍不能证明原文所谓整体治理“不成熟”已经消失。  
+  来源：<https://ejpr.onlinelibrary.wiley.com/doi/10.1111/1475-6765.12722>
+- **#46** 「humanity comes to recognize the advantages which democracy, however imperfect, presents over aristocracy, even…」  
+  判断：**暂无法判断**。全球民意研究显示对民主有较强偏好，也同时出现对不受约束领导更为宽容；这些资料没有把“认识民主优于贵族制”与“因看见民主缺陷而回归贵族制”的概率变化直接联系起来。  
+  来源：<https://academic.oup.com/poq/article/85/4/957/6444257>；<https://onlinelibrary.wiley.com/doi/10.1111/1467-923X.12866>
+
+## 剔除的非预测
+
+| 编号 | 原文 | 类型 | 说明 |
+|---:|---|---|---|
+| — | （无） | — | 候选为人工挑选，未收入非预测 |
+
+## 文件
+
+- 本文：`cases/michels-political-parties-v5/REPORT-manual-zh.md`
+- 逐条结构化结果：`cases/michels-political-parties-v5/output/manual-final/results.manual.jsonl`（review_source = `manual-assistant-2026-11-15`），汇总 `output/manual-final/summary.json`
+- 人工决定源文件：`cases/michels-political-parties-v5/audit/manual_review_2026-11-15.py`
+规范报表的“候选为人工挑选”系canonical工具在NF为空时的固定模板行，并非本书工作流程；本书完整读300/300块，只有确定性规则排除1机制与4未背书reported。所有判定的详细条件、局限、剩余缺口及逐字证据见assess.jsonl。

@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000593446-000593508",
+  "plan": {
+    "object": "仿效前面那些人的密谋者。他们的办法是不到动手那一刻不把计划告诉同伴，使同伴没有时间告发。",
+    "condition": "following their example。必须是动手时才告知。早就共同策划，不算这个办法。",
+    "quantifier": "may expect the like good fortune。可以期望同样的好运，不是必定成功。一次失败不能反驳“可以期望”；一次成功也不能把它改成必定。",
+    "result": "登记变化是 good fortune。好运是躲过密谋筹备阶段的危险并且做成，同段说照这个办法做的人都成功了。",
+    "window": "1531至2026-11-15。涅勒马图斯、大流士和纳比斯是出版前的例子。",
+    "counterevidence_needed": "1531年之后，有人只在动手时才告知同伴，然后成功或失败。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "conspirators told their companions only at the moment of the attack and the assassination succeeded",
+      "counter_query": "assassins informed their companions only minutes before the attack and the attempt failed"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [],
+    "dropped": "恺撒和1175年对萨拉丁的袭击都在1531年之前。1944年7月20日是长期筹备的密谋，不是动手时才告知。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "必须是动手时才告知同伴。may expect 不因一次失败而被反驳，但没有这样的事例也不能判成好运。",
+    "reason": "支持检索回到的是公元前的恺撒密谋。反对检索回到1175年对萨拉丁的袭击，以及1944年7月的长期军事密谋。前者早于1531年。后者的同伴事先就在计划里，不是原文那种直到动手才告知。没有一条1531年之后的正文写出这个办法，以及随后的好运或失败。决定性缺口就在这个办法没有被观察到。",
+    "limitation": "没有可引用的出版后正文。7月密谋的页面已取回，但用它会把长期同谋换成动手时才告知。",
+    "method": "先核对是不是动手时才告知，再看好运。出版前的成功例子不计。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "may expect 不是必定成功。打开的页面要么早于1531年，要么不是动手时才告知。"
+  }
+}

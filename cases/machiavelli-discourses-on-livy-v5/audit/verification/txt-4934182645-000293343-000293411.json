@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000293343-000293411",
+  "plan": {
+    "object": "要在大平等盛行的地方建立君主国或公国的人。",
+    "condition": "unless he raise above the level of that equality many persons，并且在事实上而不是名义上使他们成为绅士：给他们城堡、土地、财富和侍从。没有这一步而仍然成功，才反驳 never。做了这一步之后失败，并不单独证明 never，因为 unless 写的是成功的必要条件，不是充分条件。",
+    "quantifier": "will never succeed。一次失败不能给部分符合。",
+    "result": "登记变化是 will never succeed。成功指他靠这些绅士维持权力，其他人被迫接受这个轭。不能用后来出现贵族这个社会通史代替一次建国的成功或失败。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "在大平等的地方建立了君主国，没有把一批人造成有城堡、土地、财富和侍从的事实绅士，而这个君主国仍然维持住了。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "new principality in a society of equals collapsed because it created no landed aristocracy",
+      "counter_query": "monarchy established in an egalitarian peasant society without creating a landed nobility survived"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://assets.cambridge.org/97805215/73900/excerpt/9780521573900_excerpt.pdf"],
+    "dropped": "支持检索返回的是本书自己的句子和后人复述，不能用来核验本书。迪特马尔申是农民共和国，不是在平等地区建成的君主国。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-upton-sweden-peasants"],
+    "scope": "反驳必须是大平等地区、没有造成事实绅士、君主国却维持住。瑞典若已有贵族农民，就不是这个条件。",
+    "reason": "剑桥大学出版社的摘录写，瑞典约百分之九十五是农民社会，同时佃农分成纳税农、王室农和贵族农。贵族农说明那里已经有贵族，不是大平等而且没有事实绅士的地方。查理十一世的绝对王权因此不是“未把人抬到平等之上却建成并维持君主国”。支持方向没有1531年之后的独立正文写出：在平等地区建国、没有城堡和侍从的事实绅士、于是失败。决定性缺口是缺少这样一个建国事例。不能用欧洲后来出现贵族的通史给部分符合。",
+    "limitation": "摘录没有出版日。百分之九十五和三类佃农写在同一节，没有年。",
+    "method": "先确认地方是否大平等且没有事实绅士，再看君主国是否维持。已有贵族就停。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "瑞典摘录里已有贵族农。这不是大平等且没有事实绅士的建国。不通史替代。"
+  }
+}

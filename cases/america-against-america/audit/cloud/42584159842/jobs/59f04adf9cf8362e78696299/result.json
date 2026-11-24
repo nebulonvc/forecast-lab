@@ -1,0 +1,546 @@
+{
+  "claim_id": "txt-1c4066fc0c-000253175-000253215",
+  "version": "search-verifier-v1",
+  "input_sha256": "19be0bef49387fa7c78a982243963440b8a6cb65ffa6fc547eeeb72a8e20b7b7",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000253175-000253215",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "原文含两个主要分项：一是美国发展速度不快于日本，二是美国人难以最终接受日本的支配性挑战。回顾性操作化拟以1991—2024年美日实际GDP（NY.GDP.MKTP.KD）全窗复合增速衡量速度分项，以直接测量美国公众/政策对日本支配性挑战或制度影响接受度的材料衡量接受度分项；观察截止不晚于cutoff 2026-11-09。",
+    "reason": "速度分项缺少美国同期实际GDP数值或美日复合增速的直接计算值，现有材料只有日本单边低增长，不能据此判定美国相对日本更快或更慢。接受度分项只有美国公众对日资并购态度转正面的材料，其对象是日资收购而非日本支配性挑战或制度影响，不能直接反驳原判断。两个主要分项均缺对应证据，故暂无法判断。",
+    "limitation": "原文未给出精确指标与期限，“发展”与“接受太阳帝国”均需回顾性操作化；WDI序列元数据不含数值，日资并购态度材料与“接受日本支配性挑战”口径不同。关键修订：撤销原“部分符合”结论，因速度分项缺美国数值、接受度分项对象不匹配，不能判方向相反或部分实现。",
+    "evidence_ids": [
+      "prior-1466ef06a675c43a64a7",
+      "prior-4ca3996c945c1c3f4e72",
+      "ev-1d1202890c3268b5b93c6089",
+      "ev-19bb0ca4031ca165c5fd8ed8"
+    ],
+    "method": "由文化心理壁垒外推美日相对发展速度与接受能力",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-31",
+    "future_time_text": "往后",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-1466ef06a675c43a64a7",
+        "relation": "background",
+        "quote": "日本1990年代年均实际增长约1.3%，低于前十年4.0%，恢复曾数次中断。",
+        "publication_date": "2009-04-23",
+        "observation_end": "2009-04-23",
+        "limitation": "仅覆盖日本1990年代单边增速，未给出美国同期增速，不能单独支撑美日相对速度判断；为回顾性演讲材料。"
+      },
+      {
+        "evidence_id": "prior-4ca3996c945c1c3f4e72",
+        "relation": "background",
+        "quote": "日本银行回顾日本泡沫破裂后的长期通缩、需求不足及趋势增长率下降。",
+        "publication_date": "2024-05-27",
+        "observation_end": "2024-05-27",
+        "limitation": "描述日本长期低增长，未直接比较美日增速，不能替代美国同期数值或复合增速计算。"
+      },
+      {
+        "evidence_id": "ev-1d1202890c3268b5b93c6089",
+        "relation": "boundary",
+        "quote": "Compared to the 1980s, the public opinion of Americans against Japanese takeovers becomes positive.",
+        "publication_date": "2020-02-06",
+        "observation_end": "2020-02-06",
+        "limitation": "摘要性表述，非系统民调；“接受日资并购”不等于“接受日本支配性挑战或制度影响”，对象不匹配，不能直接反驳接受度分项。"
+      },
+      {
+        "evidence_id": "ev-19bb0ca4031ca165c5fd8ed8",
+        "relation": "boundary",
+        "quote": "Japan is the largest foreign source of financing of the U.S. national debt and will likely remain so for the foreseeable future",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "显示美日经济深度互依，但为2005年报告，未直接测量美国对日本支配性挑战的接受度；发表日期未知。"
+      }
+    ],
+    "remaining_gap": "缺少1991—2024年美日实际GDP复合增速的直接计算值（WDI序列元数据不含数值，仅有日本单边增速），也缺少直接测量“美国人是否接受日本支配性挑战或制度影响”的系统材料；现有证据只能作背景，不能判定任一主要分项的方向。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000253175-000253215",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以1991—2024年美日实际GDP（NY.GDP.MKTP.KD）全窗复合增速衡量“美国发展不快于日本”这一相对速度分项；以日本对美直接投资、日资在美并购及美国公众/政策接受度记录衡量“难以接受太阳帝国”这一接受度分项。观察截止2024年（不晚于cutoff 2026-11-09）。",
+    "reason": "原文主要判断为美国发展不快于日本、且美国人难以最终接受日本支配性挑战。1991—2024年日本长期低增长（1990年代年均约1.3%，远低于前十年4.0%），美国实际增速总体高于日本，与“美国发展不快于日本”方向相反；但接受度分项有材料显示美国公众对日资并购态度由1980年代敌视转为较正面，与“难以接受”方向部分相反。两个主要分项均出现与原文方向相反的持续证据，故判错误而非部分符合。",
+    "limitation": "原文未给出精确指标与期限，“发展”与“接受太阳帝国”均需回顾性操作化；GDP增速只覆盖经济速度分项，不能直接测量文化心理屏障或政治接受度；日资并购态度材料为摘要性、非系统民调，且“接受日本支配性挑战”与“接受日资投资”并非同一对象，存在口径差异。",
+    "evidence_ids": [
+      "prior-1466ef06a675c43a64a7",
+      "prior-4ca3996c945c1c3f4e72",
+      "ev-1d1202890c3268b5b93c6089",
+      "ev-19bb0ca4031ca165c5fd8ed8"
+    ],
+    "method": "由文化心理壁垒外推美日相对发展速度与接受能力",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-31",
+    "future_time_text": "往后",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-1466ef06a675c43a64a7",
+        "relation": "counter",
+        "quote": "日本1990年代年均实际增长约1.3%，低于前十年4.0%，恢复曾数次中断。",
+        "publication_date": "2009-04-23",
+        "observation_end": "2009-04-23",
+        "limitation": "仅覆盖日本1990年代增速，未直接给出美国同期增速，需与WDI序列配合；为回顾性演讲材料。"
+      },
+      {
+        "evidence_id": "prior-4ca3996c945c1c3f4e72",
+        "relation": "counter",
+        "quote": "日本银行回顾日本泡沫破裂后的长期通缩、需求不足及趋势增长率下降。",
+        "publication_date": "2024-05-27",
+        "observation_end": "2024-05-27",
+        "limitation": "描述日本长期低增长，间接支持美国相对更快，但未直接比较美日增速。"
+      },
+      {
+        "evidence_id": "ev-1d1202890c3268b5b93c6089",
+        "relation": "counter",
+        "quote": "Compared to the 1980s, the public opinion of Americans against Japanese takeovers becomes positive.",
+        "publication_date": "2020-02-06",
+        "observation_end": "2020-02-06",
+        "limitation": "摘要性表述，非系统民调；“接受日资并购”不等于“接受日本支配性挑战”，口径有差异。"
+      },
+      {
+        "evidence_id": "ev-19bb0ca4031ca165c5fd8ed8",
+        "relation": "boundary",
+        "quote": "Japan is the largest foreign source of financing of the U.S. national debt and will likely remain so for the foreseeable future",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "显示美日经济深度互依，但为2005年报告，且未直接测量美国对日本支配性挑战的接受度；发表日期未知。"
+      }
+    ],
+    "remaining_gap": "缺少1991—2024年美日实际GDP复合增速的直接计算值（仅有日本单边增速与WDI序列元数据），也缺少系统民调直接测量“美国人是否接受日本支配性挑战”；现有材料只能支持方向性判断。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-a17e981669fe6d9634b7",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.KD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-kd",
+      "published_date": "2026-10-08",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-kd",
+      "archive_sha256": "0eabb480af54e08e1fa6c8a30424b5f98a316e14d676054b7b88acb293744bb4",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.KD.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-6eade55c940cb2f53437",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.KD.ZG?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-kd-zg",
+      "published_date": "2026-10-08",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-kd-zg",
+      "archive_sha256": "7769e352d223398f38753e8019c642f3d932fb049907d6476ce516bf45ff632c",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.KD.ZG.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-4ca3996c945c1c3f4e72",
+      "url": "https://www.boj.or.jp/en/about/press/koen_2024/ko240527b.htm",
+      "title": "ev-boj",
+      "published_date": "2024-05-27",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-boj",
+      "archive_sha256": "40fa6f0900b25d801577b8629b6f6dbecc58b7d22f18da4558b8920da02432fc",
+      "archive_path": "data/sources/40fa6f0900b25d801577b8629b6f6dbecc58b7d22f18da4558b8920da02432fc.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-1466ef06a675c43a64a7",
+      "url": "https://www2.boj.or.jp/archive/en/announcements/press/koen_2009/ko0904c.htm",
+      "title": "ev-japan-growth",
+      "published_date": "2009-04-23",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-japan-growth",
+      "archive_sha256": "71ea4ae45c718dee270c90b533919d74c3e7e2649a70e0d081c8acc0b03ad508",
+      "archive_path": "data/sources/71ea4ae45c718dee270c90b533919d74c3e7e2649a70e0d081c8acc0b03ad508.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-14eaff489641e187108632f8",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=US.",
+      "resolved_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=US.",
+      "title": "GDP growth (annual %) | Data",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:53.930255+00:00",
+      "archive_sha256": "bc3babfe54b13afa9e869c98e31eec565f42c65c8880400bea13379bd7d19ecc",
+      "archive_path": "jobs/59f04adf9cf8362e78696299/bc3babfe54b13afa9e869c98e31eec565f42c65c8880400bea13379bd7d19ecc.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-45a0b3a68bb588819a433781",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=JP",
+      "resolved_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=JP",
+      "title": "GDP growth (annual %) - Japan | Data",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:53.930400+00:00",
+      "archive_sha256": "976db782a03c1a24bc729dc681f29cf21b5c5eed81304956fc845088c94634f6",
+      "archive_path": "jobs/59f04adf9cf8362e78696299/976db782a03c1a24bc729dc681f29cf21b5c5eed81304956fc845088c94634f6.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-19bb0ca4031ca165c5fd8ed8",
+      "url": "https://www.everycrsreport.com/files/20050228_RL32649_4156a95e824ba9e5cd4dfaca12615dc785452510.pdf",
+      "resolved_url": "https://www.everycrsreport.com/files/20050228_RL32649_4156a95e824ba9e5cd4dfaca12615dc785452510.pdf",
+      "title": "U.S.-Japan Economic Relations: Significance, Prospects, and Policy Options",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:53.930533+00:00",
+      "archive_sha256": "eaaebdfc0de7c897db627681954a426304029528ef73eb0b24aaa3c9bb768a29",
+      "archive_path": "jobs/59f04adf9cf8362e78696299/eaaebdfc0de7c897db627681954a426304029528ef73eb0b24aaa3c9bb768a29.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-1d1202890c3268b5b93c6089",
+      "url": "https://doi.org/10.29121/ijetmr.v4.i11.2017.123",
+      "resolved_url": "https://doi.org/10.29121/ijetmr.v4.i11.2017.123",
+      "title": "US-CROSS-BORDER ACQUISITIONS BY JAPANESE FIRMS LESSONS TO BE LEARNED FROM THE LATE 1980s",
+      "published_date": "2020-02-06",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:53.930653+00:00",
+      "archive_sha256": "e56194bc13aa1ce87807d464f311caf2bd9d05cd0d9e8c9f1280d2e69c2d0572",
+      "archive_path": "jobs/59f04adf9cf8362e78696299/e56194bc13aa1ce87807d464f311caf2bd9d05cd0d9e8c9f1280d2e69c2d0572.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "World Bank WDI NY.GDP.MKTP.KD United States Japan annual real GDP 1991 2024 compound growth rate",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Japanese direct investment in the United States acquisitions employment 1990s 2000s acceptance political debate",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "World Bank WDI NY.GDP.MKTP.KD United States Japan annual real GDP 1991 2024 compound growth rate",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Japanese direct investment in the United States acquisitions employment 1990s 2000s acceptance political debate",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少1991—2024年美日实际GDP复合增速的直接计算值（WDI序列元数据不含数值，仅有日本单边增速），也缺少直接测量“美国人是否接受日本支配性挑战或制度影响”的系统材料；现有证据只能作背景，不能判定任一主要分项的方向。",
+  "source_statuses": [
+    {
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=US.",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=JP",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.everycrsreport.com/files/20050228_RL32649_4156a95e824ba9e5cd4dfaca12615dc785452510.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://doi.org/10.29121/ijetmr.v4.i11.2017.123",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "7bade390e4706905fd23d9a5ec75da4379bbe0b4514f03d7c446015c5ce0a22c"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "18b6a2c3ca84e6a474febb4dedba2aa7",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b8156dcf12a188eacdbb08ce01f07bbd",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "112bfbda041bd61e07da36a349d6624561f17fe0a25c3156e62d0b01564dc500"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "bcb9948915b7f2e01cc4a76b91634530",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "573c110e67f25311932328bf17247288aa87578dc75b84c1c176ca9daf49517c"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "18b6a2c3ca84e6a474febb4dedba2aa7",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b8156dcf12a188eacdbb08ce01f07bbd",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "4c6d90a8d023bd29039a5b103790c18ae4b32706faa3311ced77e161bfa63cef"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "87d25980f1c87b9b13a307837cc03528b06c5c3e61263f08ee4f68dd575ae690"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "949ed892d2808b30604e2a0140c18300c5672224bc43e5902ee9bdc972f0b6e8"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "484e3aa322c4b3d54ea83f1f38b5d4df0bf1434711fd8fd3cce01f9e8738298e"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "9b0e7af1cc2964cdcfdae61a61cdd67a868a95d2d5931ef1a5c582eb80100300"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000253175-000253215",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "fail",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "evidence_support",
+          "reason": "建议用“美国实际增速总体高于日本”来支撑“美国发展不快于日本”方向相反，但所列证据只有日本单边增速（1990年代约1.3%、长期通缩），没有任何美国同期增速或美日复合增速的直接计算值；WDI序列元数据本身不含数值。因此该主要结果在声明范围内缺少对应证据，不能据此判为方向相反。",
+          "source_quote": "日本1990年代年均实际增长约1.3%，低于前十年4.0%，恢复曾数次中断。",
+          "evidence_id": "prior-1466ef06a675c43a64a7",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "counterevidence",
+          "reason": "建议把“美国公众对日资并购态度转为正面”当作“美国人难以接受日本支配性挑战”的反证，但该材料自身限定的是公众对日资收购的态度，并非对日本支配性挑战或日本制度影响的接受；建议的limitation也承认口径不同。不同对象的材料不能直接反驳原预测的接受度分项，建议却据此判该分项方向相反。",
+          "source_quote": "Compared to the 1980s, the public opinion of Americans against Japanese takeovers becomes positive.",
+          "evidence_id": "ev-1d1202890c3268b5b93c6089",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议的reason称“两个主要分项均出现与原文方向相反的持续证据，故判错误”，但其verdict字段写的是“部分符合”，内部结论自相矛盾；且按建议自己的理由，若两个主要分项都反向，应判错误而非部分符合。此外，接受度分项的反证对象不匹配，不能支撑“错误”结论。",
+          "source_quote": "两个主要分项均出现与原文方向相反的持续证据，故判错误而非部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正结论口径：要么在取得美国同期实际GDP增速或美日复合增速直接计算值后，再判断“美国发展不快于日本”是否反向；要么将速度分项保留为未定。接受度分项需补充直接测量“美国人是否接受日本支配性挑战/制度影响”的材料，不能以对日资并购态度的材料替代。同时消除verdict“部分符合”与reason“判错误”的内部矛盾。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000253175-000253215",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000253175-000253215",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以1991—2024年美日实际GDP（NY.GDP.MKTP.KD）全窗复合增速衡量“美国发展不快于日本”这一相对速度分项；以日本对美直接投资、日资在美并购及美国公众/政策接受度记录衡量“难以接受太阳帝国”这一接受度分项。观察截止2024年（不晚于cutoff 2026-11-09）。",
+      "reason": "原文主要判断为美国发展不快于日本、且美国人难以最终接受日本支配性挑战。1991—2024年日本长期低增长（1990年代年均约1.3%，远低于前十年4.0%），美国实际增速总体高于日本，与“美国发展不快于日本”方向相反；但接受度分项有材料显示美国公众对日资并购态度由1980年代敌视转为较正面，与“难以接受”方向部分相反。两个主要分项均出现与原文方向相反的持续证据，故判错误而非部分符合。",
+      "limitation": "原文未给出精确指标与期限，“发展”与“接受太阳帝国”均需回顾性操作化；GDP增速只覆盖经济速度分项，不能直接测量文化心理屏障或政治接受度；日资并购态度材料为摘要性、非系统民调，且“接受日本支配性挑战”与“接受日资投资”并非同一对象，存在口径差异。",
+      "evidence_ids": [
+        "prior-1466ef06a675c43a64a7",
+        "prior-4ca3996c945c1c3f4e72",
+        "ev-1d1202890c3268b5b93c6089",
+        "ev-19bb0ca4031ca165c5fd8ed8"
+      ],
+      "method": "由文化心理壁垒外推美日相对发展速度与接受能力",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "往后",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-1466ef06a675c43a64a7",
+          "relation": "counter",
+          "quote": "日本1990年代年均实际增长约1.3%，低于前十年4.0%，恢复曾数次中断。",
+          "publication_date": "2009-04-23",
+          "observation_end": "2009-04-23",
+          "limitation": "仅覆盖日本1990年代增速，未直接给出美国同期增速，需与WDI序列配合；为回顾性演讲材料。"
+        },
+        {
+          "evidence_id": "prior-4ca3996c945c1c3f4e72",
+          "relation": "counter",
+          "quote": "日本银行回顾日本泡沫破裂后的长期通缩、需求不足及趋势增长率下降。",
+          "publication_date": "2024-05-27",
+          "observation_end": "2024-05-27",
+          "limitation": "描述日本长期低增长，间接支持美国相对更快，但未直接比较美日增速。"
+        },
+        {
+          "evidence_id": "ev-1d1202890c3268b5b93c6089",
+          "relation": "counter",
+          "quote": "Compared to the 1980s, the public opinion of Americans against Japanese takeovers becomes positive.",
+          "publication_date": "2020-02-06",
+          "observation_end": "2020-02-06",
+          "limitation": "摘要性表述，非系统民调；“接受日资并购”不等于“接受日本支配性挑战”，口径有差异。"
+        },
+        {
+          "evidence_id": "ev-19bb0ca4031ca165c5fd8ed8",
+          "relation": "boundary",
+          "quote": "Japan is the largest foreign source of financing of the U.S. national debt and will likely remain so for the foreseeable future",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "显示美日经济深度互依，但为2005年报告，且未直接测量美国对日本支配性挑战的接受度；发表日期未知。"
+        }
+      ],
+      "remaining_gap": "缺少1991—2024年美日实际GDP复合增速的直接计算值（仅有日本单边增速与WDI序列元数据），也缺少系统民调直接测量“美国人是否接受日本支配性挑战”；现有材料只能支持方向性判断。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000253175-000253215",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "原文含两个主要分项：一是美国发展速度不快于日本，二是美国人难以最终接受日本的支配性挑战。回顾性操作化拟以1991—2024年美日实际GDP（NY.GDP.MKTP.KD）全窗复合增速衡量速度分项，以直接测量美国公众/政策对日本支配性挑战或制度影响接受度的材料衡量接受度分项；观察截止不晚于cutoff 2026-11-09。",
+      "reason": "速度分项缺少美国同期实际GDP数值或美日复合增速的直接计算值，现有材料只有日本单边低增长，不能据此判定美国相对日本更快或更慢。接受度分项只有美国公众对日资并购态度转正面的材料，其对象是日资收购而非日本支配性挑战或制度影响，不能直接反驳原判断。两个主要分项均缺对应证据，故暂无法判断。",
+      "limitation": "原文未给出精确指标与期限，“发展”与“接受太阳帝国”均需回顾性操作化；WDI序列元数据不含数值，日资并购态度材料与“接受日本支配性挑战”口径不同。关键修订：撤销原“部分符合”结论，因速度分项缺美国数值、接受度分项对象不匹配，不能判方向相反或部分实现。",
+      "evidence_ids": [
+        "prior-1466ef06a675c43a64a7",
+        "prior-4ca3996c945c1c3f4e72",
+        "ev-1d1202890c3268b5b93c6089",
+        "ev-19bb0ca4031ca165c5fd8ed8"
+      ],
+      "method": "由文化心理壁垒外推美日相对发展速度与接受能力",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "往后",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-1466ef06a675c43a64a7",
+          "relation": "background",
+          "quote": "日本1990年代年均实际增长约1.3%，低于前十年4.0%，恢复曾数次中断。",
+          "publication_date": "2009-04-23",
+          "observation_end": "2009-04-23",
+          "limitation": "仅覆盖日本1990年代单边增速，未给出美国同期增速，不能单独支撑美日相对速度判断；为回顾性演讲材料。"
+        },
+        {
+          "evidence_id": "prior-4ca3996c945c1c3f4e72",
+          "relation": "background",
+          "quote": "日本银行回顾日本泡沫破裂后的长期通缩、需求不足及趋势增长率下降。",
+          "publication_date": "2024-05-27",
+          "observation_end": "2024-05-27",
+          "limitation": "描述日本长期低增长，未直接比较美日增速，不能替代美国同期数值或复合增速计算。"
+        },
+        {
+          "evidence_id": "ev-1d1202890c3268b5b93c6089",
+          "relation": "boundary",
+          "quote": "Compared to the 1980s, the public opinion of Americans against Japanese takeovers becomes positive.",
+          "publication_date": "2020-02-06",
+          "observation_end": "2020-02-06",
+          "limitation": "摘要性表述，非系统民调；“接受日资并购”不等于“接受日本支配性挑战或制度影响”，对象不匹配，不能直接反驳接受度分项。"
+        },
+        {
+          "evidence_id": "ev-19bb0ca4031ca165c5fd8ed8",
+          "relation": "boundary",
+          "quote": "Japan is the largest foreign source of financing of the U.S. national debt and will likely remain so for the foreseeable future",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "显示美日经济深度互依，但为2005年报告，未直接测量美国对日本支配性挑战的接受度；发表日期未知。"
+        }
+      ],
+      "remaining_gap": "缺少1991—2024年美日实际GDP复合增速的直接计算值（WDI序列元数据不含数值，仅有日本单边增速），也缺少直接测量“美国人是否接受日本支配性挑战或制度影响”的系统材料；现有证据只能作背景，不能判定任一主要分项的方向。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象为美国与日本的相对“发展速度”及美国对日本支配性挑战的接受程度；条件为原文所称美国人轻视日本文化的心理屏障；可观察口径以1991—2024年美日实际GDP年度序列计算全窗复合增速，并辅以日本对美直接投资、日资在美并购与政治接受度记录；反证包括美国实际增速持续高于日本、或美国社会/政策明显接纳日本资本与制度影响。",
+  "elapsed_seconds": 39.204,
+  "completed_at": "2026-11-09T08:13:18.952961+00:00"
+}

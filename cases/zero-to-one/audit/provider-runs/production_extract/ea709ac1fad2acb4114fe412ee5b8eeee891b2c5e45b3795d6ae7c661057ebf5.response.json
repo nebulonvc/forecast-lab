@@ -1,0 +1,28 @@
+{
+  "id": "968d5e52-e36a-4f8e-a72e-e25ba2fe6440",
+  "object": "chat.completion",
+  "created": 1794201131,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-00019\",\"predictions\":[{\"quote\":\"较为牢固的关系不仅能使我们更加开心、更加高效地工作，而且能使我们的职业生涯更成功，即使不在PayPal，亦是如此。\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"牢固的关系会使员工更开心、更高效，并使职业生涯更成功，即使离开PayPal也如此。\",\"expanded_claim\":\"彼得·蒂尔认为，PayPal员工之间较为牢固的关系不仅会使他们更加开心、更加高效地工作，而且会使他们的职业生涯更成功，即使他们不在PayPal工作也是如此。\",\"reference_resolutions\":[{\"expression\":\"我们\",\"referent\":\"PayPal员工（包括作者）\",\"support_quote\":\"我就想让PayPal员工紧密团结\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"即使不在PayPal\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"用“不仅……而且……”“即使……亦……”表达对未来结果的确定判断。\"},{\"quote\":\"如果你能解释为什么公司使命激动人心，那么你就能吸引你需要的员工。\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"解释公司使命为何激动人心，就能吸引所需员工。\",\"expanded_claim\":\"如果创业者能解释为什么公司使命激动人心，那么创业者就能吸引自己需要的员工。\",\"reference_resolutions\":[{\"expression\":\"你\",\"referent\":\"创业者/招聘者\",\"support_quote\":\"为什么第20个员工要加入你的公司？\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"如果你能解释为什么公司使命激动人心\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"条件句“如果……那么……”表达条件性预测。\"},{\"quote\":\"如果你不能，可能他不是合适的人选。\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"若不能解释公司为何适合应聘者，应聘者可能不是合适人选。\",\"expanded_claim\":\"如果创业者不能解释为什么自己的公司适合应聘者，那么该应聘者可能不是合适的人选。\",\"reference_resolutions\":[{\"expression\":\"你\",\"referent\":\"创业者/招聘者\",\"support_quote\":\"你还需要解释为什么你的公司适合他\"},{\"expression\":\"他\",\"referent\":\"将来有可能成为员工的应聘者\",\"support_quote\":\"将来有可能成为员工的应聘者仍会质疑\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"如果你不能\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"“可能”表达条件性、可能性判断。\"},{\"quote\":\"奔着免费洗衣或宠物看护而来的人是不会成为你团队中一名合格成员的。\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"为福利待遇而来的人不会成为合格团队成员。\",\"expanded_claim\":\"奔着免费洗衣或宠物看护等福利待遇而来的人，不会成为创业者团队中一名合格的成员。\",\"reference_resolutions\":[{\"expression\":\"你\",\"referent\":\"创业者/招聘者\",\"support_quote\":\"你团队中一名合格成员\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"奔着免费洗衣或宠物看护而来\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"对未来成员资格作确定否定判断。\"},{\"quote\":\"如果大家世界观相同，则更容易做到这一点。\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔（转述马克斯·列夫琴观点）\",\"claim\":\"员工世界观相同时，初创公司更容易快速高效运转。\",\"expanded_claim\":\"如果初创公司员工的世界观相同，那么初创公司为了生存而快速高效地运转就更容易做到。\",\"reference_resolutions\":[{\"expression\":\"这一点\",\"referent\":\"快速高效地运转\",\"support_quote\":\"它们必须快速高效地运转\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"如果大家世界观相同\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"条件句“如果……则……”表达条件性预测；说话者归属为转述马克斯·列夫琴观点。\"},{\"quote\":\"界定角色可减少矛盾。\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"界定角色能够减少公司内部矛盾。\",\"expanded_claim\":\"在初创公司中，界定每个人的角色可以减少公司内部矛盾。\",\"reference_resolutions\":[],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"“可减少”表达对未来效果的判断。\"},{\"quote\":\"派别冲突会使其无力应付外部威胁。\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"派别冲突会使公司无力应付外部威胁。\",\"expanded_claim\":\"公司内部的派别冲突会使该公司无力应付外部威胁。\",\"reference_resolutions\":[{\"expression\":\"其\",\"referent\":\"公司\",\"support_quote\":\"但每个公司本身就是一个生态系统\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"“会使其无力”表达对未来结果的确定判断。\"},{\"quote\":\"广告不会立刻让你购买产品，而是为以后的购买埋下伏笔。\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔\",\"claim\":\"广告不会立刻促成购买，而会为以后购买埋下伏笔。\",\"expanded_claim\":\"广告不会立刻让消费者购买产品，而是会为消费者以后的购买埋下伏笔。\",\"reference_resolutions\":[{\"expression\":\"你\",\"referent\":\"消费者/读者\",\"support_quote\":\"没人能操控你的喜好\"}],\"unresolved_references\":[],\"time_text\":\"以后\",\"condition_text\":\"\",\"method\":\"unknown\",\"method_basis\":\"unknown\",\"reason\":\"“不会……而是……”表达对未来效果的判断。\"}]}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3297,
+    "completion_tokens": 1215,
+    "total_tokens": 4512,
+    "prompt_tokens_details": {
+      "cached_tokens": 256
+    },
+    "prompt_cache_hit_tokens": 256,
+    "prompt_cache_miss_tokens": 3041
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

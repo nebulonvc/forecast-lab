@@ -1,0 +1,947 @@
+{
+  "claim_id": "txt-1c4066fc0c-000253175-000253215",
+  "version": "search-verifier-v2",
+  "input_sha256": "5403eba21a608e648956d7443eca7fd3e7ed69c6d94e00d8e769c2482002c07f",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000253175-000253215",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "以1991—2024年美日实际GDP总量（世界银行NY.GDP.MKTP.KD，2015年不变价美元）全窗CAGR作为“发展速度”代理；第二分项“美国人难以最终接受日本支配性挑战”以美国社会是否接受日本支配性地位作定性观察。观察期1991—2024年。",
+    "reason": "原文主要判断为美国发展不快于日本。现有证据中，世界银行序列仅提供元数据而未展示数值，第三方整理表格虽列出1990—2026年增速但来源未核实、日期未知且含2025—2026年IMF推估值，无法直接核对美日全窗CAGR方向。第二分项“美国人难以最终接受日本支配性挑战”在观察期内未见日本取得支配性地位，缺乏可操作化的直接观察证据。主要结果与关键分项均缺可核对证据，故暂无法判断。",
+    "limitation": "GDP总量增速不能穷尽“发展”，且文化心理屏障的因果机制无法由增速差异识别；第二分项缺乏可操作化的直接证据。修订说明：原判部分符合所依据的“美国全窗增速高于日本”缺乏可核对数值支撑，且第二分项属缺证据而非有直接证据的实质分化，故改为暂无法判断。",
+    "evidence_ids": [
+      "prior-a17e981669fe6d9634b7",
+      "prior-6eade55c940cb2f53437",
+      "prior-1466ef06a675c43a64a7",
+      "ev-cd0570826a684e3d9714467c"
+    ],
+    "method": "由文化心理壁垒外推美日相对发展速度与接受能力",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-31",
+    "future_time_text": "往后",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-a17e981669fe6d9634b7",
+        "relation": "background",
+        "quote": "世界银行WDI原始年度序列；指标NY.GDP.MKTP.KD；不含2025及以后预测值。",
+        "publication_date": "2026-10-08",
+        "observation_end": "2024-12-31",
+        "limitation": "仅提供序列元数据，未展示具体数值，无法据此核对美日全窗CAGR方向。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-6eade55c940cb2f53437",
+        "relation": "background",
+        "quote": "世界银行WDI原始年度序列；指标NY.GDP.MKTP.KD.ZG；不含2025及以后预测值。",
+        "publication_date": "2026-10-08",
+        "observation_end": "2024-12-31",
+        "limitation": "仅提供序列元数据，未展示具体数值；增速口径为年度百分比变化，无法据此核对全窗方向。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-1466ef06a675c43a64a7",
+        "relation": "boundary",
+        "quote": "日本银行总裁回顾：日本1990年代年均实际增长约1.3%，低于前十年4.0%，恢复曾数次中断。",
+        "publication_date": "2009-04-23",
+        "observation_end": "2009-04-23",
+        "limitation": "仅覆盖1990年代日本增速，不能代表全窗美日对比；为回顾性表述，不提供美国同期数值。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-cd0570826a684e3d9714467c",
+        "relation": "boundary",
+        "quote": "| 年 | 1990 | 1991 | 1992 | 1993 | 1994 | 1995 | 1996 | 1997 | 1998 | 1999 |",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "表格含2025—2026年IMF推估值，不能作为已实现结果；来源日期未知、verified=false且为第三方整理，数值未经语义复核，不能单独支撑方向结论。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      }
+    ],
+    "remaining_gap": "需提供可直接核对的美日1991—2024年实际GDP总量或增速数值（含分母、单位与观察期），以确认“美国发展不快于日本”的方向；第二分项需可操作化的美国接受日本支配性地位的直接观察证据。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000253175-000253215",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以1991—2024年美日实际GDP总量（世界银行NY.GDP.MKTP.KD，2015年不变价美元）全窗CAGR作为“发展速度”代理；第二分项“美国人难以最终接受日本支配性挑战”以美国社会是否接受日本支配性地位作定性观察。观察期1991—2024年。",
+    "reason": "原文主要判断为美国发展不快于日本。1991—2024年美日实际GDP增速对比显示美国全窗增速高于日本，与“美国不快于日本”方向相反；但原文第二分项（美国难以接受日本支配性挑战）在观察期内未见日本取得支配性地位，无法直接检验。主要分项出现实质分化，故判部分符合。",
+    "limitation": "GDP总量增速不能穷尽“发展”，且文化心理屏障的因果机制无法由增速差异识别；第二分项缺乏可操作化的直接证据，仅能说明日本未形成支配性挑战这一背景。",
+    "evidence_ids": [
+      "prior-a17e981669fe6d9634b7",
+      "prior-6eade55c940cb2f53437",
+      "prior-1466ef06a675c43a64a7",
+      "ev-cd0570826a684e3d9714467c"
+    ],
+    "method": "由文化心理壁垒外推美日相对发展速度与接受能力",
+    "method_basis": "explicit",
+    "observation_end": "2024-12-31",
+    "future_time_text": "往后",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-a17e981669fe6d9634b7",
+        "relation": "counter",
+        "quote": "世界银行WDI原始年度序列；指标NY.GDP.MKTP.KD；不含2025及以后预测值。",
+        "publication_date": "2026-10-08",
+        "observation_end": "2024-12-31",
+        "limitation": "仅提供序列元数据，未展示具体数值；需结合增速序列判断方向。"
+      },
+      {
+        "evidence_id": "prior-6eade55c940cb2f53437",
+        "relation": "counter",
+        "quote": "世界银行WDI原始年度序列；指标NY.GDP.MKTP.KD.ZG；不含2025及以后预测值。",
+        "publication_date": "2026-10-08",
+        "observation_end": "2024-12-31",
+        "limitation": "仅提供序列元数据，未展示具体数值；增速口径为年度百分比变化。"
+      },
+      {
+        "evidence_id": "prior-1466ef06a675c43a64a7",
+        "relation": "support",
+        "quote": "日本银行总裁回顾：日本1990年代年均实际增长约1.3%，低于前十年4.0%，恢复曾数次中断。",
+        "publication_date": "2009-04-23",
+        "observation_end": "2009-04-23",
+        "limitation": "仅覆盖1990年代日本增速，不能代表全窗美日对比；为回顾性表述。"
+      },
+      {
+        "evidence_id": "ev-cd0570826a684e3d9714467c",
+        "relation": "counter",
+        "quote": "| 年 | 1990 | 1991 | 1992 | 1993 | 1994 | 1995 | 1996 | 1997 | 1998 | 1999 |",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "表格含2025—2026年IMF推估值，不能作为已实现结果；来源日期未知，数值为第三方整理。"
+      }
+    ],
+    "remaining_gap": "第二分项“美国人难以最终接受日本支配性挑战”缺乏可操作化的直接观察证据；日本是否形成支配性挑战本身在观察期内未出现，无法检验该分项。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-a17e981669fe6d9634b7",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.KD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-kd",
+      "published_date": "2026-10-08",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-10-08",
+        "latest": "2026-10-08"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-kd",
+      "archive_sha256": "0eabb480af54e08e1fa6c8a30424b5f98a316e14d676054b7b88acb293744bb4",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.KD.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-6eade55c940cb2f53437",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.KD.ZG?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-kd-zg",
+      "published_date": "2026-10-08",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-10-08",
+        "latest": "2026-10-08"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-kd-zg",
+      "archive_sha256": "7769e352d223398f38753e8019c642f3d932fb049907d6476ce516bf45ff632c",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.KD.ZG.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-4ca3996c945c1c3f4e72",
+      "url": "https://www.boj.or.jp/en/about/press/koen_2024/ko240527b.htm",
+      "title": "ev-boj",
+      "published_date": "2024-05-27",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-05-27",
+        "latest": "2024-05-27"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-boj",
+      "archive_sha256": "40fa6f0900b25d801577b8629b6f6dbecc58b7d22f18da4558b8920da02432fc",
+      "archive_path": "data/sources/40fa6f0900b25d801577b8629b6f6dbecc58b7d22f18da4558b8920da02432fc.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-1466ef06a675c43a64a7",
+      "url": "https://www2.boj.or.jp/archive/en/announcements/press/koen_2009/ko0904c.htm",
+      "title": "ev-japan-growth",
+      "published_date": "2009-04-23",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2009-04-23",
+        "latest": "2009-04-23"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-japan-growth",
+      "archive_sha256": "71ea4ae45c718dee270c90b533919d74c3e7e2649a70e0d081c8acc0b03ad508",
+      "archive_path": "data/sources/71ea4ae45c718dee270c90b533919d74c3e7e2649a70e0d081c8acc0b03ad508.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-03c3a45e45826dd7e4d9dcfb",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=JP-US",
+      "resolved_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=JP-US",
+      "title": "GDP growth (annual %) - Japan, United States | Data",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:28.480487+00:00",
+      "archive_sha256": "730fc50023fddc6383676f756bdae2c7b9842da56bbc5b12a1272958b0bf23a1",
+      "archive_path": "jobs/59f04adf9cf8362e78696299/730fc50023fddc6383676f756bdae2c7b9842da56bbc5b12a1272958b0bf23a1.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-842fe5bae0497ea030001605",
+      "url": "https://www.nber.org/system/files/working_papers/w31914/revisions/w31914.rev1.pdf",
+      "resolved_url": "https://www.nber.org/system/files/working_papers/w31914/revisions/w31914.rev1.pdf",
+      "title": "The Wealth of Working Nations",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:28.480633+00:00",
+      "archive_sha256": "313d103c024468611be7c3e632bcc9d2afb1194f9ffc3d048e07ff3b76268233",
+      "archive_path": "jobs/59f04adf9cf8362e78696299/313d103c024468611be7c3e632bcc9d2afb1194f9ffc3d048e07ff3b76268233.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-cd0570826a684e3d9714467c",
+      "url": "https://ecodb.net/exec/trans_country.php?c1=US&c2=JP&d=NGDP_RPCH&type=WEO",
+      "resolved_url": "https://ecodb.net/exec/trans_country.php?c1=US&c2=JP&d=NGDP_RPCH&type=WEO",
+      "title": "経済成長率の推移(1980～2026年)(アメリカ, 日本) - 世界経済のネタ帳",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:28.480713+00:00",
+      "archive_sha256": "c6262b58b6beab70a4fbb432fed56e1dbe1d1d8ae403536d2fd112dc0bcfe906",
+      "archive_path": "jobs/59f04adf9cf8362e78696299/c6262b58b6beab70a4fbb432fed56e1dbe1d1d8ae403536d2fd112dc0bcfe906.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-343431ac0e96bbbb08210316",
+      "url": "https://ourworldindata.org/grapher/annual-gdp-growth?country=POL%7EDEU%7EUN_EUR%7EJPN%7EUSA&tab=line",
+      "resolved_url": "https://ourworldindata.org/grapher/annual-gdp-growth?country=POL%7EDEU%7EUN_EUR%7EJPN%7EUSA&tab=line",
+      "title": "Annual GDP growth",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:28.480798+00:00",
+      "archive_sha256": "9d8b48564d7b33bcd76a8d938c2cd6764641d501d0633f9b950e6e98b01268d2",
+      "archive_path": "jobs/59f04adf9cf8362e78696299/9d8b48564d7b33bcd76a8d938c2cd6764641d501d0633f9b950e6e98b01268d2.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-f6b5778f59d9dd2b0528c0c0",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD?name_desc=false",
+      "resolved_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD?name_desc=false",
+      "title": "GDP (constant 2015 US$) | Data",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:38.250206+00:00",
+      "archive_sha256": "05f9f82541dc613ea53d97d70af3a93f7a77a13baa1dc17058763c829909a935",
+      "archive_path": "jobs/59f04adf9cf8362e78696299/05f9f82541dc613ea53d97d70af3a93f7a77a13baa1dc17058763c829909a935.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "World Bank WDI NY.GDP.MKTP.KD United States Japan 1991 2024 real GDP growth annual data",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "US Japan real GDP growth comparison 1991-2024 Japan faster than United States World Bank data",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "World Bank WDI NY.GDP.MKTP.KD United States Japan 1991 2024 real GDP constant 2015 US$ annual data CAGR",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Japan real GDP growth faster than United States 1991-2024 World Bank national accounts annual data comparison",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-cd0570826a684e3d9714467c"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "remaining_gap": "需提供可直接核对的美日1991—2024年实际GDP总量或增速数值（含分母、单位与观察期），以确认“美国发展不快于日本”的方向；第二分项需可操作化的美国接受日本支配性地位的直接观察证据。",
+  "source_statuses": [
+    {
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG?locations=JP-US",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.nber.org/system/files/working_papers/w31914/revisions/w31914.rev1.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://ecodb.net/exec/trans_country.php?c1=US&c2=JP&d=NGDP_RPCH&type=WEO",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://ourworldindata.org/grapher/annual-gdp-growth?country=POL%7EDEU%7EUN_EUR%7EJPN%7EUSA&tab=line",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD?name_desc=false",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 9,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "a8744d0e538be5175ad97b1161a12b7857028e325ea686aa72c197d889efe910"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "9f98afd45a9c83d72defd3d1be72b392",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "5d2eba4eb2b2b961819c46dc23ef2421",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "1c4bd80eeb21bd355e7d83b3cb3a871b3547d4691a148b33c2b6a5e98173a566"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "7026e9aeee62ddb04b5007aaab5c3a1c",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "56f92dae89b2f847a9b47827ba28fce1d6e42896b0f30d84b4c4db2b30fe0f37"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b9acf802e040ce3d8963eba14f73664c",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f9a956167133ce1bd33e3cb7ef86f69b",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "573d34223e8d8eca74f16ac0ffb8f5704e657b464e483d07f2d9184cf08b2030"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "1ca542985ea5a2e2db920d33d7c648a5",
+      "cost_estimate_USD": 0.001,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "d0ae185622b03408f939a242ab6b174ad1685a9bd84ffe4f74b35a7fe7da8ede"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "59a734c1e217daed6fe9cbc9866df96a2203af9c928e82328d326c3f0e7f7d54",
+      "validation_error": "semantic_review_quote_not_in_supplied_text"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "fdd68a23558a99e4ff68471be19c9c36f59f80a8fc1bf016ee2aad7a9c51e03f"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "f65a03f2e1e9bd65d8e307259522afc5b0202b99a7eae45b6ec079f70c146159"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "59f50ed1197ee0a9eade8f345cad48d3fccfd8260cf02e92bcf89eb3065fc76f"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "59a734c1e217daed6fe9cbc9866df96a2203af9c928e82328d326c3f0e7f7d54",
+      "validation_error": "semantic_review_quote_not_in_supplied_text"
+    }
+  ],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-cd0570826a684e3d9714467c"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-cd0570826a684e3d9714467c"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-a17e981669fe6d9634b7",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-6eade55c940cb2f53437",
+        "source_bytes": 93,
+        "shown_bytes": 93,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-4ca3996c945c1c3f4e72",
+        "source_bytes": 96,
+        "shown_bytes": 96,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-1466ef06a675c43a64a7",
+        "source_bytes": 117,
+        "shown_bytes": 117,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-03c3a45e45826dd7e4d9dcfb",
+        "source_bytes": 556,
+        "shown_bytes": 556,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-842fe5bae0497ea030001605",
+        "source_bytes": 12031,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-cd0570826a684e3d9714467c",
+        "source_bytes": 1753,
+        "shown_bytes": 1753,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-343431ac0e96bbbb08210316",
+        "source_bytes": 7587,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-f6b5778f59d9dd2b0528c0c0",
+        "source_bytes": 287,
+        "shown_bytes": 287,
+        "context_truncated": false
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-a17e981669fe6d9634b7",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-6eade55c940cb2f53437",
+        "source_bytes": 93,
+        "shown_bytes": 93,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-4ca3996c945c1c3f4e72",
+        "source_bytes": 96,
+        "shown_bytes": 96,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-1466ef06a675c43a64a7",
+        "source_bytes": 117,
+        "shown_bytes": 117,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-03c3a45e45826dd7e4d9dcfb",
+        "source_bytes": 556,
+        "shown_bytes": 556,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-842fe5bae0497ea030001605",
+        "source_bytes": 12031,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-cd0570826a684e3d9714467c",
+        "source_bytes": 1753,
+        "shown_bytes": 1753,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-343431ac0e96bbbb08210316",
+        "source_bytes": 7587,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-f6b5778f59d9dd2b0528c0c0",
+        "source_bytes": 287,
+        "shown_bytes": 287,
+        "context_truncated": false
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-a17e981669fe6d9634b7",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-6eade55c940cb2f53437",
+        "source_bytes": 93,
+        "shown_bytes": 93,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-4ca3996c945c1c3f4e72",
+        "source_bytes": 96,
+        "shown_bytes": 96,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-1466ef06a675c43a64a7",
+        "source_bytes": 117,
+        "shown_bytes": 117,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-03c3a45e45826dd7e4d9dcfb",
+        "source_bytes": 556,
+        "shown_bytes": 556,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-842fe5bae0497ea030001605",
+        "source_bytes": 12031,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-cd0570826a684e3d9714467c",
+        "source_bytes": 1753,
+        "shown_bytes": 1753,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-343431ac0e96bbbb08210316",
+        "source_bytes": 7587,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-f6b5778f59d9dd2b0528c0c0",
+        "source_bytes": 287,
+        "shown_bytes": 287,
+        "context_truncated": false
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-a17e981669fe6d9634b7",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-6eade55c940cb2f53437",
+        "source_bytes": 93,
+        "shown_bytes": 93,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-4ca3996c945c1c3f4e72",
+        "source_bytes": 96,
+        "shown_bytes": 96,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-1466ef06a675c43a64a7",
+        "source_bytes": 117,
+        "shown_bytes": 117,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-03c3a45e45826dd7e4d9dcfb",
+        "source_bytes": 556,
+        "shown_bytes": 556,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-842fe5bae0497ea030001605",
+        "source_bytes": 12031,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-cd0570826a684e3d9714467c",
+        "source_bytes": 1753,
+        "shown_bytes": 1753,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-343431ac0e96bbbb08210316",
+        "source_bytes": 7587,
+        "shown_bytes": 2555,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-f6b5778f59d9dd2b0528c0c0",
+        "source_bytes": 287,
+        "shown_bytes": 287,
+        "context_truncated": false
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000253175-000253215",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "evidence_support",
+          "reason": "建议声称1991—2024年美日实际GDP增速对比显示美国全窗增速高于日本，但所列证据中prior-a17e981669fe6d9634b7与prior-6eade55c940cb2f53437只说明序列元数据、未展示任何数值；ev-cd0570826a684e3d9714467c的表格虽列出1990—2026年数值，但该来源verified=false、日期未知且为第三方整理，且其2025—2026为IMF推估值。现有材料没有可直接核对的美国与日本全窗CAGR数值，无法支撑“美国全窗增速高于日本”这一主要结果。",
+          "quote_ref": "q4",
+          "source_quote": "世界银行WDI原始年度序列；指标NY.GDP.MKTP.KD；不含2025及以后预测值。",
+          "evidence_id": "prior-a17e981669fe6d9634b7",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议以“主要分项出现实质分化”判部分符合，但其自述第二分项在观察期内无法直接检验，且日本未形成支配性挑战；这属于关键分项缺证据，而非有直接证据的实质分化。同时第一分项的方向结论又缺乏数值证据。按口径应保留为暂无法判断，或先补齐可核对的美日增速数据后再定。",
+          "quote_ref": "q2",
+          "source_quote": "以1991—2024年美日实际GDP总量（世界银行NY.",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需提供可直接核对的美日1991—2024年实际GDP总量或增速数值（含分母、单位与观察期），以确认“美国发展不快于日本”的方向；第二分项需可操作化的美国接受日本支配性地位的直接观察证据，否则应保留为未定而非部分符合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000253175-000253215",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000253175-000253215",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以1991—2024年美日实际GDP总量（世界银行NY.GDP.MKTP.KD，2015年不变价美元）全窗CAGR作为“发展速度”代理；第二分项“美国人难以最终接受日本支配性挑战”以美国社会是否接受日本支配性地位作定性观察。观察期1991—2024年。",
+      "reason": "原文主要判断为美国发展不快于日本。1991—2024年美日实际GDP增速对比显示美国全窗增速高于日本，与“美国不快于日本”方向相反；但原文第二分项（美国难以接受日本支配性挑战）在观察期内未见日本取得支配性地位，无法直接检验。主要分项出现实质分化，故判部分符合。",
+      "limitation": "GDP总量增速不能穷尽“发展”，且文化心理屏障的因果机制无法由增速差异识别；第二分项缺乏可操作化的直接证据，仅能说明日本未形成支配性挑战这一背景。",
+      "evidence_ids": [
+        "prior-a17e981669fe6d9634b7",
+        "prior-6eade55c940cb2f53437",
+        "prior-1466ef06a675c43a64a7",
+        "ev-cd0570826a684e3d9714467c"
+      ],
+      "method": "由文化心理壁垒外推美日相对发展速度与接受能力",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "往后",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-a17e981669fe6d9634b7",
+          "relation": "counter",
+          "quote": "世界银行WDI原始年度序列；指标NY.GDP.MKTP.KD；不含2025及以后预测值。",
+          "publication_date": "2026-10-08",
+          "observation_end": "2024-12-31",
+          "limitation": "仅提供序列元数据，未展示具体数值；需结合增速序列判断方向。"
+        },
+        {
+          "evidence_id": "prior-6eade55c940cb2f53437",
+          "relation": "counter",
+          "quote": "世界银行WDI原始年度序列；指标NY.GDP.MKTP.KD.ZG；不含2025及以后预测值。",
+          "publication_date": "2026-10-08",
+          "observation_end": "2024-12-31",
+          "limitation": "仅提供序列元数据，未展示具体数值；增速口径为年度百分比变化。"
+        },
+        {
+          "evidence_id": "prior-1466ef06a675c43a64a7",
+          "relation": "support",
+          "quote": "日本银行总裁回顾：日本1990年代年均实际增长约1.3%，低于前十年4.0%，恢复曾数次中断。",
+          "publication_date": "2009-04-23",
+          "observation_end": "2009-04-23",
+          "limitation": "仅覆盖1990年代日本增速，不能代表全窗美日对比；为回顾性表述。"
+        },
+        {
+          "evidence_id": "ev-cd0570826a684e3d9714467c",
+          "relation": "counter",
+          "quote": "| 年 | 1990 | 1991 | 1992 | 1993 | 1994 | 1995 | 1996 | 1997 | 1998 | 1999 |",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "表格含2025—2026年IMF推估值，不能作为已实现结果；来源日期未知，数值为第三方整理。"
+        }
+      ],
+      "remaining_gap": "第二分项“美国人难以最终接受日本支配性挑战”缺乏可操作化的直接观察证据；日本是否形成支配性挑战本身在观察期内未出现，无法检验该分项。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000253175-000253215",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "以1991—2024年美日实际GDP总量（世界银行NY.GDP.MKTP.KD，2015年不变价美元）全窗CAGR作为“发展速度”代理；第二分项“美国人难以最终接受日本支配性挑战”以美国社会是否接受日本支配性地位作定性观察。观察期1991—2024年。",
+      "reason": "原文主要判断为美国发展不快于日本。现有证据中，世界银行序列仅提供元数据而未展示数值，第三方整理表格虽列出1990—2026年增速但来源未核实、日期未知且含2025—2026年IMF推估值，无法直接核对美日全窗CAGR方向。第二分项“美国人难以最终接受日本支配性挑战”在观察期内未见日本取得支配性地位，缺乏可操作化的直接观察证据。主要结果与关键分项均缺可核对证据，故暂无法判断。",
+      "limitation": "GDP总量增速不能穷尽“发展”，且文化心理屏障的因果机制无法由增速差异识别；第二分项缺乏可操作化的直接证据。修订说明：原判部分符合所依据的“美国全窗增速高于日本”缺乏可核对数值支撑，且第二分项属缺证据而非有直接证据的实质分化，故改为暂无法判断。",
+      "evidence_ids": [
+        "prior-a17e981669fe6d9634b7",
+        "prior-6eade55c940cb2f53437",
+        "prior-1466ef06a675c43a64a7",
+        "ev-cd0570826a684e3d9714467c"
+      ],
+      "method": "由文化心理壁垒外推美日相对发展速度与接受能力",
+      "method_basis": "explicit",
+      "observation_end": "2024-12-31",
+      "future_time_text": "往后",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-a17e981669fe6d9634b7",
+          "relation": "background",
+          "quote": "世界银行WDI原始年度序列；指标NY.GDP.MKTP.KD；不含2025及以后预测值。",
+          "publication_date": "2026-10-08",
+          "observation_end": "2024-12-31",
+          "limitation": "仅提供序列元数据，未展示具体数值，无法据此核对美日全窗CAGR方向。"
+        },
+        {
+          "evidence_id": "prior-6eade55c940cb2f53437",
+          "relation": "background",
+          "quote": "世界银行WDI原始年度序列；指标NY.GDP.MKTP.KD.ZG；不含2025及以后预测值。",
+          "publication_date": "2026-10-08",
+          "observation_end": "2024-12-31",
+          "limitation": "仅提供序列元数据，未展示具体数值；增速口径为年度百分比变化，无法据此核对全窗方向。"
+        },
+        {
+          "evidence_id": "prior-1466ef06a675c43a64a7",
+          "relation": "boundary",
+          "quote": "日本银行总裁回顾：日本1990年代年均实际增长约1.3%，低于前十年4.0%，恢复曾数次中断。",
+          "publication_date": "2009-04-23",
+          "observation_end": "2009-04-23",
+          "limitation": "仅覆盖1990年代日本增速，不能代表全窗美日对比；为回顾性表述，不提供美国同期数值。"
+        },
+        {
+          "evidence_id": "ev-cd0570826a684e3d9714467c",
+          "relation": "boundary",
+          "quote": "| 年 | 1990 | 1991 | 1992 | 1993 | 1994 | 1995 | 1996 | 1997 | 1998 | 1999 |",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "表格含2025—2026年IMF推估值，不能作为已实现结果；来源日期未知、verified=false且为第三方整理，数值未经语义复核，不能单独支撑方向结论。"
+        }
+      ],
+      "remaining_gap": "需提供可直接核对的美日1991—2024年实际GDP总量或增速数值（含分母、单位与观察期），以确认“美国发展不快于日本”的方向；第二分项需可操作化的美国接受日本支配性地位的直接观察证据。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象：美国相对日本的发展速度，以及美国人是否最终接受日本（“太阳帝国”）的支配性挑战。可观察口径：以1991—2024年美日实际GDP总量增速（世界银行NY.GDP.MKTP.KD年度序列，计算全窗CAGR）作为“发展速度”的透明代理；以美国对日本文化/经济影响力的接受程度作为第二分项的定性观察。反证：若美国实际增速持续低于日本，或美国社会明显接受日本支配性地位，则反驳原判断。局限：GDP增速不能穷尽“发展”，文化心理屏障的因果机制无法由增速差异识别。",
+  "elapsed_seconds": 40.543,
+  "completed_at": "2026-11-09T10:35:59.832036+00:00"
+}

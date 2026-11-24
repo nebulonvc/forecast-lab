@@ -1,0 +1,96 @@
+name: Periodic Forecast Tracker
+run-name: Periodic Forecast Review (${{ inputs.ledger || 'my-forecasts' }})
+on:
+  schedule:
+    # Runs at 01:00 UTC (09:00 Beijing Time) on the 1st day of every month
+    - cron: '0 1 1 * *'
+  workflow_dispatch:
+    inputs:
+      ledger:
+        description: Forecast ledger directory to review
+        type: string
+        default: my-forecasts
+      workers:
+        description: Concurrent search tasks (1-20)
+        default: '4'
+      budget_cny:
+        description: DeepSeek stop limit in CNY
+        default: '5'
+      exa_budget_usd:
+        description: Exa stop limit in USD
+        default: '2'
+      open_issue:
+        description: Open a GitHub Issue with the periodic review digest
+        type: boolean
+        default: true
+permissions:
+  contents: read
+  issues: write
+concurrency:
+  group: periodic-forecast-${{ inputs.ledger || 'my-forecasts' }}
+  cancel-in-progress: false
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reject blind reruns that could repeat paid calls
+        run: test "$GITHUB_RUN_ATTEMPT" = 1
+      - name: Run periodic check and online evidence sweep
+        id: sweep
+        env:
+          LEDGER: ${{ inputs.ledger || 'my-forecasts' }}
+          WORKERS: ${{ inputs.workers || '4' }}
+          BUDGET_CNY: ${{ inputs.budget_cny || '5' }}
+          EXA_BUDGET_USD: ${{ inputs.exa_budget_usd || '2' }}
+          BOOKPRED_DEEPSEEK_API_KEY: ${{ secrets.BOOKPRED_DEEPSEEK_API_KEY }}
+          EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+        run: |
+          python toolkit/pipeline.py --case "$LEDGER" check
+          mkdir -p "$RUNNER_TEMP/periodic-out"
+          if test -z "$BOOKPRED_DEEPSEEK_API_KEY" || test -z "$EXA_API_KEY"; then
+            echo "secrets_configured=false" >> "$GITHUB_OUTPUT"
+            python toolkit/periodic_tracker.py --case "$LEDGER" digest --output "$RUNNER_TEMP/periodic-out/periodic_digest.md"
+            {
+              echo "## ℹ️ 尚未配置联网检索密钥（当前仅生成离线账本巡检简报）"
+              echo ""
+              echo "在 Fork 的仓库 **Settings → Secrets and variables → Actions** 中配置 \`BOOKPRED_DEEPSEEK_API_KEY\` 与 \`EXA_API_KEY\` 后，本工作流将自动联网搜索正反新证据并提示状态异动。"
+              echo ""
+              cat "$RUNNER_TEMP/periodic-out/periodic_digest.md"
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          echo "secrets_configured=true" >> "$GITHUB_OUTPUT"
+          python toolkit/periodic_tracker.py --case "$LEDGER" bump-cutoff
+          python -u toolkit/verify_prediction.py \
+            --case "$LEDGER" --all-forecasts \
+            --workers "$WORKERS" --max-rounds 2 \
+            --budget-cny "$BUDGET_CNY" --exa-budget-usd "$EXA_BUDGET_USD" \
+            --output-dir "$RUNNER_TEMP/search-run" || true
+          python toolkit/export_search_run.py --source "$RUNNER_TEMP/search-run" --target "$RUNNER_TEMP/periodic-out/raw" || true
+          python toolkit/periodic_tracker.py --case "$LEDGER" digest \
+            --search-run-dir "$RUNNER_TEMP/search-run" \
+            --output "$RUNNER_TEMP/periodic-out/periodic_digest.md"
+          cat "$RUNNER_TEMP/periodic-out/periodic_digest.md" >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload periodic review artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: periodic-forecast-digest-${{ github.run_id }}
+          path: ${{ runner.temp }}/periodic-out/
+          if-no-files-found: warn
+          retention-days: 90
+      - name: Open GitHub Issue notification when enabled
+        if: steps.sweep.outputs.secrets_configured == 'true' && (github.event_name == 'schedule' || inputs.open_issue == true)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          gh issue create \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "📊 定期预测追踪复盘简报 ($TODAY)" \
+            --body-file "$RUNNER_TEMP/periodic-out/periodic_digest.md"

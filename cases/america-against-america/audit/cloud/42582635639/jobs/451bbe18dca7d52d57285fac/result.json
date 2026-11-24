@@ -1,0 +1,374 @@
+{
+  "claim_id": "txt-1c4066fc0c-000179063-000179098",
+  "version": "search-verifier-v1",
+  "input_sha256": "18b58802636ef906cb0b8ec327be37b0c267fc9d1e05d37d5fb0dda712c97020",
+  "cutoff": "2026-11-09",
+  "task_state": "partial",
+  "assessment": null,
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000179063-000179098",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象为美国社会服务/福利开支及纳税人负担引发的全国性政治争论；观察口径为1991年至截止日2026-11-09间联邦立法、预算协商、总统否决、福利资格规则改革等公开制度记录中争议是否反复出现并升级。实际观察到的材料覆盖1996年福利改革立法与两次总统否决、2002年TANF再授权僵局、2004年再授权争议、2016年回顾性评论、2023年SNAP工作要求债务上限协商。",
+    "reason": "原文判断围绕福利开支与纳税人负担的争论将愈演愈烈。观察窗口内确有反复且高强度的制度性争论：1995-1996年福利改革法案两次被总统否决后于1996年8月签署，2002年再授权未按期完成、2004年仍陷僵局，2023年SNAP工作要求又进入债务上限协商。这些证据支持争论持续存在并在多个阶段升级，但2016年评论称福利作为政治议题已“消失”，显示争论并非单调递增，故判部分符合。",
+    "limitation": "“愈演愈烈”无明确期限和量化指标，评估采用制度记录中争议反复出现与升级的定性口径；2016年评论表明该议题在特定时期政治显著性下降，与单调升级不完全一致。部分来源为未语义复核的候选正文，且个别来源出版日期未知。",
+    "evidence_ids": [
+      "prior-9b657e0516dd91780ae7",
+      "prior-de993ffec3fad643c5b7",
+      "prior-e1c8b624bf7b57aa91c3",
+      "ev-ecd90db22e5123f693cd47a3",
+      "ev-73b0039fce58cd71e7b58c3a",
+      "ev-36f9289b7cef69ddcf4c216b",
+      "ev-a6f0d8cff18655e968004acb",
+      "ev-f52bba0441fe414cbd51dae2",
+      "ev-6e09d7f88de1f01490302c14"
+    ],
+    "method": "由财政负担与政治利益冲突外推争论升级",
+    "method_basis": "explicit",
+    "observation_end": "2023-10-05",
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [],
+    "remaining_gap": "缺少覆盖1991-1995年及2005-2022年间福利开支争论强度的系统制度记录，无法完整刻画争论是否在整个观察窗口内持续升级；2016年“议题消失”与2023年SNAP争议之间的衔接证据不足。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-9b657e0516dd91780ae7",
+      "url": "https://www.govinfo.gov/link/crec/142/S/9412",
+      "title": "ev-lane3-welfare1996",
+      "published_date": "1996-08-01",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-welfare1996",
+      "archive_sha256": "a2277a70b86de2633a68a351f937c625f9e0adf421ec019db1ba0755b2d61c06",
+      "archive_path": "data/sources/lane3-welfare1996.pdf",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-de993ffec3fad643c5b7",
+      "url": "https://www.brookings.edu/articles/a-primer-on-snap-work-requirements-october-2023/",
+      "title": "ev-lane3-snap2023",
+      "published_date": "2023-10-05",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-snap2023",
+      "archive_sha256": "6421dd3859464a0f28ad8a710940827ded742300569e93dd569e4a57395f249a",
+      "archive_path": "data/sources/lane3-web-extracts.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-e1c8b624bf7b57aa91c3",
+      "url": "https://www.congress.gov/crs_external_products/IN/PDF/IN12165/IN12165.1.pdf",
+      "title": "ev-lane3-snapcrs",
+      "published_date": "2023-05-31",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-lane3-snapcrs",
+      "archive_sha256": "d1ab410527ffab8d70473dc1db7eec9b599b282b58c26738db5be59ed345db92",
+      "archive_path": "data/sources/lane3-snapcrs.pdf",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-ecd90db22e5123f693cd47a3",
+      "url": "https://www.congress.gov/crs-product/IF13261",
+      "resolved_url": "https://www.congress.gov/crs-product/IF13261",
+      "title": "The Personal Responsibility and Work Opportunity Reconciliation Act of 1996 | Congress.gov | Library of Congress",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:18.206002+00:00",
+      "archive_sha256": "6b8c105fd0244e0df258a28860531b600daf030a2001f3f26d04f9d020767eb3",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/6b8c105fd0244e0df258a28860531b600daf030a2001f3f26d04f9d020767eb3.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-adda1940f002bc65363eec7b",
+      "url": "https://www.congress.gov/crs-product/R44668",
+      "resolved_url": "https://www.congress.gov/crs-product/R44668",
+      "title": "The Temporary Assistance for Needy Families (TANF) Block Grant: A Legislative History | Congress.gov | Library of Congress",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:18.206255+00:00",
+      "archive_sha256": "521583136338bb4a917f1c00985a0a0c7b71739f065c5bba255e4e8194a05dc8",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/521583136338bb4a917f1c00985a0a0c7b71739f065c5bba255e4e8194a05dc8.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-73b0039fce58cd71e7b58c3a",
+      "url": "https://thehill.com/blogs/pundits-blog/economy-budget/293629-how-welfare-vanished-as-a-political-issue/",
+      "resolved_url": "https://thehill.com/blogs/pundits-blog/economy-budget/293629-how-welfare-vanished-as-a-political-issue/",
+      "title": "How welfare vanished as a political issue",
+      "published_date": "2016-08-29",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:18.206451+00:00",
+      "archive_sha256": "15205f039cb99bb31804575bbac25b72fd8a72af0e809a84fa4b574981aea0b3",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/15205f039cb99bb31804575bbac25b72fd8a72af0e809a84fa4b574981aea0b3.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-36f9289b7cef69ddcf4c216b",
+      "url": "https://www.cambridge.org/core/journals/social-policy-and-society/article/abs/leaving-it-be-the-2002-us-debate-on-welfare-reform/B26D86A63A304F1406F8FD8F6963828D",
+      "resolved_url": "https://www.cambridge.org/core/journals/social-policy-and-society/article/abs/leaving-it-be-the-2002-us-debate-on-welfare-reform/B26D86A63A304F1406F8FD8F6963828D",
+      "title": "Leaving It Be: The 2002 US Debate on Welfare Reform",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:18.206624+00:00",
+      "archive_sha256": "dd5d3c5b14adb2ac15d268795ed59ae1da6d4fb911ca898f21410d5603310fad",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/dd5d3c5b14adb2ac15d268795ed59ae1da6d4fb911ca898f21410d5603310fad.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a6f0d8cff18655e968004acb",
+      "url": "https://www.congress.gov/bill/118th-congress/house-bill/2811",
+      "resolved_url": "https://www.congress.gov/bill/118th-congress/house-bill/2811",
+      "title": "H.R.2811 - 118th Congress (2023-2024): Limit, Save, Grow Act of 2023 | Congress.gov | Library of Congress",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:26.842447+00:00",
+      "archive_sha256": "30d86854972df26ad853103d3b1e7bc3a28e0e5d41f5114d30aa583437a38468",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/30d86854972df26ad853103d3b1e7bc3a28e0e5d41f5114d30aa583437a38468.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-f52bba0441fe414cbd51dae2",
+      "url": "https://www.congress.gov/crs_external_products/IN/PDF/IN12165/IN12165.2.pdf",
+      "resolved_url": "https://www.congress.gov/crs_external_products/IN/PDF/IN12165/IN12165.2.pdf",
+      "title": "Supplemental Nutrition Assistance Program (SNAP) Provisions in H.R. 3746, the Fiscal",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:26.842659+00:00",
+      "archive_sha256": "2a580ee4b0f485cf968988176bdac17128e7cf2a76bd27386c3436a087f186b9",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/2a580ee4b0f485cf968988176bdac17128e7cf2a76bd27386c3436a087f186b9.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-6e09d7f88de1f01490302c14",
+      "url": "https://prospect.org/2004/08/13/welfare-reform-phase-two/",
+      "resolved_url": "https://prospect.org/2004/08/13/welfare-reform-phase-two/",
+      "title": "Welfare Reform, Phase Two - The American Prospect",
+      "published_date": "2004-08-13",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:00:26.842866+00:00",
+      "archive_sha256": "fccb449c3c590f247c77a660f408b9742dd01c0c870cda031894cce77a033ec5",
+      "archive_path": "jobs/451bbe18dca7d52d57285fac/fccb449c3c590f247c77a660f408b9742dd01c0c870cda031894cce77a033ec5.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "site:congress.gov welfare reform debate 1996 presidential veto conference compromise",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "welfare reform bipartisan compromise decline political salience United States after 1996",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "site:congress.gov SNAP work requirements 2023 debt ceiling debate welfare spending taxpayer burden",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "welfare reform bipartisan compromise decline political salience United States after 1996 TANF reauthorization",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [
+    {
+      "stage": "worker",
+      "error": "cited_source_missing_exact_quote"
+    }
+  ],
+  "validation_warnings": [],
+  "remaining_gap": "任务未完成；查看错误、已取得材料和请求状态，不能据此判断原预测。",
+  "source_statuses": [
+    {
+      "url": "https://www.congress.gov/crs-product/IF13261",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.congress.gov/crs-product/R44668",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://thehill.com/blogs/pundits-blog/economy-budget/293629-how-welfare-vanished-as-a-political-issue/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.cambridge.org/core/journals/social-policy-and-society/article/abs/leaving-it-be-the-2002-us-debate-on-welfare-reform/B26D86A63A304F1406F8FD8F6963828D",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.congress.gov/bill/118th-congress/house-bill/2811",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.congress.gov/crs_external_products/IN/PDF/IN12165/IN12165.2.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://prospect.org/2004/08/13/welfare-reform-phase-two/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 5,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "27c268f73191f739ca7d76d6e0076bf9627860946bff0668fa2f0a1273ac794c"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e4a800b24f36556c2d82eb0c1087b8e4",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "2c71c86e6f4a5b2a609c74473d082865",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "7c56cb0e4da24c1b22fb7aecc3332f2a023dda59801b5f2053eb349d46337ede"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "7645ba725d3269f61db4d46d3f95f2fe",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "967a6fb0c0359fd4179666451fcd0c02c021f0c46fd9412523f29382cbf0482a"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "d892bc8b4450f6c46196cffaff9defb4",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "8ccee3494e842deca2de40c1b42420b0",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "a5f8bbd10dec870372fdd73f0477db2ab723b2ea9f3e79510c878cefb15647d2"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "d92c6458abff32d09ad20dd07e27de9e",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "5ef49e49c5bfaf140b745c530c14a6285aff5d4b9b2117873349543b43538596"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000179063-000179098",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象为美国社会服务/福利开支及纳税人负担引发的全国性政治争论；观察口径为1991年至截止日2026-11-09间联邦立法、预算协商、总统否决、福利资格规则改革等公开制度记录中争议是否反复出现并升级。实际观察到的材料覆盖1996年福利改革立法与两次总统否决、2002年TANF再授权僵局、2004年再授权争议、2016年回顾性评论、2023年SNAP工作要求债务上限协商。",
+      "reason": "原文判断围绕福利开支与纳税人负担的争论将愈演愈烈。观察窗口内确有反复且高强度的制度性争论：1995-1996年福利改革法案两次被总统否决后于1996年8月签署，2002年再授权未按期完成、2004年仍陷僵局，2023年SNAP工作要求又进入债务上限协商。这些证据支持争论持续存在并在多个阶段升级，但2016年评论称福利作为政治议题已“消失”，显示争论并非单调递增，故判部分符合。",
+      "limitation": "“愈演愈烈”无明确期限和量化指标，评估采用制度记录中争议反复出现与升级的定性口径；2016年评论表明该议题在特定时期政治显著性下降，与单调升级不完全一致。部分来源为未语义复核的候选正文，且个别来源出版日期未知。",
+      "evidence_ids": [
+        "prior-9b657e0516dd91780ae7",
+        "prior-de993ffec3fad643c5b7",
+        "prior-e1c8b624bf7b57aa91c3",
+        "ev-ecd90db22e5123f693cd47a3",
+        "ev-73b0039fce58cd71e7b58c3a",
+        "ev-36f9289b7cef69ddcf4c216b",
+        "ev-a6f0d8cff18655e968004acb",
+        "ev-f52bba0441fe414cbd51dae2",
+        "ev-6e09d7f88de1f01490302c14"
+      ],
+      "method": "由财政负担与政治利益冲突外推争论升级",
+      "method_basis": "explicit",
+      "observation_end": "2023-10-05",
+      "future_time_text": "",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [],
+      "remaining_gap": "缺少覆盖1991-1995年及2005-2022年间福利开支争论强度的系统制度记录，无法完整刻画争论是否在整个观察窗口内持续升级；2016年“议题消失”与2023年SNAP争议之间的衔接证据不足。"
+    }
+  ],
+  "autonomous_decision": false,
+  "semantic_validation": null,
+  "scope": "对象为美国社会服务/福利开支及纳税人负担引发的全国性政治争论；可观察口径为1991年至截止日（2026-11-09）间联邦立法、预算协商、总统否决、福利资格规则改革等公开制度记录中争议是否反复出现并升级；反证包括争议在重大改革后明显降温、两党达成稳定妥协或该议题长期退出全国议程。",
+  "elapsed_seconds": 34.525,
+  "completed_at": "2026-11-09T08:00:42.377837+00:00"
+}

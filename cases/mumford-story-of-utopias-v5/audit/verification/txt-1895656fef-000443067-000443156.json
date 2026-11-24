@@ -1,0 +1,50 @@
+{
+  "claim_id": "txt-1895656fef-000443067-000443156",
+  "plan": {
+    "object": "抓住民族国家神话不放的那种狂热",
+    "conditions": [],
+    "quantifier": "will probably",
+    "result": "后代看来大概又盲目又残酷",
+    "time_window": "future generations，到截止日",
+    "counterevidence_needed": "后代并不把这种狂热看成盲目残酷"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "support_query": "later generations condemn nationalist fanaticism of the world wars as blind and cruel",
+        "counter_query": "nationalism of the nation state still defended as necessary not cruel by later historians",
+        "saved_at_utc": "2026-11-20T11:11:02Z",
+        "tool_call_id": null
+      }
+    ],
+    "adaptive_rounds": 0,
+    "stop_reason": "同一页同时写出战争遗产把民族主义看成造成屠杀的黑暗力量，又写这是漫画、理想本身不因此失效。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "trend_aligned": false,
+    "condition_state": "unconditional",
+    "future_time_text": "future generations",
+    "observation_end": "2018-12-31",
+    "evidence_ids": [
+      "ev-ndu-nationalism"
+    ],
+    "scope": "对象是面对战争仍抓住民族国家神话的狂热。probably 不是全体后代一致。",
+    "reason": "这一章写，两次大战的遗产是民族主义这个词变得和造成屠杀的人性黑暗面同义，评论几乎反射性地把它看成黑暗力量。欧洲因为屠杀而认为必须减弱对故土的忠诚。这是后代看来盲目而残酷的一截。同一页写这种看法是漫画，理想被扭曲并不取消理想，而且民族主义仍在推动政治。所以不是全体后代都这样看。",
+    "limitation": "页面把对象写成民族主义，比原文的那种狂热宽。一百周年没有印出日，观察终点用2018年年末。",
+    "method": "先看战争造成的狂热在后代评论里是否显得残酷，再看是不是所有后代都如此。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "pass",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "残酷外观有记录，辩护也在同一页。所以是部分符合。"
+  }
+}

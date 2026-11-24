@@ -1,0 +1,771 @@
+{
+  "claim_id": "txt-1c4066fc0c-000218997-000219034",
+  "version": "search-verifier-v2",
+  "input_sha256": "8e3e75e389b2690a5d4428bf2fef8aa5a4f5adba5ec5fe7d3cc5e7bf7bd6d450",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000218997-000219034",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以原文所举红卫兵小报等同类资料为对象，观察其在1991年前后至2026-11-09前是否被学者实际用于历史研究；不要求定位匿名馆负责人或同一批物理纸本。",
+    "reason": "1975年Hong Yung Lee的论文明确将红卫兵出版物评价为研究中国政治的可用史料，2021年论文也显示此类材料持续被学术研究使用，方向与“对后人研究历史也许有用”一致。但原文是“也许”的或然判断，且未指定具体资料与终点，只能判趋势/方向符合而非终局正确。",
+    "limitation": "证据多为学术摘要与二手综述，未逐一核实具体馆藏纸本的使用链；原文的“也许”本身是低置信或然判断，本评估只记录方向，不做概率校准。",
+    "evidence_ids": [
+      "ev-06bab7d3c599d4faeef48383",
+      "prior-f6df306ead01297e8e58",
+      "ev-d88a8b892cddfc906de75532",
+      "ev-0ac6d20b6eaaf887dc3a7ed0"
+    ],
+    "method": "在用途不确定时保存原始资料作为未来知识储备",
+    "method_basis": "explicit",
+    "observation_end": "2026-11-09",
+    "future_time_text": "后人研究历史时",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-06bab7d3c599d4faeef48383",
+        "relation": "support",
+        "quote": "Some of them have become available to the academic community outside China, thus providing China specialists with their best opportunity for the foreseeable future—until we are able to interview Chinese people freely—to study Chinese politics.",
+        "publication_date": "1975-05-01",
+        "observation_end": "1975-05-01",
+        "limitation": "仅为论文摘要，未展示全文对具体资料使用情况的详细论证；且发表于原书出版前，属早期学术利用证据。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-f6df306ead01297e8e58",
+        "relation": "support",
+        "quote": "Nicolai Volland2021论文利用红卫兵报刊研究其政治社会功能，并回顾早期国际研究者收集传播此类材料；也指出1990年代新档案和口述史使红卫兵报刊研究热度一度下降。",
+        "publication_date": "2021-06-17",
+        "observation_end": "2021-06-17",
+        "limitation": "该条为已登记摘录而非全文，且提到研究热度一度下降，说明利用并非持续单向增长；但下降不等于资料无用。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-d88a8b892cddfc906de75532",
+        "relation": "support",
+        "quote": "北京大学图书馆藏有千余种、上万份珍贵的“文革小报”，为了便于利用和管理，对其进行了整理与著录，制定了15项“文革小报”著录款目和具体著录规则",
+        "publication_date": "2012-01-01",
+        "observation_end": "2012-01-01",
+        "limitation": "仅证明馆藏整理与著录，未直接证明学者已利用这些资料完成历史研究；属间接支持。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-0ac6d20b6eaaf887dc3a7ed0",
+        "relation": "boundary",
+        "quote": "但是限于人们的认识水平,认为那些属于“派性报纸”,视为无用,或视为有毒之物将其扔掉了。因此现存下来的就所剩无几了。",
+        "publication_date": "1988-01-01",
+        "observation_end": "1988-01-01",
+        "limitation": "该文同时说明当时存在“视为无用”而销毁的做法，构成对“保存并有益后人”的反向边界；但也正说明后来整理利用的价值被重新认识。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺少对具体馆藏纸本在截止日前被哪些历史研究实际引用的一手书目核查；原文“也许有用”的或然性无法用二值结果完全校准。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000218997-000219034",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以原文所举红卫兵小报等同类资料为对象，观察其在1991年前后至2026-11-09前是否被学者实际用于历史研究；不要求定位匿名馆负责人或同一批物理纸本。",
+    "reason": "1975年Hong Yung Lee的论文明确将红卫兵出版物评价为研究中国政治的可用史料，2021年论文也显示此类材料持续被学术研究使用，方向与“对后人研究历史也许有用”一致。但原文是“也许”的或然判断，且未指定具体资料与终点，只能判趋势/方向符合而非终局正确。",
+    "limitation": "证据多为学术摘要与二手综述，未逐一核实具体馆藏纸本的使用链；原文的“也许”本身是低置信或然判断，本评估只记录方向，不做概率校准。",
+    "evidence_ids": [
+      "ev-06bab7d3c599d4faeef48383",
+      "prior-f6df306ead01297e8e58",
+      "ev-d88a8b892cddfc906de75532",
+      "ev-0ac6d20b6eaaf887dc3a7ed0"
+    ],
+    "method": "在用途不确定时保存原始资料作为未来知识储备",
+    "method_basis": "explicit",
+    "observation_end": "2026-11-09",
+    "future_time_text": "后人研究历史时",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-06bab7d3c599d4faeef48383",
+        "relation": "support",
+        "quote": "Some of them have become available to the academic community outside China, thus providing China specialists with their best opportunity for the foreseeable future—until we are able to interview Chinese people freely—to study Chinese politics.",
+        "publication_date": "1975-05-01",
+        "observation_end": "1975-05-01",
+        "limitation": "仅为论文摘要，未展示全文对具体资料使用情况的详细论证；且发表于原书出版前，属早期学术利用证据。"
+      },
+      {
+        "evidence_id": "prior-f6df306ead01297e8e58",
+        "relation": "support",
+        "quote": "Nicolai Volland2021论文利用红卫兵报刊研究其政治社会功能，并回顾早期国际研究者收集传播此类材料；也指出1990年代新档案和口述史使红卫兵报刊研究热度一度下降。",
+        "publication_date": "2021-06-17",
+        "observation_end": "2021-06-17",
+        "limitation": "该条为已登记摘录而非全文，且提到研究热度一度下降，说明利用并非持续单向增长；但下降不等于资料无用。"
+      },
+      {
+        "evidence_id": "ev-d88a8b892cddfc906de75532",
+        "relation": "support",
+        "quote": "北京大学图书馆藏有千余种、上万份珍贵的“文革小报”，为了便于利用和管理，对其进行了整理与著录，制定了15项“文革小报”著录款目和具体著录规则",
+        "publication_date": "2012-01-01",
+        "observation_end": "2012-01-01",
+        "limitation": "仅证明馆藏整理与著录，未直接证明学者已利用这些资料完成历史研究；属间接支持。"
+      },
+      {
+        "evidence_id": "ev-0ac6d20b6eaaf887dc3a7ed0",
+        "relation": "boundary",
+        "quote": "但是限于人们的认识水平,认为那些属于“派性报纸”,视为无用,或视为有毒之物将其扔掉了。因此现存下来的就所剩无几了。",
+        "publication_date": "1988-01-01",
+        "observation_end": "1988-01-01",
+        "limitation": "该文同时说明当时存在“视为无用”而销毁的做法，构成对“保存并有益后人”的反向边界；但也正说明后来整理利用的价值被重新认识。"
+      }
+    ],
+    "remaining_gap": "缺少对具体馆藏纸本在截止日前被哪些历史研究实际引用的一手书目核查；原文“也许有用”的或然性无法用二值结果完全校准。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-f6df306ead01297e8e58",
+      "url": "https://www.cambridge.org/core/journals/china-quarterly/article/liberating-the-small-devils-red-guard-newspapers-and-radical-publics-19661968/1B64D41ADF7DC64E7E99543EE55975DC",
+      "title": "ev-r2-l3-redguard-research",
+      "published_date": "2021-06-17",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2021-06-17",
+        "latest": "2021-06-17"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l3-redguard-research",
+      "archive_sha256": "9bec06de96ad2ebf9164df23265add11593d8163383f09f4ecb2b27f0d6de4b5",
+      "archive_path": "data/sources/r2-l3-redguard-paper.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-07a508f7a45a4560e20e7d3f",
+      "url": "https://read.dukeupress.edu/journal-of-asian-studies/article-pdf/34/3/779/1727858/s0021911800145103.pdf",
+      "resolved_url": "https://read.dukeupress.edu/journal-of-asian-studies/article-pdf/34/3/779/1727858/s0021911800145103.pdf",
+      "title": "Utility and Limitation of the Red Guard Publications as Source Publications: A Bibliographical Survey | Journal of Asian Studies | Duke University Press",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:26.243963+00:00",
+      "archive_sha256": "c2cbe5d5b6ecf7156628314b90f785973bd6253af32891dec3d8b118327b1721",
+      "archive_path": "jobs/01aa507c972624f047fda817/c2cbe5d5b6ecf7156628314b90f785973bd6253af32891dec3d8b118327b1721.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d88a8b892cddfc906de75532",
+      "url": "http://cqvip.com/QK/90041A/201202/41190300.html",
+      "resolved_url": "http://cqvip.com/QK/90041A/201202/41190300.html",
+      "title": "馆藏珍贵“文革小报”的整理与著录实践",
+      "published_date": "2012-01-01",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2012-01-01",
+        "latest": "2012-01-01"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:26.244082+00:00",
+      "archive_sha256": "5fef4c9f3850197861b6df1cfc610b54b5abe068a56c50ed9e29197ac9b8d7fd",
+      "archive_path": "jobs/01aa507c972624f047fda817/5fef4c9f3850197861b6df1cfc610b54b5abe068a56c50ed9e29197ac9b8d7fd.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-8f9cae0f315e9a45c2d4b3ae",
+      "url": "http://cnd.org/HXWZ/ZK02/zk282.gb.html",
+      "resolved_url": "http://cnd.org/HXWZ/ZK02/zk282.gb.html",
+      "title": "《华夏文摘》增刊#282, zk0202b",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:26.244210+00:00",
+      "archive_sha256": "3813ba0c52bce683e0d81e812af70de5567f89fd6bf8571d587b90940d33fd66",
+      "archive_path": "jobs/01aa507c972624f047fda817/3813ba0c52bce683e0d81e812af70de5567f89fd6bf8571d587b90940d33fd66.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-06bab7d3c599d4faeef48383",
+      "url": "https://doi.org/10.2307/2052554",
+      "resolved_url": "https://doi.org/10.2307/2052554",
+      "title": "Utility and Limitation of the Red Guard Publications as Source Publications: A Bibliographical Survey",
+      "published_date": "1975-05-01",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "1975-05-01",
+        "latest": "1975-05-01"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:35.056604+00:00",
+      "archive_sha256": "89e20f60db436eef179a547629263810f2a4695adf5b2f897fbf97cc11939a37",
+      "archive_path": "jobs/01aa507c972624f047fda817/89e20f60db436eef179a547629263810f2a4695adf5b2f897fbf97cc11939a37.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-0ac6d20b6eaaf887dc3a7ed0",
+      "url": "http://cqvip.com/QK/93618X/198803/1003047200.html",
+      "resolved_url": "http://cqvip.com/QK/93618X/198803/1003047200.html",
+      "title": "应重视‘文化大革命’时期小报的收藏",
+      "published_date": "1988-01-01",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "1988-01-01",
+        "latest": "1988-01-01"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:35.056722+00:00",
+      "archive_sha256": "9af8ce739643753748565ba0c3cd8855d4c0f71d907087305462e55465592534",
+      "archive_path": "jobs/01aa507c972624f047fda817/9af8ce739643753748565ba0c3cd8855d4c0f71d907087305462e55465592534.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "红卫兵小报 学术研究 历史研究 利用 图书馆 收藏 1966 1968",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "红卫兵小报 收藏 未被使用 研究 批评 史料 价值",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Hong Yung Lee \"Utility and Limitation of the Red Guard Publications as Source Publications\" Journal of Asian Studies 1975 Red Guard publications research value",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Red Guard publications 文革小报 史料 局限 不可用 研究 批评 图书馆 收藏 未被利用",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "缺少对具体馆藏纸本在截止日前被哪些历史研究实际引用的一手书目核查；原文“也许有用”的或然性无法用二值结果完全校准。",
+  "source_statuses": [
+    {
+      "url": "https://read.dukeupress.edu/journal-of-asian-studies/article-pdf/34/3/779/1727858/s0021911800145103.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "http://cqvip.com/QK/90041A/201202/41190300.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "http://cnd.org/HXWZ/ZK02/zk282.gb.html",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://doi.org/10.2307/2052554",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "http://cqvip.com/QK/93618X/198803/1003047200.html",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "第三方图书馆负责人关于保存用途不确定的原始资料、其可能有益于后人历史研究的一般性判断；以原文所举红卫兵小报等同类资料在截止日前是否被学者实际用于历史研究为可观察口径，不要求定位匿名馆负责人或同一批物理纸本。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "879c732bafbec87327027143e208b28943554df8e03030fb7ef478ab586ee18d"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "c938d4649e08c1f498b2b79f33947c6a",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "0c52b18f88fe4dccd14cb0ab3a80d2c6",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "d3f33970765b63dbfebe74303d4a6bd05b19f461acb153a5c0656587a6389a0d"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "98b6f771cdc51f71b7c95fc5020726f0",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "d72b9958e63fb588a7380b5b3122122851d58ae33b43571c18315ef3374428bc"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "487155e3203bb60e312c8eb25cbb049b",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e6fda936e40b030888deaf14b47b41b1",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "d688ccbcbfab964600f9a6ae1f454b99753061a53bde4001a433e6cfe646fb8c"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "ffe3d7f7318dc1e91c4713a43fb79c24",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "1411db2679c244b49ff189fe7f0adcf9b1395ffbc274fdd7585167449fb4da58"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "72fa06e990aa9485eeb2212f26ce270714145805b10e5abd5aed6231ad79903b"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "legacy_hint",
+      "request_sha256": "ea867ec7b7f19279fa9429d6f96cc8bbf142aa7c3cf4c07d5e765c3ee3bf7395"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "legacy_nohint",
+      "request_sha256": "3f98e5bac1d630a6833653ee28bce6e6e04962146dacd0419f8b59a0fd46d7b0"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "shared_hint",
+      "request_sha256": "c0d585361719f270fc8143cdb62579f779be59978928baf6007e1276a079a4d9"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-f6df306ead01297e8e58",
+        "source_bytes": 551,
+        "shown_bytes": 551,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-07a508f7a45a4560e20e7d3f",
+        "source_bytes": 1096,
+        "shown_bytes": 1096,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-d88a8b892cddfc906de75532",
+        "source_bytes": 786,
+        "shown_bytes": 786,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-8f9cae0f315e9a45c2d4b3ae",
+        "source_bytes": 34856,
+        "shown_bytes": 3832,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-06bab7d3c599d4faeef48383",
+        "source_bytes": 2308,
+        "shown_bytes": 2308,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-0ac6d20b6eaaf887dc3a7ed0",
+        "source_bytes": 904,
+        "shown_bytes": 904,
+        "context_truncated": false
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-f6df306ead01297e8e58",
+        "source_bytes": 551,
+        "shown_bytes": 551,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-07a508f7a45a4560e20e7d3f",
+        "source_bytes": 1096,
+        "shown_bytes": 1096,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-d88a8b892cddfc906de75532",
+        "source_bytes": 786,
+        "shown_bytes": 786,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-8f9cae0f315e9a45c2d4b3ae",
+        "source_bytes": 34856,
+        "shown_bytes": 3832,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-06bab7d3c599d4faeef48383",
+        "source_bytes": 2308,
+        "shown_bytes": 2308,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-0ac6d20b6eaaf887dc3a7ed0",
+        "source_bytes": 904,
+        "shown_bytes": 904,
+        "context_truncated": false
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 3,
+  "review_audit": {
+    "selected": true,
+    "arms": {
+      "shared_nohint": {
+        "status": "completed",
+        "common_input_sha256": "47fb6218f5333c088365fa1e8362814589879aae8b2f97680a680c9fe5c41b19",
+        "schema_repaired": false,
+        "review": {
+          "id": "txt-1c4066fc0c-000218997-000219034",
+          "decision": "accept",
+          "checks": {
+            "object_match": "pass",
+            "condition_logic": "pass",
+            "time_alignment": "pass",
+            "evidence_support": "pass",
+            "counterevidence": "pass",
+            "verdict_logic": "pass"
+          },
+          "issues": [],
+          "remaining_gap": ""
+        },
+        "request_sha256": "72fa06e990aa9485eeb2212f26ce270714145805b10e5abd5aed6231ad79903b",
+        "prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+      },
+      "legacy_hint": {
+        "status": "completed",
+        "schema_repaired": false,
+        "common_input_sha256": "47fb6218f5333c088365fa1e8362814589879aae8b2f97680a680c9fe5c41b19",
+        "primary_material_sha256": "47fb6218f5333c088365fa1e8362814589879aae8b2f97680a680c9fe5c41b19",
+        "request_sha256": "ea867ec7b7f19279fa9429d6f96cc8bbf142aa7c3cf4c07d5e765c3ee3bf7395",
+        "prompt_sha256": "fe64d20b3d3cb81be0d11d63babe30487df93edf8a719de208973c011e3151b0",
+        "primary_schema_repaired": false,
+        "same_protocol_as_primary": true,
+        "review": {
+          "id": "txt-1c4066fc0c-000218997-000219034",
+          "decision": "revise",
+          "checks": {
+            "object_match": "pass",
+            "condition_logic": "pass",
+            "time_alignment": "pass",
+            "evidence_support": "fail",
+            "counterevidence": "pass",
+            "verdict_logic": "fail"
+          },
+          "issues": [
+            {
+              "check": "evidence_support",
+              "reason": "该证据是1975年论文摘要，只说明红卫兵出版物已可供海外学界使用并具有研究潜力，并未展示学者实际利用这些资料完成历史研究；它发表于原书出版前，不能作为“后人研究历史”这一未来结果已实现的证据。建议把它当作早期可得性/潜力证据，而非支持“已被实际用于历史研究”的主要结果证据。",
+              "quote_ref": "q4",
+              "source_quote": "Some of them have become available to the academic community outside China, thus providing China specialists with their best opportunity for the foreseeable fut",
+              "evidence_id": "ev-06bab7d3c599d4faeef48383",
+              "quote_resolution": "program_supplied_verbatim_option",
+              "quote_origin": "evidence"
+            },
+            {
+              "check": "evidence_support",
+              "reason": "该证据只证明北京大学图书馆对文革小报进行了整理与著录，属于馆藏管理行为，不能直接证明学者已利用这些资料开展历史研究；建议在reason中明确其为间接支持，不能与“实际用于历史研究”的主要结果混同。",
+              "quote_ref": "q6",
+              "source_quote": "北京大学图书馆藏有千余种、上万份珍贵的“文革小报”，为了便于利用和管理，对其进行了整理与著录，制定了15项“文革小报”著录款目和具体著录规则",
+              "evidence_id": "ev-d88a8b892cddfc906de75532",
+              "quote_resolution": "program_supplied_verbatim_option",
+              "quote_origin": "evidence"
+            },
+            {
+              "check": "verdict_logic",
+              "reason": "建议一方面称“方向与‘对后人研究历史也许有用’一致”，另一方面又判“部分符合”，但未指出后果B（后人实际用于历史研究）哪些具体部分实现、哪些未实现及其直接证据；按口径，若主要可检验结果只是方向性支持而终点待验证，应判“趋势符合”并保留终点未定，或说明部分符合的具体分项缺口，不能仅以原文“也许”的或然性作为降级理由。",
+              "quote_ref": "q3",
+              "source_quote": "1975年Hong Yung Lee的论文明确将红卫兵出版物评价为研究中国政治的可用史料，2021年论文也显示此类材料持续被学术研究使用，方向与“对后人研究历史也许有用”一致。",
+              "evidence_id": null,
+              "quote_resolution": "program_supplied_verbatim_option",
+              "quote_origin": "proposal"
+            }
+          ],
+          "remaining_gap": "需补充能直接证明红卫兵小报等同类资料在截止日前被学者实际用于历史研究的一手书目或引用链证据；若无法取得，应将结论改为趋势符合并明确终点未验证，而非以“也许”为由判部分符合。"
+        }
+      },
+      "legacy_nohint": {
+        "status": "completed",
+        "schema_repaired": false,
+        "common_input_sha256": "47fb6218f5333c088365fa1e8362814589879aae8b2f97680a680c9fe5c41b19",
+        "primary_material_sha256": "47fb6218f5333c088365fa1e8362814589879aae8b2f97680a680c9fe5c41b19",
+        "request_sha256": "3f98e5bac1d630a6833653ee28bce6e6e04962146dacd0419f8b59a0fd46d7b0",
+        "prompt_sha256": "fe64d20b3d3cb81be0d11d63babe30487df93edf8a719de208973c011e3151b0",
+        "primary_schema_repaired": false,
+        "same_protocol_as_primary": true,
+        "review": {
+          "id": "txt-1c4066fc0c-000218997-000219034",
+          "decision": "revise",
+          "checks": {
+            "object_match": "pass",
+            "condition_logic": "pass",
+            "time_alignment": "pass",
+            "evidence_support": "pass",
+            "counterevidence": "pass",
+            "verdict_logic": "fail"
+          },
+          "issues": [
+            {
+              "check": "verdict_logic",
+              "reason": "原文是“也许有用”的或然判断，不是可检验的趋势预测；建议一方面承认“只能判趋势/方向符合而非终局正确”，另一方面又设置trend_aligned=true并给出“部分符合”，内部口径矛盾。按规则，或然判断的方向性支持只能记为“符合（或然判断得到支持）”，不能设置trend_aligned=true，也不能因“也许”而判部分符合；部分符合须指出后果B哪些具体部分实现、哪些未实现，建议未做到。",
+              "quote_ref": "q3",
+              "source_quote": "1975年Hong Yung Lee的论文明确将红卫兵出版物评价为研究中国政治的可用史料，2021年论文也显示此类材料持续被学术研究使用，方向与“对后人研究历史也许有用”一致。",
+              "evidence_id": null,
+              "quote_resolution": "program_supplied_verbatim_option",
+              "quote_origin": "proposal"
+            }
+          ],
+          "remaining_gap": "需将verdict_logic改为与“也许有用”的或然判断相匹配的结论（如“符合”并说明是或然判断得到方向性支持），删除trend_aligned=true或说明其不适用于或然判断；若坚持“部分符合”，须具体列出后果B哪些部分实现、哪些未实现及直接证据。"
+        }
+      },
+      "shared_hint": {
+        "status": "completed",
+        "schema_repaired": false,
+        "common_input_sha256": "47fb6218f5333c088365fa1e8362814589879aae8b2f97680a680c9fe5c41b19",
+        "primary_material_sha256": "47fb6218f5333c088365fa1e8362814589879aae8b2f97680a680c9fe5c41b19",
+        "request_sha256": "c0d585361719f270fc8143cdb62579f779be59978928baf6007e1276a079a4d9",
+        "prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1",
+        "primary_schema_repaired": false,
+        "same_protocol_as_primary": true,
+        "review": {
+          "id": "txt-1c4066fc0c-000218997-000219034",
+          "decision": "revise",
+          "checks": {
+            "object_match": "pass",
+            "condition_logic": "pass",
+            "time_alignment": "fail",
+            "evidence_support": "pass",
+            "counterevidence": "pass",
+            "verdict_logic": "fail"
+          },
+          "issues": [
+            {
+              "check": "time_alignment",
+              "reason": "建议把观察窗口写成“1991年前后至2026-11-09前”，但所引核心支持证据ev-06bab7d3c599d4faeef48383发表于1975-05-01，早于原书出版（1991年），属于出版前已知结果，不能作为“后人研究历史时”这一未来预测的兑现证据；建议在reason中却把它当作方向符合的主要依据，混淆了发表时间与预测后的观察时期。",
+              "quote_ref": "q4",
+              "source_quote": "Some of them have become available to the academic community outside China, thus providing China specialists with their best opportunity for the foreseeable fut",
+              "evidence_id": "ev-06bab7d3c599d4faeef48383",
+              "quote_resolution": "program_supplied_verbatim_option",
+              "quote_origin": "evidence"
+            },
+            {
+              "check": "verdict_logic",
+              "reason": "原文是“也许没有用，但对后人研究历史也许就是有用的”这一或然判断，且未指定具体资料集合与终点。建议一方面承认“也许”无法校准、缺少具体馆藏纸本使用链，另一方面又判“部分符合”并设trend_aligned=true，把方向性、低置信的或然判断当成已有持续方向证据的趋势符合，分类口径不成立。按统一口径，主要结果未观测、关键对象与真实条件不确定时应保留具体未定，而非部分符合。",
+              "quote_ref": "q3",
+              "source_quote": "1975年Hong Yung Lee的论文明确将红卫兵出版物评价为研究中国政治的可用史料，2021年论文也显示此类材料持续被学术研究使用，方向与“对后人研究历史也许有用”一致。",
+              "evidence_id": null,
+              "quote_resolution": "program_supplied_verbatim_option",
+              "quote_origin": "proposal"
+            }
+          ],
+          "remaining_gap": "需将观察窗口限定在原书出版（1991年）之后至截止日，并排除1975年等出版前证据作为兑现依据；同时需补充1991年后具体馆藏红卫兵小报被哪些历史研究实际引用的一手书目证据，才能判断“对后人研究历史也许有用”是否在声明口径内实现。若无法取得该证据，应改为暂无法判断而非部分符合。"
+        }
+      }
+    }
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000218997-000219034",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000218997-000219034",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以原文所举红卫兵小报等同类资料为对象，观察其在1991年前后至2026-11-09前是否被学者实际用于历史研究；不要求定位匿名馆负责人或同一批物理纸本。",
+      "reason": "1975年Hong Yung Lee的论文明确将红卫兵出版物评价为研究中国政治的可用史料，2021年论文也显示此类材料持续被学术研究使用，方向与“对后人研究历史也许有用”一致。但原文是“也许”的或然判断，且未指定具体资料与终点，只能判趋势/方向符合而非终局正确。",
+      "limitation": "证据多为学术摘要与二手综述，未逐一核实具体馆藏纸本的使用链；原文的“也许”本身是低置信或然判断，本评估只记录方向，不做概率校准。",
+      "evidence_ids": [
+        "ev-06bab7d3c599d4faeef48383",
+        "prior-f6df306ead01297e8e58",
+        "ev-d88a8b892cddfc906de75532",
+        "ev-0ac6d20b6eaaf887dc3a7ed0"
+      ],
+      "method": "在用途不确定时保存原始资料作为未来知识储备",
+      "method_basis": "explicit",
+      "observation_end": "2026-11-09",
+      "future_time_text": "后人研究历史时",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-06bab7d3c599d4faeef48383",
+          "relation": "support",
+          "quote": "Some of them have become available to the academic community outside China, thus providing China specialists with their best opportunity for the foreseeable future—until we are able to interview Chinese people freely—to study Chinese politics.",
+          "publication_date": "1975-05-01",
+          "observation_end": "1975-05-01",
+          "limitation": "仅为论文摘要，未展示全文对具体资料使用情况的详细论证；且发表于原书出版前，属早期学术利用证据。"
+        },
+        {
+          "evidence_id": "prior-f6df306ead01297e8e58",
+          "relation": "support",
+          "quote": "Nicolai Volland2021论文利用红卫兵报刊研究其政治社会功能，并回顾早期国际研究者收集传播此类材料；也指出1990年代新档案和口述史使红卫兵报刊研究热度一度下降。",
+          "publication_date": "2021-06-17",
+          "observation_end": "2021-06-17",
+          "limitation": "该条为已登记摘录而非全文，且提到研究热度一度下降，说明利用并非持续单向增长；但下降不等于资料无用。"
+        },
+        {
+          "evidence_id": "ev-d88a8b892cddfc906de75532",
+          "relation": "support",
+          "quote": "北京大学图书馆藏有千余种、上万份珍贵的“文革小报”，为了便于利用和管理，对其进行了整理与著录，制定了15项“文革小报”著录款目和具体著录规则",
+          "publication_date": "2012-01-01",
+          "observation_end": "2012-01-01",
+          "limitation": "仅证明馆藏整理与著录，未直接证明学者已利用这些资料完成历史研究；属间接支持。"
+        },
+        {
+          "evidence_id": "ev-0ac6d20b6eaaf887dc3a7ed0",
+          "relation": "boundary",
+          "quote": "但是限于人们的认识水平,认为那些属于“派性报纸”,视为无用,或视为有毒之物将其扔掉了。因此现存下来的就所剩无几了。",
+          "publication_date": "1988-01-01",
+          "observation_end": "1988-01-01",
+          "limitation": "该文同时说明当时存在“视为无用”而销毁的做法，构成对“保存并有益后人”的反向边界；但也正说明后来整理利用的价值被重新认识。"
+        }
+      ],
+      "remaining_gap": "缺少对具体馆藏纸本在截止日前被哪些历史研究实际引用的一手书目核查；原文“也许有用”的或然性无法用二值结果完全校准。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "图书馆负责人关于保存用途不确定的原始资料、其可能有益于后人历史研究的一般性判断；以原文所举红卫兵小报等同类资料在截止日前是否被学者实际用于历史研究为可观察口径，不要求定位匿名馆负责人或同一批物理纸本。",
+  "elapsed_seconds": 24.308,
+  "completed_at": "2026-11-09T10:34:42.388390+00:00"
+}

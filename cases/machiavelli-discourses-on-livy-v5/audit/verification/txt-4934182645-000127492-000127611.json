@@ -1,0 +1,48 @@
+{
+  "id": "txt-4934182645-000127492-000127611",
+  "plan": {
+    "object": "着手控制一个人民的人，无论是作为君主还是作为共和国的首领。",
+    "condition": "does not make sure work with all who are hostile to his new institutions。必须是敌视新制度的人没有被全部处理确实。只处死一部分、赦免大部分，才算这个条件。",
+    "quantifier": "cannot last long。long 没有年数。",
+    "result": "这样建立的政府不能长久。",
+    "window": "1531至2026-11-15。布鲁图斯之子是出版前的例子，不拿来核验。",
+    "counterevidence_needed": "同一份或可对齐的正文同时写出：没有把所有敌视新制度的人处理确实，并且这个政府随后长久存在，或很快结束。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "new regime spared opponents of the new order and collapsed within a few years after 1531",
+      "counter_query": "English Restoration 1660 former parliamentarians not all executed monarchy lasted"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [
+      "https://doi.org/10.1093/oxfordhb/9780192866035.013.4"
+    ],
+    "dropped": "佛罗伦萨1531年后的美第奇页写的是压迫和王朝延续，没有写敌视新制度的人被留下。不能把王朝延续当成条件已满足后的反证。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [
+      "ev-oxford-indemnity-1660"
+    ],
+    "scope": "对象是建立新制度的君主或共和国首领；条件是没有把所有敌视新制度的人处理确实；结果是政府不能长久。",
+    "reason": "牛津手册写《免罪与遗忘法》让大多数曾从查理一世失败中得利的人平安生活，只有十名弑君者在1660年10月被处死。这接近没有把所有敌视新制度的人处理掉。同一复辟政府后来是否长久，可以和赦免页合并，只要另一页明确写的是同一个政府、同一时期，而不是靠猜测。现有存档没有第二页写出这个政府随后持续了多久。原文 cannot last long 也没有给出可观察的年数，不能在看到结果之后再把某一年数定成长久或不长久。决定性缺口是长久没有可操作口径，并且没有归档正文写出同一政府的时长。",
+    "limitation": "long 在原句没有年数。合取允许同一对象和同一时期的不同来源合并，但不能补上原文没有的时长口径。该章没有出版日写在抓取正文的页首。",
+    "method": "先确认赦免是否等于没有处理所有敌视新制度的人，再看同一材料是否写出政府随后的时长。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "pass",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "赦免和后来的君主存续可以按同一复辟政府合并，但时长页没有归档，long 也没有原文年数。不计分。"
+  }
+}

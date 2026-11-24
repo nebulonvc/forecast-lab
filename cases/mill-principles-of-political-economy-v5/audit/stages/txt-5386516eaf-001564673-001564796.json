@@ -1,0 +1,73 @@
+{
+  "id": "txt-5386516eaf-001564673-001564796",
+  "plan": {
+    "queries": [
+      {
+        "role": "support"
+      },
+      {
+        "role": "counter"
+      }
+    ],
+    "note": "r4 新执行。见 audit/search-returns-r4/manifest.json。不回填。"
+  },
+  "select": {
+    "urls": [
+      "https://www.elibrary.imf.org/view/journals/001/2023/072/article-A001-en.xml"
+    ],
+    "reason": "只入选摘录已在存档、且日期不晚于 cutoff 的来源。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "one day",
+    "condition_state": "unconditional",
+    "method": "2026-11-20 新的支持与反证检索。",
+    "id": "txt-5386516eaf-001564673-001564796",
+    "verdict": "暂无法判断",
+    "basis": "future",
+    "observation_end": null,
+    "scope": "随着政治改进，各国有一天会使用同一种货币。",
+    "reason": "2023年IMF文本写世界上有150多种法币。欧元没有覆盖所有国家。作者写的是“有一天”，这个终点还没有到，不能把尚未发生写成失败。",
+    "limitation": "150多种说明到2021年还没有统一。",
+    "evidence_ids": [
+      "ev-r4-imf"
+    ],
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-r4-imf",
+        "quote": "there are more than 150 currencies in the world that are deemed legal tender",
+        "relation": "boundary",
+        "limitation": "尚未统一，终点未到。",
+        "observation_end": "2021-12-31",
+        "publication_date": "2023-03",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "“有一天”尚未封闭。缺各国是否已经使用同一种货币的到期观察。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001564673-001564796",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "r4_execution": {
+    "new": true,
+    "executed_at": "2026-11-20T11:20:00Z",
+    "previous_verdict": "暂无法判断"
+  }
+}

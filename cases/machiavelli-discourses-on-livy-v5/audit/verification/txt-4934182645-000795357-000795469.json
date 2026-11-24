@@ -1,0 +1,61 @@
+{
+  "claim_id": "txt-4934182645-000795357-000795469",
+  "logged_at": "2026-11-20T10:50:00Z",
+  "plan": {
+    "object": "君主之间、并非被武力逼出的其他承诺",
+    "conditions": ["承诺双方是君主", "导致承诺的原因已经不再起作用"],
+    "quantifier": "in like manner，随前句的总是一起读：原因消失后同样被弃置",
+    "result": "承诺被弃置",
+    "time_window": "1531年之后",
+    "counterevidence_needed": "原因已经消失后，君主仍然遵守这项并非逼出的承诺"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "purpose": "首轮一正一反",
+        "support_query": "treaty between princes broken after the reason for signing it had ended",
+        "counter_query": "monarch kept a treaty after the political reason for making it had disappeared",
+        "support_result": "塔拉斯孔是1291年。阿伯康威是1277年。布雷蒂尼是1363年。都早于1531。",
+        "counter_result": "坎特伯雷条约是1416年，早于1531。宾刻舒克讨论的是学说。返回的君主论章节和赫茨引文是作者自己的句子。",
+        "adopted": false
+      },
+      {
+        "round": 2,
+        "purpose": "补轮：改找1531年之后、敌手消失后仍有效的君主盟约",
+        "support_query": "alliance between two monarchs remained in force after the enemy it was signed against had been defeated",
+        "support_result": "1585年农萨奇条约在1588年击败无敌舰队时仍然有效，但对西班牙的战争当时还没有结束，原因仍在。温莎条约订于1386年。",
+        "adopted": false
+      }
+    ],
+    "adaptive_rounds": 1,
+    "stop_reason": "没有1531年之后、原因已经停止而君主仍遵守或已经弃置的可引用承诺。",
+    "sources": [
+      {"url": "https://en.wikipedia.org/wiki/Treaty_of_Nonsuch", "fetched": false, "note": "检索可见1588年盟约仍在，但西班牙战争未结束。未把摘要存成摘录。"}
+    ]
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "被弃置的是君主之间的其他承诺，而且导致承诺的原因已经不再起作用。武力逼出的公共承诺是前一句。",
+    "reason": "连续原文说，在君主之间，不但武力逼出的承诺会在武力撤去后被打破，其他承诺同样会在导致它们的原因不再起作用时被弃置。前一句的总是由 in like manner 带到这一句，所以一次毁约不能证明总是，一次在原因消失后仍遵守可以否定总是。首轮看到的条约都早于1531。补轮的农萨奇条约在1588年仍然有效，但页面写的是西班牙战争还在进行，原因没有消失。温莎条约订于1386年。返回的君主论和转述马基雅维利的句子不能核验本书。没有可引用的1531年之后记录，所以不判。",
+    "limitation": "农萨奇页没有下载成可引用正文。",
+    "method": "先把其他承诺和前一句的逼出承诺分开，再看原因是否已经停止。原因仍在时盟约仍有效，不能当作反例。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "fail",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "1531年之前的条约不用。1588年的盟约当时原因仍在。作者自己的句子不能核验。"
+  }
+}

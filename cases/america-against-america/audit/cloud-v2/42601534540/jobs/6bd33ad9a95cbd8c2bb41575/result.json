@@ -1,0 +1,808 @@
+{
+  "claim_id": "txt-1c4066fc0c-000118308-000118342",
+  "version": "search-verifier-v2",
+  "input_sha256": "5b4dc6e14b6197d3ff89f1202c6532894f686ed0ffbb81f1d3d57d218a798b70",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000118308-000118342",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "原文条件为“东西方之间的经济水平倒转过来”，作者补充“其实不用超越，只要拉平”；结果口径为美国对主张改革资本主义制度的激进组织进行管制。观察时段为1991年至2026-11-09。原文“东方”语境主要指苏联东欧社会主义集团，1991年后解体，无法用中美PPP人均GDP直接替代。",
+    "reason": "原文是条件性预测，真实前提“东西方经济水平倒转或拉平”涉及原东方集团与西方主要经济体的对应比较；现有材料只有2024年中美PPP人均GDP，主体与原文“东方”不对应，不能据此断言前提未触发。条件状态无法由现有材料确定，结果也未作为已发生事实评价，故保留未定。",
+    "limitation": "关键修订：不再用中美PPP人均GDP直接判定原条件“未出现”，改为条件未知；原“东方”主体在1991年后解体，跨期对应困难，且原文未给“拉平”的量化阈值。中美比较仅作背景，不能替代原对象。",
+    "evidence_ids": [
+      "prior-d93ae353db08f274a544",
+      "prior-525b2b1c5ae2093ba9a2",
+      "prior-708663f6b6edcead488f"
+    ],
+    "method": "经济吸引力变动引起意识形态威胁与管制反应",
+    "method_basis": "inferred",
+    "observation_end": "2024-12-31",
+    "future_time_text": "有一天",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-d93ae353db08f274a544",
+        "relation": "boundary",
+        "quote": "世界银行API2024 PPP人均GDP：中国约27139.52国际元、美国86169.66；与总量排名采用不同口径。",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "仅为人均PPP口径的中美比较，不能代表原文“东西方”整体经济水平，也不能单独判定原条件是否触发。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "prior-525b2b1c5ae2093ba9a2",
+        "relation": "background",
+        "quote": "世界银行WDI原始年度序列；指标NY.GDP.MKTP.CD；不含2025及以后预测值。",
+        "publication_date": "2026-10-08",
+        "observation_end": null,
+        "limitation": "仅说明序列口径与不含预测值，未给出具体数值，不能支撑条件判断。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-708663f6b6edcead488f",
+        "relation": "background",
+        "quote": "美国国务院历史办公室记载：1989年东欧急变，1991年8月政变失败削弱戈尔巴乔夫；1991年12月25日戈尔巴乔夫辞职，苏联旗帜降下。",
+        "publication_date": null,
+        "observation_end": "1991-12-25",
+        "limitation": "说明原“东方”主体解体，导致跨期经济水平比较的主体对应困难，不直接证明经济差距或条件状态。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      }
+    ],
+    "remaining_gap": "缺少原文语境下“东方”（苏联东欧集团）与“西方”主要经济体在1991年前后的对应经济水平比较数据，或明确说明该主体解体导致条件无法按原对象检验；不能仅以中美PPP人均GDP差距判定原条件未触发。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000118308-000118342",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "原文条件为“东西方经济水平倒转（或至少拉平）”，结果口径为美国对主张改革资本主义制度的激进组织进行管制。观察时段为1991年至2026-11-09；以名义GDP总量或PPP人均GDP比较中美等主要经济体作为代理，但原“东方”主体在1991年后已解体，跨期对应困难。",
+    "reason": "原文是明确的条件性预测，真实前提“东西方经济水平倒转或拉平”在截止日前并未出现：世界银行2024年PPP人均GDP中国约27140国际元、美国约86170国际元，差距仍大。前提未触发，结果不应作为已发生事实评价，故保留未定。",
+    "limitation": "“东方”在原文语境中主要指苏联东欧集团，1991年后已解体，用中美比较只是代理，主体对应存在偏离；且原文未给精确阈值和期限，条件是否“拉平”缺乏作者自定标准。",
+    "evidence_ids": [
+      "prior-d93ae353db08f274a544",
+      "prior-525b2b1c5ae2093ba9a2",
+      "prior-708663f6b6edcead488f"
+    ],
+    "method": "经济吸引力变动引起意识形态威胁与管制反应",
+    "method_basis": "inferred",
+    "observation_end": "2024-12-31",
+    "future_time_text": "有一天",
+    "condition_state": "not_met",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-d93ae353db08f274a544",
+        "relation": "boundary",
+        "quote": "世界银行API2024 PPP人均GDP：中国约27139.52国际元、美国86169.66；与总量排名采用不同口径。",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "仅为人均PPP口径，不能代表原文“东西方经济水平”整体；且“东方”主体对应困难。"
+      },
+      {
+        "evidence_id": "prior-525b2b1c5ae2093ba9a2",
+        "relation": "boundary",
+        "quote": "世界银行WDI原始年度序列；指标NY.GDP.MKTP.CD；不含2025及以后预测值。",
+        "publication_date": "2026-10-08",
+        "observation_end": null,
+        "limitation": "仅说明序列口径与不含预测值，未给出具体数值，不能单独支撑差距判断。"
+      },
+      {
+        "evidence_id": "prior-708663f6b6edcead488f",
+        "relation": "background",
+        "quote": "美国国务院历史办公室记载：1989年东欧急变，1991年8月政变失败削弱戈尔巴乔夫；1991年12月25日戈尔巴乔夫辞职，苏联旗帜降下。",
+        "publication_date": null,
+        "observation_end": "1991-12-25",
+        "limitation": "说明原“东方”主体解体，导致跨期经济水平比较的主体对应困难，不直接证明经济差距。"
+      }
+    ],
+    "remaining_gap": "缺少原文语境下“东方”与“西方”经济水平是否倒转或拉平的直接、对应主体的比较数据；且原文未给“拉平”的量化阈值，条件是否满足难以精确判定。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-d93ae353db08f274a544",
+      "url": "https://api.worldbank.org/v2/country/US;CN/indicator/NY.GDP.PCAP.PP.CD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-r2-l2-wb-percap",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-wb-percap",
+      "archive_sha256": "fc426583cf86a8c06cfd128d329e4e9e9b9939952510dbca6eb1a0d6ada736a5",
+      "archive_path": "data/sources/r2-l2-wb-percap.json",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-525b2b1c5ae2093ba9a2",
+      "url": "https://api.worldbank.org/v2/country/US;JP;CN/indicator/NY.GDP.MKTP.CD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-wdi-ny-gdp-mktp-cd",
+      "published_date": "2026-10-08",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-10-08",
+        "latest": "2026-10-08"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-wdi-ny-gdp-mktp-cd",
+      "archive_sha256": "7ad5c1c4f44e15850a861521955b29727497d2cb232432f3dbc2e56ba20d4e42",
+      "archive_path": "data/sources/worldbank-NY.GDP.MKTP.CD.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-708663f6b6edcead488f",
+      "url": "https://history.state.gov/milestones/1989-1992/collapse-soviet-union",
+      "title": "ev-l2-soviet-collapse",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-l2-soviet-collapse",
+      "archive_sha256": "2ad477d822db290114ff9d7db517c69d10cb42510281166370f67a5cfad2e478",
+      "archive_path": "data/sources/lane2-ev-l2-soviet-collapse.html",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-98078e2acaeec3866737de0c",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD",
+      "resolved_url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD",
+      "title": "GDP per capita, PPP (current international $) | Data",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:37.178239+00:00",
+      "archive_sha256": "d85a7d39885611dea4bd4f00bb003ad0dbd8eb71870d62b14616d554dfcc90e8",
+      "archive_path": "jobs/6bd33ad9a95cbd8c2bb41575/d85a7d39885611dea4bd4f00bb003ad0dbd8eb71870d62b14616d554dfcc90e8.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-7089afe6dafb982f3f0b0fda",
+      "url": "https://ourworldindata.org/grapher/gdp-per-capita-worldbank?country=CHN%7EUSA&tab=line",
+      "resolved_url": "https://ourworldindata.org/grapher/gdp-per-capita-worldbank?country=CHN%7EUSA&tab=line",
+      "title": "GDP per capita",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:37.178378+00:00",
+      "archive_sha256": "f8fe521a3813a9597b1eca54ab77848b7caa017e2dacff73ffe106cfe915b26e",
+      "archive_path": "jobs/6bd33ad9a95cbd8c2bb41575/f8fe521a3813a9597b1eca54ab77848b7caa017e2dacff73ffe106cfe915b26e.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-bbe43cd186216a2997a10235",
+      "url": "https://vault.fbi.gov/cointel-pro",
+      "resolved_url": "https://vault.fbi.gov/cointel-pro",
+      "title": "FBI — Federal Bureau of Investigation",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:37.178484+00:00",
+      "archive_sha256": "5794d8682be5267335698ef61209308d11c2b7c40bab10069f80acfecf3da345",
+      "archive_path": "jobs/6bd33ad9a95cbd8c2bb41575/5794d8682be5267335698ef61209308d11c2b7c40bab10069f80acfecf3da345.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a1765631ac250e5a1300b132",
+      "url": "https://scholarsarchive.library.albany.edu/lacs_fac_scholar/18",
+      "resolved_url": "https://scholarsarchive.library.albany.edu/lacs_fac_scholar/18",
+      "title": "Cointelpro",
+      "published_date": "2005-01-01",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2005-01-01",
+        "latest": "2005-01-01"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:37.178579+00:00",
+      "archive_sha256": "5661aed1d08cafec44a301e14d70d0e3cbf53ae0cfc952c2101d61df1b6e9a00",
+      "archive_path": "jobs/6bd33ad9a95cbd8c2bb41575/5661aed1d08cafec44a301e14d70d0e3cbf53ae0cfc952c2101d61df1b6e9a00.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "World Bank GDP per capita PPP China United States 1991 2024 comparison data",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "United States government suppression socialist radical organizations history FBI COINTELPRO domestic surveillance",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "World Bank GDP per capita PPP China United States 1991 2024 comparison data",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "United States government suppression socialist radical organizations history FBI COINTELPRO domestic surveillance",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "prior-708663f6b6edcead488f",
+        "prior-d93ae353db08f274a544"
+      ],
+      "blocks_verdict": true
+    }
+  ],
+  "remaining_gap": "缺少原文语境下“东方”（苏联东欧集团）与“西方”主要经济体在1991年前后的对应经济水平比较数据，或明确说明该主体解体导致条件无法按原对象检验；不能仅以中美PPP人均GDP差距判定原条件未触发。",
+  "source_statuses": [
+    {
+      "url": "https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://ourworldindata.org/grapher/gdp-per-capita-worldbank?country=CHN%7EUSA&tab=line",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://vault.fbi.gov/cointel-pro",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://scholarsarchive.library.albany.edu/lacs_fac_scholar/18",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "4bedb433651f605b7d7749d6ef4614721cdf3ed0e7f9344502c9591ac90c8bca"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "844f613392ae28a7cb3fe9bbff7b7b4d",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "19d5f2b66e9ddbbbf93e471cbe6eba53",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "f59f8b107f29820dc6ea4b2de0b5bc4c6a7824d043853966ad370476e06ae2ba"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "1996ad67aa04b9f46d2049bde938f65c",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "fb9af6f2fb638fe900705724d602e787820544ebe8889275adbcd6a37505fa96"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "844f613392ae28a7cb3fe9bbff7b7b4d",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "19d5f2b66e9ddbbbf93e471cbe6eba53",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "362491d64418ce1eeccc9023eb7c06bee9dac693ec486acc039cab165f0085a1"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "9cf8ec7842f4ad61fa6dd477fb5e4d0859bc42934c810cd1562a2d4c3d60b2b6"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "e8bbb5a470764ba350e580bc0020c2f57f1cb1a90ea14b38b088db7284cc5252"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "e18495ab66e429eb61afa97b11741295495f863542f65fabe171f790a6ce1aa2"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "f0914144b5db5cac4bd2820615ec30e91166f1db97808b756106068a3f7332a0"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "prior-708663f6b6edcead488f",
+            "prior-d93ae353db08f274a544"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "prior-708663f6b6edcead488f",
+            "prior-d93ae353db08f274a544"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-d93ae353db08f274a544",
+        "source_bytes": 117,
+        "shown_bytes": 117,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-525b2b1c5ae2093ba9a2",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-708663f6b6edcead488f",
+        "source_bytes": 170,
+        "shown_bytes": 170,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-98078e2acaeec3866737de0c",
+        "source_bytes": 1138,
+        "shown_bytes": 1138,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-7089afe6dafb982f3f0b0fda",
+        "source_bytes": 12016,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-bbe43cd186216a2997a10235",
+        "source_bytes": 175,
+        "shown_bytes": 175,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-a1765631ac250e5a1300b132",
+        "source_bytes": 12000,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-d93ae353db08f274a544",
+        "source_bytes": 117,
+        "shown_bytes": 117,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-525b2b1c5ae2093ba9a2",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-708663f6b6edcead488f",
+        "source_bytes": 170,
+        "shown_bytes": 170,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-98078e2acaeec3866737de0c",
+        "source_bytes": 1138,
+        "shown_bytes": 1138,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-7089afe6dafb982f3f0b0fda",
+        "source_bytes": 12016,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-bbe43cd186216a2997a10235",
+        "source_bytes": 175,
+        "shown_bytes": 175,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-a1765631ac250e5a1300b132",
+        "source_bytes": 12000,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-d93ae353db08f274a544",
+        "source_bytes": 117,
+        "shown_bytes": 117,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-525b2b1c5ae2093ba9a2",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-708663f6b6edcead488f",
+        "source_bytes": 170,
+        "shown_bytes": 170,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-98078e2acaeec3866737de0c",
+        "source_bytes": 1138,
+        "shown_bytes": 1138,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-7089afe6dafb982f3f0b0fda",
+        "source_bytes": 12016,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-bbe43cd186216a2997a10235",
+        "source_bytes": 175,
+        "shown_bytes": 175,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-a1765631ac250e5a1300b132",
+        "source_bytes": 12000,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-d93ae353db08f274a544",
+        "source_bytes": 117,
+        "shown_bytes": 117,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-525b2b1c5ae2093ba9a2",
+        "source_bytes": 90,
+        "shown_bytes": 90,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-708663f6b6edcead488f",
+        "source_bytes": 170,
+        "shown_bytes": 170,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-98078e2acaeec3866737de0c",
+        "source_bytes": 1138,
+        "shown_bytes": 1138,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-7089afe6dafb982f3f0b0fda",
+        "source_bytes": 12016,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-bbe43cd186216a2997a10235",
+        "source_bytes": 175,
+        "shown_bytes": 175,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-a1765631ac250e5a1300b132",
+        "source_bytes": 12000,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000118308-000118342",
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "原文的“它们”指美国社会中的“主张改革资本主义制度的组织和观念”，即美国国内激进组织；建议把结果口径写成“美国对主张改革资本主义制度的激进组织进行管制”，对象大体对应，但建议用中美PPP人均GDP作为“东西方经济水平”的代理，把原文的“东方”替换成中国，而原文语境中的“东方”主要指苏联东欧社会主义国家，主体对应存在实质偏离，不能直接作为条件是否触发的依据。",
+          "quote_ref": "q0",
+          "source_quote": "如果有一天东西方之间的经济水平倒转过来，恐怕就要对它们进行管",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "book"
+        },
+        {
+          "check": "condition_logic",
+          "reason": "原文真实条件是“东西方之间的经济水平倒转过来”，随后作者补充“其实不用超越，只要拉平，意识形态之争可能就会东山再起”。建议把“倒转（或至少拉平）”作为条件，方向大体正确；但建议用中美2024年PPP人均GDP差距仍大来判定“前提未触发”，而原文的“东西方”并非中美，且“拉平”没有作者自定阈值，现有材料不能直接证明原条件未发生。",
+          "quote_ref": "q0",
+          "source_quote": "如果有一天东西方之间的经济水平倒转过来，恐怕就要对它们进行管",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议引用的prior-d93ae353db08f274a544只给出2024年中美PPP人均GDP，不能代表原文“东西方”整体经济水平，也不能单独支撑“东西方经济水平未倒转或拉平”的判断；prior-525b2b1c5ae2093ba9a2只说明序列口径、不含具体数值，不能支撑差距判断。",
+          "quote_ref": "q4",
+          "source_quote": "世界银行API2024 PPP人均GDP：中国约27139.52国际元、美国86169.66；与总量排名采用不同口径。",
+          "evidence_id": "prior-d93ae353db08f274a544",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议以“前提未触发”为由判暂无法判断，但前提是否未触发本身依赖中美代理比较，而该代理与原文“东西方”主体不对应；在条件状态不能由现有材料确定时，应保留条件未知，并说明缺原东方集团与西方主要经济体的对应比较数据，而不是用中美差距直接断言前提未出现。",
+          "quote_ref": "q3",
+          "source_quote": "观察时段为1991年至2026-11-09；以名义GDP总量或PPP人均GDP比较中美等主要经济体作为代理，但原“东方”主体在1991年后已解体，跨期对应困难。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充原文语境下“东方”（苏联东欧集团）与“西方”主要经济体在1991年前后的对应经济水平比较数据，或明确说明该主体在1991年后解体导致条件无法按原对象检验；不能仅以中美PPP人均GDP差距判定原条件未触发。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000118308-000118342",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000118308-000118342",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "原文条件为“东西方经济水平倒转（或至少拉平）”，结果口径为美国对主张改革资本主义制度的激进组织进行管制。观察时段为1991年至2026-11-09；以名义GDP总量或PPP人均GDP比较中美等主要经济体作为代理，但原“东方”主体在1991年后已解体，跨期对应困难。",
+      "reason": "原文是明确的条件性预测，真实前提“东西方经济水平倒转或拉平”在截止日前并未出现：世界银行2024年PPP人均GDP中国约27140国际元、美国约86170国际元，差距仍大。前提未触发，结果不应作为已发生事实评价，故保留未定。",
+      "limitation": "“东方”在原文语境中主要指苏联东欧集团，1991年后已解体，用中美比较只是代理，主体对应存在偏离；且原文未给精确阈值和期限，条件是否“拉平”缺乏作者自定标准。",
+      "evidence_ids": [
+        "prior-d93ae353db08f274a544",
+        "prior-525b2b1c5ae2093ba9a2",
+        "prior-708663f6b6edcead488f"
+      ],
+      "method": "经济吸引力变动引起意识形态威胁与管制反应",
+      "method_basis": "inferred",
+      "observation_end": "2024-12-31",
+      "future_time_text": "有一天",
+      "condition_state": "not_met",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-d93ae353db08f274a544",
+          "relation": "boundary",
+          "quote": "世界银行API2024 PPP人均GDP：中国约27139.52国际元、美国86169.66；与总量排名采用不同口径。",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "仅为人均PPP口径，不能代表原文“东西方经济水平”整体；且“东方”主体对应困难。"
+        },
+        {
+          "evidence_id": "prior-525b2b1c5ae2093ba9a2",
+          "relation": "boundary",
+          "quote": "世界银行WDI原始年度序列；指标NY.GDP.MKTP.CD；不含2025及以后预测值。",
+          "publication_date": "2026-10-08",
+          "observation_end": null,
+          "limitation": "仅说明序列口径与不含预测值，未给出具体数值，不能单独支撑差距判断。"
+        },
+        {
+          "evidence_id": "prior-708663f6b6edcead488f",
+          "relation": "background",
+          "quote": "美国国务院历史办公室记载：1989年东欧急变，1991年8月政变失败削弱戈尔巴乔夫；1991年12月25日戈尔巴乔夫辞职，苏联旗帜降下。",
+          "publication_date": null,
+          "observation_end": "1991-12-25",
+          "limitation": "说明原“东方”主体解体，导致跨期经济水平比较的主体对应困难，不直接证明经济差距。"
+        }
+      ],
+      "remaining_gap": "缺少原文语境下“东方”与“西方”经济水平是否倒转或拉平的直接、对应主体的比较数据；且原文未给“拉平”的量化阈值，条件是否满足难以精确判定。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000118308-000118342",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "原文条件为“东西方之间的经济水平倒转过来”，作者补充“其实不用超越，只要拉平”；结果口径为美国对主张改革资本主义制度的激进组织进行管制。观察时段为1991年至2026-11-09。原文“东方”语境主要指苏联东欧社会主义集团，1991年后解体，无法用中美PPP人均GDP直接替代。",
+      "reason": "原文是条件性预测，真实前提“东西方经济水平倒转或拉平”涉及原东方集团与西方主要经济体的对应比较；现有材料只有2024年中美PPP人均GDP，主体与原文“东方”不对应，不能据此断言前提未触发。条件状态无法由现有材料确定，结果也未作为已发生事实评价，故保留未定。",
+      "limitation": "关键修订：不再用中美PPP人均GDP直接判定原条件“未出现”，改为条件未知；原“东方”主体在1991年后解体，跨期对应困难，且原文未给“拉平”的量化阈值。中美比较仅作背景，不能替代原对象。",
+      "evidence_ids": [
+        "prior-d93ae353db08f274a544",
+        "prior-525b2b1c5ae2093ba9a2",
+        "prior-708663f6b6edcead488f"
+      ],
+      "method": "经济吸引力变动引起意识形态威胁与管制反应",
+      "method_basis": "inferred",
+      "observation_end": "2024-12-31",
+      "future_time_text": "有一天",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-d93ae353db08f274a544",
+          "relation": "boundary",
+          "quote": "世界银行API2024 PPP人均GDP：中国约27139.52国际元、美国86169.66；与总量排名采用不同口径。",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "仅为人均PPP口径的中美比较，不能代表原文“东西方”整体经济水平，也不能单独判定原条件是否触发。"
+        },
+        {
+          "evidence_id": "prior-525b2b1c5ae2093ba9a2",
+          "relation": "background",
+          "quote": "世界银行WDI原始年度序列；指标NY.GDP.MKTP.CD；不含2025及以后预测值。",
+          "publication_date": "2026-10-08",
+          "observation_end": null,
+          "limitation": "仅说明序列口径与不含预测值，未给出具体数值，不能支撑条件判断。"
+        },
+        {
+          "evidence_id": "prior-708663f6b6edcead488f",
+          "relation": "background",
+          "quote": "美国国务院历史办公室记载：1989年东欧急变，1991年8月政变失败削弱戈尔巴乔夫；1991年12月25日戈尔巴乔夫辞职，苏联旗帜降下。",
+          "publication_date": null,
+          "observation_end": "1991-12-25",
+          "limitation": "说明原“东方”主体解体，导致跨期经济水平比较的主体对应困难，不直接证明经济差距或条件状态。"
+        }
+      ],
+      "remaining_gap": "缺少原文语境下“东方”（苏联东欧集团）与“西方”主要经济体在1991年前后的对应经济水平比较数据，或明确说明该主体解体导致条件无法按原对象检验；不能仅以中美PPP人均GDP差距判定原条件未触发。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "原文为条件性预测：若东西方经济水平倒转（或至少拉平），美国恐怕会管制主张改革资本主义制度的激进组织。可观察口径分两层：(1)真实前提是否在截止日前出现——以名义GDP总量或PPP人均GDP比较东西方主要经济体，注意原东方集团1991年后已解体，跨期主体对应困难；(2)若前提未触发，则结果（美国对激进组织的管制）不应作为已发生事实评价，保留未定。反证包括：前提未达而美国仍出现管制、或前提已达而美国未管制。",
+  "elapsed_seconds": 31.663,
+  "completed_at": "2026-11-09T10:33:58.818083+00:00"
+}

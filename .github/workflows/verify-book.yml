@@ -1,0 +1,100 @@
+name: Verify book with APIs
+run-name: Verify ${{ inputs.case }} with ${{ inputs.workers }} workers
+on:
+  workflow_dispatch:
+    inputs:
+      case:
+        description: Case directory slug under cases/ (e.g. lky-guantianxia) or relative path (e.g. my-forecasts)
+        type: string
+        default: lky-guantianxia
+      workers:
+        description: Concurrent prediction tasks (1-20)
+        default: '8'
+      budget_cny:
+        description: DeepSeek stop limit in CNY
+        default: '20'
+      exa_budget_usd:
+        description: Exa stop limit in USD
+        default: '10'
+      retry_run_id:
+        description: Optional prior run ID; retry incomplete tasks using remaining budgets
+        default: ''
+      review_audit:
+        description: Same-material prompt/hint audit plus synthetic calibration (same LLM cap)
+        type: boolean
+        default: false
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: book-api-${{ inputs.case }}
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Reject blind reruns that could repeat paid calls
+        run: test "$GITHUB_RUN_ATTEMPT" = 1
+      - name: Prepare focused recovery when requested
+        if: inputs.retry_run_id != ''
+        env:
+          PREVIOUS_RUN: ${{ inputs.retry_run_id }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [[ "$PREVIOUS_RUN" =~ ^[0-9]+$ ]]
+          gh run download "$PREVIOUS_RUN" --repo "$GITHUB_REPOSITORY" \
+            -n "book-verification-$PREVIOUS_RUN" -D "$RUNNER_TEMP/previous"
+          python toolkit/prepare_cloud_retry.py --previous "$RUNNER_TEMP/previous" --target "$RUNNER_TEMP/retry"
+      - name: Verify all forecasts through CLI and APIs
+        env:
+          RAW_CASE: ${{ inputs.case }}
+          WORKERS: ${{ inputs.workers }}
+          BUDGET_CNY: ${{ inputs.budget_cny }}
+          EXA_BUDGET_USD: ${{ inputs.exa_budget_usd }}
+          BOOKPRED_DEEPSEEK_API_KEY: ${{ secrets.BOOKPRED_DEEPSEEK_API_KEY }}
+          EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+          PREVIOUS_RUN: ${{ inputs.retry_run_id }}
+          REVIEW_AUDIT: ${{ inputs.review_audit }}
+        run: |
+          test -n "$BOOKPRED_DEEPSEEK_API_KEY"
+          test -n "$EXA_API_KEY"
+          if test -f "$RAW_CASE/config.json"; then
+            CASE_PATH="$RAW_CASE"
+          elif test -f "cases/$RAW_CASE/config.json"; then
+            CASE_PATH="cases/$RAW_CASE"
+          else
+            echo "Case directory not found: $RAW_CASE" >&2
+            exit 2
+          fi
+          selection=(--all-forecasts)
+          if test -n "$PREVIOUS_RUN"; then
+            selection=(--ids-file "$RUNNER_TEMP/retry/ids.json")
+            BUDGET_CNY=$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))["budget_CNY"])' "$RUNNER_TEMP/retry/limits.json")
+            EXA_BUDGET_USD=$(python -c 'import json,sys; print(json.load(open(sys.argv[1]))["exa_budget_USD"])' "$RUNNER_TEMP/retry/limits.json")
+          fi
+          args=(--case "$CASE_PATH" "${selection[@]}"
+                --workers "$WORKERS" --max-rounds 2
+                --budget-cny "$BUDGET_CNY" --exa-budget-usd "$EXA_BUDGET_USD"
+                --output-dir "$RUNNER_TEMP/search-verifier")
+          if test "$REVIEW_AUDIT" = true; then args+=(--review-audit); fi
+          python -u toolkit/verify_prediction.py "${args[@]}" --prepare-only
+          status=0
+          python -u toolkit/verify_prediction.py "${args[@]}" || status=$?
+          python toolkit/export_search_run.py --source "$RUNNER_TEMP/search-verifier" --target "$RUNNER_TEMP/publish"
+          if test -f "$RUNNER_TEMP/publish/report.md"; then
+            cat "$RUNNER_TEMP/publish/report.md" >> "$GITHUB_STEP_SUMMARY"
+          fi
+          exit "$status"
+      - name: Upload machine results even when some tasks fail
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: book-verification-${{ github.run_id }}
+          path: ${{ runner.temp }}/publish/
+          if-no-files-found: warn
+          retention-days: 30

@@ -1,0 +1,28 @@
+{
+  "id": "43040e46-aff0-4f7d-9c74-2c50a15ce5b9",
+  "object": "chat.completion",
+  "created": 1794201583,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000031187-000031210\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件性判断：若企业先靠品牌而非实力经营，则存在很大隐患；原文以雅虎为例，但未给出可量化指标或期限。\",\"reason\":\"该句是带“如果”条件的风险判断，触发条件是否发生、以及“隐患”如何操作化均未明确。原文雅虎案例只是作者举例说明，不能自动当作条件已发生并验证结果。\",\"limitation\":\"缺乏可检验的指标、期限和独立证据；雅虎个案不足以证明一般性因果判断。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4261,
+    "completion_tokens": 188,
+    "total_tokens": 4449,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3493
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

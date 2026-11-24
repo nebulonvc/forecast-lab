@@ -1,0 +1,28 @@
+{
+  "id": "e111db04-14e1-402f-a364-63badb925c49",
+  "object": "chat.completion",
+  "created": 1794201446,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000036058-000036098\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文对写作时（2014年前后）年轻人现状的因果描述，未给出可检验的未来结果或时间终点。\",\"reason\":\"该句是对“现今”年轻人缺乏明确目标的现状判断与因果解释，不是对未来结果的预测。\",\"limitation\":\"属现状描述，无未来可观测终点，不纳入预测评分。\",\"evidence_ids\":[],\"method\":\"因果解释\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4335,
+    "completion_tokens": 153,
+    "total_tokens": 4488,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3567
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

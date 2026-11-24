@@ -1,0 +1,28 @@
+{
+  "id": "a2de496b-65b4-4f29-9de7-c5e8ab159133",
+  "object": "chat.completion",
+  "created": 1794201123,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-00005\",\"predictions\":[{\"quote\":\"考虑到巨大的用户基数及我们从顾客的交易中收取的小额手续费，我们肯定会获利。\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔（叙述者）\",\"claim\":\"考虑到巨大的用户基数及从顾客交易中收取的小额手续费，PayPal肯定会获利。\",\"expanded_claim\":\"考虑到PayPal将获得的巨大用户基数以及从顾客交易中收取的小额手续费，PayPal公司肯定会获利。\",\"reference_resolutions\":[{\"expression\":\"我们\",\"referent\":\"PayPal公司\",\"support_quote\":\"我经营起了PayPal公司\"},{\"expression\":\"顾客\",\"referent\":\"PayPal用户\",\"support_quote\":\"每位新用户一注册即可得到10美元\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"考虑到巨大的用户基数及从顾客的交易中收取的小额手续费\",\"method\":\"基于用户基数和手续费收入的商业推理\",\"method_basis\":\"explicit\",\"reason\":\"说话者明确预测PayPal在特定条件下会获利，属于对未来结果的确定性判断。\"},{\"quote\":\"我们并不指望投资者会相信我们能渡过即将到来的难关\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔（叙述者）\",\"claim\":\"投资者不会相信PayPal能渡过即将到来的难关。\",\"expanded_claim\":\"PayPal公司不指望投资者会相信PayPal能渡过即将到来的难关。\",\"reference_resolutions\":[{\"expression\":\"我们\",\"referent\":\"PayPal公司\",\"support_quote\":\"我经营起了PayPal公司\"}],\"unresolved_references\":[],\"time_text\":\"即将到来\",\"condition_text\":\"\",\"method\":\"基于对投资者态度的判断\",\"method_basis\":\"inferred\",\"reason\":\"说话者预测投资者对PayPal渡过难关缺乏信心，属于对未来态度的判断。\"},{\"quote\":\"繁荣景象即将逝去\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔（叙述者）\",\"claim\":\"互联网繁荣景象即将结束。\",\"expanded_claim\":\"互联网热潮的繁荣景象即将结束。\",\"reference_resolutions\":[{\"expression\":\"繁荣景象\",\"referent\":\"互联网热潮的繁荣\",\"support_quote\":\"互联网热潮虽很热却短暂\"}],\"unresolved_references\":[],\"time_text\":\"即将\",\"condition_text\":\"\",\"method\":\"基于对市场形势的判断\",\"method_basis\":\"inferred\",\"reason\":\"说话者明确预测互联网繁荣即将结束，属于对未来结果的判断。\"},{\"quote\":\"我们刚一完成交易，网络泡沫就破灭了\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔（叙述者）\",\"claim\":\"网络泡沫将在PayPal完成融资交易后不久破灭。\",\"expanded_claim\":\"PayPal刚一完成2000年3月的融资交易，网络泡沫就破灭了。\",\"reference_resolutions\":[{\"expression\":\"交易\",\"referent\":\"2000年3月那轮融资\",\"support_quote\":\"2000年3月那轮融资给了我们取得成功的时间\"}],\"unresolved_references\":[],\"time_text\":\"刚一完成交易\",\"condition_text\":\"我们刚一完成交易\",\"method\":\"事后叙述，但原文以预测性语气表达\",\"method_basis\":\"inferred\",\"reason\":\"原文以叙述语气描述网络泡沫在交易完成后破灭，属于对时间关联的预测性判断。\"},{\"quote\":\"纳斯达克的崩溃宣告了这个时代的终结\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔（叙述者）\",\"claim\":\"纳斯达克崩溃将宣告90年代科技乐观主义时代的终结。\",\"expanded_claim\":\"纳斯达克指数的崩溃宣告了90年代科技乐观主义时代的终结。\",\"reference_resolutions\":[{\"expression\":\"这个时代\",\"referent\":\"90年代科技乐观主义时代\",\"support_quote\":\"市场崩溃一直被解读为对90年代科技乐观主义的审判\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"基于市场崩溃的因果判断\",\"method_basis\":\"inferred\",\"reason\":\"说话者将纳斯达克崩溃与时代终结关联，属于对结果的判断。\"},{\"quote\":\"结果造成了另一场泡沫——这次发生在房地产市场\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔（叙述者）\",\"claim\":\"投资者转向房地产和全球化将造成另一场房地产市场泡沫。\",\"expanded_claim\":\"投资者重新把目光放到房地产和金砖国家，结果造成了另一场发生在房地产市场的泡沫。\",\"reference_resolutions\":[{\"expression\":\"投资者\",\"referent\":\"90年代后的投资者\",\"support_quote\":\"投资者又重新把目光放到了砖块（房地产）和金砖国家（全球化）上\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"投资者重新把目光放到房地产和金砖国家\",\"method\":\"基于投资流向的因果推理\",\"method_basis\":\"inferred\",\"reason\":\"说话者预测投资者转向房地产将导致另一场泡沫，属于条件性判断。\"},{\"quote\":\"忽视它们的人被认为会遭受2000年美股大崩盘、科技股重挫那样的厄运\",\"kind\":\"prediction\",\"speaker\":\"归属未确定\",\"claim\":\"忽视这些创业信条的人会遭受类似2000年美股大崩盘、科技股重挫的厄运。\",\"expanded_claim\":\"忽视这些创业经验教训的人被认为会遭受2000年美股大崩盘、科技股重挫那样的厄运。\",\"reference_resolutions\":[{\"expression\":\"它们\",\"referent\":\"4点经验教训\",\"support_quote\":\"遭受硅谷之劫的企业家们从中学到4点经验\"}],\"unresolved_references\":[\"被认为的主体\"],\"time_text\":\"\",\"condition_text\":\"忽视它们\",\"method\":\"基于信条的因果判断\",\"method_basis\":\"inferred\",\"reason\":\"原文以被动语态表达对忽视信条者的负面预测，说话者归属未确定。\"},{\"quote\":\"我们仍然需要新科技，甚至还可能需要用1999年的那种狂热去寻求新科技\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔（叙述者）\",\"claim\":\"未来仍然需要新科技，甚至可能需要用1999年的狂热去寻求新科技。\",\"expanded_claim\":\"我们（社会）仍然需要新科技，甚至还可能需要用1999年的那种狂热去寻求新科技。\",\"reference_resolutions\":[{\"expression\":\"我们\",\"referent\":\"社会/创业者群体\",\"support_quote\":\"我们仍然需要新科技\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"\",\"method\":\"基于对科技需求的判断\",\"method_basis\":\"inferred\",\"reason\":\"说话者预测未来对新科技的需求，属于对未来需求的判断。\"},{\"quote\":\"要想建立新一代企业，我们必须扔掉之前陈旧的教条\",\"kind\":\"prediction\",\"speaker\":\"彼得·蒂尔（叙述者）\",\"claim\":\"建立新一代企业需要扔掉之前陈旧的教条。\",\"expanded_claim\":\"要想建立新一代企业，我们必须扔掉之前陈旧的教条。\",\"reference_resolutions\":[{\"expression\":\"我们\",\"referent\":\"创业者\",\"support_quote\":\"要想建立新一代企业\"}],\"unresolved_references\":[],\"time_text\":\"\",\"condition_text\":\"要想建立新一代企业\",\"method\":\"基于创业经验的建议\",\"method_basis\":\"inferred\",\"reason\":\"原文以条件句表达建立新一代企业的必要条件，属于条件性判断。\"}]}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3318,
+    "completion_tokens": 1495,
+    "total_tokens": 4813,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 3318
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

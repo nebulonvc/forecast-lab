@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000608315-000608406",
+  "plan": {
+    "object": "密谋所针对、而又逃脱的人。同段的例子是希庇亚斯、萨提鲁斯和洛伦佐活了下来，然后报复。",
+    "condition": "when those conspired against escape。他们必须从已经着手的加害里逃脱。密谋在动手前被破获，不是逃脱。",
+    "quantifier": "they become。逃脱之后变得比以前更严酷、更无法忍受。这句没有写 always，但是对逃脱者的一般结果。一次变得更严酷不能单独证明这句；一次逃脱后变得更温和可以反驳。",
+    "result": "登记变化是 harsher。比以前更严酷。只写后来下台，没有写比刺杀前更严酷，不能代替。",
+    "window": "1531至2026-11-15。雅典、赫拉克利亚和佛罗伦萨的例子是出版前的。",
+    "counterevidence_needed": "一个人从密谋中逃脱，然后统治比以前更严酷；或者逃脱之后并没有变得更严酷。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "after surviving the assassination attempt the ruler's repression became harsher than before",
+      "counter_query": "after the assassination attempt failed the ruler pardoned the plotters and moderated his government"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://encyclopaediaafricana.com/mensa-bonsu/"],
+    "dropped": "2005年阿卜杜拉赦免的是动手前几天就被破获的利比亚密谋，他不是从已经着手的加害里逃脱。1912年的泰国密谋在行刺日前坦白。这些都不进入逃脱。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "satisfied",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-ea-mensa-1880"],
+    "scope": "必须先逃脱，再比以前更严酷。一次这样的变化不能把这句定成普遍结果。",
+    "reason": "非洲百科写，1880年初多曼卡马运动的人闯入宫殿，企图刺杀门萨·本苏。他下令清洗这个运动，此后行为明显反常，统治变得严酷。这是从刺杀中逃脱，然后比先前更严酷。它只是一次。反对检索里的赦免发生在密谋尚未动手之时，不能当成逃脱后变得温和。决定性缺口是：没有第二个同等对象，能看出这是逃脱者的一般结果，或者有人逃脱后并没有更严酷。",
+    "limitation": "百科页没有出版日。1880年只写年初。他后来在1883年被废，页面没有把废黜写成比刺杀前更严酷的反面。",
+    "method": "先确认加害已经着手而他逃脱，再看是否比以前更严酷。一次不能完成这句的一般结果。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "1880年刺杀未成之后，门萨·本苏的统治变得严酷。这是一次，不是这句的全部。动手前被破获的密谋不算逃脱。"
+  }
+}

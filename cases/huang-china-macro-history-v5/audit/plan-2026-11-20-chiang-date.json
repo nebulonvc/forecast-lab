@@ -1,0 +1,31 @@
+{
+  "executed_at": "2026-11-20T01:14:13Z",
+  "stage": "chiang_search_and_hk_date",
+  "note": "新检索时间是这次执行，不改上一份 plan.json 里的时间。",
+  "claims": [
+    {
+      "id": "txt-07d9664e1f-000190598-000190625",
+      "queries": [
+        {
+          "round": 1,
+          "role": "support",
+          "query": "Chiang Kai-shek historical reassessment mainland China museum 2015 official date",
+          "executed_at": "2026-11-20T01:08:00Z",
+          "result": "打开并保存 https://www.gov.cn/xinwen/2015-07/31/content_2906871.htm 。页面日期 2015-07-31。正文要求正确评价重要党派，并写共产党的中流砥柱作用是关键。"
+        },
+        {
+          "round": 1,
+          "role": "counter",
+          "query": "same page read for a sentence that the Kuomintang or Chiang status was not restored",
+          "executed_at": "2026-11-20T01:08:00Z",
+          "result": "同一已存档页面没有写地位已经恢复，也没有写地位没有变化。El Mundo 2015-08-30 的检索摘要没有抓成正文，不用。"
+        }
+      ]
+    },
+    {
+      "id": "txt-07d9664e1f-000191040-000191188",
+      "queries": [],
+      "gap": "没有新检索。只核对已存档 PDF 的日期精度，撤回编造的日。"
+    }
+  ]
+}

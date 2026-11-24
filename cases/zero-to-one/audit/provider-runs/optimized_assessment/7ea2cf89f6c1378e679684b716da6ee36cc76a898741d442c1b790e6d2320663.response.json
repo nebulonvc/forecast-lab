@@ -1,0 +1,28 @@
+{
+  "id": "1c8aeb4e-9cac-4deb-b88b-1ca9acaa371c",
+  "object": "chat.completion",
+  "created": 1794201588,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000054926-000054961\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为关于发现商机必要条件的一般方法论主张，无可检验的未来事件、期限或可操作化指标。\",\"reason\":\"该句是“只有相信并探索秘密才能发现商机”的必要条件式方法论主张，不构成对具体未来结果的预测。\",\"limitation\":\"条件式表述本身无法作为可观测预测评分，故仅作非预测审计记录。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000055027-000055074\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为“像Facebook这样简单的想法能支撑重要而有价值的企业”；结论为“一定还有许多好公司等待创办”。需以可观测的创业/新公司成立与成长数据检验，但原文未给指标、期限或数量口径。\",\"reason\":\"原文以“如果……那么一定……”作条件性推断，但条件是否成立及“许多好公司”均无明确可操作化标准，且无证据材料可核对。\",\"limitation\":\"缺少可核验的创业公司数量或质量数据，条件与结论口径均不明确，无法合理评分。\",\"evidence_ids\":[],\"method\":\"条件性推断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5135,
+    "completion_tokens": 357,
+    "total_tokens": 5492,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 4367
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

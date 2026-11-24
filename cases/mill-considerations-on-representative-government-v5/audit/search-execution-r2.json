@@ -1,0 +1,107 @@
+{
+  "written_at": "2026-11-20T09:56:23Z",
+  "plans_written_at": "2026-11-20T09:54:55Z",
+  "external_model_api_used": false,
+  "deepseek_used": false,
+  "tool_call_id": null,
+  "tool_call_id_note": "接口没有返回 tool_call_id，不编造。计划文件写于检索之前。下面的 query 是本轮实际发给 WebSearch 的字符串。结果文件是工具写下的页面文本，不是事后另一次 HTTP 200。",
+  "historical_note": "首轮 11 份有 sha 的返回已按原字节放入 audit/historical-returns/，没有重抓。peers 首轮没有文件。decline 首轮不在执行日志里。这两条只记本轮。",
+  "searches": [
+    {
+      "claim": "sex",
+      "role": "support",
+      "query": "Fifteenth Amendment Nineteenth Amendment sex and race ceased to justify denying citizenship privileges",
+      "url": "https://www.cmu.edu/dietrich/history/people/faculty/tetraultarticle2020",
+      "result_file": "audit/r2-returns/sex-support-50b4a5f921bb.txt",
+      "result_sha256": "50b4a5f921bbfb88fb5f881f729ff8be3944bb38036f286de538f71f980c74c7",
+      "bytes": 28092,
+      "failure": null,
+      "tool_call_id": null,
+      "file_mtime_utc": "2026-11-20T09:55:01Z"
+    },
+    {
+      "claim": "sex",
+      "role": "counter",
+      "query": "United States racial restrictions on naturalization continued women denied equal franchise after 1870",
+      "url": "https://www.archives.gov/publications/prologue/1998/summer/women-and-naturalization-1.html",
+      "result_file": "audit/r2-returns/sex-counter-84400d1a710d.txt",
+      "result_sha256": "84400d1a710d9d08157cffd0aef4269480f53dba7dc77a65f553687318323d41",
+      "bytes": 23746,
+      "failure": null,
+      "tool_call_id": null,
+      "file_mtime_utc": "2026-11-20T09:55:02Z"
+    },
+    {
+      "claim": "ignorance",
+      "role": "support",
+      "query": "ignorance is a better qualification than knowledge for the military last time said",
+      "url": "https://www.speechlib.org/en/speeches/ignorance",
+      "result_file": "audit/r2-returns/ignorance-support-3671df800274.txt",
+      "result_sha256": "3671df800274b737c448ae529d67e9e6d347fefd26b3ec114b3751a8a0f1fd7d",
+      "bytes": 33590,
+      "failure": null,
+      "tool_call_id": null,
+      "file_mtime_utc": "2026-11-20T09:55:01Z"
+    },
+    {
+      "claim": "ignorance",
+      "role": "counter",
+      "query": "ignorance better than education for soldiers or officers repeated after competitive examinations",
+      "url": "https://api.parliament.uk/historic-hansard/lords/1875/jul/23/resolution",
+      "result_file": "audit/r2-returns/ignorance-counter-f42960ecfc3b.txt",
+      "result_sha256": "f42960ecfc3bf35bf236a6d5b33e753b3cf557fb6c69d7c66edb13988d544bc3",
+      "bytes": 31022,
+      "failure": null,
+      "tool_call_id": null,
+      "file_mtime_utc": "2026-11-20T09:55:01Z"
+    },
+    {
+      "claim": "peers",
+      "role": "support",
+      "query": "hereditary peers sit in the Lords by their representatives because the order multiplied",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-10635/",
+      "result_file": "audit/r2-returns/peers-support-e9cc4946dbbb.txt",
+      "result_sha256": "e9cc4946dbbb6c44970b45e56434fca5e3581689ce181021359889e2244872fe",
+      "bytes": 27936,
+      "failure": null,
+      "tool_call_id": null,
+      "file_mtime_utc": "2026-11-20T09:55:02Z"
+    },
+    {
+      "claim": "peers",
+      "role": "counter",
+      "query": "House of Lords hereditary peers removed not seated as representatives of the whole order",
+      "url": "https://commonslibrary.parliament.uk/research-briefings/cbp-10635/",
+      "result_file": "audit/r2-returns/peers-counter-e9cc4946dbbb.txt",
+      "result_sha256": "e9cc4946dbbb6c44970b45e56434fca5e3581689ce181021359889e2244872fe",
+      "bytes": 27936,
+      "failure": null,
+      "tool_call_id": null,
+      "file_mtime_utc": "2026-11-20T09:55:01Z"
+    },
+    {
+      "claim": "decline",
+      "role": "support",
+      "query": "Indian appointments from convenience practiced with impunity began decline of British empire in India",
+      "url": "https://en.wikipedia.org/wiki/Imperial_Civil_Service",
+      "result_file": "audit/r2-returns/decline-support-eaa3edd19591.txt",
+      "result_sha256": "eaa3edd195919421d0d2dde6eff3be387771cd93779ec9908c7096982409a18f",
+      "bytes": 26674,
+      "failure": null,
+      "tool_call_id": null,
+      "file_mtime_utc": "2026-11-20T09:55:01Z"
+    },
+    {
+      "claim": "decline",
+      "role": "counter",
+      "query": "British rule in India ended without convenience appointments being the start",
+      "url": "https://www.thebritishacademy.ac.uk/documents/1547/JBA-001-133-Brown.pdf",
+      "result_file": "audit/r2-returns/decline-counter-db4d4ed812cb.txt",
+      "result_sha256": "db4d4ed812cb0a32494e2270857822b5f38fda8e340887b73e683f0be97f8c6c",
+      "bytes": 50553,
+      "failure": null,
+      "tool_call_id": null,
+      "file_mtime_utc": "2026-11-20T09:55:03Z"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "transport_complete": true,
+  "request_count": 42,
+  "response_count": 42,
+  "api_peak_concurrency": 12,
+  "api_wall_seconds": 24.73,
+  "usage": {
+    "prompt_tokens": 264602,
+    "completion_tokens": 49854,
+    "total_tokens": 314456,
+    "prompt_cache_hit_tokens": 22784,
+    "prompt_cache_miss_tokens": 241818
+  },
+  "estimated_cost_CNY_range": [
+    0.44168968,
+    0.88337936
+  ],
+  "automatic_retries": 0,
+  "final_accepted_records": 326,
+  "review_round": {
+    "reviewed_unresolved": 243,
+    "carried_forward": 83
+  },
+  "stage": "assess_only",
+  "model": "deepseek-flash",
+  "initial_runner_all_batches_valid": false,
+  "initial_rejected_batches": [
+    {
+      "batch": 7,
+      "error": "cached_response_invalid_55b013e2c3b3",
+      "recovery_status": "recovered_for_local_review_only",
+      "recovered_items": 6
+    }
+  ],
+  "initial_record_validation_findings": [
+    {
+      "n": 45,
+      "id": "e2e_s02_p114_01",
+      "error": "Unestablished condition cannot be scored",
+      "proposal": {
+        "id": "e2e_s02_p114_01",
+        "inclusion": "forecast",
+        "verdict": "部分符合",
+        "basis": "observed_window",
+        "scope": "以2013出版年为观察起点，至2025年；用实际GDP年增长率检验“持续增长”方向，不把增速放慢定义为脱轨。",
+        "reason": "2013—2025年实际GDP每年均为正增长，已观察趋势符合“持续增长”的主要方向；但“今后几十年”的完整期限尚未走完。",
+        "limitation": "正增长不能证明未来不会发生脱轨，也不能识别条件是否成立或因果机制；阶段趋势不等于完整期限已兑现。",
+        "evidence_ids": [
+          "s05_G01",
+          "v2_WB_GDP"
+        ],
+        "method": "原摘录未提供可识别的推理方式",
+        "method_basis": "unknown",
+        "observation_end": "2025-12-31",
+        "future_time_text": "今后几十年内",
+        "condition_state": "unknown",
+        "trend_aligned": true
+      }
+    }
+  ],
+  "session_adjudication_complete": true,
+  "accepted_assessment_sha256": "c30dd0dc0786e94a58428dbef627af8e99fc476923b49d1be2d716e324878fec",
+  "review_changes": {
+    "reviewed": 243,
+    "carried_forward": 83,
+    "verdict_or_inclusion_changed": 76,
+    "transitions": {
+      "暂无法判断 → 部分符合": 61,
+      "暂无法判断 → 正确": 13,
+      "暂无法判断 → 错误": 2
+    },
+    "trend_aligned_n": 42,
+    "new_evidence_records": 78,
+    "model_final_verdict_or_trend_disagreements": 11,
+    "method_changed": 0,
+    "source_quotes_changed": 0
+  },
+  "example_ids": [
+    "e2e_s02_p189_01",
+    "e2e_p262_03",
+    "e2e_s02_p126_02",
+    "e2e_s02_p165_01",
+    "e2e_s02_p355_01",
+    "e2e_s02_p355_03",
+    "e2e_s02_p141_01"
+  ],
+  "method_findings": [
+    "制度延续与路径依赖：从现有政治结构推测变化速度，例如强中央、欧盟财政整合和日美同盟。这些记录可以核验制度是否延续，不能仅凭延续证明作者的所有制度解释。",
+    "人口与资源约束：从年龄结构、劳动力和消费需求推到经济走势。日本2022年抚养比可作数值核验；收入与消费还受生产率、价格和政策影响，需要分别检查。",
+    "利益与力量平衡：从政府、军队与大国的利益推测其选择。条件情景适合保留为可更新的问题；对尚未发生的情景不记成已经命中。",
+    "趋势外推与转折风险：俄罗斯军事竞争、缅甸军方逆转等反例表明，既有趋势可能被政策与制度转折打断。需要明确哪些新事实会让原判断失效。"
+  ],
+  "prior_run": {
+    "audit": "audit/round2/before_execution_audit.json",
+    "request_count": 86,
+    "estimated_cost_CNY_range": [
+      0.61013672,
+      1.22027344
+    ]
+  },
+  "human_reviewed": false,
+  "interpretation": "Trend progress is a partial verdict, not a completed outcome or calibrated forecast accuracy.",
+  "review_decisions_path": "audit/round2/review_decisions.jsonl",
+  "local_overrides_path": "audit/round2/local_overrides.json"
+}

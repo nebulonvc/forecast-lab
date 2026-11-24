@@ -1,0 +1,595 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" style="overflow-y: auto;" xmlns:og="http://ogp.me/ns#" >
+<head>
+    <title>Poverty rates at international poverty lines Part 2|WDI Central</title>
+    <meta name="title" content="Poverty rates at international poverty lines Part 2" />
+    <meta  property="og:title" content="Poverty rates at international poverty lines Part 2" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="shortcut icon" href="http://www.worldbank.org/favicon.ico" type="image/x-icon"/>
+
+    <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0058/1350.js" async="async"></script>
+
+    <link href="/styles/jquery-ui12.css" rel="stylesheet" type="text/css" />
+    <script src="/views/scripts/jquery-1.7.min.js" type="text/javascript"></script>
+    <script src="/views/scripts/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="/views/scripts/template/ddpwdireport.js" type="text/javascript"></script>
+    <link id="template_style_css" href="/views/styles/template/ddpreport.css" rel="stylesheet" type="text/css" />
+<style id="template_style_common" type="text/css">
+#table-ddpreport-header tr td:first-child, #table-ddpreport-data tr.rowdata td:first-child, #table-ddpreport-data tr.filler td:first-child {width: 300px;}
+
+</style>
+<style id="template_style_custom" type="text/css">
+
+</style>
+
+
+    <style type="text/css" >
+        iframe{ overflow:hidden!important}
+    </style>
+
+    <link href="/views/styles/chosen.css" rel="stylesheet" type="text/css" />
+    <link href="/views/styles/embedStyles.css" rel="stylesheet" type="text/css" />
+    <script src="/views/scripts/chosen.jquery.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+    var gbl_common_internal = false;
+    
+    function DecodeHtml(msg) {
+        if (msg.length > 0) {
+            return msg.replace("&#39;", "'");
+        }
+        else {
+            return msg;
+        }
+    }
+
+    function getWidgetWidth() {
+        var widgQryWd = getParameterByName('wd');
+        var widgWd = document.documentElement.clientWidth;
+        if (widgQryWd != '') widgWd = parseInt(widgQryWd, 10);
+
+        return widgWd;
+    }
+
+    function getWidgetHeight() {
+        var widgQryHt = getParameterByName('ht');
+        var widgHt = document.documentElement.clientHeight;
+        if (widgQryHt != '') widgHt = parseInt(widgQryHt, 10);
+
+        return widgHt;
+    }
+
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    function getContentWidth() {
+        var widgetTotWidth = getWidgetWidth();
+
+        var widgetContWidth = widgetTotWidth - 12; //12 - left & right padding 6 each
+
+        return widgetContWidth;
+    }
+
+    function getToolBarHeight() {
+        var varHeight = 0;
+        if (document.getElementById("divtoolbar") != null) varHeight += document.getElementById("divtoolbar").offsetHeight;
+        return varHeight;
+    }
+
+    function HasDisclaimer()
+    {
+        if (document.getElementById("widget-table-disclaimer") == null) return false;
+        if ($.trim($('#REPORT_PREVIEW_bDisclaimer').text()) == '' && $.trim($('#REPORT_PREVIEW_sDisclaimerMsg').text()) == '') return false;
+
+        return true;
+    }
+
+    function getDisplayElemHeight() {
+        var varHeight = 12; //padding
+
+        varHeight += getToolBarHeight();
+        if (document.getElementById("widget-table-dropdowns") != null) varHeight += (document.getElementById("widget-table-dropdowns").offsetHeight);
+        if (document.getElementById("widget-table-header") != null) varHeight += (document.getElementById("widget-table-header").offsetHeight);
+        if (document.getElementById("widget-table-footer") != null) varHeight += (document.getElementById("widget-table-footer").offsetHeight);
+        if (document.getElementById("widget-table-source") != null) varHeight += (document.getElementById("widget-table-source").offsetHeight);
+
+        if (HasDisclaimer()) varHeight += (document.getElementById("widget-table-disclaimer").offsetHeight);
+
+        varHeight += getHeaderDescHeight();
+        //varHeight += $('#widget').height();
+
+        return varHeight;
+    }
+
+    function getHeaderDescHeight()
+    {
+        var varHeight = 0;
+        if ($('#widgetTitle').is(':visible')) varHeight += $('#widgetTitle').outerHeight(true);//which includes margin, padding and borders as well
+        if ($('#widgetDesc').is(':visible')) varHeight += $('#widgetDesc').outerHeight(true);
+        return varHeight;
+    }
+
+    function getContentHeight() {
+        var widgetTotHeight = getWidgetHeight();
+
+        var widgetContHeight = widgetTotHeight - getDisplayElemHeight();
+
+        return widgetContHeight;
+    }
+
+</script> 
+
+    <style type="text/css">
+        .page-meta-icon {
+            vertical-align: super;
+            cursor: pointer;
+            position: relative;
+            top: 8px;
+            left: 2px;
+        }
+        .chosen-container .chosen-results li
+        {
+	        white-space: normal;
+        }
+        #page-select-download-links{
+            display: none;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#scrollingContent').css('top', $('#fixedContent').height());
+        });
+
+        function getReportSectionandHeading(reportDetails) {
+            var header = $('#REPORT_PREVIEW_report_heading').html().trim();
+            header = header.trim();
+            var spaceIndex = header.indexOf(' ');
+            var sectionId = header.substr(0, spaceIndex);
+            var reportCaption = header.substr(spaceIndex + 1);
+            if (sectionId == 'Table') {
+                spaceIndex = reportCaption.indexOf(' ');
+                sectionId = reportCaption.substr(0, spaceIndex);
+                reportCaption = reportCaption.substr(spaceIndex + 1);
+            } else {
+                sectionId = $('#hdnTableNo').val();
+                reportCaption = header;
+            }
+
+            reportCaption = reportCaption.replace('-', ' ')
+
+            reportDetails.report.tableNo = sectionId;
+            reportDetails.report.tableName = reportCaption;
+        }
+
+        function ExportPdf(tableNo) {
+            $("#report-loading").fadeIn(200);
+            var file_download_url = "/AjaxDownload/FileDownloadHandler.ashx?";
+            $.ajax({
+                type: "POST",
+                url: "/index.aspx/ExportPdf",
+                contentType: "application/json; charset=utf-8",
+                data: "{tableNo:'" + tableNo + "'}",
+                dataType: "json",
+                success: function (data) {
+                    if (data.d.length > 0) {
+                        $("#dl-iframe-ddpreport").get(0).src = file_download_url + data.d;
+                    }
+                    
+                    AnalyticsControlClick("WDI:Tables:Download:PDF",  $('a[href$="/table/' + tableNo + '"]').text());
+                    
+                    $("#report-loading").fadeOut(300);
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+
+                    window.location.href = "/DDP_Error.html";
+                }
+            });
+        }
+
+        function ExportExcelNew(tableNo) {
+            $("#report-loading").fadeIn(200);
+            var file_download_url = "/AjaxDownload/FileDownloadHandler.ashx?";
+            $.ajax({
+                type: "POST",
+                url: "/index.aspx/ExportExcel",
+                contentType: "application/json; charset=utf-8",
+                data: "{tableNo:'" + tableNo + "'}",
+                dataType: "json",
+                success: function (data) {
+                    if (data.d.length > 0) {
+                        $("#dl-iframe-ddpreport").get(0).src = file_download_url + data.d;
+                        AnalyticsControlClick("WDI:Tables:Download:Excel", $('a[href$="/table/' + tableNo + '"]').text());
+                    }
+                    $("#report-loading").fadeOut(300);
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+
+                    window.location.href = "/DDP_Error.html";
+                }
+            });
+        }       
+    </script>
+
+    <link href="/styles/css/bootstrap.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="/styles/css/main.css " rel="stylesheet" />
+    <link href="/styles/css/responsive.css" rel="stylesheet" />
+    <link href="/styles/css/icon.css" rel="stylesheet" />
+    <link href="/views/styles/template/ddpreportwdi.css" rel="stylesheet" />
+
+    <style type="text/css">
+        #vertical-scroll-head {
+            width: 100%;
+        }
+        #page_select_download_links, #container_header {
+            display: table;
+            width: 100%;
+        }
+        .ie #container-header, .ie #container-data {
+            display: block;
+            width: 100%;
+        }
+        #table-ddpreport-header tr.filler td,
+        #table-ddpreport-data tr.filler td
+        {
+            width: auto;
+        }
+        #table-ddpreport-header tr td:first-child, #table-ddpreport-data tr.rowdata td:first-child, #table-ddpreport-data tr.filler td:first-child {
+            width: auto;
+        }
+        #table-ddpreport-data.Blue tr.custom-row td.cell-footer
+        {
+            font-size: 11px;
+        }
+    </style>
+    <script type="text/JavaScript">
+        var wbgData = wbgData || {};
+        wbgData.page = {
+            pageInfo: {
+                pageName: "en:wb:reports:/table",
+                pageCategory: "content page",
+                pageFirstPub: "01-01-2015", // format will be mm-dd-yyyy
+                pageLastMod: "01-01-2016", // format will be mm-dd-yyyy
+                contentType: "Data",
+                channel: "DEC WDIOnlineTables EXT"
+            },
+            sectionInfo: {
+                siteSection: "table",
+                subsectionP2: ""
+            }
+        },
+            wbgData.site = {
+                siteInfo: {
+                    siteLanguage: "en", // format should be en,fr etc.
+                    siteCountry: "usa", // format should be usa, ind etc.
+                    siteEnv: "stg", // format should be prod,stg,uat etc.
+                    siteType: "wdionlinereports"
+                },
+                techInfo: {
+                    cmsType: "sharepoint",
+                    bussVPUnit: "DEC",
+                    bussUnit: "DECDG",
+                    bussUserGroup: "external",
+                    bussAgency: "ibrd"
+                }
+            }
+    </script>
+
+    <script src="//assets.adobedtm.com/572ee9d70241b5c796ae15c773eaaee4365408ec/satelliteLib-efd6120a6f6ed94da49cf49e2ba626ac110c7e3c-staging.js"></script>
+
+</head>
+<body>
+
+    <form method="post" action="../tablepreview.aspx?tableNo=1.2.2" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY0NzkwMDU4Mw9kFgJmDxYCHgRUZXh0BYsDPGxpbmsgaWQ9InRlbXBsYXRlX3N0eWxlX2NzcyIgaHJlZj0iL3ZpZXdzL3N0eWxlcy90ZW1wbGF0ZS9kZHByZXBvcnQuY3NzIiByZWw9InN0eWxlc2hlZXQiIHR5cGU9InRleHQvY3NzIiAvPg0KPHN0eWxlIGlkPSJ0ZW1wbGF0ZV9zdHlsZV9jb21tb24iIHR5cGU9InRleHQvY3NzIj4NCiN0YWJsZS1kZHByZXBvcnQtaGVhZGVyIHRyIHRkOmZpcnN0LWNoaWxkLCAjdGFibGUtZGRwcmVwb3J0LWRhdGEgdHIucm93ZGF0YSB0ZDpmaXJzdC1jaGlsZCwgI3RhYmxlLWRkcHJlcG9ydC1kYXRhIHRyLmZpbGxlciB0ZDpmaXJzdC1jaGlsZCB7d2lkdGg6IDMwMHB4O30NCg0KPC9zdHlsZT4NCjxzdHlsZSBpZD0idGVtcGxhdGVfc3R5bGVfY3VzdG9tIiB0eXBlPSJ0ZXh0L2NzcyI+DQoNCjwvc3R5bGU+DQpkZGhadCRqnNBXHWqHVgAC8WGSUWxGFi0VT8B+yBdcijOP" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=ee3_ks3jN4qhLnPIq4svi3AaYXoId-cd1Hhr7PHCCCBR2kkbc5oyfqurrlDXW-LbHsAquSoJ8h7YV4y7D-XT_YUJ1eEPFklhnV7GtbuclAc1&amp;t=639256397503738887" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=uJxLCTYhSz9Ig2JUn6YY8VCYU0k25zDzhqnkjIcaWzbV-VwwCjVeuWRyJWQhsw8VC6xaFhHcjs2Wb1SxvaAmsyvgaIiTuk1I4eIdrhOoxXD6hM-Sg0--ypWmKGp_OueH9GTo0eITyk7u7icm2ntuTO82ETue1Z62qj9CE8pBWwfxQvvXuhY2wuqyWOeIfPGh0&amp;t=ffffffffa1bf0f7b" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=18Mw1JWPJGpoculQBB82lBu1f2JSavie9z-VpYliRENx-fxYTK_-62YH0RbUNnSmHfsIXsZPeMuAlUwoQ66z5268MGCRY0J_LIZUycsRChyi0OeCHUCb38VsOSi3h2Gb-_q_RQBhZ4RUFHUKIB_3AigVK4IRjNAwCy2RGAdAb0klm7gDIoM3NLb0ad8l_zru0&amp;t=ffffffffa1bf0f7b" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0F2CECE9" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdABPr9nhkwryi0Njg/i/O+xc27x2HKLGMUDf5ZMFsWDU78zxXeBkooUiGeAC4hwWkhMC017MWRoiSKmTuoligTAS+KyF6GiyQXY5v9LLSRjpj8H0fhtcxMnN6hkxtSHgx8EA8ntOsuffJ0yUCe8pxEOJibzGI193+4G3I9hYiHIVhyHMuvH6eK3N8QN/CiV5PtLwoncGNusgUtEQCfUT7p738/k2/AdMDQIPYQARhd+wR6lXcRDQPRiegZLXqzjsvchVIMQwBmWgiX9P10AHgGinFLqYF8R3CkFXG3Mi7aGYnSwMyIdJaRkeIY2fYt1l9gdyLcniTQuUsVlSksVwb2kTu+pp5n5hF3bDA3rwYTkTt7wMs6+00mlTY9OPCRuZbbSjygxQyOZ2B7GNlvuCUJXFsVIjWcXyOoPKH8bTPhszzDx/TPiiEZCYoTOqU7mIxWjM=" />
+</div>
+        <div id="widgetTitle" style="display: none;"></div>
+        <div class="clrBoth"></div>
+        <div id="widgetDesc" style="display: none;"></div>
+            <!--[if IE]><!-->
+            <div id="widgetpreview" class="ie" style="font-size:11px;">
+            <!--<![endif]-->
+            <!--[if !IE]>
+            <div id="widgetpreview" style="font-size:11px;">
+            <![endif]-->
+            <div id="widgetpreviewcontent" class="clearfix" >
+                <div id="divreportcontent">
+                    
+
+<div id="main-wrapper">
+    <div id="wbLogoWrapper" style="display: block;">
+        <!-- header starts -->
+        <header>
+            <nav class="navbar navbar-default navbar-top data-header">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-collapse" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><span class="navbar-brand"><div class="wb-nav-left"><a class="sprite wb-logo-ibrd-en" href="javascript:;"></a></div>
+                    </span></div>
+            </nav>
+        </header>
+        <!-- header ends -->
+        <div id="breadcrumb" style="top: 58px;">
+            <div class="breadcrumbInner" style="background-color: white;">
+                <div class="breadcrumbNav" style="display: block;">
+                    <div class="divider"><a href="http://data.worldbank.org" class="links">Data</a> &gt;</div>
+                    <div class="divider">
+                        <a href="http://data.worldbank.org/data-catalog" class="links">Data Catalog </a>
+                        &gt;
+                    </div>
+                    <div class="divider">
+                        <a href=" http://data.worldbank.org/data-catalog/world-development-indicators" class="links">World Development Indicators </a>&gt;
+                    </div>
+                    <div class="divider"><a href="http://wdi.worldbank.org/table" class="links">Tables </a>&gt;</div>
+                    <div id="REPORT_PREVIEW_brdcrmpNavSection" class="text">Poverty rates at international poverty lines Part 2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clrBoth"></div>
+    <div id="wdiHeader" style="top: 93px;">
+        <div id="wdiHeaderInner">
+            <div class="indi-table-header">
+                <table class="headerLayout" cellpadding="0" cellspacing="0" border="0">
+                    <tbody>
+                        <tr style="display:table-row">
+                            <td class="sectionLogo" style="display:none">
+                                <div class="sectionLogo"></div>
+                            </td>
+                            
+                            <td class="tableTitle" style="display:none">
+                                <div class="tableTitle" >
+                                    <div class="tableNumber"><span id="tableSection"></span></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="tableTitle">
+                                    <div class="titleTxt">
+                                        World Development Indicators:
+                                        <span id="REPORT_PREVIEW_report_heading">Poverty rates at international poverty lines Part 2</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="data-view-switch">
+            <div id="divLinks" class="colorCoding" style="padding-right: 6px;"><a class="clsReportLinks disable" title="Highlight data with footnotes or that refer to different years">Show Metadata Links</a></div>
+            <ul>
+                <li title="Access full time series, advanced sharing and reporting tools" class="databank"><a data-text="WDI->Databank" id="ucCustomTablePreview_lnkDataBank" href="'http://databank.worldbank.org/data/reports.aspx?CNO=1213&amp;series=SP.POP.TOTL,AG.SRF.TOTL.K2,EN.POP.DNST,NY.GNP.ATLS.CD,NY.GNP.PCAP.CD,NY.GNP.MKTP.PP.CD,NY.GNP.PCAP.PP.CD,NY.GDP.MKTP.KD.ZG,NY.GDP.PCAP.KD.ZG'"><span class="icon"></span></a></li>
+                <li title="Download all metadata" class="dwloadMdata"><a data-customlink="fd:body content:en:xls" data-text="Metadata:1.2.2" onclick="downloadTableMetadata()" href="#"><span class="icon"></span></a></li>
+
+                <li title="Download Excel" class="excel-data"><a data-customlink="fd:body content:en:xls" data-text="Data:1.2.2" onclick="ExportExcelNew('1.2.2')" href="#"><span class="icon"></span></a></li>
+                <li title="Download PDF" class="pdf-data"><a data-customlink="fd:body content:en:pdf" data-text="Data:1.2.2" onclick="ExportPdf('1.2.2')" href="#"><span class="icon"></span></a></li>
+    
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div id="ddpreportcontents">
+    <div id="vertical-scroll-head">
+        <div id="page_select_download_links"><div id="page-select-download-links"><div class="ddpreports-select" style="display: block;"></div></div></div>
+        <div id="container_header"><div id="container-header" style=""><div id="container-header-inner"><table id="table-ddpreport-header" class="Blue"><tr class="filler"><td class="cell1"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td></tr><tr class="hdrrow-4 hdrrow"><td class="cell1 header info-cell"></td><td class="header"><div class="spacer2">1990</div></td><td class="header"><div class="spacer2">1993</div></td><td class="header"><div class="spacer2">1996</div></td><td class="header"><div class="spacer2">1999</div></td><td class="header"><div class="spacer2">2002</div></td><td class="header"><div class="spacer2">2005</div></td><td class="header"><div class="spacer2">2008</div></td><td class="header"><div class="spacer2">2010</div></td><td class="header"><div class="spacer2">2011</div></td><td class="header"><div class="spacer2">2012</div></td><td class="header"><div class="spacer2">2013</div></td><td class="header"><div class="spacer2">2015</div></td><td class="header"><div class="spacer2">2018</div></td><td class="header"><div class="spacer2">2019</div></td><td class="header"><div class="spacer2">2020</div></td><td class="header"><div class="spacer2">2021</div></td><td class="header"><div class="spacer2">2022</div></td><td class="header"><div class="spacer2">2023</div></td></tr></table></div></div></div>
+    </div>
+
+    <div id="vertical-scroll">
+        <div id="container_data"><div id="container-data" style=""><div id="container-data-inner"><table id="table-ddpreport-data" class="Blue"><tr class="filler"><td class="cell1"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td><td class="data"></td></tr><tr class="rowhdr-1"><td  colspan="19"  class="header cell1 metadata" onclick="loadMetaData('EAS','C','Country','East Asia & Pacific','21','66226')" >East Asia & Pacific</td></tr><tr class="rowdata level-2 "><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY','S','Series','Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)','21','66226')" >Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)</td><td class="data metadata On" onclick="loadFootNotes('EAS~SI.POV.DDAY~YR1990','21', '')" ><div class="spacer2">67.0</div></td><td class="data metadata On" onclick="loadFootNotes('EAS~SI.POV.DDAY~YR1993','21', '')" ><div class="spacer2">62.8</div></td><td class="data metadata On" onclick="loadFootNotes('EAS~SI.POV.DDAY~YR1996','21', '')" ><div class="spacer2">52.0</div></td><td class="data metadata On" onclick="loadFootNotes('EAS~SI.POV.DDAY~YR1999','21', '')" ><div class="spacer2">49.1</div></td><td class="data metadata On" onclick="loadFootNotes('EAS~SI.POV.DDAY~YR2002','21', '')" ><div class="spacer2">40.0</div></td><td class="data metadata On" onclick="loadFootNotes('EAS~SI.POV.DDAY~YR2005','21', '')" ><div class="spacer2">28.9</div></td><td class="data metadata On" onclick="loadFootNotes('EAS~SI.POV.DDAY~YR2008','21', '')" ><div class="spacer2">23.4</div></td><td class="data metadata On" onclick="loadFootNotes('EAS~SI.POV.DDAY~YR2010','21', '')" ><div class="spacer2">18.9</div></td><td class="data metadata On" onclick="loadFootNotes('EAS~SI.POV.DDAY~YR2011','21', '')" ><div class="spacer2">15.3</div></td><td class="data metadata On" onclick="loadFootNotes('EAS~SI.POV.DDAY~YR2012','21', '')" ><div class="spacer2">13.2</div></td><td class="data metadata On" onclick="loadFootNotes('EAS~SI.POV.DDAY~YR2013','21', '')" ><div class="spacer2">9.0</div></td><td class="data metadata On" onclick="loadFootNotes('EAS~SI.POV.DDAY~YR2015','21', '')" ><div class="spacer2">6.1</div></td><td class="data metadata On" onclick="loadFootNotes('EAS~SI.POV.DDAY~YR2018','21', '')" ><div class="spacer2">3.3</div></td><td class="data metadata On" onclick="loadFootNotes('EAS~SI.POV.DDAY~YR2019','21', '')" ><div class="spacer2">2.6</div></td><td class="data metadata On" onclick="loadFootNotes('EAS~SI.POV.DDAY~YR2020','21', '')" ><div class="spacer2">2.7</div></td><td class="data metadata On" onclick="loadFootNotes('EAS~SI.POV.DDAY~YR2021','21', '')" ><div class="spacer2">2.6</div></td><td class="data metadata On" onclick="loadFootNotes('EAS~SI.POV.DDAY~YR2022','21', '')" ><div class="spacer2">2.4</div></td><td class="data metadata On" onclick="loadFootNotes('EAS~SI.POV.DDAY~YR2023','21', '')" ><div class="spacer2">2.2</div></td></tr><tr class="rowdata level-2 alternate"><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY.SH','S','Series','Share of total poor population (at $3.00 a day, 2021 PPP)','21','66226')" >Share of total poor population (at $3.00 a day, 2021 PPP)</td><td class="data"><div class="spacer2">53.0</div></td><td class="data"><div class="spacer2">50.8</div></td><td class="data"><div class="spacer2">46.1</div></td><td class="data"><div class="spacer2">44.0</div></td><td class="data"><div class="spacer2">39.1</div></td><td class="data"><div class="spacer2">33.1</div></td><td class="data"><div class="spacer2">31.0</div></td><td class="data"><div class="spacer2">28.4</div></td><td class="data"><div class="spacer2">25.2</div></td><td class="data"><div class="spacer2">23.3</div></td><td class="data"><div class="spacer2">18.1</div></td><td class="data"><div class="spacer2">14.0</div></td><td class="data"><div class="spacer2">9.0</div></td><td class="data"><div class="spacer2">7.3</div></td><td class="data"><div class="spacer2">7.2</div></td><td class="data"><div class="spacer2">6.9</div></td><td class="data"><div class="spacer2">6.6</div></td><td class="data"><div class="spacer2">6.2</div></td></tr><tr class="rowdata level-2 "><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY.CV','S','Series','Survey coverage for poverty headcount ratio (at $3.00 a day, 2021 PPP)','21','66226')" >Survey coverage for poverty headcount ratio (at $3.00 a day, 2021 PPP)</td><td class="data"><div class="spacer2">85.9</div></td><td class="data"><div class="spacer2">86.4</div></td><td class="data"><div class="spacer2">86.5</div></td><td class="data"><div class="spacer2">86.6</div></td><td class="data"><div class="spacer2">86.5</div></td><td class="data"><div class="spacer2">94.9</div></td><td class="data"><div class="spacer2">95.2</div></td><td class="data"><div class="spacer2">95.2</div></td><td class="data"><div class="spacer2">95.1</div></td><td class="data"><div class="spacer2">97.4</div></td><td class="data"><div class="spacer2">97.0</div></td><td class="data"><div class="spacer2">97.0</div></td><td class="data"><div class="spacer2">96.9</div></td><td class="data"><div class="spacer2">96.8</div></td><td class="data"><div class="spacer2">94.2</div></td><td class="data"><div class="spacer2">94.5</div></td><td class="data"><div class="spacer2">94.5</div></td><td class="data"><div class="spacer2">94.4</div></td></tr><tr class="rowhdr-1"><td  colspan="19"  class="header cell1 metadata" onclick="loadMetaData('ECS','C','Country','Europe & Central Asia','21','66226')" >Europe & Central Asia</td></tr><tr class="rowdata level-2 alternate"><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY','S','Series','Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)','21','66226')" >Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)</td><td class="data metadata On" onclick="loadFootNotes('ECS~SI.POV.DDAY~YR1990','21', '')" ><div class="spacer2">4.0</div></td><td class="data metadata On" onclick="loadFootNotes('ECS~SI.POV.DDAY~YR1993','21', '')" ><div class="spacer2">6.1</div></td><td class="data metadata On" onclick="loadFootNotes('ECS~SI.POV.DDAY~YR1996','21', '')" ><div class="spacer2">7.5</div></td><td class="data metadata On" onclick="loadFootNotes('ECS~SI.POV.DDAY~YR1999','21', '')" ><div class="spacer2">8.8</div></td><td class="data metadata On" onclick="loadFootNotes('ECS~SI.POV.DDAY~YR2002','21', '')" ><div class="spacer2">6.2</div></td><td class="data metadata On" onclick="loadFootNotes('ECS~SI.POV.DDAY~YR2005','21', '')" ><div class="spacer2">5.0</div></td><td class="data metadata On" onclick="loadFootNotes('ECS~SI.POV.DDAY~YR2008','21', '')" ><div class="spacer2">3.7</div></td><td class="data metadata On" onclick="loadFootNotes('ECS~SI.POV.DDAY~YR2010','21', '')" ><div class="spacer2">3.8</div></td><td class="data metadata On" onclick="loadFootNotes('ECS~SI.POV.DDAY~YR2011','21', '')" ><div class="spacer2">3.6</div></td><td class="data metadata On" onclick="loadFootNotes('ECS~SI.POV.DDAY~YR2012','21', '')" ><div class="spacer2">3.6</div></td><td class="data metadata On" onclick="loadFootNotes('ECS~SI.POV.DDAY~YR2013','21', '')" ><div class="spacer2">1.1</div></td><td class="data metadata On" onclick="loadFootNotes('ECS~SI.POV.DDAY~YR2015','21', '')" ><div class="spacer2">1.2</div></td><td class="data metadata On" onclick="loadFootNotes('ECS~SI.POV.DDAY~YR2018','21', '')" ><div class="spacer2">0.8</div></td><td class="data metadata On" onclick="loadFootNotes('ECS~SI.POV.DDAY~YR2019','21', '')" ><div class="spacer2">0.8</div></td><td class="data metadata On" onclick="loadFootNotes('ECS~SI.POV.DDAY~YR2020','21', '')" ><div class="spacer2">0.8</div></td><td class="data metadata On" onclick="loadFootNotes('ECS~SI.POV.DDAY~YR2021','21', '')" ><div class="spacer2">0.8</div></td><td class="data metadata On" onclick="loadFootNotes('ECS~SI.POV.DDAY~YR2022','21', '')" ><div class="spacer2">0.8</div></td><td class="data metadata On" onclick="loadFootNotes('ECS~SI.POV.DDAY~YR2023','21', '')" ><div class="spacer2">0.7</div></td></tr><tr class="rowdata level-2 "><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY.SH','S','Series','Share of total poor population (at $3.00 a day, 2021 PPP)','21','66226')" >Share of total poor population (at $3.00 a day, 2021 PPP)</td><td class="data"><div class="spacer2">1.5</div></td><td class="data"><div class="spacer2">2.2</div></td><td class="data"><div class="spacer2">2.9</div></td><td class="data"><div class="spacer2">3.3</div></td><td class="data"><div class="spacer2">2.5</div></td><td class="data"><div class="spacer2">2.4</div></td><td class="data"><div class="spacer2">2.0</div></td><td class="data"><div class="spacer2">2.3</div></td><td class="data"><div class="spacer2">2.4</div></td><td class="data"><div class="spacer2">2.6</div></td><td class="data"><div class="spacer2">0.9</div></td><td class="data"><div class="spacer2">1.1</div></td><td class="data"><div class="spacer2">0.9</div></td><td class="data"><div class="spacer2">0.8</div></td><td class="data"><div class="spacer2">0.9</div></td><td class="data"><div class="spacer2">0.8</div></td><td class="data"><div class="spacer2">0.8</div></td><td class="data"><div class="spacer2">0.7</div></td></tr><tr class="rowdata level-2 alternate"><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY.CV','S','Series','Survey coverage for poverty headcount ratio (at $3.00 a day, 2021 PPP)','21','66226')" >Survey coverage for poverty headcount ratio (at $3.00 a day, 2021 PPP)</td><td class="data"><div class="spacer2">87.9</div></td><td class="data"><div class="spacer2">91.6</div></td><td class="data"><div class="spacer2">96.2</div></td><td class="data"><div class="spacer2">98.3</div></td><td class="data"><div class="spacer2">99.4</div></td><td class="data"><div class="spacer2">99.4</div></td><td class="data"><div class="spacer2">96.2</div></td><td class="data"><div class="spacer2">95.1</div></td><td class="data"><div class="spacer2">95.0</div></td><td class="data"><div class="spacer2">95.0</div></td><td class="data"><div class="spacer2">94.9</div></td><td class="data"><div class="spacer2">94.8</div></td><td class="data"><div class="spacer2">94.6</div></td><td class="data"><div class="spacer2">93.1</div></td><td class="data"><div class="spacer2">96.8</div></td><td class="data"><div class="spacer2">96.8</div></td><td class="data"><div class="spacer2">96.8</div></td><td class="data"><div class="spacer2">96.8</div></td></tr><tr class="rowhdr-1"><td  colspan="19"  class="header cell1 metadata" onclick="loadMetaData('LCN','C','Country','Latin America & Caribbean','21','66226')" >Latin America & Caribbean</td></tr><tr class="rowdata level-2 "><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY','S','Series','Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)','21','66226')" >Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)</td><td class="data metadata On" onclick="loadFootNotes('LCN~SI.POV.DDAY~YR1990','21', '')" ><div class="spacer2">20.7</div></td><td class="data metadata On" onclick="loadFootNotes('LCN~SI.POV.DDAY~YR1993','21', '')" ><div class="spacer2">20.1</div></td><td class="data metadata On" onclick="loadFootNotes('LCN~SI.POV.DDAY~YR1996','21', '')" ><div class="spacer2">19.9</div></td><td class="data metadata On" onclick="loadFootNotes('LCN~SI.POV.DDAY~YR1999','21', '')" ><div class="spacer2">19.5</div></td><td class="data metadata On" onclick="loadFootNotes('LCN~SI.POV.DDAY~YR2002','21', '')" ><div class="spacer2">17.1</div></td><td class="data metadata On" onclick="loadFootNotes('LCN~SI.POV.DDAY~YR2005','21', '')" ><div class="spacer2">14.2</div></td><td class="data metadata On" onclick="loadFootNotes('LCN~SI.POV.DDAY~YR2008','21', '')" ><div class="spacer2">9.9</div></td><td class="data metadata On" onclick="loadFootNotes('LCN~SI.POV.DDAY~YR2010','21', '')" ><div class="spacer2">8.5</div></td><td class="data metadata On" onclick="loadFootNotes('LCN~SI.POV.DDAY~YR2011','21', '')" ><div class="spacer2">7.7</div></td><td class="data metadata On" onclick="loadFootNotes('LCN~SI.POV.DDAY~YR2012','21', '')" ><div class="spacer2">7.5</div></td><td class="data metadata On" onclick="loadFootNotes('LCN~SI.POV.DDAY~YR2013','21', '')" ><div class="spacer2">6.8</div></td><td class="data metadata On" onclick="loadFootNotes('LCN~SI.POV.DDAY~YR2015','21', '')" ><div class="spacer2">6.0</div></td><td class="data metadata On" onclick="loadFootNotes('LCN~SI.POV.DDAY~YR2018','21', '')" ><div class="spacer2">6.1</div></td><td class="data metadata On" onclick="loadFootNotes('LCN~SI.POV.DDAY~YR2019','21', '')" ><div class="spacer2">6.2</div></td><td class="data metadata On" onclick="loadFootNotes('LCN~SI.POV.DDAY~YR2020','21', '')" ><div class="spacer2">5.8</div></td><td class="data metadata On" onclick="loadFootNotes('LCN~SI.POV.DDAY~YR2021','21', '')" ><div class="spacer2">6.2</div></td><td class="data metadata On" onclick="loadFootNotes('LCN~SI.POV.DDAY~YR2022','21', '')" ><div class="spacer2">5.0</div></td><td class="data metadata On" onclick="loadFootNotes('LCN~SI.POV.DDAY~YR2023','21', '')" ><div class="spacer2">4.6</div></td></tr><tr class="rowdata level-2 alternate"><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY.SH','S','Series','Share of total poor population (at $3.00 a day, 2021 PPP)','21','66226')" >Share of total poor population (at $3.00 a day, 2021 PPP)</td><td class="data"><div class="spacer2">4.0</div></td><td class="data"><div class="spacer2">4.0</div></td><td class="data"><div class="spacer2">4.4</div></td><td class="data"><div class="spacer2">4.4</div></td><td class="data"><div class="spacer2">4.3</div></td><td class="data"><div class="spacer2">4.2</div></td><td class="data"><div class="spacer2">3.5</div></td><td class="data"><div class="spacer2">3.4</div></td><td class="data"><div class="spacer2">3.4</div></td><td class="data"><div class="spacer2">3.5</div></td><td class="data"><div class="spacer2">3.7</div></td><td class="data"><div class="spacer2">3.7</div></td><td class="data"><div class="spacer2">4.5</div></td><td class="data"><div class="spacer2">4.7</div></td><td class="data"><div class="spacer2">4.2</div></td><td class="data"><div class="spacer2">4.5</div></td><td class="data"><div class="spacer2">3.8</div></td><td class="data"><div class="spacer2">3.6</div></td></tr><tr class="rowdata level-2 "><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY.CV','S','Series','Survey coverage for poverty headcount ratio (at $3.00 a day, 2021 PPP)','21','66226')" >Survey coverage for poverty headcount ratio (at $3.00 a day, 2021 PPP)</td><td class="data"><div class="spacer2">84.1</div></td><td class="data"><div class="spacer2">89.6</div></td><td class="data"><div class="spacer2">93.4</div></td><td class="data"><div class="spacer2">95.1</div></td><td class="data"><div class="spacer2">95.1</div></td><td class="data"><div class="spacer2">94.1</div></td><td class="data"><div class="spacer2">93.8</div></td><td class="data"><div class="spacer2">88.2</div></td><td class="data"><div class="spacer2">90.7</div></td><td class="data"><div class="spacer2">90.7</div></td><td class="data"><div class="spacer2">90.8</div></td><td class="data"><div class="spacer2">91.4</div></td><td class="data"><div class="spacer2">86.4</div></td><td class="data"><div class="spacer2">86.6</div></td><td class="data"><div class="spacer2">89.3</div></td><td class="data"><div class="spacer2">89.4</div></td><td class="data"><div class="spacer2">89.5</div></td><td class="data"><div class="spacer2">89.5</div></td></tr><tr class="rowhdr-1"><td  colspan="19"  class="header cell1 metadata" onclick="loadMetaData('MEA','C','Country','Middle East, North Africa, Afghanistan & Pakistan','21','66226')" >Middle East, North Africa, Afghanistan & Pakistan</td></tr><tr class="rowdata level-2 alternate"><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY','S','Series','Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)','21','66226')" >Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)</td><td class="data metadata On" onclick="loadFootNotes('MEA~SI.POV.DDAY~YR1990','21', '')" ><div class="spacer2">34.2</div></td><td class="data metadata On" onclick="loadFootNotes('MEA~SI.POV.DDAY~YR1993','21', '')" ><div class="spacer2">28.3</div></td><td class="data metadata On" onclick="loadFootNotes('MEA~SI.POV.DDAY~YR1996','21', '')" ><div class="spacer2">23.1</div></td><td class="data metadata On" onclick="loadFootNotes('MEA~SI.POV.DDAY~YR1999','21', '')" ><div class="spacer2">23.4</div></td><td class="data metadata On" onclick="loadFootNotes('MEA~SI.POV.DDAY~YR2002','21', '')" ><div class="spacer2">24.2</div></td><td class="data metadata On" onclick="loadFootNotes('MEA~SI.POV.DDAY~YR2005','21', '')" ><div class="spacer2">18.8</div></td><td class="data metadata On" onclick="loadFootNotes('MEA~SI.POV.DDAY~YR2008','21', '')" ><div class="spacer2">14.7</div></td><td class="data metadata On" onclick="loadFootNotes('MEA~SI.POV.DDAY~YR2010','21', '')" ><div class="spacer2">13.4</div></td><td class="data metadata On" onclick="loadFootNotes('MEA~SI.POV.DDAY~YR2011','21', '')" ><div class="spacer2">13.0</div></td><td class="data metadata On" onclick="loadFootNotes('MEA~SI.POV.DDAY~YR2012','21', '')" ><div class="spacer2">12.3</div></td><td class="data metadata On" onclick="loadFootNotes('MEA~SI.POV.DDAY~YR2013','21', '')" ><div class="spacer2">11.6</div></td><td class="data metadata On" onclick="loadFootNotes('MEA~SI.POV.DDAY~YR2015','21', '')" ><div class="spacer2">11.3</div></td><td class="data metadata On" onclick="loadFootNotes('MEA~SI.POV.DDAY~YR2018','21', '')" ><div class="spacer2">11.1</div></td><td class="data metadata On" onclick="loadFootNotes('MEA~SI.POV.DDAY~YR2019','21', '')" ><div class="spacer2">11.6</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data metadata On" onclick="loadFootNotes('MEA~SI.POV.DDAY~YR2022','21', '')" ><div class="spacer2">13.5</div></td><td class="data metadata On" onclick="loadFootNotes('MEA~SI.POV.DDAY~YR2023','21', '')" ><div class="spacer2">13.9</div></td></tr><tr class="rowdata level-2 "><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY.SH','S','Series','Share of total poor population (at $3.00 a day, 2021 PPP)','21','66226')" >Share of total poor population (at $3.00 a day, 2021 PPP)</td><td class="data"><div class="spacer2">5.7</div></td><td class="data"><div class="spacer2">5.0</div></td><td class="data"><div class="spacer2">4.7</div></td><td class="data"><div class="spacer2">5.0</div></td><td class="data"><div class="spacer2">5.9</div></td><td class="data"><div class="spacer2">5.6</div></td><td class="data"><div class="spacer2">5.3</div></td><td class="data"><div class="spacer2">5.7</div></td><td class="data"><div class="spacer2">6.1</div></td><td class="data"><div class="spacer2">6.3</div></td><td class="data"><div class="spacer2">6.9</div></td><td class="data"><div class="spacer2">7.9</div></td><td class="data"><div class="spacer2">9.4</div></td><td class="data"><div class="spacer2">10.3</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">12.1</div></td><td class="data"><div class="spacer2">13.1</div></td></tr><tr class="rowdata level-2 alternate"><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY.CV','S','Series','Survey coverage for poverty headcount ratio (at $3.00 a day, 2021 PPP)','21','66226')" >Survey coverage for poverty headcount ratio (at $3.00 a day, 2021 PPP)</td><td class="data"><div class="spacer2">78.1</div></td><td class="data"><div class="spacer2">77.4</div></td><td class="data"><div class="spacer2">83.7</div></td><td class="data"><div class="spacer2">77.1</div></td><td class="data"><div class="spacer2">60.2</div></td><td class="data"><div class="spacer2">82.1</div></td><td class="data"><div class="spacer2">81.5</div></td><td class="data"><div class="spacer2">78.7</div></td><td class="data"><div class="spacer2">89.1</div></td><td class="data"><div class="spacer2">88.9</div></td><td class="data"><div class="spacer2">85.4</div></td><td class="data"><div class="spacer2">77.7</div></td><td class="data"><div class="spacer2">62.6</div></td><td class="data"><div class="spacer2">61.0</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">69.7</div></td><td class="data"><div class="spacer2">69.5</div></td></tr><tr class="rowhdr-1"><td  colspan="19"  class="header cell1 metadata" onclick="loadMetaData('SAS','C','Country','South Asia','21','66226')" >South Asia</td></tr><tr class="rowdata level-2 "><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY','S','Series','Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)','21','66226')" >Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)</td><td class="data metadata On" onclick="loadFootNotes('SAS~SI.POV.DDAY~YR1990','21', '')" ><div class="spacer2">49.7</div></td><td class="data metadata On" onclick="loadFootNotes('SAS~SI.POV.DDAY~YR1993','21', '')" ><div class="spacer2">48.1</div></td><td class="data metadata On" onclick="loadFootNotes('SAS~SI.POV.DDAY~YR1996','21', '')" ><div class="spacer2">46.8</div></td><td class="data"><div class="spacer2">..</div></td><td class="data metadata On" onclick="loadFootNotes('SAS~SI.POV.DDAY~YR2002','21', '')" ><div class="spacer2">46.0</div></td><td class="data metadata On" onclick="loadFootNotes('SAS~SI.POV.DDAY~YR2005','21', '')" ><div class="spacer2">43.3</div></td><td class="data metadata On" onclick="loadFootNotes('SAS~SI.POV.DDAY~YR2008','21', '')" ><div class="spacer2">36.8</div></td><td class="data metadata On" onclick="loadFootNotes('SAS~SI.POV.DDAY~YR2010','21', '')" ><div class="spacer2">30.4</div></td><td class="data metadata On" onclick="loadFootNotes('SAS~SI.POV.DDAY~YR2011','21', '')" ><div class="spacer2">27.6</div></td><td class="data metadata On" onclick="loadFootNotes('SAS~SI.POV.DDAY~YR2012','21', '')" ><div class="spacer2">25.2</div></td><td class="data metadata On" onclick="loadFootNotes('SAS~SI.POV.DDAY~YR2013','21', '')" ><div class="spacer2">22.8</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data metadata On" onclick="loadFootNotes('SAS~SI.POV.DDAY~YR2020','21', '')" ><div class="spacer2">9.4</div></td><td class="data metadata On" onclick="loadFootNotes('SAS~SI.POV.DDAY~YR2021','21', '')" ><div class="spacer2">7.9</div></td><td class="data metadata On" onclick="loadFootNotes('SAS~SI.POV.DDAY~YR2022','21', '')" ><div class="spacer2">6.1</div></td><td class="data metadata On" onclick="loadFootNotes('SAS~SI.POV.DDAY~YR2023','21', '')" ><div class="spacer2">4.1</div></td></tr><tr class="rowdata level-2 alternate"><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY.SH','S','Series','Share of total poor population (at $3.00 a day, 2021 PPP)','21','66226')" >Share of total poor population (at $3.00 a day, 2021 PPP)</td><td class="data"><div class="spacer2">21.9</div></td><td class="data"><div class="spacer2">22.2</div></td><td class="data"><div class="spacer2">24.2</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">27.6</div></td><td class="data"><div class="spacer2">31.3</div></td><td class="data"><div class="spacer2">31.4</div></td><td class="data"><div class="spacer2">29.9</div></td><td class="data"><div class="spacer2">29.8</div></td><td class="data"><div class="spacer2">29.3</div></td><td class="data"><div class="spacer2">30.4</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">17.0</div></td><td class="data"><div class="spacer2">14.4</div></td><td class="data"><div class="spacer2">11.6</div></td><td class="data"><div class="spacer2">8.0</div></td></tr><tr class="rowdata level-2 "><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY.CV','S','Series','Survey coverage for poverty headcount ratio (at $3.00 a day, 2021 PPP)','21','66226')" >Survey coverage for poverty headcount ratio (at $3.00 a day, 2021 PPP)</td><td class="data"><div class="spacer2">98.0</div></td><td class="data"><div class="spacer2">99.9</div></td><td class="data"><div class="spacer2">99.9</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">100.0</div></td><td class="data"><div class="spacer2">100.0</div></td><td class="data"><div class="spacer2">100.0</div></td><td class="data"><div class="spacer2">100.0</div></td><td class="data"><div class="spacer2">100.0</div></td><td class="data"><div class="spacer2">100.0</div></td><td class="data"><div class="spacer2">100.0</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">98.6</div></td><td class="data"><div class="spacer2">98.6</div></td><td class="data"><div class="spacer2">98.7</div></td><td class="data"><div class="spacer2">98.6</div></td></tr><tr class="rowhdr-1"><td  colspan="19"  class="header cell1 metadata" onclick="loadMetaData('SSF','C','Country','Sub-Saharan Africa','21','66226')" >Sub-Saharan Africa</td></tr><tr class="rowdata level-2 alternate"><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY','S','Series','Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)','21','66226')" >Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)</td><td class="data metadata On" onclick="loadFootNotes('SSF~SI.POV.DDAY~YR1990','21', '')" ><div class="spacer2">61.5</div></td><td class="data metadata On" onclick="loadFootNotes('SSF~SI.POV.DDAY~YR1993','21', '')" ><div class="spacer2">64.5</div></td><td class="data metadata On" onclick="loadFootNotes('SSF~SI.POV.DDAY~YR1996','21', '')" ><div class="spacer2">63.9</div></td><td class="data metadata On" onclick="loadFootNotes('SSF~SI.POV.DDAY~YR1999','21', '')" ><div class="spacer2">63.1</div></td><td class="data metadata On" onclick="loadFootNotes('SSF~SI.POV.DDAY~YR2002','21', '')" ><div class="spacer2">60.8</div></td><td class="data metadata On" onclick="loadFootNotes('SSF~SI.POV.DDAY~YR2005','21', '')" ><div class="spacer2">55.4</div></td><td class="data metadata On" onclick="loadFootNotes('SSF~SI.POV.DDAY~YR2008','21', '')" ><div class="spacer2">51.9</div></td><td class="data metadata On" onclick="loadFootNotes('SSF~SI.POV.DDAY~YR2010','21', '')" ><div class="spacer2">49.4</div></td><td class="data metadata On" onclick="loadFootNotes('SSF~SI.POV.DDAY~YR2011','21', '')" ><div class="spacer2">48.4</div></td><td class="data metadata On" onclick="loadFootNotes('SSF~SI.POV.DDAY~YR2012','21', '')" ><div class="spacer2">47.2</div></td><td class="data metadata On" onclick="loadFootNotes('SSF~SI.POV.DDAY~YR2013','21', '')" ><div class="spacer2">46.1</div></td><td class="data metadata On" onclick="loadFootNotes('SSF~SI.POV.DDAY~YR2015','21', '')" ><div class="spacer2">45.4</div></td><td class="data metadata On" onclick="loadFootNotes('SSF~SI.POV.DDAY~YR2018','21', '')" ><div class="spacer2">44.1</div></td><td class="data metadata On" onclick="loadFootNotes('SSF~SI.POV.DDAY~YR2019','21', '')" ><div class="spacer2">43.9</div></td><td class="data metadata On" onclick="loadFootNotes('SSF~SI.POV.DDAY~YR2020','21', '')" ><div class="spacer2">46.0</div></td><td class="data metadata On" onclick="loadFootNotes('SSF~SI.POV.DDAY~YR2021','21', '')" ><div class="spacer2">46.2</div></td><td class="data metadata On" onclick="loadFootNotes('SSF~SI.POV.DDAY~YR2022','21', '')" ><div class="spacer2">45.6</div></td><td class="data metadata On" onclick="loadFootNotes('SSF~SI.POV.DDAY~YR2023','21', '')" ><div class="spacer2">45.5</div></td></tr><tr class="rowdata level-2 "><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY.SH','S','Series','Share of total poor population (at $3.00 a day, 2021 PPP)','21','66226')" >Share of total poor population (at $3.00 a day, 2021 PPP)</td><td class="data"><div class="spacer2">13.9</div></td><td class="data"><div class="spacer2">15.6</div></td><td class="data"><div class="spacer2">17.6</div></td><td class="data"><div class="spacer2">18.5</div></td><td class="data"><div class="spacer2">20.5</div></td><td class="data"><div class="spacer2">23.2</div></td><td class="data"><div class="spacer2">26.6</div></td><td class="data"><div class="spacer2">30.1</div></td><td class="data"><div class="spacer2">32.9</div></td><td class="data"><div class="spacer2">34.8</div></td><td class="data"><div class="spacer2">39.8</div></td><td class="data"><div class="spacer2">46.6</div></td><td class="data"><div class="spacer2">57.2</div></td><td class="data"><div class="spacer2">59.7</div></td><td class="data"><div class="spacer2">60.0</div></td><td class="data"><div class="spacer2">61.7</div></td><td class="data"><div class="spacer2">64.5</div></td><td class="data"><div class="spacer2">67.9</div></td></tr><tr class="rowdata level-2 alternate"><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY.CV','S','Series','Survey coverage for poverty headcount ratio (at $3.00 a day, 2021 PPP)','21','66226')" >Survey coverage for poverty headcount ratio (at $3.00 a day, 2021 PPP)</td><td class="data"><div class="spacer2">52.5</div></td><td class="data"><div class="spacer2">71.0</div></td><td class="data"><div class="spacer2">70.0</div></td><td class="data"><div class="spacer2">74.8</div></td><td class="data"><div class="spacer2">81.3</div></td><td class="data"><div class="spacer2">89.0</div></td><td class="data"><div class="spacer2">89.2</div></td><td class="data"><div class="spacer2">92.0</div></td><td class="data"><div class="spacer2">93.1</div></td><td class="data"><div class="spacer2">90.0</div></td><td class="data"><div class="spacer2">91.6</div></td><td class="data"><div class="spacer2">89.7</div></td><td class="data"><div class="spacer2">71.0</div></td><td class="data"><div class="spacer2">54.0</div></td><td class="data"><div class="spacer2">74.6</div></td><td class="data"><div class="spacer2">75.7</div></td><td class="data"><div class="spacer2">75.7</div></td><td class="data"><div class="spacer2">75.3</div></td></tr><tr class="rowhdr-1"><td  colspan="19"  class="header cell1 metadata" onclick="loadMetaData('WLD','C','Country','World','21','66226')" >World</td></tr><tr class="rowdata level-2 "><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY','S','Series','Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)','21','66226')" >Poverty headcount ratio at $3.00 a day (2021 PPP) (% of population)</td><td class="data metadata On" onclick="loadFootNotes('WLD~SI.POV.DDAY~YR1990','21', '')" ><div class="spacer2">43.4</div></td><td class="data metadata On" onclick="loadFootNotes('WLD~SI.POV.DDAY~YR1993','21', '')" ><div class="spacer2">42.1</div></td><td class="data metadata On" onclick="loadFootNotes('WLD~SI.POV.DDAY~YR1996','21', '')" ><div class="spacer2">38.1</div></td><td class="data metadata On" onclick="loadFootNotes('WLD~SI.POV.DDAY~YR1999','21', '')" ><div class="spacer2">37.3</div></td><td class="data metadata On" onclick="loadFootNotes('WLD~SI.POV.DDAY~YR2002','21', '')" ><div class="spacer2">33.7</div></td><td class="data metadata On" onclick="loadFootNotes('WLD~SI.POV.DDAY~YR2005','21', '')" ><div class="spacer2">28.3</div></td><td class="data metadata On" onclick="loadFootNotes('WLD~SI.POV.DDAY~YR2008','21', '')" ><div class="spacer2">24.1</div></td><td class="data metadata On" onclick="loadFootNotes('WLD~SI.POV.DDAY~YR2010','21', '')" ><div class="spacer2">21.0</div></td><td class="data metadata On" onclick="loadFootNotes('WLD~SI.POV.DDAY~YR2011','21', '')" ><div class="spacer2">19.1</div></td><td class="data metadata On" onclick="loadFootNotes('WLD~SI.POV.DDAY~YR2012','21', '')" ><div class="spacer2">17.8</div></td><td class="data metadata On" onclick="loadFootNotes('WLD~SI.POV.DDAY~YR2013','21', '')" ><div class="spacer2">15.5</div></td><td class="data metadata On" onclick="loadFootNotes('WLD~SI.POV.DDAY~YR2015','21', '')" ><div class="spacer2">13.4</div></td><td class="data metadata On" onclick="loadFootNotes('WLD~SI.POV.DDAY~YR2018','21', '')" ><div class="spacer2">11.1</div></td><td class="data"><div class="spacer2">..</div></td><td class="data metadata On" onclick="loadFootNotes('WLD~SI.POV.DDAY~YR2020','21', '')" ><div class="spacer2">11.4</div></td><td class="data metadata On" onclick="loadFootNotes('WLD~SI.POV.DDAY~YR2021','21', '')" ><div class="spacer2">11.3</div></td><td class="data metadata On" onclick="loadFootNotes('WLD~SI.POV.DDAY~YR2022','21', '')" ><div class="spacer2">10.9</div></td><td class="data metadata On" onclick="loadFootNotes('WLD~SI.POV.DDAY~YR2023','21', '')" ><div class="spacer2">10.5</div></td></tr><tr class="rowdata level-2 alternate"><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY.SH','S','Series','Share of total poor population (at $3.00 a day, 2021 PPP)','21','66226')" >Share of total poor population (at $3.00 a day, 2021 PPP)</td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">..</div></td></tr><tr class="rowdata level-2 "><td class="header cell1 metadata" onclick="loadMetaData('SI.POV.DDAY.CV','S','Series','Survey coverage for poverty headcount ratio (at $3.00 a day, 2021 PPP)','21','66226')" >Survey coverage for poverty headcount ratio (at $3.00 a day, 2021 PPP)</td><td class="data"><div class="spacer2">85.3</div></td><td class="data"><div class="spacer2">88.5</div></td><td class="data"><div class="spacer2">89.9</div></td><td class="data"><div class="spacer2">69.6</div></td><td class="data"><div class="spacer2">89.7</div></td><td class="data"><div class="spacer2">94.7</div></td><td class="data"><div class="spacer2">94.5</div></td><td class="data"><div class="spacer2">91.4</div></td><td class="data"><div class="spacer2">93.9</div></td><td class="data"><div class="spacer2">95.2</div></td><td class="data"><div class="spacer2">94.8</div></td><td class="data"><div class="spacer2">57.1</div></td><td class="data"><div class="spacer2">50.4</div></td><td class="data"><div class="spacer2">..</div></td><td class="data"><div class="spacer2">79.0</div></td><td class="data"><div class="spacer2">79.5</div></td><td class="data"><div class="spacer2">83.8</div></td><td class="data"><div class="spacer2">84.1</div></td></tr></table></div></div></div>
+
+        <footer class="footer">
+            <div class=" g02v1-footer brd-t-1">
+            <div class="">
+                <div class="">
+                <ul class="list-inline">
+                    <li><a href="http://www.worldbank.org/" class="sprite wbg-logo-footer-en"></a> </li>
+                    <li> 
+                    <a title="International Bank for Reconstruction and Development" href="http://www.worldbank.org/en/about/what-we-do/brief/ibrd">IBRD</a> &nbsp;&nbsp; 
+                    <a title="International Development Association" href="http://www.worldbank.org/ida">IDA</a> &nbsp;&nbsp; 
+                    <a title="International Finance Corporation" href="http://www.ifc.org/">IFC</a> &nbsp;&nbsp; 
+                    <a title="Multilateral Investment Guarantee Agency" href="http://www.miga.org/">MIGA</a> &nbsp;&nbsp; 
+                    <a title="International Centre for Settlement of Investment Disputes" href="http://icsid.worldbank.org/">ICSID</a> 
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="">
+                <div class="">
+                <div class="g02v1-copyright col-md-6 col-sm-6">
+                    <div class="g02v1-footer-copyright"> 
+                        <a href="http://www.worldbank.org/legalinfo">Legal</a> | 
+                        <a href="http://www.worldbank.org/wbaccess">Access to Information</a> | 
+                        <a href="http://www.worldbank.org/jobs">Jobs</a> | 
+                        <a href="http://www.worldbank.org/sitemap">Site Map</a> | 
+                        <a href="http://www.worldbank.org/contacts">Contact</a>
+                    </div>
+                    <div class="g02v1-footer-copyright">&copy; 
+                    <script language="JavaScript">
+                                        <!-- Begin
+            var time = new Date();
+            var year = time.getYear();
+            if (year < 2000)
+                year = year + 1900;
+            document.write(year);// End -->
+                    </script> 
+                    The World Bank Group, All Rights Reserved.</div>
+                </div>
+                <div class="g02v1-copyright col-sm-6 col-md-6">
+                    <div class=" g02v1-footer-fraud"> <a href="http://web.worldbank.org/WBSITE/EXTERNAL/EXTABOUTUS/ORGANIZATION/ORGUNITS/EXTDOII/0,,contentMDK:20659616~menuPK:1702202~pagePK:64168445~piPK:64168309~theSitePK:588921,00.html">REPORT FRAUD OR CORRUPTION</a> </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+<div class="loadingAnimation" id="report-loading" style="display: none">  
+    <div id="overlay-bg">
+        <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+        </div>
+    </div>
+</div>
+
+<div id="divMetaData"></div>
+<div id="divMetaData-FT"></div>
+<div id="divReportInfo"></div>
+<div id="divShareURL" style="display: none;">Share URL not available this time. Please try after Save.</div>
+<div id="divExportExcel" style="display: none;"></div>
+<iframe id="dl-iframe-ddpreport" style="display: none;"></iframe>
+<input name="REPORT_PREVIEW$hdnRowColInfo" type="hidden" id="hdnRowColInfo" />
+<input name="REPORT_PREVIEW$hdnLsqrNote" type="hidden" id="hdnLsqrNote" value="Growth rate calculated for less than the full period." />
+<input type="hidden" name="REPORT_PREVIEW$hdnSectionNumber" id="hdnSectionNumber" value="1.2.2" />
+<input type="hidden" name="REPORT_PREVIEW$hdnSectionImage" id="hdnSectionImage" />
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('REPORT_PREVIEW$ScriptManager1', 'form1', [], [], [], 90, '');
+//]]>
+</script>
+
+
+<script type="text/javascript">
+    var gbl_common_Help = '/AjaxServices/AjaxServiceTemplate.asmx/LoadHelpDetails';
+    var gbl_ajax_path = '/AjaxServices/AjaxServiceTemplate.asmx';
+    var gbl_query_params = 'tableNo=1.2.2';
+    var gbl_common_filehandlerinfo = '/AjaxDownload/FileInfoHandler.ashx?';
+    var gbl_common_filehandlerdown = '/AjaxDownload/FileDownloadHandler.ashx?';
+</script>
+<script src="/views/scripts/template/ddpreport.js" type="text/javascript"></script>
+<script src="/views/scripts/template/ddpwdireport.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var spacerimage = '../../views/images/spacer.gif';
+    var spacerimage = '';
+    
+    $(document).ready(function () {
+        $('#table-ddpreport-data tr.rowdata td.header.metadata').append('<span class="metadataicon"></span>');
+        $('#table-ddpreport-header tr.hdrrow-1 td.metadata div').append('<span class="metadataicon"></span>');
+        $('#table-ddpreport-header tr.hdrrow-2 td.metadata div').append('<span class="metadataicon"></span>');
+        $('#table-ddpreport-header tr.hdrrow-3 td.metadata div').append('<span class="metadataicon"></span>');
+        $('#table-ddpreport-header tr.hdrrow-4 td.metadata div').append('<span class="metadataicon"></span>');
+        $('#table-ddpreport-data tr.rowhdr-1 td.metadata').append('<span class="metadataicon"></span>');
+        $('#table-ddpreport-data tr.rowhdr-2 td.metadata').append('<span class="metadataicon"></span>');
+        $('#table-ddpreport-data tr.rowhdr-3 td.metadata').append('<span class="metadataicon"></span>');
+
+        var tableHeaderHeight = $('#vertical-scroll-head').height();
+        $('#vertical-scroll').css({ 'padding-top': tableHeaderHeight });
+
+        $(window).scroll(function () {
+            if ($(window).scrollLeft() <= ($('#container-data').width() - $(window).width())) {
+                $('footer').css({
+                    'left': $(window).scrollLeft()
+                });
+            }
+            else {
+                $(window).scrollLeft(($('#container-data').width() - $(window).width()));
+            }
+        });
+    });
+</script>
+
+                </div>    
+            </div>
+    
+            <div id="file-loading-widget-preview" class="loading">
+                <img src="/images/ajax-loader.gif" width="32" height="32"  alt="" /><br /><strong>Loading...</strong>
+            </div>
+
+            <iframe id='dl-iframe-widget-preview' style='display:none;'></iframe>
+            <iframe id='dl-iframe-widget-preview-omni' style='display:none;'></iframe>
+        </div>
+
+        <input name="hdnReportID" type="hidden" id="hdnReportID" value="66226" />
+        <input name="hdnReportType" type="hidden" id="hdnReportType" value="TABLE" />
+        <input name="hdnLanguage" type="hidden" id="hdnLanguage" value="en" />
+        <input id="hdnPublishedReport" type="hidden" value="y" />
+        
+        <input type="hidden" name="hdnCubeDisplayName" id="hdnCubeDisplayName" value="WDI Central" />
+        <input type="hidden" name="hdnIsWidget" id="hdnIsWidget" />
+        <input type="hidden" name="hdnReportDisplayName" id="hdnReportDisplayName" value="Poverty rates at international poverty lines Part 2" />
+        <input type="hidden" name="hdnSectionNumber" id="hdnSectionNumber" value="1.2.2" />
+        <input type="hidden" name="hdnSectionImage" id="hdnSectionImage" value="globalLinks" />
+        <input name="hdnDatabaseDisplayName" type="hidden" id="hdnDatabaseDisplayName" value="WDI Central" />
+        <input name="hdnCubeId" type="hidden" id="hdnCubeId" value="21" />
+        <input name="hdnDownload" type="hidden" id="hdnDownload" value="Download" />
+        <input name="hdnCancel" type="hidden" id="hdnCancel" value="Cancel" />
+        <input name="hdnLoading" type="hidden" id="hdnLoading" value="Loading..." />
+        <input name="hdnTableNo" type="hidden" id="hdnTableNo" value="1.2.2" />
+    </form>
+
+
+     <div style="display: none">
+        <form id="dl-metadata-form" action="">
+        <input id="meta-down-radio" type="radio" name="meta-down-radio" value="meta-all"
+            checked="checked" />
+        </form>
+    </div>
+
+
+    <script type="text/JavaScript">
+        var sTitle = document.title;
+        while (sTitle.indexOf(",") > -1) {
+            sTitle = sTitle.replace(",", "");
+        }
+        var reportDetailsonLoad = { "report": { "tableNo": "", "tableName": "" } };
+        getReportSectionandHeading(reportDetailsonLoad);
+        var siteSection = "WDI:Tables:" + reportDetailsonLoad.report.tableName + "(" + reportDetailsonLoad.report.tableNo + ")";
+        wbgData.page.sectionInfo.siteSection = siteSection;
+        wbgData.page.sectionInfo.subsectionP2 = sTitle;
+
+        _satellite.pageBottom();
+
+        function AnalyticsControlClick(clickdetails, params) {
+            wbgData.page.sectionInfo.siteSection = '' + clickdetails;
+            wbgData.page.sectionInfo.subsectionP2 = params;
+
+            _satellite.track("dynamicdata");
+        }
+    </script>
+
+</body>
+</html>

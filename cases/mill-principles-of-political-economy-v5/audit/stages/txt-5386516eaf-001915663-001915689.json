@@ -1,0 +1,95 @@
+{
+  "id": "txt-5386516eaf-001915663-001915689",
+  "assess": {
+    "id": "txt-5386516eaf-001915663-001915689",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "穷人不会再长久接受别人规定给他们的道德和宗教。范围是英国城镇、苏格兰和英格兰北部。",
+    "reason": "北方工业镇定期礼拜不再是多数人的活动，只是出席人数。它不是穷人是否还接受别人规定的道德和宗教。",
+    "limitation": "旧的部分符合已撤回。对象不一致时不保留分数。",
+    "evidence_ids": [
+      "ev-churchgoing-1950s"
+    ],
+    "method": "复核后撤回计分。原支持与反证仍留在修订轨迹，不当作同对象分数。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "not much longer",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-churchgoing-1950s",
+        "quote": "Regular churchgoing had long ceased to be a majority activity,",
+        "relation": "boundary",
+        "limitation": "定期礼拜不再是多数。",
+        "observation_end": "1966-12-31",
+        "publication_date": "2024-07-11",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺英国城镇、苏格兰或英格兰北部的穷人是否不再接受别人规定的道德与宗教的同对象证据。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001915663-001915689",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "revision_trail": {
+    "withdrawn_verdict": "部分符合",
+    "withdrawn_reason": "1950年代英格兰北方工业镇的定期礼拜已经不再是多数人的活动。这符合不再普遍接受教会规定的宗教，但只是礼拜出席，不是全部道德权威。",
+    "failed_review": {
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "礼拜出席换成了接受别人规定的道德和宗教。",
+          "source_quote": "and the poor will not much",
+          "evidence_id": null
+        }
+      ],
+      "remaining_gap": "缺英国城镇、苏格兰或英格兰北部的穷人是否不再接受别人规定的道德与宗教的同对象证据。"
+    },
+    "why": "礼拜出席换成了接受别人规定的道德和宗教。"
+  },
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "regular churchgoing ceased to be a majority in northern industrial towns"
+      },
+      {
+        "role": "counter",
+        "query": "Welsh revival membership returned to the old level by 1909"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://academic.oup.com/histres/article/97/278/550/7712149"
+    ],
+    "reason": "北方城镇礼拜不再是多数。"
+  }
+}

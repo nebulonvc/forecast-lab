@@ -1,0 +1,59 @@
+{
+  "claim_id": "txt-4934182645-000772909-000773039",
+  "plan": {
+    "object": "作者自己时代的意大利军队",
+    "conditions": [
+      "既没有天生的勇气，也没有训练出来的勇武"
+    ],
+    "quantifier": "never，除非碰巧敌人逃跑",
+    "result": "完全没有价值，除了敌人逃跑之外得不到胜利",
+    "time_window": "1531年之后、仍属于这句话所说的当时意大利军队",
+    "counterevidence_needed": "这种意大利军队在敌人没有逃跑的情况下打赢一场战斗"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "purpose": "首轮一正一反",
+        "support_query": "sixteenth century Italian army won a battle only because the enemy fled",
+        "counter_query": "Italian army won a pitched battle in which the enemy stood and fought after 1531",
+        "support_result": "1554年马尔恰诺写的是骑兵先逃。获胜一方是帝国与佛罗伦萨的混合军队，不是这句话里的意大利军队本身。",
+        "counter_result": "1537年8月2日蒙特穆尔洛页面已下载。佛罗伦萨部队在路上会合了西班牙步兵。页面没有写敌人是站住打还是逃跑。",
+        "adopted": false
+      }
+    ],
+    "adaptive_rounds": 0,
+    "stop_reason": "已下载的蒙特穆尔洛页把西班牙步兵算进了队伍，而且没有写敌人是否逃跑。",
+    "sources": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Battle_of_Montemurlo",
+        "fetched": true,
+        "note": "正文已读。西班牙步兵加入，敌人是否逃跑未写。不把检索摘要当摘录。"
+      }
+    ]
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "insufficient_evidence",
+    "trend_aligned": null,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [],
+    "scope": "never 只针对作者自己时代、缺乏勇气和训练的意大利军队。后来由西班牙或帝国部队打赢的仗不是这个对象。",
+    "reason": "连续原文把第三类军队定为既没有天生勇气、也没有训练勇武，并说作者自己时代的意大利军队属于这一类：完全没有价值，除了碰巧遇到敌人逃跑，从来得不到胜利。1537年8月2日蒙特穆尔洛页写佛罗伦萨公爵的部队打胜，但同一页的引文说队伍在路上会合了西班牙步兵，所以这不是纯粹的当时意大利军队。页面也没有写对方是站住作战还是逃跑。1554年马尔恰诺写骑兵逃跑，而且获胜方是帝国与佛罗伦萨的混合军队，不能用来证明除逃跑外必无胜利，也不能用来否定它。诺瓦拉是1513年。没有可引用的对应战斗，所以不判。",
+    "limitation": "蒙特穆尔洛页没有单独的研究出版日。马尔恰诺页没有存成摘录。",
+    "method": "对象必须是作者自己时代的意大利军队。敌人逃跑才取胜，不能换成任何意大利人参加的胜利。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "fail",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "蒙特穆尔洛有西班牙步兵，并且没有写敌人是否逃跑。"
+  }
+}

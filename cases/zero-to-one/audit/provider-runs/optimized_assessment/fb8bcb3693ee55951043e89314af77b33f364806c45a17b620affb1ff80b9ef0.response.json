@@ -1,0 +1,28 @@
+{
+  "id": "023b3cbd-25d5-4828-b546-32f43779ded8",
+  "object": "chat.completion",
+  "created": 1794201586,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000046185-000046207\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"evidence\",\"scope\":\"判断对象为“大多数初创企业失败、投资损失”的总体比例；观察窗口为2014年前后至cutoff，但无同口径全行业失败率数据。\",\"reason\":\"原文是对初创企业总体失败率的概括判断，属可检验预测。现有证据仅显示VC回报高度集中、少数成功投资平衡多数负回报，未提供“大多数初创企业失败”的总体分母，故无法判定。\",\"limitation\":\"a16z样本为Horsley Bridge匿名汇总，非随机全行业样本；世界银行报告描述基金期限与持有期，不能直接给出初创企业失败率。\",\"evidence_ids\":[\"extra-vc-a16z-2015\",\"extra-vc-worldbank-2014\"],\"method\":\"一般性判断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unconditional\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000046511-000046565\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"conditional\",\"scope\":\"条件为“看重撒大网而非聚焦少数日后价值巨大的公司”，结果为“一开始就错过稀有公司”；需策略对照与可观察的错过证据。\",\"reason\":\"这是条件性判断，但“撒大网”策略是否实际导致错过稀有公司缺乏对照证据。回报集中现象只支持聚焦赢家的合理性，不能证明广泛投资必然错过赢家。\",\"limitation\":\"a16z证据说明回报右偏集中，但未比较不同投资策略的命中率或错失率，无法验证条件结果。\",\"evidence_ids\":[\"extra-vc-a16z-2015\"],\"method\":\"条件性判断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"一开始\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000047415-000047474\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"预测对象为创始人基金关注的大约五到七家未具名企业，判断其“以后都会拥有数十亿美元价值”。\",\"reason\":\"原文未列出这五到七家企业的具体名称，无法逐一识别并核验其是否都达到数十亿美元估值。缺少可操作化的对象定义，不能事后挑选成功公司补齐。\",\"limitation\":\"对象未具名是根本限制；即使能找到创始人基金部分投资组合，也无法确认是否就是原文所指的五到七家。\",\"evidence_ids\":[],\"method\":\"基于基本面的判断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"以后\",\"condition_state\":\"unconditional\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000047526-000047553\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"心理态度修辞，无可独立观察的未来事实结果。\",\"reason\":\"该句表达的是认为投资像抽奖时已做好亏损心理准备，属于心理状态描述，不构成可检验的未来预测。\",\"limitation\":\"心理准备难以外部观察和量化，且原文未给出可验证指标。\",\"evidence_ids\":[],\"method\":\"条件性判断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6975,
+    "completion_tokens": 756,
+    "total_tokens": 7731,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 6207
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

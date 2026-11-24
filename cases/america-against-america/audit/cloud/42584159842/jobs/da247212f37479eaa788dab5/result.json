@@ -1,0 +1,558 @@
+{
+  "claim_id": "txt-1c4066fc0c-000074650-000074679",
+  "version": "search-verifier-v1",
+  "input_sha256": "db16d7e4b4cbb4a8827a10ea320653289ce7a65347d008bed9b2a9c037771ee7",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000074650-000074679",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "观察时段为1991年至截止日2026-11-09；操作化口径为美国公共治理/公共卫生领域是否持续将孤独或社会隔离认定为系统性负担并有制度性回应（如卫生总监报告、政策框架、监测数据）。不以独居等同孤独，不验证个人主义等因果机制。",
+    "reason": "自动复核未确认主要判断：建议把中老年人孤独率下降和“孤独流行病被夸大”的评论当作对“孤独已成为政治系统负担并将继续如此”的反证，但这些材料检验的是孤独流行率或趋势，不是美国公共治理/公共卫生系统是否持续把孤独认定为系统性负担。按scope，反证应是官方或主流研究认为孤独并非持续治理负担、负担被夸大或已显著缓解；现有反证未直接针对制度性负担这一指标，属于不同指标的材料被机械冲抵。; 建议以“负担的持续性与普遍性存在实质争议”为由判部分符合，但所列反证只涉及孤独率趋势和流行病叙事，并未指出后果B（美国政治系统持续把孤独当作负担）的哪些具体部分未实现。按scope，2023年卫生总监报告与新闻稿已构成制度性回应，支持B在声明口径内实现；孤独率下降只能作为缓解或限制，不能仅凭它把结论降为部分符合。若认为“持续如此”的时间跨度证据不足，应保留具体未定或说明B的哪一段未实现，而不是用不同指标的反证判部分符合。",
+    "limitation": "支持证据集中于2023年单一官方行动，缺乏1991年以来连续的制度性回应或监测数据；反证显示孤独趋势未必恶化，且官方报告不能直接证明孤独确为政治系统负担的因果判断。关键修订：保留部分符合，因“持续如此”的时间跨度与负担普遍性均未获连续证据，且反证材料虽不直接反驳制度性负担，但限制其持续恶化解读。",
+    "evidence_ids": [
+      "prior-0d49951ce718fab39802",
+      "ev-2c1ae3a121b6a2bc4f4e48d9",
+      "ev-b6592ca036aae6a242d7daf2",
+      "ev-9fa6ec0d6c447bb8bd4dccca",
+      "ev-9b72a73c188ce6f74e22870c"
+    ],
+    "method": "从个人主义、私域保护及社会流动形成的孤独机制推断治理负担持续",
+    "method_basis": "inferred",
+    "observation_end": null,
+    "future_time_text": "还将继续",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-0d49951ce718fab39802",
+        "relation": "support",
+        "quote": "美国卫生总监2023社会连接报告认为孤独与隔离造成公共卫生和社会负担；疫情前已有约一半成年人报告孤独，报告同时区分独居、孤独和社会隔离。",
+        "publication_date": "2023-05-02",
+        "observation_end": "2023-05-02",
+        "limitation": "为已登记摘要，非全文；仅证明官方认定负担，不证明负担持续或因果。"
+      },
+      {
+        "evidence_id": "ev-2c1ae3a121b6a2bc4f4e48d9",
+        "relation": "support",
+        "quote": "Today, United States Surgeon General Dr. Vivek Murthy released a new Surgeon General Advisory calling attention to the public health crisis of loneliness, isolation, and lack of connection in our country.",
+        "publication_date": "2023-05-03",
+        "observation_end": "2023-05-03",
+        "limitation": "官方新闻稿，证明制度性回应与立场，不直接证明孤独实际恶化或政治系统负担的因果。"
+      },
+      {
+        "evidence_id": "ev-b6592ca036aae6a242d7daf2",
+        "relation": "counter",
+        "quote": "Contrary to common perceptions, loneliness has decreased over 20 years of follow-up in middle-aged and older Americans.",
+        "publication_date": "2023-06-04",
+        "observation_end": "2018-12-31",
+        "limitation": "仅覆盖50岁以上中老年人，样本与指标有限，不能代表全美所有人群；但显示孤独趋势未必恶化。"
+      },
+      {
+        "evidence_id": "ev-9fa6ec0d6c447bb8bd4dccca",
+        "relation": "counter",
+        "quote": "But a close look at the data indicates that loneliness may not be any worse now than it has been for much of history.",
+        "publication_date": "2025-01-24",
+        "observation_end": "2025-01-24",
+        "limitation": "评论文章，非系统研究；质疑“孤独流行病”叙事，但未否定孤独作为公共健康议题。"
+      },
+      {
+        "evidence_id": "ev-9b72a73c188ce6f74e22870c",
+        "relation": "counter",
+        "quote": "Despite some claims that Americans are in the midst of a “loneliness epidemic,” older people today may not be any lonelier than their counterparts from previous generations — there just might be more of them, according to a pair of studies published by the American Psychological Association.",
+        "publication_date": "2019-12-10",
+        "observation_end": "2016-12-31",
+        "limitation": "聚焦老年人群，数据截至2016年；说明孤独未必加剧，但不否定其作为治理负担。"
+      }
+    ],
+    "remaining_gap": "需修正反证归类与结论口径：现有反证（中老年人孤独率下降、孤独流行病叙事受质疑）不直接反驳“美国公共治理/公共卫生系统持续把孤独认定为系统性负担”；应将其列为缓解或限制，并说明后果B哪些具体部分未实现，或保留“持续如此”时间跨度的具体未定，而非据此判部分符合。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000074650-000074679",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "观察时段为1991年至截止日2026-11-09；操作化口径为美国公共治理/公共卫生领域是否持续将孤独或社会隔离认定为系统性负担并有制度性回应（如卫生总监报告、政策框架、监测数据）。不以独居等同孤独，不验证个人主义等因果机制。",
+    "reason": "2023年美国卫生总监发布社会连接报告与新闻稿，明确将孤独与隔离称为公共卫生危机并推出国家战略框架，构成制度性回应，符合“孤独成为政治系统负担并持续”的方向。但同期学术研究显示中老年人孤独率在1996—2018年间下降，且主流评论质疑“孤独流行病”被夸大，说明负担的持续性与普遍性存在实质争议，故仅部分符合。",
+    "limitation": "支持证据集中于2023年单一官方行动，缺乏1991年以来连续的制度性回应或监测数据；反证显示孤独趋势未必恶化，且官方报告不能直接证明孤独确为政治系统负担的因果判断。",
+    "evidence_ids": [
+      "prior-0d49951ce718fab39802",
+      "ev-2c1ae3a121b6a2bc4f4e48d9",
+      "ev-b6592ca036aae6a242d7daf2",
+      "ev-9fa6ec0d6c447bb8bd4dccca",
+      "ev-9b72a73c188ce6f74e22870c"
+    ],
+    "method": "从个人主义、私域保护及社会流动形成的孤独机制推断治理负担持续",
+    "method_basis": "inferred",
+    "observation_end": "2025-01-24",
+    "future_time_text": "还将继续",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-0d49951ce718fab39802",
+        "relation": "support",
+        "quote": "美国卫生总监2023社会连接报告认为孤独与隔离造成公共卫生和社会负担；疫情前已有约一半成年人报告孤独，报告同时区分独居、孤独和社会隔离。",
+        "publication_date": "2023-05-02",
+        "observation_end": "2023-05-02",
+        "limitation": "为已登记摘要，非全文；仅证明官方认定负担，不证明负担持续或因果。"
+      },
+      {
+        "evidence_id": "ev-2c1ae3a121b6a2bc4f4e48d9",
+        "relation": "support",
+        "quote": "Today, United States Surgeon General Dr. Vivek Murthy released a new Surgeon General Advisory calling attention to the public health crisis of loneliness, isolation, and lack of connection in our country.",
+        "publication_date": "2023-05-03",
+        "observation_end": "2023-05-03",
+        "limitation": "官方新闻稿，证明制度性回应与立场，不直接证明孤独实际恶化或政治系统负担的因果。"
+      },
+      {
+        "evidence_id": "ev-b6592ca036aae6a242d7daf2",
+        "relation": "counter",
+        "quote": "Contrary to common perceptions, loneliness has decreased over 20 years of follow-up in middle-aged and older Americans.",
+        "publication_date": "2023-06-04",
+        "observation_end": "2018-12-31",
+        "limitation": "仅覆盖50岁以上中老年人，样本与指标有限，不能代表全美所有人群；但显示孤独趋势未必恶化。"
+      },
+      {
+        "evidence_id": "ev-9fa6ec0d6c447bb8bd4dccca",
+        "relation": "counter",
+        "quote": "But a close look at the data indicates that loneliness may not be any worse now than it has been for much of history.",
+        "publication_date": "2025-01-24",
+        "observation_end": "2025-01-24",
+        "limitation": "评论文章，非系统研究；质疑“孤独流行病”叙事，但未否定孤独作为公共健康议题。"
+      },
+      {
+        "evidence_id": "ev-9b72a73c188ce6f74e22870c",
+        "relation": "counter",
+        "quote": "Despite some claims that Americans are in the midst of a “loneliness epidemic,” older people today may not be any lonelier than their counterparts from previous generations — there just might be more of them, according to a pair of studies published by the American Psychological Association.",
+        "publication_date": "2019-12-10",
+        "observation_end": "2016-12-31",
+        "limitation": "聚焦老年人群，数据截至2016年；说明孤独未必加剧，但不否定其作为治理负担。"
+      }
+    ],
+    "remaining_gap": "缺乏1991年至2023年间连续的制度性回应或监测数据，无法确认“持续如此”的完整时间跨度；官方报告与学术趋势研究口径不同（公共卫生认定 vs 孤独率变化），需并列保留。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-0d49951ce718fab39802",
+      "url": "https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf",
+      "title": "ev-loneliness",
+      "published_date": "2023-05-02",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-loneliness",
+      "archive_sha256": "b48a67eaa668c2ef42375f78381f1ecbbdbab424077064b2af07fad66a38f2d6",
+      "archive_path": "data/sources/web-loneliness.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-2c1ae3a121b6a2bc4f4e48d9",
+      "url": "https://www.hhs.gov/about/news/2023/05/03/new-surgeon-general-advisory-raises-alarm-about-devastating-impact-epidemic-loneliness-isolation-united-states.html",
+      "resolved_url": "https://www.hhs.gov/about/news/2023/05/03/new-surgeon-general-advisory-raises-alarm-about-devastating-impact-epidemic-loneliness-isolation-united-states.html",
+      "title": "New Surgeon General Advisory Raises Alarm about the Devastating Impact of the Epidemic of Loneliness and Isolation in the United States",
+      "published_date": "2023-05-03",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:02.394599+00:00",
+      "archive_sha256": "5ea96ed291dce0db0da7097083d2f6caebb0601fb792505a4e9cb1c6281e3134",
+      "archive_path": "jobs/da247212f37479eaa788dab5/5ea96ed291dce0db0da7097083d2f6caebb0601fb792505a4e9cb1c6281e3134.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-b6592ca036aae6a242d7daf2",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10292834/",
+      "resolved_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10292834/",
+      "title": "Have Middle-Aged and Older Americans Become Lonelier? 20-Year Trends From the Health and Retirement Study",
+      "published_date": "2023-06-04",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:02.394766+00:00",
+      "archive_sha256": "8dbd9503f8b452fdb11ee285407b09e77cc1b612221a1b58f10fc80aca2f7130",
+      "archive_path": "jobs/da247212f37479eaa788dab5/8dbd9503f8b452fdb11ee285407b09e77cc1b612221a1b58f10fc80aca2f7130.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-9fa6ec0d6c447bb8bd4dccca",
+      "url": "https://www.theatlantic.com/family/archive/2025/01/loneliness-epidemic-myth/681429/",
+      "resolved_url": "https://www.theatlantic.com/family/archive/2025/01/loneliness-epidemic-myth/681429/",
+      "title": "The Myth of a Loneliness Epidemic - The Atlantic",
+      "published_date": "2025-01-24",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:02.394915+00:00",
+      "archive_sha256": "ed0417744a880e8b5d90f22bedfb5e9e9473d50e05f81417ef0dda51b268e2b8",
+      "archive_path": "jobs/da247212f37479eaa788dab5/ed0417744a880e8b5d90f22bedfb5e9e9473d50e05f81417ef0dda51b268e2b8.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-9b72a73c188ce6f74e22870c",
+      "url": "https://www.apa.org/news/press/releases/2019/12/loneliness-aging-population",
+      "resolved_url": "https://www.apa.org/news/press/releases/2019/12/loneliness-aging-population",
+      "title": "Loneliness may be due to increasing aging population",
+      "published_date": "2019-12-10",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T08:12:11.349931+00:00",
+      "archive_sha256": "0a9a9cf892857998526316b070fee1a07c79ef5ec7cb0f22a88611d70b51a880",
+      "archive_path": "jobs/da247212f37479eaa788dab5/0a9a9cf892857998526316b070fee1a07c79ef5ec7cb0f22a88611d70b51a880.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "US Surgeon General advisory loneliness social isolation public health burden 2023 site:hhs.gov",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "loneliness not a public health crisis United States critique evidence decline",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "site:hhs.gov Surgeon General advisory loneliness social isolation public health burden 2023 framework national strategy",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "loneliness epidemic myth empirical trends United States Health and Retirement Study loneliness decreased older adults",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "需修正反证归类与结论口径：现有反证（中老年人孤独率下降、孤独流行病叙事受质疑）不直接反驳“美国公共治理/公共卫生系统持续把孤独认定为系统性负担”；应将其列为缓解或限制，并说明后果B哪些具体部分未实现，或保留“持续如此”时间跨度的具体未定，而非据此判部分符合。",
+  "source_statuses": [
+    {
+      "url": "https://www.hhs.gov/about/news/2023/05/03/new-surgeon-general-advisory-raises-alarm-about-devastating-impact-epidemic-loneliness-isolation-united-states.html",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10292834/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.theatlantic.com/family/archive/2025/01/loneliness-epidemic-myth/681429/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.apa.org/news/press/releases/2019/12/loneliness-aging-population",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "60899bb760653cf79204c6d2d9ddb5e57bd01fafa202c0b0a3db17533649997c"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "3a7e0f6370610c6b9ac413a13b3565a3",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "2d3a2099afa8b6abc92eaa97e6f5bf00",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "02c190a58ef99426a6f2953c2f7b63a4c26094c07aaf54eb69ac2228cf585b92"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "3caef8d85966d8e47254ce2f9619737a",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "fc452271219c1eb688c968a5e2c56d0d1b881379dae4862747509ea33e22e0b8"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f2c0f11825ba0f2c327e65ca805b2e3f",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f6899fef966a0bdc0c74b0d95412219c",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "d4e2f80232b138d4c9369ba87d442a4fed4448d893ea0579a614b7663e5675be"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "340db35ab3fc47e3e05b4ecf1024c287",
+      "cost_estimate_USD": 0.001,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "b51b45f2c8599845641ba5f9ede8c6170141f19a6b78dde6f646e42645f8dfa0"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "cb53de4c9b86865a253668f915b9b5c032fb2e25f4708af0a42bc1a9e83cc157"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "b821e5dc4a9d98ebb7ee66df91e0bcd962bd317cb04c76ffb9715505b266c71e"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "4f1aa4edbc5f6b6a09e14b1952f1941f7139cf9ad9ea5d53e60d0820ccd72c13"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000074650-000074679",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "fail",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "counterevidence",
+          "reason": "建议把中老年人孤独率下降和“孤独流行病被夸大”的评论当作对“孤独已成为政治系统负担并将继续如此”的直接反证，并据此降为部分符合。但这些材料针对的是孤独流行率是否上升，不是美国公共治理/公共卫生系统是否持续把孤独认定为系统性负担；按scope，它们只能限制“负担普遍性/恶化”的解读，不能直接反驳制度性负担持续这一主要结果。",
+          "source_quote": "Contrary to common perceptions, loneliness has decreased over 20 years of follow-up in middle-aged and older Americans.",
+          "evidence_id": "ev-b6592ca036aae6a242d7daf2",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议一方面承认2023年卫生总监报告和国家战略框架构成制度性回应、符合“负担并持续”的方向，另一方面仅凭孤独率趋势争议就判“部分符合”。但“部分符合”要求指出后果B哪些具体部分实现、哪些未实现；这里B（政治系统负担持续）在声明口径内已有官方认定与制度回应，趋势争议属于对负担程度/普遍性的限制，不足以把主要结果降为部分符合。应改为符合，并在limitation中保留趋势争议与时间跨度缺口。",
+          "source_quote": "2023年美国卫生总监发布社会连接报告与新闻稿，明确将孤独与隔离称为公共卫生危机并推出国家战略框架，构成制度性回应，符合“孤独成为政治系统负担并持续”的方向。但同期学术研究显示中老年人孤独率在1996—2018年间下降，且主流评论质疑“孤独流行病”被夸大，说明负担的持续性与普遍性存在实质争议，故仅部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需将结论改为“符合”：以2023年卫生总监报告及国家战略框架作为声明口径内B已实现的直接证据；把中老年人孤独率下降和“流行病被夸大”评论降为对负担普遍性/恶化程度的限制，而非部分未实现的反证。同时保留1991—2023年连续制度性回应与监测数据不足的limitation。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000074650-000074679",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "fail",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "counterevidence",
+          "reason": "建议把中老年人孤独率下降和“孤独流行病被夸大”的评论当作对“孤独已成为政治系统负担并将继续如此”的反证，但这些材料检验的是孤独流行率或趋势，不是美国公共治理/公共卫生系统是否持续把孤独认定为系统性负担。按scope，反证应是官方或主流研究认为孤独并非持续治理负担、负担被夸大或已显著缓解；现有反证未直接针对制度性负担这一指标，属于不同指标的材料被机械冲抵。",
+          "source_quote": "Contrary to common perceptions, loneliness has decreased over 20 years of follow-up in middle-aged and older Americans.",
+          "evidence_id": "ev-b6592ca036aae6a242d7daf2",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议以“负担的持续性与普遍性存在实质争议”为由判部分符合，但所列反证只涉及孤独率趋势和流行病叙事，并未指出后果B（美国政治系统持续把孤独当作负担）的哪些具体部分未实现。按scope，2023年卫生总监报告与新闻稿已构成制度性回应，支持B在声明口径内实现；孤独率下降只能作为缓解或限制，不能仅凭它把结论降为部分符合。若认为“持续如此”的时间跨度证据不足，应保留具体未定或说明B的哪一段未实现，而不是用不同指标的反证判部分符合。",
+          "source_quote": "但同期学术研究显示中老年人孤独率在1996—2018年间下降，且主流评论质疑“孤独流行病”被夸大，说明负担的持续性与普遍性存在实质争议，故仅部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正反证归类与结论口径：现有反证（中老年人孤独率下降、孤独流行病叙事受质疑）不直接反驳“美国公共治理/公共卫生系统持续把孤独认定为系统性负担”；应将其列为缓解或限制，并说明后果B哪些具体部分未实现，或保留“持续如此”时间跨度的具体未定，而非据此判部分符合。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000074650-000074679",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "观察时段为1991年至截止日2026-11-09；操作化口径为美国公共治理/公共卫生领域是否持续将孤独或社会隔离认定为系统性负担并有制度性回应（如卫生总监报告、政策框架、监测数据）。不以独居等同孤独，不验证个人主义等因果机制。",
+      "reason": "2023年美国卫生总监发布社会连接报告与新闻稿，明确将孤独与隔离称为公共卫生危机并推出国家战略框架，构成制度性回应，符合“孤独成为政治系统负担并持续”的方向。但同期学术研究显示中老年人孤独率在1996—2018年间下降，且主流评论质疑“孤独流行病”被夸大，说明负担的持续性与普遍性存在实质争议，故仅部分符合。",
+      "limitation": "支持证据集中于2023年单一官方行动，缺乏1991年以来连续的制度性回应或监测数据；反证显示孤独趋势未必恶化，且官方报告不能直接证明孤独确为政治系统负担的因果判断。",
+      "evidence_ids": [
+        "prior-0d49951ce718fab39802",
+        "ev-2c1ae3a121b6a2bc4f4e48d9",
+        "ev-b6592ca036aae6a242d7daf2",
+        "ev-9fa6ec0d6c447bb8bd4dccca",
+        "ev-9b72a73c188ce6f74e22870c"
+      ],
+      "method": "从个人主义、私域保护及社会流动形成的孤独机制推断治理负担持续",
+      "method_basis": "inferred",
+      "observation_end": "2025-01-24",
+      "future_time_text": "还将继续",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-0d49951ce718fab39802",
+          "relation": "support",
+          "quote": "美国卫生总监2023社会连接报告认为孤独与隔离造成公共卫生和社会负担；疫情前已有约一半成年人报告孤独，报告同时区分独居、孤独和社会隔离。",
+          "publication_date": "2023-05-02",
+          "observation_end": "2023-05-02",
+          "limitation": "为已登记摘要，非全文；仅证明官方认定负担，不证明负担持续或因果。"
+        },
+        {
+          "evidence_id": "ev-2c1ae3a121b6a2bc4f4e48d9",
+          "relation": "support",
+          "quote": "Today, United States Surgeon General Dr. Vivek Murthy released a new Surgeon General Advisory calling attention to the public health crisis of loneliness, isolation, and lack of connection in our country.",
+          "publication_date": "2023-05-03",
+          "observation_end": "2023-05-03",
+          "limitation": "官方新闻稿，证明制度性回应与立场，不直接证明孤独实际恶化或政治系统负担的因果。"
+        },
+        {
+          "evidence_id": "ev-b6592ca036aae6a242d7daf2",
+          "relation": "counter",
+          "quote": "Contrary to common perceptions, loneliness has decreased over 20 years of follow-up in middle-aged and older Americans.",
+          "publication_date": "2023-06-04",
+          "observation_end": "2018-12-31",
+          "limitation": "仅覆盖50岁以上中老年人，样本与指标有限，不能代表全美所有人群；但显示孤独趋势未必恶化。"
+        },
+        {
+          "evidence_id": "ev-9fa6ec0d6c447bb8bd4dccca",
+          "relation": "counter",
+          "quote": "But a close look at the data indicates that loneliness may not be any worse now than it has been for much of history.",
+          "publication_date": "2025-01-24",
+          "observation_end": "2025-01-24",
+          "limitation": "评论文章，非系统研究；质疑“孤独流行病”叙事，但未否定孤独作为公共健康议题。"
+        },
+        {
+          "evidence_id": "ev-9b72a73c188ce6f74e22870c",
+          "relation": "counter",
+          "quote": "Despite some claims that Americans are in the midst of a “loneliness epidemic,” older people today may not be any lonelier than their counterparts from previous generations — there just might be more of them, according to a pair of studies published by the American Psychological Association.",
+          "publication_date": "2019-12-10",
+          "observation_end": "2016-12-31",
+          "limitation": "聚焦老年人群，数据截至2016年；说明孤独未必加剧，但不否定其作为治理负担。"
+        }
+      ],
+      "remaining_gap": "缺乏1991年至2023年间连续的制度性回应或监测数据，无法确认“持续如此”的完整时间跨度；官方报告与学术趋势研究口径不同（公共卫生认定 vs 孤独率变化），需并列保留。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000074650-000074679",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "观察时段为1991年至截止日2026-11-09；操作化口径为美国公共治理/公共卫生领域是否持续将孤独或社会隔离认定为系统性负担并有制度性回应（如卫生总监报告、政策框架、监测数据）。不以独居等同孤独，不验证个人主义等因果机制。",
+      "reason": "2023年美国卫生总监发布社会连接报告与新闻稿，明确将孤独与隔离称为公共卫生危机并推出国家战略框架，构成制度性回应，符合“孤独成为政治系统负担并持续”的方向。但同期学术研究显示中老年人孤独率在1996—2018年间下降，且主流评论质疑“孤独流行病”被夸大，说明负担的持续性与普遍性存在实质争议，故仅部分符合。",
+      "limitation": "支持证据集中于2023年单一官方行动，缺乏1991年以来连续的制度性回应或监测数据；反证显示孤独趋势未必恶化，且官方报告不能直接证明孤独确为政治系统负担的因果判断。关键修订：保留部分符合，因“持续如此”的时间跨度与负担普遍性均未获连续证据，且反证材料虽不直接反驳制度性负担，但限制其持续恶化解读。",
+      "evidence_ids": [
+        "prior-0d49951ce718fab39802",
+        "ev-2c1ae3a121b6a2bc4f4e48d9",
+        "ev-b6592ca036aae6a242d7daf2",
+        "ev-9fa6ec0d6c447bb8bd4dccca",
+        "ev-9b72a73c188ce6f74e22870c"
+      ],
+      "method": "从个人主义、私域保护及社会流动形成的孤独机制推断治理负担持续",
+      "method_basis": "inferred",
+      "observation_end": "2025-01-24",
+      "future_time_text": "还将继续",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-0d49951ce718fab39802",
+          "relation": "support",
+          "quote": "美国卫生总监2023社会连接报告认为孤独与隔离造成公共卫生和社会负担；疫情前已有约一半成年人报告孤独，报告同时区分独居、孤独和社会隔离。",
+          "publication_date": "2023-05-02",
+          "observation_end": "2023-05-02",
+          "limitation": "为已登记摘要，非全文；仅证明官方认定负担，不证明负担持续或因果。"
+        },
+        {
+          "evidence_id": "ev-2c1ae3a121b6a2bc4f4e48d9",
+          "relation": "support",
+          "quote": "Today, United States Surgeon General Dr. Vivek Murthy released a new Surgeon General Advisory calling attention to the public health crisis of loneliness, isolation, and lack of connection in our country.",
+          "publication_date": "2023-05-03",
+          "observation_end": "2023-05-03",
+          "limitation": "官方新闻稿，证明制度性回应与立场，不直接证明孤独实际恶化或政治系统负担的因果。"
+        },
+        {
+          "evidence_id": "ev-b6592ca036aae6a242d7daf2",
+          "relation": "counter",
+          "quote": "Contrary to common perceptions, loneliness has decreased over 20 years of follow-up in middle-aged and older Americans.",
+          "publication_date": "2023-06-04",
+          "observation_end": "2018-12-31",
+          "limitation": "仅覆盖50岁以上中老年人，样本与指标有限，不能代表全美所有人群；但显示孤独趋势未必恶化。"
+        },
+        {
+          "evidence_id": "ev-9fa6ec0d6c447bb8bd4dccca",
+          "relation": "counter",
+          "quote": "But a close look at the data indicates that loneliness may not be any worse now than it has been for much of history.",
+          "publication_date": "2025-01-24",
+          "observation_end": "2025-01-24",
+          "limitation": "评论文章，非系统研究；质疑“孤独流行病”叙事，但未否定孤独作为公共健康议题。"
+        },
+        {
+          "evidence_id": "ev-9b72a73c188ce6f74e22870c",
+          "relation": "counter",
+          "quote": "Despite some claims that Americans are in the midst of a “loneliness epidemic,” older people today may not be any lonelier than their counterparts from previous generations — there just might be more of them, according to a pair of studies published by the American Psychological Association.",
+          "publication_date": "2019-12-10",
+          "observation_end": "2016-12-31",
+          "limitation": "聚焦老年人群，数据截至2016年；说明孤独未必加剧，但不否定其作为治理负担。"
+        }
+      ],
+      "remaining_gap": "缺乏1991年至2023年间连续的制度性回应或监测数据，无法确认“持续如此”的完整时间跨度；官方报告与学术趋势研究口径不同（公共卫生认定 vs 孤独率变化），需并列保留。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "王沪宁在《美国反对美国》中判断：人的孤独已成为美国政治系统的一大负担，并将继续如此。可观察口径为：1991年以后至截止日，美国公共治理或公共卫生领域是否持续把孤独/社会隔离认定为系统性负担，并有制度性回应（如卫生总监报告、政策行动、监测数据）；反证包括官方或主流研究认为孤独并非持续治理负担、相关负担被夸大或已显著缓解。不以独居等同孤独，不验证个人主义等因果机制。",
+  "elapsed_seconds": 46.005,
+  "completed_at": "2026-11-09T08:12:35.031225+00:00"
+}

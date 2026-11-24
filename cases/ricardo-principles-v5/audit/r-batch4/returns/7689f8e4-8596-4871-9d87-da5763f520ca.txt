@@ -1,0 +1,904 @@
+Bank of Canada staff working papers provide a forum for staff to publish work‐in‐progress research independently from the Bank’s Governing Council. This research may support or challenge prevailing policy orthodoxy. Therefore, the views expressed in this paper are solely those of the authors and may differ from official Bank of Canada views. No responsibility for them should be attributed to the Bank.
+
+www.bank‐banque‐canada.ca
+
+Staff Working Paper/Document de travail du personnel 2017‐5
+
+## Canadian Bank Notes and Dominion Notes: Lessons for Digital Currencies
+
+##### by Ben Fung, Scott Hendry and Warren E. Weber
+
+Bank of Canada Staff Working Paper 2017-5 February 2017
+
+### Canadian Bank Notes and Dominion Notes: Lessons for Digital Currencies
+
+by
+
+Ben Fung,1 Scott Hendry2 and Warren E. Weber3
+
+1Currency Department 
+Bank of Canada 
+Ottawa, Ontario, Canada K1A 0G9 
+bfung@bankofcanada.ca 
+2Funds Management and Banking Department 
+Bank of Canada 
+Ottawa, Ontario, Canada K1A 0G9 
+shendry@bankofcanada.ca 
+3Visiting Scholar, Bank of Canada 
+Visiting Scholar, Federal Reserve Bank of Atlanta 
+Visiting Professor, University of South Carolina 
+weweber@gmail.com 
+
+ISSN 1701-9397 © 2017 Bank of Canada
+
+i
+
+#### Acknowledgements
+
+We thank Paul Berry for an extremely helpful discussion on historical details and Miguel Molico, Gerald Stuber and participants at seminars at the Bank of Canada for useful comments on an earlier version of this paper. The views expressed in this paper are those of the authors and do not necessarily reflect the views of the Bank of Canada, the Federal Reserve Bank of Atlanta, or the Federal Reserve System.
+
+ii
+
+#### Abstract
+
+This paper studies the period in Canada when both private bank notes and government issued notes (Dominion notes) were simultaneously in circulation. Because both of these notes shared many of the characteristics of today's digital currencies, the experience with these notes can be used to draw lessons about how digital currencies might perform. The paper begins with a brief historical review of how these notes came into existence and of the regulations regarding their issuance. It examines historical evidence on how desirable bank notes were as media of exchange by examining how well they functioned with respect to ease of transacting, counterfeiting, safety, scarcity, and par exchange (a uniform currency). It then examines whether the introduction of government-issued notes improved how bank notes functioned as media of exchange. It finds that they did not. Improvements in the functioning of bank notes were due to changes in government regulation. Using the Canadian experience and that of the United States, the paper concludes that privately issued digital currencies will not be perfectly safe without government intervention, government issued digital currency will not drive out existing private digital currencies, and government intervention will be required for privately issued and government-issued digital currencies to be a uniform currency.
+
+Bank topics: Bank notes; Financial services; E-money JEL codes: E41; E42; E58
+
+#### Résumé
+
+Cette étude analyse la période où des billets émis par des banques privées et des billets émis par l’État (les billets du Dominion) circulaient simultanément au Canada. Comme ces deux types de billets de banque présentaient de nombreux points communs avec les monnaies numériques d’aujourd’hui, les leçons tirées de l’époque où ils étaient en circulation peuvent éclairer le fonctionnement possible des monnaies numériques. Les auteurs présentent d’abord un bref survol historique de l’apparition de ces billets et de la réglementation concernant leur émission. À partir de données historiques, ils évaluent à quel point les billets de banque étaient utiles comme moyen d’échange en se penchant sur leur performance en fonction de certains aspects : facilité d’effectuer des transactions, contrefaçon, sûreté, rareté et parité de change (uniformité monétaire). Ils examinent ensuite si l’introduction de billets émis par l’État a amélioré la performance des billets de banque comme moyen d’échange et notent que cela n’a pas été le cas. L’amélioration du fonctionnement des billets de banque a été attribuable à des modifications apportées à la
+
+iii
+
+réglementation par les pouvoirs publics. Se fondant sur les expériences canadienne et américaine, les auteurs concluent que les monnaies numériques privées ne seront pas parfaitement sûres sans intervention publique, qu’une monnaie numérique émise par l’État ne ferait pas disparaître les monnaies numériques privées existantes, et qu’une intervention publique sera nécessaire pour faire des monnaies privées et de la monnaie émise par l’État une seule monnaie uniforme.
+
+Sujets : Billets de banque; Services financiers; Monnaie électronique Codes JEL : E41; E42; E58
+
+Non-Technical Summary
+
+This paper studies the period in Canada when both private bank notes and government issued notes (Dominion notes) were simultaneously in circulation. Both of these notes shared many of the characteristics of today’s digital currencies. Banks began issuing notes in 1817. Initially, these notes were issued against the assets of the bank and were redeemable in specie on demand. Note issuance was generally up to a bank’s unimpaired capital. Over time, the government passed three important pieces of legislation affecting bank notes:
+
+◦ the Bank Act of 1871 imposed double liability on shareholders, 
+◦ the Bank Act of 1880 gave note holders a first lien on a bank’s assets and 
+◦ the Bank Act of 1890 required banks to set up note redemption agencies in Canada’s major commercial centres, established the Bank Circulation Fund (BCF) to redeem notes of suspended banks, and required holders of notes of suspended banks to be paid interest from time of suspension until the bank’s affairs were settled. 
+
+Provincial notes were authorized in 1866. Provincial notes became Dominion notes after Confederation in 1868. Both were fiduciary currencies because they were not fully backed by specie. Until 1882 Dominion notes were only at the Receiver General’s office at which they were issued. In terms of assessing the desirability of bank notes as a medium of exchange, the paper finds that bank notes were only relatively safe and not a uniform currency before 1890. They were relatively safe because only 3 of the 55 banks in existence between 1866 and 1890 failed with losses to note holders. They were not a uniform currency because notes of banks in one geographic location often traded at a discount in another location and notes of suspended banks traded at a discount until the bank’s affairs were settled. The Bank Act of 1890 made bank notes perfectly safe and a uniform currency. The paper finds that even though they were safe, the introduction of Dominion notes did not substantially improve the desirability of Canada’s media of exchange prior to 1890. In fact, Dominion notes themselves were not a uniform currency until they were redeemed at all Receiver General’s offices beginning in 1882. The major improvements in Canada’s media of exchange were almost entirely due to provisions of the Bank Act of 1890. The paper draws several lessons for digital currencies based on the evidence from Canada and the United States with bank notes and government issued notes:
+
+◦ Digital currencies likely will be counterfeited 
+◦ Digital currencies likely will not be inflationary 
+◦ Private digital currencies will not be safe and will not be a uniform currency without government intervention 
+◦ A central bank can always get its digital currency into circulation, but its digital currency will not necessarily drive out existing private digital currencies 
+
+1 Introduction
+
+There are many institutions and technologies in the past that bear enough similarities to those that exist today that much can be learned from studying their history. Such a case is the Canadian experience with notes issued by banks and notes issued by Provincial governments, the Dominion of Canada, and the Bank of Canada. Canadian banks issued notes beginning in 1817, when the Bank of Montreal, located in the province of Lower Canada, issued notes. As other banks came into existence in the provinces of Lower Canada, Upper Canada, New Brunswick, Nova Scotia, and Prince Edward Island, they also issued notes. Provincial governments did not issue notes until 1866, when the Province of Canada began to issue notes. This period of simultaneous circulation of private notes (bank notes) and government notes lasted until 1 January 1950. 1 Bank of Canada (1945) Both the private notes and the government notes were denominated in dollars and were widely accepted as a means of payment by persons or entities other than the issuer. In these respects, these notes were very similar to present day digital currencies, which we define to be: monetary value stored electronically that is accepted as a means of payment and whose use is neither based on nor requires funds in a deposit or credit account in a financial institution. The only difference is that in the case of bank notes and government notes the monetary value was “stored” on a piece of paper instead of existing only electronically. Thus, studying the history of these privately issued and the government issued notes can provide some insights into how present day digital currencies might perform and can provide some lessons about whether digital currencies might need to be regulated and if so how. Further, the history of these notes is particularly interesting because for over 80 years, from 1866 until 1950 when all bank notes were taken out of circulation, private notes and government notes circulated side-by-side. Thus, the history of this period can also provide some insights as to whether a system with private and government digital currencies would be sustainable or whether one type of digital currency would come to dominate the other. As the basis for studying the Canadian experience with notes and for drawing lessons about that experience, we discuss bank notes and government notes in terms of five desirable characteristics of a medium of exchange. 2 These characteristics are: Mishkin (2009)
+
+1Although the Bank of Canada Act passed in 1935 gave the Bank of Canada “the sole right to issue notes 
+payable to bearer on demand” (Section 24), bank notes did not go out of circulation immediately. Section 
+61 of the Bank Act of 1934 specified that banks’ maximum circulation would be set at the amount of their 
+paid in capital as of the day the Bank of Canada commenced business and that this maximum would be 
+reduced by 5 per cent each year for the next five years and by 10 per cent per year for the five years after 
+that. Thus, at the beginning of 1945, the maximum of banks’ note issue was 25 per cent of paid in capital as 
+of the beginning of the Bank of Canada, and the Bank Act of 1944 prohibited banks from issuing notes. On 
+1 January 1950 the remaining circulation of bank notes was “transferred to the Bank of Canada in return 
+for payment of a like sum to the Bank of Canada” Bank of Canada (1945, 5). 
+2These characteristics were used in previous studies of state bank notes (Weber (2014)) and national bank 
+notes (Weber (2015a)) in the United States. This list of desirable characteristics for a money is somewhat 
+different from that traditionally found in textbooks. For example, Mishkin (2009, 55) lists the desirable 
+characteristics of a money to be easy standardization, wide acceptability, divisibility, ease of carrying, and 
+not deteriorating quickly. These textbook characteristics are incorporated in the first four characteristics 
+of the list. We have simply changed some of the labelling and done some rearrangement to make our list 
+of characteristics a better set of criteria for determining how well private bank notes and government notes 
+
+(i) ease of transacting—a financial asset will be more desirable as a medium of exchange the easier it is to transport and the less often it either requires a seller to make change or requires the buyer to pay a higher price because of a lack of divisibility;
+
+(ii) minimal counterfeiting—an extremely low level of counterfeiting or easy detection of counterfeits permits sellers to be relatively certain that they are receiving an authentic asset in exchange for their products or services;
+
+(iii) high degree of safety—holders of a medium of exchange would like to be relatively certain that the financial instrument they are holding will store value and be acceptable in exchange when they want to use it to make purchases; 3
+
+(iv) scarcity—limitations on the growth of the supply of a medium of exchange are essential if it is to be valued or if it is to maintain its value over time; 4 and
+
+(v) uniform currency—when there is more than one medium of exchange in a country issued using the same monetary unit, it is desirable that each can be exchanged one-for-one with any other regardless of the identity of the issuer, the location of the issuer, the location of the other issuer, the location in which the exchange is to take place, and the time at which the exchange is to take place. 5 In other words, when there is more than one medium of exchange in a country issued using the same monetary unit, it will be desirable if a dollar issued by A exchanges one-for-one with a dollar issued by B always and everywhere.
+
+The paper proceeds as follows: Section 2 provides a brief history of bank notes and Dominion notes in Canada. Section 3 discusses the similarities and differences between bank notes and Dominion notes on the one hand and digital currencies on the other hand. Section 4 examines how desirable bank notes were as a medium of exchange relative to the five criteria above. Section 5 discusses what happened to the desirability of bank notes when government notes were introduced and how the monetary system with the two types of notes performed relative to the five criteria. Section 6 uses the discussion in the previous two sections and that of the United States to provide some lessons about what Canada’s experience with digital currencies might be. Section 7 concludes.
+
+performed as media of exchange. Further, since textbooks do not explicitly consider the case of multiple 
+moneys, uniform currency has been added to the list. 
+3For an extensive discussion of what constitutes a safe asset see Gorton (2016). 
+4For an excellent discussion of the importance of scarcity for a medium of exchange see Ha laburda and 
+Sarvary (2016). 
+5The phrase “in a country” is included because we do not want to use the experience of a single country 
+to get into a discussion of whether fixed exchange rates or flexible exchange rates are preferred. Further, the 
+phrase “issued using the same monetary unit” is included because we did not want to get into a discussion 
+of bitcoin and other cryptocurrencies in this paper. 
+
+2 A Brief History of Canadian Bank Notes and Dominion Notes
+
+In this section we present a brief history of media of exchange in Canada from 1817 when the Bank of Montreal began operations in Lower Canada until 1935 when the Bank of Canada was formed. This history focuses on the laws and regulations that affected what media of exchange could be issued and their properties. Section 2.1 covers Canadian bank notes, and section 2.2 covers Provincial notes and Dominion notes, which is what Provincial notes became after Confederation.
+
+2.1 Banks and bank notes 
+We begin by giving a rough idea of the number of banks that existed in Canada over 
+time. We follow with a general characterization of the laws under which banks operated 
+prior to Confederation in 1866. We then briefly discuss the Bank Act of 1871 and the Bank 
+Act of 1880 and follow with a more in-depth description of the Bank Act of 1890, which 
+effected significant changes in the regulations affecting the issuance and safety of bank notes. 
+Finally, we discuss some changes to bank regulation that occurred after 1890. 
+The number of Canadian banks 
+The first bank to issue notes in Canada was the Bank of Montreal, which is still in 
+business today. It opened its doors without a charter on 3 November 1817. It received 
+provincial charter from the government of Lower Canada on 17 March 1821. The Quebec 
+Bank and the Bank of Canada, which had been established without charters somewhat later, 
+received charters at the same time. 6 One bank, the Bank of Upper Canada, was chartered 
+by that province and began business on 1 July 1822. 7 The Bank of New Brunswick was New 
+Brunswick’s first bank, and also the first to obtain a provincial charter in 1820. Nova Scotia’s 
+first bank–the Bank of Nova Scotia–began business in 1825 as a private partnership. Thus, 
+at the end of 1825 there were six banks operating in the provinces that make up modern day 
+Canada. 
+When the union of Lower and Upper Canada creating the Province of Canada occurred 
+on 10 February 1841, there were nine banks in business under the laws of the Province and 
+one bank–the Bank of British North America (BBNA)–operating under a royal charter. The 
+number of banks doing business under laws of the Province of Canada fell to eight in 1851, 
+and there were five banks in New Brunswick at the time. The number of banks in the 
+Province of Canada grew to 16 in 1861. When the British North America Act was passed 
+in 1867, confederating the provinces of Canada, Nova Scotia and New Brunswick into the 
+Dominion of Canada, there were 29 banks in existence in the Dominion – 19 banks chartered 
+in the Province of Canada, 5 chartered in Nova Scotia, and 4 chartered in New Brunswick. 
+The BBNA was also in existence at this time. 8 
+
+6This early Bank of Canada was not a central bank and had no relation the current Bank of Canada, the country’s central bank. 7Also in Upper Canada, an unchartered bank, the Bank of Kingston, operated from 1819 until it failed on 23 September 1822. 8The provinces of Manitoba, British Columbia, and Prince Edward Island were added to Canada between 1867 and 1873.
+
+Determining the number of banks in existence between Confederation and 1890 is prob lematic as not all chartered banks were required to report to the federal government until 1890. On 31 December 1890, there were 38 banks reporting to the government. The number remained constant through the end of 1899, but fell to 36 at the end of 1900. At the end of 1908, there were only 33 banks in existence mostly due to banks merging or being acquired by other banks. Mergers and acquisitions continued after 1908 to such an extent that when the Bank of Canada came into existence in 1935, there were only 10 banks in Canada. Bank operations, 1817 - 1870 During the period 1817 to 1870, banks in Canada operated under provincial charters. Under these charters, banks were permitted to establish branches. Banks and their branches issued notes, which were payable to the bearer on demand in specie at the place of issue and were intended to circulate. Notes issued by branches were distinguishable from those issued by the principal office. The principal office did not have to redeem notes of branches and vice versa. Branches did not have to redeem the notes of other branches. Notes were issued against the assets of the bank. No bond backing of notes was required as it was for free banks and national banks in the United States. In general, note issues were limited to the amount of the bank’s paid in capital plus specie plus government securities, but they were not subject to specie reserve requirements. Banks issued notes with denominations as low as $1. Shareholders were subject to double liability in case of the bank’s failure. However, note holders had no preference over other creditors in terms of a lien on the bank’s assets. In terms of activities that affected the asset side of banks’ balance sheets, banks were permitted to make loans to the government and hold government bonds. They were also permitted to make loans and mortgages and to discount notes and bills of exchange. However, they were not permitted to make loans that used bank stock as collateral. They were permitted to buy and sell gold and silver bullion, but were not permitted to trade in any other goods or commodities. The Bank Acts of 1871 and 1880 Because the charters of Canadian banks typically ran for only 10 years, a formal renewal was required for a bank to continue in business. A large number of bank charters were to expire in the early 1870s. As a result, there was legislative discussion about what changes should be made to the charters of these banks and what requirements should apply to subsequent bank charterings and recharterings. The result was An Act relating to Banks and Banking (34 Vic., c. 5) passed on 14 April 1871. The Act applied to the 19 banks listed in a schedule attached to the Act and to “any Bank to be hereafter incorporated.” (section 2)
+
+The major provisions of the Act were:
+
+(i) Banks could issue notes only up to amount of their unimpaired capital (section 8).
+
+(ii) Notes had a $4 minimum denomination (section 8).
+
+(iii) Banks had to receive their own notes as payment at par at any of their offices whether the notes were payable there or not (section 9).
+
+(iv) Banks had to redeem their notes for specie only where they were made payable, but the principal office always had to be a place where they were made payable (section 9). 9
+
+(v) Banks had to hold “as nearly as may be practicable” half of their cash reserves in Dominion notes (section 14). 10
+
+(vi) Stockholders had double liability for paying off the “debts and liabilities” of an insolvent bank (section 58). Section 58 also contained the call provision that “if any suspension of payment in full in specie or Dominion notes, of any or all of the notes or other liabilities of the Bank shall continue for six months, the Directors may and shall make calls on such shareholders, to the amount they deem necessary to pay all the debts and liabilities of the Bank, without waiting for the collection of any debts due to it or the sale of any of its assets or property . . . .”
+
+The Bank Act of 1880 made only two changes to the Bank Act of 1871. The first was minor. The minimum denomination was raised to $5 and notes were required to be issued in multiples of $5. The second was far more important. Note holders were given first lien on the assets of a suspended bank, even ahead of the government. The Bank Act of 1890 An Act Respecting Banks and Banking (vic. 53, ch. 31), which we will refer to as the Bank Act of 1890, was passed on 16 May 1890. It was the most important piece of banking legislation passed prior to the establishment of the Bank of Canada in 1935. It kept the major provisions—such as first lien and double liability—from the previous bank acts and added three important provisions:
+
+(i) Holders of the notes of suspended banks would be paid interest at the rate of 6 per cent (changed to 5 per cent in 1900) from when the bank suspended until the first day at which they were made payable (section 7). Prior to this provision, holders of notes of suspended banks received no interest during this period.
+
+(ii) Banks were required to establish redemption agencies in Halifax, St. John, Charlotte town, Montreal, Toronto, Winnipeg, and Victoria (section 55). Prior to this provision, banks only had to redeem their notes at the principal office and at the location of issue.
+
+(iii) The Bank Circulation Redemption Fund was established. Its sole purpose was to redeem the notes of suspended banks. Banks were required to pay 5 per cent of their previous 12 months’ circulation to the Minister of Finance to form this Fund. If the amount that the Fund had to pay to redeem the notes of a suspended bank exceeded the amount that that bank had previously contributed to Fund, the remaining banks
+
+9The term “payable” refers to the payment of specie to the bearer on demand. Thus, “payable” differs from the requirement that notes had to be “received as payment.” This requirement meant that the notes had to be accepted if someone presented them to discharge a debt to the bank. It did not mean that the bank had to pay out specie or even to accept the notes for deposits. 10Dominion notes were notes issued by the Dominion of Canada after 1867. For more details, see Section 2.2.
+
+were required to make up the difference by additional contributions on a pro rata basis. However, the amount that a nonsuspended bank had to contribute in a single year could not exceed 1 per cent of its previous 12 months’ circulation.
+
+The Act did not provide for any government liability with respect to the Bank Circulation Redemption Fund. That is, there was no provision in the Act for the Canadian government to step in should the Fund not have enough resources to redeem the notes of all insolvent banks should several banks with substantial amounts of notes in circulation fail at the same time. Although this possibility was recognized, according to Breckenridge (1894, 260), it was thought by the legislature that, “The experience of twenty-three years showed the improba bility of one of the overwhelming banking catastrophes, without which a long impairment of the fund would be impossible.” The Bank Circulation Redemption Fund was never used. 11
+
+Bank acts after 1890 
+After the Bank Act of 1890, various subsequent acts made two changes to the regulations 
+affecting banks: 
+1. In 1908 banks were permitted to expand note issue during crop moving. They were 
+permitted to issue notes in excess of their paid in capital up to 15 per cent of the 
+capital plus reserve fund during October through January. They were taxed at the 
+rate of 5 per cent on this excess issue. 
+
+2. In 1913 the “central gold reserves” were established. Banks were permitted to is sue notes over their paid in capital dollar-for-dollar against gold or Dominion notes deposited as such reserves.
+
+2.2 Provincial notes and Dominion notes 
+Prior to 1866, there was a proposal to establish a government issued paper currency 
+– notes issued by the government payable in specie on demand – to generate revenue for 
+the government of the new province. In 1841, Lord Sydenham, the Governor General of 
+the Province of Canada proposed to establish a provincial bank of issue that would be the 
+sole issuer of notes. Private bank notes would be abolished. Instead, banks would pay out 
+government notes that they would purchase with specie and government securities. These 
+government notes would be a fiduciary currency because of the £1,000,000 authorized, only 
+one-fourth would have been covered by bullion. The rest would be covered by government 
+securities. This proposal was not adopted. According to Breckenridge (1910), the non 
+adoption was primarily due to bank opposition. 
+However, a similar proposal was adopted 25 years later. A serious shortage of resources 
+in 1866 led to the need for a new source of funding. 12 This led to the establishment of a 
+government issued paper currency with the passage of An Act to provide for the issue of 
+Provincial Notes in 1866. The notes sanctioned by the Act were similar in many ways to 
+those envisioned in the 1841 proposal. A total of $8 million of these notes were authorized. 
+11See Johnson (1910, 67). Johnson (1910) Breckenridge (1894) 
+12See Powell (2005, 25-26). Powell (2005) 
+
+The first $5 million was required to be 20 per cent backed by specie; any amount over $5 
+million, to be 25 per cent covered by specie. The remainder was to be covered by Provincial 
+Debentures held by the Receiver General. The denominations in which the notes were to be 
+issued was not specified in the Act. 
+Provincial notes were made legal tender. They were payable in specie on demand. They 
+were payable only at the office at which they were issued. Such offices, which would be 
+branches of the Receiver General, were to be established in Montreal and Toronto. 
+The Act also provided that in exchange for Provincial Debentures, Provincial notes were 
+to be given to banks that had voluntarily surrendered their power to issue notes. That 
+is, the Act did not prohibit banks from continuing to issue notes, but they would have to 
+surrender this power if they wanted to pay out Provincial notes. The Act contained some 
+incentives for banks to surrender the power to issue notes. The major incentive was that 
+“in compensation for such surrender, an annual sum not exceeding five per cent upon the 
+amount of its circulation as established by the monthly return upon the thirtieth day of 
+April, one thousand eight hundred and sixty-six, shall be payable by the Province to each 
+Bank so surrendering . . . ” (Section 2). Such banks would also have an exception from the 
+penalties for usury. Despite the incentives, only one bank, the Bank of Montreal, accepted 
+the offer. 
+In May 1868, the name of the Provincial notes was changed to Dominion notes by An 
+Act to enable Banks in any part of Canada to use Notes of the Dominion instead of issuing 
+Notes of their own. Other than the name change, the only other major part of the Act was 
+to establish additional offices in Halifax and St. John at which Dominion notes could be 
+issued and would be payable. Even though the 1868 Act contained the same incentives that 
+were in the 1866 Act for banks to give up issuing their own notes and issue Dominion notes 
+instead, no additional banks signed on. The provision for banks to issue Dominion notes 
+rather than their own was repealed in May 1870. The Bank of Montreal resumed issuing its 
+own notes in 1871. 
+According to Graham (2016), the provision that Dominion notes were issued and payable 
+only at a specific Receiver General’s office ended in 1882. He states, “The $4 note [of 1882] 
+. . . represents the end of the policy of the Finance Department to make its notes payable at 
+a specific Assistant Receiver General’s office” Graham (2016, 140). 
+Over time, the maximum quantity of Dominion notes that could be issued that were not 
+fully covered by specie was raised and additional branch offices of the Receiver General were 
+established. By 1903, the amount of Dominion notes that could be issued that were not fully 
+covered was $30 million with 15 per cent coverage in specie. 
+
+3 Bank Notes, Dominion Notes, and Digital Currencies
+
+A representative bank note is shown in Figure 1. Bank notes were payable at the bank’s principal office and if issued by a branch, at that branch. Three representative Dominion notes issued before 1882 are shown in Figures 2, 3, and 4. Because they were issued before 1882, they were payable only at the specific Receiver General’s office listed on the back of the note. The Dominion notes shown in the figures were payable in Montreal, Toronto and Halifax, respectively.
+
+The notes in the four figures display the characteristics of digital currency. First, the notes had monetary value. They were denominated in Canadian dollars. Second, they were payable to the bearer on demand. The face of the representative chartered bank note states that “THE BANK of MONTREAL Will Pay Four Dollars to the Bearer on demand.” Similarly, the face of the representative Dominion note states that “The Dominion of Canada Will Pay to the bearer . . . One Dollar.” Further, although not shown on the notes in Figures 1 - 4, chartered bank notes and Dominion notes were also widely accepted as media of exchange. Thus, both chartered bank notes and Dominion notes look like digital currencies except they were printed on a piece of paper instead of being stored electronically.
+
+4 Were Bank Notes Desirable Media of Exchange?
+
+In the introduction, we briefly described five desirable characteristics of media of ex change. In this section, we examine how well the notes of Canadian banks performed relative to each of the desirable characteristics. In the next section, we examine whether the addition of Dominion notes improved the performance of the Canadian monetary system.
+
+4.1 Ease of transacting 
+A financial asset will be more desirable as a medium of exchange the easier it is to 
+transport. From this point of view, bank notes performed well. Paper is much lighter than 
+metal, so it was far more convenient and less expensive to carry and transport paper notes 
+than specie coins. 
+A financial asset will also be more desirable as a medium of exchange the more divisible 
+it is. Lack of divisibility often either requires a seller to make change or requires the buyer 
+to pay a higher price because of a lack of divisibility. From this point of view, bank notes 
+did not perform well. Divisibility was limited. 13 Although early banks issued notes as small 
+as $1, after 1871 they were restricted to issue notes with a minimum denomination of $4. 
+Further, after 1880, banks were restricted to issuing notes with a minimum denomination of 
+$5 and to only issue notes in multiples of $5. 
+Such lack of divisibility problems are inherent with any physical medium of exchange 
+like coins or paper currency, so in this regard, bank notes did not do any worse than other 
+media of exchange at the time or even any worse than coins and currency do today. Lack of 
+divisibility is less of a problem with digital currencies, which can easily have more than two 
+decimal places. For example, bitcoin and some other digital currencies state amounts out to 
+eight decimal places. 
+
+13 Coins could help mitigate the divisibility problem. However, according to Beckhart (1929, 291-292), “no gold coins were issued prior to the establishment at Ottawa in 1908 of a branch of the Royal Mint. . . . Fractional currency is issued in denominations of fifty, twenty-five, ten and five-cent silver pieces and bronze pennies.”
+
+Figure 1: A representative bank note
+
+Figure 2: A representative Dominion Note payable in Montreal
+
+Figure 3: A representative Dominion Note payable in Toronto
+
+Figure 4: A representative Dominion Note payable in Halifax
+
+4.2 Minimal counterfeiting 
+An extremely low level of counterfeiting or easy detection of counterfeits is a desirable 
+characteristic for a medium of exchange. The primary reason is that it gives holders a high 
+degree of confidence that the asset is storing value, in the sense that it will be considered 
+valuable when presented as payment in the future. Another way of looking at the benefit of 
+minimal counterfeiting is that if the probability is low that the financial asset being offered 
+for a purchase is a counterfeit, sellers have a high degree of certainty that they are receiving 
+a valuable asset in exchange for their products or services. 
+There was considerable counterfeiting of bank notes. Dickerman’s United States Treasury 
+Counterfeit Detector of October 1899 lists counterfeit Canadian bank notes. The list contains 
+counterfeit $2 of 3 banks, counterfeit $4 of 5 banks, counterfeit $5 of 10 banks, and counterfeit 
+$10 of 9 banks. Speer (1904, chap. 30) describes the spring of 1880 in which “Canada was 
+flooded with the most dangerous counterfeit bills ever put in circulation”(167). He goes on 
+to state, “wholesale counterfeiting Canada bills had occurred”(168). 14 Further, according to 
+Powell and Moxley (2014, 40), “So-called note ‘detectors’ were published regularly and sold 
+to merchants in Canada and the United States.” Their book also contains a long discussion of 
+the measures taken to prevent counterfeiting such as the invention of green oxyd of chromium 
+that made an unalterable impression when mixed with black ink. 15 
+How important minimal counterfeiting was considered as a characteristic of a medium 
+of exchange during the period we are considering is debatable. In the Bank Act of 1890, 
+the punishment for making a “likeness or similitude of any Dominion or bank note” was 
+“a penalty of one hundred dollars or to three months’ imprisonment . . . ” (section 63). As 
+this punishment seems light, it might be argued the concern was minimal. However, we 
+think that was not the case. The Criminal Law (32-33 Vict. c. 19) specified that forging a 
+bank note was a felony punishable by imprisonment “in the Penitentiary for life, or for any 
+term not less than two years . . . .” (section 15). Further, anyone who “purchases or receives 
+from another person, or has in his custody or possession any forged bank note . . . is guilty of 
+felony, and shall be liable to be imprisoned in the Penitentiary for any term not exceeding 
+fourteen years and not less than two years . . . .” (section 16). The same punishments were 
+given for counterfeiting Dominion or Provincial notes (sections 19 and 20). The severity of 
+these punishments indicates to us that counterfeiting was an important concern. 
+4.3 High degree of safety Powell and Moxley (2014) 
+Holders of a medium of exchange would like to be relatively certain that the financial 
+instrument they are holding will store value and be accepted at a known nominal value in 
+exchange when they want to use it to make purchases. In terms of the notes that we are 
+considering, we measure safety in terms of how likely it was that the issuer would be able 
+to redeem it for specie at par when the holder of the note wanted to exchange it for specie 
+either by demanding redemption or, in the case of bank notes, by being paid par value if the 
+14It should be noted, however, that many of the counterfeits listed in Dickerman’s are said to be of “poor 
+quality.” 
+15Powell and Moxley (2014, 44). They also state that the U.S. greenbacks were printed with this ink. 
+
+bank became insolvent. 16 Evidence that note safety was considered important at the time is given by the features of the various bank acts passed during this period that were intended to increase the safety of bank notes. Between 1867, when the Confederation of Canada occurred, and the passage of the Bank Act of 1890, 55 banks were in business at some point during the period. Of these, 3 (ap proximately 5.5 per cent) failed with losses to note holders. This seems like a small number, especially when compared with the losses experienced by state bank note holders in the United States (see Weber (2014)). The specifics of the bank failures are:
+
+• The first bank to fail with losses to note holders was the Bank of Acadia, which failed in April 1873. According to Canada Year Book (1934-35, 984-985) this bank “was only in existence three months and twenty-six days. It reopened for a few days and redeemed a few thousand dollars worth of its notes. This lasted only a day or two, and the remaining note-holders with the exception of the Government got nothing.” 
+• The second bank to fail with losses to note holders was the Mechanics Bank of Montreal, which failed in May 1879. “After its failure, the shareholders were forced to contribute the whole of the double liability. Even then but forty-five cents on the dollar of the bank’s debts, either by notes or deposits, had been paid in 1882, and in the end only 57 1 2 per cent. of its liabilities were redeemed” Breckenridge (1894, 218). Its circulation at the time of failure was $168,132. 
+• The third bank to fail with losses to note holders was the Bank of Prince Edward Island, which failed on 28 November 1881. Its note holders eventually received 59 1 2 
+
+cents on the dollar. Its circulation at the time of failure was $264,000.
+
+There were no bank failures after 1881 that involved losses to note holders. 
+The small number of bank failures that involved losses to note holders was due in large 
+part to the several legislative actions the Canadian government took to promote bank note 
+safety. The first was to require double liability of shareholders in the Bank Act of 1871. 
+However, as the three failures noted above show, double liability, which was enforced in all 
+three bank failures cited above, was not enough to prevent note holders from suffering losses 
+in the case of a bank failure. The difficulty with the double liability provision is that it 
+applied to all of the liabilities of the bank. Notes did not have a special place in line when 
+the obligations of the bank were being settled. They were treated the same as all other 
+liabilities. Thus, note holders would suffer losses if the value of assets fell below the amount 
+of liabilities plus shareholder equity. 
+The next action, which was adopted in the Bank Act of 1880, was to make notes a first 
+lien on the assets of a bank when the bank was being liquidated. According to Breckenridge 
+(1894, 222), “It was believed that by this plan the ultimate payment of all bank notes in 
+full would be assured.” The reason was the assets of “each bank were from six to ten times 
+its debt on notes . . . .” The evidence from the lack of note holder losses resulting from bank 
+failures after 1881 seems to indicate that this provision was effective in its intent to make 
+note holders whole eventually. 
+
+16For an extensive discussion of what constitutes a safe asset see Gorton (2016).
+
+Even more assurance for the safety of bank notes was provided by the Bank Circulation Redemption Fund, described above, which was established by the Bank Act of 1890. This fund ensured that 5 per cent of the circulation of all banks was available to redeem the notes of any bank that failed.Walker (1909) The small number of bank failures that involved losses to note holders would seem to indicate that bank notes were quite safe. However, simply looking at the number of failures that resulted in eventual losses to note holders overstates the safety of notes. The reason is that before 1890, the redemption of the notes of insolvent banks was not immediate, and notes were discounted until the insolvency was resolved and note holders were paid off. As B. E. Walker (1909, 73) put it “it was nevertheless true that because of doubt and delay the notes of a suspended bank always fell to a discount for the time being.” (italics added) For example, consider the case of note holders of the Consolidated Bank of Canada, which failed in August 1879. “From the failure of the Consolidated Bank . . . the public lost nothing beyond the discount of 10 to 25 per cent. to which the note-holders, wishing to realize soon after the suspension, were obliged to submit . . . the payment of which was postponed until the the bank’s assets could be liquidated” (italics added) Breckenridge (1894, 218). Another example is the failure of the Maritime Bank of the Dominion of Canada, which stopped payment on its notes on 8 March 1887. “The $314,000 of notes in circulation . . . were paid in full, though only after more than two years were elapsed.” (italics added) Breckenridge (1894, 236) Giving note holders a first lien on an insolvent bank’s assets did not solve the problem of notes going at a discount until the process of liquidating the bank was completed. Further, the establishment of the Bank Circulation Redemption Fund in the Bank Act of 1890 also did not solve the problem. It did not provide for immediate par redemption. It simply guaranteed par redemption would occur within two months after a bank suspended. The solution to the problem was another provision of the Bank Act of 1890. Section 54.7 mandated that notes would bear interest at 6 per cent (changed to 5 per cent in 1900) per annum from the time of suspension to the time the liquidator of the failed bank was ready to redeem notes. This rate of interest was higher than the rate on other safe assets at the time. The available evidence indicates this provision had the desired effect: notes of failed banks did not go at a discount after this provision was enacted. Another contributor to the safety of bank notes was the willingness of groups of other banks to come to the aid of a troubled bank and, at least in one case, to pay off an insolvent bank’s liabilities. One case was that in which Toronto banks agreed to pay off all the liabilities of the Federal Bank of Canada in 1888. According to Breckenridge (1894, 239):
+
+The step was decided on because the plan . . . would avoid the panic which the Federal’s suspension . . . was likely to cause.. . . it protected the business of On tario from the costly derangement incident to a banking panic, and a sudden contraction of discounts.
+
+Another example is given by Johnson (1910, 81-82) regarding the Bank of Ontario:
+
+On the evening of October 12 [1906], the bankers of Toronto and Montreal heard with surprise that the Bank of Ontario had gone beyond its depth and would not open its doors the next morning. Its capital was $1,500,000 and its deposits
+
+$12,000,000. The leading bankers in the Dominion dreaded the effect which the failure of such a bank might have. The Bank of Montreal agreed to take over the assets and pay all the liabilities, provided a number of other banks would agree to share with it any losses. Its offer was accepted and a representative of the Bank of Montreal took the night train for Toronto. Going breakfastless to the office of the Bank of Ontario he found the directors at the end of an all-night session and laid before them resolutions officially transferring the business and accounts of the bank to the Bank of Montreal. They adopted the resolution before nine a.m. and the bank opened business for the day with the following notice over its door: “This is the Bank of Montreal.” Before one o’clock the same notice, painted on a board or penciled on brown wrapping paper, was over the door of the thirty-one branches in different parts of the Dominion. Its customers were astonished that day when they went to the bank, but none of them took alarm and many of them were well pleased with the change. The note holders and depositors were paid in full, and it is generally understood that the venture was a profitable one for the Bank of Montreal, although litigation is still pending over the double liability of the stockholders. The general manager of the Bank of Ontario, who had sunk its capital in Wall street, received a five years’ sentence for making false statements with regard to the bank’s affairs.” Johnson (1910)
+
+4.4 Scarcity Walker (1909) 
+By scarcity of a medium of exchange, we mean that there are limitations or restrictions 
+on rate of growth of the supply. Such limitations or restrictions are essential if a potential 
+medium of exchange is to be valued and if it is to maintain its value over time. Without them, 
+a huge future increase in the quantity of the medium of exchange is possible, which would 
+drive up prices in the future and decrease the future purchasing power of current holdings. 
+Such a possibility could lead to the potential medium of exchange not being valued, in which 
+case it would not become a medium of exchange. 17 
+Bank notes were scarce because of restrictions on the quantity that could be issued. 
+Beginning with the Bank Act of 1871 and continuing in later acts, banks could not issue 
+notes in excess of the paid in capital plus their reserve fund. Since banks did not increase 
+their capital very often and new banks had to have a charter from the government, this 
+controlled the supply of bank notes. 
+That the growth of bank notes was limited is shown in Figure 5, where we plot the 
+quantity of bank notes annually from 1872 to 1929. 18 The figure shows from 1867 to 1900 
+17Instead of using the term “scarcity,” we could have called limitations of rate of growth to be limitations 
+on “overissuance.” We chose to avoid that term because “overissuance” commonly refers to the case in which 
+an issuer of demand liabilities issues them in an amount greater than the assets it has available to redeem 
+them. An issuer of bank notes that was overissuing in this sense would not be able to redeem its notes at 
+par. This case was considered in the discussion of the safety of bank notes above. 
+18The data in this Figure are from Curtis (1931). All quantities are end of year. We start the figure in 
+1872 because in the data there is an almost doubling of the quantity outstanding between 1869 and 1870 
+and the quantity outstanding in 1871 equals than in 1870. Thus, there seems to be a change in how the 
+quantity of notes outstanding is computed for these years. 
+
+18 -20 -10
+
+0
+
+10
+
+20
+
+30
+
+1870 1880 1890 1900 1910 1920 1930
+
+Percent
+
+Figure 5: Percentage change in bank notes outstanding, 1872–1929 bank notes grew relatively slowly at the rate 5.2 per cent per year. The growth rate fell to 4.8 per cent per year from 1900 and 1914. The big run up (19.6 per cent per year) between 1914 and 1918 can be explained, at least in part, by the need to finance WWI. The quantity of bank notes outstanding fell after the war ended (rate of growth was -2.6 per cent per year), although the level was still higher in 1929 than in 1914.
+
+4.5 Uniformity 
+For the purpose of understanding exactly what we mean by uniformity or a uniform 
+currency it is necessary to start with a definition of a medium of exchange: A medium of 
+exchange is a set of financial instruments that have identical physical characteristics and are 
+widely accepted in transactions. Financial instruments with different physical characteristics 
+are considered to be distinct media of exchange. Under this definition $5 bills issued by the 
+Bank of Canada are a medium of exchange and $10 bills issued by the Bank of Canada are 
+a second, distinct medium of exchange. The reason $5 bills and $10 bills are distinct media 
+of exchange is the difference in denominations. 19 
+We assume that all media of exchange have some monetary denomination associated 
+with them. With this assumption we can define par exchange. Par exchange means that all 
+distinct media of exchange trade at the ratio of their monetary denominations. For example, 
+
+19One might go so far as to argue that each $5 bill is a distinct medium of exchange under this definition because it has a unique serial number. We will not carry the definition to that extreme.
+
+par exchange means that all $10 bills exchange for two $5 bills. 
+Finally, we define a collection of distinct media of exchange to be a uniform currency if 
+all units of one distinct media of exchange always exchange at par with units of all other 
+media of exchange regardless of the time or location at which the exchange takes place. 
+As an example, for bank notes to be a uniform currency, the notes of banks located in 
+Montreal would have to exchange at par with notes of banks located in Halifax regardless of 
+where the exchange took place. That is, for example, they would have to exchange at par 
+whether the exchange took place in Montreal, Halifax, or Ottawa. 20 
+The Canadian government thought uniformity was a desirable property of a collection of 
+media of exchange as it stipulated in the Bank Act of 1890 requirements to make sure that 
+notes were accepted at par throughout the country. A quote from Shortt (1986, 579), “The 
+primary consideration at such a juncture was a safe, national currency, which would be of 
+known value, and equally acceptable throughout the Dominion.” 
+That uniformity was a desirable property of a collection of media of exchange was also 
+stated eloquently by B. E. Walker in a paper read before the World’s Congress of Bankers 
+and Financiers in 1893: Walker (1893) 
+
+Still, I cheerfully admit that the United States National Banking System has taught us that a currency issued by banks may be made to pass over the entire area of a great nation without discount. This is a great quality in currency. To the ordinary individual, who knows and cares little about banking except as it affects the bank note he happens to carry in his pocket, it appears to be the one quality necessary. (Walker, 1893a, 16)
+
+That a collection of media of exchange will be a uniform currency is one possible equilib 
+rium in models with multiple media of exchange. 21 However, in general, some mechanism is 
+required to achieve uniformity. For example, all $10 bills exchange for two $5 bills because 
+the Bank of Canada always stands willing to make the exchange at that rate. Much of our 
+later discussion will be about the actions the Canadian government took to make bank notes 
+a uniform currency. 
+Prior to 1890, bank notes in Canada were not a uniform currency. According to sec 
+ondary sources, bank notes from locations other than where the bank was located traded at 
+discounts. 22 Walker (1909, 73), writing about the situation states, “The area of Canada is 
+enormous relatively to population, and the notes of banks in one province certainly passed 
+at a discount in some of the others.” Breckenridge (1894, 242-243) makes the same point: 
+
+Of a third defect of the currency, some notice was taken in 1869, when Sir John Rose proposed regulations to make it circulate at par in every part of the country. Down to 1889, Canadian bank notes lacked that quality. Although the bank was required to receive its own notes at any of its offices, it was obliged to pay them 20Note that to make the case for par exchange one must go beyond the case for having fixed exchange rates rather than floating rates. One must make the case that the exchange rate be fixed and equal to unity. 21See Kareken and Wallace (1981). 22Unlike the case with state bank notes in the U.S. prior to 1863, there were no Canadian publications dedicated to providing information on the discounts of notes of different banks nor did newspapers seem to have such information as a part of their regular financial reporting.
+
+only at offices where they were made payable, one of such offices being always the bank’s principal seat of business. . . . the notes of a bank without a branch in the neighborhood did not circulate at their par value in localities remote from the offices where they were payable, or in localities whose trade centre was different from that of the bank whence they were issued. As communication between them became easier, as a larger trade grew up, and closer relations in all were established . . . a larger number of bank notes appeared in the circulation of places distant from their domicile. Occasion for the discount for geographical reasons arose more frequently, and the annoyances from it were rather aggravated. (242-243)
+
+In another publication Breckenridge (1910, 132) writes about the discussion prior to the passage of the Bank Act of 1890 :
+
+Still another cause for complaint was to be found in the circumstance that bank notes did not circulate at par in all parts of the country. Notes ordinarily were subject to discount equal at least to the domestic exchange on the place where they were payable, when offered in place remote from that of issue. When a branch office of the promissor was in the neighborhood, the notes could be used in making payment to such a branch and hence had better standing. . . . Being a frequent annoyance, the discount for geographical reasons constituted no incon siderable grievance.
+
+He also states, without specific citations, “As a rule Montreal notes would pass at par in Toronto, but that was because the exchange was in favor of the eastern city. Toronto notes would not ordinary be worth their face in Montreal.” Breckenridge (1910, 96-97). 23 The problem of discounts on notes of banks in different locations was addressed in Section 55 of the Bank Act of 1890, which required banks to establish redemption agencies in the major cities of Halifax, St. John, Charlottetown, Montreal, Toronto, Winnipeg and Victoria. The establishment of agencies for note redemption appears to have established uniformity as no discounts on notes of banks that were in operation are reported to have occurred after 1890. However, the Bank Act of 1890 did create a nonuniformity with respect to the notes of suspended banks. According to Johnson (1910, 68), “the notes of a failed bank, on account of the interest they bear, sometimes command a premium.” The same point was made by Root (1897, 7-8):
+
+The notes [of a failed bank] were readily accepted by all the other banks, as there was no question about the certainty of their ultimate payment, and, since they bore interest at 6 per cent. from the date of suspension until redeemed, they were regard by bankers in general as a rather favorable investment. Root (1897)
+
+23The asymmetry of the discounts on notes of banks in different locations was also the case in the United States. Ales, Carapella, Maziero, and Weber (2008) exploit this asymmetry in their model of discounts on state bank notes in that country.
+
+The interest rate was lowered to 5 per cent in 1900 in part to remove this premium. 24
+
+5 Did Dominion Notes Improve the System?
+
+In the previous section, we examined how well the notes of Canadian banks performed relative to each of the five desirable characteristics described in the introduction. In this section, we examine whether the addition of Dominion notes improved the performance of the Canadian monetary system.
+
+5.1 Ease of transacting The addition of Dominion notes as a medium of exchange did not improve the situation with regard to transporting media of exchange since Dominion notes were paper just as were bank notes. With regard to the restriction that bank notes could not be issued in denomi nations less than $5 after 1880, Dominion notes improved this situation as they were issued in denominations of $1 and $2. However, concluding that because they were issued in these smaller denominations Dominion notes made transacting easier is disingenuous because, at least according to Breckenridge (1910), these restrictions on minimum bank note denomina tions were put in place to help get Dominion notes into circulation. Specifically, he states, “By canceling the privilege of bank issue under $4 a further certainty of markedly wider use for the legal-tender paper was established” Breckenridge (1910, 105).
+
+5.2 Minimal counterfeiting The addition of Dominion notes as a medium of exchange did not improve the situation with regard to counterfeiting as there was considerable counterfeiting of Dominion notes. The catalogue Canadian Government Paper Money (Graham (2016)) states that:
+
+• “The $1 Toronto notes [of 1870] were counterfeited extensively.” (118)
+
+• “Both Montreal and Toronto $2 notes [of 1878] were extensively counterfeited, leading 
+to the retirement of the Dufferin $2 note after 1887 . . . . (132) 
+
+Further, Dickerman’s United States Treasury Counterfeit Detector of October 1899, which has a list of counterfeit Canadian notes, includes the Dominion notes mentioned above plus counterfeits of the $2 of 2 July 1887. Speer (1904)
+
+24The discussion here considers uniformity solely within the context of Canada. If one takes a broader perspective, however, notes of Canadian banks were not a uniform currency with regard to transactions in the United States. Dickerman’s of October 1899 also has a table of quotations of the discounts on Canadian bank notes in New York, Boston, Philadelphia, and Chicago. The table shows discounts varied by the location of the Canadian bank. The discounts continued at least through 1907, which is when Dickerman’s stopped publishing.
+
+5.3 High degree of safety 
+In one sense, the addition of Dominion notes as a medium of exchange did not improve 
+the situation with regard to the safety of the media of exchange. The reason: No fiduciary 
+currency is 100 per cent safe. There can always be a run on the currency. Just as a bank 
+can run out of whatever it has to redeem its currency, a government or central bank can run 
+out of whatever is backing the currency. 
+However, the Canadian government did take actions to make its notes quite safe by 
+including in the Provincial Notes Act a provision to give some protection against runs. 
+Specifically, section 12 required 
+
+Provincial Debentures shall be issued and shall be held by the Receiver General, to the full amount by which the specie held as aforesaid fails to cover the whole amount of Provincial notes outstanding at any time; such debentures being so held for securing the redemption of the Provincial notes, and the Receiver General having full power to dispose of them, either temporarily or absolutely, for raising funds for that purpose or for procuring the amounts of specie to be held by him under the provisions of this section.
+
+There was a similar provision in the Dominion Notes Act. Thus, these two acts gave the Receiver General the means to obtain specie in the event of a run. However, these provisions did not make the Dominion notes perfectly safe as there could have been a time lag between a run and the time when the Receiver General was able to sell the debentures and get the specie. Nonetheless, there never was a run on Dominion notes. Thus, it turned out that they improved the quality of the medium of exchange because they made a perfectly safe medium of exchange available in addition to bank notes.
+
+5.4 Scarcity 
+Above, we showed that the quantity of bank notes was limited. The addition of Dominion 
+notes as a medium of exchange made media of exchange only slightly less scarce as there 
+were always legislated limits on the quantity of Dominion notes that could be issued with 
+less than 100 per cent gold backing. This amount increased in several increments from $8 
+million in 1868 to $76 million in 1915. 25 
+That the growth of Dominion notes was limited is shown in Figure 6. That the quantity 
+of bank notes was also limited is shown in the figure for comparison. Note that the quantity 
+of Dominion notes is less than the quantity of bank notes until 1908. The figure shows from 
+1867 to 1900 Dominion notes grew relatively slowly at 5.8 per cent per year. The growth 
+increased markedly to 12.5 per cent per year from 1900 and 1914, and there was a big run 
+up (17.5 per cent per year) between 1914 and 1918 that can be explained by the need to 
+finance WWI. The quantities of Dominion notes fell after the war ended, although the level 
+was still higher in 1929 than it was in 1914. 
+
+25See the table in Beckhart (1929, 293-294) for more details on the maximum amounts of Dominion notes that could be issued and the backing requirements.
+
+0
+
+50
+
+100
+
+150
+
+200
+
+250
+
+300
+
+350
+
+##### 1860 1870 1880 1890 1900 1910 1920 1930 $millions Banknotes Dominionnotes
+
+Figure 6: Dominion notes and bank notes outstanding, 1867–1929
+
+Figure 7: A Bank Legal
+
+However, the quantities of Dominion notes shown in Figure 6 overstate the quantity of notes in circulation in the hands of the public. The reason is that Dominion notes were held as reserve by banks. In fact, beginning in 1896 special Dominion notes, called “Bank Legals,” were issued that were intended for use only by banks. They were initially issued in denominations of $500, $1,000 and $5,000. Later, they were issued in denominations up to $50,000. On the front on these notes it was stated that “This note is good only in the hands of a bank to which ‘The Bank Act’ applies: and will be redeemed only when presented by such bank.” Figure 7 is a picture of the front of one such note. The quantity of Dominion notes shown in Figure 6 includes Bank Legals. In Figure 8 we show the changes in the total quantity of Dominion notes and Bank Legals from 1896 to 1929. It can be seen that the two lines lie virtually on top of each other indicating the change in the quantity of Dominion notes was almost entirely due to changes in the quantity of Bank Legals. The implication is that the quantity of Dominion notes in the hands of the public remained almost unchanged over this time period.
+
+-40,000 -20,000
+
+0
+
+20,000
+
+40,000
+
+60,000
+
+80,000
+
+100,000
+
+1895 1900 1905 1910 1915 1920 1925 1930
+
+$
+
+ChangeInDominionnotes ChangeinLegalforbanks
+
+Figure 8: Changes in Dominion notes and Bank Legals, 1897–1929
+
+Another reason that the growth rates of bank notes and Dominion notes were restricted is that Canada was on the gold standard until 10 August 1914. It then went off the gold standard due to WWI, but returned on 1 July 1926 only to go off for good in January 1929. Being on the gold standard meant that the Canadian government and, by extension, Canadian banks were required to redeem their fiduciary obligations (Dominion notes and bank notes) in gold on demand. Thus, the growth of Dominion notes and bank notes was
+
+limited by the stock of gold in the country, which could only be augmented through gold discoveries, which did not occur, and balance of trade surpluses. Some proof that Canadian bank notes and Dominion notes were scarce is provided in Figure 9, which shows the Canadian GDP deflator from 1870 to 1929. 26 The Figure shows that prices were basically flat from 1870 to 1900 and from 1900 to 1914, they only grew at 2.0 per cent per year. Of course, there was a large increase in the price level due to WWI when Canada was off the gold standard. However, the price level declined after 1920.
+
+50
+
+100
+
+150
+
+200
+
+250
+
+1860 1870 1880 1890 1900 1910 1920 1930
+
+Index, 1869=100
+
+Figure 9: GDP Deflator, 1867–1929
+
+5.5 Uniformity 
+The introduction of Dominion notes did not contribute to the uniformity of the Canadian 
+currency. There are two reasons. The first is that until 1882 Dominion notes themselves do 
+not appear to have been a uniform currency. They could only be redeemed at their par value 
+at the specific Receiver General office at which there were marked payable, although they 
+were redeemed at a discount at other offices. 27 In writing about this situation Breckenridge 
+(1894, 226) asserts that, at least prior to 1874, “One also finds protests that the Government 
+should cease to issue from Toronto, notes payable at Montreal, or vice versa . . . .” We infer 
+26The data in this figure for 1870 to 1925 are from Urquhart (1986) and from Statistics Canada after that 
+date. 
+27The fact they were redeemed at other offices at a discount is based on a personal conversation with 
+Paul Berry. 
+
+the protests were caused by the fact that notes payable in Montreal were being discounted in Toronto. The situation changed after 1882 when Dominion notes were payable at par at all Receiver General offices. Dominion notes became a uniform currency throughout Canada. 28 The other reason that the introduction of Dominion notes did not contribute to the unifor mity of the Canadian currency is that Dominion notes did not reduce either the geographical discounts on bank notes or the discounts on the notes of suspended banks even though bank notes were redeemable in Dominion notes. The achievement of a uniform currency in Canada did not occur until the Bank Act of 1890 which established the Bank Circulation Redemp tion Fund and the requirement that banks establish offices of redemption in the country’s major commercial centres.
+
+6 Lessons
+
+Financial instruments that have monetary value, are a liability of the issuer and are generally accepted as means of payment were features of both the Canadian and the United States economies for long periods. These digital currency-like financial instruments were issued by both private entities (bank notes) and governments (Dominion notes in the case of Canada and Federal Reserve notes in the United States). In this section we use the historical experience with private and government notes in Canada, given above, and in the United States to provide some lessons about what might be the Canadian experience with digital currencies qua currency.
+
+Lesson 1: Digital currencies will be counterfeited 
+Counterfeiting is the creation of units of a medium of exchange that are not authentic. 
+There has been counterfeiting of media of exchange throughout history despite penalties, 
+some being as severe as the counterfeiter being boiled in oil. In Canada, bank notes and 
+Dominion notes were counterfeited. In the United States, the notes of state banks were so 
+widely counterfeited that “Counterfeit Detector” was part of the title of many publications 
+that reported the rates at which state bank notes exchanged with each other. National bank 
+notes and Federal Reserve notes were also counterfeited. Given this history, it is likely that 
+digital currencies would be subject to criminal attempts to counterfeit them. 
+There is an additional problem, which is similar to counterfeiting, that arises with decen 
+tralized digital currencies that are not issued by a government or do not rely on a trusted third 
+party (like bitcoin). This is the “double spending” problem; the possibility that someone can 
+claim that units of the currency belong to them rather than to the person who thought they 
+owned them. In the case of decentralized digital currencies that use a distributed ledger, 
+this problem has been solved by requiring “proof of work” or “proof of stake” before a block 
+of transactions can be added to the blockchain. 
+There is another problem that arises with decentralized digital currencies that do not 
+rely on a trusted third party. Such currencies can suffer fraud and cyber attacks such as 
+28Dominion notes were discounted in the United States. Once again, according to Dickerman’s in October 
+1899 they went at a 1 per cent discount in New York and a three-fourths per cent discount in Boston. 
+
+hacking into the system of the issuer or into the wallets that store or provide access to the 
+digital currency. Indeed, such hacking has already occurred. 29 
+It is also the case that counterfeiting for a digital currency would be much more catas 
+trophic than for paper currency. One counterfeit paper bill does not mean the next is also 
+counterfeit. Historically, counterfeiters tend to focus on one or two particular denomina 
+tions. 30 But one counterfeit digital currency ‘coin’ would almost certainly quickly under 
+mine the confidence in the whole system because it would be much more likely that the 
+other ‘coins’ can be counterfeited too. 
+Lesson 2: Digital currencies likely will be scarce 
+Central banks today have the power to issue their fiat currency in any amount. However, 
+the Bank of Canada, the Federal Reserve System, the Bank of England and the European 
+Central Bank are all committed to keeping inflation low and stable. The behaviour of the 
+Bank of Japan illustrates that central banks are concerned about inflation being too low. 
+Given these commitments to low and stable inflation, it is reasonable to assert the growth 
+rates of central bank digital currencies will not be very high. 
+Private digital currencies are likely to be scarce only when subject to strong government 
+regulation or when there are rules for issuance hard coded from the beginning and not subject 
+to any changes. For example, the algorithm that determines the rate at which new bitcoin is 
+created cannot be altered. Without such rules, we view it as unlikely that a private digital 
+currency would ever enjoy wide spread acceptance or even be valued at all. 
+Lesson 3: Digital currencies will not be safe, although government intervention can help 
+We first consider the case of fractionally backed digital currencies that are redeemable on 
+demand. This is the type of digital currency that is most like the Canadian notes studied here 
+and the U.S. notes studied by Weber (2014) and Weber (2015a). Issuers of digital currencies 
+would most likely only fractionally back them to increase their profitability (seigniorage) 
+and, in the case of private issues, to reduce or eliminate the need to charge transaction fees 
+to cover the cost of running the network and keeping a ledger. 
+No fractionally backed financial instrument that is redeemable on demand, whether issued 
+by a private entity or the government, can ever be perfectly safe. In the case of private issuers, 
+there is the possibility it will fail. And for both types of issuers, there is always the possibility 
+of a run due either to intrinsic or extrinsic uncertainty. 31 
+This fact plus the historical experience—some holders of the notes of Canadian banks 
+and some holders of the notes of state banks in the United States suffered losses—shows that 
+29 For example, Bitfinex, a provider of bitcoin wallets, was hacked on 2 August 2016 and 119,756 bitcoin 
+were stolen. However, hacking is a problem for all forms of electronic payments not just digital currencies. 
+Credit cards have also been hacked. 
+30For example, Wesley Weber, one of the most well-known counterfeiters in Canada in recent years 
+produced a large amount of counterfeited $100 bills (Powell and Moxley, 2014, 98-97). 
+31Intrinsic uncertainty is uncertainty that affects economic fundamentals such as preferences or technology. 
+Extrinsic uncertainty is uncertainty that does not affect economic fundamentals. Extrinsic uncertainty is 
+sometimes referred to as “sunspots” in the economics literature. See Diamond and Dybvig (1983) for a 
+model of bank runs caused by extrinsic uncertainty. 
+
+digital currencies qua digital currencies will not be perfectly safe. However, the historical 
+experience with Canadian and United States bank notes also shows that private digital 
+currencies can be made perfectly safe with government intervention, although it cannot be 
+achieved solely through regulation. 
+Canada first attempted to achieve bank note safety strictly through regulation. It im 
+posed double liability on shareholders in 1871 and made bank notes a first lien on a failed 
+bank’s assets in 1880. These regulations made bank notes safer, but note holders still suf 
+fered losses. These losses came in two forms. Notes of banks that suspended payments went 
+at a discount until the bank’s affairs were finally settled. As a result, note holders who 
+wanted to spend their notes immediately after the bank’s suspension were not able to use 
+them as payment at the face value. The other loss was that even if note holders held on to 
+their notes until the bank’s affairs were settled, they might not receive full value because the 
+bank’s assets were not sufficient to pay off all outstanding notes even with double liability of 
+shareholders. Some states in the United States also attempted to achieve bank note safety 
+through regulation by requiring banks to fully back their note issues with state bonds – 
+so-called free banking legislation. However, this also did not work. Many holders of free 
+bank notes suffered losses when the value of the bonds backing the notes fell. 
+This historical experience shows that attempting to achieve bank note safety solely 
+through regulation will not be completely successful. Some type of insurance will be neces 
+sary, although the two countries provided insurance of bank notes in different ways. In the 
+case of the United States, bank note insurance was provided by the government. The U.S. 
+Treasury was committed to promptly redeem the notes of any national bank that failed. The 
+result was that no holder of national bank notes suffered a loss. 
+In the case of Canada, the insurance was provided by the banks themselves although the 
+government required them to do so. The Canadian insurance scheme was set up in the Bank 
+Act of 1890. The goal of making bank note holders safe from losses was achieved through two 
+provisions in that Act. The first was the establishment of the Bank Circulation Redemption 
+Fund to which all banks were required to contribute. The Bank Circulation Redemption 
+Fund had (or at least was expected to have) enough resources to cover the notes of failed 
+banks in the event of the failure of one or more banks. Second, notes holders were paid 
+interest from the date of suspension to the date at which they could redeem their notes. 
+This prevented notes of a failed bank from going at a discount from the time it suspended 
+until the time where the persons closing up its affairs were able to redeem its notes. 
+We consider next the case of fiat digital currencies; i.e., digital currencies that are not 
+a liability of the issuer or issuers. One result in monetary theory is that any economy with 
+a fiat currency has two equilibria. There is one in which the currency is valued and one in 
+which it is not. There is no evidence of any government issued fiat currency having become 
+valueless. 32 This may be the case because of the power governments have to declare their 
+currencies legal tender and require that they be accepted in certain transactions. However, 
+it cannot be expected to hold true for tokens, fiat digital currencies that are not issued by a 
+government, because the issuers of these digital currencies do not have such powers. There 
+is some evidence that tokens can disappear and become valueless. Of the 150 tokens with 
+
+32There are instances when government issued fiat currency have become close to valueless. For example, Zimbabwe’s 100 trillion dollar note that barely paid for a loaf of bread in 2009.
+
+the largest marketcap at the end of 2015, 6 had disappeared by November 2016. 33
+
+Lesson 4: Digital currencies will not be a uniform currency without government intervention
+
+In this subsection, we assume that the media of exchange under consideration are per 
+fectly safe or face identical risks that the issuer will not be able to make good on its liability. 
+Otherwise, exchange rates between media of exchange can fluctuate as their relative riskiness 
+changes. 
+The starting point for our analysis is this proposition: When there are multiple media of 
+exchange, some type of mechanism is generally required for them to be a uniform currency. 34 
+Without such a mechanism, exchange rates between media of exchange can deviate from par 
+and the deviations can vary by the identities of the respective issuers, their locations, and 
+the location at which the exchange is to take place. 
+Both Canada and the United States had periods in which there was no mechanism in 
+place to effect the par exchange of bank notes and thereby make them a uniform currency. 
+In Canada, no such mechanism was in place until the Bank Act of 1890, and notes of sound 
+banks from geographically distant locations typically went at a discount during that period. 
+In the United States, prior to 1863 there was no mechanism in place to effect the par exchange 
+of the notes of state chartered banks. As Weber (2014) showed, the notes of sound banks 
+were almost uniformly discounted outside of the location at which they were issued. 
+In both Canada and the United States it was government intervention that led to the 
+mechanism that eliminated these discounts. In Canada, the intervention was the requirement 
+in the Bank Act of 1890 that banks establish redemption agencies in the country’s major 
+financial centres. In the United States, the intervention was the establishment of a note 
+clearing facility run by the United States Treasury. Once this note clearing facility was 
+established, notes of the various national banks exchanged at par. 
+This history suggests that the mechanism to achieve currency uniformity requires some 
+intervention by a government. Neither Canadian nor U.S. banks on their own established any 
+mechanism for nation-wide clearing or redemption which would have also served to eliminate 
+such discounts. Looking over the entire history of bank notes for both countries, we only see 
+one case in which there was a private mechanism that led to uniformity, and this mechanism 
+was regional and only lasted for about 30 years. This was the Suffolk Banking System in 
+New England, which operated from the 1820s to 1858. The Suffolk Banking System was a 
+private clearing arrangement that led to the elimination of discounts on the notes of New 
+England banks during the period in which it operated. 35 
+However, having the government intervene to establish a clearing mechanism is not 
+enough to achieve uniformity in and of itself. What is also required is that the cost of 
+clearing or redeeming notes be borne by the issuer of the note rather than by the holder. 
+This was the case in Canada. Banks had to establish and run redemption agencies in the 
+33This calculation is based on information from coinmarketcap.com. We take their designation of a token 
+as “Inactive” as meaning that token has disappeared. 
+34For a discussion of the indeterminacy of equilibrium exchange rates in the absence of a mechanism, see 
+Kareken and Wallace (1981). 
+35For a description of the Suffolk Banking System see Whitney (1878). 
+
+commercial centres or pay some bank or other entity in those centres to provide those ser 
+vices for them. It was also the case in the United States. Banks were charged according to 
+the proportion their notes were of the total notes presented for clearing. It should also be 
+noted that the Suffolk Banking System had the feature that the costs were borne by note is 
+suers rather than note holders. Banks that joined the System had to maintain a non-interest 
+bearing specie deposit with the Suffolk Bank, the entity that ran the System. 
+It may seem obvious that a goverment digital currency would be a uniform currency. No 
+mechanism would be needed. And we would agree that is the case when there is only one 
+government digital currency. However, the Canadian experience shows that if there is more 
+than one government issued media of exchange that may not be the case. Between 1868 
+and 1880, Canada had several government issued media of exchange. As discussed above, 
+the Dominion notes payable at Receiver General offices in Montreal, Toronto and Halifax 
+were distinct media of exchange. And, there is evidence that the Dominion notes that were 
+payable in Montreal did not always exchange at par in Toronto and vice versa. Dominion 
+notes became a uniform currency only when the y were made payable at all Receiver General 
+offices; that is, when the system was changed so that there was only one government issued 
+medium of exchange. Thus, in a sense Canada established a mechanism by eliminating the 
+need for one. 
+Finally, we consider the case in which there are one or more private digital currencies 
+and a government digital currency. Both Canada and the United States had periods during 
+which private bank notes and government issued notes were in existence at the same time. 
+In the United States, national bank notes and Federal Reserve notes were a uniform currency 
+exchanging at par with each other. The mechanism was that banks were required to redeem 
+their notes in Federal Reserve notes and that the Federal Reserve would accept bank notes 
+as reserves. In Canada, however, bank notes and Dominion notes were a uniform currency 
+only after Dominion notes were made redeemable at all Receiver General offices and the 
+Bank Act of 1890 went into effect. 
+However, bank notes in Canada and the United States were issued in terms of the mon 
+etary unit—the Canadian dollar and the U.S. dollar—that existed in those countries at the 
+time. Today, however, there are private digital currencies that have their own unique mon 
+etary unit that differs from any national currency unit. Will these digital currencies be a 
+uniform currency either with other digital currencies? We think the answer is that they will 
+not for three reasons. First, we do not think any government would be willing to establish 
+the clearing mechanism required for those currencies to have fixed price with its currency. 
+Second, no private entity could establish such a mechanism as it would eventually run out 
+of the government currency or private digital currency necessary to intervene in the market 
+to keep the exchange rate fixed. Third, it would not be in the interest of any private digital 
+currency issuer to establish such a mechanism as it would eliminate some of the competitive 
+advantage that the issuers of such currency are attempting to achieve. 
+
+Lesson 5: A central bank can always get its digital currency into circulation, but its digital 
+currency will not necessarily drive out private digital currencies 
+A government or central bank can always issue an instrument that will circulate as a 
+medium of exchange. This is due, at least in part, to its ability to declare such an instrument 
+the sole instrument in which taxes can be paid. 
+Historical experience indicates that designating an instrument to be legal tender might 
+not be enough to get it into circulation, however. The Provincial Notes and Dominion Notes 
+acts only declared them to be legal tender. They did not specify that they were the only 
+means by which taxes could be paid. It seems that the Canadian Government worried that 
+notes issued by it would not be adopted. This may have been one of the reasons that the 
+1841 proposal for a government currency included the prohibition on banks issuing notes and 
+why the Provincial Notes Act (1866) contained incentives for banks to pay out Provincial 
+notes rather than their own. As we described above, it may also have been one of the reasons 
+that the Bank Act of 1871 raised the minimum denomination for bank notes to $4. 
+However, the historical evidence also suggests that if a central bank were to issue a digital 
+currency, this currency would not drive out existing private digital currencies. Canada began 
+issuing Provincial notes in 1866, but bank notes continued to circulate until 1 January 1950. 
+The Federal Reserve System in the United States began issuing notes in 1914, but national 
+bank notes continued to circulate. 36 Thus, the historical experience in these two countries 
+suggests that if a private digital currency is in existence and the central bank begins to 
+issue a digital currency, the two currencies will co-exist. Thus, if the central bank wants to 
+be the monopoly issuer of digital currency but a private digital currency or currencies are 
+already generally accepted and enjoy wide usage, then private digital currency will have to 
+be prohibited. Bank notes went out of existence in Canada and the United States only after 
+government actions were taken prohibiting their issuance. 
+What about the question of whether a private digital currency can gain wide acceptance 
+if a government has the monopoly on issuing paper currency or coins denominated in a 
+country’s monetary unit? Octopus cards in Hong Kong, M-PESA in Kenya, PayPal prepaid 
+balances and Visa/Master Card prepaid cards show that digital currencies denominated in 
+a country’s monetary unit can arise. Further, bitcoin shows that it is also possible for a 
+digital currency with its own monetary unit can arise. That bitcoin’s acceptance appears to 
+growing would seem to indicate that such an alternative digital currency can became widely 
+accepted. However, no government has yet issued a digital currency and so we don’t know 
+if people will still be using Octopus cards, M-PESA, prepaid cards, or bitcoin when there is 
+a central bank digital currency. It is possible that people may find it more beneficial to use 
+the central bank digital currency than these other digital currencies. Further, it is unlikely 
+that bitcoin, or any other private digital currency that has it own monetary unit, will drive 
+out central bank issued digital currencies. 
+
+36See Weber (2015b).
+
+7 Conclusion
+
+This paper examines the historical Canadian evidence on bank note and Dominion note 
+issuance from the early 1800s until the introduction of the Bank of Canada in 1934. From this 
+experience with competing public and private currencies, we derive lessons for what might 
+happen in the future as various groups attempt to introduce private digital currencies. We 
+conclude that well designed and managed private digital currencies could circulate widely 
+but only with appropriate government regulation to ensure their safety, soundness, and uni 
+formity. Future research along these lines should examine similar historical episodes in other 
+countries. In addition, history can be studied to derive lessons for private digital currencies 
+such as Bitcoin since these currencies represent completely different units of account and, as 
+such, make no attempt at uniformity. 
+Beckhart (1929) Canada, Dominion Bureau of Statistics (1935) Shortt (1986) 
+
+References
+
+Ales, L., F. Carapella, P. Maziero, and W. E. Weber (2008): “A Model of Bank note Discounts,” Journal of Economic Theory, 142, 5–27.
+
+Bank of Canada (1945): Annual Report to Minister of Finance and Statement of Ac counts. Ottawa.
+
+Beckhart, B. H. (1929): The Banking System of Canada. Henry Holt and Company, New York.
+
+Breckenridge, R. M. (1894): “The Canadian Banking System, 1817 - 1890,” Ph. D. Dissertation, Columbia College.
+
+(1910): The History of Banking in Canada. Government Printing Office, Washing ton, D.C.
+
+Canada, Dominion Bureau of Statistics (1935): The Canada Year Book, 1934-35. Ottawa.
+
+Curtis, C. A. (1931): Statistical Contributions to Canadian Economic History, volume I. The Macmillan Company of Canada, Limited, Toronto.
+
+Diamond, D. W., and P. H. Dybvig (1983): “Bank Runs, Deposit Insurance, and Liquidity,” The Journal of Political Economy, pp. 401–419.
+
+Gorton, G. (2016): “Safe Assets,” manuscript, Yale University.
+
+Graham, R. J. (ed.) (2016): Canadian Government Paper Money. The Charlton Press, Toronto.
+
+Ha laburda, H., and M. Sarvary (2016): Beyond Bitcoin. Palgrave Macmillan, New York.
+
+Johnson, J. F. (1910): “The Canadian Banking System and Its Operation under Stress,” The Annals of the American Society of Political and Social Science, pp. 60–84.
+
+Kareken, J., and N. Wallace (1981): “On the Indeterminacy of Equilibrium Exchange Rates,” Quarterly Journal of Economics, pp. 207–222.
+
+Mishkin, F. S. (2009): The Economics of Money, Banking, and Financial Markets, 9th edition. Addison-Wesley, New York.
+
+Powell, J. (2005): A History of the Canadian Dollar. Bank of Canada, Ottawa.
+
+Powell, J., and J. Moxley (2014): Faking It: A History of Counterfeiting in Canada. General Store Publishing House, Beaconsfield, Quebec.
+
+Root, L. C. (1897): “Canadian Bank-Note Currency,” Sound Currency, pp. 1–16.
+
+Shortt, A. (1986): Adam Shortt’s History of Canadian Currency and Banking, 1600 -1880. reprinted by Canadian Bankers’ Association, Toronto.
+
+Speer, V. (ed.) (1904): Memoirs of a Great Detective: Incidents in the life of John Wilson Murray. The Baker and Taylor Co., New York.
+
+Urquhart, M. C. (1986): “New Estimates of Gross National Product, Canada, 1870 -1926: Some Implications for Canadian Development,” in Long-term Factors in American Economic Growth, ed. by S. L. Engerman, and R. E. Gallman, pp. 9–94. University of Chicago Press, Chicago.
+
+Walker, B. E. (1893): “Banking in Canada,” Paper read before the Congress of Bankers and Financiers, Chicago, 23 June.
+
+(1909): A History of Banking in Canada. Toronto.
+
+Weber, W. E. (2014): “The Efficiency of Private E-Money-Like Systems: The U.S. Expe rience with State Bank Notes,” Bank of Canada Working Paper No. 2014-15.
+
+(2015a): “The Efficiency of Private E-Money-Like Systems: The U.S. Experience with National Bank Notes,” Bank of Canada Working Paper No. 2015-3.
+
+(2015b): “Government and Private E-Money-Like Systems: Federal Reserve Notes and National Bank Notes,” Bank of Canada Working Paper No. 2015-8.
+
+Whitney, D. R. (1878): The Suffolk Bank. Riverside Press, Cambridge, MA.
+

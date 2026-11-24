@@ -1,0 +1,53 @@
+{
+  "claim_id": "txt-1895656fef-000448258-000448394",
+  "plan": {
+    "object": "遵循乌托邦传统的我们",
+    "conditions": [
+      "By following the utopian tradition"
+    ],
+    "quantifier": "",
+    "result": "不只逃出假乌托邦，而且回到现实",
+    "time_window": "1923年到截止日",
+    "counterevidence_needed": "传统被遵循之后没有回到现实"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "support_query": "utopian tradition Mumford followed and modern society returned to reality",
+        "counter_query": "Mumford eutopian program was not carried out by later society",
+        "saved_at_utc": "2026-11-20T11:11:02Z",
+        "tool_call_id": null
+      }
+    ],
+    "adaptive_rounds": 0,
+    "stop_reason": "2022年文章写这个设想没有实现。条件没有发生，回到现实就不评分。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "trend_aligned": false,
+    "condition_state": "not_met",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": [
+      "ev-counterpunch-2022"
+    ],
+    "scope": "条件是遵循这书所说的乌托邦传统。结果是因此回到现实。",
+    "reason": "2022年4月26日的文章写芒福德和霍华德的社会城市设想没有实现，近来几十年是市场放任。遵循这个传统的条件没有发生。回到现实因此不评分。",
+    "limitation": "没有实现的是区域社会城市。它是同章传统的直接后续，不是一切自称乌托邦的作品。",
+    "method": "条件没有发生时，不把结果判成正确或错误。",
+    "method_basis": "explicit",
+    "remaining_gap": "条件没有发生。若要给回到现实打分，需要这个传统实际上被遵循之后的结果。"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "pass",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "条件没有发生，结果不评分。"
+  }
+}

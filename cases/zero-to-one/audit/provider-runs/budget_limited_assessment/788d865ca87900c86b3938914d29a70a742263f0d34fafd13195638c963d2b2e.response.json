@@ -1,0 +1,28 @@
+{
+  "id": "5ee19d85-cc20-4273-8ab6-c77af19303a5",
+  "object": "chat.completion",
+  "created": 1794201447,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000040349-000040385\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为对福利开支逻辑的讽刺性评论，非可检验的未来事实预测；无操作化指标与观察时段。\",\"reason\":\"该句以“依据福利开支的不明确逻辑”作修辞性说明，并非预测未来将发生何事。\",\"limitation\":\"属作者价值判断与讽刺表达，无法作为可验证预测评分。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4227,
+    "completion_tokens": 152,
+    "total_tokens": 4379,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3459
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

@@ -1,0 +1,51 @@
+{
+  "claim_id": "txt-1895656fef-000443792-000443886",
+  "plan": {
+    "object": "民族国家等神话的形式",
+    "conditions": [],
+    "quantifier": "long after",
+    "result": "现实的最后一丝消失以后，形式仍会长期保存",
+    "time_window": "last shred of reality has disappeared 之后",
+    "counterevidence_needed": "现实已经消失，形式却没有留下；或现实尚未消失"
+  },
+  "select": {
+    "rounds": [
+      {
+        "round": 1,
+        "support_query": "nation state myth preserved after the reality of national sovereignty disappeared",
+        "counter_query": "the nation state remains a real sovereign institution in the twenty-first century",
+        "saved_at_utc": "2026-11-20T11:11:02Z",
+        "tool_call_id": null
+      }
+    ],
+    "adaptive_rounds": 0,
+    "stop_reason": "2021年1月31日的文章写国际秩序仍然主要是国家之间的秩序。最后一丝现实尚未消失。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "future",
+    "trend_aligned": false,
+    "condition_state": "unconditional",
+    "future_time_text": "long after the last shred of reality has disappeared",
+    "observation_end": null,
+    "evidence_ids": [
+      "ev-roth-2021"
+    ],
+    "scope": "要先有现实的最后一丝消失，才能观察形式是否在那之后长期保存。",
+    "reason": "Roth 2021年1月31日写，国际秩序仍然主要是国家之间的秩序，国家是有领土的政治共同体。民族国家的现实没有被写成已经消失。long after 的窗口还没有打开。",
+    "limitation": "有些作者把民族国家叫作神话。那不是这页所写的现实已经消失。",
+    "method": "先看时间从句里的消失是否发生。没有发生就不给保存与否打分。",
+    "method_basis": "explicit",
+    "remaining_gap": "缺一份材料证明这些神话的最后一丝现实已经消失。在那之前，形式是否长期保存还不能观察。"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "pass",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "现实仍在，消失之后的保存还没有窗口。"
+  }
+}

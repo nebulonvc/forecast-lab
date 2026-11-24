@@ -1,0 +1,28 @@
+{
+  "id": "063efead-144e-4325-850d-84f48a718ac9",
+  "object": "chat.completion",
+  "created": 1794201447,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000039029-000039049\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文描述婴儿潮时期富有精英对既定道路延续性的主观预期，未提出可核验的预测命题或时间窗口。\",\"reason\":\"该句是对特定群体信念的描述，作者并未将其作为对未来的预测主张，也没有指定可观察的后代范围或结果指标。\",\"limitation\":\"属于对他人心态的叙述，无法操作化为可验证的预测；不评估其真假。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4292,
+    "completion_tokens": 163,
+    "total_tokens": 4455,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3524
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

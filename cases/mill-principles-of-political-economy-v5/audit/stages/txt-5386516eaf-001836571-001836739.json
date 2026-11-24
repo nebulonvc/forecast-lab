@@ -1,0 +1,53 @@
+{
+  "id": "txt-5386516eaf-001836571-001836739",
+  "assess": {
+    "id": "txt-5386516eaf-001836571-001836739",
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "observation_end": null,
+    "evidence_notes": [],
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "劳动者生活资料费用总体上倾向于增加，而农业改进是对这一效果和利润下降的抵消力量。",
+    "reason": "检索到的长期食品商品价格指数不是劳动者生活资料费用，也没有把农业改进这一抵消条件分开。不判上升或下降。",
+    "limitation": "条件句留在原引文里，不改成无条件上升。",
+    "evidence_ids": [],
+    "remaining_gap": "缺劳动者生活资料费用、并分开农业改进是否抵消的同对象序列。",
+    "method": "检索食品价格后拒绝代理。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001836571-001836739",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "this round"
+      },
+      {
+        "role": "counter",
+        "query": "this round"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [],
+    "reason": "对象或量词不符的材料只作边界，不计分。"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "txt-4934182645-000569285-000569380",
+  "plan": {
+    "object": "夺去别人王位、又让对方活着的人。章题写的是 usurper，以及被他夺去王位而仍然活着的人。前两个罗马例子都早于1531，不能计分。",
+    "condition": "so long as those from whom he has taken it survive。被夺去王位的人必须还活着。已经杀死原主、只剩下旁支幼主，不是这句的同一对象。",
+    "quantifier": "can never live securely。一次被赶下位不能单独证明 never；一次在对方活着时仍然在位，若正文没有写 securely，也不能反驳。",
+    "result": "登记变化是 never live securely。安全是同章后文 secure possession 的反面，不是只要还没被杀死。",
+    "window": "1531至2026-11-15。塔尔昆和塞尔维乌斯是出版前的例子。",
+    "counterevidence_needed": "1531年之后，一个人夺去王位，被夺者还活着，而他在这段时间里安全地保有王位；或者被夺者还活着时，他确实不能安全地保有。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "usurper murdered by the deposed ruler's family while the former prince was still alive after 1531",
+      "counter_query": "new king lived securely in power while the deposed monarch he replaced was still alive"
+    },
+    "adaptive_rounds": 1,
+    "adaptive": {
+      "strategy": "首轮反例停在1399和1327年，改查1531年之后、被废国王仍活着时新王是否保有王位",
+      "queries": ["William III kept the English throne while the deposed James II was still alive in France"]
+    },
+    "kept_urls": [
+      "http://www.ibiblio.org/britishraj/Tod1/bk04ch10.html",
+      "https://www.nottingham.ac.uk/manuscriptsandspecialcollections/learning/biographies/williamiii(1650-1702).aspx",
+      "https://www.westminster-abbey.org/abbey-commemorations/royals/james-ii"
+    ],
+    "dropped": "亨利四世和爱德华三世都在1531年之前。1548年沃拉翁萨提拉的前任已经被杀，不满足被夺者仍然活着。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-tod-banbir", "ev-nottingham-boyne", "ev-abbey-james-1701"],
+    "scope": "被夺者必须活着。安全必须是正文里的保有，不是一次入侵失败，也不是一次幼主复位。",
+    "reason": "托德写，班比尔在都城被乌代·辛格的拥护者打开城门后，获准带着家人和财产离开。被他杀死的前王已经不在，活着的是幼主，所以不是“被夺去王位的那个人还活着”。诺丁汉写，詹姆斯逃往法国后威廉接受王位，被废的詹姆斯后来带军队在爱尔兰登陆，1690年在博因河被威廉打败。威斯敏斯特教堂写，詹姆斯1688年12月离开英格兰，1701年9月6日死于圣日耳曼。两页合起来是同一个威廉、同一个詹姆斯：被夺者还活着，并且打过一次败仗。页面没有写威廉在这段时间安全地保有王位，也没有写他失去王位。一次复位不能证明 never，一次未写安全的在位也不能反驳。决定性缺口是：没有正文在被夺者仍然活着的整段时间里，写出安全保有或不能安全保有。",
+    "limitation": "托德没有出版日，班比尔的年份不在所引句子里。教堂页另一处把死亡写成9月16日，计分只用葬礼句的9月6日。威廉的死亡日不在这两页里，不拿来接合。",
+    "method": "先要被夺者本人还活着，再看安全保有是否写在正文里。出版前的塔尔昆不进入窗口。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "詹姆斯1688至1701年仍活着，威廉打败了他的入侵，但页面没有写安全。班比尔面对的是幼主，不是被他夺位的那个还活着的人。"
+  }
+}

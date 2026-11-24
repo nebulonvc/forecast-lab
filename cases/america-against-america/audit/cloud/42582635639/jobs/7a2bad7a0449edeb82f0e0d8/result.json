@@ -1,0 +1,541 @@
+{
+  "claim_id": "txt-1c4066fc0c-000049004-000049051",
+  "version": "search-verifier-v1",
+  "input_sha256": "23544c2e552cf3959af4513cfad6e7bdfa34edef4765cd989bb304d85a22e727",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000049004-000049051",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "conditional",
+    "scope": "按研究范围操作化：条件A为美国“从大政府转向小政府”，以联邦支出/GDP占比持续下降且主要由主动收缩政策驱动为代理；后果B为“整个社会供血不足”，以跨部门公共服务缩减且未被地方/私人资金或效率提升抵消为代理。观察时段为2010-2013财年，截止2026-11-09前。",
+    "reason": "2013年联邦支出/GDP确有下降，GAO也记录住房援助、检查频率、学校资源等局部服务缩减；但CRFB材料指出名义美元口径下大政府基本未变，下降受自动稳定器、TARP、刺激退场等临时因素影响，条件A是否真实触发无法确认。GAO仅覆盖四个选定机构组成部分，且地方/州资金缓冲了部分影响，不能支撑“整个社会供血不足”这一主要后果范围。",
+    "limitation": "“供血不足”为比喻性表述，无精确指标；现有证据集中于2013年自动削减这一特定事件，无法区分主动小政府收缩与其他财政、经济因素的相对贡献，也无法覆盖“整个社会”。关键修订：不再把支出/GDP下降直接当作条件已满足，不再以局部服务缩减判部分符合。",
+    "evidence_ids": [
+      "prior-020ab057f7af85477035",
+      "prior-3bb1bb8466892281e484",
+      "ev-5a251f0b4ac74ae81d99c997",
+      "ev-bc59011a1a6fbd4e71627c0e",
+      "ev-a74ece189f74af7562dbac16"
+    ],
+    "method": "由社会全面协调需要与政府功能缩减比较推断供给不足",
+    "method_basis": "inferred",
+    "observation_end": "2014-05-28",
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-020ab057f7af85477035",
+        "relation": "boundary",
+        "quote": "总支出2012为35380亿美元、2013为34540亿美元，下降840亿约2%；支出占GDP由22.0%降至20.8%。",
+        "publication_date": "2013-10-30",
+        "observation_end": "2013-09-30",
+        "limitation": "该来源同时指出下降部分源于失业改善、阿富汗撤军及住房机构分红等非“小政府”因素，不能证明条件A由主动小政府转向触发。"
+      },
+      {
+        "evidence_id": "prior-3bb1bb8466892281e484",
+        "relation": "support",
+        "quote": "GAO记录2013预算自动削减后部分公共服务减少或延迟：租房援助少约41000户；部分机场等待增长，部分学校资源减少。",
+        "publication_date": "2014-05-28",
+        "observation_end": "2013-09-30",
+        "limitation": "仅支持局部服务缩减，且同时指出地方资金、效率和调整缓冲了一些影响，不能支撑“整个社会供血不足”。"
+      },
+      {
+        "evidence_id": "ev-5a251f0b4ac74ae81d99c997",
+        "relation": "support",
+        "quote": "Sequestration reduced or delayed some services to the public, including benefit payments, and disrupted agency operations",
+        "publication_date": "2014-03-07",
+        "observation_end": "2013-09-30",
+        "limitation": "二手转述GAO，且明确称许多影响可能数年后才可知，当前证据不完整，仅覆盖部分服务。"
+      },
+      {
+        "evidence_id": "ev-bc59011a1a6fbd4e71627c0e",
+        "relation": "counter",
+        "quote": "spending has declined by 2.6 percentage points, from 24.1 percent of GDP in 2010 to 21.5 percent in 2013",
+        "publication_date": "2013-08-26",
+        "observation_end": "2013-08-26",
+        "limitation": "该文强调支出下降受自动稳定器、TARP、刺激退场等临时因素影响，名义美元口径下“大政府基本未变”，削弱把支出/GDP下降当作条件A已触发的做法。"
+      },
+      {
+        "evidence_id": "ev-a74ece189f74af7562dbac16",
+        "relation": "boundary",
+        "quote": "GAO reviewed programs and activities operated by four components of federal agencies: CBP, CMS, OESE, and PIH.",
+        "publication_date": null,
+        "observation_end": "2013-09-30",
+        "limitation": "报告日期未知（正文标May 2014），仅覆盖四个选定联邦机构组成部分，不能代表全部公共服务或“整个社会”。"
+      }
+    ],
+    "remaining_gap": "需先确认作者所指“从大政府转向小政府”的结构性条件是否在观察期内真实触发（而非仅由临时财政因素造成的支出/GDP下降），并取得能覆盖“整个社会供血不足”而非四个选定机构局部缩减的证据；在此之前条件状态与后果范围均未定。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000049004-000049051",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "按研究范围操作化：以联邦支出/GDP占比下降（2010年24.1%降至2013年21.5%，CRFB/CBO口径）作为“转向小政府”的代理指标，以2013年自动削减后住房援助、检查、学校资源等跨部门公共服务缩减作为“供血不足”的代理指标；观察时段为2010-2013财年，截止2026-11-09前。",
+    "reason": "2013年联邦支出占GDP明显下降，且GAO记录住房援助少约4.1万户、精神病院与移植中心检查频率降低、学校资源减少、机场等待时间上升，方向与“小政府导致社会供血不足”一致。但支出下降部分源于失业改善、阿富汗撤军、TARP/刺激退场等非“小政府”因素，且地方与州资金缓冲了部分影响，故仅部分符合。",
+    "limitation": "“供血不足”为比喻性表述，无精确指标；观察证据集中于2013年自动削减这一特定事件，不能等同于作者所指的长期结构性转向；地方/私人资金抵消程度难以量化。",
+    "evidence_ids": [
+      "prior-020ab057f7af85477035",
+      "prior-3bb1bb8466892281e484",
+      "ev-5a251f0b4ac74ae81d99c997",
+      "ev-bc59011a1a6fbd4e71627c0e",
+      "ev-a74ece189f74af7562dbac16"
+    ],
+    "method": "由社会全面协调需要与政府功能缩减比较推断供给不足",
+    "method_basis": "inferred",
+    "observation_end": "2014-05-28",
+    "future_time_text": "",
+    "condition_state": "satisfied",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-020ab057f7af85477035",
+        "relation": "support",
+        "quote": "总支出2012为35380亿美元、2013为34540亿美元，下降840亿约2%；支出占GDP由22.0%降至20.8%。",
+        "publication_date": "2013-10-30",
+        "observation_end": "2013-09-30",
+        "limitation": "该来源同时指出下降部分源于失业改善、阿富汗撤军及住房机构分红等非“小政府”因素，不能全部归因于政府主动收缩。"
+      },
+      {
+        "evidence_id": "prior-3bb1bb8466892281e484",
+        "relation": "support",
+        "quote": "GAO记录2013预算自动削减后部分公共服务减少或延迟：租房援助少约41000户；部分机场等待增长，部分学校资源减少。",
+        "publication_date": "2014-05-28",
+        "observation_end": "2013-09-30",
+        "limitation": "同时指出地方资金、效率和调整缓冲了一些影响，服务缺口并非全面。"
+      },
+      {
+        "evidence_id": "ev-5a251f0b4ac74ae81d99c997",
+        "relation": "support",
+        "quote": "Sequestration reduced or delayed some services to the public, including benefit payments, and disrupted agency operations",
+        "publication_date": "2014-03-07",
+        "observation_end": "2013-09-30",
+        "limitation": "报道为二手转述GAO，且明确称许多影响可能数年后才可知，当前证据不完整。"
+      },
+      {
+        "evidence_id": "ev-bc59011a1a6fbd4e71627c0e",
+        "relation": "boundary",
+        "quote": "spending has declined by 2.6 percentage points, from 24.1 percent of GDP in 2010 to 21.5 percent in 2013",
+        "publication_date": "2013-08-26",
+        "observation_end": "2013-08-26",
+        "limitation": "该文强调支出下降受自动稳定器、TARP、刺激退场等临时因素影响，名义美元口径下“大政府基本未变”，削弱单一归因。"
+      },
+      {
+        "evidence_id": "ev-a74ece189f74af7562dbac16",
+        "relation": "support",
+        "quote": "Public housing authorities reported providing rental assistance to about 41,000 fewer very low-income households compared to 2012—a 2.2 percent reduction",
+        "publication_date": null,
+        "observation_end": "2013-09-30",
+        "limitation": "GAO报告日期未知（正文标May 2014），仅覆盖四个选定的联邦机构组成部分，不能代表全部公共服务。"
+      }
+    ],
+    "remaining_gap": "缺乏对“供血不足”的量化定义及长期（1990年代后）结构性数据；现有证据集中于2013年自动削减事件，无法区分小政府主动收缩与其他财政、经济因素的相对贡献。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-020ab057f7af85477035",
+      "url": "https://home.treasury.gov/news/press-releases/jl2197",
+      "title": "ev-r2-l1-treasury2013",
+      "published_date": "2013-10-30",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-treasury2013",
+      "archive_sha256": "ae3c215962111d56c839ceb4c0ca99b6b3cd6869c822e939588dc8d8736246aa",
+      "archive_path": "data/sources/r2-l1-treasury2013.html",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-3bb1bb8466892281e484",
+      "url": "https://www.gao.gov/products/gao-14-452",
+      "title": "ev-r2-l1-sequester",
+      "published_date": "2014-05-28",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-sequester",
+      "archive_sha256": "113cebeb077184b662b2762532609a0b96b6ed8727cff3309742f44ba9e5f8bb",
+      "archive_path": "data/sources/r2-l1-open-2.json",
+      "date_status": "known",
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-5a251f0b4ac74ae81d99c997",
+      "url": "https://www.govexec.com/management/2014/03/agencies-detail-how-sequestration-disrupted-government-2013/80110/",
+      "resolved_url": "https://www.govexec.com/management/2014/03/agencies-detail-how-sequestration-disrupted-government-2013/80110/",
+      "title": "Agencies Detail How Sequestration Disrupted Government in 2013 - Government Executive",
+      "published_date": "2014-03-07",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:51.272774+00:00",
+      "archive_sha256": "e4c8534f929c3271ffeac2a23f73dfd93e953ce64a6da58e860fd27713c92888",
+      "archive_path": "jobs/7a2bad7a0449edeb82f0e0d8/e4c8534f929c3271ffeac2a23f73dfd93e953ce64a6da58e860fd27713c92888.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-bc59011a1a6fbd4e71627c0e",
+      "url": "https://www.crfb.org/blogs/comparing-2010-and-2013-federal-government-spending",
+      "resolved_url": "https://www.crfb.org/blogs/comparing-2010-and-2013-federal-government-spending",
+      "title": "Comparing 2010 and 2013 Federal Government Spending-2013-08-26",
+      "published_date": "2013-08-26",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:58:51.272970+00:00",
+      "archive_sha256": "b8816ea5a085d0867283d0f46ee814a52765b89744e6d14bb58fc8ece9cf70cc",
+      "archive_path": "jobs/7a2bad7a0449edeb82f0e0d8/b8816ea5a085d0867283d0f46ee814a52765b89744e6d14bb58fc8ece9cf70cc.txt",
+      "date_status": "known",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-a74ece189f74af7562dbac16",
+      "url": "https://www.gao.gov/assets/gao-14-452.pdf",
+      "resolved_url": "https://www.gao.gov/assets/gao-14-452.pdf",
+      "title": "GAO-14-452, 2013 SEQUESTRATION: Selected Federal Agencies' Components Reduced Some Services and Investments, While Taking Short-Term Actions to Mitigate Effects",
+      "published_date": null,
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T07:59:01.000243+00:00",
+      "archive_sha256": "dd5144f4cb196113d61db3cbaa9df72a7ef9899c9ff7bf2f471de0d350797f67",
+      "archive_path": "jobs/7a2bad7a0449edeb82f0e0d8/dd5144f4cb196113d61db3cbaa9df72a7ef9899c9ff7bf2f471de0d350797f67.txt",
+      "date_status": "unknown",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "GAO 2014 sequester effects public services housing assistance reduction report gao-14-452",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "federal spending GDP ratio decline 2013 sequester non-policy causes unemployment decline Afghanistan withdrawal Treasury OMB final budget",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "GAO sequestration 2013 reduced public services housing rental assistance Head Start WIC report gao-14-452",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "CRFB federal spending decline 2010 2013 percent GDP automatic stabilizers TARP stimulus non-policy factors",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [],
+  "remaining_gap": "需先确认作者所指“从大政府转向小政府”的结构性条件是否在观察期内真实触发（而非仅由临时财政因素造成的支出/GDP下降），并取得能覆盖“整个社会供血不足”而非四个选定机构局部缩减的证据；在此之前条件状态与后果范围均未定。",
+  "source_statuses": [
+    {
+      "url": "https://www.govexec.com/management/2014/03/agencies-detail-how-sequestration-disrupted-government-2013/80110/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.crfb.org/blogs/comparing-2010-and-2013-federal-government-spending",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.gao.gov/assets/gao-14-452.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "2220fd20692c0c4c4a4345296d2b4c10ddf2697d48594c2d333ebc5b9af20437"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f8516fe9354ac76b52f9d53f361bc8a3",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "4b5a6554c9d6c54dcf44b49ba6a52540",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "b14f4af26ac74dbf6c496f4349166dc7930a23243daf6836cd72119ac1f076ad"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "11bc0c60bd6fc1143aaee72c0fe95b10",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "request_sha256": "438c39c45908b22a60af2d1415f9d530c9cd2670f9509302b8879d99f05a3eac"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "ab6a35330712273acb0754ce8d8b5083",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "af4a7e8137c386f05bca61869b5953ee",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "request_sha256": "7bd2e458273aa56abd978b78c540c30de6e347904706226fd1a30ac854aba0b7"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "1a55f49e6080d8d5e37c5333d83154b7",
+      "cost_estimate_USD": 0.001,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "request_sha256": "a5f14d87ddbf0a8e96f3bd4d5918ab79e855b05861454ce48c135b126b1457c8"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "624c0c0da7c9f684dc0515ceaf0d43e5bfdbc269400f0927364bc175ddf12079"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "request_sha256": "fae436d0c286d4fa9e4869fa21928cda782fa3853be666974224ceb091e38c12"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "request_sha256": "99e4f19e90e28eeda7041a60fda7df7d396558ca3fd2e92036563310705643e6"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000049004-000049051",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "fail",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "condition_logic",
+          "reason": "原书的条件是“美国想要小政府”并据此断言“小政府肯定会造成整个社会的供血不足”。建议把2010-2013年联邦支出/GDP下降直接当作“转向小政府”已发生，但CRFB材料明确说名义美元口径下大政府基本未变，且下降受自动稳定器、TARP、刺激退场等临时因素影响；这不足以证明作者所指的“从大政府转向小政府”这一条件已经触发。条件状态被写成satisfied缺乏依据。",
+          "source_quote": "美国吃够了大政府的苦之后，\n想要小政府，但对美国社会来说，小政府肯定会造成整个社会的供血不足。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议用2013年自动削减后的局部服务缩减来支撑“整个社会的供血不足”，但GAO材料只覆盖四个选定的联邦机构组成部分，并明确说地方/州资金缓冲了部分影响、许多影响难以测量。这些证据能支持“部分公共服务减少或延迟”，不能支持“整个社会供血不足”这一主要结果范围。",
+          "source_quote": "GAO reviewed programs and activities operated by four components of federal agencies: CBP, CMS, OESE, and PIH.",
+          "evidence_id": "ev-a74ece189f74af7562dbac16",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议判“部分符合”并设trend_aligned=true，但理由主要是支出下降部分源于非小政府因素、地方资金缓冲，这属于条件是否触发及归因的缺口，而不是后果B“供血不足”哪些具体部分实现、哪些未实现的直接证据。按口径，条件A是否成立尚不确定时应保留条件状态，不能仅凭前提指标有升有降就降为部分符合。",
+          "source_quote": "按研究范围操作化：以联邦支出/GDP占比下降（2010年24.1%降至2013年21.5%，CRFB/CBO口径）作为“转向小政府”的代理指标，以2013年自动削减后住房援助、检查、学校资源等跨部门公共服务缩减作为“供血不足”的代理指标；观察时段为2010-2013财年，截止2026-11-09前。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需先确认作者所指“从大政府转向小政府”的结构性条件是否在观察期内真实触发（而非仅由临时财政因素造成的支出/GDP下降），并取得能覆盖“整个社会供血不足”而非四个选定机构局部缩减的证据；在此之前应保留条件状态与后果范围的未定，不能判部分符合。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000049004-000049051",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000049004-000049051",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "按研究范围操作化：以联邦支出/GDP占比下降（2010年24.1%降至2013年21.5%，CRFB/CBO口径）作为“转向小政府”的代理指标，以2013年自动削减后住房援助、检查、学校资源等跨部门公共服务缩减作为“供血不足”的代理指标；观察时段为2010-2013财年，截止2026-11-09前。",
+      "reason": "2013年联邦支出占GDP明显下降，且GAO记录住房援助少约4.1万户、精神病院与移植中心检查频率降低、学校资源减少、机场等待时间上升，方向与“小政府导致社会供血不足”一致。但支出下降部分源于失业改善、阿富汗撤军、TARP/刺激退场等非“小政府”因素，且地方与州资金缓冲了部分影响，故仅部分符合。",
+      "limitation": "“供血不足”为比喻性表述，无精确指标；观察证据集中于2013年自动削减这一特定事件，不能等同于作者所指的长期结构性转向；地方/私人资金抵消程度难以量化。",
+      "evidence_ids": [
+        "prior-020ab057f7af85477035",
+        "prior-3bb1bb8466892281e484",
+        "ev-5a251f0b4ac74ae81d99c997",
+        "ev-bc59011a1a6fbd4e71627c0e",
+        "ev-a74ece189f74af7562dbac16"
+      ],
+      "method": "由社会全面协调需要与政府功能缩减比较推断供给不足",
+      "method_basis": "inferred",
+      "observation_end": "2014-05-28",
+      "future_time_text": "",
+      "condition_state": "satisfied",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-020ab057f7af85477035",
+          "relation": "support",
+          "quote": "总支出2012为35380亿美元、2013为34540亿美元，下降840亿约2%；支出占GDP由22.0%降至20.8%。",
+          "publication_date": "2013-10-30",
+          "observation_end": "2013-09-30",
+          "limitation": "该来源同时指出下降部分源于失业改善、阿富汗撤军及住房机构分红等非“小政府”因素，不能全部归因于政府主动收缩。"
+        },
+        {
+          "evidence_id": "prior-3bb1bb8466892281e484",
+          "relation": "support",
+          "quote": "GAO记录2013预算自动削减后部分公共服务减少或延迟：租房援助少约41000户；部分机场等待增长，部分学校资源减少。",
+          "publication_date": "2014-05-28",
+          "observation_end": "2013-09-30",
+          "limitation": "同时指出地方资金、效率和调整缓冲了一些影响，服务缺口并非全面。"
+        },
+        {
+          "evidence_id": "ev-5a251f0b4ac74ae81d99c997",
+          "relation": "support",
+          "quote": "Sequestration reduced or delayed some services to the public, including benefit payments, and disrupted agency operations",
+          "publication_date": "2014-03-07",
+          "observation_end": "2013-09-30",
+          "limitation": "报道为二手转述GAO，且明确称许多影响可能数年后才可知，当前证据不完整。"
+        },
+        {
+          "evidence_id": "ev-bc59011a1a6fbd4e71627c0e",
+          "relation": "boundary",
+          "quote": "spending has declined by 2.6 percentage points, from 24.1 percent of GDP in 2010 to 21.5 percent in 2013",
+          "publication_date": "2013-08-26",
+          "observation_end": "2013-08-26",
+          "limitation": "该文强调支出下降受自动稳定器、TARP、刺激退场等临时因素影响，名义美元口径下“大政府基本未变”，削弱单一归因。"
+        },
+        {
+          "evidence_id": "ev-a74ece189f74af7562dbac16",
+          "relation": "support",
+          "quote": "Public housing authorities reported providing rental assistance to about 41,000 fewer very low-income households compared to 2012—a 2.2 percent reduction",
+          "publication_date": null,
+          "observation_end": "2013-09-30",
+          "limitation": "GAO报告日期未知（正文标May 2014），仅覆盖四个选定的联邦机构组成部分，不能代表全部公共服务。"
+        }
+      ],
+      "remaining_gap": "缺乏对“供血不足”的量化定义及长期（1990年代后）结构性数据；现有证据集中于2013年自动削减事件，无法区分小政府主动收缩与其他财政、经济因素的相对贡献。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000049004-000049051",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "conditional",
+      "scope": "按研究范围操作化：条件A为美国“从大政府转向小政府”，以联邦支出/GDP占比持续下降且主要由主动收缩政策驱动为代理；后果B为“整个社会供血不足”，以跨部门公共服务缩减且未被地方/私人资金或效率提升抵消为代理。观察时段为2010-2013财年，截止2026-11-09前。",
+      "reason": "2013年联邦支出/GDP确有下降，GAO也记录住房援助、检查频率、学校资源等局部服务缩减；但CRFB材料指出名义美元口径下大政府基本未变，下降受自动稳定器、TARP、刺激退场等临时因素影响，条件A是否真实触发无法确认。GAO仅覆盖四个选定机构组成部分，且地方/州资金缓冲了部分影响，不能支撑“整个社会供血不足”这一主要后果范围。",
+      "limitation": "“供血不足”为比喻性表述，无精确指标；现有证据集中于2013年自动削减这一特定事件，无法区分主动小政府收缩与其他财政、经济因素的相对贡献，也无法覆盖“整个社会”。关键修订：不再把支出/GDP下降直接当作条件已满足，不再以局部服务缩减判部分符合。",
+      "evidence_ids": [
+        "prior-020ab057f7af85477035",
+        "prior-3bb1bb8466892281e484",
+        "ev-5a251f0b4ac74ae81d99c997",
+        "ev-bc59011a1a6fbd4e71627c0e",
+        "ev-a74ece189f74af7562dbac16"
+      ],
+      "method": "由社会全面协调需要与政府功能缩减比较推断供给不足",
+      "method_basis": "inferred",
+      "observation_end": "2014-05-28",
+      "future_time_text": "",
+      "condition_state": "unknown",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-020ab057f7af85477035",
+          "relation": "boundary",
+          "quote": "总支出2012为35380亿美元、2013为34540亿美元，下降840亿约2%；支出占GDP由22.0%降至20.8%。",
+          "publication_date": "2013-10-30",
+          "observation_end": "2013-09-30",
+          "limitation": "该来源同时指出下降部分源于失业改善、阿富汗撤军及住房机构分红等非“小政府”因素，不能证明条件A由主动小政府转向触发。"
+        },
+        {
+          "evidence_id": "prior-3bb1bb8466892281e484",
+          "relation": "support",
+          "quote": "GAO记录2013预算自动削减后部分公共服务减少或延迟：租房援助少约41000户；部分机场等待增长，部分学校资源减少。",
+          "publication_date": "2014-05-28",
+          "observation_end": "2013-09-30",
+          "limitation": "仅支持局部服务缩减，且同时指出地方资金、效率和调整缓冲了一些影响，不能支撑“整个社会供血不足”。"
+        },
+        {
+          "evidence_id": "ev-5a251f0b4ac74ae81d99c997",
+          "relation": "support",
+          "quote": "Sequestration reduced or delayed some services to the public, including benefit payments, and disrupted agency operations",
+          "publication_date": "2014-03-07",
+          "observation_end": "2013-09-30",
+          "limitation": "二手转述GAO，且明确称许多影响可能数年后才可知，当前证据不完整，仅覆盖部分服务。"
+        },
+        {
+          "evidence_id": "ev-bc59011a1a6fbd4e71627c0e",
+          "relation": "counter",
+          "quote": "spending has declined by 2.6 percentage points, from 24.1 percent of GDP in 2010 to 21.5 percent in 2013",
+          "publication_date": "2013-08-26",
+          "observation_end": "2013-08-26",
+          "limitation": "该文强调支出下降受自动稳定器、TARP、刺激退场等临时因素影响，名义美元口径下“大政府基本未变”，削弱把支出/GDP下降当作条件A已触发的做法。"
+        },
+        {
+          "evidence_id": "ev-a74ece189f74af7562dbac16",
+          "relation": "boundary",
+          "quote": "GAO reviewed programs and activities operated by four components of federal agencies: CBP, CMS, OESE, and PIH.",
+          "publication_date": null,
+          "observation_end": "2013-09-30",
+          "limitation": "报告日期未知（正文标May 2014），仅覆盖四个选定联邦机构组成部分，不能代表全部公共服务或“整个社会”。"
+        }
+      ],
+      "remaining_gap": "需先确认作者所指“从大政府转向小政府”的结构性条件是否在观察期内真实触发（而非仅由临时财政因素造成的支出/GDP下降），并取得能覆盖“整个社会供血不足”而非四个选定机构局部缩减的证据；在此之前条件状态与后果范围均未定。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "王沪宁1991年著作中的条件性判断：若美国从大政府转向小政府，则美国社会将出现“供血不足”。可观察口径限定为联邦支出/GDP占比下降及跨部门公共服务缩减（如住房援助、检查、学校资源），并寻找反证：地方/私人资金、效率提升或优先级调整是否抵消服务缺口，以及支出下降是否主要源于非“小政府”因素。",
+  "elapsed_seconds": 41.362,
+  "completed_at": "2026-11-09T07:59:22.712476+00:00"
+}

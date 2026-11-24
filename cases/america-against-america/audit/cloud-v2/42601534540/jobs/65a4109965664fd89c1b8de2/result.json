@@ -1,0 +1,707 @@
+{
+  "claim_id": "txt-1c4066fc0c-000050396-000050436",
+  "version": "search-verifier-v2",
+  "input_sha256": "05ff1b632fa6e3b1f747f76b07820361098a7eef63e6436960e816e5d46ccfb0",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000050396-000050436",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以世界银行东亚太平洋（EAS）区域GDP占全球份额为“亚太世纪”的透明经济代理，观察1991—2024年：当期美元份额由22.94%升至2020年32.08%、2024年回落至28.84%；2015年不变价份额由19.56%持续升至2024年32.79%。不涵盖政治、军事、文化领导，也不含美国与南亚。",
+    "reason": "两种口径下EAS份额自1991年以来总体显著上升，不变价口径持续走高，沿“亚太重要性上升”方向有持续客观证据；但名义份额2020年后回落，且“二十一世纪”终点未到，只能判趋势符合而非终局正确。",
+    "limitation": "EAS区域定义不含美国与南亚，与“亚太”口语范围有偏离；名义与不变价口径分化，日本长期低增长削弱区域整体叙事；21世纪终点未到，最终结果待验证。",
+    "evidence_ids": [
+      "prior-a3df386dd7e705e58cbd",
+      "prior-e8c2a015ec5fdc2dab35",
+      "prior-398f1ad2fb376abfd02f",
+      "ev-7b220a44f8200c69680d5678",
+      "ev-1513d99b41a329741a85a9ad"
+    ],
+    "method": "从亚太发展与西海岸区位推断区域重要性",
+    "method_basis": "inferred",
+    "observation_end": "2024-12-31",
+    "future_time_text": "二十一世纪",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-a3df386dd7e705e58cbd",
+        "relation": "support",
+        "quote": "WDI东亚太平洋EAS和全球WLD实际年度当期美元GDP，计算区域/全球份额：1991 22.9352%，2000 24.9855%，2010 25.8498%，2020 32.0834%，2024 28.8355%。",
+        "publication_date": "2026-10-08",
+        "observation_end": "2024-12-31",
+        "limitation": "名义份额2020年后回落，且EAS定义不含美国与南亚。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-e8c2a015ec5fdc2dab35",
+        "relation": "support",
+        "quote": "WDI东亚太平洋EAS和全球WLD实际年度2015年不变价美元GDP，计算区域/全球份额：1991 19.5596%，2000 21.4429%，2010 26.7280%，2020 32.2760%，2024 32.7931%。",
+        "publication_date": "2026-10-08",
+        "observation_end": "2024-12-31",
+        "limitation": "不变价口径持续上升，但仅覆盖经济维度，不代表政治文化全面领导。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-398f1ad2fb376abfd02f",
+        "relation": "counter",
+        "quote": "日本银行回顾日本泡沫破裂后的长期通缩、需求不足及趋势增长率下降。",
+        "publication_date": "2024-05-27",
+        "observation_end": null,
+        "limitation": "日本长期低增长削弱“亚太整体”叙事，但日本仅为区域一部分。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-7b220a44f8200c69680d5678",
+        "relation": "support",
+        "quote": "East Asia & Pacific led at US$32.02 trillion, followed by North America at about US$31.0 trillion and Europe & Central Asia at US$29.29 trillion.",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "二手聚合网站，verified=false，仅作背景佐证；名义口径。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-1513d99b41a329741a85a9ad",
+        "relation": "counter",
+        "quote": "In 2024, Japan's GDP (current US$) was $4.03 trillion.",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "日本名义GDP下滑，属区域内部不利分项；二手来源，verified=false。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      }
+    ],
+    "remaining_gap": "“亚太世纪”若需涵盖政治、军事、文化等非经济维度，或需含美国与南亚的完整亚太口径，现有材料未覆盖；21世纪终点未到，最终结果待验证。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000050396-000050436",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以世界银行东亚太平洋（EAS）区域GDP占全球份额为“亚太世纪”的透明经济代理，观察1991—2024年：当期美元份额由22.94%升至2020年32.08%、2024年回落至28.84%；2015年不变价份额由19.56%持续升至2024年32.79%。不涵盖政治、军事、文化领导，也不含美国与南亚。",
+    "reason": "两种口径下EAS份额自1991年以来总体显著上升，不变价口径持续走高，沿“亚太重要性上升”方向有持续客观证据；但名义份额2020年后回落，且“二十一世纪”终点未到，只能判趋势符合而非终局正确。",
+    "limitation": "EAS区域定义不含美国与南亚，与“亚太”口语范围有偏离；名义与不变价口径分化，日本长期低增长削弱区域整体叙事；21世纪终点未到，最终结果待验证。",
+    "evidence_ids": [
+      "prior-a3df386dd7e705e58cbd",
+      "prior-e8c2a015ec5fdc2dab35",
+      "prior-398f1ad2fb376abfd02f",
+      "ev-7b220a44f8200c69680d5678",
+      "ev-1513d99b41a329741a85a9ad"
+    ],
+    "method": "从亚太发展与西海岸区位推断区域重要性",
+    "method_basis": "inferred",
+    "observation_end": "2024-12-31",
+    "future_time_text": "二十一世纪",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-a3df386dd7e705e58cbd",
+        "relation": "support",
+        "quote": "WDI东亚太平洋EAS和全球WLD实际年度当期美元GDP，计算区域/全球份额：1991 22.9352%，2000 24.9855%，2010 25.8498%，2020 32.0834%，2024 28.8355%。",
+        "publication_date": "2026-10-08",
+        "observation_end": "2024-12-31",
+        "limitation": "名义份额2020年后回落，且EAS定义不含美国与南亚。"
+      },
+      {
+        "evidence_id": "prior-e8c2a015ec5fdc2dab35",
+        "relation": "support",
+        "quote": "WDI东亚太平洋EAS和全球WLD实际年度2015年不变价美元GDP，计算区域/全球份额：1991 19.5596%，2000 21.4429%，2010 26.7280%，2020 32.2760%，2024 32.7931%。",
+        "publication_date": "2026-10-08",
+        "observation_end": "2024-12-31",
+        "limitation": "不变价口径持续上升，但仅覆盖经济维度，不代表政治文化全面领导。"
+      },
+      {
+        "evidence_id": "prior-398f1ad2fb376abfd02f",
+        "relation": "counter",
+        "quote": "日本银行回顾日本泡沫破裂后的长期通缩、需求不足及趋势增长率下降。",
+        "publication_date": "2024-05-27",
+        "observation_end": null,
+        "limitation": "日本长期低增长削弱“亚太整体”叙事，但日本仅为区域一部分。"
+      },
+      {
+        "evidence_id": "ev-7b220a44f8200c69680d5678",
+        "relation": "support",
+        "quote": "East Asia & Pacific led at US$32.02 trillion, followed by North America at about US$31.0 trillion and Europe & Central Asia at US$29.29 trillion.",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "二手聚合网站，verified=false，仅作背景佐证；名义口径。"
+      },
+      {
+        "evidence_id": "ev-1513d99b41a329741a85a9ad",
+        "relation": "counter",
+        "quote": "In 2024, Japan's GDP (current US$) was $4.03 trillion.",
+        "publication_date": null,
+        "observation_end": "2024-12-31",
+        "limitation": "日本名义GDP下滑，属区域内部不利分项；二手来源，verified=false。"
+      }
+    ],
+    "remaining_gap": "“亚太世纪”若需涵盖政治、军事、文化等非经济维度，或需含美国与南亚的完整亚太口径，现有材料未覆盖；21世纪终点未到，最终结果待验证。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-a3df386dd7e705e58cbd",
+      "url": "https://api.worldbank.org/v2/country/EAS;WLD;US;JP;CN/indicator/NY.GDP.MKTP.CD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-r2-l1-eap-current",
+      "published_date": "2026-10-08",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-10-08",
+        "latest": "2026-10-08"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-eap-current",
+      "archive_sha256": "044300760f3093fea6f8ab724d4a010b89c15f7061e9cebcb03b6fe64b36f613",
+      "archive_path": "data/sources/r2-l1-wdi-ny-gdp-mktp-cd.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-e8c2a015ec5fdc2dab35",
+      "url": "https://api.worldbank.org/v2/country/EAS;WLD;US;JP;CN/indicator/NY.GDP.MKTP.KD?format=json&date=1991:2024&per_page=500",
+      "title": "ev-r2-l1-eap-real",
+      "published_date": "2026-10-08",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-10-08",
+        "latest": "2026-10-08"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l1-eap-real",
+      "archive_sha256": "8cc453d41ec16b4cb231025e6c8ade18d21b0bd69bf07de940fc52595fda4dfd",
+      "archive_path": "data/sources/r2-l1-wdi-ny-gdp-mktp-kd.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-398f1ad2fb376abfd02f",
+      "url": "https://www.boj.or.jp/en/about/press/koen_2024/ko240527b.htm",
+      "title": "ev-boj",
+      "published_date": "2024-05-27",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-05-27",
+        "latest": "2024-05-27"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-boj",
+      "archive_sha256": "40fa6f0900b25d801577b8629b6f6dbecc58b7d22f18da4558b8920da02432fc",
+      "archive_path": "data/sources/40fa6f0900b25d801577b8629b6f6dbecc58b7d22f18da4558b8920da02432fc.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-1f203bead72e6c6ed0f7cb52",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=Z4",
+      "resolved_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=Z4",
+      "title": "GDP (current US$) - East Asia & Pacific | Data",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:53.327759+00:00",
+      "archive_sha256": "f74c5dc29093d16cee09c187d87714b71d52cfc24acd1b90b4c6bf5ac6858b6c",
+      "archive_path": "jobs/65a4109965664fd89c1b8de2/f74c5dc29093d16cee09c187d87714b71d52cfc24acd1b90b4c6bf5ac6858b6c.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-7b220a44f8200c69680d5678",
+      "url": "https://marketstats.ai/graphics/world-gdp-by-region/",
+      "resolved_url": "https://marketstats.ai/graphics/world-gdp-by-region/",
+      "title": "World GDP by World Bank region, 2024",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:53.327886+00:00",
+      "archive_sha256": "51e6bc731dbe340651602369f29e073d940c85440be59bbc046dabdca9e5b718",
+      "archive_path": "jobs/65a4109965664fd89c1b8de2/51e6bc731dbe340651602369f29e073d940c85440be59bbc046dabdca9e5b718.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-d5cc0e9fa726a5dcc39d2177",
+      "url": "https://www.worldbank.org/en/publication/east-asia-and-pacific-economic-update-october-2024",
+      "resolved_url": "https://www.worldbank.org/en/publication/east-asia-and-pacific-economic-update-october-2024",
+      "title": "Jobs and Technology: East Asia and Pacific Economic Update, October 2024",
+      "published_date": "2025-04-26",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-04-26",
+        "latest": "2025-04-26"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:53.327977+00:00",
+      "archive_sha256": "128727d3eb15bd6fbc59ea6c6ad5a1edf43f2ca9a60936ed2db05ca84e485a03",
+      "archive_path": "jobs/65a4109965664fd89c1b8de2/128727d3eb15bd6fbc59ea6c6ad5a1edf43f2ca9a60936ed2db05ca84e485a03.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-1513d99b41a329741a85a9ad",
+      "url": "https://countrydatahub.com/countries/japan/gdp-current-us",
+      "resolved_url": "https://countrydatahub.com/countries/japan/gdp-current-us",
+      "title": "Japan: GDP (current US$) — CountryDataHub",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:32:53.328051+00:00",
+      "archive_sha256": "f8902fc78eee71d267c8881830ee41acc1c0e55f10e51b91c3717fce55aac02b",
+      "archive_path": "jobs/65a4109965664fd89c1b8de2/f8902fc78eee71d267c8881830ee41acc1c0e55f10e51b91c3717fce55aac02b.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-18f5d85d310de0b2ddbd644e",
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD?locations=Z4",
+      "resolved_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD?locations=Z4",
+      "title": "GDP (constant 2015 US$) - East Asia & Pacific | Data",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:01.127178+00:00",
+      "archive_sha256": "4da87409f734a76ed691b8316a82350494ca5a22e4d4865174b63f30219a6640",
+      "archive_path": "jobs/65a4109965664fd89c1b8de2/4da87409f734a76ed691b8316a82350494ca5a22e4d4865174b63f30219a6640.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "World Bank WDI East Asia Pacific GDP share of world GDP current US dollars 1991 2024",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "East Asia Pacific share of world GDP decline 2024 current US dollars Japan lost decade trend growth",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "World Bank WDI East Asia Pacific GDP share of world GDP constant 2015 US dollars 1991 2024 regional aggregate",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "East Asia Pacific share of world GDP current US dollars decline after 2020 Japan slow growth World Bank regional aggregate 2024",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-1513d99b41a329741a85a9ad",
+        "ev-7b220a44f8200c69680d5678"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "remaining_gap": "“亚太世纪”若需涵盖政治、军事、文化等非经济维度，或需含美国与南亚的完整亚太口径，现有材料未覆盖；21世纪终点未到，最终结果待验证。",
+  "source_statuses": [
+    {
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=Z4",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://marketstats.ai/graphics/world-gdp-by-region/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.worldbank.org/en/publication/east-asia-and-pacific-economic-update-october-2024",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://countrydatahub.com/countries/japan/gdp-current-us",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.KD?locations=Z4",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 6,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "47449ac5a097b83b53f8943dfd27c196d80904df7b995063bb9a23c2daf19e82"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "10cc28226c696b5f381ed88958f36c19",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "93dd01c9f56d8fcb2f3cbc93b2de64d1",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "b4bacd3c53c809eb1a88eed84c91abad36831d7f32acac67351841ff48fb4952"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "7c3987591bcc4b398c090fd762fcf1ea",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "07352b71788b6c2962dee753ec90746402a8265ef1995d766c61d9ed5823a250"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "90bc0b7491c924445d7418b84247cf1d",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "f18f7d4cf340cb58bd183b7f03b5089b",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "9bc6a47670588561bc85f776ad9ae7ea70d5ddf6210e59383b26371996d7a162"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "4c89957670aafe4e1dc6324303ed38dd",
+      "cost_estimate_USD": 0.001,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "3bb0a95c84beecf1973e595e405ba9367e3d47eb8be80972ed157d60a958e423"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "c1375cde35e9548c7036fc2e0aeb54a5acb8b158da3dc6223c789d3f49dbf458"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-1513d99b41a329741a85a9ad",
+            "ev-7b220a44f8200c69680d5678"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-a3df386dd7e705e58cbd",
+        "source_bytes": 171,
+        "shown_bytes": 171,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-e8c2a015ec5fdc2dab35",
+        "source_bytes": 181,
+        "shown_bytes": 181,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-398f1ad2fb376abfd02f",
+        "source_bytes": 96,
+        "shown_bytes": 96,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-1f203bead72e6c6ed0f7cb52",
+        "source_bytes": 550,
+        "shown_bytes": 550,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-7b220a44f8200c69680d5678",
+        "source_bytes": 5832,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d5cc0e9fa726a5dcc39d2177",
+        "source_bytes": 3727,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-1513d99b41a329741a85a9ad",
+        "source_bytes": 3398,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-18f5d85d310de0b2ddbd644e",
+        "source_bytes": 331,
+        "shown_bytes": 331,
+        "context_truncated": false
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-a3df386dd7e705e58cbd",
+        "source_bytes": 171,
+        "shown_bytes": 171,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-e8c2a015ec5fdc2dab35",
+        "source_bytes": 181,
+        "shown_bytes": 181,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-398f1ad2fb376abfd02f",
+        "source_bytes": 96,
+        "shown_bytes": 96,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-1f203bead72e6c6ed0f7cb52",
+        "source_bytes": 550,
+        "shown_bytes": 550,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-7b220a44f8200c69680d5678",
+        "source_bytes": 5832,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-d5cc0e9fa726a5dcc39d2177",
+        "source_bytes": 3727,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-1513d99b41a329741a85a9ad",
+        "source_bytes": 3398,
+        "shown_bytes": 2875,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-18f5d85d310de0b2ddbd644e",
+        "source_bytes": 331,
+        "shown_bytes": 331,
+        "context_truncated": false
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000050396-000050436",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 0,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000050396-000050436",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以世界银行东亚太平洋（EAS）区域GDP占全球份额为“亚太世纪”的透明经济代理，观察1991—2024年：当期美元份额由22.94%升至2020年32.08%、2024年回落至28.84%；2015年不变价份额由19.56%持续升至2024年32.79%。不涵盖政治、军事、文化领导，也不含美国与南亚。",
+      "reason": "两种口径下EAS份额自1991年以来总体显著上升，不变价口径持续走高，沿“亚太重要性上升”方向有持续客观证据；但名义份额2020年后回落，且“二十一世纪”终点未到，只能判趋势符合而非终局正确。",
+      "limitation": "EAS区域定义不含美国与南亚，与“亚太”口语范围有偏离；名义与不变价口径分化，日本长期低增长削弱区域整体叙事；21世纪终点未到，最终结果待验证。",
+      "evidence_ids": [
+        "prior-a3df386dd7e705e58cbd",
+        "prior-e8c2a015ec5fdc2dab35",
+        "prior-398f1ad2fb376abfd02f",
+        "ev-7b220a44f8200c69680d5678",
+        "ev-1513d99b41a329741a85a9ad"
+      ],
+      "method": "从亚太发展与西海岸区位推断区域重要性",
+      "method_basis": "inferred",
+      "observation_end": "2024-12-31",
+      "future_time_text": "二十一世纪",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-a3df386dd7e705e58cbd",
+          "relation": "support",
+          "quote": "WDI东亚太平洋EAS和全球WLD实际年度当期美元GDP，计算区域/全球份额：1991 22.9352%，2000 24.9855%，2010 25.8498%，2020 32.0834%，2024 28.8355%。",
+          "publication_date": "2026-10-08",
+          "observation_end": "2024-12-31",
+          "limitation": "名义份额2020年后回落，且EAS定义不含美国与南亚。"
+        },
+        {
+          "evidence_id": "prior-e8c2a015ec5fdc2dab35",
+          "relation": "support",
+          "quote": "WDI东亚太平洋EAS和全球WLD实际年度2015年不变价美元GDP，计算区域/全球份额：1991 19.5596%，2000 21.4429%，2010 26.7280%，2020 32.2760%，2024 32.7931%。",
+          "publication_date": "2026-10-08",
+          "observation_end": "2024-12-31",
+          "limitation": "不变价口径持续上升，但仅覆盖经济维度，不代表政治文化全面领导。"
+        },
+        {
+          "evidence_id": "prior-398f1ad2fb376abfd02f",
+          "relation": "counter",
+          "quote": "日本银行回顾日本泡沫破裂后的长期通缩、需求不足及趋势增长率下降。",
+          "publication_date": "2024-05-27",
+          "observation_end": null,
+          "limitation": "日本长期低增长削弱“亚太整体”叙事，但日本仅为区域一部分。"
+        },
+        {
+          "evidence_id": "ev-7b220a44f8200c69680d5678",
+          "relation": "support",
+          "quote": "East Asia & Pacific led at US$32.02 trillion, followed by North America at about US$31.0 trillion and Europe & Central Asia at US$29.29 trillion.",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "二手聚合网站，verified=false，仅作背景佐证；名义口径。"
+        },
+        {
+          "evidence_id": "ev-1513d99b41a329741a85a9ad",
+          "relation": "counter",
+          "quote": "In 2024, Japan's GDP (current US$) was $4.03 trillion.",
+          "publication_date": null,
+          "observation_end": "2024-12-31",
+          "limitation": "日本名义GDP下滑，属区域内部不利分项；二手来源，verified=false。"
+        }
+      ],
+      "remaining_gap": "“亚太世纪”若需涵盖政治、军事、文化等非经济维度，或需含美国与南亚的完整亚太口径，现有材料未覆盖；21世纪终点未到，最终结果待验证。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "评估对象为原文转述的美国西部大学受访教授的判断：二十一世纪将是“亚太世纪”，并据此主张西海岸大学应注重亚太研究。可观察口径限于截止2026-11-09前已发生的区域经济重心变化，以世界银行东亚太平洋（EAS）区域GDP占全球份额作透明代理，同时看当期美元与2015年不变价两种口径；不把“亚太世纪”扩展为政治、军事、文化全面领导，也不把作者或受访者的因果解释当作额外if前提。反证包括：名义份额近期回落、EAS定义不含美国与南亚、日本长期低增长削弱“亚太整体”叙事，以及21世纪终点尚未到达。",
+  "elapsed_seconds": 24.644,
+  "completed_at": "2026-11-09T10:33:08.497035+00:00"
+}

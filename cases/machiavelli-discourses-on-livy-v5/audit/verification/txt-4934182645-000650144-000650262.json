@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000650144-000650262",
+  "plan": {
+    "object": "许多强国联合对一个仍有力量的对手开战。这一人单独虽不如众人合在一起强。",
+    "condition": "if he have strength to withstand the first shock, and can temporize and wait his opportunity。两项都要有：经得住第一次冲击，并且能拖延、等待机会。只打退第一次进攻而没有拖延，不算齐。",
+    "quantifier": "certain to prevail。一定得胜。一次在拖延之后得胜，不能证明一定；一次两项都具备却没有得胜，可以反驳。",
+    "result": "登记变化是 certain to prevail。得胜的是这一人，不是联盟里剩下的某一个仍在打仗。",
+    "window": "1531至2026-11-15。1484年威尼斯和作者所说的反法联盟是出版前的例子。",
+    "counterevidence_needed": "经得住第一次冲击并拖延等待之后得胜；或者两项都具备却没有得胜。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "one country attacked by a coalition survived the first campaign delayed and then won the war",
+      "counter_query": "state withstood the opening attack of an alliance then lost the war after playing for time"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://en.wikipedia.org/wiki/War_of_the_First_Coalition"],
+    "dropped": "1809年华沙公国在拉申挡住奥地利后放弃华沙，战争后来由法国在瓦格拉姆结束，不是这一人拖延后自己失败或得胜的完整结局。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-wiki-first-coalition"],
+    "scope": "一定得胜要先经得住第一次冲击并拖延等待。一次联盟后来瓦解不能代替一定。",
+    "reason": "维基百科写，1792年9月20日瓦尔密之战在战术上是平局，却为革命者争取了时间，普鲁士人随后撤出法国。第一次联盟后来瓦解，只剩英国还在和法国打仗；奥地利于1797年10月签订坎波福米奥条约。争取到时间接近拖延，法国也对联盟的陆上战争占了上风。可是页面没有写法国是在等待机会之后才分拆联盟，而且英国仍在交战，所以“得胜”没有写完。这仍是一次，不能把一定得胜定下来。决定性缺口是：没有一次同时写明经得住第一次冲击、拖延等待，以及这一人最终得胜或没有得胜。",
+    "limitation": "百科页没有出版日。瓦尔密是1792年9月20日。坎波福米奥只写1797年10月。",
+    "method": "先要两项条件都在正文里，再看是不是一定得胜。一次占上风不计成一定。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "瓦尔密争取了时间，1797年10月联盟瓦解，但英国仍在交战。一次不能证明一定得胜。"
+  }
+}

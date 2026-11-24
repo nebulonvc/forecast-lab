@@ -1,0 +1,70 @@
+{
+  "id": "txt-5386516eaf-001920779-001920859",
+  "assess": {
+    "id": "txt-5386516eaf-001920779-001920859",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "大众的心智教养以及依赖它的德性，会比放任自流时更快、中断更少。",
+    "reason": "英格兰小学年数从1805年约2.3年到1905年约5.5年。这是入学年数，止于1905，也没有和“如果放任自流”的反事实比较。",
+    "limitation": "年数变多不是心智教养的速度，更不是相对放任自流更快。",
+    "evidence_ids": [
+      "ev-schooling-1905"
+    ],
+    "method": "检索教育年数是否更快、中断更少。材料不是这句的对象。",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-schooling-1905",
+        "quote": "years of schooling had increased from ca. 2.3 in 1805 (Sanderson 1995), to ca. 3.8 in 1850 (Sanderson 1995), to ca. 4.8 in 1870 (Lawson and Silver 1973), to 5.5 in 1905",
+        "relation": "boundary",
+        "limitation": "小学年数，不是反事实速度。",
+        "observation_end": "1905-12-31",
+        "publication_date": "2015-04",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺1909年之后心智教养比放任自流更快、中断更少的同对象比较。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001920779-001920859",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "years of schooling after compulsory education"
+      },
+      {
+        "role": "counter",
+        "query": "wartime interruption of schooling"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://warwick.ac.uk/fac/soc/economics/research/centres/cage/manage/publications/229.2015_depleijt.pdf"
+    ],
+    "reason": "年数不是心智教养的反事实速度。"
+  }
+}

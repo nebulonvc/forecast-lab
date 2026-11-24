@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000565886-000565986",
+  "plan": {
+    "object": "建立自由政府的人。布鲁图斯之子是敌视新秩序、必须受到显明惩罚的人。同段前一句写，政体改变后敌视新秩序的人必须受到显明惩罚。",
+    "condition": "slays not the sons of Brutus。先没收、放逐，再赦免多数，不是干净的“没有惩罚”。long 在这句没有年数，不能事后把六十年定成长久或不长久来凑结果。",
+    "quantifier": "can never maintain himself long。一次没有惩罚敌对者而政府很快结束，不能单独支撑 never；一次没有惩罚而维持了原文没有写出的年数，也不能单独反驳。",
+    "result": "登记变化是 never maintain himself long。维持的是这个自由政府的建立者。",
+    "window": "1531至2026-11-15。索代里尼是作者自己的时代。",
+    "counterevidence_needed": "一个建立自由政府、又没有对敌视新秩序的人施显明惩罚的人，其政府仍然维持。年数必须来自原文，不能用看到的六十年倒推。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "republic that did not punish opponents of the new regime collapsed within a few years",
+      "counter_query": "new republic spared former royalists and the government lasted decades"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://hdl.handle.net/2027.42/57715"],
+    "dropped": "1799年那不勒斯共和国只有几个月，页面没有写它没有惩罚敌视新秩序的人。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-sc-loyalists-pardon"],
+    "scope": "条件是没有对敌视新秩序的人施显明惩罚。先放逐、没收再赦免多数，条件不明显。long 没有年数。",
+    "reason": "学位论文写，南卡罗来纳议会先没收许多效忠派的财产并放逐他们，两年内又赦免并重新接纳被放逐者中的多数；此后六十年它小心地处理公开讨论，以免重新挑起旧记忆。放逐和没收是显明惩罚，后来的赦免又取消了其中多数。因此它不是干净的 slays not。六十年写在材料里，原文的 long 没有年数，不能用这六十年事后判定长久或不长久。决定性缺口是：没有一个明确没有施显明惩罚的自由政府建立者，以及原文可用来判断的维持长度。",
+    "limitation": "论文没有单独的出版日。两年和六十年是正文里的间隔，没有起止日。",
+    "method": "先看有没有显明惩罚，再看 long 是否在原文里有长度。两者不齐就不计分。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "南卡罗来纳先放逐、没收，两年内又赦免多数，并维持了六十年的公开平静。这既不是没有惩罚，也不能用六十年定义原文没有写出的 long。"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "rule": "verify_prediction.py max_rounds=2 initial support+counter, then ADAPTIVE_ROUNDS=3. METHOD.md 默认最多两轮补充检索。用完仍无可用正文则记录失败并关闭，不计为通过。",
+  "executed_at": "2026-11-20T01:36:03Z",
+  "closed": [
+    {
+      "id": "txt-37a5a0ec54-000536278-000536404",
+      "verdict": "暂无法判断",
+      "six": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "fail",
+        "verdict_logic": "pass"
+      },
+      "queries": [
+        {
+          "round": "initial-1",
+          "role": "support",
+          "query": "UN WPP 2024 fertility and population peak",
+          "result": "read ev-un-press-2024-07 and ev-un-wpp-2024. Peak in the mid-2080s is a projection, not an observation."
+        },
+        {
+          "round": "initial-1",
+          "role": "counter",
+          "query": "same summary for an observed births-versus-deaths count",
+          "result": "no observed global births-deaths balance in the summary."
+        },
+        {
+          "round": "initial-2",
+          "role": "counter",
+          "query": "https://database.earth/population/births/2023",
+          "result": "HTTP 403, no body."
+        },
+        {
+          "round": "adaptive-1",
+          "role": "counter",
+          "query": "https://www.visualcapitalist.com/charted-when-the-global-population-could-start-to-shrink/",
+          "result": "HTTP 403, no body."
+        },
+        {
+          "round": "adaptive-2",
+          "role": "counter",
+          "query": "https://ourworldindata.org/births-and-deaths",
+          "saved": "data/sources/ev-owid-births-read.html",
+          "result": "read. datePublished 2023-01-05 but text says born and died in 2025. Not used as an observation."
+        }
+      ]
+    },
+    {
+      "id": "txt-37a5a0ec54-000074234-000074293",
+      "verdict": "暂无法判断",
+      "six": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "unknown",
+        "evidence_support": "fail",
+        "counterevidence": "fail",
+        "verdict_logic": "pass"
+      },
+      "queries": [
+        {
+          "round": "initial-1",
+          "role": "support",
+          "query": "intergenerational harm of public policy mistakes official report grandchildren",
+          "result": "https://publications.parliament.uk/pa/ld201719/ldselect/ldintfair/329/329.pdf HTTP 403, no body."
+        },
+        {
+          "round": "initial-1",
+          "role": "counter",
+          "query": "UN life expectancy 1950 to 2023",
+          "saved": "data/sources/ev-owid-life-20250204.html",
+          "result": "read 32 years to 73 years. This is longevity, not destruction by unnamed errors. Not scored."
+        },
+        {
+          "round": "initial-2",
+          "role": "support",
+          "query": "https://news.un.org/en/story/2023/03/1134832",
+          "saved": "data/sources/ev-un-school-meals-rejected.html",
+          "result": "read. It is a 21 March 2023 school-meals story. Rejected. Not a substitute."
+        },
+        {
+          "round": "adaptive-1",
+          "role": "support",
+          "query": "https://www.ipcc.ch/2023/03/20/press-release-ar6-synthesis-report/",
+          "result": "HTTP 403, no body."
+        }
+      ],
+      "stop": "unnamed errors cannot be identified by further public queries without changing the object"
+    },
+    {
+      "id": "txt-37a5a0ec54-000156558-000156685",
+      "verdict": "暂无法判断",
+      "six": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "unknown",
+        "verdict_logic": "pass"
+      },
+      "queries": [
+        {
+          "round": "initial-1",
+          "role": "support",
+          "query": "history of biology in secondary school curriculum 20th century official",
+          "saved": "data/sources/ev-eric-biology-19610201.pdf",
+          "result": "read. PUB DATE 1 FEB 61. Course growth is not removal of the Crusoe ignorance."
+        },
+        {
+          "round": "initial-1",
+          "role": "counter",
+          "query": "Robinson Crusoe still used as example of self-sufficient individual",
+          "result": "search hits 2016-2023 articles. Full text not saved. Not treated as a pass."
+        }
+      ]
+    }
+  ],
+  "next_unverified_id": "txt-37a5a0ec54-000160089-000160156"
+}

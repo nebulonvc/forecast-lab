@@ -1,0 +1,66 @@
+{
+  "id": "txt-5386516eaf-001769981-001770423",
+  "assess": {
+    "id": "txt-5386516eaf-001769981-001770423",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "随着财富和经营能力提高，由大批人集体出资的工商业机构将大为扩展，包括股份公司、较不正式的联合和合作社。",
+    "reason": "Companies House 2025年7月29日的统计写，注册总数自1987财年至2025财年增加了4361487家。那是全部注册公司，不是这三类机构，也不能从1987年回推1909年之后的全程。",
+    "limitation": "ICA 页的12亿成员没有发布日，不用来计分。",
+    "evidence_ids": [
+      "ev-companies-house-2025"
+    ],
+    "method": "检索公司注册统计。对象不一致，不判扩展已经实现。",
+    "method_basis": "explicit",
+    "observation_end": "2025-03-31",
+    "future_time_text": "",
+    "condition_state": "unknown",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-companies-house-2025",
+        "quote": "total register has increased by 4,361,487 companies",
+        "relation": "boundary",
+        "limitation": "全部注册公司不是原文的三类机构。",
+        "observation_end": "2025-03-31",
+        "publication_date": "2025-07-29"
+      }
+    ],
+    "remaining_gap": "缺股份公司、非正式联合和合作社自1909年以来的同对象数量。公司注册总数不能填这个缺口。财富与经营能力提高这一条件也没有在该页分开。"
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001769981-001770423",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [],
+  "plan": {
+    "queries": [
+      {
+        "role": "support",
+        "query": "number of joint-stock companies United Kingdom historical increase since 1900 Companies House"
+      },
+      {
+        "role": "counter",
+        "query": "joint-stock companies did not expand after 1900"
+      }
+    ],
+    "note": "无 executed=true。"
+  },
+  "select": {
+    "urls": [
+      "https://www.gov.uk/government/statistics/companies-register-activities-statistical-release-april-2024-to-march-2025/companies-register-activities-april-2024-to-march-2025"
+    ],
+    "reason": "注册总数与原文三类机构不是同一对象，只作边界。"
+  }
+}

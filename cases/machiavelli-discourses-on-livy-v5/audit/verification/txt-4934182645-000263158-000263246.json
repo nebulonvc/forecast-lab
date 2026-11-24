@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000263158-000263246",
+  "plan": {
+    "object": "起初依附于别人的城市。同段用佛罗伦萨起初臣属于罗马、后来又臣属于其他统治者来说明。不是任何后来独立的国家。",
+    "condition": "at the first were dependent。没有额外的制度名称条件。",
+    "quantifier": "impossible。一个起初依附、后来没有自由生活的城市，不能单独把不可能判成成立，也不能给部分符合。一个起初依附、后来用自己的条例自由且不受搅扰地生活的城市，可以反驳 impossible。",
+    "result": "登记变化是 impossible，对象是 so to shape their ordinances as to enable them to live free and undisturbed。自由和不受搅扰都要出现，不能只用一部宪法的名称代替。",
+    "window": "1531至2026-11-15。",
+    "counterevidence_needed": "一座起初臣属于别人的城市，后来定出自己的条例，并自由且不受搅扰地生活。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "city formerly subject to an empire failed to establish lasting free government after independence",
+      "counter_query": "former dependency wrote its own constitution and remained independent after 1531"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://doi.org/10.1556/hstud.27.2013.2.8"],
+    "dropped": "克拉科夫自由市在1815年有宪法，但由三国监督，1846年被奥地利吞并，没有不受搅扰地自由生活。库尔兰是附庸公国和农奴制，不是自由生活。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-transylvania-porte-1542"],
+    "scope": "反驳需要起初依附，并且后来自由且不受搅扰。支持方向的一次失败不能单独支撑 impossible。",
+    "reason": "特兰西瓦尼亚论文写，1542年等级会议承认奥斯曼宫廷任命的统治者并向他宣誓，而不是自行选举。这是起初和此后仍依附，不是用自己的条例自由且不受搅扰地生活。它因此不是反例。一次仍依附的事例也不能把 impossible 判成成立，更不能当成部分符合。决定性缺口是：没有一座起初依附的城市，在1531年之后被正文写成既定出自己的条例，又自由且不受搅扰地生活，也没有一组事例足以判断不可能。",
+    "limitation": "论文没有单独的出版日。1542年12月的议会没有写日。",
+    "method": "先看是否起初依附，再看自由和不受搅扰是否都出现，不用宪法名称代替。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "特兰西瓦尼亚承认外来任命的统治者。这不是自由且不受搅扰，也不能单独支撑不可能。"
+  }
+}

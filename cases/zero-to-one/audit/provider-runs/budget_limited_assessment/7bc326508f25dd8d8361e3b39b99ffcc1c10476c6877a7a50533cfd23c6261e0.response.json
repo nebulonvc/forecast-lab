@@ -1,0 +1,28 @@
+{
+  "id": "19c9a644-6b7e-4b12-8479-acd83eb4d08c",
+  "object": "chat.completion",
+  "created": 1794201447,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000042083-000042106\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文以问句形式提出生物技术能否与信息技术同步发展，未给出方向性预测或可检验终点。\",\"reason\":\"该句是开放性问题，不是对未来的方向性断言，无法作为预测评分。\",\"limitation\":\"仅记录为审计排除项，不评估其真伪。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000042595-000042623\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"作者判断“不明确的乐观”比繁杂规则对生物技术未来发展构成更大挑战；需比较两类因素对行业发展的相对阻碍，原文未给出可量化指标或期限。\",\"reason\":\"“更大挑战”是相对性因果判断，缺乏可操作化的比较指标与观察数据，无法用现有证据评分。\",\"limitation\":\"原文未定义如何衡量“不明确乐观”的阻碍程度，也未提供期限；不引入事后行业数据替代。\",\"evidence_ids\":[],\"method\":\"从创办人兼职、缺乏明确生物理论和研发方式推断行业约束\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"未给出确切期限\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7523,
+    "completion_tokens": 332,
+    "total_tokens": 7855,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 6755
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

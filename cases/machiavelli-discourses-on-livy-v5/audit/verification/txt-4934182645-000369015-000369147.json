@@ -1,0 +1,44 @@
+{
+  "id": "txt-4934182645-000369015-000369147",
+  "plan": {
+    "object": "作为复合身体的人类，也就是世界各地，不是单独一洲。",
+    "condition": "every province so teems that people can neither subsist where they are nor remove elsewhere，每一地区都同样拥挤，并且 human craft and wickedness have reached their highest pitch。两项都是必要条件。",
+    "quantifier": "must needs。三个方式是 plague、famine、flood 之一。目的是人变少并悔改。人口在瘟疫之后继续增加，若条件没有成立，不能把这句判成错误。",
+    "result": "登记变化是 purge herself。清洗是三者之一使人类变少。一次局部饥荒或没有使人类变少的瘟疫，不是这个结果。",
+    "window": "1531至2026-11-15。1315年和1347年的欧洲危机早于1531。",
+    "counterevidence_needed": "各地都已无法维生也无法迁出，且邪恶达到顶点，而世界没有用瘟疫、饥荒或洪水之一使人类变少。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "historians say the whole world was overpopulated and a plague famine or flood then reduced population",
+      "counter_query": "world population continued to increase after 1918 influenza and later pandemics"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": ["https://ourworldindata.org/spanish-flu-largest-influenza-pandemic-in-history"],
+    "dropped": "中世纪欧洲的饥荒和黑死病早于1531，而且材料写的是欧洲，不是每一地区都同样无法迁出。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unknown",
+    "future_time_text": "",
+    "observation_end": null,
+    "evidence_ids": ["ev-owid-spanish-flu-population"],
+    "scope": "两个必要条件都要出现，才核验世界是否用三种方式之一把自己清洗到人变少。",
+    "reason": "我们的数据世界页写，这一时期世界人口每年大约增加一千三百万，因此西班牙流感那段很可能是历史上世界人口最后一次下降。这是一场全球瘟疫之后人口仍在增加，不是人类变少并悔改。该页没有写每一地区都已无法维生或迁出，也没有写人的机巧和邪恶达到顶点。条件没有出现，所以人口继续增加不能把 must needs 判成错误。支持检索里的全球人口下降讨论也没有同时给出这两个条件。决定性缺口是：1531年之后没有正文同时写出各地无法维生且无法迁出，以及邪恶达到顶点。",
+    "limitation": "页面没有出版日。每年一千三百万是该时期的约数。1918年的死亡人数在同页另有高低估计，这里不用它代替条件。",
+    "method": "先核两个必要条件是否同时被写出，没有就不用瘟疫之后的人口回升计分。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "fail",
+    "time_alignment": "pass",
+    "evidence_support": "fail",
+    "counterevidence": "fail",
+    "verdict_logic": "pass",
+    "note": "西班牙流感没有使人类变少到原文所说的清洗。各地无法迁出和邪恶达到顶点都没有被写出。"
+  }
+}

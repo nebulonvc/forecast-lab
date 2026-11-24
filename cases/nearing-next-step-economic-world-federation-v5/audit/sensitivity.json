@@ -1,0 +1,109 @@
+[
+ {
+  "scenario": "正式统计",
+  "excluded": [],
+  "predictions": 34,
+  "decidable": 23,
+  "counts": {
+   "C": 12,
+   "U": 11,
+   "P": 9,
+   "W": 2
+  },
+  "strict": 0.5217391304347826,
+  "weighted": 0.717391304347826,
+  "error_rate": 0.08695652173913043
+ },
+ {
+  "scenario": "剔除资源6条",
+  "excluded": [
+   1,
+   2,
+   7,
+   25,
+   26,
+   27
+  ],
+  "predictions": 28,
+  "decidable": 18,
+  "counts": {
+   "C": 8,
+   "U": 10,
+   "P": 8,
+   "W": 2
+  },
+  "strict": 0.4444444444444444,
+  "weighted": 0.6666666666666666,
+  "error_rate": 0.1111111111111111
+ },
+ {
+  "scenario": "剔除科学组织3条",
+  "excluded": [
+   10,
+   13,
+   14
+  ],
+  "predictions": 31,
+  "decidable": 20,
+  "counts": {
+   "C": 11,
+   "U": 11,
+   "P": 7,
+   "W": 2
+  },
+  "strict": 0.55,
+  "weighted": 0.725,
+  "error_rate": 0.1
+ },
+ {
+  "scenario": "剔除资本主义/生产者终局5条",
+  "excluded": [
+   11,
+   21,
+   23,
+   29,
+   33
+  ],
+  "predictions": 29,
+  "decidable": 23,
+  "counts": {
+   "C": 12,
+   "U": 6,
+   "P": 9,
+   "W": 2
+  },
+  "strict": 0.5217391304347826,
+  "weighted": 0.717391304347826,
+  "error_rate": 0.08695652173913043
+ },
+ {
+  "scenario": "剔除以上三组14条",
+  "excluded": [
+   1,
+   2,
+   7,
+   25,
+   26,
+   27,
+   10,
+   13,
+   14,
+   11,
+   21,
+   23,
+   29,
+   33
+  ],
+  "predictions": 20,
+  "decidable": 15,
+  "counts": {
+   "C": 7,
+   "U": 5,
+   "P": 6,
+   "W": 2
+  },
+  "strict": 0.4666666666666667,
+  "weighted": 0.6666666666666666,
+  "error_rate": 0.13333333333333333
+ }
+]

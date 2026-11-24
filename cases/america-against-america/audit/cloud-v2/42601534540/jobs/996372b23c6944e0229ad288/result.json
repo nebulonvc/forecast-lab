@@ -1,0 +1,782 @@
+{
+  "claim_id": "txt-1c4066fc0c-000227158-000227189",
+  "version": "search-verifier-v2",
+  "input_sha256": "1e22a2fa0eafefef550894029fd659620068a741d755a1d103389ca04ece6546",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000227158-000227189",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "观察窗口约1990—1999年，对象为IBM成人识字中心所在的芝加哥地区及IBM所需工种；操作化口径为该地区/该工种合格劳动力是否出现短缺或招聘困难。",
+    "reason": "原文预测的是“这个地区”（IBM成人识字中心所在的芝加哥地区）到九十年代难以找到IBM所需工人。现有证据中，1991年报道聚焦坎卡基县且描述低技能者被就业市场挤出，方向与“企业招不到所需工人”相反；1997年报道的熟练工厂工人短缺例子在俄亥俄和威斯康星，非IBM计划所在地区；1996年芝加哥联储综述仅泛论技能需求上升快于供给，未直接测量该地区IBM所需工种的招聘困难。关键对象与主要结果均缺直接证据，无法支持部分符合。",
+    "limitation": "缺少IBM公司自身1990年代在芝加哥地区招聘困难的一手记录，也缺少该计划服务地区合格劳动力供给的直接统计；现有证据对象偏离或方向相反，不足以判定预测实现与否。",
+    "evidence_ids": [
+      "ev-da2ffe83baf41d4b0e5e197c",
+      "ev-47ecfe47d1ba943a2a352c55",
+      "ev-88993846a4c513aa81c9a908"
+    ],
+    "method": "由当地成人识字不足推测未来合格劳动力供给",
+    "method_basis": "explicit",
+    "observation_end": "1997-11-24",
+    "future_time_text": "到九十年代",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-da2ffe83baf41d4b0e5e197c",
+        "relation": "counter",
+        "quote": "The problem is finding work for people who once could have gotten by, but no longer fit the job equation of the 1990s-people who cannot read, write or understand math at the minimum levels required by employers, or who cannot operate commonly used modern equipment such as a computer.",
+        "publication_date": "1991-06-10",
+        "observation_end": "1991-06-10",
+        "limitation": "该报道聚焦坎卡基县而非IBM计划所在的芝加哥市区，且描述的是低技能工人找不到工作、被就业市场挤出，方向与“企业招不到所需工人”相反。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-47ecfe47d1ba943a2a352c55",
+        "relation": "boundary",
+        "quote": "The hunger for skilled factory workers in the Midwest has reached the point where toolmaking firms in Ohio and Wisconsin have bought smaller firms just to acquire new employees",
+        "publication_date": "1997-11-24",
+        "observation_end": "1997-11-24",
+        "limitation": "该报道的熟练工厂工人短缺例子在俄亥俄和威斯康星而非芝加哥，且同时称整体就业前景为一代人以来最好，不能直接对应IBM计划所在地区及IBM所需工种。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-88993846a4c513aa81c9a908",
+        "relation": "background",
+        "quote": "By historical standards, the portion of the workforce having low skills has declined. Nonetheless, rising skill levels have been insufficient to keep up with the pace of rising skill demands.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "该文为1996年芝加哥联储研讨会综述，泛论技能需求上升快于供给，未直接测量IBM所在地区招工困难，且发表日期元数据缺失。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      }
+    ],
+    "remaining_gap": "缺少IBM计划所在芝加哥地区、IBM所需工种在1990年代的招聘困难或合格劳动力短缺的直接证据；现有证据对象偏离（坎卡基县、俄亥俄/威斯康星）或方向相反（低技能者被挤出），不足以判定预测实现与否。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000227158-000227189",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "观察窗口约1990—1999年，对象为芝加哥地区（IBM成人识字计划所在地区）及IBM所需工种；操作化口径为该地区/该工种合格劳动力是否出现短缺或招聘困难，以同期芝加哥论坛报报道和芝加哥联储劳动力问题分析为证据。",
+    "reason": "1991年芝加哥论坛报报道称，1990年代就业方程已排除不能读写算或操作现代设备的工人，坎卡基县制造业岗位大量消失、低技能者被挤出；1997年报道称中西部对熟练工厂工人的渴求已导致部分生产放缓，招聘困难明显。这些证据沿“难以找到所需合格工人”的方向发展，但1997年报道同时显示整体就业前景为一代人以来最好，短缺主要集中于熟练工而非所有工种，故为部分符合。",
+    "limitation": "证据多为新闻报道和地区性调查，非IBM公司自身招聘记录；1997年整体就业强劲与“难以找到工人”并存，说明短缺是结构性的而非全面劳动力短缺，且部分短缺可归因于技能需求上升而非仅识字不足。",
+    "evidence_ids": [
+      "ev-da2ffe83baf41d4b0e5e197c",
+      "ev-47ecfe47d1ba943a2a352c55",
+      "ev-88993846a4c513aa81c9a908"
+    ],
+    "method": "由当地成人识字不足推测未来合格劳动力供给",
+    "method_basis": "explicit",
+    "observation_end": "1997-11-24",
+    "future_time_text": "到九十年代",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-da2ffe83baf41d4b0e5e197c",
+        "relation": "support",
+        "quote": "The problem is finding work for people who once could have gotten by, but no longer fit the job equation of the 1990s-people who cannot read, write or understand math at the minimum levels required by employers, or who cannot operate commonly used modern equipment such as a computer.",
+        "publication_date": "1991-06-10",
+        "observation_end": "1991-06-10",
+        "limitation": "该报道聚焦坎卡基县而非IBM计划所在的芝加哥市区，且描述的是低技能工人被挤出而非企业招不到工人。"
+      },
+      {
+        "evidence_id": "ev-47ecfe47d1ba943a2a352c55",
+        "relation": "support",
+        "quote": "The hunger for skilled factory workers in the Midwest has reached the point where toolmaking firms in Ohio and Wisconsin have bought smaller firms just to acquire new employees",
+        "publication_date": "1997-11-24",
+        "observation_end": "1997-11-24",
+        "limitation": "该报道同时称整体就业前景为一代人以来最好，短缺集中于熟练工厂工人，且举例在俄亥俄和威斯康星而非芝加哥。"
+      },
+      {
+        "evidence_id": "ev-88993846a4c513aa81c9a908",
+        "relation": "boundary",
+        "quote": "By historical standards, the portion of the workforce having low skills has declined. Nonetheless, rising skill levels have been insufficient to keep up with the pace of rising skill demands.",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "该文为1996年芝加哥联储研讨会综述，指出技能需求上升快于供给，但未直接测量IBM所在地区招工困难，且发表日期元数据缺失。"
+      }
+    ],
+    "remaining_gap": "缺少IBM公司自身1990年代在芝加哥地区招聘困难的一手记录，也缺少该计划服务地区合格劳动力供给的直接统计；现有证据为地区性报道和综述，无法精确对应IBM所需工种。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "ev-af7abd77b88cedea1a5ba7a2",
+      "url": "https://bancodeprofissionais.com/1988/10/03/literacy-quest-brings-together-cabrini-and-ibm/",
+      "resolved_url": "https://bancodeprofissionais.com/1988/10/03/literacy-quest-brings-together-cabrini-and-ibm/",
+      "title": "LITERACY QUEST BRINGS TOGETHER CABRINI AND IBM – Chicago Tribune",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:50.020995+00:00",
+      "archive_sha256": "a90fabd9217d2debad1d8a9d899db6396456ec756d9fbcb0598393617d6f471f",
+      "archive_path": "jobs/996372b23c6944e0229ad288/a90fabd9217d2debad1d8a9d899db6396456ec756d9fbcb0598393617d6f471f.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-da2ffe83baf41d4b0e5e197c",
+      "url": "https://bancodeprofissionais.com/1991/06/10/new-economy-squeezes-out-the-unskilled/",
+      "resolved_url": "https://bancodeprofissionais.com/1991/06/10/new-economy-squeezes-out-the-unskilled/",
+      "title": "NEW ECONOMY SQUEEZES OUT THE UNSKILLED – Chicago Tribune",
+      "published_date": "1991-06-10",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "1991-06-10",
+        "latest": "1991-06-10"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:50.021134+00:00",
+      "archive_sha256": "9fae387fe3f01c2295e0306a7e3b2d4d40bf38bc5f3dbe888b1d2c42bf2da21c",
+      "archive_path": "jobs/996372b23c6944e0229ad288/9fae387fe3f01c2295e0306a7e3b2d4d40bf38bc5f3dbe888b1d2c42bf2da21c.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-88993846a4c513aa81c9a908",
+      "url": "https://www.chicagofed.org/publications/chicago-fed-letter/1996/november-111",
+      "resolved_url": "https://www.chicagofed.org/publications/chicago-fed-letter/1996/november-111",
+      "title": "Workforce Issues - Federal Reserve Bank of Chicago",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:50.021230+00:00",
+      "archive_sha256": "aebc5b3f3545496509bcfbff1359b978de46f76cd079df3ae4501cb3e2197e72",
+      "archive_path": "jobs/996372b23c6944e0229ad288/aebc5b3f3545496509bcfbff1359b978de46f76cd079df3ae4501cb3e2197e72.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-9aaaf0802546cc92489ad1b3",
+      "url": "https://files.eric.ed.gov/fulltext/ED367778.pdf",
+      "resolved_url": "https://files.eric.ed.gov/fulltext/ED367778.pdf",
+      "title": "ED 367 778 CE 065 650",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:50.021314+00:00",
+      "archive_sha256": "567e47357a8fa5b3329766d922ce3658b4cde9abbef78959ca5acc1712d4c712",
+      "archive_path": "jobs/996372b23c6944e0229ad288/567e47357a8fa5b3329766d922ce3658b4cde9abbef78959ca5acc1712d4c712.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-47ecfe47d1ba943a2a352c55",
+      "url": "https://bancodeprofissionais.com/1997/11/24/employment-outlook-seen-as-the-best-in-a-generation/",
+      "resolved_url": "https://bancodeprofissionais.com/1997/11/24/employment-outlook-seen-as-the-best-in-a-generation/",
+      "title": "EMPLOYMENT OUTLOOK SEEN AS THE BEST IN A GENERATION – Chicago Tribune",
+      "published_date": "1997-11-24",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "1997-11-24",
+        "latest": "1997-11-24"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:00.437173+00:00",
+      "archive_sha256": "e9252676bdd3e1fe9ed88a2e0e8ba68d8eef2f5a2d6681f9043e98b544f999b0",
+      "archive_path": "jobs/996372b23c6944e0229ad288/e9252676bdd3e1fe9ed88a2e0e8ba68d8eef2f5a2d6681f9043e98b544f999b0.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-906dcbe23a89a288e65519d6",
+      "url": "https://www.chicagofed.org/-/media/publications/chicago-fed-letter/1996/cflnov96-pdf.pdf",
+      "resolved_url": "https://www.chicagofed.org/-/media/publications/chicago-fed-letter/1996/cflnov96-pdf.pdf",
+      "title": "Chicago Fed Letter",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:35:00.437308+00:00",
+      "archive_sha256": "b79e2301b5b56bb72c1300b536d86c9bf0d1494943603f863ed6aa6ce93f5b9c",
+      "archive_path": "jobs/996372b23c6944e0229ad288/b79e2301b5b56bb72c1300b536d86c9bf0d1494943603f863ed6aa6ce93f5b9c.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "IBM adult literacy center 1990s labor shortage workers Chicago Tribune 1980s",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "Chicago 1990s labor market shortage skilled workers IBM adult literacy program outcome",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Chicago 1990s employer survey shortage of qualified workers basic skills IBM Cabrini-Green literacy program",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "Chicago 1990s labor market surplus workers IBM hiring no shortage skilled labor",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-88993846a4c513aa81c9a908"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "remaining_gap": "缺少IBM计划所在芝加哥地区、IBM所需工种在1990年代的招聘困难或合格劳动力短缺的直接证据；现有证据对象偏离（坎卡基县、俄亥俄/威斯康星）或方向相反（低技能者被挤出），不足以判定预测实现与否。",
+  "source_statuses": [
+    {
+      "url": "https://bancodeprofissionais.com/1988/10/03/literacy-quest-brings-together-cabrini-and-ibm/",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://bancodeprofissionais.com/1991/06/10/new-economy-squeezes-out-the-unskilled/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.chicagofed.org/publications/chicago-fed-letter/1996/november-111",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://files.eric.ed.gov/fulltext/ED367778.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://bancodeprofissionais.com/1997/11/24/employment-outlook-seen-as-the-best-in-a-generation/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://www.chicagofed.org/-/media/publications/chicago-fed-letter/1996/cflnov96-pdf.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    }
+  ],
+  "scope_suggestions": [
+    {
+      "round": 2,
+      "scope": "IBM转述的预测：到20世纪90年代，其成人识字计划所在地区（芝加哥/Cabrini-Green服务区）将难以找到所需工人。观察窗口约1990—1999年，对象为该地区及IBM所需工种；可观察口径为该地区/该工种合格劳动力是否出现短缺或招聘困难。反证包括：该地区同期IBM或同类企业未报告招工困难、合格劳动力供给充足或短缺归因于识字以外因素。",
+      "accepted": false
+    }
+  ],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "1668c3beb1e6d58de905269038656c6a1870dd9bc48c8debeb7e2bc779a34f96"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "4d4127639fd31e46d1635607da9e2f28",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "ae2f80beb117fea5f1ef8fddec96d558",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "3f382098abea40f9f17a09b529c53f4422b4f98a4f41cd44a90aedcabd1339b8"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "4b2cd4290aa7e5287d9b7278eae2f93b",
+      "cost_estimate_USD": 0.004,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "90512d3bbec2c7b95ef9acbdd3b52617ac9fb270f13b12c2ac66374e98074a26"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "b1850768a7af46c1ce348fb0c9c1a540",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "4c7423c3c2031f92ead08cc9d5cb5bfa",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "0843a19b167aacae5f06820bfcd7391c73149b263265cb85d7c2cfd7bb2e6995"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "e2a1dc41b5b7fa75335fdcc8f9aa50fe",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "106b6832d266635f74e47950a863c9074f822005e3c57e69a3b7411158cebd83"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "d20526ba55e7832cb6b39fde069284b008117d68c21e91378f97b0d9bc4f14d1"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "93a51a2de7144ac58a623ca64eec01b6b77b092f6d930986a317cd9a1ad65fcb"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "05273505f1d226b5b51cf42919b5d0f475f7a61497e39e42386ca4665719bb1e"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "部分符合",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-88993846a4c513aa81c9a908"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-88993846a4c513aa81c9a908"
+          ],
+          "blocks_verdict": false
+        }
+      ],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "ev-af7abd77b88cedea1a5ba7a2",
+        "source_bytes": 5365,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-da2ffe83baf41d4b0e5e197c",
+        "source_bytes": 8289,
+        "shown_bytes": 3831,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-88993846a4c513aa81c9a908",
+        "source_bytes": 12012,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-9aaaf0802546cc92489ad1b3",
+        "source_bytes": 12000,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-47ecfe47d1ba943a2a352c55",
+        "source_bytes": 4061,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-906dcbe23a89a288e65519d6",
+        "source_bytes": 12022,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "ev-af7abd77b88cedea1a5ba7a2",
+        "source_bytes": 5365,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-da2ffe83baf41d4b0e5e197c",
+        "source_bytes": 8289,
+        "shown_bytes": 3831,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-88993846a4c513aa81c9a908",
+        "source_bytes": 12012,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-9aaaf0802546cc92489ad1b3",
+        "source_bytes": 12000,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-47ecfe47d1ba943a2a352c55",
+        "source_bytes": 4061,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-906dcbe23a89a288e65519d6",
+        "source_bytes": 12022,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "ev-af7abd77b88cedea1a5ba7a2",
+        "source_bytes": 5365,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-da2ffe83baf41d4b0e5e197c",
+        "source_bytes": 8289,
+        "shown_bytes": 3831,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-88993846a4c513aa81c9a908",
+        "source_bytes": 12012,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-9aaaf0802546cc92489ad1b3",
+        "source_bytes": 12000,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-47ecfe47d1ba943a2a352c55",
+        "source_bytes": 4061,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-906dcbe23a89a288e65519d6",
+        "source_bytes": 12022,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "ev-af7abd77b88cedea1a5ba7a2",
+        "source_bytes": 5365,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-da2ffe83baf41d4b0e5e197c",
+        "source_bytes": 8289,
+        "shown_bytes": 3831,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-88993846a4c513aa81c9a908",
+        "source_bytes": 12012,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-9aaaf0802546cc92489ad1b3",
+        "source_bytes": 12000,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-47ecfe47d1ba943a2a352c55",
+        "source_bytes": 4061,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-906dcbe23a89a288e65519d6",
+        "source_bytes": 12022,
+        "shown_bytes": 3833,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000227158-000227189",
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "原文对象是“这个地区”（IBM成人识字中心所在的芝加哥地区）中IBM所需工人；1997年报道的熟练工厂工人短缺例子在俄亥俄和威斯康星，1991年报道聚焦坎卡基县，均非IBM计划所在地区或IBM所需工种，不能直接作为该特定集合的实现证据。",
+          "quote_ref": "q1",
+          "source_quote": "们认为，到九十年代，在这个地区就难以找到他们需要的工人了。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "1991年报道描述的是低技能工人找不到工作、被就业方程排除，而非企业在该地区招不到所需工人；它不能支持“难以找到他们需要的工人”这一主要结果，建议却将其列为support。",
+          "quote_ref": "q4",
+          "source_quote": "The problem is finding work for people who once could have gotten by, but no longer fit the job equation of the 1990s-people who cannot read, write or understan",
+          "evidence_id": "ev-da2ffe83baf41d4b0e5e197c",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议以“整体就业前景为一代人以来最好、短缺集中于熟练工”为由判部分符合，但原文预测的是该地区IBM所需工人难以找到，并非所有工种全面短缺；若该特定工种短缺已实现，整体就业强劲只是限制而非分项未实现。建议未指出后果B哪些具体部分实现、哪些未实现，分类依据不足。",
+          "quote_ref": "q3",
+          "source_quote": "1991年芝加哥论坛报报道称，1990年代就业方程已排除不能读写算或操作现代设备的工人，坎卡基县制造业岗位大量消失、低技能者被挤出；1997年报道称中西部对熟练工厂工人的渴求已导致部分生产放缓，招聘困难明显。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充IBM计划所在芝加哥地区、IBM所需工种在1990年代的招聘困难或合格劳动力短缺的直接证据；现有证据对象偏离（坎卡基县、俄亥俄/威斯康星）或方向相反（低技能者被挤出），不足以支撑部分符合的结论。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000227158-000227189",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000227158-000227189",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "观察窗口约1990—1999年，对象为芝加哥地区（IBM成人识字计划所在地区）及IBM所需工种；操作化口径为该地区/该工种合格劳动力是否出现短缺或招聘困难，以同期芝加哥论坛报报道和芝加哥联储劳动力问题分析为证据。",
+      "reason": "1991年芝加哥论坛报报道称，1990年代就业方程已排除不能读写算或操作现代设备的工人，坎卡基县制造业岗位大量消失、低技能者被挤出；1997年报道称中西部对熟练工厂工人的渴求已导致部分生产放缓，招聘困难明显。这些证据沿“难以找到所需合格工人”的方向发展，但1997年报道同时显示整体就业前景为一代人以来最好，短缺主要集中于熟练工而非所有工种，故为部分符合。",
+      "limitation": "证据多为新闻报道和地区性调查，非IBM公司自身招聘记录；1997年整体就业强劲与“难以找到工人”并存，说明短缺是结构性的而非全面劳动力短缺，且部分短缺可归因于技能需求上升而非仅识字不足。",
+      "evidence_ids": [
+        "ev-da2ffe83baf41d4b0e5e197c",
+        "ev-47ecfe47d1ba943a2a352c55",
+        "ev-88993846a4c513aa81c9a908"
+      ],
+      "method": "由当地成人识字不足推测未来合格劳动力供给",
+      "method_basis": "explicit",
+      "observation_end": "1997-11-24",
+      "future_time_text": "到九十年代",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-da2ffe83baf41d4b0e5e197c",
+          "relation": "support",
+          "quote": "The problem is finding work for people who once could have gotten by, but no longer fit the job equation of the 1990s-people who cannot read, write or understand math at the minimum levels required by employers, or who cannot operate commonly used modern equipment such as a computer.",
+          "publication_date": "1991-06-10",
+          "observation_end": "1991-06-10",
+          "limitation": "该报道聚焦坎卡基县而非IBM计划所在的芝加哥市区，且描述的是低技能工人被挤出而非企业招不到工人。"
+        },
+        {
+          "evidence_id": "ev-47ecfe47d1ba943a2a352c55",
+          "relation": "support",
+          "quote": "The hunger for skilled factory workers in the Midwest has reached the point where toolmaking firms in Ohio and Wisconsin have bought smaller firms just to acquire new employees",
+          "publication_date": "1997-11-24",
+          "observation_end": "1997-11-24",
+          "limitation": "该报道同时称整体就业前景为一代人以来最好，短缺集中于熟练工厂工人，且举例在俄亥俄和威斯康星而非芝加哥。"
+        },
+        {
+          "evidence_id": "ev-88993846a4c513aa81c9a908",
+          "relation": "boundary",
+          "quote": "By historical standards, the portion of the workforce having low skills has declined. Nonetheless, rising skill levels have been insufficient to keep up with the pace of rising skill demands.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "该文为1996年芝加哥联储研讨会综述，指出技能需求上升快于供给，但未直接测量IBM所在地区招工困难，且发表日期元数据缺失。"
+        }
+      ],
+      "remaining_gap": "缺少IBM公司自身1990年代在芝加哥地区招聘困难的一手记录，也缺少该计划服务地区合格劳动力供给的直接统计；现有证据为地区性报道和综述，无法精确对应IBM所需工种。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000227158-000227189",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "evidence",
+      "scope": "观察窗口约1990—1999年，对象为IBM成人识字中心所在的芝加哥地区及IBM所需工种；操作化口径为该地区/该工种合格劳动力是否出现短缺或招聘困难。",
+      "reason": "原文预测的是“这个地区”（IBM成人识字中心所在的芝加哥地区）到九十年代难以找到IBM所需工人。现有证据中，1991年报道聚焦坎卡基县且描述低技能者被就业市场挤出，方向与“企业招不到所需工人”相反；1997年报道的熟练工厂工人短缺例子在俄亥俄和威斯康星，非IBM计划所在地区；1996年芝加哥联储综述仅泛论技能需求上升快于供给，未直接测量该地区IBM所需工种的招聘困难。关键对象与主要结果均缺直接证据，无法支持部分符合。",
+      "limitation": "缺少IBM公司自身1990年代在芝加哥地区招聘困难的一手记录，也缺少该计划服务地区合格劳动力供给的直接统计；现有证据对象偏离或方向相反，不足以判定预测实现与否。",
+      "evidence_ids": [
+        "ev-da2ffe83baf41d4b0e5e197c",
+        "ev-47ecfe47d1ba943a2a352c55",
+        "ev-88993846a4c513aa81c9a908"
+      ],
+      "method": "由当地成人识字不足推测未来合格劳动力供给",
+      "method_basis": "explicit",
+      "observation_end": "1997-11-24",
+      "future_time_text": "到九十年代",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-da2ffe83baf41d4b0e5e197c",
+          "relation": "counter",
+          "quote": "The problem is finding work for people who once could have gotten by, but no longer fit the job equation of the 1990s-people who cannot read, write or understand math at the minimum levels required by employers, or who cannot operate commonly used modern equipment such as a computer.",
+          "publication_date": "1991-06-10",
+          "observation_end": "1991-06-10",
+          "limitation": "该报道聚焦坎卡基县而非IBM计划所在的芝加哥市区，且描述的是低技能工人找不到工作、被就业市场挤出，方向与“企业招不到所需工人”相反。"
+        },
+        {
+          "evidence_id": "ev-47ecfe47d1ba943a2a352c55",
+          "relation": "boundary",
+          "quote": "The hunger for skilled factory workers in the Midwest has reached the point where toolmaking firms in Ohio and Wisconsin have bought smaller firms just to acquire new employees",
+          "publication_date": "1997-11-24",
+          "observation_end": "1997-11-24",
+          "limitation": "该报道的熟练工厂工人短缺例子在俄亥俄和威斯康星而非芝加哥，且同时称整体就业前景为一代人以来最好，不能直接对应IBM计划所在地区及IBM所需工种。"
+        },
+        {
+          "evidence_id": "ev-88993846a4c513aa81c9a908",
+          "relation": "background",
+          "quote": "By historical standards, the portion of the workforce having low skills has declined. Nonetheless, rising skill levels have been insufficient to keep up with the pace of rising skill demands.",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "该文为1996年芝加哥联储研讨会综述，泛论技能需求上升快于供给，未直接测量IBM所在地区招工困难，且发表日期元数据缺失。"
+        }
+      ],
+      "remaining_gap": "缺少IBM计划所在芝加哥地区、IBM所需工种在1990年代的招聘困难或合格劳动力短缺的直接证据；现有证据对象偏离（坎卡基县、俄亥俄/威斯康星）或方向相反（低技能者被挤出），不足以判定预测实现与否。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "IBM转述的预测：到20世纪90年代，其成人识字计划所在地区将难以找到所需工人。观察窗口约1990—1999年，对象为该计划服务地区及IBM所需工种；可观察口径为该地区/该工种合格劳动力是否出现短缺或招聘困难。反证包括：该地区同期IBM或同类企业未报告招工困难、合格劳动力供给充足或短缺归因于识字以外因素。",
+  "elapsed_seconds": 37.806,
+  "completed_at": "2026-11-09T10:35:18.256405+00:00"
+}

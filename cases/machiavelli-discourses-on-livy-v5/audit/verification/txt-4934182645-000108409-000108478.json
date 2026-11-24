@@ -1,0 +1,47 @@
+{
+  "id": "txt-4934182645-000108409-000108478",
+  "plan": {
+    "object": "罗马教会。比较的是它最初的开端和作者当时的做法。",
+    "condition": "无额外前提。might well believe 是作者放低的把握，不是把结果改成别人的意见。",
+    "quantifier": "ruin or chastisement：二者之一近在眼前即可。不是必须两者都发生。",
+    "result": "毁灭或惩罚已经近在眼前。close at hand 没有写成多少年。",
+    "window": "1531至2026-11-15。1517年以前已经发生的宗教改革开端不拿来当出版后的结果。",
+    "counterevidence_needed": "罗马教会在1531之后既没有很快受到惩罚，也没有毁灭。"
+  },
+  "select": {
+    "round_1": {
+      "support_query": "Act of Supremacy 1534 England break with Rome papal authority",
+      "counter_query": "papacy continued after Reformation Catholic Church not destroyed 1534 to 1870"
+    },
+    "adaptive_rounds": 0,
+    "kept_urls": [
+      "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/overview/reformation/",
+      "https://en.wikipedia.org/wiki/History_of_the_papacy"
+    ],
+    "dropped": "1870年失去教皇国离1531年太远，不用来证明“近在眼前”。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "trend_aligned": false,
+    "condition_state": "unconditional",
+    "future_time_text": "close at hand",
+    "observation_end": null,
+    "evidence_ids": ["ev-parliament-1534", "ev-wiki-papacy-continued"],
+    "scope": "对象是罗马教会的毁灭或惩罚，时间是近在眼前。不是后来一切对教廷的损失。",
+    "reason": "紧接着的原文用邻国缺少虔诚和教廷做法离开创始时的样子，说明可以相信毁灭或惩罚已近。后文接着谈的是教廷坏榜样使意大利不统一，没有把惩罚定义成某一个王国脱离教皇。1534年英国教会改以国王为首，是地方管辖的改变，不能事后改写成原文的 chastisement。教廷史页写教会走过反宗教改革，只说明没有立刻整体毁灭，也不能单独把“近”量化。决定性缺口是：存档正文没有按这段自己的对比，给出一次可识别的毁灭或惩罚。",
+    "limitation": "两页都没有出版日。close at hand 没有年数。",
+    "method": "把“或”分成毁灭和惩罚。惩罚用1534年英国与罗马分离，毁灭用教会在反宗教改革中仍然存在。",
+    "method_basis": "explicit"
+  },
+  "semantic_review": {
+    "object_match": "pass",
+    "condition_logic": "pass",
+    "time_alignment": "pass",
+    "evidence_support": "pass",
+    "counterevidence": "pass",
+    "verdict_logic": "pass",
+    "note": "先前的部分符合撤回。1534年的地方脱离没有通过对象和惩罚含义这一关，所以六项只确认不计分，不把未知的惩罚含义记成部分符合。"
+  }
+}

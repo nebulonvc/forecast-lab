@@ -1,0 +1,960 @@
+{
+  "claim_id": "txt-1c4066fc0c-000174915-000175001",
+  "version": "search-verifier-v2",
+  "input_sha256": "b927142b3004b7c1c3a7ac3d7545a83666d7e8d1dd73e2f737a57539b05ab9f5",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000174915-000175001",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "evidence",
+    "scope": "以2020—2025年工作场所数字监控/算法管理扩展及其与压力、焦虑等心理结果关联的研究为主，辅以2015—2025美国青年持续悲伤/无望指标检查是否单调恶化；原文对象为西方社会长期趋势，非单一国家或单一人群。",
+    "reason": "自动复核未确认主要判断：原文对象是“西方社会”的“人们”的内心世界，即社会整体心理压抑与协调难题；建议把主要可观察口径换成美国、瑞典职场中算法监控与焦虑/心理困扰的关联，并以美国青少年悲伤/无望为辅助代理。职场工人和青少年都不是原文“西方社会人们内心世界”的直接对应集合，且证据只覆盖美国、瑞典，不能代表全部西方社会。; 建议称“多项2024—2025研究显示自动化监控与算法管理在美国及瑞典职场广泛扩展”，但所引瑞典物流研究是横断面关联研究，只报告算法管理暴露与心理困扰等结果的关联，并未证明“广泛扩展”的时间趋势；美国调查也主要是横断面流行率与关联。用这些材料支撑“扩展”与“长期强化”的持续方向证据不足。; 建议判“部分符合”并设trend_aligned=true，但其理由同时承认CDC青年指标2021—2025回落、算法监控可提升公平感与福祉，即存在反向分项；而支持侧只有横断面关联，没有同一对象、同一指标上的持续方向证据。按口径，主要方向已有持续观察证据才可trend_aligned=true；这里主要结果未形成持续趋势，反向分项又非同一对象同一指标的直接反驳，不能据此设置部分符合+趋势符合。应保留为暂无法判断或明确限定为仅有局部关联证据。",
+    "limitation": "证据多为横断面关联，不能证明技术导致压抑的因果机制；青年心理指标是间接代理且近期改善，与“还会强化”的单调预期不完全吻合；原文“西方社会”范围宽泛，现有证据集中于美国、瑞典职场，不能代表全部西方社会。关键修订：将observation_end改为2025-12-31以匹配CDC证据实际观察期，并保留部分符合判断，因主要方向有持续证据但存在反向分项。",
+    "evidence_ids": [
+      "ev-61f4ed6dcff49e33764c8702",
+      "ev-72ed88fbbce14cbc01c655f6",
+      "ev-e679d382bfe0c634e9fa8ce6",
+      "prior-b2a69c09f2b505448569",
+      "prior-3aca87050e61b5c63548",
+      "prior-ea0ab67e707e8d9e64cf"
+    ],
+    "method": "从技术化、自动化管理推演心理压抑的累积",
+    "method_basis": "explicit",
+    "observation_end": null,
+    "future_time_text": "很长时期内",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-61f4ed6dcff49e33764c8702",
+        "relation": "support",
+        "quote": "Workers who report more intensive electronic productivity monitoring also report higher levels of anxiety, pressure to work faster than they feel is healthy or safe, and higher incidences of workplace-related injuries in the past year",
+        "publication_date": "2024-10-01",
+        "observation_end": null,
+        "limitation": "全国代表性调查为横断面关联，不能确立因果；仅美国职场，非全部西方社会。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-72ed88fbbce14cbc01c655f6",
+        "relation": "support",
+        "quote": "Higher AM exposure was associated with increased prevalence of psychological distress (PR 2·12, 95% CI 1·49–3·02)",
+        "publication_date": "2025-11-18",
+        "observation_end": null,
+        "limitation": "横断面研究，仅瑞典物流业，关联不等于因果。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-e679d382bfe0c634e9fa8ce6",
+        "relation": "counter",
+        "quote": "both algorithmic monitoring and performance management can foster employees' perceptions of organizational fairness, which subsequently supports workplace well-being",
+        "publication_date": "2024-12-25",
+        "observation_end": null,
+        "limitation": "显示算法监控可产生正效应，与“单向压抑强化”相反；样本与情境有限，不能否定其他负向证据。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-b2a69c09f2b505448569",
+        "relation": "boundary",
+        "quote": "可增加压力焦虑，也可提升安全感，效果依雇主实践。",
+        "publication_date": "2025-12-10",
+        "observation_end": null,
+        "limitation": "效果双向且依实践，削弱“必然强化压抑”的单调判断；为摘要性转述。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-3aca87050e61b5c63548",
+        "relation": "counter",
+        "quote": "持续悲伤/无望比例2015年30%、2021年42%、2023年40%、2025年33%；长期仍高于2015，但近期改善",
+        "publication_date": "2026-09-18",
+        "observation_end": "2025-12-31",
+        "limitation": "青年心理指标为间接代理，近期改善与“还会强化”不完全吻合；仅美国青少年，非全部西方社会。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-ea0ab67e707e8d9e64cf",
+        "relation": "support",
+        "quote": "指出功能委托跨客服、运输、物流、金融和医疗行业扩展，人与管理者/同事接触可能减少。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "描述算法管理扩展，未直接测量心灵压抑；无发表日期，观察期不明。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      }
+    ],
+    "remaining_gap": "需补充覆盖多个西方国家、纵向追踪技术化/算法管理扩展与主观压抑或社会心理协调指标变化的直接证据；现有材料只能显示美国、瑞典职场横断面关联及美国青少年间接代理，不能支撑“西方社会长期强化”的趋势判断，也不能据此设置trend_aligned=true。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000174915-000175001",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "以2020—2025年工作场所数字监控/算法管理扩展及与压力、焦虑等心理结果关联的研究为主，辅以2015—2025美国青年持续悲伤/无望指标检查是否单调恶化；原文对象为西方社会长期趋势，非单一国家或单一人群。",
+    "reason": "多项2024—2025研究显示自动化监控与算法管理在美国及瑞典职场广泛扩展，并与焦虑、心理困扰等负向结果相关，方向与原文“技术化合理性压抑心灵、难题长期存在”一致；但CDC青年指标在2021—2025出现回落，且部分研究显示算法监控可提升公平感与福祉，故非单向强化。",
+    "limitation": "证据多为横断面关联，不能证明技术导致压抑的因果机制；青年心理指标是间接代理且近期改善，与“还会强化”的单调预期不完全吻合；原文“西方社会”范围宽泛，现有证据集中于美国、瑞典职场，不能代表全部西方社会。",
+    "evidence_ids": [
+      "ev-61f4ed6dcff49e33764c8702",
+      "ev-72ed88fbbce14cbc01c655f6",
+      "ev-e679d382bfe0c634e9fa8ce6",
+      "prior-b2a69c09f2b505448569",
+      "prior-3aca87050e61b5c63548",
+      "prior-ea0ab67e707e8d9e64cf"
+    ],
+    "method": "从技术化、自动化管理推演心理压抑的累积",
+    "method_basis": "explicit",
+    "observation_end": "2025-11-18",
+    "future_time_text": "很长时期内",
+    "condition_state": "unconditional",
+    "trend_aligned": true,
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-61f4ed6dcff49e33764c8702",
+        "relation": "support",
+        "quote": "Workers who report more intensive electronic productivity monitoring also report higher levels of anxiety, pressure to work faster than they feel is healthy or safe, and higher incidences of workplace-related injuries in the past year",
+        "publication_date": "2024-10-01",
+        "observation_end": null,
+        "limitation": "全国代表性调查为横断面关联，不能确立因果；仅美国职场，非全部西方社会。"
+      },
+      {
+        "evidence_id": "ev-72ed88fbbce14cbc01c655f6",
+        "relation": "support",
+        "quote": "Higher AM exposure was associated with increased prevalence of psychological distress (PR 2·12, 95% CI 1·49–3·02)",
+        "publication_date": "2025-11-18",
+        "observation_end": null,
+        "limitation": "横断面研究，仅瑞典物流业，关联不等于因果。"
+      },
+      {
+        "evidence_id": "ev-e679d382bfe0c634e9fa8ce6",
+        "relation": "counter",
+        "quote": "both algorithmic monitoring and performance management can foster employees' perceptions of organizational fairness, which subsequently supports workplace well-being",
+        "publication_date": "2024-12-25",
+        "observation_end": null,
+        "limitation": "显示算法监控可产生正效应，与“单向压抑强化”相反；样本与情境有限，不能否定其他负向证据。"
+      },
+      {
+        "evidence_id": "prior-b2a69c09f2b505448569",
+        "relation": "boundary",
+        "quote": "可增加压力焦虑，也可提升安全感，效果依雇主实践。",
+        "publication_date": "2025-12-10",
+        "observation_end": null,
+        "limitation": "效果双向且依实践，削弱“必然强化压抑”的单调判断；为摘要性转述。"
+      },
+      {
+        "evidence_id": "prior-3aca87050e61b5c63548",
+        "relation": "counter",
+        "quote": "持续悲伤/无望比例2015年30%、2021年42%、2023年40%、2025年33%；长期仍高于2015，但近期改善",
+        "publication_date": "2026-09-18",
+        "observation_end": "2025-12-31",
+        "limitation": "青年心理指标为间接代理，近期改善与“还会强化”不完全吻合；仅美国青少年，非全部西方社会。"
+      },
+      {
+        "evidence_id": "prior-ea0ab67e707e8d9e64cf",
+        "relation": "support",
+        "quote": "指出功能委托跨客服、运输、物流、金融和医疗行业扩展，人与管理者/同事接触可能减少。",
+        "publication_date": null,
+        "observation_end": null,
+        "limitation": "描述算法管理扩展，未直接测量心灵压抑；无发表日期，观察期不明。"
+      }
+    ],
+    "remaining_gap": "缺少覆盖多个西方国家、纵向追踪技术化监控扩展与主观压抑变化的直接证据，无法确认“长期强化”的单调趋势及因果方向。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-b2a69c09f2b505448569",
+      "url": "https://www.gao.gov/products/gao-25-107126",
+      "title": "ev-r2-l2-gao-digital",
+      "published_date": "2025-12-10",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-12-10",
+        "latest": "2025-12-10"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-gao-digital",
+      "archive_sha256": "f236a9539376fc80505565b8601abd746d515b549dc6726be0e6c6e3131e87df",
+      "archive_path": "data/sources/r2-l2-gao-digital-web-notes.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-ea0ab67e707e8d9e64cf",
+      "url": "https://www.ilo.org/algorithmic-management-workplace",
+      "title": "ev-r2-l2-ilo-algorithm",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-ilo-algorithm",
+      "archive_sha256": "4ab52fc749657e674e44b6d27b8c9c32f04ce7c0340b2a6954f537479afd5569",
+      "archive_path": "data/sources/r2-l2-ilo-algorithm.html",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-3aca87050e61b5c63548",
+      "url": "https://www.cdc.gov/yrbs/youth-health-in-focus/mental-health.html",
+      "title": "ev-r2-l2-cdc-mental",
+      "published_date": "2026-09-18",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2026-09-18",
+        "latest": "2026-09-18"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-cdc-mental",
+      "archive_sha256": "445cbf9b9ff4f056e2787f8eeb71c9f65d98a2618607cd6782b87fa20189f2ab",
+      "archive_path": "data/sources/r2-l2-cdc-mental-web-notes.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-70adc775056ef257c9c5",
+      "url": "https://www.hhs.gov/surgeongeneral/reports-and-publications/youth-mental-health/social-media/index.html",
+      "title": "ev-r2-l2-hhs-social",
+      "published_date": "2023",
+      "publication_date_precision": "year",
+      "publication_date_range": {
+        "earliest": "2023-01-01",
+        "latest": "2023-12-31"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-hhs-social",
+      "archive_sha256": "507805bdd078d817ddcff730bb2cefc2dc98ce0e3a570fc6c104c6b372645b44",
+      "archive_path": "data/sources/r2-l2-hhs-social-web-notes.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-61f4ed6dcff49e33764c8702",
+      "url": "https://equitablegrowth.org/research-paper/estimating-the-prevalence-of-automated-management-and-surveillance-technologies-at-work-and-their-impact-on-workers-well-being/",
+      "resolved_url": "https://equitablegrowth.org/research-paper/estimating-the-prevalence-of-automated-management-and-surveillance-technologies-at-work-and-their-impact-on-workers-well-being/",
+      "title": "Estimating the prevalence of automated management and surveillance technologies at work and their impact on workers’ well-being - Equitable Growth",
+      "published_date": "2024-10-01",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-10-01",
+        "latest": "2024-10-01"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:02.945420+00:00",
+      "archive_sha256": "bde51ba9c57d4fc18382befec29fba589436331e902979aa3c70f989d0f796c2",
+      "archive_path": "jobs/758c7015175de18c8ab68e00/bde51ba9c57d4fc18382befec29fba589436331e902979aa3c70f989d0f796c2.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-72ed88fbbce14cbc01c655f6",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12672710/",
+      "resolved_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12672710/",
+      "title": "Algorithmic management is associated with psychological distress, musculoskeletal pain, and occupational accidents: a cross-sectional study in logistics",
+      "published_date": "2025-11-18",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-11-18",
+        "latest": "2025-11-18"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:02.945578+00:00",
+      "archive_sha256": "f6192e69bfbae67a0edb20b7a3a4ef49f53e0ded68495fde624d4454cbdf7514",
+      "archive_path": "jobs/758c7015175de18c8ab68e00/f6192e69bfbae67a0edb20b7a3a4ef49f53e0ded68495fde624d4454cbdf7514.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-e679d382bfe0c634e9fa8ce6",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/ntwe.12328",
+      "resolved_url": "https://onlinelibrary.wiley.com/doi/10.1111/ntwe.12328",
+      "title": "The Power of Precision: How Algorithmic Monitoring and Performance Management Enhances Employee Workplace Well‐Being - Deng - 2025 - New Technology, Work and Employment - Wiley Online Library",
+      "published_date": "2024-12-25",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2024-12-25",
+        "latest": "2024-12-25"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:34:02.945685+00:00",
+      "archive_sha256": "17d55491c97b074344c68b7eb2b4ab331aedc85dda4e578f3b050453074f4a52",
+      "archive_path": "jobs/758c7015175de18c8ab68e00/17d55491c97b074344c68b7eb2b4ab331aedc85dda4e578f3b050453074f4a52.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "GAO digital monitoring workplace stress anxiety 2025 algorithmic management worker wellbeing study",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "algorithmic management digital surveillance employee autonomy wellbeing positive effects 2024 2025 study",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "GAO digital monitoring workplace stress anxiety 2025 algorithmic management worker wellbeing study",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "algorithmic management digital surveillance employee autonomy wellbeing positive effects 2024 2025 study",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "prior-ea0ab67e707e8d9e64cf"
+      ],
+      "blocks_verdict": true
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "prior-ea0ab67e707e8d9e64cf"
+      ],
+      "blocks_verdict": true
+    }
+  ],
+  "remaining_gap": "需补充覆盖多个西方国家、纵向追踪技术化/算法管理扩展与主观压抑或社会心理协调指标变化的直接证据；现有材料只能显示美国、瑞典职场横断面关联及美国青少年间接代理，不能支撑“西方社会长期强化”的趋势判断，也不能据此设置trend_aligned=true。",
+  "source_statuses": [
+    {
+      "url": "https://equitablegrowth.org/research-paper/estimating-the-prevalence-of-automated-management-and-surveillance-technologies-at-work-and-their-impact-on-workers-well-being/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12672710/",
+      "status": "retrieved",
+      "date_status": "known"
+    },
+    {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/ntwe.12328",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "78c123d755c845052a50b963e61afdbdbd905bb6416f57065d3ae47acf7b16cd"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e257423c0977ec8e4cf3914f0bda1e9c",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "4b013e8474536fced80b0dce96c52a75",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "02af1df01136a565ee9796fb54b45e380c264cbaaf8357cb20bbc5a3555d0783"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "b99bd4eb0a6a06b9cc37ceff8fefe493",
+      "cost_estimate_USD": 0.003,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "95ec584c502d7f748650f09e070366c8f40c10197b985842af827dac27440e81"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e257423c0977ec8e4cf3914f0bda1e9c",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "4b013e8474536fced80b0dce96c52a75",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "f38d57a2a848f50872d438cb00239754852584433f448d366be1cf1b813dcb5b"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "cdc30c2f36a6121583a3b5fdde4fb5778151d3a0b74202b85adca27acee49dcf"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "e42efee5fb2018e20b5b5177a84cbcb7e63c9bbaa76201a298c0f8007ddfb41e"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "a51ef6c879d1bd3af0475e8aeef73553f0d3dec3790c99dcd761b4f2fed4ca7f"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "50dd63b31ea59e8037b1640fc522afc54bc5cfcee630d483c7a7d70db2b265ea"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "prior-ea0ab67e707e8d9e64cf"
+          ],
+          "blocks_verdict": true
+        },
+        {
+          "code": "source_availability_unconfirmed",
+          "evidence_ids": [
+            "prior-ea0ab67e707e8d9e64cf"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "prior-ea0ab67e707e8d9e64cf"
+          ],
+          "blocks_verdict": true
+        },
+        {
+          "code": "source_availability_unconfirmed",
+          "evidence_ids": [
+            "prior-ea0ab67e707e8d9e64cf"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-b2a69c09f2b505448569",
+        "source_bytes": 197,
+        "shown_bytes": 197,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-ea0ab67e707e8d9e64cf",
+        "source_bytes": 202,
+        "shown_bytes": 202,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3aca87050e61b5c63548",
+        "source_bytes": 178,
+        "shown_bytes": 178,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-70adc775056ef257c9c5",
+        "source_bytes": 138,
+        "shown_bytes": 138,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-61f4ed6dcff49e33764c8702",
+        "source_bytes": 12090,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-72ed88fbbce14cbc01c655f6",
+        "source_bytes": 12086,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e679d382bfe0c634e9fa8ce6",
+        "source_bytes": 12256,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-b2a69c09f2b505448569",
+        "source_bytes": 197,
+        "shown_bytes": 197,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-ea0ab67e707e8d9e64cf",
+        "source_bytes": 202,
+        "shown_bytes": 202,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3aca87050e61b5c63548",
+        "source_bytes": 178,
+        "shown_bytes": 178,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-70adc775056ef257c9c5",
+        "source_bytes": 138,
+        "shown_bytes": 138,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-61f4ed6dcff49e33764c8702",
+        "source_bytes": 12090,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-72ed88fbbce14cbc01c655f6",
+        "source_bytes": 12086,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e679d382bfe0c634e9fa8ce6",
+        "source_bytes": 12256,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-b2a69c09f2b505448569",
+        "source_bytes": 197,
+        "shown_bytes": 197,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-ea0ab67e707e8d9e64cf",
+        "source_bytes": 202,
+        "shown_bytes": 202,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3aca87050e61b5c63548",
+        "source_bytes": 178,
+        "shown_bytes": 178,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-70adc775056ef257c9c5",
+        "source_bytes": 138,
+        "shown_bytes": 138,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-61f4ed6dcff49e33764c8702",
+        "source_bytes": 12090,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-72ed88fbbce14cbc01c655f6",
+        "source_bytes": 12086,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e679d382bfe0c634e9fa8ce6",
+        "source_bytes": 12256,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-b2a69c09f2b505448569",
+        "source_bytes": 197,
+        "shown_bytes": 197,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-ea0ab67e707e8d9e64cf",
+        "source_bytes": 202,
+        "shown_bytes": 202,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-3aca87050e61b5c63548",
+        "source_bytes": 178,
+        "shown_bytes": 178,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-70adc775056ef257c9c5",
+        "source_bytes": 138,
+        "shown_bytes": 138,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-61f4ed6dcff49e33764c8702",
+        "source_bytes": 12090,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-72ed88fbbce14cbc01c655f6",
+        "source_bytes": 12086,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-e679d382bfe0c634e9fa8ce6",
+        "source_bytes": 12256,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000174915-000175001",
+      "decision": "revise",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "fail",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "time_alignment",
+          "reason": "proposed_assessment的observation_end写作2025-11-18，但所引CDC青年指标证据prior-3aca87050e61b5c63548的观察期明确延伸到2025年（其observation_end为2025-12-31），且该来源发表于2026-09-18。把观察终点写成2025-11-18与所引证据的实际观察时期不一致，属于时期写法错误。",
+          "quote_ref": "q2",
+          "source_quote": "以2020—2025年工作场所数字监控/算法管理扩展及与压力、焦虑等心理结果关联的研究为主，辅以2015—2025美国青年持续悲伤/无望指标检查是否单调恶化；原文对象为西方社会长期趋势，非单一国家或单一人群。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "原文的核心可检验结果是“这个进程随着现代科学技术的发展，还会强化”，即技术化合理性对心灵压抑的方向应随科技发展而强化。建议一方面承认多项2024—2025研究显示监控/算法管理与焦虑、心理困扰负向相关（方向一致），另一方面以CDC青年指标2021—2025回落和算法监控可提升公平感为由判为“部分符合”并设trend_aligned=true。但CDC青年指标是间接代理且其近期改善只能说明该代理指标未单调恶化，不能直接证明原文“技术化合理性压抑心灵会强化”这一主要结果只实现了一部分；算法监控正效应研究属于不同指标/情境的混合方向，也不足以把主要结果拆成“部分实现”。建议未指出原文后果B（心灵压抑随科技发展强化）哪些具体部分实现、哪些未实现及其直接证据，仅罗列代理指标有升有降，判部分符合的依据不足。",
+          "quote_ref": "q3",
+          "source_quote": "多项2024—2025研究显示自动化监控与算法管理在美国及瑞典职场广泛扩展，并与焦虑、心理困扰等负向结果相关，方向与原文“技术化合理性压抑心灵、难题长期存在”一致；但CDC青年指标在2021—2025出现回落，且部分研究显示算法监控可提升公平感与福祉，故非单向强化。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需修正observation_end以匹配所引CDC证据的实际观察期（至少到2025年，来源发表于2026-09-18），并重新论证“部分符合”是否成立：要么给出原文后果B（心灵压抑随科技发展强化）在声明口径内哪些具体部分实现、哪些未实现的直接证据，要么改为与主要结果方向一致的判断（如正确或趋势符合），或说明关键结果缺证据而保留具体未定。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000174915-000175001",
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "pass",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "原文对象是“西方社会”的“人们”的内心世界，即社会整体心理压抑与协调难题；建议把主要可观察口径换成美国、瑞典职场中算法监控与焦虑/心理困扰的关联，并以美国青少年悲伤/无望为辅助代理。职场工人和青少年都不是原文“西方社会人们内心世界”的直接对应集合，且证据只覆盖美国、瑞典，不能代表全部西方社会。",
+          "quote_ref": "q1",
+          "source_quote": "断地悄悄压抑人们的心灵，这个进程随着现代科学技术的发展，还会强化。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "建议称“多项2024—2025研究显示自动化监控与算法管理在美国及瑞典职场广泛扩展”，但所引瑞典物流研究是横断面关联研究，只报告算法管理暴露与心理困扰等结果的关联，并未证明“广泛扩展”的时间趋势；美国调查也主要是横断面流行率与关联。用这些材料支撑“扩展”与“长期强化”的持续方向证据不足。",
+          "quote_ref": "q5",
+          "source_quote": "Higher AM exposure was associated with increased prevalence of psychological distress (PR 2·12, 95% CI 1·49–3·02)",
+          "evidence_id": "ev-72ed88fbbce14cbc01c655f6",
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "建议判“部分符合”并设trend_aligned=true，但其理由同时承认CDC青年指标2021—2025回落、算法监控可提升公平感与福祉，即存在反向分项；而支持侧只有横断面关联，没有同一对象、同一指标上的持续方向证据。按口径，主要方向已有持续观察证据才可trend_aligned=true；这里主要结果未形成持续趋势，反向分项又非同一对象同一指标的直接反驳，不能据此设置部分符合+趋势符合。应保留为暂无法判断或明确限定为仅有局部关联证据。",
+          "quote_ref": "q3",
+          "source_quote": "多项2024—2025研究显示自动化监控与算法管理在美国及瑞典职场广泛扩展，并与焦虑、心理困扰等负向结果相关，方向与原文“技术化合理性压抑心灵、难题长期存在”一致；但CDC青年指标在2021—2025出现回落，且部分研究显示算法监控可提升公平感与福祉，故非单向强化。",
+          "evidence_id": null,
+          "quote_resolution": "program_supplied_verbatim_option",
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充覆盖多个西方国家、纵向追踪技术化/算法管理扩展与主观压抑或社会心理协调指标变化的直接证据；现有材料只能显示美国、瑞典职场横断面关联及美国青少年间接代理，不能支撑“西方社会长期强化”的趋势判断，也不能据此设置trend_aligned=true。"
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000174915-000175001",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以2020—2025年工作场所数字监控/算法管理扩展及与压力、焦虑等心理结果关联的研究为主，辅以2015—2025美国青年持续悲伤/无望指标检查是否单调恶化；原文对象为西方社会长期趋势，非单一国家或单一人群。",
+      "reason": "多项2024—2025研究显示自动化监控与算法管理在美国及瑞典职场广泛扩展，并与焦虑、心理困扰等负向结果相关，方向与原文“技术化合理性压抑心灵、难题长期存在”一致；但CDC青年指标在2021—2025出现回落，且部分研究显示算法监控可提升公平感与福祉，故非单向强化。",
+      "limitation": "证据多为横断面关联，不能证明技术导致压抑的因果机制；青年心理指标是间接代理且近期改善，与“还会强化”的单调预期不完全吻合；原文“西方社会”范围宽泛，现有证据集中于美国、瑞典职场，不能代表全部西方社会。",
+      "evidence_ids": [
+        "ev-61f4ed6dcff49e33764c8702",
+        "ev-72ed88fbbce14cbc01c655f6",
+        "ev-e679d382bfe0c634e9fa8ce6",
+        "prior-b2a69c09f2b505448569",
+        "prior-3aca87050e61b5c63548",
+        "prior-ea0ab67e707e8d9e64cf"
+      ],
+      "method": "从技术化、自动化管理推演心理压抑的累积",
+      "method_basis": "explicit",
+      "observation_end": "2025-11-18",
+      "future_time_text": "很长时期内",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-61f4ed6dcff49e33764c8702",
+          "relation": "support",
+          "quote": "Workers who report more intensive electronic productivity monitoring also report higher levels of anxiety, pressure to work faster than they feel is healthy or safe, and higher incidences of workplace-related injuries in the past year",
+          "publication_date": "2024-10-01",
+          "observation_end": null,
+          "limitation": "全国代表性调查为横断面关联，不能确立因果；仅美国职场，非全部西方社会。"
+        },
+        {
+          "evidence_id": "ev-72ed88fbbce14cbc01c655f6",
+          "relation": "support",
+          "quote": "Higher AM exposure was associated with increased prevalence of psychological distress (PR 2·12, 95% CI 1·49–3·02)",
+          "publication_date": "2025-11-18",
+          "observation_end": null,
+          "limitation": "横断面研究，仅瑞典物流业，关联不等于因果。"
+        },
+        {
+          "evidence_id": "ev-e679d382bfe0c634e9fa8ce6",
+          "relation": "counter",
+          "quote": "both algorithmic monitoring and performance management can foster employees' perceptions of organizational fairness, which subsequently supports workplace well-being",
+          "publication_date": "2024-12-25",
+          "observation_end": null,
+          "limitation": "显示算法监控可产生正效应，与“单向压抑强化”相反；样本与情境有限，不能否定其他负向证据。"
+        },
+        {
+          "evidence_id": "prior-b2a69c09f2b505448569",
+          "relation": "boundary",
+          "quote": "可增加压力焦虑，也可提升安全感，效果依雇主实践。",
+          "publication_date": "2025-12-10",
+          "observation_end": null,
+          "limitation": "效果双向且依实践，削弱“必然强化压抑”的单调判断；为摘要性转述。"
+        },
+        {
+          "evidence_id": "prior-3aca87050e61b5c63548",
+          "relation": "counter",
+          "quote": "持续悲伤/无望比例2015年30%、2021年42%、2023年40%、2025年33%；长期仍高于2015，但近期改善",
+          "publication_date": "2026-09-18",
+          "observation_end": "2025-12-31",
+          "limitation": "青年心理指标为间接代理，近期改善与“还会强化”不完全吻合；仅美国青少年，非全部西方社会。"
+        },
+        {
+          "evidence_id": "prior-ea0ab67e707e8d9e64cf",
+          "relation": "support",
+          "quote": "指出功能委托跨客服、运输、物流、金融和医疗行业扩展，人与管理者/同事接触可能减少。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "描述算法管理扩展，未直接测量心灵压抑；无发表日期，观察期不明。"
+        }
+      ],
+      "remaining_gap": "缺少覆盖多个西方国家、纵向追踪技术化监控扩展与主观压抑变化的直接证据，无法确认“长期强化”的单调趋势及因果方向。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000174915-000175001",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "以2020—2025年工作场所数字监控/算法管理扩展及其与压力、焦虑等心理结果关联的研究为主，辅以2015—2025美国青年持续悲伤/无望指标检查是否单调恶化；原文对象为西方社会长期趋势，非单一国家或单一人群。",
+      "reason": "多项2024—2025研究显示自动化监控与算法管理在美国及瑞典职场广泛扩展，并与焦虑、心理困扰等负向结果相关，方向与原文“技术化合理性压抑心灵、难题长期存在”一致；但CDC青年指标在2021—2025出现回落，且部分研究显示算法监控可提升公平感与福祉，故非单向强化。",
+      "limitation": "证据多为横断面关联，不能证明技术导致压抑的因果机制；青年心理指标是间接代理且近期改善，与“还会强化”的单调预期不完全吻合；原文“西方社会”范围宽泛，现有证据集中于美国、瑞典职场，不能代表全部西方社会。关键修订：将observation_end改为2025-12-31以匹配CDC证据实际观察期，并保留部分符合判断，因主要方向有持续证据但存在反向分项。",
+      "evidence_ids": [
+        "ev-61f4ed6dcff49e33764c8702",
+        "ev-72ed88fbbce14cbc01c655f6",
+        "ev-e679d382bfe0c634e9fa8ce6",
+        "prior-b2a69c09f2b505448569",
+        "prior-3aca87050e61b5c63548",
+        "prior-ea0ab67e707e8d9e64cf"
+      ],
+      "method": "从技术化、自动化管理推演心理压抑的累积",
+      "method_basis": "explicit",
+      "observation_end": "2025-12-31",
+      "future_time_text": "很长时期内",
+      "condition_state": "unconditional",
+      "trend_aligned": true,
+      "evidence_notes": [
+        {
+          "evidence_id": "ev-61f4ed6dcff49e33764c8702",
+          "relation": "support",
+          "quote": "Workers who report more intensive electronic productivity monitoring also report higher levels of anxiety, pressure to work faster than they feel is healthy or safe, and higher incidences of workplace-related injuries in the past year",
+          "publication_date": "2024-10-01",
+          "observation_end": null,
+          "limitation": "全国代表性调查为横断面关联，不能确立因果；仅美国职场，非全部西方社会。"
+        },
+        {
+          "evidence_id": "ev-72ed88fbbce14cbc01c655f6",
+          "relation": "support",
+          "quote": "Higher AM exposure was associated with increased prevalence of psychological distress (PR 2·12, 95% CI 1·49–3·02)",
+          "publication_date": "2025-11-18",
+          "observation_end": null,
+          "limitation": "横断面研究，仅瑞典物流业，关联不等于因果。"
+        },
+        {
+          "evidence_id": "ev-e679d382bfe0c634e9fa8ce6",
+          "relation": "counter",
+          "quote": "both algorithmic monitoring and performance management can foster employees' perceptions of organizational fairness, which subsequently supports workplace well-being",
+          "publication_date": "2024-12-25",
+          "observation_end": null,
+          "limitation": "显示算法监控可产生正效应，与“单向压抑强化”相反；样本与情境有限，不能否定其他负向证据。"
+        },
+        {
+          "evidence_id": "prior-b2a69c09f2b505448569",
+          "relation": "boundary",
+          "quote": "可增加压力焦虑，也可提升安全感，效果依雇主实践。",
+          "publication_date": "2025-12-10",
+          "observation_end": null,
+          "limitation": "效果双向且依实践，削弱“必然强化压抑”的单调判断；为摘要性转述。"
+        },
+        {
+          "evidence_id": "prior-3aca87050e61b5c63548",
+          "relation": "counter",
+          "quote": "持续悲伤/无望比例2015年30%、2021年42%、2023年40%、2025年33%；长期仍高于2015，但近期改善",
+          "publication_date": "2026-09-18",
+          "observation_end": "2025-12-31",
+          "limitation": "青年心理指标为间接代理，近期改善与“还会强化”不完全吻合；仅美国青少年，非全部西方社会。"
+        },
+        {
+          "evidence_id": "prior-ea0ab67e707e8d9e64cf",
+          "relation": "support",
+          "quote": "指出功能委托跨客服、运输、物流、金融和医疗行业扩展，人与管理者/同事接触可能减少。",
+          "publication_date": null,
+          "observation_end": null,
+          "limitation": "描述算法管理扩展，未直接测量心灵压抑；无发表日期，观察期不明。"
+        }
+      ],
+      "remaining_gap": "缺少覆盖多个西方国家、纵向追踪技术化监控扩展与主观压抑变化的直接证据，无法确认“长期强化”的单调趋势及因果方向。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "unresolved",
+  "scope": "评估王沪宁关于西方社会随现代科技发展，技术化合理性对心灵压抑会强化、协调内心世界将长期成为难题的判断。可观察口径：2020—2025年工作场所数字监控/算法管理扩展及压力焦虑研究，辅以2015—2025美国青年心理指标检查是否单调恶化；反证包括技术管理带来安全感等正效应及心理指标近期改善。",
+  "elapsed_seconds": 35.241,
+  "completed_at": "2026-11-09T10:34:30.435010+00:00"
+}

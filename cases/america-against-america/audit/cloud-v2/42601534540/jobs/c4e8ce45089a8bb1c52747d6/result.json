@@ -1,0 +1,932 @@
+{
+  "claim_id": "txt-1c4066fc0c-000118244-000118291",
+  "version": "search-verifier-v2",
+  "input_sha256": "2de127a240aaa9d0ebce7fa4fda09b6630d40327f326b1d0d3a72f0046d68d57",
+  "cutoff": "2026-11-09",
+  "task_state": "completed",
+  "assessment": {
+    "id": "txt-1c4066fc0c-000118244-000118291",
+    "inclusion": "forecast",
+    "verdict": "暂无法判断",
+    "basis": "attribution",
+    "scope": "原文对象为西方社会（紧接着以美国为例，称此类组织在美国地位尤其低）中主张改革资本主义制度的组织与观念；可观察口径为其在截止日前是否取得“大的影响”。观察时段为1991年前后至2026-11-09。",
+    "reason": "原文判断此类组织与观念在西方社会不会有什么大的影响，并以美国为重点举例。现有材料中，希腊SYRIZA于2015年执政属于另一国、另一政党集合，原文未把希腊或南欧激进左翼纳入其对象；美国DSA会员先增后回落、Pew显示美国对社会主义正面评价由42%降至36%，均不能直接测量原文对象集合“影响力大小”这一主要结果。关键对象与主要结果仍缺对应证据，故暂无法判断。",
+    "limitation": "修订说明：原判部分符合把希腊SYRIZA执政和美国DSA会员数当作同一对象集合的实质突破，属对象替换；公众对“社会主义”一词的好感度也不等于对“改革资本主义制度”组织与观念影响力的支持。原文因果机制（经济差距决定意识形态吸引力）未获因果识别，仅作背景，不额外作为结果门槛。",
+    "evidence_ids": [
+      "prior-996f07df4bf7e30d01f9",
+      "prior-e7e4bc614177e14e8bf2",
+      "prior-f79a0df61de696fe543e",
+      "prior-7a233ab399073230dc87",
+      "ev-eabdf83076f02ad9386dc136",
+      "ev-27239f3a18c485623eb8fe51"
+    ],
+    "method": "物质生活吸引力对意识形态竞争的制约",
+    "method_basis": "inferred",
+    "observation_end": "2026-11-09",
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-996f07df4bf7e30d01f9",
+        "relation": "boundary",
+        "quote": "议会联盟据希腊议会资料记录：激进左翼联盟SYRIZA赢149/300席，2015年1月26日与独立希腊人党组阁；主要竞选议题是救助条件与反紧缩。",
+        "publication_date": null,
+        "observation_end": "2015-01-26",
+        "limitation": "记录为摘要，未给出来源具体发表日期；仅证明希腊一国选举结果，不能代表原文以美国为重点的西方社会对象集合。",
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      },
+      {
+        "evidence_id": "prior-e7e4bc614177e14e8bf2",
+        "relation": "boundary",
+        "quote": "DSA自己的会员名册研究称长期约5000会员，2016—2020增至约5万，2021有效会员峰值不足79000，2024年10月约51000；2016、2018、2020有多重政治触发因素。",
+        "publication_date": "2025-02-27",
+        "observation_end": "2024-10-31",
+        "limitation": "数据来自组织自身研究，会员数不等于社会影响；2024年已从峰值回落，不能证明持续扩张，也不能直接测量原文对象集合的影响力。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-f79a0df61de696fe543e",
+        "relation": "background",
+        "quote": "DSA自称社会主义组织，主张劳动者民主地管理经济和社会以满足人的需要、而非少数人利润；页面称平台第二稿供大会讨论。",
+        "publication_date": "2021",
+        "observation_end": null,
+        "limitation": "仅证明该组织存在及其纲领主张，不证明其影响力大小。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "prior-7a233ab399073230dc87",
+        "relation": "support",
+        "quote": "Pew于2022年8月调查7647名成年人：对socialism正面评价36%，2019年42%；capitalism正面57%，2019年65%。",
+        "publication_date": "2022-09-19",
+        "observation_end": "2022-08-14",
+        "limitation": "仅美国全国样本，且测量的是对“社会主义”一词的好感度，不等于对“改革资本主义制度”组织与观念影响力的支持；正面评价下降支持“影响有限”的一面，但仍有36%正面，不能简单等同于无影响。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-eabdf83076f02ad9386dc136",
+        "relation": "boundary",
+        "quote": "Syriza won a parliamentary election for the first time, winning 36% of votes and 149 seats, just two short of an absolute majority.",
+        "publication_date": null,
+        "observation_end": "2015-01-25",
+        "limitation": "维基百科条目，元数据无发表日期；仅希腊一国案例，且为2015年特定危机背景，不能代表原文对象集合。",
+        "source_availability": {
+          "status": "available",
+          "basis": "program_capture"
+        }
+      },
+      {
+        "evidence_id": "ev-27239f3a18c485623eb8fe51",
+        "relation": "boundary",
+        "quote": "Greece's leftwing Syriza party will form a coalition government with the right-wing, anti-bailout Independent Greeks party, the leader of the smaller party told reporters on Monday.",
+        "publication_date": "2015-01-26",
+        "observation_end": "2015-01-26",
+        "limitation": "新闻报道证实组阁事实，但不评估其长期影响或对整个西方社会主义运动的意义，不能直接对应原文对象集合。",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      }
+    ],
+    "remaining_gap": "缺少与原文对象同一集合（西方社会尤其美国中主张改革资本主义制度的组织与观念）在截止日前“影响力大小”的直接、系统指标；现有希腊SYRIZA执政、美国DSA会员数及公众对“社会主义”一词好感度材料不能解决对象对应和主要结果证据缺口。"
+  },
+  "raw_assessment": {
+    "id": "txt-1c4066fc0c-000118244-000118291",
+    "inclusion": "forecast",
+    "verdict": "部分符合",
+    "basis": "observed_window",
+    "scope": "对象为西方社会（原文以美国为重点）中主张改革资本主义制度的组织与观念；以截止日前是否取得“大的影响”为口径，代理指标包括：激进左翼政党全国执政或显著议席、社会主义组织大规模会员与持续动员、公众对社会主义正面态度。观察时段为1991年前后至2026-11-09。",
+    "reason": "原文判断此类组织与观念在西方不会有很大影响。观察期内出现相反方向的实质证据：希腊SYRIZA于2015年以36.34%得票、149席成为第一大党并牵头组阁，属于激进左翼政党实际执政；美国DSA会员从长期约5000增至2016—2020约5万、2021峰值近7.9万，显示组织动员显著扩张。但美国公众对社会主义正面评价2022年为36%，低于2019年42%，且DSA会员2024年回落至约5.1万，未形成持续上升趋势。综合看，主要判断在部分对象和时段被实质突破，但并非全面、持续地“有很大影响”，故判部分符合。",
+    "limitation": "SYRIZA案例在希腊而非原文重点的美国，且其执政与欧债危机特定条件相关；DSA会员数据来自组织自身名册研究，公众态度为美国全国调查，均不能直接代表“西方社会”整体。原文的因果机制（经济差距决定意识形态吸引力）未获因果识别，仅评价结果方向。",
+    "evidence_ids": [
+      "prior-996f07df4bf7e30d01f9",
+      "prior-e7e4bc614177e14e8bf2",
+      "prior-f79a0df61de696fe543e",
+      "prior-7a233ab399073230dc87",
+      "ev-eabdf83076f02ad9386dc136",
+      "ev-27239f3a18c485623eb8fe51"
+    ],
+    "method": "物质生活吸引力对意识形态竞争的制约",
+    "method_basis": "inferred",
+    "observation_end": "2026-11-09",
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "trend_aligned": false,
+    "evidence_notes": [
+      {
+        "evidence_id": "prior-996f07df4bf7e30d01f9",
+        "relation": "counter",
+        "quote": "议会联盟据希腊议会资料记录：激进左翼联盟SYRIZA赢149/300席，2015年1月26日与独立希腊人党组阁；主要竞选议题是救助条件与反紧缩。",
+        "publication_date": null,
+        "observation_end": "2015-01-26",
+        "limitation": "记录为摘要，未给出来源具体发表日期；仅证明希腊一国的选举结果，不能代表整个西方。"
+      },
+      {
+        "evidence_id": "prior-e7e4bc614177e14e8bf2",
+        "relation": "counter",
+        "quote": "DSA自己的会员名册研究称长期约5000会员，2016—2020增至约5万，2021有效会员峰值不足79000，2024年10月约51000；2016、2018、2020有多重政治触发因素。",
+        "publication_date": "2025-02-27",
+        "observation_end": "2024-10-31",
+        "limitation": "数据来自组织自身研究，会员数不等于社会影响；2024年已从峰值回落，不能证明持续扩张。"
+      },
+      {
+        "evidence_id": "prior-f79a0df61de696fe543e",
+        "relation": "background",
+        "quote": "DSA自称社会主义组织，主张劳动者民主地管理经济和社会以满足人的需要、而非少数人利润；页面称平台第二稿供大会讨论。",
+        "publication_date": "2021",
+        "observation_end": null,
+        "limitation": "仅证明该组织存在及其纲领主张，不证明其影响力大小。"
+      },
+      {
+        "evidence_id": "prior-7a233ab399073230dc87",
+        "relation": "support",
+        "quote": "Pew于2022年8月调查7647名成年人：对socialism正面评价36%，2019年42%；capitalism正面57%，2019年65%。",
+        "publication_date": "2022-09-19",
+        "observation_end": "2022-08-14",
+        "limitation": "仅美国全国样本，且社会主义正面评价下降，支持“影响有限”的一面，但正面评价仍占36%，不能简单等同于无影响。"
+      },
+      {
+        "evidence_id": "ev-eabdf83076f02ad9386dc136",
+        "relation": "counter",
+        "quote": "Syriza won a parliamentary election for the first time, winning 36% of votes and 149 seats, just two short of an absolute majority.",
+        "publication_date": null,
+        "observation_end": "2015-01-25",
+        "limitation": "维基百科条目，元数据无发表日期；仅希腊一国案例，且为2015年特定危机背景。"
+      },
+      {
+        "evidence_id": "ev-27239f3a18c485623eb8fe51",
+        "relation": "counter",
+        "quote": "Greece's leftwing Syriza party will form a coalition government with the right-wing, anti-bailout Independent Greeks party, the leader of the smaller party told reporters on Monday.",
+        "publication_date": "2015-01-26",
+        "observation_end": "2015-01-26",
+        "limitation": "新闻报道证实组阁事实，但不评估其长期影响或对整个西方社会主义运动的意义。"
+      }
+    ],
+    "remaining_gap": "缺少覆盖整个西方社会、截止日前持续且系统的“主张改革资本主义制度的组织与观念影响力”指标；现有证据集中于希腊一党执政和美国DSA会员及公众态度，无法完整判定原文全称式判断。"
+  },
+  "evidence_candidates": [
+    {
+      "id": "prior-996f07df4bf7e30d01f9",
+      "url": "https://data.ipu.org/election-summary/HTML/2125_15_Jan.htm",
+      "title": "ev-r2-l2-ipu-greece",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-ipu-greece",
+      "archive_sha256": "d08f92162dd112f61db0dd11eca3a369cda31e1a045f8f83296e9562052114d0",
+      "archive_path": "data/sources/r2-l2-ipu-greece-web-notes.json",
+      "availability": {
+        "status": "unknown",
+        "basis": "not_established"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-e7e4bc614177e14e8bf2",
+      "url": "https://democraticleft.dsausa.org/2025/02/27/state-of-dsa-part-one-welcome-to-dsa/",
+      "title": "ev-r2-l2-dsa-members",
+      "published_date": "2025-02-27",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2025-02-27",
+        "latest": "2025-02-27"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-dsa-members",
+      "archive_sha256": "4424d8744a09d13b4ff90e45d3a15a55e494a4692fbf6c1bf8cefa421f8d4d95",
+      "archive_path": "data/sources/r2-l2-dsa-members-web-notes.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-f79a0df61de696fe543e",
+      "url": "https://convention2021.dsausa.org/platform-development/",
+      "title": "ev-r2-l2-dsa-platform",
+      "published_date": "2021",
+      "publication_date_precision": "year",
+      "publication_date_range": {
+        "earliest": "2021-01-01",
+        "latest": "2021-12-31"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-r2-l2-dsa-platform",
+      "archive_sha256": "18b32dc1412581c4fa492dae2e99531f1e51878fea59b5355c27cd48cbb60261",
+      "archive_path": "data/sources/r2-l2-dsa-platform-web-notes.json",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "prior-7a233ab399073230dc87",
+      "url": "https://www.pewresearch.org/politics/2022/09/19/modest-declines-in-positive-views-of-socialism-and-capitalism-in-u-s/",
+      "title": "ev-l2-socialism-2022",
+      "published_date": "2022-09-19",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2022-09-19",
+        "latest": "2022-09-19"
+      },
+      "date_status": "known",
+      "source_kind": "previously_registered_excerpt",
+      "verified": true,
+      "prior_evidence_id": "ev-l2-socialism-2022",
+      "archive_sha256": "57400152cc4eb1c96a50ffd8466cf335250dd0c53069439da52fe5babc729428",
+      "archive_path": "data/sources/lane2-ev-l2-socialism-2022.html",
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-29362dfcd51f088b4723677e",
+      "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2022/09/PP_2022.09.19_socialism-capitalism_TOPLINE.pdf",
+      "resolved_url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2022/09/PP_2022.09.19_socialism-capitalism_TOPLINE.pdf",
+      "title": "a. Socialism Aug 1-14, 2022 36 6 30 60 33 27 4 Apr 29-May 13, 2019 42 9 34 55 23 32 3",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:35.680848+00:00",
+      "archive_sha256": "02942e6539d07edacf8c1723d72623a4fef544a5bf98bad231032e43b80f0820",
+      "archive_path": "jobs/c4e8ce45089a8bb1c52747d6/02942e6539d07edacf8c1723d72623a4fef544a5bf98bad231032e43b80f0820.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-eabdf83076f02ad9386dc136",
+      "url": "https://en.wikipedia.org/wiki/January_2015_Greek_legislative_election",
+      "resolved_url": "https://en.wikipedia.org/wiki/January_2015_Greek_legislative_election",
+      "title": "January 2015 Greek parliamentary election",
+      "published_date": null,
+      "publication_date_precision": null,
+      "publication_date_range": null,
+      "date_status": "unknown",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:35.680997+00:00",
+      "archive_sha256": "dfc1eef9e8761d1cbbe9b06255a4fd9d8742c39e24c0d35655792faed7acdcc2",
+      "archive_path": "jobs/c4e8ce45089a8bb1c52747d6/dfc1eef9e8761d1cbbe9b06255a4fd9d8742c39e24c0d35655792faed7acdcc2.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": true,
+      "availability": {
+        "status": "available",
+        "basis": "program_capture"
+      },
+      "source_body_in_export": false
+    },
+    {
+      "id": "ev-27239f3a18c485623eb8fe51",
+      "url": "https://www.reuters.com/article/greece-election-govt-idUSA8N0UD00S20150126/",
+      "resolved_url": "https://www.reuters.com/article/greece-election-govt-idUSA8N0UD00S20150126/",
+      "title": "Greece's Syriza to form government with right-wing party",
+      "published_date": "2015-01-26",
+      "publication_date_precision": "day",
+      "publication_date_range": {
+        "earliest": "2015-01-26",
+        "latest": "2015-01-26"
+      },
+      "date_status": "known",
+      "verified": false,
+      "source_kind": "exa_contents",
+      "retrieved_at": "2026-11-09T10:33:44.817267+00:00",
+      "archive_sha256": "4389ba9844eb0a42dd4bd32e809f23109c36c852f88981b3cbe4aad2f09560f0",
+      "archive_path": "jobs/c4e8ce45089a8bb1c52747d6/4389ba9844eb0a42dd4bd32e809f23109c36c852f88981b3cbe4aad2f09560f0.txt",
+      "provider_text_limit": 12000,
+      "provider_text_may_be_truncated": false,
+      "availability": {
+        "status": "available",
+        "basis": "publication_range"
+      },
+      "source_body_in_export": false
+    }
+  ],
+  "queries": [
+    {
+      "round": 1,
+      "role": "support",
+      "query": "Pew Research 2022 socialism capitalism positive views United States survey 36% 57%",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 1,
+      "role": "counter",
+      "query": "SYRIZA Greece 2015 election 149 seats coalition government IPU",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "support",
+      "query": "Pew Research 2022 socialism capitalism positive views United States survey 36% 57% trend",
+      "state": "completed",
+      "result_count": 5
+    },
+    {
+      "round": 2,
+      "role": "counter",
+      "query": "SYRIZA Greece January 2015 legislative election 149 seats coalition government Tsipras prime minister",
+      "state": "completed",
+      "result_count": 5
+    }
+  ],
+  "errors": [],
+  "validation_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-eabdf83076f02ad9386dc136",
+        "prior-996f07df4bf7e30d01f9"
+      ],
+      "blocks_verdict": true
+    }
+  ],
+  "remaining_gap": "缺少与原文对象同一集合（西方社会尤其美国中主张改革资本主义制度的组织与观念）在截止日前“影响力大小”的直接、系统指标；现有希腊SYRIZA执政、美国DSA会员数及公众对“社会主义”一词好感度材料不能解决对象对应和主要结果证据缺口。",
+  "source_statuses": [
+    {
+      "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2022/09/PP_2022.09.19_socialism-capitalism_TOPLINE.pdf",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/January_2015_Greek_legislative_election",
+      "status": "retrieved",
+      "date_status": "unknown"
+    },
+    {
+      "url": "https://www.reuters.com/article/greece-election-govt-idUSA8N0UD00S20150126/",
+      "status": "retrieved",
+      "date_status": "known"
+    }
+  ],
+  "scope_suggestions": [],
+  "llm_calls": 8,
+  "request_receipts": [
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "e937bce55bea4b312c7eff000a285d4904f29bae0973f172f986081744d48fc2"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e3a10516aa6e91c937c1acfc4bbf87ac",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "216c405122a0f3a80ab62212f03951b0",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "786120d23feafa7d4d7d204141030ec0b81c7ce34dfe2e4f942d644147491007"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "0fb0bd5f4593b8fea2b2fdd1942110e6",
+      "cost_estimate_USD": 0.002,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "search_plan",
+      "purpose": "production",
+      "request_sha256": "6d2fc7634112e6164e5de4d1e27a03de3cb744f83b1ba7eb235b24c53fa1295c"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "5d97ab90261016516ccbc82ed3db2532",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "exa",
+      "stage": "search",
+      "request_id": "e9f6527a1b78a0b05c1ab35dc3db1709",
+      "cost_estimate_USD": 0.007,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "select_sources",
+      "purpose": "production",
+      "request_sha256": "69e2b006454cc761dc693cdc9962cff2da8af542331ecf69e5f9e7630615e3a6"
+    },
+    {
+      "provider": "exa",
+      "stage": "contents",
+      "request_id": "2384b988d82ca1b4d2e17a5212d6cc30",
+      "cost_estimate_USD": 0.001,
+      "accounting": "shared request estimate; do not sum cached attributions"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "assess",
+      "purpose": "production",
+      "request_sha256": "959cfb9b326ed5d8597aa8a90aea67490a286a48915fa4b8f2d0e5f5d544cb83"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "3d93744b5e8bf7354658d62dc93a46691b0576bf330df59fc7eb83e66e72b867"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "revise_assessment",
+      "purpose": "production",
+      "request_sha256": "696fb9c36ef1909c3ef06cae61f05e636cca0ce36e697c3bc7e814ec665e0eb2"
+    },
+    {
+      "provider": "deepseek",
+      "stage": "semantic_review",
+      "purpose": "production",
+      "request_sha256": "9e5a374c945ee3cbd83a17811a0684fbe4c401ca81cb5eaa57d00a54aabfc7f5"
+    }
+  ],
+  "needs_review": false,
+  "imported": false,
+  "schema_repairs": [],
+  "decision_trace": [
+    {
+      "round": 1,
+      "draft_verdict": "部分符合",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-eabdf83076f02ad9386dc136",
+            "prior-996f07df4bf7e30d01f9"
+          ],
+          "blocks_verdict": true
+        },
+        {
+          "code": "source_availability_unconfirmed",
+          "evidence_ids": [
+            "prior-996f07df4bf7e30d01f9"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "revise",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    },
+    {
+      "round": 2,
+      "draft_verdict": "暂无法判断",
+      "mechanical_verdict": "暂无法判断",
+      "warnings": [
+        {
+          "code": "publication_date_unconfirmed",
+          "evidence_ids": [
+            "ev-eabdf83076f02ad9386dc136",
+            "prior-996f07df4bf7e30d01f9"
+          ],
+          "blocks_verdict": true
+        }
+      ],
+      "review_decision": "accept",
+      "review_prompt_sha256": "6c991966041a65622bcc253dac0d4ccb601f13de45e30dc5ebf403ec01326ef1"
+    }
+  ],
+  "context_coverage": {
+    "assess-2": [
+      {
+        "id": "prior-996f07df4bf7e30d01f9",
+        "source_bytes": 176,
+        "shown_bytes": 176,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-e7e4bc614177e14e8bf2",
+        "source_bytes": 189,
+        "shown_bytes": 189,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-f79a0df61de696fe543e",
+        "source_bytes": 165,
+        "shown_bytes": 165,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-7a233ab399073230dc87",
+        "source_bytes": 120,
+        "shown_bytes": 120,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-29362dfcd51f088b4723677e",
+        "source_bytes": 3821,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-eabdf83076f02ad9386dc136",
+        "source_bytes": 12040,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-27239f3a18c485623eb8fe51",
+        "source_bytes": 1000,
+        "shown_bytes": 1000,
+        "context_truncated": false
+      }
+    ],
+    "semantic_review-1": [
+      {
+        "id": "prior-996f07df4bf7e30d01f9",
+        "source_bytes": 176,
+        "shown_bytes": 176,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-e7e4bc614177e14e8bf2",
+        "source_bytes": 189,
+        "shown_bytes": 189,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-f79a0df61de696fe543e",
+        "source_bytes": 165,
+        "shown_bytes": 165,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-7a233ab399073230dc87",
+        "source_bytes": 120,
+        "shown_bytes": 120,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-29362dfcd51f088b4723677e",
+        "source_bytes": 3821,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-eabdf83076f02ad9386dc136",
+        "source_bytes": 12040,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-27239f3a18c485623eb8fe51",
+        "source_bytes": 1000,
+        "shown_bytes": 1000,
+        "context_truncated": false
+      }
+    ],
+    "revise_assessment-1": [
+      {
+        "id": "prior-996f07df4bf7e30d01f9",
+        "source_bytes": 176,
+        "shown_bytes": 176,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-e7e4bc614177e14e8bf2",
+        "source_bytes": 189,
+        "shown_bytes": 189,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-f79a0df61de696fe543e",
+        "source_bytes": 165,
+        "shown_bytes": 165,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-7a233ab399073230dc87",
+        "source_bytes": 120,
+        "shown_bytes": 120,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-29362dfcd51f088b4723677e",
+        "source_bytes": 3821,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-eabdf83076f02ad9386dc136",
+        "source_bytes": 12040,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-27239f3a18c485623eb8fe51",
+        "source_bytes": 1000,
+        "shown_bytes": 1000,
+        "context_truncated": false
+      }
+    ],
+    "semantic_review-2": [
+      {
+        "id": "prior-996f07df4bf7e30d01f9",
+        "source_bytes": 176,
+        "shown_bytes": 176,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-e7e4bc614177e14e8bf2",
+        "source_bytes": 189,
+        "shown_bytes": 189,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-f79a0df61de696fe543e",
+        "source_bytes": 165,
+        "shown_bytes": 165,
+        "context_truncated": false
+      },
+      {
+        "id": "prior-7a233ab399073230dc87",
+        "source_bytes": 120,
+        "shown_bytes": 120,
+        "context_truncated": false
+      },
+      {
+        "id": "ev-29362dfcd51f088b4723677e",
+        "source_bytes": 3821,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-eabdf83076f02ad9386dc136",
+        "source_bytes": 12040,
+        "shown_bytes": 3285,
+        "context_truncated": true
+      },
+      {
+        "id": "ev-27239f3a18c485623eb8fe51",
+        "source_bytes": 1000,
+        "shown_bytes": 1000,
+        "context_truncated": false
+      }
+    ]
+  },
+  "diagnostic_llm_calls": 0,
+  "review_audit": {
+    "selected": false,
+    "arms": {}
+  },
+  "semantic_reviews": [
+    {
+      "id": "txt-1c4066fc0c-000118244-000118291",
+      "decision": "revise",
+      "checks": {
+        "object_match": "fail",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "fail",
+        "counterevidence": "fail",
+        "verdict_logic": "fail"
+      },
+      "issues": [
+        {
+          "check": "object_match",
+          "reason": "原文对象是“西方社会”中主张改革资本主义制度的组织和观念，且原文紧接着以美国为例说明这些组织地位尤其低、美国社会让它们自生自灭。建议把希腊SYRIZA全国执政当作同一对象集合的实质突破，但SYRIZA是希腊政党，原文并未把希腊或南欧激进左翼纳入其“西方社会（以美国为重点）”的特定集合；没有成员对应证据就把另一国政党执政判成原集合已实现，属于对象替换。",
+          "source_quote": "这些自称社会主义的组织的地位，在美国尤其低。",
+          "evidence_id": null,
+          "quote_origin": "book"
+        },
+        {
+          "check": "evidence_support",
+          "reason": "DSA会员数据只能证明一个自称社会主义组织的会员数变化，不能直接证明“主张改革资本主义制度的组织和观念在西方社会有很大影响”这一主要结果；且该来源自身说明2024年已从峰值回落。公众对社会主义正面评价36%也主要是对“社会主义”一词的态度，不等于对“改革资本主义制度”的组织与观念影响力的支持。建议把组织存在、会员数、词语好感度混合成影响力证据，缺少与声明范围对应的主要结果证据。",
+          "source_quote": "DSA自己的会员名册研究称长期约5000会员，2016—2020增至约5万，2021有效会员峰值不足79000，2024年10月约51000；2016、2018、2020有多重政治触发因素。",
+          "evidence_id": "prior-e7e4bc614177e14e8bf2",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "counterevidence",
+          "reason": "建议把SYRIZA执政和DSA会员增长当作直接反证，但这两项与原文特定对象（西方社会尤其美国的主张改革资本主义制度的组织与观念）并非同一对象、同一指标；希腊全国选举结果不能机械冲抵美国语境下此类组织影响有限的判断。同时，Pew显示美国对社会主义正面评价从42%降至36%，这一同对象、同时期材料反而支持“影响有限”的一面，建议却将其弱化为“不能简单等同于无影响”，未充分处理其反向含义。",
+          "source_quote": "Pew于2022年8月调查7647名成年人：对socialism正面评价36%，2019年42%；capitalism正面57%，2019年65%。",
+          "evidence_id": "prior-7a233ab399073230dc87",
+          "quote_origin": "evidence"
+        },
+        {
+          "check": "verdict_logic",
+          "reason": "判“部分符合”必须指出后果B哪些具体部分实现、哪些未实现及其直接证据。建议实际只罗列了希腊一党执政、美国DSA会员先增后回落、美国公众态度下降等分项，未证明原文对象集合内“有很大影响”的哪些具体部分已实现；把不同国家、不同指标、方向混合的材料拼成“部分突破”，不符合部分符合的口径。若认为原文全称式判断无法完整判定，应保留具体未定，而不是用异对象案例降为部分符合。",
+          "source_quote": "综合看，主要判断在部分对象和时段被实质突破，但并非全面、持续地“有很大影响”，故判部分符合。",
+          "evidence_id": null,
+          "quote_origin": "proposal"
+        }
+      ],
+      "remaining_gap": "需补充与原文对象同一集合（西方社会尤其美国中主张改革资本主义制度的组织与观念）在截止日前“影响力大小”的直接、系统指标，并说明哪些具体部分实现、哪些未实现；现有希腊SYRIZA与美国DSA会员、公众词语好感度材料不能解决对象对应和主要结果证据缺口。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000118244-000118291",
+      "decision": "accept",
+      "checks": {
+        "object_match": "pass",
+        "condition_logic": "pass",
+        "time_alignment": "pass",
+        "evidence_support": "pass",
+        "counterevidence": "pass",
+        "verdict_logic": "pass"
+      },
+      "issues": [],
+      "remaining_gap": ""
+    }
+  ],
+  "revision_count": 1,
+  "draft_history": [
+    {
+      "id": "txt-1c4066fc0c-000118244-000118291",
+      "inclusion": "forecast",
+      "verdict": "部分符合",
+      "basis": "observed_window",
+      "scope": "对象为西方社会（原文以美国为重点）中主张改革资本主义制度的组织与观念；以截止日前是否取得“大的影响”为口径，代理指标包括：激进左翼政党全国执政或显著议席、社会主义组织大规模会员与持续动员、公众对社会主义正面态度。观察时段为1991年前后至2026-11-09。",
+      "reason": "原文判断此类组织与观念在西方不会有很大影响。观察期内出现相反方向的实质证据：希腊SYRIZA于2015年以36.34%得票、149席成为第一大党并牵头组阁，属于激进左翼政党实际执政；美国DSA会员从长期约5000增至2016—2020约5万、2021峰值近7.9万，显示组织动员显著扩张。但美国公众对社会主义正面评价2022年为36%，低于2019年42%，且DSA会员2024年回落至约5.1万，未形成持续上升趋势。综合看，主要判断在部分对象和时段被实质突破，但并非全面、持续地“有很大影响”，故判部分符合。",
+      "limitation": "SYRIZA案例在希腊而非原文重点的美国，且其执政与欧债危机特定条件相关；DSA会员数据来自组织自身名册研究，公众态度为美国全国调查，均不能直接代表“西方社会”整体。原文的因果机制（经济差距决定意识形态吸引力）未获因果识别，仅评价结果方向。",
+      "evidence_ids": [
+        "prior-996f07df4bf7e30d01f9",
+        "prior-e7e4bc614177e14e8bf2",
+        "prior-f79a0df61de696fe543e",
+        "prior-7a233ab399073230dc87",
+        "ev-eabdf83076f02ad9386dc136",
+        "ev-27239f3a18c485623eb8fe51"
+      ],
+      "method": "物质生活吸引力对意识形态竞争的制约",
+      "method_basis": "inferred",
+      "observation_end": "2026-11-09",
+      "future_time_text": "",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-996f07df4bf7e30d01f9",
+          "relation": "counter",
+          "quote": "议会联盟据希腊议会资料记录：激进左翼联盟SYRIZA赢149/300席，2015年1月26日与独立希腊人党组阁；主要竞选议题是救助条件与反紧缩。",
+          "publication_date": null,
+          "observation_end": "2015-01-26",
+          "limitation": "记录为摘要，未给出来源具体发表日期；仅证明希腊一国的选举结果，不能代表整个西方。"
+        },
+        {
+          "evidence_id": "prior-e7e4bc614177e14e8bf2",
+          "relation": "counter",
+          "quote": "DSA自己的会员名册研究称长期约5000会员，2016—2020增至约5万，2021有效会员峰值不足79000，2024年10月约51000；2016、2018、2020有多重政治触发因素。",
+          "publication_date": "2025-02-27",
+          "observation_end": "2024-10-31",
+          "limitation": "数据来自组织自身研究，会员数不等于社会影响；2024年已从峰值回落，不能证明持续扩张。"
+        },
+        {
+          "evidence_id": "prior-f79a0df61de696fe543e",
+          "relation": "background",
+          "quote": "DSA自称社会主义组织，主张劳动者民主地管理经济和社会以满足人的需要、而非少数人利润；页面称平台第二稿供大会讨论。",
+          "publication_date": "2021",
+          "observation_end": null,
+          "limitation": "仅证明该组织存在及其纲领主张，不证明其影响力大小。"
+        },
+        {
+          "evidence_id": "prior-7a233ab399073230dc87",
+          "relation": "support",
+          "quote": "Pew于2022年8月调查7647名成年人：对socialism正面评价36%，2019年42%；capitalism正面57%，2019年65%。",
+          "publication_date": "2022-09-19",
+          "observation_end": "2022-08-14",
+          "limitation": "仅美国全国样本，且社会主义正面评价下降，支持“影响有限”的一面，但正面评价仍占36%，不能简单等同于无影响。"
+        },
+        {
+          "evidence_id": "ev-eabdf83076f02ad9386dc136",
+          "relation": "counter",
+          "quote": "Syriza won a parliamentary election for the first time, winning 36% of votes and 149 seats, just two short of an absolute majority.",
+          "publication_date": null,
+          "observation_end": "2015-01-25",
+          "limitation": "维基百科条目，元数据无发表日期；仅希腊一国案例，且为2015年特定危机背景。"
+        },
+        {
+          "evidence_id": "ev-27239f3a18c485623eb8fe51",
+          "relation": "counter",
+          "quote": "Greece's leftwing Syriza party will form a coalition government with the right-wing, anti-bailout Independent Greeks party, the leader of the smaller party told reporters on Monday.",
+          "publication_date": "2015-01-26",
+          "observation_end": "2015-01-26",
+          "limitation": "新闻报道证实组阁事实，但不评估其长期影响或对整个西方社会主义运动的意义。"
+        }
+      ],
+      "remaining_gap": "缺少覆盖整个西方社会、截止日前持续且系统的“主张改革资本主义制度的组织与观念影响力”指标；现有证据集中于希腊一党执政和美国DSA会员及公众态度，无法完整判定原文全称式判断。"
+    },
+    {
+      "id": "txt-1c4066fc0c-000118244-000118291",
+      "inclusion": "forecast",
+      "verdict": "暂无法判断",
+      "basis": "attribution",
+      "scope": "原文对象为西方社会（紧接着以美国为例，称此类组织在美国地位尤其低）中主张改革资本主义制度的组织与观念；可观察口径为其在截止日前是否取得“大的影响”。观察时段为1991年前后至2026-11-09。",
+      "reason": "原文判断此类组织与观念在西方社会不会有什么大的影响，并以美国为重点举例。现有材料中，希腊SYRIZA于2015年执政属于另一国、另一政党集合，原文未把希腊或南欧激进左翼纳入其对象；美国DSA会员先增后回落、Pew显示美国对社会主义正面评价由42%降至36%，均不能直接测量原文对象集合“影响力大小”这一主要结果。关键对象与主要结果仍缺对应证据，故暂无法判断。",
+      "limitation": "修订说明：原判部分符合把希腊SYRIZA执政和美国DSA会员数当作同一对象集合的实质突破，属对象替换；公众对“社会主义”一词的好感度也不等于对“改革资本主义制度”组织与观念影响力的支持。原文因果机制（经济差距决定意识形态吸引力）未获因果识别，仅作背景，不额外作为结果门槛。",
+      "evidence_ids": [
+        "prior-996f07df4bf7e30d01f9",
+        "prior-e7e4bc614177e14e8bf2",
+        "prior-f79a0df61de696fe543e",
+        "prior-7a233ab399073230dc87",
+        "ev-eabdf83076f02ad9386dc136",
+        "ev-27239f3a18c485623eb8fe51"
+      ],
+      "method": "物质生活吸引力对意识形态竞争的制约",
+      "method_basis": "inferred",
+      "observation_end": "2026-11-09",
+      "future_time_text": "",
+      "condition_state": "unconditional",
+      "trend_aligned": false,
+      "evidence_notes": [
+        {
+          "evidence_id": "prior-996f07df4bf7e30d01f9",
+          "relation": "boundary",
+          "quote": "议会联盟据希腊议会资料记录：激进左翼联盟SYRIZA赢149/300席，2015年1月26日与独立希腊人党组阁；主要竞选议题是救助条件与反紧缩。",
+          "publication_date": null,
+          "observation_end": "2015-01-26",
+          "limitation": "记录为摘要，未给出来源具体发表日期；仅证明希腊一国选举结果，不能代表原文以美国为重点的西方社会对象集合。"
+        },
+        {
+          "evidence_id": "prior-e7e4bc614177e14e8bf2",
+          "relation": "boundary",
+          "quote": "DSA自己的会员名册研究称长期约5000会员，2016—2020增至约5万，2021有效会员峰值不足79000，2024年10月约51000；2016、2018、2020有多重政治触发因素。",
+          "publication_date": "2025-02-27",
+          "observation_end": "2024-10-31",
+          "limitation": "数据来自组织自身研究，会员数不等于社会影响；2024年已从峰值回落，不能证明持续扩张，也不能直接测量原文对象集合的影响力。"
+        },
+        {
+          "evidence_id": "prior-f79a0df61de696fe543e",
+          "relation": "background",
+          "quote": "DSA自称社会主义组织，主张劳动者民主地管理经济和社会以满足人的需要、而非少数人利润；页面称平台第二稿供大会讨论。",
+          "publication_date": "2021",
+          "observation_end": null,
+          "limitation": "仅证明该组织存在及其纲领主张，不证明其影响力大小。"
+        },
+        {
+          "evidence_id": "prior-7a233ab399073230dc87",
+          "relation": "support",
+          "quote": "Pew于2022年8月调查7647名成年人：对socialism正面评价36%，2019年42%；capitalism正面57%，2019年65%。",
+          "publication_date": "2022-09-19",
+          "observation_end": "2022-08-14",
+          "limitation": "仅美国全国样本，且测量的是对“社会主义”一词的好感度，不等于对“改革资本主义制度”组织与观念影响力的支持；正面评价下降支持“影响有限”的一面，但仍有36%正面，不能简单等同于无影响。"
+        },
+        {
+          "evidence_id": "ev-eabdf83076f02ad9386dc136",
+          "relation": "boundary",
+          "quote": "Syriza won a parliamentary election for the first time, winning 36% of votes and 149 seats, just two short of an absolute majority.",
+          "publication_date": null,
+          "observation_end": "2015-01-25",
+          "limitation": "维基百科条目，元数据无发表日期；仅希腊一国案例，且为2015年特定危机背景，不能代表原文对象集合。"
+        },
+        {
+          "evidence_id": "ev-27239f3a18c485623eb8fe51",
+          "relation": "boundary",
+          "quote": "Greece's leftwing Syriza party will form a coalition government with the right-wing, anti-bailout Independent Greeks party, the leader of the smaller party told reporters on Monday.",
+          "publication_date": "2015-01-26",
+          "observation_end": "2015-01-26",
+          "limitation": "新闻报道证实组阁事实，但不评估其长期影响或对整个西方社会主义运动的意义，不能直接对应原文对象集合。"
+        }
+      ],
+      "remaining_gap": "缺少与原文对象同一集合（西方社会尤其美国中主张改革资本主义制度的组织与观念）在截止日前“影响力大小”的直接、系统指标；现有希腊SYRIZA执政、美国DSA会员数及公众对“社会主义”一词好感度材料不能解决对象对应和主要结果证据缺口。"
+    }
+  ],
+  "autonomous_decision": true,
+  "semantic_validation": "accepted",
+  "scope": "对象为西方社会（原文以美国为重点）中主张改革资本主义制度的组织与观念；可观察口径为其在截止日前是否取得“大的影响”，以全国执政/大量议席、大规模会员与持续政治动员、公众对社会主义正面态度等代理指标衡量；反证包括激进左翼政党实际执政或显著议席、社会主义组织会员激增、公众社会主义支持率上升。原文条件（东西方经济差距、资本主义生活水平吸引力）作为背景，不额外作为结果成立门槛；因果机制单列限制。",
+  "elapsed_seconds": 41.204,
+  "completed_at": "2026-11-09T10:34:07.948378+00:00"
+}

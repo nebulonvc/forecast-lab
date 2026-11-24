@@ -1,0 +1,44 @@
+{
+  "case": "clash-of-civilizations-v4",
+  "review_source": "manual-audit-2026-11-14",
+  "reviewed_at_asia_shanghai": "2026-11-14 15:55:17 UTC+08:00",
+  "reviewed_at_utc": "2026-11-14T07:55:17Z",
+  "n": 427,
+  "before_including_nonforecasts_as_verdicts": {
+    "正确": 47,
+    "趋势符合": 75,
+    "部分符合": 94,
+    "错误": 24,
+    "暂无法判断": 177,
+    "非预测": 10,
+    "可判定": 240,
+    "计分样本": 417,
+    "严格胜率": 0.1958,
+    "加权胜率": 0.626,
+    "错误率": 0.1,
+    "未定占比": 0.4245
+  },
+  "after_excluding_nonforecasts": {
+    "正确": 39,
+    "趋势符合": 60,
+    "部分符合": 74,
+    "错误": 18,
+    "暂无法判断": 177,
+    "非预测": 59,
+    "可判定": 191,
+    "计分样本": 368,
+    "严格胜率": 0.2042,
+    "加权胜率": 0.6335,
+    "错误率": 0.0942,
+    "未定占比": 0.481
+  },
+  "audit_counts": {
+    "n_flag": 49,
+    "n_change": 12,
+    "n_confirm": 179,
+    "n_keep_prior_nf": 10,
+    "missing": []
+  },
+  "notes": "非预测条目不计入严格/加权/错误率分母，也不计入未定占比分母。display_verdict在非预测条目上改记为暂无法判断，并打 nonforecast=true。",
+  "prior_manual_67_nonforecasts_kept": 10
+}

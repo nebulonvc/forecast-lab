@@ -1,0 +1,28 @@
+{
+  "id": "51c3f8df-e8ea-4d20-bc2f-c2d70f3a7120",
+  "object": "chat.completion",
+  "created": 1794201447,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000041056-000041086\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为作者转述诺齐克对罗尔斯公平模型的哲学反对意见，属于政治哲学观点陈述，不构成可观察的未来事件预测；无操作化指标与观察时段。\",\"reason\":\"该句是诺齐克哲学立场的转述，不是作者对可检验未来结果的预测。\",\"limitation\":\"哲学规范性命题无法用经验证据判定真伪，且原文未给出时间或指标。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4221,
+    "completion_tokens": 167,
+    "total_tokens": 4388,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3453
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

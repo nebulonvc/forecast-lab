@@ -1,0 +1,1879 @@
+# 美国海权的利益：现在与未来：五类评估
+
+证据截止日：2026-11-15。已处理 79/79 条全书候选；尚未处理 0 条。
+
+累计已完成全量抽取复核 79 条；保留旧抽样抽取 0 条，两者不重复相加。
+
+已补充扩展观点 79 条；其中 0 条仍有待确认的代指、对象或范围，已逐条标记。扩展观点不自动改变原有评估。
+
+本轮沿用候选清单逐条核查，不保证没有漏抽。PDF记录使用PDF页码，TXT记录使用原始文本行号。扩展观点是依据所给语境的解释，原文短引文另行保留。
+
+|类别|父记录数|
+|---|---:|
+|正确|29|
+|趋势符合|0|
+|部分符合|19|
+|错误|10|
+|暂无法判断|9|
+|排除：非预测|12|
+|排除：重复|0|
+|尚未处理|0|
+
+可判定覆盖率：58/67 = 86.6%。
+绑定外部证据的预测：67/67；未绑定：0。绑定不代表证据充分或研究已完成。
+“正确”占已判定记录：29/58 = 50.0%。
+
+趋势符合 0 条单独列出，与部分符合互不重复；它表示已有持续证据支持方向，最终结果仍待验证。
+
+以上是回顾性的记录统计，不是独立预测准确率或事前预测能力检验。部分符合不折算成 0.5 分；暂无法判断不算错误。跨章相关判断尚未完全去重，同一父记录也不因多个观察而增加命中次数。没有作者明确给出的概率，不计算 Brier 分数。
+
+## 评估口径
+
+正确：在列明口径和观察窗口内，主要可检验内容符合。趋势符合：已有持续客观证据支持预测方向，最终结果尚待验证。部分符合：具体分项部分成立、部分不符，或合理口径产生不同结果。错误：所评内容与已发生结果相反。暂无法判断：无法确认趋势或结果、条件不明、对象难测或证据仍不足；缺证据不能自动换成趋势符合或部分符合。
+
+明确未来终点尚未到达时，可以评价已有趋势，并保留原期限；这类进展单列为趋势符合，不作终局正确。单次波动、未来预测数据或仅有因果解释不算趋势证据。真正的前提条件仍须确认成立，作者的因果解释不自动增加为额外触发门槛。无期限持续判断可评价已观察阶段，不能证明永久成立。出版年只是未找到发言日期时的研究起点代理，出版前已知事实不是新的预见力证据。
+
+“不太可能”没有被转换为数值概率；低概率事件发生可记录为方向反例，不能据单次结果证明概率失准。官方声明证明立场或制度安排，不自动证明实际成效；同时出现的政策与结果不自动证明因果。
+
+## 暂无法判断的原因
+
+|原因类型|记录数|
+|---|---:|
+|条件未确认或未触发|2|
+|定义或可测量性不足|5|
+|证据不足|2|
+时间窗口来源：原文写出 10 条，隐含的出版年至截止日 60 条。
+
+
+## 逐条结果
+
+### 1. TXT 第 195—198 行 · 正确
+
+记录：`txt-e8c98c42ba-000006342-000006560`
+
+原文：Independently of all
+bias for or against protection, it is safe to predict that, when the
+opportunities for gain abroad are understood, the course of American
+enterprise will cleave a channel by which to reach them.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：当海外获利机会被认识后，美国企业将开拓国外市场。
+
+
+口径与范围：当海外获利机会被认识后，美国企业将开拓国外市场。；前提：when the
+opportunities for gain abroad are understood；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：美国后来成为制成品净出口国，存档研究将这一转变置于约1910年，并确认钢铁出口的显著增长；开拓海外销路的方向已经实现。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-94ddb4da0ac4](https://doi.org/10.3386/w7638)
+
+### 2. TXT 第 237—242 行 · 正确
+
+记录：`txt-e8c98c42ba-000008999-000009329`
+
+原文：But the great seaboard powers there do not stand
+on guard against their continental rivals only; they cherish also
+aspirations for commercial extension, for colonies, and for influence
+in distant regions, which may bring, and, even under our present
+contracted policy, already have brought them into collision with
+ourselves.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：欧洲沿海强国海外商业、殖民与影响力扩张可能继续同美国冲突。
+
+
+口径与范围：欧洲沿海强国海外商业、殖民与影响力扩张可能继续同美国冲突。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：美德在马尼拉和委内瑞拉等海外利益问题上发生实际对抗。预测是利益冲突可能继续，并非所有冲突必然开战；部分事件和平解决不构成反证。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-b8615f0b9727](https://digitalcommons.iwu.edu/cgi/viewcontent.cgi?article=1025&context=history_honproj)；[ev-886e6b5c7cc1](https://en.wikipedia.org/wiki/Germany%E2%80%93United_States_relations)
+
+### 3. TXT 第 311—315 行 · 排除：非预测
+
+记录：`txt-e8c98c42ba-000013942-000014210`
+
+原文：Whatever arrangement of this question is finally reached, the
+fruit of Lord Salisbury's attitude scarcely can fail to be a
+strengthening of the sentiments of attachment to, and reliance upon,
+the mother country, not only in Canada, but in the other great
+colonies.
+
+扩展观点（解释，非原文）：索尔兹伯里对待白令海争端的态度将加强殖民地对母国的依赖和依恋。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 4. TXT 第 325—331 行 · 正确
+
+记录：`txt-e8c98c42ba-000014866-000015289`
+
+原文：In a
+general way, it is evident enough that this canal, by modifying the
+direction of trade routes, will induce a great increase of commercial
+activity and carrying trade throughout the Caribbean Sea; and that this
+now comparatively deserted nook of the ocean will become, like the Red
+Sea, a great thoroughfare of shipping, and will attract, as never
+before in our day, the interest and ambition of maritime nations.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：中美地峡运河开通改变航路，将大增加勒比海商业和运输，使其成为繁忙航运通道并吸引海洋强国。
+
+
+口径与范围：中美地峡运河开通改变航路，将大增加勒比海商业和运输，使其成为繁忙航运通道并吸引海洋强国。；前提：opening of a canal through the Central American Isthmus；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：运河通航后船舶流量大幅增加，巴拿马形成连接两洋的港口与交通网络，符合加勒比交通量增加和航运通道繁忙化；不把运河流量说成整个加勒比地区的经济增长率。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-c58e4f64fbb1](https://www.acs-aec.org/en/article/caribbean-and-widening-panama-canal-panacea-or-problems)；[ev-348740f7190c](https://pancanal.com/en/connectivity/)
+
+### 5. TXT 第 331—334 行 · 部分符合
+
+记录：`txt-e8c98c42ba-000015290-000015451`
+
+原文：Every
+position in that sea will have enhanced commercial and military value,
+and the canal itself will become a strategic centre of the most vital
+importance.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：运河开通后加勒比海据点商业和军事价值增强，运河自身成为至关重要的战略中心。
+
+
+口径与范围：运河开通后加勒比海据点商业和军事价值增强，运河自身成为至关重要的战略中心。；前提：opening of a canal through the Central American Isthmus；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：运河防御曾成为重要军事议题，但存档也明确指出新式战争降低了其原有军事重要性。战略价值上升只在部分时期成立，不能据此确认所有加勒比据点都永久增值。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-2f30174a674e](https://www.usni.org/magazines/proceedings/1980/january/military-aspects-panama-canal-issue)；[ev-de70c1bfc0d8](https://www.foreignaffairs.com/articles/panama/1959-04-01/control-panama-canal-obsolete-shibboleth)
+
+### 6. TXT 第 471—472 行 · 正确
+
+记录：`txt-e8c98c42ba-000024430-000024539`
+
+原文：When the Isthmus is pierced, this isolation will pass away, and with it
+the indifference of foreign nations.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：地峡运河开通后加勒比海的相对孤立及外国漠视将结束。
+
+
+口径与范围：地峡运河开通后加勒比海的相对孤立及外国漠视将结束。；前提：When the Isthmus is pierced；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：增长的跨洋通航和两洋港口连接结束了地峡作为航运障碍的状态。这里核验交通与国际联系，不把区域内每座岛屿都已繁荣作为附加结论。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-c58e4f64fbb1](https://www.acs-aec.org/en/article/caribbean-and-widening-panama-canal-panacea-or-problems)；[ev-348740f7190c](https://pancanal.com/en/connectivity/)
+
+### 7. TXT 第 477—480 行 · 部分符合
+
+记录：`txt-e8c98c42ba-000024897-000025104`
+
+原文：To protect and develop its own,
+each nation will seek points of support and means of influence in a
+quarter where the United States always has been jealously sensitive to
+the intrusion of European powers.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：运河开通后各国会在加勒比地区寻求支撑据点和影响力以维护发展其商业政治利益。
+
+
+口径与范围：运河开通后各国会在加勒比地区寻求支撑据点和影响力以维护发展其商业政治利益。；前提：When the Isthmus is pierced；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：德国寻找加勒比基地、美国购买并预占据点以阻止德国的竞争都有记录，证实多国争夺这一部分；证据不足以把各国逐一都寻求据点的宽泛表述整体判对。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-e1415982e063](https://www.usni.org/magazines/proceedings/1917/july/international-notes-naval-war-notes)；[ev-b1a7971c4572](https://www.usni.org/magazines/naval-history-magazine/2006/august/roosevelts-pursuit-temperate-caribbean-policy)
+
+### 8. TXT 第 496—505 行 · 正确
+
+记录：`txt-e8c98c42ba-000026099-000026761`
+
+原文：Whether they will or no, Americans must now begin to look outward. The
+growing production of the country demands it. An increasing volume of
+public sentiment demands it. The position of the United States, between
+the two Old Worlds and the two great oceans, makes the same claim,
+which will soon be strengthened by the creation of the new link joining
+the Atlantic and Pacific. The tendency will be maintained and increased
+by the growth of the European colonies in the Pacific, by the advancing
+civilization of Japan, and by the rapid peopling of our Pacific States
+with men who have all the aggressive spirit of the advanced line of
+national progress.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：美国走向海外的趋势将持续并增强，受欧洲太平洋殖民扩张、日本发展和美国太平洋各州人口增长推动。
+
+
+口径与范围：美国走向海外的趋势将持续并增强，受欧洲太平洋殖民扩张、日本发展和美国太平洋各州人口增长推动。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：美国随后取得海外岛屿和属地并展开帝国扩张，反帝国主义运动未阻止这一发展。只确认向外行动增强，不宣称原文列出的每个推动因素均被独立证实。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-7111b11fccac](https://history.house.gov/Exhibitions-and-Publications/APA/Historical-Essays/Exclusion-and-Empire/1898/)；[ev-1dc8c6e47d20](https://www.jstor.org/stable/j.ctv4rft41)
+
+### 9. TXT 第 508—510 行 · 暂无法判断
+
+记录：`txt-e8c98c42ba-000026872-000027046`
+
+原文：It has been said that, in our present state of unpreparedness, a
+trans-isthmian canal will be a military disaster to the United States,
+and especially to the Pacific coast.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：如果保持当时军事无准备状态，地峡运河将给美国尤其太平洋沿岸带来军事灾难。
+
+
+口径与范围：如果保持当时军事无准备状态，地峡运河将给美国尤其太平洋沿岸带来军事灾难。；前提：in our present state of unpreparedness；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：实际开通前美国经历海军扩建，运河两端也修筑炮台与陆上防御，保持原有无准备状态的前提没有原样持续。不能把后来没有发生所述灾难当作无条件反证。
+限制：实际条约政策、建军与设防改变了条件，不能用另一情境下的结果判这个条件句的对错。
+观察终点：未形成可判定观察终点；条件状态：not_met。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-b2bd0f6e0c36](https://www.history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-023/h-023-1.html)；[ev-12480e086317](https://warhistory.org/article/panama-canal-zone-defences-i)
+
+### 10. TXT 第 556—558 行 · 正确
+
+记录：`txt-e8c98c42ba-000030106-000030304`
+
+原文：The military needs of the Pacific States, as well as their supreme
+importance to the whole country, are yet a matter of the future, but of
+a future so near that provision should begin immediately.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：美国太平洋各州的军事需求及对全国的极端重要性将在不远未来显现。
+
+
+口径与范围：美国太平洋各州的军事需求及对全国的极端重要性将在不远未来显现。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：圣迭戈基地建立后维修、训练与舰队设施迅速扩张，直接显示美国本土太平洋沿岸的军事需求和全国海军价值；未用当时并非太平洋各州的夏威夷替代。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-6c13a0f8da2f](https://cnrsw.cnic.navy.mil/Installations/NAVBASE-San-Diego/About/History/)
+
+### 11. TXT 第 593—594 行 · 暂无法判断
+
+记录：`txt-e8c98c42ba-000032587-000032689`
+
+原文：Whatever temporary aberration may occur, a return to mutual
+standards of right will certainly follow.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：英美即使暂时偏离共同的正义标准，之后也必将重归这些共同标准。
+
+
+口径与范围：英美即使暂时偏离共同的正义标准，之后也必将重归这些共同标准。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：苏伊士争执及此后修复关系有明确记录，但恢复合作不等于回到共同正义标准。原文未界定该标准与判定阈值，第二轮仍无法把道德判断转成同口径事实。
+限制：已经进行了改变策略的第二轮检索；现有史实不等于原文定义含混的决定性命题，保留未定，不用不同口径指标代替。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-79e7d932a66b](https://theconversation.com/suez-crisis-shows-what-happens-when-friends-dont-share-65844)；[ev-a618c73fc56c](https://api.parliament.uk/historic-hansard/commons/1957/apr/01/bermuda-talks-1)
+
+### 12. TXT 第 594—597 行 · 部分符合
+
+记录：`txt-e8c98c42ba-000032690-000032909`
+
+原文：Formal alliance between the
+two is out of the question, but a cordial recognition of the similarity
+of character and ideas will give birth to sympathy, which in turn will
+facilitate a co-operation beneficial to both;
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：英美不会正式结盟，但相似特质和观念会促进同情与互利合作。
+
+
+口径与范围：英美不会正式结盟，但相似特质和观念会促进同情与互利合作。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：大西洋宪章确认两国合作，但两国随后同为北约集体防御条约成员，否定不会正式结盟这一子项；合作成真不能抵消正式联盟预测失准。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-4d78b0701380](https://history.state.gov/milestones/1945-1952/nato)；[ev-b0926dc50713](https://history.state.gov/milestones/1937-1945/atlantic-conf)
+
+### 13. TXT 第 644—646 行 · 部分符合
+
+记录：`txt-e8c98c42ba-000035059-000035198`
+
+原文：China, however, may burst her barriers eastward as well as
+    westward, toward the Pacific as well as toward the European
+    Continent.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：中国可能突破当时疆界向东进入太平洋，也向西进入欧洲大陆方向扩张。
+
+
+口径与范围：中国可能突破当时疆界向东进入太平洋，也向西进入欧洲大陆方向扩张。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：中国向太平洋方向扩大海洋领土主张有存档记录，向欧洲大陆方向突破旧疆界的另一半未获证实，陆地边界研究反而记载多次妥协让步；不以西藏整合冒充向欧洲扩张。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-cecbe4deaf55](https://www.geostrategy.org.uk/all-research/the-south-china-sea-historical-and-legal-background/)；[ev-d5865f10a12c](https://chinaindiaborderdispute.wordpress.com/wp-content/uploads/2010/07/fravelchinaborders.pdf)
+
+### 14. TXT 第 868—872 行 · 错误
+
+记录：`txt-e8c98c42ba-000049728-000049989`
+
+原文：Whether the canal
+of the Central American isthmus be eventually at Panama or at Nicaragua
+matters little to the question now in hand, although, in common with
+most Americans who have thought upon the subject, I believe it surely
+will be at the latter point.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：中美洲地峡运河将建在尼加拉瓜，而非巴拿马。
+
+
+口径与范围：中美洲地峡运河将建在尼加拉瓜，而非巴拿马。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：最终决策选择巴拿马而非尼加拉瓜，路线与原预测相反；没有因运河终究建成而给该路线预测加分。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-e48149c79ab7](https://www.sil.si.edu/Exhibitions/Make-the-Dirt-Fly/chooseroute.html)
+
+### 15. TXT 第 872—877 行 · 正确
+
+记录：`txt-e8c98c42ba-000049990-000050346`
+
+原文：Whichever it be, the convergence there of
+so many ships from the Atlantic and the Pacific will constitute a
+centre of commerce, interoceanic, and inferior to few, if to any, in
+the world; one whose approaches will be watched jealously, and whose
+relations to the other centres of the Pacific by the lines joining it
+to them must be examined carefully.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：地峡运河无论建在哪里都将成为世界一流的跨洋商业中心，其入口受到密切争夺和监视。
+
+
+口径与范围：地峡运河无论建在哪里都将成为世界一流的跨洋商业中心，其入口受到密切争夺和监视。；前提：Whichever it be；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：运河成为连接两洋的全球运输要道，围绕控制权的条约谈判以及入口两端设防也有记录，符合商业中心形成及入口受重视的主干判断。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-10a4480ab1bc](https://www.trade.gov/market-intelligence/panama-panama-canal)；[ev-12480e086317](https://warhistory.org/article/panama-canal-zone-defences-i)；[ev-67fd93aff47a](https://history.state.gov/milestones/1899-1913/panama-canal)
+
+### 16. TXT 第 997—999 行 · 排除：非预测
+
+记录：`txt-e8c98c42ba-000058329-000058510`
+
+原文：Land carriage, always restricted and therefore
+always slow, toils enviously but hopelessly behind, vainly seeking to
+replace and supplant the royal highway of nature's own making.
+
+扩展观点（解释，非原文）：陆路运输无法取代海上运输的主导地位。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 17. TXT 第 1005—1008 行 · 正确
+
+记录：`txt-e8c98c42ba-000058914-000059133`
+
+原文：So the Isthmian
+Canal is an inevitable part in the future of the United States; yet one
+that cannot be separated from other necessary incidents of a policy
+dependent upon it, whose details cannot be foreseen exactly.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：地峡运河在美国未来中必将成为现实，并伴随其他政策行动。
+
+
+口径与范围：地峡运河在美国未来中必将成为现实，并伴随其他政策行动。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：跨地峡运河后来建成，并伴随巴拿马独立、通行与控制权条约及美国安全保证等政策行动，符合这一未设终点的结果预测。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-67fd93aff47a](https://history.state.gov/milestones/1899-1913/panama-canal)
+
+### 18. TXT 第 1059—1063 行 · 暂无法判断
+
+记录：`txt-e8c98c42ba-000062486-000062749`
+
+原文：If to these safeguards be
+added, on our part, a sober recognition of what our reasonable sphere
+of influence is, and a candid justice in dealing with foreign interests
+within that sphere, there will be little disposition to question our
+preponderance therein.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：若美国依靠地理距离保护、合理限定势力范围并公正对待区内外国利益，其在该范围的优势将少受挑战。
+
+
+口径与范围：若美国依靠地理距离保护、合理限定势力范围并公正对待区内外国利益，其在该范围的优势将少受挑战。；前提：a sober recognition of what our reasonable sphere
+of influence is, and a candid justice in dealing with foreign interests
+within that sphere；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：美国区域优势及拉美反干涉行动都可观察，但合理势力范围、公正对待外方利益没有共同可操作定义。后来的不干涉协议也不足以证明整段复合前提已满足，不能把一般霸权直接判作条件预测正确。
+限制：已经进行了改变策略的第二轮检索；现有史实不等于原文定义含混的决定性命题，保留未定，不用不同口径指标代替。
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-8c51155bbff0](https://history.state.gov/milestones/1899-1913/roosevelt-and-monroe-doctrine)；[ev-fa11bcb85134](https://doi.org/10.1590/s0102-85292013000200006)；[ev-4b0eb54629c2](https://www.encyclopedia.com/history/dictionaries-thesauruses-pictures-and-press-releases/buenos-aires-peace-conference)
+
+### 19. TXT 第 1067—1071 行 · 部分符合
+
+记录：`txt-e8c98c42ba-000062938-000063189`
+
+原文：The radical identity
+of spirit which underlies our superficial differences of polity surely
+will draw us closer together, if we do not set our faces wilfully
+against a tendency which would give our race the predominance over the
+seas of the world.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：若英美不刻意阻碍，双方共同精神将使关系更紧密，使其主导世界海洋。
+
+
+口径与范围：若英美不刻意阻碍，双方共同精神将使关系更紧密，使其主导世界海洋。；前提：if we do not set our faces wilfully
+against a tendency；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：英美关系趋近及合作确有成果，但两国间也存在海军竞争；美国战后单独拥有无人可挑战的海上优势，不等于英美共同主导的全部命题得到证明。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-b0926dc50713](https://history.state.gov/milestones/1937-1945/atlantic-conf)；[ev-76fcc25efb4f](https://www.cambridge.org/core/books/british-naval-supremacy-and-angloamerican-antagonisms-19141930/A090D59DA6245C6B9085CAFD17712A34)；[ev-0e303e3bc21d](https://digital-commons.usnwc.edu/nwc-review/vol48/iss3/6/)
+
+### 20. TXT 第 1488—1491 行 · 部分符合
+
+记录：`txt-e8c98c42ba-000089948-000090187`
+
+原文：control will abide still with
+those whose ships, whose capital, whose traders support the industrial
+system of the region, provided these are backed by a naval force
+adequate to the demands of the military situation, rightly understood.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：西印度群岛与地峡地区的控制权仍将归于以船舶、资本、商人支撑当地工业体系且有足够海军支援的力量。
+
+
+口径与范围：西印度群岛与地峡地区的控制权仍将归于以船舶、资本、商人支撑当地工业体系且有足够海军支援的力量。；前提：provided these are backed by a naval force
+adequate to the demands of the military situation；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：美国资本、工业利益与海军支撑在加勒比扩张控制得到记录，但地峡控制后来移交巴拿马，控制的法律与政治层次并不等同。早期机制的部分吻合不足以证明这套条件永久决定整个地区控制权。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。 美国资本、工业利益与海军支撑在加勒比扩张控制得到记录，但地峡控制后来移交巴拿马，控制的法律与政治层次并不等同。早期机制的部分吻合不足以证明这套条件永久决定整个地区控制权。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-af7e934a4d1e](https://www.gilderlehrman.org/history-resources/essays/united-states-and-caribbean-1877-1920)；[ev-0ee0a71dc25d](https://www.cfr.org/articles/who-controls-panama-canal)
+
+### 21. TXT 第 1555—1559 行 · 暂无法判断
+
+记录：`txt-e8c98c42ba-000094178-000094518`
+
+原文：So far as these changes are purely commercial, they will operate to
+some extent to the disadvantage of Great Britain; because the result
+will be to bring our Atlantic seaboard, the frontier of a rival
+manufacturing and commercial state, much nearer to the Pacific than it
+now is, and nearer to many points of that ocean than is England.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：地峡运河开通在商业上会对英国有一定不利，因为美国大西洋制造和贸易区到太平洋的航程大幅缩短。
+
+
+口径与范围：地峡运河开通在商业上会对英国有一定不利，因为美国大西洋制造和贸易区到太平洋的航程大幅缩短。；前提：construction of a canal；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：美国商业运输获得便利及英方对通行待遇的抗议均有资料，但这些并非英国商业净受损的同口径结果。第二轮找到的竞争研究含开通前推测，经济回溯主要计量美国收益，仍缺英国相对损失的决定性事实。
+限制：两轮检索后仍缺开通后英国商业相对损失的同口径回溯；第一轮争议和第二轮开通前预测只作背景，不作为已验证结果。
+观察终点：未形成可判定观察终点；条件状态：satisfied。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-3bc408f03460](https://history.state.gov/historicaldocuments/frus1912/d665)；[ev-1abbbf4bc212](https://doi.org/10.1163/9789004274273_007)；[ev-d77a2004b80a](http://bdigital.binal.ac.pa/bdp/The%20Panama%20canal%20and%20Inter1.pdf)；[ev-5802b94b10e0](https://www.library.hbs.edu/working-knowledge/panama-canal-troubled-history-astounding-turnaround)
+
+### 22. TXT 第 1576—1578 行 · 排除：非预测
+
+记录：`txt-e8c98c42ba-000095539-000095712`
+
+原文：A recent British writer has calculated that about one-eighth of the
+existing trade of the British Islands would be affected unfavorably by
+the competition thus introduced.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：地峡运河竞争将使英国当时约八分之一贸易受到不利影响。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 23. TXT 第 1590—1592 行 · 部分符合
+
+记录：`txt-e8c98c42ba-000096406-000096574`
+
+原文：The chief political result of the Isthmian Canal will be to bring our
+Pacific coast nearer, not only to our Atlantic seaboard, but also to
+the great navies of Europe.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：地峡运河主要政治结果是缩短美国太平洋沿岸同大西洋沿岸及欧洲强大海军的距离。
+
+
+口径与范围：地峡运河主要政治结果是缩短美国太平洋沿岸同大西洋沿岸及欧洲强大海军的距离。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：运河确实缩短两洋航程，但存档明确指出现代大型航母不能通行，因而不能把商船距离收益无条件推及所有强大海军的机动能力；仅部分军舰与时期符合。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-a616f2a5a0d4](https://pancanal.com/en/maritime-services/trade-routes/)；[ev-2ecd4e6cd24a](https://www.usni.org/magazines/proceedings/1954/may/panama-canal-auxiliary-fleet)
+
+### 24. TXT 第 1597—1598 行 · 正确
+
+记录：`txt-e8c98c42ba-000096917-000097023`
+
+原文：it is still true that the canal will
+present an element of much weakness from the military point of view.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：地峡运河对美国军事安全将形成一个重大弱点。
+
+
+口径与范围：地峡运河对美国军事安全将形成一个重大弱点。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：军事评析明确列出运河易受多类威胁、大型航母不能使用等重大局限，符合安全体系中存在明显薄弱环节；另一来源说明其转场收益，未把有弱点扩大成毫无战略益处。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-2f30174a674e](https://www.usni.org/magazines/proceedings/1980/january/military-aspects-panama-canal-issue)；[ev-552899cdab9e](https://www.usni.org/magazines/proceedings/1914/may/german-view-strategic-importance-panama-canal)
+
+### 25. TXT 第 1718—1724 行 · 暂无法判断
+
+记录：`txt-e8c98c42ba-000104615-000105030`
+
+原文：So long as the United States jealously resents all foreign
+interference in the Isthmus, and at the same time takes no steps to
+formulate a policy or develop a strength that can give shape and force
+to her own pretensions, just so long will the absolute control over
+any probable contingency of the future rest with Great Britain, by
+virtue of her naval positions, her naval power, and her omnipresent
+capital.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：只要美国反对地峡外国干涉却不制定政策或增强实力，未来地峡局势绝对控制权仍将归英国。
+
+
+口径与范围：只要美国反对地峡外国干涉却不制定政策或增强实力，未来地峡局势绝对控制权仍将归英国。；前提：So long as the United States jealously resents all foreign
+interference in the Isthmus, and at the same time takes no steps to
+formulate a policy or develop a strength；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：美国实际重新谈判运河条约、制定控制政策并显著加速造舰，原句不制定政策或发展实力的前提并未持续。英方后来让出权利不能用来直接判定这个未保持前提的条件预测错误。
+限制：实际条约政策、建军与设防改变了条件，不能用另一情境下的结果判这个条件句的对错。
+观察终点：未形成可判定观察终点；条件状态：not_met。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-0c3748798c57](https://www.theodorerooseveltcenter.org/encyclopedia/foreign-affairs/hay-pauncefote-treaty/)；[ev-981d647529c9](https://history.state.gov/historicaldocuments/frus1901/d233)；[ev-795b1653f474](https://www.usni.org/magazines/proceedings/1914/july/half-century-naval-administration-america-1861-1911)
+
+### 26. TXT 第 1832—1838 行 · 错误
+
+记录：`txt-e8c98c42ba-000111929-000112311`
+
+原文：Under such
+conditions, perhaps not yet come, but plainly coming, the consequence
+of an artificial waterway that shall enable the Atlantic coast to
+compete with Europe, on equal terms as to distance, for the markets of
+eastern Asia, and shall shorten by two-thirds the sea route from New
+York to San Francisco, and by one-half that to Valparaiso, is too
+evident for insistence.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：地峡运河会使美国大西洋沿岸在到东亚市场距离上能同欧洲平等竞争，并将纽约到旧金山海程缩短三分之二、到瓦尔帕莱索缩短一半。
+
+
+口径与范围：地峡运河会使美国大西洋沿岸在到东亚市场距离上能同欧洲平等竞争，并将纽约到旧金山海程缩短三分之二、到瓦尔帕莱索缩短一半。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：芝加哥大学所藏运河资料列纽约至旧金山由13,135海里减至5,262海里，节省7,873海里，明确称三分之五，而非预测的三分之二。具体缩短比例失准，不能因航程都缩短就按数量级给部分符合；另一书的英里粗数不用于替代注明海里的对照表。
+限制：采用文献明确标注nautical miles的纽约—旧金山同起讫对照；另一本资料的英里概数存在不自洽，不拿它抵消清楚海里数字。东亚竞争及另一目的港不能补偿该明确数量预测失准。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-fee5d9e98a95](https://www.lib.uchicago.edu/ead/pdf/century0463.pdf)；[ev-0624b97457e2](https://www.czbrats.com/AmPan/chap20.htm)
+
+### 27. TXT 第 1840—1841 行 · 正确
+
+记录：`txt-e8c98c42ba-000112315-000112423`
+
+原文：In these conditions, not in European necessities, is to be found the
+assurance that the canal will be made.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：美国自身的发展需求而非欧洲需求保证地峡运河将建成。
+
+
+口径与范围：美国自身的发展需求而非欧洲需求保证地峡运河将建成。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：美国两岸交通需求和海军绕行困难确曾推动其主导修建，运河最终建成；欧洲方面的先行工程失败没有使这一美国自身需求所指向的结果落空。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-67fd93aff47a](https://history.state.gov/milestones/1899-1913/panama-canal)；[ev-9fc0e7ffdc9f](https://pancanal.com/en/american-canal-construction/)；[ev-02bc848f775b](https://www.history.navy.mil/research/histories/ship-histories/danfs/o/oregon-ii.html)
+
+### 28. TXT 第 1843—1846 行 · 正确
+
+记录：`txt-e8c98c42ba-000112535-000112793`
+
+原文：Many causes will combine to retain in the line of the Suez
+Canal the commerce of Europe with the East; but to the American shores
+of the Pacific the Isthmian canal will afford a much shorter and
+easier access for a trade already of noteworthy proportions.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：欧洲对东方贸易仍将走苏伊士，而地峡运河将显著改善到太平洋美洲沿岸的贸易通达。
+
+
+口径与范围：欧洲对东方贸易仍将走苏伊士，而地峡运河将显著改善到太平洋美洲沿岸的贸易通达。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：交通地理研究分别确认苏伊士服务欧洲至亚洲通路、巴拿马大幅改善美洲太平洋沿岸可达性，运河局也记录贸易格局改变。原预测不是说所有欧洲至亚洲船舶永远只走苏伊士，替代航线的存在不作过度反证。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-55a9f481493e](https://transportgeography.org/contents/chapter1/emergence-of-mechanized-transportation-systems/suez-panama-canal-geography-impacts/)；[ev-a616f2a5a0d4](https://pancanal.com/en/maritime-services/trade-routes/)
+
+### 29. TXT 第 1857—1859 行 · 排除：非预测
+
+记录：`txt-e8c98c42ba-000113419-000113622`
+
+原文：Under this increased importance of the Isthmus, we cannot safely
+anticipate for the future the cheap acquiescence which, under very
+different circumstances, has been yielded in the past to our demands.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：地峡重要性增加后，美国不应指望其他国家仍会轻易默认其要求。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 30. TXT 第 1913—1916 行 · 正确
+
+记录：`txt-e8c98c42ba-000117078-000117279`
+
+原文：With
+the changes consequent upon the canal, this indifference will
+diminish. We also shall be entangled in the affairs of the great
+family of nations, and shall have to accept the attendant burdens.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：地峡运河带来变化后，外国对美国利益诉求的漠视会减少，美国将卷入国际事务并承担负担。
+
+
+口径与范围：地峡运河带来变化后，外国对美国利益诉求的漠视会减少，美国将卷入国际事务并承担负担。；前提：changes consequent upon the canal；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：美国以门罗主义承担区域警察角色并实际介入加勒比事务，国际义务与负担增加已出现；后来转向不干涉并不抹去此前已经发生的卷入。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-ecb3f39b669c](https://www.archives.gov/milestone-documents/roosevelt-corollary)；[ev-1a8f5a7ce396](https://www.degruyterbrill.com/document/doi/10.1515/9781400870462/html)
+
+### 31. TXT 第 1969—1975 行 · 正确
+
+记录：`txt-e8c98c42ba-000120126-000120510`
+
+原文：when,
+besides the powerful sentimental impulse, it is remembered that
+beneath considerable differences of political form there lie a common
+inherited political tradition and habit of thought, that the moral
+forces which govern and shape political development are the same in
+either people, the possibility of a gradual approach to concerted
+action becomes increasingly striking.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：英美共同政治传统、思维与道德力量将使两国渐趋协调行动成为显著可能。
+
+
+口径与范围：英美共同政治传统、思维与道德力量将使两国渐趋协调行动成为显著可能。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：英美在世界大战中形成高度整合的联合行动，协调成为现实；早期封锁与海军竞争是反向阶段，但未阻止这项无明确终点的趋近判断在观测窗内实现。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-7088525fe4e3](https://kansaspress.ku.edu/9780700633180/)；[ev-76fcc25efb4f](https://www.cambridge.org/core/books/british-naval-supremacy-and-angloamerican-antagonisms-19141930/A090D59DA6245C6B9085CAFD17712A34)
+
+### 32. TXT 第 1985—1993 行 · 部分符合
+
+记录：`txt-e8c98c42ba-000121071-000121645`
+
+原文：There is yet another noteworthy condition common to the two states,
+which must tend to incline them towards a similar course of action in
+the future. Partners, each, in the great commonwealth of nations which
+share the blessings of European civilization, they alone, though in
+varying degrees, are so severed geographically from all existing
+rivals as to be exempt from the burden of great land armies; while at
+the same time they must depend upon the sea, in chief measure, for
+that intercourse with other members of the body upon which national
+well-being depends.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：英美同样与地缘对手隔离、依赖海洋又免于庞大陆军负担，这种条件会使两国未来行动趋同。
+
+
+口径与范围：英美同样与地缘对手隔离、依赖海洋又免于庞大陆军负担，这种条件会使两国未来行动趋同。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：两国实际形成联合行动和海上反潜合作，但美国也为欧洲战场扩建大规模陆军；共同免于庞大陆军负担的前提描述不成立，不能将合作结果当作整个地理解释均正确。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-7088525fe4e3](https://kansaspress.ku.edu/9780700633180/)；[ev-0da45228ce88](https://scholarcommons.scu.edu/historical-perspectives/vol18/iss1/11)；[ev-9da73d523b59](https://www.army.mil/article/185229/world_war_i_building_the_american_military)
+
+### 33. TXT 第 2037—2041 行 · 正确
+
+记录：`txt-e8c98c42ba-000124610-000124885`
+
+原文：experience cannot be
+had before that further development of the facts which will follow the
+not far distant day, when the United States people must again betake
+themselves to the sea and to external action, as did their forefathers
+alike in their old home and in the new.
+
+时间窗口：原文写出（not far distant day）。
+
+扩展观点（解释，非原文）：不远的未来，美国人民必将重新走向海洋与对外行动。
+
+
+口径与范围：不远的未来，美国人民必将重新走向海洋与对外行动。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：美国因海外战争结束原有近乎隔离的国际地位，走向海洋及海外行动；反帝联盟虽形成，但未阻止这一转向。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-73694f471c4a](https://history.state.gov/departmenthistory/short-history/superpower)；[ev-c28625507fab](https://guides.loc.gov/world-of-1898/anti-imperialist-league)
+
+### 34. TXT 第 2050—2053 行 · 正确
+
+记录：`txt-e8c98c42ba-000125440-000125616`
+
+原文：in
+that process of adjusting the parts to be played by each nation, upon
+which alone a satisfactory cooperation can be established, a certain
+amount of friction is probable,
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：英美在调整双方协作角色的过程中很可能发生一定摩擦。
+
+
+口径与范围：英美在调整双方协作角色的过程中很可能发生一定摩擦。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：英美合作深化期间的政治军事分歧及苏伊士危机严重破裂，直接证实调整合作角色时会有摩擦；没有引用误检的同名矿业公司。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-34d3b9adffd8](https://link.springer.com/chapter/10.1007/978-1-349-17579-6_3?code=802042cf-a1ae-473b-aea1-597c9da94556&error=cookies_not_supported)；[ev-a509c0010e46](https://link.springer.com/article/10.1007/s42533-024-00162-9)
+
+### 35. TXT 第 2100—2104 行 · 排除：非预测
+
+记录：`txt-e8c98c42ba-000128791-000129035`
+
+原文：Disunion, loss of national
+identity, changes of constitution more than radical, the exchange of a
+world-wide empire for a subordinate part in a great federation,--such
+_may_ be the destiny of Great Britain in the distant future. I know
+not;
+
+扩展观点（解释，非原文）：英国远期可能解体、失去国家认同并成为大联邦中的从属部分。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 36. TXT 第 2221—2222 行 · 正确
+
+记录：`txt-e8c98c42ba-000136601-000136692`
+
+原文：there is no immediate danger of the leading
+peoples turning their swords into ploughshares
+
+时间窗口：原文写出（immediate）。
+
+扩展观点（解释，非原文）：主要强国近期不会全面放弃军事武装。
+
+
+口径与范围：主要强国近期不会全面放弃军事武装。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：海牙会议的成果远低于制止陆军军备增长的目标，后来虽有条约式军备控制，也不是强国近期全面解除武装。全面裁军未发生与有限军控同时存在并不矛盾。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-ad46f5a35955](https://researchrepository.murdoch.edu.au/id/eprint/55185)；[ev-8e95eb5cd7f1](http://etheses.lse.ac.uk/319/1/Keefer_Great%20Britain%20and%20Naval%20Arms%20Control.pdf)
+
+### 37. TXT 第 2224—2232 行 · 正确
+
+记录：`txt-e8c98c42ba-000136830-000137333`
+
+原文：In this same pregnant
+strife the United States doubtless will be led, by undeniable
+interests and aroused national sympathies, to play a part, to cast
+aside the policy of isolation which befitted her infancy, and to
+recognize that, whereas once to avoid European entanglement was
+essential to the development of her individuality, now to take her
+share of the travail of Europe is but to assume an inevitable task, an
+appointed lot, in the work of upholding the common interests of
+civilization.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：美国将放弃孤立政策，因自身利益与民族同情而参与欧洲纷争并承担其责任。
+
+
+口径与范围：美国将放弃孤立政策，因自身利益与民族同情而参与欧洲纷争并承担其责任。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：美国实际参加欧洲大战并提出战后和平安排，已越过不参加欧洲纷争的界线；参议院拒绝凡尔赛安排说明承诺有反复，不否定已经实现的参与。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-9252a1e7359b](https://history.state.gov/departmenthistory/short-history/war)；[ev-7a766cc7fb7f](https://www.senate.gov/about/powers-procedures/treaties/senate-rejects-treaty-of-versailles.htm)
+
+### 38. TXT 第 2241—2245 行 · 部分符合
+
+记录：`txt-e8c98c42ba-000137970-000138244`
+
+原文：Whate'er betide, Sea Power will play
+in those days the leading part which it has in all history, and the
+United States by her geographical position must be one of the
+frontiers from which, as from a base of operations, the Sea Power of
+the civilized world will energize.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：未来海权仍将起主导作用，美国将依其地理位置成为西方海权运作前沿基地。
+
+
+口径与范围：未来海权仍将起主导作用，美国将依其地理位置成为西方海权运作前沿基地。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：美国长期从本土与海外前沿投送海军力量，海上基地与前沿行动这一部分得到确认；空中、核与太空力量改变军力结构，不能仅用海军仍然重要来证明海权始终居全面主导地位。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。 空中、核与太空力量改变军力结构，不能仅用海军仍然重要来证明海权始终居全面主导地位。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-70445c96fa62](https://www.cna.org/reports/2021/08/Sea-Changes-Transforming-US-Navy-Deployment-Strategy-1775-2002.pdf)；[ev-5ac104709b48](https://seer.ufrgs.br/index.php/austral/article/download/113269/66027/501284)
+
+### 39. TXT 第 2255—2258 行 · 错误
+
+记录：`txt-e8c98c42ba-000138854-000139037`
+
+原文：It is improbable
+that control ever again will be exercised, as once it was, by a single
+nation. Like the pettier interests of the land, it must be competed
+for, perhaps fought for.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：世界海洋控制权不太可能再由单一国家独掌，各国将竞争甚至交战。
+
+
+口径与范围：世界海洋控制权不太可能再由单一国家独掌，各国将竞争甚至交战。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：海军战争学院研究明确记载战后没有任何国家能够在公海挑战美国海军。单一国家再度取得海上压倒性优势，否定不会再由一国掌控的主干断言，后来竞争恢复不能消除反例。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-0e303e3bc21d](https://digital-commons.usnwc.edu/nwc-review/vol48/iss3/6/)；[ev-76fcc25efb4f](https://www.cambridge.org/core/books/british-naval-supremacy-and-angloamerican-antagonisms-19141930/A090D59DA6245C6B9085CAFD17712A34)
+
+### 40. TXT 第 2360—2363 行 · 错误
+
+记录：`txt-e8c98c42ba-000145452-000145689`
+
+原文：I have on another occasion said that the
+principle that the flag covers the goods is forever secured--meaning
+thereby that, so far as present indications go, no one power would be
+strong enough at sea to maintain the contrary by arms.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：中立国旗覆盖敌国货物的海上保护原则将永久确立，因为任何单一强国都无力武力推翻。
+
+
+口径与范围：中立国旗覆盖敌国货物的海上保护原则将永久确立，因为任何单一强国都无力武力推翻。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：巴黎宣言规定中立旗保护非禁运敌货，但美国外交存档明确记载英国在法律上并未宣布封锁的情况下扣留非禁运货物。原句不仅预言法律文本存在，还断言海权不足以武力违背它；实际强制扣货否定这种永久安全保证，并非将合法禁运品例外误作违规。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-b0c53a8c48bd](https://ihl-databases.icrc.org/en/ihl-treaties/paris-decl-1856/declaration)；[ev-0fdd67ac2f6a](https://history.state.gov/historicaldocuments/frus1915Supp/d195)；[ev-9d71af6b3ff1](https://history.state.gov/historicaldocuments/frus1916Supp/d602)
+
+### 41. TXT 第 2365—2368 行 · 部分符合
+
+记录：`txt-e8c98c42ba-000145693-000145937`
+
+原文：In the same way it may be asserted quite confidently that the
+concession of immunity to what is unthinkingly called the "private
+property" of an enemy on the sea, will never be conceded by a nation
+or alliance confident in its own sea power.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：对自身海权有信心的国家或联盟永远不会承认敌国海上私有财产的豁免权。
+
+
+口径与范围：对自身海权有信心的国家或联盟永远不会承认敌国海上私有财产的豁免权。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：英国作为领先海权确曾反对普遍海上私产豁免，但美国在扩大海军、马汉自称国力已强时仍坚持推动该原则。拒绝全面豁免并非所有自信海权国家永不接受的普遍定律；美国倡议也不冒充已缔结普遍豁免条约。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。 美国倡议也不冒充已缔结普遍豁免条约。
+观察终点：2026-11-15；条件状态：unknown。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-14ab260fbf40](https://www.usni.org/magazines/naval-history-magazine/2017/december/mahans-interference-us-policy)；[ev-5bbc86ff77e6](https://avalon.law.yale.edu/20th_century/hague11.asp)
+
+### 42. TXT 第 2461—2469 行 · 正确
+
+记录：`txt-e8c98c42ba-000151517-000152049`
+
+原文：If such coincidence there be, however,
+it is indicative not of a deliberate purpose, but of a commencing
+change of conditions, economical and political, throughout the world,
+with which sea power, in the broad sense of the phrase, will be
+associated closely; not, indeed, as the cause, nor even chiefly as a
+result, but rather as the leading characteristic of activities which
+shall cease to be mainly internal, and shall occupy themselves with
+the wider interests that concern the relations of states to the world
+at large.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：新时期美国活动将不再主要限于内部，海权会紧密联系全球经济政治变化，成为其对外活动的重要特征。
+
+
+口径与范围：新时期美国活动将不再主要限于内部，海权会紧密联系全球经济政治变化，成为其对外活动的重要特征。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：海军胜利带来海外领地与海上优势，海权成为美国对外活动要素；裁军与预算不足的阶段反复不等于美国活动重新永久局限国内。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-fd9ee4bc13df](https://www.usni.org/magazines/naval-history-magazine/2013/january/new-navy-new-power)；[ev-17d71dbff92c](https://digital-commons.usnwc.edu/cgi/viewcontent.cgi?article=7974&context=nwc-review)
+
+### 43. TXT 第 2474—2478 行 · 正确
+
+记录：`txt-e8c98c42ba-000152421-000152654`
+
+原文：nations have international
+duties as well as international rights, and that international
+complications will arise from which we can no more escape than the
+states which have preceded us in history, or those contemporary with
+us.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：美国将面对不可逃避的国际纠纷和责任，不会比其他国家例外。
+
+
+口径与范围：美国将面对不可逃避的国际纠纷和责任，不会比其他国家例外。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：美国卷入欧洲战争及其战后国际责任已有明确记录。战间期孤立与中立政策是阶段性反复，不推翻观测窗内已发生的国际卷入。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-9252a1e7359b](https://history.state.gov/departmenthistory/short-history/war)；[ev-fdbe432578e4](https://www.archives.gov/files/legislative/resources/education/foreign-policy-1920-2020/timeline-small.pdf)；[ev-33a728121d15](https://doi.org/10.1093/acrefore/9780199329175.013.49)
+
+### 44. TXT 第 2705—2708 行 · 排除：非预测
+
+记录：`txt-e8c98c42ba-000167677-000167872`
+
+原文：Those propositions
+possibly embody a sound policy, more applicable to present conditions
+than the Monroe doctrine itself, and therefore destined to succeed it;
+but they are not the same thing.
+
+扩展观点（解释，非原文）：冠以门罗主义名称的新的海外政策主张可能更适于当前，并将取代原教义。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 45. TXT 第 2772—2774 行 · 正确
+
+记录：`txt-e8c98c42ba-000172038-000172182`
+
+原文：her probable dependence in the near future upon an
+Isthmian canal for the freest and most copious intercourse between her
+two ocean seaboards.
+
+时间窗口：原文写出（in the near future）。
+
+扩展观点（解释，非原文）：美国在不远未来很可能依赖地峡运河来实现两大洋沿岸最自由充足的交通。
+
+
+口径与范围：美国在不远未来很可能依赖地峡运河来实现两大洋沿岸最自由充足的交通。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：经济回顾明确记载运河为美国两岸间贸易带来巨大成本节约并承担大量货运，支持其成为两岸交通要道；不将其夸成所有交通方式都被完全替代。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-5802b94b10e0](https://www.library.hbs.edu/working-knowledge/panama-canal-troubled-history-astounding-turnaround)；[ev-19185fa1811a](https://www.hbs.edu/faculty/Pages/item.aspx?research=7357)
+
+### 46. TXT 第 2823—2825 行 · 错误
+
+记录：`txt-e8c98c42ba-000175319-000175483`
+
+原文：Yet the interests exist, and the navy is
+growing; and in the latter fact is the best surety that no breach of
+peace will ensue from the maintenance of the former.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：美国不断增长的海军将有力保证其维护海外政治利益不会引发战争。
+
+
+口径与范围：美国不断增长的海军将有力保证其维护海外政治利益不会引发战争。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：海军增长并未保证维护海外利益不致破坏和平：美国实际通过美西战争取得海外权益。威慑是政策目的而非无战争的已实现结果。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-b4acb8bca2b9](https://history.state.gov/milestones/1866-1898/spanish-american-war)；[ev-5a19ab501bcb](https://www.usni.org/magazines/naval-history-magazine/2022/april/theodore-roosevelts-great-power-navy)
+
+### 47. TXT 第 2937—2941 行 · 正确
+
+记录：`txt-e8c98c42ba-000182748-000183015`
+
+原文：however
+diverse the modes of operation, all have a common characteristic, in
+that they bear the stamp of the national genius,--a proof that the
+various impulses are not artificial, but natural, and that they
+therefore will continue until an adjustment is reached.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：欧洲国家以不同模式对外政治殖民和商业扩张的冲动将持续直到达到调整均衡。
+
+
+口径与范围：欧洲国家以不同模式对外政治殖民和商业扩张的冲动将持续直到达到调整均衡。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：欧洲对外扩张继续发展到战前及战后的高峰，随后转为撤退与非殖民化。原句有达到调整为止的界限，不能擅自解释成殖民扩张必须永久持续。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-63d199c871dc](https://doi.org/10.4324/9780203930182-42)；[ev-7369a21a9d6c](https://assets.press.princeton.edu/chapters/s10963.pdf)
+
+### 48. TXT 第 3045—3049 行 · 部分符合
+
+记录：`txt-e8c98c42ba-000189755-000190071`
+
+原文：That we shall seek to secure the peaceable solution of each difficulty
+as it arises is attested by our whole history, and by the disposition
+of our people; but to do so, whatever the steps taken in any
+particular case, will bring us into new political relations and may
+entail serious disputes with other states.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：美国将努力和平解决每项争端，但其行为将形成新政治关系，且可能带来同其他国家的严重纷争。
+
+
+口径与范围：美国将努力和平解决每项争端，但其行为将形成新政治关系，且可能带来同其他国家的严重纷争。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：美国曾成功调停外国战争，同时也在海外持续介入并产生新冲突；但部分调停事例不证明每项争端都寻求和平，因此仅确认和平斡旋与新纠葛并存的部分。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-f5f181ef8b1a](https://millercenter.org/president/roosevelt/foreign-affairs)；[ev-f5c83ffc80b2](https://www.usni.org/magazines/naval-history-magazine/2021/august/never-known-day-peace)
+
+### 49. TXT 第 3101—3108 行 · 排除：非预测
+
+记录：`txt-e8c98c42ba-000192974-000193437`
+
+原文：To put into the water a first-class
+battle-ship, fully armored, within a year after the laying of her
+keel, as has been done latterly in England, is justly considered an
+extraordinary exhibition of the nation's resources for naval
+shipbuilding; and there yet remained to be done the placing of her
+battery, and many other matters of principal detail essential to her
+readiness for sea. This time certainly would not be less for
+ourselves, doing our utmost.
+
+扩展观点（解释，非原文）：美国即使用尽全力，建造一等装甲战列舰也不会比英国一年下水更快。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 50. TXT 第 3286—3288 行 · 正确
+
+记录：`txt-e8c98c42ba-000204826-000205004`
+
+原文：Do we ourselves realize that, happy as the issue of our
+intervention has been, it may entail upon us greater responsibilities,
+more serious action, than we have assumed before?
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：美国干预委内瑞拉争端可能给美国带来比以往更大的责任和更重大的行动。
+
+
+口径与范围：美国干预委内瑞拉争端可能给美国带来比以往更大的责任和更重大的行动。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：后续委内瑞拉危机及其仲裁促成罗斯福推论，扩展美国区域警察责任，符合责任与行动加重；没有把出版前那次边界争端本身算作预测应验。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-8222e677370d](https://www.tandfonline.com/doi/full/10.1080/09592290903293738)；[ev-8c51155bbff0](https://history.state.gov/milestones/1899-1913/roosevelt-and-monroe-doctrine)
+
+### 51. TXT 第 3380—3382 行 · 错误
+
+记录：`txt-e8c98c42ba-000211012-000211125`
+
+原文：the chief military
+power of which must lie ever in navies, never an aggressive factor
+such as armies have been.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：英国和美国的主要军事力量将永远是海军，而非陆军，海军也不会像陆军那样成为侵略因素。
+
+
+口径与范围：英国和美国的主要军事力量将永远是海军，而非陆军，海军也不会像陆军那样成为侵略因素。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：英美后来都依靠大规模陆军动员，而苏伊士入侵包含海上登陆与海军陆战队行动。海军永为主要力量且从不成为侵略因素的绝对组合断言不成立；并非用平时与战时口径混算军种人数。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-9da73d523b59](https://www.army.mil/article/185229/world_war_i_building_the_american_military)；[ev-6b73789bf545](https://nzhistory.govt.nz/war/united-kingdom-facts)；[ev-242b0c8edcd7](https://www.nam.ac.uk/explore/suez-crisis)
+
+### 52. TXT 第 3727—3731 行 · 暂无法判断
+
+记录：`txt-e8c98c42ba-000232626-000232931`
+
+原文：As regards Canada, Great Britain maintains a standing army; but, like
+our own, its numbers indicate clearly that aggression will never be
+her policy, except in those distant regions whither the great armies
+of the world cannot act against her, unless they first wrench from her
+the control of the sea.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：英国不会采取侵略政策，除了远离欧洲大陆大军、依海权保护的地区。
+
+
+口径与范围：英国不会采取侵略政策，除了远离欧洲大陆大军、依海权保护的地区。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：英国确有欧洲大陆派兵与海外入侵，但派遣陆军不自动等于侵略，苏伊士又可能落在原句明列的遥远海区例外中。第二轮仍缺既明确属侵略又明确排除该地理例外的同口径事实，不能拿布尔战争或一般参战直接判错。
+限制：已经进行了改变策略的第二轮检索；现有史实不等于原文定义含混的决定性命题，保留未定，不用不同口径指标代替。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-8b75f1557af4](https://www.tandfonline.com/doi/full/10.1080/09592296.2023.2188794)；[ev-242b0c8edcd7](https://www.nam.ac.uk/explore/suez-crisis)；[ev-68290a5d440b](https://www.degruyterbrill.com/document/doi/10.1515/9781685858643-004/html)
+
+### 53. TXT 第 3763—3765 行 · 错误
+
+记录：`txt-e8c98c42ba-000235062-000235157`
+
+原文：Of invasion, in any
+real sense of the word, we run no risk, and if we did, it must be by
+sea;
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：美国不会面临真正意义的本土入侵风险；若有也只能来自海上。
+
+
+口径与范围：美国不会面临真正意义的本土入侵风险；若有也只能来自海上。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：日本对阿留申群岛的实际入侵和占领反驳美国本土无真正入侵风险的主干否定句。这不是把边境小股袭扰当作全面占领；入侵来自海上只吻合其后附带的路线判断，不能挽救无风险断言。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-79b4fa6796a6](https://www.nationalww2museum.org/visit/exhibits/special-exhibits/american-shores-aleutian-islands-campaign)；[ev-a71ac7fe3108](https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Mexican-Expedition/)
+
+### 54. TXT 第 3787—3788 行 · 错误
+
+记录：`txt-e8c98c42ba-000236575-000236654`
+
+原文：in a small navy, as ours,
+relatively, long will be, this is doubly imperative;
+
+时间窗口：原文写出（long）。
+
+扩展观点（解释，非原文）：美国海军相对其他主要海军仍将长期较小。
+
+
+口径与范围：美国海军相对其他主要海军仍将长期较小。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：同期海军史明确记载美国造舰在出版后大幅加速，舰队增长快于除英国外的海军；后来的回顾又记载美国达到世界第二海军地位，与长期相对较小相反。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-795b1653f474](https://www.usni.org/magazines/proceedings/1914/july/half-century-naval-administration-america-1861-1911)；[ev-5a19ab501bcb](https://www.usni.org/magazines/naval-history-magazine/2022/april/theodore-roosevelts-great-power-navy)
+
+### 55. TXT 第 3867—3872 行 · 暂无法判断
+
+记录：`txt-e8c98c42ba-000241062-000241414`
+
+原文：The firmness with which the position
+of the former statesman has been maintained ever since by the great
+body of the people of the United States, and the developments his
+doctrine afterwards received, have removed the Spanish-American
+countries equally from all probable chance of further European
+colonization, in the political sense of the word.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：美国坚持并发展门罗主义，使西属美洲国家未来再被欧洲政治殖民的可能性极低。
+
+
+口径与范围：美国坚持并发展门罗主义，使西属美洲国家未来再被欧洲政治殖民的可能性极低。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：两轮共四条自适应查询找到门罗主义的反再殖民政策、美国区域霸权和欧洲继续保持文化经济联系的记载，但这些均不能代替对独立西属美洲国家后来是否被欧洲重新政治殖民的明确结果核查。仍缺直接覆盖该结果的历史综述；不以政策目标、欧洲影响或检索未见反例充当预测正确的证据。
+限制：未定的决定性缺口是后续欧洲政治再殖民的结果，不是缺少美国宣示门罗主义的背景材料；第二轮四条查询已用，未开启第三轮。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-338116c09b10](https://routledgelearning.com/internationalhistory20c/students/chapter-5-good-neighbors-the-united-states-and-the-americas-1900-45/)；[ev-89d69f9fa544](https://www.cambridge.org/core/journals/americas/article/latin-america-and-europe-in-the-twentieth-century-looking-to-the-americas-archives/29E73B033285C69621AB6586BAB01925)；[ev-e41588d73429](https://www.foreignaffairs.com/articles/central-america-caribbean/1929-01-01/latin-america-europe-and-united-states)
+
+### 56. TXT 第 4046—4049 行 · 正确
+
+记录：`txt-e8c98c42ba-000252630-000252857`
+
+原文：That the impress of Christianity will
+remain throughout the coming century is reasonably as certain as that
+it took centuries of nominal faith to lift Christian standards and
+practice even to the point they now have reached.
+
+时间窗口：原文写出（throughout the coming century）。
+
+扩展观点（解释，非原文）：在欧洲及美国等传统基督教国家，基督教的影响将贯穿二十世纪，即使信仰减弱也不会迅速消失。
+
+
+口径与范围：在欧洲及美国等传统基督教国家，基督教的影响将贯穿二十世纪，即使信仰减弱也不会迅速消失。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：欧洲及美国在二十世纪以后仍保有广泛基督教归属，世俗化研究也不支持信仰影响会迅速一概消失。原句容许信仰减弱，因而不以基督徒比例下降否定文化印记持续。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-7caf03391434](https://academic.oup.com/edited-volume/37088/chapter/323198004)；[ev-4c6d019089e7](https://doi.org/10.1093/oxfordhb/9780198834267.013.14)；[ev-c46a9dbfbd28](https://www.pewresearch.org/religion/2025/02/26/decline-of-christianity-in-the-us-has-slowed-may-have-leveled-off/)；[ev-94e69b710bf7](https://www.pewresearch.org/religion/2024/03/15/8-in-10-americans-say-religion-is-losing-influence-in-public-life/)
+
+### 57. TXT 第 4050—4054 行 · 暂无法判断
+
+记录：`txt-e8c98c42ba-000252906-000253193`
+
+原文：gradual likewise, granting the utmost
+possible spread of Christian beliefs among them, will be the
+approximation of the Eastern nations, as nations, to the principles
+which powerfully modify, though they cannot control wholly even now,
+the merely natural impulses of Western peoples.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：即使基督教信仰在东方最大限度传播，东方国家整体趋近基督教原则也只能缓慢发生。
+
+
+口径与范围：即使基督教信仰在东方最大限度传播，东方国家整体趋近基督教原则也只能缓慢发生。；前提：granting the utmost
+possible spread of Christian beliefs among them；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：亚洲基督徒人数与传播有资料，但人数不是国家整体接近基督教伦理原则的指标。最大限度传播在句中是让步而非可直接宣布未触发的事件前提；第二轮仍未得到同口径伦理变化速度的界定与实测。
+限制：已经进行了改变策略的第二轮检索；现有史实不等于原文定义含混的决定性命题，保留未定，不用不同口径指标代替。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-14204e2ef8fe](https://www.gordonconwell.edu/blog/christianity-in-asia/)；[ev-2144340400c6](https://www.pewresearch.org/religion/2006/10/05/overview-pentecostalism-in-asia/)
+
+### 58. TXT 第 4147—4150 行 · 排除：非预测
+
+记录：`txt-e8c98c42ba-000259248-000259375`
+
+原文：Never again, probably, can there of it be said,
+
+    "It heard the legions thunder past,
+    Then plunged in thought again."
+
+扩展观点（解释，非原文）：东方文明在觉醒后不大可能再完全退回政治沉睡。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 59. TXT 第 4153—4160 行 · 部分符合
+
+记录：`txt-e8c98c42ba-000259459-000259938`
+
+原文：in India, though there be no probability of the old
+mutinies reviving, there are signs enough of the awaking of political
+intelligence, restlessness under foreign subjection, however
+beneficent, desire for greater play for its own individualities; a
+movement which, because intellectual and appreciative of the
+advantages of Western material and political civilization, is less
+immediately threatening than the former revolt, but much more ominous
+of great future changes.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：印度知识与政治觉醒、对殖民从属不满的运动比旧兵变更预示未来重大政治变化，而非旧式兵变再现。
+
+
+口径与范围：印度知识与政治觉醒、对殖民从属不满的运动比旧兵变更预示未来重大政治变化，而非旧式兵变再现。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：印度政治意识增长及独立运动符合重大政治变化的方向，但皇家印度海军确实发生兵变，旧式兵变不会再现的附属断言失准。不能因政治觉醒成真而忽略该明确反例。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-e6927de341af](https://countrystudies.us/india/19.htm)；[ev-3193e57d8f15](https://snr.org.uk/the-mutiny-of-the-royal-indian-navy-at-bombay-in-february-1946/)
+
+### 60. TXT 第 4176—4180 行 · 正确
+
+记录：`txt-e8c98c42ba-000260922-000261208`
+
+原文：Nor, with the recent
+resuscitation of the Turkish army before men's eyes, can it be thought
+unlikely that the Chinese may yet obtain the organization by which
+alone potential force receives adequate military development, the most
+easily conferred because the simplest in conception.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：中国很可能获得把人口潜力转化为有效军事力量的组织能力。
+
+
+口径与范围：中国很可能获得把人口潜力转化为有效军事力量的组织能力。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：中国后来形成经过组织重建与现代化的强大区域军事力量，符合将人口和国家潜力组织成有效军力的结果。军阀割据是中间阶段；原句没有要求从出版日起始终统一，也未要求打败所有其他国家。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-e0041e0b3779](https://www.congress.gov/crs-product/R46808)；[ev-715f94c2543f](https://doi.org/10.1353/tcc.2022.0008)
+
+### 61. TXT 第 4184—4188 行 · 正确
+
+记录：`txt-e8c98c42ba-000261454-000261751`
+
+原文：Comparative slowness of evolution may be predicated, but
+that which for so long has kept China one, amid many diversities, may
+be counted upon in the future to insure a substantial unity of impulse
+which, combined with its mass, will give tremendous import to any
+movement common to the whole.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：中国演变将相对缓慢，但凝聚力会使其未来保持实质一致行动，结合规模令全国性运动具有巨大影响。
+
+
+口径与范围：中国演变将相对缓慢，但凝聚力会使其未来保持实质一致行动，结合规模令全国性运动具有巨大影响。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：中国后来的国家整合及巨大经济规模和全球影响有存档记载，实质凝聚并放大整体行动影响的主要结果已经出现。与军事组织预测采用相同无终点口径，不因中间军阀分裂就把最终实现自动降为部分符合，也不把实质统一夸成所有旧疆域均完整保留。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。 中国后来的国家整合及巨大经济规模和全球影响有存档记载，实质凝聚并放大整体行动影响的主要结果已经出现。与军事组织预测采用相同无终点口径，不因中间军阀分裂就把最终实现自动降为部分符合，也不把实质统一夸成所有旧疆域均完整保留。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-291ca13eba96](https://press-files.anu.edu.au/downloads/press/n11724/pdf/ch13.pdf)；[ev-14f20619a17d](https://referenceworks.brill.com/display/entries/BECO/SIM-00160.xml)；[ev-afc460f5b0a9](https://bristoluniversitypressdigital.com/view/journals/gd/14/2-3/article-p316.xml)
+
+### 62. TXT 第 4258—4260 行 · 排除：非预测
+
+记录：`txt-e8c98c42ba-000266290-000266410`
+
+原文：When men in sympathy with the
+ideas now arising among Englishmen come on the stage, we shall see a
+change--not before.
+
+扩展观点（解释，非原文）：英国新一代政治家上台后才会改变格莱斯顿和索尔兹伯里式以维持和平为第一要务的政策。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 63. TXT 第 4298—4302 行 · 排除：非预测
+
+记录：`txt-e8c98c42ba-000268778-000269005`
+
+原文：we stand at the
+opening of a period when the question is to be settled decisively,
+though the issue may be long delayed, whether Eastern or Western
+civilization is to dominate throughout the earth and to control its
+future.
+
+扩展观点（解释，非原文）：新时期将最终决定东西方文明何者统治全球，但时间可能很长。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 64. TXT 第 4330—4335 行 · 部分符合
+
+记录：`txt-e8c98c42ba-000270879-000271212`
+
+原文：Our
+material advantages, once noted, will be recognized readily and
+appropriated with avidity; while the spiritual ideas which dominate
+our thoughts, and are weighty in their influence over action, even
+with those among us who do not accept historic Christianity or the
+ordinary creeds of Christendom, will be rejected for long.
+
+时间窗口：原文写出（for long）。
+
+扩展观点（解释，非原文）：东方国家将迅速采用西方物质技术优势，但会长期拒绝主导西方的精神观念，包括基督教式思想。
+
+
+口径与范围：东方国家将迅速采用西方物质技术优势，但会长期拒绝主导西方的精神观念，包括基督教式思想。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：中国吸收技术并推进军力现代化是已观察的物质转变，但基督教在中韩社会的活力及其参与经济政治变化，反驳东方整体长期拒绝西方精神观念的概括。只确认技术采用等部分，不把宗教人数代替全部伦理。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-e0041e0b3779](https://www.congress.gov/crs-product/R46808)；[ev-a8da7ffa3034](https://brill.com/view/journals/ijac/4/1/article-p5_5.xml?language=en)；[ev-580892fb1868](https://www.journals.uchicago.edu/doi/pdf/10.1086/599246)
+
+### 65. TXT 第 4429—4434 行 · 部分符合
+
+记录：`txt-e8c98c42ba-000277257-000277612`
+
+原文：The peoples of European civilization, after a
+period of comparative repose, are again advancing all along the line,
+to occupy not only the desert places of the earth, but the debatable
+grounds, the buffer territories, which hitherto have separated them
+from those ancient nations, with whom they now soon must stand face to
+face and border to border.
+
+时间窗口：原文写出（soon）。
+
+扩展观点（解释，非原文）：欧洲文明诸国将占据东西方之间缓冲地带，很快与东方古国直接毗邻相接。
+
+
+口径与范围：欧洲文明诸国将占据东西方之间缓冲地带，很快与东方古国直接毗邻相接。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：欧洲力量在中国沿海取得租借地并直接接触东方古国，但缓冲地带并未全部成为直接统治领地，阿富汗等仍保留特定政治地位。接触增强成立，普遍吞并缓冲地带的宽断言只部分成立。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。 欧洲力量在中国沿海取得租借地并直接接触东方古国，但缓冲地带并未全部成为直接统治领地，阿富汗等仍保留特定政治地位。接触增强成立，普遍吞并缓冲地带的宽断言只部分成立。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-5b56548227fb](https://thechinaproject.com/2022/05/25/frances-hong-kong-the-leased-territory-of-guangzhouwan/)；[ev-00f409eeaa11](https://www.iranicaonline.org/articles/anglo-russian-convention-of-1907-an-agreement-relating-to-persia-afghanistan-and-tibet/)；[ev-07ac4600abd4](https://www.cambridge.org/core/books/abs/cambridge-history-of-china/foreign-presence-in-china/31F0E7708B288E2DCFDBC5EFC42973AC)
+
+### 66. TXT 第 4559—4564 行 · 部分符合
+
+记录：`txt-e8c98c42ba-000285556-000285852`
+
+原文：Mr. Balfour
+has used an expression, "race patriotism,"--a phrase which finds its
+first approximation, doubtless, in the English-speaking family, but
+which may well extend its embrace, in a time yet distant, to all those
+who have drawn their present civilization from the same remote
+sources.
+
+时间窗口：原文写出（in a time yet distant）。
+
+扩展观点（解释，非原文）：英美英语国家间的族群团结，远期可能扩展到拥有共同西方文明渊源的诸国。
+
+
+口径与范围：英美英语国家间的族群团结，远期可能扩展到拥有共同西方文明渊源的诸国。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：北约条约确实把英语国家与其他西方国家置于共同文明和集体防御框架，相关研究也讨论其种族化边界。但正式联盟并非可无条件等同所有同源文明国家的族群爱国主义，只确认跨英语国家的部分扩展。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。 北约条约确实把英语国家与其他西方国家置于共同文明和集体防御框架，相关研究也讨论其种族化边界。但正式联盟并非可无条件等同所有同源文明国家的族群爱国主义，只确认跨英语国家的部分扩展。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-a5182f68a607](https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/1949/04/04/the-north-atlantic-treaty)；[ev-840a1b09b129](https://academic.oup.com/ia/article-abstract/100/2/491/7617203)
+
+### 67. TXT 第 4579—4584 行 · 正确
+
+记录：`txt-e8c98c42ba-000286924-000287234`
+
+原文：When we begin really to look
+abroad, and to busy ourselves with our duties to the world at large in
+our generation--and not before--we shall stretch out our hands to
+Great Britain, realizing that in unity of heart among the
+English-speaking races lies the best hope of humanity in the doubtful
+days ahead.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：美国真正参与全球事务时，将向英国伸出合作之手。
+
+
+口径与范围：美国真正参与全球事务时，将向英国伸出合作之手。；前提：When we begin really to look
+abroad, and to busy ourselves with our duties to the world at large；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：英美和解形成稳定合作，后来共同组织联合战争行动，符合美国参与世界事务时向英国合作的结果。海军竞争说明合作并非无摩擦，不否定实际伸手合作。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-c2be041a1126](https://www.degruyterbrill.com/document/doi/10.1515/9781400834419-005/html)；[ev-66cda3d2dedf](https://doi.org/10.5287/ora-qmwydvkv2)；[ev-7088525fe4e3](https://kansaspress.ku.edu/9780700633180/)
+
+### 68. TXT 第 4613—4618 行 · 部分符合
+
+记录：`txt-e8c98c42ba-000289012-000289369`
+
+原文：Wherever situated, whether at Panama or at Nicaragua, the fundamental
+meaning of the canal will be that it advances by thousands of miles
+the frontiers of European civilization in general, and of the United
+States in particular; that it knits together the whole system of
+American states enjoying that civilization as in no other way they can
+be bound.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：地峡运河将推动美国及西方对外通达范围前推数千英里，并以前所未有方式把美洲国家体系联系起来。
+
+
+口径与范围：地峡运河将推动美国及西方对外通达范围前推数千英里，并以前所未有方式把美洲国家体系联系起来。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：运河和配套交通确实把两洋及美洲多地贸易网络连接起来，但贸易通达不等于整个美洲国家体系在政治文明层面得到无可替代的统一，只能确认交通商业联系加强这一部分。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。 运河和配套交通确实把两洋及美洲多地贸易网络连接起来，但贸易通达不等于整个美洲国家体系在政治文明层面得到无可替代的统一，只能确认交通商业联系加强这一部分。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-348740f7190c](https://pancanal.com/en/connectivity/)；[ev-10a4480ab1bc](https://www.trade.gov/market-intelligence/panama-panama-canal)
+
+### 69. TXT 第 4627—4630 行 · 排除：非预测
+
+记录：`txt-e8c98c42ba-000290034-000290239`
+
+原文：it is to be
+regretted that so serious a portion of them now is in hands which not
+only never have given, but to all appearances never can give, the
+development which is required by the general interest.
+
+扩展观点（解释，非原文）：加勒比诸多岛屿在现有统治者手中看来永远无法获得所需的发展。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 70. TXT 第 4684—4687 行 · 暂无法判断
+
+记录：`txt-e8c98c42ba-000293623-000293863`
+
+原文：On the side of the land, these great armies, and the blind outward
+impulse of the European peoples, are the assurance that generations
+must elapse ere the barriers can be overcome behind which rests the
+citadel of Christian civilization.
+
+时间窗口：原文写出（generations）。
+
+扩展观点（解释，非原文）：欧洲大陆军队与向外扩张保证西方基督教文明的防线至少数代内不会被外部力量突破。
+
+
+口径与范围：欧洲大陆军队与向外扩张保证西方基督教文明的防线至少数代内不会被外部力量突破。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：欧洲战争和苏联向东欧扩展有记录，但原文的基督教文明防线与外部力量未给出清楚边界；俄罗斯在相关文明分类中本就有争议。不能把欧洲内部战争或苏联占领不加定义地当作外部攻破文明堡垒。
+限制：已经进行了改变策略的第二轮检索；现有史实不等于原文定义含混的决定性命题，保留未定，不用不同口径指标代替。
+观察终点：未形成可判定观察终点；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-b61c0dc1a156](https://www.thebritishacademy.ac.uk/documents/1562/06_Kershaw_1817.pdf)；[ev-f7ec99c4af54](https://encyclopedia.ushmm.org/content/en/article/the-soviet-union-and-europe-after-1945)；[ev-b779b5047135](https://doi.org/10.14712/23363525.2014.35)
+
+### 71. TXT 第 4702—4705 行 · 部分符合
+
+记录：`txt-e8c98c42ba-000294745-000294953`
+
+原文：The Isthmus, with all that depends upon it,--its canal and its
+approaches on either hand,--will link the eastern side of the American
+continent to the western as no network of land communications ever
+can.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：地峡运河及两端航道将以任何陆路网都无法达到的程度连接美洲东西岸。
+
+
+口径与范围：地峡运河及两端航道将以任何陆路网都无法达到的程度连接美洲东西岸。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：运河早期为美国两岸货运带来巨大成本收益，但经济史也明确记载铁路技术及公路网降低其比较优势，陆水联运仍是竞争路线。运河贡献成立，任何陆路网络永不能匹敌的无条件上限不能整体确认。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。 运河早期为美国两岸货运带来巨大成本收益，但经济史也明确记载铁路技术及公路网降低其比较优势，陆水联运仍是竞争路线。运河贡献成立，任何陆路网络永不能匹敌的无条件上限不能整体确认。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-5802b94b10e0](https://www.library.hbs.edu/working-knowledge/panama-canal-troubled-history-astounding-turnaround)；[ev-6b562881e954](https://www.ams.usda.gov/sites/default/files/media/Impact%20of%20Panama%20Canal%20Expansion%20on%20the%20U.S.%20Intermodal%20System.pdf)
+
+### 72. TXT 第 4712—4719 行 · 正确
+
+记录：`txt-e8c98c42ba-000295437-000295955`
+
+原文：the gradual broadening and tightening hold upon the
+sentiment of American democracy of that conviction loosely
+characterized as the Monroe doctrine finds its logical and inevitable
+outcome in a great sea power, the correlative, in connection with that
+of Great Britain, of those armies which continue to flourish under the
+most popular institutions, despite the wails of economists and the
+lamentations of those who wish peace without paying the one price
+which alone has ever insured peace,--readiness for war.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：门罗主义在美国民意中加强将必然催生一支强大海权，并与英国海权相联系。
+
+
+口径与范围：门罗主义在美国民意中加强将必然催生一支强大海权，并与英国海权相联系。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：美国加强门罗主义下的区域角色，同时建成强大海军并与英国开展实质合作和集体防御。这里只核验强海权及英美联系出现，不把单一思想必然导致建军的因果解释另算成功。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-795b1653f474](https://www.usni.org/magazines/proceedings/1914/july/half-century-naval-administration-america-1861-1911)；[ev-b0926dc50713](https://history.state.gov/milestones/1937-1945/atlantic-conf)；[ev-4d78b0701380](https://history.state.gov/milestones/1945-1952/nato)；[ev-8c51155bbff0](https://history.state.gov/milestones/1899-1913/roosevelt-and-monroe-doctrine)
+
+### 73. TXT 第 4891—4894 行 · 正确
+
+记录：`txt-e8c98c42ba-000306473-000306706`
+
+原文：in the Mediterranean at present the Sea
+Powers, Great Britain, France, and Italy, are opposed to the Land
+Powers, Germany, Austria, and Russia; and the latter dominate action.
+It cannot be so, in any near future, in the Caribbean.
+
+时间窗口：原文写出（in any near future）。
+
+扩展观点（解释，非原文）：在可预见近期，德国、奥地利、俄罗斯式大陆强国不会像在地中海那样主导加勒比海局势，那里将仍以海权为主。
+
+
+口径与范围：在可预见近期，德国、奥地利、俄罗斯式大陆强国不会像在地中海那样主导加勒比海局势，那里将仍以海权为主。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：德国虽介入委内瑞拉封锁，却不足以夺取并维持领地，英国才是该行动主要力量，美国随后主导区域。有限介入并不等于大陆诸强像在地中海那样主导加勒比。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-085574660cf3](http://hdl.handle.net/11244/11968)；[ev-94bc6f3b2d0d](https://www.historytoday.com/archive/feature/1902-blockade-venezuela)；[ev-af7e934a4d1e](https://www.gilderlehrman.org/history-resources/essays/united-states-and-caribbean-1877-1920)
+
+### 74. TXT 第 4953—4955 行 · 正确
+
+记录：`txt-e8c98c42ba-000310467-000310582`
+
+原文：when it
+shall be pierced by a canal, it will present a maritime centre
+analogous to the mouth of the Mississippi.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：地峡被运河贯穿后将成为类似密西西比河口的航运中心。
+
+
+口径与范围：地峡被运河贯穿后将成为类似密西西比河口的航运中心。；前提：when it
+shall be pierced by a canal；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：运河局记载其连接广泛国际航线与港口，联合国贸发会议亦把该运河中断视为全球运输冲击；地峡成为航运枢纽已经实现。干旱等运营风险不是尚未成为枢纽的证据。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：satisfied。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-7e9aa744381e](https://pancanal.com/en/celebrates-110-years-of-trust-and-progress/)；[ev-5ebd64c6d741](https://unctad.org/system/files/official-document/osginf2024d2_en.pdf)
+
+### 75. TXT 第 5054—5057 行 · 部分符合
+
+记录：`txt-e8c98c42ba-000316937-000317191`
+
+原文：It can never be the ultimate base of operations, as
+Pensacola or New Orleans can, because it is an island, a small island,
+and has no resources--not even water; but for the daily needs of a
+fleet--coal, ammunition, etc.--it can be made most effective.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：基韦斯特因面积小、缺少水与资源永不能成为最终海军作战基地，但可以是高效舰队补给前沿。
+
+
+口径与范围：基韦斯特因面积小、缺少水与资源永不能成为最终海军作战基地，但可以是高效舰队补给前沿。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：基韦斯特后来成为有效的海军与航空活动基地，且引水管道改变了原文缺水的限制；但普通作战或训练基地不自动等于原文的最终作战基地。仅确认前沿实用性，不贸然将这个未定义的上限判为已完全推翻或完全证明。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。 但普通作战或训练基地不自动等于原文的最终作战基地。仅确认前沿实用性，不贸然将这个未定义的上限判为已完全推翻或完全证明。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-6620e0096d4e](https://cnrse.cnic.navy.mil/Installations/NAS-Key-West/About/History/)；[ev-68a50cc3b849](https://keysweekly.com/42/keys-history-arrival-of-fresh-water-brought-relief-to-the-island-chain/)
+
+### 76. TXT 第 5210—5211 行 · 错误
+
+记录：`txt-e8c98c42ba-000327114-000327181`
+
+原文：Holland is a small state, unlikely to join
+again in a general war.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：荷兰不大可能再参加全面战争。
+
+
+口径与范围：荷兰不大可能再参加全面战争。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：荷兰在世界大战中遭德国实际入侵并作战，已构成参加全面战争的反例；另一次大战保持中立不能证明以后都不大可能参战，原句也未限定必须主动开战。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-83522a951a75](https://www.annefrank.org/en/anne-frank/go-in-depth/german-invasion-netherlands/)；[ev-c00e8b35673e](https://en.wikipedia.org/wiki/Netherlands_in_World_War_I)
+
+### 77. TXT 第 5211—5214 行 · 排除：非预测
+
+记录：`txt-e8c98c42ba-000327182-000327388`
+
+原文：There is, indeed, a floating apprehension that
+the German Empire, in its present desires of colonial extension, may
+be willing to absorb Holland, for the sake of her still extensive
+colonial possessions.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：德意志帝国可能为夺荷兰殖民地而吞并荷兰。
+
+
+口径与范围：不可核验的候选（流水线 resolvable=false）
+判定：抽取流水线将其降级为unclear/不可核验，按METHOD.md不进入核验。
+限制：非可核验预测
+观察终点：未形成可判定观察终点；条件状态：unknown。
+思考方法：流水线归属/可核验规则排除（原文明确；方法有效性未由此证明）。
+证据：尚无足以判定的外部证据；本条仅作原文范围或条件审阅。
+
+### 78. TXT 第 5220—5222 行 · 部分符合
+
+记录：`txt-e8c98c42ba-000327690-000327853`
+
+原文：The same probable neutrality must be admitted for the remaining
+positions that have been distinguished: Mujeres Island, Samana Bay,
+and the island of St. Thomas.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：穆赫雷斯岛、萨马纳湾及圣托马斯岛今后大概仍在政治上保持中立。
+
+
+口径与范围：穆赫雷斯岛、萨马纳湾及圣托马斯岛今后大概仍在政治上保持中立。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：圣托马斯后来归美国并有海军设施，不能继续整体视为政治中立的三地组合。但关于圣托马斯的反例不能代替对穆赫雷斯和萨马纳两地分别下结论，因此不把全组一概判错。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-90114a0c9627](https://www.ibiblio.org/hyperwar/NHC/bases/bases-18.htm)；[ev-6e3673268864](https://www.usni.org/magazines/proceedings/1931/april/american-interests-west-indies)
+
+### 79. TXT 第 5274—5277 行 · 错误
+
+记录：`txt-e8c98c42ba-000331225-000331452`
+
+原文：Samana Bay, because,
+although the island on which it is is large and productive, it has not
+now, and gives no hope of having, that political stability and
+commercial prosperity which bring resources and power in their train.
+
+时间窗口：隐含，从出版年 1897 到截止日 2026-11-15。原文未写期限；该窗口内方向发生即按此评分。
+
+扩展观点（解释，非原文）：萨马纳湾所在的伊斯帕尼奥拉岛看不到未来实现政治稳定和商业繁荣的希望。
+
+
+口径与范围：萨马纳湾所在的伊斯帕尼奥拉岛看不到未来实现政治稳定和商业繁荣的希望。；前提：；观察：1897→2026-11-15；核验原对象/指标与范围，主动寻找反向或未触发证据。
+判定：萨马纳所在多米尼加的经济扩张与商业增长得到世行和国际货币基金组织回顾确认，与看不到商业繁荣希望的主要悲观判断相反。未用海地情况代替多米尼加，也未声称整座岛屿已经同样实现政治稳定。
+限制：按出版后至固定截止日的窗口核验主要结果；事实以所引存档为限，不把相关性当作书中因果机制已获证实。 萨马纳所在多米尼加的经济扩张与商业增长得到世行和国际货币基金组织回顾确认，与看不到商业繁荣希望的主要悲观判断相反。未用海地情况代替多米尼加，也未声称整座岛屿已经同样实现政治稳定。
+观察终点：2026-11-15；条件状态：unconditional。
+思考方法：按 METHOD §4 预定scope；Exa第一轮support/counter各一条，必要时同一自适应第二轮最多五条；从真实返回URL选源，Exa contents存档、sha256校验，助手逐条ASSESS并另行语义复核；未调用DeepSeek。（研究者归纳；方法有效性未由此证明）。
+证据：[ev-582d6ff1e557](https://documents1.worldbank.org/curated/en/099072523145018880/pdf/P176709-452d1173-eea1-43a4-8ae7-6718fe03a5af.pdf)；[ev-ed555e2efc3d](https://www.elibrary.imf.org/view/journals/024/2009/002/article-A004-en.xml)
+
+## 证据登记
+
+哈希校验只证明本地保存内容未改变。检索摘录与完整原始文件会按证据记录注明；两者均不能代替对来源与命题对应关系的判断。
+
+- [ev-94ddb4da0ac4](https://doi.org/10.3386/w7638)；资料日期：2000-04-01；覆盖：How Did the United States Become a Net Exporter of Manufactured Goods?。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-b8615f0b9727](https://digitalcommons.iwu.edu/cgi/viewcontent.cgi?article=1025&context=history_honproj)；资料日期：未确定；覆盖：Quest for Empire: The United States Versus Germany (1891-1910)。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-886e6b5c7cc1](https://en.wikipedia.org/wiki/Germany%E2%80%93United_States_relations)；资料日期：2026-10-07；覆盖：Germany–United States relations。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-c58e4f64fbb1](https://www.acs-aec.org/en/article/caribbean-and-widening-panama-canal-panacea-or-problems)；资料日期：未确定；覆盖：The Caribbean and the widening of the Panama Canal: panacea or problems? | The Association of Caribbean States。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-348740f7190c](https://pancanal.com/en/connectivity/)；资料日期：未确定；覆盖：Connectivity - Autoridad del Canal de Panamá。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-2f30174a674e](https://www.usni.org/magazines/proceedings/1980/january/military-aspects-panama-canal-issue)；资料日期：未确定；覆盖：Military Aspects of the Panama Canal Issue | Proceedings - January 1980 Vol. 106/1/923。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-de70c1bfc0d8](https://www.foreignaffairs.com/articles/panama/1959-04-01/control-panama-canal-obsolete-shibboleth)；资料日期：未确定；覆盖：Control of the Panama Canal: an Obsolete Shibboleth? | Foreign Affairs。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-e1415982e063](https://www.usni.org/magazines/proceedings/1917/july/international-notes-naval-war-notes)；资料日期：未确定；覆盖：International Notes: Naval War Notes | Proceedings - July 1917 Vol. 43/7/173。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-b1a7971c4572](https://www.usni.org/magazines/naval-history-magazine/2006/august/roosevelts-pursuit-temperate-caribbean-policy)；资料日期：2006-08-01；覆盖：Roosevelt's Pursuit of a Temperate Caribbean Policy | Naval History Magazine - August 2006 Volume 20, Number 4。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-7111b11fccac](https://history.house.gov/Exhibitions-and-Publications/APA/Historical-Essays/Exclusion-and-Empire/1898/)；资料日期：未确定；覆盖：1898: Birth of an Overseas Empire         |     
+
+    
+    US House of Representatives: History, Art & Archives。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-1dc8c6e47d20](https://www.jstor.org/stable/j.ctv4rft41)；资料日期：未确定；覆盖：Anti-Imperialism in the United States: The Great Debate, 1890-1920 | JSTOR。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-b2bd0f6e0c36](https://www.history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-023/h-023-1.html)；资料日期：未确定；覆盖：H-023-1 Navy World War I Contribution。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-12480e086317](https://warhistory.org/article/panama-canal-zone-defences-i)；资料日期：2019-11-18；覆盖：Panama Canal Zone Defences I - WarHistory.org。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-6c13a0f8da2f](https://cnrsw.cnic.navy.mil/Installations/NAVBASE-San-Diego/About/History/)；资料日期：未确定；覆盖：History。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-79e7d932a66b](https://theconversation.com/suez-crisis-shows-what-happens-when-friends-dont-share-65844)；资料日期：2016-10-31；覆盖：Suez Crisis shows what happens when friends don’t share。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-a618c73fc56c](https://api.parliament.uk/historic-hansard/commons/1957/apr/01/bermuda-talks-1)；资料日期：未确定；覆盖：BERMUDA TALKS (Hansard, 1 April 1957)。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-4d78b0701380](https://history.state.gov/milestones/1945-1952/nato)；资料日期：未确定；覆盖：Milestones in the History of U.S. Foreign Relations - Office of the Historian。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-b0926dc50713](https://history.state.gov/milestones/1937-1945/atlantic-conf)；资料日期：未确定；覆盖：Milestones in the History of U.S. Foreign Relations - Office of the Historian。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-cecbe4deaf55](https://www.geostrategy.org.uk/all-research/the-south-china-sea-historical-and-legal-background/)；资料日期：2024-09-11；覆盖：The South China Sea: Historical and legal background – Council on Geostrategy。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-d5865f10a12c](https://chinaindiaborderdispute.wordpress.com/wp-content/uploads/2010/07/fravelchinaborders.pdf)；资料日期：未确定；覆盖：M. Taylor Fravel: Strong Borders, Secure Nation。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-e48149c79ab7](https://www.sil.si.edu/Exhibitions/Make-the-Dirt-Fly/chooseroute.html)；资料日期：未确定；覆盖：Smithsonian Institution Libraries: Make the Dirt Fly!。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-10a4480ab1bc](https://www.trade.gov/market-intelligence/panama-panama-canal)；资料日期：未确定；覆盖：Panama: The Panama Canal。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-67fd93aff47a](https://history.state.gov/milestones/1899-1913/panama-canal)；资料日期：未确定；覆盖：Milestones in the History of U.S. Foreign Relations - Office of the Historian。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-8c51155bbff0](https://history.state.gov/milestones/1899-1913/roosevelt-and-monroe-doctrine)；资料日期：未确定；覆盖：Milestones in the History of U.S. Foreign Relations - Office of the Historian。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-fa11bcb85134](https://doi.org/10.1590/s0102-85292013000200006)；资料日期：2013-12-01；覆盖：Sovereignty and regional integration in Latin America: a political conundrum?。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-4b0eb54629c2](https://www.encyclopedia.com/history/dictionaries-thesauruses-pictures-and-press-releases/buenos-aires-peace-conference)；资料日期：未确定；覆盖：Buenos Aires Peace Conference | Encyclopedia.com。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-76fcc25efb4f](https://www.cambridge.org/core/books/british-naval-supremacy-and-angloamerican-antagonisms-19141930/A090D59DA6245C6B9085CAFD17712A34)；资料日期：未确定；覆盖：British Naval Supremacy and Anglo-American Antagonisms, 1914–1930。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-0e303e3bc21d](https://digital-commons.usnwc.edu/nwc-review/vol48/iss3/6/)；资料日期：未确定；覆盖："The U.S. Navy's Search for a Strategy, 1945-1947" by Robert E. Fisher。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-af7e934a4d1e](https://www.gilderlehrman.org/history-resources/essays/united-states-and-caribbean-1877-1920)；资料日期：未确定；覆盖：The United States and the Caribbean, 1877–1920 | Gilder Lehrman Institute of American History。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-0ee0a71dc25d](https://www.cfr.org/articles/who-controls-panama-canal)；资料日期：未确定；覆盖：Who Controls the Panama Canal? | Council on Foreign Relations。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-3bc408f03460](https://history.state.gov/historicaldocuments/frus1912/d665)；资料日期：未确定；覆盖：Historical Documents - Office of the Historian。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-1abbbf4bc212](https://doi.org/10.1163/9789004274273_007)；资料日期：2014-01-01；覆盖：Securing the Maritime Trade: Triangular Frictions between the Merchant Marines of the US, UK and Japan。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-d77a2004b80a](http://bdigital.binal.ac.pa/bdp/The%20Panama%20canal%20and%20Inter1.pdf)；资料日期：未确定；覆盖：The Panama Canal and international trade competition。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-5802b94b10e0](https://www.library.hbs.edu/working-knowledge/panama-canal-troubled-history-astounding-turnaround)；资料日期：2010-12-20；覆盖：Panama Canal: Troubled History, Astounding Turnaround | Working Knowledge。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-a616f2a5a0d4](https://pancanal.com/en/maritime-services/trade-routes/)；资料日期：未确定；覆盖：Trade Routes - Autoridad del Canal de Panamá。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-2ecd4e6cd24a](https://www.usni.org/magazines/proceedings/1954/may/panama-canal-auxiliary-fleet)；资料日期：未确定；覆盖：The Panama Canal—An Auxiliary of the Fleet | Proceedings - May 1954 Vol. 80/5/615。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-552899cdab9e](https://www.usni.org/magazines/proceedings/1914/may/german-view-strategic-importance-panama-canal)；资料日期：未确定；覆盖：A German View of the Strategic Importance of the Panama Canal | Proceedings - May-June 1914 Vol. 40/3/151。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-0c3748798c57](https://www.theodorerooseveltcenter.org/encyclopedia/foreign-affairs/hay-pauncefote-treaty/)；资料日期：2025-08-20；覆盖：Hay-Pauncefote Treaty - Theodore Roosevelt Center。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-981d647529c9](https://history.state.gov/historicaldocuments/frus1901/d233)；资料日期：未确定；覆盖：Historical Documents - Office of the Historian。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-795b1653f474](https://www.usni.org/magazines/proceedings/1914/july/half-century-naval-administration-america-1861-1911)；资料日期：未确定；覆盖：A Half Century Of Naval Administration In America, 1861-1911 | Proceedings - July-August 1914 Vol. 40/4/152。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-fee5d9e98a95](https://www.lib.uchicago.edu/ead/pdf/century0463.pdf)；资料日期：未确定；覆盖：PANAMA。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-0624b97457e2](https://www.czbrats.com/AmPan/chap20.htm)；资料日期：未确定；覆盖：The Americans in Panama - Chapter 20。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-9fc0e7ffdc9f](https://pancanal.com/en/american-canal-construction/)；资料日期：2021-10-28；覆盖：American canal construction - Autoridad del Canal de Panamá。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-02bc848f775b](https://www.history.navy.mil/research/histories/ship-histories/danfs/o/oregon-ii.html)；资料日期：未确定；覆盖：Oregon II (Battleship No. 3)。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-55a9f481493e](https://transportgeography.org/contents/chapter1/emergence-of-mechanized-transportation-systems/suez-panama-canal-geography-impacts/)；资料日期：未确定；覆盖：Geographical Impacts of the Suez and Panama Canals | The Geography of Transport Systems。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-ecb3f39b669c](https://www.archives.gov/milestone-documents/roosevelt-corollary)；资料日期：未确定；覆盖：Theodore Roosevelt's Corollary to the Monroe Doctrine (1905) | National Archives。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-1a8f5a7ce396](https://www.degruyterbrill.com/document/doi/10.1515/9781400870462/html)；资料日期：2015-06-16；覆盖：The United States and the Caribbean Republics, 1921-1933。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-7088525fe4e3](https://kansaspress.ku.edu/9780700633180/)；资料日期：未确定；覆盖：Forging the Anglo-American Alliance。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-0da45228ce88](https://scholarcommons.scu.edu/historical-perspectives/vol18/iss1/11)；资料日期：2013-01-01；覆盖：“These Navies and Armies and Kings and Things”: Anglo American Cooperation in Anti-Submarine Warfare in World War I。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-9da73d523b59](https://www.army.mil/article/185229/world_war_i_building_the_american_military)；资料日期：2017-04-03；覆盖：World War I: Building the American military | Article | The United States Army。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-73694f471c4a](https://history.state.gov/departmenthistory/short-history/superpower)；资料日期：未确定；覆盖：1898: The Birth of a Superpower - Short History - Department History - Office of the Historian。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-c28625507fab](https://guides.loc.gov/world-of-1898/anti-imperialist-league)；资料日期：未确定；覆盖：Anti-Imperialist League - World of 1898: International Perspectives on the Spanish American War - Research Guides at Library of Congress。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-34d3b9adffd8](https://link.springer.com/chapter/10.1007/978-1-349-17579-6_3?code=802042cf-a1ae-473b-aea1-597c9da94556&error=cookies_not_supported)；资料日期：未确定；覆盖：Collaboration and Discord 1950–1956。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-a509c0010e46](https://link.springer.com/article/10.1007/s42533-024-00162-9)；资料日期：2024-06-19；覆盖：Shared adversaries in the Anglo-American Special Relationship: from the Cold War to contemporary threats | China International Strategy Review | Springer Nature。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-ad46f5a35955](https://researchrepository.murdoch.edu.au/id/eprint/55185)；资料日期：2016-01-01；覆盖：Reconsidering disarmament at the Hague Peace Conferences of 1899 and 1907。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-8e95eb5cd7f1](http://etheses.lse.ac.uk/319/1/Keefer_Great%20Britain%20and%20Naval%20Arms%20Control.pdf)；资料日期：2011-12-30；覆盖：Great Britain and naval arms control : international law and security 1898-1914。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-9252a1e7359b](https://history.state.gov/departmenthistory/short-history/war)；资料日期：未确定；覆盖：America Enters the War; Wilson's Plan for Peace - Short History - Department History - Office of the Historian。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-7a766cc7fb7f](https://www.senate.gov/about/powers-procedures/treaties/senate-rejects-treaty-of-versailles.htm)；资料日期：2026-10-30；覆盖：U.S. Senate: Senate Rejects the Treaty of Versailles。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-70445c96fa62](https://www.cna.org/reports/2021/08/Sea-Changes-Transforming-US-Navy-Deployment-Strategy-1775-2002.pdf)；资料日期：未确定；覆盖：(U) Sea Changes: Transforming U.S. Navy Deployment Strategy, 1775-2002。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-5ac104709b48](https://seer.ufrgs.br/index.php/austral/article/download/113269/66027/501284)；资料日期：未确定；覆盖：THE ENDURING RELEVANCE OF NAVAL POWER: REFLECTIONS ON DEFENCE, SECURITY AND POWER PROJECTION OF SEA FRONTIER。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-b0c53a8c48bd](https://ihl-databases.icrc.org/en/ihl-treaties/paris-decl-1856/declaration)；资料日期：未确定；覆盖：IHL Treaties - Paris Declaration, 1856 - Declaration。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-0fdd67ac2f6a](https://history.state.gov/historicaldocuments/frus1915Supp/d195)；资料日期：未确定；覆盖：Historical Documents - Office of the Historian。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-9d71af6b3ff1](https://history.state.gov/historicaldocuments/frus1916Supp/d602)；资料日期：未确定；覆盖：Historical Documents - Office of the Historian。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-14ab260fbf40](https://www.usni.org/magazines/naval-history-magazine/2017/december/mahans-interference-us-policy)；资料日期：2017-11-01；覆盖：Mahan's Interference in U.S. Policy | Naval History Magazine - December 2017 Volume 31, Number 6。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-5bbc86ff77e6](https://avalon.law.yale.edu/20th_century/hague11.asp)；资料日期：未确定；覆盖：The Avalon Project - Laws of War : Restrictions With Regard to the Exercise of the Right of Capture in Naval War (Hague XI); October 18, 1907。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-fd9ee4bc13df](https://www.usni.org/magazines/naval-history-magazine/2013/january/new-navy-new-power)；资料日期：2013-01-01；覆盖：New Navy, New Power | Naval History Magazine - February 2013 Volume 27, Number 1。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-17d71dbff92c](https://digital-commons.usnwc.edu/cgi/viewcontent.cgi?article=7974&context=nwc-review)；资料日期：未确定；覆盖：Peacetime Naval Rearmament, 1933–39: Lessons for Today。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-fdbe432578e4](https://www.archives.gov/files/legislative/resources/education/foreign-policy-1920-2020/timeline-small.pdf)；资料日期：未确定；覆盖：Seeing the Big Picture: One Hundred Years of U.S. Foreign Policy 1920 – 2019。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-33a728121d15](https://doi.org/10.1093/acrefore/9780199329175.013.49)；资料日期：2017-03-31；覆盖：Isolationism。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-19185fa1811a](https://www.hbs.edu/faculty/Pages/item.aspx?research=7357)；资料日期：未确定；覆盖：The Panama Canal - Research Summary - Faculty & Research - Harvard Business School。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-b4acb8bca2b9](https://history.state.gov/milestones/1866-1898/spanish-american-war)；资料日期：未确定；覆盖：Milestones in the History of U.S. Foreign Relations - Office of the Historian。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-5a19ab501bcb](https://www.usni.org/magazines/naval-history-magazine/2022/april/theodore-roosevelts-great-power-navy)；资料日期：2022-03-15；覆盖：Theodore Roosevelt’s Great-Power Navy | Naval History Magazine - April 2022 Volume 36, Number 2。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-63d199c871dc](https://doi.org/10.4324/9780203930182-42)；资料日期：2008-01-28；覆盖：Decolonization。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-7369a21a9d6c](https://assets.press.princeton.edu/chapters/s10963.pdf)；资料日期：未确定；覆盖：Decolonization: A Short History - Chapter 1。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-f5f181ef8b1a](https://millercenter.org/president/roosevelt/foreign-affairs)；资料日期：2016-10-04；覆盖：Theodore Roosevelt: Foreign Affairs | Miller Center。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-f5c83ffc80b2](https://www.usni.org/magazines/naval-history-magazine/2021/august/never-known-day-peace)；资料日期：2021-07-01；覆盖：‘Never Known a Day of Peace’ | Naval History Magazine - August 2021 Volume 35, Number 4。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-8222e677370d](https://www.tandfonline.com/doi/full/10.1080/09592290903293738)；资料日期：2009-11-02；覆盖：Catalyst for the Roosevelt Corollary: Arbitrating the 1902–1903 Venezuela Crisis and Its Impact on the Development of the Roosevelt Corollary to the Monroe Doct。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-6b73789bf545](https://nzhistory.govt.nz/war/united-kingdom-facts)；资料日期：未确定；覆盖：United Kingdom of Great Britain and Ireland | NZ History。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-242b0c8edcd7](https://www.nam.ac.uk/explore/suez-crisis)；资料日期：未确定；覆盖：Suez Crisis | National Army Museum。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-8b75f1557af4](https://www.tandfonline.com/doi/full/10.1080/09592296.2023.2188794)；资料日期：2023-01-02；覆盖：Commitment to the Continent: The Foreign Office, the War Office, and the British Field Force, 1934-1938: Diplomacy & Statecraft: Vol 34 , No 1  - Get Access。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-68290a5d440b](https://www.degruyterbrill.com/document/doi/10.1515/9781685858643-004/html)；资料日期：2023-07-18；覆盖：1 From Isolation to "Continental Commitment" 1900-1914。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-79b4fa6796a6](https://www.nationalww2museum.org/visit/exhibits/special-exhibits/american-shores-aleutian-islands-campaign)；资料日期：未确定；覆盖：https://www.nationalww2museum.org/visit/exhibits/special-exhibits/american-shores-aleutian-islands-campaign。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-a71ac7fe3108](https://history.army.mil/Research/Reference-Topics/Army-Campaigns/Brief-Summaries/Mexican-Expedition/)；资料日期：未确定；覆盖：Mexican Expedition。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-338116c09b10](https://routledgelearning.com/internationalhistory20c/students/chapter-5-good-neighbors-the-united-states-and-the-americas-1900-45/)；资料日期：未确定；覆盖：Chapter 5: ‘Good Neighbors’? The United States and the Americas, 1900–45 – International History of the Twentieth Century and Beyond。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-89d69f9fa544](https://www.cambridge.org/core/journals/americas/article/latin-america-and-europe-in-the-twentieth-century-looking-to-the-americas-archives/29E73B033285C69621AB6586BAB01925)；资料日期：2025-10-17；覆盖：Latin America and Europe in the Twentieth Century: Looking to The Americas Archives | The Americas | Cambridge Core。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-e41588d73429](https://www.foreignaffairs.com/articles/central-america-caribbean/1929-01-01/latin-america-europe-and-united-states)；资料日期：未确定；覆盖：Latin America, Europe and the United States | F. Garcia Calderon。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-7caf03391434](https://academic.oup.com/edited-volume/37088/chapter/323198004)；资料日期：未确定；覆盖：Religions in Europe: A Statistical Summary | The Oxford Handbook of Religion and Europe | Oxford Academic。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-4c6d019089e7](https://doi.org/10.1093/oxfordhb/9780198834267.013.14)；资料日期：2021-12-08；覆盖：Religion, Secularity, and Secularization in Europe。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-c46a9dbfbd28](https://www.pewresearch.org/religion/2025/02/26/decline-of-christianity-in-the-us-has-slowed-may-have-leveled-off/)；资料日期：2025-02-26；覆盖：US Christian Decline May Be Stabilizing: 2023-24 Religious Landscape Study (RLS) | Pew Research Center。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-94e69b710bf7](https://www.pewresearch.org/religion/2024/03/15/8-in-10-americans-say-religion-is-losing-influence-in-public-life/)；资料日期：2024-03-15；覆盖：Religion is losing influence in public life, 8 in 10 Americans say | Pew Research Center。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-14204e2ef8fe](https://www.gordonconwell.edu/blog/christianity-in-asia/)；资料日期：2020-11-18；覆盖：Christianity in Asia - Gordon Conwell。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-2144340400c6](https://www.pewresearch.org/religion/2006/10/05/overview-pentecostalism-in-asia/)；资料日期：2006-10-05；覆盖：Overview: Pentecostalism in Asia | Pew Research Center。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-e6927de341af](https://countrystudies.us/india/19.htm)；资料日期：未确定；覆盖：India - The Independence Movement。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-3193e57d8f15](https://snr.org.uk/the-mutiny-of-the-royal-indian-navy-at-bombay-in-february-1946/)；资料日期：1993-05-02；覆盖：The Mutiny of the Royal Indian Navy at Bombay in February 1946。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-e0041e0b3779](https://www.congress.gov/crs-product/R46808)；资料日期：未确定；覆盖：China’s Military: The People’s Liberation Army (PLA) | Congress.gov | Library of Congress。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-715f94c2543f](https://doi.org/10.1353/tcc.2022.0008)；资料日期：2022-01-01；覆盖：Warlords at Work: Four Crucial Realms and Four Dynamics of State Building in Republican China, 1916–1937。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-291ca13eba96](https://press-files.anu.edu.au/downloads/press/n11724/pdf/ch13.pdf)；资料日期：未确定；覆盖：13. ‘Unity within Diversity’: The Chinese Communist Party’s Construction of the Chinese Nation。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-14f20619a17d](https://referenceworks.brill.com/display/entries/BECO/SIM-00160.xml)；资料日期：未确定；覆盖：Warlord Era。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-afc460f5b0a9](https://bristoluniversitypressdigital.com/view/journals/gd/14/2-3/article-p316.xml)；资料日期：2024-05-01；覆盖：China’s development path, 1949–2022 in: Global Discourse Volume 14 Issue 2-3 (2024)。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-a8da7ffa3034](https://brill.com/view/journals/ijac/4/1/article-p5_5.xml?language=en)；资料日期：2021-03-09；覆盖：The Secularisation Thesis Recast: Christianity in Modern China and South Korea。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-580892fb1868](https://www.journals.uchicago.edu/doi/pdf/10.1086/599246)；资料日期：未确定；覆盖：The Puzzle of Korean Christianity: Geopolitical Networks and Religious Conversion in Early Twentieth‐Century East Asia1。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-5b56548227fb](https://thechinaproject.com/2022/05/25/frances-hong-kong-the-leased-territory-of-guangzhouwan/)；资料日期：2022-05-25；覆盖：France's Hong Kong: The leased territory of Guangzhouwan – The China Project。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-00f409eeaa11](https://www.iranicaonline.org/articles/anglo-russian-convention-of-1907-an-agreement-relating-to-persia-afghanistan-and-tibet/)；资料日期：1985-12-15；覆盖：ANGLO-RUSSIAN CONVENTION OF 1907 - Encyclopaedia Iranica。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-07ac4600abd4](https://www.cambridge.org/core/books/abs/cambridge-history-of-china/foreign-presence-in-china/31F0E7708B288E2DCFDBC5EFC42973AC)；资料日期：未确定；覆盖：3 - The foreign presence in China。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-a5182f68a607](https://www.nato.int/en/about-us/official-texts-and-resources/official-texts/1949/04/04/the-north-atlantic-treaty)；资料日期：未确定；覆盖：The North Atlantic Treaty | NATO Official text。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-840a1b09b129](https://academic.oup.com/ia/article-abstract/100/2/491/7617203)；资料日期：2024-03-04；覆盖：NATO and the global colour line | International Affairs | Oxford Academic。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-c2be041a1126](https://www.degruyterbrill.com/document/doi/10.1515/9781400834419-005/html)；资料日期：未确定；覆盖：Chapter Three. Anglo-American Rapprochement。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-66cda3d2dedf](https://doi.org/10.5287/ora-qmwydvkv2)；资料日期：1982-01-01；覆盖：Britain, America and the search for comprehensive naval limitation, 1927-1936。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-b61c0dc1a156](https://www.thebritishacademy.ac.uk/documents/1562/06_Kershaw_1817.pdf)；资料日期：未确定；覆盖：Out of the ashes: Europe’s rebirth after the Second World War, 1945–1949。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-f7ec99c4af54](https://encyclopedia.ushmm.org/content/en/article/the-soviet-union-and-europe-after-1945)；资料日期：未确定；覆盖：The Soviet Union and Europe after 1945 | Holocaust Encyclopedia。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-b779b5047135](https://doi.org/10.14712/23363525.2014.35)；资料日期：2016-02-01；覆盖：The Historical Regions of Europe: Civilizational Backgrounds and Multiple Routes to Modernity。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-6b562881e954](https://www.ams.usda.gov/sites/default/files/media/Impact%20of%20Panama%20Canal%20Expansion%20on%20the%20U.S.%20Intermodal%20System.pdf)；资料日期：未确定；覆盖：THE U.S. INTERMODAL SYSTEM。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-085574660cf3](http://hdl.handle.net/11244/11968)；资料日期：1998-07-01；覆盖：Reassessing the German Challenge: German and United States Military Capabilities and the Possibility of War in the Caribbean During the Venezuelan Blockade 1902。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-94bc6f3b2d0d](https://www.historytoday.com/archive/feature/1902-blockade-venezuela)；资料日期：2014-06-29；覆盖：The 1902 Blockade of Venezuela | History Today。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-7e9aa744381e](https://pancanal.com/en/celebrates-110-years-of-trust-and-progress/)；资料日期：2024-08-20；覆盖：The Panama Canal Celebrates 110 Years of Trust and Progress - Autoridad del Canal de Panamá。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-5ebd64c6d741](https://unctad.org/system/files/official-document/osginf2024d2_en.pdf)；资料日期：未确定；覆盖：Navigating troubled waters Impact to global trade of disruption of shipping routes in the Red Sea, Black Sea and Panama Canal。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-6620e0096d4e](https://cnrse.cnic.navy.mil/Installations/NAS-Key-West/About/History/)；资料日期：未确定；覆盖：History。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-68a50cc3b849](https://keysweekly.com/42/keys-history-arrival-of-fresh-water-brought-relief-to-the-island-chain/)；资料日期：2023-06-06；覆盖：KEYS HISTORY: ARRIVAL OF FRESH WATER BROUGHT RELIEF TO THE ISLAND CHAIN。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-83522a951a75](https://www.annefrank.org/en/anne-frank/go-in-depth/german-invasion-netherlands/)；资料日期：未确定；覆盖：The German invasion of the Netherlands | Anne Frank House。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-c00e8b35673e](https://en.wikipedia.org/wiki/Netherlands_in_World_War_I)；资料日期：2026-09-02；覆盖：Netherlands in World War I。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-90114a0c9627](https://www.ibiblio.org/hyperwar/NHC/bases/bases-18.htm)；资料日期：未确定；覆盖：Building the Navy's Bases in World War II [Chapter 18]。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-6e3673268864](https://www.usni.org/magazines/proceedings/1931/april/american-interests-west-indies)；资料日期：未确定；覆盖：American Interests in the West Indies | Proceedings - April 1931 Vol. 57/4/338。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-582d6ff1e557](https://documents1.worldbank.org/curated/en/099072523145018880/pdf/P176709-452d1173-eea1-43a4-8ae7-6718fe03a5af.pdf)；资料日期：未确定；覆盖：DOMINICAN REPUBLIC COUNTRY ECONOMIC MEMORANDUM:。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。
+- [ev-ed555e2efc3d](https://www.elibrary.imf.org/view/journals/024/2009/002/article-A004-en.xml)；资料日期：2009-06-03；覆盖：Why Has the Grass Been Greener on One Side of Hispaniola? A Comparative Growth Analysis of the Dominican Republic and Haiti in: IMF Staff Papers Volume 2009 Iss。限制：Exa contents 实际抓取的公开文本；长页可能仅存前12000字符，只使用所引且能逐字定位的句子。网页/索引日期不当作事件发生日期；未注明出版日期者保留null。

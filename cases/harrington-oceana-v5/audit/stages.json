@@ -1,0 +1,10 @@
+{
+  "read": {"chunks": 194, "read_through": "txt-00194", "next_unread_id": null},
+  "import": {"function": "validate_chunk_predictions + claims_from_results", "fuzzy": 0, "context_cleared": true, "claims": 7, "excluded": ["hypothetical", "normative"]},
+  "search": {"tool": "WebSearch and WebFetch", "exa": false, "deepseek": false},
+  "assess": {"apply_exit": 0, "check_exit": 0, "report_exit": 0, "inspect": "pass_with_undated_warnings"},
+  "tests": {"command": "python3 -m unittest discover -s toolkit/tests", "ran": 209, "result": "OK", "exit": 0},
+  "secrets": {"hits": 0},
+  "manual_report": "not-run; manual_report.py absent",
+  "overlap": {"longest_decoded_source_span": 594, "where": "holland manufacture quote in claims.jsonl"}
+}

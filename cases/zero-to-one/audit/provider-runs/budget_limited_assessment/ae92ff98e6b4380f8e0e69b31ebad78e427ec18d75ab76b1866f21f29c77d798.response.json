@@ -1,0 +1,28 @@
+{
+  "id": "d6955ef5-9b86-4276-8337-21b23180532d",
+  "object": "chat.completion",
+  "created": 1794201445,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000034709-000034738\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文为反事实条件句，用于质疑“成功源于运气”的理论，并非对可观察未来的预测；无观察时段。\",\"reason\":\"该句是作者用连续创业者存在这一历史事实反驳运气决定论的反事实论证，不是面向未来的可检验预测。\",\"limitation\":\"作为非预测性论证，不纳入预测准确性评估；其因果论断本身也无法用单一观察验证。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4266,
+    "completion_tokens": 163,
+    "total_tokens": 4429,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3498
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

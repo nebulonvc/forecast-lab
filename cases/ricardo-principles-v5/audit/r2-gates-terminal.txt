@@ -1,0 +1,46 @@
+COMMAND_START 2026-11-20T12:01:19Z
+COMMAND: apply && check && report
+accepted assess 123
+APPLY_EXIT 0
+OK: 123 claims; 13 verified evidence records
+CHECK_EXIT 0
+{"book": "On the Principles of Political Economy and Taxation", "cutoff": "2026-11-15", "rules_version": "simple-v3-trend-four-class", "candidates": 123, "assessment_reviewed": 123, "unreviewed": 0, "extraction_v2_reviewed": 123, "expanded_claims_n": 123, "unresolved_references_n": 0, "legacy_extraction_reviewed": 0, "whole_candidate_pass_complete": true, "candidate_completion_rate": 1.0, "forecast_n": 20, "verdicts": {"正确": 0, "部分符合": 0, "错误": 0, "暂无法判断": 20}, "display_verdicts": {"正确": 0, "趋势符合": 0, "部分符合": 0, "错误": 0, "暂无法判断": 20}, "display_schema": "five-categories-trend-separate", "excluded": {"nonforecast": 103, "duplicate": 0}, "decided_n": 0, "forecasts_with_bound_evidence": 2, "forecasts_without_bound_evidence": 18, "no_decidable_outcomes": true, "trend_aligned_n": 0, "evaluation_coverage": 0.0, "correct_share_of_decided": null, "unresolved_bases": {"evidence": 20}, "evidence": 13, "evidence_hash_verified": 13, "method_attribution": {"explicit": 123}, "interpretation": "Retrospective parent-record counts, not independent forecast accuracy or prospective skill.", "brier": null, "partial_numeric_weight": null, "prepublication_observation_warning_ids": [], "horizon_sources": {"explicit": 21, "implicit_publication_to_cutoff": 75}}
+REPORT_EXIT 0
+COMMAND: inspect twenty forecasts
+txt-099aaa16de-000015062-000015182 暂无法判断 ['publication_date_unconfirmed', 'source_availability_unconfirmed']
+txt-099aaa16de-000102320-000102524 暂无法判断 []
+txt-099aaa16de-000102910-000103045 暂无法判断 []
+txt-099aaa16de-000104787-000105192 暂无法判断 []
+txt-099aaa16de-000108794-000108900 暂无法判断 []
+txt-099aaa16de-000111168-000111426 暂无法判断 []
+txt-099aaa16de-000112277-000112441 暂无法判断 []
+txt-099aaa16de-000114675-000114944 暂无法判断 []
+txt-099aaa16de-000115634-000115768 暂无法判断 []
+txt-099aaa16de-000117083-000117410 暂无法判断 []
+txt-099aaa16de-000124630-000124810 暂无法判断 []
+txt-099aaa16de-000133457-000133533 暂无法判断 []
+txt-099aaa16de-000145494-000145700 暂无法判断 []
+txt-099aaa16de-000147672-000147861 暂无法判断 []
+txt-099aaa16de-000151690-000151984 暂无法判断 []
+txt-099aaa16de-000218153-000218355 暂无法判断 []
+txt-099aaa16de-000371049-000371673 暂无法判断 []
+txt-099aaa16de-000398505-000398586 暂无法判断 []
+txt-099aaa16de-000561347-000561640 暂无法判断 []
+txt-099aaa16de-000584284-000584412 暂无法判断 []
+INSPECT_FORECASTS 20 PROBLEMS 0
+INSPECT_EXIT 0
+COMMAND: unittest discover
+.................................................................................................................................................................................................................
+----------------------------------------------------------------------
+Ran 209 tests in 0.894s
+
+OK
+{"exported_results": 1, "files": 3, "output": "/tmp/tmp7xmbxnwl/export"}
+accepted extract-full 1
+{"retry_count": 1, "parent_run_id": "123", "budget_CNY": 4, "exa_budget_USD": 1}
+UNITTEST_EXIT 0
+COMMAND: overlap300 and secret scan
+OVERLAP_300_HITS 0
+SECRET_HITS 0
+SCAN_EXIT 0
+COMMAND_END 2026-11-20T12:01:20Z

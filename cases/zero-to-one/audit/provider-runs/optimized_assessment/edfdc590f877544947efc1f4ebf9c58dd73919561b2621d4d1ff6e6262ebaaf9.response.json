@@ -1,0 +1,28 @@
+{
+  "id": "60489cc3-ebc3-4f4e-a8fd-bf39becf641d",
+  "object": "chat.completion",
+  "created": 1794201586,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000045859-000045894\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"原文描述风险投资基金管理人获得收益分成的行业惯例（通常20%），非对某基金未来收益的预测。\",\"reason\":\"该句是风险投资家获得附带权益（carry）的合约/惯例说明，不是对特定主体未来收益的可检验预测。\",\"limitation\":\"原文未给出具体基金、期限或收益指标，20%指利润分成比例而非年化收益。\",\"evidence_ids\":[],\"method\":\"条件性判断\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"\",\"condition_state\":\"unknown\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4361,
+    "completion_tokens": 168,
+    "total_tokens": 4529,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 3593
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

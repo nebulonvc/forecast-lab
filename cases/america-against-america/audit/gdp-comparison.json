@@ -1,0 +1,47 @@
+{
+  "indicator": "NY.GDP.MKTP.KD",
+  "unit": "constant 2015 US$",
+  "database_updated": "2026-10-08",
+  "source_archive": "data/sources/worldbank-NY.GDP.MKTP.KD.json",
+  "source_sha256": "0eabb480af54e08e1fa6c8a30424b5f98a316e14d676054b7b88acb293744bb4",
+  "formula": "(GDP_end / GDP_start) ** (1 / (end_year-start_year)) - 1",
+  "periods": {
+    "1991-2000": {
+      "USA": {
+        "initial": 9774639354974.79,
+        "final": 13717679619695.1,
+        "annualized_real_growth": 0.03837284859454182
+      },
+      "JPN": {
+        "initial": 3691076650696.96,
+        "final": 4030991750950.9,
+        "annualized_real_growth": 0.009836311265105646
+      }
+    },
+    "2000-2024": {
+      "USA": {
+        "initial": 13717679619695.1,
+        "final": 22731468331925.1,
+        "annualized_real_growth": 0.02126735875739616
+      },
+      "JPN": {
+        "initial": 4030991750950.9,
+        "final": 4708167683577.82,
+        "annualized_real_growth": 0.0064912427089502955
+      }
+    },
+    "1991-2024": {
+      "USA": {
+        "initial": 9774639354974.79,
+        "final": 22731468331925.1,
+        "annualized_real_growth": 0.025904349588682818
+      },
+      "JPN": {
+        "initial": 3691076650696.96,
+        "final": 4708167683577.82,
+        "annualized_real_growth": 0.007402433694358779
+      }
+    }
+  },
+  "limitation": "Aggregate real GDP is a retrospective proxy for development, not all welfare, productivity, political power, or the proposed cultural cause."
+}

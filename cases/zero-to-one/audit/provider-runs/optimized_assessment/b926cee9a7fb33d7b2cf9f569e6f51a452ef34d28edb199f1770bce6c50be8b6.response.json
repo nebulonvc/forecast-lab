@@ -1,0 +1,28 @@
+{
+  "id": "6dfd0b12-72d6-4be6-a405-ab6d38164541",
+  "object": "chat.completion",
+  "created": 1794201582,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"items\":[{\"id\":\"txt-4001dbbdf2-000027529-000027568\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"evidence\",\"scope\":\"2014年起十年内推特能否获得垄断利润，以及报纸垄断时代是否结束；观察证据覆盖2018Q2、2019—2021财年、2022Q2，未覆盖完整十年终点。\",\"reason\":\"推特分项证据显示2018年季度盈利，但2019—2021年净利润与营业利润波动且2021年亏损，2022Q2亦亏损，无法据此确认或否定“十年垄断利润”；报纸垄断时代结束这一分项无任何证据。\",\"limitation\":\"原句是作者转述投资者观点，非作者独立预测；GAAP利润不等于垄断租金，且证据未覆盖完整2014—2024十年。\",\"evidence_ids\":[\"biz-twitter-2018\",\"biz-twitter-2021\",\"biz-twitter-2022\"],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":\"2022-07-22\",\"future_time_text\":\"之后的10年中\",\"condition_state\":\"unconditional\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000027869-000027900\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"future\",\"scope\":\"科技公司大部分价值在未来至少10~15年体现；无具体公司、指标与观察窗口，且终点未到。\",\"reason\":\"该判断为一般性趋势陈述，未指定可操作化的公司或价值指标，且10~15年期限在截止日前未完成，无法评估。\",\"limitation\":\"无可用证据，且“大部分价值”缺乏可量化口径。\",\"evidence_ids\":[],\"method\":\"unknown\",\"method_basis\":\"unknown\",\"observation_end\":null,\"future_time_text\":\"未来至少10~15年\",\"condition_state\":\"unconditional\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000027989-000028020\",\"inclusion\":\"nonforecast\",\"verdict\":null,\"basis\":\"excluded\",\"scope\":\"2001年对PayPal价值来源的历史估值判断，2011年及之后利润占比。\",\"reason\":\"这是作者回忆2001年估值时对2011年后利润占比的判断，2014年出版时2011年已过，属于历史回顾而非新增预测。\",\"limitation\":\"需同期估值模型与现金流数据才能另评历史预测，本条不纳入预测评估。\",\"evidence_ids\":[],\"method\":\"explicit\",\"method_basis\":\"explicit\",\"observation_end\":null,\"future_time_text\":\"2011年甚至之后\",\"condition_state\":\"unknown\",\"trend_aligned\":false},{\"id\":\"txt-4001dbbdf2-000028064-000028129\",\"inclusion\":\"forecast\",\"verdict\":\"暂无法判断\",\"basis\":\"definition\",\"scope\":\"PayPal当时估值中2020年及之后现金流现值占比；观察证据为2024年经营与自由现金流。\",\"reason\":\"2024年PayPal仍产生可观经营现金流与自由现金流，支持2020年后仍有现金产出，但原预测是当时估值模型中的价值时间分解，缺少2014年折现模型与2020年前后完整现金流，无法确认“大部分价值来自2020年之后”。\",\"limitation\":\"估值模型预期不能用营收或现金流存在直接证实；2024年数据不能还原2014年估值口径。\",\"evidence_ids\":[\"biz-paypal-2024\"],\"method\":\"explicit\",\"method_basis\":\"explicit\",\"observation_end\":\"2025-02-04\",\"future_time_text\":\"2020年甚至之后\",\"condition_state\":\"unconditional\",\"trend_aligned\":false}]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7467,
+    "completion_tokens": 795,
+    "total_tokens": 8262,
+    "prompt_tokens_details": {
+      "cached_tokens": 768
+    },
+    "prompt_cache_hit_tokens": 768,
+    "prompt_cache_miss_tokens": 6699
+  },
+  "system_fingerprint": "bc19ba97cbe016479903222bb1578db6"
+}

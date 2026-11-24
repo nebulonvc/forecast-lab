@@ -1,0 +1,101 @@
+{
+  "id": "txt-5386516eaf-001710722-001710894",
+  "plan": {
+    "queries": [
+      {
+        "role": "support"
+      },
+      {
+        "role": "counter"
+      }
+    ],
+    "note": "r4 新执行。见 audit/search-returns-r4/manifest.json。不回填。"
+  },
+  "select": {
+    "urls": [
+      "https://www.bankofengland.co.uk/statistics/banknote"
+    ],
+    "reason": "只入选摘录已在存档、且日期不晚于 cutoff 的来源。"
+  },
+  "assess": {
+    "inclusion": "forecast",
+    "method_basis": "explicit",
+    "trend_aligned": false,
+    "future_time_text": "",
+    "condition_state": "unconditional",
+    "method": "2026-11-20 新的支持与反证检索。",
+    "id": "txt-5386516eaf-001710722-001710894",
+    "verdict": "正确",
+    "basis": "observed_window",
+    "observation_end": "2024-02-29",
+    "scope": "在商业信心允许自由使用的地方，银行券在很长一段时间里仍有相当供给。对象是英格兰银行钞票。",
+    "reason": "2024年6月7日的记录写，2024年2月29日英格兰银行钞票流通额为824亿英镑。反证检索写现金支付占比下降，但同一类材料写钞票流通总额仍在稳步增加。供给没有消失。",
+    "limitation": "英国是作者的主要语境。",
+    "evidence_ids": [
+      "ev-r4-icaew",
+      "ev-r4-paradox"
+    ],
+    "evidence_notes": [
+      {
+        "evidence_id": "ev-r4-icaew",
+        "quote": "there were £82.4bn of its banknotes in circulation on 29 February 2024",
+        "relation": "support",
+        "limitation": "供给仍大。",
+        "observation_end": "2024-02-29",
+        "publication_date": "2024-06-07",
+        "source_availability": {
+          "status": "available",
+          "basis": "publication_range"
+        }
+      },
+      {
+        "evidence_id": "ev-r4-paradox",
+        "quote": "the total value of banknotes in circulation has continued to steadily increase",
+        "relation": "support",
+        "limitation": "支付占比下降时供给仍增。",
+        "observation_end": "2018-12-31",
+        "publication_date": null,
+        "source_availability": {
+          "status": "unknown",
+          "basis": "not_established"
+        }
+      }
+    ],
+    "remaining_gap": ""
+  },
+  "semantic_review": {
+    "id": "txt-5386516eaf-001710722-001710894",
+    "decision": "accept",
+    "checks": {
+      "object_match": "pass",
+      "condition_logic": "pass",
+      "time_alignment": "pass",
+      "evidence_support": "pass",
+      "counterevidence": "pass",
+      "verdict_logic": "pass"
+    },
+    "issues": [],
+    "remaining_gap": ""
+  },
+  "inspect_warnings": [
+    {
+      "code": "publication_date_unconfirmed",
+      "evidence_ids": [
+        "ev-r4-paradox"
+      ],
+      "blocks_verdict": false
+    },
+    {
+      "code": "source_availability_unconfirmed",
+      "evidence_ids": [
+        "ev-r4-paradox"
+      ],
+      "blocks_verdict": false
+    }
+  ],
+  "r4_execution": {
+    "new": true,
+    "executed_at": "2026-11-20T11:20:00Z",
+    "previous_verdict": "正确"
+  }
+}
