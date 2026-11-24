@@ -320,11 +320,77 @@ python3 toolkit/forecast_optimizer.py optimize \
 
 ---
 
+## 共建实证数据库：用你自己的 Agent 或 API 拆解一本书并提交 PR
+
+欢迎任何研究者与读者将新的著作、机构报告或人物访谈拆解为可审计的预测案例，并通过 Pull Request 合入本库（`cases/<slug>/` + `datasets/all_cases_summary.csv` + [同档基准排行榜](docs/05-same-tier-ranking.md)）。我们提供**两条完全等价的标准流水线**，共享同一套 v5 抽取标准、正反双向一手搜证规则与六道确定性防污染闸门：
+
+| 共建路径 | 适用人群与工具 | 核心执行方式 |
+| :--- | :--- | :--- |
+| **路径一：用你自己的 Agent 跑书**<br>（零额外 API 费用） | 使用 **Claude Code、Antigravity、Cursor、Codex CLI、Windsurf、OpenCode** 等自有 AI Agent 的用户 | `contribute_book.py chunk-txt` 切块 → Agent（及并行子智能体）按 `prompt_v5.txt` 逐块抽取 + 自带联网搜索正反双向搜证 + 六维语义自检 → `contribute_book.py` 确定性对齐、裁剪上下文、SHA-256 存档并入库 |
+| **路径二：用你自己的 API 跑书**<br>（BYOK 全自动并发） | 拥有 **DeepSeek / OpenAI 兼容接口**（OpenAI、OpenRouter、通义千问、SiliconFlow 等）与 **Exa Search API** 的用户 | `prepare_book.py txt` 并发抽取 → `contribute_book.py trim-contexts` 裁剪 → `verify_prediction.py --all-forecasts` 并发双向搜证与独立复核 → `contribute_book.py import-verify` 一键固化证据并入库 |
+
+### 复制下面这段话发给你的 Agent 即可跑完一本书并准备 PR
+
+```text
+请帮我按《信号与噪音》Forecast Lab 的 v5 标准协议拆解一本新书，并生成可直接提交 PR 合入主数据库的完整案例（先阅读 `.agents/skills/book-contributor/SKILL.md` 与 `docs/07-contribute-a-book.md`）：
+1. 先向我确认 5 项元数据与运行方式：书名、作者、初版代理年份、所属七大标准领域之一、所属六类标准作者类型之一，以及原书 TXT 文件路径（我来把原书 TXT 放入被 `.gitignore` 忽略的 `cases/<slug>/input/` 目录，绝不提交进 Git）。同时问我是使用【路径一：由你（Agent 原生阅读与自带联网搜索）零 API 费用完成】，还是【路径二：调用我配置的 DeepSeek / OpenAI 兼容 API 与 Exa API 并发跑完】。
+2. 初始化案例并切分原文：运行 `python3 toolkit/contribute_book.py init ...`，切块执行 v5 抽取（严守逐字 quote 对齐、7 类非预测剔除与指代消歧），并通过 `contribute_book.py trim-contexts` 裁剪 `context`，确保不泄露原书全文。
+3. 严格执行正反双向一手事实核查：对每条可评分预测，必须成对检索支持证据与反面/瓶颈证据（优先统计局、央行、IEA/OECD/世行、学术与财报一手出处），将正文存档至 `cases/<slug>/data/sources/` 并登记真实 SHA-256 与截至日（<= cutoff），执行六维语义复核后按五类互斥结论落盘。
+4. 合入总数据库并运行全部 PR 门禁：依次运行 `python3 toolkit/contribute_book.py sync-database --case cases/<slug>`、`python3 toolkit/contribute_book.py pr-check --case cases/<slug>` 与 `python3 -m unittest discover -s toolkit/tests -v`。
+5. 全部门禁通过后，为我汇总本书的五类统计与同档超额表现，检查 `git status` 确认无原书全文或 API 密钥残留，并协助我创建分支、提交 Commit 与 Pull Request。
+```
+
+### 终端快速命令速览
+
+<details>
+<summary><b>展开查看路径一（自有 Agent）与路径二（自有 API）核心 CLI 闭环</b></summary>
+
+```bash
+# 0. 初始化社区案例目录（自动创建已被 .gitignore 忽略的 input/ 目录）
+python3 toolkit/contribute_book.py init \
+  --case cases/<author-book-v5> --book "<书名>" --author "<作者>" \
+  --publication-year 2010 --domain "科技、商业与产业颠覆" --author-type "科技商业思想家与产业实践者"
+
+# --- 路径一：自有 Agent 原生模式 ---
+python3 toolkit/contribute_book.py chunk-txt --case cases/<author-book-v5> --txt cases/<author-book-v5>/input/book.txt
+# (由 Agent 阅读 chunks.jsonl 与 prompt_v5.txt 写出 proposals，再导入并裁剪上下文)
+python3 toolkit/contribute_book.py import-extractions --case cases/<author-book-v5> --txt cases/<author-book-v5>/input/book.txt --proposals cases/<author-book-v5>/output/txt_import/chunk_proposals
+python3 toolkit/contribute_book.py export-verify-tasks --case cases/<author-book-v5>
+# (由 Agent 联网正反双向搜证并自检后，登记原始网页正文与评估)
+python3 toolkit/contribute_book.py apply-assessments --case cases/<author-book-v5> --assessments assessments.jsonl --evidence-raw evidence_raw.jsonl
+
+# --- 路径二：自有 API 并发模式（支持 DeepSeek 或任意 OpenAI 兼容 --api-base）---
+python3 toolkit/prepare_book.py --case cases/<author-book-v5> txt cases/<author-book-v5>/input/book.txt --apply --budget-cny 15
+python3 toolkit/contribute_book.py trim-contexts --case cases/<author-book-v5>
+python3 toolkit/verify_prediction.py --case cases/<author-book-v5> --all-forecasts --workers 8 --budget-cny 20 --exa-budget-usd 10
+python3 toolkit/contribute_book.py import-verify --case cases/<author-book-v5>
+
+# --- 统一合入总数据库与 PR 验收 ---
+python3 toolkit/contribute_book.py sync-database --case cases/<author-book-v5>
+python3 toolkit/contribute_book.py pr-check --case cases/<author-book-v5>
+python3 -m unittest discover -s toolkit/tests -v
+```
+
+</details>
+
+### PR 合入主数据库的 5 条硬标准
+
+1. **版权零泄漏**：原书全文（`.txt`/`.pdf`/`.epub`）绝不入库，`claims.jsonl` 已通过 `trim-contexts` 裁剪上下文，仅保留必要短引文与指代支撑片段。
+2. **密钥与隐私零残留**：无任何 API Key 或本机绝对路径（`/Users/...`、`/home/...`）。
+3. **100% 字节级证据哈希**：所有计分条目的外部证据均已在 `data/sources/` 本地归档，且通过 `pipeline.py check` 的 SHA-256 与截止日防穿越校验。
+4. **全量候选覆盖与报告幂等**：全书候选 `unreviewed == 0`，且 `output/report.md`、`output/claims.csv`、`output/summary.json` 与底层 JSONL 100% 同步。
+5. **总表与榜单同步**：已运行 `contribute_book.py sync-database` 更新 `datasets/all_cases_summary.csv`、`datasets/same_tier_ranking.csv` 与 `docs/05-same-tier-ranking.md`，并通过 `contribute_book.py pr-check` 与全量单元测试。
+
+详见 **[《社区共建指南：用你自己的 Agent 或 API 拆解一本书并合入数据库》](docs/07-contribute-a-book.md)**。
+
+---
+
 ## 文档导航
 
 | 目的 | 文档 |
 | :--- | :--- |
 | **了解核心研究发现** | [docs/00-key-insights.md](docs/00-key-insights.md) |
+| **用自己的 Agent 或 API 拆书并提 PR 入库** | [docs/07-contribute-a-book.md](docs/07-contribute-a-book.md) |
 | **数据驱动的预测方法优化（MCP & Skill）** | [docs/06-forecast-method-optimization.md](docs/06-forecast-method-optimization.md) |
 | **复制给 AI Agent 的零代码接入协议** | [AGENT_SETUP.md](AGENT_SETUP.md) |
 | **零代码接入、事实核查与 Polymarket 回测** | [docs/05-quickstart-onboarding-and-polymarket.md](docs/05-quickstart-onboarding-and-polymarket.md) |

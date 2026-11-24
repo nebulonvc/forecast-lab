@@ -20,11 +20,23 @@ class ForecastOptimizerTests(unittest.TestCase):
         cls.engine = fo.ForecastOptimizerEngine.load()
 
     def test_corpus_loader_exact_8130_parity(self):
+        import csv
         forecasts, nonforecasts, curated = fo.load_training_corpus()
-        self.assertEqual(len(forecasts), 8130)
-        self.assertEqual(len(nonforecasts), 2553)
+        summary_csv = Path(__file__).resolve().parents[2] / "datasets" / "all_cases_summary.csv"
+        with open(summary_csv, encoding="utf-8-sig") as f:
+            summary_rows = list(csv.DictReader(f))
+        self.assertEqual(len(forecasts), sum(int(r["预测数"]) for r in summary_rows))
         self.assertEqual(len(curated), 330)
-        vc = collections.Counter(r["verdict"] for r in forecasts)
+
+        baseline_slugs = {
+            r["slug"] for r in summary_rows
+            if not str(r.get("批次口径") or "").startswith("v5_community")
+        }
+        baseline_forecasts = [r for r in forecasts if r["case_slug"] in baseline_slugs]
+        baseline_nonforecasts = [r for r in nonforecasts if r["case_slug"] in baseline_slugs]
+        self.assertEqual(len(baseline_forecasts), 8130)
+        self.assertEqual(len(baseline_nonforecasts), 2553)
+        vc = collections.Counter(r["verdict"] for r in baseline_forecasts)
         self.assertEqual(vc["正确"], 1686)
         self.assertEqual(vc["趋势符合"], 971)
         self.assertEqual(vc["部分符合"], 1714)

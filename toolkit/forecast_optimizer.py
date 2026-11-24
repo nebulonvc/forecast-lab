@@ -623,7 +623,12 @@ def load_training_corpus(repo_root: Path = REPO_ROOT) -> tuple[list[dict[str, An
         slug = r["slug"]
         cdir = repo_root / "cases" / slug
         batch = r["批次口径"]
-        pub_year = int(r["出版年"]) if r["出版年"].isdigit() else PUB_YEAR_FALLBACK[slug]
+        if r["出版年"].isdigit():
+            pub_year = int(r["出版年"])
+        elif slug in PUB_YEAR_FALLBACK:
+            pub_year = PUB_YEAR_FALLBACK[slug]
+        else:
+            pub_year = int(json.loads((cdir / "config.json").read_text(encoding="utf-8"))["publication_year_proxy"])
         cutoff_year = int(r["截止日"][:4])
         window_years = max(1, cutoff_year - pub_year)
 

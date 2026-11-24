@@ -25,3 +25,8 @@ jobs:
             python toolkit/pipeline.py --case "$case_dir" report
           done
           git diff --exit-code -- cases
+      - name: Audit community contributed cases & database sync
+        run: |
+          python toolkit/contribute_book.py ci-audit
+          python docs/make_ranking.py
+          git diff --exit-code -- datasets docs/05-same-tier-ranking.md

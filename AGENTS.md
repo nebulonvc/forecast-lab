@@ -12,6 +12,7 @@
 - **七步预测法与八大场景透镜速查表**：[`docs/03-data-and-forecasting-guide.md`](docs/03-data-and-forecasting-guide.md)
 - **个人定期预测工作流**：[`docs/04-fork-and-agent-workflow.md`](docs/04-fork-and-agent-workflow.md) 及专用技能 [`.agents/skills/forecast-tracker/SKILL.md`](.agents/skills/forecast-tracker/SKILL.md)
 - **零代码智能体接入、动态方法包与 Polymarket 回测**：远程接入协议 [`AGENT_SETUP.md`](AGENT_SETUP.md)、实战指南 [`docs/05-quickstart-onboarding-and-polymarket.md`](docs/05-quickstart-onboarding-and-polymarket.md)、动态方法源 [`method-pack/manifest.json`](method-pack/manifest.json) 及接入技能 [`.agents/skills/forecast-onboarding/SKILL.md`](.agents/skills/forecast-onboarding/SKILL.md)
+- **社区共建书籍拆解与 PR 合入数据库**：实战指南 [`docs/07-contribute-a-book.md`](docs/07-contribute-a-book.md)、共建工具 [`toolkit/contribute_book.py`](toolkit/contribute_book.py) 及技能 [`.agents/skills/book-contributor/SKILL.md`](.agents/skills/book-contributor/SKILL.md)
 - **数据驱动的预测方法优化（MCP & Skill）**：[`docs/06-forecast-method-optimization.md`](docs/06-forecast-method-optimization.md)、MCP 服务 [`toolkit/forecast_mcp.py`](toolkit/forecast_mcp.py) 及优化技能 [`.agents/skills/forecast-optimizer/SKILL.md`](.agents/skills/forecast-optimizer/SKILL.md)
 
 ---
@@ -44,12 +45,15 @@
    - 若无上述 API Key，请利用你自身的联网搜索工具，**强制成对搜索每条预测的支持证据与反面证据**（优先官方统计局、央行、IEA/OECD/世行、财报等一手数据），将来源正文保存至 `my-forecasts/data/sources/`，计算真实 SHA-256 登记到 `my-forecasts/data/evidence.jsonl`。
 3. **三轴汇报，不静默篡改**：向用户分拆汇报 **事件轴、机制轴、时间轴** 的最新进展。未经用户确认，不要直接覆盖冻结承诺原文（`quote`）。
 
-### 任务 C：拆解新书、长篇报告或人物访谈中的预测
-1. 在 `cases/<slug>/` 初始化独立案例：`python3 toolkit/pipeline.py --case cases/<slug> init ...`
-2. **严守版权与隐私红线**：完整原书 TXT/PDF 必须放在仓库外或被忽略的 `cases/<slug>/input/` 目录，**严禁将完整原书、API 密钥或中间包含全文的 `txt_import` 分块计划提交进 Git**。
-3. 完成后必须通过以下两条门禁才算交付：
+### 任务 C：拆解新书、长篇报告或人物访谈并提交 PR 合入数据库
+1. **初始化并选择路径**：使用 `python3 toolkit/contribute_book.py init --case cases/<slug> ...` 初始化案例（详见 [`.agents/skills/book-contributor/SKILL.md`](.agents/skills/book-contributor/SKILL.md) 与 [`docs/07-contribute-a-book.md`](docs/07-contribute-a-book.md)）：
+   - **路径 A（自有 Agent 原生模式）**：`contribute_book.py chunk-txt` → Agent 逐块抽取 → `import-extractions` → `export-verify-tasks` → Agent 成对联网搜证与六维自检 → `apply-assessments`；
+   - **路径 B（自有 API 并发模式）**：`prepare_book.py txt --apply`（支持 `--api-base`）→ `contribute_book.py trim-contexts` → `verify_prediction.py --all-forecasts` → `contribute_book.py import-verify`。
+2. **严守版权与隐私红线**：完整原书 TXT/PDF 必须放在仓库外或被忽略的 `cases/<slug>/input/` 目录，**严禁将完整原书、未裁剪的长上下文、API 密钥或中间包含全文的 `txt_import` 分块计划提交进 Git**。
+3. **合入总表与门禁验收**：提交 PR 前必须同步数据库并通过全部门禁：
    ```bash
-   python3 toolkit/pipeline.py --case cases/<slug> check
+   python3 toolkit/contribute_book.py sync-database --case cases/<slug>
+   python3 toolkit/contribute_book.py pr-check --case cases/<slug>
    python3 -m unittest discover -s toolkit/tests -v
    ```
 
