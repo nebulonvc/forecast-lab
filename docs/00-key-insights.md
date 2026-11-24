@@ -210,7 +210,7 @@
 | ❌ 贝拉米《回顾》(1888) | 50 | 6.0% | 60.0% | −26.4 | 乌托邦社会制度构想 |
 | ❌ 怀特《阿基米德》(1927) | 20 | 0% | 60.0% | −20.9 | 以哲学偏好推断物理学走向 |
 
-> 任一作品的完整指标见 [`datasets/all_cases_summary.csv`](../datasets/all_cases_summary.csv)，重点参考 `同档超额严格胜率_pp` 与 `同档低错优势_pp` 两列。
+> 全部 132 部作品按综合超额（严格胜率超额、方向命中率超额、低错优势三者平均）从高到低的完整排名，见 **[同档基准排行榜](05-same-tier-ranking.md)**。原始指标见 [`datasets/all_cases_summary.csv`](../datasets/all_cases_summary.csv)。
 
 ### 3.4 同一作者的跨领域差异
 
