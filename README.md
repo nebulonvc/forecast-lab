@@ -403,6 +403,7 @@ python3 -m unittest discover -s toolkit/tests -v
 | **了解核心研究发现** | [docs/00-key-insights.md](docs/00-key-insights.md) |
 | **用自己的 Agent 或 API 拆书并提 PR 入库** | [docs/07-contribute-a-book.md](docs/07-contribute-a-book.md) |
 | **数据驱动的预测方法优化（MCP & Skill）** | [docs/06-forecast-method-optimization.md](docs/06-forecast-method-optimization.md) |
+| **半导体预测框架（主方法落地与逐步自检；无具体命题）** | [docs/09-semiconductor-forecast-framework.md](docs/09-semiconductor-forecast-framework.md) |
 | **复制给 AI Agent 的零代码接入协议** | [AGENT_SETUP.md](AGENT_SETUP.md) |
 | **零代码接入、事实核查与 Polymarket 回测** | [docs/05-quickstart-onboarding-and-polymarket.md](docs/05-quickstart-onboarding-and-polymarket.md) |
 | 理解研究方法与判定标准 | [docs/01-methodology-signal-and-noise.md](docs/01-methodology-signal-and-noise.md) |

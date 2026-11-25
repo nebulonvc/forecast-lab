@@ -14,6 +14,7 @@
 - **零代码智能体接入、动态方法包与 Polymarket 回测**：远程接入协议 [`AGENT_SETUP.md`](AGENT_SETUP.md)、实战指南 [`docs/05-quickstart-onboarding-and-polymarket.md`](docs/05-quickstart-onboarding-and-polymarket.md)、动态方法源 [`method-pack/manifest.json`](method-pack/manifest.json) 及接入技能 [`.agents/skills/forecast-onboarding/SKILL.md`](.agents/skills/forecast-onboarding/SKILL.md)
 - **社区共建书籍拆解与 PR 合入数据库**：实战指南 [`docs/07-contribute-a-book.md`](docs/07-contribute-a-book.md)、共建工具 [`toolkit/contribute_book.py`](toolkit/contribute_book.py) 及技能 [`.agents/skills/book-contributor/SKILL.md`](.agents/skills/book-contributor/SKILL.md)
 - **数据驱动的预测方法优化（MCP & Skill）**：[`docs/06-forecast-method-optimization.md`](docs/06-forecast-method-optimization.md)、MCP 服务 [`toolkit/forecast_mcp.py`](toolkit/forecast_mcp.py) 及优化技能 [`.agents/skills/forecast-optimizer/SKILL.md`](.agents/skills/forecast-optimizer/SKILL.md)
+- **半导体预测的落地规程（补充文档，不改引擎、不登记预测）**：[`docs/09-semiconductor-forecast-framework.md`](docs/09-semiconductor-forecast-framework.md)。具体预测须逐步执行并在报告中留下自检矩阵；用户未确认前不冻结入库
 
 ---
 
