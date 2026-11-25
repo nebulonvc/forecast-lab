@@ -287,8 +287,11 @@ for attempt in range(1, MAX_RETRIES + 1):
             log(f"Verify+Review shard receipt: {r}")
 
 final_vprog = run_cb("audit-progress", "--case", str(CASE_DIR))["verification"]
-if not final_vprog["ready"]:
-    raise RuntimeError(f"Verification incomplete after {MAX_RETRIES} attempts: missing={final_vprog['missing_task_ids']}")
+if not final_vprog.get("strict_v3_ready"):
+    raise RuntimeError(
+        f"Verification failed strict search-verifier-v3 check after {MAX_RETRIES} attempts: "
+        f"missing={final_vprog['missing_task_ids']}, strict_pending_batches={final_vprog.get('strict_pending_batches')}"
+    )
 
 # ============================================================================
 # Phase 4: Deterministic Aggregation, V3 Multi-Round Gate & PR Check

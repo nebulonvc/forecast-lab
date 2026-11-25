@@ -667,6 +667,65 @@ class ContributeBookTests(unittest.TestCase):
             self.assertEqual(res_v3["multi_round_traces_verified"], 1)
             self.assertEqual(res_v3["semantic_reviews_verified"], 1)
 
+            # 6e. Security & cheating edge cases: path traversal eid, coarse YYYY-MM after cutoff, and duplicate-URL cloning
+            bad_ev = case_dir / "output/bad_ev.jsonl"
+            bad_ev.write_text(
+                json.dumps({
+                    "id": "../escape",
+                    "url": "https://iea.org/ok",
+                    "date": "2025-01-01",
+                    "text": "合法长度的正文内容，用于测试路径穿越证据ID是否会被直接拒绝。" * 3,
+                }, ensure_ascii=False) + "\n",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "Invalid or unsafe evidence id"):
+                cb.apply_agent_assessments(case_dir, asm_path, evidence_raw_path=bad_ev)
+
+            bad_ev.write_text(
+                json.dumps({
+                    "id": "ev-future-month",
+                    "url": "https://iea.org/future",
+                    "date": "2026-12",
+                    "text": "合法长度的正文内容，但发表年月2026-12晚于cutoff 2026-11-24。" * 3,
+                }, ensure_ascii=False) + "\n",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "invalid or after cutoff"):
+                cb.apply_agent_assessments(case_dir, asm_path, evidence_raw_path=bad_ev)
+
+            cloned_url_ev = case_dir / "output/cloned_url_ev.jsonl"
+            cloned_url_ev.write_text(
+                json.dumps({
+                    "id": "ev-dup-1",
+                    "url": "https://iea.org/same-page",
+                    "date": "2026-04-10",
+                    "text": "国际能源署（IEA）官方统计数据显示：截至2025年底，全球重型卡车电动化渗透率达到3.8%，未达10%。" * 2,
+                }, ensure_ascii=False) + "\n"
+                + json.dumps({
+                    "id": "ev-dup-2",
+                    "url": "https://iea.org/same-page",
+                    "date": "2026-04-10",
+                    "text": "同一网页的第二段摘录：2025年中国新能源重卡销量占比已突破12%，但欧美市场较低。" * 2,
+                }, ensure_ascii=False) + "\n",
+                encoding="utf-8",
+            )
+            cloned_asm = case_dir / "output/cloned_asm.jsonl"
+            cloned_asm.write_text(
+                json.dumps({**decided_v3, "evidence_ids": ["ev-dup-1", "ev-dup-2"]}, ensure_ascii=False) + "\n",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "Lazy agent guard.*only 1 distinct URL"):
+                cb.apply_agent_assessments(
+                    case_dir, cloned_asm, evidence_raw_path=cloned_url_ev, require_dual_evidence=True
+                )
+            bad_ev.unlink()
+            cloned_url_ev.unlink()
+            cloned_asm.unlink()
+
+            # Verify audit_progress confirms strict_v3_ready == True on the clean v3 state
+            prog_v3 = cb.audit_progress(case_dir)
+            self.assertTrue(prog_v3["verification"]["strict_v3_ready"])
+
 
 if __name__ == "__main__":
     unittest.main()

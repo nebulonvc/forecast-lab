@@ -664,6 +664,9 @@ def _load_records_file_or_dir(path: Path) -> list[dict]:
     return [json.loads(line) for line in text.splitlines() if line.strip()]
 
 
+EVIDENCE_ID_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,120}$")
+
+
 def _register_raw_evidence(case_dir: Path, raw_records: list[dict], cutoff: str) -> int:
     ev_path = case_dir / "data/evidence.jsonl"
     existing = {e["id"]: e for e in _read_jsonl(ev_path)}
@@ -673,16 +676,22 @@ def _register_raw_evidence(case_dir: Path, raw_records: list[dict], cutoff: str)
         eid = rec.get("id")
         url = rec.get("url")
         text = rec.get("text") or rec.get("content") or ""
-        if not isinstance(eid, str) or not eid.strip():
-            raise ValueError("Evidence record missing id")
+        if not isinstance(eid, str) or not EVIDENCE_ID_RE.fullmatch(eid.strip()):
+            raise ValueError(f"Invalid or unsafe evidence id: {eid!r} (must match {EVIDENCE_ID_RE.pattern})")
+        eid = eid.strip()
         if not vp.public_url(url):
             raise ValueError(f"Evidence {eid} has invalid or non-public URL: {url}")
         if not isinstance(text, str) or not text.strip():
             raise ValueError(f"Evidence {eid} missing full archived text")
         pub_date = rec.get("date")
-        if isinstance(pub_date, str) and len(pub_date) >= 10 and pub_date[4:5] == "-" and pub_date[7:8] == "-":
-            if date.fromisoformat(pub_date[:10]) > cutoff_date:
-                raise ValueError(f"Evidence {eid} date {pub_date} is after cutoff {cutoff}")
+        if pub_date is not None:
+            if not isinstance(pub_date, str) or not pub_date.strip():
+                pub_date = None
+            else:
+                bounds = vp.publication_range(pub_date.strip())
+                if not bounds or date.fromisoformat(bounds["earliest"]) > cutoff_date:
+                    raise ValueError(f"Evidence {eid} date {pub_date!r} is invalid or after cutoff {cutoff}")
+                pub_date = bounds["value"]
         archive_rel = Path("data/sources") / f"{eid}.txt"
         archive_abs = case_dir / archive_rel
         archive_abs.parent.mkdir(parents=True, exist_ok=True)
@@ -762,12 +771,23 @@ def _validate_search_Verifier_v3_proposal(
                 f"Lazy agent guard: decided forecast {cid} must cite at least 2 independent evidence items "
                 f"(supporting + counter/context), got {len(eids)}"
             )
+        urls_seen: set[str] = set()
         for eid in eids:
             rec = raw_ev_by_id.get(eid)
-            if rec is not None and len((rec.get("text") or rec.get("content") or "").strip()) < 60:
+            if rec is None:
+                raise ValueError(f"Lazy agent guard: cited evidence {eid} for {cid} missing from archived evidence")
+            if len((rec.get("text") or rec.get("content") or "").strip()) < 60:
                 raise ValueError(
                     f"Lazy agent guard: evidence {eid} for {cid} has archived text < 60 chars (too shallow)"
                 )
+            u = (rec.get("url") or "").strip()
+            if u:
+                urls_seen.add(u)
+        if len(urls_seen) < 2:
+            raise ValueError(
+                f"Lazy agent guard: decided forecast {cid} cited {len(eids)} evidence IDs but only {len(urls_seen)} distinct URL(s); "
+                "must cite at least 2 distinct independent source URLs"
+            )
 
     # 2. Verbatim evidence_notes alignment & date bounds check (mirrors verify_prediction.inspect_assessment)
     if isinstance(notes, list) and notes:
@@ -1029,10 +1049,15 @@ def import_verify_run(case_dir: Path, search_run_dir: Path | None = None) -> dic
             if prior_id and prior_id in ev_map and ev_map[prior_id].get("verified"):
                 mapped_ids.append(prior_id)
                 continue
+            if not EVIDENCE_ID_RE.fullmatch(eid):
+                raise ValueError(f"Unsafe candidate evidence id: {eid!r}")
             arch_rel = cand.get("archive_path")
-            if not arch_rel or not (run_dir / arch_rel).is_file():
-                raise ValueError(f"Missing archived source body for {eid} at {arch_rel}")
-            raw_bytes = (run_dir / arch_rel).read_bytes()
+            if not arch_rel:
+                raise ValueError(f"Missing archived source body for {eid}")
+            arch_abs = (run_dir / arch_rel).resolve()
+            if not arch_abs.is_relative_to(run_dir) or not arch_abs.is_file():
+                raise ValueError(f"Invalid or missing archived source body for {eid} at {arch_rel}")
+            raw_bytes = arch_abs.read_bytes()
             if cand.get("archive_sha256") and _sha256_bytes(raw_bytes) != cand["archive_sha256"]:
                 raise ValueError(f"Archive SHA-256 mismatch for {eid}")
             dest_rel = Path("data/sources") / f"{eid}.txt"
@@ -1041,9 +1066,9 @@ def import_verify_run(case_dir: Path, search_run_dir: Path | None = None) -> dic
             dest_abs.write_bytes(raw_bytes)
             note = notes_map.get(eid) or {}
             pub_date = note.get("publication_date") or cand.get("published_date")
-            if isinstance(pub_date, str) and len(pub_date) >= 10 and pub_date[4:5] == "-" and pub_date[7:8] == "-":
-                if date.fromisoformat(pub_date[:10]) > date.fromisoformat(cfg["cutoff"]):
-                    pub_date = None
+            if pub_date is not None:
+                bounds = vp.publication_range(str(pub_date).strip())
+                pub_date = bounds["value"] if (bounds and bounds["earliest"] <= cfg["cutoff"]) else None
             ev_map[eid] = {
                 "id": eid,
                 "url": cand["url"],
@@ -1453,6 +1478,7 @@ def audit_progress(case_dir: Path) -> dict:
         cfg = _read_json(case_dir / "config.json")
         cutoff = cfg.get("cutoff", "9999-12-31")
         vtasks = {t["id"]: t for t in _read_jsonl(vtasks_path)}
+        claims_by_id = {c["id"]: c for c in _read_jsonl(case_dir / "data/claims.jsonl")}
         raw_ev_by_id: dict[str, dict] = {}
         if eprop_dir.is_dir():
             for r in _load_records_file_or_dir(eprop_dir):
@@ -1463,6 +1489,12 @@ def audit_progress(case_dir: Path) -> dict:
             for r in _load_records_file_or_dir(ev_raw_file):
                 if isinstance(r, dict) and isinstance(r.get("id"), str):
                     raw_ev_by_id[r["id"]] = r
+        for e in _read_jsonl(case_dir / "data/evidence.jsonl"):
+            eid = e["id"]
+            if eid not in raw_ev_by_id:
+                arch = case_dir / (e.get("local_archive") or "")
+                txt = arch.read_text(encoding="utf-8") if arch.is_file() else (e.get("excerpt") or "")
+                raw_ev_by_id[eid] = {**e, "text": txt}
 
         reviews_by_id: dict[str, dict] = {}
         if srev_dir.is_dir():
@@ -1480,27 +1512,52 @@ def audit_progress(case_dir: Path) -> dict:
         if asm_file.is_file():
             all_props.extend(_load_records_file_or_dir(asm_file))
 
-        for p in all_props:
-            if not isinstance(p, dict) or p.get("id") not in vtasks:
-                continue
-            cid = p["id"]
-            vdone.add(cid)
-            rev_item = reviews_by_id.get(cid) or (p.get("semantic_review") if isinstance(p.get("semantic_review"), dict) else None)
-            try:
-                _validate_search_Verifier_v3_proposal(
-                    p,
-                    vtasks[cid],
-                    raw_ev_by_id,
-                    cutoff,
-                    require_dual_evidence=True,
-                    require_adaptive_rounds=True,
-                    review_item=rev_item,
-                )
-                vcompliant.add(cid)
-                if rev_item is not None:
-                    vreviewed.add(cid)
-            except ValueError:
-                pass
+        # Build temporary verified evidence map so pl.validate_assessment checks structural fields too
+        cutoff_date = date.fromisoformat(cutoff)
+        temp_ev_map: dict[str, dict] = {}
+        for eid, rec in raw_ev_by_id.items():
+            url = rec.get("url")
+            txt = (rec.get("text") or rec.get("content") or "").strip()
+            pdate = rec.get("date")
+            date_ok = True
+            norm_date = None
+            if pdate is not None and str(pdate).strip():
+                b = vp.publication_range(str(pdate).strip())
+                if not b or date.fromisoformat(b["earliest"]) > cutoff_date:
+                    date_ok = False
+                else:
+                    norm_date = b["value"]
+            if EVIDENCE_ID_RE.fullmatch(eid) and vp.public_url(url) and txt and date_ok:
+                temp_ev_map[eid] = {"id": eid, "url": url, "date": norm_date, "verified": True}
+
+        old_pl_root = pl.ROOT
+        try:
+            pl.ROOT = case_dir
+            for p in all_props:
+                if not isinstance(p, dict) or p.get("id") not in vtasks:
+                    continue
+                cid = p["id"]
+                vdone.add(cid)
+                rev_item = reviews_by_id.get(cid) or (p.get("semantic_review") if isinstance(p.get("semantic_review"), dict) else None)
+                claim_obj = {**vtasks[cid], **(claims_by_id.get(cid) or {})}
+                try:
+                    pl.validate_assessment(p, claim_obj, temp_ev_map)
+                    _validate_search_Verifier_v3_proposal(
+                        p,
+                        claim_obj,
+                        raw_ev_by_id,
+                        cutoff,
+                        require_dual_evidence=True,
+                        require_adaptive_rounds=True,
+                        review_item=rev_item,
+                    )
+                    vcompliant.add(cid)
+                    if rev_item is not None:
+                        vreviewed.add(cid)
+                except ValueError:
+                    pass
+        finally:
+            pl.ROOT = old_pl_root
 
         vmissing = sorted(set(vtasks) - vdone)
         vbatches = (_read_json(vmanifest_path).get("batches") or []) if vmanifest_path.is_file() else []
