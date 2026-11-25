@@ -744,6 +744,16 @@ def _validate_search_Verifier_v3_proposal(
     eids = prop.get("evidence_ids") or []
     notes = prop.get("evidence_notes")
     round_history = prop.get("round_history")
+    pub_year = (claim.get("publication_year_proxy") or (claim.get("extraction_v2") or {}).get("publication_year_proxy"))
+
+    # 0. Structural & non-forecast correct block check (mirrors verify_prediction.validate_stage + inspect_assessment)
+    if verdict == "正确" and pb.correct_verdict_block(claim.get("quote") or "", claim.get("extraction_v2"), pub_year):
+        raise ValueError(f"Lazy agent guard: nonforecast or pre-publication statement in {cid} cannot be scored '正确'")
+    if len(eids) != len(set(eids)):
+        raise ValueError(f"Lazy agent guard: duplicate_evidence_reference in {cid}: {eids}")
+    obs_end = prop.get("observation_end")
+    if obs_end is not None and (vp.iso_day(obs_end) != obs_end or obs_end > cutoff):
+        raise ValueError(f"Lazy agent guard: observation_after_cutoff_or_invalid in {cid}: {obs_end} > {cutoff}")
 
     # 1. Dual-evidence & archive depth check for decided forecasts
     if require_dual_evidence and prop.get("inclusion") == "forecast" and verdict != "暂无法判断":
@@ -759,7 +769,7 @@ def _validate_search_Verifier_v3_proposal(
                     f"Lazy agent guard: evidence {eid} for {cid} has archived text < 60 chars (too shallow)"
                 )
 
-    # 2. Verbatim evidence_notes alignment check (mirrors verify_prediction.inspect_assessment)
+    # 2. Verbatim evidence_notes alignment & date bounds check (mirrors verify_prediction.inspect_assessment)
     if isinstance(notes, list) and notes:
         notes_by_eid = {}
         for note in notes:
@@ -768,6 +778,15 @@ def _validate_search_Verifier_v3_proposal(
             neid = note["evidence_id"]
             if note.get("relation") not in {"support", "counter", "boundary", "background"}:
                 raise ValueError(f"Invalid evidence_note relation '{note.get('relation')}' for {cid}")
+            if not isinstance(note.get("limitation"), str) or not note.get("limitation").strip():
+                raise ValueError(f"Missing limitation in evidence_note {neid} for {cid}")
+            n_obs = note.get("observation_end")
+            if n_obs is not None and (vp.iso_day(n_obs) != n_obs or n_obs > cutoff):
+                raise ValueError(f"Evidence note {neid} observation_end {n_obs} is invalid or after cutoff {cutoff}")
+            n_pub = note.get("publication_date")
+            n_bounds = vp.publication_range(n_pub)
+            if n_pub is not None and (not n_bounds or n_bounds["value"] != n_pub or n_bounds["earliest"] > cutoff):
+                raise ValueError(f"Evidence note {neid} publication_date {n_pub} is invalid or after cutoff {cutoff}")
             rec = raw_ev_by_id.get(neid)
             if rec is not None:
                 src_text = rec.get("text") or rec.get("content") or ""
@@ -1302,13 +1321,24 @@ def pr_check(case_dir: Path, *, repo_root: Path = REPO_ROOT) -> dict:
         raise ValueError("output/report.md, claims.csv, or summary.json is out of sync; commit freshly generated reports")
 
     # 2. Copyright & context length guard
+    ignored_output_subdirs = {
+        "txt_import",
+        "search_verify",
+        "parallel_run",
+        "verify_batches",
+        "verify_proposals",
+        "evidence_proposals",
+        "semantic_reviews",
+        "expansions",
+        "review",
+    }
     for path in case_dir.rglob("*"):
         if not path.is_file():
             continue
         rel = path.relative_to(case_dir)
         if rel.parts[0] in IGNORED_SUBDIRS_FOR_BOOK_SCAN:
             continue
-        if len(rel.parts) >= 2 and rel.parts[0] == "output" and rel.parts[1] in {"txt_import", "search_verify", "parallel_run"}:
+        if len(rel.parts) >= 2 and rel.parts[0] == "output" and rel.parts[1] in ignored_output_subdirs:
             continue
         if len(rel.parts) >= 2 and rel.parts[0] == "data" and rel.parts[1] == "sources":
             continue
@@ -1330,7 +1360,7 @@ def pr_check(case_dir: Path, *, repo_root: Path = REPO_ROOT) -> dict:
         if not path.is_file():
             continue
         rel = path.relative_to(case_dir)
-        if rel.parts[0] == "input" or (len(rel.parts) >= 2 and rel.parts[0] == "output" and rel.parts[1] in {"txt_import", "search_verify", "parallel_run"}):
+        if rel.parts[0] == "input" or (len(rel.parts) >= 2 and rel.parts[0] == "output" and rel.parts[1] in ignored_output_subdirs):
             continue
         if path.suffix.lower() not in {".json", ".jsonl", ".md", ".csv", ".txt"}:
             continue
