@@ -279,6 +279,13 @@ class ForecastOptimizerTests(unittest.TestCase):
         self.assertEqual(ent_res["assigned_friction_layer"]["layer_id"], "layer_3_enterprise_workflow")
         self.assertEqual(ent_res["differentiation_verdict_code"], "extreme_overreach")
 
+        # Historical blind backtest on pre-2022 decided tech/AI predictions confirms >= 3x higher error rate on overreach claims
+        bt = self.engine.backtest_historical_tech(max_pub_year=2021)
+        self.assertGreater(bt["total_decided_tech_forecasts"], 1200)
+        grounded_err = bt["by_ex_ante_speed_verdict"]["historically_grounded"]["error_rate"]
+        overreach_err = bt["by_ex_ante_speed_verdict"]["extreme_overreach"]["error_rate"]
+        self.assertGreater(overreach_err, grounded_err * 3.0)
+
 
 if __name__ == "__main__":
     unittest.main()

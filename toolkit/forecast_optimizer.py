@@ -1973,6 +1973,54 @@ class ForecastOptimizerEngine:
             "matched_precedents": precedents,
         }
 
+    def backtest_historical_tech(self, max_pub_year: int = 2021) -> dict[str, Any]:
+        """Run blind ex-ante backtest of the 4-layer Bass S-curve differentiation test across
+        all decided technology & AI predictions published on or before max_pub_year.
+        """
+        forecasts, _, _ = load_training_corpus(self.repo_root)
+        tech_decided = [
+            r for r in forecasts
+            if r["verdict"] != "暂无法判断"
+            and int(r["pub_year"]) <= max_pub_year
+            and r["domain"] in ("科技、商业与产业颠覆", "AI与奇点前沿")
+        ]
+        by_speed: dict[str, collections.Counter[str]] = collections.defaultdict(collections.Counter)
+        by_layer: dict[str, collections.Counter[str]] = collections.defaultdict(collections.Counter)
+
+        for r in tech_decided:
+            txt_all = f"{r['time_text']} {r['quote']} {r['claim']}"
+            sp = parse_explicit_span(txt_all, int(r["pub_year"]))
+            eff_span = sp if sp is not None else float(r["window_years"])
+            td = self.evaluate_tech_differentiation(
+                statement=f"{r['quote']} {r['claim']}",
+                domain=r["domain"],
+                horizon_years=eff_span,
+            )
+            by_speed[td["differentiation_verdict_code"]][r["verdict"]] += 1
+            by_layer[td["assigned_friction_layer"]["layer_id"]][r["verdict"]] += 1
+
+        def summarize(grp: dict[str, collections.Counter[str]]) -> dict[str, dict[str, Any]]:
+            out = {}
+            for k, cnt in sorted(grp.items()):
+                n = sum(cnt.values())
+                if n == 0:
+                    continue
+                out[k] = {
+                    "decided_n": n,
+                    "strict_win_rate": round(cnt["正确"] / n, 4),
+                    "directional_hit_rate": round((cnt["正确"] + cnt["趋势符合"]) / n, 4),
+                    "partial_rate": round(cnt["部分符合"] / n, 4),
+                    "error_rate": round(cnt["错误"] / n, 4),
+                }
+            return out
+
+        return {
+            "max_publication_year": max_pub_year,
+            "total_decided_tech_forecasts": len(tech_decided),
+            "by_ex_ante_speed_verdict": summarize(by_speed),
+            "by_friction_layer": summarize(by_layer),
+        }
+
     def bayesian_update(
         self,
         *,
@@ -2473,6 +2521,9 @@ def main(argv: list[str] | None = None) -> int:
     p_tech.add_argument("--target-share", type=float, default=None, help="Target penetration in (0, 1)")
     p_tech.add_argument("--stock", action="store_true", help="Force installed-stock / headcount replacement mode")
 
+    p_bt = sub.add_parser("backtest-tech", help="Run blind ex-ante backtest on resolved historical tech/AI forecasts")
+    p_bt.add_argument("--max-pub-year", type=int, default=2021)
+
     args = parser.parse_args(argv)
 
     if args.cmd == "train":
@@ -2548,6 +2599,11 @@ def main(argv: list[str] | None = None) -> int:
             target_penetration=args.target_share,
             is_stock_scope=True if args.stock else None,
         )
+        print(json.dumps(res, ensure_ascii=False, indent=2))
+        return 0
+
+    if args.cmd == "backtest-tech":
+        res = engine.backtest_historical_tech(max_pub_year=args.max_pub_year)
         print(json.dumps(res, ensure_ascii=False, indent=2))
         return 0
 
