@@ -74,7 +74,11 @@ flowchart TB
    - 每个 Worker Agent 拥有全新的独立上下文，只读取自己负责的 1 个小分片（约 1.2 万字），将结果直接落盘到 `chunk_proposals/<chunk_id>.json` 或 `verify_proposals/<batch_id>.jsonl`，并通过 `finish` 仅返回 `<200` 字节的计数回执。无论书有多厚，主会话与子会话 Context 始终恒定在安全水位。
 3. **怎么保证绝不偷懒（Zero-Trust Proof-of-Reading & Dual-Evidence Gates）**：
    - **块尾锚点阅读证明（`body_sha256_12` + `tail_anchor`）**：Worker 为每个 chunk 提交 JSON 时（即使 `"predictions": []`），必须填入该块正文 SHA-256 前 12 位以及**从该 chunk `body` 后 45% 区域逐字复制的一段 `>=8` 字连续原文（`tail_anchor`）**。若 Worker 没读到块尾、只读了开头，或漏写了任何一个 chunk，`import-extractions --require-proof` 与 `audit-progress` 会直接识别并由工作流自动重派该分片。
-   - **双向证据硬门禁（`--require-dual-evidence`）**：每条已判定预测（正确/趋势符合/部分符合/错误）必须绑定 `>=2` 条独立公开来源且每条归档正文 `>=60` 字（成对覆盖支持证据与反面/瓶颈证据），单边搜证会被直接拦截。
+   - **与 `verify_prediction.py` (`search-verifier-v3`) 100% 同构的多轮自适应搜证与独立六维复核**：
+     - **多轮自适应变策补搜（`--require-adaptive-rounds`）**：初轮（`kind="initial"`）必须先锁定 `research_scope` 并成对执行 `support` + `counter` 检索；若初轮后结论仍为 `"暂无法判断"`（且不是终点在未来的 `basis="future"`），**严禁单轮直接交卷**！必须针对点名的决定性缺口（`gap_before`）执行至少 2 轮（最多 3 轮）`kind="adaptive"` 变策补搜（每轮声明全新的 `strategy_change`——如切换中英文、改查统计局/IEA/OECD/行业协会代理指标、调整时间窗，并使用不重复的检索词），完整记录在 `round_history` 中。
+     - **证据原句逐字对齐（`evidence_notes`）**：每条被引用的 `evidence_id` 必须在 `evidence_notes` 中提供 `relation`（`support`/`counter`/`boundary`/`background`）与 `quote`（由 `semantic_review.align_quote` 机械校验必须逐字存在于归档证据正文中）。
+     - **独立六维语义复核（`--require-semantic-review`）**：每个核验分片由独立的 Reviewer Agent（不重新搜证）对 `object_match`、`condition_logic`、`time_alignment`、`evidence_support`、`counterevidence`、`verdict_logic` 六项逐一打标（`pass`/`fail`/`unknown`），通过 `semantic_review.validate_review` 校验；若返回 `revise` 则触发 1 次修订与二次复核。
+     - **双向证据硬门禁（`--require-dual-evidence`）**：每条已判定预测（正确/趋势符合/部分符合/错误）必须绑定 `>=2` 条独立公开来源且每条归档正文 `>=60` 字（成对覆盖支持证据与反面/瓶颈证据），单边搜证会被直接拦截。
 
 ### 方式 1：Antigravity 一键并行工作流（`run_workflow`）
 在 Antigravity 中初始化案例后，直接让 Agent 调用 `run_workflow` 运行 [`toolkit/antigravity_book_workflow.py`](../toolkit/antigravity_book_workflow.py)：
@@ -157,13 +161,16 @@ python3 toolkit/contribute_book.py export-verify-tasks --case cases/author-book-
 - `evidence_raw.jsonl`（或 `output/evidence_proposals/*.jsonl`）：每条含 `{"id": "ev-001", "url": "https://...", "date": "2024-05-01", "coverage": "2010-2024", "excerpt": "关键原句", "limitation": "口径限制", "text": "抓取的公开页面正文（>=60字）"}`；
 - `assessments.jsonl`（或 `output/verify_proposals/*.jsonl`）：按 `METHOD.md` 五类互斥结论与六维语义复核标准写出评估记录。
 
-执行一键证据 SHA-256 归档、双向证据完备性校验与原子落盘：
+执行一键证据 SHA-256 归档、多轮自适应搜证记录校验、独立六维语义复核校验与原子落盘：
 ```bash
 python3 toolkit/contribute_book.py apply-assessments \
   --case cases/author-book-v5 \
   --assessments cases/author-book-v5/output/verify_proposals \
   --evidence-raw cases/author-book-v5/output/evidence_proposals \
-  --require-dual-evidence
+  --semantic-reviews cases/author-book-v5/output/semantic_reviews \
+  --require-dual-evidence \
+  --require-adaptive-rounds \
+  --require-semantic-review
 ```
 
 ---
