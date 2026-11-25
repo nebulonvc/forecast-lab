@@ -21,9 +21,11 @@ TOOLKIT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = TOOLKIT_DIR.parent
 sys.path.insert(0, str(TOOLKIT_DIR))
 
+from decision_policy import DECISION_CONTRACT  # noqa: E402
 import pipeline as pl  # noqa: E402
 import prepare_book as pb  # noqa: E402
 import run_parallel as rp  # noqa: E402
+import semantic_review as sr  # noqa: E402
 import verify_prediction as vp  # noqa: E402
 
 DOMAINS = (
@@ -547,6 +549,20 @@ def import_agent_extractions(
     }
 
 
+def _build_verify_prompt_v3() -> str:
+    return (
+        "# Forecast Lab: search-verifier-v3 多轮双向搜证 + 自适应变策补搜 + 独立六维语义复核规范\n\n"
+        "## 一、检索规划与多轮自适应变策规则 (PLAN)\n"
+        f"{vp.PLAN}\n\n"
+        "## 二、初判评估、逐证据原句绑定与决定性缺口规则 (ASSESS)\n"
+        f"{vp.ASSESS}\n\n"
+        "## 三、独立六维语义复核规则 (SEMANTIC REVIEW)\n"
+        f"{sr.REVIEW_PROMPT}\n\n"
+        "## 四、唯一一次修订规则 (REVISION)\n"
+        f"{sr.REVISION_PROMPT}\n"
+    )
+
+
 def export_verify_tasks(case_dir: Path, output_path: Path | None = None, *, batch_size: int = 4) -> dict:
     if batch_size < 1:
         raise ValueError("batch_size must be >= 1")
@@ -567,6 +583,7 @@ def export_verify_tasks(case_dir: Path, output_path: Path | None = None, *, batc
             "publication_year_proxy": cfg.get("publication_year_proxy"),
             "cutoff": cfg["cutoff"],
             "quote": c.get("quote", ""),
+            "context": c.get("context", ""),
             "expanded_claim": ext.get("expanded_claim") or c.get("claim", ""),
             "time_text": c.get("time_text", ""),
             "horizon": ext.get("horizon", ""),
@@ -577,6 +594,9 @@ def export_verify_tasks(case_dir: Path, output_path: Path | None = None, *, batc
         })
     out = output_path or (case_dir / "output/verify_tasks.jsonl")
     _save_jsonl(out, tasks)
+    sverify_dir = case_dir / "output/search_verify"
+    sverify_dir.mkdir(parents=True, exist_ok=True)
+    (sverify_dir / "verify_prompt_v3.txt").write_text(_build_verify_prompt_v3(), encoding="utf-8")
 
     vbatches_dir = case_dir / "output/verify_batches"
     if vbatches_dir.exists():
@@ -585,6 +605,7 @@ def export_verify_tasks(case_dir: Path, output_path: Path | None = None, *, batc
     vbatches_dir.mkdir(parents=True, exist_ok=True)
     (case_dir / "output/verify_proposals").mkdir(parents=True, exist_ok=True)
     (case_dir / "output/evidence_proposals").mkdir(parents=True, exist_ok=True)
+    (case_dir / "output/semantic_reviews").mkdir(parents=True, exist_ok=True)
 
     batch_meta: list[dict] = []
     for idx in range(0, len(tasks), batch_size):
@@ -599,6 +620,9 @@ def export_verify_tasks(case_dir: Path, output_path: Path | None = None, *, batc
             "count": len(slice_tasks),
         })
     vmanifest = {
+        "version": vp.VERSION,
+        "adaptive_rounds_limit": vp.ADAPTIVE_ROUNDS,
+        "adaptive_searches_per_round": vp.ADAPTIVE_SEARCHES,
         "tasks": len(tasks),
         "total_claims": len(rows),
         "batch_size": batch_size,
@@ -640,6 +664,9 @@ def _load_records_file_or_dir(path: Path) -> list[dict]:
     return [json.loads(line) for line in text.splitlines() if line.strip()]
 
 
+EVIDENCE_ID_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,120}$")
+
+
 def _register_raw_evidence(case_dir: Path, raw_records: list[dict], cutoff: str) -> int:
     ev_path = case_dir / "data/evidence.jsonl"
     existing = {e["id"]: e for e in _read_jsonl(ev_path)}
@@ -649,16 +676,22 @@ def _register_raw_evidence(case_dir: Path, raw_records: list[dict], cutoff: str)
         eid = rec.get("id")
         url = rec.get("url")
         text = rec.get("text") or rec.get("content") or ""
-        if not isinstance(eid, str) or not eid.strip():
-            raise ValueError("Evidence record missing id")
+        if not isinstance(eid, str) or not EVIDENCE_ID_RE.fullmatch(eid.strip()):
+            raise ValueError(f"Invalid or unsafe evidence id: {eid!r} (must match {EVIDENCE_ID_RE.pattern})")
+        eid = eid.strip()
         if not vp.public_url(url):
             raise ValueError(f"Evidence {eid} has invalid or non-public URL: {url}")
         if not isinstance(text, str) or not text.strip():
             raise ValueError(f"Evidence {eid} missing full archived text")
         pub_date = rec.get("date")
-        if isinstance(pub_date, str) and len(pub_date) >= 10 and pub_date[4:5] == "-" and pub_date[7:8] == "-":
-            if date.fromisoformat(pub_date[:10]) > cutoff_date:
-                raise ValueError(f"Evidence {eid} date {pub_date} is after cutoff {cutoff}")
+        if pub_date is not None:
+            if not isinstance(pub_date, str) or not pub_date.strip():
+                pub_date = None
+            else:
+                bounds = vp.publication_range(pub_date.strip())
+                if not bounds or date.fromisoformat(bounds["earliest"]) > cutoff_date:
+                    raise ValueError(f"Evidence {eid} date {pub_date!r} is invalid or after cutoff {cutoff}")
+                pub_date = bounds["value"]
         archive_rel = Path("data/sources") / f"{eid}.txt"
         archive_abs = case_dir / archive_rel
         archive_abs.parent.mkdir(parents=True, exist_ok=True)
@@ -704,12 +737,207 @@ def _run_pipeline(case_dir: Path, *args: str) -> None:
     pl.main(["--case", str(case_dir), *args])
 
 
+def _validate_search_Verifier_v3_proposal(
+    prop: dict,
+    claim: dict,
+    raw_ev_by_id: dict[str, dict],
+    cutoff: str,
+    *,
+    require_dual_evidence: bool = False,
+    require_adaptive_rounds: bool = False,
+    review_item: dict | None = None,
+) -> dict:
+    """Validate an agent verification proposal against search-verifier-v3 multi-round & semantic-review rules."""
+    cid = claim["id"]
+    verdict = prop.get("verdict")
+    eids = prop.get("evidence_ids") or []
+    notes = prop.get("evidence_notes")
+    round_history = prop.get("round_history")
+    pub_year = (claim.get("publication_year_proxy") or (claim.get("extraction_v2") or {}).get("publication_year_proxy"))
+
+    # 0. Structural & non-forecast correct block check (mirrors verify_prediction.validate_stage + inspect_assessment)
+    if verdict == "正确" and pb.correct_verdict_block(claim.get("quote") or "", claim.get("extraction_v2"), pub_year):
+        raise ValueError(f"Lazy agent guard: nonforecast or pre-publication statement in {cid} cannot be scored '正确'")
+    if len(eids) != len(set(eids)):
+        raise ValueError(f"Lazy agent guard: duplicate_evidence_reference in {cid}: {eids}")
+    obs_end = prop.get("observation_end")
+    if obs_end is not None and (vp.iso_day(obs_end) != obs_end or obs_end > cutoff):
+        raise ValueError(f"Lazy agent guard: observation_after_cutoff_or_invalid in {cid}: {obs_end} > {cutoff}")
+
+    # 1. Dual-evidence & archive depth check for decided forecasts
+    if require_dual_evidence and prop.get("inclusion") == "forecast" and verdict != "暂无法判断":
+        if len(eids) < 2:
+            raise ValueError(
+                f"Lazy agent guard: decided forecast {cid} must cite at least 2 independent evidence items "
+                f"(supporting + counter/context), got {len(eids)}"
+            )
+        urls_seen: set[str] = set()
+        for eid in eids:
+            rec = raw_ev_by_id.get(eid)
+            if rec is None:
+                raise ValueError(f"Lazy agent guard: cited evidence {eid} for {cid} missing from archived evidence")
+            if len((rec.get("text") or rec.get("content") or "").strip()) < 60:
+                raise ValueError(
+                    f"Lazy agent guard: evidence {eid} for {cid} has archived text < 60 chars (too shallow)"
+                )
+            u = (rec.get("url") or "").strip()
+            if u:
+                urls_seen.add(u)
+        if len(urls_seen) < 2:
+            raise ValueError(
+                f"Lazy agent guard: decided forecast {cid} cited {len(eids)} evidence IDs but only {len(urls_seen)} distinct URL(s); "
+                "must cite at least 2 distinct independent source URLs"
+            )
+
+    # 2. Verbatim evidence_notes alignment & date bounds check (mirrors verify_prediction.inspect_assessment)
+    if isinstance(notes, list) and notes:
+        notes_by_eid = {}
+        for note in notes:
+            if not isinstance(note, dict) or not isinstance(note.get("evidence_id"), str):
+                raise ValueError(f"Invalid evidence_note in {cid}")
+            neid = note["evidence_id"]
+            if note.get("relation") not in {"support", "counter", "boundary", "background"}:
+                raise ValueError(f"Invalid evidence_note relation '{note.get('relation')}' for {cid}")
+            if not isinstance(note.get("limitation"), str) or not note.get("limitation").strip():
+                raise ValueError(f"Missing limitation in evidence_note {neid} for {cid}")
+            n_obs = note.get("observation_end")
+            if n_obs is not None and (vp.iso_day(n_obs) != n_obs or n_obs > cutoff):
+                raise ValueError(f"Evidence note {neid} observation_end {n_obs} is invalid or after cutoff {cutoff}")
+            n_pub = note.get("publication_date")
+            n_bounds = vp.publication_range(n_pub)
+            if n_pub is not None and (not n_bounds or n_bounds["value"] != n_pub or n_bounds["earliest"] > cutoff):
+                raise ValueError(f"Evidence note {neid} publication_date {n_pub} is invalid or after cutoff {cutoff}")
+            rec = raw_ev_by_id.get(neid)
+            if rec is not None:
+                src_text = rec.get("text") or rec.get("content") or ""
+                nquote = (note.get("quote") or "").strip()
+                if not nquote:
+                    raise ValueError(f"Empty quote in evidence_note {neid} for {cid}")
+                if nquote not in src_text:
+                    try:
+                        note["quote"] = sr.align_quote(nquote, src_text)
+                    except ValueError as exc:
+                        raise ValueError(
+                            f"Lazy agent guard: evidence_note quote for {neid} in {cid} not found in archived source text"
+                        ) from exc
+            notes_by_eid[neid] = note
+        if require_adaptive_rounds and any(eid not in notes_by_eid for eid in eids):
+            raise ValueError(f"Lazy agent guard: {cid} missing evidence_notes entry for cited evidence_ids")
+    elif require_adaptive_rounds and eids:
+        raise ValueError(f"Lazy agent guard: {cid} must provide evidence_notes with verbatim quotes for cited evidence_ids")
+
+    # 3. Multi-round initial + adaptive search check (mirrors verify_prediction.py search-verifier-v3)
+    adaptive_count = 0
+    if isinstance(round_history, list) and round_history:
+        seen_q_norms: set[str] = set()
+        seen_strategies: set[str] = set()
+        initial_rounds = [r for r in round_history if isinstance(r, dict) and r.get("kind") == "initial"]
+        adaptive_rounds = [r for r in round_history if isinstance(r, dict) and r.get("kind") == "adaptive"]
+        adaptive_count = len(adaptive_rounds)
+
+        if not initial_rounds:
+            raise ValueError(f"Multi-round guard: {cid} round_history must start with at least 1 initial round")
+        first_queries = initial_rounds[0].get("queries") or []
+        first_roles = {q.get("role") for q in first_queries if isinstance(q, dict)}
+        if first_roles != {"support", "counter"}:
+            raise ValueError(
+                f"Multi-round guard: {cid} initial round 1 must include both 'support' and 'counter' queries"
+            )
+        for r in initial_rounds:
+            for q in (r.get("queries") or []):
+                if isinstance(q, dict) and isinstance(q.get("query"), str) and q["query"].strip():
+                    seen_q_norms.add(vp.normalize_query(q["query"]))
+
+        if adaptive_count > vp.ADAPTIVE_ROUNDS:
+            raise ValueError(f"Multi-round guard: {cid} exceeded ADAPTIVE_ROUNDS={vp.ADAPTIVE_ROUNDS}")
+
+        for idx, ar in enumerate(adaptive_rounds, start=1):
+            gap_before = (ar.get("gap_before") or "").strip()
+            strat_change = (ar.get("strategy_change") or "").strip()
+            if not gap_before:
+                raise ValueError(f"Multi-round guard: {cid} adaptive round {idx} missing gap_before (decisive_gap)")
+            if not strat_change:
+                raise ValueError(f"Multi-round guard: {cid} adaptive round {idx} missing strategy_change")
+            if strat_change in seen_strategies:
+                raise ValueError(f"Multi-round guard: {cid} adaptive round {idx} repeated strategy_change")
+            seen_strategies.add(strat_change)
+
+            aqueries = ar.get("queries") or []
+            if not aqueries:
+                if not ar.get("stopped"):
+                    raise ValueError(
+                        f"Multi-round guard: {cid} adaptive round {idx} has empty queries without stopped reason"
+                    )
+                continue
+            if len(aqueries) > vp.ADAPTIVE_SEARCHES:
+                raise ValueError(f"Multi-round guard: {cid} adaptive round {idx} > {vp.ADAPTIVE_SEARCHES} queries")
+            for q in aqueries:
+                if not isinstance(q, dict) or q.get("role") not in {"support", "counter"}:
+                    raise ValueError(f"Multi-round guard: {cid} adaptive query missing valid role")
+                qtext = (q.get("query") or "").strip()
+                qstrat = (q.get("strategy") or "").strip()
+                if not qtext or not qstrat:
+                    raise ValueError(f"Multi-round guard: {cid} adaptive query must specify both query and strategy")
+                qnorm = vp.normalize_query(qtext)
+                if qnorm in seen_q_norms:
+                    raise ValueError(
+                        f"Multi-round guard: {cid} adaptive round {idx} repeated prior query '{qtext}'"
+                    )
+                seen_q_norms.add(qnorm)
+    elif require_adaptive_rounds and prop.get("inclusion") == "forecast":
+        raise ValueError(f"Multi-round guard: forecast {cid} missing round_history trace")
+
+    # If verdict is still '暂无法判断', enforce specific remaining_gap AND multi-round adaptive search
+    if prop.get("inclusion") == "forecast" and verdict == "暂无法判断":
+        rem_gap = (prop.get("remaining_gap") or "").strip()
+        if require_adaptive_rounds and not rem_gap:
+            raise ValueError(f"Multi-round guard: unresolved forecast {cid} must specify a concrete remaining_gap")
+        if require_adaptive_rounds and prop.get("basis") != "future":
+            # Must have executed at least 2 adaptive rounds (or 1+ adaptive round with explicit stopped reason)
+            has_stopped = any(
+                isinstance(r, dict) and r.get("kind") == "adaptive" and bool(r.get("stopped"))
+                for r in (round_history or [])
+            )
+            if adaptive_count < 2 and not (adaptive_count >= 1 and has_stopped):
+                raise ValueError(
+                    f"Multi-round guard: unresolved forecast {cid} (verdict='暂无法判断', basis='{prop.get('basis')}') "
+                    f"only ran {adaptive_count} adaptive round(s). Must run at least 2 adaptive rounds with new "
+                    f"strategy_change & non-duplicate queries (up to {vp.ADAPTIVE_ROUNDS} adaptive rounds) before concluding '暂无法判断'."
+                )
+
+    # 4. Independent 6-check semantic review validation (mirrors semantic_review.validate_review)
+    rev_validated = False
+    if review_item is not None:
+        source_texts = {
+            eid: (raw_ev_by_id[eid].get("text") or raw_ev_by_id[eid].get("content") or "")
+            for eid in eids
+            if eid in raw_ev_by_id
+        }
+        orig_text = (claim.get("quote") or "") + "\n" + (claim.get("context") or "")
+        prop_text = "\n".join(str(prop.get(k) or "") for k in ("scope", "reason", "limitation", "observation_end"))
+        validated_rev = sr.validate_review(review_item, cid, source_texts, orig_text, prop_text)
+        if validated_rev["decision"] == "revise":
+            raise ValueError(
+                f"Semantic review guard: {cid} has unaddressed review decision='revise'; run revision + round-2 review"
+            )
+        if validated_rev["decision"] == "unresolved" and verdict != "暂无法判断":
+            raise ValueError(
+                f"Semantic review guard: {cid} reviewer decision='unresolved' but assessment verdict='{verdict}'"
+            )
+        rev_validated = True
+
+    return {"adaptive_rounds": adaptive_count, "semantic_review_verified": rev_validated}
+
+
 def apply_agent_assessments(
     case_dir: Path,
     assessments_path: Path,
     *,
     evidence_raw_path: Path | None = None,
+    semantic_reviews_path: Path | None = None,
     require_dual_evidence: bool = False,
+    require_adaptive_rounds: bool = False,
+    require_semantic_review: bool = False,
 ) -> dict:
     case_dir = case_dir.resolve()
     cfg = _read_json(case_dir / "config.json")
@@ -722,28 +950,48 @@ def apply_agent_assessments(
                 raw_ev_by_id[r["id"]] = r
         ev_added = _register_raw_evidence(case_dir, raw_ev, cfg["cutoff"])
 
+    for e in _read_jsonl(case_dir / "data/evidence.jsonl"):
+        eid = e["id"]
+        if eid not in raw_ev_by_id:
+            arch = case_dir / (e.get("local_archive") or "")
+            txt = arch.read_text(encoding="utf-8") if arch.is_file() else (e.get("excerpt") or "")
+            raw_ev_by_id[eid] = {**e, "text": txt}
+
+    reviews_by_id: dict[str, dict] = {}
+    rev_path = semantic_reviews_path or (case_dir / "output/semantic_reviews")
+    if rev_path and rev_path.exists():
+        for rev in _load_records_file_or_dir(rev_path):
+            if isinstance(rev, dict) and isinstance(rev.get("id"), str):
+                reviews_by_id[rev["id"]] = rev
+
     claims = _read_jsonl(case_dir / "data/claims.jsonl")
     proposals = _load_records_file_or_dir(assessments_path)
     by_id = {p["id"]: p for p in proposals}
     full_proposals = []
     dual_verified = 0
+    adaptive_verified = 0
+    review_verified = 0
     for c in claims:
         if c["id"] in by_id:
             prop = by_id[c["id"]]
+            rev_item = reviews_by_id.get(c["id"]) or (prop.get("semantic_review") if isinstance(prop.get("semantic_review"), dict) else None)
+            if require_semantic_review and prop.get("inclusion") == "forecast" and rev_item is None:
+                raise ValueError(f"Semantic review guard: missing 6-check semantic review for forecast {c['id']}")
+            vstat = _validate_search_Verifier_v3_proposal(
+                prop,
+                c,
+                raw_ev_by_id,
+                cfg["cutoff"],
+                require_dual_evidence=require_dual_evidence,
+                require_adaptive_rounds=require_adaptive_rounds,
+                review_item=rev_item if (require_semantic_review or rev_item is not None) else None,
+            )
             if require_dual_evidence and prop.get("inclusion") == "forecast" and prop.get("verdict") != "暂无法判断":
-                eids = prop.get("evidence_ids") or []
-                if len(eids) < 2:
-                    raise ValueError(
-                        f"Lazy agent guard: decided forecast {c['id']} must cite at least 2 independent evidence items "
-                        f"(supporting + counter/context), got {len(eids)}"
-                    )
-                for eid in eids:
-                    rec = raw_ev_by_id.get(eid)
-                    if rec is not None and len((rec.get("text") or rec.get("content") or "").strip()) < 60:
-                        raise ValueError(
-                            f"Lazy agent guard: evidence {eid} for {c['id']} has archived text < 60 chars (too shallow)"
-                        )
                 dual_verified += 1
+            if isinstance(prop.get("round_history"), list) and prop.get("round_history"):
+                adaptive_verified += 1
+            if vstat["semantic_review_verified"]:
+                review_verified += 1
             full_proposals.append(prop)
         elif c.get("duplicate_of") or c.get("kind") != "prediction":
             full_proposals.append(_default_excluded_assessment(c))
@@ -763,6 +1011,8 @@ def apply_agent_assessments(
         "evidence_registered": ev_added,
         "assessments_applied": len(full_proposals),
         "dual_evidence_verified": dual_verified,
+        "multi_round_traces_verified": adaptive_verified,
+        "semantic_reviews_verified": review_verified,
     }
 
 
@@ -799,10 +1049,15 @@ def import_verify_run(case_dir: Path, search_run_dir: Path | None = None) -> dic
             if prior_id and prior_id in ev_map and ev_map[prior_id].get("verified"):
                 mapped_ids.append(prior_id)
                 continue
+            if not EVIDENCE_ID_RE.fullmatch(eid):
+                raise ValueError(f"Unsafe candidate evidence id: {eid!r}")
             arch_rel = cand.get("archive_path")
-            if not arch_rel or not (run_dir / arch_rel).is_file():
-                raise ValueError(f"Missing archived source body for {eid} at {arch_rel}")
-            raw_bytes = (run_dir / arch_rel).read_bytes()
+            if not arch_rel:
+                raise ValueError(f"Missing archived source body for {eid}")
+            arch_abs = (run_dir / arch_rel).resolve()
+            if not arch_abs.is_relative_to(run_dir) or not arch_abs.is_file():
+                raise ValueError(f"Invalid or missing archived source body for {eid} at {arch_rel}")
+            raw_bytes = arch_abs.read_bytes()
             if cand.get("archive_sha256") and _sha256_bytes(raw_bytes) != cand["archive_sha256"]:
                 raise ValueError(f"Archive SHA-256 mismatch for {eid}")
             dest_rel = Path("data/sources") / f"{eid}.txt"
@@ -811,9 +1066,9 @@ def import_verify_run(case_dir: Path, search_run_dir: Path | None = None) -> dic
             dest_abs.write_bytes(raw_bytes)
             note = notes_map.get(eid) or {}
             pub_date = note.get("publication_date") or cand.get("published_date")
-            if isinstance(pub_date, str) and len(pub_date) >= 10 and pub_date[4:5] == "-" and pub_date[7:8] == "-":
-                if date.fromisoformat(pub_date[:10]) > date.fromisoformat(cfg["cutoff"]):
-                    pub_date = None
+            if pub_date is not None:
+                bounds = vp.publication_range(str(pub_date).strip())
+                pub_date = bounds["value"] if (bounds and bounds["earliest"] <= cfg["cutoff"]) else None
             ev_map[eid] = {
                 "id": eid,
                 "url": cand["url"],
@@ -1091,13 +1346,24 @@ def pr_check(case_dir: Path, *, repo_root: Path = REPO_ROOT) -> dict:
         raise ValueError("output/report.md, claims.csv, or summary.json is out of sync; commit freshly generated reports")
 
     # 2. Copyright & context length guard
+    ignored_output_subdirs = {
+        "txt_import",
+        "search_verify",
+        "parallel_run",
+        "verify_batches",
+        "verify_proposals",
+        "evidence_proposals",
+        "semantic_reviews",
+        "expansions",
+        "review",
+    }
     for path in case_dir.rglob("*"):
         if not path.is_file():
             continue
         rel = path.relative_to(case_dir)
         if rel.parts[0] in IGNORED_SUBDIRS_FOR_BOOK_SCAN:
             continue
-        if len(rel.parts) >= 2 and rel.parts[0] == "output" and rel.parts[1] in {"txt_import", "search_verify", "parallel_run"}:
+        if len(rel.parts) >= 2 and rel.parts[0] == "output" and rel.parts[1] in ignored_output_subdirs:
             continue
         if len(rel.parts) >= 2 and rel.parts[0] == "data" and rel.parts[1] == "sources":
             continue
@@ -1119,7 +1385,7 @@ def pr_check(case_dir: Path, *, repo_root: Path = REPO_ROOT) -> dict:
         if not path.is_file():
             continue
         rel = path.relative_to(case_dir)
-        if rel.parts[0] == "input" or (len(rel.parts) >= 2 and rel.parts[0] == "output" and rel.parts[1] in {"txt_import", "search_verify", "parallel_run"}):
+        if rel.parts[0] == "input" or (len(rel.parts) >= 2 and rel.parts[0] == "output" and rel.parts[1] in ignored_output_subdirs):
             continue
         if path.suffix.lower() not in {".json", ".jsonl", ".md", ".csv", ".txt"}:
             continue
@@ -1197,19 +1463,102 @@ def audit_progress(case_dir: Path) -> dict:
     vmanifest_path = case_dir / "output/verify_manifest.json"
     vtasks_path = case_dir / "output/verify_tasks.jsonl"
     vprop_dir = case_dir / "output/verify_proposals"
-    ver_status: dict = {"ready": False, "total_tasks": 0, "done_tasks": 0, "missing_task_ids": [], "pending_batches": []}
+    eprop_dir = case_dir / "output/evidence_proposals"
+    srev_dir = case_dir / "output/semantic_reviews"
+    ver_status: dict = {
+        "ready": False,
+        "total_tasks": 0,
+        "done_tasks": 0,
+        "adaptive_compliant_tasks": 0,
+        "semantic_reviewed_tasks": 0,
+        "missing_task_ids": [],
+        "pending_batches": [],
+    }
     if vtasks_path.is_file():
+        cfg = _read_json(case_dir / "config.json")
+        cutoff = cfg.get("cutoff", "9999-12-31")
         vtasks = {t["id"]: t for t in _read_jsonl(vtasks_path)}
+        claims_by_id = {c["id"]: c for c in _read_jsonl(case_dir / "data/claims.jsonl")}
+        raw_ev_by_id: dict[str, dict] = {}
+        if eprop_dir.is_dir():
+            for r in _load_records_file_or_dir(eprop_dir):
+                if isinstance(r, dict) and isinstance(r.get("id"), str):
+                    raw_ev_by_id[r["id"]] = r
+        ev_raw_file = case_dir / "output/evidence_raw.jsonl"
+        if ev_raw_file.is_file():
+            for r in _load_records_file_or_dir(ev_raw_file):
+                if isinstance(r, dict) and isinstance(r.get("id"), str):
+                    raw_ev_by_id[r["id"]] = r
+        for e in _read_jsonl(case_dir / "data/evidence.jsonl"):
+            eid = e["id"]
+            if eid not in raw_ev_by_id:
+                arch = case_dir / (e.get("local_archive") or "")
+                txt = arch.read_text(encoding="utf-8") if arch.is_file() else (e.get("excerpt") or "")
+                raw_ev_by_id[eid] = {**e, "text": txt}
+
+        reviews_by_id: dict[str, dict] = {}
+        if srev_dir.is_dir():
+            for rev in _load_records_file_or_dir(srev_dir):
+                if isinstance(rev, dict) and isinstance(rev.get("id"), str):
+                    reviews_by_id[rev["id"]] = rev
+
         vdone: set[str] = set()
+        vcompliant: set[str] = set()
+        vreviewed: set[str] = set()
+        all_props: list[dict] = []
         if vprop_dir.is_dir():
-            for p in _load_records_file_or_dir(vprop_dir):
-                if isinstance(p, dict) and p.get("id") in vtasks:
-                    vdone.add(p["id"])
+            all_props.extend(_load_records_file_or_dir(vprop_dir))
         asm_file = case_dir / "output/assessments.jsonl"
         if asm_file.is_file():
-            for p in _load_records_file_or_dir(asm_file):
-                if isinstance(p, dict) and p.get("id") in vtasks:
-                    vdone.add(p["id"])
+            all_props.extend(_load_records_file_or_dir(asm_file))
+
+        # Build temporary verified evidence map so pl.validate_assessment checks structural fields too
+        cutoff_date = date.fromisoformat(cutoff)
+        temp_ev_map: dict[str, dict] = {}
+        for eid, rec in raw_ev_by_id.items():
+            url = rec.get("url")
+            txt = (rec.get("text") or rec.get("content") or "").strip()
+            pdate = rec.get("date")
+            date_ok = True
+            norm_date = None
+            if pdate is not None and str(pdate).strip():
+                b = vp.publication_range(str(pdate).strip())
+                if not b or date.fromisoformat(b["earliest"]) > cutoff_date:
+                    date_ok = False
+                else:
+                    norm_date = b["value"]
+            if EVIDENCE_ID_RE.fullmatch(eid) and vp.public_url(url) and txt and date_ok:
+                temp_ev_map[eid] = {"id": eid, "url": url, "date": norm_date, "verified": True}
+
+        old_pl_root = pl.ROOT
+        try:
+            pl.ROOT = case_dir
+            for p in all_props:
+                if not isinstance(p, dict) or p.get("id") not in vtasks:
+                    continue
+                cid = p["id"]
+                vdone.add(cid)
+                rev_item = reviews_by_id.get(cid) or (p.get("semantic_review") if isinstance(p.get("semantic_review"), dict) else None)
+                claim_obj = {**vtasks[cid], **(claims_by_id.get(cid) or {})}
+                try:
+                    pl.validate_assessment(p, claim_obj, temp_ev_map)
+                    _validate_search_Verifier_v3_proposal(
+                        p,
+                        claim_obj,
+                        raw_ev_by_id,
+                        cutoff,
+                        require_dual_evidence=True,
+                        require_adaptive_rounds=True,
+                        review_item=rev_item,
+                    )
+                    vcompliant.add(cid)
+                    if rev_item is not None:
+                        vreviewed.add(cid)
+                except ValueError:
+                    pass
+        finally:
+            pl.ROOT = old_pl_root
+
         vmissing = sorted(set(vtasks) - vdone)
         vbatches = (_read_json(vmanifest_path).get("batches") or []) if vmanifest_path.is_file() else []
         vpending = [
@@ -1217,12 +1566,24 @@ def audit_progress(case_dir: Path) -> dict:
             for b in vbatches
             if any(cid not in vdone for cid in (b.get("claim_ids") or []))
         ]
+        strict_pending = [
+            b["batch_id"]
+            for b in vbatches
+            if any(
+                cid not in vdone or cid not in vcompliant or cid not in vreviewed
+                for cid in (b.get("claim_ids") or [])
+            )
+        ]
         ver_status = {
             "ready": len(vmissing) == 0,
+            "strict_v3_ready": len(vmissing) == 0 and len(vcompliant) == len(vtasks) and len(vreviewed) == len(vtasks),
             "total_tasks": len(vtasks),
             "done_tasks": len(vdone),
+            "adaptive_compliant_tasks": len(vcompliant),
+            "semantic_reviewed_tasks": len(vreviewed),
             "missing_task_ids": vmissing,
             "pending_batches": vpending,
+            "strict_pending_batches": strict_pending,
         }
 
     return {"case": case_dir.name, "extraction": ext_status, "verification": ver_status}
@@ -1295,7 +1656,10 @@ def main(argv: list[str] | None = None) -> int:
     p_app.add_argument("--case", type=Path, required=True)
     p_app.add_argument("--assessments", type=Path, required=True)
     p_app.add_argument("--evidence-raw", type=Path, default=None)
+    p_app.add_argument("--semantic-reviews", type=Path, default=None, help="File or directory of independent 6-check semantic reviews")
     p_app.add_argument("--require-dual-evidence", action="store_true", help="Enforce >=2 independent archived evidence items per decided forecast")
+    p_app.add_argument("--require-adaptive-rounds", action="store_true", help="Enforce search-verifier-v3 multi-round initial + adaptive search trace & verbatim evidence_notes")
+    p_app.add_argument("--require-semantic-review", action="store_true", help="Enforce independent 6-check semantic review validation on every forecast")
 
     p_prog = sub.add_parser("audit-progress", help="Audit extraction and verification completion without trusting agent claims")
     p_prog.add_argument("--case", type=Path, required=True)
@@ -1356,7 +1720,10 @@ def main(argv: list[str] | None = None) -> int:
             args.case,
             args.assessments,
             evidence_raw_path=args.evidence_raw,
+            semantic_reviews_path=args.semantic_reviews,
             require_dual_evidence=args.require_dual_evidence,
+            require_adaptive_rounds=args.require_adaptive_rounds,
+            require_semantic_review=args.require_semantic_review,
         )
     elif args.command == "audit-progress":
         res = audit_progress(args.case)

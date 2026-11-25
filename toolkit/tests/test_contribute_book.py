@@ -482,6 +482,250 @@ class ContributeBookTests(unittest.TestCase):
             self.assertEqual(app_res["dual_evidence_verified"], 1)
             self.assertEqual(app_res["evidence_registered"], 2)
 
+            # 6. Multi-round adaptive search (search-verifier-v3 parity) & independent 6-check semantic review tests
+            # 6a. Unresolved forecast ('暂无法判断') with only 1 initial round and 0 adaptive rounds must be rejected
+            unresolved_lazy = {
+                **asm_obj,
+                "verdict": "暂无法判断",
+                "basis": "evidence",
+                "evidence_ids": ["ev-01"],
+                "remaining_gap": "缺少2025年底拉美与非洲重卡保有量分母统计",
+                "evidence_notes": [{
+                    "evidence_id": "ev-01",
+                    "relation": "support",
+                    "quote": "截至2025年底，全球重型卡车电动化渗透率达到3.8%",
+                    "publication_date": "2026-04-10",
+                    "observation_end": "2025-12-31",
+                    "limitation": "IEA口径",
+                }],
+                "round_history": [{
+                    "index": 1,
+                    "round": 1,
+                    "kind": "initial",
+                    "strategy_change": None,
+                    "gap_before": None,
+                    "queries": [
+                        {"role": "support", "query": "global electric heavy duty truck sales share 2025"},
+                        {"role": "counter", "query": "electric heavy truck adoption bottleneck 2025"},
+                    ],
+                }],
+            }
+            asm_path.write_text(json.dumps(unresolved_lazy, ensure_ascii=False) + "\n", encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "Multi-round guard.*only ran 0 adaptive round"):
+                cb.apply_agent_assessments(
+                    case_dir, asm_path, evidence_raw_path=ev_raw, require_adaptive_rounds=True
+                )
+
+            # 6b. Adaptive round repeating a previous query must be rejected
+            unresolved_dup_q = {
+                **unresolved_lazy,
+                "round_history": [
+                    unresolved_lazy["round_history"][0],
+                    {
+                        "index": 2,
+                        "round": 2,
+                        "kind": "adaptive",
+                        "gap_before": "缺少拉美与非洲电动重卡官方销量分母",
+                        "strategy_change": "切换至区域清洁交通统计数据库",
+                        "queries": [{
+                            "role": "support",
+                            "query": "Global Electric Heavy Duty Truck Sales Share 2025",
+                            "strategy": "重复上一轮英文查询",
+                        }],
+                    },
+                ],
+            }
+            asm_path.write_text(json.dumps(unresolved_dup_q, ensure_ascii=False) + "\n", encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "Multi-round guard.*repeated prior query"):
+                cb.apply_agent_assessments(
+                    case_dir, asm_path, evidence_raw_path=ev_raw, require_adaptive_rounds=True
+                )
+
+            # 6c. Valid 2 adaptive rounds with distinct strategy_change & non-duplicate queries passes unresolved check
+            unresolved_valid = {
+                **unresolved_lazy,
+                "round_history": [
+                    unresolved_lazy["round_history"][0],
+                    {
+                        "index": 2,
+                        "round": 2,
+                        "kind": "adaptive",
+                        "gap_before": "缺少拉美与非洲电动重卡官方销量分母",
+                        "strategy_change": "改查ICCT与OICA各国商用车注册分类统计表",
+                        "queries": [{
+                            "role": "support",
+                            "query": "OICA heavy commercial vehicle registration electric 2025",
+                            "strategy": "改用国际汽车制造商协会OICA官方注册量口径",
+                        }],
+                    },
+                    {
+                        "index": 3,
+                        "round": 3,
+                        "kind": "adaptive",
+                        "gap_before": "OICA尚未发布2025第四季度发展中国家分动力类型重卡细项",
+                        "strategy_change": "检索各国交通部年鉴与彭博新能源财经BNEF公开摘要",
+                        "queries": [{
+                            "role": "counter",
+                            "query": "BNEF zero emission commercial truck fleet share 2025 report",
+                            "strategy": "补充BNEF全球商用车电动化年度追踪口径",
+                        }],
+                    },
+                ],
+            }
+            asm_path.write_text(json.dumps(unresolved_valid, ensure_ascii=False) + "\n", encoding="utf-8")
+            res_unres = cb.apply_agent_assessments(
+                case_dir, asm_path, evidence_raw_path=ev_raw, require_adaptive_rounds=True
+            )
+            self.assertEqual(res_unres["multi_round_traces_verified"], 1)
+
+            # 6d. Decided forecast with verbatim evidence_notes + independent 6-check semantic review
+            decided_v3 = {
+                **asm_obj,
+                "evidence_ids": ["ev-01", "ev-02"],
+                "remaining_gap": "",
+                "evidence_notes": [
+                    {
+                        "evidence_id": "ev-01",
+                        "relation": "counter",
+                        "quote": "截至2025年底，全球重型卡车电动化渗透率达到3.8%",
+                        "publication_date": "2026-04-10",
+                        "observation_end": "2025-12-31",
+                        "limitation": "IEA全球口径",
+                    },
+                    {
+                        "evidence_id": "ev-02",
+                        "relation": "support",
+                        "quote": "2025年中国新能源重卡销量占比已突破12%",
+                        "publication_date": "2026-03-18",
+                        "observation_end": "2025-12-31",
+                        "limitation": "ICCT区域对比口径",
+                    },
+                ],
+                "round_history": [unresolved_lazy["round_history"][0]],
+            }
+            asm_path.write_text(json.dumps(decided_v3, ensure_ascii=False) + "\n", encoding="utf-8")
+
+            srev_path = case_dir / "output/semantic_reviews/vbatch-0001.jsonl"
+            # First test: unaddressed decision='revise' is blocked by semantic review guard
+            srev_revise = {
+                "id": cid,
+                "decision": "revise",
+                "checks": {
+                    "object_match": "pass",
+                    "condition_logic": "pass",
+                    "time_alignment": "pass",
+                    "evidence_support": "pass",
+                    "counterevidence": "pass",
+                    "verdict_logic": "fail",
+                },
+                "issues": [{
+                    "check": "verdict_logic",
+                    "reason": "需在reason中补充说明中国市场虽突破12%但全球总口径为3.8%",
+                    "source_quote": "2025年底全球电动重卡实际渗透率约3.8%，未突破10%。",
+                    "evidence_id": None,
+                }],
+                "remaining_gap": "补充区域分化说明",
+            }
+            srev_path.write_text(json.dumps(srev_revise, ensure_ascii=False) + "\n", encoding="utf-8")
+            with self.assertRaisesRegex(ValueError, "Semantic review guard.*unaddressed review decision='revise'"):
+                cb.apply_agent_assessments(
+                    case_dir,
+                    asm_path,
+                    evidence_raw_path=ev_raw,
+                    semantic_reviews_path=srev_path,
+                    require_dual_evidence=True,
+                    require_adaptive_rounds=True,
+                    require_semantic_review=True,
+                )
+
+            # Second test: accepted 6-check semantic review passes all v3 gates
+            srev_accept = {
+                "id": cid,
+                "decision": "accept",
+                "checks": {
+                    "object_match": "pass",
+                    "condition_logic": "pass",
+                    "time_alignment": "pass",
+                    "evidence_support": "pass",
+                    "counterevidence": "pass",
+                    "verdict_logic": "pass",
+                },
+                "issues": [],
+                "remaining_gap": "",
+            }
+            srev_path.write_text(json.dumps(srev_accept, ensure_ascii=False) + "\n", encoding="utf-8")
+            res_v3 = cb.apply_agent_assessments(
+                case_dir,
+                asm_path,
+                evidence_raw_path=ev_raw,
+                semantic_reviews_path=srev_path,
+                require_dual_evidence=True,
+                require_adaptive_rounds=True,
+                require_semantic_review=True,
+            )
+            self.assertEqual(res_v3["dual_evidence_verified"], 1)
+            self.assertEqual(res_v3["multi_round_traces_verified"], 1)
+            self.assertEqual(res_v3["semantic_reviews_verified"], 1)
+
+            # 6e. Security & cheating edge cases: path traversal eid, coarse YYYY-MM after cutoff, and duplicate-URL cloning
+            bad_ev = case_dir / "output/bad_ev.jsonl"
+            bad_ev.write_text(
+                json.dumps({
+                    "id": "../escape",
+                    "url": "https://iea.org/ok",
+                    "date": "2025-01-01",
+                    "text": "合法长度的正文内容，用于测试路径穿越证据ID是否会被直接拒绝。" * 3,
+                }, ensure_ascii=False) + "\n",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "Invalid or unsafe evidence id"):
+                cb.apply_agent_assessments(case_dir, asm_path, evidence_raw_path=bad_ev)
+
+            bad_ev.write_text(
+                json.dumps({
+                    "id": "ev-future-month",
+                    "url": "https://iea.org/future",
+                    "date": "2026-12",
+                    "text": "合法长度的正文内容，但发表年月2026-12晚于cutoff 2026-11-24。" * 3,
+                }, ensure_ascii=False) + "\n",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "invalid or after cutoff"):
+                cb.apply_agent_assessments(case_dir, asm_path, evidence_raw_path=bad_ev)
+
+            cloned_url_ev = case_dir / "output/cloned_url_ev.jsonl"
+            cloned_url_ev.write_text(
+                json.dumps({
+                    "id": "ev-dup-1",
+                    "url": "https://iea.org/same-page",
+                    "date": "2026-04-10",
+                    "text": "国际能源署（IEA）官方统计数据显示：截至2025年底，全球重型卡车电动化渗透率达到3.8%，未达10%。" * 2,
+                }, ensure_ascii=False) + "\n"
+                + json.dumps({
+                    "id": "ev-dup-2",
+                    "url": "https://iea.org/same-page",
+                    "date": "2026-04-10",
+                    "text": "同一网页的第二段摘录：2025年中国新能源重卡销量占比已突破12%，但欧美市场较低。" * 2,
+                }, ensure_ascii=False) + "\n",
+                encoding="utf-8",
+            )
+            cloned_asm = case_dir / "output/cloned_asm.jsonl"
+            cloned_asm.write_text(
+                json.dumps({**decided_v3, "evidence_ids": ["ev-dup-1", "ev-dup-2"]}, ensure_ascii=False) + "\n",
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "Lazy agent guard.*only 1 distinct URL"):
+                cb.apply_agent_assessments(
+                    case_dir, cloned_asm, evidence_raw_path=cloned_url_ev, require_dual_evidence=True
+                )
+            bad_ev.unlink()
+            cloned_url_ev.unlink()
+            cloned_asm.unlink()
+
+            # Verify audit_progress confirms strict_v3_ready == True on the clean v3 state
+            prog_v3 = cb.audit_progress(case_dir)
+            self.assertTrue(prog_v3["verification"]["strict_v3_ready"])
+
 
 if __name__ == "__main__":
     unittest.main()

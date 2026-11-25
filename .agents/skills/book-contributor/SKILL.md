@@ -56,7 +56,10 @@ python3 toolkit/contribute_book.py init \
      - **Context 零膨胀（Disk-Swapped State）**：每个 Worker 只读自己负责的 3~5 个 chunk 分片并在磁盘写出 `chunk_proposals/<chunk_id>.json`，通过 `finish` 仅返回 `<200B` 的回执；主 Agent 内存与 Context 恒定不随书长增长。
      - **零信任防偷懒（Proof-of-Reading + Dual-Evidence Gate）**：
        - 每个 chunk 提案必须携带 `body_sha256_12` 与 `tail_anchor`（从该 chunk `body` 后 45% 末尾区域逐字摘录 `>=8` 字连续原文）；`import-extractions --require-proof` 与 `audit-progress` 会在重派循环中自动拦截并重跑任何漏读、只读开头就停、或伪造完成的分片。
-       - 核验阶段通过 `apply-assessments --require-dual-evidence` 强制每条已判定预测至少绑定 2 条独立归档正文（`>=60` 字，支持 + 反面/瓶颈），严防敷衍了事。
+       - 核验阶段与 `verify_prediction.py` (`search-verifier-v3`) 100% 同构：
+         * **多轮双向搜证 + 自适应变策补搜（`--require-adaptive-rounds`）**：初轮必须成对执行 `support` + `counter` 查询；若初轮后仍为 `"暂无法判断"`（且非 `basis="future"`），**严禁单轮直接放弃**，必须针对具体 `gap_before`（决定性缺口）连续执行至少 2 轮（最多 3 轮）`kind="adaptive"` 变策补搜（声明全新的 `strategy_change` 并使用不重复的检索词），且每条引用证据必须在 `evidence_notes` 中附上逐字对齐归档正文的 `quote`。
+         * **独立六维语义复核（`--require-semantic-review`）**：每个核验分片由独立 Reviewer Agent 按 `semantic_review.py` 六项逻辑门（`object_match`, `condition_logic`, `time_alignment`, `evidence_support`, `counterevidence`, `verdict_logic`）独立审计，支持 1 次有界修订与二次复核。
+         * **双向证据硬门禁（`--require-dual-evidence`）**：强制每条已判定预测至少绑定 2 条独立归档正文（`>=60` 字，支持 + 反面/瓶颈）。
 - **路径 A（手动/单步命令模式）**：
   1. 运行 `python3 toolkit/contribute_book.py chunk-txt --case cases/<slug> --txt <txt路径> --batch-size 4`。
   2. 读取 `cases/<slug>/output/txt_import/prompt_v5.txt` 与 `batches/batch-*.jsonl`，对**每一个** chunk_id 写出 `chunk_proposals/<chunk_id>.json`（含 `body_sha256_12`、`tail_anchor` 与 `predictions`，无预测的块必须写 `"predictions":[]`，绝不漏读）。
