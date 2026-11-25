@@ -286,8 +286,18 @@ _FUTURE_WINDOW=re.compile(
     r'|hereafter|henceforth)\b)'
 )
 _OPERATIONAL_HORIZON=re.compile(r'明年|后年|今后|\d+\s*年内|到\s*(?:1[6-9]|20)\d{2}|(?:1[6-9]|20)\d{2}\s*年\s*(?:前|后|内|之前|之后)')
-_CHANGE=re.compile(r'将(?!军)|可能|越来越|增加|减少|下降|上升|扩大|缩小|衰落|增长|崩溃|取代|成为|加剧|缓和|削弱|增强|崛起|恶化|改善|缓解|解体')
-_FUTURE_MODAL=re.compile(r'将(?!军)|可能|越来越')
+_CHANGE=re.compile(
+    r'将(?!军)|將(?!軍)|可能|越来越|越來|增加|减少|減少|下降|上升|扩大|擴大|缩小|縮小|衰落|增长|增長|崩溃|崩潰|取代|成为|成為|加剧|加劇|缓和|緩和|削弱|增强|增強|崛起|恶化|惡化|改善|缓解|緩解|解体|解體|必將|必成|勢必|势必|終將|终将|將會|将会|維新|维新'
+    r'|(?i:\b(?:will|would|shall|may|might|could|going\s+to|likely|unlikely|expect(?:ed|s)?|forecast(?:ed|s)?|predict(?:ed|s)?|project(?:ed|s)?'
+    r'|increas(?:e|es|ing|ed)|decreas(?:e|es|ing|ed)|declin(?:e|es|ing|ed)|ris(?:e|es|ing)|grow(?:s|ing)?|shrink(?:s|ing)?|collaps(?:e|es|ing)'
+    r'|replac(?:e|es|ing|ed)|becom(?:e|es|ing)|expand(?:s|ing)?|contract(?:s|ing)?|remain(?:s|ing)?|continu(?:e|es|ing)|shift(?:s|ing)?|transform(?:s|ing)?'
+    r'|dominat(?:e|es|ing)|surpass(?:es|ing)?|overtak(?:e|es|ing)|disappear(?:s|ing)?|emerg(?:e|es|ing)|never|double|triple|halve|lower|higher|more|less'
+    r'|vai|vão|será|serão|pode|podem|poderia|poderiam|deve|devem|crescer|aumentar|diminuir|cair|subir|substituir|tornar|permanecer|continuar|provável|improvável|nunca)\b)'
+)
+_FUTURE_MODAL=re.compile(
+    r'将(?!军)|將(?!軍)|可能|越来越|越來|必將|勢必|势必'
+    r'|(?i:\b(?:will|would|shall|may|might|going\s+to|likely|unlikely|vai|vão|será|serão|pode|podem)\b)'
+)
 _TRIVIAL=re.compile(r'(?:新任|当选|下一任|继任)?总统[^。\n]{0,8}(?:发表|作)就职演说|宣誓就职|就职典礼')
 _METAPHOR=re.compile(r'有各种烧法|换汤不换药|好比|犹如|仿佛|正如')
 _APHORISM=re.compile(r'(?:信任|友谊|善意|道德|人性).{0,16}(?:罕见|珍贵|稀缺|难得)')

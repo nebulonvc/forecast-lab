@@ -87,7 +87,7 @@ AUTHOR_TYPE_ALIASES = {
 SLUG_RE = re.compile(r"^[a-z0-9][a-z0-9-]{2,80}$")
 FORBIDDEN_BOOK_EXTS = {".txt", ".pdf", ".epub", ".mobi", ".azw3", ".docx", ".doc"}
 SECRET_PATTERNS = (
-    re.compile(r"sk-[A-Za-z0-9_-]{20,}"),
+    re.compile(r"(?<![A-Za-z0-9_-])sk-[A-Za-z0-9_-]{20,}"),
     re.compile(r"AIzaSy[A-Za-z0-9_-]{30,}"),
     re.compile(r"tvly-[A-Za-z0-9_-]{16,}"),
     re.compile(r"Bearer\s+[A-Za-z0-9._-]{20,}"),
