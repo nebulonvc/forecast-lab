@@ -1,6 +1,6 @@
-# 待拆解高价值候选书单：大战略家专场与跨学科断层补齐（58 部）
+# 待拆解高价值候选书单：大战略家专场、跨学科断层与全库补缺（74 项）
 
-本清单基于 **Forecast Lab** 全库现有 132 部独立作品、8,130 条历史预测的覆盖缺口设计，供团队找书下载与社区贡献拆解（配合 [`07-contribute-a-book.md`](07-contribute-a-book.md) 使用）。
+本清单基于 **Forecast Lab** 全库现有 132 部独立作品、8,130 条历史预测的覆盖矩阵审计设计（含 38 项大战略家专场、20 项跨学科断层补齐及 16 项全库盲区终极补缺），供团队找书下载与社区贡献拆解（配合 [`07-contribute-a-book.md`](07-contribute-a-book.md) 使用）。
 
 > [!CAUTION]
 > **版权与数据红线**：下载后的原书 TXT/PDF **仅限存放在本地被 `.gitignore` 忽略的 `cases/<slug>/input/` 目录**，严禁将任何受版权保护的原书全文、未裁剪长上下文或密钥提交进 Git 仓库。
@@ -124,7 +124,32 @@
 
 ---
 
-## 四、找书同事快速下载勾选清单与入库初始化模板
+## 四、第三部分：全库覆盖矩阵终极补缺书单（六大盲区 · 16 部 · #59–#74）
+
+在「现有 132 部 + 前两批 58 项」合并审计后，针对仍存在的六大结构盲区（宏观 `40–99年` 断档、能源/人口 `10–39年` 样本薄弱与石油峰值反例、20 世纪 AI 先驱与怀疑派缺席、`1931–2002` 非虚构科幻推演断档、生物医药/商业幸存者偏差、以及“政治口号型官方失败规划”对照）补充以下 16 项：
+
+| # | 人物 / 机构 | 中文书名 | 英文 / 原文检索关键词 | 锁定 $t_0$ | 建议 `case_slug` | 标准领域 / 作者类型 | 渠道 | 核心盲区补齐与对照价值 |
+| :-: | :--- | :--- | :--- | :--- | :--- | :--- | :-: | :--- |
+| 59 | 罗伯特·特里芬 | 《黄金与美元危机》 | `Gold and the Dollar Crisis Triffin` | `1960` | `triffin-gold-and-dollar-crisis-1960-v5` | 宏观经济、金融与市场 / 经济学家与金融投资人 | — | 填补宏观 `40–99年` 空白：提出“特里芬难题”，提前 11 年用黄金储备与国际收支账本算准布雷顿森林体系必崩溃 |
+| 60 | 米尔顿·弗里德曼 | 《资本主义与自由》&《货币政策的作用》 | `Capitalism and Freedom` / `The Role of Monetary Policy 1968` | `1962 / 1968` | `friedman-role-of-monetary-policy-1968-v5` | 宏观经济、金融与市场 / 经济学家与金融投资人 | — | 填补宏观 `40–99年` 空白：在凯恩斯主义全盛期提前预言强刺激必引爆 1970 年代“高通胀 + 高失业（滞胀）” |
+| 61 | 海曼·明斯基 | 《稳定不稳定的经济》 | `Stabilizing an Unstable Economy Minsky` | `1986` | `minsky-stabilizing-unstable-economy-1986-v5` | 宏观经济、金融与市场 / 经济学家与金融投资人 | — | 填补宏观 `40–99年` 空白：金融内生脆弱性与“明斯基时刻”原典，历经 40 年信贷周期检验 |
+| 62 | 马修·西蒙斯 | 《沙漠黄昏：沙特石油冲击与世界经济》 | `Twilight in the Desert Simmons` | `2005` | `simmons-twilight-in-the-desert-2005-v5` | 人口、能源、资源与生态 / 经济学家与金融投资人 | — | 补齐能源 `20–39年` 空白：21 世纪初“石油峰值论”代表作，随即被美国页岩油水力压裂革命证伪（现代版替代技术盲区反例） |
+| 63 | 联合国人口司 (UN DESA) | 《世界人口展望（2000 修订版）》 | `UN World Population Prospects 2000 Revision` | `2000` | `un-world-population-prospects-2000-v5` | 人口、能源、资源与生态 / 国际机构与政府智库 | 🌐 | 补齐人口 `20–39年` 空白：检验全球最权威人口机构为何看准老龄化大势，却系统性高估东亚生育率下限 |
+| 64 | 尼古拉斯·斯特恩 | 《斯特恩气候变化经济学报告》 | `Stern Review on the Economics of Climate Change` | `2006` | `stern-review-climate-economics-2006-v5` | 人口、能源、资源与生态 / 国际机构与政府智库 | 🌐 | 补齐能源生态 `20–39年` 样本：英国财政部气候经济硬账本代表作，恰好满 20 年整窗口 |
+| 65 | 休伯特·德雷福斯 | 《计算机不能做什么》 | `What Computers Can't Do` / `What Computers Still Can't Do` | `1972 / 1992` | `dreyfus-what-computers-cant-do-v5` | AI与奇点前沿 / 地缘与社科政治学者 | — | 补齐 20 世纪 AI 怀疑派空白：看准符号主义死胡同，却错判机器无法在棋类与直觉识别上胜过人类 |
+| 66 | 汉斯·莫拉维克 | 《心灵的儿女：机器人与人类智能的未来》 | `Mind Children Moravec` | `1988` | `moravec-mind-children-1988-v5` | AI与奇点前沿 / 科技商业思想家与产业实践者 | — | 补齐 20 世纪 AI 先驱空白：提出“莫拉维克悖论”（推理易、物理灵巧难），并附有明确算力与机器人时间表 |
+| 67 | 雷·库兹韦尔 | 《精神机器时代》 | `The Age of Spiritual Machines` | `1999` | `kurzweil-age-of-spiritual-machines-1999-v5` | AI与奇点前沿 / 科技商业思想家与产业实践者 | — | 补齐 AI `20–39年` 空白：书末专门按 `2009 年`、`2019 年` 列出几十条已 100% 到期的具体预测，比《奇点临近》多 6 年结算期 |
+| 68 | 阿瑟·克拉克 | 《未来的轮廓》 | `Profiles of the Future Arthur C. Clarke` | `1962` | `clarke-profiles-of-the-future-1962-v5` | 科幻推演与乌托邦/反乌托邦 / 古典思想家与科幻/乌托邦作家 | — | 填补 `1931–2002` 科幻非虚构推演断档：书末附《到 2100 年技术实现时间表》（准在通信卫星与信息网，错在核聚变与气垫车） |
+| 69 | 斯坦尼斯瓦夫·莱姆 | 《技术之和》 | `Summa Technologiae Stanislaw Lem` | `1964` | `lem-summa-technologiae-1964-v5` | 科幻推演与乌托邦/反乌托邦 / 古典思想家与科幻/乌托邦作家 | — | 填补 `1931–2002` 断档：1964 年超前推演虚拟现实、搜索引擎信息过载与人工合成演化的硬核非虚构哲学著作 |
+| 70 | 阿道司·赫胥黎 | 《重访美丽新世界》 | `Brave New World Revisited Huxley` | `1958` | `huxley-brave-new-world-revisited-1958-v5` | 科幻推演与乌托邦/反乌托邦 / 古典思想家与科幻/乌托邦作家 | — | 填补 `1931–2002` 断档：小说出版 26 年后的非虚构政论，直接预判消费娱乐麻痹、精神药理学与大众传媒操控的推进 |
+| 71 | 埃里克·托普 / 弗朗西斯·柯林斯 | 《颠覆医疗》(2012) /《生命的语言》(2010) | `The Creative Destruction of Medicine` / `The Language of Life` | `2012 / 2010` | `topol-creative-destruction-medicine-2012-v5` | 科技、商业与产业颠覆 / 科技商业思想家与产业实践者 | — | 补齐生命科学与基因测序临床转化预测赛道（目前全库 0 部） |
+| 72 | 彼得·德鲁克 / 吉姆·柯林斯 | 《断层时代》(1969) &《从优秀到卓越》(2001) | `The Age of Discontinuity` / `Good to Great` | `1969 / 2001` | `drucker-age-of-discontinuity-1969-v5` | 科技、商业与产业颠覆 / 科技商业思想家与产业实践者 | — | 商业管理“长周期真信号 vs 幸存者偏差”对照：德鲁克预言知识工作者与私有化；柯林斯所选标杆随后接连暴雷 |
+| 73 | 欧盟委员会 | 《里斯本战略》 | `Lisbon Strategy 2000 European Council` | `2000` | `eu-lisbon-strategy-2000-v5` | 社会结构、制度、文化与教育 / 国际机构与政府智库 | 🌐 | **【防机构偏差反例】** 2000 年立下“到 2010 年建成全球最具竞争力知识经济体”的显式承诺并全面落空，揭示口号型与账本型机构报告之别 |
+| 74 | 赫尔南多·德·索托 | 《资本的秘密》 | `The Mystery of Capital de Soto` | `2000` | `de-soto-mystery-of-capital-2000-v5` | 社会结构、制度、文化与教育 / 经济学家与金融投资人 | — | 补齐拉美与全球南方视角，检验非正规经济产权改革假设的 26 年实证表现 |
+
+---
+
+## 五、找书同事快速下载勾选清单与入库初始化模板
 
 ### 1. 零成本秒下批（`🌐` 免费公版 / 官方开放报告，优先下载）
 - **公版英文（Project Gutenberg / Internet Archive / Wikisource）**：
@@ -132,7 +157,7 @@
   - `While England Slept - Churchill (1938)`、`America's Strategy in World Politics - Spykman (1942)`、`Paris, or the Future of War - Liddell Hart (1925)`、`Winged Defense - Billy Mitchell (1925)`、`The Command of the Air - Douhet (1921)`、`The Revolution Betrayed - Trotsky (1936)`
   - `Report on Manufactures - Hamilton (1791)`、`The Economic Consequences of Mr. Churchill - Keynes (1925)`
 - **政府与国际机构开放 PDF**：
-  - `NSC-68 (1950)`、`NIC Global Trends 2015 (2000)` & `Mapping the Global Future 2020 (2004)`、`RAND Gordon & Helmer Long-Range Forecasting Study (1964)`、`IPCC First Assessment Report (1990)`、`NSCAI Final Report (2021)`、`GPMB A World at Risk (2019)`
+  - `NSC-68 (1950)`、`NIC Global Trends 2015 (2000)` & `Mapping the Global Future 2020 (2004)`、`RAND Gordon & Helmer Long-Range Forecasting Study (1964)`、`IPCC First Assessment Report (1990)`、`NSCAI Final Report (2021)`、`GPMB A World at Risk (2019)`、`UN World Population Prospects 2000`、`Stern Review (2006)`、`EU Lisbon Strategy (2000)`
 - **中日文公版（维基文库 / 青空文库 / 民国数字文献）**：
   - 蒋百里《国防论》(1937)、李鸿章《筹议海防折》(1874) & 左宗棠《统筹新疆全局疏》(1875)、孙中山《实业计划》(1920)、梁启超《新中国未来记》(1902)、石原莞尔《世界最終戦論》(1940)、石桥湛山《小日本主义》(1921)
 
