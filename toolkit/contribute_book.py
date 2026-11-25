@@ -228,9 +228,12 @@ def chunk_txt_for_agent(
     encoding: str | None = None,
     chunk_chars: int = 3500,
     context_chars: int = 600,
+    batch_size: int = 5,
     include_front_matter: bool = False,
     repo_root: Path = REPO_ROOT,
 ) -> dict:
+    if batch_size < 1:
+        raise ValueError("batch_size must be >= 1")
     case_dir = case_dir.resolve()
     cfg_path = case_dir / "config.json"
     if not cfg_path.is_file():
@@ -243,9 +246,29 @@ def chunk_txt_for_agent(
     chunks = pb.split_text(text, chunk_chars=chunk_chars, context_chars=context_chars)
     skipped = [c["id"] for c in chunks if any(a <= c["char_start"] and c["char_end"] <= b for a, b, _ in spans)]
     active_chunks = [c for c in chunks if c["id"] not in skipped]
+    for c in active_chunks:
+        c["body_sha256_12"] = _sha256_bytes((c.get("body") or "").encode("utf-8"))[:12]
 
     out_dir = case_dir / "output/txt_import"
     (out_dir / "chunk_proposals").mkdir(parents=True, exist_ok=True)
+    batches_dir = out_dir / "batches"
+    if batches_dir.exists():
+        for old in batches_dir.glob("*.jsonl"):
+            old.unlink()
+    batches_dir.mkdir(parents=True, exist_ok=True)
+    batch_meta: list[dict] = []
+    for idx in range(0, len(active_chunks), batch_size):
+        slice_chunks = active_chunks[idx : idx + batch_size]
+        bid = f"batch-{(idx // batch_size) + 1:04d}"
+        bfile = batches_dir / f"{bid}.jsonl"
+        _save_jsonl(bfile, slice_chunks)
+        batch_meta.append({
+            "batch_id": bid,
+            "path": f"output/txt_import/batches/{bid}.jsonl",
+            "chunk_ids": [c["id"] for c in slice_chunks],
+            "count": len(slice_chunks),
+        })
+
     _save_jsonl(out_dir / "chunks.jsonl", active_chunks)
     (out_dir / "prompt_v5.txt").write_text(pb.DISCOVER_PROMPT_V5 + "\n", encoding="utf-8")
 
@@ -260,6 +283,8 @@ def chunk_txt_for_agent(
         "active_chunk_ids": [c["id"] for c in active_chunks],
         "chunk_chars": chunk_chars,
         "context_chars": context_chars,
+        "batch_size": batch_size,
+        "batches": batch_meta,
         "extraction_version": pb.EXTRACTION_VERSION,
     }
     _save_json(out_dir / "manifest.json", manifest)
@@ -398,15 +423,56 @@ def _load_chunk_proposals(proposals_path: Path) -> list[dict]:
     text = proposals_path.read_text(encoding="utf-8").strip()
     if not text:
         return []
-    if text.startswith("{"):
-        obj = json.loads(text)
-        if "items" in obj and isinstance(obj["items"], list):
-            return obj["items"]
-        if "id" in obj and "\n" not in text:
-            return [obj]
     if text.startswith("["):
         return json.loads(text)
+    if text.startswith("{"):
+        try:
+            obj = json.loads(text)
+            if isinstance(obj, dict) and "items" in obj and isinstance(obj["items"], list):
+                return obj["items"]
+            if isinstance(obj, dict) and "id" in obj:
+                return [obj]
+        except json.JSONDecodeError:
+            pass
     return [json.loads(line) for line in text.splitlines() if line.strip()]
+
+
+def _verify_proof_of_reading(item: dict, chunk: dict, *, require_proof: bool = False) -> dict:
+    """Anti-laziness check: validate that the worker agent actually read the chunk body.
+    Verifies body_sha256_12 and tail_anchor (a verbatim >=8 char snippet from the last 35% of body).
+    """
+    body = chunk.get("body") or ""
+    expected_sha12 = chunk.get("body_sha256_12") or _sha256_bytes(body.encode("utf-8"))[:12]
+    provided_sha12 = (item.get("body_sha256_12") or "").strip()
+    tail_anchor = (item.get("tail_anchor") or "").strip()
+
+    if require_proof and not provided_sha12:
+        raise ValueError(f"Lazy agent guard: chunk {chunk['id']} missing body_sha256_12 proof of reading")
+    if provided_sha12 and provided_sha12 != expected_sha12:
+        raise ValueError(
+            f"Lazy agent guard: chunk {chunk['id']} body_sha256_12 mismatch "
+            f"(got '{provided_sha12}', expected '{expected_sha12}')"
+        )
+
+    if require_proof and not tail_anchor:
+        raise ValueError(f"Lazy agent guard: chunk {chunk['id']} missing tail_anchor proof of reading")
+    if tail_anchor:
+        norm_anchor = pb.normalize_for_match(tail_anchor)
+        if len(norm_anchor) < 6:
+            raise ValueError(f"Lazy agent guard: chunk {chunk['id']} tail_anchor too short (<6 normalized chars)")
+        tail_start = max(0, int(len(body) * 0.55))
+        tail_region = body[tail_start:]
+        if tail_anchor not in tail_region and not pb.norm_contains(tail_anchor, tail_region):
+            if tail_anchor in body or pb.norm_contains(tail_anchor, body):
+                raise ValueError(
+                    f"Lazy agent guard: chunk {chunk['id']} tail_anchor found in early text, not in the last 45% of body"
+                )
+            raise ValueError(f"Lazy agent guard: chunk {chunk['id']} tail_anchor not found in chunk body")
+    return {
+        "chunk_id": chunk["id"],
+        "sha12_verified": bool(provided_sha12),
+        "tail_anchor_verified": bool(tail_anchor),
+    }
 
 
 def import_agent_extractions(
@@ -416,6 +482,7 @@ def import_agent_extractions(
     *,
     encoding: str | None = None,
     include_front_matter: bool = False,
+    require_proof: bool = False,
     repo_root: Path = REPO_ROOT,
 ) -> dict:
     case_dir = case_dir.resolve()
@@ -448,8 +515,12 @@ def import_agent_extractions(
         raise ValueError(f"Chunk coverage mismatch: missing={missing[:5]} extra={extra[:5]}")
 
     all_rejected = []
+    proof_verified = 0
     for item in items:
         chunk = by_id[item["id"]]
+        proof = _verify_proof_of_reading(item, chunk, require_proof=require_proof)
+        if proof["sha12_verified"] and proof["tail_anchor_verified"]:
+            proof_verified += 1
         preds = item.get("predictions")
         if not isinstance(preds, list):
             raise ValueError(f"predictions must be a list for chunk {item['id']}")
@@ -472,10 +543,13 @@ def import_agent_extractions(
         "rejected_quotes": len(all_rejected),
         "excluded_non_predictions": len(policy.get("excluded") or []),
         "overlap_duplicates_dropped": policy.get("duplicates", 0),
+        "proof_of_reading_verified_chunks": proof_verified,
     }
 
 
-def export_verify_tasks(case_dir: Path, output_path: Path | None = None) -> dict:
+def export_verify_tasks(case_dir: Path, output_path: Path | None = None, *, batch_size: int = 4) -> dict:
+    if batch_size < 1:
+        raise ValueError("batch_size must be >= 1")
     case_dir = case_dir.resolve()
     cfg = _read_json(case_dir / "config.json")
     rows = _read_jsonl(case_dir / "data/claims.jsonl")
@@ -503,7 +577,35 @@ def export_verify_tasks(case_dir: Path, output_path: Path | None = None) -> dict
         })
     out = output_path or (case_dir / "output/verify_tasks.jsonl")
     _save_jsonl(out, tasks)
-    return {"tasks": len(tasks), "output": str(out), "total_claims": len(rows)}
+
+    vbatches_dir = case_dir / "output/verify_batches"
+    if vbatches_dir.exists():
+        for old in vbatches_dir.glob("*.jsonl"):
+            old.unlink()
+    vbatches_dir.mkdir(parents=True, exist_ok=True)
+    (case_dir / "output/verify_proposals").mkdir(parents=True, exist_ok=True)
+    (case_dir / "output/evidence_proposals").mkdir(parents=True, exist_ok=True)
+
+    batch_meta: list[dict] = []
+    for idx in range(0, len(tasks), batch_size):
+        slice_tasks = tasks[idx : idx + batch_size]
+        bid = f"vbatch-{(idx // batch_size) + 1:04d}"
+        bfile = vbatches_dir / f"{bid}.jsonl"
+        _save_jsonl(bfile, slice_tasks)
+        batch_meta.append({
+            "batch_id": bid,
+            "path": f"output/verify_batches/{bid}.jsonl",
+            "claim_ids": [t["id"] for t in slice_tasks],
+            "count": len(slice_tasks),
+        })
+    vmanifest = {
+        "tasks": len(tasks),
+        "total_claims": len(rows),
+        "batch_size": batch_size,
+        "batches": batch_meta,
+    }
+    _save_json(case_dir / "output/verify_manifest.json", vmanifest)
+    return {"tasks": len(tasks), "output": str(out), "total_claims": len(rows), "batches": len(batch_meta)}
 
 
 def _load_records_file_or_dir(path: Path) -> list[dict]:
@@ -527,11 +629,14 @@ def _load_records_file_or_dir(path: Path) -> list[dict]:
     if text.startswith("["):
         return json.loads(text)
     if text.startswith("{"):
-        obj = json.loads(text)
-        if "items" in obj and isinstance(obj["items"], list):
-            return obj["items"]
-        if "\n" not in text:
-            return [obj]
+        try:
+            obj = json.loads(text)
+            if isinstance(obj, dict) and "items" in obj and isinstance(obj["items"], list):
+                return obj["items"]
+            if isinstance(obj, dict):
+                return [obj]
+        except json.JSONDecodeError:
+            pass
     return [json.loads(line) for line in text.splitlines() if line.strip()]
 
 
@@ -604,21 +709,42 @@ def apply_agent_assessments(
     assessments_path: Path,
     *,
     evidence_raw_path: Path | None = None,
+    require_dual_evidence: bool = False,
 ) -> dict:
     case_dir = case_dir.resolve()
     cfg = _read_json(case_dir / "config.json")
     ev_added = 0
+    raw_ev_by_id: dict[str, dict] = {}
     if evidence_raw_path is not None:
         raw_ev = _load_records_file_or_dir(evidence_raw_path)
+        for r in raw_ev:
+            if isinstance(r.get("id"), str):
+                raw_ev_by_id[r["id"]] = r
         ev_added = _register_raw_evidence(case_dir, raw_ev, cfg["cutoff"])
 
     claims = _read_jsonl(case_dir / "data/claims.jsonl")
     proposals = _load_records_file_or_dir(assessments_path)
     by_id = {p["id"]: p for p in proposals}
     full_proposals = []
+    dual_verified = 0
     for c in claims:
         if c["id"] in by_id:
-            full_proposals.append(by_id[c["id"]])
+            prop = by_id[c["id"]]
+            if require_dual_evidence and prop.get("inclusion") == "forecast" and prop.get("verdict") != "暂无法判断":
+                eids = prop.get("evidence_ids") or []
+                if len(eids) < 2:
+                    raise ValueError(
+                        f"Lazy agent guard: decided forecast {c['id']} must cite at least 2 independent evidence items "
+                        f"(supporting + counter/context), got {len(eids)}"
+                    )
+                for eid in eids:
+                    rec = raw_ev_by_id.get(eid)
+                    if rec is not None and len((rec.get("text") or rec.get("content") or "").strip()) < 60:
+                        raise ValueError(
+                            f"Lazy agent guard: evidence {eid} for {c['id']} has archived text < 60 chars (too shallow)"
+                        )
+                dual_verified += 1
+            full_proposals.append(prop)
         elif c.get("duplicate_of") or c.get("kind") != "prediction":
             full_proposals.append(_default_excluded_assessment(c))
         else:
@@ -633,7 +759,11 @@ def apply_agent_assessments(
         _run_pipeline(case_dir, "check")
     finally:
         tmp_path.unlink(missing_ok=True)
-    return {"evidence_registered": ev_added, "assessments_applied": len(full_proposals)}
+    return {
+        "evidence_registered": ev_added,
+        "assessments_applied": len(full_proposals),
+        "dual_evidence_verified": dual_verified,
+    }
 
 
 def import_verify_run(case_dir: Path, search_run_dir: Path | None = None) -> dict:
@@ -1025,6 +1155,79 @@ def pr_check(case_dir: Path, *, repo_root: Path = REPO_ROOT) -> dict:
     return {"slug": slug, "pr_check": "passed", "claims": len(claims), "forecast_n": summary["forecast_n"]}
 
 
+def audit_progress(case_dir: Path) -> dict:
+    """Return deterministic, zero-trust completion status across extraction and verification."""
+    case_dir = case_dir.resolve()
+    manifest_path = case_dir / "output/txt_import/manifest.json"
+    chunks_path = case_dir / "output/txt_import/chunks.jsonl"
+    prop_dir = case_dir / "output/txt_import/chunk_proposals"
+
+    ext_status: dict = {"ready": False, "active_chunks": 0, "done_chunks": 0, "proof_verified_chunks": 0, "missing_chunk_ids": [], "pending_batches": []}
+    if manifest_path.is_file() and chunks_path.is_file():
+        manifest = _read_json(manifest_path)
+        chunks = {c["id"]: c for c in _read_jsonl(chunks_path)}
+        done_ids: set[str] = set()
+        proof_ok: set[str] = set()
+        if prop_dir.is_dir():
+            for item in _load_chunk_proposals(prop_dir):
+                cid = item.get("id")
+                if cid in chunks and isinstance(item.get("predictions"), list):
+                    done_ids.add(cid)
+                    try:
+                        pr = _verify_proof_of_reading(item, chunks[cid], require_proof=True)
+                        if pr["sha12_verified"] and pr["tail_anchor_verified"]:
+                            proof_ok.add(cid)
+                    except ValueError:
+                        pass
+        missing = sorted(set(chunks) - done_ids)
+        pending_batches = [
+            b["batch_id"]
+            for b in (manifest.get("batches") or [])
+            if any(cid not in done_ids or cid not in proof_ok for cid in (b.get("chunk_ids") or []))
+        ]
+        ext_status = {
+            "ready": len(missing) == 0 and len(proof_ok) == len(chunks),
+            "active_chunks": len(chunks),
+            "done_chunks": len(done_ids),
+            "proof_verified_chunks": len(proof_ok),
+            "missing_chunk_ids": missing,
+            "pending_batches": pending_batches,
+        }
+
+    vmanifest_path = case_dir / "output/verify_manifest.json"
+    vtasks_path = case_dir / "output/verify_tasks.jsonl"
+    vprop_dir = case_dir / "output/verify_proposals"
+    ver_status: dict = {"ready": False, "total_tasks": 0, "done_tasks": 0, "missing_task_ids": [], "pending_batches": []}
+    if vtasks_path.is_file():
+        vtasks = {t["id"]: t for t in _read_jsonl(vtasks_path)}
+        vdone: set[str] = set()
+        if vprop_dir.is_dir():
+            for p in _load_records_file_or_dir(vprop_dir):
+                if isinstance(p, dict) and p.get("id") in vtasks:
+                    vdone.add(p["id"])
+        asm_file = case_dir / "output/assessments.jsonl"
+        if asm_file.is_file():
+            for p in _load_records_file_or_dir(asm_file):
+                if isinstance(p, dict) and p.get("id") in vtasks:
+                    vdone.add(p["id"])
+        vmissing = sorted(set(vtasks) - vdone)
+        vbatches = (_read_json(vmanifest_path).get("batches") or []) if vmanifest_path.is_file() else []
+        vpending = [
+            b["batch_id"]
+            for b in vbatches
+            if any(cid not in vdone for cid in (b.get("claim_ids") or []))
+        ]
+        ver_status = {
+            "ready": len(vmissing) == 0,
+            "total_tasks": len(vtasks),
+            "done_tasks": len(vdone),
+            "missing_task_ids": vmissing,
+            "pending_batches": vpending,
+        }
+
+    return {"case": case_dir.name, "extraction": ext_status, "verification": ver_status}
+
+
 def ci_audit(*, repo_root: Path = REPO_ROOT) -> dict:
     cases_dir = repo_root / "cases"
     audited: list[str] = []
@@ -1069,6 +1272,7 @@ def main(argv: list[str] | None = None) -> int:
     p_chunk.add_argument("--encoding", default=None)
     p_chunk.add_argument("--chunk-chars", type=int, default=3500)
     p_chunk.add_argument("--context-chars", type=int, default=600)
+    p_chunk.add_argument("--batch-size", type=int, default=5, help="Chunks per worker shard to prevent context bloat")
     p_chunk.add_argument("--include-front-matter", action="store_true")
 
     p_trim = sub.add_parser("trim-contexts", help="Trim claim contexts to copyright-safe snippets")
@@ -1080,15 +1284,21 @@ def main(argv: list[str] | None = None) -> int:
     p_imp_ext.add_argument("--proposals", type=Path, required=True, help="JSON/JSONL file or directory of <chunk_id>.json")
     p_imp_ext.add_argument("--encoding", default=None)
     p_imp_ext.add_argument("--include-front-matter", action="store_true")
+    p_imp_ext.add_argument("--require-proof", action="store_true", help="Enforce proof-of-reading (body_sha256_12 + tail_anchor) on every chunk")
 
     p_exp = sub.add_parser("export-verify-tasks", help="Export extracted predictions for Agent web verification")
     p_exp.add_argument("--case", type=Path, required=True)
     p_exp.add_argument("--output", type=Path, default=None)
+    p_exp.add_argument("--batch-size", type=int, default=4, help="Predictions per verification worker shard")
 
     p_app = sub.add_parser("apply-assessments", help="Register Agent-fetched evidence (SHA-256) and apply assessments")
     p_app.add_argument("--case", type=Path, required=True)
     p_app.add_argument("--assessments", type=Path, required=True)
     p_app.add_argument("--evidence-raw", type=Path, default=None)
+    p_app.add_argument("--require-dual-evidence", action="store_true", help="Enforce >=2 independent archived evidence items per decided forecast")
+
+    p_prog = sub.add_parser("audit-progress", help="Audit extraction and verification completion without trusting agent claims")
+    p_prog.add_argument("--case", type=Path, required=True)
 
     p_iv = sub.add_parser("import-verify", help="Import verify_prediction.py run results and verify evidence hashes")
     p_iv.add_argument("--case", type=Path, required=True)
@@ -1125,6 +1335,7 @@ def main(argv: list[str] | None = None) -> int:
             encoding=args.encoding,
             chunk_chars=args.chunk_chars,
             context_chars=args.context_chars,
+            batch_size=args.batch_size,
             include_front_matter=args.include_front_matter,
         )
     elif args.command == "trim-contexts":
@@ -1136,11 +1347,19 @@ def main(argv: list[str] | None = None) -> int:
             args.proposals,
             encoding=args.encoding,
             include_front_matter=args.include_front_matter,
+            require_proof=args.require_proof,
         )
     elif args.command == "export-verify-tasks":
-        res = export_verify_tasks(args.case, args.output)
+        res = export_verify_tasks(args.case, args.output, batch_size=args.batch_size)
     elif args.command == "apply-assessments":
-        res = apply_agent_assessments(args.case, args.assessments, evidence_raw_path=args.evidence_raw)
+        res = apply_agent_assessments(
+            args.case,
+            args.assessments,
+            evidence_raw_path=args.evidence_raw,
+            require_dual_evidence=args.require_dual_evidence,
+        )
+    elif args.command == "audit-progress":
+        res = audit_progress(args.case)
     elif args.command == "import-verify":
         res = import_verify_run(args.case, args.search_run_dir)
     elif args.command == "sync-database":

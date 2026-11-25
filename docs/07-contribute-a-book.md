@@ -61,24 +61,59 @@ flowchart TB
 
 ---
 
-## 三、路径 A：自有 Agent 原生模式（零额外 API 费用）
+## 三、路径 A：自有 Agent 原生模式（零额外 API 费用 + 并行防偷懒架构）
 
-### Step A1：确定性滑窗切块
+针对整书长文本（10 万～50 万字）在 Agent 处理中常见的三大痛点（**串行太慢、Context 膨胀爆炸、Agent 偷懒跳读或只处理前半部分就声称完成**），本仓库提供了基于 **分片磁盘交换 + 密码学阅读证明（Proof-of-Reading）+ 确定性状态机重派** 的并行架构，并附带 Antigravity 原生 `run_workflow` 脚本 [`toolkit/antigravity_book_workflow.py`](../toolkit/antigravity_book_workflow.py)：
+
+1. **怎么并行（Wave-Batched Map-Reduce）**：
+   - `chunk-txt --batch-size 4` 将全书切为 3,500 字 chunk 并按每 4 个 chunk 打包成独立分片 `output/txt_import/batches/batch-XXXX.jsonl`。
+   - `export-verify-tasks --batch-size 3` 将待核验预测按每 3 条打包为 `output/verify_batches/vbatch-XXXX.jsonl`。
+   - 编排脚本通过 `parallel(wave, worker_fn)` 并发启动多路无状态 Worker Agent 同时处理不同分片。
+2. **怎么保证 Context 不爆炸（Disk-Swapped State & 200B Receipt）**：
+   - 主编排器（Orchestrator）**绝不读取原书文本或任何 chunk 正文**，仅读取 `manifest.json` 的分片 ID 列表。
+   - 每个 Worker Agent 拥有全新的独立上下文，只读取自己负责的 1 个小分片（约 1.2 万字），将结果直接落盘到 `chunk_proposals/<chunk_id>.json` 或 `verify_proposals/<batch_id>.jsonl`，并通过 `finish` 仅返回 `<200` 字节的计数回执。无论书有多厚，主会话与子会话 Context 始终恒定在安全水位。
+3. **怎么保证绝不偷懒（Zero-Trust Proof-of-Reading & Dual-Evidence Gates）**：
+   - **块尾锚点阅读证明（`body_sha256_12` + `tail_anchor`）**：Worker 为每个 chunk 提交 JSON 时（即使 `"predictions": []`），必须填入该块正文 SHA-256 前 12 位以及**从该 chunk `body` 后 45% 区域逐字复制的一段 `>=8` 字连续原文（`tail_anchor`）**。若 Worker 没读到块尾、只读了开头，或漏写了任何一个 chunk，`import-extractions --require-proof` 与 `audit-progress` 会直接识别并由工作流自动重派该分片。
+   - **双向证据硬门禁（`--require-dual-evidence`）**：每条已判定预测（正确/趋势符合/部分符合/错误）必须绑定 `>=2` 条独立公开来源且每条归档正文 `>=60` 字（成对覆盖支持证据与反面/瓶颈证据），单边搜证会被直接拦截。
+
+### 方式 1：Antigravity 一键并行工作流（`run_workflow`）
+在 Antigravity 中初始化案例后，直接让 Agent 调用 `run_workflow` 运行 [`toolkit/antigravity_book_workflow.py`](../toolkit/antigravity_book_workflow.py)：
+```python
+run_workflow(
+    ScriptPath="/abs/path/to/toolkit/antigravity_book_workflow.py",
+    Description="Parallel v5 book extraction and dual-evidence verification",
+    Args={
+        "case": "cases/author-book-v5",
+        "txt": "cases/author-book-v5/input/book.txt",
+        "chunk_batch_size": 4,
+        "verify_batch_size": 3,
+        "max_wave_concurrency": 6,
+        "max_retries": 3,
+    },
+)
+```
+
+### 方式 2：分步 CLI 驱动并行子智能体
+
+#### Step A1：确定性滑窗切块与分片
 ```bash
 python3 toolkit/contribute_book.py chunk-txt \
   --case cases/author-book-v5 \
-  --txt cases/author-book-v5/input/book.txt
+  --txt cases/author-book-v5/input/book.txt \
+  --batch-size 4
 ```
 程序会在 `cases/author-book-v5/output/txt_import/` 生成：
-- `chunks.jsonl`：已跳过序言/致谢/后记的 3,500 字正文切片（含前后 600 字消歧上下文）；
+- `chunks.jsonl` 与 `batches/batch-XXXX.jsonl`：已跳过序言/致谢/后记的 3,500 字正文切片（含 `body_sha256_12` 与前后 600 字消歧上下文）；
 - `prompt_v5.txt`：`DISCOVER_PROMPT_V5` 完整抽取规范；
-- `chunk_proposals/`：供 Agent 或并行子智能体按 `<chunk_id>.json` 写入抽取结果。
+- `chunk_proposals/`：供并行子智能体按 `<chunk_id>.json` 写入抽取结果。
 
-### Step A2：Agent 逐块抽取并导入对齐
-Agent 通读每个 chunk（可派发多个子智能体并行处理），为**每个** `chunk_id` 在 `chunk_proposals/<chunk_id>.json` 写出如下格式（无预测的 chunk 也必须显式保留 `"predictions": []` 以防漏读）：
+#### Step A2：并行子智能体逐块抽取、阅读证明校验并导入对齐
+每个并行子智能体读取分配给它的 `batches/batch-XXXX.jsonl`，为**每个** `chunk_id` 在 `chunk_proposals/<chunk_id>.json` 写出如下格式（无预测的 chunk 也必须显式保留 `"predictions": []` 及块尾 `tail_anchor` 以防漏读）：
 ```json
 {
   "id": "txt-00001",
+  "body_sha256_12": "a1b2c3d4e5f6",
+  "tail_anchor": "从该chunk的body后45%末尾区域逐字摘录的连续原句",
   "predictions": [
     {
       "quote": "从 body 中逐字照抄的连续原文",
@@ -104,28 +139,31 @@ Agent 通读每个 chunk（可派发多个子智能体并行处理），为**每
   ]
 }
 ```
-随后运行确定性导入（自动完成逐字引文对齐、v5 7 类非预测筛除、去重与版权上下文裁剪）：
+运行零信任进度审计与确定性导入（强制核验每个块的阅读证明、逐字引文对齐、v5 7 类非预测筛除、去重与版权上下文裁剪）：
 ```bash
+python3 toolkit/contribute_book.py audit-progress --case cases/author-book-v5
 python3 toolkit/contribute_book.py import-extractions \
   --case cases/author-book-v5 \
   --txt cases/author-book-v5/input/book.txt \
-  --proposals cases/author-book-v5/output/txt_import/chunk_proposals
+  --proposals cases/author-book-v5/output/txt_import/chunk_proposals \
+  --require-proof
 ```
 
-### Step A3：导出核验任务、联网双向搜证并落盘
+#### Step A3：导出核验分片、联网双向搜证并落盘
 ```bash
-python3 toolkit/contribute_book.py export-verify-tasks --case cases/author-book-v5
+python3 toolkit/contribute_book.py export-verify-tasks --case cases/author-book-v5 --batch-size 3
 ```
-Agent 逐条读取 `output/verify_tasks.jsonl`，利用自带联网工具对每条预测**强制成对搜索支持证据与反面/瓶颈证据**，分别准备：
-- `evidence_raw.jsonl`：每条含 `{"id": "ev-001", "url": "https://...", "date": "2024-05-01", "coverage": "2010-2024", "excerpt": "关键原句", "limitation": "口径限制", "text": "抓取的公开页面正文"}`；
-- `assessments.jsonl`：按 `METHOD.md` 五类互斥结论与六维语义复核标准写出 `{"id": "...", "inclusion": "forecast", "verdict": "正确|部分符合|错误|暂无法判断", "basis": "endpoint|observed_window|conditional|future|definition|evidence|attribution", "scope": "...", "reason": "...", "limitation": "...", "evidence_ids": ["ev-001"], "method": "...", "method_basis": "explicit|inferred|unknown", "observation_end": "YYYY-MM-DD", "future_time_text": "", "condition_state": "unconditional|satisfied|not_met|unknown", "trend_aligned": false}`（其中 `verdict="部分符合"` 且 `trend_aligned=true` 自动展示为“趋势符合”）。
+并行子智能体按 `output/verify_batches/vbatch-XXXX.jsonl` 领取任务，利用自带联网工具对每条预测**强制成对搜索支持证据与反面/瓶颈证据（每条已判定预测 >=2 条独立证据）**，分别准备：
+- `evidence_raw.jsonl`（或 `output/evidence_proposals/*.jsonl`）：每条含 `{"id": "ev-001", "url": "https://...", "date": "2024-05-01", "coverage": "2010-2024", "excerpt": "关键原句", "limitation": "口径限制", "text": "抓取的公开页面正文（>=60字）"}`；
+- `assessments.jsonl`（或 `output/verify_proposals/*.jsonl`）：按 `METHOD.md` 五类互斥结论与六维语义复核标准写出评估记录。
 
-执行一键证据 SHA-256 归档与原子落盘：
+执行一键证据 SHA-256 归档、双向证据完备性校验与原子落盘：
 ```bash
 python3 toolkit/contribute_book.py apply-assessments \
   --case cases/author-book-v5 \
-  --assessments cases/author-book-v5/output/assessments.jsonl \
-  --evidence-raw cases/author-book-v5/output/evidence_raw.jsonl
+  --assessments cases/author-book-v5/output/verify_proposals \
+  --evidence-raw cases/author-book-v5/output/evidence_proposals \
+  --require-dual-evidence
 ```
 
 ---

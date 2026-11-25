@@ -35,21 +35,42 @@ python3 toolkit/contribute_book.py init \
 ```
 
 ### 2. 抽取阶段
-- **路径 A**：
-  1. 运行 `python3 toolkit/contribute_book.py chunk-txt --case cases/<slug> --txt <txt路径>`。
-  2. 读取 `cases/<slug>/output/txt_import/prompt_v5.txt` 与 `chunks.jsonl`，对**每一个** chunk_id 写出 `chunk_proposals/<chunk_id>.json`（无预测的块必须写 `{"id":"...","predictions":[]}`，绝不漏读）。
-  3. 严守逐字 `quote`、7 类非预测筛除（比喻/格言/倡议/仪式/历史/纯机制/反事实）与代指逐字依据展开。
-  4. 运行 `python3 toolkit/contribute_book.py import-extractions --case cases/<slug> --txt <txt路径> --proposals cases/<slug>/output/txt_import/chunk_proposals`（自动对齐、去噪并裁剪 `context` 保护版权）。
+- **路径 A（Antigravity `run_workflow` 并行零膨胀防偷懒编排，首选）**：
+  1. 直接调用 Antigravity 的 `run_workflow` 工具运行 [`toolkit/antigravity_book_workflow.py`](../../../toolkit/antigravity_book_workflow.py)：
+     ```python
+     run_workflow(
+         ScriptPath="/abs/path/to/toolkit/antigravity_book_workflow.py",
+         Description="Parallel v5 book extraction and dual-evidence verification",
+         Args={
+             "case": "cases/<slug>",
+             "txt": "cases/<slug>/input/book.txt",
+             "chunk_batch_size": 4,
+             "verify_batch_size": 3,
+             "max_wave_concurrency": 6,
+             "max_retries": 3,
+         },
+     )
+     ```
+  2. **三大确定性保障**：
+     - **分片并发（Parallel Wave Map-Reduce）**：`chunk-txt --batch-size 4` 自动切分小分片（`output/txt_import/batches/batch-XXXX.jsonl`），由 `parallel()` 并发调度多个无状态 Worker Agent 同时抽取与双向搜证。
+     - **Context 零膨胀（Disk-Swapped State）**：每个 Worker 只读自己负责的 3~5 个 chunk 分片并在磁盘写出 `chunk_proposals/<chunk_id>.json`，通过 `finish` 仅返回 `<200B` 的回执；主 Agent 内存与 Context 恒定不随书长增长。
+     - **零信任防偷懒（Proof-of-Reading + Dual-Evidence Gate）**：
+       - 每个 chunk 提案必须携带 `body_sha256_12` 与 `tail_anchor`（从该 chunk `body` 后 45% 末尾区域逐字摘录 `>=8` 字连续原文）；`import-extractions --require-proof` 与 `audit-progress` 会在重派循环中自动拦截并重跑任何漏读、只读开头就停、或伪造完成的分片。
+       - 核验阶段通过 `apply-assessments --require-dual-evidence` 强制每条已判定预测至少绑定 2 条独立归档正文（`>=60` 字，支持 + 反面/瓶颈），严防敷衍了事。
+- **路径 A（手动/单步命令模式）**：
+  1. 运行 `python3 toolkit/contribute_book.py chunk-txt --case cases/<slug> --txt <txt路径> --batch-size 4`。
+  2. 读取 `cases/<slug>/output/txt_import/prompt_v5.txt` 与 `batches/batch-*.jsonl`，对**每一个** chunk_id 写出 `chunk_proposals/<chunk_id>.json`（含 `body_sha256_12`、`tail_anchor` 与 `predictions`，无预测的块必须写 `"predictions":[]`，绝不漏读）。
+  3. 运行 `python3 toolkit/contribute_book.py audit-progress --case cases/<slug>` 确认 `ready=true`，再运行 `python3 toolkit/contribute_book.py import-extractions --case cases/<slug> --txt <txt路径> --proposals cases/<slug>/output/txt_import/chunk_proposals --require-proof`。
 - **路径 B**：
   1. 运行 `python3 toolkit/prepare_book.py --case cases/<slug> txt <txt路径> --apply`（支持 `--api-base` 与 `--model`）。
   2. 立即运行 `python3 toolkit/contribute_book.py trim-contexts --case cases/<slug>` 裁剪上下文。
 
 ### 3. 双向搜证与六维复核阶段
 - **路径 A**：
-  1. 运行 `python3 toolkit/contribute_book.py export-verify-tasks --case cases/<slug>`。
-  2. 对 `output/verify_tasks.jsonl` 每条预测**成对检索支持证据与反面证据**（优先官方统计、央行、IEA/OECD/世行、财报与学术一手出处），抓取完整公开正文写入 `evidence_raw.jsonl`。
+  1. 运行 `python3 toolkit/contribute_book.py export-verify-tasks --case cases/<slug> --batch-size 3`。
+  2. 对 `output/verify_batches/vbatch-*.jsonl` 每条预测**成对检索支持证据与反面证据**（优先官方统计、央行、IEA/OECD/世行、财报与学术一手出处），抓取完整公开正文写入 `evidence_raw.jsonl`（或 `output/evidence_proposals/`）。
   3. 按 `toolkit/METHOD.md` 五类互斥结论与六维逻辑门（对象匹配、条件逻辑、时间对应、证据支持、反证处理、结论逻辑）自查后写出 `assessments.jsonl`（明确趋势但终点未到使用 `verdict="部分符合"` + `trend_aligned=true`）。
-  4. 运行 `python3 toolkit/contribute_book.py apply-assessments --case cases/<slug> --assessments <assessments.jsonl> --evidence-raw <evidence_raw.jsonl>`。
+  4. 运行 `python3 toolkit/contribute_book.py apply-assessments --case cases/<slug> --assessments <assessments.jsonl> --evidence-raw <evidence_raw.jsonl> --require-dual-evidence`。
 - **路径 B**：
   1. 运行 `python3 toolkit/verify_prediction.py --case cases/<slug> --all-forecasts`（支持 `--api-base` 与 `--model`）。
   2. 运行 `python3 toolkit/contribute_book.py import-verify --case cases/<slug>`。

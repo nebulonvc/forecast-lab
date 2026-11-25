@@ -319,6 +319,169 @@ class ContributeBookTests(unittest.TestCase):
             pr = cb.pr_check(case_dir, repo_root=repo)
             self.assertEqual(pr["pr_check"], "passed")
 
+    def test_anti_laziness_proof_of_reading_and_dual_evidence_gates(self):
+        with tempfile.TemporaryDirectory() as d:
+            repo = self._make_temp_repo(Path(d))
+            case_dir = repo / "cases/anti-lazy-book-v5"
+            cb.init_case(
+                case_dir,
+                book="防偷懒压测之书",
+                author="严格审计员",
+                publication_year=2021,
+                domain="科技商业",
+                author_type="科技商业思想家",
+                cutoff="2026-11-24",
+                execution_mode="agent-native-v5",
+            )
+            txt_path = case_dir / "input/book.txt"
+            head_part = "第一章 导论\n" + ("这是前半部分的论述文字，探讨产业链的早期演进背景。" * 18)
+            tail_part = "在章节结尾处，到2025年底全球电动重卡渗透率将突破10%。这是本章末尾的终局锚点句子。\n"
+            chap2 = "第二章 尾声\n" + ("第二章前半段讨论基础设施布局与电网改造进度。" * 18) + "本章末尾总结：电网储能成本还将继续下降。\n"
+            txt_path.write_text(head_part + "\n" + tail_part + "\n" + chap2, encoding="utf-8")
+
+            manifest = cb.chunk_txt_for_agent(case_dir, txt_path, chunk_chars=550, context_chars=100, batch_size=1, repo_root=repo)
+            self.assertGreaterEqual(manifest["active_chunks"], 2)
+            self.assertEqual(len(manifest["batches"]), manifest["active_chunks"])
+
+            # 1. Initial audit-progress reports 0 proof_verified_chunks and all batches pending
+            prog0 = cb.audit_progress(case_dir)
+            self.assertFalse(prog0["extraction"]["ready"])
+            self.assertEqual(prog0["extraction"]["proof_verified_chunks"], 0)
+            self.assertEqual(len(prog0["extraction"]["pending_batches"]), manifest["active_chunks"])
+
+            chunks = cb._read_jsonl(case_dir / "output/txt_import/chunks.jsonl")
+            prop_dir = case_dir / "output/txt_import/chunk_proposals"
+
+            # 2. Simulate a lazy agent that only read the beginning of chunk 1 (tail_anchor from head, not last 45%)
+            for ch in chunks:
+                (prop_dir / f"{ch['id']}.json").write_text(
+                    json.dumps({
+                        "id": ch["id"],
+                        "body_sha256_12": ch["body_sha256_12"],
+                        "tail_anchor": ch["body"][:16].strip(),
+                        "predictions": [],
+                    }, ensure_ascii=False),
+                    encoding="utf-8",
+                )
+            with self.assertRaisesRegex(ValueError, "Lazy agent guard.*not in the last 45%"):
+                cb.import_agent_extractions(case_dir, txt_path, prop_dir, require_proof=True, repo_root=repo)
+
+            # 3. Simulate a lazy agent with fabricated/wrong body_sha256_12
+            (prop_dir / f"{chunks[0]['id']}.json").write_text(
+                json.dumps({
+                    "id": chunks[0]["id"],
+                    "body_sha256_12": "000000000000",
+                    "tail_anchor": chunks[0]["body"][-20:].strip(),
+                    "predictions": [],
+                }, ensure_ascii=False),
+                encoding="utf-8",
+            )
+            with self.assertRaisesRegex(ValueError, "Lazy agent guard.*body_sha256_12 mismatch"):
+                cb.import_agent_extractions(case_dir, txt_path, prop_dir, require_proof=True, repo_root=repo)
+
+            # 4. Write valid proof-of-reading for all chunks
+            for ch in chunks:
+                preds = []
+                if "全球电动重卡渗透率将突破10%" in ch["body"]:
+                    preds.append({
+                        "quote": "到2025年底全球电动重卡渗透率将突破10%。",
+                        "kind": "prediction",
+                        "claim_type": "forecast",
+                        "speaker": "严格审计员",
+                        "attribution": "author",
+                        "future_oriented": True,
+                        "claim": "到2025年底全球电动重卡渗透率将突破10%",
+                        "changes": "全球电动重卡渗透率突破10%",
+                        "horizon": "到2025年底",
+                        "resolvable": True,
+                        "confidence": "high",
+                        "expanded_claim": "到2025年底全球电动重卡渗透率将突破10%。",
+                        "reference_resolutions": [],
+                        "unresolved_references": [],
+                        "time_text": "到2025年底",
+                        "condition_text": "",
+                        "method": "S曲线外推",
+                        "method_basis": "explicit",
+                        "reason": "明确量化预测",
+                    })
+                (prop_dir / f"{ch['id']}.json").write_text(
+                    json.dumps({
+                        "id": ch["id"],
+                        "body_sha256_12": ch["body_sha256_12"],
+                        "tail_anchor": ch["body"][-18:].strip(),
+                        "predictions": preds,
+                    }, ensure_ascii=False),
+                    encoding="utf-8",
+                )
+
+            prog1 = cb.audit_progress(case_dir)
+            self.assertTrue(prog1["extraction"]["ready"])
+            self.assertEqual(prog1["extraction"]["pending_batches"], [])
+
+            imp_res = cb.import_agent_extractions(case_dir, txt_path, prop_dir, require_proof=True, repo_root=repo)
+            self.assertEqual(imp_res["proof_of_reading_verified_chunks"], len(chunks))
+            self.assertEqual(imp_res["imported_claims"], 1)
+
+            # 5. Verification sharding & Dual-evidence anti-laziness gate
+            exp_res = cb.export_verify_tasks(case_dir, batch_size=2)
+            self.assertEqual(exp_res["tasks"], 1)
+            self.assertEqual(exp_res["batches"], 1)
+            cid = cb._read_jsonl(case_dir / "output/verify_tasks.jsonl")[0]["id"]
+
+            ev_raw = case_dir / "output/evidence_raw.jsonl"
+            ev_raw.write_text(
+                json.dumps({
+                    "id": "ev-01",
+                    "url": "https://iea.org/reports/global-ev-outlook-2026",
+                    "date": "2026-04-10",
+                    "coverage": "2021-2025",
+                    "excerpt": "2025年全球电动重卡销量占比约为3.8%，主要集中在中国与欧洲。",
+                    "limitation": "IEA全球口径",
+                    "text": "国际能源署（IEA）《2026全球电动汽车展望》官方统计数据显示：截至2025年底，全球重型卡车电动化渗透率达到3.8%，虽较2021年显著增长，但受限于长途干线充电兆瓦级快充网络建设滞后，未达到10%门槛。",
+                }, ensure_ascii=False) + "\n",
+                encoding="utf-8",
+            )
+            asm_path = case_dir / "output/assessments.jsonl"
+            asm_obj = {
+                "id": cid,
+                "inclusion": "forecast",
+                "verdict": "错误",
+                "basis": "endpoint",
+                "scope": "2025年底全球电动重卡销量渗透率",
+                "reason": "2025年底全球电动重卡实际渗透率约3.8%，未突破10%。",
+                "limitation": "各国重卡吨位定义存在差异。",
+                "evidence_ids": ["ev-01"],
+                "method": "S曲线外推",
+                "method_basis": "explicit",
+                "observation_end": "2025-12-31",
+                "future_time_text": "",
+                "condition_state": "unconditional",
+                "trend_aligned": False,
+            }
+            asm_path.write_text(json.dumps(asm_obj, ensure_ascii=False) + "\n", encoding="utf-8")
+
+            # Lazy single-evidence submission is rejected when require_dual_evidence=True
+            with self.assertRaisesRegex(ValueError, "Lazy agent guard.*at least 2 independent evidence"):
+                cb.apply_agent_assessments(case_dir, asm_path, evidence_raw_path=ev_raw, require_dual_evidence=True)
+
+            # Adding second independent evidence item passes dual-evidence check
+            with ev_raw.open("a", encoding="utf-8") as f:
+                f.write(json.dumps({
+                    "id": "ev-02",
+                    "url": "https://icct.org/publication/heavy-duty-zevs-2025",
+                    "date": "2026-03-18",
+                    "coverage": "2025",
+                    "excerpt": "中国2025年新能源重卡渗透率突破12%，但北美与拉美市场仍低于1.5%，拉低全球均值。",
+                    "limitation": "ICCT区域对比报告",
+                    "text": "国际清洁交通委员会（ICCT）2026年3月发布的《全球零排放重型商用车市场追踪》指出：2025年中国新能源重卡销量占比已突破12%（支持局部市场破10%的趋势），然而美国、印度及拉美市场受制于兆瓦充电桩与购置成本，渗透率不足1.5%，导致全球汇总渗透率停留在3.8%~4.1%区间。",
+                }, ensure_ascii=False) + "\n")
+            asm_obj["evidence_ids"] = ["ev-01", "ev-02"]
+            asm_path.write_text(json.dumps(asm_obj, ensure_ascii=False) + "\n", encoding="utf-8")
+
+            app_res = cb.apply_agent_assessments(case_dir, asm_path, evidence_raw_path=ev_raw, require_dual_evidence=True)
+            self.assertEqual(app_res["dual_evidence_verified"], 1)
+            self.assertEqual(app_res["evidence_registered"], 2)
+
 
 if __name__ == "__main__":
     unittest.main()
