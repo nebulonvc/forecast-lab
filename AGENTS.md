@@ -47,7 +47,7 @@
 
 ### 任务 C：拆解新书、长篇报告或人物访谈并提交 PR 合入数据库
 1. **初始化并选择路径**：使用 `python3 toolkit/contribute_book.py init --case cases/<slug> ...` 初始化案例（详见 [`.agents/skills/book-contributor/SKILL.md`](.agents/skills/book-contributor/SKILL.md) 与 [`docs/07-contribute-a-book.md`](docs/07-contribute-a-book.md)）：
-   - **路径 A（自有 Agent 原生模式）**：`contribute_book.py chunk-txt` → Agent 逐块抽取 → `import-extractions` → `export-verify-tasks` → Agent 成对联网搜证与六维自检 → `apply-assessments`；
+   - **路径 A（自有 Agent 原生并行防偷懒模式）**：优先调用 Antigravity `run_workflow` 执行 [`toolkit/antigravity_book_workflow.py`](toolkit/antigravity_book_workflow.py)（或分步执行 `contribute_book.py chunk-txt --batch-size 4` → 并行子智能体逐分片抽取并附带 `body_sha256_12` + `tail_anchor` 块尾阅读证明 → `audit-progress` → `import-extractions --require-proof` → `export-verify-tasks --batch-size 3` → 并行子智能体成对联网搜证与六维自检 → `apply-assessments --require-dual-evidence`），从根源上保证分片并行、Context 零膨胀且绝不跳读偷懒；
    - **路径 B（自有 API 并发模式）**：`prepare_book.py txt --apply`（支持 `--api-base`）→ `contribute_book.py trim-contexts` → `verify_prediction.py --all-forecasts` → `contribute_book.py import-verify`。
 2. **严守版权与隐私红线**：完整原书 TXT/PDF 必须放在仓库外或被忽略的 `cases/<slug>/input/` 目录，**严禁将完整原书、未裁剪的长上下文、API 密钥或中间包含全文的 `txt_import` 分块计划提交进 Git**。
 3. **合入总表与门禁验收**：提交 PR 前必须同步数据库并通过全部门禁：
