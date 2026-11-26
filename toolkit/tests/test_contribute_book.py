@@ -22,7 +22,14 @@ class ContributeBookTests(unittest.TestCase):
         (repo / "datasets").mkdir(parents=True)
         (repo / "cases").mkdir(parents=True)
         (repo / "docs").mkdir(parents=True)
-        shutil.copy2(REPO_ROOT / "datasets/all_cases_summary.csv", repo / "datasets/all_cases_summary.csv")
+        with (REPO_ROOT / "datasets/all_cases_summary.csv").open(encoding="utf-8-sig", newline="") as src:
+            reader = csv.DictReader(src)
+            fieldnames = list(reader.fieldnames or [])
+            base_rows = [r for r in reader if not str(r.get("批次口径") or "").startswith("v5_community")]
+        with (repo / "datasets/all_cases_summary.csv").open("w", encoding="utf-8-sig", newline="") as dst:
+            writer = csv.DictWriter(dst, fieldnames=fieldnames)
+            writer.writeheader()
+            writer.writerows(base_rows)
         shutil.copy2(REPO_ROOT / "docs/make_ranking.py", repo / "docs/make_ranking.py")
         return repo
 

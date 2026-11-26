@@ -38,8 +38,8 @@ TOOLS_SPEC: list[dict[str, Any]] = [
         "name": "optimize_forecast",
         "description": (
             "Audit a draft prediction and optimize its forecasting method, counter-lens, and commitment "
-            "hardness using Forecast Lab's Super-Learner trained on 132 works (8,130 predictions, "
-            "5,060 decided verdicts, 2,553 non-forecasts, and t_0 macro-historical regimes)."
+            "hardness using Forecast Lab's Super-Learner trained on 146 works (10,745 predictions, "
+            "7,522 decided verdicts, 2,942 non-forecasts, and t_0 macro-historical regimes)."
         ),
         "inputSchema": {
             "type": "object",
@@ -241,7 +241,7 @@ TOOLS_SPEC: list[dict[str, Any]] = [
 RESOURCES_SPEC: list[dict[str, Any]] = [
     {
         "uri": "forecast-lab://benchmark/out-of-book-cv",
-        "name": "Out-of-Book 5-Fold Cross-Validation Benchmark (8,130 Forecasts)",
+        "name": "Out-of-Book 5-Fold Cross-Validation Benchmark (10,745 Forecasts)",
         "description": "Empirical proper scoring rule comparison (Brier, LogLoss, RPS, ECE) across 7 academic models.",
         "mimeType": "application/json",
     },
@@ -455,11 +455,11 @@ class ForecastMCPServer:
             prompt_text = (
                 f"用户提出了以下预测想法：\n「{idea}」（领域提示：{dom or '自动识别'}）。\n\n"
                 "请严格执行 Forecast Lab 数据驱动优化闭环（铁律：最终交付的预测必须把【预测方法与推导链】完整写出来，绝不只给裸结论或单一概率）：\n"
-                "1. 先调用 `optimize_forecast` 工具，获取该草案的样本外校准概率分布、可操作化缺口、命中的高赔率噪音陷阱，以及基于 8,130 条历史预测优选出的最佳「主方法 + 四步推导链 + 反校验透镜 + 承诺硬度」与边际改善幅度。\n"
+                "1. 先调用 `optimize_forecast` 工具，获取该草案的样本外校准概率分布、可操作化缺口、命中的高赔率噪音陷阱，以及基于 10,745 条历史预测优选出的最佳「主方法 + 四步推导链 + 反校验透镜 + 承诺硬度」与边际改善幅度。\n"
                 "2. 结合返回的成功先例（H编号）与大师翻车反例（M编号），帮用户把原想法收敛为完整的《终局预测卡》，必须显式包含：\n"
                 "   - **可核验预测承诺**（主体、对象、量词、含分母可测指标、唯一权威数据源、明确期限）；\n"
                 "   - **显式预测方法与四步推导链**（写明采用哪套主方法、基期存量/流量/激励约束怎么算出该结论、配了什么反校验透镜对冲盲区、为何匹配当前承诺硬度）；\n"
-                "   - **8,130 库校准先验概率**与**定期领先指标 + 明确证伪阈值**。\n"
+                "   - **10,745 库校准先验概率**与**定期领先指标 + 明确证伪阈值**。\n"
                 "3. 再次调用 `optimize_forecast` 验证改写后版本的校准严格胜率提升与错误率下降，展示前后对比表；确认后调用 `register_optimized_forecast`（传入 `method_derivation`）冻结入库。"
             )
             return {
@@ -509,7 +509,7 @@ class ForecastMCPServer:
                     },
                     "instructions": (
                         "Use optimize_forecast before drafting or registering any prediction to calibrate "
-                        "probabilities against 8,130 historical forecasts and select the optimal reasoning method."
+                        "probabilities against 10,745 historical forecasts and select the optimal reasoning method."
                     ),
                 }
                 return {"jsonrpc": "2.0", "id": msg_id, "result": result}

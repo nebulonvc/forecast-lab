@@ -1,6 +1,6 @@
 # 实证案例档案馆（`cases/`）
 
-本目录收录了全部已通过 `toolkit/pipeline.py check` 字节级哈希与结构校验的 **134 个案例目录**（去重早期合并版本后对应全景报告中的 **132 部独立作品**）。
+本目录收录了全部已通过 `toolkit/pipeline.py check` 字节级哈希与结构校验的 **148 个案例目录**（去重早期合并版本后对应全景报告中的 **146 部独立作品**）。
 
 每个案例目录彼此完全独立，不共享全局变量或外部数据库，也**绝不包含受版权保护的原书全文**。
 
@@ -39,9 +39,13 @@ cases/<case-slug>/
 - **硬约束账本与专业智库**
   - 英国政府科学办公室《智能基础设施 2055》(2006)：[`curry-intelligent-infrastructure-futures-2055-v5`](curry-intelligent-infrastructure-futures-2055-v5/)（20 年检验严格胜率 74.1%）
   - 国际能源署《全球关键矿产展望 2024》：[`iea-global-critical-minerals-outlook-2024-v5`](iea-global-critical-minerals-outlook-2024-v5/)（严格胜率 66.7%，错误率 3.2%）
+  - 瓦茨拉夫·斯米尔《能源转型》(2010)：[`smil-energy-transitions-v5`](smil-energy-transitions-v5/)（69 条可判定，方向命中 66.7%，错误率仅 2.9%）
   - 威廉·斯坦利·杰文斯《煤炭问题》(1866)：[`jevons-coal-question-v5`](jevons-coal-question-v5/)（160 年检验严格胜率 52.8%，提出杰文斯悖论）
 - **产业颠覆、互联网与人工智能**
+  - 克里斯·米勒《芯片战争》(2022)：[`miller-chip-war-v5`](miller-chip-war-v5/)（41 条可判定，严格胜率 63.4%，0 错误）
+  - 比尔·盖茨《未来之路》(1995)：[`gates-road-ahead-v5`](gates-road-ahead-v5/)（740 条可判定，31 年检验严格胜率 55.7%，错误率仅 3.5%）
   - 克莱顿·克里斯坦森《创新者的窘境》(1997)：[`christensen-innovators-dilemma-v5`](christensen-innovators-dilemma-v5/)
   - 凯文·凯利《失控》(1994)：[`kelly-out-of-control-v5`](kelly-out-of-control-v5/)（230 条可判定，32 年错误率仅 5.7%）
   - 尼克·博斯特罗姆《超级智能》(2014)：[`bostrom-superintelligence-v5`](bostrom-superintelligence-v5/)（44 条可判定，0 错误）
+  - 丹尼尔·贝尔《后工业社会的来临》(1973)：[`bell-post-industrial-society-v5`](bell-post-industrial-society-v5/)（262 条可判定，53 年检验错误率仅 4.2%）
 - **全书横向指标检索**：请直接配合 [`../datasets/all_cases_summary.csv`](../datasets/all_cases_summary.csv) 按 `slug` 列快速定位任意一本书。
