@@ -1,0 +1,117 @@
+Internet Engineering Task Force (IETF)                         K. Larose
+Request for Comments: 8952                                      Agilicus
+Category: Informational                                        D. Dolson
+ISSN: 2070-1721                                                         
+                                                                  H. Liu
+                                                                  Google
+                                                           November 2020
+
+
+                      Captive Portal Architecture
+
+Abstract
+
+   This document describes a captive portal architecture.  Network
+   provisioning protocols such as DHCP or Router Advertisements (RAs),
+   an optional signaling protocol, and an HTTP API are used to provide
+   the solution.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+   Internet Engineering Steering Group (IESG).  Not 
+
+1.  Introduction
+
+   In this document, "Captive Portal" is used to describe a network to
+   which a device may be voluntarily attached, such that network access
+   is limited until some requirements have been fulfilled.  Typically, a
+   user is required to use a web browser to fulfill requirements imposed
+   by the network operator, such as reading advertisements, accepting an
+   acceptable-use policy, or providing some form of credentials.
+
+   Implementations of captive portals generally require a web server,
+   some method to allow/block traffic, and some method to alert the
+   user.  Common methods of alerting the user in implementations prior
+   to this work involve modifying HTTP or DNS traffic.
+
+   This document describes an architecture for implementing captive
+   portals while addressing most of the problems arising for current
+   captive portal mechanisms.  The architecture is guided by these
+   requirements:
+
+   *  Current captive portal solutions typically implement some
+      variations of forging DNS or HTTP responses.  Some attempt man-in-
+      the-middle (MITM) proxy of HTTPS in order to forge responses.
+      Captive portal solutions should not have to break any protocols or
+      otherwise act in the manner of an attacker.  Therefore, solutions
+      MUST NOT require the forging of responses from DNS or HTTP servers
+      or from any other protocol.
+
+   *  Solutions MUST permit clients to perform DNSSEC validation, which
+      rules out solutions that forge DNS responses.  Solutions SHOULD
+      permit clients to detect and avoid TLS man-in-the-middle attacks
+      without requiring a human to perform any kind of "exception"
+      processing.
+
+   *  To maximize universality and adoption, solutions MUST operate at
+      the layer of Internet Protocol (IP) or above, not being specific
+      to any particular access technology such as cable, Wi-Fi, or
+      mobile telecom.
+
+   *  Solutions SHOULD allow a device to query the network to determine
+      whether the device is captive, without the solution being coupled
+      to forging intercepted protocols or requiring the device to make
+      sacrificial queries to "canary" URIs to check for response
+      tampering (see Appendix A).  Current captive portal solutions that
+      work by affecting DNS or HTTP generally only function as intended
+      with browsers, breaking other applications using those protocols;
+      applications using other protocols are not alerted that the
+      network is a captive portal.
+
+   *  The state of captivity SHOULD be explicitly available to devices
+      via a standard protocol, rather than having to infer the state
+      indirectly.
+
+   *  The architecture MUST provide a path of incremental migration,
+      acknowledging the existence of a huge variety of pre-existing
+      portals and end-user device implementations and software versions.
+      This requirement is not to recommend or standardize existing
+      approaches, but rather to provide device and portal implementors a
+      path to a new standard.
+
+   A side benefit of the architecture described in this document is that
+   devices without user interfaces are able to identify parameters of
+   captivity.  However, this document does not describe a mechanism for
+   such devices to negotiate for unrestricted network access.  A future
+   document could provide a solution to devices without user interfaces.
+   This document focuses on devices with user interfaces.
+
+   The architecture uses the following mechanisms:
+
+   *  Network provisioning protocols provide end-user devices with a
+      Uniform Resource Identifier (URI) [RFC3986] for the API that end-
+      user devices query for information about what is required to
+      escape captivity.  DHCP, DHCPv6, and Router Advertisement options
+      for this purpose are available in [RFC8910].  Other protocols
+      (such as RADIUS), Provisioning Domains [CAPPORT-PVD], or static
+      configuration may also be used to convey this Captive Portal API
+      URI.  A device MAY query this API at any time to determine whether
+      the network is holding the device in a captive state.
+
+   *  A Captive Portal can signal User Equipment in response to
+      transmissions by the User Equipment.  This signal works in
+      response to any Internet protocol and is not done by modifying
+      protocols in band.  This signal does not carry the Captive Portal
+      API URI; rather, it provides a signal to the User Equipment that
+      it is in a captive state.
+
+   *  Receipt of a Captive Portal Signal provides a hint that User
+      Equipment could be captive.  In response, the device MAY query the
+      provisioned API to obtain information about the network state.
+      The device can take immediate action to satisfy the po

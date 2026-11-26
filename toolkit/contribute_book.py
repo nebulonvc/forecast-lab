@@ -93,8 +93,8 @@ SECRET_PATTERNS = (
     re.compile(r"Bearer\s+[A-Za-z0-9._-]{20,}"),
 )
 PRIVACY_PATH_PATTERNS = (
-    re.compile(r"/Users/[^/\s\"']+"),
-    re.compile(r"/home/[^/\s\"']+"),
+    re.compile(r"(?<![A-Za-z0-9._-])/Users/[^/\s\"']+"),
+    re.compile(r"(?<![A-Za-z0-9._-])/home/[^/\s\"']+"),
     re.compile(r"[A-Za-z]:\\\\Users\\\\[^\\\s\"']+"),
 )
 MAX_QUOTE_CHARS = 1200

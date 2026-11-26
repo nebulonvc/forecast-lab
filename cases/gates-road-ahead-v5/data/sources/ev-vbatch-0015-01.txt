@@ -1,0 +1,28 @@
+2. It was first published in 2013. HEVC was seen as an evolution of earlier video coding specifications, namely ITU-T H.261 (
+MPEG-1
+), ITU-T H.262 (
+MPEG-2
+), ITU-T H.263 (
+MPEG-4, Visual Coding
+) and ITU-T H.264 (
+MPEG-4, Advanced Video Coding
+). HEVC was developed in response to the growing need for higher compression of moving pictures for various applications such as streaming, videoconferencing, digital storage media and television broadcasting. The HEVC syntax was designed to enable the use of the coded video representation in a flexible manner for a wide variety of network environments and to enable a high compression capability for a desired image or video quality.
+The family of HEVC encodings comprises a large number of profiles (see below) aimed, according to the specification, at different application areas, including, but not limited to: broadcast (cable TV on optical networks / copper, satellite, terrestrial, etc.); camcorders; content production and distribution; digital cinema; home cinema; internet streaming, download and play; medical imaging; mobile streaming, broadcast and communications; real-time conversational services (videoconferencing, videophone, telepresence, etc.); remote video surveillance; storage media (optical disks, digital video tape recorder, etc.); and wireless display. Each profile is defined by constraints on the syntax as defined in the
+full HEVC (H.265) specification
+.
+A concise summary of the structures available in the HEVC syntax is provided in
+High Efficiency Video Coding (HEVC) Test Model 16 (HM 16) Encoder Description Update 13 (January 2020)
+: "HEVC has a block-based hybrid coding architecture, combining
+inter
+[temporal, see
+Notes
+below] and
+intra
+[spatial, see
+Notes
+below] prediction and transform coding with high efficiency entropy coding. However, in contrast to previous video coding standards, HEVC employs a quadtree coding block partitioning structure that enables a flexible use of large and small coding, prediction, and transform blocks. HEVC also allows for improved intra prediction and coding, adaptive motion parameter prediction and coding, a new loop filter and an enhanced version of context-adaptive binary arithmetic coding (CABAC) entropy coding over that defined by previous standards. New high-level structures have also been designed to aid parallel processing." The introduction to HEVC in a 2017 video titled
+Introducing HEIF and HEVC
+, presented at the Apple WWDC 2017 conference for developers at which Apple announced the new default formats being introduced for image and video capture on Apple mobile devices, discusses some key features that make HEVC different from the AVC (H.264) codec that preceded it.
+Evaluation of High Efficiency Video Coding (HEVC) for 3GPP services
+, a technical report from the 3rd Generation Partnership Project, also provides a useful description of HEVC, focusing on comparison to AVC.
+HEVC is a important advance on AVC (H.264), in that it supports higher bit depths and enhanced chroma formats, including the use o

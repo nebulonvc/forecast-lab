@@ -1,0 +1,7 @@
+Android devices that support raw GNSS measurements
+Raw GNSS measurements support is mandatory on devices that run Android 10 (API level 29) or higher. On Android 9 (API level 28) and lower, raw GNSS measurements support is mandatory in all Android devices that contain hardware year 2016 or newer. Currently, more than 90% of existing Android phones have raw measurements.
+The support for some of the raw GNSS measurement fields is optional and can vary based on GNSS chipset used. Examples of these fields include the following:
+Pseudorange and pseudorange rate.
+Navigation message.
+Automatic Gain Controller (AGC) value.
+Accumulated delta range (ADR) or carrier phase.
