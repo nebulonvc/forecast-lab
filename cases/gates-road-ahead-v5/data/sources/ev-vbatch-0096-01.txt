@@ -1,0 +1,13 @@
+POSTED ON DECEMBER 6, 2023 TO Security & Privacy
+ Building end-to-end security for Messenger
+ By Jon Millican, Reed Riley 
+We are beginning to upgrade people’s personal conversations on Messenger to use end-to-end encryption (E2EE) by default.
+Meta is publishing two technical white papers on end-to-end encryption:
+Our Messenger end-to-end encryption whitepaper describes the core cryptographic protocol for transmitting messages between clients.
+The Labyrinth encrypted storage protocol whitepaper explains our protocol for end-to-end encrypting stored messaging history between devices on a user’s account.
+Today, we’re announcing that we’ve begun to upgrade people’s personal conversations on Messenger to use E2EE by default. Our aim is to ensure that everyone’s personal messages on Messenger can only be accessed by the sender and the intended recipients, and that everyone can be sure the messages they receive are from an authentic sender.
+This is the most significant milestone yet for this project, which began in earnest after Mark Zuckerberg outlined his vision for it in 2019. Bringing E2EE to Messenger has been a complex process, with every feature and product goal revealing further challenges that required careful consideration.
+Enabling E2EE on Messenger meant fundamentally rebuilding many aspects of the application protocols to improve privacy, security, and safety while simultaneously maintaining the features that have made Messenger so popular. 
+Why we’re bringing E2EE to Messenger
+Messenger first built end-to-end encrypted chats in 2016 as a feature called Secret Conversations. Since then, we’ve learned a great deal in regards to rolling out E2EE for a wider user base. For example, we recently published an updated white paper, “Meta’s Approach to Safer Private Messaging on Messenger and Instagram Direct Messaging,” that sets out the industry-leading safety systems and tools available on Messenger.
+End-to-end encryption isn’t about the technology at its core. It’

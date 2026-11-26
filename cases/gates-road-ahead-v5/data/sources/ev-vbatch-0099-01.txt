@@ -1,0 +1,59 @@
+Abstract
+
+   This document provides recommendations for the implementation of
+   public-key cryptography based on the RSA algorithm, covering
+   cryptographic primitives, encryption schemes, signature schemes with
+   appendix, and ASN.1 syntax for representing keys and for identifying
+   the schemes.
+
+   This document represents a republication of PKCS #1 v2.2 from RSA
+   Laboratories' Public-Key Cryptography Standards (PKCS) series.  By
+   publishing this RFC, change control is transferred to the IETF.
+
+   This document also obsoletes RFC 3447.
+
+Status of This Memo
+
+   This document is not an Internet Standards Track specification; it is
+   published for informational purposes.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for publication by the
+
+3.  Key Types
+
+   Two key types are employed in the primitives and schemes defined in
+   this document: RSA public key and RSA private key.  Together, an RSA
+   public key and an RSA private key form an RSA key pair.
+
+   This specification supports so-called "multi-prime" RSA where the
+   modulus may have more than two prime factors.  The benefit of multi-
+   prime RSA is lower computational cost for the decryption and
+   signature primitives, provided that the CRT is used.  Better
+   performance can be achieved on single processor platforms, but to a
+   greater extent on multiprocessor platforms, where the modular
+   exponentiations involved can be done in parallel.
+
+   For a discussion on how multi-prime affects the security of the RSA
+   cryptosystem, the reader is referred to [SILVERMAN].
+
+3.1.  RSA Public Key
+
+   For the purposes of this document, an RSA public key consists of two
+   components:
+
+         n        the RSA modulus, a positive integer
+         e        the RSA public exponent, a positive integer
+
+
+
+
+Moriarty, et al.              Informational                     [Page 8]
+RFC 8017                      PKCS #1 v2.2                 November 2016
+
+
+   In a valid RSA public key, the RSA modulus n is a product of u
+   distinct odd primes r_i, i = 1, 2, ..., u, where u >= 2, and the RSA
+   public exponent e is an integer between 3 and n - 1 satisfying
+   GCD(e,\

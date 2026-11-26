@@ -1,0 +1,31 @@
+Previewing changes in Windows to comply with the Digital Markets Act in the European Economic Area
+Written By Windows Insider Program Team
+published November 16, 2023
+[UPDATE 2/29/24]
+As the March 2024 deadline for compliance with the Digital Markets Act (DMA) approaches, we wanted to provide an update on our plan to roll out updates to Windows for our customers in the European Economic Area (EEA). DMA changes were first released in the Windows Insider Program Dev channel starting in August 2023 and then in the Release Preview channel in November as noted below. With today’s optional non-security releases, Windows 10, version 22H2 Build 19045.4123 and Windows 11, version 23H2 Build 22631.3235, we are starting a controlled rollout to EEA customers.
+On March 6, customers in the EEA who have turned on the “Get the latest updates as soon as they’re available” feature for Windows Update will get the DMA changes right away. Anyone can opt-in by following these instructions:
+Windows 11: Get Windows updates as soon as they’re available for your device – Microsoft Support
+Windows 10: Get Windows updates as soon as they’re available for your device – Microsoft Support
+Throughout March we will increase the number of PCs in the rollout, while closely monitoring for any quality issues. Our plan is to deliver and enable our DMA changes for all PCs in the EEA by early April. After the update is applied, a restart is required to fully enable the changes.
+These updates do not include Copilot in Windows (in preview) in the EEA. Copilot in Windows (in preview) is currently available in select global markets and will be rolled out to additional markets, including the EEA, over time.
+[ORIGINAL BLOG POST PUBLISHED ON 11/16/23 AND UPDATED ON 12/7/23 BELOW]
+Hello Windows Insiders,
+Microsoft is working to ensure compliance with the Digital Markets Act (DMA) in the European Economic Area (EEA). We have released the November 2023 non-security preview update for Windows 11, version 23H2 to the Release Preview Channel (Build 22631.2787) that previews many of the changes we’ve made to Windows 11 to meet these obligations. [UPDATE 12/7] We have also enabled the November 2023 non-security preview update for Windows 10, version 22H2 Build 19045.3758 with many of the changes we’ve made to Windows 10 to meet these obligations. These changes will gradually be rolling out to devices in Release Preview over the next couple weeks. We will be previewing changes for Windows 10 in the Release Preview Channel at a later date. We’ll be updating Windows 10, version 22H2 and Windows 11, version 23H2 PCs in the EEA to be compliant by March 6th, 2024.
+Windows operating system and apps
+Customers using Windows have always used a combination of operating system functionality as well as apps, but now Windows will clearly identify operating system functionality in places like Settings, Start, and Search:
+Settings > System > System Components will show notable operating system components.
+Start menu’s All Apps list has been renamed to All and operating system components are labeled with “system”.
+Under Search, search results will show operating system components labeled with “system”.
+System labeling under Start menu’s All list. All apps in Windows can be uninstalled. Of course, apps can always be installed again from the Microsoft Store and internet. Settings > Apps > Installed apps continue to show all the apps installed on the PC and we’ve added the ability to uninstall:
+Camera
+Cortana
+Web Search from Microsoft Bing, in the EEA
+Microsoft Edge, in the EEA
+Photos
+Interoperability with Windows features
+Windows is an open platform and has a robust API surface that developers use to create millions of Windows apps. Many existing features in Windows were built specifically to enable richer app functionality, such as toast notifications (Toast notifications – Windows apps | Microsoft Learn) and widgets (Windows Widgets – Windows apps | Microsoft Learn).
+More interoperability points in Windows are now available. Continuing with the model used for cloud files (Build a Cloud Sync Engine that Supports Placeholder Files – Win32 apps | Microsoft Learn), these new interoperability points also use an app-based model. This benefits the app, the app developer, and the customer. Apps can bring their unique differentiation to more customers by being hosted directly in Windows features, and customers can choose to use their preferred experience for common tasks in Windows, like searching the internet.
+In the EEA, two new interoperability points are available:
+Feeds in the Windows Widgets Board: Feed providers – Windows apps | Microsoft Learn.
+Web search in Windows Search: Windows Search providers – Windows apps | Microsoft Learn.
+Example of new interoperability point for web search. Example of new interoperability point for widgets.

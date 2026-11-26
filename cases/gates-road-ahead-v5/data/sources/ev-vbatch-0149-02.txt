@@ -1,0 +1,17 @@
+Manage chat in Microsoft Teams meetings 
+Applies to: Microsoft Teams 
+Feedback Summarize this article for me APPLIES TO: Meetings Events 
+Overview 
+In Microsoft Teams, chat in meetings and in events with up to 1,000 attendees allows participants to exchange messages before, during, and after the meeting or event, with interactive capabilities such as replies, @mentions , reactions, and support for formatting options, sharing images, and files. 
+In events optimized for large audiences , chat is designed to support scale. Organizers, co-organizers, and presenters can chat with each other before, during, and after the event in the event group chat. Attendee chat, when enabled, is only available during the event. For more information about how attendees can use chat in events optimized for large audiences, see Manage chat for Microsoft Teams events . 
+As an admin, you can control: 
+Whether participants in your users' meetings and events with up to 1,000 attendees can read and send chat messages. 
+Whether users in your organization can use chat when they're participants in Teams meetings hosted by other organizations where there isn't a trusted relationship. 
+Manage chat messages for your organization's Teams meetings 
+The Meeting chat setting controls whether participants in your users' meetings can read and send chat messages. This setting doesn't apply to channel meetings and is a per-user and per-organizer policy. 
+In addition to this Meeting chat policy, your users have their own Meeting chat control in their meeting options. When you don't set the admin policy to Off , organizers can manage chat availability in their meetings and in their events with up to 1,000 attendees. They can choose to set chat to On , Off , or In meeting only . For more information about your users' Meeting chat controls, see Chat in a Teams meeting . 
+Note 
+The admin policy doesn't control what organizers see in their Meeting options . For example, when you set the Meeting chat policy to In-meeting only for everyone , the organizer still sees the option to set it to On . However, the admin policy enforces that chat will only be available during the meeting. Your policy determines the chat experience during meetings and events, regardless of what's shown and selected in Meeting options . 
+The following table describes the behavior for your Meeting chat policy settings: 
+Teams admin center value PowerShell value Behavior 
+On for everyone Enabled All participants can read and send chat messages, but the organizer's Allow meeting chat settings determine the chat experience. Organize

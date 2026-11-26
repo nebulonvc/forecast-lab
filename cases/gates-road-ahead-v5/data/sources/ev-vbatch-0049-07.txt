@@ -1,0 +1,20 @@
+Using 3D on a computer adds a range of difficulties: 
+The screen and the mouse are both 2D devices, so we don't get true 3D unless we strap on weird head-gear and buy expensive bats (flying mice) 
+It is difficult to control a 3D space with the interaction techniques that are currently in common use since they were designed for 2D manipulation (e.g., dragging, scrolling) 
+Users need to pay attention to the navigation of the 3D view in addition to the navigation of the underlying model: the extra controls for flying, zooming, etc. get in the way of the user's primary task 
+Poor screen resolution makes it impossible to render remote objects in sufficient detail to be recognizable; any text that is in the background is unreadable 
+The software needed for 3D is usually non-standard, crash-prone, and requires an extra download (which users don't want to wait for) 
+In This Article: 
+Bad Use of 3D 
+When to Use 3D 
+Bad Use of 3D 
+Most abstract information spaces work poorly in 3D because they are non-physical. If anything, they have at least a hundred dimensions, so visualizing an information space in 3D means throwing away 97 dimensions instead of 98: hardly a big enough improvement to justify the added interface complexity. 
+In particular, navigation through a hyperspace (such as a website) is often very confusing in 3D, and users frequently get lost. 3D navigation looks very cool in a demo, but that's because you are not flying through the hyperspace yourself. Thus, you don't have to remember what's behind you or worry about what remote objects are hidden by near-by objects. The person giving the demo knows where everything is (the first law of demos: never try to actually use the system for anything; simply step through a well-rehearsed script that does not touch anything that might cause a crash). 
+Avoid virtual reality gimmicks (say, a virtual shopping mall) that emulate the physical world. The goal of Web design is to be better than reality . If you ask users to "walk around the mall", you are putting your interface in the way of their goal . In the physical world, you need to schlepp between shops; on the Web you teleport through cyberspace directly to your destination using a navigational topology that conforms to user needs (assuming good information architecture, of course). 
+When to Use 3D 
+When you visualize physical objects that need to be understood in their solid form. Examples include: 
+surgeons planning where to cut a patient: the body is 3D and the location of the tumor has a 3D location that is easier to understand from a 3D model than from a 2D X-ray 
+mechanical engineers designing a widget that needs to fit into a gadget 
+chemistry researchers trying to understand the shape of a molecule 
+planning the layout of a trade-show booth 
+Sometimes physical objects work better in 2D. A help system explaining how to replace a harddisk in a computer chassis may be better off with a schematic drawing from exactly the perspective that highlights the correct spot. Or use a video of a repair tech who removes the old disk and inserts the new one. Video is 2D with respect to the images but uses sound to enhance the understanding of events (e.g.,

@@ -1,0 +1,12 @@
+Mixed-excitation linear prediction (MELP) is a United States Department of Defense speech coding standard used mainly in military applications and satellite communications, secure voice, and secure radio devices. Its standardization and later development was led and supported by the NSA and NATO. The current "enhanced" version is known as MELPe.
+
+
+== History ==
+The initial MELP was invented by Alan McCree around 1995  while a graduate student at the Center for Signal and Image Processing (CSIP) at Georgia Tech, and the original MELP related patents have expired by now. That initial speech coder was standardized in 1997 and was known as MIL-STD-3005. It surpassed other candidate vocoders in the US DoD competition, including: (a) Frequency Selective Harmonic Coder (FSHC), (b) Advanced Multi-Band Excitation (AMBE), (c) Enhanced Multiband Excitation (EMBE), (d) Sinusoid Transform Coder (STC), and (e) Subband LPC Coder (SBC). Due to its lower complexity than Waveform Interpolative (WI) coder, the MELP vocoder won the DoD competition and was selected for MIL-STD-3005.
+
+
+=== MIL-STD-3005 ===
+Between 1998 and 2001, a new MELP-based vocoder was created at half the rate (i.e. 1200 bit/s), and substantial enhancements were added to the MIL-STD-3005 by SignalCom (later acquired by Microsoft), Compandent, and AT&T Corporation, which included (a) additional new vocoder at half the rate (i.e. 1200 bit/s), (b) substantially improved encoding (analysis), (c) substantially improved decoding (synthesis), (d) Noise-Preprocessing for removing background noise, (e) transcoding between the 2400 bit/s and 1200 bit/s bitstreams, and (f) new postfilter. This fairly significant development was aimed to create a new coder at half the rate and have it interoperable with the old MELP standard. This enhanced-MELP (also known as MELPe) was adopted as the new MIL-STD-3005 in 2001 in form of annexes and supplements made to the original MIL-STD-3005, enabling the same quality as the old 2400 bit/s MELP's at half the rate. One of the greatest advantages of the new 2400 bit/s MELPe is that it shares the same bit format as MELP, and hence can interoperate with legacy MELP systems, but would deliver better quality at both ends. MELPe provides much better quality than all older military standards, especially in noisy environments such as battlefield and vehicles and aircraft.
+
+
+=== STANAG-4591 (NA

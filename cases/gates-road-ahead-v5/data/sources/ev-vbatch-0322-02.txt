@@ -1,0 +1,13 @@
+A headless computer is a computer system or device that has been configured to operate without a monitor (the missing "head"), keyboard, and mouse. A headless system is typically controlled over a network connection, although some headless system devices require a serial connection to be made over RS-232 for administration of the device. Headless operation of a server is typically employed to reduce operating costs.
+
+During bootup, some (especially older) PC BIOS versions will wait indefinitely for a user to press a key before proceeding if a basic device, such as a video card or keyboard, is not installed or connected. This could effectively halt an unattended system.
+
+On more modern systems, the BIOS factory setting will typically be configured to behave this way as well, but this setting can be changed with a BIOS setup utility to proceed without user intervention.
+
+Even in cases where a system has been set up to be managed remotely, a local keyboard and video card may still be needed from time to time; for example, to diagnose boot problems that occur before a remote access application is initialized.
+
+Some servers provide for remote control with an internal IPMI hardware that mirrors the console screen. For example, HPE offers a system called Integrated Lights-Out (iLO) that provides this function. Remote access to the system is gained using a secure web connection to an IP address assigned to the iLO adapter, and allows for monitoring of the system during start-up, before the operating system is loaded.
+
+Another hardware solution is to use a KVM-over-IP switch. Such a switch is a traditional Keyboard-Video-Mouse device with the added ability to provide remote control sessions over IP. Connection to the KVM device is gained using a web browser, which allows for remote monitoring of the connected system console port.
+
+Administration of a headless system typically takes place with a text-based interface such as a command line in Unix or in Linux. These interfaces, often called "virtual terminals" or "terminal emulators", attempt to simulate the behavior of "real" interface terminals like the Digital Equipment Corporation's VT100, but over networks, usually us

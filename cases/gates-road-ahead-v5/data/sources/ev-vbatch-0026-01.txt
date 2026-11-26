@@ -1,0 +1,24 @@
+ve several types of appliances, designed to meet our global deployment requirements. High level specifications for the most recent versions of our appliances are provided here. If you need detailed specifications for a particular revision of an Open Connect Appliance, contact the Open Connect team.
+Storage appliances are 2U servers that are focused on reliable dense storage and cost effective throughput. This appliance is used to hold the Netflix catalog in many IX locations around the world and embedded at our larger ISP partner locations.
+Storage appliance focus areas
+2U for rack efficiency (no deeper than 29 inches)
+Enough low cost NAND to reach 10GB/s of throughput
+Network flexibility to connect at 6x10Gbps LAG or up to 2x100Gbps
+Storage appliance high-level specifications
+Power draw operational (peak)
+Global appliances are 2U lower cost appliances that we use for smaller ISP partners and emerging markets. This appliance is designed for low cost 10Gbps and 100Gbps attached content delivery.
+Global appliance focus areas
+Only field-replaceable optics
+4-6 year no touch reliability
+Global appliance high-level specifications
+Power draw operational (peak)
+In building these systems we collaborate with a wide range of suppliers who we would like to thank for their assistance: The teams at
+, our system integrators. Storage guidance and troubleshooting from
+. Network card and driver assistance from
+Netflix delivers streaming content using a combination of intelligent clients, a central control system, and a network of Open Connect appliances.
+When designing the Open Connect Appliance Software, we focus on these fundamental design goals:
+Use of open source software
+Ability to efficiently read from disk and write to network sockets
+High-performance HTTP delivery
+Ability to gather routing information via BGP
+FreeBSD was selected for its balance of stability and features, a strong development community and staff expertise. All code improvements, feature additions, and bug fixes are contributed directly back to the open source community via the FreeBSD committers on our team

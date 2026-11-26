@@ -1,0 +1,16 @@
+12. User Preference Media Features
+12.1. Detecting the desire for less motion on the page: the prefers-reduced-motion feature
+Name: prefers-reduced-motion
+For: @media
+Value: no-preference | reduce
+Type: discrete
+The prefers-reduced-motion media feature is used to detect if the user has requested the system minimize the amount of non-essential motion it uses.
+no-preference Indicates that the user has made no preference known to the system. This keyword value evaluates as false in the boolean context. reduce Indicates that user has notified the system that they prefer an interface that removes or replaces the types of motion-based animation that either trigger discomfort for those with vestibular motion sensitivity, or distraction for those with attention deficits. Tests
+prefers-reduced-motion.html (live test) (source)
+12.2. Detecting the desire for reduced transparency on the page: the prefers-reduced-transparency feature
+Name: prefers-reduced-transparency
+For: @media
+Value: no-preference | reduce
+Type: discrete
+The prefers-reduced-transparency media feature is used to detect if the user has requested the system minimize the amount of transparent or translucent layer effects it uses.
+no-preference Indicates that the user has made no preference known to the system. This keyword value evaluates as false in the boolean context. reduce Indicates that user has notified the system tha

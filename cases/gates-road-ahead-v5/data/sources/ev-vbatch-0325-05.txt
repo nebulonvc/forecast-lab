@@ -1,0 +1,52 @@
+her levels,
+   and there are many successful examples of large private networks with
+
+
+
+IAB                          Informational                      [Page 2]
+
+RFC 1958        Architectural Principles of the Internet       June 1996
+
+
+   multiple network layer protocols in use.
+
+   In practice, there are at least two reasons why more than one network
+   layer protocol might be in use on the public Internet. Firstly, there
+   can be a need for gradual transition from one version of IP to
+   another.  Secondly, fundamentally new requirements might lead to a
+   fundamentally new protocol.
+
+   The Internet level protocol must be independent of the hardware
+   medium and hardware addressing.  This approach allows the Internet to
+   exploit any new digital transmission technology of any kind, and to
+   decouple its addressing mechanisms from the hardware. It allows the
+   Internet to be the easy way to interconect fundamentally different
+   transmission media, and to offer a single platform for a wide variety
+   of Information Infrastructure applications and services. There is a
+   good exposition of this model, and other important fundemental
+   issues, in [Clark].
+
+   2.3 It is also generally felt that end-to-end functions can best be
+   realised by end-to-end protocols.
+
+   The end-to-end argument is discussed in depth in [Saltzer].  The
+    basic argument is that, as a first principle, certain required end-
+   to-end functions can only be performed correctly by the end-systems
+   themselves. A specific case is that any network, however carefully
+   designed, will be subject to failures of transmission at some
+   statistically determined rate. The best way to cope with this is to
+   accept it, and give responsibility for the integrity of communication
+   to the end systems. Another specific case is end-to-end security.
+
+   To quote from [Saltzer], "The function in question can completely and
+   correctly be implemented only with the knowledge and help of the
+   application standing at the endpoints of the communication system.
+   Therefore, providing that questioned function as a feature of the
+   communication system itself is not possible. (Sometimes an incomplete
+   version of the function provided by the communication system may be
+   useful as a performance enhancement.")
+
+   This principle has important consequences if we require applications
+   to survive partial network failures. An end-to-end protocol design
+   should not rely on the maintenance of state (i.e. information about
+   the state of the end-to-end communication) inside the network. Su

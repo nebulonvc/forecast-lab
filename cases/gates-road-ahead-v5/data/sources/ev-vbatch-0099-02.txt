@@ -1,0 +1,13 @@
+iMessage security overview
+Apple iMessage is a messaging service for iPad, iPhone, Mac, Apple Watch, and Apple Vision Pro. Relying on the Apple Push Notification service (APNs), iMessage lets users send texts and attachments like photos, contacts, locations, links, and emoji. Messages sync across all devices, enabling seamless conversations. Apple doesn’t store message content or attachments, which are all secured with end-to-end encryption so that no one but the sender and receiver can access them. Apple canʼt decrypt the data.
+When a user turns on iMessage on a device, the device generates encryption and signing pairs of keys for use with the service. The public keys are sent to Apple Identity Service (IDS), where they are associated with the user’s phone number or email address, along with the device’s APNs address.
+As users enable additional devices for use with iMessage, their encryption and signing public keys, APNs addresses, and associated phone numbers are added to the directory service. Users can also add more email addresses, which are verified by sending a confirmation link. Phone numbers are verified by the carrier network and SIM. With some networks, this requires using SMS (the user is presented with a confirmation dialog if the SMS isn’t zero rated). Phone number verification may be required for several system services in addition to iMessage, such as FaceTime and iCloud. All of the user’s registered devices display an alert message when a new device, phone number, or email address is added.
+See alsoiCloud security overviewAdvanced Data Protection for iCloudiCloud Backup securityApple Account security overview
+Download this guide as a PDF
+Helpful?
+Yes
+No
+Character limit:
+250
+Please don’t include any personal information in your comment.
+Maximum character
