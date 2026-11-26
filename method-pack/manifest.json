@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "method_version": "2026.11.1",
-  "released_at": "2026-11-24",
+  "method_version": "2026.11.2",
+  "released_at": "2026-11-27",
   "name": "Signal & Noise Forecast Lab Methodology Pack",
   "upstream": {
     "repo": "nebulonvc/forecast-lab",
@@ -12,10 +12,10 @@
     "optimizer_doc_url": "https://raw.githubusercontent.com/nebulonvc/forecast-lab/main/docs/06-forecast-method-optimization.md"
   },
   "empirical_foundation": {
-    "books_audited": 132,
-    "raw_candidates_screened": 10683,
-    "scorable_forecasts": 8130,
-    "decided_forecasts": 5060,
+    "books_audited": 146,
+    "raw_candidates_screened": 13687,
+    "scorable_forecasts": 10745,
+    "decided_forecasts": 7522,
     "curated_samples": 330,
     "core_finding": "全库最高长期胜率不属于宏大叙事者，而属于带物理/财政约束账本、明确统计口径与情景边界的专业机构与战略实务者。"
   },
@@ -165,19 +165,19 @@
       "label": "0–3年(超短窗)",
       "min_years": 0,
       "max_years": 3,
-      "strict_win_rate": 0.354,
-      "directional_hit_rate": 0.810,
-      "error_rate": 0.029,
-      "unresolved_note": "超短窗方向顺风明显（平均方向命中 81.0%），但须警惕工程排期小幅推迟导致的硬期限逾期。"
+      "strict_win_rate": 0.342,
+      "directional_hit_rate": 0.746,
+      "error_rate": 0.027,
+      "unresolved_note": "超短窗方向顺风明显（平均方向命中 74.6%），但须警惕工程排期小幅推迟导致的硬期限逾期。"
     },
     {
       "band_id": "4_9y",
       "label": "4–9年(中短窗)",
       "min_years": 4,
       "max_years": 9,
-      "strict_win_rate": 0.281,
-      "directional_hit_rate": 0.576,
-      "error_rate": 0.052,
+      "strict_win_rate": 0.282,
+      "directional_hit_rate": 0.555,
+      "error_rate": 0.056,
       "unresolved_note": "政策周期与技术商业化爬坡交叉期，严防把早期试点热度外推为全面普及。"
     },
     {
@@ -185,30 +185,30 @@
       "label": "10–19年(中长窗)",
       "min_years": 10,
       "max_years": 19,
-      "strict_win_rate": 0.369,
-      "directional_hit_rate": 0.603,
-      "error_rate": 0.086,
-      "unresolved_note": "检验结构性判断的黄金窗口；写死精确年份而无产能账本者错误率显著上升（全库显式期限错误率 17.9% vs 隐含窗口 12.3%）。"
+      "strict_win_rate": 0.298,
+      "directional_hit_rate": 0.480,
+      "error_rate": 0.146,
+      "unresolved_note": "检验结构性判断的黄金窗口；写死精确年份而无产能账本者错误率显著上升（全库显式期限错误率 14.8% vs 隐含窗口 11.9%）。"
     },
     {
       "band_id": "20_39y",
       "label": "20–39年(长周期)",
       "min_years": 20,
       "max_years": 39,
-      "strict_win_rate": 0.355,
-      "directional_hit_rate": 0.526,
-      "error_rate": 0.101,
-      "unresolved_note": "仅人口队列、地缘底盘与基础物理约束保持稳健，押注具体商业赢家大概率失效。"
+      "strict_win_rate": 0.409,
+      "directional_hit_rate": 0.518,
+      "error_rate": 0.075,
+      "unresolved_note": "仅人口队列、地缘底盘与基础物理/信息网络结构保持稳健（如盖茨《未来之路》55.7% 严格胜率），押注具体单一赢家或崩溃日期大概率失效。"
     },
     {
       "band_id": "40_plus_y",
       "label": "40年以上(跨代)",
       "min_years": 40,
       "max_years": 999,
-      "strict_win_rate": 0.209,
-      "directional_hit_rate": 0.277,
-      "error_rate": 0.399,
-      "unresolved_note": "跨代预测错误率高达 39.9%，应仅做情景边界推演而非点位承诺。"
+      "strict_win_rate": 0.305,
+      "directional_hit_rate": 0.345,
+      "error_rate": 0.213,
+      "unresolved_note": "40年以上合并错误率达 21.3%（其中≥100年跨世纪错误率达 25.7%），应仅做情景边界推演而非点位承诺。"
     }
   ],
   "domain_catalog": {
@@ -239,11 +239,11 @@
     "macro_finance": {
       "label": "宏观经济、利率、通胀与金融市场",
       "empirical_base_rate": {
-        "books": 17,
-        "decided": 462,
-        "strict_win_rate": 0.264,
-        "directional_hit_rate": 0.452,
-        "error_rate": 0.093
+        "books": 18,
+        "decided": 557,
+        "strict_win_rate": 0.242,
+        "directional_hit_rate": 0.427,
+        "error_rate": 0.097
       },
       "primary_lens": "约束账本法（达利欧主权债务付息与资产负债表账本）+ 风险边界法（塔勒布隐性兜底不对称）",
       "counter_lens": "海外替代供给平抑物价（凯恩斯反例）+ 央行流动性干预与市场反身性拐点（索罗斯）",
@@ -263,14 +263,14 @@
     "geopolitics": {
       "label": "地缘政治、国际秩序与供应链博弈",
       "empirical_base_rate": {
-        "books": 27,
-        "decided": 1489,
-        "strict_win_rate": 0.353,
-        "directional_hit_rate": 0.566,
-        "error_rate": 0.108
+        "books": 28,
+        "decided": 1933,
+        "strict_win_rate": 0.298,
+        "directional_hit_rate": 0.472,
+        "error_rate": 0.155
       },
       "primary_lens": "地缘底盘与权力均衡法（卡普兰地理海道 + 扎卡利亚分层实力 + 李光耀现实利益买单账）",
-      "counter_lens": "内部财政与社会承压边界（伯克四本账）+ 第三国转口贸易与行动者绕行（马凯硕反例）",
+      "counter_lens": "内部财政与社会承压边界（伯克四本账）+ 第三国转口贸易与行动者绕行（马凯硕/泽汉反例）",
       "authoritative_sources": [
         "UN Comtrade / 海关总署双边与转口贸易统计",
         "SIPRI 全球军费与军备转移数据库",
@@ -279,7 +279,7 @@
       ],
       "leading_indicators_template": "关键咽喉航道保费与运量、第三国转口增加值占比、军费占财政支出比重",
       "common_pitfalls": [
-        "把单一现实主义或意识形态理论外推到极致，低估第三国套利绕行与政权韧性",
+        "把单一地理人口或意识形态理论外推为“政权限时崩溃”（如泽汉《意外的超强》错误率 31.1%），低估第三国套利绕行与政权韧性",
         "混淆外交表态升级与全面热战/彻底脱钩"
       ],
       "polymarket_tags": ["geopolitics", "politics", "world"]
@@ -287,13 +287,13 @@
     "tech_industry": {
       "label": "科技商业化、企业竞争与产业颠覆",
       "empirical_base_rate": {
-        "books": 14,
-        "decided": 943,
-        "strict_win_rate": 0.366,
-        "directional_hit_rate": 0.539,
-        "error_rate": 0.077
+        "books": 19,
+        "decided": 2052,
+        "strict_win_rate": 0.416,
+        "directional_hit_rate": 0.500,
+        "error_rate": 0.068
       },
-      "primary_lens": "制度与激励结构法（克里斯坦森在位者毛利包袱与价值网束缚）+ 技术功能扩散链法",
+      "primary_lens": "制度与激励结构法（克里斯坦森在位者毛利包袱与价值网束缚）+ 供应链咽喉与技术功能扩散链法（米勒《芯片战争》/盖茨《未来之路》）",
       "counter_lens": "高端全栈生态锁定反例（克里斯坦森 iPhone 反例）+ 监管准入与安全合规成本",
       "authoritative_sources": [
         "上市公司年报/季报 (SEC EDGAR / 港交所 / 巨潮资讯)",
@@ -310,14 +310,14 @@
     "energy_resources": {
       "label": "能源转型、电网储能与关键大宗矿产",
       "empirical_base_rate": {
-        "books": 12,
-        "decided": 430,
-        "strict_win_rate": 0.395,
-        "directional_hit_rate": 0.523,
-        "error_rate": 0.226
+        "books": 14,
+        "decided": 698,
+        "strict_win_rate": 0.337,
+        "directional_hit_rate": 0.480,
+        "error_rate": 0.160
       },
-      "primary_lens": "约束账本法（IEA 在建矿山/精炼产能集中度与投产周期账本）+ 杰文斯反弹恒等式",
-      "counter_lens": "高价倒逼替代化学体系跃迁（如磷酸铁锂/钠电替代高镍钴，防马尔萨斯式资源耗尽误判）",
+      "primary_lens": "约束账本法（斯米尔一次能源基建能量密度与周转账本 + IEA 在建矿山/精炼产能周期）+ 杰文斯反弹恒等式",
+      "counter_lens": "高价倒逼替代化学体系跃迁（防马尔萨斯资源枯竭误判）+ 物理热力学与环境承载边界（防西蒙“70亿年无限增长”反向极端误判）",
       "authoritative_sources": [
         "国际能源署 (IEA) 年度展望报告",
         "美国地质调查局 (USGS) Mineral Commodity Summaries",
@@ -326,18 +326,18 @@
       ],
       "leading_indicators_template": "矿山与电网上游CapEx、替代电池/材料路线价差、弃风弃光率与储能配储时长",
       "common_pitfalls": [
-        "本领域两极分化最剧烈（严格胜率 39.5% 最高，但错误率 22.6% 亦偏高）：死因几乎全是忽略高价诱发的技术替代与新产区开发"
+        "本领域两极分化剧烈（严格胜率 33.7%，错误率 16.0%：斯米尔《能源转型》错误率仅 2.9%，而马尔萨斯与西蒙两端极端叙事均高错）：死因几乎全是忽视价格替代弹性或无视重资产物理周转惯性"
       ],
       "polymarket_tags": ["energy", "climate", "economy"]
     },
     "crypto_digital": {
       "label": "加密资产、链上金融与数字监管",
       "empirical_base_rate": {
-        "books": 17,
-        "decided": 462,
-        "strict_win_rate": 0.264,
-        "directional_hit_rate": 0.452,
-        "error_rate": 0.093
+        "books": 18,
+        "decided": 557,
+        "strict_win_rate": 0.242,
+        "directional_hit_rate": 0.427,
+        "error_rate": 0.097
       },
       "primary_lens": "制度与激励结构法（监管牌照边界 + 机构托管资金流量账本）",
       "counter_lens": "宏观美元流动性紧缩传导 + 杠杆清算反身性踩踏",
@@ -355,11 +355,11 @@
     "society_policy": {
       "label": "人口结构、制度政策与社会治理",
       "empirical_base_rate": {
-        "books": 26,
-        "decided": 359,
-        "strict_win_rate": 0.334,
-        "directional_hit_rate": 0.493,
-        "error_rate": 0.111
+        "books": 30,
+        "decided": 898,
+        "strict_win_rate": 0.335,
+        "directional_hit_rate": 0.406,
+        "error_rate": 0.089
       },
       "primary_lens": "约束账本法（出生人口队列惯性与养老财政收支账本）+ 制度激励法（伯克四本账）",
       "counter_lens": "国家强制协调政策突变（移民配额、延迟退休、财政转移支付改制）",
