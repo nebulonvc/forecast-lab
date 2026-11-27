@@ -1,0 +1,37 @@
+2.1. Provenance model
+2.2. Trust model
+2.3. Claim signatures
+2.4. Content bindings
+2.5. Validation
+2.6. Protection of personal information
+2.7. Applications in Artifical Intelligence (AI) and Machine Learning (ML)
+3. Security model
+4. Threat model
+4.1. Workflow diagram
+4.2. Threat and attack assumptions
+4.3. Threats
+5. Revocation Planning
+5.1. How revocation works
+5.2. Pre-planning
+5.3. Revoking a certificate
+6. Additional Implementation Best Practices
+6.1. Tracking, transparency, and privacy
+6.2. Incident response
+This work is licensed under a Creative Commons Attribution 4.0 International License.
+1. Introduction
+This document provides information security considerations for technology described in the C2PA core specification. It complements security-related content in other C2PA documents. This document includes:
+A summary of relevant security features of C2PA technology
+Security cons
+
+hort-lived certificate for that signature or a defined time window for multiple signatures. These approaches often help to reduce the windows of opportunity that a malicious third-party has to successfully gain access to a valid certificate and key.
+However, it is important to note that this approach does not guarantee that the volume of content that an adversary can sign with a stolen key will be small. If an advanced adversary has planned ahead and already pre-generated the content that they want to sign with the stolen key, then the adversary can likely sign all of that content within the window of time that the key is valid. In this scenario, a revocation could apply to a large amount of malicious content but it would only affect a smal
+
+4.3.2. Goal: Tamper with provenance information
+Threat scenarios in this category aim to modify or spoof provenance information associated with C2PA-enabled assets, e.g., to present misleading provenance data to media consumers. This is considered a compromise of integrity of provenance data in terms of the C2PA security model.
+4.3.2.1. Threat: Copying C2PA Manifests
+Description
+An attacker copies valid, hard-bound C2PA Manifests, such as assertions, claims, or entire C2PA Manifests, from one C2PA-enabled asset to another.
+Prerequisites
+Technical ability to strip provenance data from published or stored assets and deliver the stripped assets targeted users or systems. For example, via republishing to social media or on-path attacks.
+Impact analysis
+An attacker is able to perform the copyin

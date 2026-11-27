@@ -1,27 +1,29 @@
 #!/usr/bin/env python3
-"""Generate the ten analytical figures used in docs/00-key-insights.md.
+"""Generate the fourteen analytical figures used in README.md and docs/00-key-insights.md.
 
-Data source: datasets/all_cases_summary.csv (132 works). Method-cluster and
-failure-mode tallies are taken from docs/reports/panoramic-report.md and
-docs/reports/curated-330-compendium.md respectively.
+Data source: datasets/all_cases_summary.csv (146 works, 10,745 scorable forecasts,
+7,522 decided outcomes) and toolkit/forecast_optimizer.py feature corpus.
 
 Usage: python3 docs/figures/make_figures.py
 """
 from __future__ import annotations
 
+import collections
 import csv
-from collections import defaultdict
+import sys
 from pathlib import Path
 
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib import font_manager
-from matplotlib.patches import FancyBboxPatch
+from matplotlib.patches import FancyBboxPatch, Patch
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = Path(__file__).resolve().parent
 CSV = ROOT / "datasets/all_cases_summary.csv"
+sys.path.insert(0, str(ROOT / "toolkit"))
+import forecast_optimizer as fo  # noqa: E402
 
 # ---------------------------------------------------------------- style
 for cand in ["/System/Library/Fonts/Hiragino Sans GB.ttc",
@@ -51,7 +53,24 @@ plt.rcParams.update({
     "axes.spines.top": False, "axes.spines.right": False,
 })
 
-SRC = "数据来源：Forecast Lab · 132 部著作 · 8,130 条预测 · 证据截止 2026-11"
+rows = list(csv.DictReader(CSV.open(encoding="utf-8-sig")))
+for r in rows:
+    for k in ("可判定数", "正确", "趋势符合", "部分符合", "错误", "暂无法判断", "预测数",
+              "写明时间可判定数", "隐含窗口可判定数"):
+        r[k] = int(r[k] or 0)
+
+forecasts_corpus, nonforecasts_corpus, _ = fo.load_training_corpus(ROOT)
+N_WORKS = len(rows)
+N_FORECASTS = len(forecasts_corpus)
+N_NONFORECASTS = len(nonforecasts_corpus)
+N_CANDIDATES = N_FORECASTS + N_NONFORECASTS
+VC_ALL = collections.Counter(r["verdict"] for r in forecasts_corpus)
+N_DECIDED = N_FORECASTS - VC_ALL["暂无法判断"]
+N_UNDECIDED = VC_ALL["暂无法判断"]
+GLOBAL_DIR_PCT = (VC_ALL["正确"] + VC_ALL["趋势符合"]) / N_DECIDED * 100
+GLOBAL_ERR_PCT = VC_ALL["错误"] / N_DECIDED * 100
+
+SRC = f"数据来源：Forecast Lab · {N_WORKS} 部著作 · {N_FORECASTS:,} 条预测 · 证据截止 2026-11"
 
 
 def frame(title: str, subtitle: str, figsize=(12, 6.75)):
@@ -72,12 +91,6 @@ def pct(s: str) -> float | None:
     s = (s or "").replace("%", "").replace("pp", "").replace("+", "").strip()
     return float(s) if s else None
 
-
-rows = list(csv.DictReader(CSV.open(encoding="utf-8-sig")))
-for r in rows:
-    for k in ("可判定数", "正确", "趋势符合", "部分符合", "错误", "暂无法判断", "预测数",
-              "写明时间可判定数", "隐含窗口可判定数"):
-        r[k] = int(r[k] or 0)
 
 DOMAIN_SHORT = {
     "地缘政治与国际秩序": "地缘政治",
@@ -111,25 +124,26 @@ def agg(rs):
 
 # =================================================================== F1
 def fig1():
-    fig = frame("三分之一的可判定预测完全应验，13.6% 明确错误",
-                "从 10,683 条候选语句到 5,060 条可判定预测：先剔除非预测，再如实保留无法判断的部分")
+    fig = frame(f"三分之一的可判定预测完全应验，{GLOBAL_ERR_PCT:.1f}% 明确错误",
+                f"从 {N_CANDIDATES:,} 条候选语句到 {N_DECIDED:,} 条可判定预测：先剔除非预测，再如实保留无法判断的部分")
     ax = fig.add_axes([0.045, 0.50, 0.91, 0.30])
-    ax.set_xlim(0, 10683); ax.set_ylim(-0.5, 2.6); ax.axis("off")
-    stages = [(10683, "候选语句", GREY, "10,683"),
-              (8130, "可评分预测", COBALT, "8,130"),
-              (5060, "可判定预测", FOREST, "5,060")]
+    ax.set_xlim(0, N_CANDIDATES); ax.set_ylim(-0.5, 2.6); ax.axis("off")
+    stages = [(N_CANDIDATES, "候选语句", GREY, f"{N_CANDIDATES:,}"),
+              (N_FORECASTS, "可评分预测", COBALT, f"{N_FORECASTS:,}"),
+              (N_DECIDED, "可判定预测", FOREST, f"{N_DECIDED:,}")]
     for i, (v, lab, col, txt) in enumerate(stages):
         y = 2 - i
         ax.barh(y, v, height=0.62, color=col, alpha=0.9 if i else 0.55)
-        ax.text(120, y, f"{lab}  {txt}", va="center", ha="left", fontsize=13,
+        ax.text(150, y, f"{lab}  {txt}", va="center", ha="left", fontsize=13,
                 color="white" if i else INK, fontweight="bold")
-    ax.text(8130 + 120, 1, "剔除 2,553 条非预测语句", va="center", fontsize=11, color=MUTED)
-    ax.text(5060 + 120, 0, "另有 3,070 条（37.8%）因期限未到或证据不足，记为“暂无法判断”",
+    ax.text(N_FORECASTS + 150, 1, f"剔除 {N_NONFORECASTS:,} 条非预测语句", va="center", fontsize=11, color=MUTED)
+    ax.text(N_DECIDED + 150, 0,
+            f"另有 {N_UNDECIDED:,} 条（{N_UNDECIDED / N_FORECASTS:.1%}）因期限未到或前提未成立，记为“暂无法判断”",
             va="center", fontsize=11, color=MUTED)
 
     ax2 = fig.add_axes([0.045, 0.14, 0.91, 0.26])
-    cats = [("正确", 1686, FOREST), ("趋势符合", 971, "#7FA48C"),
-            ("部分符合", 1714, AMBER), ("错误", 689, TERRA)]
+    cats = [("正确", VC_ALL["正确"], FOREST), ("趋势符合", VC_ALL["趋势符合"], "#7FA48C"),
+            ("部分符合", VC_ALL["部分符合"], AMBER), ("错误", VC_ALL["错误"], TERRA)]
     total = sum(v for _, v, _ in cats)
     left = 0
     for lab, v, col in cats:
@@ -138,8 +152,8 @@ def fig1():
                  color="white", fontsize=12.5, fontweight="bold")
         left += v
     ax2.set_xlim(0, total); ax2.set_ylim(-0.6, 0.75); ax2.axis("off")
-    ax2.text(0, 0.55, "5,060 条可判定预测的结果构成", fontsize=13, color=INK, fontweight="bold")
-    ax2.text(total, 0.55, "方向命中率 = 正确 + 趋势符合 = 52.5%", fontsize=11.5, color=FOREST, ha="right")
+    ax2.text(0, 0.55, f"{N_DECIDED:,} 条可判定预测的结果构成", fontsize=13, color=INK, fontweight="bold")
+    ax2.text(total, 0.55, f"方向命中率 = 正确 + 趋势符合 = {GLOBAL_DIR_PCT:.1f}%", fontsize=11.5, color=FOREST, ha="right")
     save(fig, "fig01-overview.png")
 
 
@@ -149,7 +163,7 @@ TIERS = [("0–3年", "0–3年"), ("4–9年", "4–9年"), ("10–19年", "10�
 
 
 def fig2():
-    fig = frame("观察窗口越长，错误率越高；短窗口的低错误率主要源于“尚未到期”",
+    fig = frame("观察窗口越长，错误率总体抬升；短窗口的低错误率很大程度源于“尚未到期”",
                 "按出版年至证据截止日的跨度分档。折线：错误率与方向命中率（占可判定）；灰柱：未定率（占全部预测）")
     ax = fig.add_axes([0.08, 0.15, 0.86, 0.66])
     labels, err, und, dirn = [], [], [], []
@@ -165,12 +179,8 @@ def fig2():
     ax.plot(x, dirn, color=FOREST, lw=2, marker="s", ms=7, ls="--", label="方向命中率", zorder=3)
     ax.plot(x, err, color=TERRA, lw=3, marker="o", ms=9, label="错误率", zorder=4)
     for i in x:
-        if i == 4:
-            ax.text(i - 0.15, err[i] + 1.5, f"{err[i]:.1f}%", ha="right", va="bottom", color=TERRA,
-                    fontweight="bold", fontsize=12.5)
-        else:
-            ax.text(i + 0.12, err[i] - 0.5, f"{err[i]:.1f}%", ha="left", va="top", color=TERRA,
-                    fontweight="bold", fontsize=12.5)
+        ax.text(i + 0.10, err[i] + 1.4, f"{err[i]:.1f}%", ha="left", va="bottom", color=TERRA,
+                fontweight="bold", fontsize=12)
         ax.text(i, dirn[i] + 2.5, f"{dirn[i]:.0f}%", ha="center", color=FOREST, fontsize=10.5)
     ax.set_xticks(x); ax.set_xticklabels(labels, fontsize=10.5)
     ax.set_ylim(0, 96); ax.set_ylabel("%")
@@ -181,7 +191,7 @@ def fig2():
 
 # =================================================================== F3
 def fig3():
-    fig = frame("宏观金融最难押准，人口能源两极分化，科幻乌托邦错误率最高",
+    fig = frame("科技商业胜率最高，宏观金融最难押准，人口能源与地缘两极分化，科幻错误率最高",
                 "各领域的严格胜率与错误率——这是判断单部作品是否“超越基准”的参照线")
     ax = fig.add_axes([0.17, 0.13, 0.78, 0.68])
     data = []
@@ -195,9 +205,9 @@ def fig3():
         ax.scatter(a["error"], i, s=170, color=TERRA, zorder=3)
         ax.text(a["strict"] + 1.2, i, f"{a['strict']:.1f}%", va="center", color=FOREST, fontsize=11)
         ax.text(a["error"] - 1.2, i, f"{a['error']:.1f}%", va="center", ha="right", color=TERRA, fontsize=11)
-        ax.text(52, i, f"可判定 {a['n']:,}", va="center", color=MUTED, fontsize=10)
+        ax.text(53, i, f"可判定 {a['n']:,}", va="center", color=MUTED, fontsize=10)
     ax.set_yticks(range(len(data))); ax.set_yticklabels([d[0] for d in data], fontsize=12.5)
-    ax.set_xlim(0, 58); ax.set_xlabel("%")
+    ax.set_xlim(0, 60); ax.set_xlabel("%")
     ax.xaxis.grid(True, color=GRID); ax.set_axisbelow(True)
     ax.scatter([], [], s=120, color=FOREST, label="严格胜率")
     ax.scatter([], [], s=120, color=TERRA, label="错误率")
@@ -229,7 +239,6 @@ def fig4():
     ax.set_xticks(range(3)); ax.set_xticklabels([g[0] for g in groups], fontsize=13)
     ax.set_ylabel("严格胜率 %"); ax.set_ylim(0, 56)
     ax.yaxis.grid(True, color=GRID); ax.set_axisbelow(True)
-    # legend as ordered labels
     for ti, t in enumerate(types):
         fig.text(0.06 + ti * 0.152, 0.085, f"{ti + 1}. {TYPE_SHORT[t]}", fontsize=10.5,
                  color=TERRA if ti == 0 else BODY, fontweight="bold" if ti == 0 else None)
@@ -239,25 +248,28 @@ def fig4():
 
 # =================================================================== F5
 LABELS5 = {  # title: (label, text_x, text_y, ha)
-    "智能基础设施的未来：通向2055的情景": ("UK GO-Science\n《智能基础设施2055》", 45.5, 14.5, "right"),
-    "回到教育的未来：经合组织的四种学校教育情景": ("OECD《回到教育的未来》", 33, -6, "left"),
-    "全球关键矿产展望2024（Global Critical Minerals Outlook 2024）": ("IEA《关键矿产2024》", 33, -10, "left"),
-    "后美国世界": ("扎卡利亚《后美国世界》", 27, -13.5, "left"),
-    "战略远见": ("布热津斯基《战略远见》", 26.5, -18.5, "left"),
-    "世界是平的": ("弗里德曼《世界是平的》", 13, -8, "center"),
-    "煤炭问题：关于国家进步与煤矿可能耗尽的探究": ("杰文斯《煤炭问题》", 27, 10, "left"),
-    "预言": ("威尔斯《预言》", 23, 13.5, "left"),
-    "超级智能": ("博斯特罗姆《超级智能》", 1, 15.5, "center"),
-    "增长的极限": ("梅多斯《增长的极限》", 7, 28.1, "right"),
-    "法国革命论": ("伯克《法国革命论》", 17.5, 25.6, "left"),
-    "奇点临近": ("库兹韦尔《奇点临近》", -30, -20.5, "center"),
-    "注定一战": ("艾利森《注定一战》", -17.7, -15.4, "left"),
-    "回顾": ("贝拉米《回顾》", -24.8, -34.4, "left"),
+    "芯片战争": ("米勒《芯片战争》", 45, 11.5, "right"),
+    "智能基础设施的未来：通向2055的情景": ("UK GO-Science《智能基础设施2055》", 45, 2.5, "right"),
+    "回到教育的未来：经合组织的四种学校教育情景": ("OECD《回到教育的未来》", 45, 7.2, "right"),
+    "全球关键矿产展望2024（Global Critical Minerals Outlook 2024）": ("IEA《关键矿产2024》", 33, -4.5, "left"),
+    "后美国世界": ("扎卡利亚《后美国世界》", 30.5, 16.5, "left"),
+    "战略远见": ("布热津斯基《战略远见》", 31, -11.5, "left"),
+    "未来之路": ("盖茨《未来之路》", 16.5, -2.5, "left"),
+    "煤炭问题：关于国家进步与煤矿可能耗尽的探究": ("杰文斯《煤炭问题》", 22, 7.5, "left"),
+    "预言": ("威尔斯《预言》", 21.5, 19.5, "left"),
+    "超级智能": ("博斯特罗姆《超级智能》", 16, 23.5, "right"),
+    "能源转型：历史、要求与前景": ("斯米尔《能源转型》", 6.5, 17.5, "right"),
+    "后工业社会的来临": ("贝尔《后工业社会的来临》", -1.5, 12.5, "right"),
+    "法国革命论": ("伯克《法国革命论》", 17.5, 27.5, "left"),
+    "奇点临近": ("库兹韦尔《奇点临近》", -29, -22, "center"),
+    "意外的超强": ("泽汉《意外的超强》", -34, -17.5, "left"),
+    "注定一战": ("艾利森《注定一战》", -19.5, -10.5, "center"),
+    "回顾": ("贝拉米《回顾》", -25, -35.5, "left"),
     "人口原理": ("马尔萨斯《人口原理》", -3.5, -33.5, "left"),
-    "人口爆炸": ("埃利希《人口爆炸》", -4.5, -11.2, "left"),
-    "必然": ("凯文·凯利《必然》", -27, -4.5, "center"),
-    "原则：应对变化中的世界秩序": ("达利欧《世界秩序》", -14.5, -9, "center"),
-    "金融炼金术": ("索罗斯《金融炼金术》", 12, -21.3, "left"),
+    "人口爆炸": ("埃利希《人口爆炸》", -11.5, -39.5, "left"),
+    "终极资源Ⅱ": ("西蒙《终极资源Ⅱ》", -24, 6.5, "center"),
+    "必然": ("凯文·凯利《必然》", -12.5, 8.5, "center"),
+    "金融炼金术": ("索罗斯《金融炼金术》", 7, -24.5, "left"),
 }
 
 
@@ -280,20 +292,21 @@ def fig5():
             col, a = TERRA, 0.75
         else:
             col, a = GREY, 0.7
-        ax.scatter(x, y, s=r["可判定数"] * 2.2 + 20, color=col, alpha=a, edgecolor="white", lw=0.8)
+        sz = min(r["可判定数"], 320) * 2.0 + 20
+        ax.scatter(x, y, s=sz, color=col, alpha=a, edgecolor="white", lw=0.8)
         if r["书名"] in LABELS5:
             lab, tx, ty, ha = LABELS5[r["书名"]]
-            far = abs(tx - x) > 3 or abs(ty - y) > 2
-            ax.annotate(lab, (x, y), xytext=(tx, ty), textcoords="data", fontsize=9.5, color=INK,
+            far = abs(tx - x) > 2.5 or abs(ty - y) > 2
+            ax.annotate(lab, (x, y), xytext=(tx, ty), textcoords="data", fontsize=9.2, color=INK,
                         ha=ha, va="center",
                         arrowprops=dict(arrowstyle="-", color=MUTED, lw=0.7) if far else None)
-    ax.set_xlim(-36, 46); ax.set_ylim(-42, 34)
+    ax.set_xlim(-38, 46); ax.set_ylim(-43, 34)
     ax.set_xlabel("同档超额严格胜率（百分点）"); ax.set_ylabel("同档低错优势（百分点）")
     kw = dict(fontsize=13, fontweight="bold", alpha=0.85)
     ax.text(44, 31, "又准又稳", color=FOREST, ha="right", **kw)
-    ax.text(-35, -27, "胜率低且错误多", color=TERRA, ha="left", **kw)
-    ax.text(44, -38, "命中多，但错误也多", color=MUTED, ha="right", fontsize=11)
-    ax.text(-34, 31, "谨慎少错，但少有完全命中", color=MUTED, ha="left", fontsize=11)
+    ax.text(-36, -28, "胜率低且错误多", color=TERRA, ha="left", **kw)
+    ax.text(44, -40, "命中多，但错误也多", color=MUTED, ha="right", fontsize=11)
+    ax.text(-36, 31, "谨慎少错，但少有完全命中", color=MUTED, ha="left", fontsize=11)
     ax.grid(True, color=GRID); ax.set_axisbelow(True)
     save(fig, "fig05-beat-the-baseline.png")
 
@@ -302,20 +315,23 @@ def fig5():
 SHORTNAME = {
     "后美国世界": "扎卡利亚《后美国世界》", "民主的理想与现实": "麦金德《民主的理想与现实》",
     "注定一战": "艾利森《注定一战》", "贫困、繁荣与地球报告2024：走出多重危机的路径": "世界银行《贫困、繁荣与地球》",
-    "世界秩序": "基辛格《世界秩序》",
+    "黑天鹅": "塔勒布《黑天鹅》", "世界秩序": "基辛格《世界秩序》",
     "Essentials of Economic Theory: As Applied to Modern Problems of Industry and Public Policy": "J. B. 克拉克《经济理论要义》",
     "金融炼金术": "索罗斯《金融炼金术》", "原则：应对变化中的世界秩序": "达利欧《世界秩序》",
+    "芯片战争": "米勒《芯片战争》",
     "智能基础设施的未来：通向2055的情景": "UK GO-Science《智能基础设施2055》",
     "经合组织数字经济展望2024（第二卷）：加强连接、创新与信任": "OECD《数字经济展望2024》",
     "免费": "安德森《免费》", "奇点更近": "库兹韦尔《奇点更近》*",
     "为人工智能的未来做准备": "美国 NSTC《为AI的未来做准备》", "奇点临近": "库兹韦尔《奇点临近》",
     "全球关键矿产展望2024（Global Critical Minerals Outlook 2024）": "IEA《关键矿产2024》",
     "煤炭问题：关于国家进步与煤矿可能耗尽的探究": "杰文斯《煤炭问题》",
+    "终极资源Ⅱ": "西蒙《终极资源Ⅱ》",
     "正在消失的野生生物": "霍纳迪《正在消失的野生生物》",
     "回到教育的未来：经合组织的四种学校教育情景": "OECD《回到教育的未来》",
     "共同重新构想我们的未来：教育的新社会契约": "UNESCO《共同重新构想我们的未来》",
     "政党：现代民主中寡头化倾向的社会学研究": "米歇尔斯《政党》",
     "航空器：战争与和平中的发展及其商业未来": "戴维《航空器》", "预言": "威尔斯《预言》",
+    "阿基米德，或物理学的未来": "怀特《阿基米德》",
     "回顾": "贝拉米《回顾》", "战略远见": "布热津斯基《战略远见》",
 }
 
@@ -344,11 +360,10 @@ def fig6():
                 ha="left" if v > 0 else "right", fontsize=10, color=col)
     ax.set_yticks([p for p, _ in ylabels]); ax.set_yticklabels([l for _, l in ylabels], fontsize=10.5)
     ax.invert_yaxis(); ax.axvline(0, color=MUTED, lw=1)
-    ax.set_xlim(-38, 46); ax.xaxis.grid(True, color=GRID); ax.set_axisbelow(True)
+    ax.set_xlim(-40, 46); ax.xaxis.grid(True, color=GRID); ax.set_axisbelow(True)
     for yy, short in domain_marks:
-        fig.text(0.02, 0, "")
-        ax.text(-37.5, yy - 0.75, short, fontsize=11.5, fontweight="bold", color=COBALT, va="center")
-    fig.text(0.60, 0.025, "* 《奇点更近》仅 24 条可判定且近九成未到期，暂不具参考价值", fontsize=9.5, color=MUTED)
+        ax.text(-39.5, yy - 0.75, short, fontsize=11.5, fontweight="bold", color=COBALT, va="center")
+    fig.text(0.58, 0.025, "* 《奇点更近》仅 24 条可判定且近九成未到期，暂不具参考价值", fontsize=9.5, color=MUTED)
     save(fig, "fig06-domain-leaders.png")
 
 
@@ -363,7 +378,6 @@ PAIRS7 = [
     ("纳西姆·塔勒布", "黑天鹅", "反脆弱", "风险结构 → 医学创新铁律"),
     ("塞缪尔·亨廷顿", "第三波", "文明的冲突与世界秩序的重建", "民主化趋势 → 文明取代国家"),
 ]
-
 
 SHORT7 = {"原则：应对变化中的世界秩序": "世界秩序", "智能基础设施的未来：通向2055的情景": "智能基础设施2055",
           "制造业的未来：英国的新机遇与挑战": "制造业的未来", "文明的冲突与世界秩序的重建": "文明的冲突"}
@@ -394,7 +408,7 @@ def fig7():
 
 # =================================================================== F8
 def fig8():
-    fig = frame("写明期限的预测错误率更高，这一规律在七个领域均成立",
+    fig = frame("写明期限的预测整体错误率更高，七个领域中六个成立",
                 "各领域中“原文写明期限”与“只给方向未写期限”两类预测的错误率对比")
     ax = fig.add_axes([0.17, 0.17, 0.55, 0.64])
     data = []
@@ -410,15 +424,18 @@ def fig8():
         ax.plot([m, e], [i, i], color=GREY, lw=2.5, zorder=1)
         ax.scatter(m, i, s=160, color=COBALT, zorder=3)
         ax.scatter(e, i, s=160, color=TERRA, zorder=3)
-        ax.text(e + 1.3, i, f"{e:.1f}%", va="center", color=TERRA, fontsize=10.5)
-        ax.text(m - 1.3, i, f"{m:.1f}%", va="center", ha="right", color=COBALT, fontsize=10.5)
+        if e >= m:
+            ax.text(e + 1.3, i, f"{e:.1f}%", va="center", color=TERRA, fontsize=10.5)
+            ax.text(m - 1.3, i, f"{m:.1f}%", va="center", ha="right", color=COBALT, fontsize=10.5)
+        else:
+            ax.text(m + 1.3, i, f"{m:.1f}%", va="center", color=COBALT, fontsize=10.5)
+            ax.text(e - 1.3, i, f"{e:.1f}%", va="center", ha="right", color=TERRA, fontsize=10.5)
     ax.set_yticks(range(len(data))); ax.set_yticklabels([d[0] for d in data], fontsize=12)
     ax.invert_yaxis(); ax.set_xlim(-2, 56); ax.set_xlabel("错误率 %")
     ax.xaxis.grid(True, color=GRID); ax.set_axisbelow(True)
     ax.scatter([], [], s=110, color=TERRA, label="写明期限")
     ax.scatter([], [], s=110, color=COBALT, label="只给方向")
     ax.legend(loc="lower right", frameon=False, fontsize=11)
-    # side panel: case
     box = fig.add_axes([0.75, 0.20, 0.22, 0.55]); box.axis("off")
     box.add_patch(FancyBboxPatch((0, 0), 1, 1, boxstyle="round,pad=0.02", fc="#FCFBF8", ec=GREY))
     box.text(0.08, 0.90, "典型案例", fontsize=12, fontweight="bold", color=COBALT, transform=box.transAxes)
@@ -428,41 +445,47 @@ def fig8():
     box.text(0.08, 0.30, "写死年份", fontsize=10.5, color=TERRA, transform=box.transAxes)
     box.text(0.08, 0.18, "56.0%", fontsize=24, fontweight="bold", color=TERRA, transform=box.transAxes)
     box.text(0.08, 0.05, "如“金砖四国 2015 年超美国”", fontsize=9.5, color=MUTED, transform=box.transAxes)
-    fig.text(0.045, 0.06, "全库：写明期限错误率 17.9%，只给方向 12.3%。但有产能、建设周期核算支撑时，"
-             "写明期限照样准（IEA 53.3%、米尔斯海默 62.5%）。", fontsize=10, color=BODY)
+    fig.text(0.045, 0.06, "全库：写明期限错误率 14.8%，只给方向 11.9%。但有产能、建设周期核算支撑时，"
+             "写明期限照样准（米勒《芯片战争》62.5%、IEA 53.3%、米尔斯海默 62.5%）。", fontsize=10, color=BODY)
     save(fig, "fig08-explicit-vs-implicit.png")
 
 
 # =================================================================== F9
-METHODS = [  # name, decided, strict, direction, error  (panoramic-report §4)
-    ("地缘格局 / 权力平衡", 419, 40.3, 47.5, 13.1),
-    ("人口 / 资源 / 生态约束账本", 87, 34.5, 56.3, 8.1),
-    ("趋势外推 / 定量预测", 3063, 34.8, 51.5, 16.6),
-    ("其他综合定性", 1169, 29.9, 55.1, 8.7),
-    ("制度结构 / 激励", 42, 28.6, 59.5, 16.7),
-    ("社会心理 / 观念变迁", 62, 27.4, 51.6, 4.8),
-    ("经济周期 / 金融结构", 138, 26.8, 45.6, 15.2),
-    ("技术曲线 / 成本扩散", 127, 26.0, 66.9, 10.2),
-    ("历史类比 / 长周期归纳", 254, 23.6, 58.7, 7.9),
-    ("条件情景 / 风险推演", 194, 22.2, 51.0, 9.3),
-]
-
-
 def fig9():
-    fig = frame("约束账本兼顾较高胜率与低错误；单纯趋势外推样本最多，错误率也最高",
-                "按推理方法聚类的表现（同一预测可归入多类）：横轴错误率，纵轴严格胜率，气泡大小为可判定条数")
+    fig = frame("功能扩散与制度/条件分支兼顾稳健；无账本硬数字与线性外推错误率明显偏高",
+                f"全库 {N_DECIDED:,} 条可判定预测按信号方法透镜与高危噪音特征聚类的表现：横轴错误率，纵轴严格胜率")
     ax = fig.add_axes([0.08, 0.16, 0.88, 0.66])
-    for name, n, s, d, e in METHODS:
-        col = FOREST if (s >= 34 and e <= 14) else (TERRA if e >= 15 else COBALT)
-        ax.scatter(e, s, s=max(n, 40) * 1.1, color=col, alpha=0.55, edgecolor="white", lw=1)
-        off = (10, -12) if name.startswith("条件情景") else ((10, 6) if name.startswith("历史类比") else (10, 0))
-        ax.annotate(f"{name}\n胜率 {s}% · 错误 {e}% · n={n:,}", (e, s), xytext=off,
-                    textcoords="offset points", fontsize=9.5, va="center", color=INK)
-    ax.set_xlim(3, 21); ax.set_ylim(19, 44)
+    dec = [r for r in forecasts_corpus if r["verdict"] != "暂无法判断"]
+    feats = [(r, fo.extract_features(r)) for r in dec]
+    specs = [
+        # (name, key, col, (tx, ty), ha) in data coordinates for zero overlap
+        ("技术功能扩散链", "m_functional_diffusion", FOREST, (7.6, 42.4), "left"),
+        ("制度与激励结构", "m_institutional_incentive", COBALT, (13.2, 36.2), "left"),
+        ("地缘底盘与权力均衡", "m_geopolitical_chassis", COBALT, (11.5, 31.2), "right"),
+        ("人口/资源/产能账本*", "m_constraint_ledger", COBALT, (18.2, 33.8), "center"),
+        ("多情景条件分支", "m_conditional_scenario", FOREST, (8.8, 27.6), "right"),
+        ("多结论捆绑复合命题", "s_compound_claim", TERRA, (12.8, 22.8), "right"),
+        ("相对超越执念（何时超X）", "s_comparative_surpass", TERRA, (16.4, 29.0), "left"),
+        ("风险边界与反脆弱", "m_risk_fragility", COBALT, (17.2, 26.2), "left"),
+        ("无账本硬数字断言", "s_unanchored_hard_number", TERRA, (14.4, 20.5), "right"),
+        ("固定速率线性外推", "s_linear_rate_extrapolation", TERRA, (16.8, 22.2), "left"),
+    ]
+    for name, key, col, (tx, ty), ha in specs:
+        sub = [r for r, f in feats if f.get(key, 0.0) > 0.5]
+        n = len(sub)
+        vc = collections.Counter(r["verdict"] for r in sub)
+        s = vc["正确"] / n * 100
+        e = vc["错误"] / n * 100
+        ax.scatter(e, s, s=max(n, 45) * 0.9, color=col, alpha=0.55, edgecolor="white", lw=1)
+        far = abs(tx - e) > 0.7 or abs(ty - s) > 1.2
+        ax.annotate(f"{name}\n胜率 {s:.1f}% · 错误 {e:.1f}% · n={n:,}", (e, s), xytext=(tx, ty),
+                    textcoords="data", fontsize=9.2, va="center", ha=ha, color=INK,
+                    arrowprops=dict(arrowstyle="-", color=MUTED, lw=0.7) if far else None)
+    ax.set_xlim(4.2, 21.8); ax.set_ylim(18.5, 46.5)
     ax.set_xlabel("错误率 %（越靠左越少出错）"); ax.set_ylabel("严格胜率 %（越靠上越常完全命中）")
     ax.grid(True, color=GRID); ax.set_axisbelow(True)
-    ax.text(3.4, 43, "↖ 理想区域：命中多、错误少", fontsize=12, color=FOREST, fontweight="bold")
-    fig.text(0.045, 0.06, "注：方法标签 69.2% 为研究者归纳、24.1% 为作者明示；反映相关性而非因果。",
+    ax.text(5.0, 44.5, "↖ 理想区域：命中多、错误少", fontsize=12, color=FOREST, fontweight="bold")
+    fig.text(0.045, 0.06, "* 注：资源账本类含马尔萨斯/埃利希/泽汉单调稀缺末日外推样本；剔除无弹性末日派后机构与学者硬账本严格胜率 37.8%、错误率 11.3%。",
              fontsize=9.5, color=MUTED)
     save(fig, "fig09-methods.png")
 
@@ -501,20 +524,21 @@ def fig10():
 
 # =================================================================== F11
 LABELS11 = {  # title: (label, tx, ty, ha)
-    "法国革命论": ("伯克《法国革命论》", 17.5, 26.5, "left"),
-    "智能基础设施的未来：通向2055的情景": ("UK GO-Science《智能基础设施2055》", 45, 25, "right"),
-    "大国政治的悲剧": ("米尔斯海默《大国政治的悲剧》", -1, 24, "right"),
-    "英语的未来？（The Future of English? A guide to forecasting the popularity of the English language in the 21st century）": ("Graddol《英语的未来？》", 4, 20.5, "right"),
-    "必然": ("凯文·凯利《必然》", -19, 21, "center"),
-    "历史的终结与最后的人": ("福山《历史的终结》", -11, 18.5, "center"),
-    "人工智能时代与人类未来": ("基辛格等《人工智能时代》", -6, 13, "right"),
-    "生命3.0": ("泰格马克《生命3.0》", -3, 17, "right"),
-    "亚洲的21世纪": ("马凯硕《亚洲的21世纪》", -26, 9, "center"),
-    "大棋局": ("布热津斯基《大棋局》", 9, 9.5, "left"),
-    "煤炭问题：关于国家进步与煤矿可能耗尽的探究": ("杰文斯《煤炭问题》", 26, 20, "left"),
-    "后美国世界": ("扎卡利亚《后美国世界》", 27, 3, "left"),
-    "奇点临近": ("库兹韦尔《奇点临近》", -30, -22.5, "center"),
-    "注定一战": ("艾利森《注定一战》", -17, -12.5, "left"),
+    "法国革命论": ("伯克《法国革命论》", 16.5, 25.5, "left"),
+    "芯片战争": ("米勒《芯片战争》", 45, 17.5, "right"),
+    "智能基础设施的未来：通向2055的情景": ("UK GO-Science《智能基础设施2055》", 45, 24.5, "right"),
+    "大国政治的悲剧": ("米尔斯海默《大国政治的悲剧》", 1, 24.5, "right"),
+    "必然": ("凯文·凯利《必然》", -13, 27.5, "center"),
+    "历史的终结与最后的人": ("福山《历史的终结》", -17.5, 19.5, "right"),
+    "能源转型：历史、要求与前景": ("斯米尔《能源转型》", 8, 19.5, "center"),
+    "未来之路": ("盖茨《未来之路》", 16.5, 3.5, "left"),
+    "后工业社会的来临": ("贝尔《后工业社会的来临》", 11.5, 8.8, "left"),
+    "亚洲的21世纪": ("马凯硕《亚洲的21世纪》", -22, 10, "center"),
+    "煤炭问题：关于国家进步与煤矿可能耗尽的探究": ("杰文斯《煤炭问题》", 23, 22, "left"),
+    "后美国世界": ("扎卡利亚《后美国世界》", 30.5, 12, "left"),
+    "奇点临近": ("库兹韦尔《奇点临近》", -30, -14, "center"),
+    "意外的超强": ("泽汉《意外的超强》", -20, -32.5, "left"),
+    "注定一战": ("艾利森《注定一战》", -21, -21, "right"),
 }
 
 
@@ -524,7 +548,7 @@ def fig11():
                 figsize=(12, 8))
     ax = fig.add_axes([0.08, 0.10, 0.88, 0.72])
     ax.axhline(0, color=MUTED, lw=1); ax.axvline(0, color=MUTED, lw=1)
-    ax.axhspan(0, 30, xmin=0, xmax=36 / 82, color=COBALT, alpha=0.05, zorder=0)
+    ax.axhspan(0, 31, xmin=0, xmax=38 / 84, color=COBALT, alpha=0.05, zorder=0)
     for r in rows:
         x, y = pct(r["同档超额严格胜率_pp"]), pct(r["同档超额方向命中率_pp"])
         if x is None or y is None or r["可判定数"] < 15:
@@ -537,18 +561,19 @@ def fig11():
             col = TERRA
         else:
             col = GREY
-        ax.scatter(x, y, s=r["可判定数"] * 2.2 + 20, color=col, alpha=0.7, edgecolor="white", lw=0.8)
+        sz = min(r["可判定数"], 320) * 2.0 + 20
+        ax.scatter(x, y, s=sz, color=col, alpha=0.7, edgecolor="white", lw=0.8)
         if r["书名"] in LABELS11:
             lab, tx, ty, ha = LABELS11[r["书名"]]
-            far = abs(tx - x) > 3 or abs(ty - y) > 2
-            ax.annotate(lab, (x, y), xytext=(tx, ty), fontsize=9.5, color=INK, ha=ha, va="center",
+            far = abs(tx - x) > 2.5 or abs(ty - y) > 2
+            ax.annotate(lab, (x, y), xytext=(tx, ty), fontsize=9.2, color=INK, ha=ha, va="center",
                         arrowprops=dict(arrowstyle="-", color=MUTED, lw=0.7) if far else None)
-    ax.set_xlim(-36, 46); ax.set_ylim(-36, 30)
+    ax.set_xlim(-38, 46); ax.set_ylim(-38, 31)
     ax.set_xlabel("同档超额严格胜率（百分点）"); ax.set_ylabel("同档超额方向命中率（百分点）")
     ax.grid(True, color=GRID); ax.set_axisbelow(True)
-    ax.text(-35, 28, "方向判断强，但少有完全兑现", color=COBALT, fontsize=13, fontweight="bold")
-    ax.text(45, 28, "方向与终点都准", color=FOREST, fontsize=13, fontweight="bold", ha="right")
-    ax.text(-35, -34, "方向与终点都弱于同档", color=TERRA, fontsize=12, fontweight="bold")
+    ax.text(-36, 28.5, "方向判断强，但少有完全兑现", color=COBALT, fontsize=13, fontweight="bold")
+    ax.text(45, 28.5, "方向与终点都准", color=FOREST, fontsize=13, fontweight="bold", ha="right")
+    ax.text(-36, -35.5, "方向与终点都弱于同档", color=TERRA, fontsize=12, fontweight="bold")
     save(fig, "fig11-direction-vs-strict.png")
 
 
@@ -568,6 +593,9 @@ SHORT12 = {
     "必然": "凯文·凯利《必然》", "历史的终结与最后的人": "福山《历史的终结》",
     "下一步：经济世界联邦计划": "Nearing《下一步》",
     "人工智能时代与人类未来": "基辛格等《人工智能时代》", "大棋局": "布热津斯基《大棋局》",
+    "地理的复仇": "卡普兰《地理的复仇》", "超级智能": "博斯特罗姆《超级智能》",
+    "战略远见": "布热津斯基《战略远见》", "能源转型：历史、要求与前景": "斯米尔《能源转型》",
+    "芯片战争": "米勒《芯片战争》", "未来简史": "赫拉利《未来简史》",
 }
 
 
@@ -588,9 +616,8 @@ def fig12():
                 va="center", fontsize=9.5, color=BODY)
     ax.set_yticks(range(len(rs)))
     ax.set_yticklabels([f"{SHORT12.get(r['书名'], r['书名'][:14])}（{r['出版年']}）" for r in rs], fontsize=10.5)
-    ax.invert_yaxis(); ax.set_xlim(0, 135); ax.xaxis.set_visible(False)
+    ax.invert_yaxis(); ax.set_xlim(0, 140); ax.xaxis.set_visible(False)
     ax.spines["bottom"].set_visible(False)
-    from matplotlib.patches import Patch
     ax.legend(handles=[Patch(color=FOREST, label="完全命中（正确）"), Patch(color="#9DBBA7", label="趋势符合")],
               loc="upper right", frameon=False, fontsize=11, bbox_to_anchor=(1.08, 1.06))
     save(fig, "fig12-direction-leaders.png")
@@ -598,7 +625,7 @@ def fig12():
 
 # =================================================================== F13
 def fig13():
-    fig = frame("政治家与科技思想家的严格胜率不高，但方向命中率仅次于智库",
+    fig = frame("国际机构与智库双指标领跑，政治家与科技思想家方向命中率紧随其后",
                 "六类作者全部可判定预测的结果构成，按方向命中率（正确 + 趋势符合）从高到低排列")
     ax = fig.add_axes([0.20, 0.13, 0.76, 0.62])
     data = []
@@ -620,8 +647,8 @@ def fig13():
             left += v
         ax.text(-1.5, i + 0.38, f"方向命中 {parts[0] + parts[1]:.1f}%", ha="right", fontsize=9.5,
                 color=FOREST, va="center")
-    ax.axvline(52.5, color=INK, lw=1, ls=":")
-    ax.text(52.5, -0.65, "全库方向命中率 52.5%", fontsize=9.5, ha="center", color=INK)
+    ax.axvline(GLOBAL_DIR_PCT, color=INK, lw=1, ls=":")
+    ax.text(GLOBAL_DIR_PCT, -0.65, f"全库方向命中率 {GLOBAL_DIR_PCT:.1f}%", fontsize=9.5, ha="center", color=INK)
     ax.set_yticks(range(len(data))); ax.set_yticklabels([d[0] for d in data], fontsize=12)
     ax.invert_yaxis(); ax.set_xlim(0, 100); ax.set_xlabel("占可判定预测 %")
     for j, nm in enumerate(names):
@@ -632,11 +659,18 @@ def fig13():
 
 # =================================================================== F14
 def fig14():
+    exp_f = [r for r in forecasts_corpus if r["horizon_source"] == "explicit" and r["verdict"] != "暂无法判断"]
+    imp_f = [r for r in forecasts_corpus if r["horizon_source"] != "explicit" and r["verdict"] != "暂无法判断"]
+    vc_e = collections.Counter(r["verdict"] for r in exp_f)
+    vc_i = collections.Counter(r["verdict"] for r in imp_f)
+    de = (vc_e["正确"] + vc_e["趋势符合"]) / len(exp_f) * 100
+    di = (vc_i["正确"] + vc_i["趋势符合"]) / len(imp_f) * 100
+
     fig = frame("写明期限并不降低方向判断的准确度，变化的是结果的结算方式",
-                "原文写明期限与只给方向两类预测的结果构成：方向命中率几乎相同（53.0% vs 52.2%）")
+                f"原文写明期限与只给方向两类预测的结果构成：方向命中率几乎完全一致（{de:.1f}% vs {di:.1f}%）")
     ax = fig.add_axes([0.20, 0.30, 0.76, 0.45])
-    groups = [("写明期限\n可判定 1,199", [292, 343, 349, 215]),
-              ("只给方向\n可判定 3,833", [1383, 619, 1360, 471])]
+    groups = [(f"写明期限\n可判定 {len(exp_f):,}", [vc_e["正确"], vc_e["趋势符合"], vc_e["部分符合"], vc_e["错误"]]),
+              (f"只给方向\n可判定 {len(imp_f):,}", [vc_i["正确"], vc_i["趋势符合"], vc_i["部分符合"], vc_i["错误"]])]
     cols = [FOREST, "#9DBBA7", "#D8C3A0", TERRA]
     names = ["正确", "趋势符合", "部分符合", "错误"]
     for i, (lab, vals) in enumerate(groups):
@@ -655,7 +689,7 @@ def fig14():
     ax.set_yticks([0, 1]); ax.set_yticklabels([g[0] for g in groups], fontsize=12)
     ax.invert_yaxis(); ax.set_xlim(0, 100); ax.set_ylim(1.5, -0.75); ax.xaxis.set_visible(False)
     ax.spines["bottom"].set_visible(False)
-    fig.text(0.20, 0.20, "解读：写明期限的预测中，“完全命中”更少、“趋势符合”更多——方向已在兑现，但尚未在原定时间内达到终点；",
+    fig.text(0.20, 0.20, "解读：写明期限的预测中，“完全命中”更少、“趋势符合”翻倍——方向已在兑现，但尚未在原定时间内达到终点；",
              fontsize=11, color=BODY)
     fig.text(0.20, 0.16, "到期未达终点的部分则被记为错误。因此，期限写得过硬是精度问题，不等于方向判断失误。",
              fontsize=11, color=BODY)

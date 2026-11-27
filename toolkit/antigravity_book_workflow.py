@@ -113,7 +113,7 @@ def make_extract_worker(batch: dict):
    }}
    ```
    - 如果某个 chunk 没有任何预测，也必须写出该文件并令 `"predictions": []`，同时附上真实的 `body_sha256_12` 与 `tail_anchor`！
-   - 每条 prediction 必须包含 v5 标准字段：`quote`（必须从 `body` 逐字连续照抄，不得改字或用省略号拼接）、`kind`（`prediction` 或 `unclear`）、`claim_type`（`forecast`/`aphorism`/`normative`/`trivial`/`historical`/`mechanism`/`hypothetical`/`unclear`）、`speaker`、`attribution`（`author`/`author_endorsed`/`reported`/`rebutted`）、`future_oriented`（bool）、`claim`、`changes`、`horizon`、`resolvable`（bool）、`confidence`、`expanded_claim`、`reference_resolutions`、`unresolved_references`、`time_text`、`condition_text`、`method`、`method_basis`、`reason`。
+   - 每条 prediction 必须包含 v5 标准字段：`quote`（必须从 `body` 逐字连续照抄，不得改字或用省略号拼接）、`kind`（`prediction` 或 `unclear`）、`claim_type`（`forecast`/`aphorism`/`normative`/`trivial`/`historical`/`mechanism`/`hypothetical`/`unclear`）、`speaker`、`attribution`（`author`/`author_endorsed`/`reported`/`rebutted`）、`future_oriented`（bool）、`claim`、`changes`（**必须从 `quote` 原文逐字照抄变化/趋势短语，保持与 `quote` 相同语种，切勿翻译改写**）、`horizon`（若有明确期限，从 `quote` 原文逐字照抄）、`resolvable`（bool）、`confidence`、`expanded_claim`、`reference_resolutions`、`unresolved_references`、`time_text`、`condition_text`、`method`、`method_basis`、`reason`。
 
 3. 全部写完后，只通过 `finish` 返回简短回执：`{{"batch_id": "{bid}", "processed_chunks": {len(cids)}, "extracted_forecasts": <预测条数>}}`，不要在回复里粘贴长篇原文。
 """

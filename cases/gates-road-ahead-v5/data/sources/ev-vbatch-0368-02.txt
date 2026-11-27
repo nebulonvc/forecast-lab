@@ -1,0 +1,65 @@
+TLP:CLEAR
+
+Mobile Communications Best Practice Guidance Version History Version 1.0
+
+2.0
+
+Date
+
+Revision / Change Description
+
+December 18, 2024
+
+Original version
+
+November 24, 2025
+
+ Introduction: Expanded the scope of targeted individuals to include military positions and introduced enhanced recommendations for securing encrypted communications to counter evolving threats from malicious cyber actors beyond the PRC.  General Recommendation #1: Added general protection practices to secure private messaging applications.
+
+Introduction In 2025, the Cybersecurity and Infrastructure Security Agency (CISA) further identified a rise in cyber espionage activity conducted by nation-state affiliated cyber threat actors, particularly from the People’s Republic of China (PRC). These actors have targeted commercial telecommunications infrastructure, enabling breaches that resulted in the theft of customer call records and the compromise of private communications for a limited number of highly targeted individuals. While applicable to all audiences, this guidance specifically addresses highly targeted individuals who are in senior government, military, or political positions and likely possess information of interest to these threat actors. CISA initially released this best practice guidance to promote protections for mobile communications from exploitation by PRC-affiliated and other malicious cyber threat actors. The November 2025 update includes additional recommendations for securing end-to-end encrypted communications to empower users in protecting their personal communications amid an increasingly sophisticated threat landscape.
+
+Best Practices CISA strongly urges highly targeted individuals immediately review and apply the best practices below to protect mobile communications. Highly targeted individuals should assume that all communications between mobile devices—including government and personal devices—and internet services are at risk of interception or manipulation. While no single solution eliminates all risks, implementing these best practices significantly enhances protection of sensitive communications against nation-state affiliated and other malicious cyber actors. Organizations may already have these best practices in place, such as secure communication
+
+This document is marked TLP:CLEAR. Disclosure is not limited. Sources may use TLP:CLEAR when information carries minimal or no foreseeable risk of misuse, in accordance with applicable rules and procedures for public release. Subject to standard copyright rules, TLP:CLEAR information may be distributed without restriction. For more information on the Traffic Light Protocol, see Traffic Light Protocol (TLP) Definitions and Usage.
+
+TLP:CLEAR platforms1 and multifactor authentication (MFA) policies. In cases where organizations do not, apply the following best practices to mobile devices.
+
+General Recommendations Apply these best practices to devices and online accounts: 1. Only use end-to-end encrypted communications.  Adopt a free messaging application for secure communications that guarantees end-to-end
+
+encryption, such as Signal or similar apps. CISA recommends an end-to-end encrypted messaging application that is compatible with both iPhone and Android operating systems, allowing for interoperability across platforms. These applications typically support one-on-one text chats, group chats with up to 1,000 participants, and encrypted voice and video calls. When selecting any messaging application, evaluate how the application and associated services collect and store metadata that may be used to trace or identify the user.  Consider the following general protection practices to secure messaging applications, such as
+
+Signal and WhatsApp:  Remain vigilant against threat actors who use social engineering to claim an account is
+
+compromised and then further deceive the victim into taking actions that enable the actors to take control of the account.  For example, avoid scanning group-invitation links or QR codes from unknown sources.  Verify the authenticity of group invitations by contacting the group creator or administrator
+
+through separate communication channels.  Remain suspicious of unexpected security alert messages, even within the application
+
+itself, and especially if the message requests authentication (e.g., PINs or one-time codes).  Report such suspicious activity in messaging applications via the application’s reporting
+
+mechanism to help identify and mitigate cybersecurity threats.  Enable message expiration features to automatically delete sensitive messages after a set
+
+period.  For employer-issued devices, verify that applicable records retention policies allow for this
+
+setting to be enabled and that doing so is consistent with law.  Verify the devices in the linked devices2 section in messaging application’s settings.  Limit the linked devices to only those necessary.  Immediately remove any unintended devices.
+
+2. Enable Fast Identity Online (FIDO) phishing-resistant authentication. FIDO authentication uses the strongest form of MFA and is effective against MFA bypass techniques. Where feasible, hardwarebased FIDO security keys, such as Yubico or Google Titan, are the most effective; however, FIDO passkeys are an acceptable alternative. 1 Some examples include, but are not limited to, Microsoft Teams, Google Workspace, Slack, and WebEx. 2 Dan Black, “Multiple Russia-Aligned Threat Actors Actively Targeting Signal Messenger,” Google Threat Intelligence
+
+(blog), Google, last updated February 19, 2025, https://cloud.google.com/blog/topics/threat-intelligence/russiatargeting-signal-messenger/.
+
+CISA | Defend Today, Secure Tomorrow
+
+Page | 2
+
+TLP:CLEAR
+
+TLP:CLEAR  Take inventory of valuable accounts, including email and social media. Review any accounts where
+
+information leakage would benefit threat actors.  Enroll each account in FIDO-based authentication, especially Microsoft, Apple, and Google
+
+accounts. Once enrolled in FIDO-based authentication, disable other, less secure forms of MFA.  For Gmail users, enroll in Google’s Advanced Protection Program (APP) to strengthen defenses
+
+against phishing and account hijacking. 3. Migrate away from Short Message Service (SMS)-based MFA. Do not use SMS as a second factor for authentication. SMS messages are not encrypted. A threat actor with access to a telecommunication provider’s network who intercepts these messages can read them. SMS MFA is not phishing-resistant; therefore, it is not strong authentication for accounts of highly targeted individuals. Note: Some online services may default to SMS during account recovery flows, so it may not be feasible to completely eliminate SMS messages from the service.  For less valuable accounts, use other forms of MFA, such as authenticator codes. Set up these
+
+accounts with a free authenticator application for MFA, such as Google Authenticator, Microsoft Authenticator, or Authy. Note: While authenticator codes are better than SMS, they are still vulnerable to phishing; only FIDO authentication is phishing resistant.  Once enrolled, disable SMS for each account. Enrollment in authenticator-based MFA does not
+
+automatically unenroll the account’s SMS. This can create a weak fallback mechanism that can be

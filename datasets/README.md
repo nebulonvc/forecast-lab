@@ -6,7 +6,7 @@
 
 ## 1. 全案例统计总表：[`all_cases_summary.csv`](all_cases_summary.csv)
 
-覆盖全库去重后的 **132 部独立著作**（合计 8,130 条可评分预测、5,060 条明确判定），包含跨度分档与同档超额指标，共 **37 列**：
+覆盖全库去重后的 **146 部独立著作**（合计 10,745 条可评分预测、7,522 条明确判定），包含跨度分档与同档超额指标，共 **37 列**：
 
 | 字段分组 | 列名 | 说明与计算口径 |
 | :--- | :--- | :--- |
@@ -37,7 +37,7 @@
 
 ## 2. 精选 330 条预测总表：[`curated_330_forecasts.csv`](curated_330_forecasts.csv)
 
-从全库 8,130 条预测中人工去重、严格互斥筛选出的 **330 条高含金量样本**（零 UID 重叠），共 **11 列**：
+从全库历史预测中人工去重、严格互斥筛选出的 **330 条高含金量样本**（零 UID 重叠，源自首批 132 部基准语料冻结编号），共 **11 列**：
 
 | 列名 | 说明 |
 | :--- | :--- |
@@ -54,9 +54,9 @@
 
 ## 3. 预测方法优化模型与样本外交叉验证基准
 
-- [`forecast_optimizer_model.json`](forecast_optimizer_model.json)：基于全库 132 部著作（8,130 条预测 + 2,553 条非预测 + $t_0$ 宏观历史状态）训练固化的对数线性池化超学习器（`SuperLearner`）参数包（含 SHA-256 完整性校验），供 [`toolkit/forecast_optimizer.py`](../toolkit/forecast_optimizer.py) 与 [`toolkit/forecast_mcp.py`](../toolkit/forecast_mcp.py) 零依赖毫秒级加载。
+- [`forecast_optimizer_model.json`](forecast_optimizer_model.json)：基于全库 146 部著作（10,745 条预测 + 2,942 条非预测 + $t_0$ 宏观历史状态）训练固化的对数线性池化超学习器（`SuperLearner`）参数包（含 SHA-256 完整性校验），供 [`toolkit/forecast_optimizer.py`](../toolkit/forecast_optimizer.py) 与 [`toolkit/forecast_mcp.py`](../toolkit/forecast_mcp.py) 零依赖毫秒级加载。
 - [`optimization_benchmark.json`](optimization_benchmark.json)：按著作分组五折交叉验证（Out-of-Book 5-Fold Grouped CV）的 8 组学术模型对比指标（Brier、LogLoss、序数 RPS、ECE）及 Cochran-Mantel-Haenszel 分层因果效应表。详见 [`docs/06-forecast-method-optimization.md`](../docs/06-forecast-method-optimization.md)。
-- [`historical_tech_diffusion_atlas.json`](historical_tech_diffusion_atlas.json)：跨越 1882–2025 年的 **12 次代表性技术浪潮扩散基线与四层摩擦参数表**（基于 Comin-Hobijn NBER CHAT、Bass 1969 S 曲线系数 $(p, q)$、Paul David 发电机悖论及本库 132 部著作实证锚点），记录增量 `5%→50%` 耗时、存量更替耗时、资产周转底线与当下实时瓶颈核查清单，用于定量检验新技术“这次是否不一样”。
+- [`historical_tech_diffusion_atlas.json`](historical_tech_diffusion_atlas.json)：跨越 1882–2025 年的 **12 次代表性技术浪潮扩散基线与四层摩擦参数表**（基于 Comin-Hobijn NBER CHAT、Bass 1969 S 曲线系数 $(p, q)$、Paul David 发电机悖论及本库 146 部著作实证锚点），记录增量 `5%→50%` 耗时、存量更替耗时、资产周转底线与当下实时瓶颈核查清单，用于定量检验新技术“这次是否不一样”。
 
 ---
 

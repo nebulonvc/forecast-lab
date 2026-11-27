@@ -1,0 +1,86 @@
+Abstract
+
+   Many IETF protocols use cryptographic algorithms to provide
+   confidentiality, integrity, authentication, or digital signature.
+   Communicating peers must support a common set of cryptographic
+   algorithms for these mechanisms to work properly.  This memo provides
+   guidelines to ensure that protocols have the ability to migrate from
+   one mandatory-to-implement algorithm suite to another over time.
+
+Status of This Memo
+
+   This memo documents an Internet Best Current Practice.
+
+   This document is a product of the Internet Engineering Task Force
+   (IETF).  It represents the consensus of the IETF community.  It has
+   received public review and has been approved for public
+
+1.  Introduction
+
+   Many IETF protocols use cryptographic algorithms to provide
+   confidentiality, integrity, authentication, or digital signature.
+   For interoperability, communicating peers must support a common set
+   of cryptographic algorithms.  In most cases, a combination of
+   compatible cryptographic algorithms will be used to provide the
+   desired security services.  The set of cryptographic algorithms being
+   used at a particular time is often referred to as a cryptographic
+   algorithm suite or cipher suite.  In a protocol, algorithm
+   identifiers might name a single cryptographic algorithm or a full
+   suite of algorithms.
+
+   Cryptographic algorithms age; they become weaker with time.  As new
+   cryptanalysis techniques are developed and computing capabilities
+   improve, the work required to break a particular cryptographic
+   algorithm will reduce, making an attack on the algorithm more
+   feasible for more attackers.  While it is unknown how cryptoanalytic
+   attacks will evolve, it is certain that they will get better.  It is
+
+
+
+Housley                   Best Current Practice                 [Page 2]
+RFC 7696        Guidelines for Cryptographic Alg Agility   November 2015
+
+
+   unknown how much better they will become or when the advances will
+   happen.  Protocol designers need to assume that advances in computing
+   power or advances in cryptoanalytic techniques will eventually make
+   any algorithm obsolete.  For this reason, protocols need mechanisms
+   to migrate from one algorithm suite to another over time.
+
+   Algorithm agility is achieved when a protocol can easily migrate from
+   one algorithm suite to another more desirable one, over time.  For
+   the protocol implementer, this means that implementations should be
+   modular to easily accommodate the insertion of new algorithms or
+   suites of algorithms.  Ideally, implementations will also provide a
+   way to measure when deployed implementations have shifted away from
+   the old algorithms and to the better ones.  For the protocol
+   designer, algorithm agility means that one or more algorithm or suite
+   identifiers must be supported, the set of mandatory-to-implement
+   algorithms will change over time, and an IANA registry of algorithm
+   identifiers will be needed.
+
+   Algorithm identifiers by themselves are not sufficient to ensure easy
+   migration.  Action by people that maintain implementations and
+   operate services is needed to develop, deploy, and adjust
+   configuration settings to enable the new more desirable algorithms
+   and to deprecate or disable older, less desirable ones.  For various
+   reasons, most notably interoperability concerns, experience has shown
+   that it has proven difficult for implementers and administrators to
+   remove or disable weak algorithms.  Further, the inability of legacy
+   systems and resource-constrained devices to support new algorithms
+   adds to those concerns.  As a result, people live with weaker
+   algorithms, sometimes seriously flawed ones, well after experts
+   recommend migration.
+
+1.1.  Terminology
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+   "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
+   document are to be interpreted as described in [RFC2119].
+
+2.  Algorithm Agility Guidelines
+
+   These guidelines are for use by IETF working groups and protocol
+   authors for IETF protocols that make use of cryptographic algorithms.
+   Past attempts at algorithm agility have not been completely
+   successful, and this section provides some insights

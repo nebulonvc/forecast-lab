@@ -1,0 +1,48 @@
+The X3DH Key Agreement Protocol
+The X3DH Key Agreement Protocol
+Revision 1, 2016-11-04 [PDF]
+Moxie Marlinspike, Trevor Perrin (editor)
+Table of Contents
+1. Introduction
+2. Preliminaries
+2.1. X3DH parameters
+2.2. Cryptographic notation
+2.3. Roles
+2.4. Keys
+3. The X3DH protocol
+3.1. Overview
+3.2. Publishing keys
+3.3. Sending the initial message
+3.4. Receiving the initial message
+4. Security considerations
+4.1. Authentication
+4.2. Protocol replay
+4.3. Replay and key reuse
+4.4. Deniability
+4.5. Signatures
+4.6. Key compromise
+4.7. Server trust
+4.8. Identity binding
+5. IPR
+6. Acknowledgements
+7. References
+1. Introduction
+This document describes the "X3DH" (or "Extended Triple Diffie-Hellman") key agreement protocol. X3DH establishes a shared secret key between two parties who mutually authenticate each other based on public keys. X3DH provides forward secrecy and cryptographic deniability.
+X3DH is designed for asynchronous settings where one user ("Bob") is offline but has published some information to a server. Another user ("Alice") wants to use that information to send encrypted data to Bob, and also establish a shared secret key for future communication.
+2. Preliminaries
+2.1. X3DH parameters
+An application using X3DH must decide on several parameters:
+Name
+Definition
+curve
+X25519 or X448
+hash
+A 256 or 512-bit hash function (e.g. SHA-256 or SHA-512)
+info
+An ASCII string identifying the application
+For example, an application could choose curve as X25519, hash as SHA-512, and info as "MyProtocol".
+An application must additionally define an encoding function Encode(PK) to encode an X25519 or X448 public key PK into a byte sequence. The recommended encoding consists of some single-byte constant to represent the type of curve, followed by little-endian encoding of the u-coordinate as specified in [1].
+2.2. Cryptographic notation
+X3DH will use the following notation:
+The concatenation of byte sequences X and Y is X || Y.
+DH(PK1, PK2) represents a byte sequence which is the shared secret output from an Elliptic Curve Diffie-Hellman function involving the key pairs represented by public keys PK1 and PK2. The Elliptic Curve Diffie-Hellman function will be either the X2551

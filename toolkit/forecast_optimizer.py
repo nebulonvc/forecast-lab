@@ -10,8 +10,8 @@ Academic foundations implemented (pure Python 3.11+ standard library, zero exter
    Athanasopoulos, Hyndman & Talagala 2020, FFORMA) via 2nd-order Newton Histogram
    Gradient-Boosted Decision Trees (Friedman 2001; Chen & Guestrin 2016; Ke et al. 2017).
 4. Stratified Cochran-Mantel-Haenszel (CMH) & L2-Regularized GLMM deconfounded estimation
-   of the 6 Signal Method Archetypes and 5 Noise Failure Traps, anchored on 132 works
-   (8,130 forecasts, 5,060 decided outcomes, 2,553 excluded non-forecasts, and t_0
+   of the 6 Signal Method Archetypes and 5 Noise Failure Traps, anchored on 146 works
+   (10,745 forecasts, 7,522 decided outcomes, 2,942 excluded non-forecasts, and t_0
    macro-historical structural regimes from 1531 to 2026).
 5. Log-Linear Opinion Pooling & Temperature Scaling Calibration (Genest & Zidek 1986;
    Bates & Granger 1969; Satopaa, Baron, Foster, Mellers, Tetlock & Ungar 2014;
@@ -668,7 +668,7 @@ def extract_features(
 
 
 def load_training_corpus(repo_root: Path = REPO_ROOT) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]]]:
-    """Load all 8,130 forecasts + 2,553 non-forecasts across 132 works + 330 curated gold cases."""
+    """Load all 10,745 forecasts + 2,942 non-forecasts across 146 works + 330 curated gold cases."""
     summary_csv = repo_root / "datasets" / "all_cases_summary.csv"
     with open(summary_csv, encoding="utf-8-sig") as f:
         summary_rows = list(csv.DictReader(f))
@@ -1235,12 +1235,15 @@ class HistXGBoostMulticlass:
 
 def compute_cmh_stratified_effects(forecasts: list[dict[str, Any]]) -> dict[str, dict[str, float]]:
     """Cochran-Mantel-Haenszel (CMH) stratified log-odds & percentage-point effects
-    controlling for (horizon_bucket, horizon_source) across the 5,060 decided forecasts.
+    controlling for (domain, horizon_bucket, horizon_source) with inverse-sqrt book-cluster
+    weights across the 7,522 decided forecasts (eliminating Simpson's paradox & single-book dominance).
     """
     decided = [r for r in forecasts if r["verdict"] != "暂无法判断"]
-    strata: dict[tuple[str, str], list[tuple[dict[str, Any], dict[str, float]]]] = collections.defaultdict(list)
+    book_n = collections.Counter(r["case_slug"] for r in decided)
+    strata: dict[tuple[str, str, str], list[tuple[dict[str, Any], dict[str, float], float]]] = collections.defaultdict(list)
     for r in decided:
-        strata[(r["horizon_bucket"], r["horizon_source"])].append((r, extract_features(r)))
+        cw = 1.0 / math.sqrt(max(book_n[r["case_slug"]], 15))
+        strata[(r["domain"], r["horizon_bucket"], r["horizon_source"])].append((r, extract_features(r), cw))
 
     keys = [
         "m_constraint_ledger",
@@ -1265,16 +1268,18 @@ def compute_cmh_stratified_effects(forecasts: list[dict[str, Any]]) -> dict[str,
         d_vec = [0.0, 0.0, 0.0, 0.0]
         n_pos = 0
         for items in strata.values():
-            pos = [r for r, f in items if f.get(key, 0.0) > 0.5]
-            neg = [r for r, f in items if f.get(key, 0.0) <= 0.5]
-            if len(pos) < 3 or len(neg) < 5:
+            pos = [(r, cw) for r, f, cw in items if f.get(key, 0.0) > 0.5]
+            neg = [(r, cw) for r, f, cw in items if f.get(key, 0.0) <= 0.5]
+            if len(pos) < 2 or len(neg) < 3:
                 continue
-            w = (len(pos) * len(neg)) / (len(pos) + len(neg))
+            w1 = sum(cw for _, cw in pos)
+            w0 = sum(cw for _, cw in neg)
+            w = (w1 * w0) / (w1 + w0)
             w_sum += w
             n_pos += len(pos)
             for c, vname in enumerate(VERDICTS_4):
-                p1 = sum(1 for r in pos if r["verdict"] == vname) / len(pos)
-                p0 = sum(1 for r in neg if r["verdict"] == vname) / len(neg)
+                p1 = sum(cw for r, cw in pos if r["verdict"] == vname) / w1
+                p0 = sum(cw for r, cw in neg if r["verdict"] == vname) / w0
                 d_vec[c] += w * (p1 - p0)
         if w_sum > 0:
             deltas = [d / w_sum for d in d_vec]
@@ -1498,9 +1503,23 @@ class ForecastOptimizerEngine:
 
         p5 = log_linear_pool([[p_heb], [p_me], [p_xgb5], [p_2stage]], self.pool_weights, self.temperature)[0]
 
-        # Apply subtle CMH deconfounded log-odds micro-calibration on the 4 decided classes when method/trap overrides differ from base
+        # Apply subtle CMH deconfounded micro-calibration on the 4 decided classes for rare traps & counterfactual overrides
         dec_mass = max(1.0 - p5[4], 1e-8)
         p4 = [p5[c] / dec_mass for c in range(4)]
+        cmh_shift = [0.0, 0.0, 0.0, 0.0]
+        for t_key in ("s_unanchored_hard_number", "s_linear_rate_extrapolation", "s_comparative_surpass", "s_compound_claim"):
+            v = X.get(t_key, 0.0)
+            if v > 0.5 and t_key in self.cmh_effects:
+                eff = self.cmh_effects[t_key]
+                cmh_shift[0] += 0.35 * (eff["delta_strict_pp"] / 100.0)
+                cmh_shift[1] += 0.35 * (eff["delta_trend_pp"] / 100.0)
+                cmh_shift[2] += 0.35 * (eff["delta_partial_pp"] / 100.0)
+                cmh_shift[3] += 0.45 * (eff["delta_error_pp"] / 100.0)
+        if any(s != 0.0 for s in cmh_shift):
+            p4 = [max(0.005, p4[c] + cmh_shift[c]) for c in range(4)]
+            s4 = sum(p4)
+            p4 = [v / s4 for v in p4]
+            p5 = [p4[0] * dec_mass, p4[1] * dec_mass, p4[2] * dec_mass, p4[3] * dec_mass, p5[4]]
 
         # Proper utility score: rewards strict & directional accuracy, penalizes outright errors & unresolvable vagueness
         # Strictly transparent decision rule; raw 5-class probabilities are always returned separately!
@@ -1873,7 +1892,7 @@ class ForecastOptimizerEngine:
             f"  - **反校验透镜（防盲区对冲）**：{counter_lens.strip() or best['recommended_counter_lens']}",
             f"  - **承诺硬度选择依据**：{best['commitment_label']}",
             *tech_card_lines,
-            f"- **全库 8,130 条预测校准先验**：严格胜率 `{b_o4['正确']:.1%}` ｜ 方向命中率 `{(b_o4['正确'] + b_o4['趋势符合']):.1%}` ｜ 部分符合 `{b_o4['部分符合']:.1%}` ｜ 错误风险 `{b_o4['错误']:.1%}`",
+            f"- **全库 {self.bundle.get('trained_on_forecasts', 10745):,} 条预测校准先验**：严格胜率 `{b_o4['正确']:.1%}` ｜ 方向命中率 `{(b_o4['正确'] + b_o4['趋势符合']):.1%}` ｜ 部分符合 `{b_o4['部分符合']:.1%}` ｜ 错误风险 `{b_o4['错误']:.1%}`",
             f"- **定期追踪领先指标**：{leading_indicators.strip() or best['leading_indicator_template']}",
             f"- **明确证伪条件（三轴结算红线）**：{falsification.strip() or '<明确推翻本预测的定量反证阈值>'}",
         ])
@@ -2160,9 +2179,14 @@ def train_and_benchmark(
 ) -> tuple[dict[str, Any], dict[str, Any]]:
     """Run 5-fold Out-of-Book Grouped CV tournament across 7 academic models + fit full Super-Learner."""
     t_start = time.time()
+    summary_csv = repo_root / "datasets" / "all_cases_summary.csv"
+    with open(summary_csv, encoding="utf-8-sig") as f:
+        summary_rows = list(csv.DictReader(f))
+    expected_forecasts = sum(int(r["预测数"]) for r in summary_rows)
+    n_works = len(summary_rows)
     forecasts, nonforecasts, _ = load_training_corpus(repo_root)
-    if len(forecasts) != 8130:
-        raise RuntimeError(f"Expected 8,130 forecasts across 132 works, got {len(forecasts)}")
+    if len(forecasts) != expected_forecasts:
+        raise RuntimeError(f"Expected {expected_forecasts:,} forecasts across {n_works} works, got {len(forecasts):,}")
 
     slugs = sorted({r["case_slug"] for r in forecasts})
     rng = random.Random(20261124)
@@ -2338,7 +2362,7 @@ def train_and_benchmark(
         "schema_version": "forecast-optimizer-benchmark-v1",
         "evaluation_protocol": "5-Fold Out-of-Book Grouped Cross-Validation by case_slug (zero book/author leakage)",
         "corpus_counts": {
-            "independent_works": 132,
+            "independent_works": n_works,
             "total_candidates": len(all_cands),
             "scored_forecasts": len(forecasts),
             "decided_forecasts": len(dec_idx),
@@ -2361,7 +2385,7 @@ def train_and_benchmark(
 
     model_bundle = {
         "schema_version": "forecast-optimizer-model-v1",
-        "trained_on_works": 132,
+        "trained_on_works": n_works,
         "trained_on_forecasts": len(forecasts),
         "trained_on_nonforecasts": len(nonforecasts),
         "pool_weights": avg_w,

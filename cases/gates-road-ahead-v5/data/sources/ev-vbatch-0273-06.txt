@@ -1,0 +1,23 @@
+PICS Frequently Asked Questions (FAQ) This document provides answers to a number of Frequently Asked Questions about W3C's Platform for Internet Content Selection (PICS).
+
+The PICS specification enables labels (metadata) to be associated with Internet content. It was originally designed to help parents and teachers control what children access on the Internet, but it also facilitates other uses for labels, including code signing and privacy. More information about PICS is available from the PICS home page . The W3C's Resource Description Framework (RDF) may also be of interest as more general purpose successor technology to PICS.
+
+A separate FAQ addresses intellectual freedom implications of PICS. The RDF FAQ may also be of interest.
+
+Q: Where do I get the PICS software? How much does PICS cost?
+
+A: Actually, PICS doesn't provide any software. It's just a set of technical specifications that help software and rating services to work together. You would actually use filtering software provided by some organization other than PICS. Please note that W3C does not endorse or evaluate any of the products. Prices vary; some software is free.
+
+Q: I have lost or forgotten the password to change my filtering preferences. Can W3C help me?
+
+A: We are sorry, but the World Wide Web Consortium has no way to help with specific product support. You will need to contact the vendor of your software.
+
+Q: What criteria does PICS use in deciding what's safe for my children to view? Isn't that inherently a subjective decision?
+
+A: Again, PICS doesn't actually rate anything. PICS just sets technical specifications so that ratings from any source will work with all the filtering software. Rating and labeling services choose their own criteria for rating. Since rating will always involve some amount of subjective judgement, you'll want to choose a rating service whose judgements are close to the ones you would make. The filtering software you use may already be configured to use a particular rating service, so you may not have to make this choice separately.
+
+A: PICSRules is a language for expressing filtering rules (profiles) that allow or block access to URLs based on PICS labels that describe those URLs. The purposes for a common profile-specification language are:
+
+Sharing and installation of profiles. Sophisticated profiles may be difficult for end-users to specify, even through well-crafted user interfaces. An organization can create a recommended profile for children of a certain age. Users who trust that organization can install the profile rather than specifying one from scratch. It will be easy to change the active profile on a single computer, or to carry a profile to a new computer. Communication to agents, search engines, proxies, or other servers. Servers of various kinds may wish to tailor their output to better meet users' preferences, as expressed in a profile. For example, a search service can return only links that match a user's profile, which may specify criteria based on quality, privacy, age suitability, or the safety of downloadable code. Portability betwen filtering products. The same profile will work with any PICSRules-compatible product.
+
+Q: How difficult is it for a content provider to include a PICS compliant label with the content? Please describe the process.

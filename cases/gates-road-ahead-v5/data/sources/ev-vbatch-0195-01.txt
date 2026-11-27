@@ -1,0 +1,24 @@
+Overview: CSS styling basics
+CSS (Cascading Style Sheets) allows you to create great-looking web pages, but how does it work under the hood? This article explains what CSS is, what the basic syntax looks like, and how your browser applies CSS to HTML to style it.
+That HTML has nothing to do with styling.
+The concept of default browser styles.
+What CSS code looks like.
+How CSS is applied to HTML.
+Browser default styles
+In the Structuring content with HTML module, we covered what HTML is and how it is used to mark up documents. These documents will be readable in a web browser. Headings will look larger than regular text, paragraphs break onto a new line and have space between them. Links are colored and underlined to distinguish them from the rest of the text.
+What you are seeing are the browser's default styles — very basic styling that the browser applies to HTML to make sure that the page will be readable even if no explicit styling is specified by the author of the page. These styles are defined in default CSS stylesheets contained within the browser — they have nothing to do with HTML.
+The web would be a boring place if all websites looked like that. This is why you need to learn about CSS.
+Using CSS, you can control exactly how HTML elements look in the browser, presenting your documents to your users with whatever design and layout you like.
+A document is usually a text file structured using a markup language, most commonly HTML (these are termed HTML documents ). You may also come across documents written in other markup languages such as SVG or XML . An HTML document contains a web page's content and specifies its structure.
+Presenting a document to a user means converting it into a form usable by your audience. Browsers like Firefox , Chrome , Safari , and Edge are designed to present documents visually, for example, on a computer screen, projector, mobile device, or printer. In a web context, this is generally referred to as rendering ; we provided a simplified description of the process by which a web page is rendered in How browsers load websites .
+Note: A browser is sometimes called a user agent , which basically means a computer program that represents a person inside a computer system.
+CSS can be used for many purposes related to the look and feel of your web page, for example:
+Text styling, including changing the color and size of headings and links.
+Creating layouts, such as grid layouts or multiple-column layouts .
+Special effects such as animation .
+The CSS language is organized into modules that contain related functionality. For example, take a look at the MDN reference pages for the Backgrounds and Borders module to find out what its purpose is and the properties and features it contains. In our module pages, you will also find links to Specifications that define the technologies.
+CSS is a rule-based language — you define rules by specifying groups of styles that should be applied to a particular element or groups of elements on your web page.
+For example, you might decide to style the main heading on your page as large red text. The following code shows a very simple CSS rule that would achieve this:
+In the above example, the CSS rule opens with a selector . This selects the HTML elements that we are going to style. In this case, we are styling level one headings ( <h1> ).
+We then include a set of curly braces ( { } ) to create a declaration block .
+The declaration block contains one or more declarations , which t

@@ -1,0 +1,30 @@
+OSC Eye Tracking 
+VRChat now offers support for receiving eye tracking data (eyelook and eyelid) via OSC. 
+Please note: This is an advanced feature! It is NOT plug-and-play. You must create your own program to transmit this data to VRChat using OSC. 
+Hardware manufacturers may provide an application that will send this data for you. You may also use a community-created program. 
+OSC Addresses List 
+/tracking/eye/EyesClosedAmount
+/tracking/eye/CenterPitchYaw
+/tracking/eye/CenterPitchYawDist
+/tracking/eye/CenterVec
+/tracking/eye/CenterVecFull
+/tracking/eye/LeftRightPitchYaw
+/tracking/eye/LeftRightVec ❗️ 
+Addresses are case sensitive 
+Timeout 
+After 10 seconds without receiving data, eye tracking behavior will revert to default (auto look / auto blink). This timeout is separate for eyelids and eye-look. 
+Eyelids 
+/tracking/eye/EyesClosedAmount 
+0~1 value for how closed the eyes are. Currently we only support a single value simultaneously controlling the blink of both eyes. In the future we'll add support for separate per-eye winking. 
+Eye-look Addresses, Details & Example Data 
+🚧 
+Only one eye-look address at a time 
+In addition to the EyesClosedAmount, you can send data to one of the addresses below depending on the format you'd like to send. You probably only need to implement one (or just a few) of the possible types of eye-look data in your sending app. 
+For demonstration purposes and to help you debug coordinate / axis issues, we'll provide some example data for each address for the following configuration: An eye target roughly 15 degrees up, 20 degrees to the user's right, and 50cm away relative to the user's "eye root" or HMD. The user's IPD is set at 64mm. See the image below: 
+In general, positive numbers for pitch and yaw will rotate down and to the right respectively. For vectors, it's the standard Unity format of +x right, +y up, and +z forward 
+/tracking/eye/CenterPitchYaw 
+Pitch value and yaw value in degrees for a single "center" eye look direction. Because no distance is defined here, this mode will always use a raycast in-world to find the convergence distance. Example data: -15.252, 20.128 
+/tracking/eye/CenterPitchYawDist 
+Same as above but with an added distance value in meters to define the convergence distance. The format is pitch, yaw, distance. Example data: -15.252, 20.128, 0.503 
+/tracking/eye/CenterVec 
+"Center" eye x,y,z directional
